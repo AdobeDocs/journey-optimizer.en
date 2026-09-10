@@ -7,13 +7,20 @@ feature: Overview
 topic: Artificial Intelligence
 role: User
 level: Beginner
+mini-toc-levels: 2
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2: []
 ---
 
-# Journey Optimizer skills in CX Coworker {#ajo-coworker-skills}
+# Journey Optimizer AI capabilities in CX Coworker {#ajo-coworker-skills}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover the Adobe Journey Optimizer skills available in CX Coworker — from creating and analyzing journeys to generating channel content — with detailed guidance, example prompts, and best practices for each skill.
+**On this page:** Discover the Adobe Journey Optimizer AI capabilities available in CX Coworker — from creating and analyzing journeys to generating channel content and managing content assets — with detailed guidance, example prompts, and best practices for each capability.
 
 >[!ENDSHADEBOX]
 
@@ -25,15 +32,18 @@ With its AI-powered skills, CX Coworker enables Journey Optimizer users to creat
 
 CX Coworker provides various skills for managing Journeys and Loyalty challenges:
 
-**Journey-focused skills:**
+**Journey-focused AI capabilities:**
 
 * **Journey Create**: Build and configure marketing journeys through natural language prompts
 * **Channel Content Create**: Generate, edit, and manage channel-specific content (email, push, SMS) for journeys using AI-powered content generation
 * **Journey Analyze**: Analyze journeys, detect issues, uncover insights, and optimize journey performance
 
-**Loyalty-focused skills:**
+**Loyalty-focused AI capabilities:**
 
 * **Loyalty Challenge Management**: Create and manage loyalty challenges using natural language prompts
+* **Loyalty Insights Skill**: Query and analyze loyalty program performance data using natural language
+
+CX Coworker also includes a set of **Content Management MCP tools**, to discover, create, and manage Journey Optimizer content templates, fragments, landing pages, and journey/campaign inline message content. [Learn more](#content-management)
 
 <!--
 feedback from Ivan: Need to remove Simulate skill from docs until Nico confirms the release timeline.
@@ -45,7 +55,9 @@ In addition, **Journey Simulation** is a Journey Optimizer feature that includes
 * Quick simulation
 -->
 
-## Journey Create
+## Journeys {#journey-skills}
+
+### Journey Create {#journey-create}
 
 Journey Create enables Journey Optimizer users to build and configure marketing journeys using a natural language interface. With Journey Create, practitioners can quickly create journeys by describing their requirements in conversational prompts. The skill walks users through the different options for creating a journey, allowing marketers to focus on strategy rather than technical configuration.
 
@@ -61,7 +73,7 @@ Journey Create enables Journey Optimizer users to build and configure marketing 
 >
 >**Manage Segments**: This permission lets you create new audiences directly in CX Coworker.
 
-### Key use cases
+#### Key use cases
 
 Journey Create offers capabilities that can be leveraged to accelerate marketing execution:
 
@@ -113,7 +125,7 @@ Journey Create offers capabilities that can be leveraged to accelerate marketing
 
 With this skill, natural language requirements are translated into structured journey configurations.
 
-### In scope skills
+#### In scope skills
 
 The following capabilities are supported by Journey Create:
 
@@ -123,7 +135,7 @@ The following capabilities are supported by Journey Create:
 * **Multi-channel messaging**: Supports push notifications, email, and SMS channels.
 * **Journey scheduling**: Configures start dates and timing for scheduled journeys.
 
-### Out of scope skills
+#### Out of scope skills
 
 The following functionalities are currently not supported:
 
@@ -138,7 +150,7 @@ The following functionalities are currently not supported:
 * Custom Action field mapping 
 * Complex data transformations 
 
-### Prompting best practices
+#### Prompting best practices
 
 To maximize the effectiveness of Journey Create, follow these best practices:
 
@@ -151,14 +163,14 @@ To maximize the effectiveness of Journey Create, follow these best practices:
    When a user enters my store location send a welcome message using custom action ExternalPush. Wait 2 days and then send a follow up message using custom action ExternalEmail with a survey on their visit.
 1. **Validate Expressions**: Make sure to check and validate any expressions that Journey Skills create to ensure that the correct fields and values are used.
 
-### Setup best practices
+#### Setup best practices
 
 * **Define Clear Objectives**: Before creating journeys, establish clear goals (improving retention, driving conversions, increasing engagement).
 * **Prepare Audiences**: Ensure your target audiences are already created and properly segmented.
 * **Plan Message Content**: Have your messaging strategy defined before journey creation.
 * **Consider Customer Experience**: Design journey flows that respect customer preferences and avoid over-communication.
 
-## Channel Content Create
+### Channel Content Create {#channel-content-create}
 
 <!--Ivan : Need to speak with Amar on new options for content generation as this skill has changed. -->
 
@@ -168,7 +180,7 @@ To maximize the effectiveness of Journey Create, follow these best practices:
 
 Channel Content Create enables Journey Optimizer users to generate, edit, and manage channel-specific content for journeys using AI-powered content generation.
 
-### Key use cases
+#### Key use cases
 
 1. **Channel-specific content generation**: Generate content for email, push notifications, SMS, and other channels using natural language prompts.
 
@@ -198,7 +210,7 @@ Channel Content Create enables Journey Optimizer users to generate, edit, and ma
 
 1. **Journey canvas integration**: Select journeys from inventory and view associated channels.
 
-### In scope skills
+#### In scope skills
 
 The following capabilities are supported by Channel Content Create:
 
@@ -209,7 +221,7 @@ The following capabilities are supported by Channel Content Create:
 * **Multi-channel support**: Generate and manage content for multiple channels within the same journey workflow.
 * **Journey inventory access**: Select journeys from inventory and view associated channels.
 
-### Out of scope skills
+#### Out of scope skills
 
 The following functionalities are currently not supported:
 
@@ -217,74 +229,14 @@ The following functionalities are currently not supported:
 * **Insert content nodes directly into journey canvas**
 * **Template import**
 
-### Prompting best practices
+#### Prompting best practices
 
 1. **Be Specific**: Provide clear details about the content type, tone, target audience, and key messaging.
 1. **Specify Channel**: Clearly indicate which channel you are creating content for (email, push, SMS).
 1. **Define Tone**: Specify the desired tone (friendly, formal, casual, urgent).
 1. **Iterate and Refine**: Use the regenerate action to refine content until it meets your requirements.
 
-## Loyalty Challenge Management
-
->[!AVAILABILITY]
->
->Loyalty skills are available in CX Coworker for eligible organizations. Customers with a Loyalty license can access these loyalty skills, even if they do not have an additional CX Coworker license.
-
-Loyalty Challenge Management enables Journey Optimizer users to create and manage loyalty challenges in CX Coworker using natural language prompts. For comprehensive documentation on creating, configuring, and managing loyalty challenges, including detailed setup instructions, refer to the [Loyalty Challenges guide](../loyalty-challenges/get-started.md).
-
-### Key use cases
-
-1. **Multi-step onboarding challenge**
-
-   "Build a challenge called "New Account Kickstart" for newly enrolled customers that requires them to complete these steps in order: open a checking account, fund it with at least $500, and download the mobile app. When all steps are done, reward them with 5,000 bonus points. Run it from September 1 to October 31, Eastern timezone."
-
-1. **Cumulative activity threshold challenge**
-
-   "Create a challenge called "Spend & Earn Summer" for cardholders where members earn a $50 statement credit once they spend $1,500 on their credit card during the third quarter. Start it July 1, Eastern timezone."
-
-1. **Frequency streak challenge**
-
-   "Create a challenge called "Frequent Flyer Sprint" for elite tier members that requires 3 flights per month for two consecutive months. Reward completion with a tier-status extension and 10,000 bonus miles. Start the first of next month, Pacific timezone."
-
-1. **Single qualifying action challenge**
-
-   "Set up a challenge named "Go Paperless" that rewards postpaid subscribers with 500 bonus points after they enroll in autopay and switch to paperless billing within 30 days. Begin on the first of next month, Central timezone."
-
-1. **Engagement / consumption goal challenge**
-
-   "Create a challenge called "Explorer Badge" for members that requires them to complete 5 activities across at least 3 different categories during the month of August. Reward them with 1,000 points and an "Explorer" badge on completion. Start August 1, Mountain timezone."
-
-1. **Daily action challenge**
-
-   "Help me create a challenge for matcha lovers that requires them to come into the store every day this week and buy a matcha drink. Their reward should be an extra 200 points if they complete the challenge. Call it "Mad about Matcha", use SKU matcha-001, start it Monday next week, Eastern timezone."
-
-### In scope skills
-
-The following capabilities are supported by Loyalty Challenge Management:
-
-* **Challenge creation**: Create challenge configuration from natural language (audience, action criteria, timing, reward, naming).
-* **Challenge updates**: Modify challenge details through iterative prompts.
-* **Challenge publishing**: Publish supported challenge configurations directly from the conversation.
-* **Challenge context visibility**: Retrieve and review challenge information while iterating.
-
-### Out of scope skills
-
-The following functionalities are currently not supported:
-
-* Challenge deletion
-* Loyalty insights and recommendations skills
-* Full content authoring automation for challenge messaging in all cases
-
-### Prompting best practices
-
-1. **Name it**: Give the challenge a clear, memorable title in quotes.
-1. **Specify the audience**: Who qualifies (e.g., all members, a tier, a segment, new enrollees, cardholders, subscribers).
-1. **Define the action and how much**: What members must do, and the frequency, threshold, or sequence that counts as completion.
-1. **Set the time window**: A start date (and end date if fixed-duration) plus the timezone.
-1. **State the reward**: Points, miles, statement credits, status extensions, vouchers, or perks granted on completion.
-1. **Reference the qualifying event**: Point to the specific SKU, product, account action, or engagement event the challenge tracks.
-
-## Journey Analyze
+### Journey Analyze {#journey-analyze}
 
 Journey Skills will enable Journey Optimizer users to analyze and optimize journeys using a natural language interface. With Journey Skills, practitioners can quickly identify and resolve schedule and/or audience conflicts, detect points of user abandonment in a journey and provide insights or recommendations. It empowers practitioners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
 
@@ -300,7 +252,7 @@ Journey Skills will enable Journey Optimizer users to analyze and optimize journ
 >
 >**Manage Segments**: This permission lets you create new audiences directly in CX Coworker.
 
-### Key use cases
+#### Key use cases
 
 Journey Analyze offers a range of functionalities that can be leveraged to optimize marketing efforts:
 
@@ -351,26 +303,54 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
    * "How many live journeys do I have?"
    * "Give me a list of all scheduled recurring journeys and their expected run times."
 
-## In Scope skills
+1. **Journey Custom Action Error Analysis**
+
+   * Identify when custom actions are failing or error rates spike within a journey.
+   * Diagnose root causes before failures cascade into broader journey disruption.
+   * Use specific remediation steps to restore custom action reliability quickly.
+
+   Sample prompts:
+   * "Why are custom actions failing in journey [Journey Name]?"
+   * "What is the error rate for custom action [Custom Action Name] in journey [Journey Name]?"
+   * "Show me the root cause of custom action failures in journey [Journey Name]."
+   * "Are there any custom action errors affecting journey [Journey Name] right now?"
+
+1. **Analyze Journey Anomalies**
+
+   * Detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts compared to historical baselines, including when the question is phrased around the number of profiles entering, exiting, or completing the journey.
+   * Confirm whether a flagged change is a genuine anomaly using a deterministic statistical check, rather than relying on the raw anomaly flag alone.
+   * Run bounded, read-only diagnostics against journey-execution data to identify a likely root cause, surfacing what each check looked for and found alongside the recommendation.
+   * Investigate anomaly alerts that reference a specific journey version and timestamp.
+
+   Sample prompts:
+   * "Why did entries drop for my Welcome journey yesterday?"
+   * "Did exits spike for the Cart Abandonment journey this week?"
+   * "Sends look low for the Renewal Reminder journey today — what happened?"
+   * "Why was there a sudden drop in the number of profiles entering my Member Anniversary Thank You journey in the last 30 days?"
+   * "Fewer profiles than usual are completing my Renewal Reminder journey this month — why?"
+   * "An anomaly alert was triggered for journey [Journey Version ID] at [timestamp] — investigate."
+
+#### In scope skills
 
 The following capabilities are supported by Journey Analyze:
 
 * **Reactive Queries**: Allows users to ask specific questions about journey performance, audience usage, and scheduling conflicts.
 * **Integration with Other Skills**: Collaborates with Audience and Data Insights capabilities for deeper analysis.
 * **Response structuration**: reasoning (explain the logic), analysis summary (highlight key points), issue details (describe the problem), and recommendation (propose next steps).
+* **Custom action error analysis**: Detect and diagnose custom action failures and error spikes within a journey.
+* **Anomaly detection**: Detect and confirm statistically significant spikes, drops, or flatlines in a journey's entry, exit, or send counts, and surface a likely root cause.
 
-### Out of Scope skills
+#### Out of scope skills
 
 The following functionalities are currently not supported:
 
 * **Automated Journey Creation**
-* **Real-Time Anomaly Detection**
 * **Channels overlap**
 * **Journey entry analysis**
 * **Technical issue analysis**
 * **Fatigue analysis**
 
-### Prompting Best Practices
+#### Prompting best practices
 
 To maximize the effectiveness of Journey Analyze, follow these best practices:
 
@@ -378,25 +358,208 @@ To maximize the effectiveness of Journey Analyze, follow these best practices:
 1. **Combine Insights**: Integrate insights from Audience and Data Insights capabilities for a holistic view of journey performance.
 1. **Iterative Refinement**: Use fallout and overlap analysis to iteratively refine journey design and scheduling.
 
-### Setup Best Practices
+#### Setup best practices
 
 * **Define Clear Objectives**: Before analyzing journeys, establish clear goals (e.g., improving retention, increasing conversions).
 * **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 * **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
 
-<!--
-Journey analysis new skills to document:
+## Loyalty {#loyalty-skills}
 
-Journey Custom Action Error Analysis
-- Identify when custom actions are failing or error rates spike within a journey.
-- Diagnose root causes before failures cascade into broader journey disruption.
-- Use specific remediation steps to restore custom action reliability quickly.
+>[!AVAILABILITY]
+>
+>Loyalty skills are available in CX Coworker for eligible organizations. Customers with a Loyalty license can access these loyalty skills, even if they do not have an additional CX Coworker license.
 
-Journey Anomaly Detection
-- Detect unexpected spikes or drops in journey sends and exits against historical baselines.
-- Catch send or exit volume issues early, before they affect a large share of your audience.
-- Use the insights to pinpoint the root cause and keep the journey performing as expected.
--->
+Loyalty skills empower loyalty administrators and analysts to create, manage, and analyze loyalty programs using natural language. With these AI-powered skills, you can quickly design engaging loyalty challenges, track performance metrics, and make data-driven decisions to optimize member engagement and program profitability. Whether you're building a new challenge or analyzing loyalty program trends, Loyalty skills streamline the entire loyalty management workflow.
+
+### Loyalty Challenge Management {#loyalty-challenge-management}
+
+Loyalty Challenge Management enables Journey Optimizer users to create and manage loyalty challenges in CX Coworker using natural language prompts. For comprehensive documentation on creating, configuring, and managing loyalty challenges, including detailed setup instructions, refer to the [Loyalty Challenges guide](../loyalty-challenges/get-started.md).
+
+#### Key use cases
+
+1. **Multi-step onboarding challenge**
+
+   "Build a challenge called "New Account Kickstart" for newly enrolled customers that requires them to complete these steps in order: open a checking account, fund it with at least $500, and download the mobile app. When all steps are done, reward them with 5,000 bonus points. Run it from September 1 to October 31, Eastern timezone."
+
+1. **Cumulative activity threshold challenge**
+
+   "Create a challenge called "Spend & Earn Summer" for cardholders where members earn a $50 statement credit once they spend $1,500 on their credit card during the third quarter. Start it July 1, Eastern timezone."
+
+1. **Frequency streak challenge**
+
+   "Create a challenge called "Frequent Flyer Sprint" for elite tier members that requires 3 flights per month for two consecutive months. Reward completion with a tier-status extension and 10,000 bonus miles. Start the first of next month, Pacific timezone."
+
+1. **Single qualifying action challenge**
+
+   "Set up a challenge named "Go Paperless" that rewards postpaid subscribers with 500 bonus points after they enroll in autopay and switch to paperless billing within 30 days. Begin on the first of next month, Central timezone."
+
+1. **Engagement / consumption goal challenge**
+
+   "Create a challenge called "Explorer Badge" for members that requires them to complete 5 activities across at least 3 different categories during the month of August. Reward them with 1,000 points and an "Explorer" badge on completion. Start August 1, Mountain timezone."
+
+1. **Daily action challenge**
+
+   "Help me create a challenge for matcha lovers that requires them to come into the store every day this week and buy a matcha drink. Their reward should be an extra 200 points if they complete the challenge. Call it "Mad about Matcha", use SKU matcha-001, start it Monday next week, Eastern timezone."
+
+#### In scope skills
+
+The following capabilities are supported by Loyalty Challenge Management:
+
+* **Challenge creation**: Create challenge configuration from natural language (audience, action criteria, timing, reward, naming).
+* **Challenge updates**: Modify challenge details through iterative prompts.
+* **Challenge publishing**: Publish supported challenge configurations directly from the conversation.
+* **Challenge context visibility**: Retrieve and review challenge information while iterating.
+
+#### Out of scope skills
+
+The following functionalities are currently not supported:
+
+* Challenge deletion
+* Loyalty insights and recommendations skills
+* Full content authoring automation for challenge messaging in all cases
+
+#### Prompting best practices
+
+1. **Name it**: Give the challenge a clear, memorable title in quotes.
+1. **Specify the audience**: Who qualifies (e.g., all members, a tier, a segment, new enrollees, cardholders, subscribers).
+1. **Define the action and how much**: What members must do, and the frequency, threshold, or sequence that counts as completion.
+1. **Set the time window**: A start date (and end date if fixed-duration) plus the timezone.
+1. **State the reward**: Points, miles, statement credits, status extensions, vouchers, or perks granted on completion.
+1. **Reference the qualifying event**: Point to the specific SKU, product, account action, or engagement event the challenge tracks.
+
+### Loyalty Insights Skill {#loyalty-data-insight}
+
+Loyalty Insights Skill enables Journey Optimizer users to analyze and query loyalty program performance data using natural language. This skill provides insights into loyalty points, member tiers, redemptions, and revenue metrics, allowing loyalty administrators and analysts to make data-driven decisions about their loyalty programs.
+
+Key use cases :
+
+1. **Loyalty points analysis**
+
+   * Analyze loyalty points granted, earned, and redeemed over specific periods.
+   * Compare loyalty point activities across different loyalty tiers and programs.
+   * Track loyalty points balance by member segment.
+
+   Sample prompts:
+   * "How many loyalty points were granted during August 2026?"
+   * "How many loyalty points were gained by members in each loyalty tier during August 2026?"
+   * "Show me the total loyalty points redeemed by member loyalty status—not loyalty tier—during August 2026."
+   * "Show the total loyalty points balance broken down by loyalty tier during August 2026."
+
+1. **Revenue and discount analysis**
+
+   * Analyze order revenue and loyalty discount trends by tier and program.
+   * Compare revenue generation across loyalty programs and time periods.
+   * Track discount impact on revenue and member engagement.
+
+   Sample prompts:
+   * "What was the total order revenue for each loyalty tier during August 2026?"
+   * "How much in loyalty discounts was applied to each loyalty tier during August 2026?"
+   * "Show the total loyalty discounts broken down by loyalty program during August 2026."
+   * "What was the total order revenue generated by each loyalty program during August 2026?"
+
+1. **Program performance insights**
+
+   * Analyze daily, weekly, and monthly program performance metrics.
+   * Compare performance across product categories and discount strategies.
+   * Identify trends in member engagement and redemption patterns.
+
+   Sample prompts:
+   * "Show the loyalty program's total revenue broken down by day during August 2026."
+   * "Show the total loyalty discounts broken down by product category during August 2026."
+   * "Show me the loyalty program performance report for Q3 2026."
+
+## Content Management tools {#content-management}
+
+>[!AVAILABILITY]
+>
+>Content Management is available for all customers who have access to CX Coworker.
+
+<!--However, you will need the following permissions in order to fully use the Content Management features:
+**Manage Library Items**: This permission lets you list, retrieve, create, and update content templates and fragments directly in CX Coworker.
+
+**Publish Fragment**: This permission lets you publish fragments directly in CX Coworker.-->
+
+Journey Optimizer users are able to discover and manage content assets — content templates, fragments, landing pages, and journey/campaign inline message content — directly from CX Coworker using natural language prompts. It lets you go from "tell me about my content" to "go build, update, and publish it," without leaving the conversation. This capability is powered by 15 read and write-capable MCP tools for Journey Optimizer content.
+
+#### Key use cases
+
+1. **Browse and inspect content**
+
+   * List available content templates, fragments, or landing pages, and retrieve their structure, metadata, and status.
+   * Retrieve the inline message content configured on a journey or campaign action node.
+
+   Sample prompts:
+   * "List my email content templates."
+   * "Show me the fragments available for my summer campaign."
+   * "Get the details of landing page page-123."
+   * "What content is configured for the email variant of the action node in campaign camp-789?"
+
+1. **Create content templates**
+
+   * Create a new content template for any channel.
+
+   Sample prompts:
+   * "Create an email template named Summer Sale with this HTML content."
+   * "Create a new SMS template called Flash Alert."
+
+1. **Update content templates**
+
+   * Fully replace the content of an existing template.
+
+   Sample prompts:
+   * "Update template abc-123 with this new HTML body."
+
+1. **Create, update, clone, and publish fragments**
+
+   * Create a new HTML or expression fragment.
+   * Update an existing fragment's content or metadata.
+   * Clone an existing fragment under a new name.
+   * Submit a draft fragment for publication.
+
+   Sample prompts:
+   * "Create an HTML fragment named Promo Banner with this markup."
+   * "Update fragment frag-456 to change its name to Promo Banner V2."
+   * "Clone fragment abc-123 as Promo Banner - Summer (Variant B)."
+   * "Publish fragment frag-456."
+
+1. **Update inline message content**
+
+   * Replace one channel variant on a campaign or journey action node's inline message.
+   * List the channel variants defined on a journey or campaign action node.
+
+   Sample prompts:
+   * "Update the email variant of the action node in campaign camp-789 with this new content."
+   * "What channel variants are defined on this action node?"
+
+#### In scope
+
+The following capabilities are supported by Content Management:
+
+* **List and get content templates**: Browse content templates and retrieve their structure and metadata.
+* **List and get fragments**: Browse content and expression fragments and retrieve their details.
+* **List and get landing pages**: Browse landing pages and retrieve their metadata and page content.
+* **Get campaign/journey inline content**: Retrieve the inline message content configured on a campaign or journey action node, including multi-lingual variants.
+* **Create content templates**: Create a new template for any channel.
+* **Update content templates**: Fully replace the content of an existing template.
+* **Create, update, clone, and publish fragments**: Create new fragments, update existing ones, clone a fragment under a new name, and submit a draft fragment for publication.
+* **Update inline message content**: Replace a channel variant on a campaign/journey action node's inline message, including multi-lingual variants, and list the channel variants defined on an action node.
+
+#### Out of scope
+
+The following functionalities are currently not supported:
+
+* **Full-text search across templates or fragments**
+* **Template or fragment validation** (orphaned references, broken links, deprecated components)
+* **Creating or publishing landing pages**
+* **Deleting content templates, fragments, or landing pages**
+
+#### Prompting best practices
+
+1. **Reference IDs when known**: Provide the template, fragment, landing page, or campaign/journey ID when asking to get, update, clone, or publish a specific asset.
+1. **Be explicit about the channel**: When creating a template or fragment, specify the channel or content type (email, HTML fragment, expression fragment).
+1. **Confirm before publishing**: Review a fragment's content after creating or updating it before asking Coworker to publish it.
+1. **Provide complete replacement content**: Update operations replace content in full, so include the complete HTML body or variant content in your prompt.
 
 <!--
 Feedback from Ivan: Journey simulate is not ready as a skill

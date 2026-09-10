@@ -7,9 +7,18 @@ feature: Get Started
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2: []
 ---
 # Migrate content and journeys {#migrate-content-and-journeys}
+
+>[!AVAILABILITY]
+>
+>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 If you are moving to [!DNL Journey Optimizer] from another marketing platform, you do not have to start from a blank slate. Journey Optimizer includes a dedicated workspace that imports your existing email content and journeys. It converts them into [!DNL Journey Optimizer] content templates and journeys, so you can pick up where you left off instead of rebuilding everything from scratch.
 

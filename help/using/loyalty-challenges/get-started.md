@@ -8,10 +8,14 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
-feature_v2: []
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
 ---
 # Get started with loyalty challenges {#get-started-loyalty-challenges}
 
@@ -165,6 +169,15 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
   </td>
 </tr>
 </table>
+
+## Developer resources {#developer-resources}
+
+Loyalty Challenges exposes REST APIs that let you programmatically manage challenges and track profile participation:
+
+* **[Loyalty challenge metadata API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}** — Create, retrieve, update, publish, archive, and duplicate challenges.
+* **[Loyalty challenge state API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges-state){target="_blank"}** — Query and update challenge participation state for individual profiles.
+
+For authentication and required headers, see the [authentication tutorial](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"}.
 
 ## How-to video {#video}
 

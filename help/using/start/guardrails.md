@@ -13,8 +13,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
 subfeature_v2:
@@ -67,7 +65,7 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 * **90 days** for data in the profile store
 * **13 months** for data in the data lake
 
-This change will be rolled out to **existing customer sandboxes** in a subsequent phase. [Learn more about datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
+This change will be enforced on **existing customer sandboxes** starting **October 1, 2026**. [Learn more about datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
 
 ## Journeys {#journeys-guardrails}
 
@@ -89,7 +87,9 @@ This section covers guardrails and limitations for journeys, including general j
 
 * When using an audience qualification in a journey, that audience qualification activity may take up to **10 minutes** to be active and listen to profiles entering or exiting the audience.
 
-* A journey instance for a profile has a maximum size of **1 MB**. All data gathered as part of the journey execution is stored in that journey instance. Therefore, data from an incoming event, profile information retrieved from Adobe Experience Platform, custom action responses, etc. are stored in that journey instance and impact the journey size. It is advised, when a journey starts with an event, to limit the maximum size of that event payload (e.g., below **800 KB**) to avoid reaching that limit after a few activities, in the journey execution. When that limit is reached, the profile is in error status and will be excluded from the journey.
+* A journey instance for a profile has a maximum size of **1 MB**. All data gathered as part of the journey execution is stored in that journey instance. Therefore, data from an incoming event, profile information retrieved from Adobe Experience Platform, custom action responses, etc. are stored in that journey instance and impact the journey size. It is advised, when a journey starts with an event, to limit the maximum size of that event payload (e.g., below **800 KB**) to avoid reaching that limit after a few activities, in the journey execution. This 800 KB guidance does not apply to business events or unitary events, which are subject to the stricter 64 KB limit described below. When the 1 MB limit is reached, the profile is in error status and will be excluded from the journey.
+
+* Any event that starts or enters a journey, including business events and unitary events, is subject to an additional, stricter guardrail: the event payload is limited to a maximum of **64 KB of uncompressed, minified JSON**. Events exceeding this size are dropped and do not trigger the journey. This is separate from, and stricter than, the 1 MB journey instance limit above. [Learn more about configuring business events](../event/about-creating-business.md).
 
 * For each profile and journey version, the journey runtime keeps an internal queue of up to **10 pending events** while one is being processed. If this limit is reached, additional events are discarded with the `maxInstanceStackEventsReached` reason until the stack drains. See [Events discarded due to a blocked journey instance](../building-journeys/troubleshooting-execution.md#max-instance-stack-events-reached).
 
@@ -149,7 +149,7 @@ The following guardrails apply to the [Journey versions](../start/user-interface
 
 * A journey starting with an event activity in v1 cannot start with something else than an event in further versions. You cannot start a journey with a **Audience Qualification** event.
 * A journey starting with a **Audience Qualification** activity in v1 must always start with a **Audience Qualification** in further versions.
-* The audience and namespace chosen in **Audience Qualification** (first node) cannot be changed in new versions.
+* The audience and namespace chosen in **Audience Qualification** (first activity) cannot be changed in new versions.
 * The reentrance rule must be the same in all journey versions.
 * A journey starting with a **Read Audience** cannot start with another event in next versions.
 * You cannot create a new version of a read audience journey with incremental read. You must duplicate the journey.
@@ -174,8 +174,8 @@ The following guardrails apply to the [Events](../event/about-events.md) in your
 * Event-triggered journeys may take up to **5 minutes** to process the first action in the journey.
 * For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
 * Business events cannot be used in conjunction with unitary events or audience qualification activities.
-* A single event can be referenced by a maximum of **25** journeys at any one time, across all live and closed journeys. When this limit is reached, publishing any additional journey that uses that event is blocked.
-* A single XDM schema can be referenced by a maximum of **100** events across all live and closed journeys at one time. When this limit is reached, publishing any journey with an event node that references that schema is blocked.
+* A single event can be referenced by a maximum of **25** journeys at any one time, across all live, closed, paused, test mode, and dry run journeys. When this limit is reached, publishing any additional journey that uses that event is blocked.
+* A single XDM schema can be referenced by a maximum of **100** events across all live, closed, paused, test mode, and dry run journeys at one time. When this limit is reached, publishing any journey with an event node that references that schema is blocked.
 * Unitary journeys (starting with an event or an audience qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile reentrance is temporally blocked by default for **5 minutes**. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.
 * Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch, events inserted via **Query Service**, or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, you must build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, but is not recommended as it can cause downstream challenges based on the actions used.
 
@@ -236,7 +236,7 @@ The following guardrails apply to the [Audience Qualification](../building-journ
 
 * The Audience qualification activity cannot be used with Adobe Campaign activities.
 * Supplemental identifiers are not supported for Audience qualification journeys.
-* A sandbox can include a maximum of **300** Audience Qualification nodes across all live and closed journeys. When this limit is reached, publishing journeys with additional Audience Qualification nodes is blocked.
+* A sandbox can include a maximum of **300** Audience Qualification activities across all live, closed, paused, test mode, and dry run journeys. This limit also applies to Audience Qualification activities used as exit criteria. When this limit is reached, publishing journeys with additional Audience Qualification activities is blocked.
 
 Learn more about journey processing rates and throughput limits in [this section](../building-journeys/entry-management.md#journey-processing-rate).
 
@@ -322,7 +322,7 @@ Specific guardrails apply to **Journey Fragments**, including a maximum of **20 
 
 #### Send using waves {#waves-g}
 
-Specific guardrails apply to **wave sending in journeys**, including a 2–10 wave range and a **30-minute minimum interval** between waves. They are listed on [this page](../building-journeys/send-using-waves.md#limitations-guardrails).
+Specific guardrails apply to **wave sending in journeys**, including a 2–10 wave range and a **30-minute minimum interval** between waves. They are listed on [this page](../delivery/send-using-waves.md#limitations-guardrails).
 
 #### Journey simulation {#simulation-g}
 
@@ -356,25 +356,28 @@ The following guardrails apply to the [email channel](../email/get-started-email
 
 * You cannot use the same sending domain to send out email messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.
 
-When designing email messages, the system checks for key settings and displays alerts for warnings (recommendations and best practices) and errors (blocking issues that prevent testing or activation). Learn more about email alerts and validation requirements in [this section](../email/create-email.md#check-email-alerts).
+* When designing email messages, the system checks for key settings and displays alerts for warnings (recommendations and best practices) and errors (blocking issues that prevent testing or activation). Learn more about email alerts and validation requirements in [this section](../email/create-email.md#check-email-alerts).
 
 #### Message content size for journey publication {#message-content-size}
 
 When publishing journeys that contain email messages, the total message content size must not exceed **2 MB** after backend processing. During publication, the system automatically processes message content by patching links, images, and applying transformations, which increases the payload size beyond the authored content size.
 
+This size limitation also applies to other backend operations that process the full email payload, such as **[!UICONTROL Copy to other locales]** in [multilingual content management](../content-management/multilingual-manual.md). Even though you are only copying content between locales, the operation serializes and processes the complete email payload, so it can fail with the same size error.
+
 >[!CAUTION]
 >
->If the final processed message content exceeds **2 MB**, journey publication will fail. Keep your authored message content well below 2 MB — ideally under **1 MB** — to allow a buffer of 300–400 KB for backend processing overhead.
+>If the final processed message content exceeds **2 MB**, the operation (journey publication or copy to other locales) will fail. Keep your authored message content well below 2 MB, ideally under **1 MB**, to allow a buffer of 300–400 KB for backend processing overhead.
 
-**Best practices to prevent publication failures:**
+**Best practices to prevent failures:**
 
 * Keep authored email content under **1 MB**
 * Minimize the number of content variants
 * Optimize and compress images before adding them to messages
 * Remove unused assets and unnecessary HTML elements
 * Test message size before publishing journeys to production
+* When copying content to multiple locales, copy to fewer locales at a time to reduce processing overhead
 
-If journey publication fails due to content size, reduce your message content and republish the journey.
+If publication or the copy operation fails due to content size, reduce your message content and try again.
 
 ### SMS guardrails {#sms-guardrails}
 
@@ -414,9 +417,26 @@ To keep your engageable profiles within reasonable limits, Adobe recommends sett
 
 Journey Optimizer supports a peak volume of **500 transactional messages per second** in campaigns.
 
+### Subdomains guardrails {#subdomain-guardrails}
+
+The guardrails and limitations applying to subdomain delegation in Journey Optimizer are detailed on [this page](../configuration/delegate-subdomain.md#guardrails).
+
 ## Content & Assets {#content-assets}
 
-This section covers guardrails for content creation and management, including landing pages, subdomains, and fragments.
+This section covers guardrails for content creation and management, including landing pages and fragments.
+
+### Content authoring guardrails {#content-authoring}
+
+The recommended size limits for content types are as follows:
+
+| Content type | Recommended size limit |
+|---|---|
+| Template | 1200 KB |
+| Fragment | 700 KB |
+| Message | 1200 KB |
+| Landing page | 1000 KB |
+
+A warning is surfaced when a content variant exceeds its recommended size threshold. This applies to all content types and channels, and does not block saving or publishing.
 
 ### Generate Content guardrails {#ai-assistant-g}
 
@@ -431,10 +451,6 @@ The following guardrails apply to the [landing pages](../landing-pages/get-start
 * You cannot add a preheader to a landing page.
 * You cannot select the **Code your own** option when designing a landing primary page.
 
-### Subdomains guardrails {#subdomain-guardrails}
-
-The guardrails and limitations applying to subdomain delegation in Journey Optimizer are detailed on [this page](../configuration/delegate-subdomain.md#guardrails).
-
 ### Fragments guardrails {#fragments-guardrails}
 
 The following guardrails apply to the [fragments](../content-management/fragments.md):
@@ -442,7 +458,13 @@ The following guardrails apply to the [fragments](../content-management/fragment
 * To create, edit, archive, and publish fragments you need the **[!DNL Manage library items]** and **[Publish Fragment]** permissions included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
 * Visual fragments are only available for the Email channel.
 * Expression fragments are not available for the In-app channel.
-* Visual fragments cannot exceed **100 KB**. Expression fragments cannot exceed **200 KB**.
+* Fragments cannot exceed **700 KB**. To stay below this threshold, split large content into multiple reusable fragments, reduce heavy markup, and optimize linked assets.
+
+* **Fragment count limits**: the number of unique fragments used within a piece of content is validated during authoring. Only fragments (including AEM fragments) referenced directly are counted — fragments nested inside other fragments are not counted separately.
+
+  * **Per variant**: up to 60 unique fragments per content variant. A warning is shown when usage reaches 45 (75% of the limit); publishing is blocked at 60.
+  * **Across variants**: up to 120 unique fragments across all variants of a single message. A warning is shown when usage reaches 90 (75% of the limit); publishing is blocked at 120.
+
 * To use a fragment in a journey or campaign, it must be in the **Live** status.
 * [Contextual attributes](../personalization/personalization-build-expressions.md) are not supported within fragments.
 * Visual fragments are not cross-compatible between the Use Themes and Manual Styling modes. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Use Themes mode. [Learn more on themes](../email/apply-email-themes.md)

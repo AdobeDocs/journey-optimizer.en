@@ -65,7 +65,7 @@ Understand common error codes in Adobe Journey Optimizer and find quick resoluti
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
-Troubleshoot Errors Before Testing or Publishing Your Journey
+Troubleshoot Journey Errors
 
 Identify and resolve journey-wide errors, activity issues, and set fallback actions to ensure smooth testing and publishing.
 
@@ -75,7 +75,7 @@ Identify and resolve journey-wide errors, activity issues, and set fallback acti
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-Troubleshooting Live Journey Execution
+Troubleshoot Journey Execution
 
 Diagnose issues with event validation, profile entry, journey navigation, and message delivery during live execution.
 
@@ -85,7 +85,7 @@ Diagnose issues with event validation, profile entry, journey navigation, and me
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
-Troubleshoot Inbound Actions in Journeys
+Troubleshoot Inbound Actions
 
 Debug inbound action issues such as missing content or continued delivery after profile exit using detailed step-by-step guides.
 
@@ -95,11 +95,31 @@ Debug inbound action issues such as missing content or continued delivery after 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
-Troubleshooting Custom Actions
+Troubleshoot Custom Actions
 
 Validate and debug custom actions using the **Send test request** feature to ensure API calls and authentication settings are correct.
 
 [Validate custom actions](../using/action/troubleshoot-custom-action.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
+
+Troubleshoot Live Activities
+
+Diagnose why Live activities fail to appear, update, or end, covering profile token, campaign configuration, payload, and delivery issues for unitary and broadcast use cases.
+
+[Fix Live activity issues](../using/mobile-live/troubleshoot-mobile-live.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/file-alt.svg)
+
+Troubleshoot AEM Content Fragments
+
+Review key considerations and common issues when working with Adobe Experience Manager Content Fragments in Journey Optimizer, including fragment types, repository access, and personalization.
+
+[Resolve Content Fragment issues](../using/integrations/aem-fragments-limitations.md)
 :::
 
 :::
@@ -116,6 +136,22 @@ Learn what to include when contacting Adobe support—environment details, impac
 
 ## Additional resources
 
+### Journeys
+
 * [Journey FAQ](../using/building-journeys/journey-faq.md) - Comprehensive answers to common questions about journeys, covering journey types, execution, configuration, and troubleshooting best practices.
 
 * [Guardrails and limitations](../using/start/guardrails.md) - Learn about Journey Optimizer guardrails, product limitations, performance considerations, and supported browsers to ensure optimal usage.
+
+### Campaigns
+
+* [Troubleshoot campaign activation](../using/campaigns/trigger-campaigns.md#troubleshooting) - Resolve common issues encountered when reviewing and activating campaigns.
+
+### Channels and integrations
+
+* [Troubleshoot WhatsApp channel setup](../using/whatsapp/whatsapp-configuration.md#troubleshooting) - Diagnose and fix common configuration issues when setting up the WhatsApp channel.
+
+* [Integrations troubleshooting FAQ](../using/integrations/vendor-integration-faq.md#troubleshooting) - Find answers to common connection and test-connection failures for third-party integrations.
+
+### Configuration
+
+* [Troubleshoot custom subdomain delegation](../using/configuration/delegate-custom-subdomain.md#check-list) - Work through a checklist to resolve issues submitting a custom subdomain.

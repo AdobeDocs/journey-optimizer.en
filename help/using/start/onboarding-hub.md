@@ -9,6 +9,14 @@ role: User
 level: Beginner
 hide: true
 keywords: journey optimizer, onboarding, onboarding hub, use cases, videos, tutorials, get started, ramp up, first journey
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 ---
 # Journey Optimizer onboarding hub {#onboarding-hub}
 
@@ -150,7 +158,7 @@ For a full overview of how these roles work together, see [Roles and responsibil
 
 ## Related resources {#related-resources}
 
-<!--* [Migrate content and journeys](migrate-content-and-journeys.md) — Import email content and journeys from another marketing platform.-->
+* [Migrate content and journeys](migrate-content-and-journeys.md) — Import email content and journeys from another marketing platform.
 * [Find the right Journey Optimizer capability for your goal](ajo-use-case-guide.md) — Goal-first decision guide to every capability.
 * [Journey use cases library](../building-journeys/jo-use-cases.md) — Practical examples and implementation patterns.
 * [Key terminology](terminology.md) — Clarify the concepts behind each capability.

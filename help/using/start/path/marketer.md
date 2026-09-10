@@ -12,13 +12,11 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
-  - id: b5cb2dff-e9ba-4e50-a3eb-6a50eef729b8
-    internal-label: Email rendering
   - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
     internal-label: Custom actions
   - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95

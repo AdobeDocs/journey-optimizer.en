@@ -9,8 +9,12 @@ role: Admin
 level: Intermediate
 mini-toc-levels: 1
 exl-id: 9b0fd9d8-18d1-4a51-8b6f-b2e2a4c6f1d7
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
 ---
 # Reward definition guide {#reward-definition-guide}
 
@@ -56,6 +60,8 @@ subfeature_v2: []
 When a challenge task, milestone, or challenge completes **and has a reward value configured**, the platform issues a reward by calling your reward provider's HTTP endpoint with a JSON payload. A **Reward Definition** describes what reward to issue and provides a [JSONata](https://docs.jsonata.org/overview) expression — `rewardJsonata` — that shapes the exact payload your provider expects.
 
 This guide covers how to configure a reward provider, create reward definitions, write the `rewardJsonata` expression, and understand what context is available to it at evaluation time.
+
+➡️ [Watch how to set up a loyalty reward provider](#video)
 
 ## Two-level model
 
@@ -470,3 +476,8 @@ To develop and test an expression before publishing, use the [JSONata Exerciser]
 | `milestone` accessed when source is `"task"` or `"challenge"` | `milestone` is null; expression throws or produces null fields | Check `rewardContext.source` before accessing `milestone`, or only use `milestone` in definitions attached to milestone rewards |
 | Expression returns an array instead of an object | Provider receives unexpected payload structure | Wrap array-returning expressions in an outer object: `{ "items": [...] }` |
 
+## How-to videos {#video}
+
+➡️ Watch how to set up a loyalty reward provider
+
+>[!VIDEO](https://video.tv.adobe.com/v/3497346?quality=12)

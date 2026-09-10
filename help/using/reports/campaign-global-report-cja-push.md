@@ -13,8 +13,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a9f73820-6899-47c2-a597-3fec28ab756a
-    internal-label: Reporting
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
 subfeature_v2:
@@ -127,6 +125,34 @@ The **[!UICONTROL Bounces Reasons]** table provides a comprehensive overview of 
 ## Error reasons {#error-reasons-push}
 
 The **[!UICONTROL Error Reasons]** table allows you to identify the specific errors that occurred during the sending process of your push notifications, facilitating a thorough analysis of any issues encountered.
+
++++ Learn more about Error reasons
+
+Each push notification send is classified into one of the following reasons, based on the response returned by the push notification provider ([!DNL Apple Push Notification service (APNs)] or [!DNL Firebase Cloud Messaging (FCM)]):
+
+**APNs**
+
+| HTTP status | APNs reason | Error reason |
+| --- | --- | --- |
+| 400 / 410 | `Unregistered`, `ExpiredToken`, `BadDeviceToken` | DENYLIST |
+| 400 / 413 | `PayloadTooLarge`, `PayloadEmpty`, `InvalidPushType`, `BadTopic`, `MissingTopic` | MALFORMED_NOTIFICATION |
+| 400 / 403 | `DeviceTokenNotForTopic`, `BadCertificate`, `TopicDisallowed`, `BadCertificateEnvironment` | INVALID_PUSH_CREDENTIAL |
+| 429 / 500 / 503 | `TooManyRequests`, `TooManyProviderTokenUpdates`, `InternalServerError`, `ServiceUnavailable` | PUSH_PROVIDER_ERROR |
+| any other | any other / none | PUSH_PROVIDER_ERROR |
+
+**FCM**
+
+| HTTP status | FCM error code | Error reason |
+| --- | --- | --- |
+| 404 | `UNREGISTERED` (`NOT_FOUND`) | DENYLIST |
+| 400 | `INVALID_ARGUMENT` | MALFORMED_NOTIFICATION |
+| 403 | `SENDER_ID_MISMATCH` (`PERMISSION_DENIED`) | INVALID_PUSH_CREDENTIAL |
+| 429 | `QUOTA_EXCEEDED` (`RESOURCE_EXHAUSTED`) | PUSH_PROVIDER_ERROR |
+| 500 | `INTERNAL` | PUSH_PROVIDER_ERROR |
+| 503 | `UNAVAILABLE` | PUSH_PROVIDER_ERROR |
+| any other | `UNSPECIFIED_ERROR` / any other / none | PUSH_PROVIDER_ERROR |
+
++++
 
 ## Exclude reasons {#exclude-reasons-push}
 

@@ -18,8 +18,6 @@ feature_v2:
     internal-label: Guardrails and limitations
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
 subfeature_v2:
@@ -228,6 +226,7 @@ Be aware that profile exclusions for profiles currently in the journey and for n
 * Even after the pause, as events continue to be processed, these events would be counted towards the number of Journey Events per second quota after which throttling comes to picture for unitary
 * When profiles hold in a paused journey, at resume time, profile attributes are refreshed
 * Conditions are still executed in paused journeys so if a journey has been paused because of data quality issues, any condition prior to an action node can be evaluated with wrong data
+* Profiles that have already passed through an **Optimize** activity before the journey was paused keep the path assignment made at that time. This assignment is not re-evaluated retroactively, even if the underlying audience or criteria definition changes during the pause. Only profiles that reach the activity after the journey resumes are evaluated against the latest definition.
 * For incremental audience based **Read audience** journeys, paused duration is taken into consideration. This is not the case for audience qualification or event-based journeys (if an audience qualification or an event are received during a pause, and they are the first activity in the journey, those events are discarded)
 * If profiles are held in a journey and this journey automatically resumes after a few days, profiles continue the journey and are not dropped. If you want to drop them, you must stop the journey
 * In paused journeys, alerts do not fire for [batch segment alerting](../reports/alerts.md#alert-read-audiences)
@@ -249,11 +248,11 @@ When pausing this journey, you select if profiles are **Discarded** or **Hold**,
 
 1. **AddToCart** activity:  all new profiles entrances are blocked. If a profile has already entered the journey before a pause, they continue up to the next action node.
 1. **Wait** activity: profiles continue to wait normally on the node and will exit it, even if the journey is in pause.
-1. **Condition**: profiles continue to go through conditions and move to the right branch, based on the expression defined on the condition.
+1. **Optimize (Condition)**: profiles continue to go through conditions and move to the right branch, based on the expression defined on the condition.
 1. **Push**/**Email** activities: during a paused journey, profiles start waiting or get discarded (based on the choice made by the user at the time of pause) on the next action node. So profiles will start waiting or get discarded there.
 1. **Events** after **Action** nodes: if a profile is waiting on an **Action** node and there is an **Event** activity after it, if that event is fired, the event is discarded.
 
-As per this behavior, you can see profile numbers increasing on paused journey, mostly in activities before **Action** activities. For instance, in that example, the **Wait** activity is still enabled, increasing the number of profiles going through the **Condition** activity, as they exit it.
+As per this behavior, you can see profile numbers increasing on paused journey, mostly in activities before **Action** activities. For instance, in that example, the **Wait** activity is still enabled, increasing the number of profiles going through the **Optimize (Condition)** activity, as they exit it.
 
 When you resume this journey:
 
@@ -304,53 +303,4 @@ You can use the [[!DNL Adobe Experience Platform] Query Service](https://experie
 
     1. If the journey was paused with the hold option selected but profiles were discarded due to exceeding the 10-million quota, those profiles will still be discarded when they reach the next action node.
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page explains how to pause and resume a live journey in Adobe Journey Optimizer, including profile hold or discard behavior during the pause, how to apply profile attribute exit criteria while paused, and how to troubleshoot profile discards using Query Service.
-
-**Intents:**
-* Pause a live journey to prevent new profile entries and hold or discard in-flight profiles at the next action node
-* Resume a paused journey manually or understand when it auto-resumes after the maximum pause period
-* Apply a profile attribute exit criteria to exclude specific profiles (e.g., by country) when a journey is paused
-* Bulk-pause or bulk-resume multiple live journeys from the journey inventory list
-* Troubleshoot profile discards in a paused journey using Adobe Experience Platform Query Service step event queries
-* View the audit trail of who paused or resumed a journey and when
-
-**Glossary:**
-* **Pause (journey)**: A state that temporarily suspends a live journey, preventing new entrances and halting profile progress at the next action node; no communications are sent while paused *(product-specific)*
-* **Hold mode**: A pause option that keeps in-flight profiles waiting at the next action node until the journey resumes *(product-specific)*
-* **Discard mode**: A pause option that exits in-flight profiles from the journey when they reach the next action node *(product-specific)*
-* **Profile Attribute-based exit criteria**: A filter applied to a paused journey that excludes profiles matching a defined expression at the next action node upon resume *(product-specific)*
-* **Bulk pause / Bulk resume**: The ability to pause or resume multiple live or paused journeys simultaneously from the journey inventory list *(product-specific)*
-
-**Guardrails:**
-* Only users with the **Publish journeys** permission can pause and resume journeys; stopping a paused journey requires **Manage journeys** (and **Campaigns > Publish Campaigns** if inline campaigns or messaging nodes are present)
-* Pause duration is configurable from 1 to 14 days; after that the journey auto-resumes
-* Profiles held during pause resume at up to 5,000 TPS; the journey remains in Resuming until all held profiles have resumed
-* Maximum of 10 million profiles can be held across all paused journeys in an organisation; excess profiles are automatically discarded
-* Only one Profile Attribute-based exit criteria can be set per journey
-* Profile Attribute-based exit criteria can only be created, updated, or deleted while the journey is paused
-* Paused journeys count towards the live journey quota
-* Journey global timeout (91 days) still applies during a pause
-* Inbound activity communications already triggered before the pause continue to be delivered; to stop them, the journey must be stopped entirely
-* Alerts for batch segment do not fire in paused journeys
-* Fresh entrances are always discarded when a journey is paused, regardless of Hold or Discard mode
-
-**Terminology:**
-* Canonical name: Pause a journey — Acronym: none — variants: journey pause, pause/resume
-* Synonyms: "Hold" = "park profiles"; "Discard" = "exit profiles"
-* Do not confuse: "Pause" ≠ "Stop" — Pause is temporary and allows resume; Stop immediately exits all profiles and cannot be undone to a live state
-* Do not confuse: "Pause" ≠ "Close to new entrances" — Close to new entrances lets existing profiles finish but does not suspend them; Pause suspends all in-flight profiles at the next action node
-
-**FAQ:**
-* **Q: What happens to profiles already in a journey when it is paused?** — Depending on the option chosen at pause time, profiles are either held (waiting at the next action node) or discarded (exited from the journey at the next action node).
-* **Q: How long can a journey remain paused?** — Between 1 and 14 days (chosen at pause time); after that it automatically resumes.
-* **Q: Can I exclude certain profiles while a journey is paused?** — Yes; apply a Profile Attribute-based exit criteria (one per journey) while the journey is paused to exclude matching profiles at the next action node upon resume.
-* **Q: Does pausing a journey stop in-app or web messages already triggered?** — No; inbound communications already triggered before the pause continue to be delivered. To stop all inbound communications, you must stop the journey entirely.
-* **Q: How do I find out which profiles were discarded during a pause?** — Query the `journey_step_events` dataset in Adobe Experience Platform Query Service using the `PAUSED_JOURNEY_VERSION` or `JOURNEY_IN_PAUSED_STATE` event type filters with the journey version ID.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-pause.md}}

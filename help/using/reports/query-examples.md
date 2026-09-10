@@ -13,8 +13,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a9f73820-6899-47c2-a597-3fec28ab756a
-    internal-label: Reporting
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
   - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
@@ -1252,23 +1250,23 @@ This query filters for journeys that engaged more than 1,000 profiles per day in
 
 +++
 
-+++Total unique profiles engaged across all journeys in the last 12 months
++++Total unique identities engaged across all journeys in the last 12 months
 
-This query provides a count of unique profiles engaged across all journeys in the past 12 months, giving you an overview of your journey-based engagement.
+This query provides a count of unique identities engaged across all journeys in the past 12 months, giving you an overview of your journey-based engagement.
 
 ```sql
-SELECT count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS TOTAL_ENGAGED_PROFILES
+SELECT count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS TOTAL_ENGAGED_IDENTITIES
 FROM journey_step_events
 WHERE timestamp > (now() - interval '12' month);
 ```
 
 _Sample output_
 
-| TOTAL_ENGAGED_PROFILES |
+| TOTAL_ENGAGED_IDENTITIES |
 |---|
 | 2,547,890 |
 
-This single number represents the total count of unique profiles that have been engaged by at least one journey in the past 12 months.
+This single number represents the total count of unique identities that have been engaged by at least one journey in the past 12 months.
 
 >[!NOTE]
 >

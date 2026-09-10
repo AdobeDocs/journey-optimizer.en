@@ -190,3 +190,8 @@ Each queued message also carries a validity window (TTL). If processing falls be
 
 After the test succeeds, select **[!UICONTROL Activate]** in the integration configuration. See [Configure your Integration](#configure).
 
+**See also**
+
+* [Integrations troubleshooting FAQ](vendor-integration-faq.md#troubleshooting)
+* [Monitoring & Troubleshooting](../../rp_landing_pages/troubleshoot-journey-landing-page.md)
+

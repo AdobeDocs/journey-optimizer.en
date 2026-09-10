@@ -9,6 +9,10 @@ exl-id: df92e319-1e42-486f-b688-595964a762c9
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
     internal-label: In App channel

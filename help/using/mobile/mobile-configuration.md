@@ -14,6 +14,8 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
@@ -75,6 +77,8 @@ Before sending SMS, MMS or RCS, you must configure your Adobe Journey Optimizer 
     * [Custom provider](mobile-configuration-custom.md)
 1. [Create Webhook](mobile-webhook.md)
 1. [Create a Mobile configuration](mobile-configuration-surface.md)
+
+{{$include /help/_includes/mobile-opt-out-keyword-override.md}}
 
 If you purchase SMS through Adobe Journey Optimizer, you can also [view SMS usage metrics](sms-usage-report.md) to reconcile MO and MT volume with vendor billing.
 

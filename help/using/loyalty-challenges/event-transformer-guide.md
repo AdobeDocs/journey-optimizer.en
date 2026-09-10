@@ -9,8 +9,12 @@ role: Admin
 level: Intermediate
 mini-toc-levels: 1
 exl-id: d3ad85f0-7f7e-40ab-b8c4-fc0c1234be87
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
 ---
 # Event Transformer guide {#event-transformer-guide}
 
@@ -110,7 +114,7 @@ Every event definition must produce a JSON object in the following format. This 
 | `guid`                         | String           | No (system-assigned) | System-assigned unique ID; read-only. |
 | `name`                         | String           | **Yes**              | Human-readable label, e.g. `"Starbucks POS Purchase"`. |
 | `xdmSchemaId`                  | String           | **Yes**              | Matches events by XDM schema ID (see How Matching Works). |
-| `schema`                       | String           | No                   | [JSON Schema](https://json-schema.org/) (as a string) to validate incoming events. |
+| `schema`                       | String           | **Yes**              | [JSON Schema](https://json-schema.org/) (as a string) to validate incoming events. |
 | `transformer`                  | String           | **Yes**              | JSONata expression mapping the event to Loyalty format. |
 
 ## How Matching Works
@@ -455,9 +459,9 @@ A challenge task with `include: ["BEVERAGE"]` would see the coffee line item qua
 
 +++
 
-## Adding JSON Schema Validation (Optional)
+## Adding JSON Schema Validation
 
-If you want the platform to validate the structure of incoming events before attempting transformation, set the `schema` field to a [JSON Schema](https://json-schema.org/draft-04) document encoded as a JSON string.
+The `schema` field is required. Set it to a [JSON Schema](https://json-schema.org/draft-04) document encoded as a JSON string to validate the structure of incoming events before transformation runs.
 
 Events that fail schema validation are rejected before transformation runs. The error response includes the specific validation failure, making it easy to diagnose malformed upstream events.
 

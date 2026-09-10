@@ -8,8 +8,12 @@ topic: Content Management
 role: Admin
 level: Intermediate
 exl-id: f8a3b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
 ---
 # Configure loyalty challenges {#loyalty-admin}
 

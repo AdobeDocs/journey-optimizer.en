@@ -21,18 +21,12 @@ feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
-    internal-label: Proofs
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
+  - id: fae48155-b23f-40d2-a252-a25bce350b4d
+    internal-label: Email configuration
   - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
     internal-label: Email design
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
-  - id: fae48155-b23f-40d2-a252-a25bce350b4d
-    internal-label: Email configuration
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -315,6 +309,10 @@ If you have enabled the [HTML size optimization](#optimize-html-size) option, yo
     
     Use this information to validate the optimized output and confirm the email stays within the recommended 100 KB threshold before publishing.
 
+    >[!NOTE]
+    >
+    >The sizes displayed in the **[!UICONTROL View proofs]** pop-up reflect the size of your HTML template, where Handlebars expressions are evaluated at their minimum possible value — not the size of the final delivered email. At delivery time, dynamic expressions such as `{{#each}}` loops are resolved against the recipient's profile data, which may significantly increase the actual email size.
+
 <!--
 ## Define your email content {#email-content}
 
@@ -340,3 +338,5 @@ Control the rendering of your email, and check personalization settings with tes
 
 You must also check alerts in the upper section of the editor.  Some of them are simple warnings, but others can prevent you from using the message. 
 -->
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-create-email.md}}

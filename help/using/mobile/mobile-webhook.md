@@ -10,6 +10,8 @@ exl-id: a0f3e385-934d-44d6-a487-6035161aef0e
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
     internal-label: SMS and MMS channel
@@ -59,6 +61,8 @@ When setting up a webhook, you can define its purpose based on the type of data 
 >[!NOTE]
 >
 >Inbound keyword data is stored in the _AJO Email Tracking Dataset_ system dataset, unless a custom dataset is configured. A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured. [Learn more](../data/get-started-datasets.md#system-datasets)
+
+{{$include /help/_includes/mobile-opt-out-keyword-override.md}}
 
 Depending on your provider, there will be different expectations on what needs to be set up to have a successful SMS implementation:
 
@@ -259,7 +263,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
     +++ Custom
 
-    * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL Message Feedback tracking]** dataset for reporting and audience building.
+    * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL AJO Email Tracking]** Dataset for reporting and audience building.
 
     * Build an Audience (streaming or batch) that references this keyword for use in your journeys and campaigns.
 
@@ -422,11 +426,11 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
     ```json
     {
-    "clientReference": "{{client_reference}}",
+    "clientReference": "\{\{client_reference\}\}",
     "statuses": [
         {
-            "code": "{{failureCode}}",
-            "status": "{{feedbackStatus}}"
+            "code": "\{\{failureCode\}\}",
+            "status": "\{\{feedbackStatus\}\}"
         }
     ]
     }

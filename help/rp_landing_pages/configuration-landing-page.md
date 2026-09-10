@@ -87,3 +87,4 @@ Manage suppression lists, allowed lists, and retry mechanisms to optimize email 
 - **[Using Seed Lists](../using/configuration/seed-lists.md)** - Learn how to create and manage seed lists to monitor email deliveries and ensure campaign assurance.
 - **[Archiving Support for Compliance](../using/configuration/archiving-support.md)** - Configure archiving features like BCC emails and dataset management to ensure compliance with regulations like GDPR and HIPAA.
 - **[Managing Execution Addresses](../using/configuration/primary-email-addresses.md)** - Configure and prioritize email or phone number fields for communication across journeys and campaigns.
+- **[Monitoring & Troubleshooting](troubleshoot-journey-landing-page.md)** - Diagnose and resolve issues quickly, including troubleshooting custom subdomain delegation.

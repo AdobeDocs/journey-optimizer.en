@@ -124,10 +124,7 @@ The ![image showing the More actions button](assets/do-not-localize/rule-builder
 
 **For Action and API triggered campaigns only:**
 
-<!--
-Per-campaign alert subscription is deferred (CJM-112845, CJM-112849). Campaign lifecycle alerts can currently be subscribed to at the sandbox level only. See ../reports/alerts.md#subscribe-alerts
 * **[!UICONTROL Subscribe to alerts]** - Choose which campaign lifecycle system alerts apply to this campaign only (in addition to any sandbox-wide alert subscriptions). [Learn more about system alerts →](../reports/alerts.md#subscribe-alerts)
--->
 * **[!UICONTROL Add to package]** - Add the campaign to a package in order to export it to another sandbox. [Learn how to export objects →](../configuration/copy-objects-to-sandbox.md)
 * **[!UICONTROL Open draft version]** - If a new version of the campaign has been created and has not been activated yet, you can access its draft version using this action.
 

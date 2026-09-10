@@ -5,6 +5,12 @@ feature: Channel Configuration
 topic: Content Management
 role: User
 level: Beginner
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
+    internal-label: Custom Channels
 ---
 
 # Monitor custom channels {#monitor-custom-channel}
@@ -20,6 +26,10 @@ Once a custom channel is created and activated, you can [manage its lifecycle](c
 ## Leverage campaign and journey reports {#reporting}
 
 [!DNL Journey Optimizer] provides out-of-the-box reporting for custom channels.
+
+The Custom channel campaign report is detailed in [this section](../reports/campaign-global-report-cja-custom.md).
+
+<!--The Custom channel journey report is detailed in this section. TBC-->
 
 The following metrics are available for custom channels in both live (24h) and global (CJA) reports.<!--TBC and add or replace with CJA link when available-->
 

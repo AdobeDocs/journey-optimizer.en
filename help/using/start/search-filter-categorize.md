@@ -13,8 +13,10 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
+  - id: c0d6de2b-37ee-41f0-b9fa-6ffe628e8c5e
+    internal-label: Search, filter and organize
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
     internal-label: Overview
@@ -70,7 +72,7 @@ In the lists, you can perform basic actions on each element. For example, you ca
 
 ## Bulk actions {#bulk-actions}
 
-In the **Campaigns**, **Fragments**, and **Templates** lists, you can select multiple items at once using the checkboxes and apply operations to all of them from a bulk action bar that appears at the bottom of the screen.
+In the **Campaigns**, **Fragments**, **Journeys**, and **Templates** lists, you can select multiple items at once using the checkboxes and apply operations to all of them from a bulk action bar that appears at the bottom of the screen.
 
 The following operations are available:
 
@@ -79,7 +81,11 @@ The following operations are available:
 * **[!UICONTROL Edit tags]** - Edit the tags assigned to selected items. [Learn how to use tags →](#add-tags)
 * **[!UICONTROL Manage access]** - Apply access labels to selected items. [Learn more about object-level access control →](../administration/object-based-access.md)
 * **[!UICONTROL Archive]** - Archive selected items. Available for Fragments and Templates.
-* **[!UICONTROL Delete]** - Permanently delete selected items. Available for Campaigns only.
+* **[!UICONTROL Delete]** - Permanently delete selected items. Available for Campaigns and Journeys.
+
+>[!NOTE]
+>
+>Journeys also support bulk **[!UICONTROL Pause]** and **[!UICONTROL Resume]**. [Learn more →](../building-journeys/journey-ui.md#bulk-operations)
 
 ![](assets/bulk-actions-fragments.png)
 

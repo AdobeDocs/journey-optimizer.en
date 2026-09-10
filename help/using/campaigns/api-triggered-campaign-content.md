@@ -57,7 +57,11 @@ The content creation process depends on the channel you selected. Learn detailed
 
 >[!IMPORTANT]
 >
->[High Throughput campaigns](../campaigns/api-triggered-high-throughput.md) do not rely on Adobe profiles: all personalization must be included in the API payload as context data, as detailed below. This mode is available only for the email channel andi n the US region.
+>[High Throughput campaigns](../campaigns/api-triggered-high-throughput.md) do not rely on Adobe profiles: all personalization must be included in the API payload as context data, as detailed below. This mode is available only for the email channel and in the US region.
+
+## Attach personalized PDF files {#attachments}
+
+For transactional API-triggered email campaigns, you can include up to five PDF attachments in an email, including both static and personalized attachments. Each recipient can receive different personalized PDFs. [Learn how to attach personalized PDF files](../email/pdf-attachments.md#personalized-attachments)
 
 ## Personalize content using contextual data {#contextual}
 

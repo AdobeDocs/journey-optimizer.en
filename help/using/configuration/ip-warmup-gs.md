@@ -21,14 +21,12 @@ feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
-  - id: c343082f-e963-4f57-a96b-b64d27f8118e
-    internal-label: IP warmup plans
-  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
-    internal-label: Sandboxes
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: c343082f-e963-4f57-a96b-b64d27f8118e
+    internal-label: IP warmup plans
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

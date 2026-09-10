@@ -8,6 +8,16 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: CNIL, tracking, pixel, email, consent, opt-out, privacy
+feature_v2:
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: a9cf78bf-e9e4-4836-85a5-b6b3cf93bf56
+    internal-label: Consent management
+  - id: c8d5f2ce-ba44-43e9-a2bf-94a3d7d85ec3
+    internal-label: Data privacy requests
 ---
 
 # Understanding CNIL's updated guidance on email tracking pixels {#cnil-pixel-tracking}

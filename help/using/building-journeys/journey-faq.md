@@ -93,7 +93,7 @@ Learn more about [journey types](entry-management.md#types-of-journeys).
 
 +++
 
-+++ What's the difference between a journey and a campaign?
++++ What is the difference between a journey and a campaign?
 
 **[Journeys](journey.md)** are multi-step orchestrations that react to events or target audiences, allowing for complex logic, conditions, wait times, and multiple touch points across the customer lifecycle.
 
@@ -205,9 +205,9 @@ Use **unitary journeys** when:
 
 Use **read audience journeys** when:
 
-* You're sending batch communications to a group (e.g., monthly newsletter, promotional campaigns)
+* You are sending batch communications to a group (e.g., monthly newsletter, promotional campaigns)
 * All customers should receive the message around the same time
-* You're targeting a pre-defined audience segment
+* You are targeting a pre-defined audience segment
 
 +++
 
@@ -264,7 +264,7 @@ You can add conditions using the **Condition activity** from the orchestration p
 
 * Create simple or advanced conditions using the expression editor
 * Split the journey into multiple paths based on profile attributes, audience membership, events, or contextual data
-* Define timeout paths for profiles that don't meet the condition within a specified time
+* Define timeout paths for profiles that do not meet the condition within a specified time
 
 Learn more about [conditions](conditions.md).
 
@@ -316,7 +316,7 @@ Learn more about [event configuration](../event/about-events.md) and [email acti
 
 +++
 
-+++ Can I resend a message if someone doesn't open or click it?
++++ Can I resend a message if someone does not open or click it?
 
 Yes. Use a **[!UICONTROL Reaction]** event with a **Timeout**:
 
@@ -336,7 +336,7 @@ Learn more about [Reaction events](reaction-events.md).
 
 Create an event-triggered journey using a **[!UICONTROL Reaction]** event with a Timeout:
 
-1. **Configure a "Cart Abandoned" event**: Triggered when items are added but checkout isn't completed within a timeframe
+1. **Configure a "Cart Abandoned" event**: Triggered when items are added but checkout is not completed within a timeframe
 2. **Send an initial message** (optional): Email acknowledging cart items
 3. **Add a [!UICONTROL Reaction] event immediately after the channel action**: Configure it to listen for a Purchase event
 4. **Set a timeout period**: Define a timeout (e.g., 1-2 hours) on the **[!UICONTROL Reaction]** event to give the customer time to complete naturally
@@ -429,14 +429,15 @@ Learn more about [Journey Fragments](journey-fragments.md).
 
 +++ How do I test my journey before publishing it?
 
-Journey Optimizer offers two testing approaches:
+Journey Optimizer offers three validation methods:
 
-* **Test mode**: Simulate individual profiles moving through the journey step by step, allowing you to verify logic, conditions, and actions before going live.
+* **Journey Simulation**: Validate your journey with temporary simulated users, manually created or auto-generated — no need to create or wait for real test profiles. Best for fast iteration during journey design.
+* **Test mode**: Walk real (but designated test) profiles through the journey step by step, allowing you to verify logic, conditions, and actions before going live.
 * **Dry run mode**: Execute your journey using real production data without contacting actual customers or updating profile information. This gives you confidence in audience targeting and journey design.
 
 **Best practice**: Always test journeys before publishing to ensure they work as expected and to identify any issues early.
 
-Learn more about [test mode](testing-the-journey.md) and [dry run](journey-dry-run.md).
+See [Choose a validation method](choose-validation-method.md) for a full comparison, or learn more about [simulation](simulate-journey-gs.md), [test mode](testing-the-journey.md), and [dry run](journey-dry-run.md).
 
 +++
 
@@ -494,7 +495,7 @@ Learn more about [ending journeys](end-journey.md).
 
 +++
 
-+++ What's the difference between "Close to new entrances" and "Stop"?
++++ What is the difference between "Close to new entrances" and "Stop"?
 
 **Close to new entrances**:
 
@@ -528,15 +529,15 @@ Learn more about [journey reporting](report-journey.md).
 
 +++
 
-+++ Why didn't a profile enter my journey?
++++ Why did not a profile enter my journey?
 
 Common reasons profiles may not enter a journey:
 
 * **Event not received**: The triggering event was not sent or properly configured
-* **Audience criteria not met**: The profile doesn't qualify for the entry audience
+* **Audience criteria not met**: The profile does not qualify for the entry audience
 * **Re-entrance rules**: The profile recently completed the journey and re-entrance is blocked
 * **Journey not published**: The journey is in draft status
-* **Invalid namespace**: The journey namespace doesn't match the profile identity
+* **Invalid namespace**: The journey namespace does not match the profile identity
 * **Journey closed**: The journey is no longer accepting new entrances
 * **Streaming audience qualification timing**: For journeys using Audience Qualification with streaming audiences, profiles may not enter if they were already in the audience before the journey was published. They can also be delayed if the journey has not completed its activation period (up to 10 minutes after publishing).
 
@@ -559,7 +560,7 @@ Learn more about [journey step events](../reports/sharing-overview.md).
 
 +++
 
-+++ How can I troubleshoot a journey that isn't working as expected?
++++ How can I troubleshoot a journey that is not working as expected?
 
 Journey Optimizer provides several troubleshooting resources:
 
@@ -611,7 +612,7 @@ Learn more about [journey live reporting](report-journey.md).
 
 **Common reasons and solutions**:
 
-* **Consent issues**: Recipients haven't opted in to receive communications
+* **Consent issues**: Recipients have not opted in to receive communications
   Solution: Check consent policies and opt-in status
   
 * **Suppression list**: Email addresses are on the suppression list
@@ -726,7 +727,7 @@ Yes, depending on the **re-entrance settings**:
 * **Allow re-entrance**: Profiles can enter the journey multiple times after completing it
 * **Re-entrance wait period**: Define a minimum time between journey entries (e.g., 7 days)
 * **Force re-entrance on event**: Trigger a new journey instance even if the profile is already in the journey
-* **Supplemental identifier**: Use a supplemental ID to allow profiles to re-enter the journey multiple times for different entities (e.g., different orders, bookings, or transactions), even while they're already in the journey
+* **Supplemental identifier**: Use a supplemental ID to allow profiles to re-enter the journey multiple times for different entities (e.g., different orders, bookings, or transactions), even while they are already in the journey
 
 **Best practice**: Use re-entrance rules to prevent message fatigue and ensure appropriate pacing. Consider using supplemental identifiers for transactional journeys where profiles need to enter multiple times for different transactions.
 
@@ -896,7 +897,7 @@ Learn more about [merge policies](../audience/get-started-profiles.md) and [iden
 
 +++
 
-+++ What's the difference between a Condition and a Wait activity?
++++ What is the difference between a Condition and a Wait activity?
 
 | | **Condition Activity** | **Wait Activity** |
 |---|---|---|
@@ -1020,52 +1021,4 @@ For more learning and updates, explore the following resources:
 * [Journey use cases](jo-use-cases.md)
 * [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page is a comprehensive FAQ covering journey orchestration concepts, building journeys, testing and publishing, execution monitoring, advanced features, and best practices in Adobe Journey Optimizer.
-
-**Intents:**
-* Understand the four journey types (unitary, Read Audience, Audience Qualification, business event) and when to use each
-* Decide between a journey and a campaign for a given use case
-* Configure re-entrance settings to control how often a profile can enter the same journey
-* Troubleshoot why a profile did not enter or why messages were not sent
-* Apply journey capping rules to prevent message fatigue across multiple journeys
-* Use Journey Fragments to reuse common node sequences across journeys
-
-**Glossary:**
-* **Unitary journey**: A journey triggered one profile at a time by a real-time event such as a purchase or sign-up *(product-specific)*
-* **Read Audience journey**: A journey that processes all profiles in a batch audience at once or on a schedule *(product-specific)*
-* **Audience Qualification journey**: A journey triggered when a profile enters or exits a streaming audience segment *(product-specific)*
-* **Journey capping**: A configuration that limits how many times a profile can enter journeys within a time window or how many journeys a profile can be in simultaneously *(product-specific)*
-* **Journey Fragment**: A reusable, static set of journey nodes built once and inserted into multiple journeys at design time *(product-specific)*
-* **Send-Time Optimization (STO)**: An AI-driven feature that predicts the optimal send time for each individual profile to maximize engagement *(product-specific)*
-* **Supplemental identifier**: An additional identifier that lets a profile enter the same journey multiple times for different entities (e.g., separate orders) *(product-specific)*
-
-**Guardrails:**
-* Maximum of 50 activities per journey
-* Maximum journey duration is 91 days (global timeout)
-* Upload audiences and Federated Audience Composition audiences are not supported in Audience Qualification journeys
-* Reaction events must be placed immediately after a channel action, without a Wait activity in between
-* Jump activities are not allowed inside a Journey Fragment
-* A Journey Fragment supports a maximum of 20 nodes; a sandbox supports a maximum of 200 active fragments
-* Streaming audience qualification may be delayed up to 10 minutes after journey publication for profiles already in the audience
-
-**Terminology:**
-* Canonical name: Journey — Acronym: none — variants: customer journey, orchestration, flow
-* Synonyms: "Close to new entrances" = "graceful stop"; "Stop" = "immediate stop"
-* Do not confuse: "Journey" ≠ "Campaign" — journeys support multi-step event-triggered orchestration; campaigns are one-time or scheduled audience-based sends
-* Do not confuse: "Simulation" ≠ "Test mode" ≠ "Dry run" — Simulation uses temporary simulated users; Test mode uses persistent AEP test profiles; Dry run uses real production data without contacting customers or updating profiles
-
-**FAQ:**
-* **Q: What is the maximum number of activities in a journey?** — 50 activities; keeping journeys simpler improves maintainability and performance.
-* **Q: Why did a profile not enter my journey?** — Common causes include the triggering event not being received, audience criteria not met, re-entrance rules blocking re-entry, the journey being unpublished, or a namespace mismatch.
-* **Q: Can I modify a live journey's structure?** — No; structural changes require creating a new journey version. Message content can be updated without a new version.
-* **Q: What is the difference between Pause, Close to new entrances, and Stop?** — Pause temporarily suspends the journey while holding or discarding in-flight profiles. Close to new entrances stops new entries but lets existing profiles finish. Stop immediately exits all profiles.
-* **Q: When should I use Journey Fragments instead of the Jump activity?** — Use fragments to reuse common node logic at design time (copy-paste behavior). Use Jump to redirect profiles to another live journey at runtime.
-* **Q: How do I prevent sending too many messages to the same customer?** — Apply journey capping rules (entry capping or concurrency capping) and use frequency capping business rules on individual channel actions.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-faq.md}}

@@ -12,10 +12,12 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
-    internal-label: Track and monitor
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 subfeature_v2:
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
@@ -179,6 +181,74 @@ After designing your Live activity, you can track measuring the impact of your L
 >[!TIP]
 >
 >If your Live activity is not appearing or updating as expected, see [Troubleshoot Live activities](troubleshoot-mobile-live.md) for step-by-step debugging guidance.
+
+## Add custom data with execution metadata {#metadata}
+
+>[!AVAILABILITY]
+>
+> `executionMetadata` is only available for **API-triggered Transactional** campaigns.
+
+Attach your own **custom data** to a profile, such as an order ID, loyalty tier, or region code, using the optional `executionMetadata` field. Journey Optimizer stores this data alongside the execution so you can retrieve it later from your **Live activity feedback dataset** and match delivery results to your own business records.
+
+To send this data via the API, see the [Messaging API reference for the `executionMetadata` field](https://developer.adobe.com/journey-optimizer-apis/references/messaging#operation/postIMUnitaryMessageExecution!path=recipients/0/executionMetadata&t=request). To read the values back on the device, see the [Mobile SDK guide on receiving execution metadata from the API trigger](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/tutorial#receiving-execution-metadata-from-the-api-trigger).
+
+To add custom data with execution metadata:
+
+* Add `executionMetadata` to a profile, next to `userId` and `namespace`. Only string keys and string values are accepted, convert any non-string value to a string before sending it.
+
+* Values are recorded exactly as sent. `executionMetadata` does not support personalization expressions, so any `{{...}}` expression is treated as literal text rather than resolved. You should always send final, literal values.
+
+* Each profile can carry up to **50 key/value pairs**, with a combined size limit of **2 KB** for all keys and values. Metadata exceeding this limit is discarded but the Live activity is still delivered. Limit the payload to the information required for reporting purposes.
+
++++ JSON example
+
+In this example, `orderId`, `tier`, `restaurant`, and `region` are your own values. After the Live activity is triggered, you can read them back from the feedback dataset to link the delivery to your order record.
+
+```json
+{
+    "requestId": "your-request-id",
+    "campaignId": "your-campaign-id",
+    "recipients": [
+        {
+            "type": "aep",
+            "userId": "testemail@gmail.com",
+            "namespace": "email",
+            "executionMetadata": {
+                "orderId": "A-123",
+                "tier": "gold",
+                "restaurant": "PizzaPlace",
+                "region": "EU"
+            },
+            "context": {
+                "requestPayload": {
+                    "aps": {
+                        "content-available": 1,
+                        "timestamp": 1756984054,
+                        "dismissal-date": 1756984084,
+                        "event": "update",
+                        "content-state": {
+                            "orderStatus": "Delivered"
+                        },
+                        "attributes-type": "FoodDeliveryLiveActivityAttributes",
+                        "attributes": {
+                            "restaurantName": "PizzaPlace",
+                            "liveActivityData": {
+                                "liveActivityID": "orderId1"
+                            }
+                        },
+                        "alert": {
+                            "title": "Order Delivered!",
+                            "body": "Your pizza has arrived."
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
+```
+
++++
 
 ## How-to video
 

@@ -8,8 +8,12 @@ topic: Content Management
 role: Admin, Developer
 level: Intermediate
 exl-id: a7c4e1b2-8f3d-4a6c-9e0b-1d2e3f4a5b6c
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
 ---
 # Loyalty data and datasets {#loyalty-data-and-datasets}
 
@@ -17,7 +21,7 @@ subfeature_v2: []
 
 Loyalty Challenges relies on Adobe Experience Platform for identity, profile attributes, experience events, and audiences. Use this page to learn which data to prepare, which datasets are involved, and how **time-to-live (TTL)** affects retention before you author challenges or use the Loyalty Challenges APIs.
 
-Contact your Adobe administrator for Journey Optimizer program setup, or configure reward fulfillment and event mapping in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure loyalty challenges](loyalty-admin.md). For REST endpoints and authentication, see the [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}.
+Contact your Adobe administrator for Journey Optimizer program setup, or configure reward fulfillment and event mapping in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure loyalty challenges](loyalty-admin.md). For REST endpoints and authentication, see the [Loyalty challenge metadata API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"} and the [Loyalty challenge state API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges-state){target="_blank"}.
 
 ## Loyalty connectors via Sources {#loyalty-connectors-sources}
 
@@ -28,6 +32,7 @@ Loyalty and rewards connectors listed in Journey Optimizer documentation include
 * **Talon.One**
 * **Capillary**
 * **Kobie**
+* **LAVA**
 
 For connector onboarding and end-to-end setup, see [Get started with sources connectors](../start/get-started-sources.md) and the [Experience Platform sources catalog](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#sources-catalog){target="_blank"}.
 
@@ -45,7 +50,7 @@ For standard loyalty attributes on the profile (points, tier, program, status, a
 
 ### Experience events {#experience-events}
 
-**[!UICONTROL Purchase]**, **[!UICONTROL Spend]**, and **[!UICONTROL Custom event]** tasks depend on experience events ingested into Adobe Experience Platform. For **[!UICONTROL Custom event]** tasks, matching event definitions (identifier path, optional XDM schema ID, schema, and transformer) must be configured in the **[!UICONTROL Loyalty configurations]** menu before marketers can enter custom event values in the task builder. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+**[!UICONTROL Purchase]**, **[!UICONTROL Spend]**, and **[!UICONTROL Custom event]** tasks depend on experience events ingested into Adobe Experience Platform. For **[!UICONTROL Custom event]** tasks, matching event definitions (identifier path, XDM schema ID, schema, and transformer) must be configured in the **[!UICONTROL Loyalty configurations]** menu before marketers can enter custom event values in the task builder. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
 
 Ensure event payloads use the same identity namespace as your Loyalty Challenges configuration so progress can be attributed to the correct profile.
 

@@ -99,7 +99,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_orchestration"
 >title="Campaigns"
->abstract="Create your segmentation flow, craft your cross channel messages and plan your campaigns. Supported channels: Email, SMS, Push notifications, Direct mail."
+>abstract="Create your segmentation flow, craft your cross channel messages and plan your campaigns. Support outbound channels."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_scheduled_marketing"
@@ -109,7 +109,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_scheduled_transactional"
 >title="Campaigns"
->abstract="Deliver single or recurring outbound transactional actions. Supported channels: Email, SMS, Push notifications."
+>abstract="Deliver single or recurring outbound transactional actions."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_api_marketing"
@@ -255,7 +255,7 @@ Set up the foundation of your campaign:
 2. **Select campaign type** (Action, API-triggered, or Orchestrated)
 3. **Choose your audience** 
 4. **Set priority** if using conflict management
-5. **Configure schedule** (for Action campaigns) or API details (for API-triggered). For Action campaigns, you can also [send using waves](send-using-waves.md) to deliver the message in batches over time.
+5. **Configure schedule** (for Action campaigns) or API details (for API-triggered). For Action campaigns, you can also [send using waves](../delivery/send-using-waves.md) to deliver the message in batches over time.
 
 **Type-specific guides:** [Action campaign properties](campaign-properties.md) | [API-triggered campaign properties](api-triggered-campaign-properties.md) | [Orchestrated campaign setup](../orchestrated/create-orchestrated-campaign.md)
 

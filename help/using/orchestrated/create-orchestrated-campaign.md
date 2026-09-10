@@ -12,6 +12,8 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
+  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
+    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
@@ -65,7 +67,7 @@ To create an Orchestrated campaign, follow these steps:
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_scheduler"
 >title="Scheduler"
->abstract="As a campaign manager, you can schedule campaigns to launch automatically at specific times, or set them to **Triggered by a signal** so they start when called from the REST API or from another Orchestrated campaign's **End** activity. [Learn more](trigger-orchestrated-campaign.md)"
+>abstract="As a campaign manager, you can schedule campaigns to launch automatically at specific times, or set them to **Triggered by a signal** so they start when called from the REST API or from another Orchestrated campaign's **End** activity."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_schedule_validity"
@@ -75,7 +77,7 @@ To create an Orchestrated campaign, follow these steps:
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_schedule_options"
 >title="Scheduler options"
->abstract="Choose how the campaign starts: on a one-time or recurring schedule (once, daily, weekly, monthly, and so on), or **Triggered by a signal** so it waits for an API call or an upstream campaign's **End** activity. For signal-triggered campaigns, you can define parameters to pass in the payload. [Learn more](trigger-orchestrated-campaign.md)"
+>abstract="Choose how the campaign starts: on a one-time or recurring schedule (once, daily, weekly, monthly, and so on), or **Triggered by a signal** so it waits for an API call or an upstream campaign's **End** activity. For signal-triggered campaigns, you can define parameters to pass in the payload."
 
 By default, Orchestrated campaigns start when activated manually and end once their associated activites have been executed. If you prefer to delay execution or run the campaign on a recurring basis, you can define a schedule for the campaign.
 

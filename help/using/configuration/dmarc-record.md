@@ -21,12 +21,10 @@ feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
   - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
     internal-label: Subdomains
-  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
-    internal-label: Overview
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
 role_v2:

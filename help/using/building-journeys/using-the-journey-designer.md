@@ -20,22 +20,12 @@ feature_v2:
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
 subfeature_v2:
+  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
+    internal-label: Action activities
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
   - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
     internal-label: Wait activity
-  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
-    internal-label: Custom actions
-  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
-    internal-label: Sandboxes
-  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
-    internal-label: Action activities
-  - id: e57d1da4-32c2-4cc6-945c-9feb219156ff
-    internal-label: Event activities
-  - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
-    internal-label: Reaction events
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -86,6 +76,10 @@ The **toolbar**, located in the top right corner of the canvas, allows you to sh
 
 ![Journey toolbar with zoom, grid, and screenshot controls](assets/toolbar.png){width="70%"}
 
+>[!NOTE]
+>
+>If you're using the new canvas experience, see [Use the toolbar icons](#use-the-toolbar-icons) instead.
+
 The **activity configuration pane** appears when you click on an activity in the palette. Fill in the required fields. Click the **[!UICONTROL Delete]** icon to delete the activity. Click **[!UICONTROL Cancel]** to cancel the modifications or **[!UICONTROL Ok]** to confirm. To delete activities, you can also select one activity (or several) and press the backspace key. Pressing the escape key will close the activity configuration pane. 
 
 By default, read-only fields are hidden. To show read-only fields, click the **Show read-only fields** icon at the top left of the activity configuration pane. This setting applies to all activities in all journeys. 
@@ -96,7 +90,7 @@ Depending on the journey's status, you can perform different actions on your jou
 
 ![Journey action buttons: Publish, Duplicate, Delete, Test mode, Manage access, Alerts](assets/journey41.png)
 
-## Journey interface new experience {#canvas-capabilities}
+## New journey canvas experience {#canvas-capabilities}
 
 A **new user interface** is available for the journey canvas, built to scale with your most complex use cases:
 
@@ -104,14 +98,111 @@ A **new user interface** is available for the journey canvas, built to scale wit
 * **Automatic layout** — Automatically organizes activities for better readability.
 * **Guided authoring** — Provides a structured authoring experience to help you build journeys with ease and efficiency.
 
-![](assets/journey-new-canvas.png)
+![New journey canvas experience](assets/journey-new-canvas.png)
 
-To switch to the new experience, click the **[!UICONTROL New experience]** button in the journey canvas. Once switched, this setting is saved at the journey level, so the journey will open in the new experience by default on subsequent visits. To revert, click the **[!UICONTROL Old experience]** button.
-In addition, your last selected experience (Old or New) is now remembered at the user level. Going forward, this preference is automatically applied whenever you create a new journey, so you don't need to switch manually each time.
+Newly created journeys use the new canvas experience. For journeys created before this change, you can switch to the new experience by clicking the **[!UICONTROL New experience]** button in the journey canvas. To revert to the old experience, click the **[!UICONTROL Old experience]** button.
 
-![](assets/journey-new-experience-switch.png)
+![Switch between the old and new journey canvas experience](assets/journey-new-experience-switch.png)
 
-Watch this video for a video overview of the new journey canvas experience:
+Watch this [how-to video](#video) for a full walkthrough of the new canvas experience.
+
+### Add activities to your journey
+
+To add an activity to your canvas, click the plus (+) icon between two activities and select an activity from the list to add it to your journey.
+
+  ![Add an activity from the canvas using the plus icon](assets/journey-canvas-add-activity.png)
+
+The list automatically filters to show only the activities that can be added at that specific location in your journey, rather than every activity available in the palette. If you want to see every activity regardless of location, click the **[!UICONTROL Filter items]** icon and clear the **[!UICONTROL Show only available items]** option.
+
+### Use the toolbar icons
+
+The toolbar in the top right corner of the canvas provides quick access to essential functions. Use these tools to customize your canvas view and manage complex journey layouts.
+
+![Canvas toolbar](assets/journey-canvas-toolbar.png)
+
+| Toolbar icon | Description |
+|--- |--- |
+| Download canvas image | Capture your current canvas view as an image and save it on your computer. |
+| Share feedback | Open a feedback form to let us know if you're missing something on the new canvas or have an idea to make it better. |
+| Multiple selection | Switch to selection mode to select multiple activities. |
+| Rotate | Change the orientation of your canvas layout. |
+| Fit to screen | Automatically adjust the zoom level to fit your entire journey in view. |
+| Zoom out | Decrease the zoom level. |
+| Zoom in | Increase the zoom level. |
+
+### Select multiple activities for bulk actions
+
+You can select multiple activities at once and run a bulk action on them.
+
+To select multiple activities, use one of these methods:
+
+* **Shift + drag** — Hold **Shift** and drag your mouse across the activities you want to select.
+* **Ctrl/Cmd + click** — Select the first activity, then hold **Ctrl** (or **Command** on Mac) and click additional activities to select them individually.
+* **Toolbar** — Click the **Multiple selection** icon in the toolbar, then click each activity you want to select.
+
+Once selected, you can perform these bulk actions:
+
+* **Copy** — Copy all selected activities to use in the same journey or paste into another journey.
+* **Delete** — Remove all selected activities at once.
+* **Save as journey fragment** — Convert the selected activities into a reusable journey fragment for use in other journeys.
+
+![Select multiple activities to run a bulk action](assets/journey-canvas-bulk.png)
+
+### Copy and paste activities
+
+To reuse activities or entire journey sequences:
+
+1. Select the activities you want to copy.
+1. Select **Copy** or press **Ctrl+C** (or Command+C on Mac) to copy.
+
+      ![](assets/journey-canvas-copy.png)
+
+1. Navigate to the destination, either the same journey or a different journey in your sandbox.
+1. Click the plus **(+)** icon and select **[!UICONTROL Paste]** from the dropdown.
+
+    ![](assets/journey-canvas-paste.png)
+
+You can paste activities in the same order they were copied, and they will maintain their configuration. For more detailed information on copy/paste constraints and best practices, see [Copy and paste activities](#copy-paste).
+
+To copy a single activity, select it then click the **[!UICONTROL Copy]** icon in the activity configuration pane on the right, or press **Ctrl+C** (or Command+C on Mac) to copy.
+
+![](assets/journey-canvas-copy-single.png)
+
+To paste it, click the plus **(+)** icon and select **[!UICONTROL Paste]** from the dropdown.
+
+
+### Join and detach branches
+
+You can detach a branch to disconnect it from the rest of your journey without deleting it, and join it back later to reconnect it at a different point.
+
+To detach a branch, use one of these methods:
+
+* Click directly on the edge leading into the activity you want to detach, then select **[!UICONTROL Detach edge]**.
+
+  ![Detach an edge by clicking on it](assets/journey-canvas-detach.png)
+
+* Click the plus **(+)** icon on that edge and select **[!UICONTROL Detach edge]**.
+
+  ![Detach an edge from the plus icon menu](assets/journey-canvas-detach2.png)
+
+Either method reconnects the edge to a new **[!UICONTROL End]** activity, capping the chain above the detach point. The detached activity, along with anything downstream of it, is not deleted. It becomes its own disconnected branch on the canvas that you can reuse later.
+
+  ![Detached branch on the canvas](assets/journey-canvas-detached-branch.png)
+
+>[!NOTE]
+>
+>**[!UICONTROL Detach edge]** only appears where detaching makes sense. For example, it isn't available on an edge whose target is an **[!UICONTROL End]** activity shared by more than one branch.
+
+To join branches, click the plus **(+)** icon on the edge where you want the connection to continue, then open the **[!UICONTROL Join]** section in the dropdown. From there:
+
+* Select a branch from the **[!UICONTROL Disconnected]** list (branches not yet connected anywhere in the journey) or the **[!UICONTROL Branches]** list (branches already used elsewhere in the journey). Use the search field if you have a large number of activities.
+* Choose **[!UICONTROL Select from canvas]** to highlight every eligible activity on the canvas, then click the one you want to connect to.
+
+![Join a branch by selecting it from the canvas](assets/journey-canvas-join.png)
+
+## How-to video {#video}
+
+Learn how to use the new journey canvas experience.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496193)
 
@@ -178,6 +269,10 @@ In the canvas, when two activities are disconnected, a warning is displayed. Pla
 
  ![Warning icon showing disconnected activities in canvas](assets/canvas-disconnected.png)
 
+>[!NOTE]
+>
+>If you're using the new canvas experience, see [Join and detach branches](#join-and-detach-branches) instead.
+
 ## Copy and paste activities {#copy-paste}
 
 You can copy one or several activities of a journey and paste them either in the same journey or a different one. This allows you to save time if you want to reuse numerous activities that have been already configured in a previous journey. 
@@ -193,6 +288,10 @@ You can copy one or several activities of a journey and paste them either in the
 
 Here are the steps to copy/paste activities:
 
+>[!NOTE]
+>
+>If you're using the new canvas experience, see [Copy and paste activities](#copy-and-paste-activities) instead.
+
 1. Open a journey.
 1. Select the activities you want to copy by moving your mouse while clicking. You can also click on each activity while pressing the **Ctrl/Command** key. Use **Ctrl/Command + A** if you want to select all activities.
     ![Selecting multiple activities in journey for copying](assets/copy-paste1.png)
@@ -202,51 +301,4 @@ Here are the steps to copy/paste activities:
 1. In any journey, press **Ctrl/Command + V** to paste the activities without linking them to an existing node. Pasted activities are placed in the same order. After being pasted, activities stay selected so you can easily move them. You can also place the cursor on an empty place holder and hit **Ctrl/Command + V**. Pasted activities will be linked to the node. 
     ![Pasted activities in journey canvas ready to be connected](assets/copy-paste3.png)
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page introduces the Journey Optimizer journey designer canvas, explaining how to build multi-step journeys by dragging and dropping events, orchestration, and action activities from the palette.
-
-**Intents:**
-
-* Navigate the journey designer interface (palette, canvas, toolbar, activity configuration pane)
-* Add events, orchestration activities, and action activities to a journey canvas
-* Configure a fallback alternative path for Condition and Action activities on timeout or error
-* Copy and paste activities within the same journey or across different journeys in the same instance
-* Start a journey using an event trigger or a Read Audience entry point
-
-**Glossary:**
-
-* **Palette**: The left-hand panel in the journey designer listing all available events, orchestration, and action activities for drag-and-drop onto the canvas *(product-specific)*
-* **Canvas**: The central design area of the journey designer where activities are placed, connected, and configured *(product-specific)*
-* **Activity configuration pane**: The right-hand panel that opens when an activity is selected on the canvas, used to fill in activity settings *(product-specific)*
-* **Journey Fragments**: Reusable sets of pre-built journey nodes that can be inserted directly into the canvas to avoid rebuilding common logic *(product-specific)*
-* **Reaction event**: An event activity placed after a message to branch the journey based on recipient tracking interactions (open, click) *(product-specific)*
-
-**Guardrails:**
-
-* Actions, conditions, wait activities, and reaction events cannot be placed as the first step in a new journey.
-* Copy/paste is only supported within the same instance; cross-instance copy/paste is not supported.
-* You cannot copy/paste an event into a destination journey that uses a different namespace.
-* Pasted activities from a different sandbox may reference data that does not exist in the destination journey.
-* Only event and wait activities can be set in parallel; other activity types cannot run in parallel.
-* Alternative paths (timeout/error fallback) are available only for Condition and Action activities.
-
-**Terminology:**
-
-* Canonical name: Journey Designer — Acronym: none — variants: journey canvas, orchestration canvas
-* Synonyms: "palette" = "activity panel"; "canvas" = "design area"
-* Do not confuse: "events" (trigger journey entry or branching) ≠ "actions" (what happens to the customer, e.g. send a message)
-
-**FAQ:**
-
-* **Q: How do profiles enter a journey?** — Profiles enter either unitarily in real time when a configured event is received, or in batch when a Read Audience activity triggers the journey.
-* **Q: Can I add multiple events to a journey?** — Yes, you can add several events as long as they all use the same namespace.
-* **Q: How do I define a fallback when an action fails?** — In the activity properties, enable the "Add an alternative path in case of a timeout or an error" option to add a fallback path after the activity.
-* **Q: Can I copy activities from a read-only journey?** — Yes, you can copy activities from any journey regardless of its status, but you can only paste within the same instance.
-* **Q: What is a Journey Fragment?** — A reusable set of pre-built journey nodes (e.g. eligibility checks, welcome sequences) that can be inserted directly onto the canvas to avoid rebuilding common logic from scratch.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-using-the-journey-designer.md}}

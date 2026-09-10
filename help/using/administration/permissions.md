@@ -19,8 +19,6 @@ feature_v2:
   - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
     internal-label: Access control
 subfeature_v2:
-  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
-    internal-label: Access control
   - id: cfdf3a89-7087-4a5c-a6d2-2f4eb64a3470
     internal-label: User and role management
 role_v2:
