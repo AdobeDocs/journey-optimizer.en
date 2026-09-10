@@ -350,6 +350,16 @@ The following capabilities and improvements have been introduced to Orchestrated
 
   Availability date: August 11, 2026
 
+### Email Designer {#august-26-email-designer}
+
+* **Layer text over background images and change column counts freely in the Email Designer** - You can now layer a text component directly over a background image inside a structure without the previous non-intuitive workarounds. You can also change the column count of an existing structure — for example, from 2 columns to 3 — without deleting it and losing your content; existing content reflows into the new column layout instead. [Learn more](../email/content-from-scratch.md)
+
+  Availability date: August 11, 2026
+
+* **New Cover and Contain options for background image placement in the Email Designer** - The background image placement options now include Cover and Contain, alongside the existing Fit, Full Width, Full Height, and Repeat options. Cover scales the image proportionally to fill the structure or column, cropping any overflow; Contain scales it proportionally to fit within the container without cropping. Both combine with the existing alignment options to control which part of the image stays in view. [Learn more](../email/backgrounds.md)
+
+  Availability date: August 4, 2026
+
 ### Usability improvements {#august-26-usability}
 
 * **Multi-selection in the new journey canvas** - The new journey canvas experience introduces simplified multi-node selection: hold Shift and drag to select multiple nodes at once, rather than selecting them individually. This enables bulk actions, such as copy, delete, or save as a journey fragment, to be performed efficiently across several nodes. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
