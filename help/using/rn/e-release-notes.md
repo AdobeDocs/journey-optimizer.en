@@ -319,9 +319,46 @@ The following capabilities and improvements are coming to Decisioning in this re
 
 ### Email Designer {#sep-26-email-designer}
 
-The following improvement is coming to the Email Designer in this release.
+The following capabilities and improvements are coming to the Email Designer in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Independent dark mode styling for email theme variants</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Email themes now support independent styling for dark mode. In the theme builder, you can turn on dark mode for a given variant to generate a dedicated dark mode stylesheet that you edit separately from the light mode styles — changes made in one mode no longer overwrite the other. In the email and template editor, a new preview toggle next to the desktop and mobile view options lets you preview your content in dark mode.</p>
+<p>Because this in-editor preview relies on a CSS filter and isn't pixel-perfect, we recommend sending a proof to verify exact rendering in dark-mode-enabled email clients.</p>
+<!-- GIF placeholder: to be added -->
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Import Dynamic Media templates directly from PSD files in the Email Designer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Email Designer's Dynamic Media component now lets you import a Photoshop (PSD) file directly as a new template, in addition to browsing existing Dynamic Media templates. Drag and drop a PSD file into the component, and Adobe Journey Optimizer automatically converts it into a Dynamic Media template stored in Dynamic Media — no manual conversion or round-trip through Adobe Experience Manager needed. Once imported, you edit the template using the built-in Dynamic Media editor, the same experience used for Adobe Express content in the Email Designer.</p>
+<!-- GIF placeholder: to be added -->
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
 
 * **New table component in the Email Designer** - The Email Designer now includes a built-in **Table component**, allowing you to structure content in rows and columns directly within your email. Drag and drop the component onto your canvas, customize the number of rows and columns, and style each cell independently to create clear, organized layouts without relying on custom HTML. <!-- Documentation link: TBD -->
+
+* **Fallback fonts for custom fonts in email themes** - You can now define a fallback font for any custom (web) font applied through email themes. If a subscriber's email client doesn't support the custom font, Adobe Journey Optimizer automatically displays the specified fallback font instead of leaving the choice to the email client's default. This keeps email typography closer to your brand guidelines and reduces font-rendering inconsistencies across email clients. <!-- Documentation link: TBD -->
 
 ### Administration {#sep-26-administration}
 
