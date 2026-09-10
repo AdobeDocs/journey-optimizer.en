@@ -72,7 +72,7 @@ The following capability and improvement are coming to Loyalty in this release.
 <table>
 <thead>
 <tr>
-<th><strong>Challenge Recommendations</strong><br/></th>
+<th><strong>Challenge Opportunities</strong><br/></th>
 </tr>
 </thead>
 <tbody>
