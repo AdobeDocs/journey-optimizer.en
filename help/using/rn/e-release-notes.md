@@ -243,6 +243,25 @@ The following capabilities and improvements are coming to channels in this relea
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Override email channel configuration settings</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>When building your journeys and campaigns, you can now override the email parameters derived from the selected channel configuration directly at the journey or campaign action level.</p>
+<p>This lets you personalize the email header fields (<strong>From name</strong>, <strong>From email prefix</strong>, <strong>Reply to name</strong>, and <strong>Reply to email</strong>), the execution address, and the list-unsubscribe values, using profile attributes or contextual data for more precise control. In particular, this allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14718" target="_blank">DOCAC-14718</a></p>
+<!-- GIF placeholder: to be added -->
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
+
 * **Custom SMS BYOP auth flexibility** - You can now configure **custom authentication headers** when connecting your SMS provider's OAuth setup, including where the token is placed on outgoing messages and how the token request itself is formatted. <a href="https://jira.corp.adobe.com/browse/DOCAC-15638" target="_blank">DOCAC-15638</a> <!-- Documentation link: TBD -->
 
 ### Orchestrated campaigns {#sep-26-oc}
@@ -395,12 +414,6 @@ The following capabilities and improvements are coming to the Email Designer in 
 </table>
 
 * **Fallback fonts for custom fonts in email themes** - You can now define a fallback font for any custom (web) font applied through email themes. If a subscriber's email client does not support the custom font, Adobe Journey Optimizer automatically displays the specified fallback font instead of leaving the choice to the email client's default. This keeps email typography closer to your brand guidelines and reduces font-rendering inconsistencies across email clients. <a href="https://jira.corp.adobe.com/browse/DOCAC-15662" target="_blank">DOCAC-15662</a> <!-- Documentation link: TBD -->
-
-### Administration {#sep-26-administration}
-
-The following improvement is coming to administration in this release.
-
-* **Feedback loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub **One-Time Password (OTP)** directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification. <a href="https://jira.corp.adobe.com/browse/DOCAC-14815" target="_blank">DOCAC-14815</a> <!-- Documentation link: TBD -->
 
 ### Usability improvements {#sep-26-usability}
 
