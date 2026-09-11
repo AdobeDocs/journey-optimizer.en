@@ -169,7 +169,7 @@ The following capabilities and improvements are coming to journeys in this relea
 
 * **Supplemental ID support in Journey simulation** - **Supplemental ID** is now supported in Journey simulation, allowing you to test complex user scenarios for both read-audience and event-triggered journeys. <!-- Documentation link: TBD -->
 
-* **Refined batch audience evaluation wait logic** - In the **Read audience activity**, the "Trigger after batch audience evaluation" option in journeys now waits for a fresh audience evaluation only when a batch segmentation is already in progress and the batch to activate differs from the one used in the previous run, avoiding unnecessary delays for journeys that don't need to wait. <!-- Documentation link: TBD -->
+* **Refined batch audience evaluation wait logic** - In the **Read audience activity**, the "Trigger after batch audience evaluation" option in journeys now waits for a fresh audience evaluation only when a batch segmentation is already in progress and the batch to activate differs from the one used in the previous run, avoiding unnecessary delays for journeys that do not need to wait. <!-- Documentation link: TBD -->
 
 ### Channels {#sep-26-channels}
 
@@ -203,7 +203,7 @@ The following capabilities and improvements are coming to channels in this relea
 <tr>
 <td>
 <p><strong>Custom outbound channels</strong> let administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder. Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement.</p>
-<p>Custom channels also gain several new capabilities:</p>
+<p>With this release, custom outbound channels also gain several new capabilities:</p>
 <ul>
 <li>Use Journey Optimizer Decisioning in the custom channel payload through the Personalization Editor, the same way as in code-based experiences.</li>
 <li>Apply business rules to custom channels, the same way you already can on native channels.</li>
@@ -337,7 +337,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <tr>
 <td>
 <p>Email themes now support independent styling for dark mode. In the theme builder, you can turn on dark mode for a given variant to generate a dedicated dark mode stylesheet that you edit separately from the light mode styles — changes made in one mode no longer overwrite the other. In the email and template editor, a new preview toggle next to the desktop and mobile view options lets you preview your content in dark mode.</p>
-<p>Because this in-editor preview relies on a CSS filter and isn't pixel-perfect, we recommend sending a proof to verify exact rendering in dark-mode-enabled email clients.</p>
+<p>Because this in-editor preview relies on a CSS filter and is not pixel-perfect, we recommend sending a proof to verify exact rendering in dark-mode-enabled email clients.</p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -362,9 +362,24 @@ The following capabilities and improvements are coming to the Email Designer in 
 </tbody>
 </table>
 
-* **New table component in the Email Designer** - The Email Designer now includes a built-in **Table component**, allowing you to structure content in rows and columns directly within your email. Drag and drop the component onto your canvas, customize the number of rows and columns, and style each cell independently to create clear, organized layouts without relying on custom HTML. <!-- Documentation link: TBD -->
+<table>
+<thead>
+<tr>
+<th><strong>New table component in the Email Designer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Email Designer now includes a built-in <strong>Table component</strong>, allowing you to structure content in rows and columns directly within your email. Drag and drop the component onto your canvas, customize the number of rows and columns, and style each cell independently to create clear, organized layouts without relying on custom HTML.</p>
+<!-- GIF placeholder: to be added -->
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
 
-* **Fallback fonts for custom fonts in email themes** - You can now define a fallback font for any custom (web) font applied through email themes. If a subscriber's email client doesn't support the custom font, Adobe Journey Optimizer automatically displays the specified fallback font instead of leaving the choice to the email client's default. This keeps email typography closer to your brand guidelines and reduces font-rendering inconsistencies across email clients. <!-- Documentation link: TBD -->
+* **Fallback fonts for custom fonts in email themes** - You can now define a fallback font for any custom (web) font applied through email themes. If a subscriber's email client does not support the custom font, Adobe Journey Optimizer automatically displays the specified fallback font instead of leaving the choice to the email client's default. This keeps email typography closer to your brand guidelines and reduces font-rendering inconsistencies across email clients. <!-- Documentation link: TBD -->
 
 ### Administration {#sep-26-administration}
 
