@@ -28,7 +28,7 @@ Adobe Journey Optimizer continuously delivers new features, enhancements to exis
 
 See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
-**Release date**: September 21, 2026
+**Release date**: September 21-22, 2026
 
 ### Content Management {#sep-26-content-management}
 
@@ -112,7 +112,7 @@ The following capability is coming to onboarding in this release.
 <table>
 <thead>
 <tr>
-<th><strong>Guided capabilities for onboarding emails and journeys</strong><br/></th>
+<th><strong>Guided capabilities for onboarding emails and journeys (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -268,7 +268,7 @@ The following capabilities and improvements are coming to orchestrated campaigns
 </tbody>
 </table>
 
-* **Support for Line** - You can now add **LINE actions** directly into your orchestrated campaigns. This new activity allows you to build and deliver highly personalized content, including text, stickers, images, videos, location data, and rich Flex Messages, to engage your customers seamlessly on the LINE platform. Previously released in Limited Availability, this capability is now available to all environments (General Availability). <!-- Documentation link: TBD -->
+* **Support for LINE** - You can now add **LINE actions** directly into your orchestrated campaigns. This new activity allows you to build and deliver highly personalized content, including text, stickers, images, videos, location data, and rich Flex Messages, to engage your customers seamlessly on the LINE platform. Previously released in Limited Availability, this capability is now available to all environments (General Availability). <!-- Documentation link: TBD -->
 
 * **New Orchestrated Campaigns monitoring APIs** - New **API specifications** are now available for orchestrated campaigns, allowing you to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines. <!-- Documentation link: TBD -->
 
@@ -279,7 +279,7 @@ The following capabilities and improvements are coming to campaigns in this rele
 <table>
 <thead>
 <tr>
-<th><strong>Inbound experience simulation in Action Campaigns</strong><br/></th>
+<th><strong>Inbound experience simulation in Action Campaigns (Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -369,29 +369,5 @@ The following improvement is coming to administration in this release.
 ### Usability improvements {#sep-26-usability}
 
 * **Usability improvements in the Content Simulation experience** - The new Content Simulation experience now lets you name and organize your variants for easy comparison, copy or delete variant details directly from each card, view full attribute paths and per-card channel configuration on demand, and upload your own CSV, JSON, or JSONL profiles from a more prominent upload button.
-
-<!--
-
-## June '26 pre-release notes {#june-26-rn}
-
-**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published once changes are live in production. While most changes are delivered on the release date, a few may roll out later — refer to the Availability Date listed for each entry for details.
-
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
-
-**Release date**: June 16-17, 2026
-
-### Journeys {#june-26-journeys}
-
-The following capabilities and improvements are coming to journeys in this release.
-
-* **Increased live journey limit and new guardrails** - You can now have up to **200 active journeys**, increased from the previous limit of 100.
-
-
-
-### Orchestrated campaigns {#june-26-oc}
-
-The following capabilities and improvements are coming to orchestrated campaigns in this release.
-
--->
 
 
