@@ -296,6 +296,8 @@ The following capabilities and improvements are coming to orchestrated campaigns
 
 * **Direct join UX improvements** - When adding an attribute from a related collection, you can now choose between three join modes — a new default that warns you about potential performance impact from cartesian products, plus the existing Aggregate and Advanced modes — making it easier to understand the tradeoffs of your query before you build it. <a href="https://jira.corp.adobe.com/browse/DOCAC-15675" target="_blank">DOCAC-15675</a> <!-- Documentation link: TBD -->
 
+* **Conditional content with relational data in orchestrated campaigns** - When building conditional content in the Email Designer for orchestrated campaigns, you can now build conditions directly on **relational data** — such as related records associated with a profile — not just standard profile attributes. This closes a gap from the original release, so marketers can build these conditions visually, without needing engineering help. <a href="https://jira.corp.adobe.com/browse/DOCAC-15679" target="_blank">DOCAC-15679</a> <!-- Documentation link: TBD -->
+
 ### Campaigns {#sep-26-campaigns}
 
 The following capabilities and improvements are coming to campaigns in this release.
