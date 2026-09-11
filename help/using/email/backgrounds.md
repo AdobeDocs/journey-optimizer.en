@@ -71,8 +71,6 @@ Below are the available background settings that you can use.
     >
     >In that case, make sure you do not set a viewport background color as it may hide the structure background colors.
 
-    ![](assets/background_4.png)
-
 1. Set a **[!UICONTROL Background image]** for the content of a structure component.
 
     >[!NOTE]
@@ -91,6 +89,8 @@ Below are the available background settings that you can use.
     * **[!UICONTROL Repeat]** - Tiles the image at its original size to fill the container.
     * **[!UICONTROL Left]**, **[!UICONTROL Right]**, **[!UICONTROL Center]**, **[!UICONTROL Top]**, **[!UICONTROL Bottom]** - Positions the image at its original size, anchored to the corresponding edge or center of the container.
 
+    ![](assets/background_4.png)
+
     >[!NOTE]
     >
     >**[!UICONTROL Full Width - Top]**, **[!UICONTROL Full Width - Bottom]**, **[!UICONTROL Full Height - Left]**, and **[!UICONTROL Full Height - Right]** give you more control over which part of the image stays in view when it doesn't match the structure's proportions, compared to using **[!UICONTROL Fit]**, **[!UICONTROL Full Width]**, or **[!UICONTROL Full Height]** alone.
@@ -104,5 +104,7 @@ Below are the available background settings that you can use.
     >This is the most common use case. Adobe recommends setting background colors at the column level as this allows for more flexibility when editing the whole email content.
 
     You can also set a background image at the column level, but this is rarely used.
+
+![](assets/background_6.png)
 
 {{$include /help/_includes/do-not-localize/email/ai-augmented-backgrounds.md}}
