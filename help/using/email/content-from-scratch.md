@@ -101,20 +101,23 @@ To start building your content, follow the steps below:
 
     ![Create your email screen with the Design from scratch option highlighted, alongside Code your own and Import HTML options and sample templates below](assets/email_designer.png)
 
+1. To get started quickly, use **[!UICONTROL Modules]** — ready-to-use, pre-designed content blocks such as headers, hero sections, and footers — to speed up email creation and keep your campaigns visually consistent. [Learn more about modules](email-modules.md)
 
-1. Accelerate your email creation with Generate Content and generate complete email content with text and images using [Generate full content with AI](../content-management/generative-full-content.md).
+    ![Email Designer with the Modules tab selected in the left panel, listing module categories such as Headers, Hero, Testimonial, Cards, Teams, and Footers](assets/email_designer_modules_tab.png)
 
-1. Start designing your content by drag and dropping **[!UICONTROL Structures]** into the canvas to define the layout of your email.
+1. Otherwise, design your content by drag and dropping **[!UICONTROL Structures]** into the canvas to define the layout of your email.
 
-   >[!NOTE]
+   >[!TIP]
    >
-   >Stacking columns is not compatible with all email programs. When not supported, columns will not be stacked.
-
-    <!--Once placed in the email, you cannot move nor remove your components unless there is already a content component or a fragment placed inside. This is not true in AJO - TBC?-->
+   >Alternatively, accelerate your email creation with Generate Content to generate complete email content, including text and images, using [Generate full content with AI](../content-management/generative-full-content.md). You can then skip ahead to previewing and validating your content.
 
 1. Add as many **[!UICONTROL Structures]** as needed and edit their settings in the dedicated pane on the right.
 
     ![Email Designer with the Structures panel showing available column layouts, and the Settings and Styles tabs highlighted in the right Structure panel](assets/email_designer_structure_components.png)
+
+    >[!NOTE]
+    >
+    >On narrow screens (e.g. mobile), columns stack vertically by default for readability. Some email clients don't support this behavior, in which case columns remain side-by-side. You can also turn this off using the **[!UICONTROL Do not stack columns on mobile]** toggle in the **[!UICONTROL Settings]** tab.
 
 1. Most of the structures (**[!UICONTROL 1:1 column]**, **[!UICONTROL 2:2 column]**, **[!UICONTROL 1:2 column Left]**, and so on) are fixed presets. Select the **[!UICONTROL n:n column]** component instead to define any number of columns of your choice (between 3 and 10).
 
@@ -128,7 +131,7 @@ To start building your content, follow the steps below:
     >
     >Each column size cannot be under 10% of the total width of the structure component. You cannot remove a column that is not empty.
 
-1. Expand the **[!UICONTROL Contents]** section and add as many elements as you need into one or more structure components. [Learn more about content components](content-components.md)
+1. From the **[!UICONTROL Contents]** section, add as many elements as you need into one or more structure components. [Learn more about content components](content-components.md)
 
 1. Each component can be further customized using the **[!UICONTROL Settings]** or **[!UICONTROL Style]** tabs in the right menu. For example, you can change the text style, padding or margin of each component. [Learn more about alignment and padding](alignment-and-padding.md)
 
