@@ -23,9 +23,9 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
-* The **Design content from scratch with the Email Designer** page now documents that the column count of an existing structure can be increased at any time from the Settings tab — even after content has been added — without losing that content. [Read more](../email/content-from-scratch.md)
-
 * The **Personalize your email background** page has been expanded and improved. It now documents the full **Image placement** dropdown for background images and adds new best practices for background colors and images, including a recommendation to test background images across real email clients rather than relying solely on the Email Designer preview. [Read more](../email/backgrounds.md)
+
+* The **Design content from scratch with the Email Designer** page now documents that the column count of an existing structure can be increased at any time from the **[!UICONTROL Settings]** tab — even after content has been added — without losing that content. [Read more](../email/content-from-scratch.md)
 
 * The **Design your journey** page now includes a full tutorial section on the new canvas experience, covering how to add activities, use the toolbar icons, select multiple activities for bulk actions, copy and paste activities, and join or detach branches. [Read more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
 

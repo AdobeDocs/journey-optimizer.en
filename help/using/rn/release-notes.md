@@ -352,7 +352,7 @@ The following capabilities and improvements have been introduced to Orchestrated
 
 ### Email Designer {#august-26-email-designer}
 
-* **Change column counts freely in the Email Designer** - You can now change the column count of an existing structure — for example, from 2 columns to 3 — without deleting it and losing your content. [Learn more](../email/content-from-scratch.md)
+* **Increase column counts without losing content in the Email Designer** - You can now increase the column count of an existing structure — for example, from 2 columns to 3 — without deleting it and losing your content. [Learn more](../email/content-from-scratch.md)
 
   Availability date: August 5, 2026
 

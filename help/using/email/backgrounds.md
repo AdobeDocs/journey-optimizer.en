@@ -58,6 +58,10 @@ Keep the following best practices in mind when setting backgrounds in the Email 
 
 The following settings let you apply a background color or image at any level of your email content, from the body down to individual structures and columns.
 
+>[!TIP]
+>
+>If a theme is applied to your email, you cannot directly override the background color set by the theme for a given component. You must first unlock that style using the dedicated icon in the **[!UICONTROL Styles]** tab. [Learn how](apply-email-themes.md#unlocking-styles)
+
 ## Set a background color {#background-color}
 
 1. **Body background color** - Set a **[!UICONTROL Background color]** for the whole email. Make sure you select **[!UICONTROL Body]** in the **[!UICONTROL Navigation tree]** accessible from the left palette and use the dedicated option from the **[!UICONTROL Styles]** tab on the right.
