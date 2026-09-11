@@ -58,6 +58,7 @@ The following capability is coming to content management in this release.
 <li>Audits assembled email code for corporate compliance, visual design quality, and WCAG 2.1 AA accessibility standards.</li>
 <li>Exports approved HTML directly into Adobe Journey Optimizer and Adobe Campaign.</li>
 </ul>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-15642" target="_blank">DOCAC-15642</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -79,6 +80,7 @@ The following capability and improvement are coming to Loyalty in this release.
 <tr>
 <td>
 <p>The Loyalty Performance menu now includes an <strong>Opportunities tab</strong>, which surfaces AI-detected trends and gaps such as tier progression friction or challenge task drop-off, each with a projected impact and a one-click "Create with AI" action to generate a challenge that addresses it.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-15563" target="_blank">DOCAC-15563</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -96,6 +98,7 @@ The following capability and improvement are coming to Loyalty in this release.
 <tr>
 <td>
 <p>Creating or editing an Event Mapping now uses a new **visual mapping builder**: select a schema, pick fields from a searchable field selector, map each field to a loyalty event field with per-row connection status, and preview the auto-generated JSONata expression, with the option to switch to manual JSONata editing at any time.</p><p>In addition, "Event Definitions" in Loyalty admin have been renamed to "Event Mappings", with a refreshed list view that shows the human-readable Experience event schema name.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-15661" target="_blank">DOCAC-15661</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -103,7 +106,7 @@ The following capability and improvement are coming to Loyalty in this release.
 </tbody>
 </table>
 
-* **CX Coworker loyalty recommendation skill** - Marketers can now request **challenge opportunities** directly in CX Coworker's conversational interface, getting grounded challenge ideas based on real loyalty program trends and turning them into live challenges without leaving the chat. <!-- Documentation link: TBD -->
+* **CX Coworker loyalty recommendation skill** - Marketers can now request **challenge opportunities** directly in CX Coworker's conversational interface, getting grounded challenge ideas based on real loyalty program trends and turning them into live challenges without leaving the chat. <a href="https://jira.corp.adobe.com/browse/DOCAC-15565" target="_blank">DOCAC-15565</a> <!-- Documentation link: TBD -->
 
 ### Onboarding {#sep-26-onboarding}
 
@@ -120,6 +123,7 @@ The following capability is coming to onboarding in this release.
 <td>
 <p>Transitioning to Adobe Journey Optimizer from another marketing platform is easier with guided capabilities that help you move existing email content and journeys into Journey Optimizer. A <strong>dedicated workspace</strong> lets you reuse what you have instead of rebuilding from scratch.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-15330" target="_blank">DOCAC-15330</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -141,6 +145,7 @@ The following capabilities and improvements are coming to journeys in this relea
 <tr>
 <td>
 <p>The <strong>Journey Simulation skill</strong> in CX Coworker automates end-to-end journey validation and lets you easily interpret the results. Note that this feature currently supports only the Quick Simulation flow and does not fully replace the Journey Optimizer manual simulation experience.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-15374" target="_blank">DOCAC-15374</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -158,6 +163,7 @@ The following capabilities and improvements are coming to journeys in this relea
 <tr>
 <td>
 <p><strong>Journey creation with AI</strong> is now available directly from the CX Coworker right rail, replacing the previous AI Assistant experience with a re-branded, integrated entry point for generating journeys.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14898" target="_blank">DOCAC-14898</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -165,11 +171,11 @@ The following capabilities and improvements are coming to journeys in this relea
 </tbody>
 </table>
 
-* **Decisioning path experimentation in Journey simulation** - **Path Experimentation**, part of the Optimize activity in Decisioning, is now supported in Journey simulation. <!-- Documentation link: TBD -->
+* **Decisioning path experimentation in Journey simulation** - **Path Experimentation**, part of the Optimize activity in Decisioning, is now supported in Journey simulation. <a href="https://jira.corp.adobe.com/browse/DOCAC-15641" target="_blank">DOCAC-15641</a> <!-- Documentation link: TBD -->
 
-* **Supplemental ID support in Journey simulation** - **Supplemental ID** is now supported in Journey simulation, allowing you to test complex user scenarios for both read-audience and event-triggered journeys. <!-- Documentation link: TBD -->
+* **Supplemental ID support in Journey simulation** - **Supplemental ID** is now supported in Journey simulation, allowing you to test complex user scenarios for both read-audience and event-triggered journeys. <a href="https://jira.corp.adobe.com/browse/DOCAC-15448" target="_blank">DOCAC-15448</a> <!-- Documentation link: TBD -->
 
-* **Refined batch audience evaluation wait logic** - In the **Read audience activity**, the "Trigger after batch audience evaluation" option in journeys now waits for a fresh audience evaluation only when a batch segmentation is already in progress and the batch to activate differs from the one used in the previous run, avoiding unnecessary delays for journeys that do not need to wait. <!-- Documentation link: TBD -->
+* **Refined batch audience evaluation wait logic** - In the **Read audience activity**, the "Trigger after batch audience evaluation" option in journeys now waits for a fresh audience evaluation only when a batch segmentation is already in progress and the batch to activate differs from the one used in the previous run, avoiding unnecessary delays for journeys that do not need to wait. <a href="https://jira.corp.adobe.com/browse/DOCAC-15465" target="_blank">DOCAC-15465</a> <!-- Documentation link: TBD -->
 
 ### Channels {#sep-26-channels}
 
@@ -186,6 +192,7 @@ The following capabilities and improvements are coming to channels in this relea
 <td>
 <p>Journey Optimizer now expands its real-time mobile personalization capabilities by extending <strong>Live Activity support to Android</strong>. You can deliver real-time progress updates directly to users, such as order tracking, flight statuses, live event updates, and real-time sports scores.</p>
 <p>Beyond supporting iOS Live Activities, Journey Optimizer now manages temporary push tokens for Android Live Updates across its platform configurations. It supports both broadcast and transactional update flows using API-triggered campaigns and headless APIs.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-15510" target="_blank">DOCAC-15510</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -210,6 +217,7 @@ The following capabilities and improvements are coming to channels in this relea
 <li>Select custom channels in the channel list for API-triggered campaigns, which was not previously possible.</li>
 <li>Define a reporting webhook for a custom channel and attach it to a channel configuration, so you can enrich your Journey Optimizer reports with interaction events.</li>
 </ul>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14037" target="_blank">DOCAC-14037</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -227,6 +235,7 @@ The following capabilities and improvements are coming to channels in this relea
 <tr>
 <td>
 <p>Adobe Journey Optimizer now includes a new <strong>Destinations node</strong> on the journey canvas, letting joint Adobe Experience Platform Real-Time CDP and Journey Optimizer customers add or remove profiles from external paid media audiences such as Facebook and Google directly within a journey.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-11383" target="_blank">DOCAC-11383</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -234,7 +243,7 @@ The following capabilities and improvements are coming to channels in this relea
 </tbody>
 </table>
 
-* **Custom SMS BYOP auth flexibility** - You can now configure **custom authentication headers** when connecting your SMS provider's OAuth setup, including where the token is placed on outgoing messages and how the token request itself is formatted. <!-- Documentation link: TBD -->
+* **Custom SMS BYOP auth flexibility** - You can now configure **custom authentication headers** when connecting your SMS provider's OAuth setup, including where the token is placed on outgoing messages and how the token request itself is formatted. <a href="https://jira.corp.adobe.com/browse/DOCAC-15638" target="_blank">DOCAC-15638</a> <!-- Documentation link: TBD -->
 
 ### Orchestrated campaigns {#sep-26-oc}
 
@@ -250,6 +259,7 @@ The following capabilities and improvements are coming to orchestrated campaigns
 <tr>
 <td>
 <p>The AND-join activity has been upgraded to a generic <strong>Join activity</strong>, allowing you to choose between AND and OR join conditions.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-15020" target="_blank">DOCAC-15020</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -267,6 +277,7 @@ The following capabilities and improvements are coming to orchestrated campaigns
 <tr>
 <td>
 <p>Orchestrated Campaigns now support <strong>real-time alerting</strong>, including critical notifications when a campaign fails, runs longer than a defined threshold, or hits an activity-level error, so marketers can catch and resolve issues without waiting for a campaign to complete.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14886" target="_blank">DOCAC-14886</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -274,9 +285,9 @@ The following capabilities and improvements are coming to orchestrated campaigns
 </tbody>
 </table>
 
-* **Support for LINE** - You can now add **LINE actions** directly into your orchestrated campaigns. This new activity allows you to build and deliver highly personalized content, including text, stickers, images, videos, location data, and rich Flex Messages, to engage your customers seamlessly on the LINE platform. Previously released in Limited Availability, this capability is now available to all environments (General Availability). <!-- Documentation link: TBD -->
+* **Support for LINE** - You can now add **LINE actions** directly into your orchestrated campaigns. This new activity allows you to build and deliver highly personalized content, including text, stickers, images, videos, location data, and rich Flex Messages, to engage your customers seamlessly on the LINE platform. Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="https://jira.corp.adobe.com/browse/DOCAC-15102" target="_blank">DOCAC-15102</a> <!-- Documentation link: TBD -->
 
-* **New Orchestrated Campaigns monitoring APIs** - New **API specifications** are now available for orchestrated campaigns, allowing you to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines. <!-- Documentation link: TBD -->
+* **New Orchestrated Campaigns monitoring APIs** - New **API specifications** are now available for orchestrated campaigns, allowing you to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines. <a href="https://jira.corp.adobe.com/browse/DOCAC-14308" target="_blank">DOCAC-14308</a> <!-- Documentation link: TBD -->
 
 ### Campaigns {#sep-26-campaigns}
 
@@ -293,12 +304,13 @@ The following capabilities and improvements are coming to campaigns in this rele
 <td>
 <p>You can now simulate inbound channel actions in Action Campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
 <p>This capability is currently in private beta and available to a limited set of organizations. Contact your Adobe representative for more information.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-15166" target="_blank">DOCAC-15166</a></p>
 </td>
 </tr>
 </tbody>
 </table>
 
-* **Folders for campaigns** - You can now organize your campaigns into **folders** to improve navigation and management in the interface. <!-- Documentation link: TBD -->
+* **Folders for campaigns** - You can now organize your campaigns into **folders** to improve navigation and management in the interface. <a href="https://jira.corp.adobe.com/browse/DOCAC-15098" target="_blank">DOCAC-15098</a> <!-- Documentation link: TBD -->
 
 ### Decisioning {#sep-26-decisioning}
 
@@ -314,6 +326,7 @@ The following capabilities and improvements are coming to Decisioning in this re
 <tr>
 <td>
 <p>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-11548" target="_blank">DOCAC-11548</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -321,7 +334,7 @@ The following capabilities and improvements are coming to Decisioning in this re
 </tbody>
 </table>
 
-* **Decisioning rule generation from CX Coworker** - The **AI-assisted decisioning rule generation** experience, previously available via the right rail, is now accessible through CX Coworker, which replaces the right rail as the way to build rules with AI. <!-- Documentation link: TBD -->
+* **Decisioning rule generation from CX Coworker** - The **AI-assisted decisioning rule generation** experience, previously available via the right rail, is now accessible through CX Coworker, which replaces the right rail as the way to build rules with AI. <a href="https://jira.corp.adobe.com/browse/DOCAC-15290" target="_blank">DOCAC-15290</a> <!-- Documentation link: TBD -->
 
 ### Email Designer {#sep-26-email-designer}
 
@@ -337,6 +350,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <tr>
 <td>
 <p>Email themes now support independent styling for dark mode. In the theme builder, you can turn on dark mode for a given variant to generate a dedicated dark mode stylesheet that you edit separately from the light mode styles — changes made in one mode no longer overwrite the other. In the email and template editor, a new preview toggle next to the desktop and mobile view options lets you preview your content in dark mode.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-15663" target="_blank">DOCAC-15663</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -354,6 +368,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <tr>
 <td>
 <p>The Email Designer's Dynamic Media component now lets you import a Photoshop (PSD) file directly as a new template, in addition to browsing existing Dynamic Media templates. Drag and drop a PSD file into the component, and Adobe Journey Optimizer automatically converts it into a Dynamic Media template stored in Dynamic Media — no manual conversion or round-trip through Adobe Experience Manager needed. Once imported, you edit the template using the built-in Dynamic Media editor, the same experience used for Adobe Express content in the Email Designer.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-15664" target="_blank">DOCAC-15664</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -371,6 +386,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <tr>
 <td>
 <p>The Email Designer now includes a built-in <strong>Table component</strong>, allowing you to structure content in rows and columns directly within your email. Drag and drop the component onto your canvas, customize the number of rows and columns, and style each cell independently to create clear, organized layouts without relying on custom HTML.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-15093" target="_blank">DOCAC-15093</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -378,16 +394,16 @@ The following capabilities and improvements are coming to the Email Designer in 
 </tbody>
 </table>
 
-* **Fallback fonts for custom fonts in email themes** - You can now define a fallback font for any custom (web) font applied through email themes. If a subscriber's email client does not support the custom font, Adobe Journey Optimizer automatically displays the specified fallback font instead of leaving the choice to the email client's default. This keeps email typography closer to your brand guidelines and reduces font-rendering inconsistencies across email clients. <!-- Documentation link: TBD -->
+* **Fallback fonts for custom fonts in email themes** - You can now define a fallback font for any custom (web) font applied through email themes. If a subscriber's email client does not support the custom font, Adobe Journey Optimizer automatically displays the specified fallback font instead of leaving the choice to the email client's default. This keeps email typography closer to your brand guidelines and reduces font-rendering inconsistencies across email clients. <a href="https://jira.corp.adobe.com/browse/DOCAC-15662" target="_blank">DOCAC-15662</a> <!-- Documentation link: TBD -->
 
 ### Administration {#sep-26-administration}
 
 The following improvement is coming to administration in this release.
 
-* **Feedback loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub **One-Time Password (OTP)** directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification. <!-- Documentation link: TBD -->
+* **Feedback loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub **One-Time Password (OTP)** directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification. <a href="https://jira.corp.adobe.com/browse/DOCAC-14815" target="_blank">DOCAC-14815</a> <!-- Documentation link: TBD -->
 
 ### Usability improvements {#sep-26-usability}
 
-* **Usability improvements in the Content Simulation experience** - The new Content Simulation experience now lets you name and organize your variants for easy comparison, copy or delete variant details directly from each card, view full attribute paths and per-card channel configuration on demand, and upload your own CSV, JSON, or JSONL profiles from a more prominent upload button.
+* **Usability improvements in the Content Simulation experience** - The new Content Simulation experience now lets you name and organize your variants for easy comparison, copy or delete variant details directly from each card, view full attribute paths and per-card channel configuration on demand, and upload your own CSV, JSON, or JSONL profiles from a more prominent upload button. <a href="https://jira.corp.adobe.com/browse/DOCAC-15570" target="_blank">DOCAC-15570</a>
 
 
