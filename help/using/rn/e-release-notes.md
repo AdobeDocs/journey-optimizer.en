@@ -203,7 +203,13 @@ The following capabilities and improvements are coming to channels in this relea
 <tr>
 <td>
 <p><strong>Custom outbound channels</strong> let administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder. Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement.</p>
-<p>Custom channels also gain several new capabilities. You can now use Journey Optimizer Decisioning in the custom channel payload through the Personalization Editor, the same way as in code-based experiences. Custom channels also support business rules, letting you apply rule sets the same way you already can on native channels. Custom channels are now available in the channel list for API-triggered campaigns, which was not previously the case. You can also define a reporting webhook for a custom channel and attach it to a channel configuration, so you can enrich your Journey Optimizer reports with interaction events.</p>
+<p>Custom channels also gain several new capabilities:</p>
+<ul>
+<li>Use Journey Optimizer Decisioning in the custom channel payload through the Personalization Editor, the same way as in code-based experiences.</li>
+<li>Apply business rules to custom channels, the same way you already can on native channels.</li>
+<li>Select custom channels in the channel list for API-triggered campaigns, which was not previously possible.</li>
+<li>Define a reporting webhook for a custom channel and attach it to a channel configuration, so you can enrich your Journey Optimizer reports with interaction events.</li>
+</ul>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
