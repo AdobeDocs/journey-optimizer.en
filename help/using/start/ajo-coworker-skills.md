@@ -9,11 +9,15 @@ role: User
 level: Beginner
 mini-toc-levels: 2
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
-subfeature_v2: []
+subfeature_v2:
+  - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
+    internal-label: Journey design
+  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
+    internal-label: Templates
 ---
 
 # Journey Optimizer AI capabilities in CX Coworker {#ajo-coworker-skills}
