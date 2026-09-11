@@ -28,7 +28,7 @@ Adobe Journey Optimizer continuously delivers new features, enhancements to exis
 
 See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
-**Release date**: September 21-22, 2026
+**Release date**: September 22-23, 2026
 
 ### Content Management {#sep-26-content-management}
 
