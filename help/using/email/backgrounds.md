@@ -54,6 +54,7 @@ Keep the following best practices in mind when setting backgrounds in the Email 
 * Apply a background color to the body only if your design requires it.
 * Prefer setting background colors at the column level whenever possible.
 * Avoid using background colors on image or text components, as they are harder to manage.
+* Test background images across actual email clients before sending, since rendering can differ from the Email Designer preview.
 
 The following settings let you apply a background color or image at any level of your email content, from the body down to individual structures and columns.
 
@@ -61,15 +62,15 @@ The following settings let you apply a background color or image at any level of
 
 1. **Body background color** - Set a **[!UICONTROL Background color]** for the whole email. Make sure you select **[!UICONTROL Body]** in the **[!UICONTROL Navigation tree]** accessible from the left palette and use the dedicated option from the **[!UICONTROL Styles]** tab on the right.
 
-    ![](assets/background_1.png)
+    ![Email Designer with Body selected in the navigation tree and the Background color option highlighted in the Styles panel](assets/background_1.png)
 
 1. **Viewport background color** - Set a **[!UICONTROL Viewport color]** to apply the same background color across all structure components, independently of the body's background color.
 
-    ![](assets/background_2.png)
+    ![Email Designer Styles panel with the Viewport color option highlighted and a color picker open to choose the background color applied to all structures](assets/background_2.png)
 
 1. **Structure background color** - To apply a background color to a single structure component, select it directly in the canvas or from the left palette, and set a specific color for that structure.
 
-    ![](assets/background_3.png)
+    ![Email Designer Styles panel for a selected structure, with the Background color option highlighted](assets/background_3.png)
 
     >[!TIP]
     >
@@ -77,7 +78,7 @@ The following settings let you apply a background color or image at any level of
 
 1. **Column background color** - Set a background color at the column level. Again, make sure you select the desired column from the left palette, and set a specific color for that column.
 
-    ![](assets/background_5.png)
+    ![Email Designer Styles panel for a selected column, with the Background color option highlighted](assets/background_5.png)
 
     >[!TIP]
     >
@@ -91,7 +92,15 @@ You can also set a **[!UICONTROL Background image]** for the content of a struct
 >
 >Some email programs do not support background images. When not supported, the row background color will be used instead. Make sure you select an appropriate fallback background color in case the image cannot be displayed.
 
-Once a background image is set, use the **[!UICONTROL Image placement]** dropdown to control how the image fills the structure or column:
+![Email Designer Styles panel with Background image enabled and Image placement set to Full Height - Right, showing the image filling a column](assets/background_4.png)
+
+>[!TIP]
+>
+>Preview your background image across actual email clients before sending, not just in the Email Designer preview. The same image and placement can render correctly in the editor but appear stretched or cropped differently in some clients, such as Outlook on iOS.
+
+Once a background image is set, use the **[!UICONTROL Image placement]** dropdown to control how the image fills the structure or column. The options below are available for selection:
+
+![Email Designer Styles panel showing the Image placement dropdown with various options](assets/background_6.png){width=80%}
 
 **Scale to fill, centered:**
 
@@ -113,8 +122,6 @@ Once a background image is set, use the **[!UICONTROL Image placement]** dropdow
 **Position without scaling:**
 
 * **[!UICONTROL Left]**, **[!UICONTROL Right]**, **[!UICONTROL Center]**, **[!UICONTROL Top]**, **[!UICONTROL Bottom]** - Positions the image at its original size, anchored to the corresponding edge or center of the container.
-
-![](assets/background_4.png)
 
 >[!NOTE]
 >
