@@ -232,24 +232,6 @@ The following capabilities and improvements are coming to channels in this relea
 <table>
 <thead>
 <tr>
-<th><strong>Destinations channel in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Adobe Journey Optimizer now includes a new <strong>Destinations node</strong> on the journey canvas, letting joint Adobe Experience Platform Real-Time CDP and Journey Optimizer customers add or remove profiles from external paid media audiences such as Facebook and Google directly within a journey.</p>
-<p><a href="https://jira.corp.adobe.com/browse/DOCAC-11383" target="_blank">DOCAC-11383</a></p>
-<!-- GIF placeholder: to be added -->
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Override email channel configuration settings</strong><br/></th>
 </tr>
 </thead>
