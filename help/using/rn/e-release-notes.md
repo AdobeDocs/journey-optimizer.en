@@ -294,7 +294,7 @@ The following capabilities and improvements are coming to orchestrated campaigns
 
 * **New Orchestrated Campaigns monitoring APIs** - New **API specifications** are now available for orchestrated campaigns, allowing you to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines. <a href="https://jira.corp.adobe.com/browse/DOCAC-14308" target="_blank">DOCAC-14308</a> <!-- Documentation link: TBD -->
 
-* **Direct join UX improvements** - When adding an attribute from a related collection, you can now choose between three join modes — a new default that warns you about potential performance impact from cartesian products, plus the existing Aggregate and Advanced modes — making it easier to understand the tradeoffs of your query before you build it.
+* **Direct join UX improvements** - When adding an attribute from a related collection, you can now choose between three join modes — a new default that warns you about potential performance impact from cartesian products, plus the existing Aggregate and Advanced modes — making it easier to understand the tradeoffs of your query before you build it. <a href="https://jira.corp.adobe.com/browse/DOCAC-15675" target="_blank">DOCAC-15675</a> <!-- Documentation link: TBD -->
 
 ### Campaigns {#sep-26-campaigns}
 
@@ -347,9 +347,9 @@ The following capabilities and improvements are coming to Decisioning in this re
 
 The following capabilities and improvements are coming to Direct Mail in this release.
 
-* **Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration. An optional JSON manifest file describes all generated parts.
+* **Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration. An optional JSON manifest file describes all generated parts. <a href="https://jira.corp.adobe.com/browse/DOCAC-15677" target="_blank">DOCAC-15677</a> <!-- Documentation link: TBD -->
 
-* **Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors.
+* **Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors. <a href="https://jira.corp.adobe.com/browse/DOCAC-15676" target="_blank">DOCAC-15676</a> <!-- Documentation link: TBD -->
 
 ### Email Designer {#sep-26-email-designer}
 
