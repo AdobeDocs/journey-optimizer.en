@@ -167,5 +167,4 @@ Learn how to edit your assets in Adobe Journey Optimizer using Adobe Express too
 
 >[!VIDEO](https://video.tv.adobe.com/v/3455523/?quality=12)
 
-
-
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-express.md}}
