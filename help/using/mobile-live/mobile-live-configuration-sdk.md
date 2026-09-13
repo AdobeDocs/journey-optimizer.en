@@ -272,3 +272,5 @@ For comprehensive SDK documentation and implementation details:
 >[!TIP]
 >
 >If you are experiencing issues with token registration, payload alignment, or Live activity delivery, see [Troubleshoot Live activities](troubleshoot-mobile-live.md) for detailed debugging guidance.
+
+{{$include /help/_includes/do-not-localize/mobile-live/ai-augmented-mobile-live-configuration-sdk.md}}
