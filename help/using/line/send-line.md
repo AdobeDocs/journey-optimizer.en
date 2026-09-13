@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Check and test your text messages
+title: Check and send your LINE messages
 description: Learn how to check and send your LINE messages in Journey Optimizer
 feature: Line
 topic: Content Management
@@ -39,7 +39,7 @@ level_v2:
 
 >[!ENDSHADEBOX]
 
-## Preview your text message {#preview-line}
+## Preview your LINE message {#preview-line}
 
 Once your message content has been defined, you can preview its content using either simulation method:
 
@@ -52,7 +52,7 @@ Detailed information on how to preview & test content is available in the [Conte
 
 You must check alerts in the upper section of the editor. Some of them are simple warnings, but others can prevent you from sending the message. Two types of alerts can happen: warnings and errors.
 
-* **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your text message is empty.
+* **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your LINE message is empty.
 
 * **Errors** prevent you from testing or activating the journey, or publishing the campaign, as long as they are not resolved. For example, an error message warns you when the subject line is missing.
 
@@ -60,6 +60,8 @@ You must check alerts in the upper section of the editor. Some of them are simpl
 
 >[!IMPORTANT]
 >
-> If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your text messages. [Learn more](../test-approve/gs-approval.md)
+> If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your LINE messages. [Learn more](../test-approve/gs-approval.md)
 
 When your LINE message is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) or [campaign](../campaigns/create-campaign.md) to send it.
+
+{{$include /help/_includes/do-not-localize/line/ai-augmented-send-line.md}}
