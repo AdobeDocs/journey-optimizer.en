@@ -59,3 +59,5 @@ The configuration process for a custom channel consists of four steps. Each step
 
 
 -->
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-configure-custom-channel.md}}
