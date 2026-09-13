@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Check and send your LINE messages
-description: Learn how to check and send your LINE messages in Journey Optimizer
+title: Preview, validate, and send your LINE message
+description: Learn how to preview and validate a LINE message, resolve warnings and errors, request approval when required, and activate or publish it in a journey or campaign
 feature: Line
 topic: Content Management
 role: User
@@ -31,37 +31,68 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
 ---
-# Check and send your LINE message {#send-line}
+
+# Preview, validate, and send your LINE message {#send-line}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Preview, simulate, and validate your LINE message so you can resolve any warnings or errors and confidently send it through your journey or campaign.
+**On this page:** Preview and validate your LINE message, resolve warnings and errors, request approval when required, and complete the journey or campaign configuration to send the message.
 
 >[!ENDSHADEBOX]
 
+## Before you start {#before-you-start}
+
+Before you begin, make sure that:
+
+* LINE is enabled for your organization. If LINE is not available, contact your Adobe representative to request activation.
+* A LINE channel configuration is available in Journey Optimizer. See [Configure the LINE channel](./line-configuration.md).
+* You have added a LINE action to a journey or campaign and defined the message content. See [Create a LINE message](./create-line.md).
+
 ## Preview your LINE message {#preview-line}
 
-Once your message content has been defined, you can preview its content using either simulation method:
+After you define your message content, use **[!UICONTROL Simulate content]** to preview the message before sending it.
 
-* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
-* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
+You can use either of the following options:
 
-Detailed information on how to preview & test content is available in the [Content Management](../content-management/preview-test.md) section.
+| Simulation option | Use it to |
+| --- | --- |
+| **[!UICONTROL Simulate content]** | Test content variations with sample input data or AI auto-generation. |
+| **[!UICONTROL Simulate content]** > **[!UICONTROL Simulate content (AEP profiles)]** | Preview the message with test profiles. |
+
+Review each variation and verify that the message content and personalized values are displayed as expected.
+
+For detailed information about previewing and testing content, see [Preview and test content](../content-management/preview-test.md).
 
 ## Validate your content {#line-validate}
 
-You must check alerts in the upper section of the editor. Some of them are simple warnings, but others can prevent you from sending the message. Two types of alerts can happen: warnings and errors.
+Before you continue, review the alerts shown at the top of the message editor.
 
-* **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your LINE message is empty.
+Journey Optimizer displays two types of alerts:
 
-* **Errors** prevent you from testing or activating the journey, or publishing the campaign, as long as they are not resolved. For example, an error message warns you when the subject line is missing.
+* **Warnings** are recommendations or best-practice suggestions. They do not prevent you from testing or sending the message.
+* **Errors** identify issues that must be resolved before you can test or activate the journey, or publish the campaign.
 
-## Send your LINE messages {#line-send}
+Resolve all errors before continuing. Address warnings when they indicate that the message may not provide the intended customer experience.
 
->[!IMPORTANT]
->
-> If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your LINE messages. [Learn more](../test-approve/gs-approval.md)
+## Request approval when required {#line-approval}
 
-When your LINE message is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) or [campaign](../campaigns/create-campaign.md) to send it.
+If your campaign is subject to an approval policy, request approval before sending the message.
+
+See [Learn how to request approval](../test-approve/gs-approval.md).
+
+## Send your LINE message {#line-send}
+
+When the message is ready, return to the journey or campaign that contains the LINE action and complete its configuration:
+
+* **Journey:** Complete the journey configuration, then activate the journey.
+* **Campaign:** Complete the campaign configuration, then publish the campaign.
+
+If you cannot activate the journey or publish the campaign, return to the message editor and resolve any remaining errors.
+
+## Related tasks {#related-tasks}
+
+* [Get started with LINE](./get-started-line.md)
+* [Create a LINE message](./create-line.md)
+* [Configure the LINE channel](./line-configuration.md)
 
 {{$include /help/_includes/do-not-localize/line/ai-augmented-send-line.md}}
