@@ -2405,3 +2405,4 @@ Example pattern: `https://{your-instance}.epsilon3.io/api/v1/planning/events` wi
 
 +++
 
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-vendor-integration.md}}
