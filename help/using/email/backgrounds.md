@@ -47,42 +47,88 @@ level_v2:
 >title="Background settings"
 >abstract="You can personalize the background color or background image for your content. Note that background image is not supported by all email clients." 
 
-When it comes to setting backgrounds with the Email Designer, Adobe recommends the following:
+Backgrounds help you reinforce your brand identity and draw attention to key areas of your email. In the Email Designer, you can set a background color or image at different levels of your content — from the overall body down to individual structures and columns — giving you precise control over how backgrounds render throughout your email.
 
-1. Apply a background color to the body of your email if required by your design.
-1. Usually, set background colors at the column level.
-1. Try not to use background colors on image or text components as they are difficult to manage.
+Keep the following best practices in mind when setting backgrounds in the Email Designer:
 
-Below are the available background settings that you can use.
+* Apply a background color to the body only if your design requires it.
+* Prefer setting background colors at the column level whenever possible.
+* Avoid using background colors on image or text components, as they are harder to manage.
+* Test background images across actual email clients before sending, since rendering can differ from the Email Designer preview.
 
-* Set a **[!UICONTROL Background color]** for the whole email. Make sure you select the body settings in the navigation tree accessible from the left Palette.
+The following settings let you apply a background color or image at any level of your email content, from the body down to individual structures and columns.
 
-  ![](assets/background_1.png)
+>[!TIP]
+>
+>If a theme is applied to your email, you cannot directly override the background color set by the theme for a given component. You must first unlock that style using the dedicated icon in the **[!UICONTROL Styles]** tab. [Learn how](apply-email-themes.md#unlocking-styles)
 
-* Set the same background color for all structure components by selecting **[!UICONTROL Viewport background color]**. This option enables you to select a different setting from the background color.
+## Set a background color {#background-color}
 
-  ![](assets/background_2.png)
+1. **Body background color** - Set a **[!UICONTROL Background color]** for the whole email. Make sure you select **[!UICONTROL Body]** in the **[!UICONTROL Navigation tree]** accessible from the left palette and use the dedicated option from the **[!UICONTROL Styles]** tab on the right.
 
-* Set a different background color for each structure component. Select a structure in the navigation tree accessible from the left Palette to apply a specific background color only to that structure.
+    ![Email Designer with Body selected in the navigation tree and the Background color option highlighted in the Styles panel](assets/background_1.png)
 
-  Make sure you do not set a viewport background color as it may hide the structure background colors.
+1. **Viewport background color** - Set a **[!UICONTROL Viewport color]** to apply the same background color across all structure components, independently of the body's background color.
 
-    ![](assets/background_3.png)
+    ![Email Designer Styles panel with the Viewport color option highlighted and a color picker open to choose the background color applied to all structures](assets/background_2.png)
 
-* Set a **[!UICONTROL Background image]** for the content of a structure component.
+1. **Structure background color** - To apply a background color to a single structure component, select it directly in the canvas or from the left palette, and set a specific color for that structure.
 
-  >[!NOTE]
-  >
-  >Some email programs do not support background images. When not supported, the row background color will be used instead. Make sure you select an appropriate fallback background color in case the image cannot be displayed.
+    ![Email Designer Styles panel for a selected structure, with the Background color option highlighted](assets/background_3.png)
 
-    ![](assets/background_4.png)
+    >[!TIP]
+    >
+    >In that case, make sure you do not set a viewport background color as it may hide the structure background colors.
 
-* Set a background color at the column level.
+1. **Column background color** - Set a background color at the column level. Again, make sure you select the desired column from the left palette, and set a specific color for that column.
 
-  >[!NOTE]
-  >
-  >This is the most common use case. Adobe recommends setting background colors at the column level as this allows for more flexibility when editing the whole email content.
+    ![Email Designer Styles panel for a selected column, with the Background color option highlighted](assets/background_5.png)
 
-  You can also set a background image at the column level, but this is rarely used.
+    >[!TIP]
+    >
+    >This is the most common use case and a best practice, since it gives you more flexibility when editing the rest of your email content.
+
+## Set a background image {#background-image}
+
+You can also set a **[!UICONTROL Background image]** for the content of a structure or column component. This is most commonly used at the structure level; setting one at the column level is possible but rarely used.
+
+>[!NOTE]
+>
+>Some email programs do not support background images. When not supported, the row background color will be used instead. Make sure you select an appropriate fallback background color in case the image cannot be displayed.
+
+![Email Designer Styles panel with Background image enabled and Image placement set to Full Height - Right, showing the image filling a column](assets/background_4.png)
+
+>[!TIP]
+>
+>Preview your background image across actual email clients before sending, not just in the Email Designer preview. The same image and placement can render correctly in the editor but appear stretched or cropped differently in some clients, such as Outlook on iOS.
+
+Once a background image is set, use the **[!UICONTROL Image placement]** dropdown to control how the image fills the structure or column. The options below are available for selection:
+
+![Email Designer Styles panel showing the Image placement dropdown with various options](assets/background_6.png){width=80%}
+
+**Scale to fill, centered:**
+
+* **[!UICONTROL Fit]** - Stretches the image to fill the container on both axes, without preserving its aspect ratio.
+* **[!UICONTROL Full Width]** - Scales the image proportionally to the container's width and centers it vertically.
+* **[!UICONTROL Full Height]** - Scales the image proportionally to the container's height and centers it horizontally.
+
+**Scale to fill, anchored to an edge:**
+
+* **[!UICONTROL Full Width - Top]** - Same as **[!UICONTROL Full Width]**, anchored to the top of the container. Overflow is cropped at the bottom.
+* **[!UICONTROL Full Width - Bottom]** - Same as **[!UICONTROL Full Width]**, anchored to the bottom of the container. Overflow is cropped at the top.
+* **[!UICONTROL Full Height - Left]** - Same as **[!UICONTROL Full Height]**, anchored to the left of the container. Overflow is cropped on the right.
+* **[!UICONTROL Full Height - Right]** - Same as **[!UICONTROL Full Height]**, anchored to the right of the container. Overflow is cropped on the left.
+
+**Tile:**
+
+* **[!UICONTROL Repeat]** - Tiles the image at its original size to fill the container.
+
+**Position without scaling:**
+
+* **[!UICONTROL Left]**, **[!UICONTROL Right]**, **[!UICONTROL Center]**, **[!UICONTROL Top]**, **[!UICONTROL Bottom]** - Positions the image at its original size, anchored to the corresponding edge or center of the container.
+
+>[!NOTE]
+>
+>The edge-anchored options give you more control over which part of the image stays in view when it doesn't match the structure's proportions, compared to the centered options above.
 
 {{$include /help/_includes/do-not-localize/email/ai-augmented-backgrounds.md}}

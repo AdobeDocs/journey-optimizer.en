@@ -350,6 +350,16 @@ The following capabilities and improvements have been introduced to Orchestrated
 
   Availability date: August 11, 2026
 
+### Email Designer {#august-26-email-designer}
+
+* **Increase column counts without losing content in the Email Designer** - You can now increase the column count of an existing structure — for example, from 2 columns to 3 — without deleting it and losing your content. [Learn more](../email/content-from-scratch.md)
+
+  Availability date: August 5, 2026
+
+* **More background image placement options in the Email Designer** - Four new Image placement options are available for background images: Full Width - Top, Full Width - Bottom, Full Height - Left, and Full Height - Right. Each scales the image proportionally along one axis, like the existing Full Width and Full Height options, but anchors it to a specific edge instead of centering it, giving you more control over which part of a hero image stays in view. [Learn more](../email/backgrounds.md)
+
+  Availability date: August 4, 2026
+
 ### Usability improvements {#august-26-usability}
 
 * **Multi-selection in the new journey canvas** - The new journey canvas experience introduces simplified multi-node selection: hold Shift and drag to select multiple nodes at once, rather than selecting them individually. This enables bulk actions, such as copy, delete, or save as a journey fragment, to be performed efficiently across several nodes. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)

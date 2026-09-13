@@ -9,11 +9,15 @@ role: User
 level: Beginner
 mini-toc-levels: 2
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
-subfeature_v2: []
+subfeature_v2:
+  - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
+    internal-label: Journey design
+  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
+    internal-label: Templates
 ---
 
 # Journey Optimizer AI capabilities in CX Coworker {#ajo-coworker-skills}
@@ -41,7 +45,7 @@ CX Coworker provides various skills for managing Journeys and Loyalty challenges
 **Loyalty-focused AI capabilities:**
 
 * **Loyalty Challenge Management**: Create and manage loyalty challenges using natural language prompts
-* **Loyalty Agent - Data Insight Skill**: Query and analyze loyalty program performance data using natural language
+* **Loyalty Insights Skill**: Query and analyze loyalty program performance data using natural language
 
 CX Coworker also includes a set of **Content Management MCP tools**, to discover, create, and manage Journey Optimizer content templates, fragments, landing pages, and journey/campaign inline message content. [Learn more](#content-management)
 
@@ -428,9 +432,9 @@ The following functionalities are currently not supported:
 1. **State the reward**: Points, miles, statement credits, status extensions, vouchers, or perks granted on completion.
 1. **Reference the qualifying event**: Point to the specific SKU, product, account action, or engagement event the challenge tracks.
 
-### Loyalty Agent - Data Insight {#loyalty-data-insight}
+### Loyalty Insights Skill {#loyalty-data-insight}
 
-Loyalty Agent - Data Insight Skill enables Journey Optimizer users to analyze and query loyalty program performance data using natural language. This skill provides insights into loyalty points, member tiers, redemptions, and revenue metrics, allowing loyalty administrators and analysts to make data-driven decisions about their loyalty programs.
+Loyalty Insights Skill enables Journey Optimizer users to analyze and query loyalty program performance data using natural language. This skill provides insights into loyalty points, member tiers, redemptions, and revenue metrics, allowing loyalty administrators and analysts to make data-driven decisions about their loyalty programs.
 
 Key use cases :
 

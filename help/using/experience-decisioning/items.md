@@ -199,7 +199,7 @@ To set capping rules for the decision item, follow the steps detailed below.
         >
         >**Specific placement** capping is only supported for the **Web** and **Email** channels. It is not available for Code-based experience, SMS, Push, or Direct mail channels.
     
-        Click **[!UICONTROL Select placements]** to pick which placements to cap. Other placements pass through uncapped. For example, if you select the Hero Banner placement with a cap of 3 impressions per day, the offer stops appearing in the Hero Banner after 3 impressions but remains eligible in all other placements.
+        Click **[!UICONTROL Select placement]** to pick which placement to cap. Other placements pass through uncapped. For example, if you select the Hero Banner placement with a cap of 3 impressions per day, the offer stops appearing in the Hero Banner after 3 impressions but remains eligible in all other placements.
 
         ![Specific placement capping scope selected, showing the Select placements button and selected placement tags](assets/item-capping-scope-specific.png){width="75%"}
 
