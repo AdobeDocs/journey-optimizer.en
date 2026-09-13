@@ -229,3 +229,5 @@ Your custom channel is now created. Complete the configuration by following the 
 * [Set up API credentials](custom-channel-api-credentials.md) (if the channel uses authentication)
 * [Delegate a subdomain](custom-channel-subdomains.md) (optional — required for link tracking)
 * [Create a channel configuration](custom-channel-configuration.md)
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-create-custom-channel.md}}

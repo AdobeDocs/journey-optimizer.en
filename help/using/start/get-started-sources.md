@@ -155,3 +155,5 @@ Now that you understand what sources are and why they're important:
 * Understand [data mapping and transformation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home){target="_blank"}
 * See how to [use imported data in journeys](../building-journeys/journey-gs.md)
 * Review the [Get started with data management](../data/gs-data.md) overview to understand how sources fit into the full data setup for Journey Optimizer
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-get-started-sources.md}}

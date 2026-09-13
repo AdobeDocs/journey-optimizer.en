@@ -150,3 +150,5 @@ To use it, follow these steps:
 1. In the **Request parameters** section, click the **Edit** icon for each of the parameters and select the dynamic values that you have configured in the payload.
 
   ![](assets/engage-use-canvas.png){width="70%"}
+
+{{$include /help/_includes/do-not-localize/action/ai-augmented-marketo-engage.md}}

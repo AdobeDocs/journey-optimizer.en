@@ -145,3 +145,4 @@ Browse the sections below to learn more about configuring and using your custom 
 * [Use custom actions](../building-journeys/using-custom-actions.md) - Learn how to use custom actions in your journeys
 * [Pass collections into custom action parameters](../building-journeys/collections.md) - Learn how to pass a collection in custom action parameters that is dynamically populated at runtime
 
+{{$include /help/_includes/do-not-localize/action/ai-augmented-troubleshoot-custom-action.md}}

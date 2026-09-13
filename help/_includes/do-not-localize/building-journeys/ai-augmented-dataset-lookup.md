@@ -47,7 +47,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Why doesn't my dataset appear in the Dataset field dropdown?** — The dataset must be enabled for lookup in Adobe Experience Platform. Follow the instructions in the Must-read section to enable it.
+* **Q: Why does my dataset not appear in the Dataset field dropdown?** — The dataset must be enabled for lookup in Adobe Experience Platform. Follow the instructions in the Must-read section to enable it.
 * **Q: Why does `@datasetLookup{}` return a "Dataset lookup not found" error in a condition?** — The lookup key was defined using simple mode instead of advanced mode. Redefine it in advanced mode and republish the journey.
 * **Q: Can I retrieve arrays or map fields from the dataset?** — No, only primitive leaf node fields (string, number, boolean, date) can be selected.
 * **Q: How do I access enriched data in an email?** — Use the personalization editor with the syntax `{{context.journey.datasetLookup.<activityId>.entities}}`.

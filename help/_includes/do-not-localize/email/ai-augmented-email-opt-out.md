@@ -48,7 +48,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: Do all emails need an opt-out link?** — All marketing messages must include one; transactional messages do not. The Marketing or Transactional category is defined at the channel configuration level and when creating the message.
 * **Q: What is the difference between the channel and identity opt-out levels?** — Channel applies the opt-out to future messages sent to the profile's target(s) for the current channel (all email addresses on the profile for that channel); Identity applies it only to the specific target (email address) used for the current message.
-* **Q: Why isn't a profile's opt-out reflected immediately?** — Unsubscribe events may take longer to reflect at the profile level due to downstream data processing; allow some time for the system to update.
+* **Q: Why is a profile's opt-out not reflected immediately?** — Unsubscribe events may take longer to reflect at the profile level due to downstream data processing; allow some time for the system to update.
 * **Q: In two-step opt-out, is clicking the email link enough to unsubscribe?** — No. Clicking only opens the landing page; the recipient must submit the form (click the opt-out button) to complete the unsubscription and update consent.
 * **Q: How can I confirm a recipient has been opted out?** — In Experience Platform, browse to the profile and check the Attributes tab: the choice value has changed to no.
 * **Q: What is the expected event sequence for a landing-page opt-out?** — In order: Click, Visit, Submit, Unsubscribe, Consent update. If any step is missing or occurs out of order, it may indicate an issue with the opt-out implementation.

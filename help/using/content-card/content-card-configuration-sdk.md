@@ -285,3 +285,5 @@ document.getElementById("action-button-2").addEventListener("click", () => {
 });
 
 ```
+
+{{$include /help/_includes/do-not-localize/content-card/ai-augmented-content-card-configuration-sdk.md}}

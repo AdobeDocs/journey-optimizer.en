@@ -578,3 +578,5 @@ If an API-triggered campaign is not executing, verify the following: the campaig
 Learn more about API-triggered campaigns [on this page](../campaigns/api-triggered-campaigns.md).
 
 +++
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-troubleshooting.md}}

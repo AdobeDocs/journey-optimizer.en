@@ -217,3 +217,5 @@ To start building your content cards through a campaign, follow the steps below.
     ![](assets/content-card-create-4.png)
 
 >[!ENDTABS]
+
+{{$include /help/_includes/do-not-localize/content-card/ai-augmented-create-content-card.md}}

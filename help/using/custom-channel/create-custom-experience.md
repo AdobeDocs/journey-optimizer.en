@@ -228,3 +228,5 @@ The editor supports a **[!UICONTROL Strict JSON]** toggle:
 
 * **From a journey** – Click **[!UICONTROL Publish]** in the top-right area. The journey goes live and starts calling your external endpoint for qualifying profiles. Learn more about [publishing journeys](../building-journeys/journey-gs.md#publish-journey).
 * **From a campaign** – Click **[!UICONTROL Review to activate]**, review your settings, then click **[!UICONTROL Activate]**. The campaign takes the **[!UICONTROL Live]** status (or **[!UICONTROL Scheduled]** if a future start date was defined). Learn more about [activating campaigns](../campaigns/create-campaign.md#review-activate).
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-create-custom-experience.md}}

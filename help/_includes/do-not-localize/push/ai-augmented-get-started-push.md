@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where can push notifications be created?** — In a Journey (via a Push activity) or in a Campaign (by selecting Push notification as the action).
 * **Q: Which platforms are supported?** — iOS, Android, and Web, configured via dedicated tabs.
 * **Q: Do I need to manage push opt-out?** — No, recipients can unsubscribe through their devices or via mobile OS / browser notification settings.
-* **Q: When should I not use push?** — When opt-in rates are low, the message needs long-form content, the content is sensitive and shouldn't appear on a lock screen, or most users are on desktop.
+* **Q: When should I not use push?** — When opt-in rates are low, the message needs long-form content, the content is sensitive and should not appear on a lock screen, or most users are on desktop.
 * **Q: How do I check a profile's push consent status?** — In the AEP profile viewer, via Check push opt-out status.
 
 +++

@@ -180,3 +180,5 @@ The following data is taken into account for consent:
 -->
 
 The other steps for configuring a custom action in a journey are detailed in [this section](../building-journeys/using-custom-actions.md).
+
+{{$include /help/_includes/do-not-localize/action/ai-augmented-consent.md}}

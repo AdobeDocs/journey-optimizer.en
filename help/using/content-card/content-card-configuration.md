@@ -121,3 +121,5 @@ The tables below list some surface URI definition examples for various devices.
 1. Submit your changes.
 
 You can now select your configuration when creating your Content card experience.
+
+{{$include /help/_includes/do-not-localize/content-card/ai-augmented-content-card-configuration.md}}

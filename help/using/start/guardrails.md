@@ -484,3 +484,5 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 ### Campaign Orchestration guardrails {#orchestration-guardrails}
 
 Guardrails and limitations to keep in mind when working with Campaign Orchestration are detailed in this section: [Guardrails & limitations](../orchestrated/guardrails.md).
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-guardrails.md}}

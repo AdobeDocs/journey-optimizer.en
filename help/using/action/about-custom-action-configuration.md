@@ -478,3 +478,4 @@ Browse the sections below to learn more about configuring, using and troubleshoo
 * [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
 * [Pass collections into custom action parameters](../building-journeys/collections.md) - Learn how to pass a collection in custom action parameters that is dynamically populated at runtime
 
+{{$include /help/_includes/do-not-localize/action/ai-augmented-about-custom-action-configuration.md}}
