@@ -88,18 +88,18 @@ You can now start designing the content of your LINE message from the **[!UICONT
 
 1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 
-1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track clicks on links in your SMS message.
+1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track clicks on links in your LINE message.
 
 1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
 
-1. From the **[!UICONTROL Action triggers]** menu, choose the **[!UICONTROL Frequency]** of your SMS message:
+1. From the **[!UICONTROL Action triggers]** menu, choose the **[!UICONTROL Frequency]** of your LINE message:
 
     * Once
     * Daily
     * Weekly
     * Month
     
-You can now start designing the content of your text message from the **[!UICONTROL Edit content]** button, as detailed below.
+You can now start designing the content of your LINE message from the **[!UICONTROL Edit content]** button, as detailed below.
 
 >[!ENDTABS]
 
@@ -119,7 +119,7 @@ These message types can be configured by editing the JSON content directly, allo
 
 To configure your LINE content, follow the steps below. 
 
-1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the text message content.
+1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the LINE message content.
 
 1. Click **[!UICONTROL Edit code]** to edit JSON content.
 
