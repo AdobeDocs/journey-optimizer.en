@@ -147,3 +147,5 @@ Errors are visible from the **[!UICONTROL Alerts]** button. Select the error to 
 This dialog indicates that the current journey/campaign configuration violates an existing data governance policy. Use the data lineage diagram to understand what other configuration changes need to be made before you can activate your journey or campaign.
 
 Detailed information is available in the [data usage policy violation documentation](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/auto-enforcement#data-usage-violation){_blank}.
+
+{{$include /help/_includes/do-not-localize/action/ai-augmented-action-privacy.md}}

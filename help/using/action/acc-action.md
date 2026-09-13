@@ -143,3 +143,4 @@ If you need to update an existing Campaign v7/v8 custom action, for example when
 >
 >Any journeys that use this action will automatically use the updated configuration. If you have live journeys using this action, monitor them closely after updating the endpoint to ensure proper message delivery.
 
+{{$include /help/_includes/do-not-localize/action/ai-augmented-acc-action.md}}
