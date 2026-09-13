@@ -140,3 +140,5 @@ When simulating email content, a top bar provides additional email-specific tool
 * **[!UICONTROL Render email]** — Preview how your email renders across popular email clients and devices. [Learn more](../content-management/rendering.md)
 * **[!UICONTROL Send proof]** — Send a proof of one or more variants to a set of email recipients. Click **[!UICONTROL Send proof]**, add up to 10 recipient addresses, select the variant(s) to include, then click **[!UICONTROL Send proof]** to confirm. To review previously sent proofs, click **[!UICONTROL View proofs]**. [Learn more](../content-management/proofs.md)
 * **[!UICONTROL View configuration details]** — Review the channel configuration applied to this content.
+
+{{$include /help/_includes/do-not-localize/test-approve/ai-augmented-simulate-content-variations.md}}
