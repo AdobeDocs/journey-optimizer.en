@@ -305,3 +305,5 @@ For more information, refer to the [Developer documentation](https://developer.a
 The video below shows how to author and test your In-app messages.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410471?quality=12&learn=on)
+
+{{$include /help/_includes/do-not-localize/in-app/ai-augmented-design-in-app.md}}

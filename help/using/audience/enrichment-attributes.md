@@ -112,3 +112,5 @@ To use enrichment attributes from audiences created using composition workflows,
 Currently, no. Even after wait or event nodes, enrichment attribute values remain the same as they were when the journey started.
 
 +++
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-enrichment-attributes.md}}
