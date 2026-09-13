@@ -170,3 +170,5 @@ You can evaluate up to 20 audiences at a time, and ineligible audiences are auto
 Understand how Journey Optimizer uses rules to generate audiences, and learn how to use attributes, events, and existing audiences to create an audience.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425020?quality=12)
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-creating-a-segment-definition.md}}

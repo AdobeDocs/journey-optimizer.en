@@ -93,3 +93,5 @@ Only audiences generated using **segment definition**, **audience compositions**
 If you need to target profiles from a non supported audience, such as a Customer Journey Analytics audience, you need to wrap it in a new segment definition in the Audience portal. Detailed information on how to add audiences in a segment definition is available in the [Segment Builder documentation](https://experienceleagu;e.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#adding-audiences){target="_blank"}
 
 Once done, wait for the segmentation evaluation to complete to use it in your journeys and campaigns.
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-target-audiences.md}}

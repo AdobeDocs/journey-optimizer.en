@@ -54,3 +54,5 @@ Detailed information on working with identities is available in the [Identity Se
 >* [Get started with data management in Journey Optimizer](../data/gs-data.md)
 >* [Get started with profiles](get-started-profiles.md)
 >* [Identity Service documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html){target="_blank"}
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-get-started-identity.md}}
