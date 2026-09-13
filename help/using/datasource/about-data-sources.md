@@ -140,3 +140,5 @@ Understand what a data source is and learn how to configure Experience Platform 
 
 >[!VIDEO](https://video.tv.adobe.com/v/334256?quality=12)
 
+{{$include /help/_includes/do-not-localize/datasource/ai-augmented-about-data-sources.md}}
+
