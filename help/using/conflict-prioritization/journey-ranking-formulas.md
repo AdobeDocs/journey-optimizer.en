@@ -207,3 +207,5 @@ Reporting for journey arbitration helps you understand how rule sets and ranking
 
 Use these reports to validate that your formulas and caps are behaving as intended and to tune ranking logic over time.
 -->
+
+{{$include /help/_includes/do-not-localize/conflict-prioritization/ai-augmented-journey-ranking-formulas.md}}

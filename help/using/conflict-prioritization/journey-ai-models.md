@@ -122,3 +122,5 @@ You can now set the AI model as a reference to build a ranking formula, then ass
     >Only one rule set can be applied to a journey at a time.
 
 All journeys that use this rule set will be ranked with the formula referencing the selected AI model when the cap is applied.
+
+{{$include /help/_includes/do-not-localize/conflict-prioritization/ai-augmented-journey-ai-models.md}}

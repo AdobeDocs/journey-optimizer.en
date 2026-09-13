@@ -105,3 +105,5 @@ By leveraging these capabilities, you can ensure your marketing efforts are alig
 ## How-to video {#video}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435528?quality=12)
+
+{{$include /help/_includes/do-not-localize/conflict-prioritization/ai-augmented-conflicts.md}}

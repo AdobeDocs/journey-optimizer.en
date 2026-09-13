@@ -215,3 +215,5 @@ Once your journey or campaigns has been activated and executed, you can view the
 Learn how to use the quiet hours feature in Adobe Journey Optimizer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3475851?quality=12)
+
+{{$include /help/_includes/do-not-localize/conflict-prioritization/ai-augmented-quiet-hours.md}}
