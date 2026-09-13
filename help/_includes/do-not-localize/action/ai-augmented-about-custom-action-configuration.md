@@ -35,7 +35,7 @@ For complete understanding, this information should be combined with the documen
 * Custom actions support JSON format only when using request or response payloads.
 * Custom actions cannot use the DELETE method; only POST, GET, or PUT are supported. To update an existing resource, use PUT.
 * Only the default ports are allowed: 80 for http and 443 for https. Adobe addresses that are not public and IP addresses are not allowed.
-* A capping limit of 300,000 calls over one minute is defined for all custom actions (hard limit); the default capping is performed per host and per sandbox and applies at the domain level.
+* A capping limit of 300,000 calls over one minute is defined for all custom actions (a default that can be raised via the Capping or Throttling APIs); the default capping is performed per host and per sandbox and applies at the domain level.
 * The 300,000 calls per minute cap is enforced as a sliding window per sandbox and per endpoint for endpoints with response times less than 0.75 seconds; for endpoints with response times greater than 0.75 seconds, a separate limit of 150,000 calls per 30 seconds (also a sliding window) applies.
 * A throttling configuration cannot go below 200 TPS, so any targeted endpoint must support at least 200 TPS.
 * When an endpoint has a response time greater than 0.75 seconds, its custom action calls are routed through a dedicated slow custom action service instead of the default service.
