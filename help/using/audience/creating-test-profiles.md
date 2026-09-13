@@ -272,3 +272,5 @@ curl -X POST \
 Learn how to create test profiles.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334236?quality=12)
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-creating-test-profiles.md}}

@@ -109,3 +109,5 @@ Once your audiences are ready, you can select them when building journeys or cre
 Learn about unified customer profiles and audiences in Journey Optimizer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432671?quality=12)
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-about-audiences.md}}

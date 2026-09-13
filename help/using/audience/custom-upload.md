@@ -48,3 +48,5 @@ Detailed information on how to import audiences is available in Adobe Experience
 Learn how to upload audiences in CSV format in video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421714?quality=12)
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-custom-upload.md}}
