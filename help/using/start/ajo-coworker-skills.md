@@ -649,3 +649,5 @@ Simulation may not support every activity, channel, or integration that Test mod
 ➡️ Learn more about [Simulation limitations](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/simulate-journey/simulate-journey-gs#limitations) in the Journey Optimizer documentation.
 
 -->
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-ajo-coworker-skills.md}}
