@@ -178,3 +178,5 @@ If you wish to undelegate a landing page subdomain, follow the steps below.
 1. Reach out to your Adobe representative with the subdomain you want to undelegate.
 
 After you request is handled by Adobe, the undelegated domain is no longer displayed on the subdomain inventory page.
+
+{{$include /help/_includes/do-not-localize/landing-pages/ai-augmented-lp-subdomains.md}}
