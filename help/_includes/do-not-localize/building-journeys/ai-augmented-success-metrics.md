@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 * **Q: How many journey metrics can I assign to a single journey?** — Only one journey metric is allowed per journey.
-* **Q: What metrics are available if I haven't configured a dataset with field groups?** — Only Clicks, Unique Clicks, Clickthrough Rate, and Open Rate are available without additional field group configuration.
+* **Q: What metrics are available if I have not configured a dataset with field groups?** — Only Clicks, Unique Clicks, Clickthrough Rate, and Open Rate are available without additional field group configuration.
 * **Q: What field groups do I need to enable purchase and commerce metrics?** — You need to add the Commerce Details field group to your reporting dataset in Adobe Experience Platform.
 * **Q: What is the default attribution model for journey metrics?** — Last Touch, which credits the most recent interaction before conversion, with a maximum 7-day lookback window under a Journey Optimizer license.
 * **Q: Can I create custom success metrics?** — Yes, but only with a Customer Journey Analytics license.

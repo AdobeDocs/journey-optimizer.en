@@ -419,3 +419,5 @@ Most AI features are included with Adobe Journey Optimizer. Some capabilities li
 >* [Send-Time Optimization](../building-journeys/send-time-optimization.md) — Predict and optimize message delivery timing per individual.
 >* [AI models for decisioning](../experience-decisioning/ranking/ai-models.md) — Rank and personalize offers automatically with AI ranking models.
 >* [Work with MCP clients](../integrations/ajo-mcp.md) — Query campaigns, journeys, and offers from Claude Web, Claude Desktop, or Cursor using the Journey Optimizer MCP server.
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-ai-features.md}}

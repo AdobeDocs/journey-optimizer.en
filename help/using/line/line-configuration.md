@@ -134,3 +134,5 @@ POST https://platform.adobe.io/journey/imp/config/channel-settings
     "_etag": "\"eab98d24-18af-48ae-90f9-e59d4f8cfb2b\""
 }
 ```
+
+{{$include /help/_includes/do-not-localize/line/ai-augmented-line-configuration.md}}

@@ -230,3 +230,5 @@ Learn how to configure and send branded, interactive RCS messages in Adobe Journ
 >[!VIDEO](https://video.tv.adobe.com/v/3464755)
 
 +++
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-get-started-mobile.md}}

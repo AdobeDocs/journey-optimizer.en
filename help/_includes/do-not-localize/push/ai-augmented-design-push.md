@@ -51,7 +51,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens when a recipient taps the push body?** — The configured on-click behavior runs: Open app, Deeplink, or Web URL.
 * **Q: How many buttons can I add on Android?** — Up to three.
 * **Q: Can I send a silent notification on Web?** — No, Web push notifications do not support the Silent Notification feature.
-* **Q: Why aren't my iOS media attachments rendering?** — The Add mutable-content flag must be enabled and your app must implement a Notification Service Extension to download and process the media.
+* **Q: Why are my iOS media attachments not rendering?** — The Add mutable-content flag must be enabled and your app must implement a Notification Service Extension to download and process the media.
 * **Q: How can I personalize which content is shown?** — Use Decisioning, which selects the best content using Priority Scores, Formulas, or AI Models.
 * **Q: What is the difference between iOS and Android expiration?** — On iOS, Push expiration is a hard stop (undelivered after expiry); on Android, Time to live is a delivery window converted by FCM, so messages may be sent later than expected.
 

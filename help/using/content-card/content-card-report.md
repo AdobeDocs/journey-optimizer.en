@@ -111,3 +111,5 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your Content cards.
 
 +++
+
+{{$include /help/_includes/do-not-localize/content-card/ai-augmented-content-card-report.md}}

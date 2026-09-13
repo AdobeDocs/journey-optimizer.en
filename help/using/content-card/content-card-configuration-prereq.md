@@ -65,3 +65,5 @@ For Adobe Journey Optimizer to correctly display content cards, you must configu
 >[!CAUTION]
 >
 >When targeting pseudonymous profiles (unauthenticated visitors) with your content cards, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](../start/guardrails.md#profile-management-inbound)
+
+{{$include /help/_includes/do-not-localize/content-card/ai-augmented-content-card-configuration-prereq.md}}

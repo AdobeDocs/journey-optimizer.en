@@ -100,3 +100,5 @@ There are a number of best practices that you can adopt, that will help you stay
 * If you are nearing the limit of nodes on the canvas, consider consolidation of actions with dynamic parameters or content to serve the right content instead of explicit nodes.
 
 * If you have a **Read Audience** journey with batch segment (A) and you are using an inAudience streaming segment (B) within the journey to exclude (i.e., perform A-B), consider moving that logic to the segmentation logic and use the exclusion as part of the segmentation logic itself.
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-best-practices.md}}

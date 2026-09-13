@@ -136,3 +136,5 @@ Setting up and using a custom channel follows the main stages below:
 * Configure your first custom channel using the Channel Builder. [Learn more](custom-channel-configuration.md)
 * Create a custom channel experience in a journey or campaign. [Learn more](create-custom-experience.md)
 -->
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-get-started-custom-channel.md}}

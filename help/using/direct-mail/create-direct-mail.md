@@ -188,3 +188,5 @@ You can now test your direct mail message and send it to your audience. [Learn h
 * [Preview and test content](../content-management/preview-test.md)
 
 For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md). 
+
+{{$include /help/_includes/do-not-localize/direct-mail/ai-augmented-create-direct-mail.md}}

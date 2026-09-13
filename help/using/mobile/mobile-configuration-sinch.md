@@ -210,5 +210,4 @@ After creating and configuring your API credential, you now need to create [your
     Your messages automatically falls back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 -->
 
-
-
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-mobile-configuration-sinch.md}}

@@ -103,3 +103,5 @@ Dynamic personalization may increase the length of a message. For instance, subs
 ## Additional resources {#additional-resources}
 
 Review supported characters and encoding rules in [Sinch Character Support Guide](https://developers.sinch.com/docs/sms/resources/message-info/character-support/)
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-mobile-cost-optimization.md}}
