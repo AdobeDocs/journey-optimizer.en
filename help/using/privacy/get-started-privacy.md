@@ -104,3 +104,5 @@ Adobe Experience Platform and Journey Optimizer provide various tools to help yo
 <p>
 </td>
 </tr></table>
+
+{{$include /help/_includes/do-not-localize/privacy/ai-augmented-get-started-privacy.md}}
