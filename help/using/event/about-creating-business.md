@@ -175,3 +175,5 @@ Use the payload preview to validate the payload definition.
 1. Check the preview to validate the payload definition.
 
 1. Then, you can share the payload preview with to the person responsible for the event sending. This payload can help them design the setup of an event pushing to [!DNL Journey Optimizer]. See [this page](../event/additional-steps-to-send-events-to-journey.md).
+
+{{$include /help/_includes/do-not-localize/event/ai-augmented-about-creating-business.md}}
