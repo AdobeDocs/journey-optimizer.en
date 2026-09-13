@@ -101,3 +101,5 @@ Rule sets allow you to **group together multiple rules** and apply them to the j
 * **[Rank journeys using formulas](journey-ranking-formulas.md) and [AI models](journey-ai-models.md)** - Learn how to build formulas and AI models to rank journeys when caps apply.
 * **[Conflict management tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/conflict-management/identify-potential-conflicts){target="_blank"}** - Step-by-step video tutorials.
 * **[Journey Optimizer use cases](../building-journeys/jo-use-cases.md)** - Browse practical patterns, including frequency capping and journey suppression logic.
+
+{{$include /help/_includes/do-not-localize/conflict-prioritization/ai-augmented-gs-conflict-prioritization.md}}
