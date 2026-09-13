@@ -116,3 +116,5 @@ To create a channel configuration, follow these steps:
     ![](assets/preset-active.png)
 
 You are now ready to send Mobile messages with Journey Optimizer.
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-mobile-configuration-surface.md}}
