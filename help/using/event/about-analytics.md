@@ -167,3 +167,5 @@ Now that the event is ready, create a journey to use it.
 You can now test and publish your journey. [Learn more](../building-journeys/publish-journey.md)
 
 ![](assets/ajo-aa_7.png)
+
+{{$include /help/_includes/do-not-localize/event/ai-augmented-about-analytics.md}}
