@@ -120,3 +120,4 @@ In-app messages depend on an active session, so they are not suited to every sce
 * **[In-app for web](create-in-app-web.md)** - Discover how to create and deliver in-app messages for web applications.
 * **[In-app channel tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/in-app-channel/in-app-messages-overview){target="_blank"}** - Explore step-by-step video tutorials on in-app messaging features and best practices.
 
+{{$include /help/_includes/do-not-localize/in-app/ai-augmented-get-started-in-app.md}}

@@ -100,3 +100,5 @@ Once sent, you can measure the impact of your In-App messages within the Campaig
 * [Design In-app message](design-in-app.md)
 * [In-app report](../reports/campaign-global-report-cja-inapp.md)
 * [In-app configuration](inapp-configuration.md)
+
+{{$include /help/_includes/do-not-localize/in-app/ai-augmented-send-in-app.md}}
