@@ -255,3 +255,5 @@ In this example, `orderId`, `tier`, `restaurant`, and `region` are your own valu
 Discover how to configure iOS Live activities with Adobe Journey Optimizer to deliver rich, real-time updates on the iPhone Lock Screen and Dynamic Island.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479864)
+
+{{$include /help/_includes/do-not-localize/mobile-live/ai-augmented-create-mobile-live.md}}
