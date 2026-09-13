@@ -67,3 +67,5 @@ To go through the setup process, you can refer to the step-by-step detailed inst
 Both Adobe Experience Platform and Customer Managed Keys ensure the security of your data by encrypting it in transit and at rest. Your data remains protected, regardless of whether you use Customer Managed Keys.
 
 For more information on data encryption in Adobe Experience Platform, you can refer to the [documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/encryption.html){target="_blank"} on Data encryption.
+
+{{$include /help/_includes/do-not-localize/privacy/ai-augmented-cmk.md}}
