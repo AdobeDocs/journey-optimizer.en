@@ -52,3 +52,5 @@ Learn how to use the Query Editor in [this documentation](https://experienceleag
 >
 >* [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
 >* [Query Service overview video](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html){target="_blank"}
+
+{{$include /help/_includes/do-not-localize/data/ai-augmented-get-started-queries.md}}
