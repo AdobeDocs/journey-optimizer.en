@@ -96,3 +96,5 @@ To delete a field from a field group used in one or more journeys, follow these 
 1. Create new versions of each of these journeys. Edit all activities using "Field Group A" and select "Field Group B".
 1. Stop old versions of journeys that use "Field Group A". You should then have no journey using "Field Group A".
 1. Remove "Field Group A" as is it not used anymore.
+
+{{$include /help/_includes/do-not-localize/datasource/ai-augmented-configure-data-sources.md}}
