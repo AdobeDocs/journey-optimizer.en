@@ -195,3 +195,5 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can further
 * [Test and send your In-app message](send-in-app.md)
 * [In-app report](../reports/campaign-global-report-cja-inapp.md)
 * [In-app configuration](inapp-configuration.md)
+
+{{$include /help/_includes/do-not-localize/in-app/ai-augmented-in-app-web-design.md}}

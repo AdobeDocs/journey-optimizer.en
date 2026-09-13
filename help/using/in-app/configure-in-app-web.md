@@ -166,3 +166,5 @@ subfeature_v2:
 1. Submit your In-app web configuration.
 
 You can now [create a web In-app](../in-app/create-in-app-web.md) inside a campaign.
+
+{{$include /help/_includes/do-not-localize/in-app/ai-augmented-configure-in-app-web.md}}
