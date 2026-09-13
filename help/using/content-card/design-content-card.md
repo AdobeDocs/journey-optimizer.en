@@ -141,3 +141,5 @@ In the **[!UICONTROL Target URL]** field, enter the web URL or deep link that wi
 ![](assets/content-card-design-6.png)
 
 In the **[!UICONTROL Custom data]** section, click **[!UICONTROL Add Key/Value pair]** to include custom variables in the payload. These key/value pairs allow you to pass additional data, depending on your specific configuration. This allows you to add personalized or dynamic content, tracking information, or any other data relevant to your setup.
+
+{{$include /help/_includes/do-not-localize/content-card/ai-augmented-design-content-card.md}}
