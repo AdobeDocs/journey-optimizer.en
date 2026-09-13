@@ -97,3 +97,4 @@ Content cards are meant for content users can view at their own pace, so they ar
 * **[Content card reporting](content-card-report.md)** - Track and analyze content card performance with detailed metrics and insights.
 * **[Content card tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/content-cards/create-content-cards){target="_blank"}** - Explore step-by-step video tutorials on content card features and best practices.
 
+{{$include /help/_includes/do-not-localize/content-card/ai-augmented-get-started-content-card.md}}
