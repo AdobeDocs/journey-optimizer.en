@@ -49,7 +49,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: Which audiences can I target in Journey Optimizer campaigns and journeys?** — Audiences generated using segment definitions, custom upload, composition workflows, or Federated Audience Composition.
 * **Q: How long after ingestion can I use an audience?** — Right after ingestion completes, typically within one hour but subject to variability; composition audiences should be available 24 hours after publishing.
-* **Q: Why can't I preview or proof a custom upload or Federated Audience Composition audience?** — Preview and proof are currently not supported for audiences created using CSV upload or Federated Audience Composition.
+* **Q: Why can I not preview or proof a custom upload or Federated Audience Composition audience?** — Preview and proof are currently not supported for audiences created using CSV upload or Federated Audience Composition.
 * **Q: Can I use a composition or custom upload audience in an Audience Qualification activity?** — No; due to their batch nature only audiences created using segment definitions can be leveraged in that activity.
 * **Q: How do I target a non-supported audience such as a Customer Journey Analytics audience?** — Wrap it in a new segment definition in the Audience portal, then wait for the segmentation evaluation to complete before using it.
 

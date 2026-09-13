@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: How do I discover the views of my website?** — Access the web designer, swap to [!UICONTROL Browse] mode, and navigate between the different pages; the view name displayed on top changes as you go through each page.
-* **Q: Why can't I select views to apply my modifications to?** — You must first discover the views using [!UICONTROL Browse] mode; otherwise you cannot select them.
+* **Q: Why can I not select views to apply my modifications to?** — You must first discover the views using [!UICONTROL Browse] mode; otherwise you cannot select them.
 * **Q: How do I apply a modification to other views?** — In the [!UICONTROL Modifications] pane, select the modification, click [!UICONTROL More actions], choose [!UICONTROL Apply to more views], select the target views, and click [!UICONTROL Apply].
 * **Q: What is the prerequisite for authoring SPAs?** — A one-time developer setup to define the views in the Adobe Experience Platform Web SDK implementation.
 

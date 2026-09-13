@@ -60,7 +60,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why are my inbound events missing in some sandboxes?** — Meta allows only one webhook per WhatsApp Business Account, so inbound events are only received in the sandbox where the webhook is registered; register it against your production sandbox.
 * **Q: What does the channel configuration status mean?** — It shows Processing while checks run and becomes Active once checks are successful, meaning it is ready to deliver messages.
 * **Q: What causes an HTTP 500 error during API credential setup?** — Possible causes include a missing `cjm_whatsapp` entitlement, invalid or mismatched API Token or Business Account ID, or credential handling issues; verify entitlements and fields, test credentials with Meta, enable advanced logging, and contact support if it persists.
-* **Q: Why shouldn't I add a '+' before the sender phone number?** — It can prevent the opt-out flow from working correctly.
+* **Q: Why should I not add a '+' before the sender phone number?** — It can prevent the opt-out flow from working correctly.
 
 +++
 
