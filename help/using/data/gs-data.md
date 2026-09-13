@@ -331,3 +331,5 @@ A hands-on tutorial showing how to create datasets in Adobe Experience Platform 
 :::
 
 ::::
+
+{{$include /help/_includes/do-not-localize/data/ai-augmented-gs-data.md}}

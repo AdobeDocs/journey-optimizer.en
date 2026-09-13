@@ -163,3 +163,5 @@ Learn more about Data Governance and data usage labels in the [Data Governance d
 >* [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 >* [Data management license entitlement best practices](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/data-management-best-practices#data-management-best-practices){target="_blank"}
 >* [Managing profile-enabled schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices#managing-profile-enabled-schemas){target="_blank"}
+
+{{$include /help/_includes/do-not-localize/data/ai-augmented-get-started-datasets.md}}
