@@ -63,3 +63,5 @@ You must check alerts in the upper section of the editor. Some of them are simpl
 > If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your text messages. [Learn more](../test-approve/gs-approval.md)
 
 When your LINE message is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) or [campaign](../campaigns/create-campaign.md) to send it.
+
+{{$include /help/_includes/do-not-localize/line/ai-augmented-send-line.md}}
