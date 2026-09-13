@@ -398,3 +398,5 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_admin_sms_webhook_relay_url"
 >title="Relay destination URL"
 >abstract="The HTTPS endpoint Journey Optimizer calls to relay each incoming message. Journey Optimizer sends a separate HTTP POST here per message received. This is distinct from the Auth URL under Custom Authentication, which is used only to obtain an access token, not to receive messages."
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-user-interface.md}}

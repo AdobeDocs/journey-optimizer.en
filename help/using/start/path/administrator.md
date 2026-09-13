@@ -189,3 +189,5 @@ Once the environment is configured:
 | Marketer | [Get started for marketers](marketer.md) |
 
 Back to [Roles and responsibilities overview](../quick-start.md) · Back to [Get started](../../../rp_landing_pages/get-started-landing-page.md)
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-path-administrator.md}}

@@ -311,3 +311,5 @@ For more in-depth learning and updates, explore the following resources:
 | Data Engineer | [Get started for data engineers](path/data-engineer.md) |
 | Developer | [Get started for developers](path/developer.md) |
 | Marketer | [Get started for marketers](path/marketer.md) |
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-quick-start.md}}
