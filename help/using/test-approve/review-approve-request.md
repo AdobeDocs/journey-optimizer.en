@@ -69,3 +69,5 @@ After sending the request, the journey/campaign creator is notified through an e
 >[!NOTE]
 >
 > If you are not receiving approval notification through an email, you need to update your subscription preferences in your [!DNL CX Enterprise] profile. [Learn more](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences)
+
+{{$include /help/_includes/do-not-localize/test-approve/ai-augmented-review-approve-request.md}}
