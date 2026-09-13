@@ -24,7 +24,7 @@ For complete understanding, this information should be combined with the documen
 * **End tag**: An auto-generated, non-removable node displayed at the end of each journey path during authoring; its label can be changed *(product-specific)*
 * **Close to new entrances**: A manual action that prevents new profiles from entering a journey while allowing existing profiles to complete their path *(product-specific)*
 * **Global journey timeout**: The 91-day maximum duration after which a journey automatically switches to Finished status and all profile data is removed *(product-specific)*
-* **Stopped status**: A journey state in which all in-progress profiles are immediately halted; used only for emergencies *(product-specific)*
+* **Stopped status**: A journey state in which all in-progress profiles are immediately halted; the manual Stop action is used only for emergencies, though a non-recurring Read Audience journey also auto-transitions to Stopped after its run *(product-specific)*
 
 **Guardrails:**
 
@@ -37,7 +37,7 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Close to new entrances — Acronym: n/a — variants: close journey, manually close
-* Synonyms: "Stopped" journey ≠ "Closed" journey — stopped halts all profiles immediately; closed only blocks new entrances
+* Do not confuse: "Stopped" journey ≠ "Closed" journey — stopped halts all profiles immediately; closed only blocks new entrances
 * Do not confuse: "End tag" ≠ "End activity" — the End tag is auto-generated and cannot be removed; the End activity is a placeable canvas node
 
 **FAQ:**
