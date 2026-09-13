@@ -187,3 +187,5 @@ If the SMS subdomain points to a CNAME record, you can delete the CNAME DNS reco
 >A SMS subdomain can point to a CNAME record because it was either an [existing subdomain](#sms-use-existing-subdomain) delegated to Adobe using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-setup), or a [new SMS subdomain](#sms-configure-new-subdomain) that you configured.
 
 After your request is handled by Adobe, the undelegated domain is no longer displayed on the subdomain inventory page.
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-mobile-subdomains.md}}

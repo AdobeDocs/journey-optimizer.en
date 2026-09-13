@@ -107,3 +107,5 @@ When your Mobile message is ready, complete the configuration of your [journey](
 * [SMS/RCS/MMS reports](../reports/journey-global-report-cja-sms.md)
 * [Create a Mobile message](create-mobile-message.md)
 * [Add a message in a journey](../building-journeys/journey-action.md)
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-send-mobile-message.md}}

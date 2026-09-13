@@ -455,3 +455,5 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 If your webhook uses API credentials attached to an existing channel configuration, the webhook takes effect immediately. Otherwise, create a new channel configuration.
 
 ➡️[Learn more on channel configuration](mobile-configuration-surface.md)
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-mobile-webhook.md}}

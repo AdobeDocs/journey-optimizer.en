@@ -238,3 +238,4 @@ Once your API credential is created, complete the fields required for JWT authen
 
 >[!VIDEO](https://video.tv.adobe.com/v/3431625)
 
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-mobile-configuration-custom.md}}
