@@ -316,3 +316,5 @@ You need to send an "end" event for each active Live activity instance. Track wh
 * Use the `LiveActivityAssuranceDebuggable` protocol to debug the schema.
 * Test with Adobe Assurance to see if data is being received.
 +++
+
+{{$include /help/_includes/do-not-localize/mobile-live/ai-augmented-mobile-live-faq.md}}

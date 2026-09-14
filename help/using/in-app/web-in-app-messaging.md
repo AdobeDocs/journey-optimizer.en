@@ -180,3 +180,5 @@ In the [Web SDK configuration](https://experienceleague.adobe.com/docs/experienc
 
 * `personalizationStorageEnabled: true` triggers the in-app message with the frequency you defined in your [campaign](create-in-app-web.md#configure-inapp).
 * `personalizationStorageEnabled: false` triggers the in-app message on every page load.
+
+{{$include /help/_includes/do-not-localize/in-app/ai-augmented-web-in-app-messaging.md}}

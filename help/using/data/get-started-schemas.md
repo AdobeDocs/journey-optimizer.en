@@ -98,3 +98,5 @@ Learn how to create a standard schema, add field groups, create, and configure c
 >* [Managing profile-enabled schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices#managing-profile-enabled-schemas){target="_blank"}
 >* [Create a schema using the Schema Registry API](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html){target="_blank"}
 >* [Define a relationship between two schemas using the Schema Editor](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html){target="_blank"}
+
+{{$include /help/_includes/do-not-localize/data/ai-augmented-get-started-schemas.md}}

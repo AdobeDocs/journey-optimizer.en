@@ -90,3 +90,5 @@ The following table outlines which actions on which Journey Optimizer resources 
 | Journey fragment | Create / Delete / Update / Activate / Archive |
 | Message frequency rule | Create / Delete / Update |
 | Ranking strategy | Create / Delete / Update |
+
+{{$include /help/_includes/do-not-localize/privacy/ai-augmented-audit-logs.md}}

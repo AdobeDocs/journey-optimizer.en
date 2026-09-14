@@ -118,3 +118,5 @@ You can now start integration with Adobe Experience Platform Mobile SDK to enabl
 >[!TIP]
 >
 >If you encounter issues with Live activity configuration or delivery, see [Troubleshoot Live activities](troubleshoot-mobile-live.md) for debugging steps.
+
+{{$include /help/_includes/do-not-localize/mobile-live/ai-augmented-mobile-live-configuration.md}}

@@ -143,3 +143,5 @@ In addition, you can use the [Adobe Experience Platform Query Service](https://e
 ## How-to video {#video}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435530?quality=12)
+
+{{$include /help/_includes/do-not-localize/conflict-prioritization/ai-augmented-journey-capping.md}}

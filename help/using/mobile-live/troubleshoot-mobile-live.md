@@ -1133,3 +1133,5 @@ A `feedbackStatus` of `sent` confirms that Journey Optimizer successfully handed
 
 iOS provides no callbacks once a notification leaves APNs. Device-side failures — such as an OS restriction, a network drop between APNs and the device, or the 8-hour Live activity duration limit being reached — are not observable from the dataset. If `feedbackStatus` is `sent` but no Live activity appears on the device, the issue is outside the Journey Optimizer pipeline. Use the Assurance plugin or app-level logging to diagnose device-side behavior.
 
+{{$include /help/_includes/do-not-localize/mobile-live/ai-augmented-troubleshoot-mobile-live.md}}
+

@@ -20,6 +20,8 @@ feature_v2:
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: cfdf3a89-7087-4a5c-a6d2-2f4eb64a3470
+    internal-label: User and role management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -309,3 +311,5 @@ For more in-depth learning and updates, explore the following resources:
 | Data Engineer | [Get started for data engineers](path/data-engineer.md) |
 | Developer | [Get started for developers](path/developer.md) |
 | Marketer | [Get started for marketers](path/marketer.md) |
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-quick-start.md}}

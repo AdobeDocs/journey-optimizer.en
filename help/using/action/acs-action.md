@@ -100,3 +100,5 @@ Use a **Reactions** event to react to tracking data related to a Campaign Standa
 * For emails, journeys can react to clicked, sent, opened or failed messages. [Learn more about reactions events](../building-journeys/reaction-events.md).
 
 When using a third-party system to send messages, you must add and configure a custom action. [Learn more about custom action configuration](../action/about-custom-action-configuration.md).
+
+{{$include /help/_includes/do-not-localize/action/ai-augmented-acs-action.md}}

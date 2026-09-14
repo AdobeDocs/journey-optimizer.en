@@ -57,3 +57,5 @@ To create additional credentials for the same channel, follow the steps below.
 
 * [Delegate a subdomain](custom-channel-subdomains.md) (optional — required for link tracking)
 * [Create a channel configuration](custom-channel-configuration.md)
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-custom-channel-api-credentials.md}}

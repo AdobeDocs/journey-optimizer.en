@@ -91,3 +91,5 @@ To assign a priority score to the inbound actions defined in the **[!UICONTROL A
 ## How-to video {#video}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435529?quality=12)
+
+{{$include /help/_includes/do-not-localize/conflict-prioritization/ai-augmented-priority-scores.md}}

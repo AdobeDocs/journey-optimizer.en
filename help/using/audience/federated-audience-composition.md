@@ -39,3 +39,5 @@ For more information, please read the guide on [Federated Audience Composition](
 Learn more about Federated Audience Composition in video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432261?quality=12)
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-federated-audience-composition.md}}

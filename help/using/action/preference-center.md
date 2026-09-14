@@ -161,3 +161,5 @@ Consent policies are comprised of two logical components:
 1. Once you created the consent policy, leverage it in [!DNL Journey Optimizer] using [channel configurations](consent.md#surface-marketing-actions) or [journey custom actions](consent.md#journey-custom-actions).
 
 1. Now you can use these channel configurations or custom actions in your journeys and campaigns to make sure your <!--targeted--> customers' preferences are honoured.
+
+{{$include /help/_includes/do-not-localize/action/ai-augmented-preference-center.md}}

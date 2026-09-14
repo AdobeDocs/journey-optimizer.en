@@ -221,3 +221,5 @@ Journey Optimizer allows you to send proofs to email addresses while impersonati
 1. To track the proof sending, click the **[!UICONTROL View proofs]** button in the simulate content screen.
 
 ![Sent proofs list](assets/simulate-custom-sent-proofs.png)
+
+{{$include /help/_includes/do-not-localize/test-approve/ai-augmented-simulate-sample-input.md}}

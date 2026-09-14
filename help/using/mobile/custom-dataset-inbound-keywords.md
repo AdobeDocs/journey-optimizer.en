@@ -124,3 +124,5 @@ Configure credentials according to your SMS provider using [Get started with SMS
     >Upon saving API credentials, Journey Optimizer validates that the inbound keyword dataset is configured correctly. If validation fails, an error message indicates the required correction.
 
 After the credentials are saved, outbound and inbound messaging behavior is unchanged; inbound keywords for that credential are recorded in the selected custom dataset.
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-custom-dataset-inbound-keywords.md}}

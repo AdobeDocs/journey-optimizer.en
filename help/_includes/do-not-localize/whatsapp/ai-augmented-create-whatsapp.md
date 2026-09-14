@@ -56,7 +56,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I create a WhatsApp message?** — Add a WhatsApp action to a journey or campaign, then use the Edit content button to choose a Template category, select a Meta-approved WhatsApp template, add media URLs, and personalize it.
 * **Q: Do I create the WhatsApp template in Journey Optimizer?** — No. You first create and design your template in Meta, and it must be approved by Meta before you can select it in Journey Optimizer.
 * **Q: How long does Meta template approval take?** — It usually takes a few hours but may take up to 24 hours.
-* **Q: Why don't my template's images or videos display?** — Meta's template media are only placeholders; you must supply external URLs (from Adobe Experience Manager or other sources) in the Image URL field.
+* **Q: Why do my template's images or videos not display?** — Meta's template media are only placeholders; you must supply external URLs (from Adobe Experience Manager or other sources) in the Image URL field.
 * **Q: How can I preview my WhatsApp message?** — Use Simulate content to preview the message content, shortened URLs, and personalized content.
 * **Q: Which button interactions are tracked in reporting?** — Interactions on Quick reply, Call to action – URL, and Call to action – phone are tracked; Copy code buttons are not supported and are not tracked.
 

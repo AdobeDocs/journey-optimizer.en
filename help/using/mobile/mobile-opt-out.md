@@ -99,3 +99,5 @@ Alphanumeric Sender IDs are for one-way messaging only, and are unable to receiv
     >[!VIDEO](https://video.tv.adobe.com/v/3427129/?learn=on)
 
     +++
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-mobile-opt-out.md}}

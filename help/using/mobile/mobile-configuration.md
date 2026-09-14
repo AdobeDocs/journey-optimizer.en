@@ -97,3 +97,4 @@ Your use of Mobile messaging and MMS services is subject to additional terms and
 >To access and edit SMS subdomains, you must have the **[!UICONTROL Manage SMS Subdomains]** permission on the production sandbox. Learn more about permissions on [this page](../administration/high-low-permissions.md#administration-permissions).
 >
 
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-mobile-configuration.md}}

@@ -163,3 +163,5 @@ If you encounter issues with your custom channel, the following table lists comm
 * [Global report overview](../reports/report-gs-cja.md)
 * [Journey live report](../reports/live-report.md
 -->
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-monitor-custom-channel.md}}

@@ -274,3 +274,5 @@ Learn how to configure an event, specify the streaming endpoint and the payload 
 Understand the applicable use cases for business events. Learn how to build a journey using a business event and which best practices to apply.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334234?quality=12)
+
+{{$include /help/_includes/do-not-localize/event/ai-augmented-about-events.md}}

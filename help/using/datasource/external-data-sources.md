@@ -424,3 +424,5 @@ Here is an example of the response of the login API call:
 >[!CAUTION]
 >
 >When configuring custom authentication for a custom action, note that nested JSON objects (e.g., sub-objects within `bodyParams`) are **supported**.
+
+{{$include /help/_includes/do-not-localize/datasource/ai-augmented-external-data-sources.md}}

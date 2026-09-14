@@ -189,4 +189,4 @@ A set of filters lets you narrow down the list of imported email content so you 
 
 ![Filter options for status, created date, and updated date in the workspace](assets/onboarding-hub-5.png)
 
-
+{{$include /help/_includes/do-not-localize/start/ai-augmented-migrate-content-and-journeys.md}}

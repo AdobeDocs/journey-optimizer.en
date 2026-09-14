@@ -548,3 +548,5 @@ WHERE
   AND MF._experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus = 'sent' 
   AND AE._experience.customerJourneyManagement.entities.journey.journeyVersionID IS NOT NULL
 ```
+
+{{$include /help/_includes/do-not-localize/data/ai-augmented-datasets-query-examples.md}}
