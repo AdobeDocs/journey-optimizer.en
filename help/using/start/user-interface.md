@@ -399,4 +399,13 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >title="Relay destination URL"
 >abstract="The HTTPS endpoint Journey Optimizer calls to relay each incoming message. Journey Optimizer sends a separate HTTP POST here per message received. This is distinct from the Auth URL under Custom Authentication, which is used only to obtain an access token, not to receive messages."
 
+<!--DOCAC-15698 Implement contextual help for Inbound Activity Deactivation activity-->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_inbound_activity_deactivation"
+>title="Inbound Activity Deactivation activity"
+>abstract="Removes a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit."
+
+
 {{$include /help/_includes/do-not-localize/start/ai-augmented-user-interface.md}}
