@@ -183,6 +183,8 @@ The following capabilities and improvements are coming to journeys in this relea
 
 * **New Journey Anomaly Detected alert** - A new system alert now warns you when a live journey's daily traffic deviates from its own historical baseline, or drops to zero unexpectedly, across Journey Entries, Journey Exits, and Event Sends. This alert is currently available in production sandboxes only. <a href="https://jira.corp.adobe.com/browse/DOCAC-15545" target="_blank">DOCAC-15545</a> <!-- Documentation link: TBD -->
 
+* **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity. <!-- DRAFT: pending DOCAC sub-task under DOCAC-15691, see CJM-165835 --> <!-- Documentation link: TBD -->
+
 ### Channels {#sep-26-channels}
 
 The following capabilities and improvements are coming to channels in this release.
