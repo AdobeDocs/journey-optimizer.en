@@ -157,3 +157,4 @@ The forward email address is set up by Adobe. This can take 3 to 4 days.
 
 Once done, all messages received on the **[!UICONTROL Reply to email]** and **Error email** adresses, as well as all emails sent to the **From email** address, are forwarded to the specific email address you provided.
 
+{{$include /help/_includes/do-not-localize/email/ai-augmented-header-parameters.md}}

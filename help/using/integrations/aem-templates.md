@@ -143,3 +143,5 @@ Once the Experience Manager template is available in Journey Optimizer as a cont
     ![](assets/aem_ajo_7.png)
 
 When your email is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) or [campaign](../campaigns/create-campaign.md), and activate it to send the message.
+
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-aem-templates.md}}

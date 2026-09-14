@@ -270,3 +270,5 @@ For more information, refer to these pages:
 
 * [Field references](../building-journeys/expression/field-references.md).
 * [Collection management functions](../building-journeys/expression/collection-management-functions.md)
+
+{{$include /help/_includes/do-not-localize/action/ai-augmented-action-response.md}}

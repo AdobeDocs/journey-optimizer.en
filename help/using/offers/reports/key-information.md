@@ -11,10 +11,12 @@ level: Intermediate
 exl-id: 07be59e8-e994-4854-8089-25614d005dbe
 version: Journey Orchestration
 feature_v2:
-  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decision capabilities
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decisioning
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
     internal-label: Decisioning API

@@ -9,7 +9,9 @@ TQID: https://experienceleague.adobe.com/UQ-5ddCbDJsF6muK1Am74fpx4ptRvHvB5VKwiIx
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
-feature_v2: []
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -69,3 +71,5 @@ If the approvers request changes, you are notified through an email and a Journe
 ![Changes requested notification](assets/changes-requested.png)
 
 To go through the change request, open it from the email or the alert to access the journey or campaign and make the requested changes. When your journey/campaign is ready to be reviewed again, send a new approval request using the **[!UICONTROL Request approval]** button.
+
+{{$include /help/_includes/do-not-localize/test-approve/ai-augmented-request-approval.md}}

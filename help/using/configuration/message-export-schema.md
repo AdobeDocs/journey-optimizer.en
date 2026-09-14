@@ -8,7 +8,9 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: export, messages, dataset, schema, emails, SMS
-feature_v2: []
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations

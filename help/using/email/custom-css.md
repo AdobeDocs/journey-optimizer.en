@@ -289,3 +289,5 @@ If your custom CSS is not applied, consider the options below.
     ```
 
     +++
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-custom-css.md}}

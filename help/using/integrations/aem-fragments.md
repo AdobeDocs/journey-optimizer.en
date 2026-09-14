@@ -272,3 +272,5 @@ To select a variation:
     > If you do not select a variation, or if the fragment was added before variation support was available, Journey Optimizer uses the **Main** variation automatically at delivery time.
 
 After you insert a fragment with a variation, republishing it in Adobe Experience Manager updates every **referenced variation** in active campaigns or journeys automatically. Previews and proofs still use the variation you chose, with the latest published content for that variation.
+
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-aem-fragments.md}}

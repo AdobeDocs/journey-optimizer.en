@@ -5,6 +5,12 @@ feature: Channel Configuration
 topic: Content Management
 role: User
 level: Beginner
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
+    internal-label: Custom Channels
 ---
 
 # Test your custom channel {#test-custom-channel}
@@ -126,3 +132,5 @@ Before activating your journey or campaign, confirm the following:
 * Error paths on the journey action activity (if configured) handle failure scenarios as expected.
 
 Once testing is complete, proceed to activate. [Learn how](create-custom-experience.md#activate)
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-test-custom-channel.md}}

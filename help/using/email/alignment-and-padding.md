@@ -85,3 +85,5 @@ To identify and edit leftover padding in fragments:
 >[!NOTE]
 >
 >This behavior is expected when fragments are repeatedly inserted and removed, as styling rules can accumulate. Always verify padding values using the breadcrumb navigation, especially when targeting mobile devices.
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-alignment-and-padding.md}}

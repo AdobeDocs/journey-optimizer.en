@@ -166,3 +166,4 @@ You need at minimum **View** permissions for the objects you want to query — c
 Yes. The MCP server respects your [!DNL Adobe Journey Optimizer] sandbox configuration. You can query sandbox-specific data by specifying the sandbox in your prompt or by connecting with credentials scoped to a particular sandbox.
 +++
 
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-ajo-mcp.md}}

@@ -16,8 +16,6 @@ product_v2:
 feature_v2:
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
@@ -341,3 +339,5 @@ Set up proactive monitoring to receive real-time notifications about critical ev
 * **Enable audit logs** - Activate audit logging to track all actions on resources for compliance and troubleshooting. [Learn more](../privacy/audit-logs.md)
 
 * **Monitor integrations** - Track custom action performance and external system connectivity to identify integration issues early. [Learn more](../action/reporting.md)
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-get-started-tracking.md}}

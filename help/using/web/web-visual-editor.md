@@ -13,6 +13,8 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
     internal-label: Web channel
@@ -198,3 +200,5 @@ The ability to change the device size is designed for responsive sites that rend
 The video below shows how to author a web experience using the web designer in [!DNL Journey Optimizer] campaigns.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418803/?quality=12&learn=on)
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-web-visual-editor.md}}

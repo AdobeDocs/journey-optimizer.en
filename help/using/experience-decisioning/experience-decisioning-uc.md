@@ -13,7 +13,9 @@ product_v2:
     internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decision capabilities
+    internal-label: Decisioning
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
   - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
     internal-label: Use cases
 role_v2:

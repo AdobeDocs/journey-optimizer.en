@@ -14,14 +14,12 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
-    internal-label: Journey management
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
 subfeature_v2:
   - id: ead8d40a-1b24-451e-a7c4-b2f1acb19f2e
     internal-label: Journey versions

@@ -13,11 +13,13 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
-    internal-label: Journey management
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
+  - id: b2044d1a-3b9b-4bf9-af40-0a221e7e1e53
+    internal-label: AI Assistant
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
     internal-label: AI content generation
 role_v2:
@@ -417,3 +419,5 @@ Most AI features are included with Adobe Journey Optimizer. Some capabilities li
 >* [Send-Time Optimization](../building-journeys/send-time-optimization.md) — Predict and optimize message delivery timing per individual.
 >* [AI models for decisioning](../experience-decisioning/ranking/ai-models.md) — Rank and personalize offers automatically with AI ranking models.
 >* [Work with MCP clients](../integrations/ajo-mcp.md) — Query campaigns, journeys, and offers from Claude Web, Claude Desktop, or Cursor using the Journey Optimizer MCP server.
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-ai-features.md}}

@@ -122,3 +122,5 @@ Here is an example of a Streaming Ingestion APIs event:
 To facilitate the identification of the place where to paste the "data" part, you can use a JSON visualization tool such as [JSON formatter](https://jsonformatter.curiousconcept.com){target="_blank"}.
 
 To troubleshoot Streaming Ingestion APIs, refer to [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"}.
+
+{{$include /help/_includes/do-not-localize/event/ai-augmented-additional-steps-to-send-events-to-journey.md}}

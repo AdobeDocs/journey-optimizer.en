@@ -184,3 +184,5 @@ After a dataset has been enabled for lookup using an API call, you can use the d
 * [Use Adobe Experience Platform data for personalization](../personalization/aep-data-perso.md)
 * [Use Adobe Experience Platform data for decisioning](../experience-decisioning/aep-data-exd.md)
 * [Use Adobe Experience Platform data for journey orchestration](../building-journeys/dataset-lookup.md)
+
+{{$include /help/_includes/do-not-localize/data/ai-augmented-lookup-aep-data.md}}

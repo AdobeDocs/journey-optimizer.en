@@ -14,8 +14,8 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
     internal-label: Overview
@@ -141,3 +141,5 @@ For a deep dive into technical architecture — including integration patterns, 
 ## Privacy and security {#privacy-security}
 
 [!DNL Adobe CX Enterprise]'s privacy and security practices apply to Adobe Journey Optimizer. These measures ensure compliance with privacy regulations like GDPR, enabling you to deliver personalized experiences while maintaining customer trust. [Learn more about privacy in Journey Optimizer](../privacy/get-started-privacy.md)
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-understanding-ajo.md}}

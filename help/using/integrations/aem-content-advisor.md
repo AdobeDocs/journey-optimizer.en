@@ -159,3 +159,5 @@ To access Adobe Experience Manager Content Advisor in Journey Optimizer, follow 
     ![](assets/content-advisor-13.png){zoomable="yes"}
 
 1. Browse and select the asset or content fragment you want to use, then insert it into your content.
+
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-aem-content-advisor.md}}

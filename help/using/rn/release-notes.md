@@ -12,15 +12,11 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
-    internal-label: Release notes
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
-    internal-label: Product updates
-  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
-    internal-label: Pre-release notes
-  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
-    internal-label: Documentation updates
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Journey Optimizer release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -55,6 +51,29 @@ topic_v2:
 >Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change. 
 
 ## September '26 updates {#sep-26-updates}
+
+### Content Management {#sep-26-content-management}
+
+<table>
+<thead>
+<tr>
+<th><strong>Content Management MCP tools in CX Coworker</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>CX Coworker now has a new set of <strong>Content Management MCP tools</strong>, letting you discover and manage Journey Optimizer content assets through natural language prompts. Ask it to list or retrieve content templates, fragments, landing pages, and journey/campaign inline message content. It can also create content, update templates, and create, update, clone, and publish fragments — plus update inline channel action content directly in journey and campaign.</p>
+<p>For more information, refer to the <a href="../start/ajo-coworker-skills.md#content-management">detailed documentation</a>.</p>
+<p>Availability date: September 3, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Mandatory consent checkbox for landing pages** - You can now make a checkbox mandatory in the landing page form component, requiring visitors to select it (for example, to give consent) before they can submit the form. [Learn more](../landing-pages/lp-content.md#use-form-component)
+
+  Availability date: September 4, 2026 
 
 ### Journeys {#sep-26-journeys}
 
@@ -94,11 +113,28 @@ topic_v2:
 </tbody>
 </table>
 
+* **Decisioning in Journey simulation** - You can now simulate journeys that rely on Adobe Journey Optimizer decisioning, with the following newly supported:
+
+  * Content Decision nodes are now supported in Simulation.
+  * The Optimize activity's Targeting rule method is now supported in Simulation.
+  * Actions with Adobe Journey Optimizer–decisioned content (e.g., email using a decision policy) are now supported in Simulation.
+  * Decision policies using Offer eligibility and ranking by rule, audience, priority, or formula are fully supported. Ranking by AI Model - Personalization is also supported, though returned offers may vary between runs.
+
+  [Learn more](../building-journeys/simulate-journey-gs.md)
+
+  Availability date: September 8, 2026
+
 * **New dateDiff function in journey expression editor** - The journey expression editor now includes the `dateDiff` function, which calculates the difference between two dates in number of days. This function is useful for time-based logic such as creating deadlines, calculating customer lifecycle durations, or building countdown timers in journey conditions.  [Learn more](../building-journeys/functions/date-functions.md#dateDiff)
 
   Availability date: September 1, 2026
 
+* **Analyze Journey Anomalies skill** - CX Coworker can now detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts against historical baselines using the **Analyze Journey Anomalies** skill. Once a real anomaly is confirmed, the skill runs read-only diagnostics to surface a likely root cause and recommendation. [Learn more](../start/ajo-coworker-skills.md#journey-analyze)
+
+  Availability date: September 2, 2026
+
 ### Campaigns {#sep-26-campaigns}
+
+* **Action Campaign authoring flow redesign** - Adobe Journey Optimizer Action Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
 
 +++ Coming soon — **Information below is subject to change.**
 
@@ -113,15 +149,12 @@ topic_v2:
 <td>
 <p>You can now simulate inbound channel actions in Action Campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
 <p>This capability is currently in private beta and available to a limited set of organizations. Contact your Adobe representative for more information.</p>
-<p>Availability date: September 4, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
 
 * **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface.
-
-* **Action Campaign authoring flow redesign** - Adobe Journey Optimizer Action Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
 
 * **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
 
@@ -316,6 +349,16 @@ The following capabilities and improvements have been introduced to Orchestrated
 * **Mirror pages in visual fragments** - You can now insert mirror pages into a visual fragment. Decisioning attributes render correctly on the mirror page link, even when the fragment is used in an email campaign that leverages Decisioning. The mirror page must be added to the visual fragment before the fragment is published in order for decisioning attributes to display. [Learn more](../email/message-tracking.md#decisioning-mirror-page)
 
   Availability date: August 11, 2026
+
+### Email Designer {#august-26-email-designer}
+
+* **Increase column counts without losing content in the Email Designer** - You can now increase the column count of an existing structure — for example, from 2 columns to 3 — without deleting it and losing your content. [Learn more](../email/content-from-scratch.md)
+
+  Availability date: August 5, 2026
+
+* **More background image placement options in the Email Designer** - Four new Image placement options are available for background images: Full Width - Top, Full Width - Bottom, Full Height - Left, and Full Height - Right. Each scales the image proportionally along one axis, like the existing Full Width and Full Height options, but anchors it to a specific edge instead of centering it, giving you more control over which part of a hero image stays in view. [Learn more](../email/backgrounds.md)
+
+  Availability date: August 4, 2026
 
 ### Usability improvements {#august-26-usability}
 

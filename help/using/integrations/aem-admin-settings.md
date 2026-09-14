@@ -143,3 +143,5 @@ When you save this configuration, Journey Optimizer stores it for that repositor
 Learn how administrators configure Adobe Experience Manager Managed Services repository settings in Journey Optimizer so marketers can use Content Fragments in journeys and campaigns.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3492529?quality=12)
+
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-aem-admin-settings.md}}

@@ -210,3 +210,5 @@ Yes, Adobe is actively working on enhancements to refine the asset expiration an
 For the latest updates, consult your Adobe account team or monitor the Adobe Journey Optimizer release notes.
 
 +++
+
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-assets.md}}

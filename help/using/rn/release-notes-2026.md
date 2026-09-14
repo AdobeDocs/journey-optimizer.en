@@ -9,15 +9,11 @@ role: User
 level: Beginner, Intermediate
 exl-id: 65ca94cf-8e17-4a25-90f3-238083f81477
 feature_v2:
-  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
-    internal-label: Release notes
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
-    internal-label: Product updates
-  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
-    internal-label: Pre-release notes
-  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
-    internal-label: Documentation updates
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Journey Optimizer release notes
 ---
 # Release Notes 2026 {#release-notes-2026}
 
@@ -545,15 +541,7 @@ The following capabilities and improvements have been added to content managemen
 
 ### Email channel {#june-26-email}
 
-The following improvements have been added to the email channel in this release.
-
-* **URL parameter encryption** - You can now encrypt URL parameters in tracking and landing page links added to your email messages. This provides an additional layer of security for sensitive parameter data. Previously released in Limited Availability, this capability is now available to all environments (General Availability). [Read more](../personalization/url-parameter-encryption.md)
-
-  Availability date: June 1, 2026
-
-* **New permissions for key registry** - Two new permissions are now required to access and manage the keys needed for URL parameter encryption: **Manage Key Registry** and **View Key Registry**. [Read more](../administration/high-low-permissions.md#administration-permissions)
-
-  Availability date: June 1, 2026
+The following capabilities have been added to the email channel in this release.
 
 <table>
 <thead>
@@ -700,6 +688,18 @@ The following improvements have been added to reporting in this release.
   * **Estimated CTOR** (Click-to-open rate): Calculated as estimated clicks relative to the total number of estimated opens.
   
   Availability date: June 25, 2026
+
+### Configuration {#june-26-configuration}
+
+The following configuration improvements are coming in this release.
+
+* **URL parameter encryption** - You can now encrypt URL parameters in tracking and landing page links added to your email messages. This provides an additional layer of security for sensitive parameter data. Previously released in Limited Availability, this capability is now available to all environments (General Availability). [Read more](../personalization/url-parameter-encryption.md)
+
+  Availability date: June 1, 2026
+
+* **New permissions for key registry** - Two new permissions are now required to access and manage the keys needed for URL parameter encryption: **Manage Key Registry** and **View Key Registry**. [Read more](../administration/high-low-permissions.md#administration-permissions)
+
+  Availability date: June 1, 2026
 
 ### Administration {#june-26-administration}
 

@@ -18,8 +18,6 @@ feature_v2:
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
 subfeature_v2:
   - id: dd51b532-b93f-4bcf-8dbf-0d007f593aca
     internal-label: Data source configuration
@@ -141,4 +139,6 @@ For more information on how to configure an Adobe Experience Platform Data Sourc
 Understand what a data source is and learn how to configure Experience Platform and external data sources.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334256?quality=12)
+
+{{$include /help/_includes/do-not-localize/datasource/ai-augmented-about-data-sources.md}}
 

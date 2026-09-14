@@ -10,8 +10,12 @@ level: Intermediate
 keywords: journey, activity, end 
 exl-id: 76c74ca3-edaa-48c5-8d6a-0906120e31a1
 version: Journey Orchestration
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
 # End activity{#end-activity}
 
@@ -32,38 +36,4 @@ The **[!UICONTROL End]** activity allows you to mark the end of each path of the
 ![](assets/journey54.png)
 -->
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page explains the End activity in Journey Optimizer, a visual marker placed at the end of each journey path that is optional but recommended for report readability.
-
-**Intents:**
-
-* Add an End activity to mark the conclusion of a journey path
-* Label End activities to improve journey report readability
-* Distinguish multiple journey paths visually using labeled End nodes
-
-**Glossary:**
-
-* **End activity**: A journey node that visually marks the terminus of a journey path; it is not mandatory but aids clarity *(product-specific)*
-
-**Guardrails:**
-
-* The End activity is not mandatory; journeys function without it.
-* Adding a label to each End activity is recommended when a journey has multiple paths, to make live reports easier to interpret.
-
-**Terminology:**
-
-* Canonical name: End activity — Acronym: n/a — variants: End node, End tag
-* Do not confuse: "End activity" ≠ "End tag" — the End tag is an auto-generated node visible during journey authoring, while the End activity is a placeable component
-
-**FAQ:**
-
-* **Q: Is the End activity required to publish a journey?** — No, it is not mandatory but is recommended for visual clarity.
-* **Q: Why should I label End activities?** — When a journey has multiple paths, labels help distinguish them in journey reports.
-* **Q: Where can I see the impact of End activity labels?** — Labels appear in the journey live report, making it easier to track path-level performance.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-end-activity.md}}

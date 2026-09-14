@@ -6,6 +6,10 @@ description: Learn how to manage AEM Content Fragments
 topic: Content Management
 role: User
 level: Beginner
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2: []
 ---
 # Manage your Adobe Experience Manager Content fragments {#aem-fragments}
 
@@ -53,4 +57,4 @@ When you republish a Fragment already used in a Journey or Campaign, the sync ti
 
 ➡️ [Learn more about Content Fragment](aem-fragments.md)
 
-
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-aem-fragments-manage.md}}

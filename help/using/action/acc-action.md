@@ -14,8 +14,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
-    internal-label: Guardrails and limitations
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
@@ -145,3 +143,4 @@ If you need to update an existing Campaign v7/v8 custom action, for example when
 >
 >Any journeys that use this action will automatically use the updated configuration. If you have live journeys using this action, monitor them closely after updating the endpoint to ensure proper message delivery.
 
+{{$include /help/_includes/do-not-localize/action/ai-augmented-acc-action.md}}

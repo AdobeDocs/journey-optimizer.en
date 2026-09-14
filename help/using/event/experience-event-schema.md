@@ -166,3 +166,5 @@ The linked fields are available when configuring the action parameters of a jour
 
 To learn how to use custom actions, refer to this [page](../building-journeys/using-custom-actions.md).
 -->
+
+{{$include /help/_includes/do-not-localize/event/ai-augmented-experience-event-schema.md}}

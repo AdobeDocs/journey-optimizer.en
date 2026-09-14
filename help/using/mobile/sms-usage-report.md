@@ -6,6 +6,12 @@ description: Learn how to generate SMS usage reports to reconcile messaging volu
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
+    internal-label: SMS and MMS channel
 ---
 # Generate SMS usage report {#sms-usage-report}
 
@@ -80,3 +86,5 @@ The SMS usage reports present mobile-originated (MO) and mobile-terminated (MT) 
       ![](assets/usage_report_3.png)
 
 1. To export the report, click **[!UICONTROL Download CSV]**. Journey Optimizer downloads a CSV file for the report you are viewing.
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-sms-usage-report.md}}

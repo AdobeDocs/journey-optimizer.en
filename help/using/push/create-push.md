@@ -15,6 +15,8 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
@@ -183,3 +185,5 @@ Rapid delivery messaging comes with the following requirements:
     >Ensure that the message content does not include any personalization, and that the audience contains less than 30M profiles.
 
 1. Review and activate your campaign as usual. Note that, in test mode, messages are not sent via the Rapid delivery mode.
+
+{{$include /help/_includes/do-not-localize/push/ai-augmented-create-push.md}}

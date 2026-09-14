@@ -126,3 +126,5 @@ If you need to perform date calculations in your email content:
 * **Use computed attributes** - Create [computed attributes](../audience/computed-attributes.md) that perform complex date calculations, making the results available as profile attributes.
 
 See [Date and time functions](../personalization/functions/dates.md) for the full list of supported functions.
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-code-content.md}}

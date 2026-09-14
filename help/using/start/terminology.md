@@ -12,8 +12,8 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
     internal-label: Overview
@@ -172,3 +172,5 @@ Both channels deliver messages inside a mobile or web application, but they have
 * [Get started with campaigns](../campaigns/get-started-with-campaigns.md) — Understand the three campaign types (Action, API-triggered, Orchestrated) and when to use each.
 * [Conflict management & prioritization](../conflict-prioritization/gs-conflict-prioritization.md) — Learn how to use rule sets, frequency capping, priority scores, and quiet hours to avoid over-messaging.
 * [Get started with communication channels](../channels/gs-channels.md) — Browse all available channels, their prerequisites, and how to configure them.
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-terminology.md}}
