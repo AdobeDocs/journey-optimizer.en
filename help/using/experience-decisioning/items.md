@@ -138,7 +138,7 @@ When you select audiences or decision rules, you can see information on the esti
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_capping_expression"
 >title="Expression"
->abstract="Rather that using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.<br/><br/>Capping rule **expressions** are currently available as a Limited Availability to all users. They are supported only for the **[!UICONTROL In total]** capping type."
+>abstract="Rather than using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.<br/><br/>Capping rule **expressions** are currently available as a Limited Availability to all users. They are supported only for the **[!UICONTROL In total]** capping type."
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_capping_scope"
@@ -225,7 +225,7 @@ To set capping rules for the decision item, follow the steps detailed below.
 
     +++Expression threshold
 
-    Rather that using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.
+    Rather than using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.
 
     For example, a marketer may decide to add a multiplier to adjust exposure. For instance, they could multiply the available inventory by two, allowing the offer to be shown to twice as many customers as units available. This approach anticipates that not all customers will convert, ensuring better reach without overselling.
     
