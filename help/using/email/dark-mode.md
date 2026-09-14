@@ -163,13 +163,6 @@ To access dark mode in the Email Designer and get a preview of the default dark 
 
 1. From the Email Designer home page, select the **[!UICONTROL Design from scratch]** option. [Learn more](content-from-scratch.md)
 
-<!--
-Should work with templates and themes, NOT for LP and fragments - but TBC with eng.
-    >[!NOTE]
-    >
-    >Currently you may not be able to switch to dark mode if you select an [email template](use-email-templates.md) or if you apply a [theme](apply-email-themes.md).
--->
-
 1. Add [structures](content-from-scratch.md) and [content components](content-components.md) to your content.
 
 1. On top right of the central canvas, switch the toggle to **[!UICONTROL Dark mode]**.
@@ -246,6 +239,22 @@ To define custom dark mode settings, follow the steps below.
     >[!WARNING]
     >
     >While simulation closely approximates how emails will appear in dark mode, actual rendering may differ due to variations in email service providers or device-level settings.
+
+### Use dark mode with themes {#dark-mode-themes}
+
+If you use a [theme](apply-email-themes.md) with your email or template content, you can also define independent dark mode styling directly at the theme level, for a specific color variant.
+
+1. Open the theme in the theme builder and go to the **[!UICONTROL Colors]** tab. [Learn how](apply-email-themes.md#create-and-edit-themes)
+
+1. For the color variant you want to customize, turn on the **[!UICONTROL Dark mode]** toggle. A dedicated dark mode stylesheet is generated for that variant.
+
+1. Edit the dark mode stylesheet directly in the theme builder. These changes are saved separately from the light mode styles for that variant, so editing one no longer affects the other.
+
+1. Once your theme is applied to an email or template, use the dark mode preview toggle next to the **[!UICONTROL Desktop]** and **[!UICONTROL Mobile]** view options in the editor to switch to dark mode. Any styling edits you make in that view are saved back to the theme's dark mode stylesheet for the active variant.
+
+>[!CAUTION]
+>
+>The dark mode preview relies on a CSS filter and is not pixel-perfect. Send a proof to verify the exact rendering in email clients that support custom dark mode. [Learn more](#guardrails)
 
 ## Best practices {#best-practices}
 
