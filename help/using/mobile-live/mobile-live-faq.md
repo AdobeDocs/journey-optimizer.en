@@ -383,6 +383,7 @@ Not necessarily. A success response confirms that the event was accepted and rec
 Yes. For a broadcast, starting is processed per recipient across your audience, since that is what subscribes each device to the broadcast channel, so it does more work and can take a little longer. Updates and ends, on the other hand, are sent once and fan out to all subscribed devices, making them lighter and usually faster.
 
 +++
+
 +++What authentication is required for the Headless API?
 
 Refer to the [API Triggered Campaigns Documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging) for authentication requirements, including OAuth tokens and API keys.
