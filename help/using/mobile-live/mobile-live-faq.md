@@ -230,6 +230,7 @@ It depends on unitary vs. broadcast:
 * **Broadcast**: `update`/`end` are sent to the broadcast channel, and a device only subscribes to that channel when it receives `start`. So an `update`/`end` for a channel that was never started has no subscribers and reaches no devices, always send `start` first. Also, if you use a brand-new `requestId`, the request is treated as a `start` rather than an `update`, so it will not error but will not behave as the update you intended.
 * **Unitary**: `update`/`end` target the recipient's device directly, so an update can physically reach the device even without a prior `start`. Whether the app renders an Android Live Update that was never started is SDK/app-dependent, best practice is still to start first.
 * **Already ended**: An `update` is rejected with an error, while an `end` is idempotent (a no-op that returns success).
+++++
 
 +++ Are there limits on how much content an Android Live Update can carry?
 

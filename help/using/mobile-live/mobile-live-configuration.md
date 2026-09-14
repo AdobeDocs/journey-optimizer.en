@@ -107,7 +107,7 @@ Step 1 is optional if your push credentials have already been configured, as the
 
 >[!ENDTABS]
 
-## Step 2: create your live activity configuration {#config-live-activity}
+## Step 2: Create your live activity configuration {#config-live-activity}
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]**. Click the **[!UICONTROL Create channel configuration]** button.
 
@@ -125,9 +125,9 @@ Step 1 is optional if your push credentials have already been configured, as the
 
 1. Select **[!UICONTROL Marketing action(s)]** to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. Learn more
 
-1. Choose iOS as your **[!UICONTROL Platform]**.
+1. Choose your **[!UICONTROL Platform]**.
 
-1. Select from the drop-down the same **[!UICONTROL App id]** as for your [push credential](#push-credentials-launch) configured above or choose an existing one.
+1. Select from the drop-down the same **[!UICONTROL App ID]** as for your [push credential](#push-credentials-launch) configured above or choose an existing one.
 
     ![](assets/config-3.png)
 
