@@ -155,10 +155,6 @@ The following capabilities and improvements are coming to journeys in this relea
 </tbody>
 </table>
 
-* **Decisioning path experimentation in Journey simulation** - **Path Experimentation**, part of the Optimize activity in Decisioning, is now supported in Journey simulation. <a href="https://jira.corp.adobe.com/browse/DOCAC-15641" target="_blank">DOCAC-15641</a> <!-- Documentation link: TBD -->
-
-* **Supplemental ID support in Journey simulation** - **Supplemental ID** is now supported in Journey simulation, allowing you to test complex user scenarios for both read-audience and event-triggered journeys. <a href="https://jira.corp.adobe.com/browse/DOCAC-15448" target="_blank">DOCAC-15448</a> <!-- Documentation link: TBD -->
-
 <table>
 <thead>
 <tr>
@@ -194,6 +190,8 @@ The following capabilities and improvements are coming to journeys in this relea
 </tr>
 </tbody>
 </table>
+
+* **Supplemental ID support in Journey simulation** - **Supplemental ID** is now supported in Journey simulation, allowing you to test complex user scenarios for both read-audience and event-triggered journeys. <a href="https://jira.corp.adobe.com/browse/DOCAC-15448" target="_blank">DOCAC-15448</a> <!-- Documentation link: TBD -->
 
 * **Refined batch audience evaluation wait logic** - In the **Read audience activity**, the "Trigger after batch audience evaluation" option in journeys now always waits for an in-progress batch segmentation to complete, ensuring the journey uses that run's data instead of falling back to an older snapshot. If no batch segmentation is in progress, the journey uses the latest available snapshot immediately — unless that snapshot is the same batch used on the previous run, in which case the journey waits, up to the configured window, for a newer batch, and skips that day's run if none arrives in time. <a href="https://jira.corp.adobe.com/browse/DOCAC-15465" target="_blank">DOCAC-15465</a> <!-- Documentation link: TBD -->
 
