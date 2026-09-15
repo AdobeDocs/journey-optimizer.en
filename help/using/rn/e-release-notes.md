@@ -33,7 +33,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 **New in CX Coworker this month**
 
-This release brings several new and improved CX Coworker features and skills, listed here for visibility. Each one is also detailed in its relevant section below.
+This release brings several new and improved [CX Coworker](../start/ai-features.md#cx-coworker) features and skills, listed here for visibility. Each one is also detailed in its relevant section below.
 
 * [Message-copy and email-design plugins](#sep-26-content-management) - Two new plugins that streamline messaging and email workflows in CX Coworker, from campaign brief to production-ready copy and HTML.
 * [Loyalty recommendation skill](#sep-26-loyalty) - Request challenge opportunities directly in CX Coworker's conversational interface and turn them into live challenges without leaving the chat.
