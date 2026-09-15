@@ -55,7 +55,8 @@ topic_v2:
 
 A Live Update is a persistent, continuously-updating notification (delivery status, live scores, ride/ETA, etc.) that stays on the Lock Screen, in the notification shade, or as a status-bar chip, and refreshes in place without the user reopening the app. A regular push notification is a one-shot alert that disappears once dismissed. 
 
-On iOS, this is implemented as a Live Activity. On Android, it is a promoted ongoing notification.
+* **iOS**: Implemented as a Live Activity.
+* **Android**: Implemented as a promoted ongoing notification.
 
 +++
 
@@ -66,25 +67,19 @@ They are the same product concept in Journey Optimizer and use the same Headless
 
 +++How many Live activity instances can be active at once?
 
-An iOS app can run multiple Live activity instances simultaneously, including several that use the same `ActivityAttributes` type.
+An iOS app can run multiple Live activity instances simultaneously, including several that use the same `ActivityAttributes` type. There is no developer-imposed limit, but iOS enforces a system-level cap on how many can be active or visible at once.
 
-There is no hard limit imposed by developers on how many Live activity instances of a given attribute type can exist. You can start as many as your app logic requires, for instance, one per ongoing delivery or ride. However, iOS enforces a system-level limit on how many Live activity instances can be active or visible at once.
-
-In practice:
-
-* iOS typically supports up to about five concurrent Live activity instances per app.
-
-* If you exceed this number, the system may stop displaying some activity instances or terminate older ones to conserve resources.
-
-* Each Live activity instance has a unique `Activity.id`, which lets you update or end it individually.
-
-Android has no equivalent to iOS's ~5-instance cap. Each Android Live Update is an ongoing notification your app manages directly. A broadcast Android Live Update is a single channel that many devices subscribe to. In practice, limits come from how many notifications you want visible to users and your own tracking, not a hard OS ceiling.
+* **iOS**: Typically supports up to about five concurrent instances per app. Beyond that, the system may stop displaying or terminate older instances to conserve resources. Each instance has a unique `Activity.id`, letting you update or end it individually.
+* **Android**: No equivalent instance cap. Each Android Live Update is an ongoing notification your app manages directly, and a broadcast Android Live Update is a single channel that many devices subscribe to. Limits come from how many notifications you want visible to users and your own tracking, not a hard OS ceiling.
 
 +++
 
 +++Do users need to have the app open to receive Live activity updates?
 
-No. Start, update, and end are delivered remotely and work with the app in the background or closed. On Android, the FCM data message wakes your app briefly to (re)post the notification on each update, so Android delivery is sensitive to battery optimization / Doze.
+No. Start, update, and end are delivered remotely and work with the app in the background or closed.
+
+* **iOS**: The system delivers updates without waking your app code.
+* **Android**: The FCM data message wakes your app briefly to (re)post the notification on each update, so delivery is sensitive to battery optimization / Doze.
 
 +++
 
@@ -103,9 +98,8 @@ Native Android Live Updates require Android 16. On earlier Android versions, the
 
 +++How long can a Live activity remain active?
 
-Apple limits Live activity to **8 hours of active updates**. After that, the system automatically ends the activity, though it may remain visible in a static state for up to **12 additional hours** before removal. You can also end a Live activity sooner by setting a `dismissalDate` or explicitly calling `activity.end()` in your app.
-
-Android has no fixed 8-hour expiry like iOS. An ongoing notification stays active until your app sends an end event or the app/user dismisses it, subject to FCM delivery and device battery/Doze behavior.
+* **iOS**: Apple limits a Live activity to **8 hours of active updates**. After that, the system automatically ends the activity, though it may remain visible in a static state for up to **12 additional hours** before removal. You can also end a Live activity sooner by setting a `dismissalDate` or explicitly calling `activity.end()` in your app.
+* **Android**: There is no fixed 8-hour expiry like iOS. An ongoing notification stays active until your app sends an end event or the app/user dismisses it, subject to FCM delivery and device battery/Doze behavior.
 
 +++
 
@@ -154,7 +148,8 @@ Yes. You need the runtime `POST_NOTIFICATIONS` permission (Android 13+), and, de
 
 +++ Does my app code run on every update? How does Doze/battery optimization affect it?
 
-On Android, yes: each update is an FCM data message that wakes your service to re-post the notification. On iOS, the system handles this and your app code never runs. As a result, Android updates are subject to battery optimization, Doze, and manufacturer-specific restrictions, which can delay or drop them. Use high-priority delivery for time-sensitive updates, and if reliability matters, encourage users to exempt your app from battery optimization.
+* **iOS**: No, the system handles this and your app code never runs.
+* **Android**: Yes, each update is an FCM data message that wakes your service to re-post the notification. As a result, updates are subject to battery optimization, Doze, and manufacturer-specific restrictions, which can delay or drop them. Use high-priority delivery for time-sensitive updates, and if reliability matters, encourage users to exempt your app from battery optimization.
 +++
 
 +++Can I use the same `LiveActivityAttributes` class for both local and remote Live activities?
@@ -197,7 +192,10 @@ Yes. The `ActivityConfiguration` has separate closures for Lock Screen content a
 
 +++Do I need to store push tokens manually?
 
-No. The Mobile SDK collects and manages the device's FCM token automatically once Android Live Updates are registered, you do not store tokens manually. On Android, the token lives in the standard push token field on the profile. iOS uses a separate Live Activity token field, while Android reuses the standard push token.
+No. The Mobile SDK collects and manages the device's token automatically once registered, you do not store tokens manually.
+
+* **iOS**: Uses a separate Live Activity token field.
+* **Android**: Reuses the standard push token field on the profile.
 +++
 
 +++Are there limits on remote starts of Live activities?
@@ -208,7 +206,7 @@ Yes. Remote starts via `ActivityKit` are subject to system-enforced limits. If y
 
 +++What is the budget for high-priority updates?
 
-Apple does not specify an exact numerical cap for high-priority `(priority: 10)` Live activity updates. The system maintains a dynamic internal budget that limits how frequently such updates can be sent. If too many high-priority updates are issued in a short span, iOS may throttle or delay subsequent ones.
+**iOS**: Apple does not specify an exact numerical cap for high-priority `(priority: 10)` Live activity updates. The system maintains a dynamic internal budget that limits how frequently such updates can be sent. If too many high-priority updates are issued in a short span, iOS may throttle or delay subsequent ones.
 
 To minimize throttling: 
 
@@ -216,7 +214,7 @@ To minimize throttling:
 * **Use high priority sparingly**: Reserve high priority for time-critical updates, such as delivery progress, order status, or live sports scores.
 * **Support frequent updates**: Include `NSSupportsLiveActivitiesFrequentUpdates` in your app's `Info.plist` and set it to **YES** if you need frequent updates.
 
-Android Live Updates are sent as high-priority FCM messages so they wake the app promptly. There is no Apple-style per-app budget; instead, FCM enforces quotas on high-priority data messages, and the OS may throttle a misbehaving app. Send high priority only for genuinely time-sensitive updates.
+**Android**: Live Updates are sent as high-priority FCM messages so they wake the app promptly. There is no Apple-style per-app budget; instead, FCM enforces quotas on high-priority data messages, and the OS may throttle a misbehaving app. Send high priority only for genuinely time-sensitive updates.
 
 +++
 
@@ -232,7 +230,7 @@ It depends on unitary vs. broadcast:
 * **Broadcast**: `update`/`end` are sent to the broadcast channel, and a device only subscribes to that channel when it receives `start`. So an `update`/`end` for a channel that was never started has no subscribers and reaches no devices, always send `start` first. Also, if you use a brand-new `requestId`, the request is treated as a `start` rather than an `update`, so it will not error but will not behave as the update you intended.
 * **Unitary**: `update`/`end` target the recipient's device directly, so an update can physically reach the device even without a prior `start`. Whether the app renders an Android Live Update that was never started is SDK/app-dependent, best practice is still to start first.
 * **Already ended**: An `update` is rejected with an error, while an `end` is idempotent (a no-op that returns success).
-++++
++++
 
 +++ Are there limits on how much content an Android Live Update can carry?
 
@@ -337,10 +335,12 @@ It has the same shape as the start request, but reuses the same `requestId` so i
 
 +++What is the difference between `timestamp` and `dismissal-date`?
 
+**iOS**:
+
 * `timestamp`: The current epoch time when the event occurs, required for all events.
 * `dismissal-date`: A future epoch time when the Live activity should auto-dismiss, required only for "end" events.
 
-Android does not use `timestamp` and `dismissal-date`.
+**Android**: Does not use `timestamp` or `dismissal-date`.
 +++
 
 +++ Do I need to send all content fields on every update? 
@@ -419,7 +419,7 @@ No. You can use the same campaign and change the `event` field in the payload. H
 
 +++My Live activity starts but does not update. What could be the issue?
 
-Common causes:
+**iOS** common causes:
 
 * Mismatched `liveActivityID` or `channelID` between start and update calls.
 * `content-state` fields do not match your `ContentState` struct.
@@ -427,7 +427,7 @@ Common causes:
 * Network connectivity issues on the device.
 * The epoch time used as timestamp is not up-to-date.
 
-On Android, verify the following:
+**Android**, verify the following:
 
 * The update reuses the same `requestId` as the start.
 * `topic_name` matches the broadcast channel used at start.
@@ -448,9 +448,10 @@ On Android, verify the following:
 
 +++Users only see the Live activity update and not the alert notification, is this a known issue?
 
-No. The `alert` field is optional and may be suppressed by iOS in certain conditions, for example Do Not Disturb mode. A Live activity can update silently, which is often the intended behavior. The alert field is mandatory for sending remote starts otherwise apple treats it like a silent background notification.
+No.
 
-On Android, alert vs. silent behavior is governed by the notification channel's (`notification_channel_id`) importance and the user's settings, such as DND or a muted channel. Ongoing/updating notifications are often intentionally low-intrusion, so configure the channel importance appropriately.
+* **iOS**: The `alert` field is optional and may be suppressed by iOS in certain conditions, for example Do Not Disturb mode. A Live activity can update silently, which is often the intended behavior. The alert field is mandatory for sending remote starts, otherwise Apple treats it like a silent background notification.
+* **Android**: Alert vs. silent behavior is governed by the notification channel's (`notification_channel_id`) importance and the user's settings, such as DND or a muted channel. Ongoing/updating notifications are often intentionally low-intrusion, so configure the channel importance appropriately.
 
 +++
 
@@ -462,12 +463,14 @@ Send an `end` event. For broadcast, a single `end` to the channel terminates it 
 
 +++My widget shows "No data" even though I sent an update. What could be the issue?
 
+**iOS**:
+
 * Verify your widget implementation properly accesses `context.state` and `context.attributes`.
 * Check that default values or error states are handled in your widget interface.
 * Use the `LiveActivityAssuranceDebuggable` protocol to debug the schema.
 * Test with Adobe Assurance to see if data is being received.
 
-On Android, this is usually an app-side issue: the service is not reading the Android Live Update data block, a field the notification expects is missing, or the notification channel is not created. Verify the payload the device receives, provide sensible defaults, and test with Adobe Assurance or logcat.
+**Android**: This is usually an app-side issue: the service is not reading the Android Live Update data block, a field the notification expects is missing, or the notification channel is not created. Verify the payload the device receives, provide sensible defaults, and test with Adobe Assurance or logcat.
 
 +++
 
