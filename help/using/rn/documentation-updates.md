@@ -23,7 +23,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
-* The **Get started with Loyalty Challenges** page now includes a link to an interactive, self-guided demo of Loyalty Challenges, covering the marketer's challenge creation flow (including Bring your own data and the insights dashboards), the end customer experience, and Loyalty Challenge Management in CX Coworker. [Read more](../loyalty-challenges/get-started.md#demo)
+* A new **Interactive demo** page is now available for Loyalty Challenges, linking to a self-guided, clickable demo that covers the marketer's challenge creation flow (including Bring your own data and the insights dashboards), the end customer experience, and Loyalty Challenge Management in CX Coworker. [Read more](../loyalty-challenges/loyalty-challenges-demo.md)
 
 * The **Personalize your email background** page has been expanded and improved. It now documents the full **Image placement** dropdown for background images and adds new best practices for background colors and images, including a recommendation to test background images across real email clients rather than relying solely on the Email Designer preview. [Read more](../email/backgrounds.md)
 
