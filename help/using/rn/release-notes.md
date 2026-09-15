@@ -79,6 +79,12 @@ topic_v2:
 
   Availability date: September 1, 2026
 
+### Loyalty {#sep-26-loyalty}
+
+* **"Forever" Loyalty challenges** - Loyalty challenges can now run indefinitely. Set **Challenge end** to **No end date** when configuring the schedule, and the challenge never expires. [Learn more](../loyalty-challenges/create-challenges.md#schedule)
+
+  Availability date: September 1, 2026
+
 ### Journeys {#sep-26-journeys}
 
 <table>
