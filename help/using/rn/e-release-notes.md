@@ -31,18 +31,18 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 >[!BEGINSHADEBOX]
 
-**New in CX Coworker this month**
+**New in CX Enterprise Coworker this month**
 
-This release brings several new and improved [CX Coworker](../start/ai-features.md#cx-coworker) features and skills, listed here for visibility. Each one is also detailed in its relevant section below.
+This release brings several new and improved [Coworker](../start/ai-features.md#cx-coworker) features and skills, listed here for visibility. Each one is also detailed in its relevant section below.
 
-* [Message-copy and email-design plugins](#sep-26-content-management) - Two new plugins that streamline messaging and email workflows in CX Coworker, from campaign brief to production-ready copy and HTML.
-* [Loyalty recommendation skill](#sep-26-loyalty) - Request challenge opportunities directly in CX Coworker's conversational interface and turn them into live challenges without leaving the chat.
-* [Journey Simulation (MCP & Chat)](#sep-26-journeys) - Automate end-to-end journey validation and interpret the results directly in CX Coworker.
-* [Journey creation from the CX Coworker rail](#sep-26-journeys) - Generate journeys with AI directly from the CX Coworker right rail, replacing the previous AI Assistant experience.
-* [Compare journey versions](#sep-26-journeys) - Get a full-fidelity, structured diff between any two versions of a journey through CX Coworker Chat.
+* [Message-copy and email-design plugins](#sep-26-content-management) - Two new plugins that streamline messaging and email workflows in Coworker, from campaign brief to production-ready copy and HTML.
+* [Loyalty recommendation skill](#sep-26-loyalty) - Request challenge opportunities directly in Coworker's conversational interface and turn them into live challenges without leaving the chat.
+* [Journey Simulation (MCP & Chat)](#sep-26-journeys) - Automate end-to-end journey validation and interpret the results directly in Coworker.
+* [Journey creation from the Coworker rail](#sep-26-journeys) - Generate journeys with AI directly from the Coworker right rail, replacing the previous AI Assistant experience.
+* [Compare journey versions](#sep-26-journeys) - Get a full-fidelity, structured diff between any two versions of a journey through Coworker Chat.
 * [Hygiene Analysis skill](#sep-26-journeys) - Scan active and draft journeys for broken configurations, silent failures, and decaying or unused assets, with recommended fixes.
 * [Business Performance Analysis skill](#sep-26-journeys) - Analyze journey performance and get concrete optimization recommendations, right from the chat.
-* [Decisioning rule generation](#sep-26-decisioning) - Build AI-assisted decisioning rules directly in CX Coworker, which now replaces the right rail for this experience.
+* [Decisioning rule generation](#sep-26-decisioning) - Build AI-assisted decisioning rules directly in Coworker, which now replaces the right rail for this experience.
 
 >[!ENDSHADEBOX]
 
@@ -53,13 +53,13 @@ The following capability is coming to content management in this release.
 <table>
 <thead>
 <tr>
-<th><strong>Message-copy and email-design plugins in CX Coworker</strong><br/></th>
+<th><strong>Message-copy and email-design plugins in Coworker</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Two new plugins are now available in CX Coworker to streamline your <strong>messaging and email workflows</strong> from strategy to deployment:</p>
+<p>Two new plugins are now available in Coworker to streamline your <strong>messaging and email workflows</strong> from strategy to deployment:</p>
 <p><strong>Message copy plugin</strong>:</p>
 <ul>
 <li>Captures campaign briefs and defines messaging maps, narrative arcs, and channel roles.</li>
@@ -117,7 +117,7 @@ The following capability and improvement are coming to Loyalty in this release.
 </tbody>
 </table>
 
-* **CX Coworker loyalty recommendation skill** - Marketers can now request **challenge opportunities** directly in CX Coworker's conversational interface, getting grounded challenge ideas based on real loyalty program trends and turning them into live challenges without leaving the chat. 
+* **Coworker loyalty recommendation skill** - Marketers can now request **challenge opportunities** directly in Coworker's conversational interface, getting grounded challenge ideas based on real loyalty program trends and turning them into live challenges without leaving the chat. 
 
 * **Challenges domain in the Content Card personalization editor** - The Content Card personalization editor now supports **Challenges** as a domain, letting you access challenge metadata when authoring content card personalization. This makes it easier to create tailored content for each stage of a challenge — Launch, In progress, and End — without custom code.  
 
@@ -154,13 +154,13 @@ The following capabilities and improvements are coming to journeys in this relea
 <table>
 <thead>
 <tr>
-<th><strong>Journey Simulation in CX Coworker (MCP &amp; Chat)</strong><br/></th>
+<th><strong>Journey Simulation in Coworker (MCP &amp; Chat)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>The <strong>Journey Simulation skill</strong> in CX Coworker automates end-to-end journey validation and lets you easily interpret the results. Note that this feature currently supports only the Quick Simulation flow and does not fully replace the Journey Optimizer manual simulation experience.</p>
+<p>The <strong>Journey Simulation skill</strong> in Coworker automates end-to-end journey validation and lets you easily interpret the results. Note that this feature currently supports only the Quick Simulation flow and does not fully replace the Journey Optimizer manual simulation experience.</p>
 </td>
 </tr>
 </tbody>
@@ -169,13 +169,13 @@ The following capabilities and improvements are coming to journeys in this relea
 <table>
 <thead>
 <tr>
-<th><strong>Journey creation from CX Coworker rail</strong><br/></th>
+<th><strong>Journey creation from Coworker rail</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p><strong>Journey creation with AI</strong> is now available directly from the CX Coworker right rail, replacing the previous AI Assistant experience with a re-branded, integrated entry point for generating journeys.</p>
+<p><strong>Journey creation with AI</strong> is now available directly from the Coworker right rail, replacing the previous AI Assistant experience with a re-branded, integrated entry point for generating journeys.</p>
 </td>
 </tr>
 </tbody>
@@ -221,16 +221,16 @@ The following capabilities and improvements are coming to journeys in this relea
 
 * **Refined batch audience evaluation wait logic** - In the **Read audience activity**, the "Trigger after batch audience evaluation" option in journeys now always waits for an in-progress batch segmentation to complete, ensuring the journey uses that run's data instead of falling back to an older snapshot. If no batch segmentation is in progress, the journey uses the latest available snapshot immediately — unless that snapshot is the same batch used on the previous run, in which case the journey waits, up to the configured window, for a newer batch, and skips that day's run if none arrives in time. 
 
-* **Compare journey versions with CX Coworker** - Today, reviewing what changed between two versions of a journey requires manually comparing them inside Journey Optimizer node by node - there's no structured diff, which makes change-review, audit, and pre-publish checks slow and error-prone, especially as journeys grow more complex. This capability lets a customer or AI agent compare any two versions of a journey through CX Coworker Chat and get back a full-fidelity, **structured diff** - added/removed/modified/moved nodes with field-level detail, changed connections, journey-level property changes, and roll-up counts - without opening Journey Optimizer. 
+* **Compare journey versions with Coworker** - Today, reviewing what changed between two versions of a journey requires manually comparing them inside Journey Optimizer node by node - there's no structured diff, which makes change-review, audit, and pre-publish checks slow and error-prone, especially as journeys grow more complex. This capability lets a customer or AI agent compare any two versions of a journey through Coworker Chat and get back a full-fidelity, **structured diff** - added/removed/modified/moved nodes with field-level detail, changed connections, journey-level property changes, and roll-up counts - without opening Journey Optimizer. 
 
 * **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity. <!-- DRAFT: pending DOCAC sub-task under DOCAC-15691, see CJM-165835 -->
 <!-- Documentation link: TBD -->
 
 * **Dry run step-event suppression for custom reports** - As part of step-event optimization, Journey Optimizer now stops generating certain non-reportable step events during Journey Dry Runs. This only affects custom reports built on these dry-run step-event types. If you're impacted, re-trigger the dry run to regenerate data.
 
-* **Hygiene Analysis Coworker skill** - A new Hygiene Analysis skill in CX Coworker scans your active and draft journeys for broken configurations, silent failures, and decaying or unused assets — such as stale draft journeys, orphaned data sources, and persistent custom action errors — and surfaces recommended fixes, right from the chat. <!-- Documentation link: TBD -->
+* **Hygiene Analysis Coworker skill** - A new Hygiene Analysis skill in Coworker scans your active and draft journeys for broken configurations, silent failures, and decaying or unused assets — such as stale draft journeys, orphaned data sources, and persistent custom action errors — and surfaces recommended fixes, right from the chat. <!-- Documentation link: TBD -->
 
-* **Business Performance Analysis Coworker skill** - A new **Business Performance Analysis** skill in CX Coworker analyzes how your journeys are performing, explains areas of lower performance, and recommends concrete optimizations, like re-engagement waits, channel escalation, and Send Time Optimization.  <!-- Documentation link: TBD -->
+* **Business Performance Analysis Coworker skill** - A new **Business Performance Analysis** skill in Coworker analyzes how your journeys are performing, explains areas of lower performance, and recommends concrete optimizations, like re-engagement waits, channel escalation, and Send Time Optimization.  <!-- Documentation link: TBD -->
 
 * **Automatic event recovery timeout in Journey Properties** - Journey Properties now includes a **Set event recovery timeout** setting: by default, impacted journey events are automatically replayed for up to 72 hours after a service interruption with no action needed. You can turn this setting on to control the replay window (0–72 hours) for time-sensitive journeys. The existing **Timeout or error** field has also been renamed to **Custom Action / IDS Action timeout** to avoid confusion between the two settings. 
 
@@ -380,7 +380,7 @@ The following capabilities and improvements are coming to Decisioning in this re
 </tbody>
 </table>
 
-* **Decisioning rule generation from CX Coworker** - The **AI-assisted decisioning rule generation** experience, previously available via the right rail, is now accessible through CX Coworker, which replaces the right rail as the way to build rules with AI. 
+* **Decisioning rule generation from Coworker** - The **AI-assisted decisioning rule generation** experience, previously available via the right rail, is now accessible through Coworker, which replaces the right rail as the way to build rules with AI. 
 
 * **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually.
 
