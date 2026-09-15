@@ -377,6 +377,8 @@ The following capabilities and improvements are coming to Decisioning in this re
 
 * **Decisioning rule generation from CX Coworker** - The **AI-assisted decisioning rule generation** experience, previously available via the right rail, is now accessible through CX Coworker, which replaces the right rail as the way to build rules with AI. <a href="https://jira.corp.adobe.com/browse/DOCAC-15290" target="_blank">DOCAC-15290</a> <!-- Documentation link: TBD -->
 
+* **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually. <a href="https://jira.corp.adobe.com/browse/DOCAC-15702" target="_blank">DOCAC-15702</a> <!-- Documentation link: TBD -->
+
 ### Direct mail {#sep-26-direct-mail}
 
 The following capabilities and improvements are coming to Direct Mail in this release.
