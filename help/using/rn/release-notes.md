@@ -75,6 +75,10 @@ topic_v2:
 
   Availability date: September 4, 2026 
 
+* **Additional reserved keywords in personalization syntax** - The list of reserved keywords in Profile Query Language (PQL) has been expanded to include general keywords, time units, and boolean/logical operators. If your XDM schema contains a field name that matches one of these keywords, wrap it in backticks to reference it in a personalization expression. [Learn more](../personalization/personalization-syntax.md#reserved-keywords)
+
+  Availability date: September 1, 2026
+
 ### Journeys {#sep-26-journeys}
 
 <table>
