@@ -129,7 +129,7 @@ The following capability is coming to onboarding in this release.
 
 The following reminder applies to audiences in this release.
 
-* **Upcoming change to Audience Composition enrichment audiences** - During the October release (end of October), Journey Optimizer will stop journeys and campaigns that use or reference an Audience Composition audience whose source dataset does not have a **primary identity descriptor**. From that point forward, only Audience Composition audiences built with a primary identity descriptor are supported in journeys and campaigns. If you need these journeys or campaigns to remain active, contact your Adobe representative — our product team can help you migrate. <a href="https://jira.corp.adobe.com/browse/DOCAC-15690" target="_blank">DOCAC-15690</a> <!-- Documentation link: TBD -->
+* **Upcoming change to Audience Composition enrichment audiences** - During the October release (end of October), Journey Optimizer will stop journeys and campaigns that use or reference an Audience Composition audience whose source dataset does not have a **primary identity descriptor**. From that point forward, only Audience Composition audiences built with a primary identity descriptor are supported in journeys and campaigns. If you need these journeys or campaigns to remain active, contact your Adobe representative — our product team can help you migrate. <!-- Documentation link: TBD -->
 
 ### Journeys {#sep-26-journeys}
 
@@ -150,10 +150,6 @@ The following capabilities and improvements are coming to journeys in this relea
 </tbody>
 </table>
 
-* **Decisioning path experimentation in Journey simulation** - **Path Experimentation**, part of the Optimize activity in Decisioning, is now supported in Journey simulation. 
-
-* **Supplemental ID support in Journey simulation** - **Supplemental ID** is now supported in Journey simulation, allowing you to test complex user scenarios for both read-audience and event-triggered journeys. 
-
 <table>
 <thead>
 <tr>
@@ -169,8 +165,6 @@ The following capabilities and improvements are coming to journeys in this relea
 </tbody>
 </table>
 
-* **Refined batch audience evaluation wait logic** - In the **Read audience activity**, the "Trigger after batch audience evaluation" option in journeys now always waits for an in-progress batch segmentation to complete, ensuring the journey uses that run's data instead of falling back to an older snapshot. If no batch segmentation is in progress, the journey uses the latest available snapshot immediately — unless that snapshot is the same batch used on the previous run, in which case the journey waits, up to the configured window, for a newer batch, and skips that day's run if none arrives in time. 
-
 <table>
 <thead>
 <tr>
@@ -181,7 +175,6 @@ The following capabilities and improvements are coming to journeys in this relea
 <tr>
 <td>
 <p>The Journey Optimizer home page now surfaces an <strong>AI recommendation card</strong> when a journey alert fires, covering <strong>Journey Custom Action failure</strong> and <strong>Journey Anomaly Detected</strong> alerts. Selecting the card opens the journey with the right rail pre-populated with the analysis already performed.</p>
-<p><a href="https://jira.corp.adobe.com/browse/DOCAC-15706" target="_blank">DOCAC-15706</a></p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -208,6 +201,10 @@ The following capabilities and improvements are coming to journeys in this relea
 
 * **Refined batch audience evaluation wait logic** - In the **Read audience activity**, the "Trigger after batch audience evaluation" option in journeys now always waits for an in-progress batch segmentation to complete, ensuring the journey uses that run's data instead of falling back to an older snapshot. If no batch segmentation is in progress, the journey uses the latest available snapshot immediately — unless that snapshot is the same batch used on the previous run, in which case the journey waits, up to the configured window, for a newer batch, and skips that day's run if none arrives in time. 
 
+* **Supplemental ID support in Journey simulation** - **Supplemental ID** is now supported in Journey simulation, allowing you to test complex user scenarios for both read-audience and event-triggered journeys. 
+
+* **Refined batch audience evaluation wait logic** - In the **Read audience activity**, the "Trigger after batch audience evaluation" option in journeys now always waits for an in-progress batch segmentation to complete, ensuring the journey uses that run's data instead of falling back to an older snapshot. If no batch segmentation is in progress, the journey uses the latest available snapshot immediately — unless that snapshot is the same batch used on the previous run, in which case the journey waits, up to the configured window, for a newer batch, and skips that day's run if none arrives in time. 
+
 * **Compare journey versions with CX Coworker** - Today, reviewing what changed between two versions of a journey requires manually comparing them inside Journey Optimizer node by node - there's no structured diff, which makes change-review, audit, and pre-publish checks slow and error-prone, especially as journeys grow more complex. This capability lets a customer or AI agent compare any two versions of a journey through CX Coworker Chat and get back a full-fidelity, **structured diff** - added/removed/modified/moved nodes with field-level detail, changed connections, journey-level property changes, and roll-up counts - without opening Journey Optimizer. 
 
 * **Content preview in the journey canvas** - Reviewing channel content today requires opening each node individually, one at a time - slow and error-prone on journeys with many channel nodes, especially where personalization means checking multiple treatments or variants per node. **Content preview** removes that friction by surfacing a content thumbnail for every channel node directly in the canvas, with a fullscreen modal to inspect and switch between treatments and variants.
@@ -216,9 +213,9 @@ The following capabilities and improvements are coming to journeys in this relea
 
 * **Dry run step-event suppression for custom reports** - As part of step-event optimization, Journey Optimizer now stops generating certain non-reportable step events during Journey Dry Runs. This only affects custom reports built on these dry-run step-event types. If you're impacted, re-trigger the dry run to regenerate data.
 
-* **Hygiene Analysis Coworker skill** - A new Hygiene Analysis skill in CX Coworker scans your active and draft journeys for broken configurations, silent failures, and decaying or unused assets — such as stale draft journeys, orphaned data sources, and persistent custom action errors — and surfaces recommended fixes, right from the chat. <a href="https://jira.corp.adobe.com/browse/DOCAC-15689" target="_blank">DOCAC-15689</a> <!-- Documentation link: TBD -->
+* **Hygiene Analysis Coworker skill** - A new Hygiene Analysis skill in CX Coworker scans your active and draft journeys for broken configurations, silent failures, and decaying or unused assets — such as stale draft journeys, orphaned data sources, and persistent custom action errors — and surfaces recommended fixes, right from the chat. <!-- Documentation link: TBD -->
 
-* **Business Performance Analysis Coworker skill** - A new **Business Performance Analysis** skill in CX Coworker analyzes how your journeys are performing, explains areas of lower performance, and recommends concrete optimizations, like re-engagement waits, channel escalation, and Send Time Optimization. <a href="https://jira.corp.adobe.com/browse/DOCAC-15688" target="_blank">DOCAC-15688</a> <!-- Documentation link: TBD -->
+* **Business Performance Analysis Coworker skill** - A new **Business Performance Analysis** skill in CX Coworker analyzes how your journeys are performing, explains areas of lower performance, and recommends concrete optimizations, like re-engagement waits, channel escalation, and Send Time Optimization.  <!-- Documentation link: TBD -->
 
 * **Automatic event recovery timeout in Journey Properties** - Journey Properties now includes a **Set event recovery timeout** setting: by default, impacted journey events are automatically replayed for up to 72 hours after a service interruption with no action needed. You can turn this setting on to control the replay window (0–72 hours) for time-sensitive journeys. The existing **Timeout or error** field has also been renamed to **Custom Action / IDS Action timeout** to avoid confusion between the two settings. 
 
