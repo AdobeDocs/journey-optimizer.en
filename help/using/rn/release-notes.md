@@ -113,6 +113,12 @@ topic_v2:
 </tbody>
 </table>
 
+* **Decisioning in Journey simulation** - Path Experimentation, as part of the **Optimize** activity, is now supported in Simulation.
+
+  [Learn more](../building-journeys/simulate-journey-gs.md)
+
+  Availability date: September 15, 2026
+
 * **Decisioning in Journey simulation** - You can now simulate journeys that rely on Adobe Journey Optimizer decisioning, with the following newly supported:
 
   * Content Decision nodes are now supported in Simulation.
