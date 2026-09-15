@@ -35,7 +35,7 @@ Use this page as a quick router — scan for your goal and jump straight to the 
 
 Where an end-to-end tutorial isn't available for a specific scenario, the link takes you to the best current starting point to learn the capability and begin.
 
-AI is built into many of these capabilities — look for the **(AI)** tag in the tables below. The conversational [AI Assistant](ai-features.md#ai-assistant) can also answer product questions and surface operational insights about your journeys at any time. For the full set of intelligent features, see [AI & intelligent features](ai-features.md).
+AI is built into many of these capabilities — look for the **(AI)** tag in the tables below. The conversational [AI Assistant](ai-features.md#ai-assistant) can also answer product questions and surface operational insights about your journeys at any time. For the full set of intelligent features, see [Work with AI](ai-features.md).
 
 >[!TIP]
 >
@@ -243,6 +243,43 @@ Each starter flow below is a short, outcome-oriented set of steps: what you will
 1. Layer in [intelligent features](ai-features.md) to rank and optimize offers automatically.
 
 ➡️ [Get started with offer decisioning](../offers/get-started/starting-offer-decisioning.md)
+
+## Use case playbooks {#playbooks}
+
+Use Case Playbooks are pre-built workflows that help you implement common marketing scenarios quickly. Each playbook includes ready-to-use journeys, messages, schemas, and segments.
+
+![Use Case Playbooks interface](assets/playbooks-filter.png)
+
++++**How playbooks work**
+
+1. **Browse** the playbook library to find use cases matching your goals
+2. **Enable** a playbook to automatically generate all required resources
+3. **Customize** the generated assets to match your brand and requirements
+4. **Deploy** to production or test in a development sandbox
+
++++
+
++++**Available Playbooks**
+
+Browse Journey Optimizer playbooks for common scenarios like:
+
+* Abandoned cart recovery
+* Welcome series for new customers
+* Post-purchase engagement
+* Birthday messages
+* Re-engagement campaigns
+
++++
+
++++**Prerequisites**
+
+* Sandbox with appropriate permissions
+* Channel configurations for email, push, and/or SMS
+* User permissions to create journeys and messages
+
++++
+
+[View all available playbooks](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"} | [Learn more in Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html){target="_blank"}
 
 ## Example scenarios {#example-scenarios}
 

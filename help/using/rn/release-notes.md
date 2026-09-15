@@ -64,7 +64,7 @@ topic_v2:
 <tr>
 <td>
 <p>CX Coworker now has a new set of <strong>Content Management MCP tools</strong>, letting you discover and manage Journey Optimizer content assets through natural language prompts. Ask it to list or retrieve content templates, fragments, landing pages, and journey/campaign inline message content. It can also create content, update templates, and create, update, clone, and publish fragments — plus update inline channel action content directly in journey and campaign.</p>
-<p>For more information, refer to the <a href="../start/ajo-coworker-skills.md#content-management">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../start/content-management-coworker-skills.md#content-management">detailed documentation</a>.</p>
 <p>Availability date: September 3, 2026</p>
 </td>
 </tr>
@@ -134,7 +134,7 @@ topic_v2:
 
   Availability date: September 1, 2026
 
-* **Analyze Journey Anomalies skill** - CX Coworker can now detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts against historical baselines using the **Analyze Journey Anomalies** skill. Once a real anomaly is confirmed, the skill runs read-only diagnostics to surface a likely root cause and recommendation. [Learn more](../start/ajo-coworker-skills.md#journey-analyze)
+* **Analyze Journey Anomalies skill** - CX Coworker can now detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts against historical baselines using the **Analyze Journey Anomalies** skill. Once a real anomaly is confirmed, the skill runs read-only diagnostics to surface a likely root cause and recommendation. [Learn more](../start/journeys-coworker-skills.md#journey-analyze)
 
   Availability date: September 2, 2026
 
@@ -323,7 +323,7 @@ The following capabilities and improvements have been introduced to Orchestrated
 <tr>
 <td>
 <p>Journey Optimizer introduces <strong>Loyalty Insights</strong>, a new CX Coworker skill for asking questions about challenge performance and other loyalty program data ingested into the Loyalty field groups in Adobe Experience Platform.</p>
-<p>For more information, refer to the <a href="../start/ajo-coworker-skills.md#loyalty-skills">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../start/loyalty-coworker-skills.md">detailed documentation</a>.</p>
 <p>Availability date: August 31, 2026</p>
 </td>
 </tr>

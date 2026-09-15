@@ -162,5 +162,5 @@ For a full overview of how these roles work together, see [Roles and responsibil
 * [Find the right Journey Optimizer capability for your goal](ajo-use-case-guide.md) — Goal-first decision guide to every capability.
 * [Journey use cases library](../building-journeys/jo-use-cases.md) — Practical examples and implementation patterns.
 * [Key terminology](terminology.md) — Clarify the concepts behind each capability.
-* [AI & intelligent features](ai-features.md) — Explore AI Assistant, send-time optimization, and content generation.
+* [Work with AI](ai-features.md) — Explore AI Assistant, send-time optimization, and content generation.
 * [Get started with data management](../data/gs-data.md) — How data is ingested, unified, and activated.
