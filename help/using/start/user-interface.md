@@ -189,7 +189,7 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 * **Content templates** - Reusable message templates for campaigns and journeys. [Create templates](../content-management/content-templates.md)
 * **Fragments** - Content blocks that can be used across multiple messages. [Work with fragments](../content-management/fragments.md)
 * **Landing pages** - Web forms for subscriptions and preferences. [Design landing pages](../landing-pages/get-started-lp.md)
-* **Use Case Playbooks** - Pre-built workflows for common marketing scenarios. [Explore playbooks](ai-features.md#playbooks)
+* **Use Case Playbooks** - Pre-built workflows for common marketing scenarios. [Explore playbooks](ajo-use-case-guide.md#playbooks)
 
 **Data Management** - Manage your data foundation. [Learn about schemas and datasets](../data/get-started-schemas.md)
 
@@ -398,5 +398,14 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_admin_sms_webhook_relay_url"
 >title="Relay destination URL"
 >abstract="The HTTPS endpoint Journey Optimizer calls to relay each incoming message. Journey Optimizer sends a separate HTTP POST here per message received. This is distinct from the Auth URL under Custom Authentication, which is used only to obtain an access token, not to receive messages."
+
+<!--DOCAC-15698 Implement contextual help for Inbound Activity Deactivation activity-->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_inbound_activity_deactivation"
+>title="Inbound Activity Deactivation activity"
+>abstract="Removes a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit."
+
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-user-interface.md}}
