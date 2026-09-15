@@ -189,7 +189,7 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 * **Content templates** - Reusable message templates for campaigns and journeys. [Create templates](../content-management/content-templates.md)
 * **Fragments** - Content blocks that can be used across multiple messages. [Work with fragments](../content-management/fragments.md)
 * **Landing pages** - Web forms for subscriptions and preferences. [Design landing pages](../landing-pages/get-started-lp.md)
-* **Use Case Playbooks** - Pre-built workflows for common marketing scenarios. [Explore playbooks](ai-features.md#playbooks)
+* **Use Case Playbooks** - Pre-built workflows for common marketing scenarios. [Explore playbooks](ajo-use-case-guide.md#playbooks)
 
 **Data Management** - Manage your data foundation. [Learn about schemas and datasets](../data/get-started-schemas.md)
 
