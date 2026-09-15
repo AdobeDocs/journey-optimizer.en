@@ -248,6 +248,8 @@ If you use a [theme](apply-email-themes.md) with your email or template content,
 
 1. For the color variant you want to customize, turn on the **[!UICONTROL Dark mode]** toggle. A dedicated dark mode stylesheet is generated for that variant.
 
+    ![](assets/theme-dark-mode-toggle.png)
+
 1. Edit the dark mode stylesheet directly in the theme builder. These changes are saved separately from the light mode styles for that variant, so editing one no longer affects the other.
 
 1. Once your theme is applied to an email or template, use the dark mode preview toggle next to the **[!UICONTROL Desktop]** and **[!UICONTROL Mobile]** view options in the editor to switch to dark mode. Any styling edits you make in that view are saved back to the theme's dark mode stylesheet for the active variant.

@@ -133,6 +133,8 @@ To define a theme that you can leverage in your future email contents, follow th
 
    * Turn on the **[!UICONTROL Dark mode]** toggle for a variant to generate a dedicated dark mode stylesheet for that variant. Edit the dark mode styling separately from the light mode styles — changes made in one mode no longer affect the other. [Learn more](dark-mode.md#dark-mode-themes)
 
+      ![](assets/theme-dark-mode-toggle.png)
+
       >[!CAUTION]
       >
       >The dark mode preview relies on a CSS filter and is not pixel-perfect. Send a proof to verify the exact rendering in email clients that support custom dark mode. [Learn more](dark-mode.md#guardrails)
