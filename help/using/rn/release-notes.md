@@ -113,6 +113,12 @@ topic_v2:
 </tbody>
 </table>
 
+* **New Journey Anomaly Detected alert** - A new system alert now warns you when a live journey's daily traffic deviates from its own historical baseline, or drops to zero unexpectedly, across Journey Entries, Journey Exits, and Event Sends. This alert is currently available in production sandboxes only.
+
+  [Learn more](../reports/alerts.md)
+
+  Availability date: September 15, 2026
+
 * **Decisioning in Journey simulation** - Path Experimentation, as part of the **Optimize** activity, is now supported in Simulation.
 
   [Learn more](../building-journeys/simulate-journey-gs.md)
