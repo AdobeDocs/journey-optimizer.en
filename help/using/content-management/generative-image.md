@@ -8,7 +8,9 @@ topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 exl-id: f0585411-c862-45f2-9a10-d8a72497c533
-feature_v2: []
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
     internal-label: AI content generation

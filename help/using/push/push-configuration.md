@@ -14,6 +14,10 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
@@ -460,3 +464,5 @@ Your event is now created and can now be used in a journey.
 1. Click **[!UICONTROL Send]**.
 
 Your event will be triggered and you will receive your push notification to your mobile app.
+
+{{$include /help/_includes/do-not-localize/push/ai-augmented-push-configuration.md}}

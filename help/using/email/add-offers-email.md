@@ -129,3 +129,5 @@ Learn more about the detailed steps to check message preview in [this section](#
 Learn how to add a decision management component to messages in [!DNL Journey Optimizer].
 
 >[!VIDEO](https://video.tv.adobe.com/v/334088?quality=12)
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-add-offers-email.md}}

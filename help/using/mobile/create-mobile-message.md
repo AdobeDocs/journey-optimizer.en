@@ -142,3 +142,4 @@ For more information on how to create, configure and activate a campaign, refer 
 * [Configure Mobile message channel](mobile-configuration.md)
 * [Mobile message reports](../reports/journey-global-report-cja-sms.md)
 
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-create-mobile-message.md}}

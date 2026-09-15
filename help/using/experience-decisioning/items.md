@@ -9,7 +9,9 @@ exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
 version: Journey Orchestration
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decision capabilities
+    internal-label: Decisioning
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
     internal-label: Decisioning API
@@ -136,7 +138,7 @@ When you select audiences or decision rules, you can see information on the esti
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_capping_expression"
 >title="Expression"
->abstract="Rather that using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.<br/><br/>Capping rule **expressions** are currently available as a Limited Availability to all users. They are supported only for the **[!UICONTROL In total]** capping type."
+>abstract="Rather than using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.<br/><br/>Capping rule **expressions** are currently available as a Limited Availability to all users. They are supported only for the **[!UICONTROL In total]** capping type."
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_capping_scope"
@@ -197,7 +199,7 @@ To set capping rules for the decision item, follow the steps detailed below.
         >
         >**Specific placement** capping is only supported for the **Web** and **Email** channels. It is not available for Code-based experience, SMS, Push, or Direct mail channels.
     
-        Click **[!UICONTROL Select placements]** to pick which placements to cap. Other placements pass through uncapped. For example, if you select the Hero Banner placement with a cap of 3 impressions per day, the offer stops appearing in the Hero Banner after 3 impressions but remains eligible in all other placements.
+        Click **[!UICONTROL Select placement]** to pick which placement to cap. Other placements pass through uncapped. For example, if you select the Hero Banner placement with a cap of 3 impressions per day, the offer stops appearing in the Hero Banner after 3 impressions but remains eligible in all other placements.
 
         ![Specific placement capping scope selected, showing the Select placements button and selected placement tags](assets/item-capping-scope-specific.png){width="75%"}
 
@@ -223,7 +225,7 @@ To set capping rules for the decision item, follow the steps detailed below.
 
     +++Expression threshold
 
-    Rather that using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.
+    Rather than using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.
 
     For example, a marketer may decide to add a multiplier to adjust exposure. For instance, they could multiply the available inventory by two, allowing the offer to be shown to twice as many customers as units available. This approach anticipates that not all customers will convert, ensuring better reach without overselling.
     

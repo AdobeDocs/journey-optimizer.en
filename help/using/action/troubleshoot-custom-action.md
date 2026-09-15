@@ -14,8 +14,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
-    internal-label: Journey management
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
@@ -147,3 +145,4 @@ Browse the sections below to learn more about configuring and using your custom 
 * [Use custom actions](../building-journeys/using-custom-actions.md) - Learn how to use custom actions in your journeys
 * [Pass collections into custom action parameters](../building-journeys/collections.md) - Learn how to pass a collection in custom action parameters that is dynamically populated at runtime
 
+{{$include /help/_includes/do-not-localize/action/ai-augmented-troubleshoot-custom-action.md}}

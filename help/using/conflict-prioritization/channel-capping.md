@@ -14,10 +14,10 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
     internal-label: Conflict & prioritization
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
     internal-label: Rules set configuration
@@ -192,3 +192,5 @@ In this scenario, an individual profile:
 >[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)
 
 ➡️ **See it in practice:** Learn how to implement [daily frequency capping in Adobe Journey Optimizer](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/elevate-customer-experience-with-daily-frequency-capping-in-ajo/ba-p/761510){target="_blank"} in this community use case.
+
+{{$include /help/_includes/do-not-localize/conflict-prioritization/ai-augmented-channel-capping.md}}

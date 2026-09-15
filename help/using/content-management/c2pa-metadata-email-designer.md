@@ -7,6 +7,10 @@ feature: Content Management
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2: []
 ---
 
 # C2PA metadata in Email and Landing Page Designer {#c2pa-email-landing-page-designer}

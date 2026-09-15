@@ -29,15 +29,16 @@ nudge: yes
 + Get started {#get-started}
   + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
   + [Onboarding hub](using/start/onboarding-hub.md)
+  + [Work with AI](using/start/ai-features.md)
   + [Migrate content and journeys](using/start/migrate-content-and-journeys.md)
   + Essentials {#essentials}
     + [What is Journey Optimizer](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
-    + [AI & intelligent features](using/start/ai-features.md)
-    + [Journey Optimizer skills in CX Coworker](using/start/ajo-coworker-skills.md)
     + [Key terminology](using/start/terminology.md)
     + [Start from your goal](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
+    + [Journeys vs campaigns](using/start/journeys-vs-campaigns.md)
+    + {hide-from-toc} [Journeys vs Campaigns - 2](using/start/journeys-vs-campaigns-v2.md)
     + {hide-from-toc} [Packages and capabilities](using/start/ajo-packages.md)
     + {hide-from-toc} [Feature availability](using/start/ajo-features-availability.md)
   + Get started by role {#by-role}
@@ -49,15 +50,14 @@ nudge: yes
   + Work efficiently {#work-efficiently}
     + [Navigate the interface](using/start/user-interface.md)
     + [Search, filter & organize](using/start/search-filter-categorize.md)
-    + [Troubleshooting FAQ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/monitor/troubleshooting/troubleshooting)
     + [Accessibility](using/start/accessibility.md)
-    + [Journeys vs campaigns](using/start/journeys-vs-campaigns.md)
-    + {hide-from-toc} [Journeys vs Campaigns - 2](using/start/journeys-vs-campaigns-v2.md)
+    + [Troubleshooting FAQ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/monitor/troubleshooting/troubleshooting)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
   + {hide-from-toc} [Journey Get Started Guide](using/building-journeys/journey-get-started.md)
   + {hide-from-toc} [Journey types: choose the right one-2](using/building-journeys/journey-types-selection-v2.md)
   + [Journey Orchestration FAQ](using/building-journeys/journey-faq.md)
+  + [CX Coworker skills for journeys](using/start/journeys-coworker-skills.md)
   + Create a journey {#create-journey}
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
     + [Create your first journey](using/building-journeys/journey-gs.md)
@@ -144,6 +144,7 @@ nudge: yes
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Loyalty challenges {#loyalty-challenges}
   + [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
+  + [CX Coworker skills for loyalty](using/start/loyalty-coworker-skills.md)
   + Create and manage challenges {#create-manage-challenges}
     + [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
     + [Create challenges](using/loyalty-challenges/create-challenges.md)
@@ -470,6 +471,7 @@ nudge: yes
     + [Monitor custom channels](using/custom-channel/monitor-custom-channel.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
+  + [CX Coworker content management tools](using/start/content-management-coworker-skills.md)
   + Personalization {#personalization}
     + [Personalization](/help/rp_landing_pages/personalization-landing-page.md)
     + [Get started with personalization](using/personalization/personalize.md)

@@ -9,6 +9,12 @@ role: Admin, User
 level: Beginner, Intermediate
 keywords: journey optimizer, feature availability, what's available, GA, limited availability, beta, lifecycle, release date, entitlement, base offer, campaigns, journeys
 hide: true
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 ---
 
 # Journey Optimizer feature availability {#ajo-features-availability}
@@ -191,3 +197,5 @@ All Decisioning features require the **Decisioning** add-on. See [Packages and c
 - **Understand what's in your package** — [Packages and capabilities](ajo-packages.md)
 - **See everything that shipped** — [Release notes](../rn/release-notes.md) | [2026 release notes](../rn/release-notes-2026.md)
 - **Get started** — [Get started with Journey Optimizer](get-started.md)
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-ajo-features-availability.md}}

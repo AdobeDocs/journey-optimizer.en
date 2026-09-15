@@ -10,20 +10,50 @@ role: User
 level: Beginner, Intermediate
 exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 feature_v2:
-  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
-    internal-label: Release notes
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
-    internal-label: Product updates
-  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
-    internal-label: Pre-release notes
-  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
-    internal-label: Documentation updates
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Journey Optimizer release notes
 ---
 
 # Documentation updates {#latest-updates}
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
+
+## September 2026 {#september-2026}
+
+* The **Personalize your email background** page has been expanded and improved. It now documents the full **Image placement** dropdown for background images and adds new best practices for background colors and images, including a recommendation to test background images across real email clients rather than relying solely on the Email Designer preview. [Read more](../email/backgrounds.md)
+
+* The **Design content from scratch with the Email Designer** page has been reorganized and clarified: it distinguishes the **[!UICONTROL n:n column]** structure from the fixed-preset structures, documents that a structure's column count can be increased without losing existing content, explains column-stacking behavior on mobile, and adds a new step on using **[!UICONTROL Modules]** to quick-start email creation. [Read more](../email/content-from-scratch.md)
+
+* The **Design your journey** page now includes a full tutorial section on the new canvas experience, covering how to add activities, use the toolbar icons, select multiple activities for bulk actions, copy and paste activities, and join or detach branches. [Read more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
+
+* New guidance has been added for verifying custom action delivery: the **Dataset query examples** page now explains how to choose between the Message Feedback Event, Email Tracking, and Journey Step Event datasets depending on the action type, and documents how to resolve a "Table not provisioned for dataset" error. The **Journey step events overview** and **Troubleshoot your live journey execution** pages have been updated accordingly, clarifying that a successful custom action call only confirms that Journey Optimizer executed the action, not that the external system delivered a message. [Read more](../data/datasets-query-examples.md#choose-the-correct-dataset)
+
+* Information about CX Coworker has been added to the **Work with AI** page, covering what CX Coworker is, how it relates to AI Assistant, and references to the official Coworker documentation. Dedicated skills pages have also been added to each capability guide — [CX Coworker skills for journeys](../start/journeys-coworker-skills.md), [CX Coworker skills for loyalty](../start/loyalty-coworker-skills.md), and [CX Coworker content management tools](../start/content-management-coworker-skills.md). [Read more](../start/ai-features.md#cx-coworker)
+
+* A new **Analyze Journey Anomalies** skill has been documented under **Journey Analyze** in the CX Coworker page. It detects unexpected spikes, drops, or flatlines in a journey's entry, exit, or send counts against historical baselines, and runs read-only diagnostics to surface a likely root cause. [Read more](../start/journeys-coworker-skills.md#journey-analyze)
+
+* The **Guardrails and limitations** page has been corrected to reflect the fact that visual fragments over 100 KB or expression fragments over 200 KB can no longer cause truncation issues in email delivery: now a single 700 KB fragment size guardrail applies. [Read more](../start/guardrails.md#fragments-guardrails)
+
+* The **Create a Live activity** page has been corrected: the `executionMetadata` field is available only for **API-triggered Transactional** campaigns, not for API-triggered Marketing campaigns as previously stated. [Read more](../mobile-live/create-mobile-live.md#metadata)
+
+* The **AJO Message Feedback Event Dataset** documentation has been expanded to clarify that it covers message delivery feedback across all channels (Email, SMS/RCS/MMS, Direct Mail), not just email and push, and now includes a **Classify test and non-test executions** section explaining how to interpret the `isTestExecution` field, including `NULL` or missing values. [Read more](../data/datasets-query-examples.md#classify-test-executions)
+
+* A new **Content Management** capability has been documented for CX Coworker, powered by 15 read/write MCP tools that let you discover, create, update, clone, and publish content templates, fragments, landing pages, and journey/campaign inline message content using natural language prompts. [Read more](../start/content-management-coworker-skills.md#content-management)
+
+* The **Add content to your landing page** documentation now describes a **Make form field mandatory** option for consent checkboxes: when enabled, the form cannot be submitted unless the checkbox is selected, and the check is enforced both client-side and server-side. [Read more](../landing-pages/lp-content.md#use-form-component)
+
+* The **Get started with Journey Simulation** page has been updated to document that Content Decision nodes and the **Optimize** activity's Targeting rule method are now supported in Simulation (previously listed as blocking), with a new **Decisioning behavior** table detailing how offer eligibility, eligibility rules and audiences, and ranking methods are evaluated during a simulation run. [Read more](../building-journeys/simulate-journey-gs.md#limitations)
+
+* The **Convert images to email content templates** page has been corrected to remove an inaccurate permissions requirement: the **Manage content templates** permission is not required to access and create templates with the image to HTML converter — only the **Generate Content** permission is needed. [Read more](../content-management/image-to-html.md#access-image-to-html)
+
+* The **External systems (custom actions)** page has been corrected: the circuit breaker for slow custom action endpoints now activates when more than 20% of calls in a 120-second window exceed **5 seconds** (previously documented as 10 seconds). [Read more](../configuration/external-systems.md#response-time)
+
+* The **Configure your Channel configuration** page now includes a note clarifying that the schema used for secondary dimension must have a primary key, and that composite primary keys are not supported. [Read more](../orchestrated/channel-config.md)
+
+* The **Loyalty data and datasets** and **Get started with sources** pages have been updated to include LAVA as a supported loyalty and rewards connector, alongside Talon.One, Capillary, and Kobie. [Read more](../loyalty-challenges/loyalty-data-and-datasets.md)
 
 ## August 2026 {#august-2026}
 
@@ -65,7 +95,9 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Decisioning Migration API** documentation has been updated with a clarification that the target sandbox **can be the same as the source sandbox**. The migration process handles this scenario and ensures data integrity regardless of whether objects are migrated within the same sandbox or to a different one. [Read more](../experience-decisioning/decisioning-migration-api.md#target-sandbox-preparation)
 
-* A new **CX Coworker Skills** page is now available. It provides comprehensive documentation of all Journey Skills available in Journey Optimizer, including Journey Create, Channel Content Create, Loyalty Challenge Management, and Journey Analyze, with use cases, sample prompts, and best practices for each skill. [Read more](../start/ajo-coworker-skills.md)
+* The **Decisioning Migration API** documentation has been enhanced with comprehensive guidance on migrating Decision management objects to Decisioning. New sections include: entity mapping reference with 10 naming conventions, in-scope vs. out-of-scope coverage, detailed request/response model comparisons, three implementation patterns (client-side, server-side, hybrid) with cookie handling, event tracking requirements with 5 event JSON examples, cross-sandbox migration prerequisites, an end-to-end 5-step migration process, and migration FAQs. [Read more](../experience-decisioning/decisioning-migration-api.md)
+
+* A new **CX Coworker Skills** page is now available. It provides comprehensive documentation of all Journey Skills available in Journey Optimizer, including Journey Create, Channel Content Create, Loyalty Challenge Management, and Journey Analyze, with use cases, sample prompts, and best practices for each skill. [Read more](../start/ai-features.md#cx-coworker)
 
 * The **To Precision** function documentation has been updated to clarify that `toPrecision` behaves like JavaScript `toFixed()`: it returns a string with a fixed number of decimal places, including zero-padding when needed. [Read more](../personalization/functions/math.md#to-precision)
 

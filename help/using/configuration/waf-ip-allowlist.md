@@ -7,7 +7,10 @@ feature: Channel Configuration, Deliverability
 role: Admin
 level: Experienced
 keywords: waf, firewall, ip, subdomain, security, traffic, inbound
-
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2: []
 ---
 # Manage allowed IPs {#waf-ip-allowlist}
 

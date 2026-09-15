@@ -7,6 +7,12 @@ feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2:
+  - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
+    internal-label: AI content generation
 ---
 # C2PA metadata in Generate content {#generative-content-credentials}
 

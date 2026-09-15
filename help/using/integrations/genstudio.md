@@ -250,3 +250,5 @@ Yes, GenStudio is designed for collaboration. Multiple team members with appropr
 Discover the process of exporting an email template from Journey Optimizer to GenStudio for Performance Marketing, crafting brand-compliant emails using the template in GenStudio, and importing them seamlessly back into Journey Optimizer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3456038/?quality=12)
+
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-genstudio.md}}
