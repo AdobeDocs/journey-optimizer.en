@@ -75,6 +75,16 @@ topic_v2:
 
   Availability date: September 4, 2026 
 
+* **Additional reserved keywords in personalization syntax** - The list of reserved keywords in Profile Query Language (PQL) has been expanded to include general keywords, time units, and boolean/logical operators. If your XDM schema contains a field name that matches one of these keywords, wrap it in backticks to reference it in a personalization expression. [Learn more](../personalization/personalization-syntax.md#reserved-keywords)
+
+  Availability date: September 1, 2026
+
+### Loyalty {#sep-26-loyalty}
+
+* **"Forever" Loyalty challenges** - Loyalty challenges can now run indefinitely. Set **Challenge end** to **No end date** when configuring the schedule, and the challenge never expires. [Learn more](../loyalty-challenges/create-challenges.md#schedule)
+
+  Availability date: September 1, 2026
+
 ### Journeys {#sep-26-journeys}
 
 <table>
@@ -171,6 +181,12 @@ topic_v2:
 * **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
 
 +++
+
+### Usability improvements {#sep-26-usability}
+
+* **Easier detach and join branches in the new journey canvas** - You can now detach a branch from the rest of your journey without deleting it, and join it back later at a different point, either by selecting an eligible activity directly on the canvas or by picking it from a list of disconnected or already-used branches. [Learn more](../building-journeys/using-the-journey-designer.md#join-and-detach-branches)
+
+  Availability date: September 1, 2026
 
 ## August '26 release notes {#aug-26-updates}
 

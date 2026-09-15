@@ -144,6 +144,7 @@ nudge: yes
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Loyalty challenges {#loyalty-challenges}
   + [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
+  + [Interactive demo](using/loyalty-challenges/loyalty-challenges-demo.md)
   + [CX Coworker skills for loyalty](using/start/loyalty-coworker-skills.md)
   + Create and manage challenges {#create-manage-challenges}
     + [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
@@ -264,6 +265,7 @@ nudge: yes
     + [Preview using test profiles](using/content-management/preview.md)
     + [Send proofs using test profile data](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
+    + {hide-from-toc} [Simulate inbound experiences](using/test-approve/simulate-inbound-experiences.md)
     + [Simulate content variations (classic experience)](using/test-approve/simulate-sample-input.md)
     + [Simulate content variations (new experience)](using/test-approve/simulate-content-variations.md)
     + [Email Spam report](using/content-management/spam-report.md)
