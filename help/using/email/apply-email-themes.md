@@ -131,17 +131,27 @@ To define a theme that you can leverage in your future email contents, follow th
    
       ![](assets/theme-colors-edit-variant.gif)
 
-   * Turn on the **[!UICONTROL Enable dark mode]** toggle to make the dark mode view available for all the theme's color variants, through the toggle on the top right of the central canvas.
+1. Optionnally, turn on the **[!UICONTROL Enable dark mode]** option to make the dark mode view available for all the theme's color variants, through the toggle on the top right of the central canvas. [Learn more on dark mode](dark-mode.md)
 
-      ![](assets/theme-dark-mode-toggle.png)
+   ![](assets/theme-dark-mode-toggle.png)
 
-      Once in dark mode view, you can edit each variant's dark mode styling separately from its light mode styles — changes made in one mode do not affect the other. [Learn more](dark-mode.md#dark-mode-themes)
+   Use that toggle to switch to dark mode view. The color palette automatically changes to a default dark version for each variant.
 
-      ![](assets/theme-dark-mode-view.png)
+   ![](assets/theme-dark-mode-view.png)
 
-      >[!CAUTION]
-      >
-      >The dark mode preview relies on a CSS filter and is approximate. Send a proof to verify the exact rendering in email clients that support custom dark mode. [Learn more](dark-mode.md#guardrails)
+   You can further customize each dark mode variant, using either a different color palette or custom colors.
+      
+   ![](assets/theme-dark-mode-support.gif)
+
+   >[!CAUTION]
+   >
+   >The dark mode preview is a simulation and may not exactly match the final result. Send a proof to verify the exact rendering in email clients that support custom dark mode. [Learn more](dark-mode.md#guardrails)
+
+   Dark mode versions are saved independently — changes made in dark mode do not affect the light mode, and vice versa. For example, you can set a different background color or text color for dark mode without altering the light mode settings.
+
+   >[!NOTE]
+   >
+   >To delete a color variant, you must be in light mode. Deleting a variant is not possible while in dark mode view.
 
 1. In the **[!UICONTROL Text settings]**, you can set the global font that you want to use for your entire theme. For a more granular control, you also can edit each heading and paragraph type to adjust the font, size, style, and so on.
 
