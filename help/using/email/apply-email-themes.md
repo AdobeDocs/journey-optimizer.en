@@ -131,13 +131,17 @@ To define a theme that you can leverage in your future email contents, follow th
    
       ![](assets/theme-colors-edit-variant.gif)
 
-   * Turn on the **[!UICONTROL Dark mode]** toggle for a variant to generate a dedicated dark mode stylesheet for that variant. Edit the dark mode styling separately from the light mode styles — changes made in one mode no longer affect the other. [Learn more](dark-mode.md#dark-mode-themes)
+   * Turn on the **[!UICONTROL Enable dark mode]** toggle to make the dark mode view available for all the theme's color variants, through the toggle on the top right of the central canvas.
 
       ![](assets/theme-dark-mode-toggle.png)
 
+      Once in dark mode view, you can edit each variant's dark mode styling separately from its light mode styles — changes made in one mode do not affect the other. [Learn more](dark-mode.md#dark-mode-themes)
+
+      ![](assets/theme-dark-mode-view.png)
+
       >[!CAUTION]
       >
-      >The dark mode preview relies on a CSS filter and is not pixel-perfect. Send a proof to verify the exact rendering in email clients that support custom dark mode. [Learn more](dark-mode.md#guardrails)
+      >The dark mode preview relies on a CSS filter and is approximate. Send a proof to verify the exact rendering in email clients that support custom dark mode. [Learn more](dark-mode.md#guardrails)
 
 1. In the **[!UICONTROL Text settings]**, you can set the global font that you want to use for your entire theme. For a more granular control, you also can edit each heading and paragraph type to adjust the font, size, style, and so on.
 
