@@ -29,6 +29,23 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 **Release date**: September 22-23, 2026
 
+>[!BEGINSHADEBOX]
+
+**New in CX Coworker this month**
+
+This release brings several new and improved [CX Coworker](../start/ai-features.md#cx-coworker) features and skills, listed here for visibility. Each one is also detailed in its relevant section below.
+
+* [Message-copy and email-design plugins](#sep-26-content-management) - Two new plugins that streamline messaging and email workflows in CX Coworker, from campaign brief to production-ready copy and HTML.
+* [Loyalty recommendation skill](#sep-26-loyalty) - Request challenge opportunities directly in CX Coworker's conversational interface and turn them into live challenges without leaving the chat.
+* [Journey Simulation (MCP & Chat)](#sep-26-journeys) - Automate end-to-end journey validation and interpret the results directly in CX Coworker.
+* [Journey creation from the CX Coworker rail](#sep-26-journeys) - Generate journeys with AI directly from the CX Coworker right rail, replacing the previous AI Assistant experience.
+* [Compare journey versions](#sep-26-journeys) - Get a full-fidelity, structured diff between any two versions of a journey through CX Coworker Chat.
+* [Hygiene Analysis skill](#sep-26-journeys) - Scan active and draft journeys for broken configurations, silent failures, and decaying or unused assets, with recommended fixes.
+* [Business Performance Analysis skill](#sep-26-journeys) - Analyze journey performance and get concrete optimization recommendations, right from the chat.
+* [Decisioning rule generation](#sep-26-decisioning) - Build AI-assisted decisioning rules directly in CX Coworker, which now replaces the right rail for this experience.
+
+>[!ENDSHADEBOX]
+
 ### Content Management {#sep-26-content-management}
 
 The following capability is coming to content management in this release.
@@ -206,7 +223,8 @@ The following capabilities and improvements are coming to journeys in this relea
 
 * **Compare journey versions with CX Coworker** - Today, reviewing what changed between two versions of a journey requires manually comparing them inside Journey Optimizer node by node - there's no structured diff, which makes change-review, audit, and pre-publish checks slow and error-prone, especially as journeys grow more complex. This capability lets a customer or AI agent compare any two versions of a journey through CX Coworker Chat and get back a full-fidelity, **structured diff** - added/removed/modified/moved nodes with field-level detail, changed connections, journey-level property changes, and roll-up counts - without opening Journey Optimizer. 
 
-* **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity. <!-- DRAFT: pending DOCAC sub-task under DOCAC-15691, see CJM-165835 --> <!-- Documentation link: TBD -->
+* **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity. <!-- DRAFT: pending DOCAC sub-task under DOCAC-15691, see CJM-165835 -->
+<!-- Documentation link: TBD -->
 
 * **Dry run step-event suppression for custom reports** - As part of step-event optimization, Journey Optimizer now stops generating certain non-reportable step events during Journey Dry Runs. This only affects custom reports built on these dry-run step-event types. If you're impacted, re-trigger the dry run to regenerate data.
 
