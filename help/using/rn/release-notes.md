@@ -182,6 +182,12 @@ topic_v2:
 
 +++
 
+### Usability improvements {#sep-26-usability}
+
+* **Easier detach and join branches in the new journey canvas** - You can now detach a branch from the rest of your journey without deleting it, and join it back later at a different point, either by selecting an eligible activity directly on the canvas or by picking it from a list of disconnected or already-used branches. [Learn more](../building-journeys/using-the-journey-designer.md#join-and-detach-branches)
+
+  Availability date: September 1, 2026
+
 ## August '26 release notes {#aug-26-updates}
 
 ### Content Management
