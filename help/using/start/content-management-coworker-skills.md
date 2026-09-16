@@ -118,19 +118,19 @@ The following functionalities are currently not supported:
 1. **Confirm before publishing**: Review a fragment's content after creating or updating it before asking Coworker to publish it.
 1. **Provide complete replacement content**: Update operations replace content in full, so include the complete HTML body or variant content in your prompt.
 
-## Message Copy skill {#message-copy}
+## Message Copy {#message-copy}
 
 >[!AVAILABILITY]
 >
 >Message Copy is available for all customers who have access to CX Coworker. Generating images with a custom, brand-trained model requires production access to Firefly Services.
 
-Message Copy takes a campaign or creative brief and turns it into a multi-dimensional content plan — spanning channels, touchpoints, locales, audiences, and variants — then generates the net-new copy and images to fill it. Generated content can be evaluated against brand and channel standards, edited in place, and saved back to the active solution (Adobe Journey Optimizer, Adobe Campaign v8, or Marketo).
+Message Copy takes a campaign or creative brief and turns it into a multi-dimensional content plan, spanning channels, touchpoints, locales, audiences, and variants, then generates the net-new copy and images to fill it. Generated content can be evaluated against brand and channel standards, edited in place, and saved back to the active solution (Adobe Journey Optimizer, Adobe Campaign v8, or Marketo).
 
 ### Key use cases
 
 1. **Campaign and content strategy planning**
 
-   * Capture the campaign strategy — objective, KPIs, audience strategy, channels, recurrence, and scheduling.
+   * Capture the campaign strategy: objective, KPIs, audience strategy, channels, recurrence, and scheduling.
    * Brainstorm message maps, narrative arcs, and channel roles, and compare content strategy options before copy is written.
    * Structure the copy execution spec and build a multi-dimensional content plan matrix (channels × touchpoints × locales × audiences × variants).
 
@@ -145,7 +145,7 @@ Message Copy takes a campaign or creative brief and turns it into a multi-dimens
 1. **Copy evaluation, editing, and visual QA**
 
    * Assess and score existing copy against brand and channel standards at any point in its lifecycle.
-   * Make in-place edits to existing copy — applying evaluation fixes, rephrasing, translating, or reacting to the latest preview.
+   * Make in-place edits to existing copy, applying evaluation fixes, rephrasing, translating, or reacting to the latest preview.
    * Render copy HTML to a screenshot for visual inspection of hierarchy, spacing, hero dominance, and CTA placement.
 
 1. **Multi-dimensional content expansion**
@@ -156,33 +156,20 @@ Message Copy takes a campaign or creative brief and turns it into a multi-dimens
 
    * Save accepted copy back to the active solution as an asset, a draft, or directly into the source template.
 
-### In scope skills
+### Available skills
 
-The following capabilities are supported by Message Copy:
+The following capabilities are supported by **Message Copy**:
 
-* **Campaign and creative brief capture**: Captures campaign strategy and structures it into a copy execution spec.
-* **Content strategy planning**: Brainstorms message maps, narrative arcs, and channel roles ahead of copy generation.
-* **Content plan matrix**: Builds a multi-dimensional plan across channels, touchpoints, locales, audiences, and variants.
-* **Net-new copy generation**: Generates on-brand copy for email, SMS, push, WhatsApp, social, and banner.
-* **Image generation**: Generates, crops, overlays, varies, and signs campaign images using Firefly.
-* **Copy evaluation**: Scores existing copy against brand and channel standards.
-* **In-place editing**: Applies fixes, rephrasing, translation, and directed revisions to existing copy.
-* **Campaign expansion**: Fans an approved content plan out into per-unit copy across all defined dimensions.
-* **Visual QA**: Renders copy HTML to a screenshot for visual inspection.
-* **Save-back**: Saves approved content back to Adobe Journey Optimizer, Adobe Campaign v8, or Marketo.
-
-### Out of scope skills
-
-The following functionalities are currently not supported:
-
-* **Automatic sub-field variant explosion**: Content plan cells are treated as whole copies — combinatorial sub-field variants, such as heading × subheading × CTA, are not auto-generated.
-* **Selectable creative-direction options**: Content strategy options are presented as conversational text rather than selectable option cards.
-* **Automatic character-limit trimming**: Channel character limits are carried into the brief but copy is not automatically trimmed to fit.
-* **Firefly model catalog and selection**: There is no curated list of Firefly models to browse or validate against.
-* **Aspect-ratio-driven generation**: Aspect ratio currently affects image cropping only, not the generation itself, and there are no named size presets.
-* **Hero image reuse and advanced image editing**: Reusing a hero image and edit operations such as inpainting, background removal, and upscaling are planned but not yet available.
-* **Engagement and predictive scoring**: Copy evaluation currently covers quality and compliance scoring only.
-* **Journey-entry-point brief capture**: Capturing campaign strategy directly from the journey creation entry point is not yet supported.
+* **`capture-marketing-brief`**: Captures campaign strategy and seeds the creative brief.
+* **`capture-creative-brief`**: Structures the copy execution spec and builds the content plan matrix.
+* **`plan-content-strategy`**: Brainstorms message maps, narrative arcs, and channel roles ahead of copy generation.
+* **`generate-copy`**: Generates net-new, on-brand copy for email, SMS, push, WhatsApp, social, and banner.
+* **`generate-image`**: Generates, crops, overlays, varies, and signs campaign images using Firefly.
+* **`evaluate-copy`**: Assesses and scores existing copy against brand and channel standards.
+* **`edit-copy`**: Makes in-place edits to existing copy — evaluation fixes, rephrasing, translation, and directed revisions.
+* **`expand-campaign`**: Fans an approved content plan matrix out into per-unit copy across channels, locales, audiences, and variants.
+* **`analyze-visual-html`**: Renders copy HTML to a screenshot for visual inspection.
+* **`save-content`**: Saves approved content back to Adobe Journey Optimizer, Adobe Campaign v8, or Marketo.
 
 ### Prompting best practices
 
@@ -192,7 +179,7 @@ The following functionalities are currently not supported:
 1. **State character limits**: Provide channel character limits explicitly, and review generated copy to confirm it fits before publishing.
 1. **Review before saving**: Evaluate and edit generated copy before asking Coworker to save it back to Adobe Journey Optimizer, Adobe Campaign v8, or Marketo.
 
-## Email Design skill {#email-design}
+## Email Design {#email-design}
 
 >[!AVAILABILITY]
 >
@@ -224,28 +211,17 @@ Email Design turns a brief, a reference image or screenshot, or a Figma frame or
 
    * Export and package an approved email for sending, and deliver it to Adobe Journey Optimizer or Adobe Campaign.
 
-### In scope skills
+### Available skills
 
 The following capabilities are supported by Email Design:
 
-* **Layout planning**: Plans block structure and styling from a marketing objective and brand inputs.
-* **HTML build and edit**: Builds, adapts, edits, and refines email HTML from a layout plan, a screenshot, or a Figma design link.
-* **Design system management**: Maintains a brand's reusable email design system — tokens, layout patterns, and brand language.
-* **Compliance review**: Audits an assembled email against brand and channel guidelines and deliverability standards.
-* **Design review**: Provides subjective design feedback on hierarchy, spacing, narrative flow, and brand fit.
-* **Accessibility review**: Runs a WCAG 2.1 AA accessibility audit.
-* **Handoff**: Exports and delivers approved HTML to Adobe Journey Optimizer or Adobe Campaign.
-
-### Out of scope skills
-
-The following functionalities are currently not supported:
-
-* **Template switching**: Rebuilding an approved email onto a different template is planned but not yet available.
-* **Per-slot content fitting**: A content-fit engine that manages per-slot character limits is planned but not yet available.
-* **Figma-comment round-trip**: Using Figma comments as edit intent is planned but not yet available.
-* **Template library and auto-match**: A reusable template library with automatic matching is planned but not yet available.
-* **Lookalike and net-new template generation**: Generating templates trained from provided HTML samples is planned but not yet available.
-* **Automatic accessibility fixes**: The accessibility review is report-only and does not apply fixes automatically.
+* **`compose-email`**: Plans block structure and styling from a marketing objective and brand inputs.
+* **`build-email`**: Builds, adapts, edits, and refines email HTML from a layout plan, a screenshot, or a Figma design link.
+* **`maintain-design-system`**: Maintains a brand's reusable email design system — tokens, layout patterns, and brand language.
+* **`review-compliance`**: Audits an assembled email against brand and channel guidelines and deliverability standards.
+* **`review-design`**: Provides subjective design feedback on hierarchy, spacing, narrative flow, and brand fit.
+* **`review-accessibility`**: Runs a WCAG 2.1 AA accessibility audit.
+* **`handoff-email`**: Exports and delivers approved HTML to Adobe Journey Optimizer or Adobe Campaign.
 
 ### Prompting best practices
 
