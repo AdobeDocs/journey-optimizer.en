@@ -54,7 +54,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
     Navigate to the **[!UICONTROL Actions]** tab, click the **[!UICONTROL Add action]** button and select the communication channel. 
 
-    ![](assets/create-campaign-add-action.png)
+    ![Add action menu in the Actions tab showing available communication channels](assets/create-campaign-add-action.png)
 
     >[!NOTE]
     >
@@ -70,7 +70,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
     A configuration is defined by a [System Administrator](../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn how to set up channel configurations](../configuration/channel-surfaces.md)
     
-    ![](assets/create-campaign-action.png)
+    ![Action configuration panel with channel configuration selection](assets/create-campaign-action.png)
 
 1. **Leverage Optimization**
 
@@ -90,6 +90,26 @@ Additional settings are available depending on the selected communication channe
 +++**Apply capping rules** (Email, Direct mail, Push, SMS)
 
 In the **[!UICONTROL Business rules]** drop-down list, select a rule set to apply capping rules to your campaign. Leveraging channel rule sets allows you to set frequency capping by communication type to prevent overloading customers with similar messages. [Learn how to work with rule sets](../conflict-prioritization/rule-sets.md)
+
++++
+
++++**Override email channel configuration** (Email)
+
+When building your campaigns, you can override the email parameters derived from the selected channel configuration directly at the campaign action level.
+
+After selecting a channel configuration, enable **[!UICONTROL Override email channel configuration]**.
+
+![Email action with Override email channel configuration toggle enabled](assets/create-campaign-action-override.png)
+
+This enables you to personalize the email header fields (**[!UICONTROL From name]**, **[!UICONTROL From email prefix]**, **[!UICONTROL Reply to name]**, and **[!UICONTROL Reply to email]**), the execution address, and the list-unsubscribe values, using profile attributes, contextual data, or helper functions for more precise control.
+
+![Email header override fields including From and Reply-to parameters](assets/create-campaign-action-override-header.png)
+
+![Execution address and list unsubscribe override fields in the email action](assets/create-campaign-action-override-list.png)
+
+This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.
+
+Each override field displays the configured value. Leave a field empty to keep that configured value for this action.
 
 +++
 
@@ -150,7 +170,7 @@ To define several inbound actions in a campaign, follow the steps below.
 
 1. Use the **[!UICONTROL Add action]** button to select another inbound action from the drop-down list.
 
-    ![](assets/create-campaign-multi-action.png){width="80%"}
+    ![Campaign Actions tab showing multiple inbound actions configured](assets/create-campaign-multi-action.png){width="80%"}
 
 1. Proceed similarly to add more actions. You can add up to 10 inbound actions in a campaign.
 
