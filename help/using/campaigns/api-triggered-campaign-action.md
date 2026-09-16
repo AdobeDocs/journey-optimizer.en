@@ -85,6 +85,40 @@ In the **[!UICONTROL Business rules]** drop-down list, select a rule set to appl
 
 +++
 
++++**Override email channel configuration** (Email)
+
+When building your campaigns, you can override some of the email parameters derived from the selected [channel configuration](../email/email-settings.md) directly at the campaign action level.
+
+This enables you to change only specific fields of the configuration without creating a new channel configuration, allowing for targeted adjustments while maintaining the overall setup.
+
+For more precise control, you can also personalize these override fields using contextual data in addition to profile attributes and helper functions, which is not the case in the channel configuration. [Learn how to use the personalization editor](../personalization/personalization-build-expressions.md)
+
+After selecting a channel configuration, enable the **[!UICONTROL Override email channel configuration]** option.
+
+![Email action with Override email channel configuration toggle enabled](assets/create-campaign-action-override.png)
+
+You can override the following fields:
+
+* The email header fields - **[!UICONTROL From name]**, **[!UICONTROL From email prefix]**, **[!UICONTROL Reply to name]**, and **[!UICONTROL Reply to email]**. Overriding these fields allows sender details to reflect information such as the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. Learn more on [email header parameters](../email/header-parameters.md)
+
+  ![Email header override fields including From and Reply-to parameters](assets/create-campaign-action-override-header.png){width=80%}
+
+  For example, you may want to override the name and email address of the sender to match the details of the specific relationship manager handling the recipient's account.
+
+* The execution address - **[!UICONTROL Delivery address]** field. When several email addresses are available for a given profile, [!DNL Journey Optimizer] uses the execution field which is set in the [general settings](../configuration/primary-email-addresses.md) or in the [channel configuration](../email/email-settings.md#execution-address) to determine which email address to use from the profile service in priority. In some cases, you may want to override the delivery address set globally and define here a different value at the campaign action level.
+
+* The list-unsubscribe values - **[!UICONTROL Mailto (unsubscribe)]** and **[!UICONTROL One-click unsubscribe URL]**. The one-click [List unsubscribe](../email/list-unsubscribe.md) URL is an unsubscribe link or button displayed next to the email sender information, and lets recipients instantly opt out of your mailing lists with a single click. Here you can replace the unsubscribe address and one-click unsubscribe URL set at the channel configuration level.
+
+  ![Execution address and list unsubscribe override fields in the email action](assets/create-campaign-action-override-list.png){width=80%}
+
+The configured value displays under each field. To keep the configured value for a setting, leave that field empty.
+
+>[!NOTE]
+>
+>For API-triggered campaigns, contextual attributes used in override fields are not available for selection in the personalization editor. Enter them manually using the exact payload path (for example: `{{context.a.b}}` or `{{context.RM.name}}`). The expression must match the structure sent in the API payload.
+
++++
+
 +++**Track engagement** (Email, SMS).
 
 Use the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or SMS deliveries. Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../reports/campaign-global-report-cja.md)

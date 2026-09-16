@@ -75,6 +75,10 @@ Note that, for now, no contextual attribute is available for use in the left rai
 
 ![](assets/api-triggered-context.png)
 
+>[!NOTE]
+>
+>In API-triggered campaigns, contextual attributes are resolved from the runtime API payload. Because these attributes are entered manually, the attribute path in your expression must match the payload structure exactly, including nesting and key names. For example, if the payload contains `context.RM.name` and `context.RM.emailPrefix`, use the same dot notation in your expression.
+
 **Must read**
 
 * The contextual attributes passed into the request cannot exceed 200kb and are always considered of type string.
