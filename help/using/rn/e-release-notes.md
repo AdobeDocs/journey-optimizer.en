@@ -288,7 +288,8 @@ The following capabilities and improvements are coming to channels in this relea
 <tr>
 <td>
 <p>When building your journeys and campaigns, you can now override the email parameters derived from the selected channel configuration directly at the journey or campaign action level.</p>
-<p>This lets you personalize the email header fields (<strong>From name</strong>, <strong>From email prefix</strong>, <strong>Reply to name</strong>, and <strong>Reply to email</strong>), the execution address, and the list-unsubscribe values, using profile attributes or contextual data for more precise control. In particular, this allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.</p>
+<p>This lets you customize the email header fields (<strong>From name</strong>, <strong>From email prefix</strong>, <strong>Reply to name</strong>, and <strong>Reply to email</strong>), the execution address, and the list-unsubscribe values for specific campaign/journey needs without altering the global channel configuration.
+<p>Moreover, for more precise control, you can personalize these override fields using contextual data in addition to profile attributes and helper functions, which is not the case in the channel configuration. This allows sender details to reflect information such as the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.</p>
 </td>
 </tr>
 </tbody>
