@@ -85,6 +85,10 @@ topic_v2:
 
   Availability date: September 1, 2026
 
+* **Loyalty available for Healthcare Shield and Privacy and Security Shield customers** - Journey Optimizer Loyalty is now available to Healthcare Shield and Privacy and Security Shield customers. [Learn more](../loyalty-challenges/get-started.md)
+
+  Availability date: September 15, 2026
+
 ### Journeys {#sep-26-journeys}
 
 <table>
@@ -123,19 +127,19 @@ topic_v2:
 </tbody>
 </table>
 
+* **Decisioning in Journey simulation** - Path Experimentation, as part of the **Optimize** activity, is now supported in Simulation. Routing is handled by Decisioning and is random and non-deterministic per simulated user.
+
+  [Learn more](../building-journeys/simulate-journey-gs.md)
+
+  Availability date: September 15, 2026
+
 * **New Journey Anomaly Detected alert** - A new system alert now warns you when a live journey's daily traffic deviates from its own historical baseline, or drops to zero unexpectedly, across Journey Entries, Journey Exits, and Event Sends. This alert is currently available in production sandboxes only.
 
   [Learn more](../reports/alerts.md)
 
   Availability date: September 15, 2026
 
-* **Decisioning in Journey simulation** - Path Experimentation, as part of the **Optimize** activity, is now supported in Simulation.
-
-  [Learn more](../building-journeys/simulate-journey-gs.md)
-
-  Availability date: September 15, 2026
-
-* **Decisioning in Journey simulation** - You can now simulate journeys that rely on Adobe Journey Optimizer decisioning, with the following newly supported:
+* **Decisioning in Journey simulation** - You can now simulate journeys that rely on Decisioning, with the following newly supported:
 
   * Content Decision nodes are now supported in Simulation.
   * The Optimize activity's Targeting rule method is now supported in Simulation.
