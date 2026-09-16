@@ -113,7 +113,7 @@ topic_v2:
 </tbody>
 </table>
 
-* **Decisioning in Journey simulation** - Path Experimentation, as part of the **Optimize** activity, is now supported in Simulation.
+* **Decisioning in Journey simulation** - Path Experimentation, as part of the **Optimize** activity, is now supported in Simulation. Routing is handled by Journey Optimizer Decisioning and is random and non-deterministic per simulated user.
 
   [Learn more](../building-journeys/simulate-journey-gs.md)
 
