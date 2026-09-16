@@ -406,13 +406,14 @@ The following capabilities and improvements are coming to the Email Designer in 
 <table>
 <thead>
 <tr>
-<th><strong>Independent dark mode styling for email theme variants</strong><br/></th>
+<th><strong>Dark mode support for email theme variants</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Email themes now support independent styling for dark mode. In the theme builder, you can turn on dark mode for a given variant to generate a dedicated dark mode stylesheet that you edit separately from the light mode styles — changes made in one mode no longer overwrite the other. In the email and template editor, a new preview toggle next to the desktop and mobile view options lets you preview your content in dark mode.</p>
+<p>Email themes now support dark mode, so each color variant can render with a look tailored to recipients viewing your email in a dark mode-enabled client.</p>
+<p>When enabled, a default dark palette is generated automatically for every variant, and you can further customize it with a different palette or your own custom colors — independently from the light mode design, so changes made in one mode do not affect the other.</p>
 </td>
 </tr>
 </tbody>
