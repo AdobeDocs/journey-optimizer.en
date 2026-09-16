@@ -37,7 +37,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
 * [Message-copy and email-design plugins](#sep-26-content-management) - Two new plugins that streamline messaging and email workflows in Coworker, from campaign brief to production-ready copy and HTML.
 * [Loyalty recommendation skill](#sep-26-loyalty) - Request challenge opportunities directly in Coworker's conversational interface and turn them into live challenges without leaving the chat.
-* [Journey Simulation (MCP & Chat)](#sep-26-journeys) - Automate end-to-end journey validation and interpret the results directly in Coworker.
+* [Journey Simulation](#sep-26-journeys) - Automate end-to-end journey validation and interpret the results directly in Coworker.
 * [Journey creation from the Coworker rail](#sep-26-journeys) - Generate journeys with AI directly from the Coworker right rail, replacing the previous AI Assistant experience.
 * [Compare journey versions](#sep-26-journeys) - Get a full-fidelity, structured diff between any two versions of a journey through Coworker Chat.
 * [Hygiene Analysis skill](#sep-26-journeys) - Scan active and draft journeys for broken configurations, silent failures, and decaying or unused assets, with recommended fixes.
@@ -154,7 +154,7 @@ The following capabilities and improvements are coming to journeys in this relea
 <table>
 <thead>
 <tr>
-<th><strong>Journey Simulation in Coworker (MCP &amp; Chat)</strong><br/></th>
+<th><strong>Journey Simulation in Coworker</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -291,6 +291,29 @@ The following capabilities and improvements are coming to channels in this relea
 </tr>
 </tbody>
 </table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Android push notifications templates improvements</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Android push notifications previously rendered with a single, fixed layout: images were always center-cropped, and long body text was truncated. This release introduces a template picker at authoring time, allowing marketers to control the layout of Android push notifications.</p>
+<p>Following improvements are available:</p>
+<ul>
+<li><b>Layout selection</b>: New Push Notification Layout picker (Standard / Expanded) when authoring an Android push.</li>
+<li><b>Standard layout with "Show entire image"</b>: Choose cropped-to-fill vs. scaled-to-fit.</li>
+<li><b>Expanded layout</b>: Multi-line body text with no truncation, plus optional large-icon thumbnail.</li>
+<li><b>Collapsed body (Expanded layout)</b>: Set a separate, shorter body text for the collapsed state.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 * **Custom SMS BYOP auth flexibility** - You can now configure **custom authentication headers** when connecting your SMS provider's OAuth setup, including where the token is placed on outgoing messages and how the token request itself is formatted.
 

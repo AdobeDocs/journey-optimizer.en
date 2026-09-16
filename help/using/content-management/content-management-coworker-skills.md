@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: CX Coworker content management tools
-description: Discover the CX Coworker content management tools available to discover, create, and manage Journey Optimizer content assets, with in-depth guidance and sample prompts.
+title: Coworker for content management
+description: Discover the CX Enterprise Coworker content management tools available to discover, create, and manage Journey Optimizer content assets, with in-depth guidance and sample prompts.
 feature: Overview
 topic: Artificial Intelligence
 role: User
@@ -17,16 +17,16 @@ subfeature_v2:
     internal-label: Templates
 ---
 
-# CX Coworker content management tools {#content-management-coworker-skills}
+# Coworker for content management {#content-management-coworker-skills}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover the CX Coworker content management tools available in Adobe Journey Optimizer — to browse, create, update, clone, and publish content templates, fragments, landing pages, and journey/campaign inline content — with detailed guidance, example prompts, and best practices.
+**On this page:** Discover the CX Enterprise Coworker content management tools available in Adobe Journey Optimizer — to browse, create, update, clone, and publish content templates, fragments, landing pages, and journey/campaign inline content — with detailed guidance, example prompts, and best practices.
 
 Learn more:
 
-* [CX Coworker skills for Journey Optimizer](ai-features.md#cx-coworker-skills) — overview of CX Coworker skills across Journeys, Loyalty, and Content Management in Journey Optimizer.
-* [CX Coworker documentation](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/overview){target="_blank"} — overview of Coworker's Campaigns, Chat, and Projects capabilities.
+* [Coworker skills for Journey Optimizer](../start/ai-features.md#cx-coworker-skills) — overview of Coworker skills across Journeys, Loyalty, and Content Management in Journey Optimizer.
+* [Coworker documentation](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/overview){target="_blank"} — overview of Coworker's Campaigns, Chat, and Projects capabilities.
 * [Coworker Chat UI guide](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/ui-guide){target="_blank"} — how to access and navigate Coworker Chat.
 
 >[!ENDSHADEBOX]
@@ -35,9 +35,9 @@ Learn more:
 
 >[!AVAILABILITY]
 >
->Content Management is available for all customers who have access to CX Coworker.
+>Content Management is available for all customers who have access to Coworker.
 
-Journey Optimizer users are able to discover and manage content assets — content templates, fragments, landing pages, and journey/campaign inline message content — directly from CX Coworker using natural language prompts. It lets you go from "tell me about my content" to "go build, update, and publish it," without leaving the conversation. This capability is powered by 15 read and write-capable MCP tools for Journey Optimizer content.
+Journey Optimizer users are able to discover and manage content assets — content templates, fragments, landing pages, and journey/campaign inline message content — directly from Coworker using natural language prompts. It lets you go from "tell me about my content" to "go build, update, and publish it," without leaving the conversation. This capability is powered by 15 read and write-capable MCP tools for Journey Optimizer content.
 
 ### Key use cases
 

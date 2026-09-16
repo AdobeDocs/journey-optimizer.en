@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: CX Coworker skills for loyalty
-description: Discover the CX Coworker skills available for creating, managing, and analyzing loyalty challenges in Adobe Journey Optimizer, with in-depth guidance and sample prompts.
+title: Coworker for Loyalty
+description: Discover the CX Enterprise Coworker skills available for creating, managing, and analyzing loyalty challenges in Adobe Journey Optimizer, with in-depth guidance and sample prompts.
 feature: Overview
 topic: Artificial Intelligence
 role: User
@@ -17,29 +17,29 @@ subfeature_v2:
     internal-label: Templates
 ---
 
-# CX Coworker skills for loyalty {#loyalty-coworker-skills}
+# Coworker for Loyalty {#loyalty-coworker-skills}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover the CX Coworker skills available for Loyalty Challenges in Adobe Journey Optimizer — creating and managing challenges, and querying loyalty program performance — with detailed guidance, example prompts, and best practices for each skill.
+**On this page:** Discover the CX Enterprise Coworker skills available for Loyalty Challenges in Adobe Journey Optimizer — creating and managing challenges, and querying loyalty program performance — with detailed guidance, example prompts, and best practices for each skill.
 
 Learn more:
 
-* [CX Coworker skills for Journey Optimizer](ai-features.md#cx-coworker-skills) — overview of CX Coworker skills across Journeys, Loyalty, and Content Management in Journey Optimizer.
-* [CX Coworker documentation](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/overview){target="_blank"} — overview of Coworker's Campaigns, Chat, and Projects capabilities.
+* [Coworker skills for Journey Optimizer](../start/ai-features.md#cx-coworker-skills) — overview of Coworker skills across Journeys, Loyalty, and Content Management in Journey Optimizer.
+* [Coworker documentation](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/overview){target="_blank"} — overview of Coworker's Campaigns, Chat, and Projects capabilities.
 * [Coworker Chat UI guide](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/ui-guide){target="_blank"} — how to access and navigate Coworker Chat.
 
 >[!ENDSHADEBOX]
 
 >[!AVAILABILITY]
 >
->Loyalty skills are available in CX Coworker for eligible organizations. Customers with a Loyalty license can access these loyalty skills, even if they do not have an additional CX Coworker license.
+>Loyalty skills are available in Coworker for eligible organizations. Customers with a Loyalty license can access these loyalty skills, even if they do not have an additional Coworker license.
 
 Loyalty skills empower loyalty administrators and analysts to create, manage, and analyze loyalty programs using natural language. With these AI-powered skills, you can quickly design engaging loyalty challenges, track performance metrics, and make data-driven decisions to optimize member engagement and program profitability. Whether you're building a new challenge or analyzing loyalty program trends, Loyalty skills streamline the entire loyalty management workflow.
 
 ## Loyalty Challenge Management {#loyalty-challenge-management}
 
-Loyalty Challenge Management enables Journey Optimizer users to create and manage loyalty challenges in CX Coworker using natural language prompts. For comprehensive documentation on creating, configuring, and managing loyalty challenges, including detailed setup instructions, refer to the [Loyalty Challenges guide](../loyalty-challenges/get-started.md).
+Loyalty Challenge Management enables Journey Optimizer users to create and manage loyalty challenges in Coworker using natural language prompts. For comprehensive documentation on creating, configuring, and managing loyalty challenges, including detailed setup instructions, refer to the [Loyalty Challenges guide](get-started.md).
 
 ### Key use cases
 
