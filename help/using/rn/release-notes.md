@@ -85,6 +85,10 @@ topic_v2:
 
   Availability date: September 1, 2026
 
+* **Loyalty available for Healthcare Shield and Privacy and Security Shield customers** - Journey Optimizer Loyalty is now available to Healthcare Shield and Privacy and Security Shield customers. [Learn more](../loyalty-challenges/get-started.md)
+
+  Availability date: September 15, 2026
+
 ### Journeys {#sep-26-journeys}
 
 <table>
