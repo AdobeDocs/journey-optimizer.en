@@ -95,21 +95,33 @@ In the **[!UICONTROL Business rules]** drop-down list, select a rule set to appl
 
 +++**Override email channel configuration** (Email)
 
-When building your campaigns, you can override the email parameters derived from the selected channel configuration directly at the campaign action level.
+When building your campaigns, you can override some of the email parameters derived from the selected [channel configuration](../email/email-settings.md) directly at the campaign action level.
 
-After selecting a channel configuration, enable **[!UICONTROL Override email channel configuration]**.
+This enables you to customize your email for specific campaign needs without altering the global channel configuration. Indeed, you can change only specific fields of the configuration without creating a new channel configuration, allowing for targeted adjustments while maintaining the overall setup.
+
+After selecting a channel configuration, enable the **[!UICONTROL Override email channel configuration]** option.
 
 ![Email action with Override email channel configuration toggle enabled](assets/create-campaign-action-override.png)
 
-This enables you to personalize the email header fields (**[!UICONTROL From name]**, **[!UICONTROL From email prefix]**, **[!UICONTROL Reply to name]**, and **[!UICONTROL Reply to email]**), the execution address, and the list-unsubscribe values, using profile attributes, contextual data, or helper functions for more precise control.
+You can override the following fields:
 
-![Email header override fields including From and Reply-to parameters](assets/create-campaign-action-override-header.png)
+* The email header fields - **[!UICONTROL From name]**, **[!UICONTROL From email prefix]**, **[!UICONTROL Reply to name]**, and **[!UICONTROL Reply to email]**. Overriding these fields allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. Learn more on [email header parameters](../email/header-parameters.md)
 
-![Execution address and list unsubscribe override fields in the email action](assets/create-campaign-action-override-list.png)
+  ![Email header override fields including From and Reply-to parameters](assets/create-campaign-action-override-header.png){width=80%}
 
-This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.
+  For example, you may want to override the name and email address of the sender to match the details of the specific relationship manager handling the recipient's account.
 
-Each override field displays the configured value. Leave a field empty to keep that configured value for this action.
+* The execution address
+
+* The list-unsubscribe values
+
+  ![Execution address and list unsubscribe override fields in the email action](assets/create-campaign-action-override-list.png){width=80%}
+
+You can also personalize these fields using profile attributes, contextual data, or helper functions for more precise control. [Learn how to use the personalization editor](../personalization/personalization-build-expressions.md)
+
+>[!NOTE]
+>
+>The configured value displays under each field. To keep the configured value for a setting, leave that field empty.
 
 +++
 

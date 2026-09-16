@@ -75,6 +75,15 @@ When configuring a new [email channel configuration](email-settings.md), in the 
 >
 >For **[!UICONTROL From email prefix]** and **[!UICONTROL Error email prefix]**, values must begin with a letter (A-Z) and can only contain alphanumeric characters. You can also use underscore `_`, dot `.`, and hyphen `-` characters.
 
+If needed, these header values can be overridden at the campaign or journey action level, without creating a new channel configuration.
+
+Learn how in the following sections:
+
+* [Configure the campaign action](../campaigns/campaign-action.md)
+* [Configure API-triggered action](../api-triggered/api-triggered-action.md)
+* [Configure journey action](../journeys/journey-action.md)
+* [Configure orchestrated campaign action](../orchestrated-campaigns/orchestrated-campaign-action.md)
+
 ## Sender headers {#sender-header}
 
 >[!CONTEXTUALHELP]
