@@ -57,7 +57,7 @@ You can create these types of challenge experiences:
 * **Bring your own data challenges** (restricted availability): The challenge framework (tasks and rewards) is assembled from your Loyalty Challenges data integration. You configure Settings, Content, and Messaging as you would for any other challenge type.
 
 >[!TIP]
->You can also create and manage loyalty challenges using **Loyalty Challenge Management** in [CX Coworker Journey Skills](../start/ajo-coworker-skills.md#loyalty-challenge-management) with natural language prompts for faster challenge creation.
+>You can also create and manage loyalty challenges using **Loyalty Challenge Management** in [Coworker skills for loyalty](loyalty-coworker-skills.md#loyalty-challenge-management) with natural language prompts for faster challenge creation.
 
 ➡️ [Watch an overview of the feature](#video)
 
@@ -184,4 +184,8 @@ For authentication and required headers, see the [authentication tutorial](https
 **New to Loyalty Challenges?** Watch this overview to understand the capabilities and benefits:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496441?quality=12)
+
+## Interactive demo {#demo}
+
+Want to see Loyalty Challenges in action first? Check out the [interactive demo](loyalty-challenges-demo.md).
 

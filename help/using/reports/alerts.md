@@ -54,7 +54,7 @@ Adobe Journey Optimizer provides two types of alerts:
 
 * **In-canvas validation alerts**: When building journeys and campaigns, use the **Alerts** button in the canvas to identify and resolve configuration errors before publishing. Learn how to [troubleshoot your journeys](../building-journeys/troubleshooting.md) and review your campaigns: [Action campaigns](../campaigns/review-activate-campaign.md) | [API-triggered campaigns](../campaigns/review-activate-api-triggered-campaign.md) | [Orchestrated campaigns](../orchestrated/start-monitor-campaigns.md).
 
-* **System monitoring alerts** (detailed on this page): Receive proactive notifications when operational thresholds are exceeded or issues are detected in live journeys and channel configurations, and when important campaign lifecycle events occur (activation, delivery, stop, and related failures). System alerts monitor metrics such as error rates, profile discards, and email deliverability issues, in addition to those campaign events.
+* **System monitoring alerts** (detailed on this page): Receive proactive notifications when operational thresholds are exceeded or issues are detected in live journeys and channel configurations, and when important campaign lifecycle events occur (activation, delivery, stop, and related failures). System alerts monitor metrics such as error rates, profile discards, anomalous journey traffic, and email deliverability issues, in addition to those campaign events.
 
 **Key benefits of system alerts:**
 
@@ -220,6 +220,28 @@ To troubleshoot capping issues:
 * Monitor the external endpoint to ensure it can handle the expected load.
 
 ➡️ [Configure custom action capping](../action/about-custom-action-configuration.md#custom-action-enhancements-best-practices)
+
++++
+
++++ Journey Anomaly Detected
+
+This alert warns you when a live journey's daily traffic deviates from its own historical baseline, or drops to zero unexpectedly. Three metrics are monitored independently for each journey: **[!UICONTROL Journey Entries]**, **[!UICONTROL Journey Exits]**, and **[!UICONTROL Event Sends]**. The check runs once daily, using a 30-day lookback per journey.
+
+**Baseline:** the expected value for each metric combines Customer Journey Analytics' forecast for that day with a 7-day rolling median of the journey's own actual values. If the forecast falls below 50% of the rolling median, the rolling median is used instead, to avoid under-predicting a journey that has been running steadily.
+
+The following reasons can trigger an alert:
+
+* **Zero anomaly**: fires immediately if a metric drops to 0 on a day where the journey has previously produced non-zero traffic. **Read Audience** journeys are exempted on the current day, since that day's run may not have completed yet.
+* **Deviation threshold**: fires when the actual value differs from the expected value by 35% or more, once the journey has shown 3 to 4 consecutive non-zero days of history, and only if the expected value is at least 100 (to avoid flagging small-number noise).
+* If **Journey Entries** is anomalous on a given day, related anomalies on **Exits** and **Event Sends** are suppressed for that same day and journey, so a single root cause does not raise multiple alerts.
+
+Note that this alert applies only to live journeys of type **unitary event**, **read-audience**, or **audience-qualification** (recurring **Read Audience** journeys only), and requires the organization or sandbox to be subscribed to alerting.
+
+➡️ [Inspect the journey live report to troubleshoot a **Journey Anomaly Detected** alert](../reports/journey-live-report.md)
+
+>[!IMPORTANT]
+>
+>This alert is currently available in production sandboxes only, and is not available in development or staging sandboxes.
 
 +++
 

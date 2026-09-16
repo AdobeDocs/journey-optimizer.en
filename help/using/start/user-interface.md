@@ -189,7 +189,7 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 * **Content templates** - Reusable message templates for campaigns and journeys. [Create templates](../content-management/content-templates.md)
 * **Fragments** - Content blocks that can be used across multiple messages. [Work with fragments](../content-management/fragments.md)
 * **Landing pages** - Web forms for subscriptions and preferences. [Design landing pages](../landing-pages/get-started-lp.md)
-* **Use Case Playbooks** - Pre-built workflows for common marketing scenarios. [Explore playbooks](ai-features.md#playbooks)
+* **Use Case Playbooks** - Pre-built workflows for common marketing scenarios. [Explore playbooks](ajo-use-case-guide.md#playbooks)
 
 **Data Management** - Manage your data foundation. [Learn about schemas and datasets](../data/get-started-schemas.md)
 
@@ -406,6 +406,18 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_journey_inbound_activity_deactivation"
 >title="Inbound Activity Deactivation activity"
 >abstract="Removes a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit."
+
+<!--DOCAC-15707 Implement contextual help for Journey Properties event recovery / action timeout fields-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_recovery_timeout"
+>title="Set event recovery timeout"
+>abstract="Controls how long the journey automatically replays events impacted by a service interruption. Off by default (72-hour automatic replay); turn on to adjust the replay window from 0 to 72 hours for time-sensitive journeys."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_timeout"
+>title="Custom Action / IDS Action timeout"
+>abstract="The Custom Action / IDS Action timeout option defines an alternative path in the journey when the action times out or returns an error, so profiles continue through a fallback path rather than stopping at this step. Recommended values are between 1 and 30 seconds."
 
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-user-interface.md}}

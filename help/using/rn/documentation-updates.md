@@ -23,6 +23,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
+* A new **Interactive demo** page is now available for Loyalty Challenges, linking to a self-guided, clickable demo that covers the marketer's challenge creation flow (including Bring your own data and the insights dashboards), the end customer experience, and Loyalty Challenge Management in CX Coworker. [Read more](../loyalty-challenges/loyalty-challenges-demo.md)
+
 * The **Personalize your email background** page has been expanded and improved. It now documents the full **Image placement** dropdown for background images and adds new best practices for background colors and images, including a recommendation to test background images across real email clients rather than relying solely on the Email Designer preview. [Read more](../email/backgrounds.md)
 
 * The **Design content from scratch with the Email Designer** page has been reorganized and clarified: it distinguishes the **[!UICONTROL n:n column]** structure from the fixed-preset structures, documents that a structure's column count can be increased without losing existing content, explains column-stacking behavior on mobile, and adds a new step on using **[!UICONTROL Modules]** to quick-start email creation. [Read more](../email/content-from-scratch.md)
@@ -31,7 +33,9 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * New guidance has been added for verifying custom action delivery: the **Dataset query examples** page now explains how to choose between the Message Feedback Event, Email Tracking, and Journey Step Event datasets depending on the action type, and documents how to resolve a "Table not provisioned for dataset" error. The **Journey step events overview** and **Troubleshoot your live journey execution** pages have been updated accordingly, clarifying that a successful custom action call only confirms that Journey Optimizer executed the action, not that the external system delivered a message. [Read more](../data/datasets-query-examples.md#choose-the-correct-dataset)
 
-* A new **Analyze Journey Anomalies** skill has been documented under **Journey Analyze** in the CX Coworker page. It detects unexpected spikes, drops, or flatlines in a journey's entry, exit, or send counts against historical baselines, and runs read-only diagnostics to surface a likely root cause. [Read more](../start/ajo-coworker-skills.md#journey-analyze)
+* Information about CX Coworker has been added to the **Work with AI** page, covering what CX Coworker is, how it relates to AI Assistant, and references to the official Coworker documentation. Dedicated skills pages have also been added to each capability guide — [CX Coworker skills for journeys](../building-journeys/journeys-coworker-skills.md), [CX Coworker skills for loyalty](../loyalty-challenges/loyalty-coworker-skills.md), and [CX Coworker content management tools](../content-management/content-management-coworker-skills.md). [Read more](../start/ai-features.md#cx-coworker)
+
+* A new **Analyze Journey Anomalies** skill has been documented under **Journey Analyze** in the CX Coworker page. It detects unexpected spikes, drops, or flatlines in a journey's entry, exit, or send counts against historical baselines, and runs read-only diagnostics to surface a likely root cause. [Read more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
 
 * The **Guardrails and limitations** page has been corrected to reflect the fact that visual fragments over 100 KB or expression fragments over 200 KB can no longer cause truncation issues in email delivery: now a single 700 KB fragment size guardrail applies. [Read more](../start/guardrails.md#fragments-guardrails)
 
@@ -39,7 +43,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **AJO Message Feedback Event Dataset** documentation has been expanded to clarify that it covers message delivery feedback across all channels (Email, SMS/RCS/MMS, Direct Mail), not just email and push, and now includes a **Classify test and non-test executions** section explaining how to interpret the `isTestExecution` field, including `NULL` or missing values. [Read more](../data/datasets-query-examples.md#classify-test-executions)
 
-* A new **Content Management** capability has been documented for CX Coworker, powered by 15 read/write MCP tools that let you discover, create, update, clone, and publish content templates, fragments, landing pages, and journey/campaign inline message content using natural language prompts. [Read more](../start/ajo-coworker-skills.md#content-management)
+* A new **Content Management** capability has been documented for CX Coworker, powered by 15 read/write MCP tools that let you discover, create, update, clone, and publish content templates, fragments, landing pages, and journey/campaign inline message content using natural language prompts. [Read more](../content-management/content-management-coworker-skills.md#content-management)
 
 * The **Add content to your landing page** documentation now describes a **Make form field mandatory** option for consent checkboxes: when enabled, the form cannot be submitted unless the checkbox is selected, and the check is enforced both client-side and server-side. [Read more](../landing-pages/lp-content.md#use-form-component)
 
@@ -95,7 +99,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Decisioning Migration API** documentation has been enhanced with comprehensive guidance on migrating Decision management objects to Decisioning. New sections include: entity mapping reference with 10 naming conventions, in-scope vs. out-of-scope coverage, detailed request/response model comparisons, three implementation patterns (client-side, server-side, hybrid) with cookie handling, event tracking requirements with 5 event JSON examples, cross-sandbox migration prerequisites, an end-to-end 5-step migration process, and migration FAQs. [Read more](../experience-decisioning/decisioning-migration-api.md)
 
-* A new **CX Coworker Skills** page is now available. It provides comprehensive documentation of all Journey Skills available in Journey Optimizer, including Journey Create, Channel Content Create, Loyalty Challenge Management, and Journey Analyze, with use cases, sample prompts, and best practices for each skill. [Read more](../start/ajo-coworker-skills.md)
+* A new **CX Coworker Skills** page is now available. It provides comprehensive documentation of all Journey Skills available in Journey Optimizer, including Journey Create, Channel Content Create, Loyalty Challenge Management, and Journey Analyze, with use cases, sample prompts, and best practices for each skill. [Read more](../start/ai-features.md#cx-coworker)
 
 * The **To Precision** function documentation has been updated to clarify that `toPrecision` behaves like JavaScript `toFixed()`: it returns a string with a fixed number of decimal places, including zero-padding when needed. [Read more](../personalization/functions/math.md#to-precision)
 
