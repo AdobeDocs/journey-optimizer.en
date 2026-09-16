@@ -341,23 +341,7 @@ The following capabilities and improvements are coming to orchestrated campaigns
 
 ### Campaigns {#sep-26-campaigns}
 
-The following capabilities and improvements are coming to campaigns in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Inbound experience simulation in Action Campaigns (Beta)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now simulate inbound channel actions in Action Campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
-<p>This capability is currently in private beta and available to a limited set of organizations. Contact your Adobe representative for more information.</p>
-</td>
-</tr>
-</tbody>
-</table>
+The following improvement is coming to campaigns in this release.
 
 * **Folders for campaigns** - You can now organize your campaigns into **folders** to improve navigation and management in the interface. 
 
