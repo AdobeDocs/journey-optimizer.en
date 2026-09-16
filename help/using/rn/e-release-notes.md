@@ -37,7 +37,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
 * [Message-copy and email-design plugins](#sep-26-content-management) - Two new plugins that streamline messaging and email workflows in Coworker, from campaign brief to production-ready copy and HTML.
 * [Loyalty recommendation skill](#sep-26-loyalty) - Request challenge opportunities directly in Coworker's conversational interface and turn them into live challenges without leaving the chat.
-* [Journey Simulation (MCP & Chat)](#sep-26-journeys) - Automate end-to-end journey validation and interpret the results directly in Coworker.
+* [Journey Simulation](#sep-26-journeys) - Automate end-to-end journey validation and interpret the results directly in Coworker.
 * [Journey creation from the Coworker rail](#sep-26-journeys) - Generate journeys with AI directly from the Coworker right rail, replacing the previous AI Assistant experience.
 * [Compare journey versions](#sep-26-journeys) - Get a full-fidelity, structured diff between any two versions of a journey through Coworker Chat.
 * [Hygiene Analysis skill](#sep-26-journeys) - Scan active and draft journeys for broken configurations, silent failures, and decaying or unused assets, with recommended fixes.
@@ -154,7 +154,7 @@ The following capabilities and improvements are coming to journeys in this relea
 <table>
 <thead>
 <tr>
-<th><strong>Journey Simulation in Coworker (MCP &amp; Chat)</strong><br/></th>
+<th><strong>Journey Simulation in Coworker</strong><br/></th>
 </tr>
 </thead>
 <tbody>
