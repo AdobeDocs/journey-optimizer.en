@@ -111,9 +111,9 @@ You can override the following fields:
 
   For example, you may want to override the name and email address of the sender to match the details of the specific relationship manager handling the recipient's account.
 
-* The execution address
+* The execution address - **[!UICONTROL Delivery address]** field. When several email addresses are available for a given profile, [!DNL Journey Optimizer] uses the execution field which is set in the [general settings](../configuration/primary-email-addresses.md) or in the [channel configuration](../email/email-settings.md#execution-address) to determine which email address to use from the profile service in priority. In some cases, you may want to override the delivery address set globally and define here a different value at the campaign action level.
 
-* The list-unsubscribe values
+* The list-unsubscribe values - **[!UICONTROL Mailto (unsubscribe)]** and **[!UICONTROL One-click unsubscribe URL]**. The one-click list unsubscribe URL is an unsubscribe link or button displayed next to the email sender information, and lets recipients instantly opt out of your mailing lists with a single click. Here you can replace the unsubscribe address and one-click unsubscribe URL set at the channel configuration level. Learn more on [List unsubscribe](../email/list-unsubscribe.md)
 
   ![Execution address and list unsubscribe override fields in the email action](assets/create-campaign-action-override-list.png){width=80%}
 
