@@ -91,11 +91,7 @@ Use this option when an API-triggered campaign needs email values that differ fr
 
 >[!CAUTION]
 >
->In API-triggered campaigns, contextual attributes used in these override fields are entered manually and must match the payload path.
-
->[!CAUTION]
->
->For API-triggered campaigns, as the context is generated from the API payload at runtime, contextual attributes are not available in the personalization editor when defining the email action, so they must be entered manually. The expression path must match the API payload structure exactly. [Learn more on contextual data syntax](../campaigns/api-triggered-campaign-content.md#contextual)
+>For API-triggered campaigns, as the context is generated from the API payload at runtime, contextual attributes are not available in the personalization editor when defining the email action, so they must be entered manually. The expression path must match the API payload structure exactly as no check is performed by [!DNL Journey Optimizer]. [Learn more on contextual data syntax](../campaigns/api-triggered-campaign-content.md#contextual)
 
 +++
 
