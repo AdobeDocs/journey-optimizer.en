@@ -270,6 +270,8 @@ Select **[!UICONTROL All]** to see results aggregated across every simulated use
 
 For each activity, the log can show whether the simulated user entered or exited the step, the timestamps and branch decisions for each step, and errors that occurred during the simulation.
 
+During a simulation, you can also preview the content of every channel activity directly on the canvas. [Learn how to preview content in the canvas](using-the-journey-designer.md#content-preview).
+
 For **Wait** activities, the log includes two duration-related values:
 
 * **Defined duration**: The duration specified on the **Wait** activity for the published journey and applied once the journey is live. The log records whether Simulation applies an override from the test settings, for example 10 seconds, rather than relying solely on the value defined on the journey.

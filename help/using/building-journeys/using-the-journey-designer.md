@@ -122,6 +122,7 @@ The toolbar in the top right corner of the canvas provides quick access to essen
 
 | Toolbar icon | Description |
 |--- |--- |
+| Expand all | Expand all channel activities to show a thumbnail preview of their content directly on the canvas. Click any thumbnail to open a fullscreen preview. |
 | Download canvas image | Capture your current canvas view as an image and save it on your computer. |
 | Share feedback | Open a feedback form to let us know if you're missing something on the new canvas or have an idea to make it better. |
 | Multiple selection | Switch to selection mode to select multiple activities. |
@@ -129,6 +130,26 @@ The toolbar in the top right corner of the canvas provides quick access to essen
 | Fit to screen | Automatically adjust the zoom level to fit your entire journey in view. |
 | Zoom out | Decrease the zoom level. |
 | Zoom in | Increase the zoom level. |
+
+### Preview content in the canvas {#content-preview}
+
+Preview the content of every channel activity directly in the journey canvas, without opening each activity one at a time. This helps you quickly review what your journey will actually deliver across all its channels.
+
+In the canvas toolbar, click the **[!UICONTROL Expand all]** (eye) icon. All channel activities expand to show a thumbnail preview of their content.
+
+![Preview channel content directly in the journey canvas](assets/journey-canvas-content-preview.png)
+
+To see an activity's content in detail, click its thumbnail. A fullscreen preview opens where you can review the rendered content. When the activity uses personalization, use the selectors at the top of the preview to switch between the available treatments and variants.
+
+![Fullscreen preview of an email activity's content](assets/journey-canvas-content-preview-email.png)
+
+The preview adapts to the channel. For example, mobile and SMS messages display in a device mockup.
+
+![Fullscreen preview of a mobile message activity's content](assets/journey-canvas-content-preview-message.png)
+
+>[!NOTE]
+>
+>Content preview is available both when you design a journey and when you run a simulation. [Learn more about simulating a journey](simulate-journey.md).
 
 ### Select multiple activities for bulk actions
 
