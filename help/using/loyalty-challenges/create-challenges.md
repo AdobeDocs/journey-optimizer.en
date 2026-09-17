@@ -18,6 +18,12 @@ subfeature_v2:
 
 # Create challenges {#create-challenges}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, configure, publish, and launch loyalty challenges, including their settings, structure, content, messaging, tasks, and rewards.
+
+>[!ENDSHADEBOX]
+
 This page covers the complete process of creating and publishing a loyalty challenge in Adobe Journey Optimizer.
 
 Creating a challenge involves the following steps:

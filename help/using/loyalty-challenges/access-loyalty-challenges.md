@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # Access & manage challenges and tasks {#access-loyalty-challenges}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access Loyalty Challenges, review the Challenges and Tasks inventories, and manage existing challenges and reusable tasks.
+
+>[!ENDSHADEBOX]
+
 ## Access & manage challenges and tasks
 
 To access Loyalty Challenges, navigate to Journey Optimizer and select **[!UICONTROL Loyalty Challenge]** under the **[!UICONTROL Journey management]** section. The Loyalty Challenges interface provides a centralized location to view, manage, and organize all your challenges and tasks.

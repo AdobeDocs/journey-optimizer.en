@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # Loyalty Challenges permissions {#loyalty-permissions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn about the default Loyalty roles, available permissions, role capabilities, sandbox scope, and how to assign roles to users.
+
+>[!ENDSHADEBOX]
+
 ## Overview {#overview}
 
 [!DNL Adobe Journey Optimizer] Loyalty uses Adobe Admin Console role-based access control (RBAC) to manage user access.

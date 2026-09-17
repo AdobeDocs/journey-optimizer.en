@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # Interactive demo {#loyalty-challenges-demo}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Explore an interactive Loyalty Challenges demonstration covering challenge creation, the customer experience, performance and insights, and Loyalty Challenge Management in CX Coworker.
+
+>[!ENDSHADEBOX]
+
 See Loyalty Challenges in action in a self-guided, clickable demo built around "Luma," Adobe's fictional lifestyle retail brand.
 
 The demo covers three flows: the marketer's challenge creation experience (including a Bring your own data challenge and the performance and insights dashboards), the end customer's experience, and Loyalty Challenge Management in CX Coworker.

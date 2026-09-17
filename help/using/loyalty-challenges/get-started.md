@@ -24,6 +24,12 @@ subfeature_v2:
 >title="Loyalty challenges"
 >abstract="Loyalty Challenges enable you to create engaging, gamified loyalty programs that drive customer behavior and deepen brand relationships. Build challenges that reward customers for specific actions—from making purchases and writing reviews to engaging on social media and referring friends."
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get an overview of Loyalty Challenges, learn how the program works, review prerequisites, and find the documentation needed to set up, create, launch, and measure challenges.
+
+>[!ENDSHADEBOX]
+
 ## Overview {#overview}
 
 Loyalty Challenges enable you to create engaging, gamified loyalty programs that drive customer behavior and deepen brand relationships. Build challenges that reward customers for specific actions—from making purchases and writing reviews to engaging on social media and referring friends.

@@ -25,35 +25,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**Table of contents**
-
-[Get started with Loyalty Challenges](get-started.md)
-
-<table style="table-layout:fixed">
-<tr style="border: 0;">
-<td style="vertical-align:top;">
-
-**Create and manage challenges**
-
-* [Access & manage challenges and tasks](access-loyalty-challenges.md)
-* [Create challenges](create-challenges.md)
-* [Create tasks](create-tasks.md)
-* [Monitor loyalty challenge performance](loyalty-reporting.md)
-
-</td>
-<td style="vertical-align:top;">
-
-**Configure and integrate**
-
-* [Configure loyalty challenges](loyalty-admin.md)
-* [Reward Definition guide](reward-definition-guide.md)
-* **Event Transformer guide** ◀︎ **You are here**
-* [Loyalty data and datasets](loyalty-data-and-datasets.md)
-* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
-
-</td>
-</tr>
-</table>
+**On this page:** Learn how event mappings identify incoming events and transform them into the Adobe Loyalty Event format using JSONata expressions, including field requirements, matching behavior, examples, and API operations.
 
 >[!ENDSHADEBOX]
 
