@@ -49,11 +49,9 @@ Live activities are persistent, glanceable UI elements displayed on the device l
 
 Unlike traditional push notifications, Live activities represent **state-based engagement**: instead of delivering one-time alerts, they maintain a continuous, contextual presence that updates dynamically as events evolve.
 
-
-
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td style="text-align:center">
-<img alt="iOS Live activities on Lock Screen and Dynamic Island" src="assets/do-not-localize/live-activity.jpeg">
+<img alt="iOS Live activities on Lock Screen and Dynamic Island" src="assets/do-not-localize/live-activity.png" width="250">
 </td>
 <td style="text-align:center">
 <img alt="Android Live activities" src="assets/do-not-localize/live-activity-android.png" width="250">
