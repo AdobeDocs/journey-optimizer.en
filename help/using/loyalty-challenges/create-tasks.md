@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # Create tasks {#create-tasks}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create reusable loyalty tasks, configure Purchase, Spend, and Custom event activities, and define task attributes, eligibility, and completion requirements.
+
+>[!ENDSHADEBOX]
+
 Tasks define the specific actions or milestones that customers must complete to earn rewards in a loyalty challenge. You can configure purchase and spend tasks, or **[!UICONTROL Custom event]** tasks that track Adobe Experience Platform experience events your organization already captures.
 
 Each task represents a measurable action that contributes toward challenge completion. Tasks are reusable components that can be created independently and then added to one or more challenges, or created directly within a challenge.
