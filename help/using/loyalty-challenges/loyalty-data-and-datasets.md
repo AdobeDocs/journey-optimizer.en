@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # Loyalty data and datasets {#loyalty-data-and-datasets}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn which Adobe Experience Platform identities, profiles, events, audiences, and datasets support Loyalty Challenges, and how dataset time-to-live affects data retention.
+
+>[!ENDSHADEBOX]
+
 ## Overview {#overview}
 
 Loyalty Challenges relies on Adobe Experience Platform for identity, profile attributes, experience events, and audiences. Use this page to learn which data to prepare, which datasets are involved, and how **time-to-live (TTL)** affects retention before you author challenges or use the Loyalty Challenges APIs.

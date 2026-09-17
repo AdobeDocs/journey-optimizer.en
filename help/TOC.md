@@ -12,7 +12,7 @@ nudge: yes
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new} 
   + [Release cycle](using/rn/releases.md) 
-  + {hide-from-toc} [Pre-release notes](using/rn/e-release-notes.md)
+  + [Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -57,7 +57,7 @@ nudge: yes
   + {hide-from-toc} [Journey Get Started Guide](using/building-journeys/journey-get-started.md)
   + {hide-from-toc} [Journey types: choose the right one-2](using/building-journeys/journey-types-selection-v2.md)
   + [Journey Orchestration FAQ](using/building-journeys/journey-faq.md)
-  + [CX Coworker skills for journeys](using/start/journeys-coworker-skills.md)
+  + [Coworker for journeys](using/building-journeys/journeys-coworker-skills.md)
   + Create a journey {#create-journey}
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
     + [Create your first journey](using/building-journeys/journey-gs.md)
@@ -144,7 +144,8 @@ nudge: yes
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Loyalty challenges {#loyalty-challenges}
   + [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
-  + [CX Coworker skills for loyalty](using/start/loyalty-coworker-skills.md)
+  + [Interactive demo](using/loyalty-challenges/loyalty-challenges-demo.md)
+  + [Coworker for loyalty](using/loyalty-challenges/loyalty-coworker-skills.md)
   + Create and manage challenges {#create-manage-challenges}
     + [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
     + [Create challenges](using/loyalty-challenges/create-challenges.md)
@@ -264,6 +265,7 @@ nudge: yes
     + [Preview using test profiles](using/content-management/preview.md)
     + [Send proofs using test profile data](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
+    + {hide-from-toc} [Simulate inbound experiences](using/test-approve/simulate-inbound-experiences.md)
     + [Simulate content variations (classic experience)](using/test-approve/simulate-sample-input.md)
     + [Simulate content variations (new experience)](using/test-approve/simulate-content-variations.md)
     + [Email Spam report](using/content-management/spam-report.md)
@@ -471,7 +473,7 @@ nudge: yes
     + [Monitor custom channels](using/custom-channel/monitor-custom-channel.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
-  + [CX Coworker content management tools](using/start/content-management-coworker-skills.md)
+  + [Coworker for content management](using/content-management/content-management-coworker-skills.md)
   + Personalization {#personalization}
     + [Personalization](/help/rp_landing_pages/personalization-landing-page.md)
     + [Get started with personalization](using/personalization/personalize.md)
@@ -1039,3 +1041,4 @@ nudge: yes
     + [Manage your customers' preferences](using/action/preference-center.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up & manage Customer Managed Keys](using/privacy/cmk.md)
+

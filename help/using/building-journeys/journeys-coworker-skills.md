@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: CX Coworker skills for journeys
-description: Discover the CX Coworker skills available for building, generating content for, and analyzing journeys in Adobe Journey Optimizer, with in-depth guidance and sample prompts.
+title: Coworker for journeys
+description: Discover the CX Enterprise Coworker skills available for building, generating content for, and analyzing journeys in Adobe Journey Optimizer, with in-depth guidance and sample prompts.
 feature: Overview
 topic: Artificial Intelligence
 role: User
@@ -17,16 +17,16 @@ subfeature_v2:
     internal-label: Journey design
 ---
 
-# CX Coworker skills for journeys {#journeys-coworker-skills}
+# Coworker for journeys {#journeys-coworker-skills}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover the CX Coworker skills available for journeys in Adobe Journey Optimizer — creating journeys from natural language, generating channel content, and analyzing journey performance — with detailed guidance, example prompts, and best practices for each skill.
+**On this page:** Discover the CX Enterprise Coworker skills available for journeys in Adobe Journey Optimizer — creating journeys from natural language, generating channel content, and analyzing journey performance — with detailed guidance, example prompts, and best practices for each skill. 
 
 Learn more:
 
-* [CX Coworker skills for Journey Optimizer](ai-features.md#cx-coworker-skills) — overview of CX Coworker skills across Journeys, Loyalty, and Content Management in Journey Optimizer.
-* [CX Coworker documentation](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/overview){target="_blank"} — overview of Coworker's Campaigns, Chat, and Projects capabilities.
+* [Coworker skills for Journey Optimizer](../start/ai-features.md#cx-coworker-skills) — overview of Coworker skills across Journeys, Loyalty, and Content Management in Journey Optimizer.
+* [Coworker documentation](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/overview){target="_blank"} — overview of Coworker's Campaigns, Chat, and Projects capabilities.
 * [Coworker Chat UI guide](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/ui-guide){target="_blank"} — how to access and navigate Coworker Chat.
 
 >[!ENDSHADEBOX]
@@ -39,13 +39,13 @@ Journey Create enables Journey Optimizer users to build and configure marketing 
 >
 >You need the following permissions in order to fully use Journey Create features:
 >
->**Manage Journeys**: This permission lets you create new journeys directly in CX Coworker.
+>**Manage Journeys**: This permission lets you create new journeys directly in Coworker.
 >
->**View Journey Events, Data Sources and Actions**: This permission ensures that CX Coworker can search through Journey Events and Custom Actions. 
+>**View Journey Events, Data Sources and Actions**: This permission ensures that Coworker can search through Journey Events and Custom Actions. 
 >
->**View Segments**: This permission ensures that CX Coworker can search for audience segments when creating a Journey.
+>**View Segments**: This permission ensures that Coworker can search for audience segments when creating a Journey.
 >
->**Manage Segments**: This permission lets you create new audiences directly in CX Coworker.
+>**Manage Segments**: This permission lets you create new audiences directly in Coworker.
 
 ### Key use cases
 
@@ -94,7 +94,7 @@ Journey Create offers capabilities that can be leveraged to accelerate marketing
 
 1. **Create journey from image**
 
-    * Upload a reference image into coworker and ask to create a journey using the image as reference
+    * Upload a reference image into Coworker and ask to create a journey using the image as reference
     * Journey creation skill will extract an editable prompt from your reference image
 
 With this skill, natural language requirements are translated into structured journey configurations.
@@ -214,15 +214,15 @@ Journey Skills will enable Journey Optimizer users to analyze and optimize journ
 
 >[!AVAILABILITY]
 >
->Journey Skills are available for all customers who have access to CX Coworker. However, you will need the following permissions in order to fully use the Journey Skills features:
+>Journey Skills are available for all customers who have access to Coworker. However, you will need the following permissions in order to fully use the Journey Skills features:
 >
->**View Journeys**: This permission lets you view insights into the journey directly in CX Coworker.
+>**View Journeys**: This permission lets you view insights into the journey directly in Coworker.
 >
->**Manage Journeys**: This permission lets you create new journeys directly in CX Coworker.
+>**Manage Journeys**: This permission lets you create new journeys directly in Coworker.
 >
->**View Segments**: This permission lets you view insights into the audiences directly in CX Coworker.
+>**View Segments**: This permission lets you view insights into the audiences directly in Coworker.
 >
->**Manage Segments**: This permission lets you create new audiences directly in CX Coworker.
+>**Manage Segments**: This permission lets you create new audiences directly in Coworker.
 
 ### Key use cases
 

@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # Configure loyalty challenges {#loyalty-admin}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how administrators configure Loyalty Challenges, including global settings, reward providers, event mappings, product inventory, and exclusions.
+
+>[!ENDSHADEBOX]
+
 ## Overview {#access-loyalty-admin}
 
 Loyalty Challenges configuration connects [!DNL Journey Optimizer] to your external loyalty systems by setting up reward fulfillment, event mapping, product inventory, and exclusions before marketers author challenges.
