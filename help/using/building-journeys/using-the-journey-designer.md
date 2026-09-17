@@ -133,23 +133,24 @@ The toolbar in the top right corner of the canvas provides quick access to essen
 
 ### Preview content in the canvas {#content-preview}
 
-Preview the content of every channel activity directly in the journey canvas, without opening each activity one at a time. This helps you quickly review what your journey will actually deliver across all its channels.
+Review what every channel activity will send without opening each one individually. Content preview renders each activity's content right on the canvas, so you can check an entire cross-channel journey at a glance instead of clicking into activities one by one.
 
-In the canvas toolbar, click the **[!UICONTROL Expand all]** (eye) icon. All channel activities expand to show a thumbnail preview of their content.
+In the canvas toolbar, click the **[!UICONTROL Expand all]** (eye) icon. Every channel activity expands inline to show a thumbnail of its content.
 
 ![Preview channel content directly in the journey canvas](assets/journey-canvas-content-preview.png)
 
-To see an activity's content in detail, click its thumbnail. A fullscreen preview opens where you can review the rendered content. When the activity uses personalization, use the selectors at the top of the preview to switch between the available treatments and variants.
+To see an activity more closely, click its thumbnail. The content opens in a centered preview where you can switch between treatments and variants when the activity uses personalization.
 
-![Fullscreen preview of an email activity's content](assets/journey-canvas-content-preview-email.png)
+![Preview of an email activity's content in a centered frame](assets/journey-canvas-content-preview-email.png)
 
-The preview adapts to the channel. For example, mobile and SMS messages display in a device mockup.
+The preview adapts to each channel. For example, mobile and SMS messages display in a device mockup.
 
-![Fullscreen preview of a mobile message activity's content](assets/journey-canvas-content-preview-message.png)
+![Preview of a mobile message activity's content in a centered frame](assets/journey-canvas-content-preview-message.png)
 
->[!NOTE]
->
->Content preview is available both when you design a journey and when you run a simulation. [Learn more about simulating a journey](simulate-journey.md).
+Content preview is available in two contexts, each showing content the way it applies at that stage:
+
+* **When you design a journey** — Preview the content you authored for each activity as you build, so you can catch layout or content issues early, before you test.
+* **During a simulation** — Preview the content rendered for the selected test user, reflecting the personalization values and the path that user follows through the journey. [Learn how to run a simulation](simulate-journey.md).
 
 ### Select multiple activities for bulk actions
 
