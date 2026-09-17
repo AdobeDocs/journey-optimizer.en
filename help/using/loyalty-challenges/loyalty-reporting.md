@@ -19,7 +19,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use Loyalty Challenges Reports and Insights to monitor member activity, challenge performance, reward outcomes, revenue, and program recommendations.
+**On this page:** Learn how to use Loyalty Challenges Reports and Insights to monitor member activity, challenge performance, reward outcomes, revenue, and program recommendations. 
 
 >[!ENDSHADEBOX]
 

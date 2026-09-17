@@ -25,7 +25,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to configure reward providers and reward definitions, write reward JSONata expressions, and understand the context used to generate fulfillment payloads.
+**On this page:** Learn how to configure reward providers and reward definitions, write reward JSONata expressions, and understand the context used to generate fulfillment payloads. 
 
 >[!ENDSHADEBOX]
 
