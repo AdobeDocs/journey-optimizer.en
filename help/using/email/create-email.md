@@ -143,22 +143,23 @@ You can override:
 
 * Email header fields: **[!UICONTROL From name]**, **[!UICONTROL From email prefix]**, **[!UICONTROL Reply to name]**, and **[!UICONTROL Reply to email]**. Overriding these fields allows sender details to reflect information such as the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. [Learn more on header parameters](header-parameters.md)
 
-  ![Email header override fields including From and Reply-to parameters](../campaigns/assets/create-campaign-action-override-header.png){width=80%}
+  ![Email header override fields including From and Reply-to parameters](../campaigns/assets/create-campaign-action-override-header.png){width=70%}
 
-  For example, you may want to override the name and email address of the sender to match the details of the specific relationship manager handling the recipient's account.
+  For example, a customer visits one of your stores, discusses selected items with a relationship manager, and shares their email address. A few days later, you can send a personalized follow-up email and override the sender name and email address so the message appears to come from that same relationship manager, creating a more consistent and relevant experience.
 
 * Execution address: **[!UICONTROL Delivery address]**. When several email addresses are available for a given profile, [!DNL Journey Optimizer] uses the execution field set in the [general settings](../configuration/primary-email-addresses.md) or in the [channel configuration](email-settings.md#execution-address) to determine which email address to use from the profile service in priority. In some cases, you may want to override the delivery address set globally and define a different value at the action level.
 
+  ![Execution address override field in the email action](../campaigns/assets/create-campaign-action-override-exec-address.png){width=70%}
+
 * List-unsubscribe values: **[!UICONTROL Mailto (unsubscribe)]** and **[!UICONTROL One-click unsubscribe URL]**. The one-click [List unsubscribe](list-unsubscribe.md) URL is an unsubscribe link or button displayed next to the email sender information and lets recipients instantly opt out of your mailing lists with a single click. Here you can replace the unsubscribe address and one-click unsubscribe URL set at the channel configuration level.
 
-  ![Execution address and list unsubscribe override fields in the email action](../campaigns/assets/create-campaign-action-override-list.png){width=70%}
+  ![List unsubscribe override fields in the email action](../campaigns/assets/create-campaign-action-override-list.png){width=70%}
 
 The configured value displays under each override field. To keep the configured value for a setting, leave that field empty.
 
 >[!CAUTION]
 >
->For API-triggered campaigns, as the context is generated from the API payload at runtime, contextual attributes are not available in the personalization editor when defining the email action, so they must be entered manually. The expression path must match the API payload structure exactly. [Learn more on contextual data syntax](../campaigns/api-triggered-campaign-content.md#contextual)
-
+>For API-triggered campaigns, as the context is generated from the API payload at runtime, contextual attributes are not available in the personalization editor when defining the email action, so they must be entered manually. The expression path must match the API payload structure exactly as no check is performed by [!DNL Journey Optimizer]. [Learn more on contextual data syntax](../campaigns/api-triggered-campaign-content.md#contextual)
 
 ## Define your email content {#define-email-content}
 
