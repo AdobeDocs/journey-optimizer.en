@@ -21,7 +21,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover the CX Enterprise Coworker content management tools available in Adobe Journey Optimizer — to browse, create, update, clone, and publish content templates, fragments, landing pages, and journey/campaign inline content — with detailed guidance, example prompts, and best practices.
+**On this page:** Discover the CX Enterprise Coworker content management tools available in Adobe Journey Optimizer — to browse, create, update, clone, and publish content templates, fragments, landing pages, and journey/campaign inline content — with detailed guidance, example prompts, and best practices. 
 
 Learn more:
 

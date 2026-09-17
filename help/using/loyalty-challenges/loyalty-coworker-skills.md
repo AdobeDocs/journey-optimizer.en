@@ -21,7 +21,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover the CX Enterprise Coworker skills available for Loyalty Challenges in Adobe Journey Optimizer — creating and managing challenges, and querying loyalty program performance — with detailed guidance, example prompts, and best practices for each skill.
+**On this page:** Discover the CX Enterprise Coworker skills available for Loyalty Challenges in Adobe Journey Optimizer — creating and managing challenges, and querying loyalty program performance — with detailed guidance, example prompts, and best practices for each skill. 
 
 Learn more:
 
