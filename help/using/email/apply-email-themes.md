@@ -147,7 +147,7 @@ To define a theme that you can leverage in your future email contents, follow th
    >
    >The dark mode preview is a simulation and may not exactly match the final result. Send a proof to verify the exact rendering in email clients that support custom dark mode. [Learn more](dark-mode.md#guardrails)
 
-   Dark mode versions are saved independently — changes made in dark mode do not affect the light mode, and vice versa. For example, you can set a different background color or text color for dark mode without altering the light mode settings.
+   Dark mode color variants are saved independently from light mode colors. When you are in dark mode preview, color changes apply only to the dark mode version. However, non-color settings (such as spacing, padding, font size, etc.) are shared with light mode and are also applied there.
 
    >[!NOTE]
    >
@@ -206,6 +206,16 @@ To apply default or custom styling themes to a content template or an email, fol
    ![](assets/theme-select-custom.png)
 
 1. Click outside of the drop-down list. The newly selected custom theme automatically applies its styles to all email components. You can toggle between the color variants if any.
+
+1. Switch the toggle to **[!UICONTROL Dark mode]** for the selected theme. The dark mode version of that theme is applied to the email content. All subsequent color edits and previews will reflect the dark mode styling.
+
+   ![](assets/theme-light-mode.png){width="45%"}   ![](assets/theme-dark-mode.png){width=45%"}
+
+   The dark mode version is used when the message is displayed in supported dark mode email clients. [Learn more about dark mode](dark-mode.md)
+
+   >[!NOTE]
+   >
+   >When you are in dark mode preview, color changes apply only to the dark mode version. However, non-color settings (such as spacing, padding, font size, etc.) are shared with light mode and are also applied there.
 
 1. When a theme is selected in a content template, you can click the **[!UICONTROL Edit theme]** button to update it. [Learn more](#create-and-edit-themes)
 
