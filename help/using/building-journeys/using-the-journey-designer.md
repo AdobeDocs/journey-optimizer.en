@@ -150,7 +150,7 @@ The preview adapts to each channel. For example, mobile and SMS messages display
 Content preview is available in two contexts, each showing content the way it applies at that stage:
 
 * **When you design a journey** — Preview the content you authored for each activity as you build, so you can catch layout or content issues early, before you test.
-* **During a simulation** — Preview the content rendered for the selected test user, reflecting the personalization values and the path that user follows through the journey. [Learn how to run a simulation](simulate-journey.md).
+* **During a simulation or in test mode** — Preview the content rendered for the selected test user, reflecting the personalization values and the path that user follows through the journey. [Learn how to run a simulation](simulate-journey.md).
 
 ### Select multiple activities for bulk actions
 
