@@ -24,7 +24,7 @@ The **[!UICONTROL Monitoring]** workspace includes the following tabs:
 | **[!UICONTROL Streaming end-to-end]** | Monitor the end-to-end flow and quality of streaming-ingested data. | [Streaming end-to-end data ingestion](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/quality/monitor-data-ingestion#monitor-streaming-end-to-end-data-ingestion){target="_blank"} |
 | **[!UICONTROL Edge]** | Monitor data sent to the Edge Network. This page documents the Journey Optimizer-specific graphs available in this tab. | [Monitor Edge dataflows](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-edge){target="_blank"} |
 
-## Journey Optimizer graphs
+## Monitor Journey Optimizer data in Edge
 
 The following graphs are available in **[!UICONTROL Data Management]** > **[!UICONTROL Monitoring]** > **[!UICONTROL Edge]**.
 
