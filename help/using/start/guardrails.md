@@ -13,8 +13,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
 subfeature_v2:
@@ -364,19 +362,22 @@ The following guardrails apply to the [email channel](../email/get-started-email
 
 When publishing journeys that contain email messages, the total message content size must not exceed **2 MB** after backend processing. During publication, the system automatically processes message content by patching links, images, and applying transformations, which increases the payload size beyond the authored content size.
 
+This size limitation also applies to other backend operations that process the full email payload, such as **[!UICONTROL Copy to other locales]** in [multilingual content management](../content-management/multilingual-manual.md). Even though you are only copying content between locales, the operation serializes and processes the complete email payload, so it can fail with the same size error.
+
 >[!CAUTION]
 >
->If the final processed message content exceeds **2 MB**, journey publication will fail. Keep your authored message content well below 2 MB — ideally under **1 MB** — to allow a buffer of 300–400 KB for backend processing overhead.
+>If the final processed message content exceeds **2 MB**, the operation (journey publication or copy to other locales) will fail. Keep your authored message content well below 2 MB, ideally under **1 MB**, to allow a buffer of 300–400 KB for backend processing overhead.
 
-**Best practices to prevent publication failures:**
+**Best practices to prevent failures:**
 
 * Keep authored email content under **1 MB**
 * Minimize the number of content variants
 * Optimize and compress images before adding them to messages
 * Remove unused assets and unnecessary HTML elements
 * Test message size before publishing journeys to production
+* When copying content to multiple locales, copy to fewer locales at a time to reduce processing overhead
 
-If journey publication fails due to content size, reduce your message content and republish the journey.
+If publication or the copy operation fails due to content size, reduce your message content and try again.
 
 ### SMS guardrails {#sms-guardrails}
 
@@ -416,9 +417,26 @@ To keep your engageable profiles within reasonable limits, Adobe recommends sett
 
 Journey Optimizer supports a peak volume of **500 transactional messages per second** in campaigns.
 
+### Subdomains guardrails {#subdomain-guardrails}
+
+The guardrails and limitations applying to subdomain delegation in Journey Optimizer are detailed on [this page](../configuration/delegate-subdomain.md#guardrails).
+
 ## Content & Assets {#content-assets}
 
-This section covers guardrails for content creation and management, including landing pages, subdomains, and fragments.
+This section covers guardrails for content creation and management, including landing pages and fragments.
+
+### Content authoring guardrails {#content-authoring}
+
+The recommended size limits for content types are as follows:
+
+| Content type | Recommended size limit |
+|---|---|
+| Template | 1200 KB |
+| Fragment | 700 KB |
+| Message | 1200 KB |
+| Landing page | 1000 KB |
+
+A warning is surfaced when a content variant exceeds its recommended size threshold. This applies to all content types and channels, and does not block saving or publishing.
 
 ### Generate Content guardrails {#ai-assistant-g}
 
@@ -433,10 +451,6 @@ The following guardrails apply to the [landing pages](../landing-pages/get-start
 * You cannot add a preheader to a landing page.
 * You cannot select the **Code your own** option when designing a landing primary page.
 
-### Subdomains guardrails {#subdomain-guardrails}
-
-The guardrails and limitations applying to subdomain delegation in Journey Optimizer are detailed on [this page](../configuration/delegate-subdomain.md#guardrails).
-
 ### Fragments guardrails {#fragments-guardrails}
 
 The following guardrails apply to the [fragments](../content-management/fragments.md):
@@ -444,7 +458,13 @@ The following guardrails apply to the [fragments](../content-management/fragment
 * To create, edit, archive, and publish fragments you need the **[!DNL Manage library items]** and **[Publish Fragment]** permissions included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
 * Visual fragments are only available for the Email channel.
 * Expression fragments are not available for the In-app channel.
-* Visual fragments cannot exceed **100 KB**. Expression fragments cannot exceed **200 KB**.
+* Fragments cannot exceed **700 KB**. To stay below this threshold, split large content into multiple reusable fragments, reduce heavy markup, and optimize linked assets.
+
+* **Fragment count limits**: the number of unique fragments used within a piece of content is validated during authoring. Only fragments (including AEM fragments) referenced directly are counted — fragments nested inside other fragments are not counted separately.
+
+  * **Per variant**: up to 60 unique fragments per content variant. A warning is shown when usage reaches 45 (75% of the limit); publishing is blocked at 60.
+  * **Across variants**: up to 120 unique fragments across all variants of a single message. A warning is shown when usage reaches 90 (75% of the limit); publishing is blocked at 120.
+
 * To use a fragment in a journey or campaign, it must be in the **Live** status.
 * [Contextual attributes](../personalization/personalization-build-expressions.md) are not supported within fragments.
 * Visual fragments are not cross-compatible between the Use Themes and Manual Styling modes. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Use Themes mode. [Learn more on themes](../email/apply-email-themes.md)
@@ -464,3 +484,5 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 ### Campaign Orchestration guardrails {#orchestration-guardrails}
 
 Guardrails and limitations to keep in mind when working with Campaign Orchestration are detailed in this section: [Guardrails & limitations](../orchestrated/guardrails.md).
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-guardrails.md}}

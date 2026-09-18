@@ -15,10 +15,12 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decision capabilities
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decisioning
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -91,3 +93,25 @@ To send in feedback data, you need to create a dataset to collect events and, fo
 * Learn how to create a dataset where the experience events will be collected in [this section](create-dataset.md).
 
 * Learn how to define experience events to send in feedback data in [this section](schema-requirement.md).
+
+## Suppress feedback events {#suppress-feedback}
+
+When testing your implementation, you can use the `dryRun` flag to suppress feedback events and prevent them from being captured for reporting and frequency capping counters.
+
+>[!CAUTION]
+>
+>The `dryRun` flag is intended for testing purposes only. Make sure to remove it before going live, as leaving it active in production will silently suppress all feedback data and prevent frequency capping counters from being incremented.
+
+Add the `dryRun` flag into the XDM event `data` block in your client implementation:
+
+```json
+{
+    "data": {
+        "__adobe": {
+            "ajo": {
+                "dryRun": true
+            }
+        }
+    }
+}
+```

@@ -15,6 +15,8 @@ product_v2:
 feature_v2:
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
 subfeature_v2:
   - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
     internal-label: Proofs
@@ -220,6 +222,4 @@ Journey Optimizer allows you to send proofs to email addresses while impersonati
 
 ![Sent proofs list](assets/simulate-custom-sent-proofs.png)
 
->[!NOTE]
->
->The mirror page link is not active in proofs sent for variants. It only activates in the final message. [Learn more](../email/message-tracking.md#mirror-page).
+{{$include /help/_includes/do-not-localize/test-approve/ai-augmented-simulate-sample-input.md}}

@@ -63,11 +63,9 @@ After publishing your campaign, add the `dryRun` flag into the XDM event `data` 
 }
 ```
 
-<!--
 >[!CAUTION]
 >
->Adding the `dryRun` flag to your request will prevent feedback to be captured for reporting and frequency counters from being added to.
--->
+>The `dryRun` flag is intended for testing purposes only. Make sure to remove it before going live, as leaving it active in production will silently suppress all feedback data and prevent frequency capping counters from being incremented.
 
 ## Deduplication of decision items in code-based implementations {#code-based-decisioning-deduplication}
 

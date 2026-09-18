@@ -9,6 +9,8 @@ exl-id: b83bdade-7275-4eef-9c49-fc1d157cee0d
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
     internal-label: In App channel
@@ -139,3 +141,5 @@ In the **[!UICONTROL Target URL]** field, enter the web URL or deep link that wi
 ![](assets/content-card-design-6.png)
 
 In the **[!UICONTROL Custom data]** section, click **[!UICONTROL Add Key/Value pair]** to include custom variables in the payload. These key/value pairs allow you to pass additional data, depending on your specific configuration. This allows you to add personalized or dynamic content, tracking information, or any other data relevant to your setup.
+
+{{$include /help/_includes/do-not-localize/content-card/ai-augmented-design-content-card.md}}

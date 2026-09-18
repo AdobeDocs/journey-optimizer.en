@@ -8,10 +8,14 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
-feature_v2: []
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
 ---
 # Get started with loyalty challenges {#get-started-loyalty-challenges}
 
@@ -20,9 +24,11 @@ subfeature_v2:
 >title="Loyalty challenges"
 >abstract="Loyalty Challenges enable you to create engaging, gamified loyalty programs that drive customer behavior and deepen brand relationships. Build challenges that reward customers for specific actions—from making purchases and writing reviews to engaging on social media and referring friends."
 
->[!AVAILABILITY]
->
->Journey Optimizer Loyalty is not currently available to Healthcare Shield and Privacy and Security Shield customers. Availability for Healthcare Shield and Privacy and Security Shield customers will be updated upon future feature readiness.
+>[!BEGINSHADEBOX]
+
+**On this page:** Get an overview of Loyalty Challenges, learn how the program works, review prerequisites, and find the documentation needed to set up, create, launch, and measure challenges.
+
+>[!ENDSHADEBOX]
 
 ## Overview {#overview}
 
@@ -53,7 +59,7 @@ You can create these types of challenge experiences:
 * **Bring your own data challenges** (restricted availability): The challenge framework (tasks and rewards) is assembled from your Loyalty Challenges data integration. You configure Settings, Content, and Messaging as you would for any other challenge type.
 
 >[!TIP]
->You can also create and manage loyalty challenges using **Loyalty Challenge Management** in [CX Coworker Journey Skills](../start/ajo-coworker-skills.md#loyalty-challenge-management) with natural language prompts for faster challenge creation.
+>You can also create and manage loyalty challenges using **Loyalty Challenge Management** in [Coworker skills for loyalty](loyalty-coworker-skills.md#loyalty-challenge-management) with natural language prompts for faster challenge creation.
 
 ➡️ [Watch an overview of the feature](#video)
 
@@ -180,4 +186,8 @@ For authentication and required headers, see the [authentication tutorial](https
 **New to Loyalty Challenges?** Watch this overview to understand the capabilities and benefits:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496441?quality=12)
+
+## Interactive demo {#demo}
+
+Want to see Loyalty Challenges in action first? Check out the [interactive demo](loyalty-challenges-demo.md).
 

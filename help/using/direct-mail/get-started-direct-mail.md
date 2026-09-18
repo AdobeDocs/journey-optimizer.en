@@ -81,3 +81,5 @@ Learn how to leverage the Direct Mail channel in Adobe Journey Optimizer to auto
 For a written walkthrough of the same steps, see the [direct mail channel tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}.
 
 For common questions about direct mail, see the [Additional resources](#additional-resources) section above.
+
+{{$include /help/_includes/do-not-localize/direct-mail/ai-augmented-get-started-direct-mail.md}}

@@ -6,6 +6,12 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7d650278-4a62-4666-b8d7-f0b79ec527ea
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: bd995268-c4fc-41c8-8f09-eb370effe46e
+    internal-label: Inbox channel
 ---
 # Create an Inbox {#inbox-create}
 
@@ -48,3 +54,5 @@ To create a message inbox through a campaign, follow these steps:
 1. Review and activate your campaign to send messages to the inbox.
 
 You can now choose this Inbox when creating your [Content card campaign](../content-card/create-content-card.md).
+
+{{$include /help/_includes/do-not-localize/inbox/ai-augmented-inbox-create.md}}

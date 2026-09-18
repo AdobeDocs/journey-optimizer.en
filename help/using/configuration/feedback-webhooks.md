@@ -31,6 +31,16 @@ subfeature_v2:
 ---
 # Create feedback webhooks for API triggered campaigns {#webhooks}
 
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings_configuration"
+>title="Basic Configuration"
+>abstract="In this section, enter a descriptive name to identify the webhook and select the channel(s) for which this webhook should receive feedback (Email and/or SMS). In the Webhook URL field, provide the HTTPS endpoint where feedback events must be delivered."
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings_create"
+>title="Feedback Webhooks"
+>abstract="Feedback webhooks allows you to receive real-time feedback on the execution status of messages sent with transactional API triggered campaigns. Only one webhook configuration per Organization + sandbox combination is allowed."
+
 >[!BEGINSHADEBOX]
 
 **On this page:** Learn how to create and configure feedback webhooks that deliver real-time message status updates to your systems for transactional API-triggered campaigns in Adobe Journey Optimizer.
@@ -46,7 +56,22 @@ You can manage webhook configurations from the **[!UICONTROL Administration]** /
 >[!NOTE]
 >Only one webhook configuration per **Organization + sandbox** combination is allowed.  
 
-## Create a feedback webhook  
+## Create a feedback webhook {#feedback-webhook}
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings_authentication"
+>title="Authentication"
+>abstract="If your endpoint requires JWT authentication, select **JWT Authentication** from the list and provide the required details."
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_settings_header_parameters"
+>title="Header Parameters"
+>abstract="In this section, you can configure additional custom headers to be sent with each webhook request."
+
+>[!CONTEXTUALHELP]
+>id="ajo_channels_feedback_webhook_relay_url"
+>title="Relay URL"
+>abstract="The HTTPS endpoint Journey Optimizer calls to deliver events for this webhook, including delivery-status updates and, where enabled, inbound SMS/RCS messages relayed as-is."
 
 To create a webhook, follow these steps:  
 

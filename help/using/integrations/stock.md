@@ -120,3 +120,4 @@ To license and download your image, follow the steps below:
 * [Components settings for email design](../email/content-components.md)
 * [Adobe Stock Get Started](https://helpx.adobe.com/stock/get-started.html){target="_blank"}.
 
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-stock.md}}

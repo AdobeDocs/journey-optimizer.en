@@ -16,6 +16,8 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
@@ -186,3 +188,5 @@ You can now test your direct mail message and send it to your audience. [Learn h
 * [Preview and test content](../content-management/preview-test.md)
 
 For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md). 
+
+{{$include /help/_includes/do-not-localize/direct-mail/ai-augmented-create-direct-mail.md}}

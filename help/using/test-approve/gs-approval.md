@@ -9,7 +9,9 @@ TQID: https://experienceleague.adobe.com/dKfstmm0ilHKUATU-sz7c04IZBu2O7Ju-srPPoK
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
-feature_v2: []
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -146,3 +148,5 @@ No. Requestors cannot manually select which user group receives or routes the ap
 * **[Request approval](request-approval.md)** - Understand how to submit content for approval and track approval status.
 * **[Review and approve requests](review-approve-request.md)** - Discover how to review, approve, or reject approval requests as an approver.
 * **[Simulate content variations](simulate-sample-input.md)** - Click **[!UICONTROL Simulate content]** to test content variations with sample input data, AI auto-generation, or simulated users. Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
+
+{{$include /help/_includes/do-not-localize/test-approve/ai-augmented-gs-approval.md}}

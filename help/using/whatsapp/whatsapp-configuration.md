@@ -14,6 +14,8 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
@@ -265,3 +267,5 @@ The video below shows how to set up the WhatsApp channel in Adobe Journey Optimi
 >[!VIDEO](https://video.tv.adobe.com/v/3470268/?learn=on)
 
 +++
+
+{{$include /help/_includes/do-not-localize/whatsapp/ai-augmented-whatsapp-configuration.md}}

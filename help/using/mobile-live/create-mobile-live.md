@@ -12,10 +12,12 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
-    internal-label: Track and monitor
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 subfeature_v2:
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
@@ -184,9 +186,12 @@ After designing your Live activity, you can track measuring the impact of your L
 
 >[!AVAILABILITY]
 >
-> `executionMetadata` is available for both **API-triggered Transactional** and **API-triggered Marketing** campaigns.
+> `executionMetadata` is only available for **API-triggered Transactional** campaigns.
 
 Attach your own **custom data** to a profile, such as an order ID, loyalty tier, or region code, using the optional `executionMetadata` field. Journey Optimizer stores this data alongside the execution so you can retrieve it later from your **Live activity feedback dataset** and match delivery results to your own business records.
+
+To send this data via the API, see the [Messaging API reference for the `executionMetadata` field](https://developer.adobe.com/journey-optimizer-apis/references/messaging#operation/postIMUnitaryMessageExecution!path=recipients/0/executionMetadata&t=request). To read the values back on the device, see the [Mobile SDK guide on receiving execution metadata from the API trigger](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/tutorial#receiving-execution-metadata-from-the-api-trigger).
+
 To add custom data with execution metadata:
 
 * Add `executionMetadata` to a profile, next to `userId` and `namespace`. Only string keys and string values are accepted, convert any non-string value to a string before sending it.
@@ -245,11 +250,10 @@ In this example, `orderId`, `tier`, `restaurant`, and `region` are your own valu
 
 +++
 
-After designing your Live activity, you can track measuring the impact of your Live activity with [built-in reports](../reports/campaign-global-report-cja-activity.md).
-
-
 ## How-to video
 
 Discover how to configure iOS Live activities with Adobe Journey Optimizer to deliver rich, real-time updates on the iPhone Lock Screen and Dynamic Island.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479864)
+
+{{$include /help/_includes/do-not-localize/mobile-live/ai-augmented-create-mobile-live.md}}

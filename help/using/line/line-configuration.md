@@ -14,6 +14,8 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: e09fc1e6-407c-418f-adc5-e2ffe8b8986e
     internal-label: LINE channel
@@ -132,3 +134,5 @@ POST https://platform.adobe.io/journey/imp/config/channel-settings
     "_etag": "\"eab98d24-18af-48ae-90f9-e59d4f8cfb2b\""
 }
 ```
+
+{{$include /help/_includes/do-not-localize/line/ai-augmented-line-configuration.md}}

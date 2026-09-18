@@ -19,6 +19,7 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+subfeature_v2: []
 ---
 
 # Migrate batch audiences from Audience Qualification journeys and Exit criteria{#aq-batch-migration}

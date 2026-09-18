@@ -16,10 +16,10 @@ product_v2:
 feature_v2:
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
@@ -274,3 +274,5 @@ Learn how to configure an event, specify the streaming endpoint and the payload 
 Understand the applicable use cases for business events. Learn how to build a journey using a business event and which best practices to apply.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334234?quality=12)
+
+{{$include /help/_includes/do-not-localize/event/ai-augmented-about-events.md}}

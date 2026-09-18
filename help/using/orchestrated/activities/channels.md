@@ -12,6 +12,8 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
+  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
+    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
@@ -183,9 +185,13 @@ Additional settings are available depending on the selected communication channe
 
 +++**Email header personalization** (Email).
 
->[!AVAILABILITY]
+>[!IMPORTANT]
 >
 >This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+> 
+>Journey Optimizer lets you personalize the sender information, including data from Campaign Orchestration's relational store, enabling use cases such as sending an email in the name of the account manager. Since this data may be subject to usage restrictions defined by your organization or by legal regulations, ensure that your data operations within Journey Optimizer are compliant with your legal and compliance obligations.
+>
+>Adobe Journey Optimizer handles consent through the Adobe Experience Platform (AEP) at the profile level. When personalizing using Journey Optimizer Campaign Orchestration relational, non-profile data, organizations should create and enforce consent policies using segmentation and personalization.
 
 After selecting your channel configuration, enable **[!UICONTROL Override email delivery settings]** to replace values defined in that configuration. You can customize the following settings for this channel activity:
 

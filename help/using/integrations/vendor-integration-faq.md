@@ -185,3 +185,5 @@ You can integrate with any third party platform that exposes a compatible API en
 ➡️ [Learn more on vendor integration procedures](vendor-integration.md)
 
 +++
+
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-vendor-integration-faq.md}}

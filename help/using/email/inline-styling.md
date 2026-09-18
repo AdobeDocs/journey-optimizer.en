@@ -53,3 +53,5 @@ In the Email Designer interface, when you select an element and display its sett
    ![](assets/styles_2.png)
 
 The styling is then applied to the selected element. If the child elements do not have specific styling attributes defined, the styling of the parent element is inherited.
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-inline-styling.md}}

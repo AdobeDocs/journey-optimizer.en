@@ -81,3 +81,5 @@ To import a file containing HTML content, follow the steps below:
 Learn how to import existing HTML content, tweak the design, add mirror page and unsubscribe links, and how to code your content.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334102?quality=12)
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-existing-content.md}}

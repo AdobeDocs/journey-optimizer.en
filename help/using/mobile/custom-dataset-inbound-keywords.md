@@ -9,6 +9,10 @@ level: Intermediate
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
     internal-label: SMS and MMS channel
@@ -120,3 +124,5 @@ Configure credentials according to your SMS provider using [Get started with SMS
     >Upon saving API credentials, Journey Optimizer validates that the inbound keyword dataset is configured correctly. If validation fails, an error message indicates the required correction.
 
 After the credentials are saved, outbound and inbound messaging behavior is unchanged; inbound keywords for that credential are recorded in the selected custom dataset.
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-custom-dataset-inbound-keywords.md}}

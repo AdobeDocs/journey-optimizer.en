@@ -5,6 +5,12 @@ feature: Channel Configuration
 topic: Content Management
 role: User
 level: Beginner
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
+    internal-label: Custom Channels
 ---
 
 # Monitor custom channels {#monitor-custom-channel}
@@ -157,3 +163,5 @@ If you encounter issues with your custom channel, the following table lists comm
 * [Global report overview](../reports/report-gs-cja.md)
 * [Journey live report](../reports/live-report.md
 -->
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-monitor-custom-channel.md}}

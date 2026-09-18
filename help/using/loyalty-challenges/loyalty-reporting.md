@@ -8,14 +8,26 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a1b2c3d4-e5f6-7890-abcd-ef1234567890
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
 ---
 # Monitor loyalty challenge performance {#loyalty-reporting}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use Loyalty Challenges Reports and Insights to monitor member activity, challenge performance, reward outcomes, revenue, and program recommendations. 
+
+>[!ENDSHADEBOX]
 
 Use Loyalty Challenges reporting to see how your challenges are performing. Check who is signing up, who is completing challenges, and how much revenue your program is generating — all in one place. Data comes from Adobe Customer Journey Analytics.
 
 To open the reporting dashboards, go to **[!UICONTROL Loyalty Challenges]** in Journey Optimizer and select **[!UICONTROL Performance]** in the left navigation.
+
+➡️ [Watch how to measure challenge performance with challenge reports](#video)
 
 The reporting interface has two tabs:
 
@@ -42,7 +54,7 @@ Below the key metrics, the **Challenges** section gives you two views of challen
 ![](assets/reporting-challenge-challenges.png)
 
 * **Challenge engagement**: A timeline showing how many members started, are in progress, and completed challenges over the period.
-* **Challenge reports**: A table of all your challenges with details like type, tasks, status, and enrollment numbers. Use the search bar to find a specific challenge. Select a challenge to see its full report with engagement trends and performance details.
+* **Challenge reports**: A table of all your challenges with details like type, status, and enrollment numbers. Use the search bar to find a specific challenge. Select a challenge to see its full report with engagement trends and performance details.
 
     +++Challenge report example
 
@@ -84,3 +96,8 @@ Each card carries a **category tag** that identifies which part of your program 
 | **Member lifecycle** | How members progress through enrollment, engagement, and churn stages |
 | **Trend** | Time-based patterns such as weekly cycles, seasonal spikes, or trend reversals |
 
+## How-to videos {#video}
+
+➡️ Watch how to measure challenge performance with challenge reports
+
+>[!VIDEO](https://video.tv.adobe.com/v/3497534?quality=12)

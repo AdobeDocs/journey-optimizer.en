@@ -9,7 +9,9 @@ role: User
 level: Beginner
 keywords: email, template, image, HTML, AI, design, converter
 exl-id: d13467b7-2f3c-4707-a7e0-9b46cb6cafb1
-feature_v2: []
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
     internal-label: Templates
@@ -69,8 +71,6 @@ The image to HTML converter is ideal for:
 To access this feature, your organization must have signed the [!DNL Generative AI] addendum with Adobe. If you are unsure, contact your Adobe representative.
 
 **Permissions**
-
-* To access and create templates, your role must include the **[!UICONTROL Manage content templates]** permission (under the **Content Management** resource). [Learn more about permissions](../administration/permissions.md)
 
 * To use the image to HTML converter, you need to be granted the **Generate Content** permission. Learn how to assign Content generation related permissions in [this section](../content-management/gs-generative.md#generative-access).
 

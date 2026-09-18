@@ -204,6 +204,10 @@ After setting up your multilingual content, you are ready to craft your campaign
 
 1. Access the advanced settings of the **[!UICONTROL Locales]** menu and select **[!UICONTROL Copy to all locales]**.
 
+    >[!NOTE]
+    >
+    >This operation processes the full email payload in the backend and is subject to the same [message content size guardrail](../start/guardrails.md#message-content-size) as journey publication (2 MB maximum, ideally under 1 MB). If your content is large, copy to fewer locales at a time.
+
     ![](assets/multilingual-campaign-4.png)
 
 1. Now that your content is duplicated throughout your selected **[!UICONTROL Locales]**, access each locale and click **[!UICONTROL Edit email body]** to translate your content.

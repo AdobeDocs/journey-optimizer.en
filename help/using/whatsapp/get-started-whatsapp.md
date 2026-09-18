@@ -109,3 +109,4 @@ Explore more video tutorials on WhatsApp messaging and configuration.
 
 ➡️ [WhatsApp channel tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/whatsapp/whatsapp-introduction){target="_blank"}
 
+{{$include /help/_includes/do-not-localize/whatsapp/ai-augmented-get-started-whatsapp.md}}

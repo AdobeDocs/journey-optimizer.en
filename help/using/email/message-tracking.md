@@ -14,21 +14,15 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
 subfeature_v2:
-  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
-    internal-label: Fragments
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
-  - id: f550d0f2-143d-4093-9463-467fbec95fcc
-    internal-label: Accessibility
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
+    internal-label: Performance monitoring
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -139,9 +133,11 @@ To insert links into your email content, follow the steps below:
 
 1. Enter the desired URL in the corresponding field, or select a landing page, and define the link settings and styles. [Learn more](#adjust-links)
 
-    >[!NOTE]
+    For interpreting URLs, [!DNL Journey Optimizer] complies with the URI syntax ([RFC 3986 standard](https://datatracker.ietf.org/doc/html/rfc3986){target="_blank"}), which disables some special international characters in URLs. When trying to send the proof or email, if you are returned an error involving a URL added to your content, URL encode the string as a workaround. For example, if a URL path contains an apostrophe (`'`), use `%27` instead (e.g., `https://example.com/nature%27s-miracle` instead of `https://example.com/nature's-miracle`).
+    
+    >[!CAUTION]
     >
-    >For interpreting URLs, [!DNL Journey Optimizer] complies with the URI syntax ([RFC 3986 standard](https://datatracker.ietf.org/doc/html/rfc3986){target="_blank"}), which disables some special international characters in URLs. When trying to send the proof or email, if you are returned an error involving a URL added to your content, you can URL encode the string as a workaround.
+    >When tracked links or appended URL tracking parameters are used, leaving unsupported characters unencoded may lead to incorrect downstream URL handling after redirect. Encode any unsupported characters to help preserve the full destination URL.
 
 1. You can personalize your links. [Learn more](url-personalization.md)
 
@@ -258,3 +254,4 @@ Reporting on openings and clicks is available in the [Live report](../reports/li
 
 For detailed guidance on URL personalization (including how to personalize URL tracking parameters and how to personalize a complete/base URL), refer to [URL personalization](url-personalization.md).
 
+{{$include /help/_includes/do-not-localize/email/ai-augmented-message-tracking.md}}
