@@ -28,6 +28,10 @@ The **[!UICONTROL Monitoring]** workspace includes the following tabs:
 
 The following graphs are available in **[!UICONTROL Data Management]** > **[!UICONTROL Monitoring]** > **[!UICONTROL Edge]**.
 
+From the drop-down menu, select **[!UICONTROL AJO throughput]**.
+
+![](assets/monitor-menu.png)
+
 ### AJO Gateway Throughput {#gateway-throughput}
 
 The **[!UICONTROL AJO Gateway Throughput]** graph shows the total number of records processed by the Journey Optimizer gateway per second over time. Use this metric to monitor the overall volume of inbound requests handled by the gateway.
