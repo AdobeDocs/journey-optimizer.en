@@ -179,7 +179,7 @@ The mirror page URL is not currently available as a documented field in an Adobe
 >
 >* When creating emails that rely heavily on runtime personalization (e.g., `#each` loops, nested objects, large payload data), mirror page URLs can become excessively large, particularly in API-triggered campaigns that use extensive contextual data from payloads. This can cause HTTP errors (404, 422, 502) in browsers or mail clients. Adobe recommends limiting the breadth and depth of dynamic fields, reducing reliance on complex fragments, and flattening personalization structures to prevent link failures.
 >
->* In the [proof](../content-management/proofs.md) sent to the test profiles, the link to the mirror page is not active. It is only active in the final messages.
+>* In the [proof](../content-management/proofs.md) sent to the test profiles, including proofs sent from journey [Simulation](../building-journeys/simulate-journey.md), the link to the mirror page is not active. It is only active in the final messages.
 
 ### Decisioning in mirror pages {#decisioning-mirror-page}
 
