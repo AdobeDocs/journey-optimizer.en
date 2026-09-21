@@ -364,6 +364,8 @@ Journey Simulation skill brings AI-driven Quick Simulation into the chat interfa
 
 This feature currently only supports the Quick Simulation flow, and does not fully replace the Journey Optimizer manual simulation experience. 
 
+Use Quick Simulation for a fast, automated sanity check of a journey's logic. For granular control over simulated users and scenarios, use the [manual simulation experience in Journey Optimizer](simulate-journey-gs.md).
+
 As part of this Quick Simulation experience, users cannot:
 
 * Choose an existing saved simulated user for a run.
@@ -371,6 +373,5 @@ As part of this Quick Simulation experience, users cannot:
 * Create, browse, update, or delete persistent simulated users through chat.
 * Target a specific path or custom test case.
 
-Use Quick Simulation for a fast, automated sanity check of a journey's logic. For granular control over test users and scenarios, use the [manual simulation experience in Journey Optimizer](simulate-journey-gs.md).
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-journeys-coworker-skills.md}}
