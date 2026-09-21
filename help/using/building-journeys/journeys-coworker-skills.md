@@ -338,7 +338,7 @@ To maximize the effectiveness of Journey Analyze, follow these best practices:
 
 ## Journey Simulation {#journey-simulation}
 
-Journey Simulation skill brings AI-driven Quick Simulation into the chat interface, letting users validate a journey's logic conversationally. Through Coworker or another MCP client, users can generate simulated test data, run and manage a simulation, and review the results.
+Journey Simulation skill brings AI-driven Quick Simulation into the chat interface, letting users validate a journey's logic conversationally. Through Coworker, users can generate simulated test data, run and manage a simulation, and review the results.
 
 ### Key use cases
 
