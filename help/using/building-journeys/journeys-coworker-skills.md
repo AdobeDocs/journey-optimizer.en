@@ -336,4 +336,41 @@ To maximize the effectiveness of Journey Analyze, follow these best practices:
 * **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 * **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
 
+## Journey Simulation {#journey-simulation}
+
+Coworker is planned to support AI-driven Quick Journey Simulation outside of Journey Optimizer, letting users initiate and manage a journey simulation run conversationally through Coworker or another MCP client.
+
+### Key use cases
+
+1. **Generate simulated test data**
+
+   * Generate the minimum simulated users needed to exercise the journey's branches.
+   * Generate event data for event-triggered journeys, so each branch is triggered.
+
+1. **Run and manage simulations**
+
+   * Start a simulation run.
+   * Reset a simulation run.
+   * Check the status of a simulation run.
+   * List the simulated users included in a run.
+   * Retrieve run logs.
+
+1. **Review simulation results**
+
+   * Return detailed results, including step-by-step path traversal.
+   * Return branch outcomes for the simulated run.
+
+### Limitations
+
+This feature currently only supports the Quick Simulation flow, and does not fully replace the Journey Optimizer manual simulation experience. 
+
+As part of this Quick Simulation experience, users cannot:
+
+* Choose an existing saved simulated user for a run.
+* Edit a simulated user before rerunning a simulation.
+* Create, browse, update, or delete persistent simulated users through chat.
+* Target a specific path or custom test case.
+
+Use Quick Simulation for a fast, automated sanity check of a journey's logic. For granular control over test users and scenarios, use the [manual simulation experience in Journey Optimizer](simulate-journey-gs.md).
+
 {{$include /help/_includes/do-not-localize/start/ai-augmented-journeys-coworker-skills.md}}
