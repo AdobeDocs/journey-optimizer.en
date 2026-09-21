@@ -147,7 +147,7 @@ To define a theme that you can leverage in your future email contents, follow th
    >
    >The dark mode preview is a simulation and may not exactly match the final result. Send a proof to verify the exact rendering in email clients that support custom dark mode. [Learn more](dark-mode.md#guardrails)
 
-   Dark mode color variants are saved independently from light mode colors. When you are in dark mode preview, color changes apply only to the dark mode version. However, non-color settings (such as spacing, padding, font size, etc.) are shared with light mode and are also applied there.
+   Dark mode color variants are independent from light mode colors, so color edits in dark mode preview apply only to the dark mode version. However, non-color settings (such as spacing, padding, font size, etc.) are shared with light mode and are also applied there.
 
    >[!NOTE]
    >
@@ -207,7 +207,7 @@ To apply default or custom styling themes to a content template or an email, fol
 
 1. Click outside of the drop-down list. The newly selected custom theme automatically applies its styles to all email components. You can toggle between the color variants if any.
 
-1. Switch the toggle to **[!UICONTROL Dark mode]** for the selected theme. The dark mode version of that theme is applied to the email content. All subsequent color edits and previews will reflect the dark mode styling.
+1. Switch the toggle to **[!UICONTROL Dark mode]** for the selected theme. The dark mode version of that theme is applied to the email content. Update it as needed - any subsequent color edits and previews reflect the dark mode styling.
 
    ![](assets/theme-light-mode.png){width="45%"}   ![](assets/theme-dark-mode.png){width=45%"}
 
@@ -215,7 +215,7 @@ To apply default or custom styling themes to a content template or an email, fol
 
    >[!NOTE]
    >
-   >When you are in dark mode preview, color changes apply only to the dark mode version. However, non-color settings (such as spacing, padding, font size, etc.) are shared with light mode and are also applied there.
+   >When you are in dark mode preview, color changes apply only to the dark mode version. However, non-color settings (such as spacing, padding, font size, etc.) are also applied to light mode.
 
 1. When a theme is selected in a content template, you can click the **[!UICONTROL Edit theme]** button to update it. [Learn more](#create-and-edit-themes)
 
