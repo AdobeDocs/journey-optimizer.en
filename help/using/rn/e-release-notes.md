@@ -35,7 +35,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 This release brings several new and improved [Coworker](../start/ai-features.md#cx-coworker) features and skills, listed here for visibility. Each one is also detailed in its relevant section below.
 
-* [Message-copy and email-design plugins](#sep-26-content-management) - Two new plugins that streamline messaging and email workflows in Coworker, from campaign brief to production-ready copy and HTML.
+* [CE Channel Content plugin](#sep-26-content-management) - A new plugin that brings campaign copy, image, and email HTML skills together in Coworker, from campaign brief to production-ready copy and HTML.
 * [Loyalty recommendation skill](#sep-26-loyalty) - Request challenge opportunities directly in Coworker's conversational interface and turn them into live challenges without leaving the chat.
 * [Journey Simulation](#sep-26-journeys) - Automate end-to-end journey validation and interpret the results directly in Coworker.
 * [Journey creation from the Coworker rail](#sep-26-journeys) - Generate journeys with AI directly from the Coworker right rail, replacing the previous AI Assistant experience.
@@ -53,26 +53,25 @@ The following capability is coming to content management in this release.
 <table>
 <thead>
 <tr>
-<th><strong>Message-copy and email-design plugins in Coworker</strong><br/></th>
+<th><strong>Channel Content plugin in Coworker</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Two new plugins are now available in Coworker to streamline your <strong>messaging and email workflows</strong> from strategy to deployment:</p>
-<p><strong>Message copy plugin</strong>:</p>
+<p>A new <strong>Channel Content</strong> plugin is now available in Coworker, bringing campaign copy, image, and assembled email HTML skills together under one plugin from strategy to deployment. The following skills are available under the **Channel Content** plugin:</p>
 <ul>
-<li>Captures campaign briefs and defines messaging maps, narrative arcs, and channel roles.</li>
-<li>Builds a multi-dimensional content matrix tailored across channels, touchpoints, locales, audiences, and variants.</li>
-<li>Produces net-new copy and leverages Adobe Firefly to generate, crop, and adapt campaign visuals.</li>
-<li>Allows in-place content evaluation and directly syncs approved assets back to Journey Optimizer, Adobe Campaign V8, and Marketo.</li>
-</ul>
-<p><strong>Email design plugin</strong>:</p>
-<ul>
-<li>Converts marketing goals, reference screenshots, or Figma design links into custom layout plans and production-ready email HTML.</li>
-<li>Manages reusable brand assets, design tokens, and structural email templates.</li>
-<li>Audits assembled email code for corporate compliance, visual design quality, and WCAG 2.1 AA accessibility standards.</li>
-<li>Exports approved HTML directly into Adobe Journey Optimizer and Adobe Campaign.</li>
+<li><strong>Orchestrate Content Authoring</strong>.</li>
+<li><strong>Explore Content Strategy</strong></li>
+<li><strong>Content Brief</strong></li>
+<li><strong>Generate Content</strong></li>
+<li><strong>Check Content Readiness</strong></li>
+<li><strong>Revise and Regenerate Content</strong></li>
+<li><strong>Generate Image</strong></li>
+<li><strong>Assess Content Design</strong></li>
+<li><strong>Save Channel Content</strong></li>
+<li><strong>Build Email from Figma</strong></li>
+<li><strong>Brand Lookup</strong> </li>
 </ul>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
