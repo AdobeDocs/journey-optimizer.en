@@ -175,9 +175,20 @@ You can insert your dynamic template directly into your content using the Image 
 
     ![](assets/dynamic-media-template-1.png)
 
-1. Browse through your AEM assets and select the Dynamic media template you want to add to your content.
+1. Choose how you want to add your Dynamic Media template:
 
-    ![](assets/dynamic-media-template-2.png)
+    * **Browse** — browse through your AEM assets and select the Dynamic media template you want to add to your content.
+
+        ![](assets/dynamic-media-template-2.png)
+
+    * **Import from PSD** — drag and drop a Photoshop (PSD) file directly into the component. Adobe Journey Optimizer automatically converts the file into a Dynamic Media template and stores it in Dynamic Media.
+
+        >[!NOTE]
+        >Import from PSD does not require a manual conversion step or a round-trip through Adobe Experience Manager.
+
+        Once imported, edit the template using the built-in Dynamic Media editor — the same experience used for [Adobe Express content](express.md) in the Email Designer.
+
+        <!-- GIF/screenshot placeholder: to be added -->
 
 1. In the **Image settings**, navigate to access the parameters of your dynamic media template.
 
