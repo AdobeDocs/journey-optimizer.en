@@ -46,7 +46,7 @@ Inbound actions, such as In-app, web, and code-based experiences, are critical c
 
 >[!NOTE]
 >
->Journey status, profile participation, audience membership, and content delivery are separate states. A journey can be **[!UICONTROL Live]**, **[!UICONTROL Closed]**, or **[!UICONTROL Stopped]** while a profile is still moving through a previously entered path, and the `joai` membership shown in Hub or Edge can lag behind a journey stop while propagation completes. Check the journey version and profile participation first, then compare the Hub profile, Edge profile, and delivery-server response before concluding that content is still eligible.
+>Journey status, profile participation, audience membership, and content delivery are separate states. Stopping a journey ends the profile's participation in that journey. A `Realized` audience status means that the profile is currently represented as qualified for that audience; it does not, by itself, prove that the journey is still active or that content is still being delivered. When the states disagree, verify the journey version, profile participation, audience projection, proposition response, and delivery-server response.
 
 This guide provides a step-by-step process to debug issues related to inbound actions in a journey, in order to help you identify and resolve them independently before reaching out to support.
 

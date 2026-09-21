@@ -43,7 +43,7 @@ Use the **[!UICONTROL Schedule]** tab to define the campaign schedule.
 
 >[!NOTE]
 >
->When a campaign targets a batch audience, campaign scheduling and audience evaluation are separate clocks. The campaign uses the latest completed audience snapshot available when execution begins; changing the campaign start time does not recalculate the audience. Allow approximately 2 to 3 hours after batch segmentation when planning execution, validate the actual sandbox timing, and avoid relying on a fixed 45- to 60-minute buffer. If the audience is still being evaluated or exported, the campaign can use the previous completed snapshot.
+>When a campaign targets a batch audience, campaign scheduling and audience evaluation are separate clocks. The campaign uses the latest completed audience snapshot available when execution begins; changing the campaign start time does not recalculate the audience. Allow approximately two hours after segmentation completes for the audience to become ready for use, but treat this as a variable planning estimate rather than a guarantee. Actual timing depends on the sandbox, audience size, ingestion volume, export processing, and system load. If the audience is still being evaluated or exported, the campaign can use the previous completed snapshot. The **[!UICONTROL Trigger after batch audience evaluation]** control applies to supported recurring Read Audience journeys, not Action campaigns; schedule campaign execution after the expected segmentation and export completion and verify actual sandbox timing.
 
 ## Set a campaign start date
 

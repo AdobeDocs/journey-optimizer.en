@@ -111,7 +111,7 @@ Streaming segmentation is an ongoing data selection process that updates your au
 
 >[!IMPORTANT]
 >
->**Evaluation method and event-data capability are separate concepts.** A segment can be configured as streaming without every event type supporting true streaming evaluation. Journey Optimizer send and open events from tracking and feedback datasets are not supported for true streaming segmentation. They can remain available to batch segments, but they cannot provide deterministic same-day suppression through streaming qualification. Click and other supported behavioral events are distinct from send and open feedback events. For same-day suppression, use native frequency capping or other business rules where available. To react to a message sent in the same journey, use a [Reaction event](../building-journeys/reaction-events.md) instead of rebuilding the logic as an audience.
+>**Evaluation method and event-data capability are separate concepts.** A segment can be configured as streaming while a particular event type is processed in a batch manner. As of **November 1, 2024**, Journey Optimizer send and open events from tracking and feedback datasets are not supported for true streaming segmentation in any customer sandbox or organization. These events can still be used in batch segments, but when included in a streaming segment, they are evaluated in a batch manner and cannot provide deterministic same-day exclusion through streaming qualification. Click and other tracking events remain available, subject to general streaming eligibility rules. Tracking collection itself is not stopped. Related exclusion, bounce, and delay events resulting from send events are also affected. For suppression use cases, use native frequency capping or other business rules where available. For a response to a supported message sent earlier in the same journey, use a [Reaction event](../building-journeys/reaction-events.md) rather than rebuilding the logic as an audience.
 
 +++
 
@@ -159,9 +159,9 @@ With flexible audience evaluation, you can:
 
 You can evaluate up to 20 audiences at a time, and ineligible audiences are automatically excluded. For more details, see the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#flexible-audience-evaluation). 
 
-On-demand evaluation is queued with other segmentation work; the request does not make the audience available immediately. Monitor the audience evaluation status in Audience Portal and wait for the resulting snapshot before depending on it in a journey or campaign. Queue and completion times vary by sandbox and audience size, so validate the actual duration in the sandbox where the audience is used.
+On-demand Flexible Audience Evaluation is queued with other segmentation work and can take up to **four hours**. The audience is not immediately available when the request is submitted. After the segment job completes, the corresponding export job runs automatically. Monitor the evaluation status and verify the resulting audience state before depending on it in a journey or campaign.
 
-### Plan audience freshness for journeys and campaigns {#plan-audience-freshness}
+### Batch evaluation and audience freshness {#batch-evaluation-and-audience-freshness}
 
 Plan batch audience use as a sequence:
 
@@ -171,9 +171,13 @@ Plan batch audience use as a sequence:
 1. Profile snapshot or export data propagates to the consuming service.
 1. The journey or campaign executes.
 
-Batch audiences are snapshots, not continuously recalculated lists. Data received after evaluation is not reflected until a later evaluation, and a journey or scheduled campaign can use an older snapshot while evaluation or export propagation is still in progress. Do not treat a 45- to 60-minute buffer as a universal guarantee. As a planning recommendation, allow approximately 2 to 3 hours after segmentation, or use **[!UICONTROL Trigger after batch audience evaluation]** for applicable recurring Read Audience journeys. Confirm the actual segmentation and export durations in each sandbox.
+Batch audiences are snapshots, not continuously recalculated lists. Data received after evaluation is not reflected until a later evaluation, and a journey or scheduled campaign can use an older snapshot while evaluation or export propagation is still in progress. Do not treat a 45- to 60-minute buffer as a universal guarantee. For batch audiences, allow approximately two hours after segmentation completes for the audience to become ready for use. Actual timing varies by sandbox, audience size, ingestion volume, export processing, and system load. For supported recurring Read Audience journeys, use **[!UICONTROL Trigger after batch audience evaluation]** instead of relying on a fixed buffer. Confirm the actual segmentation and export durations in each sandbox.
 
-The [Schedules API](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/schedules){target="_blank"} exposes the batch segmentation schedule for a sandbox. Use the schedule configuration endpoints documented there to review or update the `batch_segmentation` schedule, then verify a subsequent evaluation and snapshot before relying on the new time for a production journey or campaign. Schedule changes are sandbox-specific. The documented schedule is interpreted in UTC; daylight-saving transitions therefore do not automatically adjust the UTC execution time to preserve a local clock time.
+The [Schedules API](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/schedules){target="_blank"} exposes the batch segmentation schedule for a sandbox. Use the schedule configuration endpoints documented there to review or update the `batch_segmentation` schedule, then verify a subsequent evaluation and snapshot before relying on the new time for a production journey or campaign. Schedule changes are sandbox-specific.
+
+>[!NOTE]
+>
+>**Operational scheduling note:** The batch schedule is treated as a UTC schedule; daylight-saving transitions do not automatically adjust the UTC execution time to preserve a local clock time. Verify the behavior in the target sandbox before using the schedule for a production dependency.
 
 ## How-to video{#video-segment}
 
