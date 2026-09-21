@@ -237,6 +237,10 @@ By default, journeys are configured to run once. To define a specific date/time 
 
     ![Scheduler type dropdown with frequency options: once, daily, weekly, monthly](assets/read-segment-schedule-list.png)
 
+    >[!NOTE]
+    >
+    >The schedule time is interpreted in UTC. Batch audience evaluation also runs on a daily UTC schedule; changing the journey's start time does not change when the audience itself is evaluated. To change when a batch audience is evaluated, update the evaluation schedule in the Adobe Experience Platform audience settings, then use the latest completed snapshot in the journey.
+
 For recurring journeys, specific options are available to help you manage the entry of profiles into the journey. Expand the sections below for more information on each option.
 
 >[!NOTE]
@@ -245,7 +249,7 @@ For recurring journeys, specific options are available to help you manage the en
 >
 >Each Read Audience execution uses the audience membership available at the time that execution runs. For batch audiences, [!DNL Journey Optimizer] reads from the latest available batch audience snapshot. It does not recalculate the audience in real time when the journey starts.
 >
->For recurring journeys, each occurrence uses the snapshot available for that occurrence. If you want the journey to wait for the latest batch audience evaluation before it runs, enable **[!UICONTROL Trigger after batch audience evaluation]**.
+>For recurring journeys, each occurrence uses the snapshot available for that occurrence. If a batch evaluation is already in progress, the journey waits for it to finish only when **[!UICONTROL Trigger after batch audience evaluation]** is enabled. If the latest snapshot is unchanged from the previous run, the same option waits for a fresh evaluation instead of starting with stale membership. The journey does not expose a separate audience-evaluation queue; monitor the audience evaluation status in Adobe Experience Platform and the journey activity logs.
 
 ![Read audience recurring options: Incremental read, Force reentrance, Trigger after batch](assets/read-audience-options.png)
 

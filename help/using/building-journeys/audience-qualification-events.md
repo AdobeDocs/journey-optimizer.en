@@ -144,11 +144,26 @@ The payload contains the following context information, which you can use in con
 * the timestamp of qualification
 * the audience id
 
+Audience Qualification reacts to changes in audience membership; it does not create a separate audience export or save an audience from the journey. The `Realized` status records that a profile qualified for the audience and is not reset when the journey stops. If the audience definition requires correlation across separate events, build that logic in the audience definition before using it with this activity.
+
 When using the expression editor in a condition or action that follows an **[!UICONTROL Audience Qualification]** activity, you have access to the **[!UICONTROL AudienceQualification]** node. You can choose between the **[!UICONTROL Last qualification time]** and the **[!UICONTROL status]** (enter or exit).
 
 See [Conditions](../building-journeys/conditions.md#about_condition).
 
 A new journey that includes an **Audience Qualification** event becomes operational ten minutes after you publish it. This interval matches the cache refresh interval of the dedicated service. Wait ten minutes before using this journey.
+
+### Audience Qualification timing and state model {#timing-and-state-model}
+
+Use the following sequence when diagnosing audience qualification:
+
+1. **Activity activation:** After publication, allow up to 10 minutes for the activity to become operational and begin listening.
+1. **Existing membership:** Profiles already in the audience with `Realized` membership do not generate a new entrance event merely because the journey is published. Only a subsequent qualifying membership change can trigger the activity.
+1. **Mid-journey behavior:** When the activity is not the first node, it begins listening when the profile reaches that node. A profile that qualified before reaching the node does not automatically enter that path unless a new qualification event is received after listening begins.
+1. **Streaming propagation:** For streaming audiences evaluated at the Edge, allow 15 to 30 minutes for membership to propagate from Edge to Hub before the journey can act on it.
+1. **Batch readiness:** Batch audiences, or streaming audiences that depend on batch-ingested data, can become ready approximately two hours after segmentation completes. Use [Read Audience](read-audience.md) for batch-based use cases and see the [batch audience migration guidance](aq-batch-audiences-migration.md).
+1. **Journey timeout:** The profile timer starts when the profile enters the journey. If the profile reaches the journey's global timeout, it exits and can no longer progress in that journey version. A qualification signal received after that exit does not resume the timed-out journey instance.
+
+The timing above describes separate states: journey activation, audience membership, profile participation, and data propagation. A delay in one state does not change the others.
 
 ## Best practices {#best-practices-segments}
 
@@ -161,6 +176,8 @@ The reception speed of this information is high. Measurements show 10,000 events
 >[!CAUTION]
 >
 >**Deprecation notice – September 2026**: Starting **September 2026**, Journey Optimizer will block publication for any journey that uses a batch audience in an **Audience Qualification** node. Existing live journeys are not affected. New, draft, and duplicated journeys with this configuration must be updated before September 2026. [Learn how to migrate your journeys](aq-batch-audiences-migration.md)
+
+For batch audiences, migrate the entry pattern to a [Read Audience](read-audience.md) journey. Read Audience supports scheduled processing and the **[!UICONTROL Trigger after batch audience evaluation]** option, which waits for fresh segmentation results instead of using Audience Qualification as a batch trigger.
 
 When using Audience Qualification for a batch audience, note that a peak of entrance occurs at the time of the daily calculation. The size of the peak depends on how many individuals enter or exit the audience each day.
 
@@ -203,6 +220,20 @@ When using streaming audiences with the **Audience Qualification** activity, not
 * Monitor your journey's [entry rate and throughput](entry-management.md#profile-entrance-rate) to understand profile flow patterns.
 
 * If profiles are not entering as expected, refer to the [troubleshooting guide](troubleshooting-execution.md#checking-if-people-enter-the-journey) for additional diagnostic steps.
+
+When a streaming audience does not populate the journey as expected, verify that the audience uses a supported evaluation method, that the selected identity namespace is present on the profile, and that the profile shows the expected `Realized` membership. Allow up to 10 minutes for the journey activity to become operational and 15 to 30 minutes for membership to propagate from Edge to Hub before escalating the issue.
+
+### Frequently asked questions {#faq}
+
+#### Can a journey save its current population as a reusable audience?
+
+No. Audience Qualification provides membership-change signals and journey context; it does not save the profiles currently flowing through a journey as a new reusable audience or export the current journey population. Use a supported audience-building workflow in Adobe Experience Platform when you need reusable cross-journey membership, or store an appropriate profile attribute or flag when the use case is profile state rather than audience membership.
+
+#### Can sequential segmentation join two events with a shared correlation ID?
+
+Not as a general relational join. Sequential segmentation describes the order and conditions of events, but you should not assume that it guarantees an arbitrary join such as `Event 1.correlationId = Event 2.correlationId` between an outbound SMS and a later inbound SMS.
+
+For a response to a message sent in the same journey, use a [Reaction event](reaction-events.md). For other correlation use cases, model the relationship in a supported event schema or calculate the correlation upstream, then use the resulting profile or event attribute in the audience definition.
 
 ### How to avoid overloads {#overloads-speed-segment-qualification}
 

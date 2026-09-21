@@ -44,6 +44,10 @@ topic_v2:
 
 Inbound actions, such as In-app, web, and code-based experiences, are critical components of [!DNL Journey Optimizer] as they enable personalized engagement with users during their journey. However, unexpected behavior, such as missing inbound content, or continued delivery after a profile exits the journey, can occur.
 
+>[!NOTE]
+>
+>Journey status, profile participation, audience membership, and content delivery are separate states. A journey can be **[!UICONTROL Live]**, **[!UICONTROL Closed]**, or **[!UICONTROL Stopped]** while a profile is still moving through a previously entered path, and the `joai` membership shown in Hub or Edge can lag behind a journey stop while propagation completes. Check the journey version and profile participation first, then compare the Hub profile, Edge profile, and delivery-server response before concluding that content is still eligible.
+
 This guide provides a step-by-step process to debug issues related to inbound actions in a journey, in order to help you identify and resolve them independently before reaching out to support.
 
 <!--

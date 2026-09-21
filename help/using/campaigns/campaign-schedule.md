@@ -41,6 +41,10 @@ level_v2:
 
 Use the **[!UICONTROL Schedule]** tab to define the campaign schedule.
 
+>[!NOTE]
+>
+>When a campaign targets a batch audience, campaign scheduling and audience evaluation are separate clocks. The campaign uses the latest completed audience snapshot available when execution begins; changing the campaign start time does not recalculate the audience. Allow approximately 2 to 3 hours after batch segmentation when planning execution, validate the actual sandbox timing, and avoid relying on a fixed 45- to 60-minute buffer. If the audience is still being evaluated or exported, the campaign can use the previous completed snapshot.
+
 ## Set a campaign start date
 
 By default, Action campaigns start once they are activated manually, and end as soon as the message has been sent once. If you do not want to execute your campaign right after its activation, you can specify a date and time at which the message should be sent in the **[!UICONTROL Campaign start]** section.
