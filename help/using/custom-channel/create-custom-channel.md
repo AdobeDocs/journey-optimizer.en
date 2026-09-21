@@ -70,7 +70,7 @@ To create a new custom channel, follow the steps below.
 
    ![General settings](assets/custom_channel_properties.png){width="70%"}
 
-1. In the **[!UICONTROL Properties]** section, enter a **[!UICONTROL Name]** for your custom channel. This name will appear in the journeys canvas and campaign action selector<!--and orchestrated campaigns channel list-->.
+1. In the **[!UICONTROL Properties]** section, enter a **[!UICONTROL Name]** for your custom channel. This name will appear in the journeys canvas, campaign action selector and orchestrated campaigns channel list.
 
    >[!NOTE]
    >
@@ -163,13 +163,13 @@ However, the authentication details are needed here to test the connection to yo
 >abstract="If enabled, the fields in this column appear in the channel configuration, allowing administrators to set different values per configuration (for example, a different sender ID per brand or region). This is useful for fields that may vary based on the context of the campaign or journey, such as sender information or message templates."
 >additional-url="<https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/custom-channel-config.html>" text="Configure dynamic parameters in the custom channel configuration"
 
-<!--Create a page on Custom channel config to explain how to use the payload in a channel configuration.-->
-
 The payload is sent to the endpoint when a profile qualifies in a campaign or journey.
 
 In the payload configuration, define the structure of the message payload and which fields marketers can author and personalize.
 
 1. Click **[!UICONTROL Define payload]**, and choose how to define the payload:
+
+   ![Define payload](assets/custom_channel_define_payload.png){width="65%"}
 
    * **[!UICONTROL Paste sample JSON payload]** – Paste a representative JSON object, and [!DNL Journey Optimizer] automatically infers a schema from it. For example:
 
@@ -182,11 +182,9 @@ In the payload configuration, define the structure of the message payload and wh
      }
      ```
 
-   * **[!UICONTROL Import JSON schema]** (Coming soon) – Upload a complete JSON schema file.
+   * **[!UICONTROL Import JSON Payload]** – Upload a complete JSON payload file.
 
-      >[!AVAILABILITY]
-      >
-      >This capability is not available yet. It will be added in a future release.
+   * **[!UICONTROL Import JSON schema]** – Upload a complete JSON schema file.
 
 1. After the schema is generated, [!DNL Journey Optimizer] displays all detected fields in a form view.
 
@@ -201,7 +199,7 @@ In the payload configuration, define the structure of the message payload and wh
    | **[!UICONTROL Required]** | If enabled, the field must have a value when the channel is used in a campaign or journey. Missing required fields trigger a validation error that prevents activation. |
    | **[!UICONTROL Channel config]** | If enabled, the field appears in the channel configuration, allowing administrators to set different values per configuration (for example, a different sender ID per brand or region). [Learn how](custom-channel-configuration.md) |
 
-   Nested fields are represented using dot notation (for example, `image.id`).<!--TBC-->
+   Nested fields are represented using dot notation (for example, `image.id`).
 
 ## Test and activate {#test-activate}
 
@@ -218,9 +216,7 @@ Once the test is successful, you can save or activate the channel.
 
 >[!IMPORTANT]
 >
->After a channel is activated, only the following fields remain editable: name, description, icon, throttling, and retry configuration. Endpoint URL, headers, query parameters, authentication, and payload structure are locked.<!--TBC-->
-
-<!--TBC: An activated channel can be **archived** (hidden from all selection drop-downs while existing journeys and campaigns continue to function), but it cannot be **deleted**. Deletion is only possible while the channel is in **[!UICONTROL Draft]** status.TBC-->
+>After a channel is activated, only the following fields remain editable: name, description, icon, throttling, and retry configuration. Endpoint URL, headers, query parameters, authentication, and payload structure are locked.
 
 ## Next steps {#next-steps}
 

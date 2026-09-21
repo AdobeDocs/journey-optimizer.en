@@ -28,9 +28,12 @@ subfeature_v2:
 
 >[!AVAILABILITY]
 >
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+>Custom channels are available in journeys, orchestrated campaigns and Marketing (action and API-triggered) campaigns. They are not available in transactional campaign types.
 
 Configuring a custom channel is an administrator task that happens once per channel. After the channel is configured, marketers can immediately select it in campaigns and journeys — just like any native [!DNL Journey Optimizer] channel.
+
+<!--FOR GA: Custom channels support personalization and decisioning in payload authoring, business rules in campaign optimization, and reporting webhooks through channel configuration.
+-->
 
 The configuration process covers four steps: defining the channel itself (endpoint, authentication, payload), managing the API credentials used to authenticate requests, optionally delegating a subdomain for link tracking, and finally creating a channel configuration that marketers will select at authoring time.
 

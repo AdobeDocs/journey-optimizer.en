@@ -75,7 +75,11 @@ To use a custom channel in a campaign:
 1. Select the campaign type:
 
    * **[!UICONTROL Scheduled - Marketing]** – Executed immediately or on a specified date. Designed for marketing messages, configured from the UI.
-   * **[!UICONTROL API-triggered - Marketing/Transactional]** – Executed via an API call. Designed for event-triggered messaging (for example, order confirmations or password resets). [Learn more](../campaigns/api-triggered-campaigns.md)
+   * **[!UICONTROL API-triggered - Marketing]** – Executed via an API call. Designed for event-triggered messaging. [Learn more](../campaigns/api-triggered-campaigns.md)
+
+    >[!AVAILABILITY]
+    >
+    >Custom channels are available in journeys, orchestrated campaigns and Marketing (action and API-triggered) campaigns. They are not available in transactional campaign types.
 
 1. Complete the campaign setup: campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule).
 
@@ -93,6 +97,8 @@ To use a custom channel in a campaign:
 
     * **[!UICONTROL Create targeting rules]** to send different messages to different segments of your audience. [Learn more](../campaigns/create-campaign.md#targeting)
     * Click **[!UICONTROL Create experiment]** to run A/B tests on your custom channel messages. [Learn more](../campaigns/create-campaign.md#content-experiment)
+
+    <!--For custom channels, campaign optimization also supports business rules, similar to native channels.-->
 
 1. Click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)
 
@@ -176,6 +182,10 @@ The following examples show JSON payloads with profile personalization:
   }
 }
 ```
+
+>[!NOTE]
+>
+>You can also use decisioning content in custom channel payloads through the personalization editor. The decision policy insertion workflow is the same as in code-based experiences. [Learn more](../experience-decisioning/create-decision-policy.md)
 
 ### Track links in the payload {#track-links}
 

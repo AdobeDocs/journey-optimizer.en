@@ -26,7 +26,7 @@ subfeature_v2:
 
 >[!AVAILABILITY]
 >
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+>Custom channels are available in journeys, orchestrated campaigns and Marketing (action and API-triggered) campaigns. They are not available in transactional campaign types.
 
 <!--Multilingual support, business rules enforcement, and [!DNL Adobe Experience Decisioning] integration are planned for a future release.-->
 

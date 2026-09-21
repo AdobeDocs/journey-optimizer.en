@@ -63,6 +63,14 @@ To create a channel configuration for a custom channel, follow the steps below.
 1. Click **[!UICONTROL Submit]** to save and activate the channel configuration.
 
 <!--
+1. Optionnally, attach a reporting webhook so interaction events from your custom channel can enrich reporting.
+-->
+
+>[!IMPORTANT]
+>
+>In custom channel configurations, you cannot select a message type. Therefore, all messages sent through custom channels are treated as Marketing messages at send time. As a result, custom channels are not supported in Transactional campaigns (action or API-triggered).
+
+<!--
 >[!CAUTION]
 >
 >If your organization uses approval policies, you may need to request approval before activating journeys or campaigns that use this channel configuration. [Learn more](../test-approve/gs-approval.md)
