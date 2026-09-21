@@ -23,6 +23,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
+* Guidance for email mirror pages has been expanded: the documentation now explains that mirror page URLs cannot be retrieved through a public API or dataset, recommends Message Export or BCC archiving for retaining sent content, and clarifies that mirror page links are inactive in proofs and simulations. [Read more](../email/message-tracking.md#mirror-page)
+
 * A new **Interactive demo** page is now available for Loyalty Challenges, linking to a self-guided, clickable demo that covers the marketer's challenge creation flow (including Bring your own data and the insights dashboards), the end customer experience, and Loyalty Challenge Management in CX Coworker. [Read more](../loyalty-challenges/loyalty-challenges-demo.md)
 
 * The **Personalize your email background** page has been expanded and improved. It now documents the full **Image placement** dropdown for background images and adds new best practices for background colors and images, including a recommendation to test background images across real email clients rather than relying solely on the Email Designer preview. [Read more](../email/backgrounds.md)
