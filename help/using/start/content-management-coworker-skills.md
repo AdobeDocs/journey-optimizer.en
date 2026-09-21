@@ -128,7 +128,7 @@ CE Channel Content takes a brief, journey, campaign, or prompt and turns it into
 
 ### Available skills
 
-The following skills are GA'ed under the **CE Channel Content** plugin:
+The following skills are available under the **CE Channel Content** plugin:
 
 * **Orchestrate Content Authoring** (`orchestrate-content-authoring`)
 
