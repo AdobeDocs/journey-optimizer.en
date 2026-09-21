@@ -118,116 +118,69 @@ The following functionalities are currently not supported:
 1. **Confirm before publishing**: Review a fragment's content after creating or updating it before asking Coworker to publish it.
 1. **Provide complete replacement content**: Update operations replace content in full, so include the complete HTML body or variant content in your prompt.
 
-## Message Copy {#message-copy}
+## CE Channel Content {#ce-channel-content}
 
 >[!AVAILABILITY]
 >
->Message Copy is available for all customers who have access to CX Coworker. Generating images with a custom, brand-trained model requires production access to Firefly Services.
+>CE Channel Content is available for all customers who have access to CX Coworker. Generating images with a custom, brand-trained model requires production access to Firefly Services.
 
-Message Copy takes a campaign or creative brief and turns it into a multi-dimensional content plan, spanning channels, touchpoints, locales, audiences, and variants, then generates the net-new copy and images to fill it. Generated content can be evaluated against brand and channel standards, edited in place, and saved back to the active solution (Adobe Journey Optimizer, Adobe Campaign v8, or Marketo).
-
-### Key use cases
-
-1. **Campaign and content strategy planning**
-
-   * Capture the campaign strategy: objective, KPIs, audience strategy, channels, recurrence, and scheduling.
-   * Brainstorm message maps, narrative arcs, and channel roles, and compare content strategy options before copy is written.
-   * Structure the copy execution spec and build a multi-dimensional content plan matrix (channels × touchpoints × locales × audiences × variants).
-
-1. **Copy generation across channels**
-
-   * Generate net-new, on-brand copy for email, SMS, push, WhatsApp, social, and banner, grounded in your brand kit and voice.
-
-1. **Image generation and variation**
-
-   * Generate, crop, overlay, vary, and sign campaign images using Firefly.
-
-1. **Copy evaluation, editing, and visual QA**
-
-   * Assess and score existing copy against brand and channel standards at any point in its lifecycle.
-   * Make in-place edits to existing copy, applying evaluation fixes, rephrasing, translating, or reacting to the latest preview.
-   * Render copy HTML to a screenshot for visual inspection of hierarchy, spacing, hero dominance, and CTA placement.
-
-1. **Multi-dimensional content expansion**
-
-   * Fan an approved content plan matrix out into per-unit copy across every channel, locale, audience, and variant it defines.
-
-1. **Publishing to your marketing solution**
-
-   * Save accepted copy back to the active solution as an asset, a draft, or directly into the source template.
+CE Channel Content takes a brief, journey, campaign, or prompt and turns it into planned, on-brand copy and images across channels, locales, audiences, and variants, including final, accessible, assembled email HTML. Content can be explored and strategized, authored, evaluated for readiness, revised, and saved back to the active solution (Adobe Journey Optimizer or another supported activation solution).
 
 ### Available skills
 
-The following capabilities are supported by **Message Copy**:
+The following skills are GA'ed under the **CE Channel Content** plugin:
 
-* **`capture-marketing-brief`**: Captures campaign strategy and seeds the creative brief.
-* **`capture-creative-brief`**: Structures the copy execution spec and builds the content plan matrix.
-* **`plan-content-strategy`**: Brainstorms message maps, narrative arcs, and channel roles ahead of copy generation.
-* **`generate-copy`**: Generates net-new, on-brand copy for email, SMS, push, WhatsApp, social, and banner.
-* **`generate-image`**: Generates, crops, overlays, varies, and signs campaign images using Firefly.
-* **`evaluate-copy`**: Assesses and scores existing copy against brand and channel standards.
-* **`edit-copy`**: Makes in-place edits to existing copy — evaluation fixes, rephrasing, translation, and directed revisions.
-* **`expand-campaign`**: Fans an approved content plan matrix out into per-unit copy across channels, locales, audiences, and variants.
-* **`analyze-visual-html`**: Renders copy HTML to a screenshot for visual inspection.
-* **`save-content`**: Saves approved content back to Adobe Journey Optimizer, Adobe Campaign v8, or Marketo.
+* **Orchestrate Content Authoring** (`orchestrate-content-authoring`)
+
+   Runs the full authoring lifecycle from a brief, journey, campaign, or prompt, ideating, generating, reviewing, and saving content, including copy, images, and the compliance, accessibility, and fidelity checks across supported channels.
+
+* **Explore Content Strategy** (`explore-content-strategy`)
+
+   Works out what a campaign or message should say before copy is written, comparing message maps and touchpoint sequencing at the campaign level, and deciding section order, emphasis, and CTA at the message level.
+
+* **Content Brief** (`content-brief`)
+
+   Turns an approved campaign direction into concrete writing requirements, including tone, key messages, offer, must-say points, channel, locale, and variants, plus a plan for producing the content.
+
+* **Generate Content** (`generate-content`)
+
+   Drafts a single net-new marketing message or copy variant for one channel, based on a stated audience, offer, tone, CTA, and length. First-draft creation only.
+
+* **Check Content Readiness** (`check-content-readiness`)
+
+   Assesses existing content, including an assembled email, for brand voice, editorial quality, accessibility, and compliance, then surfaces explainable blockers and next steps.
+
+* **Revise and Regenerate Content** (`revise-regenerate-content`)
+
+   Applies a specific, confirmed change to existing content, such as fixing a review finding, adjusting tone, translating, or swapping a subject line or CTA, while preserving the artifact.
+
+* **Generate Image** (`generate-image`)
+
+   Produces and manipulates visuals for an approved placement, including hero images, crops, overlays, variations, or signed assets, confirming the plan before applying it.
+
+* **Assess Content Design** (`assess-content-design`)
+
+   Evaluates how content actually renders, including hierarchy, spacing, imagery, CTA placement, and responsiveness, and recommends copy or image changes to close the gaps.
+
+* **Save Channel Content** (`save-channel-content`)
+
+   Saves approved campaign content as a draft asset or fills it into its source template in Adobe Journey Optimizer or another supported solution.
+
+* **Build Email from Figma** (`build-email-from-figma`)
+
+   Builds final email HTML directly from a live Figma frame when its copy, layout, and imagery are what should ship unchanged, with no separate layout plan involved.
+
+* **Brand Lookup** (`brand-lookup`)
+
+   Finds, resolves, and applies approved brand guidelines, including voice, imagery, and legal, ahead of any workflow that generates or evaluates on-brand content.
 
 ### Prompting best practices
 
-1. **Start with the brief**: Provide the campaign objective, audience, and channels up front so the content plan matrix reflects your intended scope.
+1. **Start with the brief**: Provide the campaign objective, audience, and channels up front so the content plan reflects your intended scope.
 1. **Specify plan dimensions**: Call out the channels, touchpoints, locales, audiences, and variants you want represented in the content plan.
 1. **Include brand context**: Reference your brand kit or voice guidelines so generated copy and images stay on-brand.
 1. **State character limits**: Provide channel character limits explicitly, and review generated copy to confirm it fits before publishing.
-1. **Review before saving**: Evaluate and edit generated copy before asking Coworker to save it back to Adobe Journey Optimizer, Adobe Campaign v8, or Marketo.
-
-## Email Design {#email-design}
-
->[!AVAILABILITY]
->
->Email Design is available for all customers who have access to CX Coworker.
-
-Email Design turns a brief, a reference image or screenshot, or a Figma frame or URL into on-brand, accessible email HTML. It composes a block structure and styling, builds the HTML, reviews it for compliance, design quality, and accessibility, and hands the approved email off to Adobe Journey Optimizer or Adobe Campaign.
-
-### Key use cases
-
-1. **Email structure and styling planning**
-
-   * Plan block structure and styling for an email — a layout plan — from a marketing objective and brand inputs.
-
-1. **Email HTML creation and editing**
-
-   * Build, adapt, edit, or refine email HTML from a layout plan, a reference screenshot, or a Figma design link.
-
-1. **Brand design system management**
-
-   * Set up, derive, enrich, and extend a brand's reusable email design system — tokens, layout patterns, and brand language — which feeds into email composition and building.
-
-1. **Email review**
-
-   * Audit an assembled email for on-brand, send-ready compliance — brand and channel guidelines, colors, fonts, plan adherence, and deliverability.
-   * Get subjective design feedback on visual hierarchy, spacing, narrative flow, and brand fit.
-   * Run a WCAG 2.1 AA accessibility audit covering contrast, alt text, reading order, link text, and font size.
-
-1. **Handoff to your marketing solution**
-
-   * Export and package an approved email for sending, and deliver it to Adobe Journey Optimizer or Adobe Campaign.
-
-### Available skills
-
-The following capabilities are supported by Email Design:
-
-* **`compose-email`**: Plans block structure and styling from a marketing objective and brand inputs.
-* **`build-email`**: Builds, adapts, edits, and refines email HTML from a layout plan, a screenshot, or a Figma design link.
-* **`maintain-design-system`**: Maintains a brand's reusable email design system — tokens, layout patterns, and brand language.
-* **`review-compliance`**: Audits an assembled email against brand and channel guidelines and deliverability standards.
-* **`review-design`**: Provides subjective design feedback on hierarchy, spacing, narrative flow, and brand fit.
-* **`review-accessibility`**: Runs a WCAG 2.1 AA accessibility audit.
-* **`handoff-email`**: Exports and delivers approved HTML to Adobe Journey Optimizer or Adobe Campaign.
-
-### Prompting best practices
-
-1. **Start from copy or a reference**: Provide campaign copy, a reference screenshot, or a Figma design link to ground the layout plan and HTML build.
-1. **Reference your design system**: Point to your brand's design tokens and layout patterns so composed emails stay consistent.
-1. **Request all three reviews**: Ask for compliance, design, and accessibility review before treating an email as send-ready.
-1. **Iterate before handoff**: Refine the HTML based on review feedback, then hand off only the approved version to Adobe Journey Optimizer or Adobe Campaign.
+1. **Request all relevant reviews**: Ask for brand, compliance, design, and accessibility review before treating content as send-ready.
+1. **Review before saving**: Evaluate and edit generated content before asking Coworker to save it back to Adobe Journey Optimizer or another supported activation solution.
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-content-management-coworker-skills.md}}
