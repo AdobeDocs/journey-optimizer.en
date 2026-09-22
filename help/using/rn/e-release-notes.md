@@ -127,11 +127,7 @@ The following capability and improvement are coming to Loyalty in this release.
 
 * **Challenges domain in the Content Card personalization editor** - The Content Card personalization editor now supports **Challenges** as a domain, letting you access challenge metadata when authoring content card personalization. This makes it easier to create tailored content for each stage of a challenge — Launch, In progress, and End — without custom code.  
 
-+++ Coming soon — **Information below is subject to change.**
 
-* **Per-member Loyalty challenge completion deadlines** - Loyalty challenges now support per-member completion deadlines: choose "Within a number of days after opt-in" under Completion requirements so each member's deadline is calculated from their own opt-in date rather than a fixed program-wide end date. If both a challenge end date and this opt-in window are set, each member's deadline is whichever comes first. <!-- Documentation link: TBD -->
-
-+++
 
 ### Onboarding {#sep-26-onboarding}
 
@@ -431,35 +427,6 @@ The following capabilities and improvements are coming to orchestrated campaigns
 
 * **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage.
 
-
-### Campaigns {#sep-26-campaigns}
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **Folders for campaigns** - You can now organize your campaigns into **folders** to improve navigation and management in the interface. 
-
-+++
-
-### Decisioning {#sep-26-decisioning}
-
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in Web channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
-</td>
-</tr>
-</tbody>
-</table> 
-
-+++
 
 ### Reporting {#sep-26-reporting}
 
