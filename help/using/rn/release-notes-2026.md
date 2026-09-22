@@ -53,7 +53,6 @@ The following capabilities and improvements have been introduced to Content mana
 
 ### Journeys {#aug-26-journeys}
 
-
 * **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the journey header next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed. [Read more](../building-journeys/journey-properties.md#dates)
 
   Availability date: August 20, 2026
@@ -92,6 +91,10 @@ The following capabilities and improvements have been introduced to Campaigns in
 * **Per-campaign lifecycle alert subscriptions** - You can now subscribe to supported campaign lifecycle alerts for a single campaign, in addition to the existing sandbox-level subscription. This lets you monitor individual high-priority campaigns without receiving the same alert for every campaign in the sandbox. [Learn more](../reports/alerts.md#subscribe-alerts)
 
   Availability date: August 13, 2026
+
+* **Action Campaign authoring flow redesign** - Adobe Journey Optimizer Action Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
+
+  Availability date: August 23, 2026
 
 ### Orchestrated Campaigns {#august-26-oc}
 
