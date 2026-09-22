@@ -39,6 +39,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new **Analyze Journey Anomalies** skill has been documented under **Journey Analyze** in the CX Coworker page. It detects unexpected spikes, drops, or flatlines in a journey's entry, exit, or send counts against historical baselines, and runs read-only diagnostics to surface a likely root cause. [Read more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
 
+* The **Guardrails and limitations** and **Journey properties** pages have been updated to document the default journey payload limit as **2 MB (2,000,000 bytes)**, clarify that the value reflects the serialized journey definition rather than activity count alone, and explain the 90% warning and 100% blocking thresholds. [Read more](../start/guardrails.md#journey-payload-size) and [learn more](../building-journeys/journey-properties.md#journey-payload-size)
+
 * The **Guardrails and limitations** page has been corrected to reflect the fact that visual fragments over 100 KB or expression fragments over 200 KB can no longer cause truncation issues in email delivery: now a single 700 KB fragment size guardrail applies. [Read more](../start/guardrails.md#fragments-guardrails)
 
 * The **Create a Live activity** page has been corrected: the `executionMetadata` field is available only for **API-triggered Transactional** campaigns, not for API-triggered Marketing campaigns as previously stated. [Read more](../mobile-live/create-mobile-live.md#metadata)

@@ -101,7 +101,16 @@ This section covers guardrails and limitations for journeys, including general j
 
 #### Journey payload size validation {#journey-payload-size}
 
-When you save or publish a journey, Journey Optimizer validates the total journey payload size to preserve stability and performance.
+When you save or publish a journey, Journey Optimizer validates the size of the serialized journey definition to preserve stability and performance. The payload size is measured in bytes and is not determined by the number of activities alone. Each node contributes according to its saved configuration, including expressions, conditions, data mappings, parameters, and other configuration values.
+
+Large contributors can include:
+
+* Condition nodes with complex expressions.
+* Custom action nodes with many fields or deeply nested expressions.
+* Large data mappings.
+* Nodes containing extensive parameters or configuration.
+
+There is no fixed size-per-node value. Two journeys with the same number of activities can have different payload sizes depending on their configuration. When a warning or error is displayed, review the largest node identified in the message.
 
 | Scenario | Threshold | Behavior |
 |---|---|---|
@@ -111,18 +120,20 @@ When you save or publish a journey, Journey Optimizer validates the total journe
 
 **Default configuration**
 
-* **Default maximum request size**: **2 MB** (2,000,000 bytes). Some organizations may have custom limits configured by Adobe.
+* **Default maximum journey payload size**: **2 MB** (2,000,000 bytes). Some organizations may have custom limits configured by Adobe.
 * **Warning threshold**: 90% of the maximum limit.
 * **Error threshold**: 100% of the maximum limit.
 
 **Troubleshooting and recommendations**
 
 * Review the largest node highlighted in the warning or error.
-* Simplify conditions, reduce data mappings, and remove unnecessary steps or parameters.
+* Simplify complex expressions and conditions, reduce data mappings, and remove unnecessary fields or parameters.
 * Consider splitting the journey into smaller journeys if needed.
 * If you believe your organization needs a higher limit, contact your Adobe representative.
 
 To monitor the current payload size of your journey before publishing, use the **[!UICONTROL Current journey payload size]** indicator in the journey properties panel. [Learn how to check the size of your journey payload](../building-journeys/journey-properties.md#journey-payload-size)
+
+The serialized journey payload includes the configuration of the journey nodes. Referenced entities, such as email content referenced by an Email action, are not included in this payload. Email message content is subject to the separate message-content size guardrail in the [Email guardrails](#message-content-size) section.
 
 ### License package comparison {#select-package-limitations}
 
