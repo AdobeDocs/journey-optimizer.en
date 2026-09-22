@@ -42,7 +42,6 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 * [Compare journey versions](#sep-26-journeys) - Get a full-fidelity, structured diff between any two versions of a journey through Coworker Chat.
 * [Hygiene Analysis skill](#sep-26-journeys) - Scan active and draft journeys for broken configurations, silent failures, and decaying or unused assets, with recommended fixes.
 * [Business Performance Analysis skill](#sep-26-journeys) - Analyze journey performance and get concrete optimization recommendations, right from the chat.
-* [Decisioning rule generation](#sep-26-decisioning) - Build AI-assisted decisioning rules directly in Coworker, which now replaces the right rail for this experience.
 
 >[!ENDSHADEBOX]
 
@@ -128,7 +127,11 @@ The following capability and improvement are coming to Loyalty in this release.
 
 * **Challenges domain in the Content Card personalization editor** - The Content Card personalization editor now supports **Challenges** as a domain, letting you access challenge metadata when authoring content card personalization. This makes it easier to create tailored content for each stage of a challenge — Launch, In progress, and End — without custom code.  
 
++++ Coming soon — **Information below is subject to change.**
+
 * **Per-member Loyalty challenge completion deadlines** - Loyalty challenges now support per-member completion deadlines: choose "Within a number of days after opt-in" under Completion requirements so each member's deadline is calculated from their own opt-in date rather than a fixed program-wide end date. If both a challenge end date and this opt-in window are set, each member's deadline is whichever comes first. <!-- Documentation link: TBD -->
+
++++
 
 ### Onboarding {#sep-26-onboarding}
 
@@ -431,13 +434,15 @@ The following capabilities and improvements are coming to orchestrated campaigns
 
 ### Campaigns {#sep-26-campaigns}
 
-The following improvement is coming to campaigns in this release.
++++ Coming soon — **Information below is subject to change.**
 
 * **Folders for campaigns** - You can now organize your campaigns into **folders** to improve navigation and management in the interface. 
 
++++
+
 ### Decisioning {#sep-26-decisioning}
 
-The following capabilities and improvements are coming to Decisioning in this release.
++++ Coming soon — **Information below is subject to change.**
 
 <table>
 <thead>
@@ -453,6 +458,8 @@ The following capabilities and improvements are coming to Decisioning in this re
 </tr>
 </tbody>
 </table> 
+
++++
 
 ### Reporting {#sep-26-reporting}
 
