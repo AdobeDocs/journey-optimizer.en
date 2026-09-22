@@ -344,7 +344,7 @@ The following capabilities and improvements are coming to the Email channel in t
 </tbody>
 </table>
 
-* **Suppression list override at email action level** - You can now override local suppression-list behavior at the email action level, so operational or compliance-critical communications can still be sent through a dedicated configuration when needed. Global suppression-list behavior remains unchanged.
+* **Suppression list override at email action level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model.
 
 * **URL syntax validation in email authoring** - Journey Optimizer now validates URLs earlier in the email authoring flow and surfaces clearer guidance when malformed syntax is detected. This helps authors catch issues before finalization, reduce publishing errors, and improve delivery confidence.
 
@@ -464,6 +464,8 @@ The following reminder applies to administration in this release.
 ### Usability improvements {#sep-26-usability}
 
 * **Usability improvements in the Content Simulation experience** - The new Content Simulation experience now lets you name and organize your variants for easy comparison, copy or delete variant details directly from each card, view full attribute paths and per-card channel configuration on demand, and upload your own CSV, JSON, or JSONL profiles from a more prominent upload button.
+
+* **AI Overview in Fragment validation alerts** - The Fragment validation alerts dialog now includes an AI Overview that summarizes and explains validation issues (for example malformed expressions, missing profile fields, and invalid JSON) so users can troubleshoot faster.
 
 * **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified, left-rail accessible menu that shows both in one combined view.
 
