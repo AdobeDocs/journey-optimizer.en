@@ -174,11 +174,11 @@ You can adjust styling attributes such as the line color, style and height from 
 
 ![](assets/email_designer_divider.png)
 
-## HTML {#HTML}
+## Html {#html}
 
-Use the **[!UICONTROL HTML]** component to copy-paste the different parts of your existing HTML. This enables you to create free modular HTML components to reuse some external content.
+Use the **[!UICONTROL Html]** component to copy-paste the different parts of your existing HTML. This enables you to create free modular HTML components to reuse some external content.
 
-1. From **[!UICONTROL Content Components]**, drag and drop the **[!UICONTROL HTML]** component into a **[!UICONTROL Structure component]**.
+1. From **[!UICONTROL Content Components]**, drag and drop the **[!UICONTROL Html]** component into a **[!UICONTROL Structure component]**.
 
 1. Click on your newly added component, then select **[!UICONTROL Show the source code]** from the contextual toolbar to add your HTML.
 
@@ -191,6 +191,12 @@ Use the **[!UICONTROL HTML]** component to copy-paste the different parts of you
 >[!NOTE]
 >
 >To simply make an external content compliant with the Email Designer, Adobe recommends creating a message from scratch and copy the content from your existing email into components.
+
+## Dynamic Media Template {#dynamic-media-template}
+
+Use the **[!UICONTROL Dynamic Media Template]** component to insert a dynamic media template from Adobe Experience Manager into your email content. This allows you to leverage personalized and interactive media within your emails. [Learn more](../integrations/aem-dynamic.md#dynamic-media-template)
+
+![](../integrations/assets/dynamic-media-template-1.png)
 
 ## Image {#image}
 
