@@ -169,7 +169,7 @@ You can insert your dynamic template directly into your content using the Image 
 
 1. Open your campaign or journey and access your content.
 
-1. Drag and drop an **Image component** into your layout. 
+1. Drag and drop an **Dynamic Media Template** into your layout. 
 
     For more information on Image component, refer to [this page](../email/content-components.md).
 
@@ -181,14 +181,9 @@ You can insert your dynamic template directly into your content using the Image 
 
         ![](assets/dynamic-media-template-2.png)
 
-    * **Import from PSD** — drag and drop a Photoshop (PSD) file directly into the component. Adobe Journey Optimizer automatically converts the file into a Dynamic Media template and stores it in Dynamic Media.
+    * **Import from PSD** — drag and drop a Photoshop (PSD) file directly into the component and select a destination to store it. Adobe Journey Optimizer automatically converts the file into a Dynamic Media template and imports it in the repository that you selected.
 
-        >[!NOTE]
-        >Import from PSD does not require a manual conversion step or a round-trip through Adobe Experience Manager.
-
-        Once imported, edit the template using the built-in Dynamic Media editor — the same experience used for [Adobe Express content](express.md) in the Email Designer.
-
-        <!-- GIF/screenshot placeholder: to be added -->
+        ![](assets/dynamic-media-template-psd.png){width="70%"}
 
 1. In the **Image settings**, navigate to access the parameters of your dynamic media template.
 
