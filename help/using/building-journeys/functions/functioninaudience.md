@@ -124,11 +124,9 @@ When using the `inAudience` function in your journeys, be aware of the following
 * Refer to [Journey properties](../journey-properties.md) for more information on merge policy behavior
 
 **Audience cache for validation:**
-* In a sandbox that contains more than 5,000 audiences, older audiences may be
-  rejected during journey authoring when you use `inAudience` because validation
-  checks a cache that only contains the 5,000 most recently updated audiences.
-* To work around this, make a minor change to the audience, such as updating the
-  description, or clean up older audiences to keep the total below the limit.
+
+* In a sandbox that contains more than 5,000 audiences, older audiences may be rejected during journey authoring when you use `inAudience` because validation checks a cache that only contains the 5,000 most recently updated audiences.
+* To work around this, make a minor change to the audience, such as updating the description, or clean up older audiences to keep the total below the limit.
 * Learn more in [Use audiences in conditions](../conditions.md#using-a-segment).
 
 **Propagation timing:** {#propagation-timing}
