@@ -358,10 +358,6 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >title="Enable webhooks"
 >abstract="Enable webhooks to receive real-time feedback on the execution status of your messages. Before activating this option, make sure you have configured a webhook in the **Administration** / **Channels** / **Feedback Webhook** menu."
 
->[!CONTEXTUALHELP]
->id="ajo_channels_feedback_webhook_settings_create"
->title="Feedback Webhooks"
->abstract="Feedback webhooks allows you to receive real-time feedback on the execution status of messages sent with transactional API triggered campaigns. Only one webhook configuration per Organization + sandbox combination is allowed."
 
 
 <!-- JOURNEYS - GENERATE EXPRESSIONS WITH AI -->
@@ -402,3 +398,11 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_admin_sms_webhook_relay_url"
 >title="Relay destination URL"
 >abstract="The HTTPS endpoint Journey Optimizer calls to relay each incoming message. Journey Optimizer sends a separate HTTP POST here per message received. This is distinct from the Auth URL under Custom Authentication, which is used only to obtain an access token, not to receive messages."
+
+<!--Set as default webhook-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_webhook_default_webhook"
+>title="Set as default"
+>abstract="Enable this option to use a common webhook URL for processing provider feedback and inbound messages received from the provider."
+
