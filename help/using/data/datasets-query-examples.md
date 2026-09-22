@@ -136,6 +136,10 @@ The related schema is AJO Message Feedback Event Schema.
 
 >[!NOTE]
 >
+>In Adobe Journey Optimizer, `sent` is the value used for successful message delivery outcomes in the Message Feedback Event Dataset. The `delivered` value is not used in Adobe Journey Optimizer Message Feedback Event datasets.
+
+>[!NOTE]
+>
 >This dataset uses batch ingestion. Expect a data latency of up to 2 hours when querying this dataset or using it for reporting purposes.
 
 For the complete list of fields, field paths, data types, and descriptions, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
