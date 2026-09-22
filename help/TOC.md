@@ -12,7 +12,7 @@ nudge: yes
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new} 
   + [Release cycle](using/rn/releases.md) 
-  + {hide-from-toc} [Pre-release notes](using/rn/e-release-notes.md)
+  + [Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -29,15 +29,16 @@ nudge: yes
 + Get started {#get-started}
   + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
   + [Onboarding hub](using/start/onboarding-hub.md)
+  + [Work with AI](using/start/ai-features.md)
   + [Migrate content and journeys](using/start/migrate-content-and-journeys.md)
   + Essentials {#essentials}
     + [What is Journey Optimizer](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
-    + [AI & intelligent features](using/start/ai-features.md)
-    + [Journey Optimizer skills in CX Coworker](using/start/ajo-coworker-skills.md)
     + [Key terminology](using/start/terminology.md)
     + [Start from your goal](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
+    + [Journeys vs campaigns](using/start/journeys-vs-campaigns.md)
+    + {hide-from-toc} [Journeys vs Campaigns - 2](using/start/journeys-vs-campaigns-v2.md)
     + {hide-from-toc} [Packages and capabilities](using/start/ajo-packages.md)
     + {hide-from-toc} [Feature availability](using/start/ajo-features-availability.md)
   + Get started by role {#by-role}
@@ -49,26 +50,27 @@ nudge: yes
   + Work efficiently {#work-efficiently}
     + [Navigate the interface](using/start/user-interface.md)
     + [Search, filter & organize](using/start/search-filter-categorize.md)
-    + [Troubleshooting FAQ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/monitor/troubleshooting/troubleshooting)
     + [Accessibility](using/start/accessibility.md)
-    + [Journeys vs campaigns](using/start/journeys-vs-campaigns.md)
-    + {hide-from-toc} [Journeys vs Campaigns - 2](using/start/journeys-vs-campaigns-v2.md)
+    + [Troubleshooting FAQ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/monitor/troubleshooting/troubleshooting)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
   + {hide-from-toc} [Journey Get Started Guide](using/building-journeys/journey-get-started.md)
   + {hide-from-toc} [Journey types: choose the right one-2](using/building-journeys/journey-types-selection-v2.md)
   + [Journey Orchestration FAQ](using/building-journeys/journey-faq.md)
+  + [Coworker for journeys](using/building-journeys/journeys-coworker-skills.md)
   + Create a journey {#create-journey}
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
     + [Create your first journey](using/building-journeys/journey-gs.md)
     + [Set your journey properties](using/building-journeys/journey-properties.md)
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
-    + Simulation {#simulate-journey}
-      + [Get started with journey simulation](using/building-journeys/simulate-journey-gs.md) 
-      + [Simulate your journey](using/building-journeys/simulate-journey.md) 
-    + [Test your journey](using/building-journeys/testing-the-journey.md)
-    + [Journey Dry run](using/building-journeys/journey-dry-run.md)
+    + Validate your journey {#validate-journey}
+      + [Choose a validation method](using/building-journeys/choose-validation-method.md)
+      + Simulation {#simulate-journey}
+        + [Get started with journey simulation](using/building-journeys/simulate-journey-gs.md) 
+        + [Simulate your journey](using/building-journeys/simulate-journey.md) 
+      + [Test your journey](using/building-journeys/testing-the-journey.md)
+      + [Journey Dry run](using/building-journeys/journey-dry-run.md)
     + [Publish your journey](using/building-journeys/publish-journey.md)
     + [Pause a journey](using/building-journeys/journey-pause.md)
     + [Live report in your journey](using/building-journeys/report-journey.md)
@@ -142,6 +144,8 @@ nudge: yes
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Loyalty challenges {#loyalty-challenges}
   + [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
+  + [Interactive demo](using/loyalty-challenges/loyalty-challenges-demo.md)
+  + [Coworker for loyalty](using/loyalty-challenges/loyalty-coworker-skills.md)
   + Create and manage challenges {#create-manage-challenges}
     + [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
     + [Create challenges](using/loyalty-challenges/create-challenges.md)
@@ -261,6 +265,7 @@ nudge: yes
     + [Preview using test profiles](using/content-management/preview.md)
     + [Send proofs using test profile data](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
+    + {hide-from-toc} [Simulate inbound experiences](using/test-approve/simulate-inbound-experiences.md)
     + [Simulate content variations (classic experience)](using/test-approve/simulate-sample-input.md)
     + [Simulate content variations (new experience)](using/test-approve/simulate-content-variations.md)
     + [Email Spam report](using/content-management/spam-report.md)
@@ -468,6 +473,7 @@ nudge: yes
     + [Monitor custom channels](using/custom-channel/monitor-custom-channel.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
+  + [Coworker for content management](using/content-management/content-management-coworker-skills.md)
   + Personalization {#personalization}
     + [Personalization](/help/rp_landing_pages/personalization-landing-page.md)
     + [Get started with personalization](using/personalization/personalize.md)
@@ -564,7 +570,9 @@ nudge: yes
   + Generate content {#generate-content}
     + [Get started with Generate content](using/content-management/gs-generative.md)
     + [AI prompt best pratices](using/content-management/ai-assistant-prompting-guide.md)
-    + {hide-from-toc}[Content Credentials in AI Assistant](using/content-management/generative-c2pa-metadata.md)
+    + C2PA metadata {#c2pa}
+      + [C2PA metadata in Generate content](using/content-management/generative-c2pa-metadata.md)
+      + [C2PA metadata in Email and Landing Page Designer](using/content-management/c2pa-metadata-email-designer.md)
     + [Generate full content with AI](using/content-management/generative-full-content.md)
     + [Generate text with AI](using/content-management/generative-text.md)
     + [Generate images with AI](using/content-management/generative-image.md)
@@ -636,7 +644,6 @@ nudge: yes
     + [Reporting & experimentation prerequisites](using/reports/reporting-configuration.md)
     + [Exclusion reasons](using/reports/exclusion-list.md)
     + Campaign reports {#campaign-reporting}
-      + [Campaign reports](/help/rp_landing_pages/campaign-reporting-landing-page.md)
       + [Campaign report](using/reports/campaign-global-report-cja.md)
       + [Code-based campaign report](using/reports/campaign-global-report-cja-code.md)
       + [Content card campaign report](using/reports/campaign-global-report-cja-content.md)
@@ -1034,3 +1041,4 @@ nudge: yes
     + [Manage your customers' preferences](using/action/preference-center.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up & manage Customer Managed Keys](using/privacy/cmk.md)
+

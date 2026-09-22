@@ -52,7 +52,7 @@ subfeature_v2:
 
 >[!NOTE]
 >
->The data lookup capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+>The data lookup capability is in Limited Availability and is available to all Journey Optimizer customers.
 
 Learn more on how to access and work with datasets in this section : [Get started with datasets](../data/get-started-datasets.md)
 
@@ -184,3 +184,5 @@ After a dataset has been enabled for lookup using an API call, you can use the d
 * [Use Adobe Experience Platform data for personalization](../personalization/aep-data-perso.md)
 * [Use Adobe Experience Platform data for decisioning](../experience-decisioning/aep-data-exd.md)
 * [Use Adobe Experience Platform data for journey orchestration](../building-journeys/dataset-lookup.md)
+
+{{$include /help/_includes/do-not-localize/data/ai-augmented-lookup-aep-data.md}}

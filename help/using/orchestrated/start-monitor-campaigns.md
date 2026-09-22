@@ -14,6 +14,8 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
+  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
+    internal-label: Campaign Orchestration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -197,6 +199,12 @@ Two types of information are available:
 * The **[!UICONTROL Tasks]** tab details the step-by-step execution sequence of activities.
 
 In both tabs, you can choose the displayed columns and their order, apply filters, and use the search field to quickly find the desired information.
+
+### Set up alerts {#alerting}
+
+System alerts provide proactive notifications about issues in your Orchestrated campaigns, so you can investigate and take corrective action without continuously checking the monitoring view. You can view and manage available alerts from **[!UICONTROL Administration]** > **[!UICONTROL Alerts]**.
+
+For information about available alerts and how to subscribe, see [Access and subscribe to system alerts](../reports/alerts.md).
 
 ## Next steps {#next}
 

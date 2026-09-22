@@ -195,3 +195,4 @@ After the test succeeds, select **[!UICONTROL Activate]** in the integration con
 * [Integrations troubleshooting FAQ](vendor-integration-faq.md#troubleshooting)
 * [Monitoring & Troubleshooting](../../rp_landing_pages/troubleshoot-journey-landing-page.md)
 
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-integrations.md}}

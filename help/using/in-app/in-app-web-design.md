@@ -10,6 +10,8 @@ hide: true
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
     internal-label: In App channel
@@ -193,3 +195,5 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can further
 * [Test and send your In-app message](send-in-app.md)
 * [In-app report](../reports/campaign-global-report-cja-inapp.md)
 * [In-app configuration](inapp-configuration.md)
+
+{{$include /help/_includes/do-not-localize/in-app/ai-augmented-in-app-web-design.md}}

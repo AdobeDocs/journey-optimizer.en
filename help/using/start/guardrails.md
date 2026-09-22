@@ -13,8 +13,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
 subfeature_v2:
@@ -103,28 +101,39 @@ This section covers guardrails and limitations for journeys, including general j
 
 #### Journey payload size validation {#journey-payload-size}
 
-When you save or publish a journey, Journey Optimizer validates the total journey payload size to preserve stability and performance.
+When you save or publish a journey, Journey Optimizer validates the size of the serialized journey definition to preserve stability and performance. The payload size is measured in bytes and is not determined by the number of activities alone. Each activity contributes according to its saved configuration, including expressions, conditions, data mappings, parameters, and other configuration values.
+
+Common contributors include:
+
+* Condition activities with complex expressions.
+* Custom action activities with many fields or deeply nested expressions.
+* Large data mappings.
+* Activities with extensive parameters or configuration.
+
+There is no fixed size-per-activity value. Two journeys with the same number of activities can have different payload sizes depending on their configuration. When a warning or error is displayed, review the activity with the largest contribution identified in the message.
 
 | Scenario | Threshold | Behavior |
 |---|---|---|
 | Payload < 90% of limit | Below warning | Journey saves and publishes successfully. No warnings or errors displayed. |
-| Payload 90–99% of limit | Warning (soft) | Journey saves and publishes with a warning: **Warning**: Journey payload size is close to the limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes). |
-| Payload ≥ 100% of limit | **Error (hard)** | Save or publish is blocked. Returns **HTTP 413 Request Entity Too Large**. Error: Journey payload size exceeds limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes). |
+| Payload 90–99% of limit | Warning (soft) | Journey saves and publishes with a warning: **Warning**: Journey payload size is close to the limit. Largest contributing activity: '[ActivityName]' (type: '[ActivityType]', size: [N] bytes). |
+| Payload ≥ 100% of limit | **Error (hard)** | Save or publish is blocked. Returns **HTTP 413 Request Entity Too Large**. Error: Journey payload size exceeds limit. Largest contributing activity: '[ActivityName]' (type: '[ActivityType]', size: [N] bytes). |
 
 **Default configuration**
 
-* **Default maximum request size**: **2 MB** (2,000,000 bytes). Some organizations may have custom limits configured by Adobe.
+* **Default maximum journey payload size**: **2 MB** (2,000,000 bytes). Some organizations may have custom limits configured by Adobe.
 * **Warning threshold**: 90% of the maximum limit.
 * **Error threshold**: 100% of the maximum limit.
 
 **Troubleshooting and recommendations**
 
-* Review the largest node highlighted in the warning or error.
-* Simplify conditions, reduce data mappings, and remove unnecessary steps or parameters.
+* Review the activity with the largest contribution highlighted in the warning or error.
+* Simplify complex expressions and conditions, reduce data mappings, and remove unnecessary fields or parameters.
 * Consider splitting the journey into smaller journeys if needed.
 * If you believe your organization needs a higher limit, contact your Adobe representative.
 
 To monitor the current payload size of your journey before publishing, use the **[!UICONTROL Current journey payload size]** indicator in the journey properties panel. [Learn how to check the size of your journey payload](../building-journeys/journey-properties.md#journey-payload-size)
+
+The serialized journey payload includes the configuration of journey activities. Referenced entities, such as email content referenced by an Email action, are not included in this payload. Email message content is subject to the separate message-content size guardrail in the [Email guardrails](#message-content-size) section.
 
 ### License package comparison {#select-package-limitations}
 
@@ -364,19 +373,22 @@ The following guardrails apply to the [email channel](../email/get-started-email
 
 When publishing journeys that contain email messages, the total message content size must not exceed **2 MB** after backend processing. During publication, the system automatically processes message content by patching links, images, and applying transformations, which increases the payload size beyond the authored content size.
 
+This size limitation also applies to other backend operations that process the full email payload, such as **[!UICONTROL Copy to other locales]** in [multilingual content management](../content-management/multilingual-manual.md). Even though you are only copying content between locales, the operation serializes and processes the complete email payload, so it can fail with the same size error.
+
 >[!CAUTION]
 >
->If the final processed message content exceeds **2 MB**, journey publication will fail. Keep your authored message content well below 2 MB — ideally under **1 MB** — to allow a buffer of 300–400 KB for backend processing overhead.
+>If the final processed message content exceeds **2 MB**, the operation (journey publication or copy to other locales) will fail. Keep your authored message content well below 2 MB, ideally under **1 MB**, to allow a buffer of 300–400 KB for backend processing overhead.
 
-**Best practices to prevent publication failures:**
+**Best practices to prevent failures:**
 
 * Keep authored email content under **1 MB**
 * Minimize the number of content variants
 * Optimize and compress images before adding them to messages
 * Remove unused assets and unnecessary HTML elements
 * Test message size before publishing journeys to production
+* When copying content to multiple locales, copy to fewer locales at a time to reduce processing overhead
 
-If journey publication fails due to content size, reduce your message content and republish the journey.
+If publication or the copy operation fails due to content size, reduce your message content and try again.
 
 ### SMS guardrails {#sms-guardrails}
 
@@ -457,7 +469,8 @@ The following guardrails apply to the [fragments](../content-management/fragment
 * To create, edit, archive, and publish fragments you need the **[!DNL Manage library items]** and **[Publish Fragment]** permissions included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
 * Visual fragments are only available for the Email channel.
 * Expression fragments are not available for the In-app channel.
-* Visual fragments cannot exceed **100 KB**. Expression fragments cannot exceed **200 KB**.
+* Fragments cannot exceed **700 KB**. To stay below this threshold, split large content into multiple reusable fragments, reduce heavy markup, and optimize linked assets.
+
 * **Fragment count limits**: the number of unique fragments used within a piece of content is validated during authoring. Only fragments (including AEM fragments) referenced directly are counted — fragments nested inside other fragments are not counted separately.
 
   * **Per variant**: up to 60 unique fragments per content variant. A warning is shown when usage reaches 45 (75% of the limit); publishing is blocked at 60.
@@ -482,3 +495,5 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 ### Campaign Orchestration guardrails {#orchestration-guardrails}
 
 Guardrails and limitations to keep in mind when working with Campaign Orchestration are detailed in this section: [Guardrails & limitations](../orchestrated/guardrails.md).
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-guardrails.md}}

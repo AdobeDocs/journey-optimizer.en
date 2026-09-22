@@ -12,15 +12,11 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
-    internal-label: Release notes
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
-    internal-label: Product updates
-  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
-    internal-label: Pre-release notes
-  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
-    internal-label: Documentation updates
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Journey Optimizer release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -54,28 +50,186 @@ topic_v2:
 >
 >Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change. 
 
-## August '26 release notes {#aug-26-updates}
+## September '26 updates {#sep-26-updates}
 
-<!--
-### Loyalty {#aug-26-loyalty}
+### Content Management {#sep-26-content-management}
 
 <table>
 <thead>
 <tr>
-<th><strong>Loyalty Insights skill</strong><br/></th>
+<th><strong>Content Management MCP tools in CX Coworker</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer introduces <strong>Loyalty Insights</strong>, a new CX Coworker skill for asking questions about challenge performance and other loyalty program data ingested into the Loyalty field groups in Adobe Experience Platform.</p>
-<p>For more information, refer to the <a href="../start/ajo-coworker-skills.md">detailed documentation</a>.</p>
-<p>Availability date: August 12, 2026</p>
+<p>CX Coworker now has a new set of <strong>Content Management MCP tools</strong>, letting you discover and manage Journey Optimizer content assets through natural language prompts. Ask it to list or retrieve content templates, fragments, landing pages, and journey/campaign inline message content. It can also create content, update templates, and create, update, clone, and publish fragments — plus update inline channel action content directly in journey and campaign.</p>
+<p>For more information, refer to the <a href="../content-management/content-management-coworker-skills.md#content-management">detailed documentation</a>.</p>
+<p>Availability date: September 3, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
--->
+
+* **Mandatory consent checkbox for landing pages** - You can now make a checkbox mandatory in the landing page form component, requiring visitors to select it (for example, to give consent) before they can submit the form. [Learn more](../landing-pages/lp-content.md#use-form-component)
+
+  Availability date: September 4, 2026 
+
+* **Additional reserved keywords in personalization syntax** - The list of reserved keywords in Profile Query Language (PQL) has been expanded to include general keywords, time units, and boolean/logical operators. If your XDM schema contains a field name that matches one of these keywords, wrap it in backticks to reference it in a personalization expression. [Learn more](../personalization/personalization-syntax.md#reserved-keywords)
+
+  Availability date: September 1, 2026
+
+### Loyalty {#sep-26-loyalty}
+
+* **"Forever" Loyalty challenges** - Loyalty challenges can now run indefinitely. Set **Challenge end** to **No end date** when configuring the schedule, and the challenge never expires. [Learn more](../loyalty-challenges/create-challenges.md#schedule)
+
+  Availability date: September 1, 2026
+
+* **Loyalty available for Healthcare Shield and Privacy and Security Shield customers** - Journey Optimizer Loyalty is now available to Healthcare Shield and Privacy and Security Shield customers. [Learn more](../loyalty-challenges/get-started.md)
+
+  Availability date: September 15, 2026
+
+### Journeys {#sep-26-journeys}
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey-level holdout (Limited availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now configure a holdout group for your journeys directly from journey properties. A holdout is a configurable percentage of your target audience that is excluded from entering the journey and receives no communication. By comparing holdout profiles against active profiles in Customer Journey Analytics reporting, you can measure the incremental lift - the true impact - that your journey delivers.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. For full details about the release cycle and availability phases, see <a href="releases.md">Journey Optimizer release cycle</a>.</p>
+<p>For more information, refer to the <a href="../building-journeys/journey-properties.md#performance-management">detailed documentation</a>.</p>
+<p>Availability date: September 1, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Generate expressions with AI in journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The journey advanced expression editor now integrates AI-powered expression generation: describe the expression you want to build in natural language, and the editor generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>For more information, refer to the <a href="../building-journeys/expression/generate-expression.md">detailed documentation</a>.</p>
+<p>Availability date: September 1, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Decisioning in Journey simulation** - Path Experimentation, as part of the **Optimize** activity, is now supported in Simulation. Routing is handled by Decisioning and is random and non-deterministic per simulated user.
+
+  [Learn more](../building-journeys/simulate-journey-gs.md)
+
+  Availability date: September 15, 2026
+
+* **New Journey Anomaly Detected alert** - A new system alert now warns you when a live journey's daily traffic deviates from its own historical baseline, or drops to zero unexpectedly, across Journey Entries, Journey Exits, and Event Sends. This alert is currently available in production sandboxes only.
+
+  [Learn more](../reports/alerts.md)
+
+  Availability date: September 15, 2026
+
+* **Decisioning in Journey simulation** - You can now simulate journeys that rely on Decisioning, with the following newly supported:
+
+  * Content Decision nodes are now supported in Simulation.
+  * The Optimize activity's Targeting rule method is now supported in Simulation.
+  * Actions with Adobe Journey Optimizer–decisioned content (e.g., email using a decision policy) are now supported in Simulation.
+  * Decision policies using Offer eligibility and ranking by rule, audience, priority, or formula are fully supported. Ranking by AI Model - Personalization is also supported, though returned offers may vary between runs.
+
+  [Learn more](../building-journeys/simulate-journey-gs.md)
+
+  Availability date: September 8, 2026
+
+* **New dateDiff function in journey expression editor** - The journey expression editor now includes the `dateDiff` function, which calculates the difference between two dates in number of days. This function is useful for time-based logic such as creating deadlines, calculating customer lifecycle durations, or building countdown timers in journey conditions.  [Learn more](../building-journeys/functions/date-functions.md#dateDiff)
+
+  Availability date: September 1, 2026
+
+* **Support for Jump activities in Audience Qualification journeys** - You can now use Jump activities in journeys that start with an Audience Qualification node to jump to event-based journeys. This capability is being progressively rolled out to organizations. If you don't see this in your environment, it may be because you're still using batch audiences in Audience Qualifications. [Learn more](../building-journeys/jump.md)
+
+  Availability date: September 22, 2026.
+  
+* **Analyze Journey Anomalies skill** - CX Coworker can now detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts against historical baselines using the **Analyze Journey Anomalies** skill. Once a real anomaly is confirmed, the skill runs read-only diagnostics to surface a likely root cause and recommendation. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
+
+  Availability date: September 2, 2026
+
+* **Trigger after batch audience evaluation** - For recurring journeys that target batch audiences, you can configure a wait window of up to 6 hours for a fresh batch evaluation before the journey runs. If an evaluation is in progress, the journey waits for it to complete; if the latest snapshot was used by the previous run, it waits for a newer batch. If no fresh audience is available by the end of the wait window, that occurrence is skipped. [Learn more](../building-journeys/read-audience.md)
+
+  Availability date: September 18, 2026
+
+### Campaigns {#sep-26-campaigns}
+
+* **Action Campaign authoring flow redesign** - Adobe Journey Optimizer Action Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
+
++++ Coming soon — **Information below is subject to change.**
+
+<table>
+<thead>
+<tr>
+<th><strong>Inbound experience simulation in Action Campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now simulate inbound channel actions in Action Campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
+<p>This capability is currently in private beta and available to a limited set of organizations. Contact your Adobe representative for more information.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface.
+
+* **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
+
++++
+
+### Orchestrated campaigns {#sep-26-orchestrated-campaigns}
+
+<table>
+<thead>
+<tr>
+<th><strong>Alerting for orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Orchestrated campaigns now support <strong>automated alerting</strong> through the same alerting framework used across journeys and campaigns. Alerts are triggered when a campaign execution fails, times out, and each alert includes what happened, when, where, and a direct link to the Canvas to check further details in the logs.</p>
+<p>For more information, refer to the <a href="../orchestrated/start-monitor-campaigns.md#alerting">detailed documentation</a>.</p>
+<p>Availability date: September 22, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Conditional content with relational data in orchestrated campaigns** - When building conditional content in the Email Designer for orchestrated campaigns, you can now build conditions directly on relational data — such as related records associated with a profile — not just standard profile attributes. [Learn more](../orchestrated/activities/channels.md#add-personalization)
+
+  Availability date: September 22, 2026
+
+### Personalization {#sep-26-personalization}
+
+* **Fix syntax with AI** - When a PQL syntax validation error is detected, the Personalization Editor now provides a "Fix with AI" option to help resolve the issue directly from the editor.
+
+  Availability date: September 22, 2026
+
+### Usability improvements {#sep-26-usability}
+
+* **Easier detach and join branches in the new journey canvas** - You can now detach a branch from the rest of your journey without deleting it, and join it back later at a different point, either by selecting an eligible activity directly on the canvas or by picking it from a list of disconnected or already-used branches. [Learn more](../building-journeys/using-the-journey-designer.md#join-and-detach-branches)
+
+  Availability date: September 1, 2026
+
+## August '26 release notes {#aug-26-updates}
 
 ### Content Management
 
@@ -112,55 +266,15 @@ The following capabilities and improvements have been introduced to Content mana
 
 * **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the journey header next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed. [Read more](../building-journeys/journey-properties.md#dates)
 
-
-Availability date: August 20, 2026
+  Availability date: August 20, 2026
 
 * **New list functions in the advanced expression editor** - Two new functions are available in the advanced expression editor: `mergeLists` combines two lists, with or without deduplication, and `differenceLists` returns the items of one list that are not present in another. [Learn more](../building-journeys/functions/list-functions.md)
 
-    Availability date: August 13, 2026
+  Availability date: August 13, 2026
 
 * **Send-Time Optimization in the Wait activity** - Send-Time Optimization is now available in the Wait activity, letting Adobe's AI determine the optimal time to continue to any downstream activity. [Learn more](../building-journeys/wait-activity.md#sto-wait)
 
-    Availability date: August 13, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Generate expressions with AI in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The journey advanced expression editor now integrates AI-powered expression generation: describe the expression you want to build in natural language, and the editor generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: August 31, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey-level holdout (Limited availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now configure a holdout group for your journeys directly from journey properties. A holdout is a configurable percentage of your target audience that is excluded from entering the journey and receives no communication. By comparing holdout profiles against active profiles in Customer Journey Analytics reporting, you can measure the incremental lift - the true impact - that your journey delivers.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **Add new dateDiff function in journey expression editor** - The journey expression editor now includes the `dateDiff` function, which calculates the difference between two dates in number of days. This function is useful for time-based logic such as creating deadlines, calculating customer lifecycle durations, or building countdown timers in journey conditions.
-
-+++
+  Availability date: August 13, 2026
 
 ### Campaigns {#aug-26-campaigns}
 
@@ -186,33 +300,8 @@ The following capabilities and improvements have been introduced to Campaigns in
 </table>
 
 * **Per-campaign lifecycle alert subscriptions** - You can now subscribe to supported campaign lifecycle alerts for a single campaign, in addition to the existing sandbox-level subscription. This lets you monitor individual high-priority campaigns without receiving the same alert for every campaign in the sandbox. [Learn more](../reports/alerts.md#subscribe-alerts)
-    Availability date: August 13, 2026
 
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Inbound experience simulation in Action Campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now simulate inbound channel actions in Action Campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
-<p>This capability is currently in private beta and available to a limited set of organizations. Contact your Adobe representative for more information.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **Action Campaign authoring flow redesign** - Adobe Journey Optimizer Action Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
-
-* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface.
-
-* **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
-
-+++
+  Availability date: August 13, 2026
 
 ### Orchestrated Campaigns {#august-26-oc}
 
@@ -285,6 +374,25 @@ The following capabilities and improvements have been introduced to Orchestrated
 
   Availability date: August 18, 2026
 
+### Loyalty {#aug-26-loyalty}
+
+<table>
+<thead>
+<tr>
+<th><strong>Loyalty Insights skill</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer introduces <strong>Loyalty Insights</strong>, a new CX Coworker skill for asking questions about challenge performance and other loyalty program data ingested into the Loyalty field groups in Adobe Experience Platform.</p>
+<p>For more information, refer to the <a href="../loyalty-challenges/loyalty-coworker-skills.md">detailed documentation</a>.</p>
+<p>Availability date: August 31, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Channels {#august-26-channels}
 
 * **Live activity execution metadata (executionMetadata)** - API-triggered Live activity campaigns (Transactional and Marketing) now support an optional executionMetadata field on each recipient. This lets you attach custom key/value data, such as an order ID, loyalty tier, or region code, to an execution. [Learn more](../mobile-live/create-mobile-live.md#metadata)
@@ -311,27 +419,22 @@ The following capabilities and improvements have been introduced to Orchestrated
 
   Availability date: August 11, 2026
 
-+++ Coming soon — **Information below is subject to change.**
+### Email Designer {#august-26-email-designer}
 
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in Web Channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
-</td>
-</tr>
-</tbody>
-</table>
+* **Increase column counts without losing content in the Email Designer** - You can now increase the column count of an existing structure — for example, from 2 columns to 3 — without deleting it and losing your content. [Learn more](../email/content-from-scratch.md)
 
-+++
+  Availability date: August 5, 2026
+
+* **More background image placement options in the Email Designer** - Four new Image placement options are available for background images: Full Width - Top, Full Width - Bottom, Full Height - Left, and Full Height - Right. Each scales the image proportionally along one axis, like the existing Full Width and Full Height options, but anchors it to a specific edge instead of centering it, giving you more control over which part of a hero image stays in view. [Learn more](../email/backgrounds.md)
+
+  Availability date: August 4, 2026
 
 ### Usability improvements {#august-26-usability}
 
+* **Multi-selection in the new journey canvas** - The new journey canvas experience introduces simplified multi-node selection: hold Shift and drag to select multiple nodes at once, rather than selecting them individually. This enables bulk actions, such as copy, delete, or save as a journey fragment, to be performed efficiently across several nodes. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
+
+  Availability date: August 17, 2026
+  
 * **Bulk operations in journey inventory** - You can now perform new bulk actions directly from the journey inventory list, making it faster to manage multiple journeys at once. Select several journeys and apply any of the following new actions in a single step: **add to package**, **delete**, **move to folder**, **edit tags**, or **manage access**. This reduces the need to repeat the same action one journey at a time, streamlining journey management for teams working with large numbers of journeys. [Learn more](../building-journeys/journey-ui.md)
 
   Availability date: August 12, 2026
@@ -340,6 +443,4 @@ The following capabilities and improvements have been introduced to Orchestrated
 
   Availability date: August 11, 2026
 
-* **Multi-selection in the new journey canvas** - The new journey canvas experience introduces simplified multi-node selection: hold Shift and drag to select multiple nodes at once, rather than selecting them individually. This enables bulk actions, such as copy, delete, or save as a journey fragment, to be performed efficiently across several nodes. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
 
-  Availability date: August 17, 2026

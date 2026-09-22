@@ -18,14 +18,12 @@ feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
-    internal-label: Proofs
   - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
     internal-label: Templates
+  - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
+    internal-label: Proofs
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

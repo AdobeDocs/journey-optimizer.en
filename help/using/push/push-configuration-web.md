@@ -14,6 +14,10 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
@@ -209,3 +213,5 @@ Once your push credentials and channel configuration are set up, you need to imp
 After completing the web push configuration in both Adobe Experience Platform and [!DNL Adobe Experience Platform Data Collection], you can test your implementation before sending web push notifications to your profiles. Testing ensures that subscriptions are properly registered and that notifications are delivered correctly to your users' browsers.
 
 For detailed instructions on creating a test journey with events to validate your web push setup, refer to the [mobile app push notification configuration documentation](push-configuration.md), which provides a comprehensive testing workflow applicable to both mobile and web push channels.
+
+{{$include /help/_includes/do-not-localize/push/ai-augmented-push-configuration-web.md}}

@@ -8,9 +8,21 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
 ---
 
 # Create challenges {#create-challenges}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, configure, publish, and launch loyalty challenges, including their settings, structure, content, messaging, tasks, and rewards.
+
+>[!ENDSHADEBOX]
 
 This page covers the complete process of creating and publishing a loyalty challenge in Adobe Journey Optimizer.
 
@@ -92,14 +104,14 @@ Define who can participate in your loyalty challenge.
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_schedule"
 >title="Challenge schedule"
->abstract="Set when the challenge is live using start and end date and time and a time zone. In the task completion window, choose when customers can complete tasks during the challenge period."
+>abstract="Set when the challenge is live using start and end date and time and a time zone, or select No end date to run the challenge indefinitely. In the task completion window, choose when customers can complete tasks during the challenge period."
 
 Configure when your challenge runs:
 
 1. In the **[!UICONTROL Schedule]** section, set:
 
    * **[!UICONTROL Start date and time]**: When the challenge becomes available to customers.
-   * **[!UICONTROL End date and time]**: When the challenge expires and no longer accepts new completions.
+   * **[!UICONTROL End date and time]**: When the challenge expires and no longer accepts new completions. Select **[!UICONTROL No end date]** instead of a date to run the challenge indefinitely.
    * **[!UICONTROL Time zone]**: The time zone used for the challenge schedule.
 
    ![](assets/challenge-create-schedule.png)
@@ -343,6 +355,8 @@ You have two options for launching your challenge:
    >[!IMPORTANT]
    >
    >Any changes to the challenge must be made in the Loyalty Challenge editor and will require you to generate a new journey. Any work done directly on the existing challenge journey will be lost if you make changes to the challenge.
+   >
+   >No journey is generated for challenges configured with **[!UICONTROL No end date]**, since journeys cannot run longer than 90 days. The challenge itself still runs correctly and members can still opt in and complete tasks.
 
 1. Open the generated journey and publish it. The journey appears in **Draft** status with the name format *"Journey: [Challenge Name]"* and can be accessed from:
 

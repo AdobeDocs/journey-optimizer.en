@@ -18,8 +18,6 @@ feature_v2:
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
 subfeature_v2:
   - id: dd51b532-b93f-4bcf-8dbf-0d007f593aca
     internal-label: Data source configuration
@@ -98,3 +96,5 @@ To delete a field from a field group used in one or more journeys, follow these 
 1. Create new versions of each of these journeys. Edit all activities using "Field Group A" and select "Field Group B".
 1. Stop old versions of journeys that use "Field Group A". You should then have no journey using "Field Group A".
 1. Remove "Field Group A" as is it not used anymore.
+
+{{$include /help/_includes/do-not-localize/datasource/ai-augmented-configure-data-sources.md}}

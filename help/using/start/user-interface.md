@@ -13,8 +13,8 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
-    internal-label: Journey management
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
     internal-label: Overview
@@ -189,7 +189,7 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 * **Content templates** - Reusable message templates for campaigns and journeys. [Create templates](../content-management/content-templates.md)
 * **Fragments** - Content blocks that can be used across multiple messages. [Work with fragments](../content-management/fragments.md)
 * **Landing pages** - Web forms for subscriptions and preferences. [Design landing pages](../landing-pages/get-started-lp.md)
-* **Use Case Playbooks** - Pre-built workflows for common marketing scenarios. [Explore playbooks](ai-features.md#playbooks)
+* **Use Case Playbooks** - Pre-built workflows for common marketing scenarios. [Explore playbooks](ajo-use-case-guide.md#playbooks)
 
 **Data Management** - Manage your data foundation. [Learn about schemas and datasets](../data/get-started-schemas.md)
 
@@ -278,46 +278,42 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >[!CONTEXTUALHELP]
 >id="ajo_oc_campaign_ovv_4"
 >title="Available channels"
->abstract="Email, SMS, Push notifications, Direct mail"
+>abstract="Email, SMS, Push notifications, and Direct mail"
 
 <!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS + JOURNEYS SKU -->
 
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_jo_campaign_ovv_1"
+>id="ajo_oc_jo_camppaign_ovv_1"
 >title="Guided UI to create and send a campaign"
->abstract="Set one or multiple actions with a channel, choose an audience, set the content, define a schedule and you are ready to send"
-
+>abstract="Set one or multiple actions with a channel, choose an audience, set a content, define a schedule and you are ready to send"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_jo_campaign_ovv_2"
+>id="ajo_oc_jo_camppaign_ovv_2"
 >title="Available channels"
 >abstract="Email, SMS, Push notifications, In-app, Web, Code-based experiences"
 
-
 <!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS - API triggered tab -->
 
-
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_campaign_ovv_1"
+>id="ajo_oc_api_camppaign_ovv_1"
 >title="Transactional API triggered campaigns"
 >abstract="Trigger real-time messages through API calls"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_campaign_ovv_2"
+>id="ajo_oc_api_camppaign_ovv_2"
 >title="Marketing messages"
->abstract="Promotional content (requires opt-in, subject to business rules)"
+>abstract="Promotional content, including broadcast Live activities such as sports scores or flight status updates (requires opt-in, subject to business rules)"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_campaign_ovv_3"
+>id="ajo_oc_api_camppaign_ovv_3"
 >title="Transactional messages"
 >abstract="Service-related content (confirmation, alerts, not subject to marketing consent)"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_campaign_ovv_4"
+>id="ajo_oc_api_camppaign_ovv_4"
 >title="Available channels"
->abstract="Email, SMS, Push notifications"
-
+>abstract="Email, SMS, Push notifications, and Live activities"
 <!--APPROVAL POLICIES-->
 
 
@@ -399,10 +395,32 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >title="Relay destination URL"
 >abstract="The HTTPS endpoint Journey Optimizer calls to relay each incoming message. Journey Optimizer sends a separate HTTP POST here per message received. This is distinct from the Auth URL under Custom Authentication, which is used only to obtain an access token, not to receive messages."
 
-<!--Set as default webhook-->
+<!--DOCAC-15748 Set as default webhook-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_webhook_default_webhook"
 >title="Set as default"
 >abstract="Enable this option to use a common webhook URL for processing provider feedback and inbound messages received from the provider."
 
+<!--DOCAC-15698 Implement contextual help for Inbound Activity Deactivation activity-->
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_inbound_activity_deactivation"
+>title="Inbound Activity Deactivation activity"
+>abstract="Removes a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit."
+
+<!--DOCAC-15707 Implement contextual help for Journey Properties event recovery / action timeout fields-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_recovery_timeout"
+>title="Set event recovery timeout"
+>abstract="Controls how long the journey automatically replays events impacted by a service interruption. Off by default (72-hour automatic replay); turn on to adjust the replay window from 0 to 72 hours for time-sensitive journeys."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_timeout"
+>title="Custom Action / IDS Action timeout"
+>abstract="The Custom Action / IDS Action timeout option defines an alternative path in the journey when the action times out or returns an error, so profiles continue through a fallback path rather than stopping at this step. Recommended values are between 1 and 30 seconds."
+
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-user-interface.md}}

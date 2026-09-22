@@ -99,14 +99,17 @@ Use these guidelines to keep Jump activity behavior predictable and safe.
 
 ### Authoring {#jump-limitations-authoring}
 
-* The **[!UICONTROL Jump]** activity is only available in journeys that use a namespace.
-* You can only jump to a journey that uses the same namespace as the origin journey.
-* You cannot jump to a journey that starts with an **Audience Qualification** event or **Read Audience**. 
-* You cannot have a **[!UICONTROL Jump]** activity and an **Audience Qualification** event or **Read Audience** in the same journey.
-* You can include as many **[!UICONTROL Jump]** activities as needed in a journey. After a **[!UICONTROL Jump]**, you can add any activity needed.
-* You can have as many jump levels as needed. For example, journey A jumps to journey B, which jumps to journey C, and so on.
-* The target journey can also include as many **[!UICONTROL Jump]** activities as needed.
-* Loop patterns are not supported. There is no way to link two or more journeys together, which would create an infinite loop. The **[!UICONTROL Jump]** activity configuration screen prevents you from doing this.
+* **Namespace requirement:** The **[!UICONTROL Jump]** activity is only available in journeys that use a namespace. You can only jump to a journey that uses the same namespace as the origin journey.
+
+* **Target journey constraints:** You cannot jump to a journey that starts with an **Audience Qualification** event or **Read Audience**.
+
+* **Audience Qualification support (progressive rollout):** You can have a **[!UICONTROL Jump]** activity and an **Audience Qualification** event in the same journey if the journey starts with Audience Qualification and the Jump redirects to an event-based start journey. This capability is being progressively rolled out. If you don't see this in your environment, it may be because you're still using batch audiences in Audience Qualifications.
+
+* **Read Audience restriction:** You cannot have a **[!UICONTROL Jump]** activity and a **Read Audience** event in the same journey.
+
+* **Multiple jumps:** You can include as many **[!UICONTROL Jump]** activities as needed in a journey. After a **[!UICONTROL Jump]**, you can add any activity needed. You can have as many jump levels as needed (for example, journey A jumps to journey B, which jumps to journey C). The target journey can also include as many **[!UICONTROL Jump]** activities as needed.
+
+* **Loop prevention:** Loop patterns are not supported. There is no way to link two or more journeys together that would create an infinite loop. The **[!UICONTROL Jump]** activity configuration screen prevents you from doing this.
 
 ### Execution {#jump-limitations-exec}
 
@@ -146,7 +149,7 @@ Build each phase as a separate journey in Journey Optimizer, then use **[!UICONT
    ![Target journey selection dropdown in jump activity configuration](assets/jump2.png)
 
 1. Click inside the **Target journey** field. 
-   The list displays all journey versions that are draft, live or in test mode. Journeys that use a different namespace or that start with an **Audience Qualification** event are not available. Target journeys that would create a loop pattern are also filtered out.
+   The list displays all journey versions that are draft, live or in test mode. Journeys that use a different namespace or that start with a **Read Audience** event are not available. Journeys starting with an **Audience Qualification** event are available only if your origin journey also starts with Audience Qualification (and batch audiences have been deprecated for new Audience Qualification nodes in your organization). Target journeys that would create a loop pattern are also filtered out.
 
    ![Jump activity showing target journey and action parameters](assets/jump3.png)
 
@@ -223,7 +226,8 @@ For complete understanding, this information should be combined with the documen
 
 * Jump activity is only available in journeys that use a namespace; origin and target journeys must share the same namespace
 * Cannot jump to a journey starting with an Audience Qualification event or Read Audience
-* Cannot use a Jump activity and an Audience Qualification event or Read Audience in the same journey
+* Cannot use a Jump activity and a Read Audience event in the same journey
+* Can use a Jump activity and an Audience Qualification event in the same journey only if the journey starts with Audience Qualification and jumps to an event-based journey (subject to feature flag rollout)
 * Loop patterns (circular journey chains) are not supported and are prevented by the configuration UI
 * At runtime, the latest live version of the target journey is triggered
 * A profile can only be present once in the same journey at a time; if already active in the target journey, the Jump is silently skipped
@@ -238,7 +242,7 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: What happens to a profile in the origin journey after a Jump?** — The profile continues progressing through any remaining steps in the origin journey after the Jump step while simultaneously entering the target journey; it is active in both journeys at the same time.
-* **Q: Can I jump to a Read Audience journey?** — No; you cannot jump to a journey that starts with a Read Audience or Audience Qualification event.
+* **Q: Can I jump to a Read Audience journey?** — No; you cannot jump to a journey that starts with a Read Audience event. You also cannot jump to a journey starting with an Audience Qualification event. However, if your origin journey starts with an Audience Qualification event, you can jump to an event-based journey (this capability is being progressively rolled out and may not be available in all organizations yet).
 * **Q: What triggers the target journey when a Jump is executed?** — An internal event is sent to the first event of the target journey by the Jump activity; the profile then flows through the target journey from that first event.
 * **Q: How do I prevent infinite loops when chaining journeys with Jump?** — Loop patterns are blocked by the Jump activity configuration UI, which filters out target journeys that would create a circular chain.
 * **Q: What version of the target journey is triggered by a Jump?** — The latest live (or test mode) version of the target journey is triggered at runtime.

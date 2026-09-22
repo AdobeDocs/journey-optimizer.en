@@ -59,6 +59,8 @@ With this feature, the content of email and SMS messages sent via [!DNL Journey 
 
 Records are then retained in the dataset for seven calendar days from ingestion, during which you can export them out to the external system of your choice.
 
+Message Export is a supported alternative when you need to review or retain the exact content sent to an individual — for example, for customer-care, compliance, or downstream-system use cases. It does not generate or return a mirror page URL; it exports the sent message content and related metadata so your organization can store and display the information in its own systems.
+
 ➡️ For common questions and answers, see the [Message Export FAQ](#message-export-faq).
 
 ## Guardrails
@@ -430,6 +432,12 @@ Customers typically use Message Export for:
 
 +++
 
++++ Does Message Export provide the mirror page URL?
+
+No. Message Export provides sent message content and related metadata in the AJO Message Export Dataset. It does not generate or return a mirror page URL. [Learn more about mirror pages](../email/message-tracking.md#mirror-page)
+
++++
+
 +++ What Message Export does not do
 
 Message Export does not:
@@ -438,6 +446,7 @@ Message Export does not:
 * Provide unlimited or long-term data retention in Adobe systems
 * Offer a trial environment
 * Automatically archive messages outside Adobe
+* Generate, expose, or reconstruct a mirror page URL
 
 +++
 

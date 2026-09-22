@@ -9,7 +9,9 @@ TQID: https://experienceleague.adobe.com/rl133NfnmN5hl31E3SaOB-xCpUlbDFdH6-ictYN
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
-feature_v2: []
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -199,3 +201,5 @@ To apply your approval policy, you must activate it. To perform this, follow the
 1. From the **[!UICONTROL Policy]** menu, open the advanced options to **[!UICONTROL Edit]**, **[!UICONTROL Deactivate]**, or **[!UICONTROL Duplicate]** the policy as needed.
 
     ![Approval policy management options menu](assets/policy_activate_2.png)
+
+{{$include /help/_includes/do-not-localize/test-approve/ai-augmented-approval-policies.md}}

@@ -5,7 +5,9 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: e742c04e-2987-4466-84af-bdaf4d714552
-feature_v2: []
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
     internal-label: Proofs
@@ -31,7 +33,7 @@ For API-triggered and Action (scheduled) campaigns, you can also send proofs pro
 
 **Frequency capping rules** - All existing frequency capping rules apply to proofs. If you have set [frequency capping rules](../conflict-prioritization/channel-capping.md) (e.g., maximum sends per profile), these limits also apply when sending proofs. If a test profile has already reached the frequency cap limit, proofs will show as finished but no email will be delivered. For repeated testing, consider using unique test profiles or adjusting frequency caps for proofing scenarios as needed.
 
-**Mirror page** - In the proof sent, the link to the mirror page is not active. It is only activated in the final messages.
+**Mirror page** - The link to the mirror page in a proof is not active. Proofs let you review email rendering, content, personalization, and content variations, but not mirror page navigation, since the link only activates once the final message is sent. To confirm mirror page rendering before launch, send the final message to a small, controlled internal audience rather than to your live customer list. [Learn more about mirror pages](../email/message-tracking.md#mirror-page).
 
 **Assets** - Assets and images have specific accessibility rules:
 

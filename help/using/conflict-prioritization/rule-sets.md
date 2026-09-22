@@ -14,10 +14,10 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
     internal-label: Conflict & prioritization
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
@@ -206,3 +206,5 @@ Its status will change to **[!UICONTROL Inactive]** and the rule will not apply 
 ## How-to video {#video}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)
+
+{{$include /help/_includes/do-not-localize/conflict-prioritization/ai-augmented-rule-sets.md}}

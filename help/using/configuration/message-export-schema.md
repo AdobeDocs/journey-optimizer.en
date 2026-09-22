@@ -8,7 +8,9 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: export, messages, dataset, schema, emails, SMS
-feature_v2: []
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
@@ -24,6 +26,8 @@ subfeature_v2:
 When **Message Export** is enabled on an Email or SMS channel configuration, sent message content is written to the **AJO Message Export Dataset** in [!DNL Adobe Experience Platform].
 
 This section lists the fields available in the exported dataset.
+
+For an overview of the Message Export feature, enablement steps, and supported use cases, see [Message export in Journey Optimizer](message-export.md).
 
 ## Dataset fields
 

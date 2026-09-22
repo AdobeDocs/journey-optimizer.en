@@ -8,6 +8,10 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: modules, email designer, headers, hero, cards, footer, email layout, drag and drop
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2: []
 ---
 
 # Use modules in the Email Designer {#email-layout-modules}
@@ -75,6 +79,8 @@ The following module categories are available out of the box. Multiple layout va
 | **[!UICONTROL Cards]** | Products, articles, or content items in single- or multi-column grid layouts. |
 | **[!UICONTROL Teams]** | Team members, authors, or speakers with a photo, name, and role. |
 | **[!UICONTROL Footers]** | Complete email footer with navigation links, social media icons, legal copy, and required opt-out and mirror-page links. |
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-email-modules.md}}
 
 
 

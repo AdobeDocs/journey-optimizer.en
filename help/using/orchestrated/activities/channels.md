@@ -12,6 +12,8 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
+  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
+    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
@@ -183,9 +185,13 @@ Additional settings are available depending on the selected communication channe
 
 +++**Email header personalization** (Email).
 
->[!AVAILABILITY]
+>[!IMPORTANT]
 >
 >This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+> 
+>Journey Optimizer lets you personalize the sender information, including data from Campaign Orchestration's relational store, enabling use cases such as sending an email in the name of the account manager. Since this data may be subject to usage restrictions defined by your organization or by legal regulations, ensure that your data operations within Journey Optimizer are compliant with your legal and compliance obligations.
+>
+>Adobe Journey Optimizer handles consent through the Adobe Experience Platform (AEP) at the profile level. When personalizing using Journey Optimizer Campaign Orchestration relational, non-profile data, organizations should create and enforce consent policies using segmentation and personalization.
 
 After selecting your channel configuration, enable **[!UICONTROL Override email delivery settings]** to replace values defined in that configuration. You can customize the following settings for this channel activity:
 
@@ -227,11 +233,20 @@ Switch to the **[!UICONTROL Content]** tab to create your message. The process s
 <td><a href="../../mobile/create-mobile-message.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a><br/><a href="../../mobile/create-mobile-message.md"><strong>Create an SMS</strong></a></td>
 <td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a><a href="../../push/create-push.md"><strong>Create a push notification</strong></a></td><td><a href="../../direct-mail/create-direct-mail.md"><img alt="direct mail" src="../../channels/assets/do-not-localize/direct-mail.jpg"></a><a href="../../direct-mail/create-direct-mail.md"><strong>Create a direct mail</strong></a></td><td><a href="../../custom-channel/create-custom-channel.md"><img alt="custom channel" src="../../channels/assets/do-not-localize/web.jpg"></a><br/><a href="../../custom-channel/create-custom-experience.md"><strong>Create a custom action</strong></a></td><td><a href="../../line/get-started-line.md"><img alt="line" src="../../channels/assets/do-not-localize/line.jpg"></a><br/><a href="../../line/get-started-line.md"><strong>Create a LINE message (LA)</strong></a></td></tr></table>
 
-### Add personalization {#add-personalization}
+### Add personalization and conditional content{#add-personalization}
 
 From the message editor on a channel activity, insert **[!UICONTROL Profile attributes]** and **[!UICONTROL Target attributes]** from the campaign worktable (targeting dimension and enrichment data).
 
 ➡️ [Learn how to add personalization in Orchestrated campaigns](../add-personalization.md), including enrichment collection arrays, array functions, and `{{#each}}` iteration.
+
+![](../assets/oc-personalization.png)
+
+When creating conditional content for an email delivery, you can use **[!UICONTROL Target]** attributes from the campaign worktable. These attributes include incoming audience or enrichment data from relational schemas, so you can show different content based on the target record. Conditions are specific to the current delivery and cannot be saved as reusable conditions.
+
+➡️ [Learn how to create conditional content in the Email Designer](../../personalization/dynamic-content.md#emails).
+
+
+![](../assets/conditional-content-target.png)
 
 ### Check and test your content {#simulate-content-test-profiles}
 

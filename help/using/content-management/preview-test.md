@@ -5,7 +5,9 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 736fc861-17f2-47b7-8635-9afd261ea3a8
-feature_v2: []
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
@@ -73,6 +75,8 @@ For API-triggered and Action (scheduled) campaigns, you can also send proofs pro
 * **Personalization with context data** - When previewing a message or sending proofs, only profile personalization data is displayed. Personalization based on context data, such as event information, can only be tested in the context of a journey. Learn how in [this use case](../personalization/personalization-use-case.md).
 
 * **Preview content with multiple conditional variants** - When simulating or rendering proofs for emails containing multiple conditional variants, Journey Optimizer may require more processing time. If you experience timeouts or error messages, consider reducing the total number of variants or simplifying conditional rules. Learn more about conditional content on [this page](../personalization/dynamic-content.md).
+
+* **Mirror page limitation** - Mirror page links are not active in proofs, including proofs sent from test profiles or from content variations tested with sample input data. Proofs let you validate content, rendering, and personalization, but not the mirror page link, which only activates in final messages. [Learn more](../email/message-tracking.md#mirror-page).
 
 ## How-to video {#video-preview}
 
