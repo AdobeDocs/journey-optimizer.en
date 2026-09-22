@@ -163,27 +163,29 @@ Learn more about [Dynamic media template](https://experienceleague.adobe.com/en/
 >**Dynamic media template** is available exclusively in Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7). Since Scene7 mode is not accessible for Healthcare customers, content will not be rendered. For any exceptions, please contact Experience Manager support.
 
 
-### With image component {#image-component}
+### With the Dynamic Media Template component {#image-component}
 
-You can insert your dynamic template directly into your content using the Image component:
+You can insert your dynamic template directly into your content using the **Dynamic Media Template** component. Follow the steps below:
 
 1. Open your campaign or journey and access your content.
 
-1. Drag and drop an **Dynamic Media Template** into your layout. 
+1. Drag and drop an **[!UICONTROL Dynamic Media Template]** into your layout. 
 
-    For more information on Image component, refer to [this page](../email/content-components.md).
+    For more information on content components, refer to [this page](../email/content-components.md).
 
     ![](assets/dynamic-media-template-1.png)
 
-1. Choose how you want to add your Dynamic Media template:
+1. Choose how you want to add your dynamic media template:
 
-    * **Browse** — browse through your AEM assets and select the Dynamic media template you want to add to your content.
+    * **[!UICONTROL Browse]** — browse through your AEM assets and select the dynamic media template you want to add to your content.
 
         ![](assets/dynamic-media-template-2.png)
 
-    * **Import from PSD** — drag and drop a Photoshop (PSD) file directly into the component and select a destination to store it. Adobe Journey Optimizer automatically converts the file into a Dynamic Media template and imports it in the repository that you selected.
+    * **[!UICONTROL Import PSD]** — drag and drop or select a Photoshop (PSD) file. Click **[!UICONTROL Next]** and choose a destination to store it.
 
-        ![](assets/dynamic-media-template-psd.png){width="70%"}
+        ![](assets/dynamic-media-template-psd.png){width="80%"}
+
+        Adobe Journey Optimizer automatically converts the file into a dynamic media template and imports it into the repository that you selected.
 
 1. In the **Image settings**, navigate to access the parameters of your dynamic media template.
 
