@@ -101,22 +101,22 @@ This section covers guardrails and limitations for journeys, including general j
 
 #### Journey payload size validation {#journey-payload-size}
 
-When you save or publish a journey, Journey Optimizer validates the size of the serialized journey definition to preserve stability and performance. The payload size is measured in bytes and is not determined by the number of activities alone. Each node contributes according to its saved configuration, including expressions, conditions, data mappings, parameters, and other configuration values.
+When you save or publish a journey, Journey Optimizer validates the size of the serialized journey definition to preserve stability and performance. The payload size is measured in bytes and is not determined by the number of activities alone. Each activity contributes according to its saved configuration, including expressions, conditions, data mappings, parameters, and other configuration values.
 
-Large contributors can include:
+Common contributors include:
 
-* Condition nodes with complex expressions.
-* Custom action nodes with many fields or deeply nested expressions.
+* Condition activities with complex expressions.
+* Custom action activities with many fields or deeply nested expressions.
 * Large data mappings.
-* Nodes containing extensive parameters or configuration.
+* Activities with extensive parameters or configuration.
 
-There is no fixed size-per-node value. Two journeys with the same number of activities can have different payload sizes depending on their configuration. When a warning or error is displayed, review the largest node identified in the message.
+There is no fixed size-per-activity value. Two journeys with the same number of activities can have different payload sizes depending on their configuration. When a warning or error is displayed, review the activity with the largest contribution identified in the message.
 
 | Scenario | Threshold | Behavior |
 |---|---|---|
 | Payload < 90% of limit | Below warning | Journey saves and publishes successfully. No warnings or errors displayed. |
-| Payload 90–99% of limit | Warning (soft) | Journey saves and publishes with a warning: **Warning**: Journey payload size is close to the limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes). |
-| Payload ≥ 100% of limit | **Error (hard)** | Save or publish is blocked. Returns **HTTP 413 Request Entity Too Large**. Error: Journey payload size exceeds limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes). |
+| Payload 90–99% of limit | Warning (soft) | Journey saves and publishes with a warning: **Warning**: Journey payload size is close to the limit. Largest contributing activity: '[ActivityName]' (type: '[ActivityType]', size: [N] bytes). |
+| Payload ≥ 100% of limit | **Error (hard)** | Save or publish is blocked. Returns **HTTP 413 Request Entity Too Large**. Error: Journey payload size exceeds limit. Largest contributing activity: '[ActivityName]' (type: '[ActivityType]', size: [N] bytes). |
 
 **Default configuration**
 
@@ -126,14 +126,14 @@ There is no fixed size-per-node value. Two journeys with the same number of acti
 
 **Troubleshooting and recommendations**
 
-* Review the largest node highlighted in the warning or error.
+* Review the activity with the largest contribution highlighted in the warning or error.
 * Simplify complex expressions and conditions, reduce data mappings, and remove unnecessary fields or parameters.
 * Consider splitting the journey into smaller journeys if needed.
 * If you believe your organization needs a higher limit, contact your Adobe representative.
 
 To monitor the current payload size of your journey before publishing, use the **[!UICONTROL Current journey payload size]** indicator in the journey properties panel. [Learn how to check the size of your journey payload](../building-journeys/journey-properties.md#journey-payload-size)
 
-The serialized journey payload includes the configuration of the journey nodes. Referenced entities, such as email content referenced by an Email action, are not included in this payload. Email message content is subject to the separate message-content size guardrail in the [Email guardrails](#message-content-size) section.
+The serialized journey payload includes the configuration of journey activities. Referenced entities, such as email content referenced by an Email action, are not included in this payload. Email message content is subject to the separate message-content size guardrail in the [Email guardrails](#message-content-size) section.
 
 ### License package comparison {#select-package-limitations}
 

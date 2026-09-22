@@ -155,11 +155,11 @@ The **[!UICONTROL Current journey payload size]** field in the journey propertie
 
 ![Current journey payload size indicator in the journey properties panel](assets/journey-payload-size.png){width="50%" zoomable="yes"}
 
-The value reflects the saved configuration of the journey, including its nodes, expressions, conditions, data mappings, parameters, and actions. It is not calculated from the activity count alone. If the payload approaches the configured limit, Journey Optimizer displays a warning. If the payload reaches or exceeds the configured limit, saving or publishing the journey is blocked.
+The value reflects the saved configuration of the journey, including its activities, expressions, conditions, data mappings, parameters, and actions. It is not calculated from the activity count alone. If the payload approaches the configured limit, Journey Optimizer displays a warning. If the payload reaches or exceeds the configured limit, saving or publishing the journey is blocked.
 
 The default maximum journey payload size is **2 MB (2,000,000 bytes)**. Some organizations may have custom limits configured by Adobe. Contact your Adobe representative if you need information about an organization-specific limit.
 
-For details about thresholds, contributing nodes, error behavior, and reduction strategies, refer to [Journey payload size validation](../start/guardrails.md#journey-payload-size) and [General journey guardrails](../start/guardrails.md#journeys-guardrails-journeys). Referenced entities, such as email content referenced by an Email action, are not included in the serialized journey payload; email message content is subject to a separate size guardrail.
+For details about thresholds, the largest contributing activities, error behavior, and reduction strategies, refer to [Journey payload size validation](../start/guardrails.md#journey-payload-size) and [General journey guardrails](../start/guardrails.md#journeys-guardrails-journeys). Referenced entities, such as email content referenced by an Email action, are not included in the serialized journey payload; email message content is subject to a separate size guardrail.
 
 ## Journey and profile timezones {#timezone}
 
