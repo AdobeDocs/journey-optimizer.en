@@ -191,10 +191,11 @@ In the AI Assistant pane, describe the rule you want to build in plain language.
 
 Before using a rule in your decisioning strategy or campaign, you can test it with sample or generated data to validate the rule logic and ensure it behaves as expected.
 
+### Access the simulation workspace
+
 1. Open an existing rule or [create a new one](#create) then click the **[!UICONTROL Simulate rule]** button.
 
     ![](assets/rule-simulate-button.png)
-
 
 1. The simulation screen opens with several sections:
 
@@ -204,15 +205,35 @@ Before using a rule in your decisioning strategy or campaign, you can test it wi
     * **Rule expression**: Displays the rule definition for reference
     * **Simulation result**: Shows whether the Profile will be eligible by this Rule or not
 
-1. Add test variants with the attributes required by your rule using one of the two methods below:
+### Add test variants
+
+1. Add test variants with the attributes required by your rule using one of the following methods:
     * To create a manual sample, select the **[!UICONTROL Create sample]** button.
     * To generate test variants using AI, click the **[!UICONTROL Generate]** button.
 
-  >[!NOTE]
-  >
-  >AI-based test variant generation is available to organizations with access to Adobe AI capabilities.
+    >[!NOTE]
+    >
+    >AI-based test variant generation is available to organizations with access to Adobe AI capabilities.
 
 The Test variants section is automatically populated with the created or generated samples. Each variant includes  attributes used in your rule. You can edit the field values directly to simulate different scenarios.
+
+### Populate variants with Adobe Experience Platform test profiles
+
+Once you have created or generated a variant, you can use attributes from an [Adobe Experience Platform test profile](../audience/creating-test-profiles.md) to populate its attributes.
+
+1. Select **[!UICONTROL Edit]** on a variant then click the **[!UICONTROL Select AEP profile]** button.
+
+    ![](assets/rule-simulate-aep.png)
+
+1. Select an identity namespace, enter the corresponding identity value.
+
+    The **Recents** area lists profiles that you have successfully applied. Recent profiles are stored in the browser per organization and sandbox, are ordered with the newest first, and are limited to 10 entries.
+
+    ![](assets/ranking-formula-simulate-aep-recents.png)
+
+1. Click the **[!UICONTROL Select profile]** button. The test profile's attributes are added to the selected variant.
+
+### View the simulation results
 
 To view the rule evaluation results, select a test variant from the list. The Simulation result area shows whether the Profile will be eligible by this Rule or not.
 

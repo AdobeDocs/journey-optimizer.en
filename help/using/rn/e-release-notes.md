@@ -456,8 +456,6 @@ The following capabilities and improvements are coming to Decisioning in this re
 
 * **Decisioning rule generation from Coworker** - The **AI-assisted decisioning rule generation** experience, previously available via the right rail, is now accessible through Coworker, which replaces the right rail as the way to build rules with AI. 
 
-* **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually.
-
 ### Reporting {#sep-26-reporting}
 
 The following capability is coming to reporting in this release.
