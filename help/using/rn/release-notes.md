@@ -192,7 +192,30 @@ topic_v2:
 
 ### Orchestrated campaigns {#sep-26-orchestrated-campaigns}
 
+<table>
+<thead>
+<tr>
+<th><strong>Alerting for orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Orchestrated campaigns now support <strong>automated alerting</strong> through the same alerting framework used across journeys and campaigns. Alerts are triggered when a campaign execution fails, times out, and each alert includes what happened, when, where, and a direct link to the Canvas to check further details in the logs.</p>
+<p>For more information, refer to the <a href="../orchestrated/start-monitor-campaigns.md#alerting">detailed documentation</a>.</p>
+<p>Availability date: September 22, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 * **Conditional content with relational data in orchestrated campaigns** - When building conditional content in the Email Designer for orchestrated campaigns, you can now build conditions directly on relational data — such as related records associated with a profile — not just standard profile attributes. [Learn more](../orchestrated/activities/channels.md#add-personalization)
+
+  Availability date: September 22, 2026
+
+### Personalization {#sep-26-personalization}
+
+* **Fix syntax with AI** - When a PQL syntax validation error is detected, the Personalization Editor now provides a "Fix with AI" option to help resolve the issue directly from the editor.
 
   Availability date: September 22, 2026
 
