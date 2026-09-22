@@ -80,6 +80,14 @@ The following capability is coming to content management in this release.
 </tbody>
 </table>
 
+### Integrations {#sep-26-integrations}
+
+The following capability is coming to integrations in this release.
+
+* **Dynamic token substitution for Experience Manager fragments** - Experience Manager Content Fragment references now support a **tokenSubstitution** attribute. When set to `false`, personalization inside the fragment's fields resolves directly, without a token map in the reference. It defaults to `true`, which keeps the existing behavior.
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
+
 ### Loyalty {#sep-26-loyalty}
 
 The following capability and improvement are coming to Loyalty in this release.
