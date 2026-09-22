@@ -452,9 +452,7 @@ The following capabilities and improvements are coming to Decisioning in this re
 </td>
 </tr>
 </tbody>
-</table>
-
-* **Decisioning rule generation from Coworker** - The **AI-assisted decisioning rule generation** experience, previously available via the right rail, is now accessible through Coworker, which replaces the right rail as the way to build rules with AI. 
+</table> 
 
 ### Reporting {#sep-26-reporting}
 
