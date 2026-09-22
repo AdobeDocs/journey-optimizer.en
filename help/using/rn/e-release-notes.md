@@ -42,7 +42,6 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 * [Compare journey versions](#sep-26-journeys) - Get a full-fidelity, structured diff between any two versions of a journey through Coworker Chat.
 * [Hygiene Analysis skill](#sep-26-journeys) - Scan active and draft journeys for broken configurations, silent failures, and decaying or unused assets, with recommended fixes.
 * [Business Performance Analysis skill](#sep-26-journeys) - Analyze journey performance and get concrete optimization recommendations, right from the chat.
-* [Decisioning rule generation](#sep-26-decisioning) - Build AI-assisted decisioning rules directly in Coworker, which now replaces the right rail for this experience.
 
 >[!ENDSHADEBOX]
 
@@ -128,7 +127,7 @@ The following capability and improvement are coming to Loyalty in this release.
 
 * **Challenges domain in the Content Card personalization editor** - The Content Card personalization editor now supports **Challenges** as a domain, letting you access challenge metadata when authoring content card personalization. This makes it easier to create tailored content for each stage of a challenge — Launch, In progress, and End — without custom code.  
 
-* **Per-member Loyalty challenge completion deadlines** - Loyalty challenges now support per-member completion deadlines: choose "Within a number of days after opt-in" under Completion requirements so each member's deadline is calculated from their own opt-in date rather than a fixed program-wide end date. If both a challenge end date and this opt-in window are set, each member's deadline is whichever comes first. <!-- Documentation link: TBD -->
+
 
 ### Onboarding {#sep-26-onboarding}
 
@@ -428,33 +427,6 @@ The following capabilities and improvements are coming to orchestrated campaigns
 
 * **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage.
 
-
-### Campaigns {#sep-26-campaigns}
-
-The following improvement is coming to campaigns in this release.
-
-* **Folders for campaigns** - You can now organize your campaigns into **folders** to improve navigation and management in the interface. 
-
-### Decisioning {#sep-26-decisioning}
-
-The following capabilities and improvements are coming to Decisioning in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in Web channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **Decisioning rule generation from Coworker** - The **AI-assisted decisioning rule generation** experience, previously available via the right rail, is now accessible through Coworker, which replaces the right rail as the way to build rules with AI. 
 
 ### Reporting {#sep-26-reporting}
 
