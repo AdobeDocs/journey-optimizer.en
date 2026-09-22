@@ -109,10 +109,25 @@ Complete the steps below to configure and implement Live activities in your appl
 
     Start measuring the impact of your Live activity with built-in reports.
 
-## How-to video
+## How-to videos
 
 Discover how to configure iOS Live activities with Adobe Journey Optimizer to deliver rich, real-time updates on the iPhone Lock Screen and Dynamic Island.
 
++++ Video
+
 >[!VIDEO](https://video.tv.adobe.com/v/3479864/?learn=on)
+
++++
+
+
+Learn how to create and deliver Android Live Updates in Adobe Journey Optimizer. This tutorial shows how to configure the Android Live Updates channel, create and activate campaigns, and use APIs to start, update, and end live experiences across customer journeys.
+
++++ Video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3503646/?learn=on)
+
++++
+
+
 
 {{$include /help/_includes/do-not-localize/mobile-live/ai-augmented-get-started-mobile-live.md}}
