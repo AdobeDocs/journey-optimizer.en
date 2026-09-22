@@ -200,6 +200,12 @@ Two types of information are available:
 
 In both tabs, you can choose the displayed columns and their order, apply filters, and use the search field to quickly find the desired information.
 
+### Set up alerts {#alerting}
+
+System alerts provide proactive notifications about issues in your Orchestrated campaigns, so you can investigate and take corrective action without continuously checking the monitoring view. You can view and manage available alerts from **[!UICONTROL Administration]** > **[!UICONTROL Alerts]**.
+
+For information about available alerts and how to subscribe, see [Access and subscribe to system alerts](../reports/alerts.md).
+
 ## Next steps {#next}
 
 After starting the Orchestrated campaign canvas, you can use Journey Optimizer reporting capabilities to get insights such as understanding audience behavior, and measuring the performance of each step in your customer journey. [Learn more on Orchestrated campaigns reporting](../orchestrated/reporting-campaigns.md)
