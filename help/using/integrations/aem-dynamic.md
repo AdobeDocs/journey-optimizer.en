@@ -187,7 +187,9 @@ You can insert your dynamic template directly into your content using the **Dyna
 
         Adobe Journey Optimizer automatically converts the file into a dynamic media template and imports it into the repository that you selected.
 
-1. In the **Image settings**, navigate to access the parameters of your dynamic media template.
+1. Once your file is uploaded and rendered, select the **[!UICONTROL Edit in Dynamic Media Template editor]** button that displays in the right panel to open the Dynamic Media Template editor directly within Journey Optimizer. From there, update your template without leaving the application, the same way as you can do with [Adobe Express in Journey Optimizer](express.md).
+
+1. In the **[!UICONTROL Settings]** tab, navigate to access the Dynamic Media Template's parameters.
 
     The available fields depend on the parameters added during the [template creation](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters){target="_blank"} in Adobe Experience Manager.
 
