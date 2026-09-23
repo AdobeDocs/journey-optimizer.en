@@ -29,7 +29,7 @@ For complete understanding, this information should be combined with the documen
 * **Profile Attribute–Based Exit Criteria**: Exit rules based on profile attributes (e.g., location, status) that are evaluated at action steps and are only editable when a journey is paused. *(product-specific)*
 * **Merge policy**: The rule set used by Adobe Experience Platform to combine profile data from multiple sources; applied consistently throughout the entire journey. *(product-specific)*
 * **Conflict management**: Tools in journey properties for assigning priority scores, applying rule sets, and identifying overlapping journeys or campaigns. *(product-specific)*
-* **Journey payload size**: The current size of the journey's definition payload compared to the configured limit; exceeding the limit blocks publication. *(product-specific)*
+* **Journey payload size**: The current size of the serialized journey definition (activities, expressions, conditions, data mappings, parameters, actions) compared to the configured limit; it is not determined by activity count alone, and exceeding the limit blocks publication. *(product-specific)*
 * **OLAC (Object Level Access Control)**: A permission model that restricts access to individual journeys using data usage labels.
 * **Holdout group (journey-level) (Limited Availability)**: Configured in the **Measure journey lift with a holdout group** section of journey properties; lets you exclude a percentage of your audience from the journey to measure its incremental effectiveness. *(product-specific)*
 * **Holdout group**: A percentage of the target audience excluded from entering a journey, used as a baseline to measure the journey's incremental effectiveness. Profiles in the holdout group are tracked via exclusion events. *(product-specific)*
@@ -39,7 +39,7 @@ For complete understanding, this information should be combined with the documen
 
 * Reentrance wait period maximum is 90 days
 * Global journey timeout is 91 days; after this period, profile data is deleted and the profile is exited
-* Journey payload default limit is 4 MB; exceeding it prevents publication — contact Adobe Customer Care for a higher limit
+* Journey payload default limit is 2 MB (2,000,000 bytes); the size reflects the saved configuration of the journey's activities and is not calculated from activity count alone; a warning appears at 90% of the limit and publication is blocked at 100% or more — contact your Adobe representative for a higher limit
 * Exit criteria are only configurable in draft state (event/audience types); Profile Attribute exit criteria are only editable when the journey is paused
 * Only one Profile Attribute exit criteria rule is allowed per journey
 * Profile Attribute exit criteria are evaluated at action steps only, not globally
