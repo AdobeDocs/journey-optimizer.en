@@ -81,6 +81,23 @@ topic_v2:
 
 ### Loyalty {#sep-26-loyalty}
 
+<table>
+<thead>
+<tr>
+<th><strong>Loyalty event mapping updates</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Creating or editing an Event Mapping now uses a new **visual mapping builder**: select a schema, pick fields from a searchable field selector, map each field to a loyalty event field with per-row connection status, and preview the auto-generated JSONata expression, with the option to switch to manual JSONata editing at any time.</p><p>In addition, "Event Definitions" in Loyalty admin have been renamed to "Event Mappings", with a refreshed list view that shows the human-readable Experience event schema name.</p>
+<p>For more information, refer to the <a href="../loyalty-challenges/loyalty-admin.md#event-mappings">detailed documentation</a>.</p>
+<p>Availability date: September 22, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 * **"Forever" Loyalty challenges** - Loyalty challenges can now run indefinitely. Set **Challenge end** to **No end date** when configuring the schedule, and the challenge never expires. [Learn more](../loyalty-challenges/create-challenges.md#schedule)
 
   Availability date: September 1, 2026
