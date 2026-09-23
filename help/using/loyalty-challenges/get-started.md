@@ -69,7 +69,7 @@ Using Loyalty Challenges involves three broad phases — setup, execution, and m
 
 **1. Set up your program** *(admin)*
 
-Before challenges can be authored, an administrator configures the program foundations: reward providers, event definitions that map customer actions to task completions, product inventory, and exclusion lists. [Learn how to configure loyalty challenges](loyalty-admin.md).
+Before challenges can be authored, an administrator configures the program foundations: reward providers, event mappings that map customer actions to task completions, product inventory, and exclusion lists. [Learn how to configure loyalty challenges](loyalty-admin.md).
 
 **2. Author and launch challenges** *(practitioner)*
 
@@ -93,7 +93,7 @@ Contact your administrator if you cannot access the feature or need additional p
 
 +++Configure the loyalty program (administrators)
 
-Administrators configure reward providers, event definitions, product inventory, exclusions, and global settings in the **[!UICONTROL Loyalty configurations]** menu. Marketers who only create challenges do not need access to this menu. [Learn how to configure loyalty challenges](loyalty-admin.md)
+Administrators configure reward providers, event mappings, product inventory, exclusions, and global settings in the **[!UICONTROL Loyalty configurations]** menu. Marketers who only create challenges do not need access to this menu. [Learn how to configure loyalty challenges](loyalty-admin.md)
 
 Contact your administrator if the **[!UICONTROL Loyalty configurations]** menu is not visible in the left navigation.
 
@@ -159,14 +159,14 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
     <a href="loyalty-admin.md"><strong>Configure the loyalty program</strong></a>
   <td>
     <a href="loyalty-admin.md">
-    <em>Set up reward providers, event definitions, and org settings for fulfillment</em>
+    <em>Set up reward providers, event mappings, and org settings for fulfillment</em>
     </a>
     <div>
 -->
     <a href="loyalty-admin.md"><strong>Configure loyalty challenges</strong></a>
     </div>
     <p>
-    <em>Set up reward providers, event definitions, and org settings</em>
+    <em>Set up reward providers, event mappings, and org settings</em>
     </p>
   </td>
 </tr>

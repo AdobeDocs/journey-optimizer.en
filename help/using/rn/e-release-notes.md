@@ -42,7 +42,6 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 * [Compare journey versions](#sep-26-journeys) - Get a full-fidelity, structured diff between any two versions of a journey through Coworker Chat.
 * [Hygiene Analysis skill](#sep-26-journeys) - Scan active and draft journeys for broken configurations, silent failures, and decaying or unused assets, with recommended fixes.
 * [Business Performance Analysis skill](#sep-26-journeys) - Analyze journey performance and get concrete optimization recommendations, right from the chat.
-* [Decisioning rule generation](#sep-26-decisioning) - Build AI-assisted decisioning rules directly in Coworker, which now replaces the right rail for this experience.
 
 >[!ENDSHADEBOX]
 
@@ -82,11 +81,13 @@ The following capability is coming to content management in this release.
 
 ### Integrations {#sep-26-integrations}
 
-The following capability is coming to integrations in this release.
+The following capabilities are coming to integrations in this release.
 
 * **Dynamic token substitution for Experience Manager fragments** - Experience Manager Content Fragment references now support a **tokenSubstitution** attribute. When set to `false`, personalization inside the fragment's fields resolves directly, without a token map in the reference. It defaults to `true`, which keeps the existing behavior.
 
   This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
+
+* **AEM Managed Services content fragments support in Decisioning** - AEM Managed Services content fragments are now supported in Decisioning when managing decision items.
 
 ### Loyalty {#sep-26-loyalty}
 
@@ -109,27 +110,11 @@ The following capability and improvement are coming to Loyalty in this release.
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Loyalty event mapping updates</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Creating or editing an Event Mapping now uses a new **visual mapping builder**: select a schema, pick fields from a searchable field selector, map each field to a loyalty event field with per-row connection status, and preview the auto-generated JSONata expression, with the option to switch to manual JSONata editing at any time.</p><p>In addition, "Event Definitions" in Loyalty admin have been renamed to "Event Mappings", with a refreshed list view that shows the human-readable Experience event schema name.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 * **Coworker loyalty recommendation skill** - Marketers can now request **challenge opportunities** directly in Coworker's conversational interface, getting grounded challenge ideas based on real loyalty program trends and turning them into live challenges without leaving the chat. 
 
 * **Challenges domain in the Content Card personalization editor** - The Content Card personalization editor now supports **Challenges** as a domain, letting you access challenge metadata when authoring content card personalization. This makes it easier to create tailored content for each stage of a challenge — Launch, In progress, and End — without custom code.  
 
-* **Per-member Loyalty challenge completion deadlines** - Loyalty challenges now support per-member completion deadlines: choose "Within a number of days after opt-in" under Completion requirements so each member's deadline is calculated from their own opt-in date rather than a fixed program-wide end date. If both a challenge end date and this opt-in window are set, each member's deadline is whichever comes first. <!-- Documentation link: TBD -->
-
+<!--
 ### Onboarding {#sep-26-onboarding}
 
 The following capability is coming to onboarding in this release.
@@ -150,30 +135,11 @@ The following capability is coming to onboarding in this release.
 </tbody>
 </table>
 
-### Audiences {#sep-26-audiences}
-
-The following reminder applies to audiences in this release.
-
-* **Upcoming change to Audience Composition enrichment audiences** - During the October release (end of October), Journey Optimizer will stop journeys and campaigns that use or reference an Audience Composition audience whose source dataset does not have a **primary identity descriptor**. From that point forward, only Audience Composition audiences built with a primary identity descriptor are supported in journeys and campaigns. If you need these journeys or campaigns to remain active, contact your Adobe representative — our product team can help you migrate. <!-- Documentation link: TBD -->
+-->
 
 ### Journeys {#sep-26-journeys}
 
 The following capabilities and improvements are coming to journeys in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey Simulation in Coworker</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The <strong>Journey Simulation skill</strong> in Coworker automates end-to-end journey validation and lets you easily interpret the results. Note that this feature currently supports only the Quick Simulation flow and does not fully replace the Journey Optimizer manual simulation experience.</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -217,21 +183,6 @@ The following capabilities and improvements are coming to journeys in this relea
 <tr>
 <td>
 <p>A new <strong>Inbound Activity Deactivation</strong> activity in the journey canvas lets you remove a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit for more advanced cross-channel orchestration.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Content preview in the journey canvas</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Reviewing channel content today requires opening each node individually, one at a time - slow and error-prone on journeys with many channel nodes, especially where personalization means checking multiple treatments or variants per node. <strong>Content preview</strong> removes that friction by surfacing a content thumbnail for every channel node directly in the canvas, with a fullscreen modal to inspect and switch between treatments and variants.</p>
 </td>
 </tr>
 </tbody>
@@ -345,7 +296,7 @@ The following capabilities and improvements are coming to the Email channel in t
 </tbody>
 </table>
 
-* **Suppression list override at email action level** - You can now override local suppression-list behavior at the email action level, so operational or compliance-critical communications can still be sent through a dedicated configuration when needed. Global suppression-list behavior remains unchanged.
+* **Suppression list override at email action level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model.
 
 * **URL syntax validation in email authoring** - Journey Optimizer now validates URLs earlier in the email authoring flow and surfaces clearer guidance when malformed syntax is detected. This helps authors catch issues before finalization, reduce publishing errors, and improve delivery confidence.
 
@@ -429,35 +380,6 @@ The following capabilities and improvements are coming to orchestrated campaigns
 * **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage.
 
 
-### Campaigns {#sep-26-campaigns}
-
-The following improvement is coming to campaigns in this release.
-
-* **Folders for campaigns** - You can now organize your campaigns into **folders** to improve navigation and management in the interface. 
-
-### Decisioning {#sep-26-decisioning}
-
-The following capabilities and improvements are coming to Decisioning in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in Web channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **Decisioning rule generation from Coworker** - The **AI-assisted decisioning rule generation** experience, previously available via the right rail, is now accessible through Coworker, which replaces the right rail as the way to build rules with AI. 
-
-* **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually.
-
 ### Reporting {#sep-26-reporting}
 
 The following capability is coming to reporting in this release.
@@ -485,15 +407,11 @@ The following capability is coming to reporting in this release.
 </tbody>
 </table>
 
-### Administration {#sep-26-administration}
-
-The following reminder applies to administration in this release.
-
-* **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on existing customer sandboxes and organizations starting October 1, 2026. 
-
 ### Usability improvements {#sep-26-usability}
 
 * **Usability improvements in the Content Simulation experience** - The new Content Simulation experience now lets you name and organize your variants for easy comparison, copy or delete variant details directly from each card, view full attribute paths and per-card channel configuration on demand, and upload your own CSV, JSON, or JSONL profiles from a more prominent upload button.
+
+* **AI overview in fragment validation alerts** - The fragment validation alerts dialog now includes an AI overview that summarizes and explains validation issues (for example malformed expressions, missing profile fields, and invalid JSON) so users can troubleshoot faster.
 
 * **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified, left-rail accessible menu that shows both in one combined view.
 

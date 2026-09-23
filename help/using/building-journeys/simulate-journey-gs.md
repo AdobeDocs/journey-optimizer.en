@@ -26,23 +26,26 @@ subfeature_v2:
 
 >[!ENDSHADEBOX]
 
+When a journey is in **[!UICONTROL Simulation]**, you can test it with **simulated users**: temporary, profile-like entities that you add for testing instead of persistent test profiles in Adobe Experience Platform.
+
+Adobe Journey Optimizer offers three ways to test and validate your journey:
+
+* **[Journey Simulation](simulate-journey.md#test-users)**: Use the **[!UICONTROL Simulation]** journey feature and simulated users without pre-created profiles in Adobe Experience Platform, supporting both AI-powered and manually created users.
+
+* **[Journey Test mode](testing-the-journey.md)**: Use persistent profiles flagged as test profiles in Adobe Experience Platform, reusable across sessions. Choose this approach when you need consistent, predefined data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
+
+* **[Journey Dry run](journey-dry-run.md)**: Run the journey against real production audience and segmentation data without contacting real customers or updating profile information. Action nodes such as email, SMS, and custom actions are bypassed. [Learn more about Journey Dry run](journey-dry-run.md).
+
 Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
->[!IMPORTANT]
->
->* To use **[!UICONTROL Simulation]**, assign at least one permission from the **[!UICONTROL Journeys]** capability: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. The same permissions let you create and manage simulated users, **[!UICONTROL Simulated Users]** permissions are not required. [Learn more](../administration/permissions.md)
->
->* To manage simulated users without **[!UICONTROL Simulation]**, assign **Manage Simulated Users** or **View Simulated Users** from the **[!UICONTROL Simulated Users]** capability.
->
->* For AI in simulation (**[!UICONTROL Quick simulation]**, AI-generated users, **[!UICONTROL Generate event values]**), assign **[!UICONTROL Generate Content]** from the **[!UICONTROL AI Assistant]** capability.
 
-You can set the journey to **[!UICONTROL Simulation]** in addition to **Draft**, **Test mode**, and **Live**. In Simulation, you test with **simulated users**: temporary profile-like entities you add, without using persistent test profiles in Adobe Experience Platform.
+## Required permissions {#required-permissions}
 
-Adobe Journey Optimizer offers two ways to test and validate your journey:
+To use **[!UICONTROL Simulation]**, assign at least one permission from the **[!UICONTROL Journeys]** capability: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. These permissions also let you create and manage simulated users; **[!UICONTROL Simulated Users]** permissions are not required. [Learn more](../administration/permissions.md)
 
-* **[Simulation](simulate-journey.md#test-users)**: Use the **[!UICONTROL Simulation]** journey feature and simulated users without pre-created profiles in Adobe Experience Platform, supporting both AI-powered and manually created users.
+To manage simulated users without **[!UICONTROL Simulation]**, assign **Manage Simulated Users** or **View Simulated Users** from the **[!UICONTROL Simulated Users]** capability.
 
-* **[Test mode](testing-the-journey.md)**: Use persistent profiles flagged as test profiles in Adobe Experience Platform, reusable across sessions. Choose this approach when you need consistent, predefined data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
+For AI in simulation (**[!UICONTROL Quick simulation]**, AI-generated users, and **[!UICONTROL Generate event values]**), assign **[!UICONTROL Generate Content]** from the **[!UICONTROL AI Assistant]** capability.
 
 ## Simulation by journey type {#by-journey-type}
 

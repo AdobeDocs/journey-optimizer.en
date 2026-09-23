@@ -23,6 +23,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
+* The `inAudience` guardrails now include the workaround for sandboxes with more than 5,000 audiences, where older audiences can be rejected during journey authoring because validation checks only the 5,000 most recently updated audiences. [Read more](../building-journeys/functions/functioninaudience.md#guardrails)
+
 * Guidance for email mirror pages has been expanded: the documentation now explains that mirror page URLs cannot be retrieved through a public API or dataset, recommends Message Export or BCC archiving for retaining sent content, and clarifies that mirror page links are inactive in proofs and simulations. [Read more](../email/message-tracking.md#mirror-page)
 
 * A new **Interactive demo** page is now available for Loyalty Challenges, linking to a self-guided, clickable demo that covers the marketer's challenge creation flow (including Bring your own data and the insights dashboards), the end customer experience, and Loyalty Challenge Management in CX Coworker. [Read more](../loyalty-challenges/loyalty-challenges-demo.md)
