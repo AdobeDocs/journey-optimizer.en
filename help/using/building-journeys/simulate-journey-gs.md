@@ -26,23 +26,26 @@ subfeature_v2:
 
 >[!ENDSHADEBOX]
 
+When a journey is in **[!UICONTROL Simulation]**, you can test it with **simulated users**: temporary, profile-like entities that you add for testing instead of persistent test profiles in Adobe Experience Platform.
+
+Adobe Journey Optimizer offers three ways to test and validate your journey:
+
+* **[Journey Simulation](simulate-journey.md#test-users)**: Use the **[!UICONTROL Simulation]** journey feature and simulated users without pre-created profiles in Adobe Experience Platform, supporting both AI-powered and manually created users.
+
+* **[Journey Test mode](testing-the-journey.md)**: Use persistent profiles flagged as test profiles in Adobe Experience Platform, reusable across sessions. Choose this approach when you need consistent, predefined data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
+
+* **[Journey Dry run](journey-dry-run.md)**: Run the journey against real production audience and segmentation data without contacting real customers or updating profile information. Action nodes such as email, SMS, and custom actions are bypassed. [Learn more about Journey Dry run](journey-dry-run.md).
+
 Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
->[!IMPORTANT]
->
->* To use **[!UICONTROL Simulation]**, assign at least one permission from the **[!UICONTROL Journeys]** capability: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. The same permissions let you create and manage simulated users, **[!UICONTROL Simulated Users]** permissions are not required. [Learn more](../administration/permissions.md)
->
->* To manage simulated users without **[!UICONTROL Simulation]**, assign **Manage Simulated Users** or **View Simulated Users** from the **[!UICONTROL Simulated Users]** capability.
->
->* For AI in simulation (**[!UICONTROL Quick simulation]**, AI-generated users, **[!UICONTROL Generate event values]**), assign **[!UICONTROL Generate Content]** from the **[!UICONTROL AI Assistant]** capability.
 
-You can set the journey to **[!UICONTROL Simulation]** in addition to **Draft**, **Test mode**, and **Live**. In Simulation, you test with **simulated users**: temporary profile-like entities you add, without using persistent test profiles in Adobe Experience Platform.
+## Required permissions {#required-permissions}
 
-Adobe Journey Optimizer offers two ways to test and validate your journey:
+To use **[!UICONTROL Simulation]**, assign at least one permission from the **[!UICONTROL Journeys]** capability: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. These permissions also let you create and manage simulated users; **[!UICONTROL Simulated Users]** permissions are not required. [Learn more](../administration/permissions.md)
 
-* **[Simulation](simulate-journey.md#test-users)**: Use the **[!UICONTROL Simulation]** journey feature and simulated users without pre-created profiles in Adobe Experience Platform, supporting both AI-powered and manually created users.
+To manage simulated users without **[!UICONTROL Simulation]**, assign **Manage Simulated Users** or **View Simulated Users** from the **[!UICONTROL Simulated Users]** capability.
 
-* **[Test mode](testing-the-journey.md)**: Use persistent profiles flagged as test profiles in Adobe Experience Platform, reusable across sessions. Choose this approach when you need consistent, predefined data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
+For AI in simulation (**[!UICONTROL Quick simulation]**, AI-generated users, and **[!UICONTROL Generate event values]**), assign **[!UICONTROL Generate Content]** from the **[!UICONTROL AI Assistant]** capability.
 
 ## Simulation by journey type {#by-journey-type}
 
@@ -104,12 +107,12 @@ Some nodes prevent **[!UICONTROL Simulation]** from starting. Others run in simu
 | Inbound channels | You cannot run journeys that include an inbound channel node in **[!UICONTROL Simulation]**. |
 | Supplemental ID (multiple re-entrance) | **[!UICONTROL Simulation]** does not start when multiple re-entrance is enabled and the same simulated user could have several active instances at once. |
 | Dataset Lookup | **[!UICONTROL Simulation]** does not support customer dataset lookups by key. Remove or change this activity before you run a simulation. |
-| **[!UICONTROL Optimize]** activity | **[!UICONTROL Experiment]** is not supported. Remove or change the node before you simulate.<br><br>Other **[!UICONTROL Optimize]** methods behave as follows:<br><br>**[!UICONTROL Targeting rule]**: The Journey Agent evaluates the configured rule against the simulated user's profile attributes to select the branch.<br><br>**[!UICONTROL Percentage split]**: The Journey Agent creates one simulated user per branch, not according to branch percentages. At runtime, live evaluation picks the branch and it may differ from the generated path. You cannot mock a branch choice. To steer users, rely on branch order on the canvas. The top branch is always chosen.<br><br>**[!UICONTROL Time condition]**: Conditions apply at runtime as in a live journey. For example, a window from 8:00 to 20:00 only lets users through while simulation runs inside that window. You cannot mock execution time. Set the condition to match the current time when you test.<br><br>**[!UICONTROL Date condition]**: Conditions apply at runtime as in a live journey. For example, a date of June 8, 2026 only lets users through when simulation runs on that date. You cannot mock execution date. Set the condition to the current date when you test.<br><br>**[!UICONTROL Profile cap]**: Caps are not enforced during simulation. The Journey Agent creates one simulated user per branch. You cannot mock a branch choice. To steer users, rely on branch order on the canvas. The top branch is always chosen. |
-| Timeout and error branches | The Journey Agent does not generate users for activity timeout or error branches. Users only enter those paths if a real timeout or error happens during simulation. |
-| Timeout branch (event activities) | Simulated users are created, but in **[!UICONTROL Manual simulation]** the Journey Agent does not decide who enters an event timeout branch. Control the path by sending or not sending the event. For example, to test a timeout branch, wait out the configured timeout and do not send the event. **[!UICONTROL Quick simulation]** can send or withhold events automatically to cover timeout branches. |
+| **[!UICONTROL Optimize]** activity | **[!UICONTROL Optimize]** methods behave as follows:<br><br>**[!UICONTROL Targeting rule]**: AI evaluates the configured rule against the simulated user's profile attributes to select the branch.<br><br>**[!UICONTROL Experiment]** (Path Experimentation): Routing is handled by Decisioning, for any split even a 50/50 split or a 10% holdout. Assignment is random and non-deterministic per simulated user, so a small batch, for example 5 users even AI-generated ones in **[!UICONTROL Quick simulation]**, is not guaranteed to cover every treatment, they could all land on the same one by chance. This differs from **[!UICONTROL Percentage split]** below.<br><br>**[!UICONTROL Percentage split]**: AI creates one simulated user per branch, not according to branch percentages. At runtime, live evaluation picks the branch and it may differ from the generated path. You cannot mock a branch choice. To steer users, rely on branch order on the canvas. The top branch is always chosen.<br><br>**[!UICONTROL Time condition]**: Conditions apply at runtime as in a live journey. For example, a window from 8:00 to 20:00 only lets users through while simulation runs inside that window. You cannot mock execution time. Set the condition to match the current time when you test.<br><br>**[!UICONTROL Date condition]**: Conditions apply at runtime as in a live journey. For example, a date of June 8, 2026 only lets users through when simulation runs on that date. You cannot mock execution date. Set the condition to the current date when you test.<br><br>**[!UICONTROL Profile cap]**: Caps are not enforced during simulation. AI creates one simulated user per branch. You cannot mock a branch choice. To steer users, rely on branch order on the canvas. The top branch is always chosen. |
+| Timeout and error branches | AI does not generate users for activity timeout or error branches. Users only enter those paths if a real timeout or error happens during simulation. |
+| Timeout branch (event activities) | Simulated users are created, but in **[!UICONTROL Manual simulation]** AI does not decide who enters an event timeout branch. Control the path by sending or not sending the event. For example, to test a timeout branch, wait out the configured timeout and do not send the event. **[!UICONTROL Quick simulation]** can send or withhold events automatically to cover timeout branches. |
 | Reaction events | Reaction events run in simulation, but the action must happen in real life. For example, an email **open** reaction requires opening the proof message. You cannot mock reactions in the simulation UI. |
-| External data sources | Calls run during simulation the same way as in a live journey. Downstream activities can use the response, but you cannot mock it. When a response value feeds an **[!UICONTROL Optimize]** activity, the Journey Agent cannot invent that output. It only generates inputs for the call. For example, if a call takes a profile city and returns weather, the Agent sets a city on the simulated user and the live call returns the weather. |
-| Custom actions | Behavior matches external data sources. Outbound calls run for real. The Journey Agent fills in inputs. Outputs come from the live response. You cannot mock responses. |
+| External data sources | Calls run during simulation the same way as in a live journey. Downstream activities can use the response, but you cannot mock it. When a response value feeds an **[!UICONTROL Optimize]** activity, AI cannot invent that output. It only generates inputs for the call. For example, if a call takes a profile city and returns weather, the Agent sets a city on the simulated user and the live call returns the weather. |
+| Custom actions | Behavior matches external data sources. Outbound calls run for real. AI fills in inputs. Outputs come from the live response. You cannot mock responses. |
 | External audience attribute enrichment | Journeys that use personalized attributes from external audience sources do not start in **[!UICONTROL Simulation]** when this validation applies. |
 
 +++
@@ -165,7 +168,7 @@ These guardrails apply to **[!UICONTROL Simulation]**. Numeric caps are enforced
 | Guardrail | Limit | Notes |
 | --- | --- | --- |
 | Maximum simulated users that can be selected and triggered in one batch (batch journeys, event-triggered flows, and audience-qualification flows) | 20 | Counted for each **[!UICONTROL Send all]** or **[!UICONTROL Trigger selected events]**, not a cumulative cap for the whole journey. |
-| Maximum simulated users per generation request | 50 | Maximum simulated users the Journey Agent generates in one request through **[!UICONTROL Quick simulation]** or **[!UICONTROL Generate with AI]** in **[!UICONTROL Manual simulation]**. If the journey has more than **50** paths, the Journey Agent randomly selects paths to produce those **50** simulated users. |
+| Maximum simulated users per generation request | 50 | Maximum simulated users AI generates in one request through **[!UICONTROL Quick simulation]** or **[!UICONTROL Generate with AI]** in **[!UICONTROL Manual simulation]**. If the journey has more than **50** paths, AI randomly selects paths to produce those **50** simulated users. |
 | Maximum unique simulated users tested in a single simulation run | 100 | Reaching **100** unique users in one run blocks **[!UICONTROL Select simulated users]** for new simulated users. If you are at **90**, you can add at most **10** more before the same block. |
 | Maximum journeys that can run in **[!UICONTROL Simulation]** at the same time in one sandbox | 20 | Cap is shared by every **[!UICONTROL Simulation]** journey in that sandbox at once. |
 | Maximum active simulated users in one sandbox | 2,000 | Maximum simulated users that can exist in the sandbox at one time. Adobe may adjust this limit based on customer feedback. |
