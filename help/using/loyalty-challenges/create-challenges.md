@@ -18,6 +18,12 @@ subfeature_v2:
 
 # Create challenges {#create-challenges}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, configure, publish, and launch loyalty challenges, including their settings, structure, content, messaging, tasks, and rewards.
+
+>[!ENDSHADEBOX]
+
 This page covers the complete process of creating and publishing a loyalty challenge in Adobe Journey Optimizer.
 
 Creating a challenge involves the following steps:
@@ -124,7 +130,7 @@ Configure how members opt in, when task progress counts toward the challenge, an
 * **[!UICONTROL Opt-in trigger]**:
 
   * **[!UICONTROL Opt-in method]**: Choose whether customers join the challenge manually or through an event trigger.
-  * **[!UICONTROL Event]**: For event-based opt-in, select the event that triggers opt-in. Administrators can click the ![gear](assets/do-not-localize/settings-icon.svg) button to create an event definition. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+   * **[!UICONTROL Event]**: For event-based opt-in, select the event that triggers opt-in. Administrators can click the ![gear](assets/do-not-localize/settings-icon.svg) button to create an event mapping. [Learn how to configure event mappings](loyalty-admin.md#event-mappings)
 
 * **[!UICONTROL Start tracking progress]**:
 

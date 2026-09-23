@@ -35,14 +35,13 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 This release brings several new and improved [Coworker](../start/ai-features.md#cx-coworker) features and skills, listed here for visibility. Each one is also detailed in its relevant section below.
 
-* [Message-copy and email-design plugins](#sep-26-content-management) - Two new plugins that streamline messaging and email workflows in Coworker, from campaign brief to production-ready copy and HTML.
+* [CE Channel Content plugin](#sep-26-content-management) - A new plugin that brings campaign copy, image, and email HTML skills together in Coworker, from campaign brief to production-ready copy and HTML.
 * [Loyalty recommendation skill](#sep-26-loyalty) - Request challenge opportunities directly in Coworker's conversational interface and turn them into live challenges without leaving the chat.
-* [Journey Simulation (MCP & Chat)](#sep-26-journeys) - Automate end-to-end journey validation and interpret the results directly in Coworker.
+* [Journey Simulation](#sep-26-journeys) - Automate end-to-end journey validation and interpret the results directly in Coworker.
 * [Journey creation from the Coworker rail](#sep-26-journeys) - Generate journeys with AI directly from the Coworker right rail, replacing the previous AI Assistant experience.
 * [Compare journey versions](#sep-26-journeys) - Get a full-fidelity, structured diff between any two versions of a journey through Coworker Chat.
 * [Hygiene Analysis skill](#sep-26-journeys) - Scan active and draft journeys for broken configurations, silent failures, and decaying or unused assets, with recommended fixes.
 * [Business Performance Analysis skill](#sep-26-journeys) - Analyze journey performance and get concrete optimization recommendations, right from the chat.
-* [Decisioning rule generation](#sep-26-decisioning) - Build AI-assisted decisioning rules directly in Coworker, which now replaces the right rail for this experience.
 
 >[!ENDSHADEBOX]
 
@@ -53,26 +52,25 @@ The following capability is coming to content management in this release.
 <table>
 <thead>
 <tr>
-<th><strong>Message-copy and email-design plugins in Coworker</strong><br/></th>
+<th><strong>Channel Content plugin in Coworker</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Two new plugins are now available in Coworker to streamline your <strong>messaging and email workflows</strong> from strategy to deployment:</p>
-<p><strong>Message copy plugin</strong>:</p>
+<p>A new <strong>Channel Content</strong> plugin is now available in Coworker, bringing campaign copy, image, and assembled email HTML skills together under one plugin from strategy to deployment. The following skills are available under the **Channel Content** plugin:</p>
 <ul>
-<li>Captures campaign briefs and defines messaging maps, narrative arcs, and channel roles.</li>
-<li>Builds a multi-dimensional content matrix tailored across channels, touchpoints, locales, audiences, and variants.</li>
-<li>Produces net-new copy and leverages Adobe Firefly to generate, crop, and adapt campaign visuals.</li>
-<li>Allows in-place content evaluation and directly syncs approved assets back to Journey Optimizer, Adobe Campaign V8, and Marketo.</li>
-</ul>
-<p><strong>Email design plugin</strong>:</p>
-<ul>
-<li>Converts marketing goals, reference screenshots, or Figma design links into custom layout plans and production-ready email HTML.</li>
-<li>Manages reusable brand assets, design tokens, and structural email templates.</li>
-<li>Audits assembled email code for corporate compliance, visual design quality, and WCAG 2.1 AA accessibility standards.</li>
-<li>Exports approved HTML directly into Adobe Journey Optimizer and Adobe Campaign.</li>
+<li><strong>Orchestrate Content Authoring</strong>.</li>
+<li><strong>Explore Content Strategy</strong></li>
+<li><strong>Content Brief</strong></li>
+<li><strong>Generate Content</strong></li>
+<li><strong>Check Content Readiness</strong></li>
+<li><strong>Revise and Regenerate Content</strong></li>
+<li><strong>Generate Image</strong></li>
+<li><strong>Assess Content Design</strong></li>
+<li><strong>Save Channel Content</strong></li>
+<li><strong>Build Email from Figma</strong></li>
+<li><strong>Brand Lookup</strong> </li>
 </ul>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
@@ -80,6 +78,16 @@ The following capability is coming to content management in this release.
 </tr>
 </tbody>
 </table>
+
+### Integrations {#sep-26-integrations}
+
+The following capabilities are coming to integrations in this release.
+
+* **Dynamic token substitution for Experience Manager fragments** - Experience Manager Content Fragment references now support a **tokenSubstitution** attribute. When set to `false`, personalization inside the fragment's fields resolves directly, without a token map in the reference. It defaults to `true`, which keeps the existing behavior.
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
+
+* **AEM Managed Services content fragments support in Decisioning** - AEM Managed Services content fragments are now supported in Decisioning when managing decision items.
 
 ### Loyalty {#sep-26-loyalty}
 
@@ -102,24 +110,11 @@ The following capability and improvement are coming to Loyalty in this release.
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Loyalty event mapping updates</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Creating or editing an Event Mapping now uses a new **visual mapping builder**: select a schema, pick fields from a searchable field selector, map each field to a loyalty event field with per-row connection status, and preview the auto-generated JSONata expression, with the option to switch to manual JSONata editing at any time.</p><p>In addition, "Event Definitions" in Loyalty admin have been renamed to "Event Mappings", with a refreshed list view that shows the human-readable Experience event schema name.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 * **Coworker loyalty recommendation skill** - Marketers can now request **challenge opportunities** directly in Coworker's conversational interface, getting grounded challenge ideas based on real loyalty program trends and turning them into live challenges without leaving the chat. 
 
 * **Challenges domain in the Content Card personalization editor** - The Content Card personalization editor now supports **Challenges** as a domain, letting you access challenge metadata when authoring content card personalization. This makes it easier to create tailored content for each stage of a challenge — Launch, In progress, and End — without custom code.  
+
+
 
 ### Onboarding {#sep-26-onboarding}
 
@@ -141,30 +136,11 @@ The following capability is coming to onboarding in this release.
 </tbody>
 </table>
 
-### Audiences {#sep-26-audiences}
 
-The following reminder applies to audiences in this release.
-
-* **Upcoming change to Audience Composition enrichment audiences** - During the October release (end of October), Journey Optimizer will stop journeys and campaigns that use or reference an Audience Composition audience whose source dataset does not have a **primary identity descriptor**. From that point forward, only Audience Composition audiences built with a primary identity descriptor are supported in journeys and campaigns. If you need these journeys or campaigns to remain active, contact your Adobe representative — our product team can help you migrate. <!-- Documentation link: TBD -->
 
 ### Journeys {#sep-26-journeys}
 
 The following capabilities and improvements are coming to journeys in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey Simulation in Coworker (MCP &amp; Chat)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The <strong>Journey Simulation skill</strong> in Coworker automates end-to-end journey validation and lets you easily interpret the results. Note that this feature currently supports only the Quick Simulation flow and does not fully replace the Journey Optimizer manual simulation experience.</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -213,13 +189,24 @@ The following capabilities and improvements are coming to journeys in this relea
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Content preview in the journey canvas</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Reviewing channel content today requires opening each node individually, one at a time - slow and error-prone on journeys with many channel nodes, especially where personalization means checking multiple treatments or variants per node. <strong>Content preview</strong> removes that friction by surfacing a content thumbnail for every channel node directly in the canvas, with a fullscreen modal to inspect and switch between treatments and variants.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 * **Supplemental ID support in Journey simulation** - **Supplemental ID** is now supported in Journey simulation, allowing you to test complex user scenarios for both read-audience and event-triggered journeys. 
 
-* **Refined batch audience evaluation wait logic** - In the **Read audience activity**, the "Trigger after batch audience evaluation" option in journeys now always waits for an in-progress batch segmentation to complete, ensuring the journey uses that run's data instead of falling back to an older snapshot. If no batch segmentation is in progress, the journey uses the latest available snapshot immediately — unless that snapshot is the same batch used on the previous run, in which case the journey waits, up to the configured window, for a newer batch, and skips that day's run if none arrives in time. 
-
-* **Supplemental ID support in Journey simulation** - **Supplemental ID** is now supported in Journey simulation, allowing you to test complex user scenarios for both read-audience and event-triggered journeys. 
-
-* **Refined batch audience evaluation wait logic** - In the **Read audience activity**, the "Trigger after batch audience evaluation" option in journeys now always waits for an in-progress batch segmentation to complete, ensuring the journey uses that run's data instead of falling back to an older snapshot. If no batch segmentation is in progress, the journey uses the latest available snapshot immediately — unless that snapshot is the same batch used on the previous run, in which case the journey waits, up to the configured window, for a newer batch, and skips that day's run if none arrives in time. 
+* **Jump support for Audience Qualification journeys** - Journeys that start with an **Audience Qualification** can now use a **Jump** activity to enter an event-based start journey; jumping to an Audience Qualification-based journey remains unsupported.
 
 * **Compare journey versions with Coworker** - Today, reviewing what changed between two versions of a journey requires manually comparing them inside Journey Optimizer node by node - there's no structured diff, which makes change-review, audit, and pre-publish checks slow and error-prone, especially as journeys grow more complex. This capability lets a customer or AI agent compare any two versions of a journey through Coworker Chat and get back a full-fidelity, **structured diff** - added/removed/modified/moved nodes with field-level detail, changed connections, journey-level property changes, and roll-up counts - without opening Journey Optimizer. 
 
@@ -279,6 +266,39 @@ The following capabilities and improvements are coming to channels in this relea
 <table>
 <thead>
 <tr>
+<th><strong>Android push notifications templates improvements</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Android push notifications previously rendered with a single, fixed layout: images were always center-cropped, and long body text was truncated. This release introduces a template picker at authoring time, allowing marketers to control the layout of Android push notifications.</p>
+<p>Following improvements are available:</p>
+<ul>
+<li><b>Layout selection</b>: New Push Notification Layout picker (Standard / Expanded) when authoring an Android push.</li>
+<li><b>Standard layout with "Show entire image"</b>: Choose cropped-to-fill vs. scaled-to-fit.</li>
+<li><b>Expanded layout</b>: Multi-line body text with no truncation, plus optional large-icon thumbnail.</li>
+<li><b>Collapsed body (Expanded layout)</b>: Set a separate, shorter body text for the collapsed state.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+* **Custom SMS BYOP auth flexibility** - You can now configure **custom authentication headers** when connecting your SMS provider's OAuth setup, including where the token is placed on outgoing messages and how the token request itself is formatted.
+
+* **Direct mail - Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration.
+
+* **Direct mail - Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors.
+
+### Email channel {#sep-26-email-channel}
+
+The following capabilities and improvements are coming to the Email channel in this release.
+
+<table>
+<thead>
+<tr>
 <th><strong>Override email channel configuration settings</strong><br/></th>
 </tr>
 </thead>
@@ -292,89 +312,9 @@ The following capabilities and improvements are coming to channels in this relea
 </tbody>
 </table>
 
-* **Custom SMS BYOP auth flexibility** - You can now configure **custom authentication headers** when connecting your SMS provider's OAuth setup, including where the token is placed on outgoing messages and how the token request itself is formatted.
+* **Suppression list override at email action level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model.
 
-### Orchestrated campaigns {#sep-26-oc}
-
-The following capabilities and improvements are coming to orchestrated campaigns in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>OR join activity for orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The <strong>Join activity</strong> in orchestrated campaigns now supports both AND and OR join conditions. With OR logic, a profile that completes any one upstream branch, rather than all of them, continues along a single shared downstream path. This makes it possible to model "if A or B or C, then do this" patterns directly on the canvas without duplicating downstream steps across separate branches.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Alerting for orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Orchestrated campaigns now support <strong>automated alerting</strong> through the same alerting framework used across journeys and campaigns. Alerts are triggered when a campaign execution fails, times out, or requires confirmation, and each alert includes what happened, when, where, and a direct link to the monitoring view, categorized by severity so teams can prioritize without manual UI checks.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **LINE channel for orchestrated campaigns** - LINE is now available as a native outbound channel in orchestrated campaigns, alongside email, SMS, and push. You can build and deliver LINE messages directly from the campaign canvas, including text, stickers, images, videos, location data, and Flex Messages, supporting promotional, transactional, and ongoing engagement use cases in LINE-dominant markets such as Japan and APAC. Previously released in Limited Availability, this capability is now generally available. 
-
-* **New Orchestrated Campaigns monitoring APIs** - New **API specifications** are now available for orchestrated campaigns, allowing you to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines.
-
-* **Direct join UX improvements** - When adding an attribute from a related collection, you can now choose between three join modes — a new default that warns you about potential performance impact from cartesian products, plus the existing Aggregate and Advanced modes — making it easier to understand the tradeoffs of your query before you build it. 
-
-* **Conditional content with relational data in orchestrated campaigns** - When building conditional content in the Email Designer for orchestrated campaigns, you can now build conditions directly on **relational data** — such as related records associated with a profile — not just standard profile attributes. This closes a gap from the original release, so marketers can build these conditions visually, without needing engineering help. 
-
-* **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage.
-
-
-### Campaigns {#sep-26-campaigns}
-
-The following improvement is coming to campaigns in this release.
-
-* **Folders for campaigns** - You can now organize your campaigns into **folders** to improve navigation and management in the interface. 
-
-### Decisioning {#sep-26-decisioning}
-
-The following capabilities and improvements are coming to Decisioning in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in Web channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **Decisioning rule generation from Coworker** - The **AI-assisted decisioning rule generation** experience, previously available via the right rail, is now accessible through Coworker, which replaces the right rail as the way to build rules with AI. 
-
-* **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually.
-
-### Direct mail {#sep-26-direct-mail}
-
-The following capabilities and improvements are coming to Direct Mail in this release.
-
-* **Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration. An optional JSON manifest file describes all generated parts. 
-
-* **Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors. 
+* **URL syntax validation in email authoring** - Journey Optimizer now validates URLs earlier in the email authoring flow and surfaces clearer guidance when malformed syntax is detected. This helps authors catch issues before finalization, reduce publishing errors, and improve delivery confidence.
 
 ### Email Designer {#sep-26-email-designer}
 
@@ -383,13 +323,14 @@ The following capabilities and improvements are coming to the Email Designer in 
 <table>
 <thead>
 <tr>
-<th><strong>Independent dark mode styling for email theme variants</strong><br/></th>
+<th><strong>Dark mode support for email theme variants</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Email themes now support independent styling for dark mode. In the theme builder, you can turn on dark mode for a given variant to generate a dedicated dark mode stylesheet that you edit separately from the light mode styles — changes made in one mode no longer overwrite the other. In the email and template editor, a new preview toggle next to the desktop and mobile view options lets you preview your content in dark mode.</p>
+<p>Email themes now support dark mode, so each color variant can render with a look tailored to recipients viewing your email in a dark mode-enabled client.</p>
+<p>When enabled, a default dark palette is generated automatically for every variant, and you can further customize it with a different palette or your own custom colors — independently from the light mode design, so changes made in one mode do not affect the other.</p>
 </td>
 </tr>
 </tbody>
@@ -427,6 +368,34 @@ The following capabilities and improvements are coming to the Email Designer in 
 
 * **Fallback fonts for custom fonts in email themes** - You can now define a fallback font for any custom (web) font applied through email themes. If a subscriber's email client does not support the custom font, Adobe Journey Optimizer automatically displays the specified fallback font instead of leaving the choice to the email client's default. This keeps email typography closer to your brand guidelines and reduces font-rendering inconsistencies across email clients.
 
+### Orchestrated campaigns {#sep-26-oc}
+
+The following capabilities and improvements are coming to orchestrated campaigns in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>OR join activity for orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The <strong>Join activity</strong> in orchestrated campaigns now supports both AND and OR join conditions. With OR logic, a profile that completes any one upstream branch, rather than all of them, continues along a single shared downstream path. This makes it possible to model "if A or B or C, then do this" patterns directly on the canvas without duplicating downstream steps across separate branches.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **LINE channel for orchestrated campaigns** - LINE is now available as a native outbound channel in orchestrated campaigns, alongside email, SMS, and push. You can build and deliver LINE messages directly from the campaign canvas, including text, stickers, images, videos, location data, and Flex Messages, supporting promotional, transactional, and ongoing engagement use cases in LINE-dominant markets such as Japan and APAC. Previously released in Limited Availability, this capability is now generally available. 
+
+* **New Orchestrated Campaigns monitoring APIs** - New **API specifications** are now available for orchestrated campaigns, allowing you to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines.
+
+* **Direct join UX improvements** - When adding an attribute from a related collection, you can now choose between three join modes — a new default that warns you about potential performance impact from cartesian products, plus the existing Aggregate and Advanced modes — making it easier to understand the tradeoffs of your query before you build it. 
+
+* **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage.
+
+
 ### Reporting {#sep-26-reporting}
 
 The following capability is coming to reporting in this release.
@@ -454,17 +423,11 @@ The following capability is coming to reporting in this release.
 </tbody>
 </table>
 
-### Administration {#sep-26-administration}
-
-The following reminder applies to administration in this release.
-
-* **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on existing customer sandboxes and organizations starting October 1, 2026. 
-
 ### Usability improvements {#sep-26-usability}
 
 * **Usability improvements in the Content Simulation experience** - The new Content Simulation experience now lets you name and organize your variants for easy comparison, copy or delete variant details directly from each card, view full attribute paths and per-card channel configuration on demand, and upload your own CSV, JSON, or JSONL profiles from a more prominent upload button.
 
-* **Content preview in the journey canvas** - Reviewing channel content today requires opening each node individually, one at a time - slow and error-prone on journeys with many channel nodes, especially where personalization means checking multiple treatments or variants per node. **Content preview** removes that friction by surfacing a content thumbnail for every channel node directly in the canvas, with a fullscreen modal to inspect and switch between treatments and variants.
+* **AI overview in fragment validation alerts** - The fragment validation alerts dialog now includes an AI overview that summarizes and explains validation issues (for example malformed expressions, missing profile fields, and invalid JSON) so users can troubleshoot faster.
 
 * **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified, left-rail accessible menu that shows both in one combined view.
 
