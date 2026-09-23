@@ -166,7 +166,7 @@ In case of a message sent via a custom action, the only thing that can be checke
 
 >[!NOTE]
 >
->For native Journey Optimizer channel actions, query the Message Feedback Event Dataset to confirm delivery status such as `sent` or `bounce`. For custom actions, query the Journey Step Event dataset to confirm that Journey Optimizer executed the action successfully — a successful HTTP call does not by itself confirm that the external system delivered a message. Learn how to [choose the correct dataset](../data/datasets-query-examples.md#choose-the-correct-dataset) for your use case.
+>For native Journey Optimizer channel actions, query the Message Feedback Event Dataset to confirm delivery status such as `sent` or `bounce`. In Adobe Journey Optimizer, `sent` is the relevant status for successful message delivery outcomes; the `delivered` value is not used in Adobe Journey Optimizer Message Feedback Event datasets. For custom actions, query the Journey Step Event dataset to confirm that Journey Optimizer executed the action successfully — a successful HTTP call does not by itself confirm that the external system delivered a message. Learn how to [choose the correct dataset](../data/datasets-query-examples.md#choose-the-correct-dataset) for your use case.
 
 ## Understanding duplicate entries in Journey step events {#duplicate-step-events}
 
