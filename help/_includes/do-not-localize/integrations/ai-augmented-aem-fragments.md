@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to tag, add, and personalize Adobe Experience Manager Content Fragments in Journey Optimizer campaigns and journeys, how to work with variations, and how to use Content Fragments as offer item attributes in Experience Decisioning.
+* **TL;DR:** This page explains how to tag, add, and personalize Adobe Experience Manager Content Fragments in Journey Optimizer campaigns and journeys, how to use token substitution or dynamic rendering for personalization, how to work with variations, and how to use Content Fragments as offer item attributes in Experience Decisioning.
 
 **Intents:**
 
@@ -17,6 +17,7 @@ For complete understanding, this information should be combined with the documen
 * Create and assign the Journey Optimizer tag in Experience Manager so a Content Fragment appears in the selector
 * Add and personalize an AEM Content Fragment in a campaign or journey using the AEM Content Advisor
 * Declare placeholders as parameters and map them to profile attributes, contextual attributes, static strings, or variables
+* Use `tokenSubstitution=false` to resolve personalization directly inside fragment fields without a token map
 * Use AEM Content Fragments as offer item attributes in Experience Decisioning
 * Choose and work with Content Fragment variations
 
@@ -27,6 +28,7 @@ For complete understanding, this information should be combined with the documen
 * **Variations**: One or more permutations of Main that authors create for specific channels or scenarios, living inside the fragment rather than as separate assets *(product-specific)*
 * **Pills experience**: An option that improves readability by hiding long attribute paths *(product-specific)*
 * **ajo-enabled tag**: Tag with the ID format `ajo-enabled:{OrgId}/{SandboxName}` that a Content Fragment must carry to appear in Journey Optimizer for your organization and sandbox *(product-specific)*
+* **tokenSubstitution**: Fragment reference attribute that defaults to `true` for token-map substitution; setting it to `false` enables dynamic rendering of personalization inside a field *(product-specific)*
 
 **Guardrails:**
 
@@ -36,6 +38,7 @@ For complete understanding, this information should be combined with the documen
 * For Healthcare customers, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Extended Security for Healthcare add-on offerings.
 * Relative image URLs from Experience Manager are not supported; use absolute URLs.
 * All placeholders used within a Content Fragment must be explicitly declared by the user as parameters in the fragment helper tag.
+* `tokenSubstitution=true` is the default and resolves placeholder values from the token map passed in the fragment reference; `tokenSubstitution=false` renders the field value directly without a token map.
 * In Experience Decisioning, only Content Fragments in a published state are available, they must be tagged with `ajo-enabled:{OrgId}/{SandboxName}`, and you can add up to five AEM Content Fragments to a single decision item.
 * Using AEM Content Fragments in Experience Decisioning is available for channels with Decisioning support.
 
@@ -53,7 +56,8 @@ For complete understanding, this information should be combined with the documen
 * **Q: How many AEM Content Fragments can I add to a single decision item?** — Up to five, and only Content Fragments in a published state are available.
 * **Q: What happens when I republish a fragment used in active campaigns or journeys?** — Republishing it in Experience Manager updates every referenced variation in active campaigns or journeys automatically.
 * **Q: How do I enable real-time personalization in a fragment?** — Declare all placeholders as parameters in the fragment helper tag and map them to profile attributes, contextual attributes, static strings, or predefined variables.
+* **Q: How do I enable dynamic rendering for personalization inside a fragment field?** — Set `tokenSubstitution=false` in the fragment reference. The default `tokenSubstitution=true` resolves values from the token map passed in the reference.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 9e522485 -->
+<!-- ai-section-version: 1 | source-hash: 91e79eac -->

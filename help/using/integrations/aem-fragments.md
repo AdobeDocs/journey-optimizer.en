@@ -192,6 +192,8 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     ![](assets/aem_campaign_9.png){zoomable="yes"}
 
+    By default, `tokenSubstitution=true` resolves values from the token map. Set it to `false` to enable dynamic rendering, which resolves personalization directly in the field. This capability is Limited Availability. Contact your Adobe representative for access.
+
 1. Click **[!UICONTROL Save]**. You can now test and check your message content as detailed in [this section](../content-management/preview.md).
 
     Note that the Content Fragment you selected stays active for this message. When you open the Personalization Editor in another field or content block, you can keep working with the same fragment from the **[!UICONTROL AEM Content Fragment]** section and add more fields without reopening **[!UICONTROL Open AEM Content Advisor]**.
