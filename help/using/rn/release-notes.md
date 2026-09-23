@@ -280,7 +280,7 @@ The following improvement is coming to onboarding in this release.
 <li>When you migrate an email, [!DNL Journey Optimizer] identifies the content blocks referenced by that email and surfaces them as action items, so you can migrate the content blocks alongside the email.</li>
 <li>The interface has been improved to make guided onboarding more intuitive.</li></ul>
 <p>For more information, refer to the <a href="../start/onboarding-hub.md">detailed documentation</a>.</p>
-<p>Availability date: September 2s3, 2026</p>
+<p>Availability date: September 23, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -294,6 +294,10 @@ The following improvement is coming to onboarding in this release.
   Availability date: September 22, 2026
 
 ### Decisioning {#sep-26-decisioning}
+
+* **AEM Content Fragments in Decisioning available for Managed Services customers** - Previously, AEM Content Fragments in Decisioning were available only to customers using **Adobe Experience Manager as a Cloud Service** integration. This capability is now also available to customers using **Adobe Experience Manager Managed Services**. [Learn more](../experience-decisioning/items.md)
+
+  Availability date: September 23, 2026
 
 * **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually. [Learn more](../experience-decisioning/ranking/ranking-formulas.md#simulate-ranking-formula)
 

@@ -162,7 +162,9 @@ If your decision policy qualifies for two offers and each has a fragment—for e
 
 >[!AVAILABILITY]
 >
->This feature is available for channels with Decisioning support. Both AEM Content Fragment types (AEM as a Cloud Service and AEM Managed Services) are supported.
+>This feature is available for channels with Decisioning support.
+>
+>AEM Content Fragments in Decisioning are available to customers integrating Adobe Experience Manager **as a Cloud Service** or **Managed Services** with Adobe Journey Optimizer. [Learn more](../integrations/aem-fragments-gs.md)
 
 Before leveraging AEM Content Fragments in a decision policy, make sure you have:
 

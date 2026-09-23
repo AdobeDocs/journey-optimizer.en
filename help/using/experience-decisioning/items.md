@@ -88,11 +88,11 @@ Start by defining the decision item's standard and custom attributes :
 
     * **AEM content fragments** — Map Adobe Experience Manager content fragments directly to your decision item's attributes. Fill in the **Fragment reference key** field and select the fragment in the **Value** field. Once mapped, the content fragment fields can be selected in the decision policy, and Journey Optimizer can optimize which fragment is served to each profile. [Learn how](fragments-decision-policies.md#aem-fragments-decisioning)
 
-        
-
         >[!AVAILABILITY]
         >
-        >This feature is available for channels with Decisioning support. Both AEM Content Fragment types (AEM as a Cloud Service and AEM Managed Services) are supported.
+        >This feature is available for channels with Decisioning support.
+        >
+        >AEM Content Fragments in Decisioning are available to customers integrating Adobe Experience Manager **as a Cloud Service** or **Managed Services** with Adobe Journey Optimizer. [Learn more](../integrations/aem-fragments-gs.md)
 
         For prerequisites and guardrails, refer to [Use AEM Content Fragments with Experience Decisioning](../integrations/aem-fragments.md#aem-decisioning).
 

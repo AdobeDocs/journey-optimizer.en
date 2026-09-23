@@ -211,7 +211,7 @@ AEM Content Fragments can also be used as offer item attributes in **Experience 
 
 >[!NOTE]
 >
->Decisioning supports both AEM Content Fragment types: AEM as a Cloud Service and AEM Managed Services.
+>AEM Content Fragments in Decisioning are available to customers integrating Adobe Experience Manager **as a Cloud Service** or **Managed Services** with Adobe Journey Optimizer. [Learn more](aem-fragments-gs.md)
 
 ### Prerequisites and guardrails
 
@@ -225,6 +225,10 @@ Once the AEM Content Fragment has been created and published, you need to:
 
 1. Tie it to a decision item by selecting it in the decision item's attributes.
 1. Leverage it in a decision policy to surface the right content to the right customer.
+
+>[!NOTE]
+>
+>AEM Content Fragments in Decisioning are supported for both **Adobe Experience Manager as a Cloud Service** and **Adobe Experience Manager Managed Services**. [Learn more](aem-fragments-gs.md)
 
 ➡️ [Tie an AEM Content Fragment to a decision item](../experience-decisioning/items.md#aem-fragments)
 
