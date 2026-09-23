@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # Loyalty data and datasets {#loyalty-data-and-datasets}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn which Adobe Experience Platform identities, profiles, events, audiences, and datasets support Loyalty Challenges, and how dataset time-to-live affects data retention.
+
+>[!ENDSHADEBOX]
+
 ## Overview {#overview}
 
 Loyalty Challenges relies on Adobe Experience Platform for identity, profile attributes, experience events, and audiences. Use this page to learn which data to prepare, which datasets are involved, and how **time-to-live (TTL)** affects retention before you author challenges or use the Loyalty Challenges APIs.
@@ -50,7 +56,7 @@ For standard loyalty attributes on the profile (points, tier, program, status, a
 
 ### Experience events {#experience-events}
 
-**[!UICONTROL Purchase]**, **[!UICONTROL Spend]**, and **[!UICONTROL Custom event]** tasks depend on experience events ingested into Adobe Experience Platform. For **[!UICONTROL Custom event]** tasks, matching event definitions (identifier path, XDM schema ID, schema, and transformer) must be configured in the **[!UICONTROL Loyalty configurations]** menu before marketers can enter custom event values in the task builder. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+**[!UICONTROL Purchase]**, **[!UICONTROL Spend]**, and **[!UICONTROL Custom event]** tasks depend on experience events ingested into Adobe Experience Platform. For **[!UICONTROL Custom event]** tasks, matching event mappings (event name, Experience event schema, and field mappings) must be configured in the **[!UICONTROL Loyalty configurations]** menu before marketers can enter custom event values in the task builder. [Learn how to configure event mappings](loyalty-admin.md#event-mappings)
 
 Ensure event payloads use the same identity namespace as your Loyalty Challenges configuration so progress can be attributed to the correct profile.
 

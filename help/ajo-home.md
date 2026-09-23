@@ -28,9 +28,9 @@ Discover how to create and manage **Loyalty Challenges** to engage and reward yo
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/loyalty-challenges/get-started.md)
 
->[!TAB Journey Optimizer skills in CX Coworker]
+>[!TAB Journey Optimizer skills in CX Enterprise Coworker]
 
-We've added a new documentation page for **Journey Optimizer skills in CX Coworker**, including both **journey-focused** and **loyalty-focused** skills, with guidance and sample prompts.
+We've added a new documentation page for **Journey Optimizer skills in Coworker**, including both **journey-focused** and **loyalty-focused** skills, with guidance and sample prompts.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/start/ai-features.md#cx-coworker)
 
