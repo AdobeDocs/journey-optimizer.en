@@ -114,8 +114,7 @@ The following capability and improvement are coming to Loyalty in this release.
 
 * **Challenges domain in the Content Card personalization editor** - The Content Card personalization editor now supports **Challenges** as a domain, letting you access challenge metadata when authoring content card personalization. This makes it easier to create tailored content for each stage of a challenge — Launch, In progress, and End — without custom code.  
 
-
-
+<!--
 ### Onboarding {#sep-26-onboarding}
 
 The following capability is coming to onboarding in this release.
@@ -136,7 +135,7 @@ The following capability is coming to onboarding in this release.
 </tbody>
 </table>
 
-
+-->
 
 ### Journeys {#sep-26-journeys}
 
