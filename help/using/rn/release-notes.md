@@ -286,7 +286,6 @@ The following improvement is coming to onboarding in this release.
 </tbody>
 </table>
 
-
 ### Personalization {#sep-26-personalization}
 
 * **Fix syntax with AI** - When a PQL syntax validation error is detected, the Personalization Editor now provides a "Fix with AI" option to help resolve the issue directly from the editor.
@@ -313,14 +312,17 @@ The following improvement is coming to onboarding in this release.
 </thead>
 <tbody>
 <tr>
-<td>
-<p>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
+<td>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
+<p>For more information, refer to the <a href="../experience-decisioning/use-decision-policy.md">detailed documentation</a>.</p>
+<p>Availability date: September 22, 2026</p>
 </td>
 </tr>
 </tbody>
-</table> 
+</table>
 
-+++
+* **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually. [Learn more](../experience-decisioning/ranking/ranking-formulas.md#simulate-ranking-formula)
+
+  Availability date: September 22, 2026
 
 ### Audiences {#sep-26-audiences}
 
