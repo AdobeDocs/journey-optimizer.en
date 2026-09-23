@@ -134,11 +134,7 @@ The following capability is coming to onboarding in this release.
 </tbody>
 </table>
 
-### Audiences {#sep-26-audiences}
 
-The following reminder applies to audiences in this release.
-
-* **Upcoming change to Audience Composition enrichment audiences** - During the October release (end of October), Journey Optimizer will stop journeys and campaigns that use or reference an Audience Composition audience whose source dataset does not have a **primary identity descriptor**. From that point forward, only Audience Composition audiences built with a primary identity descriptor are supported in journeys and campaigns. If you need these journeys or campaigns to remain active, contact your Adobe representative — our product team can help you migrate. <!-- Documentation link: TBD -->
 
 ### Journeys {#sep-26-journeys}
 
@@ -439,12 +435,6 @@ The following capability is coming to reporting in this release.
 </tr>
 </tbody>
 </table>
-
-### Administration {#sep-26-administration}
-
-The following reminder applies to administration in this release.
-
-* **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on existing customer sandboxes and organizations starting October 1, 2026. 
 
 ### Usability improvements {#sep-26-usability}
 
