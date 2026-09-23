@@ -170,6 +170,22 @@ The following skills are available under the **CE Channel Content** plugin:
 
    Builds final email HTML directly from a live Figma frame when its copy, layout, and imagery are what should ship unchanged, with no separate layout plan involved.
 
+   +++How to use this skill
+
+   1. Sign in to Coworker and go to **[!UICONTROL Settings]** > **[!UICONTROL Secrets]**.
+
+      ![](assets/coworker-1.png)
+
+   1. Under **[!UICONTROL Your secrets]**, click **[!UICONTROL Add]**.
+
+   1. In **[!UICONTROL Name]**, enter `FIGMA_ACCESS_TOKEN`.
+
+   1. Generate a Figma Personal Access Token (PAT) with at least the **File content: Read-only** scope. [Learn how to generate a Figma personal access token](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens#h_01JHJXYMB9CREBR8PB5VJ1Q5ME).
+
+   1. Paste the PAT into **[!UICONTROL Value]**, then click **[!UICONTROL Save]**.
+
+   +++
+
 * **Brand Lookup** (`brand-lookup`)
 
    Finds, resolves, and applies approved brand guidelines, including voice, imagery, and legal, ahead of any workflow that generates or evaluates on-brand content.
