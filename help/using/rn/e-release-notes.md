@@ -411,7 +411,5 @@ The following capability is coming to reporting in this release.
 
 * **Usability improvements in the Content Simulation experience** - The new Content Simulation experience now lets you name and organize your variants for easy comparison, copy or delete variant details directly from each card, view full attribute paths and per-card channel configuration on demand, and upload your own CSV, JSON, or JSONL profiles from a more prominent upload button.
 
-* **AI overview in fragment validation alerts** - The fragment validation alerts dialog now includes an AI overview that summarizes and explains validation issues (for example malformed expressions, missing profile fields, and invalid JSON) so users can troubleshoot faster.
-
 * **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified, left-rail accessible menu that shows both in one combined view.
 

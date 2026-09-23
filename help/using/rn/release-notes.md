@@ -262,6 +262,31 @@ topic_v2:
 
   Availability date: September 22, 2026
 
+### Onboarding {#sep-26-onboarding}
+
+The following improvement is coming to onboarding in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Guided capabilities for onboarding emails and journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Guided capabilities for onboarding emails and journeys now include the following improvements:</p>
+<ul>
+<li>When you migrate an email, [!DNL Journey Optimizer] identifies the content blocks referenced by that email and surfaces them as action items, so you can migrate the content blocks alongside the email.</li>
+<li>The interface has been improved to make guided onboarding more intuitive.</li></ul>
+<p>For more information, refer to the <a href="../start/onboarding-hub.md">detailed documentation</a>.</p>
+<p>Availability date: September 2s3, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 ### Personalization {#sep-26-personalization}
 
 * **Fix syntax with AI** - When a PQL syntax validation error is detected, the Personalization Editor now provides a "Fix with AI" option to help resolve the issue directly from the editor.
@@ -306,6 +331,10 @@ The following reminder applies to administration in this release.
 * **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on existing customer sandboxes and organizations starting October 1, 2026. 
 
 ### Usability improvements {#sep-26-usability}
+
+* **AI overview in fragment validation alerts** - The fragment validation alerts dialog now includes an AI overview that summarizes and explains validation issues (for example malformed expressions, missing profile fields, and invalid JSON) so users can troubleshoot faster.
+
+  Availability date: September 22, 2026
 
 * **Easier detach and join branches in the new journey canvas** - You can now detach a branch from the rest of your journey without deleting it, and join it back later at a different point, either by selecting an eligible activity directly on the canvas or by picking it from a list of disconnected or already-used branches. [Learn more](../building-journeys/using-the-journey-designer.md#join-and-detach-branches)
 
