@@ -163,6 +163,21 @@ The following capabilities and improvements are coming to journeys in this relea
 <table>
 <thead>
 <tr>
+<th><strong>Journey Simulation in Coworker</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The <strong>Journey Simulation skill</strong> in Coworker automates end-to-end journey validation and lets you easily interpret the results. Note that this feature currently supports only the Quick Simulation flow and does not fully replace the Journey Optimizer manual simulation experience.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey creation from Coworker rail</strong><br/></th>
 </tr>
 </thead>
