@@ -262,6 +262,31 @@ topic_v2:
 
   Availability date: September 22, 2026
 
+### Onboarding {#sep-26-onboarding}
+
+The following improvement is coming to onboarding in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Guided capabilities for onboarding emails and journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Guided capabilities for onboarding emails and journeys now include the following improvements:</p>
+<ul>
+<li>When you migrate an email, [!DNL Journey Optimizer] identifies the content blocks referenced by that email and surfaces them as action items, so you can migrate the content blocks alongside the email.</li>
+<li>The interface has been improved to make guided onboarding more intuitive.</li></ul>
+<p>For more information, refer to the <a href="../start/onboarding-hub.md">detailed documentation</a>.</p>
+<p>Availability date: September 2s3, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 ### Personalization {#sep-26-personalization}
 
 * **Fix syntax with AI** - When a PQL syntax validation error is detected, the Personalization Editor now provides a "Fix with AI" option to help resolve the issue directly from the editor.
