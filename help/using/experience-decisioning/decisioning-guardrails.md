@@ -99,6 +99,7 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 | Number of custom attributes per items catalog schema | 100 |
 | Total Placements | 1K |
 | AI Ranking Model | 5 |
+| Web channel response payload size | 64 KiB |
 
 ## Configurations {#configurations}
 

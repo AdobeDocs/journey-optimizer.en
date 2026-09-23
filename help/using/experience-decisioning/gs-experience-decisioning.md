@@ -52,11 +52,11 @@ subfeature_v2:
 
 Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
 
-These decision items are seamlessly integrated into messages and experiences across [!DNL Adobe Journey Optimizer] channels: [code-based experience](../code-based/get-started-code-based.md), email, SMS, push notifications, and [direct mail](batch-decisioning-direct-mail.md) for batch decisioning and personalized direct mail exports. Experience Decisioning support for direct mail is a new capability; previously, the Decisioning engine was not available for direct mail extraction files.
+These decision items are seamlessly integrated into messages and experiences across [!DNL Adobe Journey Optimizer] channels: [code-based experience](../code-based/get-started-code-based.md), [web](../web/get-started-web.md), email, SMS, push notifications, and [direct mail](batch-decisioning-direct-mail.md) for batch decisioning and personalized direct mail exports. Experience Decisioning support for direct mail is a new capability; previously, the Decisioning engine was not available for direct mail extraction files.
 
 >[!IMPORTANT]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **Email**, **Push notification**, **SMS**, and **Direct mail** channels.
+>Decision policies are available to all customers for the **[Code-based Experience](../code-based/get-started-code-based.md)**, **[Web](../web/get-started-web.md)**, **[Email](../email/get-started-email.md)**, **[Push notification](../push/get-started-push.md)**, **[SMS](../mobile/get-started-mobile.md)**, and **[Direct mail](../direct-mail/get-started-direct-mail.md)** channels.
 
 ➡️ [Discover this feature in video](#video)
 
