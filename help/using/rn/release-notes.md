@@ -63,6 +63,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 * [Journey Simulation](#sep-26-journeys) - Automate end-to-end journey validation and interpret the results directly in Coworker.
 * [Compare journey versions](#sep-26-journeys) - Get a full-fidelity, structured diff between any two versions of a journey through Coworker Chat.
 * [Analyze Journey Anomalies skill](#sep-26-journeys) - Detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts, with root-cause diagnostics.
+* [Decisioning Explainer skill](#sep-26-decisioning) - Ask Coworker why a specific offer was or wasn't shown to a profile, or to a segment, and get a full trace of eligibility, ranking, and rule exclusions.
 
 +++ Coming soon — **Information below is subject to change.**
 
@@ -692,6 +693,29 @@ The following capabilities and improvements are coming to decisioning in this re
 <td>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
 <p>For more information, refer to the <a href="../experience-decisioning/use-decision-policy.md">detailed documentation</a>.</p>
 <p>Availability date: September 22, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Decisioning Explainer in Coworker</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new <strong>Decisioning Explainer</strong> skill in CX Coworker lets you ask, in natural language, why a specific offer was or wasn't shown to a profile — or, more broadly, why a segment of profiles isn't seeing an offer. Coworker walks through the full decisioning stack for the requested profile (or segment) and time window: which offers were eligible, which eligibility rule included or excluded each one, whether frequency or fatigue capping suppressed the offer, the final ranking scores and which strategy or AI model produced them, and which candidate pool the profile was evaluated against.</p>
+<p>For example, ask Coworker:</p>
+<ul>
+<li>"Why did profile 12345 see Offer X on May 15th?"</li>
+<li>"Why has Offer Y stopped showing to returning customers in the last 7 days?"</li>
+<li>"What factors most influenced the ranking outcome?"</li>
+</ul>
+<p>This capability aims to increase marketer confidence and self-sufficiency when configuring offer logic, and to reduce misconfigurations such as redundant rules, overly strict eligibility, or stale formulas.</p>
+<p>Availability date: September 24, 2026</p>
 </td>
 </tr>
 </tbody>
