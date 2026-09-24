@@ -406,6 +406,7 @@ The following capabilities and improvements are coming to channels in this relea
 <!--<li>Define a reporting webhook for a custom channel and attach it to a channel configuration, so you can enrich your Journey Optimizer reports with interaction events.</li>-->
 </ul>
 <p>Previously available in Limited Availability, this capability is now available to all environments (General Availability), with the enhancements described above.</p>
+<p><img src="assets/do-not-localize/custom-channel.gif"></p>
 </td>
 </tr>
 </tbody>
@@ -541,6 +542,24 @@ The following capabilities and improvements are coming to the Email channel in t
 
 The following capabilities and improvements are coming to the Email Designer in this release.
 
+<table>
+<thead>
+<tr>
+<th><strong>New table component in the Email Designer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Email Designer now includes a built-in <strong>Table component</strong>, allowing you to structure content in rows and columns directly within your email. Drag and drop the component onto your canvas, customize the number of rows and columns, and style each cell independently to create clear, organized layouts without relying on custom HTML.</p>
+<p><img src="assets/do-not-localize/table-component.gif"></p>
+<p>For more information, refer to the <a href="../email/content-components.md#table">detailed documentation</a>.</p>
+<p>Availability date: September 24, 2024.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -554,6 +573,8 @@ The following capabilities and improvements are coming to the Email Designer in 
 <td>
 <p>Email themes now support dark mode, so each color variant can render with a look tailored to recipients viewing your email in a dark mode-enabled client.</p>
 <p>When enabled, a default dark palette is generated automatically for every variant, and you can further customize it with a different palette or your own custom colors — independently from the light mode design, so changes made in one mode do not affect the other.</p>
+<p>For more information, refer to the <a href="../email/apply-email-themes.md">detailed documentation</a>.</p>
+<p>Availability date: September 24, 2024.</p>
 </td>
 </tr>
 </tbody>
@@ -568,22 +589,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <tbody>
 <tr>
 <td>
-<p>The Email Designer's Dynamic Media component now lets you import a Photoshop (PSD) file directly as a new template, in addition to browsing existing Dynamic Media templates. Drag and drop a PSD file into the component, and Adobe Journey Optimizer automatically converts it into a Dynamic Media template stored in Dynamic Media — no manual conversion or round-trip through Adobe Experience Manager needed. Once imported, you edit the template using the built-in Dynamic Media editor, the same experience used for Adobe Express content in the Email Designer.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>New table component in the Email Designer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The Email Designer now includes a built-in <strong>Table component</strong>, allowing you to structure content in rows and columns directly within your email. Drag and drop the component onto your canvas, customize the number of rows and columns, and style each cell independently to create clear, organized layouts without relying on custom HTML.</p>
+<p>The Email Designer's Dynamic Media component now lets you import a Photoshop (PSD) file directly as a new template, in addition to browsing existing Dynamic Media templates. Drag and drop a PSD file into the component, and Adobe Journey Optimizer automatically converts it into a Dynamic Media template — no manual conversion or round-trip through Adobe Experience Manager needed. Once imported, edit the template using the built-in Dynamic Media editor.</p>
 </td>
 </tr>
 </tbody>
