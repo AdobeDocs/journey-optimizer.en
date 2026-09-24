@@ -559,7 +559,7 @@ The following capabilities are coming to integrations in this release.
 
 ### Personalization {#sep-26-personalization}
 
-* **Fix syntax with AI** - When a PQL syntax validation error is detected, the Personalization Editor now provides a "Fix with AI" option to help resolve the issue directly from the editor.
+* **Fix syntax with AI** - When validating an expression, if a PQL syntax error is detected, the Personalization Editor provides a "Fix with AI" option to help resolve the issue directly from the editor. [Read more](../personalization/personalization-build-expressions.md#validation-mechanisms).
 
   Availability date: September 22, 2026
 
