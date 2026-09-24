@@ -147,7 +147,9 @@ The following skills are available under the **Channel Content** plugin:
 
    >[!BEGINSHADEBOX]
 
-   "Compare message maps for the Back to School campaign and recommend touchpoint sequencing across email and push."
+   * "Compare a single winback email with a three-touch email and SMS program."
+   * "Give me three campaign directions for this launch before we choose one."
+   * "Help decide what this email should say and in what order before we write the copy."
 
    >[!ENDSHADEBOX]
 
@@ -157,7 +159,9 @@ The following skills are available under the **Channel Content** plugin:
 
    >[!BEGINSHADEBOX]
 
-   "Turn this approved campaign direction into a content brief with tone, key messages, and channel variants."
+   * "Turn this brief into writing requirements for a warm winback email to lapsed US subscribers: 20% off through Sunday, with CTR as the KPI."
+   * "We want to promote our spring sale over email and SMS for new subscribers and loyal members. Structure the requirements and create a separate whole-copy brief for each channel and audience."
+   * "Capture this welcome-email brief for English and Spanish audiences, including the localized legal-footer requirements, then prepare it for copy drafting, not HTML design."
 
    >[!ENDSHADEBOX]
 
@@ -167,7 +171,9 @@ The following skills are available under the **Channel Content** plugin:
 
    >[!BEGINSHADEBOX]
 
-   "Draft a first SMS copy variant for our Flash Sale, targeting existing members, offering 20% off, urgent tone, under 160 characters."
+   * "Write three subject-line options and preview text for our spring promotion email."
+   * "Generate warm, concise SMS copy for lapsed customers with a 20% offer."
+   * "Create on-brand launch copy for email, push, and SMS from the approved campaign direction."
 
    >[!ENDSHADEBOX]
 
@@ -177,7 +183,9 @@ The following skills are available under the **Channel Content** plugin:
 
    >[!BEGINSHADEBOX]
 
-   "Check this assembled email for brand voice, accessibility, and compliance issues before we send it."
+   * "Is this email copy ready to send? Check brand voice, clarity, accessibility, and compliance."
+   * "Review this SMS for editorial quality, engagement, and any blockers before approval."
+   * "Check the assembled email for legal-footer, accessibility, and send-readiness issues."
 
    >[!ENDSHADEBOX]
 
@@ -187,7 +195,9 @@ The following skills are available under the **Channel Content** plugin:
 
    >[!BEGINSHADEBOX]
 
-   "Fix the accessibility finding on the CTA button and translate this email into French."
+   * "Apply the highest-severity fixes from this evaluation report to the SMS."
+   * "Make the tone warmer while preserving the approved offer and CTA."
+   * "Change the hero headline to 'Final hours to save' and show me the revised content."
 
    >[!ENDSHADEBOX]
 
@@ -197,7 +207,10 @@ The following skills are available under the **Channel Content** plugin:
 
    >[!BEGINSHADEBOX]
 
-   "Generate a hero image for the summer sale placement using our brand-trained model, then create three crop variations for mobile."
+   * "Generate a premium hero image for this spring-sale email using the approved brand direction."
+   * "Create a mobile-friendly crop of this product image for the email hero."
+   * "Make two visual variations of this campaign image."
+   * "Generate a similar image to the given image."
 
    >[!ENDSHADEBOX]
 
@@ -207,7 +220,9 @@ The following skills are available under the **Channel Content** plugin:
 
    >[!BEGINSHADEBOX]
 
-   "Assess how this email renders on mobile and recommend changes to CTA placement and spacing."
+   * "How does this email look visually? Check hierarchy, spacing, density, imagery, and the CTA."
+   * "Does the hero take up too much space in this landing-page HTML?"
+   * "Compare this built email with the approved design comp and call out the biggest visual mismatches."
 
    >[!ENDSHADEBOX]
 
@@ -217,7 +232,9 @@ The following skills are available under the **Channel Content** plugin:
 
    >[!BEGINSHADEBOX]
 
-   "Save this approved email copy as a draft template in Adobe Journey Optimizer."
+   * "Save this approved email copy as a solution draft."
+   * "Fill the approved content into the source template and prepare it for review."
+   * "The email is approved; save the channel content and prepare the handoff for delivery."
 
    >[!ENDSHADEBOX]
 
@@ -227,7 +244,9 @@ The following skills are available under the **Channel Content** plugin:
 
    >[!BEGINSHADEBOX]
 
-   "Build the final email HTML from this Figma frame, keeping the copy and layout unchanged."
+   * "Build the final email HTML from this Figma frame; the copy in the design is what should ship."
+   * "Turn this approved desktop and mobile Figma design into a responsive email."
+   * "Build this email from the Figma frame and preserve the design's image crops, CTA, and text exactly."
 
    >[!ENDSHADEBOX]
 
@@ -253,7 +272,8 @@ The following skills are available under the **Channel Content** plugin:
 
    >[!BEGINSHADEBOX]
 
-   "Look up our brand voice guidelines before generating copy for the Loyalty Rewards campaign."
+   * "What published brand kits are available for this campaign?"
+   * "Pull the writing and visual guidelines for our Acme brand."
 
    >[!ENDSHADEBOX]
 
