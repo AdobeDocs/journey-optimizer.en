@@ -60,7 +60,7 @@ Select the type of activity that customers must perform to complete this task:
 
 * **[!UICONTROL Purchase]**: Customers must purchase one or more items to complete this task
 * **[!UICONTROL Spend]**: Customers must spend a specified amount to complete this task
-* **[!UICONTROL Custom event]**: Customers must perform an activity represented by an Adobe Experience Platform experience event. For example, a hotel check-in, mobile app action, or review submission. The underlying event must already be captured in Experience Platform and mapped through an event definition in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+* **[!UICONTROL Custom event]**: Customers must perform an activity represented by an Adobe Experience Platform experience event. For example, a hotel check-in, mobile app action, or review submission. The underlying event must already be captured in Experience Platform and mapped through an event mapping in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure event mappings](loyalty-admin.md#event-mappings)
 
 To select an activity, click the **+** icon and select the customer activity that best aligns with your outcome goals. Each activity type has specific configurable attributes to further define and shape the task requirements.
 ![](assets/task-create-activity.png)
@@ -96,7 +96,7 @@ Available attributes for **Spend** activities:
 
 Available attributes for **[!UICONTROL Custom event]** activities:
 
-* **[!UICONTROL Custom event values]**: Enter the values for the custom event that customers must complete. Use a comma to separate each value. These values must match event definitions configured in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+* **[!UICONTROL Custom event values]**: Enter the values for the custom event that customers must complete. Use a comma to separate each value. These values must match event mappings configured in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure event mappings](loyalty-admin.md#event-mappings)
 
 ![](assets/task-create-custom.png)
 
