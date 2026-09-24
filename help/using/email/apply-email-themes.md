@@ -99,15 +99,15 @@ To define a theme that you can leverage in your future email contents, follow th
 
 1. Select the **[!UICONTROL Create or edit themes]** option.
 
-   ![](assets/theme-create.png)
+   ![Create or edit themes option in template creation](assets/theme-create.png)
 
 1. Select an Adobe theme. In this example, select the **[!UICONTROL Default theme]** and click **[!UICONTROL Create]**.
 
-   ![](assets/theme-select.png)
+   ![Theme selection screen with Default theme selected](assets/theme-select.png)
 
 1. You can also select a custom template from the **[!UICONTROL My themes]** tab and click **[!UICONTROL Edit]** to update it.
 
-   ![](assets/theme-edit.png)
+   ![My themes tab with Edit action for a custom theme](assets/theme-edit.png)
 
 1. In the **[!UICONTROL General settings]** tab, start defining your theme by giving it a specific name suiting your brand. You can adjust the default viewport width for your emails and also export the current theme to [share it across sandboxes](../configuration/copy-objects-to-sandbox.md).
 
@@ -115,33 +115,33 @@ To define a theme that you can leverage in your future email contents, follow th
 
 1. Use the rail on the right to navigate through the different tabs and update your design settings.
 
-   ![](assets/theme-right-pane.png)
+   ![Right rail tabs for theme design settings](assets/theme-right-pane.png)
 
 1. From the **[!UICONTROL Colors]** tab:
 
    * Use the **[!UICONTROL Edit]** button to set up a **[!UICONTROL Color palette]** with default colors for your brand. Select a **[!UICONTROL Preset]** to quickly create a color scheme, or adjust each color of your theme individually. You can also use a combination of both.
    
-      ![](assets/theme-colors.gif)
+      ![Color palette editor for theme colors](assets/theme-colors.gif)
 
    * Click **[!UICONTROL Add variant]** to create multiple color variants for your theme, each with its own color palette and nuance controls.
 
-      ![](assets/theme-colors-variant.png)
+      ![Add variant action in theme color settings](assets/theme-colors-variant.png)
 
    * For each variant, click the **[!UICONTROL Edit]** icon to edit any individual element. You can use the default palette that you have created, or any custom colors.
    
-      ![](assets/theme-colors-edit-variant.gif)
+      ![Edit icon for per-element color variant settings](assets/theme-colors-edit-variant.gif)
 
-1. Optionnally, turn on the **[!UICONTROL Enable dark mode]** option to make the dark mode view available for all the theme's color variants, through the toggle on the top right of the central canvas. [Learn more on dark mode](dark-mode.md)
+1. **Optionally**, turn on the **[!UICONTROL Enable dark mode]** option to make the dark mode view available for all the theme's color variants, through the toggle on the top right of the central canvas. [Learn more on dark mode](dark-mode.md)
 
-   ![](assets/theme-dark-mode-toggle.png)
+   ![Enable dark mode toggle in theme settings](assets/theme-dark-mode-toggle.png)
 
    Use that toggle to switch to dark mode view. The color palette automatically changes to a default dark version for each variant.
 
-   ![](assets/theme-dark-mode-view.png)
+   ![Dark mode preview of theme in canvas](assets/theme-dark-mode-view.png)
 
    You can further customize each dark mode variant, using either a different color palette or custom colors.
       
-   ![](assets/theme-dark-mode-support.gif)
+   ![Dark mode color customization for theme variant](assets/theme-dark-mode-support.gif)
 
    >[!CAUTION]
    >
@@ -153,9 +153,9 @@ To define a theme that you can leverage in your future email contents, follow th
    >
    >To delete a color variant, you must be in light mode. Deleting a variant is not possible while in dark mode view.
 
-1. In the **[!UICONTROL Text settings]**, you can set the global font that you want to use for your entire theme. For a more granular control, you also can edit each heading and paragraph type to adjust the font, size, style, and so on.
+1. In the **[!UICONTROL Text settings]**, you can set the global font that you want to use for your entire theme. For more granular control, you can also edit each heading and paragraph type to adjust the font, size, style, and so on.
 
-   ![](assets/theme-text.png)
+   ![Text settings panel for fonts and typography](assets/theme-text.png)
 
    >[!NOTE]
    >
@@ -167,7 +167,7 @@ To define a theme that you can leverage in your future email contents, follow th
 
 1. Using the other tabs on the right, you can manage separately each button element, divider, additional image formatting, and grid layout spacing for this theme.
 
-   ![](assets/theme-buttons.png)
+   ![Buttons and component style settings in theme editor](assets/theme-buttons.png)
 
 1. Click **[!UICONTROL Save]** to store this theme for future use. It is now displayed in the **[!UICONTROL My themes]** tab.
 
@@ -185,7 +185,7 @@ To apply default or custom styling themes to a content template or an email, fol
 
    * Design a [new content from scratch](content-from-scratch.md) and select **[!UICONTROL Use Themes]** to start with a predefined styling theme.
 
-      ![](assets/theme-from-scratch.png)
+      ![Use Themes option when starting content from scratch](assets/theme-from-scratch.png)
 
       >[!CAUTION]
       >
@@ -195,21 +195,21 @@ To apply default or custom styling themes to a content template or an email, fol
 
 1. Once in the Email Designer, click the **[!UICONTROL Themes]** button on the right rail. The default theme or the template's theme is displayed. You can switch between the two color variants for this theme.
 
-   ![](assets/theme-default-hero.png)
+   ![Email Designer with default theme applied](assets/theme-default-hero.png)
 
 1. Click the arrow next to the theme currently used. The list of available custom and Adobe themes displays.
 
-   ![](assets/theme-hero-change.png)
+   ![Theme dropdown showing available themes](assets/theme-hero-change.png)
 
 1. Click **[!UICONTROL My themes]** and select a theme that you created.
 
-   ![](assets/theme-select-custom.png)
+   ![My themes dropdown with a custom theme selected](assets/theme-select-custom.png)
 
 1. Click outside of the drop-down list. The newly selected custom theme automatically applies its styles to all email components. You can toggle between the color variants if any.
 
 1. Switch the toggle to **[!UICONTROL Dark mode]** for the selected theme. The dark mode version of that theme is applied to the email content. Update it as needed - any subsequent color edits and previews reflect the dark mode styling.
 
-   ![](assets/theme-light-mode.png){width="45%"}   ![](assets/theme-dark-mode.png){width=45%"}
+   ![Light mode preview of themed email](assets/theme-light-mode.png){width="45%"}   ![Dark mode preview of themed email](assets/theme-dark-mode.png){width="45%"}
 
    The dark mode version is used when the message is displayed in supported dark mode email clients. [Learn more about dark mode](dark-mode.md)
 
@@ -219,7 +219,7 @@ To apply default or custom styling themes to a content template or an email, fol
 
 1. When a theme is selected in a content template, you can click the **[!UICONTROL Edit theme]** button to update it. [Learn more](#create-and-edit-themes)
 
-   ![](assets/theme-edit-in-template.png){width="40%"}
+   ![Edit theme button in themed content template](assets/theme-edit-in-template.png){width="40%"}
 
    >[!NOTE]
    >
@@ -233,7 +233,7 @@ To apply default or custom styling themes to a content template or an email, fol
 
    To do this, select a structure component, click the **[!UICONTROL Use specific theme's variant option]** from the **[!UICONTROL Styles]** tab on the right, and apply the desired variant to that structure.
 
-   ![](assets/theme-structure-variant.png)
+   ![Structure-level specific theme variant option](assets/theme-structure-variant.png)
 
    In this example, the first color variant of the current theme is applied to the whole email content, but the third color variant is applied to the selected structure. You can see that the body and viewport background colors for that specific structure are different from the rest of the content.
 
@@ -245,13 +245,13 @@ When a component is selected, you can unlock its style using the dedicated icon 
 
 ![](assets/theme-unlock-style.png){width="90%"}
 
-The selected theme is still applied to that component, but you can override its styling elements. If you change themes, the new theme is only applied to the styling elements that were not overriden.<!--can you revert this action?-->
+The selected theme is still applied to that component, but you can override its styling elements. If you change themes, the new theme is only applied to the styling elements that were not overridden.
 
-For example, if you unlock a text component, you can change <!--the font size from 11 to 14 and -->the font color from black to red:
+For example, if you unlock a text component, you can change the font color from black to red:
 
 ![](assets/theme-unlock-style-ex-white.png){width="80%" align="center" zoomable="yes"}
 
-If you change themes, <!--the font size is still 14 and -->the font color is still red for that component, but the background color for this component will change with the new theme:
+If you change themes, the font color is still red for that component, but the background color for this component will change with the new theme:
 
 ![](assets/theme-unlock-style-ex-colored.png){width="80%"}
 
@@ -265,7 +265,7 @@ To create a fragment compatible with themes, follow the steps below.
 
 1. Select **[!UICONTROL Use Themes]** to start with a predefined styling theme.
 
-      ![](assets/fragment-use-themes.png){width="100%"}
+      ![Use Themes option when creating a visual fragment](assets/fragment-use-themes.png){width="100%"}
 
       >[!CAUTION]
       >
@@ -275,11 +275,11 @@ To create a fragment compatible with themes, follow the steps below.
 
 1. Click the **[!UICONTROL Themes]** button on the right rail. The default theme is displayed. You can switch between the different color variants for this theme.
 
-   ![](assets/fragment-default-theme.png){width="100%" align="center" zoomable="yes"}
+   ![Fragment editor with default theme applied](assets/fragment-default-theme.png){width="100%" align="center" zoomable="yes"}
 
 1. You can select other themes to preview your fragment content. To do so, select the arrow next to the default theme and click **[!UICONTROL Select themes]**.
 
-   ![](assets/fragment-select-themes.png){width="40%"}
+   ![Select themes action in fragment theme menu](assets/fragment-select-themes.png){width="40%"}
 
 1. You can navigate between the **[!UICONTROL Adobe themes]** and **[!UICONTROL My themes]** tabs, and select up to five compatible themes (from both tabs) for your fragment.
 
@@ -287,7 +287,7 @@ To create a fragment compatible with themes, follow the steps below.
    >
    >This limit is enforced for compatibility and performance reasons. The **[!UICONTROL Adobe default theme]** cannot be removed, so you can select up to four additional custom themes.
 
-   ![](assets/fragment-select-compatible-themes.png){width=70%}
+   ![Compatible themes selection dialog for fragment](assets/fragment-select-compatible-themes.png){width=70%}
 
    >[!CAUTION]
    >
@@ -297,13 +297,13 @@ To create a fragment compatible with themes, follow the steps below.
 
 1. Select again the arrow next to the **[!UICONTROL Default theme]**. You can now toggle between the different themes you just selected to preview each style rendering.
 
-   ![](assets/fragment-selected-themes.png){width=90%}
+   ![Fragment preview switching across selected themes](assets/fragment-selected-themes.png){width=90%}
 
 1. Click **[!UICONTROL Select themes]** again to add more themes or change your selection.
 
 ## Make a template compatible with themes {#theme-convertor}
 
-[!DNL Journey Optimizer] allows you to convert an template which was created using manual styling into a theme-compatible content. This can be particularly useful if you created content templates before themes were introduced into [!DNL Journey Optimizer], or if you are importing external contents.
+[!DNL Journey Optimizer] allows you to convert a template that was created using manual styling into a theme-compatible content. This can be particularly useful if you created content templates before themes were introduced into [!DNL Journey Optimizer], or if you are importing external content.
 
 >[!NOTE]
 >
@@ -313,17 +313,17 @@ To create a fragment compatible with themes, follow the steps below.
 
 1. Select the **[!UICONTROL Themes]** icon on the right rail and click the **[!UICONTROL Generate theme from content]** button.
 
-   ![](assets/generate-theme.png){width=100%}
+   ![Generate theme from content button in Themes panel](assets/generate-theme.png){width=100%}
 
-1. The **[!UICONTROL Create a theme]** window opens. [!DNL Journey Optimizer] automatically detects the styling elements and consolidate them into a new theme.
+1. The **[!UICONTROL Create a theme]** window opens. [!DNL Journey Optimizer] automatically detects the styling elements and consolidates them into a new theme.
 
-   ![](assets/generate-theme-create-window.png){width=90% }
+   ![Create a theme dialog after style detection](assets/generate-theme-create-window.png){width=90% }
 
 1. Provide a name for your theme.
 
 1. Make your own adjustments as needed, just like you do when creating a theme from scratch, such as adding a color variant, editing fonts, etc. [Learn how](#create-and-edit-themes)
 
-   ![](assets/generate-theme-colors.png){width=90%}
+   ![Generated theme settings ready for adjustment](assets/generate-theme-colors.png){width=90%}
 
 1. Click **[!UICONTROL Save]** to store this new theme for reuse. You can now apply this theme to your contents such as any other theme. [Learn how](#apply-themes-email)
 
