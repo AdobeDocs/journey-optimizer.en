@@ -177,21 +177,26 @@ You can insert your dynamic template directly into your content using the **Dyna
 
 1. Choose how you want to add your dynamic media template:
 
-    * **[!UICONTROL Browse]** — browse through your AEM assets and select the dynamic media template you want to add to your content.
+    * **[!UICONTROL Browse]** — browse through your AEM assets and select the Dynamic Media Template or PSD file you want to add to your content.
 
-        ![](assets/dynamic-media-template-2.png)
+        ![](assets/dynamic-media-template-2.png){width="80%"}
 
     * **[!UICONTROL Import PSD]** — drag and drop or select a Photoshop (PSD) file. Click **[!UICONTROL Next]** and choose a destination to store it.
 
         ![](assets/dynamic-media-template-psd.png){width="80%"}
 
-        Adobe Journey Optimizer automatically converts the file into a dynamic media template and imports it into the repository that you selected.
+        Adobe Journey Optimizer automatically <!--converts the file into a Dynamic Media Template and -->imports the file into the repository that you selected.
 
-1. Once your file is uploaded and rendered, select the **[!UICONTROL Edit in Dynamic Media Template Editor]** button that displays in the right panel. This opens the Dynamic Media Template editor directly within Journey Optimizer, where you can update your template without leaving the application.
+1. Once your file is uploaded and rendered, select the **[!UICONTROL Edit in Dynamic Media Template Editor]** button that displays in the right panel.
 
-1. In the Dynamic Media Template editor, go to the **[!UICONTROL Parameters]** tab, select **[!UICONTROL Include Param]** for each Dynamic Media Template's parameter you want to enable and click **[!UICONTROL Done]**.
+    ![](assets/dynamic-media-template-editor-button.png){width="90%"}
 
-    ![](assets/dynamic-media-template-editor.png){width="80%"}
+
+    This opens the Dynamic Media Template Editor directly within Journey Optimizer, where you can update your template or PSD file without leaving the application.
+
+1. In the Dynamic Media Template Editor, go to the **[!UICONTROL Parameters]** tab, select **[!UICONTROL Include Param]** for each Dynamic Media Template's parameter you want to enable and click **[!UICONTROL Done]**.
+
+    ![](assets/dynamic-media-template-editor.png){width="70%"}
 
     >[!NOTE]
     >
@@ -199,7 +204,9 @@ You can insert your dynamic template directly into your content using the **Dyna
 
 1. Once back in the Email Designer, the parameters you enabled are available in the **[!UICONTROL Settings]** tab.
 
-    The parameters you see here reflect how they were defined in the Dynamic Media Template in Adobe Experience Manager.
+    ![](assets/dynamic-media-template-parameters.png){width="80%"}
+
+    The parameters you see here reflect how they were defined in the Dynamic Media Template in Adobe Experience Manager or in Photoshop.
 
     The available fields depend on the parameters added during the [template creation](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters){target="_blank"} in Adobe Experience Manager.
 
@@ -211,7 +218,7 @@ You can insert your dynamic template directly into your content using the **Dyna
 
     ![](assets/do-not-localize/dynamic_media_template.gif)
 
-1. Conditional content can be applied to the Dynamic Media component to generate different variants of the content. [Learn more](../personalization/dynamic-content.md)
+1. Conditional content can be applied to the Dynamic Media Template to generate different variants of the content. [Learn more](../personalization/dynamic-content.md)
 
 1. Click **[!UICONTROL Save]**.
 
