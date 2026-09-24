@@ -187,11 +187,19 @@ You can insert your dynamic template directly into your content using the **Dyna
 
         Adobe Journey Optimizer automatically converts the file into a dynamic media template and imports it into the repository that you selected.
 
-1. Once your file is uploaded and rendered, select the **[!UICONTROL Edit in Dynamic Media Template editor]** button that displays in the right panel to open the Dynamic Media Template editor directly within Journey Optimizer. From there, update your template without leaving the application.
+1. Once your file is uploaded and rendered, select the **[!UICONTROL Edit in Dynamic Media Template Editor]** button that displays in the right panel. This opens the Dynamic Media Template editor directly within Journey Optimizer, where you can update your template without leaving the application.
 
-    Learn more on the Dynamic Media Template WYSIWYG editor in the [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-templates){target="_blank"}.
+1. In the Dynamic Media Template editor, go to the **[!UICONTROL Parameters]** tab, select **[!UICONTROL Include Param]** for each Dynamic Media Template's parameter you want to enable and click **[!UICONTROL Done]**.
 
-1. In the **[!UICONTROL Settings]** tab, navigate to access the Dynamic Media Template's parameters.
+    ![](assets/dynamic-media-template-editor.png){width="80%"}
+
+    >[!NOTE]
+    >
+    >Learn more on the Dynamic Media Template WYSIWYG editor in the [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-templates){target="_blank"}.
+
+1. Once back in the Email Designer, the parameters you enabled are available in the **[!UICONTROL Settings]** tab.
+
+    The parameters you see here reflect how they were defined in the Dynamic Media Template in Adobe Experience Manager.
 
     The available fields depend on the parameters added during the [template creation](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters){target="_blank"} in Adobe Experience Manager.
 
