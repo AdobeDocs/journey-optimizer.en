@@ -76,6 +76,8 @@ For API-triggered and Action (scheduled) campaigns, you can also send proofs pro
 
 * **Preview content with multiple conditional variants** - When simulating or rendering proofs for emails containing multiple conditional variants, Journey Optimizer may require more processing time. If you experience timeouts or error messages, consider reducing the total number of variants or simplifying conditional rules. Learn more about conditional content on [this page](../personalization/dynamic-content.md).
 
+* **Mirror page limitation** - Mirror page links are not active in proofs, including proofs sent from test profiles or from content variations tested with sample input data. Proofs let you validate content, rendering, and personalization, but not the mirror page link, which only activates in final messages. [Learn more](../email/message-tracking.md#mirror-page).
+
 ## How-to video {#video-preview}
 
 Learn how to use test profiles to test email rendering across inboxes, preview your personalized emails against test profiles, and send proofs.

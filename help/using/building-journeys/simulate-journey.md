@@ -24,19 +24,13 @@ subfeature_v2:
 
 >[!ENDSHADEBOX]
 
-Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
+Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log.
 
-Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log. 
-
->[!IMPORTANT]
->
->* To use **[!UICONTROL Simulation]**, assign at least one permission from the **[!UICONTROL Journeys]** capability: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. The same permissions let you create and manage simulated users, **[!UICONTROL Simulated Users]** permissions are not required. [Learn more](../administration/permissions.md)
->
->* To manage simulated users without **[!UICONTROL Simulation]**, assign **Manage Simulated Users** or **View Simulated Users** from the **[!UICONTROL Simulated Users]** capability.
->
->* For AI in simulation (**[!UICONTROL Quick simulation]**, AI-generated users, **[!UICONTROL Generate event values]**), assign **[!UICONTROL Generate Content]** from the **[!UICONTROL AI Assistant]** capability.
+For required permissions, see [Required permissions](simulate-journey-gs.md#required-permissions).
 
 For an overview by journey type, see [Get started with Journey simulation](simulate-journey-gs.md).
+
+Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
 ## Simulation types {#simulation-types}
 
