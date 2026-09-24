@@ -108,6 +108,21 @@ topic_v2:
 
 +++ Coming soon — **Information below is subject to change.**
 
+<table>
+<thead>
+<tr>
+<th><strong>Challenge Recommendations</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Loyalty Performance menu now includes **Opportunities** and **Trend** tabs, which surface AI-detected trends and gaps such as tier progression friction or challenge task drop-off, each with a projected impact and a one-click "Create with AI" action to generate a challenge that addresses it.</p><p>In addition, marketers can request **challenge opportunities** directly in Coworker's conversational interface, getting grounded challenge ideas based on real loyalty program trends and turning them into live challenges without leaving the chat.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 * **Per-member Loyalty challenge completion deadlines** - Loyalty challenges now support per-member completion deadlines: choose "Within a number of days after opt-in" under Completion requirements so each member's deadline is calculated from their own opt-in date rather than a fixed program-wide end date. If both a challenge end date and this opt-in window are set, each member's deadline is whichever comes first. <!-- Documentation link: TBD -->
 
 +++
@@ -209,6 +224,22 @@ topic_v2:
 
 +++ Coming soon — **Information below is subject to change.**
 
+<table>
+<thead>
+<tr>
+<th><strong>Content preview in the journey canvas</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Reviewing channel content today requires opening each activity individually, one at a time — slow and error-prone on journeys with many channel activities, especially where personalization means checking multiple treatments or variants per activity. <strong>Content preview</strong> removes that friction by surfacing a content thumbnail for every channel activity directly in the canvas, with a fullscreen modal to inspect and switch between treatments and variants.</p>
+<p>Target availability date: September 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 * **Hygiene Analysis skill** - CX Coworker can now scan your active and draft journeys for broken configurations, silent failures, and decaying or unused assets — such as stale draft journeys, orphaned data sources, and persistent custom action errors — and surface recommended fixes directly in chat. <!-- Documentation link: TBD -->
 
 +++
@@ -246,6 +277,30 @@ topic_v2:
 
   Availability date: September 22, 2026
 
+### Onboarding {#sep-26-onboarding}
+
+The following improvement is coming to onboarding in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Guided capabilities for onboarding emails and journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Guided capabilities for onboarding emails and journeys now include the following improvements:</p>
+<ul>
+<li>When you migrate an email, [!DNL Journey Optimizer] identifies the content blocks referenced by that email and surfaces them as action items, so you can migrate the content blocks alongside the email.</li>
+<li>The interface has been improved to make guided onboarding more intuitive.</li></ul>
+<p>For more information, refer to the <a href="../start/onboarding-hub.md">detailed documentation</a>.</p>
+<p>Availability date: September 23, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Personalization {#sep-26-personalization}
 
 * **Fix syntax with AI** - When a PQL syntax validation error is detected, the Personalization Editor now provides a "Fix with AI" option to help resolve the issue directly from the editor.
@@ -254,11 +309,7 @@ topic_v2:
 
 ### Decisioning {#sep-26-decisioning}
 
-* **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually. [Learn more](../experience-decisioning/ranking/ranking-formulas.md#simulate-ranking-formula)
-
-  Availability date: September 22, 2026
-
-+++ Coming soon — **Information below is subject to change.**
+The following capabilities and improvements are coming to decisioning in this release.
 
 <table>
 <thead>
@@ -268,14 +319,21 @@ topic_v2:
 </thead>
 <tbody>
 <tr>
-<td>
-<p>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
+<td>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
+<p>For more information, refer to the <a href="../experience-decisioning/use-decision-policy.md">detailed documentation</a>.</p>
+<p>Availability date: September 22, 2026</p>
 </td>
 </tr>
 </tbody>
-</table> 
+</table>
 
-+++
+* **AEM Content Fragments in Decisioning available for Managed Services customers** - Previously, AEM Content Fragments in Decisioning were available only to customers using **Adobe Experience Manager as a Cloud Service** integration. This capability is now also available to customers using **Adobe Experience Manager Managed Services**. [Learn more](../experience-decisioning/items.md#attributes)
+
+  Availability date: September 23, 2026
+
+* **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually. [Learn more](../experience-decisioning/ranking/ranking-formulas.md#simulate-ranking-formula)
+
+  Availability date: September 22, 2026
 
 ### Audiences {#sep-26-audiences}
 
@@ -290,6 +348,10 @@ The following reminder applies to administration in this release.
 * **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on existing customer sandboxes and organizations starting October 1, 2026. 
 
 ### Usability improvements {#sep-26-usability}
+
+* **AI overview in fragment validation alerts** - The fragment validation alerts dialog now includes an AI overview that summarizes and explains validation issues (for example malformed expressions, missing profile fields, and invalid JSON) so users can troubleshoot faster.
+
+  Availability date: September 22, 2026
 
 * **Easier detach and join branches in the new journey canvas** - You can now detach a branch from the rest of your journey without deleting it, and join it back later at a different point, either by selecting an eligible activity directly on the canvas or by picking it from a list of disconnected or already-used branches. [Learn more](../building-journeys/using-the-journey-designer.md#join-and-detach-branches)
 
