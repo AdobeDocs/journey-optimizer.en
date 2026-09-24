@@ -407,6 +407,8 @@ The following capabilities and improvements are coming to channels in this relea
 </ul>
 <p>Previously available in Limited Availability, this capability is now available to all environments (General Availability), with the enhancements described above.</p>
 <p><img src="assets/do-not-localize/custom-channel.gif"></p>
+<p>For more information, refer to the <a href="../custom-channel/get-started-custom-channel.md">detailed documentation</a>.</p>
+
 </td>
 </tr>
 </tbody>
@@ -560,8 +562,6 @@ The following capabilities and improvements are coming to the Email Designer in 
 </tbody>
 </table>
 
-+++ Coming soon — **Information below is subject to change.**
-
 <table>
 <thead>
 <tr>
@@ -573,12 +573,15 @@ The following capabilities and improvements are coming to the Email Designer in 
 <td>
 <p>Email themes now support dark mode, so each color variant can render with a look tailored to recipients viewing your email in a dark mode-enabled client.</p>
 <p>When enabled, a default dark palette is generated automatically for every variant, and you can further customize it with a different palette or your own custom colors — independently from the light mode design, so changes made in one mode do not affect the other.</p>
+<p><img src="../email/assets/theme-dark-mode-support.gif"></p>
 <p>For more information, refer to the <a href="../email/apply-email-themes.md">detailed documentation</a>.</p>
 <p>Availability date: September 24, 2024.</p>
 </td>
 </tr>
 </tbody>
 </table>
+
++++ Coming soon — **Information below is subject to change.**
 
 <table>
 <thead>
@@ -594,8 +597,6 @@ The following capabilities and improvements are coming to the Email Designer in 
 </tr>
 </tbody>
 </table>
-
-* **Fallback fonts for custom fonts in email themes** - You can now define a fallback font for any custom (web) font applied through email themes. If a subscriber's email client does not support the custom font, Adobe Journey Optimizer automatically displays the specified fallback font instead of leaving the choice to the email client's default. This keeps email typography closer to your brand guidelines and reduces font-rendering inconsistencies across email clients.
 
 +++
 
