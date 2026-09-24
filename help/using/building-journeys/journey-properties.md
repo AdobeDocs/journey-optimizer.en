@@ -194,6 +194,11 @@ If no start or end date is defined, no date information appears in the header.
 
 ## Timeout {#timeout}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_recovery_timeout"
+>title="Set event recovery timeout"
+>abstract="Controls how long the journey automatically replays events impacted by a service interruption. Off by default (72-hour automatic replay); turn on to adjust the replay window from 0 to 72 hours for time-sensitive journeys."
+
 Timeout settings control how long a journey waits for activity execution and how long profiles can remain in a journey.
 
 ### Timeout in journey activities {#timeout_and_error}
