@@ -118,17 +118,17 @@ The following functionalities are currently not supported:
 1. **Confirm before publishing**: Review a fragment's content after creating or updating it before asking Coworker to publish it.
 1. **Provide complete replacement content**: Update operations replace content in full, so include the complete HTML body or variant content in your prompt.
 
-## CE Channel Content {#ce-channel-content}
+## Channel Content {#ce-channel-content}
 
 >[!AVAILABILITY]
 >
->CE Channel Content is available for all customers who have access to CX Coworker. Generating images with a custom, brand-trained model requires production access to Firefly Services.
+>Channel Content is available for all customers who have access to CX Coworker. Generating images with a custom, brand-trained model requires production access to Firefly Services.
 
-CE Channel Content takes a brief, journey, campaign, or prompt and turns it into planned, on-brand copy and images across channels, locales, audiences, and variants, including final, accessible, assembled email HTML. Content can be explored and strategized, authored, evaluated for readiness, revised, and saved back to the active solution (Adobe Journey Optimizer or another supported activation solution).
+Channel Content takes a brief, journey, campaign, or prompt and turns it into planned, on-brand copy and images across channels, locales, audiences, and variants, including final, accessible, assembled email HTML. Content can be explored and strategized, authored, evaluated for readiness, revised, and saved back to the active solution (Adobe Journey Optimizer or another supported activation solution).
 
 ### Available skills
 
-The following skills are available under the **CE Channel Content** plugin:
+The following skills are available under the **Channel Content** plugin:
 
 * **Orchestrate Content Authoring** (`orchestrate-content-authoring`)
 

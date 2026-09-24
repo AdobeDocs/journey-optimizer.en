@@ -54,6 +54,39 @@ topic_v2:
 
 ### Content Management {#sep-26-content-management}
 
+The following capability is coming to content management in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Channel Content plugin in Coworker</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new <strong>Channel Content</strong> plugin is now available in Coworker, bringing campaign copy, image, and assembled email HTML skills together under one plugin from strategy to deployment. The following skills are available under the **Channel Content** plugin:</p>
+<ul>
+<li><strong>Orchestrate Content Authoring</strong>.</li>
+<li><strong>Explore Content Strategy</strong></li>
+<li><strong>Content Brief</strong></li>
+<li><strong>Generate Content</strong></li>
+<li><strong>Check Content Readiness</strong></li>
+<li><strong>Revise and Regenerate Content</strong></li>
+<li><strong>Generate Image</strong></li>
+<li><strong>Assess Content Design</strong></li>
+<li><strong>Save Channel Content</strong></li>
+<li><strong>Build Email from Figma</strong></li>
+<li><strong>Brand Lookup</strong> </li>
+</ul>
+<p>For more information, refer to the <a href="../content-management/content-management-coworker-skills.md#content-management#ce-channel-content">detailed documentation</a>.</p>
+<p>Availability date: September 24, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 <table>
 <thead>
 <tr>
