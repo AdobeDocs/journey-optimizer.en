@@ -65,7 +65,7 @@ The following capability is coming to content management in this release.
 <tbody>
 <tr>
 <td>
-<p>A new <strong>Channel Content</strong> plugin is now available in Coworker, bringing campaign copy, image, and assembled email HTML skills together under one plugin from strategy to deployment. The following skills are available under the **Channel Content** plugin:</p>
+<p>A new <strong>Channel Content</strong> plugin is now available in Coworker, bringing campaign copy, image, and assembled email HTML skills together under one plugin from strategy to deployment. The following skills are available under the <b>Channel Content</b> plugin:</p>
 <ul>
 <li><strong>Orchestrate Content Authoring</strong>.</li>
 <li><strong>Explore Content Strategy</strong></li>
