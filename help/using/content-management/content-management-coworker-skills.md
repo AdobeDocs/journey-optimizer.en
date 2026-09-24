@@ -134,41 +134,102 @@ The following skills are available under the **Channel Content** plugin:
 
    Runs the full authoring lifecycle from a brief, journey, campaign, or prompt, ideating, generating, reviewing, and saving content, including copy, images, and the compliance, accessibility, and fidelity checks across supported channels.
 
+   >[!BEGINSHADEBOX]
+
+   "Run full content authoring for our Fall Sale email campaign from this brief, then review and save the final HTML."
+
+   >[!ENDSHADEBOX]
+   
+
 * **Explore Content Strategy** (`explore-content-strategy`)
 
    Works out what a campaign or message should say before copy is written, comparing message maps and touchpoint sequencing at the campaign level, and deciding section order, emphasis, and CTA at the message level.
+
+   >[!BEGINSHADEBOX]
+
+   "Compare message maps for the Back to School campaign and recommend touchpoint sequencing across email and push."
+
+   >[!ENDSHADEBOX]
 
 * **Content Brief** (`content-brief`)
 
    Turns an approved campaign direction into concrete writing requirements, including tone, key messages, offer, must-say points, channel, locale, and variants, plus a plan for producing the content.
 
+   >[!BEGINSHADEBOX]
+
+   "Turn this approved campaign direction into a content brief with tone, key messages, and channel variants."
+
+   >[!ENDSHADEBOX]
+
 * **Generate Content** (`generate-content`)
 
    Drafts a single net-new marketing message or copy variant for one channel, based on a stated audience, offer, tone, CTA, and length. First-draft creation only.
+
+   >[!BEGINSHADEBOX]
+
+   "Draft a first SMS copy variant for our Flash Sale, targeting existing members, offering 20% off, urgent tone, under 160 characters."
+
+   >[!ENDSHADEBOX]
 
 * **Check Content Readiness** (`check-content-readiness`)
 
    Assesses existing content, including an assembled email, for brand voice, editorial quality, accessibility, and compliance, then surfaces explainable blockers and next steps.
 
+   >[!BEGINSHADEBOX]
+
+   "Check this assembled email for brand voice, accessibility, and compliance issues before we send it."
+
+   >[!ENDSHADEBOX]
+
 * **Revise and Regenerate Content** (`revise-regenerate-content`)
 
    Applies a specific, confirmed change to existing content, such as fixing a review finding, adjusting tone, translating, or swapping a subject line or CTA, while preserving the artifact.
+
+   >[!BEGINSHADEBOX]
+
+   "Fix the accessibility finding on the CTA button and translate this email into French."
+
+   >[!ENDSHADEBOX]
 
 * **Generate Image** (`generate-image`)
 
    Produces and manipulates visuals for an approved placement, including hero images, crops, overlays, variations, or signed assets, confirming the plan before applying it.
 
+   >[!BEGINSHADEBOX]
+
+   "Generate a hero image for the summer sale placement using our brand-trained model, then create three crop variations for mobile."
+
+   >[!ENDSHADEBOX]
+
 * **Assess Content Design** (`assess-content-design`)
 
    Evaluates how content actually renders, including hierarchy, spacing, imagery, CTA placement, and responsiveness, and recommends copy or image changes to close the gaps.
+
+   >[!BEGINSHADEBOX]
+
+   "Assess how this email renders on mobile and recommend changes to CTA placement and spacing."
+
+   >[!ENDSHADEBOX]
 
 * **Save Channel Content** (`save-channel-content`)
 
    Saves approved campaign content as a draft asset or fills it into its source template in Adobe Journey Optimizer or another supported solution.
 
+   >[!BEGINSHADEBOX]
+
+   "Save this approved email copy as a draft template in Adobe Journey Optimizer."
+
+   >[!ENDSHADEBOX]
+
 * **Build Email from Figma** (`build-email-from-figma`)
 
    Builds final email HTML directly from a live Figma frame when its copy, layout, and imagery are what should ship unchanged, with no separate layout plan involved.
+
+   >[!BEGINSHADEBOX]
+
+   "Build the final email HTML from this Figma frame, keeping the copy and layout unchanged."
+
+   >[!ENDSHADEBOX]
 
    +++How to use this skill
 
@@ -189,6 +250,12 @@ The following skills are available under the **Channel Content** plugin:
 * **Brand Lookup** (`brand-lookup`)
 
    Finds, resolves, and applies approved brand guidelines, including voice, imagery, and legal, ahead of any workflow that generates or evaluates on-brand content.
+
+   >[!BEGINSHADEBOX]
+
+   "Look up our brand voice guidelines before generating copy for the Loyalty Rewards campaign."
+
+   >[!ENDSHADEBOX]
 
 ### Prompting best practices
 
