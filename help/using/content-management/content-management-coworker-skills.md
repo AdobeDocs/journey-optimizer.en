@@ -140,12 +140,11 @@ The following skills are available under the **Channel Content** plugin:
 
    >[!ENDSHADEBOX]
    
-
 * **Explore Content Strategy** (`explore-content-strategy`)
 
    Works out what a campaign or message should say before copy is written, comparing message maps and touchpoint sequencing at the campaign level, and deciding section order, emphasis, and CTA at the message level.
 
-   >[!BEGINSHADEBOX]
+   >[!BEGINSHADEBOX "Prompt samples"]
 
    * "Compare a single winback email with a three-touch email and SMS program."
    * "Give me three campaign directions for this launch before we choose one."
