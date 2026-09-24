@@ -134,41 +134,121 @@ The following skills are available under the **Channel Content** plugin:
 
    Runs the full authoring lifecycle from a brief, journey, campaign, or prompt, ideating, generating, reviewing, and saving content, including copy, images, and the compliance, accessibility, and fidelity checks across supported channels.
 
+   >[!BEGINSHADEBOX]
+
+   "Run full content authoring for our Fall Sale email campaign from this brief, then review and save the final HTML."
+
+   >[!ENDSHADEBOX]
+   
+
 * **Explore Content Strategy** (`explore-content-strategy`)
 
    Works out what a campaign or message should say before copy is written, comparing message maps and touchpoint sequencing at the campaign level, and deciding section order, emphasis, and CTA at the message level.
+
+   >[!BEGINSHADEBOX]
+
+   * "Compare a single winback email with a three-touch email and SMS program."
+   * "Give me three campaign directions for this launch before we choose one."
+   * "Help decide what this email should say and in what order before we write the copy."
+
+   >[!ENDSHADEBOX]
 
 * **Content Brief** (`content-brief`)
 
    Turns an approved campaign direction into concrete writing requirements, including tone, key messages, offer, must-say points, channel, locale, and variants, plus a plan for producing the content.
 
+   >[!BEGINSHADEBOX]
+
+   * "Turn this brief into writing requirements for a warm winback email to lapsed US subscribers: 20% off through Sunday, with CTR as the KPI."
+   * "We want to promote our spring sale over email and SMS for new subscribers and loyal members. Structure the requirements and create a separate whole-copy brief for each channel and audience."
+   * "Capture this welcome-email brief for English and Spanish audiences, including the localized legal-footer requirements, then prepare it for copy drafting, not HTML design."
+
+   >[!ENDSHADEBOX]
+
 * **Generate Content** (`generate-content`)
 
    Drafts a single net-new marketing message or copy variant for one channel, based on a stated audience, offer, tone, CTA, and length. First-draft creation only.
+
+   >[!BEGINSHADEBOX]
+
+   * "Write three subject-line options and preview text for our spring promotion email."
+   * "Generate warm, concise SMS copy for lapsed customers with a 20% offer."
+   * "Create on-brand launch copy for email, push, and SMS from the approved campaign direction."
+
+   >[!ENDSHADEBOX]
 
 * **Check Content Readiness** (`check-content-readiness`)
 
    Assesses existing content, including an assembled email, for brand voice, editorial quality, accessibility, and compliance, then surfaces explainable blockers and next steps.
 
+   >[!BEGINSHADEBOX]
+
+   * "Is this email copy ready to send? Check brand voice, clarity, accessibility, and compliance."
+   * "Review this SMS for editorial quality, engagement, and any blockers before approval."
+   * "Check the assembled email for legal-footer, accessibility, and send-readiness issues."
+
+   >[!ENDSHADEBOX]
+
 * **Revise and Regenerate Content** (`revise-regenerate-content`)
 
    Applies a specific, confirmed change to existing content, such as fixing a review finding, adjusting tone, translating, or swapping a subject line or CTA, while preserving the artifact.
+
+   >[!BEGINSHADEBOX]
+
+   * "Apply the highest-severity fixes from this evaluation report to the SMS."
+   * "Make the tone warmer while preserving the approved offer and CTA."
+   * "Change the hero headline to 'Final hours to save' and show me the revised content."
+
+   >[!ENDSHADEBOX]
 
 * **Generate Image** (`generate-image`)
 
    Produces and manipulates visuals for an approved placement, including hero images, crops, overlays, variations, or signed assets, confirming the plan before applying it.
 
+   >[!BEGINSHADEBOX]
+
+   * "Generate a premium hero image for this spring-sale email using the approved brand direction."
+   * "Create a mobile-friendly crop of this product image for the email hero."
+   * "Make two visual variations of this campaign image."
+   * "Generate a similar image to the given image."
+
+   >[!ENDSHADEBOX]
+
 * **Assess Content Design** (`assess-content-design`)
 
    Evaluates how content actually renders, including hierarchy, spacing, imagery, CTA placement, and responsiveness, and recommends copy or image changes to close the gaps.
+
+   >[!BEGINSHADEBOX]
+
+   * "How does this email look visually? Check hierarchy, spacing, density, imagery, and the CTA."
+   * "Does the hero take up too much space in this landing-page HTML?"
+   * "Compare this built email with the approved design comp and call out the biggest visual mismatches."
+
+   >[!ENDSHADEBOX]
 
 * **Save Channel Content** (`save-channel-content`)
 
    Saves approved campaign content as a draft asset or fills it into its source template in Adobe Journey Optimizer or another supported solution.
 
+   >[!BEGINSHADEBOX]
+
+   * "Save this approved email copy as a solution draft."
+   * "Fill the approved content into the source template and prepare it for review."
+   * "The email is approved; save the channel content and prepare the handoff for delivery."
+
+   >[!ENDSHADEBOX]
+
 * **Build Email from Figma** (`build-email-from-figma`)
 
    Builds final email HTML directly from a live Figma frame when its copy, layout, and imagery are what should ship unchanged, with no separate layout plan involved.
+
+   >[!BEGINSHADEBOX]
+
+   * "Build the final email HTML from this Figma frame; the copy in the design is what should ship."
+   * "Turn this approved desktop and mobile Figma design into a responsive email."
+   * "Build this email from the Figma frame and preserve the design's image crops, CTA, and text exactly."
+
+   >[!ENDSHADEBOX]
 
    +++How to use this skill
 
@@ -189,6 +269,13 @@ The following skills are available under the **Channel Content** plugin:
 * **Brand Lookup** (`brand-lookup`)
 
    Finds, resolves, and applies approved brand guidelines, including voice, imagery, and legal, ahead of any workflow that generates or evaluates on-brand content.
+
+   >[!BEGINSHADEBOX]
+
+   * "What published brand kits are available for this campaign?"
+   * "Pull the writing and visual guidelines for our Acme brand."
+
+   >[!ENDSHADEBOX]
 
 ### Prompting best practices
 
