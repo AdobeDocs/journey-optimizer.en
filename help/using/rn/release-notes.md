@@ -65,7 +65,7 @@ The following capability is coming to content management in this release.
 <tbody>
 <tr>
 <td>
-<p>A new <strong>Channel Content</strong> plugin is now available in Coworker, bringing campaign copy, image, and assembled email HTML skills together under one plugin from strategy to deployment. The following skills are available under the **Channel Content** plugin:</p>
+<p>A new <strong>Channel Content</strong> plugin is now available in Coworker, bringing campaign copy, image, and assembled email HTML skills together under one plugin from strategy to deployment. The following skills are available under the <b>Channel Content</b> plugin:</p>
 <ul>
 <li><strong>Orchestrate Content Authoring</strong>.</li>
 <li><strong>Explore Content Strategy</strong></li>
@@ -307,6 +307,10 @@ The following capability is coming to content management in this release.
 </table>
 
 * **Conditional content with relational data in orchestrated campaigns** - When building conditional content in the Email Designer for orchestrated campaigns, you can now build conditions directly on relational data — such as related records associated with a profile — not just standard profile attributes. [Learn more](../orchestrated/activities/channels.md#add-personalization)
+
+  Availability date: September 22, 2026
+
+* **Direct joins on collections in Orchestrated Campaigns** - When adding an attribute from a related collection, you can now choose between three join modes — a new default that warns you about potential performance impact from cartesian products, plus the existing Aggregate and Advanced modes — making it easier to understand the tradeoffs of your query before you build it. [Learn more](../orchestrated/build-query.md#links)
 
   Availability date: September 22, 2026
 
