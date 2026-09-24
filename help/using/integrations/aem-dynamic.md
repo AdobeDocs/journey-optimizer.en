@@ -224,13 +224,13 @@ You can insert your dynamic template directly into your content using the **Dyna
 
 Once you have performed your tests and validated the content, you can send your message to your audience. 
 
-### With HTML component {#html-component}
+### With Html component {#html-component}
 
-You can insert your dynamic template directly into your content using the HTML component:
+You can insert your dynamic template directly into your content using the Html component:
 
 1. Open your campaign or journey and access your content.
 
-1. Drag and drop an **HTML component** into your layout. 
+1. Drag and drop an **[!UICONTROL Html]** component into your layout. 
 
     ![](assets/dynamic-media-template-4.png)
 
