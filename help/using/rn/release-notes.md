@@ -277,6 +277,10 @@ topic_v2:
 
   Availability date: September 22, 2026
 
+* **Direct joins on collections in Orchestrated Campaigns** - When adding an attribute from a related collection, you can now choose between three join modes — a new default that warns you about potential performance impact from cartesian products, plus the existing Aggregate and Advanced modes — making it easier to understand the tradeoffs of your query before you build it. [Learn more](../orchestrated/build-query.md#links)
+
+  Availability date: September 22, 2026
+
 ### Onboarding {#sep-26-onboarding}
 
 The following improvement is coming to onboarding in this release.
