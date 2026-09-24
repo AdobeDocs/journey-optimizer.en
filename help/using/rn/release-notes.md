@@ -715,6 +715,7 @@ The following capabilities and improvements are coming to decisioning in this re
 <li>"What factors most influenced the ranking outcome?"</li>
 </ul>
 <p>This capability aims to increase marketer confidence and self-sufficiency when configuring offer logic, and to reduce misconfigurations such as redundant rules, overly strict eligibility, or stale formulas.</p>
+<p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md">detailed documentation</a>.</p>
 <p>Availability date: September 24, 2026</p>
 </td>
 </tr>
