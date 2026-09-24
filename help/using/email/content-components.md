@@ -190,7 +190,7 @@ Use the **[!UICONTROL Html]** component to copy-paste the different parts of you
 
 ## Dynamic Media Template {#dynamic-media-template}
 
-Use the **[!UICONTROL Dynamic Media Template]** component to to leverage personalized and interactive media within your emails.
+Use the **[!UICONTROL Dynamic Media Template]** component to leverage personalized and interactive [dynamic media](../integrations/aem-dynamic.md) within your emails.
 
 Use this component to insert a Dynamic Media Template from Adobe Experience Manager into your email content, and edit it directly in the Dynamic Media Template Editor, without leaving the Email Designer. You can also upload a PSD (Photoshop) file and edit it similarly as a Dynamic Media Template. [Learn more](../integrations/aem-dynamic.md#dynamic-media-template)
 
