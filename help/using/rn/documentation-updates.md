@@ -101,6 +101,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Grid** component section has been added to the **Email Designer content components** page. It lets you organize content into a structured grid of rows and columns, where each cell can contain other content components. [Read more](../email/content-components.md#grid)
 
+* The **Grid** component section has been added to the **Use the Email Designer content components** page. The Grid component lets you organize content into a structured grid of rows and columns, where each cell can contain other content components. [Read more](../email/content-components.md#grid)
+
 * The **Decisioning Migration API** documentation has been updated with a clarification that the target sandbox **can be the same as the source sandbox**. The migration process handles this scenario and ensures data integrity regardless of whether objects are migrated within the same sandbox or to a different one. [Read more](../experience-decisioning/decisioning-migration-api.md#target-sandbox-preparation)
 
 * The **Decisioning Migration API** documentation has been enhanced with comprehensive guidance on migrating Decision management objects to Decisioning. New sections include: entity mapping reference with 10 naming conventions, in-scope vs. out-of-scope coverage, detailed request/response model comparisons, three implementation patterns (client-side, server-side, hybrid) with cookie handling, event tracking requirements with 5 event JSON examples, cross-sandbox migration prerequisites, an end-to-end 5-step migration process, and migration FAQs. [Read more](../experience-decisioning/decisioning-migration-api.md)

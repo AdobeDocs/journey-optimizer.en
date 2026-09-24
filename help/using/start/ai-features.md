@@ -85,7 +85,7 @@ Learn more in the Coworker documentation:
 
 In Adobe Journey Optimizer, Coworker provides dedicated skills across these capabilities:
 
-* **Journeys**: Build journeys with natural language prompts (Journey Create), generate channel-specific message copy and designs (Channel Content Create), and diagnose journey drop-offs, scheduling overlaps, and execution anomalies (Journey Analyze). [See all Coworker skills for journeys](../building-journeys/journeys-coworker-skills.md).
+* **Journeys**: Build journeys with natural language prompts (Journey Create), generate channel-specific message copy and designs (Channel Content Create), compare journey versions, and diagnose journey drop-offs, scheduling overlaps, and execution anomalies (Journey Analyze). [See all Coworker skills for journeys](../building-journeys/journeys-coworker-skills.md).
 * **Loyalty**: Create and configure loyalty challenges (Loyalty Challenge Management), and query loyalty points, tier distributions, and revenue metrics (Loyalty Insights). [See all Coworker skills for loyalty](../loyalty-challenges/loyalty-coworker-skills.md).
 * **Content Management**: Discover, create, update, clone, and publish templates, fragments, landing pages, and inline message variants using 15 read/write MCP tools. [See all Coworker content management tools](../content-management/content-management-coworker-skills.md).
 
