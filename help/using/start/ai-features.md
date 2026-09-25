@@ -88,6 +88,7 @@ In Adobe Journey Optimizer, Coworker provides dedicated skills across these capa
 * **Journeys**: Build journeys with natural language prompts (Journey Create), generate channel-specific message copy and designs (Channel Content Create), compare journey versions, and diagnose journey drop-offs, scheduling overlaps, and execution anomalies (Journey Analyze). [See all Coworker skills for journeys](../building-journeys/journeys-coworker-skills.md).
 * **Loyalty**: Create and configure loyalty challenges (Loyalty Challenge Management), and query loyalty points, tier distributions, and revenue metrics (Loyalty Insights). [See all Coworker skills for loyalty](../loyalty-challenges/loyalty-coworker-skills.md).
 * **Content Management**: Discover, create, update, clone, and publish templates, fragments, landing pages, and inline message variants using 15 read/write MCP tools. [See all Coworker content management tools](../content-management/content-management-coworker-skills.md).
+* **Decisioning**: Understand why a specific offer was or wasn't shown to a profile or segment, tracing eligibility, ranking, and capping (Decisioning Explainer); and create, explain, simulate, and optimize eligibility rules and ranking formulas in natural language (Rules & Ranking). [See all Coworker skills for Decisioning](../experience-decisioning/experience-decisioning-coworker-skills.md).
 
 ## MCP server {#mcp-server}
 

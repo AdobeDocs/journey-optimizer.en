@@ -690,6 +690,7 @@ nudge: yes
   + Decisioning {#experience-decisioning}
     + [Decisioning](/help/rp_landing_pages/experience-decisioning-landing-page.md)
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
+    + [Coworker for Decisioning](using/experience-decisioning/experience-decisioning-coworker-skills.md)
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
     + [Decisioning FAQ](using/experience-decisioning/decisioning-faq.md)
     + Migrate to Decisioning {#migrate-to-decisioning}

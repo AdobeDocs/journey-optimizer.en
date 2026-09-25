@@ -129,6 +129,7 @@ The chart below summarizes the end-to-end Decisioning process — from managing 
 
 ## Additional resources {#additional-resources}
 
+* **[Coworker for Decisioning](experience-decisioning-coworker-skills.md)** - Ask Coworker why an offer was or wasn't shown to a profile or segment (Decisioning Explainer), or create, explain, simulate, and optimize rules and ranking formulas conversationally (Rules & Ranking).
 * **[Create decision items](items.md)** - Learn how to create and manage decision items including offers, content variations, and experiences.
 * **[Configure decision catalogs](catalogs.md)** - Understand how to organize decision items into catalogs for better management.
 * **[Define selection strategies](selection-strategies.md)** - Discover how to create selection strategies with eligibility rules and ranking methods.
