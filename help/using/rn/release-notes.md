@@ -396,6 +396,10 @@ The following capability is coming to content management in this release.
 
 The following capabilities and improvements are coming to channels in this release.
 
+* **Increased subdomain delegation limit** - Depending on your license contract, you can now delegate up to 3000 subdomains, previously capped at 100. This capability is available in Limited Availability for a set of customers. [Learn more](../configuration/delegate-subdomain.md#guardrails)
+
+  Availability date: September 25, 2026
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>

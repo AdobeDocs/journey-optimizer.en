@@ -71,7 +71,7 @@ The **full subdomain delegation** is the recommended method. Learn more about th
 
 When setting up subdomains in [!DNL Journey Optimizer], follow the guardrails and recommendations outlined below.
 
-* By default, [!DNL Journey Optimizer] allows you to delegate **a maximum of 10 subdomains**. However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
+* By default, [!DNL Journey Optimizer] allows you to delegate **a maximum of 10 subdomains**. However, depending on your license contract, you may be able to delegate up to 3000 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
 
 * Parallel submission of subdomains is not supported in [!DNL Journey Optimizer]. If you try to submit a subdomain for delegation when another one is in the **[!UICONTROL Processing]** status, you get an error message.
 
