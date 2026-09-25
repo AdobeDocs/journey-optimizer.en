@@ -2,22 +2,19 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Coworker for Decisioning
-description: Discover the CX Enterprise Coworker skills available for Decisioning in Adobe Journey Optimizer, including the Decisioning Explainer skill, with in-depth guidance and sample prompts.
+description: Discover the CX Enterprise Coworker skills available for Decisioning in Adobe Journey Optimizer, including the Decisioning Explainer and Rules & Ranking skills, with in-depth guidance and sample prompts.
 feature: Overview
 topic: Artificial Intelligence
 role: User
 level: Beginner
 mini-toc-levels: 1
-feature_v2:
-  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decisioning
 ---
 
 # Coworker for Decisioning {#experience-decisioning-coworker-skills}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover the CX Enterprise Coworker skills available for Decisioning in Adobe Journey Optimizer — understanding why an offer was or wasn't shown to a profile or segment — with detailed guidance, example prompts, and best practices.
+**On this page:** Discover the CX Enterprise Coworker skills available for Decisioning in Adobe Journey Optimizer — understanding why an offer was or wasn't shown to a profile or segment, and creating, explaining, simulating, and optimizing eligibility rules and ranking formulas — with detailed guidance, example prompts, and best practices.
 
 Learn more:
 
@@ -95,5 +92,84 @@ The following functionalities are currently not supported:
 * **Include a time window**: Specify a date or date range when asking why an offer's visibility changed, so Coworker can scope the trace correctly.
 * **Ask for the ranking breakdown directly**: If you want scoring detail, ask explicitly for the ranking score or the factors that influenced the outcome.
 * **Use segment-level questions for trends**: When investigating why a group of profiles isn't seeing an offer, ask about the segment rather than a single profile to get the dominant reason.
+
+## Rules & Ranking {#rules-ranking}
+
+>[!AVAILABILITY]
+>
+>Rules & Ranking is available for all customers who have access to Coworker and Decisioning.
+
+Rules & Ranking gives marketers AI-powered assistance for creating, understanding, and testing decisioning logic, without needing to write or manually validate PQL syntax. It covers four core capabilities: natural language rule creation, plain-English rule and ranking formula explanation, simulation against test profiles, and PQL optimization.
+
+### Key use cases
+
+* **Natural language rule creation**
+
+   Turn a plain-language description into PQL eligibility rule syntax, for both net-new rules and edits to existing ones.
+
+   Sample prompts:
+   * "Can you create an eligibility rule that targets users that meet XYZ conditions?"
+   * "Create an eligibility rule targeting loyalty members in tier 2 or above."
+   * "Write a PQL rule that excludes customers who made a purchase in the last 7 days."
+   * "Modify this rule to also exclude customers in the suppression list."
+
+* **Plain-English rule and formula explanation**
+
+   Explain what an existing eligibility rule or ranking formula does — what it includes or excludes, and what each condition means — without needing to read PQL syntax.
+
+   Sample prompts:
+   * "Can you explain this rule to me in natural language?"
+   * "What does this ranking formula actually do?"
+   * "Who does this eligibility rule target and who does it exclude?"
+   * "Summarize this rule in one sentence."
+   * "Why does Offer A rank above Offer B for this customer?"
+   * "Is this rule too restrictive for a broad awareness campaign?"
+   * "Which condition in this rule is filtering out the most profiles?"
+
+* **Simulation**
+
+   Run an eligibility rule or ranking formula against up to 3 test profiles — manually entered or AI-generated, including edge cases — and get pass/fail results with the specific failing condition, or a ranked list of offers with numeric scores.
+
+   Sample prompts:
+   * "Simulate this rule with test profiles."
+   * "Does this rule pass for a profile where loyalty_tier = gold?"
+   * "Which profiles pass this eligibility rule: [profile A, profile B, profile C]?"
+   * "Why did this profile fail the eligibility check?"
+   * "Generate test profiles for this eligibility rule."
+   * "Generate edge case profiles that stress-test this condition."
+   * "Simulate this ranking formula across these offers and profiles."
+   * "Which offer would rank highest for this profile given this formula?"
+   * "Compare how this eligibility rule behaves for a gold vs. silver vs. basic tier customer."
+
+* **PQL optimization**
+
+   Rewrite an existing rule or formula with more concise syntax to meet Journey Optimizer's PQL size limits, without changing its logic or outcome.
+
+   Sample prompts:
+   * "Optimize this PQL rule for me."
+   * "This rule is hitting PQL size limits — can you shorten it?"
+
+### In scope
+
+Rules & Ranking can currently:
+
+* Create a new eligibility rule from a plain-language description, or edit an existing one.
+* Explain an existing eligibility rule or ranking formula in plain English.
+* Simulate an eligibility rule or ranking formula against up to 3 test profiles, manually entered or AI-generated.
+* Rewrite a rule or formula to be more concise and fit within PQL size limits, while preserving its logic and outcome.
+
+### Out of scope
+
+The following functionalities are currently not supported:
+
+* Simulating against more than 3 test profiles at a time.
+* Creating or editing selection strategies or decision policies — Rules & Ranking is scoped to eligibility rules and ranking formulas.
+
+### Prompting best practices
+
+* **Provide the target condition explicitly**: When creating or modifying a rule, state the exact audience, attribute, or exclusion condition you want.
+* **Reference the rule or formula directly**: When asking for an explanation, simulation, or optimization, make sure the rule or formula you mean is open or clearly identified.
+* **Ask for edge cases**: When simulating, ask Coworker to generate edge-case profiles to stress-test a condition, not just typical ones.
+* **Review before publishing**: Check a generated or optimized rule's logic and simulation results before publishing it.
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-experience-decisioning-coworker-skills.md}}

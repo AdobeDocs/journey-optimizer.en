@@ -64,6 +64,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 * [Compare journey versions](#sep-26-journeys) - Get a full-fidelity, structured diff between any two versions of a journey through Coworker Chat.
 * [Analyze Journey Anomalies skill](#sep-26-journeys) - Detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts, with root-cause diagnostics.
 * [Decisioning Explainer skill](#sep-26-decisioning) - Ask Coworker why a specific offer was or wasn't shown to a profile, or to a segment, and get a full trace of eligibility, ranking, and rule exclusions.
+* [Rules & Ranking skill](#sep-26-decisioning) - Create, explain, simulate, and optimize Decisioning eligibility rules and ranking formulas in natural language, without writing or validating PQL syntax by hand.
 
 +++ Coming soon — **Information below is subject to change.**
 
@@ -717,6 +718,31 @@ The following capabilities and improvements are coming to decisioning in this re
 <p>This capability aims to increase marketer confidence and self-sufficiency when configuring offer logic, and to reduce misconfigurations such as redundant rules, overly strict eligibility, or stale formulas.</p>
 <p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md">detailed documentation</a>.</p>
 <p>Availability date: September 24, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Rules &amp; Ranking in Coworker</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new <strong>Rules &amp; Ranking</strong> skill in CX Coworker gives marketers AI-powered assistance for creating, understanding, and testing decisioning logic, without needing to write or manually validate PQL syntax. It covers four capabilities: turning a plain-language description into a new eligibility rule or an edit to an existing one, explaining what an existing rule or ranking formula does in plain English, simulating a rule or formula against test profiles, and rewriting a rule or formula more concisely to fit PQL size limits without changing its logic.</p>
+<p>For example, ask Coworker:</p>
+<ul>
+<li>"Create an eligibility rule targeting loyalty members in tier 2 or above."</li>
+<li>"Can you explain this rule to me in natural language?"</li>
+<li>"Does this rule pass for a profile where loyalty_tier = gold?"</li>
+<li>"This rule is hitting PQL size limits — can you shorten it?"</li>
+</ul>
+<p>This capability aims to give marketers a centralized way to understand and test decisioning logic before it goes live, without needing to read or write PQL directly.</p>
+<p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md#rules-ranking">detailed documentation</a>.</p>
+<p>Availability date: September 18, 2026</p>
 </td>
 </tr>
 </tbody>
