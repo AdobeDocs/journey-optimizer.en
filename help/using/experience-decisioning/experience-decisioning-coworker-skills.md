@@ -32,7 +32,7 @@ Learn more:
 
 Decisioning Explainer answers, in natural language, why a specific offer was or wasn't shown to a given profile — or, more broadly, why a segment of profiles isn't seeing an offer. It walks the full decisioning stack for the requested profile (or segment) and time window: which offers were eligible, which eligibility rule included or excluded each one, whether frequency or fatigue capping suppressed the offer, the final ranking scores and which strategy or AI model produced them, and which candidate pool (item collection) the profile was evaluated against.
 
-This addresses a common challenge for marketers: explaining why one offer ranked above another, or why a specific offer decision happened the way it did.
+This addresses a common challenge for marketers: explaining why one offer ranked above another, or why a specific offer decision happened the way it did. Decisioning Explainer is read-only — it explains decisions but does not modify rules, ranking formulas, or selection strategies.
 
 ### Key use cases
 
@@ -69,23 +69,6 @@ This addresses a common challenge for marketers: explaining why one offer ranked
    * "Which offers is this segment actually receiving?"
    * "Why isn't my loyalty segment seeing this offer?"
 
-### In scope
-
-Decisioning Explainer can currently answer questions about:
-
-* Offer eligibility, and the eligibility rule that included or excluded a candidate offer.
-* Ranking outcomes, including scores and the selection strategy or AI model that produced them.
-* Frequency and fatigue capping suppression.
-* The candidate pool (item collection) a profile was evaluated against.
-* Aggregated explanations across a segment, rather than a single profile.
-
-### Out of scope
-
-The following functionalities are currently not supported:
-
-* Explaining decisions for channels or activities outside of Decisioning.
-* Modifying rules, ranking formulas, or selection strategies — Decisioning Explainer is read-only.
-
 ### Prompting best practices
 
 * **Reference IDs when known**: Provide the profile ID, offer name, or segment name to get a precise trace rather than a general answer.
@@ -99,7 +82,7 @@ The following functionalities are currently not supported:
 >
 >Rules & Ranking is available for all customers who have access to Coworker and Decisioning.
 
-Rules & Ranking gives marketers AI-powered assistance for creating, understanding, and testing decisioning logic, without needing to write or manually validate PQL syntax. It covers four core capabilities: natural language rule creation, plain-English rule and ranking formula explanation, simulation against test profiles, and PQL optimization.
+Rules & Ranking gives marketers AI-powered assistance for creating, understanding, and testing decisioning logic, without needing to write or manually validate PQL syntax. It covers four core capabilities: natural language rule creation, plain-English rule and ranking formula explanation, simulation against up to 3 test profiles, and PQL optimization. It's scoped to eligibility rules and ranking formulas — it doesn't create or edit selection strategies or decision policies.
 
 ### Key use cases
 
@@ -148,22 +131,6 @@ Rules & Ranking gives marketers AI-powered assistance for creating, understandin
    Sample prompts:
    * "Optimize this PQL rule for me."
    * "This rule is hitting PQL size limits — can you shorten it?"
-
-### In scope
-
-Rules & Ranking can currently:
-
-* Create a new eligibility rule from a plain-language description, or edit an existing one.
-* Explain an existing eligibility rule or ranking formula in plain English.
-* Simulate an eligibility rule or ranking formula against up to 3 test profiles, manually entered or AI-generated.
-* Rewrite a rule or formula to be more concise and fit within PQL size limits, while preserving its logic and outcome.
-
-### Out of scope
-
-The following functionalities are currently not supported:
-
-* Simulating against more than 3 test profiles at a time.
-* Creating or editing selection strategies or decision policies — Rules & Ranking is scoped to eligibility rules and ranking formulas.
 
 ### Prompting best practices
 
