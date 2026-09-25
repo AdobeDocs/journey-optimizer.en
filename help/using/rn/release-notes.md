@@ -652,8 +652,6 @@ The following improvement is coming to onboarding in this release.
 
 The following capability is coming to reporting in this release.
 
-+++ Coming soon — **Information below is subject to change.**
-
 <table>
 <thead>
 <tr>
@@ -672,12 +670,12 @@ The following capability is coming to reporting in this release.
 <li><strong>AJO Inbound Proposition Events Throughput by Channel</strong> — proposition events throughput broken down by inbound channel (CBE, in-app, content cards).</li>
 <li><strong>AJO Inbound Proposition Events Throughput by Event Type</strong> — proposition events throughput broken down by event type (dismissed, suppressed, displayed, triggered, interacted, sent).</li>
 </ul>
+<p>For more information, refer to the <a href="../data/monitoring.md">detailed documentation</a>.</p>
+<p>Availability date: September 24, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
-
-+++
 
 ### Integrations {#sep-26-integrations}
 
