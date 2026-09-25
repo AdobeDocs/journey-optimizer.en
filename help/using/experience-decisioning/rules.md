@@ -51,6 +51,10 @@ In [!DNL Journey Optimizer], you can create two types of reusable rules:
 * [Decision rules](#decision-rules)
 * [Targeting rules](#targeting-rules)
 
+>[!TIP]
+>
+>You can also create, explain, simulate, and optimize rules conversationally using the **Rules & Ranking** skill in [Coworker for Decisioning](experience-decisioning-coworker-skills.md#rules-ranking).
+
 ### Decision rules {#decision-rules}
 
 Decision rules allow you to define the audience for decision items by applying constraints, either directly at the decision item level, or within a specific selection strategy. This enables you to precisely control which items should be presented to whom.

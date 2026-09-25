@@ -163,13 +163,6 @@ To access dark mode in the Email Designer and get a preview of the default dark 
 
 1. From the Email Designer home page, select the **[!UICONTROL Design from scratch]** option. [Learn more](content-from-scratch.md)
 
-<!--
-Should work with templates and themes, NOT for LP and fragments - but TBC with eng.
-    >[!NOTE]
-    >
-    >Currently you may not be able to switch to dark mode if you select an [email template](use-email-templates.md) or if you apply a [theme](apply-email-themes.md).
--->
-
 1. Add [structures](content-from-scratch.md) and [content components](content-components.md) to your content.
 
 1. On top right of the central canvas, switch the toggle to **[!UICONTROL Dark mode]**.
@@ -246,6 +239,10 @@ To define custom dark mode settings, follow the steps below.
     >[!WARNING]
     >
     >While simulation closely approximates how emails will appear in dark mode, actual rendering may differ due to variations in email service providers or device-level settings.
+
+### Use dark mode with themes {#dark-mode-themes}
+
+If you use a [theme](apply-email-themes.md) with your email or template content, you can also define an independent dark mode version of each color variant, directly at the theme level. [Learn how](apply-email-themes.md#create-and-edit-themes)
 
 ## Best practices {#best-practices}
 
