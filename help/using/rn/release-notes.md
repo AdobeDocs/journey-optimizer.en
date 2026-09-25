@@ -137,6 +137,12 @@ The following capability is coming to content management in this release.
 
   Availability date: September 1, 2026
 
++++ Coming soon — **Information below is subject to change.**
+
+* **URL validation in Simulate content** - When you preview your content, Journey Optimizer now automatically checks the web links it contains and flags broken, insecure, or unreachable URLs before you send. This capability is available in Limited Availability for a set of customers.
+
++++
+
 ### Loyalty {#sep-26-loyalty}
 
 <table>
@@ -539,8 +545,6 @@ The following capabilities and improvements are coming to the Email channel in t
 </table>
 
 * **Suppression list override at email action level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model.
-
-* **URL syntax validation in email authoring** - Journey Optimizer now validates URLs earlier in the email authoring flow and surfaces clearer guidance when malformed syntax is detected. This helps authors catch issues before finalization, reduce publishing errors, and improve delivery confidence.
 
 +++
 
