@@ -730,14 +730,7 @@ The following capabilities and improvements are coming to decisioning in this re
 <tbody>
 <tr>
 <td>
-<p>A new <strong>Decisioning Explainer</strong> skill in CX Coworker lets you ask, in natural language, why a specific offer was or wasn't shown to a profile — or, more broadly, why a segment of profiles isn't seeing an offer. Coworker walks through the full decisioning stack for the requested profile (or segment) and time window: which offers were eligible, which eligibility rule included or excluded each one, whether frequency or fatigue capping suppressed the offer, the final ranking scores and which strategy or AI model produced them, and which candidate pool the profile was evaluated against.</p>
-<p>For example, ask Coworker:</p>
-<ul>
-<li>"Why did profile 12345 see Offer X on May 15th?"</li>
-<li>"Why has Offer Y stopped showing to returning customers in the last 7 days?"</li>
-<li>"What factors most influenced the ranking outcome?"</li>
-</ul>
-<p>This capability aims to increase marketer confidence and self-sufficiency when configuring offer logic, and to reduce misconfigurations such as redundant rules, overly strict eligibility, or stale formulas.</p>
+<p>A new <strong>Decisioning Explainer</strong> skill in CX Coworker lets you ask, in natural language, why a specific offer was or wasn't shown to a profile or segment, tracing eligibility, capping, ranking, and the candidate pool involved in the decision.</p>
 <p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md">detailed documentation</a>.</p>
 <p>Availability date: September 16, 2026</p>
 </td>
@@ -754,15 +747,7 @@ The following capabilities and improvements are coming to decisioning in this re
 <tbody>
 <tr>
 <td>
-<p>A new <strong>Rules &amp; Ranking</strong> skill in CX Coworker gives marketers AI-powered assistance for creating, understanding, and testing decisioning logic, without needing to write or manually validate PQL syntax. It covers four capabilities: turning a plain-language description into a new eligibility rule or an edit to an existing one, explaining what an existing rule or ranking formula does in plain English, simulating a rule or formula against test profiles, and rewriting a rule or formula more concisely to fit PQL size limits without changing its logic.</p>
-<p>For example, ask Coworker:</p>
-<ul>
-<li>"Create an eligibility rule targeting loyalty members in tier 2 or above."</li>
-<li>"Can you explain this rule to me in natural language?"</li>
-<li>"Does this rule pass for a profile where loyalty_tier = gold?"</li>
-<li>"This rule is hitting PQL size limits — can you shorten it?"</li>
-</ul>
-<p>This capability aims to give marketers a centralized way to understand and test decisioning logic before it goes live, without needing to read or write PQL directly.</p>
+<p>A new <strong>Rules &amp; Ranking</strong> skill in CX Coworker lets you create, explain, simulate, and optimize eligibility rules and ranking formulas using natural language, without writing or validating PQL syntax by hand.</p>
 <p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md#rules-ranking">detailed documentation</a>.</p>
 <p>Availability date: September 16, 2026</p>
 </td>
