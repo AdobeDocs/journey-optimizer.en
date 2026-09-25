@@ -21,7 +21,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover the CX Enterprise Coworker skills available for journeys in Adobe Journey Optimizer — creating journeys from natural language, generating channel content, and analyzing journey performance — with detailed guidance, example prompts, and best practices for each skill.
+**On this page:** Discover the CX Enterprise Coworker skills available for journeys in Adobe Journey Optimizer — creating journeys from natural language, generating channel content, and analyzing journey performance — with detailed guidance, example prompts, and best practices for each skill. 
 
 Learn more:
 
@@ -335,5 +335,43 @@ To maximize the effectiveness of Journey Analyze, follow these best practices:
 * **Define Clear Objectives**: Before analyzing journeys, establish clear goals (e.g., improving retention, increasing conversions).
 * **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 * **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
+
+## Journey Simulation {#journey-simulation}
+
+Journey Simulation skill brings AI-driven Quick Simulation into the chat interface, letting users validate a journey's logic conversationally. Through Coworker, users can generate simulated test data, run and manage a simulation, and review the results.
+
+### Key use cases
+
+1. **Generate simulated test data**
+
+   * Generate the minimum simulated users needed to exercise the journey's branches.
+   * Generate event data for event-triggered journeys, so each branch is triggered.
+
+1. **Run and manage simulations**
+
+   * Start a simulation run.
+   * Reset a simulation run.
+   * Check the status of a simulation run.
+   * List the simulated users included in a run.
+   * Retrieve run logs.
+
+1. **Review simulation results**
+
+   * Return detailed results, including step-by-step path traversal.
+   * Return branch outcomes for the simulated run.
+
+### Limitations
+
+This feature currently only supports the Quick Simulation flow, and does not fully replace the Journey Optimizer manual simulation experience. 
+
+Use Quick Simulation for a fast, automated sanity check of a journey's logic. For granular control over simulated users and scenarios, use the [manual simulation experience in Journey Optimizer](simulate-journey-gs.md).
+
+As part of this Quick Simulation experience, users cannot:
+
+* Choose an existing saved simulated user for a run.
+* Edit a simulated user before rerunning a simulation.
+* Create, browse, update, or delete persistent simulated users through chat.
+* Target a specific path or custom test case.
+
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-journeys-coworker-skills.md}}
