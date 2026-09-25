@@ -931,6 +931,7 @@ nudge: yes
 + Data management {#data-management}
   + [Data management](/help/rp_landing_pages/data-management-landing-page.md)
   + [Get started with data management](using/data/gs-data.md)
+  + [Monitor inbound data with Edge](using/data/monitoring.md)
   + [Work with schemas](using/data/get-started-schemas.md)
   + Journey Optimizer datasets {#datasets}
     + [Journey Optimizer datasets](/help/rp_landing_pages/datasets-landing-page.md)

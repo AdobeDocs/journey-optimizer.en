@@ -137,6 +137,12 @@ The following capability is coming to content management in this release.
 
   Availability date: September 1, 2026
 
++++ Coming soon — **Information below is subject to change.**
+
+* **URL validation in Simulate content** - When you preview your content, Journey Optimizer now automatically checks the web links it contains and flags broken, insecure, or unreachable URLs before you send. This capability is available in Limited Availability for a set of customers.
+
++++
+
 ### Loyalty {#sep-26-loyalty}
 
 <table>
@@ -390,6 +396,10 @@ The following capability is coming to content management in this release.
 
 The following capabilities and improvements are coming to channels in this release.
 
+* **Increased subdomain delegation limit** - Depending on your license contract, you can now delegate up to 3000 subdomains, previously capped at 100. This capability is available in Limited Availability for a set of customers. [Learn more](../configuration/delegate-subdomain.md#guardrails)
+
+  Availability date: September 25, 2026
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -540,8 +550,6 @@ The following capabilities and improvements are coming to the Email channel in t
 
 * **Suppression list override at email action level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model.
 
-* **URL syntax validation in email authoring** - Journey Optimizer now validates URLs earlier in the email authoring flow and surfaces clearer guidance when malformed syntax is detected. This helps authors catch issues before finalization, reduce publishing errors, and improve delivery confidence.
-
 +++
 
 ### Email Designer {#sep-26-email-designer}
@@ -652,8 +660,6 @@ The following improvement is coming to onboarding in this release.
 
 The following capability is coming to reporting in this release.
 
-+++ Coming soon — **Information below is subject to change.**
-
 <table>
 <thead>
 <tr>
@@ -672,12 +678,12 @@ The following capability is coming to reporting in this release.
 <li><strong>AJO Inbound Proposition Events Throughput by Channel</strong> — proposition events throughput broken down by inbound channel (CBE, in-app, content cards).</li>
 <li><strong>AJO Inbound Proposition Events Throughput by Event Type</strong> — proposition events throughput broken down by event type (dismissed, suppressed, displayed, triggered, interacted, sent).</li>
 </ul>
+<p>For more information, refer to the <a href="../data/monitoring.md">detailed documentation</a>.</p>
+<p>Availability date: September 24, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
-
-+++
 
 ### Integrations {#sep-26-integrations}
 
@@ -731,7 +737,7 @@ The following capabilities and improvements are coming to decisioning in this re
 <tr>
 <td>
 <p>A new <strong>Decisioning Explainer</strong> skill in CX Coworker lets you ask, in natural language, why a specific offer was or wasn't shown to a profile or segment, tracing eligibility, capping, ranking, and the candidate pool involved in the decision.</p>
-<p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md#decisioning-explainer">detailed documentation</a>.</p>
 <p>Availability date: September 16, 2026</p>
 </td>
 </tr>
