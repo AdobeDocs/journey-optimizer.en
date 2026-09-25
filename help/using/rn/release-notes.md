@@ -139,7 +139,7 @@ The following capability is coming to content management in this release.
 
 +++ Coming soon — **Information below is subject to change.**
 
-* **URL validation in Simulate content** - When you preview your content, Journey Optimizer now automatically checks the web links it contains and flags broken, insecure, or unreachable URLs before you send. This capability is available in Limited Availability for a set of customers. [Learn more](../content-management/url-validation.md)
+* **URL validation in Simulate content** - When you preview your content, Journey Optimizer now automatically checks the web links it contains and flags broken, insecure, or unreachable URLs before you send. This capability is available in Limited Availability for a set of customers.
 
 +++
 
