@@ -1,6 +1,7 @@
 ---
 title: Validate URLs in your content
 description: Learn how URL validation checks the web links in your message content before you send.
+badge: label="Limited availability" type="Informative"
 feature: Preview
 role: User
 level: Beginner
@@ -21,19 +22,15 @@ subfeature_v2:
 
 >[!ENDSHADEBOX]
 
+>[!AVAILABILITY]
+>
+>This capability is released in Limited Availability (LA) for a set of customers. Contact your Adobe representative to gain access.
+
 When you preview your message content, [!DNL Journey Optimizer] automatically checks the web links it contains. Validation runs after your personalization is resolved, so real URLs are checked rather than unresolved template tokens. This helps you catch broken or inaccessible links before your message reaches your audience.
 
 ## Where to find it {#access}
 
-URL validation runs automatically from the **[!UICONTROL Simulate content]** screen. It's available for channel actions in journeys and campaigns, across all channels.
-
-### [!BADGE Limited Availability]{type=Informative} Content templates {#content-templates}
-
-URL validation is also available when you preview [content templates](content-templates.md).
-
->[!AVAILABILITY]
->
->URL validation for content templates is released in Limited Availability (LA). Contact your Adobe representative to gain access.
+URL validation runs automatically from the **[!UICONTROL Simulate content]** screen, for channel actions in journeys and campaigns across all channels, and when you preview [content templates](content-templates.md).
 
 ## How it works {#how-it-works}
 
