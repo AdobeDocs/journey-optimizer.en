@@ -63,6 +63,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Loyalty data and datasets** and **Get started with sources** pages have been updated to include LAVA as a supported loyalty and rewards connector, alongside Talon.One, Capillary, and Kobie. [Read more](../loyalty-challenges/loyalty-data-and-datasets.md)
 
+* The **Delegate a subdomain** and **Configure web subdomains** pages have been updated to reflect that, depending on your license contract, you may now be able to delegate up to 3000 subdomains, up from the previous cap of 100. [Read more](../configuration/delegate-subdomain.md#guardrails)
+
 ## August 2026 {#august-2026}
 
 * The **Add visual fragments to your emails** page now clarifies that a fragment with dynamic content and an empty default state appears blank in the Email Designer — simulate with a matching profile to preview the content. [Read more](../email/use-visual-fragments.md#fragment-dynamic-content)

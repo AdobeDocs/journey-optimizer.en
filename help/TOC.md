@@ -333,6 +333,7 @@ nudge: yes
         + [Manage dark mode content](using/email/dark-mode.md)
       + [Create accessible content](using/email/accessible-content.md)
       + [Content check](using/email/content-check.md)
+      + [Collaborate on email content](using/email/email-collaboration.md)
     + Configure email channel {#configure-email}
       + {hide-from-toc} [Configure email channel](/help/rp_landing_pages/configure-email-landing-page.md)
       + [Get started with email configuration](using/email/get-started-email-config.md)
@@ -932,7 +933,6 @@ nudge: yes
 + Data management {#data-management}
   + [Data management](/help/rp_landing_pages/data-management-landing-page.md)
   + [Get started with data management](using/data/gs-data.md)
-  + [Monitor inbound data with Edge](using/data/monitoring.md)
   + [Work with schemas](using/data/get-started-schemas.md)
   + Journey Optimizer datasets {#datasets}
     + [Journey Optimizer datasets](/help/rp_landing_pages/datasets-landing-page.md)
@@ -943,6 +943,9 @@ nudge: yes
     + [Built-in schemas >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
   + [Use Adobe Experience Platform data](using/data/lookup-aep-data.md)
   + [Queries](using/data/get-started-queries.md)
+  + Monitoring {#monitoring}
+    + [Monitor inbound data with Edge](using/data/monitoring.md)
+    + [Monitor data ingestion](using/data/monitor-data-ingestion.md)
 + Channel configuration {#configuration}
   + [Channel configuration](/help/rp_landing_pages/configuration-landing-page.md)
   + [Get started with channels configuration](using/configuration/get-started-configuration.md)
