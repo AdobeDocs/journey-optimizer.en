@@ -481,6 +481,27 @@ The following capabilities and improvements are coming to channels in this relea
 <table>
 <thead>
 <tr>
+<th><strong>Orchestrated Campaigns APIs</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>New APIs are now available to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines.</p>
+<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaigns" target="_blank">API reference on Adobe Developer</a>.</p>
+<p>Availability date: September 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage. [Learn more](../data/monitor-data-ingestion.md#co)
+
+  Availability date: September 28, 2026
+
+<table>
+<thead>
+<tr>
 <th><strong>Alerting for orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
@@ -502,14 +523,6 @@ The following capabilities and improvements are coming to channels in this relea
 * **Direct joins on collections in Orchestrated Campaigns** - When adding an attribute from a related collection, you can now choose between three join modes — a new default that warns you about potential performance impact from cartesian products, plus the existing Aggregate and Advanced modes — making it easier to understand the tradeoffs of your query before you build it. [Learn more](../orchestrated/build-query.md#links)
 
   Availability date: September 22, 2026
-
-* **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage. [Learn more](../data/monitor-data-ingestion.md#co)
-
-  Availability date: September 28, 2026
-
-* **Orchestrated Campaigns APIs** - New APIs are now available to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaigns){target="_blank"}
-
-  Availability date: September 28, 2026
 
 +++ Coming soon — **Information below is subject to change.**
 
