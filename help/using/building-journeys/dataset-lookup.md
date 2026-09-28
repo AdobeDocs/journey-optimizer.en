@@ -132,6 +132,8 @@ To configure the **[!UICONTROL Dataset lookup]** activity, follow these steps:
    >1. **Configure the key:** In the Dataset lookup activity's **[!UICONTROL Lookup key(s)]** expression editor, switch to **[!UICONTROL Advanced mode]**, define the key, and save the activity. This makes the lookup context available to downstream activities.
    >
    >1. **Use the result:** In the condition's expression editor, switch to **[!UICONTROL Advanced mode]** and reference the lookup output, for example: `@datasetLookup{MyDatasetLookUpActivity1.entities}`. Replace `MyDatasetLookUpActivity1` with the name of your Dataset lookup activity.
+   >
+   >If the lookup output is not available downstream, confirm that the key is defined in **[!UICONTROL Advanced mode]** and that the Dataset lookup activity is saved.
 
    +++Example
    
