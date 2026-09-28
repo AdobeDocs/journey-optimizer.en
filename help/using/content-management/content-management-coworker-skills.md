@@ -136,7 +136,7 @@ The following skills are available under the **Channel Content** plugin:
 
    >[!BEGINSHADEBOX "Prompt samples"]
 
-   "Run full content authoring for our Fall Sale email campaign from this brief, then review and save the final HTML."
+      "Run full content authoring for our Fall Sale email campaign from this brief, then review and save the final HTML."
 
    >[!ENDSHADEBOX]
    
