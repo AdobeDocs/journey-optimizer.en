@@ -17,13 +17,9 @@ keywords: email, collaboration, comments, review, pulse notifications
 >title="Collaborate on your emails"
 >abstract="Add comments, tag reviewers, and track feedback directly in the Email Designer, without leaving the authoring experience."
 
-The Email Designer includes collaboration tools for commenting and resolution so that marketing teams can seamlessly review, discuss, and finalize email content directly within [!DNL Journey Optimizer]. Instead of sharing drafts over external tools (like chat, email threads, or spreadsheets), users can comment, suggest edits, and resolve feedback within the Email Designer. Use these tools to streamline your workflow, reduce errors, and ensure that stakeholders are aligned before launching your email.
+The Email Designer includes commenting and resolution tools so your team can review, discuss, and finalize email content without leaving [!DNL Journey Optimizer]. Rather than passing drafts back and forth over chat, email threads, or spreadsheets, reviewers and authors can comment, suggest edits, and resolve feedback right on the email itself.
 
-* **Centralized feedback** - Collect and track all feedback in one place.
-* **Faster reviews** - Collaborators can review the email copy and assets within the authoring environment.
-* **Improved accuracy** - Reduces the risk of miscommunication by keeping all edits tied to the email itself.
-* **Transparency** - All comments and resolutions remain logged, making it clear what changes were suggested and implemented.
-* **Collaboration in context** - Review email body copy, images, and call-to-action (CTA) elements within the layout.
+This keeps all the feedback in one place, speeds up reviews since everyone is working in the same authoring environment, and cuts down on the kind of miscommunication that comes from tracking edits in a separate document. Every comment and resolution stays logged against the email, so there's always a clear record of what was suggested and what actually changed.
 
 <!--Check if like some other collaboration workflows, specific permission is required to use the collaboration tools in the Email Designer.-->
 
@@ -35,21 +31,21 @@ Click the **[!UICONTROL Collaboration]** icon in the right navigation.
 
 ![Collaboration icon in the Email Designer right navigation](assets/email_designer_collaboration_icon.png){width="90%"}
 
-## Collaboration workflow {#collaboration-workflow}
+### Collaboration workflow {#collaboration-workflow}
 
-You can use the collaboration tools to follow a standard content workflow:
+A typical review cycle looks like this:
 
-1. **Invite** your collaborators and reviewers.
-1. **Reviewers** add comments.
-1. Read comments, **add replies** to discuss feedback, and make needed edits.
-1. **Reviewers or authors** resolve comments.
+1. [Invite](#invite-collaborators) your collaborators and reviewers.
+1. Reviewers add comments.
+1. Read the comments, [reply](#reply-to-comment) to discuss the feedback, and make the edits needed.
+1. Reviewers or authors [resolve](#resolve-comments) the comments once they're addressed.
 
 ### Best practices for using the collaboration tools {#best-practices}
 
-* Use **@** tagging so that feedback reaches the right team member quickly.
-* Group related feedback into a single comment thread instead of multiple scattered notes.
-* Always resolve comments as soon as they are addressed to maintain a clean workflow.
-* Save a final approved version for compliance/audit purposes.
+* Tag people with **@** so feedback reaches the right person instead of getting buried in a general comment.
+* Keep related feedback in a single thread rather than spreading it across several separate comments.
+* Resolve comments as you address them - it keeps the panel readable for everyone else on the team.
+* Once everything is resolved, save a final approved version in case you need it later for compliance or an audit.
 
 ## Invite collaborators and reviewers {#invite-collaborators}
 
@@ -57,16 +53,18 @@ You can invite collaborators and reviewers to provide feedback on your email con
 
 1. Select the body of the email to enter a general comment about the email content.
 1. Click the **[!UICONTROL Collaboration]** icon in the right navigation.
-1. At the top of the right panel, enter your invitation text for users to collaborate and provide feedback.
+1. At the top of the right panel, start entering your invitation text for users to collaborate and provide feedback.
 1. Use the **@** symbol to address and notify users. These users receive email and in-product [!DNL Pulse] notifications.
 
    As you enter the first few letters of the name after the symbol, a popup list displays matching user names. You can enter more letters in the name to improve the results.
 
    ![Popup list displaying matching user names when tagging with @](assets/email_designer_collaboration_addresses.png){width="90%"}
 
-1. Select the name to add for notification. Add as many collaborators or reviewers as you want to include in the invitation.
+1. Select the name to add for notification and complete your invitation message.
 
-   ![Invitation panel with tagged reviewer](assets/email_designer_collaboration_comment.png){width="90%"}
+   ![Invitation panel with tagged reviewer](assets/email_designer_collaboration_comment.png){width="80%"}
+
+   Add as many collaborators or reviewers as you want to include in the invitation.
 
 1. Click **[!UICONTROL Submit]**.
 
@@ -74,12 +72,15 @@ Each new comment starts a thread where collaborators can use **[!UICONTROL Reply
 
 ### Component comments {#component-comments}
 
+In addition to general comments on the email body, you can add a comment directly on a specific structure or content component.
+
 1. Select a structure or content component.
 1. In the toolbar, click the **[!UICONTROL Collaboration]** tool.
 
    ![Collaboration tool icon in the component toolbar](assets/email_designer_collaboration_component_comment.png){width="80%"}
 
 1. Enter your comment in the text field.
+1. Use the **@** symbol to tag and notify collaborators or reviewers, as needed.
 1. Click **[!UICONTROL Submit]**.
 
 Collaborators can click the numbered pin icon on the email canvas to view the comment.
@@ -88,15 +89,25 @@ Collaborators can click the numbered pin icon on the email canvas to view the co
 
 For each comment, you can use the **[!UICONTROL Reply]** function to continue a discussion or answer a question.
 
-Click **[!UICONTROL Reply]** at the bottom of the comment and enter the text for your reply. To include a quote of the current comment in your reply, click the **[!UICONTROL More menu]** (…) icon and choose **[!UICONTROL Quote reply]**.
+1. Click **[!UICONTROL Reply]** at the bottom of the comment.
 
-![More menu options for reply and quote reply](assets/email_designer_collaboration_actions.png){width="100%"}
+1. Enter the text for your reply.
+
+1. To include a quote of the current comment in your reply, click the **(…)** icon and choose **[!UICONTROL Quote reply]**.
+
+![(…) icon options for reply and quote reply](assets/email_designer_collaboration_actions.png){width="100%"}
 
 ## Resolve comments {#resolve-comments}
 
-As an author or designer, assess the feedback from reviewers and determine what changes you want to make. When changes are complete and the request is satisfied, click the **[!UICONTROL More menu]** (…) icon and choose **[!UICONTROL Resolve]**.
+As an author or designer, assess the feedback from reviewers and determine what changes you want to make.
 
-![More menu options for reply and quote reply](assets/email_designer_collaboration_resolve.png){width="100%"}
+1. When changes are complete and the request is satisfied, click the **(…)** icon.
+
+1. Select **[!UICONTROL Resolve]** from the contextual menu.
+
+1. Click **[!UICONTROL Resolve]** to confirm the action.
+
+   ![(…) icon options for resolving a comment](assets/email_designer_collaboration_resolve.png){width="100%"}
 
 Once resolved, the comment/thread is hidden from the main view but can be accessed through the filter options.
 
@@ -106,20 +117,22 @@ Manage the comments and threads to assess the status of your collaboration effor
 
 ### Place a comment {#place-comment}
 
-If a comment is not associated with an element on the email canvas, you can pin the comment to an element as needed. Click the **[!UICONTROL More menu]** (…) icon and choose **[!UICONTROL Place the comment]**. Then, select the design component on the canvas.
+If a comment is not associated with an element on the email canvas, you can pin the comment to an element as needed. Click the **(…)** icon and choose **[!UICONTROL Place the comment]**. Then, select the design component on the canvas.
 
-![More menu option to place a comment on a design component](assets/email_designer_collaboration_place_comment.png){width="60%"}
+![(…) icon option to place a comment on a design component](assets/email_designer_collaboration_place_comment.png){width="60%"}
 
 ### Remove or delete comments {#remove-delete-comments}
 
-You can clean up your comments log by removing and deleting them. Click the **[!UICONTROL More menu]** (…) icon and choose **[!UICONTROL Remove Comment]** or **[!UICONTROL Delete]**.
+You can clean up your comments log by removing and deleting them. Click the **(…)** icon and choose **[!UICONTROL Remove Comment]** or **[!UICONTROL Delete]**.
 
 * When you remove a comment, the action decouples that comment from the design element (selected when the comment was created). The comment is still part of the comment record for the email.
 * When you delete a comment, the action permanently deletes it from the record.
 
 ### Resolved comments {#resolved-comments}
 
-By default, resolved comments are hidden in the **[!UICONTROL Collaboration]** panel. You can display resolved comments at any time by clearing the filter. Click the **[!UICONTROL Filter]** icon and clear the **[!UICONTROL Hide resolved comments]** checkbox.
+By default, resolved comments are hidden in the **[!UICONTROL Collaboration]** panel.
+
+You can display resolved comments at any time by clearing the filter. Click the **[!UICONTROL Filter]** icon and clear the **[!UICONTROL Hide resolved comments]** checkbox.
 
 ![Filter option to display resolved comments](assets/email_designer_collaboration_filter.png){width="60%"}
 
