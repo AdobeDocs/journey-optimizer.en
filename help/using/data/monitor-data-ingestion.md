@@ -37,11 +37,10 @@ Review the following areas:
 * Ingestion metrics and trends, including records ingested and records failed.
 * Dataflow- and dataset-level details, including records received, ingested, updated, deleted, skipped, and failed.
 
-
 Use the summary cards to compare the volume received with the volume processed at each stage. A difference between the stages does not necessarily indicate a failure. Review the updated, deleted, skipped, and failed counts to understand how the total was processed.
 
 When a dataflow shows failures, open the related details to identify the affected source or dataset. Use the processing rate and failed dataflow run count to determine whether the issue is isolated or part of a broader ingestion problem.
 
-➡️ For complete monitoring guidance, refer to the [Monitoring dashboard](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor) documentation.
+➡️ For complete monitoring guidance, refer to the [Monitor Orchestrated Campaign ingestion](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor-orchestrated-campaign) documentation.
 
 
