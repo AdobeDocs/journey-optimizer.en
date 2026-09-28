@@ -16,7 +16,7 @@ For complete understanding, this information should be combined with the documen
 * Sign in and navigate the four main interface areas
 * Use universal search, help and support, notifications, and language preferences in the top bar
 * Configure in-product and email notifications
-* Access recents and resources from the home page
+* Start a conversation with CX Enterprise Coworker from the home-page prompt, then access recents and resources
 * Find capabilities organized in the left navigation
 * Use the home-page prompt to start a conversation with CX Enterprise Coworker
 
@@ -25,7 +25,7 @@ For complete understanding, this information should be combined with the documen
 * **Universal search**: A top bar search that finds journeys, campaigns, assets, and other objects across all areas of Journey Optimizer *(product-specific)*
 * **Contextual help**: Help that displays guidance relevant to the screen you are viewing and links directly to the corresponding documentation *(product-specific)*
 * **Use Case Playbooks**: Pre-built workflows for common marketing scenarios, listed under Content Management *(product-specific)*
-* **CX Enterprise Coworker**: The in-product conversational experience previously known as AI Assistant; enter a business goal in the home-page prompt to start a conversation *(product-specific)*
+* **CX Enterprise Coworker**: The in-product conversational experience also called Coworker; enter a business goal in the home-page prompt to start a conversation *(product-specific)*
 
 **Guardrails:**
 
@@ -38,17 +38,17 @@ For complete understanding, this information should be combined with the documen
 * Canonical name: Navigate the interface
 * The four main areas: Left navigation, Top bar, Home page, and Main workspace
 * Notification types: Alerts, Approvals, and New releases
-* CX Enterprise Coworker was previously known as AI Assistant.
+* CX Enterprise Coworker is also called Coworker.
 
 **FAQ:**
 
 * **Q: What are the four main areas of the interface?** — Left navigation, top bar, home page, and main workspace.
-* **Q: What does the home page provide?** — Recents and links to documentation, tutorials, and support.
 * **Q: How do I start a conversation with CX Enterprise Coworker?** — Enter a business goal in the home-page prompt, “What would you like to accomplish today?”
-* **Q: What was CX Enterprise Coworker previously called?** — AI Assistant.
+* **Q: What is CX Enterprise Coworker also called?** — Coworker.
+* **Q: What else does the home page provide?** — Recents and links to documentation, tutorials, and support.
 * **Q: Why do I not see certain menu items or capabilities?** — Available components and capabilities depend on your permissions and licensing package; available menu items depend on your permissions and license.
 * **Q: Which languages does the interface support?** — English, French, German, Italian, Spanish, Portuguese (Brazilian), Japanese, Korean, Traditional Chinese, and Simplified Chinese. You can optionally select a second language as fallback.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: c66f4d62 -->
+<!-- ai-section-version: 1 | source-hash: 5bd5ac50 -->
