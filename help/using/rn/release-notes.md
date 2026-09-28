@@ -559,7 +559,24 @@ The following capabilities and improvements are coming to the Email Designer in 
 <table>
 <thead>
 <tr>
-<th><strong>New table component in the Email Designer</strong><br/></th>
+<th><strong>Collaborate on email content</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Email Designer now includes built-in <strong>collaboration tools</strong> for commenting and resolution, so marketing teams can review, discuss, and finalize email content directly within Journey Optimizer instead of sharing drafts over external tools like chat, email threads, or spreadsheets. Invite collaborators and reviewers, add general or component-specific comments, and reply to, resolve, and manage comment threads — all without leaving the Email Designer.</p>
+<p>For more information, refer to the <a href="../email/email-collaboration.md">detailed documentation</a>.</p>
+<p>Availability date: September 25, 2024.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>New Table component</strong><br/></th>
 </tr>
 </thead>
 <tbody>

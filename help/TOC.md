@@ -332,6 +332,7 @@ nudge: yes
         + [Manage dark mode content](using/email/dark-mode.md)
       + [Create accessible content](using/email/accessible-content.md)
       + [Content check](using/email/content-check.md)
+      + [Collaborate on email content](using/email/email-collaboration.md)
     + Configure email channel {#configure-email}
       + {hide-from-toc} [Configure email channel](/help/rp_landing_pages/configure-email-landing-page.md)
       + [Get started with email configuration](using/email/get-started-email-config.md)
