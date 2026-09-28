@@ -136,6 +136,10 @@ Use the **[!UICONTROL Test mode]** method when you want to test your journey wit
 
 1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publish-journey.md).
 
+>[!NOTE]
+>
+>While in test mode, you can preview the content of every channel activity directly on the canvas, rendered for the selected test profile. [Learn how to preview content in the canvas](using-the-journey-designer.md#content-preview).
+
 ## Worked example: validate a simple journey {#test-walkthrough}
 
 The following example walks through testing a journey that starts with a unitary event, sends an email, waits 10 minutes, then sends a push notification.
