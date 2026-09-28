@@ -79,7 +79,25 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
 ### Content Management {#sep-26-content-management}
 
-The following capability is coming to content management in this release.
+The following capabilities and improvements are coming to content management in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>URL validation in Simulate content</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>When you preview your content, Journey Optimizer now automatically checks the web links it contains and flags broken, insecure, or unreachable URLs before you send.</p>
+<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p>For more information, refer to the <a href="../content-management/url-validation.md">detailed documentation</a>.</p>
+<p>Availability date: September 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -136,12 +154,6 @@ The following capability is coming to content management in this release.
 * **Additional reserved keywords in personalization syntax** - The list of reserved keywords in Profile Query Language (PQL) has been expanded to include general keywords, time units, and boolean/logical operators. If your XDM schema contains a field name that matches one of these keywords, wrap it in backticks to reference it in a personalization expression. [Learn more](../personalization/personalization-syntax.md#reserved-keywords)
 
   Availability date: September 1, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **URL validation in Simulate content** - When you preview your content, Journey Optimizer now automatically checks the web links it contains and flags broken, insecure, or unreachable URLs before you send. This capability is available in Limited Availability for a set of customers.
-
-+++
 
 ### Loyalty {#sep-26-loyalty}
 
