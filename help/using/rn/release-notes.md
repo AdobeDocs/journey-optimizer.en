@@ -210,6 +210,24 @@ The following capabilities and improvements are coming to content management in 
 <table>
 <thead>
 <tr>
+<th><strong>Content preview in the journey canvas</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Reviewing channel content required opening each activity individually, one at a time — slow and error-prone on journeys with many channel activities, especially where personalization means checking multiple treatments or variants per activity. <strong>Content preview</strong> removes that friction by surfacing a content thumbnail for every channel activity directly in the canvas, with a fullscreen modal to inspect and switch between treatments and variants.</p>
+<p>For more information, see the <a href="../building-journeys/using-the-journey-designer.md#content-preview">journey canvas content preview documentation</a>.</p>
+<p><img src="assets/do-not-localize/contentPreview.gif" alt="Content preview in the journey canvas" width="800"/></p>
+<p>Availability date: September 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Compare journey versions with Coworker</strong><br/></th>
 </tr>
 </thead>
@@ -345,22 +363,6 @@ The following capabilities and improvements are coming to content management in 
 <tr>
 <td>
 <p>A new <strong>Inbound Activity Deactivation</strong> activity in the journey canvas lets you remove a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit for more advanced cross-channel orchestration.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Content preview in the journey canvas</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Reviewing channel content today requires opening each activity individually, one at a time — slow and error-prone on journeys with many channel activities, especially where personalization means checking multiple treatments or variants per activity. <strong>Content preview</strong> removes that friction by surfacing a content thumbnail for every channel activity directly in the canvas, with a fullscreen modal to inspect and switch between treatments and variants.</p>
-<p>Target availability date: September 28, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -517,6 +519,10 @@ The following capabilities and improvements are coming to channels in this relea
 
   Availability date: September 28, 2026
 
+* **Orchestrated Campaigns APIs** - New APIs are now available to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaigns){target="_blank"}
+
+  Availability date: September 28, 2026
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -535,8 +541,6 @@ The following capabilities and improvements are coming to channels in this relea
 </table>
 
 * **LINE channel for orchestrated campaigns** - LINE is now available as a native outbound channel in orchestrated campaigns, alongside email, SMS, and push. You can build and deliver LINE messages directly from the campaign canvas, including text, stickers, images, videos, location data, and Flex Messages, supporting promotional, transactional, and ongoing engagement use cases in LINE-dominant markets such as Japan and APAC. Previously released in Limited Availability, this capability is now generally available. 
-
-* **New Orchestrated Campaigns monitoring APIs** - New **API specifications** are now available for orchestrated campaigns, allowing you to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines.
 
 +++
 

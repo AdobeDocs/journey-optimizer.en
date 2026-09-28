@@ -264,6 +264,14 @@ Select **[!UICONTROL All]** to see results aggregated across every simulated use
 
 For each activity, the log can show whether the simulated user entered or exited the step, the timestamps and branch decisions for each step, and errors that occurred during the simulation.
 
+During a simulation, you can also preview the content of every channel activity directly on the canvas. Click the **[!UICONTROL Expand all]** (eye) icon, then click a thumbnail to open the preview. [Learn how to preview content in the canvas](using-the-journey-designer.md#content-preview).
+
+The preview reflects the **[!UICONTROL Test user]** you select: with **[!UICONTROL All]** selected, it shows non-personalized content; when you select a specific test user, each channel activity that user went through is previewed with that user's personalized data.
+
+In a simulation, previewed attribute values depend on when simulated user data was last fetched relative to the **[!UICONTROL Update Profile]** activity. If the data was fetched before the activity runs, previews show pre-update values throughout. If it was fetched after the activity runs (for example, after reloading the page), previews show post-update values throughout, including in email activities before the **[!UICONTROL Update Profile]** activity. A single preview does not show pre-update values before the activity and post-update values after it.
+
+![Personalized content preview for the selected test user during a simulation](assets/journey-canvas-content-preview.png)
+
 For **Wait** activities, the log includes two duration-related values:
 
 * **Defined duration**: The duration specified on the **Wait** activity for the published journey and applied once the journey is live. The log records whether Simulation applies an override from the test settings, for example 10 seconds, rather than relying solely on the value defined on the journey.
