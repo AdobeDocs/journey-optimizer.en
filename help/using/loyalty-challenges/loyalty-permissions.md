@@ -56,7 +56,7 @@ The **Loyalty Practitioner** role is designed for business owners who manage the
 | Manage Loyalty Challenges | Create, edit, delete, publish, unpublish, and archive challenges; trigger journey generation |
 | Configure Loyalty Primary Configuration | Create and edit primary organization configuration. Deletion is not permitted |
 | View Loyalty Reward Configuration | View reward configuration, including providers, definitions, and proxies. Sensitive values are excluded |
-| View Loyalty Event Configuration | View event definitions and event transformation mappings |
+| View Loyalty Event Configuration | View event mappings and event transformation mappings |
 | View Loyalty Product Catalog | View product catalog entries and import job status |
 | Develop Loyalty Insights | View insights data and update insight cards |
 
@@ -112,7 +112,7 @@ When you create a custom role for a non-Prod sandbox, select from the permission
 | Configure Loyalty Primary Configuration | Create and edit primary organization configuration. Deletion is not permitted |
 | Manage Loyalty Advanced Configuration | Manage reward endpoints and event transformation settings, including read/write access to sensitive credential values |
 | View Loyalty Reward Configuration | View reward providers, reward definitions, and reward proxies. Sensitive values are excluded |
-| View Loyalty Event Configuration | View event definitions and event transformation mappings |
+| View Loyalty Event Configuration | View event mappings and event transformation mappings |
 | Manage Loyalty Product Catalog | View, import from CSV, and edit product catalog entries, including inclusions and exclusions; monitor import job status |
 | View Loyalty Product Catalog | View product catalog entries and import job status. Upload and edit actions are not permitted |
 | Manage Loyalty Insights | View insights, update KPI configuration, and trigger the insights pipeline |

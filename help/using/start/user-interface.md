@@ -354,10 +354,6 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >title="Enable webhooks"
 >abstract="Enable webhooks to receive real-time feedback on the execution status of your messages. Before activating this option, make sure you have configured a webhook in the **Administration** / **Channels** / **Feedback Webhook** menu."
 
->[!CONTEXTUALHELP]
->id="ajo_channels_feedback_webhook_settings_create"
->title="Feedback Webhooks"
->abstract="Feedback webhooks allows you to receive real-time feedback on the execution status of messages sent with transactional API triggered campaigns. Only one webhook configuration per Organization + sandbox combination is allowed."
 
 
 <!-- JOURNEYS - GENERATE EXPRESSIONS WITH AI -->
@@ -399,6 +395,13 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >title="Relay destination URL"
 >abstract="The HTTPS endpoint Journey Optimizer calls to relay each incoming message. Journey Optimizer sends a separate HTTP POST here per message received. This is distinct from the Auth URL under Custom Authentication, which is used only to obtain an access token, not to receive messages."
 
+<!--DOCAC-15748 Set as default webhook-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_webhook_default_webhook"
+>title="Set as default"
+>abstract="Enable this option to use a common webhook URL for processing provider feedback and inbound messages received from the provider."
+
 <!--DOCAC-15698 Implement contextual help for Inbound Activity Deactivation activity-->
 
 
@@ -406,18 +409,5 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_journey_inbound_activity_deactivation"
 >title="Inbound Activity Deactivation activity"
 >abstract="Removes a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit."
-
-<!--DOCAC-15707 Implement contextual help for Journey Properties event recovery / action timeout fields-->
-
->[!CONTEXTUALHELP]
->id="ajo_journey_event_recovery_timeout"
->title="Set event recovery timeout"
->abstract="Controls how long the journey automatically replays events impacted by a service interruption. Off by default (72-hour automatic replay); turn on to adjust the replay window from 0 to 72 hours for time-sensitive journeys."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_action_timeout"
->title="Custom Action / IDS Action timeout"
->abstract="The Custom Action / IDS Action timeout option defines an alternative path in the journey when the action times out or returns an error, so profiles continue through a fallback path rather than stopping at this step. Recommended values are between 1 and 30 seconds."
-
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-user-interface.md}}

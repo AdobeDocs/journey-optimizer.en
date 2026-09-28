@@ -23,6 +23,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
+* The `inAudience` guardrails now include the workaround for sandboxes with more than 5,000 audiences, where older audiences can be rejected during journey authoring because validation checks only the 5,000 most recently updated audiences. [Read more](../building-journeys/functions/functioninaudience.md#guardrails)
+
 * Guidance for email mirror pages has been expanded: the documentation now explains that mirror page URLs cannot be retrieved through a public API or dataset, recommends Message Export or BCC archiving for retaining sent content, and clarifies that mirror page links are inactive in proofs and simulations. [Read more](../email/message-tracking.md#mirror-page)
 
 * A new **Interactive demo** page is now available for Loyalty Challenges, linking to a self-guided, clickable demo that covers the marketer's challenge creation flow (including Bring your own data and the insights dashboards), the end customer experience, and Loyalty Challenge Management in CX Coworker. [Read more](../loyalty-challenges/loyalty-challenges-demo.md)
@@ -61,6 +63,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Loyalty data and datasets** and **Get started with sources** pages have been updated to include LAVA as a supported loyalty and rewards connector, alongside Talon.One, Capillary, and Kobie. [Read more](../loyalty-challenges/loyalty-data-and-datasets.md)
 
+* The **Delegate a subdomain** and **Configure web subdomains** pages have been updated to reflect that, depending on your license contract, you may now be able to delegate up to 3000 subdomains, up from the previous cap of 100. [Read more](../configuration/delegate-subdomain.md#guardrails)
+
 ## August 2026 {#august-2026}
 
 * The **Add visual fragments to your emails** page now clarifies that a fragment with dynamic content and an empty default state appears blank in the Email Designer — simulate with a matching profile to preview the content. [Read more](../email/use-visual-fragments.md#fragment-dynamic-content)
@@ -97,7 +101,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A tip pointing to the Experience League community article on **how to detach and rejoin nodes** in the new journey canvas has been added to the **Design your journey** page. [Read more](../building-journeys/using-the-journey-designer.md)
 
-* The **Grid** component section has been added to the **Email Designer content components** page. It lets you organize content into a structured grid of rows and columns, where each cell can contain other content components. [Read more](../email/content-components.md#grid)
+* The **Grid** component section has been added to the **Use the Email Designer content components** page. The Grid component lets you organize content into a structured grid of rows and columns, where each cell can contain other content components. [Read more](../email/content-components.md#grid)
 
 * The **Decisioning Migration API** documentation has been updated with a clarification that the target sandbox **can be the same as the source sandbox**. The migration process handles this scenario and ensures data integrity regardless of whether objects are migrated within the same sandbox or to a different one. [Read more](../experience-decisioning/decisioning-migration-api.md#target-sandbox-preparation)
 

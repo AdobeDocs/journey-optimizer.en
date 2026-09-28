@@ -123,7 +123,7 @@ To use a subdomain that is already delegated to Adobe, follow the steps below:
 >title="Generate the matching DNS record"
 >abstract="To configure a new web subdomain, you need to copy the Adobe nameserver information displayed in the Journey Optimizer interface and paste it into your domain-hosting solution to generate the matching DNS record. Once the checks are successful, the subdomain is ready to be used to publish content coming from the Adobe Experience Manager Assets library."
 
-By default, [!DNL Journey Optimizer] allows you to delegate **up to 10 subdomains** in total (covering both email and web channels). However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
+By default, [!DNL Journey Optimizer] allows you to delegate **up to 10 subdomains** in total (covering both email and web channels). However, depending on your license contract, you may be able to delegate up to 3000 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
 
 To configure a new subdomain, follow the steps below:
 
