@@ -125,6 +125,16 @@ To configure the **[!UICONTROL Dataset lookup]** activity, follow these steps:
    >
    >You must define the lookup key using **advanced mode**. If you use simple mode to set the key, the dataset lookup activity output will not be available as a context attribute in downstream activities, and the `@datasetLookup{}` syntax will fail with a "Dataset lookup not found" error in condition activities.
 
+   >[!NOTE]
+   >
+   >Configure the lookup key and use its result in separate expression editors:
+   >
+   >1. **Configure the key:** In the Dataset lookup activity's **[!UICONTROL Lookup key(s)]** expression editor, switch to **[!UICONTROL Advanced mode]**, define the key, and save the activity. This makes the lookup context available to downstream activities.
+   >
+   >1. **Use the result:** In the condition's expression editor, switch to **[!UICONTROL Advanced mode]** and reference the lookup output, for example: `@datasetLookup{MyDatasetLookUpActivity1.entities}`. Replace `MyDatasetLookUpActivity1` with the name of your Dataset lookup activity.
+   >
+   >If the lookup output is not available downstream, confirm that the key is defined in **[!UICONTROL Advanced mode]** and that the Dataset lookup activity is saved.
+
    +++Example
    
    ![Expression editor with dataset field lookup and string functions](assets/aep-data-strings.png)
