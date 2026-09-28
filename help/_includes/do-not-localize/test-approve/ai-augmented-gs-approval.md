@@ -35,7 +35,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: approval process — variants: approval workflow
+* Canonical name: approval process
 * Do not confuse: "Draft" (editable state, and the state an object returns to when a request is canceled or changes are requested) ≠ "In Review" (locked state during approval)
 * Do not confuse: "Approve & publish Campaigns" (requires the Campaigns resource) ≠ "Approve & publish Journeys" (requires the Journeys resource)
 
@@ -43,10 +43,10 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: Do I need an approval policy for every campaign or journey?** — No. Policies are conditional; create one only to enforce review for a specific set. If no policy applies, the creator can publish directly.
 * **Q: What happens if the approver is unavailable?** — The request stays In Review until an approver acts. You can cancel it, returning the item to Draft, and resubmit, or an admin can add additional approvers to the policy.
-* **Q: Can I edit a campaign or journey while it is In review, including content configured in a journey's [!UICONTROL Action] activity?** — No. A campaign or journey is locked while it is In review; for a journey, this includes content configured in its **[!UICONTROL Action]** activity. The user who submitted the approval request can cancel it, or an approver can request changes. Either action returns the item to Draft. Edit the campaign or journey, then submit it for approval again.
+* **Q: Can I edit a campaign or journey while it is In review?** — No. A campaign or journey is locked while it is In review; for a journey, this includes content configured in its **[!UICONTROL Action]** activity. The user who submitted the approval request can cancel it, or an approver can request changes. Either action returns the item to Draft. Edit the campaign or journey, then submit it for approval again.
 * **Q: Which policy applies when more than one could match?** — The policy activated most recently takes precedence, and its approver user groups are the ones notified and governing the request.
 * **Q: If a requestor belongs to multiple user groups, can they choose which group receives the request?** — No. The user groups specified in the applicable policy are notified automatically.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: c003c973 -->
+<!-- ai-section-version: 1 | source-hash: fd36cc0c -->
