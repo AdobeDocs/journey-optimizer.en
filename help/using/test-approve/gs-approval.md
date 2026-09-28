@@ -116,9 +116,9 @@ The request stays "In Review" until an approver acts on it. You can cancel the r
 
 +++
 
-+++Can I edit a journey or its action-node content while it is In review?
++++Can I edit a campaign or journey while it is In review, including a journey's action-node content?
 
-No. A journey is locked while it is In review, including its action-node content. To make changes, the user who submitted the approval request can cancel it, or an approver can request changes. Either action returns the journey to Draft. Edit the journey, then submit it for approval again.
+No. A campaign or journey is locked while it is In review; for a journey, this includes its action-node content. To make changes, the user who submitted the approval request can cancel it, or an approver can request changes. Either action returns the item to Draft. Edit the campaign or journey, then submit it for approval again.
 
 +++
 
