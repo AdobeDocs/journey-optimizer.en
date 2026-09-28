@@ -134,11 +134,11 @@ The following skills are available under the **Channel Content** plugin:
 
    Runs the full authoring lifecycle from a brief, journey, campaign, or prompt, ideating, generating, reviewing, and saving content, including copy, images, and the compliance, accessibility, and fidelity checks across supported channels.
 
-   >[!BEGINSHADEBOX "Prompt samples"]
+>[!BEGINSHADEBOX "Prompt samples"]
 
       "Run full content authoring for our Fall Sale email campaign from this brief, then review and save the final HTML."
 
-   >[!ENDSHADEBOX]
+>[!ENDSHADEBOX]
    
 * **Explore Content Strategy** (`explore-content-strategy`)
 
