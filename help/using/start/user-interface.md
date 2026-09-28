@@ -67,14 +67,14 @@ To access Adobe Journey Optimizer, sign in to [[!DNL Adobe CX Enterprise]](https
 
 The Journey Optimizer interface consists of four main areas:
 
-![Journey Optimizer home page showing left navigation, top bar, main workspace, and home page areas](assets/ajo-home.png)
+![Journey Optimizer home page with recently accessed campaigns and AI Recommendations](assets/ajo-home.png)
 
 1. **Left navigation** - Access all capabilities and features organized by function
 2. **Top bar** - Universal search, help, notifications, and settings
 3. **Home page** - Quick access to recent items and helpful resources
 4. **Main workspace** - Where you create and manage your content
 
-**Tip:** New users can start from the **Home** page to access recent items and use cases, or use the **Help** icon in the top bar for contextual guidance.
+**Tip:** New users can start from the **Home** page to access recent items and helpful resources, or use the **Help** icon in the top bar for contextual guidance.
 
 ## Top bar features {#top-bar}
 
@@ -139,19 +139,7 @@ Keyboard shortcuts and accessibility features are available. [Learn more](access
 The home page provides:
 
 * **Recents** - Shortcuts to recently created events, journeys, campaigns, and other objects
-* **Use cases** - Pre-built scenarios to help you get started quickly (create test profiles, send birthday messages, etc.)
 * **Resources** - Links to documentation, tutorials, and support
-
-### Use cases and quick-start workflows {#use-cases}
-
-Quick-start workflows help you accomplish common tasks:
-
-* **Create test profiles** - Generate test profiles using CSV templates
-* **Send birthday messages** - Automatically send birthday emails (coming soon)
-* **Onboard new customers** - Welcome series for new customers (coming soon)
-* **Send push to imported lists** - Quick push notifications from CSV data (coming soon)
-
-Click **[!UICONTROL View details]** to learn more about each use case, or **[!UICONTROL Begin]** to start.
 
 ## Left navigation {#left-nav}
 
