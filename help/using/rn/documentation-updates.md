@@ -23,7 +23,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
-* The **Navigate the interface** page and its home-page screenshot have been updated to remove references to the Use-cases widget, aligning the documentation with the current Journey Optimizer interface. [Read more](../start/user-interface.md#home-page)
+* The **Navigate the interface** page has been updated to reflect the current interface: references to the Use-cases widget were removed, the screenshot was refreshed, and CX Enterprise Coworker (formerly AI Assistant) is now documented with its home-page prompt. [Read more](../start/user-interface.md#home-page)
 
 * The `inAudience` guardrails now include the workaround for sandboxes with more than 5,000 audiences, where older audiences can be rejected during journey authoring because validation checks only the 5,000 most recently updated audiences. [Read more](../building-journeys/functions/functioninaudience.md#guardrails)
 

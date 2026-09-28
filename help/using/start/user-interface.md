@@ -214,15 +214,9 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 * **Channels** - Configure channel settings and deliverability. [Set up channel configurations](../configuration/channel-surfaces.md) | [Get started with configuration](../configuration/get-started-configuration.md)
 * **Tags** - Organize and categorize content. [Work with unified tags](search-filter-categorize.md#tags)
 
-## AI assistant {#ai-assistant}
+## CX Enterprise Coworker (formerly AI Assistant) {#ai-assistant}
 
-AI Assistant provides instant help and operational insights. Click the AI Assistant icon in the top bar to:
-
-* Get answers about product features
-* Receive operational insights about your journeys
-* Navigate concepts and best practices
-
-[Learn more about AI Assistant](ai-features.md#ai-assistant)
+CX Enterprise Coworker is the in-product conversational experience previously known as AI Assistant. On the Journey Optimizer home page, enter a business goal in the **“What would you like to accomplish today?”** prompt to start a conversation with CX Enterprise Coworker. It provides instant help and operational insights. [Learn more about CX Enterprise Coworker](ai-features.md#cx-coworker).
 
 ## Related topics {#related-topics}
 
