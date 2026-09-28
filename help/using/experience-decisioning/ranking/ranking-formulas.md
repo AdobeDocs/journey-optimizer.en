@@ -47,6 +47,10 @@ To create these rules, the AI formula builder in **[!UICONTROL Adobe Journey Opt
 
 This approach allows you to dynamically adjust offer ranking based on any combination of AI-driven propensity, business value, and real-time context, making it easier to align decisioning with both marketing goals and customer needs. The AI formula builder supports simple or advanced formulas depending on how much control you want to apply.
 
+>[!TIP]
+>
+>You can also create, explain, simulate, and optimize ranking formulas conversationally using the **Rules & Ranking** skill in [Coworker for Decisioning](../experience-decisioning-coworker-skills.md#rules-ranking).
+
 Once a ranking formula has been created, you can assign it to a [selection strategy](../selection-strategies.md). If multiple offers are eligible to be presented when using this selection strategy, the decisioning engine will use the selected formula to calculate which offer to deliver first.
 
 ➡️ [Discover this feature in video](#video)

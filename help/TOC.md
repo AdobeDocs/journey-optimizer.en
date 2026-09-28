@@ -12,7 +12,7 @@ nudge: yes
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new} 
   + [Release cycle](using/rn/releases.md) 
-  + [Pre-release notes](using/rn/e-release-notes.md)
+  + {hide-from-toc} [Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -332,6 +332,7 @@ nudge: yes
         + [Manage dark mode content](using/email/dark-mode.md)
       + [Create accessible content](using/email/accessible-content.md)
       + [Content check](using/email/content-check.md)
+      + [Collaborate on email content](using/email/email-collaboration.md)
     + Configure email channel {#configure-email}
       + {hide-from-toc} [Configure email channel](/help/rp_landing_pages/configure-email-landing-page.md)
       + [Get started with email configuration](using/email/get-started-email-config.md)
@@ -690,6 +691,7 @@ nudge: yes
   + Decisioning {#experience-decisioning}
     + [Decisioning](/help/rp_landing_pages/experience-decisioning-landing-page.md)
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
+    + [Coworker for Decisioning](using/experience-decisioning/experience-decisioning-coworker-skills.md)
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
     + [Decisioning FAQ](using/experience-decisioning/decisioning-faq.md)
     + Migrate to Decisioning {#migrate-to-decisioning}
@@ -940,6 +942,9 @@ nudge: yes
     + [Built-in schemas >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
   + [Use Adobe Experience Platform data](using/data/lookup-aep-data.md)
   + [Queries](using/data/get-started-queries.md)
+  + Monitoring {#monitoring}
+    + [Monitor inbound data with Edge](using/data/monitoring.md)
+    + [Monitor data ingestion](using/data/monitor-data-ingestion.md)
 + Channel configuration {#configuration}
   + [Channel configuration](/help/rp_landing_pages/configuration-landing-page.md)
   + [Get started with channels configuration](using/configuration/get-started-configuration.md)

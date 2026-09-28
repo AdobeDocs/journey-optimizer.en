@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page documents the three CX Coworker skills for journeys in Adobe Journey Optimizer — Journey Create, Channel Content Create, and Journey Analyze — including their use cases, scope, and prompting guidance.
+* **TL;DR:** This page documents the three CX Coworker skills for journeys in Adobe Journey Optimizer — Journey Create, Channel Content Create, and Journey Analyze — including journey version comparison, use cases, scope, and prompting guidance.
 
 **Intents**
 
@@ -17,6 +17,7 @@ For complete understanding, this information should be combined with the documen
 * Generate, edit, and refine channel-specific content (email, push, SMS) for a journey using Channel Content Create.
 * Analyze journey fallout, audience overlap, and schedule conflicts using Journey Analyze.
 * Diagnose custom action errors and investigate anomalies in a journey's entry, exit, or send counts using Journey Analyze.
+* Compare two journey versions in Coworker Chat and review a structured diff of node, connection, and journey-level property changes.
 * Learn which permissions are required to fully use each skill.
 * Learn which capabilities each skill does not support.
 
@@ -24,11 +25,12 @@ For complete understanding, this information should be combined with the documen
 
 * **Journey Create** *(product-specific)*: CX Coworker skill that builds and configures marketing journeys through natural language prompts.
 * **Channel Content Create** *(product-specific)*: CX Coworker skill that generates, edits, and manages channel-specific content (email, push, SMS) for journeys using AI-powered content generation.
-* **Journey Analyze** *(product-specific)*: CX Coworker skill that analyzes and optimizes journeys, covering fallout analysis, audience overlap analysis, schedule overlap analysis, operational insights, custom action error analysis, and anomaly detection.
+* **Journey Analyze** *(product-specific)*: CX Coworker skill that analyzes and optimizes journeys, covering fallout analysis, audience overlap analysis, schedule overlap analysis, operational insights, custom action error analysis, anomaly detection, and journey version comparison.
 * **Journey Fallout Analysis**: identifies where and why customers drop off during a journey.
 * **Journey Audience Overlap Analysis**: analyzes audience overlap across multiple journeys to prevent fatigue from over-targeting.
 * **Journey Schedule Overlap Analysis**: detects timing conflicts between scheduled journeys targeting the same audience.
 * **Analyze Journey Anomalies**: detects unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts compared to historical baselines, confirms whether a flagged change is a genuine anomaly, and runs read-only diagnostics to identify a likely root cause.
+* **Journey Version Comparison**: compares two journey versions and returns a structured diff of added, removed, modified, and moved nodes, changed connections, journey-level property changes, and roll-up counts.
 
 **Guardrails**
 
@@ -45,10 +47,11 @@ For complete understanding, this information should be combined with the documen
 
 * **What permissions do I need to fully use Journey Create?** Manage Journeys, View Journey Events/Data Sources and Actions, View Segments, and Manage Segments.
 * **Is Channel Content Create generally available?** It is available for all customers in Limited Availability; contact your Adobe representative to gain access.
-* **What does Journey Analyze detect?** Journey fallout, audience overlap, schedule conflicts, custom action errors, and anomalies in a journey's entry, exit, or send counts.
+* **What does Journey Analyze detect?** Journey fallout, audience overlap, schedule conflicts, custom action errors, anomalies in a journey's entry, exit, or send counts, and differences between journey versions.
+* **What does Journey Version Comparison show?** A structured diff between two journey versions, including node changes with field-level details, changed connections, journey-level property changes, and roll-up counts.
 * **Can Journey Create configure cross-journey orchestration?** No, cross-journey orchestration is not supported by Journey Create.
 * **Can Channel Content Create check brand alignment?** No, brand alignment and content quality checks are not supported by Channel Content Create.
 
 +++
 
-<!-- ai-section-version: 3 | source-hash: 88f1a342 -->
+<!-- ai-section-version: 4 | source-hash: f3b470e6 -->
