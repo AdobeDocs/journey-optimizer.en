@@ -40,18 +40,20 @@ URL validation runs automatically from the **[!UICONTROL Simulate content]** scr
 
 >[!IMPORTANT]
 >
->**Limit: max 50 URLs.** If your content contains more than 50 URLs, validation doesn't just skip the extras — the entire request is rejected and no result is returned. Reduce the number of links in your content to get a validation result.
+>If your content contains more than 50 URLs, validation doesn't just skip the extras — the entire request is rejected and no result is returned. Reduce the number of links in your content to get a validation result.
 
 ## What gets flagged {#invalid-urls}
 
-| Issue | Example | Why it's flagged | What to do |
+| Issue | Example | Error message | Why it's flagged |
 |---|---|---|---|
-| Insecure scheme | `http://example.com` | HTTP links aren't secure. | Change the link to use `https://`. |
-| Malformed URL | Empty URL, bad host, spaces | The URL can't be parsed. | Fix the URL format. |
-| Scheme typo | `hhttps://`, `ttps://` | The scheme isn't recognized. | Correct the scheme. |
-| Broken or unreachable | A 404 response, or a domain that doesn't resolve | The page doesn't exist or the host can't be reached. | Verify the URL is correct and the host is online. |
-| Internal or blocked address | `localhost`, `192.168.x.x`, `169.254.169.254` | Internal or private network addresses are blocked for security reasons. | Don't link to internal addresses in customer-facing content. |
-| Timeout | The host took too long to respond | The host didn't respond in time. | The destination service may be slow or temporarily down. Try again later. |
+| Insecure scheme | `http://example.com` | "This link uses HTTP. Only HTTPS links are allowed." | HTTP links aren't secure. |
+| Malformed URL | Empty URL, bad host, spaces | "This link couldn't be reached." | The URL can't be parsed. |
+| Scheme typo | `hhttps://`, `ttps://` | "This link couldn't be reached." | The scheme isn't recognized. |
+| Broken or unreachable | A 404 response, or a domain that doesn't resolve | "This link couldn't be reached." | The page doesn't exist or the host can't be reached. |
+| Internal or blocked address | `localhost`, `192.168.x.x`, `169.254.169.254` | "This link couldn't be reached." | Internal or private network addresses are blocked for security reasons. |
+| Timeout | The host took too long to respond | "This link couldn't be reached." | The host didn't respond in time. |
+
+For steps to fix each of these, see [Troubleshooting](#troubleshooting).
 
 ## What doesn't get checked {#not-checked}
 
@@ -66,7 +68,7 @@ The following aren't flagged as broken, even if they appear in your content:
 
 >[!IMPORTANT]
 >
->**Personalized links are always flagged as invalid — this is expected, not a bug.** If a link contains a personalization token, that token isn't resolved during validation, so the URL is incomplete and can never be reached. This happens every time, whether or not the underlying link actually works.
+>**Personalized links are always flagged as invalid.** If a link contains a personalization token, that token isn't resolved during validation, so the URL is incomplete and can never be reached. This happens every time, whether or not the underlying link actually works.
 >
 >For example, these will always show as invalid:
 >
@@ -89,7 +91,7 @@ Beyond personalized links, content is scanned for URLs wherever they appear, not
 
 1. Use `https://` for all links — HTTP links aren't allowed.
 1. Confirm external dependencies — CDN URLs, third-party APIs, and remote images — are healthy before you preview.
-1. Expect any link containing a personalization token to always show as invalid — this is expected. Verify these links manually instead of relying on the validation result.
+1. Expect any link containing a personalization token to always show as invalid. Verify these links manually instead of relying on the validation result.
 1. Stay under the 50-URL limit — going over it doesn't trim the extras, it rejects the whole validation request. Consider splitting your content across multiple messages or templates.
 1. Expect namespace or data URIs in your schema to show as invalid — that's expected, since they aren't meant to be clicked.
 
@@ -98,7 +100,8 @@ Beyond personalized links, content is scanned for URLs wherever they appear, not
 | Issue | Why | Solution |
 |---|---|---|
 | "This link uses HTTP. Only HTTPS links are allowed." | Insecure scheme | Update the URL to use `https://`. |
-| "This link couldn't be reached." | 404 response or timeout | Verify the URL is correct and the host is online. |
+| "This link couldn't be reached." | Malformed URL, scheme typo, 404 response, blocked internal address, or timeout — see [What gets flagged](#invalid-urls) | Fix the URL, or verify the host is correct, online, and reachable. |
 | No validation result is returned at all | Content contains more than 50 URLs, so the entire request is rejected | Reduce the number of links in your content, then preview again. |
 | A link with a `{{ }}` personalization token is flagged as invalid | Expected — see [Caveats](#caveats). This always happens for personalized links, even valid ones. | Ignore the flag and verify the link manually. |
 | A flagged URL actually works fine and isn't personalized | False positive — see [Caveats](#caveats) | It's likely a namespace URL, a CDN resource, or content in comments/metadata — safe to ignore if it isn't user-facing. |
+
