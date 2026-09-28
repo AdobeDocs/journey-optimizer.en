@@ -13,7 +13,7 @@ Use the Monitoring workspace to review the movement of data through the ingestio
 
 The monitoring views can help you identify records that were ingested, updated, deleted, skipped, or rejected, and compare activity across the ingestion stages.
 
-## Journey Optimizer
+## Journey Optimizer {#ajo}
 
 Use the **Journey Optimizer** tab to review ingestion activity for Journey Optimizer data sources and understand the current processing status.
 
@@ -25,7 +25,7 @@ Start with the trend graphs to check whether ingestion is continuing over the se
 
 ➡️ For complete monitoring guidance, refer to the [Monitoring dashboard](https://experienceleague.adobe.com/en/docs/experience-platform/dataflows/ui/monitor) documentation.
 
-## Campaign Orchestration
+## Campaign Orchestration {#co}
 
 Use the **Campaign Orchestration** tab to monitor data moving from the Data Lake into the Relational Store used by Orchestrated Campaigns.
 
