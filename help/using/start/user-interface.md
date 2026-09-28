@@ -138,7 +138,7 @@ Keyboard shortcuts and accessibility features are available. [Learn more](access
 
 The home page provides:
 
-* **CX Enterprise Coworker** - Also called Coworker. Enter a business goal in the **“What would you like to accomplish today?”** prompt to start a conversation.
+* **CX Enterprise Coworker** - Enter a business goal in the **“What would you like to accomplish today?”** prompt to start a conversation.
 * **Recents** - Shortcuts to recently created events, journeys, campaigns, and other objects
 * **Resources** - Links to documentation, tutorials, and support
 
@@ -217,7 +217,7 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 
 ## CX Enterprise Coworker {#cx-enterprise-coworker}
 
-CX Enterprise Coworker, also called Coworker, is the in-product conversational experience. On the Journey Optimizer home page, enter a business goal in the **“What would you like to accomplish today?”** prompt to start a conversation. It provides instant help and operational insights. [Learn more about CX Enterprise Coworker](ai-features.md#cx-coworker).
+CX Enterprise Coworker is the in-product conversational experience. On the Journey Optimizer home page, enter a business goal in the **“What would you like to accomplish today?”** prompt to start a conversation. It provides instant help and operational insights. [Learn more about CX Enterprise Coworker](ai-features.md#cx-coworker).
 
 ## Related topics {#related-topics}
 
