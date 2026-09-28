@@ -481,13 +481,13 @@ The following capabilities and improvements are coming to channels in this relea
 <table>
 <thead>
 <tr>
-<th><strong>Orchestrated Campaigns APIs</strong><br/></th>
+<th><strong>New Orchestrated Campaigns monitoring APIs</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>New APIs are now available to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines.</p>
+<p>New <strong>APIs</strong> are now available for orchestrated campaigns, allowing you to programmatically retrieve orchestrated campaigns and monitor their executions, enabling deeper integration with external systems and automation pipelines.</p>
 <p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaigns" target="_blank">API reference on Adobe Developer</a>.</p>
 <p>Availability date: September 28, 2026</p>
 </td>
