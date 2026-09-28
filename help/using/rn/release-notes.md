@@ -507,6 +507,10 @@ The following capabilities and improvements are coming to channels in this relea
 
   Availability date: September 28, 2026
 
+* **Orchestrated Campaigns APIs** - New APIs are now available to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaigns){target="_blank"}
+
+  Availability date: September 28, 2026
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -525,8 +529,6 @@ The following capabilities and improvements are coming to channels in this relea
 </table>
 
 * **LINE channel for orchestrated campaigns** - LINE is now available as a native outbound channel in orchestrated campaigns, alongside email, SMS, and push. You can build and deliver LINE messages directly from the campaign canvas, including text, stickers, images, videos, location data, and Flex Messages, supporting promotional, transactional, and ongoing engagement use cases in LINE-dominant markets such as Japan and APAC. Previously released in Limited Availability, this capability is now generally available. 
-
-* **New Orchestrated Campaigns monitoring APIs** - New **API specifications** are now available for orchestrated campaigns, allowing you to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines.
 
 +++
 
