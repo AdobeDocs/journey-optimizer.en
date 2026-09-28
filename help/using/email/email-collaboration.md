@@ -89,15 +89,25 @@ Collaborators can click the numbered pin icon on the email canvas to view the co
 
 For each comment, you can use the **[!UICONTROL Reply]** function to continue a discussion or answer a question.
 
-Click **[!UICONTROL Reply]** at the bottom of the comment and enter the text for your reply. To include a quote of the current comment in your reply, click the **(…)** icon and choose **[!UICONTROL Quote reply]**.
+1. Click **[!UICONTROL Reply]** at the bottom of the comment.
 
-![More menu options for reply and quote reply](assets/email_designer_collaboration_actions.png){width="100%"}
+1. Enter the text for your reply.
+
+1. To include a quote of the current comment in your reply, click the **(…)** icon and choose **[!UICONTROL Quote reply]**.
+
+![(…) icon options for reply and quote reply](assets/email_designer_collaboration_actions.png){width="100%"}
 
 ## Resolve comments {#resolve-comments}
 
-As an author or designer, assess the feedback from reviewers and determine what changes you want to make. When changes are complete and the request is satisfied, click the **(…)** icon and choose **[!UICONTROL Resolve]**.
+As an author or designer, assess the feedback from reviewers and determine what changes you want to make.
 
-![More menu options for reply and quote reply](assets/email_designer_collaboration_resolve.png){width="100%"}
+1. When changes are complete and the request is satisfied, click the **(…)** icon.
+
+1. Select **[!UICONTROL Resolve]** from the contextual menu.
+
+1. Click **[!UICONTROL Resolve]** to confirm the action.
+
+   ![(…) icon options for resolving a comment](assets/email_designer_collaboration_resolve.png){width="100%"}
 
 Once resolved, the comment/thread is hidden from the main view but can be accessed through the filter options.
 
@@ -109,7 +119,7 @@ Manage the comments and threads to assess the status of your collaboration effor
 
 If a comment is not associated with an element on the email canvas, you can pin the comment to an element as needed. Click the **(…)** icon and choose **[!UICONTROL Place the comment]**. Then, select the design component on the canvas.
 
-![More menu option to place a comment on a design component](assets/email_designer_collaboration_place_comment.png){width="60%"}
+![(…) icon option to place a comment on a design component](assets/email_designer_collaboration_place_comment.png){width="60%"}
 
 ### Remove or delete comments {#remove-delete-comments}
 
@@ -120,7 +130,9 @@ You can clean up your comments log by removing and deleting them. Click the **(�
 
 ### Resolved comments {#resolved-comments}
 
-By default, resolved comments are hidden in the **[!UICONTROL Collaboration]** panel. You can display resolved comments at any time by clearing the filter. Click the **[!UICONTROL Filter]** icon and clear the **[!UICONTROL Hide resolved comments]** checkbox.
+By default, resolved comments are hidden in the **[!UICONTROL Collaboration]** panel.
+
+You can display resolved comments at any time by clearing the filter. Click the **[!UICONTROL Filter]** icon and clear the **[!UICONTROL Hide resolved comments]** checkbox.
 
 ![Filter option to display resolved comments](assets/email_designer_collaboration_filter.png){width="60%"}
 
