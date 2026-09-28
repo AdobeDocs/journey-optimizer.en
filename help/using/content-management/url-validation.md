@@ -26,11 +26,27 @@ subfeature_v2:
 >
 >This capability is released in Limited Availability (LA) for a set of customers. Contact your Adobe representative to gain access.
 
-When you preview your message content, [!DNL Journey Optimizer] automatically checks the web links it contains. Validation runs after your personalization is resolved, so real URLs are checked rather than unresolved template tokens. This helps you catch broken or inaccessible links before your message reaches your audience.
+When you preview your message content, you can have [!DNL Journey Optimizer] check the web links it contains. This helps you catch broken or inaccessible links before your message reaches your audience.
 
-## Where to find it {#access}
+## Run URL validation {#access}
 
-URL validation runs automatically from the **[!UICONTROL Simulate content]** screen, for channel actions in journeys and campaigns across all channels, and when you preview [content templates](content-templates.md).
+URL validation can be run from the **[!UICONTROL Simulate]** screen, for channel actions in journeys and campaigns across all channels, and when you preview [content templates](content-templates.md).
+
+To run URL validation, follow the steps below.
+
+1. From the content editor, click **[!UICONTROL Simulate content]**. [Learn more about simulation](../test-approve/simulate-content-variations.md)
+
+1. From the **[!UICONTROL Simulate]** screen, click the **[!UICONTROL Validate URLs]** button to run the URL validation check.
+
+    ![](assets/simulate-validate-urls.png)
+
+    The list of all invalid URLs, along with the reason for their invalidity, is displayed.
+
+1. Click **[!UICONTROL Copy]** to copy the list to your clipboard and paste it into a document or email for further review.
+
+1. Close the window and fix the invalid URLs in your content. Learn more in the [Troubleshooting](#troubleshooting) section.
+
+1. Repeat the steps above to re-run the URL validation check until all URLs are valid.
 
 ## How it works {#how-it-works}
 
@@ -42,7 +58,7 @@ URL validation runs automatically from the **[!UICONTROL Simulate content]** scr
 >
 >If your content contains more than 50 URLs, validation doesn't just skip the extras — the entire request is rejected and no result is returned. Reduce the number of links in your content to get a validation result.
 
-## What gets flagged {#invalid-urls}
+### What gets flagged {#invalid-urls}
 
 | Issue | Example | Error message | Why it's flagged |
 |---|---|---|---|
@@ -55,7 +71,7 @@ URL validation runs automatically from the **[!UICONTROL Simulate content]** scr
 
 For steps to fix each of these, see [Troubleshooting](#troubleshooting).
 
-## What doesn't get checked {#not-checked}
+### What doesn't get checked {#not-checked}
 
 The following aren't flagged as broken, even if they appear in your content:
 
