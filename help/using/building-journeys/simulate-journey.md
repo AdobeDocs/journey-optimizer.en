@@ -268,6 +268,8 @@ During a simulation, you can also preview the content of every channel activity 
 
 The preview reflects the **[!UICONTROL Test user]** you select: with **[!UICONTROL All]** selected, it shows non-personalized content; when you select a specific test user, each channel activity that user went through is previewed with that user's personalized data.
 
+In a simulation, previewed attribute values depend on when simulated user data was last fetched relative to the **[!UICONTROL Update Profile]** activity. If the data was fetched before the activity runs, previews show pre-update values throughout. If it was fetched after the activity runs (for example, after reloading the page), previews show post-update values throughout, including in email activities before the **[!UICONTROL Update Profile]** activity. A single preview does not show pre-update values before the activity and post-update values after it.
+
 ![Personalized content preview for the selected test user during a simulation](assets/journey-canvas-content-preview.png)
 
 For **Wait** activities, the log includes two duration-related values:

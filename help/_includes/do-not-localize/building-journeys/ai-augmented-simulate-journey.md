@@ -9,44 +9,47 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page provides step-by-step instructions for running Quick simulation and Manual simulation in Adobe Journey Optimizer, including how to create and manage simulated users, trigger unitary events, override Wait durations, and interpret the Results log.
+* **TL;DR:** This page explains how to run Quick simulation and Manual simulation in Adobe Journey Optimizer to validate journey paths and review results using simulated users.
 
 **Intents:**
-* Run a Quick simulation to validate a journey end-to-end with minimal manual input
-* Set up Manual simulation to control simulated user creation, event payloads, and wait overrides
-* Create simulated users via AI generation, inventory browse, form entry, or JSON
+* Run Quick simulation to validate a journey end to end with generated users and event values
+* Set up Manual simulation to control simulated-user selection, send order, event payloads, and Wait overrides
+* Create or add simulated users using AI generation, inventory, a form, or JSON
 * Trigger unitary events for simulated users during an active simulation session
 * Review the Results log to identify errors and uncovered branches after a simulation run
-* Reset or close a simulation session to start fresh or exit
+* Use Reset simulation to start a new run or Stop simulation to exit the current session
 
 **Glossary:**
-* **Quick simulation**: An automated simulation mode that generates users and event values using the Journey Agent and runs the full journey with minimal manual steps *(product-specific)*
-* **Manual simulation**: A step-by-step simulation mode where practitioners control user creation, event payloads, and timing individually *(product-specific)*
-* **Simulated users**: Temporary profile-like entities you define in Simulation. Sending a simulated user triggers a real message send and, when an impacted dataset is profile-enabled, can create a persistent profile in Adobe Experience Platform *(product-specific)*
-* **Journey Agent**: The AI component that generates simulated users and event payloads during simulation *(product-specific)*
-* **Test settings**: The Simulation panel tab where Wait durations and execution addresses (email, phone, push token) can be overridden for the simulation run *(product-specific)*
-* **Results log**: The execution log accessible from the Results tab showing activity execution details, timestamps, branch decisions, and errors for each simulated user *(product-specific)*
+* **Quick simulation**: A simulation that runs end to end with generated users, event values, and default test settings, powered by the Journey Agent *(product-specific)*
+* **Manual simulation**: A simulation run step by step, where you create simulated users, trigger them into the journey, define event payloads, and override Wait durations *(product-specific)*
+* **Simulated users**: Temporary profile-like entities defined in Simulation settings. Sending one triggers a real message send; if an impacted dataset is profile-enabled, this can create a persistent profile in Adobe Experience Platform *(product-specific)*
+* **Journey Agent**: The agent used to generate simulated users and event values or payloads during simulation *(product-specific)*
+* **Test settings**: The tab used to override Wait activity durations during simulation *(product-specific)*
+* **Results log**: The execution log, opened from the Results tab, that shows activity execution details, timestamps, branch decisions, and errors *(product-specific)*
 
 **Guardrails:**
-* For event-triggered journeys, the per-user Send icon is not available; entry is triggered through the Test events section
-* Wait duration overrides and execution address settings are only shown if the journey includes Wait or Channel activities
-* Errors in the Results log require leaving Simulation, fixing the journey, and re-running before publishing
+* For journeys starting with an Event, the per-user Send icon is not available; simulated-user entry is triggered by sending the event in Test events
+* The Update values step appears only if the journey uses Waits or Channels; it lets you adjust Wait durations and execution addresses
+* In simulation content preview, if simulated-user data was fetched before Update Profile runs, previewed values are pre-update throughout. If the data was fetched after the activity runs, for example after reloading the page, previewed values are post-update throughout, including in earlier email activities. A single preview does not show pre-update values before the activity and post-update values after it.
+* When errors appear in the Results log, leave Simulation, apply the required journey changes, and run Simulation again until the run looks correct before publishing
 
 **Terminology:**
 * Canonical name: Quick simulation — Acronym: none — variants: none
 * Canonical name: Manual simulation — Acronym: none — variants: none
-* Canonical name: Simulated users — Acronym: none — variants: test users (UI label in Test users list)
-* Synonyms: "Send all" = send every simulated user listed under Test users into the journey
-* Do not confuse: "Reset simulation" ≠ "Stop simulation" — Reset clears all data and settings; Stop exits the current simulation session
+* Canonical name: simulated users — Acronym: none — UI label: Test users is the list containing simulated users
+* Send all sends every simulated user in the list into the journey
+* Do not confuse: Reset simulation clears data from the current run, selected simulated users, defined event values, and other test settings so a new simulation can start from scratch; Stop simulation exits the current simulation session
+* Do not confuse: simulated-user data fetched before Update Profile runs produces pre-update preview values throughout; data fetched after it runs, for example after reloading the page, produces post-update values throughout, including in earlier email activities. One preview does not mix pre-update and post-update values.
 
 **FAQ:**
-* **Q: What is the difference between Quick simulation and Manual simulation?** — Quick simulation runs the entire journey automatically using generated users and events; Manual simulation lets you create users and events step by step with full control over payloads and timing.
-* **Q: Can I reuse simulated users across simulation sessions?** — Yes. Users saved to the inventory can be retrieved via Browse inventory in subsequent sessions.
-* **Q: How do I override Wait activity durations during simulation?** — Open the Test settings tab and set a shorter duration, for example 10 seconds, so simulated users move through Wait nodes quickly.
-* **Q: How do I trigger a unitary event for a specific simulated user?** — In the Test events section, click the edit icon next to the user to configure the event payload, then click the send icon on that row to trigger only that user's event.
-* **Q: What do the Defined duration and Actual duration fields mean in the Results log for Wait activities?** — Defined duration is the duration specified on the Wait activity for the published journey; Actual duration is the elapsed time the simulated user remained on the Wait activity, set from the Test settings tab.
-* **Q: What should I do when errors appear in the Results log?** — Leave Simulation, apply the required fixes to the journey, then re-run Simulation until the run shows no errors before publishing.
+* **Q: What is the difference between Quick simulation and Manual simulation?** — Quick simulation runs the journey end to end with generated users, event values, and default test settings; Manual simulation lets you create simulated users, trigger them into the journey, define event payloads, and override Wait durations.
+* **Q: Why does content preview show the same profile attribute value before and after Update Profile?** — Previewed values depend on when simulated-user data was last fetched. Data fetched before the activity runs shows pre-update values throughout; data fetched after it runs, for example after reloading the page, shows post-update values throughout, including in earlier email activities.
+* **Q: Can I reuse simulated users across simulation sessions?** — Yes. Users saved to the inventory can be retrieved with Browse inventory in subsequent sessions.
+* **Q: How do I override Wait activity durations during simulation?** — Open the Test settings tab and set a shorter duration, for example 10 seconds, so simulated users move through Wait activities quickly.
+* **Q: How do I trigger a unitary event for a specific simulated user?** — In Test events, configure the user's event payload with the edit icon, then select the send icon on that user's row to trigger only that user's event.
+* **Q: What do the Defined duration and Actual duration values mean in the Results log for Wait activities?** — Defined duration is the duration specified on the Wait activity for the published journey; Actual duration is the elapsed time the simulated user remained on the Wait activity, set from the Test settings tab.
+* **Q: What should I do when errors appear in the Results log?** — Leave Simulation, apply the required journey changes, and run Simulation again before publishing.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 43faeab7 -->
+<!-- ai-section-version: 1 | source-hash: 9a8ee7f0 -->
