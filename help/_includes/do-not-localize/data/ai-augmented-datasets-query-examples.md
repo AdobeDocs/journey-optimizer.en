@@ -35,6 +35,7 @@ For complete understanding, this information should be combined with the documen
 
 * The AJO Message Feedback Event Dataset uses batch ingestion; expect a data latency of up to 2 hours (expected latency, batch ingestion — not a configurable limit) when querying it or using it for reporting.
 * If a query returns "Table not provisioned for dataset", for batch-ingested datasets allow up to two hours for data to become available before contacting Adobe Support.
+* The CJM Consent Service Dataset and CJM Push Profile Dataset are system datasets used by Journey Optimizer for consent and push profile data. They are not available as queryable tables in Query Service, so a "Table not provisioned for dataset" response is expected when querying them.
 * System datasets are hidden by default; enable **Show system datasets** in the Datasets workspace to query them.
 * An Entity Dataset entry for a message is created only after the journey or campaign is published, and may appear about 30 minutes after publication (observed delay).
 * Do not automatically convert a `NULL` or missing `isTestExecution` value to `false`, and do not assume null represents a production execution.
@@ -51,6 +52,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which dataset do I query for opens and clicks?** — The AJO Email Tracking Experience Event Dataset.
 * **Q: Which dataset do I query for sent and bounce delivery status?** — The AJO Message Feedback Event Dataset.
 * **Q: Why does my query return "Table not provisioned for dataset"?** — It does not necessarily mean provisioning failed; enable Show system datasets, confirm the table name matches the Datasets workspace, and for batch datasets allow up to two hours for data to become available.
+* **Q: Why does a query for the CJM Consent Service Dataset or CJM Push Profile Dataset return "Table not provisioned for dataset"?** — These system datasets are not available as queryable tables in Query Service, so the response is expected.
 * **Q: How do I separate test executions from non-test executions?** — Use the `isTestExecution` field; treat `NULL` or missing values as unknown rather than converting them to `false`.
 * **Q: How do I enrich feedback records with campaign, journey, and message metadata?** — Join the Entity Dataset using `messageID` or `_experience.decisioning.propositions.scopeDetails.correlationID`.
 
