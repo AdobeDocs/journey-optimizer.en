@@ -69,6 +69,10 @@ To ensure optimal performance and consistency, Decisioning enforces the followin
 
     A maximum of four levels of nesting is supported. Images are not supported at the last level.
 
+* **Field naming and data types**
+
+    Field names and data types must be consistent across field groups in the catalog schema. You cannot define the same field with different capitalization or a different data type in another field group. If you need to use a different data type, create the field at a different path.
+
 ## Access and edit the catalog's schema {#access-catalog-schema}
 
 To access the catalog's schema where decision items' attributes are stored, follow these steps:
