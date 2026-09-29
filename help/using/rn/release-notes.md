@@ -198,6 +198,24 @@ The following capability is coming to content management in this release.
 <table>
 <thead>
 <tr>
+<th><strong>Content preview in the journey canvas</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Reviewing channel content required opening each activity individually, one at a time — slow and error-prone on journeys with many channel activities, especially where personalization means checking multiple treatments or variants per activity. <strong>Content preview</strong> removes that friction by surfacing a content thumbnail for every channel activity directly in the canvas, with a fullscreen modal to inspect and switch between treatments and variants.</p>
+<p>For more information, see the <a href="../building-journeys/using-the-journey-designer.md#content-preview">journey canvas content preview documentation</a>.</p>
+<p><img src="assets/do-not-localize/contentPreview.gif" alt="Content preview in the journey canvas" width="800"/></p>
+<p>Availability date: September 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Compare journey versions with Coworker</strong><br/></th>
 </tr>
 </thead>
@@ -341,22 +359,6 @@ The following capability is coming to content management in this release.
 <table>
 <thead>
 <tr>
-<th><strong>Content preview in the journey canvas</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Reviewing channel content today requires opening each activity individually, one at a time — slow and error-prone on journeys with many channel activities, especially where personalization means checking multiple treatments or variants per activity. <strong>Content preview</strong> removes that friction by surfacing a content thumbnail for every channel activity directly in the canvas, with a fullscreen modal to inspect and switch between treatments and variants.</p>
-<p>Target availability date: September 28, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Journey creation from Coworker rail</strong><br/></th>
 </tr>
 </thead>
@@ -479,6 +481,23 @@ The following capabilities and improvements are coming to channels in this relea
 <table>
 <thead>
 <tr>
+<th><strong>New Orchestrated Campaigns monitoring APIs</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>New <strong>APIs</strong> are now available for orchestrated campaigns, allowing you to programmatically retrieve orchestrated campaigns and monitor their executions, enabling deeper integration with external systems and automation pipelines.</p>
+<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaigns" target="_blank">API reference on Adobe Developer</a>.</p>
+<p>Availability date: September 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Alerting for orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
@@ -492,6 +511,10 @@ The following capabilities and improvements are coming to channels in this relea
 </tr>
 </tbody>
 </table>
+
+* **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage. [Learn more](../data/monitor-data-ingestion.md#co)
+
+  Availability date: September 28, 2026
 
 * **Conditional content with relational data in orchestrated campaigns** - When building conditional content in the Email Designer for orchestrated campaigns, you can now build conditions directly on relational data — such as related records associated with a profile — not just standard profile attributes. [Learn more](../orchestrated/activities/channels.md#add-personalization)
 
@@ -519,10 +542,6 @@ The following capabilities and improvements are coming to channels in this relea
 </table>
 
 * **LINE channel for orchestrated campaigns** - LINE is now available as a native outbound channel in orchestrated campaigns, alongside email, SMS, and push. You can build and deliver LINE messages directly from the campaign canvas, including text, stickers, images, videos, location data, and Flex Messages, supporting promotional, transactional, and ongoing engagement use cases in LINE-dominant markets such as Japan and APAC. Previously released in Limited Availability, this capability is now generally available. 
-
-* **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage.
-
-* **New Orchestrated Campaigns monitoring APIs** - New **API specifications** are now available for orchestrated campaigns, allowing you to programmatically create, manage, and trigger orchestrated campaigns, enabling deeper integration with external systems and automation pipelines.
 
 +++
 
@@ -559,7 +578,25 @@ The following capabilities and improvements are coming to the Email Designer in 
 <table>
 <thead>
 <tr>
-<th><strong>New table component in the Email Designer</strong><br/></th>
+<th><strong>Collaborate on email content</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Email Designer now includes built-in <strong>collaboration tools</strong> for commenting and resolution, so marketing teams can review, discuss, and finalize email content directly within Journey Optimizer instead of sharing drafts over external tools like chat, email threads, or spreadsheets. Invite collaborators and reviewers, add general or component-specific comments, and reply to, resolve, and manage comment threads — all without leaving the Email Designer.</p>
+<p><img src="assets/do-not-localize/email-collaboration-tools.gif"></p>
+<p>For more information, refer to the <a href="../email/email-collaboration.md">detailed documentation</a>.</p>
+<p>Availability date: September 25, 2024.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>New Table component</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -598,13 +635,14 @@ The following capabilities and improvements are coming to the Email Designer in 
 <table>
 <thead>
 <tr>
-<th><strong>Import Dynamic Media templates directly from PSD files in the Email Designer</strong><br/></th>
+<th><strong>New Dynamic Media Template component in the Email Designer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>The Email Designer's Dynamic Media component now lets you import a Photoshop (PSD) file directly as a new template, in addition to browsing existing Dynamic Media templates. Drag and drop a PSD file into the component, and Adobe Journey Optimizer automatically converts it into a Dynamic Media template — no manual conversion or round-trip through Adobe Experience Manager needed. Once imported, edit the template using the built-in Dynamic Media editor.</p>
+<p>The Email Designer now includes a dedicated <strong>Dynamic Media Template</strong> component for inserting Dynamic Media Templates from Adobe Experience Manager into your email content. In addition to browsing existing templates, you can now import a Photoshop (PSD) file directly — drag and drop it into the component, or select it from your computer, then choose a destination to store it.</p>
+<p>Once your file is imported, select <strong>Edit in Dynamic Media Template Editor</strong> to open the Dynamic Media Template Editor directly within Journey Optimizer, where you can enable the parameters you want to expose, without leaving the Email Designer. The enabled parameters then become available in the component's <strong>Settings</strong> tab.</p>
 </td>
 </tr>
 </tbody>
