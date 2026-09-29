@@ -292,7 +292,7 @@ The `valueAtPath` helper assigns a value from a data path to a template variable
 
 **Limitations**
 
-* The `idx` value must be a valid zero-based index for the array or collection. If the index is outside the available range, rendering throws an exception. Validate the index before using it when its value may vary.
+* The `idx` value must identify an existing item in the array or collection. Index counting starts at 0, so the first item is at index 0. If the index is outside the available range, rendering throws an exception.
 * The `path` parameter must be a data path. PQL expressions are not supported.
 
 **Example**
