@@ -23,6 +23,14 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
+* Guidance for custom-upload audiences now clarifies activation timing and adds troubleshooting for unavailable enrichment attributes in journeys. [Read more](../audience/enrichment-attributes.md#faq-enrichment)
+
+* Quiet Hours guidance now clarifies how weekly periods that cross midnight are applied. [Read more](../conflict-prioritization/quiet-hours.md)
+
+* Approval guidance now clarifies editing restrictions while campaigns and journeys are under review. [Read more](../test-approve/gs-approval.md)
+
+* The **Navigate the interface** page has been updated to reflect the current interface: references to the Use-cases widget were removed, the screenshot was refreshed, and CX Enterprise Coworker is now documented with its home-page prompt. [Read more](../start/user-interface.md#home-page)
+
 * The `inAudience` guardrails now include the workaround for sandboxes with more than 5,000 audiences, where older audiences can be rejected during journey authoring because validation checks only the 5,000 most recently updated audiences. [Read more](../building-journeys/functions/functioninaudience.md#guardrails)
 
 * Guidance for email mirror pages has been expanded: the documentation now explains that mirror page URLs cannot be retrieved through a public API or dataset, recommends Message Export or BCC archiving for retaining sent content, and clarifies that mirror page links are inactive in proofs and simulations. [Read more](../email/message-tracking.md#mirror-page)
