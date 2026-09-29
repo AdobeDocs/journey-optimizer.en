@@ -71,6 +71,7 @@ The steps to create a conditional rule are as follows:
     * **[!UICONTROL Profile]**:
         * **[!UICONTROL Audiences]** lists all audience attributes (i.e. status, version etc.) for [Adobe Experience Platform Segmentation service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"},
         * **[!UICONTROL XDM Individual profiles]** lists all the profile attributes associated to the [Experience Data Model (XDM) schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"} defined in Adobe Experience Platform.
+        * **[!UICONTROL Target]**: in Orchestrated campaigns, this folder lists incoming audience and enrichment attributes from the campaign worktable, including data from relational schemas. [Learn more about Profile and target attributes in Orchestrated campaigns](../orchestrated/add-personalization.md#attributes).
     * **[!UICONTROL Contextual]**: when your message is used in a journey, contextual journey fields are available through this tab.
     * **[!UICONTROL Audiences]**: lists all the audiences generated from segment definitions created in [Adobe Experience Platform Segmentation service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 

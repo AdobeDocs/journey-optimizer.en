@@ -123,11 +123,17 @@ Once you have a source for your content, either an HTML file or a connection to 
 
     ![Imported email editor with subject line field and personalization placeholder mapping](assets/onboarding-hub-8.png)
 
+    >[!NOTE]
+    >
+    >Certain source date tokens are mapped automatically and are not surfaced as personalization placeholders to map. Token discovery and mapping have also been improved for greater accuracy.
+
+1. If the email references any content blocks, resolve them as fragments. See [Import fragments](#import-fragments).
+
 1. Select a folder to upload the email's images to [!DNL Experience Manager Assets] and click **[!UICONTROL Upload assets]**.
 
     ![Folder selection window for uploading email images to Experience Manager Assets](assets/onboarding-hub-9.png)
 
-1. Once your email is ready, select **[!UICONTROL Migrate]**, then select **View in [!DNL Journey Optimizer]** to open the new content template.
+1. Once your email is ready, select **[!UICONTROL Migrate]**, then select **View email** to open the new content template.
 
     ![Migrate button and View in Journey Optimizer option for a completed email](assets/onboarding-hub-10.png)
 
@@ -135,9 +141,34 @@ Your content template is now available in [!DNL Journey Optimizer] and ready to 
 
 ➡️ [Learn more on Content template](../content-management/use-content-templates.md)
 
+## Import fragments {#import-fragments}
+
+Fragments are reusable building blocks within an email, such as headers, footers, or promotional blocks, that you build once and reuse across multiple emails for consistency and faster authoring. When you migrate an email, [!DNL Journey Optimizer] identifies any content blocks it references and surfaces them as an action item, so you can migrate them alongside the email.
+
+1. From the **[!UICONTROL Fragments]** tab, choose how you want to import your fragment:
+
+    * **[!UICONTROL Upload HTML]**: Select one or more HTML fragment files from your computer.
+
+    * **[!UICONTROL Browse from connection]**: Browse and select fragments directly from your connected marketing platform, without needing to export and upload files manually.
+
+    ![Fragments tab with options to upload HTML or browse from a connection](assets/onboarding-fragment-1.png)
+
+1. You can also import fragments while migrating an email. As it migrates the email, [!DNL Journey Optimizer] scans it, identifies any referenced content blocks, and surfaces them as fragment action items on the email, so you can resolve them without leaving the email migration flow.
+
+    ![Fragment action item on an email, showing a detected content block waiting to be resolved](assets/onboarding-fragment-2.png)
+
+1. For import from connection, choose from the Fragments list and click **[!UICONTROL Import]**.
+
+1. Open your imported Fragment and resolve its remaining action items, for example, assets or corresponding profile attributes. 
+
+    ![Imported fragment with its remaining action items to resolve](assets/onboarding-fragment-3.png)
+
+1. Once your Fragment is ready, select **[!UICONTROL Migrate]**, then select **View fragment** to open it.
+
+
 ## Import journeys {#import-journeys}
 
-Recreate your journeys by importing a screenshot of the journey flow, or by connecting to your source platform.
+Recreate your journeys by importing a screenshot of the journey flow, or by connecting to your source platform. Journeys are prepared as editable drafts you can review on a visual canvas before they are migrated, so you get a guided checklist of everything that needs your input first, instead of migrating blind.
 
 1. From the **[!UICONTROL Journeys]** tab, choose how you want to import your journeys:
 
@@ -147,7 +178,7 @@ Recreate your journeys by importing a screenshot of the journey flow, or by conn
 
     ![Journeys tab with options to upload screenshots or browse from a connection](assets/onboarding-hub-11.png)
 
-1. For an HTML upload, browse for your file or drag and drop it into the upload area. Click **[!UICONTROL Upload]** once done.
+1. For a screenshoot upload, browse for your file or drag and drop it into the upload area. Click **[!UICONTROL Upload]** once done.
     
     Files must be in .png, .jpg, .gif, .webp format and no larger than 5 MB.
 
@@ -155,37 +186,46 @@ Recreate your journeys by importing a screenshot of the journey flow, or by conn
 
 1. For import from connection, choose from the journeys list and click **[!UICONTROL Import]**.
 
-1. Preview the journey that the workspace generates from your source.
+1. Open the journey to preview it on the interactive canvas. The full journey is rendered as a node-and-edge canvas, and nodes that need attention are badged inline.
 
-1. From the **[!UICONTROL Action items]** pane, resolve each item based on the type of activity it belongs to:
+1. From the **[!UICONTROL Action items]** panel, resolve each item before migrating. The panel header shows a live count of resolved items out of the total, and selecting an action item highlights the matching node on the canvas. Action items include:
 
-    * For each message step, select a channel configuration and content template.
-    * For each **[!UICONTROL Audience]** activity, select the audience.
-
-1. Select **[!UICONTROL Apply changes]**, then select **View in [!DNL Journey Optimizer]** to open the journey canvas.
+    * **[!UICONTROL Journey name]**: Set the journey name before migration.
+    * **[!UICONTROL Content templates]**: Select the appropriate content template for journey actions that require one. Email templates are validated as they are selected, with any validation issues shown directly on the action item.
+    * **[!UICONTROL Channel configurations]**: Select the required configuration for channels such as email and SMS.
+    * **[!UICONTROL Audience segments]**: Map source audiences to the appropriate [!DNL Journey Optimizer] audiences.
 
     ![Action items pane with resolved activities and the Apply changes button](assets/onboarding-hub-12.png)
 
-Your journey is now available in [!DNL Journey Optimizer], where you can review the canvas, make any final adjustments, and activate it when you are ready to go live.
+1. Once every action item is resolved, select **[!UICONTROL Migrate]**.
+
+    [!DNL Journey Optimizer] runs a final check on the journey, re-validating email templates and confirming the journey name is set. Any missing or invalid information blocks migration and appears inline on the relevant action items. Once the check passes, a confirmation step guards against accidental migrations, and the page then reflects the processing status.
+
+1. If you no longer need a journey migration, delete it either from the journey list or from the menu inside an open journey.
+
+    ![Action items pane with resolved activities and the Apply changes button](assets/onboarding-hub-16.png)
+
+Your journey is now available in [!DNL Journey Optimizer], where you can review the canvas, make any final adjustments, and activate it when you are ready to go live. Select **[!UICONTROL View journey]** to open the migrated journey directly in [!DNL Journey Optimizer]. If a migration completes but some action items could not be applied, you are told exactly how many and pointed to [!DNL Journey Optimizer] to finish them.
 
 ➡️ [Learn more on Journey creation](../building-journeys/journey-gs.md)
 
 ## Track migration {#track-migration-progress}
 
-The workspace overview helps you keep track of every email you have imported and quickly find the ones still awaiting action. Each imported email shows a status of needs review, migrated, or failed, so you can see where it stands at a glance. A set of KPIs at the top of the screen gives you an at-a-glance count of items in each status:
+The workspace overview helps you keep track of every email or journey you have imported and quickly find the ones still awaiting action. A set of KPIs at the top of the screen gives you an at-a-glance count of items in each status:
 
-* **Total emails** (or **Total journeys**): The overall number of items imported into the workspace.
+* **Total**: The overall number of items imported into the workspace.
 * **In Progress**: Items that are still being reviewed or mapped before they can be migrated.
 * **Migrated**: Items that were successfully converted and are available in [!DNL Journey Optimizer].
 * **Failed**: Items that could not be migrated and need attention.
 
 ![Workspace overview with KPIs for total, in progress, migrated, and failed items](assets/onboarding-hub-4.png)
 
-A set of filters lets you narrow down the list of imported email content so you can focus on a specific subset instead of scrolling through every item. Combine one or more of the following filters to find what you are looking for:
+A set of filters lets you narrow down the list of imported content so you can focus on a specific subset instead of scrolling through every item. Combine one or more of the following filters to find what you are looking for:
 
-* **[!UICONTROL Status]**: Show only emails with a specific status, such as **[!UICONTROL Needs review]**, **[!UICONTROL Migrated]**, or **[!UICONTROL Failed]**.
-* **[!UICONTROL Created]**: Show emails imported within a specific date range.
-* **[!UICONTROL Updated]**: Show emails last modified within a specific date range.
+* **[!UICONTROL Action required]**: The item has unresolved action items and needs your input before it can be migrated.
+* **[!UICONTROL Processing]**: The item is currently being migrated.
+* **[!UICONTROL Migrated]**: The item was successfully migrated and is available in [!DNL Journey Optimizer].
+* **[!UICONTROL Failed]**: The migration could not complete and needs attention.
 
 ![Filter options for status, created date, and updated date in the workspace](assets/onboarding-hub-5.png)
 

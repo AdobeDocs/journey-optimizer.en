@@ -33,7 +33,7 @@ For complete understanding, this information should be combined with the documen
 * For custom upload and Federated Audience Composition, when no match is found between a record and a Unified Profile Service profile a new empty profile is created; standard targeting fields (for example personalEmail.address, mobilePhone.number) are empty and cannot be used for targeting unless the execution field is set to 'identityMap'.
 * Every record in a custom upload or Federated Audience Composition audience is activated, including duplicates, so the number of activated records may differ from the number of profiles after identity stitching.
 * The use of audiences and attributes from audience composition is currently unavailable with Healthcare Shield or Privacy and Security Shield.
-* Audiences are ready for use right after ingestion completes, typically within one hour but subject to variability; audiences resulting from compositions should be available 24 hours after publishing.
+* Audiences are ready for use after ingestion completes; this is typically within one hour, but timing can vary. This estimate describes audience availability only; it does not specify when enrichment attributes from custom-upload audiences become available in journey conditions or personalization, and it is not a guaranteed availability time. Audiences resulting from compositions should be available 24 hours after publishing.
 * For Read-audience journeys scheduled daily, if the segmentation job does not complete within the defined time window, the journey is skipped until its next occurrence.
 * You cannot target audiences created using composition workflows, custom upload, or Federated Audience Composition in an Audience Qualification activity; only audiences created using segment definitions can be used there.
 * Only audiences generated using segment definition, audience compositions, custom upload (CSV file), and Federated audience composition can be targeted directly in journeys and campaigns; a non-supported audience (such as a Customer Journey Analytics audience) must be wrapped in a new segment definition in the Audience portal.
@@ -48,11 +48,11 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: Which audiences can I target in Journey Optimizer campaigns and journeys?** — Audiences generated using segment definitions, custom upload, composition workflows, or Federated Audience Composition.
-* **Q: How long after ingestion can I use an audience?** — Right after ingestion completes, typically within one hour but subject to variability; composition audiences should be available 24 hours after publishing.
+* **Q: How long after ingestion can I use an audience?** — Audiences are ready for use after ingestion completes; this is typically within one hour, but timing can vary. This estimate describes audience availability only; it does not specify when enrichment attributes from custom-upload audiences become available in journey conditions or personalization, and it is not a guaranteed availability time. Composition audiences should be available 24 hours after publishing.
 * **Q: Why can I not preview or proof a custom upload or Federated Audience Composition audience?** — Preview and proof are currently not supported for audiences created using CSV upload or Federated Audience Composition.
 * **Q: Can I use a composition or custom upload audience in an Audience Qualification activity?** — No; due to their batch nature only audiences created using segment definitions can be leveraged in that activity.
 * **Q: How do I target a non-supported audience such as a Customer Journey Analytics audience?** — Wrap it in a new segment definition in the Audience portal, then wait for the segmentation evaluation to complete before using it.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 6075edc3 -->
+<!-- ai-section-version: 1 | source-hash: d9ce312c -->

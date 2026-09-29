@@ -33,7 +33,7 @@ For complete understanding, this information should be combined with the documen
 * To access and edit web subdomains, you must have the Manage Web Subdomains permission on the production sandbox.
 * Web subdomain configuration is common to all environments, and any modification also impacts the production sandboxes.
 * You can create several web subdomains, but only the default subdomain is used, and only one can be used at a time.
-* Journey Optimizer allows you to delegate up to 10 subdomains in total (covering both email and web channels); depending on your license contract you may be able to delegate up to 100 subdomains.
+* Journey Optimizer allows you to delegate up to 10 subdomains in total (covering both email and web channels); depending on your license contract you may be able to delegate up to 3000 subdomains.
 * Capital letters are not allowed in subdomains.
 * You cannot use an existing web subdomain, and you cannot select a subdomain that is already used as a web subdomain.
 * When configuring a new subdomain, Adobe's required checks can take up to 4 hours before the subdomain can be used to send web messages.

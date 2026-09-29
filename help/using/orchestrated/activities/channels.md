@@ -233,11 +233,20 @@ Switch to the **[!UICONTROL Content]** tab to create your message. The process s
 <td><a href="../../mobile/create-mobile-message.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a><br/><a href="../../mobile/create-mobile-message.md"><strong>Create an SMS</strong></a></td>
 <td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a><a href="../../push/create-push.md"><strong>Create a push notification</strong></a></td><td><a href="../../direct-mail/create-direct-mail.md"><img alt="direct mail" src="../../channels/assets/do-not-localize/direct-mail.jpg"></a><a href="../../direct-mail/create-direct-mail.md"><strong>Create a direct mail</strong></a></td><td><a href="../../custom-channel/create-custom-channel.md"><img alt="custom channel" src="../../channels/assets/do-not-localize/web.jpg"></a><br/><a href="../../custom-channel/create-custom-experience.md"><strong>Create a custom action</strong></a></td><td><a href="../../line/get-started-line.md"><img alt="line" src="../../channels/assets/do-not-localize/line.jpg"></a><br/><a href="../../line/get-started-line.md"><strong>Create a LINE message (LA)</strong></a></td></tr></table>
 
-### Add personalization {#add-personalization}
+### Add personalization and conditional content{#add-personalization}
 
 From the message editor on a channel activity, insert **[!UICONTROL Profile attributes]** and **[!UICONTROL Target attributes]** from the campaign worktable (targeting dimension and enrichment data).
 
 ➡️ [Learn how to add personalization in Orchestrated campaigns](../add-personalization.md), including enrichment collection arrays, array functions, and `{{#each}}` iteration.
+
+![](../assets/oc-personalization.png)
+
+When creating conditional content for an email delivery, you can use **[!UICONTROL Target]** attributes from the campaign worktable. These attributes include incoming audience or enrichment data from relational schemas, so you can show different content based on the target record. Conditions are specific to the current delivery and cannot be saved as reusable conditions.
+
+➡️ [Learn how to create conditional content in the Email Designer](../../personalization/dynamic-content.md#emails).
+
+
+![](../assets/conditional-content-target.png)
 
 ### Check and test your content {#simulate-content-test-profiles}
 

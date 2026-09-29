@@ -109,6 +109,8 @@ In some cases, you must republish a journey for changes or assets to remain effe
 
 In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas.
 
+You can also use AI in Coworker to compare journey versions. For more details, see [Journey Version Comparison](journeys-coworker-skills.md#journey-version-comparison).
+
 ![Journey versions list showing published and draft versions](assets/journeyversions1.png)
 
 >[!NOTE]

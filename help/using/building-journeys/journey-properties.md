@@ -151,15 +151,15 @@ To assign custom data usage labels to the journey, click the **[!UICONTROL Manag
 >title="Current journey payload size"
 >abstract="Displays the current size of the journey payload compared to the configured limit. This indicator helps monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded."
 
-The **[!UICONTROL Current journey payload size]** field in the journey properties panel displays the current size of your journey's payload in relation to the configured limit — for example, *1.5 MB (out of 2 MB)*. This read-only indicator is visible at any stage of journey authoring.
+The **[!UICONTROL Current journey payload size]** field in the journey properties panel displays the current size of the serialized journey definition in relation to the configured limit — for example, *1.5 MB out of 2 MB*. This read-only indicator is available during journey authoring.
 
 ![Current journey payload size indicator in the journey properties panel](assets/journey-payload-size.png){width="50%" zoomable="yes"}
 
-Use this information to monitor the complexity of your journey before publishing. If the payload size approaches or exceeds the limit, journey publication fails. To reduce the size, consider simplifying the journey logic or reducing the number of activities.
+The value reflects the saved configuration of the journey, including its activities, expressions, conditions, data mappings, parameters, and actions. It is not calculated from the activity count alone. If the payload approaches the configured limit, Journey Optimizer displays a warning. If the payload reaches or exceeds the configured limit, saving or publishing the journey is blocked.
 
-The default limit is 4 MB. Contact Adobe Customer Care if you need to request a higher limit for your organization.
+The default maximum journey payload size is **2 MB (2,000,000 bytes)**. Some organizations may have custom limits configured by Adobe. Contact your Adobe representative if you need information about an organization-specific limit.
 
-For full details on thresholds, warning and error messages, and troubleshooting steps, refer to [Journey payload size validation](../start/guardrails.md#journey-payload-size) and [General journey guardrails](../start/guardrails.md#journeys-guardrails-journeys).
+For details about thresholds, the largest contributing activities, error behavior, and reduction strategies, refer to [Journey payload size validation](../start/guardrails.md#journey-payload-size) and [General journey guardrails](../start/guardrails.md#journeys-guardrails-journeys). Referenced entities, such as email content referenced by an Email action, are not included in the serialized journey payload; email message content is subject to a separate size guardrail.
 
 ## Journey and profile timezones {#timezone}
 
@@ -193,6 +193,11 @@ Any configured start and end dates are surfaced directly in the **journey header
 If no start or end date is defined, no date information appears in the header.
 
 ## Timeout {#timeout}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_recovery_timeout"
+>title="Set event recovery timeout"
+>abstract="Controls how long the journey automatically replays events impacted by a service interruption. Off by default (72-hour automatic replay); turn on to adjust the replay window from 0 to 72 hours for time-sensitive journeys."
 
 Timeout settings control how long a journey waits for activity execution and how long profiles can remain in a journey.
 
@@ -531,7 +536,7 @@ A [global journey timeout](#global_timeout) stops a profile **91 days** after th
 
 **Why does my journey fail to publish because of payload size?**
 
-The **[!UICONTROL Current journey payload size]** indicator shows your journey's payload against the configured limit (4 MB by default). If the payload approaches or exceeds the limit, publication fails. Reduce the size by simplifying the journey logic or reducing the number of activities, or contact Adobe Customer Care to request a higher limit. See [Journey payload size](#journey-payload-size), [Journey payload size validation](../start/guardrails.md#journey-payload-size), and [General journey guardrails](../start/guardrails.md#journeys-guardrails-journeys).
+The **[!UICONTROL Current journey payload size]** indicator shows the serialized journey definition against the configured limit (**2 MB (2,000,000 bytes)** by default). The value reflects the saved configuration of the journey, not the activity count alone. A warning is displayed when the payload reaches 90% of the limit; saving or publishing is blocked at 100% or more. Reduce the size by simplifying expressions, conditions, data mappings, or parameters. See [Journey payload size](#journey-payload-size), [Journey payload size validation](../start/guardrails.md#journey-payload-size), and [General journey guardrails](../start/guardrails.md#journeys-guardrails-journeys).
 
 **Which merge policy does my journey use?**
 

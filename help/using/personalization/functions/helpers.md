@@ -290,6 +290,11 @@ The `valueAtPath` helper assigns a value from a data path to a template variable
 | `idx` | Optional 0-based index used to extract a specific element from an array or collection. |
 | `result` | The variable name that stores the extracted value. |
 
+**Limitations**
+
+* The `idx` value must identify an existing item in the array or collection. Index counting starts at 0, so the first item is at index 0. If the index is outside the available range, rendering throws an exception.
+* The `path` parameter must be a data path. PQL expressions are not supported.
+
 **Example**
 
 ```handlebars
@@ -462,4 +467,3 @@ You can apply the helper to one parameter, several, or all parameters in a link,
 * Revoked keys must not be used for new encryption. Follow your security policy for rotation and decommissioning.
 
 * The encryption process being ressource-intensive, using the `Encrypt` function may impact throughput at render time.
-

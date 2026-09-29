@@ -119,6 +119,10 @@ To set quiet hours, create a rule inside a custom rule set. [Learn how to create
 
          ![](assets/quiet-hours-weekly.png)
 
+         When a weekly period crosses midnight, the selected day is the day the period starts. For example, a Monday 9:00 PM–9:00 AM period covers Monday 9:00 PM through Tuesday 9:00 AM; it does not cover Monday 12:00 AM–9:00 AM.
+
+         Review weekly periods together to make sure they cover the intended days continuously, especially at midnight and at the start or end of the week. For example, a Saturday and Sunday all-day period combined with Monday–Friday 9:00 PM–9:00 AM periods leaves Monday 12:00 AM–9:00 AM uncovered. To extend quiet hours through Monday 9:00 AM, include Sunday in the 9:00 PM–9:00 AM period.
+
       * **[!UICONTROL Custom date]** - Choose specific dates in the calendar and a timeslot. You can also enforce the rule **[!UICONTROL All day]**.
 
          ![](assets/quiet-hours-custom.png)

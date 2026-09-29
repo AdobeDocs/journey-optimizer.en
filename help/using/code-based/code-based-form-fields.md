@@ -176,6 +176,10 @@ Below are a few examples of JSON and HTML templates, some of them including deci
 
 **JSON template with decisioning:**
 
+>[!IMPORTANT]
+>
+>When you render string values from decision items in a JSON array, enclose the Handlebars expressions in double quotes. Keep the quotes around expressions inside the `{{#each}}` block; otherwise, the code-based experience may not render the offer array correctly.
+
 ```
 { 
 "offer": [ 

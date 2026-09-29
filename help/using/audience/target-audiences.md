@@ -60,7 +60,7 @@ You can select in campaigns and journeys any audience generated using segment de
 
 ## Audiences activation delay {#activation}
 
-Audiences are ready for use in [!DNL Journey Optimizer] right after ingestion completes. While this is typically within one hour, it's subject to some variability. Audiences resulting from compositions should be available 24 hours after publishing.
+Audiences are ready for use in [!DNL Journey Optimizer] after ingestion completes. This is typically within one hour, but timing can vary. This estimate describes audience availability only; it does not specify when enrichment attributes from custom-upload audiences become available in journey conditions or personalization, and it is not a guaranteed availability time. Verify that the audience and its enrichment attributes are available before using them in a journey. Audiences resulting from compositions should be available 24 hours after publishing.
 
 For audiences resulting from batch segmentation jobs, activation may be delayed due to batch ingestion variability. For Read-audience journeys scheduled daily, you can define a time window in the journey properties to ensure fresh audience data is available before journey execution.
 

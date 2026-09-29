@@ -209,6 +209,10 @@ Adobe Experience Manager allows you to identify the Journey Optimizer campaigns 
 
 AEM Content Fragments can also be used as offer item attributes in **Experience Decisioning**. By mapping Content Fragment fields to decision item attributes, you can use Journey Optimizer decisioning models, formulas, and ranking criteria to optimize which fragment is served to each profile.
 
+>[!NOTE]
+>
+>AEM Content Fragments in Decisioning are available to customers integrating Adobe Experience Manager **as a Cloud Service** or **Managed Services** with Adobe Journey Optimizer. [Learn more](aem-fragments-gs.md)
+
 ### Prerequisites and guardrails
 
 * Content Fragments must be tagged in Adobe Experience Manager with the `ajo-enabled:{OrgId}/{SandboxName}` tag before they appear in the decisioning selector. [Learn how to create and assign a tag](#create-tag)
@@ -221,6 +225,10 @@ Once the AEM Content Fragment has been created and published, you need to:
 
 1. Tie it to a decision item by selecting it in the decision item's attributes.
 1. Leverage it in a decision policy to surface the right content to the right customer.
+
+>[!NOTE]
+>
+>AEM Content Fragments in Decisioning are supported for both **Adobe Experience Manager as a Cloud Service** and **Adobe Experience Manager Managed Services**. [Learn more](aem-fragments-gs.md)
 
 ➡️ [Tie an AEM Content Fragment to a decision item](../experience-decisioning/items.md#aem-fragments)
 
