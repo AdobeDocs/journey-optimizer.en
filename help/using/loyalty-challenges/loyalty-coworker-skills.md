@@ -45,14 +45,14 @@ Loyalty Challenge Management enables Journey Optimizer users to create and manag
 
 ### Key use cases
 
-| Use case | Description | Sample prompts |
+| Use Case | Description | Skills | Sample Prompts |
 | --- | --- | --- |
-| Multi-step onboarding challenge |  | Build a challenge called "New Account Kickstart" for newly enrolled customers that requires them to complete these steps in order: open a checking account, fund it with at least $500, and download the mobile app. When all steps are done, reward them with 5,000 bonus points. Run it from September 1 to October 31, Eastern timezone. |
-| Cumulative activity threshold challenge |  | Create a challenge called "Spend & Earn Summer" for cardholders where members earn a $50 statement credit once they spend $1,500 on their credit card during the third quarter. Start it July 1, Eastern timezone. |
-| Frequency streak challenge |  | Create a challenge called "Frequent Flyer Sprint" for elite tier members that requires 3 flights per month for two consecutive months. Reward completion with a tier-status extension and 10,000 bonus miles. Start the first of next month, Pacific timezone. |
-| Single qualifying action challenge |  | Set up a challenge named "Go Paperless" that rewards postpaid subscribers with 500 bonus points after they enroll in autopay and switch to paperless billing within 30 days. Begin on the first of next month, Central timezone. |
-| Engagement / consumption goal challenge |  | Create a challenge called "Explorer Badge" for members that requires them to complete 5 activities across at least 3 different categories during the month of August. Reward them with 1,000 points and an "Explorer" badge on completion. Start August 1, Mountain timezone. |
-| Daily action challenge |  | Help me create a challenge for matcha lovers that requires them to come into the store every day this week and buy a matcha drink. Their reward should be an extra 200 points if they complete the challenge. Call it "Mad about Matcha", use SKU matcha-001, start it Monday next week, Eastern timezone. |
+| Multi-step onboarding challenge |  | Loyalty Challenge Management | Build a challenge called "New Account Kickstart" for newly enrolled customers that requires them to complete these steps in order: open a checking account, fund it with at least $500, and download the mobile app. When all steps are done, reward them with 5,000 bonus points. Run it from September 1 to October 31, Eastern timezone. |
+| Cumulative activity threshold challenge |  | Loyalty Challenge Management | Create a challenge called "Spend & Earn Summer" for cardholders where members earn a $50 statement credit once they spend $1,500 on their credit card during the third quarter. Start it July 1, Eastern timezone. |
+| Frequency streak challenge |  | Loyalty Challenge Management | Create a challenge called "Frequent Flyer Sprint" for elite tier members that requires 3 flights per month for two consecutive months. Reward completion with a tier-status extension and 10,000 bonus miles. Start the first of next month, Pacific timezone. |
+| Single qualifying action challenge |  | Loyalty Challenge Management | Set up a challenge named "Go Paperless" that rewards postpaid subscribers with 500 bonus points after they enroll in autopay and switch to paperless billing within 30 days. Begin on the first of next month, Central timezone. |
+| Engagement / consumption goal challenge |  | Loyalty Challenge Management | Create a challenge called "Explorer Badge" for members that requires them to complete 5 activities across at least 3 different categories during the month of August. Reward them with 1,000 points and an "Explorer" badge on completion. Start August 1, Mountain timezone. |
+| Daily action challenge |  | Loyalty Challenge Management | Help me create a challenge for matcha lovers that requires them to come into the store every day this week and buy a matcha drink. Their reward should be an extra 200 points if they complete the challenge. Call it "Mad about Matcha", use SKU matcha-001, start it Monday next week, Eastern timezone. |
 
 
 ### Prompting best practices
@@ -64,17 +64,25 @@ Loyalty Challenge Management enables Journey Optimizer users to create and manag
 * **State the reward**: Points, miles, statement credits, status extensions, vouchers, or perks granted on completion.
 * **Reference the qualifying event**: Point to the specific SKU, product, account action, or engagement event the challenge tracks.
 
+### Out of scope skills
+
+The following functionalities are currently not supported:
+
+* Challenge deletion
+* Loyalty insights and recommendations skills
+* Full content authoring automation for challenge messaging in all cases
+
 ## Loyalty Insights Skill {#loyalty-data-insight}
 
 Loyalty Insights Skill enables Journey Optimizer users to analyze and query loyalty program performance data using natural language. This skill provides insights into loyalty points, member tiers, redemptions, and revenue metrics, allowing loyalty administrators and analysts to make data-driven decisions about their loyalty programs.
 
 Key use cases:
 
-| Use case | Description | Sample prompts |
+| Use Case | Description | Skills | Sample Prompts |
 | --- | --- | --- |
-| Loyalty points analysis | Analyze loyalty points granted, earned, and redeemed over specific periods. Compare loyalty point activities across different loyalty tiers and programs. Track loyalty points balance by member segment. | How many loyalty points were granted during August 2026?<br><br>How many loyalty points were gained by members in each loyalty tier during August 2026?<br><br>Show me the total loyalty points redeemed by member loyalty status—not loyalty tier—during August 2026.<br><br>Show the total loyalty points balance broken down by loyalty tier during August 2026. |
-| Revenue and discount analysis | Analyze order revenue and loyalty discount trends by tier and program. Compare revenue generation across loyalty programs and time periods. Track discount impact on revenue and member engagement. | What was the total order revenue for each loyalty tier during August 2026?<br><br>How much in loyalty discounts was applied to each loyalty tier during August 2026?<br><br>Show the total loyalty discounts broken down by loyalty program during August 2026.<br><br>What was the total order revenue generated by each loyalty program during August 2026? |
-| Program performance insights | Analyze daily, weekly, and monthly program performance metrics. Compare performance across product categories and discount strategies. Identify trends in member engagement and redemption patterns. | Show the loyalty program's total revenue broken down by day during August 2026.<br><br>Show the total loyalty discounts broken down by product category during August 2026.<br><br>Show me the loyalty program performance report for Q3 2026. |
+| Loyalty points analysis | Analyze loyalty points granted, earned, and redeemed over specific periods. Compare loyalty point activities across different loyalty tiers and programs. Track loyalty points balance by member segment. | Loyalty Insights | How many loyalty points were granted during August 2026?<br><br>How many loyalty points were gained by members in each loyalty tier during August 2026?<br><br>Show me the total loyalty points redeemed by member loyalty status—not loyalty tier—during August 2026.<br><br>Show the total loyalty points balance broken down by loyalty tier during August 2026. |
+| Revenue and discount analysis | Analyze order revenue and loyalty discount trends by tier and program. Compare revenue generation across loyalty programs and time periods. Track discount impact on revenue and member engagement. | Loyalty Insights | What was the total order revenue for each loyalty tier during August 2026?<br><br>How much in loyalty discounts was applied to each loyalty tier during August 2026?<br><br>Show the total loyalty discounts broken down by loyalty program during August 2026.<br><br>What was the total order revenue generated by each loyalty program during August 2026? |
+| Program performance insights | Analyze daily, weekly, and monthly program performance metrics. Compare performance across product categories and discount strategies. Identify trends in member engagement and redemption patterns. | Loyalty Insights | Show the loyalty program's total revenue broken down by day during August 2026.<br><br>Show the total loyalty discounts broken down by product category during August 2026.<br><br>Show me the loyalty program performance report for Q3 2026. |
 
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-loyalty-coworker-skills.md}}
