@@ -292,8 +292,8 @@ The `valueAtPath` helper assigns a value from a data path to a template variable
 
 **Limitations**
 
-* Array indices are 0-based, so the first element is at index 0. If `idx` is out of bounds, an exception is thrown at rendering time. Make sure the index exists before you use it.
-* PQL expressions cannot be used as the `path` parameter.
+* The `idx` value must be a valid zero-based index for the array or collection. If the index is outside the available range, rendering throws an exception. Validate the index before using it when its value may vary.
+* The `path` parameter must be a data path. PQL expressions are not supported.
 
 **Example**
 
@@ -467,4 +467,3 @@ You can apply the helper to one parameter, several, or all parameters in a link,
 * Revoked keys must not be used for new encryption. Follow your security policy for rotation and decommissioning.
 
 * The encryption process being ressource-intensive, using the `Encrypt` function may impact throughput at render time.
-
