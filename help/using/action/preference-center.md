@@ -124,9 +124,9 @@ The corresponding profile dataset is updated as follows:
 | john.black@lumamail.com | Y | N |
 -->
 
-    >[!NOTE]
-    >
-    >The incoming consent events feed into the customer profile, ensuring real-time updates. Each profile reflects their most recent choices across the subscription preferences.
+  >[!NOTE]
+  >
+  >The incoming consent events feed into the customer profile, ensuring real-time updates. Each profile reflects their most recent choices across the subscription preferences.
 
 1. In Adobe Experience Platform, create a custom policy (from the **[!UICONTROL Privacy]** > **[!UICONTROL Policies]** menu). [Learn how](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#create-policy){target="_blank"}
 
@@ -154,9 +154,9 @@ Consent policies are comprised of two logical components:
 
     ![](assets/consent-policy-email-newsletter.png){width=80%}
 
-    >[!TIP]
-    >
-    >The Profile-enabled dataset must include the profile attribute **[!UICONTROL Newsletter_Email]** with the value set to `true` (such as described in step 1.)
+  >[!TIP]
+  >
+  >The Profile-enabled dataset must include the profile attribute **[!UICONTROL Newsletter_Email]** with the value set to `true` (such as described in step 1.)
 
 1. Once you created the consent policy, leverage it in [!DNL Journey Optimizer] using [channel configurations](consent.md#surface-marketing-actions) or [journey custom actions](consent.md#journey-custom-actions).
 

@@ -104,7 +104,7 @@ Follow these steps to configure an Agentic Translation provider with an LLM and 
         * **[!UICONTROL Base Path]**: Provide the endpoint URL for your Azure OpenAI resource.
         * **[!UICONTROL Deployment Name]**: Specify the deployment associated with the model.
   
-      +++
+        +++
 
     * +++ **[!UICONTROL Gemini (Vertex AI)]**
 
@@ -112,7 +112,7 @@ Follow these steps to configure an Agentic Translation provider with an LLM and 
         * **[!UICONTROL Service Account Credentials]**: Upload or provide the credentials for your Google Cloud service account.
         * **[!UICONTROL Location]**: Select the Google Cloud region where the model is hosted.
 
-      +++
+        +++
 
 1. Click **[!UICONTROL Save]** and access the **[!UICONTROL Locales]** tab.
 
