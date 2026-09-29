@@ -292,6 +292,8 @@ The following capability is coming to content management in this release.
 
   Availability date: September 22, 2026.
 
+* [!BADGE Deprecation]{type=Negative} **Batch audiences no longer supported in Audience Qualification and Exit Criteria** - Starting September 2026, new, draft, and duplicated journeys that use a batch audience in an Audience Qualification node or Exit Criteria cannot be published. Existing live journeys continue to run; if you stop, duplicate, or republish one, publication is blocked until you update its configuration. Use a streaming audience for Audience Qualification or Exit Criteria, or a Read Audience activity for batch-based journey entry. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
+
 * **Trigger after batch audience evaluation** - For recurring journeys that target batch audiences, you can configure a wait window of up to 6 hours for a fresh batch evaluation before the journey runs. If an evaluation is in progress, the journey waits for it to complete; if the latest snapshot was used by the previous run, it waits for a newer batch. If no fresh audience is available by the end of the wait window, that occurrence is skipped. [Learn more](../building-journeys/read-audience.md)
 
   Availability date: September 18, 2026
