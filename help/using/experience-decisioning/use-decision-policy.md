@@ -129,6 +129,16 @@ You can also insert the decision policy code when using the **[!UICONTROL Code y
 >
 >The total payload size of a web channel response must not exceed **64 KB**. Requests exceeding this limit will result in an error. Ensure your decision items and attributes remain within this threshold.
 
+>[!TAB Custom channel]
+
+1. Open the payload editor by clicking **[!UICONTROL Edit code]**, then open the **Personalization Editor** on the field you want to personalize.
+
+2. Navigate to **[!UICONTROL Decision policies]**.
+
+3. Select **[!UICONTROL Insert syntax]** to add the code for your decision policy.
+
+   ![](assets/decision-policy-add-custom-channel-insert-syntax.png)
+
 >[!TAB Direct Mail]
 
 1. From the extraction file configuration, open the **Personalization Editor** (for example, in the **[!UICONTROL Data]** field of a column).
@@ -140,10 +150,6 @@ You can also insert the decision policy code when using the **[!UICONTROL Code y
 3. Use the returned decision item attributes as column data so that the selected offer information is included in the extraction file for each profile. 
 
 >[!ENDTABS]
-
->[!NOTE]
->
->For custom channels, the decision policy insertion workflow through the personalization editor is the same as for the **Code-based Experience** channel described above. [Learn more](../custom-channel/create-custom-experience.md#personalize)
 
 The decision policy code is added. You can now use attributes from the returned decision items to personalize your content.
 

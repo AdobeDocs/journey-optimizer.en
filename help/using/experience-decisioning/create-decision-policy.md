@@ -201,6 +201,16 @@ For Push notifications, you can add a new decision policy using either the **per
  
 +++
 
+>[!TAB Custom channel]
+
+For custom channels, add a decision policy using the **personalization editor** available in the payload editor. [Learn how to author custom channel content](../custom-channel/create-custom-experience.md#author-content).
+
+1. Click **[!UICONTROL Edit code]** to open the payload editor, then open the personalization editor using the ![](assets/do-not-localize/editor-icon.svg) icon on the field you want to personalize.
+
+1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
+
+    ![](assets/decision-policy-add-custom-channel.png)
+
 >[!TAB Direct Mail]
 
 For direct mail, add a decision policy from the **extraction file** configuration. [Learn how to create a direct mail message](../direct-mail/create-direct-mail.md).
@@ -218,10 +228,6 @@ For direct mail, add a decision policy from the **extraction file** configuratio
 1. In the decision policy configuration screen, use the **[!UICONTROL Number of items]** field to define how many decision items to return for each profile (for example, 2 to export the top 2 eligible offers). Continue with [strategy setup](#strategy) and [personalization](use-decision-policy.md) in your extraction file columns.
 
 >[!ENDTABS]
-
->[!NOTE]
->
->For custom channels, add a decision policy the same way as for the **Code-based Experience** channel above, through the personalization editor. [Learn more](../custom-channel/create-custom-experience.md#personalize)
 
 ## Configure the decision policy {#configure}
 
