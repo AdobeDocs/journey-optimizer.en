@@ -30,13 +30,41 @@ SMS usage metrics are available when you purchase SMS through Adobe Journey Opti
 
 To view usage metrics, an administrator must:
 
-1. [Create a Sinch MMS API credential](mobile-configuration-sinch.md#sinch-mms) used only to retrieve usage data from Sinch.
-
-    Usage reports require an API credential with **[!UICONTROL SMS vendor]** set to **Sinch MMS**. This credential connects Journey Optimizer to Sinch so usage data can be retrieved. It is separate from Sinch credentials used to send SMS or MMS messages, although the field values come from the same Sinch project.
+1. [Create a Sinch MMS API credential](#sinch-mms) used only to retrieve usage data from Sinch.
 
 1. [Configure and retrieve an SMS usage report](#configure-sms-usage-report).
 
 These steps require the **[!UICONTROL Manage SMS settings]** permission. [Learn more about permissions](../administration/high-low-permissions.md#administration-permissions).
+
+## Create a Sinch MMS API credential {#sinch-mms}
+
+Usage reports require an API credential with **[!UICONTROL SMS vendor]** set to **Sinch MMS**. This credential lets Journey Optimizer retrieve usage data from Sinch. It is separate from the Sinch credentials used to send SMS or MMS messages, although the field values come from the same Sinch project.
+
+1. In the left rail, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL SMS Settings]**, then select **[!UICONTROL API Credentials]**. Click **[!UICONTROL Create new API credentials]**.
+
+    ![](assets/sms-report-api-1.png)
+
+1. Configure the credential as follows:
+
+    * **[!UICONTROL SMS vendor]**: Sinch MMS.
+
+    * **[!UICONTROL Name]**: enter a name for your API credential.
+
+    * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]**, and **[!UICONTROL API Token]**: use the steps below to retrieve the values from your Sinch project.
+
+        * For **[!UICONTROL Project ID]** and **[!UICONTROL App ID]**, open the [Conversation API Overview](https://dashboard.sinch.com/convapi/overview) page for your Sinch project in the Sinch Dashboard.
+        * For **[!UICONTROL API Token]**, obtain the [access keys](https://community.sinch.com/t5/Customer-Dashboard/Sinch-Access-Keys/ta-p/12638) for your Sinch project and use them to generate a **Base64 API token**.
+
+    ![](assets/sms-report-api-2.png)
+
+1. Click **[!UICONTROL Submit]** when you finish configuring the credential.
+
+1. To delete a credential, click the bin icon next to it in the **[!UICONTROL API Credentials]** menu.
+
+1. To modify a credential, locate it in the **[!UICONTROL API Credentials]** menu and click **[!UICONTROL Edit]**.
+
+The credential is now available for configuring SMS usage reports.
+
 
 ## Configure and view SMS usage reports {#configure-sms-usage-report}
 
