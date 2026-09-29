@@ -80,7 +80,7 @@ The **[!UICONTROL Journey Statistics]** table offers a detailed summary of cruci
 
 +++ Learn more about Journey Statistics metrics
 
-* **[!UICONTROL Journey exclusion]**: Total number of individuals who were excluded from the journey due to predefined criteria or suppression rules.
+* **[!UICONTROL Journey exclusion]**: Total number of profiles excluded from journey processing. This includes exclusions caused by business rules, audience-realization mismatches during journey entry, and exit-criteria realization mismatches.
 
 * **[!UICONTROL Journey engagement]**: Total number of unique individuals who received messages sent through the journey, representing distinct profiles that reached a designated action point in the journey.
 
@@ -100,7 +100,7 @@ The **[!UICONTROL Journey Statistics]** table offers a detailed summary of cruci
 
 ## Journey exclusion {#journey-exclusion}
 
-The **[!UICONTROL Journey exclusion]** table presents a comprehensive view of the different factors that resulted in the exclusion of user profiles. To investigate business rules-related exclusions at the Data Lake level and identify whether profiles were excluded due to a cap being reached or a lower priority, use the queries available in [this section](query-examples.md#business-rules-queries).
+The **[!UICONTROL Journey exclusion]** table presents the different factors that resulted in profiles being excluded from journey processing. The **[!UICONTROL Journey exclusion]** metric is not limited to profiles excluded from journey entry. It also includes profiles excluded when an exit criterion uses an audience-realization condition that does not match the profile's realization event, such as an `enter` event when the journey is configured for `exit`. To investigate business-rule exclusions at the Data Lake level and identify whether profiles were excluded because a cap was reached or because of lower priority, use the queries available in [this section](query-examples.md#business-rules-queries).
 
 ## Action error {#action-error}
 
