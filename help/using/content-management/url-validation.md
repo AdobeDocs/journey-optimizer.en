@@ -37,17 +37,21 @@ URL validation is available for channel actions in journeys and campaigns across
 1. From the **[!UICONTROL Simulate]** screen, check the URL validation icon:
 
     * If all URLs are valid, the icon shows a green check mark.
-    * If any URLs are invalid, the icon flags it. Click the icon to open a pop-up window that lists each invalid URL and the reason it's invalid.
+    * If any URLs are invalid, the icon flags it.
+    
+        ![](assets/simulate-urls-invalid.png){width=70%}
+        
+        Click the icon to open a pop-up window that lists each invalid URL and the reason why it's invalid.
 
-    ![](assets/simulate-validate-urls.png)
+      ![](assets/simulate-url-validation-failed.png)
 
 1. Click **[!UICONTROL Copy]** to copy the list to your clipboard, then paste it into a document or email for review.
 
 1. Close the window and fix the invalid URLs in your content. Learn more in the [Troubleshooting](#troubleshooting) section.
 
-1. Simulate the content again. Validation re-runs automatically. Repeat until the icon shows a green check mark.
+1. Simulate the content again for validation to re-run automatically. Repeat until the icon shows a green check mark.
 
-    ![](assets/simulate-urls-valid.png)
+    ![](assets/simulate-urls-valid.png){width=70%}
 
 ## How it works {#how-it-works}
 
@@ -85,7 +89,7 @@ The following aren't flagged as broken, even if they appear in your content:
 
 >[!IMPORTANT]
 >
->Personalized links are validated against whatever data you're previewing with in the **[!UICONTROL Simulate]** screen — entered manually, imported from a file, generated with AI, or based on **simulated users**. None of these are backed by a real Adobe Experience Platform profile, so the resolved URL may not exist, and the link is flagged as invalid even if it works for real recipients.
+>Personalized links are validated against whatever data you're previewing with in the **[!UICONTROL Simulate]** screen — entered manually, imported from a file, generated with AI, or based on simulated users. None of these are backed by a real Adobe Experience Platform profile, so the resolved URL may not exist, and the link is flagged as invalid even if it works for real recipients.
 >
 >For example, these links may show as invalid unless you're previewing with a real Adobe Experience Platform profile:
 >
