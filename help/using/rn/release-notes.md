@@ -295,9 +295,16 @@ The following capabilities and improvements are coming to content management in 
 </tbody>
 </table>
 
+
+* **Supplemental ID support in Journey simulation** - **Supplemental ID** is now supported in Journey simulation, allowing you to test complex user scenarios for both read-audience and event-triggered journeys. [Learn more](../building-journeys/simulate-journey-gs.md)
+
+  Availability date: September 28, 2026.
+
 * **Support for Jump activities in Audience Qualification journeys** - You can now use Jump activities in journeys that start with an Audience Qualification node to jump to event-based journeys. This capability is being progressively rolled out to organizations. If you don't see this in your environment, it may be because you're still using batch audiences in Audience Qualifications. [Learn more](../building-journeys/jump.md)
 
   Availability date: September 22, 2026.
+
+* [!BADGE Deprecation]{type=Negative} **Batch audiences no longer supported in Audience Qualification and Exit Criteria** - Starting September 2026, new, draft, and duplicated journeys that use a batch audience in an Audience Qualification node or Exit Criteria cannot be published. Existing live journeys continue to run; if you stop, duplicate, or republish one, publication is blocked until you update its configuration. Use a streaming audience for Audience Qualification or Exit Criteria, or a Read Audience activity for batch-based journey entry. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
 
 * **Trigger after batch audience evaluation** - For recurring journeys that target batch audiences, you can configure a wait window of up to 6 hours for a fresh batch evaluation before the journey runs. If an evaluation is in progress, the journey waits for it to complete; if the latest snapshot was used by the previous run, it waits for a newer batch. If no fresh audience is available by the end of the wait window, that occurrence is skipped. [Learn more](../building-journeys/read-audience.md)
 
@@ -384,8 +391,6 @@ The following capabilities and improvements are coming to content management in 
 </table>
 
 * **Hygiene Analysis skill** - CX Coworker can now scan your active and draft journeys for broken configurations, silent failures, and decaying or unused assets — such as stale draft journeys, orphaned data sources, and persistent custom action errors — and surface recommended fixes directly in chat. <!-- Documentation link: TBD -->
-
-* **Supplemental ID support in Journey simulation** - **Supplemental ID** is now supported in Journey simulation, allowing you to test complex user scenarios for both read-audience and event-triggered journeys. 
 
 * **Dry run step-event suppression for custom reports** - As part of step-event optimization, Journey Optimizer now stops generating certain non-reportable step events during Journey Dry Runs. This only affects custom reports built on these dry-run step-event types. If you're impacted, re-trigger the dry run to regenerate data.
 
@@ -818,6 +823,12 @@ The following capabilities and improvements are coming to decisioning in this re
 * **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually. [Learn more](../experience-decisioning/ranking/ranking-formulas.md#simulate-ranking-formula)
 
   Availability date: September 22, 2026
+
++++ Coming soon — **Information below is subject to change.**
+
+* **Build a ranking formula with AI** - A new AI assistant in the ranking formula builder lets you describe the ranking logic you want in plain language and generates a formula draft for you to review and apply.
+
++++
 
 ### Audiences {#sep-26-audiences}
 

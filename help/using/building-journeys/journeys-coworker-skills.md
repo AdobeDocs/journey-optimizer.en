@@ -21,15 +21,17 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover the CX Enterprise Coworker skills available for journeys in Adobe Journey Optimizer — creating journeys from natural language, generating channel content, and analyzing journey performance — with detailed guidance, example prompts, and best practices for each skill. 
+**On this page:** Explore Coworker capabilities in Adobe Journey Optimizer for creating journeys, generating channel content, analyzing performance, and simulating journey behavior.
+
+>[!ENDSHADEBOX]
+
+Coworker brings natural-language tools into Adobe Journey Optimizer to help you create and configure journeys, generate channel-specific content, analyze performance, and simulate journey behavior. Use Journey Create to configure flows, Channel Content Create to generate and refine messages, Journey Analyze to investigate performance and operational issues, and Journey Simulation to test journey logic.
 
 Learn more:
 
 * [Coworker skills for Journey Optimizer](../start/ai-features.md#cx-coworker-skills) — overview of Coworker skills across Journeys, Loyalty, Content Management, and Decisioning in Journey Optimizer.
 * [Coworker documentation](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/overview){target="_blank"} — overview of Coworker's Campaigns, Chat, and Projects capabilities.
 * [Coworker Chat UI guide](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/ui-guide){target="_blank"} — how to access and navigate Coworker Chat.
-
->[!ENDSHADEBOX]
 
 ## Journey Create {#journey-create}
 
@@ -57,25 +59,28 @@ Journey Create offers capabilities that can be leveraged to accelerate marketing
    * Design automated responses to customer actions in real-time.
    * Build personalized communication flows based on customer behavior.
 
-   **Store visit journey:**
-   "Create a journey that starts when a user enters my store location. Send a push notification to welcome users to the store. Wait 2 days and check to see if the user has a valid email address. If the user has a valid email address, send an email survey to ask about their store experience. If the user does not have a valid email address, send a push notification to prompt for registration."
+   >[!BEGINSHADEBOX "Prompt samples"]
 
-   **Post-purchase journey:**
-   "Create a journey that starts when a customer makes a purchase online. Send a push notification to thank them for their purchase. Next, check to see if they are loyalty members. If the user is a loyalty rewards member, send a second push notification with a 10% discount code. If the user is not a loyalty rewards member, send a push inviting them to sign up for the loyalty program. Wait 2 days and send a follow-up push with a survey about their purchase experience."
+   * **Store visit journey:** Create a journey that starts when a user enters my store location. Send a push notification to welcome users to the store. Wait 2 days and check to see if the user has a valid email address. If the user has a valid email address, send an email survey to ask about their store experience. If the user does not have a valid email address, send a push notification to prompt for registration.
 
-   **Event-based promotion:**
-   "Create a journey triggered when the game score reaches 50. Send an SMS message to loyalty reward members saying that they are eligible for a free slice of pizza from the partner sponsor."
+   * **Post-purchase journey:** Create a journey that starts when a customer makes a purchase online. Send a push notification to thank them for their purchase. Next, check to see if they are loyalty members. If the user is a loyalty rewards member, send a second push notification with a 10% discount code. If the user is not a loyalty rewards member, send a push inviting them to sign up for the loyalty program. Wait 2 days and send a follow-up push with a survey about their purchase experience.
+
+   * **Event-based promotion:** Create a journey triggered when the game score reaches 50. Send an SMS message to loyalty reward members saying that they are eligible for a free slice of pizza from the partner sponsor.
+
+   >[!ENDSHADEBOX]
 
 * **Audience-targeted journey creation**
 
    * Build journeys targeting specific audience segments.
    * Design multi-step communication sequences with strategic timing.
 
-   **Seasonal campaign:**
-   "I want to create a journey targeting an audience of day hikers. I want to send an email alerting this audience to my upcoming holiday sale that includes a variety of hiking essentials. Wait 3 days after sending the first email and send a second email that has a 15% coupon with free shipping. Wait 1 week and then send a 3rd email message to show our new sleeping bag and tent collection. Schedule the journey to start on 12/20."
+   >[!BEGINSHADEBOX "Prompt samples"]
 
-   **Loyalty appreciation:**
-   "Build a loyalty appreciation journey for SUV owners, including a thank you push notification with a free carwash offer and a follow-up push notification reminder if the first notification is not interacted with within 1 day."
+   * **Seasonal campaign:** I want to create a journey targeting an audience of day hikers. I want to send an email alerting this audience to my upcoming holiday sale that includes a variety of hiking essentials. Wait 3 days after sending the first email and send a second email that has a 15% coupon with free shipping. Wait 1 week and then send a 3rd email message to show our new sleeping bag and tent collection. Schedule the journey to start on 12/20.
+
+   * **Loyalty appreciation:** Build a loyalty appreciation journey for SUV owners, including a thank you push notification with a free carwash offer and a follow-up push notification reminder if the first notification is not interacted with within 1 day.
+
+   >[!ENDSHADEBOX]
 
 * **Business-event triggered journey creation**
 
@@ -156,29 +161,41 @@ Channel Content Create enables Journey Optimizer users to generate, edit, and ma
 
 * **Channel-specific content generation**: Generate content for email, push notifications, SMS, and other channels using natural language prompts.
 
-   "Generate email content for my welcome journey. Create a welcome email for new customers with a friendly tone and include a 10% discount offer."
+   >[!BEGINSHADEBOX "Prompt samples"]
 
-   "Generate a push notification for my store visit journey. Create a welcome message that encourages customers to check in and receive a special offer."
+   * Generate email content for my welcome journey. Create a welcome email for new customers with a friendly tone and include a 10% discount offer.
+   * Generate a push notification for my store visit journey. Create a welcome message that encourages customers to check in and receive a special offer.
+   * Generate SMS content for my event-triggered journey. Create a short message notifying customers about a flash sale with a call-to-action.
 
-   "Generate SMS content for my event-triggered journey. Create a short message notifying customers about a flash sale with a call-to-action."
+   >[!ENDSHADEBOX]
 
 * **Template-based content creation**: Browse and select from available templates with preview capabilities.
 
-   "Show me available email templates for my seasonal campaign journey."
+   >[!BEGINSHADEBOX "Prompt samples"]
 
-   "Select a template for my email that has a modern, clean design."
+   * Show me available email templates for my seasonal campaign journey.
+   * Select a template for my email that has a modern, clean design.
+
+   >[!ENDSHADEBOX]
 
 * **Multi-channel content management**: Generate and manage content for multiple channels within the same journey workflow.
 
 * **In-context content editing**: Open generated content in Content Designer for editing and refinement.
 
-   "Open the email content in Content Designer so I can customize the design."
+   >[!BEGINSHADEBOX "Prompt samples"]
+
+   * Open the email content in Content Designer so I can customize the design.
+
+   >[!ENDSHADEBOX]
 
 * **Content refinement and iteration**: Regenerate content with different tones or styles using the Regenerate action.
 
-   "Regenerate the push notification content with a more casual tone."
+   >[!BEGINSHADEBOX "Prompt samples"]
 
-   "Update the email content to include a promotional code."
+   * Regenerate the push notification content with a more casual tone.
+   * Update the email content to include a promotional code.
+
+   >[!ENDSHADEBOX]
 
 * **Journey canvas integration**: Select journeys from inventory and view associated channels.
 
@@ -283,6 +300,18 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
    * "Fewer profiles than usual are completing my Renewal Reminder journey this month — why?"
    * "An anomaly alert was triggered for journey [Journey Version ID] at [timestamp] — investigate."
 
+* **Business Performance Analysis**
+
+    * Analyze journey performance and identify concrete optimization opportunities for underperforming journeys.
+    * Surface trends, bottlenecks, and likely drivers behind lower results so you can improve engagement and conversion.
+    * Get actionable recommendations to adjust journey design, targeting, or messaging strategy based on business performance insights.
+
+    Sample prompts:
+    * "Analyze the performance of journey [Journey Name] and recommend optimizations."
+    * "Why is journey [Journey Name] underperforming compared with last month?"
+    * "What should I change to improve the performance of journey [Journey Name]?"
+    * "Which parts of journey [Journey Name] are likely limiting conversion or engagement?"
+
 * **Journey Version Comparison**
 
    * Compare any two journey versions in Coworker Chat.
@@ -320,12 +349,12 @@ Journey Simulation skill brings AI-driven Quick Simulation into the chat interfa
 
 ### Key use cases
 
-1. **Generate simulated test data**
+* **Generate simulated test data**
 
    * Generate the minimum simulated users needed to exercise the journey's branches.
    * Generate event data for event-triggered journeys, so each branch is triggered.
 
-1. **Run and manage simulations**
+* **Run and manage simulations**
 
    * Start a simulation run.
    * Reset a simulation run.
@@ -333,7 +362,7 @@ Journey Simulation skill brings AI-driven Quick Simulation into the chat interfa
    * List the simulated users included in a run.
    * Retrieve run logs.
 
-1. **Review simulation results**
+* **Review simulation results**
 
    * Return detailed results, including step-by-step path traversal.
    * Return branch outcomes for the simulated run.
