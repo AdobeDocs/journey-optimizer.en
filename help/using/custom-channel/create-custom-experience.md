@@ -181,10 +181,11 @@ The following examples show JSON payloads with profile personalization:
   }
 }
 ```
+### Use decisioning content in custom channel payloads {#use-decisioning}
 
->[!NOTE]
->
->You can also use decisioning content in custom channel payloads through the personalization editor. The decision policy insertion workflow is the same as in code-based experiences. [Learn more](../experience-decisioning/create-decision-policy.md)
+[!DNL Journey Optimizer] allows you to include decisioning content in your custom channel payloads through the personalization editor. You can insert decision policies and use the returned decision item attributes to personalize your payload dynamically.
+
+The decision policy insertion workflow is described in [this section](../experience-decisioning/create-decision-policy.md).
 
 ### Track links in the payload {#track-links}
 
