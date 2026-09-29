@@ -23,6 +23,14 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
+* The **Create a direct mail message** page now clarifies extraction-file generation in the **Journey** and **Campaign** tabs: journey files follow the routing frequency and can result in multiple files per day, while campaign files are generated when each campaign execution starts. The page also explains how to ensure one file per day for journeys. [Read more](../direct-mail/create-direct-mail.md#create-dm-campaign)
+
+* Guidance for custom-upload audiences now clarifies activation timing and adds troubleshooting for unavailable enrichment attributes in journeys. [Read more](../audience/enrichment-attributes.md#faq-enrichment)
+
+* Quiet Hours guidance now clarifies how weekly periods that cross midnight are applied. [Read more](../conflict-prioritization/quiet-hours.md)
+
+* Approval guidance now clarifies editing restrictions while campaigns and journeys are under review. [Read more](../test-approve/gs-approval.md)
+
 * The **Navigate the interface** page has been updated to reflect the current interface: references to the Use-cases widget were removed, the screenshot was refreshed, and CX Enterprise Coworker is now documented with its home-page prompt. [Read more](../start/user-interface.md#home-page)
 
 * The `inAudience` guardrails now include the workaround for sandboxes with more than 5,000 audiences, where older audiences can be rejected during journey authoring because validation checks only the 5,000 most recently updated audiences. [Read more](../building-journeys/functions/functioninaudience.md#guardrails)

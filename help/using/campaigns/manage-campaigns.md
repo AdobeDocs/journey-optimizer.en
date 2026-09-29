@@ -236,6 +236,10 @@ To modify and create a new version of a recurring Action campaign, follow these 
 
     ![](assets/create-campaign-draft.png)
 
+    The draft version has its own version ID. The current live version remains available while you work on the draft; activating the draft replaces the live version.
+
+    For campaigns with a decision policy that includes a content experiment, a campaign version can contain a cloned decision policy and a separate experiment. Treatment assignments, including test and control group membership, may be re-segmented between versions, so do not assume assignments or results are continuous across versions. Account for the version boundary when interpreting experiment results.
+
     In the campaigns list, activated campaigns with a draft version in progress display with a specific icon in the **[!UICONTROL Status]** column. Click this icon to open the draft version of the campaign.
 
     ![](assets/create-campaign-edit-list.png)
