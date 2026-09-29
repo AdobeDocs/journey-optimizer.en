@@ -23,6 +23,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
+* The **Create a direct mail message** page now clarifies extraction-file generation in the **Journey** and **Campaign** tabs: journey files follow the routing frequency and can result in multiple files per day, while campaign files are generated when each campaign execution starts. The page also explains how to ensure one file per day for journeys. [Read more](../direct-mail/create-direct-mail.md#create-dm-campaign)
+
 * Guidance for custom-upload audiences now clarifies activation timing and adds troubleshooting for unavailable enrichment attributes in journeys. [Read more](../audience/enrichment-attributes.md#faq-enrichment)
 
 * Quiet Hours guidance now clarifies how weekly periods that cross midnight are applied. [Read more](../conflict-prioritization/quiet-hours.md)

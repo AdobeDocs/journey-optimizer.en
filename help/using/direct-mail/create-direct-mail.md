@@ -92,6 +92,10 @@ Browse the tabs below to learn how to add a Direct mail message in a campaign or
 
 When your extraction file is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) to send it.
 
+>[!NOTE]
+>
+>Journey direct mail extraction files are generated according to the file routing frequency. Profiles are included in the next export after they reach the **[!UICONTROL Direct mail]** activity. With a frequency shorter than 24 hours, profiles can arrive in different export windows and produce multiple files during a day. To ensure one file per day, use a 24-hour routing frequency. For more information, see [Understand export timing and file generation](direct-mail-configuration.md#dm-export-timing).
+
 >[!TAB Add a Direct mail message to a Campaign]
 
 1. Access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**.
@@ -122,14 +126,11 @@ When your extraction file is ready, complete the configuration of your [journey]
     
 You can now start configuring the extraction file to send to your direct mail provider.
 
+>[!NOTE]
+>
+>Campaign direct mail extraction files are generated when the campaign starts. For recurring campaigns, a file is generated for each campaign execution.
+
 >[!ENDTABS]
-
-## Understand direct mail delivery in journeys and campaigns {#journey-campaign-differences}
-
-Direct mail extraction files are generated differently depending on whether you use a journey or a campaign:
-
-* **Journeys** generate files according to the file routing frequency. Profiles are included in the next export after they reach the **[!UICONTROL Direct mail]** activity. With a frequency shorter than 24 hours, profiles can arrive in different export windows and produce multiple files during a day. To ensure one file per day, use a 24-hour routing frequency. For more information, see [Understand export timing and file generation](direct-mail-configuration.md#dm-export-timing).
-* **Campaigns** generate the extraction file when the campaign starts. For recurring campaigns, a file is generated for each campaign execution.
 
 ## Configure the extraction file {#extraction-file}
 
