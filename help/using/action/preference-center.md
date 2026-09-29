@@ -146,9 +146,9 @@ The corresponding profile dataset is updated as follows:
 
     ![](assets/consent-policy-email-newsletter.png){width=80%}
 
-  >[!TIP]
-  >
-  >The Profile-enabled dataset must include the profile attribute **[!UICONTROL Newsletter_Email]** with the value set to `true` (such as described in step 1.)
+    >[!TIP]
+    >
+    >The Profile-enabled dataset must include the profile attribute **[!UICONTROL Newsletter_Email]** with the value set to `true` (such as described in step 1.)
 
 1. Once you created the consent policy, leverage it in [!DNL Journey Optimizer] using [channel configurations](consent.md#surface-marketing-actions) or [journey custom actions](consent.md#journey-custom-actions).
 

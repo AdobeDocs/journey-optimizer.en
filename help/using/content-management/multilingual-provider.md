@@ -96,21 +96,21 @@ Follow these steps to configure an Agentic Translation provider with an LLM and 
 
 1. Enter the details for the selected provider:
 
-    * +++ **[!UICONTROL Azure OpenAI]**
+    +++ **[!UICONTROL Azure OpenAI]**
 
-        * **[!UICONTROL API Key]**: Provide the authentication key for your Azure OpenAI resource.
-        * **[!UICONTROL API Version]**: Specify the Azure OpenAI API version to use.
-        * **[!UICONTROL Model Name]**: Select or specify the name of the Azure OpenAI model.
-        * **[!UICONTROL Base Path]**: Provide the endpoint URL for your Azure OpenAI resource.
-        * **[!UICONTROL Deployment Name]**: Specify the deployment associated with the model.
+    * **[!UICONTROL API Key]**: Provide the authentication key for your Azure OpenAI resource.
+    * **[!UICONTROL API Version]**: Specify the Azure OpenAI API version to use.
+    * **[!UICONTROL Model Name]**: Select or specify the name of the Azure OpenAI model.
+    * **[!UICONTROL Base Path]**: Provide the endpoint URL for your Azure OpenAI resource.
+    * **[!UICONTROL Deployment Name]**: Specify the deployment associated with the model.
   
     +++
 
-    * +++ **[!UICONTROL Gemini (Vertex AI)]**
+    +++ **[!UICONTROL Gemini (Vertex AI)]**
 
-        * **[!UICONTROL Model Name]**: Specify the Gemini model to use.
-        * **[!UICONTROL Service Account Credentials]**: Upload or provide the credentials for your Google Cloud service account.
-        * **[!UICONTROL Location]**: Select the Google Cloud region where the model is hosted.
+    * **[!UICONTROL Model Name]**: Specify the Gemini model to use.
+    * **[!UICONTROL Service Account Credentials]**: Upload or provide the credentials for your Google Cloud service account.
+    * **[!UICONTROL Location]**: Select the Google Cloud region where the model is hosted.
 
     +++
 

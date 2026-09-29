@@ -114,9 +114,7 @@ To use a supplemental identifier in an event-triggered journey, follow these ste
 
     1. Use the expression editor to select the field you want to use as the supplemental ID (e.g., booking ID, subscription ID).
 
-        >[!NOTE]
-        >
-        >Make sure you are using the expression editor in **[!UICONTROL Advanced mode]** to select the attribute.
+      Make sure you are using the expression editor in **[!UICONTROL Advanced mode]** to select the attribute.
 
 1. **Add the event to the journey**
 
