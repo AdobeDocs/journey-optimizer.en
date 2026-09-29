@@ -39,7 +39,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Insert decision policy code into your code-based experience, web, email, SMS, push notification, and direct mail content, so you can personalize messages with attributes from the returned decision items.
+**On this page:** Insert decision policy code into your code-based experience, web, email, SMS, push notification, custom channel, and direct mail content, so you can personalize messages with attributes from the returned decision items.
 
 >[!ENDSHADEBOX]
 
@@ -47,7 +47,7 @@ Once you've added a decision policy to your content, you can use attributes from
 
 >[!CAUTION]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **Web**, **Email**, **SMS**, **Push notification**, and **Direct mail** channels.
+>Decision policies are available to all customers for the **Code-based Experience**, **Web**, **Email**, **SMS**, **Push notification**, **[Custom channels](../custom-channel/get-started-custom-channel.md)**, and **Direct mail** channels.
 
 ## Insert the decision policy code {#insert}
 
@@ -140,6 +140,10 @@ You can also insert the decision policy code when using the **[!UICONTROL Code y
 3. Use the returned decision item attributes as column data so that the selected offer information is included in the extraction file for each profile. 
 
 >[!ENDTABS]
+
+>[!NOTE]
+>
+>For custom channels, the decision policy insertion workflow through the personalization editor is the same as for the **Code-based Experience** channel described above. [Learn more](../custom-channel/create-custom-experience.md#personalize)
 
 The decision policy code is added. You can now use attributes from the returned decision items to personalize your content.
 

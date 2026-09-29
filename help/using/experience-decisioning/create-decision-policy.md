@@ -63,7 +63,7 @@ To present the best dynamic offer and experience to your customers, add a decisi
 
 >[!AVAILABILITY]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **Email**, **Push notification**, **SMS**, and **Direct Mail** channels.
+>Decision policies are available to all customers for the **Code-based Experience**, **Email**, **Push notification**, **SMS**, **[Custom channels](../custom-channel/get-started-custom-channel.md)**, and **Direct Mail** channels.
 
 ## Add a decision policy {#add}
 
@@ -218,6 +218,10 @@ For direct mail, add a decision policy from the **extraction file** configuratio
 1. In the decision policy configuration screen, use the **[!UICONTROL Number of items]** field to define how many decision items to return for each profile (for example, 2 to export the top 2 eligible offers). Continue with [strategy setup](#strategy) and [personalization](use-decision-policy.md) in your extraction file columns.
 
 >[!ENDTABS]
+
+>[!NOTE]
+>
+>For custom channels, add a decision policy the same way as for the **Code-based Experience** channel above, through the personalization editor. [Learn more](../custom-channel/create-custom-experience.md#personalize)
 
 ## Configure the decision policy {#configure}
 
