@@ -30,16 +30,14 @@ When you preview your message content, you can have [!DNL Journey Optimizer] che
 
 ## Run URL validation {#access}
 
-URL validation runs from the **[!UICONTROL Simulate]** screen. It's available for channel actions in journeys and campaigns across all channels, and when you preview [content templates](content-templates.md).
-
-URL validation runs automatically when you open the **[!UICONTROL Simulate]** screen, so you don't need to start it yourself. To review the results:
+URL validation is available for channel actions in journeys and campaigns across all channels, and when you preview [content templates](content-templates.md). It runs automatically as soon as you open the **[!UICONTROL Simulate]** screen, so you don't need to start it yourself. To review the results:
 
 1. From the content editor, click **[!UICONTROL Simulate content]**. [Learn more about simulation](../test-approve/simulate-content-variations.md)
 
 1. From the **[!UICONTROL Simulate]** screen, check the URL validation icon:
 
     * If all URLs are valid, the icon shows a green check mark.
-    * If any URLs are invalid, the icon shows them. Click the icon to open a pop-up window that lists each invalid URL and the reason it's invalid.
+    * If any URLs are invalid, the icon flags it. Click the icon to open a pop-up window that lists each invalid URL and the reason it's invalid.
 
     ![](assets/simulate-validate-urls.png)
 
@@ -48,6 +46,8 @@ URL validation runs automatically when you open the **[!UICONTROL Simulate]** sc
 1. Close the window and fix the invalid URLs in your content. Learn more in the [Troubleshooting](#troubleshooting) section.
 
 1. Simulate the content again. Validation re-runs automatically. Repeat until the icon shows a green check mark.
+
+    ![](assets/simulate-urls-valid.png)
 
 ## How it works {#how-it-works}
 
@@ -85,14 +85,14 @@ The following aren't flagged as broken, even if they appear in your content:
 
 >[!IMPORTANT]
 >
->Personalized links are validated against your simulation data. If a link contains a personalization token, the token is resolved with the profile data you use in the **[!UICONTROL Simulate]** screen. If that data is test data or generated data, the resolved URL may not exist, so the link is flagged as invalid even if it works for real recipients.
+>Personalized links are validated against whatever data you're previewing with in the **[!UICONTROL Simulate]** screen — entered manually, imported from a file, generated with AI, or based on **simulated users**. None of these are backed by a real Adobe Experience Platform profile, so the resolved URL may not exist, and the link is flagged as invalid even if it works for real recipients.
 >
->For example, these links may show as invalid when you simulate with test or generated profiles:
+>For example, these links may show as invalid unless you're previewing with a real Adobe Experience Platform profile:
 >
 >* `https://example.com/profile/{{crmID}}`
 >* `https://example.com/offer?promoCode={{promoCode}}`
 >
->To check whether a personalized link is actually valid, simulate with real, valid profile data.
+>To check whether a personalized link is actually valid, simulate with a real Adobe Experience Platform profile instead.
 
 Content is scanned for URLs wherever they appear, not only in clickable links. As a result, a few other categories are often flagged as false positives:
 
@@ -102,13 +102,13 @@ Content is scanned for URLs wherever they appear, not only in clickable links. A
 
 >[!NOTE]
 >
->Before you treat a flagged URL as a real issue, check whether it's a personalized link resolved with test data, a namespace, CDN, or metadata URL, or an actual user-facing link.
+>Before you treat a flagged URL as a real issue, check whether it's a personalized link previewed without a real profile, a namespace, CDN, or metadata URL, or an actual user-facing link.
 
 ## Best practices {#best-practices}
 
 1. Use `https://` for all links — HTTP links aren't allowed.
 1. Confirm external dependencies — CDN URLs, third-party APIs, and remote images — are healthy before you preview.
-1. Simulate personalized links with real, valid profile data. Test or generated data can make valid links show as invalid.
+1. Simulate personalized links with a real Adobe Experience Platform profile — manually entered, imported, AI-generated, or simulated-user data can make valid links show as invalid.
 1. Stay under the 50-URL limit — going over it doesn't trim the extras, it rejects the whole validation request. Consider splitting your content across multiple messages or templates.
 1. Expect namespace or data URIs in your schema to show as invalid — that's expected, since they aren't meant to be clicked.
 
@@ -119,6 +119,6 @@ Content is scanned for URLs wherever they appear, not only in clickable links. A
 | "This link uses HTTP. Only HTTPS links are allowed." | Insecure scheme | Update the URL to use `https://`. |
 | "This link couldn't be reached." | Malformed URL, scheme typo, 404 response, blocked internal address, or timeout — see [What gets flagged](#invalid-urls) | Fix the URL, or verify the host is correct, online, and reachable. |
 | No validation result is returned at all | Content contains more than 50 URLs, so the entire request is rejected | Reduce the number of links in your content, then preview again. |
-| A link with a `{{ }}` personalization token is flagged as invalid | The token was resolved with test or generated simulation data, so the resulting URL may not exist. See [Caveats](#caveats). | Simulate again with real, valid profile data to check whether the link actually works. |
+| A link with a `{{ }}` personalization token is flagged as invalid | The token was resolved without a real Adobe Experience Platform profile, so the resulting URL may not exist. See [Caveats](#caveats). | Simulate again with a real Adobe Experience Platform profile to check whether the link actually works. |
 | A flagged URL actually works fine and isn't personalized | False positive — see [Caveats](#caveats) | It's likely a namespace URL, a CDN resource, or content in comments/metadata — safe to ignore if it isn't user-facing. |
 
