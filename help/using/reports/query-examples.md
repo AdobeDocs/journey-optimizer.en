@@ -1123,7 +1123,7 @@ _experience.journeyOrchestration.journey.versionID,
 _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode 
 FROM journey_step_events
 where
-_experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' AND _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode='reentranceNotAllowed'
+_experience.journeyOrchestration.serviceEvents.stateMachine.eventCode = 'discard' AND _experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'reentranceNotAllowed'
 ```
 
 Learn how to [troubleshoot discarded event types in journey_step_events](../reports/sharing-field-list.md#discarded-events).

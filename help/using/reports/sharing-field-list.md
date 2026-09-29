@@ -131,6 +131,10 @@ Below are definitions, common causes, and troubleshooting steps for the most fre
 
     **Troubleshooting**: Reduce long-running steps on paths that can re-trigger frequently, debounce or deduplicate upstream events, and split long scenarios into multiple journeys. This is a safety guardrail and the limit is not configurable; additional events are discarded until the stack drains. For more guidance, see [Events discarded due to a blocked journey instance](../building-journeys/troubleshooting-execution.md#max-instance-stack-events-reached).
 
+* **reentranceNotAllowed**: The state machine rejected a profile's attempt to re-enter a journey because re-entrance was not allowed. This discard record alone does not show that a new journey instance started or that the Start node ran.
+
+    **Troubleshooting**: Check whether the profile entered the same journey ID within the last 91 days, including through another version. See [Re-entrance across journey versions](../building-journeys/entry-management.md#reentrance-versions).
+
 * **EVENT_WITH_NO_JOURNEY**: An event was received but no active journey is configured to respond to it
 
     **Common causes**: Event name/ID mismatch, journey not published, wrong sandbox/organization, test mode/profile mismatch.
