@@ -490,6 +490,26 @@ The following capabilities and improvements are coming to channels in this relea
 
 ### Email Designer {#sep-26-email-designer}
 
+<table>
+<thead>
+<tr>
+<th><strong>New Dynamic Media Template component in the Email Designer (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Email Designer now includes a dedicated <strong>Dynamic Media Template</strong> component for inserting Dynamic Media Templates from Adobe Experience Manager into your email content. In addition to browsing existing templates, you can now import a Photoshop (PSD) file directly — drag and drop it into the component, or select it from your computer, then choose a destination to store it.</p>
+<p>Once your file is imported, select <strong>Edit in Dynamic Media Template Editor</strong> to open the Dynamic Media Template Editor directly within Journey Optimizer, where you can enable the parameters you want to expose, without leaving the Email Designer. The enabled parameters then become available in the component's <strong>Settings</strong> tab.</p>
+<p><img src="assets/do-not-localize/dynamic-media-in-acrite.gif" alt="Dynamic Media Template component in the Email Designer"></p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. For full details about the release cycle and availability phases, see <a href="releases.md">Journey Optimizer release cycle</a>.</p>
+<p>It requires an Adobe Journey Optimizer license together with an Adobe Dynamic Media license. Customers without access to this component can continue to add dynamic media templates using the Image component. For more information, refer to the <a href="../email/content-components.md#dynamic-media-template">detailed documentation</a>.</p>
+<p>Availability date: September 29, 2026.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 The following capabilities and improvements are coming to the Email Designer in this release.
 
 <table>
@@ -546,27 +566,6 @@ The following capabilities and improvements are coming to the Email Designer in 
 </tr>
 </tbody>
 </table>
-
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>New Dynamic Media Template component in the Email Designer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The Email Designer now includes a dedicated <strong>Dynamic Media Template</strong> component for inserting Dynamic Media Templates from Adobe Experience Manager into your email content. In addition to browsing existing templates, you can now import a Photoshop (PSD) file directly — drag and drop it into the component, or select it from your computer, then choose a destination to store it.</p>
-<p>Once your file is imported, select <strong>Edit in Dynamic Media Template Editor</strong> to open the Dynamic Media Template Editor directly within Journey Optimizer, where you can enable the parameters you want to expose, without leaving the Email Designer. The enabled parameters then become available in the component's <strong>Settings</strong> tab.</p>
-<p>For more information, refer to the <a href="../email/content-components.md#dynamic-media-template">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-+++
 
 ### Orchestrated campaigns {#sep-26-orchestrated-campaigns}
 
