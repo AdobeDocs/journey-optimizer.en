@@ -290,6 +290,11 @@ The `valueAtPath` helper assigns a value from a data path to a template variable
 | `idx` | Optional 0-based index used to extract a specific element from an array or collection. |
 | `result` | The variable name that stores the extracted value. |
 
+**Limitations**
+
+* Array indices are 0-based, so the first element is at index 0. If `idx` is out of bounds, an exception is thrown at rendering time. Make sure the index exists before you use it.
+* PQL expressions cannot be used as the `path` parameter.
+
 **Example**
 
 ```handlebars
