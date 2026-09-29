@@ -124,6 +124,13 @@ You can now start configuring the extraction file to send to your direct mail pr
 
 >[!ENDTABS]
 
+## Understand direct mail delivery in journeys and campaigns {#journey-campaign-differences}
+
+Direct mail extraction files are generated differently depending on whether you use a journey or a campaign:
+
+* **Journeys** generate files according to the file routing frequency. Profiles are included in the next export after they reach the **[!UICONTROL Direct mail]** activity. With a frequency shorter than 24 hours, profiles can arrive in different export windows and produce multiple files during a day. To ensure one file per day, use a 24-hour routing frequency. For more information, see [Understand export timing and file generation](direct-mail-configuration.md#dm-export-timing).
+* **Campaigns** generate the extraction file when the campaign starts. For recurring campaigns, a file is generated for each campaign execution.
+
 ## Configure the extraction file {#extraction-file}
 
 >[!CONTEXTUALHELP]
