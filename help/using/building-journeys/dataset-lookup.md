@@ -123,7 +123,7 @@ To configure the **[!UICONTROL Dataset lookup]** activity, follow these steps:
 
    >[!IMPORTANT]
    >
-   >You must define the lookup key using **[!UICONTROL Advanced mode]**. If you use simple mode, the Dataset lookup activity's output will not be available as a context attribute downstream, and `@datasetLookup{}` will return a "Dataset lookup not found" error in condition activities.
+   >You must define the lookup key using **[!UICONTROL Advanced mode]** so the Dataset lookup activity's output is available as a context attribute downstream. If `@datasetLookup{}` returns a "Dataset lookup not found" error in a condition, see [Dataset lookup not found error in condition activity](#troubleshooting-not-found) for the cause and fix.
    >
    >Configure the lookup key and use its result in separate expression editors:
    >
