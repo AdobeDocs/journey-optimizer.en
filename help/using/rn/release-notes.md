@@ -92,8 +92,9 @@ The following capabilities and improvements are coming to content management in 
 <td>
 <p>When you preview your content, Journey Optimizer now automatically checks the web links it contains and flags broken, insecure, or unreachable URLs before you send.</p>
 <p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p><img src="assets/do-not-localize/url-validation.gif"></p>
 <p>For more information, refer to the <a href="../content-management/url-validation.md">detailed documentation</a>.</p>
-<p>Availability date: September 28, 2026</p>
+<p>Availability date: September 29, 2026</p>
 </td>
 </tr>
 </tbody>
