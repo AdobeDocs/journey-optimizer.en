@@ -386,6 +386,8 @@ The following capability is coming to content management in this release.
 
 * **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
 
++++
+
 ### Channels {#sep-26-channels}
 
 The following capabilities and improvements are coming to channels in this release.
