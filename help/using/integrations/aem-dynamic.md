@@ -163,7 +163,43 @@ Learn more about [Dynamic media template](https://experienceleague.adobe.com/en/
 >**Dynamic media template** is available exclusively in Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7). Since Scene7 mode is not accessible for Healthcare customers, content will not be rendered. For any exceptions, please contact Experience Manager support.
 
 
-### With the Dynamic Media Template component {#image-component}
+### With the Image component {#image-component}
+
+Customers who do not have an Adobe Dynamic Media license use the **[!UICONTROL Image]** component to add a dynamic media template to their content:
+
+1. Open your campaign or journey and access your content.
+
+1. Drag and drop an **[!UICONTROL Image]** component into your layout.
+
+    For more information on content components, refer to [this page](../email/content-components.md).
+
+1. Browse through your AEM assets and select the Dynamic Media template you want to add to your content.
+
+1. From the **[!UICONTROL Settings]** tab, navigate to the parameters of your dynamic media template.
+
+    The available fields depend on the parameters added during the [template creation](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters){target="_blank"} in Adobe Experience Manager.
+
+    ![](assets/dynamic-media-template-3.png)
+
+1. Fill in the different fields and use the personalization editor to add personalized content. You can use any attribute, such as the profile name, city, or other relevant details, to create a more customized experience.
+
+    Learn more about personalization on [this page](../personalization/personalize.md).
+
+    ![](assets/do-not-localize/dynamic_media_template.gif)
+
+1. Conditional content can be applied to generate different variants of the content. [Learn more](../personalization/dynamic-content.md)
+
+1. Click **[!UICONTROL Save]**.
+
+Once you have performed your tests and validated the content, you can send your message to your audience.
+
+### With the Dynamic Media Template component {#dynamic-media-template-component}
+
+>[!AVAILABILITY]
+>
+>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+>
+>If your organization does not have access to this component, you can still add your dynamic media template using the **[!UICONTROL Image]** component, as described above.
 
 You can insert your dynamic template directly into your content using the **Dynamic Media Template** component. Follow the steps below:
 
@@ -207,16 +243,14 @@ You can insert your dynamic template directly into your content using the **Dyna
     ![](assets/dynamic-media-template-parameters.png){width="80%"}
 
     The parameters you see here reflect how they were defined in the Dynamic Media Template in Adobe Experience Manager or in Photoshop.
-
+    
     The available fields depend on the parameters added during the [template creation](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters){target="_blank"} in Adobe Experience Manager.
-
-    ![](assets/dynamic-media-template-3.png)
 
 1. Fill in the different fields and use the personalization editor to add personalized content. You can use any attribute, such as the profile name, city, or other relevant details, to create a more customized experience.
 
     Learn more about personalization on [this page](../personalization/personalize.md).
 
-    ![](assets/do-not-localize/dynamic_media_template.gif)
+    <!--![](assets/do-not-localize/dynamic_media_template.gif)-->
 
 1. Conditional content can be applied to the Dynamic Media Template to generate different variants of the content. [Learn more](../personalization/dynamic-content.md)
 
