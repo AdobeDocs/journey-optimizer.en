@@ -143,6 +143,13 @@ Statistical methods give us a way of formalizing that uncertainty. One of the mo
 To gain true business insights, you should stick to just one Experiment. Instead, follow up experiments by formulating new hypotheses, and running new tests with different changes, on different audiences, and by examining the impact on the different metrics.
 +++
 
++++Avoid modifying a live campaign while its experiment is running
+
+Modifying a live Action campaign creates a new campaign version, and a version can contain a separate copy of the experiment. As a result, treatment assignments, including test and control group membership, may be re-segmented and results may not be continuous across versions.
+
+If assignments or results change unexpectedly, check the campaign's version history before treating it as a reporting problem. Where possible, wait until the experiment is complete before modifying the campaign. Learn how [modifying an Action campaign creates a new version](../campaigns/manage-campaigns.md#modify-an-action-campaign).
++++
+
 ## Interpret the results of your Experiments {#interpret-results}
 
 >[!CONTEXTUALHELP]
