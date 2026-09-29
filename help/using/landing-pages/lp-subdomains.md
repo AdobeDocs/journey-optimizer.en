@@ -125,6 +125,8 @@ To use a subdomain that is already delegated to Adobe, follow the steps below:
 >title="Generate the matching DNS record"
 >abstract="To configure a new landing page subdomain, you need to copy the Adobe nameserver information displayed in the Journey Optimizer interface and paste it into your domain-hosting solution to generate the matching DNS record. Once the checks are successful, the subdomain is ready to be used to create landing page presets."
 
+By default, [!DNL Journey Optimizer] allows you to delegate a maximum of 10 subdomains in total, combining email, landing page, and web channels. However, depending on your license contract, you may be able to delegate up to 3000 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. [Learn more](../configuration/delegate-subdomain.md#guardrails)
+
 To configure a new subdomain, follow the steps below.
 
 1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Landing page settings]** > **[!UICONTROL Landing page subdomains]**.
