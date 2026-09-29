@@ -116,6 +116,10 @@ Let's say you want to target your customers through journeys and campaigns based
 
     ![](assets/profile-preference-attributes.png){width=80%}
 
+    >[!NOTE]
+    >
+    >The incoming consent events feed into the customer profile, ensuring real-time updates. Each profile reflects their most recent choices across the subscription preferences.
+
 <!--
 The corresponding profile dataset is updated as follows:
 
@@ -123,10 +127,6 @@ The corresponding profile dataset is updated as follows:
 |---------|----------|---------|
 | john.black@lumamail.com | Y | N |
 -->
-
-  >[!NOTE]
-  >
-  >The incoming consent events feed into the customer profile, ensuring real-time updates. Each profile reflects their most recent choices across the subscription preferences.
 
 1. In Adobe Experience Platform, create a custom policy (from the **[!UICONTROL Privacy]** > **[!UICONTROL Policies]** menu). [Learn how](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#create-policy){target="_blank"}
 
@@ -137,14 +137,6 @@ The corresponding profile dataset is updated as follows:
     To make use of consent policies, preference attributes must be present in the profile data. This is why you must define these attributes at the profile level (as described in step 1).
 
 1. Choose the **[!UICONTROL Consent policy]** type and configure a condition as follows. [Learn how to configure consent policies](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"}
-
-<!--
-Consent policies are comprised of two logical components:
-
-* **If**: The condition that will trigger the policy check, based on a certain marketing action (email, SMS, push, custom action, etc.) being performed, the presence of certain data usage labels, or a combination of the two.
-
-* **Then**: The consent attribute must be present for a profile to be included in the action that triggered the policy. More than one field can also be selected.
--->
 
     For example, to send communications only to your customers who have not opted out from receiving email newsletters, create a custom policy and define the following condition:
 
@@ -161,5 +153,13 @@ Consent policies are comprised of two logical components:
 1. Once you created the consent policy, leverage it in [!DNL Journey Optimizer] using [channel configurations](consent.md#surface-marketing-actions) or [journey custom actions](consent.md#journey-custom-actions).
 
 1. Now you can use these channel configurations or custom actions in your journeys and campaigns to make sure your <!--targeted--> customers' preferences are honoured.
+
+<!--
+Consent policies are comprised of two logical components:
+
+* **If**: The condition that will trigger the policy check, based on a certain marketing action (email, SMS, push, custom action, etc.) being performed, the presence of certain data usage labels, or a combination of the two.
+
+* **Then**: The consent attribute must be present for a profile to be included in the action that triggered the policy. More than one field can also be selected.
+-->
 
 {{$include /help/_includes/do-not-localize/action/ai-augmented-preference-center.md}}
