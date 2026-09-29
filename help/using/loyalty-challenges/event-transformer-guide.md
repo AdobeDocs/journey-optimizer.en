@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Event Transformer guide
-description: Learn how to configure schema and transformer settings for Loyalty Challenges event definitions in Adobe Journey Optimizer.
+description: Learn how to configure schema and transformer settings for Loyalty Challenges event mappings in Adobe Journey Optimizer.
 feature: Journeys
 topic: Content Management
 role: Admin
@@ -21,7 +21,7 @@ subfeature_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_event_transformer"
 >title="Event Transformer guide"
->abstract="Use this guide to configure schema validation and transformer expressions for Loyalty Challenges event definitions."
+>abstract="Use this guide to configure schema validation and transformer expressions for Loyalty Challenges event mappings."
 
 >[!BEGINSHADEBOX]
 
@@ -33,16 +33,16 @@ Before a customer transaction can be applied to a loyalty challenge, it must be 
 
 ## Overview
 
-An **Event Definition** tells the platform two things:
+An **Event Mapping** tells the platform two things:
 
 * **Which events to claim** — how to recognize that an incoming event belongs to this definition (matching)
 * **How to reshape them** — a [JSONata](https://docs.jsonata.org/overview) expression that maps the customer's fields to the Loyalty Event format (transformation)
 
-Multiple event definitions can be configured per org. The platform evaluates them in order and applies the first one that matches. Events that don't match any definition fall through to native ingestion (see [Fallback — Native Loyalty Events](#fallback--native-loyalty-events)).
+Multiple event mappings can be configured per org. The platform evaluates them in order and applies the first one that matches. Events that don't match any mapping fall through to native ingestion (see [Fallback — Native Loyalty Events](#fallback--native-loyalty-events)).
 
 ## The Adobe Loyalty Event Format
 
-Every event definition must produce a JSON object in the following format. This is the input the Challenge Service processes.
+Every event mapping must produce a JSON object in the following format. This is the input the Challenge Service processes.
 
 ```json
 {
@@ -79,7 +79,7 @@ Every event definition must produce a JSON object in the following format. This 
 | `_id`                          | No                 | Used for dedup if org has duplicate detection enabled. |
 | `sub_total`                    | No                 | Spend-threshold tasks use this; omit means zero spend. |
 
-## Event Definition Fields
+## Event Mapping Fields
 
 | Field                          | Type             | Required             | Description |
 |--------------------------------|------------------|----------------------|-------------|
@@ -93,7 +93,7 @@ Every event definition must produce a JSON object in the following format. This 
 
 Events arriving through the Data Collection Core Service (DCCS) carry an XDM schema reference in their envelope. The platform reads the schema ID from `/body/xdmMeta/schemaRef/id` and compares it against each definition's `xdmSchemaId`.
 
-The platform walks the org's event definitions **in order** and applies the first match. Once a match is found, the `xdmEntity` body is passed to the transformer.
+The platform walks the org's event mappings **in order** and applies the first match. Once a match is found, the `xdmEntity` body is passed to the transformer.
 
 ## Writing the Transformer
 
@@ -239,7 +239,7 @@ The full JSONata function library is available. Useful examples:
 }
 ```
 
-**Event Definition:**
+**Event Mapping:**
 
 ```json
 {
@@ -313,7 +313,7 @@ A challenge task with no include/exclude restrictions will count this event as a
 }
 ```
 
-**Event Definition:**
+**Event Mapping:**
 
 ```json
 {
@@ -395,7 +395,7 @@ A challenge task with `include: ["BEVERAGE"]` would see the coffee line item qua
 }
 ```
 
-**Event Definition:**
+**Event Mapping:**
 
 ```json
 {
@@ -481,17 +481,17 @@ Events that fail schema validation are rejected before transformation runs. The 
 
 +++
 
-Pass this schema as a minified JSON string in the `schema` field of the event definition.
+Pass this schema as a minified JSON string in the `schema` field of the event mapping.
 
 ## Fallback — Native Loyalty Events
 
-If no event definition matches an incoming event, the platform attempts to ingest it directly as a native Adobe Loyalty Event. If the payload already conforms to the Loyalty Event format described above, no transformer is needed and the event is applied as-is. This allows customers who have pre-formatted their events to bypass transformation entirely.
+If no event mapping matches an incoming event, the platform attempts to ingest it directly as a native Adobe Loyalty Event. If the payload already conforms to the Loyalty Event format described above, no transformer is needed and the event is applied as-is. This allows customers who have pre-formatted their events to bypass transformation entirely.
 
 ## API Reference
 
-All event definition operations use the base path `/loyalty/metadata/config/events`.
+All event mapping operations use the base path `/loyalty/metadata/config/events`.
 
-+++Create an Event Definition
++++Create an Event Mapping
 
 ```http
 POST /loyalty/metadata/config/events
@@ -508,7 +508,7 @@ Content-Type: application/json
 
 +++
 
-+++List Event Definitions
++++List Event Mappings
 
 ```http
 GET /loyalty/metadata/config/events
@@ -518,7 +518,7 @@ x-sandbox-name: {SANDBOX}
 
 +++
 
-+++Update an Event Definition
++++Update an Event Mapping
 
 ```http
 PUT /loyalty/metadata/config/events/{eventId}
@@ -534,7 +534,7 @@ Content-Type: application/json
 
 +++
 
-+++Delete an Event Definition
++++Delete an Event Mapping
 
 ```http
 DELETE /loyalty/metadata/config/events/{eventId}
@@ -546,7 +546,7 @@ x-sandbox-name: {SANDBOX}
 
 ## Transformer Validation
 
-JSONata expressions are validated for syntax when the event definition is saved. If the expression is invalid, the API returns a `422` error with a description of the parse failure.
+JSONata expressions are validated for syntax when the event mapping is saved. If the expression is invalid, the API returns a `422` error with a description of the parse failure.
 
 To test a transformer before deploying, use the [JSONata Exerciser](https://try.jsonata.org/) — paste your source event as the input and your transformer expression to verify the output matches the expected Loyalty Event format.
 

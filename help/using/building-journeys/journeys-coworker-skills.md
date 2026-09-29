@@ -21,15 +21,17 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover the CX Enterprise Coworker skills available for journeys in Adobe Journey Optimizer — creating journeys from natural language, generating channel content, and analyzing journey performance — with detailed guidance, example prompts, and best practices for each skill. 
+**On this page:** Explore Coworker capabilities in Adobe Journey Optimizer for creating journeys, generating channel content, analyzing performance, and simulating journey behavior.
+
+>[!ENDSHADEBOX]
+
+Coworker brings natural-language tools into Adobe Journey Optimizer to help you create and configure journeys, generate channel-specific content, analyze performance, and simulate journey behavior. Use Journey Create to configure flows, Channel Content Create to generate and refine messages, Journey Analyze to investigate performance and operational issues, and Journey Simulation to test journey logic.
 
 Learn more:
 
-* [Coworker skills for Journey Optimizer](../start/ai-features.md#cx-coworker-skills) — overview of Coworker skills across Journeys, Loyalty, and Content Management in Journey Optimizer.
+* [Coworker skills for Journey Optimizer](../start/ai-features.md#cx-coworker-skills) — overview of Coworker skills across Journeys, Loyalty, Content Management, and Decisioning in Journey Optimizer.
 * [Coworker documentation](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/overview){target="_blank"} — overview of Coworker's Campaigns, Chat, and Projects capabilities.
 * [Coworker Chat UI guide](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/ui-guide){target="_blank"} — how to access and navigate Coworker Chat.
-
->[!ENDSHADEBOX]
 
 ## Journey Create {#journey-create}
 
@@ -51,48 +53,51 @@ Journey Create enables Journey Optimizer users to build and configure marketing 
 
 Journey Create offers capabilities that can be leveraged to accelerate marketing execution:
 
-1. **Event-triggered journey creation**
+* **Event-triggered journey creation**
 
    * Create journeys that activate based on specific customer events.
    * Design automated responses to customer actions in real-time.
    * Build personalized communication flows based on customer behavior.
 
-   **Store visit journey:**
-   "Create a journey that starts when a user enters my store location. Send a push notification to welcome users to the store. Wait 2 days and check to see if the user has a valid email address. If the user has a valid email address, send an email survey to ask about their store experience. If the user does not have a valid email address, send a push notification to prompt for registration."
+   >[!BEGINSHADEBOX "Prompt samples"]
 
-   **Post-purchase journey:**
-   "Create a journey that starts when a customer makes a purchase online. Send a push notification to thank them for their purchase. Next, check to see if they are loyalty members. If the user is a loyalty rewards member, send a second push notification with a 10% discount code. If the user is not a loyalty rewards member, send a push inviting them to sign up for the loyalty program. Wait 2 days and send a follow-up push with a survey about their purchase experience."
+   * **Store visit journey:** Create a journey that starts when a user enters my store location. Send a push notification to welcome users to the store. Wait 2 days and check to see if the user has a valid email address. If the user has a valid email address, send an email survey to ask about their store experience. If the user does not have a valid email address, send a push notification to prompt for registration.
 
-   **Event-based promotion:**
-   "Create a journey triggered when the game score reaches 50. Send an SMS message to loyalty reward members saying that they are eligible for a free slice of pizza from the partner sponsor."
+   * **Post-purchase journey:** Create a journey that starts when a customer makes a purchase online. Send a push notification to thank them for their purchase. Next, check to see if they are loyalty members. If the user is a loyalty rewards member, send a second push notification with a 10% discount code. If the user is not a loyalty rewards member, send a push inviting them to sign up for the loyalty program. Wait 2 days and send a follow-up push with a survey about their purchase experience.
 
-1. **Audience-targeted journey creation**
+   * **Event-based promotion:** Create a journey triggered when the game score reaches 50. Send an SMS message to loyalty reward members saying that they are eligible for a free slice of pizza from the partner sponsor.
+
+   >[!ENDSHADEBOX]
+
+* **Audience-targeted journey creation**
 
    * Build journeys targeting specific audience segments.
    * Design multi-step communication sequences with strategic timing.
 
-   **Seasonal campaign:**
-   "I want to create a journey targeting an audience of day hikers. I want to send an email alerting this audience to my upcoming holiday sale that includes a variety of hiking essentials. Wait 3 days after sending the first email and send a second email that has a 15% coupon with free shipping. Wait 1 week and then send a 3rd email message to show our new sleeping bag and tent collection. Schedule the journey to start on 12/20."
+   >[!BEGINSHADEBOX "Prompt samples"]
 
-   **Loyalty appreciation:**
-   "Build a loyalty appreciation journey for SUV owners, including a thank you push notification with a free carwash offer and a follow-up push notification reminder if the first notification is not interacted with within 1 day."
+   * **Seasonal campaign:** I want to create a journey targeting an audience of day hikers. I want to send an email alerting this audience to my upcoming holiday sale that includes a variety of hiking essentials. Wait 3 days after sending the first email and send a second email that has a 15% coupon with free shipping. Wait 1 week and then send a 3rd email message to show our new sleeping bag and tent collection. Schedule the journey to start on 12/20.
 
-1. **Business-event triggered journey creation** 
+   * **Loyalty appreciation:** Build a loyalty appreciation journey for SUV owners, including a thank you push notification with a free carwash offer and a follow-up push notification reminder if the first notification is not interacted with within 1 day.
+
+   >[!ENDSHADEBOX]
+
+* **Business-event triggered journey creation**
 
    * Create journeys that activate based on a particular business event and target a specified audience (e.g. product back in stock or game score change)
    * Trigger timely, context-aware messages when business conditions change.
 
-1. **Audience qualification journey creation** 
+* **Audience qualification journey creation**
 
    * Create journeys that activate as profiles enter or exit an audience segment definition.
    * Automate entry and exit messaging to support onboarding, retention, and win-back goals.  
 
-1. **Conditional journey flows**
+* **Conditional journey flows**
 
    * Create decision branches based on customer attributes.
    * Design split paths that adapt to customer preferences.
 
-1. **Create journey from image**
+* **Create journey from image**
 
     * Upload a reference image into Coworker and ask to create a journey using the image as reference
     * Journey creation skill will extract an editable prompt from your reference image
@@ -128,14 +133,14 @@ The following functionalities are currently not supported:
 
 To maximize the effectiveness of Journey Create, follow these best practices:
 
-1. **Be Specific**: Provide clear details about your journey goals, target audience, and desired actions. Include information about channels, timing, and conditions.
-1. **Specify Timing**: Clearly indicate wait periods between actions and when the journey should start.
-1. **Define Conditions**: When using conditional logic, explain the criteria for each branch path.
-1. **Include Channels**: Specify which communication channels you want to use (push, email, SMS).
-1. **Mention Scheduling**: For scheduled journeys, provide the desired start date and time.
-1. **Custom Actions**: If you are using custom actions in your workflow you need to specify that you are using a custom action along with the exact name of the custom action. Example: 
+* **Be Specific**: Provide clear details about your journey goals, target audience, and desired actions. Include information about channels, timing, and conditions.
+* **Specify Timing**: Clearly indicate wait periods between actions and when the journey should start.
+* **Define Conditions**: When using conditional logic, explain the criteria for each branch path.
+* **Include Channels**: Specify which communication channels you want to use (push, email, SMS).
+* **Mention Scheduling**: For scheduled journeys, provide the desired start date and time.
+* **Custom Actions**: If you are using custom actions in your workflow you need to specify that you are using a custom action along with the exact name of the custom action. Example:
    When a user enters my store location send a welcome message using custom action ExternalPush. Wait 2 days and then send a follow up message using custom action ExternalEmail with a survey on their visit.
-1. **Validate Expressions**: Make sure to check and validate any expressions that Journey Skills create to ensure that the correct fields and values are used.
+* **Validate Expressions**: Make sure to check and validate any expressions that Journey Skills create to ensure that the correct fields and values are used.
 
 ### Setup best practices
 
@@ -154,59 +159,52 @@ Channel Content Create enables Journey Optimizer users to generate, edit, and ma
 
 ### Key use cases
 
-1. **Channel-specific content generation**: Generate content for email, push notifications, SMS, and other channels using natural language prompts.
+* **Channel-specific content generation**: Generate content for email, push notifications, SMS, and other channels using natural language prompts.
 
-   "Generate email content for my welcome journey. Create a welcome email for new customers with a friendly tone and include a 10% discount offer."
+   >[!BEGINSHADEBOX "Prompt samples"]
 
-   "Generate a push notification for my store visit journey. Create a welcome message that encourages customers to check in and receive a special offer."
+   * Generate email content for my welcome journey. Create a welcome email for new customers with a friendly tone and include a 10% discount offer.
+   * Generate a push notification for my store visit journey. Create a welcome message that encourages customers to check in and receive a special offer.
+   * Generate SMS content for my event-triggered journey. Create a short message notifying customers about a flash sale with a call-to-action.
 
-   "Generate SMS content for my event-triggered journey. Create a short message notifying customers about a flash sale with a call-to-action."
+   >[!ENDSHADEBOX]
 
-1. **Template-based content creation**: Browse and select from available templates with preview capabilities.
+* **Template-based content creation**: Browse and select from available templates with preview capabilities.
 
-   "Show me available email templates for my seasonal campaign journey."
+   >[!BEGINSHADEBOX "Prompt samples"]
 
-   "Select a template for my email that has a modern, clean design."
+   * Show me available email templates for my seasonal campaign journey.
+   * Select a template for my email that has a modern, clean design.
 
-1. **Multi-channel content management**: Generate and manage content for multiple channels within the same journey workflow.
+   >[!ENDSHADEBOX]
 
-1. **In-context content editing**: Open generated content in Content Designer for editing and refinement.
+* **Multi-channel content management**: Generate and manage content for multiple channels within the same journey workflow.
 
-   "Open the email content in Content Designer so I can customize the design."
+* **In-context content editing**: Open generated content in Content Designer for editing and refinement.
 
-1. **Content refinement and iteration**: Regenerate content with different tones or styles using the Regenerate action.
+   >[!BEGINSHADEBOX "Prompt samples"]
 
-   "Regenerate the push notification content with a more casual tone."
+   * Open the email content in Content Designer so I can customize the design.
 
-   "Update the email content to include a promotional code."
+   >[!ENDSHADEBOX]
 
-1. **Journey canvas integration**: Select journeys from inventory and view associated channels.
+* **Content refinement and iteration**: Regenerate content with different tones or styles using the Regenerate action.
 
-### In scope skills
+   >[!BEGINSHADEBOX "Prompt samples"]
 
-The following capabilities are supported by Channel Content Create:
+   * Regenerate the push notification content with a more casual tone.
+   * Update the email content to include a promotional code.
 
-* **AI-powered content generation**: Generate content for email, push, SMS, and other channels using natural language prompts.
-* **Template management**: Browse and select from available templates with preview capabilities.
-* **In-context editing**: Open generated content in Content Designer for editing and refinement.
-* **Content regeneration**: Regenerate content with different tones, styles, or messaging using the Regenerate action.
-* **Multi-channel support**: Generate and manage content for multiple channels within the same journey workflow.
-* **Journey inventory access**: Select journeys from inventory and view associated channels.
+   >[!ENDSHADEBOX]
 
-### Out of scope skills
-
-The following functionalities are currently not supported:
-
-* **Brand alignment and content quality checks**
-* **Insert content nodes directly into journey canvas**
-* **Template import**
+* **Journey canvas integration**: Select journeys from inventory and view associated channels.
 
 ### Prompting best practices
 
-1. **Be Specific**: Provide clear details about the content type, tone, target audience, and key messaging.
-1. **Specify Channel**: Clearly indicate which channel you are creating content for (email, push, SMS).
-1. **Define Tone**: Specify the desired tone (friendly, formal, casual, urgent).
-1. **Iterate and Refine**: Use the regenerate action to refine content until it meets your requirements.
+* **Be Specific**: Provide clear details about the content type, tone, target audience, and key messaging.
+* **Specify Channel**: Clearly indicate which channel you are creating content for (email, push, SMS).
+* **Define Tone**: Specify the desired tone (friendly, formal, casual, urgent).
+* **Iterate and Refine**: Use the regenerate action to refine content until it meets your requirements.
 
 ## Journey Analyze {#journey-analyze}
 
@@ -228,7 +226,7 @@ Journey Skills will enable Journey Optimizer users to analyze and optimize journ
 
 Journey Analyze offers a range of functionalities that can be leveraged to optimize marketing efforts:
 
-1. **Journey Fallout Analysis**
+* **Journey Fallout Analysis**
 
    * Identify where and why customers drop off during a journey.
    * Detect patterns in customer behavior leading to disengagement.
@@ -240,7 +238,7 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
    * "What is profile loss over the course of journey Fourth of July Campaign?"
    * "Show where users are dropping off in journey Fourth of July Campaign."
 
-1. **Journey Audience Overlap Analysis**
+* **Journey Audience Overlap Analysis**
 
    * Analyze audience overlap across multiple journeys.
    * Prevent audience fatigue caused by over-targeting.
@@ -252,7 +250,7 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
    * "Show me audience overlap conflicts for journey [Journey Name]."
    * "Show overlapping audiences for journey [Journey Name] and other journeys."
 
-1. **Journey Schedule Overlap Analysis**
+* **Journey Schedule Overlap Analysis**
 
    * Detect timing conflicts between scheduled journeys targeting the same audience.
    * Avoid over-communication and improve scheduling efficiency.
@@ -264,7 +262,7 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
    * "Highlight scheduling overlaps between journey [Journey Name] and live journeys."
    * "Is journey [Journey Name] running in conflict with any other journey?"
 
-1. **Operational insights** 
+* **Operational insights**
 
    * Prompt-based Journey Insights – Surface operational insights about journeys , i.e. "show me all live journeys."
 
@@ -275,7 +273,7 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
    * "How many live journeys do I have?"
    * "Give me a list of all scheduled recurring journeys and their expected run times."
 
-1. **Journey Custom Action Error Analysis**
+* **Journey Custom Action Error Analysis**
 
    * Identify when custom actions are failing or error rates spike within a journey.
    * Diagnose root causes before failures cascade into broader journey disruption.
@@ -287,7 +285,7 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
    * "Show me the root cause of custom action failures in journey [Journey Name]."
    * "Are there any custom action errors affecting journey [Journey Name] right now?"
 
-1. **Analyze Journey Anomalies**
+* **Analyze Journey Anomalies**
 
    * Detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts compared to historical baselines, including when the question is phrased around the number of profiles entering, exiting, or completing the journey.
    * Confirm whether a flagged change is a genuine anomaly using a deterministic statistical check, rather than relying on the raw anomaly flag alone.
@@ -302,38 +300,85 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
    * "Fewer profiles than usual are completing my Renewal Reminder journey this month — why?"
    * "An anomaly alert was triggered for journey [Journey Version ID] at [timestamp] — investigate."
 
-### In scope skills
+* **Business Performance Analysis**
 
-The following capabilities are supported by Journey Analyze:
+    * Analyze journey performance and identify concrete optimization opportunities for underperforming journeys.
+    * Surface trends, bottlenecks, and likely drivers behind lower results so you can improve engagement and conversion.
+    * Get actionable recommendations to adjust journey design, targeting, or messaging strategy based on business performance insights.
 
-* **Reactive Queries**: Allows users to ask specific questions about journey performance, audience usage, and scheduling conflicts.
-* **Integration with Other Skills**: Collaborates with Audience and Data Insights capabilities for deeper analysis.
-* **Response structuration**: reasoning (explain the logic), analysis summary (highlight key points), issue details (describe the problem), and recommendation (propose next steps).
-* **Custom action error analysis**: Detect and diagnose custom action failures and error spikes within a journey.
-* **Anomaly detection**: Detect and confirm statistically significant spikes, drops, or flatlines in a journey's entry, exit, or send counts, and surface a likely root cause.
+    Sample prompts:
+    * "Analyze the performance of journey [Journey Name] and recommend optimizations."
+    * "Why is journey [Journey Name] underperforming compared with last month?"
+    * "What should I change to improve the performance of journey [Journey Name]?"
+    * "Which parts of journey [Journey Name] are likely limiting conversion or engagement?"
 
-### Out of scope skills
+* **Journey Version Comparison**
 
-The following functionalities are currently not supported:
+   * Compare any two journey versions in Coworker Chat.
+   * Review a structured diff of added, removed, modified, and moved nodes with field-level details.
+   * Identify changed connections, journey-level property changes, and roll-up counts without opening Journey Optimizer.
 
-* **Automated Journey Creation**
-* **Channels overlap**
-* **Journey entry analysis**
-* **Technical issue analysis**
-* **Fatigue analysis**
+   >[!NOTE]
+   >
+   >Comparison at the action activity level for channel content is not currently supported. Channel content changes are flagged as **Unverified** until this capability is available.
+
+   For more details on how to manage journey versions, see [Journey versions](publish-journey.md#journey-versions).
+
+   Sample prompts:
+   * "Compare versions [Version A] and [Version B] of journey [Journey Name]."
+   * "What changed between these two versions of journey [Journey Name]?"
+   * "Show me the nodes and journey properties that changed between versions [Version A] and [Version B]."
 
 ### Prompting best practices
 
 To maximize the effectiveness of Journey Analyze, follow these best practices:
 
-1. **Be Specific**: Use clear and concise prompts to get targeted insights. For example, instead of asking "What are my journeys?", specify "List all journeys created in the last month."
-1. **Combine Insights**: Integrate insights from Audience and Data Insights capabilities for a holistic view of journey performance.
-1. **Iterative Refinement**: Use fallout and overlap analysis to iteratively refine journey design and scheduling.
+* **Be Specific**: Use clear and concise prompts to get targeted insights. For example, instead of asking "What are my journeys?", specify "List all journeys created in the last month."
+* **Combine Insights**: Integrate insights from Audience and Data Insights capabilities for a holistic view of journey performance.
+* **Iterative Refinement**: Use fallout and overlap analysis to iteratively refine journey design and scheduling.
 
 ### Setup best practices
 
 * **Define Clear Objectives**: Before analyzing journeys, establish clear goals (e.g., improving retention, increasing conversions).
 * **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 * **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
+
+## Journey Simulation {#journey-simulation}
+
+Journey Simulation skill brings AI-driven Quick Simulation into the chat interface, letting users validate a journey's logic conversationally. Through Coworker, users can generate simulated test data, run and manage a simulation, and review the results.
+
+### Key use cases
+
+* **Generate simulated test data**
+
+   * Generate the minimum simulated users needed to exercise the journey's branches.
+   * Generate event data for event-triggered journeys, so each branch is triggered.
+
+* **Run and manage simulations**
+
+   * Start a simulation run.
+   * Reset a simulation run.
+   * Check the status of a simulation run.
+   * List the simulated users included in a run.
+   * Retrieve run logs.
+
+* **Review simulation results**
+
+   * Return detailed results, including step-by-step path traversal.
+   * Return branch outcomes for the simulated run.
+
+### Limitations
+
+This feature currently only supports the Quick Simulation flow, and does not fully replace the Journey Optimizer manual simulation experience. 
+
+Use Quick Simulation for a fast, automated sanity check of a journey's logic. For granular control over simulated users and scenarios, use the [manual simulation experience in Journey Optimizer](simulate-journey-gs.md).
+
+As part of this Quick Simulation experience, users cannot:
+
+* Choose an existing saved simulated user for a run.
+* Edit a simulated user before rerunning a simulation.
+* Create, browse, update, or delete persistent simulated users through chat.
+* Target a specific path or custom test case.
+
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-journeys-coworker-skills.md}}

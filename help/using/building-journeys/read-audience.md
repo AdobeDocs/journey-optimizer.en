@@ -404,6 +404,7 @@ This section helps you resolve **audience count mismatches** (fewer or more prof
 | Fewer (or more) profiles entered than the audience size | [Timing and data propagation](#timing-and-data-propagation), [Data validation and monitoring](#data-validation-and-monitoring) |
 | Read Audience processed zero profiles; alert fired | [Zero profiles processed](#zero-profiles-processed) |
 | Entries delayed or missing for batch audiences | [Timing and data propagation](#timing-and-data-propagation) |
+| Custom-upload enrichment attribute is missing or “Enriched audience not found” appears | [Troubleshoot enrichment attributes](../audience/enrichment-attributes.md#faq-enrichment) |
 | Need to verify segment job status or namespace | [Data validation and monitoring](#data-validation-and-monitoring) |
 
 ### Zero profiles processed {#zero-profiles-processed}
