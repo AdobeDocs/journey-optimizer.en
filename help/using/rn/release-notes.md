@@ -77,7 +77,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
 >[!ENDSHADEBOX]
 
-### Content Management {#sep-26-content-management}
+### Content management {#sep-26-content-management}
 
 The following capability is coming to content management in this release.
 
@@ -381,19 +381,6 @@ The following capability is coming to content management in this release.
 
 * **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
 
-+++
-
-### Campaigns {#sep-26-campaigns}
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface.
-
-* **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
-
-+++
-
-
 ### Channels {#sep-26-channels}
 
 The following capabilities and improvements are coming to channels in this release.
@@ -468,89 +455,6 @@ The following capabilities and improvements are coming to channels in this relea
 </tbody>
 </table>
 
-* **Custom SMS BYOP auth flexibility** - You can now configure **custom authentication headers** when connecting your SMS provider's OAuth setup, including where the token is placed on outgoing messages and how the token request itself is formatted.
-
-* **Direct mail - Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration.
-
-* **Direct mail - Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors.
-
-+++
-
-### Orchestrated campaigns {#sep-26-orchestrated-campaigns}
-
-<table>
-<thead>
-<tr>
-<th><strong>New Orchestrated Campaigns monitoring APIs</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>New <strong>APIs</strong> are now available for orchestrated campaigns, allowing you to programmatically retrieve orchestrated campaigns and monitor their executions, enabling deeper integration with external systems and automation pipelines.</p>
-<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaigns" target="_blank">API reference on Adobe Developer</a>.</p>
-<p>Availability date: September 28, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Alerting for orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Orchestrated campaigns now support <strong>automated alerting</strong> through the same alerting framework used across journeys and campaigns. Alerts are triggered when a campaign execution fails, times out, and each alert includes what happened, when, where, and a direct link to the Canvas to check further details in the logs.</p>
-<p>For more information, refer to the <a href="../orchestrated/start-monitor-campaigns.md#alerting">detailed documentation</a>.</p>
-<p>Availability date: September 22, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage. [Learn more](../data/monitor-data-ingestion.md#co)
-
-  Availability date: September 28, 2026
-
-* **Conditional content with relational data in orchestrated campaigns** - When building conditional content in the Email Designer for orchestrated campaigns, you can now build conditions directly on relational data — such as related records associated with a profile — not just standard profile attributes. [Learn more](../orchestrated/activities/channels.md#add-personalization)
-
-  Availability date: September 22, 2026
-
-* **Direct joins on collections in Orchestrated Campaigns** - When adding an attribute from a related collection, you can now choose between three join modes — a new default that warns you about potential performance impact from cartesian products, plus the existing Aggregate and Advanced modes — making it easier to understand the tradeoffs of your query before you build it. [Learn more](../orchestrated/build-query.md#links)
-
-  Availability date: September 22, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>OR join activity for orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The <strong>Join activity</strong> in orchestrated campaigns now supports both AND and OR join conditions. With OR logic, a profile that completes any one upstream branch, rather than all of them, continues along a single shared downstream path. This makes it possible to model "if A or B or C, then do this" patterns directly on the canvas without duplicating downstream steps across separate branches.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **LINE channel for orchestrated campaigns** - LINE is now available as a native outbound channel in orchestrated campaigns, alongside email, SMS, and push. You can build and deliver LINE messages directly from the campaign canvas, including text, stickers, images, videos, location data, and Flex Messages, supporting promotional, transactional, and ongoing engagement use cases in LINE-dominant markets such as Japan and APAC. Previously released in Limited Availability, this capability is now generally available. 
-
-+++
-
-### Email channel {#sep-26-email-channel}
-
-The following capabilities and improvements are coming to the Email channel in this release.
-
-+++ Coming soon — **Information below is subject to change.**
-
 <table>
 <thead>
 <tr>
@@ -566,6 +470,12 @@ The following capabilities and improvements are coming to the Email channel in t
 </tr>
 </tbody>
 </table>
+
+* **Custom SMS BYOP auth flexibility** - You can now configure **custom authentication headers** when connecting your SMS provider's OAuth setup, including where the token is placed on outgoing messages and how the token request itself is formatted.
+
+* **Direct mail - Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration.
+
+* **Direct mail - Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors.
 
 * **Suppression list override at email action level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model.
 
@@ -649,6 +559,147 @@ The following capabilities and improvements are coming to the Email Designer in 
 </table>
 
 +++
+
+### Orchestrated campaigns {#sep-26-orchestrated-campaigns}
+
+<table>
+<thead>
+<tr>
+<th><strong>New Orchestrated Campaigns monitoring APIs</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>New <strong>APIs</strong> are now available for orchestrated campaigns, allowing you to programmatically retrieve orchestrated campaigns and monitor their executions, enabling deeper integration with external systems and automation pipelines.</p>
+<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaigns" target="_blank">API reference on Adobe Developer</a>.</p>
+<p>Availability date: September 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Alerting for orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Orchestrated campaigns now support <strong>automated alerting</strong> through the same alerting framework used across journeys and campaigns. Alerts are triggered when a campaign execution fails, times out, and each alert includes what happened, when, where, and a direct link to the Canvas to check further details in the logs.</p>
+<p>For more information, refer to the <a href="../orchestrated/start-monitor-campaigns.md#alerting">detailed documentation</a>.</p>
+<p>Availability date: September 22, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage. [Learn more](../data/monitor-data-ingestion.md#co)
+
+  Availability date: September 28, 2026
+
+* **Conditional content with relational data in orchestrated campaigns** - When building conditional content in the Email Designer for orchestrated campaigns, you can now build conditions directly on relational data — such as related records associated with a profile — not just standard profile attributes. [Learn more](../orchestrated/activities/channels.md#add-personalization)
+
+  Availability date: September 22, 2026
+
+* **Direct joins on collections in Orchestrated Campaigns** - When adding an attribute from a related collection, you can now choose between three join modes — a new default that warns you about potential performance impact from cartesian products, plus the existing Aggregate and Advanced modes — making it easier to understand the tradeoffs of your query before you build it. [Learn more](../orchestrated/build-query.md#links)
+
+  Availability date: September 22, 2026
+
++++ Coming soon — **Information below is subject to change.**
+
+<table>
+<thead>
+<tr>
+<th><strong>OR join activity for orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The <strong>Join activity</strong> in orchestrated campaigns now supports both AND and OR join conditions. With OR logic, a profile that completes any one upstream branch, rather than all of them, continues along a single shared downstream path. This makes it possible to model "if A or B or C, then do this" patterns directly on the canvas without duplicating downstream steps across separate branches.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **LINE channel for orchestrated campaigns** - LINE is now available as a native outbound channel in orchestrated campaigns, alongside email, SMS, and push. You can build and deliver LINE messages directly from the campaign canvas, including text, stickers, images, videos, location data, and Flex Messages, supporting promotional, transactional, and ongoing engagement use cases in LINE-dominant markets such as Japan and APAC. Previously released in Limited Availability, this capability is now generally available. 
+
++++
+
+### Campaigns {#sep-26-campaigns}
+
++++ Coming soon — **Information below is subject to change.**
+
+* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface.
+
+* **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
+
++++
+
+### Decisioning {#sep-26-decisioning}
+
+The following capabilities and improvements are coming to decisioning in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Decisioning support in Web channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
+<p>For more information, refer to the <a href="../experience-decisioning/use-decision-policy.md">detailed documentation</a>.</p>
+<p>Availability date: September 22, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Decisioning Explainer in Coworker</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new <strong>Decisioning Explainer</strong> skill in CX Coworker lets you ask, in natural language, why a specific offer was or wasn't shown to a profile or segment, tracing eligibility, capping, ranking, and the candidate pool involved in the decision.</p>
+<p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md#decisioning-explainer">detailed documentation</a>.</p>
+<p>Availability date: September 16, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Rules &amp; Ranking in Coworker</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new <strong>Rules &amp; Ranking</strong> skill in CX Coworker lets you create, explain, simulate, and optimize eligibility rules and ranking formulas using natural language, without writing or validating PQL syntax by hand.</p>
+<p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md#rules-ranking">detailed documentation</a>.</p>
+<p>Availability date: September 16, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **AEM Content Fragments in Decisioning available for Managed Services customers** - Previously, AEM Content Fragments in Decisioning were available only to customers using **Adobe Experience Manager as a Cloud Service** integration. This capability is now also available to customers using **Adobe Experience Manager Managed Services**. [Learn more](../experience-decisioning/items.md#attributes)
+
+  Availability date: September 23, 2026
+
+* **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually. [Learn more](../experience-decisioning/ranking/ranking-formulas.md#simulate-ranking-formula)
+
+  Availability date: September 22, 2026
 
 ### Onboarding {#sep-26-onboarding}
 
@@ -742,68 +793,6 @@ The following capabilities are coming to integrations in this release.
 ### Personalization {#sep-26-personalization}
 
 * **Fix syntax with AI** - When validating an expression, if a PQL syntax error is detected, the Personalization Editor provides a "Fix with AI" option to help resolve the issue directly from the editor. [Read more](../personalization/personalization-build-expressions.md#validation-mechanisms).
-
-  Availability date: September 22, 2026
-
-### Decisioning {#sep-26-decisioning}
-
-The following capabilities and improvements are coming to decisioning in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in Web channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
-<p>For more information, refer to the <a href="../experience-decisioning/use-decision-policy.md">detailed documentation</a>.</p>
-<p>Availability date: September 22, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning Explainer in Coworker</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>A new <strong>Decisioning Explainer</strong> skill in CX Coworker lets you ask, in natural language, why a specific offer was or wasn't shown to a profile or segment, tracing eligibility, capping, ranking, and the candidate pool involved in the decision.</p>
-<p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md#decisioning-explainer">detailed documentation</a>.</p>
-<p>Availability date: September 16, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Rules &amp; Ranking in Coworker</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>A new <strong>Rules &amp; Ranking</strong> skill in CX Coworker lets you create, explain, simulate, and optimize eligibility rules and ranking formulas using natural language, without writing or validating PQL syntax by hand.</p>
-<p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md#rules-ranking">detailed documentation</a>.</p>
-<p>Availability date: September 16, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **AEM Content Fragments in Decisioning available for Managed Services customers** - Previously, AEM Content Fragments in Decisioning were available only to customers using **Adobe Experience Manager as a Cloud Service** integration. This capability is now also available to customers using **Adobe Experience Manager Managed Services**. [Learn more](../experience-decisioning/items.md#attributes)
-
-  Availability date: September 23, 2026
-
-* **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually. [Learn more](../experience-decisioning/ranking/ranking-formulas.md#simulate-ranking-formula)
 
   Availability date: September 22, 2026
 
