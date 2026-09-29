@@ -28,7 +28,7 @@ subfeature_v2:
 >
 >Custom channels are available in journeys, orchestrated campaigns and Marketing (action and API-triggered) campaigns. They are not available in transactional campaign types.
 
-<!--Multilingual support, business rules enforcement, and [!DNL Adobe Experience Decisioning] integration are planned for a future release.-->
+<!--Multilingual support is planned for a future release.-->
 
 [!DNL Journey Optimizer]'s **Custom channels** capability lets you bring any outbound channel into [!DNL Journey Optimizer] so you can use it in campaigns and journeys—just like any native channel. Using the **Channel Builder**, administrators can create and configure new channels without engineering involvement, and marketers can immediately start using them to communicate with customers.
 
@@ -40,7 +40,7 @@ subfeature_v2:
 
 Custom channels fill this gap: they enable you to use any outbound HTTP endpoint as a full [!DNL Journey Optimizer] channel, unlocking:
 
-* **Full channel capabilities** – Optimization (content experimentation and targeting), OOTB reporting and monitoring, consent and governance enforcement, and expression fragments. <!--Multilingual and business rules are planned for a future release.-->
+* **Full channel capabilities** – Optimization (content experimentation, targeting, and business rules), OOTB reporting and monitoring, consent and governance enforcement, and expression fragments. <!--Multilingual is planned for a future release.-->
 * **Unified orchestration** – Manage all your messaging channels in a single place, regardless of the underlying delivery provider.
 * **No-code setup** – Admins configure the channel through the Channel Builder UI; no custom code or engineering effort is required.
 

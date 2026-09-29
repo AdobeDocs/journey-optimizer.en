@@ -32,8 +32,7 @@ subfeature_v2:
 
 Configuring a custom channel is an administrator task that happens once per channel. After the channel is configured, marketers can immediately select it in campaigns and journeys — just like any native [!DNL Journey Optimizer] channel.
 
-<!--FOR GA: Custom channels support personalization and decisioning in payload authoring, business rules in campaign optimization, and reporting webhooks through channel configuration.
--->
+<!--FOR GA: Custom channels also support reporting webhooks through channel configuration, planned for a future release.-->
 
 The configuration process covers four steps: defining the channel itself (endpoint, authentication, payload), managing the API credentials used to authenticate requests, optionally delegating a subdomain for link tracking, and finally creating a channel configuration that marketers will select at authoring time.
 

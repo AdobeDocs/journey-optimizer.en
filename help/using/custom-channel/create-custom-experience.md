@@ -97,8 +97,7 @@ To use a custom channel in a campaign:
 
     * **[!UICONTROL Create targeting rules]** to send different messages to different segments of your audience. [Learn more](../campaigns/create-campaign.md#targeting)
     * Click **[!UICONTROL Create experiment]** to run A/B tests on your custom channel messages. [Learn more](../campaigns/create-campaign.md#content-experiment)
-
-    <!--For custom channels, campaign optimization also supports business rules, similar to native channels.-->
+    * Use the **[!UICONTROL Business rules]** drop-down list to select a rule set and apply capping rules to your custom channel messages, the same way as with native channels. [Learn how to work with rule sets](../conflict-prioritization/rule-sets.md)
 
 1. Click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)
 
