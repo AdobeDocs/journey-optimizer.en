@@ -30,23 +30,24 @@ When you preview your message content, you can have [!DNL Journey Optimizer] che
 
 ## Run URL validation {#access}
 
-URL validation can be run from the **[!UICONTROL Simulate]** screen, for channel actions in journeys and campaigns across all channels, and when you preview [content templates](content-templates.md).
+URL validation runs from the **[!UICONTROL Simulate]** screen. It's available for channel actions in journeys and campaigns across all channels, and when you preview [content templates](content-templates.md).
 
-To run URL validation, follow the steps below.
+URL validation runs automatically when you open the **[!UICONTROL Simulate]** screen, so you don't need to start it yourself. To review the results:
 
 1. From the content editor, click **[!UICONTROL Simulate content]**. [Learn more about simulation](../test-approve/simulate-content-variations.md)
 
-1. From the **[!UICONTROL Simulate]** screen, click the **[!UICONTROL Validate URLs]** button to run the URL validation check.
+1. From the **[!UICONTROL Simulate]** screen, check the URL validation icon:
+
+    * If all URLs are valid, the icon shows a green check mark.
+    * If any URLs are invalid, the icon shows them. Click the icon to open a pop-up window that lists each invalid URL and the reason it's invalid.
 
     ![](assets/simulate-validate-urls.png)
 
-    The list of all invalid URLs, along with the reason for their invalidity, is displayed.
-
-1. Click **[!UICONTROL Copy]** to copy the list to your clipboard and paste it into a document or email for further review.
+1. Click **[!UICONTROL Copy]** to copy the list to your clipboard, then paste it into a document or email for review.
 
 1. Close the window and fix the invalid URLs in your content. Learn more in the [Troubleshooting](#troubleshooting) section.
 
-1. Repeat the steps above to re-run the URL validation check until all URLs are valid.
+1. Simulate the content again. Validation re-runs automatically. Repeat until the icon shows a green check mark.
 
 ## How it works {#how-it-works}
 
@@ -84,16 +85,16 @@ The following aren't flagged as broken, even if they appear in your content:
 
 >[!IMPORTANT]
 >
->**Personalized links are always flagged as invalid.** If a link contains a personalization token, that token isn't resolved during validation, so the URL is incomplete and can never be reached. This happens every time, whether or not the underlying link actually works.
+>Personalized links are validated against your simulation data. If a link contains a personalization token, the token is resolved with the profile data you use in the **[!UICONTROL Simulate]** screen. If that data is test data or generated data, the resolved URL may not exist, so the link is flagged as invalid even if it works for real recipients.
 >
->For example, these will always show as invalid:
+>For example, these links may show as invalid when you simulate with test or generated profiles:
 >
 >* `https://example.com/profile/{{crmID}}`
 >* `https://example.com/offer?promoCode={{promoCode}}`
 >
->Before you report or try to fix a flagged link, check whether it contains a personalization token (usually shown as `{{ }}` placeholders). If it does, treat it as an expected false positive and verify the link manually instead — there's no way to resolve the token from the validation result alone.
+>To check whether a personalized link is actually valid, simulate with real, valid profile data.
 
-Beyond personalized links, content is scanned for URLs wherever they appear, not only in clickable links — so a few other categories are also commonly flagged as false positives:
+Content is scanned for URLs wherever they appear, not only in clickable links. As a result, a few other categories are often flagged as false positives:
 
 * **Adobe namespace URLs**, such as `xmlns="http://ns.adobe.com/..."` in XML/HTML, are identifiers rather than pages to visit. They return a 404, which is expected.
 * **CDN resource URLs** — images, fonts, or stylesheets that aren't meant to be clicked. If the CDN is slow or temporarily unavailable, they may show as invalid.
@@ -101,13 +102,13 @@ Beyond personalized links, content is scanned for URLs wherever they appear, not
 
 >[!NOTE]
 >
->Before treating a flagged URL as a real issue, check whether it contains a personalization token, is a namespace/CDN/metadata URL, or is an actual user-facing link.
+>Before you treat a flagged URL as a real issue, check whether it's a personalized link resolved with test data, a namespace, CDN, or metadata URL, or an actual user-facing link.
 
 ## Best practices {#best-practices}
 
 1. Use `https://` for all links — HTTP links aren't allowed.
 1. Confirm external dependencies — CDN URLs, third-party APIs, and remote images — are healthy before you preview.
-1. Expect any link containing a personalization token to always show as invalid. Verify these links manually instead of relying on the validation result.
+1. Simulate personalized links with real, valid profile data. Test or generated data can make valid links show as invalid.
 1. Stay under the 50-URL limit — going over it doesn't trim the extras, it rejects the whole validation request. Consider splitting your content across multiple messages or templates.
 1. Expect namespace or data URIs in your schema to show as invalid — that's expected, since they aren't meant to be clicked.
 
@@ -118,6 +119,6 @@ Beyond personalized links, content is scanned for URLs wherever they appear, not
 | "This link uses HTTP. Only HTTPS links are allowed." | Insecure scheme | Update the URL to use `https://`. |
 | "This link couldn't be reached." | Malformed URL, scheme typo, 404 response, blocked internal address, or timeout — see [What gets flagged](#invalid-urls) | Fix the URL, or verify the host is correct, online, and reachable. |
 | No validation result is returned at all | Content contains more than 50 URLs, so the entire request is rejected | Reduce the number of links in your content, then preview again. |
-| A link with a `{{ }}` personalization token is flagged as invalid | Expected — see [Caveats](#caveats). This always happens for personalized links, even valid ones. | Ignore the flag and verify the link manually. |
+| A link with a `{{ }}` personalization token is flagged as invalid | The token was resolved with test or generated simulation data, so the resulting URL may not exist. See [Caveats](#caveats). | Simulate again with real, valid profile data to check whether the link actually works. |
 | A flagged URL actually works fine and isn't personalized | False positive — see [Caveats](#caveats) | It's likely a namespace URL, a CDN resource, or content in comments/metadata — safe to ignore if it isn't user-facing. |
 
