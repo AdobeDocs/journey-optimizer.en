@@ -56,3 +56,5 @@ For complete understanding, this information should be combined with the documen
 * **Does Rules & Ranking change a rule's logic when optimizing it?** No, PQL optimization only makes the syntax more concise to fit size limits; it preserves the original logic and outcome.
 
 +++
+
+<!-- ai-section-version: 1 | source-hash: 4c7c194d -->
