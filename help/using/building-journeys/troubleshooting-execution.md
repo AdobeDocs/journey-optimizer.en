@@ -17,6 +17,8 @@ product_v2:
 feature_v2:
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: d08afb72-92f6-4856-88e3-11ec34313c2f
     internal-label: Event configuration
@@ -161,6 +163,10 @@ If individuals flow the right way in the journey but do not receive messages the
 * [!DNL Journey Optimizer] has successfully sent the message. Check the journey reporting to make sure that there are no errors.
 
 In case of a message sent via a custom action, the only thing that can be checked during journey test is the fact that the call of the custom action's system leads to an error or not. If the call to the external system associated with the custom action does not lead to an error but does not lead to a message sending, some investigations should be done on the external system's side.
+
+>[!NOTE]
+>
+>For native Journey Optimizer channel actions, query the Message Feedback Event Dataset to confirm delivery status such as `sent` or `bounce`. In Adobe Journey Optimizer, `sent` is the relevant status for successful message delivery outcomes; the `delivered` value is not used in Adobe Journey Optimizer Message Feedback Event datasets. For custom actions, query the Journey Step Event dataset to confirm that Journey Optimizer executed the action successfully — a successful HTTP call does not by itself confirm that the external system delivered a message. Learn how to [choose the correct dataset](../data/datasets-query-examples.md#choose-the-correct-dataset) for your use case.
 
 ## Understanding duplicate entries in Journey step events {#duplicate-step-events}
 

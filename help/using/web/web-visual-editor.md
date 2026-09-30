@@ -13,6 +13,8 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
     internal-label: Web channel
@@ -141,6 +143,8 @@ Once you edited your web content, you can manage your modifications. [Learn more
 ## Add personalization 
 
 To add personalization, select a container and select the personalization icon from the contextual menu bar that displays. Add your changes using the personalization editor. [Learn more](../personalization/personalization-build-expressions.md)
+
+You can also use **Decisioning** to deliver the most relevant offer to each visitor. From the personalization editor, navigate to **[!UICONTROL Decision policies]** and select **[!UICONTROL Insert syntax]** to add a decision policy to your web component. [Learn more](../experience-decisioning/use-decision-policy.md)
 
 ![](assets/web-designer-personalization.png)
 

@@ -16,16 +16,12 @@ feature_v2:
   - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
     internal-label: Data management activity
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
-  - id: a1cdc218-59b7-4eef-b5cf-2a7ad74b3371
-    internal-label: Journey Optimizer schemas
-  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
-    internal-label: Datasets
-  - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
-    internal-label: Data ingestions
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: a1cdc218-59b7-4eef-b5cf-2a7ad74b3371
+    internal-label: Journey Optimizer schemas
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -102,3 +98,5 @@ Learn how to create a standard schema, add field groups, create, and configure c
 >* [Managing profile-enabled schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices#managing-profile-enabled-schemas){target="_blank"}
 >* [Create a schema using the Schema Registry API](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html){target="_blank"}
 >* [Define a relationship between two schemas using the Schema Editor](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html){target="_blank"}
+
+{{$include /help/_includes/do-not-localize/data/ai-augmented-get-started-schemas.md}}

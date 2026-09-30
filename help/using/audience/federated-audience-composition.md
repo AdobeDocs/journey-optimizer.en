@@ -12,12 +12,8 @@ feature_v2:
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
 subfeature_v2:
-  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
-    internal-label: Audience Qualification events
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences
-  - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
-    internal-label: Audience guardrails
 ---
 # Federated Audience Composition {#fac}
 
@@ -43,3 +39,5 @@ For more information, please read the guide on [Federated Audience Composition](
 Learn more about Federated Audience Composition in video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432261?quality=12)
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-federated-audience-composition.md}}

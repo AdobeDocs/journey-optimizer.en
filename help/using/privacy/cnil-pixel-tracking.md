@@ -158,3 +158,5 @@ AJO has no native equivalent of Campaign v8's "lastPixelRefusalDate" field or re
 ### Reporting {#reporting}
 
 Adobe Journey Optimizer's email reporting provides open and click metrics through [Live reports](../reports/live-report.md) and [Customer Journey Analytics reports](../reports/report-gs-cja.md). When **[!UICONTROL Email opens]** tracking is disabled for a message, open data is not collected for that delivery; reporting will reflect clicks and other engagement signals only.
+
+{{$include /help/_includes/do-not-localize/privacy/ai-augmented-cnil-pixel-tracking.md}}

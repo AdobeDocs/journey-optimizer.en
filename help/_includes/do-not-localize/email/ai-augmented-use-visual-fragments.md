@@ -56,7 +56,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I nest fragments that contain conditional content?** — No. Nesting fragments with conditional content is not supported and can cause loss of variant mappings, compatibility mode warnings, and inconsistent email rendering.
 * **Q: Why does my fragment appear blank in the Email Designer?** — If the fragment uses dynamic content and its default state is empty, it may appear blank because the system uses the default variant as a fallback; simulate the email with a profile that meets the fragment's dynamic content conditions to preview the actual content.
 * **Q: What happens when I break inheritance?** — The fragment content is copied into the current design, it becomes a standalone element no longer linked to the original fragment, and changes are no longer synchronized.
-* **Q: Why can't I break the inheritance of a fragment?** — It may be a locked fragment, whose unlock icon is greyed out; the author can later reset its behavior to Allow inheritance to be broken.
+* **Q: Why can I not break the inheritance of a fragment?** — It may be a locked fragment, whose unlock icon is greyed out; the author can later reset its behavior to Allow inheritance to be broken.
 
 +++
 

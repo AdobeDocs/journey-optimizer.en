@@ -57,4 +57,4 @@ When you republish a Fragment already used in a Journey or Campaign, the sync ti
 
 ➡️ [Learn more about Content Fragment](aem-fragments.md)
 
-
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-aem-fragments-manage.md}}

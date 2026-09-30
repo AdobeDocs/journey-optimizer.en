@@ -7,10 +7,12 @@ role: User
 level: Intermediate
 exl-id: f0f83bd2-7c2b-4d9b-b455-e1df12dfa175
 feature_v2:
-  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
-    internal-label: Track and monitor
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 subfeature_v2:
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
@@ -1130,4 +1132,6 @@ ORDER BY timestamp ASC
 A `feedbackStatus` of `sent` confirms that Journey Optimizer successfully handed the notification to APNs. It does **not** confirm that the Live activity was rendered on the device.
 
 iOS provides no callbacks once a notification leaves APNs. Device-side failures — such as an OS restriction, a network drop between APNs and the device, or the 8-hour Live activity duration limit being reached — are not observable from the dataset. If `feedbackStatus` is `sent` but no Live activity appears on the device, the issue is outside the Journey Optimizer pipeline. Use the Assurance plugin or app-level logging to diagnose device-side behavior.
+
+{{$include /help/_includes/do-not-localize/mobile-live/ai-augmented-troubleshoot-mobile-live.md}}
 

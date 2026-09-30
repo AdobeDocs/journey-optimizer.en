@@ -27,14 +27,10 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 subfeature_v2:
-  - id: a1cdc218-59b7-4eef-b5cf-2a7ad74b3371
-    internal-label: Journey Optimizer schemas
-  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
-    internal-label: Datasets
-  - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
-    internal-label: Data ingestions
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
+    internal-label: Datasets
 ---
 # Get Started with queries {#queries-gs}
 
@@ -56,3 +52,5 @@ Learn how to use the Query Editor in [this documentation](https://experienceleag
 >
 >* [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
 >* [Query Service overview video](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html){target="_blank"}
+
+{{$include /help/_includes/do-not-localize/data/ai-augmented-get-started-queries.md}}

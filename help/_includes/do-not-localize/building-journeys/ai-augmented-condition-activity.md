@@ -44,7 +44,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 * **Q: What happens when multiple paths are defined and a profile meets more than one condition?** — Only the first eligible path (top to bottom on the canvas) is executed; path order determines priority.
-* **Q: Can I add a fallback path for profiles that don't match any condition?** — Yes, enable "Show path for other cases than the one(s) above" — except in Percentage Split conditions, where all profiles always enter one of the split paths.
+* **Q: Can I add a fallback path for profiles that do not match any condition?** — Yes, enable "Show path for other cases than the one(s) above" — except in Percentage Split conditions, where all profiles always enter one of the split paths.
 * **Q: Why does my isEmpty() condition evaluate to true for a field I expect to have data?** — If the schema field exists but no data has been ingested for it, Journey Optimizer and Real-Time Customer Profile interpret it as null, so isEmpty() and isNull() return true.
 * **Q: Does the profile cap counter reset on a recurring journey?** — No, the counter does not reset between recurrences; it only resets when the journey is duplicated or a new version is created.
 * **Q: How does the Percentage Split work in test mode?** — In test mode, the top branch is always chosen regardless of the configured split percentages.

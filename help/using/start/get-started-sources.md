@@ -36,6 +36,8 @@ topic_v2:
 subfeature_v2:
   - id: af7571a6-3ddb-4c1c-abdf-4d4dde592140
     internal-label: Source connectors
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 ---
 # Get started with sources connectors {#sources-gs}
 
@@ -153,3 +155,5 @@ Now that you understand what sources are and why they're important:
 * Understand [data mapping and transformation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home){target="_blank"}
 * See how to [use imported data in journeys](../building-journeys/journey-gs.md)
 * Review the [Get started with data management](../data/gs-data.md) overview to understand how sources fit into the full data setup for Journey Optimizer
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-get-started-sources.md}}

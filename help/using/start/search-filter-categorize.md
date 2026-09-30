@@ -155,3 +155,5 @@ Administrators can delete tags and organize them by categories using the **[!UIC
 >[!NOTE]
 >
 > Tags created directly from the **[!UICONTROL Tags]** field in Journey Optimizer are automatically added to the built-in "Uncategorized" category.
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-search-filter-categorize.md}}

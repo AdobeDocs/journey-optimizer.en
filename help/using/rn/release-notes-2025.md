@@ -1846,7 +1846,7 @@ table>
 
 **Use case playbooks**
 
-* **Playbooks authoring and sharing (Private beta)** - You can now create, manage, and share your own use case playbooks. This capability is currently only available for a set of organizations as a private beta. To gain access, contact your Adobe representative. [Read more](../start/ai-features.md#playbooks)
+* **Playbooks authoring and sharing (Private beta)** - You can now create, manage, and share your own use case playbooks. This capability is currently only available for a set of organizations as a private beta. To gain access, contact your Adobe representative. [Read more](../start/ajo-use-case-guide.md#playbooks)
 
 **Navigation**
 

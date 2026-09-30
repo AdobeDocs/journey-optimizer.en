@@ -165,3 +165,5 @@ You can use these shortcuts in specific areas of [!DNL Journey Optimizer] user i
     <td>Ctrl + A (Windows)<br/>Command + A (Mac)</td>
   </tr>
 </table>
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-accessibility.md}}

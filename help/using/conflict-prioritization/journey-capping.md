@@ -11,8 +11,8 @@ product_v2:
 feature_v2:
   - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
     internal-label: Conflict & prioritization
-  - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
-    internal-label: Conflict & prioritization (AJO)
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -143,3 +143,5 @@ In addition, you can use the [Adobe Experience Platform Query Service](https://e
 ## How-to video {#video}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435530?quality=12)
+
+{{$include /help/_includes/do-not-localize/conflict-prioritization/ai-augmented-journey-capping.md}}

@@ -132,7 +132,7 @@ For in-app messages, you can use the **[!UICONTROL Edit triggers]** button to ch
 >title="Add multiple inbound actions"
 >abstract="You can select several inbound actions inside a single campaign. This capability enables you to deliver multiple Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, each action containing a specific content."
 
-To simplify your campaign orchestration, you can define several inbound actions inside a single campaign, each action containing a specific content.
+To simplify the orchestration of your campaign, you can define several inbound actions inside a single campaign, each action containing a specific content.
 
 >[!NOTE]
 >

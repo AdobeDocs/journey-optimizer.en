@@ -125,3 +125,5 @@ The video below shows how to monitor the reliability and performance of API call
 >[!VIDEO](https://video.tv.adobe.com/v/3479541?quality=12&learn=on)
 
 +++
+
+{{$include /help/_includes/do-not-localize/action/ai-augmented-reporting.md}}

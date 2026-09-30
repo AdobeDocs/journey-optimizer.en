@@ -9,6 +9,10 @@ exl-id: df92e319-1e42-486f-b688-595964a762c9
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
     internal-label: In App channel
@@ -61,3 +65,5 @@ For Adobe Journey Optimizer to correctly display content cards, you must configu
 >[!CAUTION]
 >
 >When targeting pseudonymous profiles (unauthenticated visitors) with your content cards, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](../start/guardrails.md#profile-management-inbound)
+
+{{$include /help/_includes/do-not-localize/content-card/ai-augmented-content-card-configuration-prereq.md}}

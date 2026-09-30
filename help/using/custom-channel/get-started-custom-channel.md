@@ -6,6 +6,14 @@ topic: Content Management
 role: User
 level: Beginner
 badge: label="Limited Availability" type="Informative"
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
+    internal-label: Custom Channels
 ---
 
 # Get started with custom channels {#get-started-custom-channel}
@@ -128,3 +136,5 @@ Setting up and using a custom channel follows the main stages below:
 * Configure your first custom channel using the Channel Builder. [Learn more](custom-channel-configuration.md)
 * Create a custom channel experience in a journey or campaign. [Learn more](create-custom-experience.md)
 -->
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-get-started-custom-channel.md}}

@@ -93,3 +93,4 @@ Setting up an integration involves administrators and marketers, each playing a 
 
     See [Use External integrations for personalization](integrations-personalization.md)
 
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-integrations.md}}

@@ -52,7 +52,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: Which two campaigns drive the inbox?** — A Content Card campaign that delivers individual notification items and an Inbox campaign that delivers configuration such as the title, empty-state copy, and layout, both targeting the same surface.
 * **Q: Which Web SDK commands does the inbox rely on?** — `subscribeRulesetItems`, which registers a callback that runs when eligible propositions change, and `sendEvent`, which fetches those propositions.
-* **Q: Why don't cards with additional delivery rules appear after `sendEvent`?** — They do not appear on `sendEvent` alone; you must call `evaluateRulesets` with the matching `decisionContext` to trigger them, after which the `subscribeRulesetItems` callback runs again with the newly qualified cards.
+* **Q: Why do cards with additional delivery rules not appear after `sendEvent`?** — They do not appear on `sendEvent` alone; you must call `evaluateRulesets` with the matching `decisionContext` to trigger them, after which the `subscribeRulesetItems` callback runs again with the newly qualified cards.
 * **Q: How do I keep campaign reporting accurate?** — Use the `collectEvent` function provided by the `subscribeRulesetItems` callback to report interactions (display, interact, dismiss, delete) back to AJO.
 * **Q: How do I run the sample?** — Run `npm install` and `npm start`, open `https://localhost`, and update `datastreamId`, `orgId`, and the `SURFACE` constant in `src/app/page.js` for your AJO environment.
 

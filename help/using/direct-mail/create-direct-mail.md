@@ -16,6 +16,8 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
@@ -90,6 +92,10 @@ Browse the tabs below to learn how to add a Direct mail message in a campaign or
 
 When your extraction file is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) to send it.
 
+>[!NOTE]
+>
+>Journey direct mail extraction files are generated according to the file routing frequency. Profiles are included in the next export after they reach the **[!UICONTROL Direct mail]** activity. With a frequency shorter than 24 hours, profiles can arrive in different export windows and produce multiple files during a day. To ensure one file per day, use a 24-hour routing frequency. For more information, see [Understand export timing and file generation](direct-mail-configuration.md#dm-export-timing).
+
 >[!TAB Add a Direct mail message to a Campaign]
 
 1. Access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**.
@@ -119,6 +125,10 @@ When your extraction file is ready, complete the configuration of your [journey]
 1. Campaigns can be scheduled for a specific date or set to recur at regular intervals. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/campaign-schedule.md). 
     
 You can now start configuring the extraction file to send to your direct mail provider.
+
+>[!NOTE]
+>
+>Campaign direct mail extraction files are generated when the campaign starts. For recurring campaigns, a file is generated for each campaign execution.
 
 >[!ENDTABS]
 
@@ -186,3 +196,5 @@ You can now test your direct mail message and send it to your audience. [Learn h
 * [Preview and test content](../content-management/preview-test.md)
 
 For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md). 
+
+{{$include /help/_includes/do-not-localize/direct-mail/ai-augmented-create-direct-mail.md}}

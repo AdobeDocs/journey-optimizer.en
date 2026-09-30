@@ -15,6 +15,8 @@ feature_v2:
     internal-label: Communication channels
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
     internal-label: Templates
@@ -173,6 +175,10 @@ Below are a few examples of JSON and HTML templates, some of them including deci
 >* Integers or booleans must NOT be enclosed in double quotes. (See the `number_of_items` field in the example above.)
 
 **JSON template with decisioning:**
+
+>[!IMPORTANT]
+>
+>When you render string values from decision items in a JSON array, enclose the Handlebars expressions in double quotes. Keep the quotes around expressions inside the `{{#each}}` block; otherwise, the code-based experience may not render the offer array correctly.
 
 ```
 { 

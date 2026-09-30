@@ -20,22 +20,12 @@ feature_v2:
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
 subfeature_v2:
+  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
+    internal-label: Action activities
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
   - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
     internal-label: Wait activity
-  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
-    internal-label: Custom actions
-  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
-    internal-label: Sandboxes
-  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
-    internal-label: Action activities
-  - id: e57d1da4-32c2-4cc6-945c-9feb219156ff
-    internal-label: Event activities
-  - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
-    internal-label: Reaction events
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -132,6 +122,7 @@ The toolbar in the top right corner of the canvas provides quick access to essen
 
 | Toolbar icon | Description |
 |--- |--- |
+| Expand all | Expand all channel activities to show a thumbnail preview of their content directly on the canvas. Click any thumbnail to open a fullscreen preview. |
 | Download canvas image | Capture your current canvas view as an image and save it on your computer. |
 | Share feedback | Open a feedback form to let us know if you're missing something on the new canvas or have an idea to make it better. |
 | Multiple selection | Switch to selection mode to select multiple activities. |
@@ -139,6 +130,28 @@ The toolbar in the top right corner of the canvas provides quick access to essen
 | Fit to screen | Automatically adjust the zoom level to fit your entire journey in view. |
 | Zoom out | Decrease the zoom level. |
 | Zoom in | Increase the zoom level. |
+
+### Preview content in the canvas {#content-preview}
+
+Review what every channel activity will send without opening each one individually. Content preview renders each activity's content right on the canvas, so you can check an entire cross-channel journey at a glance instead of clicking into activities one by one.
+
+In the canvas toolbar, click the **[!UICONTROL Expand all]** (eye) icon. Every channel activity expands inline to show a thumbnail of its content.
+
+![Preview channel content directly in the journey canvas](assets/journey-canvas-content-preview.png)
+
+To see an activity more closely, click its thumbnail. The content opens in a centered preview where you can switch between treatments and variants when the activity uses personalization.
+
+![Preview of an email activity's content in a centered frame](assets/journey-canvas-content-preview-email.png)
+
+The preview adapts to each channel. For example, mobile and SMS messages display in a device mockup.
+
+![Preview of a mobile message activity's content in a centered frame](assets/journey-canvas-content-preview-message.png)
+
+Content preview is available in three contexts, each showing content the way it applies at that stage:
+
+* **When you design a journey** — Preview the content you authored for each activity as you build, so you can catch layout or content issues early, before you test.
+* **During a simulation** — Preview the content rendered for the selected test user, reflecting the personalization values and the path that user follows through the journey. [Learn how to run a simulation](simulate-journey.md).
+* **In test mode** — Preview the content for the journey you are testing. The content is visible, but it is not personalized for the test profile you target.
 
 ### Select multiple activities for bulk actions
 

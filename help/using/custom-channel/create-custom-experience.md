@@ -6,6 +6,12 @@ topic: Content Management
 role: User
 level: Experienced
 badge: label="Limited Availability" type="Informative"
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
+    internal-label: Custom Channels
 ---
 
 # Create custom channel experiences {#create-custom-channel}
@@ -222,3 +228,5 @@ The editor supports a **[!UICONTROL Strict JSON]** toggle:
 
 * **From a journey** – Click **[!UICONTROL Publish]** in the top-right area. The journey goes live and starts calling your external endpoint for qualifying profiles. Learn more about [publishing journeys](../building-journeys/journey-gs.md#publish-journey).
 * **From a campaign** – Click **[!UICONTROL Review to activate]**, review your settings, then click **[!UICONTROL Activate]**. The campaign takes the **[!UICONTROL Live]** status (or **[!UICONTROL Scheduled]** if a future start date was defined). Learn more about [activating campaigns](../campaigns/create-campaign.md#review-activate).
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-create-custom-experience.md}}

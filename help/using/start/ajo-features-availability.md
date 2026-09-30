@@ -197,3 +197,5 @@ All Decisioning features require the **Decisioning** add-on. See [Packages and c
 - **Understand what's in your package** — [Packages and capabilities](ajo-packages.md)
 - **See everything that shipped** — [Release notes](../rn/release-notes.md) | [2026 release notes](../rn/release-notes-2026.md)
 - **Get started** — [Get started with Journey Optimizer](get-started.md)
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-ajo-features-availability.md}}

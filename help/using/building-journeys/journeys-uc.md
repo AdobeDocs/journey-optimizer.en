@@ -28,8 +28,6 @@ subfeature_v2:
     internal-label: Event activities
   - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
     internal-label: Reaction events
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

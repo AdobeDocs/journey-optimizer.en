@@ -24,7 +24,6 @@ For complete understanding, this information should be combined with the documen
 - **Fallback path**: An alternate journey path for profiles that do not satisfy any of the defined targeting rules *(product-specific)*
 
 **Guardrails:**
-- Path targeting is currently in Limited Availability; contact your Adobe representative to request access.
 - Creating targeting rules from the dedicated Journey Optimizer Rules menu requires the Decisioning add-on or is available on demand (Limited Availability).
 - When a rule is selected from the Rules menu and copied into the journey, subsequent changes to the original rule do not affect the journey's copy.
 - Editing a rule inline does not modify the original rule it was sourced from.
@@ -40,6 +39,6 @@ For complete understanding, this information should be combined with the documen
 - **Q: What happens to profiles that do not qualify for any targeting rule?** — If the fallback path option is enabled, they enter the fallback path. If not enabled, they exit the journey entirely.
 - **Q: Can I reuse an existing rule from the Rules menu?** — Yes, but the rule formula is copied into the journey activity; subsequent changes to the original rule in the Rules menu will not affect the journey's copy.
 - **Q: Does editing a targeting rule inline change the original rule?** — No, editing inline only updates the rule within the journey activity and does not affect the source rule.
-- **Q: Who can access path targeting?** — It is currently in Limited Availability; contact your Adobe representative to request access.
+- **Q: Who can access path targeting?** — It is generally available to all environments as of June 8, 2026.
 
 +++

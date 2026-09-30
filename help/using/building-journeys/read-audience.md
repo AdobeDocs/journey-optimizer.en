@@ -22,18 +22,12 @@ feature_v2:
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
-  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
-    internal-label: Wait activity
   - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
     internal-label: Custom actions
-  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
-    internal-label: Sandboxes
   - id: e57d1da4-32c2-4cc6-945c-9feb219156ff
     internal-label: Event activities
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
+  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
+    internal-label: Wait activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -217,7 +211,7 @@ This value is stored in the journey version payload. The default value is 5,000 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience"
 >title="Trigger after batch audience evaluation"
->abstract="Delays each run until the batch audience has been freshly evaluated, so the journey reads the most up-to-date audience snapshot instead of stale data. Recommended for recurring journeys that depend on the latest segmentation results."
+>abstract="Waits for a fresh batch audience evaluation before each run: if a batch segmentation is already in progress, the journey always waits for it to finish. Otherwise, it waits only if the latest available snapshot is the same batch used on the previous run. Recommended for recurring journeys that depend on the latest segmentation results."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
@@ -312,7 +306,7 @@ In other words, **[!UICONTROL Force reentrance on recurrence] does not disable [
 
 +++**[!UICONTROL Trigger after batch audience evaluation]**
 
-For journeys scheduled daily and targeting batch audiences, you can define a time window of up to 6 hours for the journey to wait for fresh audience data from batch segmentation jobs. If the segmentation job completes within the time window, the journey triggers. Otherwise, it skips the journey until its next occurrence. This option ensures journeys run with accurate and up-to-date audience data.
+For journeys scheduled daily and targeting batch audiences, you can define a time window of up to 6 hours for the journey to wait for fresh audience data from batch segmentation jobs. If a batch segmentation job is already in progress, the journey always waits for it to complete within the time window. If no batch segmentation job is in progress, but the only available snapshot is the same batch used on the previous run, the journey waits for a newer batch instead of reusing it. If no fresher batch is found by the end of the time window, the journey execution is skipped for that occurrence.
 
 For example, if a journey is scheduled for 6 PM daily, you can specify a number of minutes or hours to wait before the journey runs. When the journey wakes up at 6 PM, it checks for a fresh audience, meaning an audience newer than the one used in the previous journey execution. During the specified time window, the journey will execute immediately upon detecting the fresh audience. If no fresh audience is detected, the journey execution will be skipped for that day.
 
@@ -410,6 +404,7 @@ This section helps you resolve **audience count mismatches** (fewer or more prof
 | Fewer (or more) profiles entered than the audience size | [Timing and data propagation](#timing-and-data-propagation), [Data validation and monitoring](#data-validation-and-monitoring) |
 | Read Audience processed zero profiles; alert fired | [Zero profiles processed](#zero-profiles-processed) |
 | Entries delayed or missing for batch audiences | [Timing and data propagation](#timing-and-data-propagation) |
+| Custom-upload enrichment attribute is missing or “Enriched audience not found” appears | [Troubleshoot enrichment attributes](../audience/enrichment-attributes.md#faq-enrichment) |
 | Need to verify segment job status or namespace | [Data validation and monitoring](#data-validation-and-monitoring) |
 
 ### Zero profiles processed {#zero-profiles-processed}

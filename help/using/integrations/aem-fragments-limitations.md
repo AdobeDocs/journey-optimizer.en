@@ -72,3 +72,5 @@ If you encounter issues when working with Adobe Experience Manager Content Fragm
 | **Experience League AEM link returns 404** | Stale bookmark, preview build, or unpublished AEM help page | Open the [Content Fragments with Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer){target="_blank"} topic from the live Experience Manager documentation and navigate from the on-page table of contents, or search for the section name (for example **Dispatcher Configuration**). |
 
 If the issue persists, contact your Adobe representative with details about your Content Fragment ID, campaign or journey ID, and any error messages displayed.
+
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-aem-fragments-limitations.md}}

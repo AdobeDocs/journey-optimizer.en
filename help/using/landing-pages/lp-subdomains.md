@@ -15,6 +15,8 @@ product_v2:
 feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
     internal-label: Sandboxes
@@ -123,6 +125,8 @@ To use a subdomain that is already delegated to Adobe, follow the steps below:
 >title="Generate the matching DNS record"
 >abstract="To configure a new landing page subdomain, you need to copy the Adobe nameserver information displayed in the Journey Optimizer interface and paste it into your domain-hosting solution to generate the matching DNS record. Once the checks are successful, the subdomain is ready to be used to create landing page presets."
 
+By default, [!DNL Journey Optimizer] allows you to delegate a maximum of 10 subdomains in total, combining email, landing page, and web channels. However, depending on your license contract, you may be able to delegate up to 3000 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. [Learn more](../configuration/delegate-subdomain.md#guardrails)
+
 To configure a new subdomain, follow the steps below.
 
 1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Landing page settings]** > **[!UICONTROL Landing page subdomains]**.
@@ -176,3 +180,5 @@ If you wish to undelegate a landing page subdomain, follow the steps below.
 1. Reach out to your Adobe representative with the subdomain you want to undelegate.
 
 After you request is handled by Adobe, the undelegated domain is no longer displayed on the subdomain inventory page.
+
+{{$include /help/_includes/do-not-localize/landing-pages/ai-augmented-lp-subdomains.md}}

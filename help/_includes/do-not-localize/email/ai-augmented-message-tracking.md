@@ -49,7 +49,7 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: How do I enable tracking?** — At the email message level, check the Email opens and/or Click on email options when creating your message in a journey or campaign; both are enabled by default.
-* **Q: Why can't I tell which of two identical links was clicked?** — Links that share the same URL and the same effective label (including a blank label) reuse the same urlID; assign a unique label to each similar URL.
+* **Q: Why can I not tell which of two identical links was clicked?** — Links that share the same URL and the same effective label (including a blank label) reuse the same urlID; assign a unique label to each similar URL.
 * **Q: How long do links stay available?** — 25 months after the message is sent for content links, and 90 days for mirror page links.
 * **Q: What is a mirror page?** — An online version of the email containing all personalization data, useful when recipients experience rendering issues, for accessibility, or for social sharing.
 * **Q: Which tracking types can I set for a URL?** — Tracked, Opt out, Mirror page, or Never.

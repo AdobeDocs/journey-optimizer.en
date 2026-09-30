@@ -19,7 +19,9 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-subfeature_v2: []
+subfeature_v2:
+  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
+    internal-label: Action activities
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -121,7 +123,15 @@ To configure the **[!UICONTROL Dataset lookup]** activity, follow these steps:
 
    >[!IMPORTANT]
    >
-   >You must define the lookup key using **advanced mode**. If you use simple mode to set the key, the dataset lookup activity output will not be available as a context attribute in downstream activities, and the `@datasetLookup{}` syntax will fail with a "Dataset lookup not found" error in condition activities.
+   >You must define the lookup key using **[!UICONTROL Advanced mode]** so the Dataset lookup activity's output is available as a context attribute downstream. If `@datasetLookup{}` returns a "Dataset lookup not found" error in a condition, see [Dataset lookup not found error in condition activity](#troubleshooting-not-found) for the cause and fix.
+   >
+   >Configure the lookup key and use its result in separate expression editors:
+   >
+   >1. **Configure the key:** In the Dataset lookup activity's **[!UICONTROL Lookup key(s)]** expression editor, switch to **[!UICONTROL Advanced mode]**, define the key, and save the activity. This makes the lookup context available to downstream activities.
+   >
+   >1. **Use the result:** In the condition's expression editor, switch to **[!UICONTROL Advanced mode]** and reference the lookup output, for example: `@datasetLookup{MyDatasetLookUpActivity1.entities}`. Replace `MyDatasetLookUpActivity1` with the name of your Dataset lookup activity.
+   >
+   >If the lookup output is unavailable downstream, confirm that the key is defined in **[!UICONTROL Advanced mode]** and that the Dataset lookup activity is saved.
 
    +++Example
    

@@ -18,8 +18,6 @@ feature_v2:
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
 subfeature_v2:
   - id: dd51b532-b93f-4bcf-8dbf-0d007f593aca
     internal-label: Data source configuration
@@ -81,3 +79,5 @@ Main steps to add field groups to the built-in data source are detailed below:
 >[!TIP]
 >
 >Hover over the name of a field group to reveal two icons on the right. Use these to **Duplicate** or **Delete** the field group. Note that the **[!UICONTROL Delete]** icon is only available if the field group is not used in any **Live**, **Draft** or **Finished** journey. Refer to the **[!UICONTROL Used in]** field to check if this is the case.
+
+{{$include /help/_includes/do-not-localize/datasource/ai-augmented-adobe-experience-platform-data-source.md}}

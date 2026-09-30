@@ -16,8 +16,8 @@ product_v2:
 feature_v2:
   - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
     internal-label: Conflict & prioritization
-  - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
-    internal-label: Conflict & prioritization (AJO)
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
     internal-label: Business rules
@@ -119,6 +119,10 @@ To set quiet hours, create a rule inside a custom rule set. [Learn how to create
 
          ![](assets/quiet-hours-weekly.png)
 
+         When a weekly period crosses midnight, the selected day is the day the period starts. For example, a Monday 9:00 PM–9:00 AM period covers Monday 9:00 PM through Tuesday 9:00 AM; it does not cover Monday 12:00 AM–9:00 AM.
+
+         Review weekly periods together to make sure they cover the intended days continuously, especially at midnight and at the start or end of the week. For example, a Saturday and Sunday all-day period combined with Monday–Friday 9:00 PM–9:00 AM periods leaves Monday 12:00 AM–9:00 AM uncovered. To extend quiet hours through Monday 9:00 AM, include Sunday in the 9:00 PM–9:00 AM period.
+
       * **[!UICONTROL Custom date]** - Choose specific dates in the calendar and a timeslot. You can also enforce the rule **[!UICONTROL All day]**.
 
          ![](assets/quiet-hours-custom.png)
@@ -215,3 +219,5 @@ Once your journey or campaigns has been activated and executed, you can view the
 Learn how to use the quiet hours feature in Adobe Journey Optimizer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3475851?quality=12)
+
+{{$include /help/_includes/do-not-localize/conflict-prioritization/ai-augmented-quiet-hours.md}}

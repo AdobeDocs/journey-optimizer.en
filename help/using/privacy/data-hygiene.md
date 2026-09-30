@@ -66,3 +66,5 @@ For more information on the Privacy Service and how to perform data lifecycle op
 
 * [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
 * [Data Lifecycle in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html)
+
+{{$include /help/_includes/do-not-localize/privacy/ai-augmented-data-hygiene.md}}

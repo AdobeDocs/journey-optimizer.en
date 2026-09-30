@@ -19,14 +19,12 @@ feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
-  - id: f29a52db-c90c-4345-902e-b586d1406d8d
-    internal-label: Content experiment
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: f29a52db-c90c-4345-902e-b586d1406d8d
+    internal-label: Content experiment
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -85,6 +83,8 @@ Content experimentation in Adobe Journey Optimizer uses a pseudo-random hash of 
 In detail, the MumurHash3 32-bit algorithm is used to hash the user identity string into one of 10,000 buckets. In a content experiment with 50% of traffic assigned to each treatment, users falling in buckets 1– 5,000 will receive the first treatment, while users in the buckets 5,001 to 10,000 will receive the second treatment. Since pseudo-random hashing is used, the visitor splits you observe may not be exactly 50-50; nevertheless, the split will be statistically equivalent to your target split percentage.  
 
 Note that as part of configuring every campaign with a content experiment, you must choose an identity namespace from which the userId will be selected for the randomization algorithm. This is independent of the [execution addresses](../configuration/primary-email-addresses.md).
+
+For Action campaigns, creating a new version can create a separate copy of the experiment. Treatment assignments, including test and control group membership, may be re-segmented across versions, so results may not be continuous. Learn how [modifying an Action campaign creates a new version](../campaigns/manage-campaigns.md#modify-an-action-campaign).
 
 ### Data collection and analysis
 

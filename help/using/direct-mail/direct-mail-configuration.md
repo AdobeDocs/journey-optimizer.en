@@ -316,3 +316,5 @@ You can now [create a direct mail message](../direct-mail/create-direct-mail.md)
 * [Channel configurations](../configuration/channel-surfaces.md)
 
 For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md).
+
+{{$include /help/_includes/do-not-localize/direct-mail/ai-augmented-direct-mail-configuration.md}}

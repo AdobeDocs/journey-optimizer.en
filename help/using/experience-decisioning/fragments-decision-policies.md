@@ -13,6 +13,8 @@ product_v2:
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
     internal-label: Decisioning
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -161,6 +163,8 @@ If your decision policy qualifies for two offers and each has a fragment—for e
 >[!AVAILABILITY]
 >
 >This feature is available for channels with Decisioning support.
+>
+>AEM Content Fragments in Decisioning are available to customers integrating Adobe Experience Manager **as a Cloud Service** or **Managed Services** with Adobe Journey Optimizer. [Learn more](../integrations/aem-fragments-gs.md)
 
 Before leveraging AEM Content Fragments in a decision policy, make sure you have:
 

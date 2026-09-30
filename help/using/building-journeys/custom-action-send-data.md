@@ -12,7 +12,9 @@ version: Journey Orchestration
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-subfeature_v2: []
+subfeature_v2:
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
 ---
 # Use case: create a custom action to send data to [!DNL Adobe Experience Platform]{#send-data-to-aep}
 

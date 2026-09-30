@@ -126,7 +126,6 @@ Journey Optimizer is built natively on Adobe Experience Platform, sharing its da
 * [Design journeys and send messages](../building-journeys/journey-gs.md) — Build your first customer journey and configure channel actions.
 * [Live reports](../reports/live-report.md) — Monitor campaign and journey performance in real time.
 * [Introduction to Journey Optimizer tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction){target="_blank"} — A guided video walkthrough of core Journey Optimizer concepts.
-* [Journey Optimizer Security Overview](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF) — Security architecture, data protection, and compliance details.
 * [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} — Official licensing terms and edition feature breakdown.
 
 ## Where to go next {#where-next}

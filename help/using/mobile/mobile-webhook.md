@@ -10,6 +10,8 @@ exl-id: a0f3e385-934d-44d6-a487-6035161aef0e
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
     internal-label: SMS and MMS channel
@@ -453,3 +455,5 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 If your webhook uses API credentials attached to an existing channel configuration, the webhook takes effect immediately. Otherwise, create a new channel configuration.
 
 ➡️[Learn more on channel configuration](mobile-configuration-surface.md)
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-mobile-webhook.md}}

@@ -216,3 +216,5 @@ You can now use this audience to filter out the profiles that have not given con
 >[!NOTE]
 >
 >If you create an audience that has not given consent for personalization and you then select this audience in a campaign, the personalization tools will remain available. It is up to your marketing users to understand that if they are working with an audience that should not receive personalization, they should not use personalization tools.
+
+{{$include /help/_includes/do-not-localize/privacy/ai-augmented-opt-out.md}}

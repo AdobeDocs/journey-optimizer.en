@@ -13,6 +13,8 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
     internal-label: Web channel
@@ -103,6 +105,7 @@ Discover the detailed steps to create a web campaign in [this video](create-web.
 * **[Manage web modifications](manage-web-modifications.md)** - Learn how to organize, apply, and manage modifications across your web experiences.
 * **[Monitor web experiences](monitor-web-experiences.md)** - Track and analyze the performance of your web campaigns with detailed reporting.
 * **[Generate web content with AI](../content-management/generative-full-content.md)** - Leverage AI to create and optimize web content with text and images.
+* **[Use Decisioning in web experiences](../experience-decisioning/use-decision-policy.md)** - Personalize web experiences with decision policies to deliver the most relevant offers to each visitor.
 * **[Web campaign tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/web-channel/create-a-web-campaign){target="_blank"}** - Explore step-by-step video tutorials on web channel features and best practices.
 
 

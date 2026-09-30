@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Journeys
   - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
     internal-label: Access control
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
     internal-label: Action configuration

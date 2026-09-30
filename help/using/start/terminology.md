@@ -172,3 +172,5 @@ Both channels deliver messages inside a mobile or web application, but they have
 * [Get started with campaigns](../campaigns/get-started-with-campaigns.md) — Understand the three campaign types (Action, API-triggered, Orchestrated) and when to use each.
 * [Conflict management & prioritization](../conflict-prioritization/gs-conflict-prioritization.md) — Learn how to use rule sets, frequency capping, priority scores, and quiet hours to avoid over-messaging.
 * [Get started with communication channels](../channels/gs-channels.md) — Browse all available channels, their prerequisites, and how to configure them.
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-terminology.md}}

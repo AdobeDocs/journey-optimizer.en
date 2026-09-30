@@ -281,3 +281,5 @@ Through the API:
     ]
 }
 ```
+
+{{$include /help/_includes/do-not-localize/privacy/ai-augmented-requests.md}}

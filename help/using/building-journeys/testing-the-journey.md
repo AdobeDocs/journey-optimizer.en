@@ -19,15 +19,15 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
-  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
-    internal-label: Wait activity
   - id: d08afb72-92f6-4856-88e3-11ec34313c2f
     internal-label: Event configuration
   - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
     internal-label: Reaction events
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
+  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
+    internal-label: Wait activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -45,11 +45,9 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to validate your journey before publishing by using simulation with simulated users or test mode with test profiles to catch errors early.
+**On this page:** Learn how to validate your journey before publishing by using Journey Simulation, Journey Test mode, or Journey Dry run.
 
 >[!ENDSHADEBOX]
-
-Not sure Test mode is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test"
@@ -61,17 +59,21 @@ Once you have built your journey, you can test it before publishing. [!DNL Adobe
 
 Only test profiles can enter a journey in test mode. You can either create new test profiles or turn existing profiles into test profiles. Learn more about test profiles in [this section](../audience/creating-test-profiles.md). 
 
-Adobe Journeys Optimizer offers two ways to test and validate your journey:
+Adobe Journey Optimizer offers three ways to test and validate your journey:
 
-* **[Simulation](simulate-journey.md#test-users)**: Set the journey to **[!UICONTROL Simulation]** and use simulated users (temporary profiles you create or generate on the fly without pre-created profiles in Adobe Experience Platform).
+* **[Journey Simulation](simulate-journey.md#test-users)**: Set the journey to **[!UICONTROL Simulation]** and use simulated users (temporary profiles you create or generate on the fly without pre-created profiles in Adobe Experience Platform).
 
-* **[Test mode](#test-profiles)**: Persistent profiles explicitly flagged as test profiles in Adobe Experience Platform. They can be reused across multiple test sessions. This method is recommended for testing with consistent, predefined profile data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
+* **[Journey Test mode](#test-profiles)**: Persistent profiles explicitly flagged as test profiles in Adobe Experience Platform. They can be reused across multiple test sessions. This method is recommended for testing with consistent, predefined profile data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
+
+* **[Journey Dry run](journey-dry-run.md)**: Run the journey against real production audience and segmentation data without contacting real customers or updating profile information. Action nodes such as email, SMS, and custom actions are bypassed. [Learn more about Journey Dry run](journey-dry-run.md).
+
+Not sure Test mode is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
 >[!NOTE]
 >
 >Before testing your journey, you must resolve all errors if any. Learn how to check errors before testing in [this section](../building-journeys/troubleshooting.md). If test profiles fail to progress in test mode, see [troubleshooting test mode transitions](troubleshooting-execution.md#troubleshooting-test-transitions).
 
-## Important notes {#important_notes}
+## Guardrails and limitations {#important_notes}
 
 Review these notes before running tests in your journey.
 
@@ -133,6 +135,10 @@ Use the **[!UICONTROL Test mode]** method when you want to test your journey wit
     ![Show log button to view test results](assets/journeyuctest2.png)
 
 1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publish-journey.md).
+
+>[!NOTE]
+>
+>While in test mode, you can preview the content of every channel activity directly on the canvas, rendered for the selected test profile. [Learn how to preview content in the canvas](using-the-journey-designer.md#content-preview).
 
 ## Worked example: validate a simple journey {#test-walkthrough}
 

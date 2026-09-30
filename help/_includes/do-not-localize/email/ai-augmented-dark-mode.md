@@ -47,7 +47,7 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: Will my dark mode design look the same everywhere?** — No; the final rendering depends on each recipient's email client and can vary; it cannot be guaranteed identical across clients.
-* **Q: Why don't my custom dark mode settings appear in Gmail?** — Clients such as Gmail apply their own default dark mode, which overrides the custom settings defined in the Email Designer.
+* **Q: Why do my custom dark mode settings not appear in Gmail?** — Clients such as Gmail apply their own default dark mode, which overrides the custom settings defined in the Email Designer.
 * **Q: Can I change image colors for dark mode?** — No; you cannot change the colors of images and icons, but you can define specific assets to display in dark mode.
 * **Q: How do I check the closest rendering to the final result?** — Use Simulate content, then Simulate content (AEP profiles) and Render email with a Litmus account, or the Email rendering option.
 * **Q: What color scheme does the default preview use?** — Full color invert, applied to all elements except images and icons.

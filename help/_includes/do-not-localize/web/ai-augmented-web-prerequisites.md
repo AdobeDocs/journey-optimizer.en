@@ -55,7 +55,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which implementation types are supported for the web channel?** — Client-side only (Adobe Experience Platform Web SDK) and Hybrid mode; server-side only is not currently supported and you should use the Code-based experience channel instead.
 * **Q: Which Web SDK version is required?** — Version 2.16 or above for a client-side only implementation.
 * **Q: Which browsers support web authoring?** — Google Chrome and Microsoft Edge are currently the only browsers that support authoring web pages in Journey Optimizer.
-* **Q: Why won't my website load in the web designer?** — Ensure the Visual Editing Helper extension is installed and that third-party cookies are allowed; some sites also fail due to strict security policies, iframes, or being internal.
+* **Q: Why will my website not load in the web designer?** — Ensure the Visual Editing Helper extension is installed and that third-party cookies are allowed; some sites also fail due to strict security policies, iframes, or being internal.
 * **Q: Why is web data missing from my reports?** — The dataset used in your web datastream must be included in your reporting configuration, and the required field groups must be present.
 * **Q: Do web campaigns affect my Engageable Profiles count?** — Yes, they target new profiles not previously engaged on other channels, increasing the Engageable Profiles count with possible cost implications if your contractual number is exceeded.
 

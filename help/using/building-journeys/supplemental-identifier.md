@@ -12,6 +12,8 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: d08afb72-92f6-4856-88e3-11ec34313c2f
     internal-label: Event configuration
@@ -112,9 +114,7 @@ To use a supplemental identifier in an event-triggered journey, follow these ste
 
     1. Use the expression editor to select the field you want to use as the supplemental ID (e.g., booking ID, subscription ID).
 
-        >[!NOTE]
-        >
-        >Make sure you are using the expression editor in **[!UICONTROL Advanced mode]** to select the attribute.
+      Make sure you are using the expression editor in **[!UICONTROL Advanced mode]** to select the attribute.
 
 1. **Add the event to the journey**
 
@@ -137,10 +137,8 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
     1. In the **[!UICONTROL Supplemental identifier]** field, use the expression editor to select the supplemental identifier attribute.
     
       For audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}, if your CSV audience contains multiple rows per profile ID, make sure Express Activation is enabled first — see [Supplemental identifiers with external audiences](#external-audiences).
-
-        >[!NOTE]
-        >
-        >Make sure you are using the expression editor in **[!UICONTROL Advanced mode]** to select the attribute.
+      
+      Make sure you are using the expression editor in **[!UICONTROL Advanced mode]** to select the attribute.
 
 >[!ENDTABS]
 

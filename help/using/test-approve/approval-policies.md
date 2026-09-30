@@ -201,3 +201,5 @@ To apply your approval policy, you must activate it. To perform this, follow the
 1. From the **[!UICONTROL Policy]** menu, open the advanced options to **[!UICONTROL Edit]**, **[!UICONTROL Deactivate]**, or **[!UICONTROL Duplicate]** the policy as needed.
 
     ![Approval policy management options menu](assets/policy_activate_2.png)
+
+{{$include /help/_includes/do-not-localize/test-approve/ai-augmented-approval-policies.md}}

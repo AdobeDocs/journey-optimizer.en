@@ -6,6 +6,12 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 0ab71b21-0085-4a93-b319-3c960bd8f7dd
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: bd995268-c4fc-41c8-8f09-eb370effe46e
+    internal-label: Inbox channel
 ---
 # Design an Inbox {#inbox-design}
 

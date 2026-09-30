@@ -18,6 +18,20 @@ Effectively managing your customer journeys starts with comprehensive tracking, 
 
 This page brings together essential resources to help you implement tracking, monitor journey health, access key reporting insights, and resolve issues efficiently across all stages of your customer journeys.
 
+## Find your issue
+
+Use the symptom that best matches your issue to go directly to the relevant troubleshooting guide:
+
+| If you are experiencing this issue | Start here |
+| --- | --- |
+| You cannot test or publish a journey | [Troubleshoot journey errors](../using/building-journeys/troubleshooting.md) |
+| Profiles do not enter or progress through a journey | [Troubleshoot journey execution](../using/building-journeys/troubleshooting-execution.md) |
+| An inbound experience is not displayed or continues after a profile exits | [Troubleshoot inbound actions](../using/building-journeys/troubleshooting-inbound.md) |
+| A custom action test or API call fails | [Troubleshoot custom actions](../using/action/troubleshoot-custom-action.md) |
+| You need to monitor live journeys and campaigns proactively | [Access and subscribe to system alerts](../using/reports/alerts.md) |
+| You have a Journey Optimizer error code | [View the error codes reference](../using/building-journeys/error-codes-reference.md) |
+| Emails are delivered but do not reach recipients' inboxes as expected | [Review deliverability guidance](../using/reports/deliverability.md) |
+
 ## Get started with tracking
 
 Before diving into monitoring and troubleshooting, ensure you have a solid foundation in tracking. Journey Optimizer provides comprehensive tracking capabilities that capture customer interactions, delivery performance, and system health across all channels.

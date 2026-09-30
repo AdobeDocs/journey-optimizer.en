@@ -260,3 +260,5 @@ Fetch and extract the mbox, then render `content` directly. Skip `parseJson`.
 This video shows how **Integrations** connect Adobe Journey Optimizer to external APIs so you can pull live data and content into **outbound** channels, Email, SMS, and Push, for more relevant personalization.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3484118/?learn=on)
+
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-integrations-personalization.md}}

@@ -71,3 +71,5 @@ If the approvers request changes, you are notified through an email and a Journe
 ![Changes requested notification](assets/changes-requested.png)
 
 To go through the change request, open it from the email or the alert to access the journey or campaign and make the requested changes. When your journey/campaign is ready to be reviewed again, send a new approval request using the **[!UICONTROL Request approval]** button.
+
+{{$include /help/_includes/do-not-localize/test-approve/ai-augmented-request-approval.md}}

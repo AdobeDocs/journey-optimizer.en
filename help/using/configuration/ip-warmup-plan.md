@@ -18,8 +18,6 @@ feature_v2:
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
   - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
     internal-label: Access control
 subfeature_v2:

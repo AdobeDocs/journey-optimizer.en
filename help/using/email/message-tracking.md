@@ -14,21 +14,15 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
 subfeature_v2:
-  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
-    internal-label: Fragments
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
-  - id: f550d0f2-143d-4093-9463-467fbec95fcc
-    internal-label: Accessibility
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
+    internal-label: Performance monitoring
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -177,13 +171,15 @@ The mirror page is automatically created. Once the email is sent, when the recip
 
 The retention period for a mirror page is **90 days**. After that delay, the mirror page is no longer available.
 
+The mirror page URL is not currently available as a documented field in an Adobe Experience Platform dataset, and [!DNL Journey Optimizer] does not provide a public API to retrieve it using a delivery ID, message ID, message execution ID, or recipient identity. If you need to review or retain the content sent to a recipient, use [Message export](../configuration/message-export.md) or [BCC archiving](../configuration/archiving-support.md#bcc-email) instead.
+
 >[!CAUTION]
 >
 >* Mirror pages links are auto-generated and cannot be edited. They contain all the encrypted personalized data that is required to render the original email. As a result, using personalized attributes with large values may generate lengthy mirror pages URLs, which can prevent the link from working in web browsers that have a maximum URLs length.
 >
 >* When creating emails that rely heavily on runtime personalization (e.g., `#each` loops, nested objects, large payload data), mirror page URLs can become excessively large, particularly in API-triggered campaigns that use extensive contextual data from payloads. This can cause HTTP errors (404, 422, 502) in browsers or mail clients. Adobe recommends limiting the breadth and depth of dynamic fields, reducing reliance on complex fragments, and flattening personalization structures to prevent link failures.
 >
->* In the [proof](../content-management/proofs.md) sent to the test profiles, the link to the mirror page is not active. It is only active in the final messages.
+>* In the [proof](../content-management/proofs.md) sent to the test profiles, including proofs sent from journey [Simulation](../building-journeys/simulate-journey.md), the link to the mirror page is not active. It is only active in the final messages.
 
 ### Decisioning in mirror pages {#decisioning-mirror-page}
 

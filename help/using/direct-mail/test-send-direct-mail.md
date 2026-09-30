@@ -16,6 +16,8 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
@@ -129,3 +131,5 @@ Learn more about managing opt-out in Journey Optimizer in [this section](../priv
 * [Preview and test content](../content-management/preview-test.md)
 
 For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md).
+
+{{$include /help/_includes/do-not-localize/direct-mail/ai-augmented-test-send-direct-mail.md}}

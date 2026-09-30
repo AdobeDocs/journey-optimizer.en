@@ -86,3 +86,5 @@ The SMS usage reports present mobile-originated (MO) and mobile-terminated (MT) 
       ![](assets/usage_report_3.png)
 
 1. To export the report, click **[!UICONTROL Download CSV]**. Journey Optimizer downloads a CSV file for the report you are viewing.
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-sms-usage-report.md}}

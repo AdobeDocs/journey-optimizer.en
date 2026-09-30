@@ -212,7 +212,7 @@ Find answers to frequently asked questions and solutions to common problems acro
 ### Learn & get support
 
 * **[Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}** - Step-by-step video tutorials covering core capabilities
-* **[Use Case Playbooks](../using/start/ai-features.md#playbooks)** - Pre-built workflows for common scenarios like abandoned cart recovery and welcome campaigns
+* **[Use Case Playbooks](../using/start/ajo-use-case-guide.md#playbooks)** - Pre-built workflows for common scenarios like abandoned cart recovery and welcome campaigns
 * **[Monitoring & Troubleshooting](troubleshoot-journey-landing-page.md)** - Tools to track performance, identify issues, and resolve problems quickly
 * **[What's New](../using/rn/release-notes.md)** - Stay up to date with the latest features, improvements, and fixes
 * **[Community Forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}** - Connect with other users, ask questions, and share best practices

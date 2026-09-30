@@ -18,8 +18,6 @@ feature_v2:
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
 subfeature_v2:
   - id: dd51b532-b93f-4bcf-8dbf-0d007f593aca
     internal-label: Data source configuration
@@ -426,3 +424,5 @@ Here is an example of the response of the login API call:
 >[!CAUTION]
 >
 >When configuring custom authentication for a custom action, note that nested JSON objects (e.g., sub-objects within `bodyParams`) are **supported**.
+
+{{$include /help/_includes/do-not-localize/datasource/ai-augmented-external-data-sources.md}}

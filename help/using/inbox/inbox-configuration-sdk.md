@@ -5,6 +5,16 @@ feature: Content Cards
 topic: Content Management
 role: Developer
 level: Experienced
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: bd995268-c4fc-41c8-8f09-eb370effe46e
+    internal-label: Inbox channel
+  - id: d056adbe-402d-4f42-9746-f3d424e598b1
+    internal-label: Web SDK
 ---
 # Configure Inbox support in Web SDK {#inbox-configuration-sdk}
 

@@ -9,6 +9,8 @@ hide: true
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
     internal-label: In App channel
@@ -109,3 +111,5 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your Content cards.
 
 +++
+
+{{$include /help/_includes/do-not-localize/content-card/ai-augmented-content-card-report.md}}
