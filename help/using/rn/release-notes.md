@@ -725,6 +725,12 @@ The following capabilities and improvements are coming to decisioning in this re
 
   Availability date: September 22, 2026
 
++++ Coming soon — **Information below is subject to change.**
+
+* **Build a ranking formula with AI** - A new AI assistant in the ranking formula builder lets you describe the ranking logic you want in plain language and generates a formula draft for you to review and apply.
+
++++
+
 ### Onboarding {#sep-26-onboarding}
 
 The following improvement is coming to onboarding in this release.
