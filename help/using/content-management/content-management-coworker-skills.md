@@ -44,7 +44,7 @@ Journey Optimizer users are able to discover and manage content assets — conte
 ### Key use cases
 
 | Use Case | Description | Skills | Sample Prompts |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | Browse and inspect content | List available content templates, fragments, or landing pages, and retrieve their structure, metadata, and status. Retrieve the inline message content configured on a journey or campaign action node. | Content Management | List my email content templates.<br><br>Show me the fragments available for my summer campaign.<br><br>Get the details of landing page page-123.<br><br>What content is configured for the email variant of the action node in campaign camp-789? |
 | Create content templates | Create a new content template for any channel. | Content Management | Create an email template named Summer Sale with this HTML content.<br><br>Create a new SMS template called Flash Alert. |
 | Update content templates | Fully replace the content of an existing template. | Content Management | Update template abc-123 with this new HTML body. |
@@ -72,7 +72,7 @@ Channel Content takes a brief, journey, campaign, or prompt and turns it into pl
 The following skills are available under the **Channel Content** plugin:
 
 | Use Case | Description | Skills | Sample Prompts |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | Orchestrate Content Authoring | Runs the full authoring lifecycle from a brief, journey, campaign, or prompt, ideating, generating, reviewing, and saving content, including copy, images, and the compliance, accessibility, and fidelity checks across supported channels. | orchestrate-content-authoring | "Run full content authoring for our Fall Sale email campaign from this brief, then review and save the final HTML." |
 | Explore Content Strategy | Works out what a campaign or message should say before copy is written, comparing message maps and touchpoint sequencing at the campaign level, and deciding section order, emphasis, and CTA at the message level. | explore-content-strategy | "Compare a single winback email with a three-touch email and SMS program."<br><br>"Give me three campaign directions for this launch before we choose one."<br><br>"Help decide what this email should say and in what order before we write the copy." |
 | Content Brief | Turns an approved campaign direction into concrete writing requirements, including tone, key messages, offer, must-say points, channel, locale, and variants, plus a plan for producing the content. | content-brief | "Turn this brief into writing requirements for a warm winback email to lapsed US subscribers: 20% off through Sunday, with CTR as the KPI."<br><br>"We want to promote our spring sale over email and SMS for new subscribers and loyal members. Structure the requirements and create a separate whole-copy brief for each channel and audience."<br><br>"Capture this welcome-email brief for English and Spanish audiences, including the localized legal-footer requirements, then prepare it for copy drafting, not HTML design." |
