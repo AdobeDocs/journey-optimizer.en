@@ -53,54 +53,15 @@ Journey Create enables Journey Optimizer users to build and configure marketing 
 
 Journey Create offers capabilities that can be leveraged to accelerate marketing execution:
 
-* **Event-triggered journey creation**
+| Use case | Description | Sample prompts |
+| --- | --- | --- |
+| Event-triggered journey creation | Create journeys that activate based on specific customer events. Design automated responses to customer actions in real-time. Build personalized communication flows based on customer behavior. | **Store visit journey:** Create a journey that starts when a user enters my store location. Send a push notification to welcome users to the store. Wait 2 days and check to see if the user has a valid email address. If the user has a valid email address, send an email survey to ask about their store experience. If the user does not have a valid email address, send a push notification to prompt for registration.<br><br>**Post-purchase journey:** Create a journey that starts when a customer makes a purchase online. Send a push notification to thank them for their purchase. Next, check to see if they are loyalty members. If the user is a loyalty rewards member, send a second push notification with a 10% discount code. If the user is not a loyalty rewards member, send a push inviting them to sign up for the loyalty program. Wait 2 days and send a follow-up push with a survey about their purchase experience.<br><br>**Event-based promotion:** Create a journey triggered when the game score reaches 50. Send an SMS message to loyalty reward members saying that they are eligible for a free slice of pizza from the partner sponsor. |
+| Audience-targeted journey creation | Build journeys targeting specific audience segments. Design multi-step communication sequences with strategic timing. | **Seasonal campaign:** I want to create a journey targeting an audience of day hikers. I want to send an email alerting this audience to my upcoming holiday sale that includes a variety of hiking essentials. Wait 3 days after sending the first email and send a second email that has a 15% coupon with free shipping. Wait 1 week and then send a 3rd email message to show our new sleeping bag and tent collection. Schedule the journey to start on 12/20.<br><br>**Loyalty appreciation:** Build a loyalty appreciation journey for SUV owners, including a thank you push notification with a free carwash offer and a follow-up push notification reminder if the first notification is not interacted with within 1 day. |
+| Business-event triggered journey creation | Create journeys that activate based on a particular business event and target a specified audience (e.g. product back in stock or game score change) Trigger timely, context-aware messages when business conditions change. |  |
+| Audience qualification journey creation | Create journeys that activate as profiles enter or exit an audience segment definition. Automate entry and exit messaging to support onboarding, retention, and win-back goals. |  |
+| Conditional journey flows | Create decision branches based on customer attributes. Design split paths that adapt to customer preferences. |  |
+| Create journey from image | Upload a reference image into Coworker and ask to create a journey using the image as reference Journey creation skill will extract an editable prompt from your reference image |  |
 
-   * Create journeys that activate based on specific customer events.
-   * Design automated responses to customer actions in real-time.
-   * Build personalized communication flows based on customer behavior.
-
-   >[!BEGINSHADEBOX "Prompt samples"]
-
-   * **Store visit journey:** Create a journey that starts when a user enters my store location. Send a push notification to welcome users to the store. Wait 2 days and check to see if the user has a valid email address. If the user has a valid email address, send an email survey to ask about their store experience. If the user does not have a valid email address, send a push notification to prompt for registration.
-
-   * **Post-purchase journey:** Create a journey that starts when a customer makes a purchase online. Send a push notification to thank them for their purchase. Next, check to see if they are loyalty members. If the user is a loyalty rewards member, send a second push notification with a 10% discount code. If the user is not a loyalty rewards member, send a push inviting them to sign up for the loyalty program. Wait 2 days and send a follow-up push with a survey about their purchase experience.
-
-   * **Event-based promotion:** Create a journey triggered when the game score reaches 50. Send an SMS message to loyalty reward members saying that they are eligible for a free slice of pizza from the partner sponsor.
-
-   >[!ENDSHADEBOX]
-
-* **Audience-targeted journey creation**
-
-   * Build journeys targeting specific audience segments.
-   * Design multi-step communication sequences with strategic timing.
-
-   >[!BEGINSHADEBOX "Prompt samples"]
-
-   * **Seasonal campaign:** I want to create a journey targeting an audience of day hikers. I want to send an email alerting this audience to my upcoming holiday sale that includes a variety of hiking essentials. Wait 3 days after sending the first email and send a second email that has a 15% coupon with free shipping. Wait 1 week and then send a 3rd email message to show our new sleeping bag and tent collection. Schedule the journey to start on 12/20.
-
-   * **Loyalty appreciation:** Build a loyalty appreciation journey for SUV owners, including a thank you push notification with a free carwash offer and a follow-up push notification reminder if the first notification is not interacted with within 1 day.
-
-   >[!ENDSHADEBOX]
-
-* **Business-event triggered journey creation**
-
-   * Create journeys that activate based on a particular business event and target a specified audience (e.g. product back in stock or game score change)
-   * Trigger timely, context-aware messages when business conditions change.
-
-* **Audience qualification journey creation**
-
-   * Create journeys that activate as profiles enter or exit an audience segment definition.
-   * Automate entry and exit messaging to support onboarding, retention, and win-back goals.  
-
-* **Conditional journey flows**
-
-   * Create decision branches based on customer attributes.
-   * Design split paths that adapt to customer preferences.
-
-* **Create journey from image**
-
-    * Upload a reference image into Coworker and ask to create a journey using the image as reference
-    * Journey creation skill will extract an editable prompt from your reference image
 
 With this skill, natural language requirements are translated into structured journey configurations.
 
@@ -226,108 +187,17 @@ Journey Skills will enable Journey Optimizer users to analyze and optimize journ
 
 Journey Analyze offers a range of functionalities that can be leveraged to optimize marketing efforts:
 
-* **Journey Fallout Analysis**
+| Use case | Description | Sample prompts |
+| --- | --- | --- |
+| Journey Fallout Analysis | Identify where and why customers drop off during a journey. Detect patterns in customer behavior leading to disengagement. Use insights to refine journey design and improve retention. Sample prompts: "I want to analyze the fallout by node for journey Fourth of July Campaign." "Perform a fallout analysis for journey Fourth of July Campaign." "What is profile loss over the course of journey Fourth of July Campaign?" "Show where users are dropping off in journey Fourth of July Campaign." |  |
+| Journey Audience Overlap Analysis | Analyze audience overlap across multiple journeys. Prevent audience fatigue caused by over-targeting. Optimize segmentation to ensure balanced engagement. Sample prompts: "Which audiences are used in more than X journeys?" "List all journeys using the [audience name] audience." "Show me audience overlap conflicts for journey [Journey Name]." "Show overlapping audiences for journey [Journey Name] and other journeys." |  |
+| Journey Schedule Overlap Analysis | Detect timing conflicts between scheduled journeys targeting the same audience. Avoid over-communication and improve scheduling efficiency. Maximize audience impact by ensuring journeys run at optimal times. Sample prompts: "Are there any scheduling conflicts for journey [Journey Name]?" "Check for scheduling conflicts involving journey [Journey Name]." "Highlight scheduling overlaps between journey [Journey Name] and live journeys." "Is journey [Journey Name] running in conflict with any other journey?" |  |
+| Operational insights | Prompt-based Journey Insights – Surface operational insights about journeys , i.e. "show me all live journeys." Sample prompts: "When was [Journey Name] published?" "When was [Journey Name] stopped?" "List all journeys currently in test mode" "How many live journeys do I have?" "Give me a list of all scheduled recurring journeys and their expected run times." |  |
+| Journey Custom Action Error Analysis | Identify when custom actions are failing or error rates spike within a journey. Diagnose root causes before failures cascade into broader journey disruption. Use specific remediation steps to restore custom action reliability quickly. Sample prompts: "Why are custom actions failing in journey [Journey Name]?" "What is the error rate for custom action [Custom Action Name] in journey [Journey Name]?" "Show me the root cause of custom action failures in journey [Journey Name]." "Are there any custom action errors affecting journey [Journey Name] right now?" |  |
+| Analyze Journey Anomalies | Detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts compared to historical baselines, including when the question is phrased around the number of profiles entering, exiting, or completing the journey. Confirm whether a flagged change is a genuine anomaly using a deterministic statistical check, rather than relying on the raw anomaly flag alone. Run bounded, read-only diagnostics against journey-execution data to identify a likely root cause, surfacing what each check looked for and found alongside the recommendation. Investigate anomaly alerts that reference a specific journey version and timestamp. Sample prompts: "Why did entries drop for my Welcome journey yesterday?" "Did exits spike for the Cart Abandonment journey this week?" "Sends look low for the Renewal Reminder journey today — what happened?" "Why was there a sudden drop in the number of profiles entering my Member Anniversary Thank You journey in the last 30 days?" "Fewer profiles than usual are completing my Renewal Reminder journey this month — why?" "An anomaly alert was triggered for journey [Journey Version ID] at [timestamp] — investigate." |  |
+| Business Performance Analysis | Analyze journey performance and identify concrete optimization opportunities for underperforming journeys. Surface trends, bottlenecks, and likely drivers behind lower results so you can improve engagement and conversion. Get actionable recommendations to adjust journey design, targeting, or messaging strategy based on business performance insights. Sample prompts: "Analyze the performance of journey [Journey Name] and recommend optimizations." "Why is journey [Journey Name] underperforming compared with last month?" "What should I change to improve the performance of journey [Journey Name]?" "Which parts of journey [Journey Name] are likely limiting conversion or engagement?" |  |
+| Journey Version Comparison | Compare any two journey versions in Coworker Chat. Review a structured diff of added, removed, modified, and moved nodes with field-level details. Identify changed connections, journey-level property changes, and roll-up counts without opening Journey Optimizer. For more details on how to manage journey versions, see [Journey versions](publish-journey.md#journey-versions). Sample prompts: "Compare versions [Version A] and [Version B] of journey [Journey Name]." "What changed between these two versions of journey [Journey Name]?" "Show me the nodes and journey properties that changed between versions [Version A] and [Version B]." |  |
 
-   * Identify where and why customers drop off during a journey.
-   * Detect patterns in customer behavior leading to disengagement.
-   * Use insights to refine journey design and improve retention.
-
-   Sample prompts:
-   * "I want to analyze the fallout by node for journey Fourth of July Campaign."
-   * "Perform a fallout analysis for journey Fourth of July Campaign."
-   * "What is profile loss over the course of journey Fourth of July Campaign?"
-   * "Show where users are dropping off in journey Fourth of July Campaign."
-
-* **Journey Audience Overlap Analysis**
-
-   * Analyze audience overlap across multiple journeys.
-   * Prevent audience fatigue caused by over-targeting.
-   * Optimize segmentation to ensure balanced engagement.
-
-   Sample prompts:
-   * "Which audiences are used in more than X journeys?"
-   * "List all journeys using the [audience name] audience."
-   * "Show me audience overlap conflicts for journey [Journey Name]."
-   * "Show overlapping audiences for journey [Journey Name] and other journeys."
-
-* **Journey Schedule Overlap Analysis**
-
-   * Detect timing conflicts between scheduled journeys targeting the same audience.
-   * Avoid over-communication and improve scheduling efficiency.
-   * Maximize audience impact by ensuring journeys run at optimal times.
-
-   Sample prompts:
-   * "Are there any scheduling conflicts for journey [Journey Name]?"
-   * "Check for scheduling conflicts involving journey [Journey Name]."
-   * "Highlight scheduling overlaps between journey [Journey Name] and live journeys."
-   * "Is journey [Journey Name] running in conflict with any other journey?"
-
-* **Operational insights**
-
-   * Prompt-based Journey Insights – Surface operational insights about journeys , i.e. "show me all live journeys."
-
-   Sample prompts:
-   * "When was [Journey Name] published?"
-   * "When was [Journey Name] stopped?"
-   * "List all journeys currently in test mode"
-   * "How many live journeys do I have?"
-   * "Give me a list of all scheduled recurring journeys and their expected run times."
-
-* **Journey Custom Action Error Analysis**
-
-   * Identify when custom actions are failing or error rates spike within a journey.
-   * Diagnose root causes before failures cascade into broader journey disruption.
-   * Use specific remediation steps to restore custom action reliability quickly.
-
-   Sample prompts:
-   * "Why are custom actions failing in journey [Journey Name]?"
-   * "What is the error rate for custom action [Custom Action Name] in journey [Journey Name]?"
-   * "Show me the root cause of custom action failures in journey [Journey Name]."
-   * "Are there any custom action errors affecting journey [Journey Name] right now?"
-
-* **Analyze Journey Anomalies**
-
-   * Detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts compared to historical baselines, including when the question is phrased around the number of profiles entering, exiting, or completing the journey.
-   * Confirm whether a flagged change is a genuine anomaly using a deterministic statistical check, rather than relying on the raw anomaly flag alone.
-   * Run bounded, read-only diagnostics against journey-execution data to identify a likely root cause, surfacing what each check looked for and found alongside the recommendation.
-   * Investigate anomaly alerts that reference a specific journey version and timestamp.
-
-   Sample prompts:
-   * "Why did entries drop for my Welcome journey yesterday?"
-   * "Did exits spike for the Cart Abandonment journey this week?"
-   * "Sends look low for the Renewal Reminder journey today — what happened?"
-   * "Why was there a sudden drop in the number of profiles entering my Member Anniversary Thank You journey in the last 30 days?"
-   * "Fewer profiles than usual are completing my Renewal Reminder journey this month — why?"
-   * "An anomaly alert was triggered for journey [Journey Version ID] at [timestamp] — investigate."
-
-* **Business Performance Analysis**
-
-    * Analyze journey performance and identify concrete optimization opportunities for underperforming journeys.
-    * Surface trends, bottlenecks, and likely drivers behind lower results so you can improve engagement and conversion.
-    * Get actionable recommendations to adjust journey design, targeting, or messaging strategy based on business performance insights.
-
-    Sample prompts:
-    * "Analyze the performance of journey [Journey Name] and recommend optimizations."
-    * "Why is journey [Journey Name] underperforming compared with last month?"
-    * "What should I change to improve the performance of journey [Journey Name]?"
-    * "Which parts of journey [Journey Name] are likely limiting conversion or engagement?"
-
-* **Journey Version Comparison**
-
-   * Compare any two journey versions in Coworker Chat.
-   * Review a structured diff of added, removed, modified, and moved nodes with field-level details.
-   * Identify changed connections, journey-level property changes, and roll-up counts without opening Journey Optimizer.
-
-   >[!NOTE]
-   >
-   >Comparison at the action activity level for channel content is not currently supported. Channel content changes are flagged as **Unverified** until this capability is available.
-
-   For more details on how to manage journey versions, see [Journey versions](publish-journey.md#journey-versions).
-
-   Sample prompts:
-   * "Compare versions [Version A] and [Version B] of journey [Journey Name]."
-   * "What changed between these two versions of journey [Journey Name]?"
-   * "Show me the nodes and journey properties that changed between versions [Version A] and [Version B]."
 
 ### Prompting best practices
 
@@ -349,36 +219,11 @@ Journey Simulation skill brings AI-driven Quick Simulation into the chat interfa
 
 ### Key use cases
 
-* **Generate simulated test data**
-
-   * Generate the minimum simulated users needed to exercise the journey's branches.
-   * Generate event data for event-triggered journeys, so each branch is triggered.
-
-* **Run and manage simulations**
-
-   * Start a simulation run.
-   * Reset a simulation run.
-   * Check the status of a simulation run.
-   * List the simulated users included in a run.
-   * Retrieve run logs.
-
-* **Review simulation results**
-
-   * Return detailed results, including step-by-step path traversal.
-   * Return branch outcomes for the simulated run.
-
-### Limitations
-
-This feature currently only supports the Quick Simulation flow, and does not fully replace the Journey Optimizer manual simulation experience. 
-
-Use Quick Simulation for a fast, automated sanity check of a journey's logic. For granular control over simulated users and scenarios, use the [manual simulation experience in Journey Optimizer](simulate-journey-gs.md).
-
-As part of this Quick Simulation experience, users cannot:
-
-* Choose an existing saved simulated user for a run.
-* Edit a simulated user before rerunning a simulation.
-* Create, browse, update, or delete persistent simulated users through chat.
-* Target a specific path or custom test case.
+| Use case | Description | Sample prompts |
+| --- | --- | --- |
+| Generate simulated test data | Generate the minimum simulated users needed to exercise the journey's branches. Generate event data for event-triggered journeys, so each branch is triggered. |  |
+| Run and manage simulations | Start a simulation run. Reset a simulation run. Check the status of a simulation run. List the simulated users included in a run. Retrieve run logs. |  |
+| Review simulation results | Return detailed results, including step-by-step path traversal. Return branch outcomes for the simulated run. ### Limitations This feature currently only supports the Quick Simulation flow, and does not fully replace the Journey Optimizer manual simulation experience. Use Quick Simulation for a fast, automated sanity check of a journey's logic. For granular control over simulated users and scenarios, use the [manual simulation experience in Journey Optimizer](simulate-journey-gs.md). As part of this Quick Simulation experience, users cannot: Choose an existing saved simulated user for a run. Edit a simulated user before rerunning a simulation. Create, browse, update, or delete persistent simulated users through chat. Target a specific path or custom test case. |  |
 
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-journeys-coworker-skills.md}}
