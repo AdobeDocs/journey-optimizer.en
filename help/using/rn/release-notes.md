@@ -79,7 +79,26 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
 ### Content management {#sep-26-content-management}
 
-The following capability is coming to content management in this release.
+The following capabilities and improvements are coming to content management in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>URL validation in Simulate content (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>When you preview your content, Journey Optimizer now automatically checks the web links it contains and flags broken, insecure, or unreachable URLs before you send.</p>
+<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p><img src="assets/do-not-localize/url-validation.gif"></p>
+<p>For more information, refer to the <a href="../content-management/url-validation.md">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -140,12 +159,6 @@ The following capability is coming to content management in this release.
 * **Additional reserved keywords in personalization syntax** - The list of reserved keywords in Profile Query Language (PQL) has been expanded to include general keywords, time units, and boolean/logical operators. If your XDM schema contains a field name that matches one of these keywords, wrap it in backticks to reference it in a personalization expression. [Learn more](../personalization/personalization-syntax.md#reserved-keywords)
 
   Availability date: September 1, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **URL validation in Simulate content** - When you preview your content, Journey Optimizer now automatically checks the web links it contains and flags broken, insecure, or unreachable URLs before you send. This capability is available in Limited Availability for a set of customers.
-
-+++
 
 ### Loyalty {#sep-26-loyalty}
 
@@ -499,6 +512,25 @@ The following capabilities and improvements are coming to the Email Designer in 
 <table>
 <thead>
 <tr>
+<th><strong>New Dynamic Media Template component in the Email Designer (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Email Designer now includes a dedicated <strong>Dynamic Media Template</strong> component for inserting Dynamic Media Templates from Adobe Experience Manager into your email content. In addition to browsing existing templates, you can now import a Photoshop (PSD) file directly — drag and drop it into the component, or select it from your computer, then choose a destination to store it.</p>
+<p>Once your file is imported, select <strong>Edit in Dynamic Media Template Editor</strong> to open the Dynamic Media Template Editor directly within Journey Optimizer, where you can enable the parameters you want to expose, without leaving the Email Designer. The enabled parameters then become available in the component's <strong>Settings</strong> tab.</p>
+<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p>For more information, refer to the <a href="../integrations/aem-dynamic.md#image-component">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Collaborate on email content</strong><br/></th>
 </tr>
 </thead>
@@ -550,26 +582,6 @@ The following capabilities and improvements are coming to the Email Designer in 
 </tr>
 </tbody>
 </table>
-
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>New Dynamic Media Template component in the Email Designer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The Email Designer now includes a dedicated <strong>Dynamic Media Template</strong> component for inserting Dynamic Media Templates from Adobe Experience Manager into your email content. In addition to browsing existing templates, you can now import a Photoshop (PSD) file directly — drag and drop it into the component, or select it from your computer, then choose a destination to store it.</p>
-<p>Once your file is imported, select <strong>Edit in Dynamic Media Template Editor</strong> to open the Dynamic Media Template Editor directly within Journey Optimizer, where you can enable the parameters you want to expose, without leaving the Email Designer. The enabled parameters then become available in the component's <strong>Settings</strong> tab.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-+++
 
 ### Orchestrated campaigns {#sep-26-orchestrated-campaigns}
 
@@ -711,6 +723,12 @@ The following capabilities and improvements are coming to decisioning in this re
 * **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually. [Learn more](../experience-decisioning/ranking/ranking-formulas.md#simulate-ranking-formula)
 
   Availability date: September 22, 2026
+
++++ Coming soon — **Information below is subject to change.**
+
+* **Build a ranking formula with AI** - A new AI assistant in the ranking formula builder lets you describe the ranking logic you want in plain language and generates a formula draft for you to review and apply.
+
++++
 
 ### Onboarding {#sep-26-onboarding}
 
