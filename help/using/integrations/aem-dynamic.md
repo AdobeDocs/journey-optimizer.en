@@ -183,8 +183,8 @@ You can insert your dynamic template directly into your content using the Image 
 
     * **Import from PSD** — drag and drop a Photoshop (PSD) file directly into the component. Adobe Journey Optimizer automatically converts the file into a Dynamic Media template and stores it in Dynamic Media.
 
-        >[!NOTE]
-        >Import from PSD does not require a manual conversion step or a round-trip through Adobe Experience Manager.
+        >[!AVAILABILITY]
+        >**Import from PSD** is available in Limited Availability for a set of customers. Contact your Adobe representative to request access. This feature does not require a manual conversion step or a round-trip through Adobe Experience Manager.
 
         Once imported, edit the template using the built-in Dynamic Media editor — the same experience used for [Adobe Express content](express.md) in the Email Designer.
 
