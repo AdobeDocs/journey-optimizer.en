@@ -563,7 +563,9 @@ nudge: yes
     + [Integrate with Intelligent Services](using/integrations/intelligent-services.md)
     + Integrations {#integrations}
       + [Work with Integrations](using/integrations/integrations.md)
-      + [Using External integrations for personalization](using/integrations/integrations-personalization.md)
+      + [Create Standard integrations](using/integrations/integrations-create.md)
+      + [Create Browsing integrations](using/integrations/integrations-browsing.md)
+      + [Use External integrations for personalization](using/integrations/integrations-personalization.md)
       + [FAQ](using/integrations/vendor-integration-faq.md)
       + Sample Vendors {#vendors}
         + [Get started with Vendors integration](using/integrations/vendor-integration-gs.md)

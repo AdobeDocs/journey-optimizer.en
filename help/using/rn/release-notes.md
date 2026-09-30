@@ -807,8 +807,24 @@ The following capability is coming to reporting in this release.
 
 The following capabilities are coming to integrations in this release.
 
-+++ Coming soon — **Information below is subject to change.**
+<table>
+<thead>
+<tr>
+<th><strong>Browsing integrations</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new Browsing integration configuration type is now available in Adobe Journey Optimizer. This setup lets your define a selector experience, using tables, lists, or cards, so marketers can browse, search, and select items from external APIs directly in Journey Optimizer authoring workflows.</p>
+<p>For more information, refer to the <a href="../integrations/integrations-browsing.md">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
++++ Coming soon — **Information below is subject to change.**
 
 * **Dynamic token substitution for Experience Manager fragments** - Experience Manager Content Fragment references now support a **tokenSubstitution** attribute. When set to `false`, personalization inside the fragment's fields resolves directly, without a token map in the reference. It defaults to `true`, which keeps the existing behavior.
 
