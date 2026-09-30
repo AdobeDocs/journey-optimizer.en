@@ -196,8 +196,8 @@ If no start or end date is defined, no date information appears in the header.
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_recovery_timeout"
->title="Set event recovery timeout"
->abstract="Controls how long the journey automatically replays events impacted by a service interruption. Off by default (72-hour automatic replay); turn on to adjust the replay window from 0 to 72 hours for time-sensitive journeys."
+>title="Set internal error recovery timeout"
+>abstract="Controls how long the journey may retry steps impacted by a service interruption. By default, may retry for up to 72 hours; turn on to limit retry for time-sensitive journeys."
 
 Timeout settings control how long a journey waits for activity execution and how long profiles can remain in a journey.
 
