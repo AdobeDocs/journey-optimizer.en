@@ -137,8 +137,8 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
         ![Read Audience activity with supplemental identifier configuration](assets/supplemental-ID-read-audience.png)
 
     1. In the **[!UICONTROL Supplemental identifier]** field, use the expression editor to select the supplemental identifier attribute.
-    
-      For audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}, if your CSV audience contains multiple rows per profile ID, make sure Express Activation is enabled first — see [Supplemental identifiers with external audiences](#external-audiences).
+
+        For audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}, if your CSV audience contains multiple rows per profile ID, make sure Express Activation is enabled first — see [Supplemental identifiers with external audiences](#external-audiences).
 
         >[!NOTE]
         >

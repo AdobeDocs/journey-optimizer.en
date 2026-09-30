@@ -116,13 +116,13 @@ Let's say you want to target your customers through journeys and campaigns based
 
     ![](assets/profile-preference-attributes.png){width=80%}
 
-<!--
-The corresponding profile dataset is updated as follows:
+    <!--
+    The corresponding profile dataset is updated as follows:
 
-|Attribute = Email id | Attribute = Offers_Push | Attribute = Newsletters_Email |
-|---------|----------|---------|
-| john.black@lumamail.com | Y | N |
--->
+    |Attribute = Email id | Attribute = Offers_Push | Attribute = Newsletters_Email |
+    |---------|----------|---------|
+    | john.black@lumamail.com | Y | N |
+    -->
 
     >[!NOTE]
     >
