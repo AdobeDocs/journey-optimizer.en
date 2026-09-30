@@ -205,14 +205,35 @@ Timeout settings control how long a journey waits for activity execution and how
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_timeout"
->title="Timeout or error"
->abstract="The **Timeout or error** option defines an alternative path in the journey when the action times out or returns an error, so profiles continue through a fallback path rather than stopping at this step. Recommended values are between 1 and 30 seconds."
+>title="Custom action / data source timeout"
+>abstract="The Custom action / data source timeout option defines an alternative path in the journey when the action times out or returns an error, so profiles continue through a fallback path rather than stopping at this step. Recommended values are between 1 and 30 seconds."
 
-When editing an action or condition activity, you can define an alternative path in case of error or timeout. If the processing of the activity interrogating a third-party system exceeds the timeout duration defined in **[!UICONTROL Timeout or error]** field of the journey's properties, the second path will be chosen to perform a potential fallback action.
+When editing an action or condition activity, you can define an alternative path in case of error or timeout. If the processing of the activity interrogating a third-party system exceeds the timeout duration defined in the **[!UICONTROL Custom Action / Data Source timeout]** field of the journey's properties, the second path will be chosen to perform a potential fallback action.
 
-Recommended values are between 1 and 30 seconds.
+![](assets/journey-properties-timeout.png)
 
-We recommend that you define a very short **[!UICONTROL Timeout or error]** value if your journey is time sensitive (example: reacting to the real-time location of a person) because you cannot delay your action for more than a few seconds. If your journey is less time sensitive, you can use a longer value to give more time to the system called to send a valid response.
+The default value is 30 seconds. Recommended values are between 1 and 30 seconds.
+
+We recommend that you define a very short **[!UICONTROL Custom Action / Data Source timeout]** value if your journey is time sensitive (example: reacting to the real-time location of a person) because you cannot delay your action for more than a few seconds. If your journey is less time sensitive, you can use a longer value to give more time to the system called to send a valid response.
+
+>[!NOTE]
+>
+>**[!UICONTROL Custom Action / Data Source timeout]** is distinct from **[!UICONTROL Set event recovery timeout]** described below: the former controls how long a journey waits for a single action's response before taking a fallback path, while the latter controls how long the journey keeps retrying events after a service interruption.
+
+### Event recovery timeout {#event-recovery-timeout}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_recovery_timeout"
+>title="Set internal error recovery timeout"
+>abstract="Controls how long the journey may retry steps impacted by a service interruption. By default, may retry for up to 72 hours. Turn on to limit retry for time-sensitive journeys."
+
+By default, journey events impacted by a service interruption are automatically replayed for up to **72 hours**, with no action needed on your part. This default applies to both new and existing journeys when the toggle is off.
+
+For time-sensitive journeys, enable **[!UICONTROL Set event recovery timeout]** to control the replay window yourself instead of using the default 72-hour window. When this option is enabled, use the **[!UICONTROL Event recovery time limit (in hours)]** field to define how long Journey Optimizer retries impacted events, from 0 to 72 hours.
+
+![](assets/journey-properties-event-recovery.png)
+
+Use a shorter recovery window only when replaying delayed events would no longer be relevant for the journey experience.
 
 Journeys also uses a global timeout as detailed below.
 
@@ -230,7 +251,7 @@ Due to the 91-day journey timeout, when journey reentrance is not allowed, we ca
 
 An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 91 days journey timeout. See [this page](../building-journeys/wait-activity.md).
 
-### Time-to-Live (TTL) and data retention FAQ {#timeout-faq}
+## Time-to-Live (TTL) and data retention FAQ {#timeout-faq}
 
 Starting [!DNL Adobe Journey Optimizer] June 2024 release, the journey global timeout has moved from 30 to 91 days. Impacts are listed in the FAQ below:
 
