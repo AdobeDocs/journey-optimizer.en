@@ -101,7 +101,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Destinations** description under **Left navigation > Main sections** has been updated to note that organizations with [!DNL Real-Time CDP] or [!DNL Adobe Journey Optimizer] can also activate audiences to eligible personalization destinations, such as [!DNL Adobe Target], from the Experience Platform destinations catalog. [Read more](../start/user-interface.md#main-sections)
 
-* How-to videos have been added to the Loyalty Challenges documentation for creating challenges, setting up reward providers, and monitoring challenge performance. [Watch the challenge videos](../loyalty-challenges/create-challenges.md#video), [watch the reward provider video](../loyalty-challenges/reward-definition-guide.md#video), and [watch the reporting video](../loyalty-challenges/loyalty-reporting.md#video).
+* How-to videos have been added to the Loyalty Challenges documentation for creating challenges, setting up reward providers, and monitoring challenge performance. [Watch the challenge videos](../loyalty-challenges/create-challenges.md#video), [watch the reward provider video](../loyalty-challenges/reward-definition-guide.md#video), and [watch the Explore loyalty performance video](../loyalty-challenges/loyalty-performance.md#video).
 
 ## July 2026 {#july-2026} 
 

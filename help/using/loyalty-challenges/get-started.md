@@ -77,7 +77,7 @@ Marketers create challenges by selecting a type (Standard, Streak, Sequential, o
 
 **3. Monitor performance** *(practitioner / analyst)*
 
-Once a challenge is live, built-in reporting dashboards provide challenge-level metrics: audience funnel performance, task completion rates, reward issuance, and revenue impact. The AI-powered insights engine also surfaces contextual recommendations to help optimize program performance. [Learn about loyalty reporting](loyalty-reporting.md).
+Once a challenge is live, built-in reporting dashboards provide challenge-level metrics: audience funnel performance, task completion rates, reward issuance, and revenue impact. The AI-powered insights engine also surfaces contextual recommendations to help optimize program performance. [Explore Loyalty performance](loyalty-performance.md).
 
 ## Prerequisites {#prerequisites}
 
@@ -145,11 +145,11 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
     </p>
   </td>
   <td>
-    <a href="loyalty-reporting.md">
+    <a href="loyalty-performance.md">
       <img alt="Reports" src="assets/do-not-localize/icon-reporting.png" width="200"/>
     </a>
     <div>
-    <a href="loyalty-reporting.md"><strong>Monitor performance</strong></a>
+    <a href="loyalty-performance.md"><strong>Explore loyalty performance</strong></a>
     </div>
     <p>
     <em>Track program KPIs, challenge results, and task metrics with built-in dashboards</em>

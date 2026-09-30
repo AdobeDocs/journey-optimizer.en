@@ -150,7 +150,7 @@ nudge: yes
     + [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
     + [Create challenges](using/loyalty-challenges/create-challenges.md)
     + [Create tasks](using/loyalty-challenges/create-tasks.md)
-    + [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
+    + [Explore loyalty performance](using/loyalty-challenges/loyalty-performance.md)
   + Configure and integrate {#configure-integrate-loyalty}
     + [Configure loyalty challenges](using/loyalty-challenges/loyalty-admin.md)
     + [Reward Definition guide](using/loyalty-challenges/reward-definition-guide.md)
