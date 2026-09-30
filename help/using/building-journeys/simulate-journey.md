@@ -24,19 +24,13 @@ subfeature_v2:
 
 >[!ENDSHADEBOX]
 
-Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
+Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log.
 
-Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log. 
-
->[!IMPORTANT]
->
->* To use **[!UICONTROL Simulation]**, assign at least one permission from the **[!UICONTROL Journeys]** capability: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. The same permissions let you create and manage simulated users, **[!UICONTROL Simulated Users]** permissions are not required. [Learn more](../administration/permissions.md)
->
->* To manage simulated users without **[!UICONTROL Simulation]**, assign **Manage Simulated Users** or **View Simulated Users** from the **[!UICONTROL Simulated Users]** capability.
->
->* For AI in simulation (**[!UICONTROL Quick simulation]**, AI-generated users, **[!UICONTROL Generate event values]**), assign **[!UICONTROL Generate Content]** from the **[!UICONTROL AI Assistant]** capability.
+For required permissions, see [Required permissions](simulate-journey-gs.md#required-permissions).
 
 For an overview by journey type, see [Get started with Journey simulation](simulate-journey-gs.md).
+
+Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
 ## Simulation types {#simulation-types}
 
@@ -269,6 +263,14 @@ Select **[!UICONTROL All]** to see results aggregated across every simulated use
 ![Results tab with simulation summary, test user filter, and path coverage on the journey canvas](assets/simulate-6-2.png)
 
 For each activity, the log can show whether the simulated user entered or exited the step, the timestamps and branch decisions for each step, and errors that occurred during the simulation.
+
+During a simulation, you can also preview the content of every channel activity directly on the canvas. Click the **[!UICONTROL Expand all]** (eye) icon, then click a thumbnail to open the preview. [Learn how to preview content in the canvas](using-the-journey-designer.md#content-preview).
+
+The preview reflects the **[!UICONTROL Test user]** you select: with **[!UICONTROL All]** selected, it shows non-personalized content; when you select a specific test user, each channel activity that user went through is previewed with that user's personalized data.
+
+In a simulation, previewed attribute values depend on when simulated user data was last fetched relative to the **[!UICONTROL Update Profile]** activity. If the data was fetched before the activity runs, previews show pre-update values throughout. If it was fetched after the activity runs (for example, after reloading the page), previews show post-update values throughout, including in email activities before the **[!UICONTROL Update Profile]** activity. A single preview does not show pre-update values before the activity and post-update values after it.
+
+![Personalized content preview for the selected test user during a simulation](assets/journey-canvas-content-preview.png)
 
 For **Wait** activities, the log includes two duration-related values:
 

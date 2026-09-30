@@ -71,7 +71,7 @@ The **full subdomain delegation** is the recommended method. Learn more about th
 
 When setting up subdomains in [!DNL Journey Optimizer], follow the guardrails and recommendations outlined below.
 
-* By default, [!DNL Journey Optimizer] allows you to delegate **a maximum of 10 subdomains**. However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
+* By default, [!DNL Journey Optimizer] allows you to delegate **a maximum of 10 subdomains**, combining email, landing page, and web channels. However, depending on your license contract, you may be able to delegate up to 3000 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
 
 * Parallel submission of subdomains is not supported in [!DNL Journey Optimizer]. If you try to submit a subdomain for delegation when another one is in the **[!UICONTROL Processing]** status, you get an error message.
 
@@ -141,21 +141,19 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
 
 1. Specify the name of the subdomain to delegate.
 
-    ![](assets/subdomain-name.png)
-
-<!--
- >[!CAUTION]
-    >
-    >Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
-    >
-    >You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage].
-
-    Capital letters are not allowed in subdomains. TBC by PM
--->
-
     >[!NOTE]
     >
     >After creating a new subdomain with your DNS provider, allow 24-48 hours for DNS propagation before attempting delegation to Adobe.
+
+    ![](assets/subdomain-name.png)
+
+    <!--
+    CAUTION: Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
+
+    You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage].
+
+    Capital letters are not allowed in subdomains. TBC by PM
+    -->
 
 1. Set up **[!UICONTROL DMARC record]** in the dedicated section. If the subdomain has an existing [DMARC record](dmarc-record.md), and if it is fetched by [!DNL Journey Optimizer], you can use the same values or change them as needed. If you do not add any values, the default values will be used. [Learn how to manage DMARC record](dmarc-record.md#set-up-dmarc)
 

@@ -14,6 +14,7 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 
 * Understand what CX Coworker is, how it relates to AI Assistant, and which skills it provides for journeys, loyalty, and content management
+* Simulate journey logic with the Journey Simulation skill in CX Coworker
 * Understand what AI Assistant can do and how to access it
 * Learn which AI agents are available and what permissions each requires
 * Generate content and message variations with AI across supported channels
@@ -25,6 +26,7 @@ For complete understanding, this information should be combined with the documen
 
 * **CX Coworker**: Adobe's conversational experience that integrates with business applications, automating customer experience and marketing workflows across Adobe applications; you describe a business goal in natural language and Coworker plans, executes, and validates the work *(product-specific)*
 * **Journey Create (CX Coworker skill)**: A CX Coworker skill for journeys that builds journeys with natural language prompts *(product-specific)*
+* **Journey Simulation (CX Coworker skill)**: A CX Coworker skill for simulating journey logic *(product-specific)*
 * **Channel Content Create (CX Coworker skill)**: A CX Coworker skill for journeys that generates channel-specific message copy and designs *(product-specific)*
 * **Journey Analyze (CX Coworker skill)**: A CX Coworker skill for journeys that diagnoses journey drop-offs, scheduling overlaps, and execution anomalies *(product-specific)*
 * **Loyalty Challenge Management (CX Coworker skill)**: A CX Coworker skill for loyalty that creates and configures loyalty challenges *(product-specific)*
@@ -77,4 +79,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 15 | source-hash: 9f71c9b3 -->
+<!-- ai-section-version: 15 | source-hash: 49f451d2 -->

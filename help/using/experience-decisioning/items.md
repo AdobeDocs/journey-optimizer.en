@@ -91,6 +91,8 @@ Start by defining the decision item's standard and custom attributes :
         >[!AVAILABILITY]
         >
         >This feature is available for channels with Decisioning support.
+        >
+        >AEM Content Fragments in Decisioning are available to customers integrating Adobe Experience Manager **as a Cloud Service** or **Managed Services** with Adobe Journey Optimizer. [Learn more](../integrations/aem-fragments-gs.md)
 
         For prerequisites and guardrails, refer to [Use AEM Content Fragments with Experience Decisioning](../integrations/aem-fragments.md#aem-decisioning).
 

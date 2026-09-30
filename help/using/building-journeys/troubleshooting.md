@@ -50,6 +50,8 @@ If you are using inbound actions, learn how to troubleshoot them [on this page](
 
 Before testing and publishing your journey, verify that all the activities are properly configured. You cannot perform tests or publications if errors are still detected by the system.
 
+If a condition cannot find a custom-upload enrichment attribute, [learn how to troubleshoot the audience and attribute reference](../audience/enrichment-attributes.md#faq-enrichment).
+
 Errors appear with a warning symbol displayed on the activities themselves on the canvas. Place your cursor on the exclamation mark to display the error message. If you select the activity, you should see the line in error with a warning. For example:
 
 * if a mandatory field is empty, an error will be displayed
