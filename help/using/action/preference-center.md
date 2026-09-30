@@ -117,11 +117,7 @@ Let's say you want to target your customers through journeys and campaigns based
     ![](assets/profile-preference-attributes.png){width=80%}
 
     <!--
-    The corresponding profile dataset is updated as follows:
-
-    |Attribute = Email id | Attribute = Offers_Push | Attribute = Newsletters_Email |
-    |---------|----------|---------|
-    | john.black@lumamail.com | Y | N |
+    The corresponding profile dataset is updated as follows: Attribute Email id = john.black@lumamail.com, Attribute Offers_Push = Y, Attribute Newsletters_Email = N.
     -->
 
 1. In Adobe Experience Platform, create a custom policy (from the **[!UICONTROL Privacy]** > **[!UICONTROL Policies]** menu). [Learn how](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#create-policy){target="_blank"}
