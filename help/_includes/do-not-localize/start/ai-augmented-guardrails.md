@@ -36,7 +36,7 @@ For complete understanding, this information should be combined with the documen
 * Any event that starts or enters a journey is limited to a maximum of 64 KB of uncompressed, minified JSON (hard limit); events exceeding this size are dropped and do not trigger the journey.
 * The journey runtime keeps an internal queue of up to 10 pending events per profile and journey version; additional events are discarded with the `maxInstanceStackEventsReached` reason.
 * A global journey timeout stops the progress of individuals 91 days after they enter; it is not displayed in the interface and cannot be changed (hard limit).
-* Journey payload size validation uses a default maximum request size of 2 MB (2,000,000 bytes); a soft warning is shown at 90 to 99 percent of the limit, and at 100 percent or more save or publish is blocked with HTTP 413 Request Entity Too Large (hard limit).
+* Journey payload size validation uses a default maximum journey payload size of 2 MB (2,000,000 bytes); the size reflects the serialized journey definition (activity configuration, expressions, conditions, data mappings, parameters) and is not determined by activity count alone; referenced entities such as email content are excluded. A soft warning is shown at 90 to 99 percent of the limit, and at 100 percent or more save or publish is blocked with HTTP 413 Request Entity Too Large (hard limit).
 * Events throughput: peak volume of 5,000 inbound journey events per second for unitary events and 5,000 inbound journey events per second for Read Audience based journey events, across all sandboxes.
 * A single event can be referenced by a maximum of 25 journeys, and a single XDM schema by a maximum of 100 events, across all live, closed, paused, test mode, and dry run journeys at one time (hard limit; publishing is blocked when reached).
 * Profile reentrance into unitary journeys is temporally blocked by default for 5 minutes.
@@ -58,7 +58,7 @@ For complete understanding, this information should be combined with the documen
 * TPS: transactions per second — RPS: requests per second
 * Do not confuse: "production sandboxes" (limit of 200 concurrent live, closed, paused, and dry run journeys) ≠ "development sandboxes" (limit of 100)
 * Do not confuse: journey status scope "live, closed, paused, and dry run" (the 200/100 concurrent journey limit) ≠ "live, closed, paused, test mode, and dry run" (the event, XDM schema, and Audience Qualification limits)
-* Do not confuse: 1 MB journey instance limit ≠ 64 KB event payload limit ≠ 2 MB journey payload request size limit ≠ 2 MB email message content limit
+* Do not confuse: 1 MB journey instance limit ≠ 64 KB event payload limit ≠ 2 MB journey payload (serialized journey definition) limit ≠ 2 MB email message content limit
 
 **FAQ:**
 

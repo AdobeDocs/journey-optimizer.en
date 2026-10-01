@@ -84,6 +84,8 @@ In detail, the MumurHash3 32-bit algorithm is used to hash the user identity str
 
 Note that as part of configuring every campaign with a content experiment, you must choose an identity namespace from which the userId will be selected for the randomization algorithm. This is independent of the [execution addresses](../configuration/primary-email-addresses.md).
 
+For Action campaigns, creating a new version can create a separate copy of the experiment. Treatment assignments, including test and control group membership, may be re-segmented across versions, so results may not be continuous. Learn how [modifying an Action campaign creates a new version](../campaigns/manage-campaigns.md#modify-an-action-campaign).
+
 ### Data collection and analysis
 
 At the time of assignment i.e., when the message is sent in outbound channels, or when the user enters the campaign in inbound channels, an "assignment record" is logged to the appropriate system dataset. This will record which treatment the user was assigned to, along with experiment and campaign identifiers. 

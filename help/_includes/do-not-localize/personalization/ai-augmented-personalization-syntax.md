@@ -25,7 +25,7 @@ For complete understanding, this information should be combined with the documen
 * **Handlebars**: The `{{...}}` templating syntax used for rendering attributes, looping over arrays, and calling block helpers; HTML-escapes output by default. *(product-specific)*
 * **Profile Query Language (PQL)**: The `{%= ... %}` expression syntax used for calling built-in functions (e.g. `upperCase()`, `formatDate()`) and evaluating conditional expressions. *(product-specific)*
 * **Triple-stash (`{{{ }}}`)**: A Handlebars syntax variant that outputs values without HTML escaping, useful when the value itself contains HTML characters that should not be encoded.
-* **Reserved keywords**: PQL identifiers (`next`, `last`, `this`) that cannot be used directly as field or variable names; must be wrapped in backticks when a schema field uses one of these names.
+* **Reserved keywords**: PQL identifiers that cannot be used directly as field or variable names, grouped as general keywords (`let`, `export`, `to`, `as`, `this`, `last`, `next`, `now`, `NOW`, `today`, `yesterday`, `tomorrow`, `from`, `FROM`, `From`, `before`, `BEFORE`, `Before`, `after`, `AFTER`, `After`), time units (`millisecond`, `milliseconds`, `second`, `seconds`, `minute`, `minutes`, `hour`, `hours`, `day`, `days`, `week`, `weeks`, `month`, `months`, `year`, `years`, `decade`, `decades`, `century`, `centuries`, `millennium`, `millennia`), and boolean/logical operators (`true`, `TRUE`, `True`, `false`, `FALSE`, `False`, `not`, `NOT`, `Not`, `and`, `AND`, `And`, `or`, `OR`, `Or`, `null`, `NULL`, `Null`); must be wrapped in backticks when a schema field uses one of these names.
 * **Type coercion**: The explicit conversion of a value from one data type to another (e.g. string → number) using functions like `stringToNumber()` or `toBool()`, required before comparison or arithmetic in PQL.
 * **Namespace**: The top-level grouping of personalization data — Profile, Audience, Offers — each with its own path structure and access rules.
 * **Block helper**: A Handlebars helper identified by `#` before the helper name and a matching closing `/`, used for block constructs like `{{#each}}`.
@@ -36,7 +36,7 @@ For complete understanding, this information should be combined with the documen
 * PQL function calls inside `{{...}}` Handlebars blocks will fail; use `{%= ... %}` instead.
 * The `{% if %}` / `{% elseif %}` / `{% endif %}` conditional syntax is not supported; use `{%#if%}` / `{%else if%}` / `{%/if%}`.
 * Backtick escaping for hyphenated field names is only supported inside PQL expressions (`{%= ... %}`). In `{{...}}` Handlebars interpolation, backtick syntax fails — but hyphenated field names can still be referenced directly (e.g. `{{profile.my-custom-field}}`).
-* Reserved keywords (`next`, `last`, `this`) must be wrapped in backticks when used as schema field names; applies to both `{{...}}` and `{%= ... %}`.
+* Reserved keywords (general, time-unit, and boolean/logical, e.g. `next`, `last`, `this`, `day`, `year`, `true`, `and`, `or`) must be wrapped in backticks when used as schema field names; applies to both `{{...}}` and `{%= ... %}`.
 * Single backslash `\` is not supported as a literal function argument; use double backslash `\\`.
 * PQL is strongly typed; mismatched types in comparisons or arithmetic require explicit conversion using `stringToNumber()`, `toBool()`, or similar coercion functions.
 
@@ -58,4 +58,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 7fa07aa5 -->
+<!-- ai-section-version: 2 | source-hash: 784b4545 -->

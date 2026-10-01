@@ -27,6 +27,8 @@ When **Message Export** is enabled on an Email or SMS channel configuration, sen
 
 This section lists the fields available in the exported dataset.
 
+For an overview of the Message Export feature, enablement steps, and supported use cases, see [Message export in Journey Optimizer](message-export.md).
+
 ## Dataset fields
 
 +++ _experience

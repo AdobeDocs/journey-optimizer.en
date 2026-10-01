@@ -97,9 +97,9 @@ Certain keywords are reserved in Profile Query Language (PQL) and cannot be used
 
 **Reserved keywords include:**
 
-* `next`
-* `last`
-* `this`
+* General: `let`, `export`, `to`, `as`, `this`, `last`, `next`, `now`, `NOW`, `today`, `yesterday`, `tomorrow`, `from`, `FROM`, `From`, `before`, `BEFORE`, `Before`, `after`, `AFTER`, `After`
+* Time units: `millisecond`, `milliseconds`, `second`, `seconds`, `minute`, `minutes`, `hour`, `hours`, `day`, `days`, `week`, `weeks`, `month`, `months`, `year`, `years`, `decade`, `decades`, `century`, `centuries`, `millennium`, `millennia`
+* Boolean and logical operators: `true`, `TRUE`, `True`, `false`, `FALSE`, `False`, `not`, `NOT`, `Not`, `and`, `AND`, `And`, `or`, `OR`, `Or`, `null`, `NULL`, `Null`
 
 **Example:**
 

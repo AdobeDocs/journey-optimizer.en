@@ -174,7 +174,9 @@ Once your personalization expression is ready, you need to have it validated by 
 
 The validation of your expression is automatically executed when you click on the **Add** button to close the editor window. You can also use the **Validate** button to check your personalization syntax.
 
-![](assets/perso_validation1.png)
+When a PQL syntax validation error is detected, the **[!UICONTROL Fix with AI]** option appears in the bottom pane. Select it to open the expression generation tool in the right rail and get help fixing the error. Learn more about [editing, fixing, or explaining existing code](../content-management/generative-personalization-expressions.md#edit-existing).
+
+![](assets/fix-with-ai.png)
 
 Expand the section below to see common errors that may occur when validating personalization.
 
