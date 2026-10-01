@@ -621,6 +621,23 @@ The following capabilities and improvements are coming to the Email Designer in 
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Alert activity in orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now create your own alerts directly on the orchestrated campaign canvas with the new <strong>Alert</strong> activity. Configure a static, plain-text title and message to notify subscribers when execution reaches the activity. Combine it with a Test activity to trigger alerts based on conditions, such as a query returning fewer profiles than expected.</p>
+<p>For more information, refer to the <a href="../orchestrated/activities/alert.md">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 * **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage. [Learn more](../data/monitor-data-ingestion.md#co)
 
   Availability date: September 28, 2026

@@ -357,6 +357,16 @@ Notifies you when an Orchestrated campaign encounters an error during execution.
 
 +++
 
++++ Orchestrated Campaign Activity Alert
+
+Notifies you when execution reaches an **[!UICONTROL Alert]** activity in an Orchestrated campaign. The notification uses the static title and message configured in the activity.
+
+The activity's position in the flow and the upstream orchestration logic determine when the alert fires. To send an alert only when a condition is met, place the Alert activity on the relevant branch of a **[!UICONTROL Test]** activity.
+
+[Learn how to configure the Alert activity](../orchestrated/activities/alert.md).
+
++++
+
 +++ Orchestrated Campaign Delivery Started
 
 Notifies you when a delivery from an Orchestrated campaign starts.

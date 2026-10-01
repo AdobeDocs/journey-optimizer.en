@@ -205,6 +205,8 @@ System alerts provide proactive notifications about issues in your Orchestrated 
 
 For information about available alerts and how to subscribe, see [Access and subscribe to system alerts](../reports/alerts.md).
 
+You can also create your own alert by adding an **[!UICONTROL Alert]** activity to the campaign canvas. The alert fires when campaign execution reaches the activity. [Learn how to configure the Alert activity](activities/alert.md).
+
 ## Next steps {#next}
 
 After starting the Orchestrated campaign canvas, you can use Journey Optimizer reporting capabilities to get insights such as understanding audience behavior, and measuring the performance of each step in your customer journey. [Learn more on Orchestrated campaigns reporting](../orchestrated/reporting-campaigns.md)

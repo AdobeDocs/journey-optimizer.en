@@ -215,6 +215,7 @@ nudge: yes
     + Orchestrated campaigns activities {#design-campaigns}
       + [Orchestrated campaigns activities](/help/rp_landing_pages/design-campaigns-landing-page.md)
       + [Get started with activities](using/orchestrated/activities/about-activities.md)
+      + [Alert](using/orchestrated/activities/alert.md)
       + [And-join](using/orchestrated/activities/and-join.md)
       + [Build audience](using/orchestrated/activities/build-audience.md)
       + [Change dimension](using/orchestrated/activities/change-dimension.md)
