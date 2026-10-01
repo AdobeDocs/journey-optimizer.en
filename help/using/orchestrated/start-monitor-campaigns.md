@@ -50,7 +50,6 @@ Orchestrated campaigns move through a defined set of states. The key stages in t
 |---|---|
 | **Draft** | The campaign is being built and tested — not yet active. |
 | **Live** | The campaign has been published and is executing. |
-| **Closed** | The recurring campaign is closed to new entries, but active profiles continue until all activities complete. |
 | **Completed** | Campaign execution has finished. |
 
 >[!NOTE]
