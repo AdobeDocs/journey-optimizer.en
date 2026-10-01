@@ -50,7 +50,6 @@ Orchestrated campaigns move through a defined set of states. The key stages in t
 |---|---|
 | **Draft** | The campaign is being built and tested — not yet active. |
 | **Live** | The campaign has been published and is executing. |
-| **Closed** | The recurring campaign is closed to new entries, but active profiles continue until all activities complete. |
 | **Completed** | Campaign execution has finished. |
 
 >[!NOTE]
@@ -199,6 +198,14 @@ Two types of information are available:
 * The **[!UICONTROL Tasks]** tab details the step-by-step execution sequence of activities.
 
 In both tabs, you can choose the displayed columns and their order, apply filters, and use the search field to quickly find the desired information.
+
+### Set up alerts {#alerting}
+
+System alerts provide proactive notifications about issues in your Orchestrated campaigns, so you can investigate and take corrective action without continuously checking the monitoring view. You can view and manage available alerts from **[!UICONTROL Administration]** > **[!UICONTROL Alerts]**.
+
+For information about available alerts and how to subscribe, see [Access and subscribe to system alerts](../reports/alerts.md).
+
+You can also create your own alert by adding an **[!UICONTROL Alert]** activity to the campaign canvas. The alert fires when campaign execution reaches the activity. [Learn how to configure the Alert activity](activities/alert.md).
 
 ## Next steps {#next}
 

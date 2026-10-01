@@ -183,6 +183,8 @@ If you export stepEvent data to **external systems**, you can filter Dry run exe
 
 When analyzing **journey reporting metrics** using [!DNL Adobe Experience Platform] Query service, Dry Run-generated step events must be excluded. To do this, exclude step events where `inDryRun` is `true` (i.e. include only events where `inDryRun` is `null` or `false`).
 
+Some non-reportable step events are not generated during Dry Runs. This only affects custom reports built on these dry-run step-event types and does not impact standard journey execution. If your custom reports rely on these step events, re-trigger the Dry run to regenerate the data.
+
 ## Frequently asked questions {#faq}
 
 **Does a Dry run send messages to real customers?**

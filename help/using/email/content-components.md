@@ -43,7 +43,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to add and configure Email Designer content components such as buttons, text, images, dividers, HTML, social links, and offer decisions to build your email content.
+**On this page:** Learn how to add and configure Email Designer content components such as buttons, text, images, dividers, HTML, social links, offer decisions, grids, and tables to build your email content.
 
 >[!ENDSHADEBOX]
 
@@ -93,6 +93,8 @@ To add content components to your email and adjust them to your needs, follow th
     >
     >You can add several components into a single structure component and into each column of a structure component.
 
+1. Select the newly added component.
+
 1. Adjust the attributes and styling for each component using the **[!UICONTROL Settings]** and **[!UICONTROL Style]** tabs on the right. For example, you can change the text style, padding or margin of each component. [Learn more about alignment and padding](alignment-and-padding.md)
 
     ![](assets/email_designer_content_components_settings.png)
@@ -112,8 +114,6 @@ For example, add a **[!UICONTROL Container]** component and then add a [Button](
 ## Button {#button}
 
 Use the **[!UICONTROL Button]** component to insert one or multiple buttons into your email and redirect your email audience to another page.
-
-1. From **[!UICONTROL Content components]**, drag and drop the **[!UICONTROL Button]** component into a **[!UICONTROL Structure component]**.
 
 1. Click your newly added button to personalize the text and to have access to the **[!UICONTROL Settings]** and **[!UICONTROL Styles]** tabs in the Email Designer right pane.
 
@@ -138,8 +138,6 @@ Use the **[!UICONTROL Button]** component to insert one or multiple buttons into
 Use the **[!UICONTROL Text]** component to insert text into your email, and adjust the style (border, size, padding, etc.) using the **[!UICONTROL Styles]** tab.
 
 ![](assets/email_designer_text_component.png)
-
-1. From **[!UICONTROL Content components]**, drag and drop the **[!UICONTROL Text]** component into a **[!UICONTROL Structure component]**.
 
 1. Click your newly added component to personalize the text and to have access to the **[!UICONTROL Settings]** and **[!UICONTROL Styles]** tabs in the right pane of the Email Designer.
 
@@ -174,11 +172,9 @@ You can adjust styling attributes such as the line color, style and height from 
 
 ![](assets/email_designer_divider.png)
 
-## HTML {#HTML}
+## Html {#Html}
 
-Use the **[!UICONTROL HTML]** component to copy-paste the different parts of your existing HTML. This enables you to create free modular HTML components to reuse some external content.
-
-1. From **[!UICONTROL Content Components]**, drag and drop the **[!UICONTROL HTML]** component into a **[!UICONTROL Structure component]**.
+Use the **[!UICONTROL Html]** component to copy-paste the different parts of your existing HTML. This enables you to create free modular HTML components to reuse some external content.
 
 1. Click on your newly added component, then select **[!UICONTROL Show the source code]** from the contextual toolbar to add your HTML.
 
@@ -196,9 +192,9 @@ Use the **[!UICONTROL HTML]** component to copy-paste the different parts of you
 
 Use the **[!UICONTROL Image]** component to insert an image file from your computer into your email content.
 
-1. From **[!UICONTROL Content components]**, drag and drop the **[!UICONTROL Image]** component into a **[!UICONTROL Structure component]**.
+![](assets/email_designer_image_content.png)
 
-    ![](assets/email_designer_image_content.png)
+1. Select the newly added component.
 
 1. From the **[!UICONTROL Settings]** tab, click **[!UICONTROL Browse]** to choose an image file from your assets or **[!UICONTROL Import media]** to upload an asset to Adobe Experience Manager Assets.
 
@@ -225,11 +221,7 @@ Use the **[!UICONTROL Image]** component to insert an image file from your compu
 
 Use the **[!UICONTROL Social]** component to insert links to social media pages into your email content.
 
-1. From **[!UICONTROL Content Components]**, drag and drop the **[!UICONTROL Social]** component into a **[!UICONTROL Structure component]**.
-
-1. Select your newly added component.
-
-1. In the **[!UICONTROL Social]** field of the **[!UICONTROL Settings]** tab, choose which social media you want to add or remove.
+1. Select your newly added component. In the **[!UICONTROL Social]** field of the **[!UICONTROL Settings]** tab, choose which social media you want to add or remove.
 
     ![](assets/email_designer_20.png)
 
@@ -247,13 +239,13 @@ Use the **[!UICONTROL Social]** component to insert links to social media pages 
 
 Use the **[!UICONTROL Offer decision]** component to insert offers into your messages. The [decision management](../offers/get-started/starting-offer-decisioning.md) engine will pick the best offer to deliver to your customers.
 
-1. From **[!UICONTROL Content Components]**, drag and drop the **[!UICONTROL Offer decision]** component into a **[!UICONTROL Structure component]**.
-
-1. Click **[!UICONTROL Add]** to select your **[!UICONTROL Offer decision]**.
+1. Select the newly added component and click **[!UICONTROL Add]** to select your **[!UICONTROL Offer decision]**.
 
     ![](assets/component_offers.png)
 
-1. From the drop-down, select your **[!UICONTROL Placements]**.  Then, select the the **[!UICONTROL Offer decision]** you want to add to your content and click **[!UICONTROL Add]**.
+1. From the drop-down, select your **[!UICONTROL Placements]**.
+
+1. Then, select the **[!UICONTROL Offer decision]** you want to add to your content and click **[!UICONTROL Add]**.
 
     ![](assets/component_offers_2.png)
 
@@ -289,4 +281,22 @@ Use the **[!UICONTROL Grid]** component to organize content into a structure com
 
 1. Drop other content components into each cell as needed, and adjust styling from the **[!UICONTROL Styles]** tab for each component.
 
-{{$include /help/_includes/do-not-localize/email/ai-augmented-content-components.md}}
+## Table {#table}
+
+Use the **[!UICONTROL Table]** component to structure content in rows and columns directly within your email, creating clear, organized layouts without relying on custom HTML.
+
+![](assets/email_designer_table_component.png){width="90%"}
+
+1. Once added, click the component and select the **[!UICONTROL Settings]** tab of the Email Designer right pane.
+
+1. From there, you can adjust the number of rows and columns for your table.
+
+    ![](assets/email_designer_table_component_2.png)
+
+1. Use the **[!UICONTROL Include header row]** option (enabled by default) to add a header row to your table, and toggle the **[!UICONTROL Stripe rows]** option to apply alternating row colors for improved readability.
+
+1. You can also click the arrows corresponding to a column or a row directly in the table, and use the contextual menu to add or delete a row or a column.
+
+    ![](assets/email_designer_table_component_3.png)
+
+1. Adjust other styling attributes such as cell color, font size, text alignement, or font color from the **[!UICONTROL Styles]** tab.

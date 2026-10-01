@@ -39,7 +39,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Insert decision policy code into your code-based experience, email, SMS, push notification, and direct mail content, so you can personalize messages with attributes from the returned decision items.
+**On this page:** Insert decision policy code into your code-based experience, web, email, SMS, push notification, and direct mail content, so you can personalize messages with attributes from the returned decision items.
 
 >[!ENDSHADEBOX]
 
@@ -47,7 +47,7 @@ Once you've added a decision policy to your content, you can use attributes from
 
 >[!CAUTION]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **Email**, **SMS**, **Push notification**, and **Direct mail** channels.
+>Decision policies are available to all customers for the **Code-based Experience**, **Web**, **Email**, **SMS**, **Push notification**, and **Direct mail** channels.
 
 ## Insert the decision policy code {#insert}
 
@@ -55,7 +55,7 @@ Once you've added a decision policy to your content, you can use attributes from
 
 >[!TAB Code-based Experience]
 
-1. Edit your code-based experience and navigate to **[!UICONTROL Decision policy]**.
+1. Open the **Personalization Editor** and navigate to **[!UICONTROL Decision policy]**.
 
 2. Select **[!UICONTROL Insert policy]** to add the decision policy code.  
 
@@ -115,6 +115,20 @@ You can also insert the decision policy code when using the **[!UICONTROL Code y
 >
 >Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the [release notes](https://developer.adobe.com/client-sdks/home/release-notes){target="_blank"} to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in [this section](https://developer.adobe.com/client-sdks/home/current-sdk-versions){target="_blank"}.
 
+>[!TAB Web]
+
+1. Open your web campaign or journey and navigate to the **web visual editor**.
+
+2. Select the component you want to personalize, then click the personalization icon from the contextual menu.
+
+3. In the **Personalization Editor**, navigate to **[!UICONTROL Decision policies]**.
+
+4. Select **[!UICONTROL Insert syntax]** to add the code for your decision policy.
+
+>[!IMPORTANT]
+>
+>The total payload size of a web channel response must not exceed **64 KB**. Requests exceeding this limit will result in an error. Ensure your decision items and attributes remain within this threshold.
+
 >[!TAB Direct Mail]
 
 1. From the extraction file configuration, open the **Personalization Editor** (for example, in the **[!UICONTROL Data]** field of a column).
@@ -131,7 +145,7 @@ The decision policy code is added. You can now use attributes from the returned 
 
 >[!NOTE]
 >
->For code-based experience, email and direct mail channels, repeat this sequence once per decision item you want returned. For example, if you chose to return 2 items when [creating the decision](create-decision-policy.md), repeat the sequence twice. For SMS and Push channels, only one decision item can be returned.
+>For code-based experience, web, email and direct mail channels, repeat this sequence once per decision item you want returned. For example, if you chose to return 2 items when [creating the decision](create-decision-policy.md), repeat the sequence twice. For SMS and Push channels, only one decision item can be returned.
 
 ## Personalize with decision item attributes {#attributes}
 
@@ -147,7 +161,7 @@ Decision item attributes and contextual attributes are not supported by default 
 
 To add an attribute, click the **`+`** icon next to the attribute. You can add as many attributes as needed. You can also include other personalization attributes, such as profile data.
 
-* For **Email**, **Code-based**, and **Direct Mail** channels, wrap the attributes within the `#each` loop using square brackets `[ ]`, and add a comma before the closing `/each` tag.
+* For **Email**, **Web**, **Code-based**, and **Direct Mail** channels, wrap the attributes within the `#each` loop using square brackets `[ ]`, and add a comma before the closing `/each` tag.
 
    +++See example
 

@@ -67,14 +67,14 @@ To access Adobe Journey Optimizer, sign in to [[!DNL Adobe CX Enterprise]](https
 
 The Journey Optimizer interface consists of four main areas:
 
-![Journey Optimizer home page showing left navigation, top bar, main workspace, and home page areas](assets/ajo-home.png)
+![Journey Optimizer home page with recently accessed campaigns and AI Recommendations](assets/ajo-home.png)
 
 1. **Left navigation** - Access all capabilities and features organized by function
 2. **Top bar** - Universal search, help, notifications, and settings
 3. **Home page** - Quick access to recent items and helpful resources
 4. **Main workspace** - Where you create and manage your content
 
-**Tip:** New users can start from the **Home** page to access recent items and use cases, or use the **Help** icon in the top bar for contextual guidance.
+**Tip:** New users can start from the **Home** page to access recent items and helpful resources, or use the **Help** icon in the top bar for contextual guidance.
 
 ## Top bar features {#top-bar}
 
@@ -138,20 +138,9 @@ Keyboard shortcuts and accessibility features are available. [Learn more](access
 
 The home page provides:
 
+* **CX Enterprise Coworker** - Enter a business goal in the **“What would you like to accomplish today?”** prompt to start a conversation.
 * **Recents** - Shortcuts to recently created events, journeys, campaigns, and other objects
-* **Use cases** - Pre-built scenarios to help you get started quickly (create test profiles, send birthday messages, etc.)
 * **Resources** - Links to documentation, tutorials, and support
-
-### Use cases and quick-start workflows {#use-cases}
-
-Quick-start workflows help you accomplish common tasks:
-
-* **Create test profiles** - Generate test profiles using CSV templates
-* **Send birthday messages** - Automatically send birthday emails (coming soon)
-* **Onboard new customers** - Welcome series for new customers (coming soon)
-* **Send push to imported lists** - Quick push notifications from CSV data (coming soon)
-
-Click **[!UICONTROL View details]** to learn more about each use case, or **[!UICONTROL Begin]** to start.
 
 ## Left navigation {#left-nav}
 
@@ -226,15 +215,9 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 * **Channels** - Configure channel settings and deliverability. [Set up channel configurations](../configuration/channel-surfaces.md) | [Get started with configuration](../configuration/get-started-configuration.md)
 * **Tags** - Organize and categorize content. [Work with unified tags](search-filter-categorize.md#tags)
 
-## AI assistant {#ai-assistant}
+## CX Enterprise Coworker {#cx-enterprise-coworker}
 
-AI Assistant provides instant help and operational insights. Click the AI Assistant icon in the top bar to:
-
-* Get answers about product features
-* Receive operational insights about your journeys
-* Navigate concepts and best practices
-
-[Learn more about AI Assistant](ai-features.md#ai-assistant)
+CX Enterprise Coworker is the in-product conversational experience. On the Journey Optimizer home page, enter a business goal in the **“What would you like to accomplish today?”** prompt to start a conversation. It provides instant help and operational insights. [Learn more about CX Enterprise Coworker](ai-features.md#cx-coworker).
 
 ## Related topics {#related-topics}
 
@@ -354,10 +337,6 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >title="Enable webhooks"
 >abstract="Enable webhooks to receive real-time feedback on the execution status of your messages. Before activating this option, make sure you have configured a webhook in the **Administration** / **Channels** / **Feedback Webhook** menu."
 
->[!CONTEXTUALHELP]
->id="ajo_channels_feedback_webhook_settings_create"
->title="Feedback Webhooks"
->abstract="Feedback webhooks allows you to receive real-time feedback on the execution status of messages sent with transactional API triggered campaigns. Only one webhook configuration per Organization + sandbox combination is allowed."
 
 
 <!-- JOURNEYS - GENERATE EXPRESSIONS WITH AI -->
@@ -399,6 +378,13 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >title="Relay destination URL"
 >abstract="The HTTPS endpoint Journey Optimizer calls to relay each incoming message. Journey Optimizer sends a separate HTTP POST here per message received. This is distinct from the Auth URL under Custom Authentication, which is used only to obtain an access token, not to receive messages."
 
+<!--DOCAC-15748 Set as default webhook-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_webhook_default_webhook"
+>title="Set as default"
+>abstract="Enable this option to use a common webhook URL for processing provider feedback and inbound messages received from the provider."
+
 <!--DOCAC-15698 Implement contextual help for Inbound Activity Deactivation activity-->
 
 
@@ -406,18 +392,5 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_journey_inbound_activity_deactivation"
 >title="Inbound Activity Deactivation activity"
 >abstract="Removes a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit."
-
-<!--DOCAC-15707 Implement contextual help for Journey Properties event recovery / action timeout fields-->
-
->[!CONTEXTUALHELP]
->id="ajo_journey_event_recovery_timeout"
->title="Set event recovery timeout"
->abstract="Controls how long the journey automatically replays events impacted by a service interruption. Off by default (72-hour automatic replay); turn on to adjust the replay window from 0 to 72 hours for time-sensitive journeys."
-
->[!CONTEXTUALHELP]
->id="ajo_journey_action_timeout"
->title="Custom Action / IDS Action timeout"
->abstract="The Custom Action / IDS Action timeout option defines an alternative path in the journey when the action times out or returns an error, so profiles continue through a fallback path rather than stopping at this step. Recommended values are between 1 and 30 seconds."
-
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-user-interface.md}}

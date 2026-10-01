@@ -113,4 +113,16 @@ Currently, no. Even after wait or event nodes, enrichment attribute values remai
 
 +++
 
++++ Why is a custom-upload enrichment attribute unavailable in a journey?
+
+Audience ingestion completion does not confirm that an enrichment attribute is available in journey authoring. The typical timing for audience availability does not specify when custom-upload enrichment attributes become available. [Learn about audience activation timing](target-audiences.md#activation).
+
+Check that:
+* The audience exists, and your account has permission to access and use it.
+* The Read Audience activity selects the same audience that the condition expression references. If your setup uses a field group, confirm it references enrichment attributes from that same audience.
+
+The “Enriched audience not found” message is ambiguous and does not identify a single root cause. If it persists after these checks, contact Adobe support with the audience and journey details.
+
++++
+
 {{$include /help/_includes/do-not-localize/audience/ai-augmented-enrichment-attributes.md}}

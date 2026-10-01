@@ -12,7 +12,7 @@ nudge: yes
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new} 
   + [Release cycle](using/rn/releases.md) 
-  + [Pre-release notes](using/rn/e-release-notes.md)
+  + {hide-from-toc} [Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -150,7 +150,7 @@ nudge: yes
     + [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
     + [Create challenges](using/loyalty-challenges/create-challenges.md)
     + [Create tasks](using/loyalty-challenges/create-tasks.md)
-    + [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
+    + [Explore loyalty performance](using/loyalty-challenges/loyalty-performance.md)
   + Configure and integrate {#configure-integrate-loyalty}
     + [Configure loyalty challenges](using/loyalty-challenges/loyalty-admin.md)
     + [Reward Definition guide](using/loyalty-challenges/reward-definition-guide.md)
@@ -215,6 +215,7 @@ nudge: yes
     + Orchestrated campaigns activities {#design-campaigns}
       + [Orchestrated campaigns activities](/help/rp_landing_pages/design-campaigns-landing-page.md)
       + [Get started with activities](using/orchestrated/activities/about-activities.md)
+      + [Alert](using/orchestrated/activities/alert.md)
       + [And-join](using/orchestrated/activities/and-join.md)
       + [Build audience](using/orchestrated/activities/build-audience.md)
       + [Change dimension](using/orchestrated/activities/change-dimension.md)
@@ -269,6 +270,7 @@ nudge: yes
     + [Simulate content variations (classic experience)](using/test-approve/simulate-sample-input.md)
     + [Simulate content variations (new experience)](using/test-approve/simulate-content-variations.md)
     + [Email Spam report](using/content-management/spam-report.md)
+    + [Validate URLs in your content](using/content-management/url-validation.md)
   + Approve journeys & campaigns {#approve}
     + [Approve journeys & campaigns](/help/rp_landing_pages/approve-landing-page.md)
     + [Get started with approvals](using/test-approve/gs-approval.md)
@@ -332,6 +334,7 @@ nudge: yes
         + [Manage dark mode content](using/email/dark-mode.md)
       + [Create accessible content](using/email/accessible-content.md)
       + [Content check](using/email/content-check.md)
+      + [Collaborate on email content](using/email/email-collaboration.md)
     + Configure email channel {#configure-email}
       + {hide-from-toc} [Configure email channel](/help/rp_landing_pages/configure-email-landing-page.md)
       + [Get started with email configuration](using/email/get-started-email-config.md)
@@ -561,7 +564,9 @@ nudge: yes
     + [Integrate with Intelligent Services](using/integrations/intelligent-services.md)
     + Integrations {#integrations}
       + [Work with Integrations](using/integrations/integrations.md)
-      + [Using External integrations for personalization](using/integrations/integrations-personalization.md)
+      + [Create Standard integrations](using/integrations/integrations-create.md)
+      + [Create Browsing integrations](using/integrations/integrations-browsing.md)
+      + [Use External integrations for personalization](using/integrations/integrations-personalization.md)
       + [FAQ](using/integrations/vendor-integration-faq.md)
       + Sample Vendors {#vendors}
         + [Get started with Vendors integration](using/integrations/vendor-integration-gs.md)
@@ -690,6 +695,7 @@ nudge: yes
   + Decisioning {#experience-decisioning}
     + [Decisioning](/help/rp_landing_pages/experience-decisioning-landing-page.md)
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
+    + [Coworker for Decisioning](using/experience-decisioning/experience-decisioning-coworker-skills.md)
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
     + [Decisioning FAQ](using/experience-decisioning/decisioning-faq.md)
     + Migrate to Decisioning {#migrate-to-decisioning}
@@ -940,6 +946,9 @@ nudge: yes
     + [Built-in schemas >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
   + [Use Adobe Experience Platform data](using/data/lookup-aep-data.md)
   + [Queries](using/data/get-started-queries.md)
+  + Monitoring {#monitoring}
+    + [Monitor inbound data with Edge](using/data/monitoring.md)
+    + [Monitor data ingestion](using/data/monitor-data-ingestion.md)
 + Channel configuration {#configuration}
   + [Channel configuration](/help/rp_landing_pages/configuration-landing-page.md)
   + [Get started with channels configuration](using/configuration/get-started-configuration.md)
