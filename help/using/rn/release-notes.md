@@ -411,6 +411,30 @@ The following capabilities and improvements are coming to content management in 
 
 The following capabilities and improvements are coming to channels in this release.
 
+<table>
+<thead>
+<tr>
+<th><strong>Android push notifications templates improvements</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Android push notifications previously rendered with a single, fixed layout: images were always center-cropped, and long body text was truncated. This release introduces a template picker at authoring time, allowing marketers to control the layout of Android push notifications.</p>
+<p>Following improvements are available:</p>
+<ul>
+<li><b>Layout selection</b>: New Push Notification Layout picker (Standard / Expanded) when authoring an Android push.</li>
+<li><b>Standard layout with "Show entire image"</b>: Choose cropped-to-fill vs. scaled-to-fit.</li>
+<li><b>Expanded layout</b>: Multi-line body text with no truncation, plus optional large-icon thumbnail.</li>
+<li><b>Collapsed body (Expanded layout)</b>: Set a separate, shorter body text for the collapsed state.</li>
+</ul>
+<p>For more information, refer to the <a href="../push/design-push.md">detailed documentation</a>.</p>
+<p>Availability date: September 1, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 * **Increased subdomain delegation limit** - Depending on your license contract, you can now request up to 3000 subdomains (previously capped at 100) by reaching out to your Adobe representative. This capability is available in Limited Availability for a set of customers. [Learn more](../configuration/delegate-subdomain.md#guardrails)
 
   Availability date: September 25, 2026
@@ -454,28 +478,6 @@ The following capabilities and improvements are coming to channels in this relea
 <td>
 <p>Journey Optimizer now expands its real-time mobile personalization capabilities by extending <strong>Live Activity support to Android</strong>. You can deliver real-time progress updates directly to users, such as order tracking, flight statuses, live event updates, and real-time sports scores.</p>
 <p>Beyond supporting iOS Live Activities, Journey Optimizer now manages temporary push tokens for Android Live Updates across its platform configurations. It supports both broadcast and transactional update flows using API-triggered campaigns and headless APIs.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Android push notifications templates improvements</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Android push notifications previously rendered with a single, fixed layout: images were always center-cropped, and long body text was truncated. This release introduces a template picker at authoring time, allowing marketers to control the layout of Android push notifications.</p>
-<p>Following improvements are available:</p>
-<ul>
-<li><b>Layout selection</b>: New Push Notification Layout picker (Standard / Expanded) when authoring an Android push.</li>
-<li><b>Standard layout with "Show entire image"</b>: Choose cropped-to-fill vs. scaled-to-fit.</li>
-<li><b>Expanded layout</b>: Multi-line body text with no truncation, plus optional large-icon thumbnail.</li>
-<li><b>Collapsed body (Expanded layout)</b>: Set a separate, shorter body text for the collapsed state.</li>
-</ul>
 </td>
 </tr>
 </tbody>
