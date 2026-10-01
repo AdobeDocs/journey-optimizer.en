@@ -677,9 +677,13 @@ The following capabilities and improvements are coming to the Email Designer in 
 
 ### Campaigns {#sep-26-campaigns}
 
-+++ Coming soon — **Information below is subject to change.**
+The following improvement is coming to campaigns in this release.
 
-* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface.
+* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface. [Learn more](../campaigns/manage-campaigns.md#folders)
+
+  Availability date: September 30, 2026
+
++++ Coming soon — **Information below is subject to change.**
 
 * **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
 
