@@ -128,6 +128,10 @@ Setting up and using a custom channel follows the main stages below:
 </td>
 </tr></table>
 
+>[!NOTE]
+>
+>Custom channels are not supported when [copying objects between sandboxes](../configuration/copy-objects-to-sandbox.md). Custom channel configurations and the messages that use them cannot be added to a package or copied to another sandbox.
+
 <!--
 ## Next steps {#next-steps}
 
