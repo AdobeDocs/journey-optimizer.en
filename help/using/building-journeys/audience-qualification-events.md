@@ -144,8 +144,6 @@ The payload contains the following context information, which you can use in con
 * the timestamp of qualification
 * the audience id
 
-Audience Qualification reacts to changes in audience membership; it does not create a separate audience export or save an audience from the journey. Stopping a journey ends the profile's participation in that journey. Audience membership is a separate state: a `Realized` audience status means that the profile is currently represented as qualified for that audience; it does not, by itself, prove that the journey is still active or that content is still being delivered. If the audience definition requires correlation across separate events, build that logic in the audience definition before using it with this activity.
-
 When using the expression editor in a condition or action that follows an **[!UICONTROL Audience Qualification]** activity, you have access to the **[!UICONTROL AudienceQualification]** node. You can choose between the **[!UICONTROL Last qualification time]** and the **[!UICONTROL status]** (enter or exit).
 
 See [Conditions](../building-journeys/conditions.md#about_condition).
@@ -156,15 +154,13 @@ A new journey that includes an **Audience Qualification** event becomes operatio
 
 Use the following sequence when diagnosing audience qualification:
 
-1. **Activity activation:** After publication, allow up to 10 minutes for the activity to become operational and begin listening.
 1. **Existing membership:** Profiles already in the audience with `Realized` membership do not generate a new entrance event merely because the journey is published. Only a subsequent qualifying membership change can trigger the activity.
 1. **Mid-journey behavior:** When the activity is not the first node, it begins listening when the profile reaches that node. A profile that qualified before reaching the node does not automatically enter that path unless a new qualification event is received after listening begins.
-1. **Streaming propagation:** For streaming audiences evaluated at the Edge, allow 15 to 30 minutes for membership to propagate from Edge to Hub before the journey can act on it.
 1. **Batch readiness:** Batch audiences, or streaming audiences that depend on batch-ingested data, can become ready approximately two hours after segmentation completes. Use [Read Audience](read-audience.md) for batch-based use cases and see the [batch audience migration guidance](aq-batch-audiences-migration.md).
 1. **Audience Qualification activity timeout:** The timeout countdown starts when the profile reaches the Audience Qualification activity, not when the next audience evaluation occurs. For a batch audience, the qualification signal may arrive only after the daily segmentation job and subsequent propagation complete. If the signal arrives after the activity timeout, the profile follows the timeout path.
 1. **Global journey timeout:** This is a separate limit that begins when the profile enters the journey. If the profile reaches the global timeout, it exits and can no longer progress in that journey version. A qualification signal received after that exit does not resume the timed-out journey instance.
 
-The timing above describes separate states: journey activation, audience membership, profile participation, and data propagation. A delay in one state does not change the others.
+When troubleshooting, check audience membership, journey entry and progression, and data propagation separately.
 
 ## Best practices {#best-practices-segments}
 
@@ -178,7 +174,7 @@ The reception speed of this information is high. Measurements show 10,000 events
 >
 >**Deprecation notice – September 2026**: Starting **September 2026**, Journey Optimizer will block publication for new, draft, or duplicated journeys that use a batch audience in an **Audience Qualification** node or **Exit Criteria**. Existing live journeys are not automatically stopped. Migrate batch use cases to [Read Audience](read-audience.md) and use streaming audiences for real-time qualification or Exit Criteria. [Learn how to migrate your journeys](aq-batch-audiences-migration.md)
 
-For batch audiences, migrate the entry pattern to a [Read Audience](read-audience.md) journey. Read Audience supports scheduled processing and the **[!UICONTROL Trigger after batch audience evaluation]** option, which waits for fresh segmentation results instead of using Audience Qualification as a batch trigger.
+For batch audiences, migrate the entry pattern to a [Read Audience](read-audience.md) journey. Read Audience supports scheduled processing. For journeys configured with daily recurrence, the **[!UICONTROL Trigger after batch audience evaluation]** option waits for fresh segmentation results instead of using Audience Qualification as a batch trigger.
 
 When using Audience Qualification for a batch audience, note that a peak of entrance occurs at the time of the daily calculation. The size of the peak depends on how many individuals enter or exit the audience each day.
 
@@ -195,10 +191,6 @@ When using Audience Qualification for streamed audiences, there is less risk of 
 Avoid using open and send events with streaming segmentation. Instead, use real user-activity signals like clicks, purchases, or beacon data. For frequency or suppression logic, use business rules instead of send events. [Learn more](../audience/about-audiences.md)
 
 See the [[!DNL Adobe Experience Platform] streaming segmentation documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
-
->[!NOTE]
->
->When a profile qualifies for a streaming segment at the Edge, that membership is projected from Edge to Hub before the journey can act on it. This Edge-to-Hub propagation typically takes **15 to 30 minutes**. If profiles are not entering an Audience Qualification journey as expected, allow for this propagation window (by adding a wait activity if appropriate) before investigating further. For use cases requiring true real-time entry, consider a unitary event trigger instead.
 
 #### Why not all qualified profiles may enter the journey {#streaming-entry-caveats}
 
@@ -222,7 +214,7 @@ When using streaming audiences with the **Audience Qualification** activity, not
 
 * If profiles are not entering as expected, refer to the [troubleshooting guide](troubleshooting-execution.md#checking-if-people-enter-the-journey) for additional diagnostic steps.
 
-When a streaming audience does not populate the journey as expected, verify that the audience uses a supported evaluation method, that the selected identity namespace is present on the profile, and that the profile shows the expected `Realized` membership. Allow up to 10 minutes for the journey activity to become operational and 15 to 30 minutes for membership to propagate from Edge to Hub before escalating the issue.
+If profiles are not entering the journey as expected, verify that the audience uses a supported evaluation method and that the selected identity namespace is present on the profile. Check audience membership and journey execution details to identify where qualification or entry is failing.
 
 ### Frequently asked questions {#faq}
 

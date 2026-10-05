@@ -239,7 +239,7 @@ By default, journeys are configured to run once. To define a specific date/time 
 
     >[!NOTE]
     >
-    >The journey schedule and batch audience evaluation schedule are separate. Changing the journey's start time does not change when the audience itself is evaluated. To change when a batch audience is evaluated, update the evaluation schedule in the Adobe Experience Platform audience settings, then use the latest completed snapshot in the journey. For UTC and daylight-saving behavior, see the [operational scheduling note](../audience/creating-a-segment-definition.md#batch-evaluation-and-audience-freshness).
+    >The journey schedule and batch audience evaluation schedule are separate. Changing the journey's start time does not change when the audience is evaluated. Review the batch evaluation schedule separately before coordinating it with a production journey. See [Batch evaluation and audience freshness](../audience/creating-a-segment-definition.md#batch-evaluation-and-audience-freshness).
 
 For recurring journeys, specific options are available to help you manage the entry of profiles into the journey. Expand the sections below for more information on each option.
 
@@ -249,7 +249,7 @@ For recurring journeys, specific options are available to help you manage the en
 >
 >Each Read Audience execution uses the audience membership available at the time that execution runs. For batch audiences, [!DNL Journey Optimizer] reads from the latest available batch audience snapshot. It does not recalculate the audience in real time when the journey starts.
 >
->For recurring journeys, each occurrence uses the snapshot available for that occurrence. On supported recurring **Read Audience** journeys, if a batch evaluation is already in progress, the journey waits for it to finish when **[!UICONTROL Trigger after batch audience evaluation]** is enabled. If the latest snapshot is unchanged from the previous run, the same option waits for a fresh evaluation instead of starting with stale membership. This control is not a general control for Action campaigns. The journey does not expose a separate audience-evaluation queue; monitor the audience evaluation status in Adobe Experience Platform and the journey activity logs.
+>For recurring journeys, each occurrence uses the snapshot available for that occurrence. For **Read Audience** journeys configured with **daily recurrence**, enable **[!UICONTROL Trigger after batch audience evaluation]** to wait for fresh audience data within the configured time window before the journey runs. This option is available only for daily recurrence. It does not control audience evaluation for Action campaigns. Monitor the audience evaluation status in Adobe Experience Platform and the journey activity logs.
 
 ![Read audience recurring options: Incremental read, Force reentrance, Trigger after batch](assets/read-audience-options.png)
 
