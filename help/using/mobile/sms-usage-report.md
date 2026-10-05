@@ -50,10 +50,11 @@ Usage reports require an API credential with **[!UICONTROL SMS vendor]** set to 
 
     * **[!UICONTROL Name]**: enter a name for your API credential.
 
-    * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]**, and **[!UICONTROL API Token]**: use the steps below to retrieve the values from your Sinch project.
-
-        * For **[!UICONTROL Project ID]** and **[!UICONTROL App ID]**, open the [Conversation API Overview](https://dashboard.sinch.com/convapi/overview) page for your Sinch project in the Sinch Dashboard.
-        * For **[!UICONTROL API Token]**, obtain the [access keys](https://community.sinch.com/t5/Customer-Dashboard/Sinch-Access-Keys/ta-p/12638) for your Sinch project and use them to generate a **Base64 API token**.
+    * **[!UICONTROL Project ID]**: enter the ID of your Sinch project.
+    
+    * **[!UICONTROL App ID]**: enter the ID of the application associated with your Sinch project.
+    
+    * **[!UICONTROL API Token]**: enter the API token used to authenticate requests to Sinch.
 
     ![](assets/sms-report-api-2.png)
 
