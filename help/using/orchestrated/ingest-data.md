@@ -84,7 +84,7 @@ For datasets enabled with **[!UICONTROL Change data capture]**, all data changes
 
 Since Adobe Journey Optimizer Campaigns require all onboarded datasets to be enabled with **[!UICONTROL Change data capture]**, it is the customer's responsibility to manage deletions at the source. Any record deleted from the source system will automatically be removed from the corresponding dataset in Adobe Experience Platform.
 
-To delete records via file-based ingestion, the customer's data file should mark the record using a `D` value in the `Change Request Type` field. This indicates that the record should be deleted in Adobe Experience Platform, mirroring the source system.
+To delete records via file-based ingestion, the customer's data file should mark the record using a `d` value in the `Change Request Type` field. This indicates that the record should be deleted in Adobe Experience Platform, mirroring the source system.
 
 If customer wants to delete records only from Adobe Experience Platform without affecting the original source data, the following options are available:
 
@@ -122,7 +122,7 @@ This example demonstrates how to configure a data flow that ingests structured d
 
     >[!IMPORTANT]
     >
-    > For **file-based sources only**, each row in the data file must include a `_change_request_type` column with values `U` (upsert) or `D` (delete). Without this column, the system will not recognize the data as supporting change tracking, and the Orchestrated campaign toggle will not appear, preventing the dataset from being selected for targeting.
+    > For **file-based sources only**, each row in the data file must include a `_change_request_type` column with values `u` (upsert) or `d` (delete). Without this column, the system will not recognize the data as supporting change tracking, and the Orchestrated campaign toggle will not appear, preventing the dataset from being selected for targeting.
 
     ![](assets/S3_config_6.png)
 
@@ -147,5 +147,4 @@ This example demonstrates how to configure a data flow that ingests structured d
 1. From the **[!UICONTROL Connections]** menu, select **[!UICONTROL Sources]** and access the **[!UICONTROL Data Flows]** tab to track flow execution, review ingested records, and troubleshoot any errors.
 
     ![](assets/S3_config_5.png)
-
 

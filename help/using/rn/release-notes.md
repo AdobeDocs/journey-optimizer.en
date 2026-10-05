@@ -79,7 +79,26 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
 ### Content management {#sep-26-content-management}
 
-The following capability is coming to content management in this release.
+The following capabilities and improvements are coming to content management in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>URL validation in Simulate content (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>When you preview your content, Journey Optimizer now automatically checks the web links it contains and flags broken, insecure, or unreachable URLs before you send.</p>
+<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p><img src="assets/do-not-localize/url-validation.gif"></p>
+<p>For more information, refer to the <a href="../content-management/url-validation.md">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -129,6 +148,10 @@ The following capability is coming to content management in this release.
 </tbody>
 </table>
 
+* **Agentic Translation provider** - Journey Optimizer's Multilingual feature now supports Azure OpenAI and Gemini (Vertex AI) as translation providers, along with locale-specific guidelines in PDF and JSON formats. [Learn more](../content-management/multilingual-provider.md#add-an-agentic-provider)
+
+  Availability date: September 29, 2026
+
 * **Mandatory consent checkbox for landing pages** - You can now make a checkbox mandatory in the landing page form component, requiring visitors to select it (for example, to give consent) before they can submit the form. [Learn more](../landing-pages/lp-content.md#use-form-component)
 
   Availability date: September 4, 2026 
@@ -136,12 +159,6 @@ The following capability is coming to content management in this release.
 * **Additional reserved keywords in personalization syntax** - The list of reserved keywords in Profile Query Language (PQL) has been expanded to include general keywords, time units, and boolean/logical operators. If your XDM schema contains a field name that matches one of these keywords, wrap it in backticks to reference it in a personalization expression. [Learn more](../personalization/personalization-syntax.md#reserved-keywords)
 
   Availability date: September 1, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **URL validation in Simulate content** - When you preview your content, Journey Optimizer now automatically checks the web links it contains and flags broken, insecure, or unreachable URLs before you send. This capability is available in Limited Availability for a set of customers.
-
-+++
 
 ### Loyalty {#sep-26-loyalty}
 
@@ -162,16 +179,6 @@ The following capability is coming to content management in this release.
 </tbody>
 </table>
 
-* **"Forever" Loyalty challenges** - Loyalty challenges can now run indefinitely. Set **Challenge end** to **No end date** when configuring the schedule, and the challenge never expires. [Learn more](../loyalty-challenges/create-challenges.md#schedule)
-
-  Availability date: September 1, 2026
-
-* **Loyalty available for Healthcare Shield and Privacy and Security Shield customers** - Journey Optimizer Loyalty is now available to Healthcare Shield and Privacy and Security Shield customers. [Learn more](../loyalty-challenges/get-started.md)
-
-  Availability date: September 15, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
 <table>
 <thead>
 <tr>
@@ -182,10 +189,22 @@ The following capability is coming to content management in this release.
 <tr>
 <td>
 <p>The Loyalty Performance menu now includes **Opportunities** and **Trend** tabs, which surface AI-detected trends and gaps such as tier progression friction or challenge task drop-off, each with a projected impact and a one-click "Create with AI" action to generate a challenge that addresses it.</p><p>In addition, marketers can request **challenge opportunities** directly in Coworker's conversational interface, getting grounded challenge ideas based on real loyalty program trends and turning them into live challenges without leaving the chat.</p>
+<p>For more information, refer to the <a href="../loyalty-challenges/loyalty-performance.md#opportunities-view">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
+
+* **"Forever" Loyalty challenges** - Loyalty challenges can now run indefinitely. Set **Challenge end** to **No end date** when configuring the schedule, and the challenge never expires. [Learn more](../loyalty-challenges/create-challenges.md#schedule)
+
+  Availability date: September 1, 2026
+
+* **Loyalty available for Healthcare Shield and Privacy and Security Shield customers** - Journey Optimizer Loyalty is now available to Healthcare Shield and Privacy and Security Shield customers. [Learn more](../loyalty-challenges/get-started.md)
+
+  Availability date: September 15, 2026
+
++++ Coming soon — **Information below is subject to change.**
 
 * **Per-member Loyalty challenge completion deadlines** - Loyalty challenges now support per-member completion deadlines: choose "Within a number of days after opt-in" under Completion requirements so each member's deadline is calculated from their own opt-in date rather than a fixed program-wide end date. If both a challenge end date and this opt-in window are set, each member's deadline is whichever comes first. <!-- Documentation link: TBD -->
 
@@ -329,6 +348,10 @@ The following capability is coming to content management in this release.
 
   Availability date: September 1, 2026
 
+* **Dry run step-event suppression for custom reports** - As part of step-event optimization, Journey Optimizer now stops generating certain non-reportable step events during Journey Dry Runs. This only affects custom reports built on these dry-run step-event types. If you're impacted, re-trigger the dry run to regenerate data.
+
+* **Automatic event recovery timeout in Journey Properties** - Journey Properties now includes a **Set event recovery timeout** setting: by default, impacted journey events are automatically replayed for up to 72 hours after a service interruption with no action needed. You can turn this setting on to control the replay window (0–72 hours) for time-sensitive journeys. The existing **Timeout or error** field has also been renamed to **Custom Action / Data source timeout** to avoid confusion between the two settings. [Learn more](../building-journeys/journey-properties.md#event-recovery-timeout)
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -380,10 +403,6 @@ The following capability is coming to content management in this release.
 
 * **Hygiene Analysis skill** - CX Coworker can now scan your active and draft journeys for broken configurations, silent failures, and decaying or unused assets — such as stale draft journeys, orphaned data sources, and persistent custom action errors — and surface recommended fixes directly in chat. <!-- Documentation link: TBD -->
 
-* **Dry run step-event suppression for custom reports** - As part of step-event optimization, Journey Optimizer now stops generating certain non-reportable step events during Journey Dry Runs. This only affects custom reports built on these dry-run step-event types. If you're impacted, re-trigger the dry run to regenerate data.
-
-* **Automatic event recovery timeout in Journey Properties** - Journey Properties now includes a **Set event recovery timeout** setting: by default, impacted journey events are automatically replayed for up to 72 hours after a service interruption with no action needed. You can turn this setting on to control the replay window (0–72 hours) for time-sensitive journeys. The existing **Timeout or error** field has also been renamed to **Custom Action / Data source timeout** to avoid confusion between the two settings. 
-
 * **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
 
 +++
@@ -391,6 +410,30 @@ The following capability is coming to content management in this release.
 ### Channels {#sep-26-channels}
 
 The following capabilities and improvements are coming to channels in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Android push notifications templates improvements</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Android push notifications previously rendered with a single, fixed layout: images were always center-cropped, and long body text was truncated. This release introduces a template picker at authoring time, allowing marketers to control the layout of Android push notifications.</p>
+<p>Following improvements are available:</p>
+<ul>
+<li><b>Layout selection</b>: New Push Notification Layout picker (Standard / Expanded) when authoring an Android push.</li>
+<li><b>Standard layout with "Show entire image"</b>: Choose cropped-to-fill vs. scaled-to-fit.</li>
+<li><b>Expanded layout</b>: Multi-line body text with no truncation, plus optional large-icon thumbnail.</li>
+<li><b>Collapsed body (Expanded layout)</b>: Set a separate, shorter body text for the collapsed state.</li>
+</ul>
+<p>For more information, refer to the <a href="../push/design-push.md">detailed documentation</a>.</p>
+<p>Availability date: September 1, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 * **Increased subdomain delegation limit** - Depending on your license contract, you can now request up to 3000 subdomains (previously capped at 100) by reaching out to your Adobe representative. This capability is available in Limited Availability for a set of customers. [Learn more](../configuration/delegate-subdomain.md#guardrails)
 
@@ -443,28 +486,6 @@ The following capabilities and improvements are coming to channels in this relea
 <table>
 <thead>
 <tr>
-<th><strong>Android push notifications templates improvements</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Android push notifications previously rendered with a single, fixed layout: images were always center-cropped, and long body text was truncated. This release introduces a template picker at authoring time, allowing marketers to control the layout of Android push notifications.</p>
-<p>Following improvements are available:</p>
-<ul>
-<li><b>Layout selection</b>: New Push Notification Layout picker (Standard / Expanded) when authoring an Android push.</li>
-<li><b>Standard layout with "Show entire image"</b>: Choose cropped-to-fill vs. scaled-to-fit.</li>
-<li><b>Expanded layout</b>: Multi-line body text with no truncation, plus optional large-icon thumbnail.</li>
-<li><b>Collapsed body (Expanded layout)</b>: Set a separate, shorter body text for the collapsed state.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Override email channel configuration settings</strong><br/></th>
 </tr>
 </thead>
@@ -491,6 +512,25 @@ The following capabilities and improvements are coming to channels in this relea
 ### Email Designer {#sep-26-email-designer}
 
 The following capabilities and improvements are coming to the Email Designer in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>New Dynamic Media Template component in the Email Designer (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Email Designer now includes a dedicated <strong>Dynamic Media Template</strong> component for inserting Dynamic Media Templates from Adobe Experience Manager into your email content. In addition to browsing existing templates, you can now import a Photoshop (PSD) file directly — drag and drop it into the component, or select it from your computer, then choose a destination to store it.</p>
+<p>Once your file is imported, select <strong>Edit in Dynamic Media Template Editor</strong> to open the Dynamic Media Template Editor directly within Journey Optimizer, where you can enable the parameters you want to expose, without leaving the Email Designer. The enabled parameters then become available in the component's <strong>Settings</strong> tab.</p>
+<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p>For more information, refer to the <a href="../integrations/aem-dynamic.md#image-component">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -547,26 +587,6 @@ The following capabilities and improvements are coming to the Email Designer in 
 </tbody>
 </table>
 
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>New Dynamic Media Template component in the Email Designer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The Email Designer now includes a dedicated <strong>Dynamic Media Template</strong> component for inserting Dynamic Media Templates from Adobe Experience Manager into your email content. In addition to browsing existing templates, you can now import a Photoshop (PSD) file directly — drag and drop it into the component, or select it from your computer, then choose a destination to store it.</p>
-<p>Once your file is imported, select <strong>Edit in Dynamic Media Template Editor</strong> to open the Dynamic Media Template Editor directly within Journey Optimizer, where you can enable the parameters you want to expose, without leaving the Email Designer. The enabled parameters then become available in the component's <strong>Settings</strong> tab.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-+++
-
 ### Orchestrated campaigns {#sep-26-orchestrated-campaigns}
 
 <table>
@@ -598,6 +618,23 @@ The following capabilities and improvements are coming to the Email Designer in 
 <p>Orchestrated campaigns now support <strong>automated alerting</strong> through the same alerting framework used across journeys and campaigns. Alerts are triggered when a campaign execution fails, times out, and each alert includes what happened, when, where, and a direct link to the Canvas to check further details in the logs.</p>
 <p>For more information, refer to the <a href="../orchestrated/start-monitor-campaigns.md#alerting">detailed documentation</a>.</p>
 <p>Availability date: September 22, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Alert activity in orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now create your own alerts directly on the orchestrated campaign canvas with the new <strong>Alert</strong> activity. Configure a static, plain-text title and message to notify subscribers when execution reaches the activity. Combine it with a Test activity to trigger alerts based on conditions, such as a query returning fewer profiles than expected.</p>
+<p>For more information, refer to the <a href="../orchestrated/activities/alert.md">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -708,6 +745,12 @@ The following capabilities and improvements are coming to decisioning in this re
 
   Availability date: September 22, 2026
 
++++ Coming soon — **Information below is subject to change.**
+
+* **Build a ranking formula with AI** - A new AI assistant in the ranking formula builder lets you describe the ranking logic you want in plain language and generates a formula draft for you to review and apply.
+
++++
+
 ### Onboarding {#sep-26-onboarding}
 
 The following improvement is coming to onboarding in this release.
@@ -785,8 +828,24 @@ The following capability is coming to reporting in this release.
 
 The following capabilities are coming to integrations in this release.
 
-+++ Coming soon — **Information below is subject to change.**
+<table>
+<thead>
+<tr>
+<th><strong>Browsing integrations</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new Browsing integration configuration type is now available in Adobe Journey Optimizer. This setup lets your define a selector experience, using tables, lists, or cards, so marketers can browse, search, and select items from external APIs directly in Journey Optimizer authoring workflows.</p>
+<p>For more information, refer to the <a href="../integrations/integrations-browsing.md">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
++++ Coming soon — **Information below is subject to change.**
 
 * **Dynamic token substitution for Experience Manager fragments** - Experience Manager Content Fragment references now support a **tokenSubstitution** attribute. When set to `false`, personalization inside the fragment's fields resolves directly, without a token map in the reference. It defaults to `true`, which keeps the existing behavior.
 

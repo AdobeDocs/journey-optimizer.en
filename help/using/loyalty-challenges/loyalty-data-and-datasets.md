@@ -62,7 +62,7 @@ Ensure event payloads use the same identity namespace as your Loyalty Challenges
 
 ### Audiences and reporting {#audiences-reporting}
 
-Marketers select Platform [audiences](../audience/about-audiences.md) when configuring challenge eligibility. Loyalty reporting dashboards use Adobe Customer Journey Analytics. [Learn how to monitor loyalty challenge performance](loyalty-reporting.md)
+Marketers select Platform [audiences](../audience/about-audiences.md) when configuring challenge eligibility. Loyalty performance dashboards use Adobe Customer Journey Analytics. [Explore Loyalty performance](loyalty-performance.md)
 
 ## Dataset time-to-live (TTL) {#dataset-ttl}
 

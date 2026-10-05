@@ -23,6 +23,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
+* The **Create a direct mail message** page now clarifies extraction-file generation in the **Journey** and **Campaign** tabs: journey files follow the routing frequency and can result in multiple files per day, while campaign files are generated when each campaign execution starts. The page also explains how to ensure one file per day for journeys. [Read more](../direct-mail/create-direct-mail.md#create-dm-campaign)
+
 * Guidance for custom-upload audiences now clarifies activation timing and adds troubleshooting for unavailable enrichment attributes in journeys. [Read more](../audience/enrichment-attributes.md#faq-enrichment)
 
 * Quiet Hours guidance now clarifies how weekly periods that cross midnight are applied. [Read more](../conflict-prioritization/quiet-hours.md)
@@ -99,7 +101,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Destinations** description under **Left navigation > Main sections** has been updated to note that organizations with [!DNL Real-Time CDP] or [!DNL Adobe Journey Optimizer] can also activate audiences to eligible personalization destinations, such as [!DNL Adobe Target], from the Experience Platform destinations catalog. [Read more](../start/user-interface.md#main-sections)
 
-* How-to videos have been added to the Loyalty Challenges documentation for creating challenges, setting up reward providers, and monitoring challenge performance. [Watch the challenge videos](../loyalty-challenges/create-challenges.md#video), [watch the reward provider video](../loyalty-challenges/reward-definition-guide.md#video), and [watch the reporting video](../loyalty-challenges/loyalty-reporting.md#video).
+* How-to videos have been added to the Loyalty Challenges documentation for creating challenges, setting up reward providers, and monitoring challenge performance. [Watch the challenge videos](../loyalty-challenges/create-challenges.md#video), [watch the reward provider video](../loyalty-challenges/reward-definition-guide.md#video), and [watch the Explore loyalty performance video](../loyalty-challenges/loyalty-performance.md#video).
 
 ## July 2026 {#july-2026} 
 

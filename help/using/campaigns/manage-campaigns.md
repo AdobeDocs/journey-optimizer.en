@@ -150,7 +150,6 @@ Each campaign moves through a lifecycle that is reflected by its status in the i
 | **[!UICONTROL Completed]** | ✅ | ✅ | ✅ | Execution complete (auto-assigned 3 days after activation or at end date for recurring) | [View reports](../reports/campaign-global-report-cja.md), [archive](#archive-a-campaign), or [duplicate](#duplicate-a-campaign) |
 | **[!UICONTROL Failed]** | ✅ | ✅ | — | Execution failed | Check logs, fix issues, [duplicate to retry](#duplicate-a-campaign) |
 | **[!UICONTROL Archived]** | ✅ | ✅ | ✅ | Archived (auto-deleted after 30 days) | [Retrieve using filter](#access) if needed |
-| **[!UICONTROL Closed]** | — | — | ✅ | Recurring campaign closed, no new entries allowed (continues until all activities complete) | Wait for completion |
 | **[!UICONTROL Publishing]** | — | — | ✅ | Being published | Wait for publishing to complete |
 
 >[!NOTE]
@@ -235,6 +234,10 @@ To modify and create a new version of a recurring Action campaign, follow these 
 1. A new version of the campaign is created. You can check the live version by clicking **[!UICONTROL Open live version]**.
 
     ![](assets/create-campaign-draft.png)
+
+    The draft version has its own version ID. The current live version remains available while you work on the draft; activating the draft replaces the live version.
+
+    For campaigns with a decision policy that includes a content experiment, a campaign version can contain a cloned decision policy and a separate experiment. Treatment assignments, including test and control group membership, may be re-segmented between versions, so do not assume assignments or results are continuous across versions. Account for the version boundary when interpreting experiment results.
 
     In the campaigns list, activated campaigns with a draft version in progress display with a specific icon in the **[!UICONTROL Status]** column. Click this icon to open the draft version of the campaign.
 

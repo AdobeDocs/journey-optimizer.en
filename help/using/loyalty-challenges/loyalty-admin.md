@@ -65,7 +65,7 @@ Open the **[!UICONTROL Global settings]** tab to configure global settings for L
 
    When you select a KPI, insights related to that metric receive a scoring boost, which causes them to rise to the top of the feed. This means the most relevant insights for your selected KPI appear first. No insights are hidden: your complete insight feed continues to display, ranked by significance with your selected KPI prioritized above other metrics. This setting only affects how insights are ranked in the feed and does not modify how your loyalty program operates or how challenges are evaluated. You can change your KPI selection at any time, and the insight feed re-prioritizes on the next refresh cycle to reflect your new priority.
 
-   For more information about loyalty insights and performance monitoring, see [Monitor loyalty challenge performance](loyalty-reporting.md).
+   For more information about loyalty insights and performance monitoring, see [Explore loyalty performance](loyalty-performance.md).
 
 ## Reward providers {#reward-providers}
 

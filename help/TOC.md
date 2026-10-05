@@ -150,7 +150,7 @@ nudge: yes
     + [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
     + [Create challenges](using/loyalty-challenges/create-challenges.md)
     + [Create tasks](using/loyalty-challenges/create-tasks.md)
-    + [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
+    + [Explore loyalty performance](using/loyalty-challenges/loyalty-performance.md)
   + Configure and integrate {#configure-integrate-loyalty}
     + [Configure loyalty challenges](using/loyalty-challenges/loyalty-admin.md)
     + [Reward Definition guide](using/loyalty-challenges/reward-definition-guide.md)
@@ -215,6 +215,7 @@ nudge: yes
     + Orchestrated campaigns activities {#design-campaigns}
       + [Orchestrated campaigns activities](/help/rp_landing_pages/design-campaigns-landing-page.md)
       + [Get started with activities](using/orchestrated/activities/about-activities.md)
+      + [Alert](using/orchestrated/activities/alert.md)
       + [And-join](using/orchestrated/activities/and-join.md)
       + [Build audience](using/orchestrated/activities/build-audience.md)
       + [Change dimension](using/orchestrated/activities/change-dimension.md)
@@ -269,6 +270,7 @@ nudge: yes
     + [Simulate content variations (classic experience)](using/test-approve/simulate-sample-input.md)
     + [Simulate content variations (new experience)](using/test-approve/simulate-content-variations.md)
     + [Email Spam report](using/content-management/spam-report.md)
+    + [Validate URLs in your content](using/content-management/url-validation.md)
   + Approve journeys & campaigns {#approve}
     + [Approve journeys & campaigns](/help/rp_landing_pages/approve-landing-page.md)
     + [Get started with approvals](using/test-approve/gs-approval.md)
@@ -562,7 +564,9 @@ nudge: yes
     + [Integrate with Intelligent Services](using/integrations/intelligent-services.md)
     + Integrations {#integrations}
       + [Work with Integrations](using/integrations/integrations.md)
-      + [Using External integrations for personalization](using/integrations/integrations-personalization.md)
+      + [Create Standard integrations](using/integrations/integrations-create.md)
+      + [Create Browsing integrations](using/integrations/integrations-browsing.md)
+      + [Use External integrations for personalization](using/integrations/integrations-personalization.md)
       + [FAQ](using/integrations/vendor-integration-faq.md)
       + Sample Vendors {#vendors}
         + [Get started with Vendors integration](using/integrations/vendor-integration-gs.md)
