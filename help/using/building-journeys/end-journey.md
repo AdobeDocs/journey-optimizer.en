@@ -126,6 +126,8 @@ The definition of "finished" varies depending on the journey type:
 
 Closing a journey manually ensures that customers who already entered the journey can finish their path but new users are not able to enter the journey. When a journey is closed (for any of the reasons above), it will have the status **[!UICONTROL Closed]**. The journey stops letting new individuals enter the journey. Profiles already in the journey can finish the journey normally. After the default global timeout of 91 days, the journey will switch to the **Finished** status. 
 
+For journeys that start with Audience Qualification, [learn how closing a journey affects the sandbox Audience Qualification limit](../start/guardrails.md#audience-qualif-g).
+
 You can stop a journey from the **Live** or **Paused** state. When the journey is **Paused**, you do not need to resume it to **Live** first. [Learn more about stopping a paused journey](journey-pause.md#stop-close-paused).
 
 To close a journey from the list of journeys, click the **[!UICONTROL Ellipsis]** button that is located to the right of the journey name and select **[!UICONTROL Close to new entrances]**.

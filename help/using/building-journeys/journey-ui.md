@@ -113,7 +113,7 @@ Open the journeys folder view with the **[!UICONTROL Show folders]** icon on the
 
 >[!AVAILABILITY]
 >
->Folders for journeys are in limited availability. For current release status, see the [Journey Optimizer release cycle](../rn/releases.md).
+>Folders for journeys and campaigns are in limited availability. For current release status, see the [Journey Optimizer release cycle](../rn/releases.md).
 
 ## Filter your journeys {#journey-filter}
 

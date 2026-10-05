@@ -61,7 +61,7 @@ Learn how to access, organize, and manage your campaigns in Adobe Journey Optimi
 **Jump directly to what you need:**
 
 * **Create a new campaign** - [Choose your campaign type](get-started-with-campaigns.md#campaign-types) | [Create Action campaign](create-campaign.md) | [Create API-triggered campaign](api-triggered-campaigns.md) | [Create Orchestrated campaign](../orchestrated/gs-orchestrated-campaigns.md)
-* **Find existing campaigns** - [Search and filter](#access)
+* **Find existing campaigns** - [Search and filter](#access) | [Organize with folders](#folders)
 * **View campaign performance** - [Campaign reports](../reports/campaign-global-report-cja.md)
 * **Schedule campaigns** - [Use the calendar](#calendar)
 * **Manage conflicts** - [Conflict management guide](../conflict-prioritization/gs-conflict-prioritization.md)
@@ -70,7 +70,7 @@ Learn how to access, organize, and manage your campaigns in Adobe Journey Optimi
 
 ## Access and browse campaigns {#access}
 
-Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns by type: **Action** campaigns, **API-triggered** campaigns, and **Orchestrated** campaigns. Learn more about the [types of campaigns](get-started-with-campaigns.md#campaign-types). Available types depend on your license agreement and your permissions.
+Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns by type: **Action** campaigns, **API-triggered** campaigns, **Orchestrated** campaigns, and **Folders**. Learn more about the [types of campaigns](get-started-with-campaigns.md#campaign-types). Available types depend on your license agreement and your permissions.
 
 >[!BEGINTABS]
 
@@ -104,7 +104,15 @@ Each Orchestrated campaign in the list displays information such as the campaign
 
 In addition, a search bar and filters are available to facilitate easy searching within the list. For example, you can filter campaigns to display only those associated to a given channel or tag, or those created during a specific date range.
 
-You can also sort the list by clicking most column headers. In the folders view, sorting and filtering by **[!UICONTROL Priority]** and **[!UICONTROL Channel configuration]** columns is also supported.
+### Organize campaigns with folders {#folders}
+
+In the Campaigns inventory, click the **[!UICONTROL Show folders]** icon to open the folder view and organize your campaigns. [Learn how to work with folders](../start/search-filter-categorize.md#organize-folders) in *Search, filter, organize*.
+
+![](assets/folders-view-campaigns.png)
+
+>[!AVAILABILITY]
+>
+>Folders for journeys and campaigns are in limited availability. For current release status, see the [Journey Optimizer release cycle](../rn/releases.md).
 
 ## Campaign operations {#operations}
 
@@ -150,7 +158,6 @@ Each campaign moves through a lifecycle that is reflected by its status in the i
 | **[!UICONTROL Completed]** | ✅ | ✅ | ✅ | Execution complete (auto-assigned 3 days after activation or at end date for recurring) | [View reports](../reports/campaign-global-report-cja.md), [archive](#archive-a-campaign), or [duplicate](#duplicate-a-campaign) |
 | **[!UICONTROL Failed]** | ✅ | ✅ | — | Execution failed | Check logs, fix issues, [duplicate to retry](#duplicate-a-campaign) |
 | **[!UICONTROL Archived]** | ✅ | ✅ | ✅ | Archived (auto-deleted after 30 days) | [Retrieve using filter](#access) if needed |
-| **[!UICONTROL Closed]** | — | — | ✅ | Recurring campaign closed, no new entries allowed (continues until all activities complete) | Wait for completion |
 | **[!UICONTROL Publishing]** | — | — | ✅ | Being published | Wait for publishing to complete |
 
 >[!NOTE]
@@ -235,6 +242,10 @@ To modify and create a new version of a recurring Action campaign, follow these 
 1. A new version of the campaign is created. You can check the live version by clicking **[!UICONTROL Open live version]**.
 
     ![](assets/create-campaign-draft.png)
+
+    The draft version has its own version ID. The current live version remains available while you work on the draft; activating the draft replaces the live version.
+
+    For campaigns with a decision policy that includes a content experiment, a campaign version can contain a cloned decision policy and a separate experiment. Treatment assignments, including test and control group membership, may be re-segmented between versions, so do not assume assignments or results are continuous across versions. Account for the version boundary when interpreting experiment results.
 
     In the campaigns list, activated campaigns with a draft version in progress display with a specific icon in the **[!UICONTROL Status]** column. Click this icon to open the draft version of the campaign.
 

@@ -76,7 +76,7 @@ Follow these steps to configure the reaction events:
 * You cannot use a **[!UICONTROL Reaction]** activity if there is no channel action activity before it.
 * Placing a **[!UICONTROL Wait]** activity or any other activity between the channel action and the **[!UICONTROL Reaction]** activity is not supported and may result in the Reaction not working as expected.
 * Reaction events can only track messages sent within the same journey. They cannot track messages that take place in a different journey.
-* Reaction events track clicks on links of the type "tracked". Unsubscription and mirror page links are not taken into account.
+* Reaction events track clicks on links of the type "tracked". Clicks on unsubscription links are also taken into account and trigger an **[!UICONTROL Email Click]** reaction event. Mirror page links are not taken into account.
 * Email opens are tracked using a 0-pixel image included in the email. If email clients (such as Gmail) block images, email opens will not be taken into account.
 
 {{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-reaction-events.md}}
