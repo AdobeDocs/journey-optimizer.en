@@ -82,6 +82,8 @@ Journey Optimizer allows the export of journeys, campaigns (Action, API-triggere
 
 * Landing pages are not currently supported for migration between sandboxes. When you copy a journey to another sandbox, any references to landing pages in your journey or email content will still point to the original (source) sandbox landing page IDs. After the migration, you must manually update all landing page references in your journey and email content to use the correct landing page IDs from the target (destination) sandbox. See [Create and publish landing pages](../landing-pages/create-lp.md).
 
+* [Custom channels](../custom-channel/get-started-custom-channel.md) are not supported when copying objects between sandboxes. Custom channel configurations and the messages that use them cannot be added to a package or copied to another sandbox. You must recreate them manually in the target sandbox.
+
 +++ Journeys
 
 * **Copied dependencies** - When exporting a journey, in addition to the journey itself, Journey Optimizer also copies most of the objects the journey depends on: audiences, custom actions, schemas, events and actions. For more details on copied objects, refer to the Adobe Experience Platform [Sandbox tooling guide](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects){target="_blank"}.
