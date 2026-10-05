@@ -52,6 +52,7 @@ For example, you can specify that you only want a 'Women's Winter Clothing Offer
 Here is a list of limitations to be aware of when working with decision rules:
 
 * Edge decisioning uses the edge profile which does not store events, so any rule used in an edge decision will be invalid.
+* Batch decisioning runs off of the daily profile snapshot, which does not include experience events. Rules based on experience events (xEvent) are not supported in batch decisioning and will always evaluate to false. [Learn more about batch decisioning](../batch-delivery.md)
 * When creating a decision rule, looking back into a previous period of time is not supported. For instance, if you specify an experience event that occurred within the last month as a component of the rule. Any attempt to include a lookback period during rule creation will trigger an error when saving it.
 <!--* Decision requests that use the hub profile will look at the last 100 experience events on the profile to evaluate rules that reference historical experience events.-->
 
