@@ -147,7 +147,7 @@ When you publish a new version of a journey, the previous version automatically 
 
 **Why cannot I publish my journey?**
 
-The most common reason is that the journey contains validation errors — you cannot publish a journey with errors. Other blockers include exceeding the [payload size limit](../start/guardrails.md#journey-payload-size), missing the **[!DNL Publish journeys]** permission, or a pending [approval](../test-approve/gs-approval.md). See [Before you publish](#before-you-publish) and [troubleshoot activity errors](../building-journeys/troubleshooting.md#activity-errors).
+The most common reason is that the journey contains validation errors — you cannot publish a journey with errors. Other blockers include exceeding the [payload size limit](../start/guardrails.md#journey-payload-size) or the [sandbox Audience Qualification limit](../start/guardrails.md#audience-qualif-g), missing the **[!DNL Publish journeys]** permission, or a pending [approval](../test-approve/gs-approval.md). See [Before you publish](#before-you-publish) and [troubleshoot activity errors](../building-journeys/troubleshooting.md#activity-errors).
 
 **Can I edit a journey after it is published?**
 

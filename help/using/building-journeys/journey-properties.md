@@ -462,6 +462,8 @@ The following guardrails and limitations apply to the [Journey Exit Criteria](#e
 * Exit criteria are defined in draft state only
 * Journey namespace coherence between events and event-based exit criteria
 
+For audience-based exit criteria, [learn how the sandbox Audience Qualification limit applies](../start/guardrails.md#audience-qualif-g).
+
 The following guardrails apply when using the [Profile Attribute–Based Exit Criteria](#profile-exit-criteria) capability:
 
 * **Exit criteria apply at the action level**  

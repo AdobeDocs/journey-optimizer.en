@@ -5,7 +5,6 @@ feature: Channel Configuration
 topic: Content Management
 role: User
 level: Experienced
-badge: label="Limited Availability" type="Informative"
 feature_v2:
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
@@ -21,10 +20,6 @@ subfeature_v2:
 **On this page:** Learn how to add a custom channel to a journey or a campaign in Adobe Journey Optimizer, and author personalized message payloads using the expression editor.
 
 >[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
 In [!DNL Journey Optimizer], you can deliver messages using custom channels in campaigns and journeys. Follow the steps below to set up your custom channel experience.
 
@@ -75,7 +70,11 @@ To use a custom channel in a campaign:
 1. Select the campaign type:
 
    * **[!UICONTROL Scheduled - Marketing]** – Executed immediately or on a specified date. Designed for marketing messages, configured from the UI.
-   * **[!UICONTROL API-triggered - Marketing/Transactional]** – Executed via an API call. Designed for event-triggered messaging (for example, order confirmations or password resets). [Learn more](../campaigns/api-triggered-campaigns.md)
+   * **[!UICONTROL API-triggered - Marketing]** – Executed via an API call. Designed for event-triggered messaging. [Learn more](../campaigns/api-triggered-campaigns.md)
+
+    >[!AVAILABILITY]
+    >
+    >Custom channels are available in journeys, orchestrated campaigns and Marketing (action and API-triggered) campaigns. They are not available in transactional campaign types.
 
 1. Complete the campaign setup: campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule).
 
@@ -93,6 +92,7 @@ To use a custom channel in a campaign:
 
     * **[!UICONTROL Create targeting rules]** to send different messages to different segments of your audience. [Learn more](../campaigns/create-campaign.md#targeting)
     * Click **[!UICONTROL Create experiment]** to run A/B tests on your custom channel messages. [Learn more](../campaigns/create-campaign.md#content-experiment)
+    * Use the **[!UICONTROL Business rules]** drop-down list to select a rule set and apply capping rules to your custom channel messages, the same way as with native channels. [Learn how to work with rule sets](../conflict-prioritization/rule-sets.md)
 
 1. Click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)
 
@@ -176,6 +176,12 @@ The following examples show JSON payloads with profile personalization:
   }
 }
 ```
+
+### Use decisioning content in custom channel payloads {#use-decisioning}
+
+[!DNL Journey Optimizer] allows you to include decisioning content in your custom channel payloads through the personalization editor. You can insert decision policies and use the returned decision item attributes to personalize your payload dynamically.
+
+The decision policy insertion workflow is described in [this section](../experience-decisioning/create-decision-policy.md).
 
 ### Track links in the payload {#track-links}
 

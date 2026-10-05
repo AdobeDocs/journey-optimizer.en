@@ -31,7 +31,6 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* This capability is available in Limited Availability; contact your Adobe representative to gain access.
 * A custom channel must be configured by your administrator before you create a custom channel experience.
 * Only JSON payloads are supported; non-JSON content such as XML can be wrapped in a JSON object.
 * There is currently no validation of the payload at authoring time; use Simulate content to validate that the payload is well-formed JSON and that personalization expressions resolve correctly for your test profiles.

@@ -65,7 +65,7 @@ Our next-generation decision framework, designed to unify existing Journey Optim
 * Updated decision policy and selection strategy configuration: Allow reusability of decision components
 * Experimentation capabilities: Test decision logic against other content components to measure performance
 
-Decisioning is available to all customers for the **Code-based Experience**, **Email**, **Push notification**, and **SMS** channels. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+Decisioning is available to all customers for the **Code-based Experience**, **Web**, **Email**, **Push notification**, **SMS**, **Custom channels**, and **Direct mail** channels. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 ➡️ [Get started with Decisioning](../experience-decisioning/gs-experience-decisioning.md)
 

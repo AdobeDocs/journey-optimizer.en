@@ -39,7 +39,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Insert decision policy code into your code-based experience, web, email, SMS, push notification, and direct mail content, so you can personalize messages with attributes from the returned decision items.
+**On this page:** Insert decision policy code into your code-based experience, web, email, SMS, push notification, custom channel, and direct mail content, so you can personalize messages with attributes from the returned decision items.
 
 >[!ENDSHADEBOX]
 
@@ -47,7 +47,7 @@ Once you've added a decision policy to your content, you can use attributes from
 
 >[!CAUTION]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **Web**, **Email**, **SMS**, **Push notification**, and **Direct mail** channels.
+>Decision policies are available to all customers for the **Code-based Experience**, **Web**, **Email**, **SMS**, **Push notification**, **[Custom channels](../custom-channel/get-started-custom-channel.md)**, and **Direct mail** channels.
 
 ## Insert the decision policy code {#insert}
 
@@ -128,6 +128,14 @@ You can also insert the decision policy code when using the **[!UICONTROL Code y
 >[!IMPORTANT]
 >
 >The total payload size of a web channel response must not exceed **64 KB**. Requests exceeding this limit will result in an error. Ensure your decision items and attributes remain within this threshold.
+
+>[!TAB Custom channel]
+
+1. Open the payload editor by clicking **[!UICONTROL Edit code]**, then open the **Personalization Editor** on the field you want to personalize.
+
+2. Navigate to **[!UICONTROL Decision policies]**.
+
+3. Select **[!UICONTROL Insert syntax]** to add the code for your decision policy.
 
 >[!TAB Direct Mail]
 
