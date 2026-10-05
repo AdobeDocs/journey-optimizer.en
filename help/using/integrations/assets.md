@@ -102,70 +102,6 @@ To import files to **[!DNL Assets Essentials]** or **[!DNL Assets as a Cloud Ser
 
     +++
 
-  If your selected repository restricts incoming requests by source IP, complete the [network access setup](#assets-network-access) before browsing folders or uploading assets. Otherwise, continue to [browse folders and upload assets](#browse-upload-assets).
-
-## Allow access from Journey Optimizer {#assets-network-access}
-
->[!AVAILABILITY]
->
->This capability is currently in Limited Availability. To gain access, contact your Adobe representative. 
-
->[!IMPORTANT]
->
->Use the region that hosts your **Journey Optimizer instance**, not the region that hosts your Adobe Experience Manager repository. If the same Adobe Experience Manager endpoint is accessed by Journey Optimizer instances in multiple regions, allowlist every applicable Journey Optimizer regional value.
-
-You need the regional egress values only when **all of the following are true**:
-
-* Youy use an Adobe Experience Manager Assets repository from Journey Optimizer.
-* The Adobe Experience Manager endpoint restricts inbound traffic by source IP through a firewall, web application firewall (WAF), or IP allowlist.
-* Adobe has enabled the Adobe Experience Manager asset egress route for the relevant IMS organization or sandbox.
-
-**No action is required** when the Adobe Experience Manager endpoint is reachable without a source-IP restriction.
-
-| Journey Optimizer region | Source IP address or range to allowlist | Availability |
-| --- | --- | --- |
-| AUS5 | `20.248.239.95` | Regional egress proxy available |
-| CAN2 | `20.175.143.15` | Regional egress proxy available |
-| CHE2 | Not currently available | Contact Adobe Customer Care before proceeding. |
-| GBR9 | Not currently available | Contact Adobe Customer Care before proceeding. |
-| IND2 | `4.213.114.171` | Regional egress proxy available |
-| NLD2 | `20.103.167.103` | Regional egress proxy available |
-| VA6 | `66.117.18.0/24` | Regional Adobe range; the egress proxy is not used. Confirm with Adobe before changing the allowlist. |
-| VA7 | `20.88.123.53` | Regional egress proxy available |
-
-To set up access:
-
-1. Identify the region that hosts your Journey Optimizer instance.
-
-1. Contact Adobe Customer Care through [Experience League Support](https://experienceleague.adobe.com/home#support){target="_blank"} to obtain the applicable regional address or range and confirm or enable regional egress routing for your IMS organization and sandbox. Adding an allowlist entry alone does not enable this routing.
-
-    When contacting Adobe Customer Care, include:
-
-    * IMS Organization ID
-    * Sandbox name
-    * Journey Optimizer region
-    * AEM host name
-    * For an access failure, the approximate failure time with time zone and the HTTP status or error shown in Journey Optimizer
-
-1. Ask your network or Adobe Experience Manager administrator to allow the confirmed regional value on the AEM endpoint.
-
-1. In Journey Optimizer, open the Adobe Experience Manager Assets repository and verify that you can browse an asset and add it to content.
-
-**Troubleshoot access to an IP-restricted repository**
-
-If assets fail to load from an IP-restricted Adobe Experience Manager Assets repository, or a request returns an HTTP 403 response:
-
-* Confirm that the allowlisted value matches the **Journey Optimizer region**, not the Adobe Experience Manager Assets repository region.
-* Confirm that the allowlist rule applies to the exact Adobe Experience Manager Assets host used by the repository.
-* Confirm with Adobe Customer Care that regional egress routing is enabled for the correct IMS organization and sandbox.
-* If assets still fail to load, record the error message, Adobe Experience Manager Assets host name, sandbox name, and the time of the failure, including the time zone. Include these details when submitting a support ticket.
-
->[!CAUTION]
->
->Keep existing allowlist entries until Adobe confirms that all relevant traffic for your organization and sandbox uses the regional egress path.
-
-## Browse folders and upload assets {#browse-upload-assets}
-
 1. Double-click a folder from the central section or from the tree view to open it.
 
     You can also click **[!UICONTROL Create folder]** to create a new folder.
@@ -197,6 +133,16 @@ If assets fail to load from an IP-restricted Adobe Experience Manager Assets rep
 1. You can further customize your assets such as adding an external link or a text using the **[!UICONTROL Settings]** and **[!UICONTROL Styles]** tabs. [Learn more about components settings](../email/content-components.md)
 
     ![](assets/media_library_13.png)
+
+    <!--
+    After adding your asset to your email, use the **[!UICONTROL Find similar Stock photos]** option to locate Stock photos that match the content, color, and composition of your image. [Learn more about Adobe Stock](stock.md).
+
+    Note that this option is available for licensed/unlicensed Stock images and images from your Assets folder. 
+
+    ![](assets/media_library_14.png)
+    
+-->
+
 
 ## Frequently asked questions {#faq-assets}
 
