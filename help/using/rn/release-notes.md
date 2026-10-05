@@ -204,6 +204,10 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 15, 2026
 
+* **Loyalty challenge details page** - You can now review a challenge's configuration and performance from a dedicated details page. View its summary, targeted audience, connected journey, tasks, and rewards alongside key metrics for revenue, enrollment, completion rate, and total completions. Open the full report for more detailed performance insights or select **Edit challenge** to modify the challenge. [Learn more](../loyalty-challenges/access-loyalty-challenges.md#challenge-details)
+
+  Availability date: September 30, 2026
+
 +++ Coming soon — **Information below is subject to change.**
 
 * **Per-member Loyalty challenge completion deadlines** - Loyalty challenges now support per-member completion deadlines: choose "Within a number of days after opt-in" under Completion requirements so each member's deadline is calculated from their own opt-in date rather than a fixed program-wide end date. If both a challenge end date and this opt-in window are set, each member's deadline is whichever comes first. <!-- Documentation link: TBD -->
@@ -414,6 +418,24 @@ The following capabilities and improvements are coming to channels in this relea
 <table>
 <thead>
 <tr>
+<th><strong>Live Activities for Android Live Updates</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now expands its real-time mobile personalization capabilities by extending <strong>Live Activity support to Android</strong>. You can deliver real-time progress updates directly to users, such as order tracking, flight statuses, live event updates, and real-time sports scores.</p>
+<p>Beyond supporting iOS Live Activities, Journey Optimizer now manages temporary push tokens for Android Live Updates across its platform configurations. It supports both broadcast and transactional update flows using API-triggered campaigns and headless APIs.</p>
+<p>For more information, refer to the <a href="../mobile-live/create-mobile-live.md">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Android push notifications templates improvements</strong><br/></th>
 </tr>
 </thead>
@@ -462,22 +484,6 @@ The following capabilities and improvements are coming to channels in this relea
 <p><img src="assets/do-not-localize/custom-channel.gif"></p>
 <p>For more information, refer to the <a href="../custom-channel/get-started-custom-channel.md">detailed documentation</a>.</p>
 
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Live Activities for Android Live Updates</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now expands its real-time mobile personalization capabilities by extending <strong>Live Activity support to Android</strong>. You can deliver real-time progress updates directly to users, such as order tracking, flight statuses, live event updates, and real-time sports scores.</p>
-<p>Beyond supporting iOS Live Activities, Journey Optimizer now manages temporary push tokens for Android Live Updates across its platform configurations. It supports both broadcast and transactional update flows using API-triggered campaigns and headless APIs.</p>
 </td>
 </tr>
 </tbody>
@@ -640,6 +646,10 @@ The following capabilities and improvements are coming to the Email Designer in 
 </tbody>
 </table>
 
+* **LINE channel for orchestrated campaigns** - LINE is now available as a native outbound channel in orchestrated campaigns, alongside email, SMS, and push. You can build and deliver LINE messages directly from the campaign canvas, including text, stickers, images, videos, location data, and Flex Messages, supporting promotional, transactional, and ongoing engagement use cases in LINE-dominant markets such as Japan and APAC. Previously released in Limited Availability, this capability is now generally available. [Learn more](../orchestrated/activities/channels.md)
+
+  Availability date: October 2, 2026
+
 * **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage. [Learn more](../data/monitor-data-ingestion.md#co)
 
   Availability date: September 28, 2026
@@ -669,15 +679,17 @@ The following capabilities and improvements are coming to the Email Designer in 
 </tbody>
 </table>
 
-* **LINE channel for orchestrated campaigns** - LINE is now available as a native outbound channel in orchestrated campaigns, alongside email, SMS, and push. You can build and deliver LINE messages directly from the campaign canvas, including text, stickers, images, videos, location data, and Flex Messages, supporting promotional, transactional, and ongoing engagement use cases in LINE-dominant markets such as Japan and APAC. Previously released in Limited Availability, this capability is now generally available. 
-
 +++
 
 ### Campaigns {#sep-26-campaigns}
 
-+++ Coming soon — **Information below is subject to change.**
+The following improvement is coming to campaigns in this release.
 
-* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface.
+* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface. [Learn more](../campaigns/manage-campaigns.md#folders)
+
+  Availability date: September 30, 2026
+
++++ Coming soon — **Information below is subject to change.**
 
 * **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
 

@@ -41,24 +41,24 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover how Live activities deliver persistent, real-time updates on the iPhone Lock Screen and Dynamic Island so you can keep users engaged during ongoing events and plan the configuration and API-triggered campaigns needed to send them with Adobe Journey Optimizer.
+**On this page:** Discover how Live activities deliver persistent, real-time updates on the Android or iPhone Lock Screen and Dynamic Island so you can keep users engaged during ongoing events and plan the configuration and API-triggered campaigns needed to send them with Adobe Journey Optimizer.
 
 >[!ENDSHADEBOX]
 
-Live activities are persistent, glanceable UI elements displayed on the device lock screen. They let your app present real-time, up-to-date information — keeping users informed throughout an ongoing event without requiring them to open the app or receive repeated push notifications.
-
->[!AVAILABILITY]
->
->Live activities in Adobe Journey Optimizer are only compatible with Apple iOS.
+Live activities are persistent, glanceable UI elements displayed on the device lock screen. They let your app present real-time, up-to-date information, keeping users informed throughout an ongoing event without requiring them to open the app or receive repeated push notifications.
 
 Unlike traditional push notifications, Live activities represent **state-based engagement**: instead of delivering one-time alerts, they maintain a continuous, contextual presence that updates dynamically as events evolve.
 
-
 <table style="table-layout:fixed"><tr style="border: 0;">
-<td>
-<img alt="iOS Live activities on Lock Screen and Dynamic Island" src="assets/do-not-localize/live-activity.jpeg">
+<td style="text-align:center">
+<img alt="iOS Live activities on Lock Screen and Dynamic Island" src="assets/do-not-localize/live-activity.png" width="250">
 </td>
-<td>
+<td style="text-align:center">
+<img alt="Android Live activities" src="assets/do-not-localize/live-activity-android.png" width="250">
+</td>
+</tr>
+<tr>
+<td colspan="2">
 <p><strong>Key benefits</strong></p>
 <p>Live activities shift mobile engagement from notification-based to state-based, enabling brands to:</p>
 <ul>
@@ -71,18 +71,19 @@ Unlike traditional push notifications, Live activities represent **state-based e
 </tr>
 </table>
 
-With Adobe Journey Optimizer, you can remotely **start**, **update**, and **end** Live activities programmatically through API-triggered campaigns — supporting both individual and audience-based use cases at scale.
+
+With Adobe Journey Optimizer, you can remotely **start**, **update**, and **end** Live activities programmatically through API-triggered campaigns,  supporting both individual and audience-based use cases at scale.
 
 Live activities can **only** be initiated via **API-triggered** campaigns, allowing you to provide custom payloads and perform all personalization through your own payload.
 The appropriate **API-triggered** campaign type must be selected based on the intended Live activity use case:
 
-* Select **API-triggered Marketing** for broadcast use cases — audience-based updates sent at scale:
+* Select **API-triggered Marketing** for broadcast use cases,  audience-based updates sent at scale:
 
     * Sports scores and live event countdowns
     * Flight status updates for all passengers on a route
     * Shared experiences across a user segment
 
-* Select **API-triggered Transactional** for individual use cases — 1:1 real-time updates per user:
+* Select **API-triggered Transactional** for individual use cases, 1:1 real-time updates per user:
 
     * Order tracking and delivery progress
     * Ride or service status updates
@@ -108,10 +109,25 @@ Complete the steps below to configure and implement Live activities in your appl
 
     Start measuring the impact of your Live activity with built-in reports.
 
-## How-to video
+## How-to videos
 
 Discover how to configure iOS Live activities with Adobe Journey Optimizer to deliver rich, real-time updates on the iPhone Lock Screen and Dynamic Island.
 
++++ Video
+
 >[!VIDEO](https://video.tv.adobe.com/v/3479864/?learn=on)
+
++++
+
+
+Learn how to create and deliver Android Live Updates in Adobe Journey Optimizer. This tutorial shows how to configure the Android Live Updates channel, create and activate campaigns, and use APIs to start, update, and end live experiences across customer journeys.
+
++++ Video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3503646/?learn=on)
+
++++
+
+
 
 {{$include /help/_includes/do-not-localize/mobile-live/ai-augmented-get-started-mobile-live.md}}
