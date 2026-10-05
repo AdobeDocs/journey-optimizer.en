@@ -418,6 +418,32 @@ The following capabilities and improvements are coming to channels in this relea
 <table>
 <thead>
 <tr>
+<th><strong>Custom outbound channel (General Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Custom outbound channels</strong> let administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder. Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement.</p>
+<p>With this release, custom outbound channels also gain several new capabilities:</p>
+<ul>
+<li>Use Journey Optimizer Decisioning in the custom channel payload through the Personalization Editor, the same way as in code-based experiences.</li>
+<li>Apply business rules to custom channels, the same way you already can on native channels.</li>
+<li>Select custom channels in the channel list for API-triggered campaigns, which was not previously possible.</li>
+<!--<li>Define a reporting webhook for a custom channel and attach it to a channel configuration, so you can enrich your Journey Optimizer reports with interaction events.</li>-->
+</ul>
+<p>Previously available in Limited Availability, this capability is now available to all environments (General Availability), with the enhancements described above.</p>
+<p><img src="assets/do-not-localize/custom-channel.gif"></p>
+<p>For more information, refer to the <a href="../custom-channel/get-started-custom-channel.md">detailed documentation</a>.</p>
+<p>Availability date: Ocober 2, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Live Activities for Android Live Updates</strong><br/></th>
 </tr>
 </thead>
@@ -432,6 +458,7 @@ The following capabilities and improvements are coming to channels in this relea
 </tr>
 </tbody>
 </table>
+
 
 <table>
 <thead>
@@ -460,32 +487,6 @@ The following capabilities and improvements are coming to channels in this relea
 * **Increased subdomain delegation limit** - Depending on your license contract, you can now request up to 3000 subdomains (previously capped at 100) by reaching out to your Adobe representative. This capability is available in Limited Availability for a set of customers. [Learn more](../configuration/delegate-subdomain.md#guardrails)
 
   Availability date: September 25, 2026
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom outbound channel (General Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Custom outbound channels</strong> let administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder. Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement.</p>
-<p>With this release, custom outbound channels also gain several new capabilities:</p>
-<ul>
-<li>Use Journey Optimizer Decisioning in the custom channel payload through the Personalization Editor, the same way as in code-based experiences.</li>
-<li>Apply business rules to custom channels, the same way you already can on native channels.</li>
-<li>Select custom channels in the channel list for API-triggered campaigns, which was not previously possible.</li>
-<!--<li>Define a reporting webhook for a custom channel and attach it to a channel configuration, so you can enrich your Journey Optimizer reports with interaction events.</li>-->
-</ul>
-<p>Previously available in Limited Availability, this capability is now available to all environments (General Availability), with the enhancements described above.</p>
-<p><img src="assets/do-not-localize/custom-channel.gif"></p>
-<p>For more information, refer to the <a href="../custom-channel/get-started-custom-channel.md">detailed documentation</a>.</p>
-
-</td>
-</tr>
-</tbody>
-</table>
 
 +++ Coming soon — **Information below is subject to change.**
 
