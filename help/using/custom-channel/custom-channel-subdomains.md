@@ -5,7 +5,6 @@ role: Admin
 feature: Channel Configuration
 level: Intermediate
 keywords: custom channel, subdomains, configuration
-badge: label="Limited Availability" type="Informative"
 feature_v2:
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
