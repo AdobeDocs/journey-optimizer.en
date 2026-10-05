@@ -435,7 +435,7 @@ The following capabilities and improvements are coming to channels in this relea
 <p>Previously available in Limited Availability, this capability is now available to all environments (General Availability), with the enhancements described above.</p>
 <p><img src="assets/do-not-localize/custom-channel.gif"></p>
 <p>For more information, refer to the <a href="../custom-channel/get-started-custom-channel.md">detailed documentation</a>.</p>
-<p>Availability date: Ocober 2, 2026</p>
+<p>Availability date: October 2, 2026</p>
 </td>
 </tr>
 </tbody>
