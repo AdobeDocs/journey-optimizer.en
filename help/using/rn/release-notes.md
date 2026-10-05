@@ -461,8 +461,6 @@ The following capabilities and improvements are coming to channels in this relea
 
   Availability date: September 25, 2026
 
-+++ Coming soon — **Information below is subject to change.**
-
 <table>
 <thead>
 <tr>
@@ -488,6 +486,8 @@ The following capabilities and improvements are coming to channels in this relea
 </tr>
 </tbody>
 </table>
+
++++ Coming soon — **Information below is subject to change.**
 
 <table>
 <thead>
