@@ -137,8 +137,6 @@ You can also insert the decision policy code when using the **[!UICONTROL Code y
 
 3. Select **[!UICONTROL Insert syntax]** to add the code for your decision policy.
 
-   ![](assets/decision-policy-add-custom-channel-insert-syntax.png)
-
 >[!TAB Direct Mail]
 
 1. From the extraction file configuration, open the **Personalization Editor** (for example, in the **[!UICONTROL Data]** field of a column).

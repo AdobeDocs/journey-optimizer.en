@@ -209,8 +209,6 @@ For custom channels, add a decision policy using the **personalization editor** 
 
 1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
 
-    ![](assets/decision-policy-add-custom-channel.png)
-
 >[!TAB Direct Mail]
 
 For direct mail, add a decision policy from the **extraction file** configuration. [Learn how to create a direct mail message](../direct-mail/create-direct-mail.md).
