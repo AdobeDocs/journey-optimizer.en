@@ -32,9 +32,11 @@ subfeature_v2:
 ---
 # Delete a collection qualifier {#delete-tag}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the legacy **Decision Management** APIs. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to the [Decisioning API developer guide](../../../../experience-decisioning/api-reference/getting-started.md) instead.
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../../../experience-decisioning/gs-experience-decisioning.md).
 
 
 It may occasionally be necessary to remove (DELETE) a collection qualifier (previously known as "tag"). This is done by performing a DELETE request to the Offer Library API using the id of the collection qualifier you wish to delete.

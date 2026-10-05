@@ -32,9 +32,11 @@ subfeature_v2:
 ---
 # Delete a decision rule {#delete-decision-rule}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the legacy **Decision Management** APIs. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to the [Decisioning API developer guide](../../../../../experience-decisioning/api-reference/getting-started.md) instead.
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../../../../experience-decisioning/gs-experience-decisioning.md).
 
 
 It may occasionally be necessary to remove (DELETE) a decision rule. Only decision rules that you create in the tenant container may be deleted. This is done by performing a DELETE request to the [!DNL Offer Library] API using the instance ID of the decision rule you wish to delete.

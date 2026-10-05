@@ -32,9 +32,11 @@ subfeature_v2:
 ---
 # List decisions {#list-decisions}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the legacy **Decision Management** APIs. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to the [Decisioning API developer guide](../../../../experience-decisioning/api-reference/getting-started.md) instead.
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../../../experience-decisioning/gs-experience-decisioning.md).
 
 
 A decision contains the logic that informs the selection of an offer.

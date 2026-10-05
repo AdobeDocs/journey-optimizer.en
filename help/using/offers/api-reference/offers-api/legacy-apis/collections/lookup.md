@@ -32,9 +32,11 @@ subfeature_v2:
 ---
 # Look up a collection {#look-up-collection}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the legacy **Decision Management** APIs. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to the [Decisioning API developer guide](../../../../../experience-decisioning/api-reference/getting-started.md) instead.
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../../../../experience-decisioning/gs-experience-decisioning.md).
 
 
 Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.

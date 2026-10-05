@@ -32,8 +32,10 @@ subfeature_v2:
 ---
 # About legacy APIs
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the legacy **Decision Management** APIs. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to the [Decisioning API developer guide](../../../../experience-decisioning/api-reference/getting-started.md) instead.
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../../../experience-decisioning/gs-experience-decisioning.md).
 
 The APIs for creating and managing decision management objects have been updated. These updated APIs provide better performance as well as a better overall user experience. Note that the legacy APIs will be deprecated on March 27th, 2024. Please make any necessary changes before then.

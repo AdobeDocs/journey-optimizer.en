@@ -37,9 +37,11 @@ subfeature_v2:
 ---
 # Get started with offer delivery APIs {#about-decisioning-apis}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the legacy **Decision Management** APIs. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to the [Decisioning API developer guide](../../../experience-decisioning/api-reference/getting-started.md) instead.
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../../experience-decisioning/gs-experience-decisioning.md).
 
 You can deliver offers using either the **Decisioning** or the **Edge Decisioning** API. Additionally, the **Batch Decisioning** API allows you to deliver offers to all profiles in a given audience in one call. The offer content for each profiles in the audience is placed in an Adobe Experience Platform dataset where it is available for custom batch workflows.
 
