@@ -28,7 +28,6 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* This capability is available in Limited Availability; contact your Adobe representative to gain access.
 * Configuring a custom channel is an administrator task that happens once per channel.
 * Delegating a subdomain is optional and required only if your message payload contains trackable links; without a delegated subdomain, link tracking is unavailable for this channel.
 * Before you begin, review the prerequisites and guardrails, including the required permissions and supported authentication methods.

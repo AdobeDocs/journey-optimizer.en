@@ -84,6 +84,10 @@ This message does not necessarily mean the dataset failed to provision. Before c
 1. For datasets that use batch ingestion, such as the Message Feedback Event Dataset, allow up to two hours for data to become available.
 1. For custom actions, query the [Journey Step Event](#journey-step-event) dataset rather than expecting a Message Feedback Event record for the external delivery.
 
+>[!NOTE]
+>
+>The **CJM Consent Service Dataset** and **CJM Push Profile Dataset** are system datasets used by Journey Optimizer for consent and push profile data. They are not available as queryable tables in Query Service, so a query for either dataset can return **Table not provisioned for dataset**. This is expected and does not indicate a provisioning failure.
+
 If the dataset should contain data and the table remains unavailable, collect the sandbox name, dataset name, query ID, and timestamp before contacting Adobe Support.
 
 ## Email tracking Experience event dataset{#email-tracking-experience-event-dataset}

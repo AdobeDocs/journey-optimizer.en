@@ -39,7 +39,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_api_triggered"
 >title="API triggered campaigns"
->abstract="**Transactional API triggered campaigns**<br/>Trigger real-time messages through API calls<br/><br/>**Marketing messages**<br/>Promotional content (requires opt-in, subject to business rules)<br/><br/>**Transactional messages**<br/>Service-related content (confirmation, alerts, not subject to marketing consent)<br/><br/>**Available channels**<br/>Email, SMS, Push notifications"
+>abstract="**Transactional API triggered campaigns**<br/>Trigger real-time messages through API calls<br/><br/>**Marketing messages**<br/>Promotional content (requires opt-in, subject to business rules)<br/><br/>**Transactional messages**<br/>Service-related content (confirmation, alerts, not subject to marketing consent)<br/><br/>**Available channels**<br/>Email, SMS, Push notifications, and custom channels (Marketing campaigns only)"
 
 ## About API triggered campaigns {#about}
 

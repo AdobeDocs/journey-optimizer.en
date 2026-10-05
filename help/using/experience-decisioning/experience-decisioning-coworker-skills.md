@@ -16,13 +16,15 @@ mini-toc-levels: 1
 
 **On this page:** Discover the CX Enterprise Coworker skills available for Decisioning in Adobe Journey Optimizer — understanding why an offer was or wasn't shown to a profile or segment, and creating, explaining, simulating, and optimizing eligibility rules and ranking formulas — with detailed guidance, example prompts, and best practices.
 
+>[!ENDSHADEBOX]
+
+Decisioning capabilities in Adobe Journey Optimizer help you explain offer decisions and create, test, and optimize eligibility rules and ranking formulas through natural-language prompts. Use Decisioning Explainer to understand why an offer was or was not shown to a profile or segment. Use Rules & Ranking to create and simulate eligibility rules and ranking formulas before applying them to your decisioning strategy.
+
 Learn more:
 
 * [Coworker skills for Journey Optimizer](../start/ai-features.md#cx-coworker-skills) — overview of Coworker skills across Journeys, Loyalty, Content Management, and Decisioning in Journey Optimizer.
 * [Coworker documentation](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/overview){target="_blank"} — overview of Coworker's Campaigns, Chat, and Projects capabilities.
 * [Coworker Chat UI guide](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/ui-guide){target="_blank"} — how to access and navigate Coworker Chat.
-
->[!ENDSHADEBOX]
 
 ## Decisioning Explainer {#decisioning-explainer}
 
@@ -36,38 +38,12 @@ This addresses a common challenge for marketers: explaining why one offer ranked
 
 ### Key use cases
 
-* **Why a specific offer was or wasn't shown**
-
-   Sample prompts:
-   * "Why did profile 12345 see Offer X on May 15th?"
-   * "Was profile X not eligible for this offer?"
-   * "Which eligibility rule excluded this customer?"
-   * "Show me which offers profile X was eligible for on June 3rd."
-
-* **Why an offer's visibility changed over time**
-
-   Sample prompts:
-   * "Why has Offer Y stopped showing to returning customers in the last 7 days?"
-   * "How many times has this customer seen this offer?"
-   * "Was this offer capped for profile X?"
-   * "What offers are currently being suppressed for profile X due to capping constraints?"
-
-* **How an offer was ranked or selected**
-
-   Sample prompts:
-   * "Walk me through exactly how Offer Z was selected over the other eligible offers for this profile."
-   * "What was the ranking score for each offer in this decision?"
-   * "Why did Offer A rank above Offer B for this profile?"
-   * "What factors most influenced the ranking outcome?"
-
-* **Segment-level explanations**
-
-   Decisioning Explainer can aggregate this logic across a segment rather than a single profile, surfacing the dominant reason a group of profiles isn't seeing an offer.
-
-   Sample prompts:
-   * "For customers in this audience, what's the most common reason they're excluded?"
-   * "Which offers is this segment actually receiving?"
-   * "Why isn't my loyalty segment seeing this offer?"
+| Use Case | Description | Skills | Sample Prompts |
+| --- | --- | --- | --- |
+| Why a specific offer was or wasn't shown | Trace the decision for a profile or segment by reviewing eligibility rules, capping, ranking, and the candidate pool for a specific time window. | Decisioning Explainer | "Why did profile 12345 see Offer X on May 15th?"<br><br>"Was profile X not eligible for this offer?"<br><br>"Which eligibility rule excluded this customer?"<br><br>"Show me which offers profile X was eligible for on June 3rd." |
+| Why an offer's visibility changed over time | Investigate changes in offer visibility by reviewing exposure frequency, fatigue or capping constraints, eligibility, and suppression over a selected period. | Decisioning Explainer | "Why has Offer Y stopped showing to returning customers in the last 7 days?"<br><br>"How many times has this customer seen this offer?"<br><br>"Was this offer capped for profile X?"<br><br>"What offers are currently being suppressed for profile X due to capping constraints?" |
+| How an offer was ranked or selected | Explain why one offer ranked above another by showing the ranking scores, strategy or AI model, and other decision factors used for the profile. | Decisioning Explainer | "Walk me through exactly how Offer Z was selected over the other eligible offers for this profile."<br><br>"What was the ranking score for each offer in this decision?"<br><br>"Why did Offer A rank above Offer B for this profile?"<br><br>"What factors most influenced the ranking outcome?" |
+| Segment-level explanations | Aggregate decisioning logic across a segment to identify the dominant reasons profiles are not seeing an offer and which offers the segment is receiving. | Decisioning Explainer | "For customers in this audience, what's the most common reason they're excluded?"<br><br>"Which offers is this segment actually receiving?"<br><br>"Why isn't my loyalty segment seeing this offer?" |
 
 ### Prompting best practices
 
@@ -86,51 +62,12 @@ Rules & Ranking gives marketers AI-powered assistance for creating, understandin
 
 ### Key use cases
 
-* **Natural language rule creation**
-
-   Turn a plain-language description into PQL eligibility rule syntax, for both net-new rules and edits to existing ones.
-
-   Sample prompts:
-   * "Can you create an eligibility rule that targets users that meet XYZ conditions?"
-   * "Create an eligibility rule targeting loyalty members in tier 2 or above."
-   * "Write a PQL rule that excludes customers who made a purchase in the last 7 days."
-   * "Modify this rule to also exclude customers in the suppression list."
-
-* **Plain-English rule and formula explanation**
-
-   Explain what an existing eligibility rule or ranking formula does — what it includes or excludes, and what each condition means — without needing to read PQL syntax.
-
-   Sample prompts:
-   * "Can you explain this rule to me in natural language?"
-   * "What does this ranking formula actually do?"
-   * "Who does this eligibility rule target and who does it exclude?"
-   * "Summarize this rule in one sentence."
-   * "Why does Offer A rank above Offer B for this customer?"
-   * "Is this rule too restrictive for a broad awareness campaign?"
-   * "Which condition in this rule is filtering out the most profiles?"
-
-* **Simulation**
-
-   Run an eligibility rule or ranking formula against up to 3 test profiles — manually entered or AI-generated, including edge cases — and get pass/fail results with the specific failing condition, or a ranked list of offers with numeric scores.
-
-   Sample prompts:
-   * "Simulate this rule with test profiles."
-   * "Does this rule pass for a profile where loyalty_tier = gold?"
-   * "Which profiles pass this eligibility rule: [profile A, profile B, profile C]?"
-   * "Why did this profile fail the eligibility check?"
-   * "Generate test profiles for this eligibility rule."
-   * "Generate edge case profiles that stress-test this condition."
-   * "Simulate this ranking formula across these offers and profiles."
-   * "Which offer would rank highest for this profile given this formula?"
-   * "Compare how this eligibility rule behaves for a gold vs. silver vs. basic tier customer."
-
-* **PQL optimization**
-
-   Rewrite an existing rule or formula with more concise syntax to meet Journey Optimizer's PQL size limits, without changing its logic or outcome.
-
-   Sample prompts:
-   * "Optimize this PQL rule for me."
-   * "This rule is hitting PQL size limits — can you shorten it?"
+| Use Case | Description | Skills | Sample Prompts |
+| --- | --- | --- | --- |
+| Natural language rule creation | Turn a plain-language eligibility requirement into PQL syntax for a new rule or an edit to an existing rule. | Rules & Ranking | "Can you create an eligibility rule that targets users that meet XYZ conditions?"<br><br>"Create an eligibility rule targeting loyalty members in tier 2 or above."<br><br>"Write a PQL rule that excludes customers who made a purchase in the last 7 days."<br><br>"Modify this rule to also exclude customers in the suppression list." |
+| Plain-English rule and formula explanation | Explain what an eligibility rule or ranking formula includes, excludes, and evaluates without requiring the user to read PQL syntax. | Rules & Ranking | "Can you explain this rule to me in natural language?"<br><br>"What does this ranking formula actually do?"<br><br>"Who does this eligibility rule target and who does it exclude?"<br><br>"Summarize this rule in one sentence."<br><br>"Why does Offer A rank above Offer B for this customer?"<br><br>"Is this rule too restrictive for a broad awareness campaign?"<br><br>"Which condition in this rule is filtering out the most profiles?" |
+| Simulation | Test an eligibility rule or ranking formula against up to three profiles, including AI-generated edge cases, and return pass/fail results or ranked offers with numeric scores. | Rules & Ranking | "Simulate this rule with test profiles."<br><br>"Does this rule pass for a profile where loyalty_tier = gold?"<br><br>"Which profiles pass this eligibility rule: [profile A, profile B, profile C]?"<br><br>"Why did this profile fail the eligibility check?"<br><br>"Generate test profiles for this eligibility rule."<br><br>"Generate edge case profiles that stress-test this condition."<br><br>"Simulate this ranking formula across these offers and profiles."<br><br>"Which offer would rank highest for this profile given this formula?"<br><br>"Compare how this eligibility rule behaves for a gold vs. silver vs. basic tier customer." |
+| PQL optimization | Rewrite an existing rule or formula with more concise syntax to meet Journey Optimizer's PQL size limits without changing its logic or outcome. | Rules & Ranking | "Optimize this PQL rule for me."<br><br>"This rule is hitting PQL size limits — can you shorten it?" |
 
 ### Prompting best practices
 

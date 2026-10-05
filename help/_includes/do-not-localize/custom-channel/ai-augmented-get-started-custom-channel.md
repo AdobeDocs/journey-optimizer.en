@@ -28,7 +28,6 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Custom channels are available in Limited Availability; contact your Adobe representative to gain access.
 * Custom channels support POST as the only HTTP method.
 * Custom actions are available in journeys only and support GET, PUT, and POST methods.
 * Configuring a custom channel is an administrator task performed in the Channel Builder; adding the channel to a journey or campaign is a marketer task.
