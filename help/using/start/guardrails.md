@@ -247,7 +247,7 @@ The following guardrails apply to the [Audience Qualification](../building-journ
 
 * The Audience qualification activity cannot be used with Adobe Campaign activities.
 * Supplemental identifiers are not supported for Audience qualification journeys.
-* A sandbox can include a maximum of **300** Audience Qualification activities across all live, closed, paused, test mode, and dry run journeys. This limit also applies to Audience Qualification activities used as exit criteria. When this limit is reached, publishing journeys with additional Audience Qualification activities is blocked.
+* A sandbox can include a maximum of **300** Audience Qualification activities across all live, closed, paused, test mode, and dry run journeys. This limit also applies to Audience Qualification activities used as exit criteria. Audience Qualification activities used as the first activity in closed journeys are excluded from this limit. When this limit is reached, publishing journeys with additional Audience Qualification activities is blocked.
 
 Learn more about journey processing rates and throughput limits in [this section](../building-journeys/entry-management.md#journey-processing-rate).
 
