@@ -282,12 +282,18 @@ The **[!UICONTROL Reset capping frequency]** field allows you to define how ofte
  
 The frequency capping counter is updated and available in an [Edge Decisioning API](../api-reference/offer-delivery-api/start-offer-delivery-apis.md#edge) decision in less than 3 seconds.
 
-Each hub region is associated with one or more edge regions. Frequency capping rules are generated and exported from each hub region to its associated edge regions. Whenever a decision is made using the Edge Decisioning API, the system enforces the rules available in the same edge region:
+Each hub region is associated with one or more edge regions. Frequency capping rules are generated and exported from each hub region **only** to its associated edge regions. They are not synchronized to other edge regions, including edge regions that are geographically close to or commonly used by your Organization. Whenever a decision is made using the Edge Decisioning API, the system enforces the rules available in the same edge region:
 
 * If there is a matching rule, the profile's frequency capping counter is incremented.
-* Otherwise, no counter is created for the profile, and the frequency capping rule does not apply. Consequently, the profile will continue to receive personalized offers even if the capping threshold is exceeded.
+* Otherwise, no counter is created for the profile, and the frequency capping rule does not apply. Consequently, the profile will continue to receive personalized offers even if the capping threshold is exceeded, regardless of how long you wait between requests.
  
 For instance, let's consider your Organization's hub region as *NLD2*, and you are sending a decisioning request from Europe (*IRL1* edge region). In this scenario, the decisioning request will increment the profile's counter, as the rules are available in the (Ireland) *IRL1* region. However, if the decisioning request originates from a region like Japan (*JPN3*), which is not an edge region tied to (Netherland) *NLD2* hub region, no counter will be created, and the frequency capping rules will not be enforced.
+
+Likewise, if your Organization's hub region is *VA7*, the rules are only available in its associated edge regions (for example, *VA6* and *OR2*). Edge Decisioning requests routed to an edge region outside this set, such as *IRL1* or an edge region in India, do not enforce frequency capping.
+
+>[!IMPORTANT]
+>
+>If your audience is global, make sure that the Edge Decisioning requests are routed to edge regions associated with your Organization's hub region. Otherwise, frequency capping is not enforced for these requests. Also note that a profile's counter is not shared across edge regions: if a profile receives an offer through one edge region and then reaches another edge region, the counter is not incremented in the second one.
 
 >[!NOTE]
 >
