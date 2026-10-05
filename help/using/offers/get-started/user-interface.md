@@ -40,9 +40,9 @@ subfeature_v2:
 ---
 # Offer library user interface {#user-interface}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the user interface of the legacy **Decision Management** capability. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to [Get started with Decisioning](../../experience-decisioning/gs-experience-decisioning.md) instead.
 
 The **[!UICONTROL Decision management]** section in the left rail provides two menus that give you access to decision management capabilities: 
 

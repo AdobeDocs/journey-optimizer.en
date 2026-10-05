@@ -33,9 +33,11 @@ subfeature_v2:
 ---
 # Get started with context data {#context-data}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+>This page covers context data for the legacy **Decision Management** capability. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to [Leverage context data in Decisioning](../experience-decisioning/context-data.md) instead.
+>
+>Not sure which capability you are using? [Learn about Decisioning](../experience-decisioning/gs-experience-decisioning.md).
 
 Data sent as part of the decisioning request is considered as context data. You can leverage context data in the decisioning engine, for example to design a decision rule that requires the current weather to be ≥80 degrees at the time the decision request is made.
 

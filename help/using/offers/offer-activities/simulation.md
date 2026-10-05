@@ -40,9 +40,9 @@ subfeature_v2:
 ---
 # Create simulations {#create-simulations}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers simulations for the legacy **Decision Management** capability. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to [Get started with Decisioning](../../experience-decisioning/gs-experience-decisioning.md) instead.
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_simulation"

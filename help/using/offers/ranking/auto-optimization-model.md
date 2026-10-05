@@ -36,9 +36,11 @@ subfeature_v2:
 ---
 # Auto-optimization models {#auto-optimization-model}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers auto-optimization models for the legacy **Decision Management** capability. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to [Auto-optimization models](../../experience-decisioning/ranking/auto-optimization-model.md) instead.
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
 [!DNL Adobe Journey Optimizer]'s Auto-optimization model is a reinforcement learning model which maximizes offer click-through rate (CTR) by exploring all offers (or content), then ranking items based on predicted CTR, after eligibility rules and frequency caps are applied.
 

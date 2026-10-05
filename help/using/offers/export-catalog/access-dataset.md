@@ -37,9 +37,11 @@ subfeature_v2:
 ---
 # Access the exported offer catalog {#access-exported-catalog}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the exported offer catalog for the legacy **Decision Management** capability. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to [Item catalog](../../experience-decisioning/catalogs.md) instead.
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
 The exported offer catalog is accessible in Adobe Experience Platform **[!UICONTROL Datasets]** menu. One dataset is created for each object of your Offer Library.
 

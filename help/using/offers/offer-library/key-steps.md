@@ -35,9 +35,9 @@ subfeature_v2:
 ---
 # Key steps to create & manage offers {#key-steps-to-manage-offers}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the key steps to create and manage offers in the legacy **Decision Management** capability. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to [Get started with Decisioning](../../experience-decisioning/gs-experience-decisioning.md) instead.
 
 The main steps to create, configure and manage offers, as well as use them in a decision, are presented below.
 

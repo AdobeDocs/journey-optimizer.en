@@ -37,9 +37,11 @@ subfeature_v2:
 ---
 # Get started with rankings {#create-fallback-offers}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers ranking for the legacy **Decision Management** capability. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to [Ranking methods](../../experience-decisioning/ranking/ranking.md) instead.
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
 [!DNL Journey Optimizer] allows you to use rankings to ranks offers to display for a given profile:
 
