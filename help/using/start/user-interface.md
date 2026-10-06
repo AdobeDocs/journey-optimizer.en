@@ -393,8 +393,7 @@ CX Enterprise Coworker is the in-product conversational experience. On the Journ
 >title="Inbound Activity Deactivation activity"
 >abstract="Removes a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit."
 
-<!--DOCAC-15953 Add contextual help entry for custom metadata
--->
+<!--DOCAC-15953 Add contextual help entry for custom metadata-->
 
 
 >[!CONTEXTUALHELP]
