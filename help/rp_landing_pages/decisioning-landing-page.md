@@ -5,6 +5,9 @@ title: Decision capabilities
 description: Decision capabilities
 redpen-status: CREATED_||_2025-08-11_21-05-27
 exl-id: 07bdd927-059d-4000-a4dd-a9e455b26976
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Decision capabilities{#section-overview}
 

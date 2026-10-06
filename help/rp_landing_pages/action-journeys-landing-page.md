@@ -5,6 +5,9 @@ title: Action configuration
 description: Learn to configure custom actions in Journey Optimizer to connect journeys with third-party systems via API calls, responses, monitoring, and governance.
 redpen-status: CREATED_||_2025-08-11_21-11-53
 exl-id: 4ce42dab-7e8f-454d-8f34-e713312ad7c5
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Action configuration{#section-overview}
 

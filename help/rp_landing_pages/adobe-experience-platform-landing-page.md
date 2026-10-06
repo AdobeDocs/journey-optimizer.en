@@ -4,6 +4,9 @@ product: Journey Optimizer
 title: Adobe Experience Platform
 description: Learn to use Adobe Experience Platform data and audience functions within Journey Optimizer journeys, including the inAudience function.
 redpen-status: CREATED_||_2025-08-11_20-11-06
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 
 # Adobe Experience Platform{#section-overview}

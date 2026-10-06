@@ -9,7 +9,7 @@ role: Admin, User
 level: Intermediate
 keywords: permissions, authoring, messages
 exl-id: 5a968bd8-cf76-4242-aa80-3cfb3d551511
-TQID: https://experienceleague.adobe.com/LkOCFOSH-AzwWMoteNN-XI3R2yYkO5iBrVwMtobd4iI
+TQID: 'https://experienceleague.adobe.com/LkOCFOSH-AzwWMoteNN-XI3R2yYkO5iBrVwMtobd4iI'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,7 +18,11 @@ feature_v2:
     internal-label: Administration
   - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
     internal-label: Access control
-subfeature_v2: []
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
+  - id: d712382d-29ef-487a-93a7-cbebdd2ef24a
+    internal-label: Access management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

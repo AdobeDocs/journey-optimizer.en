@@ -5,6 +5,9 @@ title: Configure content card channel
 description: Configure content card channel
 redpen-status: CREATED_||_2025-08-11_20-43-03
 exl-id: 430e1c63-0f82-4515-9cc2-2e1346742da5
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Configure content card channel{#section-overview}
 

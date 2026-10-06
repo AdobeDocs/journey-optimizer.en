@@ -5,6 +5,9 @@ title: Configure landing pages
 description: Learn to configure landing page subdomains and presets in Journey Optimizer to host, brand, and manage your landing pages consistently.
 redpen-status: CREATED_||_2025-08-12_00-37-08
 exl-id: 599d9f7b-3e41-4926-95b6-f5f58255d91d
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Configure landing pages{#section-overview}
 

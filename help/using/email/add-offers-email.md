@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: offers, decision, emails, personalization, decision
 exl-id: 1e648eca-b5ca-4767-b45d-c179243e347f
-TQID: https://experienceleague.adobe.com/ajycOqX0Q6spKP8RgXmF-QLR95AYsCLLfIaKofpd95k
+TQID: 'https://experienceleague.adobe.com/ajycOqX0Q6spKP8RgXmF-QLR95AYsCLLfIaKofpd95k'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: 69102627-e6ba-56f5-ae85-9cc5357f529e
+    internal-label: Offers
 subfeature_v2:
   - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
     internal-label: Email design

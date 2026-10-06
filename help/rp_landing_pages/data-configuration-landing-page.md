@@ -5,6 +5,9 @@ title: Data configuration
 description: Learn to configure relational schemas, datasets, targeting dimensions, and channel settings to power orchestrated campaigns in Journey Optimizer.
 redpen-status: CREATED_||_2025-08-11_20-24-01
 exl-id: e1c20d14-4d0e-4ef9-9745-ca8ffe706f0b
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Data configuration{#section-overview}
 
