@@ -5,6 +5,9 @@ title: Reporting
 description: Reporting
 redpen-status: CREATED_||_2025-08-11_20-54-26
 exl-id: 37e906eb-8ae0-4988-93bf-00eb135199b2
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Reporting{#section-overview}
 

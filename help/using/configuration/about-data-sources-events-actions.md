@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: configuration, journey, dashboard, data sources, events, actions
 exl-id: c144d44f-031f-4ca2-800e-d3878af400a5
-TQID: https://experienceleague.adobe.com/e-4vo3PypkPPOl5pIKWJ1Ecmflj3-CTIAtEV8fjMdk4
+TQID: 'https://experienceleague.adobe.com/e-4vo3PypkPPOl5pIKWJ1Ecmflj3-CTIAtEV8fjMdk4'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -25,6 +25,8 @@ subfeature_v2:
     internal-label: Event configuration
   - id: c2062154-398f-466d-bbc2-4e0d0c3f37a9
     internal-label: Journeys configuration
+  - id: efb19423-4da4-4fd1-88d8-5ee8c71ae766
+    internal-label: Application settings
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

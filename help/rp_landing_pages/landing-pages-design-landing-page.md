@@ -5,6 +5,9 @@ title: Design content
 description: Design content
 redpen-status: CREATED_||_2025-08-12_00-36-39
 exl-id: 19ce7788-af7e-4949-a51f-eddc4ece2898
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Design content{#section-overview}
 

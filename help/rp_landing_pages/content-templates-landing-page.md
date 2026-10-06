@@ -5,6 +5,9 @@ title: Content templates
 description: Content templates
 redpen-status: CREATED_||_2025-08-12_00-38-47
 exl-id: a745742a-61c4-420e-bbd8-b3d72d782fb3
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Content templates{#section-overview}
 

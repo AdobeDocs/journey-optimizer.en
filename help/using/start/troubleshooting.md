@@ -7,7 +7,7 @@ feature: Get Started, Monitoring
 role: User
 level: Intermediate
 exl-id: f8acb987-5c6e-4545-93b9-fdfc0d74db57
-TQID: https://experienceleague.adobe.com/-E1vLZQv8dDZqejyh944at7jHheePuzXybU4lCyMris
+TQID: 'https://experienceleague.adobe.com/-E1vLZQv8dDZqejyh944at7jHheePuzXybU4lCyMris'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -16,9 +16,17 @@ feature_v2:
     internal-label: Journey management
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 subfeature_v2:
   - id: bf4bee78-72fe-48e8-ba77-2ecb14c2827d
     internal-label: Journey troubleshooting
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: 9bb4b199-a2fd-5580-9021-eafbab678ff5
+    internal-label: Monitoring
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

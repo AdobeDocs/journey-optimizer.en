@@ -11,15 +11,24 @@ level: Intermediate
 keywords: expression, editor
 exl-id: 46d868b3-01d2-49fa-852b-8c2e2f54292f
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/PpKizv9cq9CzZkYL1CpTXgYJk8T3o4HRWLlncAmgqg8
+TQID: 'https://experienceleague.adobe.com/PpKizv9cq9CzZkYL1CpTXgYJk8T3o4HRWLlncAmgqg8'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decisioning
+    internal-label: Decision capabilities
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
+  - id: 736fce34-6237-51e6-acd3-371abb174feb
+    internal-label: Rules
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
@@ -29,11 +38,6 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-subfeature_v2:
-  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
-    internal-label: Decisioning API
-  - id: eb547372-2a95-4d13-b0fd-f720c9895880
-    internal-label: Edge Decisioning
 ---
 # Use Adobe Experience Platform data for Decisioning {#aep-data}
 

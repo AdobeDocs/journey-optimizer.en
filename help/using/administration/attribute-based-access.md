@@ -9,7 +9,7 @@ role: Admin,Leader
 level: Intermediate
 keywords: abac, attribute, authorizations, data, access, sensitive, assets
 exl-id: 162b0848-313a-447e-9237-5a6dbc8102c6
-TQID: https://experienceleague.adobe.com/PrmjDN7KDV5Y1NRxfEyQ-3ADOIWjgMv2OuRXitt-Wzk
+TQID: 'https://experienceleague.adobe.com/PrmjDN7KDV5Y1NRxfEyQ-3ADOIWjgMv2OuRXitt-Wzk'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,7 +18,11 @@ feature_v2:
     internal-label: Administration
   - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
     internal-label: Access control
-subfeature_v2: []
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
+  - id: d712382d-29ef-487a-93a7-cbebdd2ef24a
+    internal-label: Access management
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

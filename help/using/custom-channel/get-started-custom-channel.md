@@ -5,14 +5,27 @@ feature: Channel Configuration
 topic: Content Management
 role: User
 level: Beginner
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
   - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
     internal-label: Custom Channels
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 
 # Get started with custom channels {#get-started-custom-channel}

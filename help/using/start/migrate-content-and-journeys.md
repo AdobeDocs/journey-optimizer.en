@@ -7,12 +7,25 @@ feature: Get Started
 topic: Content Management
 role: User
 level: Intermediate
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-subfeature_v2: []
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Migrate content and journeys {#migrate-content-and-journeys}
 

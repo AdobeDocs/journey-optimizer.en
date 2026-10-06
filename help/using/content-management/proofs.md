@@ -5,12 +5,23 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: e742c04e-2987-4466-84af-bdaf4d714552
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
 subfeature_v2:
   - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
     internal-label: Proofs
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Send proofs using test profiles data {#send-proofs}
 

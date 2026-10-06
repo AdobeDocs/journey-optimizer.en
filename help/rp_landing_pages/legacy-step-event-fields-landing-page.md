@@ -5,6 +5,9 @@ title: Legacy step event fields
 description: Legacy step event fields
 redpen-status: CREATED_||_2025-08-11_20-53-35
 exl-id: 046a5e06-a827-4194-be1c-e6546a8da747
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Legacy step event fields{#section-overview}
 

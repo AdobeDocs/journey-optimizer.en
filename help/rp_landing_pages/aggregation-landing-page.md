@@ -6,6 +6,9 @@ description: Aggregation
 redpen-status: CREATED_||_2025-08-11_20-12-06
 exl-id: fd46c749-c77a-4cda-94ec-58c58d136595
 hide: true
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Aggregation{#section-overview}
 

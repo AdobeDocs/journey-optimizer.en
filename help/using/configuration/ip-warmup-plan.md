@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: IP, group, subdomains, deliverability
 exl-id: c2434086-2ed4-4cd0-aecd-2eea8f0a55f6
-TQID: https://experienceleague.adobe.com/UdieayUZxB6syucHx93TgILpTl6Tmg2DggCKuYAt048
+TQID: 'https://experienceleague.adobe.com/UdieayUZxB6syucHx93TgILpTl6Tmg2DggCKuYAt048'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -28,6 +28,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration

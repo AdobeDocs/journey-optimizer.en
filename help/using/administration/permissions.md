@@ -9,7 +9,7 @@ topic: Administration
 role: Admin
 level: Intermediate
 keywords: product, profiles, sandbox
-TQID: https://experienceleague.adobe.com/Fni-bz0ax4B4q2wm87B7bfNXmybwfAyCu-ewclLwSCw
+TQID: 'https://experienceleague.adobe.com/Fni-bz0ax4B4q2wm87B7bfNXmybwfAyCu-ewclLwSCw'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,9 +18,13 @@ feature_v2:
     internal-label: Administration
   - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
     internal-label: Access control
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: cfdf3a89-7087-4a5c-a6d2-2f4eb64a3470
     internal-label: User and role management
+  - id: d712382d-29ef-487a-93a7-cbebdd2ef24a
+    internal-label: Access management
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

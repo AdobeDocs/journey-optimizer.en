@@ -9,14 +9,25 @@ role: Developer
 level: Intermediate
 version: Campaign Orchestration
 exl-id: d1fd072d-b143-4752-822f-23f98684ba80
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
     internal-label: Campaign Orchestration
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Trigger Orchestrated campaigns using a signal {#trigger-signal}
 

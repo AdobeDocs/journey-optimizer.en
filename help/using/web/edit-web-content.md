@@ -6,6 +6,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
@@ -16,6 +19,12 @@ subfeature_v2:
     internal-label: Web channel
   - id: d056adbe-402d-4f42-9746-f3d424e598b1
     internal-label: Web SDK
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Edit web content {#edit-web-content}
 

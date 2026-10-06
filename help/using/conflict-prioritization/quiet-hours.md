@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
 exl-id: defebd53-fa80-4720-acdc-0f41ceb00214
-TQID: https://experienceleague.adobe.com/I-zCSU3tp4n-i-EEkx118svN7R9bfUh0phCB-B5ZZ5Q
+TQID: 'https://experienceleague.adobe.com/I-zCSU3tp4n-i-EEkx118svN7R9bfUh0phCB-B5ZZ5Q'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Conflict & prioritization
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: 736fce34-6237-51e6-acd3-371abb174feb
+    internal-label: Rules
 subfeature_v2:
   - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
     internal-label: Business rules

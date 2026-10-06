@@ -5,6 +5,9 @@ title: Landing pages
 description: Landing pages
 redpen-status: CREATED_||_2025-08-12_00-37-59
 exl-id: 94ad5ecb-b1f1-4fd7-8ef4-5fdbae25ae36
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Landing pages{#section-overview}
 

@@ -7,23 +7,30 @@ role: Developer
 level: Experienced
 exl-id: 0e35c77b-6741-4c32-b012-36fc3a8b6d7a
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/ei2UI51ezO5fOBbZU48w3AtsrumB5-6rf6SZDYfF6-k
+TQID: 'https://experienceleague.adobe.com/ei2UI51ezO5fOBbZU48w3AtsrumB5-6rf6SZDYfF6-k'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decisioning
+    internal-label: Decision capabilities
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-    internal-label: Developer
+  - id: 629f438c-ea49-5ade-aa39-c2a256ff3036
+    internal-label: API
+  - id: afaef773-049d-566d-8a3b-49ba521f73e5
+    internal-label: Collections
 subfeature_v2:
   - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
     internal-label: Decisioning API
   - id: eb547372-2a95-4d13-b0fd-f720c9895880
     internal-label: Edge Decisioning
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Create a selection strategy {#create-selection-strategy}
 

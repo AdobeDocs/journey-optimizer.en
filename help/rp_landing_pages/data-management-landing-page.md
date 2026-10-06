@@ -5,6 +5,9 @@ title: Data management
 description: Data management
 redpen-status: CREATED_||_2025-08-11_21-06-39
 exl-id: d60bd99c-aa17-4ef0-85a9-384ef21b96da
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Data management{#section-overview}
 

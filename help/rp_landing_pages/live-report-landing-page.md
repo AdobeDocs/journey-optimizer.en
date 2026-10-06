@@ -5,6 +5,9 @@ title: Live report
 description: Live report
 redpen-status: CREATED_||_2025-08-11_20-47-56
 exl-id: 08fa046a-4610-4923-a84e-db54e5ad7402
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Live report{#section-overview}
 

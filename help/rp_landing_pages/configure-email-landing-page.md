@@ -5,6 +5,9 @@ title: Configure email channel
 description: Configure email channel
 redpen-status: CREATED_||_2025-08-11_20-34-10
 exl-id: c9377c3c-d716-4fae-adc8-458cbe7213dd
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Configure email channel{#section-overview}
 
