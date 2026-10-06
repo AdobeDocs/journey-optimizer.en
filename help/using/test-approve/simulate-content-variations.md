@@ -40,20 +40,20 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Preview all your content variants at a glance in a side-by-side grid, manage them from a consolidated bottom action bar, and switch back to the classic experience at any time.
+**On this page:** Create and manage named content variants, select which variants to render, compare their details and previews, and check for invalid links before sending your content.
 
 >[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_simulate_content_variations"
 >title="Simulate using sample input"
->abstract="In this screen, you can preview and compare all your content variants side by side. Create variants by entering values manually, uploading a CSV or JSON file, auto-generating them with AI, or selecting existing simulated users."
+>abstract="In this screen, you can preview and compare content variants side by side. Create variants by entering values manually, uploading a CSV, JSON, or JSONL file, auto-generating them with AI, or selecting existing simulated users."
 
-The **[!UICONTROL Simulate content variations]** experience has been redesigned to make testing and comparing your variants faster and easier. All variants now render together in a single scrollable grid, and every control you need is available from a single bottom action bar.
+The **[!UICONTROL Simulate content variations]** experience has been redesigned to make testing and comparing your variants faster and easier. Variants render in a scrollable grid, with controls available directly on each card and in the bottom action bar. You can render all variants or select a subset to preview.
 
 To access the new experience, from your content, click **[!UICONTROL Simulate content]** to open the content simulation screen. If variants are already available, the preview grid is shown immediately. If none exist yet, a blank variant is displayed and you can start creating them using any of the methods described below.
 
-If you prefer the previous layout, click **[!UICONTROL Switch to classic experience]** in the bottom action bar at any time. The classic experience documentation is available at [Simulate content variations (classic experience)](simulate-sample-input.md).
+If you prefer the previous layout, click **[!UICONTROL Old experience]** in the bottom action bar at any time. The classic experience documentation is available at [Simulate content variations (classic experience)](simulate-sample-input.md).
 
 ## Create and manage variants {#manage-variants}
 
@@ -61,13 +61,11 @@ Variants can be created in different ways: manually one by one or by importing a
 
 ### Add variants manually {#add-variants}
 
-To add a blank variant manually, click **[!UICONTROL +]** in the bottom action bar. A new blank variant is added and you can enter the attribute values directly.
+To add a blank variant manually, click **[!UICONTROL Add]** in the bottom action bar. A new blank variant is added and you can enter the attribute values directly.
 
 ![](assets/simulate-variations-create.png)
 
-You can also use **[!UICONTROL ...]** > **Upload variants** to import a CSV, JSON, or JSONLINES file where each row or entry becomes a variant. Download the file template from the upload dialog to use the correct format.
-
-![](assets/simulate-variations-upload.png)
+To import variants, click **[!UICONTROL Upload]** in the bottom action bar. You can upload a CSV, JSON, or JSONL (JSON Lines) file where each row or entry becomes a variant. Download the file template from the upload dialog to use the correct format. Variant names can be included in the uploaded file.
 
 ### Auto-generate variants {#auto-generate}
 
@@ -87,12 +85,28 @@ Simulated users are created and managed from the journey **[!UICONTROL Simulatio
 
 To use simulated users as variants:
 
-1. Click **[!UICONTROL Select variants]** in the bottom action bar.
-1. Select the simulated users you want to use from the list, then click **[!UICONTROL Select]**.
+1. Click the **[!UICONTROL Simulated Users]** button in the bottom action bar.
+1. Select the checkboxes for the simulated users you want to use from the list.
 
-  ![](assets/simulate-variations-select.png)
+    ![](assets/simulate-variations-select.png)
+
+1. Click **[!UICONTROL Select]** to add the selected users as variants.
 
 The selected simulated users are added as variants. You can edit a variant's attribute values locally for testing, but those changes are not saved back to the simulated user record.
+
+### Manage variants from their cards {#variant-card-controls}
+
+Each variant card provides controls to manage the variant without opening the bottom action bar's overflow menu.
+
+![](assets/simulate-variant-controls.png)
+
+* **Name the variant** to distinguish it from other variants at a glance. Names are also displayed for variants created from simulated users or generated with AI.
+* **URL check** to validate the links in the variant's content.
+* **View configuration details** to see the channel and other settings associated with the variant (email only).
+* **Copy attributes** directly from the card.
+* **Duplicate the variant** to create a copy of an existing variant, then edit its attribute values for another test scenario.
+* **Show variant details** to view and edit the attribute values for that variant.
+* **Remove a variant** using control on its card.
 
 ### Export variants {#export-variants}
 
@@ -102,6 +116,21 @@ You can export all current variants, whether added manually, generated with AI, 
 
 ## Preview variants {#preview-grid}
 
+### Select variants to render {#select-variants-to-render}
+
+You can render all variants or select only the variants you want to preview from the full list. Unselected variants remain hidden until you show them again, they are not removed.
+
+1. Click the variant list icon from the bottom action bar.
+1. Select the checkboxes for the variants you want to render. Use **[!UICONTROL Select all]** to select or clear the full list.
+
+    To find a specific variant, use the **[!UICONTROL Search variants]** field.
+
+    ![](assets/simulate-select.png)
+
+1. Click the blue button showing the number of selected variants, for example **[!UICONTROL Show 3 selected]**, to apply your selection.
+
+To display every variant again, open the panel and click **[!UICONTROL Show all]**. Click **[!UICONTROL Cancel]** to close the panel without applying your selection.
+
 ### Switch between variants {#switch-variants}
 
 When in preview mode, all variants render side by side with a numbered indicator at the top. To switch between variants, click the number or use the **< >** navigation buttons in the bottom action bar.
@@ -110,25 +139,43 @@ When in preview mode, all variants render side by side with a numbered indicator
 
 ### Display variants in preview or editing mode {#edit-variants}
 
-You can display variants either in preview or editing mode, where you can edit the content and attribute values directly. Click **[!UICONTROL Preview]** or **[!UICONTROL Edit]** in the bottom action bar to switch all previews at once between the two modes.
+You can display variants either as content previews or as variant details, where you can edit their attribute values. Click the eye icon to show previews or the pencil icon to show variant details in the bottom action bar to switch all variants at once between the two modes.
 
 ![](assets/simulate-variations-mode.png)
 
-To toggle a single variant individually, either click the **[!UICONTROL Show preview]** or **[!UICONTROL Show variant details]** button at the top of its card, or long-press its number in the bottom action bar (or use Alt + Up/Down).
+To toggle a single variant individually, click the eye icon to show its preview or the pencil icon to show its details at the top of its card. You can also long-press its number in the bottom action bar (or use Alt + Up/Down).
 
 ![](assets/simulate-variations-unitary-switch.png)
 
+### Show full attribute paths {#attribute-paths}
+
+Use the attribute-path toggle in the bottom action bar to show or hide full attribute paths in variant details. Show the full paths when you need to identify an attribute's location in the profile data.
+
+ ![](assets/simulate-full-path.png)
+
 ### Change the layout {#change-layout}
 
-To change the way variants are displayed, use the **bottom action bar** to switch between side by side, vertically stacked, or wrapped layouts.
+To change the way variants are displayed, click the layout selector in the bottom action bar, which shows the current layout, for example **[!UICONTROL Side by side]**. Select **[!UICONTROL Side by side]**, **[!UICONTROL Vertically stacked]**, or **[!UICONTROL Wrap]**.
+
+In the **[!UICONTROL Vertically stacked]** layout, each variant's details and content preview are displayed side by side so you can compare attribute values with the rendered content.
 
 ![](assets/simulate-variations-layout.png)
 
 ### Switch between desktop and mobile views {#switch-views}
 
-To display how variants will render on different devices, click the icons in the bottom action bar to switch between desktop and mobile views. The preview grid updates to show how the variants will look on the selected device.
+When device-view controls are available for your content, click the desktop or mobile icon in the bottom action bar to switch between the two views. The preview grid updates to show how the variants will look on the selected device.
 
 ![](assets/simulate-variations-device.png)
+
+### Validate links {#validate-links}
+
+URLs are automatically validated for each rendered variant. When invalid links are found, a red invalid-links count is displayed next to the link icon on the variant's card.
+
+Click the count to open the **[!UICONTROL URL validation failed]** dialog that lists each invalid **[!UICONTROL URL]** and its **[!UICONTROL Reason]**, such as **[!UICONTROL Malformed URL]**. Review the reason for each link to identify what needs to be corrected in your content.
+
+![](assets/simulate-url.png)
+
+Click **[!UICONTROL Copy]** to copy the validation details, or **[!UICONTROL Close]** to return to the simulation screen.
 
 ## Additional capabilities for the Email channel {#email-capabilities}
 
@@ -139,7 +186,6 @@ When simulating email content, a top bar provides additional email-specific tool
 * **[!UICONTROL Spam report]** — Analyze your email content against spam filters and get a deliverability score. [Learn more](../content-management/spam-report.md)
 * **[!UICONTROL Render email]** — Preview how your email renders across popular email clients and devices. [Learn more](../content-management/rendering.md)
 * **[!UICONTROL Send proof]** — Send a proof of one or more variants to a set of email recipients. Click **[!UICONTROL Send proof]**, add up to 10 recipient addresses, select the variant(s) to include, then click **[!UICONTROL Send proof]** to confirm. To review previously sent proofs, click **[!UICONTROL View proofs]**. [Learn more](../content-management/proofs.md)
-* **[!UICONTROL View configuration details]** — Review the channel configuration applied to this content.
 
 >[!NOTE]
 >
