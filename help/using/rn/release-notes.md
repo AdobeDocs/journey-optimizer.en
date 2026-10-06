@@ -890,6 +890,10 @@ The following reminder applies to administration in this release.
 
 ### Usability improvements {#sep-26-usability}
 
+* **Auto save in the Email Designer** - After a few seconds, your content is now automatically saved in the Email Designer, so you no longer risk losing your changes while designing your email. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+  Availability date: September 25, 2026
+
 * **Easier detach and join branches in the new journey canvas** - You can now detach a branch from the rest of your journey without deleting it, and join it back later at a different point, either by selecting an eligible activity directly on the canvas or by picking it from a list of disconnected or already-used branches. [Learn more](../building-journeys/using-the-journey-designer.md#join-and-detach-branches)
 
   Availability date: September 1, 2026
