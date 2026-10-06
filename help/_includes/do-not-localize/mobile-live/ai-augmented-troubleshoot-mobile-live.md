@@ -37,7 +37,8 @@ For complete understanding, this information should be combined with the documen
 * Live activities can only be triggered and managed through API Triggered Campaigns.
 * The **High Throughput** option must not be enabled, since it is incompatible with Live activity.
 * Assurance sessions are for test and QA devices only; end-user production devices are not connected to Assurance.
-* Requirements: a physical iOS device on iOS 16.1 or later; the Xcode Simulator supports local start only (remote push via APNs is not supported on Simulator); remote start from Assurance requires iOS 17.1 or later, a valid push-to-start token, and a valid channel configuration; Adobe Experience Platform Mobile SDK 5.11.0 or later.
+* Android uses standard Assurance, with no dedicated Live Activities plugin view; run the app on a physical device or emulator on Android 16.1 (API level 36.1) or later.
+* iOS plugin requirements: a physical iOS device on iOS 16.1 or later; the Xcode Simulator supports local start only (remote push via APNs is not supported on Simulator); remote start from Assurance requires iOS 17.1 or later, a valid push-to-start token, and a valid channel configuration; Adobe Experience Platform Mobile SDK 5.11.0 or later; an active Assurance session.
 * Batch audiences may be up to 24 hours stale (batch evaluation, once daily); this audience-freshness risk is not applicable to unitary use cases.
 * The first time a Live activity starts on a device, iOS shows a one-time permission prompt; the user must tap "Allow" for update tokens to be generated and synced.
 * `input-push-channel` must exactly match `liveActivityData.channelID`; a mismatch causes delivery failures.
