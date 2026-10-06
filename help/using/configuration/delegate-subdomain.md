@@ -143,15 +143,15 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
 
     ![](assets/subdomain-name.png)
 
-<!--
- >[!CAUTION]
+    <!--
+    >[!CAUTION]
     >
     >Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
     >
     >You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage].
 
     Capital letters are not allowed in subdomains. TBC by PM
--->
+    -->
 
     >[!NOTE]
     >

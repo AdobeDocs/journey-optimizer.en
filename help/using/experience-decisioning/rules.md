@@ -208,9 +208,9 @@ Before using a rule in your decisioning strategy or campaign, you can test it wi
     * To create a manual sample, select the **[!UICONTROL Create sample]** button.
     * To generate test variants using AI, click the **[!UICONTROL Generate]** button.
 
-  >[!NOTE]
-  >
-  >AI-based test variant generation is available to organizations with access to Adobe AI capabilities.
+    >[!NOTE]
+    >
+    >AI-based test variant generation is available to organizations with access to Adobe AI capabilities.
 
 The Test variants section is automatically populated with the created or generated samples. Each variant includes  attributes used in your rule. You can edit the field values directly to simulate different scenarios.
 
