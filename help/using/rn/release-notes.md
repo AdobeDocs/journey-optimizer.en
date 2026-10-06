@@ -490,29 +490,11 @@ The following capabilities and improvements are coming to channels in this relea
 
 +++ Coming soon — **Information below is subject to change.**
 
-<table>
-<thead>
-<tr>
-<th><strong>Override email channel configuration settings</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>When building your journeys and campaigns, you can now override the email parameters derived from the selected channel configuration directly at the journey or campaign action level.</p>
-<p>This lets you personalize the email header fields (<strong>From name</strong>, <strong>From email prefix</strong>, <strong>Reply to name</strong>, and <strong>Reply to email</strong>), the execution address, and the list-unsubscribe values, using profile attributes or contextual data for more precise control. In particular, this allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 * **Custom SMS BYOP auth flexibility** - You can now configure **custom authentication headers** when connecting your SMS provider's OAuth setup, including where the token is placed on outgoing messages and how the token request itself is formatted.
 
 * **Direct mail - Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration.
 
 * **Direct mail - Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors.
-
-* **Suppression list override at email action level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model.
 
 +++
 
@@ -691,12 +673,6 @@ The following improvement is coming to campaigns in this release.
 
   Availability date: September 30, 2026
 
-+++ Coming soon — **Information below is subject to change.**
-
-* **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
-
-+++
-
 ### Decisioning {#sep-26-decisioning}
 
 The following capabilities and improvements are coming to decisioning in this release.
@@ -758,12 +734,6 @@ The following capabilities and improvements are coming to decisioning in this re
 * **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually. [Learn more](../experience-decisioning/ranking/ranking-formulas.md#simulate-ranking-formula)
 
   Availability date: September 22, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **Build a ranking formula with AI** - A new AI assistant in the ranking formula builder lets you describe the ranking logic you want in plain language and generates a formula draft for you to review and apply.
-
-+++
 
 ### Onboarding {#sep-26-onboarding}
 
