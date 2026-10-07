@@ -122,27 +122,6 @@ topic_v2:
 
 +++
 
-### Orchestrated campaigns {#oct-26-orchestrated-campaigns}
-
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>OR join activity for orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The <strong>Join activity</strong> in orchestrated campaigns now supports both AND and OR join conditions. With OR logic, a profile that completes any one upstream branch, rather than all of them, continues along a single shared downstream path. This makes it possible to model "if A or B or C, then do this" patterns directly on the canvas without duplicating downstream steps across separate branches.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-+++
-
 ### Integrations {#oct-26-integrations}
 
 +++ Coming soon — **Information below is subject to change.**
