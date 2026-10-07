@@ -5,6 +5,9 @@ title: Author web pages
 description: Author web pages
 redpen-status: CREATED_||_2025-08-11_20-40-34
 exl-id: 6f1ce53e-ab5a-4c77-bbd6-fc049e3dc4f5
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Author web pages{#section-overview}
 

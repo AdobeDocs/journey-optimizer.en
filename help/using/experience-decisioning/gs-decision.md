@@ -7,18 +7,28 @@ role: User
 level: Experienced
 exl-id: 008d42c7-a523-4857-b34e-0e8dd1dfa507
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/y5aC7N-3FKFf9RQLHV40YtOR4EwHi3EWil-QFVL2tEI
+TQID: 'https://experienceleague.adobe.com/y5aC7N-3FKFf9RQLHV40YtOR4EwHi3EWil-QFVL2tEI'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decisioning
+    internal-label: Decision capabilities
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
@@ -28,13 +38,6 @@ topic_v2:
     internal-label: Personalization
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-subfeature_v2:
-  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
-    internal-label: Decisioning API
-  - id: eb547372-2a95-4d13-b0fd-f720c9895880
-    internal-label: Edge Decisioning
-  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
-    internal-label: Get started
 ---
 # Get started with decision capabilities in [!DNL Journey Optimizer] {#gs-decision}
 

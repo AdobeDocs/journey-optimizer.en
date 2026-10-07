@@ -1,29 +1,21 @@
 ---
-title: Get started with decisions policies 
-description: Learn how to work with decisions policies to deliver offers. 
+title: Get started with decisions policies
+description: Learn how to work with decisions policies to deliver offers.
 feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
 exl-id: 63aa1763-2220-4726-a45d-3a3a8b8a55ec
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/E1BsOCI4d-f7PCFVEzNlWFj6Odh4T-9S3oq295tmCsE
+TQID: 'https://experienceleague.adobe.com/E1BsOCI4d-f7PCFVEzNlWFj6Odh4T-9S3oq295tmCsE'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decisioning
+    internal-label: Decision capabilities
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-    internal-label: User
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-    internal-label: Security
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-    internal-label: Privacy
 subfeature_v2:
   - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
     internal-label: Decisioning API
@@ -31,6 +23,17 @@ subfeature_v2:
     internal-label: Edge Decisioning
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Get started with decision policies {#create-decision}
 

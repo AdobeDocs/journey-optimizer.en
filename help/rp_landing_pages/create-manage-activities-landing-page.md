@@ -6,6 +6,9 @@ description: Create & manage decisions
 redpen-status: CREATED_||_2025-08-11_21-01-28
 badge: label="Legacy" type="Informative"
 exl-id: fc968e54-e35b-4def-b8ad-1a181c81c738
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Create & manage decisions{#section-overview}
 

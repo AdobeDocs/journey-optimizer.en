@@ -5,6 +5,9 @@ title: Orchestrated campaigns activities
 description: Orchestrated campaigns activities
 redpen-status: CREATED_||_2025-08-11_20-27-08
 exl-id: d6635d58-b618-4d92-b60f-c6fc63e473a6
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Orchestrated campaigns activities{#section-overview}
 

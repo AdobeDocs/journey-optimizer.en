@@ -9,7 +9,7 @@ feature: Channel Configuration, Email
 topic: Administration
 keywords: email, configuration, surface, subdomains
 exl-id: 1fc9a4f6-6c34-4414-b400-aac6bda9ee25
-TQID: https://experienceleague.adobe.com/mVdk2WGb0rL06j1cmNEh4fj0JC-hwuro8ku-0Yv02N8
+TQID: 'https://experienceleague.adobe.com/mVdk2WGb0rL06j1cmNEh4fj0JC-hwuro8ku-0Yv02N8'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -25,9 +25,14 @@ subfeature_v2:
     internal-label: Subdomains
   - id: fae48155-b23f-40d2-a252-a25bce350b4d
     internal-label: Email configuration
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration

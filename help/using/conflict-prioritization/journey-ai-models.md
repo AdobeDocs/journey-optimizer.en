@@ -7,14 +7,29 @@ level: Intermediate
 version: Journey Orchestration
 badge: label="Limited Availability" type="Informative"
 exl-id: 3e7c3069-b022-4709-936d-acaad56b5882
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
     internal-label: Conflict & prioritization
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
     internal-label: Rules set configuration
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Use AI models to rank journeys {#journey-ai-models}
 

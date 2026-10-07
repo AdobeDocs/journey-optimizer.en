@@ -9,6 +9,9 @@ role: User
 level: Beginner
 keywords: integration
 exl-id: 104f283e-f6a5-431b-919a-d97b83d19632
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
@@ -21,6 +24,12 @@ subfeature_v2:
     internal-label: Analytics integration
   - id: d16f7424-4847-4b90-a37c-4b52cbdabee5
     internal-label: Intelligent Services integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Work with Integrations {#external-sources}
 

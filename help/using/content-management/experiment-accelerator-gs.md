@@ -9,13 +9,15 @@ role: User
 level: Beginner
 keywords: content, experiment, multiple, audience, treatment
 exl-id: 8913889e-3c8d-414f-8300-16fc1bd30607
-TQID: https://experienceleague.adobe.com/0zeotvAI7G4FBX8g4qdt-clFuKRFKwQ-ENefBpNf-ts
+TQID: 'https://experienceleague.adobe.com/0zeotvAI7G4FBX8g4qdt-clFuKRFKwQ-ENefBpNf-ts'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
+  - id: 31bc9329-ef7e-5c6b-a292-c7386a476887
+    internal-label: Experimentation
 subfeature_v2:
   - id: f29a52db-c90c-4345-902e-b586d1406d8d
     internal-label: Content experiment

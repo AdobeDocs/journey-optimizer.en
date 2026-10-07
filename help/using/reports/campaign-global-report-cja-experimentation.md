@@ -8,13 +8,15 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 69742163-7378-49ab-929e-86213d6e65e3
-TQID: https://experienceleague.adobe.com/m11Vxa3bSvaOHe1kFs5tU9oQS08lzcL0DSPyrABbXBI
+TQID: 'https://experienceleague.adobe.com/m11Vxa3bSvaOHe1kFs5tU9oQS08lzcL0DSPyrABbXBI'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
 subfeature_v2:
   - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
     internal-label: Performance monitoring

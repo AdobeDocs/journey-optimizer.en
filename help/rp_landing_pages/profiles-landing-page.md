@@ -5,6 +5,9 @@ title: Profiles
 description: Profiles
 redpen-status: CREATED_||_2025-08-11_20-46-38
 exl-id: 9fc17481-1983-4462-b904-4b24d69c797d
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Profiles{#section-overview}
 

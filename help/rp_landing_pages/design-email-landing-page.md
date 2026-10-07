@@ -5,6 +5,9 @@ title: Design your email content
 description: Design your email content
 redpen-status: CREATED_||_2025-08-11_20-33-11
 exl-id: 21ba6677-f158-4d9d-8b01-304c4d3841ee
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Design your email content{#section-overview}
 

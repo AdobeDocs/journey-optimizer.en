@@ -8,7 +8,7 @@ feature: Web Channel, Subdomains
 level: Experienced
 keywords: web, subdomains, configuration
 exl-id: 6e00466d-4ce5-4d80-89ff-c7331a5ab158
-TQID: https://experienceleague.adobe.com/h3QU-3zrp2KR8WiQu4aJg6KjU5BaT5mM8RSR4ssSW50
+TQID: 'https://experienceleague.adobe.com/h3QU-3zrp2KR8WiQu4aJg6KjU5BaT5mM8RSR4ssSW50'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -27,6 +27,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
     internal-label: Web experience

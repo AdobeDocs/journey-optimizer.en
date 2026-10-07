@@ -5,6 +5,9 @@ title: Launch your first Orchestrated campaign
 description: Launch your first Orchestrated campaign
 redpen-status: CREATED_||_2025-08-11_20-24-42
 exl-id: 2b553e08-5a20-4efb-895e-c8984c52d6b5
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Launch your first Orchestrated campaign{#section-overview}
 

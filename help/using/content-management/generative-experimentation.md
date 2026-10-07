@@ -8,7 +8,7 @@ topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 exl-id: c47af613-0529-4922-bd0d-5ef4cc619305
-TQID: https://experienceleague.adobe.com/YrQS5ldhaFXfS3J7tScdZQrXy-K4sS8h5e6dLkMD8rI
+TQID: 'https://experienceleague.adobe.com/YrQS5ldhaFXfS3J7tScdZQrXy-K4sS8h5e6dLkMD8rI'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -26,6 +26,8 @@ subfeature_v2:
     internal-label: Publish
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
     internal-label: AI content generation
+  - id: f659587f-8bf8-5d99-be43-652c46ebaa44
+    internal-label: Content Assistant
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

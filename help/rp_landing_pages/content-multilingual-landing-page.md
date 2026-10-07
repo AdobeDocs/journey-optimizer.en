@@ -5,6 +5,9 @@ title: Multilingual content
 description: Multilingual content
 redpen-status: CREATED_||_2025-08-12_00-43-28
 exl-id: 3f02694e-2237-4022-8e05-b76a5a1443b5
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Multilingual content{#section-overview}
 

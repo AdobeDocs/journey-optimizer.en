@@ -8,6 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: journey optimizer, use case, decision guide, which capability, get started, practitioner goals, tutorials
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
     internal-label: Use cases
@@ -16,6 +19,12 @@ feature_v2:
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Start from your goal {#ajo-use-case-guide}
 

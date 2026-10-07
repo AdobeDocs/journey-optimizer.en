@@ -5,6 +5,9 @@ title: Start creating content
 description: Start creating content
 redpen-status: CREATED_||_2025-08-11_20-31-35
 exl-id: fe9456c9-50ae-442d-80d3-81b708d3494b
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Start creating content{#section-overview}
 

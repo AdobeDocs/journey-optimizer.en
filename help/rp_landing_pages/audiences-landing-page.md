@@ -5,6 +5,9 @@ title: Audiences
 description: Audiences
 redpen-status: CREATED_||_2025-08-11_20-46-11
 exl-id: c3b9f97d-7c2f-436c-abba-60b7c0726ee4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Audiences{#section-overview}
 

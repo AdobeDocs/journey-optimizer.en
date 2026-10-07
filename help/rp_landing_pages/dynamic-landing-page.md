@@ -5,6 +5,9 @@ title: Dynamic content
 description: Dynamic content
 redpen-status: CREATED_||_2025-08-12_00-40-11
 exl-id: 87d500e0-4a2c-4e22-a90c-611229b55d7c
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Dynamic content{#section-overview}
 

@@ -6,6 +6,9 @@ description: Guided channel setup
 hide: true
 redpen-status: CREATED_||_2025-08-11_21-07-03
 exl-id: fb2185b8-6c92-4c50-8a79-2eb776cf0ac5
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Guided channel setup{#section-overview}
 

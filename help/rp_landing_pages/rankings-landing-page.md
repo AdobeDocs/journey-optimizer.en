@@ -6,6 +6,9 @@ description: Create rankings
 badge: label="Legacy" type="Informative"
 redpen-status: CREATED_||_2025-08-11_21-00-00
 exl-id: c768d4b4-470d-4c53-b71b-0d09f89100e9
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Create rankings{#section-overview}
 
