@@ -861,3 +861,4 @@ The following reminder applies to administration in this release.
 * **Fix syntax with AI** - When validating an expression, if a PQL syntax error is detected, the Personalization Editor provides a "Fix with AI" option to help resolve the issue directly from the editor. [Read more](../personalization/personalization-build-expressions.md#validation-mechanisms).
 
   Availability date: September 22, 2026
+I got 
