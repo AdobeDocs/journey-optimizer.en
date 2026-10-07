@@ -146,7 +146,16 @@ Once your WhatsApp API credentials have been successfully created, you can now c
 
 Webhooks act as the communication bridge between Meta's WhatsApp Business Platform and Adobe Journey Optimizer, allowing you to receive real-time notifications about message events and user interactions.
 
-Note that Meta allows only one webhook, callback URL and Verify Token, per WhatsApp Business Account, even across multiple sandboxes or WhatsApp credentials. **Feedback events** (Sent, Delivered, Read, Error, button click) are still captured correctly in every sandbox. **Inbound events** (replies, opt-in/opt-out/help keywords) are only received in the single sandbox where the webhook is registered, register it against your **production sandbox** to receive inbound events there.
+Meta allows only one webhook, callback URL, and Verify Token per **WhatsApp Business Account**, shared across sandboxes, API credentials, and channel configurations using that account. **Feedback events** (Sent, Delivered, Read, Error, button click) are captured in every sandbox. **Inbound events** (replies, opt-in/opt-out/help keywords) are received only in the sandbox whose webhook is registered in Meta, regardless of where the original message was sent. We recommend registering the webhook from your **production sandbox** to receive inbound events there.
+
+### Webhook setup best practices {#whatsapp-webhook-recommendations}
+
+* Create a primary WhatsApp API credential and webhook in the **production sandbox**, and register its Webhook URL and Verify Token in Meta. If Meta currently uses a webhook from another sandbox, replace that registration with the production webhook's values.
+* Verify that the primary webhook receives inbound responses and delivery information before adding other sender configurations.
+* Create additional WhatsApp API credentials and webhooks for each sender phone number. Subsequent webhooks in the **same sandbox** do not generate a new Webhook URL or Verify Token.
+* Once the connection is working, keep the Meta registration and primary webhook unchanged when adding sender configurations. Production receives feedback and inbound events, Stage and Dev receive feedback only.
+
+### Create the webhook {#create-whatsapp-webhook}
 
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL WhatsApp Webhooks]** menu under **[!UICONTROL WhatsApp settings]**, and click the **[!UICONTROL Create Webhook]** button.
 
@@ -186,15 +195,13 @@ Note that Meta allows only one webhook, callback URL and Verify Token, per Whats
 
     ![](assets/webhook-5.png)
 
-1. To modify existing configuration and access your **[!UICONTROL Webhook URL]** or **[!UICONTROL Webhook Verify toker]**, locate the desired Webhook and click the **[!UICONTROL Edit]** option to make the necessary changes.
+1. To access the generated webhook values, locate the webhook you submitted and click **[!UICONTROL Edit]**.
 
-1. Copy your **[!UICONTROL Webhook Verify toker]** generated here, then paste it into the Meta interface as part of your Webhook setup. 
-
-    For detailed instructions on how and where to add this verification token, refer to [Meta documentation](https://developers.facebook.com/docs/graph-api/webhooks/getting-started#configure-webhooks-product).
-
-1. Access and copy your new **[!UICONTROL Webhook URL]** from your previously submitted **[!UICONTROL WhatsApp Webhook]**.
+1. Copy the **[!UICONTROL Webhook URL]** and **Verify Token** from this webhook. Use both values from the same webhook in the sandbox selected to receive inbound events.
 
     ![](assets/webhook-6.png)
+
+1. In Meta's webhook configuration for the connected WhatsApp Business Account, paste the **Webhook URL** into **Callback URL** and the **Verify Token** into **Verify Token**, then complete the verification. The Verify Token is not your API Token. For Meta's setup and subscription steps, see [Meta documentation](https://developers.meta.com/vr/documentation/unity/ps-webhooks-getting-started/).
 
 Now that your Webhook is configured, you can create your WhatsApp configuration.
 
