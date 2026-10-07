@@ -850,7 +850,7 @@ The following reminder applies to administration in this release.
 
 ### Usability improvements {#sep-26-usability}
 
-* **Auto save in the Email Designer** - After a few seconds, your content is now automatically saved in the Email Designer, so you no longer risk losing your changes while designing your email. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+* **Auto save in the Email Designer** - Your changes are now automatically saved in the Email Designer after about 10 seconds of inactivity, so you no longer risk losing your changes while designing your email. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
   Availability date: September 25, 2026
 
