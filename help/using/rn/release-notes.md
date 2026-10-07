@@ -51,6 +51,46 @@ topic_v2:
 
 ## October '26 updates {#oct-26-updates}
 
+### Channels {#oct-26-channels}
+
+The following capability is coming to channels in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Custom outbound channel (General Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Custom outbound channels</strong> let administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder. Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement.</p>
+<p>With this release, custom outbound channels also gain several new capabilities:</p>
+<ul>
+<li>Use Journey Optimizer Decisioning in the custom channel payload through the Personalization Editor, the same way as in code-based experiences.</li>
+<li>Apply business rules to custom channels, the same way you already can on native channels.</li>
+<li>Select custom channels in the channel list for API-triggered campaigns, which was not previously possible.</li>
+<!--<li>Define a reporting webhook for a custom channel and attach it to a channel configuration, so you can enrich your Journey Optimizer reports with interaction events.</li>-->
+</ul>
+<p>Previously available in Limited Availability, this capability is now available to all environments (General Availability), with the enhancements described above.</p>
+<p><img src="assets/do-not-localize/custom-channel.gif"></p>
+<p>For more information, refer to the <a href="../custom-channel/get-started-custom-channel.md">detailed documentation</a>.</p>
+<p>Availability date: October 2, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
++++ Coming soon — **Information below is subject to change.**
+
+* **Custom SMS BYOP auth flexibility** - You can now configure **custom authentication headers** when connecting your SMS provider's OAuth setup, including where the token is placed on outgoing messages and how the token request itself is formatted.
+
+* **Direct mail - Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration.
+
+* **Direct mail - Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors.
+
++++
+
 ### Journeys {#oct-26-journeys}
 
 +++ Coming soon — **Information below is subject to change.**
@@ -107,18 +147,6 @@ topic_v2:
 * **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
 
 * **Business Performance Analysis skill** - Analyze journey performance and get concrete optimization recommendations, right from the chat.
-
-+++
-
-### Channels {#oct-26-channels}
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **Custom SMS BYOP auth flexibility** - You can now configure **custom authentication headers** when connecting your SMS provider's OAuth setup, including where the token is placed on outgoing messages and how the token request itself is formatted.
-
-* **Direct mail - Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration.
-
-* **Direct mail - Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors.
 
 +++
 
@@ -426,32 +454,6 @@ The following capabilities and improvements are coming to content management in 
 ### Channels {#sep-26-channels}
 
 The following capabilities and improvements are coming to channels in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom outbound channel (General Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Custom outbound channels</strong> let administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder. Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement.</p>
-<p>With this release, custom outbound channels also gain several new capabilities:</p>
-<ul>
-<li>Use Journey Optimizer Decisioning in the custom channel payload through the Personalization Editor, the same way as in code-based experiences.</li>
-<li>Apply business rules to custom channels, the same way you already can on native channels.</li>
-<li>Select custom channels in the channel list for API-triggered campaigns, which was not previously possible.</li>
-<!--<li>Define a reporting webhook for a custom channel and attach it to a channel configuration, so you can enrich your Journey Optimizer reports with interaction events.</li>-->
-</ul>
-<p>Previously available in Limited Availability, this capability is now available to all environments (General Availability), with the enhancements described above.</p>
-<p><img src="assets/do-not-localize/custom-channel.gif"></p>
-<p>For more information, refer to the <a href="../custom-channel/get-started-custom-channel.md">detailed documentation</a>.</p>
-<p>Availability date: October 2, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
