@@ -180,7 +180,7 @@ The following capability is coming to channels in this release.
 
 +++ Coming soon — **Information below is subject to change.**
 
-* **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified, left-rail accessible menu that shows both in one combined view.
+* **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view.
 
 +++
 
@@ -865,4 +865,3 @@ The following reminder applies to administration in this release.
 * **Fix syntax with AI** - When validating an expression, if a PQL syntax error is detected, the Personalization Editor provides a "Fix with AI" option to help resolve the issue directly from the editor. [Read more](../personalization/personalization-build-expressions.md#validation-mechanisms).
 
   Availability date: September 22, 2026
-I got 
