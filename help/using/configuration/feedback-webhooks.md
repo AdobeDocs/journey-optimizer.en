@@ -113,7 +113,20 @@ To create a webhook, follow these steps:
 
 After a message execution, **[!DNL Journey Optimizer]** sends the following payload to the configured endpoint.
 
-```
+The payload includes the following campaign and SMS delivery details:
+
+* **`messageExecution.campaignType`** - Type of campaign: `Scheduled` or `ApiTriggered`.
+* **`messageDeliveryFeedback.encoding`** - SMS encoding reported by the provider, such as `GSM` or `UNICODE`.
+* **`messageDeliveryFeedback.numberOfMessageParts`** - Number of SMS parts (segments) the message was split into, sent as a string.
+* **`messageDeliveryFeedback.deliveryTimestamp`** - Provider-reported event time in ISO-8601 format.
+
+>[!NOTE]
+>
+>The `encoding`, `numberOfMessageParts`, and `deliveryTimestamp` fields are currently populated only for the Sinch SMS provider. Fields without a value are sent as `null`.
+
+### Email sample payload
+
+```json
 {
   "requestId": "8NoByJneShCdCGRnrGS1t1m3CdA73dhR",
   "imsOrg": "myImsOrg",
@@ -127,7 +140,8 @@ After a message execution, **[!DNL Journey Optimizer]** sends the following payl
     "messageExecutionID": "HUMA-26362805",
     "messageType": "transactional",
     "campaignID": "16f24a15-7e21-477c-848a-d5695ca7f137",
-    "campaignVersionID": "2ca10c10-56dd-4505-87cd-fa5da84e7a5d"
+    "campaignVersionID": "2ca10c10-56dd-4505-87cd-fa5da84e7a5d",
+    "campaignType": "ApiTriggered"
   },
   "messageDeliveryFeedback": {
     "feedbackStatus": {
@@ -141,7 +155,10 @@ After a message execution, **[!DNL Journey Optimizer]** sends the following payl
       "code": "25",
       "reason": "Admin Failure"
     },
-    "retryCount": 0
+    "retryCount": 0,
+    "encoding": null,
+    "numberOfMessageParts": null,
+    "deliveryTimestamp": null
   },
   "identityMap": {
     "email": [
@@ -155,6 +172,57 @@ After a message execution, **[!DNL Journey Optimizer]** sends the following payl
 
 ```
 
+### SMS sample payload
+
+The following example shows delivery feedback for an SMS message sent through Sinch:
+
+```json
+{
+  "requestId": "4f1c2d9e-...",
+  "imsOrg": "XXXX@AdobeOrg",
+  "sandbox": {
+    "id": "...",
+    "name": "prod"
+  },
+  "channel": "sms",
+  "eventType": "message.feedback",
+  "channelContext": {
+    "profileAddress": null,
+    "profileNumber": "+15555550123"
+  },
+  "messageExecution": {
+    "messageExecutionID": "UMA-...",
+    "messageType": "marketing",
+    "campaignID": "...",
+    "campaignVersionID": "...",
+    "messageID": "...",
+    "messageProfileID": "...",
+    "campaignType": "ApiTriggered"
+  },
+  "messageDeliveryFeedback": {
+    "feedbackStatus": {
+      "value": "delivered"
+    },
+    "offers": null,
+    "messageExclusion": null,
+    "messageFailure": null,
+    "retryCount": null,
+    "responseCode": null,
+    "responseDurationMillis": null,
+    "encoding": "GSM",
+    "numberOfMessageParts": "2",
+    "deliveryTimestamp": "2026-10-06T18:22:41.512Z"
+  },
+  "identityMap": {
+    "Phone": [
+      {
+        "id": "+15555550123"
+      }
+    ]
+  }
+}
+```
+
 The webhook can capture the following events:
 
 * Sent
@@ -162,7 +230,7 @@ The webhook can capture the following events:
 * Bounce (see example above)
 * Errors
 
-Every incoming request also includes a unique requestId that is sent back to the webhook.
+Every incoming request also includes a unique `requestId` that is sent back to the webhook.
 
 ## Next steps {#next}
 
