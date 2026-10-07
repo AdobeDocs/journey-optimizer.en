@@ -9,45 +9,54 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page introduces the Journey Optimizer journey designer canvas, explaining how to build multi-step journeys by dragging and dropping events, orchestration, and action activities from the palette.
+* **TL;DR:** This page explains how to use the Journey Optimizer journey designer canvas to build a sequenced journey, use the new canvas tools, preview channel content, and copy or paste configured activities.
 
 **Intents:**
 
-* Navigate the journey designer interface (palette, canvas, toolbar, activity configuration pane)
-* Add events, orchestration activities, and action activities to a journey canvas
-* Configure a fallback alternative path for Condition and Action activities on timeout or error
-* Copy and paste activities within the same journey or across different journeys in the same instance
-* Start a journey using an event trigger or a Read Audience entry point
+* Navigate the journey designer palette, canvas, toolbar, and activity configuration pane.
+* Add events, orchestration activities, and action activities to a journey.
+* Use the new canvas experience to add activities, expand channel previews, select multiple activities, detach branches, and join branches.
+* Preview channel activity content on the canvas while designing, during a simulation, or in test mode.
+* Start a journey from an event or a Read Audience activity.
+* Copy and paste activities within the same instance.
 
 **Glossary:**
 
-* **Palette**: The left-hand panel in the journey designer listing all available events, orchestration, and action activities for drag-and-drop onto the canvas *(product-specific)*
-* **Canvas**: The central design area of the journey designer where activities are placed, connected, and configured *(product-specific)*
-* **Activity configuration pane**: The right-hand panel that opens when an activity is selected on the canvas, used to fill in activity settings *(product-specific)*
-* **Journey Fragments**: Reusable sets of pre-built journey nodes that can be inserted directly into the canvas to avoid rebuilding common logic *(product-specific)*
-* **Reaction event**: An event activity placed after a message to branch the journey based on recipient tracking interactions (open, click) *(product-specific)*
+* **Palette**: The left-hand side of the journey designer where available activities are sorted into Events, Orchestration, and Actions categories *(product-specific)*.
+* **Canvas**: The central zone in the journey designer where activities are dropped and configured *(product-specific)*.
+* **Activity configuration pane**: The right-hand pane that opens when an activity is selected on the canvas and contains the activity settings *(product-specific)*.
+* **New journey canvas experience**: A canvas user interface built for complex use cases with performance, automatic layout, and guided authoring capabilities *(product-specific)*.
+* **Content preview**: A canvas capability that renders channel activity content inline as thumbnails and opens a centered preview when a thumbnail is selected *(product-specific)*.
+* **Simulation**: A context where content preview can reflect the selected test user, personalization values, and the path that user follows through the journey *(product-specific)*.
+* **Test mode**: A context where content preview shows visible content for the journey being tested, but the content is not personalized for the targeted test profile *(product-specific)*.
 
 **Guardrails:**
 
-* Actions, conditions, wait activities, and reaction events cannot be placed as the first step in a new journey.
-* Copy/paste is only supported within the same instance; cross-instance copy/paste is not supported.
-* You cannot copy/paste an event into a destination journey that uses a different namespace.
-* Pasted activities from a different sandbox may reference data that does not exist in the destination journey.
-* Only event and wait activities can be set in parallel; other activity types cannot run in parallel.
-* Alternative paths (timeout/error fallback) are available only for Condition and Action activities.
+* Actions, the condition activity, the wait activity, and the reaction activity cannot be dropped on the canvas as the first step of a new journey.
+* Content preview in test mode is visible but is not personalized for the test profile you target.
+* Only event and wait activities can be set in parallel.
+* Several events can be added to a journey only if they use the same namespace.
+* Copy/paste across different tabs and browsers is supported only within the same instance.
+* An event cannot be copied and pasted if the destination journey has an event that uses a different namespace.
+* Pasted activities may reference data that does not exist in the destination journey.
+* Copy/paste actions cannot be undone; pasted activities must be selected and deleted if they are no longer needed.
 
 **Terminology:**
 
-* Canonical name: Journey Designer — Acronym: none — variants: journey canvas, orchestration canvas
-* Synonyms: "palette" = "activity panel"; "canvas" = "design area"
-* Do not confuse: "events" (trigger journey entry or branching) ≠ "actions" (what happens to the customer, e.g. send a message)
+* Canonical name: journey designer. Variants used on the page: journey canvas, orchestration canvas, canvas.
+* Synonyms: "Read Audience" = "Read Audiences".
+* Do not confuse: "Simulation" content preview, which can reflect the selected test user and personalization values, is not the same as "test mode" content preview, where content is visible but not personalized for the targeted test profile.
+* Do not confuse: "Events" trigger journey entry or movement, while "Actions" are what happens as a result of a trigger, such as sending a message.
 
 **FAQ:**
 
-* **Q: How do profiles enter a journey?** — Profiles enter either unitarily in real time when a configured event is received, or in batch when a Read Audience activity triggers the journey.
-* **Q: Can I add multiple events to a journey?** — Yes, you can add several events as long as they all use the same namespace.
-* **Q: How do I define a fallback when an action fails?** — In the activity properties, enable the "Add an alternative path in case of a timeout or an error" option to add a fallback path after the activity.
-* **Q: Can I copy activities from a read-only journey?** — Yes, you can copy activities from any journey regardless of its status, but you can only paste within the same instance.
-* **Q: What is a Journey Fragment?** — A reusable set of pre-built journey nodes (e.g. eligibility checks, welcome sequences) that can be inserted directly onto the canvas to avoid rebuilding common logic from scratch.
+* **Q: What does the Expand all toolbar icon do?** — It expands all channel activities to show a thumbnail preview of their content directly on the canvas, and each thumbnail can be opened in a fullscreen preview.
+* **Q: Is content preview personalized in test mode?** — No. In test mode, the content is visible, but it is not personalized for the test profile you target.
+* **Q: When is content preview personalized?** — During a simulation, content preview reflects the selected test user, including personalization values and the path that user follows through the journey.
+* **Q: How can profiles enter a journey?** — Profiles can enter when a configured event is received or when a Read Audience activity triggers the journey.
+* **Q: Can activities be copied between journeys?** — Yes. Activities can be copied and pasted in the same journey or a different journey, but copy/paste is supported only within the same instance.
+* **Q: What can be done with multiple selected activities?** — Multiple selected activities can be copied, deleted, or saved as a journey fragment.
 
 +++
+
+<!-- ai-section-version: 1 | source-hash: 1272b125 -->

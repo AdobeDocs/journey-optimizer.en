@@ -8,13 +8,15 @@ role: User
 level: Intermediate
 mini-toc-levels: 2
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-TQID: https://experienceleague.adobe.com/k4DqGogrTZ9QrnqyFGwdgDeUI9ivpOd1iSI0c5comuU
+TQID: 'https://experienceleague.adobe.com/k4DqGogrTZ9QrnqyFGwdgDeUI9ivpOd1iSI0c5comuU'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
+  - id: 2b5e3e9e-56a5-5bc7-beff-65ac2c02eeb2
+    internal-label: Guardrails
 subfeature_v2:
   - id: a6c67b0d-bd3e-4d5d-95a8-882e3709d632
     internal-label: Journey guardrails
@@ -247,7 +249,7 @@ The following guardrails apply to the [Audience Qualification](../building-journ
 
 * The Audience qualification activity cannot be used with Adobe Campaign activities.
 * Supplemental identifiers are not supported for Audience qualification journeys.
-* A sandbox can include a maximum of **300** Audience Qualification activities across all live, closed, paused, test mode, and dry run journeys. This limit also applies to Audience Qualification activities used as exit criteria. When this limit is reached, publishing journeys with additional Audience Qualification activities is blocked.
+* A sandbox can include a maximum of **300** Audience Qualification activities across all live, closed, paused, test mode, and dry run journeys. This limit also applies to Audience Qualification activities used as exit criteria. Audience Qualification activities used as the first activity in closed journeys are excluded from this limit. When this limit is reached, publishing journeys with additional Audience Qualification activities is blocked.
 
 Learn more about journey processing rates and throughput limits in [this section](../building-journeys/entry-management.md#journey-processing-rate).
 

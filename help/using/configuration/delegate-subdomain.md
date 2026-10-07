@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: subdomain, delegation, domain, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-TQID: https://experienceleague.adobe.com/DwAI8P5ACNyZ8IGCsMoLglZ-EK0HE99ZV0yap51EfKo
+TQID: 'https://experienceleague.adobe.com/DwAI8P5ACNyZ8IGCsMoLglZ-EK0HE99ZV0yap51EfKo'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Configuration
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
 subfeature_v2:
   - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
     internal-label: Subdomains
@@ -27,9 +29,14 @@ subfeature_v2:
     internal-label: Get started
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
@@ -71,7 +78,7 @@ The **full subdomain delegation** is the recommended method. Learn more about th
 
 When setting up subdomains in [!DNL Journey Optimizer], follow the guardrails and recommendations outlined below.
 
-* By default, [!DNL Journey Optimizer] allows you to delegate **a maximum of 10 subdomains**. However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
+* By default, [!DNL Journey Optimizer] allows you to delegate **a maximum of 10 subdomains**, combining email, landing page, and web channels. However, depending on your license contract, you may be able to delegate up to 3000 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
 
 * Parallel submission of subdomains is not supported in [!DNL Journey Optimizer]. If you try to submit a subdomain for delegation when another one is in the **[!UICONTROL Processing]** status, you get an error message.
 
@@ -141,21 +148,19 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
 
 1. Specify the name of the subdomain to delegate.
 
-    ![](assets/subdomain-name.png)
-
-    <!--
-    >[!CAUTION]
-    >
-    >Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
-    >
-    >You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage].
-
-    Capital letters are not allowed in subdomains. TBC by PM
-    -->
-
     >[!NOTE]
     >
     >After creating a new subdomain with your DNS provider, allow 24-48 hours for DNS propagation before attempting delegation to Adobe.
+
+    ![](assets/subdomain-name.png)
+
+    <!--
+    CAUTION: Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
+
+    You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage].
+
+    Capital letters are not allowed in subdomains. TBC by PM
+    -->
 
 1. Set up **[!UICONTROL DMARC record]** in the dedicated section. If the subdomain has an existing [DMARC record](dmarc-record.md), and if it is fetched by [!DNL Journey Optimizer], you can use the same values or change them as needed. If you do not add any values, the default values will be used. [Learn how to manage DMARC record](dmarc-record.md#set-up-dmarc)
 

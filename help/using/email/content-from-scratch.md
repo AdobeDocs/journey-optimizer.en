@@ -169,4 +169,8 @@ To start building your content, follow the steps below:
 
 1. When your content is ready, click **[!UICONTROL Save]**.
 
+    >[!NOTE]
+    >
+    >With auto save, your content is automatically saved after a few seconds while you design it in the Email Designer. This capability is in Limited Availability. Contact your Adobe representative to gain access.
+
 {{$include /help/_includes/do-not-localize/email/ai-augmented-content-from-scratch.md}}

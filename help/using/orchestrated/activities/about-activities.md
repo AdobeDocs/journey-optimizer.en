@@ -98,6 +98,7 @@ The following activities are specific to organizing and executing Orchestrated c
 
 Available flow control activities are:
 
+* [Alert](alert.md): Notify subscribers when execution reaches a specific point in an Orchestrated campaign.
 * [And-join](and-join.md): Synchronize multiple execution branches of an Orchestrated campaign.
 * [Fork](fork.md): Create outbound transitions to start several activities at the same time.
 * [Wait](wait.md): Momentarily pause execution of a part of an Orchestrated campaign.

@@ -8,7 +8,7 @@ role: Admin
 level: Experienced
 keywords: landing, landing page, subdomains, configuration
 exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
-TQID: https://experienceleague.adobe.com/oxSnH-wTxOVwNjYVdhSRSWLFdDZezqm-1KQCwlNKJ0s
+TQID: 'https://experienceleague.adobe.com/oxSnH-wTxOVwNjYVdhSRSWLFdDZezqm-1KQCwlNKJ0s'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -17,6 +17,8 @@ feature_v2:
     internal-label: Email
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
     internal-label: Sandboxes
@@ -24,9 +26,14 @@ subfeature_v2:
     internal-label: Get started
   - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
     internal-label: Subdomains
+  - id: b19d9237-76be-466d-a869-aacf2d72205f
+    internal-label: Landing pages
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
@@ -124,6 +131,8 @@ To use a subdomain that is already delegated to Adobe, follow the steps below:
 >id="ajo_admin_lp_subdomain_dns"
 >title="Generate the matching DNS record"
 >abstract="To configure a new landing page subdomain, you need to copy the Adobe nameserver information displayed in the Journey Optimizer interface and paste it into your domain-hosting solution to generate the matching DNS record. Once the checks are successful, the subdomain is ready to be used to create landing page presets."
+
+By default, [!DNL Journey Optimizer] allows you to delegate a maximum of 10 subdomains in total, combining email, landing page, and web channels. However, depending on your license contract, you may be able to delegate up to 3000 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. [Learn more](../configuration/delegate-subdomain.md#guardrails)
 
 To configure a new subdomain, follow the steps below.
 

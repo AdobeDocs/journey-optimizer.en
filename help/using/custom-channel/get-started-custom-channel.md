@@ -5,15 +5,27 @@ feature: Channel Configuration
 topic: Content Management
 role: User
 level: Beginner
-badge: label="Limited Availability" type="Informative"
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
   - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
     internal-label: Custom Channels
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 
 # Get started with custom channels {#get-started-custom-channel}
@@ -26,9 +38,9 @@ subfeature_v2:
 
 >[!AVAILABILITY]
 >
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+>Custom channels are available in journeys, orchestrated campaigns and Marketing (action and API-triggered) campaigns. They are not available in transactional campaign types.
 
-<!--Multilingual support, business rules enforcement, and [!DNL Adobe Experience Decisioning] integration are planned for a future release.-->
+<!--Multilingual support is planned for a future release.-->
 
 [!DNL Journey Optimizer]'s **Custom channels** capability lets you bring any outbound channel into [!DNL Journey Optimizer] so you can use it in campaigns and journeys—just like any native channel. Using the **Channel Builder**, administrators can create and configure new channels without engineering involvement, and marketers can immediately start using them to communicate with customers.
 
@@ -40,7 +52,7 @@ subfeature_v2:
 
 Custom channels fill this gap: they enable you to use any outbound HTTP endpoint as a full [!DNL Journey Optimizer] channel, unlocking:
 
-* **Full channel capabilities** – Optimization (content experimentation and targeting), OOTB reporting and monitoring, consent and governance enforcement, and expression fragments. <!--Multilingual and business rules are planned for a future release.-->
+* **Full channel capabilities** – Optimization (content experimentation, targeting, and business rules), OOTB reporting and monitoring, consent and governance enforcement, and expression fragments. <!--Multilingual is planned for a future release.-->
 * **Unified orchestration** – Manage all your messaging channels in a single place, regardless of the underlying delivery provider.
 * **No-code setup** – Admins configure the channel through the Channel Builder UI; no custom code or engineering effort is required.
 
@@ -128,6 +140,10 @@ Setting up and using a custom channel follows the main stages below:
 <p>
 </td>
 </tr></table>
+
+>[!NOTE]
+>
+>Custom channels are not supported when [copying objects between sandboxes](../configuration/copy-objects-to-sandbox.md). Custom channel configurations and the messages that use them cannot be added to a package or copied to another sandbox.
 
 <!--
 ## Next steps {#next-steps}

@@ -5,6 +5,9 @@ title: Adobe Journey Optimizer Documentation
 description: Adobe Journey Optimizer Documentation
 redpen-status: CREATED_||_2025-08-11_21-21-01
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Adobe Journey Optimizer Documentation{#section-overview}
 

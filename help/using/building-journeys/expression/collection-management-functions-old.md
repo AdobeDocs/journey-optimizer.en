@@ -130,12 +130,11 @@ earlier timestamp) in order to only consider prior events.
 >
 >When the filtering condition in the **all()** function is empty, the filter will return all the elements in the list. **However, in order to count the number of elements of a collection, the all function is not required.**
 
+```json
+count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.token})
+```
 
-   ```json
-   count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.token})
-   ```
-
-   The result of the expression is **3**.
+The result of the expression is **3**.
 
 **Example 3:**
 

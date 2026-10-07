@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: subdomain, optimizer, delegation
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
-TQID: https://experienceleague.adobe.com/s6dJd1ZWjFDyQvTGShiAR-IDsKkOdfpYXCKw0bRdTI8
+TQID: 'https://experienceleague.adobe.com/s6dJd1ZWjFDyQvTGShiAR-IDsKkOdfpYXCKw0bRdTI8'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -26,6 +26,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting

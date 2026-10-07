@@ -5,6 +5,9 @@ title: Troubleshooting
 description: Troubleshooting
 redpen-status: CREATED_||_2025-08-11_20-20-50
 exl-id: bf26ca1f-e239-418e-8ce8-a891f3ba3416
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Track, monitor and troubleshoot {#section-overview}
 

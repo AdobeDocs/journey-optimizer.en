@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 keywords: campaigns, API-triggered, REST, optimizer, messages
 exl-id: e04b0d38-6b3d-4086-a0f0-c1b8f6d9634f
-TQID: https://experienceleague.adobe.com/4cCtvRATLk-gNyMcY-jESte82DKpgVbhA75pE4fNKmQ
+TQID: 'https://experienceleague.adobe.com/4cCtvRATLk-gNyMcY-jESte82DKpgVbhA75pE4fNKmQ'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Configuration
   - id: a653cc2e-bc85-4353-a306-399e5b247978
     internal-label: Journey Optimizer campaigns
+  - id: 629f438c-ea49-5ade-aa39-c2a256ff3036
+    internal-label: API
 subfeature_v2:
   - id: f7479fa1-474b-479d-8c98-f6cee5865a38
     internal-label: API triggered campaigns
@@ -26,6 +28,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Schedule the API triggered campaign {#api-schedule}
 

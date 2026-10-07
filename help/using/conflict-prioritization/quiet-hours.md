@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
 exl-id: defebd53-fa80-4720-acdc-0f41ceb00214
-TQID: https://experienceleague.adobe.com/I-zCSU3tp4n-i-EEkx118svN7R9bfUh0phCB-B5ZZ5Q
+TQID: 'https://experienceleague.adobe.com/I-zCSU3tp4n-i-EEkx118svN7R9bfUh0phCB-B5ZZ5Q'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Conflict & prioritization
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: 736fce34-6237-51e6-acd3-371abb174feb
+    internal-label: Rules
 subfeature_v2:
   - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
     internal-label: Business rules
@@ -118,6 +120,10 @@ To set quiet hours, create a rule inside a custom rule set. [Learn how to create
       * **[!UICONTROL Weekly]** - Choose specific days of the week and a timeslot. You can also enforce the rule **[!UICONTROL All day]**.
 
          ![](assets/quiet-hours-weekly.png)
+
+         When a weekly period crosses midnight, the selected day is the day the period starts. For example, a Monday 9:00 PM–9:00 AM period covers Monday 9:00 PM through Tuesday 9:00 AM; it does not cover Monday 12:00 AM–9:00 AM.
+
+         Review weekly periods together to make sure they cover the intended days continuously, especially at midnight and at the start or end of the week. For example, a Saturday and Sunday all-day period combined with Monday–Friday 9:00 PM–9:00 AM periods leaves Monday 12:00 AM–9:00 AM uncovered. To extend quiet hours through Monday 9:00 AM, include Sunday in the 9:00 PM–9:00 AM period.
 
       * **[!UICONTROL Custom date]** - Choose specific dates in the calendar and a timeslot. You can also enforce the rule **[!UICONTROL All day]**.
 

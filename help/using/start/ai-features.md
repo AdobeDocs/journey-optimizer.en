@@ -9,7 +9,7 @@ role: User
 level: Beginner
 mini-toc-levels: 2
 exl-id: 628a5d84-6a33-4ed8-84cb-e2e4c6cc2b80
-TQID: https://experienceleague.adobe.com/bkl7d0VxTNUboLL9MZ3cmEBAgiVHlaU3-ZTXTrpGBjA
+TQID: 'https://experienceleague.adobe.com/bkl7d0VxTNUboLL9MZ3cmEBAgiVHlaU3-ZTXTrpGBjA'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -23,6 +23,8 @@ subfeature_v2:
     internal-label: AI Assistant
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
     internal-label: AI content generation
+  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
+    internal-label: Overview
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -85,9 +87,10 @@ Learn more in the Coworker documentation:
 
 In Adobe Journey Optimizer, Coworker provides dedicated skills across these capabilities:
 
-* **Journeys**: Build journeys with natural language prompts (Journey Create), generate channel-specific message copy and designs (Channel Content Create), and diagnose journey drop-offs, scheduling overlaps, and execution anomalies (Journey Analyze). [See all Coworker skills for journeys](../building-journeys/journeys-coworker-skills.md).
-* **Loyalty**: Create and configure loyalty challenges (Loyalty Challenge Management), and query loyalty points, tier distributions, and revenue metrics (Loyalty Insights). [See all Coworker skills for loyalty](../loyalty-challenges/loyalty-coworker-skills.md).
+* **Journeys**: Build journeys with natural language prompts, generate channel-specific message copy and designs, simulate journey logic with journey simulation, compare journey versions, and diagnose journey drop-offs, scheduling overlaps, and execution anomalies. [See all Coworker skills for journeys](../building-journeys/journeys-coworker-skills.md).
+* **Loyalty**: Create and configure loyalty challenges, and query loyalty points, tier distributions, and revenue metrics. [See all Coworker skills for loyalty](../loyalty-challenges/loyalty-coworker-skills.md).
 * **Content Management**: Discover, create, update, clone, and publish templates, fragments, landing pages, and inline message variants using 15 read/write MCP tools. [See all Coworker content management tools](../content-management/content-management-coworker-skills.md).
+* **Decisioning**: Understand why a specific offer was or wasn't shown to a profile or segment, tracing eligibility, ranking, and capping; create, explain, simulate, and optimize eligibility rules and ranking formulas in natural language. [See all Coworker skills for Decisioning](../experience-decisioning/experience-decisioning-coworker-skills.md).
 
 ## MCP server {#mcp-server}
 

@@ -5,6 +5,9 @@ title: Personalization use cases
 description: Step-by-step use cases for building personalized messages in Adobe Journey Optimizer, covering order status notifications, cart abandonment emails, and health plan prescription alerts.
 redpen-status: CREATED_||_2025-08-12_00-35-09
 exl-id: 1b351130-3caa-4389-9caf-1a56e263f085
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Personalization use cases{#section-overview}
 

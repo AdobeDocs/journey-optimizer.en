@@ -1,19 +1,19 @@
 ---
-title: Create decisions policies 
-description: Learn how to create decisions policies 
+title: Create decisions policies
+description: Learn how to create decisions policies
 feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
 version: Journey Orchestration
 exl-id: e7a89354-28ea-431f-a15d-a8c18946d266
-TQID: https://experienceleague.adobe.com/ooRR2Tz1Tphu4JUHgeYjfz-guj8S87NVaWKxM4jShEM
+TQID: 'https://experienceleague.adobe.com/ooRR2Tz1Tphu4JUHgeYjfz-guj8S87NVaWKxM4jShEM'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decisioning
+    internal-label: Decision capabilities
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
 subfeature_v2:
@@ -24,6 +24,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
@@ -63,7 +66,7 @@ To present the best dynamic offer and experience to your customers, add a decisi
 
 >[!AVAILABILITY]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **Email**, **Push notification**, **SMS**, and **Direct Mail** channels.
+>Decision policies are available to all customers for the **Code-based Experience**, **Email**, **Push notification**, **SMS**, **[Custom channels](../custom-channel/get-started-custom-channel.md)**, and **Direct Mail** channels.
 
 ## Add a decision policy {#add}
 
@@ -200,6 +203,14 @@ For Push notifications, you can add a new decision policy using either the **per
 >Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the [release notes](https://developer.adobe.com/client-sdks/home/release-notes){target="_blank"} to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in [this section](https://developer.adobe.com/client-sdks/home/current-sdk-versions){target="_blank"}.
  
 +++
+
+>[!TAB Custom channel]
+
+For custom channels, add a decision policy using the **personalization editor** available in the payload editor. [Learn how to author custom channel content](../custom-channel/create-custom-experience.md#author-content).
+
+1. Click **[!UICONTROL Edit code]** to open the payload editor, then open the personalization editor using the ![](assets/do-not-localize/editor-icon.svg) icon on the field you want to personalize.
+
+1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
 
 >[!TAB Direct Mail]
 

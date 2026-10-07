@@ -5,7 +5,7 @@ feature: A/B Testing, Experimentation
 role: User
 level: Experienced
 exl-id: 67ba8861-be6f-42ae-b9b8-96168d0dd15c
-TQID: https://experienceleague.adobe.com/fvhdR1yMUsQ9H6N2V1-q-nEWXhuKkzcfRgeEKH-vsbk
+TQID: 'https://experienceleague.adobe.com/fvhdR1yMUsQ9H6N2V1-q-nEWXhuKkzcfRgeEKH-vsbk'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -14,15 +14,22 @@ feature_v2:
     internal-label: Email
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-    internal-label: User
-topic_v2:
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: 31bc9329-ef7e-5c6b-a292-c7386a476887
     internal-label: Experimentation
 subfeature_v2:
   - id: f29a52db-c90c-4345-902e-b586d1406d8d
     internal-label: Content experiment
+  - id: d612add9-edf9-5172-b87c-40cd25017ce7
+    internal-label: A/B Testing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
 ---
 # Understand statistical calculations in Experimentation report {#experiment-report-calculations}
 

@@ -109,6 +109,8 @@ In some cases, you must republish a journey for changes or assets to remain effe
 
 In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas.
 
+You can also use AI in Coworker to compare journey versions. For more details, see [Journey Version Comparison](journeys-coworker-skills.md#journey-version-comparison).
+
 ![Journey versions list showing published and draft versions](assets/journeyversions1.png)
 
 >[!NOTE]
@@ -145,7 +147,7 @@ When you publish a new version of a journey, the previous version automatically 
 
 **Why cannot I publish my journey?**
 
-The most common reason is that the journey contains validation errors — you cannot publish a journey with errors. Other blockers include exceeding the [payload size limit](../start/guardrails.md#journey-payload-size), missing the **[!DNL Publish journeys]** permission, or a pending [approval](../test-approve/gs-approval.md). See [Before you publish](#before-you-publish) and [troubleshoot activity errors](../building-journeys/troubleshooting.md#activity-errors).
+The most common reason is that the journey contains validation errors — you cannot publish a journey with errors. Other blockers include exceeding the [payload size limit](../start/guardrails.md#journey-payload-size) or the [sandbox Audience Qualification limit](../start/guardrails.md#audience-qualif-g), missing the **[!DNL Publish journeys]** permission, or a pending [approval](../test-approve/gs-approval.md). See [Before you publish](#before-you-publish) and [troubleshoot activity errors](../building-journeys/troubleshooting.md#activity-errors).
 
 **Can I edit a journey after it is published?**
 

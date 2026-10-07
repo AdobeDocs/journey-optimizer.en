@@ -27,7 +27,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails**
 
-* Content Management is available for all customers who have access to CX Coworker.
+* Content Management is available for all customers who have access to Coworker.
 * Update operations replace content in full — provide the complete HTML body or variant content in the prompt.
 * Content Management tools do not support full-text search across templates or fragments, template or fragment validation (orphaned references, broken links, deprecated components), creating or publishing landing pages, or deleting content templates, fragments, or landing pages.
 
@@ -45,4 +45,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 3 | source-hash: 89361eb2 -->
+<!-- ai-section-version: 3 | source-hash: d4390534 -->

@@ -7,15 +7,24 @@ role: User
 level: Intermediate
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/WycI0aO1o4KFH1gNieayuhpyNZuoVxL6zhGJBNOht8g
+TQID: 'https://experienceleague.adobe.com/WycI0aO1o4KFH1gNieayuhpyNZuoVxL6zhGJBNOht8g'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decisioning
+    internal-label: Decision capabilities
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
+  - id: 69102627-e6ba-56f5-ae85-9cc5357f529e
+    internal-label: Offers
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
+  - id: 687cafea-8a14-5656-a74f-20be1c58b419
+    internal-label: Ranking
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -27,11 +36,6 @@ topic_v2:
     internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-subfeature_v2:
-  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
-    internal-label: Decisioning API
-  - id: eb547372-2a95-4d13-b0fd-f720c9895880
-    internal-label: Edge Decisioning
 ---
 # Create ranking formulas {#create-ranking-formulas}
 
@@ -46,6 +50,10 @@ subfeature_v2:
 To create these rules, the AI formula builder in **[!UICONTROL Adobe Journey Optimizer]** provides greater flexibility and control in how offers are ranked. Instead of relying only on a static offer priority, you can now define custom ranking formulas that combine AI model scores, offer priorities, profile attributes, offer attributes, and contextual signals through a guided interface.
 
 This approach allows you to dynamically adjust offer ranking based on any combination of AI-driven propensity, business value, and real-time context, making it easier to align decisioning with both marketing goals and customer needs. The AI formula builder supports simple or advanced formulas depending on how much control you want to apply.
+
+>[!TIP]
+>
+>You can also create, explain, simulate, and optimize ranking formulas conversationally using the **Rules & Ranking** skill in [Coworker for Decisioning](../experience-decisioning-coworker-skills.md#rules-ranking).
 
 Once a ranking formula has been created, you can assign it to a [selection strategy](../selection-strategies.md). If multiple offers are eligible to be presented when using this selection strategy, the decisioning engine will use the selected formula to calculate which offer to deliver first.
 
@@ -303,6 +311,8 @@ Note that when using the **Decisioning** API, the context data is added to the p
 
 Before applying a ranking formula to your selection strategy, you can test it with sample or generated data to validate the ranking results and ensure it delivers the expected behavior.
 
+### Access the simulation workspace
+
 1. Open an existing formula or [create a new one](#create-ranking-formula) then click the **[!UICONTROL Simulate formula]** button.
 
     ![](../assets/ranking-formula-simulate-button.png)
@@ -315,7 +325,9 @@ Before applying a ranking formula to your selection strategy, you can test it wi
     * **Ranking expression**: Displays the formula expression for reference
     * **Simulation result**: Shows ranked offers when a variant is selected
 
-1. Add test variants using one of the two methods below:
+### Add test variants
+
+1. Add test variants using one of the following methods:
 
     * To create a manual sample, select the **[!UICONTROL Create sample]** button then select the offer items you want to use for testing. 
     * To generate test variants using AI, click the **[!UICONTROL Generate]** button.
@@ -325,6 +337,24 @@ Before applying a ranking formula to your selection strategy, you can test it wi
     >AI-based test variant generation is available to organizations with access to Adobe AI capabilities.
 
 The Test variants section is automatically populated with the selected items or generated samples. Each variant includes  attributes used in your expression. You can edit the field values directly to simulate different scenarios.
+
+### Populate variants with Adobe Experience Platform test profiles
+
+Once you have created or generated a variant, you can use attributes from existing [Adobe Experience Platform test profile](../../audience/creating-test-profiles.md) to populate its attributes.
+
+1. Select **[!UICONTROL Edit]** on a variant then click the **[!UICONTROL Select AEP profile]** button.
+
+    ![](../assets/ranking-formula-simulate-aep.png)
+
+1. Select an identity namespace, enter the corresponding identity value.
+
+    The **Recents** area lists profiles that you have successfully applied. Recent profiles are stored in the browser per organization and sandbox, are ordered with the newest first, and are limited to 10 entries.
+
+    ![](../assets/ranking-formula-simulate-aep-recents.png)
+
+1. Click the  **[!UICONTROL Select profile]** button. The test profile's attributes are added to the selected variant.
+
+### View the simulation results
 
 To view the ranking result of your simulation, select a test variant from the list. The Simulation result area displays the ranked offers with their scores, showing how your formula ranks the items based on the variant data.
 

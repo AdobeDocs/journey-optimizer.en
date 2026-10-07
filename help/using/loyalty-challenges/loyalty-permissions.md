@@ -8,12 +8,23 @@ topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 7d6d4f18-8c5d-4c9c-9f7d-2d6c5f9a8b31
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
     internal-label: Use cases
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 subfeature_v2:
   - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
     internal-label: Loyalty challenges
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Loyalty Challenges permissions {#loyalty-permissions}
 
@@ -56,7 +67,7 @@ The **Loyalty Practitioner** role is designed for business owners who manage the
 | Manage Loyalty Challenges | Create, edit, delete, publish, unpublish, and archive challenges; trigger journey generation |
 | Configure Loyalty Primary Configuration | Create and edit primary organization configuration. Deletion is not permitted |
 | View Loyalty Reward Configuration | View reward configuration, including providers, definitions, and proxies. Sensitive values are excluded |
-| View Loyalty Event Configuration | View event definitions and event transformation mappings |
+| View Loyalty Event Configuration | View event mappings and event transformation mappings |
 | View Loyalty Product Catalog | View product catalog entries and import job status |
 | Develop Loyalty Insights | View insights data and update insight cards |
 
@@ -112,7 +123,7 @@ When you create a custom role for a non-Prod sandbox, select from the permission
 | Configure Loyalty Primary Configuration | Create and edit primary organization configuration. Deletion is not permitted |
 | Manage Loyalty Advanced Configuration | Manage reward endpoints and event transformation settings, including read/write access to sensitive credential values |
 | View Loyalty Reward Configuration | View reward providers, reward definitions, and reward proxies. Sensitive values are excluded |
-| View Loyalty Event Configuration | View event definitions and event transformation mappings |
+| View Loyalty Event Configuration | View event mappings and event transformation mappings |
 | Manage Loyalty Product Catalog | View, import from CSV, and edit product catalog entries, including inclusions and exclusions; monitor import job status |
 | View Loyalty Product Catalog | View product catalog entries and import job status. Upload and edit actions are not permitted |
 | Manage Loyalty Insights | View insights, update KPI configuration, and trigger the insights pipeline |

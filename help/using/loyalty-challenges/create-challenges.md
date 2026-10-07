@@ -8,12 +8,23 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
     internal-label: Use cases
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 subfeature_v2:
   - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
     internal-label: Loyalty challenges
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 
 # Create challenges {#create-challenges}
@@ -130,7 +141,7 @@ Configure how members opt in, when task progress counts toward the challenge, an
 * **[!UICONTROL Opt-in trigger]**:
 
   * **[!UICONTROL Opt-in method]**: Choose whether customers join the challenge manually or through an event trigger.
-  * **[!UICONTROL Event]**: For event-based opt-in, select the event that triggers opt-in. Administrators can click the ![gear](assets/do-not-localize/settings-icon.svg) button to create an event definition. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+   * **[!UICONTROL Event]**: For event-based opt-in, select the event that triggers opt-in. Administrators can click the ![gear](assets/do-not-localize/settings-icon.svg) button to create an event mapping. [Learn how to configure event mappings](loyalty-admin.md#event-mappings)
 
 * **[!UICONTROL Start tracking progress]**:
 
@@ -368,7 +379,7 @@ You have two options for launching your challenge:
 
    ![](assets/challenge-create-journey.png)
 
-1. Once your challenge is live, monitor program KPIs, challenge results, and task-level metrics in the [loyalty challenge reports](loyalty-reporting.md). You can also monitor message delivery in the [journey report](../reports/journey-global-report-cja.md).
+1. Once your challenge is live, monitor program KPIs, challenge results, and task-level metrics in [Loyalty performance](loyalty-performance.md). You can also monitor message delivery in the [journey report](../reports/journey-global-report-cja.md).
 
 ## How-to videos {#video}
 

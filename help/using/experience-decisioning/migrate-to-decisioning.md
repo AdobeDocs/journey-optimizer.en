@@ -6,13 +6,13 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: aedd7845-3d8d-457a-a7f3-03897846b241
-TQID: https://experienceleague.adobe.com/DQI-YSVEdN4ffTgnj-LG4U59-dbVxB-wnBOqjOiWoS4
+TQID: 'https://experienceleague.adobe.com/DQI-YSVEdN4ffTgnj-LG4U59-dbVxB-wnBOqjOiWoS4'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decisioning
+    internal-label: Decision capabilities
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
   - id: d556b755-390a-43f0-be32-a08cf6236126
@@ -27,6 +27,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -105,7 +108,7 @@ Dashboard documenting performance of decision items and selection strategies aga
 
 * **Policy enforcement**: Business user empowerment to use features like [Data Usage Labeling & Enforcement (DULE)](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview){target="_blank"} and [Consent](../action/consent.md) within Decisioning, enabling privacy shield protection across the decisioning workflow. This ensures decisions automatically respect data usage policies and customer consent preferences.
 
-* **Native messaging channel support**: Integrated messaging and decisioning within a single framework across multiple channels: [Code-based experience](../code-based/get-started-code-based.md), [Email](../email/get-started-email.md), [SMS](../mobile/get-started-mobile.md), and [Push notifications](../push/get-started-push.md). Intuitive UI support allows users to insert decisioning components directly in message authoring workflows.
+* **Native messaging channel support**: Integrated messaging and decisioning within a single framework across multiple channels: [Code-based experience](../code-based/get-started-code-based.md), [Web](../web/get-started-web.md), [Email](../email/get-started-email.md), [SMS](../mobile/get-started-mobile.md), [Push notifications](../push/get-started-push.md), [Custom channels](../custom-channel/get-started-custom-channel.md), and [Direct mail](../direct-mail/get-started-direct-mail.md). Intuitive UI support allows users to insert decisioning components directly in message authoring workflows.
 
 * **Experience Platform dataset lookup**: Ability to upload and reference [Adobe Experience Platform datasets](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview){target="_blank"} directly within offer selection rules, ranking, and personalized offer content. This expands flexibility for personalization and targeting by allowing decision logic to use dynamic external data sources. [Learn more](../data/lookup-aep-data.md)
 

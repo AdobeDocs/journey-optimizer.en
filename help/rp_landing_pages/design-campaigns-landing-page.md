@@ -5,10 +5,13 @@ title: Orchestrated campaigns activities
 description: Orchestrated campaigns activities
 redpen-status: CREATED_||_2025-08-11_20-27-08
 exl-id: d6635d58-b618-4d92-b60f-c6fc63e473a6
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Orchestrated campaigns activities{#section-overview}
 
-Orchestrated campaign activities in Adobe Journey Optimizer empower you to design seamless, data-driven marketing journeys that connect with your audience at the right time and through the right channels. By combining targeting, channel, and flow control activities, you can define precise audience segments, personalize messages, and automate complex workflows. Whether you're building audiences, synchronizing campaign branches, or adding delays for perfect timing, these activities work together to streamline your campaign execution. With tools like Enrichment for data enhancement or Split for audience segmentation, you’ll have a flexible toolkit to create meaningful, impactful customer experiences.
+Orchestrated campaign activities in Adobe Journey Optimizer empower you to design seamless, data-driven marketing journeys that connect with your audience at the right time and through the right channels. By combining targeting, channel, and flow control activities, you can define precise audience segments, personalize messages, and automate complex workflows. Whether you're building audiences, synchronizing campaign branches, or adding delays for perfect timing, these activities work together to streamline your campaign execution. With tools like Enrichment for data enhancement or Split for audience segmentation, you'll have a flexible toolkit to create meaningful, impactful customer experiences.
 
 ## Orchestrated campaign Activities
 
@@ -78,6 +81,7 @@ Segment inbound populations by combining, excluding, or intersecting data.
 
 ## Additional Resources
 
+- **[Alert Activity](../using/orchestrated/activities/alert.md)** - Notify subscribers when execution reaches a specific point in an Orchestrated campaign.
 - **[Deduplication Activity](../using/orchestrated/activities/deduplication.md)** - Remove duplicate records from inbound data to ensure clean targeting.
 - **[Enrichment Activity](../using/orchestrated/activities/enrichment.md)** - Enhance audience data with additional attributes for better segmentation and personalization.
 - **[Fork Activity](../using/orchestrated/activities/fork.md)** - Enable parallel execution of multiple activities with the Fork activity.

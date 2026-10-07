@@ -144,6 +144,8 @@ Once you edited your web content, you can manage your modifications. [Learn more
 
 To add personalization, select a container and select the personalization icon from the contextual menu bar that displays. Add your changes using the personalization editor. [Learn more](../personalization/personalization-build-expressions.md)
 
+You can also use **Decisioning** to deliver the most relevant offer to each visitor. From the personalization editor, navigate to **[!UICONTROL Decision policies]** and select **[!UICONTROL Insert syntax]** to add a decision policy to your web component. [Learn more](../experience-decisioning/use-decision-policy.md)
+
 ![](assets/web-designer-personalization.png)
 
 ## Navigate through the web designer {#navigate-web-designer}

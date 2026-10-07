@@ -7,7 +7,7 @@ feature: Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: db85a563-9630-4d87-bf10-9f2515fe8a45
-TQID: https://experienceleague.adobe.com/LThNKcpBCCkin2G-y4n-tty4bcGLxMA4ObiodBrpBwY
+TQID: 'https://experienceleague.adobe.com/LThNKcpBCCkin2G-y4n-tty4bcGLxMA4ObiodBrpBwY'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -25,6 +25,8 @@ subfeature_v2:
     internal-label: Channel configurations
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -53,13 +55,17 @@ The mobile app push credential registration is required to authorize Adobe to se
 
 Step 1 is optional if your push credentials have already been configured, as these can be reused for the Live activity channel configuration. If no credentials are defined, you must create new push credentials for your app. Refer to the steps detailed below:
 
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 1. Access the **[!UICONTROL Channels]** > **[!UICONTROL Push settings]** > **[!UICONTROL Push credentials]** menu.
 
 1. Click **[!UICONTROL Create push credential]**.
 
     ![](assets/credential-1.png)
 
-1. From the **[!UICONTROL Platform]** drop-down, select the Operational system:
+1. From the **[!UICONTROL Platform]** drop-down, select iOS.
 
 1. Enter the mobile app **[!UICONTROL App ID]**.
 
@@ -77,7 +83,33 @@ Step 1 is optional if your push credentials have already been configured, as the
 
 1. Click **[!UICONTROL Submit]** to create your app configuration.
 
-## Step 2: create your live activity configuration {#config-live-activity}
+>[!TAB Android]
+
+1. Access the **[!UICONTROL Channels]** > **[!UICONTROL Push settings]** > **[!UICONTROL Push credentials]** menu.
+
+1. Click **[!UICONTROL Create push credential]**.
+
+    ![](assets/credential-1.png)
+
+1. From the **[!UICONTROL Platform]** drop-down, select Android.
+
+1. Enter the mobile app **[!UICONTROL App ID]**.
+
+    ![](assets/config-4.png)
+
+1. Enable the **[!UICONTROL Apply to all sandboxes]** option to make these Push credentials available across all sandboxes. If a specific sandbox has its own credentials for the same Platform and App ID pair, those sandbox-specific credentials will take precedence.
+
+1. Switched on the **[!UICONTROL Manually enter push Credentials]** button to add your credentials.
+
+    ![](assets/config-5.png)
+
+1. Drag and drop your .json private key file.
+
+1. Click **[!UICONTROL Submit]** to create your app configuration.
+
+>[!ENDTABS]
+
+## Step 2: Create your live activity configuration {#config-live-activity}
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]**. Click the **[!UICONTROL Create channel configuration]** button.
 
@@ -95,9 +127,9 @@ Step 1 is optional if your push credentials have already been configured, as the
 
 1. Select **[!UICONTROL Marketing action(s)]** to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. Learn more
 
-1. Choose iOS as your **[!UICONTROL Platform]**.
+1. Choose your **[!UICONTROL Platform]**.
 
-1. Select from the drop-down the same **[!UICONTROL App id]** as for your [push credential](#push-credentials-launch) configured above or choose an existing one.
+1. Select from the drop-down the same **[!UICONTROL App ID]** as for your [push credential](#push-credentials-launch) configured above or choose an existing one.
 
     ![](assets/config-3.png)
 

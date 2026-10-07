@@ -9,57 +9,59 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page introduces the Journey Simulation feature in Adobe Journey Optimizer, explaining how it differs from Test mode, which journey types it supports, how to launch a simulation, how **[!UICONTROL Optimize]** activity methods and other decisioning elements behave during a simulation, and what its node-level, functional, and quantitative limitations are.
+* **TL;DR:** This page introduces **[!UICONTROL Simulation]** in Adobe Journey Optimizer, explaining how it differs from **[!UICONTROL Test mode]**, which journey types it supports, how to launch a simulation, how **[!UICONTROL Optimize]** activity methods and other decisioning elements behave during a simulation, and what its node-level, functional, and quantitative limitations are.
 
 **Intents:**
+* Understand the three ways to test and validate a journey: Journey Simulation, Journey Test mode, and Journey Dry run
 * Understand the difference between Simulation and Test mode for validating journeys
-* Launch a Simulation session for a batch, unitary, or mixed journey type
+* Launch a Simulation session for a batch or unitary journey type
 * Identify which journey nodes block or restrict Simulation from running
 * Determine how **[!UICONTROL Optimize]** activity methods (**[!UICONTROL Targeting rule]**, **[!UICONTROL Experiment]**, **[!UICONTROL Percentage split]**, **[!UICONTROL Time condition]**, **[!UICONTROL Date condition]**, **[!UICONTROL Profile cap]**) behave during Simulation
 * Determine which decisioning elements (offer eligibility, eligibility rule or audience, ranking) are supported during Simulation
 * Determine which features are unsupported during Simulation (e.g., consent, frequency capping, STO)
 * Plan around quantitative guardrails such as maximum simulated users per sandbox
-* Decide whether to use Quick simulation or Manual simulation based on testing needs
+* Understand Quick simulation and Manual simulation
 
 **Glossary:**
 * **Simulated users**: Temporary profile-like entities created for Simulation. Sending a simulated user triggers a real message send, which can currently result in a persistent profile being created in Adobe Experience Platform *(product-specific)*
 * **Simulation**: A journey state (alongside Draft, Test mode, and Live) used for testing with simulated users rather than persistent test profiles *(product-specific)*
-* **Journey Agent**: The AI component that generates simulated users, event values, and test settings during Quick simulation and AI-assisted Manual simulation *(product-specific)*
-* **Quick simulation**: An automated end-to-end simulation run that generates users and events with minimal manual input *(product-specific)*
-* **Manual simulation**: A step-by-step simulation mode where users and events are created and triggered individually *(product-specific)*
-* **[!UICONTROL Experiment]** (Path Experimentation): An **[!UICONTROL Optimize]** activity method whose eligibility and allocation the Journey Agent evaluates against the simulated user's profile attributes to select the branch *(product-specific)*
+* **Journey Dry run**: A validation method that runs a journey against real production audience and segmentation data without contacting real customers or updating profile information *(product-specific)*
+* **[!UICONTROL Experiment]** (Path Experimentation): An **[!UICONTROL Optimize]** activity method whose routing is handled by Decisioning, with random assignment that is non-deterministic per simulated user *(product-specific)*
 
 **Guardrails:**
-* Requires at least one of: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys** permissions
-* AI-powered simulation features require the **Generate Content** permission from the AI Assistant capability
-* Maximum 20 simulated users per Send all or Trigger selected events batch
-* Maximum 50 simulated users per AI generation request
-* Maximum 100 unique simulated users per single simulation run
-* Maximum 20 journeys running Simulation simultaneously in one sandbox
-* Maximum 2,000 active simulated users in one sandbox at a time
-* Business event-triggered journeys cannot be simulated
-* Supplemental ID journeys with multiple re-entrance enabled cannot be simulated
-* Consent policies, frequency capping, opt-out, STO, and quiet hours are not evaluated during Simulation
-* Simulated users must not contain real customer data (not GDPR-compliant)
+* To use **[!UICONTROL Simulation]**, assign at least one of: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys** permissions from the **[!UICONTROL Journeys]** capability; these permissions also allow users to create and manage simulated users without **[!UICONTROL Simulated Users]** permissions
+* Managing simulated users without **[!UICONTROL Simulation]** requires **Manage Simulated Users** or **View Simulated Users** from the **[!UICONTROL Simulated Users]** capability
+* AI-powered simulation features (**[!UICONTROL Quick simulation]**, AI-generated users, and **[!UICONTROL Generate event values]**) require **[!UICONTROL Generate Content]** from the **[!UICONTROL AI Assistant]** capability
+* Maximum 20 simulated users per **[!UICONTROL Send all]** or **[!UICONTROL Trigger selected events]** batch (hard limit)
+* Maximum 50 simulated users per AI generation request (hard limit)
+* Maximum 100 unique simulated users per single simulation run (hard limit)
+* Maximum 20 journeys running **[!UICONTROL Simulation]** simultaneously in one sandbox (hard limit)
+* Maximum 2,000 active simulated users in one sandbox at a time (hard limit)
+* Journeys that start with a business event cannot be run in **[!UICONTROL Simulation]**
+* **[!UICONTROL Simulation]** does not start when multiple re-entrance is enabled and the same simulated user could have several active instances at once
+* Consent policies, frequency capping, and quiet hours are not evaluated during Simulation; opt-out management and STO are not evaluated or applied
+* Simulated users are not GDPR-compliant persistent profiles; do not include real customer data in simulated users
 
 **Terminology:**
-* Canonical name: Simulation — Acronym: none — variants: Journey Simulation, Simulation mode
-* Canonical name: Simulated users — Acronym: none — variants: test users (in UI labels)
+* Canonical name: Simulation — Acronym: none
+* Canonical name: Simulated users — Acronym: none
 * Canonical name: **[!UICONTROL Experiment]** — variants: Path Experimentation
-* Synonyms: "Simulation" = "Simulation mode"; "simulated users" = "test users" (UI label only)
-* Do not confuse: "Simulation" ≠ "Test mode" (Test mode uses persistent AEP test profiles; Simulation uses temporary simulated users)
-* Do not confuse: **[!UICONTROL Targeting rule]** ≠ **[!UICONTROL Experiment]** (both are **[!UICONTROL Optimize]** activity methods, but the Journey Agent evaluates a configured rule for **[!UICONTROL Targeting rule]** versus eligibility and allocation for **[!UICONTROL Experiment]**)
+* Do not confuse: "Simulation" ≠ "Test mode" (Test mode uses persistent profiles flagged as test profiles in Adobe Experience Platform; Simulation uses temporary simulated users)
+* Do not confuse: "Journey Simulation" ≠ "Journey Test mode" ≠ "Journey Dry run" (the three validation methods use different data and validation approaches)
+* Do not confuse: **[!UICONTROL Targeting rule]** ≠ **[!UICONTROL Experiment]** (both are **[!UICONTROL Optimize]** activity methods, but AI evaluates the configured rule for **[!UICONTROL Targeting rule]**, whereas routing for **[!UICONTROL Experiment]** is handled by Decisioning)
 
 **FAQ:**
-* **Q: What permissions do I need to use Simulation?** — You need at least one of: Simulate journeys, Publish journeys, or Approve and Publish journeys. AI features additionally require Generate Content permission from the AI Assistant capability.
-* **Q: How does Simulation differ from Test mode?** — Simulation uses temporary simulated users created on the fly, generally without pre-created profiles in Adobe Experience Platform; Test mode uses persistent profiles explicitly flagged as test profiles in AEP. Sending a simulated user still triggers a real message send, which can result in a persistent profile being created.
-* **Q: Can I simulate a journey that starts with a Business Event?** — No. Journeys triggered by a Business Event cannot be run in Simulation.
-* **Q: Are the Targeting rule and Experiment methods of the Optimize activity supported in Simulation?** — Yes. The Journey Agent evaluates the configured rule for Targeting rule, or the eligibility and allocation for Experiment (Path Experimentation), against the simulated user's profile attributes to select the branch.
-* **Q: Are decisioning elements such as offer eligibility and ranking supported during Simulation?** — Yes. Offer eligibility, eligibility rule, eligibility audience, and ranking by offer priority, formula, or AI Model — Auto are supported. Ranking by AI Model — Personalization is also supported, though returned offers may vary between simulation runs.
-* **Q: How many simulated users can I test in a single simulation run?** — Up to 100 unique simulated users per run; each Send all action is capped at 20 users at once.
-* **Q: Are consent policies enforced during Simulation?** — No. Consent policy evaluation, frequency capping, opt-out management, and quiet hours are all not evaluated during Simulation.
-* **Q: What happens if my journey has more than 50 paths during AI generation?** — The Journey Agent randomly selects paths to produce a maximum of 50 simulated users.
+* **Q: What permissions do I need to use Simulation?** — Assign at least one of: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys** from the **[!UICONTROL Journeys]** capability. These permissions also let you create and manage simulated users; **[!UICONTROL Simulated Users]** permissions are not required. AI features additionally require **[!UICONTROL Generate Content]** from the **[!UICONTROL AI Assistant]** capability.
+* **Q: What permissions do I need to manage simulated users without Simulation?** — You need **Manage Simulated Users** or **View Simulated Users** from the **[!UICONTROL Simulated Users]** capability.
+* **Q: What are the three ways to test and validate a journey?** — Adobe Journey Optimizer offers Journey Simulation, Journey Test mode, and Journey Dry run.
+* **Q: How does Simulation differ from Test mode?** — Simulation uses temporary simulated users without pre-created profiles in Adobe Experience Platform; Test mode uses persistent profiles explicitly flagged as test profiles in Adobe Experience Platform. Sending a simulated user still triggers a real message send, which can result in a persistent profile being created.
+* **Q: Can I simulate a journey that starts with a business event?** — No. Journeys that start with a business event cannot be run in **[!UICONTROL Simulation]**.
+* **Q: Are the Targeting rule and Experiment methods of the Optimize activity supported in Simulation?** — **[!UICONTROL Targeting rule]** is evaluated by AI against the simulated user's profile attributes. For **[!UICONTROL Experiment]** (Path Experimentation), routing is handled by Decisioning and assignment is random and non-deterministic per simulated user.
+* **Q: Are decisioning elements such as offer eligibility and ranking supported during Simulation?** — Yes. Offer eligibility, eligibility rule, eligibility audience, and ranking by offer priority, formula, or **[!UICONTROL AI Model - Auto]** are supported. Ranking by **[!UICONTROL AI Model - Personalization]** is also supported, though returned offers may vary between simulation runs.
+* **Q: How many simulated users can I test in a single simulation run?** — Up to 100 unique simulated users per run; each **[!UICONTROL Send all]** action is capped at 20 users at once.
+* **Q: Are consent policies enforced during Simulation?** — No. Consent policies, frequency capping, and quiet hours are not evaluated during Simulation. Opt-out management is not evaluated or applied.
+* **Q: What happens if my journey has more than 50 paths during AI generation?** — AI randomly selects paths to produce 50 simulated users.
 
 +++
 
-<!-- ai-section-version: 2 | source-hash: 7ccf8cd3 -->
+<!-- ai-section-version: 2 | source-hash: 544b5b75 -->

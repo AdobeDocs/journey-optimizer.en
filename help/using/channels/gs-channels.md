@@ -180,8 +180,13 @@ The table below shows the availability of each channel across different journeys
 | iOS Live activities  | — | — | — | ✅ | — |
 | In-app               | ✅ | ✅ | — | — | — |
 | Direct mail          | ✅ | ✅ | — | — | ✅ |
+| Custom channels      | ✅ | ✅ | — | Marketing only | ✅ |
 | Web                  | ✅ | ✅ | — | — | — |
 | Code-based exp.      | ✅ | ✅ | — | — | — |
 | Content cards        | ✅ | ✅ | — | — | — |
 | WhatsApp             | ✅ | ✅ | — | — | — |
 | Line                 | ✅ | ✅ | — | — | — |
+
+>[!NOTE]
+>
+>Currently, in [custom channel configurations](../custom-channel/custom-channel-configuration.md), you cannot select a message type. Therefore, all messages sent through custom channels are treated as Marketing messages at send time. As a result, custom channels are not supported in Transactional campaigns (action or API-triggered).
