@@ -35,11 +35,9 @@ The **Destinations** channel lets you activate or remove profiles in a destinati
 
 The setup consists of three steps:
 
-1. Create and configure the destination in [!DNL Adobe Experience Platform], including its connection and field mappings.
-
-1. In [!DNL Journey Optimizer], create a Destinations channel configuration that points to the destination.
-
-1. Use the Destination action in a journey or campaign to add profiles to, or remove profiles from, destination audience membership.
+1. [Create and configure the destination](#configure-destination) in [!DNL Adobe Experience Platform], including its connection and field mappings.
+1. [Create a Destinations channel configuration](#create-channel-configuration) in [!DNL Journey Optimizer] that points to the destination.
+1. [Use the Destination action in a journey or campaign](#add-destination) to add profiles to, or remove profiles from, destination audience membership.
 
 ## Guardrails & limitations
 
@@ -85,7 +83,7 @@ Each Destinations channel configuration creates and uses a Facebook audience. If
 
 1. Select **[!UICONTROL Submit]** to create the configuration.
 
-## Add the destination to a journey or campaign
+## Add the destination to a journey or campaign {#add-destination}
 
 The Destinations channel can be added to both journeys and campaigns to manage audience membership dynamically. Browse the tabs below to see how to add it to each.
 
