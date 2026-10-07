@@ -334,6 +334,24 @@ The following capabilities and improvements are coming to content management in 
 <table>
 <thead>
 <tr>
+<th><strong>Content preview in the journey canvas</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Reviewing channel content required opening each activity individually, one at a time — slow and error-prone on journeys with many channel activities, especially where personalization means checking multiple treatments or variants per activity. <strong>Content preview</strong> removes that friction by surfacing a content thumbnail for every channel activity directly in the canvas, with a fullscreen modal to inspect and switch between treatments and variants.</p>
+<p>For more information, see the <a href="../building-journeys/using-the-journey-designer.md#content-preview">journey canvas content preview documentation</a>.</p>
+<p><img src="assets/do-not-localize/contentPreview.gif" alt="Content preview in the journey canvas" width="800"/></p>
+<p>Availability date: September 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Compare journey versions with Coworker</strong><br/></th>
 </tr>
 </thead>
@@ -827,24 +845,6 @@ The following reminder applies to administration in this release.
 * **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on existing customer sandboxes and organizations starting October 1, 2026. 
 
 ### Usability improvements {#sep-26-usability}
-
-<table>
-<thead>
-<tr>
-<th><strong>Content preview in the journey canvas</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Reviewing channel content required opening each activity individually, one at a time — slow and error-prone on journeys with many channel activities, especially where personalization means checking multiple treatments or variants per activity. <strong>Content preview</strong> removes that friction by surfacing a content thumbnail for every channel activity directly in the canvas, with a fullscreen modal to inspect and switch between treatments and variants.</p>
-<p>For more information, see the <a href="../building-journeys/using-the-journey-designer.md#content-preview">journey canvas content preview documentation</a>.</p>
-<p><img src="assets/do-not-localize/contentPreview.gif" alt="Content preview in the journey canvas" width="800"/></p>
-<p>Availability date: September 28, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 * **Auto save in the Email Designer** - After a few seconds, your content is now automatically saved in the Email Designer, so you no longer risk losing your changes while designing your email. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
