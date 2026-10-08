@@ -49,6 +49,14 @@ topic_v2:
 >
 >Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change. 
 
+>[!BEGINSHADEBOX]
+
+**Usability improvements**
+
+Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to make everyday work easier. Look for the [!BADGE Usability]{type=Positive} badge within each product area to spot these improvements at a glance.
+
+>[!ENDSHADEBOX]
+
 ## October '26 updates {#oct-26-updates}
 
 ### Channels {#oct-26-channels}
@@ -80,14 +88,6 @@ The following capability is coming to channels in this release.
 </tr>
 </tbody>
 </table>
-
-* **Direct mail - Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration. [Learn more](../direct-mail/direct-mail-configuration.md)
-
-  Availability date: October 1, 2026
-
-* **Direct mail - Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors. [Learn more](../direct-mail/get-started-direct-mail.md)
-
-  Availability date: October 1, 2026
 
 +++ Coming soon — **Information below is subject to change.**
 
@@ -152,6 +152,8 @@ The following capability is coming to channels in this release.
 
 * **Business Performance Analysis skill** - Analyze journey performance and get concrete optimization recommendations, right from the chat.
 
+* [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view.
+
 +++
 
 ### Integrations {#oct-26-integrations}
@@ -176,19 +178,11 @@ The following capability is coming to channels in this release.
 
 +++
 
-### Usability improvements {#oct-26-usability}
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view.
-
-+++
-
 ## September '26 release notes {#sep-26-updates}
 
 >[!BEGINSHADEBOX]
 
-**New in CX Enterprise Coworker this month**
++++**New in CX Enterprise Coworker this month**
 
 This release brings several new and improved [Coworker](../start/ai-features.md#cx-coworker) features and skills, listed here for visibility. Each one is also detailed in its relevant section below.
 
@@ -199,6 +193,8 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 * [Analyze Journey Anomalies skill](#sep-26-journeys) - Detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts, with root-cause diagnostics.
 * [Decisioning Explainer skill](#sep-26-decisioning) - Ask Coworker why a specific offer was or wasn't shown to a profile, or to a segment, and get a full trace of eligibility, ranking, and rule exclusions.
 * [Rules & Ranking skill](#sep-26-decisioning) - Create, explain, simulate, and optimize Decisioning eligibility rules and ranking formulas in natural language, without writing or validating PQL syntax by hand.
+
++++
 
 >[!ENDSHADEBOX]
 
@@ -285,6 +281,14 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 1, 2026
 
+* [!BADGE Usability]{type=Positive} **Usability improvements in the Content Simulation experience** - The new Content Simulation experience now lets you name and organize your variants for easy comparison, copy or delete variant details directly from each card, view full attribute paths and per-card channel configuration on demand, and upload your own CSV, JSON, or JSONL profiles from a more prominent upload button. [Learn more](../test-approve/simulate-content-variations.md)
+
+  Availability date: September 25, 2026
+
+* [!BADGE Usability]{type=Positive} **Fix syntax with AI** - When validating an expression, if a PQL syntax error is detected, the Personalization Editor provides a "Fix with AI" option to help resolve the issue directly from the editor. [Read more](../personalization/personalization-build-expressions.md#validation-mechanisms).
+
+  Availability date: September 22, 2026
+
 ### Loyalty {#sep-26-loyalty}
 
 <table>
@@ -338,7 +342,7 @@ The following capabilities and improvements are coming to content management in 
 <table>
 <thead>
 <tr>
-<th><strong>Content preview in the journey canvas</strong><br/></th>
+<th>[!BADGE Usability]{type=Positive} <strong>Content preview in the journey canvas</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -473,6 +477,10 @@ The following capabilities and improvements are coming to content management in 
 
 * **Automatic event recovery timeout in Journey Properties** - Journey Properties now includes a **Set event recovery timeout** setting: by default, impacted journey events are automatically replayed for up to 72 hours after a service interruption with no action needed. You can turn this setting on to control the replay window (0–72 hours) for time-sensitive journeys. The existing **Timeout or error** field has also been renamed to **Custom Action / Data source timeout** to avoid confusion between the two settings. [Learn more](../building-journeys/journey-properties.md#event-recovery-timeout)
 
+* [!BADGE Usability]{type=Positive} **Easier detach and join branches in the new journey canvas** - You can now detach a branch from the rest of your journey without deleting it, and join it back later at a different point, either by selecting an eligible activity directly on the canvas or by picking it from a list of disconnected or already-used branches. [Learn more](../building-journeys/using-the-journey-designer.md#join-and-detach-branches)
+
+  Availability date: September 1, 2026
+
 ### Channels {#sep-26-channels}
 
 The following capabilities and improvements are coming to channels in this release.
@@ -523,6 +531,14 @@ The following capabilities and improvements are coming to channels in this relea
 * **Increased subdomain delegation limit** - Depending on your license contract, you can now request up to 3000 subdomains (previously capped at 100) by reaching out to your Adobe representative. This capability is available in Limited Availability for a set of customers. [Learn more](../configuration/delegate-subdomain.md#guardrails)
 
   Availability date: September 25, 2026
+
+* **Direct mail - Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration. [Learn more](../direct-mail/direct-mail-configuration.md)
+
+  Availability date: September 30, 2026
+
+* **Direct mail - Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors. [Learn more](../direct-mail/get-started-direct-mail.md)
+
+  Availability date: September 30, 2026
 
 ### Email Designer {#sep-26-email-designer}
 
@@ -602,6 +618,10 @@ The following capabilities and improvements are coming to the Email Designer in 
 </tr>
 </tbody>
 </table>
+
+* [!BADGE Usability]{type=Positive} **Auto save in the Email Designer** - Your changes are now automatically saved in the Email Designer after about 10 seconds of inactivity, so you no longer risk losing your changes while designing your email. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+  Availability date: September 25, 2026
 
 ### Orchestrated campaigns {#sep-26-orchestrated-campaigns}
 
@@ -847,21 +867,3 @@ The following reminder applies to audiences in this release.
 The following reminder applies to administration in this release.
 
 * **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on existing customer sandboxes and organizations starting October 1, 2026. 
-
-### Usability improvements {#sep-26-usability}
-
-* **Auto save in the Email Designer** - Your changes are now automatically saved in the Email Designer after about 10 seconds of inactivity, so you no longer risk losing your changes while designing your email. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
-  Availability date: September 25, 2026
-
-* **Easier detach and join branches in the new journey canvas** - You can now detach a branch from the rest of your journey without deleting it, and join it back later at a different point, either by selecting an eligible activity directly on the canvas or by picking it from a list of disconnected or already-used branches. [Learn more](../building-journeys/using-the-journey-designer.md#join-and-detach-branches)
-
-  Availability date: September 1, 2026
-
-* **Usability improvements in the Content Simulation experience** - The new Content Simulation experience now lets you name and organize your variants for easy comparison, copy or delete variant details directly from each card, view full attribute paths and per-card channel configuration on demand, and upload your own CSV, JSON, or JSONL profiles from a more prominent upload button. [Learn more](../test-approve/simulate-content-variations.md)
-
-  Availability date: September 25, 2026
-
-* **Fix syntax with AI** - When validating an expression, if a PQL syntax error is detected, the Personalization Editor provides a "Fix with AI" option to help resolve the issue directly from the editor. [Read more](../personalization/personalization-build-expressions.md#validation-mechanisms).
-
-  Availability date: September 22, 2026
