@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Integrations
   - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
     internal-label: Data management activity
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: af7571a6-3ddb-4c1c-abdf-4d4dde592140
     internal-label: Source connectors

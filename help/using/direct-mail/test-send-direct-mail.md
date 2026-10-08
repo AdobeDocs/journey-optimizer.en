@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Content management
   - id: 9d1244d2-eb0a-5a0e-8b65-f12fd076b68a
     internal-label: Test Profiles
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices

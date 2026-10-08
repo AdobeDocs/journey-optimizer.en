@@ -17,6 +17,8 @@ feature_v2:
     internal-label: Communication channels
   - id: 6eb7d9ad-3477-58b3-957a-080ef7738a30
     internal-label: SMS
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
     internal-label: SMS and MMS channel

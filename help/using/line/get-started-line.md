@@ -8,13 +8,15 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: dc1bddaf-968f-405d-b8cc-b9443a838fa6
-TQID: https://experienceleague.adobe.com/fsaAAzI8lWdm37orBCXNoPFiY6tKBJ4q-N3-mpWlue8
+TQID: 'https://experienceleague.adobe.com/fsaAAzI8lWdm37orBCXNoPFiY6tKBJ4q-N3-mpWlue8'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e09fc1e6-407c-418f-adc5-e2ffe8b8986e
     internal-label: LINE channel
