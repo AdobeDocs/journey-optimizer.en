@@ -31,6 +31,10 @@ level_v2:
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## October 2026 {#october-2026}
+
+* The **Allow IP addresses through the WAF** page now clarifies that changes to the allowed list are cached and can take up to one hour to be enforced, whether you add, edit, or remove IPs. [Read more](../configuration/waf-ip-allowlist.md#waf-ip-allowlist-add)
+
 ## September 2026 {#september-2026}
 
 * The **Create a direct mail message** page now clarifies extraction-file generation in the **Journey** and **Campaign** tabs: journey files follow the routing frequency and can result in multiple files per day, while campaign files are generated when each campaign execution starts. The page also explains how to ensure one file per day for journeys. [Read more](../direct-mail/create-direct-mail.md#create-dm-campaign)
