@@ -22,6 +22,8 @@ feature_v2:
     internal-label: Journeys
   - id: 2cb9b022-32b0-573b-a511-d091a4f355fb
     internal-label: Actions
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
     internal-label: Action configuration

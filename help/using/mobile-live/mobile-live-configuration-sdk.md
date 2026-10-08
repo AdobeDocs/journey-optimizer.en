@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Activities
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK

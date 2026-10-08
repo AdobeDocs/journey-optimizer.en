@@ -17,6 +17,8 @@ feature_v2:
     internal-label: Journey management
   - id: d2971708-e780-44bb-9e2a-72f139796afd
     internal-label: Customer
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
