@@ -13,7 +13,7 @@ For complete understanding, this information should be combined with the documen
 
 **Intents:**
 
-* Add a Direct mail activity to a journey from the Actions palette
+* Add a Direct mail action to a journey from the Actions palette
 * Add a Direct mail action to a Scheduled - Marketing campaign
 * Configure the extraction file properties, such as filename, timestamp, and header or footer notes
 * Add and format the columns (Data Fields) displayed in the extraction file
@@ -35,19 +35,19 @@ For complete understanding, this information should be combined with the documen
 * In a campaign, audience selection supports up to 100 million profiles.
 * You can add up to 50 columns to the extraction file.
 * Direct Mail supports the Holdout functionality but does not currently support Treatments.
-* Journey direct mail extraction files are generated according to the file routing frequency; profiles are included in the next export after they reach the Direct mail activity. With a frequency shorter than 24 hours, profiles can arrive in different export windows and produce multiple files during a day; a 24-hour routing frequency produces one file per day.
+* Journey direct mail extraction files are generated according to the file routing frequency; profiles are included in the next export after they reach the Direct mail action. With a frequency shorter than 24 hours, profiles can arrive in different export windows and produce multiple files during a day; a 24-hour routing frequency produces one file per day.
 * Campaign direct mail extraction files are generated when the campaign starts; for recurring campaigns, a file is generated for each campaign execution.
 * Decision policies in direct mail are a new capability; previously, direct mail extraction files could not use the Decisioning engine.
 
 **Terminology:**
 
-* Canonical name: Direct mail message — Acronym: n/a — variants: Direct mail activity (journey), Direct mail action (campaign)
+* Canonical name: Direct mail message — Acronym: n/a — variants: Direct mail action
 * Do not confuse: "Holdout" (supported) ≠ "Treatments" (not currently supported)
 * Do not confuse: "file routing configuration" ≠ "direct mail configuration"
 
 **FAQ:**
 
-* **Q: How do I add a direct mail message?** — Drag a Direct mail activity onto a journey, or select the Direct mail action in a Scheduled - Marketing campaign, then choose or create a direct mail configuration.
+* **Q: How do I add a direct mail message?** — Add a Direct mail action to a journey, or select the Direct mail action in a Scheduled - Marketing campaign, then choose or create a direct mail configuration.
 * **Q: How many columns can the extraction file contain?** — You can add up to 50 columns.
 * **Q: Does direct mail support Holdout and Treatments?** — It supports the Holdout functionality but does not currently support Treatments.
 * **Q: How do I preview the extraction file?** — Use Simulate content once the content of the extraction file has been defined.

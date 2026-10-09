@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Mobile app push notification channel — Acronym: n/a — variants: push channel, mobile push
+* Canonical name: Mobile app push notification channel — Acronym: n/a — variants: Push channel
 * Synonyms: "channel configuration" = "message preset"
 * Do not confuse: "Push credentials" (authorize Adobe to send push) ≠ "Channel configuration" (message preset used to send push)
 * Do not confuse: "APNs" (Apple, iOS) ≠ "FCM" (Firebase Cloud Messaging, Android)
@@ -51,7 +51,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: What do I provide for Android?** — The App ID (usually the package name from your build.gradle file) and the FCM push credentials.
 * **Q: How can one channel configuration serve multiple apps?** — Store each App id on the profile and use App id personalization; the Handlebars expression is evaluated per recipient at send time, and you must ensure push credentials exist for every possible app id.
 * **Q: What does the Apply to all sandboxes option do?** — It makes the push credentials available across all sandboxes; sandbox-specific credentials for the same Platform and App ID pair take precedence.
-* **Q: How do I test the push setup?** — Create an XDM Experience Event schema, set up a Rule Based event, build a journey with the event and a Push activity, then use the Test toggle to trigger an event and send the notification.
+* **Q: How do I test the push setup?** — Create an XDM Experience Event schema, set up a Rule Based event, build a journey with the event and a Push action (added through the Action activity), then use the Test toggle to trigger an event and send the notification.
 
 +++
 

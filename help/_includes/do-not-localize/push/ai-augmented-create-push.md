@@ -39,8 +39,8 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Push notification action — Acronym: n/a — variants: Push action, Push activity, Push notification
-* Canonical name: Rapid delivery mode — Acronym: n/a — variants: Rapid delivery
+* Canonical name: Push notification action — Acronym: n/a — variants: Push action
+* Canonical name: Rapid delivery mode — Acronym: n/a
 * Synonyms: "Rapid delivery mode" = "Rapid delivery"
 * Do not confuse: "Scheduled - Marketing" campaign ≠ "API-triggered - Marketing/Transactional" campaign
 * Do not confuse: "Business rules" (capping rule set) ≠ "Send time optimization" (best send time prediction)

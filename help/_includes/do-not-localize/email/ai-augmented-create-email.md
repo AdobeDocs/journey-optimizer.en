@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Email action — Acronym: n/a — variants: email activity, email channel action
+* Canonical name: Email action — Acronym: n/a — variants: email channel action
 * Do not confuse: "Warnings" (recommendations/best practices; do not block testing or activation) ≠ "Errors" (must be resolved before testing or activating)
 * Do not confuse: "Simulate content" (test variations with sample input data or AI auto-generation) ≠ "Simulate content (AEP profiles)" (preview with test profiles, send proofs, and check email rendering)
 
