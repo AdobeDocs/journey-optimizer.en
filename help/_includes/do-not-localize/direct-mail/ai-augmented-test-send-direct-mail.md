@@ -29,7 +29,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Errors prevent you from publishing the campaign until they are resolved; warnings refer to recommendations and best practices and do not block publishing.
+* Errors prevent you from publishing the campaign as long as they are not resolved; warnings refer to recommendations and best practices.
 * If your campaign is subject to an approval policy, you must request approval before you can send it.
 * Direct mail exports run on fixed 4-hour UTC cycles at 02:01, 06:01, 10:01, 14:01, 18:01, and 22:01.
 * Profiles are included in the next export cycle after they reach the Direct mail activity, not when the campaign or journey was first activated.
@@ -40,18 +40,17 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Direct mail campaign — Acronym: n/a — variants: direct mail journey, direct mail message
-* Synonyms: "extraction file" = "export file"
-* Do not confuse: "Warnings" (recommendations and best practices; do not block) ≠ "Errors" (prevent publishing until resolved)
+* Do not confuse: "Warnings" (recommendations and best practices) ≠ "Errors" (prevent publishing until resolved)
 * Do not confuse: "Simulate content" (sample input data or AI auto-generation) ≠ "Simulate content (AEP profiles)" (adds a test profile to check rendering)
 
 **FAQ:**
 
 * **Q: How do I preview the extraction file?** — Use Simulate content for sample input data or AI auto-generation, or Simulate content (AEP profiles) with a test profile to check rendering.
-* **Q: Why can I not publish my campaign?** — Errors must be resolved first; warnings are recommendations and do not block publishing.
+* **Q: Why can I not publish my campaign?** — Errors prevent publishing as long as they are not resolved; warnings refer to recommendations and best practices.
 * **Q: Why did I receive multiple files in one day?** — Profiles that reach the Direct mail activity in different 4-hour windows are exported in separate files for each window; this batches profiles by arrival window without duplicating them.
-* **Q: How do I ensure one file per day?** — Consider a 24-hour routing frequency, the Wait Until Time of Day option, or accept that a 4-hour routing frequency has the lowest latency but may generate multiple files.
-* **Q: How is a profile opted out of postal mail?** — When `consents.marketing.postalMail.val` is `n`, the profile is excluded; change it back to `y` to re-enable delivery.
+* **Q: How do I ensure one file per day?** — Consider a 24-hour routing frequency (guarantees one file per day, but introduces delivery latency) or Wait Until Time of Day (can align profiles into the same export window, but results depend on journey timing); a 4-hour routing frequency provides the lowest latency but may generate multiple files per day.
+* **Q: How is a profile opted out of postal mail?** — When `consents.marketing.postalMail.val` is `n`, the profile is excluded; change it back to `y` to enable it again.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 18570025 -->
+<!-- ai-section-version: 1 | source-hash: 9e7dd687 -->
