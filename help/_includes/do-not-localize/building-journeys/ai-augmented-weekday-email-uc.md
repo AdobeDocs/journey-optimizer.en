@@ -15,9 +15,9 @@ For complete understanding, this information should be combined with the documen
 
 * Configure a Condition activity to branch a journey based on the day of the week (Saturday, Sunday, or weekday)
 * Write custom Wait expressions using `toDateTimeOnly(setHours(nowWithDelta(X, "days"), H))` to delay weekend profiles until Monday
-* Build a three-path journey that merges all paths into a single email action
+* Build a three-path journey that merges all paths into a single Action activity with the Email channel
 * Test the weekday-only email logic using test profiles with different simulated entry days
-* Publish and monitor a journey that suppresses weekend email delivery
+* Send emails immediately for weekday entries (Monday to Friday) while queuing weekend entries for Monday delivery
 
 **Glossary:**
 
@@ -27,8 +27,8 @@ For complete understanding, this information should be combined with the documen
 * **toDateTimeOnly**: A function used around `setHours(nowWithDelta(X, "days"), H)` in the example Wait formulas *(product-specific)*
 
 **Guardrails:**
-* The journey must be validated and errors resolved before testing. Publication requires current, passed validation; changes after validation require **[!UICONTROL Validate]** again and resolution of errors before publishing.
 
+* Before testing, click **[!UICONTROL Validate]**, resolve any errors in the Alerts panel, and validate again before continuing.
 * The time zone used for day-of-week evaluation is the journey's configured timezone (set in journey properties), not the individual recipient's timezone.
 * An active Adobe Journey Optimizer instance with a configured email channel surface, and an audience or event to trigger the journey, are required to implement this use case.
 * Basic understanding of journey conditions and expressions is a prerequisite.
@@ -45,7 +45,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: What formula delays a Saturday entry until Monday at 9 AM?** — Use `toDateTimeOnly(setHours(nowWithDelta(2, "days"), 9))` on the Saturday path (2 days forward lands on Monday).
 * **Q: What formula delays a Sunday entry until Monday at 9 AM?** — Use `toDateTimeOnly(setHours(nowWithDelta(1, "days"), 9))` on the Sunday path (1 day forward lands on Monday).
 * **Q: Which timezone is used when evaluating the day-of-week condition?** — The journey's configured timezone defined in journey properties; it is not the recipient's local timezone.
-* **Q: Do weekday entries need a Wait activity?** — No, profiles entering Monday through Friday proceed directly to the Email action activity without any wait.
+* **Q: Do weekday entries need a Wait activity?** — No, profiles entering Monday through Friday proceed directly to the Action activity with the Email channel without any wait.
 * **Q: How do I test that weekend entries are correctly queued?** — In test mode, create test profiles with simulated Saturday and Sunday entry times and verify they follow the correct conditional path and receive the email on Monday at the configured hour.
 
 +++
