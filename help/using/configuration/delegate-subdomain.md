@@ -217,21 +217,22 @@ To set up a subdomain using CNAMEs, follow the steps below.
 To complete your subdomain delegation, follow the steps below.
 
 1. Click **[!UICONTROL Submit]**.
-<!--
-    >[!NOTE]
+
+    >[!CAUTION]
     >
-    >If an error occurs while trying to submit a custom subdomain, refer to [this section](delegate-custom-subdomain.md#check-list).
--->
+    >Before submitting your subdomain, make sure no separate DNS zone or SOA record exists for it in any DNS hosting provider. An existing subdomain zone causes the delegation to fail. If one exists:
+    >
+    >* Remove the subdomain zone in your DNS hosting solution.
+    >* Configure NS records at the parent domain level, pointing to Adobe's nameservers.
+    >* Make sure these records resolve through all public DNS providers, including Google resolvers.
 
 1. You can create the records and submit the subdomain configuration later on using the **[!UICONTROL Save as draft]** button.
 
     >[!NOTE]
     >
-    >You will then be able to resume the subdomain delegation by opening it from the subdomains list.
+    >You can then resume the subdomain delegation by opening it from the subdomains list.
 
 1. The subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](#access-delegated-subdomains).
-
-    <!--![](assets/subdomain-processing.png)-->
 
 1. Before being able to use that subdomain to send messages, make sure that all DNS records are properly created, then wait until Adobe performs the required checks, which can take up to 3 hours. [Learn more](#subdomain-validation).
 
