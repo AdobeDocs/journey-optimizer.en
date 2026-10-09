@@ -32,7 +32,7 @@ For complete understanding, this information should be combined with the documen
 * Errors prevent you from publishing the campaign as long as they are not resolved; warnings refer to recommendations and best practices.
 * If your campaign is subject to an approval policy, you must request approval before you can send it.
 * Direct mail exports run on fixed 4-hour UTC cycles at 02:01, 06:01, 10:01, 14:01, 18:01, and 22:01.
-* Profiles are included in the next export cycle after they reach the Direct mail action, not when the campaign or journey was first activated.
+* Profiles are included in the next export cycle after they reach the Direct mail node, not when the campaign or journey was first activated.
 * A profile with `consents.marketing.postalMail.val` set to `n` is excluded from subsequent deliveries; an empty consent value is treated as consent to receive communications.
 * The exported file ends with a newline by default to ensure compatibility with standard data-processing tools.
 * In journeys, the Update profile activity executes immediately at journey runtime and does not wait for the export cycle.
@@ -47,7 +47,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: How do I preview the extraction file?** — Use Simulate content for sample input data or AI auto-generation, or Simulate content (AEP profiles) with a test profile to check rendering.
 * **Q: Why can I not publish my campaign?** — Errors prevent publishing as long as they are not resolved; warnings refer to recommendations and best practices.
-* **Q: Why did I receive multiple files in one day?** — Profiles that reach the Direct mail action in different 4-hour windows are exported in separate files for each window; this batches profiles by arrival window without duplicating them.
+* **Q: Why did I receive multiple files in one day?** — Profiles that reach the Direct mail node in different 4-hour windows are exported in separate files for each window; this batches profiles by arrival window without duplicating them.
 * **Q: How do I ensure one file per day?** — Consider a 24-hour routing frequency (guarantees one file per day, but introduces delivery latency) or Wait Until Time of Day (can align profiles into the same export window, but results depend on journey timing); a 4-hour routing frequency provides the lowest latency but may generate multiple files per day.
 * **Q: How is a profile opted out of postal mail?** — When `consents.marketing.postalMail.val` is `n`, the profile is excluded; change it back to `y` to enable it again.
 

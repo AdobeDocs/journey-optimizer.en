@@ -14,13 +14,13 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 
 * Build a journey that targets subscribers of a specific list using a Read activity
-* Override the default email address in an Email action using the expression editor
+* Override the default email address in the Email channel of an Action activity using the expression editor
 * Use the `entry` and `firstEntryKey` functions to retrieve subscriber email addresses from a consent map
 * Reference the Consent and Preference Details field group to access subscription list data
 
 **Glossary:**
 
-* **Email address override (parameter override)**: A journey Email action setting that replaces the default profile email address with a custom expression, used for special cases such as subscription list targeting. *(product-specific)*
+* **Email address override (parameter override)**: An Email channel setting of the journey Action activity that replaces the default profile email address with a custom expression, used for special cases such as subscription list targeting. *(product-specific)*
 * **Consent and Preference Details field group**: An Adobe Experience Platform schema field group that contains subscription and consent data, including the subscriptions element; subscriber email addresses are defined as keys in the `subscribers` map, which is linked to the subscription list map. *(product-specific)*
 * **`entry` function**: An expression function that refers to a map element by its namespace key — used here to reference a specific subscription list (e.g., `daily-email`). *(product-specific)*
 * **`firstEntryKey` function**: An expression function that retrieves the first key of a map — used here to retrieve the first email address from the subscribers map of a subscription list. *(product-specific)*
@@ -38,7 +38,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: How do I send an email to a subscription list's subscribers rather than profile email addresses?** — Enable the parameter override on the Address field of the Email action and enter an expression using `entry` and `firstEntryKey` functions to retrieve addresses from the subscribers map of the target subscription list.
+* **Q: How do I send an email to a subscription list's subscribers rather than profile email addresses?** — Enable the parameter override on the Address field of the Email channel in the Action activity and enter an expression using `entry` and `firstEntryKey` functions to retrieve addresses from the subscribers map of the target subscription list.
 * **Q: What field group is required for this use case?** — The example uses the Consent and Preference Details field group from Adobe Experience Platform, which includes the subscriptions element.
 * **Q: Should I always use email address override when targeting subscribers?** — No; email address override is for specific use cases only. In most journeys, the primary address defined in Execution fields should be used.
 * **Q: What does the `firstEntryKey` function do in this context?** — It retrieves the first email address key from the `subscribers` map associated with a specific subscription list.

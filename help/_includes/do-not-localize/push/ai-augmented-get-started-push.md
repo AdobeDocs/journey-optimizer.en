@@ -37,7 +37,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Where can push notifications be created?** — In a Journey (via a Push action added through the Action activity) or in a Campaign (by selecting Push notification as the action).
+* **Q: Where can push notifications be created?** — In a Journey (by adding an Action activity and selecting Push) or in a Campaign (by selecting Push notification as the action).
 * **Q: Which platforms are supported?** — iOS, Android, and Web, configured via dedicated tabs.
 * **Q: Do I need to manage push opt-out?** — No, recipients can unsubscribe through their devices or via mobile OS / browser notification settings.
 * **Q: When should I not use push?** — When opt-in rates are low, the message needs long-form content, the content is sensitive and should not appear on a lock screen, or most users are on desktop.
