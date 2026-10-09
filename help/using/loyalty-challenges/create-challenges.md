@@ -117,19 +117,17 @@ Define who can participate in your loyalty challenge.
 >title="Challenge schedule"
 >abstract="Set the challenge start, end, and time zone. Enable Advanced scheduling to configure enrollment, progress tracking, and completion requirements. If a challenge end date and a deadline based on opt-in are both set, the earlier deadline applies."
 
-Configure when your challenge runs in the **[!UICONTROL Schedule]** section of the **[!UICONTROL Settings]** tab:
+Configure when your challenge runs in the **[!UICONTROL Schedule]** section:
 
-1. Configure **[!UICONTROL Challenge dates]**:
+   ![Challenge date settings](assets/challenge-schedule-dates.png)
 
    * **[!UICONTROL Challenge start]**: The date and time when the challenge starts.
    * **[!UICONTROL Challenge end]**: The date and time when the challenge ends. Select **[!UICONTROL No end date]** to run the challenge without a fixed end date, for example when each member's completion deadline is based on their opt-in date.
    * **[!UICONTROL Time zone]**: The time zone used for the challenge schedule. The challenge start and end times use this time zone for all loyalty members.
 
-   ![Challenge date settings](assets/challenge-schedule-dates.png)
+Enable **[!UICONTROL Advanced scheduling]** to configure enrollment, progress tracking, and completion requirements separately from the challenge dates.
 
-1. Enable **[!UICONTROL Advanced scheduling]** to configure enrollment, progress tracking, and completion requirements separately from the challenge dates.
-
-1. Configure **[!UICONTROL Enrollment]**:
+1.  **[!UICONTROL Enrollment]**:
 
    ![Enrollment settings](assets/challenge-schedule-enrollment.png)
 
