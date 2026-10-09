@@ -32,12 +32,12 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* You can create up to 10 active local rule sets for each channel domain and for the journey domain (hard limit).
+* You can create up to 10 active local rule sets for each channel domain and for the journey domain.
 * The [!UICONTROL Every] field value must match the selected duration type: 1-23 for Hourly, 1-30 for Daily, 1-4 for Weekly, and 1-3 for Monthly.
 * The [!UICONTROL Category] field is read-only, as only the [!UICONTROL Marketing] category is available.
 * Selecting several channels applies capping across all selected channels as a total count.
-* Frequency caps reset on calendar periods in UTC: hourly resets at the end of each UTC hour, daily until 23:59:59 UTC, weekly until Saturday 23:59:59 UTC, and monthly until the last day of the month 23:59:59 UTC.
-* Before activating, schedule the journey or campaign execution at least 10 minutes into the future so counter values populate; activating immediately can prevent capping from working correctly for journeys, campaigns, and API-triggered campaigns.
+* Frequency caps reset on calendar periods in UTC: hourly caps are valid for the selected number of hours and reset at the beginning of each time window (for a 1-hour cap, at the end of a UTC hour), daily until 23:59:59 UTC, weekly until Saturday 23:59:59 UTC, and monthly until the last day of the month 23:59:59 UTC.
+* Before activating, schedule the journey or campaign execution at least 10 minutes into the future so counter values populate; activating immediately means the capping may not work correctly for journeys, campaigns, and API-triggered campaigns.
 * The profile counter value updates once the communication is delivered; spacing communications at least two hours apart is recommended so the counter can update.
 * Frequency capping rules also apply when sending proofs; if a test profile has reached the cap, proofs show as finished but no email is delivered.
 * Once a profile's frequency cap is reached, there is no way to reset the counter until the next period; deactivating a rule lets capped profiles receive messages but does not remove or delete counter increments.
@@ -46,20 +46,18 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: channel capping — Acronym: n/a — variants: frequency capping by channel and communication type, channel rule set, frequency capping rules
-* Synonyms: "channel rule set" = a rule set with the "channel" value in the [!UICONTROL Domain] column
-* Do not confuse: "channel capping" (limits messages per channel and communication type) ≠ "journey capping" (limits journey entries or concurrency)
 * Do not confuse: "rule set" (a group of rules) ≠ "capping rule" (a single rule inside a rule set)
 * Do not confuse: "[!UICONTROL Reset capping frequency]" (the period unit: hourly, daily, weekly, or monthly) ≠ "[!UICONTROL Every]" (how many of those periods the rule spans)
 
 **FAQ:**
 
 * **Q: How many channel messages can a profile receive?** — Whatever you set in the [!UICONTROL Capping count] for the selected [!UICONTROL Reset capping frequency]; if several channels are selected, the count is shared as a total across those channels.
-* **Q: When do frequency counters reset?** — At the start of the next calendar period in UTC (hourly, daily until 23:59:59 UTC, weekly until Saturday 23:59:59 UTC, or monthly until the last day of the month 23:59:59 UTC).
+* **Q: When do frequency counters reset?** — At the start of the next calendar period in UTC (hourly, at the beginning of each time window; daily until 23:59:59 UTC, weekly until Saturday 23:59:59 UTC, or monthly until the last day of the month 23:59:59 UTC).
 * **Q: Can I reset a profile's counter once its cap is reached?** — No, there is no way to reset the counter until the next period; deactivating a rule lets capped profiles receive messages but does not remove counter increments.
-* **Q: Why did my immediately activated campaign not respect capping?** — Counter values need time to populate; schedule execution at least 10 minutes into the future.
+* **Q: Why might capping not work for an immediately activated campaign?** — Counter values do not populate on the profiles of the recipients if you activate immediately, so capping may not work correctly; schedule execution at least 10 minutes into the future.
 * **Q: Do frequency caps apply to proofs?** — Yes; if a test profile has reached the cap, the proof shows as finished but no email is delivered.
 * **Q: Where can I see profiles excluded by frequency rules?** — In the Customer Journey Analytics report and the Live report, where frequency rules are listed as a reason for exclusion.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: d2f03534 -->
+<!-- ai-section-version: 1 | source-hash: 3adf45c9 -->

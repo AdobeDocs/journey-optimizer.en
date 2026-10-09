@@ -29,7 +29,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* You can create up to 10 rule sets for the channel domain and 10 rule sets for the journey domain, for a total of 20 rule sets (hard limit).
+* You can create up to 10 rule sets for the channel domain and 10 rule sets for the journey domain, for a total of 20 rule sets.
 * Working with business rules requires the [!UICONTROL View Frequency Rules] permission (view) and the [!UICONTROL Manage Frequency Rules] permission (create, edit, delete).
 * A rule starts with the [!UICONTROL Draft] status and does not impact any message until you activate it and its rule set.
 * It can take up to 10 minutes for a rule or rule set to be fully activated; you do not need to modify messages or republish journeys for a rule to take effect.
@@ -37,7 +37,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: rule set — Acronym: n/a — variants: rule sets, business rules
+* Canonical name: rule set — Acronym: n/a — variants: rule sets
 * Synonyms: none
 * Do not confuse: "rule set" (a group of rules) ≠ "rule" (a single rule inside a rule set)
 * Do not confuse: "channel rule set" (frequency capping or quiet hours rules) ≠ "journey rule set" (entry and concurrency capping rules)
@@ -54,4 +54,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: ad0b90c8 -->
+<!-- ai-section-version: 1 | source-hash: c77f18e0 -->

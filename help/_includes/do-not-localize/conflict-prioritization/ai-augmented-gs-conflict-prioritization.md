@@ -34,12 +34,12 @@ For complete understanding, this information should be combined with the documen
 * These tools are available for campaigns and for unitary, Audience Qualification, and Read audience journeys.
 * In campaigns, priority score is available for the web, in-app, and code-based inbound channels only.
 * It can take up to 10 minutes after a customer enters a journey for the profile counter value to update; a profile entering two journeys within a short window may enter both.
-* Entry capping is only supported if the namespace selected in the journey is the highest priority namespace defined in the sandbox; if namespace priority is not configured, the default highest priority is email.
+* Entry capping is only supported if the namespace selected in the journey is the highest priority namespace defined in the sandbox; if namespace priority has not been explicitly configured, the default highest priority is email.
 * When multiple audience qualification journeys are activated by the same audience qualification event, entry capping counts will not be accurate.
 
 **Terminology:**
 
-* Canonical name: conflict management & prioritization — Acronym: n/a — variants: conflict & prioritization tools
+* Canonical name: conflict management & prioritization — Acronym: n/a — variants: conflict management and prioritization tools
 * Synonyms: none
 * Do not confuse: "conflict detection" (spots overlaps) ≠ "priority scores" (sets precedence) ≠ "rule sets" (limit frequency and volume)
 * Do not confuse: "journey capping" (limits journey entries or concurrency) ≠ "frequency capping by channel" (limits messages per channel and communication type) ≠ "quiet hours" (time-based message exclusions)
@@ -54,4 +54,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 51614d84 -->
+<!-- ai-section-version: 1 | source-hash: 82d82b9c -->
