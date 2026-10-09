@@ -14,7 +14,7 @@ has no acronym, **omit the line**; do not write `Acronym: n/a`.
 Format in a block: `Canonical name: <full name> — Acronym: <ACR> — variants: ...`. Use the
 expansion exactly as written below.
 
-## Approved (spelled out in the docs)
+## Approved (spelled out in the docs, or confirmed by the author)
 
 | Acronym | Expansion | Confirmed in |
 |---|---|---|
@@ -29,16 +29,15 @@ expansion exactly as written below.
 | CTR | Clickthrough rate | `building-journeys/success-metrics.md` |
 | CTOR | Clickthrough open rate | `building-journeys/success-metrics.md` |
 | WCAG | Web Content Accessibility Guidelines | `email/accessible-content.md` |
+| ACS | Adobe Campaign Standard | confirmed by the author (2026-10-09) |
+| ACC | Adobe Campaign Classic (v7/v8) | confirmed by the author (2026-10-09) |
+| ABAC | Attribute-based access control | confirmed by the author (2026-10-09) |
 
-## Needs the author's confirmation (not spelled out in the docs)
+## Needs the author's confirmation
 
-Do not use these in a block until a writer confirms the expansion and adds it to the table above.
-
-| Acronym | Proposed expansion | What the docs show |
-|---|---|---|
-| ACS | Adobe Campaign Standard | Only in front-matter keywords (`using-adobe-campaign-standard.md`) |
-| ACC | Adobe Campaign Classic (v7/v8) | Never spelled out; the pages say "Adobe Campaign v7/v8" |
-| ABAC | Attribute-based access control | Only as "RBAC/ABAC" in `custom-channel/get-started-custom-channel.md` |
+None at the moment. When a block needs an acronym that is neither on the page body nor in the
+table above, do not use it: report it under **Gaps found** and ask a writer to confirm the
+expansion, then add it to the table.
 
 ## Maintaining the list
 
