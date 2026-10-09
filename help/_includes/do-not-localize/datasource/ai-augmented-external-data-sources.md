@@ -31,11 +31,11 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * REST APIs using POST or GET and returning JSON are supported; API Key, basic, and custom authentication modes are supported.
-* Adobe addresses that are not publicly available and the use of IP addresses are not allowed; HTTPS is strongly recommended for security reasons.
+* The use of Adobe addresses that are not publicly available and the use of IP addresses is not allowed; HTTPS is strongly recommended for security reasons.
 * Data source name: only alphanumeric characters and underscores are allowed, maximum length 30 characters (hard limit).
 * Field group name: only alphanumeric characters and underscores are allowed, maximum length 30 characters (hard limit).
 * The Sent Payload field is only available if you select the POST method.
-* The default cache duration is 1 hour (default) and can be adapted in the custom authentication payload; a one-minute buffer between the external API's token expiration and the `cacheDuration` setting is recommended to avoid 401 errors.
+* The default cache duration is 1 hour (default) and can be adapted in the custom authentication payload; at least a one-minute buffer between the external API's token expiration period and the `cacheDuration` setting is recommended, especially under heavy workloads, to avoid expiration mismatches and 401 errors.
 * The authentication token is cached per journey and is not shared between journeys; there is no persistence, so a service restart starts with a clean cache.
 * Encode64 is the only function available in the authentication payload.
 * For certificate-based custom authentication, `subType` and `aud` are mandatory; the token endpoint URL must be HTTPS, `method` must be `POST`, `client_id` must not be blank and must have no leading or trailing whitespace.
@@ -46,8 +46,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: external data source — Acronym: n/a — variants: external data sources, third-party data source
-* Synonyms: "check the authentication" = "Click to check the authentication" button
+* Canonical name: external data source — Acronym: n/a — variants: external data sources
 * Do not confuse: "Dynamic Values" (parameters defined in journeys and passed at call time) ≠ "Response Payload" (example payload returned by the call) ≠ "Sent Payload" (payload sent to the third-party system, POST only)
 * Do not confuse: "standard custom authentication" ≠ "certificate-based custom authentication" (`subType: certificateCredential`, using Adobe's managed certificate instead of a client secret)
 
@@ -62,4 +61,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: d67dbb8a -->
+<!-- ai-section-version: 1 | source-hash: 6eabf054 -->

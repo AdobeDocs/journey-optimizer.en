@@ -36,7 +36,7 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: field group — Acronym: n/a — variants: field groups
-* Do not confuse: "add fields to the built-in data source" ≠ "create a new external data source"
+* Do not confuse: "add field groups to the built-in data source" ≠ "create a new external data source"
 
 **FAQ:**
 
@@ -44,8 +44,8 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why should I select only the fields I need in a field group?** — When a field is used in a journey, the system retrieves all fields defined for that field group, so selecting only the fields you need reduces request latency and increases performance.
 * **Q: Why is my field group not showing in the expression editor?** — If a field group has no field, it is not displayed in the expression editor.
 * **Q: Can I modify fields already used by a draft or live journey?** — No, if a field group is used in one or more draft or live journeys you can incrementally add new fields but cannot deselect, remove, or modify fields already selected.
-* **Q: How do I remove a field from a field group used in journeys?** — Duplicate the field group, remove the unwanted fields in the duplicate, update each journey to use the duplicate, stop the old journey versions, and then remove the original field group once it is no longer used.
+* **Q: How do I remove a field from a field group used in journeys?** — Duplicate the field group, remove the unwanted fields in the duplicate, create new versions of each journey that uses the original and select the duplicate in the activities using it, stop the old versions of those journeys, and then remove the original field group once it is no longer used.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: b9f7ff69 -->
+<!-- ai-section-version: 1 | source-hash: 120b84fb -->
