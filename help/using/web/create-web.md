@@ -86,7 +86,7 @@ To add a **Web** activity to a journey, follow these steps:
 
 1. Drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
 
-    >[!IMPORTANT]
+    >[!IMPORTANT] 
     >
     >Legacy native channel activities (Email, Push, Mobile messages, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
