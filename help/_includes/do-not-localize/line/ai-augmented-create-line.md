@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **LINE action**: The **LINE** activity or action added to a journey or a campaign to deliver a LINE message *(product-specific)*
+* **LINE action**: The channel action added to a journey or a campaign to deliver a LINE message *(product-specific)*
 * **Flex Messages**: JSON-based LINE messages that allow complex layouts with rich content *(product-specific)*
 * **Stickers**: LINE's native stickers that can be incorporated into a message *(product-specific)*
 * **Edit content**: The button used to start designing and configuring the content of the LINE message *(product-specific)*
