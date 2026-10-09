@@ -39,10 +39,10 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Simulate content — Acronym: n/a — variants: content simulation with test profiles
+* Canonical name: Simulate content — Acronym: n/a
 * Synonyms: "Test mode" = journey test mode; "Simulation" = journey simulation
 * Do not confuse: "Simulate content" (resolves personalization expressions against test profiles to inspect the payload) ≠ "Send proof" (calls your external endpoint with the personalized payload for test recipients) ≠ "Simulation" (validates the journey end to end using simulated users without pre-created test profiles)
-* Do not confuse: "Test profiles" (used by Simulate content and Send proof) ≠ "Simulated users" (temporary profile-like entities used by Simulation)
+* Do not confuse: "Test profiles" (selected in Simulate content) ≠ "Simulated users" (temporary profile-like entities used by Simulation)
 
 **FAQ:**
 
@@ -55,4 +55,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: d700d9c3 -->
+<!-- ai-section-version: 1 | source-hash: f5a7f1e0 -->

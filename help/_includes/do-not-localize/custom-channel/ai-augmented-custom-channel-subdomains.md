@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Custom channel subdomain — Acronym: n/a — variants: custom channel subdomain configuration
-* Synonyms: "Use delegated subdomain" = using a subdomain already delegated to Adobe; "Add your own domain" = configuring a new subdomain
+* Do not confuse: "Use delegated subdomain" (Configuration type for a subdomain already delegated to Adobe) ≠ "Add your own domain" (Configuration type for configuring a new subdomain)
 * Do not confuse: "Processing" (status shown after submission while checks run) ≠ "Success" (status once checks are successful and the subdomain is ready to use) ≠ "Failed" (status if you fail to create the validation record on your hosting solution)
 
 **FAQ:**
@@ -55,4 +55,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: df29dbf8 -->
+<!-- ai-section-version: 1 | source-hash: c5a1bc33 -->

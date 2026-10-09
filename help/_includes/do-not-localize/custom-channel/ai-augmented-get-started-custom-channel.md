@@ -29,13 +29,14 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Custom channels support POST as the only HTTP method.
+* Custom channels are available in journeys, orchestrated campaigns and Marketing (action and API-triggered) campaigns. They are not available in transactional campaign types.
+* Custom channels are not supported when copying objects between sandboxes; custom channel configurations and the messages that use them cannot be added to a package or copied to another sandbox.
 * Custom actions are available in journeys only and support GET, PUT, and POST methods.
 * Configuring a custom channel is an administrator task performed in the Channel Builder; adding the channel to a journey or campaign is a marketer task.
 
 **Terminology:**
 
 * Canonical name: Custom channels — Acronym: n/a — variants: custom channel capability, custom channel
-* Synonyms: "Channel Builder" = the UI used to create and configure custom channels
 * Do not confuse: "Custom channels" (send messages to end users through a platform not natively supported, available in campaigns and journeys, POST only) ≠ "Custom actions" (retrieve data from or push information to an external system, available in journeys only, GET/PUT/POST)
 
 **FAQ:**
@@ -49,4 +50,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: bea60f28 -->
+<!-- ai-section-version: 1 | source-hash: 3c3d40f2 -->
