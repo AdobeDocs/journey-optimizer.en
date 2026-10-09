@@ -21,25 +21,25 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **LINE action**: The channel action added to a journey or campaign that sends a LINE message to profiles when they reach that step *(product-specific)*
+* **LINE action**: The **LINE** activity or action added to a journey or a campaign to deliver a LINE message *(product-specific)*
 * **Flex Messages**: JSON-based LINE messages that allow complex layouts with rich content *(product-specific)*
 * **Stickers**: LINE's native stickers that can be incorporated into a message *(product-specific)*
-* **Edit content**: The button used to open the LINE message and configure its content *(product-specific)*
+* **Edit content**: The button used to start designing and configuring the content of the LINE message *(product-specific)*
 * **Simulate content**: The option used to preview the LINE message content and its personalized content *(product-specific)*
 
 **Guardrails:**
 
-* LINE message types are configured by editing the JSON content directly, using the personalization editor.
+* LINE message types can be configured by editing the JSON content directly.
 * The configuration field is pre-filled, by default, with the last configuration used for that channel by the user.
-* Content should be tested and validated with Simulate content before the LINE message is sent to the audience.
+* The LINE message is sent to the audience once you have performed your tests and validated the content.
 * When adding a LINE action to a campaign, the campaign type is either Scheduled - Marketing or API-triggered - Marketing/Transactional.
-* For a scheduled campaign, the action trigger frequency can be Once, Daily, Weekly, or Month.
+* In the Action triggers menu, the Frequency of the LINE message can be Once, Daily, Weekly, or Month.
 
 **Terminology:**
 
-* Canonical name: LINE message — Acronym: n/a — variants: LINE action, LINE activity, LINE channel action
+* Canonical name: LINE message — Acronym: n/a
 * Do not confuse: "Scheduled - Marketing" (executed immediately or on a specified date from the user interface) ≠ "API-triggered - Marketing/Transactional" (executed using an API call)
-* Do not confuse: "Edit content" (opens the message to configure its content) ≠ "Edit code" (edits the JSON content)
+* Do not confuse: "Edit content" (starts the configuration of the message content) ≠ "Edit code" (edits the JSON content)
 
 **FAQ:**
 
@@ -50,4 +50,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 1231f1ca -->
+<!-- ai-section-version: 1 | source-hash: 0c2aaaed -->

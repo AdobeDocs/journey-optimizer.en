@@ -13,7 +13,7 @@ For complete understanding, this information should be combined with the documen
 
 **Intents:**
 
-* Preview the LINE message content using a simulation method
+* Preview the LINE message content using Simulate content
 * Simulate content with sample input data or AI auto-generation
 * Simulate content with AEP profiles using test profiles
 * Check and resolve warnings and errors before sending
@@ -22,31 +22,30 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **Simulate content**: The option used to test content variations with sample input data or AI auto-generation *(product-specific)*
-* **Simulate content (AEP profiles)**: The option, selected from the Simulate content dropdown, used to preview with test profiles *(product-specific)*
-* **Warnings**: Alerts that refer to recommendations and best practices and do not block testing or activation *(product-specific)*
+* **Simulate content (AEP profiles)**: The option, selected under Simulate content, used to preview with test profiles *(product-specific)*
+* **Warnings**: Alerts that refer to recommendations and best practices and do not prevent testing or sending *(product-specific)*
 * **Errors**: Alerts that prevent you from testing or activating the journey, or publishing the campaign, until they are resolved *(product-specific)*
 
 **Guardrails:**
 
 * Errors prevent you from testing or activating the journey, or publishing the campaign, as long as they are not resolved.
 * Warnings refer to recommendations and best practices and do not prevent sending.
-* If your campaign is subject to an approval policy, you must request approval before you can send your messages.
-* To send the LINE message, the journey or campaign configuration must be completed.
+* If your campaign is subject to an approval policy, request approval before sending the message.
+* To send the LINE message, complete the journey configuration then activate the journey, or complete the campaign configuration then publish the campaign.
 
 **Terminology:**
 
-* Canonical name: Simulate content — Acronym: n/a — variants: preview, simulation method
-* Synonyms: "Simulate content (AEP profiles)" = "preview with test profiles"
-* Do not confuse: "Warnings" (recommendations and best practices; do not block) ≠ "Errors" (must be resolved before testing, activating, or publishing)
+* Canonical name: Simulate content — Acronym: n/a
+* Do not confuse: "Warnings" (recommendations and best practices; do not prevent testing or sending) ≠ "Errors" (must be resolved before testing, activating, or publishing)
 * Do not confuse: "Simulate content" (test content variations with sample input data or AI auto-generation) ≠ "Simulate content (AEP profiles)" (preview with test profiles)
 
 **FAQ:**
 
 * **Q: How can the LINE message be previewed before sending?** — Use Simulate content to test content variations with sample input data or AI auto-generation, or select Simulate content (AEP profiles) to preview with test profiles.
 * **Q: What is the difference between warnings and errors?** — Warnings refer to recommendations and best practices, while errors prevent you from testing or activating the journey, or publishing the campaign, until they are resolved.
-* **Q: What happens if the campaign is subject to an approval policy?** — You must request approval before you can send your messages.
-* **Q: What is required to send the LINE message?** — Complete the configuration of your journey or campaign when the LINE message is ready.
+* **Q: What happens if the campaign is subject to an approval policy?** — Request approval before sending the message.
+* **Q: What is required to send the LINE message?** — When the message is ready, complete the journey configuration then activate the journey, or complete the campaign configuration then publish the campaign.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: d66d2222 -->
+<!-- ai-section-version: 1 | source-hash: f95fa7c4 -->
