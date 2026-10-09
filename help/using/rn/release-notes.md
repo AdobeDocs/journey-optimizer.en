@@ -179,14 +179,6 @@ The following capability is coming to channels in this release.
 
 +++
 
-### Loyalty {#oct-26-loyalty}
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **Challenges domain in the Content Card personalization editor** - The Content Card personalization editor now supports **Challenges** as a domain, letting you access challenge metadata when authoring content card personalization. This makes it easier to create tailored content for each stage of a challenge — Launch, In progress, and End — without custom code. 
-
-+++
-
 ## September '26 release notes {#sep-26-updates}
 
 >[!BEGINSHADEBOX]
@@ -337,6 +329,10 @@ The following capabilities and improvements are coming to content management in 
 * **Per-member Loyalty challenge completion deadlines** - Loyalty challenges now support per-member completion deadlines: choose "Within a number of days after opt-in" under Completion requirements so each member's deadline is calculated from their own opt-in date rather than a fixed program-wide end date. If both a challenge end date and this opt-in window are set, each member's deadline is whichever comes first. [Learn more](../loyalty-challenges/create-challenges.md#schedule)
 
   Availability date: Septemebr 30 , 2026
+
+* **Challenges domain in the Content Card personalization editor** - The Content Card personalization editor now supports **Challenges** as a domain, letting you access challenge metadata when authoring content card personalization. This makes it easier to create tailored content for each stage of a challenge — Launch, In progress, and End — without custom code. [Learn more](../content-card/design-content-card.md#personalize-challenge-content)
+
+  Availability date: September 30, 2026
 
 * **"Forever" Loyalty challenges** - Loyalty challenges can now run indefinitely. Set **Challenge end** to **No end date** when configuring the schedule, and the challenge never expires. [Learn more](../loyalty-challenges/create-challenges.md#schedule)
   

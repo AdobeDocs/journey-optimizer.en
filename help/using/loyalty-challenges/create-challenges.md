@@ -316,6 +316,9 @@ To configure challenge content:
 1. Choose the action type:
 
    * **[!UICONTROL Content card]**: Displays the challenge as a card-style experience on customer devices. Select a **[!UICONTROL Channel configuration]** and click **[!UICONTROL Edit content]** to design and personalize the card. [Learn more about content cards](../content-card/create-content-card.md).
+
+      You can use challenge metadata to personalize the card content. [Learn more about personalizing challenge content](../content-card/design-content-card.md#personalize-challenge-content).
+
    * **[!UICONTROL Code-based experience]**: Delivers challenge content through your own custom implementation using Journey Optimizer's code-based channel. Select a **[!UICONTROL Channel configuration]** and click **[!UICONTROL Edit content]** to define the content. [Learn more about code-based experiences](../code-based/create-code-based.md).
 
    ![](assets/challenge-create-content.png)
@@ -433,4 +436,6 @@ Learn how to create and configure loyalty challenges with these step-by-step vid
 ➡️ Watch how to publish a challenge and generate a journey
 
 >[!VIDEO](https://video.tv.adobe.com/v/3498577?quality=12)
+
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-create-challenges.md}}
 
