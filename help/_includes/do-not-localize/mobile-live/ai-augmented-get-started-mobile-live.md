@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page introduces Live activities as persistent, real-time updates on the iPhone Lock Screen and Dynamic Island, and explains that in Adobe Journey Optimizer they are sent only through API-triggered campaigns.
+* **TL;DR:** This page introduces Live activities as persistent, real-time updates on the Android or iPhone Lock Screen and Dynamic Island, and explains that in Adobe Journey Optimizer they are sent only through API-triggered campaigns.
 
 **Intents:**
 
@@ -27,7 +27,6 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Live activities in Adobe Journey Optimizer are only compatible with Apple iOS.
 * Live activities can only be initiated via API-triggered campaigns, and all personalization is performed through your own payload.
 * Broadcast use cases require an API-triggered Marketing campaign; individual use cases require an API-triggered Transactional campaign.
 
@@ -37,15 +36,15 @@ For complete understanding, this information should be combined with the documen
 * Synonyms: "broadcast use cases" = "audience-based updates sent at scale"
 * Synonyms: "individual use cases" = "1:1 real-time updates per user"
 * Do not confuse: "API-triggered Marketing" (broadcast, audience-based) ≠ "API-triggered Transactional" (individual, 1:1)
-* Do not confuse: "Live activity" (persistent, continuously updatable presence) ≠ "push notification" (one-time alert)
+* Do not confuse: "Live activity" (persistent, continuously updatable presence) ≠ "traditional push notifications" (deliver one-time alerts)
 
 **FAQ:**
 
-* **Q: Which platforms support Live activities in Journey Optimizer?** — Only Apple iOS.
+* **Q: Which devices show Live activities?** — The page describes Live activities on the Android or iPhone Lock Screen and Dynamic Island.
 * **Q: How are Live activities initiated?** — Only via API-triggered campaigns, with all personalization performed through your own payload.
 * **Q: When should I use API-triggered Marketing versus API-triggered Transactional?** — Marketing for broadcast, audience-based use cases such as sports scores or flight status; Transactional for individual 1:1 use cases such as order tracking or booking confirmations.
 * **Q: What are the quick start steps?** — Create a mobile configuration, integrate the Adobe Experience Platform Mobile SDK, create a Live activity through an API-triggered campaign, then track the impact with built-in reports.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: e61d7a77 -->
+<!-- ai-section-version: 1 | source-hash: c6be65ca -->
