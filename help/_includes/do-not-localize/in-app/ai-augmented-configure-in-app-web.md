@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Adobe Experience Platform Web SDK extension**: The extension that must be installed in your Tag properties, using the latest version *(product-specific)*
+* **Adobe Experience Platform Web SDK extension**: The Web SDK tag extension that must be installed in your Tag properties, using the latest version *(product-specific)*
 * **Personalization Storage**: A Web SDK extension option that stores event histories on the client, a prerequisite for implementing Frequency Rules in the Rules builder *(product-specific)*
 * **Sent data to platform rule**: A rule configured with a Library Loaded (Page Top) event and a Send event action *(product-specific)*
 * **Manual rule**: A rule configured with a Click event and an Evaluate rulesets action *(product-specific)*
