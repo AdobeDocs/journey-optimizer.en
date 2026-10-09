@@ -13,7 +13,7 @@ For complete understanding, this information should be combined with the documen
 
 **Intents:**
 
-* Add a Web action to a journey or create a web campaign
+* Add a Web Channel action to a journey or create a web campaign
 * Select or create a web configuration matching a single page URL or multiple pages
 * Edit web content using the web designer or the non-visual editor
 * Preview and test a web experience before it goes live
