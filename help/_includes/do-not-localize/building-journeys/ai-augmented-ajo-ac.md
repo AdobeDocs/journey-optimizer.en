@@ -14,14 +14,14 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 * Configure a transactional email template in Adobe Campaign v7/v8 for use with Journey Optimizer
 * Create an event in Journey Optimizer that includes custom fields such as a purchase order number
-* Create and configure a Campaign Classic action in Journey Optimizer with a JSON payload
+* Create and configure an action of type Adobe Campaign Classic in Journey Optimizer with a JSON payload
 * Map journey event fields to Campaign personalization variables in the action configuration
 * Build and publish a journey that triggers a Campaign transactional email
 
 **Glossary:**
 * **Transactional Messaging**: A Campaign feature that must be configured before this integration can be used *(product-specific)*
 * **Event type (eventType)**: An enumeration value defined in Campaign that identifies the type of transactional event; its internal name is referenced in the JSON payload *(product-specific)*
-* **Campaign Classic action**: A Journey Optimizer action type that connects to Adobe Campaign v7/v8 to send transactional messages *(product-specific)*
+* **Adobe Campaign Classic (Action type)**: The Journey Optimizer action type selected for the action that corresponds to the Campaign template; it connects to Adobe Campaign v7/v8 to send transactional messages *(product-specific)*
 * **Payload field**: The JSON structure pasted into a Journey Optimizer action that defines the data fields sent to Campaign *(product-specific)*
 
 **Guardrails:**
@@ -32,7 +32,7 @@ For complete understanding, this information should be combined with the documen
 * Personalization field values set as "Constant" in the action must be changed to "Variable" to allow dynamic population at runtime
 
 **Terminology:**
-* Canonical name: Adobe Campaign v7/v8; Action type: Adobe Campaign Classic
+* Canonical name: Adobe Campaign v7/v8 — Acronym: ACC (Adobe Campaign Classic v7/v8) — variants: Adobe Campaign Classic (the Action type selected in Journey Optimizer)
 * Synonyms: "Event type" = "eventType" (the Campaign enumeration)
 * The `eventType` payload field uses the internal name of the event type created in Campaign.
 

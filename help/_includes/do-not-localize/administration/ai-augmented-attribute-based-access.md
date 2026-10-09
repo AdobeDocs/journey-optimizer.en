@@ -35,7 +35,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Attribute-based access control
+* Canonical name: Attribute-based access control — Acronym: ABAC
 * Canonical name: Experience Data Model — Acronym: XDM — variants: XDM schema, XDM schemas
 * Synonyms: "Label" = "governance label" (the page uses the **Edit governance labels** option for labels)
 * Do not confuse: "Role" (a set of users that share the same permissions, labels, and sandboxes) ≠ "Policy" (the page only states that a policy must be created before managing permissions for a role)

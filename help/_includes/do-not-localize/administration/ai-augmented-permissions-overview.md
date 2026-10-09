@@ -33,8 +33,8 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Attribute-based access control — variants: Attribute-based access management (link text on the page)
-* Canonical name: Object-based access control — variants: Object-based access management (link text on the page)
+* Canonical name: Attribute-based access control — Acronym: ABAC — variants: Attribute-based access management (link text on the page)
+* Canonical name: Object-based access control — Acronym: OLAC (Object level access control) — variants: Object-based access management (link text on the page)
 * Do not confuse: "Object-based access control" (labels to limit the access to an object) ≠ "Attribute-based access control" (access based on attributes, which can be metadata added to an object, such as a label added to a schema field or segment)
 * Do not confuse: "Roles" (a collection of users with shared permissions and sandboxes) ≠ "Permissions" (the unitary rights grouped under resources that are assigned to roles)
 
