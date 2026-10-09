@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 327de13a-1c99-4d5e-86cf-8180fb7aaf23
-TQID: https://experienceleague.adobe.com/c-4sdq-7wSKY9acayaNE3RO5fTO7yqX-Ve3eZhR0qqs
+TQID: 'https://experienceleague.adobe.com/c-4sdq-7wSKY9acayaNE3RO5fTO7yqX-Ve3eZhR0qqs'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -17,6 +17,8 @@ feature_v2:
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
     internal-label: Templates

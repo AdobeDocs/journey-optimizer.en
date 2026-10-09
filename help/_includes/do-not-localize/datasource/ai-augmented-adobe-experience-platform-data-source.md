@@ -16,7 +16,7 @@ For complete understanding, this information should be combined with the documen
 * Add field groups to the built-in Adobe Experience Platform data source
 * Select an XDM Individual Profile-based schema and choose the fields to retrieve
 * Edit the pre-configured ProfileFieldGroup or create new field groups
-* Remove field groups that are not used in any journey
+* Remove field groups that are not used in any draft or live journeys
 * Understand the key and namespace requirement for using this data source
 
 **Glossary:**
@@ -33,6 +33,7 @@ For complete understanding, this information should be combined with the documen
 * Only XDM Individual Profile-based schemas are supported in the Journey Optimizer Data Source configuration.
 * Using experience events in journey expressions/conditions is not supported.
 * Schema creation is performed in Adobe Experience Platform, not in Adobe Journey Optimizer.
+* You can remove the field groups that are not used in any draft or live journeys.
 * The Delete icon for a field group is only available if the field group is not used in any Live, Draft or Finished journey; check the Used in field.
 
 **Terminology:**
@@ -46,9 +47,9 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can this data source be deleted?** — No, it is built-in and pre-configured and cannot be deleted.
 * **Q: What must my journey include to use this data source?** — Your journey must start with an event containing a key and a namespace.
 * **Q: Which schemas can I select?** — Only XDM Individual Profile-based schemas are supported in the Journey Optimizer Data Source configuration.
-* **Q: When can I delete a field group?** — The Delete icon is only available if the field group is not used in any Live, Draft or Finished journey; the Used in field shows where it is used.
+* **Q: When can I delete a field group?** — The Delete icon is only available if the field group is not used in any Live, Draft or Finished journey; refer to the Used in field to check if this is the case.
 * **Q: Can I use experience events in journey expressions or conditions with this data source?** — No, using experience events in journey expressions/conditions is not supported; consider alternative methods for that use case.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 6b4a8d10 -->
+<!-- ai-section-version: 1 | source-hash: 82fb72af -->

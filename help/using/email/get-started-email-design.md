@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: email, design, stock, assets
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-TQID: https://experienceleague.adobe.com/fyUHQD4jpIUI2KdyrGbgktEhNNc4OWYRJ8AkgZhrIoQ
+TQID: 'https://experienceleague.adobe.com/fyUHQD4jpIUI2KdyrGbgktEhNNc4OWYRJ8AkgZhrIoQ'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,9 +20,9 @@ feature_v2:
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-    internal-label: Accessibility
   - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
     internal-label: Email design
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11

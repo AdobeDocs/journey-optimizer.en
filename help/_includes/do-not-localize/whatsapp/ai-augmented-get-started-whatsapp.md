@@ -14,7 +14,7 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 
 * Understand how the WhatsApp channel works in Journey Optimizer via Meta's Cloud API
-* Decide whether to add a WhatsApp activity to a journey or select WhatsApp as a campaign action
+* Decide how to add WhatsApp to journeys and campaigns
 * Evaluate WhatsApp use cases and situations when not to use the channel
 * Identify the prerequisites needed to integrate WhatsApp with Journey Optimizer
 * Understand the limitations that apply to the WhatsApp channel
@@ -24,7 +24,7 @@ For complete understanding, this information should be combined with the documen
 * **WhatsApp channel**: The Journey Optimizer channel that sends WhatsApp messages directly through Meta's Cloud API *(product-specific)*
 * **Cloud API**: Meta's API through which Journey Optimizer sends WhatsApp messages *(product-specific)*
 * **WhatsApp Flow template**: A template type that builds guided, multi-step interactions within the chat, such as surveys and lead capture forms *(product-specific)*
-* **WhatsApp Business Account**: A Meta business account with a verified sender name and phone number, required to integrate WhatsApp *(product-specific)*
+* **WhatsApp Business Account**: A WhatsApp Business Account with a verified sender name and phone number, listed as a prerequisite to integrate WhatsApp *(product-specific)*
 
 **Guardrails:**
 
@@ -38,10 +38,8 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: WhatsApp channel — Acronym: n/a — variants: WhatsApp, WhatsApp activity, WhatsApp action
-* Synonyms: "WhatsApp activity" (in a Journey) = "WhatsApp action" (in a Campaign)
-* Do not confuse: "Journey" (add a WhatsApp activity) ≠ "Campaign" (select WhatsApp as an action)
-* Do not confuse: "BSP" (Business Service Provider) ≠ "Cloud API" (Meta's native integration used by Journey Optimizer)
+* Canonical name: WhatsApp channel — Acronym: n/a — variants: WhatsApp, WhatsApp action
+* Do not confuse: "BSP" (third-party Business Service Provider, not allowed by the native integration) ≠ "Cloud API" (Meta's API used for the native integration)
 
 **FAQ:**
 
@@ -54,4 +52,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 49f32f6b -->
+<!-- ai-section-version: 1 | source-hash: 16423cf6 -->

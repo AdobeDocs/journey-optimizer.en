@@ -90,7 +90,9 @@ Let's say you want to compare three paths:
 
 1. Optionally, use the **[!UICONTROL Add an alternative path in case of a timeout or an error]** to define a fallback action. [Learn more](using-the-journey-designer.md#paths)
 
-1. [Publish](publish-journey.md) your journey.
+1. Click **[!UICONTROL Validate]** in the journey header and resolve any errors before [testing the journey](choose-validation-method.md). [Learn about journey validation](publish-journey.md#validate).
+
+1. When testing is complete and validation is current and passed, [publish](publish-journey.md) your journey.
 
 Once the journey is live, users are randomly assigned to go down different paths. [!DNL Journey Optimizer] tracks which path performs best and provides actionable insights.
 

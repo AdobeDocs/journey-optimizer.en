@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: email, start, creation, preview
 exl-id: 621c4256-449d-4376-96cd-02cbdcd4de05
-TQID: https://experienceleague.adobe.com/-qzd-EVJ7zdf8MnBb8onuapLtdLloci20rTeSzF2Tys
+TQID: 'https://experienceleague.adobe.com/-qzd-EVJ7zdf8MnBb8onuapLtdLloci20rTeSzF2Tys'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: fae48155-b23f-40d2-a252-a25bce350b4d
     internal-label: Email configuration

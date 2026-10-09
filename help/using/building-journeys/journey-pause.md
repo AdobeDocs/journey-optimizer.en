@@ -9,7 +9,7 @@ level: Intermediate
 keywords: publish, journey, live, validity, check
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/gIj6jGScvIDgAJxb3B4wiuqP6BKZS0tvCeqC6wRo5IQ
+TQID: 'https://experienceleague.adobe.com/gIj6jGScvIDgAJxb3B4wiuqP6BKZS0tvCeqC6wRo5IQ'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,6 +20,10 @@ feature_v2:
     internal-label: Activities
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: d2971708-e780-44bb-9e2a-72f139796afd
+    internal-label: Customer
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 subfeature_v2:
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences

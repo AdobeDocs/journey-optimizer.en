@@ -19,21 +19,22 @@ For complete understanding, this information should be combined with the documen
 * Build and publish a journey that triggers a Campaign transactional email
 
 **Glossary:**
-* **Transactional Messaging**: A Campaign feature that sends real-time, triggered emails based on events; must be configured before this integration can be used *(product-specific)*
+* **Transactional Messaging**: A Campaign feature that must be configured before this integration can be used *(product-specific)*
 * **Event type (eventType)**: An enumeration value defined in Campaign that identifies the type of transactional event; its internal name is referenced in the JSON payload *(product-specific)*
 * **Campaign Classic action**: A Journey Optimizer action type that connects to Adobe Campaign v7/v8 to send transactional messages *(product-specific)*
 * **Payload field**: The JSON structure pasted into a Journey Optimizer action that defines the data fields sent to Campaign *(product-specific)*
 
 **Guardrails:**
+* The journey must be validated before testing. Errors in the Alerts panel must be resolved and validation rerun before continuing.
 * Campaign v7/v8 build 9125 or higher is required for this integration
 * The Transactional Messaging feature must be configured in the Campaign instance before use
 * After creating a new event type in Campaign, you must disconnect and reconnect to the instance for it to take effect
 * Personalization field values set as "Constant" in the action must be changed to "Variable" to allow dynamic population at runtime
 
 **Terminology:**
-* Canonical name: Adobe Campaign v7/v8 — Acronym: ACC — variants: Campaign Classic, Campaign v7, Campaign v8
-* Synonyms: "eventType" = "event type internal name"
-* Do not confuse: "Campaign Classic action" ≠ "custom action" (Campaign Classic action is a specific built-in action type for ACC integration)
+* Canonical name: Adobe Campaign v7/v8; Action type: Adobe Campaign Classic
+* Synonyms: "Event type" = "eventType" (the Campaign enumeration)
+* The `eventType` payload field uses the internal name of the event type created in Campaign.
 
 **FAQ:**
 * **Q: What Campaign version is required for this integration?** — Campaign v7/v8 build 9125 or higher is required.
@@ -43,3 +44,5 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I connect the Journey Optimizer action to the Campaign template?** — Select "Adobe Campaign Classic" as the Action type, then paste the JSON payload that matches the transactional message template structure.
 
 +++
+
+<!-- ai-section-version: 1 | source-hash: 2c0b459d -->

@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Email
   - id: 31bc9329-ef7e-5c6b-a292-c7386a476887
     internal-label: Experimentation
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started

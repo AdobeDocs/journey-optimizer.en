@@ -21,6 +21,8 @@ feature_v2:
     internal-label: APIs and SDKs
   - id: 66e1fd99-672d-5d64-aa58-eca107f0fbae
     internal-label: Push
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices

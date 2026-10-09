@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 keywords: journey, questions, answers, troubleshoot, help, guide, orchestration
 version: Journey Orchestration
 exl-id: cac9fc24-b78e-48d9-9c0c-f43181246f6f
-TQID: https://experienceleague.adobe.com/dsBz1iD4BaSxE-bDie1jMSABvjDN6arPcaspgMSXYhU
+TQID: 'https://experienceleague.adobe.com/dsBz1iD4BaSxE-bDie1jMSABvjDN6arPcaspgMSXYhU'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -21,6 +21,8 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
@@ -221,9 +223,10 @@ Follow these key steps:
 2. **Create the journey**: Navigate to the Journeys menu and click "Create Journey"
 3. **Define journey properties**: Set the journey name, description, and other settings
 4. **Design the journey**: Drag and drop activities from the palette into the canvas
-5. **Test the journey**: Use test mode to validate your journey logic
-6. **Dry run the journey**: Use Dry run to test the journey using real production data without contacting real customers or updating profile information
-7. **Publish the journey**: Activate the journey to make it live
+5. **Validate the journey**: Click **[!UICONTROL Validate]**, resolve any errors in the Alerts panel, and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
+6. **Test the journey**: Use test mode to validate your journey logic
+7. **Dry run the journey**: Use Dry run to test the journey using real production data without contacting real customers or updating profile information
+8. **Publish the journey**: Activate the journey to make it live
 
 Follow the [step-by-step guide](journey-gs.md).
 
@@ -308,7 +311,8 @@ Create a **unitary event-triggered journey**:
 2. Add the event as your journey entry point
 3. Immediately follow with an Email action
 4. Design your cart recovery email with personalized product details
-5. Publish the journey
+5. [Validate](publish-journey.md#validate) and [test](choose-validation-method.md) the journey, resolving any errors before continuing
+6. Publish the journey
 
 The journey will automatically trigger whenever a cart abandonment event is received, sending the recovery email in real time.
 
@@ -429,7 +433,9 @@ Learn more about [Journey Fragments](journey-fragments.md).
 
 +++ How do I test my journey before publishing it?
 
-Journey Optimizer offers three validation methods:
+First, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. If you edit the journey, validate it again before testing or publishing. [Learn about journey validation](publish-journey.md#validate).
+
+After configuration validation passes, choose from three testing methods:
 
 * **Journey Simulation**: Validate your journey with temporary simulated users, manually created or auto-generated — no need to create or wait for real test profiles. Best for fast iteration during journey design.
 * **Test mode**: Walk real (but designated test) profiles through the journey step by step, allowing you to verify logic, conditions, and actions before going live.
@@ -474,8 +480,9 @@ Yes, but with limitations. You can edit certain elements of a Live journey:
 
 1. **Create a new version**: Duplicate the published journey to create a draft version
 2. **Make your changes**: Edit the draft version as needed
-3. **Test the new version**: Use test mode to validate changes
-4. **Publish the new version**: This automatically closes the previous version and activates the new one
+3. **Validate the new version**: Click **[!UICONTROL Validate]** and resolve any errors before continuing. [Learn about journey validation](publish-journey.md#validate).
+4. **Test the new version**: Use test mode to validate changes
+5. **Publish the new version**: This automatically closes the previous version and activates the new one
 
 Profiles already in the journey will complete the original version, while new profiles will enter the new version.
 

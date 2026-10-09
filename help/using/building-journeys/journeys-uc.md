@@ -131,7 +131,7 @@ The event is now configured and ready to be used in the journey. Using the corre
 
 ## Test and publish the journey
 
-1. Before testing the journey, verify that it is valid and that there is no error.
+1. Click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before testing. [Learn about journey validation](publish-journey.md#validate).
 
 1. Use the **Test** toggle, located in the top right corner, to activate the test mode. Refer to this [section](testing-the-journey.md) to learn how to use the test mode.
 

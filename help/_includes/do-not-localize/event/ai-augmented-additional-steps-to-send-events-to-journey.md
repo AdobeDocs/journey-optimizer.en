@@ -35,7 +35,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Streaming Ingestion APIs — Acronym: n/a — variants: inlet, inlet URL
+* Canonical name: Additional steps to send events — Acronym: n/a — variants: none
 * Synonyms: "inlet" = "Streaming Ingestion APIs URL"
 * Do not confuse: "header" (section carrying values such as x-gw-ims-org-id) ≠ "body" (the data section carrying the payload)
 
@@ -48,4 +48,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 42d383a1 -->
+<!-- ai-section-version: 1 | source-hash: bb6e7705 -->

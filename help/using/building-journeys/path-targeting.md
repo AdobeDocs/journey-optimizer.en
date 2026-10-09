@@ -105,7 +105,9 @@ To set up targeting in a journey, follow the steps below.
 
    In this example, design an email with special offers for Gold members, and an SMS reminder for the other members.<!--You can seamlessly navigate between the different contents for each action. ![Content design panel for targeting rule actions](assets/journey-targeting-design.png)-->
 
-1. [Publish](publish-journey.md) your journey.
+1. Click **[!UICONTROL Validate]** in the journey header and resolve any errors before [testing the journey](choose-validation-method.md). [Learn about journey validation](publish-journey.md#validate).
+
+1. When testing is complete and validation is current and passed, [publish](publish-journey.md) your journey.
 
 Once the journey is live, the path that is specified for each segment is processed so that Gold members enter the path with the email offers, while the other members enter the path with the SMS reminder.
 

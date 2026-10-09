@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Business event**: An event that is not linked to a specific profile and is always rule-based, used to trigger a journey for a set of profiles when a global occurrence happens *(product-specific)*
+* **Business event**: An event that is, unlike unitary events, not linked to a specific profile and is always rule-based, used to trigger a journey for a set of profiles when a global occurrence happens *(product-specific)*
 * **Read audience activity**: The activity that is the only one allowed after a business event and is automatically added as the next step *(product-specific)*
 * **Event ID condition**: The condition, written in the simple expression editor, used by the system to identify the events that trigger the journey *(product-specific)*
 * **One-shot business event**: A business event whose first event job data is reused during a one-hour time window for a given journey *(product-specific)*
@@ -41,8 +41,8 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Business event — Acronym: n/a — variants: business event configuration, rule-based business event
-* Do not confuse: "Business event" (not linked to a specific profile, always rule-based) ≠ "Unitary event" (linked to a specific profile)
+* Canonical name: Business event — Acronym: n/a — variants: none
+* Do not confuse: "Business event" (not linked to a specific profile, always rule-based) ≠ "Unitary event" (the page states that, unlike unitary events, business events are not linked to a specific profile)
 * Do not confuse: "Time series schema" (the only schema type available for business events) ≠ "Experience Events, Decision Events, and Journey Step Events schemas" (not available)
 
 **FAQ:**
@@ -50,10 +50,10 @@ For complete understanding, this information should be combined with the documen
 * **Q: What schema type does a business event require?** — Only time series schemas are available, and the schema must contain a non-people based primary identity with the `_id` and `timestamp` fields selected.
 * **Q: How large can a business event payload be?** — Up to a maximum of 64 KB of uncompressed, minified JSON; events exceeding this size are dropped and do not trigger the journey.
 * **Q: Where can a business event be placed in a journey?** — Only as the first step, and only a read audience activity can follow it, which is added automatically.
-* **Q: How long is the delay before profiles enter the journey?** — After a business event is triggered, the audience export delay is 15 minutes to up to one hour.
+* **Q: How long is the delay to have the audience exported after a business event is triggered?** — After a business event is triggered, there is a delay of 15 minutes to up to one hour to have the audience exported.
 * **Q: Can a business event be combined with unitary events?** — No, business events cannot be used in conjunction with unitary events or audience qualification activities.
-* **Q: What happens to profiles already in the journey when a new business event arrives?** — Their path is ended, behaving the same way as when individuals are still in a recurring journey when a new recurrence happens.
+* **Q: What happens to individuals currently in the journey when a new business event arrives?** — Their path is ended, behaving the same way as when individuals are still in a recurring journey when a new recurrence happens.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 9de81a1b -->
+<!-- ai-section-version: 1 | source-hash: 4d89d738 -->
