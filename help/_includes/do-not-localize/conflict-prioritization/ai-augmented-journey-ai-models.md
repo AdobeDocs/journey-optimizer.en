@@ -33,16 +33,16 @@ For complete understanding, this information should be combined with the documen
 * This feature is currently in Limited Availability; contact your Adobe representative to gain access.
 * AI models are only available to organizations that have purchased the **Decisioning** add-on offering.
 * Only datasets created from schemas associated with the [!UICONTROL Experience Event - Proposition Interactions] field group are displayed in the drop-down list.
-* You can select up to 5 datasets where the conversion and impression events are collected (hard limit).
-* You can select up to 50 audiences to train the AI model (hard limit).
+* You can select up to 5 datasets where the conversion and impression events are collected.
+* You can select up to 50 audiences to train the AI model.
 * Impression and conversion events are automatically captured using the Web SDK or the Mobile SDK.
 * Only one rule set can be applied to a journey at a time.
 
 **Terminology:**
 
-* Canonical name: AI model — Acronym: n/a — variants: journey arbitration AI models, AI model score
+* Canonical name: AI model — Acronym: n/a — variants: AI models, AI model score
 * Synonyms: none
-* Do not confuse: "AI model" (trained model producing scores) ≠ "ranking formula" (the expression that references priority, attributes, or AI model score) ≠ "journey priority" (a manual value)
+* Do not confuse: "AI model" (trained model whose scores can be used to rank journeys) ≠ "ranking formula" (the formula in which you select the AI model and set [!UICONTROL AI model score] as the ranking method in a criterion) ≠ "priority" (the value assigned to each journey that determines which journeys are selected; AI models in ranking formulas are used instead of it)
 * Do not confuse: "impression events" (items that are displayed) ≠ "conversion events" (items that result in clicks or conversions)
 
 **FAQ:**
@@ -55,4 +55,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 3924d398 -->
+<!-- ai-section-version: 1 | source-hash: ad8a4fdc -->

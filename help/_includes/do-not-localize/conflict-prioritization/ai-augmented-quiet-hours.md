@@ -36,7 +36,7 @@ For complete understanding, this information should be combined with the documen
 * If a profile has no time zone value, quiet hours are not enforced for that profile.
 * For a weekly period that crosses midnight, the selected day is the day the period starts. A Monday 9:00 PM–9:00 AM period covers Monday 9:00 PM through Tuesday 9:00 AM, not Monday 12:00 AM–9:00 AM.
 * Review weekly periods together for continuous coverage. A Saturday and Sunday all-day period combined with Monday–Friday 9:00 PM–9:00 AM periods leaves Monday 12:00 AM–9:00 AM uncovered; include Sunday in the 9:00 PM–9:00 AM period to cover through Monday 9:00 AM.
-* You can add up to 5 separate periods with the [!UICONTROL Add more dates] button (hard limit).
+* You can add up to 5 separate periods with the [!UICONTROL Add more dates] button.
 * Updates to a quiet hours rule may take up to 12 hours to be applied to channel actions that already use that rule.
 * In cases of high-volume communications, the system may take additional time to begin enforcing quiet hour suppressions.
 * If a message remains in a queued state for a profile for more than 7 days, the message is discarded.
@@ -44,8 +44,8 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: quiet hours — Acronym: not stated on this page — variants: Quiet hours rule, quiet hours rule set
-* Synonyms: none stated on this page
+* Canonical name: quiet hours — Acronym: n/a — variants: quiet hours rule
+* Synonyms: none
 * Do not confuse: "[!UICONTROL Queue message]" (sent after the quiet period unless Paused) ≠ "[!UICONTROL Discard message]" (never sent)
 * Do not confuse: standard "[!UICONTROL Time zone]" (one time zone for all recipients) ≠ "[!UICONTROL Use recipients local time zone]" (each profile's own time zone)
 
@@ -62,4 +62,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 2aee6cf1 -->
+<!-- ai-section-version: 1 | source-hash: 8bcdcc40 -->

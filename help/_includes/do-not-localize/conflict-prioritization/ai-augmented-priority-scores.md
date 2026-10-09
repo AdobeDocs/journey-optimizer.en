@@ -15,7 +15,7 @@ For complete understanding, this information should be combined with the documen
 
 * Assign a priority score to a journey or campaign in its properties
 * Assign a priority score to an inbound channel action in the [!UICONTROL Action] activity
-* Ensure a specific communication is shown by giving it the highest score
+* Make sure campaign content is shown by giving it a score of 100
 * Override the inherited journey priority for an action by unselecting [!UICONTROL Use journey priority]
 
 **Glossary:**
@@ -37,7 +37,6 @@ For complete understanding, this information should be combined with the documen
 
 * Canonical name: priority score — Acronym: n/a — variants: priority, Priority score
 * Synonyms: none
-* Do not confuse: "priority score" (a static 0-100 value setting precedence) ≠ "ranking formula" (a dynamic expression that ranks journeys)
 * Do not confuse: journey or campaign "[!UICONTROL Priority score]" ≠ action "[!UICONTROL Priority]" (which by default inherits the journey score via [!UICONTROL Use journey priority])
 
 **FAQ:**
@@ -50,4 +49,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 23ffd616 -->
+<!-- ai-section-version: 1 | source-hash: 60a45a6b -->
