@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how an administrator views, edits, and creates additional API credential sets for a custom channel so that requests to the endpoint can be authenticated across different brands or environments without duplicating the channel.
+* **TL;DR:** This page explains how to view, edits, and creates additional API credential sets for a custom channel so that requests to the endpoint can be authenticated across different brands or environments without duplicating the channel.
 
 **Intents:**
 
@@ -34,7 +34,7 @@ For complete understanding, this information should be combined with the documen
 
 * Canonical name: API credentials — Acronym: n/a — variants: API credential set, credentials
 * Synonyms: "credential set" = "set of API credentials"
-* Do not confuse: "API credentials" (authentication values authenticating requests to the endpoint) ≠ "channel configuration" (the preset to which a credential set is attached)
+* Do not confuse: "API credentials" (authentication values authenticating requests to the endpoint) ≠ "channel configuration" (the configuration to which different authentication values are attached)
 
 **FAQ:**
 
@@ -45,4 +45,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: d7d7af37 -->
+<!-- ai-section-version: 1 | source-hash: ae379db4 -->
