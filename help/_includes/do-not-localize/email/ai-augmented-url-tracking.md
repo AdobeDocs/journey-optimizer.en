@@ -23,7 +23,7 @@ For complete understanding, this information should be combined with the documen
 
 * **URL tracking parameters**: Parameters defined at the email channel configuration level that are appended to the end of the URLs in your email content, to be captured in web analytics tools and performance reports *(product-specific)*
 * **Message profile id**: Message-oriented attribute uniquely identifying each message sent to each targeted profile in a delivery *(product-specific)*
-* **Source action id / Source action name**: The ID / name of the Email action added to the journey or campaign *(product-specific)*
+* **Source action id / Source action name**: The ID / name of the Action activity with the Email channel added to the journey, or of the email in the campaign *(product-specific)*
 * **Source id / Source name / Source version id**: The ID / name / version ID of the journey or campaign the email was sent with *(product-specific)*
 * **Offer id**: The ID of the offer used in the email *(product-specific)*
 
@@ -38,8 +38,8 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: URL tracking — Acronym: n/a — variants: URL tracking parameters
-* Synonyms: "Source action id" = "ID of the Email action"; "Source id" = "ID of the journey or campaign"
-* Do not confuse: "Source action id / name" (the Email action) ≠ "Source id / name" (the journey or campaign)
+* Synonyms: "Source action id" = "ID of the Action activity with the Email channel"; "Source id" = "ID of the journey or campaign"
+* Do not confuse: "Source action id / name" (the Action activity with the Email channel) ≠ "Source id / name" (the journey or campaign)
 * Do not confuse: configuration-level "URL tracking parameters" (applied to all content URLs) ≠ dynamic personalized tracking parameters added to individual links in content
 
 **FAQ:**

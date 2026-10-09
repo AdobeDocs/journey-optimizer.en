@@ -45,7 +45,7 @@ For complete understanding, this information should be combined with the documen
 * Content Management (CX Coworker) is powered by 15 read/write MCP tools.
 * AI Assistant requires agreement to the Adobe Experience Cloud Generative AI User Guidelines before use.
 * Operational Insights are in Beta, are currently only available for Journeys, and reflect data from your current sandbox.
-* Send-Time Optimization is only available for Email and Push actions in journeys; your organization needs at least 30 days of history using those actions before enabling it.
+* Send-Time Optimization is not recommended for time-sensitive operational messages (order confirmations, password resets), urgent notifications (flight delays, emergency alerts), or event-based messages with specific timing requirements.
 * AI Content Generation is only available for the Email, Push, Web, and SMS channels.
 * Brand asset uploads support PDFs, images, or ZIP files (max 50 MB) (hard limit).
 * Custom templates support up to 8-10 images.
