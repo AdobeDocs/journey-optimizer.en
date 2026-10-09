@@ -30,7 +30,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Enabling a schema for Real-Time Customer Profile is permanent: once enabled, the schema cannot be disabled or deleted (hard constraint).
+* Enabling a schema for Real-Time Customer Profile is permanent: once enabled, the schema cannot be disabled or deleted.
 * Datasets built on an enabled schema can be disabled or deleted separately, but doing so removes the associated profile records and may affect segmentation and activation workflows.
 * Relational schemas are flat and do not use classes or field groups.
 
@@ -43,11 +43,11 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: What are the two types of schemas?** — Standard schemas (hierarchical) and relational schemas (flat, non-hierarchical).
-* **Q: What is the difference between a class and a field group?** — A class defines the base behavior (record or time-series); field groups add specific fields to the schema.
+* **Q: What is the difference between a class and a field group?** — A class defines the data behavior (record or time-series); field groups add specific fields to the schema.
 * **Q: When are relational schemas used?** — Primarily in Journey Optimizer Orchestrated campaigns, for relational entities such as bookings, products, or stores.
 * **Q: Can I undo enabling a schema for Profile?** — No; once enabled, the schema cannot be disabled or deleted, although its datasets can be disabled or deleted separately.
 * **Q: How do I create a relational schema?** — Create it manually or import via DDL, then link schemas to define relationships and ingest data from supported sources.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 95f5af83 -->
+<!-- ai-section-version: 1 | source-hash: 5a29d06a -->

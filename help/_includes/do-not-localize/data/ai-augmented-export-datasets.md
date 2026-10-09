@@ -24,13 +24,15 @@ For complete understanding, this information should be combined with the documen
 * **Dataset export**: establishing a live connection with a cloud storage location to export dataset content *(product-specific)*
 * **Cloud storage destination**: an export target such as Amazon S3, Azure Blob, Azure Data Lake Gen 2, Data Landing Zone, Google Cloud Storage, or SFTP
 * **AJO Message Export Dataset**: stores sent email and SMS message content marked for export; data is retained for seven calendar days from ingestion *(product-specific)*
-* **`scopeDetails.correlationID` / `exdRequestID`**: join keys used to tie interaction or feedback data to the AJO Entity Dataset and to a decision request *(product-specific)*
+* **`scopeDetails.correlationID`**: used to join interaction or feedback data to the AJO Entity Dataset and retrieve campaign, journey, and message metadata *(product-specific)*
+* **`exdRequestID`**: used to tie a single decision request to analytics events *(product-specific)*
 
 **Guardrails:**
 
 * Datasets can be exported to the 6 cloud storage destinations listed on the page: Amazon S3, Azure Blob, Azure Data Lake Gen 2, Data Landing Zone, Google Cloud Storage, and SFTP.
 * Required access control permissions: **Manage and Activate Dataset Destinations** (Destinations), **View Datasets** (Data Management), and **View Destinations** (Destinations).
-* AJO Message Export Dataset data is retained for 7 calendar days from ingestion (hard retention).
+* AJO Message Export Dataset data is retained for 7 calendar days from ingestion.
+* The AJO Message Feedback Event Dataset uses batch ingestion; expect a data latency of up to 2 hours.
 * Cloud storage destinations are accessed from the **[!UICONTROL Destinations]** menu, in the **[!UICONTROL Catalog]** tab.
 
 **Terminology:**
@@ -47,4 +49,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 6828f9b3 -->
+<!-- ai-section-version: 1 | source-hash: 85cacdb9 -->

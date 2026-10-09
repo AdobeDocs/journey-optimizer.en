@@ -14,7 +14,7 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 
 * Choose the correct system dataset for a given analysis (message feedback versus email tracking versus journey step).
-* Query email and push interaction counts (opens, clicks).
+* Query email interaction counts (opens, clicks) and see the push tracking query examples.
 * Query message delivery feedback statuses (`sent`, `bounce`) and bounce categories.
 * Distinguish test executions from non-test executions using the `isTestExecution` field.
 * Join the Entity Dataset with feedback and tracking datasets using `messageID` or `correlationID`.
@@ -33,12 +33,13 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* The AJO Message Feedback Event Dataset uses batch ingestion; expect a data latency of up to 2 hours (expected latency, batch ingestion — not a configurable limit) when querying it or using it for reporting.
+* The AJO Message Feedback Event Dataset uses batch ingestion; data may be delayed by up to 2 hours.
 * If a query returns "Table not provisioned for dataset", for batch-ingested datasets allow up to two hours for data to become available before contacting Adobe Support.
 * The CJM Consent Service Dataset and CJM Push Profile Dataset are system datasets used by Journey Optimizer for consent and push profile data. They are not available as queryable tables in Query Service, so a "Table not provisioned for dataset" response is expected when querying them.
-* System datasets are hidden by default; enable **Show system datasets** in the Datasets workspace to query them.
-* An Entity Dataset entry for a message is created only after the journey or campaign is published, and may appear about 30 minutes after publication (observed delay).
+* System datasets are hidden by default; enable **Show system datasets** in the Datasets workspace to see them.
+* An Entity Dataset entry for a message is created only after the journey or campaign is published, and you may see the entry 30 minutes after the publication of the campaign or journey.
 * Do not automatically convert a `NULL` or missing `isTestExecution` value to `false`, and do not assume null represents a production execution.
+* In some journeys, `messageID` may not be unique for each individual delivery; to track events at the individual send level, combine `journeyVersionID`, `journeyActionID`, and `batchInstanceID` (for batch journeys) or `identityMap` fields.
 * A successful custom action HTTP call confirms only that the call completed, not that the external system delivered a message.
 
 **Terminology:**
@@ -54,8 +55,8 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does my query return "Table not provisioned for dataset"?** — It does not necessarily mean provisioning failed; enable Show system datasets, confirm the table name matches the Datasets workspace, and for batch datasets allow up to two hours for data to become available.
 * **Q: Why does a query for the CJM Consent Service Dataset or CJM Push Profile Dataset return "Table not provisioned for dataset"?** — These system datasets are not available as queryable tables in Query Service, so the response is expected.
 * **Q: How do I separate test executions from non-test executions?** — Use the `isTestExecution` field; treat `NULL` or missing values as unknown rather than converting them to `false`.
-* **Q: How do I enrich feedback records with campaign, journey, and message metadata?** — Join the Entity Dataset using `messageID` or `_experience.decisioning.propositions.scopeDetails.correlationID`.
+* **Q: How do I get marketer-defined metadata for messages in reporting?** — Use the Entity Dataset, which uses the `messageID` attribute to stitch datasets such as the Message Feedback Dataset and Experience Event Tracking Datasets; to sort emails sent by a journey by action, join the Message Feedback dataset with the Entity dataset using `_experience.decisioning.propositions.scopeDetails.correlationID` and the `_id` field in the Entity dataset.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 4c169bb7 -->
+<!-- ai-section-version: 1 | source-hash: 9127ea67 -->
