@@ -14,7 +14,7 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 
 - Switch between sandboxes in the Journey Optimizer interface using the sandbox switcher
-- Assign one or more sandboxes to a role in the Permissions product
+- Assign sandboxes to a role in the Permissions product
 - Remove sandbox access from a role
 - Configure content access (shared folders) for a sandbox
 - Understand how sandboxes relate to roles and permissions
@@ -27,14 +27,12 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-- Sandbox management can only be carried out by a Product or System administrator (hard prerequisite, as stated in the Important note on the page)
+- Sandbox management can only be carried out by a Product or System administrator (as stated in the Important note on the page)
 - Shared folder names must follow the same syntax as the sandbox name for content to sync to the correct sandbox (as stated on the page)
 
 **Terminology:**
 
-- Do not confuse: "Using a sandbox" (switching to it in the UI using the sandbox switcher) ≠ "Assigning a sandbox" (adding a sandbox to a role in the Permissions product) ≠ "Creating a sandbox" (done in Adobe Experience Platform, not in Journey Optimizer)
-- Synonyms: "sandbox" = "virtual environment" in the context of this page
-- Do not confuse: "Assign sandboxes" (adding sandboxes to a role in Permissions) ≠ "Manage sandboxes" (creating, resetting, or deleting sandboxes — done in Adobe Experience Platform)
+- Do not confuse: "Switching sandboxes" (clicking the active sandbox in the sandbox switcher and selecting another sandbox from the drop-down list) ≠ "Assigning a sandbox" (selecting the sandbox in the Sandboxes resource drop-down when editing a Role in Permissions) ≠ Adobe Experience Platform sandboxes, which can be created or reset from your Adobe Experience Platform instance
 
 **FAQ:**
 
@@ -44,4 +42,4 @@ For complete understanding, this information should be combined with the documen
 - **Q: What naming convention must shared folders follow?** — The shared folder must have the same name as the sandbox it is associated with (e.g., if the sandbox is called "development," the shared folder must also be called "development").
 
 +++
-<!-- ai-accordion-version: 1 | source-hash: 0a5ada9b -->
+<!-- ai-accordion-version: 1 | source-hash: 7c2ba399 -->
