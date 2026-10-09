@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Campaign action activity**: The activity available in the journey designer palette for each configured Adobe Campaign v7/v8 action *(product-specific)*
+* **Campaign action**: The action available in the journey designer palette for each configured Adobe Campaign v7/v8 action *(product-specific)*
 * **Transactional Messaging**: The Adobe Campaign capability used to send emails, push notifications, and SMS triggered from Journey Optimizer *(product-specific)*
 * **eventType**: The internal name of the Adobe Campaign event referenced in the JSON payload *(product-specific)*
 * **ctx**: The payload object holding variables based on the personalization present in the Campaign message *(product-specific)*
@@ -37,16 +37,16 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Adobe Campaign v7/v8 integration — Acronym: ACC — variants: Campaign action, Adobe Campaign Classic action, Campaign v7/v8 custom action
+* Canonical name: Adobe Campaign v7/v8 integration — Acronym: n/a — variants: Campaign action, Adobe Campaign Classic action, Campaign v7/v8 custom action
 * Synonyms: "Adobe Campaign Classic" = "Adobe Campaign v7"
-* Do not confuse: "Campaign action" (Adobe Campaign v7/v8 integration) ≠ "custom action" (generic third-party REST API action)
+* Do not confuse: "Campaign action" (Adobe Campaign v7/v8 integration) ≠ other custom actions (created through the generic action creation procedure that the page links to)
 
 **FAQ:**
 
 * **Q: How is the connection between Journey Optimizer and Adobe Campaign established?** — It is set up by Adobe at provisioning time; if it was not requested then, contact Adobe Journey Optimizer support and provide the Org ID, Sandbox Name, Campaign Server URL, Real-Time Server URL, and Campaign version.
 * **Q: What is the message sending cap for this integration?** — There is no throttling, but the system caps messages to 4,000 per 5 minutes based on the current Campaign SLA.
 * **Q: Why should this integration be used only for unitary use cases?** — Because there is no throttling and messages are capped to 4,000 per 5 minutes, it suits individual events rather than audiences.
-* **Q: Why can a Campaign action not be used with an audience qualification event?** — Campaign actions are not supported with an audience qualification event.
+* **Q: Can a Campaign action be used with an audience qualification event?** — No, you cannot use a Campaign action with an audience qualification event.
 * **Q: How do I update a Campaign action when the Real-Time endpoint changes?** — Edit the action, update the URL field with the new RT endpoint, adjust the Payload if needed, click Test to validate the connection, then Save.
 
 +++

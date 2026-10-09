@@ -9,22 +9,22 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to use the Adobe Campaign Standard integration to send emails, push notifications and SMS in Journey Optimizer journeys via Campaign Transactional Messaging templates.
+* **TL;DR:** This page explains how to use the Adobe Campaign Standard actions (Email, SMS, and Push) in Journey Optimizer journeys to send emails, push notifications and SMS via Campaign Transactional Messaging templates.
 
 **Intents:**
 
-* Configure the Email, SMS, or Push channels in a journey using the Adobe Campaign Standard integration
+* Configure the Campaign Standard Email, SMS, or Push actions in a journey
 * Select and map a Campaign Standard transactional messaging template to journey fields
 * Map Address and Personalization Data fields from journey events or datasources to the message payload
 * Handle unsubscription for event-based and profile-based transactional email templates
-* Configure push notification target platform and registration token for the Campaign Standard push channel
+* Configure push notification target platform and registration token for the Campaign Standard Push action
 
 **Glossary:**
 
-* **Transactional Messaging**: Adobe Campaign Standard feature on which the email, SMS, and push channels of the integration rely to execute message sending *(product-specific)*
+* **Transactional Messaging**: Adobe Campaign Standard feature on which the Campaign Standard Email, SMS, and Push actions rely to execute message sending *(product-specific)*
 * **rtEvent**: Abbreviation used for real-time transactional messages, also called event transactional messaging templates *(product-specific)*
 * **Profile transactional template**: A Campaign Standard transactional messaging template of the profile type; for profile messages the Address (or Target for push) fields are retrieved automatically by the system, and for email the unsubscription mechanism is handled by Adobe Campaign Standard *(product-specific)*
-* **Registration Token**: A field defined in the Target category of the push channel; the expression depends on how the token is defined in the event payload or in other Journey Optimizer information *(product-specific)*
+* **Registration Token**: A field defined in the Target category of the Campaign Standard Push action; the expression depends on how the token is defined in the event payload or in other Journey Optimizer information *(product-specific)*
 
 **Guardrails:**
 
@@ -33,7 +33,8 @@ For complete understanding, this information should be combined with the documen
 * Collections cannot be passed in Personalization Data fields.
 * For real-time transactional messages (rtEvent), a specific setup is required for fatigue, block list, or unsubscription management; for example, add a condition before the message sending to check an unsubscribe attribute stored in Adobe Experience Platform or in a third-party system.
 * For profile-based push messages, the Target fields are retrieved automatically; the Target category is only visible for event messages.
-* Mobile app must be configured with Campaign Standard before the push channel can be used.
+* Mobile app must be configured with Campaign Standard before the Campaign Standard Push action can be used.
+* Personalization Data fields have an expected format (for example string or decimal), which must be respected.
 
 **Terminology:**
 
@@ -43,10 +44,10 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: What channels are available through the Adobe Campaign Standard integration?** — Email, SMS, and Push channels are available through the Adobe Campaign Standard integration when you have Adobe Campaign Standard.
+* **Q: Which actions are available through the Adobe Campaign Standard integration?** — The Campaign Standard Email, SMS, and Push actions are available when you have Adobe Campaign Standard.
 * **Q: Does the transactional message need to be published in Campaign Standard before using it in Journey Optimizer?** — Yes, both the transactional message and its associated event must be published. If the event is published but the message is not, the message is not visible in the Journey Optimizer interface; if the message is published but its event is not, it is visible but not usable.
 * **Q: How is unsubscription handled for profile-based email templates?** — Unsubscription is automatically handled by Adobe Campaign Standard when using a profile transactional template; include an Unsubscription link content block in the template.
-* **Q: Can I pass a collection as personalization data?** — No, collections cannot be passed in Personalization Data; the transactional message must not expect collections.
+* **Q: Can I pass a collection as personalization data?** — No, collections cannot be passed in Personalization Data; if the transactional message expects collections, it will not work.
 * **Q: Where do I map the recipient address for an event-based email?** — The Address category in the activity configuration pane is only visible for event transactional messages; for profile messages the address is retrieved automatically.
 
 +++
