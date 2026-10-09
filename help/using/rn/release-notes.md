@@ -89,12 +89,6 @@ The following capability is coming to channels in this release.
 </tbody>
 </table>
 
-+++ Coming soon — **Information below is subject to change.**
-
-* **Custom SMS BYOP auth flexibility** - You can now configure **custom authentication headers** when connecting your SMS provider's OAuth setup, including where the token is placed on outgoing messages and how the token request itself is formatted.
-
-+++
-
 ### Journeys {#oct-26-journeys}
 
 +++ Coming soon — **Information below is subject to change.**
