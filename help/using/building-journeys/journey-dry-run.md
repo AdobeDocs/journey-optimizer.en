@@ -115,6 +115,7 @@ You can use the Dry run capability in any Draft journey with no error.
 To activate Dry run, follow these steps:
 
 1. Open the journey you want to test. 
+1. Click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
 1. Select the **[!UICONTROL Dry run]** button.
 
     ![Start the journey dry run](assets/dry-run-button.png)

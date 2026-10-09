@@ -28,6 +28,8 @@ Use **[!UICONTROL Simulation]** to validate your journey with **simulated users*
 
 For required permissions, see [Required permissions](simulate-journey-gs.md#required-permissions).
 
+Before entering **[!UICONTROL Simulation]**, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. Validation checks configuration and is separate from simulation. [Learn about journey validation](publish-journey.md#validate).
+
 For an overview by journey type, see [Get started with Journey simulation](simulate-journey-gs.md).
 
 Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
@@ -211,7 +213,7 @@ If your journey uses an external audience, for example a CSV or Federated Audien
 
         ![Manage simulation menu open with Reset simulation and Close simulation options](assets/simulate-15.png)
 
-After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
+After testing the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]** and apply the required changes to the journey. Click **[!UICONTROL Validate]** again and resolve any configuration errors before rerunning **[!UICONTROL Simulation]**. When testing is complete and validation is current and passed, you can [publish your journey](publish-journey.md).
 
 ## Trigger your events {#firing-events}
 

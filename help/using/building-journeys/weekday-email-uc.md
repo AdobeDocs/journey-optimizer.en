@@ -186,6 +186,8 @@ This ensures that all emails are sent on weekdays only, with weekend entries aut
 
 Before publishing, thoroughly test your journey logic in [!DNL Adobe Journey Optimizer]'s Test Mode to confirm everything works as expected:
 
+1. Click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
+
 1. Click the **[!UICONTROL Test]** button in the top right corner.
 
 1. Enable [test mode](testing-the-journey.md).
@@ -208,6 +210,8 @@ Before publishing, thoroughly test your journey logic in [!DNL Adobe Journey Opt
 ### Step 7: Publish your journey
 
 Once testing is complete:
+
+1. Make sure validation is current and passed. If you changed the journey after validation, click **[!UICONTROL Validate]** again and resolve any errors before publishing.
 
 1. Click **[!UICONTROL Publish]** in the top right corner.
 

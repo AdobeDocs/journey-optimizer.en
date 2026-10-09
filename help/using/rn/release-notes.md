@@ -97,6 +97,23 @@ The following capability is coming to channels in this release.
 
 ### Journeys {#oct-26-journeys}
 
+<table>
+<thead>
+<tr>
+<th><strong>On-demand journey validation</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new <strong>Validate</strong> button lets you run configuration checks, including message checks, when you're ready to test or publish, reducing repeated checks during editing and helping keep larger journey canvases responsive.</p>
+<p>For more information, refer to the <a href="../building-journeys/publish-journey.md#validate">detailed documentation</a>.</p>
+<p>Availability date: October 9, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -285,7 +302,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 25, 2026
 
-* [!BADGE Usability]{type=Positive} **Fix syntax with AI** - When validating an expression, if a PQL syntax error is detected, the Personalization Editor provides a "Fix with AI" option to help resolve the issue directly from the editor. [Read more](../personalization/personalization-build-expressions.md#validation-mechanisms).
+* [!BADGE Usability]{type=Positive} **Fix syntax with AI** - When validating an expression, if a syntax error is detected, the Personalization Editor provides a "Fix with AI" option to help resolve the issue directly from the editor. [Read more](../personalization/personalization-build-expressions.md#validation-mechanisms).
 
   Availability date: September 22, 2026
 

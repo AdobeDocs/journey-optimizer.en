@@ -119,7 +119,7 @@ Once an outbound action is selected in the **[!UICONTROL Actions]** tab, continu
 
     ![Manual ranking channel optimization reorder](assets/journey-channel-optimization-manual-reorder.png){width="90%"}
 
-1. [Save and publish](publish-journey.md) your journey, or [review and activate](../campaigns/review-activate-campaign.md) your campaign.
+1. For a journey, click **[!UICONTROL Validate]** in the journey header and resolve any errors before [testing](choose-validation-method.md). When testing is complete and validation is current and passed, [publish the journey](publish-journey.md). [Learn about journey validation](publish-journey.md#validate). For a campaign, [review and activate](../campaigns/review-activate-campaign.md) it.
 
 ## Set the channel optimization method {#optimization-modes}
 
@@ -188,3 +188,5 @@ Learn how Adobe Journey Optimizer's channel optimization feature helps you reach
 * [Send-Time optimization](send-time-optimization.md)
 * [Content optimization](../content-management/gs-message-optimization.md)
 -->
+
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-channel-optimization.md}}

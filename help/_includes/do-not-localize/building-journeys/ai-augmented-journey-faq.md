@@ -21,34 +21,36 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 * **Unitary journey**: A journey triggered one profile at a time by a real-time event such as a purchase or sign-up *(product-specific)*
-* **Read Audience journey**: A journey that processes all profiles in a batch audience at once or on a schedule *(product-specific)*
-* **Audience Qualification journey**: A journey triggered when a profile enters or exits a streaming audience segment *(product-specific)*
+* **Read Audience journey**: A journey that starts with an Adobe Experience Platform audience and sends messages in batch to its profiles *(product-specific)*
+* **Audience Qualification journey**: A journey triggered when profiles qualify for or exit a specific audience segment; streaming audiences are recommended and batch audiences have delayed qualification detection *(product-specific)*
 * **Journey capping**: A configuration that limits how many times a profile can enter journeys within a time window or how many journeys a profile can be in simultaneously *(product-specific)*
 * **Journey Fragment**: A reusable, static set of journey nodes built once and inserted into multiple journeys at design time *(product-specific)*
 * **Send-Time Optimization (STO)**: An AI-driven feature that predicts the optimal send time for each individual profile to maximize engagement *(product-specific)*
 * **Supplemental identifier**: An additional identifier that lets a profile enter the same journey multiple times for different entities (e.g., separate orders) *(product-specific)*
 
 **Guardrails:**
-* Maximum of 50 activities per journey
-* Maximum journey duration is 91 days (global timeout)
+* Configuration validation must pass before testing; errors in the Alerts panel must be resolved and validation rerun before continuing. Edits require revalidation before testing or publishing, including for a new journey version.
+* Maximum of 50 activities per journey (hard limit).
+* The page gives 91 days as an example of maximum journey duration.
 * Upload audiences and Federated Audience Composition audiences are not supported in Audience Qualification journeys
 * Reaction events must be placed immediately after a channel action, without a Wait activity in between
 * Jump activities are not allowed inside a Journey Fragment
-* A Journey Fragment supports a maximum of 20 nodes; a sandbox supports a maximum of 200 active fragments
-* Streaming audience qualification may be delayed up to 10 minutes after journey publication for profiles already in the audience
+* A Journey Fragment supports a maximum of 20 nodes (hard limit); a sandbox supports a maximum of 200 active fragments (hard limit).
+* Profiles already in a streaming audience before publication may not enter an Audience Qualification journey; entry can also be delayed while the journey completes its activation period, up to 10 minutes after publishing.
 
 **Terminology:**
-* Canonical name: Journey — Acronym: none — variants: customer journey, orchestration, flow
-* Synonyms: "Close to new entrances" = "graceful stop"; "Stop" = "immediate stop"
-* Do not confuse: "Journey" ≠ "Campaign" — journeys support multi-step event-triggered orchestration; campaigns are one-time or scheduled audience-based sends
-* Do not confuse: "Simulation" ≠ "Test mode" ≠ "Dry run" — Simulation uses temporary simulated users; Test mode uses persistent AEP test profiles; Dry run uses real production data without contacting customers or updating profiles
+* Canonical name: journey. Journey types: Unitary, Read Audience, Audience Qualification, Business event.
+* Do not confuse: "Journey" ≠ "Campaign" — journeys are multi-step orchestrations reacting to events or targeting audiences; campaign types include Action campaigns, API-triggered campaigns, and multi-step Orchestrated campaigns.
+* Do not confuse: "Journey Simulation" ≠ "Test mode" ≠ "Dry run mode" — Journey Simulation uses temporary simulated users; Test mode uses real, designated test profiles; Dry run mode uses real production data without contacting customers or updating profile information.
 
 **FAQ:**
-* **Q: What is the maximum number of activities in a journey?** — 50 activities; keeping journeys simpler improves maintainability and performance.
+* **Q: What is the maximum number of activities in a journey?** — 50 activities (hard limit); keeping journeys simpler improves maintainability and performance.
 * **Q: Why did a profile not enter my journey?** — Common causes include the triggering event not being received, audience criteria not met, re-entrance rules blocking re-entry, the journey being unpublished, or a namespace mismatch.
 * **Q: Can I modify a live journey's structure?** — No; structural changes require creating a new journey version. Message content can be updated without a new version.
-* **Q: What is the difference between Pause, Close to new entrances, and Stop?** — Pause temporarily suspends the journey while holding or discarding in-flight profiles. Close to new entrances stops new entries but lets existing profiles finish. Stop immediately exits all profiles.
+* **Q: What is the difference between Pause, Close to new entrances, and Stop?** — Pause temporarily halts the journey so it can be resumed later. Close to new entrances stops new entries but lets existing profiles finish. Stop immediately exits all profiles.
 * **Q: When should I use Journey Fragments instead of the Jump activity?** — Use fragments to reuse common node logic at design time (copy-paste behavior). Use Jump to redirect profiles to another live journey at runtime.
-* **Q: How do I prevent sending too many messages to the same customer?** — Apply journey capping rules (entry capping or concurrency capping) and use frequency capping business rules on individual channel actions.
+* **Q: How do I prevent message fatigue across journeys?** — Apply journey capping rules: entry capping limits entries within a specified time period, and concurrency capping limits how many journeys a profile can be in simultaneously.
 
 +++
+
+<!-- ai-section-version: 1 | source-hash: f3faf5b6 -->

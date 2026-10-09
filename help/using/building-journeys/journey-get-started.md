@@ -139,7 +139,7 @@ Build a set of journey nodes once — such as an eligibility check or channel ro
 
 **Test & optimize**
 
-Test your journeys before publishing, monitor their performance, and optimize delivery with advanced features like send-time optimization.
+[Validate your journey configuration](publish-journey.md#validate), then test before publishing. Monitor performance and optimize delivery with advanced features like send-time optimization.
 
 [Test and publish journeys](testing-the-journey.md)
 :::
@@ -278,7 +278,7 @@ Understand the journey canvas, palette, and how to design your customer journeys
 
 **Test & publish**
 
-Test your journeys thoroughly before publishing them to ensure they work as expected and deliver the right experience.
+[Validate your journey configuration](publish-journey.md#validate), resolve any errors, and test before publishing.
 
 [Testing guide](testing-the-journey.md)
 :::

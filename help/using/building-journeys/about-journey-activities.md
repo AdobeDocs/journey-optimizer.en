@@ -151,7 +151,7 @@ When an error occurs in an action or a condition, the journey of an individual s
 
 ## Troubleshooting {#troubleshooting}
 
-Before testing and publishing your journey, verify that all the activities are properly configured. You cannot perform tests or publications if errors are still detected by the system.
+Before testing or publishing, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
 
 Learn how to troubleshoot errors in activities and in the journey [on this page](troubleshooting.md).
 

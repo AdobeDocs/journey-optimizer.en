@@ -90,6 +90,8 @@ Depending on the journey's status, you can perform different actions on your jou
 
 ![Journey action buttons: Publish, Duplicate, Delete, Test mode, Manage access, Alerts](assets/journey41.png)
 
+For a **[!UICONTROL Draft]** journey, the **[!UICONTROL Validate]** button in the journey header runs configuration checks before testing, simulation, a dry run, publication, or an approval request. It replaces **[!UICONTROL Publish]** until the journey has a current, passed validation. Review errors and warnings in the Alerts panel, resolve any errors, and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
+
 ## New journey canvas experience {#canvas-capabilities}
 
 A **new user interface** is available for the journey canvas, built to scale with your most complex use cases:

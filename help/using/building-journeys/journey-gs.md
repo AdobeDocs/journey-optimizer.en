@@ -158,13 +158,15 @@ Follow these steps to design your journey:
 
 ## Test the journey {#jo-test}
 
+First, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before testing. [Learn about journey validation](publish-journey.md#validate).
+
 Once you have built your journey, test it before publishing. Journey Optimizer offers a **Test mode** as a way to view test profiles as they move along the journey, detecting potential errors before activation. Running quick tests ensures that journeys operate correctly so that you can publish them with confidence. Learn how to test your journey [in this section](testing-the-journey.md)
 
 You can also execute your journey in **Dry run**. Journey Dry run is a special journey publication mode in Adobe Journey Optimizer that allows journey practitioners to test a journey using real production data without contacting real customers or updating profile information. This feature helps journey practitioners gain confidence in their journey design and audience targeting before publishing it live. Learn how to publish a journey in Dry run mode [in this section](journey-dry-run.md).
 
 ## Publish the journey {#jo-pub}
 
-You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing your journey, verify that it is valid and that there are no errors. You cannot publish a journey with errors. Learn more about journey publication in this [section](publish-journey.md).
+You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing, complete testing and make sure the journey has a current, passed validation. If you edit the journey after validation, click **[!UICONTROL Validate]** again and resolve any errors before continuing. Learn more about [journey publication](publish-journey.md).
 
 ![Complete journey flow with audience, conditions, and actions](assets/jo-journeyuc2_32bis.png)
 
