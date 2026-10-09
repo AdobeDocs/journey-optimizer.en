@@ -4,6 +4,9 @@ product: Journey Optimizer
 title: Roles and responsibilities
 description: Roles and responsibilities
 redpen-status: CREATED_||_2025-08-11_20-03-47
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 
 # Roles and responsibilities{#section-overview}

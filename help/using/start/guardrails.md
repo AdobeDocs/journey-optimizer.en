@@ -8,13 +8,15 @@ role: User
 level: Intermediate
 mini-toc-levels: 2
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-TQID: https://experienceleague.adobe.com/k4DqGogrTZ9QrnqyFGwdgDeUI9ivpOd1iSI0c5comuU
+TQID: 'https://experienceleague.adobe.com/k4DqGogrTZ9QrnqyFGwdgDeUI9ivpOd1iSI0c5comuU'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
+  - id: 2b5e3e9e-56a5-5bc7-beff-65ac2c02eeb2
+    internal-label: Guardrails
 subfeature_v2:
   - id: a6c67b0d-bd3e-4d5d-95a8-882e3709d632
     internal-label: Journey guardrails

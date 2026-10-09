@@ -71,7 +71,7 @@ Not sure Test mode is the right method for you? [Compare all three validation op
 
 >[!NOTE]
 >
->Before testing your journey, you must resolve all errors if any. Learn how to check errors before testing in [this section](../building-journeys/troubleshooting.md). If test profiles fail to progress in test mode, see [troubleshooting test mode transitions](troubleshooting-execution.md#troubleshooting-test-transitions).
+>Before testing, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. [Learn about journey validation](publish-journey.md#validate). If test profiles fail to progress in test mode, see [troubleshooting test mode transitions](troubleshooting-execution.md#troubleshooting-test-transitions).
 
 ## Guardrails and limitations {#important_notes}
 
@@ -110,6 +110,8 @@ Review these notes before running tests in your journey.
 
 Use the **[!UICONTROL Test mode]** method when you want to test your journey with pre-existing test profiles that you have already created in Adobe Experience Platform.
 
+1. [Validate the journey](publish-journey.md#validate) and resolve any errors before activating test mode.
+
 1. To activate the test mode, click the **[!UICONTROL Simulate]** button, and select **[!UICONTROL Test mode]**.
 
     ![Test mode button in journey interface](assets/journeytest1.png)
@@ -134,7 +136,7 @@ Use the **[!UICONTROL Test mode]** method when you want to test your journey wit
 
     ![Show log button to view test results](assets/journeyuctest2.png)
 
-1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publish-journey.md).
+1. If there is any error, deactivate test mode and modify your journey. Click **[!UICONTROL Validate]** again and resolve any configuration errors before restarting the test. Once testing is complete and validation is current and passed, you can [publish your journey](publish-journey.md).
 
 >[!NOTE]
 >
@@ -146,6 +148,7 @@ The following example walks through testing a journey that starts with a unitary
 
 To validate the journey end to end:
 
+1. Click **[!UICONTROL Validate]** in the journey header and resolve any errors before continuing. [Learn about journey validation](publish-journey.md#validate).
 1. Activate test mode by clicking **[!UICONTROL Test mode]** in the top-right corner. The canvas switches to test mode and a **[!UICONTROL Trigger an event]** button appears.
 1. Set **[!UICONTROL Wait time]** to **10 seconds** so the wait node completes quickly during testing.
 1. Click **[!UICONTROL Trigger an event]**, select your event, and enter a test profile identifier (for example, the email address of a profile flagged as a test profile in Adobe Experience Platform).

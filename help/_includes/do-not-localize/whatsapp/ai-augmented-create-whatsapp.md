@@ -16,7 +16,7 @@ For complete understanding, this information should be combined with the documen
 * Add a WhatsApp action to a journey or a campaign
 * Choose a Template category (Marketing, Utility, or Authentication) and select a Meta-approved WhatsApp template
 * Add media URLs to replace template placeholders and personalize the template content
-* Configure call-to-action and quick reply buttons supported by WhatsApp
+* Identify the message elements and call-to-action options supported for WhatsApp messages
 * Preview WhatsApp content, shortened URLs, and personalization with Simulate content
 * Track clicks and supported WhatsApp button interactions in campaign reporting
 
@@ -40,16 +40,14 @@ For complete understanding, this information should be combined with the documen
 * Documents must be under 100 MB, hosted on a URL, and in .txt, .xls/.xlsx, .doc/.docx, .ppt/.pptx, or .pdf format.
 * A WhatsApp template must first be designed in Meta and approved by Meta before use; approval usually takes a few hours but may take up to 24 hours.
 * Meta's template media are only placeholders; to display images, audio, or video you must provide external URLs (from Adobe Experience Manager or other sources).
-* For campaigns, only the **Scheduled - Marketing** campaign type is described, with Frequency options of Once, Daily, Weekly, or Month.
+* For campaigns, select the **Scheduled - Marketing** campaign type; the Frequency options are Once, Daily, Weekly, or Month.
 * All inbound WhatsApp responses, including those submitted through WhatsApp Flow templates, are captured in the AJO Channel Tracking Event Dataset.
 
 **Terminology:**
 
-* Canonical name: WhatsApp action — Acronym: n/a — variants: WhatsApp activity, WhatsApp channel action
+* Canonical name: WhatsApp action — Acronym: n/a — variants: WhatsApp channel action
 * Synonyms: "Visit website" = "Call to action – URL"
-* Do not confuse: "Quick reply" (short preset tappable replies) ≠ "Call to action" buttons (Visit website, Call on WhatsApp, Call phone number)
 * Do not confuse: "Call on WhatsApp" (opens a WhatsApp chat with the specified number) ≠ "Call phone number" (initiates a phone call to the number)
-* Do not confuse: "Marketing" ≠ "Utility" ≠ "Authentication" (Template categories)
 
 **FAQ:**
 
@@ -62,4 +60,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: abd76bc6 -->
+<!-- ai-section-version: 1 | source-hash: a9b0fb9b -->

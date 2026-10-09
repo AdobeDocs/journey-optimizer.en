@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: landing, landing page, use case
 exl-id: 8c00d783-54a3-45d9-bd8f-4dc58804d922
-TQID: https://experienceleague.adobe.com/2NYDW7eFKVVHVzD-GFZkylilJp6AvzEm0r2Conlecss
+TQID: 'https://experienceleague.adobe.com/2NYDW7eFKVVHVzD-GFZkylilJp6AvzEm0r2Conlecss'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Email
   - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
     internal-label: Use cases
+  - id: af6bcde9-4f08-5a7a-9651-da0a28d11b0a
+    internal-label: Subscriptions
 subfeature_v2:
   - id: b19d9237-76be-466d-a869-aacf2d72205f
     internal-label: Landing pages

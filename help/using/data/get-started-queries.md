@@ -8,13 +8,20 @@ role: User
 level: Beginner
 keywords: queries, platform, data, exploration
 exl-id: 6f32f068-429a-4039-bb76-d190069e7402
-TQID: https://experienceleague.adobe.com/mU8y27vB0mPIuIwU9Zf7V-AmEkIRWZ83z6TadbxziV0
+TQID: 'https://experienceleague.adobe.com/mU8y27vB0mPIuIwU9Zf7V-AmEkIRWZ83z6TadbxziV0'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
     internal-label: Data management activity
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
+    internal-label: Datasets
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -26,11 +33,6 @@ topic_v2:
     internal-label: Customer experience
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-subfeature_v2:
-  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
-    internal-label: Get started
-  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
-    internal-label: Datasets
 ---
 # Get Started with queries {#queries-gs}
 

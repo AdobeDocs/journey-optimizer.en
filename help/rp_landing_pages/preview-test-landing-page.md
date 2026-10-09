@@ -5,6 +5,9 @@ title: Preview & test content
 description: Validate message accuracy before launch. Preview personalized content with test profiles, send proofs to stakeholders, check email rendering across clients, evaluate spam scores, and test multiple content variations efficiently.
 redpen-status: CREATED_||_2025-08-11_20-30-05
 exl-id: bd78e0af-573b-4880-a9f1-44467c9db159
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Preview & test content{#section-overview}
 

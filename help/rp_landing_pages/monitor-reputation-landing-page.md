@@ -5,6 +5,9 @@ title: Monitor email addresses
 description: Monitor email addresses
 redpen-status: CREATED_||_2025-08-11_21-08-58
 exl-id: cbc8b2af-9df7-4523-88eb-fe73f74f2b01
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Monitor email addresses{#section-overview}
 

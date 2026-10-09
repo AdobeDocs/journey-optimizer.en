@@ -22,21 +22,22 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **Time condition**: A condition activity type in Journey Optimizer that branches journey paths based on date/time criteria such as day of the week *(product-specific)*
-* **nowWithDelta**: An expression function that returns the current date/time offset by a specified number of days or other units *(product-specific)*
+* **nowWithDelta**: A function used with a day offset of 2 for Saturday or 1 for Sunday in the example Wait formulas *(product-specific)*
 * **setHours**: An expression function that sets a specific hour on a given date/time value *(product-specific)*
-* **toDateTimeOnly**: An expression function that converts a value to the `dateTimeOnly` format required by custom Wait activities *(product-specific)*
+* **toDateTimeOnly**: A function used around `setHours(nowWithDelta(X, "days"), H)` in the example Wait formulas *(product-specific)*
 
 **Guardrails:**
+* The journey must be validated and errors resolved before testing. Publication requires current, passed validation; changes after validation require **[!UICONTROL Validate]** again and resolution of errors before publishing.
 
 * The time zone used for day-of-week evaluation is the journey's configured timezone (set in journey properties), not the individual recipient's timezone.
-* An active email channel surface, and an audience or event to trigger the journey, are required to implement this use case.
-* Basic understanding of journey conditions and the advanced expression editor is a prerequisite.
+* An active Adobe Journey Optimizer instance with a configured email channel surface, and an audience or event to trigger the journey, are required to implement this use case.
+* Basic understanding of journey conditions and expressions is a prerequisite.
 * Always test the journey in test mode before publishing to verify the Wait formulas produce the correct Monday delivery time.
 
 **Terminology:**
 
-* Canonical name: Day-of-week email scheduling — Acronym: none — variants: weekday-only emails, business-hours email delivery
-* Synonyms: "Saturday path" / "Sunday path" = "weekend paths"; "other cases path" = "weekday path"
+* Canonical name: Send emails only on weekdays. UI terms: **[!UICONTROL Time condition]**, **[!UICONTROL Day of the week]**, **[!UICONTROL Wait]**.
+* Synonyms: "other cases" path = "Weekday path".
 * Do not confuse: journey timezone (used for day-of-week evaluation) ≠ recipient's local timezone
 
 **FAQ:**
@@ -48,3 +49,5 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I test that weekend entries are correctly queued?** — In test mode, create test profiles with simulated Saturday and Sunday entry times and verify they follow the correct conditional path and receive the email on Monday at the configured hour.
 
 +++
+
+<!-- ai-section-version: 1 | source-hash: 54257dfc -->

@@ -6,6 +6,9 @@ description: Learn how to troubleshoot Live activities in Journey Optimizer for 
 role: User
 level: Intermediate
 exl-id: f0f83bd2-7c2b-4d9b-b455-e1df12dfa175
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
@@ -18,6 +21,12 @@ subfeature_v2:
     internal-label: Mobile SDK
   - id: ed2fba79-65cb-4680-96d2-2ad5d851714d
     internal-label: Live activities
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Troubleshoot Live activities {#troubleshoot-mobile-live}
 

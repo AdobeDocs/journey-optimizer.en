@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: "Journey types: choose the right one"
+title: 'Journey types: choose the right one'
 description: Compare journey types and choose the right one for your use case with decision guides and feature compatibility matrix
 feature: Journeys, Get Started, Overview
 role: User
@@ -11,6 +11,8 @@ version: Journey Orchestration
 feature_v2:
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
     internal-label: Overview

@@ -5,6 +5,9 @@ title: Configure SMS / MMS / RCS channel
 description: Configure SMS / MMS / RCS channel
 redpen-status: CREATED_||_2025-08-11_20-38-02
 exl-id: f92e23ee-2478-4f16-85d0-4c88c9be08b1
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Configure SMS / MMS / RCS channel{#section-overview}
 

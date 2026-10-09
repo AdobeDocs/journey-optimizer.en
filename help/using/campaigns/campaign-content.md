@@ -10,6 +10,9 @@ level: Beginner
 mini-toc-levels: 1
 keywords: create, optimizer, campaign, surface, messages
 exl-id: bcb7a5e4-440d-4548-b305-c320bafe6ee7
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: a653cc2e-bc85-4353-a306-399e5b247978
     internal-label: Journey Optimizer campaigns
@@ -18,6 +21,12 @@ subfeature_v2:
     internal-label: API triggered campaigns
   - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
     internal-label: Campaign management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Edit the Action campaign content {#action-campaign-content}
 

@@ -27,6 +27,10 @@ subfeature_v2:
 
 [!DNL Adobe Journey Optimizer] gives you three ways to validate a journey before it goes live. They are not interchangeable: each uses a different kind of data, fits a different stage of your build, and carries different real-world consequences. Understanding the difference up front helps you avoid two common mistakes. The first is spending time creating test profiles when a quick simulation would do. The second is assuming a validation step is fully "safe" when it can still contact real inboxes or make real outbound calls.
 
+>[!IMPORTANT]
+>
+>Before using any of these testing methods, click **[!UICONTROL Validate]** in the journey header. It runs configuration checks, including message checks, and shows errors and warnings in the Alerts panel; it does not replace testing. Resolve any errors and validate again before continuing. If you edit the journey afterwards, run **[!UICONTROL Validate]** again before testing or publishing. [Learn about journey validation](publish-journey.md#validate).
+
 This page focuses on validating journey flow and branching logic. For the full picture of testing and approval capabilities — including content preview, email rendering and spam checks, A/B experiments, and approval workflows — see [Test, validate & approve](../../rp_landing_pages/test-landing-page.md).
 
 ## New to validation? Start here {#quick-pick}

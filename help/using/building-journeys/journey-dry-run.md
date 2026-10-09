@@ -6,7 +6,7 @@ description: Learn how to publish a journey in Dry run mode
 feature: Journeys
 role: User
 level: Intermediate
-keywords: publish, journey, live, validity, check
+keywords: publish, journey, live, validity, check, dry run, test, simulation, production data
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
 version: Journey Orchestration
 TQID: https://experienceleague.adobe.com/a7qFw84obtkCRDmiqMxQNgvqhI4b6t5suROeF7ZPh1I
@@ -51,7 +51,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-Not sure Dry run is the right method for you? [Compare all three validation options](choose-validation-method.md).
+Not sure Dry run is the right method for you? Unlike Journey Simulation and Journey Test mode, Dry run uses your real production audience without contacting anyone. [Compare all three validation options](choose-validation-method.md).
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_dry_run"
@@ -84,7 +84,7 @@ Journey Dry run brings:
 
 ## Dry run execution logic {#journey-dry-run-exec}
 
-During the Dry Run, the journey runs in simulation mode, applying the following specific behaviors to each journey activity without triggering real actions:
+During the Dry run, the journey runs in simulation mode, applying the following specific behaviors to each journey activity without triggering real actions:
 
 * **Channel action** nodes including Email, SMS or Push notifications are not executed. 
 * **Custom actions** are disabled during Dry run, and their responses are set to null.
@@ -98,7 +98,7 @@ During the Dry Run, the journey runs in simulation mode, applying the following 
 * **Reaction** nodes are not executed: all profiles entering it will exit with success. However, the following priority rules apply:
 
   * If a **Reaction** node is used with one or multiple **unitary event** nodes in parallel, profiles will always go through the reaction event.
-  * If a **Reaction** node is used with one or multiple **reaction event** nodes in parallel, profiles will always go though the first one in the canvas (the one at the top).
+  * If a **Reaction** node is used with one or multiple **reaction event** nodes in parallel, profiles will always go through the first one in the canvas (the one at the top).
 
 * **Read Audience** activities with a scheduled execution time (daily, weekly, or monthly) do not follow the time configured in the journey — the schedule is anchored to the moment Dry run was activated. For example, if your journey is set to run daily at 10 AM but you activate the Dry run at 8 AM, all subsequent scheduled reads during the Dry run execute at 8 AM.
 
@@ -115,11 +115,12 @@ You can use the Dry run capability in any Draft journey with no error.
 To activate Dry run, follow these steps:
 
 1. Open the journey you want to test. 
+1. Click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
 1. Select the **[!UICONTROL Dry run]** button.
 
     ![Start the journey dry run](assets/dry-run-button.png)
 
-1. Select the if you want to enable or disable **Wait** activities and **External data sources** calls, and confirm the Dry run publication.
+1. Select if you want to enable or disable **Wait** activities and **External data sources** calls, and confirm the Dry run publication.
 
     ![Confirm the journey dry run publication](assets/dry-run-publish.png){width="50%"}
 
@@ -130,7 +131,7 @@ To activate Dry run, follow these steps:
 
 ## Monitor a Dry run {#journey-dry-monitor}
 
-Once the Dry mode publication is launched, you can visualize the journey execution and how profiles progress through journey branches and nodes.
+Once the Dry run mode publication is launched, you can visualize the journey execution and how profiles progress through journey branches and nodes.
 
 Metrics are displayed directly in the journey canvas. Learn more about journey live reporting and metrics, in [Live report in the journey canvas](report-journey.md). 
 
@@ -163,7 +164,7 @@ Dry run journeys can also be stopped manually. To deactivate the Dry run mode, f
 ## Guardrails and limitations {#journey-dry-run-limitations}
 
 * Profiles in Dry run mode are counted towards [Engageable Profiles](../audience/license-usage.md)
-* Journeys in Dry run mode are counted towards live journey quota
+* Journeys in Dry run mode are counted towards live journey quota. Learn more about [journey guardrails](../start/guardrails.md#journeys-guardrails-journeys)
 * Dry run journeys do not impact business rules
 <!--* When creating a new journey version, if a previous journey version is **Live**, then the Dry run activation is not allowed on the new version.-->
 * **Jump** actions are not enabled in Dry run. 
@@ -171,7 +172,7 @@ Dry run journeys can also be stopped manually. To deactivate the Dry run mode, f
 
 ## Journey step events and dry run {#journey-step-events}
 
-Journey Dry run generates **stepEvents**. These stepEvents have a specific flag and Dry run ID: `inDryRun` and `dryRunID`.
+Journey Dry run generates **stepEvents**. [Learn more about journey step events](../reports/journey-step-events-overview.md#what-are-step-events). These stepEvents have a specific flag and Dry run ID: `inDryRun` and `dryRunID`.
 
 ![Journey dry run schema attributes](assets/dry-run-attributes.png)
 
@@ -181,9 +182,9 @@ Journey Dry run generates **stepEvents**. These stepEvents have a specific flag 
 
 If you export stepEvent data to **external systems**, you can filter Dry run executions using the `inDryRun` flag.
 
-When analyzing **journey reporting metrics** using [!DNL Adobe Experience Platform] Query service, Dry Run-generated step events must be excluded. To do this, exclude step events where `inDryRun` is `true` (i.e. include only events where `inDryRun` is `null` or `false`).
+When analyzing **journey reporting metrics** using [!DNL Adobe Experience Platform] Query service, Dry run-generated step events must be excluded. To do this, exclude step events where `inDryRun` is `true` (i.e. include only events where `inDryRun` is `null` or `false`).
 
-Some non-reportable step events are not generated during Dry Runs. This only affects custom reports built on these dry-run step-event types and does not impact standard journey execution. If your custom reports rely on these step events, re-trigger the Dry run to regenerate the data.
+Some non-reportable step events are not generated during Dry runs. This only affects custom reports built on these dry-run step-event types and does not impact standard journey execution. If your custom reports rely on these step events, re-trigger the Dry run to regenerate the data.
 
 ## Frequently asked questions {#faq}
 

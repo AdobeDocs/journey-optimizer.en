@@ -8,12 +8,22 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 65ca94cf-8e17-4a25-90f3-238083f81477
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
-subfeature_v2:
   - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
-    internal-label: Journey Optimizer release notes
+    internal-label: Release notes
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Release Notes 2026 {#release-notes-2026}
 
@@ -232,7 +242,7 @@ The following capabilities and improvements have been introduced to Orchestrated
 
   Availability date: August 12, 2026
 
-* **New Content Simulation experience for content testing** - The **Simulate content** workflow introduces a redesigned experience: all variants now render together in a single scrollable grid (side-by-side, stacked, or wrapped layouts), replacing the one-variant-at-a-time view. A single bottom action bar consolidates navigating between test variants, zoom, viewport switching (desktop/mobile), locale switching, adding sample inputs, generating variants with AI, picking and saving simulated users, and importing or exporting variants. Removing the left rail and collapsing extra header layers gives previews significantly more room. A **Switch to classic experience** option in the bottom action bar lets you revert to the previous experience at any time. [Learn more](../test-approve/simulate-content-variations.md)
+* **New Content Simulation experience for content testing** - The **Simulate content** workflow introduces a redesigned experience with a scrollable grid and **Side by side**, **Vertically stacked**, and **Wrap** layouts. Render all variants or select a subset, name and manage variants from their cards, and switch between content previews and editable attribute details. The bottom action bar provides controls to add variants, upload files, select simulated users, and export variants, with AI generation and desktop/mobile views available when supported by your content. Invalid-link counts on variant cards provide access to URL validation details. Click **Old experience** in the bottom action bar to return to the classic layout. [Learn more](../test-approve/simulate-content-variations.md)
 
   Availability date: August 11, 2026
 

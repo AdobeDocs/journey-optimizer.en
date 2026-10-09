@@ -123,7 +123,9 @@ To begin tracking your journey metrics, follow the steps outlined below:
 
 1. Design your journey with the necessary **[!UICONTROL Activities]**.
 
-1. Test and publish your journey. 
+1. Click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
+
+1. [Test](choose-validation-method.md) and [publish](publish-journey.md) your journey.
 
 1. Open your journey report to track the performance of your assigned success metrics.
 
