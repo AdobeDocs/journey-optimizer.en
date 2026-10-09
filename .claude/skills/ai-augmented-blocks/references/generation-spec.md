@@ -122,6 +122,35 @@ body**. Do not introduce "revert", "reset", or "roll back" unless the page uses 
   "it is", etc. (The only exception is a verbatim product UI string such as
   `[!UICONTROL configuration doesn't exist]`, which is preserved exactly.)
 
+## Common generation errors (check each before gate 1)
+
+These are the mistakes the independent verifier most often had to fix. Look for them
+deliberately.
+
+- **Imported contrasts or definitions.** "Do not confuse" and Glossary entries must be built
+  from what *this page* says. Do not describe a neighbouring feature (for example Test mode or
+  Simulation on a Dry run page) from general knowledge. If the page only links to a comparison
+  page, say that and stop. Do not define a term the page uses but never explains; report it
+  under **Gaps found** instead.
+- **Wrong kind of label.** Use the page's own category word: do not call a mode a "status", a
+  flag a "boolean field", or a field a "dataset" unless the page does. A "status" is a
+  lifecycle value the page names as one.
+- **Merged facts.** When the page says A counts towards X and B counts towards Y, keep them
+  separate. Do not write "A and B count towards X and Y".
+- **Merged behaviours.** If the page gives two activity types different behaviours (for
+  example "not executed" versus "disabled, responses set to null"), state each one. Do not
+  collapse them into one phrase such as "disabled and not executed".
+- **"Only" and "any".** Copy the page's scope word. "Can be used in any Draft journey with no
+  error" is not the same claim as "Only Draft journeys with no errors can be used".
+- **Invented titles and links.** Name a link by its text on the page, not by the title of the
+  target page, unless the page uses that title.
+- **Added reassurance or consequences.** Do not add statements such as "no content is lost" or
+  "this is safe" that the page does not make.
+- **Informal synonyms.** A phrase used once as a verb or in passing (for example "smoke test")
+  is not a synonym for a feature name.
+- **FAQ drift.** FAQ questions and answers reuse the page's nouns and verbs ("reporting
+  metrics", "quotas"), not paraphrases such as "analytics queries" or "limits".
+
 ## Step 3 — verify every claim (self-check, gate 1)
 
 Before writing the include, re-read the generated content claim by claim. Mandatory, even for
