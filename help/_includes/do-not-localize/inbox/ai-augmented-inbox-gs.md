@@ -33,7 +33,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Inbox — Acronym: n/a — variants: message inbox, inbox channel
+* Canonical name: Inbox — Acronym: n/a — variants: inbox channel
 * Do not confuse: "Inbox" (persistent messages users can return to) ≠ "in-app and push" (which can disappear after a swipe or tap)
 * Do not confuse: "Read" ≠ "unread" (read-state that can be marked on the device where the message is opened)
 
@@ -42,9 +42,9 @@ For complete understanding, this information should be combined with the documen
 * **Q: How does Inbox differ from in-app and push?** — In-app and push can disappear after a swipe or tap, while Inbox keeps messages available so people can open, read, and act on them when it suits them.
 * **Q: What does Inbox build on?** — It builds on the Content Cards channel and adds persistent messaging, a centralized location, flexible implementation, and read-status.
 * **Q: What are the quick start steps?** — Configure Adobe Journey Optimizer, create your Inbox, design your Inbox, then create your Content card and link it to your Inbox.
-* **Q: Can users mark messages as read or unread?** — Yes; messages can be marked as read or unread on the device where they are opened.
+* **Q: Can messages be marked as read or unread?** — Yes; messages can be marked as read or unread on the device where they are opened.
 * **Q: What are the iOS requirements for implementing Inbox?** — iOS 15 or newer, Xcode 15 or newer, and Swift 5.1 or newer with the Adobe Experience Platform Mobile SDK.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 5b8f5695 -->
+<!-- ai-section-version: 1 | source-hash: cf93b8dd -->
