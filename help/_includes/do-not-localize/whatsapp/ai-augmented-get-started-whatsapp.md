@@ -14,7 +14,7 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 
 * Understand how the WhatsApp channel works in Journey Optimizer via Meta's Cloud API
-* Decide whether to add a WhatsApp activity to a journey or select WhatsApp as a campaign action
+* Decide how to add WhatsApp to journeys and campaigns
 * Evaluate WhatsApp use cases and situations when not to use the channel
 * Identify the prerequisites needed to integrate WhatsApp with Journey Optimizer
 * Understand the limitations that apply to the WhatsApp channel
@@ -38,8 +38,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: WhatsApp channel — Acronym: n/a — variants: WhatsApp, WhatsApp activity (added in a journey), WhatsApp action (selected in a campaign)
-* Do not confuse: "Journey" (add a WhatsApp activity) ≠ "Campaign" (select WhatsApp as your action)
+* Canonical name: WhatsApp channel — Acronym: n/a — variants: WhatsApp, WhatsApp action
 * Do not confuse: "BSP" (third-party Business Service Provider, not allowed by the native integration) ≠ "Cloud API" (Meta's API used for the native integration)
 
 **FAQ:**

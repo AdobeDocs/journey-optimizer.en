@@ -45,7 +45,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: WhatsApp action — Acronym: n/a — variants: WhatsApp activity, WhatsApp channel action
+* Canonical name: WhatsApp action — Acronym: n/a — variants: WhatsApp channel action
 * Synonyms: "Visit website" = "Call to action – URL"
 * Do not confuse: "Call on WhatsApp" (opens a WhatsApp chat with the specified number) ≠ "Call phone number" (initiates a phone call to the number)
 
