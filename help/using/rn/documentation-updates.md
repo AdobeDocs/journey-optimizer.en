@@ -39,6 +39,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Delegate a subdomain** page now clarifies that CAA or DNS validation record issues on any domain sharing a multi-SAN SSL certificate can block certificate provisioning, even when the new subdomain's DNS records are correct. Guidance has been added for checking DNS validation records and CAA configuration across all subdomains sharing the certificate. [Read more](../configuration/delegate-subdomain.md#subdomain-validation)
 
+* A caution has been added to the **Delegate a subdomain** page to inform users that a separate DNS zone or SOA record for the subdomain causes the delegation to fail. It explains how to remove the subdomain zone and configure NS records at the parent domain level instead. [Read more](../configuration/delegate-subdomain.md#submit-subdomain)
+
 ## September 2026 {#september-2026}
 
 * The **Create a direct mail message** page now clarifies extraction-file generation in the **Journey** and **Campaign** tabs: journey files follow the routing frequency and can result in multiple files per day, while campaign files are generated when each campaign execution starts. The page also explains how to ensure one file per day for journeys. [Read more](../direct-mail/create-direct-mail.md#create-dm-campaign)
