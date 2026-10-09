@@ -21,26 +21,26 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 - **Role**: A collection of users sharing the same permissions and sandboxes, used to manage access within an organization *(product-specific)*
-- **Permissions product**: The Adobe CX Enterprise interface (accessed via [!DNL Permissions]) where roles, permissions, and sandboxes are configured *(product-specific)*
-- **Built-in role**: A pre-existing role with a defined permission set available for immediate assignment without custom configuration *(product-specific)*
+- **Permissions product**: The [!DNL Permissions] product, where you navigate to the Roles tab to assign, edit, or create a Role *(product-specific)*
+- **Built-in role**: A pre-existing (out-of-the-box) Role with varying levels of permissions that you can assign to your users; the page links to the Built-in roles section for the list *(product-specific)*
 
 **Guardrails:**
 
-- Only Product or System administrators can assign, edit, or create roles (hard prerequisite, as stated in the Important note on the page)
+- Only Product or System administrators can assign, edit, or create roles (as stated in the Important note on the page: the steps can only be carried out by a Product or System administrator)
 - Changes made to a built-in or custom role affect all users assigned to that role (as stated in the Important note on the page)
 
 **Terminology:**
 
-- Canonical name: Permissions product — variants: Adobe Permissions, Permissions UI, Adobe CX Enterprise Permissions
-- Do not confuse: "Assign a role" (adding a user to an existing role) ≠ "Create a role" (defining a new role with its own permissions and sandboxes from scratch)
-- Do not confuse: "Edit an existing role" (modifying permissions or sandboxes on an existing role; affects all assigned users) ≠ "Create a new role" (building a new role without affecting any existing role or its users)
+- Canonical name: Permissions product — variants: [!DNL Permissions] product
+- Do not confuse: "Assign a role" (adding a user to an existing role) ≠ "Create a role" (creating a new role with specific permissions and sandboxes to assign to users)
+- Do not confuse: "Edit an existing role" (add or delete permissions on a built-in or custom role; changes affect all users assigned to that role) ≠ "Create a new role" (a new role with specific permissions that you then need to assign to users)
 
 **FAQ:**
 
 - **Q: Who can assign roles to users in Journey Optimizer?** — Only Product or System administrators.
 - **Q: What happens if I edit a built-in role's permissions?** — Changes affect all users currently assigned to that role.
 - **Q: Where do I go in the product to manage roles?** — In the Permissions product, navigate to the Roles tab.
-- **Q: After a role is assigned, does the user receive a notification?** — Yes; the user automatically receives an email redirecting them to the instance.
+- **Q: After a role is assigned, does the user receive a notification?** — The page states that the user receives an email redirecting them to your instance.
 
 +++
-<!-- ai-accordion-version: 1 | source-hash: 09d3612e -->
+<!-- ai-accordion-version: 1 | source-hash: 783bd0b0 -->
