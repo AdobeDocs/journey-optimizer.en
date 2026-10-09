@@ -21,6 +21,11 @@ subfeature_v2:
 ---
 # Alert {#alert}
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_alert"
+>title="Alert"
+>abstract="The **Alert** activity notifies subscribers when Orchestrated campaign execution reaches it. Its position in the flow and upstream logic determine when it fires. For conditional alerts, place it on the relevant branch of a **Test** activity."
+
 >[!BEGINSHADEBOX]
 
 **On this page:** Learn how to configure the Alert flow control activity to notify subscribers when execution reaches a specific point in an Orchestrated campaign.
