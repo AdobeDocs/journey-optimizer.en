@@ -24,7 +24,7 @@ subfeature_v2:
 ---
 # Add personalization in Orchestrated campaigns {#add-personalization}
 
-After you [orchestrate activities](orchestrate-activities.md) on the canvas and add a channel activity, you personalize message content in the email, SMS, or other channel editor.
+After you [orchestrate activities](orchestrate-activities.md) on the canvas and add a channel activity, you personalize message content in the email, mobile, or other channel editor.
 
 Personalization in Orchestrated campaigns works similarly to other [!DNL Journey Optimizer] campaigns or journeys, with differences tied to the **worktable**: attributes calculated by targeting and enrichment activities on the canvas, not only data from the profile store.
 

@@ -70,7 +70,7 @@ Our next-generation decision framework, designed to unify existing Journey Optim
 * Updated decision policy and selection strategy configuration: Allow reusability of decision components
 * Experimentation capabilities: Test decision logic against other content components to measure performance
 
-Decisioning is available to all customers for the **Code-based Experience**, **Web**, **Email**, **Push notification**, **SMS**, **Custom channels**, and **Direct mail** channels. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+Decisioning is available to all customers for the **Code-based Experience**, **Web**, **Email**, **Push notification**, **Mobile**, **Custom channels**, and **Direct mail** channels. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 ➡️ [Get started with Decisioning](../experience-decisioning/gs-experience-decisioning.md)
 
@@ -84,6 +84,6 @@ Decisioning is available to all customers for the **Code-based Experience**, **W
 
 Our established feature in Journey Optimizer, Decision Management uses a central library of marketing offers and a decision engine that applies rules and constraints to real-time customer profiles, leveraging Adobe Experience Platform data to deliver the right offer at the right time.
 
-Decision Management supports the following channels: Email, In-App messaging, Push notifications, SMS, and Direct mail.
+Decision Management supports the following channels: Email, In-App messaging, Push notifications, Mobile messages, and Direct mail.
 
 ➡️ [Get started with Decision management](../offers/get-started/starting-offer-decisioning.md)

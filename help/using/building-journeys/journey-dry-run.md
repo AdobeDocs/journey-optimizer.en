@@ -86,7 +86,7 @@ Journey Dry run brings:
 
 During the Dry run, the journey runs in simulation mode, applying the following specific behaviors to each journey activity without triggering real actions:
 
-* **Channel action** nodes including Email, SMS or Push notifications are not executed. 
+* **Channel action** nodes including Email, Mobile messages or Push notifications are not executed. 
 * **Custom actions** are disabled during Dry run, and their responses are set to null.
 
   To enhance readability, custom actions and channel activities appear greyed out during the execution of a Dry run.
@@ -190,7 +190,7 @@ Some non-reportable step events are not generated during Dry runs. This only aff
 
 **Does a Dry run send messages to real customers?**
 
-No. Dry run uses real production data but does not contact profiles or update profile information. Channel actions (Email, SMS, Push) are not executed, and custom actions are disabled with their responses set to `null`.
+No. Dry run uses real production data but does not contact profiles or update profile information. Channel actions (Email, Mobile message, Push) are not executed, and custom actions are disabled with their responses set to `null`.
 
 **What permissions do I need to start or stop a Dry run?**
 

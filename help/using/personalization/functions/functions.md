@@ -510,7 +510,7 @@ Helpers are detailed on [this page](helpers.md).
         <td><a href="helpers.md#value-at-path">Value at path</a></td><td>This helper assigns a value from a data path to a template variable, with optional array indexing</td>
     </tr>
     <tr>
-        <td><a href="helpers.md#url-function">Url</a></td><td>This function handles URLs in SMS message content; use it with <code>originalUrl</code> to shorten URL and <code>type='DEEPLINK'</code> to insert deep links</td>
+        <td><a href="helpers.md#url-function">Url</a></td><td>This function handles URLs in mobile message content; use it with <code>originalUrl</code> to shorten URL and <code>type='DEEPLINK'</code> to insert deep links</td>
     </tr>
     <tr>
         <td><a href="helpers.md#with">With</a></td><td>This function is used to change the evaluation token of template-part</td>

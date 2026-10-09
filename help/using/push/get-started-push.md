@@ -66,7 +66,7 @@ Use the dedicated tabs to define the push notification settings for **iOS**, **A
 
 >[!NOTE]
 >
->While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails and SMS messages, push notifications do not require any action on your side, as recipients can unsubscribe through their devices themselves. For example, upon downloading or when using your app, they can select to stop notifications. Similarly, they can change the notification settings through the mobile operating system or web browser settings. To verify a profile's push consent status in the AEP profile viewer, see [Check push opt-out status](../privacy/opt-out.md#push-opt-out-status).
+>While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails and mobile messages, push notifications do not require any action on your side, as recipients can unsubscribe through their devices themselves. For example, upon downloading or when using your app, they can select to stop notifications. Similarly, they can change the notification settings through the mobile operating system or web browser settings. To verify a profile's push consent status in the AEP profile viewer, see [Check push opt-out status](../privacy/opt-out.md#push-opt-out-status).
 
 </br>
 

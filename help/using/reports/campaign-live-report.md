@@ -44,7 +44,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to read the Campaign live report in Adobe Journey Optimizer to monitor real-time campaign performance over the last 24 hours across the Email, In-app, Push, SMS, Web, and Direct mail channels.
+**On this page:** Learn how to read the Campaign live report in Adobe Journey Optimizer to monitor real-time campaign performance over the last 24 hours across the Email, In-app, Push, Mobile, Web, and Direct mail channels.
 
 >[!ENDSHADEBOX]
 
@@ -63,12 +63,12 @@ The Campaign **[!UICONTROL Live report]** page will be displayed with the follow
 * [Email](#email-live)
 * [In-app](#inapp-live)
 * [Push](#push-live)
-* [SMS](#sms-live)
+* [Mobile](#sms-live)
 * [Web](#web-tab)
 * [Direct mail](#direct-mail-tab)
 
 >[!AVAILABILITY]
->Orchestrated campaigns only support the SMS, Email, and Push channels. Other channels (In-app, Web, Direct mail, etc.) are not available in orchestrated campaigns and do not appear in reporting.
+>Orchestrated campaigns only support the Mobile, Email, and Push channels. Other channels (In-app, Web, Direct mail, etc.) are not available in orchestrated campaigns and do not appear in reporting.
 
 The Campaign **[!UICONTROL Live report]** is divided into different widgets detailing your campaign's success and errors. Each widget can be resized and deleted if needed. For more information on this, refer to this [section](../reports/live-report.md#modify-dashboard).
 
@@ -453,7 +453,7 @@ The **[!UICONTROL Push notification - Breakdown by platform]** graph and table p
 
 ## SMS tab {#sms-live}
 
-From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL SMS]** tab details the main information relative to the SMS message sent in your campaign.
+From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL SMS]** tab details the main information relative to the Mobile message sent in your campaign.
 
 ### SMS - Statistics {#sms-statistics}
 
@@ -464,11 +464,11 @@ From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL SMS]** tab de
 
 ![](assets/campaign_live_sms_statistics.png)
 
-The **[!UICONTROL SMS - Statistics]** table provides a concise summary of essential data related to your SMS messages within the last 24 hours, encompassing key metrics such as the number of targeted messages and the count of successfully delivered messages.
+The **[!UICONTROL SMS - Statistics]** table provides a concise summary of essential data related to your Mobile messages within the last 24 hours, encompassing key metrics such as the number of targeted messages and the count of successfully delivered messages.
 
 +++ Learn more about SMS - Statistics metrics
 
-* **[!UICONTROL Execution time]**: Start time of every execution of your recurring SMS message. To target only one or multiple recurring SMS messages, select it from the **[!UICONTROL Execution time]** drop-down. 
+* **[!UICONTROL Execution time]**: Start time of every execution of your recurring Mobile message. To target only one or multiple recurring Mobile messages, select it from the **[!UICONTROL Execution time]** drop-down. 
 
 * **[!UICONTROL Targeted]**: Number of user profiles who qualify as target profiles.
 
@@ -512,7 +512,7 @@ The **[!UICONTROL SMS Performance by date]** widget offers a detailed overview o
 >title="SMS - Error reasons"
 >abstract="The SMS - Error Reasons graphs and table enable you to identify the specific errors that occurred in the last 24 hours during the sending process."
 
-The **[!UICONTROL Excluded Reasons]** graphs and table allow you to identify the specific errors that occurred during the sending process of your SMS messages within the last 24 hours, facilitating a thorough analysis of any issues encountered.
+The **[!UICONTROL Excluded Reasons]** graphs and table allow you to identify the specific errors that occurred during the sending process of your Mobile messages within the last 24 hours, facilitating a thorough analysis of any issues encountered.
 
 ### SMS - excluded reasons {#sms-excluded-reasons}
 
@@ -523,7 +523,7 @@ The **[!UICONTROL Excluded Reasons]** graphs and table allow you to identify the
 
 ![](assets/campaign_live_sms_excluded.png)
 
-The **[!UICONTROL Excluded Reasons]** graphs and table visually depict the diverse factors that led to the exclusion of user profiles from the targeted audience, preventing them from receiving your SMS messages in the last 24 hours.
+The **[!UICONTROL Excluded Reasons]** graphs and table visually depict the diverse factors that led to the exclusion of user profiles from the targeted audience, preventing them from receiving your Mobile messages in the last 24 hours.
 
 Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion reasons.
 
@@ -534,7 +534,7 @@ Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion 
 >title="SMS - Bounces reasons"
 >abstract="The Bounces Reasons graphs and table contain the data available from the last 24 hours related to bounced messages."
 
-The **[!UICONTROL Bounces Reasons]** graphs and table provide a comprehensive overview of data related to bounced SMS messages, delivering valuable insights into the specific reasons behind instances of SMS message bounces in the last 24 hours.
+The **[!UICONTROL Bounces Reasons]** graphs and table provide a comprehensive overview of data related to bounced Mobile messages, delivering valuable insights into the specific reasons behind instances of Mobile message bounces in the last 24 hours.
 
 ## Web tab {#web-tab}
 

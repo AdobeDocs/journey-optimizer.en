@@ -56,7 +56,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Explore the tools and best practices for designing personalized email, push, SMS, and in-app content so you can deliver on-brand messages that drive engagement.
+**On this page:** Explore the tools and best practices for designing personalized email, push, mobile messages, and in-app content so you can deliver on-brand messages that drive engagement.
 
 >[!ENDSHADEBOX]
 

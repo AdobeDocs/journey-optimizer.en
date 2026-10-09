@@ -91,19 +91,19 @@ To enable [Marketers](marketer.md) to create and send messages, access the **ADM
 
 Follow these steps:
 
-1. **Set up channel configurations**. Define all the technical parameters required for email, SMS, push notifications, web push, direct mail, and other channels:
+1. **Set up channel configurations**. Define all the technical parameters required for email, mobile messages, push notifications, web push, direct mail, and other channels:
 
     * Define **push notification settings** in both [!DNL Adobe Experience Platform] and Adobe Experience Platform Data Collection. [Learn more](../../push/push-gs.md)
 
     * Configure **web push notifications** to deliver notifications to mobile and desktop browsers. [Learn more](../../push/push-configuration-web.md)
 
-    * Create **channel configurations** to configure all the technical parameters required for email, SMS, push, in-app, web, and other channels. [Learn more](../../configuration/channel-surfaces.md)
+    * Create **channel configurations** to configure all the technical parameters required for email, mobile messages, push, in-app, web, and other channels. [Learn more](../../configuration/channel-surfaces.md)
 
-    * Configure the **SMS channel** to set up all the technical parameters required for SMS. [Learn more](../../mobile/mobile-configuration.md)
+    * Configure the **Mobile channel** to set up all the technical parameters required for Mobile messages. [Learn more](../../mobile/mobile-configuration.md)
 
     * Manage the number of days during which **retries** are performed before sending email addresses to the suppression list. [Learn more](../../configuration/manage-suppression-list.md)
 
-    * Enable **message export** at the channel configuration level to archive sent email and SMS content when required (add-on offering). [Learn more](../../configuration/message-export.md)
+    * Enable **message export** at the channel configuration level to archive sent email and Mobile content when required (add-on offering). [Learn more](../../configuration/message-export.md)
 
 1. **Delegate subdomains**: for any new subdomain to be used in Journey Optimizer, the first step will be to delegate it. [Learn more](../../configuration/about-subdomain-delegation.md). You can migrate subdomains from CNAME to custom delegation when needed. [Learn more](../../configuration/custom-subdomain-migration.md)
 
@@ -164,7 +164,7 @@ Collaborate with [Developers](developer.md) on API access and testing:
 Collaborate with [Marketers](marketer.md) on permissions and channel setup:
 
 * Assign appropriate permissions to create journeys and campaigns
-* Configure channels they'll use (email, push, SMS, etc.)
+* Configure channels they'll use (email, push, mobile, etc.)
 * Support testing environments and approval workflows
 * Enable access to new features and capabilities
 * Share decision guides to help your team choose the right approach: [Journeys vs Campaigns](../journeys-vs-campaigns.md) and [Journey types: choose the right one](../../building-journeys/journey-types-selection.md)

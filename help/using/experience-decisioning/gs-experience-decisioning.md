@@ -54,11 +54,11 @@ topic_v2:
 
 Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
 
-These decision items are seamlessly integrated into messages and experiences across [!DNL Adobe Journey Optimizer] channels: [code-based experience](../code-based/get-started-code-based.md), [web](../web/get-started-web.md), email, SMS, push notifications, [custom channels](../custom-channel/get-started-custom-channel.md), and [direct mail](batch-decisioning-direct-mail.md) for batch decisioning and personalized direct mail exports. Experience Decisioning support for direct mail is a new capability; previously, the Decisioning engine was not available for direct mail extraction files.
+These decision items are seamlessly integrated into messages and experiences across [!DNL Adobe Journey Optimizer] channels: [code-based experience](../code-based/get-started-code-based.md), [web](../web/get-started-web.md), email, mobile messages, push notifications, [custom channels](../custom-channel/get-started-custom-channel.md), and [direct mail](batch-decisioning-direct-mail.md) for batch decisioning and personalized direct mail exports. Experience Decisioning support for direct mail is a new capability; previously, the Decisioning engine was not available for direct mail extraction files.
 
 >[!IMPORTANT]
 >
->Decision policies are available to all customers for the **[Code-based Experience](../code-based/get-started-code-based.md)**, **[Web](../web/get-started-web.md)**, **[Email](../email/get-started-email.md)**, **[Push notification](../push/get-started-push.md)**, **[SMS](../mobile/get-started-mobile.md)**, **[Custom channels](../custom-channel/get-started-custom-channel.md)**, and **[Direct mail](../direct-mail/get-started-direct-mail.md)** channels.
+>Decision policies are available to all customers for the **[Code-based Experience](../code-based/get-started-code-based.md)**, **[Web](../web/get-started-web.md)**, **[Email](../email/get-started-email.md)**, **[Push notification](../push/get-started-push.md)**, **[Mobile message](../mobile/get-started-mobile.md)**, **[Custom channels](../custom-channel/get-started-custom-channel.md)**, and **[Direct mail](../direct-mail/get-started-direct-mail.md)** channels.
 
 ➡️ [Discover this feature in video](#video)
 
@@ -114,7 +114,7 @@ The main steps to work with Decisioning are as follows:
 
     ➡️ [Learn how to create selection strategies in the user interface](selection-strategies.md) in the user interface (and in the [API documentation](api-reference/selection-strategies/create.md))
 
-1. **Create a decision policy and embed it into your journey or campaign** (code-based experience, email, SMS, push, or custom channels): Decision policies combine multiple selection strategies to determine the eligible decision items to display to the intended audience. 
+1. **Create a decision policy and embed it into your journey or campaign** (code-based experience, email, mobile message, push, or custom channels): Decision policies combine multiple selection strategies to determine the eligible decision items to display to the intended audience. 
     
     ➡️ [Learn how to work with decision policies](create-decision.md)
     ➡️ To successfully deliver the offer via the code-based experience channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md).

@@ -54,7 +54,7 @@ Learn more about the applicable legislation in the [Experience Platform document
 
 When sending messages from journeys or campaigns, you must always ensure that customers can unsubscribe from future communications. Once unsubscribed, the profiles are automatically removed from the audience of future marketing messages. 
 
-While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails and SMS messages, push notifications do not require any action on your side, as recipients can unsubscribe through their devices themselves. For example, upon downloading or when using your app, they can select to stop notifications. Similarly, they can change the notification settings through the mobile operating system.
+While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails and mobile messages, push notifications do not require any action on your side, as recipients can unsubscribe through their devices themselves. For example, upon downloading or when using your app, they can select to stop notifications. Similarly, they can change the notification settings through the mobile operating system.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Learn how to manage opt-out in Journey Optimizer email and SMS messages in these
 <img alt="Infrequent" src="../assets/do-not-localize/privacy-sms-opt-out.jpeg" width="50%">
 </a>
 <div>
-<a href="../mobile/mobile-opt-out.md"><strong>SMS opt-out management</strong></a>
+<a href="../mobile/mobile-opt-out.md"><strong>Mobile opt-out management</strong></a>
 </div>
 <p></td>
 </tr></table>

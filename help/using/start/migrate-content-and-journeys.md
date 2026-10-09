@@ -205,7 +205,7 @@ Recreate your journeys by importing a screenshot of the journey flow, or by conn
 
     * **[!UICONTROL Journey name]**: Set the journey name before migration.
     * **[!UICONTROL Content templates]**: Select the appropriate content template for journey actions that require one. Email templates are validated as they are selected, with any validation issues shown directly on the action item.
-    * **[!UICONTROL Channel configurations]**: Select the required configuration for channels such as email and SMS.
+    * **[!UICONTROL Channel configurations]**: Select the required configuration for channels such as email and mobile.
     * **[!UICONTROL Audience segments]**: Map source audiences to the appropriate [!DNL Journey Optimizer] audiences.
 
     ![Action items pane with resolved activities and the Apply changes button](assets/onboarding-hub-12.png)

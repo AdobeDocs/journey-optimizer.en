@@ -197,7 +197,7 @@ This is an expected system behavior and is **working as designed**.
 
 **No.** The impact is limited to logging only. [!DNL Adobe Journey Optimizer] has built-in deduplication mechanisms at the message execution layer that ensure:
 
-* Only one message (email, SMS, push notification, etc.) is sent to each profile
+* Only one message (email, mobile message, push notification, etc.) is sent to each profile
 * Actions are executed only once
 * Journey execution proceeds correctly
 

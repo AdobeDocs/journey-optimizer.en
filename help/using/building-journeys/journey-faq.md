@@ -116,7 +116,7 @@ A journey consists of:
 * **Events**: Entry points that trigger the journey (e.g., profile qualification, business events)
 * **Orchestration activities**: Logic components like conditions, wait, read audience, journey fragments, and end
 * **Actions**: Activities that perform tasks, such as sending messages, updating profiles, or calling external APIs
-* **Built-in channel actions**: Native messaging capabilities for email, SMS, push, and other channels
+* **Built-in channel actions**: Native messaging capabilities for email, mobile message, push, and other channels
 * **Custom actions**: Integration with third-party systems
 
 Learn more about [journey activities](about-journey-activities.md).
@@ -275,7 +275,7 @@ Learn more about [conditions](conditions.md).
 
 +++ Can I send messages to profiles in a journey?
 
-Yes. Journey Optimizer includes **built-in channel actions** that allow you to send messages through email, push notifications, SMS/MMS/RCS, in-app messages, web experiences, code-based experiences, content cards, WhatsApp, and LINE. You can design message content directly in Journey Optimizer and add them as action activities in your journey.
+Yes. Journey Optimizer includes **built-in channel actions** that allow you to send messages through email, push notifications, mobile message, in-app messages, web experiences, code-based experiences, content cards, WhatsApp, and LINE. You can design message content directly in Journey Optimizer and add them as action activities in your journey.
 
 For channels not natively supported, you can use **custom actions** to integrate with external messaging platforms and send messages through any third-party channel.
 
@@ -637,7 +637,7 @@ Learn more about [journey live reporting](report-journey.md).
   Solution: Submit for approval or check approval status
   -->
   
-* **Channel configuration issue**: Email/SMS configuration is incorrect
+* **Channel configuration issue**: Email/Mobile message configuration is incorrect
   Solution: Verify channel configurations and authentication
 
 Learn more about [troubleshooting](troubleshooting.md) and [consent management](../action/consent.md).
@@ -674,7 +674,7 @@ Yes. Use an **[Optimize activity](conditions.md)** to route profiles based on th
 2. Create a path for each channel by checking the preferred channel profile attribute (e.g., `profile.preferredChannel`)
 3. Configure channel-specific paths:
    * **Email path**: Add an [email action](../email/create-email.md) with email-optimized content
-   * **SMS path**: Add an [SMS action](../mobile/create-mobile-message.md) with concise messaging
+   * **Mobile path**: Add an [Mobile message action](../mobile/create-mobile-message.md) with concise messaging
    * **Push path**: Add a [push notification action](../push/create-push.md) with short, actionable content
    * **In-app path**: Add an [in-app message action](../in-app/create-in-app.md) for engaged app users
 4. Add a default path for profiles without a preference, routing them to your primary channel

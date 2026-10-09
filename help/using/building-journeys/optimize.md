@@ -69,7 +69,7 @@ The **Optimize** activity lets you define how individuals progress through your 
 
 A journey **path** can consist of any of the following: sequencing of communications, time in between them, number of communications, or any combination of these three variables.
 
-For example, one path could contain one email, another could contain two SMS messages, and a third could contain an email, a Wait node of two hours, and then an SMS message.
+For example, one path could contain one email, another could contain two Mobile messages, and a third could contain an email, a Wait node of two hours, and then a Mobile message.
 
 ## Three ways to optimize your journeys {#optimization-methods}
 

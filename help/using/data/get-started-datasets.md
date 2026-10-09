@@ -107,7 +107,7 @@ This sections lists system datasets used by [!DNL Journey Optimizer]. To view th
 
 * Message Export
 
-    _AJO Message Export Dataset_: stores the content of sent email and SMS messages for export purposes. Records are retained for 7 calendar days from ingestion. Available only for organizations that have purchased the Message Export add-on. [Learn more](../configuration/message-export.md)
+    _AJO Message Export Dataset_: stores the content of sent email and mobile messages for export purposes. Records are retained for 7 calendar days from ingestion. Available only for organizations that have purchased the Message Export add-on. [Learn more](../configuration/message-export.md)
 
 * Intelligent Services
 

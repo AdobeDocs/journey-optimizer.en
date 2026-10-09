@@ -63,14 +63,14 @@ Regulations such as HIPAA require that [!DNL Journey Optimizer] should provide a
 
 >[!NOTE]
 >
->[!DNL Journey Optimizer] does not own support for SMS archival requirement. For dedicated archival support, work with your SMS vendor (Sinch, Infobip, or Twilio).
+>[!DNL Journey Optimizer] does not own support for Mobile archival requirement. For dedicated archival support, work with your SMS vendor (Sinch, Infobip, or Twilio).
 
 Use the table below to identify the right option for your requirement.
 
 | Requirement | Recommended option | Important distinction |
 | --- | --- | --- |
 | Keep a hidden copy of outbound email messages | BCC email | Sends a copy to a configured mailbox; does not expose a mirror page URL or create a queryable Experience Platform field. |
-| Export sent email or SMS content to an external system | [Message export](../configuration/message-export.md) | Writes sent content and metadata to the AJO Message Export Dataset for downstream export; does not generate a mirror page URL. |
+| Export sent email or Mobile content to an external system | [Message export](../configuration/message-export.md) | Writes sent content and metadata to the AJO Message Export Dataset for downstream export; does not generate a mirror page URL. |
 | Display the online version of an email to the recipient | [Mirror page link](../email/message-tracking.md#mirror-page) | Generated as part of the sent email; not a supported post-send URL retrieval API. |
 | Store the non-personalized message template or delivery metadata | Entity Dataset | Does not provide the exact personalized content received by an individual. |
 

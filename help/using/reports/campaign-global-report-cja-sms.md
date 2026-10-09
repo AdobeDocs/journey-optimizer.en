@@ -36,17 +36,17 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
 ---
-# SMS campaign report {#campaign-global-report-cja-sms}
+# Mobile campaign report {#campaign-global-report-cja-sms}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to read the SMS campaign report in Adobe Journey Optimizer to analyze delivery and click trends, delivery status, tracked links, inbound messages, and bounce, error, and exclusion reasons for your SMS messages.
+**On this page:** Learn how to read the Mobile campaign report in Adobe Journey Optimizer to analyze delivery and click trends, delivery status, tracked links, inbound messages, and bounce, error, and exclusion reasons for your Mobile messages.
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-You can access your SMS campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
+You can access your Mobile campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
 
 ![](assets/report-access.png)
 
@@ -60,9 +60,9 @@ The **[!UICONTROL Delivered vs Click trend]** graph presents a detailed analysis
 
 +++ Learn more about Delivered vs Click trend metrics
 
-* **[!UICONTROL Delivered]**: Number of SMS messages successfully sent, in relation to the total number of SMS messages.
+* **[!UICONTROL Delivered]**: Number of Mobile messages successfully sent, in relation to the total number of Mobile messages.
 
-* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your SMS messages.
+* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your Mobile messages.
 
 +++
 
@@ -70,13 +70,13 @@ The **[!UICONTROL Delivered vs Click trend]** graph presents a detailed analysis
 
 ![](assets/cja-campaign-sms-status.png)
 
-The **[!UICONTROL Delivery status]** table offers a detailed account of profile activity related to your SMS campaigns. This includes metrics on delivered, clicks, and other relevant engagement indicators, offering a comprehensive view of how profiles interact with your SMS content.
+The **[!UICONTROL Delivery status]** table offers a detailed account of profile activity related to your Mobile campaigns. This includes metrics on delivered, clicks, and other relevant engagement indicators, offering a comprehensive view of how profiles interact with your Mobile content.
 
 +++ Learn more about Delivery status metrics
 
-* **[!UICONTROL Delivered]**: Number of SMS messages successfully sent, in relation to the total number of SMS messages.
+* **[!UICONTROL Delivered]**: Number of Mobile messages successfully sent, in relation to the total number of Mobile messages.
 
-* **[!UICONTROL Bounces]**: Total of errors cumulated during the sending process and automatic return processing in relation to the total number of sent SMS messages.
+* **[!UICONTROL Bounces]**: Total of errors cumulated during the sending process and automatic return processing in relation to the total number of sent Mobile messages.
 
 * **[!UICONTROL Send errors]**: Total number of errors that occurred preventing it from being sent to profiles.
 
@@ -86,7 +86,7 @@ The **[!UICONTROL Delivery status]** table offers a detailed account of profile 
 
 ## Campaign overview {#campaign-global}
 
-The **[!UICONTROL Campaign overview]** table serves as a dashboard for SMS performance in your campaign. It summarizes targeted profiles, click and click-through metrics (including estimated clicks that exclude bot and non-human interaction traffic), and delivery outcomes such as bounces, send errors, and exclusions.
+The **[!UICONTROL Campaign overview]** table serves as a dashboard for Mobile performance in your campaign. It summarizes targeted profiles, click and click-through metrics (including estimated clicks that exclude bot and non-human interaction traffic), and delivery outcomes such as bounces, send errors, and exclusions.
 
 +++ Learn more about Campaign overview metrics
 
@@ -112,11 +112,11 @@ The **[!UICONTROL Campaign overview]** table serves as a dashboard for SMS perfo
 
 ## Tracked labels {#track-label-sms}
 
-The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the link labels within your SMS messages, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
+The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the link labels within your Mobile messages, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
 
 +++ Learn more about Tracked link labels metrics
 
-* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your SMS messages.
+* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your Mobile messages.
 
 * **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 
@@ -126,11 +126,11 @@ The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the
 
 ## Tracked link URLs {#track-link-url-sms}
 
-The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of the URLs within your SMS messages that attract the highest visitor traffic. This enables you to identify and prioritize the most popular links, enhancing your understanding of profile engagement with specific content in your SMS messages.
+The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of the URLs within your Mobile messages that attract the highest visitor traffic. This enables you to identify and prioritize the most popular links, enhancing your understanding of profile engagement with specific content in your Mobile messages.
 
 +++ Learn more about Tracked link URLs metrics
 
-* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your SMS messages.
+* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your Mobile messages.
 
 * **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 
@@ -144,21 +144,21 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 
 ## SMS inbound message {#sms-inbound}
 
-The **[!UICONTROL SMS inbound message]** table presents a thorough overview of which SMS messages have attracted the highest visitor traffic. This resource offers valuable insights into audience engagement dynamics.
+The **[!UICONTROL SMS inbound message]** table presents a thorough overview of which Mobile messages have attracted the highest visitor traffic. This resource offers valuable insights into audience engagement dynamics.
 
-+++ Learn more about SMS inbound message metrics
++++ Learn more about Mobile inbound message metrics
 
-* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your SMS messages.
+* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your Mobile messages.
 
 +++
 
 ## SMS Message type {#sms-message-type}
 
-The **[!UICONTROL SMS Message type]** table presents a thorough overview of which SMS Message type have attracted the highest visitor traffic. This resource offers valuable insights into audience engagement dynamics.
+The **[!UICONTROL SMS Message type]** table presents a thorough overview of which Mobile Message type have attracted the highest visitor traffic. This resource offers valuable insights into audience engagement dynamics.
 
 +++ Learn more about SMS Message type metrics
 
-* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your SMS messages.
+* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your Mobile messages.
 
 +++
 
@@ -168,20 +168,20 @@ The **[!UICONTROL SMS providers]** table presents a thorough overview of which S
 
 +++ Learn more about SMS providers metrics
 
-* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your SMS messages.
+* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your Mobile messages.
 
 +++
 
 ## Bounce reasons {#bounce-reasons-sms}
 
-The **[!UICONTROL Bounces Reasons]** table provides a comprehensive overview of data related to bounced SMS messages, delivering valuable insights into the specific reasons behind instances of SMS message bounces.
+The **[!UICONTROL Bounces Reasons]** table provides a comprehensive overview of data related to bounced Mobile messages, delivering valuable insights into the specific reasons behind instances of Mobile message bounces.
 
 ## Error reasons {#error-reasons-sms}
 
-The **[!UICONTROL Error Reasons]** table allows you to identify the specific errors that occurred during the sending process of your SMS messages, facilitating a thorough analysis of any issues encountered.
+The **[!UICONTROL Error Reasons]** table allows you to identify the specific errors that occurred during the sending process of your Mobile messages, facilitating a thorough analysis of any issues encountered.
 
 ## Exclude reasons {#excluded-reasons-sms}
 
-The **[!UICONTROL Exclude Reasons]** table visually depicts the diverse factors that led to the exclusion of user profiles from the targeted audience, preventing them from receiving your SMS messages.
+The **[!UICONTROL Exclude Reasons]** table visually depicts the diverse factors that led to the exclusion of user profiles from the targeted audience, preventing them from receiving your Mobile messages.
 
 Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion reasons.

@@ -375,7 +375,7 @@ Once content is generated, use the **Refine** feature to iterate and enhance it 
 <td>"Nurture enterprise prospects by showcasing three customer success stories with detailed ROI metrics (IBM: 45% cost reduction, Accenture: 200% lead increase, Microsoft: 60% time savings), targeting IT directors at companies with 1000+ employees"</td>
 </tr>
 <tr>
-<td><strong>SMS</strong></td>
+<td><strong>Mobile message</strong></td>
 <td>"Alert VIP customers about 4-hour flash sale on premium electronics with 40% discount, limited to first 100 customers"</td>
 </tr>
 <tr>

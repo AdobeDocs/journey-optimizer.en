@@ -37,7 +37,7 @@ level_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Get started with content templates to create standalone, reusable content for the Email, Push, In-App, SMS, and Direct Mail channels that marketers can reuse across campaigns and journeys in Adobe Journey Optimizer.
+**On this page:** Get started with content templates to create standalone, reusable content for the Email, Push, In-App, Mobile message, and Direct Mail channels that marketers can reuse across campaigns and journeys in Adobe Journey Optimizer.
 
 >[!ENDSHADEBOX]
 
@@ -53,7 +53,7 @@ This functionality allows content-oriented users to work on templates outside ca
 
 For example, a user within your company may focus solely on content and have no access to campaigns or journeys. This user can create an email template that your organization's marketers can select as a starting point for all emails.
 
-You can create content templates for the Email, Push, In-App, SMS, and Direct Mail channels.
+You can create content templates for the Email, Push, In-App, Mobile message, and Direct Mail channels.
 
 >[!AVAILABILITY]
 >

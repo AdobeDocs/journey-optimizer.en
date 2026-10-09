@@ -163,7 +163,7 @@ See also the [push channel configuration documentation](../push/push-configurati
 +++
 
 
-## SMS channel {#ajo-troubleshooting-sms}
+## Mobile channel {#ajo-troubleshooting-sms}
 
 +++ Why are my transactional SMS not delivered even though consent is set to `marketing.sms.value=y`?
 

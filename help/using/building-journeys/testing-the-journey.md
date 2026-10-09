@@ -40,7 +40,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
 ---
-	
+    
 # Test your journey{#testing_the_journey}
 
 >[!BEGINSHADEBOX]
@@ -65,7 +65,7 @@ Adobe Journey Optimizer offers three ways to test and validate your journey:
 
 * **[Journey Test mode](#test-profiles)**: Persistent profiles explicitly flagged as test profiles in Adobe Experience Platform. They can be reused across multiple test sessions. This method is recommended for testing with consistent, predefined profile data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
 
-* **[Journey Dry run](journey-dry-run.md)**: Run the journey against real production audience and segmentation data without contacting real customers or updating profile information. Action nodes such as email, SMS, and custom actions are bypassed. [Learn more about Journey Dry run](journey-dry-run.md).
+* **[Journey Dry run](journey-dry-run.md)**: Run the journey against real production audience and segmentation data without contacting real customers or updating profile information. Action nodes such as email, mobile message, and custom actions are bypassed. [Learn more about Journey Dry run](journey-dry-run.md).
 
 Not sure Test mode is the right method for you? [Compare all three validation options](choose-validation-method.md).
 

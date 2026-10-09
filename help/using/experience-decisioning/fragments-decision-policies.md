@@ -45,7 +45,7 @@ Decision items support two types of fragment content that can be leveraged when 
 
 ## Journey Optimizer content fragments {#ajo-fragments}
 
-If your decision policy contains decision items including AJO content fragments, you can leverage these fragments when authoring a message within the decision policy across all channels where Decisioning is available (code-based experience, Email, Push, SMS, and journeys).
+If your decision policy contains decision items including AJO content fragments, you can leverage these fragments when authoring a message within the decision policy across all channels where Decisioning is available (code-based experience, Email, Push, Mobile, and journeys).
 
 For example, let's say you want to display different contents for several mobile device models. Add the specified fragments, each pertaining to a different phone model, to the decision item you are using in the decision policy. [Learn how to add fragments to a decision item](items.md#attributes).
 

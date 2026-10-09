@@ -147,7 +147,7 @@ For customers using the **Select** license package, the following additional lim
 
 | Limitation | Error code | Description |
 |---|---|---|
-| Only one action allowed | `ERR_PKG_SELECT_8` | Unitary journeys can contain only **one** action activity. Multiple email, push, SMS, or other action activities are not permitted within the same journey. |
+| Only one action allowed | `ERR_PKG_SELECT_8` | Unitary journeys can contain only **one** action activity. Multiple email, push, mobile messages, or other action activities are not permitted within the same journey. |
 | No conditions allowed | `ERR_PKG_SELECT_7` | Condition activities cannot be used in unitary journeys. The journey must follow a single, linear path without branching logic. |
 | No wait activities | `ERR_PKG_SELECT_6` | Wait activities cannot be added to unitary journeys. Actions must execute immediately without delays. |
 | Timeout/error transitions must go to end node | `ERR_PKG_SELECT_2` | If you configure timeout or error transitions for an action (e.g., an email action), these paths must point directly to an end node. They cannot connect to other activities or actions in the journey. |
@@ -260,7 +260,7 @@ Additional guardrails — including recommendations on streaming vs. batch audie
 The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **[!UICONTROL Campaign Standard]** activities:
 
 * Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
-* **[!UICONTROL Campaign Standard]** activities cannot be used with other channel activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
+* **[!UICONTROL Campaign Standard]** activities cannot be used with other channel activities: Card, Code-based Experience, Email, Push, Mobile messages, In-app messages, Web.
 * **[!UICONTROL Campaign v7/v8]** activities can be used alongside native channel activities in the same journey.
 
 #### Reaction events {#reaction-events-g}
@@ -357,7 +357,7 @@ This section covers guardrails for audience management, profile handling, and en
 
 ## Channels & Messaging {#channel-guardrails}
 
-This section covers guardrails for all communication channels including email, SMS, inbound channels (web, in-app, code-based, content cards), and transactional messages.
+This section covers guardrails for all communication channels including email, mobile messages, inbound channels (web, in-app, code-based, content cards), and transactional messages.
 
 >[!NOTE]
 >
@@ -392,13 +392,13 @@ This size limitation also applies to other backend operations that process the f
 
 If publication or the copy operation fails due to content size, reduce your message content and try again.
 
-### SMS guardrails {#sms-guardrails}
+### Mobile messages guardrails {#sms-guardrails}
 
-The following guardrails apply to the [SMS channel](../mobile/get-started-mobile.md):
+The following guardrails apply to the [Mobile channel](../mobile/get-started-mobile.md):
 
 * Media files for MMS can be included through a supported URL. Please ensure that the media file is uploaded separately.
 * Message feedback syncing is not currently available for MMS.
-* Consent management operates at the SMS channel level for MMS.
+* Consent management operates at the Mobile channel level for MMS.
 
 ### Inbound channel guardrails {#inbound-guardrails}
 
@@ -453,7 +453,7 @@ A warning is surfaced when a content variant exceeds its recommended size thresh
 
 ### Generate Content guardrails {#ai-assistant-g}
 
-Guardrails and limitations for **Generate Content** — including supported channels (email, push, web, SMS) and personalization editor limitations — are listed on [this page](../content-management/gs-generative.md#generative-guardrails).
+Guardrails and limitations for **Generate Content** — including supported channels (email, push, web, mobile messages) and personalization editor limitations — are listed on [this page](../content-management/gs-generative.md#generative-guardrails).
 
 ### Landing pages guardrails {#lp-guardrails}
 

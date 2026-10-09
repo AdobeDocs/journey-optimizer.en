@@ -66,7 +66,7 @@ To present the best dynamic offer and experience to your customers, add a decisi
 
 >[!AVAILABILITY]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **Email**, **Push notification**, **SMS**, **[Custom channels](../custom-channel/get-started-custom-channel.md)**, and **Direct Mail** channels.
+>Decision policies are available to all customers for the **Code-based Experience**, **Email**, **Push notification**, **Mobile message**, **[Custom channels](../custom-channel/get-started-custom-channel.md)**, and **Direct Mail** channels.
 
 ## Add a decision policy {#add}
 
@@ -154,9 +154,9 @@ You can also add decision policies when using the **[!UICONTROL Code your own]**
 >
 >In **[!UICONTROL Code your own]** mode, you can only return one decision item per policy, because the **[!UICONTROL Repeat Grid]** component is not available.
 
->[!TAB SMS]
+>[!TAB Mobile message]
 
-For SMS, you can add a new decision policy using either the **personalization editor**, or the **Decisioning** menu available in the properties pane.
+For Mobile message, you can add a new decision policy using either the **personalization editor**, or the **Decisioning** menu available in the properties pane.
 
 +++Add a decision policy from the personalization editor
 
@@ -242,7 +242,7 @@ After you have added a new decision policy into your content, the decision polic
 
     >[!NOTE]
     >
-    >The **[!UICONTROL Number of items]** field is available for **Email**, **Code-based experience**, and **Direct mail** channels. For **SMS** and **Push** channels, only 1 decision item can be returned per action.
+    >The **[!UICONTROL Number of items]** field is available for **Email**, **Code-based experience**, and **Direct mail** channels. For **Mobile message** and **Push** channels, only 1 decision item can be returned per action.
 
     To return multiple items for the Email channel, you need to add the decision policy within a **[!UICONTROL Repeat Grid]** component. Expand the section below for more details:
 

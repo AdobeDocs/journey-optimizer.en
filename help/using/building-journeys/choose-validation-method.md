@@ -92,7 +92,7 @@ Key mechanics:
 
 **When to use:** A final, production-realistic check right before you publish.
 
-[Journey Dry run](journey-dry-run.md) is a special journey publication mode that runs your journey against real production audience and segmentation data, without contacting real customers or updating profile information. The journey activates like a live journey, and profiles flow through branches and nodes exactly as they would in production. However, [action nodes](about-journey-activities.md) such as email, SMS, and custom actions are bypassed.
+[Journey Dry run](journey-dry-run.md) is a special journey publication mode that runs your journey against real production audience and segmentation data, without contacting real customers or updating profile information. The journey activates like a live journey, and profiles flow through branches and nodes exactly as they would in production. However, [action nodes](about-journey-activities.md) such as email, mobile messages, and custom actions are bypassed.
 
 Key mechanics:
 

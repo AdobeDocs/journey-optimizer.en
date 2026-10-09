@@ -108,7 +108,7 @@ If something changes **in your business** that affects multiple customers at onc
 
 ## Feature availability reference {#feature-compatibility}
 
-All journey types support the full AJO channel set (email, push, SMS, in-app, web, content cards), core orchestration activities (wait, condition, custom actions), test mode, dry run, and send-time optimization. The table below shows only the capabilities that differ across types.
+All journey types support the full AJO channel set (email, push, mobile message, in-app, web, content cards), core orchestration activities (wait, condition, custom actions), test mode, dry run, and send-time optimization. The table below shows only the capabilities that differ across types.
 
 >[!NOTE]
 >

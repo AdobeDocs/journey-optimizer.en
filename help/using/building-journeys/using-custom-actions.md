@@ -65,7 +65,7 @@ Learn how to use API call responses from custom actions for personalization on [
 
 ## Consent and data governance {#privacy}
 
-In Journey Optimizer, you can apply data governance and consent policies to your custom actions to prevent specific fields from being exported to third-party systems or exclude customers who have not consented to receive email, push or SMS communication. For more information, refer to the following pages:
+In Journey Optimizer, you can apply data governance and consent policies to your custom actions to prevent specific fields from being exported to third-party systems or exclude customers who have not consented to receive email, push or mobile communication. For more information, refer to the following pages:
 
 * [Data governance](../action/action-privacy.md).
 * [Consent](../action/consent.md).

@@ -45,7 +45,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
 >title="Create a Mobile message"
->abstract="To create a Mobile message, add an SMS action in a journey or a campaign and start personalizing it with the personalization editor."
+>abstract="To create a Mobile message, add an Channel action in a journey or a Mobile message campaign and start personalizing it with the personalization editor."
 
 >[!AVAILABILITY]
 >

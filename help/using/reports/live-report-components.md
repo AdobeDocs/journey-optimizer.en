@@ -38,7 +38,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Reference the definitions of the journey, email, SMS, landing page, and push notification metrics used across Adobe Journey Optimizer reports.
+**On this page:** Reference the definitions of the journey, email, mobile, landing page, and push notification metrics used across Adobe Journey Optimizer reports.
 
 >[!ENDSHADEBOX]
 
@@ -77,7 +77,7 @@ The tables below give you the list of metrics used in reports and their definiti
  </tbody> 
 </table>
 
-## Email and SMS dimensions and metrics {#email-and-sms-metrics}
+## Email and mobile dimensions and metrics {#email-and-sms-metrics}
 
 <table> 
  <thead> 

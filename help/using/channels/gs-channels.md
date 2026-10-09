@@ -29,7 +29,7 @@ level_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Adobe Journey Optimizer's native channels let you reach customers across outbound delivery and inbound experiences — compare email, SMS, push, Live activities, direct mail, WhatsApp, LINE, in-app, web, code-based, and content cards to see where each is supported in journeys and campaigns.
+**On this page:** Adobe Journey Optimizer's native channels let you reach customers across outbound delivery and inbound experiences — compare email, mobile, push, Live activities, direct mail, WhatsApp, LINE, in-app, web, code-based, and content cards to see where each is supported in journeys and campaigns.
 
 >[!ENDSHADEBOX]
 
@@ -78,7 +78,7 @@ Deliver persistent, real-time updates directly on the iPhone Lock Screen and Dyn
 
 Mobile messages
 
-Understand how to create, manage, and configure SMS, MMS, and RCS messages for marketing and transactional purposes, including compliance and personalization.
+Understand how to create, manage, and configure Mobile messages for marketing and transactional purposes, including compliance and personalization.
 
 [Learn more about Mobile messages](../mobile/get-started-mobile.md)
 :::
@@ -177,7 +177,7 @@ The table below shows the availability of each channel across different journeys
 | Channel              | Journeys | Action campaigns (Marketing) | Action campaigns (Transactional) | API-triggered campaigns | Orchestrated campaigns |
 |----------------------|----------|------------------------------|----------------------------------|-------------------------|------------------------|
 | Email                | ✅ | ✅ | ✅ | ✅ | ✅ |
-| SMS                  | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Mobile message                 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Push notification    | ✅ | ✅ | ✅ | ✅ | ✅ |
 | iOS Live activities  | — | — | — | ✅ | — |
 | In-app               | ✅ | ✅ | — | — | — |
