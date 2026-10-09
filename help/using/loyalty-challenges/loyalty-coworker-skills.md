@@ -123,4 +123,4 @@ Marketers can narrow recommendations to the goals they care about and pass a rec
 
 After the challenge is created or edited, review the challenge details and journey in challenge authoring before publishing.
 
-{{$include /help/_includes/do-not-localize/start/ai-augmented-loyalty-coworker-skills.md}}
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-loyalty-coworker-skills.md}}
