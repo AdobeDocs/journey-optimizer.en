@@ -220,18 +220,18 @@ We recommend that you define a very short **[!UICONTROL Custom Action / Data Sou
 
 >[!NOTE]
 >
->**[!UICONTROL Custom Action / Data Source timeout]** is distinct from **[!UICONTROL Set event recovery timeout]** described below: the former controls how long a journey waits for a single action's response before taking a fallback path, while the latter controls how long the journey keeps retrying events after a service interruption.
+>**[!UICONTROL Custom Action / Data Source timeout]** is distinct from **[!UICONTROL Set internal error recovery timeout]** described below: the former controls how long a journey waits for a single action's response before taking a fallback path, while the latter controls the maximum time during which the journey may retry steps for profiles impacted by an internal service interruption.
 
-### Event recovery timeout {#event-recovery-timeout}
+### Internal error recovery timeout {#event-recovery-timeout}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_recovery_timeout"
 >title="Set internal error recovery timeout"
 >abstract="Controls how long the journey may retry steps impacted by a service interruption. By default, may retry for up to 72 hours. Turn on to limit retry for time-sensitive journeys."
 
-By default, journey events impacted by a service interruption are automatically replayed for up to **72 hours**, with no action needed on your part. This default applies to both new and existing journeys when the toggle is off.
+By default, journey events impacted by a service interruption may be retried for up to **72 hours**, with no action needed on your part. This default applies to both new and existing journeys when the toggle is off.
 
-For time-sensitive journeys, enable **[!UICONTROL Set event recovery timeout]** to control the replay window yourself instead of using the default 72-hour window. When this option is enabled, use the **[!UICONTROL Event recovery time limit (in hours)]** field to define how long Journey Optimizer retries impacted events, from 0 to 72 hours.
+For time-sensitive journeys, enable **[!UICONTROL Set internal error recovery timeout]** to control the replay window yourself instead of using the default 72-hour window and define how long Journey Optimizer retries impacted events, from 0 to 72 hours.
 
 ![](assets/journey-properties-event-recovery.png)
 
