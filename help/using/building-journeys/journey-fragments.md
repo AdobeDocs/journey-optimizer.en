@@ -201,7 +201,7 @@ A standard entry pattern — such as a [Read Audience](read-audience.md) node fo
 
 **Preferred channel**
 
-A fragment can evaluate a profile's preferred communication channel — email, push, or SMS — and route the profile accordingly. This logic can be reused across any journey involving outbound messaging, ensuring consistent channel preference management. The fragment can include the [Optimize](optimize.md) activity and all three channel branches.
+A fragment can evaluate a profile's preferred communication channel — email, push, or Mobile message — and route the profile accordingly. This logic can be reused across any journey involving outbound messaging, ensuring consistent channel preference management. The fragment can include the [Optimize](optimize.md) activity and all three channel branches.
 
 ![Preferred channel fragment example](assets/journey-fragments-uc-preferred-channel.png)
 

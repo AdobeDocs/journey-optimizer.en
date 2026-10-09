@@ -84,15 +84,15 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
 Additional settings are available depending on the selected communication channel. Expand the sections below for more information.
 
-+++**Apply capping rules** (Email, Push, SMS)
++++**Apply capping rules** (Email, Push, Mobile)
 
 In the **[!UICONTROL Business rules]** drop-down list, select a rule set to apply capping rules to your campaign. Leveraging channel rule sets allows you to set frequency capping by communication type to prevent overloading customers with similar messages. [Learn how to work with rule sets](../conflict-prioritization/rule-sets.md)
 
 +++
 
-+++**Track engagement** (Email, SMS).
++++**Track engagement** (Email, Mobile).
 
-Use the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or SMS deliveries. Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../reports/campaign-global-report-cja.md)
+Use the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or mobile deliveries. Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../reports/campaign-global-report-cja.md)
 
 +++
 

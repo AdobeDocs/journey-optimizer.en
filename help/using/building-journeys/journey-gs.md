@@ -75,7 +75,7 @@ The main steps to create a journey are detailed on this page. They are streamlin
 In this guide, you will:
 
 * Define a journey entry point — an audience segment or a real-time event
-* Add message actions across channels — email, push, SMS, in-app, web, code-based experience, content card, and more. [See supported channels](journey-action.md)
+* Add message actions across channels — email, push, mobile message, in-app, web, code-based experience, content card, and more. [See supported channels](journey-action.md)
 * Test your journey with test profiles before activation
 * Publish your journey and monitor its performance
 
@@ -148,7 +148,7 @@ Follow these steps to design your journey:
 
     ![Read Audience activity configuration for selecting target audience](assets/read-segment.png)
 
-1. **Add message actions** — From the **[!UICONTROL Actions]** section of the palette, drag a channel action onto the canvas to send messages to profiles flowing through the journey. Actions are available for email, push notifications, SMS, and more.
+1. **Add message actions** — From the **[!UICONTROL Actions]** section of the palette, drag a channel action onto the canvas to send messages to profiles flowing through the journey. Actions are available for email, push notifications, mobile message, and more.
 
 1. **Add orchestration activities** — Use a **[!UICONTROL Condition]** activity to branch the journey into multiple paths based on profile attributes or behavior. Use a **[!UICONTROL Wait]** activity to introduce a time delay between steps.
 

@@ -90,7 +90,7 @@ Use this table to decide which API triggered campaign type fits your use case:
 | ------------------------ | --------------------------------- | --------------------------- |
 | **Availability** | Included in base offering | Requires High Throughput transactional messaging add-on. |
 | **Throughput** | Up to 500 transactions per second | Up to 5000 transactions per second |
-| **Channels** | Email, SMS, Push | Email, Push |
+| **Channels** | Email, Mobile message, Push | Email, Push |
 | **Personalization** | Profile + contextual in the API payload | Contextual in the API payload only |
 | **Profile & stitching** | Exists or gets created with events stitched to profile | No profile |
 | **Message volume** | Standard entitlement & message packs | Separate tiered message volumes |

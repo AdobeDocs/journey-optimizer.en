@@ -91,9 +91,9 @@ To set up targeting in a journey, follow the steps below.
 
 1. Click **[!UICONTROL Create]** to save your targeting rule settings.
 
-1. Back in the journey, drop specific actions to customize each path. For example, create an email with personalized offers for Gold Loyalty members, and an SMS reminder for all other members.
+1. Back in the journey, drop specific actions to customize each path. For example, create an email with personalized offers for Gold Loyalty members, and a mobile message reminder for all other members.
 
-    ![Journey paths with email for Gold members and SMS for others](assets/journey-targeting-paths.png)
+    ![Journey paths with email for Gold members and Mobile messages for others](assets/journey-targeting-paths.png)
 
 1. If you selected the **[!UICONTROL Enable fallback content]** option when defining the rule settings, define one or more actions for the fallback path that was automatically added.
 
@@ -103,13 +103,13 @@ To set up targeting in a journey, follow the steps below.
 
 1. Design appropriate content for each action corresponding to each group defined by your targeting rule settings.
 
-   In this example, design an email with special offers for Gold members, and an SMS reminder for the other members.<!--You can seamlessly navigate between the different contents for each action. ![Content design panel for targeting rule actions](assets/journey-targeting-design.png)-->
+   In this example, design an email with special offers for Gold members, and a Mobile message reminder for the other members.<!--You can seamlessly navigate between the different contents for each action. ![Content design panel for targeting rule actions](assets/journey-targeting-design.png)-->
 
 1. Click **[!UICONTROL Validate]** in the journey header and resolve any errors before [testing the journey](choose-validation-method.md). [Learn about journey validation](publish-journey.md#validate).
 
 1. When testing is complete and validation is current and passed, [publish](publish-journey.md) your journey.
 
-Once the journey is live, the path that is specified for each segment is processed so that Gold members enter the path with the email offers, while the other members enter the path with the SMS reminder.
+Once the journey is live, the path that is specified for each segment is processed so that Gold members enter the path with the email offers, while the other members enter the path with the Mobile message reminder.
 
 Follow the success of your journey with the Journey report. [Learn more](../reports/journey-global-report-cja.md#targeting)
 
@@ -119,21 +119,21 @@ The following examples show how to use the **[!UICONTROL Optimize]** activity wi
 
 +++Segment-specific channels
 
-Gold status loyalty members can receive personalized offers via email, while all other members are directed to SMS reminders.
+Gold status loyalty members can receive personalized offers via email, while all other members are directed to Mobile message reminders.
 
 <!--➡️ Use the revenue per profile or conversion rate as the optimization metric.-->
 
-![Segment-specific channels targeting Gold members with email and others with SMS](assets/journey-optimize-targeting-uc-segment.png)
+![Segment-specific channels targeting Gold members with email and others with Mobile message](assets/journey-optimize-targeting-uc-segment.png)
 
 +++
 
 +++Behavior-based targeting
 
-Customers who opened an email but didn't click can be sent a push notification, while those who didn't open at all receive an SMS.
+Customers who opened an email but did not click can be sent a push notification, while those who did not open at all receive a Mobile message.
 
 <!--➡️ Use the click-through rate or downstream conversions as the optimization metric.-->
 
-![Behavior-based targeting for email engagement with push or SMS fallback](assets/journey-optimize-targeting-uc-behavior.png)
+![Behavior-based targeting for email engagement with push or mobile message fallback](assets/journey-optimize-targeting-uc-behavior.png)
 
 +++
 

@@ -56,9 +56,9 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_list"
 >title="Custom actions"
->abstract="Actions are connections through which you deliver personalized, real-time experiences to customers such as push notifications, email, SMS, or any other means of digital engagement you use in your business."
+>abstract="Actions are connections through which you deliver personalized, real-time experiences to customers such as push notifications, email, mobile messages, or any other means of digital engagement you use in your business."
 
-Actions are connections through which you deliver personalized, real-time experiences to customers such as push notifications, email, SMS, or any other means of digital engagement you use in your business.
+Actions are connections through which you deliver personalized, real-time experiences to customers such as push notifications, email, mobile messages, or any other means of digital engagement you use in your business.
 
 ➡️ [Discover this feature in video](#video)
 

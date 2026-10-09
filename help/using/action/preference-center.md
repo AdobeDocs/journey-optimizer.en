@@ -76,7 +76,7 @@ To manage your users' preferences with [!DNL Journey Optimizer], you can:
 
     >[!NOTE]
     >
-    >The supported channels are Email, Push, SMS and InApp.<!--To check-->
+    >The supported channels are Email, Push, Mobile messages and InApp.<!--To check-->
 
 * Ask your customers which topics they whish to subscribe to (such as the type of communications they agree to receive or not). [Learn how](#manage-preferences)
 

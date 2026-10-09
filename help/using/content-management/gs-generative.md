@@ -150,7 +150,7 @@ General guidelines for using Generate Content in Adobe Journey Optimizer for ema
 
 ### Supported channels
 
-* Only available for the email, push, web and SMS channels.
+* Only available for the email, push, web and mobile channels.
 
 ### Content quality, prompts, and feedback
 

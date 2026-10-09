@@ -62,7 +62,7 @@ For example, if you schedule a campaign to send at 9 AM using profile timezone, 
 
 >[!AVAILABILITY]
 >
->Scheduling using profile time zones is available for these outbound channels only: Email, Push, SMS, WhatsApp, and LINE.
+>Scheduling using profile time zones is available for these outbound channels only: Email, Push, Mobile message, WhatsApp, and LINE.
 
 To enable profile timezone scheduling:
 
@@ -86,7 +86,7 @@ For IANA naming, the identifiers are case-sensitive and must match the official 
 
 ## Set an execution frequency
 
-For **Email**, **SMS**, and **Push notification** actions, you can define a frequency at which the campaign's message should be sent. To do this, use the **[!UICONTROL Action triggers]** options in the campaign creation screen to specify if the campaign should be executed daily, weekly, or monthly.
+For **Email**, **Mobile message**, and **Push notification** actions, you can define a frequency at which the campaign's message should be sent. To do this, use the **[!UICONTROL Action triggers]** options in the campaign creation screen to specify if the campaign should be executed daily, weekly, or monthly.
 
 ![](assets/campaign-frequency.png)
 
@@ -102,7 +102,7 @@ The **[!UICONTROL Campaign end]** section allows you to specify when a campaign 
 
 ## Set rate control
 
-[!DNL Journey Optimizer] allows you to enable rate control for outbound actions (Email, SMS, Push notifications).
+[!DNL Journey Optimizer] allows you to enable rate control for outbound actions (Email, Mobile messages, Push notifications).
 
 This feature is particularly useful for preventing overload on downstream systems, such as landing pages or customer care platforms. For example, you can set a rate limit of 165 messages per second to ensure steady delivery without overwhelming downstream systems.
 

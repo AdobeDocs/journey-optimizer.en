@@ -84,7 +84,7 @@ Use [!DNL Journey Optimizer] to:
 
 * Build **real-time orchestration** use cases using contextual data stored in events or data sources
 * Design **multistep advanced scenarios** that respond dynamically to customer behavior and business events
-* Deliver **1:1 personalized experiences** at scale across email, push, SMS, in-app, web, and more
+* Deliver **1:1 personalized experiences** at scale across email, push, mobile message, in-app, web, and more
 
 ![Journey designer interface with palette, canvas, and properties pane](assets/journey38.png)
 
@@ -204,7 +204,7 @@ Before opening the designer, clarify your objectives:
 * **What is the goal?** (e.g., onboard new customers, re-engage inactive users)
 * **Who is the audience?** (specific segment, event-driven individuals)
 * **Which journey type fits?** (See [journey types](#journey-types) above)
-* **What channels will you use?** (email, push, SMS, etc.)
+* **What channels will you use?** (email, push, mobile message, etc.)
 
 ### 2. Design in the canvas {#design}
 
@@ -317,7 +317,7 @@ Send different content based on the day of the week customers enter your journey
 
 **Multi-channel campaigns**
 
-Orchestrate seamless experiences across email, push, SMS, and web channels in a single journey.
+Orchestrate seamless experiences across email, push, mobile message, and web channels in a single journey.
 
 [View use case →](journeys-uc.md)
 :::

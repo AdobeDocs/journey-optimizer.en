@@ -82,7 +82,7 @@ You can also use the guided channel setup to automate and validate channel setup
 >[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets_header"
 >title="Channel configuration settings"
->abstract="When setting up a channel configuration, select the channel it applies to, and define all the technical parameters required for your sending, such as email type, sender name, mobile apps, SMS configuration, and more."
+>abstract="When setting up a channel configuration, select the channel it applies to, and define all the technical parameters required for your sending, such as email type, sender name, mobile apps, mobile configuration, and more."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets"

@@ -108,7 +108,7 @@ In-app messages depend on an active session, so they are not suited to every sce
 * The message is a critical or time-sensitive issue that requires reaching users outside the app, such as an outage or security alert
 * The communication is regulatory or legal and requires a read confirmation that in-app messages cannot provide
 * The goal is account reactivation or a win-back campaign for inactive users who are unlikely to open the app
-* The message is a high-volume transactional update, such as an order confirmation, that is better suited to email or SMS
+* The message is a high-volume transactional update, such as an order confirmation, that is better suited to email or mobile message
 * Overuse could lead to banner blindness, where users start ignoring messages that appear too often
 * Users may be offline or without app connectivity when the message is meant to be delivered
 

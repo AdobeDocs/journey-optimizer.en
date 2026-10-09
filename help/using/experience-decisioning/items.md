@@ -91,7 +91,7 @@ Start by defining the decision item's standard and custom attributes :
 
 1. Add fragments to your decision item to enrich its content. Two types of fragments are supported:
 
-    * **Journey Optimizer content fragments** — Use reusable expression fragments created in Journey Optimizer to display different contents depending on context, for example across several mobile device models. You can leverage these fragments in your decision policies across all channels where Decisioning is available (code-based experience, Email, Push, SMS, and journeys). [Learn how](fragments-decision-policies.md#ajo-fragments)
+    * **Journey Optimizer content fragments** — Use reusable expression fragments created in Journey Optimizer to display different contents depending on context, for example across several mobile device models. You can leverage these fragments in your decision policies across all channels where Decisioning is available (code-based experience, Email, Push, Mobile message, and journeys). [Learn how](fragments-decision-policies.md#ajo-fragments)
 
         When using these fragments in your decision policies, you can make a fragment optional so that it is skipped if temporarily unavailable on Edge. [Learn how](fragments-decision-policies.md#temporary-unavailable-fragments)
 
@@ -208,7 +208,7 @@ To set capping rules for the decision item, follow the steps detailed below.
     
         >[!CAUTION]
         >
-        >**Specific placement** capping is only supported for the **Web** and **Email** channels. It is not available for Code-based experience, SMS, Push, or Direct mail channels.
+        >**Specific placement** capping is only supported for the **Web** and **Email** channels. It is not available for Code-based experience, Mobile message, Push, or Direct mail channels.
     
         Click **[!UICONTROL Select placement]** to pick which placement to cap. Other placements pass through uncapped. For example, if you select the Hero Banner placement with a cap of 3 impressions per day, the offer stops appearing in the Hero Banner after 3 impressions but remains eligible in all other placements.
 

@@ -30,11 +30,11 @@ level_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Explore the structure and individual fields of the AJO Message Export Dataset that stores sent email and SMS message content in Adobe Experience Platform.
+**On this page:** Explore the structure and individual fields of the AJO Message Export Dataset that stores sent email and mobile message content in Adobe Experience Platform.
 
 >[!ENDSHADEBOX]
 
-When **Message Export** is enabled on an Email or SMS channel configuration, sent message content is written to the **AJO Message Export Dataset** in [!DNL Adobe Experience Platform].
+When **Message Export** is enabled on an Email or mobile channel configuration, sent message content is written to the **AJO Message Export Dataset** in [!DNL Adobe Experience Platform].
 
 This section lists the fields available in the exported dataset.
 

@@ -39,7 +39,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_channels_feedback_webhook_settings_configuration"
 >title="Basic Configuration"
->abstract="In this section, enter a descriptive name to identify the webhook and select the channel(s) for which this webhook should receive feedback (Email and/or SMS). In the Webhook URL field, provide the HTTPS endpoint where feedback events must be delivered."
+>abstract="In this section, enter a descriptive name to identify the webhook and select the channel(s) for which this webhook should receive feedback (Email and/or Mobile). In the Webhook URL field, provide the HTTPS endpoint where feedback events must be delivered."
 
 >[!CONTEXTUALHELP]
 >id="ajo_channels_feedback_webhook_settings_create"
@@ -76,7 +76,7 @@ You can manage webhook configurations from the **[!UICONTROL Administration]** /
 >[!CONTEXTUALHELP]
 >id="ajo_channels_feedback_webhook_relay_url"
 >title="Relay URL"
->abstract="The HTTPS endpoint Journey Optimizer calls to deliver events for this webhook, including delivery-status updates and, where enabled, inbound SMS/RCS messages relayed as-is."
+>abstract="The HTTPS endpoint Journey Optimizer calls to deliver events for this webhook, including delivery-status updates and, where enabled, inbound Mobile messages relayed as-is."
 
 To create a webhook, follow these steps:  
 
@@ -89,7 +89,7 @@ To create a webhook, follow these steps:
     ![](assets/webhook-config.png)
 
     * **Webhook Name** - Enter a descriptive name to identify the webhook.  
-    * **Channels** - Select the channel(s) for which this webhook should receive feedback (Email and/or SMS).  
+    * **Channels** - Select the channel(s) for which this webhook should receive feedback (Email and/or Mobile).  
     * **Webhook URL** - Provide the HTTPS endpoint where feedback events must be delivered.
 
 1. In the **[!UICONTROL Authentication]** section, select the authentication method:  
@@ -113,7 +113,7 @@ To create a webhook, follow these steps:
 
 After a message execution, **[!DNL Journey Optimizer]** sends the following payload to the configured endpoint.
 
-The payload includes the following campaign and SMS delivery details:
+The payload includes the following campaign and Mobile delivery details:
 
 * **`messageExecution.campaignType`** - Type of campaign: `Scheduled` or `ApiTriggered`.
 * **`messageDeliveryFeedback.encoding`** - SMS encoding reported by the provider, such as `GSM` or `UNICODE`.

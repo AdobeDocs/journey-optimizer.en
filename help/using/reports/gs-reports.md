@@ -139,7 +139,7 @@ Select an outbound channel to discover associated **global all-time reports**.
 <td><img alt="email" src="../channels/assets/do-not-localize/email.png">
 <div align="center"><p><strong>Email channel</strong></p><p><a href="campaign-global-report-cja-email.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-email.md"><strong>Journey report</strong></a></p></div></td>
 <td><a href="campaign-global-report-cja-sms.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
-<div align="center"><p><strong>SMS channel</strong></p><p><a href="campaign-global-report-cja-sms.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-sms.md"><strong>Journey report</strong></a></p></div></td>
+<div align="center"><p><strong>Mobile channel</strong></p><p><a href="campaign-global-report-cja-sms.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-sms.md"><strong>Journey report</strong></a></p></div></td>
 <td><a href="campaign-global-report-cja-push.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
 <div align="center"><p><strong>Push channel</strong></p><p><a href="campaign-global-report-cja-push.md"><strong>Campaign report</strong></a></p><p><a href="journey-global-report-cja-push.md"><strong>Journey report</strong></a></p></div></td>
 <td><a href="campaign-global-report-cja-direct.md"><img alt="direct mail" src="../channels/assets/do-not-localize/direct-mail.jpg"></a>

@@ -271,7 +271,7 @@ After configuring your experimentation, you can follow the success of your deliv
 >The Scale the Winner feature is currently supported for the following channels:
 >
 >* Inbound Channels (e.g., Web, In-app message, Code-based experience) in any journey or campaign.
->* Outbound Channels (e.g., Email, Push notification, SMS) in API-triggered transactional campaigns.
+>* Outbound Channels (e.g., Email, Push notification, Mobile message) in API-triggered transactional campaigns.
 
 Scale the Winner enables you to automatically or manually roll out the winning variation of an experiment to your full audience. This feature ensures that, once a winner is determined, you can amplify its reach and effectiveness without constantly monitoring the experiment.
 

@@ -145,7 +145,7 @@ To see an activity more closely, click its thumbnail. The content opens in a cen
 
 ![Preview of an email activity's content in a centered frame](assets/journey-canvas-content-preview-email.png)
 
-The preview adapts to each channel. For example, mobile and SMS messages display in a device mockup.
+The preview adapts to each channel. For example, mobile messages display in a device mockup.
 
 ![Preview of a mobile message activity's content in a centered frame](assets/journey-canvas-content-preview-message.png)
 
@@ -268,7 +268,7 @@ The other activities allow you to add conditions to your journey to define sever
 
 ### Actions{#jo-actions}
 
-Actions are what you want to happen as result of some kind of trigger, like sending a message. It is the piece of journey that the customer experiences. This could be an email, SMS or Push message, or a third-party action, such as a Slack message.
+Actions are what you want to happen as result of some kind of trigger, like sending a message. It is the piece of journey that the customer experiences. This could be an email, mobile or Push message, or a third-party action, such as a Slack message.
 
 The channel action activities allows you to include a message designed in [!DNL Journey Optimizer]. [Learn more about the channel action activities](journey-action.md)
 

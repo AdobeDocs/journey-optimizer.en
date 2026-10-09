@@ -48,7 +48,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use the Action activity to deliver content from the journey canvas through a single unified activity that covers Email, Push, SMS, in-app, web, code-based experiences, and content cards.
+**On this page:** Learn how to use the Action activity to deliver content from the journey canvas through a single unified activity that covers Email, Push, Mobile message, In-app, Web, Code-based experiences, and Content cards.
 
 >[!ENDSHADEBOX]
 
@@ -59,7 +59,7 @@ topic_v2:
 
 The **Action** activity is the single entry point for delivering content to your customers from the journey canvas. Instead of choosing from a separate activity for each channel, you drag a single **[!UICONTROL Action]** activity onto the canvas and select the channel you want to use.
 
-It consolidates all legacy native built-in channels — Email, Push, SMS, In-app, Web, Code-based experience, and Content Card — into one unified activity type, replacing the individual channel activities used previously.
+It consolidates all legacy native built-in channels — Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card — into one unified activity type, replacing the individual channel activities used previously.
 
 Use the **Action** activity to:
 
@@ -74,7 +74,7 @@ Use the **Action** activity to:
 
 ## About legacy channel activities
 
-Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are **deprecated as of the March 2026 release**.
+Legacy native channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card) are **deprecated as of the March 2026 release**.
 
 Existing journeys using these activities continue to work without any changes—no migration is required.
 
@@ -133,7 +133,7 @@ To add a built-in channel action to your journey using the **[!UICONTROL Action]
 
 1. If you selected an inbound channel, you can add multiple actions. [Learn more](#multi-action)
 
-1. If you selected an outbound channel (Email, Push, SMS), you can add multiple channels and use channel optimization to automatically select the best channel per customer. [Learn more](channel-optimization.md)
+1. If you selected an outbound channel (Email, Push, Mobile message), you can add multiple channels and use channel optimization to automatically select the best channel per customer. [Learn more](channel-optimization.md)
 
     >[!AVAILABILITY]
     >
@@ -236,7 +236,7 @@ To add a built-in channel action to your journey using the **[!UICONTROL Action]
 
 Additional settings are available depending on the selected communication channel. Expand the sections below for more information.
 
-+++**Apply capping rules** (Email, Push, SMS)
++++**Apply capping rules** (Email, Push, Mobile message)
 
 In the **[!UICONTROL Business rules]** drop-down list, select a rule set to apply capping rules to your journey action.
 
@@ -246,9 +246,9 @@ Leveraging channel rule sets allows you to set frequency capping by communicatio
 
 +++
 
-+++**Track engagement** (Email, SMS).
++++**Track engagement** (Email, Mobile message).
 
-Use the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or SMS deliveries.
+Use the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or Mobile deliveries.
 
 Tracking results are accessible from the journey report once the journey has been executed.
 
@@ -305,7 +305,7 @@ To simplify your journey orchestration, you can define several inbound actions i
 
 >[!NOTE]
 >
->This capacity is available for inbound channels. For outbound channels (Email, Push, SMS), use [channel optimization](channel-optimization.md) to add multiple channels and automatically select the best channel per customer.
+>This capacity is available for inbound channels. For outbound channels (Email, Push, Mobile message), use [channel optimization](channel-optimization.md) to add multiple channels and automatically select the best channel per customer.
 
 This capacity enables you to deliver various Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, without the need to create multiple journey actions. It makes the deployment of your journey easier and allows for smoother reporting, with all the data consolidated into one single journey.
 

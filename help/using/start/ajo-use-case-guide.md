@@ -56,7 +56,7 @@ For administrators and technical users who need to configure the environment bef
 
 | I want to... | Recommended capability | Start here |
 | --- | --- | --- |
-| Configure email, SMS, or push channels before sending | Channel configuration | [Get started with channel configuration](../configuration/get-started-configuration.md) |
+| Configure email, mobile, or push channels before sending | Channel configuration | [Get started with channel configuration](../configuration/get-started-configuration.md) |
 | Warm up a new IP address for email sending | IP warmup plan | [Get started with IP warmup](../configuration/ip-warmup-gs.md) |
 | Set up roles, permissions, and access control | Access control | [Get started with access control](../administration/permissions-overview.md) |
 | Work across multiple environments or regions | Sandboxes | [Work with sandboxes](../administration/sandboxes.md) |
@@ -94,7 +94,7 @@ For scenarios where you react to a customer action or event as it happens.
 
 >[!BEGINSHADEBOX]
 
-**Before you build:** you need (1) an [audience defined in Adobe Experience Platform](../audience/about-audiences.md) that identifies inactive profiles (e.g. no purchase or login in 60 days), (2) a decision on re-engagement channel (email, push, or SMS), and (3) a suppression rule or [frequency cap](../conflict-prioritization/channel-capping.md) to avoid contacting recently messaged profiles. Use a **Read Audience** journey entry — not an event — for this scenario.
+**Before you build:** you need (1) an [audience defined in Adobe Experience Platform](../audience/about-audiences.md) that identifies inactive profiles (e.g. no purchase or login in 60 days), (2) a decision on re-engagement channel (email, push, or mobile), and (3) a suppression rule or [frequency cap](../conflict-prioritization/channel-capping.md) to avoid contacting recently messaged profiles. Use a **Read Audience** journey entry — not an event — for this scenario.
 
 >[!ENDSHADEBOX]
 
@@ -283,7 +283,7 @@ Browse Journey Optimizer playbooks for common scenarios like:
 +++**Prerequisites**
 
 * Sandbox with appropriate permissions
-* Channel configurations for email, push, and/or SMS
+* Channel configurations for email, push, and/or mobile messages
 * User permissions to create journeys and messages
 
 +++

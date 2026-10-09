@@ -78,7 +78,7 @@ Rule sets allow you to **group together multiple rules** and apply them to the j
 
 * **Frequency capping by channel and communication type** – Set frequency capping by communication type (e.g., Sales, Promotional) to prevent overloading customers with similar messages. Control frequency across multiple channels, automatically excluding over-solicited profiles. [Learn how to set frequency capping by channel and communication type](channel-capping.md)
 
-* **Quiet hours** – Define time-based exclusions so no messages are sent during specific periods (Email, SMS, Push, WhatsApp). [Learn how to set quiet hours](quiet-hours.md)
+* **Quiet hours** – Define time-based exclusions so no messages are sent during specific periods (Email, Mobile message, Push, WhatsApp). [Learn how to set quiet hours](quiet-hours.md)
 
 [Learn how to work with rule sets](rule-sets.md)
 

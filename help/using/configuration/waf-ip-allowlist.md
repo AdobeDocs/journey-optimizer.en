@@ -91,7 +91,7 @@ To access the list of subdomains for which you have allowed the IPs of your Web 
 
 ![IP allowed list inventory](assets/waf-ip-allowlist.png){width="90%"}
 
-The inventory page lists all subdomains that have at least one IP allowed, across all channel types (Email, Landing page, SMS, Web). Learn more on subdomains in [this section](about-subdomain-delegation.md).
+The inventory page lists all subdomains that have at least one IP allowed, across all channel types (Email, Landing page, Mobile, Web). Learn more on subdomains in [this section](about-subdomain-delegation.md).
 
 The list shows the number of allowed IPs per subdomain, and the author of the last modification.
 
@@ -103,7 +103,7 @@ To add IPs to the allowed list for a given subdomain, follow the steps below.
 
 1. From the **[!UICONTROL Allowed list - IPs]** inventory, click the **[!UICONTROL Add allowed IPs]** button.
 
-1. Select the target subdomain from the **[!UICONTROL Subdomain]** drop-down list. Only [delegated subdomains](delegate-subdomain.md) are listed, across all supported channel types: Email, Landing page, SMS, and Web.
+1. Select the target subdomain from the **[!UICONTROL Subdomain]** drop-down list. Only [delegated subdomains](delegate-subdomain.md) are listed, across all supported channel types: Email, Landing page, Mobile, and Web.
 
 1. In the **[!UICONTROL IP address]** field, enter the public egress IPs of your WAF. IPv4, IPv6, and CIDR ranges are supported (for example, `203.0.113.42`, `2001:db8::1`, `203.0.113.0/24`).
 

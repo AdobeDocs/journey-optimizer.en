@@ -38,7 +38,7 @@ Let's say you want to compare three paths:
 
 * one path with one email;
 * a second path with a **[!UICONTROL Wait]** node of two days and an email;
-* a third path with an email and then an SMS message.
+* a third path with an email and then a mobile message.
 
 1. From the **[!UICONTROL Orchestration]** section, drag and drop the **[!UICONTROL Optimize]** activity into the journey canvas.
 
@@ -84,7 +84,7 @@ Let's say you want to compare three paths:
 
     * Drag and drop a [Wait](wait-activity.md) activity of two days onto the first branch, followed by an [Email](../email/create-email.md) activity (**Treatment B**).
 
-    * Drag and drop an [Email](../email/create-email.md) activity onto the third branch, followed by an [SMS](../mobile/create-mobile-message.md) activity (**Treatment C**).
+    * Drag and drop an [Email](../email/create-email.md) activity onto the third branch, followed by a [Mobile message](../mobile/create-mobile-message.md) activity (**Treatment C**).
 
     ![Path experiment example with three treatment paths](assets/journey-optimize-experiment-ex.png){width=100%}
 
@@ -112,11 +112,11 @@ The following examples show how to use the **[!UICONTROL Optimize]** activity wi
 
 +++Channel effectiveness
 
-Test whether sending the first message by email versus SMS drives higher conversions.
+Test whether sending the first message by email versus mobile message drives higher conversions.
 
 ➡️ Use the conversion rate as the success metric (for example: purchases, sign-ups).
 
-![Channel effectiveness experiment comparing email versus SMS](assets/journey-optimize-experiment-uc-channel.png)
+![Channel effectiveness experiment comparing email versus mobile message](assets/journey-optimize-experiment-uc-channel.png)
 
 +++
 

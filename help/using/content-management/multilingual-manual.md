@@ -100,7 +100,7 @@ In this section, you can set your different locales for managing your multilingu
 
     >[!IMPORTANT]
     >
-    >Contextual data is available exclusively for Web, In-App, Code-based Experience and Content cards channels. If used for Email, SMS, Push notification or Direct mail channels, without additional attributes, the campaign or journey will be sent in the language of the first option on the list.
+    >Contextual data is available exclusively for Web, In-App, Code-based Experience and Content cards channels. If used for Email, Mobile message, Push notification or Direct mail channels, without additional attributes, the campaign or journey will be sent in the language of the first option on the list.
 
     ![](assets/multilingual-settings-6.png)
 
@@ -184,7 +184,7 @@ To add a locale or change the conditions of an active **[!UICONTROL Language set
 
 After setting up your multilingual content, you are ready to craft your campaign or journey and customize the content for each of your selected locales.
 
-1. Begin by creating and configuring your Email, SMS or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journey-action.md) according to your requirements.
+1. Begin by creating and configuring your Email, Mobile message or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journey-action.md) according to your requirements.
 
     >[!IMPORTANT]
     >

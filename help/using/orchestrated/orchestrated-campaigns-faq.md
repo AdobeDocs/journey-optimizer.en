@@ -249,7 +249,7 @@ Note that segmentation in Orchestrated campaigns is performed on Recipients (rel
 
 +++ Which channels are supported?
 
-You can create Orchestrated campaigns to send **emails**, **SMS**, **push notifications** and **direct mails**.  
+You can create Orchestrated campaigns to send **emails**, **mobile messages**, **push notifications** and **direct mails**.  
 
 **Learn more**
 
@@ -260,7 +260,7 @@ You can create Orchestrated campaigns to send **emails**, **SMS**, **push notifi
 
 +++ Can multiple communications and different channels be launched within the same Orchestrated campaign?
 
-Yes, Orchestrated campaigns supports cross-channel orchestration. You can combine email, SMS, push notification, and direct mail activities into a multi-step campaign canvas to create comprehensive customer experiences.
+Yes, Orchestrated campaigns supports cross-channel orchestration. You can combine email, mobile message, push notification, and direct mail activities into a multi-step campaign canvas to create comprehensive customer experiences.
 
 **Learn more**
 
@@ -293,7 +293,7 @@ No, the content designer, including the Email Designer, is common across all Jou
 
 +++ How are the different channels connected in Orchestrated campaigns?
 
-The channel component & runtime are common to all Journey Optimizer campaigns, however, supported channels differ. Orchestrated campaigns support email, SMS, push notifications, and direct mail.
+The channel component & runtime are common to all Journey Optimizer campaigns, however, supported channels differ. Orchestrated campaigns support email, mobile message, push notifications, and direct mail.
 
 **Learn more**
 
@@ -305,7 +305,7 @@ The channel component & runtime are common to all Journey Optimizer campaigns, h
 
 +++ Can Orchestrated campaigns connect with outbound channels (web, inApp)?
 
-No, inbound channels like web and in-app are not supported in Orchestrated campaigns. Only outbound channels (email, SMS, push notifications, and direct mail) are supported.
+No, inbound channels like web and in-app are not supported in Orchestrated campaigns. Only outbound channels (email, mobile message, push notifications, and direct mail) are supported.
 
 **Learn more**
 
@@ -445,7 +445,7 @@ Answering 'Yes' suggests the best data store - but always confirm the best appro
 
 Two separate limits apply:
 
-* **Channel activities** — A maximum of 10 channel activities per Orchestrated campaign (Email, SMS, Push, or Direct mail). Targeting and flow control activities do not count. Exceeding this limit when saving or publishing causes the operation to fail.
+* **Channel activities** — A maximum of 10 channel activities per Orchestrated campaign (Email, Mobile message, Push, or Direct mail). Targeting and flow control activities do not count. Exceeding this limit when saving or publishing causes the operation to fail.
 
 * **Canvas size** — Up to **500 activities** on the canvas. For maintainability, keep workflows under **100 activities** in practice.
 

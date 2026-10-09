@@ -76,7 +76,7 @@ Once that the file content is ready to be sent, close the simulate screen then c
 
 Before activating the direct mail campaign, make sure that the campaign or journey and the extraction file are configured properly. To do this, check alerts in the upper section of the editor. Some of them are simple warnings, but others can prevent you from sending the message. Two types of alerts can happen: warnings and errors.
 
-* **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your SMS message is empty.
+* **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your Mobile message is empty.
 
 * **Errors** prevent you from publishing the campaign, as long as they are not resolved. For example, an error message warns you when the subject line is missing.
 

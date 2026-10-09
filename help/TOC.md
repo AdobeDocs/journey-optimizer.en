@@ -660,7 +660,7 @@ nudge: yes
       + [In-app campaign report](using/reports/campaign-global-report-cja-inapp.md)
       + {hide-from-toc} [Live activity campaign report](using/reports/campaign-global-report-cja-activity.md)
       + [Push notification campaign report](using/reports/campaign-global-report-cja-push.md)
-      + [SMS campaign report](using/reports/campaign-global-report-cja-sms.md)
+      + [Mobile campaign report](using/reports/campaign-global-report-cja-sms.md)
       + [Web campaign report](using/reports/campaign-global-report-cja-web.md)
     + Journey reports {#journey-reporting}
       + [Journey reports](/help/rp_landing_pages/journey-reporting-landing-page.md)

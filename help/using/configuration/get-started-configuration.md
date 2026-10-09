@@ -68,7 +68,7 @@ To be able to send messages, you need to go through the configuration steps list
     <td><a href="../email/get-started-email-config.md"><img alt="email" src="../channels/assets/do-not-localize/email.png"></a>
     <div align="center"><a href="../email/get-started-email-config.md"><strong>Email</strong></a></div></td>
     <td><a href="../mobile/mobile-configuration.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
-    <div align="center"><a href="../mobile/mobile-configuration.md"><strong>SMS</strong></a></div></td>
+    <div align="center"><a href="../mobile/mobile-configuration.md"><strong>Mobile message</strong></a></div></td>
     <td><a href="../push/push-configuration.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
     <div align="center"><a href="../push/push-configuration.md"><strong>Push notification</strong></a></div></td>
     <td><a href="../direct-mail/direct-mail-configuration.md"><img alt="direct mail" src="../channels/assets/do-not-localize/direct-mail.jpg"></a>
@@ -96,7 +96,7 @@ To be able to send messages, you need to go through the configuration steps list
 
 1. Depending on the channels you are using, your environments and your needs, you must also perform the following steps:
 
-    * Subdomain configuration and delegation for your channels, such as [emails](about-subdomain-delegation.md), [SMS](../mobile/mobile-subdomains.md), [landing pages](../landing-pages/lp-subdomains.md), and [web experiences](../web/web-delegated-subdomains.md).
+    * Subdomain configuration and delegation for your channels, such as [emails](about-subdomain-delegation.md), [mobile message](../mobile/mobile-subdomains.md), [landing pages](../landing-pages/lp-subdomains.md), and [web experiences](../web/web-delegated-subdomains.md).
 
     * Set up IP warmup plans for optimal deliverability. [Learn more](ip-warmup-gs.md)
 
@@ -112,7 +112,7 @@ To be able to send messages, you need to go through the configuration steps list
 
 ## Additional resources
 
-* **[Configure channel surfaces](channel-surfaces.md)** - Learn how to set up and manage channel surfaces for email, push, SMS, and other channels.
+* **[Configure channel surfaces](channel-surfaces.md)** - Learn how to set up and manage channel surfaces for email, push, mobile message, and other channels.
 * **[Subdomain delegation](delegate-subdomain.md)** - Understand how to delegate subdomains to Adobe for email deliverability and branding.
 * **[IP warmup](ip-warmup-gs.md)** - Discover best practices for IP address warmup to improve email deliverability and sender reputation.
 * **[Manage suppression list](manage-suppression-list.md)** - Learn how to manage suppression lists to handle bounces and maintain list hygiene.

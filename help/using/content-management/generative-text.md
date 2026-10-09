@@ -48,7 +48,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to generate, refine, and finalize on-brand text content with Generate Content for email, web, landing page, push notification, and SMS channels in Adobe Journey Optimizer.
+**On this page:** Learn how to generate, refine, and finalize on-brand text content with Generate Content for email, web, landing page, push notification, and mobile channels in Adobe Journey Optimizer.
 
 >[!ENDSHADEBOX]
 
@@ -59,7 +59,7 @@ topic_v2:
 >
 >You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use Generate Content in Journey Optimizer. For more information, contact your Adobe representative.
 
-Use AI to generate engaging text content that resonates with your audience. Whether you need to enhance email copy, create compelling web content, craft persuasive landing page text, write push notification messages, or compose SMS messages, Generate Content helps you deliver impactful text.
+Use AI to generate engaging text content that resonates with your audience. Whether you need to enhance email copy, create compelling web content, craft persuasive landing page text, write push notification messages, or compose  messages, Generate Content helps you deliver impactful text.
 
 ## For Email and Web Channels {#email-web-channels}
 
@@ -150,21 +150,21 @@ Learn how to review the generated text, make refinements, and apply personalizat
 
 ## For mobile channels {#mobile-channels}
 
-Generate Content can generate compelling text content for your push notifications and SMS messages, helping you create engaging mobile communications that resonate with your audience across all mobile touchpoints.
+Generate Content can generate compelling text content for your push notifications and mobile messages, helping you create engaging mobile communications that resonate with your audience across all mobile touchpoints.
 
 ### Access and configure {#mobile-access-configure}
 
-Before you begin generating text with Generate Content for mobile channels, you must set up your campaign and access Generate Content. The access method varies slightly between push notifications and SMS messages.
+Before you begin generating text with Generate Content for mobile channels, you must set up your campaign and access Generate Content. The access method varies slightly between push notifications and mobile messages.
 
 1. Create and configure your mobile campaign:
    * **Push notifications**: After creating and configuring your push notification campaign, click **[!UICONTROL Edit content]**. [Learn more](../push/create-push.md)
-   * **SMS**: After creating and configuring your SMS campaign, click **[!UICONTROL Edit content]**. [Learn more](../mobile/create-mobile-message.md)
+   * **Mobile message**: After creating and configuring your mobile campaign, click **[!UICONTROL Edit content]**. [Learn more](../mobile/create-mobile-message.md)
 
 1. Fill in the **[!UICONTROL Basic details]** for your campaign. Once done, click **[!UICONTROL Edit content]**.
 
 1. Personalize your message as needed:
    * **Push notifications**: [Learn more](../push/design-push.md)
-   * **SMS**: [Learn more](../mobile/create-mobile-message.md)
+   * **Mobile message**: [Learn more](../mobile/create-mobile-message.md)
 
 1. Access the **[!UICONTROL Show Generate Content]** menu.
    

@@ -314,7 +314,7 @@ The `valueAtPath` helper assigns a value from a data path to a template variable
 
 ## Url {#url}
 
-The `url` helper is used to track links, shorten URLs and insert [deep links](../../email/deeplinks.md) in your SMS message content.
+The `url` helper is used to track links, shorten URLs and insert [deep links](../../email/deeplinks.md) in your mobile message content.
 
 **Syntax**
 

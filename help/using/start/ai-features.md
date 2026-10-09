@@ -192,7 +192,7 @@ The [Journey Create Agent](https://experienceleague.adobe.com/en/docs/experience
 * **Natural Language Journey Creation** - Describe your desired journey and have it created automatically
 * **Event- and Audience-Based Starts** - Create event-triggered, audience-based, business-event, or audience qualification journeys
 * **Conditional Logic** - Build split paths based on customer attributes or behavior
-* **Multi-Channel Messaging** - Add email, push, and SMS actions
+* **Multi-Channel Messaging** - Add email, push, and mobile actions
 * **Scheduling** - Configure start dates and timing between steps
 
 +++
@@ -245,7 +245,7 @@ The [Experimentation Agent](https://experienceleague.adobe.com/en/docs/experienc
 
 ## AI-Powered content generation {#content-generation}
 
-Use generative AI to create and personalize content across multiple channels, accelerating your content creation process while maintaining brand consistency. Generate Content is available for [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [SMS](../mobile/get-started-mobile.md), and [web](../web/get-started-web.md) experiences - helping you generate subject lines, body text, images, and complete message variations.
+Use generative AI to create and personalize content across multiple channels, accelerating your content creation process while maintaining brand consistency. Generate Content is available for [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [mobile messages](../mobile/get-started-mobile.md), and [web](../web/get-started-web.md) experiences - helping you generate subject lines, body text, images, and complete message variations.
 
 ### Key Features
 
