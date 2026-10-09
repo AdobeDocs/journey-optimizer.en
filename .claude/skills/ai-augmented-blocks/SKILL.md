@@ -21,6 +21,8 @@ body** — nothing imported from other pages, general product knowledge, or HTML
 >   status labels, no contractions, the banned-word list).
 > - `references/verification-round.md` — the **mandatory** independent adversarial fact-check
 >   that is the final quality gate. This is not optional and cannot be skipped.
+> - `references/acronyms.md` — the approved acronym list: which acronyms a block may name in
+>   Terminology (on the page body, or on the list) and which still need a writer's confirmation.
 > - `references/rebaseline.md` — how to re-verify existing blocks folder by folder and write
 >   their drift hashes (only after verification).
 > - `references/git-jira-tracking.md` — branch/commit/PR flow (ask the author before opening a

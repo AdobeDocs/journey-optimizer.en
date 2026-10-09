@@ -102,6 +102,10 @@ Limits, prerequisites, permissions, constraints stated on the page.
 ### 5. Terminology
 Canonical names, acronyms, variants, synonyms, disambiguation.
 
+- **Acronyms:** include one only if it is used on the page body or is on the approved list in
+  `acronyms.md` (use the expansion given there). Never invent one. If there is none, omit the
+  line; do not write `Acronym: n/a`. Acronyms marked "needs confirmation" in that file are not
+  used until a writer confirms them.
 - **Synonyms** (`"A" = "B"`) only for **true equivalents** — both forms must appear on the page
   meaning the same thing. Anything that is a *contrast* goes under **Do not confuse**
   (`"X" ≠ "Y"`), not Synonyms.
