@@ -25,7 +25,7 @@ For complete understanding, this information should be combined with the documen
 * **Unitary event**: An event linked to a specific profile that can be rule-based or system-generated *(product-specific)*
 * **Identity type**: The type of key used to identify the person associated to the event, previously known as namespace; only people-based identity types can be selected *(product-specific)*
 * **Profile identifier**: The field, or combination of fields, from the event payload that allows the system to identify the person associated to the event *(product-specific)*
-* **eventID**: The field required for system-generated events, automatically generated when creating the event; the system pushing the event should pass the one available in the payload preview *(product-specific)*
+* **eventID**: For system-generated events, the field automatically added to the list of selected fields so that Journey Optimizer can identify the event; the system pushing the event should not generate an ID and should use the one available in the payload preview *(product-specific)*
 * **Orchestration field group**: The field group that must be added to the XDM schema for system-generated events so the schema contains all information required to work with Journey Optimizer *(product-specific)*
 * **Advanced expression editor**: The editor you can switch to for creating more complex keys, such as a concatenation of two event fields *(product-specific)*
 
@@ -40,19 +40,19 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Unitary event — Acronym: n/a — variants: unitary event configuration
+* Canonical name: Configure a unitary event — Acronym: n/a — variants: none
 * Synonyms: "Identity type" = "namespace"
-* Do not confuse: "Rule Based" (defines a condition and does not generate an eventID) ≠ "System Generated" (requires an eventID automatically generated when creating the event)
+* Do not confuse: "Rule Based" (uses an Event ID condition, and all Experience Event schemas are available) ≠ "System Generated" (only schemas that have the eventID type field are available; the eventID field is automatically added to the selected fields)
 * Do not confuse: "Event ID condition" (rule used to identify events that trigger the journey) ≠ "Profile identifier" (key used to identify the person associated to the event)
 
 **FAQ:**
 
-* **Q: What are the two Event ID types for a unitary event?** — Rule Based, which defines a condition and does not generate an eventID, and System Generated, which requires an eventID automatically generated when creating the event.
+* **Q: What are the two Event ID types for a unitary event?** — Rule Based, which uses an Event ID condition, and System Generated, for which the eventID field is automatically added to the list of selected fields.
 * **Q: Is defining an identity type required?** — It is optional but recommended, as it allows you to leverage information stored in the Real-time Customer Profile Service; only a people-based identity type can be selected.
-* **Q: Why can two profiles not sit at the same place in a journey with the same key?** — A person cannot be at two different places in the same journey, so the system does not allow the same key to be at different places in the same journey.
+* **Q: Why does the system not allow the same key at different places in the same journey?** — A person cannot be at two different places in the same journey, so the system does not allow the same key to be at different places in the same journey.
 * **Q: What schemas are available for a System Generated event?** — Only schemas that have the eventID type field; for Rule Based events, all Experience Event schemas are available.
 * **Q: How do I preview the payload for a system-generated event?** — Save the event and re-open it first to generate an event ID, then use the View Payload icon to check the preview.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: bf9f8d81 -->
+<!-- ai-section-version: 1 | source-hash: 3c8e5ec1 -->
