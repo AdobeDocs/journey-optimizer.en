@@ -108,6 +108,10 @@ The following capability is coming to channels in this release.
 </tbody>
 </table>
 
+* **Business Performance Analysis skill** - Analyze journey performance and get concrete optimization recommendations directly in Adobe CX Enterprise Coworker chat. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
+
+  Availability date: October 7, 2026
+  
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -157,11 +161,9 @@ The following capability is coming to channels in this release.
 </tbody>
 </table>
 
-* **Hygiene Analysis skill** - CX Coworker can now scan your active and draft journeys for broken configurations, silent failures, and decaying or unused assets — such as stale draft journeys, orphaned data sources, and persistent custom action errors — and surface recommended fixes directly in chat. <!-- Documentation link: TBD -->
+* **Hygiene Analysis skill** - Coworker can now scan your active and draft journeys for broken configurations, silent failures, and decaying or unused assets — such as stale draft journeys, orphaned data sources, and persistent custom action errors — and surface recommended fixes directly in chat. <!-- Documentation link: TBD -->
 
 * **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
-
-* **Business Performance Analysis skill** - Analyze journey performance and get concrete optimization recommendations, right from the chat.
 
 * [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view.
 
@@ -183,7 +185,7 @@ The following capability is coming to channels in this release.
 
 >[!BEGINSHADEBOX]
 
-+++**New in CX Enterprise Coworker this month**
++++**New in Coworker this month**
 
 This release brings several new and improved [Coworker](../start/ai-features.md#cx-coworker) features and skills, listed here for visibility. Each one is also detailed in its relevant section below.
 
@@ -256,13 +258,13 @@ The following capabilities and improvements are coming to content management in 
 <table>
 <thead>
 <tr>
-<th><strong>Content Management MCP tools in CX Coworker</strong><br/></th>
+<th><strong>Content Management MCP tools in Coworker</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>CX Coworker now has a new set of <strong>Content Management MCP tools</strong>, letting you discover and manage Journey Optimizer content assets through natural language prompts. Ask it to list or retrieve content templates, fragments, landing pages, and journey/campaign inline message content. It can also create content, update templates, and create, update, clone, and publish fragments — plus update inline channel action content directly in journey and campaign.</p>
+<p>Coworker now has a new set of <strong>Content Management MCP tools</strong>, letting you discover and manage Journey Optimizer content assets through natural language prompts. Ask it to list or retrieve content templates, fragments, landing pages, and journey/campaign inline message content. It can also create content, update templates, and create, update, clone, and publish fragments — plus update inline channel action content directly in journey and campaign.</p>
 <p>For more information, refer to the <a href="../content-management/content-management-coworker-skills.md#content-management">detailed documentation</a>.</p>
 <p>Availability date: September 3, 2026</p>
 </td>
@@ -474,7 +476,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 8, 2026
 
-* **Analyze Journey Anomalies skill** - CX Coworker can now detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts against historical baselines using the **Analyze Journey Anomalies** skill. Once a real anomaly is confirmed, the skill runs read-only diagnostics to surface a likely root cause and recommendation. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
+* **Analyze Journey Anomalies skill** - Coworker can now detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts against historical baselines using the **Analyze Journey Anomalies** skill. Once a real anomaly is confirmed, the skill runs read-only diagnostics to surface a likely root cause and recommendation. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
 
   Availability date: September 2, 2026
 
@@ -738,7 +740,7 @@ The following capabilities and improvements are coming to decisioning in this re
 <tbody>
 <tr>
 <td>
-<p>A new <strong>Decisioning Explainer</strong> skill in CX Coworker lets you ask, in natural language, why a specific offer was or wasn't shown to a profile or segment, tracing eligibility, capping, ranking, and the candidate pool involved in the decision.</p>
+<p>A new <strong>Decisioning Explainer</strong> skill in Coworker lets you ask, in natural language, why a specific offer was or wasn't shown to a profile or segment, tracing eligibility, capping, ranking, and the candidate pool involved in the decision.</p>
 <p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md#decisioning-explainer">detailed documentation</a>.</p>
 <p>Availability date: September 16, 2026</p>
 </td>
@@ -755,7 +757,7 @@ The following capabilities and improvements are coming to decisioning in this re
 <tbody>
 <tr>
 <td>
-<p>A new <strong>Rules &amp; Ranking</strong> skill in CX Coworker lets you create, explain, simulate, and optimize eligibility rules and ranking formulas using natural language, without writing or validating PQL syntax by hand.</p>
+<p>A new <strong>Rules &amp; Ranking</strong> skill in Coworker lets you create, explain, simulate, and optimize eligibility rules and ranking formulas using natural language, without writing or validating PQL syntax by hand.</p>
 <p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md#rules-ranking">detailed documentation</a>.</p>
 <p>Availability date: September 16, 2026</p>
 </td>
