@@ -20,15 +20,16 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 * **Dry run**: A special journey publication mode that executes the journey against real production data without sending any communications or updating profile information *(product-specific)*
-* **stepEvent**: An automatically generated dataset record capturing every step a profile takes in a journey; Dry run step events carry `inDryRun=true` and a `dryRunID` *(product-specific)*
-* **inDryRun flag**: A boolean field on stepEvents that is `true` for Dry run executions and `null` for live or test journeys *(product-specific)*
+* **stepEvent**: Journey step events; Journey Dry run generates stepEvents that have a specific flag, `inDryRun`, and a Dry run ID, `dryRunID` *(product-specific)*
+* **inDryRun flag**: A flag on stepEvents that is `true` for Dry run executions and `null` for live or test journeys *(product-specific)*
 
 **Guardrails:**
-* Only Draft journeys with no errors can be activated in Dry run mode
+* The Dry run capability can be used in any Draft journey with no error
 * Starting a Dry run requires the **Publish journeys** permission; stopping it requires **Manage journeys**
-* Dry run journeys automatically exit Dry run mode and return to Draft status after 14 days. No journey content is lost; only the Dry run session ends.
-* Profiles processed during a Dry run are counted towards Engageable Profiles and the live journey quota
-* Channel action nodes (Email, SMS, Push) and Custom actions are not executed during Dry run
+* Dry run journeys automatically exit Dry run mode and return to Draft status after 14 days.
+* Profiles in Dry run mode are counted towards Engageable Profiles; journeys in Dry run mode are counted towards the live journey quota
+* Channel action nodes (Email, SMS, Push) are not executed during Dry run; Custom actions are disabled and their responses are set to null
+* Data sources (including external data sources) and Wait activities are disabled by default during Dry run; this behavior can be changed when activating the Dry run mode
 * Jump actions are not enabled in Dry run
 * Reaction nodes are not executed during Dry run; profiles exit successfully, with priority rules for parallel unitary and reaction branches
 * Reporting data is only available while the Dry run is active; once stopped, the data is no longer accessible
@@ -36,16 +37,19 @@ For complete understanding, this information should be combined with the documen
 * For journeys using a **Read Audience** activity with a scheduled time (daily, weekly, or monthly), the Dry run does not follow the configured journey schedule — the schedule is anchored to the moment Dry run was activated (e.g. journey set to 10 AM, Dry run activated at 8 AM → all reads during Dry run execute at 8 AM)
 
 **Terminology:**
-* Canonical name: Journey Dry run — Acronym: none — variants: dry run mode, Dry run publication mode
-* Synonyms: "Dry run" = "smoke test" (informally)
-* Do not confuse: "Dry run" ≠ "Test mode" ≠ "Simulation" — Dry run uses real production data and counts toward Engageable Profiles and live journey quota; Test mode uses persistent AEP test profiles in a draft journey; Simulation uses temporary simulated users that do not persist in AEP
+* Canonical name: Journey Dry run — Acronym: none — variants: Dry run mode, Dry run publication
+* Do not confuse: "Dry run" mode ≠ "Draft" status — a journey enters Dry run mode from a Draft journey and transitions to Draft status after 14 days or when stopped manually
+* Do not confuse: "Dry run" ≠ "Journey Simulation" ≠ "Journey Test mode" — the page states that, unlike Journey Simulation and Journey Test mode, Dry run uses the real production audience without contacting anyone; the page links to a comparison of all three validation options
+* Do not confuse: "inDryRun" ≠ "dryRunID" — `inDryRun` is the flag that is `true` for Dry run executions; `dryRunID` is the ID of the Dry run instance
 
 **FAQ:**
-* **Q: Does Dry run actually send emails or push notifications to customers?** — No; all channel action nodes and custom actions are disabled and not executed during a Dry run.
+* **Q: Does Dry run actually send emails or push notifications to customers?** — No; channel action nodes (Email, SMS, Push) are not executed, and custom actions are disabled with their responses set to null.
 * **Q: How long does a Dry run last before it automatically stops?** — 14 days, after which the journey automatically transitions back to Draft status.
-* **Q: How do I exclude Dry run data from my journey analytics queries?** — Filter out step events where `inDryRun` is `true`; include only events where `inDryRun` is `null` or `false`.
-* **Q: Are profiles counted against any limits during a Dry run?** — Yes; profiles are counted towards Engageable Profiles and the Dry run journey is counted towards the live journey quota.
+* **Q: How do I exclude Dry run data from my journey reporting metrics?** — When analyzing journey reporting metrics with Query service, exclude step events where `inDryRun` is `true`; include only events where `inDryRun` is `null` or `false`.
+* **Q: Do Dry run profiles and journeys count towards quotas?** — Yes; profiles in Dry run mode are counted towards Engageable Profiles, and journeys in Dry run mode are counted towards the live journey quota.
 * **Q: Can I enable Wait activities and external data source calls during a Dry run?** — Both are disabled by default, but you can choose to enable or disable them when activating the Dry run.
 * **Q: Does Dry run respect the scheduled execution time configured in a Read Audience journey?** — No. The Dry run anchors the schedule to the activation time, not the configured journey time. If the journey is set to run at 10 AM but Dry run is activated at 8 AM, all scheduled reads during Dry run execute at 8 AM.
 
 +++
+
+<!-- ai-section-version: 2 | source-hash: 8c8ab63f -->
