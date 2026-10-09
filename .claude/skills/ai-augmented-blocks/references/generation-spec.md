@@ -148,13 +148,15 @@ deliberately.
   "this is safe" that the page does not make.
 - **Informal synonyms.** A phrase used once as a verb or in passing (for example "smoke test")
   is not a synonym for a feature name.
-- **"<channel> activity" in journeys.** In journeys, a channel is added through the **Action
-  activity** as a channel action; the legacy native channel activities (Email, Push, SMS, In-app,
-  Web, Code-based experience, Content Card) are deprecated. Write "<channel> action" (for example
-  "Push action"), never "<channel> activity", even when the page body still says "activity":
-  report that wording under **Gaps found** so the page is fixed. Statements that the legacy
-  activities are deprecated stay as they are. Orchestrated campaigns do use "channel activities";
-  do not change those.
+- **"<channel> action" or "<channel> activity" in journeys.** There are no built-in single
+  channel actions and no per-channel activities. In journeys there is ONE **Action activity**:
+  the user drags it onto the canvas and selects the channel. Write "an Action activity with the
+  Email channel selected" or "the Email channel", never "the Email action", "Email activity" or
+  "built-in Email action", even when the page body still says so: report that wording under
+  **Gaps found** so the page is fixed. In campaigns the user chooses the channel in the
+  campaign's Actions section; keep that wording. Statements that the legacy native channel
+  activities (Email, Push, SMS, In-app, Web, Code-based experience, Content Card) are deprecated
+  stay as they are. Orchestrated campaigns do use "channel activities"; do not change those.
 - **FAQ drift.** FAQ questions and answers reuse the page's nouns and verbs ("reporting
   metrics", "quotas"), not paraphrases such as "analytics queries" or "limits".
 

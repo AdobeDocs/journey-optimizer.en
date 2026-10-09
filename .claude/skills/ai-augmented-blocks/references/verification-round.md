@@ -44,8 +44,9 @@ a batch of pages, one verifier subagent can cover the whole folder.
   unless verbatim on the page. UI strings preserved exactly.
 - **Common generation errors.** Also check the list in `generation-spec.md` ("Common generation
   errors"): imported contrasts, wrong category labels (mode versus status), merged facts or
-  behaviours, "only" versus "any", invented link titles, added reassurance, informal synonyms, and "<channel> activity" in
-  journeys (must be "<channel> action"; see `generation-spec.md`).
+  behaviours, "only" versus "any", invented link titles, added reassurance, informal synonyms, and "<channel> action" or
+  "<channel> activity" in journeys (must be an Action activity with the channel selected; see
+  `generation-spec.md`).
 - **Structure.** Two fixed opening paragraphs intact and verbatim; six sections present and in
   order where the page supports them; sync comment present.
 
