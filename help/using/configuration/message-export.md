@@ -64,6 +64,8 @@ With this feature, the content of email and mobile messages sent via [!DNL Journ
 
 Records are then retained in the dataset for seven calendar days from ingestion, during which you can export them out to the external system of your choice.
 
+For a comparison of Message Export and BCC email, and the limitations of mirror pages and the Entity Dataset for archiving, see [Get started with message archiving](archiving-overview.md).
+
 Message Export is a supported alternative when you need to review or retain the exact content sent to an individual — for example, for customer-care, compliance, or downstream-system use cases. It does not generate or return a mirror page URL; it exports the sent message content and related metadata so your organization can store and display the information in its own systems.
 
 ➡️ For common questions and answers, see the [Message Export FAQ](#message-export-faq).
