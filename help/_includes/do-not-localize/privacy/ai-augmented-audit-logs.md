@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Audit logs**: records that capture actions performed by users in the system on services and capabilities such as journeys, messages, and landing pages, stored with metadata and accessible in Adobe Experience Platform *(product-specific)*
+* **Audit logs**: records that capture actions performed by users in the system on services and capabilities such as journeys, messages, and landing pages, recorded with metadata and accessible in Adobe Experience Platform *(product-specific)*
 * **[!DNL View User Activity Log]**: the permission that must be granted to view and export audit logs *(product-specific)*
 * **[!UICONTROL Download log]**: the button used to download the CSV file *(product-specific)*
 * **Decision management audit logs**: audit logs related to decision management, which are only visible from the downloaded CSV file *(product-specific)*
@@ -35,7 +35,6 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Audit logs
-* Do not confuse: "Audit logs" (record of user actions on resources) ≠ "[!UICONTROL Download log]" (the button used to download decision management audit logs as a CSV file)
 
 **FAQ:**
 
@@ -46,4 +45,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 22dbff2e -->
+<!-- ai-section-version: 1 | source-hash: 49c10ea3 -->

@@ -17,7 +17,7 @@ For complete understanding, this information should be combined with the documen
 * Check a profile's push opt-out status in Adobe Experience Platform
 * Understand how consent is handled through the Experience Platform Consent schema
 * Implement personalization consent in decision management and campaigns
-* Use the segment rule builder or a split activity to filter out profiles that have not consented to personalization
+* Use the segment rule builder or a split activity in a composition workflow to filter out profiles that have not consented to personalization
 
 **Glossary:**
 
@@ -39,7 +39,7 @@ For complete understanding, this information should be combined with the documen
 * Consent for having profile data used in data modeling is not supported yet in Journey Optimizer
 * The personalization editor does not perform any consent checks or enforcement, as it is not involved in the delivery of messages
 * The Journey Optimizer campaign object itself does not perform any additional consent policy enforcement checks at this time
-* The message preview and email rendering service mask the fields identified with sensitive information
+* The use of right-based access control labels restricts which fields can be used for personalization; the message preview and email rendering service mask the fields identified with sensitive information
 
 **Terminology:**
 
@@ -55,8 +55,8 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do you check whether a profile has opted out of push?** — In Adobe Experience Platform, open the profile, go to the [!UICONTROL Attributes] tab, and look at the [!UICONTROL Push Notification Details] field group; the presence of a push token indicates implicit consent, and no token indicates opt-out at the device level.
 * **Q: How is consent handled by default?** — Through the Experience Platform Consent schema, where the default empty value is treated as consent; this can be changed at onboarding or overridden with consent policies.
 * **Q: Is consent for data modeling supported?** — No, consent for having profile data used in data modeling is not supported yet in Journey Optimizer.
-* **Q: How do you enforce personalization consent for a campaign?** — Include consent policy definitions as part of audience creation, or build an audience with the segment rule builder or a split activity to filter out profiles that have not consented to personalization.
+* **Q: How do you manually enforce personalization consent in campaigns?** — Use the segment rule builder, or add a split activity to a composition workflow, to create an audience that filters out profiles that have not given consent to personalization. The page also states that you can include consent policy definitions as part of the audience creation so the selected audience has already filtered out profiles that do not match the consent criteria.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 444221fd -->
+<!-- ai-section-version: 1 | source-hash: 95212c78 -->
