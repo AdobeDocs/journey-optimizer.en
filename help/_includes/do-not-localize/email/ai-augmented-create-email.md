@@ -9,11 +9,11 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to create an email in Journey Optimizer by adding an Email action to a journey or campaign, defining its subject and content in the Email Designer, resolving alerts, optimizing HTML size, and previewing before sending.
+* **TL;DR:** This page explains how to create an email in Journey Optimizer by adding an Action activity with the Email channel selected to a journey, or by creating a campaign with the Email channel, defining its subject and content in the Email Designer, resolving alerts, optimizing HTML size, and previewing before sending.
 
 **Intents:**
 
-* Add an Email action to a journey or a campaign
+* Add an Action activity with the Email channel to a journey, or create a campaign with the Email channel
 * Define the email subject line and body with the Email Designer
 * Enable decisioning to add decision policies to an email
 * Resolve warning and error alerts before testing or activating
@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Email action**: The channel action added to a journey or campaign that sends an email when profiles reach that step *(product-specific)*
+* **Email channel**: The channel selected in the Action activity of a journey, or in a campaign, to send an email when profiles reach that step *(product-specific)*
 * **Email Designer**: The Journey Optimizer editor used to build and personalize the email body *(product-specific)*
 * **Optimize HTML size**: An option that compresses the email HTML at publication time (removing unnecessary whitespace and indentation) to reduce size and avoid clipping *(product-specific)*
 * **Alerts**: In-interface messages raised when key settings are missing — Warnings (recommendations/best practices) and Errors (blocking issues) *(product-specific)*
@@ -41,13 +41,13 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Email action — Acronym: n/a — variants: email activity, email channel action
+* Canonical name: Email channel — Acronym: n/a
 * Do not confuse: "Warnings" (recommendations/best practices; do not block testing or activation) ≠ "Errors" (must be resolved before testing or activating)
 * Do not confuse: "Simulate content" (test variations with sample input data or AI auto-generation) ≠ "Simulate content (AEP profiles)" (preview with test profiles, send proofs, and check email rendering)
 
 **FAQ:**
 
-* **Q: How do I create an email?** — Add an Email action to a journey or a campaign, select or create an email configuration, then define the subject and body in the Email Designer.
+* **Q: How do I create an email?** — Add an Action activity with the Email channel to a journey, or create a campaign with the Email channel, then select or create an email configuration, then define the subject and body in the Email Designer.
 * **Q: Are the legacy native email/push/SMS journey activities still usable?** — They are deprecated as of the March 2026 release, but existing journeys using them continue to work without changes and no migration is required.
 * **Q: Why can I not test or activate my journey or campaign?** — All error alerts (such as a missing subject line, an empty email version, or a deleted configuration) must be resolved first; warnings do not block testing or activation.
 * **Q: What does the Optimize HTML size option do, and is it automatic?** — It compresses the email HTML at publication time by removing unnecessary whitespace and indentation, which helps avoid email clipping (some clients such as Gmail truncate messages over ~100 KB). It is not automatic — you must enable it manually.

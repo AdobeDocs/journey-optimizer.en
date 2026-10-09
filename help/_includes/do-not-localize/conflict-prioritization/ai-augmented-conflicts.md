@@ -21,7 +21,8 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Conflict detection tool**: Tool that identifies potential overlaps in journeys and campaigns, such as timelines, audience overlap, and channel configurations *(product-specific)*
+* **[!UICONTROL Potential conflicts]**: Window that opens from the button and shows all elements overlapping the current journey or campaign; you can open an overlapping journey or campaign by selecting its name *(product-specific)*
+* **Conflict viewer**: The place where live or scheduled journeys and campaigns that may overlap are listed *(product-specific)*
 * **[!UICONTROL View Potential Conflicts]**: Button in the journey or campaign properties that opens the potential conflicts window *(product-specific)*
 * **Unitary journey**: A journey type for which other journeys that start with the same event are displayed as potential conflicts *(product-specific)*
 * **Capping Rule Set**: An overlap area that identifies which journey types are capped and whether there is overlap within those *(product-specific)*
@@ -30,7 +31,7 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Conflicts are shown only for live or scheduled campaigns and journeys.
-* The [!UICONTROL View Potential Conflicts] button becomes available only after you assign at least one of [!UICONTROL Start / end date], [!UICONTROL Audience], [!UICONTROL Channel], [!UICONTROL Channel configuration], or [!UICONTROL Rule set], and it stays unselectable until changes are saved.
+* The [!UICONTROL View Potential Conflicts] button becomes available as soon as you assign any of [!UICONTROL Start / end date], [!UICONTROL Audience], [!UICONTROL Channel], [!UICONTROL Channel configuration], and [!UICONTROL Rule set]; select [!UICONTROL Save] after assigning them, as the button is not selectable until changes are saved.
 * Newly published journeys and campaigns may take up to 3-7 minutes to appear in the conflict viewer, due to caching.
 * For a unitary journey, other journeys that start with the same event are displayed, as that event triggers all such journeys.
 * For an Audience qualification or a Read Audience/Business Event journey, all other journeys of the same type with a valid audience are displayed.
@@ -38,18 +39,17 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: conflict detection — Acronym: n/a — variants: conflict detection tool, potential conflicts, View Potential Conflicts
+* Canonical name: potential conflicts — Acronym: n/a — variants: conflict viewer, View Potential Conflicts
 * Synonyms: none
-* Do not confuse: "conflict detection" (spots overlapping journeys and campaigns) ≠ "priority scores" (decides which communication takes precedence) ≠ "rule sets" (limit how often and how many messages are sent)
 
 **FAQ:**
 
 * **Q: Which journeys and campaigns appear in the conflict viewer?** — Only live or scheduled journeys and campaigns.
-* **Q: Why is the [!UICONTROL View Potential Conflicts] button unavailable?** — It becomes available only after you assign at least one of start/end date, audience, channel, channel configuration, or rule set, and after you save.
+* **Q: Why is the [!UICONTROL View Potential Conflicts] button unavailable?** — It becomes available as soon as you assign any of start/end date, audience, channel, channel configuration, and rule set; select Save after assigning them, as the button is not selectable until changes are saved.
 * **Q: Why does a newly published item not show as a conflict yet?** — Newly published journeys and campaigns can take up to 3-7 minutes to appear, due to caching.
 * **Q: How can I reduce identified conflicts?** — Adjust start/end dates, refine audience targeting, implement frequency caps, reduce the number of active journeys, or set priorities on inbound actions.
 * **Q: Do campaigns conflict with journeys?** — Campaigns can conflict with segment-triggered journeys that start with a Read audience activity, and live or scheduled campaigns can conflict with one another due to audience overlap.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: be63a7cf -->
+<!-- ai-section-version: 1 | source-hash: c6579151 -->

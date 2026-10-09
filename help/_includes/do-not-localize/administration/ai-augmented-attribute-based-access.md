@@ -17,15 +17,15 @@ For complete understanding, this information should be combined with the documen
 * Apply a label to a schema field in Adobe Experience Platform to enforce access restrictions
 * Use a labeled schema field in a Journey Optimizer journey
 * Understand how users without the required label experience access restrictions in journeys
-* Manage Roles, Policies, and Products via the attribute-based access control API
+* Know that Roles, Policies, and Products can also be accessed with the attribute-based access control API
 
 **Glossary:**
 
-* **ABAC (Attribute-based access control)**: A capability to define authorizations to manage data access for specific teams or groups of users based on attributes such as labels *(product-specific)*
+* **ABAC (Attribute-based access control)**: A capability that allows you to define authorizations to manage data access for specific teams or groups of users, protecting sensitive digital assets from unauthorized users *(product-specific)*
 * **Role**: A set of users sharing the same permissions, labels, and sandboxes within an organization *(product-specific)*
-* **Label**: A governance marker (e.g., C2) applied to schema fields, datasets, or audiences to control which roles can access them *(product-specific)*
-* **Policy**: A configuration that must be created before managing permissions for a role — prerequisite for ABAC *(product-specific)*
-* **XDM schema**: Experience Data Model schema used to define data structure in Adobe Experience Platform *(product-specific)*
+* **Label**: A label (for example, C2 - Data cannot be exported to a third-party) assigned to a schema field and granted to a Role; the page also states that a Label can be added to Schema, Datasets, and Audiences *(product-specific)*
+* **Policy**: A policy must be created before managing permissions for a role *(product-specific)*
+* **XDM schema**: Experience Data Model schema; the page says attribute-based access control can grant specific access to XDM schemas *(product-specific)*
 
 **Guardrails:**
 
@@ -35,18 +35,17 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Attribute-based access control — Acronym: ABAC — variants: attribute-based access management
+* Canonical name: Attribute-based access control
 * Canonical name: Experience Data Model — Acronym: XDM — variants: XDM schema, XDM schemas
-* Synonyms: "Label" = "governance label" = "data governance label"
-* Do not confuse: "Role" (a group of users with shared permissions and labels) ≠ "Policy" (rules governing enforcement of data access based on labels)
-* Do not confuse: ABAC (controls access to schema fields, datasets, and audiences via label policies at the platform level) ≠ OLAC (controls access to specific Journey Optimizer objects like journeys and campaigns)
+* Synonyms: "Label" = "governance label" (the page uses the **Edit governance labels** option for labels)
+* Do not confuse: "Role" (a set of users that share the same permissions, labels, and sandboxes) ≠ "Policy" (the page only states that a policy must be created before managing permissions for a role)
 
 **FAQ:**
 
-* **Q: Can labels be added to built-in roles?** — Yes, labels can be added to both custom and built-in roles.
-* **Q: What happens to a user who lacks the label for a restricted field in a journey?** — The field is not visible to them; they cannot edit expressions referencing it, test the journey, or publish the journey.
-* **Q: Can labels be applied to objects other than schema fields?** — Yes; labels can also be applied to schemas, datasets, and audiences.
+* **Q: Can labels be added to built-in roles?** — Yes, you can also add a Label to built-in roles, and you can create your own Roles.
+* **Q: What happens to a user who lacks the label for a restricted field in a journey?** — The restricted field name is not visible to them, they cannot edit the expression with it in advanced mode (the error `The expression is invalid. Field is no longer available or you do not have enough permission to see it` appears), they cannot test the journey, and they cannot publish the journey. They can delete the expression.
+* **Q: Can labels be applied to objects other than schema fields?** — Yes; the page states you can also add a Label to Schema, Datasets, and Audiences.
 * **Q: Is there an API for managing roles, policies, and products with ABAC?** — Yes; Roles, Policies, and Products can be accessed via the attribute-based access control API.
 
 +++
-<!-- ai-accordion-version: 1 | source-hash: aa94c226 -->
+<!-- ai-accordion-version: 1 | source-hash: 49ef3ad5 -->

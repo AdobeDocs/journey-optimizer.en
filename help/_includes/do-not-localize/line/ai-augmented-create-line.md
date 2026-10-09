@@ -9,19 +9,19 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to add a LINE action to a journey or a campaign and build personalized LINE content, including text, stickers, images, videos, locations, templates, and Flex Messages, by editing the JSON content in the personalization editor.
+* **TL;DR:** This page explains how to send a LINE message from a journey, by adding an Action activity with the LINE channel selected, or from a campaign, and build personalized LINE content, including text, stickers, images, videos, locations, templates, and Flex Messages, by editing the JSON content in the personalization editor.
 
 **Intents:**
 
-* Add a LINE action to a journey or to a campaign
-* Choose or create a LINE configuration for the action
+* Add an Action activity with the LINE channel to a journey, or create a campaign with the LINE channel
+* Choose or create a LINE configuration for the channel
 * Define LINE content across the supported message types
 * Edit the JSON content and add personalization and dynamic content in the personalization editor
 * Preview and simulate the LINE message before sending
 
 **Glossary:**
 
-* **LINE action**: The channel action added to a journey or a campaign to deliver a LINE message *(product-specific)*
+* **LINE channel**: The channel selected in the Action activity of a journey, or in a campaign, to deliver a LINE message *(product-specific)*
 * **Flex Messages**: JSON-based LINE messages that allow complex layouts with rich content *(product-specific)*
 * **Stickers**: LINE's native stickers that can be incorporated into a message *(product-specific)*
 * **Edit content**: The button used to start designing and configuring the content of the LINE message *(product-specific)*
@@ -32,7 +32,7 @@ For complete understanding, this information should be combined with the documen
 * LINE message types can be configured by editing the JSON content directly.
 * The configuration field is pre-filled, by default, with the last configuration used for that channel by the user.
 * The LINE message is sent to the audience once you have performed your tests and validated the content.
-* When adding a LINE action to a campaign, the campaign type is either Scheduled - Marketing or API-triggered - Marketing/Transactional.
+* When creating a LINE campaign, the campaign type is either Scheduled - Marketing or API-triggered - Marketing/Transactional.
 * In the Action triggers menu, the Frequency of the LINE message can be Once, Daily, Weekly, or Month.
 
 **Terminology:**

@@ -9,41 +9,41 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** Access control in Journey Optimizer is built on roles, permissions, and sandboxes managed through Adobe CX Enterprise Permissions, with additional layers of object-based access control (OLAC) and attribute-based access control (ABAC) for fine-grained data protection.
+* **TL;DR:** Access control in Journey Optimizer is built on roles, permissions, and sandboxes managed through Adobe CX Enterprise Permissions, with object-based access control and attribute-based access control also listed as key concepts.
 
 **Intents:**
 
 * Understand the five core access control concepts: roles, permissions, sandboxes, object-based access control, and attribute-based access control
 * Know who can configure access control (system or product administrator)
 * Navigate to the right documentation section for each access control topic
-* Plan an access control strategy for the organization
+* Plan how to grant users the right access by learning the core access control concepts
 
 **Glossary:**
 
-* **Roles**: Collections of users sharing the same permissions and sandboxes; pre-existing built-in roles are available, and custom roles can be created *(product-specific)*
+* **Roles**: A collection of users who share the same permissions and sandboxes; with Journey Optimizer, you can choose from a range of pre-existing Roles, each with varying levels of permissions *(product-specific)*
 * **Permissions**: Unitary rights defining the authorizations assigned to Roles, grouped under resources such as Journey or Offers *(product-specific)*
-* **Sandboxes**: Virtual environments partitioning the Journey Optimizer instance into separate, isolated virtual workspaces; assigned through roles in Permissions *(product-specific)*
-* **Object-based access control**: Labels applied to specific Journey Optimizer objects (journeys, campaigns, offers) to restrict access to authorized users *(product-specific)*
-* **Attribute-based access control**: Policies controlling access to objects or capabilities based on attributes such as labels added to schema fields or segments *(product-specific)*
+* **Sandboxes**: Virtual sandboxes partition instances into separate, isolated virtual environments; Sandboxes are assigned through roles in Permissions *(product-specific)*
+* **Object-based access control**: Labels to limit the access to an object; this approach protects sensitive digital assets from unauthorized users and ensures further protection of personal data *(product-specific)*
+* **Attribute-based access control**: Authorizations to manage data access for specific teams or groups of users; it enables administrators to control access to specific objects and/or capabilities based on attributes, which can be metadata added to an object, such as a label added to a schema field or segment *(product-specific)*
 
 **Guardrails:**
 
-* Configuring access control requires system or product administrator privileges (prerequisite)
+* Configuring access control requires system or product administrator privileges (prerequisite); system administrators have no restrictions
 * The minimum role that can grant or withdraw permissions is a product administrator (as stated on the page)
 
 **Terminology:**
 
-* Canonical name: Attribute-based access control — Acronym: ABAC — variants: attribute-based access management
-* Canonical name: Object-based access control — Acronym: OLAC — variants: object-level access control, object-based access management
-* Do not confuse: "Object-based access control" (restricts access to specific AJO objects like journeys, campaigns, and offers using labels) ≠ "Attribute-based access control" (restricts access to data attributes like schema fields and segments based on label policies)
+* Canonical name: Attribute-based access control — variants: Attribute-based access management (link text on the page)
+* Canonical name: Object-based access control — variants: Object-based access management (link text on the page)
+* Do not confuse: "Object-based access control" (labels to limit the access to an object) ≠ "Attribute-based access control" (access based on attributes, which can be metadata added to an object, such as a label added to a schema field or segment)
 * Do not confuse: "Roles" (a collection of users with shared permissions and sandboxes) ≠ "Permissions" (the unitary rights grouped under resources that are assigned to roles)
 
 **FAQ:**
 
 * **Q: Who can configure access control in Journey Optimizer?** — Users with system administrator or product administrator privileges.
 * **Q: What is the minimum administrator level required to grant or withdraw permissions?** — Product administrator.
-* **Q: Are sandboxes managed independently of roles?** — No; sandboxes are assigned through roles in the Permissions product.
-* **Q: Where is access control for Journey Optimizer managed?** — Through Permissions in Adobe CX Enterprise, which links users with permissions and sandboxes via roles and policies.
+* **Q: Are sandboxes managed independently of roles?** — The page states that Sandboxes are assigned through roles in Permissions.
+* **Q: Where is access control for Journey Optimizer managed?** — Through Permissions in Adobe CX Enterprise; this functionality leverages roles and policies, which link users with permissions and sandboxes.
 
 +++
-<!-- ai-accordion-version: 1 | source-hash: 14be1dc6 -->
+<!-- ai-accordion-version: 1 | source-hash: d4984095 -->

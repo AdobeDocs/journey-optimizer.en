@@ -38,7 +38,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: WhatsApp channel — Acronym: n/a — variants: WhatsApp, WhatsApp action
+* Canonical name: WhatsApp channel — Acronym: n/a — variants: WhatsApp
 * Do not confuse: "BSP" (third-party Business Service Provider, not allowed by the native integration) ≠ "Cloud API" (Meta's API used for the native integration)
 
 **FAQ:**

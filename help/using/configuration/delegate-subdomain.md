@@ -259,6 +259,12 @@ These steps are performed by Adobe and can take **up to 3 hours**.
     
 1. **Create and attach CDN SSL certificate**: Adobe creates the CDN certificate for the CDN domain and attaches the certificate to the CDN domain.
 
+    >[!CAUTION]
+    >
+    >Adobe uses a shared multi-SAN (Subject Alternative Name) SSL certificate for delegated subdomains. A CAA (Certificate Authority Authorization) or DNS validation issue on any included domain can fail the entire CDNProvisioningStep, even if the new subdomain's DNS is correct.
+    >
+    >Before delegating, check all subdomains sharing the certificate: required DNS validation records must be correct and available, and CAA records, if present, must allow issuance by Adobe's certificate authority.
+
 1. **Create forward DNS**: if this is the first subdomain that you are delegating, Adobe will create the forward DNS which is required to create PTR records - one for each of your IPs.
 
 1. **Create PTR record**: PTR record, also known as reverse DNS record, is required by the ISPs so that they do not mark the emails as spam. Gmail also recommends having PTR records for each IP. Adobe creates PTR records only when you delegate a subdomain for the first time, one for each IP, all IPs pointing that subdomain. For example, if the IP is *192.1.2.1* and the subdomain is *email.example.com*, the PTR record will be: *192.1.2.1  PTR r1.email.example.com*. You can update the PTR record afterwards to point to the new delegated domain. [Learn more about PTR records](ptr-records.md)

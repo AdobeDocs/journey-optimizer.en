@@ -31,7 +31,7 @@ For complete understanding, this information should be combined with the documen
 
 * Web tracking requires explicit configuration; you must select the specific elements (buttons, images, links) you want to track when authoring a web page.
 * Push tracking requires mobile SDK implementation; ensure your app has the Adobe Experience Platform Mobile SDK properly configured.
-* For push action buttons, you can include up to 3 buttons on Android or multiple buttons on iOS, each with independent tracking.
+* For push notification buttons, you can include up to 3 buttons on Android or multiple buttons on iOS, each with independent tracking.
 * SMS URL shortening requires that you first configure an SMS subdomain before links can be automatically shortened and tracked.
 * Code-based experience tracking requires implementation setup, including a datastream configured for Adobe Experience Platform and event collection using Web SDK or Mobile SDK.
 * To track decisioning in code-based experiences, your implementation must send proposition interaction events (displays and clicks) to Adobe Experience Platform using Web SDK or Mobile SDK.

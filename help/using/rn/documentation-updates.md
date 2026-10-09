@@ -35,6 +35,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Manage allowed IPs** page now clarifies that changes to the allowed list are cached and can take up to one hour to be enforced, whether you add, edit, or remove IPs. [Read more](../configuration/waf-ip-allowlist.md#waf-ip-allowlist-add)
 
+* The **Add constraints to an offer** page now clarifies that Edge Decisioning frequency capping is enforced only in edge regions associated with your Organization's hub region, and that profile counters are not shared across edge regions. A VA7 example and guidance for global audiences have been added. [Read more](../offers/offer-library/add-constraints.md#frequency-capping)
+
+* The **Delegate a subdomain** page now clarifies that CAA or DNS validation record issues on any domain sharing a multi-SAN SSL certificate can block certificate provisioning, even when the new subdomain's DNS records are correct. Guidance has been added for checking DNS validation records and CAA configuration across all subdomains sharing the certificate. [Read more](../configuration/delegate-subdomain.md#subdomain-validation)
+
 ## September 2026 {#september-2026}
 
 * The **Create a direct mail message** page now clarifies extraction-file generation in the **Journey** and **Campaign** tabs: journey files follow the routing frequency and can result in multiple files per day, while campaign files are generated when each campaign execution starts. The page also explains how to ensure one file per day for journeys. [Read more](../direct-mail/create-direct-mail.md#create-dm-campaign)
