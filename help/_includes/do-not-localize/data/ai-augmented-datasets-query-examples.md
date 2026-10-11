@@ -24,9 +24,9 @@ For complete understanding, this information should be combined with the documen
 
 * **AJO Email Tracking Experience Event Dataset**: system dataset for email tracking events; queried as `ajo_email_tracking_experience_event_dataset` *(product-specific)*
 * **AJO Message Feedback Event Dataset**: message delivery feedback across channels (Email, SMS/RCS/MMS, Direct Mail); queried as `ajo_message_feedback_event_dataset`; uses batch ingestion *(product-specific)*
-* **AJO Push Tracking Experience Event Dataset**: push interaction events; queried as `ajo_push_tracking_experience_event_dataset` *(product-specific)*
+* **AJO Push Tracking Experience Event Dataset**: mobile tracking experience events for push; queried as `ajo_push_tracking_experience_event_dataset` *(product-specific)*
 * **Journey Step Event**: journey step events; queried as `journey_step_events` *(product-specific)*
-* **Decisioning Event Dataset (ODE DecisionEvents)**: offer proposition events *(product-specific)*
+* **Decisioning Event Dataset (ODE DecisionEvents)**: dataset for ingesting offer propositions to the users *(product-specific)*
 * **Secondary Recipient Feedback Event Dataset (BCC)**: email BCC events when BCC archiving is enabled; table may still be named `ajo_bcc_feedback_event_dataset` *(product-specific)*
 * **Entity Dataset**: stores entity metadata for messages; queried as `ajo_entity_dataset` *(product-specific)*
 * **`isTestExecution`**: field distinguishing test executions (`true`) from non-test executions (`false`), with `NULL` or missing treated as unknown *(product-specific)*
@@ -38,14 +38,14 @@ For complete understanding, this information should be combined with the documen
 * The CJM Consent Service Dataset and CJM Push Profile Dataset are system datasets used by Journey Optimizer for consent and push profile data. They are not available as queryable tables in Query Service, so a "Table not provisioned for dataset" response is expected when querying them.
 * System datasets are hidden by default; enable **Show system datasets** in the Datasets workspace to see them.
 * An Entity Dataset entry for a message is created only after the journey or campaign is published, and you may see the entry 30 minutes after the publication of the campaign or journey.
-* Do not automatically convert a `NULL` or missing `isTestExecution` value to `false`, and do not assume null represents a production execution.
+* Do not automatically convert a `NULL` or missing `isTestExecution` value to `false`, and do not assume that every null value represents a production execution.
 * In some journeys, `messageID` may not be unique for each individual delivery; to track events at the individual send level, combine `journeyVersionID`, `journeyActionID`, and `batchInstanceID` (for batch journeys) or `identityMap` fields.
 * A successful custom action HTTP call confirms only that the call completed, not that the external system delivered a message.
 
 **Terminology:**
 
 * Canonical name: Journey Step Event — table: `journey_step_events`
-* Do not confuse: "AJO Message Feedback Event Dataset" (delivery feedback such as `sent` or `bounce`) ≠ "AJO Email Tracking Experience Event Dataset" (interaction events such as opens and clicks) ≠ "Journey Step Event" (custom action execution status and errors)
+* Do not confuse: "AJO Message Feedback Event Dataset" (delivery feedback such as `sent` or `bounce`) ≠ "AJO Email Tracking Experience Event Dataset" (interaction events such as opens and clicks) ≠ "Journey Step Event" (custom action execution status, latency, and error details)
 * Do not confuse: "`isTestExecution` = `NULL`" (unknown) ≠ "`isTestExecution` = `false`" (non-test execution)
 
 **FAQ:**

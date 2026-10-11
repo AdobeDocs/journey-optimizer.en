@@ -15,7 +15,7 @@ For complete understanding, this information should be combined with the documen
 
 * Enable a record-based dataset for lookup using the dataset management toggle or the API.
 * Meet the prerequisites (record-type schema, primary identity, non-person namespace).
-* Review the lookup entitlement limits before designing a lookup strategy.
+* Review the lookup entitlement limits.
 * Monitor lookup ingestion status.
 * Use enabled data with personalization, Decisioning, and journey orchestration.
 
@@ -47,7 +47,7 @@ For complete understanding, this information should be combined with the documen
 
 * Canonical name: lookup service — variants: data lookup, enable for lookup
 * API ACTION values: `enable` OR `disable`
-* Do not confuse: a "lookup dataset" (record-type, NOT Profile or Event) ≠ a profile or event dataset (Profile or Event class)
+* Do not confuse: the required schema for lookup (record-type) ≠ a schema of Profile or Event type or class
 
 **FAQ:**
 
@@ -56,7 +56,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: What are the record and size limits?** — Up to 2 million records and 4 GB per dataset, up to 2 KB per record, and up to 5 updates per day per dataset; the record count and dataset size are independent guardrails that must both be satisfied.
 * **Q: Can lookup datasets contain PII?** — No; datasets enabled for lookup should not contain any Personally Identifiable Information.
 * **Q: What happens if I delete a batch of data?** — Removing a batch completely removes all matching keys from the lookup service; for example, deleting Batch 1 (Sku1, Sku2, Sku3) removes those keys from the lookup store even though Batch 2 also contained them.
-* **Q: Should I toggle lookup on and off frequently?** — No; repeatedly turning datasets on and off can lead to unexpected indexing behavior, so keep the toggle on while the dataset is in use.
+* **Q: Should I toggle lookup on and off frequently?** — No; repeatedly turning datasets on and off can lead to unexpected indexing behavior, so leave the dataset enabled for as long as you plan to use it for lookups.
 
 +++
 

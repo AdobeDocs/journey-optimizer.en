@@ -29,7 +29,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Datasets can be exported to the 6 cloud storage destinations listed on the page: Amazon S3, Azure Blob, Azure Data Lake Gen 2, Data Landing Zone, Google Cloud Storage, and SFTP.
+* Datasets can be exported to the 6 cloud storage destinations: Amazon S3, Azure Blob, Azure Data Lake Gen 2, Data Landing Zone, Google Cloud Storage, and SFTP.
 * Required access control permissions: **Manage and Activate Dataset Destinations** (Destinations), **View Datasets** (Data Management), and **View Destinations** (Destinations).
 * AJO Message Export Dataset data is retained for 7 calendar days from ingestion.
 * The AJO Message Feedback Event Dataset uses batch ingestion; expect a data latency of up to 2 hours.
