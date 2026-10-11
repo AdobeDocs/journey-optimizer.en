@@ -16,7 +16,7 @@ For complete understanding, this information should be combined with the documen
 * Identify which built-in role best fits a user's job responsibilities
 * Understand what each built-in role can and cannot do (including publish rights)
 * Compare roles across journey, campaign, and orchestrated campaign domains
-* Assign a ready-made role instead of creating a custom one
+* Find a built-in role that grants a ready-made level of access matching a user's responsibilities
 * Understand which roles include the Enable AI Assistant permission
 
 **Glossary:**
