@@ -29,7 +29,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release; existing journeys using them continue to work without changes and no migration is required.
+* Legacy native channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release; existing journeys using them continue to work without changes and no migration is required.
 * Rapid delivery is available for Scheduled campaigns only and is not available for API-triggered campaigns.
 * No personalization is allowed in a Rapid delivery push message.
 * The target audience for Rapid delivery must contain less than 30M profiles.

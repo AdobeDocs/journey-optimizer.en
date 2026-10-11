@@ -31,7 +31,7 @@ For complete understanding, this information should be combined with the documen
 * Consider another channel when the user is not actively using the app, since the message will never be displayed.
 * Consider another channel for critical or time-sensitive issues that require reaching users outside the app, such as an outage or security alert.
 * Consider another channel for regulatory or legal communications that require a read confirmation, which in-app messages cannot provide.
-* Consider another channel for account reactivation or win-back campaigns for inactive users who are unlikely to open the app, and for high-volume transactional updates, such as an order confirmation, that are better suited to email or SMS.
+* Consider another channel for account reactivation or win-back campaigns for inactive users who are unlikely to open the app, and for high-volume transactional updates, such as an order confirmation, that are better suited to email or mobile message.
 * Consider another channel when overuse could lead to banner blindness, or when users may be offline or without app connectivity when the message is meant to be delivered.
 
 **Terminology:**

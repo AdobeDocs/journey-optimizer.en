@@ -33,12 +33,12 @@ For complete understanding, this information should be combined with the documen
 
 * Storage entitlement differs by package: Campaigns customers receive 15 KB per addressable profile, while Journeys and Campaigns & Journeys customers receive 75 KB per addressable profile.
 * Channels are not bundled into the base offer; you select the channel add-on or add-on bundle that fits.
-* Orchestrated campaigns support email, SMS, push notifications, and direct mail only; web, in-app, code-based, and content card channels are not supported in orchestrated campaign workflows.
+* Orchestrated campaigns support email, Mobile message, push notifications, and direct mail only; web, in-app, code-based, and content card channels are not supported in orchestrated campaign workflows.
 * Decisioning is a distinct advanced-capability add-on and is not included in any base offer by default; contact your Adobe representative to add it.
 * SMS / MMS and WhatsApp availability depends on your licensed configuration and are not part of the standard Outbound Delivery, Mobile, or Web add-ons.
 * WhatsApp requires a WhatsApp Business account.
 * In Journey Optimizer – Journeys, audience-based orchestration is supported only within journey use cases, not as standalone batch campaigns.
-* Basic transactional messaging (event-triggered email, push, and SMS) is included with every base offer.
+* Basic transactional messaging (event-triggered email, push, and Mobile message) is included with every base offer.
 * Code-based experiences require the Mobile or Web add-on.
 
 **Terminology:**
@@ -54,7 +54,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: Does every base offer include every channel?** — No; the base offer determines your orchestration capability, and channel add-ons determine which messaging surfaces you can engage.
 * **Q: How much storage does each package include?** — Campaigns customers receive 15 KB per addressable profile, and Journeys and Campaigns & Journeys customers receive 75 KB per addressable profile.
-* **Q: Which channels do orchestrated campaigns support?** — Email, SMS, push notifications, and direct mail only.
+* **Q: Which channels do orchestrated campaigns support?** — Email, Mobile message, push notifications, and direct mail only.
 * **Q: Is Decisioning included by default?** — No; it is a distinct advanced-capability add-on that is not included in any base offer by default, so contact your Adobe representative to add it.
 * **Q: Are Select, Prime, and Ultimate still the current packaging model?** — No; the current model is modular, built around base offers and add-ons, while Select, Prime, and Ultimate are legacy packaging.
 
