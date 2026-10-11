@@ -11,8 +11,10 @@ non-localized context appended to doc pages so the AI Assistant answers question
 Journey Optimizer more accurately.
 
 Each block is stored as a **do-not-localize include** (so it is never translated) and pulled
-into its page with `{{$include}}`. A block contains **only facts derivable from its own page
-body** — nothing imported from other pages, general product knowledge, or HTML comments.
+into its page with `{{$include}}`. A block contains only what the **AJO docs** state: its own
+page body first, plus related `help/using/` pages for concrete guidance, examples and best
+practices, under the cross-page safety rules (no mix-up, conflicts flagged). Never general product
+knowledge, inference, or HTML comments.
 
 > **Read the reference files before generating anything.** They contain the actual rules, not
 > a summary:
@@ -114,7 +116,7 @@ title: AI Knowledge Reference
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: <first 8 chars of md5 of the page body> -->
+<!-- ai-section-version: 1 | source-hash: <first 8 chars of md5 of the page body> | related: <folder>/<page>.md, ... (only if related pages were used) -->
 ```
 
 **Page edit** — add exactly one line, as the last content line, preceded by a blank line
@@ -167,11 +169,22 @@ Report per page: created / updated / migrated / skipped (+ reason), the verifica
 Also include a **Gaps found** list per page: places where the page body itself leaves the AI
 without what it needs, for example an acronym used but never defined, a limit stated without
 its scope, a validation mode or status named but not explained, or two terms used
-interchangeably without saying so. This list is for the author to fix **in the page**. Never
-fill a gap by adding the missing fact to the block: the golden rule (block content comes only
-from the page body) still applies. If there are no gaps, say "none".
+interchangeably without saying so. This list is for the author to fix **in the page**. Also list any
+**discrepancy** between the page and a related page, unclear statements, and missing guidelines.
+Never fill a gap by guessing: if neither the page nor a related page states the fact, the block
+does not either. If there are no gaps, say "none".
+
+For every gap or discrepancy that needs a change in an MD page, **find or create a page-fix
+task** (see "Page-fix tasks" in `references/git-jira-tracking.md`): search DOCAC first, link the
+existing task and add a comment if one covers it, otherwise create a new task linked to the
+block's task.
 
 ## Notes for writers running this skill
+
+- **Limit of the drift check:** `source-hash` covers only the block's own page. When a related page
+  recorded in `related:` changes, the block can go stale without the audit noticing. When you
+  edit a page, search `help/_includes/do-not-localize/` for blocks that list it under `related:`
+  and re-check them.
 
 - The block is a **derivative of the page body at a point in time** — treat it as part of the
   page. When you change a page in a way that touches a guardrail, limit, status label, or
