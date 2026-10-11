@@ -51,7 +51,7 @@ the AJO docs pages named in the last column.
 
 | Term | Meaning | Source |
 |---|---|---|
-| Federated Audience Composition (FAC) | The capability available in Journey Optimizer that lets you query a data warehouse for data or profile attributes to compose and enrich audiences, leaving sensitive data in the warehouse. The author calls it the add-on / module; the published pages say "capability" (the add-on wording is only in an HTML comment on `orchestrated/orchestrated-campaigns-faq.md`), so blocks say "capability". | `audience/federated-audience-composition.md` |
+| Federated Audience Composition (FAC) | The capability available in Journey Optimizer that lets you query a data warehouse for data or profile attributes to compose and enrich audiences, leaving sensitive data in the warehouse. The own page says "capability"; `building-journeys/journey-faq.md` states that it "requires Federated Audience Composition add-on", so blocks say it is a capability that requires the add-on. | `audience/federated-audience-composition.md`, `building-journeys/journey-faq.md` |
 | Federated audience | An audience created through Federated Audience Composition. It is the output you use in journeys and campaigns. Approved variant: "Federated Data Audience" (the author's name for it; the docs say "federated audience"). | `building-journeys/journey-faq.md`, `audience/target-audiences.md` |
 
 **Do not confuse:** FAC (the capability, the tool) is not a federated audience (one audience it
