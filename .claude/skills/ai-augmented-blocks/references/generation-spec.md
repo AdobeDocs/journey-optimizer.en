@@ -102,6 +102,10 @@ Limits, prerequisites, permissions, constraints stated on the page.
 ### 5. Terminology
 Canonical names, acronyms, variants, synonyms, disambiguation.
 
+- **Acronyms:** include one only if it is used on the page body or is on the approved list in
+  `acronyms.md` (use the expansion given there). Never invent one. If there is none, omit the
+  line; do not write `Acronym: n/a`. Acronyms marked "needs confirmation" in that file are not
+  used until a writer confirms them.
 - **Synonyms** (`"A" = "B"`) only for **true equivalents** — both forms must appear on the page
   meaning the same thing. Anything that is a *contrast* goes under **Do not confuse**
   (`"X" ≠ "Y"`), not Synonyms.
@@ -121,6 +125,48 @@ body**. Do not introduce "revert", "reset", or "roll back" unless the page uses 
 - **No contractions** anywhere in block prose — spell out "is not", "does not", "cannot",
   "it is", etc. (The only exception is a verbatim product UI string such as
   `[!UICONTROL configuration doesn't exist]`, which is preserved exactly.)
+
+## Common generation errors (check each before gate 1)
+
+These are the mistakes the independent verifier most often had to fix. Look for them
+deliberately.
+
+- **Imported contrasts or definitions.** "Do not confuse" and Glossary entries must be built
+  from what *this page* says. Do not describe a neighbouring feature (for example Test mode or
+  Simulation on a Dry run page) from general knowledge. If the page only links to a comparison
+  page, say that and stop. Do not define a term the page uses but never explains; report it
+  under **Gaps found** instead.
+- **Wrong kind of label.** Use the page's own category word: do not call a mode a "status", a
+  flag a "boolean field", or a field a "dataset" unless the page does. A "status" is a
+  lifecycle value the page names as one.
+- **Merged facts.** When the page says A counts towards X and B counts towards Y, keep them
+  separate. Do not write "A and B count towards X and Y".
+- **Merged behaviours.** If the page gives two activity types different behaviours (for
+  example "not executed" versus "disabled, responses set to null"), state each one. Do not
+  collapse them into one phrase such as "disabled and not executed".
+- **"Only" and "any".** Copy the page's scope word. "Can be used in any Draft journey with no
+  error" is not the same claim as "Only Draft journeys with no errors can be used".
+- **Invented titles and links.** Name a link by its text on the page, not by the title of the
+  target page, unless the page uses that title.
+- **Added reassurance or consequences.** Do not add statements such as "no content is lost" or
+  "this is safe" that the page does not make.
+- **Informal synonyms.** A phrase used once as a verb or in passing (for example "smoke test")
+  is not a synonym for a feature name.
+- **"<channel> action" or "<channel> activity" in journeys.** The palette has ONE **Action**
+  activity (the legacy per-channel activities are deprecated). The user drags it onto the canvas
+  and selects the channel as the **action type**. After that, the canvas node shows the label the
+  user typed as its title and the **channel name as its type** (for example a node titled "Luma
+  email action" whose type is "Email"; the right pane is "Actions: Email" with a "Configure
+  action" button). "Channel action" is only a generic term in the docs, not a node name. Write
+  "an Action activity with the Email channel selected" or "the Email channel", never "the Email
+  action" or "Email activity" as if it were the node's name, even when the page body still says
+  so: report that wording under **Gaps found** so the page is fixed. In campaigns the user
+  chooses the channel in the campaign's Actions section; keep that wording. Statements that the
+  legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience,
+  Content Card) are deprecated stay as they are. Orchestrated campaigns do use "channel
+  activities"; do not change those.
+- **FAQ drift.** FAQ questions and answers reuse the page's nouns and verbs ("reporting
+  metrics", "quotas"), not paraphrases such as "analytics queries" or "limits".
 
 ## Step 3 — verify every claim (self-check, gate 1)
 
