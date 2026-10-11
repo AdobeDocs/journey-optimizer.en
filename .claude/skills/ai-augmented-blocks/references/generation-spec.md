@@ -132,6 +132,9 @@ Limits, prerequisites, permissions, constraints stated on the page.
 ### 5. Terminology
 Canonical names, acronyms, variants, synonyms, disambiguation.
 
+- **SMS / Mobile message:** write "Mobile message" for the channel and list SMS as a variant
+  (`acronyms.md`, "Terms and distinctions"). Keep "SMS" only for SMS-specific guidance, exact
+  UI / permission / credential names, and where SMS is listed next to MMS and RCS.
 - **Acronyms:** include one only if it is used on the page body or is on the approved list in
   `acronyms.md` (use the expansion given there). Never invent one. If there is none, omit the
   line; do not write `Acronym: n/a`. Acronyms marked "needs confirmation" in that file are not
