@@ -30,8 +30,8 @@ For complete understanding, this information should be combined with the documen
 - Computed attributes are based on Profile-enabled Experience Event datasets ingested into Adobe Experience Platform
 
 **Terminology:**
-- Canonical name: Adobe Journey Optimizer — variants: Journey Optimizer
-- Canonical name: Adobe Experience Platform
+- Canonical name: Adobe Journey Optimizer — Acronym: AJO — variants: Journey Optimizer
+- Canonical name: Adobe Experience Platform — Acronym: AEP
 - Synonyms: "computed attributes" = "computed profile attributes"
 
 **FAQ:**

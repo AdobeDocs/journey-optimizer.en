@@ -27,7 +27,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Federated Audience Composition
+* Canonical name: Federated Audience Composition — Acronym: FAC
 
 **FAQ:**
 
