@@ -32,6 +32,17 @@ expansion exactly as written below.
 | ACS | Adobe Campaign Standard | confirmed by the author (2026-10-09) |
 | ACC | Adobe Campaign Classic (v7/v8) | confirmed by the author (2026-10-09) |
 | ABAC | Attribute-based access control | confirmed by the author (2026-10-09) |
+| AT | Adobe Target | confirmed by the author (2026-10-11) |
+| AEM | Adobe Experience Manager | confirmed by the author (2026-10-11) |
+
+## Short names
+
+These are not acronyms but are accepted short forms. A block may use them in Terminology
+variants, with the full name as the canonical name.
+
+| Short form | Full name | Confirmed in |
+|---|---|---|
+| Platform | Adobe Experience Platform (also AEP) | confirmed by the author (2026-10-11) |
 
 ## Needs the author's confirmation
 
