@@ -20,17 +20,14 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **Federated Audience Composition**: A Journey Optimizer capability that queries a data warehouse for data or profile attributes to compose audiences, leaving sensitive data in the warehouse and avoiding data duplication *(product-specific)*
-* **Data warehouse**: The enterprise data source queried for data or profile attributes used in composing audiences *(product-specific)*
 
 **Guardrails:**
 
-* Federated Audience Composition leaves sensitive data in the warehouse and avoids data duplication rather than copying the data into Adobe Experience Platform.
+* Federated Audience Composition leaves sensitive data in the warehouse and avoids data duplication.
 
 **Terminology:**
 
-* Canonical name: Federated Audience Composition — Acronym: FAC — variants: federated audience composition
-* Synonyms: "data warehouse" = "enterprise data warehouse"
-* Do not confuse: "profile-based data" ≠ "non-profile data" (Federated Audience Composition can include both)
+* Canonical name: Federated Audience Composition
 
 **FAQ:**
 
@@ -40,4 +37,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 2452278f -->
+<!-- ai-section-version: 1 | source-hash: 557cbac8 -->
