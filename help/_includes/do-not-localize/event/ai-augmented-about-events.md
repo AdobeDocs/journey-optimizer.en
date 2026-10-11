@@ -43,7 +43,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Work with journey events — Acronym: n/a — variants: event
+* Canonical name: Work with journey events
 * Do not confuse: "Unitary event" (linked to a specific person) ≠ "Business event" (external occurrence not tied to one person) ≠ "Audience qualification event" (triggered when a profile enters or exits an audience)
 * Do not confuse: "Rule-based" (unitary event type that does not generate an eventID and defines a rule) ≠ "System-generated" (unitary event type that requires an eventID, automatically generated when creating the event)
 

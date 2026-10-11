@@ -24,7 +24,7 @@ For complete understanding, this information should be combined with the documen
 * **Business event**: An event that is, unlike unitary events, not linked to a specific profile and is always rule-based, used to trigger a journey for a set of profiles when a global occurrence happens *(product-specific)*
 * **Read audience activity**: The activity that is the only one allowed after a business event and is automatically added as the next step *(product-specific)*
 * **Event ID condition**: The condition, written in the simple expression editor, used by the system to identify the events that trigger the journey *(product-specific)*
-* **One-shot business event**: A business event whose first event job data is reused during a one-hour time window for a given journey *(product-specific)*
+* **One-shot business event**: A term the page uses for business events in the context of audience reuse: for a given journey, data pushed by the first event job is reused during a 1-hour time window *(product-specific)*
 
 **Guardrails:**
 
@@ -41,9 +41,8 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Business event — Acronym: n/a — variants: none
+* Canonical name: Business event
 * Do not confuse: "Business event" (not linked to a specific profile, always rule-based) ≠ "Unitary event" (the page states that, unlike unitary events, business events are not linked to a specific profile)
-* Do not confuse: "Time series schema" (the only schema type available for business events) ≠ "Experience Events, Decision Events, and Journey Step Events schemas" (not available)
 
 **FAQ:**
 
