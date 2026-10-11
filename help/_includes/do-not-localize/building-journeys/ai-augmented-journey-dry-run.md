@@ -28,7 +28,7 @@ For complete understanding, this information should be combined with the documen
 * Starting a Dry run requires the **Publish journeys** permission; stopping it requires **Manage journeys**
 * Dry run journeys automatically exit Dry run mode and return to Draft status after 14 days.
 * Profiles in Dry run mode are counted towards Engageable Profiles; journeys in Dry run mode are counted towards the live journey quota
-* Channel action nodes (Email, SMS, Push) are not executed during Dry run; Custom actions are disabled and their responses are set to null
+* Channel action nodes (Email, Mobile message, Push) are not executed during Dry run; Custom actions are disabled and their responses are set to null
 * Data sources (including external data sources) and Wait activities are disabled by default during Dry run; this behavior can be changed when activating the Dry run mode
 * Jump actions are not enabled in Dry run
 * Reaction nodes are not executed during Dry run; profiles exit successfully, with priority rules for parallel unitary and reaction branches
@@ -43,7 +43,7 @@ For complete understanding, this information should be combined with the documen
 * Do not confuse: "inDryRun" ≠ "dryRunID" — `inDryRun` is the flag that is `true` for Dry run executions; `dryRunID` is the ID of the Dry run instance
 
 **FAQ:**
-* **Q: Does Dry run actually send emails or push notifications to customers?** — No; channel action nodes (Email, SMS, Push) are not executed, and custom actions are disabled with their responses set to null.
+* **Q: Does Dry run actually send emails or push notifications to customers?** — No; channel action nodes (Email, Mobile message, Push) are not executed, and custom actions are disabled with their responses set to null.
 * **Q: How long does a Dry run last before it automatically stops?** — 14 days, after which the journey automatically transitions back to Draft status.
 * **Q: How do I exclude Dry run data from my journey reporting metrics?** — When analyzing journey reporting metrics with Query service, exclude step events where `inDryRun` is `true`; include only events where `inDryRun` is `null` or `false`.
 * **Q: Do Dry run profiles and journeys count towards quotas?** — Yes; profiles in Dry run mode are counted towards Engageable Profiles, and journeys in Dry run mode are counted towards the live journey quota.

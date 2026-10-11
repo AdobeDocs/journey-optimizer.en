@@ -36,7 +36,7 @@ For complete understanding, this information should be combined with the documen
 * Because Card is an inbound experience activity, it comes with a Wait activity that is added automatically after the Card action (3 days by default).
 * Disqualification rules require Web SDK version 2.28.0 or later.
 * By default, the close button hides the card; to add more functionality, you must manually define dismissal or disqualification rules.
-* Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release; existing journeys using these activities continue to work without any changes and no migration is required.
+* Legacy native channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release; existing journeys using these activities continue to work without any changes and no migration is required.
 
 **Terminology:**
 

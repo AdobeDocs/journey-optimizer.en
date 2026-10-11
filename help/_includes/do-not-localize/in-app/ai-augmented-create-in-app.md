@@ -31,7 +31,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release; existing journeys using these activities continue to work without any changes and no migration is required.
+* Legacy native channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release; existing journeys using these activities continue to work without any changes and no migration is required.
 * In a journey, a 3-days Wait activity is automatically added after the Action activity with the In-app channel, because in-app messages displayed to a profile automatically expire when the profile reaches the end of their journey.
 * In-app messages are not impacted by the user's choice to opt-in or opt-out of push notifications at the operating system.
 * To show an in-app message shortly after a push notification, a Wait activity is recommended; typically a 5–15 minute wait is recommended, though exact times vary with payload complexity and personalization needs.

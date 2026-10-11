@@ -31,7 +31,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release; existing journeys using them continue to work without any changes and no migration is required.
+* Legacy native channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release; existing journeys using them continue to work without any changes and no migration is required.
 * As Web is an inbound channel, it comes with a 3-days Wait activity.
 * If this is your first time creating a web experience, you must follow the web prerequisites.
 * If a campaign is subject to an approval policy, you must request approval before you can activate the web experience.

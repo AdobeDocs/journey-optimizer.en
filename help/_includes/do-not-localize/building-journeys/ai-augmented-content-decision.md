@@ -27,7 +27,7 @@ For complete understanding, this information should be combined with the documen
 * **Offers catalog schema**: The schema that defines the attributes available on decision items; accessible via the Context node in advanced expression editor mode *(product-specific)*
 
 **Guardrails:**
-* The output of a Content Decision activity cannot be used in native channel activities (email, push, SMS, etc.)
+* The output of a Content Decision activity cannot be used in native channel activities (email, push, Mobile message, etc.)
 * The content decision output is only accessible in Advanced mode of the expression editor; it is not available in simple mode
 * Decisioning permissions are required to author a decision policy
 * Consent policy updates take up to 48 hours to take effect for attributes referenced in a decision policy

@@ -38,7 +38,7 @@ For complete understanding, this information should be combined with the documen
 * Journey Simulation sends real messages to the execution addresses (email, phone, push token) configured on the simulated users, using the same delivery pipeline as production
 * Unlike Journey Simulation, Journey Dry run never sends real messages
 * Journey Dry run is currently a Limited Availability feature, being rolled out globally over time
-* Journey Dry run bypasses action nodes (email, SMS, custom actions) but still routes profiles through branches and nodes using real production data
+* Journey Dry run bypasses action nodes (email, Mobile message, custom actions) but still routes profiles through branches and nodes using real production data
 
 **Terminology:**
 
@@ -50,7 +50,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which validation method should I use while I am still designing a journey?** — Use Journey Simulation; it needs no real test profiles and runs in seconds, making it ideal for fast iteration.
 * **Q: Does Journey Simulation send real messages?** — Yes. Simulation delivers real messages to the execution addresses (email, phone, push token) configured on the simulated users, often the tester's own address. It uses the same delivery pipeline as production, but it does not contact real customers or update live profile data.
 * **Q: Does Journey Test mode send real messages?** — Yes. Journey Test mode delivers real messages to the actual inboxes of your test profiles, using the same delivery pipeline as production. It does not contact real customers, but the messages themselves are real.
-* **Q: Does Journey Dry run send any messages?** — No. Dry run bypasses action nodes such as email, SMS, and custom actions, so profiles flow through the journey logic without any message being sent.
+* **Q: Does Journey Dry run send any messages?** — No. Dry run bypasses action nodes such as email, Mobile message, and custom actions, so profiles flow through the journey logic without any message being sent.
 * **Q: Is Journey Dry run available to everyone?** — It is currently a Limited Availability feature being rolled out globally over time.
 * **Q: Can I fire Journey Test mode events from an external system?** — No; in Journey Test mode, events can only be fired from the interface, not from external systems via API.
 
