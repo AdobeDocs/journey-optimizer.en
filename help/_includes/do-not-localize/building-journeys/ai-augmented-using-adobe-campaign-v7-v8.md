@@ -26,13 +26,13 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * The connection between Journey Optimizer and the Campaign instance is set up by Adobe at provisioning time; contact Adobe to enable it.
-* A dedicated action must be configured before Campaign v7/v8 actions are available in the journey palette.
+* A dedicated action must be configured for the integration to work.
 * Campaign v7/v8 actions cannot be used with Read Audience or Audience Qualification activities.
 * Access to Campaign Transactional Messaging and the required permissions are prerequisites, along with a Campaign v7/v8 instance provisioned and connected to Journey Optimizer by Adobe.
 
 **Terminology:**
 
-* Canonical name: Adobe Campaign v7/v8 — Acronym: n/a — variants: Campaign v7, Campaign v8
+* Canonical name: Adobe Campaign v7/v8 — Acronym: ACC (Adobe Campaign Classic v7/v8) — variants: Campaign v7, Campaign v8
 * Do not confuse: "Campaign v7/v8 actions" (can be used alongside the native channels of the Action activity) ≠ "Campaign Standard actions" (cannot be combined with the native channels of the Action activity in the same journey)
 
 **FAQ:**

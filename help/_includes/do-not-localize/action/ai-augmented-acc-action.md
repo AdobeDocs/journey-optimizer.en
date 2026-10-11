@@ -37,8 +37,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Adobe Campaign v7/v8 integration — Acronym: n/a — variants: Campaign action, Adobe Campaign Classic action, Campaign v7/v8 custom action
-* Synonyms: "Adobe Campaign Classic" = "Adobe Campaign v7"
+* Canonical name: Adobe Campaign v7/v8 integration — Acronym: ACC (Adobe Campaign Classic v7/v8) — variants: Campaign action, Campaign v7/v8 custom action
 * Do not confuse: "Campaign action" (Adobe Campaign v7/v8 integration) ≠ other custom actions (created through the generic action creation procedure that the page links to)
 
 **FAQ:**
