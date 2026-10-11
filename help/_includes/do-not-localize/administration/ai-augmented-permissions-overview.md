@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** Access control in Journey Optimizer is built on roles, permissions, and sandboxes managed through Adobe CX Enterprise Permissions, with object-based access control and attribute-based access control also listed as key concepts.
+* **TL;DR:** Access control for Journey Optimizer is provided through Permissions in Adobe CX Enterprise, and user management is based on five key concepts: roles, permissions, sandboxes, object-based access control, and attribute-based access control.
 
 **Intents:**
 
@@ -34,7 +34,7 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Attribute-based access control — Acronym: ABAC — variants: Attribute-based access management (link text on the page)
-* Canonical name: Object-based access control — Acronym: OLAC (Object level access control) — variants: Object-based access management (link text on the page)
+* Canonical name: Object-based access control — Acronym: OLAC (Object level access control, the name used on the related object-based access page) — variants: Object-based access management (link text on the page)
 * Do not confuse: "Object-based access control" (labels to limit the access to an object) ≠ "Attribute-based access control" (access based on attributes, which can be metadata added to an object, such as a label added to a schema field or segment)
 * Do not confuse: "Roles" (a collection of users with shared permissions and sandboxes) ≠ "Permissions" (the unitary rights grouped under resources that are assigned to roles)
 
@@ -46,4 +46,4 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where is access control for Journey Optimizer managed?** — Through Permissions in Adobe CX Enterprise; this functionality leverages roles and policies, which link users with permissions and sandboxes.
 
 +++
-<!-- ai-accordion-version: 1 | source-hash: d4984095 -->
+<!-- ai-accordion-version: 1 | source-hash: d4984095 | related: administration/object-based-access.md -->

@@ -31,9 +31,8 @@ For complete understanding, this information should be combined with the documen
 
 - Canonical name: Built-in permissions
 - Do not confuse: "Manage journeys" (read, create, edit, stop (live, test mode and dry run) and delete journeys) ≠ "Publish journeys" (includes publish, start test mode, start dry run, pause, and resume)
-- Do not confuse: "Simulate Journeys" (permission to read, create, and edit Simulation in Journeys) ≠ "Simulate content" (access to the Simulate content option for message preview and proof)
+- Do not confuse: "Simulate Journeys" (permission to read, create, and edit Simulation in Journeys) ≠ "Simulate content" (access to the Simulate content option for preview and proof)
 - Do not confuse: "Generate content" (access to Generate content menu in Journey Optimizer) ≠ "Enable AI Assistant" (enable or access AI-powered campaign and audience features)
-- Do not confuse: "Test mode" and "Dry run" (named in the Publish journeys and Manage journeys permissions) ≠ "Simulation" (named in the Simulate Journeys permission and the Simulated Users capability)
 - Do not confuse: "Manage decisions" (read, create, edit, and delete decisioning entities) ≠ "Manage Experience decisioning" (read, create, edit, and delete Experience Decisioning settings, including decision policies and runtime options)
 
 **FAQ:**

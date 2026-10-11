@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** Protect sensitive data fields in Journey Optimizer by applying governance labels to schema fields and assigning matching labels to roles, so unauthorized users cannot view, edit, test, or publish journeys that use those restricted fields.
+* **TL;DR:** Protect sensitive data fields in Journey Optimizer by applying governance labels to schema fields and assigning matching labels to roles, so that users without the matching label cannot see the restricted field, edit its expression in advanced mode, test the journey, or publish the journey.
 
 **Intents:**
 
@@ -37,8 +37,7 @@ For complete understanding, this information should be combined with the documen
 
 * Canonical name: Attribute-based access control — Acronym: ABAC
 * Canonical name: Experience Data Model — Acronym: XDM — variants: XDM schema, XDM schemas
-* Synonyms: "Label" = "governance label" (the page uses the **Edit governance labels** option for labels)
-* Do not confuse: "Role" (a set of users that share the same permissions, labels, and sandboxes) ≠ "Policy" (the page only states that a policy must be created before managing permissions for a role)
+* Variants: the page uses the **Edit governance labels** option to assign a Label to a schema field
 
 **FAQ:**
 
