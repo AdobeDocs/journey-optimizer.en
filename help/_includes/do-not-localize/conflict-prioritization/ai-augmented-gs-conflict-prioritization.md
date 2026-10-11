@@ -26,7 +26,7 @@ For complete understanding, this information should be combined with the documen
 * **Rule sets**: Group multiple rules and apply them to the journeys and campaigns of your choice *(product-specific)*
 * **Journey capping & arbitration**: Limits how often and how many journeys a customer can enter, using arbitration and priority scores to decide which journey the customer should enter *(product-specific)*
 * **Frequency capping by channel and communication type**: Sets frequency capping by communication type across multiple channels, excluding over-solicited profiles *(product-specific)*
-* **Quiet hours**: Time-based exclusions so no messages are sent during specific periods (Email, SMS, Push, WhatsApp) *(product-specific)*
+* **Quiet hours**: Time-based exclusions so no messages are sent during specific periods (Email, Mobile message, Push, WhatsApp) *(product-specific)*
 * **Arbitration**: Deciding which journey a customer enters when they qualify for multiple journeys, using priority scores to determine the best fit *(product-specific)*
 
 **Guardrails:**
@@ -39,10 +39,10 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: conflict management & prioritization — Acronym: n/a — variants: conflict management and prioritization tools
+* Canonical name: conflict management & prioritization — variants: conflict management and prioritization tools
 * Synonyms: none
 * Do not confuse: "conflict detection" (spots overlaps) ≠ "priority scores" (sets precedence) ≠ "rule sets" (limit frequency and volume)
-* Do not confuse: "journey capping" (limits journey entries or concurrency) ≠ "frequency capping by channel" (limits messages per channel and communication type) ≠ "quiet hours" (time-based message exclusions)
+* Do not confuse: "journey capping" (limits how often and how many journeys a customer can enter) ≠ "frequency capping by channel and communication type" (limits how often users receive messages depending on the type of communication) ≠ "quiet hours" (time-based message exclusions)
 
 **FAQ:**
 
@@ -54,4 +54,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 82d82b9c -->
+<!-- ai-section-version: 1 | source-hash: 4712e1cb -->

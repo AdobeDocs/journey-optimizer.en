@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to create quiet hours rules—time-based exclusions for Email, SMS, Push, and WhatsApp—inside custom channel-domain rule sets, and how to apply them to journey and campaign actions.
+* **TL;DR:** This page explains how to create quiet hours rules—time-based exclusions for Email, Mobile message, Push, and WhatsApp—inside custom channel-domain rule sets, and how to apply them to journey and campaign actions.
 
 **Intents:**
 
@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Quiet hours**: Time-based exclusions for Email, SMS, Push, and WhatsApp that ensure no messages are sent during specific periods *(product-specific)*
+* **Quiet hours**: Time-based exclusions for Email, Mobile message, Push, and WhatsApp that ensure no messages are sent during specific periods *(product-specific)*
 * **[!UICONTROL Queue message]**: Handling option where messages are sent at the completion of the quiet hours period unless in Paused state *(product-specific)*
 * **[!UICONTROL Discard message]**: Handling option where messages are never sent *(product-specific)*
 * **[!UICONTROL Use recipients local time zone]**: Option that applies each profile's own time zone field instead of one standard time zone *(product-specific)*
@@ -30,7 +30,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Supported channels: Email, SMS, Push, and WhatsApp.
+* Supported channels: Email, Mobile message, Push, and WhatsApp.
 * Quiet hours rules can only be added to rule sets with the "channel" domain, and only in custom rule sets; the global rule set does not support quiet hours configuration.
 * The [!UICONTROL Category] field is currently read-only and defaults to [!UICONTROL Marketing].
 * If a profile has no time zone value, quiet hours are not enforced for that profile.
@@ -44,14 +44,14 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: quiet hours — Acronym: n/a — variants: quiet hours rule
+* Canonical name: quiet hours — variants: quiet hours rule
 * Synonyms: none
 * Do not confuse: "[!UICONTROL Queue message]" (sent after the quiet period unless Paused) ≠ "[!UICONTROL Discard message]" (never sent)
 * Do not confuse: standard "[!UICONTROL Time zone]" (one time zone for all recipients) ≠ "[!UICONTROL Use recipients local time zone]" (each profile's own time zone)
 
 **FAQ:**
 
-* **Q: Which channels support quiet hours?** — Email, SMS, Push, and WhatsApp.
+* **Q: Which channels support quiet hours?** — Email, Mobile message, Push, and WhatsApp.
 * **Q: Can I set quiet hours in the global rule set?** — No, quiet hours can only be defined in custom rule sets with the "channel" domain.
 * **Q: What happens to a message that hits quiet hours?** — With [!UICONTROL Queue message] it is sent when the quiet period ends unless it is Paused; with [!UICONTROL Discard message] it is never sent.
 * **Q: What if a profile has no time zone value?** — Quiet hours are not enforced for that profile.
@@ -62,4 +62,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 8bcdcc40 -->
+<!-- ai-section-version: 1 | source-hash: 88cb19d9 -->

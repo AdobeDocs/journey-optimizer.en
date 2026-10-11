@@ -31,17 +31,17 @@ For complete understanding, this information should be combined with the documen
 
 * You can create up to 10 rule sets for the channel domain and 10 rule sets for the journey domain, for a total of 20 rule sets.
 * Working with business rules requires the [!UICONTROL View Frequency Rules] permission (view) and the [!UICONTROL Manage Frequency Rules] permission (create, edit, delete).
-* A rule starts with the [!UICONTROL Draft] status and does not impact any message until you activate it and its rule set.
+* When created, a rule has the [!UICONTROL Draft] status and is not yet impacting any message; to enable it, activate the rule. Activate the rule set to be able to apply it to your journeys and messages.
 * It can take up to 10 minutes for a rule or rule set to be fully activated; you do not need to modify messages or republish journeys for a rule to take effect.
 * Deactivating a rule or rule set sets its status to [!UICONTROL Inactive]; it does not apply to future message executions, does not affect messages currently in execution, and does not affect or reset any counts on individual profiles.
 
 **Terminology:**
 
-* Canonical name: rule set — Acronym: n/a — variants: rule sets
+* Canonical name: rule set — variants: rule sets
 * Synonyms: none
 * Do not confuse: "rule set" (a group of rules) ≠ "rule" (a single rule inside a rule set)
 * Do not confuse: "channel rule set" (frequency capping or quiet hours rules) ≠ "journey rule set" (entry and concurrency capping rules)
-* Do not confuse: "Global Default Rule Set" (pre-created global rules applying to all selected channels) ≠ custom rule sets (applied to specific journeys or campaigns)
+* Do not confuse: "Global Default Rule Set" (pre-created global rules applying to all selected channels) ≠ custom rule sets (rule sets you create and can apply to any journey or campaign to apply specific capping rules)
 
 **FAQ:**
 
@@ -54,4 +54,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: c77f18e0 -->
+<!-- ai-section-version: 1 | source-hash: c8cbdd95 -->

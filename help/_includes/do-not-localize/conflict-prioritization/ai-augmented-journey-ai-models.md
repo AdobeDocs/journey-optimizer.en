@@ -15,13 +15,13 @@ For complete understanding, this information should be combined with the documen
 
 * Create an AI model in the [!UICONTROL Orchestration ranking] > [!UICONTROL AI models] tab
 * Choose an [!UICONTROL Optimization metric] from the default Customer Journey Analytics data view
-* Select the datasets and segments used to train the model
+* Select the datasets where conversion and impression events are collected, and the segments used to train the model
 * Reference an AI model in a ranking formula using [!UICONTROL AI model score] as the ranking method
 * Assign the formula to a rule set and apply it to journeys so ranking applies when a cap is reached
 
 **Glossary:**
 
-* **AI model**: A trained model whose scores dynamically rank journeys, used in ranking formulas instead of static priority *(product-specific)*
+* **AI model**: A trained model whose scores dynamically rank journeys, used in ranking formulas instead of priority *(product-specific)*
 * **Ranking object**: The entity that the ranking formula applies to; by default set to [!UICONTROL Journey] *(product-specific)*
 * **Conversion rate**: Total number of conversion events / Total number of impression events; the basis on which [!DNL Journey Optimizer] ranks *(product-specific)*
 * **Impression events**: Items that are displayed *(product-specific)*
@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: AI model — Acronym: n/a — variants: AI models, AI model score
+* Canonical name: AI model — variants: AI models
 * Synonyms: none
 * Do not confuse: "AI model" (trained model whose scores can be used to rank journeys) ≠ "ranking formula" (the formula in which you select the AI model and set [!UICONTROL AI model score] as the ranking method in a criterion) ≠ "priority" (the value assigned to each journey that determines which journeys are selected; AI models in ranking formulas are used instead of it)
 * Do not confuse: "impression events" (items that are displayed) ≠ "conversion events" (items that result in clicks or conversions)
