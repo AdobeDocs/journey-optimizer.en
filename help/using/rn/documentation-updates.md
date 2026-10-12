@@ -35,7 +35,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new **Archiving** section groups the options for retaining sent messages. The new **Get started with message archiving** page compares BCC email and Message Export, and explains why mirror pages and the Entity Dataset are not archiving options. The BCC page has been renamed **Archive emails using BCC**, and **Export message content** now sits in the same section. [Read more](../configuration/archiving-overview.md)
 
-* The **Channel configuration** section has been streamlined. The **Delegate email subdomains** and **Monitor email addresses** landing pages have been removed from the navigation. The **Get started with channels configuration** page now covers all channels (including iOS Live activities, WhatsApp, and LINE), seed lists, and archiving for compliance. The **Subdomain delegation** page now links to the related DMARC, Google TXT, PTR, IP pool, and custom subdomain pages. [Read more](../configuration/get-started-configuration.md)
+* The **Channel configuration** section has been reorganized to make it easier to navigate. Redundant landing pages have been removed, and their content now lives in the **Get started with channels configuration** and **Subdomain delegation** pages. [Read more](../configuration/get-started-configuration.md)
 
 * The **Manage fragments** page now clarifies that fragment changes made after a Read Audience journey has started apply to the next batch run for recurring journeys, while one-time journeys must be republished. [Read more](../content-management/manage-fragments.md#edit-fragments)
 
