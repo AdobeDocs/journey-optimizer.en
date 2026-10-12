@@ -959,7 +959,6 @@ nudge: yes
     + [Get started with Guided channel setup](using/configuration/set-mobile-config.md)
     + [Create a channel set up](using/configuration/create-channel-set-up.md)
   + Delegate email subdomains {#delegate-subdomains}
-    + [Delegate email subdomains](/help/rp_landing_pages/delegate-subdomains-landing-page.md)
     + [Get started with subdomain delegation](using/configuration/about-subdomain-delegation.md)
     + [Delegate a subdomain](using/configuration/delegate-subdomain.md)
     + [Set up a custom subdomain](using/configuration/delegate-custom-subdomain.md)
@@ -976,7 +975,6 @@ nudge: yes
     + [Run the IP warmup plan](using/configuration/ip-warmup-execution.md)
     + {hide-from-toc} [IP warmup plan files](using/configuration/ip-warmup-plan-files.md)
   + Monitor email addresses {#monitor-reputation}
-    + [Monitor email addresses](/help/rp_landing_pages/monitor-reputation-landing-page.md)
     + {hide-from-toc} [Email error types](using/configuration/email-error-types.md)
     + [Suppression list](using/configuration/manage-suppression-list.md)
     + [Retries](using/configuration/retries.md)
