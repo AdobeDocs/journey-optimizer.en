@@ -49,16 +49,16 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Connect Journey Optimizer to Adobe Campaign v7 or v8 so your journeys can send emails, push notifications, and SMS through Campaign transactional messaging.
+**On this page:** Connect Journey Optimizer to Adobe Campaign v7 or v8 so your journeys can send emails, push notifications, and mobile messages through Campaign transactional messaging.
 
 >[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_acc"
 >title="Adobe Campaign v7/v8 actions"
->abstract="This integration is available for Adobe Campaign v7 and v8. It allows you to send emails, push notifications and SMS using Adobe Campaign Transactional Messaging capabilities. The connection between the Journey Optimizer and Campaign instances is setup by Adobe at provisioning time." 
+>abstract="This integration is available for Adobe Campaign v7 and v8. It allows you to send emails, push notifications and mobile messages using Adobe Campaign Transactional Messaging capabilities. The connection between the Journey Optimizer and Campaign instances is setup by Adobe at provisioning time." 
 
-If you have Adobe Campaign Classic v7 or Campaign v8, a specific custom action is available in your journeys to integrate Adobe Journey Optimizer and Adobe Campaign. This integration allows you to send emails, push notifications and SMS using Adobe Campaign Transactional Messaging capabilities. Learn more in this [end-to-end use case](../building-journeys/ajo-ac.md).
+If you have Adobe Campaign Classic v7 or Campaign v8, a specific custom action is available in your journeys to integrate Adobe Journey Optimizer and Adobe Campaign. This integration allows you to send emails, push notifications and mobile messages using Adobe Campaign Transactional Messaging capabilities. Learn more in this [end-to-end use case](../building-journeys/ajo-ac.md).
 
 For each action configured, a [Campaign action activity](../building-journeys/using-adobe-campaign-v7-v8.md) is available in the journey designer palette.
 

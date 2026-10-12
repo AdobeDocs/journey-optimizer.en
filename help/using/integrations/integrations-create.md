@@ -31,7 +31,7 @@ level_v2:
 
 >[!AVAILABILITY]
 >
-> This integration feature is restricted to outbound channels (Email, SMS, and Push) and supports pulling JSON or HTML.
+> This integration feature is restricted to outbound channels (Email, Mobile message, and Push) and supports pulling JSON or HTML.
 
 A **[!UICONTROL Standard]** integration connects Journey Optimizer directly to a third-party API so you can pull external data or content into your outbound channels for personalization.
 

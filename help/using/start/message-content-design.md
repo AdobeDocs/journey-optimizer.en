@@ -60,7 +60,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-Designing message content in Adobe Journey Optimizer empowers you to create engaging, personalized communications across all channels. Whether you're crafting emails with rich visual layouts, building mobile-optimized push notifications, designing interactive in-app experiences, or sending SMS messages, this section provides comprehensive guidance on content creation best practices. Learn how to leverage templates and fragments for reusable content, apply personalization and dynamic content to tailor messages for each recipient, and ensure accessibility compliance. From understanding design principles to implementing advanced formatting options, you'll master the tools needed to deliver compelling, on-brand experiences that drive engagement and conversions.
+Designing message content in Adobe Journey Optimizer empowers you to create engaging, personalized communications across all channels. Whether you're crafting emails with rich visual layouts, building mobile-optimized push notifications, designing interactive in-app experiences, or sending mobile messages, this section provides comprehensive guidance on content creation best practices. Learn how to leverage templates and fragments for reusable content, apply personalization and dynamic content to tailor messages for each recipient, and ensure accessibility compliance. From understanding design principles to implementing advanced formatting options, you will master the tools needed to deliver compelling, on-brand experiences that drive engagement and conversions.
 
 ## Design message content
 
@@ -88,7 +88,7 @@ Create compelling push notifications for iOS and Android, configure title and bo
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
 
-Design SMS & MMS Messages
+Design Mobile Messages
 
 Compose personalized Mobile messages with SMS, enhance communications with multimedia content using MMS, and leverage dynamic content for targeted messaging.
 

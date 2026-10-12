@@ -201,13 +201,13 @@ In-app messages automatically track displays and user interactions. Configure tr
 
 +++
 
-+++SMS & MMS tracking
++++Mobile message tracking
 
-SMS tracking requires minimal setup—Journey Optimizer automatically shortens and tracks links you include in messages.
+Mobile message tracking requires minimal setup—Journey Optimizer automatically shortens and tracks links you include in messages.
 
 **How it works:**
 
-* **Automatic link tracking** - Add any URL to your SMS content using the URL helper function. Journey Optimizer automatically shortens the link and tracks clicks without additional configuration. To use URL shortening, you must first configure an SMS subdomain. [Learn more](../mobile/mobile-subdomains.md)
+* **Automatic link tracking** - Add any URL to your mobile content using the URL helper function. Journey Optimizer automatically shortens the link and tracks clicks without additional configuration. To use URL shortening, you must first configure an SMS subdomain. [Learn more](../mobile/mobile-subdomains.md)
 
 * **Inbound message tracking** - Replies from recipients are automatically captured, allowing you to monitor two-way conversations and response patterns. [Learn more](../mobile/mobile-opt-out.md#sms-native-keywords)
 
@@ -282,7 +282,7 @@ Beyond channel-level tracking, configure tracking to measure overall performance
 
 * **Create custom reports and export data** - Build tailored reports and export tracking data to external systems for deeper analysis. [Learn more](../reports/sharing-overview.md)
 
-* **View unified performance:** Access comprehensive reports for both campaigns and journeys to compare performance across email, push, SMS, and other channels, and to understand which combinations drive the best results. [Campaign reports](../reports/campaign-global-report-cja.md) | [Journey reports](../reports/journey-global-report-cja.md)
+* **View unified performance:** Access comprehensive reports for both campaigns and journeys to compare performance across email, push, mobile message, and other channels, and to understand which combinations drive the best results. [Campaign reports](../reports/campaign-global-report-cja.md) | [Journey reports](../reports/journey-global-report-cja.md)
 
 ## Track optimization & decisioning performance {#optimization-decisioning-tracking}
 

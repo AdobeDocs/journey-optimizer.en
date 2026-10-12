@@ -90,7 +90,7 @@ After entrance, you can use **Unitary event** or **Audience qualification** acti
 
 ### Action activities {#action-activities-impact}
 
-Finally, **action** activities can be impacted by the profile load coming from journeys and can also affect processing rate. These include native channels like Email, SMS, and Push, plus custom actions, jumps to other journeys, and update profile activities. For example, a custom action targeting an external endpoint with a high response time will slow the journey processing rate.
+Finally, **action** activities can be impacted by the profile load coming from journeys and can also affect processing rate. These include native channels like Email, Mobile message, and Push, plus custom actions, jumps to other journeys, and update profile activities. For example, a custom action targeting an external endpoint with a high response time will slow the journey processing rate.
 
 For custom actions, the default capping is 300,000 calls per minute, which can be changed with a custom capping policy. Learn more about custom action capping in [this section](../configuration/external-systems.md#capping).
 

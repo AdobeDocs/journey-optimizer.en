@@ -64,7 +64,7 @@ WhatsApp depends on audience adoption and explicit consent, so it is not suited 
 
 * Your audience does not use WhatsApp, since adoption varies widely by region and demographic
 * Recipients have not given explicit opt-in, which is required by Meta's messaging policies
-* The message is urgent and needs guaranteed delivery, which SMS or push handles better given WhatsApp's delivery and template review constraints
+* The message is urgent and needs guaranteed delivery, which mobile messages or push handles better given WhatsApp's delivery and template review constraints
 * The content is lengthy or complex and better suited to email, which offers more space and richer formatting
 * Real-time conversational support is not feasible on your side, since two-way WhatsApp threads set an expectation of a timely reply
 

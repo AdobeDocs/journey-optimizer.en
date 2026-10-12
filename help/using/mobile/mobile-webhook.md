@@ -77,7 +77,7 @@ When setting up a webhook, you can define its purpose based on the type of data 
 
 {{$include /help/_includes/mobile-opt-out-keyword-override.md}}
 
-Depending on your provider, there will be different expectations on what needs to be set up to have a successful SMS implementation:
+Depending on your provider, there will be different expectations on what needs to be set up to have a successful mobile implementation:
 
 * **Sinch and Sinch Conversational**: Create one webhook that handles both inbound and feedback events. No payload configuration is required.
 

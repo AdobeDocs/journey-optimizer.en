@@ -58,7 +58,7 @@ Use it when the campaign can run multiple times, or example, when you schedule t
 
 Typical uses:
 
-* **Messaging and audiences**: Pull only new sign-ups, new purchasers, or other "new since last run" segments into the next step (e.g. email, SMS).
+* **Messaging and audiences**: Pull only new sign-ups, new purchasers, or other "new since last run" segments into the next step (e.g. email, mobile message).
 * **Ongoing exports**: Send only new or updated rows to files for reporting or BI tools, without duplicating what you already exported.
 
 >[!IMPORTANT]

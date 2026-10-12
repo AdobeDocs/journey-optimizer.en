@@ -52,7 +52,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_admin_msg_export"
 >title="Retain and export your sent content"
->abstract="Selecting this option allows you to write the content of the sent email or SMS messages using this configuration to an [!DNL Experience Platform] dataset. Records are retained for 7 calendar days from ingestion, during which you can export them to your own storage."
+>abstract="Selecting this option allows you to write the content of the sent email or mobile messages using this configuration to an [!DNL Experience Platform] dataset. Records are retained for 7 calendar days from ingestion, during which you can export them to your own storage."
 
 >[!AVAILABILITY]
 >
@@ -153,7 +153,7 @@ The examples below show the overall shape of records written to the AJO Message 
 
 Expand each section to view the full sample JSON.
 
-+++ SMS export example
++++ Mobile export example
 
 ```json
 {
@@ -341,7 +341,7 @@ Message Export enables customers to export fully rendered messages (Email and Mo
 Message Export supports:
 
 * Email
-* SMS
+* Mobile message
 
 +++
 

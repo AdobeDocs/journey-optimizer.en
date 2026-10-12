@@ -160,7 +160,7 @@ Let's say you want to target your customers through journeys and campaigns based
 <!--
 Consent policies are comprised of two logical components:
 
-* **If**: The condition that will trigger the policy check, based on a certain marketing action (email, SMS, push, custom action, etc.) being performed, the presence of certain data usage labels, or a combination of the two.
+* **If**: The condition that will trigger the policy check, based on a certain marketing action (email, mobile message, push, custom action, etc.) being performed, the presence of certain data usage labels, or a combination of the two.
 
 * **Then**: The consent attribute must be present for a profile to be included in the action that triggered the policy. More than one field can also be selected.
 -->

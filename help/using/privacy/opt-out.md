@@ -74,7 +74,7 @@ To verify a profile's push consent status in Adobe Experience Platform:
 >
 >For compliance use cases requiring explicit push consent tracking, use the **`consents.marketing.push.val`** attribute from the [Consents and Preferences field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. A value of `y` indicates explicit opt-in; `n` indicates explicit opt-out.
 
-Learn how to manage opt-out in Journey Optimizer email and SMS messages in these sections: 
+Learn how to manage opt-out in Journey Optimizer email and mobile messages in these sections: 
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>

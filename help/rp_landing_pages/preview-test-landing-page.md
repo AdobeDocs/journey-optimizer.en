@@ -103,7 +103,7 @@ Choose your testing approach based on your goal:
 
 ## Testing workflow checklist
 
-**Context:** Recommended 5-step testing sequence applicable to all channels (email, SMS, push, web, in-app).
+**Context:** Recommended 5-step testing sequence applicable to all channels (email, mobile message, push, web, in-app).
 
 Follow this sequence for comprehensive validation:
 
