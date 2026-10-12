@@ -145,7 +145,7 @@ Learn more about [Journey Optimizer + Campaign](../building-journeys/ajo-ac.md).
 You can also set up an integration with Adobe Campaign Standard to send messages in your journeys.
 
 Learn more about [Journey Optimizer + Campaign Standard](../building-journeys/using-adobe-campaign-standard.md).
-s
+
 ## Adobe Workfront {#integration-workfront}
 
 Use the Adobe Journey Optimizer modules in Adobe Workfront to create, read, update, or delete records, or perform a custom API call to the Adobe Journey Optimizer API.
