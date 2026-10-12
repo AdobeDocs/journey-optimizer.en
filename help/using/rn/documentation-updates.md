@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
+* The **Manage fragments** page now clarifies that fragment changes made after a Read Audience journey has started apply to the next batch run for recurring journeys, while one-time journeys must be republished. [Read more](../content-management/manage-fragments.md#edit-fragments)
+
 * The **Manage allowed IPs** page now clarifies that changes to the allowed list are cached and can take up to one hour to be enforced, whether you add, edit, or remove IPs. [Read more](../configuration/waf-ip-allowlist.md#waf-ip-allowlist-add)
 
 * The **Add constraints to an offer** page now clarifies that Edge Decisioning frequency capping is enforced only in edge regions associated with your Organization's hub region, and that profile counters are not shared across edge regions. A VA7 example and guidance for global audiences have been added. [Read more](../offers/offer-library/add-constraints.md#frequency-capping)
