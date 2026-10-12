@@ -73,11 +73,7 @@ When implementing a solution, there are requirements for externally-facing compo
 
 While these requirements are being managed through components hosted by both Adobe and the customer, they include URLs which can be seen by the recipients of the emails. To avoid having URLs which indicate the underlying technical solution or hosting provider, subdomains can be set up to make this transparent to the recipients of the emails.
 
-**Learn more**
-
-* Learn how to [delegate your subdomains](delegate-subdomain.md) directly from the interface
-* Learn how to [add Google TXT records](google-txt.md) to your subdomains to ensure the successful delivery of emails to Gmail addresses
-* Learn how to [access the PTR records](ptr-records.md) generated for your subdomains, allowing them to be verified by sending mail servers
+Learn how to [delegate your subdomains](delegate-subdomain.md) directly from the interface.
 
 ## Subdomain configuration methods {#subdomain-delegation-methods}
 
@@ -88,8 +84,6 @@ The available setup methods are as follows.
 ### Fully delegate a subdomain to Adobe (recommended) {#full-subdomain-delegation}
 
 [!DNL Journey Optimizer] allows you to fully delegate your subdomains to Adobe directly from the product interface. By doing so, Adobe will be able to deliver messages as a managed service by controlling and maintaining all aspects of DNS that are required for delivering, rendering and tracking.
-
-<!--The subdomain is fully delegated to Adobe. Adobe is able to control and maintain all aspects of DNS that are required for delivering, rendering and tracking messages.-->
 
 You can rely on Adobe to maintain the DNS infrastructure required to meet industry-standard deliverability requirements for your email marketing sending domains, while continuing to maintain and control DNS for your internal email domains.
 
@@ -121,16 +115,9 @@ In this case, you completely own and manage our own subdomains and have full con
 
 Learn how to [set up a custom subdomain](delegate-custom-subdomain.md). If your subdomain currently uses CNAME, you can also [migrate from CNAME to custom delegation](custom-subdomain-migration.md).
 
-## Comparing the configuration methods
+## Compare the configuration methods {#compare-configuration-methods}
 
 The table below provides a summary of how these methods work, as well as the implied level of effort:
-<!--
-| Configuration method | How it works | Level of effort |
-|---|---|---|
-| **Full delegation** | Create the subdomain and namespace record. Adobe will then configure all DNS records required for Adobe Journey Optimizer.<br/><br/>In this setup, Adobe is fully responsible for managing the subdomain and all the DNS records. | Low |
-| **CNAME method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Journey Optimizer DNS servers.<br/><br/>In this setup, both you and Adobe share responsibility for maintaining DNS. | High |
--->
-
 
 | Configuration method | How it works | Level of effort |
 |---|---|---|
@@ -141,5 +128,14 @@ The table below provides a summary of how these methods work, as well as the imp
 Additional information on domain configuration is available in [this documentation](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/product-specific-resources/campaign/ac-domain-name-setup.html){target="_blank"}.
 
 If you have any question regarding subdomain configuration methods, reach out to Adobe, or contact Customer Care to request Deliverability consulting.
+
+## Additional resources {#additional-resources}
+
+* Learn how to [set up DMARC records](dmarc-record.md) to enhance email security and deliverability for your subdomains
+* Learn how to [add Google TXT records](google-txt.md) to your subdomains to ensure the successful delivery of emails to Gmail addresses
+* Learn how to [access the PTR records](ptr-records.md) generated for your subdomains, allowing them to be verified by sending mail servers
+* Learn how to [create IP pools](ip-pools.md) to group IP addresses and manage subdomain reputation
+* Learn how to configure subdomains for [landing pages](../landing-pages/lp-subdomains.md), [web experiences](../web/web-delegated-subdomains.md) and [mobile](../mobile/mobile-subdomains.md)
+* Get started with [deliverability](../reports/deliverability.md), or learn how to [manage the suppression list](manage-suppression-list.md)
 
 

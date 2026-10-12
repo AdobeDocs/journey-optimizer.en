@@ -120,7 +120,7 @@ Learn how to prioritize and manage communication conflicts across campaigns and 
 - **[Comprehensive Reporting](./rp_landing_pages/reporting-landing-page.md)** - Analyze and optimize journeys, campaigns, and channels with advanced reporting features.
 - **[Decision Capabilities](./rp_landing_pages/decisioning-landing-page.md)** - Leverage decisioning tools to create and manage personalized offers and optimize marketing workflows.
 - **[Comprehensive Data Management](./rp_landing_pages/data-management-landing-page.md)** - Manage data effectively with tools for governance, schema usage, and querying capabilities.
-- **[Channel Configuration](./rp_landing_pages/configuration-landing-page.md)** - Set up and optimize communication channels for compliance and enhanced campaign performance.
+- **[Channel Configuration](./using/configuration/get-started-configuration.md)** - Set up and optimize communication channels for compliance and enhanced campaign performance.
 - **[Journey Configuration](./rp_landing_pages/configure-journeys-landing-page.md)** - Configure data sources, events, and actions to build seamless customer journeys.
 - **[Connect Systems and Environments](./rp_landing_pages/connect-systems-landing-page.md)** - Integrate Adobe Journey Optimizer with external systems, APIs, and Adobe solutions.
 - **[Managing Access Control](./rp_landing_pages/access-control-landing-page.md)** - Control user access, roles, and permissions to protect data and ensure governance.

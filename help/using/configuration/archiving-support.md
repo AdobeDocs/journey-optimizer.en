@@ -47,6 +47,11 @@ topic_v2:
 ---
 # Archive emails using BCC {#archiving-support}
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_preset_bcc"
+>title="Define a BCC email address"
+>abstract="You can keep a copy of sent emails by sending them to a BCC inbox. Enter the email address of your choice so that every email sent is blind-copied to this BCC address. Note that the BCC address domain must be different from any subdomain delegated to Adobe. This feature is optional."
+
 >[!BEGINSHADEBOX]
 
 **On this page:** Learn how to configure BCC email in Adobe Journey Optimizer to retain copies of sent emails in your own mailbox or external archiving system.
@@ -59,16 +64,9 @@ topic_v2:
 >
 >For a comparison of the archiving options in Journey Optimizer, see [Get started with message archiving](archiving-overview.md).
 
-## How to use BCC for emails {#bcc-email}
-
->[!CONTEXTUALHELP]
->id="ajo_admin_preset_bcc"
->title="Define a BCC email address"
->abstract="You can keep a copy of sent emails by sending them to a BCC inbox. Enter the email address of your choice so that every email sent is blind-copied to this BCC address. Note that the BCC address domain must be different from any subdomain delegated to Adobe. This feature is optional."
-
 You can send blind carbon copy (BCC) of an email sent by [!DNL Journey Optimizer] to a dedicated BCC address. This optional feature allows you to retain copies of email communications you send to your users for compliance and/or archival purposes. The BCC address is not visible to other recipients of the message.
 
-### Enable BCC email {#enable-bcc}
+## Enable BCC email {#enable-bcc}
 
 To enable the **[!UICONTROL BCC email]** option, enter the email address of your choice in the dedicated field of the [channel configuration](channel-surfaces.md). You can specify any external address in correct format, except an email address defined on a subdomain delegated to Adobe. For example, if you delegated the *marketing.luma.com* subdomain to Adobe, any address like *abc@marketing.luma.com* is prohibited.
 
@@ -91,7 +89,7 @@ The BCC email address setting is immediately saved and processed at the configur
 
 However, the BCC address gets picked up for sending communications following the logic described [here](../email/email-settings.md).
 
-### Recommendations and limitations {#bcc-recommendations-limitations}
+## Recommendations and limitations {#bcc-recommendations-limitations}
 
 * To ensure your privacy compliance, BCC emails must be processed by an archiving system capable of storing securely personally identifiable information (PII).
 
@@ -101,8 +99,6 @@ However, the BCC address gets picked up for sending communications following the
 
 * Messages may be delivered to the BCC email address before the target recipients. BCC messages can also been sent even though the original messages may have [bounced](../reports/suppression-list.md#delivery-failures).
 
-    <!--OR: Only successfully sent emails are taken in account. [Bounces](../reports/suppression-list.md#delivery-failures) are not. TO CHECK -->
-
 * Do not open or click through the emails sent to the BCC address as it is taken into account in the total opens and clicks from the send analysis, which could cause some miscalculations in [reports](../reports/report-gs-cja.md). 
 
 * Do not mark messages as spam in the BCC inbox, as it will impact all the other emails sent to this address.
@@ -111,7 +107,7 @@ However, the BCC address gets picked up for sending communications following the
 >
 >Do not click the unsubscribe link in the emails sent to the BCC address as you will immediately unsubscribe the corresponding recipients.
 
-### GDPR compliance {#gdpr-compliance}
+## GDPR compliance {#gdpr-compliance}
 
 Regulations such as GDPR state that Data Subjects should be able to modify their consent at any time. Because the BCC emails you are sending with Journey Optimizer include securely personally identifiable information (PII), you must edit the **[!UICONTROL AJO Secondary Recipient Feedback Event Schema]** to be able to manage these PII in compliance with GDPR and similar regulations.
 
@@ -139,7 +135,7 @@ To do this, follow the steps below.
 >
 >Learn more about managing Privacy and the applicable regulations in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"}.
 
-### BCC reporting data {#bcc-reporting}
+## BCC reporting data {#bcc-reporting}
 
 Reporting as such on BCC is not available in the journey and message reports. However, information is stored on a system dataset called **[!UICONTROL AJO Secondary Recipient Feedback Event Dataset]**. You can run queries against this dataset to find useful information for debugging purpose for example.
 
@@ -248,7 +244,7 @@ Depending on what information you are looking for, you can run the following que
     WHERE bcc.timestamp > now() - INTERVAL '30' DAY;
    ```
 
-### Use message header to reconcile BCC copy and sent email information {#bcc-header}
+## Use message header to reconcile BCC copy and sent email information {#bcc-header}
 
 When your email BCC copies are archived on an external system for example, you can retrieve the information on the corresponding sent emails using a header included in the message.
 
