@@ -468,6 +468,7 @@ nudge: yes
     + Configure custom channels {#configure-custom-channel}
       + [Set up your custom channels](using/custom-channel/configure-custom-channel.md)
       + [Create a custom channel](using/custom-channel/create-custom-channel.md)
+      + [Configure OAuth 2.0 authentication](using/custom-channel/custom-channel-oauth2.md)
       + [Manage API credentials](using/custom-channel/custom-channel-api-credentials.md)
       + [Delegate a subdomain](using/custom-channel/custom-channel-subdomains.md)
       + [Create a channel configuration](using/custom-channel/custom-channel-configuration.md)
