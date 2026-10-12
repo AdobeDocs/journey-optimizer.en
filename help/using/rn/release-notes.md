@@ -169,6 +169,12 @@ The following capability is coming to channels in this release.
 
 +++
 
+### Loyalty {#oct-26-loyalty}
+
+* **Performance settings in Loyalty configurations** - Use the **Performance settings** tab to select your loyalty profile and event datasets and configure your organization's priority **Key performance indicator** for loyalty insights. Choose Revenue, Engagement, Redemptions, or Conversions to determine which insights receive emphasis in your feed. [Learn more](../loyalty-challenges/loyalty-admin.md#performance-settings)
+
+  Availability date: October 1, 2026
+
 ### Integrations {#oct-26-integrations}
 
 +++ Coming soon — **Information below is subject to change.**
