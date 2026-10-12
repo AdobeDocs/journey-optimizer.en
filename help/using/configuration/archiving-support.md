@@ -55,7 +55,7 @@ topic_v2:
 
 [!DNL Journey Optimizer] provides a built-in BCC email capability to send copies of outbound emails to a dedicated mailbox. Your organization can retain these copies in the mailbox or process them using an external archiving system.
 
-For a comparison of BCC email and Message Export, including supported channels and retention considerations, see [Get started with message archiving](archiving-overview.md). The overview also explains why mirror pages and the Entity Dataset are not substitutes for archiving sent messages.
+For a comparison of BCC email and Message Export, including supported channels and retention considerations, see [Get started with message archiving](archiving-overview.md).
 
 ## How to use BCC for emails {#bcc-email}
 
