@@ -53,8 +53,6 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-## How to archive messages {#about-archiving}
-
 [!DNL Journey Optimizer] provides a built-in BCC email capability to send copies of outbound emails to a dedicated mailbox. Your organization can retain these copies in the mailbox or process them using an external archiving system.
 
 For a comparison of BCC email and Message Export, including supported channels and retention considerations, see [Get started with message archiving](archiving-overview.md). The overview also explains why mirror pages and the Entity Dataset are not substitutes for archiving sent messages.
@@ -312,11 +310,3 @@ WHERE
   bcc._experience.customerJourneyManagement.messageProfile.messageProfileID = '<x-message-profile-id>'
 ORDER BY mfe.timestamp DESC;
 ```
-
-## Frequently asked questions {#faq}
-
-+++ Which option should I use if I need to see the exact message sent to a customer?
-
-Use [BCC](#bcc-email) when you need a hidden copy of an outbound email retained in a mailbox. Use [Message Export](message-export.md) when you need sent email or Mobile content and related metadata in an external system. See [Get started with message archiving](archiving-overview.md) to compare the two options and their limitations.
-
-+++
