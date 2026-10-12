@@ -115,7 +115,7 @@ Push notifications work best when you need to reach users quickly and directly o
 | --- | --- | --- |
 | Time-sensitive updates | Delivered instantly, even when users are not actively using your app | Flight delay alerts, order status changes, breaking news |
 | Re-engagement | Prompts users to return to your app after a period of inactivity | Cart abandonment reminders, win-back campaigns |
-| Cost reduction vs. SMS | No per-message carrier fees, unlike SMS | High-volume promotional or transactional notifications |
+| Cost reduction vs. mobile message | No per-message carrier fees, unlike mobile message | High-volume promotional or transactional notifications |
 | Rich, interactive content | Supports images, action buttons, and deep links | Product promotions with tap-to-buy buttons, rich media previews |
 | Device-native capabilities | Leverages OS-level features not available to other channels | Vibration alerts, app icon badges, geofenced location triggers |
 | High opt-in likelihood | Users are prompted to opt in as early as app install or first launch | Onboarding flows, day-one engagement campaigns |

@@ -61,7 +61,7 @@ Enhance targeting by shifting between data entities within your campaign.
 
 Channel Activities
 
-Set up email, SMS, push notifications, and direct mail for cross-channel orchestration.
+Set up email, mobile message, push notifications, and direct mail for cross-channel orchestration.
 
 [Learn how to configure channel activities](../using/orchestrated/activities/channels.md)
 :::

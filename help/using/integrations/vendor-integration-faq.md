@@ -106,7 +106,7 @@ In campaign or journey content, use **[!UICONTROL Add personalization]** on a Te
 
 +++ Can I use Integrations in journeys and campaigns?
 
-Yes. The feature is available for both journeys and campaigns for **outbound** channels (for example email, SMS, and push), within current product limits.
+Yes. The feature is available for both journeys and campaigns for **outbound** channels (for example email, mobile message, and push), within current product limits.
 
 ➡️ [Learn more on journeys and campaigns](integrations.md#limitations)
 
@@ -124,7 +124,7 @@ The Integrations feature is supported in Fragments.
 
 +++ Which channels support Integrations?
 
-**Outbound** channels are supported (for example email, SMS, and push).
+**Outbound** channels are supported (for example email, mobile message, and push).
 
 ➡️ [Learn more on supported channels](integrations.md#limitations)
 

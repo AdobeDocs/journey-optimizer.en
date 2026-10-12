@@ -13,7 +13,7 @@ product_v2:
 
 Managing consent is key to building trust with your audience while ensuring compliance with privacy regulations such as GDPR. Consent in Adobe Journey Optimizer works alongside [privacy management](../using/privacy/get-started-privacy.md)—including [data requests](../using/privacy/requests.md) and [audit logs](../using/privacy/audit-logs.md)—and [Data Governance](../using/action/action-privacy.md) policies that protect sensitive fields from being exported to third-party systems.
 
-You can handle consent in three ways: **opt-out preferences** for unsubscriptions across email, SMS, and push; **consent policies** applied to your campaigns and journeys to control data usage and marketing actions; and **preference management** to target customers based on the subscription topics and channels they choose. The topics below guide you through each step.
+You can handle consent in three ways: **opt-out preferences** for unsubscriptions across email, mobile message, and push; **consent policies** applied to your campaigns and journeys to control data usage and marketing actions; and **preference management** to target customers based on the subscription topics and channels they choose. The topics below guide you through each step.
 
 ## Manage Consent
 

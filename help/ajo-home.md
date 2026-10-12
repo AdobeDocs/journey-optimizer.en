@@ -11,7 +11,7 @@ product_v2:
 ---
 # Adobe Journey Optimizer Documentation{#section-overview}
 
-Adobe Journey Optimizer empowers teams to design and deliver seamless, personalized customer experiences across channels like email, SMS, and more. By combining advanced tools for campaign orchestration, data management, and decision-making, it helps you create journeys that adapt to customer needs in real time. This documentation offers a roadmap for mastering the platform- from exploring its latest features and integrations to learning how to manage audiences, configure journeys, and analyze performance. Whether you're a marketer, data analyst, or campaign manager, you'll find step-by-step guides, best practices, and resources tailored to help you achieve your goals with confidence.
+Adobe Journey Optimizer empowers teams to design and deliver seamless, personalized customer experiences across channels like email, mobile messages, and more. By combining advanced tools for campaign orchestration, data management, and decision-making, it helps you create journeys that adapt to customer needs in real time. This documentation offers a roadmap for mastering the platform- from exploring its latest features and integrations to learning how to manage audiences, configure journeys, and analyze performance. Whether you're a marketer, data analyst, or campaign manager, you'll find step-by-step guides, best practices, and resources tailored to help you achieve your goals with confidence.
 
 ## What's new? {#section-new}
 
@@ -95,7 +95,7 @@ Detailed guidance on creating, managing, and optimizing various campaign types f
 
 Communication Channels
 
-Configure and manage email, SMS, push notifications, and other channels for personalized customer interactions.
+Configure and manage email, mobile messages, push notifications, and other channels for personalized customer interactions.
 
 [Explore Channels](./using/channels/gs-channels.md)
 :::

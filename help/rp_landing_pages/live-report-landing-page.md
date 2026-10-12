@@ -11,7 +11,7 @@ product_v2:
 ---
 # Live report{#section-overview}
 
-The Live report feature in Adobe Journey Optimizer empowers you to track and analyze the real-time performance of your campaigns, journeys, and messages, all within a dynamic, customizable dashboard. Whether you want to monitor email engagement, SMS delivery rates, or landing page conversions, Live reports offer clear insights to help you optimize outcomes. You’ll learn how to tailor dashboards to your needs, export data for deeper analysis, and explore detailed metrics across different communication channels. Dive into child topics like Journey and Campaign reports to uncover actionable trends, identify issues, and make data-driven decisions with confidence.
+The Live report feature in Adobe Journey Optimizer empowers you to track and analyze the real-time performance of your campaigns, journeys, and messages, all within a dynamic, customizable dashboard. Whether you want to monitor email engagement, mobile delivery rates, or landing page conversions, Live reports offer clear insights to help you optimize outcomes. You'll learn how to tailor dashboards to your needs, export data for deeper analysis, and explore detailed metrics across different communication channels. Dive into child topics like Journey and Campaign reports to uncover actionable trends, identify issues, and make data-driven decisions with confidence.
 
 ## Live report features
 
@@ -31,7 +31,7 @@ Learn how to access, customize, and export Live reports to monitor journeys and 
 
 List of Metrics
 
-Understand the definitions and categories of metrics used in Live reports for journeys, emails, SMS, and more.
+Understand the definitions and categories of metrics used in Live reports for journeys, emails, mobile messages, and more.
 
 [View the metrics reference](../using/reports/live-report-components.md)
 :::
@@ -51,7 +51,7 @@ Analyze the performance of journeys and associated communication channels in rea
 
 Campaign Live Report
 
-Visualize campaign performance across multiple channels like Email, Push, SMS, Web, and Direct Mail.
+Visualize campaign performance across multiple channels like Email, Push, Mobile messages, Web, and Direct Mail.
 
 [Learn about Campaign reporting](../using/reports/campaign-live-report.md)
 :::

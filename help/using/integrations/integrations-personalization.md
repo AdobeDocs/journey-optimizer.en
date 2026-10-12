@@ -29,7 +29,7 @@ level_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how marketers apply configured integrations to personalize email, SMS, and push content and chain one API call to another for richer, dynamic messaging.
+**On this page:** Learn how marketers apply configured integrations to personalize email, mobile message, and push content and chain one API call to another for richer, dynamic messaging.
 
 >[!ENDSHADEBOX]
 
@@ -266,7 +266,7 @@ Fetch and extract the mbox, then render `content` directly. Skip `parseJson`.
 
 ## How-to video {#video}
 
-This video shows how **Integrations** connect Adobe Journey Optimizer to external APIs so you can pull live data and content into **outbound** channels, Email, SMS, and Push, for more relevant personalization.
+This video shows how **Integrations** connect Adobe Journey Optimizer to external APIs so you can pull live data and content into **outbound** channels, Email, Mobile message, and Push, for more relevant personalization.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3484118/?learn=on)
 

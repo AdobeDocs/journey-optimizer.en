@@ -79,10 +79,10 @@ Control timing in journeys with duration or custom waits to pause execution.
 ## Additional Resources
 
 - **[Using an Audience in a Journey](../using/building-journeys/read-audience.md)** - Enable individuals from Adobe Experience Platform audiences to enter journeys dynamically.
-- **[Built-in Channel Actions](../using/building-journeys/journey-action.md)** - Use journeys to deliver messages or experiences via email, SMS, push notifications, In-app, Web, Code-based experiences, or Content Cards using Journey Optimizer's built-in capabilities.
+- **[Built-in Channel Actions](../using/building-journeys/journey-action.md)** - Use journeys to deliver messages or experiences via email, mobile messages, push notifications, In-app, Web, Code-based experiences, or Content Cards using Journey Optimizer's built-in capabilities.
 - **[Using Custom Actions](../using/building-journeys/using-custom-actions.md)** - Integrate third-party systems using REST APIs with dynamic paths, headers, and query parameters.
 - **[Content Decision Activity](../using/building-journeys/content-decision.md)** - Deliver personalized offers in journeys using decision policies and content strategies.
-- **[Adobe Campaign Standard Actions](../using/building-journeys/using-adobe-campaign-standard.md)** - Send transactional emails, SMS, and push notifications using Adobe Campaign Standard integration.
+- **[Adobe Campaign Standard Actions](../using/building-journeys/using-adobe-campaign-standard.md)** - Send transactional emails, mobile messages, and push notifications using Adobe Campaign Standard integration.
 - **[Adobe Campaign v7/v8 Actions](../using/building-journeys/using-adobe-campaign-v7-v8.md)** - Explore integration with Adobe Campaign v7/v8 for transactional messaging capabilities.
 - **[Using the Jump Activity](../using/building-journeys/jump.md)** - Streamline journey design by transferring individuals between journeys using Jump activities.
 - **[Using the Update Profile Activity](../using/building-journeys/update-profiles.md)** - Update Adobe Experience Platform profiles dynamically using information from events or data sources.
