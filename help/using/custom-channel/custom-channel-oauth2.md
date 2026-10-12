@@ -15,7 +15,7 @@ level: Experienced
 
 >[!ENDSHADEBOX]
 
-When you select **[!UICONTROL OAuth 2.0]** as the authentication type while [creating a custom channel](create-custom-channel.md#authentication-settings) or [managing API credentials](custom-channel-api-credentials.md), configure the token request that Adobe Journey Optimizer uses to retrieve an access token from your authorization server.
+When you select **[!UICONTROL OAuth 2.0]** as the authentication type while [creating a custom channel](create-custom-channel.md#authentication-settings), configure the token request that Adobe Journey Optimizer uses to retrieve an access token from your authorization server.
 
 Journey Optimizer sends the token request using the `endpoint`, `method`, `request`, and `policy` configuration. It then extracts the access token from the response using `tokenPath` and adds it to the delivery request using `locationConfig`.
 
@@ -23,7 +23,7 @@ The OAuth 2.0 authentication payload configures the request to the **token endpo
 
 ## Configure the token request {#token-request}
 
-Use the following examples to configure your authentication payload. Replace the example endpoint and credential values with those required by your authorization server. Include headers and query parameters only when your token endpoint requires them.
+Use the following examples to configure your token request. Replace the example endpoint and credential values with those required by your authorization server. The `headers` and `queryParams` entries in the examples are optional: remove them if your token endpoint does not require them, and remove the matching entries from `credentialPaths`.
 
 ### Form body example {#form-body-example}
 
@@ -170,6 +170,7 @@ Use a `json` payload when the token endpoint expects a JSON request body.
 | `request.headers` | Optional headers sent to the token endpoint. |
 | `request.queryParams` | Optional query parameters appended to the token endpoint URL. |
 | `request.payload` | Token request body. Supports `form` and `json` payloads. |
+| `request.payload.includeNullValues` | Defines whether fields with a null value are included in the token request body. |
 | `response.type` | Response format. Use `json` when the token endpoint returns a JSON response. |
 | `policy.timeoutInMilliseconds` | Maximum time to wait for the token endpoint response. |
 | `policy.cache` | Defines whether the OAuth token is cached and for how long. |
@@ -177,6 +178,8 @@ Use a `json` payload when the token endpoint expects a JSON request body.
 | `credentialPaths` | Paths to request fields that contain credentials. These fields are treated as credentials and can be managed securely. |
 | `tokenPath` | Dot-separated path to the access token in the OAuth response, for example, `access_token` or `data.access_token`. |
 | `locationConfig` | Defines where the retrieved token is added to the delivery request. |
+| `locationConfig.key` | Name of the header or query parameter that carries the token, for example, `Authorization`. |
+| `locationConfig.location` | Where the token is added: `header` or `queryParam`. |
 
 When token caching is enabled, Journey Optimizer reuses the OAuth token for the configured cache duration instead of calling the token endpoint for every delivery request.
 
