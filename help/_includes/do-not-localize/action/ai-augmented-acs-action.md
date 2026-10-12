@@ -36,7 +36,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Adobe Campaign Standard integration — Acronym: n/a — variants: Campaign Standard action, AdobeCampaignStandard action
+* Canonical name: Adobe Campaign Standard integration — Acronym: ACS (Adobe Campaign Standard) — variants: Campaign Standard action, AdobeCampaignStandard action
 * Do not confuse: "native channels of the Action activity" ≠ "Campaign Standard actions" (Adobe Campaign Standard integration actions), which cannot both be used in the same journey
 * Do not confuse: "Campaign Standard Email, Push, SMS actions" (available after configuring the integration) ≠ "Reactions event" (reacts to tracking data of a sent Campaign Standard message)
 

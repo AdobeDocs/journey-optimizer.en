@@ -32,7 +32,7 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Providing recipients the capability to unsubscribe from communications is a legal requirement, as is ensuring this choice is honored
-* Journey Optimizer provides ways of managing opt-out in email and SMS messages; push notifications do not require any action on your side, as recipients can unsubscribe through their devices
+* Journey Optimizer provides ways of managing opt-out in email and mobile messages; push notifications do not require any action on your side, as recipients can unsubscribe through their devices
 * By default, the value for the consent field is empty and treated as consent to receive communications; you can modify this default value while onboarding, or use consent policies to override the default logic
 * In decision management, personalization preferences are not automatically implemented in decision scopes used from a decisioning API or edge decisioning API request; you must manually enforce personalization consent
 * Decision scopes used in Journey Optimizer authored channels satisfy the personalization consent requirement from the journey or campaign they belong to

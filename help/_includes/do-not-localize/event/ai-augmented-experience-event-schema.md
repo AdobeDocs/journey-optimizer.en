@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains the requirements an XDM Experience Event schema must meet so that streamed events can be ingested into Adobe Experience Platform and used to trigger Journey Optimizer journeys.
+* **TL;DR:** This page explains the requirements an XDM Experience Event schema must meet for Journey Optimizer events, which are XDM Experience Events sent to Adobe Experience Platform via Streaming Ingestion.
 
 **Intents:**
 
@@ -31,7 +31,7 @@ For complete understanding, this information should be combined with the documen
 * The schema must be of the XDM ExperienceEvent class.
 * For system-generated events, the schema must include the Orchestration eventID field group.
 * Declare an identity field for identifying individual profiles in the event; if no identity is specified, an identity map can be used, which is not recommended.
-* To make the data available for profile, mark the schema and dataset for profile.
+* If you want the data to be available for profile, mark the schema and dataset for profile.
 * Starting July 8, 2025, new customer organizations cannot create expressions using experience event attributes in journey conditions.
 * Starting April 1, 2026, organizations that have not accessed experience events via journey expressions in the last 90 days will no longer have access to this capability; accessing context from the starting event of a journey is not impacted.
 

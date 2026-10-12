@@ -91,6 +91,25 @@ Use the corporate JIRA MCP tools (`add_jira_comment`, `update_jira_issue` for `f
 `bulk_transition_jira_issues`) or the JIRA UI. If you lack JIRA access, hand this step to
 someone who has it and note it in your report.
 
+## Page-fix tasks for writers
+
+When a block work shows that an MD page needs a change (a discrepancy between pages, an unclear
+statement, a missing guideline, a typo, stale wording), flag it in **Gaps found** and make sure a
+DOCAC task exists for the writers. **Find first, then create:**
+
+1. **Search DOCAC** for an existing task: `project = DOCAC AND resolution = Unresolved AND text ~
+   "<page-name>"` (also try the folder name and the key term). Check both open page-fix tasks and
+   the folder's task.
+2. **If one covers it:** link it to the block's task ("Relates") and add a comment with the new
+   finding (page, line, what to change). Do not create a duplicate.
+3. **If none does:** create a Task with the page(s), exact lines or quotes, the proposed
+   wording or question, the fix version, and the `AI-readiness` component plus the product
+   component. Link it to the block's task ("Relates").
+4. State in the task that after the page edit the block must be re-verified and its hash
+   refreshed (`references/rebaseline.md`).
+
+Cross-page conflicts go here too: name both pages and quote both statements.
+
 ## One folder = one branch = one task
 
 Do not mix unrelated folders in a single branch or PR. A new page added later is its own small

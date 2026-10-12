@@ -24,7 +24,7 @@ For complete understanding, this information should be combined with the documen
 * **Entry capping**: Limits the number of journey entries over a given period for a profile *(product-specific)*
 * **Concurrency capping**: Limits how many journeys a profile can be enrolled in simultaneously *(product-specific)*
 * **[!UICONTROL Prioritization look ahead]**: Field that arbitrates journey entries based on priority scores over a chosen period, scanning upcoming scheduled Read-Audience journeys *(product-specific)*
-* **Arbitration**: Using priority scores to decide which journeys a profile enters when caps apply *(product-specific)*
+* **Arbitration**: Using priority scores to arbitrate journey entries *(product-specific)*
 * **[!UICONTROL Capping]**: Field setting the maximum number of journeys a profile can enter or be enrolled in simultaneously *(product-specific)*
 * **CAP_REACHED / LOWER_PRIORITY**: Discard sub-reasons that identify why a profile did not enter a journey *(product-specific)*
 
@@ -38,14 +38,14 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: journey capping — Acronym: n/a — variants: journey capping & arbitration
+* Canonical name: journey capping — variants: journey capping & arbitration
 * Synonyms: none
 * Do not confuse: "[!UICONTROL Journey Entry Cap]" (entries over a period) ≠ "[!UICONTROL Journey Concurrency Cap]" (simultaneous enrollments)
 
 **FAQ:**
 
 * **Q: What is the difference between entry and concurrency capping?** — Entry capping limits journey entries over a period; concurrency capping limits how many journeys a profile is enrolled in simultaneously.
-* **Q: How are entries arbitrated when a cap is reached?** — By priority scores; the [!UICONTROL Prioritization look ahead] scans upcoming scheduled Read-Audience journeys to suppress entry when a higher-priority journey is coming up.
+* **Q: How are journey entries arbitrated?** — By priority scores; the [!UICONTROL Prioritization look ahead] scans upcoming scheduled Read-Audience journeys to suppress entry when a higher-priority journey is coming up.
 * **Q: Why can suppression be delayed after activation?** — If a journey is activated immediately, it can take up to 10 minutes for the system to begin suppressing customers.
 * **Q: How do I find why a profile did not enter a journey?** — Check the [!UICONTROL Journey Exclusions] table in the journey report, or query the discard sub-reason (CAP_REACHED or LOWER_PRIORITY).
 

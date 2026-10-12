@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 * For iOS and Android platforms, delivery is based solely on the app ID; if both apps share the same app ID, content is delivered to both regardless of the platform selected, and restricting delivery to a specific platform requires device-specific rules within your journey or campaign logic.
 * For reporting, the dataset used in your In-app implementation datastream must be included in your reporting configuration; a dataset not present in your app datastream will not display app data in reports.
 * If you are not using the `AEP Web SDK ExperienceEvent` and `Consumer Experience Event` field groups, you must add the `Experience Event - Proposition Interactions`, `Application Details`, `Commerce Details`, and `Web Details` field groups.
-* When targeting pseudonymous (unauthenticated) profiles, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage engageable profile count and costs (recommended).
+* When targeting pseudonymous (unauthenticated) profiles, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage engageable profile count and associated costs.
 
 **Terminology:**
 
@@ -59,4 +59,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: b9dc8b75 -->
+<!-- ai-section-version: 1 | source-hash: f8aa46e4 -->

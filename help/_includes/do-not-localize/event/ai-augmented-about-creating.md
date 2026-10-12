@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Configure a unitary event — Acronym: n/a — variants: none
+* Canonical name: Configure a unitary event
 * Synonyms: "Identity type" = "namespace"
 * Do not confuse: "Rule Based" (uses an Event ID condition, and all Experience Event schemas are available) ≠ "System Generated" (only schemas that have the eventID type field are available; the eventID field is automatically added to the selected fields)
 * Do not confuse: "Event ID condition" (rule used to identify events that trigger the journey) ≠ "Profile identifier" (key used to identify the person associated to the event)

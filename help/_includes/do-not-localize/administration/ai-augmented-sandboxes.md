@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-- **TL;DR:** Sandboxes partition your Journey Optimizer instance into isolated virtual workspaces for development, testing, and production; they are assigned to users through roles in the Permissions product, and content access is configured via shared folders in Admin Console.
+- **TL;DR:** Sandboxes partition your Journey Optimizer instance into isolated virtual workspaces for development, testing, and production; they are assigned through roles in Permissions, and content access is configured via shared folders in Admin Console.
 
 **Intents:**
 
@@ -32,7 +32,8 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-- Do not confuse: "Switching sandboxes" (clicking the active sandbox in the sandbox switcher and selecting another sandbox from the drop-down list) ≠ "Assigning a sandbox" (selecting the sandbox in the Sandboxes resource drop-down when editing a Role in Permissions) ≠ Adobe Experience Platform sandboxes, which can be created or reset from your Adobe Experience Platform instance
+- Variants: Adobe Experience Platform sandboxes (the page states Journey Optimizer reflects Adobe Experience Platform sandboxes created for a given organization, which can be created or reset from your Adobe Experience Platform instance)
+- Do not confuse: "Switching sandboxes" (clicking the active sandbox in the sandbox switcher and selecting another sandbox from the drop-down list) ≠ "Assigning a sandbox" (selecting the sandbox in the Sandboxes resource drop-down when editing a Role in Permissions)
 
 **FAQ:**
 

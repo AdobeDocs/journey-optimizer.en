@@ -38,7 +38,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Adobe Campaign Standard — Acronym: n/a — variants: Campaign Standard
+* Canonical name: Adobe Campaign Standard — Acronym: ACS — variants: Campaign Standard
 * Synonyms: "event" transactional messaging template = "real-time" template; "real-time transactional messages" = "rtEvent"
 * Do not confuse: "profile transactional template" (unsubscription mechanism handled automatically by Adobe Campaign Standard for email) ≠ "event-based template (rtEvent)" (incorporate a link in the message that directs recipients to an unsubscription landing page)
 

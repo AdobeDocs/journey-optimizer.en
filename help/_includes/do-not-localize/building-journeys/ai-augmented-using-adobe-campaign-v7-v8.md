@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to use Adobe Campaign v7/v8 as an action in Journey Optimizer journeys to send emails, push notifications, and SMS via Campaign Transactional Messaging.
+* **TL;DR:** This page explains how to use Adobe Campaign v7/v8 as an action in Journey Optimizer journeys to send emails, push notifications, and mobile messages via Campaign Transactional Messaging.
 
 **Intents:**
 
@@ -20,19 +20,19 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Campaign Transactional Messaging**: Adobe Campaign v7/v8 capability used to send emails, push notifications, and SMS from Journey Optimizer through a dedicated action *(product-specific)*
+* **Campaign Transactional Messaging**: Adobe Campaign v7/v8 capability used to send emails, push notifications, and mobile messages from Journey Optimizer through a dedicated action *(product-specific)*
 * **Action parameters**: The section where all the fields expected in the message payload are displayed and mapped to fields from the event or the data source *(product-specific)*
 
 **Guardrails:**
 
 * The connection between Journey Optimizer and the Campaign instance is set up by Adobe at provisioning time; contact Adobe to enable it.
-* A dedicated action must be configured before Campaign v7/v8 actions are available in the journey palette.
+* A dedicated action must be configured for the integration to work.
 * Campaign v7/v8 actions cannot be used with Read Audience or Audience Qualification activities.
 * Access to Campaign Transactional Messaging and the required permissions are prerequisites, along with a Campaign v7/v8 instance provisioned and connected to Journey Optimizer by Adobe.
 
 **Terminology:**
 
-* Canonical name: Adobe Campaign v7/v8 — Acronym: n/a — variants: Campaign v7, Campaign v8
+* Canonical name: Adobe Campaign v7/v8 — Acronym: ACC (Adobe Campaign Classic v7/v8) — variants: Campaign v7, Campaign v8
 * Do not confuse: "Campaign v7/v8 actions" (can be used alongside the native channels of the Action activity) ≠ "Campaign Standard actions" (cannot be combined with the native channels of the Action activity in the same journey)
 
 **FAQ:**

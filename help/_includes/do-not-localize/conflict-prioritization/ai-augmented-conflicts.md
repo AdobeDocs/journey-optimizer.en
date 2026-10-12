@@ -13,7 +13,7 @@ For complete understanding, this information should be combined with the documen
 
 **Intents:**
 
-* Identify overlapping journeys and campaigns before they go live
+* Check whether a journey or campaign overlaps with other journeys or campaigns while authoring it
 * Open the [!UICONTROL Potential conflicts] window with the [!UICONTROL View Potential Conflicts] button
 * Monitor overlap across timeline, audience, channel, capping rule set, and channel configuration
 * Filter the conflict list to refine the search for overlaps
@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **[!UICONTROL Potential conflicts]**: Window that opens from the button and shows all elements overlapping the current journey or campaign; you can open an overlapping journey or campaign by selecting its name *(product-specific)*
-* **Conflict viewer**: The place where live or scheduled journeys and campaigns that may overlap are listed *(product-specific)*
+* **Conflict viewer**: The viewer in which live or scheduled journeys and campaigns that may overlap show up *(product-specific)*
 * **[!UICONTROL View Potential Conflicts]**: Button in the journey or campaign properties that opens the potential conflicts window *(product-specific)*
 * **Unitary journey**: A journey type for which other journeys that start with the same event are displayed as potential conflicts *(product-specific)*
 * **Capping Rule Set**: An overlap area that identifies which journey types are capped and whether there is overlap within those *(product-specific)*
@@ -39,7 +39,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: potential conflicts — Acronym: n/a — variants: conflict viewer, View Potential Conflicts
+* Canonical name: potential conflicts — variants: conflict viewer, View Potential Conflicts
 * Synonyms: none
 
 **FAQ:**

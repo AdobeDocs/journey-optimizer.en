@@ -14,8 +14,7 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 
 * Create a composition workflow that combines existing Adobe Experience Platform audiences
-* Apply Audience, Split, Exclude, Enrich, and Rank activities to build new audiences
-* Enrich an audience with additional attributes from Adobe Experience Platform datasets
+* Add activities between the Audience and Save activities to build new audiences
 * Publish a composition to save the resulting audiences into Adobe Experience Platform
 * Access, duplicate, or delete existing compositions and track their status
 
@@ -26,9 +25,6 @@ For complete understanding, this information should be combined with the documen
 * **Resulting audiences**: The new audiences produced by a composition, saved back into Adobe Experience Platform once published *(product-specific)*
 * **Audience activity**: The starting-point activity that selects one or multiple audiences as the basis for the workflow *(product-specific)*
 * **Save activity**: The last-step activity that saves the result of the workflow into a new audience *(product-specific)*
-* **Enrich activity**: Activity that enriches an audience with additional attributes coming from Adobe Experience Platform datasets *(product-specific)*
-* **Rank activity**: Activity that ranks profiles based on a specific attribute and includes them into the composition *(product-specific)*
-* **Split activity**: Activity that divides the composition into multiple paths, saving one audience per path when published *(product-specific)*
 
 **Guardrails:**
 
@@ -42,8 +38,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Audience composition — Acronym: n/a — variants: composition, composition workflow
-* Synonyms: "resulting audiences" = "audiences created by the composition"
+* Canonical name: Audience composition — variants: composition, composition workflow
 * Do not confuse: "Draft" (composition in progress, not published) ≠ "Published" (composition published, resulting audiences saved and available)
 * Do not confuse: "Audience activity" (starting point of the composition) ≠ "Save activity" (last step that saves the result)
 
@@ -57,4 +52,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 3d7dfc65 -->
+<!-- ai-section-version: 1 | source-hash: ae73c1c2 -->

@@ -15,7 +15,7 @@ For complete understanding, this information should be combined with the documen
 
 * Create a custom access label directly in Journey Optimizer or via the Permissions product
 * Assign access labels to Journey Optimizer objects (journeys, campaigns, offers, etc.)
-* Restrict sensitive content to authorized users only
+* Limit access to an object with access labels, to protect sensitive digital assets from unauthorized users
 * Understand which permissions are required to create and assign labels
 
 **Glossary:**
@@ -34,14 +34,14 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Object level access control — Acronym: OLAC
-* Do not confuse: "core data usage labels" ≠ "custom labels" (the page names both as labels you can select to manage access to an object)
+* Variants: custom labels, core data usage labels (the page names both as labels you can assign to manage access to an object)
 
 **FAQ:**
 
 * **Q: Can I create a label directly in Journey Optimizer without going to the Permissions product?** — Yes; the page states you can also create Labels directly in Journey Optimizer: from an Adobe Journey Optimizer object, such as a newly created Campaign, click the Manage access button, then click Create label.
 * **Q: Which object types support OLAC labels?** — Journey, Campaign, Template, Fragment, Landing page, Offer, Static offer collection, Offer decision, Channel configuration, and IP warmup plan.
 * **Q: What permission is needed to assign a label to a journey?** — A role with a Manage permission, i.e., Manage journeys, Manage Campaigns, or Manage decisions; without this permission, the Manage access button is greyed out.
-* **Q: If a user has only the C1 label in their role, which objects can they access?** — Only C1-labeled or unlabeled objects.
+* **Q: If a user has the C1 label in their role, which objects can they access?** — Only C1-labeled or unlabeled objects.
 
 +++
 <!-- ai-accordion-version: 1 | source-hash: 5ae3809d -->

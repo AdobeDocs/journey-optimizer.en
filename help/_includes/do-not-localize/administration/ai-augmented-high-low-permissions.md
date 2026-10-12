@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** Journey Optimizer roles are built from high-level permissions, each of which encompasses low-level permissions, with the page listing them per resource (journey, rules, campaign, decision management, channel configurations, AI assistance, and orchestrated campaign).
+* **TL;DR:** Each role is composed of permissions, divided into high-level permissions (which encompass low-level permissions) and low-level permissions, with the page listing them per resource (journey, rules, campaign, decision management, channel configurations, AI assistance, and orchestrated campaign).
 
 **Intents:**
 
@@ -35,7 +35,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: Does the Manage journeys permission allow a user to publish journeys?** — The page states that the Publish journeys high-level permission allows users to publish journeys, and its low-level permissions include journeys.publish; the low-level permissions listed for Manage journeys do not include journeys.publish.
 * **Q: What does the Generate content permission grant?** — It allows users to access the Generate content menu in Journey Optimizer (low-level permission ai-assistant-generated-content.generate).
-* **Q: Can a user configure journey events without the Manage journeys permission?** — Manage journeys events, data sources and actions is a separate high-level permission that allows users to configure event and data configurations; its low-level permissions include journeys_events.read, journeys_events.write, and journeys_events.delete.
+* **Q: Can a user configure journey events without the Manage journeys permission?** — Manage journeys events, data sources and actions is listed as its own high-level permission that allows users to configure event and data configurations; its low-level permissions include journeys_events.read, journeys_events.write, and journeys_events.delete.
 * **Q: What low-level permissions are included in View journeys report?** — journeys_report.read and messages_report.read, plus datasets.read, queries.read, queries.write, and queries.delete from Adobe Experience Platform.
 
 +++

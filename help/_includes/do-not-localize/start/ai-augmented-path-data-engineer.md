@@ -33,7 +33,7 @@ For complete understanding, this information should be combined with the documen
 
 * Test profiles are required when using test mode in a journey and to preview and test messages before sending.
 * For standard journeys and campaigns, use XDM schemas; for Orchestrated campaigns, create relational schemas to enable multi-entity segmentation.
-* Message export datasets apply only when message export is enabled at the channel configuration level, after which sent email and SMS content is automatically exported to a dedicated Experience Platform dataset.
+* Message export datasets apply only when message export is enabled at the channel configuration level, after which sent email and Mobile message content is automatically exported to a dedicated Experience Platform dataset.
 * You can start working once the System Administrator has granted you access and prepared your environment.
 * To send messages in journeys, you must configure Data Sources, Events, and Actions.
 
