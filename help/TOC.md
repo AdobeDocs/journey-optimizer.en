@@ -951,7 +951,6 @@ nudge: yes
     + [Monitor inbound data with Edge](using/data/monitoring.md)
     + [Monitor data ingestion](using/data/monitor-data-ingestion.md)
 + Channel configuration {#configuration}
-  + [Channel configuration](/help/rp_landing_pages/configuration-landing-page.md)
   + [Get started with channels configuration](using/configuration/get-started-configuration.md)
   + [Set up channel configurations](using/configuration/channel-surfaces.md)
   + {hide-from-toc} [AJO Message Export schema](using/configuration/message-export-schema.md)
@@ -979,12 +978,12 @@ nudge: yes
     + [Suppression list](using/configuration/manage-suppression-list.md)
     + [Retries](using/configuration/retries.md)
     + [Allowed list](using/configuration/allow-list.md)
-  + [Use seed lists](using/configuration/seed-lists.md)
   + Archiving {#archiving}
     + [Get started with message archiving](using/configuration/archiving-overview.md)
     + [Archive emails using BCC](using/configuration/archiving-support.md)
     + [Export message content](using/configuration/message-export.md)
   + [Add a CC field to emails](using/configuration/cc-email-field.md)
+  + [Use seed lists](using/configuration/seed-lists.md)
   + [Manage execution fields](using/configuration/primary-email-addresses.md)
   + [Create feedback webhooks](using/configuration/feedback-webhooks.md)
   + [Manage allowed IPs](using/configuration/waf-ip-allowlist.md)
