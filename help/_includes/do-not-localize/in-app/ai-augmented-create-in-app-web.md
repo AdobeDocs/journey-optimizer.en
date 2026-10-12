@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Web In-app message**: An in-app message delivered within a web campaign in Journey Optimizer *(product-specific)*
+* **Web In-app message campaign**: A campaign created in Journey Optimizer, from configuring the Web In-app channel to defining the audience, triggers, and content *(product-specific)*
 * **Sent data to Platform**: A Platform-package trigger fired when the mobile app issues an edge experience event to send data to Adobe Experience Platform, usually the sendEvent API call from the AEP Edge extension *(product-specific)*
 * **Manual trigger**: A Manual-package trigger defined by two associated data elements, a key (a constant defining the data set) and a value (a variable belonging to the set) *(product-specific)*
 * **Trait**: An And-condition refinement; available traits are XDM event type and XDM value *(product-specific)*
@@ -31,15 +31,14 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Install the Web SDK tag extension to support Web In-app Messaging before creating the campaign.
+* Install the Web SDK tag extension to support Web In-app Messaging.
 * Web In-app Messaging supports two types of triggers: Sent data to platform and Manual triggers.
-* Campaign execution type must be either Scheduled or API-triggered.
+* You choose the campaign execution type: Scheduled or API-triggered.
 * Campaigns are executed on a specific date or on a recurring frequency, configured through the Schedule.
 
 **Terminology:**
 
-* Canonical name: Web In-app message campaign — Acronym: n/a — variants: Web In-app message, In-app message campaign for web
-* Synonyms: "Sent data to Platform" = "Sent data to platform trigger"
+* Canonical name: Web In-app message campaign — Acronym: n/a — variants: Web In-app message
 * Do not confuse: "Sent data to Platform" (Platform-package trigger) ≠ "Manual trigger" (Manual-package trigger using key/value data elements)
 * Do not confuse: "Or" condition (adds more Triggers to expand the rule) ≠ "And" condition (adds a custom Trait to fine-tune the rule)
 
@@ -54,4 +53,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 5d212ba5 -->
+<!-- ai-section-version: 1 | source-hash: fd20639f -->

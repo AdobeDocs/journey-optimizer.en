@@ -53,7 +53,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Explore the AI and machine learning features across Adobe Journey Optimizer, from CX Enterprise Coworker, AI Assistant, and specialized agents to generative content creation, AI-powered integrations and optimization capabilities across Journey Optimizer capabilities.
+**On this page:** Explore the AI and machine learning features across Adobe Journey Optimizer, from Adobe CX Enterprise Coworker, AI Assistant, and specialized agents to generative content creation, AI-powered integrations and optimization capabilities across Journey Optimizer capabilities.
 
 >[!ENDSHADEBOX]
 
@@ -63,7 +63,7 @@ Adobe Journey Optimizer harnesses the power of artificial intelligence and machi
 
 Use these grouped links to jump to the feature you need:
 
-* **Conversational AI & CX Enterprise Coworker:** [Coworker skills in Journey Optimizer](#cx-coworker), [MCP server](#mcp-server), [AI Assistant and Agents](#ai-assistant)
+* **Conversational AI & Coworker:** [Coworker skills in Journey Optimizer](#cx-coworker), [MCP server](#mcp-server), [AI Assistant and Agents](#ai-assistant)
 * **Content creation:** [AI-powered content generation](#content-generation)
 * **AI-related capabilities:** [AI features across Journey Optimizer](#ajo-ai-features): Formula optimization, Content experimentation, Send-Time optimization, Image to HTML, GenStudio for Performance Marketing, Brand alignment, AI models for decisioning)
 * **Help:** [FAQ](#faq)
@@ -72,7 +72,7 @@ Use these grouped links to jump to the feature you need:
 
 ### About Coworker {#about-cx-coworker}
 
-CX Enterprise Coworker is Adobe's conversational experience that integrates with your business applications to help you work more efficiently, automating customer experience and marketing workflows across your Adobe applications. Instead of executing manual configuration steps one at a time, you describe a business goal in natural language, and Coworker plans, executes, and validates the work.
+Coworker is Adobe's conversational experience that integrates with your business applications to help you work more efficiently, automating customer experience and marketing workflows across your Adobe applications. Instead of executing manual configuration steps one at a time, you describe a business goal in natural language, and Coworker plans, executes, and validates the work.
 
 Coworker is an evolution of AI Assistant: it keeps everything AI Assistant's agents already do (product knowledge, operational and data insights) while adding the enterprise harness, skills, governance, and memory needed to complete the work end to end, not just answer questions. Organizations are being transitioned from AI Assistant to Coworker on a rolling basis, and some organizations may retain access to AI Assistant until they are enabled for Coworker. [Learn more about the transition to Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/agents/trial){target="_blank"}.
 

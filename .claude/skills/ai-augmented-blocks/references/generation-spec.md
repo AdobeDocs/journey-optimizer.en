@@ -4,11 +4,38 @@ The single source of truth for what an AI Knowledge Reference block contains and
 written. Follow it exactly for every page. (This mirrors the legacy
 `.claude/commands/augmentedAIContent.md`; the skill is the canonical version.)
 
-## Golden rule
+## Sources rule
 
-A block may contain **only what is derivable from its own page body.** Not other pages, not
-general product knowledge, not HTML-commented / commented-out content. If the page does not say
-it, the block does not either.
+The goal of a block is to help AI tools retrieve the **right** information every time, with
+concrete guidance, examples / use cases and best practices. Everything in a block must therefore
+come from **the Journey Optimizer documentation** (`help/using/`), never from general product
+knowledge, inference, or HTML-commented / commented-out content.
+
+1. **The block's own page body is the primary source.** Start there. Rewording and restructuring
+   is fine; adding meaning is not.
+2. **Any related AJO docs page may add** concrete guidance, a sample, a use case or a best
+   practice, under the **cross-page safety rules** below. Record every related page you used in
+   the sync comment (`related: <folder>/<page>.md, ...`).
+3. If neither the page nor a related page says it, the block does not either. Report the missing
+   information under **Gaps found** (see `SKILL.md`, step 6).
+
+### Cross-page safety rules (no mix-up, no wrong guidance)
+
+- **Same scope.** A fact from a related page applies only if the scope matches: the same feature,
+  channel, journeys vs campaigns vs orchestrated campaigns, sandbox / organization level, and
+  the same UI (the single Action activity, not the legacy per-channel activities). Never carry a
+  limit, status, permission or behavior from one channel or feature to another.
+- **The own page wins.** A related page adds to the own page; it never overrides it.
+- **Conflicts are flagged, not resolved.** If the own page and a related page (or two related
+  pages) disagree, do not pick a side and do not blend them. Use only the own page's version, or
+  leave the point out, and flag the discrepancy (see "Page-fix tasks" in `git-jira-tracking.md`).
+- **Numbers keep their source.** Copy a number, limit or date exactly from its page, with that
+  page's scope and qualifier. Never combine figures from two pages.
+- **Prefer the most specific page.** Use the page that is about the topic, not a page that
+  mentions it in passing.
+- **Say where it comes from when it matters.** When a fact comes from a related page, word it so
+  it stays true on its own (name the feature it belongs to) rather than implying the own page says
+  it.
 
 ## Accordion + include syntax
 
@@ -44,7 +71,7 @@ title: AI Knowledge Reference
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: <first 8 chars of md5 of page body> -->
+<!-- ai-section-version: 1 | source-hash: <first 8 chars of md5 of page body> | related: <folder>/<page>.md, ... (only if related pages were used) -->
 ```
 
 - **Filename:** derive from the page path relative to its top-level `help/using/<folder>/`
@@ -65,7 +92,10 @@ This section contains structured knowledge intended to support interpretation, r
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 ```
 
-## The six sections, in order
+## The sections, in order
+
+Six sections are required (skip one only if the page yields nothing for it). Two more are
+optional and appear after the FAQ **only when the docs state them**: Examples and Best practices.
 
 Skip a section only if the page yields no meaningful content for it.
 
@@ -102,6 +132,13 @@ Limits, prerequisites, permissions, constraints stated on the page.
 ### 5. Terminology
 Canonical names, acronyms, variants, synonyms, disambiguation.
 
+- **SMS / Mobile message:** write "Mobile message" for the channel and list SMS as a variant
+  (`acronyms.md`, "Terms and distinctions"). Keep "SMS" only for SMS-specific guidance, exact
+  UI / permission / credential names, and where SMS is listed next to MMS and RCS.
+- **Acronyms:** include one only if it is used on the page body or is on the approved list in
+  `acronyms.md` (use the expansion given there). Never invent one. If there is none, omit the
+  line; do not write `Acronym: n/a`. Acronyms marked "needs confirmation" in that file are not
+  used until a writer confirms them.
 - **Synonyms** (`"A" = "B"`) only for **true equivalents** — both forms must appear on the page
   meaning the same thing. Anything that is a *contrast* goes under **Do not confuse**
   (`"X" ≠ "Y"`), not Synonyms.
@@ -112,22 +149,73 @@ Canonical names, acronyms, variants, synonyms, disambiguation.
 3–6 likely questions with short answers. Answers use the **same verbs and nouns as the page
 body**. Do not introduce "revert", "reset", or "roll back" unless the page uses them.
 
+### 7. Examples (optional)
+Concrete samples and use cases the docs give: a short scenario, a sample value or payload, a
+typical configuration. Keep each one short and exact, and name the feature it belongs to. Only
+what the page or a recorded related page states; never invent an example.
+
+### 8. Best practices (optional)
+Recommendations the docs give ("it is recommended", "for best performance", "we recommend"),
+each with its scope. Label them as recommendations, not as limits. Only what the docs state.
+
 ## What NOT to include
 
 - Do not rewrite or summarize body content, or give step-by-step instructions.
-- Do not invent content unsupported by the page.
+- Do not invent content unsupported by the docs (the page, or a recorded related page).
 - Do not use these imprecise terms unless they appear **verbatim** on the page:
   "synthetic", "fake data", "without real data", "revert", "roll back".
 - **No contractions** anywhere in block prose — spell out "is not", "does not", "cannot",
   "it is", etc. (The only exception is a verbatim product UI string such as
   `[!UICONTROL configuration doesn't exist]`, which is preserved exactly.)
 
+## Common generation errors (check each before gate 1)
+
+These are the mistakes the independent verifier most often had to fix. Look for them
+deliberately.
+
+- **Imported contrasts or definitions.** "Do not confuse" and Glossary entries must be built
+  from what *this page* says. Do not describe a neighbouring feature (for example Test mode or
+  Simulation on a Dry run page) from general knowledge. If the page only links to a comparison
+  page, say that and stop. Do not define a term the page uses but never explains; report it
+  under **Gaps found** instead.
+- **Wrong kind of label.** Use the page's own category word: do not call a mode a "status", a
+  flag a "boolean field", or a field a "dataset" unless the page does. A "status" is a
+  lifecycle value the page names as one.
+- **Merged facts.** When the page says A counts towards X and B counts towards Y, keep them
+  separate. Do not write "A and B count towards X and Y".
+- **Merged behaviours.** If the page gives two activity types different behaviours (for
+  example "not executed" versus "disabled, responses set to null"), state each one. Do not
+  collapse them into one phrase such as "disabled and not executed".
+- **"Only" and "any".** Copy the page's scope word. "Can be used in any Draft journey with no
+  error" is not the same claim as "Only Draft journeys with no errors can be used".
+- **Invented titles and links.** Name a link by its text on the page, not by the title of the
+  target page, unless the page uses that title.
+- **Added reassurance or consequences.** Do not add statements such as "no content is lost" or
+  "this is safe" that the page does not make.
+- **Informal synonyms.** A phrase used once as a verb or in passing (for example "smoke test")
+  is not a synonym for a feature name.
+- **"<channel> action" or "<channel> activity" in journeys.** The palette has ONE **Action**
+  activity (the legacy per-channel activities are deprecated). The user drags it onto the canvas
+  and selects the channel as the **action type**. After that, the canvas node shows the label the
+  user typed as its title and the **channel name as its type** (for example a node titled "Luma
+  email action" whose type is "Email"; the right pane is "Actions: Email" with a "Configure
+  action" button). "Channel action" is only a generic term in the docs, not a node name. Write
+  "an Action activity with the Email channel selected" or "the Email channel", never "the Email
+  action" or "Email activity" as if it were the node's name, even when the page body still says
+  so: report that wording under **Gaps found** so the page is fixed. In campaigns the user
+  chooses the channel in the campaign's Actions section; keep that wording. Statements that the
+  legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience,
+  Content Card) are deprecated stay as they are. Orchestrated campaigns do use "channel
+  activities"; do not change those.
+- **FAQ drift.** FAQ questions and answers reuse the page's nouns and verbs ("reporting
+  metrics", "quotas"), not paraphrases such as "analytics queries" or "limits".
+
 ## Step 3 — verify every claim (self-check, gate 1)
 
 Before writing the include, re-read the generated content claim by claim. Mandatory, even for
 short pages. Correct any failure before writing, and log the correction in the report.
 
-- Every term/label/UI name in the block appears in the page body.
+- Every term/label/UI name in the block appears in the page body or in a recorded related page.
 - No synonym unless both forms appear on the page; every "Do not confuse" references only
   concepts on this page.
 - Every numeric value matches the page body exactly; every limit qualifier is justified by the

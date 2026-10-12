@@ -31,14 +31,14 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-- Canonical name: Permissions product — variants: [!DNL Permissions] product
+- Canonical name: Permissions product
 - Do not confuse: "Assign a role" (adding a user to an existing role) ≠ "Create a role" (creating a new role with specific permissions and sandboxes to assign to users)
 - Do not confuse: "Edit an existing role" (add or delete permissions on a built-in or custom role; changes affect all users assigned to that role) ≠ "Create a new role" (a new role with specific permissions that you then need to assign to users)
 
 **FAQ:**
 
 - **Q: Who can assign roles to users in Journey Optimizer?** — Only Product or System administrators.
-- **Q: What happens if I edit a built-in role's permissions?** — Changes affect all users currently assigned to that role.
+- **Q: What happens if I edit a built-in role's permissions?** — Changes made to a built-in or custom role affect all users assigned to that role.
 - **Q: Where do I go in the product to manage roles?** — In the Permissions product, navigate to the Roles tab.
 - **Q: After a role is assigned, does the user receive a notification?** — The page states that the user receives an email redirecting them to your instance.
 

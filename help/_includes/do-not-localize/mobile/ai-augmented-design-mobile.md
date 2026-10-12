@@ -16,10 +16,10 @@ For complete understanding, this information should be combined with the documen
 * Define RCS content by choosing a content type (Text, Media, Card, Carousel, or Location)
 * Set the Default fallback text delivered when a device or carrier does not support RCS
 * Add suggested actions with an action type (Reply, Open URL, Dial phone number, or View location)
-* Define and personalize SMS content with the personalization editor and Generate text with AI
+* Define and personalize Mobile message content with the personalization editor and Generate text with AI
 * Add tracked and shortened URLs and deep links using the Url helper function
 * Personalize and optimize content with Decisioning using Priority Scores, Formulas, or AI Models
-* Enable MMS to add media to the SMS content
+* Enable MMS to add media to the Mobile message content
 
 **Glossary:**
 
@@ -44,7 +44,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Mobile message content — Acronym: n/a — variants: SMS content, RCS content, MMS content
+* Canonical name: Mobile message content — variants: SMS content
 * Do not confuse: "Rich Media (Single)" (up to 3,072 characters) ≠ "Basic RCS" (160 characters)
 * Do not confuse: "Reply" (sends a predefined text reply to the RCS agent) ≠ "Open URL" (redirects to a web page, deep link, or In-App destination) ≠ "Dial phone number" (opens the device dialer) ≠ "View location" (opens the device maps application)
 

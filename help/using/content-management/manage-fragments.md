@@ -198,9 +198,11 @@ To edit a fragment, follow the steps below.
 
 When you edit a fragment, the changes are automatically propagated to all contents using that fragment, including live journeys and campaigns - except for contents where you have broken inheritance from the original fragment.
 
+Learn how to break inheritance in the [Add visual fragments to your emails](../email/use-visual-fragments.md#break-inheritance) and [Leverage expression fragments](../personalization/use-expression-fragments.md#break-inheritance) sections.
+
 >[!NOTE]
 >
->Learn how to break inheritance in the [Add visual fragments to your emails](../email/use-visual-fragments.md#break-inheritance) and [Leverage expression fragments](../personalization/use-expression-fragments.md#break-inheritance) sections.
+>Fragment updates made after a [Read Audience journey](../building-journeys/read-audience.md) has started do not affect the current run. For recurring journeys, the updates apply from the next scheduled batch run. For one-time journeys, republish the journey to apply the updates.
 
 ### Add new attributes to a live fragment {#adding-new-attributes}
 

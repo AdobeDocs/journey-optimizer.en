@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **In-app channel**: The channel (selected as the action type in the Action activity of a journey) that displays an in-app message when profiles reach that step *(product-specific)*
+* **In-app channel**: The channel selected as the action type (In-app) in the Action activity of a journey *(product-specific)*
 * **Wait activity (auto)**: A 3-days Wait activity automatically added after an Action activity with the In-app channel so in-app messages have proper timing before profiles reach the end of their journey *(product-specific)*
 * **Sent data to Platform**: A trigger fired when the mobile app issues an edge experience event to send data to Adobe Experience Platform, usually the sendEvent API call from the AEP Edge extension *(product-specific)*
 * **Trait**: An And-condition refinement drawn from packages such as Device info, Application lifecycle, and Places *(product-specific)*
@@ -31,22 +31,21 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release; existing journeys using these activities continue to work without any changes and no migration is required.
+* Legacy native channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release; existing journeys using these activities continue to work without any changes and no migration is required.
 * In a journey, a 3-days Wait activity is automatically added after the Action activity with the In-app channel, because in-app messages displayed to a profile automatically expire when the profile reaches the end of their journey.
 * In-app messages are not impacted by the user's choice to opt-in or opt-out of push notifications at the operating system.
 * To show an in-app message shortly after a push notification, a Wait activity is recommended; typically a 5–15 minute wait is recommended, though exact times vary with payload complexity and personalization needs.
 
 **Terminology:**
 
-* Canonical name: In-app message — Acronym: n/a — variants: in-app notification
-* Synonyms: "Sent data to Platform" = "Send data to Platform"
+* Canonical name: In-app message — Acronym: n/a
 * Do not confuse: "Show every time" / "Show once" / "Show until click through" (journey frequency options) ≠ "Everytime" / "Once" / "Until click through" / "X number of times" (campaign frequency options)
 * Do not confuse: "Or" condition (adds more Triggers to expand the rule) ≠ "And" condition (adds Traits to fine-tune the rule)
 
 **FAQ:**
 
 * **Q: Where can I add an In-app message?** — In a campaign or in a journey.
-* **Q: Are the legacy native In-app journey activities still usable?** — They are deprecated as of the March 2026 release, but existing journeys using them continue to work without changes and no migration is required.
+* **Q: Are the legacy native channel activities, such as In-app, still usable?** — They are deprecated as of the March 2026 release, but existing journeys using them continue to work without changes and no migration is required.
 * **Q: Why is a Wait activity added automatically in a journey?** — In-app messages expire when a profile reaches the end of their journey, so a 3-days Wait activity is added after the Action activity with the In-app channel to ensure proper timing.
 * **Q: Do OS push opt-out settings affect in-app messages?** — No; In-app messages are not impacted by the user's choice to opt-in or opt-out of push notifications at the operating system.
 * **Q: What campaign types can send an In-app message?** — Scheduled - Marketing (executed immediately or on a specified date) and API-triggered - Marketing/Transactional (executed using an API call).
@@ -54,4 +53,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 606fbfef -->
+<!-- ai-section-version: 1 | source-hash: 5b3100ff -->

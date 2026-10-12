@@ -15,7 +15,7 @@ For complete understanding, this information should be combined with the documen
 
 * Assign a priority score to a journey or campaign in its properties
 * Assign a priority score to an inbound channel action in the [!UICONTROL Action] activity
-* Make sure campaign content is shown by giving it a score of 100
+* Give a campaign a score of 100 when you want to make sure its content is shown
 * Override the inherited journey priority for an action by unselecting [!UICONTROL Use journey priority]
 
 **Glossary:**
@@ -23,7 +23,7 @@ For complete understanding, this information should be combined with the documen
 * **Priority score**: A numeric value from 0-100 assigned to a journey, campaign, or action; the higher the number, the higher the priority *(product-specific)*
 * **[!UICONTROL Use journey priority]**: Option, selected by default, that inherits the action's priority from the overall journey priority score *(product-specific)*
 * **[!UICONTROL Conflict management]**: Section of the [!UICONTROL Action] activity where the action priority is set *(product-specific)*
-* **Inbound channel action**: A web, in-app, or code-based action within the [!UICONTROL Action] activity that can take a priority score *(product-specific)*
+* **Inbound channel action**: An action of the web, in-app, or code-based inbound channels, defined in the [!UICONTROL Action] activity, to which a priority score can be assigned *(product-specific)*
 
 **Guardrails:**
 
@@ -35,14 +35,14 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: priority score — Acronym: n/a — variants: priority, Priority score
+* Canonical name: priority score — variants: priority
 * Synonyms: none
 * Do not confuse: journey or campaign "[!UICONTROL Priority score]" ≠ action "[!UICONTROL Priority]" (which by default inherits the journey score via [!UICONTROL Use journey priority])
 
 **FAQ:**
 
 * **Q: What range can a priority score take?** — A numeric value from 0-100, where the higher the number, the higher the priority.
-* **Q: How do I make sure a specific campaign is shown?** — Give it a score of 100.
+* **Q: How do I make sure a specific campaign is shown?** — The page gives this example: to make sure the campaign content is shown, give it a score of 100.
 * **Q: What happens if two items share the same priority score?** — The system has no tie-breaking mechanism, so ensure priority scores are unique.
 * **Q: On which channels is priority score available?** — The web, in-app, and code-based inbound channels only.
 * **Q: How does an action get its priority?** — By default it inherits the journey priority via [!UICONTROL Use journey priority]; unselect that option to set a separate value from 0-100.

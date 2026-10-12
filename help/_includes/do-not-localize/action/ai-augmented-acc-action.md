@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to integrate Journey Optimizer with Adobe Campaign v7 or v8 so journeys can send emails, push notifications, and SMS through Adobe Campaign Transactional Messaging.
+* **TL;DR:** This page explains how to integrate Journey Optimizer with Adobe Campaign v7 or v8 so journeys can send emails, push notifications, and mobile messages through Adobe Campaign Transactional Messaging.
 
 **Intents:**
 
@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **Campaign action**: The action available in the journey designer palette for each configured Adobe Campaign v7/v8 action *(product-specific)*
-* **Transactional Messaging**: The Adobe Campaign capability used to send emails, push notifications, and SMS triggered from Journey Optimizer *(product-specific)*
+* **Transactional Messaging**: The Adobe Campaign capability used to send emails, push notifications, and mobile messages triggered from Journey Optimizer *(product-specific)*
 * **eventType**: The internal name of the Adobe Campaign event referenced in the JSON payload *(product-specific)*
 * **ctx**: The payload object holding variables based on the personalization present in the Campaign message *(product-specific)*
 
@@ -37,8 +37,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Adobe Campaign v7/v8 integration — Acronym: n/a — variants: Campaign action, Adobe Campaign Classic action, Campaign v7/v8 custom action
-* Synonyms: "Adobe Campaign Classic" = "Adobe Campaign v7"
+* Canonical name: Adobe Campaign v7/v8 integration — Acronym: ACC (Adobe Campaign Classic v7/v8) — variants: Campaign action, Campaign v7/v8 custom action
 * Do not confuse: "Campaign action" (Adobe Campaign v7/v8 integration) ≠ other custom actions (created through the generic action creation procedure that the page links to)
 
 **FAQ:**

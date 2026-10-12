@@ -35,14 +35,14 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Work with Adobe Analytics data — Acronym: n/a — variants: Adobe Analytics data source, Web SDK data
+* Canonical name: Work with Adobe Analytics data — variants: Adobe Analytics data source, Web SDK data
 * Synonyms: "Web SDK" = "Adobe Experience Platform Web SDK"
 * Do not confuse: "Adobe Analytics" ≠ "Adobe Customer Journey Analytics" (customers using Adobe Customer Journey Analytics are referred to a different page)
 
 **FAQ:**
 
 * **Q: Which event configuration is used for Adobe Analytics or Web SDK data?** — In the page's example, a Unitary event with a Rule based Event ID type, using the Analytics or WebSDK schema.
-* **Q: Is the step of contacting Adobe required for Web SDK data?** — No, the activation step is only required for Adobe Analytics data sources.
+* **Q: Is the step of contacting Adobe required for Web SDK data?** — The page states that contacting Adobe to enable the environment is only required for Adobe Analytics data sources.
 * **Q: Where do I enable an Adobe Analytics report suite?** — In the Sources menu, in the Adobe Analytics section, select Add data and choose the report suite to enable.
 * **Q: What happens to the data once the source connector is enabled?** — Whenever the data comes in, it is transformed into an Experience event and sent into Adobe Experience Platform.
 * **Q: What if I use Adobe Customer Journey Analytics instead?** — The note on this page directs you to a different page instead.

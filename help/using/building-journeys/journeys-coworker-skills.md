@@ -21,7 +21,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Explore Coworker capabilities in Adobe Journey Optimizer for creating journeys, generating channel content, analyzing performance, and simulating journey behavior.
+**On this page:** Explore Adobe CX Enterprise Coworker capabilities in Adobe Journey Optimizer for creating journeys, generating channel content, analyzing performance, and simulating journey behavior.
 
 >[!ENDSHADEBOX]
 

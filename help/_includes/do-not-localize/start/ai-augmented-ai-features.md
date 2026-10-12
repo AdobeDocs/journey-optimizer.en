@@ -46,7 +46,7 @@ For complete understanding, this information should be combined with the documen
 * AI Assistant requires agreement to the Adobe Experience Cloud Generative AI User Guidelines before use.
 * Operational Insights are in Beta, are currently only available for Journeys, and reflect data from your current sandbox.
 * Send-Time Optimization is not recommended for time-sensitive operational messages (order confirmations, password resets), urgent notifications (flight delays, emergency alerts), or event-based messages with specific timing requirements.
-* AI Content Generation is only available for the Email, Push, Web, and SMS channels.
+* AI Content Generation is only available for the Email, Push, Web, and Mobile message channels.
 * Brand asset uploads support PDFs, images, or ZIP files (max 50 MB) (hard limit).
 * Custom templates support up to 8-10 images.
 * Auto-optimization requires at least 2 offers with 100+ display events and 5+ click events each within the last 14 days; offers below this threshold are treated as new and only served through exploration traffic.
@@ -73,7 +73,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: How does CX Coworker relate to AI Assistant?** — CX Coworker is Adobe's evolution of the AI Assistant conversational experience; organizations are being transitioned from AI Assistant to CX Coworker on a rolling basis, and some organizations may retain access to AI Assistant until they are enabled for CX Coworker.
 * **Q: What permissions do I need for AI features?** — Generate Content requires the Generate Content permission; AI Assistant product knowledge requires agreement to the Adobe Generative AI User Guidelines; each agent requires its listed View/Manage permissions.
 * **Q: Is AI-generated content always accurate?** — No; always review AI-generated content for accuracy and brand appropriateness, and use the thumbs up/down feedback tools.
-* **Q: Which channels support AI Content Generation?** — Only the Email, Push, Web, and SMS channels.
+* **Q: Which channels support AI Content Generation?** — Only the Email, Push, Web, and Mobile message channels.
 * **Q: What are the requirements for AI ranking models?** — They differ by model type; Auto-optimization and Personalized optimization have distinct minimum interaction-data thresholds described in Requirements.
 * **Q: How do I get access to these features?** — Most AI features are included with Journey Optimizer; some capabilities such as Send-Time Optimization or AI Agents may require enablement by Adobe, so contact your Adobe representative.
 

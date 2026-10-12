@@ -38,7 +38,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Mobile message channel — Acronym: n/a
+* Canonical name: Mobile message channel — variants: SMS
 * Do not confuse: "Scheduled - Marketing" (executed from the user interface) ≠ "API-triggered - Marketing/Transactional" (executed using an API call)
 
 **FAQ:**

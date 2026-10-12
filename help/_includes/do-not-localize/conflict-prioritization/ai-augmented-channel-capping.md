@@ -45,7 +45,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: channel capping — Acronym: n/a — variants: frequency capping by channel and communication type, channel rule set, frequency capping rules
+* Canonical name: channel capping — variants: frequency capping by channel and communication type, channel rule set, frequency capping rules
 * Do not confuse: "rule set" (a group of rules) ≠ "capping rule" (a single rule inside a rule set)
 * Do not confuse: "[!UICONTROL Reset capping frequency]" (the period unit: hourly, daily, weekly, or monthly) ≠ "[!UICONTROL Every]" (how many of those periods the rule spans)
 
@@ -60,4 +60,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 3adf45c9 -->
+<!-- ai-section-version: 1 | source-hash: 28f590eb -->
