@@ -2218,3 +2218,58 @@ The improvements below come with the February update.
     ![](../email/assets/surface-list-unsubscribe-custom.png){width="80%"}
 
 * **Decisioning** (Availability date: Jan 28, 2025) - Decisioning now supports Object data types when editing the item catalog's schema. [Read more](../experience-decisioning/catalogs.md)
+
+
+## January '25 release notes {#25-01-rn}
+
+### New capabilities {#25-01-features}
+
+The new capabilities released in January are detailed below.
+
+<table>
+<thead>
+<tr>
+<th><strong>Customer Journey Analytics templates</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You now have the option to enhance your Journey Optimizer reports by leveraging Customer Journey Analytics templates. This new feature allows you to streamline your reporting process with pre-designed templates tailored to your analytics needs.
+</p>
+<p>For more information, refer to the <a href="../reports/report-cja-manage.md#cja-template">detailed documentation</a>.</p>
+<p>Availability date: starting Jan 15, 2025</p>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Flexible Audience Evaluation (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Flexible audience evaluation lets you run a segmentation job on demand for selected audiences, ensuring that you always have the most up-to-date audience data before targeting them into Journey Optimizer journeys and campaigns.</p>
+<img src="assets/do-not-localize/flexible-audience.gif">
+<p>For more information, refer to the <a href="../audience/about-audiences.md#flexible">detailed documentation</a>.</p>
+<p> Flexible audience evaluation is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>Availability date: Jan 28, 2025</p>
+</tr>
+</tbody>
+</table>
+
+### January improvements {#25-01-improvements}
+
+The improvements released in January are listed below.
+
+**Decisioning**
+
+* Decisioning now supports Object data types when editing the item catalog's schema. [Read more](../experience-decisioning/catalogs.md)
+
+**Personalization**
+
+* New date/time helper functions are available for use in the personalization editor. [Read more](../personalization/functions/dates.md)
+
