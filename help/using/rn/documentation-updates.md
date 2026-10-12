@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
+* A new **Archiving** section groups the options for retaining sent messages. The new **Get started with message archiving** page compares BCC email and Message Export, and explains why mirror pages and the Entity Dataset are not archiving options. The BCC page has been renamed **Archive emails using BCC**, and **Export message content** now sits in the same section. [Read more](../configuration/archiving-overview.md)
+
 * The **Manage fragments** page now clarifies that fragment changes made after a Read Audience journey has started apply to the next batch run for recurring journeys, while one-time journeys must be republished. [Read more](../content-management/manage-fragments.md#edit-fragments)
 
 * The **Manage allowed IPs** page now clarifies that changes to the allowed list are cached and can take up to one hour to be enforced, whether you add, edit, or remove IPs. [Read more](../configuration/waf-ip-allowlist.md#waf-ip-allowlist-add)

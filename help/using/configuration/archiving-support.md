@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Archiving support in Journey Optimizer
-description: Learn how to archive messages
+title: Archive emails using BCC in Journey Optimizer
+description: Learn how to retain copies of sent emails using BCC in Journey Optimizer
 feature: Channel Configuration
 topic: Administration
 role: Admin
@@ -45,34 +45,19 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 ---
-# Support for archiving {#archiving-support}
+# Archive emails using BCC {#archiving-support}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to archive the messages you send with Adobe Journey Optimizer for compliance, including the built-in BCC email capability for the email channel and dataset-based options for other channels.
+**On this page:** Learn how to configure BCC email in Adobe Journey Optimizer to retain copies of sent emails in your own mailbox or external archiving system.
 
 >[!ENDSHADEBOX]
 
-## How to archive messages {#about-archiving}
-
-Regulations such as HIPAA require that [!DNL Journey Optimizer] should provide a way to archive messages sent to individuals. Indeed, if your customers raise a claim, they should have the ability to get a copy of the sent message for verification purpose.
-
-* For the email channel, [!DNL Journey Optimizer] provides a built-in BCC email capability. [Learn more](#bcc-email)
-
-* Additionnaly, for all channels, you can use the 'Template' field in the **Entity Dataset**, which contains the details of the non-personalized message templates. Export the dataset with this field to save metadata such as: who sent the message, to whom and when. Note that personalized data is not exported - only the template (format and structure of the message) is taken into account. [Learn more](../data/datasets-query-examples.md#entity-dataset)
+[!DNL Journey Optimizer] provides a built-in BCC email capability to send copies of outbound emails to a dedicated mailbox. Your organization can retain these copies in the mailbox or process them using an external archiving system.
 
 >[!NOTE]
 >
->[!DNL Journey Optimizer] does not own support for Mobile archival requirement. For dedicated archival support, work with your SMS vendor (Sinch, Infobip, or Twilio).
-
-Use the table below to identify the right option for your requirement.
-
-| Requirement | Recommended option | Important distinction |
-| --- | --- | --- |
-| Keep a hidden copy of outbound email messages | BCC email | Sends a copy to a configured mailbox; does not expose a mirror page URL or create a queryable Experience Platform field. |
-| Export sent email or Mobile content to an external system | [Message export](../configuration/message-export.md) | Writes sent content and metadata to the AJO Message Export Dataset for downstream export; does not generate a mirror page URL. |
-| Display the online version of an email to the recipient | [Mirror page link](../email/message-tracking.md#mirror-page) | Generated as part of the sent email; not a supported post-send URL retrieval API. |
-| Store the non-personalized message template or delivery metadata | Entity Dataset | Does not provide the exact personalized content received by an individual. |
+>For a comparison of the archiving options in Journey Optimizer, see [Get started with message archiving](archiving-overview.md).
 
 ## How to use BCC for emails {#bcc-email}
 
@@ -327,29 +312,3 @@ WHERE
   bcc._experience.customerJourneyManagement.messageProfile.messageProfileID = '<x-message-profile-id>'
 ORDER BY mfe.timestamp DESC;
 ```
-
-## Frequently asked questions {#faq}
-
-+++ Can I retrieve a mirror page URL after an email is sent?
-
-Not currently, through a documented public API or an Adobe Experience Platform dataset field. The [mirror page URL](../email/message-tracking.md#mirror-page) is generated as part of the message delivery process. If you need to retain or inspect sent content, use [Message export](message-export.md) or [BCC archiving](#bcc-email).
-
-+++
-
-+++ Is the mirror page URL available in the Entity Dataset or other tracking datasets?
-
-No. The [Entity Dataset](../data/datasets-query-examples.md#entity-dataset) provides message template and metadata information, but it should not be used as a source for the exact personalized content received by a recipient.
-
-+++
-
-+++ Can Message Export be used to reconstruct a mirror page URL?
-
-No. [Message Export](message-export.md) provides sent message content and metadata for downstream export, archival, compliance, or customer-care use. It does not generate or return a [mirror page URL](../email/message-tracking.md#mirror-page).
-
-+++
-
-+++ Which option should I use if I need to see the exact message sent to a customer?
-
-Use [Message Export](message-export.md) when you need structured sent-message content and metadata in an external system. Use [BCC](#bcc-email) when you only need a hidden copy of an outbound email retained in a mailbox. Neither option retrieves the original mirror page URL.
-
-+++

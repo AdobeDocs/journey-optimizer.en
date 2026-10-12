@@ -104,7 +104,7 @@ To be able to send messages, you need to go through the configuration steps list
 
     * Manage the number of days during which retries are performed before sending email addresses to the suppression list. [Learn more](manage-suppression-list.md)
 
-    * Enable the **BCC email option** to keep a copy of messages sent to individuals. [Learn more](archiving-support.md#enable-bcc)
+    * Enable the **BCC email option** or **Message Export** to keep a copy of messages sent to individuals. [Learn more](archiving-overview.md)
 
     * Configure **business rules** to avoid over-solicitating your recipients. [Learn more](../conflict-prioritization/rule-sets.md)
 
