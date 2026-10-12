@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure loyalty challenges
-description: Learn how to configure reward providers, event mappings, product inventory, exclusions, and organization-level settings for Loyalty Challenges in Adobe [!DNL Journey Optimizer].
+description: Learn how to configure global and performance settings, reward providers, event mappings, product inventory, and exclusions for Loyalty Challenges.
 feature: Journeys
 topic: Content Management
 role: Admin
@@ -30,7 +30,7 @@ level_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how administrators configure Loyalty Challenges, including global settings, reward providers, event mappings, product inventory, and exclusions.
+**On this page:** Learn how administrators configure Loyalty Challenges, including global settings, performance settings, reward providers, event mappings, product inventory, and exclusions.
 
 >[!ENDSHADEBOX]
 
@@ -45,6 +45,7 @@ Loyalty Challenges configuration connects [!DNL Journey Optimizer] to your exter
 To open the configuration interface, select the **[!UICONTROL Loyalty configurations]** menu from the left navigation. The interface is organized into tabs:
 
 * **Global settings** — Select the Experience Platform identity namespace for your program. [Learn how to configure global settings](#global-settings)
+* **Performance settings** - Select the loyalty profile and event datasets and your priority KPI for loyalty insights. [Learn how to configure performance settings](#performance-settings)
 * **Reward providers** — Connect the APIs that fulfill rewards when customers make progress or complete challenges. [Learn how to configure reward providers](#reward-providers).
 * **Event mapping** — Map incoming experience events to activities used in **[!UICONTROL Custom event]** tasks. [Learn how to configure event mappings](#event-mappings).
 * **Product inventory** — Upload item-to-group mappings for use in task eligibility rules. [Learn how to configure product inventory](#product-inventory)
@@ -65,7 +66,19 @@ Open the **[!UICONTROL Global settings]** tab to configure global settings for L
 
    ➡️ [Learn how to work with identity namespaces](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"}
 
-* Use the **[!UICONTROL Reporting]** section to set your organization's priority metric for the Loyalty Insights dashboard. This setting determines which insights receive emphasis in your feed, allowing you to focus on the metric that matters most to your business.
+## Performance settings {#performance-settings}
+
+Open the **[!UICONTROL Performance settings]** tab to select the datasets and priority metric used for loyalty performance insights.
+
+![](assets/admin-performance-settings.png)
+   
+1. In the **[!UICONTROL Performance configuration]** section, select the **[!UICONTROL Loyalty profile dataset]** containing your loyalty member profile data. The selected dataset's schema must include the **Loyalty details** field group.
+
+1. Select the **[!UICONTROL Loyalty event dataset]** containing your loyalty event data. The selected dataset's schema must include the **Loyalty event details** field group.
+
+   The profile dataset schema must include the **Loyalty details** and **identityMap** field groups, with identities supplied in **identityMap**. The event dataset schema must include the **Loyalty event details** and **Commerce details** field groups. Additional field groups can be included. For background on loyalty data and datasets, see [Loyalty data and datasets](loyalty-data-and-datasets.md).
+
+1. In **[!UICONTROL Key performance indicator]**, select your organization's priority metric for the Loyalty Insights dashboard. This setting determines which insights receive emphasis in your feed, allowing you to focus on the metric that matters most to your business.
 
    Select one of the following KPI options:
 
@@ -74,9 +87,7 @@ Open the **[!UICONTROL Global settings]** tab to configure global settings for L
    * **[!UICONTROL Redemptions]** — Prioritize insights related to reward redemption rates and activity
    * **[!UICONTROL Conversions]** — Prioritize insights related to conversion metrics and goal completion
 
-   When you select a KPI, insights related to that metric receive a scoring boost, which causes them to rise to the top of the feed. This means the most relevant insights for your selected KPI appear first. No insights are hidden: your complete insight feed continues to display, ranked by significance with your selected KPI prioritized above other metrics. This setting only affects how insights are ranked in the feed and does not modify how your loyalty program operates or how challenges are evaluated. You can change your KPI selection at any time, and the insight feed re-prioritizes on the next refresh cycle to reflect your new priority.
-
-   For more information about loyalty insights and performance monitoring, see [Explore loyalty performance](loyalty-performance.md).
+For more information about loyalty insights and performance monitoring, see [Explore loyalty performance](loyalty-performance.md).
 
 ## Reward providers {#reward-providers}
 
