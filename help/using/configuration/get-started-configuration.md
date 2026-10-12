@@ -91,11 +91,11 @@ To be able to send messages, you need to go through the configuration steps list
     Additional channels:
 
     <table style="table-layout:fixed"><tr style="border: 0;">
-    <td><a href="../mobile-live/mobile-live-configuration.md"><img alt="iOS Live activities" src="../channels/assets/do-not-localize/live-activity.jpg"></a>
+    <td><a href="../mobile-live/mobile-live-configuration.md"></a>
     <div align="center"><a href="../mobile-live/mobile-live-configuration.md"><strong>iOS Live activities</strong></a></div></td>
-    <td><a href="../whatsapp/whatsapp-configuration.md"><img alt="WhatsApp" src="../channels/assets/do-not-localize/whatsapp.jpg"></a>
+    <td><a href="../whatsapp/whatsapp-configuration.md"></a>
     <div align="center"><a href="../whatsapp/whatsapp-configuration.md"><strong>WhatsApp</strong></a></div></td>
-    <td><a href="../line/line-configuration.md"><img alt="LINE" src="../channels/assets/do-not-localize/line.jpg"></a>
+    <td><a href="../line/line-configuration.md"></a>
     <div align="center"><a href="../line/line-configuration.md"><strong>LINE</strong></a></div></td>
     </tr></table>
 
