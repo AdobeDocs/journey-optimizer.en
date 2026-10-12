@@ -2254,7 +2254,7 @@ The new capabilities released in January are detailed below.
 <td>
 <p>Flexible audience evaluation lets you run a segmentation job on demand for selected audiences, ensuring that you always have the most up-to-date audience data before targeting them into Journey Optimizer journeys and campaigns.</p>
 <img src="assets/do-not-localize/flexible-audience.gif">
-<p>For more information, refer to the <a href="../audience/about-audiences.md#flexible">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../audience/creating-a-segment-definition.md#flexible">detailed documentation</a>.</p>
 <p> Flexible audience evaluation is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p>Availability date: Jan 28, 2025</p>
 </tr>
