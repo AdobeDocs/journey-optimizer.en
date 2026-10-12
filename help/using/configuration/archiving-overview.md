@@ -30,7 +30,7 @@ These options help you retain sent content, but do not replace your organization
 
 >[!NOTE]
 >
->Message Export supports exporting sent Mobile message content to your own archival system, but [!DNL Journey Optimizer] does not provide a dedicated managed Mobile archiving service. For vendor-managed SMS archiving, work with your SMS provider (Sinch, Infobip, or Twilio) to determine available capabilities and whether they meet your archival requirements.
+>[!DNL Journey Optimizer] does not provide a managed archiving service for Mobile. Use Message Export to retain sent Mobile content, or work with your SMS provider (Sinch, Infobip, or Twilio) for vendor-managed archiving.
 
 ## Related capabilities {#not-archiving-options}
 
