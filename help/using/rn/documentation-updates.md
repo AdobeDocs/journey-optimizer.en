@@ -33,6 +33,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
+* A new **Archiving** section groups the options for retaining sent messages. The new **Get started with message archiving** page compares BCC email and Message Export, and explains why mirror pages and the Entity Dataset are not archiving options. The BCC page has been renamed **Archive emails using BCC**, and **Export message content** now sits in the same section. [Read more](../configuration/archiving-overview.md)
+
+* The **Channel configuration** section has been reorganized to make it easier to navigate. Redundant landing pages have been removed, and their content now lives in the **Get started with channels configuration** and **Subdomain delegation** pages. [Read more](../configuration/get-started-configuration.md)
+
 * The **Manage fragments** page now clarifies that fragment changes made after a Read Audience journey has started apply to the next batch run for recurring journeys, while one-time journeys must be republished. [Read more](../content-management/manage-fragments.md#edit-fragments)
 
 * The **Manage allowed IPs** page now clarifies that changes to the allowed list are cached and can take up to one hour to be enforced, whether you add, edit, or remove IPs. [Read more](../configuration/waf-ip-allowlist.md#waf-ip-allowlist-add)
@@ -223,7 +227,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Key Terminology** page has been overhauled: six new terms added, a new **Conflict & prioritization terms** section introduced, and a new **When terms look similar** disambiguation guide added for four commonly confused term pairs. Adobe Experience Platform-specific terms have been removed and replaced with a note linking to the Adobe Experience Platform glossary. [Read more](../start/terminology.md)
 
-* The **Deep links** documentation has been expanded with a new **Authoring deep links** section detailing the two options available for email (Email Designer UI and Personalization Editor code) and the URL function syntax for SMS. The **Create an SMS message** page now includes a deep link step in the content authoring flow. [Read more](../email/deeplinks.md)
+* The **Deep links** documentation has been expanded with a new **Authoring deep links** section detailing the two options available for email (Email Designer UI and Personalization Editor code) and the URL function syntax for mobile messages. The **Create a Mobile message** page now includes a deep link step in the content authoring flow. [Read more](../email/deeplinks.md)
 
 * The **Url** helper reference has been updated with a dedicated section in the Personalization documentation. [Read more](../personalization/functions/helpers.md#url)
 

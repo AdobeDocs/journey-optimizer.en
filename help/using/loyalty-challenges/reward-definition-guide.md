@@ -216,7 +216,7 @@ Task accumulators hold a record of every qualifying event. Use `item_list[-1]` t
 
 +++Constructing a text message
 
-For notification-based providers (Slack, SMS, email), you can build a message string directly using JSONata's `&` concatenation operator:
+For notification-based providers (Slack, mobile message, email), you can build a message string directly using JSONata's `&` concatenation operator:
 
 ```jsonata
 {

@@ -52,7 +52,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_admin_msg_export"
 >title="Retain and export your sent content"
->abstract="Selecting this option allows you to write the content of the sent email or SMS messages using this configuration to an [!DNL Experience Platform] dataset. Records are retained for 7 calendar days from ingestion, during which you can export them to your own storage."
+>abstract="Selecting this option allows you to write the content of the sent email or mobile messages using this configuration to an [!DNL Experience Platform] dataset. Records are retained for 7 calendar days from ingestion, during which you can export them to your own storage."
 
 >[!AVAILABILITY]
 >
@@ -64,7 +64,9 @@ With this feature, the content of email and mobile messages sent via [!DNL Journ
 
 Records are then retained in the dataset for seven calendar days from ingestion, during which you can export them out to the external system of your choice.
 
-Message Export is a supported alternative when you need to review or retain the exact content sent to an individual — for example, for customer-care, compliance, or downstream-system use cases. It does not generate or return a mirror page URL; it exports the sent message content and related metadata so your organization can store and display the information in its own systems.
+>[!NOTE]
+>
+>For a comparison of the archiving options in Journey Optimizer, see [Get started with message archiving](archiving-overview.md).
 
 ➡️ For common questions and answers, see the [Message Export FAQ](#message-export-faq).
 
@@ -153,7 +155,7 @@ The examples below show the overall shape of records written to the AJO Message 
 
 Expand each section to view the full sample JSON.
 
-+++ SMS export example
++++ Mobile export example
 
 ```json
 {
@@ -341,7 +343,7 @@ Message Export enables customers to export fully rendered messages (Email and Mo
 Message Export supports:
 
 * Email
-* SMS
+* Mobile message
 
 +++
 

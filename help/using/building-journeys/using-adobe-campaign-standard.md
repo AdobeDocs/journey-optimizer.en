@@ -46,22 +46,22 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use the built-in Adobe Campaign Standard email, push, and SMS action activities in your journeys by relying on Campaign Standard Transactional Messaging templates.
+**On this page:** Learn how to use the built-in Adobe Campaign Standard email, push, and mobile message action activities in your journeys by relying on Campaign Standard Transactional Messaging templates.
 
 >[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom_acs"
 >title="Custom actions"
->abstract="An integration is available if you have [!DNL Adobe Campaign] Standard. It allows you to send emails, push notifications and SMS using [!DNL Adobe Campaign] Transactional Messaging capabilities."
+>abstract="An integration is available if you have [!DNL Adobe Campaign] Standard. It allows you to send emails, push notifications and mobile messages using [!DNL Adobe Campaign] Transactional Messaging capabilities."
 
-If you have [!DNL Adobe Campaign] Standard, the following built-in action activities are available: **[!UICONTROL Email]**, **[!UICONTROL Push]** and **[!UICONTROL SMS]**. 
+If you have [!DNL Adobe Campaign] Standard, the following built-in action activities are available: **[!UICONTROL Email]**, **[!UICONTROL Push]** and **[!UICONTROL Mobile message]**. 
 
 >[!NOTE]
 >
 >For this, you need to configure the built-in action. Refer to [this page](../action/acs-action.md).
 
-For each of these channels, you select an [!DNL Adobe Campaign] Standard Transactional Messaging **template**. For the built-in email, SMS and push channels, we rely on Transactional Messaging to execute message sending. It means that if you want to use a certain message template in your journeys, you must publish it in [!DNL Adobe Campaign] Standard. Refer to [this page](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html) to learn how to use this feature.
+For each of these channels, you select an [!DNL Adobe Campaign] Standard Transactional Messaging **template**. For the built-in email, mobile messages and push channels, we rely on Transactional Messaging to execute message sending. It means that if you want to use a certain message template in your journeys, you must publish it in [!DNL Adobe Campaign] Standard. Refer to [this page](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html) to learn how to use this feature.
 
 >[!NOTE]
 >
@@ -79,9 +79,9 @@ When you select a template, all the fields expected in the message payload are d
 
 ![Campaign Standard message template selection interface](assets/journey60.png)
 
-## Email and SMS {#section_asc_51g_nhb}
+## Email and Mobile message {#section_asc_51g_nhb}
 
-For **[!UICONTROL Email]** and **[!UICONTROL SMS]**, the parameters are identical.
+For **[!UICONTROL Email]** and **[!UICONTROL Mobile message]**, the parameters are identical.
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ You can easily define where to retrieve the **[!UICONTROL Address]** or the **[!
 >
 >This category is only visible if you select an "event" transactional message. For "profile" messages, the **[!UICONTROL Address]** field is automatically retrieved from [!DNL Adobe Campaign] Standard by the system.
 
-These are the fields the system requires to know where to send the message. For an email template, it's the email address. For an SMS, it's the mobile phone number.
+These are the fields the system requires to know where to send the message. For an email template, it's the email address. For a mobile message, it is the mobile phone number.
 
 ![Message parameter configuration for Campaign Standard integration](assets/journey61.png)
 
@@ -110,7 +110,7 @@ These are the fields the system requires to know where to send the message. For 
 
 >[!NOTE]
 >
->You cannot pass a collection in personalization data. If the transactional email or SMS expects collections, it will not work. Also note that the personalization data has an expected format (example: string, decimal, etc.). You must be careful to respect these expected formats. 
+>You cannot pass a collection in personalization data. If the transactional email or mobile message expects collections, it will not work. Also note that the personalization data has an expected format (example: string, decimal, etc.). You must be careful to respect these expected formats. 
 
 These are the fields expected by the [!DNL Adobe Campaign] Standard message. These fields can be used to personalize the message, apply conditional formatting, or pick a specific message variant. 
 

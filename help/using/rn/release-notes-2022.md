@@ -254,7 +254,7 @@ table>
 
 **Archiving support**
 
-* The new **Entity Dataset** includes a Template field which enables you to export the format ad structure of the sent messages on all channels for archiving purpose. [Learn more](../configuration/archiving-support.md)
+* The new **Entity Dataset** includes a Template field which enables you to export the format ad structure of the sent messages on all channels for archiving purpose. [Learn more](../configuration/archiving-overview.md#not-archiving-options)
 
 **Landing pages**
 

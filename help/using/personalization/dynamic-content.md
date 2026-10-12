@@ -61,7 +61,7 @@ The steps to add dynamic content in expressions are as follows:
 
 1. Add between the `{%if}` and `{%/if}` tags the content that you want to display if the conditional rule is met. You can add as many rules as needed to create several variants of an expression.
 
-    In the example below, two variants have been created for an SMS content, depending on the recipient's preferred language.
+    In the example below, two variants have been created for a mobile message content, depending on the recipient's preferred language.
 
     ![](assets/conditions-language-sample.png)
 

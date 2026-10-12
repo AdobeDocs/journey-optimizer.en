@@ -952,16 +952,13 @@ nudge: yes
     + [Monitor inbound data with Edge](using/data/monitoring.md)
     + [Monitor data ingestion](using/data/monitor-data-ingestion.md)
 + Channel configuration {#configuration}
-  + [Channel configuration](/help/rp_landing_pages/configuration-landing-page.md)
   + [Get started with channels configuration](using/configuration/get-started-configuration.md)
   + [Set up channel configurations](using/configuration/channel-surfaces.md)
-  + [Export message content](using/configuration/message-export.md)
   + {hide-from-toc} [AJO Message Export schema](using/configuration/message-export-schema.md)
   + Guided channel setup {#guided-setup}
     + [Get started with Guided channel setup](using/configuration/set-mobile-config.md)
     + [Create a channel set up](using/configuration/create-channel-set-up.md)
   + Delegate email subdomains {#delegate-subdomains}
-    + [Delegate email subdomains](/help/rp_landing_pages/delegate-subdomains-landing-page.md)
     + [Get started with subdomain delegation](using/configuration/about-subdomain-delegation.md)
     + [Delegate a subdomain](using/configuration/delegate-subdomain.md)
     + [Set up a custom subdomain](using/configuration/delegate-custom-subdomain.md)
@@ -978,14 +975,16 @@ nudge: yes
     + [Run the IP warmup plan](using/configuration/ip-warmup-execution.md)
     + {hide-from-toc} [IP warmup plan files](using/configuration/ip-warmup-plan-files.md)
   + Monitor email addresses {#monitor-reputation}
-    + [Monitor email addresses](/help/rp_landing_pages/monitor-reputation-landing-page.md)
     + {hide-from-toc} [Email error types](using/configuration/email-error-types.md)
     + [Suppression list](using/configuration/manage-suppression-list.md)
     + [Retries](using/configuration/retries.md)
     + [Allowed list](using/configuration/allow-list.md)
-  + [Use seed lists](using/configuration/seed-lists.md)
-  + [Support for email archiving](using/configuration/archiving-support.md)
+  + Archiving {#archiving}
+    + [Get started with message archiving](using/configuration/archiving-overview.md)
+    + [Archive emails using BCC](using/configuration/archiving-support.md)
+    + [Export message content](using/configuration/message-export.md)
   + [Add a CC field to emails](using/configuration/cc-email-field.md)
+  + [Use seed lists](using/configuration/seed-lists.md)
   + [Manage execution fields](using/configuration/primary-email-addresses.md)
   + [Create feedback webhooks](using/configuration/feedback-webhooks.md)
   + [Manage allowed IPs](using/configuration/waf-ip-allowlist.md)

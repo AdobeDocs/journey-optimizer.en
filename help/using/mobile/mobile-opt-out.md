@@ -42,7 +42,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-In accordance with the industry standards and regulations, all SMS marketing messages must contain a way for the recipients to easily unsubscribe. [Learn more about privacy & opt-out management](../privacy/opt-out.md)
+In accordance with the industry standards and regulations, all mobile marketing messages must contain a way for the recipients to easily unsubscribe. [Learn more about privacy & opt-out management](../privacy/opt-out.md)
 
 >[!IMPORTANT]
 >

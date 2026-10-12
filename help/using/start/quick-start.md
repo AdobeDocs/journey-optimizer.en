@@ -203,7 +203,7 @@ As an Administrator, you set up the Journey Optimizer environment to enable your
 * **Security & Governance**: Apply object-level access control (OLAC), configure consent policies, and implement data governance policies
 * **Deliverability**: Delegate subdomains, migrate subdomains to custom delegation when needed, create IP pools, and manage suppression lists and allowed lists
 * **Journey Configuration**: Set up journey elements and configurations for your teams
-* **Channel Configuration**: Configure web push notifications, direct mail, and message export (email/SMS) when required
+* **Channel Configuration**: Configure web push notifications, direct mail, and message export (email/mobile message) when required
 
 **Start with:** Configure sandboxes and user permissions, then set up your first channel configurations and message presets.
 

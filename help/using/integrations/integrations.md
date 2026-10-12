@@ -98,7 +98,7 @@ Setting up an integration involves administrators and marketers, each playing a 
 
     See [Create Standard integrations](integrations-create.md) and [Create Browsing integrations](integrations-browsing.md).
 
-1. As a marketer, apply your configured integrations to personalize Email, SMS, and Push content.
+1. As a marketer, apply your configured integrations to personalize Email, Mobile message, and Push content.
 
     See [Use External integrations for personalization](integrations-personalization.md)
 

@@ -62,7 +62,9 @@ When accessing [!DNL Journey Optimizer] for the first time, you are provisioned 
 
 To be able to send messages, you need to go through the configuration steps listed below:
 
-1. As an [Adobe Journey Optimizer system administrator](../start/path/administrator.md), define your channel-specific configurations. Learn how to set up these configurations in the following pages:
+1. As an [Adobe Journey Optimizer system administrator](../start/path/administrator.md), define your channel-specific configurations.
+
+    Learn how to set up these configurations in the following pages:
 
     <table style="table-layout:fixed"><tr style="border: 0;">
     <td><a href="../email/get-started-email-config.md"><img alt="email" src="../channels/assets/do-not-localize/email.png"></a>
@@ -86,7 +88,11 @@ To be able to send messages, you need to go through the configuration steps list
     <div align="center"><a href="../content-card/content-card-configuration-prereq.md"><strong>Content cards</strong></a></div></td>
     </tr></table>
 
-    For additional channels, refer to: [iOS Live activities](../mobile-live/mobile-live-configuration.md), [WhatsApp](../whatsapp/whatsapp-configuration.md), and [LINE](../line/line-configuration.md).
+    For additional channels, refer to:
+
+    * [iOS Live activities](../mobile-live/mobile-live-configuration.md)
+    * [WhatsApp](../whatsapp/whatsapp-configuration.md)
+    * [LINE](../line/line-configuration.md)
 
     >[!NOTE]
     >
@@ -104,7 +110,9 @@ To be able to send messages, you need to go through the configuration steps list
 
     * Manage the number of days during which retries are performed before sending email addresses to the suppression list. [Learn more](manage-suppression-list.md)
 
-    * Enable the **BCC email option** to keep a copy of messages sent to individuals. [Learn more](archiving-support.md#enable-bcc)
+    * Enable the **BCC email option** or **Message Export** to keep a copy of messages sent to individuals and meet compliance requirements such as GDPR and HIPAA. [Learn more](archiving-overview.md) about message archiving or [archive emails using BCC](archiving-support.md).
+
+    * Use **seed lists** to monitor email deliveries and ensure campaign assurance. [Learn more](seed-lists.md)
 
     * Configure **business rules** to avoid over-solicitating your recipients. [Learn more](../conflict-prioritization/rule-sets.md)
 
@@ -112,12 +120,6 @@ To be able to send messages, you need to go through the configuration steps list
 
 ## Additional resources
 
-* **[Configure channel surfaces](channel-surfaces.md)** - Learn how to set up and manage channel surfaces for email, push, mobile message, and other channels.
 * **[Subdomain delegation](delegate-subdomain.md)** - Understand how to delegate subdomains to Adobe for email deliverability and branding.
-* **[IP warmup](ip-warmup-gs.md)** - Discover best practices for IP address warmup to improve email deliverability and sender reputation.
-* **[Manage suppression list](manage-suppression-list.md)** - Learn how to manage suppression lists to handle bounces and maintain list hygiene.
-* **[Configure mobile apps](set-mobile-config.md)** - Set up mobile app configurations for push notifications and in-app messaging.
-* **[Configure iOS Live activities](../mobile-live/mobile-live-configuration.md)** - Set up your environment to send Live activities to the iPhone Lock Screen and Dynamic Island.
-* **[Configure WhatsApp](../whatsapp/whatsapp-configuration.md)** - Set up WhatsApp messaging via Meta's Cloud API for campaigns and journeys.
-* **[Configure LINE](../line/line-configuration.md)** - Set up LINE messaging for campaigns and journeys.
+* **[Monitoring & troubleshooting](../../rp_landing_pages/troubleshoot-journey-landing-page.md)** - Diagnose and resolve issues quickly, including troubleshooting custom subdomain delegation.
 * **[Configuration tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/configuration/channel-configuration/configure-channels){target="_blank"}** - Explore step-by-step video tutorials on channel configuration and best practices.
