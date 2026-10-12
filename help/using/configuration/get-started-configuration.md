@@ -62,7 +62,9 @@ When accessing [!DNL Journey Optimizer] for the first time, you are provisioned 
 
 To be able to send messages, you need to go through the configuration steps listed below:
 
-1. As an [Adobe Journey Optimizer system administrator](../start/path/administrator.md), define your channel-specific configurations. Learn how to set up these configurations in the following pages:
+1. As an [Adobe Journey Optimizer system administrator](../start/path/administrator.md), define your channel-specific configurations.
+
+    Learn how to set up these configurations in the following pages:
 
     <table style="table-layout:fixed"><tr style="border: 0;">
     <td><a href="../email/get-started-email-config.md"><img alt="email" src="../channels/assets/do-not-localize/email.png"></a>
@@ -89,7 +91,7 @@ To be able to send messages, you need to go through the configuration steps list
     Additional channels:
 
     <table style="table-layout:fixed"><tr style="border: 0;">
-    <td><a href="../mobile-live/mobile-live-configuration.md"><img alt="iOS Live activities" src="../channels/assets/do-not-localize/live-activity.jpg" style="height:160px; width:auto; display:block; margin:0 auto;"></a>
+    <td><a href="../mobile-live/mobile-live-configuration.md"><img alt="iOS Live activities" src="../channels/assets/do-not-localize/live-activity.jpg"></a>
     <div align="center"><a href="../mobile-live/mobile-live-configuration.md"><strong>iOS Live activities</strong></a></div></td>
     <td><a href="../whatsapp/whatsapp-configuration.md"><img alt="WhatsApp" src="../channels/assets/do-not-localize/whatsapp.jpg"></a>
     <div align="center"><a href="../whatsapp/whatsapp-configuration.md"><strong>WhatsApp</strong></a></div></td>
