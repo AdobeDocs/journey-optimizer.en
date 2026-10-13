@@ -49,7 +49,7 @@ topic_v2:
 
 This reference guide defines the essential terms you'll encounter when using Adobe Journey Optimizer. Understanding these concepts helps you navigate the platform confidently and collaborate effectively with your team.
 
-New to Journey Optimizer? Start with the [five core concepts](understanding-ajo.md#five-concepts). Coming from another platform? See the [term map](coming-from-another-platform.md).
+New to Journey Optimizer? Start with the [five core concepts](understanding-ajo.md#five-concepts).
 
 For pairs of similar-sounding terms that are often confused — such as **Decisioning vs Decision Management** or **Content Cards vs In-App messages** — see [When terms look similar](#disambiguation) at the bottom of this page.
 

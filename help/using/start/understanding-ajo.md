@@ -134,7 +134,7 @@ Five ideas explain most of how [!DNL Journey Optimizer] behaves. Read these firs
 >
 >Practice these concepts without touching production data. Use the free [Journey Optimizer tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/overview){target="_blank"} and a [training sandbox](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/configure-a-training-sandbox/introduction-and-prerequisites){target="_blank"}.
 
-Not sure who sets up what? See [Roles and responsibilities](quick-start.md). Coming from another marketing platform? See [Journey Optimizer for teams switching platforms](coming-from-another-platform.md).
+Not sure who sets up what? See [Roles and responsibilities](quick-start.md).
 
 ## Key functional areas {#functional-areas}
 
