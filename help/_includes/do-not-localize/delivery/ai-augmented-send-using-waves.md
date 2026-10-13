@@ -50,7 +50,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Does wave sending apply to inbound channels?** — No; outbound only (Email, Mobile message, Push, Direct mail).
+* **Q: Does wave sending apply to inbound channels?** — No; outbound only (Email, Mobile message, Push).
 * **Q: Can I assign different content to individual waves?** — No; same audience and content for all waves. Only size and timing can differ.
 * **Q: What is the minimum time between two waves?** — 30 minutes between the start of two consecutive waves.
 * **Q: What happens if wave sizes exceed or fall short of the audience?** — Excess: first wave sends to full audience, remaining waves do not execute. Shortfall: only profiled in defined waves receive the message; the rest are not retried.
