@@ -100,6 +100,7 @@ nudge: yes
     + [Journey Fragments](using/building-journeys/journey-fragments.md)
     + [Content decision](using/building-journeys/content-decision.md)
     + [Dataset lookup](using/building-journeys/dataset-lookup.md)
+    + [Stop action](using/building-journeys/stop-action.md)
     + [Action](using/building-journeys/journey-action.md)
     + [Jump](using/building-journeys/jump.md)
     + [Update profile](using/building-journeys/update-profiles.md)
