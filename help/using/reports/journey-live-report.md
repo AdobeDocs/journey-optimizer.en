@@ -53,6 +53,10 @@ topic_v2:
 
 Live reports, accessible from the Last 24 hrs tab, display events that took place within the past 24 hours, with a minimum time interval of two minutes from the event occurrence. In comparison, Customer Journey Analytics reports focus on events that occurred at least two hours ago and cover events over a selected time period.
 
+>[!NOTE]
+>
+>Direct mail channel-level metrics appear only after the scheduled file export, not immediately when profiles enter or exit the Direct mail action. Feedback events are generated after export, so the reporting delay depends on the [export frequency configured for journeys](../direct-mail/direct-mail-configuration.md#file-routing-configuration).
+
 Access the live Journey report from the [!UICONTROL Journeys] menu by opening your journey's [!UICONTROL More actions] menu and selecting [!UICONTROL View last 24hrs report].
 
 ![](assets/report_journey.png)

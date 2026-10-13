@@ -54,6 +54,10 @@ You can access your Direct mail journey report by clicking the **[!UICONTROL Vie
 
 >[!ENDSHADEBOX]
 
+>[!NOTE]
+>
+>Direct mail channel-level metrics appear only after the scheduled file export, not immediately when profiles enter or exit the Direct mail action. Feedback events are generated after export, so the reporting delay depends on the [export frequency configured for journeys](../direct-mail/direct-mail-configuration.md#file-routing-configuration).
+
 ## Sending Statistics {#sending-statistics-directmail}
 
 ![](assets/cja-direct-sending-stat.png)
