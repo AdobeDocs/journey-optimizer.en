@@ -31,6 +31,7 @@ nudge: yes
   + [Onboarding hub](using/start/onboarding-hub.md)
   + [Work with AI](using/start/ai-features.md)
   + [Migrate content and journeys](using/start/migrate-content-and-journeys.md)
+  + [Switching from another platform](using/start/coming-from-another-platform.md)
   + Essentials {#essentials}
     + [What is Journey Optimizer](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)

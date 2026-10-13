@@ -45,7 +45,7 @@ Discover core capabilities, use cases, and how Journey Optimizer delivers person
 
 Understanding How It Works
 
-Learn how Journey Optimizer integrates with Adobe Experience Platform and how its key functional areas work together.
+Learn the five core concepts (profiles, audiences, campaigns and journeys, channel configurations, sandboxes) and how Journey Optimizer works with Adobe Experience Platform.
 
 [Explore the architecture](../using/start/understanding-ajo.md)
 :::
