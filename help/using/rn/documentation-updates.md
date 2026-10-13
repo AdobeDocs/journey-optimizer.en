@@ -33,8 +33,6 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
-* The **Event throughput limits** section now clarifies that the quotas apply only to events parked within journeys for resuming paused journeys, wait node completion, and quiet hours, not to all journey events. [Read more](../event/about-events.md#event-throughput)
-
 * A new **Configure OAuth 2.0 authentication** page explains how to set up OAuth 2.0 authentication for custom channels, including the token request payload (form or JSON), credential paths, token extraction, and where the token is added to delivery requests. It also lists the limits and validation rules. [Read more](../custom-channel/custom-channel-oauth2.md)
 
 * A new **Archiving** section groups the options for retaining sent messages. The new **Get started with message archiving** page compares BCC email and Message Export, and explains why mirror pages and the Entity Dataset are not archiving options. The BCC page has been renamed **Archive emails using BCC**, and **Export message content** now sits in the same section. [Read more](../configuration/archiving-overview.md)
