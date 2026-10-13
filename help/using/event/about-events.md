@@ -201,34 +201,22 @@ Both authenticated and unauthenticated streaming modes are supported. Batch-inge
 
 ## Event throughput limits {#event-throughput}
 
-Adobe Journey Optimizer enforces separate throughput limits per event type, at an organization level across all sandboxes:
+Adobe Journey Optimizer enforces separate throughput limits at an organization level across all sandboxes:
 
 * **Unitary events**: 5,000 events per second
 * **Read Audience based journey events**: 5,000 events per second
 
-These limits apply to all events used in active journeys, which includes **Live**, **Dry run**, **Closed** and **Paused** journeys. When a limit is reached, new events get queued and processed at 5,000 per second until the queue is drained.
-
-For more details on journey processing rates and how different journey types impact throughput, [learn more on journey processing rates](../building-journeys/entry-management.md#journey-processing-rate).
-
-The following types of events are counted toward these quotas:
-
-* **External Unitary Events**: Includes both rule-based and system-generated events. If the same raw event qualifies for multiple rule definitions, each matched rule counts as a separate event toward the quota.
-
-* **Audience Qualification Events**: If the same streaming audience is used in multiple journeys, each usage counts separately. For instance, using the same audience in an audience qualification activity in two journeys results in two counted events.
-
-* **Reaction Events**: Events triggered by profile reactions (email opened, email clicked, etc.) within a journey.
-
-* **Business Events**: Events not tied to a specific profile, but to a business-related event.
-
-* **Analytics Events**: If the [integration with Adobe Analytics to trigger journeys](about-analytics.md) has been enabled, these events are also included.
+These limits apply only to the following types of events parked within **Live**, **Dry run**, **Closed**, and **Paused** journeys, not to all journey events:
 
 * **Resume Events**: Technical event triggered when a profile resumes from a paused journey. Learn more about [resuming paused journeys](../building-journeys/journey-pause.md#journey-resume-steps).
 
 * **Wait Node Completion Events**: When a profile exits a wait node, a technical event is generated to resume the journey.
 
->[!NOTE]
->
->Except for wait and resume events, all other event types also count toward the quota when used in journeys based on read audiences.
+* **Quiet Hours based events**: [Quiet Hours](../conflict-prioritization/quiet-hours.md) let you define time-based exclusions for **Email**, **Mobile message**, **Push**, and **WhatsApp** channels. They ensure that no messages are sent during specific periods of time, helping you respect customer preferences and compliance requirements.
+
+When a limit is reached, events get queued and processed within these limits until the queue is drained.
+
+For more details, see [journey processing rates](../building-journeys/entry-management.md#journey-processing-rate).
 
 ## Updating and deleting an event {#update-event}
 
