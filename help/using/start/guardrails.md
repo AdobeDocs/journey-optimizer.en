@@ -67,7 +67,7 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 * **90 days** for data in the profile store
 * **13 months** for data in the data lake
 
-The rollout to **existing customer sandboxes** has been delayed by Adobe (originally planned for October 1, 2026) and will be progressively rolled out starting early 2027. [Learn more about datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
+The rollout to **existing customer sandboxes** has been delayed by Adobe (originally planned for October 1, 2026) and will be progressively rolled out sometime in the future. [Learn more about datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
 
 ## Journeys {#journeys-guardrails}
 
