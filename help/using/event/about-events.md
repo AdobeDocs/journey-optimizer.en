@@ -261,6 +261,7 @@ No — only streamed events can trigger journeys. For batch data, build an audie
 ## Next steps {#next-steps}
 
 * [Configure a unitary event](../event/about-creating.md)
+* [Use a Marketo activity as a journey event](../event/about-creating.md#marketo-activity-event)
 * [Configure a business event](../event/about-creating-business.md)
 * [Learn more on audience qualification events](../building-journeys/audience-qualification-events.md)
 * [Manage journey entry and reentrance](../building-journeys/entry-management.md)

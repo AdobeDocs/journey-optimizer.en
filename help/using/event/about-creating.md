@@ -122,6 +122,7 @@ You can use activities from [!DNL Marketo Engage], such as a trial download, to 
 * [TO CONFIRM: supported schemas and activity types]
 * [TO CONFIRM: required identity and profile identifier setup]
 * [TO CONFIRM: any Marketo-side configuration]
+* [TO CONFIRM: the schema has **Real-Time Customer Profile** enabled and the activities are streamed, as for any event that triggers a journey. See [Work with journey events](../event/about-events.md#next-steps)]
 
 [TO CONFIRM: limitations]
 
