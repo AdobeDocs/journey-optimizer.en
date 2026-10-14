@@ -32,7 +32,7 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * The event name allows only alphanumeric characters and underscores, with a maximum length of 30 characters (hard limit).
-* When you select the System Generated type, only schemas that have the eventID type field are available; when you select the Rule Based type, all Experience Event schemas are available.
+* When you select the System Generated type, only schemas that have the eventID type field are available; when you select the Rule Based type, you can select any Experience Event schema available in your sandbox.
 * Adding an identity type is optional but recommended, and only a people-based identity type can be selected.
 * Only one identity type is allowed per journey, so events used in the same journey must use the same identity type.
 * The same key, for example CRMID=3224, cannot be at two different places in the same journey.
@@ -42,7 +42,7 @@ For complete understanding, this information should be combined with the documen
 
 * Canonical name: Configure a unitary event
 * Synonyms: "Identity type" = "namespace"
-* Do not confuse: "Rule Based" (uses an Event ID condition, and all Experience Event schemas are available) ≠ "System Generated" (only schemas that have the eventID type field are available; the eventID field is automatically added to the selected fields)
+* Do not confuse: "Rule Based" (uses an Event ID condition, and you can select any Experience Event schema available in your sandbox) ≠ "System Generated" (only schemas that have the eventID type field are available; the eventID field is automatically added to the selected fields)
 * Do not confuse: "Event ID condition" (rule used to identify events that trigger the journey) ≠ "Profile identifier" (key used to identify the person associated to the event)
 
 **FAQ:**
@@ -50,7 +50,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: What are the two Event ID types for a unitary event?** — Rule Based, which uses an Event ID condition, and System Generated, for which the eventID field is automatically added to the list of selected fields.
 * **Q: Is defining an identity type required?** — It is optional but recommended, as it allows you to leverage information stored in the Real-time Customer Profile Service; only a people-based identity type can be selected.
 * **Q: Why does the system not allow the same key at different places in the same journey?** — A person cannot be at two different places in the same journey, so the system does not allow the same key to be at different places in the same journey.
-* **Q: What schemas are available for a System Generated event?** — Only schemas that have the eventID type field; for Rule Based events, all Experience Event schemas are available.
+* **Q: What schemas are available for a System Generated event?** — Only schemas that have the eventID type field; for Rule Based events, you can select any Experience Event schema available in your sandbox.
 * **Q: How do I preview the payload for a system-generated event?** — Save the event and re-open it first to generate an event ID, then use the View Payload icon to check the preview.
 
 +++
