@@ -33,7 +33,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
-* A caution has been added to the **Customizable fragments** page to inform users that enabling rich text on a legacy customizable visual fragment may cause styling loss in emails, journeys, campaigns, or templates already using it. It also describes the workarounds, and the compatibility warning screenshot has been updated. [Read more](../content-management/customizable-fragments.md#rich-text-visual)
+* A caution has been added to the **Customizable fragments** page to inform users that enabling rich text on a legacy customizable visual fragment may cause styling loss in journeys, campaigns, or templates already using it. [Read more](../content-management/customizable-fragments.md#rich-text-visual)
 
 * A new **Configure OAuth 2.0 authentication** page explains how to set up OAuth 2.0 authentication for custom channels, including the token request payload (form or JSON), credential paths, token extraction, and where the token is added to delivery requests. It also lists the limits and validation rules. [Read more](../custom-channel/custom-channel-oauth2.md)
 
