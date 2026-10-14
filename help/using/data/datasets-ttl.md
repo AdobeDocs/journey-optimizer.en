@@ -57,7 +57,9 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 * 90 days for data in the profile store,
 * 13 months for data in the data lake.
 
-This change will be enforced on **existing customer sandboxes** starting **October 1, 2026**.
+>[!IMPORTANT]
+>
+>The rollout of the TTL guardrail to **existing customer sandboxes** has been delayed by Adobe. The previously announced enforcement date of October 1, 2026 no longer applies. If you want to set a TTL on your datasets yourself, see the [Experience Platform TTL guide](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/experience-event-dataset-retention-ttl-guide){target="_blank"}.
 
 ## Impacted datasets {#datasets}
 
@@ -184,7 +186,7 @@ Customers who require longer retention have two options:
 
 +++How are customers notified before the TTL is enforced on existing sandboxes?
 
-Adobe notifies impacted customers before enforcing the TTL on existing sandboxes. For this rollout, Adobe sent an in-product notification and published this change in the product release notes, giving customers about two months' notice before the guardrail takes effect on October 1, 2026.
+Adobe notifies impacted customers before enforcing the TTL on existing sandboxes. The October 1, 2026 enforcement date has been delayed by Adobe. Adobe will announce the new date in advance.
 
 +++
 
