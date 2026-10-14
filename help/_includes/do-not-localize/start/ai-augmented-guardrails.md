@@ -29,7 +29,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Datasets Time-To-Live guardrail: 90 days for data in the profile store and 13 months for data in the data lake, rolled out to new sandboxes and new organizations as of February 2025 and delayed by Adobe for existing customer sandboxes, where it will be progressively rolled out starting early 2027 (previously planned for October 1, 2026).
+* Datasets Time-To-Live guardrail: 90 days for data in the profile store and 13 months for data in the data lake, rolled out to new sandboxes and new organizations as of February 2025 and delayed by Adobe for existing customer sandboxes, where it will be progressively rolled out starting early 2027 (originally planned for October 1, 2026).
 * The number of activities in a journey is limited to 50; this activity limit cannot be increased (hard limit).
 * The number of live, closed, paused, and dry run journeys active at one time is limited to 200 in production sandboxes and 100 in development sandboxes (hard limit, enforced when you publish a journey).
 * A journey instance for a profile has a maximum size of 1 MB (hard limit); it is advised to limit an event payload below 800 KB (recommended); business events and unitary events are subject to a stricter 64 KB limit.

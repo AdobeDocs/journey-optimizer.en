@@ -33,7 +33,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
-* The **Datasets Time-to-live (TTL) guardrails** and **Guardrails and limitations** pages now state that the TTL rollout to existing customer sandboxes has been delayed by Adobe and will be progressively rolled out starting early 2027, so the previously announced October 1, 2026 enforcement date no longer applies. The TTL page also links to the Experience Platform TTL guide for setting a TTL yourself. [Read more](../data/datasets-ttl.md)
+* The **Datasets Time-to-live (TTL) guardrails** and **Guardrails and limitations** pages now state that the TTL rollout to existing customer sandboxes has been delayed by Adobe (originally planned for October 1, 2026) and will be progressively rolled out starting early 2027. The TTL page also links to the Experience Platform TTL guide for setting a TTL yourself. [Read more](../data/datasets-ttl.md)
 
 * A new **Configure OAuth 2.0 authentication** page explains how to set up OAuth 2.0 authentication for custom channels, including the token request payload (form or JSON), credential paths, token extraction, and where the token is added to delivery requests. It also lists the limits and validation rules. [Read more](../custom-channel/custom-channel-oauth2.md)
 
