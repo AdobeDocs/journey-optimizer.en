@@ -60,7 +60,7 @@ Embark on a journey of seamless data integration with Marketo Engage. A specific
 
 >[!NOTE]
 >
->This page describes the custom action that sends data from your journeys to [!DNL Marketo Engage]. To start a journey from a [!DNL Marketo Engage] activity, see [Use a Marketo activity as a journey event](../event/about-creating.md#marketo-activity-event).
+>This page describes the custom action that sends data from your journeys to [!DNL Marketo Engage]. To start a journey from a [!DNL Marketo Engage] activity, see [Use a Marketo activity to trigger a journey](../event/about-creating.md#marketo-activity-event).
 
 ## Prerequisites {#prerequisites}
 

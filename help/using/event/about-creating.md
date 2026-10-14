@@ -113,33 +113,6 @@ Below are the first steps to configure a new event:
 
     The event is now configured and ready to be dropped into a journey. Additional configuration steps are required to receive events. See [this page](../event/additional-steps-to-send-events-to-journey.md).
 
-## Use a Marketo activity as a journey event {#marketo-activity-event}
-
-You can use activities from [!DNL Marketo Engage], such as a trial download, to trigger a journey. [!DNL Marketo Engage] activities arrive in Experience Platform as Experience Event data, so you can select their schema when you configure a **Rule Based** event.
-
-**Before you begin**, make sure that:
-
-* [TO CONFIRM: supported schemas and activity types]
-* [TO CONFIRM: required identity and profile identifier setup]
-* [TO CONFIRM: any Marketo-side configuration]
-* [TO CONFIRM: the schema has **Real-Time Customer Profile** enabled and the activities are streamed, as for any event that triggers a journey. See [Work with journey events](../event/about-events.md#next-steps)]
-
-[TO CONFIRM: limitations]
-
-1. Bring your [!DNL Marketo Engage] activities into Experience Platform with the [!DNL Marketo Engage] source connector. See [[!DNL Marketo Engage] connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo){target="_blank"}.
-
-1. [Configure a unitary event](#configure-an-event) and set the **[!UICONTROL Event ID type]** to **Rule Based**.
-
-1. Select the Experience Event schema that contains your [!DNL Marketo Engage] activities. [TO CONFIRM: schema name as displayed in the UI]
-
-1. In the **[!UICONTROL Event ID condition]** field, define a condition on a field of the activity. For example, to trigger a journey when a person downloads a product trial, match the **[TO CONFIRM: field]** field with the value **[TO CONFIRM: value]**.
-
-1. Select the identity type and the profile identifier. [TO CONFIRM: which identity and field to use for [!DNL Marketo Engage] activities]
-
-1. Click **[!UICONTROL Save]**, then [preview the payload](#preview-the-payload) to check the event. [TO CONFIRM: any [!DNL Marketo Engage]-specific verification]
-
-The event is now ready to be used to start a journey.
-
 ## Define the payload fields {#define-the-payload-fields}
 
 The payload definition allows you to choose the information the system expects to receive from the event in your journey and the key to identify which person is associated to the event. The payload is based on the Experience Cloud XDM field definition. For more information on XDM, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}.
@@ -244,5 +217,32 @@ The payload preview allows you to validate the payload definition.
 1. Check the preview to validate the payload definition.
 
 1. Then, you can share the payload preview with to the person responsible for the event sending. This payload can help them design the setup of an event pushing to [!DNL Journey Optimizer]. See [this page](../event/additional-steps-to-send-events-to-journey.md).
+
+## Example: use a Marketo activity to trigger a journey {#marketo-activity-event}
+
+[!DNL Marketo Engage] activities that are ingested through the [!DNL Marketo Engage] source connector can trigger a journey when they are available as Experience Event records in your sandbox. To learn how to bring [!DNL Marketo Engage] activities into Experience Platform, see [[!DNL Marketo Engage] connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo){target="_blank"}.
+
+**Before you begin**, make sure that:
+
+* [TO CONFIRM: supported [!DNL Marketo Engage] activity types, including custom activities]
+* [TO CONFIRM: required identity setup for the people targeted by the journey]
+* [TO CONFIRM: ingestion and sandbox prerequisites, including any [!DNL Marketo Engage]-side configuration]
+* [TO CONFIRM: the schema has **Real-Time Customer Profile** enabled and the activities are streamed, as for any event that triggers a journey. See [Work with journey events](../event/about-events.md#data-cycle)]
+
+[TO CONFIRM: limitations]
+
+1. [Create an event](#configure-an-event) and set the **[!UICONTROL Event ID type]** to **Rule Based**.
+
+1. Select the Experience Event schema that contains the [!DNL Marketo Engage] activity data you want to use. [TO CONFIRM: schema name as displayed in the UI]
+
+1. In the **[!UICONTROL Event ID condition]** field, define a condition that matches the activity that should start the journey. For example, for a product trial download, use the field and value in your schema that identify that activity: **[TO CONFIRM: field]** equal to **[TO CONFIRM: value]**.
+
+1. Define the profile identifier using a field that matches the identity setup of the people targeted by the journey. [TO CONFIRM: identity type and field to use for [!DNL Marketo Engage] activities]
+
+1. Click **[!UICONTROL Save]**, then [preview the payload](#preview-the-payload) to check the fields the event expects.
+
+1. Use the event as the entry event of your journey.
+
+1. To test, ingest a [!DNL Marketo Engage] activity and check that the event condition matches and that the expected profile enters the journey. [TO CONFIRM: recommended way to test]
 
 {{$include /help/_includes/do-not-localize/event/ai-augmented-about-creating.md}}
