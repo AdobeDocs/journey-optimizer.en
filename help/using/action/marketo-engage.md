@@ -58,10 +58,6 @@ Embark on a journey of seamless data integration with Marketo Engage. A specific
 * **Persons** (Profiles): Marketo transforms profiles into actionable insights.
 * **Custom Objects**: Tailor your data with custom objects, such as products, for a personalized marketing approach.
 
->[!NOTE]
->
->This page describes the custom action that sends data from your journeys to [!DNL Marketo Engage]. To start a journey from a [!DNL Marketo Engage] activity, see [Use a Marketo activity to trigger a journey](../event/about-creating.md#marketo-activity-event).
-
 ## Prerequisites {#prerequisites}
 
 The following prerequisites apply to this integration:

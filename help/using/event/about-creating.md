@@ -218,31 +218,4 @@ The payload preview allows you to validate the payload definition.
 
 1. Then, you can share the payload preview with to the person responsible for the event sending. This payload can help them design the setup of an event pushing to [!DNL Journey Optimizer]. See [this page](../event/additional-steps-to-send-events-to-journey.md).
 
-## Example: use a Marketo activity to trigger a journey {#marketo-activity-event}
-
-[!DNL Marketo Engage] activities that are ingested through the [!DNL Marketo Engage] source connector can trigger a journey when they are available as Experience Event records in your sandbox. To learn how to bring [!DNL Marketo Engage] activities into Experience Platform, see [[!DNL Marketo Engage] connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo){target="_blank"}.
-
-**Before you begin**, make sure that:
-
-* [TO CONFIRM: supported [!DNL Marketo Engage] activity types, including custom activities]
-* [TO CONFIRM: required identity setup for the people targeted by the journey]
-* [TO CONFIRM: ingestion and sandbox prerequisites, including any [!DNL Marketo Engage]-side configuration]
-* [TO CONFIRM: the schema has **Real-Time Customer Profile** enabled and the activities are streamed, as for any event that triggers a journey. See [Work with journey events](../event/about-events.md#data-cycle)]
-
-[TO CONFIRM: limitations]
-
-1. [Create an event](#configure-an-event) and set the **[!UICONTROL Event ID type]** to **Rule Based**.
-
-1. Select the Experience Event schema that contains the [!DNL Marketo Engage] activity data you want to use. [TO CONFIRM: schema name as displayed in the UI]
-
-1. In the **[!UICONTROL Event ID condition]** field, define a condition that matches the activity that should start the journey. For example, for a product trial download, use the field and value in your schema that identify that activity: **[TO CONFIRM: field]** equal to **[TO CONFIRM: value]**.
-
-1. Define the profile identifier using a field that matches the identity setup of the people targeted by the journey. [TO CONFIRM: identity type and field to use for [!DNL Marketo Engage] activities]
-
-1. Click **[!UICONTROL Save]**, then [preview the payload](#preview-the-payload) to check the fields the event expects.
-
-1. Use the event as the entry event of your journey.
-
-1. To test, ingest a [!DNL Marketo Engage] activity and check that the event condition matches and that the expected profile enters the journey. [TO CONFIRM: recommended way to test]
-
 {{$include /help/_includes/do-not-localize/event/ai-augmented-about-creating.md}}
