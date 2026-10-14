@@ -86,6 +86,11 @@ The steps to add dynamic content in expressions are as follows:
 >title="Conditional content"
 >abstract="Use a conditional rule saved into the library or create a new one."
 
+>[!CONTEXTUALHELP]
+>id="ac_conditional_content_default"
+>title="Default variant"
+>abstract="The Default variant displays when none of the conditions defined in the other variants are met. You can remove it if the content component should only display when a condition is met, removing the need for a default variant."
+
 The steps to create variants of a content component in the Email Designer are as follows:
 
 1. In the [Email Designer](../email/content-from-scratch.md), select a content component, then click **[!UICONTROL Enable conditional content]**.
