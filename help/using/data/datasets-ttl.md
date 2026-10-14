@@ -186,7 +186,7 @@ Customers who require longer retention have two options:
 
 +++How are customers notified before the TTL is enforced on existing sandboxes?
 
-Adobe notifies impacted customers before enforcing the TTL on existing sandboxes. The enforcement on existing sandboxes, originally planned for October 1, 2026, has been delayed by Adobe and will be progressively rolled out starting early 2027. Adobe will notify impacted customers in advance.
+Adobe notifies impacted customers before enforcing the TTL on existing sandboxes. The enforcement on existing sandboxes, originally planned for October 1, 2026, has been delayed by Adobe and will be progressively rolled out starting early 2027.
 
 +++
 
