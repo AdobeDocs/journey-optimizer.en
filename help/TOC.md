@@ -195,6 +195,7 @@ nudge: yes
         + [Get started with schemas and datasets](using/orchestrated/gs-schemas.md)
         + [Manual schema](using/orchestrated/manual-schema.md)
         + [File upload schema](using/orchestrated/file-upload-schema.md)
+        + {hide-from-toc} [Relational schema and dataset errors](using/orchestrated/relational-schema-errors.md)
         + [Ingest data](using/orchestrated/ingest-data.md)
       + [Create a Targeting dimension](using/orchestrated/target-dimension.md)
       + [Configure a Channel configuration](using/orchestrated/channel-config.md)
@@ -205,6 +206,7 @@ nudge: yes
       + [Orchestrate activities](using/orchestrated/orchestrate-activities.md)
       + [Add personalization](using/orchestrated/add-personalization.md)
       + [Start and monitor the campaign](using/orchestrated/start-monitor-campaigns.md)
+      + {hide-from-toc} [Orchestrated campaign errors](using/orchestrated/orchestrated-campaign-errors.md)
       + [Reporting](using/orchestrated/reporting-campaigns.md)
     + Query the database {#query-database}
       + [Query the database](/help/rp_landing_pages/query-database-landing-page.md)
@@ -292,6 +294,7 @@ nudge: yes
     + [Troubleshooting FAQ](using/start/troubleshooting.md)
     + Journeys troubleshooting {#troubleshoot-journey}
       + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
+      + {hide-from-toc} [Journey validation errors](using/building-journeys/journey-validation-errors.md)
       + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
       + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
       + [Troubleshoot custom actions](using/action/troubleshoot-custom-action.md)

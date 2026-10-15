@@ -125,6 +125,12 @@ The following capability is coming to channels in this release.
 </tbody>
 </table>
 
+* **HMAC-signed JWT authentication for custom actions (Limited Availability)** - Certificate-based custom authentication now supports JWT client assertions signed with your OAuth client secret (`HS256`, `HS384`, `HS512`; `client_secret_jwt`), as an alternative to Adobe's RSA certificate. Configurations without `alg` continue to use `RS256`.
+
+  This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access. Learn more in [Custom actions](../action/about-custom-action-configuration.md#certificate-based-auth) and [External data sources](../datasource/external-data-sources.md#hmac-credential).
+
+  Availability date: October 13, 2026
+
 * **Business Performance Analysis skill** - Analyze journey performance and get concrete optimization recommendations directly in Adobe CX Enterprise Coworker chat. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
 
   Availability date: October 7, 2026
