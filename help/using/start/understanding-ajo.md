@@ -73,7 +73,7 @@ topic_v2:
 
 This page explains how Adobe Experience Platform and Journey Optimizer work together, covering the continuous data-to-experience cycle, key functional areas, architecture details, and integration points.
 
-Adobe Journey Optimizer and Adobe Experience Platform work together to enable data-driven personalization at scale. This page explains how these systems operate and how their key functional areas combine to deliver exceptional customer experiences. [Learn about key capabilities](get-started.md) | [Explore key terminology](terminology.md)
+Adobe Journey Optimizer and Adobe Experience Platform work together to enable data-driven personalization at scale. This page explains how these systems operate and how their key functional areas combine to deliver exceptional customer experiences. [Learn about key capabilities](get-started.md) | [Jump to the five core concepts](#five-concepts) | [Explore key terminology](terminology.md)
 
 ## How Journey Optimizer works {#how-it-works}
 
@@ -107,6 +107,34 @@ Adobe Journey Optimizer applies the data and insights from Adobe Experience Plat
 This ecosystem operates as a continuous optimization cycle. Data drives customer understanding, which informs personalized content and decisions. These are orchestrated into journeys, delivered across channels, measured for effectiveness, and refined over time.
 
 ![Diagram illustrating the continuous optimization cycle in Journey Optimizer: data ingestion feeds customer profiles, which inform content and offer decisions, orchestrated into journeys, delivered across channels, measured for performance, and refined over time.](../assets/do-not-localize/get-started-flow.png)
+
+## Five concepts to know before you build {#five-concepts}
+
+Five ideas explain most of how [!DNL Journey Optimizer] behaves. Read these first, then follow the links when you need more detail.
+
+1. **Profiles and data.** Every customer has a **profile** that unifies what you know about them: attributes (name, preferences), events (purchases, app opens), and identities (email, device). This data lives in Adobe Experience Platform and powers targeting and personalization. [Get started with profiles](../audience/get-started-profiles.md)
+
+1. **Audiences.** An **audience** is a group of profiles that share traits or behavior. Audiences update as profiles change, so the right people are targeted when you send. [About audiences](../audience/about-audiences.md)
+
+1. **Campaigns and journeys.** Choose the approach that matches how you want customers to experience your message:
+
+    | Use a… | When… |
+    |---|---|
+    | **Campaign** | You send a scheduled or API-triggered message to an audience. |
+    | **Journey** | Customers move at their own pace through a multi-step, behavior-driven flow. |
+    | **Orchestrated campaign** | You run a complex batch workflow with multi-entity data. |
+
+    [Journeys vs campaigns](journeys-vs-campaigns.md) | [Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)
+
+1. **Channel configurations.** A **channel configuration** is the sending identity for a channel: for email, the subdomain and sender details; for push, the app credentials. Messages cannot be sent until an administrator sets one up. [Set up channel configurations](../configuration/channel-surfaces.md)
+
+1. **Sandboxes.** A **sandbox** is an isolated environment. Data, audiences, journeys, and settings do not carry across sandboxes. Build and test in a development sandbox, then send to customers from production. [Use and assign sandboxes](../administration/sandboxes.md)
+
+>[!TIP]
+>
+>Practice these concepts without touching production data. Use the free [Journey Optimizer tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/overview){target="_blank"} and a [training sandbox](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/configure-a-training-sandbox/introduction-and-prerequisites){target="_blank"}.
+
+Not sure who sets up what? See [Roles and responsibilities](quick-start.md).
 
 ## Key functional areas {#functional-areas}
 

@@ -135,7 +135,6 @@ Enable **[!UICONTROL Advanced scheduling]** to configure enrollment, progress tr
 
       * **[!UICONTROL When the challenge starts]**: Open enrollment at the challenge start. This is the default.
       * **[!UICONTROL On a specific date]**: Set a date in **[!UICONTROL Opt-in opens on]**.
-      * **[!UICONTROL When an event occurs]**: Use an event to trigger when members can start opting in.
 
    * **[!UICONTROL Opt-in closes]**: Choose when enrollment ends:
 

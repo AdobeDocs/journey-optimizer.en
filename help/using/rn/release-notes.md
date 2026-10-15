@@ -94,6 +94,23 @@ The following capability is coming to channels in this release.
 <table>
 <thead>
 <tr>
+<th><strong>Stop action journey activity</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new <strong>Stop action</strong> activity in the journey canvas lets you remove a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit for more advanced cross-channel orchestration.</p>
+<p>For more information, refer to the <a href="../building-journeys/stop-action.md">detailed documentation</a>.</p>
+<p>Availability date: October 12, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>On-demand journey validation</strong><br/></th>
 </tr>
 </thead>
@@ -126,21 +143,6 @@ The following capability is coming to channels in this release.
 <p>The Journey Optimizer home page now surfaces an <strong>AI recommendation card</strong> when a journey alert fires, covering <strong>Journey Custom Action failure</strong> and <strong>Journey Anomaly Detected</strong> alerts. Selecting the card opens the journey with the right rail pre-populated with the analysis already performed.</p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Inbound Activity Deactivation journey activity</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>A new <strong>Inbound Activity Deactivation</strong> activity in the journey canvas lets you remove a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit for more advanced cross-channel orchestration.</p>
 </td>
 </tr>
 </tbody>

@@ -48,6 +48,8 @@ New to [!DNL Adobe Journey Optimizer]? This hub gathers the resources that help 
 
 ## Start here: watch & learn {#start-here}
 
+Before you build anything, read [Five concepts to know before you build](understanding-ajo.md#five-concepts) (about five minutes). It covers profiles, audiences, campaigns versus journeys, channel configurations, and sandboxes.
+
 If you have ten minutes, begin with this orientation video. It walks through the interface and highlights the key capabilities by role.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424995?quality=12)

@@ -49,6 +49,8 @@ topic_v2:
 
 This reference guide defines the essential terms you'll encounter when using Adobe Journey Optimizer. Understanding these concepts helps you navigate the platform confidently and collaborate effectively with your team.
 
+New to Journey Optimizer? Start with the [five core concepts](understanding-ajo.md#five-concepts).
+
 For pairs of similar-sounding terms that are often confused — such as **Decisioning vs Decision Management** or **Content Cards vs In-App messages** — see [When terms look similar](#disambiguation) at the bottom of this page.
 
 >[!NOTE]
@@ -98,6 +100,7 @@ For pairs of similar-sounding terms that are often confused — such as **Decisi
 | Term | Definition |
 |------|------------|
 | **Channel configuration** | The settings that define how messages are delivered for a specific channel — including sender details, subdomain, IP pool, and message type (marketing or transactional). Previously referred to as "surface" or "preset" in older documentation. [Learn more](../configuration/channel-surfaces.md) |
+| **Sandbox** | An isolated environment in which data, audiences, journeys, campaigns, and settings exist independently. Nothing carries across sandboxes automatically, so teams typically build and test in a development sandbox and send to customers from production. Sandboxes are an Adobe Experience Platform concept that Journey Optimizer uses. Each profile is counted once per sandbox for licensing. [Learn more](../administration/sandboxes.md) |
 | **Suppression list** | A list of email addresses and domains automatically excluded from message delivery due to hard bounces, spam complaints, or manual additions. Sending to suppressed addresses is blocked to protect deliverability and sender reputation. [Learn more](../reports/suppression-list.md) |
 
 ## Conflict & prioritization terms {#conflict-terms}
