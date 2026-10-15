@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how creators submit a journey or campaign for approval, how the available action button depends on whether an active approval policy applies, and how to cancel, edit, and resubmit a request while it is in review.
+* **TL;DR:** This page explains how creators submit a journey or campaign for approval, how the available action button depends on whether active approval policies exist for the object type in the sandbox, and how to cancel, edit, and resubmit a request while it is in review.
 
 **Intents:**
 
@@ -21,12 +21,13 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **[!UICONTROL Request Approval]**: The button that submits a campaign or journey for review when one or more active approval policies exist for that object type in the sandbox. *(product-specific)*
+* **[!UICONTROL Request Approval]**: The button displayed when one or more active approval policies exist for that object type in the sandbox; clicking it checks whether a policy applies to the campaign or journey. *(product-specific)*
 * **Auto-approval workflow**: The flow triggered when no approval policy applies to the selected object after clicking **[!UICONTROL Request Approval]**; the object is automatically approved and either activated or published. *(product-specific)*
 * **In review**: The state of a campaign or journey after a request is sent, during which the request can be canceled. *(product-specific)*
 * **[!UICONTROL Cancel request]**: The action that returns the campaign or journey to the draft stage and notifies the reviewers. *(product-specific)*
 
 **Guardrails:**
+* Journeys must be validated and errors in the Alerts panel resolved before requesting approval. Journey changes require **[!UICONTROL Validate]** again and resolution of errors before resubmission.
 
 * If no approval policy is active for the object type in a sandbox, campaigns show the **[!UICONTROL Activate]** button and journeys show the **[!UICONTROL Publish]** button, allowing activation or publishing without approval.
 * If one or more active approval policies exist for the object type in a sandbox, all objects of that type display the **[!UICONTROL Request Approval]** button.
@@ -49,4 +50,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 75c6ec13 -->
+<!-- ai-section-version: 1 | source-hash: 997f4e3a -->

@@ -40,7 +40,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-In this section, learn how to troubleshoot journeys before testing or publishing. All the checks listed below can be performed when the journey is in test mode or when the journey is live. The recommendation is to make all the checks below in test mode and then proceed to publication. Learn more about the test mode on [this page](../building-journeys/testing-the-journey.md).
+Use this page to find and fix configuration errors before testing or publishing. First, click **[!UICONTROL Validate]** in the journey header and review the Alerts panel. Resolve any errors and validate again before continuing to [test mode](testing-the-journey.md) or publication. [Learn about journey validation](publish-journey.md#validate).
 
 Learn how to troubleshoot journey events, check if profiles entered your journey, how they navigate through it, and if messages are sent [on this page](troubleshooting-execution.md). If no profiles enter your event-based journey despite events being ingested, ensure the [event condition data types match the event schema](troubleshooting-execution.md#verify-event-identity-and-rule-data-types).
 
@@ -48,7 +48,7 @@ If you are using inbound actions, learn how to troubleshoot them [on this page](
 
 ## Errors in activities {#activity-errors}
 
-Before testing and publishing your journey, verify that all the activities are properly configured. You cannot perform tests or publications if errors are still detected by the system.
+Basic checks related to journey activities run automatically while you build. The **[!UICONTROL Validate]** button runs configuration checks, including message checks. You cannot test or publish a journey with blocking errors. After fixing an error or editing the journey, click **[!UICONTROL Validate]** again before continuing.
 
 If a condition cannot find a custom-upload enrichment attribute, [learn how to troubleshoot the audience and attribute reference](../audience/enrichment-attributes.md#faq-enrichment).
 

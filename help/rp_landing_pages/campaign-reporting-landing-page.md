@@ -5,10 +5,13 @@ title: Campaign reports
 description: Campaign reports
 redpen-status: CREATED_||_2025-08-11_20-49-35
 exl-id: 01d60382-ea80-4ebd-9918-7e7821083cb9
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Campaign reports{#section-overview}
 
-Campaign reports in Adobe Journey Optimizer empower you to unlock actionable insights into your marketing efforts across various channels. From email performance and SMS engagement to web interactions and push notifications, these reports provide a clear picture of how audiences respond to your campaigns. Each report focuses on specific metrics like click-through rates, delivery status, or tracked links tailored to the campaign type, helping you identify trends, optimize strategies, and enhance user experiences. Whether you’re analyzing funnel results or fine-tuning AI-driven personalization, these tools guide you step-by-step toward achieving greater campaign success.
+Campaign reports in Adobe Journey Optimizer empower you to unlock actionable insights into your marketing efforts across various channels. From email performance and mobile engagement to web interactions and push notifications, these reports provide a clear picture of how audiences respond to your campaigns. Each report focuses on specific metrics like click-through rates, delivery status, or tracked links tailored to the campaign type, helping you identify trends, optimize strategies, and enhance user experiences. Whether you're analyzing funnel results or fine-tuning AI-driven personalization, these tools guide you step-by-step toward achieving greater campaign success.
 
 ## Campaign Reports in Adobe Journey Optimizer
 
@@ -80,5 +83,5 @@ Leverage experimentation data to compare campaign variants, analyze KPIs, and id
 
 - **[In-app Campaign Report](../using/reports/campaign-global-report-cja-inapp.md)** - Optimize In-app messaging campaigns by analyzing metrics such as impressions, clicks, and dismissals.
 - **[Push Notification Campaign Report](../using/reports/campaign-global-report-cja-push.md)** - Dive into push notification performance, engagement metrics, and reasons for errors and exclusions.
-- **[SMS Campaign Report](../using/reports/campaign-global-report-cja-sms.md)** - Evaluate SMS campaign performance with metrics like delivery trends, tracked links, and bounce reasons.
+- **[Mobile Campaign Report](../using/reports/campaign-global-report-cja-sms.md)** - Evaluate Mobile message campaign performance with metrics like delivery trends, tracked links, and bounce reasons.
 - **[Web Campaign Report](../using/reports/campaign-global-report-cja-web.md)** - Understand web engagement metrics like impressions, clicks, and tracked links to optimize performance.

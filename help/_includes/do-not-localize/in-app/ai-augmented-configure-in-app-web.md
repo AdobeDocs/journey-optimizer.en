@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to configure the Web In-app channel in Adobe Experience Platform Data Collection by setting up the Web SDK extension, creating Sent data to platform and Manual trigger rules, and creating an In-app web channel configuration in Journey Optimizer.
+* **TL;DR:** This page explains how to configure the Web In-app channel in Adobe Experience Platform Data Collection by setting up the Web SDK extension, creating a Sent data to platform rule and a Manual rule, and creating an In-app web channel configuration in Journey Optimizer.
 
 **Intents:**
 
@@ -22,11 +22,11 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Adobe Experience Platform Web SDK extension**: The Tag extension that must be installed in your Tag properties to support Web In-app messaging *(product-specific)*
+* **Adobe Experience Platform Web SDK extension**: The Web SDK tag extension that must be installed in your Tag properties, using the latest version *(product-specific)*
 * **Personalization Storage**: A Web SDK extension option that stores event histories on the client, a prerequisite for implementing Frequency Rules in the Rules builder *(product-specific)*
 * **Sent data to platform rule**: A rule configured with a Library Loaded (Page Top) event and a Send event action *(product-specific)*
 * **Manual rule**: A rule configured with a Click event and an Evaluate rulesets action *(product-specific)*
-* **Render visual personalization decisions**: An option enabled in the action configuration to deliver visual personalization *(product-specific)*
+* **Render visual personalization decisions**: An option enabled in the Personalization section of the Send event action (Sent data to platform rule) or in the Evaluate rulesets action section (Manual rule) *(product-specific)*
 * **Decision Context**: The section where you define the Key and Value pairs that determine which experience to deliver *(product-specific)*
 * **In-app web configuration**: A channel configuration created from Channels > General settings > Channel configurations to configure the In-app messaging channel *(product-specific)*
 * **Pages matching rule**: An App configuration option that targets multiple URLs following the same pattern by defining Domain and Page criteria *(product-specific)*
@@ -42,8 +42,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: In-app web configuration — Acronym: n/a — variants: Web In-app channel configuration, In-app web channel configuration
-* Synonyms: "Sent data to platform rule" = "Sent data to platform trigger"
+* Canonical name: In-app web configuration — Acronym: n/a
 * Do not confuse: "Sent data to platform rule" (Library Loaded (Page Top) event with a Send event action) ≠ "Manual rule" (Click event with an Evaluate rulesets action)
 
 **FAQ:**
@@ -56,4 +55,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 84dc85c1 -->
+<!-- ai-section-version: 1 | source-hash: 90d65258 -->

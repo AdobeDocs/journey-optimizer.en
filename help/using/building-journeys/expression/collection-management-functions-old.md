@@ -126,16 +126,15 @@ A query of experience events recorded on the Adobe Experience Platform may or ma
 earlier timestamp) in order to only consider prior events.
 -->
 
-   >[!NOTE]
-   >
-   >When the filtering condition in the **all()** function is empty, the filter will return all the elements in the list. **However, in order to count the number of elements of a collection, the all function is not required.**
+>[!NOTE]
+>
+>When the filtering condition in the **all()** function is empty, the filter will return all the elements in the list. **However, in order to count the number of elements of a collection, the all function is not required.**
 
+```json
+count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.token})
+```
 
-   ```json
-   count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.token})
-   ```
-
-   The result of the expression is **3**.
+The result of the expression is **3**.
 
 **Example 3:**
 
@@ -213,12 +212,12 @@ This expression returns the last push notification token associated with mobile 
 
    The result is "token_2".
 
-   >[!NOTE]
-   >
-   >The experience events are retrieved from Adobe Experience Platform as a collection in reverse chronological order, hence :
-   >
-   >* **[!UICONTROL first]** function will return the most recent event
-   >* **[!UICONTROL last]** function will return the oldest one.
+>[!NOTE]
+>
+>The experience events are retrieved from Adobe Experience Platform as a collection in reverse chronological order, hence :
+>
+>* **[!UICONTROL first]** function will return the most recent event
+>* **[!UICONTROL last]** function will return the oldest one.
 
 **Example 3:**
 

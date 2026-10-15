@@ -36,7 +36,7 @@ For complete understanding, this information should be combined with the documen
 * Fragments can only be nested up to 1 level.
 * A journey or campaign cannot be activated or published if it contains a fragment with Draft status; draft fragments must be approved before publication.
 * Expression fragments cannot receive loop-scoped variables (the current `{{#each}}` iteration item) as parameters — this is a known limitation. Use global variables or inline logic as a workaround.
-* If a fragment containing multiple line breaks is used in SMS or push content, line breaks are preserved; test the content before sending.
+* If a fragment containing multiple line breaks is used in Mobile message or push content, line breaks are preserved; test the content before sending.
 
 **Terminology:**
 

@@ -29,7 +29,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Outbound channels are supported (for example email, SMS, and push).
+* Outbound channels are supported (for example email, Mobile message, and push).
 * For API call responses, JSON and HTML are supported for field mapping; raw binary image output and formats that are not JSON are not available.
 * Retrieval APIs that target specific content are supported; Listing APIs (broad list or pagination patterns) are not supported.
 * To configure Integrations, users need the Manage AJO integration configuration and View AJO integration configuration permissions.
@@ -46,7 +46,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Which channels support Integrations?** — Outbound channels (for example email, SMS, and push).
+* **Q: Which channels support Integrations?** — Outbound channels (for example email, Mobile message, and push).
 * **Q: Which API response formats are supported?** — JSON and HTML; raw binary image output and non-JSON formats are not available.
 * **Q: Which API patterns can I connect to?** — Retrieval APIs that target specific content; Listing (broad list or pagination) APIs are not supported.
 * **Q: Can I use Integrations in reusable fragments?** — Yes, the feature is supported in Fragments.

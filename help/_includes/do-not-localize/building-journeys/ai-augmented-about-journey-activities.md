@@ -20,26 +20,27 @@ For complete understanding, this information should be combined with the documen
 * Troubleshoot activity configuration errors before publishing a journey
 
 **Glossary:**
-* **Event activity**: A journey activity triggered by an incoming event (e.g., purchase, audience qualification) that starts or advances a profile through the journey *(product-specific)*
-* **Orchestration activity**: A journey activity (e.g., Optimize, Read Audience, Wait) that controls the flow and branching logic of a journey *(product-specific)*
-* **Action activity**: A journey activity that delivers a communication or calls an external system as the result of a trigger *(product-specific)*
-* **Custom action**: A user-configured action that connects Journey Optimizer to a third-party system for sending messages or data *(product-specific)*
+* **Event activity**: An activity used to start a journey; when the event arrives, the journey triggers and each profile follows its defined steps *(product-specific)*
+* **Orchestration activity**: An activity that helps determine the next step in the journey; examples include Optimize, Read Audience, and Wait *(product-specific)*
+* **Action activity**: An activity representing what happens as a result of a trigger, such as sending a message *(product-specific)*
+* **Custom action**: A specific action that can be created when using a third-party system to send messages *(product-specific)*
 * **Alternative path**: A fallback branch added to an activity so the journey continues even when a timeout or error occurs *(product-specific)*
 
 **Guardrails:**
-* Tests and publications cannot be performed if configuration errors are still detected in any activity
-* Advanced/technical parameters on most activities are read-only and cannot be modified without using the parameter override feature
+* Before testing or publishing, the journey must be validated. Errors in the Alerts panel must be resolved and validation rerun before continuing.
+* Most activities display advanced or technical parameters that cannot be modified; in some particular contexts, their values can be overridden using **[!UICONTROL Enable parameter override]**.
 
 **Terminology:**
-* Canonical name: Journey Activity — Acronym: none — variants: activity, node, step
-* Synonyms: "action activity" = "channel action" = "message action"
-* Do not confuse: "Orchestration activity" ≠ "Action activity" (orchestration controls flow; actions deliver communications)
+* Canonical name: journey activities. Categories: Event activities, Orchestration activities, Action activities.
+* Do not confuse: "Orchestration activity" ≠ "Action activity" (orchestration helps determine the next step; actions represent what happens as a result of a trigger).
 
 **FAQ:**
-* **Q: What is the difference between event, orchestration, and action activities?** — Event activities trigger journey entry or progression; orchestration activities control branching and flow logic; action activities deliver messages or call external systems.
-* **Q: How do I add a label to a journey activity?** — Open the activity properties pane and fill in the Label field; the label appears as a suffix under the activity node on the canvas.
+* **Q: What is the difference between event, orchestration, and action activities?** — Events trigger journey entry; orchestration activities help determine the next step; actions represent what happens as a result of a trigger, such as sending a message.
+* **Q: What does a label add to an activity?** — The **[!UICONTROL Label]** adds a suffix to the name under the activity in the canvas, helping identify repeated activities and making debugging and reports easier to read.
 * **Q: What happens when an error occurs in an action or condition activity?** — The profile's journey stops unless you check the "Add an alternative path in case of a timeout or an error" option on that activity.
-* **Q: Can I use Adobe Campaign to send messages from a journey?** — Yes, Journey Optimizer supports integration with Adobe Campaign v7/v8, Campaign Standard, and Marketo Engage for sending messages via custom action activities.
-* **Q: How do I override a read-only advanced parameter on an activity?** — Click the "Enable parameter override" icon to the right of the parameter field to force a custom value.
+* **Q: How can I send messages using a third-party system?** — Create a specific custom action when using a third-party system to send messages.
+* **Q: When can I override an advanced parameter on an activity?** — In some particular contexts, click the **[!UICONTROL Enable parameter override]** icon to the right of the field to force a value.
 
 +++
+
+<!-- ai-section-version: 1 | source-hash: 25f2ba60 -->

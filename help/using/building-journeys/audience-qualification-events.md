@@ -222,7 +222,7 @@ Learn more about entry rate limits and throughput in [this section](entry-manage
 
 ## Guardrails and limitations {#audience-qualification-guardrails}
 
-Follow the guardrails and recommendations below to build Audience Qualification journeys. See also [Audience Qualification best practices](#best-practices-segments).
+Follow the guardrails and recommendations below to build Audience Qualification journeys. [Learn which activities count toward the sandbox Audience Qualification limit](../start/guardrails.md#audience-qualif-g). See also [Audience Qualification best practices](#best-practices-segments).
 
 
 * Audience Qualification journeys are primarily designed to work with streaming audiences. This combination guarantees a better real-time experience. It is strongly recommended to use **streaming audiences** in the Audience Qualification activity.

@@ -29,7 +29,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Datasets Time-To-Live guardrail: 90 days for data in the profile store and 13 months for data in the data lake, rolled out to new sandboxes and new organizations as of February 2025 and enforced on existing customer sandboxes starting October 1, 2026.
+* Datasets Time-To-Live guardrail: 90 days for data in the profile store and 13 months for data in the data lake, rolled out to new sandboxes and new organizations as of February 2025 and delayed by Adobe for existing customer sandboxes (originally planned for October 1, 2026).
 * The number of activities in a journey is limited to 50; this activity limit cannot be increased (hard limit).
 * The number of live, closed, paused, and dry run journeys active at one time is limited to 200 in production sandboxes and 100 in development sandboxes (hard limit, enforced when you publish a journey).
 * A journey instance for a profile has a maximum size of 1 MB (hard limit); it is advised to limit an event payload below 800 KB (recommended); business events and unitary events are subject to a stricter 64 KB limit.
@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 * A single event can be referenced by a maximum of 25 journeys, and a single XDM schema by a maximum of 100 events, across all live, closed, paused, test mode, and dry run journeys at one time (hard limit; publishing is blocked when reached).
 * Profile reentrance into unitary journeys is temporally blocked by default for 5 minutes.
 * Custom actions capping: 300,000 calls over one minute per host and per sandbox for endpoints with response times under 0.75 seconds (default cap, sliding window — raisable via the Capping or Throttling APIs); a separate 150,000 calls per 30 seconds applies to endpoints over 0.75 seconds; any targeted endpoint must support at least 200 TPS and throttling cannot go below 200 TPS.
-* A sandbox can include a maximum of 300 Audience Qualification activities across all live, closed, paused, test mode, and dry run journeys (hard limit; publishing is blocked when reached).
+* A sandbox can include a maximum of 300 Audience Qualification activities across all live, closed, paused, test mode, and dry run journeys (hard limit; publishing is blocked when reached). This limit also applies to Audience Qualification activities used as exit criteria. Audience Qualification activities used as the first activity in closed journeys are excluded from this limit.
 * You can publish up to 10 audience compositions in a given sandbox.
 * Read Audience: each organization can run up to five Read Audience instances concurrently across all sandboxes and journeys; sandbox throughput is a maximum of 20,000 profiles per second shared across all Read Audience activities (individual activities configurable from 500 to 20,000 profiles per second); jobs not processed within 12 hours are cleaned up and will not execute; for supplemental IDs the reading rate is limited to a maximum of 500 profiles per second.
 * In-app message content size is limited to 2 MB (hard limit).

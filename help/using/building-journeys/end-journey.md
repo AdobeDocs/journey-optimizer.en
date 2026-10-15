@@ -9,7 +9,7 @@ level: Intermediate
 keywords: reenter, journey, end, live, stop
 exl-id: ea1ecbb0-12b5-44e8-8e11-6d3b8bff06aa
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/-mknoNfkNCnfnLD1UCiA6C88NjookKqGr5tQdJ-f3T4
+TQID: 'https://experienceleague.adobe.com/-mknoNfkNCnfnLD1UCiA6C88NjookKqGr5tQdJ-f3T4'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Journeys
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
@@ -125,6 +127,8 @@ The definition of "finished" varies depending on the journey type:
 ### Close to new entrances {#close-to-new-entrances}
 
 Closing a journey manually ensures that customers who already entered the journey can finish their path but new users are not able to enter the journey. When a journey is closed (for any of the reasons above), it will have the status **[!UICONTROL Closed]**. The journey stops letting new individuals enter the journey. Profiles already in the journey can finish the journey normally. After the default global timeout of 91 days, the journey will switch to the **Finished** status. 
+
+For journeys that start with Audience Qualification, [learn how closing a journey affects the sandbox Audience Qualification limit](../start/guardrails.md#audience-qualif-g).
 
 You can stop a journey from the **Live** or **Paused** state. When the journey is **Paused**, you do not need to resume it to **Live** first. [Learn more about stopping a paused journey](journey-pause.md#stop-close-paused).
 

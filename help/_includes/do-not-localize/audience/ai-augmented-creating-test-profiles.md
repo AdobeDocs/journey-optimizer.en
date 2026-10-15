@@ -25,7 +25,7 @@ For complete understanding, this information should be combined with the documen
 * **Profile test details**: The field group that must be added to the schema; the `testProfile` flag is part of this field group *(product-specific)*
 * **Simulate content**: The action to test content variations with sample input data or AI auto-generation *(product-specific)*
 * **Simulate content (AEP profiles)**: The option selected from the Simulate content dropdown to preview content with test profiles *(product-specific)*
-* **In-product use case**: A guided card on the Journey Optimizer home page that facilitates test profile creation from a predefined CSV format *(product-specific)*
+* **In-product use case**: A use case available from the Journey Optimizer home page that facilitates the creation of test profiles used for testing journeys before publishing, from a predefined CSV format *(product-specific)*
 * **Identity namespace**: The namespace (for example Email or Phone) used to uniquely identify the test profiles *(product-specific)*
 
 **Guardrails:**
@@ -42,7 +42,6 @@ For complete understanding, this information should be combined with the documen
 * Canonical name: Test profile — Acronym: n/a — variants: test profiles
 * Synonyms: "`testProfile` flag" = "`testProfile` field"
 * Do not confuse: "Simulate content" (sample input data or AI auto-generation) ≠ "Simulate content (AEP profiles)" (preview with test profiles)
-* Do not confuse: "Person Id" (unique identifier reflecting the selected identity namespace) ≠ "Email Address" (test profile email address)
 
 **FAQ:**
 
@@ -54,4 +53,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: d3e14af3 -->
+<!-- ai-section-version: 1 | source-hash: d3614b19 -->

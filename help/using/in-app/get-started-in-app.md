@@ -7,7 +7,7 @@ role: User
 level: Beginner
 keywords: in-app, message, creation, start
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-TQID: https://experienceleague.adobe.com/b139LQsPe3HwKe1O5cyBx4Nj4jpW3GXCFIVIWTAIlbg
+TQID: 'https://experienceleague.adobe.com/b139LQsPe3HwKe1O5cyBx4Nj4jpW3GXCFIVIWTAIlbg'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -16,6 +16,8 @@ feature_v2:
     internal-label: Communication channels
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
@@ -106,7 +108,7 @@ In-app messages depend on an active session, so they are not suited to every sce
 * The message is a critical or time-sensitive issue that requires reaching users outside the app, such as an outage or security alert
 * The communication is regulatory or legal and requires a read confirmation that in-app messages cannot provide
 * The goal is account reactivation or a win-back campaign for inactive users who are unlikely to open the app
-* The message is a high-volume transactional update, such as an order confirmation, that is better suited to email or SMS
+* The message is a high-volume transactional update, such as an order confirmation, that is better suited to email or mobile message
 * Overuse could lead to banner blindness, where users start ignoring messages that appear too often
 * Users may be offline or without app connectivity when the message is meant to be delivered
 

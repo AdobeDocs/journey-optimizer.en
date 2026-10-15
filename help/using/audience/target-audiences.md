@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 78b95ccd-bc28-46cd-937a-f68e3f34cc1e
-TQID: https://experienceleague.adobe.com/tcx8KXGtorgevwLUj6rnvoE1mFYESJ4VaLL2vn3aZfA
+TQID: 'https://experienceleague.adobe.com/tcx8KXGtorgevwLUj6rnvoE1mFYESJ4VaLL2vn3aZfA'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -17,11 +17,15 @@ feature_v2:
     internal-label: Journey management
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
+  - id: d2971708-e780-44bb-9e2a-72f139796afd
+    internal-label: Customer
 subfeature_v2:
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences
   - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
     internal-label: Audience guardrails
+  - id: ef9a83ca-eefa-47cf-aa34-f1a34715583a
+    internal-label: Profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

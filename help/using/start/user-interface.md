@@ -138,7 +138,7 @@ Keyboard shortcuts and accessibility features are available. [Learn more](access
 
 The home page provides:
 
-* **CX Enterprise Coworker** - Enter a business goal in the **“What would you like to accomplish today?”** prompt to start a conversation.
+* **CX Enterprise Coworker** - Enter a business goal in the **"What would you like to accomplish today?"** prompt to start a conversation.
 * **Recents** - Shortcuts to recently created events, journeys, campaigns, and other objects
 * **Resources** - Links to documentation, tutorials, and support
 
@@ -217,7 +217,7 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 
 ## CX Enterprise Coworker {#cx-enterprise-coworker}
 
-CX Enterprise Coworker is the in-product conversational experience. On the Journey Optimizer home page, enter a business goal in the **“What would you like to accomplish today?”** prompt to start a conversation. It provides instant help and operational insights. [Learn more about CX Enterprise Coworker](ai-features.md#cx-coworker).
+CX Enterprise Coworker is the in-product conversational experience. On the Journey Optimizer home page, enter a business goal in the **"What would you like to accomplish today?"** prompt to start a conversation. It provides instant help and operational insights. [Learn more about CX Enterprise Coworker](ai-features.md#cx-coworker).
 
 ## Related topics {#related-topics}
 
@@ -261,7 +261,7 @@ CX Enterprise Coworker is the in-product conversational experience. On the Journ
 >[!CONTEXTUALHELP]
 >id="ajo_oc_campaign_ovv_4"
 >title="Available channels"
->abstract="Email, SMS, Push notifications, and Direct mail"
+>abstract="Email, SMS, Push notifications, LINE, Custom channels and Direct mail"
 
 <!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS + JOURNEYS SKU -->
 
@@ -385,12 +385,12 @@ CX Enterprise Coworker is the in-product conversational experience. On the Journ
 >title="Set as default"
 >abstract="Enable this option to use a common webhook URL for processing provider feedback and inbound messages received from the provider."
 
-<!--DOCAC-15698 Implement contextual help for Inbound Activity Deactivation activity-->
+<!--DOCAC-15953 Add contextual help entry for custom metadata-->
 
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_inbound_activity_deactivation"
->title="Inbound Activity Deactivation activity"
->abstract="Removes a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit."
+>id="ajo_custom_metadata_configuration"
+>title="About custom metadata"
+>abstract="Add up to 10 schema fields per entity type to capture custom metadata on your journeys, campaigns and orchestrated campaigns."
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-user-interface.md}}

@@ -39,7 +39,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: In-app content — Acronym: n/a — variants: In-app message content, In-app notification content
+* Canonical name: In-app content — Acronym: n/a — variants: In-app message content
 * Synonyms: "Advanced formatting toggle" = "Advanced formatting mode"
 * Do not confuse: "Content tab" (define content, close button, media, and buttons) ≠ "Settings tab" (message layout, preview, and advanced formatting) ≠ "Data tab" (Key/Value pairs for the payload)
 * Do not confuse: "Message Layout" section (Fullscreen, Modal, Banner, Custom) ≠ "Layout" section in the Settings tab (background image for the message)
@@ -55,4 +55,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 62dd8e16 -->
+<!-- ai-section-version: 1 | source-hash: b4b6c889 -->

@@ -59,9 +59,9 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do you disable open tracking for a specific email?** — Uncheck the [!UICONTROL Email opens] option when creating the message.
 * **Q: What does an empty `consents.marketing.email.val` value mean?** — It is treated as consent by default, and this default can be changed at onboarding.
 * **Q: Can transactional emails be sent to profiles who unsubscribed from marketing?** — Yes, subject to applicable law.
-* **Q: What causes a profile to be added to the suppression list?** — Hard bounces, soft bounces, or spam complaints.
+* **Q: Which email addresses are on the suppression list?** — Email addresses resulting in hard bounces, soft bounces, or spam complaints.
 * **Q: What happens when a recipient opts out?** — The consent attribute (`consents.marketing.email.val`) is updated to `n`, the profile is immediately excluded from future marketing email sends, and the opt-out information is stored in the AEP Consent Service Dataset.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 6e314974 -->
+<!-- ai-section-version: 1 | source-hash: 153dc32e -->

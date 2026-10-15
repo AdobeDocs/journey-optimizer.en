@@ -333,7 +333,7 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 
 The **[!UICONTROL Read Audience]** activity allows you to test the journey on a unitary profile.
 
-To do this, activate the test mode.
+First, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before activating test mode. [Learn about journey validation](publish-journey.md#validate).
 
 ![Test mode interface for Read Audience activity with test profile selection](assets/read-segment-test-mode.png)
 
@@ -343,7 +343,7 @@ Once the test is running, the **[!UICONTROL Show logs]** button allows you to se
 
 ![Test logs showing audience execution results and profile flow](assets/read-segment-log.png)
 
-Once the tests are successful, you can publish your journey (see [Publishing the journey](../building-journeys/publish-journey.md)). Individuals belonging to the audience will enter the journey on the date/time specified in the journey's properties **[!UICONTROL Scheduler]** section.
+Once the tests are successful and validation is current and passed, you can [publish your journey](publish-journey.md). If you changed the journey after validation, run **[!UICONTROL Validate]** again and resolve any errors before continuing. Individuals belonging to the audience will enter the journey on the date/time specified in the journey's properties **[!UICONTROL Scheduler]** section.
 
 >[!NOTE]
 >
@@ -404,7 +404,7 @@ This section helps you resolve **audience count mismatches** (fewer or more prof
 | Fewer (or more) profiles entered than the audience size | [Timing and data propagation](#timing-and-data-propagation), [Data validation and monitoring](#data-validation-and-monitoring) |
 | Read Audience processed zero profiles; alert fired | [Zero profiles processed](#zero-profiles-processed) |
 | Entries delayed or missing for batch audiences | [Timing and data propagation](#timing-and-data-propagation) |
-| Custom-upload enrichment attribute is missing or “Enriched audience not found” appears | [Troubleshoot enrichment attributes](../audience/enrichment-attributes.md#faq-enrichment) |
+| Custom-upload enrichment attribute is missing or "Enriched audience not found" appears | [Troubleshoot enrichment attributes](../audience/enrichment-attributes.md#faq-enrichment) |
 | Need to verify segment job status or namespace | [Data validation and monitoring](#data-validation-and-monitoring) |
 
 ### Zero profiles processed {#zero-profiles-processed}

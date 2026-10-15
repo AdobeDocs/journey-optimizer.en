@@ -55,6 +55,6 @@ Follow these steps to configure the **[!UICONTROL Wait]** activity:
 
 ## Example{#wait-example}
 
-The following example illustrates the **[!UICONTROL Wait]** activity in a typical use case.  An email with a promo code is sent to profiles celebrating their birthdays. After 2 days, an SMS is sent to the same group as a reminder that their birthday promo code is about to expire.
+The following example illustrates the **[!UICONTROL Wait]** activity in a typical use case.  An email with a promo code is sent to profiles celebrating their birthdays. After 2 days, a mobile message is sent to the same group as a reminder that their birthday promo code is about to expire.
 
 ![](../assets/wait-example.png)

@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: seed list, seedlist, seed, configuration
 exl-id: 0172f6bc-da8b-4a83-a0fc-4ed41324568f
-TQID: https://experienceleague.adobe.com/eec0MMgNbimonw-XcC7mA39iPu36GJ5WDqfy0rLx4ZY
+TQID: 'https://experienceleague.adobe.com/eec0MMgNbimonw-XcC7mA39iPu36GJ5WDqfy0rLx4ZY'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -25,6 +25,10 @@ subfeature_v2:
     internal-label: Publish
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
+  - id: e9a49bea-64ee-5bf8-b806-036c278dd1f1
+    internal-label: Seed Lists
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

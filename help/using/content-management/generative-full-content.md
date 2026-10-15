@@ -8,7 +8,7 @@ topic: Artificial Intelligence
 role: User
 level: Beginner
 exl-id: 9f395b3d-8414-4e88-b849-6d9af9640b32
-TQID: https://experienceleague.adobe.com/0Xf8qIELy-rLrPg-5slKXt4dlurcaUwXhAW6VWxWuPQ
+TQID: 'https://experienceleague.adobe.com/0Xf8qIELy-rLrPg-5slKXt4dlurcaUwXhAW6VWxWuPQ'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -19,6 +19,11 @@ feature_v2:
     internal-label: Email
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
+subfeature_v2:
+  - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
+    internal-label: AI content generation
+  - id: f659587f-8bf8-5d99-be43-652c46ebaa44
+    internal-label: Content Assistant
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -34,9 +39,6 @@ topic_v2:
     internal-label: Accessibility
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-subfeature_v2:
-  - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
-    internal-label: AI content generation
 ---
 # Generate full content with AI {#generative-full-content}
 

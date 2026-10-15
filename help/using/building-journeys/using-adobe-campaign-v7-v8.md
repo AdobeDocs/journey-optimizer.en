@@ -40,16 +40,16 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use the Adobe Campaign v7 and v8 integration to send emails, push notifications, and SMS from your journeys through Campaign transactional messaging.
+**On this page:** Learn how to use the Adobe Campaign v7 and v8 integration to send emails, push notifications, and mobile messages from your journeys through Campaign transactional messaging.
 
 >[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom_acc"
 >title="Custom actions"
->abstract="An integration is available if you have [!DNL Adobe Campaign] v7 or v8. It allows you to send emails, push notifications and SMS using [!DNL Adobe Campaign] Transactional Messaging capabilities."
+>abstract="An integration is available if you have [!DNL Adobe Campaign] v7 or v8. It allows you to send emails, push notifications and mobile messages using [!DNL Adobe Campaign] Transactional Messaging capabilities."
 
-An integration is available if you have [!DNL Adobe Campaign] v7 or v8. It allows you to send emails, push notifications and SMS using [!DNL Adobe Campaign] Transactional Messaging capabilities.
+An integration is available if you have [!DNL Adobe Campaign] v7 or v8. It allows you to send emails, push notifications and mobile messages using [!DNL Adobe Campaign] Transactional Messaging capabilities.
 
 The connection between the Journey Optimizer and Campaign instances is setup by Adobe at provisioning time. Contact Adobe.
 

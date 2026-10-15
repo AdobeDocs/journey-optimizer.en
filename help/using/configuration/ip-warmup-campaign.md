@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: IP, pools, deliverability
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
-TQID: https://experienceleague.adobe.com/mzP9buvUwW2h0QahDBXWxefokjZv-XziM-uFaPwg3Wg
+TQID: 'https://experienceleague.adobe.com/mzP9buvUwW2h0QahDBXWxefokjZv-XziM-uFaPwg3Wg'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Configuration
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
 subfeature_v2:
   - id: c343082f-e963-4f57-a96b-b64d27f8118e
     internal-label: IP warmup plans

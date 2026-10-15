@@ -1,22 +1,21 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Release notes 
+title: Release notes
 feature: Release Notes
 role: User
 level: Beginner, Intermediate
-description: Adobe Journey Optimizer Release notes 
+description: Adobe Journey Optimizer Release notes
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
-TQID: https://experienceleague.adobe.com/YJKQFYUi8Kw7yZZKm8blcM-1G9uYsqcsEsopH0hOMhA
+TQID: 'https://experienceleague.adobe.com/YJKQFYUi8Kw7yZZKm8blcM-1G9uYsqcsEsopH0hOMhA'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
-subfeature_v2:
   - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
-    internal-label: Journey Optimizer release notes
+    internal-label: Release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -50,11 +49,157 @@ topic_v2:
 >
 >Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change. 
 
+>[!BEGINSHADEBOX]
+
+**Usability improvements**
+
+Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to make everyday work easier. Look for the [!BADGE Usability]{type=Positive} badge within each product area to spot these improvements at a glance.
+
+>[!ENDSHADEBOX]
+
+## October '26 updates {#oct-26-updates}
+
+### Channels {#oct-26-channels}
+
+The following capability is coming to channels in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Custom outbound channel (General Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Custom outbound channels</strong> let administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder. Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement.</p>
+<p>With this release, custom outbound channels also gain several new capabilities:</p>
+<ul>
+<li>Use Journey Optimizer Decisioning in the custom channel payload through the Personalization Editor, the same way as in code-based experiences.</li>
+<li>Apply business rules to custom channels, the same way you already can on native channels.</li>
+<li>Select custom channels in the channel list for API-triggered campaigns, which was not previously possible.</li>
+<!--<li>Define a reporting webhook for a custom channel and attach it to a channel configuration, so you can enrich your Journey Optimizer reports with interaction events.</li>-->
+</ul>
+<p>Previously available in Limited Availability, this capability is now available to all environments (General Availability), with the enhancements described above.</p>
+<p><img src="assets/do-not-localize/custom-channel.gif"></p>
+<p>For more information, refer to the <a href="../custom-channel/get-started-custom-channel.md">detailed documentation</a>.</p>
+<p>Availability date: October 2, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Journeys {#oct-26-journeys}
+
+<table>
+<thead>
+<tr>
+<th><strong>Stop action journey activity</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new <strong>Stop action</strong> activity in the journey canvas lets you remove a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit for more advanced cross-channel orchestration.</p>
+<p>For more information, refer to the <a href="../building-journeys/stop-action.md">detailed documentation</a>.</p>
+<p>Availability date: October 12, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>On-demand journey validation</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new <strong>Validate</strong> button lets you run configuration checks, including message checks, when you're ready to test or publish, reducing repeated checks during editing and helping keep larger journey canvases responsive.</p>
+<p>For more information, refer to the <a href="../building-journeys/publish-journey.md#validate">detailed documentation</a>.</p>
+<p>Availability date: October 9, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **HMAC-signed JWT authentication for custom actions (Limited Availability)** - Certificate-based custom authentication now supports JWT client assertions signed with your OAuth client secret (`HS256`, `HS384`, `HS512`; `client_secret_jwt`), as an alternative to Adobe's RSA certificate. Configurations without `alg` continue to use `RS256`.
+
+  This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access. Learn more in [Custom actions](../action/about-custom-action-configuration.md#certificate-based-auth) and [External data sources](../datasource/external-data-sources.md#hmac-credential).
+
+  Availability date: October 13, 2026
+
+* **Business Performance Analysis skill** - Analyze journey performance and get concrete optimization recommendations directly in Adobe CX Enterprise Coworker chat. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
+
+  Availability date: October 7, 2026
+  
++++ Coming soon — **Information below is subject to change.**
+
+<table>
+<thead>
+<tr>
+<th><strong>AI recommendation cards for journey alerts</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Journey Optimizer home page now surfaces an <strong>AI recommendation card</strong> when a journey alert fires, covering <strong>Journey Custom Action failure</strong> and <strong>Journey Anomaly Detected</strong> alerts. Selecting the card opens the journey with the right rail pre-populated with the analysis already performed.</p>
+<!-- GIF placeholder: to be added -->
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey creation from Coworker rail</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Journey creation with AI</strong> is now available directly from the Coworker right rail, replacing the previous AI Assistant experience with a re-branded, integrated entry point for generating journeys.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Hygiene Analysis skill** - Coworker can now scan your active and draft journeys for broken configurations, silent failures, and decaying or unused assets — such as stale draft journeys, orphaned data sources, and persistent custom action errors — and surface recommended fixes directly in chat. <!-- Documentation link: TBD -->
+
+* **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
+
+* [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view.
+
++++
+
+### Loyalty {#oct-26-loyalty}
+
+* **Performance settings in Loyalty configurations** - Use the **Performance settings** tab to select your loyalty profile and event datasets and configure your organization's priority **Key performance indicator** for loyalty insights. Choose Revenue, Engagement, Redemptions, or Conversions to determine which insights receive emphasis in your feed. [Learn more](../loyalty-challenges/loyalty-admin.md#performance-settings)
+
+  Availability date: October 1, 2026
+
+### Integrations {#oct-26-integrations}
+
++++ Coming soon — **Information below is subject to change.**
+
+* **Dynamic token substitution for Experience Manager fragments** - Experience Manager Content Fragment references now support a **tokenSubstitution** attribute. When set to `false`, personalization inside the fragment's fields resolves directly, without a token map in the reference. It defaults to `true`, which keeps the existing behavior.
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
+
+* **AEM Managed Services content fragments support in Decisioning** - AEM Managed Services content fragments are now supported in Decisioning when managing decision items.
+
++++
+
 ## September '26 release notes {#sep-26-updates}
 
 >[!BEGINSHADEBOX]
 
-**New in CX Enterprise Coworker this month**
++++**New in Coworker this month**
 
 This release brings several new and improved [Coworker](../start/ai-features.md#cx-coworker) features and skills, listed here for visibility. Each one is also detailed in its relevant section below.
 
@@ -66,20 +211,32 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 * [Decisioning Explainer skill](#sep-26-decisioning) - Ask Coworker why a specific offer was or wasn't shown to a profile, or to a segment, and get a full trace of eligibility, ranking, and rule exclusions.
 * [Rules & Ranking skill](#sep-26-decisioning) - Create, explain, simulate, and optimize Decisioning eligibility rules and ranking formulas in natural language, without writing or validating PQL syntax by hand.
 
-+++ Coming soon — **Information below is subject to change.**
-
-* [Journey creation from the Coworker rail](#sep-26-journeys) - Generate journeys with AI directly from the Coworker right rail, replacing the previous AI Assistant experience.
-* [Loyalty recommendation skill](#sep-26-loyalty) - Request challenge opportunities directly in Coworker's conversational interface and turn them into live challenges without leaving the chat.
-* [Hygiene Analysis skill](#sep-26-journeys) - Scan active and draft journeys for broken configurations, silent failures, and decaying or unused assets, with recommended fixes.
-* [Business Performance Analysis skill](#sep-26-journeys) - Analyze journey performance and get concrete optimization recommendations, right from the chat.
-
 +++
 
 >[!ENDSHADEBOX]
 
 ### Content management {#sep-26-content-management}
 
-The following capability is coming to content management in this release.
+The following capabilities and improvements are coming to content management in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>URL validation in Simulate content (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>When you preview your content, Journey Optimizer now automatically checks the web links it contains and flags broken, insecure, or unreachable URLs before you send.</p>
+<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p><img src="assets/do-not-localize/url-validation.gif"></p>
+<p>For more information, refer to the <a href="../content-management/url-validation.md">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -115,19 +272,23 @@ The following capability is coming to content management in this release.
 <table>
 <thead>
 <tr>
-<th><strong>Content Management MCP tools in CX Coworker</strong><br/></th>
+<th><strong>Content Management MCP tools in Coworker</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>CX Coworker now has a new set of <strong>Content Management MCP tools</strong>, letting you discover and manage Journey Optimizer content assets through natural language prompts. Ask it to list or retrieve content templates, fragments, landing pages, and journey/campaign inline message content. It can also create content, update templates, and create, update, clone, and publish fragments — plus update inline channel action content directly in journey and campaign.</p>
+<p>Coworker now has a new set of <strong>Content Management MCP tools</strong>, letting you discover and manage Journey Optimizer content assets through natural language prompts. Ask it to list or retrieve content templates, fragments, landing pages, and journey/campaign inline message content. It can also create content, update templates, and create, update, clone, and publish fragments — plus update inline channel action content directly in journey and campaign.</p>
 <p>For more information, refer to the <a href="../content-management/content-management-coworker-skills.md#content-management">detailed documentation</a>.</p>
 <p>Availability date: September 3, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
+
+* **Agentic Translation provider** - Journey Optimizer's Multilingual feature now supports Azure OpenAI and Gemini (Vertex AI) as translation providers, along with locale-specific guidelines in PDF and JSON formats. [Learn more](../content-management/multilingual-provider.md#add-an-agentic-provider)
+
+  Availability date: September 29, 2026
 
 * **Mandatory consent checkbox for landing pages** - You can now make a checkbox mandatory in the landing page form component, requiring visitors to select it (for example, to give consent) before they can submit the form. [Learn more](../landing-pages/lp-content.md#use-form-component)
 
@@ -137,11 +298,13 @@ The following capability is coming to content management in this release.
 
   Availability date: September 1, 2026
 
-+++ Coming soon — **Information below is subject to change.**
+* [!BADGE Usability]{type=Positive} **Usability improvements in the Content Simulation experience** - The new Content Simulation experience now lets you name and organize your variants for easy comparison, copy or delete variant details directly from each card, view full attribute paths and per-card channel configuration on demand, and upload your own CSV, JSON, or JSONL profiles from a more prominent upload button. [Learn more](../test-approve/simulate-content-variations.md)
 
-* **URL validation in Simulate content** - When you preview your content, Journey Optimizer now automatically checks the web links it contains and flags broken, insecure, or unreachable URLs before you send. This capability is available in Limited Availability for a set of customers.
+  Availability date: September 25, 2026
 
-+++
+* [!BADGE Usability]{type=Positive} **Fix syntax with AI** - When validating an expression, if a syntax error is detected, the Personalization Editor provides a "Fix with AI" option to help resolve the issue directly from the editor. [Read more](../personalization/personalization-build-expressions.md#validation-mechanisms).
+
+  Availability date: September 22, 2026
 
 ### Loyalty {#sep-26-loyalty}
 
@@ -162,16 +325,6 @@ The following capability is coming to content management in this release.
 </tbody>
 </table>
 
-* **"Forever" Loyalty challenges** - Loyalty challenges can now run indefinitely. Set **Challenge end** to **No end date** when configuring the schedule, and the challenge never expires. [Learn more](../loyalty-challenges/create-challenges.md#schedule)
-
-  Availability date: September 1, 2026
-
-* **Loyalty available for Healthcare Shield and Privacy and Security Shield customers** - Journey Optimizer Loyalty is now available to Healthcare Shield and Privacy and Security Shield customers. [Learn more](../loyalty-challenges/get-started.md)
-
-  Availability date: September 15, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
 <table>
 <thead>
 <tr>
@@ -182,23 +335,39 @@ The following capability is coming to content management in this release.
 <tr>
 <td>
 <p>The Loyalty Performance menu now includes **Opportunities** and **Trend** tabs, which surface AI-detected trends and gaps such as tier progression friction or challenge task drop-off, each with a projected impact and a one-click "Create with AI" action to generate a challenge that addresses it.</p><p>In addition, marketers can request **challenge opportunities** directly in Coworker's conversational interface, getting grounded challenge ideas based on real loyalty program trends and turning them into live challenges without leaving the chat.</p>
+<p>For more information, refer to the <a href="../loyalty-challenges/loyalty-performance.md#opportunities-view">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-* **Per-member Loyalty challenge completion deadlines** - Loyalty challenges now support per-member completion deadlines: choose "Within a number of days after opt-in" under Completion requirements so each member's deadline is calculated from their own opt-in date rather than a fixed program-wide end date. If both a challenge end date and this opt-in window are set, each member's deadline is whichever comes first. <!-- Documentation link: TBD -->
+* **Per-member Loyalty challenge completion deadlines** - Loyalty challenges now support per-member completion deadlines: choose "Within a number of days after opt-in" under Completion requirements so each member's deadline is calculated from their own opt-in date rather than a fixed program-wide end date. If both a challenge end date and this opt-in window are set, each member's deadline is whichever comes first. [Learn more](../loyalty-challenges/create-challenges.md#schedule)
 
-* **Challenges domain in the Content Card personalization editor** - The Content Card personalization editor now supports **Challenges** as a domain, letting you access challenge metadata when authoring content card personalization. This makes it easier to create tailored content for each stage of a challenge — Launch, In progress, and End — without custom code. 
+  Availability date: Septemebr 30 , 2026
 
-+++
+* **Challenges domain in the Content Card personalization editor** - The Content Card personalization editor now supports **Challenges** as a domain, letting you access challenge metadata when authoring content card personalization. This makes it easier to create tailored content for each stage of a challenge — Launch, In progress, and End — without custom code. [Learn more](../content-card/design-content-card.md#personalize-challenge-content)
+
+  Availability date: September 30, 2026
+
+* **"Forever" Loyalty challenges** - Loyalty challenges can now run indefinitely. Set **Challenge end** to **No end date** when configuring the schedule, and the challenge never expires. [Learn more](../loyalty-challenges/create-challenges.md#schedule)
+  
+  Availability date: September 1, 2026
+
+* **Loyalty available for Healthcare Shield and Privacy and Security Shield customers** - Journey Optimizer Loyalty is now available to Healthcare Shield and Privacy and Security Shield customers. [Learn more](../loyalty-challenges/get-started.md)
+
+  Availability date: September 15, 2026
+
+* **Loyalty challenge details page** - You can now review a challenge's configuration and performance from a dedicated details page. View its summary, targeted audience, connected journey, tasks, and rewards alongside key metrics for revenue, enrollment, completion rate, and total completions. Open the full report for more detailed performance insights or select **Edit challenge** to modify the challenge. [Learn more](../loyalty-challenges/access-loyalty-challenges.md#challenge-details)
+
+  Availability date: September 30, 2026
 
 ### Journeys {#sep-26-journeys}
 
 <table>
 <thead>
 <tr>
-<th><strong>Content preview in the journey canvas</strong><br/></th>
+<th>[!BADGE Usability]{type=Positive} <strong>Content preview in the journey canvas</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -321,7 +490,7 @@ The following capability is coming to content management in this release.
 
   Availability date: September 8, 2026
 
-* **Analyze Journey Anomalies skill** - CX Coworker can now detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts against historical baselines using the **Analyze Journey Anomalies** skill. Once a real anomaly is confirmed, the skill runs read-only diagnostics to surface a likely root cause and recommendation. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
+* **Analyze Journey Anomalies skill** - Coworker can now detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts against historical baselines using the **Analyze Journey Anomalies** skill. Once a real anomaly is confirmed, the skill runs read-only diagnostics to surface a likely root cause and recommendation. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
 
   Availability date: September 2, 2026
 
@@ -329,100 +498,17 @@ The following capability is coming to content management in this release.
 
   Availability date: September 1, 2026
 
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>AI recommendation cards for journey alerts</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The Journey Optimizer home page now surfaces an <strong>AI recommendation card</strong> when a journey alert fires, covering <strong>Journey Custom Action failure</strong> and <strong>Journey Anomaly Detected</strong> alerts. Selecting the card opens the journey with the right rail pre-populated with the analysis already performed.</p>
-<!-- GIF placeholder: to be added -->
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Inbound Activity Deactivation journey activity</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>A new <strong>Inbound Activity Deactivation</strong> activity in the journey canvas lets you remove a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit for more advanced cross-channel orchestration.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey creation from Coworker rail</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Journey creation with AI</strong> is now available directly from the Coworker right rail, replacing the previous AI Assistant experience with a re-branded, integrated entry point for generating journeys.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **Hygiene Analysis skill** - CX Coworker can now scan your active and draft journeys for broken configurations, silent failures, and decaying or unused assets — such as stale draft journeys, orphaned data sources, and persistent custom action errors — and surface recommended fixes directly in chat. <!-- Documentation link: TBD -->
-
 * **Dry run step-event suppression for custom reports** - As part of step-event optimization, Journey Optimizer now stops generating certain non-reportable step events during Journey Dry Runs. This only affects custom reports built on these dry-run step-event types. If you're impacted, re-trigger the dry run to regenerate data.
 
-* **Automatic event recovery timeout in Journey Properties** - Journey Properties now includes a **Set event recovery timeout** setting: by default, impacted journey events are automatically replayed for up to 72 hours after a service interruption with no action needed. You can turn this setting on to control the replay window (0–72 hours) for time-sensitive journeys. The existing **Timeout or error** field has also been renamed to **Custom Action / Data source timeout** to avoid confusion between the two settings. 
+* **Internal error recovery timeout in Journey Properties** - Journey Properties now includes a **Set internal error recovery timeout** setting: by default, impacted journey events may be retried for up to 72 hours after a service interruption with no action needed. You can turn this setting on to control the replay window (0–72 hours) for time-sensitive journeys. The existing **Timeout or error** field has also been renamed to **Custom Action / Data source timeout** to avoid confusion between the two settings. [Learn more](../building-journeys/journey-properties.md#event-recovery-timeout)
 
-* **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
+* [!BADGE Usability]{type=Positive} **Easier detach and join branches in the new journey canvas** - You can now detach a branch from the rest of your journey without deleting it, and join it back later at a different point, either by selecting an eligible activity directly on the canvas or by picking it from a list of disconnected or already-used branches. [Learn more](../building-journeys/using-the-journey-designer.md#join-and-detach-branches)
 
-+++
+  Availability date: September 1, 2026
 
 ### Channels {#sep-26-channels}
 
 The following capabilities and improvements are coming to channels in this release.
-
-* **Increased subdomain delegation limit** - Depending on your license contract, you can now request up to 3000 subdomains (previously capped at 100) by reaching out to your Adobe representative. This capability is available in Limited Availability for a set of customers. [Learn more](../configuration/delegate-subdomain.md#guardrails)
-
-  Availability date: September 25, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom outbound channel (General Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Custom outbound channels</strong> let administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder. Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement.</p>
-<p>With this release, custom outbound channels also gain several new capabilities:</p>
-<ul>
-<li>Use Journey Optimizer Decisioning in the custom channel payload through the Personalization Editor, the same way as in code-based experiences.</li>
-<li>Apply business rules to custom channels, the same way you already can on native channels.</li>
-<li>Select custom channels in the channel list for API-triggered campaigns, which was not previously possible.</li>
-<!--<li>Define a reporting webhook for a custom channel and attach it to a channel configuration, so you can enrich your Journey Optimizer reports with interaction events.</li>-->
-</ul>
-<p>Previously available in Limited Availability, this capability is now available to all environments (General Availability), with the enhancements described above.</p>
-<p><img src="assets/do-not-localize/custom-channel.gif"></p>
-<p>For more information, refer to the <a href="../custom-channel/get-started-custom-channel.md">detailed documentation</a>.</p>
-
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -435,10 +521,13 @@ The following capabilities and improvements are coming to channels in this relea
 <td>
 <p>Journey Optimizer now expands its real-time mobile personalization capabilities by extending <strong>Live Activity support to Android</strong>. You can deliver real-time progress updates directly to users, such as order tracking, flight statuses, live event updates, and real-time sports scores.</p>
 <p>Beyond supporting iOS Live Activities, Journey Optimizer now manages temporary push tokens for Android Live Updates across its platform configurations. It supports both broadcast and transactional update flows using API-triggered campaigns and headless APIs.</p>
+<p>For more information, refer to the <a href="../mobile-live/create-mobile-live.md">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
+
 
 <table>
 <thead>
@@ -457,40 +546,48 @@ The following capabilities and improvements are coming to channels in this relea
 <li><b>Expanded layout</b>: Multi-line body text with no truncation, plus optional large-icon thumbnail.</li>
 <li><b>Collapsed body (Expanded layout)</b>: Set a separate, shorter body text for the collapsed state.</li>
 </ul>
+<p>For more information, refer to the <a href="../push/design-push.md">detailed documentation</a>.</p>
+<p>Availability date: September 1, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
 
+* **Increased subdomain delegation limit** - Depending on your license contract, you can now request up to 3000 subdomains (previously capped at 100) by reaching out to your Adobe representative. This capability is available in Limited Availability for a set of customers. [Learn more](../configuration/delegate-subdomain.md#guardrails)
+
+  Availability date: September 25, 2026
+
+* **Direct mail - Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration. [Learn more](../direct-mail/direct-mail-configuration.md)
+
+  Availability date: September 30, 2026
+
+* **Direct mail - Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors. [Learn more](../direct-mail/get-started-direct-mail.md)
+
+  Availability date: September 30, 2026
+
+### Email Designer {#sep-26-email-designer}
+
+The following capabilities and improvements are coming to the Email Designer in this release.
+
 <table>
 <thead>
 <tr>
-<th><strong>Override email channel configuration settings</strong><br/></th>
+<th><strong>Dynamic Media Template component in the Email Designer (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>When building your journeys and campaigns, you can now override the email parameters derived from the selected channel configuration directly at the journey or campaign action level.</p>
-<p>This lets you personalize the email header fields (<strong>From name</strong>, <strong>From email prefix</strong>, <strong>Reply to name</strong>, and <strong>Reply to email</strong>), the execution address, and the list-unsubscribe values, using profile attributes or contextual data for more precise control. In particular, this allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.</p>
+<p>The Email Designer now includes a dedicated <strong>Dynamic Media Template</strong> component for inserting Dynamic Media Templates from Adobe Experience Manager into your email content. In addition to browsing existing templates, you can now import a Photoshop (PSD) file directly — drag and drop it into the component, or select it from your computer, then choose a destination to store it.</p>
+<p>Once your file is imported, select <strong>Edit in Dynamic Media Template Editor</strong> to open the Dynamic Media Template Editor directly within Journey Optimizer, where you can enable the parameters you want to expose, without leaving the Email Designer. The enabled parameters then become available in the component's <strong>Settings</strong> tab.</p>
+<p><img src="assets/do-not-localize/dynamic-media-in-acrite.gif" alt="Dynamic Media Template component in the Email Designer"></p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../email/content-components.md#dynamic-media-template">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026.</p>
 </td>
 </tr>
 </tbody>
 </table>
-
-* **Custom SMS BYOP auth flexibility** - You can now configure **custom authentication headers** when connecting your SMS provider's OAuth setup, including where the token is placed on outgoing messages and how the token request itself is formatted.
-
-* **Direct mail - Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration.
-
-* **Direct mail - Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors.
-
-* **Suppression list override at email action level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model.
-
-+++
-
-### Email Designer {#sep-26-email-designer}
-
-The following capabilities and improvements are coming to the Email Designer in this release.
 
 <table>
 <thead>
@@ -547,25 +644,9 @@ The following capabilities and improvements are coming to the Email Designer in 
 </tbody>
 </table>
 
-+++ Coming soon — **Information below is subject to change.**
+* [!BADGE Usability]{type=Positive} **Auto save in the Email Designer** - Your changes are now automatically saved in the Email Designer after about 10 seconds of inactivity, so you no longer risk losing your changes while designing your email. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
-<table>
-<thead>
-<tr>
-<th><strong>New Dynamic Media Template component in the Email Designer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The Email Designer now includes a dedicated <strong>Dynamic Media Template</strong> component for inserting Dynamic Media Templates from Adobe Experience Manager into your email content. In addition to browsing existing templates, you can now import a Photoshop (PSD) file directly — drag and drop it into the component, or select it from your computer, then choose a destination to store it.</p>
-<p>Once your file is imported, select <strong>Edit in Dynamic Media Template Editor</strong> to open the Dynamic Media Template Editor directly within Journey Optimizer, where you can enable the parameters you want to expose, without leaving the Email Designer. The enabled parameters then become available in the component's <strong>Settings</strong> tab.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-+++
+  Availability date: September 25, 2026
 
 ### Orchestrated campaigns {#sep-26-orchestrated-campaigns}
 
@@ -603,6 +684,27 @@ The following capabilities and improvements are coming to the Email Designer in 
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Alert activity in orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now create your own alerts directly on the orchestrated campaign canvas with the new <strong>Alert</strong> activity. Configure a static, plain-text title and message to notify subscribers when execution reaches the activity. Combine it with a Test activity to trigger alerts based on conditions, such as a query returning fewer profiles than expected.</p>
+<p>For more information, refer to the <a href="../orchestrated/activities/alert.md">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **LINE channel for orchestrated campaigns** - LINE is now available as a native outbound channel in orchestrated campaigns, alongside email, SMS, and push. You can build and deliver LINE messages directly from the campaign canvas, including text, stickers, images, videos, location data, and Flex Messages, supporting promotional, transactional, and ongoing engagement use cases in LINE-dominant markets such as Japan and APAC. Previously released in Limited Availability, this capability is now generally available. [Learn more](../orchestrated/activities/channels.md)
+
+  Availability date: October 2, 2026
+
 * **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage. [Learn more](../data/monitor-data-ingestion.md#co)
 
   Availability date: September 28, 2026
@@ -615,36 +717,13 @@ The following capabilities and improvements are coming to the Email Designer in 
 
   Availability date: September 22, 2026
 
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>OR join activity for orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The <strong>Join activity</strong> in orchestrated campaigns now supports both AND and OR join conditions. With OR logic, a profile that completes any one upstream branch, rather than all of them, continues along a single shared downstream path. This makes it possible to model "if A or B or C, then do this" patterns directly on the canvas without duplicating downstream steps across separate branches.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **LINE channel for orchestrated campaigns** - LINE is now available as a native outbound channel in orchestrated campaigns, alongside email, SMS, and push. You can build and deliver LINE messages directly from the campaign canvas, including text, stickers, images, videos, location data, and Flex Messages, supporting promotional, transactional, and ongoing engagement use cases in LINE-dominant markets such as Japan and APAC. Previously released in Limited Availability, this capability is now generally available. 
-
-+++
-
 ### Campaigns {#sep-26-campaigns}
 
-+++ Coming soon — **Information below is subject to change.**
+The following improvement is coming to campaigns in this release.
 
-* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface.
+* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface. [Learn more](../campaigns/manage-campaigns.md#folders)
 
-* **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
-
-+++
+  Availability date: September 30, 2026
 
 ### Decisioning {#sep-26-decisioning}
 
@@ -675,7 +754,7 @@ The following capabilities and improvements are coming to decisioning in this re
 <tbody>
 <tr>
 <td>
-<p>A new <strong>Decisioning Explainer</strong> skill in CX Coworker lets you ask, in natural language, why a specific offer was or wasn't shown to a profile or segment, tracing eligibility, capping, ranking, and the candidate pool involved in the decision.</p>
+<p>A new <strong>Decisioning Explainer</strong> skill in Coworker lets you ask, in natural language, why a specific offer was or wasn't shown to a profile or segment, tracing eligibility, capping, ranking, and the candidate pool involved in the decision.</p>
 <p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md#decisioning-explainer">detailed documentation</a>.</p>
 <p>Availability date: September 16, 2026</p>
 </td>
@@ -692,7 +771,7 @@ The following capabilities and improvements are coming to decisioning in this re
 <tbody>
 <tr>
 <td>
-<p>A new <strong>Rules &amp; Ranking</strong> skill in CX Coworker lets you create, explain, simulate, and optimize eligibility rules and ranking formulas using natural language, without writing or validating PQL syntax by hand.</p>
+<p>A new <strong>Rules &amp; Ranking</strong> skill in Coworker lets you create, explain, simulate, and optimize eligibility rules and ranking formulas using natural language, without writing or validating PQL syntax by hand.</p>
 <p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md#rules-ranking">detailed documentation</a>.</p>
 <p>Availability date: September 16, 2026</p>
 </td>
@@ -785,23 +864,22 @@ The following capability is coming to reporting in this release.
 
 The following capabilities are coming to integrations in this release.
 
-+++ Coming soon — **Information below is subject to change.**
-
-
-* **Dynamic token substitution for Experience Manager fragments** - Experience Manager Content Fragment references now support a **tokenSubstitution** attribute. When set to `false`, personalization inside the fragment's fields resolves directly, without a token map in the reference. It defaults to `true`, which keeps the existing behavior.
-
-  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
-
-* **AEM Managed Services content fragments support in Decisioning** - AEM Managed Services content fragments are now supported in Decisioning when managing decision items.
-
-
-+++
-
-### Personalization {#sep-26-personalization}
-
-* **Fix syntax with AI** - When validating an expression, if a PQL syntax error is detected, the Personalization Editor provides a "Fix with AI" option to help resolve the issue directly from the editor. [Read more](../personalization/personalization-build-expressions.md#validation-mechanisms).
-
-  Availability date: September 22, 2026
+<table>
+<thead>
+<tr>
+<th><strong>Browsing integrations</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new Browsing integration configuration type is now available in Adobe Journey Optimizer. This setup lets your define a selector experience, using tables, lists, or cards, so marketers can browse, search, and select items from external APIs directly in Journey Optimizer authoring workflows.</p>
+<p>For more information, refer to the <a href="../integrations/integrations-browsing.md">detailed documentation</a>.</p>
+<p>Availability date: September 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Audiences {#sep-26-audiences}
 
@@ -814,17 +892,3 @@ The following reminder applies to audiences in this release.
 The following reminder applies to administration in this release.
 
 * **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on existing customer sandboxes and organizations starting October 1, 2026. 
-
-### Usability improvements {#sep-26-usability}
-
-* **Easier detach and join branches in the new journey canvas** - You can now detach a branch from the rest of your journey without deleting it, and join it back later at a different point, either by selecting an eligible activity directly on the canvas or by picking it from a list of disconnected or already-used branches. [Learn more](../building-journeys/using-the-journey-designer.md#join-and-detach-branches)
-
-  Availability date: September 1, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **Usability improvements in the Content Simulation experience** - The new Content Simulation experience now lets you name and organize your variants for easy comparison, copy or delete variant details directly from each card, view full attribute paths and per-card channel configuration on demand, and upload your own CSV, JSON, or JSONL profiles from a more prominent upload button.
-
-* **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified, left-rail accessible menu that shows both in one combined view.
-
-+++

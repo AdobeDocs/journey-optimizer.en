@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Mobile messages — Acronym: n/a — variants: mobile messaging, SMS/MMS/RCS messages
+* Canonical name: Mobile messages — variants: mobile messaging, SMS
 * Synonyms: "mobile message" = "SMS/MMS/RCS message"
 * Do not confuse: "native RCS authoring" (requires Sinch RCS) ≠ "RCS via custom provider integration" (used by Twilio, Infobip, and other providers)
 

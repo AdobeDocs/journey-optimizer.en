@@ -9,7 +9,7 @@ role: Developer, Admin
 level: Intermediate
 keywords: campaign, standard, integration, capping, action
 exl-id: 2f0218c9-e1b1-44ba-be51-15824b9fc6d2
-TQID: https://experienceleague.adobe.com/1JQFfviWGc3OXYN0YdAh0Koaboro2wJU8HpEf75PoKQ
+TQID: 'https://experienceleague.adobe.com/1JQFfviWGc3OXYN0YdAh0Koaboro2wJU8HpEf75PoKQ'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,11 +20,17 @@ feature_v2:
     internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: 2cb9b022-32b0-573b-a511-d091a4f355fb
+    internal-label: Actions
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 subfeature_v2:
   - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
     internal-label: Action configuration
   - id: fa683eda-48de-4558-af32-2673edcd44fe
     internal-label: Events
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -41,11 +47,11 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Connect Journey Optimizer to Adobe Campaign Standard so your journeys can send emails, push notifications, and SMS through its transactional messaging capabilities.
+**On this page:** Connect Journey Optimizer to Adobe Campaign Standard so your journeys can send emails, push notifications, and mobile messages through its transactional messaging capabilities.
 
 >[!ENDSHADEBOX]
 
-If you have Adobe Campaign Standard, a built-in action is available to allow the connection to Adobe Campaign Standard. You can send emails, push notifications and SMS using the Adobe Campaign Standard's Transactional Messaging capabilities.
+If you have Adobe Campaign Standard, a built-in action is available to allow the connection to Adobe Campaign Standard. You can send emails, push notifications and mobile messages using the Adobe Campaign Standard's Transactional Messaging capabilities.
 
 The Campaign Standard transactional message and its associated event must be published in order to be used in Journey Optimizer. If the event is published but the message is not, it will not be visible in the Journey Optimizer interface. If the message is published but its associated event is not, it will be visible in the Journey Optimizer interface but it will not be usable.
 
@@ -87,7 +93,7 @@ To configure a Campaign Standard action, follow these steps:
     >
     >* The Organization associated with this Adobe Campaign Standard instance is the same as the Journey Optimizer Organization
 
-Once this configuration is done, three actions are available in the **[!UICONTROL Action]** category when designing a journey: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]**. [Learn how to use them](../building-journeys/using-adobe-campaign-standard.md). 
+Once this configuration is done, three actions are available in the **[!UICONTROL Action]** category when designing a journey: **[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL Mobile message]**. [Learn how to use them](../building-journeys/using-adobe-campaign-standard.md). 
 
 ![](assets/journey58.png)
 
@@ -95,7 +101,7 @@ Use a **Reactions** event to react to tracking data related to a Campaign Standa
 
 * For push notifications, journeys can react to clicked, sent or failed messages.
 
-* For SMS messages, journeys can react to sent or failed messages. 
+* For mobile messages, journeys can react to sent or failed messages. 
 
 * For emails, journeys can react to clicked, sent, opened or failed messages. [Learn more about reactions events](../building-journeys/reaction-events.md).
 
