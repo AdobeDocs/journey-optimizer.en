@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
+* The **Datasets Time-to-live (TTL) guardrails** and **Guardrails and limitations** pages now state that the TTL rollout to existing customer sandboxes has been delayed by Adobe (originally planned for October 1, 2026). The TTL page also links to the Experience Platform TTL guide for initiating a TTL update outside of this rollout. [Read more](../data/datasets-ttl.md)
+
 * A caution has been added to the **Customizable fragments** page to inform users that enabling rich text on a legacy customizable visual fragment may cause styling loss in journeys, campaigns, or templates already using it. [Read more](../content-management/customizable-fragments.md#rich-text-visual)
 
 * A new **Configure OAuth 2.0 authentication** page explains how to set up OAuth 2.0 authentication for custom channels, including the token request payload (form or JSON), credential paths, token extraction, and where the token is added to delivery requests. It also lists the limits and validation rules. [Read more](../custom-channel/custom-channel-oauth2.md)
