@@ -18,7 +18,7 @@ hide: true
 
 >[!ENDSHADEBOX]
 
-Content errors use the prefix **CJMMAS**, followed by an error number and an HTTP status. Codes with the status 200 are warnings: they do not block saving or publishing. For the other error code prefixes, see the [error codes reference](../building-journeys/error-codes-reference.md).
+Content errors use the prefixes **CJMMAS** and **CJMRT**, followed by an error number and an HTTP status. Codes with the status 200 are warnings: they do not block saving or publishing. For the other error code prefixes, see the [error codes reference](../building-journeys/error-codes-reference.md).
 
 ## Email content {#email}
 
@@ -47,7 +47,7 @@ See also [Design push notifications](../push/design-push.md).
 | Error code | Message | How to fix |
 |---|---|---|
 | **CJMMAS-2004-422** | The push version of the message is empty. | The push version of the message is empty. Add the content, or remove the push channel. [Learn more](../push/design-push.md) |
-| **CJMMAS-2009-422**, **CJMMAS-2010-422** | Push iOS payload has exceeded limit of {sizeLimit}KB.<br/>Push Android payload has exceeded limit of {sizeLimit}KB. | The push notification is larger than the limit (4 KB). Reduce the text, images, and emojis. [Learn more](../push/send-push.md) |
+| **CJMMAS-2009-422**, **CJMMAS-2010-422** | Push iOS payload has exceeded limit of {sizeLimit}KB.<br/>Push Android payload has exceeded limit of {sizeLimit}KB. | The payload of the push notification is larger than the limit (4 KB). Reduce the text, images, and emojis. [Learn more](../push/send-push.md) |
 | **CJMMAS-2016-422**, **CJMMAS-2018-422** | Push iOS {buttonType} type's URI is null or empty for button index: {index}<br/>Push Android {buttonType} type's URI is null or empty for button index: {index} | A button of the push notification needs a URI. Enter a deep link or a web URL for the button. [Learn more](../push/design-push.md) |
 | **CJMMAS-2022-422**, **CJMMAS-2023-422** | Push - {platform} Platform on click behavior, invalid {linkType} URI.<br/>Push - {platform} Platform Add Media, invalid {mediaType} URI. | The URI of the on-click action or of the media is not valid. Enter a valid deep link or web URL. [Learn more](../push/design-push.md) |
 
@@ -86,6 +86,21 @@ See also [Set up channel configurations](../configuration/channel-surfaces.md).
 | **CJMMAS-2006-422**, **CJMMAS-2012-422**, **CJMMAS-2013-422**, **CJMMAS-2027-200**, **CJMMAS-2030-422** | Preset doesn't exist.<br/>Email preset is not defined.<br/>Push preset is not defined.<br/>The SMS surface is not defined.<br/>The Web channel surface is not defined. | The message has no channel configuration (or the configuration is not found) for its channel. Select a channel configuration in the message. [Learn more](../configuration/channel-surfaces.md) |
 | **CJMMAS-2014-422**, **CJMMAS-2015-422** | App selection in the Push preset is empty.<br/>Global preset email Execution list is empty. | The channel configuration is incomplete: a push configuration needs an app, and an email configuration needs its execution list. Complete the configuration. [Learn more](../configuration/channel-surfaces.md) |
 | **CJMMAS-2036-403** | You do not have permission to use one or more AEM repositories referenced in the content: {deniedRepositoryIds}. | You do not have permission on the AEM repositories used in the content. Ask your administrator for access to the repositories named in the message. [Learn more](../integrations/assets.md) |
+
+## Decision policies and channel configuration fields {#decisions}
+
+These errors occur when a message is validated or published, and a decision policy or a channel configuration field is not valid.
+
+See also [Decisioning guardrails and limitations](../experience-decisioning/decisioning-guardrails.md).
+
+| Error code | Message | How to fix |
+|---|---|---|
+| **CJMRT-030002-400** | Please enter details for all mandatory fields for {channel} surface. | A mandatory field of the channel configuration is empty. Open the channel configuration and fill in all mandatory fields. [Learn more](../configuration/channel-surfaces.md) |
+| **CJMRT-030007-400** | Length of {fieldName} is {currentLength}. Please enter up to {maxLength} characters only for {fieldName}. | A field of the channel configuration is longer than the maximum length shown in the message. Shorten the value. [Learn more](../configuration/channel-surfaces.md) |
+| **CJMRT-030008-400** | Invalid CLICK link without URL | A link of the message has no URL. Add the URL, or remove the link. [Learn more](../email/message-tracking.md) |
+| **CJMRT-030014-422** | Your message cannot have more than {maxLength} decisions. Please reduce the number of decisions and try again. | The message uses more decision policies than allowed. Reduce the number of decision policies in the message. [Learn more](../experience-decisioning/decisioning-guardrails.md) |
+| **CJMRT-030015-422**, **CJMRT-030017-422** | The referenced decision ID does not exist: {invalidDecisionPolicyIds}. Please check if this decision exists or use another decision.<br/>The referenced decision ID {invalidDecisionPolicyIds} does not belong to enclosing campaign | A decision policy used in the message does not exist, or does not belong to this campaign. Select a decision policy that exists in the campaign. [Learn more](../experience-decisioning/create-decision.md) |
+| **CJMRT-030018-422** | This content cannot be saved as a fragment because it contains a decision policy. If you want to save it as a fragment, remove the decision policy. | Content that contains a decision policy cannot be saved as a fragment. Remove the decision policy, then save the fragment. [Learn more](create-fragments.md) |
 
 ## Expression templates {#expression}
 
