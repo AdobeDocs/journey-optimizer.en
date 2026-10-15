@@ -27,18 +27,41 @@ subfeature_v2:
 
 >[!ENDSHADEBOX]
 
+## Find your scenario {#find-your-scenario}
+
+| Symptom or task | Start here |
+|---|---|
+| Live activity does not start | [Scenario 1: Profile and tokens](#scenario-1-profile-or-push-token-issues), then [Scenario 2: Campaign and payload](#scenario-2-campaign-configuration-and-payload-issues) |
+| Configuration checks pass, but delivery fails | [Scenario 3: Delivery failures](#scenario-3-delivery-failures-and-error-analysis) |
+| iOS unitary Live activity starts, but does not update or end | [Scenario 4: Update token sync](#scenario-4-live-activity-update-token-not-synced) |
+| Android Live activity starts, but does not update or end | Android tabs in [Scenario 2](#scenario-2-campaign-configuration-and-payload-issues) and [Scenario 3](#scenario-3-delivery-failures-and-error-analysis) |
+| Check the processing status of a unitary request | [Scenario 5: Execution status API](#scenario-5-checking-execution-status-via-the-api) |
+| Broadcast does not start, update, or end | [Scenario 6: Broadcast configuration](#broadcast-config) |
+| Some audience profiles do not receive the broadcast | [Scenario 7: Audience membership and freshness](#scenario-7-profile-not-in-audience-or-stale-audience-snapshot) |
+| Investigate production issues or historical delivery | [Dataset queries](#advanced-debugging-via-dataset-queries) |
+   
 ## Scenario 1: Profile or push token issues {#scenario-1-profile-or-push-token-issues}
 
-[!BADGE Applies to both unitary and broadcast use cases]{type=Positive}
+[!BADGE Applies to both unitary and broadcast use cases]{type=Informative}
 
-
-The API returns HTTP 200, but the Live activity does not appear. Common causes:
+The trigger API accepts the request, but the Live activity does not appear. Common causes:
 
 * Profile does not exist in Adobe Experience Platform.
-* Live activity push token has not been synced to the profile.
-* Live activity push details are synced but contain incorrect configuration, e.g. wrong `appId` or `attributeType`.
+* The required push token has not been synced to the profile: a Live activity push token on iOS or the standard FCM registration token on Android.
+* Push-token details contain incorrect configuration, such as a wrong `appId`, platform, or iOS `attributeType`.
 
-**Note for broadcast use cases**: If some profiles in your audience are missing tokens, only those profiles will fail to receive the Live activity. Sample several profiles from your audience to diagnose token issues. This applies only to remote start events, not update or end events.
+**For broadcasts:** Sample several audience profiles to check token registration. On iOS, profile-token checks apply to remote start events, not channel-based update or end events. On Android, also verify the device's FCM topic subscription using [Scenario 6](#broadcast-config).
+
+### Verify that the profile exists
+
+For iOS and Android, start with this check. For broadcasts, repeat it for several audience profiles.
+
+1. In Journey Optimizer, navigate to **Customer** `>` **Profiles**.
+1. Search using the namespace and identity value from your API request.
+1. If the profile is not found, either it does not exist or ingestion has not completed. Create the profile or wait for ingestion to complete before triggering the Live activity.
+1. If the profile is found, continue with the token checks for your platform.
+
+### Check the push token
 
 >[!BEGINTABS]
 
@@ -56,35 +79,26 @@ The API returns HTTP 200, but the Live activity does not appear. Common causes:
 
 ### Debugging steps
 
-+++ 1. Verify profile exists in Adobe Experience Platform
-
-1. In Journey Optimizer, navigate to **Customer** `>` **Profiles**.
-1. Search using namespace and identity value from API request.
-1. If profile is not found, the profile does not exist or ingestion is not completed. Create the profile or wait for ingestion before triggering the Live activity.
-1. If profile is found, proceed to step 2 below to check if the push token is synced.
-
-+++
-
-+++ 2. Check if Live activity push token is synced
++++ 1. Check if Live activity push token is synced
 
 You can use Assurance to verify token registration:
 
 1. In Assurance, from the **Events** list, filter or search for events `eventType = "liveActivity.pushToStart"`.
 1. Select the **Event** and inspect the payload.
-1. Check that the token, appId, and attributeType values are present.
-1. Confirm if the event was successfully sent.
+1. Check that the `token`, `appId`, and `attributeType` values are present.
+1. Confirm that the event was sent successfully.
 
 You can also check in Adobe Experience Platform profile.
 
 1. In Adobe Experience Platform, from your **Profile**, access the **Events** tab.
 1. Search for `liveActivity.pushToStart` events.
-1. Check the even timestamp and payload.
+1. Check the event timestamp and payload.
 
-If no events are found, your mobile app is not calling `Messaging.registerLiveActivity` correctly. You need to fix the SDK integration.
+If no events are found, the app is not calling `Messaging.registerLiveActivities` correctly. Fix the SDK integration.
 
 +++
 
-+++ 3. Validate token details on profile
++++ 2. Validate token details on profile
 
 1. From your **Profile**, access the **Attributes** tab.
 1. Locate `liveActivityPushNotificationDetails`.
@@ -107,17 +121,17 @@ If no events are found, your mobile app is not calling `Messaging.registerLiveAc
 
 **Validate each field:**
 
-| Field | Requirement | Common Issue |
-|-|-|-|
+| Field | Requirement | Common issue |
+|---|---|---|
 | `appId` | Must exactly match iOS bundle identifier | Mismatch between dev/prod bundle IDs |
 | `attributeType` | Must exactly match Swift `ActivityAttributes` struct name (case-sensitive) | Typo or incorrect struct name |
 | `platform` | Must be `"apns"` or `"apnsSandbox"` | Wrong platform value |
 | `denylisted` | Must be `false` | Token marked as invalid or user opted out |
 | `token` | Valid APNs push token | Token expired or app reinstalled |
 
-If any field is incorrect: Update the mobile app, re-register using `Messaging.registerLiveActivities`, wait 5-10 minutes, then re-check.
+If any field is incorrect, update the mobile app, re-register using `Messaging.registerLiveActivities`, wait 5-10 minutes, then re-check.
 
-If `liveActivityPushNotificationDetails` is missing: Token has not synced yet. Wait 5-10 minutes after seeing the `liveActivity.pushToStart` event in Assurance.
+If `liveActivityPushNotificationDetails` is missing, the token has not synced yet. Wait 5-10 minutes after you see the `liveActivity.pushToStart` event in Assurance, then re-check.
 
 +++
 
@@ -135,29 +149,20 @@ If `liveActivityPushNotificationDetails` is missing: Token has not synced yet. W
 
 ### Debugging steps
 
-+++ 1. Verify the profile exists in Adobe Experience Platform
-
-1. In Journey Optimizer, navigate to **Customer** `>` **Profiles**.
-1. Search using the namespace and identity value from your API request.
-1. If the profile is not found, create it or wait for ingestion to complete before triggering the Live activity.
-1. If the profile is found, proceed to step 2 to verify FCM token registration.
-
-+++
-
-+++ 2. Verify FCM token registration
++++ 1. Verify FCM token registration
 
 Android uses the standard FCM registration token for Live activities. There is no `liveActivity.pushToStart` event or separate Live activity push token.
 
 1. In Assurance, open the **Events** list and locate the standard push-token registration event.
 1. Select the event and inspect its payload to verify that the FCM registration token is present.
 1. Confirm that the registration event was successfully sent.
-1. In Adobe Experience Platform, open your profile's **Attributes** tab and confirm that the token is present in `pushNotificationDetails`, as described in step 3.
+1. In Adobe Experience Platform, open your profile's **Attributes** tab and confirm that the token is present in `pushNotificationDetails`, as described in step 2.
 
 If the registration event or profile token is missing, verify that the app forwards the FCM registration token to the SDK using `MobileCore.setPushIdentifier(token)`.
 
 +++
 
-+++ 3. Validate token details on the profile
++++ 2. Validate token details on the profile
 
 1. From your profile, access the **Attributes** tab.
 1. Locate `pushNotificationDetails`. Android uses this object instead of `liveActivityPushNotificationDetails` and does not require an `attributeType` field.
@@ -179,7 +184,7 @@ If the registration event or profile token is missing, verify that the app forwa
 
 **Validate each field:**
 
-| Field | Requirement | Common Issue |
+| Field | Requirement | Common issue |
 |---|---|---|
 | `appId` | Must exactly match the Android package name | Mismatch between development and production package names |
 | `platform` | Must be `"fcm"` | Wrong platform value |
@@ -197,16 +202,16 @@ If `pushNotificationDetails` is missing, the token has not synced yet. After con
 
 ## Scenario 2: Campaign configuration and payload issues {#scenario-2-campaign-configuration-and-payload-issues}
 
-[!BADGE Applies to both unitary and broadcast use cases]{type=Positive}
+[!BADGE Applies to both unitary and broadcast use cases]{type=Informative}
 
-Profile exists with valid tokens, but Live activity does not appear. This can be caused by:
+The profile exists and has valid tokens, but the Live activity does not appear. Possible causes:
 
 * Wrong surface or channel configuration.
 * Incorrect API payload structure.
-* `content-state` and `attributes` do not match iOS `ActivityAttributes` implementation.
+* Payload fields do not match the app implementation: iOS `ActivityAttributes` or the Android style-provider mapping.
 * Stale `timestamp` (critical for update/end).
 
-**Note for broadcast use cases**: Campaign must be **API-triggered Marketing** (not Transactional). Payload uses `audience` instead of individual `profile`. Refer to [this section](#broadcast-config) for broadcast-specific payload structure and to [Adobe Developer documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging#operation/postIMAudienceMessageExecution) for complete API specifications.
+**For broadcasts:** The campaign must be **API-triggered Marketing**, not Transactional. The payload uses `audience` instead of `recipients`. See [Scenario 6](#broadcast-config) for platform-specific broadcast payloads and [Adobe Developer documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging#operation/postIMAudienceMessageExecution) for complete API specifications.
 
 >[!BEGINTABS]
 
@@ -214,8 +219,8 @@ Profile exists with valid tokens, but Live activity does not appear. This can be
 
 ### Pre-checks
 
-* Campaign is **API-triggered Transactional** (unitary) or **API-triggered Marketing** (broadcast) and **High Throughput** option must be **not** be enabled since it is incompatible with Live activity.
-* Ensure that profile exists and tokens are synced correctly using the [above scenario](#scenario-1-profile-or-push-token-issues).
+* Confirm that the campaign is **API-triggered Transactional** (unitary) or **API-triggered Marketing** (broadcast). Keep **High Throughput** disabled because it is incompatible with Live activities.
+* Verify that the profile exists and its tokens are synced using the iOS checks in [Scenario 1](#scenario-1-profile-or-push-token-issues).
 
 ### Debugging steps
 
@@ -241,16 +246,16 @@ When executing the campaign via API, ensure the payload follows the correct stru
       "userId": "user@example.com",
       "namespace": "email",
       "context": {
-      "requestPayload": {
-         "aps": {
-            "content-available": 1,
-            "timestamp": 1756984054,
-            "event": "start",
-            "attributes-type": "FoodDeliveryLiveActivityAttributes",
-            "content-state": { ... },
-            "attributes": { ... }
+         "requestPayload": {
+            "aps": {
+               "content-available": 1,
+               "timestamp": 1756984054,
+               "event": "start",
+               "attributes-type": "FoodDeliveryLiveActivityAttributes",
+               "content-state": { ... },
+               "attributes": { ... }
+            }
          }
-      }
       }
    }]
 }
@@ -258,8 +263,8 @@ When executing the campaign via API, ensure the payload follows the correct stru
 
 **Common payload issues:**
 
-| Field | Requirement | Common Issue |
-|-|-|-|
+| Field | Requirement | Common issue |
+|---|---|---|
 | `attributes-type` | Must match campaign Activity type and profile `attributeType` | Mismatch or typo |
 | `campaignId` | Must match the activated campaign ID | Wrong or missing campaign ID |
 | `content-available` | Must be `1` | Missing or wrong value |
@@ -267,26 +272,21 @@ When executing the campaign via API, ensure the payload follows the correct stru
 | `timestamp` | Must always be the current/latest Unix epoch time in seconds | Using old/cached timestamp |
 | `userId` / `namespace` | Must match an existing profile in AEP | Profile identifier mismatch |
 
-**Critical: Always use the latest timestamp**
+**Critical: Always use a fresh timestamp**
 
-* The `timestamp` field must **always** be the **current Unix epoch time** (in seconds) at the moment each API call is made.
-* This applies to **all event types**: `start`, `update`, and **especially `end`**.
-* **Impact on updates/end requests**: Using a stale or old timestamp will cause update and end requests to fail or be ignored by the device.
-* Do **NOT** reuse timestamps from previous requests or use cached values.
-* Generate a fresh timestamp for every API call.
+* Set `timestamp` to the current Unix epoch time (in seconds) at the moment you make each API call. This applies to all event types: `start`, `update`, and `end`.
+* A stale or reused timestamp causes update and end requests to fail or be ignored by the device. Do **not** reuse timestamps from previous requests or cached values.
 
 **Optional fields (all event types):**
 
 * `requestId`: Unique identifier for tracking (recommended).
-* `alert`: Object with `title` and `body` for notification (useful for drawing attention to updates).
+* `alert`: Object with `title` and `body` for the notification. Useful for drawing attention to updates.
 
 **About `dismissal-date`:**
 
-* Optional field containing Unix epoch time (seconds).
-* **Only relevant when `event: "end"`**.
-* Specifies when the Live activity should automatically be removed from the device.
-* If not provided on end event, Live activity remains visible until user dismisses it.
-* Must be a future timestamp (later than `timestamp`).
+* Optional. Unix epoch time in seconds. Relevant only when `event` is `"end"`.
+* Specifies when the Live activity is automatically removed from the device. If you omit it, the Live activity remains visible until the user dismisses it.
+* Must be a future timestamp, later than `timestamp`.
 
 +++
 
@@ -324,15 +324,15 @@ Ensure your API payload matches your iOS app's `ActivityAttributes` implementati
          "timestamp": 1756984054,
          "attributes-type": "FoodDeliveryLiveActivityAttributes",
          "content-state": {
-         "orderStatus": "Preparing",
-         "estimatedDeliveryTime": "20 mins"
-      },
-      "attributes": {
-         "liveActivityData": {
-         "liveActivityID": "order-12345"
+            "orderStatus": "Preparing",
+            "estimatedDeliveryTime": "20 mins"
          },
-         "restaurantName": "Pizza Palace"
-      }
+         "attributes": {
+            "liveActivityData": {
+               "liveActivityID": "order-12345"
+            },
+            "restaurantName": "Pizza Palace"
+         }
       }
    }
    ```
@@ -444,7 +444,7 @@ For broadcasts, use an API-triggered Marketing campaign with `audience.id` and p
 
 **Common payload issues:**
 
-| Field | Requirement | Common Issue |
+| Field | Requirement | Common issue |
 |---|---|---|
 | `campaignId` | Must match the activated campaign ID | Wrong or missing campaign ID |
 | `notification_id` | Keep the same value for the Live activity's start, update, and end events | Changed ID targets a different notification |
@@ -507,17 +507,58 @@ Use standard Assurance on a connected Android test device. There is no dedicated
 
 ## Scenario 3: Delivery failures and error analysis {#scenario-3-delivery-failures-and-error-analysis}
 
-[!BADGE Applies to both unitary and broadcast use cases]{type=Positive}
+[!BADGE Applies to both unitary and broadcast use cases]{type=Informative}
 
 In this scenario, all previous checks have passed:
 
-* Profile exists with [valid Live activity push tokens](#scenario-1-profile-or-push-token-issues)
-* Campaign is correctly [configured with proper payload](#scenario-2-campaign-configuration-and-payload-issues)
-* [Update tokens are synced](#scenario-4-live-activity-update-token-not-synced) (for update/end events, unitary use case only)
+* Profile exists with [valid push tokens for the device platform](#scenario-1-profile-or-push-token-issues).
+* Campaign and payload pass the [configuration checks](#scenario-2-campaign-configuration-and-payload-issues).
+* For iOS unitary update or end events, [the per-instance update token is synced](#scenario-4-live-activity-update-token-not-synced). Android does not require a separate update token.
 
-But the Live activity still does not appear, update, or end as expected. The issue may be at the Adobe delivery system level or with the push notification service provider (APNs).
+If the Live activity still does not appear, update, or end, check campaign processing, delivery to the push provider (APNs on iOS or FCM on Android), and device-side behavior.
 
-**Note for broadcast use cases**: Reports show metrics across all audience members. Some profiles may succeed while others fail.
+**For broadcasts:** Reports show metrics across all audience members. Some profiles may succeed while others fail.
+
+### Check campaign reports {#check-campaign-reports}
+
+For both iOS and Android, start with the campaign report. It shows whether Journey Optimizer attempted the send, excluded the profile, or hit an error.
+
+1. Navigate to your **Live activity Campaign**.
+1. Click the **Reports** button.
+1. Select **View all time report**.
+1. Check the **Sending Statistics** metrics to understand delivery success:
+
+   | Metric | What it means | What to look for |
+   |---|---|---|
+   | Targeted | Number of profiles qualified for the audience | Should include your test profile |
+   | Sends | Total push notifications attempted | Should match your API calls |
+   | Delivered | Reported delivery metric | Compare with Sends; verify device rendering separately |
+   | Send errors | Push notifications that failed to send | Investigate the error reasons |
+   | Send exclusions | Profiles excluded by Adobe Journey Optimizer | Check if your profile was excluded |
+
+1. If **Send errors** > 0, check the **Error Reasons** table. Use step 1 in the tab for your platform to interpret the errors.
+1. If **Send exclusions** > 0, check the **Excluded Reasons** table:
+
+   | Common exclusion | Meaning | Resolution |
+   |---|---|---|
+   | Profile opted out | User has opted out of notifications | Check profile consent status |
+   | Token denylisted | Token marked as invalid | Re-register the token (iOS) or forward the current FCM token (Android), or check denylist status |
+   | Profile not eligible | Profile does not meet campaign criteria | Review campaign audience rules |
+
+1. Review the **Live activity lifecycle** section:
+
+   | Metric | What to check |
+   |---|---|
+   | Remote starts | Should show count of API-triggered starts |
+   | Updates | Should show count of update events |
+   | Ends | Should show count of end events |
+   | Totals count | Overall Live activity event volume |
+
+   If these metrics are zero or do not match your API calls, investigate campaign processing and push provider delivery using the platform-specific checks below.
+
+Learn more in the [Live activity campaign report page](../reports/campaign-global-report-cja-activity.md).
+
+### Check delivery for your platform
 
 >[!BEGINTABS]
 
@@ -525,55 +566,139 @@ But the Live activity still does not appear, update, or end as expected. The iss
 
 **Pre-checks**
 
-* **Previous Scenarios Validated:**
+* **Previous scenarios validated:**
+   * Profile exists with correct `liveActivityPushNotificationDetails`.
+   * Campaign surface and Activity type are correct.
+   * API payload is valid with a current timestamp.
+   * Update tokens are synced (unitary update and end events only).
+
+* **API call confirmed:**
+   * The trigger API accepted the request. This does not confirm delivery or device rendering.
+   * Campaign ID and recipient details are correct.
+
+### Debugging steps
+
++++ 1. Interpret send errors
+
+Skip this step if the [campaign report](#check-campaign-reports) shows no send errors. Otherwise, match the error from the **Error Reasons** table to the following common APNs errors:
+
+| Common error | Meaning | Resolution |
+|---|---|---|
+| Invalid token | Push token is invalid or expired | Re-register Live activity tokens from device |
+| Token not found | No valid token associated with profile | Verify `liveActivityPushNotificationDetails` exists |
+| APNs rejected | Apple Push Notification service rejected the push | Check APNs certificate, bundle ID, environment |
+| Network timeout | Unable to reach APNs | Transient issue; retry the API call |
+
++++
+
++++ 2. Check message feedback events in profile
+
+1. Navigate to **Customer** > **Profiles** in Journey Optimizer.
+1. Search for and open the profile.
+1. Select the **Events** tab.
+1. Filter or search for events with `eventType = "message.feedback"`.
+1. Look for feedback events matching your Live activity's `liveActivityID` and `event` type.
+1. Review the following key fields:
+
+   | Field | Possible Values | What it means |
+   |---|---|---|
+   | `feedbackStatus` | `sent`, `error`, `denylist` | Delivery outcome from service provider |
+   | `serviceProvider` | `apns/apnsSandbox` | Should be APNs for iOS Live activities |
+   | `errorCode` | Numeric code or `null` | APNs-specific error code if failed |
+   | `errorMessage` | Error description or `null` | Human-readable error message |
+
+1. **If `feedbackStatus: "error"`:**
+   * Check the `errorCode` and `errorMessage` for specific APNs errors.
+   * Common APNs errors include expired token, invalid certificate, wrong bundle ID.
+
+1. **If no feedback event is found:**
+   * The push notification may not have been attempted.
+   * Check whether the profile was excluded in the [campaign report](#check-campaign-reports).
+
+**If `feedbackStatus` is `sent`:** Journey Optimizer handed the notification to APNs. This does not confirm device rendering. Continue with the device-side checks in step 4.
+
++++
+
++++ 3. Verify Live activity delivery to APNs in Assurance
+
+1. Open your Assurance session and keep it active during the API call.
+1. Execute the API call (start, update, or end).
+1. In the **Event List**, look for Live activity delivery events.
+1. Search for events related to APNs push delivery.
+1. Check for the following indicators:
+   * **Push request to APNs**: Confirms Adobe sent the push to Apple's servers
+   * **APNs response**: Shows whether APNs accepted or rejected the push
+   * **Delivery status**: Success or failure indication
+1. If issues are found, refer to the following common APNs delivery issues:
+
+   | Issue | Symptom in Assurance | Resolution |
+   |---|---|---|
+   | APNs certificate expired | Authentication error | Renew and upload new APNs certificate |
+   | Wrong environment (dev vs prod) | Token mismatch error | Ensure certificate matches app build type |
+   | Bundle ID mismatch | Invalid bundle identifier | Verify certificate bundle ID matches app |
+   | Token expired | InvalidToken error from APNs | Re-register Live activity tokens |
+   | Rate limiting | Too many requests | Reduce API call frequency |
+
++++
+
++++ 4. Check device-side behavior
+
+If Adobe shows successful delivery but the device does not show the Live activity:
+
+* Check iOS device logs for Live activity errors.
+* Verify that the app is in the foreground or background (not terminated).
+* Confirm that the device has network connectivity.
+* Test on multiple devices to rule out device-specific issues.
+* Verify iOS version is 16.1 or later.
+
++++
+
++++ 5. Escalation to Adobe Support
+
+If you have completed all steps and the issue remains unresolved, contact Adobe Customer Care with:
+
+**Required information:**
+
+* Campaign ID and name
+* Profile namespace and ID
+* `liveActivityID` from API payload
+* Timestamps of API calls
+* Campaign report screenshots showing Sending Statistics, Error Reasons, and Excluded Reasons
+* Relevant profile events (`liveActivity.updateToken` for unitary update/end issues and `message.feedback`)
+* Assurance session details and relevant event screenshots
+* API request payload and response, with credentials and device tokens redacted
+* APNs certificate details (expiration, environment, bundle ID)
+
++++
+
+>[!TAB Android]
+
+**Pre-checks**
+
+* **Previous scenarios validated:**
    * Profile exists with valid `pushNotificationDetails`, including the current FCM token, Android package name, and `platform: "fcm"`.
    * Campaign surface targets the correct Android app and uses the matching FCM credentials.
    * The `fcm` payload is valid and its `timestamp` is newer than the previous event for the same `notification_id` (or `topic_name` for broadcasts).
    * Start, update, and end events use the same `notification_id`. Unitary events use the same FCM registration token; no separate update token is required.
 
-* **API Call Confirmed:**
+* **API call confirmed:**
 
    * The API call returned HTTP 202 (accepted). This confirms request acceptance, not delivery or device rendering.
    * Campaign ID and recipient details are correct. For broadcasts, verify the audience ID and FCM topic.
 
 ### Debugging steps
 
-+++ 1. Check campaign reports
++++ 1. Interpret send errors
 
-1. Navigate to your **Live activity Campaign**.
-1. Click the **Reports** button.
-1. Select **View all time report**.
-1. Review the following sections:
+Skip this step if the [campaign report](#check-campaign-reports) shows no send errors. Otherwise, match the error from the **Error Reasons** table to the following common FCM errors:
 
-   1. Check the **Sending Statistics** metrics to understand delivery success:
-
-         | Metric | What it means | What to look for |
-         |---|---|---|
-         | Targeted | Number of profiles qualified for the audience | Should include your test profile |
-         | Sends | Total push notifications attempted | Should match your API calls |
-         | Delivered | Reported delivery metric | Compare with Sends; verify device rendering separately |
-         | Send errors | Push notifications that failed to send | Investigate the error reasons |
-         | Send exclusions | Profiles excluded by Adobe Journey Optimizer | Check if your profile was excluded |
-
-   1. If **Send errors** > 0, check the **Error Reasons** table for FCM errors:
-
-         | Common Error | Meaning | Resolution |
-         |---|---|---|
-         | Invalid / unregistered token | FCM token is invalid or the app was uninstalled | Obtain the current device token and forward it using `MobileCore.setPushIdentifier(token)` |
-         | Token not found | No valid FCM token is associated with the profile | Verify that `pushNotificationDetails` contains the current token |
-         | Sender ID mismatch | Token was issued for a different Firebase project | Align the FCM credentials with the app's Firebase project |
-         | Invalid argument | Payload was rejected by FCM | Validate the `fcm` payload structure |
-         | Network timeout | Unable to reach FCM | Transient issue; retry the API call |
-
-   1. If **Send exclusions** > 0, check the **Excluded Reasons** table:
-
-         | Common Exclusion | Meaning | Resolution |
-         |---|---|---|
-         | Profile opted out | User has opted out of notifications | Check profile consent status |
-         | Token denylisted | Token marked as invalid | Forward the current FCM token or check denylist status |
-         | Profile not eligible | Profile does not meet campaign criteria | Review campaign audience rules |
-
-Learn more in the [Live activity campaign report page](../reports/campaign-global-report-cja-activity.md).
+| Common error | Meaning | Resolution |
+|---|---|---|
+| Invalid / unregistered token | FCM token is invalid or the app was uninstalled | Obtain the current device token and forward it using `MobileCore.setPushIdentifier(token)` |
+| Token not found | No valid FCM token is associated with the profile | Verify that `pushNotificationDetails` contains the current token |
+| Sender ID mismatch | Token was issued for a different Firebase project | Align the FCM credentials with the app's Firebase project |
+| Invalid argument | Payload was rejected by FCM | Validate the `fcm` payload structure |
+| Network timeout | Unable to reach FCM | Transient issue; retry the API call |
 
 +++
 
@@ -598,9 +723,9 @@ Learn more in the [Live activity campaign report page](../reports/campaign-globa
 
 1. **If no feedback event is found:**
    * The push notification may not have been attempted or feedback may not yet be available.
-   * Check whether the profile was excluded in campaign reports, as described in step 1.
+   * Check whether the profile was excluded in the [campaign report](#check-campaign-reports).
 
-**If `feedbackStatus` is `sent`:** FCM accepted the notification. This does not confirm that the device rendered the Live activity. Continue with the device-side checks below.
+**If `feedbackStatus` is `sent`:** FCM accepted the notification. This does not confirm that the device rendered the Live activity. Continue with the device-side checks in step 4.
 
 +++
 
@@ -612,34 +737,23 @@ Use standard Assurance on a connected Android test device. There is no dedicated
 1. Execute the API call with `event_type` set to `start`, `update`, or `end`.
 1. In the **Events** list, inspect available push-delivery events for the request to FCM and its response.
 1. Check whether FCM accepted or rejected the request, and inspect any reported error details.
-1. For rejected requests, use the FCM error reasons in step 1 to check the token, Firebase project credentials, and payload. If provider events are unavailable in the session, use `message.feedback` events and campaign reports.
+1. For rejected requests, use the FCM errors in step 1 to check the token, Firebase project credentials, and payload. If provider events are unavailable in the session, use `message.feedback` events and campaign reports.
 
 +++
 
-+++ 4. Proceed to additional diagnostic checks
++++ 4. Check device-side behavior
 
-1. Check the **Live activity lifecycle** section in the campaign report:
+If Adobe shows successful delivery but the device does not display or update the Live activity:
 
-   | Metric | What to check |
-   |---|---|
-   | Remote starts | Should show count of API-triggered starts |
-   | Updates | Should show count of update events |
-   | Ends | Should show count of end events |
-   | Totals count | Overall Live activity event volume |
-
-   If these metrics are zero or do not match your API calls, investigate campaign processing and FCM delivery using reports and feedback events.
-
-1. If Adobe shows successful delivery but the device does not display or update the Live activity:
-
-   * Inspect Android app logs for push-handling and Live activity rendering errors.
-   * Confirm that notifications are allowed and that promoted notifications are permitted using `canPostPromotedNotifications()`.
-   * Verify that `POST_NOTIFICATIONS` and `POST_PROMOTED_NOTIFICATIONS` permissions are granted and the channel identified by `notification_channel_id` exists.
-   * Ensure that `timestamp` is newer than the last processed event and that `notification_id` has not changed. For broadcasts, also verify the device's subscription to `topic_name`.
-   * Confirm that the app is not force-stopped.
-   * Confirm device has network connectivity.
-   * Test on multiple devices to rule out device-specific issues.
-   * Verify that the device runs Android 16.1 (API level 36.1) or later and the app uses `targetSdk 36`.
-   * Check that `content_state` keys and value types match the app's style provider.
+* Inspect Android app logs for push-handling and Live activity rendering errors.
+* Confirm that notifications are allowed and that promoted notifications are permitted using `canPostPromotedNotifications()`.
+* Verify that `POST_NOTIFICATIONS` and `POST_PROMOTED_NOTIFICATIONS` permissions are granted and the channel identified by `notification_channel_id` exists.
+* Ensure that `timestamp` is newer than the last processed event and that `notification_id` has not changed. For broadcasts, also verify the device's subscription to `topic_name`.
+* Confirm that the app is not force-stopped.
+* Confirm that the device has network connectivity.
+* Test on multiple devices to rule out device-specific issues.
+* Verify that the device runs Android 16.1 (API level 36.1) or later and the app uses `targetSdk 36`.
+* Check that `content_state` keys and value types match the app's style provider.
 
 +++
 
@@ -659,172 +773,18 @@ If you have completed all steps and the issue remains unresolved, contact Adobe 
 * API request payload and response, with credentials and device tokens redacted
 * Android package name, Firebase project and sender ID, and FCM credential configuration details; do not include private keys
 * Android OS version, device model, notification permission status, and relevant app logs
-    
-+++
-
->[!TAB Android]
-
-**Pre-checks**
-
-* **Previous Scenarios Validated:**
-   * Profile exists with correct `liveActivityPushNotificationDetails`
-   * Campaign surface and Activity type are correct
-   * API payload is valid with current timestamp
-   * Update tokens are synced (for update/end events)
-
-* **API Call Confirmed:**
-
-   * The API call returned HTTP 200 (success)
-   * Campaign ID and recipient details are correct
-
-### Debugging steps
-
-+++ 1. Check campaign reports
-
-1. Navigate to your **Live activity Campaign**.
-1. Click the **Reports** button.
-1. Select **View all time report**.
-1. Review the following sections:
-
-   1. Check the **Sending Statistics** metrics to understand delivery success:
-
-         | Metric | What it means | What to look for |
-         |-|-|-|
-         | Targeted | Number of profiles qualified for the audience | Should include your test profile |
-         | Sends | Total push notifications attempted | Should match your API calls |
-         | Delivered | Successfully delivered to devices | Compare with Sends to see success rate |
-         | Send errors | Push notifications that failed to send | High numbers|
-         | Send exclusions | Profiles excluded by Adobe Journey Optimizer | Check if your profile was excluded |
-
-   1. If Send errors > 0, check the **Error Reasons** table for specific error codes and messages:
-
-         | Common Error | Meaning | Resolution |
-         |-|-|-|
-         | Invalid token | Push token is invalid or expired | Re-register Live activity tokens from device |
-         | Token not found | No valid token associated with profile | Verify `liveActivityPushNotificationDetails` exists |
-         | APNs rejected | Apple Push Notification service rejected the push | Check APNs certificate, bundle ID, environment |
-         | Network timeout | Unable to reach APNs | Transient issue; retry the API call |
-
-   1. If **Send exclusions** > 0, check the **Excluded Reasons** table:
-
-         | Common Exclusion | Meaning | Resolution |
-         |-|-|-|
-         | Profile opted out | User has opted out of notifications | Check profile consent status |
-         | Token denylisted | Token marked as invalid | Re-register token or check denylist status |
-         | Profile not eligible | Profile does not meet campaign criteria | Review campaign audience rules |
-
-Learn more in the [Live activity campaign report page](../reports/campaign-global-report-cja-activity.md).
 
 +++
 
-+++ 2. Check message feedback events in profile
+>[!ENDTABS]
 
-1. Navigate to **Customer** > **Profiles** in Journey Optimizer.
-1. Search for and open the profile.
-1. Select the **Events** tab.
-1. Filter or search for events with `eventType = "message.feedback"`.
-1. Look for feedback events matching your Live activity's `liveActivityID` and `event` type.
-1. Review the following key fields:
+## Scenario 4: Live activity update token not synced {#scenario-4-live-activity-update-token-not-synced}
 
-   | Field | Possible Values | What it means |
-   |---|---|---|
-   | `feedbackStatus` | `sent`, `error`, `denylist` | Delivery outcome from service provider |
-   | `serviceProvider` | `apns/apnsSandbox` | Should be APNs for iOS Live activities |
-   | `errorCode` | Numeric code or `null` | APNs-specific error code if failed |
-   | `errorMessage` | Error description or `null` | Human-readable error message |
-
-1. **If `feedbackStatus: "error"`:**
-   * Check the `errorCode` and `errorMessage` for specific APNs errors
-   * Common APNs errors include expired token, invalid certificate, wrong bundle ID
-
-1. **If no feedback event found:**
-   * The push notification may not have been attempted
-   * Check if profile was excluded in Campaign Reports as detailed in Step 1 above.
-
-+++
-
-+++ 3. Verify Live activity delivery to APNs in Assurance
-
-1. Open your Assurance session, it must be active during the API call.
-1. Execute the API call (start, update, or end).
-1. In the **Event List**, look for Live activity delivery events.
-1. Search for events related to APNs push delivery.
-1. Check for the following indicators:
-   * **Push request to APNs**: Confirms Adobe sent the push to Apple's servers
-   * **APNs response**: Shows whether APNs accepted or rejected the push
-   * **Delivery status**: Success or failure indication
-1. If issues are found, refer to the following common APNs delivery issues:
-
-   | Issue | Symptom in Assurance | Resolution |
-   |-|-|-|
-   | APNs certificate expired | Authentication error | Renew and upload new APNs certificate |
-   | Wrong environment (dev vs prod) | Token mismatch error | Ensure certificate matches app build type |
-   | Bundle ID mismatch | Invalid bundle identifier | Verify certificate bundle ID matches app |
-   | Token expired | InvalidToken error from APNs | Re-register Live activity tokens |
-   | Rate limiting | Too many requests | Reduce API call frequency |
-
-+++
-  
-+++ 4. Proceed to additional diagnostic checks
-
-1. Check Live activity Lifecycle metrics in Campaign Report.
-
-   In the campaign report, review the **Live activity lifecycle** section:
-
-   | Metric | What to check |
-   |-|-|
-   | Remote starts | Should show count of API-triggered starts |
-   | Updates | Should show count of update events |
-   | Ends | Should show count of end events |
-   | Totals count | Overall Live activity event volume |
-
-   If these metrics are zero or do not match your API calls, there is a delivery issue between Adobe and APNs.
-
-1. If Adobe shows successful delivery but device does not show the Live activity:
-
-   * Check iOS device logs for Live activity errors.
-   * Verify app is in foreground or background (not terminated).
-   * Confirm device has network connectivity.
-   * Test on multiple devices to rule out device-specific issues.
-   * Verify iOS version is 16.1 or later.
-
-+++
-
-+++ 5. Escalation to Adobe Support
-
-If you have completed all steps and the issue remains unresolved, contact Adobe Customer Care with:
-
-**Required information:**
-
-* Campaign ID and name
-* Profile namespace and ID
-* `liveActivityID` from API payload
-* Timestamps of API calls
-* Screenshots of:
-* Campaign Reports (Sending Statistics, Error Reasons, Excluded Reasons)
-* Profile Events (`liveActivity.updateToken`, `message.feedback`)
-* Assurance session showing delivery events
-* Complete API request payload
-* APNs certificate details (expiration, environment, bundle ID)
-    
-+++
-
-
->[!ENDTABS] 
-
-## Unitary-specific scenarios
-
->[!NOTE]
->
-> * [Scenario 4](#scenario-4-live-activity-update-token-not-synced) applies to iOS only. Android uses the same FCM registration token to start, update, and end a unitary Live activity; no per-instance update token is required. 
-> * For Android update or end issues, follow [Scenario 1](#scenario-1-profile-or-push-token-issues), [Scenario 2](#scenario-2-campaign-configuration-and-payload-issues), and [Scenario 3](#scenario-3-delivery-failures-and-error-analysis).
-> * [Scenario 5](#scenario-5-checking-execution-status-via-the-api), which covers execution status checks, applies to both iOS and Android.
-
-### Scenario 4: Live activity update token not synced {#scenario-4-live-activity-update-token-not-synced}
+[!BADGE Applies to unitary use cases only]{type=Informative}
 
 [!BADGE Applies to iOS only]{type=Positive}
 
-The Live activity starts successfully on the device, but subsequent `update` or `end` API calls (returning HTTP 200) fail to update or dismiss the Live activity. This occurs when the **Live activity update token** is not properly synced to Adobe's system.
+The Live activity starts on the device, but accepted `update` or `end` API requests do not update or dismiss it. A possible cause is that the **per-instance Live activity update token** has not synced to Adobe's system. Complete the checks below to confirm whether token sync is the issue.
 
 **Understanding update tokens**
 
@@ -847,12 +807,12 @@ For update and end events to work, the following must occur:
 
 **Pre-checks:**
 
-* **User Permission**: The first time a Live activity starts on a device, iOS displays a system prompt: "Allow [App Name] to provide Live activity updates?" The user **must tap "Allow"** for update tokens to be generated and synced. If the user taps "Do not Allow", no update tokens are created and update/end requests will fail. This is a one-time permission per app.
-* **Profile and Campaign Validation**: Complete [Scenario 1](#scenario-1-profile-or-push-token-issues) and [Scenario 2](#scenario-2-campaign-configuration-and-payload-issues) checks to ensure profile, tokens, and campaign configuration are correct.
+* **User permission**: The first time a Live activity starts on a device, iOS displays a system prompt: "Allow [App Name] to provide Live activity updates?" The user **must tap "Allow"** for update tokens to be generated and synced. If the user taps "Do not Allow", no update tokens are created and update/end requests will fail. This is a one-time permission per app.
+* **Profile and campaign validation**: Complete [Scenario 1](#scenario-1-profile-or-push-token-issues) and [Scenario 2](#scenario-2-campaign-configuration-and-payload-issues) checks to ensure profile, tokens, and campaign configuration are correct.
 
-### Debugging steps
+**Debugging steps**
 
-+++ Verify update token sync in Assurance
++++ 1. Verify update token sync in Assurance
 
 1. Open your Assurance session.
 1. Ensure the session was active when the Live activity started on the device.
@@ -864,13 +824,13 @@ For update and end events to work, the following must occur:
    * Confirm the `activityType` matches your `attributes-type`.
 
 1. If event is not found:
-
+ 
    * The update token was not generated or captured by the SDK.
-   * Check if user granted Live activity permissions.
+   * Check whether the user granted Live activity permissions.
    * Verify the Live activity actually started successfully on the device.
    * Confirm the mobile SDK is properly integrated to capture update tokens.
 
-1. If event is found, proceed to Step 2.
+1. If the event is found, proceed to step 2.
 
 +++
 
@@ -892,7 +852,7 @@ For update and end events to work, the following must occur:
    * Wait 5-10 minutes and re-check.
    * If still missing after 15 minutes, there may be an event ingestion issue.
 
-1. If event is found, the update token has been synced. You can proceed to Step 3.
+1. If the event is found, the update token has been synced. Proceed to step 3.
 
 +++
 
@@ -912,13 +872,13 @@ For update and end events to work, the following must occur:
 
 ## Scenario 5: Checking execution status via the API {#scenario-5-checking-execution-status-via-the-api}
 
-[!BADGE Applies to unitary (1:1) use cases only]{type=Informative}
+[!BADGE Applies to unitary use cases only]{type=Informative}
 
 After triggering a unitary Live activity, the **GET Message Execution API** returns the current state of the execution. Use it to confirm whether an execution is queued, in progress, completed, or failed — without waiting for the feedback event to land in the dataset.
 
 The `executionId` is the message ID returned in the trigger response. For unitary executions, it is prefixed with `HUOC-`.
 
-### Endpoint and example request
+**Endpoint and example request**
 
 **Endpoint**: `GET https://cjm.adobe.io/imp/message/executions/{executionId}`
 
@@ -931,7 +891,7 @@ curl --location 'https://cjm.adobe.io/imp/message/executions/HUOC-123456' \
   --header 'x-api-key: <API_KEY>'
 ```
 
-### HTTP response codes
+**HTTP response codes**
 
 | Code | Meaning |
 |------|---------|
@@ -940,7 +900,7 @@ curl --location 'https://cjm.adobe.io/imp/message/executions/HUOC-123456' \
 | 403 Forbidden | Valid token but insufficient permissions |
 | 404 Not Found | Execution ID does not exist |
 
-### Execution status values
+**Execution status values**
 
 The `status` field in a 200 response indicates execution progress:
 
@@ -953,16 +913,7 @@ The `status` field in a 200 response indicates execution progress:
 
 The 200 response also returns `executionType` (`unitary` or `batch`), `executionRunMode` (`default` or `test`), and a `source` block with metadata (`campaignId`, `journeyId`, `batchInstanceId`, asset info) tying the execution back to the triggering campaign or journey.
 
-## Broadcast-specific scenarios
-
->[!NOTE]
->
-> Broadcast delivery differs by platform:
->
-> * **iOS** uses an Apple push channel (`input-push-channel`) that must match `liveActivityData.channelID` in the start payload.
-> * **Android** uses an FCM topic (`topic_name`) that the device must subscribe to.
-
-### Scenario 6: Broadcast campaign configuration and payload issues{#broadcast-config}
+## Scenario 6: Broadcast campaign configuration and payload issues {#broadcast-config}
 
 [!BADGE Applies to Broadcast use cases only]{type=Informative}
 
@@ -971,9 +922,9 @@ This section covers troubleshooting scenarios specific to broadcast Live activit
 When profiles have valid tokens but the Live activity does not appear, update, or behave as expected for audience members, the issue typically stems from one of the following:
 
 * The campaign is not configured as API-triggered Marketing.
-* The API payload uses an incorrect broadcast structure (missing `audience` or `input-push-channel`).
-* The `content-state` and `attributes` fields do not match the iOS `ActivityAttributes` implementation.
-* The `input-push-channel` was not created correctly on the Apple Developer Portal.
+* The API payload is missing `audience` or the platform-specific broadcast identifier: `input-push-channel` on iOS or `topic_name` on Android.
+* Payload fields do not match the iOS `ActivityAttributes` implementation or the Android style-provider mapping.
+* The Apple push channel is incorrectly configured, or the Android device is not subscribed to the FCM topic.
 
 This troubleshooting scenario applies to all Live activity events in broadcast campaigns: `start`, `update`, and `end`.
 
@@ -983,10 +934,10 @@ This troubleshooting scenario applies to all Live activity events in broadcast c
 
 **Pre-checks:**
 
-* **Campaign Type**: 
+* **Campaign type**:
    * Verify that the campaign is created as API-triggered Marketing (required for broadcast/audience-based campaigns). 
    * Confirm that an audience is defined in the campaign configuration.
-* **Profile and Token Validation**: Sample multiple profiles from the audience to verify they have valid `liveActivityPushNotificationDetails`. For detailed validation steps, follow [Scenario 1](#scenario-1-profile-or-push-token-issues).
+* **Profile and token validation**: Sample multiple profiles from the audience to verify they have valid `liveActivityPushNotificationDetails`. For detailed validation steps, follow [Scenario 1](#scenario-1-profile-or-push-token-issues).
 
 ### Debugging steps
 
@@ -1018,15 +969,15 @@ The broadcast payload structure differs from unitary campaigns. Verify that your
    },
    "context": {
       "requestPayload": {
-      "aps": {
-         "input-push-channel": "FEt0NgvLEfEAAOqA6AXdIQ==",
-         "content-available": 1,
-         "timestamp": 1771829292,
-         "event": "update",
-         "attributes-type": "AirplaneTrackingAttributes",
-         "content-state": { ... },
-         "attributes": { ... }
-      }
+         "aps": {
+            "input-push-channel": "FEt0NgvLEfEAAOqA6AXdIQ==",
+            "content-available": 1,
+            "timestamp": 1771829292,
+            "event": "start",
+            "attributes-type": "AirplaneTrackingAttributes",
+            "content-state": { ... },
+            "attributes": { ... }
+         }
       }
    }
 }
@@ -1034,8 +985,8 @@ The broadcast payload structure differs from unitary campaigns. Verify that your
 
 **Common payload issues:**
 
-| Field | Requirement | Common Issue |
-|-|-|-|
+| Field | Requirement | Common issue |
+|---|---|---|
 | `campaignId` | Must match the activated Marketing campaign ID | Wrong campaign ID or using Transactional campaign |
 | `audience.id` | Must match an existing audience in AEP | Wrong audience ID or audience does not exist |
 | `input-push-channel` | Required for broadcast - Unique identifier for this broadcast instance | Missing or does not match `channelID` in `liveActivityData` |
@@ -1050,8 +1001,8 @@ The broadcast payload structure differs from unitary campaigns. Verify that your
    * Required for all broadcast Live activities.
    * Serves as a unique identifier for this specific broadcast instance.
    * All profiles in the audience receive Live activities linked to this channel.
-   * Must match the `channelID` in `liveActivityData.channelID` (see Step 3).
-   * Must be created for the `appID` on the Apple Developer Portal by the client.
+   * Must match the `channelID` in `liveActivityData.channelID` (see step 3).
+   * Must be created for the `appID` in the Apple Developer Portal by your team.
    * Only channels created for the specific `appID` can be used for broadcasting Live activity on that app.
 
 * **`audience.id`**:
@@ -1101,28 +1052,28 @@ Ensure that the payload fields match your iOS app's `ActivityAttributes` impleme
 
    1. Map iOS fields to broadcast API payload.
    
-   For all events, include both `attributes` and `content-state`:
+   Include `content-state` for all event types. Include `attributes`, including `liveActivityData.channelID`, for start events only:
 
    ```json
-         {
-         "aps": {
-            "input-push-channel": "FEt0NgvLEfEAAOqA6AXdIQ==",
-            "event": "start",
-            "timestamp": 1771829292,
-            "attributes-type": "AirplaneTrackingAttributes",
-            "content-state": {
+   {
+      "aps": {
+         "input-push-channel": "FEt0NgvLEfEAAOqA6AXdIQ==",
+         "event": "start",
+         "timestamp": 1771829292,
+         "attributes-type": "AirplaneTrackingAttributes",
+         "content-state": {
             "journeyProgress": 0
-            },
-            "attributes": {
+         },
+         "attributes": {
             "arrivalAirport": "DEL",
             "departureAirport": "MUM",
             "arrivalTerminal": "T1",
             "liveActivityData": {
                "channelID": "FEt0NgvLEfEAAOqA6AXdIQ=="
             }
-            }
          }
-         }
+      }
+   }
    ```
 
 **Critical: `input-push-channel` must match `channelID`**
@@ -1144,7 +1095,7 @@ Ensure that the payload fields match your iOS app's `ActivityAttributes` impleme
 **Common mistakes:**
 
 | Issue | Impact | Fix |
-|-|-|-|
+|---|---|---|
 | Missing `input-push-channel` | Broadcast will not work | Add unique channel ID for each broadcast |
 | `input-push-channel` does not match `channelID` | Live activity will not start | Ensure both values are identical |
 | Different `input-push-channel` for update/end | Update/end will not reach the Live activities | Use same channel ID throughout lifecycle |
@@ -1236,7 +1187,7 @@ Replace the sample timestamp with the current Unix epoch time in seconds. Adapt 
 
 **Common payload issues:**
 
-| Field | Requirement | Common Issue |
+| Field | Requirement | Common issue |
 |---|---|---|
 | `campaignId` | Must match the activated Marketing campaign ID | Wrong campaign ID or using Transactional campaign |
 | `audience.id` | Must match the audience configured in the campaign | Wrong audience ID or missing audience |
@@ -1301,6 +1252,8 @@ Use standard Assurance on a connected Android test device that is part of the au
 
 ## Scenario 7: Profile not in audience or stale audience snapshot {#scenario-7-profile-not-in-audience-or-stale-audience-snapshot}
 
+[!BADGE Applies to Broadcast use cases only]{type=Informative}
+
 In this scenario, the campaign and payload are correctly configured, but specific profiles are not receiving the Live activity. This typically occurs when:
 
 * The profile is not a member of the audience linked to the campaign.
@@ -1313,22 +1266,21 @@ This troubleshooting scenario applies specifically to broadcast campaigns using 
 
 Adobe Experience Platform uses different audience evaluation methods that determine when profile updates are reflected in the audience:
 
-| Method | Evaluation Frequency | Data Freshness | Best For |
-|-|-|-|--|
+| Method | Evaluation frequency | Data freshness | Best for |
+|---|---|---|---|
 | Batch | Once daily (scheduled) | May be up to 24 hours stale | Large audiences, non-time-sensitive |
 | Streaming | Real-time (on profile changes) | Near real-time for updated profiles | Time-sensitive, requires profile updates |
 | Edge | Real-time at edge locations | Near real-time | Edge-evaluated use cases |
 
->[!BEGINTABS]
+### Pre-checks
 
->[!TAB iOS]
-
-**Pre-checks:**
-
-* **Campaign and Payload Validation**:
-   * Complete the checks in [this scenario](#broadcast-config) to ensure the campaign and payload are correct. 
+* **Campaign and payload validation:**
+   * Complete the checks in [Scenario 6](#broadcast-config) for your platform to ensure the campaign and payload are correct.
    * Verify that the `audience.id` in the API payload matches the campaign configuration.
-* **Profile Exists**: Confirm that the profile exists in AEP with valid `liveActivityPushNotificationDetails`.
+* **Profile exists:** Confirm that the profile exists in Adobe Experience Platform with valid push-token details. Follow the checks in [Scenario 1](#scenario-1-profile-or-push-token-issues). The details to look for depend on the platform:
+   * **iOS:** `liveActivityPushNotificationDetails` with a valid token.
+   * **Android:** `pushNotificationDetails` that includes the current FCM registration token, an `appId` matching the Android package name, `platform: "fcm"`, and `denylisted: false`.
+* **Topic subscription (Android only):** Confirm that the device is subscribed to the exact FCM topic specified in `topic_name`. Audience membership does not subscribe the device to the topic. Follow the Android topic-subscription checks in [Scenario 6](#broadcast-config).
 
 ### Debugging steps
 
@@ -1344,14 +1296,18 @@ First, confirm whether the profile that should receive the Live activity is actu
    * The profile does not meet the audience criteria or segment rules.
    * Review the audience definition to understand the membership requirements.
    * Update the profile data or audience definition to include the profile.
-   * Wait for audience evaluation to complete (see Step 2).
-1. **If profile is found in the audience:** Proceed to Step 2 to check data freshness.
+   * Wait for audience evaluation to complete (see step 2).
+1. **If profile is found in the audience:** Proceed to step 2 to check data freshness.
 
 +++
 
 +++ 2. Check audience evaluation type and schedule
 
-Identify whether the audience uses batch or streaming evaluation, as this determines data freshness.
+Identify whether the audience uses batch, streaming, or edge evaluation, as this determines data freshness.
+
+>[!NOTE]
+>
+>Audience evaluation does not register push tokens or subscribe Android devices to FCM topics. It only determines which profile data the audience snapshot contains.
 
 1. On the **Audience details** page, check the **Evaluation method**:
    * **Batch**: Evaluated once daily on a schedule.
@@ -1365,12 +1321,12 @@ Follow the appropriate troubleshooting steps based on the evaluation method:
 1. **Understand batch audience limitations:**
    * Batch audiences are evaluated once per day (typically overnight).
    * The audience snapshot may be up to 24 hours old.
-   * If a profile recently registered Live activity tokens, those tokens may not be in the current snapshot.
+   * If a profile recently registered or refreshed its push-token details (`liveActivityPushNotificationDetails` on iOS or `pushNotificationDetails` on Android), the updated details may not be in the current snapshot.
    * Updates to profiles will not be reflected until the next batch evaluation.
 
 1. **Check when last evaluation occurred:**
    * In the audience details, look for the **Last evaluation** timestamp.
-   * If the profile's `liveActivityPushNotificationDetails` were updated after this timestamp, the audience has stale data.
+   * If the profile's push-token details were updated after this timestamp, the audience snapshot does not include the current token.
 
 1. **Resolve stale data:**
    1. **Option 1: Wait for scheduled batch evaluation**
@@ -1401,103 +1357,13 @@ Follow the appropriate troubleshooting steps based on the evaluation method:
 1. **Resolve the issue:**
    * **For new profiles**: They automatically qualify if criteria are met. No action needed.
    * **For existing profiles without recent updates:**
-      * Make a minor update to the profile (e.g., update a timestamp field).
-      * This triggers streaming evaluation and adds the profile to the audience.
-      * Alternative: Use a batch audience or edge audience for existing profiles.
-
-+++
-
->[!TAB Android]
-
-**Pre-checks:**
-
-* **Campaign and Payload Validation**:
-   * Complete the Android checks in [Scenario 6](#broadcast-config) to ensure the campaign and payload are correct.
-   * Verify that the `audience.id` in the API payload matches the campaign configuration.
-* **Profile Exists**: Confirm that the profile exists in AEP with valid `pushNotificationDetails`, including the current FCM registration token, an `appId` matching the Android package name, `platform: "fcm"`, and `denylisted: false`. Follow the Android checks in [Scenario 1](#scenario-1-profile-or-push-token-issues).
-* **Topic Subscription**: Confirm that the device is subscribed to the exact FCM topic specified in `topic_name`. Audience membership does not subscribe the device to the topic. Follow the Android topic-subscription checks in [Scenario 6](#broadcast-config).
-
-### Debugging steps
-
-+++ 1. Verify profile is in audience
-
-First, confirm whether the profile associated with the Android device is actually part of the audience.
-
-1. Navigate to **Audiences** in Adobe Experience Platform.
-1. Search for and open the audience using the `audience.id` from your campaign.
-1. Click **Browse** or **Sample profiles** to view audience members.
-1. Search for your test profile using the namespace and identity value.
-1. **If profile is not found in the audience:**
-   * The profile does not meet the audience criteria or segment rules.
-   * Review the audience definition to understand the membership requirements.
-   * Update the profile data or audience definition to include the profile.
-   * Wait for audience evaluation to complete (see Step 2).
-1. **If profile is found in the audience:** Proceed to Step 2 to check data freshness.
-
-+++
-
-+++ 2. Check audience evaluation type and schedule
-
-Identify whether the audience uses batch, streaming, or edge evaluation, as this determines data freshness. Audience evaluation does not register FCM tokens or subscribe devices to topics.
-
-1. On the **Audience details** page, check the **Evaluation method**:
-   * **Batch**: Evaluated once daily on a schedule.
-   * **Streaming**: Evaluated in real-time when profile updates occur.
-   * **Edge**: Evaluated at edge locations in real-time.
-
-Follow the appropriate troubleshooting steps based on the evaluation method:
-
-**If the audience uses Batch evaluation:**
-
-1. **Understand batch audience limitations:**
-   * Batch audiences are evaluated once per day (typically overnight).
-   * The audience snapshot may be up to 24 hours old.
-   * If a profile recently registered or refreshed its FCM registration token, the updated `pushNotificationDetails` may not be in the current snapshot.
-   * Updates to profiles will not be reflected until the next batch evaluation.
-
-1. **Check when last evaluation occurred:**
-   * In the audience details, look for the **Last evaluation** timestamp.
-   * If the profile's `pushNotificationDetails` were updated after this timestamp, the audience snapshot may not include the current FCM registration token.
-
-1. **Resolve stale data:**
-   1. **Option 1: Wait for scheduled batch evaluation**
-      * The next batch evaluation will include the updated profile data.
-      * This happens automatically once per day.
-      * Best for non-urgent scenarios.
-
-   1. **Option 2: Trigger on-demand audience evaluation**
-      1. Navigate to **Audiences** in AEP.
-      1. Select your audience.
-      1. Click **Evaluate now** or **Activate on demand**.
-      1. Wait for evaluation to complete (this can take several minutes to hours depending on audience size).
-      1. Verify that the profile now has updated data in the audience snapshot.
-      1. Retry the broadcast API call.
-
-**If the audience uses Streaming evaluation:**
-
-1. **Understand streaming audience behavior:**
-   * Streaming audiences evaluate in real-time when profile updates occur.
-   * **New profiles**: Qualify shortly after creation if they meet segment criteria.
-   * **Updated profiles**: Qualify or disqualify shortly after being updated.
-   * **Existing unchanged profiles**: Are not re-evaluated unless an update occurs.
-
-1. **Identify the issue:**
-   * If a profile already exists and meets the segment criteria, but no update occurs on that profile, it may not be added to a newly created streaming audience.
-   * The profile must receive an update (any attribute change) to trigger re-evaluation.
-
-1. **Resolve the issue:**
-   * **For new profiles**: They automatically qualify if criteria are met. No action needed.
-   * **For existing profiles without recent updates:**
-      * Make a minor update to the profile (e.g., update a timestamp field).
+      * Make a minor update to the profile (for example, update a timestamp field).
       * This triggers streaming evaluation and adds the profile to the audience.
       * Alternative: Use a batch audience or edge audience for existing profiles.
 
 +++
 
 
->[!ENDTABS]
-
- 
 ## Advanced: Debugging via dataset queries {#advanced-debugging-via-dataset-queries}
 
 >[!NOTE]
@@ -1514,17 +1380,17 @@ Follow the appropriate troubleshooting steps based on the evaluation method:
 
 >[!ENDSHADEBOX]
 
-## Locating the dataset
+### Locating the dataset
 
-1. In Journey Optimizer navigate to **Data Management** `>` **Datasets**.
+1. In Journey Optimizer, navigate to **Data Management** `>` **Datasets**.
 
 1. Enable the **Show system datasets** toggle, and open **AJO Message Feedback Event Dataset**. 
 
-Note the exact table name shown on the detail page. The queries below use `ajo_message_feedback_event_dataset`,  replace it with your actual table name if it differs.
+Note the exact table name shown on the detail page. The queries below use `ajo_message_feedback_event_dataset`. Replace it with your actual table name if it differs.
 
-## Query by Live Activity ID
+### Query by Live activity ID
 
-Use this when you know the Live Activity ID (for example, an order UUID or shipment tracking ID) and want every feedback event tied to it across the full lifecycle.
+Use this when you know the Live activity ID (for example, an order UUID or shipment tracking ID) and want every feedback event tied to it across the full lifecycle.
 
 ```sql
 SELECT
@@ -1550,7 +1416,7 @@ WHERE
 ORDER BY timestamp ASC
 ```
 
-## Query by ECID
+### Query by ECID
 
 Use this when the affected profile's ECID is known. Replace `<YOUR_ECID>` with the ECID value retrieved from the profile.
 
@@ -1579,10 +1445,9 @@ ORDER BY timestamp ASC
 >
 > `identityMap` is a structured MAP type, not a string. Use the array and struct accessor syntax shown above. String functions such as `LIKE` will return a `DATATYPE_MISMATCH` error.
 >
-></br>
 > The Message Feedback Event Dataset stores only ECID in its `identityMap`. If the affected profile is identified by a custom namespace rather than ECID, resolve the ECID first: navigate to **Profiles** in AEP, search for the profile using the custom namespace and identity value, and retrieve the ECID from the profile's identity details. Use that ECID value in the query above.
 
-## feedbackStatus values
+### feedbackStatus values
 
 | Value | Meaning |
 |-------|---------|
@@ -1598,18 +1463,16 @@ ORDER BY timestamp ASC
 >
 > For `la_event` field, the dataset records `remotestart`, not `start`, for initial delivery events. Filter accordingly when querying by event type.
 
-## Interpreting the sent status {#interpreting-the-sent-status}
+### Interpreting the sent status {#interpreting-the-sent-status}
 
 >[!IMPORTANT]
 >
 >The 8-hour Live activity duration limit applies to iOS only, not Android.
 
-
 A `feedbackStatus` of `sent` confirms that Journey Optimizer successfully handed the notification to the push provider (APNs on iOS, FCM on Android). It does **not** confirm that the Live activity was rendered on the device.
 
-The dataset does not confirm device rendering after hand-off to the push provider. Device-side failures, such as an OS restriction, a network drop between the provider and the device, or the 8-hour Live activity duration limit being reached on iOS, are not observable from the dataset. This duration limit does not apply to Android.
+The dataset does not confirm device rendering after hand-off to the push provider. Device-side failures, such as an OS restriction, a network drop between the provider and the device, or the 8-hour Live activity duration limit being reached on iOS, are not observable from the dataset.
 
 If `feedbackStatus` is `sent` but no Live activity appears on the device, investigate behavior outside the Journey Optimizer delivery pipeline. Use Assurance or app-level logging, including `logcat` on Android, to diagnose device-side behavior.
 
 {{$include /help/_includes/do-not-localize/mobile-live/ai-augmented-troubleshoot-mobile-live.md}}
-
