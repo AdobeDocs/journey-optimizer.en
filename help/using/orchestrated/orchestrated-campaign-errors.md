@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Orchestrated campaign errors
 description: Learn what common errors mean when you build, test, schedule, and publish Orchestrated campaigns in Adobe Journey Optimizer, and how to fix them
-feature: Orchestrated campaigns, Monitoring
+feature: Campaigns, Monitoring
 topic: Content Management
 role: User
 level: Intermediate

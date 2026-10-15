@@ -3,7 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Relational schema and dataset errors
 description: Learn what common errors mean when you create relational schemas and enable datasets for Orchestrated campaigns in Adobe Journey Optimizer, and how to fix them
-feature: Orchestrated campaigns, Monitoring
+feature: Data Model, Datasets
 topic: Content Management
 role: User
 level: Intermediate
