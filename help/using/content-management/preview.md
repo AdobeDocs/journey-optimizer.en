@@ -53,6 +53,10 @@ Once [test profiles](test-profiles.md) have been selected, you can preview your 
 
     ![](../email/assets/preview-test-profile.png)
 
+    >[!NOTE]
+    >
+    >If some navigation buttons are not visible in the preview pane, collapse the test profile selection pane to free up space and display them all.
+
 1. Select other test profiles to preview your email for each variant of your message.
 
     >[!NOTE]

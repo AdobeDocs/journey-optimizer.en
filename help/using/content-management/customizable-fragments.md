@@ -117,7 +117,7 @@ However, if you created fragments and defined editable fields before the rich-te
 
 * A compatibility warning is displayed in the fragment editor.
 
-    ![](assets/fragment-custom-compatibility.png)
+    ![](assets/fragment-custom-compatibility.png){width="100%"}
 
     To unlock rich-text mode for these editable fields when using the fragment in an email, click the **Enable** button and save the fragment.
 
@@ -128,6 +128,10 @@ However, if you created fragments and defined editable fields before the rich-te
     To upgrade the fragment to rich-text mode, use the **Open fragment** button to access the fragment editor and click the **Enable** button and save the fragment.
 
 Until the rich-text mode is unlocked, the legacy customizable visual fragments continue to support plain text only. Users cannot enter rich text into the editable fields of these fragments.
+
+>[!CAUTION]
+>
+>Enabling rich text may cause styling loss in journeys, campaigns, or templates already using the fragment. To work around this, either correct the styling in the affected contents (email or template), or create a new fragment with rich text enabled, then replace the old fragment with the new one in your contents.
 
 ## Add editable fields to HTML components and expression fragments {#expression}
 
