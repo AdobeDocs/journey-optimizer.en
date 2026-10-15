@@ -94,10 +94,26 @@ For complete understanding, this information should be combined with the documen
 
 ## The sections, in order
 
-Six sections are required (skip one only if the page yields nothing for it). Two more are
-optional and appear after the FAQ **only when the docs state them**: Examples and Best practices.
+Six sections are required (skip one only if the page yields nothing for it). Six more are
+optional: add each one **only when the docs state the content** (page body or a recorded related
+page), and never pad a block to include them. Write sections in this order:
 
-Skip a section only if the page yields no meaningful content for it.
+1. TL;DR
+2. Intents
+3. Glossary
+4. Guardrails
+5. Prerequisites and permissions *(optional)*
+6. Applicability *(optional)*
+7. Terminology
+8. FAQ
+9. Troubleshooting *(optional)*
+10. Examples *(optional)*
+11. Best practices *(optional)*
+12. Related pages *(optional)*
+
+Each fact appears in one section only. If a fact fits two, keep it in the more specific one and
+do not repeat it (for example, a permission lives under Prerequisites and permissions, not also
+under Guardrails). The FAQ is the exception: its answers may restate a fact in one sentence.
 
 ### 1. TL;DR
 One sentence: what the page teaches or enables. `* **TL;DR:** [one sentence]`
@@ -116,7 +132,8 @@ page's exact term (for example `Simulate content`, `Simulate content (AEP profil
 substitute "synthetic profiles", "fake data", or "without real data" for any of them.
 
 ### 4. Guardrails
-Limits, prerequisites, permissions, constraints stated on the page.
+Limits and constraints stated on the page. Prerequisites and permissions go under their own
+section (below).
 
 - **Qualify every numeric limit** as `(hard limit)` or `(recommended)` — but **only** when the
   page uses enforcement wording (error / rejected / maximum / cannot exceed / only … supported)
@@ -129,7 +146,32 @@ Limits, prerequisites, permissions, constraints stated on the page.
 - **Do not infer** guardrails the page does not state. No meta-commentary ("the page does not
   specify …").
 
-### 5. Terminology
+### 5. Prerequisites and permissions (optional)
+What must be in place before the user can do what the page describes: required permissions or
+permission names, product add-ons or capabilities, and setup that must already exist. One bullet
+per item, with the page's exact names (permission names, add-on names, UI labels).
+
+- State a prerequisite only when the docs present it as required. Do not turn an optional step
+  or a recommendation into a prerequisite.
+- Keep each item's scope (channel, journeys vs campaigns, sandbox or organization level). Never
+  carry a permission or add-on from one feature or channel to another.
+- Do not guess which role or product edition grants a permission; name only what the docs name.
+
+### 6. Applicability (optional)
+Where the feature applies and where it does not. A short list or table covering only the
+dimensions the docs actually state: journeys vs campaigns vs orchestrated campaigns, channels,
+sandbox vs organization level, experiences (classic vs redesigned), and deprecated or legacy
+variants.
+
+- Each line says **applies** or **does not apply** and names the scope exactly as the docs do.
+- Only what the docs state. Absence from the docs is not "does not apply": leave the cell out
+  and report it under **Gaps found**.
+- A related-page fact must satisfy the cross-page safety rules (same scope, recorded in
+  `related:`).
+- Do not repeat the channel names or limits already given under Guardrails; point to the scope
+  only.
+
+### 7. Terminology
 Canonical names, acronyms, variants, synonyms, disambiguation.
 
 - **SMS / Mobile message:** write "Mobile message" for the channel and list SMS as a variant
@@ -145,18 +187,43 @@ Canonical names, acronyms, variants, synonyms, disambiguation.
 - **Status/lifecycle precision:** copy exact status labels from the page body; do not
   paraphrase. Use "Do not confuse" to separate statuses that share a root word.
 
-### 6. FAQ
+### 8. FAQ
 3–6 likely questions with short answers. Answers use the **same verbs and nouns as the page
 body**. Do not introduce "revert", "reset", or "roll back" unless the page uses them.
 
-### 7. Examples (optional)
+### 9. Troubleshooting (optional)
+Documented symptoms and error messages with their documented cause and resolution. One entry
+per item: the symptom or error label verbatim (for example
+`[!UICONTROL configuration doesn't exist]`), then the cause, then what the docs say to do.
+
+- Copy error strings, status values and UI labels exactly. Do not paraphrase an error label.
+- Give the cause and the fix only if the docs give them. If the docs list an error without a
+  cause, list the error and the documented context, and report the missing cause under
+  **Gaps found**. Never speculate about causes.
+- Resolution wording is limited to what the docs say; do not turn it into step-by-step
+  instructions (see "What NOT to include").
+
+### 10. Examples (optional)
 Concrete samples and use cases the docs give: a short scenario, a sample value or payload, a
 typical configuration. Keep each one short and exact, and name the feature it belongs to. Only
 what the page or a recorded related page states; never invent an example.
 
-### 8. Best practices (optional)
+### 11. Best practices (optional)
 Recommendations the docs give ("it is recommended", "for best performance", "we recommend"),
 each with its scope. Label them as recommendations, not as limits. Only what the docs state.
+
+### 12. Related pages (optional)
+Pages the reader should consult next, each with the situation in which to use it ("for X, see
+Y"). This guides retrieval to the right page.
+
+- Name each page by its link text on the page. When the link text is generic ("Learn more",
+  "this section"), use the target page's title and, if relevant, its section heading. Use the format `* <situation>: <page name> (<folder>/<page>.md)`.
+- Include only pages that the page body links to or that are recorded in the `related:` sync
+  comment. Do not add pages you only believe are relevant.
+- The situation must be stated or clearly implied by the page's own link context. Do not add
+  claims about what the target page contains beyond that.
+- Do not repeat comparisons already covered under "Do not confuse"; use this section for routing
+  only.
 
 ## What NOT to include
 
@@ -221,6 +288,8 @@ short pages. Correct any failure before writing, and log the correction in the r
 - Every numeric value matches the page body exactly; every limit qualifier is justified by the
   page's wording; no invented qualifier.
 - No glossary/FAQ detail imported from other pages or general knowledge.
+- Every optional section present (Prerequisites and permissions, Applicability, Troubleshooting,
+  Related pages) is stated in the docs; an optional section with no support is omitted, not filled.
 - No banned imprecise term unless verbatim on the page; no contractions.
 
 ## Post-generation checklist (gate 1, continued)
@@ -234,6 +303,13 @@ short pages. Correct any failure before writing, and log the correction in the r
 - [ ] Synonyms are true equivalents; contrasts are under "Do not confuse".
 - [ ] No banned words / no contractions (outside verbatim UI strings).
 - [ ] Glossary has no generic terms; FAQ introduces nothing absent from the page.
+- [ ] Optional sections appear in the specified order, each fact appears once, and no optional
+      section was added without documented support.
+- [ ] Prerequisites and permissions: names are exact, scope is kept, nothing optional is listed as
+      required.
+- [ ] Applicability: every "applies" / "does not apply" is stated in the docs.
+- [ ] Troubleshooting: error strings are verbatim and every cause or fix is documented.
+- [ ] Related pages: each is linked from the page or recorded in `related:`.
 
 Gate 1 is the author-of-the-block checking their own work. It does **not** replace the
 independent verification round (gate 2) in `verification-round.md`.

@@ -94,7 +94,10 @@ hash with `scripts/refresh-hash.sh <page.md>` only after the block has been veri
 Follow `references/generation-spec.md` exactly for every page. Key invariants:
 
 - Two **fixed opening paragraphs**, verbatim, byte-for-byte (never paraphrased).
-- Sections in order: **TL;DR, Intents, Glossary, Guardrails, Terminology, FAQ**.
+- Six required sections in order: **TL;DR, Intents, Glossary, Guardrails, Terminology, FAQ**.
+  Six optional sections, added only when the docs state the content: **Prerequisites and
+  permissions, Applicability** (after Guardrails), **Troubleshooting** (after FAQ), **Examples,
+  Best practices, Related pages** (last). Full order and rules in `generation-spec.md`.
 - Every claim grounded in the page body only. No contractions. Qualify numbers as
   `(hard limit)` / `(recommended)` **only** when the page uses enforcement/recommendation
   wording; otherwise no qualifier. Use the page's exact validation-mode and status labels.
@@ -112,7 +115,7 @@ title: AI Knowledge Reference
 
 +++ AI Knowledge Reference
 
-[fixed opening paragraphs + the six sections]
+[fixed opening paragraphs + the required sections + any optional sections the docs support]
 
 +++
 
@@ -168,8 +171,10 @@ Report per page: created / updated / migrated / skipped (+ reason), the verifica
 
 Also include a **Gaps found** list per page: places where the page body itself leaves the AI
 without what it needs, for example an acronym used but never defined, a limit stated without
-its scope, a validation mode or status named but not explained, or two terms used
-interchangeably without saying so. This list is for the author to fix **in the page**. Also list any
+its scope, a validation mode or status named but not explained, two terms used
+interchangeably without saying so, a prerequisite or permission mentioned without its exact name,
+an error shown without its cause or fix, or a feature whose scope (journeys, campaigns, channels)
+is not stated. This list is for the author to fix **in the page**. Also list any
 **discrepancy** between the page and a related page, unclear statements, and missing guidelines.
 Never fill a gap by guessing: if neither the page nor a related page states the fact, the block
 does not either. If there are no gaps, say "none".
