@@ -91,6 +91,14 @@ To define an action and use the helper for personalization, follow these steps:
 
     ![](assets/external-data-personalization-result.png)
 
+## Lookup limit for inbound requests {#lookup-limit}
+
+An inbound message request supports a maximum of **10 lookups** of any kind. This limit includes all lookup types, such as external data lookups and dataset lookups, and applies to the whole request.
+
+If a request exceeds this limit, the **complete delivery request fails with an HTTP 422 error**. A partial response is not returned.
+
+To stay within the limit when designing inbound actions, consolidate or reduce your lookups. For example, if your content calls the same endpoint several times to retrieve different attributes, call it once and reuse the returned result, or use an endpoint that returns all the attributes you need in a single response.
+
 ## How it works
 
 ### Runtime Execution
