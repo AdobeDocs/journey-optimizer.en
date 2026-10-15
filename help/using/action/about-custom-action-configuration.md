@@ -226,9 +226,15 @@ Mutual TLS (mTLS) authentication is supported in custom actions. There is no add
 
 ### Certificate-based custom authentication {#certificate-based-auth}
 
-For enterprise APIs that enforce certificate-based identity verification — such as Microsoft Entra ID — custom actions support **Certificate-Based Custom Authentication**. To enable it, set `"subType": "certificateCredential"` in the custom authorization payload configured in the **[!UICONTROL Authentication]** section.
+For enterprise APIs that enforce certificate-based identity verification, such as Microsoft Entra ID, custom actions support **Certificate-Based Custom Authentication**. To enable it, set `"subType": "certificateCredential"` in the custom authorization payload configured in the **[!UICONTROL Authentication]** section.
 
-Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and automatically exchange it for an access token. No client secret is required.
+By default, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion with `RS256` and automatically exchange it for an access token. No client secret is required for this default option. Omitting `alg` or setting it to `RS256` preserves the existing RSA flow.
+
+>[!AVAILABILITY]
+>
+>HMAC-signed JWT authentication is available in Limited Availability.
+
+For identity providers that accept `client_secret_jwt`, set the optional `alg` payload field (`HS256`, `HS384`, or `HS512`) and add your OAuth `client_secret` to `body.bodyParams`. Journey Optimizer uses the secret to sign the assertion without sending it in the token request. No Adobe certificate registration is required. Any other value, including lowercase, is rejected when the authentication is tested or executed. See [HMAC configuration requirements](../datasource/external-data-sources.md#hmac-credential).
 
 For the full payload structure, field descriptions, and configuration guardrails, see [Certificate-based custom authentication](../datasource/external-data-sources.md#certificate-credential).
 
