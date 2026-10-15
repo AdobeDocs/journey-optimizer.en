@@ -36,6 +36,8 @@ For complete understanding, this information should be combined with the documen
 * Custom upload audience attribute enrichment is not supported in test mode
 * Events triggered in Test mode generate real experience events that can also trigger other journeys listening to the same event
 * In Test mode, Wait activities and event timeouts default to 10 seconds; reaction event timeout wait time has a minimum and default of 40 seconds
+* Test mode overrides the configured Wait and timeout durations with the Wait time value, so an event that is processed after the shortened timeout, such as an email open, sends the profile to the timeout path; increase the Wait time to fit the test scenario
+* Journey Simulation also overrides Wait durations, with the values defined in Test settings
 * Automatic deactivation — Journeys that remain inactive in test mode for over a week (hard limit) automatically exit test mode and return to Draft status. No journey content is lost; only the test mode session ends.
 * Journey edits are blocked while test mode is active, but direct publishing is allowed
 * At a split, the top branch is always selected; reorder branches to test different paths
@@ -55,9 +57,10 @@ For complete understanding, this information should be combined with the documen
 * **Q: How many test profiles can run in a single test session?** — A maximum of 100 test profiles per test session.
 * **Q: What happens when I disable test mode?** — All profiles currently in or previously entered in the journey are removed and reporting is cleared.
 * **Q: Can I edit a journey while test mode is active?** — No. The journey cannot be modified while test mode is active, but you can publish it directly without deactivating test mode first.
+* **Q: Why does my test profile go to the timeout path when the event would arrive in time in a live journey?** — Test mode shortens Wait and timeout durations to the Wait time value (10 seconds by default), so a slow event, such as an email open, can arrive after the shortened timeout. Increase the Wait time to fit your test scenario. Journey Simulation behaves the same way, with durations defined in Test settings.
 * **Q: Why are my test events being silently discarded?** — Events triggered outside the journey's configured active date/time window are silently discarded. Verify the journey start and end dates include the current time.
 * **Q: What does the phase field in the test log indicate?** — It shows the profile's current status: running (active in journey), finished (reached end), error (stopped due to error), or timed out (stopped due to timeout).
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: c837a70c -->
+<!-- ai-section-version: 2 | source-hash: b3ef254f -->
