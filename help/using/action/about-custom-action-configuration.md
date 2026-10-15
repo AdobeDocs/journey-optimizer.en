@@ -234,7 +234,7 @@ By default, Journey Optimizer uses Adobe's managed certificate to sign a JWT cli
 >
 >HMAC-signed JWT authentication is available in Limited Availability.
 
-For identity providers that accept `client_secret_jwt`, select HMAC signing with the optional `alg` payload field (`HS256`, `HS384`, or `HS512`) and add your OAuth `client_secret` to `body.bodyParams`. Journey Optimizer uses the secret to sign the assertion without sending it in the token request. No Adobe certificate registration is required. Other `alg` values are rejected. See [HMAC configuration requirements](../datasource/external-data-sources.md#hmac-credential).
+For identity providers that accept `client_secret_jwt`, set the optional `alg` payload field (`HS256`, `HS384`, or `HS512`) and add your OAuth `client_secret` to `body.bodyParams`. Journey Optimizer uses the secret to sign the assertion without sending it in the token request. No Adobe certificate registration is required. Any other value, including lowercase, is rejected when the authentication is tested or executed. See [HMAC configuration requirements](../datasource/external-data-sources.md#hmac-credential).
 
 For the full payload structure, field descriptions, and configuration guardrails, see [Certificate-based custom authentication](../datasource/external-data-sources.md#certificate-credential).
 

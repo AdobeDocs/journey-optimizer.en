@@ -44,11 +44,11 @@ For complete understanding, this information should be combined with the documen
 * For certificate-based custom authentication, `scope` is a single space-separated string in `bodyParams`, maximum 1000 characters total (hard limit).
 * For RS256 only, you never upload or enter a certificate; before using the custom action in a live journey you must register Adobe's leaf certificate (not the intermediate or root CA) in your Identity Provider.
 * The Adobe certificate applies to the default RS256 (RSA) option; Adobe rotates it 60 days before expiry (certificate lifetime 13 months) and the previous certificate remains valid until 30 days before expiry; customers are not currently notified, so periodically call the mTLS Public Certificate API to check the `expiryDate`.
-* The optional `alg` field accepts `RS256` (default), `HS256`, `HS384`, and `HS512`. Omitting `alg` or setting it to `RS256` preserves the existing RSA flow; other values are rejected.
+* The optional `alg` field accepts `RS256` (default), `HS256`, `HS384`, and `HS512`. Omitting `alg` or setting it to `RS256` preserves the existing RSA flow; any other value, including lowercase, is rejected when the authentication is tested or executed.
 * HMAC-signed JWT authentication is available in Limited Availability.
 * HMAC signing requires `client_id` and `client_secret` in `body.bodyParams`, `subType: certificateCredential`, explicit `aud`, `method: POST`, and `bodyType: form`. Minimum secret lengths in UTF-8 bytes are 32 for HS256, 48 for HS384, and 64 for HS512. The identity provider client must accept `client_secret_jwt` with the same secret and algorithm.
 * For HMAC, Journey Optimizer does not send `client_secret` in the token request; it sends the other authored `bodyParams` plus `client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer` and `client_assertion`.
-* The HMAC JWT header includes `typ` and the selected `alg`, with no `x5t`; `aud` is a single-element array and `exp` is `iat` + 300 seconds. RS256 uses `iat` + 600 seconds.
+* The HMAC JWT header includes `typ` and the selected `alg`, with no `x5t`; `exp` is `iat` + 300 seconds. RS256 uses `iat` + 600 seconds.
 * When configuring custom authentication for a custom action, nested JSON objects (for example, sub-objects within `bodyParams`) are supported.
 
 **Terminology:**

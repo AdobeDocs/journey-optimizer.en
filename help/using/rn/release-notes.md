@@ -125,9 +125,9 @@ The following capability is coming to channels in this release.
 </tbody>
 </table>
 
-* **HMAC-signed JWT authentication for custom actions (Limited Availability)** - Custom authentication now supports HMAC-signed JWT client assertions alongside the existing RSA certificate-based flow. Existing configurations continue to use RS256 by default.
+* **HMAC-signed JWT authentication for custom actions (Limited Availability)** - Certificate-based custom authentication now supports JWT client assertions signed with your OAuth client secret (`HS256`, `HS384`, `HS512`; `client_secret_jwt`), as an alternative to Adobe's RSA certificate. Configurations without `alg` continue to use `RS256`.
 
-  This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access. [Learn more](../datasource/external-data-sources.md#hmac-credential)
+  This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access. Learn more in [Custom actions](../action/about-custom-action-configuration.md#certificate-based-auth) and [External data sources](../datasource/external-data-sources.md#hmac-credential).
 
   Availability date: October 13, 2026
 

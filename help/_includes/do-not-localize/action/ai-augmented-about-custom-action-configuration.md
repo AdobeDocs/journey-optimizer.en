@@ -46,7 +46,7 @@ For complete understanding, this information should be combined with the documen
 * Even with [!UICONTROL Allow NULL values] enabled, an integer array `[1, null, 2, 3]` is sent as `[1, 2, 3]`; if such an array is null, it is sent as an empty array.
 * Adobe periodically rotates the mTLS client certificate. Keep the endpoint's trust store updated, accept overlapping old and new certificates, and validate the certificate chain up to the Root CA (DigiCert) rather than pinning a specific leaf certificate fingerprint. Adobe does not currently send proactive rotation notifications; regularly check the Adobe Public Certificate API.
 * You should not target public endpoints with custom actions.
-* Omitting `alg` or setting it to `RS256` preserves the default RSA flow. HMAC signing accepts `HS256`, `HS384`, or `HS512`; other `alg` values are rejected.
+* Omitting `alg` or setting it to `RS256` preserves the default RSA flow. HMAC signing accepts `HS256`, `HS384`, or `HS512`; any other `alg` value, including lowercase, is rejected when the authentication is tested or executed.
 * HMAC-signed JWT authentication is available in Limited Availability.
 * HMAC signing requires an identity provider that accepts `client_secret_jwt` and an OAuth `client_secret` in `body.bodyParams`. Journey Optimizer uses the secret to sign the assertion but does not send it in the token request.
 
@@ -64,7 +64,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is the capping limit for custom actions?** — The default is 300,000 calls over one minute per host and per sandbox at the domain level, and it can be raised through the Capping or Throttling APIs. The sliding-window limits are 300,000 calls per minute per sandbox and per endpoint for response times less than 0.75 seconds, and 150,000 calls per 30 seconds for endpoints with response times greater than 0.75 seconds.
 * **Q: How is mutual TLS activated?** — No additional configuration is required in the custom action or journey; mTLS occurs automatically when an mTLS-enabled endpoint is detected.
 * **Q: Why is a custom action call routed to a different service?** — When an endpoint has a response time greater than 0.75 seconds, its calls are routed through a dedicated slow custom action service instead of the default service.
-* **Q: How do I select HMAC signing for a custom action?** - Set the optional `alg` field to `HS256`, `HS384`, or `HS512` in the custom authorization payload and add your OAuth `client_secret` to `body.bodyParams`. This is a payload field, not a separate UI control; no Adobe certificate registration is required.
+* **Q: How do I enable HMAC signing for a custom action?** - Set the optional `alg` field to `HS256`, `HS384`, or `HS512` in the custom authorization payload and add your OAuth `client_secret` to `body.bodyParams`. This is a payload field, not a separate UI control; no Adobe certificate registration is required.
 
 +++
 

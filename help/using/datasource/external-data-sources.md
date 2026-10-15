@@ -277,7 +277,7 @@ This option adds two mandatory fields to the standard `customAuthorization` sche
 
 * **`subType`**: Set to `"certificateCredential"` to activate certificate-based authentication.
 * **`aud`**: The audience value included in the JWT client assertion. For Microsoft Entra ID, this is the same as the `endpoint` URL, but it must always be explicitly set.
-* **`alg`** (optional): The JWT signing algorithm. Supported values are `RS256` (default), `HS256`, `HS384`, and `HS512`. When `alg` is absent or set to `RS256`, the existing RSA flow runs unchanged. Any other value is rejected. Configure this field in the custom authorization payload; there is no separate UI control for the signing algorithm.
+* **`alg`** (optional): The JWT signing algorithm. Supported values are `RS256` (default), `HS256`, `HS384`, and `HS512`. When `alg` is absent or set to `RS256`, the existing RSA flow runs unchanged. Any other value, including lowercase, is rejected when the authentication is tested or executed. Configure this field in the custom authorization payload; there is no separate UI control for the signing algorithm.
 
 The `client_assertion` and `client_assertion_type` fields are never authored by the user. They are automatically injected by the platform at runtime, immediately before the token endpoint call.
 
@@ -343,7 +343,7 @@ Payload:
 {
   "iss": "<client_id>",
   "sub": "<client_id>",
-  "aud": "<token endpoint URL>",
+  "aud": ["<aud value>"],
   "iat": "<current unix timestamp>",
   "exp": "<iat + 600 seconds>",
   "jti": "<unique UUID per request>"
@@ -458,6 +458,6 @@ HMAC requires the same fields as RS256: `"subType": "certificateCredential"`, an
 
 Journey Optimizer does **not** send `client_secret` to the token endpoint. It sends the other authored `bodyParams` and automatically adds `client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer` and `client_assertion`.
 
-The HMAC JWT uses `typ: JWT` and the selected `alg`, without `x5t`; `aud` is a single-element array and `exp` is `iat` + 300 seconds, compared with 600 seconds for RS256.
+The HMAC JWT uses `typ: JWT` and the selected `alg`, without `x5t`, and `exp` is `iat` + 300 seconds, compared with 600 seconds for RS256.
 
 {{$include /help/_includes/do-not-localize/datasource/ai-augmented-external-data-sources.md}}
