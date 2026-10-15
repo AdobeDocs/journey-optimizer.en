@@ -516,6 +516,7 @@ nudge: yes
     + [Get started with landing pages](using/landing-pages/get-started-lp.md)
     + [Create a landing page](using/landing-pages/create-lp.md)
     + [Manage your landing pages](using/landing-pages/manage-lp.md)
+    + {hide-from-toc} [Landing page errors](using/landing-pages/landing-page-errors.md)
     + Design content {#landing-pages-design}
       + [Design content](/help/rp_landing_pages/landing-pages-design-landing-page.md)
       + [About landing page design](using/landing-pages/design-lp.md)
