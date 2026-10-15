@@ -547,6 +547,7 @@ nudge: yes
     + [Customizable fragments](using/content-management/customizable-fragments.md)
     + [Dynamic fragments](using/content-management/dynamic-fragments.md)
     + [Manage fragments](using/content-management/manage-fragments.md)
+    + {hide-from-toc} [Fragments and AEM content errors](using/content-management/fragments-errors.md)
     + {hide-from-toc} [Add contextual attributes to published fragments](using/content-management/manage-fragments-contextual-attributes.md)
   + Dynamic content {#dynamic} 
     + [Dynamic content](/help/rp_landing_pages/dynamic-landing-page.md)
