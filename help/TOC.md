@@ -601,6 +601,7 @@ nudge: yes
     + [Create a language provider](using/content-management/multilingual-provider.md)
     + [Create multilingual content with manual translation](using/content-management/multilingual-manual.md)
     + [Create multilingual content with automated translation](using/content-management/multilingual-automated.md)
+    + {hide-from-toc} [Multilingual content errors](using/content-management/multilingual-errors.md)
   + Content optimization {#message-optimization}
     + [Get started with optimization](using/content-management/gs-message-optimization.md)
     + [Use targeting](using/content-management/optimization-targeting.md)
