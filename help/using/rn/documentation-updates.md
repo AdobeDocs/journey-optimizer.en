@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
+* The **Guardrails and limitations** page now documents the maximum of 10 lookups per inbound message request, including external data and dataset lookups. It explains that exceeding the limit fails the entire request with an HTTP 422 error and provides guidance to consolidate or reduce lookups. [Read more](../start/guardrails.md#inbound-guardrails)
+
 * The **Datasets Time-to-live (TTL) guardrails** and **Guardrails and limitations** pages now state that the TTL rollout to existing customer sandboxes has been delayed by Adobe (originally planned for October 1, 2026). The TTL page also links to the Experience Platform TTL guide for initiating a TTL update outside of this rollout. [Read more](../data/datasets-ttl.md)
 
 * A caution has been added to the **Customizable fragments** page to inform users that enabling rich text on a legacy customizable visual fragment may cause styling loss in journeys, campaigns, or templates already using it. [Read more](../content-management/customizable-fragments.md#rich-text-visual)
