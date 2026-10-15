@@ -965,6 +965,7 @@ nudge: yes
   + Delegate email subdomains {#delegate-subdomains}
     + [Get started with subdomain delegation](using/configuration/about-subdomain-delegation.md)
     + [Delegate a subdomain](using/configuration/delegate-subdomain.md)
+    + {hide-from-toc} [Subdomain delegation and DNS errors](using/configuration/subdomain-delegation-errors.md)
     + [Set up a custom subdomain](using/configuration/delegate-custom-subdomain.md)
     + [Migrate from CNAME to custom delegation](using/configuration/custom-subdomain-migration.md)
     + [Set up DMARC record](using/configuration/dmarc-record.md)
@@ -977,6 +978,7 @@ nudge: yes
     + [Create IP warmup campaigns](using/configuration/ip-warmup-campaign.md)
     + [Create an an IP warmup plan](using/configuration/ip-warmup-plan.md)
     + [Run the IP warmup plan](using/configuration/ip-warmup-execution.md)
+    + {hide-from-toc} [IP warmup plan errors](using/configuration/ip-warmup-plan-errors.md)
     + {hide-from-toc} [IP warmup plan files](using/configuration/ip-warmup-plan-files.md)
   + Monitor email addresses {#monitor-reputation}
     + {hide-from-toc} [Email error types](using/configuration/email-error-types.md)
