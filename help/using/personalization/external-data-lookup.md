@@ -51,6 +51,7 @@ Once the Action has been defined, it can be used both:
 
 Please refer to Custom Actions in [!DNL Journey Optimizer] Inbound Channels Campaigns and Journeys#GuardrailsandGuidelines as well.
 
+* **Maximum number of lookups** - An inbound message request supports a maximum of 10 lookups of any kind, including external data lookups. Exceeding this limit fails the entire request. [Learn more](../start/guardrails.md#inbound-guardrails)
 * **Default timeout** - By default, [!DNL Journey Optimizer] uses a timeout of 300ms when calling an external endpoint. Contact your Adobe representative to increase this timeout for an endpoint.
 * **Response schema browsing & expression validation** - In the personalization editor, you cannot browse the schema of the endpoint response when inserting expressions. [!DNL Journey Optimizer] does not validate references to JSON attributes from the response used in expressions.
 * **Supported data types for parameters** - The supported datatypes for payload variable parameters to be substituted via externalDataLookup helper are `String`, `Integer`, `Decimal`, `Boolean`, `listString`, `listInt`, `listInteger`, `listDecimal`.
@@ -90,14 +91,6 @@ To define an action and use the helper for personalization, follow these steps:
 1. Use the result variable to access the fetched data and insert it into the content for the inbound action. For example, here is how you might return a JSON array of items fetched from the endpoint.
 
     ![](assets/external-data-personalization-result.png)
-
-## Lookup limit for inbound requests {#lookup-limit}
-
-An inbound message request supports a maximum of **10 lookups** of any kind. This limit includes all lookup types, such as external data lookups and dataset lookups, and applies to the whole request.
-
-If a request exceeds this limit, the **complete delivery request fails with an HTTP 422 error**. A partial response is not returned.
-
-To stay within the limit when designing inbound actions, consolidate or reduce your lookups. For example, if your content calls the same endpoint several times to retrieve different attributes, call it once and reuse the returned result, or use an endpoint that returns all the attributes you need in a single response.
 
 ## How it works
 

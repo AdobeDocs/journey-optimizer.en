@@ -57,13 +57,11 @@ To create a channel configuration, follow these steps:
 
     ![](assets/preset-create.png)
 
-1. Enter a name and a description (optional) for the configuration, then select the Mobile channel.
+1. Enter a name and a description (optional) for the configuration, then select the Mobile channel. 
 
-    ![](assets/sms-create-surface.png)
+    Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
 
-    >[!NOTE]
-    >
-    > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
+    ![](assets/sms-create-surface.png) 
 
 1. Select the **[!UICONTROL SMS Type]** for this configuration:
 
@@ -82,11 +80,13 @@ To create a channel configuration, follow these steps:
 
 1. Enter the **[!UICONTROL Sender number]** ​you want to use for your communications.
 
+1. In the **[!UICONTROL Opt-out number]** field, specify the number to which profiles send their opt-out requests, for example by replying STOP. [!DNL Journey Optimizer] verifies the opt-out consent recorded for this number before a message is sent.
+
+    If this field is left blank, [!DNL Journey Optimizer] uses the **[!UICONTROL Sender number]** instead. Note that if the **[!UICONTROL Sender number]** is an alphanumeric sender ID, such as a brand name, you must specify the inbound phone number in the **[!UICONTROL Opt-out number]** field. Otherwise, opt-outs are not matched, and profiles who opted out may still receive messages.
+
 1. If you want to use the URL shortening function in your Mobile messages, select an item from the **[!UICONTROL Subdomain]** list.
 
-    >[!NOTE]
-    >
-    >To be able to select a subdomain, make sure you have previously configured at least one SMS/RCS/MMS subdomain. [Learn how](mobile-subdomains.md)
+    To be able to select a subdomain, make sure you have previously configured at least one SMS/RCS/MMS subdomain. [Learn how](mobile-subdomains.md)
 
 1. In the **[!UICONTROL Execution dimension]** section, use the **[!UICONTROL SMS Execution Field]** to select amongst the profile attributes the phone number that you want to use in priority if several numbers are available in the database. [Learn more](../configuration/primary-email-addresses.md#override-execution-address-channel-config)
 
@@ -111,9 +111,7 @@ To create a channel configuration, follow these steps:
 
 1. Once the channel configuration has been created, it displays in the list with the **[!UICONTROL Processing]** status.
 
-    >[!NOTE]
-    >
-    >If the checks are not successful, learn more on the possible failure reasons in [this section](../configuration/channel-surfaces.md).  
+    If the checks are not successful, learn more on the possible failure reasons in [this section](../configuration/channel-surfaces.md).  
 
 1. Once the checks are successful, the channel configuration gets the **[!UICONTROL Active]** status. It is ready to be used to deliver messages.
 
