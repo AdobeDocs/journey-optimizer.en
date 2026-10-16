@@ -43,8 +43,8 @@ Keep the following in mind when using Content Fragments from [!DNL Adobe Experie
     * There is no automatic language resolution or fallback between variations.
 
 * **Repository access**
-    * [!DNL Journey Optimizer] integrates with the [!DNL Adobe Experience Manager] **Publish** tier only (Sites, Content Fragments). Content Fragments are available through a public, unauthenticated endpoint.
-    * Author repositories may appear in the repository selector, but only fragments published to **Publish** can be used in [!DNL Journey Optimizer].
+    * [!DNL Journey Optimizer] integrates with the [!DNL Adobe Experience Manager] **Author** and **Publish** tiers (Sites, Content Fragments). [Learn more](aem-fragments-gs.md#aem-fragments)
+    * Only fragments in **[!UICONTROL Published]** or **[!UICONTROL Modified]** status can be used in [!DNL Journey Optimizer].
 
 * **Content Fragment status**
     * Fragments can show **[!UICONTROL Published]** or **[!UICONTROL Modified]** status; [!DNL Journey Optimizer] always uses the **latest published version**.
