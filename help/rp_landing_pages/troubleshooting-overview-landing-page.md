@@ -45,7 +45,7 @@ For the structure of error codes and the steps to take before you contact suppor
 
 Journeys
 
-Prefix AJOJAS. Errors raised when you validate, test or publish a journey.
+Errors raised when you validate, test or publish a journey.
 
 [View the error pages](#journeys)
 :::
@@ -55,7 +55,7 @@ Prefix AJOJAS. Errors raised when you validate, test or publish a journey.
 
 Campaigns and audiences
 
-Prefixes CJMCMP, CJMOC, CJMDMS and CJMRT 15xxxx and 17xxxx. Errors on Action, API-triggered and Orchestrated campaigns, on relational schemas and datasets, and on audience composition.
+Errors on Action, API-triggered and Orchestrated campaigns, on relational schemas and datasets, and on audience composition.
 
 [View the error pages](#campaigns-and-audiences)
 :::
@@ -65,7 +65,7 @@ Prefixes CJMCMP, CJMOC, CJMDMS and CJMRT 15xxxx and 17xxxx. Errors on Action, AP
 
 Content authoring and personalization
 
-Prefixes CJMMAS 10xx and 2xxx, CJMRT 030xxx, CJMTL, JOMAL, CJMPTS, AJOTDS and CJMSAS. Errors on the content of messages, on expressions and helpers, and on proofs and simulated users.
+Errors on the content of messages, on expressions and helpers, and on proofs and simulated users.
 
 [View the error pages](#content-authoring-and-personalization)
 :::
@@ -75,7 +75,7 @@ Prefixes CJMMAS 10xx and 2xxx, CJMRT 030xxx, CJMTL, JOMAL, CJMPTS, AJOTDS and CJ
 
 Fragments, multilingual content and landing pages
 
-Prefixes CJMMAS 11xx to 17xx, 3xxx, 51xx and 81xx, AJOCBS, AJOAGS, AJOCTO and CJMRT 0809xx. Errors on fragments and AEM content, translation, and landing pages.
+Errors on fragments and AEM content, translation, and landing pages.
 
 [View the error pages](#fragments-multilingual-content-and-landing-pages)
 :::
@@ -85,7 +85,7 @@ Prefixes CJMMAS 11xx to 17xx, 3xxx, 51xx and 81xx, AJOCBS, AJOAGS, AJOCTO and CJ
 
 Deliverability setup
 
-Prefixes CJMRT 0806xx, 0808xx and 18xxxx. Errors on subdomain delegation, DNS records, seed lists and IP warmup plans.
+Errors on subdomain delegation, DNS records, seed lists and IP warmup plans.
 
 [View the error pages](#deliverability-setup)
 :::
@@ -95,7 +95,7 @@ Prefixes CJMRT 0806xx, 0808xx and 18xxxx. Errors on subdomain delegation, DNS re
 
 Custom channels, inbound actions and reporting
 
-Prefixes CJMIAS, CJMRPS and CJMRT 0817xx. Errors on custom channel credentials, inbound actions and reporting datasets.
+Errors on custom channel credentials, inbound actions and reporting datasets.
 
 [View the error pages](#custom-channels-inbound-actions-and-reporting)
 :::
