@@ -347,7 +347,7 @@ This section covers guardrails for audience management, profile handling, and en
 
 ### Audience and profile guardrails {#audience}
 
-* You can publish up to **10 audience compositions** in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
+* You can publish up to **50 audience compositions** in a given sandbox. Compositions created with [Federated audience composition](../audience/federated-audience-composition.md) are not counted. If you have reached this threshold, you need to delete a composition to free up space and publish a new one. See also the [Experience Platform guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"}.
 
     Learn more about audience compositions on [this page](../audience/get-started-audience-orchestration.md).
 

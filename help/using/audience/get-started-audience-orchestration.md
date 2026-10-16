@@ -185,7 +185,7 @@ To create a composition workflow, follow these steps:
 
     >[!IMPORTANT]
     >
-    >You can publish up to 10 compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
+    >You can publish up to 50 compositions in a given sandbox. Compositions created with [Federated audience composition](federated-audience-composition.md) are not counted. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
  
     If any error occurs during publishing, alerts will display with information on how to resolve the issue.
 
