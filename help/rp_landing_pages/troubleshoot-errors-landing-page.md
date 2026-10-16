@@ -31,11 +31,11 @@ For the structure of error codes and the steps to take before you contact suppor
 | Error code prefix | Feature | Page |
 | --- | --- | --- |
 | AJOJAS | Journeys: validation before test or publication | [Journey validation errors](../using/building-journeys/journey-validation-errors.md) |
-| CJMCMP | Action and API-triggered campaigns | [Campaign errors](../using/campaigns/campaign-errors.md) |
+| CJMCMP, CJMRT 15xxxx | Action and API-triggered campaigns, including schedules | [Campaign errors](../using/campaigns/campaign-errors.md) |
 | CJMOC | Orchestrated campaigns | [Orchestrated campaign errors](../using/orchestrated/orchestrated-campaign-errors.md) |
 | CJMDMS | Relational schemas and datasets | [Relational schema and dataset errors](../using/orchestrated/relational-schema-errors.md) |
 | CJMRT 17xxxx | Audience composition | [Audience composition errors](../using/audience/audience-composition-errors.md) |
-| CJMMAS 2xxx, CJMRT 030xxx | Content of emails, push notifications, SMS, in-app messages, and direct mail | [Content authoring errors](../using/content-management/content-authoring-errors.md) |
+| CJMMAS 10xx and 2xxx, CJMRT 030xxx, JOMAL | Content of emails, push notifications, SMS, in-app messages, and direct mail, including message lifecycle and permissions | [Content authoring errors](../using/content-management/content-authoring-errors.md) |
 | CJMMAS 11xx to 17xx and 81xx, AJOCBS, AJOAGS | Fragments, AEM content fragments, and AEM assets | [Fragments and AEM content errors](../using/content-management/fragments-errors.md) |
 | CJMMAS 51xx, CJMRT 0809xx, AJOCTO | Multilingual content and translation | [Multilingual content errors](../using/content-management/multilingual-errors.md) |
 | CJMMAS 3xxx, 107x, and 130x | Landing pages | [Landing page errors](../using/landing-pages/landing-page-errors.md) |
