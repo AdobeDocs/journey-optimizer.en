@@ -230,7 +230,7 @@ Include as much detail as you can from the debugging steps, such as:
 
 ## Scenario 2: The user is still receiving the inbound content {#scenario-2}
 
-This scenario is the reverse of [Scenario 1](#scenario-1): the profile has exited the journey, but the user is still receving the inbound content.
+This scenario is the reverse of [Scenario 1](#scenario-1): the profile has exited the journey, but the user is still receiving the inbound content.
 
 However, when a profile exits a journey, it should no longer qualify for the **joai** audience segments corresponding to the inbound actions in the journey.
 

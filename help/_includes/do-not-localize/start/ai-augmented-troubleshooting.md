@@ -26,7 +26,7 @@ For complete understanding, this information should be combined with the documen
 * **Suppression list**: The list to which addresses are automatically added after hard bounces, spam complaints, or manual additions; once suppressed, a profile does not receive messages from that channel *(product-specific)*
 * **Quiet hours**: Time-based exclusion rules configured within a Channel rule set that define a blackout window during which messages are held until the next allowed window or discarded *(product-specific)*
 * **Simulation**: The tool in Experience Decisioning used to test offer responses against a specific profile without sending live traffic *(product-specific)*
-* **Test mode**: The mode used to verify journey event functionality; the multilingual validation error prevents journeys from being set to Test mode or Published *(product-specific)*
+* **Test mode**: The mode in which to verify functionality when an event does not trigger the intended journey; the multilingual Message Validation Error (CJMMAS - 1069-500) prevents journeys from being set to Test mode or Published *(product-specific)*
 * **Adobe Experience Platform Assurance**: The tool used to inspect live SDK events and verify decision requests and tracking calls *(product-specific)*
 
 **Guardrails:**
@@ -41,9 +41,9 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Troubleshooting FAQ — Acronym: n/a — variants: troubleshooting articles
+* Canonical name: Troubleshooting FAQ — variants: troubleshooting articles
 * Synonyms: "Data Collection Core Service" = "DCCS"; "Domain-based Message Authentication, Reporting, and Conformance" = "DMARC"
-* Do not confuse: "Simulation" (Experience Decisioning tool to test offer responses against a profile without sending live traffic) ≠ "Test mode" (used to verify journey event functionality and gate multilingual publishing)
+* Do not confuse: "Simulation" (Experience Decisioning tool to test offer responses against a specific profile without sending live traffic) ≠ "Test mode" (journey mode named on the page for verifying functionality of an event that does not trigger a journey)
 * Do not confuse: "Exclusions" (counts all exclusion events, including duplicates for the same profile) ≠ "unique profile exclusions"
 
 **FAQ:**
@@ -51,10 +51,22 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why are transactional SMS not delivered after a recipient replied STOP?** — Replying STOP blocks all future messages from that short number, including transactional ones; send transactional SMS through a separate short number that recipients have not opted out from.
 * **Q: What does a 429 Too Many Requests error mean, and how do I resolve it?** — It means your integration exceeded the API rate limit; implement exponential backoff and wait for the duration in the Retry-After response header before retrying.
 * **Q: Why is a dataset not being enabled for Real-time Customer Profile?** — The XDM schema must have Profile enabled and the dataset must be toggled on for Real-time Customer Profile, and the dataset must contain at least one identity field mapped to a recognized namespace.
-* **Q: Why are my WhatsApp messages not being sent?** — Delivery requires the recipient to have explicitly opted in and the message to use a pre-approved template registered with the WhatsApp Business API; if either condition is not met, the message is silently blocked.
-* **Q: Why has the Engageable Profiles count increased significantly?** — It can result from journeys or campaigns targeting large audiences that have not been engaged recently, or from changes in datasets enabled for Profile Service.
+* **Q: Why are my WhatsApp messages not being sent?** — Delivery requires the recipient to have explicitly opted in and the message to use a pre-approved template registered with the WhatsApp Business API; if either condition is not met, the message is silently blocked by the WhatsApp platform before delivery.
+* **Q: Why has the Engageable Profiles count increased significantly?** — It can result from journeys or campaigns targeting large audiences that have not been engaged in the past 12 months, or from changes in datasets enabled for Profile Service.
 * **Q: What information should I include in a support ticket?** — Include environment details, impact level, replication steps, logs or screenshots, and relevant IDs.
+
+**Examples:**
+
+* Delivered + Exclusions exceeding the targeted audience in campaign reports: a campaign targeting 94,000 profiles shows 69,000 delivered and 37,000 exclusions, totaling 106,000, which exceeds the 94,000 targeted profiles; the page states this is expected behavior.
+
+**Related pages:**
+
+* Journey troubleshooting: Troubleshoot errors before testing your journey (building-journeys/troubleshooting.md)
+* Troubleshooting inbound actions in journeys: Troubleshoot inbound actions in journeys (building-journeys/troubleshooting-inbound.md)
+* Troubleshooting live journey execution: Troubleshoot your live journey execution (building-journeys/troubleshooting-execution.md)
+* Troubleshooting custom actions: Troubleshoot custom actions (action/troubleshoot-custom-action.md)
+* What to include in support tickets: Learn what to include in support tickets, in Navigate the interface (start/user-interface.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 95fbf8d4 -->
+<!-- ai-section-version: 2 | source-hash: 8c5176da -->

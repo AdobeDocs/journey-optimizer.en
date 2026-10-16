@@ -389,7 +389,7 @@ For Journeys, refer to the following troubleshooting sections:
 * [Troubleshoot errors before testing your journey](../building-journeys/troubleshooting.md) 
 * [Troubleshoot inbound actions in journeys](../building-journeys/troubleshooting-inbound.md) 
 * [Troubleshoot your live journey execution](../building-journeys/troubleshooting-execution.md) 
-* [Troubleshoot custom actions](../action/troubleshoot-custom-action.md)
+* [Troubleshoot your custom actions](../action/troubleshoot-custom-action.md)
 
 
 +++ Why are expressions lost when creating a new journey version?  

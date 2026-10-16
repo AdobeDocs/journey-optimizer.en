@@ -63,7 +63,7 @@ As an administrator, use the **[!UICONTROL Send test request]** capability to va
 
 ![](assets/send-test-request.png){width="70%"}
 
-Use this capability streamlines the testing and validation process, ensuring that custom actions function correctly in live journeys.
+This capability streamlines the testing and validation process, ensuring that custom actions function correctly in live journeys.
 
 >[!NOTE]
 >

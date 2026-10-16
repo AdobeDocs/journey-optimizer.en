@@ -14,40 +14,53 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 
 * Identify which AJO service generated an error using the service prefix in the error code
-* Diagnose and resolve push/transport errors (CJMPTS) affecting message delivery
-* Troubleshoot journey runtime and API errors (CJMRT) during journey execution or event processing
-* Fix message authoring errors (CJMMAS) when creating, saving, or publishing messages
-* Resolve campaign errors (CJMCMP) during campaign activation or approval
+* Diagnose and resolve push and transport service errors (CJMPTS) that occur during push notification delivery and message transport operations
+* Troubleshoot Journey Runtime and API errors (CJMRT) that occur during journey execution, event processing, and API operations
+* Fix message authoring service errors (CJMMAS) that occur when creating, editing, or publishing messages, presets, and content
+* Resolve campaign errors (CJMCMP) that occur during campaign creation, configuration, and activation
 * Escalate persistent errors to Adobe Support with the correct information
 
 **Glossary:**
 
-* **Service prefix**: The alphanumeric code at the start of an AJO error code that identifies which service generated the error (e.g., CJMRT = Journey Runtime) *(product-specific)*
-* **HTTP status code**: The standard status code embedded in an AJO error code (e.g., 400 = Bad Request, 403 = Forbidden, 422 = Unprocessable Entity, 500 = Internal Server Error)
-* **Request ID**: A unique identifier accompanying an error that is required when escalating to Adobe Support *(product-specific)*
-* **CJMRT**: Journey Runtime service prefix — errors during journey execution and API operations *(product-specific)*
-* **CJMMAS**: Message Authoring Service prefix — errors during message creation and publishing *(product-specific)*
-* **CJMPTS**: Push/Transport Service prefix — errors during push notification and message transport *(product-specific)*
+* **Service prefix**: The part of an AJO error code that indicates which Adobe Journey Optimizer service generated the error (for example, CJMRT = Journey Runtime) *(product-specific)*
+* **Error number**: The part of an AJO error code that is the unique identifier for the specific error condition *(product-specific)*
+* **HTTP status code**: The standard HTTP status code that ends an AJO error code (for example, 400, 403, 422, 500)
+* **Request ID**: An identifier that can accompany an error; the page says to note it with the complete error code because it is essential for troubleshooting and support escalation *(product-specific)*
+* **CJMPTS**: Push/Transport Service prefix, for errors during push notification delivery and message transport operations *(product-specific)*
+* **CJMRT**: Journey Runtime prefix, for errors during journey execution, event processing, and API operations *(product-specific)*
+* **CJMMAS**: Message Authoring Service prefix, for errors when creating, editing, or publishing messages, presets, and content *(product-specific)*
+* **CJMCMP**: Campaign prefix, for errors during campaign creation, configuration, and activation *(product-specific)*
+* **CJMTL**: Transport Layer prefix, for errors during message transport and delivery operations *(product-specific)*
+* **CJMRPS**: Reporting/Provisioning Service prefix, for errors during reporting configuration and dataset provisioning operations *(product-specific)*
 
 **Guardrails:**
 
-* Email variants must include an opt-out/unsubscribe link; omitting it triggers CJMMAS-2001-200.
-* Stopping a journey requires the Manage journeys permission (relevant to CJMRT errors involving permissions).
-* DNS propagation for subdomain delegation can take up to 72 hours (relevant to CJMRT-080608-400).
-* Lookup keys for dataset lookup activities must be defined in advanced mode, not simple mode.
+* Email variants must include an opt-out/unsubscribe link; a missing link produces CJMMAS-2001-200 (success status with an error banner).
+* DNS propagation can take up to 72 hours; the page lists this as the time to allow for CJMRT-080608-400.
 
 **Terminology:**
 
-* Canonical name: Error code — Acronym: n/a — variants: error message, error identifier
-* Synonyms: "service prefix" = "error prefix" = "component identifier"
-* Do not confuse: "400 Bad Request" ≠ "422 Unprocessable Entity" — 400 indicates malformed input; 422 indicates valid format but invalid content per schema rules
+* Canonical name: Error code — variants: error number (the unique identifier part of the code)
+* Do not confuse: CJMPTS (Push/Transport Service) ≠ CJMTL (Transport Layer) — they are separate service prefixes with separate error sections
+* Do not confuse: "400 (Bad Request)" ≠ "422 (Unprocessable Entity)" — the page advises to review input data and configuration for 400, and to validate data against schema requirements for 422
 
 **FAQ:**
 
-* **Q: How do I know which AJO service caused an error?** — Read the service prefix at the start of the error code: CJMPTS (push/transport), CJMRT (journey runtime), CJMMAS (message authoring), CJMCMP (campaign), CJMTL (transport layer), CJMRPS (reporting/provisioning).
-* **Q: What should I do when I get a 500-series error?** — Retry after a few minutes, check Adobe Status for outages, then escalate to Adobe Support with the full error code and request ID if the issue persists.
-* **Q: Why does CJMMAS-2001-200 show an error banner even though the status is "success"?** — A required opt-out/unsubscribe link is missing from an email variant; add it to all variants and language versions.
-* **Q: What information should I gather before contacting Adobe Support?** — Collect the complete error code, request ID, timestamps, steps to reproduce, and any relevant configuration details.
-* **Q: What causes CJMRT-030012-422?** — Invalid input data such as referencing a non-existent audience, event, or attribute; verify all referenced objects exist and are active.
+* **Q: How do I know which AJO service caused an error?** — Read the service prefix at the start of the error code: CJMPTS (Push/Transport Service), CJMRT (Journey Runtime), CJMMAS (Message Authoring Service), CJMCMP (Campaign), CJMTL (Transport Layer), CJMRPS (Reporting/Provisioning Service).
+* **Q: What should I do when I get a 500-series error?** — Retry after a short delay. If the error persists after following the resolution steps, contact Adobe Support with the complete error code, request ID (if available), steps to reproduce, and relevant configuration details.
+* **Q: Why does CJMMAS-2001-200 show an error banner even though the status is "success"?** — A required unsubscribe link is missing in an email variant; add the opt-out/unsubscribe link to all email variants and ensure it is present in every language version.
+* **Q: What information should I gather before contacting Adobe Support?** — Collect the error code, request ID, timestamps, and steps to reproduce.
+* **Q: What causes CJMRT-030012-422?** — Invalid input data (for example, a nonexistent audience, event, or attribute); verify that referenced objects (audiences, datasets) exist and are active.
+
+**Related pages:**
+
+* Troubleshooting errors before testing or publishing a journey: Troubleshoot errors before testing or publishing your journey (building-journeys/troubleshooting.md)
+* Troubleshooting a live journey execution: Troubleshoot your live journey execution (building-journeys/troubleshooting-execution.md)
+* Troubleshooting inbound actions: Troubleshoot inbound actions in journeys (building-journeys/troubleshooting-inbound.md)
+* Troubleshooting custom actions: Troubleshoot your custom actions (action/troubleshoot-custom-action.md)
+* Journey questions: Journey Orchestration - Frequently Asked Questions (building-journeys/journey-faq.md)
+* Limits and constraints: Journey Optimizer guardrails and limitations (start/guardrails.md)
 
 +++
+
+<!-- ai-section-version: 1 | source-hash: 2696b3f6 -->
