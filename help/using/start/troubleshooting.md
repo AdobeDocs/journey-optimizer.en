@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Journey Optimizer troubleshooting articles
+title: Troubleshooting FAQ
 description: Journey Optimizer troubleshooting articles
 feature: Get Started, Monitoring
 role: User
