@@ -28,7 +28,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* You can publish up to 10 compositions in a given sandbox (hard limit); if you reach this threshold you must delete a composition to free up space before publishing a new one.
+* You can publish up to 50 compositions in a given sandbox (hard limit); compositions created with Federated audience composition are not counted; if you reach this threshold you must delete a composition to free up space before publishing a new one.
 * Audiences from audience composition are executed daily, so you may need to wait up to 24 hours before using them in Journey Optimizer.
 * Enriched attributes in audience composition audiences are as fresh as the last composition run, which can be up to 24 hours in the past.
 * The use of audiences and attributes from audience composition is currently unavailable with Healthcare Shield or Privacy and Security Shield.
@@ -45,11 +45,11 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: How do I create a new audience with audience composition?** — Access the Audiences menu, select Create Audience then Compose Audience, add activities between the Audience and Save activities, then Publish.
-* **Q: How many compositions can I publish in a sandbox?** — Up to 10 in a given sandbox; if you reach the threshold you must delete one to publish another.
+* **Q: How many compositions can I publish in a sandbox?** — Up to 50 in a given sandbox (compositions created with Federated audience composition are not counted); if you reach the threshold you must delete one to publish another.
 * **Q: How soon can I use an audience from a composition?** — Audiences from audience composition are executed daily, so it may take up to 24 hours.
 * **Q: What statuses can a composition have?** — Draft (in progress, not published) and Published (resulting audiences saved and available for use).
 * **Q: Can I use audience composition with Healthcare Shield or Privacy and Security Shield?** — No, use of audiences and attributes from audience composition is currently unavailable with Healthcare Shield or Privacy and Security Shield.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: ae73c1c2 -->
+<!-- ai-section-version: 1 | source-hash: 44613be9 -->
