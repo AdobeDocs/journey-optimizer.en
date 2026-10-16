@@ -309,6 +309,7 @@ nudge: yes
     + {hide-from-toc} [Subdomain delegation and DNS errors](using/configuration/subdomain-delegation-errors.md)
     + {hide-from-toc} [IP warmup plan errors](using/configuration/ip-warmup-plan-errors.md)
     + {hide-from-toc} [Custom channel, inbound action, and reporting dataset errors](using/configuration/channel-reporting-errors.md)
+    + {hide-from-toc} [Personalization errors](using/personalization/personalization-errors.md)
 + Communication channels {#channels}
   + [Get started with communication channels](using/channels/gs-channels.md)
   + {hide-from-toc} [Destinations channel](using/destinations/destinations.md)
