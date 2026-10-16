@@ -474,6 +474,7 @@ nudge: yes
       + [Create a custom channel](using/custom-channel/create-custom-channel.md)
       + [Configure OAuth 2.0 authentication](using/custom-channel/custom-channel-oauth2.md)
       + [Manage API credentials](using/custom-channel/custom-channel-api-credentials.md)
+      + {hide-from-toc} [Custom channel, inbound action, and reporting dataset errors](using/configuration/channel-reporting-errors.md)
       + [Delegate a subdomain](using/custom-channel/custom-channel-subdomains.md)
       + [Create a channel configuration](using/custom-channel/custom-channel-configuration.md)
     + Create custom channel experiences {#create-custom-channel-experiences}
