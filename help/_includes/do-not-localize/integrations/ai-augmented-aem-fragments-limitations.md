@@ -15,7 +15,7 @@ For complete understanding, this information should be combined with the documen
 
 * Understand which Content Fragment types and variations are supported
 * Plan multilingual content when there is no automatic language fallback
-* Know that Journey Optimizer integrates with the Publish tier only
+* Know that Journey Optimizer integrates with the Author and Publish tiers
 * Identify which personalization inputs are supported
 * Understand update, versioning, caching, and proofing behavior
 * Diagnose common errors such as missing tags, undefined variables, and broken images
@@ -24,13 +24,13 @@ For complete understanding, this information should be combined with the documen
 
 * **Content Fragment variation**: An alternative version of a fragment selected when inserting it; if none is selected, the Main variation is used *(product-specific)*
 * **Main variation**: The fragment's primary content in Adobe Experience Manager, used when no variation is selected *(product-specific)*
-* **Publish tier**: The Adobe Experience Manager tier Journey Optimizer integrates with, exposing Content Fragments through a public, unauthenticated endpoint *(product-specific)*
+* **Publish tier**: The Adobe Experience Manager tier where published Content Fragments are exposed through a public, unauthenticated endpoint *(product-specific)*
 * **Access denied (CPES) error**: An error indicating the user role is not authorized to access certain profile or contextual attributes used in personalization *(product-specific)*
 * **Proof**: A preview that always reflects the most recently published version of the Content Fragment *(product-specific)*
 
 **Guardrails:**
 
-* Journey Optimizer integrates with the Adobe Experience Manager Publish tier only; Content Fragments are available through a public, unauthenticated endpoint. Author repositories may appear in the selector, but only fragments published to Publish can be used.
+* Journey Optimizer integrates with the Adobe Experience Manager Author and Publish tiers (Sites, Content Fragments). Only fragments in Published or Modified status can be used.
 * Personalization supports profile attributes, contextual attributes, static strings, and pre-declared variables; derived or computed attributes are not supported.
 * There is no automatic language resolution or fallback between variations; each variation must be authored, tagged, and published in Adobe Experience Manager.
 * Updates require manual republication from Adobe Experience Manager; there is no automatic version reconciliation.
@@ -48,7 +48,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Which Adobe Experience Manager tier does Journey Optimizer use for Content Fragments?** — The Publish tier only; fragments are available through a public, unauthenticated endpoint, and only fragments published to Publish can be used.
+* **Q: Which Adobe Experience Manager tier does Journey Optimizer use for Content Fragments?** — The Author and Publish tiers; only fragments in Published or Modified status can be used.
 * **Q: What personalization is not supported in Content Fragments?** — Derived or computed attributes; supported inputs are profile attributes, contextual attributes, static strings, and pre-declared variables.
 * **Q: How long after publishing are changes available?** — Typically within about 5 minutes for unitary journeys and in the next batch for batch use cases, after manual republication in Adobe Experience Manager.
 * **Q: Why is my Content Fragment not visible in the selector?** — The tag syntax may not match `ajo-enabled:{OrgId}/{SandboxName}`, or the fragment may be in draft or unpublished state; correct the tag and republish, and ensure the fragment is approved and published.
@@ -57,4 +57,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: c463328a -->
+<!-- ai-section-version: 1 | source-hash: 2cb1b7e8 -->
