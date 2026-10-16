@@ -629,6 +629,7 @@ nudge: yes
       + [Create audiences](/help/rp_landing_pages/create-landing-page.md)
       + [Segment definitions](using/audience/creating-a-segment-definition.md)
       + [Audience Composition](using/audience/get-started-audience-orchestration.md)
+      + {hide-from-toc} [Audience composition errors](using/audience/audience-composition-errors.md)
       + [Custom upload](using/audience/custom-upload.md)
       + [Federated Audience Composition](using/audience/federated-audience-composition.md)
     + [Audience activation in campaigns & journeys](using/audience/target-audiences.md)
