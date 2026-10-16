@@ -83,7 +83,7 @@ The datasets containing Decision management events are accessible from Adobe Exp
 
 ![](../assets/events-datasets-list.png)
 
-These datasets are based on the **[!UICONTROL ODE DecisionEvents]** schema, which contains all the XDM fields that are required to send information from Decision Management to Adobe Experience Platform.  
+These datasets are based on the **[!UICONTROL ODE DecisionEvents]** schema, which contains all the XDM fields that are required to send information from Decision Management to Adobe Experience Platform. For the fields of this schema, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 >[!NOTE]
 >

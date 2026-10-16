@@ -264,7 +264,7 @@ Learn how to [configure Customer Journey Analytics](report-gs-cja.md) for Journe
 ### Documentation links {#documentation-links}
 
 - **[Journey step sharing overview](sharing-overview.md)**: Understanding how journey data flows to Adobe Experience Platform
-- **[Built-in schemas dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}**: Complete XDM schema reference
+- **[Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}**: Complete XDM schema reference
 - **[Journey Optimizer reporting](report-gs-cja.md)**: Overview of reporting capabilities in Journey Optimizer
 
 ### Integration guides {#integration-guides}

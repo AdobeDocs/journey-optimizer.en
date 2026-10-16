@@ -50,3 +50,5 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does the Overview dashboard show different numbers than the Browse tab?** — The dashboard only counts journeys with traffic in the last 24 hours, metrics take up to 30 minutes to refresh, and access permissions may limit visibility.
 
 +++
+
+<!-- ai-section-version: 1 | source-hash: 6bdb0ce8 -->

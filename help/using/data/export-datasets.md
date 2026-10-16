@@ -114,7 +114,7 @@ Once the export is complete, the content of your dataset is deposited on your cl
 
 ## Available datasets for exporting {#datasets}
 
-Understand from the table below which Journey Optimizer datasets you can export.
+Understand from the table below which Journey Optimizer datasets you can export. For the fields of each schema, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 |Dataset|Description|
 | ------- | ------- |

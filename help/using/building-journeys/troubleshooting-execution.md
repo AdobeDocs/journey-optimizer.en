@@ -147,7 +147,7 @@ If you see events discarded with the `maxInstanceStackEventsReached` reason, the
 
 This is **not** a time-window or throughput limit. It occurs when the profile's journey instance is blocked on a long-running step (for example, a long wait, enrichment, or custom action retries) and events for the same profile, also being used in that journey, pile up beyond the 10-event limit.
 
-To identify it, query journey step events where the discard reason equals `maxInstanceStackEventsReached` (for example, in `serviceEvents.stateMachine.eventType` or similar fields). Learn more about discarded event types in the [step event field list](../reports/sharing-field-list.md#discarded-events).
+To identify it, query journey step events where the discard reason equals `maxInstanceStackEventsReached` (for example, in `serviceEvents.stateMachine.eventType` or similar fields). Learn more about discarded event types in the [step event field list](../reports/sharing-field-list.md#discarded-events). For the fields of the journey step events, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 **What you can do**
 
