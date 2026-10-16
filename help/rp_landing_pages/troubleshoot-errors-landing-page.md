@@ -88,11 +88,15 @@ Prefixes CJMIAS, CJMRPS and CJMRT 0817xx. Errors on custom channel credentials, 
 
 ### Journeys {#journeys}
 
+These errors appear when you check, test or publish a journey. Go to the section that matches the activity or setting named in the message.
+
 | Error page | Sections |
 | --- | --- |
 | [Journey validation errors](../using/building-journeys/journey-validation-errors.md) | [Journey structure](../using/building-journeys/journey-validation-errors.md#structure), [Action activities](../using/building-journeys/journey-validation-errors.md#actions), [Events and reactions](../using/building-journeys/journey-validation-errors.md#events), [License package limits (Select)](../using/building-journeys/journey-validation-errors.md#select-package), [Versions, test mode, and size](../using/building-journeys/journey-validation-errors.md#versions) |
 
 ### Campaigns and audiences {#campaigns-and-audiences}
+
+These errors appear when you set up, schedule or activate an Action, API-triggered or Orchestrated campaign, when you define a relational schema or a dataset, and when you build and publish an audience composition.
 
 | Error page | Sections |
 | --- | --- |
@@ -103,6 +107,8 @@ Prefixes CJMIAS, CJMRPS and CJMRT 0817xx. Errors on custom channel credentials, 
 
 ### Content authoring and personalization {#content-authoring-and-personalization}
 
+These errors appear when you validate or save the content of a message, when an expression or a helper cannot be resolved, and when you preview a message or use simulated users.
+
 | Error page | Sections |
 | --- | --- |
 | [Content authoring errors](../using/content-management/content-authoring-errors.md) | [Email content](../using/content-management/content-authoring-errors.md#email), [Push notifications](../using/content-management/content-authoring-errors.md#push), [Message lifecycle and saving](../using/content-management/content-authoring-errors.md#lifecycle), [Permissions](../using/content-management/content-authoring-errors.md#permissions) |
@@ -110,6 +116,8 @@ Prefixes CJMIAS, CJMRPS and CJMRT 0817xx. Errors on custom channel credentials, 
 | [Proof and simulation errors](../using/content-management/proof-simulation-errors.md) | [Proofs and previews](../using/content-management/proof-simulation-errors.md#proofs), [Simulated users](../using/content-management/proof-simulation-errors.md#simulated-users) |
 
 ### Fragments, multilingual content and landing pages {#fragments-multilingual-content-and-landing-pages}
+
+These errors appear when you publish a fragment or use AEM content, when you set up language settings and translations, and when you publish or edit a landing page.
 
 | Error page | Sections |
 | --- | --- |
@@ -119,12 +127,16 @@ Prefixes CJMIAS, CJMRPS and CJMRT 0817xx. Errors on custom channel credentials, 
 
 ### Deliverability setup {#deliverability-setup}
 
+These errors appear when you delegate a subdomain, create DNS records or seed lists, and when you upload, activate or run an IP warmup plan.
+
 | Error page | Sections |
 | --- | --- |
 | [Subdomain delegation and DNS errors](../using/configuration/subdomain-delegation-errors.md) | [Subdomain delegation](../using/configuration/subdomain-delegation-errors.md#delegation), [DNS records](../using/configuration/subdomain-delegation-errors.md#dns), [Seed lists](../using/configuration/subdomain-delegation-errors.md#seed) |
 | [IP warmup plan errors](../using/configuration/ip-warmup-plan-errors.md) | [Plan file](../using/configuration/ip-warmup-plan-errors.md#file), [Runs and activation](../using/configuration/ip-warmup-plan-errors.md#runs), [Run failures](../using/configuration/ip-warmup-plan-errors.md#failures) |
 
 ### Custom channels, inbound actions and reporting {#custom-channels-inbound-actions-and-reporting}
+
+These errors appear when you configure custom channel credentials, when an inbound action runs, and when you set up reporting datasets.
 
 | Error page | Sections |
 | --- | --- |
