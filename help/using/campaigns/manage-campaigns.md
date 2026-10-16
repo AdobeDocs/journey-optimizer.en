@@ -264,6 +264,14 @@ To modify and create a new version of a recurring Action campaign, follow these 
 * [Campaign audience](campaign-audience.md)
 * [Campaign schedule](campaign-schedule.md)
 
+### Edit a published message {#edit-published-message}
+
+When a campaign is activated, its messages are published and the campaign is **[!UICONTROL Live]**. For Action and API-triggered campaigns:
+
+* A published message cannot be updated directly. To change it, create a new version of the campaign, edit the draft version, then activate it. See [Modify an Action campaign](#modify-an-action-campaign).
+* A new version can only be created from a published (Live) message. A message that is still a draft is edited directly.
+* A published message cannot be set back to **[!UICONTROL Draft]**. Create a new version instead.
+
 ### Stop an Action campaign {#stop}
 
 To stop a recurring campaign, open it then click the **[!UICONTROL Stop campaign]** button.

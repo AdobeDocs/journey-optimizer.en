@@ -77,12 +77,15 @@ See also [Create a direct mail message](../direct-mail/create-direct-mail.md#ext
 
 ## Message lifecycle and saving {#lifecycle}
 
-These errors occur when you approve or save a message, and its state or the saved content does not allow the action.
+These errors occur when you edit, create a version of, approve, or save a message, and its state or the saved content does not allow the action.
 
 See also [Manage campaigns](../campaigns/manage-campaigns.md) and [Review & approve a request](../test-approve/review-approve-request.md).
 
 | Error code | Message | How to fix |
 |---|---|---|
+| **CJMMAS-1053-400** | Message status change to Draft is not permitted. | A published message cannot be set back to Draft. Create a new version of the campaign to change it. [Learn more](../campaigns/manage-campaigns.md#edit-published-message) |
+| **CJMMAS-1054-400** | Published message update is not permitted. | A published message cannot be updated directly. Create a new version of the campaign, edit the draft version, then activate it. [Learn more](../campaigns/manage-campaigns.md#edit-published-message) |
+| **CJMMAS-1060-400** | Version Creation is not permitted. Message must be in published state. | A new version can only be created from a published (Live) message. Activate the campaign first, or edit the draft directly. [Learn more](../campaigns/manage-campaigns.md#edit-published-message) |
 | **CJMMAS-1077-400** | Changing the message approval status is not allowed. | The approval status is set by the approval workflow, not by editing the message. Request approval, or ask the reviewer to approve or request changes. [Learn more](../test-approve/review-approve-request.md#approve) |
 | **JOMAL-1101-409** | Save failed because this item was updated in another tab or by another user. Refresh to load the latest version before saving. | Someone else, or another browser tab, saved a newer version. Refresh the page to load the latest version, then reapply your changes and save again. [Learn more](../campaigns/manage-campaigns.md) |
 | **JOMAL-1102-400** | Unable to patch HTML due to malformed tracking links. | The HTML contains a link that cannot be tracked, for example a missing or unclosed href. Correct the links in the HTML, then save again. [Learn more](../email/message-tracking.md#insert-links) |
