@@ -49,6 +49,7 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: Which Adobe Experience Manager tier does Journey Optimizer use for Content Fragments?** — The Author and Publish tiers; only fragments in Published or Modified status can be used.
+* **Q: Which errors can occur when Journey Optimizer fetches or publishes an Adobe Experience Manager fragment?** — Unauthorized (AJOCBS-1101, CJMMAS-8101), forbidden (AJOCBS-1102, CJMMAS-8102), not found (AJOCBS-1103), timeout or bad request (AJOCBS-1105, AJOCBS-1108), and fragment publication failures (CJMMAS-1161, 1162, 1175); the troubleshooting table gives the resolution of each.
 * **Q: What personalization is not supported in Content Fragments?** — Derived or computed attributes; supported inputs are profile attributes, contextual attributes, static strings, and pre-declared variables.
 * **Q: How long after publishing are changes available?** — Typically within about 5 minutes for unitary journeys and in the next batch for batch use cases, after manual republication in Adobe Experience Manager.
 * **Q: Why is my Content Fragment not visible in the selector?** — The tag syntax may not match `ajo-enabled:{OrgId}/{SandboxName}`, or the fragment may be in draft or unpublished state; correct the tag and republish, and ensure the fragment is approved and published.
@@ -57,4 +58,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 2cb1b7e8 -->
+<!-- ai-section-version: 1 | source-hash: 0a6ef1bf -->
