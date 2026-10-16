@@ -62,11 +62,11 @@ Before configuring a job request, make sure you have created:
     >
     >A batch job runs off of the profile snapshot that occurs once a day. Batch decisioning caps the frequency and always loads profiles from the most recent snapshot. Please expect to wait up to 24 hours after you create an audience before you try the batch decisioning API.
 
-    >[!IMPORTANT]
-    >
-    >Batch decisioning uses profile snapshot data and does not access experience events (xEvents). As a result, offers that depend on xEvent data may not qualify during batch processing. If no other offer qualifies, the fallback offer may be returned. The Decisioning API can retrieve experience events at decision time. For batch decisioning, use profile attributes or audiences for eligibility.
-
 * **A decision** in Adobe Journey Optimizer. [Learn how to create a decision](offer-activities/create-offer-activities.md)
+
+>[!IMPORTANT]
+>
+>Batch decisioning uses profile snapshot data and does not access experience events (xEvents). As a result, offers that depend on xEvent data may not qualify during batch processing. If no other offer qualifies, the fallback offer may be returned. The Decisioning API can retrieve experience events at decision time. For batch decisioning, use profile attributes or audiences for eligibility.
 
 <!-- in API doc, remove these info and add ref here-->
 
