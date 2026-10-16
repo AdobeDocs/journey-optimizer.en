@@ -9,13 +9,26 @@ role: User
 level: Beginner
 keywords: assets, integration
 exl-id: 3e72df85-ba80-4cec-848b-7441cb3e7fef
-TQID: https://experienceleague.adobe.com/Kzrp9ksDq5kU4yPs8-3r-zipBqogMN3PqXucfhqtPeo
+TQID: 'https://experienceleague.adobe.com/Kzrp9ksDq5kU4yPs8-3r-zipBqogMN3PqXucfhqtPeo'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2:
+  - id: c7dc31c0-c4f7-42a7-8cf5-a8c5aeb0de74
+    internal-label: Experience Manager Assets integration
+  - id: c08fcc42-2918-421a-a25e-e1bd9464c290
+    internal-label: Adobe Stock integration
+  - id: c6fdb8b1-45ee-460a-a859-9031c59118b7
+    internal-label: Analytics integration
+  - id: d16f7424-4847-4b90-a37c-4b52cbdabee5
+    internal-label: Intelligent Services integration
+  - id: 76ce9c27-4cb0-5f07-ad92-959506fdee70
+    internal-label: Assets
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -29,15 +42,6 @@ topic_v2:
     internal-label: Customer journeys
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-subfeature_v2:
-  - id: c7dc31c0-c4f7-42a7-8cf5-a8c5aeb0de74
-    internal-label: Experience Manager Assets integration
-  - id: c08fcc42-2918-421a-a25e-e1bd9464c290
-    internal-label: Adobe Stock integration
-  - id: c6fdb8b1-45ee-460a-a859-9031c59118b7
-    internal-label: Analytics integration
-  - id: d16f7424-4847-4b90-a37c-4b52cbdabee5
-    internal-label: Intelligent Services integration
 ---
 # Combine solutions and apps to manage your content {#combine-solutions}
 

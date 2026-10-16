@@ -8,10 +8,23 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: email, content check, HTML, CSS, validation, rendering, quality
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
-subfeature_v2: []
+subfeature_v2:
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 
 # Content check in the Email Designer {#content-check}
@@ -29,7 +42,7 @@ Results are surfaced as errors, warnings, or informational notices in the author
 
 Content checks are always available in the Email Designer. To view them, click the Issues icon in the right rail to open the **[!UICONTROL Content check]** pane — all detected issues are listed there.
 
-![Content check pane in the Email Designer with issues](assets/content-check.png)
+<!--![Content check pane in the Email Designer with issues](assets/content-check.png)-->
 
 >[!NOTE]
 >
@@ -50,9 +63,9 @@ When no issues are detected, the pane displays **No issues detected** and the co
 Depending on the issue, you can view more context, apply a one-click fix, or save your email to refresh a check result.
 
 * For some detected issue, you can click the **[!UICONTROL Show details]** button to see more context. Click **[!UICONTROL Hide details]** to collapse.
-    ![Content check pane in the Email Designer with details](assets/content-check-details.png){width="80%"}
+    <!--![Content check pane in the Email Designer with details](assets/content-check-details.png){width="80%"}-->
 * Similary, you can click the **[!UICONTROL Show fix]** button and apply a one-click fix where available. If the fix cannot be applied automatically, a messsage is displayed and you must manually solve the issue.
-    ![Content check pane in the Email Designer with Apply fix button](assets/content-check-fix.png){width="80%"}
+    <!--![Content check pane in the Email Designer with Apply fix button](assets/content-check-fix.png){width="80%"}-->
 
 ### Recalculation of checks {#recalculation}
 
@@ -60,7 +73,7 @@ Most checks — such as unsupported HTML elements, empty divs, and HTML size —
 
 Other checks, such as CSS size, are calculated from the serialized content — the version of your email as it is loaded or saved — not from the live editing state in the Email Designer. In this case, the saved content can differ slightly from what you see while editing. If you make edits without saving, a **[!UICONTROL Stale check]** label appears to indicate the result may no longer be accurate. Save your email to refresh the calculation.
 
-![Content check pane in the Email Designer with Stale check label](assets/content-check-stale.png){width="100%"}
+<!--![Content check pane in the Email Designer with Stale check label](assets/content-check-stale.png){width="100%"}-->
 
 ## Fix detected issues {#fix-issues}
 

@@ -5,6 +5,9 @@ title: Create audiences
 description: Create audiences
 redpen-status: CREATED_||_2025-08-11_20-45-40
 exl-id: d6d73fe7-4442-474b-8d2d-49e280c01a9e
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Create audiences{#section-overview}
 

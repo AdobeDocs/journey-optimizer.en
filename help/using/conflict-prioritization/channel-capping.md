@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
 exl-id: 80bd5a61-1368-435c-9a9a-dd84b9e4c208
-TQID: https://experienceleague.adobe.com/sWjIVlyPh0ySD1s-TLxJu9zmItbncoxKO0u3DVjVt-8
+TQID: 'https://experienceleague.adobe.com/sWjIVlyPh0ySD1s-TLxJu9zmItbncoxKO0u3DVjVt-8'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Conflict & prioritization
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: 736fce34-6237-51e6-acd3-371abb174feb
+    internal-label: Rules
 subfeature_v2:
   - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
     internal-label: Rules set configuration
@@ -39,7 +41,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-**Channel** rule sets apply capping rules to communication channels. For example, do not send more than 1 email or SMS communication per day.
+**Channel** rule sets apply capping rules to communication channels. For example, do not send more than 1 email or mobile communication per day.
 
 Leveraging channel rule sets allows you to set frequency capping by communication type to prevent overloading customers with similar messages. For example, you can create a rule set to limit the number of **promotional communications** sent to your customers and another rule set to limit the number of **newsletters** sent to them. Depending on the type of campaign that you are creating, you can then choose to apply either the promotional communication or the newsletters rule set.
 
@@ -103,13 +105,13 @@ To create a channel rule set, follow these steps :
 
    The counter automatically resets to 0 when a new time window begins. For a 2-day frequency cap, this reset occurs every two days at midnight UTC.
 
-1. Select the channel(s) you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification]**, **[!UICONTROL Direct mail]** or **[!UICONTROL WhatsApp]**.
+1. Select the channel(s) you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL Mobile message]**, **[!UICONTROL Push notification]**, **[!UICONTROL Direct mail]** or **[!UICONTROL WhatsApp]**.
 
    ![](assets/rule-sets-channels.png)
 
    Select several channels if you want to apply capping across all selected channels as a total count.
 
-   For example, set capping to 5, and select both the Email and SMS channels. If a profile has already received 3 marketing emails and 2 marketing SMS messages for the selected period, this profile will be excluded from the very next delivery of any marketing email or SMS message.
+   For example, set capping to 5, and select both the Email and Mobile message channels. If a profile has already received 3 marketing emails and 2 marketing mobile messages for the selected period, this profile will be excluded from the very next delivery of any marketing email or mobile message.
 
 1. Click **[!UICONTROL Save]** to confirm the rule creation. Your message is added to the rule set, with the **[!UICONTROL Draft]** status.
 

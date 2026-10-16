@@ -25,7 +25,7 @@ For complete understanding, this information should be combined with the documen
 * **Message inbox**: A persistent notification inbox driven by two AJO campaigns that target the same surface *(product-specific)*
 * **Content Card campaign**: The campaign that delivers individual notification items to the inbox *(product-specific)*
 * **Inbox campaign**: The campaign that delivers configuration such as the title, empty-state copy, and layout for the inbox shell *(product-specific)*
-* **Surface**: The Page URL and Location on page location that both channels target and that the Web SDK code queries for *(product-specific)*
+* **Surface**: The location that the Page URL and Location on page of both channels are set to, and that must match the surface you query for in your Web SDK code; the page does not define the term further *(product-specific)*
 * **`subscribeRulesetItems`**: Web SDK command that registers a callback that runs each time the propositions eligible for display change *(product-specific)*
 * **`sendEvent`**: Web SDK command that fetches propositions *(product-specific)*
 * **`collectEvent`**: Function provided by the `subscribeRulesetItems` callback used to report interactions (display, interact, dismiss, delete) back to AJO to keep campaign reporting accurate *(product-specific)*
@@ -58,4 +58,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 87182ea0 -->
+<!-- ai-section-version: 1 | source-hash: d66e93e5 -->

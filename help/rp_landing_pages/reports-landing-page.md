@@ -5,6 +5,9 @@ title: Custom journey reports
 description: Custom journey reports
 redpen-status: CREATED_||_2025-08-11_20-54-10
 exl-id: 1e685fcd-5bb1-4792-b851-e76b7273ddc7
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Custom journey reports{#section-overview}
 

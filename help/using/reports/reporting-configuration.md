@@ -9,13 +9,17 @@ role: Admin
 level: Intermediate
 keywords: configuration, experimentation, reporting, optimizer
 exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
-TQID: https://experienceleague.adobe.com/GiszI8Z-dWb13HjGdIVPEKwdSw8DwesEadPBbbqhUkM
+TQID: 'https://experienceleague.adobe.com/GiszI8Z-dWb13HjGdIVPEKwdSw8DwesEadPBbbqhUkM'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
+  - id: 31bc9329-ef7e-5c6b-a292-c7386a476887
+    internal-label: Experimentation
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
 subfeature_v2:
   - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
     internal-label: Performance monitoring

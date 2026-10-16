@@ -6,6 +6,9 @@ description: Deliver offers using APIs
 redpen-status: CREATED_||_2025-08-11_21-04-29
 badge: label="Legacy" type="Informative"
 exl-id: 4f959425-2b45-4257-a0a6-09738913bd68
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Deliver offers using APIs{#section-overview}
 

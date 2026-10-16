@@ -11,8 +11,10 @@ non-localized context appended to doc pages so the AI Assistant answers question
 Journey Optimizer more accurately.
 
 Each block is stored as a **do-not-localize include** (so it is never translated) and pulled
-into its page with `{{$include}}`. A block contains **only facts derivable from its own page
-body** — nothing imported from other pages, general product knowledge, or HTML comments.
+into its page with `{{$include}}`. A block contains only what the **AJO docs** state: its own
+page body first, plus related `help/using/` pages for concrete guidance, examples and best
+practices, under the cross-page safety rules (no mix-up, conflicts flagged). Never general product
+knowledge, inference, or HTML comments.
 
 > **Read the reference files before generating anything.** They contain the actual rules, not
 > a summary:
@@ -21,6 +23,10 @@ body** — nothing imported from other pages, general product knowledge, or HTML
 >   status labels, no contractions, the banned-word list).
 > - `references/verification-round.md` — the **mandatory** independent adversarial fact-check
 >   that is the final quality gate. This is not optional and cannot be skipped.
+> - `references/acronyms.md` — the approved acronym list: which acronyms a block may name in
+>   Terminology (on the page body, or on the list) and which still need a writer's confirmation.
+> - `references/rebaseline.md` — how to re-verify existing blocks folder by folder and write
+>   their drift hashes (only after verification).
 > - `references/git-jira-tracking.md` — branch/commit/PR flow (ask the author before opening a
 >   PR; **never merge**) and DOCAC JIRA tracking.
 
@@ -59,21 +65,39 @@ mode per page:
   externalized) → move it into a do-not-localize include and replace it with the `{{$include}}`
   line, preserving content fidelity.
 
-Compute the page-body hash the same way everywhere (used for the sync comment and drift check):
+Compute the page hash the same way everywhere (used for the sync comment and drift check) with
+the helper script, which hashes the page **without** its own `ai-augmented-` include line, so
+adding the include never changes the hash:
 
 ```bash
-md5 -q help/using/<folder>/<page>.md | cut -c1-8
+.claude/skills/ai-augmented-blocks/scripts/page-hash.sh help/using/<folder>/<page>.md
 ```
 
-Compute it **before** editing the page (the hash covers the body as it is when the block is
-generated). On Linux use `md5sum help/using/<folder>/<page>.md | cut -c1-8`.
+Never hash the page by hand with `md5` — hashes written by other methods will not match.
+
+The hash is a manual change-detector, not a watcher: nothing runs when a page is edited. Drift
+is only found when this skill is run (UPDATE mode or AUDIT mode below).
+
+### AUDIT mode (read-only)
+
+When asked to audit, check coverage, or find stale blocks, run
+`.claude/skills/ai-augmented-blocks/scripts/audit.sh [folder]` and report counts plus the
+lists. It labels each page CURRENT, DRIFTED, NO-HASH (block has no sync comment), MISSING or MIGRATE (inline block); release notes
+and index pages are skipped. A DRIFTED page whose stored hash was written by an older method
+may be unchanged — re-verify it (gate 2) before regenerating, and refresh its hash with
+`page-hash.sh` only after the block is confirmed to match the page. Never refresh hashes in
+bulk without verification. To re-baseline a folder of existing blocks, follow `references/rebaseline.md`; write a
+hash with `scripts/refresh-hash.sh <page.md>` only after the block has been verified.
 
 ### 2 — Generate (or refresh) the block
 
 Follow `references/generation-spec.md` exactly for every page. Key invariants:
 
 - Two **fixed opening paragraphs**, verbatim, byte-for-byte (never paraphrased).
-- Sections in order: **TL;DR, Intents, Glossary, Guardrails, Terminology, FAQ**.
+- Six required sections in order: **TL;DR, Intents, Glossary, Guardrails, Terminology, FAQ**.
+  Six optional sections, added only when the docs state the content: **Prerequisites and
+  permissions, Applicability** (after Guardrails), **Troubleshooting** (after FAQ), **Examples,
+  Best practices, Related pages** (last). Full order and rules in `generation-spec.md`.
 - Every claim grounded in the page body only. No contractions. Qualify numbers as
   `(hard limit)` / `(recommended)` **only** when the page uses enforcement/recommendation
   wording; otherwise no qualifier. Use the page's exact validation-mode and status labels.
@@ -91,11 +115,11 @@ title: AI Knowledge Reference
 
 +++ AI Knowledge Reference
 
-[fixed opening paragraphs + the six sections]
+[fixed opening paragraphs + the required sections + any optional sections the docs support]
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: <first 8 chars of md5 of the page body> -->
+<!-- ai-section-version: 1 | source-hash: <first 8 chars of md5 of the page body> | related: <folder>/<page>.md, ... (only if related pages were used) -->
 ```
 
 **Page edit** — add exactly one line, as the last content line, preceded by a blank line
@@ -115,9 +139,10 @@ post-generation checklist) before moving on. This is gate 1 of 2.
 ### 3 — Independent verification round (mandatory final gate)
 
 This is the step the author specifically requires: **confirm each block is valid, true, and
-free of ambiguity.** Run it as a *fresh, independent* pass — ideally a separate subagent that
-sees only the page body and the block, with no memory of how the block was written — following
-`references/verification-round.md`. It re-checks every claim, downgrades any mislabeled limit,
+free of ambiguity.** Run it as a *fresh, independent* pass: launch a **separate subagent** (Agent tool) that
+receives only the page body and the block, never your reasoning or drafts, and follow
+`references/verification-round.md`. Do not self-verify in the main thread; if subagents are
+unavailable, say so in the report and mark the block "verification not independent". It re-checks every claim, downgrades any mislabeled limit,
 fixes Synonyms-vs-Do-not-confuse errors, and removes anything not grounded in the page. Apply
 every fix to the include file before continuing. This is gate 2 of 2 and cannot be skipped.
 
@@ -144,7 +169,27 @@ Follow `references/git-jira-tracking.md`:
 Report per page: created / updated / migrated / skipped (+ reason), the verification result
 (clean or corrected, with the corrections), the JIRA task, and the PR link if one was opened.
 
+Also include a **Gaps found** list per page: places where the page body itself leaves the AI
+without what it needs, for example an acronym used but never defined, a limit stated without
+its scope, a validation mode or status named but not explained, two terms used
+interchangeably without saying so, a prerequisite or permission mentioned without its exact name,
+an error shown without its cause or fix, or a feature whose scope (journeys, campaigns, channels)
+is not stated. This list is for the author to fix **in the page**. Also list any
+**discrepancy** between the page and a related page, unclear statements, and missing guidelines.
+Never fill a gap by guessing: if neither the page nor a related page states the fact, the block
+does not either. If there are no gaps, say "none".
+
+For every gap or discrepancy that needs a change in an MD page, **find or create a page-fix
+task** (see "Page-fix tasks" in `references/git-jira-tracking.md`): search DOCAC first, link the
+existing task and add a comment if one covers it, otherwise create a new task linked to the
+block's task.
+
 ## Notes for writers running this skill
+
+- **Limit of the drift check:** `source-hash` covers only the block's own page. When a related page
+  recorded in `related:` changes, the block can go stale without the audit noticing. When you
+  edit a page, search `help/_includes/do-not-localize/` for blocks that list it under `related:`
+  and re-check them.
 
 - The block is a **derivative of the page body at a point in time** — treat it as part of the
   page. When you change a page in a way that touches a guardrail, limit, status label, or

@@ -5,6 +5,9 @@ title: Manage decision items
 description: Manage decision items
 redpen-status: CREATED_||_2025-08-11_20-55-07
 exl-id: b6490231-e2c8-40c0-9127-128bab76493f
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Manage decision items{#section-overview}
 

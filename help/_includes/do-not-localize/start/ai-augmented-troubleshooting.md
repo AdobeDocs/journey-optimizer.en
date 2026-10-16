@@ -13,7 +13,7 @@ For complete understanding, this information should be combined with the documen
 
 **Intents:**
 
-* Diagnose email, push, SMS, in-app, content card, and WhatsApp delivery and rendering issues
+* Diagnose email, push, Mobile message, in-app, content card, and WhatsApp delivery and rendering issues
 * Resolve data ingestion, dataset enablement, and TTL questions
 * Investigate audience count discrepancies and Engageable Profiles increases
 * Fix rule set, frequency capping, and quiet hours problems

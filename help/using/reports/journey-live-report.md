@@ -8,13 +8,15 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
-TQID: https://experienceleague.adobe.com/JJg0ivLaYsInM9kABHaPNgpNH6dQwTwOOInDuTQnIZI
+TQID: 'https://experienceleague.adobe.com/JJg0ivLaYsInM9kABHaPNgpNH6dQwTwOOInDuTQnIZI'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
 subfeature_v2:
   - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
     internal-label: Performance monitoring
@@ -40,7 +42,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Measure your journey's performance in real time over the last 24 hours with the Adobe Journey Optimizer live report, covering journey, email, push, SMS, and in-app metrics.
+**On this page:** Measure your journey's performance in real time over the last 24 hours with the Adobe Journey Optimizer live report, covering journey, email, push, mobile, and in-app metrics.
 
 >[!ENDSHADEBOX]
 
@@ -51,6 +53,10 @@ topic_v2:
 
 Live reports, accessible from the Last 24 hrs tab, display events that took place within the past 24 hours, with a minimum time interval of two minutes from the event occurrence. In comparison, Customer Journey Analytics reports focus on events that occurred at least two hours ago and cover events over a selected time period.
 
+>[!NOTE]
+>
+>Direct mail channel-level metrics appear only after the scheduled file export, not immediately when profiles enter or exit the Direct mail action. Feedback events are generated after export, so the reporting delay depends on the [export frequency configured for journeys](../direct-mail/direct-mail-configuration.md#file-routing-configuration).
+
 Access the live Journey report from the [!UICONTROL Journeys] menu by opening your journey's [!UICONTROL More actions] menu and selecting [!UICONTROL View last 24hrs report].
 
 ![](assets/report_journey.png)
@@ -60,7 +66,7 @@ The journey **[!UICONTROL Live report]** page will be displayed with the followi
 * [Journey](#journey-live)
 * [Email](#email-live)
 * [Push](#push-live)
-* [SMS](#sms-live)
+* [Mobile](#sms-live)
 * [In-app](#in-app-live)
 
 The journey **[!UICONTROL Live report]** is divided into different widgets detailing your journey's success and errors. Each widget can be resized and deleted if needed. For more information on this, refer to this [section](live-report.md#modify-dashboard).
@@ -516,18 +522,18 @@ The **[!UICONTROL Excluded Reasons]** graphs and table display the different rea
 
 Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion reasons.
 
-## SMS tab {#sms-live}
+## Mobile tab {#sms-live}
 
 ### SMS - Statistics {#sms-statistics}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_sms_statistics_live"
 >title="SMS - Statistics"
->abstract="The SMS Sending Statistics table summarizes essential data about your SMS messages such as Targeted or Delivered messages from the last 24 hours."
+>abstract="The SMS Sending Statistics table summarizes essential data about your Mobile messages such as Targeted or Delivered messages from the last 24 hours."
 
 ![](assets/journey_live_sms_statistics.png)
 
-The **[!UICONTROL SMS - Statistics]** table provides a concise summary of essential data related to your SMS messages, encompassing key metrics such as the number of targeted messages and the count of successfully delivered messages from the last 24 hours.
+The **[!UICONTROL SMS - Statistics]** table provides a concise summary of essential data related to your Mobile messages, encompassing key metrics such as the number of targeted messages and the count of successfully delivered messages from the last 24 hours.
 
 +++ Learn more about SMS - Statistics metrics
 
@@ -535,9 +541,9 @@ The **[!UICONTROL SMS - Statistics]** table provides a concise summary of essent
 
 * **[!UICONTROL Excluded]**: Number of user profiles, excluded from the targeted profiles, who did not receive the message.
 
-* **[!UICONTROL Sent]**: Total number of SMS messages sent.
+* **[!UICONTROL Sent]**: Total number of Mobile messages sent.
 
-* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your SMS messages.
+* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your Mobile messages.
 
 * **[!UICONTROL Bounces]**: Total of errors cumulated during the sending process the sending process and automatic return processing.
 
@@ -558,7 +564,7 @@ The **[!UICONTROL SMS - Performance by date]** widget offers a detailed overview
 
 +++ Learn more about SMS - Performance by date metrics
 
-* **[!UICONTROL Sent]**: Total number of SMS messages sent.
+* **[!UICONTROL Sent]**: Total number of Mobile messages sent.
 
 * **[!UICONTROL Bounces]**: Total of errors cumulated during the sending process and automatic return processing.
 
@@ -575,7 +581,7 @@ The **[!UICONTROL SMS - Performance by date]** widget offers a detailed overview
 
 ![](assets/journey_sms_bounce_reasons.png)
 
-The **[!UICONTROL SMS - Bounces reasons]** graphs and table provide a comprehensive overview of data related to bounced SMS messages, delivering valuable insights into the specific reasons behind instances of SMS message bounces in the last 24 hours.
+The **[!UICONTROL SMS - Bounces reasons]** graphs and table provide a comprehensive overview of data related to bounced Mobile messages, delivering valuable insights into the specific reasons behind instances of Mobile message bounces in the last 24 hours.
 
 ### SMS - Error reasons {#sms-error}
 
@@ -586,7 +592,7 @@ The **[!UICONTROL SMS - Bounces reasons]** graphs and table provide a comprehens
 
 ![](assets/journey_sms_error.png)
 
-The **[!UICONTROL SMS - Error Reasons]** graphs and table allow you to identify the specific errors that occurred during the sending process of your SMS messages, facilitating a thorough analysis of any issues encountered in the last 24 hours.
+The **[!UICONTROL SMS - Error Reasons]** graphs and table allow you to identify the specific errors that occurred during the sending process of your Mobile messages, facilitating a thorough analysis of any issues encountered in the last 24 hours.
 
 ### SMS - Excluded reasons {#sms-excluded}
 
@@ -597,7 +603,7 @@ The **[!UICONTROL SMS - Error Reasons]** graphs and table allow you to identify 
 
 ![](assets/journey_live_sms_excluded.png)
 
-The **[!UICONTROL SMS - Excluded Reasons]** graphs and table visually depict the diverse factors that led to the exclusion of user profiles from the targeted audience, preventing them from receiving your SMS messages.
+The **[!UICONTROL SMS - Excluded Reasons]** graphs and table visually depict the diverse factors that led to the exclusion of user profiles from the targeted audience, preventing them from receiving your Mobile messages.
 
 Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion reasons.
 

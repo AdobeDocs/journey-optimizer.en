@@ -28,6 +28,8 @@ Use **[!UICONTROL Simulation]** to validate your journey with **simulated users*
 
 For required permissions, see [Required permissions](simulate-journey-gs.md#required-permissions).
 
+Before entering **[!UICONTROL Simulation]**, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. Validation checks configuration and is separate from simulation. [Learn about journey validation](publish-journey.md#validate).
+
 For an overview by journey type, see [Get started with Journey simulation](simulate-journey-gs.md).
 
 Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
@@ -65,7 +67,7 @@ On any journey in **[!UICONTROL Simulation]**, **[!UICONTROL Quick simulation]**
 
 1. The Journey Agent generates a set of simulated users from the journey definition.
 
-    For journeys with an Email, SMS, or Push node, the Agent prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those values. Once done, click **[!UICONTROL Generate]**.
+    For journeys with an Email, Mobile message, or Push node, the Agent prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those values. Once done, click **[!UICONTROL Generate]**.
 
 1. When the run completes, click **[!UICONTROL View results]** to review paths, errors, and uncovered branches. See [View results](#viewing-results).
 
@@ -95,7 +97,7 @@ If your journey uses an external audience, for example a CSV or Federated Audien
         
     Adobe Journey Optimizer generates a set of simulated users from the journey definition. 
         
-    For journeys with an Email, Push, or SMS node, the AI prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those defined values. Once done, click [!UICONTROL Generate].
+    For journeys with an Email, Push, or Mobile message node, the AI prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those defined values. Once done, click [!UICONTROL Generate].
 
     Generated simulated users only show the attributes used in the current journey, for example in expressions or personalization.
 
@@ -211,7 +213,7 @@ If your journey uses an external audience, for example a CSV or Federated Audien
 
         ![Manage simulation menu open with Reset simulation and Close simulation options](assets/simulate-15.png)
 
-After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
+After testing the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]** and apply the required changes to the journey. Click **[!UICONTROL Validate]** again and resolve any configuration errors before rerunning **[!UICONTROL Simulation]**. When testing is complete and validation is current and passed, you can [publish your journey](publish-journey.md).
 
 ## Trigger your events {#firing-events}
 

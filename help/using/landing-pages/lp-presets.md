@@ -8,7 +8,7 @@ role: Admin
 level: Experienced
 keywords: landing, landing page, configure, environment, subdomain, presets
 exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
-TQID: https://experienceleague.adobe.com/BrNNR0ayMFPS-njxDgJwdNSkvlIuA2ZJdosqdmR2PfU
+TQID: 'https://experienceleague.adobe.com/BrNNR0ayMFPS-njxDgJwdNSkvlIuA2ZJdosqdmR2PfU'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -17,14 +17,25 @@ feature_v2:
     internal-label: Email
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
   - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
     internal-label: Subdomains
+  - id: b19d9237-76be-466d-a869-aacf2d72205f
+    internal-label: Landing pages
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration

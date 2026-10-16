@@ -10,7 +10,7 @@ level: Intermediate
 keywords: journey, first, start, quick-start, audience, event, action
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/7zNDOi2SUTyttgR6I1iOYQb61ejxpqLYznweU8alnPw
+TQID: 'https://experienceleague.adobe.com/7zNDOi2SUTyttgR6I1iOYQb61ejxpqLYznweU8alnPw'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -21,6 +21,8 @@ feature_v2:
     internal-label: Journeys
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
 subfeature_v2:
   - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
     internal-label: Journey design
@@ -73,7 +75,7 @@ The main steps to create a journey are detailed on this page. They are streamlin
 In this guide, you will:
 
 * Define a journey entry point — an audience segment or a real-time event
-* Add message actions across channels — email, push, SMS, in-app, web, code-based experience, content card, and more. [See supported channels](journey-action.md)
+* Add message actions across channels — email, push, mobile message, in-app, web, code-based experience, content card, and more. [See supported channels](journey-action.md)
 * Test your journey with test profiles before activation
 * Publish your journey and monitor its performance
 
@@ -146,7 +148,7 @@ Follow these steps to design your journey:
 
     ![Read Audience activity configuration for selecting target audience](assets/read-segment.png)
 
-1. **Add message actions** — From the **[!UICONTROL Actions]** section of the palette, drag a channel action onto the canvas to send messages to profiles flowing through the journey. Actions are available for email, push notifications, SMS, and more.
+1. **Add message actions** — From the **[!UICONTROL Actions]** section of the palette, drag a channel action onto the canvas to send messages to profiles flowing through the journey. Actions are available for email, push notifications, mobile message, and more.
 
 1. **Add orchestration activities** — Use a **[!UICONTROL Condition]** activity to branch the journey into multiple paths based on profile attributes or behavior. Use a **[!UICONTROL Wait]** activity to introduce a time delay between steps.
 
@@ -156,13 +158,15 @@ Follow these steps to design your journey:
 
 ## Test the journey {#jo-test}
 
+First, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before testing. [Learn about journey validation](publish-journey.md#validate).
+
 Once you have built your journey, test it before publishing. Journey Optimizer offers a **Test mode** as a way to view test profiles as they move along the journey, detecting potential errors before activation. Running quick tests ensures that journeys operate correctly so that you can publish them with confidence. Learn how to test your journey [in this section](testing-the-journey.md)
 
 You can also execute your journey in **Dry run**. Journey Dry run is a special journey publication mode in Adobe Journey Optimizer that allows journey practitioners to test a journey using real production data without contacting real customers or updating profile information. This feature helps journey practitioners gain confidence in their journey design and audience targeting before publishing it live. Learn how to publish a journey in Dry run mode [in this section](journey-dry-run.md).
 
 ## Publish the journey {#jo-pub}
 
-You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing your journey, verify that it is valid and that there are no errors. You cannot publish a journey with errors. Learn more about journey publication in this [section](publish-journey.md).
+You must publish a journey to activate it and make it available for new profiles to enter it. Before publishing, complete testing and make sure the journey has a current, passed validation. If you edit the journey after validation, click **[!UICONTROL Validate]** again and resolve any errors before continuing. Learn more about [journey publication](publish-journey.md).
 
 ![Complete journey flow with audience, conditions, and actions](assets/jo-journeyuc2_32bis.png)
 

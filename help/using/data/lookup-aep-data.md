@@ -11,13 +11,24 @@ keywords: expression, editor
 mini-toc-levels: 1
 badge: label="Limited Availability" type="Informative"
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
-TQID: https://experienceleague.adobe.com/8D-sZ8--lEZSWcfVb9Q-dT59WqBQM2tRV5ses3PX0Ps
+TQID: 'https://experienceleague.adobe.com/8D-sZ8--lEZSWcfVb9Q-dT59WqBQM2tRV5ses3PX0Ps'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
     internal-label: Data management activity
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
+  - id: 736fce34-6237-51e6-acd3-371abb174feb
+    internal-label: Rules
+subfeature_v2:
+  - id: a1cdc218-59b7-4eef-b5cf-2a7ad74b3371
+    internal-label: Journey Optimizer schemas
+  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
+    internal-label: Datasets
+  - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
+    internal-label: Data ingestions
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
@@ -27,13 +38,6 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-subfeature_v2:
-  - id: a1cdc218-59b7-4eef-b5cf-2a7ad74b3371
-    internal-label: Journey Optimizer schemas
-  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
-    internal-label: Datasets
-  - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
-    internal-label: Data ingestions
 ---
 # Use Adobe Experience Platform data {#aep-data}
 

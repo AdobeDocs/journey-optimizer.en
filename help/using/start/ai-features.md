@@ -9,7 +9,7 @@ role: User
 level: Beginner
 mini-toc-levels: 2
 exl-id: 628a5d84-6a33-4ed8-84cb-e2e4c6cc2b80
-TQID: https://experienceleague.adobe.com/bkl7d0VxTNUboLL9MZ3cmEBAgiVHlaU3-ZTXTrpGBjA
+TQID: 'https://experienceleague.adobe.com/bkl7d0VxTNUboLL9MZ3cmEBAgiVHlaU3-ZTXTrpGBjA'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -23,6 +23,8 @@ subfeature_v2:
     internal-label: AI Assistant
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
     internal-label: AI content generation
+  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
+    internal-label: Overview
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -51,7 +53,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Explore the AI and machine learning features across Adobe Journey Optimizer, from CX Enterprise Coworker, AI Assistant, and specialized agents to generative content creation, AI-powered integrations and optimization capabilities across Journey Optimizer capabilities.
+**On this page:** Explore the AI and machine learning features across Adobe Journey Optimizer, from Adobe CX Enterprise Coworker, AI Assistant, and specialized agents to generative content creation, AI-powered integrations and optimization capabilities across Journey Optimizer capabilities.
 
 >[!ENDSHADEBOX]
 
@@ -61,7 +63,7 @@ Adobe Journey Optimizer harnesses the power of artificial intelligence and machi
 
 Use these grouped links to jump to the feature you need:
 
-* **Conversational AI & CX Enterprise Coworker:** [Coworker skills in Journey Optimizer](#cx-coworker), [MCP server](#mcp-server), [AI Assistant and Agents](#ai-assistant)
+* **Conversational AI & Coworker:** [Coworker skills in Journey Optimizer](#cx-coworker), [MCP server](#mcp-server), [AI Assistant and Agents](#ai-assistant)
 * **Content creation:** [AI-powered content generation](#content-generation)
 * **AI-related capabilities:** [AI features across Journey Optimizer](#ajo-ai-features): Formula optimization, Content experimentation, Send-Time optimization, Image to HTML, GenStudio for Performance Marketing, Brand alignment, AI models for decisioning)
 * **Help:** [FAQ](#faq)
@@ -70,7 +72,7 @@ Use these grouped links to jump to the feature you need:
 
 ### About Coworker {#about-cx-coworker}
 
-CX Enterprise Coworker is Adobe's conversational experience that integrates with your business applications to help you work more efficiently, automating customer experience and marketing workflows across your Adobe applications. Instead of executing manual configuration steps one at a time, you describe a business goal in natural language, and Coworker plans, executes, and validates the work.
+Coworker is Adobe's conversational experience that integrates with your business applications to help you work more efficiently, automating customer experience and marketing workflows across your Adobe applications. Instead of executing manual configuration steps one at a time, you describe a business goal in natural language, and Coworker plans, executes, and validates the work.
 
 Coworker is an evolution of AI Assistant: it keeps everything AI Assistant's agents already do (product knowledge, operational and data insights) while adding the enterprise harness, skills, governance, and memory needed to complete the work end to end, not just answer questions. Organizations are being transitioned from AI Assistant to Coworker on a rolling basis, and some organizations may retain access to AI Assistant until they are enabled for Coworker. [Learn more about the transition to Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/agents/trial){target="_blank"}.
 
@@ -190,7 +192,7 @@ The [Journey Create Agent](https://experienceleague.adobe.com/en/docs/experience
 * **Natural Language Journey Creation** - Describe your desired journey and have it created automatically
 * **Event- and Audience-Based Starts** - Create event-triggered, audience-based, business-event, or audience qualification journeys
 * **Conditional Logic** - Build split paths based on customer attributes or behavior
-* **Multi-Channel Messaging** - Add email, push, and SMS actions
+* **Multi-Channel Messaging** - Add email, push, and mobile actions
 * **Scheduling** - Configure start dates and timing between steps
 
 +++
@@ -243,7 +245,7 @@ The [Experimentation Agent](https://experienceleague.adobe.com/en/docs/experienc
 
 ## AI-Powered content generation {#content-generation}
 
-Use generative AI to create and personalize content across multiple channels, accelerating your content creation process while maintaining brand consistency. Generate Content is available for [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [SMS](../mobile/get-started-mobile.md), and [web](../web/get-started-web.md) experiences - helping you generate subject lines, body text, images, and complete message variations.
+Use generative AI to create and personalize content across multiple channels, accelerating your content creation process while maintaining brand consistency. Generate Content is available for [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [mobile messages](../mobile/get-started-mobile.md), and [web](../web/get-started-web.md) experiences - helping you generate subject lines, body text, images, and complete message variations.
 
 ### Key Features
 

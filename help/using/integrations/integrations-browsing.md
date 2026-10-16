@@ -8,6 +8,18 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: integration
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Work with Browsing integrations {#Browsing}
 
@@ -160,3 +172,15 @@ When a parameter is linked to a **[!UICONTROL Browsing]** integration, marketers
 * [Work with Standard integrations](integrations-create.md)
 * [Integrations troubleshooting FAQ](vendor-integration-faq.md#troubleshooting)
 * [Monitoring & Troubleshooting](../../rp_landing_pages/troubleshoot-journey-landing-page.md)
+
+## How-to video {#how-to}
+
+Watch the video below to learn how to configure a Browsing integration for an external API and link it to a Standard integration, so marketers can search, browse, and select items in the Adobe Journey Optimizer editor without manually entering values.
+
++++ See video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3504295/?learn=on)
+
++++
+
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-integrations-browsing.md}}

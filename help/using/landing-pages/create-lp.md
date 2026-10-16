@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landing, landing page, creation, publish
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-TQID: https://experienceleague.adobe.com/EZ4dKkk6sFemC9-KqH4zYoMGVQU7nxtGnaUJ-mPJkQU
+TQID: 'https://experienceleague.adobe.com/EZ4dKkk6sFemC9-KqH4zYoMGVQU7nxtGnaUJ-mPJkQU'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b19d9237-76be-466d-a869-aacf2d72205f
     internal-label: Landing pages

@@ -5,6 +5,9 @@ title: Connect your systems and environments
 description: Connect your systems and environments
 redpen-status: CREATED_||_2025-08-11_21-18-12
 exl-id: fe784f79-f8a2-4091-a5f0-3e44a1838c1c
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Connect your systems and environments{#section-overview}
 

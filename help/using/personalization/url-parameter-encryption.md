@@ -9,12 +9,23 @@ role: Admin
 level: Intermediate
 keywords: encryption, URL, tracking, landing page, key registry, personalization, security, privacy, sandbox
 exl-id: 82e2b6e4-769f-4bdc-b2e2-19352fbaec8e
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
     internal-label: Build expressions
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
 subfeature_v2:
   - id: cb09dcb7-3367-4b63-b02c-8a1356eb876e
     internal-label: Main functions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Encrypt URL parameters {#url-parameter-encryption}
 
@@ -30,7 +41,7 @@ subfeature_v2:
 
 ## Why use URL parameter encryption? {#why-url-parameter-encryption}
 
-Personalized tracking links and landing page URLs often include profile attributes, identifiers, tokens, or other values in the query string. Those parameters are usually visible as plain text in the email or SMS, and they stay readable if someone copies, shares, or bookmarks the link. This can be a security and privacy risk when the values can include personally identifiable information (PII) or other sensitive data they must protect.
+Personalized tracking links and landing page URLs often include profile attributes, identifiers, tokens, or other values in the query string. Those parameters are usually visible as plain text in the email or mobile message, and they stay readable if someone copies, shares, or bookmarks the link. This can be a security and privacy risk when the values can include personally identifiable information (PII) or other sensitive data they must protect.
 
 [!DNL Journey Optimizer] provides an encryption helper in the personalization editor so you can encrypt any expression value at render time (for example a profile attribute, a token, or a string you built from several fields). Encryption always requires a key from your organization's registry.
 

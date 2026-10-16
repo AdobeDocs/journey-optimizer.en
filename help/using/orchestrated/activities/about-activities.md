@@ -44,7 +44,7 @@ Orchestrated campaign activities are grouped into several categories. Depending 
 
 ## Guardrails and limitations {#activity-guardrails}
 
-* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities at publication (Email, SMS, Push, or Direct mail). Targeting, Data Management, and flow control activities do not count toward this limit.
+* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities at publication (Email, Mobile message, Push, or Direct mail). Targeting, Data Management, and flow control activities do not count toward this limit.
 
 * **Canvas activities limit** - The number of activities on the canvas is limited to 500. For maintainability and performance, keep workflows under 100 activities in practice.
 

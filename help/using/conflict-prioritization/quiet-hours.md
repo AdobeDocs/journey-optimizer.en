@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
 exl-id: defebd53-fa80-4720-acdc-0f41ceb00214
-TQID: https://experienceleague.adobe.com/I-zCSU3tp4n-i-EEkx118svN7R9bfUh0phCB-B5ZZ5Q
+TQID: 'https://experienceleague.adobe.com/I-zCSU3tp4n-i-EEkx118svN7R9bfUh0phCB-B5ZZ5Q'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Conflict & prioritization
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: 736fce34-6237-51e6-acd3-371abb174feb
+    internal-label: Rules
 subfeature_v2:
   - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
     internal-label: Business rules
@@ -39,13 +41,13 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Define time-based exclusions for email, SMS, push, and WhatsApp so you can avoid messaging customers at the wrong times and respect their preferences and compliance requirements.
+**On this page:** Define time-based exclusions for email, mobile, push, and WhatsApp so you can avoid messaging customers at the wrong times and respect their preferences and compliance requirements.
 
 >[!ENDSHADEBOX]
 
 ## What are quiet hours 
 
-**Quiet hours** let you define time-based exclusions for **Email**, **SMS**, **Push**, and **WhatsApp** channels. They ensure that no messages are sent during specific periods of time, helping you respect customer preferences and compliance requirements.
+**Quiet hours** let you define time-based exclusions for **Email**, **Mobile message**, **Push**, and **WhatsApp** channels. They ensure that no messages are sent during specific periods of time, helping you respect customer preferences and compliance requirements.
 
 You can apply quiet hours through **rule sets**, which can be assigned to individual actions in campaigns or journeys for precise control.
 
@@ -60,7 +62,7 @@ By streamlining these processes, you can enhance customer experience, save time,
 
 ## Guardrails & limitations
 
-* **Supported channels** - Email, SMS, Push, and WhatsApp.
+* **Supported channels** - Email, Mobile message, Push, and WhatsApp.
 * **Propagation delay** – Updates to a quiet hours rule may take up to 12 hours to be applied to channel actions that already use that rule.
 * **High-volume latency** – In cases of high-volume communications, the system may take additional time to begin successfully enforcing quiet hour suppressions.
 
@@ -155,7 +157,7 @@ If your rule is ready, activate it and complete the configuration of your rule s
 
 ## Apply Quiet hours to journeys and campaigns {#apply}
 
-Once your rule is saved and the rule set is activated, you can apply it to actions in journeys and campaigns. Supported channels: **Email, SMS, Push, WhatsApp**. Browse the tabs below for more details.
+Once your rule is saved and the rule set is activated, you can apply it to actions in journeys and campaigns. Supported channels: **Email, Mobile message, Push, WhatsApp**. Browse the tabs below for more details.
 
 >[!BEGINTABS]
 

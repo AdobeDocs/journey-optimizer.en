@@ -24,7 +24,7 @@ For complete understanding, this information should be combined with the documen
 * **Entry capping**: Limits the number of journey entries over a given period for a profile *(product-specific)*
 * **Concurrency capping**: Limits how many journeys a profile can be enrolled in simultaneously *(product-specific)*
 * **[!UICONTROL Prioritization look ahead]**: Field that arbitrates journey entries based on priority scores over a chosen period, scanning upcoming scheduled Read-Audience journeys *(product-specific)*
-* **Arbitration**: Using priority scores to decide which journeys a profile enters when caps apply *(product-specific)*
+* **Arbitration**: Using priority scores to arbitrate journey entries *(product-specific)*
 * **[!UICONTROL Capping]**: Field setting the maximum number of journeys a profile can enter or be enrolled in simultaneously *(product-specific)*
 * **CAP_REACHED / LOWER_PRIORITY**: Discard sub-reasons that identify why a profile did not enter a journey *(product-specific)*
 
@@ -35,24 +35,20 @@ For complete understanding, this information should be combined with the documen
 * Durations are based on the UTC time zone (for example, a Daily cap resets at midnight UTC).
 * For entry capping, the system takes into account the priority of upcoming scheduled journeys that have the same rule applied, and can suppress a profile from a lower-priority journey when a higher-priority one is scheduled.
 * If a journey is activated immediately, it can take up to 10 minutes for the system to begin suppressing customers; a message displays if you try to publish with a start time less than 10 minutes away.
-* Providing a priority score of 100 to a journey ensures that it is entered into.
 
 **Terminology:**
 
-* Canonical name: journey capping — Acronym: n/a — variants: journey capping & arbitration, journey rule set
+* Canonical name: journey capping — variants: journey capping & arbitration
 * Synonyms: none
 * Do not confuse: "[!UICONTROL Journey Entry Cap]" (entries over a period) ≠ "[!UICONTROL Journey Concurrency Cap]" (simultaneous enrollments)
-* Do not confuse: "journey capping" (limits journey entries or concurrency) ≠ "channel capping" (limits messages per channel and communication type)
-* Do not confuse: "CAP_REACHED" (a cap was reached) ≠ "LOWER_PRIORITY" (excluded due to a lower priority)
 
 **FAQ:**
 
 * **Q: What is the difference between entry and concurrency capping?** — Entry capping limits journey entries over a period; concurrency capping limits how many journeys a profile is enrolled in simultaneously.
-* **Q: How are entries arbitrated when a cap is reached?** — By priority scores; the [!UICONTROL Prioritization look ahead] scans upcoming scheduled Read-Audience journeys to suppress entry when a higher-priority journey is coming up.
-* **Q: How can I guarantee a journey is entered?** — Give it a priority score of 100.
+* **Q: How are journey entries arbitrated?** — By priority scores; the [!UICONTROL Prioritization look ahead] scans upcoming scheduled Read-Audience journeys to suppress entry when a higher-priority journey is coming up.
 * **Q: Why can suppression be delayed after activation?** — If a journey is activated immediately, it can take up to 10 minutes for the system to begin suppressing customers.
 * **Q: How do I find why a profile did not enter a journey?** — Check the [!UICONTROL Journey Exclusions] table in the journey report, or query the discard sub-reason (CAP_REACHED or LOWER_PRIORITY).
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 42708cf1 -->
+<!-- ai-section-version: 1 | source-hash: 3c40eca0 -->
