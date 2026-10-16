@@ -143,7 +143,7 @@ When a recipient opts out through any of the above mechanisms, the following occ
 
 * The profile's consent attribute (`consents.marketing.email.val`) is updated to `n` in Adobe Experience Platform.
 * The profile is immediately excluded from future marketing email sends in journeys and campaigns.
-* The opt-out information is stored in the AEP Consent Service Dataset.
+* The opt-out information is stored in the AEP Consent Service Dataset. For the fields, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 * Journey Optimizer performs a consent check at the channel level before each send, ensuring opted-out profiles do not receive marketing communications.
 
 [Learn more about opt-out management](opt-out.md)

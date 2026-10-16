@@ -234,7 +234,7 @@ When the allowed list is [deactivated](#deactivate-allow-list), all the emails t
 
 ## Exclusion reporting {#reporting}
 
-When the allowed list is active, you can retrieve email addresses or domains that were excluded from a sending because they were not on the allowed list. To do this, you can use the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to make the API calls below.
+When the allowed list is active, you can retrieve email addresses or domains that were excluded from a sending because they were not on the allowed list. To do this, you can use the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to make the API calls below. For the fields of the message feedback events, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 To get the **number of emails** that were not sent because the recipients were not on the allowed list, use the following query:
 

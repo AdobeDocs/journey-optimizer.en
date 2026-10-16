@@ -113,6 +113,8 @@ To create a webhook, follow these steps:
 
 After a message execution, **[!DNL Journey Optimizer]** sends the following payload to the configured endpoint.
 
+For the definition of the message feedback event fields, such as `messageExclusion`, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
+
 The payload includes the following campaign and Mobile delivery details:
 
 * **`messageExecution.campaignType`** - Type of campaign: `Scheduled` or `ApiTriggered`.

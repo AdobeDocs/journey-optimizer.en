@@ -63,7 +63,7 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 
 ## Impacted datasets {#datasets}
 
-The table below lists all Journey Optimizer system-generated datasets with their respective Time-To-Live in the data lake and the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}. Time-series datasets are subject to TTL; record-type datasets are listed for reference and marked `n/a` in both columns. The Availability column indicates whether a dataset is included by default or requires a specific add-on or license.
+The table below lists all Journey Optimizer system-generated datasets with their respective Time-To-Live in the data lake and the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}. Time-series datasets are subject to TTL; record-type datasets are listed for reference and marked `n/a` in both columns. The Availability column indicates whether a dataset is included by default or requires a specific add-on or license. For the fields of each schema, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 |Dataset|Availability|Data Lake TTL|Profile Store TTL|
 |------|-----|-----|-----|
