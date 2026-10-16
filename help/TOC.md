@@ -279,18 +279,16 @@ nudge: yes
     + [Request approval](using/test-approve/request-approval.md)
     + [Approve a request](using/test-approve/review-approve-request.md)
 + Monitor & troubleshoot {#monitor}
-  + [Get started with monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
+  + [Track, monitor and troubleshoot](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
   + [Tracking in Journey Optimizer](using/start/get-started-tracking.md)
   + Email deliverability {#deliverability}
     + [Get started with deliverability](using/reports/deliverability.md)
     + [Understand the suppression list](using/reports/suppression-list.md)
     + [New DMARC requirement](using/configuration/dmarc-record-update.md)
-  + Monitor alerts & error codes {#monitor-alerts-errors}
-    + [System alerts](using/reports/alerts.md)
-    + [Error codes reference](using/building-journeys/error-codes-reference.md)
+  + [System alerts](using/reports/alerts.md)
   + Troubleshooting {#troubleshooting}
     + {hide-from-toc} [Troubleshooting overview](/help/rp_landing_pages/troubleshooting-overview-landing-page.md)
-    + [Troubleshooting FAQ](using/start/troubleshooting.md)
+    + [Error codes reference](using/building-journeys/error-codes-reference.md)
     + Journeys troubleshooting {#troubleshoot-journey}
       + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
       + {hide-from-toc} [Journey validation errors](using/building-journeys/journey-validation-errors.md)
@@ -313,6 +311,7 @@ nudge: yes
       + {hide-from-toc} [Subdomain delegation and DNS errors](using/configuration/subdomain-delegation-errors.md)
       + {hide-from-toc} [IP warmup plan errors](using/configuration/ip-warmup-plan-errors.md)
       + {hide-from-toc} [Custom channel, inbound action, and reporting dataset errors](using/configuration/channel-reporting-errors.md)
+    + [Troubleshooting FAQ](using/start/troubleshooting.md)
 + Communication channels {#channels}
   + [Get started with communication channels](using/channels/gs-channels.md)
   + {hide-from-toc} [Destinations channel](using/destinations/destinations.md)
