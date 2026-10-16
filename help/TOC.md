@@ -268,6 +268,7 @@ nudge: yes
     + [Select test profiles](using/content-management/test-profiles.md)
     + [Preview using test profiles](using/content-management/preview.md)
     + [Send proofs using test profile data](using/content-management/proofs.md)
+    + {hide-from-toc} [Proof and simulation errors](using/content-management/proof-simulation-errors.md)
     + [Test email rendering](using/content-management/rendering.md)
     + {hide-from-toc} [Simulate inbound experiences](using/test-approve/simulate-inbound-experiences.md)
     + [Simulate content variations (classic experience)](using/test-approve/simulate-sample-input.md)
