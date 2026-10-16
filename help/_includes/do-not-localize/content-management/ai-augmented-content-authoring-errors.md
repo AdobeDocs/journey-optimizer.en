@@ -11,14 +11,14 @@ For complete understanding, this information should be combined with the documen
 
 * **TL;DR:** The page explains the cause and the fix for the errors and warnings that [!DNL Adobe Journey Optimizer] returns when you validate or publish the content of an email, push, mobile message (SMS), in-app, or direct mail message, grouped by theme.
 
-### Intents
+**Intents:**
 
 * Identify what a content error code such as `CJMMAS-2000-422` means.
 * Tell a warning (status 200) from an error that blocks saving or publishing.
 * Find the cause and the fix of an error for email, push, mobile message (SMS), in-app, or direct mail content.
 * Find the cause and the fix of a permission, lifecycle, channel configuration, decision policy, or expression template error.
 
-### Glossary
+**Glossary:**
 
 * **Content errors:** errors and warnings returned when you validate or publish message content. Prefixes: **CJMMAS** and **CJMRT**.
 * **Error code** format: prefix, error number, HTTP status. Example: `CJMMAS-2000-422`.
@@ -27,7 +27,7 @@ For complete understanding, this information should be combined with the documen
 * **Extraction file:** the file defined for a direct mail message. Its errors are in the **Direct mail** section.
 * **Expression template:** the template saved as an expression fragment or template. Its errors are in the **Expression templates** section.
 
-### Guardrails
+**Guardrails:**
 
 * **Email size:** the content larger than the recommended size can truncate the email in some email clients (Gmail clips an email above 100 KB). The message `CJMMAS-2003-200` gives the recommended size in `{sizeLimit}`, and the message `CJMMAS-2060-422` gives the limit in `{sizeLimit}`.
 * **Push payload:** the payload of the push notification is larger than the limit (4 KB) for `CJMMAS-2009-422` and `CJMMAS-2010-422`.
@@ -37,7 +37,7 @@ For complete understanding, this information should be combined with the documen
 * **Channel configuration field length:** a field longer than the maximum length shown in the message returns `CJMRT-030007-400`.
 * **Published messages:** a published message cannot be set back to Draft (`CJMMAS-1053-400`) or updated directly (`CJMMAS-1054-400`). A new version can only be created from a published (Live) message (`CJMMAS-1060-400`).
 
-### Terminology
+**Terminology:**
 
 * Canonical name: Content authoring errors — variants: content errors.
 * Prefixes: **CJMMAS**, **CJMRT**, and **JOMAL** (used in the Message lifecycle and saving, and the Permissions sections).
@@ -46,7 +46,7 @@ For complete understanding, this information should be combined with the documen
 * **Do not confuse:** a warning (status 200, does not block saving or publishing) and an error with another status such as 400, 403, 409, or 422. Some codes in the same row have different statuses: for example `CJMMAS-2001-200` (warning) and `CJMMAS-2020-422`.
 * **Do not confuse:** `403` (permission) and `401` (session not valid or expired).
 
-### FAQ
+**FAQ:**
 
 **What do the CJMMAS and CJMRT prefixes mean?**
 Content errors use the prefixes **CJMMAS** and **CJMRT**, followed by an error number and an HTTP status.
@@ -69,7 +69,7 @@ Your role lacks the permission named in the message (write, read, publish, or de
 **The save fails because the item was updated elsewhere (`JOMAL-1101-409`). What do I do?**
 Someone else, or another browser tab, saved a newer version. Refresh the page to load the latest version, then reapply your changes and save again.
 
-### Troubleshooting
+**Troubleshooting:**
 
 * **Email content.** Causes and fixes:
   * Subject line: missing or on several lines (`CJMMAS-2000-422`, `2061-422`).
@@ -90,7 +90,7 @@ Someone else, or another browser tab, saved a newer version. Refresh the page to
 * **Decision policies and channel configuration fields.** Causes: an empty mandatory field (`CJMRT-030002-400`), a field that is too long (`030007-400`), a link with no URL (`030008-400`), too many decisions (`030014-422`), a decision policy that does not exist or does not belong to this campaign (`030015-422`, `030017-422`), content with a decision policy saved as a fragment (`030018-422`). Fix: fill in the mandatory fields, shorten the value, add the URL or remove the link, reduce the number of decision policies, select a decision policy that exists in the campaign, or remove the decision policy before saving the fragment.
 * **Expression templates.** Causes: an empty or not valid template (`CJMMAS-2037-422`, `2059-422`), a template larger than 200 KB (`2038-422`). Fix: add content, fix the syntax, or reduce the size.
 
-### Related pages
+**Related pages:**
 
 * Opt-out links: Email opt-out management (email/email-opt-out.md)
 * Email checks: Content checks (email/content-check.md)

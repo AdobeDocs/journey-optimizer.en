@@ -11,14 +11,14 @@ For complete understanding, this information should be combined with the documen
 
 * **TL;DR:** The page explains the cause and the fix for the validation errors that [!DNL Adobe Journey Optimizer] returns when you validate, test, or publish a journey, grouped by the activity or rule involved.
 
-### Intents
+**Intents:**
 
 * Identify what a journey validation error code such as `AJOJAS-2030-400` means.
 * Find the cause and the fix of an error returned by **[!UICONTROL Validate]**, by a test, or by publication.
 * Find which activity or rule an error family relates to (structure, **[!UICONTROL Read audience]**, Adobe Campaign actions, **[!UICONTROL Update profile]**, **[!UICONTROL Dataset lookup]**, **[!UICONTROL Jump]**, **[!UICONTROL Wait]**, **[!UICONTROL Condition]**, events, **[!UICONTROL Content decision]**, Select package, versions, fragments, version comparison).
 * Find the limits that trigger some of the errors (fields, keys, journey size, fragment activities).
 
-### Glossary
+**Glossary:**
 
 * **[!UICONTROL Validate]** *(product-specific)*: selected in the journey header. Selecting it, or trying to test or publish a journey, runs the journey check.
 * **[!UICONTROL Alerts]** *(product-specific)*: the panel where the journey check lists the errors.
@@ -27,7 +27,7 @@ For complete understanding, this information should be combined with the documen
 * **Fragment** *(product-specific)*: a journey fragment. Fragment errors are in the **Journey fragments** section of the page.
 * **Select package** *(product-specific)*: the **Select** license package. Its errors apply to unitary journeys.
 
-### Guardrails
+**Guardrails:**
 
 * **Dataset lookup:** only leaf fields can be selected, up to 20 (error `AJOJAS-2073-400`). A lookup can use up to 50 keys (error `AJOJAS-2074-400`).
 * **Journey size:** error `AJOJAS-7003-413` is returned when the journey is larger than 2 MB. The **[!UICONTROL Current journey payload size]** indicator in the journey properties shows the size.
@@ -38,7 +38,7 @@ For complete understanding, this information should be combined with the documen
 * **Version types:** all versions of a journey must start with the same type of activity as version 1: event, **[!UICONTROL Audience qualification]**, or **[!UICONTROL Read audience]** (error `AJOJAS-3024-400`).
 * **Fragment names:** names must be unique in a sandbox (errors `AJOJAS-8001-409` and `AJOJAS-8008-409`).
 
-### Terminology
+**Terminology:**
 
 * Canonical name: Journey validation errors — variants: validation errors, journey errors.
 * Prefix: **AJOJAS** (Journey Authoring Service). Other error code prefixes are in the error codes reference.
@@ -47,7 +47,7 @@ For complete understanding, this information should be combined with the documen
 * The "Read segment" messages (`AJOJAS-2007-400`, `AJOJAS-3003-400`) are listed in the **Read audience and identity namespace** section, and the fix names the **[!UICONTROL Read audience]** activity.
 * **Do not confuse:** an event timeout (`AJOJAS-2041-400`, **[!UICONTROL Define the event timeout]**) and the timeout or error path of an action (`AJOJAS-5001-400`, Select package).
 
-### FAQ
+**FAQ:**
 
 **What does the AJOJAS prefix mean?**
 Validation errors use the prefix **AJOJAS** (Journey Authoring Service), followed by an error number and an HTTP status.
@@ -73,7 +73,7 @@ The journey is larger than 2 MB. Simplify complex expressions and conditions, re
 **A fragment could not be activated because it has validation errors (`AJOJAS-8025-400`, `8033-400`). What do I do?**
 Fix the errors shown on the fragment canvas, then activate again.
 
-### Troubleshooting
+**Troubleshooting:**
 
 * **Journey structure.** Causes: no entry activity, or activities in a layout that is not supported (`AJOJAS-1000-400`, `3018-400`, `3027-400`, `3028-403`). Fix: add an entry activity, place activities one after the other, keep one timeout on parallel events, and disable the timeout on the first event of the journey.
 * **Read audience and identity namespace.** Causes: incomplete schedule (`AJOJAS-2007-400`, `2008-400`, `2009-400`), more than one **[!UICONTROL Read audience]** activity (`3003-400`), activity not first or not right after a business event (`3005-400`, `3006-400`), missing identity namespace (`AJOJAS-3013-400` to `3017-400`). Fix: in **[!UICONTROL Schedule]**, set the recurrence, the time of day, and the start date; keep one activity placed first or right after a business event; select the identity namespace in the first activity of the journey. A namespace is required for journeys that use **[!UICONTROL Read audience]**, **[!UICONTROL Audience qualification]**, message actions, jump actions, or profile updates.
@@ -96,7 +96,7 @@ Fix the errors shown on the fragment canvas, then activate again.
   * Permission: no access to the label to apply (`AJOJAS-7104-403`). Ask your administrator for access, or choose another label.
 * **Compare journey versions.** Causes: the same version selected twice, one version only, versions not in chronological order (`AJOJAS-11001-400`, `11004-400`, `11005-400`), or disconnected activities (`11007-400`). Fix: select two different versions in chronological order, and connect all activities (or delete the unused ones).
 
-### Related pages
+**Related pages:**
 
 * Other error code prefixes and best practices to avoid common errors: Error codes reference (building-journeys/error-codes-reference.md)
 * Validating and publishing a journey: Validate and publish a journey (building-journeys/publish-journey.md)
