@@ -93,3 +93,5 @@ These errors occur when you create or delete a seed list.
 * [Create IP pools](ip-pools.md)
 * [Set up channel configurations](channel-surfaces.md)
 * [Error codes reference](../building-journeys/error-codes-reference.md)
+
+{{$include /help/_includes/do-not-localize/configuration/ai-augmented-subdomain-delegation-errors.md}}

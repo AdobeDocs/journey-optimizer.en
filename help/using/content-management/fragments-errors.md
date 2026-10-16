@@ -103,3 +103,5 @@ See also [Create and manage assets](../integrations/assets.md).
 * [Work with Experience Manager Content Fragments](../integrations/aem-fragments.md)
 * [Considerations and troubleshooting for AEM Content Fragments](../integrations/aem-fragments-limitations.md)
 * [Error codes reference](../building-journeys/error-codes-reference.md)
+
+{{$include /help/_includes/do-not-localize/content-management/ai-augmented-fragments-errors.md}}

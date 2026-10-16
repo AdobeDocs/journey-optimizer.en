@@ -90,3 +90,5 @@ See also [Create multilingual content](multilingual-manual.md#create-multilingua
 * [Create multilingual content with manual translation](multilingual-manual.md)
 * [Create multilingual content with automated translation](multilingual-automated.md)
 * [Error codes reference](../building-journeys/error-codes-reference.md)
+
+{{$include /help/_includes/do-not-localize/content-management/ai-augmented-multilingual-errors.md}}

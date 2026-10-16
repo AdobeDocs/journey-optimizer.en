@@ -117,3 +117,5 @@ These errors occur when a name is already used, or when your user does not have 
 * [Ingest data](ingest-data.md)
 * [Guardrails and limitations](guardrails.md)
 * [Error codes reference](../building-journeys/error-codes-reference.md)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-relational-schema-errors.md}}

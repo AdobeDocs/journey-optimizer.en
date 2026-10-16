@@ -68,3 +68,5 @@ See also [Reporting and experimentation prerequisites](../reports/reporting-conf
 * [Troubleshoot inbound actions](../building-journeys/troubleshooting-inbound.md)
 * [Reporting and experimentation prerequisites](../reports/reporting-configuration.md)
 * [Error codes reference](../building-journeys/error-codes-reference.md)
+
+{{$include /help/_includes/do-not-localize/configuration/ai-augmented-channel-reporting-errors.md}}

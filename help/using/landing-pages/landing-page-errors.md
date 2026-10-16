@@ -111,3 +111,5 @@ See also [Manage your landing pages](manage-lp.md).
 * [Manage your landing pages](manage-lp.md)
 * [Landing pages guardrails](../start/guardrails.md#lp-guardrails)
 * [Error codes reference](../building-journeys/error-codes-reference.md)
+
+{{$include /help/_includes/do-not-localize/landing-pages/ai-augmented-landing-page-errors.md}}
