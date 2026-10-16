@@ -92,7 +92,7 @@ These errors appear when you check, test or publish a journey. Go to the section
 
 | Error page | Sections |
 | --- | --- |
-| [Journey validation errors](../using/building-journeys/journey-validation-errors.md) | [Journey structure](../using/building-journeys/journey-validation-errors.md#structure), [Action activities](../using/building-journeys/journey-validation-errors.md#actions), [Events and reactions](../using/building-journeys/journey-validation-errors.md#events), [License package limits (Select)](../using/building-journeys/journey-validation-errors.md#select-package), [Versions, test mode, and size](../using/building-journeys/journey-validation-errors.md#versions) |
+| [Journey validation errors](../using/building-journeys/journey-validation-errors.md) | [Journey structure](../using/building-journeys/journey-validation-errors.md#structure) \| [Action activities](../using/building-journeys/journey-validation-errors.md#actions) \| [Events and reactions](../using/building-journeys/journey-validation-errors.md#events) \| [License package limits (Select)](../using/building-journeys/journey-validation-errors.md#select-package) \| [Versions, test mode, and size](../using/building-journeys/journey-validation-errors.md#versions) |
 
 ### Campaigns and audiences {#campaigns-and-audiences}
 
@@ -100,10 +100,10 @@ These errors appear when you set up, schedule or activate an Action, API-trigger
 
 | Error page | Sections |
 | --- | --- |
-| [Campaign errors](../using/campaigns/campaign-errors.md) | [Audience](../using/campaigns/campaign-errors.md#audience), [Schedule and approval](../using/campaigns/campaign-errors.md#schedule), [Rapid delivery](../using/campaigns/campaign-errors.md#rapid) |
-| [Orchestrated campaign errors](../using/orchestrated/orchestrated-campaign-errors.md) | [Campaign status and lifecycle](../using/orchestrated/orchestrated-campaign-errors.md#status), [Activities](../using/orchestrated/orchestrated-campaign-errors.md#activities), [Signals and chained campaigns](../using/orchestrated/orchestrated-campaign-errors.md#signal) |
-| [Relational schema and dataset errors](../using/orchestrated/relational-schema-errors.md) | [Files and formats](../using/orchestrated/relational-schema-errors.md#files), [Primary key and version descriptor](../using/orchestrated/relational-schema-errors.md#keys), [Relationships](../using/orchestrated/relational-schema-errors.md#relationships) |
-| [Audience composition errors](../using/audience/audience-composition-errors.md) | [Enrichment](../using/audience/audience-composition-errors.md#enrichment), [Publication, limits, and permissions](../using/audience/audience-composition-errors.md#publication) |
+| [Campaign errors](../using/campaigns/campaign-errors.md) | [Audience](../using/campaigns/campaign-errors.md#audience) \| [Schedule and approval](../using/campaigns/campaign-errors.md#schedule) \| [Rapid delivery](../using/campaigns/campaign-errors.md#rapid) |
+| [Orchestrated campaign errors](../using/orchestrated/orchestrated-campaign-errors.md) | [Campaign status and lifecycle](../using/orchestrated/orchestrated-campaign-errors.md#status) \| [Activities](../using/orchestrated/orchestrated-campaign-errors.md#activities) \| [Signals and chained campaigns](../using/orchestrated/orchestrated-campaign-errors.md#signal) |
+| [Relational schema and dataset errors](../using/orchestrated/relational-schema-errors.md) | [Files and formats](../using/orchestrated/relational-schema-errors.md#files) \| [Primary key and version descriptor](../using/orchestrated/relational-schema-errors.md#keys) \| [Relationships](../using/orchestrated/relational-schema-errors.md#relationships) |
+| [Audience composition errors](../using/audience/audience-composition-errors.md) | [Enrichment](../using/audience/audience-composition-errors.md#enrichment) \| [Publication, limits, and permissions](../using/audience/audience-composition-errors.md#publication) |
 
 ### Content authoring and personalization {#content-authoring-and-personalization}
 
@@ -111,9 +111,9 @@ These errors appear when you validate or save the content of a message, when an 
 
 | Error page | Sections |
 | --- | --- |
-| [Content authoring errors](../using/content-management/content-authoring-errors.md) | [Email content](../using/content-management/content-authoring-errors.md#email), [Push notifications](../using/content-management/content-authoring-errors.md#push), [Message lifecycle and saving](../using/content-management/content-authoring-errors.md#lifecycle), [Permissions](../using/content-management/content-authoring-errors.md#permissions) |
-| [Personalization errors](../using/personalization/personalization-errors.md) | [Variables and paths](../using/personalization/personalization-errors.md#variables), [Helpers](../using/personalization/personalization-errors.md#helpers), [URL parameter encryption keys](../using/personalization/personalization-errors.md#encryption) |
-| [Proof and simulation errors](../using/content-management/proof-simulation-errors.md) | [Proofs and previews](../using/content-management/proof-simulation-errors.md#proofs), [Simulated users](../using/content-management/proof-simulation-errors.md#simulated-users) |
+| [Content authoring errors](../using/content-management/content-authoring-errors.md) | [Email content](../using/content-management/content-authoring-errors.md#email) \| [Push notifications](../using/content-management/content-authoring-errors.md#push) \| [Message lifecycle and saving](../using/content-management/content-authoring-errors.md#lifecycle) \| [Permissions](../using/content-management/content-authoring-errors.md#permissions) |
+| [Personalization errors](../using/personalization/personalization-errors.md) | [Variables and paths](../using/personalization/personalization-errors.md#variables) \| [Helpers](../using/personalization/personalization-errors.md#helpers) \| [URL parameter encryption keys](../using/personalization/personalization-errors.md#encryption) |
+| [Proof and simulation errors](../using/content-management/proof-simulation-errors.md) | [Proofs and previews](../using/content-management/proof-simulation-errors.md#proofs) \| [Simulated users](../using/content-management/proof-simulation-errors.md#simulated-users) |
 
 ### Fragments, multilingual content and landing pages {#fragments-multilingual-content-and-landing-pages}
 
@@ -121,9 +121,9 @@ These errors appear when you publish a fragment or use AEM content, when you set
 
 | Error page | Sections |
 | --- | --- |
-| [Fragments and AEM content errors](../using/content-management/fragments-errors.md) | [Publishing fragments](../using/content-management/fragments-errors.md#publication), [AEM content fragments](../using/content-management/fragments-errors.md#aem-fragments), [AEM assets](../using/content-management/fragments-errors.md#aem-assets) |
-| [Multilingual content errors](../using/content-management/multilingual-errors.md) | [Language settings](../using/content-management/multilingual-errors.md#language-settings), [Translation projects](../using/content-management/multilingual-errors.md#translation-project) |
-| [Landing page errors](../using/landing-pages/landing-page-errors.md) | [Publication and status](../using/landing-pages/landing-page-errors.md#publication), [Forms and subscription lists](../using/landing-pages/landing-page-errors.md#forms), [Expiration](../using/landing-pages/landing-page-errors.md#expiration) |
+| [Fragments and AEM content errors](../using/content-management/fragments-errors.md) | [Publishing fragments](../using/content-management/fragments-errors.md#publication) \| [AEM content fragments](../using/content-management/fragments-errors.md#aem-fragments) \| [AEM assets](../using/content-management/fragments-errors.md#aem-assets) |
+| [Multilingual content errors](../using/content-management/multilingual-errors.md) | [Language settings](../using/content-management/multilingual-errors.md#language-settings) \| [Translation projects](../using/content-management/multilingual-errors.md#translation-project) |
+| [Landing page errors](../using/landing-pages/landing-page-errors.md) | [Publication and status](../using/landing-pages/landing-page-errors.md#publication) \| [Forms and subscription lists](../using/landing-pages/landing-page-errors.md#forms) \| [Expiration](../using/landing-pages/landing-page-errors.md#expiration) |
 
 ### Deliverability setup {#deliverability-setup}
 
@@ -131,8 +131,8 @@ These errors appear when you delegate a subdomain, create DNS records or seed li
 
 | Error page | Sections |
 | --- | --- |
-| [Subdomain delegation and DNS errors](../using/configuration/subdomain-delegation-errors.md) | [Subdomain delegation](../using/configuration/subdomain-delegation-errors.md#delegation), [DNS records](../using/configuration/subdomain-delegation-errors.md#dns), [Seed lists](../using/configuration/subdomain-delegation-errors.md#seed) |
-| [IP warmup plan errors](../using/configuration/ip-warmup-plan-errors.md) | [Plan file](../using/configuration/ip-warmup-plan-errors.md#file), [Runs and activation](../using/configuration/ip-warmup-plan-errors.md#runs), [Run failures](../using/configuration/ip-warmup-plan-errors.md#failures) |
+| [Subdomain delegation and DNS errors](../using/configuration/subdomain-delegation-errors.md) | [Subdomain delegation](../using/configuration/subdomain-delegation-errors.md#delegation) \| [DNS records](../using/configuration/subdomain-delegation-errors.md#dns) \| [Seed lists](../using/configuration/subdomain-delegation-errors.md#seed) |
+| [IP warmup plan errors](../using/configuration/ip-warmup-plan-errors.md) | [Plan file](../using/configuration/ip-warmup-plan-errors.md#file) \| [Runs and activation](../using/configuration/ip-warmup-plan-errors.md#runs) \| [Run failures](../using/configuration/ip-warmup-plan-errors.md#failures) |
 
 ### Custom channels, inbound actions and reporting {#custom-channels-inbound-actions-and-reporting}
 
@@ -140,7 +140,7 @@ These errors appear when you configure custom channel credentials, when an inbou
 
 | Error page | Sections |
 | --- | --- |
-| [Custom channel, inbound action, and reporting dataset errors](../using/configuration/channel-reporting-errors.md) | [Custom channels](../using/configuration/channel-reporting-errors.md#custom-channel), [Inbound actions](../using/configuration/channel-reporting-errors.md#inbound), [Reporting datasets](../using/configuration/channel-reporting-errors.md#reporting) |
+| [Custom channel, inbound action, and reporting dataset errors](../using/configuration/channel-reporting-errors.md) | [Custom channels](../using/configuration/channel-reporting-errors.md#custom-channel) \| [Inbound actions](../using/configuration/channel-reporting-errors.md#inbound) \| [Reporting datasets](../using/configuration/channel-reporting-errors.md#reporting) |
 
 ## Error code prefixes by feature {#prefixes}
 
