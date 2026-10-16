@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
+* The **Batch delivery** page now clarifies that batch decisioning uses profile snapshot data, which does not include experience events (xEvents). Offers that depend on xEvent data may not qualify, and the fallback offer may be returned. Use profile attributes or audiences instead. [Read more](../offers/batch-delivery.md)
+
 * The **Guardrails and limitations** page now documents the maximum of 10 lookups per inbound message request, including external data and dataset lookups. It explains that exceeding the limit fails the entire request with an HTTP 422 error and provides guidance to consolidate or reduce lookups. [Read more](../start/guardrails.md#inbound-guardrails)
 
 * The **Datasets Time-to-live (TTL) guardrails** and **Guardrails and limitations** pages now state that the TTL rollout to existing customer sandboxes has been delayed by Adobe (originally planned for October 1, 2026). The TTL page also links to the Experience Platform TTL guide for initiating a TTL update outside of this rollout. [Read more](../data/datasets-ttl.md)
