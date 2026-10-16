@@ -60,6 +60,8 @@ See also [Schedule the Action campaign](campaign-schedule.md) and [Review and ac
 |---|---|---|
 | **CJMCMP-2017-400** | The campaign schedule is required | Define the schedule of the campaign. [Learn more](campaign-schedule.md) |
 | **CJMCMP-2120-400** | The selected schedule is invalid and will never be fired. Please update and try again. | The schedule will never run. Set a start date in the future, and an end date after the start date. [Learn more](campaign-schedule.md) |
+| **CJMRT-150001-400** | The schedule will never fire for {triggerExpression}. Please update. | The schedule never produces an execution, for example because its end date is in the past. Update the start date, end date or frequency so that at least one execution is in the future. [Learn more](campaign-schedule.md) |
+| **CJMRT-150002-400** | The End time {endTime} must be set after the Start time {startTime} | The end time is not after the start time. Set an end time later than the start time. [Learn more](campaign-schedule.md#set-an-end-date) |
 | **CJMCMP-2309-400** | The inbound schedule does not match with the campaign schedule | The schedule of the action does not match the schedule of the campaign. Align them. [Learn more](campaign-schedule.md) |
 | **CJMCMP-2121-400** | The campaign is not approved | The campaign is not approved. Request approval, wait for it, then activate the campaign. [Learn more](../test-approve/gs-approval.md) |
 | **CJMCMP-2052-400** | The draft version has already been created | A draft version of the campaign already exists. Open it from the campaign list with **[!UICONTROL Open draft version]**. [Learn more](manage-campaigns.md#statuses) |
