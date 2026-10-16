@@ -38,6 +38,7 @@ For the structure of error codes and the steps to take before you contact suppor
 | CJMMAS 2xxx, CJMRT 030xxx | Content of emails, push notifications, SMS, in-app messages, and direct mail | [Content authoring errors](../using/content-management/content-authoring-errors.md) |
 | CJMMAS 11xx to 17xx and 81xx, AJOCBS, AJOAGS | Fragments, AEM content fragments, and AEM assets | [Fragments and AEM content errors](../using/content-management/fragments-errors.md) |
 | CJMMAS 51xx, CJMRT 0809xx, AJOCTO | Multilingual content and translation | [Multilingual content errors](../using/content-management/multilingual-errors.md) |
+| CJMTL, CJMRT 01xxxx, 07xxxx, 13xxxx, 0816xx | Personalization expressions, helpers, and URL encryption keys | [Personalization errors](../using/personalization/personalization-errors.md) |
 | CJMMAS 3xxx, 107x, and 130x | Landing pages | [Landing page errors](../using/landing-pages/landing-page-errors.md) |
 | CJMPTS, AJOTDS, CJMSAS | Proofs, previews, and simulated users | [Proof and simulation errors](../using/content-management/proof-simulation-errors.md) |
 | CJMRT 0806xx and 0808xx | Subdomain delegation, DNS records, and seed lists | [Subdomain delegation and DNS errors](../using/configuration/subdomain-delegation-errors.md) |
