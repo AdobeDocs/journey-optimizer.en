@@ -134,6 +134,27 @@ Prefixes CJMIAS, CJMRPS and CJMRT 0817xx. Errors on custom channel credentials, 
 
 ::::
 
+## Error code prefixes by feature {#prefixes}
+
+The prefix of an error code tells you which feature raised it. Use the table to open the page that explains the code.
+
+| Error code prefix | Feature | Page |
+| --- | --- | --- |
+| AJOJAS | Journeys: validation before test or publication | [Journey validation errors](../using/building-journeys/journey-validation-errors.md) |
+| CJMCMP, CJMRT 15xxxx | Action and API-triggered campaigns, including schedules | [Campaign errors](../using/campaigns/campaign-errors.md) |
+| CJMOC | Orchestrated campaigns | [Orchestrated campaign errors](../using/orchestrated/orchestrated-campaign-errors.md) |
+| CJMDMS | Relational schemas and datasets | [Relational schema and dataset errors](../using/orchestrated/relational-schema-errors.md) |
+| CJMRT 17xxxx | Audience composition | [Audience composition errors](../using/audience/audience-composition-errors.md) |
+| CJMMAS 10xx and 2xxx, CJMRT 030xxx, JOMAL | Content of emails, push notifications, SMS, in-app messages, and direct mail, including message lifecycle and permissions | [Content authoring errors](../using/content-management/content-authoring-errors.md) |
+| CJMTL, CJMRT 01xxxx, 07xxxx, 13xxxx, 0816xx | Personalization expressions, helpers, and URL encryption keys | [Personalization errors](../using/personalization/personalization-errors.md) |
+| CJMPTS, AJOTDS, CJMSAS | Proofs, previews, and simulated users | [Proof and simulation errors](../using/content-management/proof-simulation-errors.md) |
+| CJMMAS 11xx to 17xx and 81xx, AJOCBS, AJOAGS | Fragments, AEM content fragments, and AEM assets | [Fragments and AEM content errors](../using/content-management/fragments-errors.md) |
+| CJMMAS 51xx, CJMRT 0809xx, AJOCTO | Multilingual content and translation | [Multilingual content errors](../using/content-management/multilingual-errors.md) |
+| CJMMAS 3xxx, 107x, and 130x | Landing pages | [Landing page errors](../using/landing-pages/landing-page-errors.md) |
+| CJMRT 0806xx and 0808xx | Subdomain delegation, DNS records, and seed lists | [Subdomain delegation and DNS errors](../using/configuration/subdomain-delegation-errors.md) |
+| CJMRT 18xxxx | IP warmup plans | [IP warmup plan errors](../using/configuration/ip-warmup-plan-errors.md) |
+| CJMIAS, CJMRPS, CJMRT 0817xx | Inbound actions, reporting datasets, and custom channel credentials | [Custom channel, inbound action, and reporting dataset errors](../using/configuration/channel-reporting-errors.md) |
+
 ## If your error is not listed {#not-listed}
 
 * Check the other troubleshooting guides: [Troubleshoot journey errors](../using/building-journeys/troubleshooting.md), [Troubleshoot journey execution](../using/building-journeys/troubleshooting-execution.md), and [Troubleshoot inbound actions](../using/building-journeys/troubleshooting-inbound.md).
