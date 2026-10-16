@@ -39,7 +39,7 @@ Example: `CJMRT-030012-422` indicates a Journey Runtime error (CJMRT) with error
 
 ## Where to find error codes {#find-error-codes}
 
-Error codes appear in several locations within [!DNL Adobe Journey Optimizer]:
+Error codes appear in the following locations within [!DNL Adobe Journey Optimizer]:
 
 * Journey execution reports and logs
 * Campaign activation screens
@@ -57,7 +57,7 @@ Use this section to find error codes grouped by service.
 
 These errors occur during push notification delivery and message transport operations.
 
-| Error Code | Description | Root Cause | Resolution |
+| Error code | Description | Root cause | Resolution |
 |------------|-------------|-----------|-----------|
 | **CJMPTS-1410-500** | Internal server error on push/channel send action | Channel backend outage, expired credentials, misconfiguration, or provider bug | 1. Retry after delay<br/>2. Check provider configurations and quotas<br/>3. Verify push credentials are valid<br/>4. Test with an alternate channel<br/>5. If persistent, contact Adobe Support with request ID<br/><br/>**Related documentation**: [Push configuration](../push/push-configuration.md) |
 | **CJMPTS-1006-404** | Push/SMS fails with "resource not found" | Referenced provider/channel does not exist, is misspelled, or was deprovisioned | 1. Review and correct provider/channel references and IDs<br/>2. Audit sandbox/organization configuration<br/>3. Verify channel configurations are active<br/>4. Re-create channel configuration if necessary<br/><br/>**Related documentation**: [Channel surfaces](../configuration/channel-surfaces.md) |
@@ -69,9 +69,9 @@ These errors occur during push notification delivery and message transport opera
 
 These errors occur during journey execution, event processing, and API operations.
 
-| Error Code | Description | Root Cause | Resolution |
+| Error code | Description | Root cause | Resolution |
 |------------|-------------|-----------|-----------|
-| **CJMRT-110001-500** | Maximum runs exceeded for workflow step (e.g., IP Affinity Provisioning step times out) | Workflow/provisioning job did not complete within retries/time allowed, often due to infrastructure/service lag or temporary backend issue | 1. Retry after some time<br/>2. Check [Adobe Status](https://status.adobe.com/) for outages<br/>3. Escalate to Adobe Support with workflow/job/org details<br/>4. Provide logs and network captures if available<br/><br/>**Related documentation**: [Journey troubleshooting](troubleshooting.md) |
+| **CJMRT-110001-500** | Maximum runs exceeded for workflow step (e.g., IP Affinity Provisioning step times out) | Workflow/provisioning job did not complete within retries/time allowed, often due to infrastructure/service lag or temporary backend issue | 1. Retry after some time<br/>2. Check [Adobe Status](https://status.adobe.com/){target="_blank"} for outages<br/>3. Escalate to Adobe Support with workflow/job/org details<br/>4. Provide logs and network captures if available<br/><br/>**Related documentation**: [Journey troubleshooting](troubleshooting.md) |
 | **CJMRT-000071-400** | Bad request during journey/test event or API call | Payload/parameters are malformed or missing; input references a non-existent or inactive resource | 1. Review the request body for error details<br/>2. Correct reference/parameter<br/>3. Remove advanced configuration and retry<br/>4. Add features back one by one to identify the issue<br/><br/>**Related documentation**: [Journey troubleshooting](troubleshooting.md), [Events configuration](../event/about-events.md) |
 | **CJMRT-000013-401** | Unauthorized error during message runtime operation/API event | Authentication failure: token is expired, permissions are missing, or the integration/user has lost environment access | 1. Verify permissions and roles<br/>2. Refresh authentication token<br/>3. Use a known-valid user/service account<br/>4. Review product profile assignments<br/><br/>**Related documentation**: [Permissions](../administration/permissions.md) |
 | **CJMRT-080605-400** | Bad request from journey runtime (e.g., node trigger, action, etc.) | Configuration references a removed/renamed or out-of-date feature/template/channel | 1. Validate all resource references<br/>2. Audit journey configuration and feature flags<br/>3. Update broken references<br/>4. Review recent system updates and migrations<br/><br/>**Related documentation**: [Journey creation](journey-gs.md) |
@@ -86,10 +86,10 @@ These errors occur during journey execution, event processing, and API operation
 
 These errors occur when creating, editing, or publishing messages, presets, and content.
 
-| Error Code | Description | Root Cause | Resolution |
+| Error code | Description | Root cause | Resolution |
 |------------|-------------|-----------|-----------|
 | **CJMMAS-1732-500** | Proof has failed - All assets not published when sending proof/test with AEM asset | Recently published asset isn't in AJO yet; asset ID mismatch; cross-repo use; AEM sync lag | 1. Use only published asset IDs from the correct repository/environment<br/>2. Allow time for sync between AEM and AJO<br/>3. Retry with a known-good asset<br/>4. Verify asset publishing status in AEM<br/><br/>**Related documentation**: [Assets integration](../integrations/assets.md) |
-| **CJMMAS-1069-500** | Internal error saving or publishing message template | Backend exception (infrastructure/service bug or content issue); unsupported markup/feature | 1. Simplify or reduce the template complexity<br/>2. Re-add content in incremental steps to identify the issue<br/>3. Check the [Adobe Status page](https://status.adobe.com/)<br/>4. Remove unsupported features or markup<br/><br/>**Related documentation**: [Content templates](../content-management/content-templates.md) |
+| **CJMMAS-1069-500** | Internal error saving or publishing message template | Backend exception (infrastructure/service bug or content issue); unsupported markup/feature | 1. Simplify or reduce the template complexity<br/>2. Re-add content in incremental steps to identify the issue<br/>3. Check the [Adobe Status page](https://status.adobe.com/){target="_blank"}<br/>4. Remove unsupported features or markup<br/><br/>**Related documentation**: [Content templates](../content-management/content-templates.md) |
 | **CJMMAS-1149-400** | Bad request when saving message, preset, or variant | Required fields missing in message or bad configuration | 1. Complete all required fields (marked with asterisk)<br/>2. Validate message/preset configuration<br/>3. Check field value formats and constraints<br/>4. Review validation messages in UI<br/><br/>**Related documentation**: [Email channel](../email/get-started-email.md), [Channel surfaces](../configuration/channel-surfaces.md) |
 | **CJMMAS-2073-422** | Unprocessable entity in message preset edit | Validation error, unsupported field, or improper syntax | 1. Correct syntax/field errors as indicated<br/>2. Compare to a known-good configuration<br/>3. Use message UI validation before saving<br/>4. Review field requirements in documentation<br/><br/>**Related documentation**: [Message presets](../configuration/channel-surfaces.md), [Email settings](../email/email-settings.md) |
 | **CJMMAS-1300-500** | Internal error from message authoring | Backend crash due to infrastructure issue, large content, or service downtime | 1. Simplify template/content (reduce size/complexity)<br/>2. Retry the operation<br/>3. Save work incrementally<br/>4. If persistent, escalate to Adobe Support<br/><br/>**Related documentation**: [Content templates](../content-management/content-templates.md) |
@@ -100,7 +100,7 @@ These errors occur when creating, editing, or publishing messages, presets, and 
 
 These errors occur during campaign creation, configuration, and activation.
 
-| Error Code | Description | Root Cause | Resolution |
+| Error code | Description | Root cause | Resolution |
 |------------|-------------|-----------|-----------|
 | **CJMCMP-6003-400** | "There is at least one incorrect campaign" when publishing/test mode journey/message | Node references a missing, unpublished, or invalid campaign; legacy or cloned journey not creating inlines | 1. Open each message node and verify configuration<br/>2. Re-link or re-add message nodes<br/>3. Activate test mode to force creation of inline campaigns<br/>4. Move to the new journey wizard if issue is frequent<br/><br/>**Related documentation**: [Journey creation](journey-gs.md), [Testing journeys](testing-the-journey.md) |
 | **CJMCMP-2003-400** | UI banner: "The experiment is incorrect" in Email Designer | Stale or missing experiment/data provider; failed experiment cleanup, schema mismatch, or UI validation bug | 1. Remove unused experiment fields<br/>2. Validate schema and data provider connections<br/>3. Reload UI and clear browser cache<br/>4. Recreate node/email if issue unresolved<br/><br/>**Related documentation**: [Content experiments](../content-management/content-experiment.md) |
@@ -111,7 +111,7 @@ These errors occur during campaign creation, configuration, and activation.
 
 These errors occur during message transport and delivery operations.
 
-| Error Code | Description | Root Cause | Resolution |
+| Error code | Description | Root cause | Resolution |
 |------------|-------------|-----------|-----------|
 | **CJMTL-010018-422** | "Personalization not allowed in domain name" when saving/sending content | Overly strict validation temporarily broke dynamic href domain personalization | 1. Refactor links if using domain variables<br/>2. Verify the latest AJO version is in use<br/>3. Retry the operation<br/>4. Use static domains if issue persists<br/><br/>**Related documentation**: [Personalization syntax](../personalization/personalization-syntax.md), [Email design](../email/content-from-scratch.md) |
 | **CJMTL-010011-422** | Unprocessable entity - Push/SMS/Email send fails, says "invalid field" | Payload or recipient/contact data missing or invalid | 1. Inspect logs for specific field errors<br/>2. Fix profile/contact information<br/>3. Validate with test profile<br/>4. Refactor payload format as needed<br/><br/>**Related documentation**: [Profile management](../audience/get-started-profiles.md), [Test profiles](../audience/creating-test-profiles.md) |
@@ -120,7 +120,7 @@ These errors occur during message transport and delivery operations.
 
 These errors occur during reporting configuration and dataset provisioning operations.
 
-| Error Code | Description | Root Cause | Resolution |
+| Error code | Description | Root cause | Resolution |
 |------------|-------------|-----------|-----------|
 | **CJMRPS-1047-409** | "Conflict. Dataset has been added already" when adding reporting dataset | Attempting to add a dataset which is already provisioned | 1. Review dataset configuration in reporting settings<br/>2. Do not re-add datasets already present<br/>3. Use official migration checklists for reporting migration<br/>4. Remove duplicate dataset references<br/><br/>**Related documentation**: [Reporting overview](../reports/gs-reports.md), [Campaign reports](../reports/campaign-global-report-cja.md), [Journey reports](../reports/journey-global-report-cja.md) |
 
@@ -139,11 +139,11 @@ When encountering an error code, follow this systematic approach:
    * **422 (Unprocessable Entity)**: Validate data against schema requirements
    * **500 (Internal Server Error)**: Retry and potentially escalate to support
 
-4. **Review recent changes**: Consider what was modified recently (journey updates, new campaigns, configuration changes, etc.).
+4. **Review recent changes**: Consider what was modified before the error first appeared (journey updates, new campaigns, configuration changes, etc.).
 
 5. **Consult documentation**: Use the links provided in this guide to access detailed documentation for the affected feature.
 
-6. **Retry when appropriate**: For 500-series errors, a simple retry after a few minutes often resolves transient issues.
+6. **Retry when appropriate**: For 500-series errors, a simple retry after a short delay often resolves transient issues.
 
 7. **Escalate when needed**: If the error persists after following resolution steps, [contact Adobe Support](../start/user-interface.md#support-ticket-guidelines) with the complete error code, request ID (if available), steps to reproduce, and relevant configuration details.
 
