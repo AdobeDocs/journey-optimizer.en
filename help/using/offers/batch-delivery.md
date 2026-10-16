@@ -64,7 +64,7 @@ Before configuring a job request, make sure you have created:
 
     >[!IMPORTANT]
     >
-    >Because batch decisioning uses the profile snapshot, **experience event (xEvent) rules are not supported**. The snapshot does not contain experience events, so any decision rule based on an experience event always evaluates to false, which can result in profiles receiving the fallback offer instead of personalized offers. This differs from the Decisioning API, which retrieves experience events at decision time. Use profile attributes or audiences instead.
+    >Batch decisioning uses profile snapshot data and does not access experience events (xEvents). As a result, offers that depend on xEvent data may not qualify during batch processing. If no other offer qualifies, the fallback offer may be returned. The Decisioning API can retrieve experience events at decision time. For batch decisioning, use profile attributes or audiences for eligibility.
 
 * **A decision** in Adobe Journey Optimizer. [Learn how to create a decision](offer-activities/create-offer-activities.md)
 
