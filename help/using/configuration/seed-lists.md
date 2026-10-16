@@ -107,7 +107,7 @@ Use the **[!UICONTROL Delete]** button to permanently remove an entry.
 
 >[!CAUTION]
 >
->It is not possible to delete a seed list which is used in an active [campaign](../campaigns/review-activate-campaign.md) or [journey](../building-journeys/publish-journey.md). You need to deactivate the campaign/journey, or edit it to use another configuration that has not the seed list selected. [Learn more about using a seed list](#use-seed-list)
+>It is not possible to delete a seed list which is used in an active [campaign](../campaigns/review-activate-campaign.md) or [journey](../building-journeys/publish-journey.md), or which is associated with a channel configuration. You need to deactivate the campaign/journey, or edit it to use another configuration that has not the seed list selected, and remove the seed list from the channel configuration. [Learn more about using a seed list](#use-seed-list)
 
 You can click a seed list name to edit it. <!--Use the **[!UICONTROL Edit]** button to edit a seed list.-->
 

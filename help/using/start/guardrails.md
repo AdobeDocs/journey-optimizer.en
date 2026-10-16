@@ -451,7 +451,7 @@ The recommended size limits for content types are as follows:
 | Message | 1200 KB |
 | Landing page | 1000 KB |
 
-A warning is surfaced when a content variant exceeds its recommended size threshold. This applies to all content types and channels, and does not block saving or publishing.
+A warning is surfaced when a content variant exceeds its recommended size threshold. This applies to all content types and channels, and does not block saving or publishing. The exception is a landing page HTML template larger than 1 MB, which is rejected during validation. Reduce the size of the template.
 
 ### Generate Content guardrails {#ai-assistant-g}
 

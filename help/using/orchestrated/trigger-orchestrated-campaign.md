@@ -184,4 +184,4 @@ Follow these steps on the campaign that should run first:
 
 1. To test the downstream campaign in draft mode before publishing it, follow the steps in the [test the campaign](#build-and-test) section to trigger it in draft with the REST API.
 
-The downstream campaign must be published before the upstream campaign runs far enough to reach the **[!UICONTROL End]** activity that triggers it. If the signal is sent while the target campaign is not published, execution will fail. Publish the downstream campaign, then resume or restart as needed.
+The downstream campaign must be live before you can publish the upstream campaign that references it in an **[!UICONTROL End]** activity. If the signal is sent while the target campaign is not published, execution will fail. Publish the downstream campaign, then resume or restart as needed.
