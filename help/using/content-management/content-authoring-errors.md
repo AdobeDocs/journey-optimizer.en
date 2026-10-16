@@ -75,6 +75,35 @@ See also [Create a direct mail message](../direct-mail/create-direct-mail.md#ext
 | **CJMMAS-2043-422**, **CJMMAS-2044-422** | The Direct mail file structure {count} label(s) are empty.<br/>The Direct mail file structure {labelName} label is repeated {count} times. | Each column of the file needs a unique label. Enter a label for the empty columns, and rename the repeated ones. [Learn more](../direct-mail/create-direct-mail.md#extraction-file) |
 | **CJMMAS-2045-422**, **CJMMAS-2046-422** | The Direct mail notes size has exceeded the limit of {sizeLimit}KB.<br/>The Direct mail label, on which sorting is added, does not exist. | The notes are larger than the limit named in the message, or the label used for sorting does not exist. Shorten the notes, and select an existing column for the sort. [Learn more](../direct-mail/create-direct-mail.md#extraction-file) |
 
+## Message lifecycle and saving {#lifecycle}
+
+These errors occur when you edit, version, approve, or save a message, and its state or the saved content does not allow the action.
+
+See also [Manage campaigns](../campaigns/manage-campaigns.md) and [Review & approve a request](../test-approve/review-approve-request.md).
+
+| Error code | Message | How to fix |
+|---|---|---|
+| **CJMMAS-1053-400** | Message status change to Draft is not permitted. | A message cannot be moved back to Draft from its current state. Duplicate the message, or create a new version of it, to keep editing. [Learn more](../campaigns/manage-campaigns.md#modify) |
+| **CJMMAS-1054-400** | Published message update is not permitted. | A published message cannot be edited. Create a new version of the campaign, edit the draft version, then activate it. [Learn more](../campaigns/manage-campaigns.md#modify) |
+| **CJMMAS-1060-400** | Version Creation is not permitted. Message must be in published state. | A new version can only be created from a published message. Publish the message first, or keep editing the current draft. [Learn more](../campaigns/manage-campaigns.md#modify) |
+| **CJMMAS-1077-400** | Changing the message approval status is not allowed. | The approval status is set by the approval workflow, not by editing the message. Request approval, or ask the reviewer to approve or request changes. [Learn more](../test-approve/review-approve-request.md#approve) |
+| **JOMAL-1101-409** | Save failed because this item was updated in another tab or by another user. Refresh to load the latest version before saving. | Someone else, or another browser tab, saved a newer version. Refresh the page to load the latest version, then reapply your changes and save again. [Learn more](../campaigns/manage-campaigns.md) |
+| **JOMAL-1102-400** | Unable to patch HTML due to malformed tracking links. | The HTML contains a link that cannot be tracked, for example a missing or unclosed href. Correct the links in the HTML, then save again. [Learn more](../email/message-tracking.md#insert-links) |
+
+## Permissions {#permissions}
+
+These errors occur when your user does not have the permission required to work with a message, or when the message belongs to another organization or sandbox.
+
+See also [Manage users & roles](../administration/permissions.md).
+
+| Error code | Message | How to fix |
+|---|---|---|
+| **CJMMAS-1028-403**, **CJMMAS-1029-403**, **CJMMAS-1030-403**, **CJMMAS-1042-403** | Forbidden. You do not have write permission on messages.<br/>Forbidden. You do not have read permission on messages.<br/>Forbidden. You do not have publish permission on messages.<br/>Forbidden. You do not have delete permission on messages. | Your role lacks the permission named in the message (write, read, publish, or delete). Ask your administrator to add the permission to your role. [Learn more](../administration/permissions.md#campaign-capability) |
+| **CJMMAS-1094-403**, **CJMMAS-1095-403** | You do not have permission to simulate content or access this template. Please contact your administrator to update your permissions.<br/>You do not have permission to manage content or access this template. Please contact your administrator to update your permissions. | Your role does not allow you to simulate or manage this content, or you cannot access the template. Ask your administrator to update your permissions or the template access. [Learn more](../administration/permissions.md) |
+| **JOMAL-1003-403**, **JOMAL-1203-403** | Forbidden. User is not authorized for request operation.<br/>Requested operation is forbidden. | Your user is not allowed to perform this operation. Ask your administrator to check your role and the object access for the item. [Learn more](../administration/permissions.md) |
+| **JOMAL-1001-401**, **JOMAL-1201-401** | Unauthorized. User is not authorized for request operation.<br/>User is unauthorized. | Your session is not valid or has expired. Sign in again. If the error persists, ask your administrator to check your access to the sandbox. [Learn more](../administration/permissions.md) |
+| **CJMMAS-1001-400** | Bad Request. Message belongs to different org. | The message belongs to another organization. Sign in to the organization that owns the message. [Learn more](../administration/permissions.md) |
+
 ## Channel configurations and access {#config}
 
 These errors occur when the message has no usable channel configuration, or when your user cannot use the content.
@@ -85,6 +114,8 @@ See also [Set up channel configurations](../configuration/channel-surfaces.md).
 |---|---|---|
 | **CJMMAS-2006-422**, **CJMMAS-2012-422**, **CJMMAS-2013-422**, **CJMMAS-2027-200**, **CJMMAS-2030-422** | Preset doesn't exist.<br/>Email preset is not defined.<br/>Push preset is not defined.<br/>The SMS surface is not defined.<br/>The Web channel surface is not defined. | The message has no channel configuration (or the configuration is not found) for its channel. Select a channel configuration in the message. [Learn more](../configuration/channel-surfaces.md#create-channel-surface) |
 | **CJMMAS-2014-422**, **CJMMAS-2015-422** | App selection in the Push preset is empty.<br/>Global preset email Execution list is empty. | The channel configuration is incomplete: a push configuration needs an app, and an email configuration needs its execution list. Complete the configuration. [Learn more](../configuration/channel-surfaces.md#create-channel-surface) |
+| **CJMMAS-1034-400**, **CJMMAS-1064-400** | Bad Request. Invalid Preset Id in request/message.<br/>Bad request. The selected preset is invalid. Select a valid preset and try again. | The channel configuration selected in the message is not valid. Select a valid channel configuration, then try again. [Learn more](../configuration/channel-surfaces.md#create-channel-surface) |
+| **CJMMAS-1068-400** | Bad request. A preset has not been selected in the landing page. Select a preset and try again. | The landing page has no channel configuration. Select a channel configuration in the landing page, then try again. [Learn more](../configuration/channel-surfaces.md#create-channel-surface) |
 | **CJMMAS-2036-403** | You do not have permission to use one or more AEM repositories referenced in the content: {deniedRepositoryIds}. | You do not have permission on the AEM repositories used in the content. Ask your administrator for access to the repositories named in the message. [Learn more](../integrations/assets.md) |
 
 ## Decision policies and channel configuration fields {#decisions}
