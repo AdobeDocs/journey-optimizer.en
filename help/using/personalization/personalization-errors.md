@@ -80,3 +80,5 @@ See also [Encrypt URL parameters in tracking links](url-parameter-encryption.md)
 * [Helper functions](functions/helpers.md)
 * [Encrypt URL parameters in tracking links](url-parameter-encryption.md)
 * [Error codes reference](../building-journeys/error-codes-reference.md)
+
+{{$include /help/_includes/do-not-localize/personalization/ai-augmented-personalization-errors.md}}

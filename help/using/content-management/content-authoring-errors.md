@@ -151,3 +151,5 @@ See also [Use expression fragments](../personalization/use-expression-fragments.
 * [Email spam report](spam-report.md)
 * [Guardrails and limitations](../start/guardrails.md)
 * [Error codes reference](../building-journeys/error-codes-reference.md)
+
+{{$include /help/_includes/do-not-localize/content-management/ai-augmented-content-authoring-errors.md}}

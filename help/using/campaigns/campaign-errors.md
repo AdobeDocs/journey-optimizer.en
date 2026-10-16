@@ -98,3 +98,5 @@ See also [Create a content experiment](../content-management/content-experiment.
 * [Review and activate an Action campaign](review-activate-campaign.md)
 * [Work with API-triggered campaigns](api-triggered-campaigns.md)
 * [Error codes reference](../building-journeys/error-codes-reference.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-campaign-errors.md}}

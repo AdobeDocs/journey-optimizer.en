@@ -1,0 +1,97 @@
+---
+title: AI Knowledge Reference
+---
+# AI Knowledge Reference
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page lists the errors that [!DNL Adobe Journey Optimizer] returns when you build, test, schedule, publish, or trigger an Orchestrated campaign, grouped by feature, with the cause and the fix of each.
+
+**Intents:**
+
+* Find the cause and the fix of an error returned for an Orchestrated campaign
+* Fix permission and access errors when creating, editing, publishing, or triggering an Orchestrated campaign
+* Fix errors caused by the status of the campaign (Draft, Live, running, started)
+* Fix errors returned when starting or stopping a test, or when configuring activities, the schedule, signals, or waves
+* Locate the activity concerned by an error through the campaign logs and the alerts on the canvas
+
+**Glossary:**
+
+* **CJMOC**: Prefix of all Orchestrated campaign errors, followed by an error number and an HTTP status, for example CJMOC-1001-403 *(product-specific)*
+* **Campaign logs**: Logs that show the error code and the message; open them to find the activity concerned *(product-specific)*
+* **Alerts on the canvas**: Alerts that show the error code and the message *(product-specific)*
+* **Channel activity**: Activity of an Orchestrated campaign with a message attached to it (CJMOC-5001-400) *(product-specific)*
+* **Targeting dimension**: Dimension selected in an activity, or set by a **[!UICONTROL Change dimension]** activity *(product-specific)*
+* **Signal**: Trigger of a campaign, from the API or from the **[!UICONTROL End]** activity of another campaign *(product-specific)*
+* **Waves**: Sending of messages in waves *(product-specific)*
+
+**Guardrails:**
+
+* A campaign can contain up to 10 channel activities (hard limit). Error CJMOC-6017-400 is returned when the number is exceeded. Reduce the number of channel activities, or split the delivery across several campaigns.
+* A campaign needs at least one channel activity or **[!UICONTROL Save audience]** activity (CJMOC-5002-400).
+* A test can be started only while the campaign is in **[!UICONTROL Draft]** status, and not while a test is already running on the campaign (CJMOC-2001-400, CJMOC-2002-400).
+* Only a campaign in **[!UICONTROL Draft]** status can be edited or published this way; a campaign in **[!UICONTROL Live]** status cannot be edited.
+* A campaign cannot be both triggered by a signal and recurring (CJMOC-6041-400).
+* A recurring schedule cannot use a fixed time (CJMOC-5014-400).
+* Waves are not available for recurring campaigns or signal-triggered campaigns (CJMOC-6045-400, CJMOC-6046-400).
+* A recurring campaign that already started cannot go back to draft (CJMOC-6040-500).
+* A campaign cannot go back to draft once a channel activity has started, because messages may have been sent (CJMOC-6039-500).
+* A targeting dimension cannot be deleted while active channel configurations reference it (CJMOC-1226-400).
+* The **[!UICONTROL Load file]** activity is not recommended in a scheduled campaign, because uploaded files have a short lifetime (warning CJMOC-5023-199).
+
+**Prerequisites and permissions:**
+
+* The **[!UICONTROL Publish orchestrated campaigns]** permission to publish or trigger a campaign (CJMOC-1005-403).
+* Access to the attributes used by the campaign (CJMOC-1004-403). Remove those attributes from the campaign if access cannot be granted.
+* Object-level access to the object concerned (CJMOC-1215-403, 1216-403, "OLAC check failed").
+
+**Applicability:**
+
+* These errors apply to Orchestrated campaigns. The page documents the prefix CJMOC only; for the other prefixes, see the error codes reference.
+
+**Terminology:**
+
+* Canonical name: Orchestrated campaign errors — Acronym: OLAC (Object level access control) — variants: CJMOC errors
+* Do not confuse: error code CJMOC-5023-199 (warning) ≠ errors with an HTTP status of 400, 403, or 500
+* Do not confuse: **[!UICONTROL Draft]** status ≠ **[!UICONTROL Live]** status ≠ Test status
+* Do not confuse: a recurring schedule ≠ **[!UICONTROL Triggered by a signal]**
+
+**FAQ:**
+
+* **Q: How is an Orchestrated campaign error code structured?** — The prefix CJMOC, an error number, and an HTTP status. Where the page lists a second code without the prefix (for example 1216-403), the prefix is CJMOC.
+* **Q: Where do I find the activity concerned by an error?** — The campaign logs and the alerts on the canvas show the error code and the message. Open the campaign logs to find the activity concerned.
+* **Q: Which error is a warning?** — CJMOC-5023-199, about the **[!UICONTROL Load file]** activity in a scheduled campaign. Use another data source for scheduled campaigns, or run the campaign once.
+* **Q: Which permission do I need to publish or trigger a campaign?** — **[!UICONTROL Publish orchestrated campaigns]** (CJMOC-1005-403). For other permission errors, ask your administrator to grant the permission on your product profile.
+* **Q: Why can I not publish or edit my campaign?** — The campaign is not in **[!UICONTROL Draft]** status (CJMOC-1201-400, 1203-400, 6005-400), is **[!UICONTROL Live]** (CJMOC-1202-400), or is still running (CJMOC-6006-400). Stop it, or use **[!UICONTROL Back to draft]** when it is available, then edit and publish again.
+* **Q: Why can I not start a test?** — The campaign is not in **[!UICONTROL Draft]** status (CJMOC-2001-400), a test is already running (CJMOC-2002-400), or the campaign has no activities (CJMOC-2006-400).
+* **Q: Why do I get a schedule error?** — The campaign has no schedule (CJMOC-5012-400), no execution in the future (CJMOC-5013-400), a fixed time with a recurring schedule (CJMOC-5014-400), or a fixed time in the past (CJMOC-5015-400).
+* **Q: Why can I not publish a campaign chained from an End activity?** — The downstream campaign must be live (CJMOC-6042-400) and set to **[!UICONTROL Triggered by a signal]** (CJMOC-6043-400), and it must exist and be accessible (CJMOC-6044-400).
+
+**Troubleshooting:**
+
+* **CJMOC-5008-400**, **5009-400** — The activity is disabled or paused. Enable the activity again, then retry.
+* **CJMOC-5003-400** — The activity has an empty query. Open the activity and build the rule, or select an audience.
+* **CJMOC-5016-400** — Open the **[!UICONTROL Read audience]** activity and select an audience.
+* **CJMOC-5022-400** — The audience uses a different merge policy than the campaign. Select an audience that uses the merge policy of the campaign, or change the merge policy of the campaign.
+* **CJMOC-5011-400** — Select a targeting dimension in the activity, or add a **[!UICONTROL Change dimension]** activity before it.
+* **CJMOC-5001-400** — The channel activity has no message. Open the activity and create or select the message.
+* **CJMOC-5026-400** — Enter both a title and a message in the **[!UICONTROL Alert]** activity.
+* **CJMOC-5000-400** — Connect each outgoing transition of the activity to another activity, or delete the empty transition.
+* **CJMOC-2009-400** — The activity has not run yet, so it has no data to show. Run the campaign in test so that the activity executes, then check its data again.
+
+**Related pages:**
+
+* Campaign logs, test, lifecycle, and Back to draft: Start and monitor the campaign (orchestrated/start-monitor-campaigns.md)
+* Activity limits: Guardrails and limitations (orchestrated/guardrails.md)
+* Questions about Orchestrated campaigns: Orchestrated campaigns FAQ (orchestrated/orchestrated-campaigns-faq.md)
+* Permissions: Built-in permissions (administration/ootb-permissions.md)
+* Signals and chained campaigns: Trigger Orchestrated campaigns using a signal (orchestrated/trigger-orchestrated-campaign.md)
+* Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+
++++
+
+<!-- ai-section-version: 1 | source-hash: f2dc9db2 -->

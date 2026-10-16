@@ -100,3 +100,5 @@ See also [Define and activate the runs](ip-warmup-execution.md#define-runs).
 * [Create an IP warmup plan](ip-warmup-plan.md)
 * [Run the IP warmup plan](ip-warmup-execution.md)
 * [Error codes reference](../building-journeys/error-codes-reference.md)
+
+{{$include /help/_includes/do-not-localize/configuration/ai-augmented-ip-warmup-plan-errors.md}}

@@ -95,3 +95,5 @@ These errors occur when you publish or manage compositions.
 * [Leverage enrichment attributes](enrichment-attributes.md)
 * [Federated audience composition](federated-audience-composition.md)
 * [Error codes reference](../building-journeys/error-codes-reference.md)
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-audience-composition-errors.md}}

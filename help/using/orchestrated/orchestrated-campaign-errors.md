@@ -127,3 +127,5 @@ These errors occur when a campaign sends messages in waves.
 * [Guardrails and limitations](guardrails.md)
 * [Orchestrated campaigns FAQ](orchestrated-campaigns-faq.md)
 * [Error codes reference](../building-journeys/error-codes-reference.md)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-orchestrated-campaign-errors.md}}

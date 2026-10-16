@@ -62,3 +62,5 @@ See also [Create and manage simulated users](../building-journeys/simulate-journ
 * [Get started with journey simulation](../building-journeys/simulate-journey-gs.md)
 * [Simulate your journey](../building-journeys/simulate-journey.md)
 * [Error codes reference](../building-journeys/error-codes-reference.md)
+
+{{$include /help/_includes/do-not-localize/content-management/ai-augmented-proof-simulation-errors.md}}

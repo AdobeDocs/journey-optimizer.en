@@ -216,3 +216,5 @@ These errors occur when you compare two versions of a journey.
 * [Journey FAQs](journey-faq.md)
 * [Best practices to avoid common errors](error-codes-reference.md#best-practices)
 * [Guardrails and limitations](../start/guardrails.md)
+
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-validation-errors.md}}
