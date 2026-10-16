@@ -289,6 +289,7 @@ nudge: yes
     + [System alerts](using/reports/alerts.md)
     + [Error codes reference](using/building-journeys/error-codes-reference.md)
   + Troubleshooting {#troubleshooting}
+    + {hide-from-toc} [Troubleshoot error codes](/help/rp_landing_pages/troubleshoot-errors-landing-page.md)
     + [Troubleshooting FAQ](using/start/troubleshooting.md)
     + Journeys troubleshooting {#troubleshoot-journey}
       + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
@@ -296,7 +297,6 @@ nudge: yes
       + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
       + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
       + [Troubleshoot custom actions](using/action/troubleshoot-custom-action.md)
-    + {hide-from-toc} [Errors by feature area](/help/rp_landing_pages/troubleshoot-errors-landing-page.md)
     + {hide-from-toc} Campaigns troubleshooting {#troubleshoot-campaigns}
       + {hide-from-toc} [Campaign errors](using/campaigns/campaign-errors.md)
       + {hide-from-toc} [Orchestrated campaign errors](using/orchestrated/orchestrated-campaign-errors.md)
