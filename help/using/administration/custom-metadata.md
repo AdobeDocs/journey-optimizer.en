@@ -111,7 +111,7 @@ Once your fields are defined in the schemas, you can define how they will appear
 
 1. You can reorder the selected fields. The fields are displayed in this order in the properties of your journeys and campaigns, so place the most important ones first.
 
-1. Optionally, you can mark fields as **required**. They are displayed with an asterisk in the campaign or journey properties. If a required field is not filled in, you are not be able to activate or publish the journey or campaign. <!-- TODO DOCAC-16114: confirm that required fields block activation/publication; not blocking in the LA demo -->
+1. Optionally, you can mark fields as **required**. They are displayed with an asterisk in the campaign or journey properties. If a required field is not filled in, you cannot activate or publish the journey or campaign. <!-- TODO DOCAC-16114: confirm that required fields block activation/publication; not blocking in the LA demo -->
 
 1. To add or remove fields, click the **[!UICONTROL Add fields]** button and check or uncheck the corresponding fields in the list to update the selection.
 
