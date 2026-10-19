@@ -287,7 +287,7 @@ nudge: yes
     + [New DMARC requirement](using/configuration/dmarc-record-update.md)
   + [System alerts](using/reports/alerts.md)
   + Troubleshooting {#troubleshooting}
-    + {hide-from-toc} [Troubleshooting overview](/help/rp_landing_pages/troubleshooting-overview-landing-page.md)
+    + [Troubleshooting overview](/help/rp_landing_pages/troubleshooting-overview-landing-page.md)
     + [Error codes reference](using/building-journeys/error-codes-reference.md)
     + Journeys troubleshooting {#troubleshoot-journey}
       + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
