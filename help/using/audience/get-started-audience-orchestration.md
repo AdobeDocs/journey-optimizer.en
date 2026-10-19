@@ -212,4 +212,6 @@ Compositions can have multiple statuses:
 >
 >Audience composition is currently not integrated with the sandbox reset capability. Before initiating a sandbox reset, you need to delete your compositions manually to ensure that the associated audience data is cleaned up properly. Detailed information is available in Adobe Experience Platform [Sandbox documentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html#delete-audience-compositions)
 
+If an audience composition returns an error code, see [Audience composition errors](audience-composition-errors.md).
+
 {{$include /help/_includes/do-not-localize/audience/ai-augmented-get-started-audience-orchestration.md}}

@@ -244,6 +244,8 @@ Your campaign or journey is now ready to activate. After messages are sent, use 
 >
 > If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your multilingual campaign or journey. [Learn more](../test-approve/gs-approval.md)
 
+If multilingual content returns an error code, see [Multilingual content errors](multilingual-errors.md).
+
 <!--
 # Create a multilingual journey {#create-multilingual-journey}
 

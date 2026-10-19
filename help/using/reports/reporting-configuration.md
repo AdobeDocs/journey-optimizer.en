@@ -160,6 +160,8 @@ The table below shows which metrics will be added to the **[!UICONTROL Objective
     >If you selected a dataset which is not event-type, you will not be able to proceed.
 
 
+If a reporting configuration returns an error code, see [Channel reporting errors](../configuration/channel-reporting-errors.md).
+
 <!--
 When building your campaign reports, you can now see the metrics corresponding to the field groups used in the datasets you added. Go to the **[!UICONTROL Objectives]** tab and select the metrics of your choice to better fine-tune your reports. [Learn more](content-experiment.md#objectives-global)
 

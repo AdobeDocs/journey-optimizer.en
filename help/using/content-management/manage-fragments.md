@@ -266,3 +266,5 @@ To unarchive a fragment, filter on the **[!UICONTROL Archived]** items and selec
 Journey Optimizer allows you to copy a fragment from one sandbox to another. For example, you can copy a fragment from your Stage sandbox environment to your Production sandbox.
 
 The copy process is carried via a **package export and import** between the source and target sandboxes. Detailed information on how to export objects and import them into a target sandbox are available in this section: [Copy objects to another sandbox](../configuration/copy-objects-to-sandbox.md).
+
+If a fragment returns an error code, see [Fragments and AEM content errors](fragments-errors.md).

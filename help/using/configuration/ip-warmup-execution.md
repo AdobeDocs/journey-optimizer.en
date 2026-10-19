@@ -374,3 +374,4 @@ This option is only available if all the runs in the plan are in **[!UICONTROL C
 
 The different run statuses are listed in [this section](#monitor-plan).
 
+If an IP warmup plan returns an error code, see [IP warmup plan errors](ip-warmup-plan-errors.md).
