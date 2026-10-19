@@ -24,18 +24,13 @@ keywords: custom metadata, journey, campaign, orchestrated campaign, schema, rep
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
-Custom metadata lets you create your own business fields and display them in the properties of your journeys, Action campaigns and Orchestrated campaigns. Use them to track information that goes beyond what [tags](../start/search-filter-categorize.md#tags) and descriptions can capture, for example:
-
-* Line of business or promotional region
-* Product line
-* Cost center
-* Workfront project ID
+Custom metadata lets you create your own business fields and display them in the properties of your journeys, Action campaigns and Orchestrated campaigns. Use them to track information that goes beyond what [tags](../start/search-filter-categorize.md#tags) and descriptions can capture, such as line of business, promotional region, product line, cost center, or project ID.
 
 The values you enter are recorded in the entity datasets. You can use them for downstream reporting, to export data, or to build audiences from the profiles who received a given journey or campaign.
 
 ## How custom metadata works {#how-it-works}
 
-Custom metadata fields are defined in [!DNL Adobe Experience Platform] [schemas](../data/get-started-schemas.md). [!DNL Journey Optimizer] automatically provisions one record-based schema for each type of entity. These schemas use the **AJO Entity Class**:
+Custom metadata fields are defined in the [!DNL Adobe Experience Platform] [schemas](../data/get-started-schemas.md) based on the **AJO Entity Class**. Currently [!DNL Journey Optimizer] automatically provisions one record-based schema for three entities — campaigns, journeys and orchestrated campaigns:
 
 * **AJO Campaign Custom Metadata Schema**
 * **AJO Journey Custom Metadata Schema**
@@ -43,9 +38,9 @@ Custom metadata fields are defined in [!DNL Adobe Experience Platform] [schemas]
 
 ## Define your custom metadata fields {#define-fields}
 
-To define custom metadata fields, add them to a custom field group in the schema of the entity type where you want to use them. You can reuse the same field group in the schemas of other entity types.
+To define custom metadata fields, add them to a custom field group in the schema of the entity type (campaigns, journeys, or orchestrated campaigns) where you want to use them. You can reuse the same field group in the schemas of other entity types.
 
-1. In [!DNL Adobe Experience Platform], browse to **[!UICONTROL Schemas]** and from the **[!UICONTROL Browse]** tab, open one of the custom metadata schemas, for example **[!UICONTROL AJO Campaign Custom Metadata Schema]**.
+1. In [!DNL Adobe Experience Platform], browse to **[!UICONTROL Schemas]**. From the **[!UICONTROL Browse]** tab, open one of the custom metadata schemas, for example **AJO Campaign Custom Metadata Schema**.
 
     ![Custom metadata schemas in the Schemas browse tab](assets/metadata-campaign-schema.jpg)
 
@@ -53,34 +48,39 @@ To define custom metadata fields, add them to a custom field group in the schema
     >
     >Do not edit the name of these schemas.
 
-1. Click **[!UICONTROL Add]** and select **[!UICONTROL Create new field group]**. Select a display name, for example **AJO Custom Metadata**. [Learn how to add field groups and fields to a schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui){target="_blank"}
+1. Click **[!UICONTROL Add]** and select **[!UICONTROL Create new field group]**.
 
     ![Add button for field groups in the campaign custom metadata schema](assets/metadata-schema-add-field-group.jpg){width="60%"}
 
-1. Back in the **[!UICONTROL AJO Campaign Custom Metadata Schema]** structure, select the field group you created and click the plus icon next to the name of the schema to add a new field.
+    Enter a display name, for example **AJO Custom Metadata**, and click **[!UICONTROL Add field group]**. [Learn how to add field groups and fields to a schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui){target="_blank"}
+
+    ![Create new field group form in the Add field groups dialog](assets/metadata-schema-create-field-group.jpg){width="90%"}
+
+1. Back in the schema's structure, select the field group you created and click the plus icon next to the name of the schema to add a new field.
 
     ![Custom field group selected in the campaign custom metadata schema](assets/metadata-schema-add-field.jpg)
 
     >[!NOTE]
     >
-    >You can also select the field group you want to assign the field to from the **[!UICONTROL Field Group]** dropdown at any time while defining the field.
+    >You can also select the field group from the **[!UICONTROL Field Group]** dropdown at any time while defining the field.
 
-1. For each field, define a name, a display name and, optionally, a description.
+1. For each field:
 
-1. Define the field type. It must be **[!UICONTROL String]**.
+    * Define a name, a display name and, optionally, a description.
+    * Set the field type to **[!UICONTROL String]**.
+    * To provide a list of values, define the field as an enum and add each value with its display name.
 
-1. To provide a list of values, define the field as an enum and add each value with its display name.
-
-1. Make sure to follow these guidelines:
-
-    * Do not define default values or patterns.
-    * Do not mark fields as required in the schema. You can make fields required when you [select the fields to display](#select-fields) in the properties of your campaigns or journeys.
+    >[!IMPORTANT]
+    >
+    >Do not mark fields as required in the schema, as this can cause issues when data is inserted. Instead you can make fields required when you [select the fields to display](#select-fields) in the properties of your campaigns or journeys.
 
 1. Click **[!UICONTROL Apply]** to save the new field.
 
-1. Repeat these steps to add as many fields as needed.
+1. Repeat these steps to add more fields to your field group and click **[!UICONTROL Save]**.
 
-1. Optionally, to use the same fields for other entity types, open the corresponding custom metadata schemas and add the same field group to them.
+1. To use the same fields for other entity types, add the same field group to their schemas.
+
+    For example, if you have defined fields for campaigns using the **AJO Custom Metadata** field group in the **AJO Campaign Custom Metadata Schema**, you can reuse this field group in the **AJO Journey Custom Metadata Schema** and in the **AJO Orchestrated Campaign Custom Metadata Schema**.
 
 >[!NOTE]
 >
@@ -88,52 +88,62 @@ To define custom metadata fields, add them to a custom field group in the schema
 
 ## Select the fields to display {#select-fields}
 
-Once your fields are defined in the schemas, choose which ones appear in the properties of your journeys and campaigns.
+>[!CONTEXTUALHELP]
+>id="ajo_custom_metadata_configuration"
+>title="About custom metadata"
+>abstract="Add up to 10 schema fields per entity type to capture custom metadata on your journeys, campaigns and orchestrated campaigns."
+
+Once your fields are defined in the schemas, you can define how they will appear in the properties of your journeys and campaigns.
 
 1. In the left navigation, browse to **[!UICONTROL Administration]** > **[!UICONTROL Configurations]**, then click **[!UICONTROL Manage]** in the **[!UICONTROL Metadata]** card.
 
-    ![Metadata card in the Configurations dashboard](assets/metadata-panel.jpg)
+    ![Metadata card in the Configurations dashboard](assets/metadata-card.jpg)
 
-    The panel contains one tab per entity type: **[!UICONTROL Journeys]**, **[!UICONTROL Campaigns]** and **[!UICONTROL Orchestrated campaigns]**.
+1. The **[!DNL Metadata]** page contains one tab per entity type: **[!UICONTROL Journeys]**, **[!UICONTROL Campaigns]** and **[!UICONTROL Orchestrated Campaigns]**.
 
-1. In each tab, select the fields to display. The list is synchronized with the corresponding schema: when you add or change fields or lists of values in the schema, the changes are reflected in the field picker.
+    ![Metadata page showing the Journeys, Campaigns and Orchestrated Campaign tabs](assets/metadata-campaign-tab.jpg)
+
+1. For each tab, the list is synchronized with the corresponding schema. When you add or change fields or lists of values in the schema, the changes are reflected here.
 
     >[!NOTE]
     >
-    >It can take up to 5 minutes for schema changes to be displayed in the field picker.
+    >It can take up to 5 minutes for schema changes to be displayed.
 
-1. Order the selected fields. The fields are displayed in this order in the properties of your journeys and campaigns, so place the most important ones first.
+1. You can reorder the selected fields. The fields are displayed in this order in the properties of your journeys and campaigns, so place the most important ones first.
 
-1. Optionally, mark fields as **required**. Required fields are displayed with an asterisk. They are validated in the user interface and not in the schema, to avoid issues when data is inserted. <!-- TODO DOCAC-16114: confirm that required fields block activation/publication; not blocking in the LA demo -->
+1. Optionally, you can mark fields as **required**. They are displayed with an asterisk in the campaign or journey properties. If a required field is not filled in, you are not be able to activate or publish the journey or campaign. <!-- TODO DOCAC-16114: confirm that required fields block activation/publication; not blocking in the LA demo -->
+
+1. To add or remove fields, click the **[!UICONTROL Add fields]** button and check or uncheck the corresponding fields in the list to update the selection.
+
+    ![Fields dialog to select the fields to display in the Metadata page](assets/metadata-fields-selection.jpg){width="80%"}
+
+    >[!CAUTION]
+    >
+    >You can select up to **10 fields** per entity type. If your schema contains more fields, select the 10 you want to display.
 
 1. Confirm your selection.
 
-The configuration is independent for each entity type: you can select different fields, in a different order, for journeys, campaigns and Orchestrated campaigns.
-
->[!CAUTION]
->
->You can select up to **10 fields** per entity type. If your schema contains more fields, select the 10 you want to display.
+The configuration is independent for each entity type: you can select different fields, in a different order, for journeys, Action campaigns and Orchestrated campaigns.
 
 ## Fill in metadata values {#fill-values}
 
-Once fields are configured, they appear in the properties of each entity:
+Once fields are configured, if you have added them, these fields appear in the Metadata fields section of the properties of each entity.
 
-* **Action campaigns**: in the **[!UICONTROL Properties]** tab when you create or edit the campaign. [Learn more](../campaigns/campaign-properties.md)
+![Metadata fields section in the properties of an Action campaign](assets/metadata-fields-section-campaign.jpg)
+
+<!--* **Action campaigns**: in the **[!UICONTROL Properties]** tab when you create or edit the campaign. [Learn more](../campaigns/campaign-properties.md)
 * **Journeys**: in the journey properties. [Learn more](../building-journeys/journey-properties.md#custom-metadata)
-* **Orchestrated campaigns**: in the campaign properties. [Learn more](../orchestrated/create-orchestrated-campaign.md#create)
+* **Orchestrated campaigns**: in the campaign properties. [Learn more](../orchestrated/create-orchestrated-campaign.md#create)-->
 
 Enter or select a value for each field, then save and activate your journey or campaign as usual. Fields marked with an asterisk are required.
 
 ## Use custom metadata for reporting {#reporting}
 
-When a journey or campaign is activated, its metadata values are sent to a custom metadata dataset. <!-- TODO DOCAC-16114: confirm dataset name(s) with PM/engineering -->
+When a journey, Action campaign or Orchestrated campaign is activated, its metadata values are sent to the corresponding dataset:
 
-You can use this dataset to:
+* **AJO Campaign Custom Metadata Dataset**
+* **AJO Journey Custom Metadata Dataset**
+* **AJO Orchestrated Campaign Custom Metadata Dataset**
 
-* Export the data for downstream reporting.
-* Build audiences based on the metadata of the journeys and campaigns that profiles received.
+You can use these datasets to export the data for downstream reporting, or to build audiences based on the metadata of the journeys and campaigns that profiles received.
 
-## Related topics {#related}
-
-* [Organize journeys with tags](../building-journeys/tags.md)
-* [Search, filter and categorize](../start/search-filter-categorize.md)
