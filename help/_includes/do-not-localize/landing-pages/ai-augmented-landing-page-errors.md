@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **CJMMAS** *(product-specific)*: prefix of the landing page error codes.
-* **Error code**: the prefix **CJMMAS**, followed by an error number and an HTTP status, for example **CJMMAS-1070-403**. In the page, the number and status of the other codes of a row are written without the prefix, for example **CJMMAS-1070-403**, **1071-403**.
+* **Error code**: the prefix **CJMMAS**, followed by an error number and an HTTP status, for example **CJMMAS-1070-403**.
 * **Primary page**: a page that a landing page must have. The form, the subscription list, and the expiration are configured on it.
 * **Subpage**: a page of a landing page other than the primary page, used for example as the page of the **[!UICONTROL Custom page]** expiration action. A subpage cannot contain a form.
 * **Expiration action**: what happens when the primary page expires, with three options: **[!UICONTROL Redirect URL]**, **[!UICONTROL Custom page]**, or **[!UICONTROL Browser error]**.
@@ -52,33 +52,41 @@ For complete understanding, this information should be combined with the documen
 * **Q: What does the prefix CJMMAS mean?** — It is the prefix of the landing page errors, followed by an error number and an HTTP status.
 * **Q: Why do I get "You do not have write permission on landing pages"?** — Landing pages use the permissions of messages. Ask your administrator to grant the permission named in the message (read, write, publish, or delete) on your product profile.
 * **Q: Why can I not update or delete my landing page?** — A published landing page cannot be updated, and a subpage cannot be added to it (**CJMMAS-3002-400**, **CJMMAS-3006-400**, **CJMMAS-3010-400**). It cannot be deleted either (**CJMMAS-3011-400**). Unpublish it, then make the change and publish it again, or delete it. If a message links to it, the link is broken once the page is unpublished.
-* **Q: Why does publishing fail with "Unable to publish landing page"?** — The landing page is being published, or is already published (**CJMMAS-3012-400**, **CJMMAS-3104-400**). Wait until the publication completes, and check the status of the landing page.
-* **Q: Why is my URL refused?** — The page has no URL (**CJMMAS-3101-400**, **CJMMAS-3202-422**, **CJMMAS-3300-422**), or the URL is already used by another published landing page, or two pages have the same URL (**CJMMAS-3102-400**, **CJMMAS-3103-400**). Give each page a unique URL.
-* **Q: Why does a message fail because of a landing page link?** — The landing page that you link to is not published (**CJMMAS-1306-400**, **CJMMAS-1309-400**), does not exist (**CJMMAS-1307-400**, **CJMMAS-1310-400**), or has expired (**CJMMAS-1308-400**, **CJMMAS-1311-400**).
+* **Q: Why does publishing fail with "Unable to publish landing page"?** — For **CJMMAS-3104-400**, the landing page is already published or is being published: check its status, and wait until the publication completes if needed. For **CJMMAS-3012-400**, the landing page is being published: wait until the publication completes, then try again.
+* **Q: Why is my URL refused?** — The landing page has no publish URL (**CJMMAS-3101-400**), the primary page has no URL (**CJMMAS-3202-422**), or the subpage has no URL (**CJMMAS-3300-422**): define a URL. The URL of the page is already used by another published landing page (**CJMMAS-3102-400**), or two pages of the landing page have the same URL (**CJMMAS-3103-400**): give each page a unique URL.
+* **Q: Why does a message fail because of a landing page link?** — The landing page that you link to is not published (**CJMMAS-1306-400**, **CJMMAS-1309-400**: publish it, then try again), does not exist (**CJMMAS-1307-400** for a message, **CJMMAS-1310-400** for a landing page: select an existing landing page in the link), or has expired (**CJMMAS-1308-400** for a message, **CJMMAS-1311-400** for a landing page: link to a landing page that has not expired, or change its expiration date).
 
 **Troubleshooting:**
 
 * **Permissions and access** (**CJMMAS-1070-403** to **CJMMAS-1073-403**, **CJMMAS-1078-403**): see the prerequisites and the FAQ. For **CJMMAS-1078-403**, "You do not have permission to access this landing page. Please contact your administrator to request access.": ask your administrator for access to the object.
 * **Publication and status**:
     * "Bad request. The landing page is in the process of being published. Please wait until publishing is complete and try again." (**CJMMAS-3012-400**): see the FAQ.
-    * "Validation Error in the Landing Page." (**CJMMAS-3107-400**), "No pages found to validate within this landing page." (**CJMMAS-3200-422**), "No Primary page found." (**CJMMAS-3201-422**): the landing page failed validation, or has no primary page. Make sure the landing page has a primary page, and fix the errors displayed.
+    * "Validation Error in the Landing Page." (**CJMMAS-3107-400**): the landing page failed validation. Fix the errors displayed.
+    * "No pages found to validate within this landing page." (**CJMMAS-3200-422**) and "No Primary page found." (**CJMMAS-3201-422**): the landing page has no page to validate, or no primary page. Add a primary page to the landing page.
     * "The tags are invalid. The specified tag does not exist or is not applicable on the entity. Please verify the tag and try again." (**CJMMAS-3013-400**): one or more tags do not exist or do not apply to landing pages. Select existing tags.
 * **Page URL, name, and content**:
-    * No HTML (**CJMMAS-3203-422**, **CJMMAS-3301-422**): the page has no HTML content. Open the page designer and add the content.
+    * No HTML (**CJMMAS-3203-422** for the primary page, **CJMMAS-3301-422** for a subpage): the page has no HTML content. Open the page designer and add the content.
     * "There is no page name for the primary page. Provide a page name and try again." (**CJMMAS-3204-200**) and **CJMMAS-3302-200**: the page has no name. Enter a page name.
 * **Forms and subscription lists**:
     * "Multiple forms are present in the primary page ''{pageName}''. Only one form is allowed." (**CJMMAS-3218-422**): keep one **[!UICONTROL Form]** component on the primary page.
     * The primary page has no form component but a subscription list or a form configuration is still set (**CJMMAS-3223-422**, **CJMMAS-3224-422**): add a form component, then remove it, to reset the page.
-    * A subscription list is not selected or is invalid (**CJMMAS-3205-422**, **CJMMAS-3220-422**): select a valid subscription list.
+    * The primary page has no subscription list (**CJMMAS-3205-422**), or the subscription list set in it is not valid (**CJMMAS-3220-422**): select a valid subscription list.
     * "A subscription list that is not live is present in the primary page ''{pageName}''. Specify a live subscription list." (**CJMMAS-3219-422**): select a live subscription list, or check its start and end dates.
-    * Email text box and duplicate subscription lists (**CJMMAS-3225-422**, **CJMMAS-3226-422**, **CJMMAS-3227-422**): the form must have one email text box. A subscription list that is associated with the email text box must also be associated with a checkbox or a button, and each list can be used only once.
-    * Form field names (**CJMMAS-3206-422**, **CJMMAS-3207-422**): form fields must have a name, and each name must be unique.
+    * "Multiple email text boxes are present in the primary page ''{pageName}''." (**CJMMAS-3225-422**): keep one email text box in the form.
+    * A subscription list is associated with the email text box but not with a checkbox or a button (**CJMMAS-3226-422**): associate the subscription list with a checkbox or a button.
+    * Duplicate subscription lists (**CJMMAS-3227-422**): the same subscription list is used more than once in the form. Use each subscription list only once.
+    * Duplicate form field names (**CJMMAS-3206-422**): rename the duplicates so that each name is unique.
+    * Empty form field names (**CJMMAS-3207-422**): name the unnamed fields.
     * "Multiple Call to Action buttons are present in Primary Page ''{pageName}''." (**CJMMAS-3208-422**): keep a single call to action button on the primary page.
-    * Confirmation and error actions (**CJMMAS-3214-422** to **CJMMAS-3217-422**): the form needs one confirmation action and one error action, with the matching inline confirmation and error elements in the HTML.
+    * The data error or data confirmation tag is missing in the form (**CJMMAS-3214-422**): add the tag, and make sure the matching inline confirmation and error elements are in the HTML.
+    * No confirmation or error action is set (**CJMMAS-3215-422**): set one confirmation action and one error action.
+    * More than one confirmation or error action (**CJMMAS-3216-422**): keep one confirmation action and one error action.
+    * Inline confirmation and error elements missing in the HTML of the primary page (**CJMMAS-3217-422**): add them to the HTML.
 * **Expiration**:
-    * Date or action empty (**CJMMAS-3209-422**, **CJMMAS-3210-422**): set an expiration date, then select the action to run when the page expires: **[!UICONTROL Redirect URL]**, **[!UICONTROL Custom page]**, or **[!UICONTROL Browser error]**.
-    * Redirect URL empty or invalid (**CJMMAS-3211-422**, **CJMMAS-3221-422**): enter a valid URL for the **[!UICONTROL Redirect URL]** action.
-    * Subpage empty or invalid (**CJMMAS-3212-422**, **CJMMAS-3000-400**, **CJMMAS-3009-400**): select an existing subpage for the **[!UICONTROL Custom page]** action. Create the subpage first if it does not exist.
+    * Expiration date empty (**CJMMAS-3209-422**): set an expiration date for the primary page.
+    * Expiration action empty (**CJMMAS-3210-422**): select the action to run when the page expires: **[!UICONTROL Redirect URL]**, **[!UICONTROL Custom page]**, or **[!UICONTROL Browser error]**.
+    * Redirect URL empty (**CJMMAS-3211-422**) or not valid (**CJMMAS-3221-422**): enter a URL, or a valid URL, for the **[!UICONTROL Redirect URL]** action.
+    * Subpage empty or not valid (**CJMMAS-3212-422**), or subpage name not valid (**CJMMAS-3000-400**, **CJMMAS-3009-400**): select an existing subpage for the **[!UICONTROL Custom page]** action. Create the subpage first if it does not exist.
     * "The text for the primary page ''{pageName}'' expiration text action is missing. Enter the text." (**CJMMAS-3213-422**): type the error text for the **[!UICONTROL Browser error]** action.
     * "The expiration date selected in the primary page ''{pageName}'' has passed. Select a future date." (**CJMMAS-3222-422**): select a date in the future.
     * "Subpage ''{pageName}'' for expiry action contains contextual attributes of the primary page. Select a different subpage or remove the primary page contextual attributes from it." (**CJMMAS-3303-422**): select another subpage, or remove those attributes from it.
@@ -97,4 +105,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: f42fc738 -->
+<!-- ai-section-version: 1 | source-hash: 97e12301 -->

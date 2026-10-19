@@ -37,7 +37,6 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Custom channel — variants: custom channel authentication, credentials (as in the error messages and fixes)
-* Canonical name: Channel configuration — variants: surface, channel surface (as in the error messages)
 * Do not confuse: CJMRT (custom channels) ≠ CJMIAS (inbound actions) ≠ CJMRPS (reporting)
 
 **FAQ:**
@@ -46,11 +45,11 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why can I not deactivate custom channel credentials?** — CJMRT-081517-403: the credentials are used by an active channel configuration. Update the channel configuration first, then deactivate the credentials.
 * **Q: Why can I not activate custom channel credentials?** — CJMRT-081518-403: the custom channel is not active. Activate the custom channel first.
 * **Q: Why can I not publish my inbound action?** — Depending on the message: the maximum number of live inbound actions is reached (CJMIAS-0024-400), no merge policy is active on the edge (0028-400), a decision policy is missing (0029-400), some fields are invalid or missing (0030-400), or the channel configuration is missing or uses a surface (0031-400).
-* **Q: Why can I not add my dataset to the reporting configuration?** — Depending on the message: the dataset has no supported field group or is not event type (CJMRPS-1046-400, 1048-400), the maximum number of datasets is reached (1049-400), provisioning of the sandbox is pending (1041-404, 1045-400), or the dataset is not found (1042-400). If the dataset has already been added (1047-409), no action is needed.
+* **Q: Why can I not add my dataset to the reporting configuration?** — Depending on the message: the dataset has no supported field group (CJMRPS-1046-400: select or create a dataset that has at least one), the schema of the dataset is not an event type (1048-400: select or create an event-type dataset), the maximum number of datasets is reached (1049-400), provisioning of the sandbox is pending (1041-404) or ARES provisioning is pending (1045-400), or the dataset is not found (1042-400). If the dataset has already been added (1047-409), no action is needed.
 
 **Troubleshooting:**
 
-* **Custom channels**: CJMRT-081705-400 ("A custom channel authentication with the name \"{name}\" already exists. Please use a unique name and try again."): enter a unique name. CJMRT-081704-403, 081707-403, 081709-403: the status of the credentials does not allow the action (change, status transition, or deletion); check the status of the credentials and use an allowed transition.
+* **Custom channels**: CJMRT-081705-400 ("A custom channel authentication with the name \"{name}\" already exists. Please use a unique name and try again."): enter a unique name. CJMRT-081704-403: the status of the credentials does not allow the operation named in the message; check the status of the credentials, and use an allowed operation. CJMRT-081707-403: the status transition named in the message is not allowed; check the current status of the credentials, and use an allowed transition. CJMRT-081709-403: the credentials cannot be deleted in their current status; check the status of the credentials.
 * **Inbound actions**: CJMIAS-0027-400 is described as a warning on the page. CJMIAS-0028-400: enable the Active-On-Edge option on a merge policy, then publish again. CJMIAS-0029-400: check the decision policies of the action and recreate those that were deleted. CJMIAS-0030-400: open the action and complete its fields. CJMIAS-0031-400: select a channel configuration.
 * **Reporting datasets**: CJMRPS-1041-404, 1045-400 ("Provisioning is pending for sandbox." and "ARES provisioning is pending. Add dataset after provisioning is complete."): wait until provisioning completes, then add the dataset. CJMRPS-1042-400 ("Dataset not found."): check that the dataset exists in the sandbox.
 
@@ -68,4 +67,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 8bf8d083 -->
+<!-- ai-section-version: 1 | source-hash: 5cd666bf -->

@@ -253,4 +253,6 @@ You can configure **[!UICONTROL Advanced options]** for your push notification. 
 |**[!UICONTROL Delivery priority]** (Android only) | Sets up a high or normal priority for your push notifications. For more information on message priority, refer to the [Google developer documentation](https://firebase.google.com/docs/cloud-messaging/concept-options#setting-the-priority-of-a-message).|
 |**[!UICONTROL Time to live]** (Android only) | Set the number of seconds after which your message will expire. On Android, expiration is treated as a delivery window: Firebase Cloud Messaging (FCM) converts the expiration time into a time-to-live (TTL) value starting when the message is received, which means undelivered campaigns may be sent later than expected or even outside the desired timeframe. For more on this, refer the [Android developer documentation](https://firebase.google.com/docs/cloud-messaging/concept-options#ttl).|
 
+If your push content returns an error code, see [Content authoring errors](../content-management/content-authoring-errors.md).
+
 {{$include /help/_includes/do-not-localize/push/ai-augmented-design-push.md}}

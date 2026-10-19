@@ -37,9 +37,9 @@ For complete understanding, this information should be combined with the documen
 * Content can use up to 60 unique fragments per variant, and 120 across the variants of a message (hard limit). Exceeding it returns CJMMAS-1108-400, which names the limit in the message.
 * A fragment cannot reference itself (CJMMAS-1136-400).
 * Fragments cannot be nested deeper than the allowed depth (CJMMAS-1137-400, CJMMAS-1138-400); the depth is given in the message.
-* You can discard a draft only when the fragment is **[!UICONTROL Live]** and is being edited, so that a published version exists to go back to (CJMMAS-1143-400, CJMMAS-1144-400).
+* You can discard changes only on a draft of a fragment that is **[!UICONTROL Live]** and being edited, so that a published version exists to go back to (CJMMAS-1143-400). A fragment that was never published has no previous version, so changes cannot be discarded (CJMMAS-1144-400).
 * A sub type is allowed only on expression fragments, and an expression fragment needs one (CJMMAS-1134-400, CJMMAS-1135-400).
-* An AEM asset that is too large cannot be published to the CDN (CJMMAS-1613-413, CJMMAS-1713-413).
+* A payload that is too large for AEM Assets is rejected (CJMMAS-1613-413), and an asset that is too large cannot be published to the CDN (CJMMAS-1713-413). In both cases, use a smaller version of the asset.
 
 **Prerequisites and permissions:**
 
@@ -59,10 +59,10 @@ For complete understanding, this information should be combined with the documen
 * **Q: I cannot publish a fragment because of a permission error. What do I do?** — For CJMMAS-1122-403, ask your administrator to grant the **[!UICONTROL Publish Fragment]** permission.
 * **Q: I cannot manage a fragment or simulate content with it. What do I do?** — For CJMMAS-1120-403, CJMMAS-1121-403 and CJMMAS-1131-403, ask your administrator to grant the **[!UICONTROL Manage library items]** permission (included in the Content Library Manager product profile) and access to the fragment.
 * **Q: Why does publishing fail with "The fragment you are trying to publish already has a publication in progress."?** — The fragment is in the **[!UICONTROL Publishing]** status. Wait until the publication completes, then try again.
-* **Q: Why does publishing fail because a referenced fragment is not published?** — For CJMMAS-1148-400 and CJMMAS-1152-400, a fragment referenced in the fragment or in the content is not published, or its publication failed. Fix and publish the referenced fragment first, then publish again.
+* **Q: Why does publishing fail because of a referenced fragment?** — For CJMMAS-1148-400, a fragment referenced in the fragment or in the content is not published: publish the referenced fragment first, then publish again. For CJMMAS-1152-400, the publication of a referenced fragment failed: fix the referenced fragment and publish it, then publish again.
 * **Q: Why does "The limit of number of fragment URIs passed in the input is reached." appear?** — The content uses more fragments than allowed (CJMMAS-1108-400). Content can use up to 60 unique fragments per variant, and 120 across the variants of a message.
 * **Q: An AEM content fragment cannot be found (AJOCBS-1103-404). What do I check?** — Check that it is published to the AEM Publish tier and carries the ajo-enabled tag for your organization and sandbox.
-* **Q: What do I do when an AEM asset has a failed status?** — For AJOAGS-1201-417, CJMMAS-1730-206 and CJMMAS-1732-500, republish the asset in Adobe Experience Manager, wait for the sync, then try again.
+* **Q: What do I do when an AEM asset is not published or its publication failed?** — For AJOAGS-1201-417 (the publication of the asset has the FAILED status) and CJMMAS-1732-500 (some assets may not have been published in the defined timeframe), republish the asset or assets in Adobe Experience Manager, wait for the sync, then try again. For CJMMAS-1730-206 (Journey Optimizer is checking again whether the asset is published), wait for the sync, then try again, and republish the asset in Adobe Experience Manager if it stays unpublished.
 * **Q: What do I do when the organization reached the CDN storage capacity for assets?** — For CJMMAS-1657-507, delete or unpublish assets you do not use, or contact your Adobe representative.
 
 **Troubleshooting:**
@@ -71,7 +71,21 @@ For complete understanding, this information should be combined with the documen
 * CJMMAS-1163-400, "Invalid fragment scheme. Allowed schemes are 'ajo', 'aem' and 'external'." — The fragment scheme is not valid. Use ajo, aem, or external.
 * CJMMAS-1142-400, "Fragment should be published for Modify Fragment." — The action applies to a published fragment. Publish the fragment first, then edit it.
 * AJOAGS-1501-422, "Bad Request. Repo Id is missing for AEM Content Fragment." — The repository ID is missing. Select the fragment again so that its repository is recorded.
-* CJMMAS-1629-429, "Exceeded number of request allowed on AEM Assets." — Part of the AEM Assets access errors (CJMMAS-1601, 1603, 1629, 1653): check your access to the repository, wait a few minutes, then try again.
+* CJMMAS-1629-429, "Exceeded number of request allowed on AEM Assets." — Too many requests were sent to Adobe Experience Manager Assets. Wait a few minutes, then try again.
+* CJMMAS-1653-503, "AEM Assets is currently unavailable." — Adobe Experience Manager Assets is unavailable. Wait a few minutes, then try again.
+* CJMMAS-1601-401, "Unauthorized Error while accessing AEM Assets, Token might be wrong, expired or invalid." — Authentication to Adobe Experience Manager Assets failed. Check your access to the repository, then try again.
+* CJMMAS-1603-403, "Forbidden error while accessing AEM Assets." — You do not have permission to access Adobe Experience Manager Assets. Check your access to the repository, then try again.
+* CJMMAS-1704-400, "Bad Asset ID or Asset not found." and AJOAGS-1200-500, "AEM asset URL is either empty or not valid." — The asset ID is wrong or the asset was not found (CJMMAS-1704-400), or the asset has no URL or its URL is not valid (AJOAGS-1200-500). In both cases, select a published asset from the right repository.
+* CJMMAS-1139-403, "You do not have permission on the referenced fragment uris {fragmentUris}." — Your user does not have access to the fragments referenced by this fragment. Ask your administrator for access to them, or remove the references.
+* CJMMAS-1130-400 and CJMMAS-1149-400 — The fragment has validation errors. Open the fragment, fix the errors, then publish it again.
+* CJMMAS-1158-404, "No previous fragment publication found." — The fragment has no publication yet. Publish the fragment before you retry. CJMMAS-1159-404 — The fragment has no successful publication yet. Publish the fragment and make sure the publication succeeds before you retry.
+* CJMMAS-1157-400, CJMMAS-1145-400, CJMMAS-1160-404 — The fragment is in the **[!UICONTROL Publishing]** status. Wait until the publication completes, then edit it (CJMMAS-1157-400), try again (CJMMAS-1145-400), or retry (CJMMAS-1160-404).
+* CJMMAS-1143-400, "Fragment should be in draft to Discard Changes." — See Guardrails. CJMMAS-1144-400, "There is no previous version info present. Will not be able to Discard Changes." — The fragment has no previous version, so changes cannot be discarded.
+* CJMMAS-1161-500 and CJMMAS-1162-500 — The publication of a referenced AEM fragment failed (CJMMAS-1161-500) or did not complete in time (CJMMAS-1162-500). Fix the fragment in Adobe Experience Manager and republish it, then publish again.
+* AJOCBS-1101-401 and CJMMAS-8101-401 — Journey Optimizer cannot authenticate to Adobe Experience Manager. Check the AEM connection and the access token, then try again.
+* AJOCBS-1102-403 and CJMMAS-8102-403 — You do not have permission to use this content fragment. Ask your administrator for access to the fragment and its repository.
+* AJOCBS-1105-504 and AJOCBS-1108-400 — The request to Adobe Experience Manager timed out (AJOCBS-1105-504) or was rejected as a bad request (AJOCBS-1108-400). Check that the fragment is published, then try again.
+* CJMMAS-1124-400 and CJMMAS-1125-400 — The variant references cannot be updated: give each variant a distinct name (CJMMAS-1124-400), and keep at least one variant enabled (CJMMAS-1125-400).
 
 **Related pages:**
 
@@ -86,4 +100,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 6d9f4864 -->
+<!-- ai-section-version: 1 | source-hash: e71eb9c1 -->

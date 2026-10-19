@@ -305,6 +305,8 @@ After you request is handled by Adobe, the undelegated domain is no longer displ
 >* You cannot reactivate the channel configurations which were using that subdomain.
 >* You cannot delegate the same subdomain again through the user interface. If you want to do so, reach out to your Adobe representative.
 
+If subdomain delegation returns an error code, see [Subdomain delegation and DNS errors](subdomain-delegation-errors.md).
+
 ## How-to video{#video}
 
 Learn how to create a subdomain using CNAME to point to Adobe-specific records.

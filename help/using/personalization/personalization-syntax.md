@@ -324,4 +324,6 @@ If an XDM schema field name contains a hyphen (e.g. `order-total`), wrap it in b
 
 For ready-to-use expressions you can copy directly into your content, see [Personalization recipes](personalization-recipes.md).
 
+If an expression returns an error code, see [Personalization errors](personalization-errors.md).
+
 {{$include /help/_includes/do-not-localize/personalization/ai-augmented-personalization-syntax.md}}

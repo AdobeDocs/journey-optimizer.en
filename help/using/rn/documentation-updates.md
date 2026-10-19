@@ -35,6 +35,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new **Custom metadata for journeys and campaigns** page explains how to configure custom metadata fields and use them in the properties of journeys, Action campaigns and Orchestrated campaigns. This capability is available in Limited Availability. [Read more](../administration/custom-metadata.md)
 
+* A new **Troubleshooting overview** page and 14 error pages give the cause and the fix for each error code, grouped by feature area: Journeys, Campaigns, Content, and Configuration. Related feature pages now link to the matching error page. [Read more](../../rp_landing_pages/troubleshooting-overview-landing-page.md)
+
+* Notes have been added to clarify that custom upload (CSV) audiences are not supported as targeting audiences for inbound channel actions, including in-app messages and web or code-based experiences. Campaigns that use them with an inbound channel fail with an upstream error. [Read more](../audience/target-audiences.md#guardrails)
+
 * The **Use visual fragments** page has been updated to reflect the current fragment limits: you can add up to 60 unique fragments per variant, and up to 120 distinct fragments across all variants of a multilingual message. [Read more](../email/use-visual-fragments.md)
 
 * The **Batch delivery** page now clarifies that batch decisioning uses profile snapshot data, which does not include experience events (xEvents). Offers that depend on xEvent data may not qualify, and the fallback offer may be returned. Use profile attributes or audiences instead. [Read more](../offers/batch-delivery.md)

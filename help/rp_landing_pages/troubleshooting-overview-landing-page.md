@@ -3,7 +3,6 @@ solution: Journey Optimizer
 product: Journey Optimizer
 title: Troubleshooting overview
 description: Find the right troubleshooting resource for Adobe Journey Optimizer, including the troubleshooting FAQ, the journey troubleshooting guides, and the pages that explain each family of error codes
-hide: true
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer

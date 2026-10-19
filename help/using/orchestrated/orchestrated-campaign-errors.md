@@ -9,7 +9,6 @@ role: User
 level: Intermediate
 keywords: error, troubleshooting, orchestrated campaigns, CJMOC
 version: Campaign Orchestration
-hide: true
 ---
 # Orchestrated campaign errors {#orchestrated-campaign-errors}
 
@@ -34,7 +33,8 @@ See also [Built-in permissions](../administration/ootb-permissions.md).
 | **CJMOC-1001-403** | Unauthorized access to the resource. | Your user does not have the permission needed for this action. Ask your administrator to grant it on your product profile. [Learn more](../administration/ootb-permissions.md) |
 | **CJMOC-1005-403** | You do not have access to required permission: {permission}. Check your permissions with your product administrator and try again. | Your user does not have the permission named in the message. Ask your administrator to add it to your product profile. To publish or trigger a campaign, you need the **[!UICONTROL Publish orchestrated campaigns]** permission. [Learn more](../administration/ootb-permissions.md) |
 | **CJMOC-1004-403** | You do not have access to some attributes. Check your permissions with your product administrator and try again. | You do not have access to some of the attributes used by the campaign. Ask your administrator for access, or remove those attributes from the campaign. [Learn more](../administration/attribute-based-access.md) |
-| **CJMOC-1215-403**, **1216-403** | OLAC check failed for operation {operation} on resource {id}.<br/>OLAC check failed for create operation. | You do not have access to this object. Ask your administrator to grant object-level access. [Learn more](../administration/object-based-access.md) |
+| **CJMOC-1215-403** | OLAC check failed for operation {operation} on resource {id}. | You do not have object-level access to the resource for this operation. Ask your administrator to grant it. [Learn more](../administration/object-based-access.md) |
+| **CJMOC-1216-403** | OLAC check failed for create operation. | You do not have object-level access to create this object. Ask your administrator to grant it. [Learn more](../administration/object-based-access.md) |
 
 ## Campaign status and lifecycle {#status}
 
@@ -44,7 +44,9 @@ See also [Understand the campaign lifecycle](start-monitor-campaigns.md#lifecycl
 
 | Error code | Message | How to fix |
 |---|---|---|
-| **CJMOC-1201-400**, **1203-400**, **6005-400** | The orchestrated campaign version is not in Draft status or the orchestrated campaign ID is not set. Please check and try again.<br/>The version for the orchestrated campaign id : {id} cannot be published as it is not in Draft status.<br/>Publication error: the orchestrated campaign current version is not in Draft status. | Only a campaign in **[!UICONTROL Draft]** status can be edited or published this way. Check the campaign status. To start again from a Draft, duplicate the campaign. [Learn more](start-monitor-campaigns.md#lifecycle) |
+| **CJMOC-1201-400** | The orchestrated campaign version is not in Draft status or the orchestrated campaign ID is not set. Please check and try again. | The campaign is not in **[!UICONTROL Draft]** status, or its ID is not set. Check the campaign and its status. To start again from a Draft, duplicate the campaign. [Learn more](start-monitor-campaigns.md#lifecycle) |
+| **CJMOC-1203-400** | The version for the orchestrated campaign id : {id} cannot be published as it is not in Draft status. | The campaign cannot be published because it is not in **[!UICONTROL Draft]** status. Check the campaign status. To start again from a Draft, duplicate the campaign. [Learn more](start-monitor-campaigns.md#lifecycle) |
+| **CJMOC-6005-400** | Publication error: the orchestrated campaign current version is not in Draft status. | The publication failed because the current version of the campaign is not in **[!UICONTROL Draft]** status. Check the campaign status. To start again from a Draft, duplicate the campaign. [Learn more](start-monitor-campaigns.md#lifecycle) |
 | **CJMOC-1202-400** | The current version for the orchestrated campaign id : {id} is in Live status. | The campaign is **[!UICONTROL Live]** and cannot be edited. Stop it, or use **[!UICONTROL Back to draft]** when it is available. Then edit the campaign and publish it again. [Learn more](start-monitor-campaigns.md#back-to-draft) |
 | **CJMOC-6006-400** | Publication error: orchestrated campaign current version is running. It must be terminated before publishing the next version. | The campaign is still running. Stop it, or wait for it to finish, then publish the campaign again. [Learn more](start-monitor-campaigns.md#lifecycle) |
 | **CJMOC-6039-500** | Side effect activity already started: {activityId} (channel: {activityChannel}). | A channel activity already started, so messages may have been sent. The campaign cannot go back to draft. Stop it and create a new campaign. [Learn more](start-monitor-campaigns.md#back-to-draft) |
@@ -58,10 +60,13 @@ See also [Test your campaign before publishing](start-monitor-campaigns.md#test)
 
 | Error code | Message | How to fix |
 |---|---|---|
-| **CJMOC-2001-400**, **2004-400** | Cannot start a test session for the orchestrated campaign version. The campaign version must be in Draft status.<br/>Stop test session failed for orchestrated campaign version. The campaign version must be in Draft status. | You can start a test only while the campaign is in **[!UICONTROL Draft]** status. Check the campaign status, or duplicate the campaign. [Learn more](start-monitor-campaigns.md#test) |
+| **CJMOC-2001-400** | Cannot start a test session for the orchestrated campaign version. The campaign version must be in Draft status. | You can start a test only while the campaign is in **[!UICONTROL Draft]** status. Check the campaign status, or duplicate the campaign. [Learn more](start-monitor-campaigns.md#test) |
+| **CJMOC-2004-400** | Stop test session failed for orchestrated campaign version. The campaign version must be in Draft status. | The campaign must be in **[!UICONTROL Draft]** status to stop the test session. Check the campaign status, or duplicate the campaign. [Learn more](start-monitor-campaigns.md#test) |
 | **CJMOC-2002-400** | Cannot start a test session for the orchestrated campaign version. The campaign version is already in Test. | A test is already running on this campaign. Stop it or restart it, then start a new test. [Learn more](start-monitor-campaigns.md#test) |
 | **CJMOC-2005-400** | Stop test session failed for orchestrated campaign version. The campaign version must be in Test status. | No test is running on this campaign, so there is nothing to stop. Start a test first. [Learn more](start-monitor-campaigns.md#test) |
-| **CJMOC-2006-400**, **2007-400**, **4205-400** | Start test session failed for orchestrated campaign version. No orchestration defined.<br/>Stop test session failed for orchestrated campaign version. No orchestration defined.<br/>Orchestration for the orchestrated campaign id {id} is not defined. | The campaign has no activities. Add activities to the canvas and save the campaign, then start the test. [Learn more](orchestrate-activities.md) |
+| **CJMOC-2006-400** | Start test session failed for orchestrated campaign version. No orchestration defined. | The campaign has no activities, so the test cannot start. Add activities to the canvas and save the campaign, then start the test. [Learn more](orchestrate-activities.md) |
+| **CJMOC-2007-400** | Stop test session failed for orchestrated campaign version. No orchestration defined. | The campaign has no activities. Add activities to the canvas and save the campaign, then try again. [Learn more](orchestrate-activities.md) |
+| **CJMOC-4205-400** | Orchestration for the orchestrated campaign id {id} is not defined. | The campaign has no activities. Add activities to the canvas and save the campaign. [Learn more](orchestrate-activities.md) |
 | **CJMOC-2009-400** | Cannot fetch profiles data for activity {activity} in orchestratedCampaignVersion id {id}. The activity must have been executed at least once. | The activity has not run yet, so it has no data to show. Run the campaign in test so that the activity executes, then check its data again. [Learn more](start-monitor-campaigns.md#test) |
 
 ## Activities {#activities}
@@ -73,8 +78,11 @@ See also [Guardrails and limitations](guardrails.md#activities-limitations).
 | Error code | Message | How to fix |
 |---|---|---|
 | **CJMOC-5000-400** | Activity {activityLabel} ({activityId}) has one or more transitions without attached activity. Please add required activities so that the transition is not empty. | Connect each outgoing transition of the activity to another activity, or delete the empty transition. [Learn more](orchestrate-activities.md) |
-| **CJMOC-5005-400**, **5006-400**, **5007-400** | Activity {activityLabel} ({activityId}) has no field. Please select at least one field and try again.<br/>Activity {activityLabel} ({activityId}) has no expression. Select an expression and try again.<br/>Activity {activityLabel} ({activityId}) has no attribute. Please select at least one attribute and try again. | The activity is incomplete. Open the activity named in the message and select the missing field, expression, or attribute. [Learn more](orchestrate-activities.md) |
-| **CJMOC-5008-400**, **5009-400** | Activity {activityLabel} ({activityId}) is disabled. Please enable it and try again.<br/>Activity {activityLabel} ({activityId}) is paused. Please enable it and try again. | The activity is disabled or paused. Enable the activity again, then retry. [Learn more](orchestrate-activities.md) |
+| **CJMOC-5005-400** | Activity {activityLabel} ({activityId}) has no field. Please select at least one field and try again. | The activity named in the message has no field. Open it and select at least one field. [Learn more](orchestrate-activities.md) |
+| **CJMOC-5006-400** | Activity {activityLabel} ({activityId}) has no expression. Select an expression and try again. | The activity named in the message has no expression. Open it and select an expression. [Learn more](orchestrate-activities.md) |
+| **CJMOC-5007-400** | Activity {activityLabel} ({activityId}) has no attribute. Please select at least one attribute and try again. | The activity named in the message has no attribute. Open it and select at least one attribute. [Learn more](orchestrate-activities.md) |
+| **CJMOC-5008-400** | Activity {activityLabel} ({activityId}) is disabled. Please enable it and try again. | The activity named in the message is disabled. Enable the activity again, then retry. [Learn more](orchestrate-activities.md) |
+| **CJMOC-5009-400** | Activity {activityLabel} ({activityId}) is paused. Please enable it and try again. | The activity named in the message is paused. Enable the activity again, then retry. [Learn more](orchestrate-activities.md) |
 | **CJMOC-5003-400** | Activity {activityLabel} ({activityId}) has an empty query. Please check and try again. | The activity has an empty query. Open the activity and build the rule, or select an audience. [Learn more](build-query.md) |
 | **CJMOC-5016-400** | Activity {activityLabel} ({activityId}) has no audience. Please select an audience and try again. | Open the **[!UICONTROL Read audience]** activity and select an audience. [Learn more](activities/read-audience.md) |
 | **CJMOC-5022-400** | Read audience activity {activityLabel} ({activityId}) has a merge policy that does not match with campaign's. | The audience uses a different merge policy than the campaign. Select an audience that uses the merge policy of the campaign, or change the merge policy of the campaign. [Learn more](create-orchestrated-campaign.md) |
@@ -118,7 +126,8 @@ These errors occur when a campaign sends messages in waves.
 
 | Error code | Message | How to fix |
 |---|---|---|
-| **CJMOC-6045-400**, **6046-400** | Waves are not supported for a recurring orchestrated campaign<br/>Waves are not supported for a signal-triggered orchestrated campaign | Waves are not available for recurring or signal-triggered campaigns. Remove the wave configuration, or use a one-time scheduled campaign. [Learn more](../delivery/send-using-waves.md) |
+| **CJMOC-6045-400** | Waves are not supported for a recurring orchestrated campaign | Waves are not available for recurring campaigns. Remove the wave configuration, or use a one-time scheduled campaign. [Learn more](../delivery/send-using-waves.md) |
+| **CJMOC-6046-400** | Waves are not supported for a signal-triggered orchestrated campaign | Waves are not available for signal-triggered campaigns. Remove the wave configuration, or use a one-time scheduled campaign. [Learn more](../delivery/send-using-waves.md) |
 | **CJMOC-6047-400** | A wave is configured before the orchestrated campaign start | Set the start of the wave after the start of the campaign. [Learn more](../delivery/send-using-waves.md) |
 
 ## Related topics {#related}

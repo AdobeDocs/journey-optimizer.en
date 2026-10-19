@@ -96,6 +96,8 @@ Audiences can be generated using different methods:
 
 * **Custom upload**: Import an audience using a CSV file. [Learn how to create Custom Upload audiences](custom-upload.md)
 
+    Custom upload audiences are not supported for inbound channels (in-app messages, web and code-based experiences). [Learn more](target-audiences.md#guardrails)
+
 * **Audience composition**: Create a composition workflow to combine existing audiences into a visual canvas and apply actions such as rank, split, join to create new audiences. [Learn how to work with audience composition](get-started-audience-orchestration.md)
 
 * **Federated Audience Composition**: Federate datasets directly from your existing data warehouse to build and enrich Adobe Experience Platform audiences and attributes all in one system. [Learn how to work with Federated Audience Composition](federated-audience-composition.md).

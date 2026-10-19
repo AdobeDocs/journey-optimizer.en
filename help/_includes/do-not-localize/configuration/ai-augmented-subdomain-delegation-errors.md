@@ -25,7 +25,7 @@ For complete understanding, this information should be combined with the documen
 * **Delegated subdomain**: Subdomain delegated to Adobe by adding at your DNS provider the name server records displayed in Journey Optimizer *(product-specific)*
 * **Ownership validation record**: DNS record with the value displayed in Journey Optimizer; only one must exist *(product-specific)*
 * **Channel configuration**: Configuration of a channel; the error messages call it a surface or channel surface *(product-specific)*
-* **IP pool**: Pool selected in an email channel configuration; its status can be **[!UICONTROL Processing]** or **[!UICONTROL Success]** *(product-specific)*
+* **IP pool**: Pool selected in an email channel configuration; the page names the statuses **[!UICONTROL Processing]** and **[!UICONTROL Success]** *(product-specific)*
 
 **Guardrails:**
 
@@ -57,15 +57,16 @@ For complete understanding, this information should be combined with the documen
 * **Subdomain delegation**: CJMRT-080601-400 ("Root level domain should not be delegated."): delegate a subdomain, for example marketing.example.com. CJMRT-080604-400 ("Domain provided is invalid. Please check with domain registrar."): check the domain name with your domain registrar. CJMRT-080609-409 ("The subdomain {subdomain} already exists."): use a different subdomain, or select the existing one.
 * **DNS records**: errors when a DNS record that Adobe checks during delegation is missing or not correct.
   * CJMRT-080605-400 ("Please create all required records and then try again"): create all the records listed in Journey Optimizer at your DNS provider.
-  * CJMRT-080606-400, 080607-400: the ownership validation record is duplicated or does not match. Keep a single ownership validation record, with the value displayed in Journey Optimizer.
+  * CJMRT-080606-400 ("Multiple ownership validation record found. Please remove extra validation record and try again."): more than one ownership validation record was found. Remove the extra record and keep a single one.
+  * CJMRT-080607-400 ("Ownership validation record not matching. Please check validation record and try again."): the ownership validation record does not match. Use the value displayed in Journey Optimizer.
   * CJMRT-080608-400 ("The Google verification record already exists."): a Google verification TXT record already exists for this subdomain; you do not need to add it again.
   * CJMRT-080610-400 ("Please create forward dns first and then try again"): create the forward DNS record first.
   * CJMRT-080612-400: the MX record of the subdomain is missing. Add it at your DNS provider.
   * CJMRT-080617-404 ("This subdomain {subdomain} does not have any active DMARC record. It is recommended to add it."): add a DMARC record to comply with the Google and Yahoo sender requirements.
   * CJMRT-080618-404 ("DMARC delegation record does not exist. Please create it and try again."): create it at your DNS provider.
-* **Web and landing page subdomains**: CJMRT-080611-404 (no default web subdomain configured): select a delegated subdomain and use the **[!UICONTROL Set as default]** option. CJMRT-080613-400, 080614-400: see Guardrails. CJMRT-080631-409 ("An email subdomain is already delegated for this subdomain."): select it as an existing subdomain instead of delegating it again.
+* **Web and landing page subdomains**: CJMRT-080611-404 (no default web subdomain configured): select a delegated subdomain and use the **[!UICONTROL Set as default]** option. CJMRT-080613-400 (the CDN domain is not configured for this delegated subdomain): contact your Adobe representative to configure the CDN domain. CJMRT-080614-400 (the subdomain is not delegated for email): delegate it first, then contact your Adobe representative to configure the CDN domain. CJMRT-080631-409 ("An email subdomain is already delegated for this subdomain."): select it as an existing subdomain instead of delegating it again.
 * **Channel configurations and IP pools**: CJMRT-080101-403 and CJMRT-080102-403: see FAQ and Guardrails. For 080102-403, create a new channel configuration with the attributes you need.
-* **Seed lists**: CJMRT-080802-409, 080803-400 ("The seedlist with the name {name} already exists. Please use a different seedlist name and try again." and "Please enter a valid seed address."): use a seed list name that does not exist yet, and a valid seed email address.
+* **Seed lists**: CJMRT-080802-409 ("The seedlist with the name {name} already exists. Please use a different seedlist name and try again."): use a seed list name that does not exist yet. CJMRT-080803-400 ("Please enter a valid seed address."): use a valid seed email address.
 
 **Related pages:**
 
@@ -82,4 +83,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 43bedee6 -->
+<!-- ai-section-version: 1 | source-hash: 4148f260 -->

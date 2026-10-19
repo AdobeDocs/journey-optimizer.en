@@ -128,6 +128,10 @@ To start building your web experience through a campaign, follow the steps below
 
 1. Complete the steps to create a web campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule).
 
+    >[!CAUTION]
+    >
+    >Custom upload (CSV) audiences are not supported for web experiences. [Learn more](../audience/target-audiences.md#guardrails)
+
 1. Select the **[!UICONTROL Web]** action.
 
 1. Select or create the web configuration. [Learn more about web configuration](web-configuration.md)

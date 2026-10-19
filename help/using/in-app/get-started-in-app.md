@@ -111,6 +111,7 @@ In-app messages depend on an active session, so they are not suited to every sce
 * The message is a high-volume transactional update, such as an order confirmation, that is better suited to email or mobile message
 * Overuse could lead to banner blindness, where users start ignoring messages that appear too often
 * Users may be offline or without app connectivity when the message is meant to be delivered
+* You want to target a custom upload (CSV) audience, which is not supported for in-app messages. [Learn more](../audience/target-audiences.md#guardrails)
 
 
 
