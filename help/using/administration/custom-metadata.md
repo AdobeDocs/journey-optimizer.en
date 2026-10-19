@@ -35,30 +35,52 @@ The values you enter are recorded in the entity datasets. You can use them for d
 
 ## How custom metadata works {#how-it-works}
 
-Custom metadata fields are defined in [!DNL Adobe Experience Platform] [schemas](../data/get-started-schemas.md). [!DNL Journey Optimizer] automatically provisions one record-based schema for each type of entity. These schemas use the **AJO Entity Metadata** class:
+Custom metadata fields are defined in [!DNL Adobe Experience Platform] [schemas](../data/get-started-schemas.md). [!DNL Journey Optimizer] automatically provisions one record-based schema for each type of entity. These schemas use the **AJO Entity Class**:
 
 * **AJO Campaign Custom Metadata Schema**
 * **AJO Journey Custom Metadata Schema**
-* **AJO Orchestration Campaign Custom Metadata Schema**
+* **AJO Orchestrated Campaign Custom Metadata Schema**
 
 ## Define your custom metadata fields {#define-fields}
 
-To define custom metadata fields, add them to a custom field group, then add this field group to the schemas of the entity types where you want to use them.
+To define custom metadata fields, add them to a custom field group in the schema of the entity type where you want to use them. You can reuse the same field group in the schemas of other entity types.
 
-1. In [!DNL Adobe Experience Platform], browse to **[!UICONTROL Schemas]** and open one of the custom metadata schemas, for example **AJO Campaign Custom Metadata Schema**.
+1. In [!DNL Adobe Experience Platform], browse to **[!UICONTROL Schemas]** and from the **[!UICONTROL Browse]** tab, open one of the custom metadata schemas, for example **[!UICONTROL AJO Campaign Custom Metadata Schema]**.
 
-1. Add a field group and create a new custom field group, for example **AJO custom metadata**. [Learn how to add field groups and fields to a schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui){target="_blank"}
+    ![Custom metadata schemas in the Schemas browse tab](assets/metadata-campaign-schema.jpg)
 
-1. Add your fields to the field group. For each field, define a name, a display name and, optionally, a description.
+    >[!NOTE]
+    >
+    >Do not edit the name of these schemas.
 
-    * The field type must be **string**.
-    * To provide a list of values, define the field as an enum and add each value with its display name.
+1. Click **[!UICONTROL Add]** and select **[!UICONTROL Create new field group]**. Select a display name, for example **AJO Custom Metadata**. [Learn how to add field groups and fields to a schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui){target="_blank"}
+
+    ![Add button for field groups in the campaign custom metadata schema](assets/metadata-schema-add-field-group.jpg){width="60%"}
+
+1. Back in the **[!UICONTROL AJO Campaign Custom Metadata Schema]** structure, select the field group you created and click the plus icon next to the name of the schema to add a new field.
+
+    ![Custom field group selected in the campaign custom metadata schema](assets/metadata-schema-add-field.jpg)
+
+    >[!NOTE]
+    >
+    >You can also select the field group you want to assign the field to from the **[!UICONTROL Field Group]** dropdown at any time while defining the field.
+
+1. For each field, define a name, a display name and, optionally, a description.
+
+1. Define the field type. It must be **[!UICONTROL String]**.
+
+1. To provide a list of values, define the field as an enum and add each value with its display name.
+
+1. Make sure to follow these guidelines:
+
     * Do not define default values or patterns.
-    * Do not mark fields as required in the schema. You can make fields required when you [select the fields to display](#select-fields).
+    * Do not mark fields as required in the schema. You can make fields required when you [select the fields to display](#select-fields) in the properties of your campaigns or journeys.
 
-1. Save the schema.
+1. Click **[!UICONTROL Apply]** to save the new field.
 
-1. Open the other custom metadata schemas and add the same field group to them. The same fields are then available for all entity types.
+1. Repeat these steps to add as many fields as needed.
+
+1. Optionally, to use the same fields for other entity types, open the corresponding custom metadata schemas and add the same field group to them.
 
 >[!NOTE]
 >
@@ -68,7 +90,9 @@ To define custom metadata fields, add them to a custom field group, then add thi
 
 Once your fields are defined in the schemas, choose which ones appear in the properties of your journeys and campaigns.
 
-1. In the [!DNL Journey Optimizer] administration, browse to **[!UICONTROL Configuration]** and open the metadata panel. <!-- TODO DOCAC-16114: confirm the exact panel name; the icon might change -->
+1. In the left navigation, browse to **[!UICONTROL Administration]** > **[!UICONTROL Configurations]**, then click **[!UICONTROL Manage]** in the **[!UICONTROL Metadata]** card.
+
+    ![Metadata card in the Configurations dashboard](assets/metadata-panel.jpg)
 
     The panel contains one tab per entity type: **[!UICONTROL Journeys]**, **[!UICONTROL Campaigns]** and **[!UICONTROL Orchestrated campaigns]**.
 
