@@ -148,6 +148,10 @@ To assign custom data usage labels to the journey, click the **[!UICONTROL Manag
 
 ## Custom metadata {#custom-metadata}
 
+>[!AVAILABILITY]
+>
+>This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+
 If custom metadata fields have been configured for journeys, they are displayed in the journey properties. Use them to track business information such as line of business, product or cost center. Fields marked with an asterisk are required. [Learn more about custom metadata](../administration/custom-metadata.md)
 
 ## Journey payload size {#journey-payload-size}

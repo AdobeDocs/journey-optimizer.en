@@ -57,6 +57,10 @@ To create an Orchestrated campaign, follow these steps:
      
      1. If your administrator configured custom metadata fields for Orchestrated campaigns, fill them in. Fields marked with an asterisk are required. [Learn more about custom metadata](../administration/custom-metadata.md)
 
+         >[!AVAILABILITY]
+         >
+         >This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+
      1. Click **[!UICONTROL Save]**.
 
 

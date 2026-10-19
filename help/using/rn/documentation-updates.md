@@ -33,7 +33,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
-* A new **Custom metadata for journeys and campaigns** page explains how to configure custom metadata fields and use them in the properties of journeys, Action campaigns and Orchestrated campaigns. [Read more](../administration/custom-metadata.md)
+* A new **Custom metadata for journeys and campaigns** page explains how to configure custom metadata fields and use them in the properties of journeys, Action campaigns and Orchestrated campaigns. This capability is available in Limited Availability. [Read more](../administration/custom-metadata.md)
 
 * The **Use visual fragments** page has been updated to reflect the current fragment limits: you can add up to 60 unique fragments per variant, and up to 120 distinct fragments across all variants of a multilingual message. [Read more](../email/use-visual-fragments.md)
 
