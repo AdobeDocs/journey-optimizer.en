@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: tracking, monitor, analytics, reporting, deliverability
 exl-id: d5e7adb7-8473-4c29-8ae6-ba979aef97f3
-TQID: https://experienceleague.adobe.com/jLHTNJlUPQm39EZvTLLBvYT92eGlCBoHpTKBfJ1Zxlk
+TQID: 'https://experienceleague.adobe.com/jLHTNJlUPQm39EZvTLLBvYT92eGlCBoHpTKBfJ1Zxlk'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,9 +18,13 @@ feature_v2:
     internal-label: Track and monitor
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: 9bb4b199-a2fd-5580-9021-eafbab678ff5
+    internal-label: Monitoring
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -197,13 +201,13 @@ In-app messages automatically track displays and user interactions. Configure tr
 
 +++
 
-+++SMS & MMS tracking
++++Mobile message tracking
 
-SMS tracking requires minimal setup—Journey Optimizer automatically shortens and tracks links you include in messages.
+Mobile message tracking requires minimal setup—Journey Optimizer automatically shortens and tracks links you include in messages.
 
 **How it works:**
 
-* **Automatic link tracking** - Add any URL to your SMS content using the URL helper function. Journey Optimizer automatically shortens the link and tracks clicks without additional configuration. To use URL shortening, you must first configure an SMS subdomain. [Learn more](../mobile/mobile-subdomains.md)
+* **Automatic link tracking** - Add any URL to your mobile content using the URL helper function. Journey Optimizer automatically shortens the link and tracks clicks without additional configuration. To use URL shortening, you must first configure an SMS subdomain. [Learn more](../mobile/mobile-subdomains.md)
 
 * **Inbound message tracking** - Replies from recipients are automatically captured, allowing you to monitor two-way conversations and response patterns. [Learn more](../mobile/mobile-opt-out.md#sms-native-keywords)
 
@@ -278,7 +282,7 @@ Beyond channel-level tracking, configure tracking to measure overall performance
 
 * **Create custom reports and export data** - Build tailored reports and export tracking data to external systems for deeper analysis. [Learn more](../reports/sharing-overview.md)
 
-* **View unified performance:** Access comprehensive reports for both campaigns and journeys to compare performance across email, push, SMS, and other channels, and to understand which combinations drive the best results. [Campaign reports](../reports/campaign-global-report-cja.md) | [Journey reports](../reports/journey-global-report-cja.md)
+* **View unified performance:** Access comprehensive reports for both campaigns and journeys to compare performance across email, push, mobile message, and other channels, and to understand which combinations drive the best results. [Campaign reports](../reports/campaign-global-report-cja.md) | [Journey reports](../reports/journey-global-report-cja.md)
 
 ## Track optimization & decisioning performance {#optimization-decisioning-tracking}
 
@@ -341,3 +345,5 @@ Set up proactive monitoring to receive real-time notifications about critical ev
 * **Enable audit logs** - Activate audit logging to track all actions on resources for compliance and troubleshooting. [Learn more](../privacy/audit-logs.md)
 
 * **Monitor integrations** - Track custom action performance and external system connectivity to identify integration issues early. [Learn more](../action/reporting.md)
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-get-started-tracking.md}}

@@ -8,10 +8,31 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 8907c18e-4623-4743-a76b-333f34e13baf
-feature_v2: []
-subfeature_v2: []
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Access & manage challenges and tasks {#access-loyalty-challenges}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access Loyalty Challenges, review the Challenges and Tasks inventories, explore a challenge's details and performance, and manage existing challenges and reusable tasks.
+
+>[!ENDSHADEBOX]
 
 ## Access & manage challenges and tasks
 
@@ -38,7 +59,7 @@ Key information displayed:
 
 From the Challenges tab, you can perform actions on challenges:
 
-* **View challenge**: Select the challenge name to open its details page
+* **View challenge**: Select the challenge name to open its [details page](#challenge-details).
 * **Duplicate a challenge**: Select the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and choose **[!UICONTROL Duplicate]**. A copy is created with all tasks, content, and messaging intact.
 * **Delete a challenge**: Select the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and choose **[!UICONTROL Delete]**.
 
@@ -53,6 +74,26 @@ From the Challenges tab, you can perform actions on challenges:
   >[!IMPORTANT]
   >
   >Reverting a published challenge to draft cannot be undone. Consider the impact on your active journey before proceeding.
+
+## Challenge details {#challenge-details}
+
+Select a challenge name in the **[!UICONTROL Challenges]** inventory to open its details page. This page brings together the challenge configuration and performance so you can review a specific challenge without opening its editor.
+
+![](assets/challenge-details.png)
+
+The header displays the challenge name, type, ID, and status. Select **[!UICONTROL Edit challenge]** to modify the challenge.
+
+The **[!UICONTROL Details]** area contains the following sections:
+
+* **[!UICONTROL Challenge summary]**: Review the challenge description, type, start and end dates, targeted audience, and connected journey, including the journey's status.
+* **[!UICONTROL Tasks]**: Review the task completion requirements and the name and description of each task. Select the details icon next to a task to review that individual task.
+* **[!UICONTROL Rewards]**: Review details about the reward associated to the challenge.
+
+The **[!UICONTROL Key metrics]** area displays total revenue, enrollment, completion rate, and total completions, with trend sparklines and percentage changes. Select **[!UICONTROL View report]** to explore challenge performance in more detail. [Learn more about loyalty performance reports](loyalty-performance.md#reports-view).
+
+>[!NOTE]
+>
+>The **View Loyalty Insights** permission (`loyalty-insights.read`) controls access to the **[!UICONTROL Key metrics]** and **[!UICONTROL Trends]** sections. These sections are shown only to users with this permission. [Learn more about Loyalty Challenges permissions](loyalty-permissions.md#loyalty-permissions).
 
 ## Tasks inventory {#tasks-tab}
 
@@ -76,4 +117,6 @@ From the Tasks tab, you can perform actions on tasks:
   >[!IMPORTANT]
   >
   >You can delete a task even when it is used in one or more challenges. Consider the impact on challenges that reference the task before deleting.
+
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-access-loyalty-challenges.md}}
 

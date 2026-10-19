@@ -7,6 +7,19 @@ role: User, Admin, Developer
 level: Beginner
 redpen-status: CREATED_||_2025-08-11_20-05-24
 exl-id: fee218bf-8c60-442d-ac41-a3856fc71b70
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Get started with Adobe Journey Optimizer{#get-started}
 
@@ -32,7 +45,7 @@ Discover core capabilities, use cases, and how Journey Optimizer delivers person
 
 Understanding How It Works
 
-Learn how Journey Optimizer integrates with Adobe Experience Platform and how its key functional areas work together.
+Learn the five core concepts (profiles, audiences, campaigns and journeys, channel configurations, sandboxes) and how Journey Optimizer works with Adobe Experience Platform.
 
 [Explore the architecture](../using/start/understanding-ajo.md)
 :::
@@ -212,7 +225,7 @@ Find answers to frequently asked questions and solutions to common problems acro
 ### Learn & get support
 
 * **[Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}** - Step-by-step video tutorials covering core capabilities
-* **[Use Case Playbooks](../using/start/ai-features.md#playbooks)** - Pre-built workflows for common scenarios like abandoned cart recovery and welcome campaigns
+* **[Use Case Playbooks](../using/start/ajo-use-case-guide.md#playbooks)** - Pre-built workflows for common scenarios like abandoned cart recovery and welcome campaigns
 * **[Monitoring & Troubleshooting](troubleshoot-journey-landing-page.md)** - Tools to track performance, identify issues, and resolve problems quickly
 * **[What's New](../using/rn/release-notes.md)** - Stay up to date with the latest features, improvements, and fixes
 * **[Community Forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}** - Connect with other users, ask questions, and share best practices

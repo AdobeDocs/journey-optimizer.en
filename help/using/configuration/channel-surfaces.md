@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: channel, surface, technical, parameters, optimizer
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
-TQID: https://experienceleague.adobe.com/tdx7MWEI1dzl2d8XsgStZmt2ccngiRJapEF-yxfv5vw
+TQID: 'https://experienceleague.adobe.com/tdx7MWEI1dzl2d8XsgStZmt2ccngiRJapEF-yxfv5vw'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,24 +18,23 @@ feature_v2:
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
-subfeature_v2:
   - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
     internal-label: Access control
+subfeature_v2:
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
-  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
-    internal-label: Sandboxes
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
   - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
     internal-label: Subdomains
-  - id: fae48155-b23f-40d2-a252-a25bce350b4d
-    internal-label: Email configuration
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
@@ -62,13 +61,13 @@ topic_v2:
 >title="Marketing action"
 >abstract="Choose the Marketing actions to link consent policies to the messages using this setup. All consent policies connected to the marketing action will be used to honor your customers' preferences."
 
-With [!DNL Journey Optimizer], you can set up channel configurations (i.e. message presets) that define all the technical parameters required for your messages: email type, sender email and name, reply and error routing, mobile apps, SMS configuration, and more. 
+With [!DNL Journey Optimizer], you can set up channel configurations (i.e. message presets) that define all the technical parameters required for your messages: email type, sender email and name, reply and error routing, mobile apps, mobile message configuration, and more. 
 
 >[!CAUTION]
 >
 > * To create, edit and delete channel configurations, you must have the [Manage messages presets](../administration/high-low-permissions.md#administration-permissions) permission.
 >
-> * You must perform the [Email configuration](../email/get-started-email-config.md), [Push configuration](../push/push-configuration.md), [SMS configuration](../mobile/mobile-configuration.md), [In-app configuration](../in-app/inapp-configuration.md), [Code-based configuration](../code-based/code-based-configuration.md), [Web configuration](../web/web-configuration.md) and [Direct mail configuration](../direct-mail/direct-mail-configuration.md) steps before creating channel configurations.
+> * You must perform the [Email configuration](../email/get-started-email-config.md), [Push configuration](../push/push-configuration.md), [Mobile configuration](../mobile/mobile-configuration.md), [In-app configuration](../in-app/inapp-configuration.md), [Code-based configuration](../code-based/code-based-configuration.md), [Web configuration](../web/web-configuration.md) and [Direct mail configuration](../direct-mail/direct-mail-configuration.md) steps before creating channel configurations.
 
 Once channel configurations have been configured, you will be able to select them when creating messages from a journey or a campaign.
 
@@ -83,7 +82,7 @@ You can also use the guided channel setup to automate and validate channel setup
 >[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets_header"
 >title="Channel configuration settings"
->abstract="When setting up a channel configuration, select the channel it applies to, and define all the technical parameters required for your sending, such as email type, sender name, mobile apps, SMS configuration, and more."
+>abstract="When setting up a channel configuration, select the channel it applies to, and define all the technical parameters required for your sending, such as email type, sender name, mobile apps, mobile configuration, and more."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets"

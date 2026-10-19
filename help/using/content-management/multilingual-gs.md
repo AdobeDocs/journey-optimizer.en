@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: get started, start, content, experiment
 exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
-TQID: https://experienceleague.adobe.com/dnae-RgLGPhxmtipYP6sTPTmA64LSfWYYH6gk5Fd3dk
+TQID: 'https://experienceleague.adobe.com/dnae-RgLGPhxmtipYP6sTPTmA64LSfWYYH6gk5Fd3dk'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,15 +18,15 @@ feature_v2:
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: ea4139d9-3405-4b34-ad6e-c3ca120cc269
-    internal-label: Multilingual content
   - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
     internal-label: Email design
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: ea4139d9-3405-4b34-ad6e-c3ca120cc269
+    internal-label: Multilingual content
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

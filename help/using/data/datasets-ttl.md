@@ -8,7 +8,7 @@ role: Developer, Admin
 level: Experienced
 keywords: platform, data lake, create, lake, datasets, profile
 exl-id: 08633a79-5601-4e36-b8cf-080234956d99
-TQID: https://experienceleague.adobe.com/DvcQ6AcWhNIZXnTtmPozvSTp1Ait-oo-8wlo8hQ6xlI
+TQID: 'https://experienceleague.adobe.com/DvcQ6AcWhNIZXnTtmPozvSTp1Ait-oo-8wlo8hQ6xlI'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -22,11 +22,16 @@ subfeature_v2:
     internal-label: Datasets
   - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
     internal-label: Data ingestions
+  - id: b109ff62-f345-4cfc-b7c8-a9955b2d2455
+    internal-label: Data model
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -52,11 +57,13 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 * 90 days for data in the profile store,
 * 13 months for data in the data lake.
 
-This change will be enforced on **existing customer sandboxes** starting **October 1, 2026**.
+>[!IMPORTANT]
+>
+>The rollout of the TTL guardrail to **existing customer sandboxes** has been delayed by Adobe (originally planned for October 1, 2026). If you want to initiate a TTL update to your datasets outside of this rollout, see the [Experience Platform TTL guide](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/experience-event-dataset-retention-ttl-guide){target="_blank"}.
 
 ## Impacted datasets {#datasets}
 
-The table below lists all Journey Optimizer system-generated datasets with their respective Time-To-Live in the data lake and the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}. Time-series datasets are subject to TTL; record-type datasets are listed for reference and marked `n/a` in both columns. The Availability column indicates whether a dataset is included by default or requires a specific add-on or license.
+The table below lists all Journey Optimizer system-generated datasets with their respective Time-To-Live in the data lake and the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}. Time-series datasets are subject to TTL; record-type datasets are listed for reference and marked `n/a` in both columns. The Availability column indicates whether a dataset is included by default or requires a specific add-on or license. For the fields of each schema, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 |Dataset|Availability|Data Lake TTL|Profile Store TTL|
 |------|-----|-----|-----|
@@ -179,7 +186,7 @@ Customers who require longer retention have two options:
 
 +++How are customers notified before the TTL is enforced on existing sandboxes?
 
-Adobe notifies impacted customers before enforcing the TTL on existing sandboxes. For this rollout, Adobe sent an in-product notification and published this change in the product release notes, giving customers about two months' notice before the guardrail takes effect on October 1, 2026.
+Adobe notifies impacted customers before enforcing the TTL on existing sandboxes. The enforcement on existing sandboxes, originally planned for October 1, 2026, has been delayed by Adobe.
 
 +++
 
@@ -195,3 +202,5 @@ If you need to permanently remove a Journey Optimizer system dataset (e.g., for 
 
 
 +++
+
+{{$include /help/_includes/do-not-localize/data/ai-augmented-datasets-ttl.md}}

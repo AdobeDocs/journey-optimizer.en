@@ -6,20 +6,24 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: dfe611fb-9c50-473c-9eb7-b983e1e6f01e
-TQID: https://experienceleague.adobe.com/CUiT5GFH9o4q-oOSWuKC8ZyLbRbH9lj88M92LhMIX9E
+TQID: 'https://experienceleague.adobe.com/CUiT5GFH9o4q-oOSWuKC8ZyLbRbH9lj88M92LhMIX9E'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-    internal-label: Developer
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
 feature_v2:
   - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
     internal-label: Build expressions
-subfeature_v2: []
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Arrays and list functions {#arrays}
 
@@ -300,11 +304,11 @@ The following operation defines people who have eaten sushi and pizza at least o
 
 ## Iterate over an array {#each-loop}
 
-Use the Handlebars `{{#each}}` block helper to loop over an array and render content for each item in **personalized content** (email, SMS, push).
+Use the Handlebars `{{#each}}` block helper to loop over an array and render content for each item in **personalized content** (email, mobile message, push).
 
 >[!NOTE]
 >
->`{{#each}}` is available in the **personalization editor** only (email body, SMS, push content). It is **not** supported in the journey condition activity. To filter or match items from an array inside a journey condition, use [collection management functions](../../building-journeys/expression/collection-management-functions.md) instead.
+>`{{#each}}` is available in the **personalization editor** only (email body, mobile message, push content). It is **not** supported in the journey condition activity. To filter or match items from an array inside a journey condition, use [collection management functions](../../building-journeys/expression/collection-management-functions.md) instead.
 
 **Syntax**
 
@@ -318,16 +322,16 @@ Use the Handlebars `{{#each}}` block helper to loop over an array and render con
 
 ```handlebars
 {{#each profile.purchases.items}}
-  - {{this.name}}: {{this.price}}€
+  - {{this.name}}: {{this.price}}&euro;
 {{/each}}
 ```
 
 Output (example):
 
 ```
-- Running shoes: 89€
-- Water bottle: 15€
-- Gym bag: 45€
+- Running shoes: 89&euro;
+- Water bottle: 15&euro;
+- Gym bag: 45&euro;
 ```
 
 +++

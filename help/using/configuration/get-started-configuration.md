@@ -9,7 +9,7 @@ exl-id: 0964a484-f957-4aae-a571-61b2a1615026
 feature: Application Settings
 topic: Administration
 keywords: configuration, configure, messages, channel, sandbox, optimizer
-TQID: https://experienceleague.adobe.com/zHp3C6KVKfRsQbi4B710ACFuMQhGuVxjaNIrXkxwhMc
+TQID: 'https://experienceleague.adobe.com/zHp3C6KVKfRsQbi4B710ACFuMQhGuVxjaNIrXkxwhMc'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -21,20 +21,12 @@ feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
-  - id: c343082f-e963-4f57-a96b-b64d27f8118e
-    internal-label: IP warmup plans
-  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
-    internal-label: Channel configurations
-  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
-    internal-label: Business rules
-  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
-    internal-label: Get started
-  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
-    internal-label: Subdomains
   - id: efb19423-4da4-4fd1-88d8-5ee8c71ae766
     internal-label: Application settings
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -43,6 +35,8 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
@@ -68,13 +62,15 @@ When accessing [!DNL Journey Optimizer] for the first time, you are provisioned 
 
 To be able to send messages, you need to go through the configuration steps listed below:
 
-1. As an [Adobe Journey Optimizer system administrator](../start/path/administrator.md), define your channel-specific configurations. Learn how to set up these configurations in the following pages:
+1. As an [Adobe Journey Optimizer system administrator](../start/path/administrator.md), define your channel-specific configurations.
+
+    Learn how to set up these configurations in the following pages:
 
     <table style="table-layout:fixed"><tr style="border: 0;">
     <td><a href="../email/get-started-email-config.md"><img alt="email" src="../channels/assets/do-not-localize/email.png"></a>
     <div align="center"><a href="../email/get-started-email-config.md"><strong>Email</strong></a></div></td>
     <td><a href="../mobile/mobile-configuration.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
-    <div align="center"><a href="../mobile/mobile-configuration.md"><strong>SMS</strong></a></div></td>
+    <div align="center"><a href="../mobile/mobile-configuration.md"><strong>Mobile message</strong></a></div></td>
     <td><a href="../push/push-configuration.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
     <div align="center"><a href="../push/push-configuration.md"><strong>Push notification</strong></a></div></td>
     <td><a href="../direct-mail/direct-mail-configuration.md"><img alt="direct mail" src="../channels/assets/do-not-localize/direct-mail.jpg"></a>
@@ -92,7 +88,11 @@ To be able to send messages, you need to go through the configuration steps list
     <div align="center"><a href="../content-card/content-card-configuration-prereq.md"><strong>Content cards</strong></a></div></td>
     </tr></table>
 
-    For additional channels, refer to: [iOS Live activities](../mobile-live/mobile-live-configuration.md), [WhatsApp](../whatsapp/whatsapp-configuration.md), and [LINE](../line/line-configuration.md).
+    For additional channels, refer to:
+
+    * [iOS Live activities](../mobile-live/mobile-live-configuration.md)
+    * [WhatsApp](../whatsapp/whatsapp-configuration.md)
+    * [LINE](../line/line-configuration.md)
 
     >[!NOTE]
     >
@@ -102,7 +102,7 @@ To be able to send messages, you need to go through the configuration steps list
 
 1. Depending on the channels you are using, your environments and your needs, you must also perform the following steps:
 
-    * Subdomain configuration and delegation for your channels, such as [emails](about-subdomain-delegation.md), [SMS](../mobile/mobile-subdomains.md), [landing pages](../landing-pages/lp-subdomains.md), and [web experiences](../web/web-delegated-subdomains.md).
+    * Subdomain configuration and delegation for your channels, such as [emails](about-subdomain-delegation.md), [mobile message](../mobile/mobile-subdomains.md), [landing pages](../landing-pages/lp-subdomains.md), and [web experiences](../web/web-delegated-subdomains.md).
 
     * Set up IP warmup plans for optimal deliverability. [Learn more](ip-warmup-gs.md)
 
@@ -110,7 +110,9 @@ To be able to send messages, you need to go through the configuration steps list
 
     * Manage the number of days during which retries are performed before sending email addresses to the suppression list. [Learn more](manage-suppression-list.md)
 
-    * Enable the **BCC email option** to keep a copy of messages sent to individuals. [Learn more](archiving-support.md#enable-bcc)
+    * Enable the **BCC email option** or **Message Export** to keep a copy of messages sent to individuals and meet compliance requirements such as GDPR and HIPAA. [Learn more](archiving-overview.md) about message archiving or [archive emails using BCC](archiving-support.md).
+
+    * Use **seed lists** to monitor email deliveries and ensure campaign assurance. [Learn more](seed-lists.md)
 
     * Configure **business rules** to avoid over-solicitating your recipients. [Learn more](../conflict-prioritization/rule-sets.md)
 
@@ -118,12 +120,6 @@ To be able to send messages, you need to go through the configuration steps list
 
 ## Additional resources
 
-* **[Configure channel surfaces](channel-surfaces.md)** - Learn how to set up and manage channel surfaces for email, push, SMS, and other channels.
 * **[Subdomain delegation](delegate-subdomain.md)** - Understand how to delegate subdomains to Adobe for email deliverability and branding.
-* **[IP warmup](ip-warmup-gs.md)** - Discover best practices for IP address warmup to improve email deliverability and sender reputation.
-* **[Manage suppression list](manage-suppression-list.md)** - Learn how to manage suppression lists to handle bounces and maintain list hygiene.
-* **[Configure mobile apps](set-mobile-config.md)** - Set up mobile app configurations for push notifications and in-app messaging.
-* **[Configure iOS Live activities](../mobile-live/mobile-live-configuration.md)** - Set up your environment to send Live activities to the iPhone Lock Screen and Dynamic Island.
-* **[Configure WhatsApp](../whatsapp/whatsapp-configuration.md)** - Set up WhatsApp messaging via Meta's Cloud API for campaigns and journeys.
-* **[Configure LINE](../line/line-configuration.md)** - Set up LINE messaging for campaigns and journeys.
+* **[Monitoring & troubleshooting](../../rp_landing_pages/troubleshoot-journey-landing-page.md)** - Diagnose and resolve issues quickly, including troubleshooting custom subdomain delegation.
 * **[Configuration tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/configuration/channel-configuration/configure-channels){target="_blank"}** - Explore step-by-step video tutorials on channel configuration and best practices.

@@ -8,29 +8,34 @@ role: Developer, Admin
 level: Experienced
 keywords: platform, data lake, create, lake, datasets, profile
 exl-id: dcdd3c81-0f00-4259-a8a5-9062a4c40b6f
-TQID: https://experienceleague.adobe.com/VYD0k1jjQB-7iEShgFWKDfaVl5BFvtnxxjSrqBiYThw
+TQID: 'https://experienceleague.adobe.com/VYD0k1jjQB-7iEShgFWKDfaVl5BFvtnxxjSrqBiYThw'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
     internal-label: Data management activity
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
-  - id: a1cdc218-59b7-4eef-b5cf-2a7ad74b3371
-    internal-label: Journey Optimizer schemas
-  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
-    internal-label: Datasets
-  - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
-    internal-label: Data ingestions
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
+    internal-label: Datasets
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: b109ff62-f345-4cfc-b7c8-a9955b2d2455
+    internal-label: Data model
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
@@ -80,7 +85,7 @@ To preview a dataset, select **Preview dataset** near the top-right corner of yo
 
 ## [!DNL Journey Optimizer] system datasets {#system-datasets}
 
-This sections lists system datasets used by [!DNL Journey Optimizer]. To view the complete list of fields and attributes for each schema, consult the [Journey Optimizer schema dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
+This sections lists system datasets used by [!DNL Journey Optimizer]. To view the complete list of fields and attributes for each schema, consult the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -88,7 +93,7 @@ This sections lists system datasets used by [!DNL Journey Optimizer]. To view th
 
 * Reporting
 
-    * _Reporting - Message Feedback Event Dataset_: Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset. **This dataset uses batch ingestion — expect a data latency of up to 2 hours.**
+    * _Reporting - Message Feedback Event Dataset_: Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset. **This dataset uses batch ingestion — expect a data latency of up to 2 hours.** For field-level definitions and paths, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}. For SQL reporting examples, see [Dataset query examples](../data/datasets-query-examples.md).
     * _Reporting - Email Tracking Experience Event Dataset_: Interaction logs for the Email channel, and WhatsApp channel context data under the `whatsAppChannelContext` field group. Used for reporting and audience creation. Information stored includes actions performed by the end-user on email (opens, clicks, etc.) and WhatsApp interactions.
     * _Reporting - Push Tracking Experience Event Dataset_: Interaction logs for Push channel which is used for reporting and audience creation purposes. Information stored informs on actions performed by the end-user on push notifications.
     * _Reporting - Journey Step Event_: Captures All Journey Step Experience Events generated from Journey Optimizer to be consumed by services like Reporting. Also critical for building reports in Customer Journey Analytics for YoY analysis. Tied to a Journey Metadata.
@@ -102,7 +107,7 @@ This sections lists system datasets used by [!DNL Journey Optimizer]. To view th
 
 * Message Export
 
-    _AJO Message Export Dataset_: stores the content of sent email and SMS messages for export purposes. Records are retained for 7 calendar days from ingestion. Available only for organizations that have purchased the Message Export add-on. [Learn more](../configuration/message-export.md)
+    _AJO Message Export Dataset_: stores the content of sent email and mobile messages for export purposes. Records are retained for 7 calendar days from ingestion. Available only for organizations that have purchased the Message Export add-on. [Learn more](../configuration/message-export.md)
 
 * Intelligent Services
 
@@ -167,3 +172,5 @@ Learn more about Data Governance and data usage labels in the [Data Governance d
 >* [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 >* [Data management license entitlement best practices](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/data-management-best-practices#data-management-best-practices){target="_blank"}
 >* [Managing profile-enabled schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices#managing-profile-enabled-schemas){target="_blank"}
+
+{{$include /help/_includes/do-not-localize/data/ai-augmented-get-started-datasets.md}}

@@ -24,8 +24,6 @@ subfeature_v2:
     internal-label: Templates
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -200,9 +198,11 @@ To edit a fragment, follow the steps below.
 
 When you edit a fragment, the changes are automatically propagated to all contents using that fragment, including live journeys and campaigns - except for contents where you have broken inheritance from the original fragment.
 
+Learn how to break inheritance in the [Add visual fragments to your emails](../email/use-visual-fragments.md#break-inheritance) and [Leverage expression fragments](../personalization/use-expression-fragments.md#break-inheritance) sections.
+
 >[!NOTE]
 >
->Learn how to break inheritance in the [Add visual fragments to your emails](../email/use-visual-fragments.md#break-inheritance) and [Leverage expression fragments](../personalization/use-expression-fragments.md#break-inheritance) sections.
+>Fragment updates made after a [Read Audience journey](../building-journeys/read-audience.md) has started do not affect the current run. For recurring journeys, the updates apply from the next scheduled batch run. For one-time journeys, republish the journey to apply the updates.
 
 ### Add new attributes to a live fragment {#adding-new-attributes}
 
@@ -266,3 +266,5 @@ To unarchive a fragment, filter on the **[!UICONTROL Archived]** items and selec
 Journey Optimizer allows you to copy a fragment from one sandbox to another. For example, you can copy a fragment from your Stage sandbox environment to your Production sandbox.
 
 The copy process is carried via a **package export and import** between the source and target sandboxes. Detailed information on how to export objects and import them into a target sandbox are available in this section: [Copy objects to another sandbox](../configuration/copy-objects-to-sandbox.md).
+
+If a fragment returns an error code, see [Fragments and AEM content errors](fragments-errors.md).

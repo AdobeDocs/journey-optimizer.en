@@ -9,20 +9,22 @@ role: Developer, Admin
 level: Experienced
 keywords: action, third-party, custom, journeys, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
-TQID: https://experienceleague.adobe.com/q4zuwxmF2Gr5P5IkdZCKFHoA18-GGrlLD0f-WPCQ3q4
+TQID: 'https://experienceleague.adobe.com/q4zuwxmF2Gr5P5IkdZCKFHoA18-GGrlLD0f-WPCQ3q4'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
-    internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: 2cb9b022-32b0-573b-a511-d091a4f355fb
+    internal-label: Actions
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
   - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
     internal-label: Action configuration
   - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
@@ -34,6 +36,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
@@ -140,7 +145,7 @@ You should not target public endpoints with custom actions for various reasons:
 
 ## Consent and data governance {#privacy}
 
-In Journey Optimizer, you can apply data governance and consent policies to your custom actions to prevent specific fields from being exported to third-party systems or exclude customers who have not consented to receive email, push or SMS communication. For more information, refer to the following pages:
+In Journey Optimizer, you can apply data governance and consent policies to your custom actions to prevent specific fields from being exported to third-party systems or exclude customers who have not consented to receive email, push or mobile communication. For more information, refer to the following pages:
 
 * [Data governance](../action/action-privacy.md).
 * [Consent](../action/action-privacy.md).
@@ -221,9 +226,15 @@ Mutual TLS (mTLS) authentication is supported in custom actions. There is no add
 
 ### Certificate-based custom authentication {#certificate-based-auth}
 
-For enterprise APIs that enforce certificate-based identity verification — such as Microsoft Entra ID — custom actions support **Certificate-Based Custom Authentication**. To enable it, set `"subType": "certificateCredential"` in the custom authorization payload configured in the **[!UICONTROL Authentication]** section.
+For enterprise APIs that enforce certificate-based identity verification, such as Microsoft Entra ID, custom actions support **Certificate-Based Custom Authentication**. To enable it, set `"subType": "certificateCredential"` in the custom authorization payload configured in the **[!UICONTROL Authentication]** section.
 
-Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and automatically exchange it for an access token. No client secret is required.
+By default, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion with `RS256` and automatically exchange it for an access token. No client secret is required for this default option. Omitting `alg` or setting it to `RS256` preserves the existing RSA flow.
+
+>[!AVAILABILITY]
+>
+>HMAC-signed JWT authentication is available in Limited Availability.
+
+For identity providers that accept `client_secret_jwt`, set the optional `alg` payload field (`HS256`, `HS384`, or `HS512`) and add your OAuth `client_secret` to `body.bodyParams`. Journey Optimizer uses the secret to sign the assertion without sending it in the token request. No Adobe certificate registration is required. Any other value, including lowercase, is rejected when the authentication is tested or executed. See [HMAC configuration requirements](../datasource/external-data-sources.md#hmac-credential).
 
 For the full payload structure, field descriptions, and configuration guardrails, see [Certificate-based custom authentication](../datasource/external-data-sources.md#certificate-credential).
 
@@ -480,3 +491,4 @@ Browse the sections below to learn more about configuring, using and troubleshoo
 * [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
 * [Pass collections into custom action parameters](../building-journeys/collections.md) - Learn how to pass a collection in custom action parameters that is dynamically populated at runtime
 
+{{$include /help/_includes/do-not-localize/action/ai-augmented-about-custom-action-configuration.md}}

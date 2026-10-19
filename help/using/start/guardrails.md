@@ -8,15 +8,15 @@ role: User
 level: Intermediate
 mini-toc-levels: 2
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
-TQID: https://experienceleague.adobe.com/k4DqGogrTZ9QrnqyFGwdgDeUI9ivpOd1iSI0c5comuU
+TQID: 'https://experienceleague.adobe.com/k4DqGogrTZ9QrnqyFGwdgDeUI9ivpOd1iSI0c5comuU'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
+  - id: 2b5e3e9e-56a5-5bc7-beff-65ac2c02eeb2
+    internal-label: Guardrails
 subfeature_v2:
   - id: a6c67b0d-bd3e-4d5d-95a8-882e3709d632
     internal-label: Journey guardrails
@@ -67,7 +67,7 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 * **90 days** for data in the profile store
 * **13 months** for data in the data lake
 
-This change will be enforced on **existing customer sandboxes** starting **October 1, 2026**. [Learn more about datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
+The rollout to **existing customer sandboxes** has been delayed by Adobe (originally planned for October 1, 2026). [Learn more about datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
 
 ## Journeys {#journeys-guardrails}
 
@@ -103,28 +103,39 @@ This section covers guardrails and limitations for journeys, including general j
 
 #### Journey payload size validation {#journey-payload-size}
 
-When you save or publish a journey, Journey Optimizer validates the total journey payload size to preserve stability and performance.
+When you save or publish a journey, Journey Optimizer validates the size of the serialized journey definition to preserve stability and performance. The payload size is measured in bytes and is not determined by the number of activities alone. Each activity contributes according to its saved configuration, including expressions, conditions, data mappings, parameters, and other configuration values.
+
+Common contributors include:
+
+* Condition activities with complex expressions.
+* Custom action activities with many fields or deeply nested expressions.
+* Large data mappings.
+* Activities with extensive parameters or configuration.
+
+There is no fixed size-per-activity value. Two journeys with the same number of activities can have different payload sizes depending on their configuration. When a warning or error is displayed, review the activity with the largest contribution identified in the message.
 
 | Scenario | Threshold | Behavior |
 |---|---|---|
 | Payload < 90% of limit | Below warning | Journey saves and publishes successfully. No warnings or errors displayed. |
-| Payload 90–99% of limit | Warning (soft) | Journey saves and publishes with a warning: **Warning**: Journey payload size is close to the limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes). |
-| Payload ≥ 100% of limit | **Error (hard)** | Save or publish is blocked. Returns **HTTP 413 Request Entity Too Large**. Error: Journey payload size exceeds limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes). |
+| Payload 90–99% of limit | Warning (soft) | Journey saves and publishes with a warning: **Warning**: Journey payload size is close to the limit. Largest contributing activity: '[ActivityName]' (type: '[ActivityType]', size: [N] bytes). |
+| Payload ≥ 100% of limit | **Error (hard)** | Save or publish is blocked. Returns **HTTP 413 Request Entity Too Large**. Error: Journey payload size exceeds limit. Largest contributing activity: '[ActivityName]' (type: '[ActivityType]', size: [N] bytes). |
 
 **Default configuration**
 
-* **Default maximum request size**: **2 MB** (2,000,000 bytes). Some organizations may have custom limits configured by Adobe.
+* **Default maximum journey payload size**: **2 MB** (2,000,000 bytes). Some organizations may have custom limits configured by Adobe.
 * **Warning threshold**: 90% of the maximum limit.
 * **Error threshold**: 100% of the maximum limit.
 
 **Troubleshooting and recommendations**
 
-* Review the largest node highlighted in the warning or error.
-* Simplify conditions, reduce data mappings, and remove unnecessary steps or parameters.
+* Review the activity with the largest contribution highlighted in the warning or error.
+* Simplify complex expressions and conditions, reduce data mappings, and remove unnecessary fields or parameters.
 * Consider splitting the journey into smaller journeys if needed.
 * If you believe your organization needs a higher limit, contact your Adobe representative.
 
 To monitor the current payload size of your journey before publishing, use the **[!UICONTROL Current journey payload size]** indicator in the journey properties panel. [Learn how to check the size of your journey payload](../building-journeys/journey-properties.md#journey-payload-size)
+
+The serialized journey payload includes the configuration of journey activities. Referenced entities, such as email content referenced by an Email action, are not included in this payload. Email message content is subject to the separate message-content size guardrail in the [Email guardrails](#message-content-size) section.
 
 ### License package comparison {#select-package-limitations}
 
@@ -136,7 +147,7 @@ For customers using the **Select** license package, the following additional lim
 
 | Limitation | Error code | Description |
 |---|---|---|
-| Only one action allowed | `ERR_PKG_SELECT_8` | Unitary journeys can contain only **one** action activity. Multiple email, push, SMS, or other action activities are not permitted within the same journey. |
+| Only one action allowed | `ERR_PKG_SELECT_8` | Unitary journeys can contain only **one** action activity. Multiple email, push, mobile messages, or other action activities are not permitted within the same journey. |
 | No conditions allowed | `ERR_PKG_SELECT_7` | Condition activities cannot be used in unitary journeys. The journey must follow a single, linear path without branching logic. |
 | No wait activities | `ERR_PKG_SELECT_6` | Wait activities cannot be added to unitary journeys. Actions must execute immediately without delays. |
 | Timeout/error transitions must go to end node | `ERR_PKG_SELECT_2` | If you configure timeout or error transitions for an action (e.g., an email action), these paths must point directly to an end node. They cannot connect to other activities or actions in the journey. |
@@ -238,7 +249,7 @@ The following guardrails apply to the [Audience Qualification](../building-journ
 
 * The Audience qualification activity cannot be used with Adobe Campaign activities.
 * Supplemental identifiers are not supported for Audience qualification journeys.
-* A sandbox can include a maximum of **300** Audience Qualification activities across all live, closed, paused, test mode, and dry run journeys. This limit also applies to Audience Qualification activities used as exit criteria. When this limit is reached, publishing journeys with additional Audience Qualification activities is blocked.
+* A sandbox can include a maximum of **300** Audience Qualification activities across all live, closed, paused, test mode, and dry run journeys. This limit also applies to Audience Qualification activities used as exit criteria. Audience Qualification activities used as the first activity in closed journeys are excluded from this limit. When this limit is reached, publishing journeys with additional Audience Qualification activities is blocked.
 
 Learn more about journey processing rates and throughput limits in [this section](../building-journeys/entry-management.md#journey-processing-rate).
 
@@ -249,7 +260,7 @@ Additional guardrails — including recommendations on streaming vs. batch audie
 The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **[!UICONTROL Campaign Standard]** activities:
 
 * Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
-* **[!UICONTROL Campaign Standard]** activities cannot be used with other channel activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
+* **[!UICONTROL Campaign Standard]** activities cannot be used with other channel activities: Card, Code-based Experience, Email, Push, Mobile messages, In-app messages, Web.
 * **[!UICONTROL Campaign v7/v8]** activities can be used alongside native channel activities in the same journey.
 
 #### Reaction events {#reaction-events-g}
@@ -336,7 +347,7 @@ This section covers guardrails for audience management, profile handling, and en
 
 ### Audience and profile guardrails {#audience}
 
-* You can publish up to **10 audience compositions** in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
+* You can publish up to **50 audience compositions** in a given sandbox. Compositions created with [Federated audience composition](../audience/federated-audience-composition.md) are not counted. If you have reached this threshold, you need to delete a composition to free up space and publish a new one. See also the [Experience Platform guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"}.
 
     Learn more about audience compositions on [this page](../audience/get-started-audience-orchestration.md).
 
@@ -346,7 +357,7 @@ This section covers guardrails for audience management, profile handling, and en
 
 ## Channels & Messaging {#channel-guardrails}
 
-This section covers guardrails for all communication channels including email, SMS, inbound channels (web, in-app, code-based, content cards), and transactional messages.
+This section covers guardrails for all communication channels including email, mobile messages, inbound channels (web, in-app, code-based, content cards), and transactional messages.
 
 >[!NOTE]
 >
@@ -381,13 +392,13 @@ This size limitation also applies to other backend operations that process the f
 
 If publication or the copy operation fails due to content size, reduce your message content and try again.
 
-### SMS guardrails {#sms-guardrails}
+### Mobile messages guardrails {#sms-guardrails}
 
-The following guardrails apply to the [SMS channel](../mobile/get-started-mobile.md):
+The following guardrails apply to the [Mobile channel](../mobile/get-started-mobile.md):
 
 * Media files for MMS can be included through a supported URL. Please ensure that the media file is uploaded separately.
 * Message feedback syncing is not currently available for MMS.
-* Consent management operates at the SMS channel level for MMS.
+* Consent management operates at the Mobile channel level for MMS.
 
 ### Inbound channel guardrails {#inbound-guardrails}
 
@@ -402,6 +413,8 @@ The following guardrails apply to the [SMS channel](../mobile/get-started-mobile
 * Journey Optimizer supports a peak volume of **5,000 inbound requests per second**. This guardrail applies to all inbound requests, which can originate from any of the Journey Optimizer supported inbound channels ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [code-based experiences](../code-based/get-started-code-based.md), [content cards](../../rp_landing_pages/content-card-landing-page.md)).
 
 * Journey Optimizer supports a maximum of **500 active inbound actions** at any moment in time. These inbound actions are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
+
+* An inbound message request supports a maximum of **10 lookups** of any kind, including [external data](../personalization/external-data-lookup.md) and dataset lookups. If a request exceeds this limit, the entire request fails with an **HTTP 422** error, with no partial response. To stay within the limit, consolidate your lookups: for example, call an endpoint once and reuse the result instead of calling it several times for different attributes.
 
 #### Profile management with inbound channels {#profile-management-inbound}
 
@@ -438,11 +451,11 @@ The recommended size limits for content types are as follows:
 | Message | 1200 KB |
 | Landing page | 1000 KB |
 
-A warning is surfaced when a content variant exceeds its recommended size threshold. This applies to all content types and channels, and does not block saving or publishing.
+A warning is surfaced when a content variant exceeds its recommended size threshold. This applies to all content types and channels, and does not block saving or publishing. The exception is a landing page HTML template larger than 1 MB, which is rejected during validation. Reduce the size of the template.
 
 ### Generate Content guardrails {#ai-assistant-g}
 
-Guardrails and limitations for **Generate Content** — including supported channels (email, push, web, SMS) and personalization editor limitations — are listed on [this page](../content-management/gs-generative.md#generative-guardrails).
+Guardrails and limitations for **Generate Content** — including supported channels (email, push, web, mobile messages) and personalization editor limitations — are listed on [this page](../content-management/gs-generative.md#generative-guardrails).
 
 ### Landing pages guardrails {#lp-guardrails}
 
@@ -460,11 +473,7 @@ The following guardrails apply to the [fragments](../content-management/fragment
 * To create, edit, archive, and publish fragments you need the **[!DNL Manage library items]** and **[Publish Fragment]** permissions included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
 * Visual fragments are only available for the Email channel.
 * Expression fragments are not available for the In-app channel.
-* Fragments cannot exceed **700 KB**. This is a system guardrail for fragment size storage and processing. To stay below this threshold, split large content into multiple reusable fragments, reduce heavy markup, and optimize linked assets.
-
-  >[!NOTE]
-  >
-  >If a visual fragment exceeds **100 KB** or an expression fragment exceeds **200 KB**, this can cause truncation issues in email delivery.
+* Fragments cannot exceed **700 KB**. To stay below this threshold, split large content into multiple reusable fragments, reduce heavy markup, and optimize linked assets.
 
 * **Fragment count limits**: the number of unique fragments used within a piece of content is validated during authoring. Only fragments (including AEM fragments) referenced directly are counted — fragments nested inside other fragments are not counted separately.
 
@@ -490,3 +499,5 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 ### Campaign Orchestration guardrails {#orchestration-guardrails}
 
 Guardrails and limitations to keep in mind when working with Campaign Orchestration are detailed in this section: [Guardrails & limitations](../orchestrated/guardrails.md).
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-guardrails.md}}

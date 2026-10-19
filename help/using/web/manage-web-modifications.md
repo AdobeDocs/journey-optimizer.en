@@ -13,6 +13,8 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
     internal-label: Web channel
@@ -214,3 +216,5 @@ Each change creates a new element in the **[!UICONTROL Modifications]** panel. B
 If you use the **[!UICONTROL Page `<head>`]** modification type for two campaigns impacting the same URL, the JavaScript is injected into the page from both campaigns. [!DNL Journey Optimizer] automatically determines the order of the delivered content. Make sure the code does not depend on placement. It is up to you to make sure there are no conflicts in the code.
 
 +++
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-manage-web-modifications.md}}

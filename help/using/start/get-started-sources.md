@@ -7,15 +7,26 @@ feature: Integrations, Data Ingestion
 role: User
 level: Beginner
 exl-id: 359ea3c6-7746-469e-8a24-624f9726f2d8
-TQID: https://experienceleague.adobe.com/vlCiIs-yHeTzHxkij1OTVljHm07GI-jLtS-RKFV5nKs
+TQID: 'https://experienceleague.adobe.com/vlCiIs-yHeTzHxkij1OTVljHm07GI-jLtS-RKFV5nKs'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: af7571a6-3ddb-4c1c-abdf-4d4dde592140
+    internal-label: Source connectors
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
+    internal-label: Data ingestions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -33,9 +44,6 @@ topic_v2:
     internal-label: Personalization
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-subfeature_v2:
-  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
-    internal-label: Get started
 ---
 # Get started with sources connectors {#sources-gs}
 
@@ -153,3 +161,5 @@ Now that you understand what sources are and why they're important:
 * Understand [data mapping and transformation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home){target="_blank"}
 * See how to [use imported data in journeys](../building-journeys/journey-gs.md)
 * Review the [Get started with data management](../data/gs-data.md) overview to understand how sources fit into the full data setup for Journey Optimizer
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-get-started-sources.md}}

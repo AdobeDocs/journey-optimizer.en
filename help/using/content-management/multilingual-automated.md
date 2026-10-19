@@ -25,8 +25,6 @@ subfeature_v2:
     internal-label: Multilingual content
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -185,7 +183,7 @@ In this section, you can set your different locales for managing your multilingu
 
     >[!IMPORTANT]
     >
-    >Contextual data is available exclusively for Web, In-App, Code-based Experience and Content cards channels. If used for Email, SMS, Push notification or Direct mail channels, without additional attributes, the campaign or journey will be sent in the language of the first option on the list.
+    >Contextual data is available exclusively for Web, In-App, Code-based Experience and Content cards channels. If used for Email, Mobile message, Push notification or Direct mail channels, without additional attributes, the campaign or journey will be sent in the language of the first option on the list.
 
     ![](assets/multilingual-settings-6.png)
 
@@ -259,7 +257,7 @@ Note that after setting up your language preferences, you will no longer have th
 
 Once you have set up your Translation project and Language settings, you are ready to create your campaign or journey and customize your content for your different locales.
 
-1. Begin by creating and configuring your Email, SMS or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journey-action.md) according to your requirements.
+1. Begin by creating and configuring your Email, Mobile message or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journey-action.md) according to your requirements.
 
 1. Once your primary content is created, click **[!UICONTROL Save]** and head back to the campaign configuration screen.
 
@@ -403,6 +401,8 @@ Note that if this option is disabled, once the translation is finished by your p
 1. In your Campaign, check that your translation status has changed to **[!UICONTROL Translation complete]**. You can now send your multilingual content, refer to step 10 in [this section](#create-multilingual-campaign).
 
     ![](assets/translation_review_9.png)
+
+If multilingual content returns an error code, see [Multilingual content errors](multilingual-errors.md).
 
 <!--
 # Create a multilingual journey {#create-multilingual-journey}

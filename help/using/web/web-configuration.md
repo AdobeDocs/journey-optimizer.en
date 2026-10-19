@@ -6,13 +6,17 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 2161baf0-38b7-4397-bffe-083929e8033a
-TQID: https://experienceleague.adobe.com/QtTkevbB9U3-Aad9mOZ6eI8ZMCjx-riEWyPaQ0eLqmc
+TQID: 'https://experienceleague.adobe.com/QtTkevbB9U3-Aad9mOZ6eI8ZMCjx-riEWyPaQ0eLqmc'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
     internal-label: Web channel
@@ -20,9 +24,14 @@ subfeature_v2:
     internal-label: Web SDK
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
     internal-label: Web experience
@@ -171,3 +180,5 @@ When creating a [rule that matches multiple pages](#web-page-matching-rule), you
     </tr>
     </tbody>
 </table>
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-web-configuration.md}}

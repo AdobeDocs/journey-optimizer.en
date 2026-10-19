@@ -32,11 +32,17 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to publish a journey to set it Live, including prerequisites, the publication process, version management, and republishing requirements.
+**On this page:** Prepare your journey to go live: validate its configuration, test its behavior, and publish it. Learn what happens after publication and how to manage journey versions.
 
 >[!ENDSHADEBOX]
 
 Publishing a journey activates it: it moves to the **[!UICONTROL Live]** status, becomes available for new profiles to enter, and switches to read-only mode. You cannot publish a journey that contains errors.
+
+When you have finished configuring your journey, follow these steps before going live:
+
+1. **[Validate the journey](#validate)** with the **[!UICONTROL Validate]** button. If validation fails, fix the errors and validate again before continuing.
+1. **[Test the journey](#choose-validation-method)** using simulation, test mode, or a dry run, depending on what you need to check.
+1. **[Publish the journey](#journey-publication)** when testing is complete and the journey has a current, passed validation.
 
 >[!NOTE]
 >
@@ -44,18 +50,44 @@ Publishing a journey activates it: it moves to the **[!UICONTROL Live]** status,
 
 ➡️ [Discover this feature in video](#video)
 
-## Before you publish {#before-you-publish}
+## Step 1: Validate your journey {#validate}
 
-Before publishing, make sure your journey meets the following prerequisites:
+The **[!UICONTROL Validate]** button in the journey header runs configuration checks across your journey, including every message. Run it when you are ready to publish, test, simulate, run a dry run, or request approval. Any errors and warnings appear in the Alerts panel. Basic checks related to journey activities run automatically while you build. Validation does not simulate the journey or replace testing.
 
-* **No validation errors** — You cannot publish a journey that contains errors. [Test your journey](testing-the-journey.md) first, and [troubleshoot any activity errors](../building-journeys/troubleshooting.md#activity-errors).
-* **Publish permission** — Publishing requires the **[!DNL Publish journeys]** high-level permission. Learn more about [managing access rights](../administration/permissions-overview.md).
-* **Payload within limit** — The journey payload must be within the configured limit (4 MB by default). See [Journey payload size validation](../start/guardrails.md#journey-payload-size).
-* **Approval policy compliance** — If your journey is subject to an approval policy, publishing submits it for approval instead of publishing it right away. Once an approver signs off, the journey is published automatically — there is no separate publish step to perform afterward. [Learn more](../test-approve/gs-approval.md).
+![](assets/validate-journey.png)
 
-### Choose the right validation method before publishing {#choose-validation-method}
+Validation is available for journeys in **[!UICONTROL Draft]** status. It is not available in test, dry-run, or simulation mode, or while the journey is locked for approval.
 
-Validate your journey using one of the available testing options. Each uses a different type of data and fits a different stage of your build:
+>[!BEGINSHADEBOX]
+
+**About the new validation flow**
+
+Message configuration checks that previously ran automatically during autosave now run when you click **[!UICONTROL Validate]**. The checks themselves have not changed: errors and warnings still appear in the Alerts panel.
+
+* **Smaller journeys:** On-demand message checks help keep the canvas responsive and free up capacity for faster, more consistent basic activity checks.
+* **Larger journeys:** The benefit grows as you add activities and messages, and you choose when to run message checks rather than interrupting an edit.
+
+>[!ENDSHADEBOX]
+
+To validate your journey, follow these steps:
+
+1. Click **[!UICONTROL Validate]** in the journey header before testing, publishing, or requesting approval. Until the journey has a current, passed validation, **[!UICONTROL Validate]** replaces **[!UICONTROL Publish]**.
+1. Wait for validation to finish. The journey is temporarily locked during the checks. You can resume editing when they finish.
+1. Review the errors and warnings in the Alerts panel.
+
+  ![](assets/validate-journey-alerts.png)
+
+  * **Errors** must be fixed before you publish or test the journey.
+  * **Warnings** provide information about potential issues and do not prevent
+    testing, simulation, or dry runs.
+
+If you edit the journey after validation, the results are no longer current. Click **[!UICONTROL Validate]** again before performing a critical action so the results reflect the current journey.
+
+When validation passes, proceed to testing. If it fails, [resolve the errors](troubleshooting.md#activity-errors) and click **[!UICONTROL Validate]** again. Validation does not rerun automatically after you fix an error.
+
+## Step 2: Test your journey {#choose-validation-method}
+
+After validation passes, choose the testing method that matches what you need to verify. These methods let you check journey behavior using different types of data. They are separate from the configuration checks performed by **[!UICONTROL Validate]**.
 
 | Option | Data used | Best for | Sends real messages? |
 | --- | --- | --- | --- |
@@ -67,13 +99,25 @@ Dry run never delivers real communications or updates live profile data. Simulat
 
 For a full comparison of these three methods, see [Choose a validation method](choose-validation-method.md).
 
-## Publication process {#journey-publication}
+Fix any issues found during testing before publishing. If you change the journey, run **[!UICONTROL Validate]** again and repeat the relevant tests.
 
-Steps to publish a journey are detailed below:
+## Step 3: Publish your journey {#journey-publication}
 
-1. Verify that the journey is valid and has no errors, and that it meets the [prerequisites above](#before-you-publish).
+### Before you publish {#before-you-publish}
 
-1. To publish the journey, click on the **[!UICONTROL Publish]** option, located in the top-right drop-down menu.
+Before publishing, make sure your journey meets the following prerequisites:
+
+* **[Current, passed validation](#validate)** — The validation results reflect the latest changes, and all blocking errors have been resolved.
+* **Testing complete** — You have checked the journey using the appropriate [testing methods](#choose-validation-method) and resolved any issues found.
+* **Publish permission** — Publishing requires the **[!DNL Publish journeys]** high-level permission. Learn more about [managing access rights](../administration/permissions-overview.md).
+* **Payload within limit** — The journey payload must be within the configured limit (4 MB by default). See [Journey payload size validation](../start/guardrails.md#journey-payload-size).
+* **Approval policy compliance** — If your journey is subject to an approval policy, publishing submits it for approval instead of publishing it right away. Once an approver signs off, the journey is published automatically — there is no separate publish step to perform afterward. [Learn more](../test-approve/gs-approval.md).
+
+### Publish the journey {#publish-steps}
+
+After completing validation and testing:
+
+1. When validation is current, testing is complete, and the journey meets the [prerequisites above](#before-you-publish), click **[!UICONTROL Publish]** in the journey header.
 
     >[!NOTE]
     >
@@ -109,6 +153,8 @@ In some cases, you must republish a journey for changes or assets to remain effe
 
 In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas.
 
+You can also use AI in Coworker to compare journey versions. For more details, see [Journey Version Comparison](journeys-coworker-skills.md#journey-tools).
+
 ![Journey versions list showing published and draft versions](assets/journeyversions1.png)
 
 >[!NOTE]
@@ -117,7 +163,7 @@ In the journey list, all journey versions are displayed with the version number.
 
 ### Create a new version of a journey {#journey-create-new-version}
 
-If you need to modify to a live journey, create a new version of your journey. To create a new version of an existing journey, follow the steps below:
+If you need to modify a live journey, create a new version of your journey. To create a new version of an existing journey, follow the steps below:
 
 1. Open the latest version of your live journey, click **[!UICONTROL Create a new version]** and confirm.
 
@@ -127,7 +173,7 @@ If you need to modify to a live journey, create a new version of your journey. T
     >
     >You can only create a new version from the latest version of a journey.
 
-1. Make your modifications, click **[!UICONTROL Publish]** and confirm.
+1. Make your modifications, then [validate](#validate) and [test](#choose-validation-method) the new version before [publishing it](#publish-steps).
 
 From the moment the journey is published, individuals will start to flow into the latest version of the journey. People who have already entered a previous version stay in it until they finish the journey. If they later reenter the same journey, they will go into the latest version.
 
@@ -145,7 +191,7 @@ When you publish a new version of a journey, the previous version automatically 
 
 **Why cannot I publish my journey?**
 
-The most common reason is that the journey contains validation errors — you cannot publish a journey with errors. Other blockers include exceeding the [payload size limit](../start/guardrails.md#journey-payload-size), missing the **[!DNL Publish journeys]** permission, or a pending [approval](../test-approve/gs-approval.md). See [Before you publish](#before-you-publish) and [troubleshoot activity errors](../building-journeys/troubleshooting.md#activity-errors).
+The most common reason is that the journey contains validation errors — you cannot publish a journey with errors. Other blockers include exceeding the [payload size limit](../start/guardrails.md#journey-payload-size) or the [sandbox Audience Qualification limit](../start/guardrails.md#audience-qualif-g), missing the **[!DNL Publish journeys]** permission, or a pending [approval](../test-approve/gs-approval.md). See [Before you publish](#before-you-publish) and [troubleshoot activity errors](../building-journeys/troubleshooting.md#activity-errors).
 
 **Can I edit a journey after it is published?**
 
@@ -173,6 +219,7 @@ If your journey is subject to an approval policy, clicking **[!UICONTROL Publish
 * [Journey simulation](simulate-journey-gs.md) - Validate your journey with simulated users before publishing
 * [Journey Dry run](journey-dry-run.md) - Test with real production data without contacting profiles
 * [Troubleshooting](../building-journeys/troubleshooting.md#activity-errors) - Resolve activity and publication errors
+* [Journey validation errors](journey-validation-errors.md) - Find the cause and fix of each validation error code
 * [How journeys end](end-journey.md#journey-finished-definition) - Understand journey completion and statuses
 * [Profile entrance management](entry-management.md) - Configure how profiles enter and re-enter journeys
 * [Journey guardrails and limitations](../start/guardrails.md#journeys-guardrails-journeys) - Review publication and versioning guardrails
@@ -183,47 +230,4 @@ Learn how to publish a journey in this video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page explains how to publish an Adobe Journey Optimizer journey, manage journey versions, and understand the constraints that apply once a journey is live.
-
-**Intents:**
-* Publish a journey to make it live and available for profile entry
-* Verify journey validity and resolve errors before publishing
-* Create a new version of a live journey to make modifications
-* Understand read-only restrictions that apply after a journey is published
-* Stop a journey permanently or manage transitions between versions
-
-**Glossary:**
-* **Journey version**: A numbered iteration of a journey; new versions are created to modify a live journey without disrupting profiles already in progress *(product-specific)*
-* **Closed status**: The state a previous journey version enters automatically when a new version is published; no new profiles can enter a Closed journey *(product-specific)*
-* **Approval policy**: An optional governance workflow requiring explicit approval before a journey can be published *(product-specific)*
-
-**Guardrails:**
-* A journey with errors cannot be published.
-* Journey Optimizer validates the total journey payload size at save and publish time; publication may be blocked if the limit is exceeded.
-* After publishing, a journey is in read-only mode; only labels, descriptions, and the journey name can be edited.
-* A new version can only be created from the latest version of a journey.
-* When a journey is stopped, it is permanently stopped; it must be duplicated to run again.
-* Assets and images in delivered content are accessible for up to 730 days from first publication; re-publishing is required after that period.
-* If an offer decision used in a journey message changes, the journey must be unpublished and republished.
-* Specific guardrails apply to journey versioning (see guardrails page).
-
-**Terminology:**
-* Canonical name: Publish Journey — Acronym: none — variants: activate journey, go live
-* Synonyms: "Publish" = "activate" = "go live"
-* Do not confuse: Stop (emergency halt of all profiles) ≠ Close to new entrances (manual graceful close; existing profiles finish) ≠ Closed status (automatic when a new version is published, or after manual close to new entrances)
-* Do not confuse: Simulation (temporary simulated users, no AEP test profiles needed) ≠ Test mode (persistent AEP test profiles, draft journeys only) ≠ Dry run (real production audience data, no contact, no profile update, action nodes bypassed)
-
-**FAQ:**
-* **Q: Can I edit a journey after it is published?** — Only labels, descriptions, and the journey name can be changed. To make other modifications, create a new version of the journey.
-* **Q: What happens to profiles in an older journey version when a new version is published?** — Profiles already in the previous version stay there until they finish; new profiles enter the latest version.
-* **Q: Can I republish a Closed journey version?** — No. Once a previous version is Closed, it stays closed even if the latest version is stopped.
-* **Q: What should I do if an offer decision used in the journey changes?** — Unpublish the journey and republish it to incorporate the updated offer decision.
-* **Q: Is approval required before publishing?** — Only if your journey is subject to an approval policy; in that case, publishing submits the journey for approval instead of publishing it right away, and it is published automatically once an approver signs off.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-publish-journey.md}}

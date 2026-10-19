@@ -9,17 +9,21 @@ role: Developer, Admin
 level: Experienced
 keywords: actions, journey, messages, sending, connections
 exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
-TQID: https://experienceleague.adobe.com/u-fLClLKK9cC7D2BwO5vxdW11tywPDRWzOMBtYUj5Ts
+TQID: 'https://experienceleague.adobe.com/u-fLClLKK9cC7D2BwO5vxdW11tywPDRWzOMBtYUj5Ts'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
-    internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: 2cb9b022-32b0-573b-a511-d091a4f355fb
+    internal-label: Actions
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
     internal-label: Action configuration
@@ -32,6 +36,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
@@ -49,9 +56,9 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_list"
 >title="Custom actions"
->abstract="Actions are connections through which you deliver personalized, real-time experiences to customers such as push notifications, email, SMS, or any other means of digital engagement you use in your business."
+>abstract="Actions are connections through which you deliver personalized, real-time experiences to customers such as push notifications, email, mobile messages, or any other means of digital engagement you use in your business."
 
-Actions are connections through which you deliver personalized, real-time experiences to customers such as push notifications, email, SMS, or any other means of digital engagement you use in your business.
+Actions are connections through which you deliver personalized, real-time experiences to customers such as push notifications, email, mobile messages, or any other means of digital engagement you use in your business.
 
 ➡️ [Discover this feature in video](#video)
 
@@ -88,3 +95,4 @@ Browse the sections below to learn more about configuring and using your custom 
 * [Pass collections into custom action parameters](../building-journeys/collections.md) - Learn how to pass a collection in custom action parameters that is dynamically populated at runtime
 * [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
 
+{{$include /help/_includes/do-not-localize/action/ai-augmented-action.md}}

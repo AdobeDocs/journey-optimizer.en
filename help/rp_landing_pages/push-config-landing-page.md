@@ -5,6 +5,9 @@ title: Configure push notifications
 description: Configure push notifications
 redpen-status: CREATED_||_2025-08-11_20-36-35
 exl-id: 52a58dc4-20fa-467d-b790-d9c7eecbdaf6
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Configure push notifications{#section-overview}
 

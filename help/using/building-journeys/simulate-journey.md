@@ -9,8 +9,12 @@ role: User
 level: Intermediate
 keywords: test, journey, check, error, troubleshooting
 version: Journey Orchestration
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: b9d00d1b-a371-4a75-a52a-3f8ea2029020
+    internal-label: Journey testing
 ---
 # Simulate your journey {#simulate-journey}
 
@@ -20,19 +24,15 @@ subfeature_v2: []
 
 >[!ENDSHADEBOX]
 
-Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
+Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log.
 
-Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log. 
+For required permissions, see [Required permissions](simulate-journey-gs.md#required-permissions).
 
->[!IMPORTANT]
->
->* To use **[!UICONTROL Simulation]**, assign at least one permission from the **[!UICONTROL Journeys]** capability: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. The same permissions let you create and manage simulated users, **[!UICONTROL Simulated Users]** permissions are not required. [Learn more](../administration/permissions.md)
->
->* To manage simulated users without **[!UICONTROL Simulation]**, assign **Manage Simulated Users** or **View Simulated Users** from the **[!UICONTROL Simulated Users]** capability.
->
->* For AI in simulation (**[!UICONTROL Quick simulation]**, AI-generated users, **[!UICONTROL Generate event values]**), assign **[!UICONTROL Generate Content]** from the **[!UICONTROL AI Assistant]** capability.
+Before entering **[!UICONTROL Simulation]**, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. Validation checks configuration and is separate from simulation. [Learn about journey validation](publish-journey.md#validate).
 
 For an overview by journey type, see [Get started with Journey simulation](simulate-journey-gs.md).
+
+Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
 ## Simulation types {#simulation-types}
 
@@ -67,7 +67,7 @@ On any journey in **[!UICONTROL Simulation]**, **[!UICONTROL Quick simulation]**
 
 1. The Journey Agent generates a set of simulated users from the journey definition.
 
-    For journeys with an Email, SMS, or Push node, the Agent prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those values. Once done, click **[!UICONTROL Generate]**.
+    For journeys with an Email, Mobile message, or Push node, the Agent prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those values. Once done, click **[!UICONTROL Generate]**.
 
 1. When the run completes, click **[!UICONTROL View results]** to review paths, errors, and uncovered branches. See [View results](#viewing-results).
 
@@ -97,7 +97,7 @@ If your journey uses an external audience, for example a CSV or Federated Audien
         
     Adobe Journey Optimizer generates a set of simulated users from the journey definition. 
         
-    For journeys with an Email, Push, or SMS node, the AI prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those defined values. Once done, click [!UICONTROL Generate].
+    For journeys with an Email, Push, or Mobile message node, the AI prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those defined values. Once done, click [!UICONTROL Generate].
 
     Generated simulated users only show the attributes used in the current journey, for example in expressions or personalization.
 
@@ -213,7 +213,7 @@ If your journey uses an external audience, for example a CSV or Federated Audien
 
         ![Manage simulation menu open with Reset simulation and Close simulation options](assets/simulate-15.png)
 
-After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
+After testing the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]** and apply the required changes to the journey. Click **[!UICONTROL Validate]** again and resolve any configuration errors before rerunning **[!UICONTROL Simulation]**. When testing is complete and validation is current and passed, you can [publish your journey](publish-journey.md).
 
 ## Trigger your events {#firing-events}
 
@@ -266,6 +266,14 @@ Select **[!UICONTROL All]** to see results aggregated across every simulated use
 
 For each activity, the log can show whether the simulated user entered or exited the step, the timestamps and branch decisions for each step, and errors that occurred during the simulation.
 
+During a simulation, you can also preview the content of every channel activity directly on the canvas. Click the **[!UICONTROL Expand all]** (eye) icon, then click a thumbnail to open the preview. [Learn how to preview content in the canvas](using-the-journey-designer.md#content-preview).
+
+The preview reflects the **[!UICONTROL Test user]** you select: with **[!UICONTROL All]** selected, it shows non-personalized content; when you select a specific test user, each channel activity that user went through is previewed with that user's personalized data.
+
+In a simulation, previewed attribute values depend on when simulated user data was last fetched relative to the **[!UICONTROL Update Profile]** activity. If the data was fetched before the activity runs, previews show pre-update values throughout. If it was fetched after the activity runs (for example, after reloading the page), previews show post-update values throughout, including in email activities before the **[!UICONTROL Update Profile]** activity. A single preview does not show pre-update values before the activity and post-update values after it.
+
+![Personalized content preview for the selected test user during a simulation](assets/journey-canvas-content-preview.png)
+
 For **Wait** activities, the log includes two duration-related values:
 
 * **Defined duration**: The duration specified on the **Wait** activity for the published journey and applied once the journey is live. The log records whether Simulation applies an override from the test settings, for example 10 seconds, rather than relying solely on the value defined on the journey.
@@ -273,51 +281,4 @@ For **Wait** activities, the log includes two duration-related values:
 
 When errors appear in the log, leave **Simulation**, apply the required changes to the journey, and run **Simulation** again. After validation succeeds, publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page provides step-by-step instructions for running Quick simulation and Manual simulation in Adobe Journey Optimizer, including how to create and manage simulated users, trigger unitary events, override Wait durations, and interpret the Results log.
-
-**Intents:**
-* Run a Quick simulation to validate a journey end-to-end with minimal manual input
-* Set up Manual simulation to control simulated user creation, event payloads, and wait overrides
-* Create simulated users via AI generation, inventory browse, form entry, or JSON
-* Trigger unitary events for simulated users during an active simulation session
-* Review the Results log to identify errors and uncovered branches after a simulation run
-* Reset or close a simulation session to start fresh or exit
-
-**Glossary:**
-* **Quick simulation**: An automated simulation mode that generates users and event values using the Journey Agent and runs the full journey with minimal manual steps *(product-specific)*
-* **Manual simulation**: A step-by-step simulation mode where practitioners control user creation, event payloads, and timing individually *(product-specific)*
-* **Simulated users**: Temporary profile-like entities used in Simulation. Sending a simulated user triggers a real message send, which can currently result in a persistent profile being created in Adobe Experience Platform *(product-specific)*
-* **Journey Agent**: The AI component that generates simulated users and event payloads during AI-assisted simulation *(product-specific)*
-* **Test settings**: The Simulation panel tab where Wait durations and execution addresses (email, phone, push token) can be overridden for the simulation run *(product-specific)*
-* **Results log**: The execution log accessible from the Results tab showing per-activity outcomes, durations, and errors for each simulated user *(product-specific)*
-
-**Guardrails:**
-* Requires at least one of: Simulate journeys, Publish journeys, or Approve and Publish journeys permissions
-* AI features (Quick simulation, Generate with AI, Generate event values) require the Generate Content permission from the AI Assistant capability
-* For event-triggered journeys, the per-user Send icon is not available; entry is triggered through the Test events section
-* Wait duration overrides and execution address settings are only shown if the journey includes Wait or Channel activities
-* Channel proofs and custom actions or external data sources can execute real outbound calls during Simulation; use non-production contact points and avoid real customer PII in simulated users
-* Errors in the Results log require leaving Simulation, fixing the journey, and re-running before publishing
-
-**Terminology:**
-* Canonical name: Quick simulation — Acronym: none — variants: none
-* Canonical name: Manual simulation — Acronym: none — variants: none
-* Canonical name: Simulated users — Acronym: none — variants: test users (UI label in Test users list)
-* Synonyms: "Send all" = trigger all listed simulated users into the journey simultaneously
-* Do not confuse: "Reset simulation" ≠ "Close simulation" — Reset clears all data and settings; Close merely exits the current session
-
-**FAQ:**
-* **Q: What is the difference between Quick simulation and Manual simulation?** — Quick simulation runs the entire journey automatically using AI-generated users and events; Manual simulation lets you create users and events step by step with full control over payloads and timing.
-* **Q: Can I reuse simulated users across simulation sessions?** — Yes. Users saved to the inventory can be retrieved via Browse inventory in subsequent sessions.
-* **Q: How do I override Wait activity durations during simulation?** — Open the Test settings tab and set a shorter duration, for example 10 seconds, so simulated users move through Wait nodes quickly.
-* **Q: How do I trigger a unitary event for a specific simulated user?** — In the Test events section, click the edit icon next to the user to configure the event payload, then click the send icon on that row to trigger only that user's event.
-* **Q: What do the Defined duration and Actual duration fields mean in the Results log for Wait activities?** — Defined duration is the live journey's configured wait time; Actual duration is the overridden test duration the simulated user actually spent on the Wait node.
-* **Q: What should I do when errors appear in the Results log?** — Leave Simulation, apply the required fixes to the journey, then re-run Simulation until the run shows no errors before publishing.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-simulate-journey.md}}

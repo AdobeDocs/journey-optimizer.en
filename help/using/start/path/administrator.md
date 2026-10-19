@@ -14,15 +14,15 @@ product_v2:
 feature_v2:
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-subfeature_v2:
   - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
     internal-label: Access control
-  - id: c343082f-e963-4f57-a96b-b64d27f8118e
-    internal-label: IP warmup plans
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: c343082f-e963-4f57-a96b-b64d27f8118e
+    internal-label: IP warmup plans
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -69,6 +69,9 @@ Follow these steps to configure access management:
 
 1. **Create sandboxes** to partition your instances into separate, isolated virtual environments. **Sandboxes** are created in [!DNL Journey Optimizer]. Learn more in the [Sandboxes](../../administration/sandboxes.md) section.
     
+    >[!TIP]
+    >Data, audiences, journeys, and settings do not carry across sandboxes. Plan at least one development sandbox for building and testing, and one production sandbox for sending to customers. Channel configurations are also set up per sandbox, so messages cannot be sent from a sandbox until you configure them there. [Read the five core concepts](../understanding-ajo.md#five-concepts)
+
     >[!NOTE]
     >As a **System Administrator**, if you cannot see the **[!UICONTROL Sandboxes]** menu in [!DNL Journey Optimizer], you need to update your permissions. Learn how to update your role on [this page](../../administration/permissions.md#edit-product-profile).
     
@@ -91,19 +94,19 @@ To enable [Marketers](marketer.md) to create and send messages, access the **ADM
 
 Follow these steps:
 
-1. **Set up channel configurations**. Define all the technical parameters required for email, SMS, push notifications, web push, direct mail, and other channels:
+1. **Set up channel configurations**. Define all the technical parameters required for email, mobile messages, push notifications, web push, direct mail, and other channels:
 
     * Define **push notification settings** in both [!DNL Adobe Experience Platform] and Adobe Experience Platform Data Collection. [Learn more](../../push/push-gs.md)
 
     * Configure **web push notifications** to deliver notifications to mobile and desktop browsers. [Learn more](../../push/push-configuration-web.md)
 
-    * Create **channel configurations** to configure all the technical parameters required for email, SMS, push, in-app, web, and other channels. [Learn more](../../configuration/channel-surfaces.md)
+    * Create **channel configurations** to configure all the technical parameters required for email, mobile messages, push, in-app, web, and other channels. [Learn more](../../configuration/channel-surfaces.md)
 
-    * Configure the **SMS channel** to set up all the technical parameters required for SMS. [Learn more](../../mobile/mobile-configuration.md)
+    * Configure the **Mobile channel** to set up all the technical parameters required for Mobile messages. [Learn more](../../mobile/mobile-configuration.md)
 
     * Manage the number of days during which **retries** are performed before sending email addresses to the suppression list. [Learn more](../../configuration/manage-suppression-list.md)
 
-    * Enable **message export** at the channel configuration level to archive sent email and SMS content when required (add-on offering). [Learn more](../../configuration/message-export.md)
+    * Enable **message export** at the channel configuration level to archive sent email and Mobile content when required (add-on offering). [Learn more](../../configuration/message-export.md)
 
 1. **Delegate subdomains**: for any new subdomain to be used in Journey Optimizer, the first step will be to delegate it. [Learn more](../../configuration/about-subdomain-delegation.md). You can migrate subdomains from CNAME to custom delegation when needed. [Learn more](../../configuration/custom-subdomain-migration.md)
 
@@ -164,7 +167,7 @@ Collaborate with [Developers](developer.md) on API access and testing:
 Collaborate with [Marketers](marketer.md) on permissions and channel setup:
 
 * Assign appropriate permissions to create journeys and campaigns
-* Configure channels they'll use (email, push, SMS, etc.)
+* Configure channels they'll use (email, push, mobile, etc.)
 * Support testing environments and approval workflows
 * Enable access to new features and capabilities
 * Share decision guides to help your team choose the right approach: [Journeys vs Campaigns](../journeys-vs-campaigns.md) and [Journey types: choose the right one](../../building-journeys/journey-types-selection.md)
@@ -189,3 +192,5 @@ Once the environment is configured:
 | Marketer | [Get started for marketers](marketer.md) |
 
 Back to [Roles and responsibilities overview](../quick-start.md) · Back to [Get started](../../../rp_landing_pages/get-started-landing-page.md)
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-path-administrator.md}}

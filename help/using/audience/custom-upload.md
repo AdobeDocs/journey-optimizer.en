@@ -8,20 +8,20 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 71c652ba-f38f-452c-9c1b-dcd728307baf
-TQID: https://experienceleague.adobe.com/HkybhydJwQDHVEXCKM5o16ZNeiBk-n9mogm-2pwFKus
+TQID: 'https://experienceleague.adobe.com/HkybhydJwQDHVEXCKM5o16ZNeiBk-n9mogm-2pwFKus'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: d2971708-e780-44bb-9e2a-72f139796afd
+    internal-label: Customer
 subfeature_v2:
-  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
-    internal-label: Audience Qualification events
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences
-  - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
-    internal-label: Audience guardrails
+  - id: ef9a83ca-eefa-47cf-aa34-f1a34715583a
+    internal-label: Profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -49,6 +49,12 @@ Detailed information on how to import audiences is available in Adobe Experience
 >
 >For custom upload audiences (CSV upload) and other external audiences, **[!UICONTROL Incremental read]** is not functionally supported today. On each recurrence, the **entire audience** is retrieved, regardless of the Incremental read toggle setting.
 
+>[!CAUTION]
+>
+>Custom upload audiences (CSV upload) cannot be used to target inbound channel actions, including in-app messages and web or code-based experiences. [Learn more about audience guardrails](target-audiences.md#guardrails)
+
 Learn how to upload audiences in CSV format in video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421714?quality=12)
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-custom-upload.md}}

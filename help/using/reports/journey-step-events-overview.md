@@ -8,15 +8,17 @@ role: Developer, Admin, User
 level: Intermediate, Experienced
 keywords: journey, step events, analytics, reporting, monitoring, XDM
 exl-id: 2e7c5ea5-d8c5-416d-ab88-d2bc02043558
-TQID: https://experienceleague.adobe.com/PSXSN-31GNlM0zBKcCvdKPciHt5zhQPPCffFrUoIxUs
+TQID: 'https://experienceleague.adobe.com/PSXSN-31GNlM0zBKcCvdKPciHt5zhQPPCffFrUoIxUs'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a9f73820-6899-47c2-a597-3fec28ab756a
-    internal-label: Reporting
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
 subfeature_v2:
   - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
     internal-label: Performance monitoring
@@ -34,6 +36,8 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
@@ -170,6 +174,34 @@ WHERE _experience.journeyOrchestration.stepEvents.actionExecutionError IS NOT NU
 GROUP BY _experience.journeyOrchestration.stepEvents.nodeName;
 ```
 
+**Custom action analysis**
+
+Use journey step events to verify that Journey Optimizer executed a custom action, and to inspect its status, latency, and error details:
+
+```sql
+-- Example: Inspect custom action execution for a given custom action and profile in a journey
+SELECT
+  timestamp,
+  _experience.journeyOrchestration.stepEvents.actionID AS action_id,
+  _experience.journeyOrchestration.stepEvents.actionName AS action_name,
+  _experience.journeyOrchestration.stepEvents.actionType AS action_type,
+  _experience.journeyOrchestration.stepEvents.stepStatus AS step_status,
+  _experience.journeyOrchestration.stepEvents.actionExecutionError AS action_execution_error,
+  _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode AS action_execution_error_code
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>'
+AND _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction'
+AND _experience.journeyOrchestration.stepEvents.profileID = '<profile-id>'
+AND _experience.journeyOrchestration.stepEvents.nodeName = '<node-name>'
+ORDER BY timestamp DESC;
+```
+
+>[!NOTE]
+>
+>This query is scoped to a single profile and journey node. Without the `profileID` and `nodeName` filters, the query can return a large number of rows, especially for high-volume journeys or journeys that contain multiple custom action nodes.
+
+This query reports execution details on the Journey Optimizer side only. A successful result does not confirm that the external system delivered a message — check the external service's logs or reporting for downstream delivery status. Learn how to [choose the correct dataset](../data/datasets-query-examples.md#choose-the-correct-dataset) for message-delivery feedback.
+
 **Journey funnel analysis**
 
 - Track conversion rates at each journey step
@@ -232,7 +264,7 @@ Learn how to [configure Customer Journey Analytics](report-gs-cja.md) for Journe
 ### Documentation links {#documentation-links}
 
 - **[Journey step sharing overview](sharing-overview.md)**: Understanding how journey data flows to Adobe Experience Platform
-- **[Built-in schemas dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}**: Complete XDM schema reference
+- **[Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}**: Complete XDM schema reference
 - **[Journey Optimizer reporting](report-gs-cja.md)**: Overview of reporting capabilities in Journey Optimizer
 
 ### Integration guides {#integration-guides}

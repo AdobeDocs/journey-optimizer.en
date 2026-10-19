@@ -7,18 +7,26 @@ feature: Push, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: d8de1524-9d71-4978-86f5-1cd46f2e265c
-TQID: https://experienceleague.adobe.com/OKMsihU81BssIhueGFaWZUzUFIh-FDuo6sCnB9iwnxE
+TQID: 'https://experienceleague.adobe.com/OKMsihU81BssIhueGFaWZUzUFIh-FDuo6sCnB9iwnxE'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: 66e1fd99-672d-5d64-aa58-eca107f0fbae
+    internal-label: Push
 subfeature_v2:
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -141,7 +149,7 @@ The following schemas and datasets are available with the push notification chan
 >
 >When push tracking events are ingested into the CJM Push Tracking Experience Event dataset, some failures can happen, even though data is partly ingested successfully. This can occur if some fields in your mapping do not exist in incoming events: the system logs warnings but does not prevent ingestion of valid portions of the data. These warnings appear in batch status as 'failed' but reflect partial ingestion success.
 >
->To view the complete list of fields and attributes for each schema, consult the [Journey Optimizer schema dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
+>To view the complete list of fields and attributes for each schema, consult the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 ### Configure the pushNotification property {#push-property}
 
@@ -209,3 +217,5 @@ Once your push credentials and channel configuration are set up, you need to imp
 After completing the web push configuration in both Adobe Experience Platform and [!DNL Adobe Experience Platform Data Collection], you can test your implementation before sending web push notifications to your profiles. Testing ensures that subscriptions are properly registered and that notifications are delivered correctly to your users' browsers.
 
 For detailed instructions on creating a test journey with events to validate your web push setup, refer to the [mobile app push notification configuration documentation](push-configuration.md), which provides a comprehensive testing workflow applicable to both mobile and web push channels.
+
+{{$include /help/_includes/do-not-localize/push/ai-augmented-push-configuration-web.md}}

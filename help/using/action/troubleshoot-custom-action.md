@@ -2,26 +2,28 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Troubleshoot your custom actions
-description: Learn how to troubleshoot a custom action
+description: Learn how to send test API calls to validate and troubleshoot a custom action before you use it in a live journey
 feature: Journeys, Actions, Custom Actions, Monitoring
 topic: Administration
 role: Developer, Admin
 level: Experienced
 keywords: action, third-party, custom, journeys, API
 exl-id: c0bb473a-82dc-4604-bd8a-020447ac0c93
-TQID: https://experienceleague.adobe.com/SBF--1O5Edtk2OKch-n0ukkfxsTwRn-lLqBPncM-UAk
+TQID: 'https://experienceleague.adobe.com/SBF--1O5Edtk2OKch-n0ukkfxsTwRn-lLqBPncM-UAk'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
-    internal-label: Journey management
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: 2cb9b022-32b0-573b-a511-d091a4f355fb
+    internal-label: Actions
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 subfeature_v2:
   - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
     internal-label: Action configuration
@@ -29,11 +31,18 @@ subfeature_v2:
     internal-label: Get started
   - id: fa683eda-48de-4558-af32-2673edcd44fe
     internal-label: Events
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: 9bb4b199-a2fd-5580-9021-eafbab678ff5
+    internal-label: Monitoring
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
@@ -54,7 +63,7 @@ As an administrator, use the **[!UICONTROL Send test request]** capability to va
 
 ![](assets/send-test-request.png){width="70%"}
 
-Use this capability streamlines the testing and validation process, ensuring that custom actions function correctly in live journeys.
+This capability streamlines the testing and validation process, ensuring that custom actions function correctly in live journeys.
 
 >[!NOTE]
 >
@@ -138,7 +147,7 @@ When a custom action in one journey triggers an event that is intended to start 
 
 To avoid discard events when chaining journeys via custom actions, validate the event payload against the second journey's event rule and confirm the target journey is live or in test and within its active date window.
 
-## Additional resources
+## Related topics {#related}
 
 Browse the sections below to learn more about configuring and using your custom actions:
 
@@ -147,3 +156,4 @@ Browse the sections below to learn more about configuring and using your custom 
 * [Use custom actions](../building-journeys/using-custom-actions.md) - Learn how to use custom actions in your journeys
 * [Pass collections into custom action parameters](../building-journeys/collections.md) - Learn how to pass a collection in custom action parameters that is dynamically populated at runtime
 
+{{$include /help/_includes/do-not-localize/action/ai-augmented-troubleshoot-custom-action.md}}

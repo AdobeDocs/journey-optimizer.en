@@ -8,17 +8,19 @@ topic: Content Management
 role: Developer, Admin
 level: Experienced
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
-TQID: https://experienceleague.adobe.com/-JJssuHJ4-RPjn8TpxLWRANyjoOOyK6BZEb1ABO0Qps
+TQID: 'https://experienceleague.adobe.com/-JJssuHJ4-RPjn8TpxLWRANyjoOOyK6BZEb1ABO0Qps'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a9f73820-6899-47c2-a597-3fec28ab756a
-    internal-label: Reporting
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
   - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
     internal-label: Use cases
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 subfeature_v2:
   - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
     internal-label: Performance monitoring
@@ -31,6 +33,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -54,7 +59,7 @@ Before running any query on this page, ensure the following:
 * **Access to Adobe Experience Platform Query Service** — You must have access to [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"} in your Adobe Experience Platform sandbox.
 * **Dataset available** — Queries target the `journey_step_events` dataset. Verify the dataset exists and contains data in your sandbox via **Experience Platform > Datasets**.
 * **Correct journey version ID** — Most queries require a `journeyVersionID`. Find it in Journey Optimizer under **Journeys > [your journey] > Properties**, or use `journeyVersionName` to locate it in the dataset first.
-* **Schema field values** — Make sure that the fields used in your queries have associated values in the corresponding schema. Empty fields return no results without errors.
+* **Schema field values** — Make sure that the fields used in your queries have associated values in the corresponding schema. Empty fields return no results without errors. For the fields of the journey step events, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 >[!TIP]
 >

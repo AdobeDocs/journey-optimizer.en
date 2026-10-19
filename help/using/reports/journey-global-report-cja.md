@@ -8,15 +8,17 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 30d4f967-e085-44f1-973d-11e79f693e6e
-TQID: https://experienceleague.adobe.com/LvJSxPvyDrrhZGPH0EgWPfHhiHA9o3dQAXAMY-6k4-A
+TQID: 'https://experienceleague.adobe.com/LvJSxPvyDrrhZGPH0EgWPfHhiHA9o3dQAXAMY-6k4-A'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a9f73820-6899-47c2-a597-3fec28ab756a
-    internal-label: Reporting
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 subfeature_v2:
   - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
     internal-label: Performance monitoring
@@ -82,7 +84,7 @@ The **[!UICONTROL Journey Statistics]** table offers a detailed summary of cruci
 
 +++ Learn more about Journey Statistics metrics
 
-* **[!UICONTROL Journey exclusion]**: Total number of individuals who were excluded from the journey due to predefined criteria or suppression rules.
+* **[!UICONTROL Journey exclusion]**: Total number of profiles excluded from journey processing. This includes exclusions caused by business rules, audience-realization mismatches during journey entry, and exit-criteria realization mismatches.
 
 * **[!UICONTROL Journey engagement]**: Total number of unique individuals who received messages sent through the journey, representing distinct profiles that reached a designated action point in the journey.
 
@@ -102,7 +104,7 @@ The **[!UICONTROL Journey Statistics]** table offers a detailed summary of cruci
 
 ## Journey exclusion {#journey-exclusion}
 
-The **[!UICONTROL Journey exclusion]** table presents a comprehensive view of the different factors that resulted in the exclusion of user profiles. To investigate business rules-related exclusions at the Data Lake level and identify whether profiles were excluded due to a cap being reached or a lower priority, use the queries available in [this section](query-examples.md#business-rules-queries).
+The **[!UICONTROL Journey exclusion]** table presents the different factors that resulted in profiles being excluded from journey processing. The **[!UICONTROL Journey exclusion]** metric is not limited to profiles excluded from journey entry. It also includes profiles excluded when an exit criterion uses an audience-realization condition that does not match the profile's realization event, such as an `enter` event when the journey is configured for `exit`. To investigate business-rule exclusions at the Data Lake level and identify whether profiles were excluded because a cap was reached or because of lower priority, use the queries available in [this section](query-examples.md#business-rules-queries).
 
 ## Action error {#action-error}
 

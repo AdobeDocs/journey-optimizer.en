@@ -14,6 +14,8 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
     internal-label: In App channel
@@ -64,7 +66,7 @@ To add an In-app message in a journey, follow these steps:
 
     >[!IMPORTANT]
     >
-    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
+    >Legacy native channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
 1. Select **[!UICONTROL In-app]** as the action type.
 
@@ -180,6 +182,10 @@ To add an In-app message in a campaign, follow these steps:
 
     ![](assets/in_app_create_2.png)
 
+    >[!CAUTION]
+    >
+    >Custom upload (CSV) audiences are not supported for in-app messages. [Learn more](../audience/target-audiences.md#guardrails)
+    
 1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected audience. [Learn more](../event/about-creating.md#select-the-namespace).
 
 1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL In-app message]** and select or create a new configuration.
@@ -301,3 +307,5 @@ For more information on how to create, configure and activate a campaign, refer 
 * [Test and send your In-app message](send-in-app.md)
 * [In-app report](../reports/campaign-global-report-cja-inapp.md)
 * [In-app configuration](inapp-configuration.md)
+
+{{$include /help/_includes/do-not-localize/in-app/ai-augmented-create-in-app.md}}

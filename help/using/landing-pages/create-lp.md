@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landing, landing page, creation, publish
 exl-id: 18f9bdff-f5c6-4601-919d-4f3124e484b5
-TQID: https://experienceleague.adobe.com/EZ4dKkk6sFemC9-KqH4zYoMGVQU7nxtGnaUJ-mPJkQU
+TQID: 'https://experienceleague.adobe.com/EZ4dKkk6sFemC9-KqH4zYoMGVQU7nxtGnaUJ-mPJkQU'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,21 +18,15 @@ feature_v2:
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
-  - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
-    internal-label: Proofs
   - id: b19d9237-76be-466d-a869-aacf2d72205f
     internal-label: Landing pages
-  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
-    internal-label: Audiences
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
-  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
-    internal-label: Subdomains
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -321,3 +315,5 @@ It is now live and ready to be used in a [!DNL Journey Optimizer] message that w
 >You cannot access your landing page by simply copy-pasting into a web browser the URL defined when [creating the page](#create-landing-page), even if published. Instead you can test it using the preview function such as described in [this section](#test-landing-page).
 
 You can monitor your landing page impacts through specific reports. [Learn more](../reports/lp-report-live.md)
+
+If a landing page returns an error code, see [Landing page errors](landing-page-errors.md).

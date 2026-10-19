@@ -8,10 +8,27 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
-feature_v2: []
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Get started with loyalty challenges {#get-started-loyalty-challenges}
 
@@ -20,9 +37,11 @@ subfeature_v2:
 >title="Loyalty challenges"
 >abstract="Loyalty Challenges enable you to create engaging, gamified loyalty programs that drive customer behavior and deepen brand relationships. Build challenges that reward customers for specific actions—from making purchases and writing reviews to engaging on social media and referring friends."
 
->[!AVAILABILITY]
->
->Journey Optimizer Loyalty is not currently available to Healthcare Shield and Privacy and Security Shield customers. Availability for Healthcare Shield and Privacy and Security Shield customers will be updated upon future feature readiness.
+>[!BEGINSHADEBOX]
+
+**On this page:** Get an overview of Loyalty Challenges, learn how the program works, review prerequisites, and find the documentation needed to set up, create, launch, and measure challenges.
+
+>[!ENDSHADEBOX]
 
 ## Overview {#overview}
 
@@ -53,7 +72,7 @@ You can create these types of challenge experiences:
 * **Bring your own data challenges** (restricted availability): The challenge framework (tasks and rewards) is assembled from your Loyalty Challenges data integration. You configure Settings, Content, and Messaging as you would for any other challenge type.
 
 >[!TIP]
->You can also create and manage loyalty challenges using **Loyalty Challenge Management** in [CX Coworker Journey Skills](../start/ajo-coworker-skills.md#loyalty-challenge-management) with natural language prompts for faster challenge creation.
+>You can also create and manage loyalty challenges using **Loyalty Challenge Management** in [Coworker skills for loyalty](loyalty-coworker-skills.md#loyalty-challenge-management) with natural language prompts for faster challenge creation.
 
 ➡️ [Watch an overview of the feature](#video)
 
@@ -63,7 +82,7 @@ Using Loyalty Challenges involves three broad phases — setup, execution, and m
 
 **1. Set up your program** *(admin)*
 
-Before challenges can be authored, an administrator configures the program foundations: reward providers, event definitions that map customer actions to task completions, product inventory, and exclusion lists. [Learn how to configure loyalty challenges](loyalty-admin.md).
+Before challenges can be authored, an administrator configures the program foundations: reward providers, event mappings that map customer actions to task completions, product inventory, and exclusion lists. [Learn how to configure loyalty challenges](loyalty-admin.md).
 
 **2. Author and launch challenges** *(practitioner)*
 
@@ -71,7 +90,7 @@ Marketers create challenges by selecting a type (Standard, Streak, Sequential, o
 
 **3. Monitor performance** *(practitioner / analyst)*
 
-Once a challenge is live, built-in reporting dashboards provide challenge-level metrics: audience funnel performance, task completion rates, reward issuance, and revenue impact. The AI-powered insights engine also surfaces contextual recommendations to help optimize program performance. [Learn about loyalty reporting](loyalty-reporting.md).
+Once a challenge is live, built-in reporting dashboards provide challenge-level metrics: audience funnel performance, task completion rates, reward issuance, and revenue impact. The AI-powered insights engine also surfaces contextual recommendations to help optimize program performance. [Explore Loyalty performance](loyalty-performance.md).
 
 ## Prerequisites {#prerequisites}
 
@@ -87,7 +106,7 @@ Contact your administrator if you cannot access the feature or need additional p
 
 +++Configure the loyalty program (administrators)
 
-Administrators configure reward providers, event definitions, product inventory, exclusions, and global settings in the **[!UICONTROL Loyalty configurations]** menu. Marketers who only create challenges do not need access to this menu. [Learn how to configure loyalty challenges](loyalty-admin.md)
+Administrators configure reward providers, event mappings, product inventory, exclusions, and global settings in the **[!UICONTROL Loyalty configurations]** menu. Marketers who only create challenges do not need access to this menu. [Learn how to configure loyalty challenges](loyalty-admin.md)
 
 Contact your administrator if the **[!UICONTROL Loyalty configurations]** menu is not visible in the left navigation.
 
@@ -139,11 +158,11 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
     </p>
   </td>
   <td>
-    <a href="loyalty-reporting.md">
+    <a href="loyalty-performance.md">
       <img alt="Reports" src="assets/do-not-localize/icon-reporting.png" width="200"/>
     </a>
     <div>
-    <a href="loyalty-reporting.md"><strong>Monitor performance</strong></a>
+    <a href="loyalty-performance.md"><strong>Explore loyalty performance</strong></a>
     </div>
     <p>
     <em>Track program KPIs, challenge results, and task metrics with built-in dashboards</em>
@@ -153,14 +172,14 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
     <a href="loyalty-admin.md"><strong>Configure the loyalty program</strong></a>
   <td>
     <a href="loyalty-admin.md">
-    <em>Set up reward providers, event definitions, and org settings for fulfillment</em>
+    <em>Set up reward providers, event mappings, and org settings for fulfillment</em>
     </a>
     <div>
 -->
     <a href="loyalty-admin.md"><strong>Configure loyalty challenges</strong></a>
     </div>
     <p>
-    <em>Set up reward providers, event definitions, and org settings</em>
+    <em>Set up reward providers, event mappings, and org settings</em>
     </p>
   </td>
 </tr>
@@ -180,4 +199,8 @@ For authentication and required headers, see the [authentication tutorial](https
 **New to Loyalty Challenges?** Watch this overview to understand the capabilities and benefits:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496441?quality=12)
+
+## Interactive demo {#demo}
+
+Want to see Loyalty Challenges in action first? Check out the [interactive demo](loyalty-challenges-demo.md).
 

@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 keywords: journey, questions, answers, troubleshoot, help, guide, orchestration
 version: Journey Orchestration
 exl-id: cac9fc24-b78e-48d9-9c0c-f43181246f6f
-TQID: https://experienceleague.adobe.com/dsBz1iD4BaSxE-bDie1jMSABvjDN6arPcaspgMSXYhU
+TQID: 'https://experienceleague.adobe.com/dsBz1iD4BaSxE-bDie1jMSABvjDN6arPcaspgMSXYhU'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -21,6 +21,8 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
@@ -114,7 +116,7 @@ A journey consists of:
 * **Events**: Entry points that trigger the journey (e.g., profile qualification, business events)
 * **Orchestration activities**: Logic components like conditions, wait, read audience, journey fragments, and end
 * **Actions**: Activities that perform tasks, such as sending messages, updating profiles, or calling external APIs
-* **Built-in channel actions**: Native messaging capabilities for email, SMS, push, and other channels
+* **Built-in channel actions**: Native messaging capabilities for email, mobile message, push, and other channels
 * **Custom actions**: Integration with third-party systems
 
 Learn more about [journey activities](about-journey-activities.md).
@@ -221,9 +223,10 @@ Follow these key steps:
 2. **Create the journey**: Navigate to the Journeys menu and click "Create Journey"
 3. **Define journey properties**: Set the journey name, description, and other settings
 4. **Design the journey**: Drag and drop activities from the palette into the canvas
-5. **Test the journey**: Use test mode to validate your journey logic
-6. **Dry run the journey**: Use Dry run to test the journey using real production data without contacting real customers or updating profile information
-7. **Publish the journey**: Activate the journey to make it live
+5. **Validate the journey**: Click **[!UICONTROL Validate]**, resolve any errors in the Alerts panel, and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
+6. **Test the journey**: Use test mode to validate your journey logic
+7. **Dry run the journey**: Use Dry run to test the journey using real production data without contacting real customers or updating profile information
+8. **Publish the journey**: Activate the journey to make it live
 
 Follow the [step-by-step guide](journey-gs.md).
 
@@ -272,7 +275,7 @@ Learn more about [conditions](conditions.md).
 
 +++ Can I send messages to profiles in a journey?
 
-Yes. Journey Optimizer includes **built-in channel actions** that allow you to send messages through email, push notifications, SMS/MMS/RCS, in-app messages, web experiences, code-based experiences, content cards, WhatsApp, and LINE. You can design message content directly in Journey Optimizer and add them as action activities in your journey.
+Yes. Journey Optimizer includes **built-in channel actions** that allow you to send messages through email, push notifications, mobile message, in-app messages, web experiences, code-based experiences, content cards, WhatsApp, and LINE. You can design message content directly in Journey Optimizer and add them as action activities in your journey.
 
 For channels not natively supported, you can use **custom actions** to integrate with external messaging platforms and send messages through any third-party channel.
 
@@ -308,7 +311,8 @@ Create a **unitary event-triggered journey**:
 2. Add the event as your journey entry point
 3. Immediately follow with an Email action
 4. Design your cart recovery email with personalized product details
-5. Publish the journey
+5. [Validate](publish-journey.md#validate) and [test](choose-validation-method.md) the journey, resolving any errors before continuing
+6. Publish the journey
 
 The journey will automatically trigger whenever a cart abandonment event is received, sending the recovery email in real time.
 
@@ -429,7 +433,9 @@ Learn more about [Journey Fragments](journey-fragments.md).
 
 +++ How do I test my journey before publishing it?
 
-Journey Optimizer offers three validation methods:
+First, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. If you edit the journey, validate it again before testing or publishing. [Learn about journey validation](publish-journey.md#validate).
+
+After configuration validation passes, choose from three testing methods:
 
 * **Journey Simulation**: Validate your journey with temporary simulated users, manually created or auto-generated — no need to create or wait for real test profiles. Best for fast iteration during journey design.
 * **Test mode**: Walk real (but designated test) profiles through the journey step by step, allowing you to verify logic, conditions, and actions before going live.
@@ -474,8 +480,9 @@ Yes, but with limitations. You can edit certain elements of a Live journey:
 
 1. **Create a new version**: Duplicate the published journey to create a draft version
 2. **Make your changes**: Edit the draft version as needed
-3. **Test the new version**: Use test mode to validate changes
-4. **Publish the new version**: This automatically closes the previous version and activates the new one
+3. **Validate the new version**: Click **[!UICONTROL Validate]** and resolve any errors before continuing. [Learn about journey validation](publish-journey.md#validate).
+4. **Test the new version**: Use test mode to validate changes
+5. **Publish the new version**: This automatically closes the previous version and activates the new one
 
 Profiles already in the journey will complete the original version, while new profiles will enter the new version.
 
@@ -630,7 +637,7 @@ Learn more about [journey live reporting](report-journey.md).
   Solution: Submit for approval or check approval status
   -->
   
-* **Channel configuration issue**: Email/SMS configuration is incorrect
+* **Channel configuration issue**: Email/Mobile message configuration is incorrect
   Solution: Verify channel configurations and authentication
 
 Learn more about [troubleshooting](troubleshooting.md) and [consent management](../action/consent.md).
@@ -667,7 +674,7 @@ Yes. Use an **[Optimize activity](conditions.md)** to route profiles based on th
 2. Create a path for each channel by checking the preferred channel profile attribute (e.g., `profile.preferredChannel`)
 3. Configure channel-specific paths:
    * **Email path**: Add an [email action](../email/create-email.md) with email-optimized content
-   * **SMS path**: Add an [SMS action](../mobile/create-mobile-message.md) with concise messaging
+   * **Mobile path**: Add an [Mobile message action](../mobile/create-mobile-message.md) with concise messaging
    * **Push path**: Add a [push notification action](../push/create-push.md) with short, actionable content
    * **In-app path**: Add an [in-app message action](../in-app/create-in-app.md) for engaged app users
 4. Add a default path for profiles without a preference, routing them to your primary channel
@@ -1021,52 +1028,4 @@ For more learning and updates, explore the following resources:
 * [Journey use cases](jo-use-cases.md)
 * [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page is a comprehensive FAQ covering journey orchestration concepts, building journeys, testing and publishing, execution monitoring, advanced features, and best practices in Adobe Journey Optimizer.
-
-**Intents:**
-* Understand the four journey types (unitary, Read Audience, Audience Qualification, business event) and when to use each
-* Decide between a journey and a campaign for a given use case
-* Configure re-entrance settings to control how often a profile can enter the same journey
-* Troubleshoot why a profile did not enter or why messages were not sent
-* Apply journey capping rules to prevent message fatigue across multiple journeys
-* Use Journey Fragments to reuse common node sequences across journeys
-
-**Glossary:**
-* **Unitary journey**: A journey triggered one profile at a time by a real-time event such as a purchase or sign-up *(product-specific)*
-* **Read Audience journey**: A journey that processes all profiles in a batch audience at once or on a schedule *(product-specific)*
-* **Audience Qualification journey**: A journey triggered when a profile enters or exits a streaming audience segment *(product-specific)*
-* **Journey capping**: A configuration that limits how many times a profile can enter journeys within a time window or how many journeys a profile can be in simultaneously *(product-specific)*
-* **Journey Fragment**: A reusable, static set of journey nodes built once and inserted into multiple journeys at design time *(product-specific)*
-* **Send-Time Optimization (STO)**: An AI-driven feature that predicts the optimal send time for each individual profile to maximize engagement *(product-specific)*
-* **Supplemental identifier**: An additional identifier that lets a profile enter the same journey multiple times for different entities (e.g., separate orders) *(product-specific)*
-
-**Guardrails:**
-* Maximum of 50 activities per journey
-* Maximum journey duration is 91 days (global timeout)
-* Upload audiences and Federated Audience Composition audiences are not supported in Audience Qualification journeys
-* Reaction events must be placed immediately after a channel action, without a Wait activity in between
-* Jump activities are not allowed inside a Journey Fragment
-* A Journey Fragment supports a maximum of 20 nodes; a sandbox supports a maximum of 200 active fragments
-* Streaming audience qualification may be delayed up to 10 minutes after journey publication for profiles already in the audience
-
-**Terminology:**
-* Canonical name: Journey — Acronym: none — variants: customer journey, orchestration, flow
-* Synonyms: "Close to new entrances" = "graceful stop"; "Stop" = "immediate stop"
-* Do not confuse: "Journey" ≠ "Campaign" — journeys support multi-step event-triggered orchestration; campaigns are one-time or scheduled audience-based sends
-* Do not confuse: "Simulation" ≠ "Test mode" ≠ "Dry run" — Simulation uses temporary simulated users; Test mode uses persistent AEP test profiles; Dry run uses real production data without contacting customers or updating profiles
-
-**FAQ:**
-* **Q: What is the maximum number of activities in a journey?** — 50 activities; keeping journeys simpler improves maintainability and performance.
-* **Q: Why did a profile not enter my journey?** — Common causes include the triggering event not being received, audience criteria not met, re-entrance rules blocking re-entry, the journey being unpublished, or a namespace mismatch.
-* **Q: Can I modify a live journey's structure?** — No; structural changes require creating a new journey version. Message content can be updated without a new version.
-* **Q: What is the difference between Pause, Close to new entrances, and Stop?** — Pause temporarily suspends the journey while holding or discarding in-flight profiles. Close to new entrances stops new entries but lets existing profiles finish. Stop immediately exits all profiles.
-* **Q: When should I use Journey Fragments instead of the Jump activity?** — Use fragments to reuse common node logic at design time (copy-paste behavior). Use Jump to redirect profiles to another live journey at runtime.
-* **Q: How do I prevent sending too many messages to the same customer?** — Apply journey capping rules (entry capping or concurrency capping) and use frequency capping business rules on individual channel actions.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-faq.md}}

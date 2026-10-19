@@ -10,26 +10,32 @@ role: User
 level: Intermediate
 exl-id: 7234a8e8-4ab0-4f17-a833-5e452fadac35
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/Wp9b8KmhVwqELaFaMEi-AUDIlDW0yBP6JWFEqrwifXQ
+TQID: 'https://experienceleague.adobe.com/Wp9b8KmhVwqELaFaMEi-AUDIlDW0yBP6JWFEqrwifXQ'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
-  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decision capabilities
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
+  - id: b4e198c6-7f7a-437c-9abd-3255b73e0994
+    internal-label: Decision management limitations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-subfeature_v2:
-  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
-    internal-label: Decisioning API
-  - id: eb547372-2a95-4d13-b0fd-f720c9895880
-    internal-label: Edge Decisioning
 ---
 # Add constraints to an offer {#add-constraints}
 
@@ -280,12 +286,18 @@ The **[!UICONTROL Reset capping frequency]** field allows you to define how ofte
  
 The frequency capping counter is updated and available in an [Edge Decisioning API](../api-reference/offer-delivery-api/start-offer-delivery-apis.md#edge) decision in less than 3 seconds.
 
-Each hub region is associated with one or more edge regions. Frequency capping rules are generated and exported from each hub region to its associated edge regions. Whenever a decision is made using the Edge Decisioning API, the system enforces the rules available in the same edge region:
+Each hub region is associated with one or more edge regions. Frequency capping rules are generated and exported from each hub region **only** to its associated edge regions. They are not synchronized to other edge regions, including edge regions that are geographically close to or commonly used by your Organization. Whenever a decision is made using the Edge Decisioning API, the system enforces the rules available in the same edge region:
 
 * If there is a matching rule, the profile's frequency capping counter is incremented.
-* Otherwise, no counter is created for the profile, and the frequency capping rule does not apply. Consequently, the profile will continue to receive personalized offers even if the capping threshold is exceeded.
+* Otherwise, no counter is created for the profile, and the frequency capping rule does not apply. Consequently, the profile will continue to receive personalized offers even if the capping threshold is exceeded, regardless of how long you wait between requests.
  
 For instance, let's consider your Organization's hub region as *NLD2*, and you are sending a decisioning request from Europe (*IRL1* edge region). In this scenario, the decisioning request will increment the profile's counter, as the rules are available in the (Ireland) *IRL1* region. However, if the decisioning request originates from a region like Japan (*JPN3*), which is not an edge region tied to (Netherland) *NLD2* hub region, no counter will be created, and the frequency capping rules will not be enforced.
+
+Likewise, if your Organization's hub region is *VA7*, the rules are only available in its associated edge regions (for example, *VA6* and *OR2*). Edge Decisioning requests routed to an edge region outside this set, such as *IRL1* or an edge region in India, do not enforce frequency capping.
+
+>[!IMPORTANT]
+>
+>If your audience is global, make sure that the Edge Decisioning requests are routed to edge regions associated with your Organization's hub region. Otherwise, frequency capping is not enforced for these requests. Also note that a profile's counter is not shared across edge regions: if a profile receives an offer through one edge region and then reaches another edge region, the counter is not incremented in the second one.
 
 >[!NOTE]
 >

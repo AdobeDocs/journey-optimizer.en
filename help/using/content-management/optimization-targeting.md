@@ -11,7 +11,9 @@ TQID: https://experienceleague.adobe.com/TbxDXnkVruD3-kutQx5eA5IbF1XawoB40WgqLVZ
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
-feature_v2: []
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -25,7 +27,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-subfeature_v2: []
+subfeature_v2:
+  - id: f29a52db-c90c-4345-902e-b586d1406d8d
+    internal-label: Content experiment
 ---
 # Use targeting {#targeting}
 

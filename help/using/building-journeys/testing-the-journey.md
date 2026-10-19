@@ -19,15 +19,15 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
-  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
-    internal-label: Wait activity
   - id: d08afb72-92f6-4856-88e3-11ec34313c2f
     internal-label: Event configuration
   - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
     internal-label: Reaction events
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
+  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
+    internal-label: Wait activity
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -40,16 +40,14 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
 ---
-	
+    
 # Test your journey{#testing_the_journey}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to validate your journey before publishing by using simulation with simulated users or test mode with test profiles to catch errors early.
+**On this page:** Learn how to validate your journey before publishing by using Journey Simulation, Journey Test mode, or Journey Dry run.
 
 >[!ENDSHADEBOX]
-
-Not sure Test mode is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test"
@@ -61,17 +59,21 @@ Once you have built your journey, you can test it before publishing. [!DNL Adobe
 
 Only test profiles can enter a journey in test mode. You can either create new test profiles or turn existing profiles into test profiles. Learn more about test profiles in [this section](../audience/creating-test-profiles.md). 
 
-Adobe Journeys Optimizer offers two ways to test and validate your journey:
+Adobe Journey Optimizer offers three ways to test and validate your journey:
 
-* **[Simulation](simulate-journey.md#test-users)**: Set the journey to **[!UICONTROL Simulation]** and use simulated users (temporary profiles you create or generate on the fly without pre-created profiles in Adobe Experience Platform).
+* **[Journey Simulation](simulate-journey.md#test-users)**: Set the journey to **[!UICONTROL Simulation]** and use simulated users (temporary profiles you create or generate on the fly without pre-created profiles in Adobe Experience Platform).
 
-* **[Test mode](#test-profiles)**: Persistent profiles explicitly flagged as test profiles in Adobe Experience Platform. They can be reused across multiple test sessions. This method is recommended for testing with consistent, predefined profile data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
+* **[Journey Test mode](#test-profiles)**: Persistent profiles explicitly flagged as test profiles in Adobe Experience Platform. They can be reused across multiple test sessions. This method is recommended for testing with consistent, predefined profile data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
+
+* **[Journey Dry run](journey-dry-run.md)**: Run the journey against real production audience and segmentation data without contacting real customers or updating profile information. Action nodes such as email, mobile message, and custom actions are bypassed. [Learn more about Journey Dry run](journey-dry-run.md).
+
+Not sure Test mode is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
 >[!NOTE]
 >
->Before testing your journey, you must resolve all errors if any. Learn how to check errors before testing in [this section](../building-journeys/troubleshooting.md). If test profiles fail to progress in test mode, see [troubleshooting test mode transitions](troubleshooting-execution.md#troubleshooting-test-transitions).
+>Before testing, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. [Learn about journey validation](publish-journey.md#validate). If test profiles fail to progress in test mode, see [troubleshooting test mode transitions](troubleshooting-execution.md#troubleshooting-test-transitions).
 
-## Important notes {#important_notes}
+## Guardrails and limitations {#important_notes}
 
 Review these notes before running tests in your journey.
 
@@ -93,6 +95,7 @@ Review these notes before running tests in your journey.
 
 ### Execution
 
+* **Shortened wait times** - Test mode overrides the configured wait and timeout durations with the **[!UICONTROL Wait time]** value (10 seconds by default), so you can validate a journey more quickly. Events such as email opens may take time to be processed, so an event can arrive after the shortened timeout and send the profile to the timeout path. Increase the **[!UICONTROL Wait time]** so that it fits your test scenario. The same applies to [Journey Simulation](simulate-journey.md), which overrides wait durations with the values defined in **[!UICONTROL Test settings]**.
 * **Split behavior** - When the journey reaches a split, the top branch is always selected in test mode. This does not reflect the statistically selected path during live execution. Reorder branches if you want a different path tested.
 * **Event timing** - If the journey includes multiple events, trigger each event in sequence. Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event. The profile will then be sent to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window. 
 * **Active date window** -  Make sure the journey's configured [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded with the log message `DISPATCHER DISCARD #16 — unqualified on journey version enablements`. To work around this during testing, temporarily set the journey start date to a time before the current moment, then restore it before publishing. Learn more about troubleshooting this issue [on this page](troubleshooting-execution.md#troubleshooting-test-transitions).
@@ -107,6 +110,8 @@ Review these notes before running tests in your journey.
 ## Activate the test mode
 
 Use the **[!UICONTROL Test mode]** method when you want to test your journey with pre-existing test profiles that you have already created in Adobe Experience Platform.
+
+1. [Validate the journey](publish-journey.md#validate) and resolve any errors before activating test mode.
 
 1. To activate the test mode, click the **[!UICONTROL Simulate]** button, and select **[!UICONTROL Test mode]**.
 
@@ -132,7 +137,11 @@ Use the **[!UICONTROL Test mode]** method when you want to test your journey wit
 
     ![Show log button to view test results](assets/journeyuctest2.png)
 
-1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publish-journey.md).
+1. If there is any error, deactivate test mode and modify your journey. Click **[!UICONTROL Validate]** again and resolve any configuration errors before restarting the test. Once testing is complete and validation is current and passed, you can [publish your journey](publish-journey.md).
+
+>[!NOTE]
+>
+>While in test mode, you can preview the content of every channel activity directly on the canvas, rendered for the selected test profile. [Learn how to preview content in the canvas](using-the-journey-designer.md#content-preview).
 
 ## Worked example: validate a simple journey {#test-walkthrough}
 
@@ -140,6 +149,7 @@ The following example walks through testing a journey that starts with a unitary
 
 To validate the journey end to end:
 
+1. Click **[!UICONTROL Validate]** in the journey header and resolve any errors before continuing. [Learn about journey validation](publish-journey.md#validate).
 1. Activate test mode by clicking **[!UICONTROL Test mode]** in the top-right corner. The canvas switches to test mode and a **[!UICONTROL Trigger an event]** button appears.
 1. Set **[!UICONTROL Wait time]** to **10 seconds** so the wait node completes quickly during testing.
 1. Click **[!UICONTROL Trigger an event]**, select your event, and enter a test profile identifier (for example, the email address of a profile flagged as a test profile in Adobe Experience Platform).
@@ -278,56 +288,4 @@ When an event is triggered using the test mode, a dataset is automatically gener
 
 The test mode automatically creates an Experience Event and sends it to [!DNL Adobe Experience Platform]. The name of the source for this experience Event is "Journey Orchestration Test Events".
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page explains how to use Test mode in Adobe Journey Optimizer to validate a journey with persistent test profiles before publishing, including activating test mode, triggering events, reading logs, and handling business and rule-based events.
-
-**Intents:**
-* Activate Test mode on a draft journey to validate it with pre-existing AEP test profiles
-* Configure and trigger events for test profiles using the Trigger an event interface
-* Override Wait activity durations in test mode to accelerate journey progression
-* Read and interpret the Show log JSON output to verify profile progression and identify errors
-* Test rule-based journeys and business event journeys in test mode
-* Understand the limitations and behavioral differences of Test mode compared to Simulation
-
-**Glossary:**
-* **Test mode**: A journey validation state that allows persistent AEP test profiles to traverse a draft journey before it is published *(product-specific)*
-* **Test profiles**: Profiles explicitly flagged as test profiles in the Adobe Experience Platform Real-time Customer Profile Service; the only profile type permitted to enter a journey in test mode *(product-specific)*
-* **Visual flow**: The canvas representation that turns green to show the path a test profile has followed through the journey
-* **Show log**: A test mode feature that displays journey execution state in JSON format for each test profile instance *(product-specific)*
-* **Journey Orchestration Test Events**: The source name under which test mode experience events are stored in Adobe Experience Platform
-
-**Guardrails:**
-* Only profiles flagged as test profiles in AEP can enter a journey in test mode
-* Test mode requires the journey to use a namespace to verify test profile identity
-* Maximum 100 test profiles per single test session
-* Events can only be triggered from the test mode UI; external API triggering is not supported
-* Custom upload audience attribute enrichment is not supported in test mode
-* Events triggered in Test mode generate real experience events that can also trigger other journeys listening to the same event
-* In Test mode, Wait activities and most event timeouts default to 10 seconds; Reaction event timeouts default to a minimum of 40 seconds
-* Automatic deactivation — Journeys that remain inactive in test mode for over a week automatically exit test mode and return to Draft status. No journey content is lost; only the test mode session ends.
-* Journey edits are blocked while test mode is active, but direct publishing is allowed
-* At a split, the top branch is always selected; reorder branches to test different paths
-* Reaction event timeout minimum and default wait time is 40 seconds
-* Events sent outside the journey's configured start/end date window are silently discarded
-* Disabling test mode removes all profiles from the journey and clears reporting
-
-**Terminology:**
-* Canonical name: Test mode — Acronym: none — variants: test mode, journey test mode
-* Canonical name: Test profiles — Acronym: none — variants: test users (Simulation UI label only)
-* Synonyms: "Show log" = test results log; "visual flow" = canvas path visualization
-* Do not confuse: "Test mode" ≠ "Simulation" — Test mode uses persistent AEP test profiles; Simulation uses temporary simulated users generated on the fly
-
-**FAQ:**
-* **Q: Who can enter a journey in test mode?** — Only profiles explicitly flagged as test profiles in the Adobe Experience Platform Real-time Customer Profile Service.
-* **Q: How many test profiles can run in a single test session?** — A maximum of 100 test profiles per test session.
-* **Q: What happens when I disable test mode?** — All profiles currently in or previously entered in the journey are removed and reporting is cleared.
-* **Q: Can I edit a journey while test mode is active?** — No. The journey cannot be modified while test mode is active, but you can publish it directly without deactivating test mode first.
-* **Q: Why are my test events being silently discarded?** — Events triggered outside the journey's configured active date/time window are silently discarded. Verify the journey start and end dates include the current time.
-* **Q: What does the phase field in the test log indicate?** — It shows the profile's current status: running (active in journey), finished (reached end), error (stopped due to error), or timed out (stopped due to timeout).
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-testing-the-journey.md}}

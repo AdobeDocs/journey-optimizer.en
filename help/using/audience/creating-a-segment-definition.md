@@ -8,20 +8,24 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
-TQID: https://experienceleague.adobe.com/yKwBevAZeHTG1n5NXcO-okHQW-pYL1McS8HT-0Tgv6E
+TQID: 'https://experienceleague.adobe.com/yKwBevAZeHTG1n5NXcO-okHQW-pYL1McS8HT-0Tgv6E'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d2971708-e780-44bb-9e2a-72f139796afd
+    internal-label: Customer
 subfeature_v2:
   - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
     internal-label: Audience Qualification events
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences
-  - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
-    internal-label: Audience guardrails
+  - id: ef9a83ca-eefa-47cf-aa34-f1a34715583a
+    internal-label: Profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -170,3 +174,5 @@ You can evaluate up to 20 audiences at a time, and ineligible audiences are auto
 Understand how Journey Optimizer uses rules to generate audiences, and learn how to use attributes, events, and existing audiences to create an audience.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425020?quality=12)
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-creating-a-segment-definition.md}}

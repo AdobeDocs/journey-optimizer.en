@@ -5,6 +5,9 @@ title: Personalization use cases
 description: Step-by-step use cases for building personalized messages in Adobe Journey Optimizer, covering order status notifications, cart abandonment emails, and health plan prescription alerts.
 redpen-status: CREATED_||_2025-08-12_00-35-09
 exl-id: 1b351130-3caa-4389-9caf-1a56e263f085
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Personalization use cases{#section-overview}
 
@@ -48,7 +51,7 @@ Build a single personalized email that lists all of a subscriber's prescriptions
 
 Personalization recipes
 
-Browse a library of ready-to-use personalization patterns covering dates, profile attributes, conditional logic, and more. Each recipe includes a working syntax snippet you can copy directly into your email, SMS, or push content.
+Browse a library of ready-to-use personalization patterns covering dates, profile attributes, conditional logic, and more. Each recipe includes a working syntax snippet you can copy directly into your email, mobile message, or push content.
 
 [Browse the recipes](../using/personalization/personalization-recipes.md)
 :::

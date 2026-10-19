@@ -12,6 +12,8 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
+  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
+    internal-label: Campaign Orchestration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
@@ -42,7 +44,7 @@ Orchestrated campaign activities are grouped into several categories. Depending 
 
 ## Guardrails and limitations {#activity-guardrails}
 
-* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities at publication (Email, SMS, Push, or Direct mail). Targeting, Data Management, and flow control activities do not count toward this limit.
+* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities at publication (Email, Mobile message, Push, or Direct mail). Targeting, Data Management, and flow control activities do not count toward this limit.
 
 * **Canvas activities limit** - The number of activities on the canvas is limited to 500. For maintainability and performance, keep workflows under 100 activities in practice.
 
@@ -96,6 +98,7 @@ The following activities are specific to organizing and executing Orchestrated c
 
 Available flow control activities are:
 
+* [Alert](alert.md): Notify subscribers when execution reaches a specific point in an Orchestrated campaign.
 * [And-join](and-join.md): Synchronize multiple execution branches of an Orchestrated campaign.
 * [Fork](fork.md): Create outbound transitions to start several activities at the same time.
 * [Wait](wait.md): Momentarily pause execution of a part of an Orchestrated campaign.

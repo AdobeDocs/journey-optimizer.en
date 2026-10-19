@@ -9,7 +9,7 @@ level: Beginner, Intermediate
 keywords: journey, discover, get-start, unitary, read audience, audience qualification, business event, real-time, scheduled, batch, event-triggered, workflow, orchestration, personalization, multi-channel
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/FsZLMlzVj6CcTqVp9BPUmiCf2piZL8zaj2WfWv8FMSQ
+TQID: 'https://experienceleague.adobe.com/FsZLMlzVj6CcTqVp9BPUmiCf2piZL8zaj2WfWv8FMSQ'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,15 +18,19 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
   - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
     internal-label: Journey design
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
-  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
-    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -80,7 +84,7 @@ Use [!DNL Journey Optimizer] to:
 
 * Build **real-time orchestration** use cases using contextual data stored in events or data sources
 * Design **multistep advanced scenarios** that respond dynamically to customer behavior and business events
-* Deliver **1:1 personalized experiences** at scale across email, push, SMS, in-app, web, and more
+* Deliver **1:1 personalized experiences** at scale across email, push, mobile message, in-app, web, and more
 
 ![Journey designer interface with palette, canvas, and properties pane](assets/journey38.png)
 
@@ -191,7 +195,7 @@ Use wait times, jumps, profile updates, and audience management to create sophis
 
 Building successful journeys follows a clear, repeatable process. Here is your step-by-step workflow:
 
-**1. Plan** → **2. Design** → **3. Test** → **4. Publish** → **5. Monitor** → **6. Optimize**
+**1. Plan** → **2. Design** → **3. Validate and test** → **4. Publish** → **5. Monitor** → **6. Optimize**
 
 ### 1. Plan your journey {#plan}
 
@@ -200,7 +204,7 @@ Before opening the designer, clarify your objectives:
 * **What is the goal?** (e.g., onboard new customers, re-engage inactive users)
 * **Who is the audience?** (specific segment, event-driven individuals)
 * **Which journey type fits?** (See [journey types](#journey-types) above)
-* **What channels will you use?** (email, push, SMS, etc.)
+* **What channels will you use?** (email, push, mobile message, etc.)
 
 ### 2. Design in the canvas {#design}
 
@@ -214,9 +218,11 @@ Use the journey designer to build your flow:
 
 [Learn to use the journey designer →](using-the-journey-designer.md)
 
-### 3. Test before going live {#test}
+### 3. Validate and test before going live {#test}
 
-Always test your journey to catch issues before customers experience them:
+First, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
+
+After validation passes, test your journey to catch issues before customers experience them:
 
 * Use **Journey Simulation** for fast iteration with temporary simulated users, no test profiles needed
 * Use **test mode** to walk real (but designated test) profiles through the journey step by step
@@ -231,6 +237,7 @@ Always test your journey to catch issues before customers experience them:
 Once testing is complete, publish to make your journey live:
 
 * Review final settings and properties
+* Make sure validation is current and passed; if you changed the journey after validation, click **[!UICONTROL Validate]** again and resolve any errors before continuing
 * Publish to activate for real customers
 * Note: Live journeys can be stopped but not edited (you must create a new version)
 
@@ -310,7 +317,7 @@ Send different content based on the day of the week customers enter your journey
 
 **Multi-channel campaigns**
 
-Orchestrate seamless experiences across email, push, SMS, and web channels in a single journey.
+Orchestrate seamless experiences across email, push, mobile message, and web channels in a single journey.
 
 [View use case →](journeys-uc.md)
 :::
@@ -464,50 +471,4 @@ Set up **[journey alerts](../reports/alerts.md)** to receive real-time notificat
 
 **Ready to build your first journey?** [Get started now →](journey-gs.md)
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page is the getting-started hub for Adobe Journey Optimizer journeys, explaining what journeys are, the four journey types, the six-step creation workflow, real-world use cases, and links to advanced capabilities.
-
-**Intents:**
-
-* Understand what journeys are and how they differ from campaigns and orchestrated campaigns
-* Choose the right journey type (Unitary, Read Audience, Audience Qualification, or Business event) for a use case
-* Follow the six-step journey creation workflow: Plan, Design, Test, Publish, Monitor, Optimize
-* Use Simulation, Test mode, or Dry run to validate a journey before going live
-* Publish a journey and monitor performance through reports and alerts
-* Explore advanced capabilities such as expressions, timezone management, copy to sandbox, and throughput control
-
-**Glossary:**
-
-* **Journey**: An automated, multistep customer experience that orchestrates personalized interactions across channels in response to customer behavior, business events, or scheduled campaigns. *(product-specific)*
-* **Journey designer**: The visual drag-and-drop canvas in AJO used to build and configure journey flows without writing code. *(product-specific)*
-* **Test mode**: A journey validation mode that uses persistent Adobe Experience Platform test profiles (explicitly flagged as test profiles) to traverse a draft journey before it is published. *(product-specific)*
-* **Dry run**: A special publication mode that executes the journey against real production data without sending communications or updating profiles. *(product-specific)*
-* **Simulation**: A validation mode that uses temporary simulated users, manually created or auto-generated; simulated users do not persist in Adobe Experience Platform. *(product-specific)*
-* **Orchestrated campaigns**: Multi-step batch workflows in AJO that use relational data (profiles + products/stores/bookings) and process all profiles together with exact pre-send counts. *(product-specific)*
-
-**Guardrails:**
-
-* Live journeys cannot be structurally edited; changes require creating a new version
-* Test mode and dry run must be used before publishing to catch issues
-
-**Terminology:**
-
-* Canonical name: Journey — Acronym: none — variants: customer journey, AJO journey
-* Synonyms: "journey designer" = "canvas" = "journey canvas"
-* Do not confuse: "Journey" ≠ "Campaign" — Journeys maintain individual customer state for real-time, multi-step behavior-driven experiences; Campaigns deliver messages in batch to audiences on a schedule or via API trigger
-* Do not confuse: "Simulation" ≠ "Test mode" ≠ "Dry run" — Simulation uses temporary simulated users; Test mode uses persistent AEP test profiles in a draft journey; Dry run executes against real production data without contacting customers or updating profiles
-
-**FAQ:**
-
-* **Q: What is the difference between a journey and a campaign in Journey Optimizer?** — Journeys provide 1:1 real-time orchestration where each profile progresses at its own pace through conditional logic; Campaigns deliver messages simultaneously to an audience on a schedule or via API trigger; Orchestrated campaigns are batch canvas workflows for complex multi-entity segmentation.
-* **Q: Can I edit a live journey?** — Limited elements such as name and message content can be edited; structural changes require creating a new version of the journey.
-* **Q: What are the steps to build a journey?** — The six-step workflow is: Plan, Design in the canvas, Test (test mode or dry run), Publish, Monitor performance, and Optimize/iterate.
-* **Q: How do I validate a journey without contacting real customers?** — Use Simulation (temporary simulated users — note this does send real messages, but only to the execution addresses configured on those simulated users), Test mode (persistent AEP test profiles — note this does send real messages to those test profiles' inboxes), or Dry run (real production data, action nodes bypassed, no messages sent). Dry run profiles count toward Engageable Profiles and live journey quota. See [Choose a validation method](choose-validation-method.md) for a full comparison.
-* **Q: What journey type should I use for a welcome email triggered by a subscription?** — Use a Unitary journey, which is triggered by a specific individual event such as a subscription sign-up.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey.md}}

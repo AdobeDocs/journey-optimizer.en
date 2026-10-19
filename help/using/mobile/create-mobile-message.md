@@ -8,13 +8,15 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
-TQID: https://experienceleague.adobe.com/xgPlWorA3lsIF8ZBPHdg2UAK8cLKUsJO-2ONc7ZG8AU
+TQID: 'https://experienceleague.adobe.com/xgPlWorA3lsIF8ZBPHdg2UAK8cLKUsJO-2ONc7ZG8AU'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: 6eb7d9ad-3477-58b3-957a-080ef7738a30
+    internal-label: SMS
 subfeature_v2:
   - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
     internal-label: SMS and MMS channel
@@ -43,7 +45,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
 >title="Create a Mobile message"
->abstract="To create a Mobile message, add an SMS action in a journey or a campaign and start personalizing it with the personalization editor."
+>abstract="To create a Mobile message, add an Channel action in a journey or a Mobile message campaign and start personalizing it with the personalization editor."
 
 >[!AVAILABILITY]
 >
@@ -142,3 +144,4 @@ For more information on how to create, configure and activate a campaign, refer 
 * [Configure Mobile message channel](mobile-configuration.md)
 * [Mobile message reports](../reports/journey-global-report-cja-sms.md)
 
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-create-mobile-message.md}}

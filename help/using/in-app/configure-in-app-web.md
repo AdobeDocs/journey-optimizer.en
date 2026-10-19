@@ -6,14 +6,25 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: in-app, message, creation, start
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
     internal-label: In App channel
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 
 # Configure the Web In-app channel {#configure-in-app-web}
@@ -164,3 +175,5 @@ subfeature_v2:
 1. Submit your In-app web configuration.
 
 You can now [create a web In-app](../in-app/create-in-app-web.md) inside a campaign.
+
+{{$include /help/_includes/do-not-localize/in-app/ai-augmented-configure-in-app-web.md}}

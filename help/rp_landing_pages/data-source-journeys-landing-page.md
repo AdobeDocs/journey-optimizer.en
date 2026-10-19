@@ -5,6 +5,9 @@ title: Data source configuration
 description: Data source configuration
 redpen-status: CREATED_||_2025-08-11_21-11-22
 exl-id: e940bc83-77d2-4c5a-9895-20534d70e7ee
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Data source configuration{#section-overview}
 

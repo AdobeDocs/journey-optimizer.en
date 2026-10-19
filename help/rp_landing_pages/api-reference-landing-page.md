@@ -6,6 +6,9 @@ description: Learn to use the Offer Library API and delivery APIs to integrate D
 redpen-status: CREATED_||_2025-08-11_21-04-46
 badge: label="Legacy" type="Informative"
 exl-id: 0b5e61d7-14a1-446e-8cb0-8861295d6e94
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # API Reference{#section-overview}
 

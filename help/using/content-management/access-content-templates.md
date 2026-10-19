@@ -129,7 +129,7 @@ Additional shortcuts are available depending on the channel, access the drop-dow
 
 +++
 
-+++ For SMS templates
++++ For Mobile templates
 
 * **[!UICONTROL Check character count/segments]**: Check the character count and number of segments used by the message.
 

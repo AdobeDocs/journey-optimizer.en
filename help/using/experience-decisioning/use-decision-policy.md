@@ -1,6 +1,6 @@
 ---
-title: Use decision policies in messages 
-description: Learn how to use decision policies in your messages. 
+title: Use decision policies in messages
+description: Learn how to use decision policies in your messages.
 feature: Decisioning
 topic: Integrations
 role: User
@@ -8,16 +8,26 @@ level: Experienced
 mini-toc-levels: 1
 version: Journey Orchestration
 exl-id: 35fc3cf2-1b91-4f30-ad71-f9d7d2a0291c
-TQID: https://experienceleague.adobe.com/zKV67LEfRVmEk9Fac-D45qdHLqbuVCS3rUt6Rt0HB7w
+TQID: 'https://experienceleague.adobe.com/zKV67LEfRVmEk9Fac-D45qdHLqbuVCS3rUt6Rt0HB7w'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
     internal-label: Decision capabilities
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -27,17 +37,12 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-subfeature_v2:
-  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
-    internal-label: Decisioning API
-  - id: eb547372-2a95-4d13-b0fd-f720c9895880
-    internal-label: Edge Decisioning
 ---
 # Use decision policies in messages {#create-decision}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Insert decision policy code into your code-based experience, email, SMS, push notification, and direct mail content, so you can personalize messages with attributes from the returned decision items.
+**On this page:** Insert decision policy code into your code-based experience, web, email, mobile message, push notification, custom channel, and direct mail content, so you can personalize messages with attributes from the returned decision items.
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +50,7 @@ Once you've added a decision policy to your content, you can use attributes from
 
 >[!CAUTION]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **Email**, **SMS**, **Push notification**, and **Direct mail** channels.
+>Decision policies are available to all customers for the **Code-based Experience**, **Web**, **Email**, **Mobile message**, **Push notification**, **[Custom channels](../custom-channel/get-started-custom-channel.md)**, and **Direct mail** channels.
 
 ## Insert the decision policy code {#insert}
 
@@ -53,7 +58,7 @@ Once you've added a decision policy to your content, you can use attributes from
 
 >[!TAB Code-based Experience]
 
-1. Edit your code-based experience and navigate to **[!UICONTROL Decision policy]**.
+1. Open the **Personalization Editor** and navigate to **[!UICONTROL Decision policy]**.
 
 2. Select **[!UICONTROL Insert policy]** to add the decision policy code.  
 
@@ -93,7 +98,7 @@ You can also insert the decision policy code when using the **[!UICONTROL Code y
 >
 >In **[!UICONTROL Code your own]** mode, only one decision item can be returned per policy, because the **[!UICONTROL Repeat Grid]** component is not available.
 
->[!TAB SMS]
+>[!TAB Mobile message]
 
 1. Open the **Personalization Editor** and navigate to **[!UICONTROL Decision policies]**.
 
@@ -113,6 +118,28 @@ You can also insert the decision policy code when using the **[!UICONTROL Code y
 >
 >Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the [release notes](https://developer.adobe.com/client-sdks/home/release-notes){target="_blank"} to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in [this section](https://developer.adobe.com/client-sdks/home/current-sdk-versions){target="_blank"}.
 
+>[!TAB Web]
+
+1. Open your web campaign or journey and navigate to the **web visual editor**.
+
+2. Select the component you want to personalize, then click the personalization icon from the contextual menu.
+
+3. In the **Personalization Editor**, navigate to **[!UICONTROL Decision policies]**.
+
+4. Select **[!UICONTROL Insert syntax]** to add the code for your decision policy.
+
+>[!IMPORTANT]
+>
+>The total payload size of a web channel response must not exceed **64 KB**. Requests exceeding this limit will result in an error. Ensure your decision items and attributes remain within this threshold.
+
+>[!TAB Custom channel]
+
+1. Open the payload editor by clicking **[!UICONTROL Edit code]**, then open the **Personalization Editor** on the field you want to personalize.
+
+2. Navigate to **[!UICONTROL Decision policies]**.
+
+3. Select **[!UICONTROL Insert syntax]** to add the code for your decision policy.
+
 >[!TAB Direct Mail]
 
 1. From the extraction file configuration, open the **Personalization Editor** (for example, in the **[!UICONTROL Data]** field of a column).
@@ -129,13 +156,14 @@ The decision policy code is added. You can now use attributes from the returned 
 
 >[!NOTE]
 >
->For code-based experience, email and direct mail channels, repeat this sequence once per decision item you want returned. For example, if you chose to return 2 items when [creating the decision](create-decision-policy.md), repeat the sequence twice. For SMS and Push channels, only one decision item can be returned.
+>For code-based experience, web, email and direct mail channels, repeat this sequence once per decision item you want returned. For example, if you chose to return 2 items when [creating the decision](create-decision-policy.md), repeat the sequence twice. For Mobile and Push channels, only one decision item can be returned.
 
 ## Personalize with decision item attributes {#attributes}
 
 After you've added the code for a decision policy in your content, all attributes from the returned decision items become available for personalization. [Learn how to work with personalization](../personalization/personalize.md).
 
 Attributes are stored in the "Offers" [catalog schema](catalogs.md). They display in the following folders from the personalization editor:
+
 * **Custom attributes**: `_\<imsOrg\>` folder 
 * **Standard attributes**: `_experience` folder
 
@@ -145,7 +173,7 @@ Decision item attributes and contextual attributes are not supported by default 
 
 To add an attribute, click the **`+`** icon next to the attribute. You can add as many attributes as needed. You can also include other personalization attributes, such as profile data.
 
-* For **Email**, **Code-based**, and **Direct Mail** channels, wrap the attributes within the `#each` loop using square brackets `[ ]`, and add a comma before the closing `/each` tag.
+* For **Email**, **Web**, **Code-based**, and **Direct Mail** channels, wrap the attributes within the `#each` loop using square brackets `[ ]`, and add a comma before the closing `/each` tag.
 
    +++See example
 
@@ -153,7 +181,7 @@ To add an attribute, click the **`+`** icon next to the attribute. You can add a
 
    +++
 
-* For **SMS** and **Push** channels, make sure you insert attributes after the syntax code for the decision policy. This syntax should always be kept at line 1.
+* For **Mobile** and **Push** channels, make sure you insert attributes after the syntax code for the decision policy. This syntax should always be kept at line 1.
 
    +++See example
 
@@ -162,7 +190,7 @@ To add an attribute, click the **`+`** icon next to the attribute. You can add a
    +++
 
    >[!NOTE]
-   >If you insert an image asset attribute in SMS or Push content (for example, in the title or body), the attribute value displays as a URL. The image itself is not rendered in those fields.
+   >If you insert an image asset attribute in Mobile or Push content (for example, in the title or body), the attribute value displays as a URL. The image itself is not rendered in those fields.
 
 * To enable decision item tracking, add the `trackingToken` attribute: `trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
 

@@ -8,28 +8,8 @@ TQID: https://experienceleague.adobe.com/h5mONinNhfTwzB1Rk-5xbvFQZTGVhbJnyhEYHzb
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
-feature_v2:
-  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
-    internal-label: Journey management
-  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
-    internal-label: Administration
-  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
-    internal-label: Communication channels
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
-subfeature_v2:
-  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
-    internal-label: Audiences
-  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
-    internal-label: Access control
-  - id: c41e8697-e629-4c38-96b3-564faaa17acf
-    internal-label: Dynamic content
-  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
-    internal-label: Overview
+feature_v2: []
+subfeature_v2: []
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -56,7 +36,7 @@ topic_v2:
 ---
 # Adobe Journey Optimizer Help{#section-overview}
 
-Adobe Journey Optimizer empowers teams to design and deliver seamless, personalized customer experiences across channels like email, SMS, and more. By combining advanced tools for campaign orchestration, data management, and decision-making, it helps you create journeys that adapt to customer needs in real time. This documentation offers a roadmap for mastering the platform, from exploring its latest features and integrations to learning how to manage audiences, configure journeys, and analyze performance. Whether you're a marketer, data analyst, or campaign manager, you'll find step-by-step guides, best practices, and resources tailored to help you achieve your goals with confidence.
+Adobe Journey Optimizer empowers teams to design and deliver seamless, personalized customer experiences across channels like email, mobile message, and more. By combining advanced tools for campaign orchestration, data management, and decision-making, it helps you create journeys that adapt to customer needs in real time. This documentation offers a roadmap for mastering the platform, from exploring its latest features and integrations to learning how to manage audiences, configure journeys, and analyze performance. Whether you're a marketer, data analyst, or campaign manager, you'll find step-by-step guides, best practices, and resources tailored to help you achieve your goals with confidence.
 
 ## Adobe Journey Optimizer Help
 
@@ -108,7 +88,7 @@ Learn how to prioritize and manage communication conflicts across campaigns and 
 ## Additional Resources
 
 - **[Testing, Validation, and Approval](test-landing-page.md)** - Test and approve your content, journeys, and campaigns to ensure quality and accuracy before deployment.
-- **[Communication Channels](../using/channels/gs-channels.md)** - Configure and manage email, SMS, push notifications, and other channels for personalized customer interactions.
+- **[Communication Channels](../using/channels/gs-channels.md)** - Configure and manage email, mobile messages, push notifications, and other channels for personalized customer interactions.
 - **[Audiences, Profiles, and Identities](audiences-profiles-identities-landing-page.md)** - Manage audiences, profiles, and identities to enable effective targeting and personalization.
 - **[Comprehensive Reporting](reporting-landing-page.md)** - Analyze and optimize journeys, campaigns, and channels with advanced reporting features.
 - **[Decision Capabilities](decisioning-landing-page.md)** - Leverage decisioning tools to create and manage personalized offers and optimize marketing workflows.
@@ -123,7 +103,7 @@ Learn how to prioritize and manage communication conflicts across campaigns and 
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Adobe Journey Optimizer</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Product description</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Security overview (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis" target="_blank">APIs reference</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html" target="_blank">Journey Optimizer Schema Dictionary</a>
+<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Product description</a> - <a href="https://developer.adobe.com/journey-optimizer-apis" target="_blank">APIs reference</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html" target="_blank">Journey Optimizer Schema Dictionary</a>
 
 </td>
 <td><strong>Adobe Experience Platform</strong><br/>

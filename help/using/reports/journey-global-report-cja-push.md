@@ -8,15 +8,17 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6d4b7669-7852-42f0-9347-399a3994011f
-TQID: https://experienceleague.adobe.com/rvjOY50CuIvkgBk4BEL5bGrXwpFWaBHcbT80NUOkXyw
+TQID: 'https://experienceleague.adobe.com/rvjOY50CuIvkgBk4BEL5bGrXwpFWaBHcbT80NUOkXyw'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a9f73820-6899-47c2-a597-3fec28ab756a
-    internal-label: Reporting
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 subfeature_v2:
   - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
     internal-label: Performance monitoring
@@ -60,7 +62,7 @@ The **[!UICONTROL Sending Statistics]** table helps you understand how your push
 
 +++ Learn more about Sending Statistics metrics
 
-* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your SMS messages.
+* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your Mobile messages.
 
 * **[!UICONTROL Targeted]**: Number of profiles that qualified for the audience before exclusions, suppressions, or consent removals were applied. In journeys with re-entrance enabled, a profile may be targeted multiple times.
 

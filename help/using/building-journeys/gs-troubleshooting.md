@@ -11,7 +11,7 @@ hide: true
 keywords: troubleshoot, troubleshooting, journey, check, errors
 exl-id: d255e9e4-301a-444a-86d3-97e0df4d3a49
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/2DTpTGcdmuFoajmHTUKGLK8zN2nfQp98tTc3FWtfI80
+TQID: 'https://experienceleague.adobe.com/2DTpTGcdmuFoajmHTUKGLK8zN2nfQp98tTc3FWtfI80'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
     internal-label: Custom actions

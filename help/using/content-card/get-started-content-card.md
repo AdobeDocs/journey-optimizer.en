@@ -6,7 +6,7 @@ feature: Content Cards
 role: User
 level: Beginner
 exl-id: 64f6bd0e-f910-469b-b089-570668d4c4f2
-TQID: https://experienceleague.adobe.com/z3r5z9-AxswpuG4whRbbpkyvqONUyuyU3xOsY81p5Cw
+TQID: 'https://experienceleague.adobe.com/z3r5z9-AxswpuG4whRbbpkyvqONUyuyU3xOsY81p5Cw'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -17,15 +17,15 @@ feature_v2:
     internal-label: Content management
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: bc543dba-f0db-4234-b5da-877a5c1664e2
     internal-label: Content cards
-  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
-    internal-label: In App channel
-  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
-    internal-label: Mobile SDK
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
+    internal-label: In App channel
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -99,3 +99,4 @@ Content cards are meant for content users can view at their own pace, so they ar
 * **[Content card reporting](content-card-report.md)** - Track and analyze content card performance with detailed metrics and insights.
 * **[Content card tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/content-cards/create-content-cards){target="_blank"}** - Explore step-by-step video tutorials on content card features and best practices.
 
+{{$include /help/_includes/do-not-localize/content-card/ai-augmented-get-started-content-card.md}}

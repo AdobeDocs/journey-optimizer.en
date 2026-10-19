@@ -1,0 +1,53 @@
+---
+title: AI Knowledge Reference
+---
+# AI Knowledge Reference
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how to send a LINE message from a journey, by adding an Action activity with the LINE channel selected, or from a campaign, and build personalized LINE content, including text, stickers, images, videos, locations, templates, and Flex Messages, by editing the JSON content in the personalization editor.
+
+**Intents:**
+
+* Add an Action activity with the LINE channel to a journey, or create a campaign with the LINE channel
+* Choose or create a LINE configuration for the channel
+* Define LINE content across the supported message types
+* Edit the JSON content and add personalization and dynamic content in the personalization editor
+* Preview and simulate the LINE message before sending
+
+**Glossary:**
+
+* **LINE channel**: The channel selected in the Action activity of a journey, or in a campaign, to deliver a LINE message *(product-specific)*
+* **Flex Messages**: JSON-based LINE messages that allow complex layouts with rich content *(product-specific)*
+* **Stickers**: LINE's native stickers that can be incorporated into a message *(product-specific)*
+* **Edit content**: The button used to start designing and configuring the content of the LINE message *(product-specific)*
+* **Simulate content**: The option used to preview the LINE message content and its personalized content *(product-specific)*
+
+**Guardrails:**
+
+* LINE message types can be configured by editing the JSON content directly.
+* The configuration field is pre-filled, by default, with the last configuration used for that channel by the user.
+* The LINE message is sent to the audience once you have performed your tests and validated the content.
+* When creating a LINE campaign, the campaign type is either Scheduled - Marketing or API-triggered - Marketing/Transactional.
+* In the Action triggers menu, the Frequency of the LINE message can be Once, Daily, Weekly, or Month.
+
+**Terminology:**
+
+* Canonical name: LINE message — Acronym: n/a
+* Do not confuse: "Scheduled - Marketing" (executed immediately or on a specified date from the user interface) ≠ "API-triggered - Marketing/Transactional" (executed using an API call)
+* Do not confuse: "Edit content" (starts the configuration of the message content) ≠ "Edit code" (edits the JSON content)
+
+**FAQ:**
+
+* **Q: Which message types does LINE support in Journey Optimizer?** — Text, Stickers, Images, Videos, Locations, Templates, and Flex Messages.
+* **Q: How is LINE content configured?** — The message types are configured by editing the JSON content directly, and personalization and dynamic content are added in the personalization editor.
+* **Q: How can the LINE message be previewed before sending?** — Use Simulate content to preview the LINE message content and its personalized content.
+* **Q: Where can the impact of a sent LINE message be measured?** — Within the Campaign or Journey reports.
+
++++
+
+<!-- ai-section-version: 1 | source-hash: 0c2aaaed -->

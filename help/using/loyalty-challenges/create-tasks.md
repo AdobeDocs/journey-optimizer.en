@@ -8,10 +8,31 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c1e49173-69cc-4729-9f9a-afea2ccff3fa
-feature_v2: []
-subfeature_v2: []
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Create tasks {#create-tasks}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create reusable loyalty tasks, configure Purchase, Spend, and Custom event activities, and define task attributes, eligibility, and completion requirements.
+
+>[!ENDSHADEBOX]
 
 Tasks define the specific actions or milestones that customers must complete to earn rewards in a loyalty challenge. You can configure purchase and spend tasks, or **[!UICONTROL Custom event]** tasks that track Adobe Experience Platform experience events your organization already captures.
 
@@ -50,7 +71,7 @@ Select the type of activity that customers must perform to complete this task:
 
 * **[!UICONTROL Purchase]**: Customers must purchase one or more items to complete this task
 * **[!UICONTROL Spend]**: Customers must spend a specified amount to complete this task
-* **[!UICONTROL Custom event]**: Customers must perform an activity represented by an Adobe Experience Platform experience event. For example, a hotel check-in, mobile app action, or review submission. The underlying event must already be captured in Experience Platform and mapped through an event definition in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+* **[!UICONTROL Custom event]**: Customers must perform an activity represented by an Adobe Experience Platform experience event. For example, a hotel check-in, mobile app action, or review submission. The underlying event must already be captured in Experience Platform and mapped through an event mapping in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure event mappings](loyalty-admin.md#event-mappings)
 
 To select an activity, click the **+** icon and select the customer activity that best aligns with your outcome goals. Each activity type has specific configurable attributes to further define and shape the task requirements.
 ![](assets/task-create-activity.png)
@@ -86,7 +107,7 @@ Available attributes for **Spend** activities:
 
 Available attributes for **[!UICONTROL Custom event]** activities:
 
-* **[!UICONTROL Custom event values]**: Enter the values for the custom event that customers must complete. Use a comma to separate each value. These values must match event definitions configured in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+* **[!UICONTROL Custom event values]**: Enter the values for the custom event that customers must complete. Use a comma to separate each value. These values must match event mappings configured in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure event mappings](loyalty-admin.md#event-mappings)
 
 ![](assets/task-create-custom.png)
 

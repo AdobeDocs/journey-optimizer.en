@@ -8,7 +8,7 @@ role: Developer
 level: Beginner
 keywords: external, API, optimizer, capping
 exl-id: b837145b-1727-43c0-a0e2-bf0e8a35347c
-TQID: https://experienceleague.adobe.com/kLKICq4PoIwuXI2SevFoRUTOPdqrRWI35udtHoEvFPc
+TQID: 'https://experienceleague.adobe.com/kLKICq4PoIwuXI2SevFoRUTOPdqrRWI35udtHoEvFPc'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -17,6 +17,10 @@ feature_v2:
     internal-label: Configuration
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: 629f438c-ea49-5ade-aa39-c2a256ff3036
+    internal-label: API
 subfeature_v2:
   - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
     internal-label: Sandboxes

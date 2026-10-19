@@ -29,15 +29,16 @@ nudge: yes
 + Get started {#get-started}
   + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
   + [Onboarding hub](using/start/onboarding-hub.md)
+  + [Work with AI](using/start/ai-features.md)
   + [Migrate content and journeys](using/start/migrate-content-and-journeys.md)
   + Essentials {#essentials}
     + [What is Journey Optimizer](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
-    + [AI & intelligent features](using/start/ai-features.md)
-    + [Journey Optimizer skills in CX Coworker](using/start/ajo-coworker-skills.md)
     + [Key terminology](using/start/terminology.md)
     + [Start from your goal](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
+    + [Journeys vs campaigns](using/start/journeys-vs-campaigns.md)
+    + {hide-from-toc} [Journeys vs Campaigns - 2](using/start/journeys-vs-campaigns-v2.md)
     + {hide-from-toc} [Packages and capabilities](using/start/ajo-packages.md)
     + {hide-from-toc} [Feature availability](using/start/ajo-features-availability.md)
   + Get started by role {#by-role}
@@ -49,15 +50,14 @@ nudge: yes
   + Work efficiently {#work-efficiently}
     + [Navigate the interface](using/start/user-interface.md)
     + [Search, filter & organize](using/start/search-filter-categorize.md)
-    + [Troubleshooting FAQ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/monitor/troubleshooting/troubleshooting)
     + [Accessibility](using/start/accessibility.md)
-    + [Journeys vs campaigns](using/start/journeys-vs-campaigns.md)
-    + {hide-from-toc} [Journeys vs Campaigns - 2](using/start/journeys-vs-campaigns-v2.md)
+    + [Troubleshooting FAQ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/monitor/troubleshooting/troubleshooting)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
   + {hide-from-toc} [Journey Get Started Guide](using/building-journeys/journey-get-started.md)
   + {hide-from-toc} [Journey types: choose the right one-2](using/building-journeys/journey-types-selection-v2.md)
   + [Journey Orchestration FAQ](using/building-journeys/journey-faq.md)
+  + [Coworker for journeys](using/building-journeys/journeys-coworker-skills.md)
   + Create a journey {#create-journey}
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
     + [Create your first journey](using/building-journeys/journey-gs.md)
@@ -100,6 +100,7 @@ nudge: yes
     + [Journey Fragments](using/building-journeys/journey-fragments.md)
     + [Content decision](using/building-journeys/content-decision.md)
     + [Dataset lookup](using/building-journeys/dataset-lookup.md)
+    + [Stop action](using/building-journeys/stop-action.md)
     + [Action](using/building-journeys/journey-action.md)
     + [Jump](using/building-journeys/jump.md)
     + [Update profile](using/building-journeys/update-profiles.md)
@@ -144,11 +145,13 @@ nudge: yes
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Loyalty challenges {#loyalty-challenges}
   + [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
+  + [Interactive demo](using/loyalty-challenges/loyalty-challenges-demo.md)
+  + [Coworker for loyalty](using/loyalty-challenges/loyalty-coworker-skills.md)
   + Create and manage challenges {#create-manage-challenges}
     + [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
     + [Create challenges](using/loyalty-challenges/create-challenges.md)
     + [Create tasks](using/loyalty-challenges/create-tasks.md)
-    + [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
+    + [Explore loyalty performance](using/loyalty-challenges/loyalty-performance.md)
   + Configure and integrate {#configure-integrate-loyalty}
     + [Configure loyalty challenges](using/loyalty-challenges/loyalty-admin.md)
     + [Reward Definition guide](using/loyalty-challenges/reward-definition-guide.md)
@@ -213,6 +216,7 @@ nudge: yes
     + Orchestrated campaigns activities {#design-campaigns}
       + [Orchestrated campaigns activities](/help/rp_landing_pages/design-campaigns-landing-page.md)
       + [Get started with activities](using/orchestrated/activities/about-activities.md)
+      + [Alert](using/orchestrated/activities/alert.md)
       + [And-join](using/orchestrated/activities/and-join.md)
       + [Build audience](using/orchestrated/activities/build-audience.md)
       + [Change dimension](using/orchestrated/activities/change-dimension.md)
@@ -263,9 +267,11 @@ nudge: yes
     + [Preview using test profiles](using/content-management/preview.md)
     + [Send proofs using test profile data](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
+    + {hide-from-toc} [Simulate inbound experiences](using/test-approve/simulate-inbound-experiences.md)
     + [Simulate content variations (classic experience)](using/test-approve/simulate-sample-input.md)
     + [Simulate content variations (new experience)](using/test-approve/simulate-content-variations.md)
     + [Email Spam report](using/content-management/spam-report.md)
+    + [Validate URLs in your content](using/content-management/url-validation.md)
   + Approve journeys & campaigns {#approve}
     + [Approve journeys & campaigns](/help/rp_landing_pages/approve-landing-page.md)
     + [Get started with approvals](using/test-approve/gs-approval.md)
@@ -273,24 +279,42 @@ nudge: yes
     + [Request approval](using/test-approve/request-approval.md)
     + [Approve a request](using/test-approve/review-approve-request.md)
 + Monitor & troubleshoot {#monitor}
-  + [Get started with monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
+  + [Track, monitor and troubleshoot](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
   + [Tracking in Journey Optimizer](using/start/get-started-tracking.md)
   + Email deliverability {#deliverability}
     + [Get started with deliverability](using/reports/deliverability.md)
     + [Understand the suppression list](using/reports/suppression-list.md)
     + [New DMARC requirement](using/configuration/dmarc-record-update.md)
-  + Monitor alerts & error codes {#monitor-alerts-errors}
-    + [System alerts](using/reports/alerts.md)
-    + [Error codes reference](using/building-journeys/error-codes-reference.md)
+  + [System alerts](using/reports/alerts.md)
   + Troubleshooting {#troubleshooting}
-    + [Troubleshooting FAQ](using/start/troubleshooting.md)
+    + [Troubleshooting overview](/help/rp_landing_pages/troubleshooting-overview-landing-page.md)
+    + [Error codes reference](using/building-journeys/error-codes-reference.md)
     + Journeys troubleshooting {#troubleshoot-journey}
       + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
+      + [Journey validation errors](using/building-journeys/journey-validation-errors.md)
       + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
       + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
       + [Troubleshoot custom actions](using/action/troubleshoot-custom-action.md)
+    + Campaigns troubleshooting {#troubleshoot-campaigns}
+      + [Campaign errors](using/campaigns/campaign-errors.md)
+      + [Orchestrated campaign errors](using/orchestrated/orchestrated-campaign-errors.md)
+      + [Relational schema and dataset errors](using/orchestrated/relational-schema-errors.md)
+      + [Audience composition errors](using/audience/audience-composition-errors.md)
+    + Content troubleshooting {#troubleshoot-content}
+      + [Content authoring errors](using/content-management/content-authoring-errors.md)
+      + [Fragments and AEM content errors](using/content-management/fragments-errors.md)
+      + [Multilingual content errors](using/content-management/multilingual-errors.md)
+      + [Landing page errors](using/landing-pages/landing-page-errors.md)
+      + [Proof and simulation errors](using/content-management/proof-simulation-errors.md)
+      + [Personalization errors](using/personalization/personalization-errors.md)
+    + Configuration troubleshooting {#troubleshoot-configuration}
+      + [Subdomain delegation and DNS errors](using/configuration/subdomain-delegation-errors.md)
+      + [IP warmup plan errors](using/configuration/ip-warmup-plan-errors.md)
+      + [Custom channel, inbound action, and reporting dataset errors](using/configuration/channel-reporting-errors.md)
+    + [Troubleshooting FAQ](using/start/troubleshooting.md)
 + Communication channels {#channels}
   + [Get started with communication channels](using/channels/gs-channels.md)
+  + {hide-from-toc} [Destinations channel](using/destinations/destinations.md)
   + Email channel {#email}
     + [Email channel](/help/rp_landing_pages/email-landing-page.md)
     + [Get started with emails](using/email/get-started-email.md)
@@ -329,6 +353,7 @@ nudge: yes
         + [Manage dark mode content](using/email/dark-mode.md)
       + [Create accessible content](using/email/accessible-content.md)
       + [Content check](using/email/content-check.md)
+      + [Collaborate on email content](using/email/email-collaboration.md)
     + Configure email channel {#configure-email}
       + {hide-from-toc} [Configure email channel](/help/rp_landing_pages/configure-email-landing-page.md)
       + [Get started with email configuration](using/email/get-started-email-config.md)
@@ -461,6 +486,7 @@ nudge: yes
     + Configure custom channels {#configure-custom-channel}
       + [Set up your custom channels](using/custom-channel/configure-custom-channel.md)
       + [Create a custom channel](using/custom-channel/create-custom-channel.md)
+      + [Configure OAuth 2.0 authentication](using/custom-channel/custom-channel-oauth2.md)
       + [Manage API credentials](using/custom-channel/custom-channel-api-credentials.md)
       + [Delegate a subdomain](using/custom-channel/custom-channel-subdomains.md)
       + [Create a channel configuration](using/custom-channel/custom-channel-configuration.md)
@@ -470,6 +496,7 @@ nudge: yes
     + [Monitor custom channels](using/custom-channel/monitor-custom-channel.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
+  + [Coworker for content management](using/content-management/content-management-coworker-skills.md)
   + Personalization {#personalization}
     + [Personalization](/help/rp_landing_pages/personalization-landing-page.md)
     + [Get started with personalization](using/personalization/personalize.md)
@@ -557,7 +584,9 @@ nudge: yes
     + [Integrate with Intelligent Services](using/integrations/intelligent-services.md)
     + Integrations {#integrations}
       + [Work with Integrations](using/integrations/integrations.md)
-      + [Using External integrations for personalization](using/integrations/integrations-personalization.md)
+      + [Create Standard integrations](using/integrations/integrations-create.md)
+      + [Create Browsing integrations](using/integrations/integrations-browsing.md)
+      + [Use External integrations for personalization](using/integrations/integrations-personalization.md)
       + [FAQ](using/integrations/vendor-integration-faq.md)
       + Sample Vendors {#vendors}
         + [Get started with Vendors integration](using/integrations/vendor-integration-gs.md)
@@ -650,7 +679,7 @@ nudge: yes
       + [In-app campaign report](using/reports/campaign-global-report-cja-inapp.md)
       + {hide-from-toc} [Live activity campaign report](using/reports/campaign-global-report-cja-activity.md)
       + [Push notification campaign report](using/reports/campaign-global-report-cja-push.md)
-      + [SMS campaign report](using/reports/campaign-global-report-cja-sms.md)
+      + [Mobile campaign report](using/reports/campaign-global-report-cja-sms.md)
       + [Web campaign report](using/reports/campaign-global-report-cja-web.md)
     + Journey reports {#journey-reporting}
       + [Journey reports](/help/rp_landing_pages/journey-reporting-landing-page.md)
@@ -686,6 +715,7 @@ nudge: yes
   + Decisioning {#experience-decisioning}
     + [Decisioning](/help/rp_landing_pages/experience-decisioning-landing-page.md)
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
+    + [Coworker for Decisioning](using/experience-decisioning/experience-decisioning-coworker-skills.md)
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
     + [Decisioning FAQ](using/experience-decisioning/decisioning-faq.md)
     + Migrate to Decisioning {#migrate-to-decisioning}
@@ -936,17 +966,17 @@ nudge: yes
     + [Built-in schemas >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
   + [Use Adobe Experience Platform data](using/data/lookup-aep-data.md)
   + [Queries](using/data/get-started-queries.md)
+  + Monitoring {#monitoring}
+    + [Monitor inbound data with Edge](using/data/monitoring.md)
+    + [Monitor data ingestion](using/data/monitor-data-ingestion.md)
 + Channel configuration {#configuration}
-  + [Channel configuration](/help/rp_landing_pages/configuration-landing-page.md)
   + [Get started with channels configuration](using/configuration/get-started-configuration.md)
   + [Set up channel configurations](using/configuration/channel-surfaces.md)
-  + [Export message content](using/configuration/message-export.md)
   + {hide-from-toc} [AJO Message Export schema](using/configuration/message-export-schema.md)
   + Guided channel setup {#guided-setup}
     + [Get started with Guided channel setup](using/configuration/set-mobile-config.md)
     + [Create a channel set up](using/configuration/create-channel-set-up.md)
   + Delegate email subdomains {#delegate-subdomains}
-    + [Delegate email subdomains](/help/rp_landing_pages/delegate-subdomains-landing-page.md)
     + [Get started with subdomain delegation](using/configuration/about-subdomain-delegation.md)
     + [Delegate a subdomain](using/configuration/delegate-subdomain.md)
     + [Set up a custom subdomain](using/configuration/delegate-custom-subdomain.md)
@@ -963,14 +993,16 @@ nudge: yes
     + [Run the IP warmup plan](using/configuration/ip-warmup-execution.md)
     + {hide-from-toc} [IP warmup plan files](using/configuration/ip-warmup-plan-files.md)
   + Monitor email addresses {#monitor-reputation}
-    + [Monitor email addresses](/help/rp_landing_pages/monitor-reputation-landing-page.md)
     + {hide-from-toc} [Email error types](using/configuration/email-error-types.md)
     + [Suppression list](using/configuration/manage-suppression-list.md)
     + [Retries](using/configuration/retries.md)
     + [Allowed list](using/configuration/allow-list.md)
-  + [Use seed lists](using/configuration/seed-lists.md)
-  + [Support for email archiving](using/configuration/archiving-support.md)
+  + Archiving {#archiving}
+    + [Get started with message archiving](using/configuration/archiving-overview.md)
+    + [Archive emails using BCC](using/configuration/archiving-support.md)
+    + [Export message content](using/configuration/message-export.md)
   + [Add a CC field to emails](using/configuration/cc-email-field.md)
+  + [Use seed lists](using/configuration/seed-lists.md)
   + [Manage execution fields](using/configuration/primary-email-addresses.md)
   + [Create feedback webhooks](using/configuration/feedback-webhooks.md)
   + [Manage allowed IPs](using/configuration/waf-ip-allowlist.md)
@@ -1037,3 +1069,4 @@ nudge: yes
     + [Manage your customers' preferences](using/action/preference-center.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up & manage Customer Managed Keys](using/privacy/cmk.md)
+

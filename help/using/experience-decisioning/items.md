@@ -7,14 +7,25 @@ role: User
 level: Intermediate
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
 version: Journey Orchestration
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
     internal-label: Decision capabilities
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
     internal-label: Decisioning API
   - id: eb547372-2a95-4d13-b0fd-f720c9895880
     internal-label: Edge Decisioning
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Create your first decision item {#items}
 
@@ -80,7 +91,7 @@ Start by defining the decision item's standard and custom attributes :
 
 1. Add fragments to your decision item to enrich its content. Two types of fragments are supported:
 
-    * **Journey Optimizer content fragments** — Use reusable expression fragments created in Journey Optimizer to display different contents depending on context, for example across several mobile device models. You can leverage these fragments in your decision policies across all channels where Decisioning is available (code-based experience, Email, Push, SMS, and journeys). [Learn how](fragments-decision-policies.md#ajo-fragments)
+    * **Journey Optimizer content fragments** — Use reusable expression fragments created in Journey Optimizer to display different contents depending on context, for example across several mobile device models. You can leverage these fragments in your decision policies across all channels where Decisioning is available (code-based experience, Email, Push, Mobile message, and journeys). [Learn how](fragments-decision-policies.md#ajo-fragments)
 
         When using these fragments in your decision policies, you can make a fragment optional so that it is skipped if temporarily unavailable on Edge. [Learn how](fragments-decision-policies.md#temporary-unavailable-fragments)
 
@@ -89,6 +100,8 @@ Start by defining the decision item's standard and custom attributes :
         >[!AVAILABILITY]
         >
         >This feature is available for channels with Decisioning support.
+        >
+        >AEM Content Fragments in Decisioning are available to customers integrating Adobe Experience Manager **as a Cloud Service** or **Managed Services** with Adobe Journey Optimizer. [Learn more](../integrations/aem-fragments-gs.md)
 
         For prerequisites and guardrails, refer to [Use AEM Content Fragments with Experience Decisioning](../integrations/aem-fragments.md#aem-decisioning).
 
@@ -136,7 +149,7 @@ When you select audiences or decision rules, you can see information on the esti
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_capping_expression"
 >title="Expression"
->abstract="Rather that using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.<br/><br/>Capping rule **expressions** are currently available as a Limited Availability to all users. They are supported only for the **[!UICONTROL In total]** capping type."
+>abstract="Rather than using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.<br/><br/>Capping rule **expressions** are currently available as a Limited Availability to all users. They are supported only for the **[!UICONTROL In total]** capping type."
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_capping_scope"
@@ -195,9 +208,9 @@ To set capping rules for the decision item, follow the steps detailed below.
     
         >[!CAUTION]
         >
-        >**Specific placement** capping is only supported for the **Web** and **Email** channels. It is not available for Code-based experience, SMS, Push, or Direct mail channels.
+        >**Specific placement** capping is only supported for the **Web** and **Email** channels. It is not available for Code-based experience, Mobile message, Push, or Direct mail channels.
     
-        Click **[!UICONTROL Select placements]** to pick which placements to cap. Other placements pass through uncapped. For example, if you select the Hero Banner placement with a cap of 3 impressions per day, the offer stops appearing in the Hero Banner after 3 impressions but remains eligible in all other placements.
+        Click **[!UICONTROL Select placement]** to pick which placement to cap. Other placements pass through uncapped. For example, if you select the Hero Banner placement with a cap of 3 impressions per day, the offer stops appearing in the Hero Banner after 3 impressions but remains eligible in all other placements.
 
         ![Specific placement capping scope selected, showing the Select placements button and selected placement tags](assets/item-capping-scope-specific.png){width="75%"}
 
@@ -223,7 +236,7 @@ To set capping rules for the decision item, follow the steps detailed below.
 
     +++Expression threshold
 
-    Rather that using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.
+    Rather than using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.
 
     For example, a marketer may decide to add a multiplier to adjust exposure. For instance, they could multiply the available inventory by two, allowing the offer to be shown to twice as many customers as units available. This approach anticipates that not all customers will convert, ensuring better reach without overselling.
     

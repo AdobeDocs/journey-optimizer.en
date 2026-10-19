@@ -8,20 +8,22 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
-TQID: https://experienceleague.adobe.com/kqNGPnCDU-yeMvOX-L55POHs1-vmQCEcq4Psky8wSfs
+TQID: 'https://experienceleague.adobe.com/kqNGPnCDU-yeMvOX-L55POHs1-vmQCEcq4Psky8wSfs'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: 9d1244d2-eb0a-5a0e-8b65-f12fd076b68a
+    internal-label: Test Profiles
+  - id: d2971708-e780-44bb-9e2a-72f139796afd
+    internal-label: Customer
 subfeature_v2:
-  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
-    internal-label: Audience Qualification events
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences
-  - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
-    internal-label: Audience guardrails
+  - id: ef9a83ca-eefa-47cf-aa34-f1a34715583a
+    internal-label: Profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -276,3 +278,5 @@ curl -X POST \
 Learn how to create test profiles.
 
 >[!VIDEO](https://video.tv.adobe.com/v/334236?quality=12)
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-creating-test-profiles.md}}

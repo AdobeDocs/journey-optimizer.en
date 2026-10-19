@@ -7,12 +7,23 @@ feature: SMS
 topic: Content Management
 role: User
 level: Beginner
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: 6eb7d9ad-3477-58b3-957a-080ef7738a30
+    internal-label: SMS
 subfeature_v2:
   - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
     internal-label: SMS and MMS channel
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Design a Mobile message {#design-mobile}
 
@@ -34,8 +45,8 @@ Every RCS message requires a **[!UICONTROL Default fallback text]**: a plain-tex
 
 Keep the following in mind when writing fallback text:
 
-* **Keep it concise.** SMS messages are limited to 160 characters per segment; longer messages are split into multiple parts and may incur additional charges.
-* **Include key URLs.** If your RCS message links to a URL via action buttons, add a shortened URL to the fallback text so SMS profiles can still reach the destination.
+* **Keep it concise.** Mobile messages are limited to 160 characters per segment; longer messages are split into multiple parts and may incur additional charges.
+* **Include key URLs.** If your RCS message links to a URL via action buttons, add a shortened URL to the fallback text so Mobile profiles can still reach the destination.
 * **Avoid RCS-only references.** Do not mention visuals, carousels, or interactive features that are not available in plain SMS.
 * **Personalization is supported.** You can use personalization tokens in fallback text to keep the message feel consistent across both versions.
 
@@ -222,3 +233,6 @@ To create MMS content, follow these steps:
 
 Once you have performed your tests and validated the content, you can send your Mobile message to your audience. These steps are detailed on [this page](send-mobile-message.md)
 
+If your SMS, MMS or RCS content returns an error code, see [Content authoring errors](../content-management/content-authoring-errors.md).
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-design-mobile.md}}

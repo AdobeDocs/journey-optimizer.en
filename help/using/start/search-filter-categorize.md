@@ -8,16 +8,20 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6151aea2-6a34-4000-ba48-161efe4d94d7
-TQID: https://experienceleague.adobe.com/ViOHdq6ypY2xbYrPrEsYKF4-5CyQV9izbtzhGGOzsF0
+TQID: 'https://experienceleague.adobe.com/ViOHdq6ypY2xbYrPrEsYKF4-5CyQV9izbtzhGGOzsF0'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
+  - id: c0d6de2b-37ee-41f0-b9fa-6ffe628e8c5e
+    internal-label: Search, filter and organize
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
     internal-label: Overview
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -38,7 +42,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-As your Adobe Journey Optimizer projects grow, finding and organizing content becomes essential for efficient work. This page shows you how to quickly locate journeys, campaigns, and assets using universal search; filter lists to focus on specific items; and organize your work with tags and categories. These tools help you navigate large volumes of content, maintain consistency across teams, and streamline your daily workflows.
+As your Adobe Journey Optimizer projects grow, finding and organizing content becomes essential for efficient work. This page shows you how to quickly locate journeys, campaigns, and assets using universal search; filter lists to focus on specific items; and organize your work with tags, folders, and categories. These tools help you navigate large volumes of content, maintain consistency across teams, and streamline your daily workflows.
 
 ## Search {#unified-search}
 
@@ -58,7 +62,7 @@ In most of the lists, use the search bar to find specific items, and define filt
 
 Filters can be accessed by clicking on the filter icon on the top left of a list. The filter menu allows you to filter the displayed elements according to different criteria: you can choose to display only elements of a certain type or status, the ones you created, or the ones modified in the last 30 days. Options differ depending on the context.
 
-Additionally, you can use Unified tags to filter a list depending on the tags assigned to an object. For now, tags are available for journeys and campaigns. [Learn how to work with tags](#tags)
+Additionally, you can use Unified tags to filter a list depending on the tags assigned to an object. For now, tags are available for journeys and campaigns. You can also [organize journeys and campaigns with folders](#organize-folders).
 
 >[!NOTE]
 >
@@ -68,6 +72,38 @@ In the lists, you can perform basic actions on each element. For example, you ca
 
 ![](assets/journey4.png)
 
+## Organize journeys and campaigns with folders {#organize-folders}
+
+Folders complement tags and list filters by grouping journeys and campaigns in the interface.
+
+>[!AVAILABILITY]
+>
+>Folders for journeys and campaigns are in limited availability. For current release status, see the [Journey Optimizer release cycle](../rn/releases.md).
+>
+>For campaigns, folders are available for Action and API-triggered campaigns only (not for Orchestrated campaigns).
+
+### Access and manage folders
+
+To access folders, access the campaigns or journeys inventory and select the **[!UICONTROL Show folders]** icon. For journeys, you can also access folders from the **[!UICONTROL Folders view]** tab.
+
+![](../campaigns/assets/folders-view-campaigns.png)
+
+When a folder is selected, the list is filtered to that folder. To return to the full inventory list, select **[!UICONTROL All journeys]** or **[!UICONTROL All campaigns]**
+
+![](assets/folders-all-campaigns.png)
+
+To create a new folder, access the folders view and select  **[!UICONTROL Create folder]**. To rename, delete, or move a folder, click the ![image showing the More actions button](../campaigns/assets/do-not-localize/rule-builder-icon-more.svg) button next to a folder and choose the desired operation.
+
+### Move journeys and campaigns to a folder
+
+To move a journey or campaign to a folder:
+
+1. Access the journey or campaign inventory and click the ![image showing the More actions button](../campaigns/assets/do-not-localize/rule-builder-icon-more.svg) button next to a journey or campaign name.
+1. Select **[!UICONTROL Move to folder]**.
+1. Choose an existing folder or create a new folder to move the object into it.
+
+    ![](assets/folder-move.png)
+    
 ## Bulk actions {#bulk-actions}
 
 In the **Campaigns**, **Fragments**, **Journeys**, and **Templates** lists, you can select multiple items at once using the checkboxes and apply operations to all of them from a bulk action bar that appears at the bottom of the screen.
@@ -142,7 +178,7 @@ A filter is also available to only display objects with certain tags.
 
 ![](assets/tags2.png)
 
-You can add or remove tags from any type of journey or campaign (live, draft, etc). To do this, click the **[!UICONTROL More actions]** icon next to the object, and select **[!UICONTROL Edit tags]**. 
+You can add or remove tags from any type of journey or campaign (live, draft, etc). To do this, click the ![image showing the More actions button](../campaigns/assets/do-not-localize/rule-builder-icon-more.svg) button next to the object, and select **[!UICONTROL Edit tags]**. 
 
 ![](assets/tags3.png)
 
@@ -153,3 +189,5 @@ Administrators can delete tags and organize them by categories using the **[!UIC
 >[!NOTE]
 >
 > Tags created directly from the **[!UICONTROL Tags]** field in Journey Optimizer are automatically added to the built-in "Uncategorized" category.
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-search-filter-categorize.md}}

@@ -5,18 +5,35 @@ title: Troubleshooting
 description: Troubleshooting
 redpen-status: CREATED_||_2025-08-11_20-20-50
 exl-id: bf26ca1f-e239-418e-8ce8-a891f3ba3416
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Track, monitor and troubleshoot {#section-overview}
 
 Effectively managing your customer journeys starts with comprehensive tracking, enabling proactive monitoring, insightful reporting, and efficient troubleshooting. Adobe Journey Optimizer provides a complete framework to capture customer interactions and system events, analyze performance metrics, and quickly resolve issues when they arise.
 
-**Track** customer interactions across all channels—emails, web, push, in-app, SMS, and more—capturing opens, clicks, conversions, and custom events that reveal how customers engage with your content.
+**Track** customer interactions across all channels—emails, web, push, in-app, mobile message, and more—capturing opens, clicks, conversions, and custom events that reveal how customers engage with your content.
 
 **Monitor** journey and campaign performance using real-time reports, system alerts, and deliverability metrics that help you identify trends, measure success, and catch potential issues early.
 
 **Troubleshoot** problems efficiently with detailed error codes, step-by-step execution logs, and targeted guidance for resolving journey failures, execution inconsistencies, or action-level problems.
 
 This page brings together essential resources to help you implement tracking, monitor journey health, access key reporting insights, and resolve issues efficiently across all stages of your customer journeys.
+
+## Find your issue
+
+Use the symptom that best matches your issue to go directly to the relevant troubleshooting guide:
+
+| If you are experiencing this issue | Start here |
+| --- | --- |
+| You cannot test or publish a journey | [Troubleshoot journey errors](../using/building-journeys/troubleshooting.md) |
+| Profiles do not enter or progress through a journey | [Troubleshoot journey execution](../using/building-journeys/troubleshooting-execution.md) |
+| An inbound experience is not displayed or continues after a profile exits | [Troubleshoot inbound actions](../using/building-journeys/troubleshooting-inbound.md) |
+| A custom action test or API call fails | [Troubleshoot custom actions](../using/action/troubleshoot-custom-action.md) |
+| You need to monitor live journeys and campaigns proactively | [Access and subscribe to system alerts](../using/reports/alerts.md) |
+| You have a Journey Optimizer error code | [View the error codes reference](../using/building-journeys/error-codes-reference.md) |
+| Emails are delivered but do not reach recipients' inboxes as expected | [Review deliverability guidance](../using/reports/deliverability.md) |
 
 ## Get started with tracking
 

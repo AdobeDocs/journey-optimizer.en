@@ -8,24 +8,28 @@ feature: SMS, Channel Configuration
 level: Intermediate
 keywords: SMS, subdomains, configuration
 exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
-TQID: https://experienceleague.adobe.com/8-zVIM8jOX2aNPSs2OWcjtG40u4aKfCHc6aroaaBFyQ
+TQID: 'https://experienceleague.adobe.com/8-zVIM8jOX2aNPSs2OWcjtG40u4aKfCHc6aroaaBFyQ'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: 6eb7d9ad-3477-58b3-957a-080ef7738a30
+    internal-label: SMS
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
-  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
-    internal-label: Get started
-  - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
-    internal-label: SMS and MMS channel
   - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
     internal-label: Subdomains
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -189,3 +193,5 @@ If the SMS subdomain points to a CNAME record, you can delete the CNAME DNS reco
 >A SMS subdomain can point to a CNAME record because it was either an [existing subdomain](#sms-use-existing-subdomain) delegated to Adobe using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-setup), or a [new SMS subdomain](#sms-configure-new-subdomain) that you configured.
 
 After your request is handled by Adobe, the undelegated domain is no longer displayed on the subdomain inventory page.
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-mobile-subdomains.md}}

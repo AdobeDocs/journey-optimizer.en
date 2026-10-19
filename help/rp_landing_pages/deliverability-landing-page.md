@@ -5,6 +5,9 @@ title: Email deliverability
 description: Email deliverability
 redpen-status: CREATED_||_2025-08-11_20-34-41
 exl-id: 1657152e-4a93-4664-a56f-3ea7f9e69098
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Email deliverability{#section-overview}
 

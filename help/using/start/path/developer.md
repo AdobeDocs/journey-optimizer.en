@@ -5,27 +5,24 @@ feature: Get Started
 role: Developer
 level: Intermediate
 exl-id: 5053dd4f-d050-415f-bc74-d6d061bdcbe1
-TQID: https://experienceleague.adobe.com/7fRI-CPkIeBAPjtXmDgFdyNKgB4WwEc01yKrGUXnc3U
+TQID: 'https://experienceleague.adobe.com/7fRI-CPkIeBAPjtXmDgFdyNKgB4WwEc01yKrGUXnc3U'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
-    internal-label: Integrations
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
-  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
-    internal-label: Action configuration
-  - id: d08afb72-92f6-4856-88e3-11ec34313c2f
-    internal-label: Event configuration
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
     internal-label: Data quality
@@ -392,3 +389,5 @@ Each section includes links to detailed technical documentation, code samples, a
 | Marketer | [Get started for marketers](marketer.md) |
 
 Back to [Roles and responsibilities overview](../quick-start.md) · Back to [Get started](../../../rp_landing_pages/get-started-landing-page.md)
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-path-developer.md}}

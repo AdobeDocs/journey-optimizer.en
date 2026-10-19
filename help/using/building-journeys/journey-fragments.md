@@ -9,8 +9,12 @@ role: User
 level: Intermediate
 keywords: fragments, journey, reuse, nodes, canvas, inventory, reusable
 version: Journey Orchestration
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
+    internal-label: Journey design
 ---
 
 # Journey Fragments {#journey-fragments}
@@ -197,7 +201,7 @@ A standard entry pattern — such as a [Read Audience](read-audience.md) node fo
 
 **Preferred channel**
 
-A fragment can evaluate a profile's preferred communication channel — email, push, or SMS — and route the profile accordingly. This logic can be reused across any journey involving outbound messaging, ensuring consistent channel preference management. The fragment can include the [Optimize](optimize.md) activity and all three channel branches.
+A fragment can evaluate a profile's preferred communication channel — email, push, or Mobile message — and route the profile accordingly. This logic can be reused across any journey involving outbound messaging, ensuring consistent channel preference management. The fragment can include the [Optimize](optimize.md) activity and all three channel branches.
 
 ![Preferred channel fragment example](assets/journey-fragments-uc-preferred-channel.png)
 

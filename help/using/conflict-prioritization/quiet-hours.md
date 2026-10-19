@@ -9,15 +9,17 @@ role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
 exl-id: defebd53-fa80-4720-acdc-0f41ceb00214
-TQID: https://experienceleague.adobe.com/I-zCSU3tp4n-i-EEkx118svN7R9bfUh0phCB-B5ZZ5Q
+TQID: 'https://experienceleague.adobe.com/I-zCSU3tp4n-i-EEkx118svN7R9bfUh0phCB-B5ZZ5Q'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
     internal-label: Conflict & prioritization
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: 736fce34-6237-51e6-acd3-371abb174feb
+    internal-label: Rules
 subfeature_v2:
   - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
     internal-label: Business rules
@@ -39,19 +41,19 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Define time-based exclusions for email, SMS, push, and WhatsApp so you can avoid messaging customers at the wrong times and respect their preferences and compliance requirements.
+**On this page:** Define time-based exclusions for email, mobile, push, and WhatsApp so you can avoid messaging customers at the wrong times and respect their preferences and compliance requirements.
 
 >[!ENDSHADEBOX]
 
 ## What are quiet hours 
 
-**Quiet hours** let you define time-based exclusions for **Email**, **SMS**, **Push**, and **WhatsApp** channels. They ensure that no messages are sent during specific periods of time, helping you respect customer preferences and compliance requirements.
+**Quiet hours** let you define time-based exclusions for **Email**, **Mobile message**, **Push**, and **WhatsApp** channels. They ensure that no messages are sent during specific periods of time, helping you respect customer preferences and compliance requirements.
 
 You can apply quiet hours through **rule sets**, which can be assigned to individual actions in campaigns or journeys for precise control.
 
 By streamlining these processes, you can enhance customer experience, save time, and ensure compliance with communication rules:
 
-* **Don’t wake up your customer** - *The right customer, right channel, right time* is the mantra of many marketers, so it makes sense that timing is a critical part of the customer journey. By setting a Quiet hours rule, brands have better control over when contacts are receiving messages, ensuring they are getting them when they’re more likely to take action on your message.
+* **Don't wake up your customer** - *The right customer, right channel, right time* is the mantra of many marketers, so it makes sense that timing is a critical part of the customer journey. By setting a Quiet hours rule, brands have better control over when contacts are receiving messages, ensuring they are getting them when they're more likely to take action on your message.
 * **Convenience** - Easily intercept communications across campaigns & journeys when you need to prevent an audience from receiving a message without needing to stop the entire journey or campaign. 
 * **Time Saving** - Manage exclusions in one place by creating a **time-based rule**, instead of adding multiple condition nodes with custom expressions.  
 <!--* **Extra Safeguard** - Benefit from an extra safeguard in case audience criteria or time-window configurations were incorrectly set, ensuring individuals are still excluded when they should be.--> 
@@ -60,7 +62,7 @@ By streamlining these processes, you can enhance customer experience, save time,
 
 ## Guardrails & limitations
 
-* **Supported channels** - Email, SMS, Push, and WhatsApp.
+* **Supported channels** - Email, Mobile message, Push, and WhatsApp.
 * **Propagation delay** – Updates to a quiet hours rule may take up to 12 hours to be applied to channel actions that already use that rule.
 * **High-volume latency** – In cases of high-volume communications, the system may take additional time to begin successfully enforcing quiet hour suppressions.
 
@@ -119,6 +121,10 @@ To set quiet hours, create a rule inside a custom rule set. [Learn how to create
 
          ![](assets/quiet-hours-weekly.png)
 
+         When a weekly period crosses midnight, the selected day is the day the period starts. For example, a Monday 9:00 PM–9:00 AM period covers Monday 9:00 PM through Tuesday 9:00 AM; it does not cover Monday 12:00 AM–9:00 AM.
+
+         Review weekly periods together to make sure they cover the intended days continuously, especially at midnight and at the start or end of the week. For example, a Saturday and Sunday all-day period combined with Monday–Friday 9:00 PM–9:00 AM periods leaves Monday 12:00 AM–9:00 AM uncovered. To extend quiet hours through Monday 9:00 AM, include Sunday in the 9:00 PM–9:00 AM period.
+
       * **[!UICONTROL Custom date]** - Choose specific dates in the calendar and a timeslot. You can also enforce the rule **[!UICONTROL All day]**.
 
          ![](assets/quiet-hours-custom.png)
@@ -151,7 +157,7 @@ If your rule is ready, activate it and complete the configuration of your rule s
 
 ## Apply Quiet hours to journeys and campaigns {#apply}
 
-Once your rule is saved and the rule set is activated, you can apply it to actions in journeys and campaigns. Supported channels: **Email, SMS, Push, WhatsApp**. Browse the tabs below for more details.
+Once your rule is saved and the rule set is activated, you can apply it to actions in journeys and campaigns. Supported channels: **Email, Mobile message, Push, WhatsApp**. Browse the tabs below for more details.
 
 >[!BEGINTABS]
 
@@ -215,3 +221,5 @@ Once your journey or campaigns has been activated and executed, you can view the
 Learn how to use the quiet hours feature in Adobe Journey Optimizer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3475851?quality=12)
+
+{{$include /help/_includes/do-not-localize/conflict-prioritization/ai-augmented-quiet-hours.md}}

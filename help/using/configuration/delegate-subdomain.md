@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: subdomain, delegation, domain, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
-TQID: https://experienceleague.adobe.com/DwAI8P5ACNyZ8IGCsMoLglZ-EK0HE99ZV0yap51EfKo
+TQID: 'https://experienceleague.adobe.com/DwAI8P5ACNyZ8IGCsMoLglZ-EK0HE99ZV0yap51EfKo'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,18 +20,23 @@ feature_v2:
     internal-label: Configuration
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
 subfeature_v2:
-  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
-    internal-label: Channel configurations
-  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
-    internal-label: Sandboxes
-  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
-    internal-label: Get started
   - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
     internal-label: Subdomains
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
@@ -73,7 +78,7 @@ The **full subdomain delegation** is the recommended method. Learn more about th
 
 When setting up subdomains in [!DNL Journey Optimizer], follow the guardrails and recommendations outlined below.
 
-* By default, [!DNL Journey Optimizer] allows you to delegate **a maximum of 10 subdomains**. However, depending on your license contract, you may be able to delegate up to 100 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
+* By default, [!DNL Journey Optimizer] allows you to delegate **a maximum of 10 subdomains**, combining email, landing page, and web channels. However, depending on your license contract, you may be able to delegate up to 3000 subdomains. Reach out to your Adobe contact to learn more about the number of subdomains you are entitled to. 
 
 * Parallel submission of subdomains is not supported in [!DNL Journey Optimizer]. If you try to submit a subdomain for delegation when another one is in the **[!UICONTROL Processing]** status, you get an error message.
 
@@ -143,21 +148,11 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
 
 1. Specify the name of the subdomain to delegate.
 
-    ![](assets/subdomain-name.png)
-
-<!--
- >[!CAUTION]
-    >
-    >Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
-    >
-    >You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage].
-
-    Capital letters are not allowed in subdomains. TBC by PM
--->
-
     >[!NOTE]
     >
     >After creating a new subdomain with your DNS provider, allow 24-48 hours for DNS propagation before attempting delegation to Adobe.
+
+    ![](assets/subdomain-name.png)
 
 1. Set up **[!UICONTROL DMARC record]** in the dedicated section. If the subdomain has an existing [DMARC record](dmarc-record.md), and if it is fetched by [!DNL Journey Optimizer], you can use the same values or change them as needed. If you do not add any values, the default values will be used. [Learn how to manage DMARC record](dmarc-record.md#set-up-dmarc)
 
@@ -214,21 +209,22 @@ To set up a subdomain using CNAMEs, follow the steps below.
 To complete your subdomain delegation, follow the steps below.
 
 1. Click **[!UICONTROL Submit]**.
-<!--
-    >[!NOTE]
+
+    >[!CAUTION]
     >
-    >If an error occurs while trying to submit a custom subdomain, refer to [this section](delegate-custom-subdomain.md#check-list).
--->
+    >Before submitting your subdomain, make sure no separate DNS zone or SOA record exists for it in any DNS hosting provider. An existing subdomain zone causes the delegation to fail. If one exists:
+    >
+    >* Remove the subdomain zone in your DNS hosting solution.
+    >* Configure NS records at the parent domain level, pointing to Adobe's nameservers.
+    >* Make sure these records resolve through all public DNS providers, including Google resolvers.
 
 1. You can create the records and submit the subdomain configuration later on using the **[!UICONTROL Save as draft]** button.
 
     >[!NOTE]
     >
-    >You will then be able to resume the subdomain delegation by opening it from the subdomains list.
+    >You can then resume the subdomain delegation by opening it from the subdomains list.
 
 1. The subdomain displays in the list with the **[!UICONTROL Processing]** status. For more on subdomains' statuses, refer to [this section](#access-delegated-subdomains).
-
-    <!--![](assets/subdomain-processing.png)-->
 
 1. Before being able to use that subdomain to send messages, make sure that all DNS records are properly created, then wait until Adobe performs the required checks, which can take up to 3 hours. [Learn more](#subdomain-validation).
 
@@ -255,6 +251,12 @@ These steps are performed by Adobe and can take **up to 3 hours**.
 1. **Create CDN domain**: if the domain is email.example.com, the CDN domain will be cdn.email.example.com.
     
 1. **Create and attach CDN SSL certificate**: Adobe creates the CDN certificate for the CDN domain and attaches the certificate to the CDN domain.
+
+    >[!CAUTION]
+    >
+    >Adobe uses a shared multi-SAN (Subject Alternative Name) SSL certificate for delegated subdomains. A CAA (Certificate Authority Authorization) or DNS validation issue on any included domain can fail the entire CDNProvisioningStep, even if the new subdomain's DNS is correct.
+    >
+    >Before delegating, check all subdomains sharing the certificate: required DNS validation records must be correct and available, and CAA records, if present, must allow issuance by Adobe's certificate authority.
 
 1. **Create forward DNS**: if this is the first subdomain that you are delegating, Adobe will create the forward DNS which is required to create PTR records - one for each of your IPs.
 
@@ -302,6 +304,8 @@ After you request is handled by Adobe, the undelegated domain is no longer displ
 >
 >* You cannot reactivate the channel configurations which were using that subdomain.
 >* You cannot delegate the same subdomain again through the user interface. If you want to do so, reach out to your Adobe representative.
+
+If subdomain delegation returns an error code, see [Subdomain delegation and DNS errors](subdomain-delegation-errors.md).
 
 ## How-to video{#video}
 

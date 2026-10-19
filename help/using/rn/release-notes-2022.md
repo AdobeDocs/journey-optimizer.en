@@ -9,20 +9,15 @@ role: User
 level: Beginner, Intermediate
 hide: true
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
-TQID: https://experienceleague.adobe.com/C8d6L0NrvfiqCKnEFxitLC-X-6mrG3oWvNTV2LwyWyI
+TQID: 'https://experienceleague.adobe.com/C8d6L0NrvfiqCKnEFxitLC-X-6mrG3oWvNTV2LwyWyI'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
   - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
     internal-label: Release notes
-subfeature_v2:
-  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
-    internal-label: Product updates
-  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
-    internal-label: Pre-release notes
-  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
-    internal-label: Documentation updates
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -259,7 +254,7 @@ table>
 
 **Archiving support**
 
-* The new **Entity Dataset** includes a Template field which enables you to export the format ad structure of the sent messages on all channels for archiving purpose. [Learn more](../configuration/archiving-support.md)
+* The new **Entity Dataset** includes a Template field which enables you to export the format ad structure of the sent messages on all channels for archiving purpose. [Learn more](../configuration/archiving-overview.md#not-archiving-options)
 
 **Landing pages**
 

@@ -8,20 +8,24 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 78b95ccd-bc28-46cd-937a-f68e3f34cc1e
-TQID: https://experienceleague.adobe.com/tcx8KXGtorgevwLUj6rnvoE1mFYESJ4VaLL2vn3aZfA
+TQID: 'https://experienceleague.adobe.com/tcx8KXGtorgevwLUj6rnvoE1mFYESJ4VaLL2vn3aZfA'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: d2971708-e780-44bb-9e2a-72f139796afd
+    internal-label: Customer
 subfeature_v2:
-  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
-    internal-label: Audience Qualification events
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences
   - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
     internal-label: Audience guardrails
+  - id: ef9a83ca-eefa-47cf-aa34-f1a34715583a
+    internal-label: Profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -42,7 +46,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-You can select in campaigns and journeys any audience generated using segment definitions, custom upload, composition workflows or Federated Audience Composition.
+You can select in campaigns and journeys any audience generated using segment definitions, custom upload, composition workflows or Federated Audience Composition. Custom upload (CSV) audiences cannot be used with inbound channels (in-app messages, web and code-based experiences). [Learn more](#guardrails)
 
 ## Guardrails & limitations {#guardrails}
 
@@ -58,9 +62,11 @@ You can select in campaigns and journeys any audience generated using segment de
 
     * **Activated records & identity stitching:** Every record in the audience is activated, including any duplicates. During the next Unified Profile Service profile export, these records go through identity stitching. As a result, the number of activated records may differ from the number of profiles after identity stitching.
 
+* **Custom upload (CSV) audiences sunsupported in inbound channels** - Custom upload (CSV) audiences are not supported as targeting audiences for inbound channel actions. Campaigns that use a custom upload audience with an inbound channel fail with an upstream error. To target these channels, select an audience created using a segment definition.
+
 ## Audiences activation delay {#activation}
 
-Audiences are ready for use in [!DNL Journey Optimizer] right after ingestion completes. While this is typically within one hour, it's subject to some variability. Audiences resulting from compositions should be available 24 hours after publishing.
+Audiences are ready for use in [!DNL Journey Optimizer] after ingestion completes. This is typically within one hour, but timing can vary. This estimate describes audience availability only; it does not specify when enrichment attributes from custom-upload audiences become available in journey conditions or personalization, and it is not a guaranteed availability time. Verify that the audience and its enrichment attributes are available before using them in a journey. Audiences resulting from compositions should be available 24 hours after publishing.
 
 For audiences resulting from batch segmentation jobs, activation may be delayed due to batch ingestion variability. For Read-audience journeys scheduled daily, you can define a time window in the journey properties to ensure fresh audience data is available before journey execution.
 
@@ -93,3 +99,5 @@ Only audiences generated using **segment definition**, **audience compositions**
 If you need to target profiles from a non supported audience, such as a Customer Journey Analytics audience, you need to wrap it in a new segment definition in the Audience portal. Detailed information on how to add audiences in a segment definition is available in the [Segment Builder documentation](https://experienceleagu;e.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#adding-audiences){target="_blank"}
 
 Once done, wait for the segmentation evaluation to complete to use it in your journeys and campaigns.
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-target-audiences.md}}

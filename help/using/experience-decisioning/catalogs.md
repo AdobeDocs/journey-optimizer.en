@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 exl-id: 2d118f5a-32ee-407c-9513-fe0ebe3ce8f0
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/PnRmHbBhPq33Fb723aBgYPmknwfETTRra3zBdmwf0O4
+TQID: 'https://experienceleague.adobe.com/PnRmHbBhPq33Fb723aBgYPmknwfETTRra3zBdmwf0O4'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -16,17 +16,19 @@ feature_v2:
     internal-label: Guardrails and limitations
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
     internal-label: Decision capabilities
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-subfeature_v2:
-  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
-    internal-label: Decisioning API
-  - id: eb547372-2a95-4d13-b0fd-f720c9895880
-    internal-label: Edge Decisioning
 ---
 # Configure the item catalog {#catalog}
 
@@ -66,6 +68,10 @@ To ensure optimal performance and consistency, Decisioning enforces the followin
 * **Nesting restrictions**
 
     A maximum of four levels of nesting is supported. Images are not supported at the last level.
+
+* **Field naming and data types**
+
+    Field names and data types must be consistent across field groups in the catalog schema. You cannot define the same field with different capitalization or a different data type in another field group. If you need to use a different data type, create the field at a different path.
 
 ## Access and edit the catalog's schema {#access-catalog-schema}
 

@@ -5,7 +5,27 @@ role: Admin
 feature: Channel Configuration
 level: Intermediate
 keywords: custom channel, subdomains, configuration
-badge: label="Limited Availability" type="Informative"
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
+  - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
+    internal-label: Custom Channels
+  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
+    internal-label: Subdomains
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Configure custom channel subdomains {#custom-channel-subdomains}
 
@@ -157,3 +177,5 @@ After your request is handled by Adobe, the undelegated domain is no longer disp
 ## Next steps {#next-steps}
 
 * [Create a channel configuration](custom-channel-configuration.md) to link your custom channel to a subdomain, credentials, and payload defaults that marketers will select in campaigns and journeys.
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-custom-channel-subdomains.md}}

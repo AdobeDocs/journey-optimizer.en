@@ -6,6 +6,9 @@ description: Get started with Decision management
 redpen-status: CREATED_||_2025-08-11_20-58-31
 badge: label="Legacy" type="Informative"
 exl-id: e4cd7cbb-9f3f-4406-95cc-6b0c4179e641
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Get started with Decision management{#section-overview}
 

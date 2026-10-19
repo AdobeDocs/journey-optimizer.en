@@ -8,15 +8,15 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: aa060d8e-23e2-4bab-b709-636077eb5d20
-TQID: https://experienceleague.adobe.com/4gzLvShm8zKHTfFLYU7FR8LxaC3F1uUs9HXcln6NL5w
+TQID: 'https://experienceleague.adobe.com/4gzLvShm8zKHTfFLYU7FR8LxaC3F1uUs9HXcln6NL5w'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a9f73820-6899-47c2-a597-3fec28ab756a
-    internal-label: Reporting
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
 subfeature_v2:
   - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
     internal-label: Performance monitoring
@@ -46,7 +46,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Find definitions for the metrics used in Adobe Journey Optimizer reports across delivery types, including journey, email, SMS, push, in-app, landing page, direct mail, content card, web, and code-based experience metrics.
+**On this page:** Find definitions for the metrics used in Adobe Journey Optimizer reports across delivery types, including journey, email, mobile, push, in-app, landing page, direct mail, content card, web, and code-based experience metrics.
 
 >[!ENDSHADEBOX]
 
@@ -239,51 +239,51 @@ The tables below give you the list of metrics used in reports and their definiti
  </tbody> 
 </table>
 
-## SMS metrics
+## Mobile metrics
 
 <table> 
   <thead> 
     <tr> 
-      <th> SMS Metric </th> 
+      <th> Mobile Metric </th> 
       <th> Definition </th> 
     </tr>
   </thead> 
   <tbody> 
     <tr> 
       <td>Delivered</td> 
-      <td>Number of SMS messages successfully sent, in relation to the total number of SMS messages.</td> 
+      <td>Number of Mobile messages successfully sent, in relation to the total number of Mobile messages.</td> 
     </tr>
     <tr> 
       <td>Clicks</td> 
-      <td>Number of times a link within an SMS message was clicked.</td> 
+      <td>Number of times a link within a Mobile message was clicked.</td> 
     </tr>
     <tr> 
-      <td>Bounces for outbound SMS messages</td> 
-      <td>Total number of errors accumulated during the sending process and automatic return processing in relation to the total number of sent SMS messages.</td> 
+      <td>Bounces for outbound Mobile messages</td> 
+      <td>Total number of errors accumulated during the sending process and automatic return processing in relation to the total number of sent Mobile messages.</td> 
     </tr>
     <tr> 
       <td>Outbound SMS errors</td> 
-      <td>Total number of errors that occurred, preventing the SMS message from being sent to recipients.</td> 
+      <td>Total number of errors that occurred, preventing the Mobile message from being sent to recipients.</td> 
     </tr>
     <tr> 
       <td>Outbound SMS exclusions</td> 
-      <td>Number of profiles that were excluded from receiving SMS messages by Adobe Journey Optimizer. <a href="exclusion-list.md">Learn more about how exclusions are counted</a>.</td> 
+      <td>Number of profiles that were excluded from receiving Mobile messages by Adobe Journey Optimizer. <a href="exclusion-list.md">Learn more about how exclusions are counted</a>.</td> 
     </tr>
     <tr> 
       <td>Unique Clicks</td> 
-      <td>Number of unique recipients who clicked on a link in an SMS message.</td> 
+      <td>Number of unique recipients who clicked on a link in an Mobile message.</td> 
     </tr>
     <tr> 
       <td>Displays</td> 
-      <td>Number of times an SMS message was displayed or opened.</td> 
+      <td>Number of times an Mobile message was displayed or opened.</td> 
     </tr>
     <tr> 
       <td>Unique Displays</td> 
-      <td>Number of unique recipients who opened the SMS message, excluding multiple interactions from the same user.</td> 
+      <td>Number of unique recipients who opened the Mobile message, excluding multiple interactions from the same user.</td> 
     </tr>
     <tr> 
       <td>People</td> 
-      <td>Number of unique user profiles who received or interacted with an SMS message.</td> 
+      <td>Number of unique user profiles who received or interacted with an Mobile message.</td> 
     </tr>
   </tbody> 
 </table>

@@ -14,6 +14,8 @@ feature_v2:
     internal-label: Guardrails and limitations
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
+  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
+    internal-label: Campaign Orchestration
 topic_v2:
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
@@ -111,7 +113,7 @@ You will find below guardrails and limitations when using Orchestrated campaigns
 
 ## Activities limitations {#activities-limitations}
 
-* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities (Email, SMS, Push, or Direct mail). Only channel activities count toward this limit. Targeting, Data Management, and flow control activities do not count (for example, Build audience, Load file, Wait, Split, Enrichment, Reconciliation, Fork, End, or Test).
+* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities (Email, Mobile message, Push, or Direct mail). Only channel activities count toward this limit. Targeting, Data Management, and flow control activities do not count (for example, Build audience, Load file, Wait, Split, Enrichment, Reconciliation, Fork, End, or Test).
 
   If you exceed the limit when saving or publishing, the operation fails. To stay within the limit, reduce the number of channel activities or split message delivery across multiple Orchestrated campaigns.
 
@@ -119,4 +121,4 @@ You will find below guardrails and limitations when using Orchestrated campaigns
 
 ## Channel limitations
 
-Only SMS, Push, Email and Direct mail channels are supported in Orchestrated campaigns.
+Only Mobile message, Push, Email and Direct mail channels are supported in Orchestrated campaigns.

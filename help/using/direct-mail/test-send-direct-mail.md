@@ -9,13 +9,19 @@ role: User
 level: Beginner
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: 69a19190-d2e2-4858-a1df-ffd008226e2b
-TQID: https://experienceleague.adobe.com/4GZKFKOx-D-RT1mssiV5vpmZQSJGVbGMro8Q-suhtPE
+TQID: 'https://experienceleague.adobe.com/4GZKFKOx-D-RT1mssiV5vpmZQSJGVbGMro8Q-suhtPE'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: 9d1244d2-eb0a-5a0e-8b65-f12fd076b68a
+    internal-label: Test Profiles
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
@@ -70,7 +76,7 @@ Once that the file content is ready to be sent, close the simulate screen then c
 
 Before activating the direct mail campaign, make sure that the campaign or journey and the extraction file are configured properly. To do this, check alerts in the upper section of the editor. Some of them are simple warnings, but others can prevent you from sending the message. Two types of alerts can happen: warnings and errors.
 
-* **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your SMS message is empty.
+* **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your Mobile message is empty.
 
 * **Errors** prevent you from publishing the campaign, as long as they are not resolved. For example, an error message warns you when the subject line is missing.
 
@@ -129,3 +135,5 @@ Learn more about managing opt-out in Journey Optimizer in [this section](../priv
 * [Preview and test content](../content-management/preview-test.md)
 
 For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md).
+
+{{$include /help/_includes/do-not-localize/direct-mail/ai-augmented-test-send-direct-mail.md}}

@@ -8,20 +8,20 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
-TQID: https://experienceleague.adobe.com/OL0VFfxegvbTbSLKeqFaUNTeZllmFtjMW6bmh1XDF00
+TQID: 'https://experienceleague.adobe.com/OL0VFfxegvbTbSLKeqFaUNTeZllmFtjMW6bmh1XDF00'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: d2971708-e780-44bb-9e2a-72f139796afd
+    internal-label: Customer
 subfeature_v2:
-  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
-    internal-label: Audience Qualification events
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences
-  - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
-    internal-label: Audience guardrails
+  - id: ef9a83ca-eefa-47cf-aa34-f1a34715583a
+    internal-label: Profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -96,6 +96,8 @@ Audiences can be generated using different methods:
 
 * **Custom upload**: Import an audience using a CSV file. [Learn how to create Custom Upload audiences](custom-upload.md)
 
+    Custom upload audiences are not supported for inbound channels (in-app messages, web and code-based experiences). [Learn more](target-audiences.md#guardrails)
+
 * **Audience composition**: Create a composition workflow to combine existing audiences into a visual canvas and apply actions such as rank, split, join to create new audiences. [Learn how to work with audience composition](get-started-audience-orchestration.md)
 
 * **Federated Audience Composition**: Federate datasets directly from your existing data warehouse to build and enrich Adobe Experience Platform audiences and attributes all in one system. [Learn how to work with Federated Audience Composition](federated-audience-composition.md).
@@ -114,13 +116,4 @@ Learn about unified customer profiles and audiences in Journey Optimizer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432671?quality=12)
 
-
->[!DONOTLOCALIZE]
->
->+++ AI Knowledge Reference
->
->This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
->
->For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
->
->+++
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-about-audiences.md}}
