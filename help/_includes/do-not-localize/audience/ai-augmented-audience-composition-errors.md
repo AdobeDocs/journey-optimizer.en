@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 * The limit of the **[!UICONTROL Rank]** activity must be a positive number (greater than 0).
 * The audiences of a composition must use the merge policy of the composition.
 * The enrichment dataset must not be empty, and it must be 1 GB or smaller (hard limit). It must be associated with a schema, and the schema must have a primary identity.
-* The limit is 50 published compositions in the sandbox (hard limit; CJMRT-170042-400, "You have reached the limitation of 50 active compositions authorized in the inventory. You cannot add a new one."). Compositions created with federated audience composition are not counted.
+* The limit is 50 active compositions (hard limit; CJMRT-170042-400, "You have reached the limitation of 50 active compositions authorized in the inventory. You cannot add a new one."). Compositions created with federated audience composition are not counted.
 * Only one composition evaluation can be queued at a time (CJMRT-170056-409).
 
 **Terminology:**
@@ -53,9 +53,9 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does "The composition must end with a Save operation." appear?** — CJMRT-170007-400: a composition must end with a Save activity. Add a Save activity to each path.
 * **Q: Why does "The composition contains disconnected operations." appear?** — CJMRT-170005-400: an activity is not connected to the workflow. Connect the disconnected activity, or delete it. For a workflow that loops back on itself (CJMRT-170003-400), remove the loop.
 * **Q: Why does "Sum of all branches should be equal to 100." appear?** — CJMRT-170015-400: the percentages of the branches of a split must add up to 100. Adjust the percentages.
-* **Q: Why can I not publish a new composition ("You have reached the limitation of 50 active compositions authorized in the inventory.")?** — CJMRT-170042-400: you reached the limit of 50 published compositions in the sandbox. Delete a composition you no longer need, then publish the new one.
+* **Q: Why can I not publish a new composition ("You have reached the limitation of 50 active compositions authorized in the inventory.")?** — CJMRT-170042-400: you reached the limit of 50 active compositions. Delete a published composition you no longer need, then publish the new one.
 * **Q: Why does "The selected enrichment dataset is greater than 1 GB." appear?** — CJMRT-170040-400: the enrichment dataset is larger than 1 GB. Select another dataset, or reduce its size. For an empty dataset (CJMRT-170041-400), select another dataset.
-* **Q: What do I do when "The composition has been modified. Please refresh the page." appears?** — CJMRT-170043-412: the composition was modified by someone else. Refresh the page, then make your change again.
+* **Q: What do I do when "The composition has been modified. Please refresh the page." appears?** — CJMRT-170043-412: the composition has been modified. Refresh the page, then make your change again.
 * **Q: Why can I not delete a composition (CJMRT-170047-424)?** — The audiences of the composition are used in an activation or in another audience. Remove them from there, then delete the composition.
 
 **Troubleshooting:**
@@ -79,4 +79,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 812b9f6a -->
+<!-- ai-section-version: 1 | source-hash: 77896479 -->
