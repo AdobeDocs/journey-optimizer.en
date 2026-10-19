@@ -55,6 +55,8 @@ To create an Orchestrated campaign, follow these steps:
 
      1. Use the **[!UICONTROL Tags]** field to assign Adobe Experience Platform Unified Tags to your campaign. This allows you to easily classify them and improve search from the Orchestrated campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags).
      
+     1. If your administrator configured custom metadata fields for Orchestrated campaigns, fill them in. Fields marked with an asterisk are required. [Learn more about custom metadata](../administration/custom-metadata.md)
+
      1. Click **[!UICONTROL Save]**.
 
 

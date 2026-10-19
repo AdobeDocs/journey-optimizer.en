@@ -146,6 +146,10 @@ To assign custom data usage labels to the journey, click the **[!UICONTROL Manag
 
 [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
+## Custom metadata {#custom-metadata}
+
+If custom metadata fields have been configured for journeys, they are displayed in the journey properties. Use them to track business information such as line of business, product or cost center. Fields marked with an asterisk are required. [Learn more about custom metadata](../administration/custom-metadata.md)
+
 ## Journey payload size {#journey-payload-size}
 
 >[!CONTEXTUALHELP]

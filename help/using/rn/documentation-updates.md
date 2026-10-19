@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
+* A new **Custom metadata for journeys and campaigns** page explains how to configure custom metadata fields and use them in the properties of journeys, Action campaigns and Orchestrated campaigns. [Read more](../administration/custom-metadata.md)
+
 * The **Use visual fragments** page has been updated to reflect the current fragment limits: you can add up to 60 unique fragments per variant, and up to 120 distinct fragments across all variants of a multilingual message. [Read more](../email/use-visual-fragments.md)
 
 * The **Batch delivery** page now clarifies that batch decisioning uses profile snapshot data, which does not include experience events (xEvents). Offers that depend on xEvent data may not qualify, and the fallback offer may be returned. Use profile attributes or audiences instead. [Read more](../offers/batch-delivery.md)
