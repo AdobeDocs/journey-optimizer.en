@@ -31,7 +31,7 @@ For complete understanding, this information should be combined with the documen
 
 * A proof can have up to ten recipients (hard limit). Errors CJMPTS-1021-400 and CJMPTS-1022-500 are returned when the number of recipient emails is exceeded.
 * Proofs and previews use test profiles only (CJMPTS-1004-400).
-* A simulation takes at least one simulated user, and no more than the maximum shown in the message (AJOTDS-000013-400, AJOTDS-000014-400).
+* A request takes at least one simulated user (AJOTDS-000014-400), and no more than the maximum shown in the message (AJOTDS-000013-400).
 * There is a maximum number of simulated users, given in the message of AJOTDS-000037-400.
 * A simulated user needs an identity namespace and an identity value.
 * Some fields cannot be modified after the simulated user is created (AJOTDS-000010-400): create a new simulated user instead.
@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 
 **Prerequisites and permissions:**
 
-* Write permission, Read permission, or Read and Delete permissions on the sandbox, depending on the action. The errors CJMPTS-1028-403, CJMPTS-1029-403, CJMPTS-1042-403, CJMPTS-1036-401, CJMPTS-2101-403, and CJMPTS-2103-401 are returned when your user lacks the permission. Ask your administrator to grant it on your product profile.
+* Sandbox permissions, each granted by your administrator on your product profile: the Write permission (CJMPTS-1028-403), the Read permission (CJMPTS-1029-403), the Read and Delete permissions (CJMPTS-1042-403), or the permission needed for the action (CJMPTS-1036-401, CJMPTS-2101-403, CJMPTS-2103-401). Each error is returned when your user lacks the permission.
 
 **Applicability:**
 
@@ -58,16 +58,20 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does my proof fail with a recipients error?** — CJMPTS-1021-400 or CJMPTS-1022-500: a proof can have up to ten recipients. Remove recipients, then send the proof again.
 * **Q: Why does my proof or preview fail with a syntax error?** — CJMPTS-1300-400: a personalization expression has a syntax error. Open the alerts to find the expression, then fix it in the personalization editor.
 * **Q: Why is only test profiles allowed?** — CJMPTS-1004-400: proofs and previews use test profiles only. Select profiles that are flagged as test profiles.
-* **Q: What do I do on a permission error on a sandbox?** — Ask your administrator to grant the permission needed on your product profile (CJMPTS-1028-403 and related codes).
-* **Q: Why can I not create a simulated user?** — Possible causes: a simulated user already exists with the combination of identity namespace and identity value (AJOTDS-000001-409), the identity namespace or value is missing (AJOTDS-000035-400, AJOTDS-000036-400, AJOTDS-000007-400), the attributes do not match the profile schema (AJOTDS-000009-400, AJOTDS-000011-400, AJOTDS-000022-400), or the maximum number of simulated users is reached (AJOTDS-000037-400).
-* **Q: What do I do when a simulated user was modified by another operation?** — Refresh the page, then make your change again (AJOTDS-000002-409, AJOTDS-000001-412, AJOTDS-000007-500).
+* **Q: What do I do on a permission error on a sandbox?** — Ask your administrator to grant the permission on your product profile: Write (CJMPTS-1028-403), Read (CJMPTS-1029-403), Read and Delete (CJMPTS-1042-403), or the permission needed (CJMPTS-1036-401, CJMPTS-2101-403, CJMPTS-2103-401).
+* **Q: Why can I not create a simulated user?** — Possible causes: a simulated user already exists with the combination of identity namespace and identity value (AJOTDS-000001-409), the identity namespace is missing (AJOTDS-000035-400), the identity value is missing (AJOTDS-000036-400), the identity value could not be read from the field named in the message (AJOTDS-000007-400, enter the identity namespace and identity value correctly), the attributes do not match the profile schema (AJOTDS-000009-400, AJOTDS-000011-400, AJOTDS-000022-400, correct the attributes, then save the user again), or the maximum number of simulated users is reached (AJOTDS-000037-400, delete the simulated users you do not need, then create the new one).
+* **Q: What do I do when a simulated user was modified by another operation?** — For AJOTDS-000002-409 (modified by someone else, or by another action) and AJOTDS-000001-412 (the simulated user may have changed since you opened it), refresh the page, then make your change again. For AJOTDS-000007-500 (the request failed unexpectedly), refresh the page, then try again.
 
 **Troubleshooting:**
 
 * **CJMPTS-1023-500** — The message says the proof job could not continue because of a missing IMS user token. Your session is not valid for the proof. Log out and log in again, then send the proof again.
-* **CJMPTS-1503-400**, **CJMPTS-1504-400** — "Message publishing is in progress." and "Errors during message publication." Wait until the publication completes, and fix the errors reported on the message.
-* **AJOTDS-000001-404**, **AJOTDS-000002-404** — The simulated user cannot be found. Check the user in the inventory, or create it.
-* **AJOTDS-000015-400**, **AJOTDS-000016-400**, **AJOTDS-000019-400** — The audience membership of the simulated user is incomplete or duplicated. Select each audience once, with its type.
+* **CJMPTS-1503-400** — "Message publishing is in progress." The message is still being published. Wait until the publication completes.
+* **CJMPTS-1504-400** — "Errors during message publication." Fix the errors reported on the message.
+* **AJOTDS-000001-404** — No simulated user exists with the ID in the message. Check the ID against the inventory, or create the simulated user.
+* **AJOTDS-000002-404** — No simulated user exists with the namespace and identity value in the message. Check them against the inventory, or create the simulated user.
+* **AJOTDS-000015-400** — The audience ID is missing. Select the audience for the simulated user.
+* **AJOTDS-000016-400** — The audience type is missing. Select the audience type for the simulated user.
+* **AJOTDS-000019-400** — The same audience is listed more than once. Remove the duplicate entries so each audience appears once.
 * **CJMSAS-000002-429** — "You have reached the request limit for this service. Wait a few moments, then try again. If this continues, reduce how frequently you send requests or contact Adobe Customer Care."
 
 **Related pages:**
@@ -80,4 +84,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 462167df -->
+<!-- ai-section-version: 1 | source-hash: 575eb3de -->
