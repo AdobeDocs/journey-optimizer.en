@@ -30,11 +30,11 @@ See also [Built-in permissions](../administration/ootb-permissions.md).
 
 | Error code | Message | How to fix |
 |---|---|---|
-| **CJMOC-1001-403** | Unauthorized access to the resource. | Ask your administrator to grant you the permission needed for this action in your product profile. [Learn more](../administration/ootb-permissions.md) |
-| **CJMOC-1005-403** | You do not have access to required permission: {permission}. Check your permissions with your product administrator and try again. | Ask your administrator to add the permission named in the message to your product profile. Publishing or triggering a campaign requires **[!UICONTROL Publish orchestrated campaigns]**. [Learn more](../administration/ootb-permissions.md) |
-| **CJMOC-1004-403** | You do not have access to some attributes. Check your permissions with your product administrator and try again. | Ask your administrator for access to the attributes, or remove those attributes from the campaign. [Learn more](../administration/attribute-based-access.md) |
-| **CJMOC-1215-403** | OLAC check failed for operation {operation} on resource {id}. | Ask your administrator to grant you object-level access to the resource. [Learn more](../administration/object-based-access.md) |
-| **CJMOC-1216-403** | OLAC check failed for create operation. | Ask your administrator to grant you object-level access to create this object. [Learn more](../administration/object-based-access.md) |
+| **CJMOC-1001-403** | Unauthorized access to the resource. | Check that your role includes the permission for this action, such as **[!DNL Manage orchestrated campaigns]** to edit or **[!DNL Publish orchestrated campaigns]** to publish, and ask your administrator to add the missing one. [Learn more](../administration/ootb-permissions.md) |
+| **CJMOC-1005-403** | You do not have access to required permission: {permission}. Check your permissions with your product administrator and try again. | Check the permission named in the message against the permissions of your role, and ask your administrator to add it. Publishing or triggering a campaign requires **[!DNL Publish orchestrated campaigns]**. [Learn more](../administration/ootb-permissions.md) |
+| **CJMOC-1004-403** | You do not have access to some attributes. Check your permissions with your product administrator and try again. | Check whether the attributes used in the campaign carry an access label that your role does not include, and ask your administrator to add that label to your role. If access cannot be granted, remove those attributes from the campaign. [Learn more](../administration/attribute-based-access.md) |
+| **CJMOC-1215-403** | OLAC check failed for operation {operation} on resource {id}. | Ask your administrator to check that your role has object-level access to the resource named in the message. [Learn more](../administration/object-based-access.md) |
+| **CJMOC-1216-403** | OLAC check failed for create operation. | Ask your administrator to check that your role has object-level access to create this object. [Learn more](../administration/object-based-access.md) |
 
 ## Campaign status and lifecycle {#status}
 

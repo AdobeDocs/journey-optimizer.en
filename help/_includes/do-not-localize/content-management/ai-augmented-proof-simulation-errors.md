@@ -40,7 +40,8 @@ For complete understanding, this information should be combined with the documen
 
 **Prerequisites and permissions:**
 
-* Sandbox permissions, each granted by your administrator through your role: the Write permission (CJMPTS-1028-403), the Read permission (CJMPTS-1029-403), the Read and Delete permissions (CJMPTS-1042-403), or the permission needed for the action (CJMPTS-1036-401, CJMPTS-2101-403, CJMPTS-2103-401). Each error is returned when your user lacks the permission.
+* The sandbox you are working in must be assigned to your role.
+* Sandbox permissions, each granted by your administrator through your role: the Write permission (CJMPTS-1028-403), the Read permission (CJMPTS-1029-403), the Read and Delete permissions (CJMPTS-1042-403), or the permission needed for the action (CJMPTS-1036-401, CJMPTS-2101-403, CJMPTS-2103-401). Each error is returned when your user lacks the permission on the sandbox.
 
 **Applicability:**
 
@@ -58,7 +59,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does my proof fail with a recipients error?** — CJMPTS-1021-400 or CJMPTS-1022-500: a proof can have up to ten recipients. Remove recipients, then send the proof again.
 * **Q: Why does my proof or preview fail with a syntax error?** — CJMPTS-1300-400: a personalization expression has a syntax error. Open the alerts to find the expression, then fix it in the personalization editor.
 * **Q: Why is only test profiles allowed?** — CJMPTS-1004-400: proofs and previews use test profiles only. Select profiles that are flagged as test profiles.
-* **Q: What do I do on a permission error on a sandbox?** — Ask your administrator to grant the permission through your role: Write (CJMPTS-1028-403), Read (CJMPTS-1029-403), Read and Delete (CJMPTS-1042-403), or the permission needed (CJMPTS-1036-401, CJMPTS-2101-403, CJMPTS-2103-401).
+* **Q: What do I do on a permission error on a sandbox?** — Check that the sandbox you are working in is assigned to your role, then ask your administrator to grant the permission through your role: Write (CJMPTS-1028-403), Read (CJMPTS-1029-403), Read and Delete (CJMPTS-1042-403), or the permission needed (CJMPTS-1036-401, CJMPTS-2101-403, CJMPTS-2103-401).
 * **Q: Why can I not create a simulated user?** — Possible causes: a simulated user already exists with the combination of identity namespace and identity value (AJOTDS-000001-409), the identity namespace is missing (AJOTDS-000035-400), the identity value is missing (AJOTDS-000036-400), the identity value could not be read from the field named in the message (AJOTDS-000007-400, enter the identity namespace and identity value correctly), the attributes do not match the schema (AJOTDS-000009-400, AJOTDS-000011-400, AJOTDS-000022-400, correct the attributes, then save the user again), or the maximum number of simulated users is reached (AJOTDS-000037-400, delete the simulated users you do not need, then create the new one).
 * **Q: What do I do when a simulated user was modified by another operation?** — For AJOTDS-000002-409 (the resource was modified by another operation) and AJOTDS-000001-412 ("Something went wrong"), refresh the page, then make your change again. For AJOTDS-000007-500 ("Something went wrong"), refresh the page, then try again.
 
@@ -84,4 +85,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: bd1406b3 -->
+<!-- ai-section-version: 1 | source-hash: 7a04d75a -->

@@ -45,7 +45,7 @@ For complete understanding, this information should be combined with the documen
 
 **Prerequisites and permissions:**
 
-* The **View Campaigns** permission for the campaign selected in the phase (**CJMRT-180058-403**), and the **View Segments** permission for the audience associated with the campaign selected in the phase (**CJMRT-180059-403**). Your administrator grants them. As an alternative, use **[!UICONTROL Replace]** to select a campaign for the phase that you can access (**CJMRT-180058-403**), or whose audience you can access (**CJMRT-180059-403**).
+* The [!DNL View campaigns] permission for the campaign selected in the phase (**CJMRT-180058-403**), and the [!DNL View segments] permission for the audience associated with the campaign selected in the phase (**CJMRT-180059-403**). Your administrator adds the permission to your role and checks that your role includes the access labels of the campaign (**CJMRT-180058-403**) or of the audience (**CJMRT-180059-403**). Otherwise, use **[!UICONTROL Replace]** to select a campaign for the phase that you can access (**CJMRT-180058-403**), or whose audience you can access (**CJMRT-180059-403**).
 
 **Terminology:**
 
@@ -118,4 +118,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 4c42077b -->
+<!-- ai-section-version: 1 | source-hash: b2e1f60b -->

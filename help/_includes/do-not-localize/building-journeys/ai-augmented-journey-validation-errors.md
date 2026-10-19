@@ -92,7 +92,7 @@ Open the fragment, fix each error shown on its canvas, then select the **[!UICON
   * Activities: identity namespace missing (`8026-400`, `8027-400`), Campaign actions in a fragment that contains **[!UICONTROL Read audience]** (`8028-400`, `8029-400`: remove the Campaign action, or replace the **[!UICONTROL Read audience]** activity) or **[!UICONTROL Audience qualification]** (`8030-400`, `8031-400`: remove the Campaign action, or remove the **[!UICONTROL Audience qualification]** activity).
   * Status: the fragment status does not allow the action (`8010-400`, `8016-400`). Check the fragment status in the **[!UICONTROL Fragment Inventory]**. Only **[!UICONTROL Draft]** fragments can be edited or activated. Only **[!UICONTROL Active]** fragments can be deactivated or archived. Only **[!UICONTROL Archived]** fragments can be unarchived. For a fragment that is already archived (`8014-400`), to use it again, select **[!UICONTROL Unarchive]** from its **[!UICONTROL More actions]** menu; it returns to **[!UICONTROL Draft]** status.
   * Limits: 200 active fragments in a sandbox (`8024-429`; archive or deactivate a fragment you do not use) and the sandbox fragment limit (`8009-429`; archive a fragment, or delete a **[!UICONTROL Draft]** fragment, that you no longer need).
-  * Permission: no access to the label to apply (`AJOJAS-7104-403`). Ask your administrator for access, or choose another label.
+  * Permission: no permission to apply the label to the fragment (`AJOJAS-7104-403`). Ask your administrator to add the label named in the message to your role, or select a label that you have access to in the fragment properties.
 * **Compare journey versions.** Causes: the same version selected twice, one version only, versions not in chronological order (`AJOJAS-11001-400`, `11004-400`, `11005-400`), or disconnected activities (`11007-400`). Fixes: `11001-400`, in Coworker Chat, select two different versions; `11004-400`, in Coworker Chat, select both versions; `11005-400`, switch the order of the two selected versions so that the older one comes first; `11007-400`, connect all activities (or delete the unused ones) in the version, then compare again.
 
 **Related pages:**
@@ -108,4 +108,4 @@ Open the fragment, fix each error shown on its canvas, then select the **[!UICON
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 74164b82 -->
+<!-- ai-section-version: 1 | source-hash: b7226cf5 -->

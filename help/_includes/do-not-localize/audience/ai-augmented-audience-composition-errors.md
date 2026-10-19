@@ -61,8 +61,8 @@ For complete understanding, this information should be combined with the documen
 **Troubleshooting:**
 
 * CJMRT-170046-413, "Publishing this composition may impact system performance. Please consider decreasing the audience size before continuing." — A warning that publishing may affect system performance. Reduce the size of the audience before you continue.
-* CJMRT-170017-403 ("The client is not authorized for access.") and CJMRT-170028-403 ("Missing required permissions.") — Your user does not have the permission needed to publish or manage the composition. Ask your administrator to grant it.
-* CJMRT-170024-403 ("You don't have permission to publish this rule.  Please contact your administrator or remove unauthorized settings.") — Your user does not have the permission needed to publish or manage the composition. Ask your administrator to grant it, or remove the settings that are not allowed.
+* CJMRT-170017-403 ("The client is not authorized for access.") and CJMRT-170028-403 ("Missing required permissions.") — Ask your administrator to check the permissions and the sandbox assigned to your role.
+* CJMRT-170024-403 ("You don't have permission to publish this rule.  Please contact your administrator or remove unauthorized settings.") — Ask your administrator to check the permissions assigned to your role, or remove the settings your role is not allowed to use, such as audiences or attributes protected by an access label that your role does not include.
 * CJMRT-170029-400, "One or more selected audiences is using a different merge policy than the one associated with the composition. Please choose a different audience." — A selected audience uses a merge policy different from the one of the composition. Select audiences that use the merge policy of the composition.
 * CJMRT-170048-428 — The enrichment dataset is not associated with a schema. Associate it with a schema, or select another dataset.
 * CJMRT-170058-400 — The schema of the enrichment dataset has no primary identity. Update the schema to define one, or select another dataset.
@@ -79,4 +79,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 77896479 -->
+<!-- ai-section-version: 1 | source-hash: 95683d32 -->
