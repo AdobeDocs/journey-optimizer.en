@@ -31,7 +31,7 @@ subfeature_v2:
 [!DNL Adobe Journey Optimizer] error codes follow a consistent naming pattern that helps identify the component and issue type:
 
 * **Service prefix**: Indicates which [!DNL Adobe Journey Optimizer] service generated the error.
-  Examples: CJMPTS (Push/Transport Service), CJMRT (Journey Runtime), CJMMAS (Message Authoring Service), CJMCMP (Campaign), CJMTL (Transport Layer), CJMRPS (Reporting/Provisioning Service)
+  Examples: AJOJAS (Journey Authoring Service), CJMPTS (Push/Transport Service), CJMRT (Journey Runtime), CJMMAS (Message Authoring Service), CJMCMP (Campaign), CJMTL (Transport Layer), CJMRPS (Reporting/Provisioning Service)
 * **Error number**: Unique identifier for the specific error condition
 * **HTTP status code**: Standard HTTP status code (e.g., 400, 403, 422, 500)
 
@@ -51,9 +51,34 @@ When an error occurs, note the complete error code and any accompanying request 
 
 For error codes grouped by feature area, see the [Troubleshooting overview](../../rp_landing_pages/troubleshooting-overview-landing-page.md).
 
+## Find error codes by feature area {#error-pages}
+
+Each of the following pages lists the error codes of one feature area, with the exact message and how to fix it.
+
+| Feature area | Page | Prefixes |
+|---|---|---|
+| Journeys | [Journey validation errors](journey-validation-errors.md) | AJOJAS |
+| Campaigns | [Campaign errors](../campaigns/campaign-errors.md) | CJMCMP |
+| Campaigns | [Orchestrated campaign errors](../orchestrated/orchestrated-campaign-errors.md) | CJMOC |
+| Campaigns | [Relational schema and dataset errors](../orchestrated/relational-schema-errors.md) | CJMDMS |
+| Campaigns | [Audience composition errors](../audience/audience-composition-errors.md) | CJMRT |
+| Content | [Content authoring errors](../content-management/content-authoring-errors.md) | CJMMAS, CJMRT |
+| Content | [Fragments and AEM content errors](../content-management/fragments-errors.md) | CJMMAS, AJOCBS, AJOAGS |
+| Content | [Multilingual content errors](../content-management/multilingual-errors.md) | CJMRT, AJOCTO, CJMMAS |
+| Content | [Landing page errors](../landing-pages/landing-page-errors.md) | CJMMAS |
+| Content | [Proof and simulation errors](../content-management/proof-simulation-errors.md) | CJMPTS, AJOTDS, CJMSAS |
+| Content | [Personalization errors](../personalization/personalization-errors.md) | CJMTL, CJMRT |
+| Configuration | [Subdomain delegation and DNS errors](../configuration/subdomain-delegation-errors.md) | CJMRT |
+| Configuration | [IP warmup plan errors](../configuration/ip-warmup-plan-errors.md) | CJMRT |
+| Configuration | [Custom channel, inbound action, and reporting dataset errors](../configuration/channel-reporting-errors.md) | CJMRT, CJMIAS, CJMRPS |
+
 ## Common error codes by service {#error-codes-by-service}
 
 Use this section to find error codes grouped by service.
+
+### AJOJAS: Journey authoring errors {#ajojas-errors}
+
+Errors returned when you validate, test, or publish a journey are listed in [Journey validation errors](journey-validation-errors.md).
 
 ### CJMPTS: Push and transport service errors {#cjmpts-errors}
 
@@ -132,7 +157,7 @@ When encountering an error code, follow this systematic approach:
 
 1. **Identify the error**: Note the complete error code, HTTP status, and any accompanying message or request ID.
 
-2. **Find the service**: Use the service prefix (CJMPTS, CJMRT, CJMMAS, CJMCMP, CJMTL, CJMRPS) to identify which component is affected.
+2. **Find the service**: Use the service prefix (AJOJAS, CJMPTS, CJMRT, CJMMAS, CJMCMP, CJMTL, CJMRPS) to identify which component is affected.
 
 3. **Check the status code**:
    * **400 (Bad Request)**: Review input data and configuration
