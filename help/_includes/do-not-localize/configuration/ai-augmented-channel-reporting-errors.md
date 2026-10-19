@@ -17,6 +17,7 @@ For complete understanding, this information should be combined with the documen
 * Fix errors when activating, deactivating, naming, or deleting custom channel credentials
 * Fix errors and warnings when publishing a campaign or a journey that uses an inbound action
 * Fix errors when adding a dataset to the reporting configuration
+* Know what to note and whom to contact when an error persists after the listed steps
 
 **Glossary:**
 
@@ -46,6 +47,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why can I not activate custom channel credentials?** — CJMRT-081518-403: the custom channel is not active. Activate the custom channel first.
 * **Q: Why can I not publish my inbound action?** — Depending on the message: the maximum number of live inbound actions is reached (CJMIAS-0024-400), no merge policy is active on the edge (0028-400), a decision policy is missing (0029-400), some fields are invalid or missing (0030-400), or the channel configuration is missing or uses a surface (0031-400).
 * **Q: Why can I not add my dataset to the reporting configuration?** — Depending on the message: the dataset has no supported field group (CJMRPS-1046-400: select or create a dataset that has at least one), the schema of the dataset is not an event type (1048-400: select or create an event-type dataset), the maximum number of datasets is reached (1049-400), provisioning of the sandbox is pending (1041-404) or ARES provisioning is pending (1045-400), or the dataset is not found (1042-400). If the dataset has already been added (1047-409), no action is needed; to confirm, open the list of datasets in **[!UICONTROL Administration]** > **[!UICONTROL Configurations]** > **[!UICONTROL Reporting]** > **[!UICONTROL Manage]**.
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 **Troubleshooting:**
 
@@ -64,7 +66,9 @@ For complete understanding, this information should be combined with the documen
 * Merge policy for inbound actions: Code-based experience prerequisites (code-based/code-based-prerequisites.md)
 * Decision policies: Create decisions policies (experience-decisioning/create-decision-policy.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 310cf431 -->
+<!-- ai-section-version: 1 | source-hash: 715accb2 -->

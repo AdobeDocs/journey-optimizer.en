@@ -18,6 +18,7 @@ For complete understanding, this information should be combined with the documen
 * Fix errors when setting a subdomain for the web channel or for landing pages
 * Fix errors when creating or editing an email channel configuration with an IP pool
 * Fix errors when creating or deleting a seed list
+* Know what to note and whom to contact when an error persists after the listed steps
 
 **Glossary:**
 
@@ -47,10 +48,11 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: How is an error code structured?** — The prefix **CJMRT**, followed by an error number and an HTTP status, for example CJMRT-080602-400.
 * **Q: Why does Journey Optimizer say the subdomain is not delegated to Adobe?** — CJMRT-080602-400: the subdomain is not delegated yet. Add the name server records displayed in Journey Optimizer at your DNS provider, allow 24 to 48 hours for DNS propagation, then try again.
-* **Q: Why was the domain delegated to wrong server names?** — CJMRT-080603-400: the subdomain points to name servers that are not the Adobe name servers. At your DNS provider, replace the name server records of the subdomain with the ones displayed in Journey Optimizer, then restart the delegation.
+* **Q: Why was the domain delegated to wrong server names?** — CJMRT-080603-400: the subdomain is delegated to the wrong server names. At your DNS provider, replace the name server records of the subdomain with the ones displayed in Journey Optimizer, then restart the delegation.
 * **Q: Why can I not delegate a subdomain while another delegation is running?** — CJMRT-080616-403: another delegation is in progress. Wait until the other subdomain leaves the **[!UICONTROL Processing]** status, then submit again.
 * **Q: Why can I not create an email channel configuration with my IP pool?** — CJMRT-080101-403: the IP pool is under edition (**[!UICONTROL Processing]** status) and has never been associated with the selected subdomain. Save the channel configuration as a draft, then wait until the IP pool has the **[!UICONTROL Success]** status.
 * **Q: Why can I not delete a seed list?** — CJMRT-080801-403: the seed list is associated with at least one channel configuration. Remove the seed list from the channel configurations that use it, and from any active campaign or journey that uses it, then delete it.
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 **Troubleshooting:**
 
@@ -80,7 +82,9 @@ For complete understanding, this information should be combined with the documen
 * Landing page subdomains: Set up landing page subdomains (landing-pages/lp-subdomains.md)
 * Web subdomains: Set up web subdomains (web/web-delegated-subdomains.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 0a2821d7 -->
+<!-- ai-section-version: 1 | source-hash: 6c097309 -->

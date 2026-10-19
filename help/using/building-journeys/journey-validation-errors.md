@@ -21,6 +21,8 @@ When you select **[!UICONTROL Validate]** in the journey header, or try to test 
 
 Validation errors use the prefix **AJOJAS** (Journey Authoring Service), followed by an error number and an HTTP status. For example, `AJOJAS-2030-400` is a missing wait duration. Most messages name the activity concerned, so you can select it on the canvas and fix its configuration. For the other error code prefixes, see the [error codes reference](error-codes-reference.md).
 
+If the error persists after you follow the steps, note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or [contact Adobe Support](../start/user-interface.md#support-ticket-guidelines) with these details. For all the support options, see [Getting support](error-codes-reference.md#getting-support).
+
 ## Journey structure {#structure}
 
 These errors occur when the journey has no entry activity or has activities in a layout that is not supported.

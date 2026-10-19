@@ -22,6 +22,8 @@ When an error occurs, the campaign logs and the alerts on the canvas show the er
 
 Orchestrated campaign errors use the prefix **CJMOC**, followed by an error number and an HTTP status. For the other error code prefixes, see the [error codes reference](../building-journeys/error-codes-reference.md).
 
+If the error persists after you follow the steps, note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or [contact Adobe Support](../start/user-interface.md#support-ticket-guidelines) with these details. For all the support options, see [Getting support](../building-journeys/error-codes-reference.md#getting-support).
+
 ## Permissions and access {#access}
 
 These errors occur when your user does not have the permission or the access needed to create, edit, publish, or trigger an Orchestrated campaign.

@@ -19,6 +19,8 @@ keywords: error, troubleshooting, campaign, audience, schedule, experiment, rapi
 
 Campaign errors use the prefix **CJMCMP**, followed by an error number and an HTTP status. Codes with the status 200 are warnings. For the other error code prefixes, see the [error codes reference](../building-journeys/error-codes-reference.md).
 
+If the error persists after you follow the steps, note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or [contact Adobe Support](../start/user-interface.md#support-ticket-guidelines) with these details. For all the support options, see [Getting support](../building-journeys/error-codes-reference.md#getting-support).
+
 ## Audience {#audience}
 
 These errors and warnings occur when you select the audience of a campaign and its identity type.

@@ -17,6 +17,7 @@ For complete understanding, this information should be combined with the documen
 * Tell an error from a warning using the HTTP status of the code
 * Fix audience, action and channel configuration, schedule and approval, rapid delivery, and content experiment errors
 * Understand which audiences cannot be used with Healthcare Shield or Privacy and Security Shield
+* Know what to note and whom to contact when an error persists after the listed steps
 
 **Glossary:**
 
@@ -58,6 +59,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does "The selected schedule is invalid and will never be fired." appear?** — CJMCMP-2120-400: set a start date in the future, and an end date after the start date.
 * **Q: Why does "The campaign is not approved" appear?** — CJMCMP-2121-400: request approval, wait for it, then activate the campaign.
 * **Q: Why can I not turn on rapid delivery mode?** — CJMCMP-2310-400 (recurring schedule): turn off rapid delivery, or change the schedule so that it does not recur. CJMCMP-2311-400 (headless campaign): turn off rapid delivery, or use a campaign that is not headless. CJMCMP-2312-400 (campaign with an experiment): turn off rapid delivery, or remove the experiment. CJMCMP-2030-400 (audience larger than 30M): select an audience of up to 30M profiles, or turn off rapid delivery. CJMCMP-2041-400 (audience from audience composition): select another audience, or turn off rapid delivery.
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 **Troubleshooting:**
 
@@ -84,7 +86,9 @@ For complete understanding, this information should be combined with the documen
 * Permissions and object-level access: Object level access control (administration/object-based-access.md)
 * Access labels on audiences: Attribute-based access control (administration/attribute-based-access.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 177b3e3b -->
+<!-- ai-section-version: 1 | source-hash: f3b72432 -->

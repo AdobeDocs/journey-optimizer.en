@@ -19,6 +19,8 @@ keywords: error, troubleshooting, proof, preview, test profiles, simulation, sim
 
 Errors use the prefixes **CJMPTS** (proofs and previews), **AJOTDS** (simulated users), and **CJMSAS**, followed by an error number and an HTTP status. For the other error code prefixes, see the [error codes reference](../building-journeys/error-codes-reference.md).
 
+If the error persists after you follow the steps, note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or [contact Adobe Support](../start/user-interface.md#support-ticket-guidelines) with these details. For all the support options, see [Getting support](../building-journeys/error-codes-reference.md#getting-support).
+
 ## Proofs and previews {#proofs}
 
 These errors occur when you send a proof or preview content with test profiles.

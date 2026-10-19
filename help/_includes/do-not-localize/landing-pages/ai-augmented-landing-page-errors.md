@@ -12,6 +12,7 @@ For complete understanding, this information should be combined with the documen
 * **TL;DR:** The page gives the cause and the fix for the errors that [!DNL Adobe Journey Optimizer] returns when you create, validate, publish, delete, or link to a landing page, grouped by feature: permissions and access, publication and status, page URL, name, and content, forms and subscription lists, expiration, and links from messages.
 
 **Intents:**
+* Know what to note and whom to contact when an error persists after the listed steps.
 
 * Identify a landing page error from its code: the prefix **CJMMAS**, the error number, and the HTTP status.
 * Find which permission or access a landing page action requires when a 403 error is returned.
@@ -47,9 +48,9 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * **Canonical name:** Landing page errors
-* **Do not confuse:** the codes **CJMMAS-3204-200** and **CJMMAS-3302-200** (missing page name) end with the HTTP status 200, while the other codes of the page end with 400, 403, or 422.
 
 **FAQ:**
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. For a permission or access error, contact your administrator; otherwise contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 * **Q: What does the prefix CJMMAS mean?** — It is the prefix of the landing page errors, followed by an error number and an HTTP status.
 * **Q: Why do I get "You do not have write permission on landing pages"?** — Landing pages use the permissions of messages. Ask your administrator to add the message permission for the action to your role: **[!DNL Manage messages]** for write (**CJMMAS-1071-403**) and delete (**CJMMAS-1073-403**), **[!DNL View messages]** or **[!DNL Manage messages]** for read (**CJMMAS-1070-403**), and **[!DNL Publish messages]** for publish (**CJMMAS-1072-403**).
@@ -104,7 +105,9 @@ For complete understanding, this information should be combined with the documen
 * Subscription lists: Create a subscription list (landing-pages/subscription-list.md)
 * Landing pages guardrails: Landing pages guardrails (start/guardrails.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 87fd3c1a -->
+<!-- ai-section-version: 1 | source-hash: b3c020a7 -->
