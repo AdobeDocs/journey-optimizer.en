@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: error, troubleshooting, multilingual, language settings, translation, locale
-hide: true
 ---
 # Multilingual content errors {#multilingual-errors}
 

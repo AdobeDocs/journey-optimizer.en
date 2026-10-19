@@ -216,3 +216,5 @@ Establish a relationship between the **loyalty transactions** schema and the **R
 Continue by creating a relationship between the **loyalty rewards** schema and the **Brands** schema to associate each reward entry with the appropriate brand.
 
 ![](assets/schema_3.png)
+
+If a schema or dataset returns an error code, see [Relational schema and dataset errors](relational-schema-errors.md).

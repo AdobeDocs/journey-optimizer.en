@@ -219,6 +219,7 @@ If your journey is subject to an approval policy, clicking **[!UICONTROL Publish
 * [Journey simulation](simulate-journey-gs.md) - Validate your journey with simulated users before publishing
 * [Journey Dry run](journey-dry-run.md) - Test with real production data without contacting profiles
 * [Troubleshooting](../building-journeys/troubleshooting.md#activity-errors) - Resolve activity and publication errors
+* [Journey validation errors](journey-validation-errors.md) - Find the cause and fix of each validation error code
 * [How journeys end](end-journey.md#journey-finished-definition) - Understand journey completion and statuses
 * [Profile entrance management](entry-management.md) - Configure how profiles enter and re-enter journeys
 * [Journey guardrails and limitations](../start/guardrails.md#journeys-guardrails-journeys) - Review publication and versioning guardrails

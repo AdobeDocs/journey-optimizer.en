@@ -9,7 +9,6 @@ role: User
 level: Intermediate
 keywords: error, troubleshooting, orchestrated campaigns, CJMOC
 version: Campaign Orchestration
-hide: true
 ---
 # Orchestrated campaign errors {#orchestrated-campaign-errors}
 

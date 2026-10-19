@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: error, troubleshooting, audience composition, enrichment, split, rank
-hide: true
 ---
 # Audience composition errors {#audience-composition-errors}
 

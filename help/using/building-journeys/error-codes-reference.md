@@ -49,6 +49,8 @@ Error codes appear in the following locations within [!DNL Adobe Journey Optimiz
 
 When an error occurs, note the complete error code and any accompanying request ID, as these are essential for troubleshooting and support escalation.
 
+For error codes grouped by feature area, see the [Troubleshooting overview](../../rp_landing_pages/troubleshooting-overview-landing-page.md).
+
 ## Common error codes by service {#error-codes-by-service}
 
 Use this section to find error codes grouped by service.

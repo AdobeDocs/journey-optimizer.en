@@ -306,4 +306,6 @@ The video below shows how to author and test your In-app messages.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410471?quality=12&learn=on)
 
+If your in-app content returns an error code, see [Content authoring errors](../content-management/content-authoring-errors.md).
+
 {{$include /help/_includes/do-not-localize/in-app/ai-augmented-design-in-app.md}}

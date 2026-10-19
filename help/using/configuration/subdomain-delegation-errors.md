@@ -8,7 +8,6 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: error, troubleshooting, subdomain, delegation, DNS, DMARC, seed list
-hide: true
 ---
 # Subdomain delegation and DNS errors {#subdomain-delegation-errors}
 

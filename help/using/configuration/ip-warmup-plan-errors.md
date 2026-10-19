@@ -8,7 +8,6 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: error, troubleshooting, IP warmup, plan, phase, run
-hide: true
 ---
 # IP warmup plan errors {#ip-warmup-plan-errors}
 

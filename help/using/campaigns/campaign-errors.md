@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: error, troubleshooting, campaign, audience, schedule, experiment, rapid delivery
-hide: true
 ---
 # Campaign errors {#campaign-errors}
 

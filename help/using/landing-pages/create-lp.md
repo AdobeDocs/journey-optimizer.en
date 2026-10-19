@@ -315,3 +315,5 @@ It is now live and ready to be used in a [!DNL Journey Optimizer] message that w
 >You cannot access your landing page by simply copy-pasting into a web browser the URL defined when [creating the page](#create-landing-page), even if published. Instead you can test it using the preview function such as described in [this section](#test-landing-page).
 
 You can monitor your landing page impacts through specific reports. [Learn more](../reports/lp-report-live.md)
+
+If a landing page returns an error code, see [Landing page errors](landing-page-errors.md).
