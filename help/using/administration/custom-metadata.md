@@ -7,6 +7,8 @@ feature: Administration
 topic: Content Management
 role: Admin
 level: Intermediate
+hide: true
+badge: label="Limited availability" type="Informative"
 keywords: custom metadata, journey, campaign, orchestrated campaign, schema, reporting
 ---
 # Custom metadata for journeys and campaigns {#custom-metadata}
