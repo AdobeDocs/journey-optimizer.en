@@ -75,6 +75,10 @@ To set up your Web In-app channel, follow the steps below:
 
     ![](assets/in_app_web_surface_5.png)
 
+    >[!CAUTION]
+    >
+    >Custom upload (CSV) audiences are not supported for in-app messages. [Learn more](../audience/target-audiences.md#guardrails)
+    
 1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected audience. [Learn more](../event/about-creating.md#select-the-namespace).
 
 1. In the **[!UICONTROL Action]** menu, you can find the settings previously configured as **[!UICONTROL App configuration]**. You can make changes here if necessary or update your rule by clicking **[!UICONTROL Edit Rule]**.

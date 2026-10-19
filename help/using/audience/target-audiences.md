@@ -46,7 +46,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-You can select in campaigns and journeys any audience generated using segment definitions, custom upload, composition workflows or Federated Audience Composition.
+You can select in campaigns and journeys any audience generated using segment definitions, custom upload, composition workflows or Federated Audience Composition. Custom upload (CSV) audiences cannot be used with inbound channels (in-app messages, web and code-based experiences). [Learn more](#guardrails)
 
 ## Guardrails & limitations {#guardrails}
 
@@ -61,6 +61,8 @@ You can select in campaigns and journeys any audience generated using segment de
         To solve this, you can specify the "execution field" (or "execution address" depending on the channel) in the channel configuration as 'identityMap'. This ensures that the attribute chosen as the identity at audience creation will be the one used for targeting in [!DNL Journey Optimizer].
 
     * **Activated records & identity stitching:** Every record in the audience is activated, including any duplicates. During the next Unified Profile Service profile export, these records go through identity stitching. As a result, the number of activated records may differ from the number of profiles after identity stitching.
+
+* **Custom upload (CSV) audiences sunsupported in inbound channels** - Custom upload (CSV) audiences are not supported as targeting audiences for inbound channel actions. Campaigns that use a custom upload audience with an inbound channel fail with an upstream error. To target these channels, select an audience created using a segment definition.
 
 ## Audiences activation delay {#activation}
 

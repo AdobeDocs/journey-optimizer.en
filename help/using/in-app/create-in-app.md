@@ -182,6 +182,10 @@ To add an In-app message in a campaign, follow these steps:
 
     ![](assets/in_app_create_2.png)
 
+    >[!CAUTION]
+    >
+    >Custom upload (CSV) audiences are not supported for in-app messages. [Learn more](../audience/target-audiences.md#guardrails)
+    
 1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected audience. [Learn more](../event/about-creating.md#select-the-namespace).
 
 1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL In-app message]** and select or create a new configuration.
