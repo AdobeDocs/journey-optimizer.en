@@ -34,9 +34,9 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Codes with the status 200 are warnings.
-* The audience cannot be changed once the campaign is activated (CJMCMP-2025-400). Create a new version of the campaign, or duplicate it, then change the audience.
+* The audience cannot be changed once the campaign is activated (CJMCMP-2025-400). For a recurring Action campaign, click **[!UICONTROL Modify campaign]** to create a new version, or duplicate the campaign, then change the audience.
 * Audiences and attributes from audience composition, federated audience composition, or CSV uploads cannot be used with Healthcare Shield or Privacy and Security Shield (CJMCMP-2075, 2077, 2078, 2080, 2081, 2082, 2083).
-* Priority can only be in the range of 0-100 (hard limit), and is not available for transactional campaigns (CJMCMP-2074-400).
+* Priority can only be in the range of 0-100 (hard limit), and is disabled for transactional campaigns (CJMCMP-2074-400).
 * Rapid delivery mode cannot be used with a recurring schedule, a headless campaign, or a campaign that has an experiment. It is limited to audiences of up to 30M profiles (hard limit), and does not accept audiences from audience composition.
 * An experiment can have only one holdout, and a campaign can have only one experiment.
 * A custom allocation requires a percentage for each treatment (CJMCMP-2040-400), and a treatment percentage cannot be set with a uniform allocation (CJMCMP-2039-400).
@@ -52,23 +52,23 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: What do the parts of a campaign error code mean?** — Campaign errors use the prefix CJMCMP, followed by an error number and an HTTP status. Codes with the status 200 are warnings.
 * **Q: Why can I not activate the campaign because "The selected audience has not been evaluated yet."?** — CJMCMP-2060-200 is a warning: wait until the audience is evaluated, then activate the campaign.
-* **Q: Why can I not change the audience of the campaign?** — CJMCMP-2025-400: the audience cannot be changed once the campaign is activated. Create a new version of the campaign, or duplicate it, then change the audience.
+* **Q: Why can I not change the audience of the campaign?** — CJMCMP-2025-400: the audience cannot be changed once the campaign is activated. For a recurring Action campaign, click **[!UICONTROL Modify campaign]** to create a new version, or duplicate the campaign, then change the audience.
 * **Q: Why is my audience refused with Healthcare Shield or Privacy and Security Shield?** — Audiences and attributes from audience composition, federated audience composition, or CSV uploads cannot be used with them. Select another audience.
 * **Q: Why does "The message has not been published" appear?** — CJMCMP-2202-400: publish the message, then activate the campaign.
 * **Q: Why does "The selected schedule is invalid and will never be fired." appear?** — CJMCMP-2120-400: set a start date in the future, and an end date after the start date.
 * **Q: Why does "The campaign is not approved" appear?** — CJMCMP-2121-400: request approval, wait for it, then activate the campaign.
-* **Q: Why can I not turn on rapid delivery mode?** — CJMCMP-2310-400 (recurring schedule): turn off rapid delivery, or change the schedule. CJMCMP-2311-400 (headless campaign): turn off rapid delivery, or change the campaign. CJMCMP-2312-400 (campaign with an experiment): turn off rapid delivery, or remove the experiment. CJMCMP-2030-400 (audience larger than 30M): select a smaller audience, or turn off rapid delivery. CJMCMP-2041-400 (audience from audience composition): select another audience, or turn off rapid delivery.
+* **Q: Why can I not turn on rapid delivery mode?** — CJMCMP-2310-400 (recurring schedule): turn off rapid delivery, or change the schedule so that it does not recur. CJMCMP-2311-400 (headless campaign): turn off rapid delivery, or use a campaign that is not headless. CJMCMP-2312-400 (campaign with an experiment): turn off rapid delivery, or remove the experiment. CJMCMP-2030-400 (audience larger than 30M): select an audience of up to 30M profiles, or turn off rapid delivery. CJMCMP-2041-400 (audience from audience composition): select another audience, or turn off rapid delivery.
 
 **Troubleshooting:**
 
 * CJMCMP-2052-400, "The draft version has already been created" — A draft version of the campaign already exists. Open it from the campaign list with **[!UICONTROL Open draft version]**.
-* CJMRT-150001-400, "The schedule will never fire for {triggerExpression}. Please update." — The schedule never produces an execution, for example because its end date is in the past. Update the start date, end date or frequency so that at least one execution is in the future. This code uses the CJMRT prefix.
+* CJMRT-150001-400, "The schedule will never fire for {triggerExpression}. Please update." — The schedule never produces an execution. Update the start date, end date or frequency so that at least one execution is in the future. This code uses the CJMRT prefix.
 * CJMRT-150002-400, "The End time {endTime} must be set after the Start time {startTime}" — Set an end time later than the start time. This code uses the CJMRT prefix.
-* CJMCMP-2024-400, "A new profile is not allowed for the provisioned campaign" — Creating new profiles is not allowed for this campaign. Turn off the option that creates profiles, and use an audience of existing profiles.
+* CJMCMP-2024-400, "A new profile is not allowed for the provisioned campaign" — Creating new profiles is not allowed for this campaign. Turn off the **[!UICONTROL Create new profiles]** option and select an audience of existing profiles.
 * CJMCMP-2012-400, "The campaign already has an experiment" — A campaign can have only one experiment. Edit the existing experiment.
 * CJMCMP-2009-400, "The campaign status doesn't allow to create an experiment" — The status of the campaign does not allow creating an experiment. Create the experiment while the campaign is in draft.
 * CJMCMP-2059-400, "The experiment is not allowed" — The experiment is not allowed for this campaign. Edit the existing experiment, or create the experiment while the campaign is in draft.
-* CJMCMP-2058-400, "The experiment dimension entered must be an URL" — For clicks or page views, the dimension must be a URL.
+* CJMCMP-2058-400, "The experiment dimension entered must be an URL" — The dimension must be a URL. Enter a URL as the dimension.
 
 **Related pages:**
 
@@ -83,4 +83,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 59e60742 -->
+<!-- ai-section-version: 1 | source-hash: 036e5510 -->
