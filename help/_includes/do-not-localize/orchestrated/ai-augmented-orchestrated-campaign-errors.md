@@ -45,9 +45,10 @@ For complete understanding, this information should be combined with the documen
 
 **Prerequisites and permissions:**
 
-* The **[!UICONTROL Publish orchestrated campaigns]** permission to publish or trigger a campaign (CJMOC-1005-403).
-* Access to the attributes used by the campaign (CJMOC-1004-403). Remove those attributes from the campaign if access cannot be granted.
-* Object-level access to the object concerned (CJMOC-1215-403, CJMOC-1216-403, "OLAC check failed").
+* The **[!DNL Publish orchestrated campaigns]** permission in your role to publish or trigger a campaign (CJMOC-1005-403).
+* A permission in your role for the action, such as **[!DNL Manage orchestrated campaigns]** to edit or **[!DNL Publish orchestrated campaigns]** to publish (CJMOC-1001-403). For CJMOC-1005-403, the permission is named in the message.
+* Access to the attributes used by the campaign (CJMOC-1004-403): the attributes may carry an access label that your role does not include. Ask your administrator to add that label to your role, or remove those attributes from the campaign if access cannot be granted.
+* Object-level access to the object concerned (CJMOC-1215-403, CJMOC-1216-403, "OLAC check failed"): your role must have object-level access to the resource named in the message, or to create the object (CJMOC-1216-403).
 
 **Applicability:**
 
@@ -65,7 +66,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: How is an Orchestrated campaign error code structured?** — The prefix CJMOC, an error number, and an HTTP status.
 * **Q: Where do I find the activity concerned by an error?** — The campaign logs and the alerts on the canvas show the error code and the message. Open the campaign logs to find the activity concerned.
 * **Q: Which error is a warning?** — CJMOC-5023-199, about the **[!UICONTROL Load file]** activity in a scheduled campaign. Use another data source for scheduled campaigns, or run the campaign once.
-* **Q: Which permission do I need to publish or trigger a campaign?** — **[!UICONTROL Publish orchestrated campaigns]** (CJMOC-1005-403). For other permission errors, ask your administrator to grant the permission on your product profile.
+* **Q: Which permission do I need to publish or trigger a campaign?** — **[!DNL Publish orchestrated campaigns]** (CJMOC-1005-403). For CJMOC-1005-403, check the permission named in the message against the permissions of your role. For CJMOC-1001-403, check that your role includes the permission for the action, such as **[!DNL Manage orchestrated campaigns]** to edit. In both cases, ask your administrator to add the missing permission to your role.
 * **Q: Why can I not publish or edit my campaign?** — The campaign is not in **[!UICONTROL Draft]** status, or its ID is not set (CJMOC-1201-400), it cannot be published because it is not in **[!UICONTROL Draft]** status (CJMOC-1203-400), or its current version is not in **[!UICONTROL Draft]** status (CJMOC-6005-400): check the campaign status, and duplicate the campaign to start again from a Draft. The current version is in **[!UICONTROL Live]** status (CJMOC-1202-400): stop the campaign, or click **[!UICONTROL Back to draft]** when it is available, then edit the campaign and publish it again. The campaign is still running (CJMOC-6006-400): stop it, or wait for it to finish, then publish the campaign again.
 * **Q: Why can I not start a test?** — The campaign is not in **[!UICONTROL Draft]** status (CJMOC-2001-400: check the campaign status, or duplicate the campaign), a test is already running (CJMOC-2002-400: stop it or restart it, then start a new test), or the campaign has no orchestration defined (CJMOC-2006-400: add activities to the canvas and save the campaign).
 * **Q: Why do I get a schedule error?** — The campaign has no schedule (CJMOC-5012-400: define a schedule), no execution in the future (CJMOC-5013-400: update the start date, or extend the validity period of the schedule), a fixed time with a recurring schedule (CJMOC-5014-400: remove the fixed time, or use a one-time schedule), or a fixed time in the past (CJMOC-5015-400: set a date and time in the future).
@@ -73,6 +74,10 @@ For complete understanding, this information should be combined with the documen
 
 **Troubleshooting:**
 
+* **CJMOC-1001-403**, "Unauthorized access to the resource." — Check that your role includes the permission for this action, such as **[!DNL Manage orchestrated campaigns]** to edit or **[!DNL Publish orchestrated campaigns]** to publish, and ask your administrator to add the missing one.
+* **CJMOC-1005-403** — Check the permission named in the message against the permissions of your role, and ask your administrator to add it. Publishing or triggering a campaign requires **[!DNL Publish orchestrated campaigns]**.
+* **CJMOC-1004-403** — Check whether the attributes used in the campaign carry an access label that your role does not include, and ask your administrator to add that label to your role. If access cannot be granted, remove those attributes from the campaign.
+* **CJMOC-1215-403** and **CJMOC-1216-403** ("OLAC check failed") — Ask your administrator to check that your role has object-level access to the resource named in the message (CJMOC-1215-403) or to create this object (CJMOC-1216-403).
 * **CJMOC-5008-400** — The activity named in the message is disabled. Enable the activity again, then retry.
 * **CJMOC-5009-400** — The activity named in the message is paused. Enable the activity again, then retry.
 * **CJMOC-5003-400** — The activity has an empty query. Open the activity and build the rule, or select an audience.
@@ -95,4 +100,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 1150fb59 -->
+<!-- ai-section-version: 1 | source-hash: 425d9e9d -->

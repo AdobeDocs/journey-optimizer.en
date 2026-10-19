@@ -61,6 +61,9 @@ For complete understanding, this information should be combined with the documen
 
 **Troubleshooting:**
 
+* CJMCMP-2028-400, "Permission denied for the audience" — Check whether the audience carries an access label that your role does not include, and ask your administrator to add that label to your role. If access cannot be granted, select another audience.
+* CJMCMP-2031-400, "You do not have permissions to perform this action. Contact your administrator to set OLAC permissions, and try again" — Check the access labels set on the campaign with **[!UICONTROL Manage access]**, and ask your administrator to add a matching label to your role.
+* CJMCMP-2061-400, "You do not have required permissions to perform this action. Contact your administrator to grant you access." — Check that your role includes the permission for this action, such as **[!DNL Manage campaigns]** to edit or **[!DNL Publish campaigns]** to publish, and the access labels set on the campaign, and ask your administrator to add what is missing.
 * CJMCMP-2052-400, "The draft version has already been created" — A draft version of the campaign already exists. Open it from the campaign list with **[!UICONTROL Open draft version]**.
 * CJMRT-150001-400, "The schedule will never fire for {triggerExpression}. Please update." — The schedule never produces an execution. Update the start date, end date or frequency so that at least one execution is in the future. This code uses the CJMRT prefix.
 * CJMRT-150002-400, "The End time {endTime} must be set after the Start time {startTime}" — Set an end time later than the start time. This code uses the CJMRT prefix.
@@ -79,8 +82,9 @@ For complete understanding, this information should be combined with the documen
 * Activation: Review and activate the campaign (campaigns/review-activate-campaign.md)
 * Content experiments: Create a content experiment (content-management/content-experiment.md)
 * Permissions and object-level access: Object level access control (administration/object-based-access.md)
+* Access labels on audiences: Attribute-based access control (administration/attribute-based-access.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 036e5510 -->
+<!-- ai-section-version: 1 | source-hash: 177b3e3b -->

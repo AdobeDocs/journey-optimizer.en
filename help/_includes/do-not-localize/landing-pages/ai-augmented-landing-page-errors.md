@@ -38,9 +38,11 @@ For complete understanding, this information should be combined with the documen
 
 **Prerequisites and permissions:**
 
-* Landing pages use the permissions of messages. To work with landing pages, you need the message level permission for the action: read, write, publish, or delete, granted by your administrator on your product profile.
-* To publish a landing page, you need the **[!UICONTROL Publish Messages]** permission in your product profile (**CJMMAS-1072-403**).
-* Access to a specific landing page can also be required (**CJMMAS-1078-403**): ask your administrator for access to it.
+* Landing pages use the permissions of messages. To work with landing pages, your role needs the message permission for the action, added by your administrator:
+  * Read (**CJMMAS-1070-403**): **[!DNL View messages]** or **[!DNL Manage messages]**.
+  * Write (**CJMMAS-1071-403**) and delete (**CJMMAS-1073-403**): **[!DNL Manage messages]**.
+  * Publish (**CJMMAS-1072-403**): **[!DNL Publish messages]**.
+* Access to a specific landing page can also be required (**CJMMAS-1078-403**): ask your administrator to add one of the access labels applied to the landing page to your role.
 
 **Terminology:**
 
@@ -50,7 +52,7 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: What does the prefix CJMMAS mean?** — It is the prefix of the landing page errors, followed by an error number and an HTTP status.
-* **Q: Why do I get "You do not have write permission on landing pages"?** — Landing pages use the permissions of messages. Ask your administrator to grant the permission named in the message (read, write, publish, or delete) on landing pages in your product profile. For the publish permission (**CJMMAS-1072-403**), the fix names the **[!UICONTROL Publish Messages]** permission.
+* **Q: Why do I get "You do not have write permission on landing pages"?** — Landing pages use the permissions of messages. Ask your administrator to add the message permission for the action to your role: **[!DNL Manage messages]** for write (**CJMMAS-1071-403**) and delete (**CJMMAS-1073-403**), **[!DNL View messages]** or **[!DNL Manage messages]** for read (**CJMMAS-1070-403**), and **[!DNL Publish messages]** for publish (**CJMMAS-1072-403**).
 * **Q: Why can I not update or delete my landing page?** — A published landing page cannot be updated, and a subpage cannot be added to it (**CJMMAS-3002-400**, **CJMMAS-3006-400**, **CJMMAS-3010-400**). It cannot be deleted either (**CJMMAS-3011-400**). Unpublish it, then make the change and publish it again, or delete it. If a message links to it, the link is broken once the page is unpublished.
 * **Q: Why does publishing fail with "Unable to publish landing page"?** — For **CJMMAS-3104-400**, the landing page is already published or is being published: check its status, and wait until the publication completes if needed. For **CJMMAS-3012-400**, the landing page is being published: wait until the publication completes, then try again.
 * **Q: Why is my URL refused?** — The landing page has no publish URL (**CJMMAS-3101-400**), the primary page has no URL (**CJMMAS-3202-422**), or the subpage has no URL (**CJMMAS-3300-422**): define a URL. The URL of the page is already used by another published landing page (**CJMMAS-3102-400**), or two pages of the landing page have the same URL (**CJMMAS-3103-400**): give each page a unique URL.
@@ -58,7 +60,7 @@ For complete understanding, this information should be combined with the documen
 
 **Troubleshooting:**
 
-* **Permissions and access** (**CJMMAS-1070-403** to **CJMMAS-1073-403**, **CJMMAS-1078-403**): see the prerequisites and the FAQ. For **CJMMAS-1078-403**, "You do not have permission to access this landing page. Please contact your administrator to request access.": ask your administrator for access to this landing page.
+* **Permissions and access** (**CJMMAS-1070-403** to **CJMMAS-1073-403**, **CJMMAS-1078-403**): see the prerequisites and the FAQ. For **CJMMAS-1078-403**, "You do not have permission to access this landing page. Please contact your administrator to request access.": ask your administrator to add one of the access labels applied to the landing page to your role.
 * **Publication and status**:
     * "Bad request. The landing page is in the process of being published. Please wait until publishing is complete and try again." (**CJMMAS-3012-400**): see the FAQ.
     * "Validation Error in the Landing Page." (**CJMMAS-3107-400**): open the alerts at the top right of the screen, resolve each error, then try again.
@@ -105,4 +107,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 7f37bcdb -->
+<!-- ai-section-version: 1 | source-hash: 87fd3c1a -->

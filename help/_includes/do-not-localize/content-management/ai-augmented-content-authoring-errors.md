@@ -64,7 +64,7 @@ Marketing emails must include an opt-out link in every variant and language. For
 A published message cannot be updated directly. Create a new version of the campaign, edit the draft version, then activate it.
 
 **I get a Forbidden error. What do I do?**
-Your role lacks the permission named in the message (write, read, publish, or delete; `CJMMAS-1028-403`, `1029-403`, `1030-403`, `1042-403`). Ask your administrator to add the permission to your role.
+Your role lacks the permission named in the message (write, read, publish, or delete; `CJMMAS-1028-403`, `1029-403`, `1030-403`, `1042-403`). Ask your administrator to add the permission to your role: **[!DNL Manage messages]** for write and delete, **[!DNL View messages]** or **[!DNL Manage messages]** for read, and **[!DNL Publish messages]** for publish. Also check that the role includes the sandbox you are working in.
 
 **The save fails because the item was updated elsewhere (`JOMAL-1101-409`). What do I do?**
 Someone else, or another browser tab, saved a newer version. Refresh the page to load the latest version, then reapply your changes and save again.
@@ -111,10 +111,13 @@ Someone else, or another browser tab, saved a newer version. Refresh the page to
   * Save conflict (`JOMAL-1101-409`): refresh the page to load the latest version, then reapply your changes and save again.
   * Malformed tracking links (`JOMAL-1102-400`): correct the links in the HTML, for example a missing or unclosed href, then save again.
 * **Permissions.**
-  * Missing write, read, publish, or delete permission (`CJMMAS-1028-403`, `CJMMAS-1029-403`, `CJMMAS-1030-403`, `CJMMAS-1042-403`): ask your administrator to add the permission to your role.
-  * No permission to simulate content (`CJMMAS-1094-403`) or to manage content (`CJMMAS-1095-403`), or no access to the template: ask your administrator to update your permissions or the template access.
-  * User not authorized, or operation forbidden (`JOMAL-1003-403`, `JOMAL-1203-403`): ask your administrator to check your role and your access to the item.
-  * Unauthorized user (`JOMAL-1001-401`, `JOMAL-1201-401`): sign in again. If the error persists, ask your administrator to check your access to the sandbox.
+  * Missing write permission (`CJMMAS-1028-403`) or delete permission (`CJMMAS-1042-403`): ask your administrator to add the **[!DNL Manage messages]** permission to your role, and check that the role includes the sandbox you are working in.
+  * Missing read permission (`CJMMAS-1029-403`): ask your administrator to add the **[!DNL View messages]** or **[!DNL Manage messages]** permission to your role, and check that the role includes the sandbox you are working in.
+  * Missing publish permission (`CJMMAS-1030-403`): ask your administrator to add the **[!DNL Publish messages]** permission to your role, and check that the role includes the sandbox you are working in.
+  * No permission to simulate content or to access the template (`CJMMAS-1094-403`): ask your administrator to grant you the **[!DNL Manage library items]** and **[!DNL Manage simulate content]** permissions (included in the Content Library Manager product profile). If an access label restricts the template, ask for that label to be added to your role.
+  * No permission to manage content or to access the template (`CJMMAS-1095-403`): ask your administrator to grant you the **[!DNL Manage library items]** permission (included in the Content Library Manager product profile). If an access label restricts the template, ask for that label to be added to your role.
+  * User not authorized, or operation forbidden (`JOMAL-1003-403`, `JOMAL-1203-403`): check that your role includes the permission for this type of item and the access label applied to the item, then ask your administrator to update your role if either is missing.
+  * Unauthorized user (`JOMAL-1001-401`, `JOMAL-1201-401`): sign in again. If the error persists, ask your administrator to check that your role includes the sandbox you are working in.
   * Message belonging to another organization (`CJMMAS-1001-400`): sign in to the organization that owns the message.
 * **Channel configurations and access.**
   * No channel configuration, or not found, for the channel of the message (`CJMMAS-2006-422`): select a channel configuration in the message.
@@ -123,7 +126,7 @@ Someone else, or another browser tab, saved a newer version. Refresh the page to
   * Email channel configuration with an empty execution list (`CJMMAS-2015-422`): complete the execution list in the configuration.
   * Channel configuration ID not valid (`CJMMAS-1034-400`) or selected channel configuration not valid (`CJMMAS-1064-400`): select a valid channel configuration, then try again.
   * Landing page with no channel configuration (`CJMMAS-1068-400`): select a channel configuration in the landing page, then try again.
-  * No permission on the AEM repositories used in the content (`CJMMAS-2036-403`): ask your administrator for access to the repositories named in the message.
+  * No permission on the AEM repositories used in the content (`CJMMAS-2036-403`): ask your administrator for access to the AEM repositories named in the message. If access cannot be granted, remove the assets or fragments stored in those repositories from the content.
 * **Decision policies and channel configuration fields.**
   * Empty mandatory field of the channel configuration (`CJMRT-030002-400`): open the channel configuration and fill in all mandatory fields.
   * Field longer than the maximum length shown in the message (`CJMRT-030007-400`): shorten the value.
@@ -147,4 +150,4 @@ Someone else, or another browser tab, saved a newer version. Refresh the page to
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: da514c77 -->
+<!-- ai-section-version: 1 | source-hash: b4ca32b3 -->

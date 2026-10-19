@@ -27,11 +27,11 @@ See also [Built-in permissions](../administration/ootb-permissions.md).
 
 | Error code | Message | How to fix |
 |---|---|---|
-| **CJMMAS-1070-403** | You do not have read permission on landing pages. Landing pages require the message level permission. | Ask your administrator to grant you the read permission on landing pages in your product profile. [Learn more](../administration/ootb-permissions.md) |
-| **CJMMAS-1071-403** | You do not have write permission on landing pages. Landing pages require the message level permission. | Ask your administrator to grant you the write permission on landing pages in your product profile. [Learn more](../administration/ootb-permissions.md) |
-| **CJMMAS-1072-403** | You do not have publish permission on landing pages. Landing pages require the message level permission. | Ask your administrator to grant you the **[!UICONTROL Publish Messages]** permission in your product profile. [Learn more](../administration/ootb-permissions.md) |
-| **CJMMAS-1073-403** | You do not have delete permission on landing pages. Landing pages require the message level permission. | Ask your administrator to grant you the delete permission on landing pages in your product profile. [Learn more](../administration/ootb-permissions.md) |
-| **CJMMAS-1078-403** | You do not have permission to access this landing page. Please contact your administrator to request access. | Ask your administrator for access to this landing page. [Learn more](../administration/object-based-access.md) |
+| **CJMMAS-1070-403** | You do not have read permission on landing pages. Landing pages require the message level permission. | Ask your administrator to add the **[!DNL View messages]** or **[!DNL Manage messages]** permission to your role, as landing pages use the message permissions. [Learn more](../administration/ootb-permissions.md) |
+| **CJMMAS-1071-403** | You do not have write permission on landing pages. Landing pages require the message level permission. | Ask your administrator to add the **[!DNL Manage messages]** permission to your role, as landing pages use the message permissions. [Learn more](../administration/ootb-permissions.md) |
+| **CJMMAS-1072-403** | You do not have publish permission on landing pages. Landing pages require the message level permission. | Ask your administrator to add the **[!DNL Publish messages]** permission to your role, as landing pages use the message permissions. [Learn more](../administration/ootb-permissions.md) |
+| **CJMMAS-1073-403** | You do not have delete permission on landing pages. Landing pages require the message level permission. | Ask your administrator to add the **[!DNL Manage messages]** permission to your role, as landing pages use the message permissions. [Learn more](../administration/ootb-permissions.md) |
+| **CJMMAS-1078-403** | You do not have permission to access this landing page. Please contact your administrator to request access. | Ask your administrator to add one of the access labels applied to the landing page to your role. [Learn more](../administration/object-based-access.md) |
 
 ## Publication and status {#publication}
 

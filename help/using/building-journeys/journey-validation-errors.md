@@ -215,7 +215,7 @@ See also [Fragment guardrails and limitations](journey-fragments.md#guardrails) 
 | **AJOJAS-8014-400** | Fragment '{fragmentId}' is already archived. | To use the fragment again, select **[!UICONTROL Unarchive]** from its **[!UICONTROL More actions]** menu. It returns to **[!UICONTROL Draft]** status. [Learn more](journey-fragments.md#fragment-statuses) |
 | **AJOJAS-8024-429** | The '{sandboxName}' sandbox has reached the limit of {limit} active fragments. To activate another fragment, archive or deactivate an existing active fragment first. | Archive or deactivate an active fragment that you do not use. [Learn more](journey-fragments.md#guardrails) |
 | **AJOJAS-8009-429** | The '{sandboxName}' sandbox has reached the fragment limit of {limit}. To create a new fragment, archive or delete an existing one. | Archive a fragment, or delete a **[!UICONTROL Draft]** fragment, that you no longer need before creating a new one. [Learn more](journey-fragments.md#guardrails) |
-| **AJOJAS-7104-403** | You do not have permission to apply label '{labelName}' to fragment '{fragmentId}'. Contact your administrator to request access. | Ask your administrator for access to the label, or select another label in the fragment properties. [Learn more](journey-fragments.md) |
+| **AJOJAS-7104-403** | You do not have permission to apply label '{labelName}' to fragment '{fragmentId}'. Contact your administrator to request access. | Ask your administrator to add the label named in the message to your role, or select a label that you have access to in the fragment properties. [Learn more](journey-fragments.md) |
 
 ## Compare journey versions {#compare-versions}
 
