@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: error, troubleshooting, content, email, push, SMS, in-app, direct mail, validation
-hide: true
 ---
 # Content authoring errors {#content-authoring-errors}
 

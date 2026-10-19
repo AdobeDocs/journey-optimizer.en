@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: error, validation, journey, publish, troubleshooting, AJOJAS
-hide: true
 ---
 # Journey validation errors {#journey-validation-errors}
 

@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: error, troubleshooting, proof, preview, test profiles, simulation, simulated users
-hide: true
 ---
 # Proof and simulation errors {#proof-simulation-errors}
 

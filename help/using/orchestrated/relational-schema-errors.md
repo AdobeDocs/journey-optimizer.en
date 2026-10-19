@@ -9,7 +9,6 @@ role: User
 level: Intermediate
 keywords: error, troubleshooting, orchestrated campaigns, CJMDMS
 version: Campaign Orchestration
-hide: true
 ---
 # Relational schema and dataset errors {#relational-schema-errors}
 

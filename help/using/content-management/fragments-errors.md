@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: error, troubleshooting, fragments, AEM, content fragments, assets
-hide: true
 ---
 # Fragments and AEM content errors {#fragments-errors}
 

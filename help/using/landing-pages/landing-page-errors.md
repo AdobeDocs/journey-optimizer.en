@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: error, troubleshooting, landing page, form, subscription list, publish
-hide: true
 ---
 # Landing page errors {#landing-page-errors}
 

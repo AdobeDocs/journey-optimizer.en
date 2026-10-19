@@ -291,26 +291,26 @@ nudge: yes
     + [Error codes reference](using/building-journeys/error-codes-reference.md)
     + Journeys troubleshooting {#troubleshoot-journey}
       + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
-      + {hide-from-toc} [Journey validation errors](using/building-journeys/journey-validation-errors.md)
+      + [Journey validation errors](using/building-journeys/journey-validation-errors.md)
       + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
       + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
       + [Troubleshoot custom actions](using/action/troubleshoot-custom-action.md)
-    + {hide-from-toc} Campaigns troubleshooting {#troubleshoot-campaigns}
-      + {hide-from-toc} [Campaign errors](using/campaigns/campaign-errors.md)
-      + {hide-from-toc} [Orchestrated campaign errors](using/orchestrated/orchestrated-campaign-errors.md)
-      + {hide-from-toc} [Relational schema and dataset errors](using/orchestrated/relational-schema-errors.md)
-      + {hide-from-toc} [Audience composition errors](using/audience/audience-composition-errors.md)
-    + {hide-from-toc} Content troubleshooting {#troubleshoot-content}
-      + {hide-from-toc} [Content authoring errors](using/content-management/content-authoring-errors.md)
-      + {hide-from-toc} [Fragments and AEM content errors](using/content-management/fragments-errors.md)
-      + {hide-from-toc} [Multilingual content errors](using/content-management/multilingual-errors.md)
-      + {hide-from-toc} [Landing page errors](using/landing-pages/landing-page-errors.md)
-      + {hide-from-toc} [Proof and simulation errors](using/content-management/proof-simulation-errors.md)
-      + {hide-from-toc} [Personalization errors](using/personalization/personalization-errors.md)
-    + {hide-from-toc} Configuration troubleshooting {#troubleshoot-configuration}
-      + {hide-from-toc} [Subdomain delegation and DNS errors](using/configuration/subdomain-delegation-errors.md)
-      + {hide-from-toc} [IP warmup plan errors](using/configuration/ip-warmup-plan-errors.md)
-      + {hide-from-toc} [Custom channel, inbound action, and reporting dataset errors](using/configuration/channel-reporting-errors.md)
+    + Campaigns troubleshooting {#troubleshoot-campaigns}
+      + [Campaign errors](using/campaigns/campaign-errors.md)
+      + [Orchestrated campaign errors](using/orchestrated/orchestrated-campaign-errors.md)
+      + [Relational schema and dataset errors](using/orchestrated/relational-schema-errors.md)
+      + [Audience composition errors](using/audience/audience-composition-errors.md)
+    + Content troubleshooting {#troubleshoot-content}
+      + [Content authoring errors](using/content-management/content-authoring-errors.md)
+      + [Fragments and AEM content errors](using/content-management/fragments-errors.md)
+      + [Multilingual content errors](using/content-management/multilingual-errors.md)
+      + [Landing page errors](using/landing-pages/landing-page-errors.md)
+      + [Proof and simulation errors](using/content-management/proof-simulation-errors.md)
+      + [Personalization errors](using/personalization/personalization-errors.md)
+    + Configuration troubleshooting {#troubleshoot-configuration}
+      + [Subdomain delegation and DNS errors](using/configuration/subdomain-delegation-errors.md)
+      + [IP warmup plan errors](using/configuration/ip-warmup-plan-errors.md)
+      + [Custom channel, inbound action, and reporting dataset errors](using/configuration/channel-reporting-errors.md)
     + [Troubleshooting FAQ](using/start/troubleshooting.md)
 + Communication channels {#channels}
   + [Get started with communication channels](using/channels/gs-channels.md)

@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: error, troubleshooting, personalization, expression, helper, handlebars, encryption
-hide: true
 ---
 # Personalization errors {#personalization-errors}
 

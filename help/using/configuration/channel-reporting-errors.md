@@ -8,7 +8,6 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: error, troubleshooting, custom channel, inbound action, reporting, dataset
-hide: true
 ---
 # Custom channel, inbound action, and reporting dataset errors {#channel-reporting-errors}
 
