@@ -249,5 +249,6 @@ Go through the same debugging steps as for [Scenario 1](#debugging-steps) to che
 * [Troubleshoot errors before testing or publishing your journey](troubleshooting.md)
 * [Troubleshoot your live journey execution](troubleshooting-execution.md)
 * [Error codes reference](error-codes-reference.md)
+* [Custom channel, inbound action, and reporting dataset errors](../configuration/channel-reporting-errors.md)
 
 {{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-troubleshooting-inbound.md}}
