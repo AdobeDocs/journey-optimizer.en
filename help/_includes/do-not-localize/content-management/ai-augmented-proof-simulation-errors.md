@@ -12,6 +12,7 @@ For complete understanding, this information should be combined with the documen
 * **TL;DR:** This page lists the errors that [!DNL Adobe Journey Optimizer] returns when you send proofs, preview content with test profiles, or create the simulated users of a journey simulation, with the cause and the fix of each.
 
 **Intents:**
+* Know what to note and whom to contact when an error persists after the listed steps
 
 * Fix errors returned when sending a proof or previewing content with test profiles
 * Fix sandbox permission errors returned for proofs and previews
@@ -54,6 +55,7 @@ For complete understanding, this information should be combined with the documen
 * Do not confuse: CJMPTS (proofs and previews) ≠ AJOTDS (simulated users)
 
 **FAQ:**
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. For a permission or access error, contact your administrator; otherwise contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 * **Q: How is an error code structured on this page?** — It is a prefix (CJMPTS for proofs and previews, AJOTDS for simulated users, CJMSAS), an error number, and an HTTP status. For the other error code prefixes, see the error codes reference.
 * **Q: Why does my proof fail with a recipients error?** — CJMPTS-1021-400 or CJMPTS-1022-500: a proof can have up to ten recipients. Remove recipients, then send the proof again.
@@ -82,7 +84,9 @@ For complete understanding, this information should be combined with the documen
 * Journey simulation overview: Get started with journey simulation (building-journeys/simulate-journey-gs.md)
 * Simulated users: Create and manage simulated users (building-journeys/simulate-journey.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 7a04d75a -->
+<!-- ai-section-version: 1 | source-hash: 2cb078c8 -->

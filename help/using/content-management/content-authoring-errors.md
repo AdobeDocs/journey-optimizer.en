@@ -19,6 +19,8 @@ keywords: error, troubleshooting, content, email, push, SMS, in-app, direct mail
 
 Content errors use the prefixes **CJMMAS** and **CJMRT**, followed by an error number and an HTTP status. Codes with the status 200 are warnings: they do not block saving or publishing. For the other error code prefixes, see the [error codes reference](../building-journeys/error-codes-reference.md).
 
+If the error persists after you follow the steps, note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or [contact Adobe Support](../start/user-interface.md#support-ticket-guidelines) with these details. For all the support options, see [Getting support](../building-journeys/error-codes-reference.md#getting-support).
+
 ## Email content {#email}
 
 These errors and warnings occur when you validate or publish the content of an email.

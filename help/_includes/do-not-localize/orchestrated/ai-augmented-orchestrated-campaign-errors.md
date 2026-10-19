@@ -12,6 +12,7 @@ For complete understanding, this information should be combined with the documen
 * **TL;DR:** This page lists the errors that [!DNL Adobe Journey Optimizer] returns when you build, test, schedule, publish, or trigger an Orchestrated campaign, grouped by feature, with the cause and the fix of each.
 
 **Intents:**
+* Know what to note and whom to contact when an error persists after the listed steps
 
 * Find the cause and the fix of an error returned for an Orchestrated campaign
 * Fix permission and access errors when creating, editing, publishing, or triggering an Orchestrated campaign
@@ -57,11 +58,10 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Orchestrated campaign errors — Acronym: OLAC (Object level access control) — variants: CJMOC errors
-* Do not confuse: error code CJMOC-5023-199 (warning) ≠ errors with an HTTP status of 400, 403, or 500
-* Do not confuse: **[!UICONTROL Draft]** status ≠ **[!UICONTROL Live]** status ≠ Test status
 * Do not confuse: a recurring schedule ≠ **[!UICONTROL Triggered by a signal]**
 
 **FAQ:**
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. For a permission or access error, contact your administrator; otherwise contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 * **Q: How is an Orchestrated campaign error code structured?** — The prefix CJMOC, an error number, and an HTTP status.
 * **Q: Where do I find the activity concerned by an error?** — The campaign logs and the alerts on the canvas show the error code and the message. Open the campaign logs to find the activity concerned.
@@ -97,7 +97,9 @@ For complete understanding, this information should be combined with the documen
 * Permissions: Built-in permissions (administration/ootb-permissions.md)
 * Signals and chained campaigns: Trigger Orchestrated campaigns using a signal (orchestrated/trigger-orchestrated-campaign.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 425d9e9d -->
+<!-- ai-section-version: 1 | source-hash: a2e91c75 -->

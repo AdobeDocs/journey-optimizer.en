@@ -12,6 +12,7 @@ For complete understanding, this information should be combined with the documen
 * **TL;DR:** This page explains what the errors returned when you create relational schemas (manually, from a DDL file, or from an Excel template) and enable datasets for Orchestrated campaigns mean, and how to fix each family of errors.
 
 **Intents:**
+* Know what to note and whom to contact when an error persists after the listed steps
 
 * Find the cause and the fix for a CJMDMS error returned during relational schema creation or dataset enablement
 * Identify which error family (files and formats, Excel template, primary key and version descriptor, relationships, identity, dataset enablement, names and permissions) an error belongs to
@@ -43,10 +44,11 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Orchestrated campaigns — variants: orchestrated campaign extension (as in the error messages)
+* Canonical name: Relational schema and dataset errors — variants: CJMDMS errors, schema errors, dataset errors
 * Do not confuse: "primary key" ≠ "version descriptor" (a field cannot be both)
 
 **FAQ:**
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. For a permission or access error, contact your administrator; otherwise contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 * **Q: How is an error code structured?** — The prefix **CJMDMS**, followed by an error number and an HTTP status, for example CJMDMS-100130-413.
 * **Q: Why is my DDL file rejected?** — Depending on the message: the file is larger than 10 MB (CJMDMS-100130-413), defines more than 200 tables (100127-400, 100240-400), has malformed content (100126-422), columns that are not properly defined (100186-400), or a table that is not properly defined (100187-400), contains syntax that is not supported (100189-400) or a statement other than **[!UICONTROL CREATE TABLE]** (100201-400), defines tables with the same name (100184-400), columns with the same name in a table (100185-400), or a column with a missing or invalid data type (100188-400), or has a relationship that refers to tables that are not defined in the DDL (100256-400). Each code has its own fix, listed under Troubleshooting.
@@ -124,7 +126,9 @@ For complete understanding, this information should be combined with the documen
 * Overview of data modeling: Data modeling overview (orchestrated/gs-schemas.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
 * Permissions for 403 errors: Built-in Roles (administration/ootb-permissions.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 3af56de6 -->
+<!-- ai-section-version: 1 | source-hash: 6a204a60 -->

@@ -18,6 +18,7 @@ For complete understanding, this information should be combined with the documen
 * Select a valid channel configuration and a valid campaign for an IP warmup plan.
 * Fix an error on the phases, the domain groups, or the runs of a plan, including when you delete or split a phase or a run.
 * Understand why a run cannot be activated, and what to do when an activated run is cancelled or fails.
+* Know what to note and whom to contact when an error persists after the listed steps.
 
 **Glossary:**
 
@@ -30,7 +31,7 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Supported plan file formats: .xls and .xlsx.
-* A run must be activated at least 12 hours before its send time (hard limit) (**CJMRT-180036-400**, **CJMRT-180039-403**).
+* The send time of a run must be at least 12 hours from the current time (hard limit) (**CJMRT-180036-400**, **CJMRT-180039-403**).
 * A run can be activated only after all the previous runs have ended (**CJMRT-180038-403**).
 * The number of targeted profiles must not be negative, and the total number of targeted profiles cannot be zero (**CJMRT-180034-400**, **CJMRT-180035-400**). The 'Last engagement' period cannot be negative (**CJMRT-180040-400**).
 * The retry period must be within the range shown in the message, in minutes (**CJMRT-180022-400**).
@@ -60,6 +61,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why can I not activate a run?** — Set a send time at least 12 hours from now (**CJMRT-180036-400**, **CJMRT-180039-403**), and activate a run only after all the previous runs have ended (**CJMRT-180038-403**). A status change that is not allowed returns **CJMRT-180037-403**: check the status of the run in the plan and use an action available for it (activate a **[!UICONTROL Draft]** run, cancel a **[!UICONTROL Live]** run, or duplicate the run). For **CJMRT-180036-400** and **CJMRT-180039-403**, use **[!UICONTROL Edit run]** (More actions icon).
 * **Q: What do I do when a run is cancelled or fails after activation?** — Duplicate the run and activate it again, except for **CJMRT-180060-500**, where you split the run to a new phase and select a different campaign and audience. For **CJMRT-180050-500**, first click the Properties icon next to the plan name and set a duration in the **[!UICONTROL Retry run time]** drop-down list. For **CJMRT-180051-500** and **CJMRT-180052-500**, activate it at a later date and time. For **CJMRT-180054-500**, set a later **[!UICONTROL Send time]** on the duplicate, then activate it. For **CJMRT-180053-500**, review the targeted profiles in **[!UICONTROL Edit run]**, then lower the number or disable the **[!UICONTROL Cancel activated runs in case of errors]** option before you activate it again. For **CJMRT-180051-500** and **CJMRT-180052-500**, splitting the run to a new phase is another documented fix.
 * **Q: Why can I not delete a plan, a phase, or a run?** — Only a plan with the status "Not started", a phase with no activated run, and a run in **[!UICONTROL Draft]** status can be deleted (**CJMRT-180043-403**, **CJMRT-180044-403**, **CJMRT-180045-403**). If the plan has started, select **[!UICONTROL More]** > **[!UICONTROL Mark as completed]** instead, once no run is **[!UICONTROL Live]**. If a run of the phase was activated, keep the phase and select **[!UICONTROL Split runs to a new phase]** from the More actions icon of a **[!UICONTROL Draft]** run. For a run that is not in **[!UICONTROL Draft]** status, select **[!UICONTROL Duplicate run]** from the More actions icon.
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 **Troubleshooting:**
 
@@ -115,7 +117,9 @@ For complete understanding, this information should be combined with the documen
 * Campaigns for IP warmup: Create IP warmup campaigns (configuration/ip-warmup-campaign.md)
 * Defining phases, defining and activating runs, and run statuses: Run the IP warmup plan (configuration/ip-warmup-execution.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: b2e1f60b -->
+<!-- ai-section-version: 1 | source-hash: de6ae2e3 -->

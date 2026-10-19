@@ -12,6 +12,7 @@ For complete understanding, this information should be combined with the documen
 * **TL;DR:** This page lists the errors that [!DNL Adobe Journey Optimizer] returns when you publish fragments, reference them in content, or use Adobe Experience Manager content fragments and assets, with the cause and the fix for each error family.
 
 **Intents:**
+* Know what to note and whom to contact when an error persists after the listed steps
 
 * Find the cause and the fix for an error returned when publishing a fragment or referencing fragments in content
 * Understand the parts of an error code: the prefix (CJMMAS, AJOCBS, AJOAGS), the error number, and the HTTP status
@@ -56,6 +57,7 @@ For complete understanding, this information should be combined with the documen
 * Acronym: AEM — Adobe Experience Manager
 
 **FAQ:**
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. For a permission or access error, contact your administrator; otherwise contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 * **Q: What do the parts of an error code mean?** — Errors use the prefixes CJMMAS (fragments and assets), AJOCBS and AJOAGS (AEM content), followed by an error number and an HTTP status.
 * **Q: I cannot publish a fragment because of a permission error. What do I do?** — For CJMMAS-1122-403, ask your administrator to grant the **[!DNL Publish Fragment]** permission (included in the Content Library Manager product profile).
@@ -103,7 +105,9 @@ For complete understanding, this information should be combined with the documen
 * AEM content fragment symptoms such as a fragment not visible in the selector: Considerations and troubleshooting (integrations/aem-fragments-limitations.md)
 * AEM assets: Create and manage assets (integrations/assets.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 4bb9dfbb -->
+<!-- ai-section-version: 1 | source-hash: 07f11dd9 -->

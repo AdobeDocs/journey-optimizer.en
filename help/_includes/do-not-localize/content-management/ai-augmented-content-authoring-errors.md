@@ -17,6 +17,7 @@ For complete understanding, this information should be combined with the documen
 * Tell a warning (status 200) from an error that blocks saving or publishing.
 * Find the cause and the fix of an error for email, push, mobile message (SMS), in-app, or direct mail content.
 * Find the cause and the fix of a permission, lifecycle, channel configuration, decision policy, or expression template error.
+* Know what to note and whom to contact when an error persists after the listed steps.
 
 **Glossary:**
 
@@ -68,6 +69,9 @@ Your role lacks the permission named in the message (write, read, publish, or de
 
 **The save fails because the item was updated elsewhere (`JOMAL-1101-409`). What do I do?**
 Someone else, or another browser tab, saved a newer version. Refresh the page to load the latest version, then reapply your changes and save again.
+
+**What do I do if the error persists after the listed steps?**
+Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 **Troubleshooting:**
 
@@ -147,7 +151,9 @@ Someone else, or another browser tab, saved a newer version. Refresh the page to
 * Spam score and issues: Email spam report (content-management/spam-report.md)
 * Limits and guardrails: Guardrails and limitations (start/guardrails.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: b4ca32b3 -->
+<!-- ai-section-version: 1 | source-hash: 1a8fc167 -->

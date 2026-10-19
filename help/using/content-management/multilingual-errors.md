@@ -19,6 +19,8 @@ keywords: error, troubleshooting, multilingual, language settings, translation, 
 
 Multilingual errors use the prefixes **CJMRT** (language settings), **AJOCTO** (translation jobs), and **CJMMAS** (messages), followed by an error number and an HTTP status. For the other error code prefixes, see the [error codes reference](../building-journeys/error-codes-reference.md).
 
+If the error persists after you follow the steps, note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or [contact Adobe Support](../start/user-interface.md#support-ticket-guidelines) with these details. For all the support options, see [Getting support](../building-journeys/error-codes-reference.md#getting-support).
+
 ## Language settings {#language-settings}
 
 These errors occur when you create, edit, or delete a language setting.

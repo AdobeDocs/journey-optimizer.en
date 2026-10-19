@@ -12,6 +12,7 @@ For complete understanding, this information should be combined with the documen
 * **TL;DR:** The page gives the cause and the fix for the personalization errors that [!DNL Adobe Journey Optimizer] returns when you validate or publish content with personalization expressions, or when you create an encryption key, grouped into four families: variables and paths, helpers, syntax and content validation, and URL parameter encryption keys.
 
 **Intents:**
+* Know what to note and whom to contact when an error persists after the listed steps.
 
 * Identify an error from its code: the prefix (**CJMTL** or **CJMRT**), the error number, and the HTTP status.
 * Find why a field, a variable, a path, or a namespace in an expression is reported as not found, or as having the wrong type.
@@ -40,6 +41,7 @@ For complete understanding, this information should be combined with the documen
 * **Do not confuse:** **CJMTL** (template rendering) ≠ **CJMRT** (runtime). The same kind of problem can return a code with either prefix, for example a variable that is not found returns **CJMTL-010001-422** or **CJMRT-010001-422**.
 
 **FAQ:**
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. For a permission or access error, contact your administrator; otherwise contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 * **Q: What do the prefixes CJMTL and CJMRT mean?** — **CJMTL** is for template rendering and **CJMRT** is for runtime. The prefix is followed by an error number and an HTTP status.
 * **Q: Why do I get "Path {variable} not found" or "{variable} not found"?** — For CJMTL-010001-422 ("{variable} not found") and CJMRT-010001-422 ("Path {variable} not found"), the variable or path named in the message is not found. In the personalization editor, check the name and path of the variable, and replace it with a field defined in the schema. CJMRT-070003-422 (variable not found in the execution context) and CJMRT-070008-422 (path not supported) have their own causes, listed under Troubleshooting.
@@ -83,7 +85,9 @@ For complete understanding, this information should be combined with the documen
 * Helper functions: Helper functions (personalization/functions/helpers.md)
 * Creating and managing encryption keys: Encrypt URL parameters in tracking links (personalization/url-parameter-encryption.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 94a32d5e -->
+<!-- ai-section-version: 1 | source-hash: 56df67dd -->

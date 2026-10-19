@@ -12,6 +12,7 @@ For complete understanding, this information should be combined with the documen
 * **TL;DR:** This page lists the errors and warnings that [!DNL Adobe Journey Optimizer] returns when you create language settings, link them to translation projects, run translation jobs, or save multilingual messages, with the cause and the fix of each.
 
 **Intents:**
+* Know what to note and whom to contact when an error persists after the listed steps
 
 * Find the cause and the fix of an error returned when creating, editing, or deleting a language setting
 * Fix errors caused by a translation project that is missing, not active, or not in sync with a language setting
@@ -54,11 +55,11 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Multilingual content errors — variants: language setting errors, translation job errors, multilingual message errors
-* Do not confuse: error codes ending in -200 (warnings, for example CJMMAS-5103-200, CJMMAS-5106-200, CJMMAS-5107-200) ≠ error codes ending in -400, -403, -404, -409, or -422
 * Do not confuse: language setting type **[!UICONTROL Translation project]** ≠ language setting type **[!UICONTROL Manual Translation]**
 * Do not confuse: CJMRT (language settings) ≠ AJOCTO (translation jobs) ≠ CJMMAS (messages)
 
 **FAQ:**
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. For a permission or access error, contact your administrator; otherwise contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 * **Q: How is a multilingual error code structured?** — It is a prefix (CJMRT for language settings, AJOCTO for translation jobs, CJMMAS for messages), an error number, and an HTTP status. For the other error code prefixes, see the error codes reference.
 * **Q: Which errors are warnings?** — CJMMAS-5103-200, CJMMAS-5106-200, and CJMMAS-5107-200 are described as warnings. They concern missing variants and an empty fallback variant.
@@ -94,7 +95,9 @@ For complete understanding, this information should be combined with the documen
 * Overview of multilingual content: Get started with multilingual content (content-management/multilingual-gs.md)
 * Locales: Create a locale (content-management/multilingual-locale.md)
 * Language providers: Create a language provider (content-management/multilingual-provider.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: f2cdca50 -->
+<!-- ai-section-version: 1 | source-hash: 4d091cd1 -->

@@ -18,6 +18,7 @@ For complete understanding, this information should be combined with the documen
 * Fix an incomplete activity (split, **[!UICONTROL Rank]**, **[!UICONTROL Exclude]**, filter) in a composition
 * Fix enrichment dataset errors (dataset, join key, attribute, schema)
 * Understand the publication limit, permission, and evaluation errors
+* Know what to note and whom to contact when an error persists after the listed steps
 
 **Glossary:**
 
@@ -57,6 +58,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does "The selected enrichment dataset is greater than 1 GB." appear?** — CJMRT-170040-400: the enrichment dataset is larger than 1 GB. Select another dataset, or reduce its size. For an empty dataset (CJMRT-170041-400), select another dataset.
 * **Q: What do I do when "The composition has been modified. Please refresh the page." appears?** — CJMRT-170043-412: the composition has been modified. Refresh the page, then make your change again.
 * **Q: Why can I not delete a composition (CJMRT-170047-424)?** — The audiences of the composition are used in an activation or in another audience. Remove them from there, then delete the composition.
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 **Troubleshooting:**
 
@@ -76,7 +78,9 @@ For complete understanding, this information should be combined with the documen
 * Publication limit: Journey Optimizer guardrails and limitations (start/guardrails.md)
 * Compositions created with federated audience composition: Federated audience composition (audience/federated-audience-composition.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 95683d32 -->
+<!-- ai-section-version: 1 | source-hash: 7699f3c5 -->

@@ -17,6 +17,7 @@ For complete understanding, this information should be combined with the documen
 * Find the cause and the fix of an error returned by **[!UICONTROL Validate]**, by a test, or by publication.
 * Find which activity or rule an error family relates to (structure, **[!UICONTROL Read audience]**, Adobe Campaign actions, **[!UICONTROL Update profile]**, **[!UICONTROL Dataset lookup]**, **[!UICONTROL Jump]**, **[!UICONTROL Wait]**, **[!UICONTROL Condition]**, events, **[!UICONTROL Content decision]**, Select package, versions, fragments, version comparison).
 * Find the limits that trigger some of the errors (fields, keys, journey size, fragment activities).
+* Know what to note and whom to contact when an error persists after the listed steps.
 
 **Glossary:**
 
@@ -72,6 +73,9 @@ The journey is larger than the default maximum payload size of 2 MB. Check the *
 **A fragment could not be activated because it has validation errors (`AJOJAS-8025-400`, `8033-400`). What do I do?**
 Open the fragment, fix each error shown on its canvas, then select the **[!UICONTROL Activate]** icon again.
 
+**What do I do if the error persists after the listed steps?**
+Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
+
 **Troubleshooting:**
 
 * **Journey structure.** Causes: no entry activity, or activities in a layout that is not supported (`AJOJAS-1000-400`, `3018-400`, `3027-400`, `3028-403`). Fixes: `1000-400`, add an entry activity; `3018-400`, place the activities other than event and **[!UICONTROL Wait]** activities one after the other; `3027-400`, keep the timeout on one event, or place the events one after the other; `3028-403`, disable the timeout on the first event of the journey.
@@ -105,7 +109,9 @@ Open the fragment, fix each error shown on its canvas, then select the **[!UICON
 * Common questions: Journey FAQs (building-journeys/journey-faq.md)
 * Limits and guardrails: Guardrails and limitations (start/guardrails.md)
 * Fragment guardrails and statuses: Fragment guardrails and limitations (building-journeys/journey-fragments.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: b7226cf5 -->
+<!-- ai-section-version: 1 | source-hash: 2967f3a6 -->
