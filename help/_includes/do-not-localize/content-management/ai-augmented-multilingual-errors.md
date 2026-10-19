@@ -48,7 +48,7 @@ For complete understanding, this information should be combined with the documen
 
 * Language settings errors (CJMRT): apply when you create, edit, or delete a language setting.
 * Translation project errors: apply when a language setting is linked to a translation project.
-* Translation job errors (AJOCTO): apply when you create, cancel, or run a translation job from a campaign or a journey. Missing-content errors are documented for email variants (subject, HTML body), SMS variants (content), and push variants (title, message).
+* Translation job errors (AJOCTO): apply when you create, cancel, or run a translation job from a campaign or a journey. Missing-content errors are documented for email variants (subject, HTML body), SMS variants (content), and push variants (title, body).
 * Message errors and warnings (CJMMAS): apply when you save or publish a message that has several locales.
 
 **Terminology:**
@@ -64,22 +64,24 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which errors are warnings?** — CJMMAS-5103-200, CJMMAS-5106-200, and CJMMAS-5107-200 are described as warnings. They concern missing variants and an empty fallback variant.
 * **Q: Why can I not delete a language setting?** — CJMRT-080903-403: the language setting is used by a campaign or a journey. Remove it from the campaigns and journeys that use it, then delete it.
 * **Q: Why does a language setting fail to save with a locale error?** — Check the locale rules: at least two locales (CJMRT-080905-400), no duplicate locale (CJMRT-080904-400), up to 50 locales (CJMRT-080906-400), and at least one profile language preference attribute for each locale (CJMRT-080907-400).
-* **Q: What do I do when the language setting and the translation project do not match?** — Errors CJMRT-080913-400, AJOCTO-5113-400, AJOCTO-5127-400, and AJOCTO-5136-400 mean they are not in sync. Make the locales of the translation project match those of the language setting, keep the same primary variant, then try again.
-* **Q: Why is my translation job not created?** — Possible causes: a translation job is already In Progress for this content (AJOCTO-5107-409, wait until it completes), the primary variant cannot be found (AJOCTO-5128-404, create it first), or the variant to translate has missing content (AJOCTO-5115-400 to AJOCTO-5119-400, add the missing subject, HTML body, content, title, or message).
-* **Q: What happens when the fallback variant is empty?** — CJMMAS-5106-200 and CJMMAS-5107-200 are warnings. Author the fallback variant so that profiles who match no locale receive content. CJMMAS-5108-422 is returned when the fallback variant has not been authored.
+* **Q: What do I do when the language setting and the translation project do not match?** — Errors CJMRT-080913-400, AJOCTO-5113-400, AJOCTO-5127-400, and AJOCTO-5136-400 mean they are not in sync, and each has its own fix. For CJMRT-080913-400, make the locales of the translation project and the language setting the same, keep the same primary variant, then try again. For AJOCTO-5113-400, sync them (the locales or the primary variant do not match), then try again. For AJOCTO-5127-400, make the locales of the translation project match those of the language setting, then try again. For AJOCTO-5136-400, keep the same primary variant in both, then try again.
+* **Q: Why is my translation job not created?** — Possible causes: a translation job is already In Progress for this content (AJOCTO-5107-409, wait until it completes), the primary variant cannot be found (AJOCTO-5128-404, create it first), or the variant to translate has missing content (AJOCTO-5115-400 to AJOCTO-5119-400, add the missing subject, HTML body, content, title, or body).
+* **Q: What happens when the fallback variant is empty?** — CJMMAS-5106-200 and CJMMAS-5107-200 are warnings. For CJMMAS-5106-200, the first locale named in the message is used as the fallback variant for email, push, and SMS. For CJMMAS-5107-200, nothing is delivered in case of fallback. In both cases, author the fallback variant. CJMMAS-5108-422 is returned when the fallback variant has not been authored; author it before you continue.
 * **Q: Which language setting status does a message need?** — An active one (CJMMAS-5104-422). Select an active language setting.
 
 **Troubleshooting:**
 
 * **CJMRT-080902-409** — "A language setting with the name {name} already exists. Please enter a unique language setting name and try again." Enter a unique name.
 * **CJMRT-080909-400** — "Profile preferences attribute XDM path does not exist. Verify the path and try again." Select an existing attribute from the **[!UICONTROL Profile language preference attributes]** menu.
-* **CJMRT-080911-400**, **AJOCTO-5111-400** — A translation project is needed only for a language setting of the **[!UICONTROL Translation Project]** type. Add the project to such a setting, and leave it empty for manual translation.
+* **CJMRT-080911-400** — The language setting is for manual translation, which does not use a translation project. Leave the translation project empty.
+* **AJOCTO-5111-400** — The language setting has no translation project. Add a translation project to a language setting of the **[!UICONTROL Translation Project]** type.
 * **AJOCTO-5108-400**, **AJOCTO-5109-400** — "The type of the language setting must be 'Translation Project'." and "The type of the language setting must be 'Manual Translation'." Select a language setting of the type named in the message.
 * **AJOCTO-5110-400** — "The language setting must be 'Active'." Activate it, or select an active language setting.
 * **CJMRT-080912-400**, **AJOCTO-5112-400** — The translation project is not active. Select an active translation project.
 * **CJMRT-080914-400** — "Translation project with given ID not found. Please provide a valid ID to create a language setting." Select an existing translation project.
 * **CJMMAS-5101-422** — "Primary variant is missing in the multilingual inline message." Create the primary variant.
-* **CJMMAS-5102-422**, **CJMMAS-5105-422** — A multilingual message needs at least two variants, and its language setting at least two locales. Add the missing variants or locales.
+* **CJMMAS-5102-422** — A multilingual message needs at least two variants. Add the missing variants.
+* **CJMMAS-5105-422** — The language setting of the message has fewer than two locales. Add the missing locales.
 * **CJMMAS-5103-200** — Warning: some variants of the message are missing. Author the variants named in the message, or accept that profiles in these locales receive the fallback variant.
 
 **Related pages:**
@@ -93,4 +95,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 8dcd8ee2 -->
+<!-- ai-section-version: 1 | source-hash: 9315f190 -->

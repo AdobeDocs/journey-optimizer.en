@@ -34,7 +34,7 @@ For complete understanding, this information should be combined with the documen
 * A campaign can contain up to 10 channel activities (hard limit). Error CJMOC-6017-400 is returned when the number is exceeded. Reduce the number of channel activities, or split the delivery across several campaigns.
 * A campaign needs at least one channel activity or **[!UICONTROL Save audience]** activity (CJMOC-5002-400).
 * A test can be started only while the campaign is in **[!UICONTROL Draft]** status, and not while a test is already running on the campaign (CJMOC-2001-400, CJMOC-2002-400).
-* Only a campaign in **[!UICONTROL Draft]** status can be edited or published this way; a campaign in **[!UICONTROL Live]** status cannot be edited.
+* A campaign must be in **[!UICONTROL Draft]** status to be published (CJMOC-1203-400, CJMOC-6005-400); a campaign in **[!UICONTROL Live]** status cannot be edited (CJMOC-1202-400).
 * A campaign cannot be both triggered by a signal and recurring (CJMOC-6041-400).
 * A recurring schedule cannot use a fixed time (CJMOC-5014-400).
 * Waves are not available for recurring campaigns or signal-triggered campaigns (CJMOC-6045-400, CJMOC-6046-400).
@@ -47,7 +47,7 @@ For complete understanding, this information should be combined with the documen
 
 * The **[!UICONTROL Publish orchestrated campaigns]** permission to publish or trigger a campaign (CJMOC-1005-403).
 * Access to the attributes used by the campaign (CJMOC-1004-403). Remove those attributes from the campaign if access cannot be granted.
-* Object-level access to the object concerned (CJMOC-1215-403, 1216-403, "OLAC check failed").
+* Object-level access to the object concerned (CJMOC-1215-403, CJMOC-1216-403, "OLAC check failed").
 
 **Applicability:**
 
@@ -62,18 +62,19 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: How is an Orchestrated campaign error code structured?** — The prefix CJMOC, an error number, and an HTTP status. Where the page lists a second code without the prefix (for example 1216-403), the prefix is CJMOC.
+* **Q: How is an Orchestrated campaign error code structured?** — The prefix CJMOC, an error number, and an HTTP status.
 * **Q: Where do I find the activity concerned by an error?** — The campaign logs and the alerts on the canvas show the error code and the message. Open the campaign logs to find the activity concerned.
 * **Q: Which error is a warning?** — CJMOC-5023-199, about the **[!UICONTROL Load file]** activity in a scheduled campaign. Use another data source for scheduled campaigns, or run the campaign once.
 * **Q: Which permission do I need to publish or trigger a campaign?** — **[!UICONTROL Publish orchestrated campaigns]** (CJMOC-1005-403). For other permission errors, ask your administrator to grant the permission on your product profile.
-* **Q: Why can I not publish or edit my campaign?** — The campaign is not in **[!UICONTROL Draft]** status (CJMOC-1201-400, 1203-400, 6005-400), is **[!UICONTROL Live]** (CJMOC-1202-400), or is still running (CJMOC-6006-400). Stop it, or use **[!UICONTROL Back to draft]** when it is available, then edit and publish again.
-* **Q: Why can I not start a test?** — The campaign is not in **[!UICONTROL Draft]** status (CJMOC-2001-400), a test is already running (CJMOC-2002-400), or the campaign has no activities (CJMOC-2006-400).
-* **Q: Why do I get a schedule error?** — The campaign has no schedule (CJMOC-5012-400), no execution in the future (CJMOC-5013-400), a fixed time with a recurring schedule (CJMOC-5014-400), or a fixed time in the past (CJMOC-5015-400).
+* **Q: Why can I not publish or edit my campaign?** — The campaign is not in **[!UICONTROL Draft]** status, or its ID is not set (CJMOC-1201-400), it cannot be published because it is not in **[!UICONTROL Draft]** status (CJMOC-1203-400), or its current version is not in **[!UICONTROL Draft]** status (CJMOC-6005-400): check the campaign status, and duplicate the campaign to start again from a Draft. The campaign is **[!UICONTROL Live]** and cannot be edited (CJMOC-1202-400): stop it, or use **[!UICONTROL Back to draft]** when it is available, then edit the campaign and publish it again. The campaign is still running (CJMOC-6006-400): stop it, or wait for it to finish, then publish the campaign again.
+* **Q: Why can I not start a test?** — The campaign is not in **[!UICONTROL Draft]** status (CJMOC-2001-400: check the campaign status, or duplicate the campaign), a test is already running (CJMOC-2002-400: stop it or restart it, then start a new test), or the campaign has no activities (CJMOC-2006-400: add activities to the canvas and save the campaign).
+* **Q: Why do I get a schedule error?** — The campaign has no schedule (CJMOC-5012-400: define a schedule), no execution in the future (CJMOC-5013-400: update the start date, or extend the validity period of the schedule), a fixed time with a recurring schedule (CJMOC-5014-400: remove the fixed time, or use a one-time schedule), or a fixed time in the past (CJMOC-5015-400: set a date and time in the future).
 * **Q: Why can I not publish a campaign chained from an End activity?** — The downstream campaign must be live (CJMOC-6042-400) and set to **[!UICONTROL Triggered by a signal]** (CJMOC-6043-400), and it must exist and be accessible (CJMOC-6044-400).
 
 **Troubleshooting:**
 
-* **CJMOC-5008-400**, **5009-400** — The activity is disabled or paused. Enable the activity again, then retry.
+* **CJMOC-5008-400** — The activity named in the message is disabled. Enable the activity again, then retry.
+* **CJMOC-5009-400** — The activity named in the message is paused. Enable the activity again, then retry.
 * **CJMOC-5003-400** — The activity has an empty query. Open the activity and build the rule, or select an audience.
 * **CJMOC-5016-400** — Open the **[!UICONTROL Read audience]** activity and select an audience.
 * **CJMOC-5022-400** — The audience uses a different merge policy than the campaign. Select an audience that uses the merge policy of the campaign, or change the merge policy of the campaign.
@@ -94,4 +95,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 704adbf6 -->
+<!-- ai-section-version: 1 | source-hash: ab1d8470 -->
