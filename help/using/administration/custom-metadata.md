@@ -30,7 +30,7 @@ The values you enter are recorded in the entity datasets. You can use them for d
 
 ## How custom metadata works {#how-it-works}
 
-Custom metadata fields are defined in the [!DNL Adobe Experience Platform] [schemas](../data/get-started-schemas.md) based on the **AJO Entity Class**. Currently, [!DNL Journey Optimizer] automatically provisions a record-based schema for each of three entities — campaigns, journeys and Orchestrated campaigns:
+Custom metadata fields are defined in the [!DNL Adobe Experience Platform] [schemas](../data/get-started-schemas.md) based on the **AJO Entity Class**. Currently, [!DNL Journey Optimizer] automatically provisions a record-based schema for each of three entities — Action campaigns, journeys and Orchestrated campaigns:
 
 * **AJO Campaign Custom Metadata Schema**
 * **AJO Journey Custom Metadata Schema**
