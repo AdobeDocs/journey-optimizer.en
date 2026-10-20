@@ -61,7 +61,7 @@ If you are new to [!DNL Adobe Journey Optimizer], start with the [quick start gu
 
 ![Configuration menu in Journey Optimizer](assets/admin-menu.png)
 
-You can also configure connections to external systems via custom Data Sources and custom actions. This allows you, for example, to enrich your journeys with data coming from an external reservation system, or send messages using a third-party system, such as Epsilon or Facebook. Learn how to [integrate Journey Optimizer with external systems](external-systems.md).
+You can also configure connections to external systems via custom Data Sources and custom actions. This allows you, for example, to enrich your journeys with data coming from an external reservation system, or send messages using a third-party system. Learn how to [integrate Journey Optimizer with external systems](external-systems.md).
 
 ## Before you build journeys: configuration checklist {#checklist}
 
@@ -69,7 +69,7 @@ Use this checklist to make sure the most important configuration pieces are in p
 
 | Step | What you do | Who typically does it | Where in the UI | Learn more |
 | ---- | ----------- | --------------------- | --------------- | ---------- |
-| 1 | Prepare schemas, datasets, and identities in Adobe Experience Platform | Data Engineer | **Adobe Experience Platform** > Schemas, Datasets, Identities | [Get started with Adobe Journey Optimizer](../start/quick-start.md) |
+| 1 | Prepare schemas, datasets, and identities in Adobe Experience Platform | Data Engineer | **Adobe Experience Platform** > Schemas, Datasets, Identities | — |
 | 2 | Expose profile fields and history via the Experience Platform data source | Data Admin / Data Engineer | **Journey Optimizer** > Configurations > **Data sources** | [Get started with data sources](../datasource/about-data-sources.md) |
 | 3 | Configure events that trigger journeys (unitary or business events; audience qualification events are selected on the journey canvas) | Data Admin / Developer | **Journey Optimizer** > Configurations > **Events** | [Get started with events](../event/about-events.md) |
 | 4 | Configure actions, if you must call third-party systems (custom actions) | Technical user | **Journey Optimizer** > Configurations > **Actions** | [Get started with custom actions](../action/action.md) |
@@ -162,7 +162,7 @@ Learn more: [Action activity](../building-journeys/journey-action.md)
 
 Use **custom actions** when you want a journey to call an **external HTTP service** via a REST API with a JSON payload. Typical use cases:
 
-* Sending messages through a **third-party provider** (for example, Epsilon or internal gateways).
+* Sending messages through a **third-party provider** (for example, external messaging platforms or internal gateways).
 * Writing to **internal systems** (for example, CRM, ticketing, Order Management).
 * Posting **webhooks** to other applications.
 
