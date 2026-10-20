@@ -38,9 +38,15 @@ Custom metadata fields are defined in the [!DNL Adobe Experience Platform] [sche
 
 ## Define your custom metadata fields {#define-fields}
 
-To define custom metadata fields, add them to a custom field group in the schema of the entity type (campaigns, journeys, or Orchestrated campaigns) where you want to use them. You can reuse the same field group in the schemas of other entity types.
+To define custom metadata fields, add them to a custom field group in the schema of the entity type (Action campaigns, journeys, or Orchestrated campaigns) where you want to use them.
 
-1. In [!DNL Adobe Experience Platform], browse to **[!UICONTROL Schemas]**. From the **[!UICONTROL Browse]** tab, open one of the custom metadata schemas, for example **AJO Campaign Custom Metadata Schema**.
+You can use a different field group for each entity type, but reusing the same field group in the schemas of other entity types ensures that the same metadata fields are tracked across all your orchestration types.
+
+>[!NOTE]
+>
+>You need the **[!DNL Manage schemas]** permission to edit the custom metadata schemas. [Learn more about permissions](ootb-permissions.md)
+
+1. In [!DNL Adobe Experience Platform], browse to **[!UICONTROL Data Management]** > **[!UICONTROL Schemas]**. From the **[!UICONTROL Browse]** tab, open one of the custom metadata schemas, for example **AJO Campaign Custom Metadata Schema**.
 
     ![Custom metadata schemas in the Schemas browse tab](assets/metadata-campaign-schema.jpg)
 
@@ -50,7 +56,7 @@ To define custom metadata fields, add them to a custom field group in the schema
 
 1. In the schema's structure, from the **[!UICONTROL Field groups]** section, click **[!UICONTROL Add]**.
 
-    ![Add button for field groups in the campaign custom metadata schema](assets/metadata-schema-add-field-group.jpg){width="60%"}
+    ![Add button for field groups in the campaign custom metadata schema](assets/metadata-schema-add-field-group.jpg){width="60%" zoomable="yes"}
 
     Select **[!UICONTROL Create new field group]**. Enter a display name, for example **AJO Custom Metadata**, and click **[!UICONTROL Add field group]**. [Learn how to add field groups and fields to a schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui){target="_blank"}
 
@@ -64,12 +70,12 @@ To define custom metadata fields, add them to a custom field group in the schema
     >
     >You can also select the field group at any time while defining the field from the **[!UICONTROL Field Group]** drop-down list.
 
-    ![Define a new field in the campaign custom metadata schema](assets/metadata-schema-define-field.jpg){width="70%" zoomable="yes"}
+    ![Define a new field in the campaign custom metadata schema](assets/metadata-schema-define-field.jpg){width="60%" zoomable="yes"}
 
 1. For each field:
 
     * Define a name, a display name and, optionally, a description.
-    * Set the field type to **[!UICONTROL String]**.
+    * Set the field type to **[!UICONTROL String]**. Fields of any other type are not available for selection in the **[!UICONTROL Metadata]** configuration screen.
     * To provide a list of values, define the field as an enum and add each value with its display name.
 
     >[!IMPORTANT]
@@ -101,17 +107,17 @@ To define custom metadata fields, add them to a custom field group in the schema
 >title="About custom metadata"
 >abstract="Add up to 10 schema fields per entity type to capture custom metadata on your journeys, campaigns and Orchestrated campaigns."
 
-Once your fields are defined in the schemas, you can define how they will appear in the properties of your journeys and campaigns.
+Once your fields are defined in the schemas, use the **[!UICONTROL Metadata]** configuration screen to choose which fields appear in the properties of your journeys and campaigns, and in which order.
 
 1. In the left navigation, browse to **[!UICONTROL Administration]** > **[!UICONTROL Configurations]**, then click **[!UICONTROL Manage]** in the **[!UICONTROL Metadata]** card.
 
     ![Metadata card in the Configurations dashboard](assets/metadata-card.jpg)
 
-1. The **[!DNL Metadata]** page contains one tab per entity type: **[!UICONTROL Journeys]**, **[!UICONTROL Campaigns]** and **[!UICONTROL Orchestrated Campaigns]**.
+1. The **[!UICONTROL Metadata]** configuration screen contains one tab per entity type: **[!UICONTROL Journeys]**, **[!UICONTROL Campaigns]** and **[!UICONTROL Orchestrated Campaigns]**.
 
-    ![Metadata page showing the Journeys, Campaigns and Orchestrated Campaigns tabs](assets/metadata-campaign-tab.jpg){width="80%" zoomable="yes"}
+    ![Metadata configuration screen showing the Journeys, Campaigns and Orchestrated Campaigns tabs](assets/metadata-campaign-tab.jpg){width="80%" zoomable="yes"}
 
-1. For each tab, the list is synchronized with the corresponding schema. When you add or change fields or lists of values in the schema, the changes are reflected here.
+1. For each tab, the list is synchronized with the corresponding schema. When you add or change fields or lists of values in the [custom metadata schema](#define-fields), the changes are reflected here.
 
     >[!NOTE]
     >
@@ -123,7 +129,7 @@ Once your fields are defined in the schemas, you can define how they will appear
 
 1. To add or remove fields, click the **[!UICONTROL Add fields]** button and check or uncheck the corresponding fields in the list to update the selection.
 
-    ![Fields dialog to select the fields to display in the Metadata page](assets/metadata-fields-selection.jpg){width="80%" zoomable="yes"}
+    ![Fields dialog to select the fields to display in the Metadata configuration](assets/metadata-fields-selection.jpg){width="80%" zoomable="yes"}
 
     >[!CAUTION]
     >
@@ -135,7 +141,7 @@ The configuration is independent for each entity type: you can select different 
 
 ## Fill in metadata values {#fill-values}
 
-Once you have [defined the fields](#define-fields) and [selected them on the Metadata page](#select-fields), they appear in the **[!UICONTROL Metadata fields]** section of the properties of each entity.
+Once you have [defined the fields](#define-fields) and [selected them in the Metadata configuration](#select-fields), they appear in the **[!UICONTROL Metadata fields]** section of the properties of each entity.
 
 ![Metadata fields section in the properties of an Action campaign](assets/metadata-fields-section-campaign.jpg){width="70%" zoomable="yes"}
 

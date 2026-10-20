@@ -75,6 +75,7 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 <p>Define your own business fields, such as line of business, product or cost center, in the schemas provided for Action campaigns, journeys and Orchestrated campaigns. Select up to 10 fields per entity type, then fill them in from the <strong>Metadata fields</strong> section of the properties of each journey or campaign. The values are recorded in dedicated datasets that you can use for reporting, exports and audience creation.</p>
 <p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
 <p>For more information, refer to the <a href="../administration/custom-metadata.md">detailed documentation</a>.</p>
+<p>Availability date: October 29, 2026</p>
 <p>Availability date: October 20, 2026</p>
 </td>
 </tr>
