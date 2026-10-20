@@ -136,14 +136,6 @@ The following improvement is coming to the Email Designer in this release.
 
 * **Define fallback fonts for custom fonts used in email themes** - You can now define a fallback font for any custom (web) font applied through email themes. If a subscriber's email client does not support the custom font, Adobe Journey Optimizer automatically displays the specified fallback font instead of leaving the choice to the email client's default. This keeps email typography closer to your brand guidelines and reduces font-rendering inconsistencies across email clients. <!-- Documentation link: TBD --> Jira: [DOCAC-15662](https://jira.corp.adobe.com/browse/DOCAC-15662){target="_blank"}
 
-### Loyalty {#oct-26-loyalty}
-
-The following improvements are coming to Loyalty in this release.
-
-* **Removal of the non-consecutive Streak type option in Loyalty challenges** - The non-consecutive option has been removed when creating Streak challenges in Loyalty. <!-- Documentation link: TBD --> Jira: [DOCAC-15951](https://jira.corp.adobe.com/browse/DOCAC-15951){target="_blank"}
-
-* **Update documentation for "Autosave challenge drafts" in Challenges** - Challenge edits in Loyalty are now saved automatically as you work, so you can publish a challenge or generate a journey without saving first. <!-- Documentation link: TBD --> Jira: [DOCAC-15730](https://jira.corp.adobe.com/browse/DOCAC-15730){target="_blank"}
-
 ### Administration {#oct-26-administration}
 
 The following capability and improvement are coming to administration in this release.
