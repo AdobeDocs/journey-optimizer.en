@@ -48,21 +48,23 @@ To define custom metadata fields, add them to a custom field group in the schema
     >
     >Do not edit the name of these schemas.
 
-1. In the schema's structure, from the **[!UICONTROL Fields group]** section, click **[!UICONTROL Add]** and select **[!UICONTROL Create new field group]**.
+1. In the schema's structure, from the **[!UICONTROL Field groups]** section, click **[!UICONTROL Add]**.
 
     ![Add button for field groups in the campaign custom metadata schema](assets/metadata-schema-add-field-group.jpg){width="60%"}
 
-    Enter a display name, for example **AJO Custom Metadata**, and click **[!UICONTROL Add field group]**. [Learn how to add field groups and fields to a schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui){target="_blank"}
+    Select **[!UICONTROL Create new field group]**. Enter a display name, for example **AJO Custom Metadata**, and click **[!UICONTROL Add field group]**. [Learn how to add field groups and fields to a schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui){target="_blank"}
 
     ![Create new field group form in the Add field groups dialog](assets/metadata-schema-create-field-group.jpg){width="90%"}
 
-1. Back in the schema's structure, select the field group you created and click the plus icon next to the name of the schema to add a new field.
+1. Back in the schema's structure, select the field group you created in the **[!UICONTROL Field groups]** section. Then click the + icon next to the name of the schema to add a new field.
 
     ![Custom field group selected in the campaign custom metadata schema](assets/metadata-schema-add-field.jpg)
 
     >[!NOTE]
     >
-    >You can also select the field group from the **[!UICONTROL Field Group]** dropdown at any time while defining the field.
+    >You can also select the field group at any time while defining the field from the **[!UICONTROL Field Group]** drop-down list.
+
+    ![Define a new field in the campaign custom metadata schema](assets/metadata-schema-define-field.jpg){width="70%"}
 
 1. For each field:
 
@@ -74,6 +76,8 @@ To define custom metadata fields, add them to a custom field group in the schema
     >
     >Do not mark fields as required in the schema, as this can cause issues when data is inserted. Instead you can make fields required when you [select the fields to display](#select-fields) in the properties of your campaigns or journeys.
 
+    ![Define a new field in the campaign custom metadata schema](assets/metadata-schema-required-enum.jpg){width="40%"}
+
 1. Click **[!UICONTROL Apply]** to save the new field.
 
 1. Repeat these steps to add more fields to your field group and click **[!UICONTROL Save]**.
@@ -81,6 +85,10 @@ To define custom metadata fields, add them to a custom field group in the schema
 1. To use the same fields for other entity types, add the same field group to their schemas.
 
     For example, if you have defined fields for campaigns using the **AJO Custom Metadata** field group in the **AJO Campaign Custom Metadata Schema**, you can reuse this field group in the **AJO Journey Custom Metadata Schema** and in the **AJO Orchestrated Campaign Custom Metadata Schema**.
+
+    ![Select the field group in the journey custom metadata schema](assets/metadata-schema-journey.jpg){width="70%"}
+
+    Select it in the **[!UICONTROL Field groups]** section or from the **[!UICONTROL Field Group]** drop-down list.
 
 >[!NOTE]
 >
