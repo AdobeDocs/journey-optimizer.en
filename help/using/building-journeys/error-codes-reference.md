@@ -217,8 +217,4 @@ If you encounter persistent errors that cannot be resolved using this guide:
 4. **Engage community**: Post questions in the [[!DNL Adobe Journey Optimizer] Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
 5. **Contact Adobe Support**: [Submit a support ticket](../start/user-interface.md#support-ticket-guidelines) with all relevant details
 
->[!NOTE]
->
->This error code reference is continuously updated as new codes are identified and documented. For the most current information, check the [[!DNL Adobe Journey Optimizer] Community blogs](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/bg-p/journey-optimizer-blogs){target="_blank"} regularly.
-
 {{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-error-codes-reference.md}}
