@@ -54,7 +54,8 @@ For complete understanding, this information should be combined with the documen
 * **Q: What should I do when I get a 500-series error?** — Retry after a short delay. If the error persists after following the resolution steps, contact Adobe Support with the complete error code, request ID (if available), steps to reproduce, and relevant configuration details.
 * **Q: Why does CJMMAS-2001-200 show an error banner even though the status is "success"?** — A required unsubscribe link is missing in an email variant; add the opt-out/unsubscribe link to all email variants and ensure it is present in every language version.
 * **Q: What information should I gather before contacting Adobe Support?** — Collect the error code, request ID, timestamps, and steps to reproduce.
-* **Q: What causes CJMRT-030012-422?** — Invalid input data (for example, a nonexistent audience, event, or attribute); verify that referenced objects (audiences, datasets) exist and are active.
+* **Q: What causes CJMRT-000071-400?** — A data usage policy violation: the journey or campaign configuration uses a field restricted by a data governance policy. Select the **[!UICONTROL Alerts]** button, open the error to see the policy violation, and use the data lineage diagram to find the configuration changes to make before you activate your journey or campaign.
+* **Q: What causes CJMMAS-2073-400?** — The message body does not contain the required `to` property. Provide the `to` property in the message body and try again.
 
 **Related pages:**
 
@@ -63,13 +64,13 @@ For complete understanding, this information should be combined with the documen
 * Content errors: Content authoring errors (content-management/content-authoring-errors.md); Fragments and AEM content errors (content-management/fragments-errors.md); Multilingual content errors (content-management/multilingual-errors.md); Landing page errors (landing-pages/landing-page-errors.md); Proof and simulation errors (content-management/proof-simulation-errors.md); Personalization errors (personalization/personalization-errors.md)
 * Configuration errors: Subdomain delegation and DNS errors (configuration/subdomain-delegation-errors.md); IP warmup plan errors (configuration/ip-warmup-plan-errors.md); Custom channel, inbound action, and reporting dataset errors (configuration/channel-reporting-errors.md)
 * Error codes by feature area: Troubleshooting overview (rp_landing_pages/troubleshooting-overview-landing-page.md)
-* Troubleshooting errors before testing or publishing a journey: Troubleshoot errors before testing or publishing your journey (building-journeys/troubleshooting.md)
-* Troubleshooting a live journey execution: Troubleshoot your live journey execution (building-journeys/troubleshooting-execution.md)
-* Troubleshooting inbound actions: Troubleshoot inbound actions in journeys (building-journeys/troubleshooting-inbound.md)
-* Troubleshooting custom actions: Troubleshoot your custom actions (action/troubleshoot-custom-action.md)
-* Journey questions: Journey Orchestration - Frequently Asked Questions (building-journeys/journey-faq.md)
-* Limits and constraints: Journey Optimizer guardrails and limitations (start/guardrails.md)
+* Troubleshooting errors before testing or publishing a journey: Journey troubleshooting (building-journeys/troubleshooting.md)
+* Troubleshooting a live journey execution: Execution troubleshooting (building-journeys/troubleshooting-execution.md)
+* Troubleshooting inbound actions: Inbound activities troubleshooting (building-journeys/troubleshooting-inbound.md)
+* Troubleshooting custom actions: Custom actions troubleshooting (action/troubleshoot-custom-action.md)
+* Journey questions: Journey FAQs (building-journeys/journey-faq.md)
+* Limits and constraints: Guardrails and limitations (start/guardrails.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 3b6ae983 -->
+<!-- ai-section-version: 1 | source-hash: 5fc49de2 -->
