@@ -153,5 +153,5 @@ When a journey, Action campaign or Orchestrated campaign is activated, its metad
 
 You can use these datasets to export the data for downstream reporting, or to build audiences based on the metadata of the journeys and campaigns that profiles received.
 
-Learn more on [datasets](../administration/datasets.md).
+Learn more on datasets [here](../administration/datasets.md).
 
