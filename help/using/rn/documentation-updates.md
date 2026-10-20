@@ -65,6 +65,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
+* A note has been added to clarify that some email providers, such as Gmail, do not share user-level spam complaint data, so recipients who mark a message as spam are not automatically added to the suppression list. [Read more](../configuration/manage-suppression-list.md#suppression-categories-and-reasons)
+
 * The **Create a direct mail message** page now clarifies extraction-file generation in the **Journey** and **Campaign** tabs: journey files follow the routing frequency and can result in multiple files per day, while campaign files are generated when each campaign execution starts. The page also explains how to ensure one file per day for journeys. [Read more](../direct-mail/create-direct-mail.md#create-dm-campaign)
 
 * Guidance for custom-upload audiences now clarifies activation timing and adds troubleshooting for unavailable enrichment attributes in journeys. [Read more](../audience/enrichment-attributes.md#faq-enrichment)
