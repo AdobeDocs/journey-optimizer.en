@@ -104,6 +104,7 @@ Excel-based schema file uploads are supported. Download the [provided template](
     * A version identifier, such as a `lastmodified` field of type `datetime` or `number`.
     * For Change Data Capture (CDC) ingestion, a special column named `_change_request_type` of type `String`, which indicates the type of data change (e.g., insert, update, delete) and enables incremental processing.  
     * DDL file must not define more than 200 tables.
+    * A table cannot reference itself: self-referential relationships are not allowed in the DDL file.
 
 
     >[!IMPORTANT]
@@ -113,7 +114,7 @@ Excel-based schema file uploads are supported. Download the [provided template](
 
 1. Drag and drop your DDL file and click **[!UICONTROL Next]**.
 
-    Note that the maximum supported size for a DDL file is 10MB.
+    Note that the maximum supported size for a DDL file is 10MB. The file name must contain only letters, numbers, underscores (_), hyphens (-), or spaces, and include a single extension.
 
 1. Type-in your **[!UICONTROL Schema name]**.
 

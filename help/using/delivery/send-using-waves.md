@@ -72,6 +72,8 @@ Additional context-specific constraints apply:
 >[!TAB Orchestrated campaigns]
 
 * Wave sending is configured at the **channel activity level**, independently for each channel activity in the campaign.
+* Wave sending is not available for recurring or signal-triggered Orchestrated campaigns.
+* A wave start cannot be before the campaign start.
 
 >[!ENDTABS]
 

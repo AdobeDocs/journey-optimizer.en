@@ -179,6 +179,8 @@ To create a composition workflow, follow these steps:
 
 1. Configure your composition by adding as many activities as needed between the **[!UICONTROL Audience]** and **[!UICONTROL Save]** activities. For more information on how to create a composition, refer to the [Audience composition documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition).
 
+    With the **[!UICONTROL Enrich]** activity, the enrichment dataset must be 1 GB or smaller, and its schema must define a primary identity. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition#enrich-block){target="_blank"}
+
     ![](assets/audiences-publish.png)
 
 1. Once your composition is ready, click the **[!UICONTROL Publish]** button to publish the composition and save the resulting audiences into Adobe Experience Platform.

@@ -481,6 +481,7 @@ The following guardrails apply to the [fragments](../content-management/fragment
   * **Across variants**: up to 120 unique fragments across all variants of a single message. A warning is shown when usage reaches 90 (75% of the limit); publishing is blocked at 120.
 
 * To use a fragment in a journey or campaign, it must be in the **Live** status.
+* A fragment cannot reference itself.
 * [Contextual attributes](../personalization/personalization-build-expressions.md) are not supported within fragments.
 * Visual fragments are not cross-compatible between the Use Themes and Manual Styling modes. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Use Themes mode. [Learn more on themes](../email/apply-email-themes.md)
 * When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)

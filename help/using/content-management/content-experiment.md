@@ -155,6 +155,8 @@ For you content experiment, you can choose between three types of experiment:
 
 1. You can then choose to allocate a precise percentage to each **[!UICONTROL Treatment]** or simply switch on the **[!UICONTROL Distribute evenly]** toggle bar.
 
+    With **[!UICONTROL Distribute evenly]** switched on, you cannot set treatment percentages. With it switched off, set a percentage for each treatment.
+
 1. Enable the auto-scale experiment to automatically roll out the winning variation of your experiment. [Learn more on how to scale the winner](#scale-winner)
 
     ![](assets/content_experiment_14.png)

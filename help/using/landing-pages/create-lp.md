@@ -132,7 +132,7 @@ Once you configured and designed the [primary page](#configure-primary-page), an
 
 The primary page is the page that is immediately displayed to the users after they click the link to your landing page, such as from an email or a website.
 
-To define the primary page settings, follow the steps below.
+To define the primary page settings, follow the steps below. The primary page needs a name, a URL, and content.
 
 1. You can change the page name, which is **[!UICONTROL Primary page]** by default.
 
@@ -163,7 +163,7 @@ To define the primary page settings, follow the steps below.
 1. You can define an expiry date for your page. In that case, you must select an action upon page expiry:
 
     * **[!UICONTROL Redirect URL]**: Enter the URL of the page the users will be redirected to when the page expires.
-    * **[!UICONTROL Custom page]**: [Configure a subpage](#configure-subpages) and select it from the drop-down list that displays.
+    * **[!UICONTROL Custom page]**: [Configure a subpage](#configure-subpages) and select it from the drop-down list that displays. This subpage cannot contain contextual attributes of the primary page.
     * **[!UICONTROL Browser error]**: Type the error text that will be displayed instead of the page.
 
     ![](assets/lp_expiry-date.png)
@@ -201,7 +201,7 @@ To define the primary page settings, follow the steps below.
 
 You can add up to 2 subpages. For example, you can create a 'thank you' page that will display once the users submit the form, and you can define an error page that will be called if a problem occurs with the landing page.
 
-To define the subpage settings, follow the steps below.
+To define the subpage settings, follow the steps below. Each subpage needs a name, a URL, and content.
 
 1. You can change the page name, which is **[!UICONTROL Subpage 1]** by default.
 

@@ -30,6 +30,8 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 * Configuration validation is separate from simulation and must pass before entering **[!UICONTROL Simulation]**. Changes after a failed run require **[!UICONTROL Validate]** again and resolution of configuration errors before rerunning; publication requires completed testing and current, passed validation.
 * For journeys starting with an Event, the per-user Send icon is not available; simulated-user entry is triggered by sending the event in Test events
+* A simulated user created from the form requires an **[!UICONTROL Identity namespace]** and an identity value, and this combination must be unique
+* If another operation modified a simulated user in the meantime, refresh and try again before editing it
 * The Update values step appears only if the journey uses Waits or Channels; it lets you adjust Wait durations and execution addresses
 * In simulation content preview, if simulated-user data was fetched before Update Profile runs, previewed values are pre-update throughout. If the data was fetched after the activity runs, for example after reloading the page, previewed values are post-update throughout, including in earlier email activities. A single preview does not show pre-update values before the activity and post-update values after it.
 * When errors appear in the Results log, leave Simulation, apply the required journey changes, click Validate again and resolve configuration errors before rerunning Simulation; publish when testing is complete and validation is current and passed
@@ -52,4 +54,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 7c687b74 -->
+<!-- ai-section-version: 1 | source-hash: 3773651d -->

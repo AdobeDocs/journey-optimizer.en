@@ -173,6 +173,7 @@ The following guardrails apply to journey fragments:
 * Only **connected nodes** can be saved together as a fragment.
 * A fragment **cannot contain a [Jump](jump.md) activity**.
 * A fragment can contain a **maximum of 20 nodes**.
+* In a fragment, a **[!UICONTROL Wait]** activity cannot immediately follow a **[!UICONTROL Business event]** activity. Insert another activity between them.
 * A sandbox can have a **maximum of 200 active fragments**.
 
 **Fragment usage**
