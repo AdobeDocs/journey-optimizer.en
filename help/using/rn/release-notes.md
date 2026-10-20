@@ -350,7 +350,7 @@ The following capabilities and improvements are coming to content management in 
 <table>
 <thead>
 <tr>
-<th><strong>Challenge Recommendations</strong><br/></th>
+<th><strong>Loyalty Opportunities</strong><br/></th>
 </tr>
 </thead>
 <tbody>
