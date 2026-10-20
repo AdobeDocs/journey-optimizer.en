@@ -126,6 +126,20 @@ Follow these steps:
 
     Learn more about deliverability management in [!DNL Adobe Journey Optimizer] [on this page](../../reports/deliverability.md).
 
+## Configure journeys
+
+Once channels are configured, set up the technical building blocks that journey authors need before they can build and publish journeys:
+
+* **Data Sources** — Connect journeys to external systems to retrieve additional data at run time (for example, loyalty tier, reservation status).
+* **Events** — Define the triggers that start or advance journeys when a customer action or business signal occurs.
+* **Actions** — Configure custom connections to third-party systems when using external message delivery platforms.
+
+For a step-by-step overview and configuration checklist, see [Configure journeys: Data Sources, Events, and Actions](../../configuration/about-data-sources-events-actions.md).
+
+>[!NOTE]
+>
+>This configuration is typically performed by a Data Engineer or technical administrator in coordination with journey authors.
+
 ## Additional capabilities
 
 As your organization's needs grow, consider these advanced capabilities:
