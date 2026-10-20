@@ -48,7 +48,7 @@ To define custom metadata fields, add them to a custom field group in the schema
     >
     >Do not edit the name of these schemas.
 
-1. Click **[!UICONTROL Add]** and select **[!UICONTROL Create new field group]**.
+1. In the schema's structure, from the **[!UICONTROL Fields group]** section, click **[!UICONTROL Add]** and select **[!UICONTROL Create new field group]**.
 
     ![Add button for field groups in the campaign custom metadata schema](assets/metadata-schema-add-field-group.jpg){width="60%"}
 
@@ -127,15 +127,21 @@ The configuration is independent for each entity type: you can select different 
 
 ## Fill in metadata values {#fill-values}
 
-Once fields are configured, if you have added them, these fields appear in the Metadata fields section of the properties of each entity.
+Once fields are [configured](#define-fields), if you have added them on the [Metadata page](#select-fields), these fields appear in the **[!UICONTROL Metadata fields]** section of the properties of each entity:
+
+* **Action campaigns**: in the **[!UICONTROL Properties]** tab when you create or edit the campaign. [Learn more](../campaigns/campaign-properties.md)
+* **Journeys**: in the journey properties. [Learn more](../building-journeys/journey-properties.md#custom-metadata)
+* **Orchestrated campaigns**: in the campaign properties. [Learn more](../orchestrated/create-orchestrated-campaign.md#create)
 
 ![Metadata fields section in the properties of an Action campaign](assets/metadata-fields-section-campaign.jpg)
 
-<!--* **Action campaigns**: in the **[!UICONTROL Properties]** tab when you create or edit the campaign. [Learn more](../campaigns/campaign-properties.md)
-* **Journeys**: in the journey properties. [Learn more](../building-journeys/journey-properties.md#custom-metadata)
-* **Orchestrated campaigns**: in the campaign properties. [Learn more](../orchestrated/create-orchestrated-campaign.md#create)-->
+The custom fields are displayed in the order you specified when [selecting the fields to display](#select-fields).
 
-Enter or select a value for each field, then save and activate your journey or campaign as usual. Fields marked with an asterisk are required.
+Enter or select a value for each field, then save and activate your journey or campaign as usual.
+
+>[!CAUTION]
+>
+>Fields marked with an asterisk are required. If a required field is not filled in, you cannot activate or publish the journey or campaign.
 
 ## Use custom metadata for reporting {#reporting}
 
@@ -146,4 +152,6 @@ When a journey, Action campaign or Orchestrated campaign is activated, its metad
 * **AJO Orchestrated Campaign Custom Metadata Dataset**
 
 You can use these datasets to export the data for downstream reporting, or to build audiences based on the metadata of the journeys and campaigns that profiles received.
+
+Learn more on dataset management [here](../administration/datasets.md).
 
