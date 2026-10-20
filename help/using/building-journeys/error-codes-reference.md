@@ -221,9 +221,4 @@ If you encounter persistent errors that cannot be resolved using this guide:
 >
 >This error code reference is continuously updated as new codes are identified and documented. For the most current information, check the [[!DNL Adobe Journey Optimizer] Community blogs](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/bg-p/journey-optimizer-blogs){target="_blank"} regularly.
 
-**Related topics**
-
-* [Demystifying [!DNL Adobe Journey Optimizer] Error Codes: Part 1](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884){target="_blank"}
-* [Demystifying [!DNL Adobe Journey Optimizer] Error Codes: Part 2](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/bc-p/782661){target="_blank"}
-
 {{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-error-codes-reference.md}}
