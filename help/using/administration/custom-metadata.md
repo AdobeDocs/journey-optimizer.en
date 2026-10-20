@@ -30,7 +30,7 @@ The values you enter are recorded in the entity datasets. You can use them for d
 
 ## How custom metadata works {#how-it-works}
 
-Custom metadata fields are defined in the [!DNL Adobe Experience Platform] [schemas](../data/get-started-schemas.md) based on the **AJO Entity Class**. Currently, [!DNL Journey Optimizer] automatically provisions a record-based schema for each of three entities — campaigns, journeys and Orchestrated campaigns:
+Custom metadata fields are defined in the [!DNL Adobe Experience Platform] [schemas](../data/get-started-schemas.md) based on the **AJO Entity Class**. Currently, [!DNL Journey Optimizer] automatically provisions a record-based schema for each of three entities — Action campaigns, journeys and Orchestrated campaigns:
 
 * **AJO Campaign Custom Metadata Schema**
 * **AJO Journey Custom Metadata Schema**
@@ -54,17 +54,17 @@ To define custom metadata fields, add them to a custom field group in the schema
 
     Select **[!UICONTROL Create new field group]**. Enter a display name, for example **AJO Custom Metadata**, and click **[!UICONTROL Add field group]**. [Learn how to add field groups and fields to a schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui){target="_blank"}
 
-    ![Create new field group form in the Add field groups dialog](assets/metadata-schema-create-field-group.jpg){width="90%"}
+    ![Create new field group form in the Add field groups dialog](assets/metadata-schema-create-field-group.jpg){width="70%" zoomable="yes"}
 
 1. Back in the schema's structure, select the field group you created in the **[!UICONTROL Field groups]** section. Then click the + icon next to the name of the schema to add a new field.
 
-    ![Custom field group selected in the campaign custom metadata schema](assets/metadata-schema-add-field.jpg)
+    ![Custom field group selected in the campaign custom metadata schema](assets/metadata-schema-add-field.jpg){width="70%" zoomable="yes"}
 
     >[!NOTE]
     >
     >You can also select the field group at any time while defining the field from the **[!UICONTROL Field Group]** drop-down list.
 
-    ![Define a new field in the campaign custom metadata schema](assets/metadata-schema-define-field.jpg){width="70%"}
+    ![Define a new field in the campaign custom metadata schema](assets/metadata-schema-define-field.jpg){width="70%" zoomable="yes"}
 
 1. For each field:
 
@@ -76,7 +76,7 @@ To define custom metadata fields, add them to a custom field group in the schema
     >
     >Do not mark fields as required in the schema, as this can cause issues when data is inserted. Instead you can make fields required when you [select the fields to display](#select-fields) in the properties of your campaigns or journeys.
 
-    ![Field defined as an enum with a list of values in the campaign custom metadata schema](assets/metadata-schema-required-enum.jpg){width="40%"}
+    ![Field defined as an enum with a list of values in the campaign custom metadata schema](assets/metadata-schema-required-enum.jpg){width="40%" zoomable="yes"}
 
 1. Click **[!UICONTROL Apply]** to save the new field.
 
@@ -86,7 +86,7 @@ To define custom metadata fields, add them to a custom field group in the schema
 
     For example, if you have defined fields for campaigns using the **AJO Custom Metadata** field group in the **AJO Campaign Custom Metadata Schema**, you can reuse this field group in the **AJO Journey Custom Metadata Schema** and in the **AJO Orchestrated Campaign Custom Metadata Schema**.
 
-    ![Select the field group in the journey custom metadata schema](assets/metadata-schema-journey.jpg){width="70%"}
+    ![Select the field group in the journey custom metadata schema](assets/metadata-schema-journey.jpg){width="80%" zoomable="yes"}
 
     Select it in the **[!UICONTROL Field groups]** section or from the **[!UICONTROL Field Group]** drop-down list.
 
@@ -109,13 +109,13 @@ Once your fields are defined in the schemas, you can define how they will appear
 
 1. The **[!DNL Metadata]** page contains one tab per entity type: **[!UICONTROL Journeys]**, **[!UICONTROL Campaigns]** and **[!UICONTROL Orchestrated Campaigns]**.
 
-    ![Metadata page showing the Journeys, Campaigns and Orchestrated Campaigns tabs](assets/metadata-campaign-tab.jpg)
+    ![Metadata page showing the Journeys, Campaigns and Orchestrated Campaigns tabs](assets/metadata-campaign-tab.jpg){width="80%" zoomable="yes"}
 
 1. For each tab, the list is synchronized with the corresponding schema. When you add or change fields or lists of values in the schema, the changes are reflected here.
 
     >[!NOTE]
     >
-    >It can take up to 5 minutes for schema changes to be displayed.
+    >It can take a few minutes for schema changes to be displayed.
 
 1. You can reorder the selected fields. The fields are displayed in this order in the properties of your journeys and campaigns, so place the most important ones first.
 
@@ -123,7 +123,7 @@ Once your fields are defined in the schemas, you can define how they will appear
 
 1. To add or remove fields, click the **[!UICONTROL Add fields]** button and check or uncheck the corresponding fields in the list to update the selection.
 
-    ![Fields dialog to select the fields to display in the Metadata page](assets/metadata-fields-selection.jpg){width="80%"}
+    ![Fields dialog to select the fields to display in the Metadata page](assets/metadata-fields-selection.jpg){width="80%" zoomable="yes"}
 
     >[!CAUTION]
     >
@@ -137,7 +137,7 @@ The configuration is independent for each entity type: you can select different 
 
 Once you have [defined the fields](#define-fields) and [selected them on the Metadata page](#select-fields), they appear in the **[!UICONTROL Metadata fields]** section of the properties of each entity.
 
-![Metadata fields section in the properties of an Action campaign](assets/metadata-fields-section-campaign.jpg){width="80%"}
+![Metadata fields section in the properties of an Action campaign](assets/metadata-fields-section-campaign.jpg){width="70%" zoomable="yes"}
 
 Find where to fill in the fields for each entity type:
 
