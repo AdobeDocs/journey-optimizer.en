@@ -122,6 +122,45 @@ The following capabilities and improvements are coming to journeys in this relea
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>AI recommendation cards for journey alerts</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Journey Optimizer home page now surfaces an AI recommendation card when a journey alert fires, covering Journey Custom Action failure and Journey Anomaly Detected alerts. Selecting the card opens the journey with the right rail pre-populated with the analysis already performed.</p>
+<!-- GIF placeholder: TBD -->
+<!-- Documentation link: TBD -->
+<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-15706" target="_blank">DOCAC-15706</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey creation from Coworker rail
+</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey creation with AI is now available directly from the CX Coworker right rail, replacing the previous AI Assistant experience with a re-branded, integrated entry point for generating journeys.</p>
+<!-- GIF placeholder: TBD -->
+<!-- Documentation link: TBD -->
+<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-14898" target="_blank">DOCAC-14898</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Hygiene Analysis skill** - Coworker can now scan your active and draft journeys for broken configurations, silent failures, and decaying or unused assets — such as stale draft journeys, orphaned data sources, and persistent custom action errors — and surface recommended fixes directly in chat. <!-- Documentation link: TBD --> Jira: [DOCAC-15689](https://jira.corp.adobe.com/browse/DOCAC-15689){target="_blank"}
+
 * **Support Inbound action simulation in Journeys** - \<TBC\> <!-- Documentation link: TBD --> Jira: [DOCAC-15445](https://jira.corp.adobe.com/browse/DOCAC-15445){target="_blank"}
 
 ### Decisioning {#oct-26-decisioning}
@@ -160,3 +199,7 @@ The following capability and improvement are coming to administration in this re
 </table>
 
 * **Custom metadata for reporting and decisioning (Limited Availability)** - You can now attach custom key/value metadata to journeys, Action Campaign actions, and orchestrated campaign actions, in addition to the existing Adobe Experience Platform Unified Tags. This metadata is available for reporting, both in Journey Optimizer's built-in reports and in Customer Journey Analytics, so teams can measure and analyze action performance using their own custom dimensions. This capability is only available for a set of organizations (Limited Availability); contact your Adobe representative for more information. <!-- Documentation link: TBD --> Jira: [DOCAC-15667](https://jira.corp.adobe.com/browse/DOCAC-15667){target="_blank"}
+
+### Navigation {#oct-26-navigation}
+
+* [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view. [DOCAC-15571](https://jira.corp.adobe.com/browse/DOCAC-15571){target="_blank"}
