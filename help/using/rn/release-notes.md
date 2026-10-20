@@ -59,9 +59,31 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
 ## October '26 updates {#oct-26-updates}
 
-### Channels {#oct-26-channels}
+<!-- 
 
-The following capability is coming to channels in this release.
+### Administration {#oct-26-administration}
+
+<table>
+<thead>
+<tr>
+<th><strong>Custom metadata for campaigns and journeys (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Define your own business fields, such as line of business, product or cost center, in the schemas provided for Action campaigns, journeys and Orchestrated campaigns. Select up to 10 fields per entity type, then fill them in from the <strong>Metadata fields</strong> section of the properties of each journey or campaign. The values are recorded in dedicated datasets that you can use for reporting, exports and audience creation.</p>
+<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p>For more information, refer to the <a href="../administration/custom-metadata.md">detailed documentation</a>.</p>
+<p>Availability date: October 20, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+-->
+
+### Channels {#oct-26-channels}
 
 <table>
 <thead>

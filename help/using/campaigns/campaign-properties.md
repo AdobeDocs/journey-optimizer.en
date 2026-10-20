@@ -51,6 +51,12 @@ To create an Action campaign and define its properties, follow these steps:
 
 1. Use the **Tags** field to assign Adobe Experience Platform Unified Tags to your campaign. This allows you to easily classify them and improve search from the campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags).
 
+1. If custom metadata fields have been defined and selected for Action campaigns, they are displayed in the **[!UICONTROL Metadata fields]** section of the **[!UICONTROL Properties]** tab. Fill them in to track specific business information such as line of business, product or cost center. Fields marked with an asterisk are required. [Learn more on custom metadata](../administration/custom-metadata.md)
+
+    >[!AVAILABILITY]
+    >
+    >This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+
 1. You can limit the access to this campaign based on access labels. To add an access limitation, browse to the **[!UICONTROL Manage access]** button at the top of this page. Make sure to select only labels you have permission for. [Learn more about Object Level Access Control](../administration/object-based-access.md).
 
 ## Next steps {#next}
