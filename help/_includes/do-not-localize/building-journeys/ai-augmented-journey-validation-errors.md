@@ -17,6 +17,7 @@ For complete understanding, this information should be combined with the documen
 * Find the cause and the fix of an error returned by **[!UICONTROL Validate]**, by a test, or by publication.
 * Find which activity or rule an error family relates to (structure, **[!UICONTROL Read audience]**, Adobe Campaign actions, **[!UICONTROL Update profile]**, **[!UICONTROL Dataset lookup]**, **[!UICONTROL Jump]**, **[!UICONTROL Wait]**, **[!UICONTROL Condition]**, events, **[!UICONTROL Content decision]**, Select package, versions, fragments, version comparison).
 * Find the limits that trigger some of the errors (fields, keys, journey size, fragment activities).
+* Know what to note and whom to contact when an error persists after the listed steps.
 
 **Glossary:**
 
@@ -30,7 +31,7 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * **Dataset lookup:** only leaf fields can be selected, up to 20 (error `AJOJAS-2073-400`). A lookup can use up to 50 keys (error `AJOJAS-2074-400`).
-* **Journey size:** error `AJOJAS-7003-413` is returned when the journey is larger than 2 MB. The **[!UICONTROL Current journey payload size]** indicator in the journey properties shows the size.
+* **Journey size:** error `AJOJAS-7003-413` is returned when the journey is larger than the default maximum payload size of 2 MB (some organizations may have custom limits). The **[!UICONTROL Current journey payload size]** indicator in the journey properties shows the size.
 * **Fragment size:** a fragment can contain up to 20 activities (error `AJOJAS-8005-400`).
 * **Active fragments:** a sandbox can have up to 200 active fragments (error `AJOJAS-8024-429`). Errors `AJOJAS-8009-429` and `AJOJAS-8024-429` report a limit reached in the sandbox; the message gives the value in `{limit}`.
 * **Read audience:** a journey can have only one **[!UICONTROL Read audience]** activity (error `AJOJAS-3003-400`).
@@ -45,7 +46,6 @@ For complete understanding, this information should be combined with the documen
 * The error messages quote internal terms such as "node", "edge", "segment", "ACS", and "ACC". The "How to fix" column uses the user-facing names: activity, **[!UICONTROL Read audience]**, **[!UICONTROL Audience qualification]**, Adobe Campaign Standard, and Adobe Campaign v7/v8.
 * Acronyms: ACS = Adobe Campaign Standard, ACC = Adobe Campaign Classic (v7/v8).
 * The "Read segment" messages (`AJOJAS-2007-400`, `2008-400`, `2009-400`, `3003-400`, `3005-400`, `3006-400`) are listed in the **Read audience and identity namespace** section, and the fix names the **[!UICONTROL Read audience]** activity.
-* **Do not confuse:** an event timeout (`AJOJAS-2041-400`, **[!UICONTROL Define the event timeout]**) and the timeout or error path of an action (`AJOJAS-5001-400`, Select package).
 
 **FAQ:**
 
@@ -65,13 +65,16 @@ Adobe Campaign Standard and Adobe Campaign v7/v8 actions cannot be used with **[
 A **[!UICONTROL Jump]** activity cannot be used in the same journey as a **[!UICONTROL Read audience]** activity. Remove the **[!UICONTROL Jump]**, or start the journey with an event.
 
 **Why can I not edit my journey (`AJOJAS-4001-403`, `AJOJAS-4002-403`)?**
-A journey in test mode cannot be modified: turn off test mode, make your changes, then test again. Turning off test mode removes the profiles that entered the journey and clears its reporting. A live journey is read-only: you can only change the activity labels and descriptions, and the journey name and description. To make other changes, create a new version, edit it, and publish it.
+A journey in test mode cannot be modified: turn off test mode, make your changes, then test again. Turning off test mode removes the profiles that entered the journey and clears its reporting. On a live journey, you can only change the activity labels and descriptions, and the journey name and description. To make other changes, create a new version, edit it, and publish it.
 
 **The journey is too large (`AJOJAS-7003-413`). What do I do?**
-The journey is larger than 2 MB. Simplify complex expressions and conditions, reduce data mappings, or split the journey.
+The journey is larger than the default maximum payload size of 2 MB. Check the **[!UICONTROL Current journey payload size]** indicator in the journey properties. Simplify complex expressions and conditions, reduce data mappings, or split the journey.
 
 **A fragment could not be activated because it has validation errors (`AJOJAS-8025-400`, `8033-400`). What do I do?**
-Fix the errors shown on the fragment canvas, then activate again.
+Open the fragment, fix each error shown on its canvas, then select the **[!UICONTROL Activate]** icon again.
+
+**What do I do if the error persists after the listed steps?**
+Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 **Troubleshooting:**
 
@@ -80,21 +83,21 @@ Fix the errors shown on the fragment canvas, then activate again.
 * **Activity compatibility.** Cause: a journey combines activities that cannot be used together, such as Adobe Campaign actions with **[!UICONTROL Read audience]** or **[!UICONTROL Audience qualification]**, or a **[!UICONTROL Jump]** with **[!UICONTROL Read audience]**.
 * **Action activities.** Causes: a channel action with no message (`AJOJAS-2014-400`, message: "'{messageType}' message action in node '{nodeId}': missing message id"), a surface still in use (`AJOJAS-2065-400`, "Surfaces are deprecated. Please use channel configurations instead"), a custom action parameter with no value (`AJOJAS-2021-400`), Campaign Standard address or personalization parameters not mapped (`AJOJAS-2012-400`, `2013-400`), send time optimization not in the license package (`AJOJAS-6003-403`, `6004-403`). Fixes: `2014-400`, open the activity and select or create the message; `2065-400`, open each channel action that uses a surface and select a channel configuration instead; `2021-400`, set each mandatory parameter to a constant, a field, or an expression; `2012-400`, map the address to a field, constant, or expression; `2013-400`, map the personalization parameter named in the message to a field, constant, or expression; `6003-403`, turn off send time optimization on the email action, or contact your Adobe representative about upgrading; `6004-403`, turn off send time optimization on the push action, or contact your Adobe representative about upgrading.
 * **Update profile.** Cause: incomplete schema, dataset, or attribute configuration (`AJOJAS-2022-400` to `2026-400`). Fixes: `2022-400` and `2023-400`, open the **[!UICONTROL Update profile]** activity and select the schema, then the profile-enabled dataset, then the attributes to update; `2024-400`, select the profile-enabled dataset, then the attributes to update; `2025-400`, select the profile field for each attribute to update; `2026-400`, set the value of each attribute as a constant, a field, or an expression.
-* **Dataset lookup.** Cause: no dataset, fields, or lookup keys (`AJOJAS-2070-400` to `2074-400`). Fixes: `2070-400`, `2071-400`, and `2072-400`, open the **[!UICONTROL Dataset lookup]** activity and select the dataset and the fields to retrieve; `2073-400`, select the fields to retrieve (leaf fields only, up to 20); `2074-400`, define the lookup keys in advanced mode (up to 50 keys).
-* **Jump.** Causes: the **[!UICONTROL Jump]** activity has no target event (`AJOJAS-2027-400`) or no target journey (`2028-400`). Fix: open the activity and select the target journey (for `2027-400`, the activity sends an internal event to the first event of that journey). Only draft, live, or test-mode journeys with the same namespace are listed.
+* **Dataset lookup.** Cause: no dataset, fields, or lookup keys (`AJOJAS-2070-400` to `2074-400`). Fixes: `2070-400`, `2071-400`, and `2072-400`, open the **[!UICONTROL Dataset lookup]** activity and select the dataset and the fields to retrieve; `2073-400`, select the fields to retrieve (leaf fields only, up to 20); `2074-400`, in the **[!UICONTROL Lookup key(s)]** field of the **[!UICONTROL Dataset lookup]** activity, define the lookup keys in **[!UICONTROL Advanced mode]** (up to 50 keys).
+* **Jump.** Causes: the **[!UICONTROL Jump]** activity has no target event (`AJOJAS-2027-400`) or no target journey (`2028-400`). Fix: open the activity and select the target journey. Only draft, live, or test-mode journeys with the same namespace are listed.
 * **Wait, conditions, and event timeouts.** Causes: a missing value (`AJOJAS-2030-400` wait duration, `2032-400` custom wait expression, `2056-400` no condition defined, `2033-400` path without a condition, `2039-400` time condition without a day, `2041-400` event timeout without a delay). Fixes: `2030-400`, enter a duration and a unit in the **[!UICONTROL Wait]** activity; `2032-400`, in the **[!UICONTROL Custom]** option, build the expression that returns the date to wait until; `2056-400`, define at least one path with a condition in the **[!UICONTROL Condition]** activity; `2033-400`, define a condition for each path (or delete the paths you do not need); `2039-400`, select at least one day in the time condition; `2041-400`, set a duration under **[!UICONTROL Define the event timeout]** in the event properties.
 * **Events and reactions.** Causes: an **[!UICONTROL Audience qualification]** or **[!UICONTROL Reaction]** activity not configured as required (`AJOJAS-2045-400`, `2046-400`, `2048-400`). Fixes: `2045-400`, select **[!UICONTROL Enter]**, **[!UICONTROL Exit]**, or both in the **[!UICONTROL Audience qualification]** activity; `2046-400`, place the **[!UICONTROL Reaction]** right after the channel action it reacts to and select that action in its properties; `2048-400`, reactions work only with built-in channel actions, so to react to a message sent through a custom action, configure a dedicated event.
 * **Content decision.** Cause: no decision policy (`AJOJAS-2067-400`). Fix: open the **[!UICONTROL Content decision]** activity and select **[!UICONTROL Add decision policy]**.
 * **License package limits (Select).** These errors apply to unitary journeys on the **Select** license package: only one action (`AJOJAS-5007-403`), no condition (`5006-403`), no wait (`5005-403`), and timeout and error paths of an action must lead directly to an **[!UICONTROL End]** activity (`5001-400`). Fixes: `5007-403`, keep one action activity; `5006-403`, remove the **[!UICONTROL Condition]** activity; `5005-403`, remove the **[!UICONTROL Wait]** activity; `5001-400`, connect the timeout and error paths to **[!UICONTROL End]**. To use these activities with the Select package, use a Read audience journey, or ask your Adobe representative about upgrading your package.
-* **Versions, test mode, and size.** Causes: a version of another type (`AJOJAS-3024-400`), a journey in test mode (`4001-403`), a live journey (`4002-403`), a journey larger than 2 MB (`7003-413`). Fixes: `3024-400`, create a new journey instead of changing the entry activity; `4001-403`, turn off test mode, make your changes, then test again; `4002-403`, create a new version, edit it, and publish it; `7003-413`, simplify complex expressions and conditions, reduce data mappings, or split the journey.
+* **Versions, test mode, and size.** Causes: a version of another type (`AJOJAS-3024-400`), a journey in test mode (`4001-403`), a live journey (`4002-403`), a journey larger than the default maximum payload size of 2 MB (`7003-413`). Fixes: `3024-400`, start the new version with the same type of activity as version 1, or create a new journey for a different entry activity; `4001-403`, turn off test mode, make your changes, then test again; `4002-403`, create a new version, edit it, and publish it; `7003-413`, simplify complex expressions and conditions, reduce data mappings, or split the journey, and check the **[!UICONTROL Current journey payload size]** indicator.
 * **Journey fragments.** Causes and fixes by group:
   * Name: required (`AJOJAS-8002-400`), ID already used in the sandbox (`8001-409`, choose a different ID, or open the existing fragment), name already used in the sandbox (`8008-409`, choose a different name, or open the existing fragment), longer than the length shown in the message (`8003-400`).
   * Structure: more than 20 activities (`8005-400`), activities not connected to the starting node (`8006-400`), a **[!UICONTROL Jump]** activity (`8007-400`), more than one entry point (`8022-400`), no valid entry point (`8023-400`), a **[!UICONTROL Wait]** right after a business event (`8035-400`).
   * Activities: identity namespace missing (`8026-400`, `8027-400`), Campaign actions in a fragment that contains **[!UICONTROL Read audience]** (`8028-400`, `8029-400`: remove the Campaign action, or replace the **[!UICONTROL Read audience]** activity) or **[!UICONTROL Audience qualification]** (`8030-400`, `8031-400`: remove the Campaign action, or remove the **[!UICONTROL Audience qualification]** activity).
-  * Status: the fragment status does not allow the action (`8010-400`, `8016-400`). Only **[!UICONTROL Draft]** fragments can be edited or activated. Only **[!UICONTROL Active]** fragments can be deactivated or archived. Only **[!UICONTROL Archived]** fragments can be unarchived. A fragment that is already archived (`8014-400`) needs no action; unarchiving it returns it to **[!UICONTROL Draft]** status.
+  * Status: the fragment status does not allow the action (`8010-400`, `8016-400`). Check the fragment status in the **[!UICONTROL Fragment Inventory]**. Only **[!UICONTROL Draft]** fragments can be edited or activated. Only **[!UICONTROL Active]** fragments can be deactivated or archived. Only **[!UICONTROL Archived]** fragments can be unarchived. For a fragment that is already archived (`8014-400`), to use it again, select **[!UICONTROL Unarchive]** from its **[!UICONTROL More actions]** menu; it returns to **[!UICONTROL Draft]** status.
   * Limits: 200 active fragments in a sandbox (`8024-429`; archive or deactivate a fragment you do not use) and the sandbox fragment limit (`8009-429`; archive a fragment, or delete a **[!UICONTROL Draft]** fragment, that you no longer need).
-  * Permission: no access to the label to apply (`AJOJAS-7104-403`). Ask your administrator for access, or choose another label.
-* **Compare journey versions.** Causes: the same version selected twice, one version only, versions not in chronological order (`AJOJAS-11001-400`, `11004-400`, `11005-400`), or disconnected activities (`11007-400`). Fixes: `11001-400`, select two different versions; `11004-400`, select both versions; `11005-400`, swap the two versions so that they are in chronological order; `11007-400`, connect all activities (or delete the unused ones) in the version, then compare again.
+  * Permission: no permission to apply the label to the fragment (`AJOJAS-7104-403`). Ask your administrator to add the label named in the message to your role, or select a label that you have access to in the fragment properties.
+* **Compare journey versions.** Causes: the same version selected twice, one version only, versions not in chronological order (`AJOJAS-11001-400`, `11004-400`, `11005-400`), or disconnected activities (`11007-400`). Fixes: `11001-400`, in Coworker Chat, select two different versions; `11004-400`, in Coworker Chat, select both versions; `11005-400`, switch the order of the two selected versions so that the older one comes first; `11007-400`, connect all activities (or delete the unused ones) in the version, then compare again.
 
 **Related pages:**
 
@@ -106,7 +109,9 @@ Fix the errors shown on the fragment canvas, then activate again.
 * Common questions: Journey FAQs (building-journeys/journey-faq.md)
 * Limits and guardrails: Guardrails and limitations (start/guardrails.md)
 * Fragment guardrails and statuses: Fragment guardrails and limitations (building-journeys/journey-fragments.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 4f98d147 -->
+<!-- ai-section-version: 1 | source-hash: 2967f3a6 -->

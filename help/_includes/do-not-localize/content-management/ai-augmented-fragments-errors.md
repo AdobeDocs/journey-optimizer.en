@@ -12,6 +12,7 @@ For complete understanding, this information should be combined with the documen
 * **TL;DR:** This page lists the errors that [!DNL Adobe Journey Optimizer] returns when you publish fragments, reference them in content, or use Adobe Experience Manager content fragments and assets, with the cause and the fix for each error family.
 
 **Intents:**
+* Know what to note and whom to contact when an error persists after the listed steps
 
 * Find the cause and the fix for an error returned when publishing a fragment or referencing fragments in content
 * Understand the parts of an error code: the prefix (CJMMAS, AJOCBS, AJOAGS), the error number, and the HTTP status
@@ -37,15 +38,17 @@ For complete understanding, this information should be combined with the documen
 * Content can use up to 60 unique fragments per variant, and 120 across the variants of a message (hard limit). Exceeding it returns CJMMAS-1108-400, which names the limit in the message.
 * A fragment cannot reference itself (CJMMAS-1136-400).
 * Fragments cannot be nested deeper than the allowed depth (CJMMAS-1137-400, CJMMAS-1138-400); the depth is given in the message.
-* You can discard changes only on a draft of a fragment that is **[!UICONTROL Live]** and being edited, so that a published version exists to go back to (CJMMAS-1143-400). A fragment that was never published has no previous version, so changes cannot be discarded (CJMMAS-1144-400).
+* You can discard changes only from the draft version of a **[!UICONTROL Live]** fragment that you are editing, with **[!UICONTROL Discard draft]** (CJMMAS-1143-400). A fragment that was never published has no previous version, so changes cannot be discarded (CJMMAS-1144-400).
 * A sub type is allowed only on expression fragments, and an expression fragment needs one (CJMMAS-1134-400, CJMMAS-1135-400).
 * A payload that is too large for AEM Assets is rejected (CJMMAS-1613-413), and an asset that is too large cannot be published to the CDN (CJMMAS-1713-413). In both cases, use a smaller version of the asset.
 
 **Prerequisites and permissions:**
 
-* **[!UICONTROL Manage library items]** permission (included in the Content Library Manager product profile), plus access to the fragment: needed to manage a fragment or simulate content with it
-* **[!UICONTROL Publish Fragment]** permission: needed to publish a fragment
-* Access to the fragments referenced by a fragment: needed when a fragment references other fragments
+* **[!DNL Manage library items]** permission (included in the Content Library Manager product profile): needed to manage a fragment (CJMMAS-1121-403, CJMMAS-1131-403)
+* **[!DNL Manage library items]** and **[!DNL Manage simulate content]** permissions (included in the Content Library Manager product profile): needed to simulate content with a fragment (CJMMAS-1120-403)
+* **[!DNL Publish Fragment]** permission (included in the Content Library Manager product profile): needed to publish a fragment (CJMMAS-1122-403)
+* Access label: if an access label restricts the fragment, the label must be added to your role (CJMMAS-1120-403, CJMMAS-1121-403, CJMMAS-1131-403)
+* Access to the fragments referenced by a fragment: needed when a fragment references other fragments (CJMMAS-1139-403)
 * Access to the AEM content fragment and its repository, and to the AEM repositories referenced in the content: needed for AEM content fragments
 
 **Terminology:**
@@ -54,12 +57,13 @@ For complete understanding, this information should be combined with the documen
 * Acronym: AEM — Adobe Experience Manager
 
 **FAQ:**
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. For a permission or access error, contact your administrator; otherwise contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 * **Q: What do the parts of an error code mean?** — Errors use the prefixes CJMMAS (fragments and assets), AJOCBS and AJOAGS (AEM content), followed by an error number and an HTTP status.
-* **Q: I cannot publish a fragment because of a permission error. What do I do?** — For CJMMAS-1122-403, ask your administrator to grant the **[!UICONTROL Publish Fragment]** permission.
-* **Q: I cannot manage a fragment or simulate content with it. What do I do?** — For CJMMAS-1120-403, CJMMAS-1121-403 and CJMMAS-1131-403, ask your administrator to grant the **[!UICONTROL Manage library items]** permission (included in the Content Library Manager product profile) and access to the fragment.
-* **Q: Why does publishing fail with "The fragment you are trying to publish already has a publication in progress."?** — The fragment is in the **[!UICONTROL Publishing]** status. Wait until the publication completes, then try again.
-* **Q: Why does publishing fail because of a referenced fragment?** — For CJMMAS-1148-400, a fragment referenced in the fragment or in the content is not published: publish the referenced fragment first, then publish again. For CJMMAS-1152-400, the publication of a referenced fragment failed: fix the referenced fragment and publish it, then publish again.
+* **Q: I cannot publish a fragment because of a permission error. What do I do?** — For CJMMAS-1122-403, ask your administrator to grant the **[!DNL Publish Fragment]** permission (included in the Content Library Manager product profile).
+* **Q: I cannot manage a fragment or simulate content with it. What do I do?** — For CJMMAS-1121-403 and CJMMAS-1131-403, ask your administrator to grant the **[!DNL Manage library items]** permission (included in the Content Library Manager product profile). For CJMMAS-1120-403 (simulate content), the **[!DNL Manage library items]** and **[!DNL Manage simulate content]** permissions are needed. In all three cases, if an access label restricts the fragment, ask for that label to be added to your role.
+* **Q: Why does publishing fail with "The fragment you are trying to publish already has a publication in progress."?** — The fragment is in the **[!UICONTROL Publishing]** status. Wait until the status clears, then publish again.
+* **Q: Why does publishing fail because of a referenced fragment?** — For CJMMAS-1148-400, the referenced fragment named in the message is not published: publish it, then publish again. For CJMMAS-1152-400, the publication of a referenced fragment failed: open the referenced fragment, fix it and publish it, then publish this fragment again.
 * **Q: Why does "The limit of number of fragment URIs passed in the input is reached." appear?** — The content uses more fragments than allowed (CJMMAS-1108-400). Content can use up to 60 unique fragments per variant, and 120 across the variants of a message.
 * **Q: An AEM content fragment cannot be found (AJOCBS-1103-404). What do I check?** — Check that it is published to the AEM Publish tier and carries the ajo-enabled tag for your organization and sandbox.
 * **Q: What do I do when an AEM asset is not published or its publication failed?** — For AJOAGS-1201-417 (the publication of the asset has the FAILED status) and CJMMAS-1732-500 (some assets may not have been published in the defined timeframe), republish the asset or assets in Adobe Experience Manager, wait for the sync, then try again. For CJMMAS-1730-206 (Journey Optimizer is checking again whether the asset is published), wait for the sync, then try again, and republish the asset in Adobe Experience Manager if it stays unpublished.
@@ -74,17 +78,21 @@ For complete understanding, this information should be combined with the documen
 * CJMMAS-1629-429, "Exceeded number of request allowed on AEM Assets." — Too many requests were sent to Adobe Experience Manager Assets. Wait a few minutes, then try again.
 * CJMMAS-1653-503, "AEM Assets is currently unavailable." — Adobe Experience Manager Assets is unavailable. Wait a few minutes, then try again.
 * CJMMAS-1601-401, "Unauthorized Error while accessing AEM Assets, Token might be wrong, expired or invalid." — Authentication to Adobe Experience Manager Assets failed. Check your access to the repository, then try again.
-* CJMMAS-1603-403, "Forbidden error while accessing AEM Assets." — You do not have permission to access Adobe Experience Manager Assets. Check your access to the repository, then try again.
+* CJMMAS-1603-403, "Forbidden error while accessing AEM Assets." — Check that you have access to the repository selected under **[!UICONTROL Select Repository]** (account icon, upper right), or switch to a repository you can access, then try again.
 * CJMMAS-1704-400, "Bad Asset ID or Asset not found." and AJOAGS-1200-500, "AEM asset URL is either empty or not valid." — The asset ID is wrong or the asset was not found (CJMMAS-1704-400), or the asset has no URL or its URL is not valid (AJOAGS-1200-500). In both cases, select a published asset from the right repository.
-* CJMMAS-1139-403, "You do not have permission on the referenced fragment uris {fragmentUris}." — Your user does not have access to the fragments referenced by this fragment. Ask your administrator for access to them, or remove the references.
+* CJMMAS-1139-403, "You do not have permission on the referenced fragment uris {fragmentUris}." — Your user does not have access to the fragments referenced by this fragment. Ask your administrator for access to them. If access cannot be granted, remove the references.
+* CJMMAS-1120-403, CJMMAS-1121-403, CJMMAS-1131-403 — See Prerequisites and permissions for the permissions to grant and the access label check. CJMMAS-1122-403 — Ask your administrator to grant the **[!DNL Publish Fragment]** permission.
+* CJMMAS-2036-403, "You do not have permission to use one or more AEM repositories referenced in the content: {deniedRepositoryIds}." — Ask your administrator for access to the AEM repositories named in the message. If access cannot be granted, remove the fragments stored in those repositories from the content.
 * CJMMAS-1130-400 and CJMMAS-1149-400 — The fragment has validation errors. Open the fragment, fix the errors, then publish it again.
 * CJMMAS-1158-404, "No previous fragment publication found." — The fragment has no publication yet. Publish the fragment before you retry. CJMMAS-1159-404 — The fragment has no successful publication yet. Publish the fragment and make sure the publication succeeds before you retry.
-* CJMMAS-1157-400, CJMMAS-1145-400, CJMMAS-1160-404 — The fragment is in the **[!UICONTROL Publishing]** status. Wait until the publication completes, then edit it (CJMMAS-1157-400), try again (CJMMAS-1145-400), or retry (CJMMAS-1160-404).
-* CJMMAS-1143-400, "Fragment should be in draft to Discard Changes." — See Guardrails. CJMMAS-1144-400, "There is no previous version info present. Will not be able to Discard Changes." — The fragment has no previous version, so changes cannot be discarded.
-* CJMMAS-1161-500 and CJMMAS-1162-500 — The publication of a referenced AEM fragment failed (CJMMAS-1161-500) or did not complete in time (CJMMAS-1162-500). Fix the fragment in Adobe Experience Manager and republish it, then publish again.
-* AJOCBS-1101-401 and CJMMAS-8101-401 — Journey Optimizer cannot authenticate to Adobe Experience Manager. Check the AEM connection and the access token, then try again.
-* AJOCBS-1102-403 and CJMMAS-8102-403 — You do not have permission to use this content fragment. Ask your administrator for access to the fragment and its repository.
+* CJMMAS-1157-400, CJMMAS-1145-400, CJMMAS-1160-404 — The fragment is in the **[!UICONTROL Publishing]** status. Wait until the status clears, then edit the fragment (CJMMAS-1157-400), request the data again (CJMMAS-1145-400), or retry (CJMMAS-1160-404).
+* CJMMAS-1143-400, "Fragment should be in draft to Discard Changes." — See Guardrails. CJMMAS-1144-400, "There is no previous version info present. Will not be able to Discard Changes." — The fragment has no previous version, so use **[!UICONTROL Discard draft]** only on a fragment that was published before.
+* CJMMAS-1161-500 and CJMMAS-1162-500 — The publication of a referenced AEM fragment failed (CJMMAS-1161-500) or did not complete in time (CJMMAS-1162-500). For CJMMAS-1162-500, republish the fragment in Adobe Experience Manager, wait for the synchronization, then publish again. For CJMMAS-1161-500, fix the fragment in Adobe Experience Manager, republish it, wait for the synchronization, then publish again.
+* AJOCBS-1101-401 and CJMMAS-8101-401 — Journey Optimizer cannot authenticate to Adobe Experience Manager. Check the Adobe Experience Manager repository configuration and credentials, then try again.
+* AJOCBS-1102-403 and CJMMAS-8102-403 — You do not have permission to use this content fragment. Ask your administrator for access to the fragment and its repository. If access cannot be granted, remove the fragment from the content.
 * AJOCBS-1105-504 and AJOCBS-1108-400 — The request to Adobe Experience Manager timed out (AJOCBS-1105-504) or was rejected as a bad request (AJOCBS-1108-400). Check that the fragment is published, then try again.
+* CJMMAS-1105-400, CJMMAS-1164-400, CJMMAS-1165-400 and CJMMAS-1163-400 — The fragment reference is not valid. Correct it to follow the syntax shown in the message (scheme:fragmentId/variantId); for an AEM fragment, add the repository ID (aem:fragmentId/variantId?repoId=repositoryId).
+* CJMMAS-1107-404, CJMMAS-1132-404 and CJMMAS-1140-404 — The fragment ID does not exist. Check the ID, and that the fragment was not deleted or archived.
 * CJMMAS-1124-400 and CJMMAS-1125-400 — The variant references cannot be updated: give each variant a distinct name (CJMMAS-1124-400), and keep at least one variant enabled (CJMMAS-1125-400).
 
 **Related pages:**
@@ -97,7 +105,9 @@ For complete understanding, this information should be combined with the documen
 * AEM content fragment symptoms such as a fragment not visible in the selector: Considerations and troubleshooting (integrations/aem-fragments-limitations.md)
 * AEM assets: Create and manage assets (integrations/assets.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: e71eb9c1 -->
+<!-- ai-section-version: 1 | source-hash: 07f11dd9 -->

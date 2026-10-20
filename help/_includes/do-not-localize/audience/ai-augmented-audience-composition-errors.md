@@ -18,6 +18,7 @@ For complete understanding, this information should be combined with the documen
 * Fix an incomplete activity (split, **[!UICONTROL Rank]**, **[!UICONTROL Exclude]**, filter) in a composition
 * Fix enrichment dataset errors (dataset, join key, attribute, schema)
 * Understand the publication limit, permission, and evaluation errors
+* Know what to note and whom to contact when an error persists after the listed steps
 
 **Glossary:**
 
@@ -40,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 * The limit of the **[!UICONTROL Rank]** activity must be a positive number (greater than 0).
 * The audiences of a composition must use the merge policy of the composition.
 * The enrichment dataset must not be empty, and it must be 1 GB or smaller (hard limit). It must be associated with a schema, and the schema must have a primary identity.
-* The limit is 50 published compositions in the sandbox (hard limit; CJMRT-170042-400, "You have reached the limitation of 50 active compositions authorized in the inventory. You cannot add a new one."). Compositions created with federated audience composition are not counted.
+* The limit is 50 active compositions (hard limit; CJMRT-170042-400, "You have reached the limitation of 50 active compositions authorized in the inventory. You cannot add a new one."). Compositions created with federated audience composition are not counted.
 * Only one composition evaluation can be queued at a time (CJMRT-170056-409).
 
 **Terminology:**
@@ -53,16 +54,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does "The composition must end with a Save operation." appear?** — CJMRT-170007-400: a composition must end with a Save activity. Add a Save activity to each path.
 * **Q: Why does "The composition contains disconnected operations." appear?** — CJMRT-170005-400: an activity is not connected to the workflow. Connect the disconnected activity, or delete it. For a workflow that loops back on itself (CJMRT-170003-400), remove the loop.
 * **Q: Why does "Sum of all branches should be equal to 100." appear?** — CJMRT-170015-400: the percentages of the branches of a split must add up to 100. Adjust the percentages.
-* **Q: Why can I not publish a new composition ("You have reached the limitation of 50 active compositions authorized in the inventory.")?** — CJMRT-170042-400: you reached the limit of 50 published compositions in the sandbox. Delete a composition you no longer need, then publish the new one.
+* **Q: Why can I not publish a new composition ("You have reached the limitation of 50 active compositions authorized in the inventory.")?** — CJMRT-170042-400: you reached the limit of 50 active compositions. Delete a published composition you no longer need, then publish the new one.
 * **Q: Why does "The selected enrichment dataset is greater than 1 GB." appear?** — CJMRT-170040-400: the enrichment dataset is larger than 1 GB. Select another dataset, or reduce its size. For an empty dataset (CJMRT-170041-400), select another dataset.
-* **Q: What do I do when "The composition has been modified. Please refresh the page." appears?** — CJMRT-170043-412: the composition was modified by someone else. Refresh the page, then make your change again.
+* **Q: What do I do when "The composition has been modified. Please refresh the page." appears?** — CJMRT-170043-412: the composition has been modified. Refresh the page, then make your change again.
 * **Q: Why can I not delete a composition (CJMRT-170047-424)?** — The audiences of the composition are used in an activation or in another audience. Remove them from there, then delete the composition.
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. Then contact your administrator for a permission or access error, or contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 **Troubleshooting:**
 
 * CJMRT-170046-413, "Publishing this composition may impact system performance. Please consider decreasing the audience size before continuing." — A warning that publishing may affect system performance. Reduce the size of the audience before you continue.
-* CJMRT-170017-403 ("The client is not authorized for access.") and CJMRT-170028-403 ("Missing required permissions.") — Your user does not have the permission needed to publish or manage the composition. Ask your administrator to grant it.
-* CJMRT-170024-403 ("You don't have permission to publish this rule.  Please contact your administrator or remove unauthorized settings.") — Your user does not have the permission needed to publish or manage the composition. Ask your administrator to grant it, or remove the settings that are not allowed.
+* CJMRT-170017-403 ("The client is not authorized for access.") and CJMRT-170028-403 ("Missing required permissions.") — Ask your administrator to check the permissions and the sandbox assigned to your role.
+* CJMRT-170024-403 ("You don't have permission to publish this rule.  Please contact your administrator or remove unauthorized settings.") — Ask your administrator to check the permissions assigned to your role, or remove the settings your role is not allowed to use, such as audiences or attributes protected by an access label that your role does not include.
 * CJMRT-170029-400, "One or more selected audiences is using a different merge policy than the one associated with the composition. Please choose a different audience." — A selected audience uses a merge policy different from the one of the composition. Select audiences that use the merge policy of the composition.
 * CJMRT-170048-428 — The enrichment dataset is not associated with a schema. Associate it with a schema, or select another dataset.
 * CJMRT-170058-400 — The schema of the enrichment dataset has no primary identity. Update the schema to define one, or select another dataset.
@@ -76,7 +78,9 @@ For complete understanding, this information should be combined with the documen
 * Publication limit: Journey Optimizer guardrails and limitations (start/guardrails.md)
 * Compositions created with federated audience composition: Federated audience composition (audience/federated-audience-composition.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 812b9f6a -->
+<!-- ai-section-version: 1 | source-hash: 7699f3c5 -->

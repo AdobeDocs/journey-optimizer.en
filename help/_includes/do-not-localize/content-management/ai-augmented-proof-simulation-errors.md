@@ -12,6 +12,7 @@ For complete understanding, this information should be combined with the documen
 * **TL;DR:** This page lists the errors that [!DNL Adobe Journey Optimizer] returns when you send proofs, preview content with test profiles, or create the simulated users of a journey simulation, with the cause and the fix of each.
 
 **Intents:**
+* Know what to note and whom to contact when an error persists after the listed steps
 
 * Fix errors returned when sending a proof or previewing content with test profiles
 * Fix sandbox permission errors returned for proofs and previews
@@ -40,7 +41,8 @@ For complete understanding, this information should be combined with the documen
 
 **Prerequisites and permissions:**
 
-* Sandbox permissions, each granted by your administrator on your product profile: the Write permission (CJMPTS-1028-403), the Read permission (CJMPTS-1029-403), the Read and Delete permissions (CJMPTS-1042-403), or the permission needed for the action (CJMPTS-1036-401, CJMPTS-2101-403, CJMPTS-2103-401). Each error is returned when your user lacks the permission.
+* The sandbox you are working in must be assigned to your role.
+* Sandbox permissions, each granted by your administrator through your role: the Write permission (CJMPTS-1028-403), the Read permission (CJMPTS-1029-403), the Read and Delete permissions (CJMPTS-1042-403), or the permission needed for the action (CJMPTS-1036-401, CJMPTS-2101-403, CJMPTS-2103-401). Each error is returned when your user lacks the permission on the sandbox.
 
 **Applicability:**
 
@@ -53,26 +55,27 @@ For complete understanding, this information should be combined with the documen
 * Do not confuse: CJMPTS (proofs and previews) ≠ AJOTDS (simulated users)
 
 **FAQ:**
+* **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. For a permission or access error, contact your administrator; otherwise contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 * **Q: How is an error code structured on this page?** — It is a prefix (CJMPTS for proofs and previews, AJOTDS for simulated users, CJMSAS), an error number, and an HTTP status. For the other error code prefixes, see the error codes reference.
 * **Q: Why does my proof fail with a recipients error?** — CJMPTS-1021-400 or CJMPTS-1022-500: a proof can have up to ten recipients. Remove recipients, then send the proof again.
 * **Q: Why does my proof or preview fail with a syntax error?** — CJMPTS-1300-400: a personalization expression has a syntax error. Open the alerts to find the expression, then fix it in the personalization editor.
 * **Q: Why is only test profiles allowed?** — CJMPTS-1004-400: proofs and previews use test profiles only. Select profiles that are flagged as test profiles.
-* **Q: What do I do on a permission error on a sandbox?** — Ask your administrator to grant the permission on your product profile: Write (CJMPTS-1028-403), Read (CJMPTS-1029-403), Read and Delete (CJMPTS-1042-403), or the permission needed (CJMPTS-1036-401, CJMPTS-2101-403, CJMPTS-2103-401).
-* **Q: Why can I not create a simulated user?** — Possible causes: a simulated user already exists with the combination of identity namespace and identity value (AJOTDS-000001-409), the identity namespace is missing (AJOTDS-000035-400), the identity value is missing (AJOTDS-000036-400), the identity value could not be read from the field named in the message (AJOTDS-000007-400, enter the identity namespace and identity value correctly), the attributes do not match the profile schema (AJOTDS-000009-400, AJOTDS-000011-400, AJOTDS-000022-400, correct the attributes, then save the user again), or the maximum number of simulated users is reached (AJOTDS-000037-400, delete the simulated users you do not need, then create the new one).
-* **Q: What do I do when a simulated user was modified by another operation?** — For AJOTDS-000002-409 (modified by someone else, or by another action) and AJOTDS-000001-412 (the simulated user may have changed since you opened it), refresh the page, then make your change again. For AJOTDS-000007-500 (the request failed unexpectedly), refresh the page, then try again.
+* **Q: What do I do on a permission error on a sandbox?** — Check that the sandbox you are working in is assigned to your role, then ask your administrator to grant the permission through your role: Write (CJMPTS-1028-403), Read (CJMPTS-1029-403), Read and Delete (CJMPTS-1042-403), or the permission needed (CJMPTS-1036-401, CJMPTS-2101-403, CJMPTS-2103-401).
+* **Q: Why can I not create a simulated user?** — Possible causes: a simulated user already exists with the combination of identity namespace and identity value (AJOTDS-000001-409), the identity namespace is missing (AJOTDS-000035-400), the identity value is missing (AJOTDS-000036-400), the identity value could not be read from the field named in the message (AJOTDS-000007-400, enter the identity namespace and identity value correctly), the attributes do not match the schema (AJOTDS-000009-400, AJOTDS-000011-400, AJOTDS-000022-400, correct the attributes, then save the user again), or the maximum number of simulated users is reached (AJOTDS-000037-400, delete the simulated users you do not need, then create the new one).
+* **Q: What do I do when a simulated user was modified by another operation?** — For AJOTDS-000002-409 (the resource was modified by another operation) and AJOTDS-000001-412 ("Something went wrong"), refresh the page, then make your change again. For AJOTDS-000007-500 ("Something went wrong"), refresh the page, then try again.
 
 **Troubleshooting:**
 
-* **CJMPTS-1023-500** — The message says the proof job could not continue because of a missing IMS user token. Your session is not valid for the proof. Log out and log in again, then send the proof again.
-* **CJMPTS-1503-400** — "Message publishing is in progress." The message is still being published. Wait until the publication completes.
-* **CJMPTS-1504-400** — "Errors during message publication." Fix the errors reported on the message.
-* **AJOTDS-000001-404** — No simulated user exists with the ID in the message. Check the ID against the inventory, or create the simulated user.
-* **AJOTDS-000002-404** — No simulated user exists with the namespace and identity value in the message. Check them against the inventory, or create the simulated user.
+* **CJMPTS-1023-500** — The message says the proof job could not continue because of a missing IMS user token. Log out and log in again, then send the proof again.
+* **CJMPTS-1503-400** — "Message publishing is in progress." The message is still being published. Wait until the publication completes, then send the proof again.
+* **CJMPTS-1504-400** — "Errors during message publication." Fix the errors reported on the message, then try again.
+* **AJOTDS-000001-404** — No simulated user exists with the ID in the message. Check the ID against the simulated users in **[!UICONTROL Browse inventory]**, or create the simulated user.
+* **AJOTDS-000002-404** — No simulated user exists with the namespace and identity value in the message. Check them against the simulated users in **[!UICONTROL Browse inventory]**, or create the simulated user.
 * **AJOTDS-000015-400** — The audience ID is missing. Select the audience for the simulated user.
 * **AJOTDS-000016-400** — The audience type is missing. Select the audience type for the simulated user.
 * **AJOTDS-000019-400** — The same audience is listed more than once. Remove the duplicate entries so each audience appears once.
-* **CJMSAS-000002-429** — "You have reached the request limit for this service. Wait a few moments, then try again. If this continues, reduce how frequently you send requests or contact Adobe Customer Care."
+* **CJMSAS-000002-429** — "You have reached the request limit for this service. Wait a few moments, then try again. If this continues, reduce how frequently you send requests or contact Adobe Customer Care." Wait a few moments, then try again; if it continues, reduce how frequently you send requests.
 
 **Related pages:**
 
@@ -81,7 +84,9 @@ For complete understanding, this information should be combined with the documen
 * Journey simulation overview: Get started with journey simulation (building-journeys/simulate-journey-gs.md)
 * Simulated users: Create and manage simulated users (building-journeys/simulate-journey.md)
 * Other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+* Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
+* Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 575eb3de -->
+<!-- ai-section-version: 1 | source-hash: 2cb078c8 -->
