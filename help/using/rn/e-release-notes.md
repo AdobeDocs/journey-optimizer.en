@@ -100,6 +100,7 @@ The following capability is coming to landing pages in this release.
 </tbody>
 </table>
 
+<!--
 ### Journeys {#oct-26-journeys}
 
 The following capabilities and improvements are coming to journeys in this release.
@@ -114,15 +115,16 @@ The following capabilities and improvements are coming to journeys in this relea
 <tr>
 <td>
 <p>&lt;TBC&gt;</p>
-<!-- GIF placeholder: TBD -->
-<!-- Documentation link: TBD -->
+<GIF placeholder: TBD >
+< Documentation link: TBD >
 <p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-15988" target="_blank">DOCAC-15988</a></p>
 </td>
 </tr>
 </tbody>
 </table>
 
-* **Support Inbound action simulation in Journeys** - \<TBC\> <!-- Documentation link: TBD --> Jira: [DOCAC-15445](https://jira.corp.adobe.com/browse/DOCAC-15445){target="_blank"}
+* **Support Inbound action simulation in Journeys** - \<TBC\> <Documentation link: TBD> Jira: [DOCAC-15445](https://jira.corp.adobe.com/browse/DOCAC-15445){target="_blank"}
+-->
 
 ### Decisioning {#oct-26-decisioning}
 
