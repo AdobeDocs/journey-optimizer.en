@@ -115,7 +115,7 @@ Once your fields are defined in the schemas, you can define how they will appear
 
     >[!NOTE]
     >
-    >It can take up to 5 minutes for schema changes to be displayed.
+    >It can take a few minutes for schema changes to be displayed.
 
 1. You can reorder the selected fields. The fields are displayed in this order in the properties of your journeys and campaigns, so place the most important ones first.
 
