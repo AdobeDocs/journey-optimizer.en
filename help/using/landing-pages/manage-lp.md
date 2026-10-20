@@ -67,6 +67,8 @@ From this list, you can click the three dots next to a landing page and select t
     >
     >If you unpublish a landing page which is referenced in a message, the link to the landing page will be broken and users will get an error page if they try to access it.
 
+    A message or a landing page can link only to a landing page that exists, is published, and has not expired.
+
 * **Duplicate** any landing page.
 
 * Edit a landing page's associated [tags](../start/search-filter-categorize.md#tags).

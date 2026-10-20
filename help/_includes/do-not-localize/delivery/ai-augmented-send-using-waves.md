@@ -30,7 +30,7 @@ For complete understanding, this information should be combined with the documen
 
 * Read audience journeys ("As soon as possible" or "Once" scheduler only — not for recurring, event-triggered, business-event, test, or dry-run journeys)
 * Action campaigns (outbound channel actions only)
-* Orchestrated campaigns (outbound channel activities only, configured per channel activity)
+* Orchestrated campaigns (outbound channel activities only, configured per channel activity; not for recurring or signal-triggered Orchestrated campaigns)
 
 **Common guardrails (all contexts):**
 
@@ -39,6 +39,10 @@ For complete understanding, this information should be combined with the documen
 * Wave start cannot be in the past
 * Percentage-based custom distribution must total 100%
 * Number-based custom distribution does not auto-validate total coverage
+
+**Campaign guardrails (Action campaigns and Orchestrated campaigns):**
+
+* Wave start cannot be before campaign start
 
 **Journey-specific guardrails:**
 
@@ -58,3 +62,5 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
+
+<!-- ai-section-version: 1 | source-hash: 76a187ca -->

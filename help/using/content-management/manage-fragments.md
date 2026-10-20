@@ -86,7 +86,7 @@ From the **[!UICONTROL More actions]** button next to each fragment, the followi
 
 * **[!UICONTROL Edit]** — Open the fragment editor directly.
 * **[!UICONTROL Open]** — Open the fragment details and preview screen.
-* **[!UICONTROL Discard draft]** — Discard the current draft version and revert to the last published version.
+* **[!UICONTROL Discard draft]** — Discard the current draft version and revert to the last published version. You can discard changes only on a fragment that is in **[!UICONTROL Draft]** status and has a previous version.
 
 ![](assets/fragment-quick-launch.png)
 

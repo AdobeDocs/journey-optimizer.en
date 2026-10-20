@@ -84,6 +84,8 @@ When setting up subdomains in [!DNL Journey Optimizer], follow the guardrails an
 
 * Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
 
+* You cannot delegate a root-level domain. Delegate a subdomain instead, such as marketing.yourcompany.com.
+
 * You cannot use the same sending domain to send out messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage].
 
 * Delegating both a parent and a subdomain is not supported. For example, if you delegated subdomain.domain.com, you cannot delegate email.subdomain.domain.com. Similarly, if you delegated email.subdomain.domain.com, you cannot delegate subdomain.domain.com.

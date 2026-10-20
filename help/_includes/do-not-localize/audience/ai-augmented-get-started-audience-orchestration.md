@@ -33,6 +33,7 @@ For complete understanding, this information should be combined with the documen
 * Enriched attributes in audience composition audiences are as fresh as the last composition run, which can be up to 24 hours in the past.
 * The use of audiences and attributes from audience composition is currently unavailable with Healthcare Shield or Privacy and Security Shield.
 * Enrichment attributes are not yet integrated with the policy enforcement service, so data usage labels applied to enrichment attributes are not enforced in Journey Optimizer campaigns or journeys.
+* With the Enrich activity, the enrichment dataset must be 1 GB or smaller, and its schema must define a primary identity.
 * Audience composition is not integrated with the sandbox reset capability; you must delete compositions manually before a sandbox reset so associated audience data is cleaned up.
 * If any error occurs during publishing, alerts display with information on how to resolve the issue.
 
@@ -52,4 +53,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: f8128b45 -->
+<!-- ai-section-version: 1 | source-hash: 686fa503 -->
