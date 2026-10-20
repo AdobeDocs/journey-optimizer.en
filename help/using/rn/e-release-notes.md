@@ -46,13 +46,14 @@ The following capability and improvement are coming to administration in this re
 <p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
 <!-- GIF placeholder: TBD -->
 <!-- Documentation link: TBD -->
+<!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-16114 -->
 <p>Availability date: October 29, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-* **Custom metadata for reporting and decisioning (Limited Availability)** - You can now attach custom key/value metadata to journeys, Action Campaign actions, and orchestrated campaign actions, in addition to the existing Adobe Experience Platform Unified Tags. This metadata is available for reporting, both in Journey Optimizer's built-in reports and in Customer Journey Analytics, so teams can measure and analyze action performance using their own custom dimensions. This capability is only available for a set of organizations (Limited Availability); contact your Adobe representative for more information. <!-- Documentation link: TBD -->
+* **Custom metadata for reporting and decisioning (Limited Availability)** - You can now attach custom key/value metadata to journeys, Action Campaign actions, and orchestrated campaign actions, in addition to the existing Adobe Experience Platform Unified Tags. This metadata is available for reporting, both in Journey Optimizer's built-in reports and in Customer Journey Analytics, so teams can measure and analyze action performance using their own custom dimensions. This capability is only available for a set of organizations (Limited Availability); contact your Adobe representative for more information. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15667 -->
 
 ### Journeys {#oct-26-journeys}
 
@@ -70,20 +71,21 @@ The following capabilities and improvements are coming to journeys in this relea
 <p>&lt;TBC&gt;</p>
 <!-- GIF placeholder: TBD -->
 <!-- Documentation link: TBD -->
+<!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15988 -->
 </td>
 </tr>
 </tbody>
 </table>
 
-* **Support Inbound action simulation in Journeys** - \<TBC\> <!-- Documentation link: TBD -->
+* **Support Inbound action simulation in Journeys** - \<TBC\> <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15445 -->
 
 ### Coworker {#oct-26-coworker}
 
 The following improvements are coming to Coworker in this release.
 
-* **Decisioning rule generation from Coworker** - The AI-assisted decisioning rule generation experience, previously available via the right rail, is now accessible through Coworker, which replaces the right rail as the way to build rules with AI. <!-- Documentation link: TBD -->
+* **Decisioning rule generation from Coworker** - The AI-assisted decisioning rule generation experience, previously available via the right rail, is now accessible through Coworker, which replaces the right rail as the way to build rules with AI. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15290 -->
 
-* **Orchestrated campaigns skills in Coworker** - You can now interact with Orchestrated campaigns in natural language from the Coworker chat interface, for example to list your orchestrated campaigns and filter them by status (draft, live, completed, paused, stopped), date range, channel, and tags. <!-- Documentation link: TBD -->
+* **Orchestrated campaigns skills in Coworker** - You can now interact with Orchestrated campaigns in natural language from the Coworker chat interface, for example to list your orchestrated campaigns and filter them by status (draft, live, completed, paused, stopped), date range, channel, and tags. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-14925 -->
 
 ### Onboarding {#oct-26-onboarding}
 
@@ -102,6 +104,7 @@ The following capability is coming to onboarding in this release.
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <!-- GIF placeholder: TBD -->
 <!-- Documentation link: TBD -->
+<!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15965 -->
 </td>
 </tr>
 </tbody>
@@ -111,9 +114,9 @@ The following capability is coming to onboarding in this release.
 
 The following improvements are coming to orchestrated campaigns in this release.
 
-* **Increase AJO message activity limit to 25** - An orchestrated campaign can now contain up to 25 message actions, such as email, push notification, or SMS sends, on its canvas. You can now build a larger campaign as one campaign instead of splitting it into several smaller ones. <!-- Documentation link: TBD -->
+* **Increase AJO message activity limit to 25** - An orchestrated campaign can now contain up to 25 message actions, such as email, push notification, or SMS sends, on its canvas. You can now build a larger campaign as one campaign instead of splitting it into several smaller ones. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-16143 -->
 
-* **Personalize email list unsubscribe in orchestrated campaigns (Limited Availability)** - Orchestrated campaigns now support personalization of list unsubscribe email parameters, using profile attributes or relational data. Header values can be set at the channel level and overridden per campaign using contextual data for more precise control. This capability is available in Limited Availability. Contact your Adobe representative to request access. <!-- Documentation link: TBD -->
+* **Personalize email list unsubscribe in orchestrated campaigns (Limited Availability)** - Orchestrated campaigns now support personalization of list unsubscribe email parameters, using profile attributes or relational data. Header values can be set at the channel level and overridden per campaign using contextual data for more precise control. This capability is available in Limited Availability. Contact your Adobe representative to request access. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15544 -->
 
 ### Channels {#oct-26-channels}
 
@@ -132,25 +135,26 @@ The following capabilities and improvements are coming to channels in this relea
 <p>This lets you personalize the email header fields (From name, From email prefix, Reply to name, and Reply to email), the execution address, and the list-unsubscribe values, using profile attributes or contextual data for more precise control. In particular, this allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.</p>
 <!-- GIF placeholder: TBD -->
 <!-- Documentation link: TBD -->
+<!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-14718 -->
 <p>Availability date: October 5, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-* **Reporting webhooks available for custom channels** - You can now define a reporting webhook for a custom outbound channel and attach it to a channel configuration. Use it to enrich your Journey Optimizer reports with interaction events. <!-- Documentation link: TBD -->
+* **Reporting webhooks available for custom channels** - You can now define a reporting webhook for a custom outbound channel and attach it to a channel configuration. Use it to enrich your Journey Optimizer reports with interaction events. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15966 -->
 
-* **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub One-Time Password (OTP) directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification. <!-- Documentation link: TBD -->
+* **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub One-Time Password (OTP) directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-14815 -->
 
-* **Automated provisioning for High-Throughput API-triggered campaigns** - [TBC] High Throughput transactional campaigns now include automated safeguards. Adobe Journey Optimizer validates that an organization is entitled for the High Throughput add-on before a High Throughput API-triggered campaign can be published, and the campaign's surface picker now shows only High Throughput-enabled surfaces when High Throughput mode is selected. These changes reduce the manual checks previously required to configure and validate High Throughput campaigns. <!-- Documentation link: TBD --> Availability date: October 12, 2026
+* **Automated provisioning for High-Throughput API-triggered campaigns** - [TBC] High Throughput transactional campaigns now include automated safeguards. Adobe Journey Optimizer validates that an organization is entitled for the High Throughput add-on before a High Throughput API-triggered campaign can be published, and the campaign's surface picker now shows only High Throughput-enabled surfaces when High Throughput mode is selected. These changes reduce the manual checks previously required to configure and validate High Throughput campaigns. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15938 --> Availability date: October 12, 2026
 
-* **Suppression List Override at Email Action Level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model. <!-- Documentation link: TBD --> Availability date: October 5, 2026
+* **Suppression List Override at Email Action Level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15734 --> Availability date: October 5, 2026
 
-* **Channel Builder skill for creating a new custom channel** - Channel Builder skill in Coworker now helps administrators create custom channels faster. The skill guides users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD --> Availability date: October 2, 2026
+* **Channel Builder skill for creating a new custom channel** - Channel Builder skill in Coworker now helps administrators create custom channels faster. The skill guides users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15511 --> Availability date: October 2, 2026
 
-* **Split Direct Mail files into multiple parts** - Direct Mail files can now be split into multiple parts — automatically by Journey Optimizer when a file exceeds roughly 20 GB, or manually by choosing a target file size (500 MB to 10 GB) in the file routing configuration — with an optional JSON manifest file describing all generated parts. <!-- Documentation link: TBD --> Availability date: October 1, 2026
+* **Split Direct Mail files into multiple parts** - Direct Mail files can now be split into multiple parts — automatically by Journey Optimizer when a file exceeds roughly 20 GB, or manually by choosing a target file size (500 MB to 10 GB) in the file routing configuration — with an optional JSON manifest file describing all generated parts. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15677 --> Availability date: October 1, 2026
 
-* **Removal of audience restrictions for Direct Mail** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors. <!-- Documentation link: TBD --> Availability date: October 1, 2026
+* **Removal of audience restrictions for Direct Mail** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15676 --> Availability date: October 1, 2026
 
 ### Landing pages {#oct-26-landing-pages}
 
@@ -168,6 +172,7 @@ The following capability is coming to landing pages in this release.
 <p>Journey Optimizer now allows you to create landing pages accessible to anyone and from there capture data from completely unknown visitors in order to create or enrich new customer profiles in Experience Platform.</p>
 <!-- GIF placeholder: TBD -->
 <!-- Documentation link: TBD -->
+<!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-13757 -->
 </td>
 </tr>
 </tbody>
@@ -177,18 +182,18 @@ The following capability is coming to landing pages in this release.
 
 The following improvement is coming to the Email Designer in this release.
 
-* **Define fallback fonts for custom fonts used in email themes** - You can now define a fallback font for any custom (web) font applied through email themes. If a subscriber's email client does not support the custom font, Adobe Journey Optimizer automatically displays the specified fallback font instead of leaving the choice to the email client's default. This keeps email typography closer to your brand guidelines and reduces font-rendering inconsistencies across email clients. <!-- Documentation link: TBD -->
+* **Define fallback fonts for custom fonts used in email themes** - You can now define a fallback font for any custom (web) font applied through email themes. If a subscriber's email client does not support the custom font, Adobe Journey Optimizer automatically displays the specified fallback font instead of leaving the choice to the email client's default. This keeps email typography closer to your brand guidelines and reduces font-rendering inconsistencies across email clients. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15662 -->
 
 ### Decisioning {#oct-26-decisioning}
 
 The following improvement is coming to Decisioning in this release.
 
-* **Use audience enrichment attributes in Decisioning rules (Limited Availability)** - You can now reference an audience's enrichment attributes as a data source in Decisioning eligibility rules. Enrichment attributes are additional, audience-specific data - such as the product or item IDs that qualified a profile for inclusion - defined through an Enrich activity in an audience composition. This lets your eligibility logic take into account exactly what triggered a customer's audience membership, without building and maintaining separate audiences for each product or item variation. Enrichment attributes were already available in journey conditions, custom actions, and message personalization; this release extends them to Decisioning. This capability is available in Limited Availability. Contact your Adobe representative to request access. <!-- Documentation link: TBD --> Availability date: September 4, 2026
+* **Use audience enrichment attributes in Decisioning rules (Limited Availability)** - You can now reference an audience's enrichment attributes as a data source in Decisioning eligibility rules. Enrichment attributes are additional, audience-specific data - such as the product or item IDs that qualified a profile for inclusion - defined through an Enrich activity in an audience composition. This lets your eligibility logic take into account exactly what triggered a customer's audience membership, without building and maintaining separate audiences for each product or item variation. Enrichment attributes were already available in journey conditions, custom actions, and message personalization; this release extends them to Decisioning. This capability is available in Limited Availability. Contact your Adobe representative to request access. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15576 --> Availability date: September 4, 2026
 
 ### Loyalty {#oct-26-loyalty}
 
 The following improvements are coming to Loyalty in this release.
 
-* **Removal of the non-consecutive Streak type option in Loyalty challenges** - The non-consecutive option has been removed when creating Streak challenges in Loyalty. <!-- Documentation link: TBD --> Availability date: October 1, 2026
+* **Removal of the non-consecutive Streak type option in Loyalty challenges** - The non-consecutive option has been removed when creating Streak challenges in Loyalty. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15951 --> Availability date: October 1, 2026
 
-* **Update documentation for "Autosave challenge drafts" in Challenges** - Challenge edits in Loyalty are now saved automatically as you work, so you can publish a challenge or generate a journey without saving first. <!-- Documentation link: TBD --> Availability date: October 1, 2026
+* **Update documentation for "Autosave challenge drafts" in Challenges** - Challenge edits in Loyalty are now saved automatically as you work, so you can publish a challenge or generate a journey without saving first. <!-- Documentation link: TBD --> <!-- Jira: https://jira.corp.adobe.com/browse/DOCAC-15730 --> Availability date: October 1, 2026
