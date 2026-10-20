@@ -97,29 +97,29 @@ Key use cases:
 | Program performance insights | Analyze daily, weekly, and monthly program performance metrics. Compare performance across product categories and discount strategies. Identify trends in member engagement and redemption patterns. | Loyalty Insights | Show the loyalty program's total revenue broken down by day during August 2026.<br><br>Show the total loyalty discounts broken down by product category during August 2026.<br><br>Show me the loyalty program performance report for Q3 2026. |
 
 
-## Challenge Recommendations Skill {#loyalty-challenge-recommendations}
+## Loyalty Opportunities Skill {#loyalty-opportunities}
 
-The Coworker Recommendation feature enables marketers to request grounded, specific challenge recommendations through natural language conversations in CX Coworker. Recommendations use loyalty program trends and performance data and can focus on increasing member spend, winning back inactive members, improving underperforming challenges, focusing on products or categories, or addressing points expiry.
+The Loyalty Opportunities skill enables marketers to request grounded, specific challenge opportunities through natural language conversations in CX Coworker. Opportunities use loyalty program trends and performance data and can focus on increasing member spend, winning back inactive members, improving underperforming challenges, focusing on products or categories, or addressing points expiry.
 
-Marketers can narrow recommendations to the goals they care about and pass a recommendation to the Loyalty Challenge Management skill to create or edit a live challenge without leaving the conversation.
+Marketers can narrow opportunities to the goals they care about and pass an opportunity to the Loyalty Challenge Management skill to create or edit a live challenge without leaving the conversation.
 
 ### Key use cases
 
-1. **Request recommendations in natural language**
+1. **Request opportunities in natural language**
 
-   Ask for challenge recommendations in a Coworker conversation and receive grounded, specific ideas based on loyalty program trends and performance data.
+   Ask for challenge opportunities in a Coworker conversation and receive grounded, specific ideas based on loyalty program trends and performance data.
 
-1. **Focus recommendations on a goal**
+1. **Focus opportunities on a goal**
 
-   Narrow recommendations to a specific goal, such as increasing member spend, winning back inactive members, improving underperforming challenges, focusing on products or categories, or addressing points expiry.
+   Narrow opportunities to a specific goal, such as increasing member spend, winning back inactive members, improving underperforming challenges, focusing on products or categories, or addressing points expiry.
 
 1. **Review an opportunity and its rationale**
 
-   Open the **[!UICONTROL Opportunities]** tab and select **[!UICONTROL View details]** to review the recommendation, proposed challenge, and rationale.
+   Open the **[!UICONTROL Opportunities]** tab and select **[!UICONTROL View details]** to review the proposed challenge and its rationale.
 
-1. **Implement a recommendation as a live challenge**
+1. **Implement an opportunity as a live challenge**
 
-   Select **[!UICONTROL Create with AI]** to pass the recommendation to the Loyalty Challenge Management skill. Continue the conversation to provide missing details and create or edit the challenge without leaving Coworker Chat.
+   Select **[!UICONTROL Create with AI]** to pass the opportunity to the Loyalty Challenge Management skill. Continue the conversation to provide missing details and create or edit the challenge without leaving Coworker Chat.
 
 After the challenge is created or edited, review the challenge details and journey in challenge authoring before publishing.
 

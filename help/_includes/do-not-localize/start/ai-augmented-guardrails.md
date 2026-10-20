@@ -49,7 +49,7 @@ For complete understanding, this information should be combined with the documen
 * Inbound: peak volume of 5,000 inbound requests per second across all inbound channels, and a maximum of 500 active inbound actions at any moment in time (hard limit).
 * Transactional messages: peak volume of 500 transactional messages per second in campaigns.
 * Content authoring recommended size limits: Template 1200 KB, Fragment 700 KB, Message 1200 KB, Landing page 1000 KB (recommended); a warning is surfaced when a variant exceeds its threshold but it does not block saving or publishing; a landing page HTML template larger than 1 MB is rejected during validation.
-* Fragments cannot exceed 700 KB (hard limit); up to 60 unique fragments per content variant (warning at 45, publishing blocked at 60) and up to 120 across all variants of a single message (warning at 90, publishing blocked at 120); a fragment must be in Live status to be used.
+* Fragments cannot exceed 700 KB (hard limit); up to 60 unique fragments per content variant (warning at 45, publishing blocked at 60) and up to 120 across all variants of a single message (warning at 90, publishing blocked at 120); a fragment must be in Live status to be used; a fragment cannot reference itself.
 * For pseudonymous inbound profiles, Adobe recommends setting a Time-To-Live of 14 days to match the current Edge profile TTL (recommended).
 
 **Terminology:**
@@ -71,4 +71,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: efe5e24c -->
+<!-- ai-section-version: 1 | source-hash: b1879f86 -->

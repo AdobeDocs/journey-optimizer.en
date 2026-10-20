@@ -124,7 +124,7 @@ To define specific content that will enable users to select and submit their cho
 
     ![](assets/lp_designer-form-update-options.png)
 
-    * **[!UICONTROL Subscription list]**: You must select the subscription list that will be updated if the profile selects this checkbox. Learn more about [subscription lists](subscription-list.md).
+    * **[!UICONTROL Subscription list]**: You must select the subscription list that will be updated if the profile selects this checkbox. Learn more about [subscription lists](subscription-list.md). Each subscription list can be used only once on a primary page.
 
         <!--![](assets/lp_designer-form-subs-list.png)-->
 

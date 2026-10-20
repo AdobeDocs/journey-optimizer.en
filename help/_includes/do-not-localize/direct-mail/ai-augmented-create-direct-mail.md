@@ -34,6 +34,7 @@ For complete understanding, this information should be combined with the documen
 * Before creating a direct mail message, a file routing configuration and a direct mail message configuration must already exist.
 * In a campaign, audience selection supports up to 100 million profiles.
 * You can add up to 50 columns to the extraction file.
+* Each column in the extraction file must have a Label.
 * Direct Mail supports the Holdout functionality but does not currently support Treatments.
 * Journey direct mail extraction files are generated according to the file routing frequency; profiles are included in the next export after they reach the Direct mail node. With a frequency shorter than 24 hours, profiles can arrive in different export windows and produce multiple files during a day; a 24-hour routing frequency produces one file per day.
 * Campaign direct mail extraction files are generated when the campaign starts; for recurring campaigns, a file is generated for each campaign execution.
@@ -55,4 +56,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 8bfce52d -->
+<!-- ai-section-version: 1 | source-hash: 0011c85d -->

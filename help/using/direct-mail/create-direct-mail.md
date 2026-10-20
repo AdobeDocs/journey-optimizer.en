@@ -175,6 +175,8 @@ The extraction file is required by direct mail providers to send mail to your cu
    1. Click the **[!UICONTROL Add]** button to create a new column.
 
    1. The **[!UICONTROL Formatting]** pane displays on the right-hand side, allowing you to set up the selected column. Specify a **[!UICONTROL Label]** for the column.
+
+      Each column must have a **[!UICONTROL Label]**.
    
    1. In the **[!UICONTROL Data]** field, select the profile attributes to display using the [personalization editor](../personalization/personalization-build-expressions.md).
 

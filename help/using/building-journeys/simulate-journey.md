@@ -125,6 +125,8 @@ If your journey uses an external audience, for example a CSV or Federated Audien
             
         ![Create Simulated Users form with display name, identity namespace, description, and Union schema attributes](assets/simulate-form.png)
 
+        A simulated user requires an **[!UICONTROL Identity namespace]** and an identity value, and this combination must be unique.
+
     1. Then, select the attributes from the Union schema that you want to populate for this user. Note that only the attributes used in the current journey, for example in expressions or personalization, are available here. 
     
         Attributes are grouped by origin, in separate sections for profile attributes and, if your journey reads an external audience such as a CSV or Federated Audience Composition audience, for that audience's enrichment attributes.
@@ -184,6 +186,9 @@ If your journey uses an external audience, for example a CSV or Federated Audien
 1. The simulated users you created appear in the **[!UICONTROL Test users]** list. For each entry, select one of the following:
 
     * ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg): Update the simulated user's details.
+
+        If another operation modified the simulated user in the meantime, refresh and try again.
+
     * ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg): Run the simulation for this simulated user only.
         
         This option is not available for journeys starting with an Event, as the simulated user entrance is triggered by the event being sent. [Learn more](#firing-events)

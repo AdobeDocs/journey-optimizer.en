@@ -156,7 +156,7 @@ New updates to the original locked fragment are automatically propagated to all 
 >
 >To publish a fragment, you must have the [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager) user permission.
 
-If your fragment is ready to go live, you can preview and publish it to make it available in your journeys and campaigns. To do so, follow the steps below.
+If your fragment is ready to go live, you can preview and publish it to make it available in your journeys and campaigns. To do so, follow the steps below. Before you publish a fragment, publish the fragments that it references.
 
 1. Go back to the fragment creation screen after designing its content, or open it from the list of fragments.
 

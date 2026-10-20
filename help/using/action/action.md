@@ -68,6 +68,10 @@ Actions are connections through which you deliver personalized, real-time experi
 
 * If you are using a third-party system to send messages such as Epsilon, Facebook, Adobe Developer, Firebase, etc, you need to create and configure a custom action. Refer to [this page](../action/about-custom-action-configuration.md).
 
+>[!NOTE]
+>
+>Custom actions are one of three building blocks of journey configuration, alongside Data Sources and Events. For a complete overview and configuration checklist, see [Configure journeys: Data Sources, Events, and Actions](../configuration/about-data-sources-events-actions.md).
+
 >[!CAUTION]
 >
 >The configuration of custom actions must be performed by a **technical user**.
