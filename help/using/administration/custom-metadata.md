@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Custom metadata for journeys, Action campaigns and Orchestrated campaigns
+title: Use custom metadata in campaigns and journeys
 description: Learn how to define custom metadata fields to track business information on your journeys, campaigns and Orchestrated campaigns.
 feature: Administration
 topic: Content Management
@@ -12,7 +12,7 @@ hidefromtoc: true
 badge: label="Limited Availability" type="Informative"
 keywords: custom metadata, journey, campaign, orchestrated campaign, schema, reporting
 ---
-# Custom metadata for journeys, Action campaigns and Orchestrated campaigns {#custom-metadata}
+# Use custom metadata in campaigns and journeys {#custom-metadata}
 
 >[!BEGINSHADEBOX]
 

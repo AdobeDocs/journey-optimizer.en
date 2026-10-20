@@ -1046,7 +1046,7 @@ nudge: yes
   + Sandboxes management {#sandbox}
     + [Use and assign sandboxes](using/administration/sandboxes.md)
     + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
-  + {hide-from-toc} [Custom metadata for journeys and campaigns](using/administration/custom-metadata.md)
+  + {hide-from-toc} [Use custom metadata in campaigns and journeys](using/administration/custom-metadata.md)
   + [Configure the Sources connector](using/start/get-started-sources.md)
 + Access control {#access-control}
   + [Access control](/help/rp_landing_pages/access-control-landing-page.md)
