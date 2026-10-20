@@ -76,7 +76,6 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 <p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
 <p>For more information, refer to the <a href="../administration/custom-metadata.md">detailed documentation</a>.</p>
 <p>Availability date: October 29, 2026</p>
-<p>Availability date: October 20, 2026</p>
 </td>
 </tr>
 </tbody>
