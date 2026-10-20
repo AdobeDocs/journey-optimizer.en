@@ -23,34 +23,11 @@ Adobe Journey Optimizer continuously delivers new features, enhancements to exis
 
 ## October '26 pre-release notes {#oct-26-rn}
 
-**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published once changes are live in production. While most changes are delivered on the release date, a few may roll out later — refer to the Availability Date listed for each entry for details.
+**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published once changes are live in production.
 
 See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Release date**: October 28-29, 2026
-
-### Onboarding {#oct-26-onboarding}
-
-The following capability is coming to onboarding in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Guided capabilities for onboarding emails and journeys (General Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Transitioning to Adobe Journey Optimizer from another marketing platform is easier with guided capabilities that help you move existing email content and journeys into Journey Optimizer. A dedicated workspace lets you reuse what you have instead of rebuilding from scratch.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<!-- GIF placeholder: TBD -->
-<!-- Documentation link: TBD -->
-<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-15965" target="_blank">DOCAC-15965</a></p>
-</td>
-</tr>
-</tbody>
-</table>
 
 ### Channels {#oct-26-channels}
 
@@ -70,7 +47,6 @@ The following capabilities and improvements are coming to channels in this relea
 <!-- GIF placeholder: TBD -->
 <!-- Documentation link: TBD -->
 <p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-14718" target="_blank">DOCAC-14718</a></p>
-<p>Availability date: October 5, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -80,15 +56,11 @@ The following capabilities and improvements are coming to channels in this relea
 
 * **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub One-Time Password (OTP) directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification. <!-- Documentation link: TBD --> Jira: [DOCAC-14815](https://jira.corp.adobe.com/browse/DOCAC-14815){target="_blank"}
 
-* **Automated provisioning for High-Throughput API-triggered campaigns** - [TBC] High Throughput transactional campaigns now include automated safeguards. Adobe Journey Optimizer validates that an organization is entitled for the High Throughput add-on before a High Throughput API-triggered campaign can be published, and the campaign's surface picker now shows only High Throughput-enabled surfaces when High Throughput mode is selected. These changes reduce the manual checks previously required to configure and validate High Throughput campaigns. <!-- Documentation link: TBD --> Jira: [DOCAC-15938](https://jira.corp.adobe.com/browse/DOCAC-15938){target="_blank"} Availability date: October 12, 2026
+* **Automated provisioning for High-Throughput API-triggered campaigns** - [TBC] High Throughput transactional campaigns now include automated safeguards. Adobe Journey Optimizer validates that an organization is entitled for the High Throughput add-on before a High Throughput API-triggered campaign can be published, and the campaign's surface picker now shows only High Throughput-enabled surfaces when High Throughput mode is selected. These changes reduce the manual checks previously required to configure and validate High Throughput campaigns. <!-- Documentation link: TBD --> Jira: [DOCAC-15938](https://jira.corp.adobe.com/browse/DOCAC-15938){target="_blank"}
 
-* **Suppression List Override at Email Action Level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model. <!-- Documentation link: TBD --> Jira: [DOCAC-15734](https://jira.corp.adobe.com/browse/DOCAC-15734){target="_blank"} Availability date: October 5, 2026
+* **Suppression List Override at Email Action Level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model. <!-- Documentation link: TBD --> Jira: [DOCAC-15734](https://jira.corp.adobe.com/browse/DOCAC-15734){target="_blank"}
 
-* **Channel Builder skill for creating a new custom channel** - Channel Builder skill in Coworker now helps administrators create custom channels faster. The skill guides users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD --> Jira: [DOCAC-15511](https://jira.corp.adobe.com/browse/DOCAC-15511){target="_blank"} Availability date: October 2, 2026
-
-* **Split Direct Mail files into multiple parts** - Direct Mail files can now be split into multiple parts — automatically by Journey Optimizer when a file exceeds roughly 20 GB, or manually by choosing a target file size (500 MB to 10 GB) in the file routing configuration — with an optional JSON manifest file describing all generated parts. <!-- Documentation link: TBD --> Jira: [DOCAC-15677](https://jira.corp.adobe.com/browse/DOCAC-15677){target="_blank"} Availability date: October 1, 2026
-
-* **Removal of audience restrictions for Direct Mail** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors. <!-- Documentation link: TBD --> Jira: [DOCAC-15676](https://jira.corp.adobe.com/browse/DOCAC-15676){target="_blank"} Availability date: October 1, 2026
+* **Channel Builder skill for creating a new custom channel** - Channel Builder skill in Coworker now helps administrators create custom channels faster. The skill guides users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD --> Jira: [DOCAC-15511](https://jira.corp.adobe.com/browse/DOCAC-15511){target="_blank"}
 
 ### Orchestrated campaigns {#oct-26-orchestrated-campaigns}
 
@@ -156,7 +128,7 @@ The following capabilities and improvements are coming to journeys in this relea
 
 The following improvement is coming to Decisioning in this release.
 
-* **Use audience enrichment attributes in Decisioning rules (Limited Availability)** - You can now reference an audience's enrichment attributes as a data source in Decisioning eligibility rules. Enrichment attributes are additional, audience-specific data - such as the product or item IDs that qualified a profile for inclusion - defined through an Enrich activity in an audience composition. This lets your eligibility logic take into account exactly what triggered a customer's audience membership, without building and maintaining separate audiences for each product or item variation. Enrichment attributes were already available in journey conditions, custom actions, and message personalization; this release extends them to Decisioning. This capability is available in Limited Availability. Contact your Adobe representative to request access. <!-- Documentation link: TBD --> Jira: [DOCAC-15576](https://jira.corp.adobe.com/browse/DOCAC-15576){target="_blank"} Availability date: September 4, 2026
+* **Use audience enrichment attributes in Decisioning rules (Limited Availability)** - You can now reference an audience's enrichment attributes as a data source in Decisioning eligibility rules. Enrichment attributes are additional, audience-specific data - such as the product or item IDs that qualified a profile for inclusion - defined through an Enrich activity in an audience composition. This lets your eligibility logic take into account exactly what triggered a customer's audience membership, without building and maintaining separate audiences for each product or item variation. Enrichment attributes were already available in journey conditions, custom actions, and message personalization; this release extends them to Decisioning. This capability is available in Limited Availability. Contact your Adobe representative to request access. <!-- Documentation link: TBD --> Jira: [DOCAC-15576](https://jira.corp.adobe.com/browse/DOCAC-15576){target="_blank"}
 
 ### Email Designer {#oct-26-email-designer}
 
@@ -168,9 +140,9 @@ The following improvement is coming to the Email Designer in this release.
 
 The following improvements are coming to Loyalty in this release.
 
-* **Removal of the non-consecutive Streak type option in Loyalty challenges** - The non-consecutive option has been removed when creating Streak challenges in Loyalty. <!-- Documentation link: TBD --> Jira: [DOCAC-15951](https://jira.corp.adobe.com/browse/DOCAC-15951){target="_blank"} Availability date: October 1, 2026
+* **Removal of the non-consecutive Streak type option in Loyalty challenges** - The non-consecutive option has been removed when creating Streak challenges in Loyalty. <!-- Documentation link: TBD --> Jira: [DOCAC-15951](https://jira.corp.adobe.com/browse/DOCAC-15951){target="_blank"}
 
-* **Update documentation for "Autosave challenge drafts" in Challenges** - Challenge edits in Loyalty are now saved automatically as you work, so you can publish a challenge or generate a journey without saving first. <!-- Documentation link: TBD --> Jira: [DOCAC-15730](https://jira.corp.adobe.com/browse/DOCAC-15730){target="_blank"} Availability date: October 1, 2026
+* **Update documentation for "Autosave challenge drafts" in Challenges** - Challenge edits in Loyalty are now saved automatically as you work, so you can publish a challenge or generate a journey without saving first. <!-- Documentation link: TBD --> Jira: [DOCAC-15730](https://jira.corp.adobe.com/browse/DOCAC-15730){target="_blank"}
 
 ### Administration {#oct-26-administration}
 
@@ -190,7 +162,6 @@ The following capability and improvement are coming to administration in this re
 <!-- GIF placeholder: TBD -->
 <!-- Documentation link: TBD -->
 <p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-16114" target="_blank">DOCAC-16114</a></p>
-<p>Availability date: October 29, 2026</p>
 </td>
 </tr>
 </tbody>
