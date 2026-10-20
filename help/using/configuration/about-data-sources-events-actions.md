@@ -4,7 +4,7 @@ product: journey optimizer
 title: Configure journeys – Data Sources, Events, and Actions
 description: Learn how to configure Data Sources, Events, and Actions so your journeys can read data, react to behavior, and send messages or API calls.
 feature: Data Sources, Events, Actions, Application Settings, Journeys
-role: Admin, Data Engineer, Developer
+role: Admin, Developer
 level: Beginner, Intermediate
 keywords: configuration, journey, dashboard, data sources, events, actions
 exl-id: c144d44f-031f-4ca2-800e-d3878af400a5
