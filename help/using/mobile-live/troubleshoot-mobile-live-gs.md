@@ -91,7 +91,7 @@ On Android, unitary Live activities use the same regular FCM push token to start
 | --- | --- |
 | **`action_type` / `action_uri`** | The tap action and its deep-link target. *Not read by the current Android SDK.* |
 | **Broadcast** | Audience-targeted Live activity sent via an API-triggered Marketing campaign. |
-| **`content_state`** | Dynamic values (`custom_key_*` fields) consumed by the app's style provider to render the notification. |
+| **`content_state`** | Dynamic values (fields defined by your app) consumed by the app's style provider to render the notification. |
 | **`critical_text`** | Short text rendered in the status-bar chip. |
 | **`dismiss_after`** | Used only for end events. Specifies how many seconds the completed Live activity remains visible before removal. |
 | **ECID** | Experience Cloud ID, the identifier used as the unitary target with the `ECID` namespace. |
@@ -198,58 +198,12 @@ Collect the following from your test device:
 
 +++
 
-+++ Gather API Triggered Campaign details
-
-Navigate to your API Triggered Campaign in Journey Optimizer and retrieve:
-
-* Campaign name and ID
-* Campaign version (if applicable)
-* Campaign type: **Transactional** (unitary) or **Marketing** (broadcast)
-* Surface configuration: the iOS app surface used for the Live activity
-* Activity type: the `AttributeType` struct name configured in the campaign
-
-+++
-
-+++ Collect API request information
-
-When making the API call to trigger the Live activity, save:
-
-* API request payload, including profile identifiers and Live activity data
-* API response including status code, message ID, request ID
-* Timestamp of when the API was called
-* Endpoint used, e.g., `/campaign/{CAMPAIGN_ID}/execute`
-
-+++
-
-+++ Identify the test profile
-
-From your API request, retrieve:
-
-* Profile namespace, e.g., ECID, email, customer ID
-* Profile ID used in the API call
-
-Ensure you can look up this profile in Adobe Experience Platform. Learn how to [look up a profile in the Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide.html).
-
-+++
-
-+++ Device and app information
-
-Collect the following from your test device:
-
-* Device model, e.g., iPhone 14 Pro
-* iOS version
-* App bundle identifier
-* APNs push token
-* Network connectivity status at the time of testing
-
-+++
-
 >[!TAB Android]
 
 
 +++ Assurance
 
-On Android, use standard Assurance on a physical device or emulator running Android 16.1 (API level 36.1) or later. There is no dedicated Live Activities plugin view, but an Assurance session captures SDK events and lets you inspect the delivery pipeline: Edge Network requests and responses, profile qualification, push-token registration, and delivery events. Learn how to set up [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home.html).
+On Android, use Assurance on a physical device or emulator running Android 16.1 (API level 36.1) or later. An Assurance session captures SDK events and lets you inspect the delivery pipeline: Edge Network requests and responses, profile qualification, push-token registration, and delivery events. Learn how to set up [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home.html).
 
 >[!IMPORTANT]
 >

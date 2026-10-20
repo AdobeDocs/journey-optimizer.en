@@ -451,7 +451,7 @@ For broadcasts, use an API-triggered Marketing campaign with `audience.id` and p
 | `notification_channel_id` | Must match a channel created by the Android app | Missing or mismatched channel |
 | `event_type` | Must be `"start"`, `"update"`, or `"end"` | Invalid lifecycle event |
 | `timestamp` | Epoch seconds; must strictly increase for each event targeting the same instance or broadcast topic | Older or equal timestamps are ignored |
-| `content_state` | Use `custom_key_*` fields supported by the app's style provider | Unsupported keys or incorrect value types |
+| `content_state` | Use the fields supported by the app's style provider | Unsupported keys or incorrect value types |
 | `userId` / `namespace` | For unitary delivery, use the device's ECID with the `ECID` namespace | Profile identifier mismatch |
 | `topic_name` | For broadcasts, use the topic subscribed to by the target devices | Incorrect topic or devices not subscribed |
 
@@ -473,7 +473,7 @@ For `event_type: "end"`, optionally set `dismiss_after` to the number of seconds
 The app's style provider determines how `content_state` values render in the Live activity notification.
 
 1. Confirm that Messaging and the Live Activities extension are integrated in the app.
-1. Verify that each `custom_key_*` field in `content_state` matches a key handled by the style provider, including its expected value type.
+1. Verify that each field in `content_state` matches a key handled by the style provider, including its expected value type.
 1. Check that `title`, `body`, and `critical_text` contain the intended display text. `critical_text` is used for the status-bar chip.
 1. Confirm that notification permissions are granted and that the channel identified by `notification_channel_id` exists.
 
@@ -493,7 +493,7 @@ For more examples, refer to [Create Live activities](create-mobile-live.md).
 
 +++ 4. Test with Assurance
 
-Use standard Assurance on a connected Android test device. There is no dedicated Live Activities plugin view for Android.
+Use Assurance on a connected Android test device.
 
 1. Open an Assurance session and confirm that the FCM token registration is visible.
 1. Execute the API call to start the Live activity, then send update and end events with the same `notification_id` and increasing timestamps.
@@ -731,7 +731,7 @@ Skip this step if the [campaign report](#check-campaign-reports) shows no send e
 
 +++ 3. Inspect FCM delivery in Assurance
 
-Use standard Assurance on a connected Android test device. There is no dedicated Live Activities plugin view for Android.
+Use Assurance on a connected Android test device.
 
 1. Open an Assurance session and keep it active during the API call.
 1. Execute the API call with `event_type` set to `start`, `update`, or `end`.
@@ -1237,7 +1237,7 @@ See the [Android broadcast payload example](create-mobile-live.md) for additiona
 
 +++ 4. Test with Assurance
 
-Use standard Assurance on a connected Android test device that is part of the audience and subscribed to the broadcast topic. There is no dedicated Live Activities plugin view for Android.
+Use Assurance on a connected Android test device that is part of the audience and subscribed to the broadcast topic.
 
 1. Open your Assurance session before executing the broadcast API call.
 1. Send start, update, and end requests with the same `topic_name` and `notification_id` and increasing timestamps.
