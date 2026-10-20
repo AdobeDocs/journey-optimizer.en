@@ -82,15 +82,3 @@ Explore the pages below to dive into specific troubleshooting topics:
     </tr>
 </table>
 
-
-<table style="table-layout:fixed">
-<tr style="border: 0;">
-  <td>
-    <div>
-    <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884">
-    <img alt="Understand common error codes" src="../assets/do-not-localize/icon-quick-start.svg" /></a> 
-    <br>Additionally, check out <a href="https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884" target="_blank">this Adobe Community blog post</a> detailing <strong>common error codes</strong> and how to resolve them effectively.
-    </div>
-  </td>
-</tr>
-</table>
