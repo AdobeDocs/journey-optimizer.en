@@ -49,7 +49,7 @@ To set up your Web In-app channel, follow the steps below:
 
 * Install the Web SDK tag extension to support Web In-app Messaging. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html){target="_blank"}
 
-* Customize your triggers. Web In-app Messaging supports two types of triggers: Sent data to platform and Manual triggers. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-in-app-messaging.html){target="_blank"}
+* Customize your triggers. Web In-app Messaging supports two types of triggers: Sent data to Platform and Manual triggers. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-in-app-messaging.html){target="_blank"}
 
 * Create your Web In-app configuration. [Learn more](inapp-configuration.md)
 
@@ -121,9 +121,9 @@ To set up your Web In-app channel, follow the steps below:
 
 1. Choose the frequency of your trigger when your In-app message is active. The following options are available:
 
-    * **[!UICONTROL Everytime]**: Always show the message when the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur.
-    * **[!UICONTROL Once]**: Only show this message the first time the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur.
-    * **[!UICONTROL Until click through]**: Show this message when the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur until an interact event is sent by the SDK with an action of "clicked".
+    * **[!UICONTROL Everytime]**: Always show the message when the events selected in the **[!UICONTROL Show message if]** section occur.
+    * **[!UICONTROL Once]**: Only show this message the first time the events selected in the **[!UICONTROL Show message if]** section occur.
+    * **[!UICONTROL Until click through]**: Show this message when the events selected in the **[!UICONTROL Show message if]** section occur until an interact event is sent by the SDK with an action of "clicked".
     * **[!UICONTROL X number of times]**: Show this message X time.
 
 1. If needed, choose which **[!UICONTROL Day of the week]** or **[!UICONTROL Time of day]** the In-app message will be displayed.
