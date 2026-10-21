@@ -53,6 +53,8 @@ Before creating an anonymous landing page, make sure that:
 
 ## Create an anonymous landing page {#lp-anonymous-create}
 
+An anonymous landing page is created like any other landing page, with a few specific settings: the page must be accessible to anonymous visitors, and the form it contains must store data in a non-profile enabled dataset. To create one, follow the steps below.
+
 1. Browse to **[!UICONTROL Content Management]** > **[!UICONTROL Landing pages]** from the left menu, then click **[!UICONTROL Create landing page]**.
 
 1. Add a title and, optionally, a description.
@@ -99,11 +101,8 @@ When visitors submit the form, the data is sent to the dataset defined in the fo
 
 * Form data can only be stored in **non-profile enabled** datasets. Anonymous landing pages cannot create or enrich profiles.
 * Reporting is not supported for anonymous landing pages.
-* [Managing allowed IPs](../configuration/waf-ip-allowlist.md) is not supported.
-* Sandbox tooling is not supported.
-
-    <!-- TBC (PM): clarify what "sandbox tooling" covers (for example, copying landing pages between sandboxes) before publishing. -->
-
+* [Managing allowed IPs](../configuration/waf-ip-allowlist.md) is not supported for anonymous landing pages.
+* As for other landing pages, anonymous landing pages cannot be [copied to another sandbox](../configuration/copy-objects-to-sandbox.md) using Sandbox tooling.
 * Because anonymous visitors are not identified, do not use personalization based on profile data in the content of an anonymous landing page.
 
     <!-- TBC (engineering): the architecture draft states that pages containing personalization attributes are classified as personalized and are never cached by the CDN. Confirm what happens if profile attributes are used in an anonymous page. -->
