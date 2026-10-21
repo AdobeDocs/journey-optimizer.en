@@ -132,7 +132,7 @@ The following capabilities and improvements are coming to journeys in this relea
 <tbody>
 <tr>
 <td>
-<p>The Journey Optimizer home page now surfaces an AI recommendation card when a journey alert fires, covering Journey Custom Action failure and Journey Anomaly Detected alerts. Selecting the card opens the journey with the right rail pre-populated with the analysis already performed.</p>
+<p>The Journey Optimizer home page now surfaces an AI recommendation card when a journey alert fires, covering Journey Custom Action failure and Journey Anomaly Detected alerts. Selecting the card opens the associated conversation history in the full, immersive Coworker chat experience.</p>
 <GIF placeholder: TBD >
 <Documentation link: TBD >
 <p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-15706" target="_blank">DOCAC-15706</a></p>
