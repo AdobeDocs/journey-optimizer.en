@@ -54,7 +54,7 @@ The following capabilities and improvements are coming to channels in this relea
 
 * **Reporting webhooks available for custom channels** - You can now define a reporting webhook for a custom outbound channel and attach it to a channel configuration. Use it to enrich your Journey Optimizer reports with interaction events. <!-- Documentation link: TBD --> Jira: [DOCAC-15966](https://jira.corp.adobe.com/browse/DOCAC-15966){target="_blank"}
 
-* **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub One-Time Password (OTP) directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification. <!-- Documentation link: TBD --> Jira: [DOCAC-14815](https://jira.corp.adobe.com/browse/DOCAC-14815){target="_blank"}
+<!--* **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub One-Time Password (OTP) directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification. Jira: [DOCAC-14815](https://jira.corp.adobe.com/browse/DOCAC-14815){target="_blank"}-->
 
 * **Automated provisioning for High-Throughput API-triggered campaigns** - High Throughput transactional campaigns now include automated safeguards. Adobe Journey Optimizer validates that an organization is entitled for the High Throughput add-on before a High Throughput API-triggered campaign can be published, and the campaign's surface picker now shows only High Throughput-enabled surfaces when High Throughput mode is selected. These changes reduce the manual checks previously required to configure and validate High Throughput campaigns. <!-- Documentation link: TBD --> Jira: [DOCAC-15938](https://jira.corp.adobe.com/browse/DOCAC-15938){target="_blank"}
 
@@ -163,18 +163,6 @@ The following capabilities and improvements are coming to journeys in this relea
 * **Support Inbound action simulation in Journeys** - \<TBC\> <Documentation link: TBD > Jira: [DOCAC-15445](https://jira.corp.adobe.com/browse/DOCAC-15445){target="_blank"}
 -->
 
-### Decisioning {#oct-26-decisioning}
-
-The following improvement is coming to Decisioning in this release.
-
-* **Use audience enrichment attributes in Decisioning rules (Limited Availability)** - You can now reference an audience's enrichment attributes as a data source in Decisioning eligibility rules. Enrichment attributes are additional, audience-specific data - such as the product or item IDs that qualified a profile for inclusion - defined through an Enrich activity in an audience composition. This lets your eligibility logic take into account exactly what triggered a customer's audience membership, without building and maintaining separate audiences for each product or item variation. Enrichment attributes were already available in journey conditions, custom actions, and message personalization; this release extends them to Decisioning. This capability is available in Limited Availability. Contact your Adobe representative to request access. <!-- Documentation link: TBD --> Jira: [DOCAC-15576](https://jira.corp.adobe.com/browse/DOCAC-15576){target="_blank"}
-
-### Email Designer {#oct-26-email-designer}
-
-The following improvement is coming to the Email Designer in this release.
-
-* **Define fallback fonts for custom fonts used in email themes** - You can now define a fallback font for any custom (web) font applied through email themes. If a subscriber's email client does not support the custom font, Adobe Journey Optimizer automatically displays the specified fallback font instead of leaving the choice to the email client's default. This keeps email typography closer to your brand guidelines and reduces font-rendering inconsistencies across email clients. <!-- Documentation link: TBD --> Jira: [DOCAC-15662](https://jira.corp.adobe.com/browse/DOCAC-15662){target="_blank"}
-
 ### Administration {#oct-26-administration}
 
 The following capability and improvement are coming to administration in this release.
@@ -197,8 +185,6 @@ The following capability and improvement are coming to administration in this re
 </tr>
 </tbody>
 </table>
-
-* **Custom metadata for reporting and decisioning (Limited Availability)** - You can now attach custom key/value metadata to journeys, Action Campaign actions, and orchestrated campaign actions, in addition to the existing Adobe Experience Platform Unified Tags. This metadata is available for reporting, both in Journey Optimizer's built-in reports and in Customer Journey Analytics, so teams can measure and analyze action performance using their own custom dimensions. This capability is only available for a set of organizations (Limited Availability); contact your Adobe representative for more information. <!-- Documentation link: TBD --> Jira: [DOCAC-15667](https://jira.corp.adobe.com/browse/DOCAC-15667){target="_blank"}
 
 ### Navigation {#oct-26-navigation}
 
