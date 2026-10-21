@@ -364,6 +364,7 @@ nudge: yes
       + [Personalize email configuration](using/email/surface-personalization.md)
     + [Use and configure deeplinks](using/email/deeplinks.md)
     + [Manage email opt-out](using/email/email-opt-out.md)
+    + [Choose a consent level for opt-outs](using/email/consent-level.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
     + [Get started with In-app](using/in-app/get-started-in-app.md)
