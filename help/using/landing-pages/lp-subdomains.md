@@ -71,7 +71,7 @@ To be able to [create landing page presets](lp-presets.md), you must set up the 
 
 >[!NOTE]
 >
->Once a landing page subdomain is delegated, you can configure a WAF IP allowlist to enforce that all inbound traffic to that subdomain flows exclusively through your Web Application Firewall. [Learn how to configure a WAF IP allowed list](../configuration/waf-ip-allowlist.md)
+>Once a landing page subdomain is delegated, you can manage allowed IPs to enforce that all inbound traffic to that subdomain flows exclusively through your Web Application Firewall. [Learn how to manage allowed IPs](../configuration/waf-ip-allowlist.md)
 
 You can use a subdomain that is already delegated to Adobe, or you can configure another subdomain. Learn more about delegating subdomains to Adobe in [this section](../configuration/delegate-subdomain.md).
 
@@ -173,6 +173,48 @@ To configure a new subdomain, follow the steps below.
 1. Once the checks are successful, the subdomain gets the **[!UICONTROL Success]** status. It is ready to be used to create landing page presets.
 
     Note that the subdomain will be marked as **[!UICONTROL Failed]** if you fail to create the validation record on your hosting solution.
+
+## Migrate an existing subdomain to Cloudflare {#lp-migrate-cloudflare}
+
+>[!AVAILABILITY]
+>
+>This migration is required to use [anonymous landing pages](lp-anonymous.md), which are available in Limited Availability. Contact your Adobe representative to request access.
+
+<!-- DRAFT - DOCAC-16207. Steps copied from "3. Migration Plan - Existing LP Subdomains From EdgeCert -> Cloudflare" of the ALP Cloudflare wiki page, which labels them "tentative". Confirm the final process, wording and any customer-facing timelines with PM/engineering before publication. -->
+
+To reuse a landing page subdomain that you already configured for anonymous landing pages, the subdomain must be migrated to Cloudflare. Cloudflare provides edge caching and security, for faster page delivery and improved resilience against high-volume traffic and DDoS attacks.
+
+The migration depends on how your subdomain was delegated to Adobe:
+
+* **Subdomains fully delegated to Adobe**: Adobe performs the migration. No action is required on your side.
+* **Subdomains delegated using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-setup)**: Adobe prepares the migration, then provides the DNS records that you must create or update on your hosting platform.
+
+To migrate your landing page subdomains, follow the steps below. Creating the DNS records only applies to subdomains delegated using the CNAME method.
+
+1. Contact your Adobe representative to request the migration of your landing page subdomains to Cloudflare.
+
+1. Adobe migrates your fully delegated landing page subdomains to Cloudflare.
+
+1. For your landing page subdomains delegated using the CNAME method, Adobe creates the certificates in Cloudflare, then provides you with the list of DNS records to create or update on your hosting platform, for each subdomain:
+
+    | Record type | Host | Value |
+    | --- | --- | --- |
+    | CNAME | `_acme-challenge.<hostname>` | `cf-validation.<hostname>.cname.cjm.adobe.com` |
+    | CNAME | `<hostname>` | Value provided by Adobe |
+
+    Where `<hostname>` is your landing page subdomain.
+
+    <!-- TBC (engineering): "Value provided by Adobe" = the Cloudflare custom origin server (wiki: "custom origin server"). Confirm how it is shared with customers. -->
+
+1. Create or update the DNS records on your hosting platform.
+
+    <!-- TBC (engineering): the wiki flags a possible CAA conflict (EdgeCert signs with DigiCert whereas Cloudflare uses Google as signing authority). If confirmed, add a note asking customers using CAA records to allow the new certificate authority. -->
+
+    <!-- TBC (engineering): how does the customer confirm the migration is complete, and what happens to the existing EdgeCert setup (grace period, rollback)? Is there a deadline for CNAME-delegated subdomains? -->
+
+>[!NOTE]
+>
+>[Managing allowed IPs](../configuration/waf-ip-allowlist.md) is currently not supported for anonymous landing pages.
 
 ## Undelegate a subdomain {#undelegate-subdomain}
 
