@@ -157,6 +157,10 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
   Availability date: October 7, 2026
   
+* **Journey Hygiene Analysis skill** - CX Coworker can now audit your journey inventory for missing or generic names, stale draft and live journeys, oversized journeys, long-existing closed journeys, and similar action and event names, with recommendations to clean up and stabilize your inventory. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
+
+  Availability date: October 20, 2026
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -190,8 +194,6 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 </tr>
 </tbody>
 </table>
-
-* **Hygiene Analysis skill** - Coworker can now scan your active and draft journeys for broken configurations, silent failures, and decaying or unused assets — such as stale draft journeys, orphaned data sources, and persistent custom action errors — and surface recommended fixes directly in chat. <!-- Documentation link: TBD -->
 
 * **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
 

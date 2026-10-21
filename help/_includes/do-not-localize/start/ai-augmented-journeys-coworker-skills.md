@@ -1,6 +1,7 @@
 ---
 title: AI Knowledge Reference
 ---
+
 # AI Knowledge Reference
 
 +++ AI Knowledge Reference
@@ -16,23 +17,24 @@ For complete understanding, this information should be combined with the documen
 * Build and configure journeys from natural language prompts or uploaded images using Journey Create.
 * Generate, edit, and refine channel-specific content for journeys using Channel Content Create.
 * Run a Quick Simulation to exercise journey paths, then review step-by-step traversal and branch outcomes using Journey Simulation.
-* Analyze journey fallout, audience overlap, schedule conflicts, custom action errors, anomalies, and performance using Journey Analyze.
-* Use Compare journey versions to review a structured diff of nodes, connections, and journey-level properties.
+* Analyze journey fallout, audience overlap, schedule conflicts, custom action errors, anomalies, performance, and journey inventory hygiene using Journey Analyze.
+* Compare journey versions with Journey Version Comparison and review a structured diff of nodes, connections, and journey-level properties.
 * Learn each skill's permissions, scope, and limitations.
 
 **Glossary**
 
-* **Journey Create** *(product-specific)*: Coworker skill that builds and configures marketing journeys through natural language prompts.
-* **Channel Content Create** *(product-specific)*: Coworker skill that generates, edits, and manages channel-specific content (email, push, mobile message) for journeys using AI-powered content generation.
-* **Journey Analyze** *(product-specific)*: Coworker skill that analyzes and optimizes journeys, covering fallout analysis, audience overlap analysis, schedule overlap analysis, operational insights, custom action error analysis, anomaly detection, and business performance analysis.
-* **Journey Simulation** *(product-specific)*: Coworker skill that uses Quick Simulation in chat to generate simulated test data, run or manage a simulation, and review results.
+* **Journey Create** *(product-specific)*: CX Coworker skill that builds and configures marketing journeys through natural language prompts.
+* **Channel Content Create** *(product-specific)*: CX Coworker skill that generates, edits, and manages channel-specific content (email, push, SMS) for journeys using AI-powered content generation.
+* **Journey Analyze** *(product-specific)*: CX Coworker skill that analyzes and optimizes journeys, covering fallout analysis, audience overlap analysis, schedule overlap analysis, operational insights, custom action error analysis, anomaly detection, business performance analysis, and journey hygiene analysis.
+* **Journey Simulation** *(product-specific)*: CX Coworker skill that uses Quick Simulation in chat to generate simulated test data, run or manage a simulation, and review results.
 * **Quick Simulation**: The simulation flow available in Coworker for a fast, automated sanity check of journey logic.
 * **Journey Fallout Analysis**: identifies where and why customers drop off during a journey.
 * **Journey Audience Overlap Analysis**: analyzes audience overlap across multiple journeys to prevent fatigue from over-targeting.
 * **Journey Schedule Overlap Analysis**: detects timing conflicts between scheduled journeys targeting the same audience.
 * **Analyze Journey Anomalies**: detects unexpected spikes, drops, or flatlines in a journey's entry, exit, or send counts compared to historical baselines, confirms whether a flagged change is a genuine anomaly, and runs read-only diagnostics to identify a likely root cause.
 * **Business Performance Analysis**: evaluates journey performance, highlights trends and bottlenecks, and recommends concrete optimizations to improve engagement and conversion.
-* **Compare journey versions**: Coworker tool that compares two journey versions and returns a structured diff of added, removed, modified, and moved nodes, changed connections, journey-level property changes, and roll-up counts.
+* **Journey Hygiene Analysis**: identifies journeys with missing or generic names; stale draft journeys more than 30 days old that have never been published and have not been modified; stale live journeys more than 90 days old; oversized journeys with 50 or more nodes; long-existing closed journeys more than 90 days old; and similar action and event names. It provides recommendations to clean up and stabilize the journey inventory. A sample prompt is "Audit my journeys configuration."
+* **Journey Version Comparison**: Coworker tool that compares two journey versions and returns a structured diff of added, removed, modified, and moved nodes, changed connections, journey-level property changes, and roll-up counts.
 
 **Guardrails**
 
@@ -51,11 +53,11 @@ For complete understanding, this information should be combined with the documen
 
 * **What permissions do I need to fully use Journey Create?** Manage Journeys, View Journey Events, Data Sources and Actions, View Segments, and Manage Segments.
 * **Is Channel Content Create generally available?** It is available for all customers in Limited Availability; contact your Adobe representative to gain access.
-* **What does Journey Analyze detect?** Journey fallout, audience overlap, schedule conflicts, custom action errors, anomalies in a journey's entry, exit, or send counts, and business performance trends and optimization opportunities.
-* **What does Compare journey versions show?** A structured diff between two journey versions, including node changes with field-level details, changed connections, journey-level property changes, and roll-up counts.
+* **What does Journey Analyze detect?** Journey fallout, audience overlap, schedule conflicts, custom action errors, anomalies in a journey's entry, exit, or send counts, business performance trends and optimization opportunities, and journey inventory hygiene issues such as missing or generic names, stale or oversized journeys, and similar action and event names.
+* **What does Journey Version Comparison show?** A structured diff between two journey versions, including node changes with field-level details, changed connections, journey-level property changes, and roll-up counts.
 * **Does Quick Simulation replace manual simulation?** No. It provides a fast, automated sanity check; use the manual simulation experience for granular control over simulated users and scenarios.
 * **Does Journey Create support cross-journey orchestration?** No. Journey Create does not support cross-journey orchestration.
 
 +++
 
-<!-- ai-section-version: 5 | source-hash: 38306631 -->
+<!-- ai-section-version: 5 | source-hash: 695594e5 -->
