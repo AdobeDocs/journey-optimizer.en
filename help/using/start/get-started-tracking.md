@@ -125,7 +125,7 @@ Use this table to see what each channel needs before you build. Details for each
 | [Web](#web) | Requires configuration | Select the elements to track when authoring the page | Displays, clicks, click-through rate, element performance |
 | [Push](#push) | Requires Mobile SDK | Integrate the Adobe Experience Platform Mobile SDK; configure click behavior and buttons | Impressions (delivered), clicks (tapped), opens (app launched), button actions |
 | [In-app](#in-app) | Requires app integration with the SDK | Configure triggers, display rules, and interactive elements | Triggered, displayed, clicks, dismissals |
-| [SMS and MMS](#sms) | Link tracking needs an SMS subdomain | Configure an SMS subdomain; use the URL helper function for links | Link clicks, inbound messages and opt-out keyword replies |
+| [Mobile messages](#mobile-message) | Link tracking needs an SMS subdomain | Configure an SMS subdomain; use the URL helper function for links | Link clicks, inbound messages and opt-out keyword replies |
 | [Code-based experiences](#code-based) | Requires implementation | Datastream, Web or Mobile SDK, display and interaction events | Displays, clicks, click-through rate, element performance |
 | [Content cards](#content-cards) | Requires SDK | Add buttons or links; configure display rules | Displays, clicks, click-through rate |
 | [Landing pages](#landing-pages) | On by default | None | Visits, conversions, bounce rate, trends |
@@ -176,12 +176,12 @@ Tracked metrics include displays, button clicks, dismissals, triggered versus di
 
 View results in the [in-app campaign report](../reports/campaign-global-report-cja-inapp.md) and the [in-app journey report](../reports/journey-global-report-cja-inapp.md).
 
-### SMS and MMS {#sms}
+### Mobile messages {#mobile-message}
 
-* **Link tracking.** Add URLs with the URL helper function. Journey Optimizer shortens each link and tracks clicks. Configure an SMS subdomain first. [Learn more](../mobile/mobile-subdomains.md)
-* **Inbound messages and opt-out keywords.** Inbound messages appear in the SMS report. Replies that match opt-out keywords (such as STOP) update the profile's opt-out status. Native keyword handling is supported with Sinch and Infobip only. Two-way messaging requires at least one prior one-way message to the number, and alphanumeric sender IDs cannot receive replies. [Learn more](../mobile/mobile-opt-out.md#sms-native-keywords)
+* **Link tracking.** Add URLs to your mobile content with the URL helper function. Journey Optimizer shortens each link and tracks clicks. Configure an SMS subdomain first. [Learn more](../mobile/mobile-subdomains.md)
+* **Inbound messages and opt-out keywords.** Inbound messages appear in the mobile message report. Replies that match opt-out keywords (such as STOP) update the profile's opt-out status. Native keyword handling is supported with Sinch and Infobip only. Two-way messaging requires at least one prior one-way message to the number, and alphanumeric sender IDs cannot receive replies. [Learn more](../mobile/mobile-opt-out.md#sms-native-keywords)
 
-View results in the [SMS campaign report](../reports/campaign-global-report-cja-sms.md) and the [SMS journey report](../reports/journey-global-report-cja-sms.md).
+View results in the [mobile message campaign report](../reports/campaign-global-report-cja-sms.md) and the [mobile message journey report](../reports/journey-global-report-cja-sms.md).
 
 ### Code-based experiences {#code-based}
 
