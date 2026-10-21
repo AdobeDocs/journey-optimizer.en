@@ -121,7 +121,7 @@ To configure High Throughput campaigns correctly, follow these guidelines:
 
 1. **One-time activation** - After purchasing the High Throughput transactional messaging add-on, contact Adobe Customer Care or your Adobe representative so that the required backend activation and one-time setup can be completed. This is not required for every campaign or channel configuration.
 1. **Create a dedicated High Throughput IP pool** - When you create the IP pool, enable the High Throughput option. [Learn how to create IP pools](../configuration/ip-pools.md)
-1. **Create a High Throughput email channel configuration** - Enable the High Throughput option and select the High Throughput IP pool you created. [Learn how to set up channel configurations](../configuration/channel-surfaces.md)
+1. **Create a High Throughput email channel configuration** - Enable the High Throughput toggle and select the High Throughput IP pool you created. Only High Throughput IP pools are listed. [Learn how to set up channel configurations](../configuration/channel-surfaces.md)
 1. **Use the configuration in High Throughput campaigns only** - When you create a High Throughput API triggered campaign, only High Throughput channel configurations are available for selection.
 
 >[!IMPORTANT]
@@ -146,4 +146,4 @@ High Throughput resources must be used together:
 
 ## High availability {#high-availability}
 
-When you purchase the High Throughput add-on, a secondary setup in a secondary region is provisioned automatically alongside your primary resources. To maintain high availability, part of your High Throughput traffic is routed through the secondary region so that it stays ready to handle all traffic if the primary region becomes unavailable. In that case, traffic switches automatically to the secondary region.
+To maintain high availability, High Throughput uses a secondary region. When you purchase the High Throughput add-on, a secondary setup is provisioned automatically alongside your primary resources, and part of your High Throughput traffic is routed through the secondary region.

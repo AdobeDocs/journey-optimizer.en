@@ -132,7 +132,7 @@ To create a channel configuration, follow these steps:
     
     >[!NOTE]
     >
-    >For **email** configurations used with High Throughput API triggered campaigns, enable the High Throughput option and select a high throughput IP pool. A high throughput configuration is only available in High Throughput campaigns, and standard configurations are not available in those campaigns. The type of a configuration cannot be changed after creation.
+    >For **email** configurations used with High Throughput API triggered campaigns, enable the High Throughput toggle and select a high throughput IP pool (only high throughput IP pools are listed). A high throughput configuration is only available in High Throughput campaigns, and standard configurations are not available in those campaigns. The type of a configuration cannot be changed after creation.
     >
     >High throughput configurations do not support contextual or profile-based personalization (there is no personalization editor), [Message Export](message-export.md), or dynamic subdomains. [Learn more about High Throughput setup](../campaigns/api-triggered-high-throughput.md#setup-guidelines)
 
