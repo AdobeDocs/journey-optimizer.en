@@ -52,13 +52,13 @@ The following capabilities and improvements are coming to channels in this relea
 </tbody>
 </table>
 
-* **Reporting webhooks available for custom channels** - You can now define a reporting webhook for a custom outbound channel and attach it to a channel configuration. Use it to enrich your Journey Optimizer reports with interaction events. <!-- Documentation link: TBD --> Jira: [DOCAC-15966](https://jira.corp.adobe.com/browse/DOCAC-15966){target="_blank"}
+* **Automated provisioning for High-Throughput API-triggered campaigns** - High Throughput transactional campaigns now include automated safeguards. Adobe Journey Optimizer validates that an organization is entitled for the High Throughput add-on before a High Throughput API-triggered campaign can be published, and the campaign's surface picker now shows only High Throughput-enabled surfaces when High Throughput mode is selected. These changes reduce the manual checks previously required to configure and validate High Throughput campaigns. <!-- Documentation link: TBD --> Jira: [DOCAC-15938](https://jira.corp.adobe.com/browse/DOCAC-15938){target="_blank"}
 
 <!--* **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub One-Time Password (OTP) directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification. Jira: [DOCAC-14815](https://jira.corp.adobe.com/browse/DOCAC-14815){target="_blank"}-->
 
-* **Automated provisioning for High-Throughput API-triggered campaigns** - High Throughput transactional campaigns now include automated safeguards. Adobe Journey Optimizer validates that an organization is entitled for the High Throughput add-on before a High Throughput API-triggered campaign can be published, and the campaign's surface picker now shows only High Throughput-enabled surfaces when High Throughput mode is selected. These changes reduce the manual checks previously required to configure and validate High Throughput campaigns. <!-- Documentation link: TBD --> Jira: [DOCAC-15938](https://jira.corp.adobe.com/browse/DOCAC-15938){target="_blank"}
-
 * **Suppression List Override at Email Action Level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model. <!-- Documentation link: TBD --> Jira: [DOCAC-15734](https://jira.corp.adobe.com/browse/DOCAC-15734){target="_blank"}
+
+* **Reporting webhooks available for custom channels** - You can now define a reporting webhook for a custom outbound channel and attach it to a channel configuration. Use it to enrich your Journey Optimizer reports with interaction events. <!-- Documentation link: TBD --> Jira: [DOCAC-15966](https://jira.corp.adobe.com/browse/DOCAC-15966){target="_blank"}
 
 * **Channel Builder skill for creating a new custom channel** - Channel Builder skill in Coworker now helps administrators create custom channels faster. The skill guides users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD --> Jira: [DOCAC-15511](https://jira.corp.adobe.com/browse/DOCAC-15511){target="_blank"}
 
@@ -85,16 +85,18 @@ The following capability is coming to landing pages in this release.
 <table>
 <thead>
 <tr>
-<th><strong>New profile acquisition with landing pages</strong><br/></th>
+<th><strong>Anonymous landing pages (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now allows you to create landing pages accessible to anyone and from there capture data from completely unknown visitors in order to create or enrich new customer profiles in Experience Platform.</p>
+<p>Journey Optimizer now allows you to create public landing pages accessible to anyone, and from there capture data from anonymous visitors into Experience Platform non-profile enabled datasets. You can share the landing page URL anywhere, such as in emails, SMS messages or on your website.</p>
+<p>To reuse your existing Journey Optimizer branded subdomains for public landing pages, you need to migrate them to Cloudflare.</p>
+<p>This capability is available in Limited Availability. Contact your Adobe representative to request access.</p>
 <!-- GIF placeholder: TBD -->
 <!-- Documentation link: TBD -->
-<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-13757" target="_blank">DOCAC-13757</a></p>
+<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-16207" target="_blank">DOCAC-16207</a></p>
 </td>
 </tr>
 </tbody>
