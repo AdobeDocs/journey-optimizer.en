@@ -56,7 +56,7 @@ To use a fragment into an email, follow the steps below.
 
 >[!NOTE]
 >
->You can add up to 30 fragments in a given delivery. Fragments can only be nested up to 1 level.
+>You can add up to 60 unique fragments per variant. In a multilingual message, you can add up to 120 distinct fragments across all variants. Fragments can only be nested up to 1 level.
 
 1. Open any email or template content using the [Email Designer](get-started-email-design.md).
 

@@ -36,7 +36,7 @@ For complete understanding, this information should be combined with the documen
 * Meta tokens expire after about 60 days; renew the token before it lapses.
 * The API Token's System User needs whatsapp_business_management, whatsapp_business_messaging, and business_management permissions, plus asset-level access to your WhatsApp Business Account.
 * Meta allows only one webhook, callback URL, and Verify Token per WhatsApp Business Account, even across multiple sandboxes or WhatsApp credentials.
-* Feedback events (Sent, Delivered, Read, Error, button click) are captured correctly in every sandbox, but inbound events (replies, opt-in/opt-out/help keywords) are only received in the single sandbox where the webhook is registered; register it against your production sandbox to receive inbound events there.
+* Feedback events (Sent, Delivered, Read, Error, button click) are captured in every sandbox, but inbound events (replies, opt-in/opt-out/help keywords) are received only in the sandbox whose webhook is registered in Meta; registering the webhook from your production sandbox is recommended to receive inbound events there.
 * Without specified opt-in or opt-out keywords, standard consent messages are not enabled.
 * A profile must have at least one message sent from Journey Optimizer before incoming messages are captured in the dataset.
 * Keywords are not case-sensitive (e.g., stop and STOP are treated the same).
@@ -56,12 +56,12 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: What are the steps to configure the WhatsApp channel?** — Create WhatsApp API credentials, create a WhatsApp Webhook, then create a WhatsApp channel configuration.
 * **Q: Who can configure the WhatsApp channel?** — A Journey Optimizer System Administrator.
-* **Q: How often do Meta tokens expire?** — About every 60 days; renew the token before it lapses.
-* **Q: Why are my inbound events missing in some sandboxes?** — Meta allows only one webhook per WhatsApp Business Account, so inbound events are only received in the sandbox where the webhook is registered; register it against your production sandbox.
+* **Q: When do Meta tokens expire?** — Meta tokens expire after about 60 days; renew the token before it lapses.
+* **Q: Why are my inbound events missing in some sandboxes?** — Meta allows only one webhook per WhatsApp Business Account, so inbound events are received only in the sandbox whose webhook is registered in Meta; registering the webhook from your production sandbox is recommended.
 * **Q: What does the channel configuration status mean?** — It shows Processing while checks run and becomes Active once checks are successful, meaning it is ready to deliver messages.
-* **Q: What causes an HTTP 500 error during API credential setup?** — Possible causes include a missing `cjm_whatsapp` entitlement, invalid or mismatched API Token or Business Account ID, or credential handling issues; verify entitlements and fields, test credentials with Meta, enable advanced logging, and contact support if it persists.
+* **Q: What can I do about an HTTP 500 error during API credential setup?** — Verify that the `cjm_whatsapp` entitlement is provisioned, validate the API Token and Business Account ID fields, test your credentials directly with the Meta API, enable advanced logs, and contact your Adobe representative if the error persists.
 * **Q: Why should I not add a '+' before the sender phone number?** — It can prevent the opt-out flow from working correctly.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 64f03e21 -->
+<!-- ai-section-version: 1 | source-hash: 338f89f0 -->

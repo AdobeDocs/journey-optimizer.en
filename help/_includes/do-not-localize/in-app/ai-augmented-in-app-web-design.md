@@ -33,9 +33,9 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Advanced formatting options are available only when the Advanced formatting mode is switched on.
+* Additional options (for example Color of the Close button, Max height and Max width of media, Customize UI takeover, Customize size, Customize position, Message round corner) are available when the Advanced formatting mode is switched on.
 * The Banner layout supports only a Header and a Body.
-* Custom messages require a pre-configured HTML message, entered via Compose (raw HTML) or brought in via Import (HTML or .zip file).
+* The Custom message mode lets you import and edit a pre-configured HTML message: Compose to enter or paste raw HTML, Import to import the HTML or .zip file containing your HTML content.
 * The UI takeover option is enabled by default.
 
 **Terminology:**
@@ -43,7 +43,6 @@ For complete understanding, this information should be combined with the documen
 * Canonical name: Web In-app content — Acronym: n/a — variants: Web In-app message content, In-app message content
 * Synonyms: "Advanced formatting" = "Advanced formatting mode"
 * Do not confuse: "Content tab" (define content, Close button style, media, and buttons) ≠ "Settings tab" (define message layout, background, UI takeover, and preview)
-* Do not confuse: "Header" and "Body" (message text fields) ≠ "Close button" (dismiss control with its own style options)
 
 **FAQ:**
 
@@ -56,4 +55,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 255ba980 -->
+<!-- ai-section-version: 1 | source-hash: 373346f2 -->

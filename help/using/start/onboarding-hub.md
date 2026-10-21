@@ -9,6 +9,9 @@ role: User
 level: Beginner
 hide: true
 keywords: journey optimizer, onboarding, onboarding hub, use cases, videos, tutorials, get started, ramp up, first journey
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
@@ -17,6 +20,12 @@ feature_v2:
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Journey Optimizer onboarding hub {#onboarding-hub}
 
@@ -38,6 +47,8 @@ New to [!DNL Adobe Journey Optimizer]? This hub gathers the resources that help 
 >Not sure which capability fits your goal? Start with the goal-first [Find the right Journey Optimizer capability for your goal](ajo-use-case-guide.md) guide, then come back here for step-by-step instructions.
 
 ## Start here: watch & learn {#start-here}
+
+Before you build anything, read [Five concepts to know before you build](understanding-ajo.md#five-concepts) (about five minutes). It covers profiles, audiences, campaigns versus journeys, channel configurations, and sandboxes.
 
 If you have ten minutes, begin with this orientation video. It walks through the interface and highlights the key capabilities by role.
 

@@ -5,6 +5,9 @@ title: Audiences, profiles & identity
 description: Audiences, profiles & identity
 redpen-status: CREATED_||_2025-08-11_20-47-03
 exl-id: 29d45bbb-8351-48c6-8672-dda4b1c25e29
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Audiences, profiles & identity{#section-overview}
 

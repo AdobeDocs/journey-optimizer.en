@@ -4,7 +4,7 @@ description: Learn how to leverage Journey Optimizer conflict & prioritization t
 role: User
 level: Beginner
 exl-id: 9dc0cd89-d29a-42d2-a73f-d95f9c39c86e
-TQID: https://experienceleague.adobe.com/vx-CmsYwj7QyN2sVMrpJ9VUNDgnXq8qt1nT9lHOFV3s
+TQID: 'https://experienceleague.adobe.com/vx-CmsYwj7QyN2sVMrpJ9VUNDgnXq8qt1nT9lHOFV3s'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -13,6 +13,8 @@ feature_v2:
     internal-label: Conflict & prioritization
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
     internal-label: Business rules
@@ -76,7 +78,7 @@ Rule sets allow you to **group together multiple rules** and apply them to the j
 
 * **Frequency capping by channel and communication type** – Set frequency capping by communication type (e.g., Sales, Promotional) to prevent overloading customers with similar messages. Control frequency across multiple channels, automatically excluding over-solicited profiles. [Learn how to set frequency capping by channel and communication type](channel-capping.md)
 
-* **Quiet hours** – Define time-based exclusions so no messages are sent during specific periods (Email, SMS, Push, WhatsApp). [Learn how to set quiet hours](quiet-hours.md)
+* **Quiet hours** – Define time-based exclusions so no messages are sent during specific periods (Email, Mobile message, Push, WhatsApp). [Learn how to set quiet hours](quiet-hours.md)
 
 [Learn how to work with rule sets](rule-sets.md)
 

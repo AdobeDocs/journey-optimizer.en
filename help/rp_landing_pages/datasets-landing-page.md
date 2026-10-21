@@ -5,6 +5,9 @@ title: Journey Optimizer datasets
 description: Journey Optimizer datasets
 redpen-status: CREATED_||_2025-08-11_21-06-02
 exl-id: 0e750496-fad5-44bc-a38d-014a0f7f82dc
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Journey Optimizer datasets{#section-overview}
 

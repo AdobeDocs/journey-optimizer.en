@@ -35,8 +35,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: License usage dashboard — Acronym: n/a — variants: license usage dashboard, License Usage
-* Synonyms: "Engageable Profiles count" = "number of unique profiles engaged over the rolling 12-month window"
+* Canonical name: License usage dashboard — menu: License Usage
 * Do not confuse: "Engageable Profiles" (unique profiles engaged through journeys, campaigns, or decisioning) ≠ "Addressable Audience" (the total audience the count is calculated from)
 
 **FAQ:**
@@ -49,4 +48,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 2fcfdb20 -->
+<!-- ai-section-version: 1 | source-hash: 7e2df57c -->

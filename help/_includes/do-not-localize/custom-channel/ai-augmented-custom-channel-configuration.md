@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how an administrator creates a channel configuration that links a custom channel to a named, reusable preset, including API credentials, an optional subdomain, dynamic parameters, and payload defaults, so that marketers can select it when building campaigns and journeys.
+* **TL;DR:** This page explains how to create a channel configuration that links a custom channel to a named, reusable preset, including API credentials, an optional subdomain, dynamic parameters, and payload defaults, so that marketers can select it when building campaigns and journeys.
 
 **Intents:**
 
@@ -32,13 +32,14 @@ For complete understanding, this information should be combined with the documen
 * The API credentials field appears only if the selected channel uses an authentication type other than None.
 * The Dynamic parameters section appears only if the channel has headers or query parameters defined as variable.
 * The Payload configuration section appears only for payload fields that have the Channel config checkbox enabled.
+* In custom channel configurations, you cannot select a message type, so all messages sent through custom channels are treated as Marketing messages at send time; custom channels are not supported in Transactional campaigns (action or API-triggered).
+* Selecting a delegated subdomain is possible only if you have set up subdomains for custom channels in Journey Optimizer.
 * Clicking Submit saves and activates the channel configuration.
 
 **Terminology:**
 
 * Canonical name: channel configuration — Acronym: n/a — variants: custom channel configuration, named preset
-* Synonyms: "Dynamic parameters" = "variable headers or query parameters"
-* Do not confuse: "channel configuration" (the reusable preset) ≠ "custom channel" (the underlying channel definition)
+* Do not confuse: "channel configuration" (the reusable preset) ≠ "custom channel" (the activated custom channel selected from the Select channel drop-down)
 * Do not confuse: "Dynamic parameters" (values for variable headers or query parameters) ≠ "Payload configuration" (values for payload fields enabled for the channel config)
 
 **FAQ:**
@@ -51,4 +52,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: fcf9940a -->
+<!-- ai-section-version: 1 | source-hash: a0aac28d -->

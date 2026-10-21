@@ -31,6 +31,7 @@ For complete understanding, this information should be combined with the documen
 * **Test mode**: A context where content preview shows visible content for the journey being tested, but the content is not personalized for the targeted test profile *(product-specific)*.
 
 **Guardrails:**
+* For a **[!UICONTROL Draft]** journey, **[!UICONTROL Validate]** runs configuration checks before testing, simulation, a dry run, publication, or an approval request. It replaces **[!UICONTROL Publish]** until validation is current and passed; errors in the Alerts panel must be resolved and validation rerun before continuing.
 
 * Actions, the condition activity, the wait activity, and the reaction activity cannot be dropped on the canvas as the first step of a new journey.
 * Content preview in test mode is visible but is not personalized for the test profile you target.
@@ -59,4 +60,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 1272b125 -->
+<!-- ai-section-version: 1 | source-hash: b231b3ff -->

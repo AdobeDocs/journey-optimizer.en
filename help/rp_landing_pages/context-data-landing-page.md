@@ -6,6 +6,9 @@ description: Leverage context data
 redpen-status: CREATED_||_2025-08-11_21-02-37
 badge: label="Legacy" type="Informative"
 exl-id: 09ba2a43-f7f3-4414-b7b3-64c9932ff6c7
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Leverage context data{#section-overview}
 

@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
-TQID: https://experienceleague.adobe.com/lGYAilnXh7r01VhcdRj-lGArRw7OK3gg2npwBKY5VWw
+TQID: 'https://experienceleague.adobe.com/lGYAilnXh7r01VhcdRj-lGArRw7OK3gg2npwBKY5VWw'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,10 @@ feature_v2:
     internal-label: Conflict & prioritization
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: 736fce34-6237-51e6-acd3-371abb174feb
+    internal-label: Rules
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
@@ -56,7 +60,7 @@ You can create two types of rule sets:
 
 * **Channel** rule sets apply rules to communication channels. They allow you to set:
 
-   * **Frequency capping rules** - *Do not send more than 1 Email, SMS, Push, Direct mail, or WhatsApp communication per day.*
+   * **Frequency capping rules** - *Do not send more than 1 Email, Mobile message, Push, Direct mail, or WhatsApp communication per day.*
    * **Quiet hours rules** - *Do not send email messages outside of the 8AM - 9PM timeslot.*
 
 * **Journey** rule sets apply entry and concurrency capping rules to a journey. For example, do not enter profiles into more than one journey simultaneously.
@@ -105,7 +109,7 @@ NOT USED?
 >[!CONTEXTUALHELP]
 >id="ajo_rule_type"
 >title="Rule type"
->abstract="Select the desired rule type for your channel rule set: Use the **Frequency capping** type to apply capping rules to communication channels. For example, do not send more than 1 email or SMS communication per day. Select **Quiet hours** to define time-based exclusions to ensure that no messages are sent during specific periods of time."
+>abstract="Select the desired rule type for your channel rule set: Use the **Frequency capping** type to apply capping rules to communication channels. For example, do not send more than 1 email or mobile communication per day. Select **Quiet hours** to define time-based exclusions to ensure that no messages are sent during specific periods of time."
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_sets_duration"

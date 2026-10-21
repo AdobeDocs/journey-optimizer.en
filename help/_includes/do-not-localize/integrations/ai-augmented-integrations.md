@@ -32,7 +32,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* This integration feature is restricted to outbound channels (Email, SMS, and Push) and supports pulling JSON or HTML.
+* This integration feature is restricted to outbound channels (Email, Mobile message, and Push) and supports pulling JSON or HTML.
 * Users need the **Manage AJO integration configuration** and **View AJO integration configuration** permissions.
 * The **Name** field cannot contain spaces.
 * With throttling enabled, supported rates are 50 to 5000 TPS; limits apply to the integration, not each API endpoint.
@@ -51,7 +51,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Which channels and formats does this feature support?** — It is restricted to outbound channels (Email, SMS, and Push) and supports pulling JSON or HTML.
+* **Q: Which channels and formats does this feature support?** — It is restricted to outbound channels (Email, Mobile message, and Push) and supports pulling JSON or HTML.
 * **Q: What permissions are required?** — The Manage AJO integration configuration and View AJO integration configuration permissions.
 * **Q: What throttling rates are supported?** — With throttling enabled, 50 to 5000 TPS, applied to the integration rather than each API endpoint.
 * **Q: What happens if a send-time response is too large?** — Responses over 4 MB by default are treated as an integration error, and retries are not attempted when the failure is caused by response size.

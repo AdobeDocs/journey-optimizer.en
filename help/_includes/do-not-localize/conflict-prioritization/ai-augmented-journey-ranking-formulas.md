@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Ranking formula**: An expression that dynamically ranks journeys based on journey attributes, profile attributes, or AI model scores *(product-specific)*
+* **Ranking formula**: Dynamically adjusts the ranking of journeys based on journey attributes, profile attributes, or AI model scores *(product-specific)*
 * **Ranking object**: The entity that the formula applies to; by default set to [!UICONTROL Journey] *(product-specific)*
 * **Journey priority**: A manual value assigned to the journey when creating it *(product-specific)*
 * **[!UICONTROL Ranking method]**: Rule set setting that selects [!UICONTROL Formula] instead of the default [!UICONTROL Priority] *(product-specific)*
@@ -36,13 +36,13 @@ For complete understanding, this information should be combined with the documen
 * Switching to the code editor (PQL syntax) will prevent you from reverting back to the default builder view for this formula.
 * Only one rule set can be applied to a journey at a time.
 * Criterion logic: if the first criterion is true for a decision item it takes precedence over the next ones; otherwise the decisioning engine moves on to the next criterion, and so on.
-* Example expressions keep weights verbatim: journey priority; journey priority plus 5 (Loyalty tag with Gold status); journey priority plus 2 (Loyalty tag with Silver status).
+* Examples on the page: journey priority; journey priority plus 5 (Loyalty tag with Gold status); journey priority plus 2 (Loyalty tag with Silver status).
 
 **Terminology:**
 
-* Canonical name: ranking formula — Acronym: n/a — variants: journey arbitration ranking formulas, journey ranking formula
+* Canonical name: ranking formula — variants: ranking formulas, formula
 * Synonyms: none
-* Do not confuse: "ranking formula" (a dynamic expression) ≠ "journey priority" (a static manual value) ≠ "AI model score" (a trained model output referenced in a formula)
+* Do not confuse: "ranking formula" (dynamically adjusts the ranking of journeys) ≠ "journey priority" (a manual value assigned to the journey) ≠ "AI model score" (the score that came out of the AI model, which can be referenced in a formula)
 * Do not confuse: "[!UICONTROL Formula]" ranking method ≠ "[!UICONTROL Priority]" ranking method (the default)
 
 **FAQ:**
@@ -55,4 +55,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 5339e166 -->
+<!-- ai-section-version: 1 | source-hash: 5960fa33 -->

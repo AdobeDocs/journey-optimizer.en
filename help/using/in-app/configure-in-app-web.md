@@ -1,11 +1,14 @@
 ---
-title: Create a Web In-app message in Journey Optimizer
+title: Configure the Web In-app channel in Journey Optimizer
 description: Learn how to create a Web In-app message in Journey Optimizer
 feature: In App
 topic: Content Management
 role: User
 level: Beginner
 keywords: in-app, message, creation, start
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
@@ -16,6 +19,12 @@ subfeature_v2:
     internal-label: In App channel
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 
 # Configure the Web In-app channel {#configure-in-app-web}
@@ -28,17 +37,17 @@ subfeature_v2:
 
 ## Prerequisites {#prerequisites}
 
-* Ensure you are using the latest version for your **Adobe Experience Platform Web SDK** extension.
+* Ensure you are using the latest version for your **Adobe Experience Platform Web SDK** tag extension.
 
-* Install the **Adobe Experience Platform Web SDK** extension in your **Tag properties** and enable the **Personalization Storage** option.
+* Install the **Adobe Experience Platform Web SDK** tag extension in your **Tag properties** and enable the **Personalization Storage** option.
     
      This configuration is essential for storing event histories on the client, a prerequisite for implementing Frequency Rules in the Rules builder. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html){target="_blank"}
 
     ![](assets/configure_web_inapp_1.png)
 
-## Configure Sent data to platform rule {#configure-sent-data-trigger}
+## Configure Sent data to Platform rule {#configure-sent-data-trigger}
 
-1. Access your **Adobe Experience Platform Data Collection** instance and navigate to **Tag Properties** configured with the **Adobe Experience Platform Web SDK** extension.
+1. Access your **Adobe Experience Platform Data Collection** instance and navigate to **Tag Properties** configured with the **Adobe Experience Platform Web SDK** tag extension.
 
 1. From the **Authoring** menu, select **Rules** then **Create new rule** or **Add rule**.
 
@@ -80,7 +89,7 @@ subfeature_v2:
 
 ## Configure Manual rule {#configure-manual-trigger}
 
-1. Access your **Adobe Experience Platform Data Collection** instance and navigate to **Tag Properties** configured with the **Adobe Experience Platform Web SDK** extension.
+1. Access your **Adobe Experience Platform Data Collection** instance and navigate to **Tag Properties** configured with the **Adobe Experience Platform Web SDK** tag extension.
 
 1. From the **Authoring** menu, select **Rules** then **Create new rule** or **Add rule**.
 
@@ -126,23 +135,23 @@ subfeature_v2:
 
     ![](assets/in-app-web-config-1.png)
 
-1. Enter a name and a description (optional) for the configuration, then select the channel to configure.
+1. Enter a name and a description (optional) for the configuration.
 
     >[!NOTE]
     >
-    > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
+    > Names must begin with a letter (A-Z). Names can only contain alpha-numeric characters. You can also use underscore `_`, dot `.` and hyphen `-` characters.
 
 1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md).
 
 1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#surface-marketing-actions)
 
-1. Select **In-app messaging** channel.
+1. From the **[!UICONTROL Select channel]** drop-down, select **[!UICONTROL In-app messaging]**.
 
 1. Define an App configuration. You have two options for making changes:
 
-    * You can either input a **[!UICONTROL Page URL]** to apply changes to a specific page.
+    * To target one page, enter its **[!UICONTROL Page URL]**.
 
-    * You can create a rule to target multiple URLs that follow the same pattern. 
+    * To target multiple pages that follow the same pattern, create a Pages matching rule.
 
         +++ How to build a Pages matching rule.
 
