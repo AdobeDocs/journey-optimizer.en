@@ -71,8 +71,8 @@ Tracking lets you measure campaign effectiveness, optimize experiences, and conf
 
 | Where | Best for | Learn more |
 |---|---|---|
-| **Live reports** | Real-time delivery and engagement during a send | [Live report](../reports/live-report.md) |
-| **Global reports (Customer Journey Analytics)** | All-time campaign and journey performance, by channel | [Reporting overview](../reports/gs-reports.md) |
+| **Live reports** | Near-real-time delivery and engagement for the last 24 hours | [Live report](../reports/live-report.md) |
+| **All-time reports (Customer Journey Analytics)** | All-time campaign and journey performance, by channel | [Reporting overview](../reports/gs-reports.md) |
 | **Query Service and datasets** | Custom analysis, delivery errors, journey step events | [Journey step events](../reports/journey-step-events-overview.md), [Message feedback event dataset](../data/datasets-query-examples.md#message-feedback-event-dataset) |
 
 To help you get started, explore these essential tracking and monitoring topics:
@@ -125,7 +125,7 @@ Use this table to see what each channel needs before you build. Details for each
 | [Web](#web) | Requires configuration | Select the elements to track when authoring the page | Displays, clicks, click-through rate, element performance |
 | [Push](#push) | Requires Mobile SDK | Integrate the Adobe Experience Platform Mobile SDK; configure click behavior and buttons | Impressions (delivered), clicks (tapped), opens (app launched), button actions |
 | [In-app](#in-app) | Requires app integration with the SDK | Configure triggers, display rules, and interactive elements | Triggered, displayed, clicks, dismissals |
-| [SMS and MMS](#sms) | Link tracking needs an SMS subdomain | Configure an SMS subdomain; use the URL helper function for links | Link clicks, inbound opt-out keyword replies |
+| [SMS and MMS](#sms) | Link tracking needs an SMS subdomain | Configure an SMS subdomain; use the URL helper function for links | Link clicks, inbound messages and opt-out keyword replies |
 | [Code-based experiences](#code-based) | Requires implementation | Datastream, Web or Mobile SDK, display and interaction events | Displays, clicks, click-through rate, element performance |
 | [Content cards](#content-cards) | Requires SDK | Add buttons or links; configure display rules | Displays, clicks, click-through rate |
 | [Landing pages](#landing-pages) | On by default | None | Visits, conversions, bounce rate, trends |
@@ -160,6 +160,7 @@ View results in the [web campaign report](../reports/campaign-global-report-cja-
 With the SDK in place, Journey Optimizer captures impressions (delivered), clicks (tapped), and opens (app launched). To get more detail, configure clickable elements:
 
 * **Body click behavior.** Choose what happens when users tap the notification: open the app, open a deep link, or open a web URL. Each action is tracked. [Learn more](../push/design-push.md#on-click-behavior)
+* **Tracking options.** Make sure the push opening and interaction tracking options are enabled in the push activity of your journey or in your campaign. [Learn more](../push/create-push.md#create)
 * **Action buttons.** Add buttons (open app, deep link, web URL), each tracked independently. On Android, you can add up to three buttons. On iOS, buttons are defined by a notification category that is preconfigured in your app. [Learn more](../push/design-push.md#add-buttons-push)
 
 View results in the [push campaign report](../reports/campaign-global-report-cja-push.md) and the [push journey report](../reports/journey-global-report-cja-push.md).
@@ -178,7 +179,7 @@ View results in the [in-app campaign report](../reports/campaign-global-report-c
 ### SMS and MMS {#sms}
 
 * **Link tracking.** Add URLs with the URL helper function. Journey Optimizer shortens each link and tracks clicks. Configure an SMS subdomain first. [Learn more](../mobile/mobile-subdomains.md)
-* **Inbound opt-out keywords.** Replies that match opt-out keywords (such as STOP) update the profile's opt-out status. Native keyword handling is supported with Sinch and Infobip only. Two-way messaging requires at least one prior one-way message to the number, and alphanumeric sender IDs cannot receive replies. [Learn more](../mobile/mobile-opt-out.md#sms-native-keywords)
+* **Inbound messages and opt-out keywords.** Inbound messages appear in the SMS report. Replies that match opt-out keywords (such as STOP) update the profile's opt-out status. Native keyword handling is supported with Sinch and Infobip only. Two-way messaging requires at least one prior one-way message to the number, and alphanumeric sender IDs cannot receive replies. [Learn more](../mobile/mobile-opt-out.md#sms-native-keywords)
 
 View results in the [SMS campaign report](../reports/campaign-global-report-cja-sms.md) and the [SMS journey report](../reports/journey-global-report-cja-sms.md).
 
@@ -196,7 +197,7 @@ View results in the [code-based campaign report](../reports/campaign-global-repo
 
 ### Content cards {#content-cards}
 
-Content cards require the Adobe Experience Platform Web or Mobile SDK in your app or website. [Learn more](../content-card/content-card-configuration-prereq.md) Add buttons and links to your content card to track interactions, and define display rules so displays and interactions are measured accurately. [Learn how to configure content cards](../content-card/create-content-card.md)
+Content cards require the Adobe Experience Platform Web or Mobile SDK in your app or website. [Learn more](../content-card/content-card-configuration-prereq.md) Add buttons and links to your content card to track interactions, and define display rules so displays and interactions are measured accurately. Cards persist in the app or website until the user dismisses them, so you can observe engagement across sessions. [Learn how to configure content cards](../content-card/create-content-card.md)
 
 View results in the [content card campaign report](../reports/campaign-global-report-cja-content.md) and the [content card journey report](../reports/journey-global-report-cja-content.md).
 
@@ -268,7 +269,7 @@ Data governance helps you enforce your organization's policies on tracked data:
 ### System health {#system-health}
 
 * **Configure alerts.** Subscribe to notifications for journey errors, custom action failures, and other critical issues. [Learn more](../reports/alerts.md)
-* **Review audit logs.** Audit logs automatically record user actions on resources. You need the **View User Activity Log** permission to view and export them. [Learn more](../privacy/audit-logs.md)
+* **Review audit logs.** Audit logs automatically record user actions on resources, which helps you troubleshoot issues and demonstrate compliance. You need the **View User Activity Log** permission to view and export them. [Learn more](../privacy/audit-logs.md)
 * **Monitor integrations.** Track custom action performance and external system connectivity. [Learn more](../action/reporting.md)
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-get-started-tracking.md}}
