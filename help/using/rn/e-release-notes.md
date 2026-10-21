@@ -78,6 +78,28 @@ The following improvements are coming to Coworker in this release.
 
 * **Orchestrated campaigns skills in Coworker** - You can now interact with Orchestrated campaigns in natural language from the Coworker chat interface, for example to list your orchestrated campaigns and filter them by status (draft, live, completed, paused, stopped), date range, channel, and tags. <!-- Documentation link: TBD --> Jira: [DOCAC-14925](https://jira.corp.adobe.com/browse/DOCAC-14925){target="_blank"}
 
+### Landing pages {#oct-26-landing-pages}
+
+The following capability is coming to landing pages in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>New profile acquisition with landing pages</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now allows you to create landing pages accessible to anyone and from there capture data from completely unknown visitors in order to create or enrich new customer profiles in Experience Platform.</p>
+<!-- GIF placeholder: TBD -->
+<!-- Documentation link: TBD -->
+<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-13757" target="_blank">DOCAC-13757</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
 <!--
 ### Journeys {#oct-26-journeys}
 
