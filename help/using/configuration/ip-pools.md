@@ -99,6 +99,10 @@ After an IP pool has been created, PTR information is visible when hovering over
 
 ![](assets/ip-pool-ptr-record-tooltip.png)
   
+>[!NOTE]
+>
+>If your organization has purchased the **High throughput transactional messaging** add-on, create a dedicated IP pool for high throughput by enabling the High Throughput option when you create it. A high throughput IP pool can only be used with high throughput channel configurations and campaigns. The type of an IP pool cannot be changed after creation: a standard IP pool cannot be converted to high throughput, and a high throughput IP pool cannot be converted back to standard. [Learn more about High Throughput setup](../campaigns/api-triggered-high-throughput.md#setup-guidelines)
+
 The IP pool is now created and displays in the list. You can select it to access its properties and display the associated channel configuration (i.e. message preset). For more on how to associate a channel configuration with an IP pool, refer to [this section](channel-surfaces.md).
 
 ## Edit an IP pool {#edit-ip-pool}

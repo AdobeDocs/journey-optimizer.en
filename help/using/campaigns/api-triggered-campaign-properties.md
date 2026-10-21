@@ -56,7 +56,9 @@ To create a new API triggered campaign, follow these steps:
         
         >[!AVAILABILITY]
         >
-        >Currently, High Throughput mode is available only for the email channel and in the US region.
+        >Currently, High Throughput mode is available only for the email channel, across all regions except Switzerland.
+        >
+        >When High Throughput mode is enabled, only High Throughput channel configurations can be selected. [Learn how to set up High Throughput resources](../campaigns/api-triggered-high-throughput.md#setup-guidelines)
         >
         >This capability is only available for organizations that have purchased the Adobe **High throughput transactional messaging** add-on offering. Contact your Adobe representative for more details.
 
