@@ -29,28 +29,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 **Release date**: October 28-29, 2026
 
-### Navigation {#oct-26-navigation}
-
-The following usability improvement is coming to navigation in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Unified calendar for Campaigns, Journeys, and Orchestrated campaigns</strong> [!BADGE Usability]{type=Positive}<br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view.</p>
-<!-- Screenshot placeholder: TBD -->
-<!-- Documentation link: TBD -->
-<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-15571" target="_blank">DOCAC-15571</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
 ### Channels {#oct-26-channels}
 
 The following capabilities and improvements are coming to channels in this release.
@@ -82,8 +60,6 @@ The following capabilities and improvements are coming to channels in this relea
 
 * **Reporting webhooks available for custom channels** - You can now define a reporting webhook for a custom outbound channel and attach it to a channel configuration. Use it to enrich your Journey Optimizer reports with interaction events. <!-- Documentation link: TBD --> Jira: [DOCAC-15966](https://jira.corp.adobe.com/browse/DOCAC-15966){target="_blank"}
 
-* **Channel Builder skill for creating a new custom channel** - Channel Builder skill in Coworker now helps administrators create custom channels faster. The skill guides users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD --> Jira: [DOCAC-15511](https://jira.corp.adobe.com/browse/DOCAC-15511){target="_blank"}
-
 ### Orchestrated campaigns {#oct-26-orchestrated-campaigns}
 
 The following improvements are coming to orchestrated campaigns in this release.
@@ -94,9 +70,11 @@ The following improvements are coming to orchestrated campaigns in this release.
 
 ### Coworker {#oct-26-coworker}
 
-The following improvements are coming to Coworker in this release.
+The following are new capabilities and improvements that are coming to Coworker in this release cycle.
 
 * **Decisioning rule generation skill in Coworker** - Use natural language in Coworker to generate, simulate, and optimize eligibility rules and ranking formulas for Adobe Journey Optimizer Decisioning. Marketers can create, validate, and test decisioning logic faster, enabling smarter personalization and more time spent optimizing outcomes without requiring PQL syntax expertise. <!-- Documentation link: TBD --> Jira: [DOCAC-15290](https://jira.corp.adobe.com/browse/DOCAC-15290){target="_blank"}
+
+* **Channel Builder skill in Coworker to create a new custom channel** - This skill helps administrators create custom channels faster by guiding users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD --> Jira: [DOCAC-15511](https://jira.corp.adobe.com/browse/DOCAC-15511){target="_blank"}
 
 * **Orchestrated campaigns skills in Coworker** - You can now interact with Orchestrated campaigns in natural language from the Coworker chat interface, for example to list your orchestrated campaigns and filter them by status (draft, live, completed, paused, stopped), date range, channel, and tags. <!-- Documentation link: TBD --> Jira: [DOCAC-14925](https://jira.corp.adobe.com/browse/DOCAC-14925){target="_blank"}
 
