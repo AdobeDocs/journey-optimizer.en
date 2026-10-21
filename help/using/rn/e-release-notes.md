@@ -29,6 +29,28 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 **Release date**: October 28-29, 2026
 
+### Navigation {#oct-26-navigation}
+
+The following usability improvement is coming to navigation in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Unified calendar for Campaigns, Journeys, and Orchestrated campaigns</strong> [!BADGE Usability]{type=Positive}<br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view.</p>
+<!-- Screenshot placeholder: TBD -->
+<!-- Documentation link: TBD -->
+<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-15571" target="_blank">DOCAC-15571</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Channels {#oct-26-channels}
 
 The following capabilities and improvements are coming to channels in this release.
@@ -74,7 +96,7 @@ The following improvements are coming to orchestrated campaigns in this release.
 
 The following improvements are coming to Coworker in this release.
 
-* **Decisioning rule generation from Coworker** - The AI-assisted decisioning rule generation experience, previously available via the right rail, is now accessible through Coworker, which replaces the right rail as the way to build rules with AI. <!-- Documentation link: TBD --> Jira: [DOCAC-15290](https://jira.corp.adobe.com/browse/DOCAC-15290){target="_blank"}
+* **Decisioning rule generation skill in Coworker** - Use natural language in Coworker to generate, simulate, and optimize eligibility rules and ranking formulas for Adobe Journey Optimizer Decisioning. Marketers can create, validate, and test decisioning logic faster, enabling smarter personalization and more time spent optimizing outcomes without requiring PQL syntax expertise. <!-- Documentation link: TBD --> Jira: [DOCAC-15290](https://jira.corp.adobe.com/browse/DOCAC-15290){target="_blank"}
 
 * **Orchestrated campaigns skills in Coworker** - You can now interact with Orchestrated campaigns in natural language from the Coworker chat interface, for example to list your orchestrated campaigns and filter them by status (draft, live, completed, paused, stopped), date range, channel, and tags. <!-- Documentation link: TBD --> Jira: [DOCAC-14925](https://jira.corp.adobe.com/browse/DOCAC-14925){target="_blank"}
 
@@ -187,7 +209,3 @@ The following capability and improvement are coming to administration in this re
 </tr>
 </tbody>
 </table>
-
-### Navigation {#oct-26-navigation}
-
-* [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view. [DOCAC-15571](https://jira.corp.adobe.com/browse/DOCAC-15571){target="_blank"}
