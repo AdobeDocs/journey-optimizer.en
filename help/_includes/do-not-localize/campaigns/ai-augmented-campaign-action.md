@@ -25,7 +25,7 @@ For complete understanding, this information should be combined with the documen
 * **Inbound channels**: Code-based experience, In-app message, Content Card, Web action.
 * **Outbound channels**: Email, Push, Mobile (Mobile message).
 * **Channel optimization**: Automatically selects the best channel for each customer at send time when multiple outbound channels (Email, Push, Mobile) are selected. *(product-specific)*
-* **Rapid delivery mode**: A [!DNL Journey Optimizer] add-on that allows very fast push message sending in large volumes through campaigns. *(product-specific)*
+* **Rapid delivery mode**: A Journey Optimizer add-on that allows very fast push message sending in large volumes through campaigns. *(product-specific)*
 * **Priority score**: A numeric value assigned to a campaign to prioritize an inbound campaign when there is an imposed constraint such as a frequency cap. *(product-specific)*
 
 **Guardrails:**

@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page introduces API triggered campaigns, which you create in [!DNL Journey Optimizer] and then launch through a call to the Interactive Message Execution REST API, and lists the key steps to create one.
+* **TL;DR:** This page introduces API triggered campaigns, which you create in Journey Optimizer and then launch through a call to the Interactive Message Execution REST API, and lists the key steps to create one.
 
 **Intents:**
 
@@ -20,7 +20,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **API triggered campaign**: A campaign that you first create in [!DNL Journey Optimizer], then launch through an API call *(product-specific)*
+* **API triggered campaign**: A campaign that you first create in Journey Optimizer, then launch through an API call *(product-specific)*
 * **Interactive Message Execution REST API**: The API used to launch the execution of an API triggered campaign *(product-specific)*
 * **Trigger**: The REST API payload that carries real-time context data used for personalization
 
@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: What can an API triggered campaign send?** — Marketing communications to an audience at the right time, or transactional or operational messages to an individual, such as a password reset.
 * **Q: What data can personalize an API triggered campaign message?** — Profile attributes and real-time context data in the trigger, which is a REST API payload.
-* **Q: How do I launch an API triggered campaign?** — Create the campaign in [!DNL Journey Optimizer], then launch its execution through an API call using the Interactive Message Execution REST API.
+* **Q: How do I launch an API triggered campaign?** — Create the campaign in Journey Optimizer, then launch its execution through an API call using the Interactive Message Execution REST API.
 * **Q: Which channels are available?** — Available channels vary based on your licensing model and add-ons.
 * **Q: What are the steps to create an API triggered campaign?** — Define the campaign properties, configure the campaign action, edit the campaign content, define the campaign audience, schedule the campaign, review and activate the campaign, then trigger the campaign execution.
 

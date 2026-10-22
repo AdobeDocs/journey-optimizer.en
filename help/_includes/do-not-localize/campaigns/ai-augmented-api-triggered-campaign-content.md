@@ -31,7 +31,7 @@ For complete understanding, this information should be combined with the documen
 * The `context.system` syntax is restricted to Adobe internal usage only and should not be used to pass contextual attributes.
 * Contextual data passed in the REST API is used for one-off communication and is not stored against profile. At maximum, a profile is created with the namespace details, if it was found missing.
 * Using a large number or heavy contextual data in your content may impact performances.
-* For now, no contextual attribute is available for use in the left rail menu. Attributes must be typed directly in the personalization expression, with no check performed by [!DNL Journey Optimizer].
+* For now, no contextual attribute is available for use in the left rail menu. Attributes must be typed directly in the personalization expression, with no check performed by Journey Optimizer.
 * A transactional API-triggered email campaign can include up to five PDF attachments in an email, including both static and personalized attachments.
 
 **Applicability:**

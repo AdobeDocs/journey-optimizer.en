@@ -101,9 +101,8 @@ Follow `references/generation-spec.md` exactly for every page. Key invariants:
 - Every claim grounded in the page body only. No contractions. Qualify numbers as
   `(hard limit)` / `(recommended)` **only** when the page uses enforcement/recommendation
   wording; otherwise no qualifier. Use the page's exact validation-mode and status labels.
-  Never add `[!UICONTROL ...]` tags in a block: write the UI label as plain text (keep the
-  page's bold if it has one), and strip the tag when copying a label from the page. Keep
-  `[!DNL ...]` strings as they are. Never use the banned imprecise
+  Never add `[!UICONTROL ...]` or `[!DNL ...]` tags in a block: write the UI label as plain text (keep the
+  page's bold if it has one), and strip the tag when copying a label or product name from the page. Never use the banned imprecise
   terms unless they appear verbatim on the page.
 
 **Include file** — `help/_includes/do-not-localize/<folder>/ai-augmented-<page>.md`

@@ -234,9 +234,9 @@ Y"). This guides retrieval to the right page.
 - **No contractions** anywhere in block prose — spell out "is not", "does not", "cannot",
   "it is", etc. (The only exception is a verbatim product UI or error string such as
   `configuration doesn't exist`, which is preserved exactly.)
-- **No `[!UICONTROL ...]` tags.** Write UI labels as plain text (for example **Modify campaign**,
+- **No `[!UICONTROL ...]` or `[!DNL ...]` tags.** Write UI labels and product names as plain text (for example **Modify campaign**,
   not `**[!UICONTROL Modify campaign]**`). When copying a label from the page, strip the tag and
-  keep the label text and any bold. `[!DNL ...]` strings stay as they are.
+  keep the text and any bold.
 
 ## Common generation errors (check each before gate 1)
 

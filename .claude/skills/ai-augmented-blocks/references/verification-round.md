@@ -68,8 +68,8 @@ a batch of pages, one verifier subagent can cover the whole folder.
   target page.
 - **Duplication.** A fact appears in one section only (for example, a permission is not repeated
   under Guardrails).
-- **Style.** No contractions (outside verbatim UI or error strings). No `[!UICONTROL ...]` tags anywhere (strip them,
-  keeping the label text); `[!DNL ...]` stays. None
+- **Style.** No contractions (outside verbatim UI or error strings). No `[!UICONTROL ...]` or `[!DNL ...]` tags anywhere (strip them,
+  keeping the text). None
   of the banned words ("synthetic", "fake data", "without real data", "revert", "roll back")
   unless verbatim on the page. UI strings preserved exactly.
 - **Common generation errors.** Also check the list in `generation-spec.md` ("Common generation
@@ -108,7 +108,7 @@ For EACH page:
    prerequisites/permissions, applicability lines, troubleshooting causes and fixes, and related-page
    entries each stated in the page or a recorded related page (never inferred);
    validation/test modes named with the page's exact terms and not conflated; nothing imported
-   from other pages or HTML comments; no contractions (outside verbatim UI/error strings); no [!UICONTROL ...] tags (strip them, keep the label text); no
+   from other pages or HTML comments; no contractions (outside verbatim UI/error strings); no [!UICONTROL ...] / [!DNL ...] tags (strip them, keep the label text); no
    banned words (synthetic / fake data / without real data / revert / roll back) unless verbatim.
 4. FIX every issue by editing ONLY the block file. Preserve the two fixed opening paragraphs,
    the +++ ... +++ fences, and the sync comment. Do NOT modify source pages.

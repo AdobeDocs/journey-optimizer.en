@@ -25,7 +25,7 @@ For complete understanding, this information should be combined with the documen
 * **Business rules**: Drop-down list in which you select a rule set to apply capping rules to the campaign
 * **Capping rules**: Frequency capping by communication type, applied through a rule set, to prevent overloading customers with similar messages
 * **Action tracking**: Section used to track how recipients react to email or mobile deliveries; results are accessible from the campaign report once the campaign has been executed
-* **Rapid delivery mode**: A [!DNL Journey Optimizer] add-on that allows very fast push message sending in large volumes through campaigns *(product-specific)*
+* **Rapid delivery mode**: A Journey Optimizer add-on that allows very fast push message sending in large volumes through campaigns *(product-specific)*
 
 **Guardrails:**
 
