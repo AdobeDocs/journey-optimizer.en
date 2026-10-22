@@ -33,7 +33,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
-* The **Activate High throughput mode for API triggered campaigns** page has been updated with the self-serve setup flow: one-time activation by Adobe, High Throughput IP pools and email channel configurations, matching rules between campaigns, configurations and IP pools, and the fact that resource types cannot be changed after creation. It also adds a high availability section and lists configuration-level limitations. The **IP pools** and **Channel configurations** pages include related notes. [Read more](../campaigns/api-triggered-high-throughput.md#setup-guidelines)
+* The **Activate High throughput mode for API-triggered campaigns** page has a new **Set up High throughput API-triggered email campaigns** section. It provides step-by-step guidance to create a dedicated IP pool and a High throughput email channel configuration in the UI. [Read more](../campaigns/api-triggered-high-throughput.md#setup-guidelines)
 
 * A new **Troubleshooting overview** page and 14 error pages give the cause and the fix for each error code, grouped by feature area: Journeys, Campaigns, Content, and Configuration. Related feature pages now link to the matching error page. [Read more](../../rp_landing_pages/troubleshooting-overview-landing-page.md)
 
