@@ -3,7 +3,6 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Pre release notes for Journey Optimizer
 description: Adobe Journey Optimizer Pre Release notes
-hide: true
 feature: Release Notes
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 TQID: 'https://experienceleague.adobe.com/951PJzmmITN1nSUapVomlYnPws9pS0TosI1Gl3R9yL4'
@@ -19,7 +18,7 @@ feature_v2:
 
 # Pre-release notes {#e-release-notes}
 
-Adobe Journey Optimizer continuously delivers new features, enhancements to existing features, and bug fixes. Upcoming changes are listed in the **Coming soon** accordions of the [release notes](release-notes.md), and all changes are consolidated at the end of each month in the same page.
+Adobe Journey Optimizer publishes pre-release notes ahead of each monthly release to give you an early look at the new capabilities and improvements planned for that release. After the release, all changes are consolidated in the [release notes](release-notes.md).
 
 ## October '26 pre-release notes {#oct-26-rn}
 
@@ -42,41 +41,95 @@ The following capabilities and improvements are coming to channels in this relea
 <tbody>
 <tr>
 <td>
-<p>When building your journeys and campaigns, you can now override the email parameters derived from the selected channel configuration directly at the journey or campaign action level.</p>
-<p>This lets you personalize the email header fields (From name, From email prefix, Reply to name, and Reply to email), the execution address, and the list-unsubscribe values, using profile attributes or contextual data for more precise control. In particular, this allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.</p>
+<p>Email header fields and delivery settings can now be overridden at the journey or campaign action level, without requiring a separate channel configuration. From name, From email prefix, Reply-To, recipient address, and list-unsubscribe values can each be set using profile attributes or contextual data.</p><p>This change allows each individual journey or campaign to carry its own sender identity, useful when the same channel configuration serves multiple programs, regions, or teams that each need a distinct From address or reply routing.</p>
 <!-- GIF placeholder: TBD -->
 <!-- Documentation link: TBD -->
-<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-14718" target="_blank">DOCAC-14718</a></p>
 </td>
 </tr>
 </tbody>
 </table>
 
-* **Reporting webhooks available for custom channels** - You can now define a reporting webhook for a custom outbound channel and attach it to a channel configuration. Use it to enrich your Journey Optimizer reports with interaction events. <!-- Documentation link: TBD --> Jira: [DOCAC-15966](https://jira.corp.adobe.com/browse/DOCAC-15966){target="_blank"}
+<table>
+<thead>
+<tr>
+<th><strong>Self-serve setup for High throughput email</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>If you have purchased the High throughput transactional messaging add-on, you can now set up High throughput for API-triggered email campaigns yourself in the product UI. Create a dedicated High throughput IP pool, then create a High throughput email channel configuration that uses it, without requesting a manual setup for each resource. </p>
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
 
-* **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub One-Time Password (OTP) directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification. <!-- Documentation link: TBD --> Jira: [DOCAC-14815](https://jira.corp.adobe.com/browse/DOCAC-14815){target="_blank"}
+<table>
+<thead>
+<tr>
+<th><strong>Honor tracking consent without blocking email delivery</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>To support compliance with open-tracking consent requirements such as the CNIL guidance in France, you can now honor a recipient's tracking consent without excluding them from an otherwise eligible email send. Tracking consent is stored in the Adobe Experience Platform profile and evaluated for each recipient at send time. A new <strong>Disable open tracking</strong> option in the email settings removes the Journey Optimizer open-tracking pixel for recipients who have not consented. Email delivery, content, and unsubscribe links are unaffected.</p>
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
 
-* **Automated provisioning for High-Throughput API-triggered campaigns** - High Throughput transactional campaigns now include automated safeguards. Adobe Journey Optimizer validates that an organization is entitled for the High Throughput add-on before a High Throughput API-triggered campaign can be published, and the campaign's surface picker now shows only High Throughput-enabled surfaces when High Throughput mode is selected. These changes reduce the manual checks previously required to configure and validate High Throughput campaigns. <!-- Documentation link: TBD --> Jira: [DOCAC-15938](https://jira.corp.adobe.com/browse/DOCAC-15938){target="_blank"}
+* **Suppression list override at Email action level** - Journey Optimizer now includes a per-action toggle that allows delivery to locally-suppressed addresses for a specific email action in a journey or campaign. This is designed for compliance scenarios where a communication must be demonstrably attempted, such as a required notification to an address that has previously bounced. This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
 
-* **Suppression List Override at Email Action Level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model. <!-- Documentation link: TBD --> Jira: [DOCAC-15734](https://jira.corp.adobe.com/browse/DOCAC-15734){target="_blank"}
+<!--
+* **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub One-Time Password (OTP) directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification.
 
-* **Channel Builder skill for creating a new custom channel** - Channel Builder skill in Coworker now helps administrators create custom channels faster. The skill guides users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD --> Jira: [DOCAC-15511](https://jira.corp.adobe.com/browse/DOCAC-15511){target="_blank"}
+  The toggle is off by default and requires explicit confirmation to enable. It applies to the local suppression list only; the global suppression list and all consent and opt-out handling remain unchanged.
+-->
+
+* **Reporting webhooks available for custom channels** - You can now define a reporting webhook for a custom outbound channel and attach it to a channel configuration. Use it to enrich your Journey Optimizer reports with interaction events. <!-- Documentation link: TBD -->
 
 ### Orchestrated campaigns {#oct-26-orchestrated-campaigns}
 
 The following improvements are coming to orchestrated campaigns in this release.
 
-* **Increase AJO message activity limit to 25** - An orchestrated campaign can now contain up to 25 message actions, such as email, push notification, or SMS sends, on its canvas. You can now build a larger campaign as one campaign instead of splitting it into several smaller ones. <!-- Documentation link: TBD --> Jira: [DOCAC-16143](https://jira.corp.adobe.com/browse/DOCAC-16143){target="_blank"}
+* **Increased message activity limit for orchestrated campaigns** - Orchestrated campaigns now support up to 25 message actions on a single canvas, up from the previous limit of 10. This allows complex cross-channel orchestrations, spanning email, push, SMS, and other channels, to be built and managed as a single campaign rather than split across multiple smaller ones.
 
-* **Personalize email list unsubscribe in orchestrated campaigns (Limited Availability)** - Orchestrated campaigns now support personalization of list unsubscribe email parameters, using profile attributes or relational data. Header values can be set at the channel level and overridden per campaign using contextual data for more precise control. This capability is available in Limited Availability. Contact your Adobe representative to request access. <!-- Documentation link: TBD --> Jira: [DOCAC-15544](https://jira.corp.adobe.com/browse/DOCAC-15544){target="_blank"}
+  For enterprise teams running sophisticated multi-step programs, this reduces operational overhead and simplifies publication and rollback handling when managing large campaign launches. <!-- Documentation link: TBD -->
 
 ### Coworker {#oct-26-coworker}
 
-The following improvements are coming to Coworker in this release.
+The following are new capabilities and improvements that are coming to Coworker in this release cycle.
 
-* **Decisioning rule generation from Coworker** - The AI-assisted decisioning rule generation experience, previously available via the right rail, is now accessible through Coworker, which replaces the right rail as the way to build rules with AI. <!-- Documentation link: TBD --> Jira: [DOCAC-15290](https://jira.corp.adobe.com/browse/DOCAC-15290){target="_blank"}
+* **Decisioning rule generation skill in Coworker** - Use natural language in Coworker to generate, simulate, and optimize eligibility rules and ranking formulas for Adobe Journey Optimizer Decisioning. Marketers can create, validate, and test decisioning logic faster, enabling smarter personalization and more time spent optimizing outcomes without requiring PQL syntax expertise. <!-- Documentation link: TBD -->
 
-* **Orchestrated campaigns skills in Coworker** - You can now interact with Orchestrated campaigns in natural language from the Coworker chat interface, for example to list your orchestrated campaigns and filter them by status (draft, live, completed, paused, stopped), date range, channel, and tags. <!-- Documentation link: TBD --> Jira: [DOCAC-14925](https://jira.corp.adobe.com/browse/DOCAC-14925){target="_blank"}
+* **Channel Builder skill in Coworker to create a new custom channel** - This skill helps administrators create custom channels faster by guiding users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD -->
+
+* **Orchestrated campaigns skills in Coworker** - You can now find and inspect orchestrated campaigns conversationally from the Coworker chat interface. This release covers four read-only capabilities: listing and filtering campaigns by status, channel, tags, or name; pulling a specific campaign's details including its channel configuration and activity structure; visualizing a campaign's canvas as a graph of its activities and connections; and retrieving execution logs to surface errors for troubleshooting. This provides teams with live visibility into campaign data without requiring API access or navigation through the Journey Optimizer user interface. Creating, editing, or publishing campaigns via Coworker is not yet supported. <!-- Documentation link: TBD -->
+
+### Administration {#oct-26-administration}
+
+The following capability and improvement are coming to administration in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Custom metadata for journeys and campaigns (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Define your own business fields, such as line of business, product or cost center, in the schemas provided for Action campaigns, journeys and Orchestrated campaigns. Select up to 10 fields per entity type, then fill them in from the Metadata fields section of the properties of each journey or campaign. The values are recorded in dedicated datasets that you can use for reporting, exports and audience creation.</p>
+<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<!-- GIF placeholder: TBD -->
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Landing pages {#oct-26-landing-pages}
 
@@ -85,16 +138,17 @@ The following capability is coming to landing pages in this release.
 <table>
 <thead>
 <tr>
-<th><strong>New profile acquisition with landing pages</strong><br/></th>
+<th><strong>Anonymous landing pages (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now allows you to create landing pages accessible to anyone and from there capture data from completely unknown visitors in order to create or enrich new customer profiles in Experience Platform.</p>
+<p>Journey Optimizer now allows you to create public landing pages accessible to anyone, and from there capture data from anonymous visitors into Experience Platform non-profile enabled datasets. You can share the landing page URL anywhere, such as in emails, SMS messages or on your website.</p>
+<p>To reuse your existing Journey Optimizer branded subdomains for public landing pages, you need to migrate them to Cloudflare.</p>
+<p>This capability is available in Limited Availability. Contact your Adobe representative to request access.</p>
 <!-- GIF placeholder: TBD -->
 <!-- Documentation link: TBD -->
-<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-13757" target="_blank">DOCAC-13757</a></p>
 </td>
 </tr>
 </tbody>
@@ -117,7 +171,6 @@ The following capabilities and improvements are coming to journeys in this relea
 <p>&lt;TBC&gt;</p>
 <GIF placeholder: TBD >
 < Documentation link: TBD >
-<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-15988" target="_blank">DOCAC-15988</a></p>
 </td>
 </tr>
 </tbody>
@@ -135,7 +188,6 @@ The following capabilities and improvements are coming to journeys in this relea
 <p>The Journey Optimizer home page now surfaces an AI recommendation card when a journey alert fires, covering Journey Custom Action failure and Journey Anomaly Detected alerts. Selecting the card opens the associated conversation history in the full, immersive Coworker chat experience.</p>
 <GIF placeholder: TBD >
 <Documentation link: TBD >
-<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-15706" target="_blank">DOCAC-15706</a></p>
 </td>
 </tr>
 </tbody>
@@ -154,52 +206,11 @@ The following capabilities and improvements are coming to journeys in this relea
 <p>Journey creation with AI is now available directly from the CX Coworker right rail, replacing the previous AI Assistant experience with a re-branded, integrated entry point for generating journeys.</p>
 <GIF placeholder: TBD >
 <Documentation link: TBD >
-<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-14898" target="_blank">DOCAC-14898</a></p>
 </td>
 </tr>
 </tbody>
 </table>
 
-* **Support Inbound action simulation in Journeys** - \<TBC\> <Documentation link: TBD > Jira: [DOCAC-15445](https://jira.corp.adobe.com/browse/DOCAC-15445){target="_blank"}
+* **Support Inbound action simulation in Journeys** - \<TBC\> <Documentation link: TBD >
 -->
 
-### Decisioning {#oct-26-decisioning}
-
-The following improvement is coming to Decisioning in this release.
-
-* **Use audience enrichment attributes in Decisioning rules (Limited Availability)** - You can now reference an audience's enrichment attributes as a data source in Decisioning eligibility rules. Enrichment attributes are additional, audience-specific data - such as the product or item IDs that qualified a profile for inclusion - defined through an Enrich activity in an audience composition. This lets your eligibility logic take into account exactly what triggered a customer's audience membership, without building and maintaining separate audiences for each product or item variation. Enrichment attributes were already available in journey conditions, custom actions, and message personalization; this release extends them to Decisioning. This capability is available in Limited Availability. Contact your Adobe representative to request access. <!-- Documentation link: TBD --> Jira: [DOCAC-15576](https://jira.corp.adobe.com/browse/DOCAC-15576){target="_blank"}
-
-### Email Designer {#oct-26-email-designer}
-
-The following improvement is coming to the Email Designer in this release.
-
-* **Define fallback fonts for custom fonts used in email themes** - You can now define a fallback font for any custom (web) font applied through email themes. If a subscriber's email client does not support the custom font, Adobe Journey Optimizer automatically displays the specified fallback font instead of leaving the choice to the email client's default. This keeps email typography closer to your brand guidelines and reduces font-rendering inconsistencies across email clients. <!-- Documentation link: TBD --> Jira: [DOCAC-15662](https://jira.corp.adobe.com/browse/DOCAC-15662){target="_blank"}
-
-### Administration {#oct-26-administration}
-
-The following capability and improvement are coming to administration in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom metadata for journeys and campaigns (Limited Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Define your own business fields, such as line of business, product or cost center, in the schemas provided for Action campaigns, journeys and Orchestrated campaigns. Select up to 10 fields per entity type, then fill them in from the Metadata fields section of the properties of each journey or campaign. The values are recorded in dedicated datasets that you can use for reporting, exports and audience creation.</p>
-<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
-<!-- GIF placeholder: TBD -->
-<!-- Documentation link: TBD -->
-<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-16114" target="_blank">DOCAC-16114</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **Custom metadata for reporting and decisioning (Limited Availability)** - You can now attach custom key/value metadata to journeys, Action Campaign actions, and orchestrated campaign actions, in addition to the existing Adobe Experience Platform Unified Tags. This metadata is available for reporting, both in Journey Optimizer's built-in reports and in Customer Journey Analytics, so teams can measure and analyze action performance using their own custom dimensions. This capability is only available for a set of organizations (Limited Availability); contact your Adobe representative for more information. <!-- Documentation link: TBD --> Jira: [DOCAC-15667](https://jira.corp.adobe.com/browse/DOCAC-15667){target="_blank"}
-
-### Navigation {#oct-26-navigation}
-
-* [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view. [DOCAC-15571](https://jira.corp.adobe.com/browse/DOCAC-15571){target="_blank"}

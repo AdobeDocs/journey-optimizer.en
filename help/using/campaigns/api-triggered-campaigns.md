@@ -79,3 +79,5 @@ Learn more about the [complete campaign creation workflow with type-specific gui
 Learn how to create a campaign and trigger it from an external system based on user interactions, using the Interactive Message Execution REST API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-api-triggered-campaigns.md}}

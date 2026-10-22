@@ -101,3 +101,5 @@ Once your content is defined, use the **[!UICONTROL Simulate content]** button t
 ## Next steps {#next}
 
 Once your campaign configuration and content are ready, you can define the campaign audience. [Learn more](api-triggered-campaign-audience.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-api-triggered-campaign-content.md}}
