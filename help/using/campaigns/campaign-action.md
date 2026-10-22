@@ -167,3 +167,5 @@ Once the campaign is [live](review-activate-campaign.md), all actions are activa
 ## Next steps {#next}
 
 Once your campaign action is ready, you can design its content. [Learn more](campaign-content.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-campaign-action.md}}

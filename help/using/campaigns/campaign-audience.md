@@ -63,3 +63,5 @@ Use the **[!UICONTROL Audience]** tab to define the campaign audience.
 ## Next steps {#next}
 
 Once the audience of your Action campaign is ready, you can schedule the campaign. [Learn more](campaign-schedule.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-campaign-audience.md}}
