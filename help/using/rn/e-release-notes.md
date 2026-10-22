@@ -65,7 +65,23 @@ The following capabilities and improvements are coming to channels in this relea
 </tbody>
 </table>
 
-* **Suppression list override at Email action level** - Journey Optimizer now includes a per-action toggle that allows delivery to locally-suppressed addresses for a specific email action in a journey or campaign. This is designed for compliance scenarios where a communication must be demonstrably attempted, such as a required notification to an address that has previously bounced.
+<table>
+<thead>
+<tr>
+<th><strong>Honor tracking consent without blocking email delivery</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>To support compliance with open-tracking consent requirements such as the CNIL guidance in France, you can now honor a recipient's tracking consent without excluding them from an otherwise eligible email send. Tracking consent is stored in the Adobe Experience Platform profile and evaluated for each recipient at send time. A new <strong>Disable open tracking</strong> option in the email settings removes the Journey Optimizer open-tracking pixel for recipients who have not consented. Email delivery, content, and unsubscribe links are unaffected.</p>
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Suppression list override at Email action level** - Journey Optimizer now includes a per-action toggle that allows delivery to locally-suppressed addresses for a specific email action in a journey or campaign. This is designed for compliance scenarios where a communication must be demonstrably attempted, such as a required notification to an address that has previously bounced. This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
 
 <!--
 * **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub One-Time Password (OTP) directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification.
@@ -92,6 +108,28 @@ The following are new capabilities and improvements that are coming to Coworker 
 * **Channel Builder skill in Coworker to create a new custom channel** - This skill helps administrators create custom channels faster by guiding users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD -->
 
 * **Orchestrated campaigns skills in Coworker** - You can now find and inspect orchestrated campaigns conversationally from the Coworker chat interface. This release covers four read-only capabilities: listing and filtering campaigns by status, channel, tags, or name; pulling a specific campaign's details including its channel configuration and activity structure; visualizing a campaign's canvas as a graph of its activities and connections; and retrieving execution logs to surface errors for troubleshooting. This provides teams with live visibility into campaign data without requiring API access or navigation through the Journey Optimizer user interface. Creating, editing, or publishing campaigns via Coworker is not yet supported. <!-- Documentation link: TBD -->
+
+### Administration {#oct-26-administration}
+
+The following capability and improvement are coming to administration in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Custom metadata for journeys and campaigns (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Define your own business fields, such as line of business, product or cost center, in the schemas provided for Action campaigns, journeys and Orchestrated campaigns. Select up to 10 fields per entity type, then fill them in from the Metadata fields section of the properties of each journey or campaign. The values are recorded in dedicated datasets that you can use for reporting, exports and audience creation.</p>
+<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<!-- GIF placeholder: TBD -->
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Landing pages {#oct-26-landing-pages}
 
@@ -176,24 +214,3 @@ The following capabilities and improvements are coming to journeys in this relea
 * **Support Inbound action simulation in Journeys** - \<TBC\> <Documentation link: TBD >
 -->
 
-### Administration {#oct-26-administration}
-
-The following capability and improvement are coming to administration in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom metadata for journeys and campaigns (Limited Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Define your own business fields, such as line of business, product or cost center, in the schemas provided for Action campaigns, journeys and Orchestrated campaigns. Select up to 10 fields per entity type, then fill them in from the Metadata fields section of the properties of each journey or campaign. The values are recorded in dedicated datasets that you can use for reporting, exports and audience creation.</p>
-<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
-<!-- GIF placeholder: TBD -->
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
