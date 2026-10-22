@@ -78,3 +78,5 @@ Once your API triggered campaign has been configured, you need to review its par
 ## Next steps {#next}
 
 Once the API triggered campaign is ready, you can trigger its execution using APIs. [Learn more](trigger-campaigns.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-review-activate-api-triggered-campaign.md}}

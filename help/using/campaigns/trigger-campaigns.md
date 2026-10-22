@@ -94,3 +94,5 @@ This error typically occurs when the Azure service principal required for Cosmos
 >This issue is typically caused by a misconfiguration or accidental disabling of the Azure service principal required for Cosmos DB authentication. Keeping the service principal enabled and properly configured will prevent this error in the future.
 
 +++
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-trigger-campaigns.md}}
