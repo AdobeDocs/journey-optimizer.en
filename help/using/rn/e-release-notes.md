@@ -49,7 +49,21 @@ The following capabilities and improvements are coming to channels in this relea
 </tbody>
 </table>
 
-* **Automated provisioning for High-Throughput API-triggered campaigns** - High Throughput transactional campaigns now include automated safeguards. Adobe Journey Optimizer validates that an organization is entitled for the High Throughput add-on before a High Throughput API-triggered campaign can be published, and the campaign's surface picker now shows only High Throughput-enabled surfaces when High Throughput mode is selected. These changes reduce the manual checks previously required to configure and validate High Throughput campaigns. <!-- Documentation link: TBD -->
+<table>
+<thead>
+<tr>
+<th><strong>Automated provisioning for High-Throughput API-triggered campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>High Throughput transactional campaigns now include automated safeguards. Adobe Journey Optimizer validates that an organization is entitled for the High Throughput add-on before a High Throughput API-triggered campaign can be published, and the campaign's surface picker now shows only High Throughput-enabled surfaces when High Throughput mode is selected.</p><p>These changes reduce the manual checks previously required to configure and validate High Throughput campaigns.</p>
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
 
 <!--
 * **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub One-Time Password (OTP) directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification.
