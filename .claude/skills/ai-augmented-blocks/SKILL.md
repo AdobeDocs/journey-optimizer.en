@@ -101,7 +101,9 @@ Follow `references/generation-spec.md` exactly for every page. Key invariants:
 - Every claim grounded in the page body only. No contractions. Qualify numbers as
   `(hard limit)` / `(recommended)` **only** when the page uses enforcement/recommendation
   wording; otherwise no qualifier. Use the page's exact validation-mode and status labels.
-  Preserve `[!UICONTROL ...]` / `[!DNL ...]` strings verbatim. Never use the banned imprecise
+  Never add `[!UICONTROL ...]` tags in a block: write the UI label as plain text (keep the
+  page's bold if it has one), and strip the tag when copying a label from the page. Keep
+  `[!DNL ...]` strings as they are. Never use the banned imprecise
   terms unless they appear verbatim on the page.
 
 **Include file** — `help/_includes/do-not-localize/<folder>/ai-augmented-<page>.md`
@@ -151,7 +153,7 @@ every fix to the include file before continuing. This is gate 2 of 2 and cannot 
 Before committing, sweep every block for structure and hygiene (see the sweep snippet in
 `references/git-jira-tracking.md`): front matter + `# AI Knowledge Reference` heading, the
 `+++ … +++` fences, the fixed opening paragraph, the sync comment, no contractions (excluding
-verbatim `[!UICONTROL ...]`), and a matching `{{$include}}` line in the page.
+verbatim error strings), no `[!UICONTROL ...]` tags, and a matching `{{$include}}` line in the page.
 
 ### 5 — Track in JIRA, then ask about a PR (never merge)
 
