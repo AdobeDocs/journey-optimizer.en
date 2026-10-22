@@ -122,7 +122,7 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 <tbody>
 <tr>
 <td>
-<p>A new <strong>Stop action</strong> activity in the journey canvas lets you remove a profile from up to five inbound activities or experiences directly from a journey, decoupling inbound disqualification from journey exit for more advanced cross-channel orchestration.</p>
+<p>A new "Stop action" activity in the journey canvas now allows you to remove a profile from up to five inbound activities or experiences directly from a journey. This decouples inbound disqualification from journey exit.</p>
 <p>For more information, refer to the <a href="../building-journeys/stop-action.md">detailed documentation</a>.</p>
 <p>Availability date: October 12, 2026</p>
 </td>
@@ -153,13 +153,17 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
   Availability date: October 13, 2026
 
-* **Business Performance Analysis skill** - Analyze journey performance and get concrete optimization recommendations directly in Adobe CX Enterprise Coworker chat. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
+* **Business Performance Analysis skill** - Analyze journey performance and get concrete optimization recommendations in Adobe CX Enterprise Coworker chat. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
 
   Availability date: October 7, 2026
   
-* **Journey Hygiene Analysis skill** - CX Coworker can now audit your journey inventory for missing or generic names, stale draft and live journeys, oversized journeys, long-existing closed journeys, and similar action and event names, with recommendations to clean up and stabilize your inventory. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
+* **Journey Hygiene Analysis skill** - Coworker scans journeys for configuration hygiene issues and suggests fixes in chat. The first release has 7 checks: missing or generic names, stale draft journeys, stale live journeys, oversized journeys, long-existing closed journeys, and similar action or event names. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
 
   Availability date: October 20, 2026
+
+* **Journey execution timeline skill** - For Read Audience journeys only, Coworker now analyzes execution timing: execution duration, P95 and P99 latency, export-job-creation-to-first-profile latency, and latency by journey, version and recurrence. It identifies the slowest versions and runs.
+
+  Availability date: October 1, 2026
 
 +++ Coming soon — **Information below is subject to change.**
 
