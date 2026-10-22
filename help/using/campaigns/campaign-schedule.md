@@ -126,3 +126,5 @@ To deliver your campaign message in batches over time instead of all at once, yo
 ## Next steps {#next}
 
 Once your campaign schedule is ready, you can review and activate the campaign. [Learn more](review-activate-campaign.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-campaign-schedule.md}}

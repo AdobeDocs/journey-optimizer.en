@@ -73,3 +73,5 @@ Learn more about the [complete campaign creation workflow with type-specific gui
 Learn how to create an Action campaign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346680?quality=12)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-create-campaign.md}}
