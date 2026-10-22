@@ -62,3 +62,5 @@ To create an Action campaign and define its properties, follow these steps:
 ## Next steps {#next}
 
 Once your Action campaign is created and configured, you can configure its action. [Learn more](campaign-action.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-campaign-properties.md}}

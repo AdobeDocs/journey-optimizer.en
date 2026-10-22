@@ -394,3 +394,5 @@ Use targeting rules and content experiments to deliver personalized content and 
 :::
 
 ::::
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-get-started-with-campaigns.md}}

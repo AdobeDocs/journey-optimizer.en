@@ -194,7 +194,7 @@ body**. Do not introduce "revert", "reset", or "roll back" unless the page uses 
 ### 9. Troubleshooting (optional)
 Documented symptoms and error messages with their documented cause and resolution. One entry
 per item: the symptom or error label verbatim (for example
-`[!UICONTROL configuration doesn't exist]`), then the cause, then what the docs say to do.
+`configuration doesn't exist`, with no `[!UICONTROL ...]` tag), then the cause, then what the docs say to do.
 
 - Copy error strings, status values and UI labels exactly. Do not paraphrase an error label.
 - Give the cause and the fix only if the docs give them. If the docs list an error without a
@@ -232,8 +232,11 @@ Y"). This guides retrieval to the right page.
 - Do not use these imprecise terms unless they appear **verbatim** on the page:
   "synthetic", "fake data", "without real data", "revert", "roll back".
 - **No contractions** anywhere in block prose — spell out "is not", "does not", "cannot",
-  "it is", etc. (The only exception is a verbatim product UI string such as
-  `[!UICONTROL configuration doesn't exist]`, which is preserved exactly.)
+  "it is", etc. (The only exception is a verbatim product UI or error string such as
+  `configuration doesn't exist`, which is preserved exactly.)
+- **No `[!UICONTROL ...]` or `[!DNL ...]` tags.** Write UI labels and product names as plain text (for example **Modify campaign**,
+  not `**[!UICONTROL Modify campaign]**`). When copying a label from the page, strip the tag and
+  keep the text and any bold.
 
 ## Common generation errors (check each before gate 1)
 

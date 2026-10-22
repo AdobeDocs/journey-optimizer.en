@@ -74,3 +74,5 @@ To set rate control, enable the **[!UICONTROL Throttle delivery]** option in the
 ## Next steps {#next}
 
 Once your campaign configuration and content are ready, you can review and activate it. [Learn more](../campaigns/review-activate-api-triggered-campaign.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-api-triggered-campaign-schedule.md}}

@@ -91,3 +91,5 @@ Webhook configurations are managed centrally in the **[!UICONTROL Administration
 ## Next steps {#next}
 
 Once your campaign configuration and content are ready, you can schedule its execution. [Learn more](api-triggered-campaign-schedule.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-api-triggered-campaign-audience.md}}

@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page lists the errors and warnings that [!DNL Adobe Journey Optimizer] returns when you configure, schedule, or activate a campaign, grouped by feature, with the cause and the fix for each error family.
+* **TL;DR:** This page lists the errors and warnings that Adobe Journey Optimizer returns when you configure, schedule, or activate a campaign, grouped by feature, with the cause and the fix for each error family.
 
 **Intents:**
 
@@ -35,7 +35,7 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Codes with the status 200 are warnings.
-* The audience cannot be changed once the campaign is activated (CJMCMP-2025-400). For a recurring Action campaign, click **[!UICONTROL Modify campaign]** to create a new version, or duplicate the campaign, then change the audience.
+* The audience cannot be changed once the campaign is activated (CJMCMP-2025-400). For a recurring Action campaign, click **Modify campaign** to create a new version, or duplicate the campaign, then change the audience.
 * Audiences and attributes from audience composition, federated audience composition, or CSV uploads cannot be used with Healthcare Shield or Privacy and Security Shield (CJMCMP-2075, 2077, 2078, 2080, 2081, 2082, 2083).
 * Priority can only be in the range of 0-100 (hard limit), and is disabled for transactional campaigns (CJMCMP-2074-400).
 * Rapid delivery mode cannot be used with a recurring schedule, a headless campaign, or a campaign that has an experiment. It is limited to audiences of up to 30M profiles (hard limit), and does not accept audiences from audience composition.
@@ -53,7 +53,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: What do the parts of a campaign error code mean?** — Campaign errors use the prefix CJMCMP, followed by an error number and an HTTP status. Codes with the status 200 are warnings.
 * **Q: Why can I not activate the campaign because "The selected audience has not been evaluated yet."?** — CJMCMP-2060-200 is a warning: wait until the audience is evaluated, then activate the campaign.
-* **Q: Why can I not change the audience of the campaign?** — CJMCMP-2025-400: the audience cannot be changed once the campaign is activated. For a recurring Action campaign, click **[!UICONTROL Modify campaign]** to create a new version, or duplicate the campaign, then change the audience.
+* **Q: Why can I not change the audience of the campaign?** — CJMCMP-2025-400: the audience cannot be changed once the campaign is activated. For a recurring Action campaign, click **Modify campaign** to create a new version, or duplicate the campaign, then change the audience.
 * **Q: Why is my audience refused with Healthcare Shield or Privacy and Security Shield?** — Audiences and attributes from audience composition, federated audience composition, or CSV uploads cannot be used with them. Select another audience.
 * **Q: Why does "The message has not been published" appear?** — CJMCMP-2202-400: publish the message, then activate the campaign.
 * **Q: Why does "The selected schedule is invalid and will never be fired." appear?** — CJMCMP-2120-400: set a start date in the future, and an end date after the start date.
@@ -64,12 +64,12 @@ For complete understanding, this information should be combined with the documen
 **Troubleshooting:**
 
 * CJMCMP-2028-400, "Permission denied for the audience" — Check whether the audience carries an access label that your role does not include, and ask your administrator to add that label to your role. If access cannot be granted, select another audience.
-* CJMCMP-2031-400, "You do not have permissions to perform this action. Contact your administrator to set OLAC permissions, and try again" — Check the access labels set on the campaign with **[!UICONTROL Manage access]**, and ask your administrator to add a matching label to your role.
-* CJMCMP-2061-400, "You do not have required permissions to perform this action. Contact your administrator to grant you access." — Check that your role includes the permission for this action, such as **[!DNL Manage campaigns]** to edit or **[!DNL Publish campaigns]** to publish, and the access labels set on the campaign, and ask your administrator to add what is missing.
-* CJMCMP-2052-400, "The draft version has already been created" — A draft version of the campaign already exists. Open it from the campaign list with **[!UICONTROL Open draft version]**.
+* CJMCMP-2031-400, "You do not have permissions to perform this action. Contact your administrator to set OLAC permissions, and try again" — Check the access labels set on the campaign with **Manage access**, and ask your administrator to add a matching label to your role.
+* CJMCMP-2061-400, "You do not have required permissions to perform this action. Contact your administrator to grant you access." — Check that your role includes the permission for this action, such as **Manage campaigns** to edit or **Publish campaigns** to publish, and the access labels set on the campaign, and ask your administrator to add what is missing.
+* CJMCMP-2052-400, "The draft version has already been created" — A draft version of the campaign already exists. Open it from the campaign list with **Open draft version**.
 * CJMRT-150001-400, "The schedule will never fire for {triggerExpression}. Please update." — The schedule never produces an execution. Update the start date, end date or frequency so that at least one execution is in the future. This code uses the CJMRT prefix.
 * CJMRT-150002-400, "The End time {endTime} must be set after the Start time {startTime}" — Set an end time later than the start time. This code uses the CJMRT prefix.
-* CJMCMP-2024-400, "A new profile is not allowed for the provisioned campaign" — Creating new profiles is not allowed for this campaign. Turn off the **[!UICONTROL Create new profiles]** option and select an audience of existing profiles.
+* CJMCMP-2024-400, "A new profile is not allowed for the provisioned campaign" — Creating new profiles is not allowed for this campaign. Turn off the **Create new profiles** option and select an audience of existing profiles.
 * CJMCMP-2012-400, "The campaign already has an experiment" — A campaign can have only one experiment. Edit the existing experiment.
 * CJMCMP-2009-400, "The campaign status doesn't allow to create an experiment" — The status of the campaign does not allow creating an experiment. Create the experiment while the campaign is in draft.
 * CJMCMP-2059-400, "The experiment is not allowed" — The experiment is not allowed for this campaign. Edit the existing experiment, or create the experiment while the campaign is in draft.

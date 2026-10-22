@@ -321,3 +321,5 @@ The campaign is created and added to the campaign list.
 * **Monitoring & optimization** - [Campaign reports (CJA)](../reports/campaign-global-report-cja.md) | [Set up alerts](../reports/alerts.md)
 
 * **Organization** - [Work with tags](../start/search-filter-categorize.md) | [Manage permissions](../administration/ootb-product-profiles.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-manage-campaigns.md}}

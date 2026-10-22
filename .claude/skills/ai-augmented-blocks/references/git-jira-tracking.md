@@ -21,7 +21,8 @@ for p in <page1> <page2> ...; do
   grep -q 'This section contains structured knowledge' "$f" || echo "$p: missing opening para 1"
   grep -q 'ai-section-version' "$f"                   || echo "$p: missing sync comment"
   grep -nEi "\b(isn't|aren't|don't|doesn't|didn't|can't|won't|wouldn't|couldn't|shouldn't|it's|we've|we're|you're|they're|that's|there's|haven't|hasn't|wasn't|weren't)\b" "$f" \
-    | grep -vi 'UICONTROL' && echo "  ^ $p contraction"
+    && echo "  ^ $p contraction"
+  grep -nE '\[!(UICONTROL|DNL)' "$f" && echo "  ^ $p UICONTROL/DNL tag (remove)"
   grep -q "do-not-localize/<folder>/ai-augmented-$p.md" "$inc" || echo "$p: MISSING include in page"
 done
 echo "=== sweep done ==="
