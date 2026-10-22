@@ -60,13 +60,7 @@ This page explains how High throughput campaigns differ from standard API-trigge
 
 * **Personalization in High throughput channel configurations** - High throughput email channel configurations do **not** support contextual or profile-based personalization.
 
-* **Matching resources** - High throughput resources must be used together:
-
-  * A High throughput campaign can only use a High throughput channel configuration.
-  * A High throughput channel configuration can only use a High throughput IP pool.
-  * Standard and High throughput resources cannot be mixed. Standard campaigns and configurations are not available in the High throughput drop-down lists, and vice versa.
-
-* **Unsupported features** - [Message Export](../configuration/message-export.md), dynamic subdomains, and conversion of an existing standard IP pool or channel configuration to High throughput are not supported for High throughput.
+* **Matching resources** - High throughput campaigns, channel configurations, and IP pools can only be used with each other. Standard and High throughput resources cannot be mixed.
 
 * **API endpoint** - High throughput campaigns use a different endpoint than standard API-triggered campaigns. For details, see [Execute an API triggered campaign](../campaigns/trigger-campaigns.md#trigger).
 
@@ -83,7 +77,12 @@ This page explains how High throughput campaigns differ from standard API-trigge
 
 * **Throughput allocation** - The throughput provisioned under the High throughput add-on is exclusively reserved for High throughput campaigns. There is no sharing of throughput between standard and High throughput API-triggered campaigns.
 
-* **Personalized PDF attachments** - Not supported when High throughput traffic is routed through the secondary region. [Learn more about personalized PDF attachments](../email/pdf-attachments.md#personalized-attachments)
+* **Unsupported features**:
+
+  * [Message Export](../configuration/message-export.md) and [dynamic subdomains](../email/surface-personalization.md#dynamic-subdomains) are not supported for High throughput.
+
+  * **Personalized PDF attachments** - Not supported when High throughput traffic is routed through the secondary region. [Learn more about personalized PDF attachments](../email/pdf-attachments.md#personalized-attachments)
+
 * **Push notifications**:
 
   * **Web push** — High throughput web push campaigns run on shared infrastructure and do not benefit from the dedicated capacity reserved for High throughput mobile push.
@@ -121,36 +120,83 @@ In other words:
   * You can pass all personalization in the API payload.  
   * You want to use the Email or Push channel.
 
-## Setup guidelines {#setup-guidelines}
+## Prerequisite {#prerequisite}
 
+After purchasing the **High throughput transactional messaging** add-on, contact Adobe Customer Care or your Adobe representative so that the required backend activation <!--and one-time setup -->can be completed.
 
-### Prerequisites {#prerequisites}
+>[!NOTE]
+>
+>You only need to do this once, not for each channel configuration.
 
-After purchasing the High throughput transactional messaging add-on, contact Adobe Customer Care or your Adobe representative so that the required backend activation and one-time setup can be completed. You only need to do this once, not for each campaign or channel configuration.
+## Set up High throughput API-triggered email campaigns {#setup-guidelines}
 
-### Configure High throughput resources {#configuration-guidelines}
-
-To configure High throughput campaigns correctly, follow these guidelines:
-
-1. **Create a dedicated High throughput IP pool** - When you create the IP pool, enable the High throughput option. [Learn how to create IP pools](../configuration/ip-pools.md)
-1. **Create a High throughput email channel configuration** - Enable the High throughput toggle and select the High throughput IP pool you created. Only High throughput IP pools are listed. [Learn how to set up channel configurations](../configuration/channel-surfaces.md)
-
-    ![High throughput email channel configuration](assets/high-throughput-email-config.png)
-  
-1. **Use the configuration in High throughput campaigns only** - When you create a High throughput API-triggered campaign, only High throughput channel configurations are available for selection.
+To use High throughput email campaigns, follow the steps below.
 
 >[!IMPORTANT]
 >
 >The IP pool and channel configurations designated for High throughput transactional messages must be used exclusively for that purpose, and not be used with standard transactional messaging using API-triggered campaigns or journeys.
 
+The flow described above applies to the email channel only.
+
+>[!NOTE]
+>
+>Push channel setup remains a manual on-demand process. [Learn more](#setup-push)
+
+### Create a dedicated IP pool {#create-ip-pool}
+
+High throughput requires a dedicated IP pool because it is built to maintain high availability and performance across two regions.
+
+When you purchase the High throughput add-on, sending IPs are provisioned in a secondary region, in addition to the IPs allocated to you in your primary region.
+
+* **Failover** - If the primary region becomes unavailable, all High throughput traffic automatically switches to the secondary region, so your transactional messages keep being delivered.
+* **IP warm-up** - To make sure the secondary region IPs are ready when needed, part of your High throughput traffic is routed through the secondary region on an ongoing basis. This keeps these IPs warm. Sending from IPs with no sending history could cause internet service providers (ISPs) to reject your emails.
+
+Create the IP pool as follows.
+
+>[!NOTE]
+>
+>This IP pool is exclusively for High throughput traffic. You cannot use it in channel configurations that are not designated for High throughput API-triggered campaigns.
+
+1. Create an IP pool. [Learn how](../configuration/ip-pools.md)
+
+1. Select the **[!UICONTROL Enable high-throughput]** option. 
+
+1. Select one or more secondary region IPs for the dedicated IP pool. This ensures high availability for your High throughput traffic.
+
+    ![IP pool creation screen with the Enable high-throughput option selected](../configuration/assets/ip-pool-high-throughput.png)
+
+The dedicated IP pool is now ready for use with High throughput channel configurations.
+
+### Create a High throughput email channel configuration {#configuration-guidelines}
+
+1. Create an **email** channel configuration. [Learn how](../configuration/channel-surfaces.md)
+
+1. Select the **[!UICONTROL Transactional]** email type in the **[!UICONTROL Email settings]**.
+
+1. Enable the **[!UICONTROL Create as a High throughput configuration]** toggle.
+
+    ![High throughput email channel configuration](assets/high-throughput-email-config.png)
+
+1. In the **[!UICONTROL IP pool details]** section, select the High throughput IP pool you created. Only High throughput IP pools are listed.
+
+1. Sumbmit the channel configuration.
+
+Your High throughput email channel configuration is now ready for use in a High throughput API-triggered campaign.
+
 >[!CAUTION]
 >
 >The type of an IP pool or channel configuration cannot be changed after creation. A standard resource cannot be converted to High throughput, and a High throughput resource cannot be converted back to standard.
 
+When you create a High throughput API-triggered campaign, only High throughput channel configurations are available for selection.
+
+## Set up High throughput push campaigns {#setup-push}
+
+For push, setup remains a manual on-demand process.
+
+You must create a new push channel configuration and contact Adobe Customer Care to request the activated push channel configuration to be mapped to the High throughput capability.
+
+Provide the channel configuration details along with your organization ID.
+
 >[!NOTE]
 >
->The High throughput IP pool and channel configuration flow described above applies to the email channel. For push, setup remains a manual process: contact Adobe Customer Care.
-
-## High availability {#high-availability}
-
-To maintain high availability, High throughput uses a secondary region. When you purchase the High throughput add-on, a secondary setup is provisioned automatically alongside your primary resources, and part of your High throughput traffic is routed through the secondary region.
+>The High throughput IP pool and channel configuration flow described above applies to the email channel only.
