@@ -18,7 +18,7 @@ feature_v2:
 
 # Pre-release notes {#e-release-notes}
 
-Adobe Journey Optimizer continuously delivers new features, enhancements to existing features, and bug fixes. Upcoming changes are listed in the **Coming soon** accordions of the [release notes](release-notes.md), and all changes are consolidated at the end of each month in the same page.
+Adobe Journey Optimizer publishes pre-release notes ahead of each monthly release to give you an early look at the new capabilities and improvements planned for that release. After the release, all changes are consolidated in the [release notes](release-notes.md).
 
 ## October '26 pre-release notes {#oct-26-rn}
 
