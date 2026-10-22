@@ -200,3 +200,5 @@ Provide the channel configuration details along with your organization ID.
 >[!NOTE]
 >
 >The High throughput IP pool and channel configuration flow described above applies to the email channel only.
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-api-triggered-high-throughput.md}}

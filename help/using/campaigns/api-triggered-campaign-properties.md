@@ -77,3 +77,5 @@ To create a new API triggered campaign, follow these steps:
 ## Next steps {#next}
 
 Once your campaign configuration and content are ready, you can configure its action. [Learn more](api-triggered-campaign-action.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-api-triggered-campaign-properties.md}}

@@ -107,3 +107,5 @@ For more information on performances when using Rapid delivery mode, refer to [A
 ## Next steps {#next}
 
 Once your campaign configuration and content are ready, you can design its content. [Learn more](api-triggered-campaign-content.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-api-triggered-campaign-action.md}}
