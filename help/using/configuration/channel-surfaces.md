@@ -129,12 +129,6 @@ To create a channel configuration, follow these steps:
     >You cannot proceed with email configuration creation while the selected IP pool is under [edition](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status), and has never been associated with the selected subdomain. [Learn more](#subdomains-and-ip-pools)
     >
     >Save the configuration as draft and wait until the IP pool has the **[!UICONTROL Success]** status to resume configuration creation.
-    
-    >[!NOTE]
-    >
-    >For **email** configurations used with High Throughput API triggered campaigns, enable the High Throughput toggle and select a high throughput IP pool (only high throughput IP pools are listed). A high throughput configuration is only available in High Throughput campaigns, and standard configurations are not available in those campaigns. The type of a configuration cannot be changed after creation.
-    >
-    >High throughput configurations do not support contextual or profile-based personalization (there is no personalization editor), [Message Export](message-export.md), or dynamic subdomains. [Learn more about High Throughput setup](../campaigns/api-triggered-high-throughput.md#setup-guidelines)
 
 1. Once the channel configuration has been created, it displays in the list with the **[!UICONTROL Processing]** status.
 
