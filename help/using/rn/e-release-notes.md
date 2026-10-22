@@ -41,8 +41,7 @@ The following capabilities and improvements are coming to channels in this relea
 <tbody>
 <tr>
 <td>
-<p>When building your journeys and campaigns, you can now override the email parameters derived from the selected channel configuration directly at the journey or campaign action level.</p>
-<p>This lets you personalize the email header fields (From name, From email prefix, Reply to name, and Reply to email), the execution address, and the list-unsubscribe values, using profile attributes or contextual data for more precise control. In particular, this allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.</p>
+<p>Email header fields and delivery settings can now be overridden at the journey or campaign action level, without requiring a separate channel configuration. From name, From email prefix, Reply-To, recipient address, and list-unsubscribe values can each be set using profile attributes or contextual data.</p><p>This change allows each individual journey or campaign to carry its own sender identity, useful when the same channel configuration serves multiple programs, regions, or teams that each need a distinct From address or reply routing.</p>
 <!-- GIF placeholder: TBD -->
 <!-- Documentation link: TBD -->
 </td>
@@ -54,7 +53,9 @@ The following capabilities and improvements are coming to channels in this relea
 
 <!--* **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub One-Time Password (OTP) directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification.-->
 
-* **Suppression List Override at Email Action Level** - Journey Optimizer now lets you override suppression list behavior directly at the email action level in journeys and campaigns. This gives teams more flexibility for operational or compliance-critical communications that require a dedicated sending configuration, while preserving existing global suppression list controls for all other sends. This enhancement helps organizations handle exception scenarios with precision without changing their broader suppression governance model. <!-- Documentation link: TBD -->
+* **Suppression List Override at Email Action Level** - Journey Optimizer now includes a per-action toggle that allows delivery to locally-suppressed addresses for a specific email action in a journey or campaign. This is designed for compliance scenarios where a communication must be demonstrably attempted, such as a required notification to an address that has previously bounced.
+
+  The toggle is off by default and requires explicit confirmation to enable. It applies to the local suppression list only; the global suppression list and all consent and opt-out handling remain unchanged. <!-- Documentation link: TBD -->
 
 * **Reporting webhooks available for custom channels** - You can now define a reporting webhook for a custom outbound channel and attach it to a channel configuration. Use it to enrich your Journey Optimizer reports with interaction events. <!-- Documentation link: TBD -->
 
@@ -62,7 +63,9 @@ The following capabilities and improvements are coming to channels in this relea
 
 The following improvements are coming to orchestrated campaigns in this release.
 
-* **Increase AJO message activity limit to 25** - An orchestrated campaign can now contain up to 25 message actions, such as email, push notification, or SMS sends, on its canvas. You can now build a larger campaign as one campaign instead of splitting it into several smaller ones. <!-- Documentation link: TBD -->
+* **Increased message activity limit for orchestrated campaigns** - Orchestrated campaigns now support up to 25 message actions on a single canvas, up from the previous limit of 10. This allows complex cross-channel orchestrations, spanning email, push, SMS, and other channels, to be built and managed as a single campaign rather than split across multiple smaller ones.
+
+  For enterprise teams running sophisticated multi-step programs, this reduces operational overhead and simplifies publication and rollback handling when managing large campaign launches. <!-- Documentation link: TBD -->
 
 * **Personalize email list unsubscribe in orchestrated campaigns (Limited Availability)** - Orchestrated campaigns now support personalization of list unsubscribe email parameters, using profile attributes or relational data. Header values can be set at the channel level and overridden per campaign using contextual data for more precise control. This capability is available in Limited Availability. Contact your Adobe representative to request access. <!-- Documentation link: TBD -->
 
