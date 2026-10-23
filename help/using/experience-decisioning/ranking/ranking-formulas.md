@@ -53,7 +53,7 @@ This approach allows you to dynamically adjust offer ranking based on any combin
 
 >[!TIP]
 >
->You can also create, explain, simulate, and optimize ranking formulas conversationally using the **Rules & Ranking** skill in [Coworker for Decisioning](../experience-decisioning-coworker-skills.md#rules-ranking).
+>You can also create, explain, simulate, and optimize ranking formulas conversationally using the **Decisioning Rule Workflow** skill in [Coworker for Decisioning](../experience-decisioning-coworker-skills.md#rules-ranking).
 
 Once a ranking formula has been created, you can assign it to a [selection strategy](../selection-strategies.md). If multiple offers are eligible to be presented when using this selection strategy, the decisioning engine will use the selected formula to calculate which offer to deliver first.
 

@@ -141,6 +141,10 @@ Check the following:
 * Is it due to a condition excluding the person? For example, the condition is "gender = male" and the person is a woman. This check can be performed by a business user if the condition is not too complex.
 * Is it due to a call to a data source not responding? When the journey is in test, this information can be seen in test mode logs. When the journey is live, an administrator can test direct calls to the data source and check the answer received. An administrator can also duplicate the journey and test it.
 
+>[!TIP]
+>
+>You can also use the **Trace Journey Profile** skill in Coworker to investigate a published journey. Ask how many profiles entered each node and how they split across branches, which profiles errored and why, or what path a single profile followed. [Learn more about Coworker skills for journeys](journeys-coworker-skills.md#trace-journey-profile)
+
 ## Events discarded due to a blocked journey instance {#max-instance-stack-events-reached}
 
 If you see events discarded with the `maxInstanceStackEventsReached` reason, the journey runtime has reached its internal per-profile event stack limit of 10 events for a specific journey version. This is a safety guardrail that prevents too many pending events from stacking up while another event for the same profile is still being processed.

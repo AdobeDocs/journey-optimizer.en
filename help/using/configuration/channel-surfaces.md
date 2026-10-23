@@ -174,6 +174,10 @@ Once created, channel configurations can have the following statuses:
 * **[!UICONTROL Failed]**: One or several checks have failed during the channel configuration verification.
 * **[!UICONTROL Deactivated]**: The channel configuration is deactivated. It cannot be used to create new messages.
 
+>[!TIP]
+>
+>You can view, list, and inspect your channel configurations in Coworker with the [Channel Operation skill](../channels/channels-coworker-skills.md#channel-operation).
+
 ### Channel configuration failure reasons {#channel-config-failure}
 
 In case a channel configuration creation fails, the details on each possible failure reason are described below.

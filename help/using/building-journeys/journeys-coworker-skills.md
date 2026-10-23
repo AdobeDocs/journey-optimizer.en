@@ -21,11 +21,11 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Explore Coworker capabilities in Adobe Journey Optimizer for creating journeys, generating channel content, analyzing performance and journey inventory hygiene, and simulating journey behavior.
+**On this page:** Explore Coworker capabilities in Adobe Journey Optimizer for creating journeys, generating channel content, analyzing performance and journey inventory hygiene, tracing profiles through a journey, and simulating journey behavior.
 
 >[!ENDSHADEBOX]
 
-Coworker brings natural-language tools into Adobe Journey Optimizer to help you create and configure journeys, generate channel-specific content, analyze performance, and simulate journey behavior. Use Journey Create to configure flows, Channel Content Create to generate and refine messages, Journey Analyze to investigate performance, operational issues, and inventory hygiene, and Journey Simulation to test journey logic.
+Coworker brings natural-language tools into Adobe Journey Optimizer to help you create and configure journeys, generate channel-specific content, analyze performance, trace profiles through a journey, and simulate journey behavior. Use Journey Create to configure flows, Channel Content Create to generate and refine messages, Journey Analyze to investigate performance, operational issues, and inventory hygiene, Trace Journey Profile to see how profiles moved through a published journey, and Journey Simulation to test journey logic.
 
 Learn more:
 
@@ -196,6 +196,31 @@ To maximize the effectiveness of Journey Analyze, follow these best practices:
 * **Define Clear Objectives**: Before analyzing journeys, establish clear goals (e.g., improving retention, increasing conversions).
 * **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 * **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
+
+## Trace Journey Profile {#trace-journey-profile}
+
+Trace Journey Profile is a read-only skill that returns profile-level execution data for a published journey, based on journey step events. Use it to see how profiles moved through a journey, which profiles errored and why, or the path of a single profile from node to node.
+
+### Key use cases
+
+<table style="table-layout: fixed; width: 100%; border-collapse: collapse; border: 1px solid #d9d9d9;">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<tr><th style="padding: 12px; border: 1px solid #d9d9d9; background-color: #f5f5f5; text-align: left; vertical-align: top;">Use Case</th><th style="padding: 12px; border: 1px solid #d9d9d9; background-color: #f5f5f5; text-align: left; vertical-align: top;">Sample Prompts</th></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Node and branch counts</strong><br>See, for each node, how many profiles entered and how many stopped there. See how profiles split across the branches of a node, as counts and percentages.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Trace profiles through [Journey Name]."<br><br>"How many profiles reached each step of [Journey Name] this week?"<br><br>"How many profiles entered the 'Loyalty Tier Check' node in [Journey Name] and how did they split?"</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Errored-profile lookup</strong><br>Find which profiles errored in a journey over a given period (for example, the last 7 days), at which node, and why.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Which profiles errored in [Journey Name] in the last 7 days, at which node, and why?"</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Single-profile trace</strong><br>Follow a profile's node-by-node path through a journey, with timestamps, the attribute value evaluated at each condition node, and the exit point and reason.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Show me profile [ID or email]'s path through [Journey Name], including why it went down each branch."<br><br>"Trace this profile through the Welcome journey."</td></tr>
+</table>
+
+The errored-profile lookup and the single-profile trace return profile-level data.
+
+### Limitations
+
+* Trace Journey Profile works on published journeys only. It does not support journeys that were never published (draft-only) or B2B journeys.
+* It is read-only. It does not export lists or edit journeys.
+* For fallout analysis, volume anomalies, or custom action error trends, use [Journey Analyze](#journey-analyze).
 
 ## Journey Simulation {#journey-simulation}
 
