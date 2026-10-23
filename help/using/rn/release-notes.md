@@ -161,9 +161,9 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
   Availability date: October 20, 2026
 
-* **Journey execution timeline skill** - For Read Audience journeys only, Coworker now analyzes execution timing: execution duration, P95 and P99 latency, export-job-creation-to-first-profile latency, and latency by journey, version and recurrence. It identifies the slowest versions and runs.
+* **Trace Journey Profile skill** - CX Coworker can now return read-only, profile-level execution data for a published journey. Check how many profiles entered each node and how they split across branches, find which profiles errored and why, or follow a single profile's node-by-node path through the journey. [Learn more](../building-journeys/journeys-coworker-skills.md#trace-journey-profile)
 
-  Availability date: October 1, 2026
+  Availability date: October 22, 2026
 
 +++ Coming soon — **Information below is subject to change.**
 
