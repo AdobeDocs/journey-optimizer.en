@@ -76,6 +76,8 @@ Creating a challenge involves the following steps:
 
    After selecting a challenge type, the challenge editor opens with these tabs: **[!UICONTROL Settings]**, **[!UICONTROL Structure]**, **[!UICONTROL Content]**, and **[!UICONTROL Messaging]**. Start with **[!UICONTROL Settings]** to define challenge details, audience, schedule, and rules. Then configure **[!UICONTROL Structure]** (tasks and rewards) for all types except **[!UICONTROL Bring your own data]**.
 
+   Your changes are saved automatically a couple of seconds after you stop editing. Challenge start and end dates are optional while you work on a draft, but they are required to publish the challenge.
+
 ## Configure challenge settings {#settings}
 
 In the **[!UICONTROL Settings]** tab, configure challenge-level properties: who can participate, when the challenge runs, how members opt in and earn progress, and optional metadata.
@@ -371,7 +373,7 @@ You have two options for launching your challenge:
 
 ### Publish the challenge {#publish-challenge}
 
-1. Review your challenge configuration to ensure all required fields are completed.
+1. Review your challenge configuration. Your changes are saved automatically.
 
 1. Click the ![](assets/do-not-localize/Smock_More_18_N.svg) icon next to the **[!UICONTROL Generate Journey]** button and select **[!UICONTROL Publish]**.
 
@@ -381,9 +383,13 @@ You have two options for launching your challenge:
 
    When you are ready to deliver the challenge to customers, you can generate the associated journey. For more information, see [Generate the journey](#generate-journey).
 
+   >[!NOTE]
+   >
+   >If a required field is missing when you publish the challenge or generate the journey, an inline notification lists what is missing. The tabs that contain missing information display a red dot, and the missing fields are highlighted in an error state. Complete these fields, then publish or generate the journey again.
+
 ### Generate the journey {#generate-journey}
 
-1. Review your challenge configuration to ensure all required fields are completed.
+1. Review your challenge configuration. Your changes are saved automatically.
 
 1. Select **[!UICONTROL Generate Journey]** to automatically publish the challenge and create the journey that will orchestrate your challenge delivery.
 

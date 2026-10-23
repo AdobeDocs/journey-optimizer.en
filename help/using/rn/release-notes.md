@@ -221,6 +221,10 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
   Availability date: October 1, 2026
 
+* **Autosave for challenge drafts** - Challenge edits in Loyalty are now saved automatically as you work, so you can publish a challenge or generate a journey without saving first. [Learn more](../loyalty-challenges/create-challenges.md)
+
+  Availability date: October 1, 2026
+
 ### Integrations {#oct-26-integrations}
 
 +++ Coming soon — **Information below is subject to change.**
