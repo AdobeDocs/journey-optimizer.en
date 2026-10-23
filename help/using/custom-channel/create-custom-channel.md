@@ -42,7 +42,7 @@ level_v2:
 
 <!--Contextual help final location TBC (here or in Settings subsection-->
 
-To be able to use a custom channel in campaigns and journeys, an administrator must first create the channel. This involves defining the endpoint, authentication, throttling policy, and message payload structure.
+To be able to use a custom channel in campaigns and journeys, an administrator must first create the channel. This involves defining the endpoint, authentication, throttling policy, and message payload structure. You can create the channel manually in the Channel Builder, as described below, or with the [Channel Builder skill in Coworker](../channels/channels-coworker-skills.md#channel-builder).
 
 The **Channel Builder** section is the central interface for defining new custom channels. <!--It is accessible to users with the **[!UICONTROL Administrator]** role. -->It enables you to create and configure custom channels, but also manage API credentials, and delegate subdomains.
 

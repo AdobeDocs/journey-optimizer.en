@@ -59,6 +59,22 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
 ## October '26 updates {#oct-26-updates}
 
+>[!BEGINSHADEBOX]
+
++++**New in Coworker this month**
+
+This release brings several new and improved [Coworker](../start/ai-features.md#cx-coworker) features and skills, listed here for visibility. Each one is also detailed in its relevant section below.
+
+* [Channel Builder skill](#oct-26-channels) - Create, test, and manage custom channels by chatting with Coworker, with guided channel configuration, authentication, throttling, and payload definition.
+* [Business Performance Analysis skill](#oct-26-journeys) - Analyze journey performance and get concrete optimization recommendations in Coworker chat.
+* [Journey Hygiene Analysis skill](#oct-26-journeys) - Scan journeys for configuration hygiene issues and get suggested fixes in chat.
+* [Trace Journey Profile skill](#oct-26-journeys) - Get read-only, profile-level execution data for a published journey, from node and branch counts to a single profile's path.
+* [Decisioning rule generation skill](#oct-26-decisioning) - Generate, simulate, and optimize eligibility rules and ranking formulas in natural language, without writing PQL by hand.
+
++++
+
+>[!ENDSHADEBOX]
+
 <!-- 
 
 ### Administration {#oct-26-administration}
@@ -111,6 +127,10 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 </tbody>
 </table>
 
+* **Channel Builder skill in Coworker to create a new custom channel** - This skill helps administrators create custom channels faster by guiding users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD -->
+
+  Availability date: October 2, 2026
+  
 ### Journeys {#oct-26-journeys}
 
 <table>
