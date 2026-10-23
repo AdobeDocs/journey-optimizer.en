@@ -34,6 +34,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 ## October 2026 {#october-2026}
 
 * A new **Choose a consent level for opt-outs** page explains the difference between the **Channel** and **Identity** consent levels, with an example and guidance on which to choose. The **List unsubscribe** and **Manage email opt-out** pages now link to it. [Read more](../email/consent-level.md)
+* The **Frequency capping**, **Quiet hours**, and **Rule sets** pages now list custom channels among the channels supported by business rules. [Read more](../conflict-prioritization/channel-capping.md)
 
 * A new **Troubleshooting overview** page and 14 error pages give the cause and the fix for each error code, grouped by feature area: Journeys, Campaigns, Content, and Configuration. Related feature pages now link to the matching error page. [Read more](../../rp_landing_pages/troubleshooting-overview-landing-page.md)
 

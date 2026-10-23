@@ -69,7 +69,7 @@ From the Challenges tab, you can perform actions on challenges:
 
 * **Edit a challenge**: Select the challenge name to open its details page and make the desired changes.
 
-  When you open a published challenge for editing, you first need to revert it to Draft state. Any customizations made directly to the auto-generated journey will be lost. After making your changes, save and publish the challenge again, then publish the associated journey. [Learn how to launch a challenge](create-challenges.md#launch)
+  When you open a published challenge for editing, you first need to revert it to Draft state. Any customizations made directly to the auto-generated journey will be lost. Your changes are saved automatically. After making your changes, publish the challenge again, then publish the associated journey. [Learn how to launch a challenge](create-challenges.md#launch)
 
   >[!IMPORTANT]
   >

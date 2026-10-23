@@ -314,6 +314,7 @@ nudge: yes
     + [Troubleshooting FAQ](using/start/troubleshooting.md)
 + Communication channels {#channels}
   + [Get started with communication channels](using/channels/gs-channels.md)
+  + [Coworker for channels](using/channels/channels-coworker-skills.md)
   + {hide-from-toc} [Destinations channel](using/destinations/destinations.md)
   + Email channel {#email}
     + [Email channel](/help/rp_landing_pages/email-landing-page.md)

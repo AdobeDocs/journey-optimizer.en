@@ -59,6 +59,22 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
 ## October '26 updates {#oct-26-updates}
 
+>[!BEGINSHADEBOX]
+
++++**New in Coworker this month**
+
+This release brings several new and improved [Coworker](../start/ai-features.md#cx-coworker) features and skills, listed here for visibility. Each one is also detailed in its relevant section below.
+
+* [Channel Builder skill](#oct-26-channels) - Create, test, and manage custom channels by chatting with Coworker, with guided channel configuration, authentication, throttling, and payload definition.
+* [Business Performance Analysis skill](#oct-26-journeys) - Analyze journey performance and get concrete optimization recommendations in Coworker chat.
+* [Journey Hygiene Analysis skill](#oct-26-journeys) - Scan journeys for configuration hygiene issues and get suggested fixes in chat.
+* [Trace Journey Profile skill](#oct-26-journeys) - Get read-only, profile-level execution data for a published journey, from node and branch counts to a single profile's path.
+* [Decisioning rule generation skill](#oct-26-decisioning) - Generate, simulate, and optimize eligibility rules and ranking formulas in natural language, without writing PQL by hand.
+
++++
+
+>[!ENDSHADEBOX]
+
 <!-- 
 
 ### Administration {#oct-26-administration}
@@ -111,6 +127,10 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 </tbody>
 </table>
 
+* **Channel Builder skill in Coworker to create a new custom channel** - This skill helps administrators create custom channels faster by guiding users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD -->
+
+  Availability date: October 2, 2026
+  
 ### Journeys {#oct-26-journeys}
 
 <table>
@@ -161,9 +181,9 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
   Availability date: October 20, 2026
 
-* **Journey execution timeline skill** - For Read Audience journeys only, Coworker now analyzes execution timing: execution duration, P95 and P99 latency, export-job-creation-to-first-profile latency, and latency by journey, version and recurrence. It identifies the slowest versions and runs.
+* **Trace Journey Profile skill** - CX Coworker can now return read-only, profile-level execution data for a published journey. Check how many profiles entered each node and how they split across branches, find which profiles errored and why, or follow a single profile's node-by-node path through the journey. [Learn more](../building-journeys/journeys-coworker-skills.md#trace-journey-profile)
 
-  Availability date: October 1, 2026
+  Availability date: October 22, 2026
 
 +++ Coming soon — **Information below is subject to change.**
 
@@ -205,9 +225,23 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
 +++
 
+### Decisioning {#oct-26-decisioning}
+
+* **Decisioning rule generation skill in Coworker** - Use natural language in Coworker to generate, simulate, and optimize eligibility rules and ranking formulas for Adobe Journey Optimizer Decisioning. Marketers can create, validate, and test decisioning logic faster, enabling smarter personalization and more time spent optimizing outcomes without requiring PQL syntax expertise. [Learn more](../experience-decisioning/experience-decisioning-coworker-skills.md#rules-ranking)
+
+  Availability date: October 22, 2026
+
 ### Loyalty {#oct-26-loyalty}
 
 * **Performance settings in Loyalty configurations** - Use the **Performance settings** tab to select your loyalty profile and event datasets and configure your organization's priority **Key performance indicator** for loyalty insights. Choose Revenue, Engagement, Redemptions, or Conversions to determine which insights receive emphasis in your feed. [Learn more](../loyalty-challenges/loyalty-admin.md#performance-settings)
+
+  Availability date: October 1, 2026
+
+* **Streak challenge configuration update** - The non-consecutive option has been removed when creating Streak challenges. Streak challenges now use the **Task completion requirements** drop-down to require either one task or all tasks together to be completed on consecutive days. [Learn more](../loyalty-challenges/create-challenges.md)
+
+  Availability date: October 1, 2026
+
+* **Autosave for challenge drafts** - Challenge edits in Loyalty are now saved automatically as you work, so you can publish a challenge or generate a journey without saving first. [Learn more](../loyalty-challenges/create-challenges.md)
 
   Availability date: October 1, 2026
 
