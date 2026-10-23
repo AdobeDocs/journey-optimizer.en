@@ -61,9 +61,11 @@ An anonymous landing page is created like any other landing page, with a few spe
 
 1. Select a preset. [Learn how to create landing page presets](lp-presets.md#lp-create-preset)
 
-1. Select **[!UICONTROL Data Capture]** as the type of landing page. Only Data Capture landing pages let you embed a specific form.
+1. Select **[!UICONTROL Data Capture]** as the type of landing page. 
 
-    <!-- TBC (engineering): the type selection is not visible in the GIF. Confirm that anonymous landing pages are Data Capture landing pages (inferred from the embedded form) and where the type is selected. -->
+    >[!NOTE]
+    >
+    >Only [Data Capture landing pages](get-started-lp.md#data-capture-lp) let you embed a specific form.
 
 1. Click **[!UICONTROL Create]**. The primary page and its properties display.
 
