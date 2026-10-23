@@ -227,13 +227,12 @@ To add tasks to your challenge, follow these steps:
 
    +++Streak challenges
 
-   In the **[!UICONTROL Streak type]** drop-down, choose between:
+   In the **[!UICONTROL Task completion requirements]** drop-down, choose between:
 
-      * **Consecutive**: Customers must complete the task on consecutive days without breaks. *Example: Purchase on Monday, Tuesday, Wednesday—missing a day breaks the streak.*
+      * **[!UICONTROL Customer completes 1 task multiple times]** - *Customers must complete the same task on consecutive days without breaks. Example: Purchase on Monday, Tuesday, Wednesday—missing a day breaks the streak.*
+      * **[!UICONTROL Customer completes all tasks together multiple times]** - *Customers must complete all the selected tasks together on consecutive days without breaks.*
 
-      * **Non-consecutive**: Customers can complete the task with gaps between completions. *Example: Complete 7 purchases over 30 days, with breaks allowed.*
-
-   In the **[!UICONTROL Streak length]** field, specify how many times the task must be completed. *Example: Set to 7 for a "7-day purchase streak."*
+   In the **[!UICONTROL Streak length]** field, specify the number of consecutive days the requirement must be met. *Example: Set to 7 days for a "7-day purchase streak."*
 
    +++
 

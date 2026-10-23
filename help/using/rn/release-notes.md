@@ -217,6 +217,10 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
   Availability date: October 1, 2026
 
+* **Streak challenge configuration update** - The non-consecutive option has been removed when creating Streak challenges. Streak challenges now use the **Task completion requirements** drop-down to require either one task or all tasks together to be completed on consecutive days. [Learn more](../loyalty-challenges/create-challenges.md)
+
+  Availability date: October 1, 2026
+
 ### Integrations {#oct-26-integrations}
 
 +++ Coming soon — **Information below is subject to change.**
