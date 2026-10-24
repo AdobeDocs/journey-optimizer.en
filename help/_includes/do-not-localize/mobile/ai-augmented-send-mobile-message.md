@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Check and send your Mobile message — Acronym: n/a — variants: preview and send SMS
+* Canonical name: Check and send your Mobile message — variants: preview and send SMS
 * Simulation modes (both present on this page): "Simulate content" (test content variations with sample input data or AI auto-generation) and "Simulate content (AEP profiles)" (preview with test profiles)
 * Do not confuse: "Warnings" (recommendations and best practices; do not block) ≠ "Errors" (prevent testing, activating, or publishing until resolved)
 * Do not confuse: "Validation" (calculates maximum possible length across all profile data) ≠ "Simulation" (shows actual output for one test profile)

@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: settings, email, configuration, sender header, SMTP
 exl-id: e1556c25-9c79-4362-a5a9-0a46425fa8d9
-TQID: https://experienceleague.adobe.com/SKYkdRHCsbMq6sD1phQHt0TCqy2kLUb26dT-BZHSWEA
+TQID: 'https://experienceleague.adobe.com/SKYkdRHCsbMq6sD1phQHt0TCqy2kLUb26dT-BZHSWEA'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -23,9 +23,14 @@ subfeature_v2:
     internal-label: Subdomains
   - id: fae48155-b23f-40d2-a252-a25bce350b4d
     internal-label: Email configuration
+  - id: 38b66663-ea7b-5c28-aa45-6a882ffbe560
+    internal-label: Surface
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization

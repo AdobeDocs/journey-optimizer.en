@@ -90,6 +90,8 @@ Depending on the journey's status, you can perform different actions on your jou
 
 ![Journey action buttons: Publish, Duplicate, Delete, Test mode, Manage access, Alerts](assets/journey41.png)
 
+For a **[!UICONTROL Draft]** journey, the **[!UICONTROL Validate]** button in the journey header runs configuration checks before testing, simulation, a dry run, publication, or an approval request. It replaces **[!UICONTROL Publish]** until the journey has a current, passed validation. Review errors and warnings in the Alerts panel, resolve any errors, and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
+
 ## New journey canvas experience {#canvas-capabilities}
 
 A **new user interface** is available for the journey canvas, built to scale with your most complex use cases:
@@ -143,7 +145,7 @@ To see an activity more closely, click its thumbnail. The content opens in a cen
 
 ![Preview of an email activity's content in a centered frame](assets/journey-canvas-content-preview-email.png)
 
-The preview adapts to each channel. For example, mobile and SMS messages display in a device mockup.
+The preview adapts to each channel. For example, mobile messages display in a device mockup.
 
 ![Preview of a mobile message activity's content in a centered frame](assets/journey-canvas-content-preview-message.png)
 
@@ -266,7 +268,7 @@ The other activities allow you to add conditions to your journey to define sever
 
 ### Actions{#jo-actions}
 
-Actions are what you want to happen as result of some kind of trigger, like sending a message. It is the piece of journey that the customer experiences. This could be an email, SMS or Push message, or a third-party action, such as a Slack message.
+Actions are what you want to happen as result of some kind of trigger, like sending a message. It is the piece of journey that the customer experiences. This could be an email, mobile or Push message, or a third-party action, such as a Slack message.
 
 The channel action activities allows you to include a message designed in [!DNL Journey Optimizer]. [Learn more about the channel action activities](journey-action.md)
 

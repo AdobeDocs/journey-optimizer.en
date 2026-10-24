@@ -9,13 +9,15 @@ role: Developer
 level: Intermediate
 keywords: expression, editor, handlebars, iteration, arrays, context, personalization
 exl-id: 1a7c490f-6490-4785-a44d-bddd5482754d
-TQID: https://experienceleague.adobe.com/fOnI9VWpgrFCfUhnvkaiK-Ecsa-LOn8YJpdWZNnQilY
+TQID: 'https://experienceleague.adobe.com/fOnI9VWpgrFCfUhnvkaiK-Ecsa-LOn8YJpdWZNnQilY'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
     internal-label: Build expressions
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
 subfeature_v2:
   - id: f0577040-fadd-46a1-b0ae-9c7f828bb2da
     internal-label: Collection management functions
@@ -45,7 +47,7 @@ Learn how to use Handlebars iteration syntax to display dynamic lists of data fr
 
 ## Overview {#overview}
 
-Journey Optimizer provides access to contextual data from multiple sources during [message personalization](personalize.md). You can iterate over arrays from these sources using Handlebars syntax in native channels ([email](../email/get-started-email-design.md), [push](../push/create-push.md), [SMS](../mobile/create-mobile-message.md)) to display dynamic content like product lists, recommendations, or other repeating elements.
+Journey Optimizer provides access to contextual data from multiple sources during [message personalization](personalize.md). You can iterate over arrays from these sources using Handlebars syntax in native channels ([email](../email/get-started-email-design.md), [push](../push/create-push.md), [mobile message](../mobile/create-mobile-message.md)) to display dynamic content like product lists, recommendations, or other repeating elements.
 
 **Available context sources:**
 
@@ -1072,6 +1074,6 @@ Use [journey test mode](../building-journeys/testing-the-journey.md) to verify y
 
 **Personalization use cases:** [Cart abandonment email](personalization-use-case-helper-functions.md) | [Order status notification](personalization-use-case.md)
 
-**Message design:** [Get started with email design](../email/get-started-email-design.md) | [Create push notifications](../push/create-push.md) | [Create SMS messages](../mobile/create-mobile-message.md) | [Preview and test your content](../content-management/preview-test.md)
+**Message design:** [Get started with email design](../email/get-started-email-design.md) | [Create push notifications](../push/create-push.md) | [Create mobile messages](../mobile/create-mobile-message.md) | [Preview and test your content](../content-management/preview-test.md)
 
 {{$include /help/_includes/do-not-localize/personalization/ai-augmented-iterate-contextual-data.md}}

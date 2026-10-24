@@ -31,7 +31,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* You can add up to 30 fragments in a given delivery.
+* You can add up to 60 unique fragments per variant, and up to 120 distinct fragments across all variants of a multilingual message.
 * Fragments can only be nested up to 1 level.
 * Nesting fragments with conditional content is not supported: you cannot place a fragment containing conditional content inside an unlocked fragment that also contains conditional content (can cause loss of conditional content variant mappings, compatibility mode warnings, and inconsistent email rendering).
 * You can add any Draft or Live fragment to your content, but you cannot activate the journey or campaign if a fragment with Draft status is used in it; at publication, draft fragments show an error and must be approved.
@@ -50,7 +50,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: How many fragments can I add to a delivery?** — Up to 30 fragments in a given delivery.
+* **Q: How many fragments can I add to a delivery?** — Up to 60 unique fragments per variant, and up to 120 distinct fragments across all variants of a multilingual message.
 * **Q: How deeply can fragments be nested?** — Fragments can only be nested up to 1 level.
 * **Q: Can I use a Draft fragment in my content?** — Yes, you can add any Draft or Live fragment, but you cannot activate the journey or campaign while a Draft fragment is used; draft fragments show an error at publication and must be approved.
 * **Q: Can I nest fragments that contain conditional content?** — No. Nesting fragments with conditional content is not supported and can cause loss of variant mappings, compatibility mode warnings, and inconsistent email rendering.

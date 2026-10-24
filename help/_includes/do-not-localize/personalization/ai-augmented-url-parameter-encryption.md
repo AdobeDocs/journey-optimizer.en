@@ -31,6 +31,7 @@ For complete understanding, this information should be combined with the documen
 
 * URL parameter encryption is currently only available for the Email channel.
 * Requires **View Key Registry** and **Manage Key Registry** permissions to access and manage keys.
+* A key must be 32 bytes (256 bits) and base64-encoded. A key name can contain only letters, numbers, and hyphens.
 * Decryption is the organization's responsibility. Journey Optimizer encrypts values at render time; the website, app, or API must decrypt parameters using the same cryptographic material and processes defined by the organization.
 * Only active keys should be used to encrypt new values in the personalization editor; revoked keys must not be used for new content.
 * Revoked keys remain visible in the registry for audit purposes; they may still be needed by the organization's systems to decrypt older payloads.
@@ -51,4 +52,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: c594ce24 -->
+<!-- ai-section-version: 1 | source-hash: 84e7cc50 -->

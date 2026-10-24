@@ -28,7 +28,6 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* The data source configuration is always performed by a technical user.
 * A data source configuration is not required if your journeys only leverage local data coming from an event payload.
 * Schema relationships are not supported for data sources.
 * Because responses are now supported, you should use custom actions instead of data sources for external data source use-cases.
@@ -45,10 +44,9 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: When is a data source configuration required?** — It is not required if your journeys only use local data coming from an event payload; it is needed when you want to retrieve additional information for conditions, personalization, custom wait, or time zone.
 * **Q: What are the two types of data sources?** — The pre-configured Adobe Experience Platform data source (built-in) and external data sources that you create.
-* **Q: How many external data sources can I create?** — You can create as many external data sources as you need.
 * **Q: Which data access strategy should I choose?** — Option 1 accesses external data via custom actions without persisting in the Data Lake, Option 2 ingests into a dataset not enabled for Profile, and Option 3 uses a profile-enabled dataset; choose based on persistence, profile enrichment, and reusability needs.
 * **Q: Are schema relationships supported for data sources?** — No, schema relationships are not supported for data sources.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 1d9c2ff0 -->
+<!-- ai-section-version: 1 | source-hash: 93dfd2dc -->

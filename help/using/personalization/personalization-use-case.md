@@ -9,7 +9,7 @@ role: Developer
 level: Intermediate
 keywords: expression, editor, use case, personalization
 exl-id: 7d9c3d31-af57-4f41-aa23-6efa5b785260
-TQID: https://experienceleague.adobe.com/TzGxWPRUHz4Hf-Acni4-LjNTpAYTjZBBt-GMxlNXQHM
+TQID: 'https://experienceleague.adobe.com/TzGxWPRUHz4Hf-Acni4-LjNTpAYTjZBBt-GMxlNXQHM'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,13 @@ feature_v2:
     internal-label: Build expressions
   - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
     internal-label: Use cases
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
+subfeature_v2:
+  - id: cb09dcb7-3367-4b63-b02c-8a1356eb876e
+    internal-label: Main functions
+  - id: a757b957-83f3-4a4d-9775-a93854f84f77
+    internal-label: Conditional instruction
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
@@ -27,11 +34,6 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-subfeature_v2:
-  - id: cb09dcb7-3367-4b63-b02c-8a1356eb876e
-    internal-label: Main functions
-  - id: a757b957-83f3-4a4d-9775-a93854f84f77
-    internal-label: Conditional instruction
 ---
 # Personalization use case: order status notification {#personalization-use-case}
 

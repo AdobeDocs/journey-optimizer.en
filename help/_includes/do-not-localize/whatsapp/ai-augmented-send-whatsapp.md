@@ -29,7 +29,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Errors prevent you from testing or activating the journey, or publishing the campaign, until they are resolved; warnings do not block.
+* Errors prevent you from testing or activating the journey, or publishing the campaign, as long as they are not resolved; warnings refer to recommendations and best practices.
 * If your campaign is subject to an approval policy, you must request approval before you can send.
 * WhatsApp interaction data is stored in the AJO - Email Tracking Experience Event Dataset under the `whatsAppChannelContext` field group.
 * To query the dataset, use the `ajo_email_tracking_experience_event_dataset` table in Query Service.
@@ -37,14 +37,13 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: WhatsApp message — Acronym: n/a — variants: WhatsApp
-* Synonyms: "Simulate content (AEP profiles)" = "preview with test profiles"
-* Do not confuse: "Warnings" (recommendations/best practices; do not block) ≠ "Errors" (block testing, activation, or publishing until resolved)
+* Do not confuse: "Warnings" (recommendations and best practices) ≠ "Errors" (prevent testing, activating, or publishing as long as they are not resolved)
 * Do not confuse: "Simulate content" (test content variations with sample input data or AI auto-generation) ≠ "Simulate content (AEP profiles)" (preview with test profiles)
 
 **FAQ:**
 
 * **Q: How can I preview my WhatsApp message?** — Click Simulate content to test variations with sample input data or AI auto-generation, or select Simulate content (AEP profiles) from the dropdown to preview with test profiles.
-* **Q: What is the difference between warnings and errors?** — Warnings are recommendations and best practices and do not block; errors prevent testing or activating the journey, or publishing the campaign, until resolved.
+* **Q: What is the difference between warnings and errors?** — Warnings refer to recommendations and best practices; errors prevent testing or activating the journey, or publishing the campaign, as long as they are not resolved.
 * **Q: How do I send my WhatsApp message?** — Complete the configuration of your journey or campaign; if an approval policy applies, request approval first.
 * **Q: Where is WhatsApp interaction data stored?** — In the AJO - Email Tracking Experience Event Dataset, under the `whatsAppChannelContext` field group.
 * **Q: How do I query WhatsApp interaction data?** — Use the `ajo_email_tracking_experience_event_dataset` table in Query Service.
@@ -52,4 +51,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 19298f05 -->
+<!-- ai-section-version: 1 | source-hash: ddf62cd4 -->

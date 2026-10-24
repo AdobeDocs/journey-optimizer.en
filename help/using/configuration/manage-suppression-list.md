@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: suppression, list, bounce, email, optimizer, quarantine
 exl-id: 430a2cd4-781d-4d37-a75d-405f5ed82377
-TQID: https://experienceleague.adobe.com/SCZngTO54cFP5nZ00bxurXYB-FTtEkKablk1Ls2SGto
+TQID: 'https://experienceleague.adobe.com/SCZngTO54cFP5nZ00bxurXYB-FTtEkKablk1Ls2SGto'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,14 +20,23 @@ feature_v2:
     internal-label: Configuration
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
 subfeature_v2:
   - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
     internal-label: Overview
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
@@ -84,6 +93,10 @@ The suppression categories are as follows:
 * **Hard**: A hard bounce indicates an invalid email address (i.e. an email address that does not exist). This involves a bounce message from the receiving email server that explicitly states that the address is invalid. The email address is immediately sent to the suppression list.
 
     When the error is the result of a spam complaint, it also falls into the **Hard** category. The email address of the recipient who issued the complaint is immediately sent to the suppression list.
+
+    >[!NOTE]
+    >
+    >Not all email providers share user-level spam complaint (feedback loop) data. In particular, **Gmail** does not, unlike Yahoo Mail or Microsoft Outlook. Gmail recipients who mark a message as spam are therefore **not** automatically added to the suppression list. To monitor Gmail deliverability, use open and click rate trends and [Google Postmaster Tools](https://postmaster.google.com/){target="_blank"}.
 
 * **Soft**: A soft bounce is a temporary email bounce that occurred for a valid email address. The email address is added to the suppression list after several retries. Soft errors send an address to the suppression list once the error counter reaches the limit threshold. [Learn more about retries](retries.md)
 

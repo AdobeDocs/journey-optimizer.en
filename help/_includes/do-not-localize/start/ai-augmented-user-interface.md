@@ -14,7 +14,7 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 
 * Sign in and navigate the four main interface areas
-* Use universal search, help and support, notifications, and language preferences in the top bar
+* Use universal search and help in the top bar; configure notifications and language preferences from your profile menu
 * Configure in-product and email notifications
 * Start a conversation with CX Enterprise Coworker from the home-page prompt; find recents and resources on the home page
 * Find capabilities organized in the left navigation
@@ -40,12 +40,12 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: What are the four main areas of the interface?** — Left navigation, top bar, home page, and main workspace.
-* **Q: How do I start a conversation with CX Enterprise Coworker?** — Enter a business goal in the home-page prompt, “What would you like to accomplish today?”
+* **Q: What are the four main areas of the interface?** — Left navigation, Top bar, Home page, and Main workspace.
+* **Q: How do I start a conversation with CX Enterprise Coworker?** — Enter a business goal in the home-page prompt, "What would you like to accomplish today?"
 * **Q: What else does the home page provide?** — Recents and links to documentation, tutorials, and support.
 * **Q: Why do I not see certain menu items or capabilities?** — Available components and capabilities depend on your permissions and licensing package; available menu items depend on your permissions and license.
 * **Q: Which languages does the interface support?** — English, French, German, Italian, Spanish, Portuguese (Brazilian), Japanese, Korean, Traditional Chinese, and Simplified Chinese. You can optionally select a second language as fallback.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 04da0852 -->
+<!-- ai-section-version: 1 | source-hash: 05157978 -->

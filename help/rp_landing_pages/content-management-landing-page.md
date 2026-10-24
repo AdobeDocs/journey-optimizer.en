@@ -5,6 +5,9 @@ title: Content management
 description: Content management
 redpen-status: CREATED_||_2025-08-12_00-44-43
 exl-id: 159ae1bf-e1bd-48c7-b91b-2ac8bdfffaf2
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Content management{#section-overview}
 
@@ -58,7 +61,7 @@ Learn how to create and manage reusable content fragments for personalization an
 
 Create Dynamic Content
 
-Use conditional rules to create dynamic, personalized content for emails, SMS, and push notifications.
+Use conditional rules to create dynamic, personalized content for emails, mobile messages, and push notifications.
 
 [Learn About Dynamic Content](dynamic-landing-page.md)
 :::
@@ -78,7 +81,7 @@ Integrate Adobe solutions like Experience Manager, Stock, and GenStudio for stre
 
 ## Additional Resources
 
-- **[Generate Content](ai-assistant-landing-page.md)** - Use AI to generate and personalize content across emails, SMS, web pages, and experiments.
+- **[Generate Content](ai-assistant-landing-page.md)** - Use AI to generate and personalize content across emails, mobile messages, web pages, and experiments.
 - **[Multilingual Content Management](content-multilingual-landing-page.md)** - Create and manage multilingual content using manual and automated translation workflows.
 - **[Content Experimentation](../using/content-management/get-started-experiment.md)** - Set up and analyze experiments to optimize audience engagement and campaign outcomes.
 - **[AI-powered, on-brand content creation in Adobe Journey Optimizer for marketers](https://experienceleague.adobe.com/en/courses/ajo-ai-powered-on-brand-content-creation-for-marketers)** - Learn how to use Adobe Journey Optimizer's AI capabilities and features to create, refine, and govern on-brand content across channels and locales.

@@ -159,7 +159,7 @@ Not all features are available for all journey types. Use this matrix to underst
 | **Channels** | | | | |
 | Email | ✅ | ✅ | ✅ | ✅ |
 | Push notifications | ✅ | ✅ | ✅ | ✅ |
-| SMS / MMS | ✅ | ✅ | ✅ | ✅ |
+| Mobile message | ✅ | ✅ | ✅ | ✅ |
 | In-app messages | ✅ | ✅ | ✅ | ✅ |
 | Web | ✅ | ✅ | ✅ | ✅ |
 | Content cards | ✅ | ✅ | ✅ | ✅ |

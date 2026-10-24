@@ -49,7 +49,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does an existing custom action not expose the jo_status_code field?** — Only newly created custom actions include it out-of-the-box; update the existing action, for example by updating the description and saving, to add it.
 * **Q: When is an action call considered in error?** — When the returned http code is greater than 2xx or an error occurs, after which the journey flows to the dedicated timeout or error branch.
 * **Q: Where can the returned payload be inspected?** — Through test mode logs, in the actionsHistory section that displays the payload returned by the external endpoint.
-* **Q: Can response payload fields be used in native channels?** — Yes, response payload fields from custom actions can be used in native channels (email, push, SMS) for message personalization.
+* **Q: Can response payload fields be used in native channels?** — Yes, response payload fields from custom actions can be used in native channels (email, push, mobile messages) for message personalization.
 
 +++
 

@@ -21,8 +21,8 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **[!DNL Customer Managed Keys] (CMK)**: Azure customer managed keys that Healthcare Shield and Privacy & Security Shield customers can leverage and apply to their data to encrypt Adobe Journey Optimizer data with their own keys *(product-specific)*
-* **Healthcare Shield**: add-on offering whose purchase enables the Customer Managed Keys functionality *(product-specific)*
-* **Privacy & Security Shield**: add-on offering whose purchase enables the Customer Managed Keys functionality *(product-specific)*
+* **Healthcare Shield**: add-on offering; the Customer Managed Keys functionality is currently available only for organizations that have purchased the Healthcare Shield or Privacy & Security Shield add-on offering *(product-specific)*
+* **Privacy & Security Shield**: add-on offering; the Customer Managed Keys functionality is currently available only for organizations that have purchased the Healthcare Shield or Privacy & Security Shield add-on offering *(product-specific)*
 * **Customer Journey Analytics (CJA)**: certain components are used in the background during CMK setup, so the CJA portion of the setup must be completed even if CJA has not been purchased *(product-specific)*
 
 **Guardrails:**
@@ -35,7 +35,6 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Customer Managed Keys — Acronym: CMK — variants: customer managed keys, Azure Customer Managed Keys
-* Do not confuse: "Healthcare Shield" ≠ "Privacy & Security Shield" (two distinct add-on offerings that each enable the CMK functionality)
 
 **FAQ:**
 
@@ -46,4 +45,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 7c08224c -->
+<!-- ai-section-version: 1 | source-hash: 2e5d86d3 -->

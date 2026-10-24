@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **Audience**: A collection of people who share similar behaviors and/or characteristics, configured and maintained on Adobe Experience Platform using the Segmentation Service and accessible in Journey Optimizer *(product-specific)*
-* **Audience Portal**: The Adobe Experience Platform area where audiences are managed, found, and explored with standardized labeling, governance controls, searchable folders, and tags *(product-specific)*
+* **Audience Portal**: The place from which you can manage, find, and explore audiences with standardized labeling, governance controls, searchable folders, and tags *(product-specific)*
 * **Segment definition**: A method of generating an audience using Adobe Experience Platform Segmentation Service, refreshed at different times depending on its evaluation type *(product-specific)*
 * **Custom upload**: An audience type imported from a CSV file *(product-specific)*
 * **Audience composition**: A composition workflow that combines existing audiences on a visual canvas using actions such as rank, split, and join to create new audiences *(product-specific)*
@@ -38,8 +38,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Audience — Acronym: n/a — variants: segment, audiences
-* Synonyms: "Audiences menu" = "Customer > Audiences"
+* Canonical name: Audience — Acronym: n/a — variants: audiences
 * Do not confuse: "Streaming segmentation" (updated in real time) ≠ "Batch segmentation" (refreshed every 24 hours) ≠ "Edge segmentation" (evaluated instantaneously on the edge)
 * Do not confuse: "Segment definition" (build a new audience definition with Segmentation Service) ≠ "Custom upload" (import an audience from a CSV file) ≠ "Audience composition" (combine existing audiences on a visual canvas)
 
@@ -52,4 +51,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 1b27bf17 -->
+<!-- ai-section-version: 1 | source-hash: bbdd91cc -->

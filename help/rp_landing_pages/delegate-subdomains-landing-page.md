@@ -5,6 +5,9 @@ title: Delegate email subdomains
 description: Delegate email subdomains
 redpen-status: CREATED_||_2025-08-11_21-07-51
 exl-id: 7df9b8e2-136a-4ffc-9243-53c7be026d81
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Delegate email subdomains{#section-overview}
 

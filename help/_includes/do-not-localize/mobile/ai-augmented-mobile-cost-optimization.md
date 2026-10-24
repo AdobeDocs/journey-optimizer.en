@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: SMS cost optimization — Acronym: n/a — variants: SMS cost best practices
+* Canonical name: SMS cost optimization — variants: SMS cost best practices (SMS is a variant of Mobile message; this page covers the SMS message type)
 * Do not confuse: "Journey Optimizer reporting" (counts the full message as one send regardless of SMS parts) ≠ "Provider reporting" (reflects the actual number of SMS parts used for delivery)
 * Do not confuse: "x/1500 count" (technical payload limit) ≠ "160-character limit" (GSM 7-bit per-message billing limit)
 * Do not confuse: "GSM 7-bit encoding" (160 characters per SMS) ≠ "UCS-2 encoding" (70 characters per SMS) ≠ "UTF-8 encoding" (supported in the editor)

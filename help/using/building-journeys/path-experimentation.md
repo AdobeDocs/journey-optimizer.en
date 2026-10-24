@@ -38,7 +38,7 @@ Let's say you want to compare three paths:
 
 * one path with one email;
 * a second path with a **[!UICONTROL Wait]** node of two days and an email;
-* a third path with an email and then an SMS message.
+* a third path with an email and then a mobile message.
 
 1. From the **[!UICONTROL Orchestration]** section, drag and drop the **[!UICONTROL Optimize]** activity into the journey canvas.
 
@@ -84,13 +84,15 @@ Let's say you want to compare three paths:
 
     * Drag and drop a [Wait](wait-activity.md) activity of two days onto the first branch, followed by an [Email](../email/create-email.md) activity (**Treatment B**).
 
-    * Drag and drop an [Email](../email/create-email.md) activity onto the third branch, followed by an [SMS](../mobile/create-mobile-message.md) activity (**Treatment C**).
+    * Drag and drop an [Email](../email/create-email.md) activity onto the third branch, followed by a [Mobile message](../mobile/create-mobile-message.md) activity (**Treatment C**).
 
     ![Path experiment example with three treatment paths](assets/journey-optimize-experiment-ex.png){width=100%}
 
 1. Optionally, use the **[!UICONTROL Add an alternative path in case of a timeout or an error]** to define a fallback action. [Learn more](using-the-journey-designer.md#paths)
 
-1. [Publish](publish-journey.md) your journey.
+1. Click **[!UICONTROL Validate]** in the journey header and resolve any errors before [testing the journey](choose-validation-method.md). [Learn about journey validation](publish-journey.md#validate).
+
+1. When testing is complete and validation is current and passed, [publish](publish-journey.md) your journey.
 
 Once the journey is live, users are randomly assigned to go down different paths. [!DNL Journey Optimizer] tracks which path performs best and provides actionable insights.
 
@@ -110,11 +112,11 @@ The following examples show how to use the **[!UICONTROL Optimize]** activity wi
 
 +++Channel effectiveness
 
-Test whether sending the first message by email versus SMS drives higher conversions.
+Test whether sending the first message by email versus mobile message drives higher conversions.
 
 ➡️ Use the conversion rate as the success metric (for example: purchases, sign-ups).
 
-![Channel effectiveness experiment comparing email versus SMS](assets/journey-optimize-experiment-uc-channel.png)
+![Channel effectiveness experiment comparing email versus mobile message](assets/journey-optimize-experiment-uc-channel.png)
 
 +++
 

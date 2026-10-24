@@ -72,13 +72,13 @@ Once your in-app message has been defined, you can preview it using either simul
 
 Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
 
-## Review and activate your In-App notification{#in-app-review}
+## Review and activate your In-app notification{#in-app-review}
 
 >[!IMPORTANT]
 >
-> If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your In-App notification. [Learn more](../test-approve/gs-approval.md)
+> If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your In-app notification. [Learn more](../test-approve/gs-approval.md)
 
-Once your In-App message is created, and its content defined and personalized, you can review and activate it.
+Once your In-app message is created, and its content defined and personalized, you can review and activate it.
 
 To perform this, follow the steps below:
 
@@ -90,9 +90,9 @@ To perform this, follow the steps below:
 
 1. Check that your campaign is correctly configured, then click **[!UICONTROL Activate]**.
 
-Your campaign is now activated. The In-App notification configured in the campaign is sent immediately, or on the specified date.
+Your campaign is now activated. The In-app notification configured in the campaign is sent immediately, or on the specified date.
 
-Once sent, you can measure the impact of your In-App messages within the Campaign or Journey reports. For more on reporting, refer to [this section](../reports/campaign-global-report-cja-inapp.md).
+Once sent, you can measure the impact of your In-app messages within the Campaign or Journey reports. For more on reporting, refer to [this section](../reports/campaign-global-report-cja-inapp.md).
 
 **Related topics:**
 

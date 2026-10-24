@@ -74,7 +74,7 @@ To create an email in [!DNL Journey Optimizer], add an **[!UICONTROL Email]** ac
 
     >[!IMPORTANT]
     >
-    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
+    >Legacy native channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
 1. Select **[!UICONTROL Email]** as the action type.
 
@@ -338,5 +338,7 @@ Control the rendering of your email, and check personalization settings with tes
 
 You must also check alerts in the upper section of the editor.  Some of them are simple warnings, but others can prevent you from using the message. 
 -->
+
+If your email content returns an error code, see [Content authoring errors](../content-management/content-authoring-errors.md).
 
 {{$include /help/_includes/do-not-localize/email/ai-augmented-create-email.md}}

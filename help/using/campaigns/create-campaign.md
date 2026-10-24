@@ -40,7 +40,7 @@ level_v2:
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_action"
 >title="Action campaigns"
->abstract="**Guided UI to create and send a campaign**<br/>Set one or multiple actions with a channel, choose an audience, set a content, define a schedule and you are ready to send<br/><br/>**Available channels**<br/>Email, SMS, Push notifications, In-app, Web, Code-based experiences"
+>abstract="**Guided UI to create and send a campaign**<br/>Set one or multiple actions with a channel, choose an audience, set a content, define a schedule and you are ready to send<br/><br/>**Available channels**<br/>Email, Mobile messages, Push notifications, In-app, Web, Code-based experiences"
 
 ## About Action campaigns {#about}
 
@@ -73,3 +73,5 @@ Learn more about the [complete campaign creation workflow with type-specific gui
 Learn how to create an Action campaign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346680?quality=12)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-create-campaign.md}}

@@ -9,16 +9,15 @@ role: User
 level: Beginner, Intermediate
 hide: true
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
-TQID: https://experienceleague.adobe.com/3i0k1Wzvdf3Z3NccHSFE-nzIrYC45iLqs-ftmQZIeVw
+TQID: 'https://experienceleague.adobe.com/3i0k1Wzvdf3Z3NccHSFE-nzIrYC45iLqs-ftmQZIeVw'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
-subfeature_v2:
   - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
-    internal-label: Journey Optimizer release notes
+    internal-label: Release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

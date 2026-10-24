@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Read audience activity — Acronym: n/a — variants: Read audience, Read-audience journey
+* Canonical name: Read audience activity — variant: Read audience
 * Synonyms: "custom upload" = "CSV upload"
 * Do not confuse: "Read audience activity" (makes all individuals in an audience enter the journey) ≠ "Audience Qualification event activity" (makes individuals enter or move forward based on audience entrances and exits)
 * Do not confuse: "segment definition" audiences (usable in an Audience Qualification activity) ≠ "composition workflow / custom upload / Federated Audience Composition" batch audiences (cannot be targeted in an Audience Qualification activity)
@@ -55,4 +55,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: d9ce312c -->
+<!-- ai-section-version: 1 | source-hash: 6635dce9 -->

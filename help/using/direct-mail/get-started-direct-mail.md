@@ -1,21 +1,25 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Get started with direct mail 
-description: Learn how to create a direct mail message in Journey Optimizer 
+title: Get started with direct mail
+description: Learn how to create a direct mail message in Journey Optimizer
 feature: Direct Mail
 topic: Content Management
 role: User
 level: Beginner
 keywords: direct mail, message, campaign
 exl-id: bb52f400-6289-4a7f-a34f-98eb5d27c76a
-TQID: https://experienceleague.adobe.com/Gmtr-7HW70-cg7va8iHfR5xKdYts-ZdDCm6CeQHJ0tg
+TQID: 'https://experienceleague.adobe.com/Gmtr-7HW70-cg7va8iHfR5xKdYts-ZdDCm6CeQHJ0tg'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices

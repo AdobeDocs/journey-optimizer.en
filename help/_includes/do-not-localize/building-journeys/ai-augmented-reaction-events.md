@@ -13,32 +13,32 @@ For complete understanding, this information should be combined with the documen
 
 **Intents:**
 * Add a Reaction event activity to respond to message opens or clicks within a journey
-* Configure a timeout duration and fallback path for profiles that do not engage
+* Configure an event timeout and timeout path for individuals who do not react within the defined duration
 * Create a parallel path with a Wait activity to handle non-responders
-* Select a specific upstream channel action activity to listen to
+* Select an action activity from an earlier step in the path to react to
 
 **Glossary:**
 * **Reaction event**: A built-in journey event activity that listens to real-time tracking data (opens, clicks) from a message sent earlier in the same journey *(product-specific)*
-* **Timeout path**: A secondary journey branch that profiles follow if they do not produce the expected reaction within the defined timeout period *(product-specific)*
+* **Timeout path**: A second path for individuals who did not react within the defined duration *(product-specific)*
 
 **Guardrails:**
-* The Reaction activity must be placed immediately after a channel action activity; no other activity can be placed between them.
+* A **[!UICONTROL Reaction]** activity must be placed immediately after a channel action activity. Placing a **[!UICONTROL Wait]** activity or any other activity between the channel action and the **[!UICONTROL Reaction]** activity is not supported and may result in the Reaction not working as expected.
 * A Reaction activity cannot be used if there is no channel action activity before it in the path.
 * Reaction events can only track messages sent within the same journey; cross-journey tracking is not supported.
-* Unsubscription links and mirror page links are not tracked by reaction events.
+* Reaction events track clicks on links of the type "tracked". Clicks on unsubscription links are also taken into account and trigger an **[!UICONTROL Email Click]** reaction event. Mirror page links are not taken into account.
 * Email opens rely on a 0-pixel tracking image; if the email client blocks images (e.g., Gmail), opens will not be recorded.
-* Event timeout range is 40 seconds to 90 days; the minimum value in test mode is also 40 seconds.
+* You can define an event timeout between 40 seconds and 90 days, and a timeout path. In test mode, **[!UICONTROL Wait time]** has a default and minimum value of 40 seconds.
 
 **Terminology:**
-* Canonical name: Reaction events — Acronym: none — variants: reaction activity, engagement tracking event
-* Synonyms: "Reaction event" = "message engagement event" = "tracking event"
-* Do not confuse: "Reaction event" ≠ "external event" (reaction events are built-in and tied to same-journey messages; external events come from outside the journey)
+* The built-in event in the palette is **[!UICONTROL Reactions]**; the activity is **[!UICONTROL Reaction]**.
 
 **FAQ:**
 * **Q: Can a Reaction event track a message sent in a different journey?** — No; reaction events only track messages sent within the same journey.
-* **Q: How do I handle profiles that do not open or click a message?** — Add a parallel path alongside the Reaction activity with a Wait activity; profiles that do not react within the wait duration will follow that second path.
-* **Q: Are unsubscribe link clicks tracked by reaction events?** — No; only tracked link types are captured. Unsubscription and mirror page links are excluded.
+* **Q: How do I handle individuals who do not open or click a message?** — Add a parallel path alongside the Reaction activity with a Wait activity; individuals who do not react within the wait duration will follow that second path.
+* **Q: Are unsubscribe link clicks tracked by reaction events?** — Yes; clicks on unsubscription links trigger an **[!UICONTROL Email Click]** reaction event. Mirror page links are not taken into account.
 * **Q: What happens if an email client blocks images?** — Email opens tracked via the 0-pixel image will not be recorded for clients that block images, such as Gmail.
 * **Q: What is the valid timeout range for a reaction event?** — Between 40 seconds and 90 days.
 
 +++
+
+<!-- ai-section-version: 1 | source-hash: 3c4dee08 -->

@@ -25,20 +25,20 @@ For complete understanding, this information should be combined with the documen
 * **Custom provider configuration**: The configuration used to set up additional messaging providers beyond Sinch, Twilio, and Infobip *(product-specific)*
 * **API Token and Service ID**: Provider credentials required to configure the connection between Journey Optimizer and the applicable provider *(product-specific)*
 * **Mobile configuration**: The configuration created after provider integration and webhook creation to enable Mobile messaging *(product-specific)*
-* **Manage SMS Subdomains permission**: The permission required on the production sandbox to access and edit SMS subdomains *(product-specific)*
+* **Manage SMS Subdomains permission**: The permission required on the production sandbox to access and edit Mobile message subdomains *(product-specific)*
 
 **Guardrails:**
 
 * Supported providers for Mobile messaging and MMS are Sinch, Twilio, and Infobip; additional messaging providers can be configured using the custom provider configuration.
 * Prior to Mobile channel configuration, you must create an account with one of these providers to get your API Token and Service ID.
 * Your use of Mobile messaging and MMS services is subject to additional terms and conditions from the applicable provider; Adobe does not control, and is not responsible for, third-party products.
-* To access and edit SMS subdomains, you must have the Manage SMS Subdomains permission on the production sandbox.
+* To access and edit Mobile message subdomains, you must have the Manage SMS Subdomains permission on the production sandbox.
 * These steps must be performed by an Adobe Journey Optimizer System Administrator.
 * SMS usage metrics are available only if you purchase SMS through Adobe Journey Optimizer, to reconcile MO and MT volume with vendor billing.
 
 **Terminology:**
 
-* Canonical name: Mobile configuration — Acronym: n/a — variants: SMS channel configuration
+* Canonical name: Mobile configuration — variants: SMS channel configuration
 * Do not confuse: "provider integration" (Sinch, Twilio, Infobip) ≠ "custom provider configuration" (additional providers)
 
 **FAQ:**
@@ -46,7 +46,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which providers does Journey Optimizer support for Mobile messaging?** — Sinch, Twilio, and Infobip; additional providers can be configured using the custom provider configuration.
 * **Q: What do I need before configuring the Mobile channel?** — An account with one of the providers to obtain your API Token and Service ID.
 * **Q: Who is allowed to perform the Mobile configuration steps?** — An Adobe Journey Optimizer System Administrator.
-* **Q: What permission is required to edit SMS subdomains?** — The Manage SMS Subdomains permission on the production sandbox.
+* **Q: What permission is required to edit Mobile message subdomains?** — The Manage SMS Subdomains permission on the production sandbox.
 * **Q: How can I reconcile SMS volume with vendor billing?** — If you purchase SMS through Adobe Journey Optimizer, you can view SMS usage metrics to reconcile MO and MT volume with vendor billing.
 
 +++

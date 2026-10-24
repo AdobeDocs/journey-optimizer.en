@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to configure and schedule data lifecycle operations in Journey Optimizer so you can keep your records accurate, used as intended, and deleted in line with your organizational policies.
+* **TL;DR:** This page explains how to configure and schedule data lifecycle operations so you can keep your records accurate, used as intended, and deleted in line with your organizational policies.
 
 **Intents:**
 
@@ -29,22 +29,22 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Data lifecycle capabilities are currently only available for organizations that have purchased the Healthcare Shield and Privacy and Security Shield add-on offerings (availability constraint)
-* After deleting identities, historical delivery events associated with deleted identities will no longer appear in standard reporting or datalake queries
-* Deletions can result in discrepancies between the number of emails reported as Delivered and the number of emails Received in recipient inboxes, especially for older journeys
+* When performing data hygiene operations (such as deleting identities or datasets), historical delivery events associated with deleted identities will no longer appear in standard reporting or datalake queries
+* Data hygiene operations can result in discrepancies between the number of emails reported as Delivered and the number of emails Received in recipient inboxes, especially for older journeys
 * Before executing large-scale deletions, validate and export any required delivery or reporting data (recommended)
 
 **Terminology:**
 
-* Canonical name: Data lifecycle operations — variants: data hygiene operations
+* Canonical name: Data lifecycle operations
 * Do not confuse: "Delivered" (emails reported as delivered in standard reporting) ≠ "Received" (emails received in recipient inboxes)
 
 **FAQ:**
 
 * **Q: Who can use data lifecycle capabilities?** — Organizations that have purchased the Healthcare Shield and Privacy and Security Shield add-on offerings.
-* **Q: What happens to reporting after deleting identities?** — Historical delivery events associated with deleted identities no longer appear in standard reporting or datalake queries.
+* **Q: What happens to reporting after data hygiene operations such as deleting identities or datasets?** — Historical delivery events associated with deleted identities no longer appear in standard reporting or datalake queries.
 * **Q: What should you do before large-scale deletions?** — Validate and export any required delivery or reporting data.
 * **Q: How can you reconcile data after data hygiene?** — Coordinate with Adobe support to access archived logs, or use Message Feedback Event Dataset queries for recent data.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 0a3fbb47 -->
+<!-- ai-section-version: 1 | source-hash: 99c250da -->

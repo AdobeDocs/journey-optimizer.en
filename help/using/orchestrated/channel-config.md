@@ -103,7 +103,7 @@ To do this, contextual attributes specific to orchestrated campaigns are availab
 * **`context.system.source.versionId`**: Orchestrated campaign version ID
 * **`context.system.source.actionId`**: Channel action node ID
 * **`context.system.source.actionName`**: Channel action node name
-* **`context.system.source.channel`**: Channel type (Email, SMS, Push)
+* **`context.system.source.channel`**: Channel type (Email, Mobile, Push)
 * **`context.system.IdentityNamespace`**: Identity namespace used
 
 For example:

@@ -23,8 +23,8 @@ For complete understanding, this information should be combined with the documen
 
 * **Segment definition**: A new audience definition created with Adobe Experience Platform Segmentation Service using the Build rule method *(product-specific)*
 * **Build rule**: The audience creation method selected from Create audience that opens the segment definition screen *(product-specific)*
-* **Attributes**: Building block representing profile characteristics used to define an audience *(product-specific)*
-* **Events**: Building block representing profile actions used to define an audience *(product-specific)*
+* **Attributes**: One of the two basic building blocks of segment definitions, for example the city where profiles live or the birth year *(product-specific)*
+* **Events**: One of the two basic building blocks of segment definitions, for example a purchase made within the last 7 days *(product-specific)*
 * **Streaming segmentation**: Evaluation method where the audience profile list is kept up to date in real time as new data flows in *(product-specific)*
 * **Batch segmentation**: Evaluation method where the audience profile list is evaluated every 24 hours as a snapshot *(product-specific)*
 * **Edge segmentation**: Evaluation method that evaluates segments instantaneously on the edge for same-page and next-page personalization *(product-specific)*
@@ -42,10 +42,8 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Segment definition — Acronym: n/a — variants: audience definition, segment
-* Synonyms: "Build rule" = "Create a rule"
+* Canonical name: Segment definition — Acronym: n/a — variants: segment
 * Do not confuse: "Streaming segmentation" (real-time updates) ≠ "Batch segmentation" (evaluated every 24 hours) ≠ "Edge segmentation" (instantaneous on the edge)
-* Do not confuse: "Attributes" (profile characteristics) ≠ "Events" (profile actions)
 
 **FAQ:**
 
@@ -57,4 +55,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 0b760cd3 -->
+<!-- ai-section-version: 1 | source-hash: 9453f4a3 -->

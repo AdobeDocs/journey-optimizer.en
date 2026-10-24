@@ -30,7 +30,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Available for the Email, SMS, and Push notification channels; all inbound channels (Web, Code-based experience, In-app, Content cards); and Orchestrated campaigns.
+* Available for the Email, Mobile message, and Push notification channels; all inbound channels (Web, Code-based experience, In-app, Content cards); and Orchestrated campaigns.
 * Supported data types when entering variant data: number (integer and decimal), string, boolean, and date; any other data type shows an error.
 * Both profile and contextual attributes are supported.
 * You can add up to 30 variants when adding them using a file or manually.
@@ -52,7 +52,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: Are variants stored in Adobe Experience Platform?** — No. Variants are stored in your browser session, not in Adobe Experience Platform; they do not display when you log off or work from another device.
 * **Q: How many variants can I create?** — Up to 30 when adding manually or from a file; AI auto-generation creates a system-determined number up to a maximum of 40.
-* **Q: Which channels support content simulation?** — The Email, SMS, and Push notification channels; all inbound channels (Web, Code-based experience, In-app, Content cards); and Orchestrated campaigns.
+* **Q: Which channels support content simulation?** — The Email, Mobile message, and Push notification channels; all inbound channels (Web, Code-based experience, In-app, Content cards); and Orchestrated campaigns.
 * **Q: How do I get inbox rendering and spam reports?** — Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to access the previous user interface.
 * **Q: How many recipients can receive a proof?** — Up to 10 proof recipients.
 * **Q: What data types can I enter for variants?** — Number (integer and decimal), string, boolean, and date; any other data type shows an error.

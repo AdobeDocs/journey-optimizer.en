@@ -153,7 +153,7 @@ The data retrieved by the **[!UICONTROL Dataset lookup]** activity is stored in 
 
 >[!NOTE]
 >
->Enriched data is transient and available only during the runtime of the journey, and in the personalization of outbound activities (Email, Push, SMS, etc.)
+>Enriched data is transient and available only during the runtime of the journey, and in the personalization of outbound activities (Email, Push, Mobile message, etc.)
 
 ## Examples of use cases
 

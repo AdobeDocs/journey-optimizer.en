@@ -37,7 +37,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: SMS usage report — Acronym: n/a — variants: SMS usage metrics
+* Canonical name: SMS usage report — variants: SMS usage metrics (SMS is a variant of Mobile message; this report covers the SMS message type)
 * Do not confuse: "Mobile-terminated (MT)" (sent traffic) ≠ "Mobile-originated (MO)" (received traffic)
 * Do not confuse: "Pending" (report is being generated after Retrieve report) ≠ "Ready" (report can be opened with View)
 * Do not confuse: the Sinch MMS API credential used to retrieve usage data ≠ the Sinch credentials used to send SMS or MMS messages
