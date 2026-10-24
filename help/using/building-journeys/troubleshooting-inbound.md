@@ -44,10 +44,6 @@ topic_v2:
 
 Inbound actions, such as In-app, web, and code-based experiences, are critical components of [!DNL Journey Optimizer] as they enable personalized engagement with users during their journey. However, unexpected behavior, such as missing inbound content, or continued delivery after a profile exits the journey, can occur.
 
->[!NOTE]
->
->Journey status, profile participation, audience membership, and content delivery are separate states. Stopping a journey ends the profile's participation in that journey. A `Realized` audience status means that the profile is currently represented as qualified for that audience; it does not, by itself, prove that the journey is still active or that content is still being delivered. When the states disagree, verify the journey version, profile participation, audience projection, proposition response, and delivery-server response.
-
 This guide provides a step-by-step process to debug issues related to inbound actions in a journey, in order to help you identify and resolve them independently before reaching out to support.
 
 <!--
