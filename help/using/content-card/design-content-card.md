@@ -72,6 +72,19 @@ To compose your message, enter your text in the **[!UICONTROL Title]** and **[!U
 
 If you want to tailor your message further, use the **[!UICONTROL Personalization]** icon to add personalized elements. For detailed instructions on how to use the personalization features, refer to [this section](../personalization/personalize.md).
 
+### Personalize loyalty challenge content {#personalize-challenge-content}
+
+When designing a content card for a [loyalty challenge](../loyalty-challenges/create-challenges.md#configure-content-cards), you can use challenge metadata to personalize the card content.
+
+1. Open the personalization editor using the **[!UICONTROL Personalization]** icon.
+1. Select **[!UICONTROL Challenge Data]**, then click **[!UICONTROL Add loyalty challenge data]** to make the challenge fields available.
+
+   ![](assets/loyalty-personalization.png)
+
+1. Add the desired challenge fields to personalize your content.
+
+    ![](assets/loyalty-fields.png)
+
 ### Media {#add-media}
 
 ![](assets/content-card-design-3.png)

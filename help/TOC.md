@@ -12,7 +12,7 @@ nudge: yes
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new} 
   + [Release cycle](using/rn/releases.md) 
-  + {hide-from-toc} [Pre-release notes](using/rn/e-release-notes.md)
+  + [Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -100,6 +100,7 @@ nudge: yes
     + [Journey Fragments](using/building-journeys/journey-fragments.md)
     + [Content decision](using/building-journeys/content-decision.md)
     + [Dataset lookup](using/building-journeys/dataset-lookup.md)
+    + [Stop action](using/building-journeys/stop-action.md)
     + [Action](using/building-journeys/journey-action.md)
     + [Jump](using/building-journeys/jump.md)
     + [Update profile](using/building-journeys/update-profiles.md)
@@ -278,24 +279,43 @@ nudge: yes
     + [Request approval](using/test-approve/request-approval.md)
     + [Approve a request](using/test-approve/review-approve-request.md)
 + Monitor & troubleshoot {#monitor}
-  + [Get started with monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
+  + [Track, monitor and troubleshoot](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
   + [Tracking in Journey Optimizer](using/start/get-started-tracking.md)
   + Email deliverability {#deliverability}
     + [Get started with deliverability](using/reports/deliverability.md)
     + [Understand the suppression list](using/reports/suppression-list.md)
     + [New DMARC requirement](using/configuration/dmarc-record-update.md)
-  + Monitor alerts & error codes {#monitor-alerts-errors}
-    + [System alerts](using/reports/alerts.md)
-    + [Error codes reference](using/building-journeys/error-codes-reference.md)
+  + [System alerts](using/reports/alerts.md)
   + Troubleshooting {#troubleshooting}
-    + [Troubleshooting FAQ](using/start/troubleshooting.md)
+    + [Troubleshooting overview](/help/rp_landing_pages/troubleshooting-overview-landing-page.md)
+    + [Error codes reference](using/building-journeys/error-codes-reference.md)
     + Journeys troubleshooting {#troubleshoot-journey}
       + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
+      + [Journey validation errors](using/building-journeys/journey-validation-errors.md)
       + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
       + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
       + [Troubleshoot custom actions](using/action/troubleshoot-custom-action.md)
+    + Campaigns troubleshooting {#troubleshoot-campaigns}
+      + [Campaign errors](using/campaigns/campaign-errors.md)
+      + [Orchestrated campaign errors](using/orchestrated/orchestrated-campaign-errors.md)
+      + [Relational schema and dataset errors](using/orchestrated/relational-schema-errors.md)
+      + [Audience composition errors](using/audience/audience-composition-errors.md)
+    + Content troubleshooting {#troubleshoot-content}
+      + [Content authoring errors](using/content-management/content-authoring-errors.md)
+      + [Fragments and AEM content errors](using/content-management/fragments-errors.md)
+      + [Multilingual content errors](using/content-management/multilingual-errors.md)
+      + [Landing page errors](using/landing-pages/landing-page-errors.md)
+      + [Proof and simulation errors](using/content-management/proof-simulation-errors.md)
+      + [Personalization errors](using/personalization/personalization-errors.md)
+    + Configuration troubleshooting {#troubleshoot-configuration}
+      + [Subdomain delegation and DNS errors](using/configuration/subdomain-delegation-errors.md)
+      + [IP warmup plan errors](using/configuration/ip-warmup-plan-errors.md)
+      + [Custom channel, inbound action, and reporting dataset errors](using/configuration/channel-reporting-errors.md)
+    + [Troubleshooting FAQ](using/start/troubleshooting.md)
 + Communication channels {#channels}
   + [Get started with communication channels](using/channels/gs-channels.md)
+  + [Coworker for channels](using/channels/channels-coworker-skills.md)
+  + {hide-from-toc} [Destinations channel](using/destinations/destinations.md)
   + Email channel {#email}
     + [Email channel](/help/rp_landing_pages/email-landing-page.md)
     + [Get started with emails](using/email/get-started-email.md)
@@ -345,6 +365,7 @@ nudge: yes
       + [Personalize email configuration](using/email/surface-personalization.md)
     + [Use and configure deeplinks](using/email/deeplinks.md)
     + [Manage email opt-out](using/email/email-opt-out.md)
+    + [Choose a consent level for opt-outs](using/email/consent-level.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
     + [Get started with In-app](using/in-app/get-started-in-app.md)
@@ -467,6 +488,7 @@ nudge: yes
     + Configure custom channels {#configure-custom-channel}
       + [Set up your custom channels](using/custom-channel/configure-custom-channel.md)
       + [Create a custom channel](using/custom-channel/create-custom-channel.md)
+      + [Configure OAuth 2.0 authentication](using/custom-channel/custom-channel-oauth2.md)
       + [Manage API credentials](using/custom-channel/custom-channel-api-credentials.md)
       + [Delegate a subdomain](using/custom-channel/custom-channel-subdomains.md)
       + [Create a channel configuration](using/custom-channel/custom-channel-configuration.md)
@@ -659,7 +681,7 @@ nudge: yes
       + [In-app campaign report](using/reports/campaign-global-report-cja-inapp.md)
       + {hide-from-toc} [Live activity campaign report](using/reports/campaign-global-report-cja-activity.md)
       + [Push notification campaign report](using/reports/campaign-global-report-cja-push.md)
-      + [SMS campaign report](using/reports/campaign-global-report-cja-sms.md)
+      + [Mobile campaign report](using/reports/campaign-global-report-cja-sms.md)
       + [Web campaign report](using/reports/campaign-global-report-cja-web.md)
     + Journey reports {#journey-reporting}
       + [Journey reports](/help/rp_landing_pages/journey-reporting-landing-page.md)
@@ -950,16 +972,13 @@ nudge: yes
     + [Monitor inbound data with Edge](using/data/monitoring.md)
     + [Monitor data ingestion](using/data/monitor-data-ingestion.md)
 + Channel configuration {#configuration}
-  + [Channel configuration](/help/rp_landing_pages/configuration-landing-page.md)
   + [Get started with channels configuration](using/configuration/get-started-configuration.md)
   + [Set up channel configurations](using/configuration/channel-surfaces.md)
-  + [Export message content](using/configuration/message-export.md)
   + {hide-from-toc} [AJO Message Export schema](using/configuration/message-export-schema.md)
   + Guided channel setup {#guided-setup}
     + [Get started with Guided channel setup](using/configuration/set-mobile-config.md)
     + [Create a channel set up](using/configuration/create-channel-set-up.md)
   + Delegate email subdomains {#delegate-subdomains}
-    + [Delegate email subdomains](/help/rp_landing_pages/delegate-subdomains-landing-page.md)
     + [Get started with subdomain delegation](using/configuration/about-subdomain-delegation.md)
     + [Delegate a subdomain](using/configuration/delegate-subdomain.md)
     + [Set up a custom subdomain](using/configuration/delegate-custom-subdomain.md)
@@ -976,14 +995,16 @@ nudge: yes
     + [Run the IP warmup plan](using/configuration/ip-warmup-execution.md)
     + {hide-from-toc} [IP warmup plan files](using/configuration/ip-warmup-plan-files.md)
   + Monitor email addresses {#monitor-reputation}
-    + [Monitor email addresses](/help/rp_landing_pages/monitor-reputation-landing-page.md)
     + {hide-from-toc} [Email error types](using/configuration/email-error-types.md)
     + [Suppression list](using/configuration/manage-suppression-list.md)
     + [Retries](using/configuration/retries.md)
     + [Allowed list](using/configuration/allow-list.md)
-  + [Use seed lists](using/configuration/seed-lists.md)
-  + [Support for email archiving](using/configuration/archiving-support.md)
+  + Archiving {#archiving}
+    + [Get started with message archiving](using/configuration/archiving-overview.md)
+    + [Archive emails using BCC](using/configuration/archiving-support.md)
+    + [Export message content](using/configuration/message-export.md)
   + [Add a CC field to emails](using/configuration/cc-email-field.md)
+  + [Use seed lists](using/configuration/seed-lists.md)
   + [Manage execution fields](using/configuration/primary-email-addresses.md)
   + [Create feedback webhooks](using/configuration/feedback-webhooks.md)
   + [Manage allowed IPs](using/configuration/waf-ip-allowlist.md)
@@ -1027,6 +1048,7 @@ nudge: yes
   + Sandboxes management {#sandbox}
     + [Use and assign sandboxes](using/administration/sandboxes.md)
     + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
+  + {hide-from-toc} [Use custom metadata in campaigns and journeys](using/administration/custom-metadata.md)
   + [Configure the Sources connector](using/start/get-started-sources.md)
 + Access control {#access-control}
   + [Access control](/help/rp_landing_pages/access-control-landing-page.md)

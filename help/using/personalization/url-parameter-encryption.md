@@ -41,7 +41,7 @@ level_v2:
 
 ## Why use URL parameter encryption? {#why-url-parameter-encryption}
 
-Personalized tracking links and landing page URLs often include profile attributes, identifiers, tokens, or other values in the query string. Those parameters are usually visible as plain text in the email or SMS, and they stay readable if someone copies, shares, or bookmarks the link. This can be a security and privacy risk when the values can include personally identifiable information (PII) or other sensitive data they must protect.
+Personalized tracking links and landing page URLs often include profile attributes, identifiers, tokens, or other values in the query string. Those parameters are usually visible as plain text in the email or mobile message, and they stay readable if someone copies, shares, or bookmarks the link. This can be a security and privacy risk when the values can include personally identifiable information (PII) or other sensitive data they must protect.
 
 [!DNL Journey Optimizer] provides an encryption helper in the personalization editor so you can encrypt any expression value at render time (for example a profile attribute, a token, or a string you built from several fields). Encryption always requires a key from your organization's registry.
 
@@ -77,6 +77,8 @@ Before being able to use the URL parameter encryption helper, you need to create
 1. Using the dedicated button, create keys as required for your organization.
 
     ![Create key button in Key registry section](assets/encryption-create-key.png){width="80%"}
+
+    A key must be 32 bytes (256 bits) and base64-encoded. A key name can contain only letters, numbers, and hyphens.
 
 1. Assign them a clear label or identifier your teams can reference in the personalization editor.
 

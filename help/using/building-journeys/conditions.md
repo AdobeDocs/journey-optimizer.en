@@ -198,7 +198,7 @@ The nominal path always has priority over the alternate path, even if you move t
 
 For live journeys, here are the thresholds to consider to ensure the limit is reached:
 
-* For a cap greater than 10,000, the number of distinct profiles to be injected must be at least 1.3 times the cap.
+* For a profile cap greater than 10,000, set the capping limit to 1.3 times the cap (30% higher). For example, for a cap of 20,000 profiles, set the limit to 26,000.
 * For a cap below 10,000, the number of distinct profiles to be injected must be 1000 plus the cap.
 
 Profile cap is not taken into account in test mode.

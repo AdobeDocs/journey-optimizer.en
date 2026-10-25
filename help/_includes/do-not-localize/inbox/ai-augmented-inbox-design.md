@@ -33,12 +33,12 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Capacity is the maximum number of content cards the inbox is configured to hold.
-* Dark-mode URLs and colors are provided per setting (unread icon image URL, background colors, empty-state image) so the treatment stays visible and on-brand in dark mode.
+* For dark mode, add a dark-mode URL for the unread icon image, set background colors for dark mode if needed, and optionally provide a Dark image URL for the empty state.
 * When you are ready, review your settings and activate the inbox; after activation, you can use it with Content cards.
 
 **Terminology:**
 
-* Canonical name: Inbox design — Acronym: n/a — variants: inbox layout configuration
+* Canonical name: Inbox design — Acronym: n/a — related term: Inbox campaign
 * Do not confuse: "List layout" (vertical list, opened one at a time) ≠ "Carousel layout" (horizontal carousel, swipe sideways through highlights)
 * Do not confuse: "Unread settings" (how unread/read-state messages are indicated) ≠ "Empty state" (what profiles see when there are no messages to display)
 
@@ -53,4 +53,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: a29cb3e4 -->
+<!-- ai-section-version: 1 | source-hash: fc6ec6d1 -->

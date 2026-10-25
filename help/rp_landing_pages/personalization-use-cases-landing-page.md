@@ -51,7 +51,7 @@ Build a single personalized email that lists all of a subscriber's prescriptions
 
 Personalization recipes
 
-Browse a library of ready-to-use personalization patterns covering dates, profile attributes, conditional logic, and more. Each recipe includes a working syntax snippet you can copy directly into your email, SMS, or push content.
+Browse a library of ready-to-use personalization patterns covering dates, profile attributes, conditional logic, and more. Each recipe includes a working syntax snippet you can copy directly into your email, mobile message, or push content.
 
 [Browse the recipes](../using/personalization/personalization-recipes.md)
 :::

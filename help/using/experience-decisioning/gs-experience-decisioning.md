@@ -1,21 +1,30 @@
 ---
-title: Get started with Decisioning 
-description: Learn more about Decisioning 
+title: Get started with Decisioning
+description: Learn more about Decisioning
 feature: Decisioning
 topic: Integrations
 role: User
 level: Intermediate
 exl-id: 4c57dbf9-b2a4-42da-8aa3-5a1b3a475a32
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/z-9FSXpQNMyy0KcGaLWgDYHqAx-BWhIEJYAq4wVqmv4
+TQID: 'https://experienceleague.adobe.com/z-9FSXpQNMyy0KcGaLWgDYHqAx-BWhIEJYAq4wVqmv4'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decisioning
+    internal-label: Decision capabilities
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -27,13 +36,6 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-subfeature_v2:
-  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
-    internal-label: Decisioning API
-  - id: eb547372-2a95-4d13-b0fd-f720c9895880
-    internal-label: Edge Decisioning
-  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
-    internal-label: Get started
 ---
 # Get started with Decisioning {#get-started-experience-decisioning}
 
@@ -52,11 +54,11 @@ subfeature_v2:
 
 Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
 
-These decision items are seamlessly integrated into messages and experiences across [!DNL Adobe Journey Optimizer] channels: [code-based experience](../code-based/get-started-code-based.md), [web](../web/get-started-web.md), email, SMS, push notifications, [custom channels](../custom-channel/get-started-custom-channel.md), and [direct mail](batch-decisioning-direct-mail.md) for batch decisioning and personalized direct mail exports. Experience Decisioning support for direct mail is a new capability; previously, the Decisioning engine was not available for direct mail extraction files.
+These decision items are seamlessly integrated into messages and experiences across [!DNL Adobe Journey Optimizer] channels: [code-based experience](../code-based/get-started-code-based.md), [web](../web/get-started-web.md), email, mobile messages, push notifications, [custom channels](../custom-channel/get-started-custom-channel.md), and [direct mail](batch-decisioning-direct-mail.md) for batch decisioning and personalized direct mail exports. Experience Decisioning support for direct mail is a new capability; previously, the Decisioning engine was not available for direct mail extraction files.
 
 >[!IMPORTANT]
 >
->Decision policies are available to all customers for the **[Code-based Experience](../code-based/get-started-code-based.md)**, **[Web](../web/get-started-web.md)**, **[Email](../email/get-started-email.md)**, **[Push notification](../push/get-started-push.md)**, **[SMS](../mobile/get-started-mobile.md)**, **[Custom channels](../custom-channel/get-started-custom-channel.md)**, and **[Direct mail](../direct-mail/get-started-direct-mail.md)** channels.
+>Decision policies are available to all customers for the **[Code-based Experience](../code-based/get-started-code-based.md)**, **[Web](../web/get-started-web.md)**, **[Email](../email/get-started-email.md)**, **[Push notification](../push/get-started-push.md)**, **[Mobile message](../mobile/get-started-mobile.md)**, **[Custom channels](../custom-channel/get-started-custom-channel.md)**, and **[Direct mail](../direct-mail/get-started-direct-mail.md)** channels.
 
 ➡️ [Discover this feature in video](#video)
 
@@ -112,7 +114,7 @@ The main steps to work with Decisioning are as follows:
 
     ➡️ [Learn how to create selection strategies in the user interface](selection-strategies.md) in the user interface (and in the [API documentation](api-reference/selection-strategies/create.md))
 
-1. **Create a decision policy and embed it into your journey or campaign** (code-based experience, email, SMS, push, or custom channels): Decision policies combine multiple selection strategies to determine the eligible decision items to display to the intended audience. 
+1. **Create a decision policy and embed it into your journey or campaign** (code-based experience, email, mobile message, push, or custom channels): Decision policies combine multiple selection strategies to determine the eligible decision items to display to the intended audience. 
     
     ➡️ [Learn how to work with decision policies](create-decision.md)
     ➡️ To successfully deliver the offer via the code-based experience channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md).
@@ -129,7 +131,7 @@ The chart below summarizes the end-to-end Decisioning process — from managing 
 
 ## Additional resources {#additional-resources}
 
-* **[Coworker for Decisioning](experience-decisioning-coworker-skills.md)** - Ask Coworker why an offer was or wasn't shown to a profile or segment (Decisioning Explainer), or create, explain, simulate, and optimize rules and ranking formulas conversationally (Rules & Ranking).
+* **[Coworker for Decisioning](experience-decisioning-coworker-skills.md)** - Ask Coworker why an offer was or wasn't shown to a profile or segment (Decisioning Explainer), or create, explain, simulate, and optimize rules and ranking formulas conversationally (Decisioning Rule Workflow).
 * **[Create decision items](items.md)** - Learn how to create and manage decision items including offers, content variations, and experiences.
 * **[Configure decision catalogs](catalogs.md)** - Understand how to organize decision items into catalogs for better management.
 * **[Define selection strategies](selection-strategies.md)** - Discover how to create selection strategies with eligibility rules and ranking methods.

@@ -171,6 +171,6 @@ To start building your content, follow the steps below:
 
     >[!NOTE]
     >
-    >With auto save, your content is automatically saved after a few seconds while you design it in the Email Designer. This capability is in Limited Availability. Contact your Adobe representative to gain access.
+    >With auto save, your changes are automatically saved in the Email Designer after about 10 seconds of inactivity. This capability is in Limited Availability. Contact your Adobe representative to gain access.
 
 {{$include /help/_includes/do-not-localize/email/ai-augmented-content-from-scratch.md}}

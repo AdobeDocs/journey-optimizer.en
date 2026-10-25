@@ -63,11 +63,11 @@ To check the fields that are currently used by default, access the **[!UICONTROL
 
 >[!NOTE]
 >
->Execution fields are available for the Email, SMS and WhatsApp channels.
+>Execution fields are available for the Email, Mobile and WhatsApp channels.
 
 The current values are used for all deliveries at the sandbox level. You can update these fields if needed.
 
-In most cases, you will change an execution field globally and define a value that should be used for all email, SMS or WhatsApp messages.
+In most cases, you will change an execution field globally and define a value that should be used for all email, Mobile or WhatsApp messages.
 
 ## Update the Administration settings {#admin-settings}
 
@@ -104,10 +104,10 @@ For specific use cases, you can override the execution field set globally and de
 
 Overriding this value may be useful for example to:
 
-* Test your delivery. You can add your own email address or phone number: after you publish the journey, the email, SMS or WhatsApp message is sent to you.
+* Test your delivery. You can add your own email address or phone number: after you publish the journey, the email, mobile or WhatsApp message is sent to you.
 * Send a message to the subscribers of a list. Learn more in [this use case](../building-journeys/message-to-subscribers-uc.md).
 
-When adding an **[!UICONTROL Email]**, **[!UICONTROL SMS]** or **[!UICONTROL WhatsApp]** action to a [journey](../email/create-email.md#create-email), the primary email address or phone number is displayed under the journey advanced parameters.
+When adding an **[!UICONTROL Email]**, **[!UICONTROL Mobile message]** or **[!UICONTROL WhatsApp]** action to a [journey](../email/create-email.md#create-email), the primary email address or phone number is displayed under the journey advanced parameters.
 
 Override this value using the **[!UICONTROL Enable parameter override]** icon to the right of the field.
 
@@ -124,7 +124,7 @@ Override this value using the **[!UICONTROL Enable parameter override]** icon to
 >title="Override the default execution address to use"
 >abstract="When several email addresses or phone numbers are available in the database (personal, professional, etc.), you can choose which one to prioritize for sending. The primary address is defined at the sandbox level, but here you can override the default setting for this specific channel configuration."
 
-You can change the default execution address for a specific email, SMS or WhatsApp [channel configuration](channel-surfaces.md).
+You can change the default execution address for a specific email, mobile or WhatsApp [channel configuration](channel-surfaces.md).
 
 To do this, go to the **[!UICONTROL Execution dimension]** section, and edit the dedicated field under **[!UICONTROL Execution Address]**.
 

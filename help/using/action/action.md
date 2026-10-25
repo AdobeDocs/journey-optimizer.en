@@ -22,6 +22,8 @@ feature_v2:
     internal-label: Journeys
   - id: 2cb9b022-32b0-573b-a511-d091a4f355fb
     internal-label: Actions
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
     internal-label: Action configuration
@@ -54,9 +56,9 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_list"
 >title="Custom actions"
->abstract="Actions are connections through which you deliver personalized, real-time experiences to customers such as push notifications, email, SMS, or any other means of digital engagement you use in your business."
+>abstract="Actions are connections through which you deliver personalized, real-time experiences to customers such as push notifications, email, mobile messages, or any other means of digital engagement you use in your business."
 
-Actions are connections through which you deliver personalized, real-time experiences to customers such as push notifications, email, SMS, or any other means of digital engagement you use in your business.
+Actions are connections through which you deliver personalized, real-time experiences to customers such as push notifications, email, mobile messages, or any other means of digital engagement you use in your business.
 
 ➡️ [Discover this feature in video](#video)
 
@@ -65,6 +67,10 @@ Actions are connections through which you deliver personalized, real-time experi
 * If you are using Adobe Campaign v7 or v8, an integration is available upon request. Refer to [this page](../action/acc-action.md).
 
 * If you are using a third-party system to send messages such as Epsilon, Facebook, Adobe Developer, Firebase, etc, you need to create and configure a custom action. Refer to [this page](../action/about-custom-action-configuration.md).
+
+>[!NOTE]
+>
+>Custom actions are one of three building blocks of journey configuration, alongside Data Sources and Events. For a complete overview and configuration checklist, see [Configure journeys: Data Sources, Events, and Actions](../configuration/about-data-sources-events-actions.md).
 
 >[!CAUTION]
 >

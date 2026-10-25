@@ -189,11 +189,17 @@ All customers of [!DNL Adobe Experience Platform] are provisioned with one Data 
 
 >[!ENDTABS]
 
-To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field.
+The following settings apply regardless of the server type you selected:
 
-If your file routing configuration is going to be sent using journeys, you can specify the frequency at which the file is going to be sent the server.
+* **[!UICONTROL PGP/GPG encryption key]**: To encrypt the file, copy-paste your encryption key in this field.
 
-![Journey export frequency settings for a file routing configuration](assets/file-routing-journey.png)
+* **[!UICONTROL Split file into multiple parts]**: Select this option to set a target file size, from 500 MB to 10 GB, at which your exported direct mail file is split into several parts. If you do not select this option, Journey Optimizer still automatically splits the file once it exceeds approximately 20 GB.
+
+* **Frequency for journeys**: If your file routing configuration is going to be sent using journeys, you can specify the frequency at which the file is going to be sent the server.
+
+    ![Journey export frequency settings for a file routing configuration](assets/file-routing-journey.png)
+
+* **File compression**: Select this option to compress the exported file and reduce its size.
 
 Once you filled in the details for your server type, select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
 

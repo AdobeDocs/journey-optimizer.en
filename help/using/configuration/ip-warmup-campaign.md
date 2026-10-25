@@ -66,8 +66,6 @@ To create an IP warmup campaign, follow the steps below.
 
 1. Create a scheduled marketing [campaign](../campaigns/create-campaign.md) and select the [Email](../email/create-email.md#create-email) action.
 
-    <!--Select the Marketing category. The IP warmup plan activation option is only available for  marketing-type campaigns.-->
-
 1. Select the configuration that you created for IP warmup.
 
     ![](assets/ip-warmup-campaign-surface.png)

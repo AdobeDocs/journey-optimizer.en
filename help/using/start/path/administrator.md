@@ -69,6 +69,9 @@ Follow these steps to configure access management:
 
 1. **Create sandboxes** to partition your instances into separate, isolated virtual environments. **Sandboxes** are created in [!DNL Journey Optimizer]. Learn more in the [Sandboxes](../../administration/sandboxes.md) section.
     
+    >[!TIP]
+    >Data, audiences, journeys, and settings do not carry across sandboxes. Plan at least one development sandbox for building and testing, and one production sandbox for sending to customers. Channel configurations are also set up per sandbox, so messages cannot be sent from a sandbox until you configure them there. [Read the five core concepts](../understanding-ajo.md#five-concepts)
+
     >[!NOTE]
     >As a **System Administrator**, if you cannot see the **[!UICONTROL Sandboxes]** menu in [!DNL Journey Optimizer], you need to update your permissions. Learn how to update your role on [this page](../../administration/permissions.md#edit-product-profile).
     
@@ -91,19 +94,19 @@ To enable [Marketers](marketer.md) to create and send messages, access the **ADM
 
 Follow these steps:
 
-1. **Set up channel configurations**. Define all the technical parameters required for email, SMS, push notifications, web push, direct mail, and other channels:
+1. **Set up channel configurations**. Define all the technical parameters required for email, mobile messages, push notifications, web push, direct mail, and other channels:
 
     * Define **push notification settings** in both [!DNL Adobe Experience Platform] and Adobe Experience Platform Data Collection. [Learn more](../../push/push-gs.md)
 
     * Configure **web push notifications** to deliver notifications to mobile and desktop browsers. [Learn more](../../push/push-configuration-web.md)
 
-    * Create **channel configurations** to configure all the technical parameters required for email, SMS, push, in-app, web, and other channels. [Learn more](../../configuration/channel-surfaces.md)
+    * Create **channel configurations** to configure all the technical parameters required for email, mobile messages, push, in-app, web, and other channels. [Learn more](../../configuration/channel-surfaces.md)
 
-    * Configure the **SMS channel** to set up all the technical parameters required for SMS. [Learn more](../../mobile/mobile-configuration.md)
+    * Configure the **Mobile channel** to set up all the technical parameters required for Mobile messages. [Learn more](../../mobile/mobile-configuration.md)
 
     * Manage the number of days during which **retries** are performed before sending email addresses to the suppression list. [Learn more](../../configuration/manage-suppression-list.md)
 
-    * Enable **message export** at the channel configuration level to archive sent email and SMS content when required (add-on offering). [Learn more](../../configuration/message-export.md)
+    * Enable **message export** at the channel configuration level to archive sent email and Mobile content when required (add-on offering). [Learn more](../../configuration/message-export.md)
 
 1. **Delegate subdomains**: for any new subdomain to be used in Journey Optimizer, the first step will be to delegate it. [Learn more](../../configuration/about-subdomain-delegation.md). You can migrate subdomains from CNAME to custom delegation when needed. [Learn more](../../configuration/custom-subdomain-migration.md)
 
@@ -122,6 +125,20 @@ Follow these steps:
     * The [allowed list](../../configuration/allow-list.md) enables you to specify individual email addresses or domains that will be the only recipients or domains authorized to receive the emails you are sending from a specific sandbox. This can prevent you from sending emails accidentally to real customer addresses when you are in a testing environment. Learn how to [enable the allowed list](../../configuration/allow-list.md).
 
     Learn more about deliverability management in [!DNL Adobe Journey Optimizer] [on this page](../../reports/deliverability.md).
+
+## Configure journeys
+
+Once channels are configured, set up the technical building blocks that journey authors need before they can build and publish journeys:
+
+* **Data Sources** — Connect journeys to external systems to retrieve additional data at run time (for example, loyalty tier, reservation status).
+* **Events** — Define the triggers that start or advance journeys when a customer action or business signal occurs.
+* **Actions** — Configure custom connections to third-party systems when using external message delivery platforms.
+
+For a step-by-step overview and configuration checklist, see [Configure journeys: Data Sources, Events, and Actions](../../configuration/about-data-sources-events-actions.md).
+
+>[!NOTE]
+>
+>This configuration is typically performed by a Data Engineer or technical administrator in coordination with journey authors.
 
 ## Additional capabilities
 
@@ -164,7 +181,7 @@ Collaborate with [Developers](developer.md) on API access and testing:
 Collaborate with [Marketers](marketer.md) on permissions and channel setup:
 
 * Assign appropriate permissions to create journeys and campaigns
-* Configure channels they'll use (email, push, SMS, etc.)
+* Configure channels they'll use (email, push, mobile, etc.)
 * Support testing environments and approval workflows
 * Enable access to new features and capabilities
 * Share decision guides to help your team choose the right approach: [Journeys vs Campaigns](../journeys-vs-campaigns.md) and [Journey types: choose the right one](../../building-journeys/journey-types-selection.md)

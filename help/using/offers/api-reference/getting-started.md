@@ -25,6 +25,8 @@ feature_v2:
     internal-label: APIs and SDKs
   - id: 629f438c-ea49-5ade-aa39-c2a256ff3036
     internal-label: API
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
     internal-label: Decisioning API

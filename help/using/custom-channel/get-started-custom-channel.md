@@ -13,6 +13,8 @@ feature_v2:
     internal-label: Integrations
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
@@ -46,7 +48,7 @@ level_v2:
 
 ## What problem does it solve? {#why-custom-channels}
 
-[!DNL Journey Optimizer] natively supports Email, SMS, Push notifications, WhatsApp, LINE, and other channels. However, many organizations use messaging platforms that are not natively integrated—such as WeChat, Kakao Talk, Messenger, or an external provider—and want to use them in [!DNL Journey Optimizer] for orchestration and campaign creation while still delivering with their own vendor.
+[!DNL Journey Optimizer] natively supports Email, Mobile message, Push notifications, WhatsApp, LINE, and other channels. However, many organizations use messaging platforms that are not natively integrated—such as WeChat, Kakao Talk, Messenger, or an external provider—and want to use them in [!DNL Journey Optimizer] for orchestration and campaign creation while still delivering with their own vendor.
 
 <!--TBC: Another use case is when organizations have a legacy messaging gateway that exposes an HTTP endpoint, and they want to use it in [!DNL Journey Optimizer] without having to build a custom integration.-->
 

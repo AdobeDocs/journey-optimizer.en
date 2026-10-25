@@ -45,32 +45,34 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to enable Message Export on email and SMS channel configurations to write sent message content to an Adobe Experience Platform dataset and transfer it to your own storage.
+**On this page:** Learn how to enable Message Export on email and mobile channel configurations to write sent message content to an Adobe Experience Platform dataset and transfer it to your own storage.
 
 >[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_msg_export"
 >title="Retain and export your sent content"
->abstract="Selecting this option allows you to write the content of the sent email or SMS messages using this configuration to an [!DNL Experience Platform] dataset. Records are retained for 7 calendar days from ingestion, during which you can export them to your own storage."
+>abstract="Selecting this option allows you to write the content of the sent email or mobile messages using this configuration to an [!DNL Experience Platform] dataset. Records are retained for 7 calendar days from ingestion, during which you can export them to your own storage."
 
 >[!AVAILABILITY]
 >
->This capability is only available for the email and SMS channel, for organizations that have purchased the Message Export add-on offering. For more information, contact your Adobe representative.
+>This capability is only available for the email and mobile channel, for organizations that have purchased the Message Export add-on offering. For more information, contact your Adobe representative.
 
-**Message Export** lets you transfer sent email and SMS message content from [!DNL Journey Optimizer] to your own storage via [[!DNL Adobe Experience Platform] destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home){target="_blank"}, which enable you to deliver data out of [!DNL Experience Platform] into external endpoints.
+**Message Export** lets you transfer sent email and mobile message content from [!DNL Journey Optimizer] to your own storage via [[!DNL Adobe Experience Platform] destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home){target="_blank"}, which enable you to deliver data out of [!DNL Experience Platform] into external endpoints.
 
-With this feature, the content of email and SMS messages sent via [!DNL Journey Optimizer] which have been marked for export are written to the [!DNL Experience Platform] [AJO Message Export Dataset](message-export-schema.md).
+With this feature, the content of email and mobile messages sent via [!DNL Journey Optimizer] which have been marked for export are written to the [!DNL Experience Platform] [AJO Message Export Dataset](message-export-schema.md).
 
 Records are then retained in the dataset for seven calendar days from ingestion, during which you can export them out to the external system of your choice.
 
-Message Export is a supported alternative when you need to review or retain the exact content sent to an individual — for example, for customer-care, compliance, or downstream-system use cases. It does not generate or return a mirror page URL; it exports the sent message content and related metadata so your organization can store and display the information in its own systems.
+>[!NOTE]
+>
+>For a comparison of the archiving options in Journey Optimizer, see [Get started with message archiving](archiving-overview.md).
 
 ➡️ For common questions and answers, see the [Message Export FAQ](#message-export-faq).
 
 ## Guardrails
 
-* This feature only supports the **Email** and **SMS** channels.
+* This feature only supports the **Email** and **Mobile** channels.
 * Records in the AJO Message Export Dataset are retained **for seven calendar days** from ingestion.
 * Backfill is not supported for messages sent before enabling Message Export as described below.
 
@@ -109,7 +111,7 @@ For detailed steps, supported cloud destinations, required permissions, and more
 
 To apply Message Export to your campaigns and journeys, you must enable the dedicated option at the channel configuration level. Follow the steps below.
 
-1. In [!DNL Journey Optimizer], edit or create the desired Email or SMS [channel configuration](channel-surfaces.md#create-channel-surface).
+1. In [!DNL Journey Optimizer], edit or create the desired Email or Mobile [channel configuration](channel-surfaces.md#create-channel-surface).
 
 1. Select the **[!UICONTROL Enable Message Export]** option.
 
@@ -117,7 +119,7 @@ To apply Message Export to your campaigns and journeys, you must enable the dedi
 
 1. Save your changes and submit your channel configuration.
 
-Once you have sent messages via campaigns or journeys using this channel configuration, email and SMS messages are written to the **AJO Message Export Dataset**. You can then [access the records](#access-exported-data) in the dataset and export them to your selected storage destination based on the export dataflow that you defined.
+Once you have sent messages via campaigns or journeys using this channel configuration, email and mobile messages are written to the **AJO Message Export Dataset**. You can then [access the records](#access-exported-data) in the dataset and export them to your selected storage destination based on the export dataflow that you defined.
 
 >[!NOTE]
 >
@@ -149,11 +151,11 @@ All records in the dataset are retained for **seven calendar days** from ingesti
 
 ## Sample exported JSON {#sample-exported-json}
 
-The examples below show the overall shape of records written to the AJO Message Export Dataset for SMS and email. Values such as identifiers, schema references, timestamps, and content are illustrative; your exports reflect your sandbox, schema, and sent messages.
+The examples below show the overall shape of records written to the AJO Message Export Dataset for mobile and email. Values such as identifiers, schema references, timestamps, and content are illustrative; your exports reflect your sandbox, schema, and sent messages.
 
 Expand each section to view the full sample JSON.
 
-+++ SMS export example
++++ Mobile export example
 
 ```json
 {
@@ -332,7 +334,7 @@ Expand each section to view the full sample JSON.
 
 +++ What is Message Export?
 
-Message Export enables customers to export fully rendered messages (Email and SMS) that were sent to end users. The exported data can be delivered to external destinations using standard [!DNL Adobe Experience Platform] (AEP) export capabilities and used for purposes such as archival, compliance review, analytics, or downstream integrations.
+Message Export enables customers to export fully rendered messages (Email and Mobile) that were sent to end users. The exported data can be delivered to external destinations using standard [!DNL Adobe Experience Platform] (AEP) export capabilities and used for purposes such as archival, compliance review, analytics, or downstream integrations.
 
 +++
 
@@ -341,7 +343,7 @@ Message Export enables customers to export fully rendered messages (Email and SM
 Message Export supports:
 
 * Email
-* SMS
+* Mobile message
 
 +++
 

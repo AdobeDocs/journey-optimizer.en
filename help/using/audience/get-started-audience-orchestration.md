@@ -17,6 +17,8 @@ feature_v2:
     internal-label: Journey management
   - id: d2971708-e780-44bb-9e2a-72f139796afd
     internal-label: Customer
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
@@ -177,13 +179,15 @@ To create a composition workflow, follow these steps:
 
 1. Configure your composition by adding as many activities as needed between the **[!UICONTROL Audience]** and **[!UICONTROL Save]** activities. For more information on how to create a composition, refer to the [Audience composition documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition).
 
+    With the **[!UICONTROL Enrich]** activity, the enrichment dataset must be 1 GB or smaller, and its schema must define a primary identity. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-composition#enrich-block){target="_blank"}
+
     ![](assets/audiences-publish.png)
 
 1. Once your composition is ready, click the **[!UICONTROL Publish]** button to publish the composition and save the resulting audiences into Adobe Experience Platform.
 
     >[!IMPORTANT]
     >
-    >You can publish up to 10 compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
+    >You can publish up to 50 compositions in a given sandbox. Compositions created with [Federated audience composition](federated-audience-composition.md) are not counted. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
  
     If any error occurs during publishing, alerts will display with information on how to resolve the issue.
 
@@ -209,5 +213,7 @@ Compositions can have multiple statuses:
 >[!NOTE]
 >
 >Audience composition is currently not integrated with the sandbox reset capability. Before initiating a sandbox reset, you need to delete your compositions manually to ensure that the associated audience data is cleaned up properly. Detailed information is available in Adobe Experience Platform [Sandbox documentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html#delete-audience-compositions)
+
+If an audience composition returns an error code, see [Audience composition errors](audience-composition-errors.md).
 
 {{$include /help/_includes/do-not-localize/audience/ai-augmented-get-started-audience-orchestration.md}}

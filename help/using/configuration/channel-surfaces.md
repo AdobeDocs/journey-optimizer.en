@@ -61,13 +61,13 @@ topic_v2:
 >title="Marketing action"
 >abstract="Choose the Marketing actions to link consent policies to the messages using this setup. All consent policies connected to the marketing action will be used to honor your customers' preferences."
 
-With [!DNL Journey Optimizer], you can set up channel configurations (i.e. message presets) that define all the technical parameters required for your messages: email type, sender email and name, reply and error routing, mobile apps, SMS configuration, and more. 
+With [!DNL Journey Optimizer], you can set up channel configurations (i.e. message presets) that define all the technical parameters required for your messages: email type, sender email and name, reply and error routing, mobile apps, mobile message configuration, and more. 
 
 >[!CAUTION]
 >
 > * To create, edit and delete channel configurations, you must have the [Manage messages presets](../administration/high-low-permissions.md#administration-permissions) permission.
 >
-> * You must perform the [Email configuration](../email/get-started-email-config.md), [Push configuration](../push/push-configuration.md), [SMS configuration](../mobile/mobile-configuration.md), [In-app configuration](../in-app/inapp-configuration.md), [Code-based configuration](../code-based/code-based-configuration.md), [Web configuration](../web/web-configuration.md) and [Direct mail configuration](../direct-mail/direct-mail-configuration.md) steps before creating channel configurations.
+> * You must perform the [Email configuration](../email/get-started-email-config.md), [Push configuration](../push/push-configuration.md), [Mobile configuration](../mobile/mobile-configuration.md), [In-app configuration](../in-app/inapp-configuration.md), [Code-based configuration](../code-based/code-based-configuration.md), [Web configuration](../web/web-configuration.md) and [Direct mail configuration](../direct-mail/direct-mail-configuration.md) steps before creating channel configurations.
 
 Once channel configurations have been configured, you will be able to select them when creating messages from a journey or a campaign.
 
@@ -82,7 +82,7 @@ You can also use the guided channel setup to automate and validate channel setup
 >[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets_header"
 >title="Channel configuration settings"
->abstract="When setting up a channel configuration, select the channel it applies to, and define all the technical parameters required for your sending, such as email type, sender name, mobile apps, SMS configuration, and more."
+>abstract="When setting up a channel configuration, select the channel it applies to, and define all the technical parameters required for your sending, such as email type, sender name, mobile apps, mobile configuration, and more."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets"
@@ -173,6 +173,10 @@ Once created, channel configurations can have the following statuses:
 * **[!UICONTROL Active]**: The channel configuration has been verified and can be selected to create messages.
 * **[!UICONTROL Failed]**: One or several checks have failed during the channel configuration verification.
 * **[!UICONTROL Deactivated]**: The channel configuration is deactivated. It cannot be used to create new messages.
+
+>[!TIP]
+>
+>You can view, list, and inspect your channel configurations in Coworker with the [Channel Operation skill](../channels/channels-coworker-skills.md#channel-operation).
 
 ### Channel configuration failure reasons {#channel-config-failure}
 

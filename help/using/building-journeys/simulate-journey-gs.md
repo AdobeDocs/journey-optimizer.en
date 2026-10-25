@@ -12,6 +12,8 @@ version: Journey Orchestration
 feature_v2:
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
@@ -34,7 +36,7 @@ Adobe Journey Optimizer offers three ways to test and validate your journey:
 
 * **[Journey Test mode](testing-the-journey.md)**: Use persistent profiles flagged as test profiles in Adobe Experience Platform, reusable across sessions. Choose this approach when you need consistent, predefined data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
 
-* **[Journey Dry run](journey-dry-run.md)**: Run the journey against real production audience and segmentation data without contacting real customers or updating profile information. Action nodes such as email, SMS, and custom actions are bypassed. [Learn more about Journey Dry run](journey-dry-run.md).
+* **[Journey Dry run](journey-dry-run.md)**: Run the journey against real production audience and segmentation data without contacting real customers or updating profile information. Action nodes such as email, mobile message, and custom actions are bypassed. [Learn more about Journey Dry run](journey-dry-run.md).
 
 Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
@@ -84,6 +86,8 @@ Simulated users selected for the simulation and configured events will be visibl
 ## Launch Simulation {#launch}
 
 Switch the journey to **[!UICONTROL Simulation]** to test with simulated users. Step-by-step tasks are detailed in [Simulate your journey](simulate-journey.md).
+
+1. Click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
 
 1. From your journey, click **[!UICONTROL Simulate]** and choose **[!UICONTROL Simulation]**.
 

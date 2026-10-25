@@ -30,8 +30,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Identity Graph — Acronym: n/a — variants: identity graph
-* Synonyms: "fully qualified identity" = "identity namespace + identity value"
+* Canonical name: Identity Graph
 * Do not confuse: "identity namespace" (indicator of context) ≠ "identity value" (string representing an entity)
 
 **FAQ:**
@@ -42,4 +41,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: b9345d78 -->
+<!-- ai-section-version: 1 | source-hash: 2beb1677 -->

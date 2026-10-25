@@ -75,7 +75,7 @@ The KPIs will vary based on the channels used in your campaign.
 +++
 
 >[!AVAILABILITY]
->Orchestrated campaigns only support the SMS, Email, and Push channels. Other channels (In-app, Web, Direct mail, etc.) are not available in orchestrated campaigns and do not appear in reporting.
+>Orchestrated campaigns only support the Mobile, Email, and Push channels. Other channels (In-app, Web, Direct mail, etc.) are not available in orchestrated campaigns and do not appear in reporting.
 
 ### Campaign overview {#delivery-global}
 

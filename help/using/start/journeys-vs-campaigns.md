@@ -219,7 +219,7 @@ Everyone gets the same message at the same time.
 |---------|:--------:|:----------------:|:-----------------------:|
 | Email | ✅ | ✅ | ✅ |
 | Push | ✅ | ✅ | ✅ |
-| SMS | ✅ | ✅ | ✅ |
+| Mobile messages | ✅ | ✅ | ✅ |
 | In-app | ✅ | ✅ | ✅ |
 | Web | ✅ | ✅ | ❌ |
 | Code-based | ✅ | ✅ | ❌ |

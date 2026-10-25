@@ -31,7 +31,44 @@ level_v2:
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## October 2026 {#october-2026}
+
+* A new **Choose a consent level for opt-outs** page explains the difference between the **Channel** and **Identity** consent levels, with an example and guidance on which to choose. The **List unsubscribe** and **Manage email opt-out** pages now link to it. [Read more](../email/consent-level.md)
+* The **Frequency capping**, **Quiet hours**, and **Rule sets** pages now list custom channels among the channels supported by business rules. [Read more](../conflict-prioritization/channel-capping.md)
+
+* A new **Troubleshooting overview** page and 14 error pages give the cause and the fix for each error code, grouped by feature area: Journeys, Campaigns, Content, and Configuration. Related feature pages now link to the matching error page. [Read more](../../rp_landing_pages/troubleshooting-overview-landing-page.md)
+
+* Notes have been added to clarify that custom upload (CSV) audiences are not supported as targeting audiences for inbound channel actions, including in-app messages and web or code-based experiences. Campaigns that use them with an inbound channel fail with an upstream error. [Read more](../audience/target-audiences.md#guardrails)
+
+* The **Use visual fragments** page has been updated to reflect the current fragment limits: you can add up to 60 unique fragments per variant, and up to 120 distinct fragments across all variants of a multilingual message. [Read more](../email/use-visual-fragments.md)
+
+* The **Batch delivery** page now clarifies that batch decisioning uses profile snapshot data, which does not include experience events (xEvents). Offers that depend on xEvent data may not qualify, and the fallback offer may be returned. Use profile attributes or audiences instead. [Read more](../offers/batch-delivery.md)
+
+* The **Guardrails and limitations** page now documents the maximum of 10 lookups per inbound message request, including external data and dataset lookups. It explains that exceeding the limit fails the entire request with an HTTP 422 error and provides guidance to consolidate or reduce lookups. [Read more](../start/guardrails.md#inbound-guardrails)
+
+* The **Datasets Time-to-live (TTL) guardrails** and **Guardrails and limitations** pages now state that the TTL rollout to existing customer sandboxes has been delayed by Adobe (originally planned for October 1, 2026). The TTL page also links to the Experience Platform TTL guide for initiating a TTL update outside of this rollout. [Read more](../data/datasets-ttl.md)
+
+* A caution has been added to the **Customizable fragments** page to inform users that enabling rich text on a legacy customizable visual fragment may cause styling loss in journeys, campaigns, or templates already using it. [Read more](../content-management/customizable-fragments.md#rich-text-visual)
+
+* A new **Configure OAuth 2.0 authentication** page explains how to set up OAuth 2.0 authentication for custom channels, including the token request payload (form or JSON), credential paths, token extraction, and where the token is added to delivery requests. It also lists the limits and validation rules. [Read more](../custom-channel/custom-channel-oauth2.md)
+
+* A new **Archiving** section groups the options for retaining sent messages. The new **Get started with message archiving** page compares BCC email and Message Export, and explains why mirror pages and the Entity Dataset are not archiving options. The BCC page has been renamed **Archive emails using BCC**, and **Export message content** now sits in the same section. [Read more](../configuration/archiving-overview.md)
+
+* The **Channel configuration** section has been reorganized to make it easier to navigate. Redundant landing pages have been removed, and their content now lives in the **Get started with channels configuration** and **Subdomain delegation** pages. [Read more](../configuration/get-started-configuration.md)
+
+* The **Manage fragments** page now clarifies that fragment changes made after a Read Audience journey has started apply to the next batch run for recurring journeys, while one-time journeys must be republished. [Read more](../content-management/manage-fragments.md#edit-fragments)
+
+* The **Manage allowed IPs** page now clarifies that changes to the allowed list are cached and can take up to one hour to be enforced, whether you add, edit, or remove IPs. [Read more](../configuration/waf-ip-allowlist.md#waf-ip-allowlist-add)
+
+* The **Add constraints to an offer** page now clarifies that Edge Decisioning frequency capping is enforced only in edge regions associated with your Organization's hub region, and that profile counters are not shared across edge regions. A VA7 example and guidance for global audiences have been added. [Read more](../offers/offer-library/add-constraints.md#frequency-capping)
+
+* The **Delegate a subdomain** page now clarifies that CAA or DNS validation record issues on any domain sharing a multi-SAN SSL certificate can block certificate provisioning, even when the new subdomain's DNS records are correct. Guidance has been added for checking DNS validation records and CAA configuration across all subdomains sharing the certificate. [Read more](../configuration/delegate-subdomain.md#subdomain-validation)
+
+* A caution has been added to the **Delegate a subdomain** page to inform users that a separate DNS zone or SOA record for the subdomain causes the delegation to fail. It explains how to remove the subdomain zone and configure NS records at the parent domain level instead. [Read more](../configuration/delegate-subdomain.md#submit-subdomain)
+
 ## September 2026 {#september-2026}
+
+* A note has been added to clarify that some email providers, such as Gmail, do not share user-level spam complaint data, so recipients who mark a message as spam are not automatically added to the suppression list. [Read more](../configuration/manage-suppression-list.md#suppression-categories-and-reasons)
 
 * The **Create a direct mail message** page now clarifies extraction-file generation in the **Journey** and **Campaign** tabs: journey files follow the routing frequency and can result in multiple files per day, while campaign files are generated when each campaign execution starts. The page also explains how to ensure one file per day for journeys. [Read more](../direct-mail/create-direct-mail.md#create-dm-campaign)
 
@@ -211,7 +248,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Key Terminology** page has been overhauled: six new terms added, a new **Conflict & prioritization terms** section introduced, and a new **When terms look similar** disambiguation guide added for four commonly confused term pairs. Adobe Experience Platform-specific terms have been removed and replaced with a note linking to the Adobe Experience Platform glossary. [Read more](../start/terminology.md)
 
-* The **Deep links** documentation has been expanded with a new **Authoring deep links** section detailing the two options available for email (Email Designer UI and Personalization Editor code) and the URL function syntax for SMS. The **Create an SMS message** page now includes a deep link step in the content authoring flow. [Read more](../email/deeplinks.md)
+* The **Deep links** documentation has been expanded with a new **Authoring deep links** section detailing the two options available for email (Email Designer UI and Personalization Editor code) and the URL function syntax for mobile messages. The **Create a Mobile message** page now includes a deep link step in the content authoring flow. [Read more](../email/deeplinks.md)
 
 * The **Url** helper reference has been updated with a dedicated section in the Personalization documentation. [Read more](../personalization/functions/helpers.md#url)
 

@@ -26,15 +26,15 @@ level_v2:
     internal-label: Intermediate
 ---
  
-# Use and configure deep links in emails and SMS {#deeplinks}
+# Use and configure deep links in emails and mobile messages {#deeplinks}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to author deep links in email and SMS content, configure them in Adobe Journey Optimizer, and handle the tracked links in your iOS and Android apps so recipients land on the right in-app screen.
+**On this page:** Learn how to author deep links in email and mobile content, configure them in Adobe Journey Optimizer, and handle the tracked links in your iOS and Android apps so recipients land on the right in-app screen.
 
 >[!ENDSHADEBOX]
 
-Deep links help you take recipients from an email or SMS message to a specific screen or piece of content in your mobile app. It helps bring people straight to the intended in-app experience, without routing them through a web browser or an app store, so the journey stays relevant and on-brand.
+Deep links help you take recipients from an email or mobile message to a specific screen or piece of content in your mobile app. It helps bring people straight to the intended in-app experience, without routing them through a web browser or an app store, so the journey stays relevant and on-brand.
 
 When your recipients click the deep link, they are taken directly to the intended in-app content - **provided you have completed**:
 
@@ -69,11 +69,11 @@ For email messages, you have two options to insert a deep link:
     >Replace `<<deeplink_url>>` with your actual deep link URL and use a unique `id` for each block to avoid conflicts.
 
 
-### SMS {#authoring-sms}
+### Mobile message {#authoring-sms}
 
-For SMS, deep links are authored using the [Url](../personalization/functions/helpers.md#url) helper function in the personalization editor. Learn how to add links to SMS content in [this section](../mobile/design-mobile.md#sms-content).
+For Mobile message, deep links are authored using the [Url](../personalization/functions/helpers.md#url) helper function in the personalization editor. Learn how to add links to mobile content in [this section](../mobile/design-mobile.md#sms-content).
 
-To insert deep links in SMS content, use the following syntax:
+To insert deep links in Mobile message content, use the following syntax:
 
 ```
 {{url originalUrl='<<url>>' type='DEEPLINK' action='CLICK'}}
@@ -85,7 +85,7 @@ To insert deep links in SMS content, use the following syntax:
 
 ## Configuration in Journey Optimizer {#configuration}
 
-To be able to use deep links in emails and SMS for your mobile apps, complete the configuration steps below.
+To be able to use deep links in emails and mobile for your mobile apps, complete the configuration steps below.
 
 >[!NOTE]
 >
@@ -105,7 +105,7 @@ To be able to use deep links in emails and SMS for your mobile apps, complete th
 
 >[!IMPORTANT]
 >
->Deep linking through Adobe infrastructure applies when link tracking is enabled for your message — in the[ email tracking settings](message-tracking.md#enable-tracking) or in the **[!UICONTROL Actions tracking]** section for SMS campaigns. Tracked deep link clicks use URLs under `/ee/v1/mclick/*`, which Adobe hosts and resolves.
+>Deep linking through Adobe infrastructure applies when link tracking is enabled for your message — in the[ email tracking settings](message-tracking.md#enable-tracking) or in the **[!UICONTROL Actions tracking]** section for Mobile campaigns. Tracked deep link clicks use URLs under `/ee/v1/mclick/*`, which Adobe hosts and resolves.
 >
 >For **non-tracked** links, the URL is not rewritten through Adobe systems. You must configure universal links or app links on your own domains and hosting so those links open your app as intended.
 
@@ -330,7 +330,7 @@ URL-encode query parameter values. This reduces delivery and rendering issues an
  
 * Create a proof with a deep link, click it on iOS and Android devices (installed and not installed scenarios).
 * Validate:
-  * The final email or SMS link value (host/path/query)
+  * The final email or mobile message link value (host/path/query)
   * The OS-level association (if using universal links / app links)
   * The in-app routing outcome
  

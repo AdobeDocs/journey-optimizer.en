@@ -15,6 +15,10 @@ product_v2:
 feature_v2:
   - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
     internal-label: Data management activity
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
@@ -81,7 +85,7 @@ To preview a dataset, select **Preview dataset** near the top-right corner of yo
 
 ## [!DNL Journey Optimizer] system datasets {#system-datasets}
 
-This sections lists system datasets used by [!DNL Journey Optimizer]. To view the complete list of fields and attributes for each schema, consult the [Journey Optimizer schema dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
+This sections lists system datasets used by [!DNL Journey Optimizer]. To view the complete list of fields and attributes for each schema, consult the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -103,7 +107,7 @@ This sections lists system datasets used by [!DNL Journey Optimizer]. To view th
 
 * Message Export
 
-    _AJO Message Export Dataset_: stores the content of sent email and SMS messages for export purposes. Records are retained for 7 calendar days from ingestion. Available only for organizations that have purchased the Message Export add-on. [Learn more](../configuration/message-export.md)
+    _AJO Message Export Dataset_: stores the content of sent email and mobile messages for export purposes. Records are retained for 7 calendar days from ingestion. Available only for organizations that have purchased the Message Export add-on. [Learn more](../configuration/message-export.md)
 
 * Intelligent Services
 

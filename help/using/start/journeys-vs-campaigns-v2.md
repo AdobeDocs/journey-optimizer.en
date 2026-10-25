@@ -119,7 +119,7 @@ Monday 9 AM → Send newsletter to 100,000 subscribers → All receive simultane
 
 ### Channels
 
-All three approaches support the full AJO outbound channel set: email, push, SMS, LINE, and WhatsApp. The table below shows differences for inbound and digital channels.
+All three approaches support the full AJO outbound channel set: email, push, mobile messages, LINE, and WhatsApp. The table below shows differences for inbound and digital channels.
 
 | Channel | Journeys | Action campaigns | API-triggered campaigns |
 |---------|:--------:|:----------------:|:-----------------------:|

@@ -45,8 +45,8 @@ Every RCS message requires a **[!UICONTROL Default fallback text]**: a plain-tex
 
 Keep the following in mind when writing fallback text:
 
-* **Keep it concise.** SMS messages are limited to 160 characters per segment; longer messages are split into multiple parts and may incur additional charges.
-* **Include key URLs.** If your RCS message links to a URL via action buttons, add a shortened URL to the fallback text so SMS profiles can still reach the destination.
+* **Keep it concise.** Mobile messages are limited to 160 characters per segment; longer messages are split into multiple parts and may incur additional charges.
+* **Include key URLs.** If your RCS message links to a URL via action buttons, add a shortened URL to the fallback text so Mobile profiles can still reach the destination.
 * **Avoid RCS-only references.** Do not mention visuals, carousels, or interactive features that are not available in plain SMS.
 * **Personalization is supported.** You can use personalization tokens in fallback text to keep the message feel consistent across both versions.
 
@@ -232,5 +232,7 @@ To create MMS content, follow these steps:
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed below.
 
 Once you have performed your tests and validated the content, you can send your Mobile message to your audience. These steps are detailed on [this page](send-mobile-message.md)
+
+If your SMS, MMS or RCS content returns an error code, see [Content authoring errors](../content-management/content-authoring-errors.md).
 
 {{$include /help/_includes/do-not-localize/mobile/ai-augmented-design-mobile.md}}

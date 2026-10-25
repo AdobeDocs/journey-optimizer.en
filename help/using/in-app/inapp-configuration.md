@@ -6,7 +6,7 @@ feature: In App
 level: Intermediate
 keywords: in-app, message, configuration, platform
 exl-id: 469c05f2-652a-4899-a657-ddc4cebe3b42
-TQID: https://experienceleague.adobe.com/GWlxb1IJ5oZue5m0s4nN7iOa1S-IfHEFNuU7Lcj0H2s
+TQID: 'https://experienceleague.adobe.com/GWlxb1IJ5oZue5m0s4nN7iOa1S-IfHEFNuU7Lcj0H2s'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -15,6 +15,8 @@ feature_v2:
     internal-label: Communication channels
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
     internal-label: Overview
@@ -58,8 +60,8 @@ To send In-app messages in your journeys and campaigns with [!DNL Journey Optimi
 
 1. Make sure you have the correct permissions on Journey Optimizer campaigns before starting, even if you plan to only use in-app messages in journeys. Campaign permissions are still required. [Learn more](../campaigns/get-started-with-campaigns.md#prerequisites).
 1. Enable Adobe Journey Optimizer in your Adobe Experience Platform Data Collection datastream, and check your default merge policy in Adobe Experience Platform, as detailed in the [Delivery prerequisites](#delivery-prerequisites) below. 
-1. Create an In-app message channel configuration in Administration > Channels > Channel configurations, as detailed in [this section](#channel-prerequisites). 
-1. If you are using content experiments, make sure to follow the requirements listed in [this section](#experiment-prerequisite).
+1. Create an In-app message channel configuration in Administration > Channels > General settings > Channel configurations, as detailed in [this section](#channel-prerequisites). 
+1. If you are using content experiments, make sure to follow the requirements listed in [this section](#experiment-prerequisites).
 
 Once done, you can create, configure and send your first In-app message. Learn how to achieve this in [this section](create-in-app.md).
 
@@ -91,9 +93,9 @@ For the In-app messages to be delivered correctly, the following settings must b
 
     ![](assets/inapp_config_8.png)
 
-* To troubleshoot the delivery of Journey Optimizer mobile experiences, you can use the **Edge Delivery** view within **Adobe Experience Platform Assurance**. This plugin enables you to inspect request calls in detail, verify whether the expected edge calls occur as anticipated, and examine profile data, including identity maps, segment memberships, and consent settings. Additionally, you can review the activities the request qualified for and identify those it did not.
+* To troubleshoot the delivery of Journey Optimizer mobile experiences, you can use the **Edge Delivery** view within **Adobe Experience Platform Assurance**. This view enables you to inspect request calls in detail, verify whether the expected edge calls occur as anticipated, and examine profile data, including identity maps, segment memberships, and consent settings. Additionally, you can review the activities the request qualified for and identify those it did not.
 
-    Using the **Edge Delivery** plugin helps you gain the insights needed to understand and troubleshoot your inbound implementations effectively.
+    Using the **Edge Delivery** view helps you gain the insights needed to understand and troubleshoot your inbound implementations effectively.
 
     [Learn more about Edge Delivery view](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/view/edge-delivery){target="_blank"}
 
@@ -105,17 +107,17 @@ To create an In-app configuration in Journey Optimizer, follow these steps:
 
     ![](assets/inapp_config_1.png)
 
-1. Enter a name and a description (optional) for the configuration, then select the channel to configure.
+1. Enter a name and a description (optional) for the configuration.
 
     >[!NOTE]
     >
-    > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
+    > Names must begin with a letter (A-Z). Names can only contain alpha-numeric characters. You can also use underscore `_`, dot `.` and hyphen `-` characters.
 
 1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md).
 
 1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#surface-marketing-actions)
 
-1. Select **In-app messaging** channel.
+1. From the **[!UICONTROL Select channel]** drop-down, select **[!UICONTROL In-app messaging]**.
 
     ![](assets/inapp_config_9.png)
 
@@ -130,9 +132,9 @@ To create an In-app configuration in Journey Optimizer, follow these steps:
 
 1. For Web: 
 
-    * You can either input a **[!UICONTROL Page URL]** to apply changes to a specific page.
+    * To target one page, enter its **[!UICONTROL Page URL]**.
 
-    * You can create a rule to target multiple URLs that follow the same pattern. 
+    * To target multiple pages that follow the same pattern, create a Pages matching rule.
 
         +++ How to build a Pages matching rule.
 
@@ -171,7 +173,7 @@ If you are **not** using the following pre-defined [field groups](https://experi
 
 >[!NOTE]
 >
->* The dataset is used read-only by the [!DNL Journey Optimizer] reporting system and doesn't affect data collection or data ingestion.
+>* The dataset is used read-only by the [!DNL Journey Optimizer] reporting system and does not affect data collection or data ingestion.
 >* Adding the required field groups is additive only — it applies to pages where a campaign or journey is running and leaves all other tracking untouched.
 
 **Related topics:**

@@ -17,6 +17,8 @@ feature_v2:
     internal-label: Build expressions
   - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
     internal-label: Personalization
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: a757b957-83f3-4a4d-9775-a93854f84f77
     internal-label: Conditional instruction

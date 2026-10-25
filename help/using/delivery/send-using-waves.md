@@ -46,7 +46,8 @@ You define the number of waves, their size (as a percentage of the audience or a
 
 The following limitations apply to wave sending in any context:
 
-* Wave sending applies to **outbound** channels only (Email, SMS, Push, Direct mail).
+* Wave sending applies to **outbound** channels only (Email, Mobile message, Push).
+* **Direct mail is not currently supported** for wave sending. You cannot send direct mail messages in waves.
 * You must define at least **2 waves** and you can add up to **10 waves**.
 * The minimum interval between the start of two waves is **30 minutes**.
 * A wave start cannot be set in the past.
@@ -72,6 +73,8 @@ Additional context-specific constraints apply:
 >[!TAB Orchestrated campaigns]
 
 * Wave sending is configured at the **channel activity level**, independently for each channel activity in the campaign.
+* Wave sending is not available for recurring or signal-triggered Orchestrated campaigns.
+* A wave start cannot be before the campaign start.
 
 >[!ENDTABS]
 
@@ -111,7 +114,7 @@ The steps to enable wave sending depend on your context — read-audience journe
 
 >[!TAB Action campaigns]
 
-1. Create or open an [Action campaign](../campaigns/create-campaign.md) that contains an outbound action (Email, SMS, Push, or Direct mail).
+1. Create or open an [Action campaign](../campaigns/create-campaign.md) that contains an outbound action (Email, Mobile message, or Push).
 
 1. In the **[!UICONTROL Schedule]** tab of your campaign, select **[!UICONTROL Deliver campaign actions in waves]**.
 
@@ -131,7 +134,7 @@ The steps to enable wave sending depend on your context — read-audience journe
 
 >[!TAB Orchestrated campaigns]
 
-1. Open a channel activity (Email, SMS, Push, or Direct mail) in your orchestrated campaign canvas.
+1. Open a channel activity (Email, Mobile message, or Push) in your orchestrated campaign canvas.
 
 1. Go to the **[!UICONTROL Schedule]** tab of the channel activity.
 
@@ -239,7 +242,13 @@ In summary: *who* is included is fixed upfront, but *the data used to personaliz
 
 +++ Does wave sending work with inbound channels?
 
-No. Wave sending applies to **outbound** channel actions only: Email, SMS, Push notifications, and Direct mail. Inbound channels (such as Web, In-app, or Code-based experiences) are not affected by wave sending configuration.
+No. Wave sending applies to **outbound** channel actions only: Email, Mobile message, and Push notifications. Inbound channels (such as Web, In-app, or Code-based experiences) are not affected by wave sending configuration.
+
++++
+
++++ Does wave sending work with direct mail?
+
+No. Wave sending is not currently supported for the **Direct mail** channel. Direct mail messages cannot be sent in waves.
 
 +++
 

@@ -106,7 +106,7 @@ To add expression fragments to your content, follow the steps below.
 
 >[!NOTE]
 >
->If you create an expression fragment that contains multiple line breaks and use it in [SMS](../mobile/create-mobile-message.md#sms-content) or [push](../push/design-push.md) content, the line breaks are preserved. Thus make sure to test your [SMS](../mobile/send-mobile-message.md) or [push](../push/send-push.md) message before sending it.
+>If you create an expression fragment that contains multiple line breaks and use it in [Mobile message](../mobile/create-mobile-message.md#sms-content) or [push](../push/design-push.md) content, the line breaks are preserved. Thus make sure to test your [Mobile message](../mobile/send-mobile-message.md) or [push](../push/send-push.md) message before sending it.
 
 ## Use implicit variables {#implicit-variables}
 

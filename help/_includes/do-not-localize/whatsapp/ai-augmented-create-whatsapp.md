@@ -9,20 +9,20 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to create a WhatsApp message in Journey Optimizer by adding a WhatsApp action to a journey or campaign, building content from a Meta-approved template, adding media and personalization, and previewing it with Simulate content.
+* **TL;DR:** This page explains how to create a WhatsApp message in Journey Optimizer by adding an Action activity with the WhatsApp channel selected to a journey, or by creating a campaign with the WhatsApp channel, building content from a Meta-approved template, adding media and personalization, and previewing it with Simulate content.
 
 **Intents:**
 
-* Add a WhatsApp action to a journey or a campaign
+* Add an Action activity with the WhatsApp channel to a journey, or create a campaign with the WhatsApp channel
 * Choose a Template category (Marketing, Utility, or Authentication) and select a Meta-approved WhatsApp template
 * Add media URLs to replace template placeholders and personalize the template content
-* Configure call-to-action and quick reply buttons supported by WhatsApp
+* Identify the message elements and call-to-action options supported for WhatsApp messages
 * Preview WhatsApp content, shortened URLs, and personalization with Simulate content
 * Track clicks and supported WhatsApp button interactions in campaign reporting
 
 **Glossary:**
 
-* **WhatsApp action**: A channel action added to a journey or campaign that sends a WhatsApp message to profiles when they reach that step *(product-specific)*
+* **WhatsApp channel**: The channel selected in the Action activity of a journey, or in a campaign, to send a WhatsApp message to profiles when they reach that step *(product-specific)*
 * **WhatsApp template**: A message template created and designed in Meta that must be approved by Meta before it can be selected in Journey Optimizer *(product-specific)*
 * **Template category**: The classification of a WhatsApp template — Marketing, Utility, or Authentication *(product-specific)*
 * **WhatsApp Flow template**: A template type that delivers interactive multi-screen experiences such as surveys or lead capture forms within the WhatsApp conversation *(product-specific)*
@@ -40,20 +40,18 @@ For complete understanding, this information should be combined with the documen
 * Documents must be under 100 MB, hosted on a URL, and in .txt, .xls/.xlsx, .doc/.docx, .ppt/.pptx, or .pdf format.
 * A WhatsApp template must first be designed in Meta and approved by Meta before use; approval usually takes a few hours but may take up to 24 hours.
 * Meta's template media are only placeholders; to display images, audio, or video you must provide external URLs (from Adobe Experience Manager or other sources).
-* For campaigns, only the **Scheduled - Marketing** campaign type is described, with Frequency options of Once, Daily, Weekly, or Month.
+* For campaigns, select the **Scheduled - Marketing** campaign type; the Frequency options are Once, Daily, Weekly, or Month.
 * All inbound WhatsApp responses, including those submitted through WhatsApp Flow templates, are captured in the AJO Channel Tracking Event Dataset.
 
 **Terminology:**
 
-* Canonical name: WhatsApp action — Acronym: n/a — variants: WhatsApp activity, WhatsApp channel action
+* Canonical name: WhatsApp channel — Acronym: n/a
 * Synonyms: "Visit website" = "Call to action – URL"
-* Do not confuse: "Quick reply" (short preset tappable replies) ≠ "Call to action" buttons (Visit website, Call on WhatsApp, Call phone number)
 * Do not confuse: "Call on WhatsApp" (opens a WhatsApp chat with the specified number) ≠ "Call phone number" (initiates a phone call to the number)
-* Do not confuse: "Marketing" ≠ "Utility" ≠ "Authentication" (Template categories)
 
 **FAQ:**
 
-* **Q: How do I create a WhatsApp message?** — Add a WhatsApp action to a journey or campaign, then use the Edit content button to choose a Template category, select a Meta-approved WhatsApp template, add media URLs, and personalize it.
+* **Q: How do I create a WhatsApp message?** — Add an Action activity with the WhatsApp channel to a journey, or create a campaign with the WhatsApp channel, then use the Edit content button to choose a Template category, select a Meta-approved WhatsApp template, add media URLs, and personalize it.
 * **Q: Do I create the WhatsApp template in Journey Optimizer?** — No. You first create and design your template in Meta, and it must be approved by Meta before you can select it in Journey Optimizer.
 * **Q: How long does Meta template approval take?** — It usually takes a few hours but may take up to 24 hours.
 * **Q: Why do my template's images or videos not display?** — Meta's template media are only placeholders; you must supply external URLs (from Adobe Experience Manager or other sources) in the Image URL field.
@@ -62,4 +60,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: abd76bc6 -->
+<!-- ai-section-version: 1 | source-hash: a9b0fb9b -->

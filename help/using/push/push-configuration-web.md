@@ -149,7 +149,7 @@ The following schemas and datasets are available with the push notification chan
 >
 >When push tracking events are ingested into the CJM Push Tracking Experience Event dataset, some failures can happen, even though data is partly ingested successfully. This can occur if some fields in your mapping do not exist in incoming events: the system logs warnings but does not prevent ingestion of valid portions of the data. These warnings appear in batch status as 'failed' but reflect partial ingestion success.
 >
->To view the complete list of fields and attributes for each schema, consult the [Journey Optimizer schema dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
+>To view the complete list of fields and attributes for each schema, consult the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 ### Configure the pushNotification property {#push-property}
 

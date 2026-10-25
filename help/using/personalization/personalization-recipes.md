@@ -33,7 +33,7 @@ level_v2:
 
 >[!ENDSHADEBOX]
 
-This page provides ready-to-use personalization patterns for the most common use cases in Adobe Journey Optimizer. All examples use the personalization editor syntax and can be copied directly into email, SMS, or push content.
+This page provides ready-to-use personalization patterns for the most common use cases in Adobe Journey Optimizer. All examples use the personalization editor syntax and can be copied directly into email, mobile, or push content.
 
 For a complete reference of available functions, see [Helper functions](functions/helpers.md), [Date/time functions](functions/dates.md), [String functions](functions/string.md), and [Array functions](functions/arrays-list.md).
 
@@ -129,7 +129,7 @@ Our team will get back to you within 24 hours.
 
 ### Recipe 6 — List all items from a profile array {#recipe-list-items}
 
-Use `{{#each}}` to iterate over a profile array and render each item. This is available in the personalization editor (email, SMS, push) only:
+Use `{{#each}}` to iterate over a profile array and render each item. This is available in the personalization editor (email, mobile, push) only:
 
 ```handlebars
 {{#each profile.purchases.recentItems}}

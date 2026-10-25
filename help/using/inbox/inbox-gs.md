@@ -14,6 +14,8 @@ feature_v2:
     internal-label: Communication channels
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: bd995268-c4fc-41c8-8f09-eb370effe46e
     internal-label: Inbox channel

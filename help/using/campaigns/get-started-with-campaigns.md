@@ -10,7 +10,7 @@ level: Beginner
 mini-toc-levels: 1
 keywords: campaign, how to , start, optimizer
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
-TQID: https://experienceleague.adobe.com/3yMQM-hovd-3HgT9PlhNvpKlxG3m4NMqnZwv-dbZACU
+TQID: 'https://experienceleague.adobe.com/3yMQM-hovd-3HgT9PlhNvpKlxG3m4NMqnZwv-dbZACU'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Journey Optimizer campaigns
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: f7479fa1-474b-479d-8c98-f6cee5865a38
     internal-label: API triggered campaigns
@@ -114,12 +116,12 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_api_marketing"
 >title="Campaigns"
->abstract="Deliver personalized marketing communications to targeted audiences. Supported channels: Email, SMS, Push notifications."
+>abstract="Deliver personalized marketing communications to targeted audiences. Supported channels: Email, Mobile messages, Push notifications."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_api_transactional"
 >title="Campaigns"
->abstract="Deliver transactional communications to individual profiles or sets of profiles. Supported channels: Email, SMS, Push notifications."
+>abstract="Deliver transactional communications to individual profiles or sets of profiles. Supported channels: Email, Mobile messages, Push notifications."
 
 Adobe Journey Optimizer empowers you to deliver targeted, one-time content to specific audiences across multiple channels. Using campaigns, you can execute coordinated marketing actions simultaneously, reaching your audience with the right message at the right time.
 
@@ -132,7 +134,7 @@ This guide provides a clear roadmap to help you understand campaign fundamentals
 Use [!DNL Journey Optimizer] campaigns to:
 
 * Deliver **one-time or recurring content** to targeted audience segments
-* Execute **coordinated multi-channel communications** across email, push, SMS, in-app, web, and more
+* Execute **coordinated multi-channel communications** across email, push, mobile, in-app, web, and more
 * Trigger **automated responses** via API calls for real-time, event-driven messaging
 * Design **complex marketing workflows** with visual orchestration tools
 
@@ -242,7 +244,7 @@ Before starting, clarify your objectives:
 * **What's the goal?** (e.g., drive conversions, increase engagement, notify customers)
 * **Who's the audience?** (e.g., build or select from Adobe Experience Platform)
 * **Which campaign type fits?** (See [campaign types](#campaign-types) above)
-* **What channels will you use?** (email, push, SMS, in-app, web, etc.) → [See supported channels by campaign type](../channels/gs-channels.md#channels)
+* **What channels will you use?** (email, push, mobile, in-app, web, etc.) → [See supported channels by campaign type](../channels/gs-channels.md#channels)
 * **When should it execute?** (immediate, scheduled, or API-triggered)
 
 +++
@@ -267,7 +269,7 @@ Create compelling messages for your audience:
 
 * Use the **Email Designer** for rich email experiences
 * Configure **push notifications** with images and deep links
-* Design **SMS/RCS/MMS messages** with personalization
+* Design **Mobile messages** with personalization
 * Create **in-app** and **web** experiences
 * Add **personalization** using profile attributes and contextual data
 
@@ -392,3 +394,5 @@ Use targeting rules and content experiments to deliver personalized content and 
 :::
 
 ::::
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-get-started-with-campaigns.md}}

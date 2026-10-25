@@ -93,7 +93,7 @@ Below are the first steps to configure a new event:
 
    >[!NOTE]
    >
-   >When you select the **[!UICONTROL System Generated]** type, only schemas that have the eventID type field are available. When you select the **[!UICONTROL Rule Based]** type, all Experience Event schemas are available.
+   >When you select the **[!UICONTROL System Generated]** type, only schemas that have the eventID type field are available. When you select the **[!UICONTROL Rule Based]** type, you can select any Experience Event schema available in your sandbox.
 
 1. For rule-based events, click inside the **[!UICONTROL Event ID condition]** field. Using the simple or advanced expression editor, define the condition that will be used by the system to identify the events that will trigger your journey.
 

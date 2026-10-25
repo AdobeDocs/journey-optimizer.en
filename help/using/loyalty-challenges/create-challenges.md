@@ -76,6 +76,8 @@ Creating a challenge involves the following steps:
 
    After selecting a challenge type, the challenge editor opens with these tabs: **[!UICONTROL Settings]**, **[!UICONTROL Structure]**, **[!UICONTROL Content]**, and **[!UICONTROL Messaging]**. Start with **[!UICONTROL Settings]** to define challenge details, audience, schedule, and rules. Then configure **[!UICONTROL Structure]** (tasks and rewards) for all types except **[!UICONTROL Bring your own data]**.
 
+   Your changes are saved automatically a couple of seconds after you stop editing. Challenge start and end dates are optional while you work on a draft, but they are required to publish the challenge.
+
 ## Configure challenge settings {#settings}
 
 In the **[!UICONTROL Settings]** tab, configure challenge-level properties: who can participate, when the challenge runs, how members opt in and earn progress, and optional metadata.
@@ -115,41 +117,67 @@ Define who can participate in your loyalty challenge.
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_schedule"
 >title="Challenge schedule"
->abstract="Set when the challenge is live using start and end date and time and a time zone, or select No end date to run the challenge indefinitely. In the task completion window, choose when customers can complete tasks during the challenge period."
+>abstract="Set the challenge start, end, and time zone. Enable Advanced scheduling to configure enrollment, progress tracking, and completion requirements. If a challenge end date and a deadline based on opt-in are both set, the earlier deadline applies."
 
-Configure when your challenge runs:
+Configure when your challenge runs in the **[!UICONTROL Schedule]** section:
 
-1. In the **[!UICONTROL Schedule]** section, set:
+   ![Challenge date settings](assets/challenge-schedule-dates.png)
 
-   * **[!UICONTROL Start date and time]**: When the challenge becomes available to customers.
-   * **[!UICONTROL End date and time]**: When the challenge expires and no longer accepts new completions. Select **[!UICONTROL No end date]** instead of a date to run the challenge indefinitely.
-   * **[!UICONTROL Time zone]**: The time zone used for the challenge schedule.
+   * **[!UICONTROL Challenge start]**: The date and time when the challenge starts.
+   * **[!UICONTROL Challenge end]**: The date and time when the challenge ends. Select **[!UICONTROL No end date]** to run the challenge without a fixed end date, for example when each member's completion deadline is based on their opt-in date.
+   * **[!UICONTROL Time zone]**: The time zone used for the challenge schedule. The challenge start and end times use this time zone for all loyalty members.
 
-   ![](assets/challenge-create-schedule.png)
+Enable **[!UICONTROL Advanced scheduling]** to configure enrollment, progress tracking, and completion requirements separately from the challenge dates.
 
-1. Under **[!UICONTROL Task completion window]**, choose when customers can complete tasks:
+1.  **[!UICONTROL Enrollment]**:
 
-   * **[!UICONTROL Any time during challenge]**: Customers can complete tasks at any time between the challenge start and end dates.
-   * **[!UICONTROL During specific hours of the day]**: Restrict task completion to specific daily hours by setting **[!UICONTROL Start Time]** and **[!UICONTROL End Time]**.
+   ![Enrollment settings](assets/challenge-schedule-enrollment.png)
+
+   * **[!UICONTROL Opt-in opens]**: Choose when members can start opting in:
+
+      * **[!UICONTROL When the challenge starts]**: Open enrollment at the challenge start. This is the default.
+      * **[!UICONTROL On a specific date]**: Set a date in **[!UICONTROL Opt-in opens on]**.
+
+   * **[!UICONTROL Opt-in closes]**: Choose when enrollment ends:
+
+      * **[!UICONTROL When the challenge ends]**: Close enrollment at the challenge end. This is the default.
+      * **[!UICONTROL On a specific date]**: Set a date in **[!UICONTROL Opt-in closes on]**.
+
+1. Configure **[!UICONTROL Progress tracking]**:
+
+   ![Progress tracking settings](assets/challenge-schedule-progress.png)
+
+   * **[!UICONTROL Progress starts counting]**: Choose when task completions begin counting toward challenge progress:
+
+      * **[!UICONTROL As soon as a member opts in]**: Start counting progress when each member joins.
+      * **[!UICONTROL When the challenge starts]**: Start counting progress at the challenge start, allowing members to enroll before earning opens.
+
+1. Configure **[!UICONTROL Completion requirements]**:
+
+   ![Completion requirements](assets/challenge-schedule-completion.png)
+
+   * **[!UICONTROL Tasks count towards progress]**: Choose the task-counting hours:
+
+      * **[!UICONTROL Any time during challenge]**: Count tasks at any time during the challenge, once progress tracking begins.
+      * **[!UICONTROL During specific hours of the day]**: Restrict task progress to a daily window. Set **[!UICONTROL Start time]** and **[!UICONTROL End time]**. These hours use the point of sale (POS) or the customer's local time zone.
+
+   * **[!UICONTROL Members must finish]**: Choose the completion deadline:
+
+      * **[!UICONTROL By the challenge end date]**: Members must complete the challenge by the configured challenge end date.
+      * **[!UICONTROL Within a number of days after opt-in]**: Each member has a personal completion deadline calculated from their opt-in date. Enter the number of days in **[!UICONTROL Days after opt-in]**. For example, with a value of 10, a member who opts in on October 1 has a deadline of October 11, while a member who opts in on October 5 has a deadline of October 15.
+
+      If you also set a **[!UICONTROL Challenge end]** date, each member's deadline is whichever comes first: the challenge end date or their opt-in date plus the configured number of days. For example, if the challenge ends on October 12, the member who opts in on October 5 must complete it by October 12, not October 15. With **[!UICONTROL No end date]**, the completion deadline is determined by each member's opt-in date plus the configured number of days.
 
 ### Rules {#rules}
 
-Configure how members opt in, when task progress counts toward the challenge, and how many times the challenge can be completed.
+Configure how members opt in and how many times the challenge can be completed.
 
 ![](assets/challenge-create-rules.png)
 
 * **[!UICONTROL Opt-in trigger]**:
 
-  * **[!UICONTROL Opt-in method]**: Choose whether customers join the challenge manually or through an event trigger.
+   * **[!UICONTROL Opt-in method]**: Choose whether customers join the challenge manually or through an event trigger.
    * **[!UICONTROL Event]**: For event-based opt-in, select the event that triggers opt-in. Administrators can click the ![gear](assets/do-not-localize/settings-icon.svg) button to create an event mapping. [Learn how to configure event mappings](loyalty-admin.md#event-mappings)
-
-* **[!UICONTROL Start tracking progress]**:
-
-   * **[!UICONTROL Task progress tracking starts]**: Choose when task completions count toward challenge progress. For example, select **[!UICONTROL When challenge starts (after opt-in)]** so progress begins after the member opts in and the challenge is active.
-
-      You can decouple when a challenge is visible to members from when progress is tracked. For example, a challenge card can appear and accept opt-ins before task completions start counting toward progress on a later date.
-
-   * **[!UICONTROL Start]**: When you choose a custom start option, set the date and time when progress tracking begins.
 
 * **[!UICONTROL Repeat limits]**:
 
@@ -157,9 +185,9 @@ Configure how members opt in, when task progress counts toward the challenge, an
 
    * **[!UICONTROL Number of times it can be completed]**: When repeat is enabled, specify how many times a member can complete the challenge.
 
-* **[!UICONTROL Completion requirements]** *(Standard challenges only)*:
+* **[!UICONTROL Completion requirements]**:
 
-   * **[!UICONTROL Complete in a single transaction]**: When enabled, customers must complete all tasks within a single transaction. When disabled, tasks can be completed across separate transactions.
+   * **[!UICONTROL Complete in a single transaction]** *(Standard challenges only)*: When enabled, customers must complete all tasks within a single transaction. When disabled, tasks can be completed across separate transactions.
 
 ### Custom metadata {#custom-metadata}
 
@@ -201,13 +229,12 @@ To add tasks to your challenge, follow these steps:
 
    +++Streak challenges
 
-   In the **[!UICONTROL Streak type]** drop-down, choose between:
+   In the **[!UICONTROL Task completion requirements]** drop-down, choose between:
 
-      * **Consecutive**: Customers must complete the task on consecutive days without breaks. *Example: Purchase on Monday, Tuesday, Wednesday—missing a day breaks the streak.*
+      * **[!UICONTROL Customer completes 1 task multiple times]** - *Customers must complete the same task on consecutive days without breaks. Example: Purchase on Monday, Tuesday, Wednesday—missing a day breaks the streak.*
+      * **[!UICONTROL Customer completes all tasks together multiple times]** - *Customers must complete all the selected tasks together on consecutive days without breaks.*
 
-      * **Non-consecutive**: Customers can complete the task with gaps between completions. *Example: Complete 7 purchases over 30 days, with breaks allowed.*
-
-   In the **[!UICONTROL Streak length]** field, specify how many times the task must be completed. *Example: Set to 7 for a "7-day purchase streak."*
+   In the **[!UICONTROL Streak length]** field, specify the number of consecutive days the requirement must be met. *Example: Set to 7 days for a "7-day purchase streak."*
 
    +++
 
@@ -287,6 +314,9 @@ To configure challenge content:
 1. Choose the action type:
 
    * **[!UICONTROL Content card]**: Displays the challenge as a card-style experience on customer devices. Select a **[!UICONTROL Channel configuration]** and click **[!UICONTROL Edit content]** to design and personalize the card. [Learn more about content cards](../content-card/create-content-card.md).
+
+      You can use challenge metadata to personalize the card content. [Learn more about personalizing challenge content](../content-card/design-content-card.md#personalize-challenge-content).
+
    * **[!UICONTROL Code-based experience]**: Delivers challenge content through your own custom implementation using Journey Optimizer's code-based channel. Select a **[!UICONTROL Channel configuration]** and click **[!UICONTROL Edit content]** to define the content. [Learn more about code-based experiences](../code-based/create-code-based.md).
 
    ![](assets/challenge-create-content.png)
@@ -343,7 +373,7 @@ You have two options for launching your challenge:
 
 ### Publish the challenge {#publish-challenge}
 
-1. Review your challenge configuration to ensure all required fields are completed.
+1. Review your challenge configuration. Your changes are saved automatically.
 
 1. Click the ![](assets/do-not-localize/Smock_More_18_N.svg) icon next to the **[!UICONTROL Generate Journey]** button and select **[!UICONTROL Publish]**.
 
@@ -353,9 +383,13 @@ You have two options for launching your challenge:
 
    When you are ready to deliver the challenge to customers, you can generate the associated journey. For more information, see [Generate the journey](#generate-journey).
 
+   >[!NOTE]
+   >
+   >If a required field is missing when you publish the challenge or generate the journey, an inline notification lists what is missing. The tabs that contain missing information display a red dot, and the missing fields are highlighted in an error state. Complete these fields, then publish or generate the journey again.
+
 ### Generate the journey {#generate-journey}
 
-1. Review your challenge configuration to ensure all required fields are completed.
+1. Review your challenge configuration. Your changes are saved automatically.
 
 1. Select **[!UICONTROL Generate Journey]** to automatically publish the challenge and create the journey that will orchestrate your challenge delivery.
 
@@ -404,4 +438,6 @@ Learn how to create and configure loyalty challenges with these step-by-step vid
 ➡️ Watch how to publish a challenge and generate a journey
 
 >[!VIDEO](https://video.tv.adobe.com/v/3498577?quality=12)
+
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-create-challenges.md}}
 

@@ -55,7 +55,7 @@ The content creation process depends on the channel you selected. Learn detailed
 <td><a href="../email/create-email.md"><img alt="email" src="../channels/assets/do-not-localize/email.png"></a>
 <div align="center"><a href="../email/create-email.md"><strong>Email</strong></a></div></td>
 <td><a href="../mobile/create-mobile-message.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
-<div align="center"><a href="../mobile/create-mobile-message.md"><strong>SMS</strong></a></div></td>
+<div align="center"><a href="../mobile/create-mobile-message.md"><strong>Mobile message</strong></a></div></td>
 <td><a href="../push/create-push.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
 <div align="center"><a href="../push/create-push.md"><strong>Push notification</strong></a></div></td>
 </tr></table>
@@ -101,3 +101,5 @@ Once your content is defined, use the **[!UICONTROL Simulate content]** button t
 ## Next steps {#next}
 
 Once your campaign configuration and content are ready, you can define the campaign audience. [Learn more](api-triggered-campaign-audience.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-api-triggered-campaign-content.md}}

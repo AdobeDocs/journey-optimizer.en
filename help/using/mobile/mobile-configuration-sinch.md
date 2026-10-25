@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Configuration
   - id: 6eb7d9ad-3477-58b3-957a-080ef7738a30
     internal-label: SMS
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
     internal-label: Overview

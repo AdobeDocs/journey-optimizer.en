@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Activities
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: ed2fba79-65cb-4680-96d2-2ad5d851714d
     internal-label: Live activities

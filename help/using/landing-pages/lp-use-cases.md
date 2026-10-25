@@ -192,7 +192,7 @@ To check that the corresponding profile's choice has been updated, go to Experie
 
 In the **[!UICONTROL Attributes]** tab, you can see that the value for **[!UICONTROL choice]** has changed to **[!UICONTROL no]**.
 
-The opt-out information is stored in the **Consent Service Dataset**. [Learn more about datasets](../data/get-started-datasets.md)
+The opt-out information is stored in the **Consent Service Dataset**. [Learn more about datasets](../data/get-started-datasets.md) For the fields, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 >[!NOTE]
 >

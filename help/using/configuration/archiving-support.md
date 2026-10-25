@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Archiving support in Journey Optimizer
-description: Learn how to archive messages
+title: Archive emails using BCC in Journey Optimizer
+description: Learn how to retain copies of sent emails using BCC in Journey Optimizer
 feature: Channel Configuration
 topic: Administration
 role: Admin
@@ -45,45 +45,28 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 ---
-# Support for archiving {#archiving-support}
-
->[!BEGINSHADEBOX]
-
-**On this page:** Learn how to archive the messages you send with Adobe Journey Optimizer for compliance, including the built-in BCC email capability for the email channel and dataset-based options for other channels.
-
->[!ENDSHADEBOX]
-
-## How to archive messages {#about-archiving}
-
-Regulations such as HIPAA require that [!DNL Journey Optimizer] should provide a way to archive messages sent to individuals. Indeed, if your customers raise a claim, they should have the ability to get a copy of the sent message for verification purpose.
-
-* For the email channel, [!DNL Journey Optimizer] provides a built-in BCC email capability. [Learn more](#bcc-email)
-
-* Additionnaly, for all channels, you can use the 'Template' field in the **Entity Dataset**, which contains the details of the non-personalized message templates. Export the dataset with this field to save metadata such as: who sent the message, to whom and when. Note that personalized data is not exported - only the template (format and structure of the message) is taken into account. [Learn more](../data/datasets-query-examples.md#entity-dataset)
-
->[!NOTE]
->
->[!DNL Journey Optimizer] does not own support for SMS archival requirement. For dedicated archival support, work with your SMS vendor (Sinch, Infobip, or Twilio).
-
-Use the table below to identify the right option for your requirement.
-
-| Requirement | Recommended option | Important distinction |
-| --- | --- | --- |
-| Keep a hidden copy of outbound email messages | BCC email | Sends a copy to a configured mailbox; does not expose a mirror page URL or create a queryable Experience Platform field. |
-| Export sent email or SMS content to an external system | [Message export](../configuration/message-export.md) | Writes sent content and metadata to the AJO Message Export Dataset for downstream export; does not generate a mirror page URL. |
-| Display the online version of an email to the recipient | [Mirror page link](../email/message-tracking.md#mirror-page) | Generated as part of the sent email; not a supported post-send URL retrieval API. |
-| Store the non-personalized message template or delivery metadata | Entity Dataset | Does not provide the exact personalized content received by an individual. |
-
-## How to use BCC for emails {#bcc-email}
+# Archive emails using BCC {#archiving-support}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_bcc"
 >title="Define a BCC email address"
 >abstract="You can keep a copy of sent emails by sending them to a BCC inbox. Enter the email address of your choice so that every email sent is blind-copied to this BCC address. Note that the BCC address domain must be different from any subdomain delegated to Adobe. This feature is optional."
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure BCC email in Adobe Journey Optimizer to retain copies of sent emails in your own mailbox or external archiving system.
+
+>[!ENDSHADEBOX]
+
+[!DNL Journey Optimizer] provides a built-in BCC email capability to send copies of outbound emails to a dedicated mailbox. Your organization can retain these copies in the mailbox or process them using an external archiving system.
+
+>[!NOTE]
+>
+>For a comparison of the archiving options in Journey Optimizer, see [Get started with message archiving](archiving-overview.md).
+
 You can send blind carbon copy (BCC) of an email sent by [!DNL Journey Optimizer] to a dedicated BCC address. This optional feature allows you to retain copies of email communications you send to your users for compliance and/or archival purposes. The BCC address is not visible to other recipients of the message.
 
-### Enable BCC email {#enable-bcc}
+## Enable BCC email {#enable-bcc}
 
 To enable the **[!UICONTROL BCC email]** option, enter the email address of your choice in the dedicated field of the [channel configuration](channel-surfaces.md). You can specify any external address in correct format, except an email address defined on a subdomain delegated to Adobe. For example, if you delegated the *marketing.luma.com* subdomain to Adobe, any address like *abc@marketing.luma.com* is prohibited.
 
@@ -106,7 +89,7 @@ The BCC email address setting is immediately saved and processed at the configur
 
 However, the BCC address gets picked up for sending communications following the logic described [here](../email/email-settings.md).
 
-### Recommendations and limitations {#bcc-recommendations-limitations}
+## Recommendations and limitations {#bcc-recommendations-limitations}
 
 * To ensure your privacy compliance, BCC emails must be processed by an archiving system capable of storing securely personally identifiable information (PII).
 
@@ -116,8 +99,6 @@ However, the BCC address gets picked up for sending communications following the
 
 * Messages may be delivered to the BCC email address before the target recipients. BCC messages can also been sent even though the original messages may have [bounced](../reports/suppression-list.md#delivery-failures).
 
-    <!--OR: Only successfully sent emails are taken in account. [Bounces](../reports/suppression-list.md#delivery-failures) are not. TO CHECK -->
-
 * Do not open or click through the emails sent to the BCC address as it is taken into account in the total opens and clicks from the send analysis, which could cause some miscalculations in [reports](../reports/report-gs-cja.md). 
 
 * Do not mark messages as spam in the BCC inbox, as it will impact all the other emails sent to this address.
@@ -126,7 +107,7 @@ However, the BCC address gets picked up for sending communications following the
 >
 >Do not click the unsubscribe link in the emails sent to the BCC address as you will immediately unsubscribe the corresponding recipients.
 
-### GDPR compliance {#gdpr-compliance}
+## GDPR compliance {#gdpr-compliance}
 
 Regulations such as GDPR state that Data Subjects should be able to modify their consent at any time. Because the BCC emails you are sending with Journey Optimizer include securely personally identifiable information (PII), you must edit the **[!UICONTROL AJO Secondary Recipient Feedback Event Schema]** to be able to manage these PII in compliance with GDPR and similar regulations.
 
@@ -154,9 +135,9 @@ To do this, follow the steps below.
 >
 >Learn more about managing Privacy and the applicable regulations in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"}.
 
-### BCC reporting data {#bcc-reporting}
+## BCC reporting data {#bcc-reporting}
 
-Reporting as such on BCC is not available in the journey and message reports. However, information is stored on a system dataset called **[!UICONTROL AJO Secondary Recipient Feedback Event Dataset]**. You can run queries against this dataset to find useful information for debugging purpose for example.
+Reporting as such on BCC is not available in the journey and message reports. However, information is stored on a system dataset called **[!UICONTROL AJO Secondary Recipient Feedback Event Dataset]**. You can run queries against this dataset to find useful information for debugging purpose for example. For the fields of this dataset, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"} (currently listed there as AJO Email BCC Feedback Event Schema).
 
 To access this dataset through the user interface, select **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Learn more about how to access datasets in [this section](../data/get-started-datasets.md#access-datasets).
 
@@ -263,7 +244,7 @@ Depending on what information you are looking for, you can run the following que
     WHERE bcc.timestamp > now() - INTERVAL '30' DAY;
    ```
 
-### Use message header to reconcile BCC copy and sent email information {#bcc-header}
+## Use message header to reconcile BCC copy and sent email information {#bcc-header}
 
 When your email BCC copies are archived on an external system for example, you can retrieve the information on the corresponding sent emails using a header included in the message.
 
@@ -327,29 +308,3 @@ WHERE
   bcc._experience.customerJourneyManagement.messageProfile.messageProfileID = '<x-message-profile-id>'
 ORDER BY mfe.timestamp DESC;
 ```
-
-## Frequently asked questions {#faq}
-
-+++ Can I retrieve a mirror page URL after an email is sent?
-
-Not currently, through a documented public API or an Adobe Experience Platform dataset field. The [mirror page URL](../email/message-tracking.md#mirror-page) is generated as part of the message delivery process. If you need to retain or inspect sent content, use [Message export](message-export.md) or [BCC archiving](#bcc-email).
-
-+++
-
-+++ Is the mirror page URL available in the Entity Dataset or other tracking datasets?
-
-No. The [Entity Dataset](../data/datasets-query-examples.md#entity-dataset) provides message template and metadata information, but it should not be used as a source for the exact personalized content received by a recipient.
-
-+++
-
-+++ Can Message Export be used to reconstruct a mirror page URL?
-
-No. [Message Export](message-export.md) provides sent message content and metadata for downstream export, archival, compliance, or customer-care use. It does not generate or return a [mirror page URL](../email/message-tracking.md#mirror-page).
-
-+++
-
-+++ Which option should I use if I need to see the exact message sent to a customer?
-
-Use [Message Export](message-export.md) when you need structured sent-message content and metadata in an external system. Use [BCC](#bcc-email) when you only need a hidden copy of an outbound email retained in a mailbox. Neither option retrieves the original mirror page URL.
-
-+++

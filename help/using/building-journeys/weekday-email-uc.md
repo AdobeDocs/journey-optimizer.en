@@ -10,7 +10,7 @@ level: Intermediate
 keywords: journey, use case, weekdays, condition, email, scheduling
 version: Journey Orchestration
 exl-id: 2f313e59-ee50-473c-9346-8859889346ec
-TQID: https://experienceleague.adobe.com/qUt7t5LTYSQW278Pafx2-1t-DboRz9tU5IRpVhuEqLc
+TQID: 'https://experienceleague.adobe.com/qUt7t5LTYSQW278Pafx2-1t-DboRz9tU5IRpVhuEqLc'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -21,6 +21,10 @@ feature_v2:
     internal-label: Journeys
   - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
     internal-label: Use cases
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
     internal-label: Journey design
@@ -182,6 +186,8 @@ This ensures that all emails are sent on weekdays only, with weekend entries aut
 
 Before publishing, thoroughly test your journey logic in [!DNL Adobe Journey Optimizer]'s Test Mode to confirm everything works as expected:
 
+1. Click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
+
 1. Click the **[!UICONTROL Test]** button in the top right corner.
 
 1. Enable [test mode](testing-the-journey.md).
@@ -204,6 +210,8 @@ Before publishing, thoroughly test your journey logic in [!DNL Adobe Journey Opt
 ### Step 7: Publish your journey
 
 Once testing is complete:
+
+1. Make sure validation is current and passed. If you changed the journey after validation, click **[!UICONTROL Validate]** again and resolve any errors before publishing.
 
 1. Click **[!UICONTROL Publish]** in the top right corner.
 

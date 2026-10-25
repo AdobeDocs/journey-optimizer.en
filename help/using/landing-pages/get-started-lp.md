@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Email
   - id: af6bcde9-4f08-5a7a-9651-da0a28d11b0a
     internal-label: Subscriptions
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: b19d9237-76be-466d-a869-aacf2d72205f
     internal-label: Landing pages

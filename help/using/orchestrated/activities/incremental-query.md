@@ -58,7 +58,7 @@ Use it when the campaign can run multiple times, or example, when you schedule t
 
 Typical uses:
 
-* **Messaging and audiences**: Pull only new sign-ups, new purchasers, or other "new since last run" segments into the next step (e.g. email, SMS).
+* **Messaging and audiences**: Pull only new sign-ups, new purchasers, or other "new since last run" segments into the next step (e.g. email, mobile message).
 * **Ongoing exports**: Send only new or updated rows to files for reporting or BI tools, without duplicating what you already exported.
 
 >[!IMPORTANT]
@@ -79,7 +79,7 @@ Set the targeting dimension, build your query, and choose how the activity decid
 
      ![](../assets/incremental-query-2.png)
 
-1. Under **[!UICONTROL Processed data]**, choose your **[!UICONTROL Path to the date field]**. The attribute must use the **Date Time** format. Each run returns only rows whose date is after the last execution.
+1. Under **[!UICONTROL Processed data]**, choose your **[!UICONTROL Path to the date field]**. A date field is required, and the attribute must use the **Date Time** format. Each run returns only rows whose date is after the last execution.
 
       ![Incremental query activity configuration in the Orchestrated campaign canvas](../assets/incremental-query-3.png)
 

@@ -13,7 +13,7 @@ For complete understanding, this information should be combined with the documen
 
 **Intents:**
 
-* Build a multi-channel journey that sends a follow-up email or push based on whether a customer opens an initial email
+* Build a multi-channel journey that sends a follow-up email if a customer does not open the initial email, or a thank-you push after an email open and purchase
 * Configure a purchase event to trigger a thank-you push notification inside a journey
 * Use reaction events to branch a journey based on email open behavior
 * Decompose a complex multi-phase journey into smaller sub-journeys connected by Jump activities
@@ -22,31 +22,30 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Reaction event**: A journey event that triggers when a profile interacts with a message (e.g., opens an email or clicks a link), enabling behavior-driven branching. *(product-specific)*
-* **Read Audience activity**: The journey entry activity that loads all profiles in a specified Adobe Experience Platform audience to begin the journey. *(product-specific)*
-* **Jump activity**: An action activity that pushes a profile from one journey (origin) to another (target), enabling modular sub-journey architecture. *(product-specific)*
-* **Rule-based event**: An event type where the trigger condition is defined by a rule expression rather than an orchestration ID, useful for purchase or behavioral triggers. *(product-specific)*
+* **Reaction event**: In this use case, an event configured as **Email opened** that triggers when an individual in the audience opens the email. *(product-specific)*
+* **Read Audience activity**: The activity through which all individuals belonging to the selected audience enter the journey. *(product-specific)*
+* **Jump activity**: The activity used to connect sub-journeys so profiles pass from one phase to the next. *(product-specific)*
+* **Rule-based event**: The event type used for the purchase event, with an **[!UICONTROL Event ID condition]** that identifies events triggering the journey. *(product-specific)*
 
 **Guardrails:**
+* The journey must be validated before testing. Errors in the Alerts panel must be resolved and validation rerun before continuing.
 
-* A reaction event timeout path must be configured to handle profiles who do not interact with the message within the defined duration
+* In the multi-channel example, **Define the event timeout** is set to 1 day and **Set a timeout path** is enabled for individuals who do not open the first message.
 * The audience used in the use case must be created before building the journey
 * The purchase event must be configured before it can be used in the journey
-* Sub-journeys connected via Jump must use the same namespace as the origin journey
-* Email address override (parameter override) should only be used for specific use cases, not as a general replacement for the primary address
 
 **Terminology:**
 
-* Canonical name: Reaction event — Acronym: none — variants: reaction activity, message reaction
-* Synonyms: "origin journey" = "source journey"; "target journey" = "destination journey"
-* Do not confuse: "Read Audience activity" ≠ "Audience Qualification activity" — Read Audience loads all audience members in batch at once; Audience Qualification triggers per profile in real-time as membership changes
+* Canonical names: Read Audience, Reaction, **[!UICONTROL Jump]**.
+* Do not confuse: the **Email opened** reaction event detects an email open; the purchase event detects a purchase before the thank-you push is sent.
 
 **FAQ:**
 
 * **Q: How do I send a follow-up message only to customers who did not open an email?** — Add a Reaction event (Email opened) with a timeout path; profiles that do not open within the timeout duration flow down the timeout path where the follow-up email is placed.
 * **Q: How is the purchase event configured in the multi-channel use case?** — As a rule-based event with a condition such as `purchaseMessage="thank you"`, configured with a schema, payload fields (product, date, purchase ID), namespace, and profile identifier.
-* **Q: Why decompose a complex journey into sub-journeys?** — Complex journeys can expose 20 or more unique customer paths, and complexity grows exponentially with each touchpoint. Sub-journeys keep each phase readable, testable, and independently maintainable.
-* **Q: Can a profile be in both the origin and target journey at the same time after a Jump?** — Yes; when a profile reaches a Jump step, it continues progressing in the origin journey while simultaneously entering the target journey.
+* **Q: Why decompose a complex journey into sub-journeys?** — The loyalty example exposes more than 20 unique customer paths, and complexity grows exponentially with each additional touchpoint or channel. Sub-journeys keep each phase manageable, testable, and independently maintainable.
 * **Q: How many sub-journeys are used in the multi-phase loyalty example?** — Three sub-journeys: Phase 1 (app download), Phase 2 (first transaction), and Phase 3 (second transaction), connected sequentially using Jump activities.
 
 +++
+
+<!-- ai-section-version: 1 | source-hash: 8703ffa0 -->

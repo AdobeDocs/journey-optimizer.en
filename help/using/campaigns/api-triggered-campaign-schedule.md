@@ -56,7 +56,7 @@ The **[!UICONTROL Campaign end]** option allows you to specify when a campaign s
 
 ## Set rate control
 
-[!DNL Journey Optimizer] allows you to enable rate control for outbound actions (Email, SMS, Push notifications).
+[!DNL Journey Optimizer] allows you to enable rate control for outbound actions (Email, Mobile messages, Push notifications).
 
 This feature is particularly useful for preventing overload on downstream systems, such as landing pages or customer care platforms. For example, you can set a rate limit of 165 messages per second to ensure steady delivery without overwhelming downstream systems.
 
@@ -74,3 +74,5 @@ To set rate control, enable the **[!UICONTROL Throttle delivery]** option in the
 ## Next steps {#next}
 
 Once your campaign configuration and content are ready, you can review and activate it. [Learn more](../campaigns/review-activate-api-triggered-campaign.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-api-triggered-campaign-schedule.md}}

@@ -53,7 +53,7 @@ Understand how to create and apply channel-specific frequency capping rules to o
 
 Set Quiet Hours
 
-Define time-based exclusions for Email, SMS, Push, and WhatsApp so no messages are sent during specific periods — respecting customer preferences and compliance.
+Define time-based exclusions for Email, Mobile message, Push, and WhatsApp so no messages are sent during specific periods — respecting customer preferences and compliance.
 
 [Set quiet hours](../using/conflict-prioritization/quiet-hours.md)
 :::

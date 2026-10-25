@@ -53,7 +53,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Explore the AI and machine learning features across Adobe Journey Optimizer, from CX Enterprise Coworker, AI Assistant, and specialized agents to generative content creation, AI-powered integrations and optimization capabilities across Journey Optimizer capabilities.
+**On this page:** Explore the AI and machine learning features across Adobe Journey Optimizer, from Adobe CX Enterprise Coworker, AI Assistant, and specialized agents to generative content creation, AI-powered integrations and optimization capabilities across Journey Optimizer capabilities.
 
 >[!ENDSHADEBOX]
 
@@ -63,7 +63,7 @@ Adobe Journey Optimizer harnesses the power of artificial intelligence and machi
 
 Use these grouped links to jump to the feature you need:
 
-* **Conversational AI & CX Enterprise Coworker:** [Coworker skills in Journey Optimizer](#cx-coworker), [MCP server](#mcp-server), [AI Assistant and Agents](#ai-assistant)
+* **Conversational AI & Coworker:** [Coworker skills in Journey Optimizer](#cx-coworker), [MCP server](#mcp-server), [AI Assistant and Agents](#ai-assistant)
 * **Content creation:** [AI-powered content generation](#content-generation)
 * **AI-related capabilities:** [AI features across Journey Optimizer](#ajo-ai-features): Formula optimization, Content experimentation, Send-Time optimization, Image to HTML, GenStudio for Performance Marketing, Brand alignment, AI models for decisioning)
 * **Help:** [FAQ](#faq)
@@ -72,7 +72,7 @@ Use these grouped links to jump to the feature you need:
 
 ### About Coworker {#about-cx-coworker}
 
-CX Enterprise Coworker is Adobe's conversational experience that integrates with your business applications to help you work more efficiently, automating customer experience and marketing workflows across your Adobe applications. Instead of executing manual configuration steps one at a time, you describe a business goal in natural language, and Coworker plans, executes, and validates the work.
+Coworker is Adobe's conversational experience that integrates with your business applications to help you work more efficiently, automating customer experience and marketing workflows across your Adobe applications. Instead of executing manual configuration steps one at a time, you describe a business goal in natural language, and Coworker plans, executes, and validates the work.
 
 Coworker is an evolution of AI Assistant: it keeps everything AI Assistant's agents already do (product knowledge, operational and data insights) while adding the enterprise harness, skills, governance, and memory needed to complete the work end to end, not just answer questions. Organizations are being transitioned from AI Assistant to Coworker on a rolling basis, and some organizations may retain access to AI Assistant until they are enabled for Coworker. [Learn more about the transition to Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/agents/trial){target="_blank"}.
 
@@ -87,10 +87,11 @@ Learn more in the Coworker documentation:
 
 In Adobe Journey Optimizer, Coworker provides dedicated skills across these capabilities:
 
-* **Journeys**: Build journeys with natural language prompts, generate channel-specific message copy and designs, simulate journey logic with journey simulation, compare journey versions, and diagnose journey drop-offs, scheduling overlaps, and execution anomalies. [See all Coworker skills for journeys](../building-journeys/journeys-coworker-skills.md).
+* **Journeys**: Build journeys with natural language prompts, generate channel-specific message copy and designs, simulate journey logic with journey simulation, compare journey versions, and diagnose journey drop-offs, scheduling overlaps, execution anomalies, and journey inventory hygiene issues, and trace profiles through a journey. [See all Coworker skills for journeys](../building-journeys/journeys-coworker-skills.md).
 * **Loyalty**: Create and configure loyalty challenges, and query loyalty points, tier distributions, and revenue metrics. [See all Coworker skills for loyalty](../loyalty-challenges/loyalty-coworker-skills.md).
 * **Content Management**: Discover, create, update, clone, and publish templates, fragments, landing pages, and inline message variants using 15 read/write MCP tools. [See all Coworker content management tools](../content-management/content-management-coworker-skills.md).
 * **Decisioning**: Understand why a specific offer was or wasn't shown to a profile or segment, tracing eligibility, ranking, and capping; create, explain, simulate, and optimize eligibility rules and ranking formulas in natural language. [See all Coworker skills for Decisioning](../experience-decisioning/experience-decisioning-coworker-skills.md).
+* **Channels**: View, list, and inspect your channel configurations and credentials, and create, test, and manage custom channels in chat. [See all Coworker skills for channels](../channels/channels-coworker-skills.md).
 
 ## MCP server {#mcp-server}
 
@@ -192,7 +193,7 @@ The [Journey Create Agent](https://experienceleague.adobe.com/en/docs/experience
 * **Natural Language Journey Creation** - Describe your desired journey and have it created automatically
 * **Event- and Audience-Based Starts** - Create event-triggered, audience-based, business-event, or audience qualification journeys
 * **Conditional Logic** - Build split paths based on customer attributes or behavior
-* **Multi-Channel Messaging** - Add email, push, and SMS actions
+* **Multi-Channel Messaging** - Add email, push, and mobile actions
 * **Scheduling** - Configure start dates and timing between steps
 
 +++
@@ -245,7 +246,7 @@ The [Experimentation Agent](https://experienceleague.adobe.com/en/docs/experienc
 
 ## AI-Powered content generation {#content-generation}
 
-Use generative AI to create and personalize content across multiple channels, accelerating your content creation process while maintaining brand consistency. Generate Content is available for [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [SMS](../mobile/get-started-mobile.md), and [web](../web/get-started-web.md) experiences - helping you generate subject lines, body text, images, and complete message variations.
+Use generative AI to create and personalize content across multiple channels, accelerating your content creation process while maintaining brand consistency. Generate Content is available for [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [mobile messages](../mobile/get-started-mobile.md), and [web](../web/get-started-web.md) experiences - helping you generate subject lines, body text, images, and complete message variations.
 
 ### Key Features
 

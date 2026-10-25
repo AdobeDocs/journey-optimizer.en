@@ -17,6 +17,10 @@ feature_v2:
     internal-label: APIs and SDKs
   - id: 1210f62b-45d9-5d36-8d8d-0f9049ffa368
     internal-label: Code-based Experiences
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices

@@ -25,6 +25,8 @@ feature_v2:
     internal-label: Email
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
@@ -54,11 +56,11 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Explore the tools and best practices for designing personalized email, push, SMS, and in-app content so you can deliver on-brand messages that drive engagement.
+**On this page:** Explore the tools and best practices for designing personalized email, push, mobile messages, and in-app content so you can deliver on-brand messages that drive engagement.
 
 >[!ENDSHADEBOX]
 
-Designing message content in Adobe Journey Optimizer empowers you to create engaging, personalized communications across all channels. Whether you're crafting emails with rich visual layouts, building mobile-optimized push notifications, designing interactive in-app experiences, or sending SMS messages, this section provides comprehensive guidance on content creation best practices. Learn how to leverage templates and fragments for reusable content, apply personalization and dynamic content to tailor messages for each recipient, and ensure accessibility compliance. From understanding design principles to implementing advanced formatting options, you'll master the tools needed to deliver compelling, on-brand experiences that drive engagement and conversions.
+Designing message content in Adobe Journey Optimizer empowers you to create engaging, personalized communications across all channels. Whether you're crafting emails with rich visual layouts, building mobile-optimized push notifications, designing interactive in-app experiences, or sending mobile messages, this section provides comprehensive guidance on content creation best practices. Learn how to leverage templates and fragments for reusable content, apply personalization and dynamic content to tailor messages for each recipient, and ensure accessibility compliance. From understanding design principles to implementing advanced formatting options, you will master the tools needed to deliver compelling, on-brand experiences that drive engagement and conversions.
 
 ## Design message content
 
@@ -86,7 +88,7 @@ Create compelling push notifications for iOS and Android, configure title and bo
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
 
-Design SMS & MMS Messages
+Design Mobile Messages
 
 Compose personalized Mobile messages with SMS, enhance communications with multimedia content using MMS, and leverage dynamic content for targeted messaging.
 

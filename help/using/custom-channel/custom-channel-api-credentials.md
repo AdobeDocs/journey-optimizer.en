@@ -62,12 +62,15 @@ To create additional credentials for the same channel, follow the steps below.
 1. Fill in the authentication-specific fields:
    * **[!UICONTROL API Key]** – Provide the key name, value, and location (query parameter or header).
    * **[!UICONTROL Basic auth]** – Provide a username and password.
-   * **[!UICONTROL OAuth 2.0]** – Configure the payload for OAuth 2.0 authentication.
+   * **[!UICONTROL OAuth 2.0]** – Configure the payload for OAuth 2.0 authentication. [Learn more](custom-channel-oauth2.md)
+
 1. Click **[!UICONTROL Save]**.
 
 ## Next steps {#next-steps}
 
 * [Delegate a subdomain](custom-channel-subdomains.md) (optional — required for link tracking)
 * [Create a channel configuration](custom-channel-configuration.md)
+
+If a custom channel returns an error code, see [Custom channel, inbound action, and reporting dataset errors](../configuration/channel-reporting-errors.md).
 
 {{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-custom-channel-api-credentials.md}}

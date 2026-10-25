@@ -82,7 +82,7 @@ Before starting testing your content using sample input data, consider the follo
 
 * **Channels** - Simulating content variations is available for:
 
-    * the Email, SMS and Push notification channels;
+    * the Email, Mobile messages and Push notification channels;
     * all inbound channels (Web, Code-based experience, In-app, Content cards);
     * Orchestrated campaigns.
 

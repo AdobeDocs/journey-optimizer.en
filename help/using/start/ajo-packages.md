@@ -88,7 +88,7 @@ Three base offers are available. Each one matches a different way of engaging cu
 |--|:-----------------------------:|:----------------------------:|:----------------------------------------:|
 | [Audience-based batch orchestration](../campaigns/get-started-with-campaigns.md) | ✓ | Limited<sup>1</sup> | ✓ |
 | [Real-time event-driven orchestration](../building-journeys/journey-gs.md) | — | ✓ | ✓ |
-| Transactional messaging (email, push, SMS) | ✓ | ✓ | ✓ |
+| Transactional messaging (email, push, mobile messages) | ✓ | ✓ | ✓ |
 | [Channel add-ons available](#channel-addons) | ✓ | ✓ | ✓ |
 | [Decisioning add-on available](#decisioning-addon) | ✓ | ✓ | ✓ |
 
@@ -152,13 +152,13 @@ The **All Channels** add-on bundles Outbound Delivery + Mobile + Web in a single
 
 Some channels aren't tied to a single channel add-on. Their availability depends on your licensed configuration, agreement, and — for partner channels — a third-party business account.
 
-**📲 SMS / MMS** — Send text and multimedia messages to mobile phone numbers. Transactional SMS (real-time, event-triggered) is supported with every base offer; broader marketing use of SMS / MMS depends on your licensed configuration. [Learn how to send mobile messages](../mobile/get-started-mobile.md)
+**📲 Mobile messages** — Send text and multimedia messages to mobile phone numbers. Transactional SMS (real-time, event-triggered) is supported with every base offer; broader marketing use of Mobile messages depends on your licensed configuration. [Learn how to send mobile messages](../mobile/get-started-mobile.md)
 
 **💬 WhatsApp** — Send messages through WhatsApp Business. Requires a WhatsApp Business account, and availability depends on your agreement and licensed configuration. [Learn how to use WhatsApp](../whatsapp/get-started-whatsapp.md)
 
 >[!NOTE]
 >
->Confirm SMS / MMS and WhatsApp availability for your organization with your Adobe representative — these channels are not part of the standard Outbound Delivery, Mobile, or Web add-ons.
+>Confirm Mobile messages and WhatsApp availability for your organization with your Adobe representative — these channels are not part of the standard Outbound Delivery, Mobile, or Web add-ons.
 
 ## Step 3 — Add advanced capabilities {#advanced-addons}
 
@@ -183,22 +183,22 @@ Determined by your base offer.
 
 | Capability | Campaigns | Journeys | Campaigns & Journeys |
 |-----------|:---------:|:--------:|:--------------------:|
-| Transactional messaging ([email](../email/get-started-email.md), [push](../push/get-started-push.md), [SMS](../mobile/get-started-mobile.md)) | ✓ | ✓ | ✓ |
+| Transactional messaging ([email](../email/get-started-email.md), [push](../push/get-started-push.md), [mobile message](../mobile/get-started-mobile.md)) | ✓ | ✓ | ✓ |
 | [Batch campaigns](../campaigns/get-started-with-campaigns.md) | ✓ | — | ✓ |
-| [Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) _(email, SMS, push, direct mail only)_ | ✓ | — | ✓ |
+| [Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) _(email, mobile messages, push, direct mail only)_ | ✓ | — | ✓ |
 | [Automated journeys](../building-journeys/journey-gs.md) | — | ✓ | ✓ |
 | [Real-time event triggers](../event/about-events.md) | — | ✓ | ✓ |
 
 ### Channels and advanced capabilities {#channel-capabilities}
 
-Most channels are available on all three base offers and require the listed add-on. A few — such as SMS / MMS and WhatsApp — depend on your licensed configuration.
+Most channels are available on all three base offers and require the listed add-on. A few — such as Mobile messages and WhatsApp — depend on your licensed configuration.
 
 | Capability | Availability | Add-on required |
 |-----------|-------------|----------------|
 | [Email](../email/get-started-email.md) | All base offers | Outbound Delivery |
 | [Push notifications](../push/get-started-push.md) | All base offers | Outbound Delivery |
 | [Direct mail](../direct-mail/get-started-direct-mail.md) | All base offers | Outbound Delivery |
-| [SMS / MMS](../mobile/get-started-mobile.md) | Based on your licensed configuration | Based on your licensed configuration |
+| [Mobile messages](../mobile/get-started-mobile.md) | Based on your licensed configuration | Based on your licensed configuration |
 | [In-app messaging](../in-app/get-started-in-app.md) | All base offers | Mobile |
 | [Content cards](../content-card/get-started-content-card.md) | All base offers | Mobile |
 | [Web channel](../web/get-started-web.md) | All base offers | Web |
@@ -209,13 +209,13 @@ Most channels are available on all three base offers and require the listed add-
 
 >[!NOTE]
 >
->**Transactional messaging vs. channel add-ons.** Basic transactional messaging (event-triggered email, push, and SMS) is included with every base offer. The **Outbound Delivery**, **Mobile**, and **Web** add-ons unlock full marketing and campaign use of those channels, along with the additional surfaces listed above.
+>**Transactional messaging vs. channel add-ons.** Basic transactional messaging (event-triggered email, push, and mobile message) is included with every base offer. The **Outbound Delivery**, **Mobile**, and **Web** add-ons unlock full marketing and campaign use of those channels, along with the additional surfaces listed above.
 
 ## Frequently asked questions {#faq}
 
 +++**Which channels are supported in Orchestrated campaigns?**
 
-[Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) (multi-step audience workflows using the Campaign Orchestration feature) support **email, SMS, push notifications, and direct mail** only. Web, in-app, code-based, and content card channels are not supported in orchestrated campaign workflows.
+[Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) (multi-step audience workflows using the Campaign Orchestration feature) support **email, mobile messages, push notifications, and direct mail** only. Web, in-app, code-based, and content card channels are not supported in orchestrated campaign workflows.
 
 +++
 
@@ -243,7 +243,7 @@ The sections above describe the current modular packaging model. If your agreeme
 
 - Scheduled batch campaigns and transactional messaging
 - Core campaign and journey execution
-- Email, SMS, push, and custom action channel foundations
+- Email, mobile, push, and custom action channel foundations
 - Standard orchestration guardrails
 
 **Prime** — Includes everything in Select, plus real-time orchestration and inbound channels:
@@ -263,7 +263,7 @@ The sections above describe the current modular packaging model. If your agreeme
 | Capability | What you can do | Select | Prime | Ultimate | Learn more |
 |-----------|----------------|:------:|:-----:|:--------:|-----------|
 | **Email** | Design and send personalized email messages | ✓ | ✓ | ✓ | [Learn how to send email](../email/get-started-email.md) |
-| **SMS / MMS** | Send text and multimedia messages | ✓ | ✓ | ✓ | [Learn how to send mobile messages](../mobile/get-started-mobile.md) |
+| **Mobile messages** | Send text and multimedia messages | ✓ | ✓ | ✓ | [Learn how to send mobile messages](../mobile/get-started-mobile.md) |
 | **Push notifications** | Send mobile push alerts | ✓ | ✓ | ✓ | [Learn how to send push notifications](../push/get-started-push.md) |
 | **Batch campaigns** | Schedule messages to an audience | ✓ | ✓ | ✓ | [Learn how to create campaigns](../campaigns/get-started-with-campaigns.md) |
 | **Automated journeys** | Design event-triggered customer journeys | ✓ | ✓ | ✓ | [Learn how to build journeys](../building-journeys/journey-gs.md) |
@@ -287,6 +287,6 @@ Now that you understand how [!DNL Adobe Journey Optimizer] is packaged, here's w
 - **Plan your implementation** — Follow the structured onboarding path for your project. [Onboarding project guide](onboarding-hub.md)
 - **Check feature availability** — See which features are live, their lifecycle status (GA / LA / Beta), and when they shipped. [Feature availability](ajo-features-availability.md)
 - **Find the right use case** — Map your engagement goals to the capabilities that support them. [Use case guide](ajo-use-case-guide.md)
-- **Configure your channels** — Once you know which add-ons you have, set up the channels you need: [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [SMS / MMS](../mobile/get-started-mobile.md), [in-app messaging](../in-app/get-started-in-app.md), [content cards](../content-card/get-started-content-card.md), [the web channel](../web/get-started-web.md), and [code-based experiences](../code-based/get-started-code-based.md).
+- **Configure your channels** — Once you know which add-ons you have, set up the channels you need: [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [Mobile messages](../mobile/get-started-mobile.md), [in-app messaging](../in-app/get-started-in-app.md), [content cards](../content-card/get-started-content-card.md), [the web channel](../web/get-started-web.md), and [code-based experiences](../code-based/get-started-code-based.md).
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-ajo-packages.md}}

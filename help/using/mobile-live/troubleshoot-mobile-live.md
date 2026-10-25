@@ -1104,7 +1104,7 @@ Follow the appropriate troubleshooting steps based on the evaluation method:
 
 1. Enable the **Show system datasets** toggle, and open **AJO Message Feedback Event Dataset**. 
 
-Note the exact table name shown on the detail page. The queries below use `ajo_message_feedback_event_dataset`,  replace it with your actual table name if it differs.
+Note the exact table name shown on the detail page. The queries below use `ajo_message_feedback_event_dataset`,  replace it with your actual table name if it differs. For the fields of this dataset, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 ### Query by Live Activity ID
 

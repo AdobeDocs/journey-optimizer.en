@@ -44,7 +44,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_api_triggered"
 >title="API triggered campaigns"
->abstract="**Transactional API triggered campaigns**<br/>Trigger real-time messages through API calls<br/><br/>**Marketing messages**<br/>Promotional content (requires opt-in, subject to business rules)<br/><br/>**Transactional messages**<br/>Service-related content (confirmation, alerts, not subject to marketing consent)<br/><br/>**Available channels**<br/>Email, SMS, Push notifications, and custom channels (Marketing campaigns only)"
+>abstract="**Transactional API triggered campaigns**<br/>Trigger real-time messages through API calls<br/><br/>**Marketing messages**<br/>Promotional content (requires opt-in, subject to business rules)<br/><br/>**Transactional messages**<br/>Service-related content (confirmation, alerts, not subject to marketing consent)<br/><br/>**Available channels**<br/>Email, Mobile messages, Push notifications, and custom channels (Marketing campaigns only)"
 
 ## About API triggered campaigns {#about}
 
@@ -79,3 +79,5 @@ Learn more about the [complete campaign creation workflow with type-specific gui
 Learn how to create a campaign and trigger it from an external system based on user interactions, using the Interactive Message Execution REST API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-api-triggered-campaigns.md}}

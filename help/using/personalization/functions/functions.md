@@ -14,6 +14,8 @@ feature_v2:
     internal-label: Build expressions
   - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
     internal-label: Personalization
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
@@ -508,7 +510,7 @@ Helpers are detailed on [this page](helpers.md).
         <td><a href="helpers.md#value-at-path">Value at path</a></td><td>This helper assigns a value from a data path to a template variable, with optional array indexing</td>
     </tr>
     <tr>
-        <td><a href="helpers.md#url-function">Url</a></td><td>This function handles URLs in SMS message content; use it with <code>originalUrl</code> to shorten URL and <code>type='DEEPLINK'</code> to insert deep links</td>
+        <td><a href="helpers.md#url-function">Url</a></td><td>This function handles URLs in mobile message content; use it with <code>originalUrl</code> to shorten URL and <code>type='DEEPLINK'</code> to insert deep links</td>
     </tr>
     <tr>
         <td><a href="helpers.md#with">With</a></td><td>This function is used to change the evaluation token of template-part</td>

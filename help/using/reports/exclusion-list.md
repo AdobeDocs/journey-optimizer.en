@@ -63,6 +63,8 @@ The total exceeds the targeted audience because duplicate exclusion events are i
 
 For more details on the specific exclusion reasons, see the table below.
 
+The exclusion reason is stored in the `messageExclusion.reason` field of the message feedback events. For the fields of these events, see the [AJO schemas](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}. To query the exclusions of a send, see the example in [Exclusion reporting](../configuration/allow-list.md#reporting).
+
 ## Exclusion reasons list
 
 |Exclusion reason | Error code | Channel | Explanation |

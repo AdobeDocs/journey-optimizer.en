@@ -80,7 +80,7 @@ topic_v2:
 
 ## Guardrails & limitations {#guardrails}
 
-* **Supported channels** - Dataset lookup with Decisioning works for all channels where Decisioning is available: code-based experience (inbound), Email, Push, SMS, and the content decision node in journeys.
+* **Supported channels** - Dataset lookup with Decisioning works for all channels where Decisioning is available: code-based experience (inbound), Email, Push, Mobile message, and the content decision node in journeys.
 * **Attribute usage** - The dataset lookup functionality for decisioning extends decision item definitions with additional attributes — it does not extend attributes to profiles.
 * **Lookup limits**: [!DNL Journey Optimizer] supports up to 1,000 lookups per single decision policy.
 

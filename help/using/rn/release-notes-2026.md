@@ -308,7 +308,7 @@ The following capabilities and improvements have been introduced in this release
 <tbody>
 <tr>
 <td>
-<p>You can now configure a journey or campaign action to include multiple outbound channels (Email, Push, SMS) and let Journey Optimizer automatically deliver through the best channel for each customer. Three optimization modes are available:</p>
+<p>You can now configure a journey or campaign action to include multiple outbound channels (Email, Push, Mobile message) and let Journey Optimizer automatically deliver through the best channel for each customer. Three optimization modes are available:</p>
 <ul>
 <li>Manual ranking: specify your preferred channel order.</li>
 <li>Customer preference: use the customer's preferred channel from their profile (Experience Data Model Consents & Preferences attribute).</li>
@@ -594,7 +594,7 @@ The following improvement is coming to reporting in this release.
 
   ![](../content-management/assets/fragment-quick-launch.png)
 
-* **Quick launch shortcuts in Templates inventory** - The **[!UICONTROL More actions]** button in the Content Templates list now provides quick access to common actions: editing template details, simulating content, and deleting a template. Additional channel-specific shortcuts are also available: for email templates, edit the email body, view or send a proof, run a spam report, and render the email; for SMS templates, check the character count and number of segments. [Learn more](../content-management/access-content-templates.md#edit)
+* **Quick launch shortcuts in Templates inventory** - The **[!UICONTROL More actions]** button in the Content Templates list now provides quick access to common actions: editing template details, simulating content, and deleting a template. Additional channel-specific shortcuts are also available: for email templates, edit the email body, view or send a proof, run a spam report, and render the email; for mobile message templates, check the character count and number of segments. [Learn more](../content-management/access-content-templates.md#edit)
 
   ![](../content-management/assets/content-template-quick-launch-email.png)
 
@@ -711,7 +711,7 @@ The following capabilities and improvements have been added to journeys in this 
 
 The following capabilities and improvements are coming to orchestrated campaigns in this release.
 
-* **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required. [Read more](../orchestrated/add-personalization.md#enrichment-collections)
+* **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or mobile message. Collections are configured through the data picker using personalization tokens, with no expression writing required. [Read more](../orchestrated/add-personalization.md#enrichment-collections)
 
   Availability date: June 26, 2026
 

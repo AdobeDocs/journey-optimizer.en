@@ -13,7 +13,7 @@ product_v2:
 
 Effectively managing your customer journeys starts with comprehensive tracking, enabling proactive monitoring, insightful reporting, and efficient troubleshooting. Adobe Journey Optimizer provides a complete framework to capture customer interactions and system events, analyze performance metrics, and quickly resolve issues when they arise.
 
-**Track** customer interactions across all channels—emails, web, push, in-app, SMS, and more—capturing opens, clicks, conversions, and custom events that reveal how customers engage with your content.
+**Track** customer interactions across all channels—emails, web, push, in-app, mobile message, and more—capturing opens, clicks, conversions, and custom events that reveal how customers engage with your content.
 
 **Monitor** journey and campaign performance using real-time reports, system alerts, and deliverability metrics that help you identify trends, measure success, and catch potential issues early.
 
