@@ -121,6 +121,8 @@ Currently, no. Even after wait or event nodes, enrichment attribute values remai
 
 Audience ingestion completion does not confirm that an enrichment attribute is available in journey authoring. The typical timing for audience availability does not specify when custom-upload enrichment attributes become available. [Learn about audience activation timing](target-audiences.md#activation).
 
+Also note that journey test mode does not support custom upload attribute enrichment, and preview and proof are not supported for custom upload or Federated Audience Composition audiences. [Learn about test mode limitations](../building-journeys/testing-the-journey.md#important_notes) and [audience guardrails](target-audiences.md#guardrails).
+
 Check that:
 * The audience exists, and your account has permission to access and use it.
 * The Read Audience activity selects the same audience that the condition expression references. If your setup uses a field group, confirm it references enrichment attributes from that same audience.
