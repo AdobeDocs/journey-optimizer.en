@@ -385,4 +385,13 @@ CX Enterprise Coworker is the in-product conversational experience. On the Journ
 >title="Set as default"
 >abstract="Enable this option to use a common webhook URL for processing provider feedback and inbound messages received from the provider."
 
+<!--DOCAC-16223 Re-evaluate in-app messages before display In-app option-->
+
+>[!CONTEXTUALHELP]
+>id="ajo_inapp_reevaluate"
+>title="Re-evaluate before display"
+>abstract="Fetch latest campaign data from the server before showing this message to ensure content and targeting rules are up-to-date. When enabled, the SDK will verify the campaign is still active and check if targeting rules have been modified before displaying the message. This prevents users from seeing outdated content or messages from closed campaigns. Recommended for time-sensitive campaigns where content or audience targeting may change frequently."
+
+
+
 {{$include /help/_includes/do-not-localize/start/ai-augmented-user-interface.md}}
