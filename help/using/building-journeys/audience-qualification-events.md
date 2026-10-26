@@ -150,6 +150,18 @@ See [Conditions](../building-journeys/conditions.md#about_condition).
 
 A new journey that includes an **Audience Qualification** event becomes operational ten minutes after you publish it. This interval matches the cache refresh interval of the dedicated service. Wait ten minutes before using this journey.
 
+### Audience Qualification timing and state model {#timing-and-state-model}
+
+Use the following sequence when diagnosing audience qualification:
+
+1. **Existing membership:** Profiles already in the audience with `Realized` membership do not generate a new entrance event merely because the journey is published. Only a subsequent qualifying membership change can trigger the activity.
+1. **Mid-journey behavior:** When the activity is not the first node, it begins listening when the profile reaches that node. A profile that qualified before reaching the node does not automatically enter that path unless a new qualification event is received after listening begins.
+1. **Batch readiness:** Batch audiences, or streaming audiences that depend on batch-ingested data, can become ready approximately two hours after segmentation completes. Use [Read Audience](read-audience.md) for batch-based use cases and see the [batch audience migration guidance](aq-batch-audiences-migration.md).
+1. **Audience Qualification activity timeout:** The timeout countdown starts when the profile reaches the Audience Qualification activity, not when the next audience evaluation occurs. For a batch audience, the qualification signal may arrive only after the daily segmentation job and subsequent propagation complete. If the signal arrives after the activity timeout, the profile follows the timeout path.
+1. **Global journey timeout:** This is a separate limit that begins when the profile enters the journey. If the profile reaches the global timeout, it exits and can no longer progress in that journey version. A qualification signal received after that exit does not resume the timed-out journey instance.
+
+When troubleshooting, check audience membership, journey entry and progression, and data propagation separately.
+
 ## Best practices {#best-practices-segments}
 
 The **[!UICONTROL Audience Qualification]** activity enables immediate entry into journeys for individuals qualifying or disqualifying from an [!DNL Adobe Experience Platform] audience.
@@ -160,7 +172,9 @@ The reception speed of this information is high. Measurements show 10,000 events
 
 >[!CAUTION]
 >
->**Deprecation notice – September 2026**: Starting **September 2026**, Journey Optimizer will block publication for any journey that uses a batch audience in an **Audience Qualification** node. Existing live journeys are not affected. New, draft, and duplicated journeys with this configuration must be updated before September 2026. [Learn how to migrate your journeys](aq-batch-audiences-migration.md)
+>**Deprecation notice – September 2026**: Starting **September 2026**, Journey Optimizer will block publication for new, draft, or duplicated journeys that use a batch audience in an **Audience Qualification** node or **Exit Criteria**. Existing live journeys are not automatically stopped. Migrate batch use cases to [Read Audience](read-audience.md) and use streaming audiences for real-time qualification or Exit Criteria. [Learn how to migrate your journeys](aq-batch-audiences-migration.md)
+
+For batch audiences, migrate the entry pattern to a [Read Audience](read-audience.md) journey. Read Audience supports scheduled processing. For journeys configured with daily recurrence, the **[!UICONTROL Trigger after batch audience evaluation]** option waits for fresh segmentation results instead of using Audience Qualification as a batch trigger.
 
 When using Audience Qualification for a batch audience, note that a peak of entrance occurs at the time of the daily calculation. The size of the peak depends on how many individuals enter or exit the audience each day.
 
@@ -177,10 +191,6 @@ When using Audience Qualification for streamed audiences, there is less risk of 
 Avoid using open and send events with streaming segmentation. Instead, use real user-activity signals like clicks, purchases, or beacon data. For frequency or suppression logic, use business rules instead of send events. [Learn more](../audience/about-audiences.md)
 
 See the [[!DNL Adobe Experience Platform] streaming segmentation documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
-
->[!NOTE]
->
->When a profile qualifies for a streaming segment at the Edge, that membership is projected from Edge to Hub before the journey can act on it. This Edge-to-Hub propagation typically takes **15 to 30 minutes**. If profiles are not entering an Audience Qualification journey as expected, allow for this propagation window (by adding a wait activity if appropriate) before investigating further. For use cases requiring true real-time entry, consider a unitary event trigger instead.
 
 #### Why not all qualified profiles may enter the journey {#streaming-entry-caveats}
 
@@ -203,6 +213,20 @@ When using streaming audiences with the **Audience Qualification** activity, not
 * Monitor your journey's [entry rate and throughput](entry-management.md#profile-entrance-rate) to understand profile flow patterns.
 
 * If profiles are not entering as expected, refer to the [troubleshooting guide](troubleshooting-execution.md#checking-if-people-enter-the-journey) for additional diagnostic steps.
+
+If profiles are not entering the journey as expected, verify that the audience uses a supported evaluation method and that the selected identity namespace is present on the profile. Check audience membership and journey execution details to identify where qualification or entry is failing.
+
+### Frequently asked questions {#faq}
+
+#### Can a journey save its current population as a reusable audience?
+
+No. Audience Qualification provides membership-change signals and journey context; it does not save the profiles currently flowing through a journey as a new reusable audience or export the current journey population. You can continue the logic in the same journey, use an **Update Profile** action to write a profile attribute that a later audience can use, or use a custom action or external process to persist the state. Use a separate journey only after the state has been modeled in a supported profile or event attribute.
+
+#### Can sequential segmentation join two events with a shared correlation ID?
+
+Sequential segmentation defines event order and event conditions. Do not assume that it performs a general field-to-field join between two event records, such as `Event 1.correlationId = Event 2.correlationId` between an outbound SMS and a later inbound SMS.
+
+For a supported message action sent earlier in the same journey, use a [Reaction event](reaction-events.md) when the required engagement signal is available. Reaction events are not a general cross-journey correlation mechanism, and third-party or custom-provider callbacks may not provide the signal required by the Reaction event. For third-party or custom-provider correlation, model the relationship upstream or emit a supported event containing the correlation context, then use the resulting profile or event data in the journey.
 
 ### How to avoid overloads {#overloads-speed-segment-qualification}
 

@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Mobile message channel configuration — Acronym: n/a — variants: channel configuration
+* Canonical name: Mobile message channel configuration — variants: SMS configuration, channel configuration
 * Do not confuse: "Marketing" (promotional; requires user consent) ≠ "Transactional" (non-commercial messages)
 * Do not confuse: "Processing" (status while checks run) ≠ "Active" (status once checks are successful; ready to deliver messages)
 * Do not confuse: "Mobile configuration" (provider API credentials association) ≠ "channel configuration" (the Mobile message configuration created on this page)

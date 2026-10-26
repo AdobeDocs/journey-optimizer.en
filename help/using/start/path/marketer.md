@@ -7,7 +7,7 @@ level: Beginner
 feature: Get Started
 Role: User
 exl-id: 34304142-3ee8-4081-94b9-e914968c75ba
-TQID: https://experienceleague.adobe.com/IShBBUqM44JIe07teFasScDIa-a1D2j-gCRVBHGfAv4
+TQID: 'https://experienceleague.adobe.com/IShBBUqM44JIe07teFasScDIa-a1D2j-gCRVBHGfAv4'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -21,6 +21,8 @@ subfeature_v2:
     internal-label: Custom actions
   - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
     internal-label: Reaction events
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
@@ -68,7 +70,7 @@ Follow these core steps to start building experiences:
 
 1. **Create audiences**. Build audiences through segment definitions, upload CSV files, or use audience composition. Journey Optimizer offers multiple ways to target the right customers. Learn more about [audiences](../../audience/about-audiences.md) and [creating segment definitions](../../audience/creating-a-segment-definition.md).
 
-1. **Design content**. Create compelling messages across all channels including email, SMS, push, web push, in-app, web, direct mail, and content cards:
+1. **Design content**. Create compelling messages across all channels including email, mobile messages, push, web push, in-app, web, direct mail, and content cards:
    * Use AI to generate email content, subject lines, and images based on your brand guidelines. [Learn about AI content generation](../../content-management/gs-generative.md)
    * **Personalize messages** with customer data, dynamic content, and conditional logic. [Learn about personalization](../../personalization/personalize.md)
    * **Iterate over contextual data** to display dynamic lists from events, custom actions, and dataset lookups. [Learn about iterating contextual data](../../personalization/iterate-contextual-data.md)
@@ -78,7 +80,7 @@ Follow these core steps to start building experiences:
 
     ![](../assets/perso_ee2.png)
     
-1. **Add offers and decisioning**. Deliver the best offer to each customer at the right time using AI-powered decisioning. Use Decisioning to personalize push, SMS, and other channels. Learn about [Decision Management](../../offers/get-started/starting-offer-decisioning.md) and [Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
+1. **Add offers and decisioning**. Deliver the best offer to each customer at the right time using AI-powered decisioning. Use Decisioning to personalize push, mobile messages, and other channels. Learn about [Decision Management](../../offers/get-started/starting-offer-decisioning.md) and [Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
     ![](../assets/offers-e2e-offers-displayed.png)
     
@@ -95,7 +97,7 @@ Follow these core steps to start building experiences:
 
     * Trigger journeys with **events** (customer actions) or **audiences** (batch sends)
     * Add **conditions** to create personalized paths based on customer data
-    * Use the unified **Action activity** for all channel actions (email, push, SMS, and more). [Learn about the Action activity](../../building-journeys/journey-action.md)
+    * Use the unified **Action activity** for all channel actions (email, push, mobile messages, and more). [Learn about the Action activity](../../building-journeys/journey-action.md)
     * Add the **Content decision activity** to integrate personalized offers directly into your journey flow. [Learn about the Content decision activity](../../building-journeys/content-decision.md)
     * Use **wait activities** to create perfect timing between messages
     * Send messages across **multiple channels** within one journey

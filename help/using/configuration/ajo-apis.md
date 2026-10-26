@@ -7,7 +7,7 @@ feature: Integrations, Data Ingestion
 role: Developer
 level: Intermediate
 exl-id: 4c897c52-6eb2-4d6e-aaa9-9bd83608b2b6
-TQID: https://experienceleague.adobe.com/VkGKC5I4qSBcxCQQdjTJTYNNGvUoBRFUfUxs3nbIjtQ
+TQID: 'https://experienceleague.adobe.com/VkGKC5I4qSBcxCQQdjTJTYNNGvUoBRFUfUxs3nbIjtQ'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -16,7 +16,11 @@ feature_v2:
     internal-label: Configuration
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
-subfeature_v2: []
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
+subfeature_v2:
+  - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
+    internal-label: Data ingestions
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer

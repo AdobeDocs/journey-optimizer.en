@@ -9,12 +9,25 @@ role: User
 level: Beginner
 mini-toc-levels: 1
 exl-id: 876b7770-9b11-4e3c-b426-5ffb06e093cf
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
     internal-label: Templates
+  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
+    internal-label: Overview
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 
 # Coworker for Loyalty {#loyalty-coworker-skills}
@@ -84,30 +97,30 @@ Key use cases:
 | Program performance insights | Analyze daily, weekly, and monthly program performance metrics. Compare performance across product categories and discount strategies. Identify trends in member engagement and redemption patterns. | Loyalty Insights | Show the loyalty program's total revenue broken down by day during August 2026.<br><br>Show the total loyalty discounts broken down by product category during August 2026.<br><br>Show me the loyalty program performance report for Q3 2026. |
 
 
-## Challenge Recommendations Skill {#loyalty-challenge-recommendations}
+## Loyalty Opportunities Skill {#loyalty-opportunities}
 
-The Coworker Recommendation feature enables marketers to request grounded, specific challenge recommendations through natural language conversations in CX Coworker. Recommendations use loyalty program trends and performance data and can focus on increasing member spend, winning back inactive members, improving underperforming challenges, focusing on products or categories, or addressing points expiry.
+The Loyalty Opportunities skill enables marketers to request grounded, specific challenge opportunities through natural language conversations in CX Coworker. Opportunities use loyalty program trends and performance data and can focus on increasing member spend, winning back inactive members, improving underperforming challenges, focusing on products or categories, or addressing points expiry.
 
-Marketers can narrow recommendations to the goals they care about and pass a recommendation to the Loyalty Challenge Management skill to create or edit a live challenge without leaving the conversation.
+Marketers can narrow opportunities to the goals they care about and pass an opportunity to the Loyalty Challenge Management skill to create or edit a live challenge without leaving the conversation.
 
 ### Key use cases
 
-1. **Request recommendations in natural language**
+1. **Request opportunities in natural language**
 
-   Ask for challenge recommendations in a Coworker conversation and receive grounded, specific ideas based on loyalty program trends and performance data.
+   Ask for challenge opportunities in a Coworker conversation and receive grounded, specific ideas based on loyalty program trends and performance data.
 
-1. **Focus recommendations on a goal**
+1. **Focus opportunities on a goal**
 
-   Narrow recommendations to a specific goal, such as increasing member spend, winning back inactive members, improving underperforming challenges, focusing on products or categories, or addressing points expiry.
+   Narrow opportunities to a specific goal, such as increasing member spend, winning back inactive members, improving underperforming challenges, focusing on products or categories, or addressing points expiry.
 
 1. **Review an opportunity and its rationale**
 
-   Open the **[!UICONTROL Opportunities]** tab and select **[!UICONTROL View details]** to review the recommendation, proposed challenge, and rationale.
+   Open the **[!UICONTROL Opportunities]** tab and select **[!UICONTROL View details]** to review the proposed challenge and its rationale.
 
-1. **Implement a recommendation as a live challenge**
+1. **Implement an opportunity as a live challenge**
 
-   Select **[!UICONTROL Create with AI]** to pass the recommendation to the Loyalty Challenge Management skill. Continue the conversation to provide missing details and create or edit the challenge without leaving Coworker Chat.
+   Select **[!UICONTROL Create with AI]** to pass the opportunity to the Loyalty Challenge Management skill. Continue the conversation to provide missing details and create or edit the challenge without leaving Coworker Chat.
 
 After the challenge is created or edited, review the challenge details and journey in challenge authoring before publishing.
 
-{{$include /help/_includes/do-not-localize/start/ai-augmented-loyalty-coworker-skills.md}}
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-loyalty-coworker-skills.md}}

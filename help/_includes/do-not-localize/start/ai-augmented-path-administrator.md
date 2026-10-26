@@ -14,7 +14,7 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 
 * Set up access and permissions using sandboxes, roles, permissions, and object-level access control
-* Configure channel settings and message presets for email, SMS, push, web push, and direct mail
+* Configure channel settings and message presets for email, Mobile message, push, web push, and direct mail
 * Delegate subdomains, create IP pools, and manage suppression and allowed lists
 * Enable additional capabilities such as consent policies, data governance policies, IP warmup plans, and quiet hours
 * Collaborate with data engineers, developers, and marketers

@@ -5,12 +5,25 @@ feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
     internal-label: Custom Channels
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 
 # Set up a custom channel {#create-custom-channel}
@@ -29,7 +42,7 @@ subfeature_v2:
 
 <!--Contextual help final location TBC (here or in Settings subsection-->
 
-To be able to use a custom channel in campaigns and journeys, an administrator must first create the channel. This involves defining the endpoint, authentication, throttling policy, and message payload structure.
+To be able to use a custom channel in campaigns and journeys, an administrator must first create the channel. This involves defining the endpoint, authentication, throttling policy, and message payload structure. You can create the channel manually in the Channel Builder, as described below, or with the [Channel Builder skill in Coworker](../channels/channels-coworker-skills.md#channel-builder).
 
 The **Channel Builder** section is the central interface for defining new custom channels. <!--It is accessible to users with the **[!UICONTROL Administrator]** role. -->It enables you to create and configure custom channels, but also manage API credentials, and delegate subdomains.
 
@@ -147,7 +160,7 @@ Provide the authentication details as required by your endpoint.
 * **[!UICONTROL None]** – The request is sent without credentials.
 * **[!UICONTROL API Key]** – Provide the key name, value, and location (query parameter or header).
 * **[!UICONTROL Basic auth]** – Provide a username and password.
-* **[!UICONTROL OAuth 2.0]** – Configure the payload for OAuth 2.0 authentication.
+* **[!UICONTROL OAuth 2.0]** – Configure the payload for OAuth 2.0 authentication. [Learn more](custom-channel-oauth2.md)
 <!--* **[!UICONTROL Custom]** – Define the authentication configuration using a JSON payload.-->
 
 When the authentication type is anything other than **None**, [!DNL Journey Optimizer] automatically generates an initial set of API credentials for this channel when it is activated. You can change these credentials and create new ones in the API credentials inventory. [Learn more](custom-channel-api-credentials.md) <!--TBC-->

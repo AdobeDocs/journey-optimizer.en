@@ -76,7 +76,7 @@ The **Read Audience** activity is the journey entry-point activity that adds all
 >* **Loyalty tier upgrade** → Audience Qualification. As soon as a profile reaches Gold status in a streaming audience, they enter the journey immediately to receive a congratulations email.
 >* **Re-engagement series** → Read Audience. You run a recurring journey every 30 days targeting profiles inactive for 90+ days.
 
-**Key limits:** One Read Audience per journey (must be the first activity); one audience per activity; up to five concurrent Read Audience runs per organization; 20,000 profiles per second per sandbox; 12-hour job timeout. Full details in [Guardrails and limitations](../start/guardrails.md#read-segment-g).
+**Key limits:** One Read Audience per journey (must be the first activity, or come right after a business event, where it is added automatically); one audience per activity; up to five concurrent Read Audience runs per organization; 20,000 profiles per second per sandbox; 12-hour job timeout. Full details in [Guardrails and limitations](../start/guardrails.md#read-segment-g).
 
 **Prerequisites:** An [!DNL Adobe Experience Platform] audience that is built and evaluated (Realized status), a people-based identity namespace selected for the journey, and—for recurring runs—understanding of [scheduling and throughput limits](../start/guardrails.md#read-segment-g).
 
@@ -237,6 +237,10 @@ By default, journeys are configured to run once. To define a specific date/time 
 
     ![Scheduler type dropdown with frequency options: once, daily, weekly, monthly](assets/read-segment-schedule-list.png)
 
+    >[!NOTE]
+    >
+    >The journey schedule and batch audience evaluation schedule are separate. Changing the journey's start time does not change when the audience is evaluated. Review the batch evaluation schedule separately before coordinating it with a production journey. See [Batch evaluation and audience freshness](../audience/creating-a-segment-definition.md#batch-evaluation-and-audience-freshness).
+
 For recurring journeys, specific options are available to help you manage the entry of profiles into the journey. Expand the sections below for more information on each option.
 
 >[!NOTE]
@@ -245,7 +249,7 @@ For recurring journeys, specific options are available to help you manage the en
 >
 >Each Read Audience execution uses the audience membership available at the time that execution runs. For batch audiences, [!DNL Journey Optimizer] reads from the latest available batch audience snapshot. It does not recalculate the audience in real time when the journey starts.
 >
->For recurring journeys, each occurrence uses the snapshot available for that occurrence. If you want the journey to wait for the latest batch audience evaluation before it runs, enable **[!UICONTROL Trigger after batch audience evaluation]**.
+>For recurring journeys, each occurrence uses the snapshot available for that occurrence. For **Read Audience** journeys configured with **daily recurrence**, enable **[!UICONTROL Trigger after batch audience evaluation]** to wait for fresh audience data within the configured time window before the journey runs. This option is available only for daily recurrence. It does not control audience evaluation for Action campaigns. Monitor the audience evaluation status in Adobe Experience Platform and the journey activity logs.
 
 ![Read audience recurring options: Incremental read, Force reentrance, Trigger after batch](assets/read-audience-options.png)
 
@@ -333,7 +337,7 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 
 The **[!UICONTROL Read Audience]** activity allows you to test the journey on a unitary profile.
 
-To do this, activate the test mode.
+First, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before activating test mode. [Learn about journey validation](publish-journey.md#validate).
 
 ![Test mode interface for Read Audience activity with test profile selection](assets/read-segment-test-mode.png)
 
@@ -343,7 +347,7 @@ Once the test is running, the **[!UICONTROL Show logs]** button allows you to se
 
 ![Test logs showing audience execution results and profile flow](assets/read-segment-log.png)
 
-Once the tests are successful, you can publish your journey (see [Publishing the journey](../building-journeys/publish-journey.md)). Individuals belonging to the audience will enter the journey on the date/time specified in the journey's properties **[!UICONTROL Scheduler]** section.
+Once the tests are successful and validation is current and passed, you can [publish your journey](publish-journey.md). If you changed the journey after validation, run **[!UICONTROL Validate]** again and resolve any errors before continuing. Individuals belonging to the audience will enter the journey on the date/time specified in the journey's properties **[!UICONTROL Scheduler]** section.
 
 >[!NOTE]
 >
@@ -404,7 +408,7 @@ This section helps you resolve **audience count mismatches** (fewer or more prof
 | Fewer (or more) profiles entered than the audience size | [Timing and data propagation](#timing-and-data-propagation), [Data validation and monitoring](#data-validation-and-monitoring) |
 | Read Audience processed zero profiles; alert fired | [Zero profiles processed](#zero-profiles-processed) |
 | Entries delayed or missing for batch audiences | [Timing and data propagation](#timing-and-data-propagation) |
-| Custom-upload enrichment attribute is missing or “Enriched audience not found” appears | [Troubleshoot enrichment attributes](../audience/enrichment-attributes.md#faq-enrichment) |
+| Custom-upload enrichment attribute is missing or "Enriched audience not found" appears | [Troubleshoot enrichment attributes](../audience/enrichment-attributes.md#faq-enrichment) |
 | Need to verify segment job status or namespace | [Data validation and monitoring](#data-validation-and-monitoring) |
 
 ### Zero profiles processed {#zero-profiles-processed}

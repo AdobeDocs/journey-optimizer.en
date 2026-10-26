@@ -83,11 +83,11 @@ To add content components to your email and adjust them to your needs, follow th
 
 1. To access the **[!UICONTROL Content components]** section, select the corresponding button from the Email Designer left pane.
 
-    ![](assets/email_designer_content_components.png)
+    ![Content components panel in Email Designer](assets/email_designer_content_components.png)
 
 1. Drag and drop the content components of your choice inside the relevant structure components.
 
-    ![](assets/email_designer_add_content_components.png)
+    ![Dragging content components into a structure](assets/email_designer_add_content_components.png)
 
     >[!NOTE]
     >
@@ -97,11 +97,11 @@ To add content components to your email and adjust them to your needs, follow th
 
 1. Adjust the attributes and styling for each component using the **[!UICONTROL Settings]** and **[!UICONTROL Style]** tabs on the right. For example, you can change the text style, padding or margin of each component. [Learn more about alignment and padding](alignment-and-padding.md)
 
-    ![](assets/email_designer_content_components_settings.png)
+    ![Content component Settings and Style tabs](assets/email_designer_content_components_settings.png)
 
 1. From the advanced menu of your **[!UICONTROL Content component]**, you can easily delete or duplicate any content components as needed. 
 
-    ![](assets/email_designer_content_components_settings_2.png)
+    ![Advanced menu for content component actions](assets/email_designer_content_components_settings_2.png)
 
 ## Container {#container}
 
@@ -109,7 +109,7 @@ To apply specific styling to a group of content components, you can add a **[!UI
 
 For example, add a **[!UICONTROL Container]** component and then add a [Button](#button) component inside that container. You can use a specific background for the container, and another one for the button.
 
-![](assets/email_designer_container_component.png)
+![Container component selected showing its Style settings in Email Designer](assets/email_designer_container_component.png)
 
 ## Button {#button}
 
@@ -117,7 +117,7 @@ Use the **[!UICONTROL Button]** component to insert one or multiple buttons into
 
 1. Click your newly added button to personalize the text and to have access to the **[!UICONTROL Settings]** and **[!UICONTROL Styles]** tabs in the Email Designer right pane.
 
-    ![](assets/email_designer_button_component.png)
+    ![Button component selected with the Settings tab open in Email Designer](assets/email_designer_button_component.png)
 
 1. From the **[!UICONTROL Link]** menu, add the URL you want to redirect to when clicking the button.
 
@@ -129,7 +129,7 @@ Use the **[!UICONTROL Button]** component to insert one or multiple buttons into
     * **[!UICONTROL Parent]**: opens the link in the parent frame.
     * **[!UICONTROL Top]**: opens the link in the full body of the window.
 
-    ![](assets/email_designer_button_link.png)
+    ![Target drop-down list options for the Button component](assets/email_designer_button_link.png)
 
 1. You can further personalize your button by changing styling attributes such as **[!UICONTROL Border]**, **[!UICONTROL Size]**, **[!UICONTROL Margin]**, etc. from the **[!UICONTROL Component settings]** pane.
 
@@ -137,13 +137,13 @@ Use the **[!UICONTROL Button]** component to insert one or multiple buttons into
 
 Use the **[!UICONTROL Text]** component to insert text into your email, and adjust the style (border, size, padding, etc.) using the **[!UICONTROL Styles]** tab.
 
-![](assets/email_designer_text_component.png)
+![Text component added in the Email Designer with Settings and Styles tabs highlighted](assets/email_designer_text_component.png)
 
 1. Click your newly added component to personalize the text and to have access to the **[!UICONTROL Settings]** and **[!UICONTROL Styles]** tabs in the right pane of the Email Designer.
 
 1. Change your text with the following options available in the toolbar:
 
-    ![](assets/email_designer_27.png)
+    ![Text formatting toolbar in the Email Designer](assets/email_designer_27.png)
 
     * **[!UICONTROL Change text style]**: apply bold, italic, underline or strike through to your text.
     * **Change alignment**: choose between left, right, center or justified alignment for your text.
@@ -162,7 +162,7 @@ Use the **[!UICONTROL Text]** component to insert text into your email, and adju
 
 1. Adjust the other styling attributes such as text color, font family, border, padding, margin, etc. from the **[!UICONTROL Styles]** tab.
 
-    ![](assets/email_designer_text_component_2.png)
+    ![Text component Styles tab showing font and background options](assets/email_designer_text_component_2.png)
 
 ## Divider {#divider}
 
@@ -170,7 +170,7 @@ Use the **[!UICONTROL Divider]** component to insert a dividing line to organize
 
 You can adjust styling attributes such as the line color, style and height from the **[!UICONTROL Settings]** and **[!UICONTROL Styles]** tabs.
 
-![](assets/email_designer_divider.png)
+![Divider component selected with its Style settings in Email Designer](assets/email_designer_divider.png)
 
 ## Html {#Html}
 
@@ -178,21 +178,29 @@ Use the **[!UICONTROL Html]** component to copy-paste the different parts of you
 
 1. Click on your newly added component, then select **[!UICONTROL Show the source code]** from the contextual toolbar to add your HTML.
 
-    ![](assets/email_designer_html_component.png)
+    ![Html component selected with the Show the source code option highlighted](assets/email_designer_html_component.png)
 
 1. Copy-paste the HTML code you want to add to your email and click **[!UICONTROL Save]**.
 
-    ![](assets/email_designer_html_content.png)
+    ![Edit HTML dialog showing the code editor and Save option](assets/email_designer_html_content.png)
 
 >[!NOTE]
 >
 >To simply make an external content compliant with the Email Designer, Adobe recommends creating a message from scratch and copy the content from your existing email into components.
 
+## Dynamic Media Template {#dynamic-media-template}
+
+Use the **[!UICONTROL Dynamic Media Template]** component to leverage personalized and interactive [dynamic media](../integrations/aem-dynamic.md) within your emails.
+
+Use this component to insert a Dynamic Media Template from Adobe Experience Manager into your email content, and edit it directly in the Dynamic Media Template Editor, without leaving the Email Designer. You can also upload a PSD (Photoshop) file and edit it similarly as a Dynamic Media Template. [Learn more](../integrations/aem-dynamic.md#dynamic-media-template)
+
+![Dynamic Media Template component highlighted with the Add Dynamic Media Template drop zone in Email Designer](../integrations/assets/dynamic-media-template-1.png)
+
 ## Image {#image}
 
 Use the **[!UICONTROL Image]** component to insert an image file from your computer into your email content.
 
-![](assets/email_designer_image_content.png)
+![Image component added with Browse and Import media options in Email Designer](assets/email_designer_image_content.png)
 
 1. Select the newly added component.
 
@@ -211,7 +219,7 @@ Use the **[!UICONTROL Image]** component to insert an image file from your compu
     * **[!UICONTROL Image title]** lets you define a title to your image.
     * **[!UICONTROL Alt text]** lets you define the caption linked to your image. This corresponds to the alt HTML attribute. [Learn more](../email/accessible-content.md#alt-text)
 
-    ![](assets/email_designer_10.png)
+    ![Image title and Alt text fields in the Settings tab of the Image component](assets/email_designer_10.png)
 
 1. You can also choose to **[!UICONTROL Find similar Stock photos]**. [Learn more](../integrations/stock.md)
 
@@ -223,13 +231,13 @@ Use the **[!UICONTROL Social]** component to insert links to social media pages 
 
 1. Select your newly added component. In the **[!UICONTROL Social]** field of the **[!UICONTROL Settings]** tab, choose which social media you want to add or remove.
 
-    ![](assets/email_designer_20.png)
+    ![Social media selection drop-down list for the Social component](assets/email_designer_20.png)
 
 1. Choose the size of your icons through the dedicated field.
 
 1. Click each of your social media icons to configure the **[!UICONTROL URL]** to which your audience will be redirected.
 
-    ![](assets/email_designer_21.png)
+    ![URL and Alt text fields for a social media icon in the Social component](assets/email_designer_21.png)
 
 1. You can also change the icons of each of your social media if needed from your Assets.
 
@@ -241,13 +249,13 @@ Use the **[!UICONTROL Offer decision]** component to insert offers into your mes
 
 1. Select the newly added component and click **[!UICONTROL Add]** to select your **[!UICONTROL Offer decision]**.
 
-    ![](assets/component_offers.png)
+    ![Offer decision component with the Add button in Email Designer](assets/component_offers.png)
 
 1. From the drop-down, select your **[!UICONTROL Placements]**.
 
 1. Then, select the **[!UICONTROL Offer decision]** you want to add to your content and click **[!UICONTROL Add]**.
 
-    ![](assets/component_offers_2.png)
+    ![Select Offer decision dialog with placements and offer list](assets/component_offers_2.png)
 
 1. From the **[!UICONTROL Offer decision]** tab, you can preview or change the inserted Offer.
 
@@ -261,17 +269,17 @@ Learn how to add personalized offers into an email in [this section](add-offers-
 
 Use the **[!UICONTROL Grid]** component to organize content into a structure composed of rows and columns, where each cell can contain other content components.
 
-![](assets/email_designer_grid_component.png){width="90%"}
+![Grid component added with empty cells ready for content in Email Designer](assets/email_designer_grid_component.png){width="90%"}
 
 1. Just like the [Container](#container) component, drag and drop other content components into each cell of the grid.
 
     For example, you can add a **[!UICONTROL Text]** component, an **[!UICONTROL Image]** component, and two **[!UICONTROL Button]** components. You can then add an image and edit the content of each component individually.
 
-    ![](assets/email_designer_grid_component_2.png){width="90%"}
+    ![Text, Image, and Button components added inside grid cells](assets/email_designer_grid_component_2.png){width="90%"}
 
 1. To adjust the structure of your grid, select it and go to the **[!UICONTROL Settings]** tab of the Email Designer right pane.
 
-    ![](assets/email_designer_grid_component_3.png){width="90%"}
+    ![Grid Settings tab showing number of columns, rows, and spacing options](assets/email_designer_grid_component_3.png){width="90%"}
 
 1. You can define how many columns and rows the grid contains, edit the spacing between columns and rows, and change the width of each individual column in percentage.
 
@@ -285,18 +293,18 @@ Use the **[!UICONTROL Grid]** component to organize content into a structure com
 
 Use the **[!UICONTROL Table]** component to structure content in rows and columns directly within your email, creating clear, organized layouts without relying on custom HTML.
 
-![](assets/email_designer_table_component.png){width="90%"}
+![Table component added below an image in Email Designer](assets/email_designer_table_component.png){width="90%"}
 
 1. Once added, click the component and select the **[!UICONTROL Settings]** tab of the Email Designer right pane.
 
 1. From there, you can adjust the number of rows and columns for your table.
 
-    ![](assets/email_designer_table_component_2.png)
+    ![Table Settings tab showing columns, rows, and header row options](assets/email_designer_table_component_2.png)
 
 1. Use the **[!UICONTROL Include header row]** option (enabled by default) to add a header row to your table, and toggle the **[!UICONTROL Stripe rows]** option to apply alternating row colors for improved readability.
 
 1. You can also click the arrows corresponding to a column or a row directly in the table, and use the contextual menu to add or delete a row or a column.
 
-    ![](assets/email_designer_table_component_3.png)
+    ![Contextual menu to add or delete rows and columns in a table](assets/email_designer_table_component_3.png)
 
 1. Adjust other styling attributes such as cell color, font size, text alignement, or font color from the **[!UICONTROL Styles]** tab.

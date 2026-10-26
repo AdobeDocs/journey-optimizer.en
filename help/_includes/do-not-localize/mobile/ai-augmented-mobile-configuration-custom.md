@@ -32,7 +32,7 @@ For complete understanding, this information should be combined with the documen
 
 * You can add up to 10 custom header parameters.
 * The Content-Type and Charset header fields are set by default and cannot be deleted, though the default Content-Type value can be edited.
-* mTLS applies only to the SMS provider (message sending) endpoint; the OAuth token endpoint must not use mTLS and mTLS must be disabled on the token endpoint before testing.
+* mTLS applies only to the Mobile message provider (message sending) endpoint; the OAuth token endpoint must not use mTLS and mTLS must be disabled on the token endpoint before testing.
 * With Basic or Bearer authentication, the authOption parameter must be included in the JSON payload, and the Provider Payload must reference the template variables {{fromNumber}}, {{toNumber}}, and {{message}}.
 * The custom inbound dataset schema must be XDM ExperienceEvent, include the Adobe CJM ExperienceEvent Message interaction details, Message Execution Details, and Message Profile Details field groups, and be enabled for Profile.
 * Do not reuse the same API credentials, webhooks, or provider callback URLs (including RCS agents) across sandboxes; create separate agent configurations for each sandbox.
@@ -40,14 +40,14 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Custom provider — Acronym: n/a — variants: custom messaging provider, custom SMS provider, Bring Your Own Provider
-* Do not confuse: "SMS provider (message sending) endpoint" (uses mTLS) ≠ "OAuth token endpoint" (must not use mTLS)
+* Do not confuse: "Mobile message provider (message sending) endpoint" (uses mTLS) ≠ "OAuth token endpoint" (must not use mTLS)
 * Do not confuse: "API key" ≠ "MAC authentication" ≠ "OAuth authentication" ≠ "JWT authentication" (the four Auth Type options)
 
 **FAQ:**
 
 * **Q: How many custom header parameters can I add?** — Up to 10 custom header parameters.
 * **Q: Which authentication types are supported?** — API key, MAC authentication, OAuth authentication, and JWT authentication.
-* **Q: Which endpoint uses mTLS?** — mTLS applies only to the SMS provider (message sending) endpoint; the OAuth token endpoint must not use mTLS.
+* **Q: Which endpoint uses mTLS?** — mTLS applies only to the Mobile message provider (message sending) endpoint; the OAuth token endpoint must not use mTLS.
 * **Q: What must the Provider Payload include for Basic or Bearer authentication?** — The authOption parameter in the JSON payload, plus references to the template variables {{fromNumber}}, {{toNumber}}, and {{message}}.
 * **Q: How do I test the credential?** — Click Verify SMS connection, fill in the Number and Message fields structured to align with the provider's payload format, then click Verify connection to send a sample message to a designated device.
 

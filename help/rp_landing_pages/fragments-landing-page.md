@@ -5,6 +5,9 @@ title: Reusable content fragments
 description: Reusable content fragments
 redpen-status: CREATED_||_2025-08-12_00-39-41
 exl-id: 8ec67807-8bcb-4510-bcba-ccf6e710ceb9
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Reusable content fragments{#section-overview}
 

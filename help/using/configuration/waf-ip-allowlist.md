@@ -7,10 +7,25 @@ feature: Channel Configuration, Deliverability
 role: Admin
 level: Experienced
 keywords: waf, firewall, ip, subdomain, security, traffic, inbound
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-subfeature_v2: []
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+subfeature_v2:
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Manage allowed IPs {#waf-ip-allowlist}
 
@@ -60,7 +75,7 @@ Requests for subdomains without allowed IPs configured are not affected and cont
 
 >[!CAUTION]
 >
->Misconfiguration immediately breaks all links on the affected subdomain.
+>Misconfiguration breaks all links on the affected subdomain once the changes are enforced (up to one hour after saving).
 
 If incorrect WAF egress IPs are saved, [!DNL Journey Optimizer] will reject every incoming request for that subdomain — including legitimate ones from real recipients clicking links in communications, who will receive a 403 error page.
 
@@ -76,7 +91,7 @@ To access the list of subdomains for which you have allowed the IPs of your Web 
 
 ![IP allowed list inventory](assets/waf-ip-allowlist.png){width="90%"}
 
-The inventory page lists all subdomains that have at least one IP allowed, across all channel types (Email, Landing page, SMS, Web). Learn more on subdomains in [this section](about-subdomain-delegation.md).
+The inventory page lists all subdomains that have at least one IP allowed, across all channel types (Email, Landing page, Mobile, Web). Learn more on subdomains in [this section](about-subdomain-delegation.md).
 
 The list shows the number of allowed IPs per subdomain, and the author of the last modification.
 
@@ -88,7 +103,7 @@ To add IPs to the allowed list for a given subdomain, follow the steps below.
 
 1. From the **[!UICONTROL Allowed list - IPs]** inventory, click the **[!UICONTROL Add allowed IPs]** button.
 
-1. Select the target subdomain from the **[!UICONTROL Subdomain]** drop-down list. Only [delegated subdomains](delegate-subdomain.md) are listed, across all supported channel types: Email, Landing page, SMS, and Web.
+1. Select the target subdomain from the **[!UICONTROL Subdomain]** drop-down list. Only [delegated subdomains](delegate-subdomain.md) are listed, across all supported channel types: Email, Landing page, Mobile, and Web.
 
 1. In the **[!UICONTROL IP address]** field, enter the public egress IPs of your WAF. IPv4, IPv6, and CIDR ranges are supported (for example, `203.0.113.42`, `2001:db8::1`, `203.0.113.0/24`).
 
@@ -102,9 +117,13 @@ To add IPs to the allowed list for a given subdomain, follow the steps below.
 
 1. If needed, you can remove an IP from the list by clicking the **✕** icon on its chip.
 
-1. Click **[!UICONTROL Save]**. The allowed list is applied and propagated to the edge. The subdomain appears in the inventory and its IPs are enforced immediately.
+1. Click **[!UICONTROL Save]**. The allowed list is applied and propagated to the edge. The subdomain appears in the inventory.
 
-Now any requests to this subdomain from any IP not on this list will be rejected.
+    >[!NOTE]
+    >
+    >Changes to the allowed list are cached and can take up to one hour to be enforced.
+
+Once the allowed list is enforced, any requests to this subdomain from any IP not on this list will be rejected.
 
 >[!CAUTION]
 >
@@ -120,6 +139,8 @@ Add new IPs using the input field, or remove existing IPs by clicking the **✕*
 
 ![Edit or remove allowed IPs](assets/waf-ip-allowlist-edit-ip.png)
 
+Changes can take up to one hour to be enforced.
+
 >[!IMPORTANT]
 >
 >Removing the last IP from a subdomain reopens it to all inbound traffic.
@@ -130,7 +151,7 @@ To remove all IPs from the allowed list for a subdomain, use the **Delete** icon
 
 ![Delete icon in the Actions column of the allowed IP list](assets/waf-ip-allowlist-delete-icon.png)
 
-A confirmation pop-up opens. Type the exact subdomain name to confirm, then click **[!UICONTROL Remove]**.
+A confirmation pop-up opens. Type the exact subdomain name to confirm, then click **[!UICONTROL Remove]**. The restriction is lifted once the change is enforced, which can take up to one hour.
 
 ![Confirm removal of all allowed IPs for a subdomain](assets/waf-ip-allowlist-remove.png){width="80%"}
 

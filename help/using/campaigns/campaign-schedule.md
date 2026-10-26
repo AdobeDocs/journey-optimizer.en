@@ -41,6 +41,10 @@ level_v2:
 
 Use the **[!UICONTROL Schedule]** tab to define the campaign schedule.
 
+>[!NOTE]
+>
+>When a campaign targets a batch audience, campaign scheduling and audience evaluation are separate clocks. The campaign uses the latest completed audience snapshot available when execution begins; changing the campaign start time does not recalculate the audience. Allow approximately two hours after segmentation completes for the audience to become ready for use, but treat this as a variable planning estimate rather than a guarantee. Actual timing depends on the sandbox, audience size, ingestion volume, export processing, and system load. If the audience is still being evaluated or exported, the campaign can use the previous completed snapshot. The **[!UICONTROL Trigger after batch audience evaluation]** control applies to supported recurring Read Audience journeys, not Action campaigns; schedule campaign execution after the expected segmentation and export completion and verify actual sandbox timing.
+
 ## Set a campaign start date
 
 By default, Action campaigns start once they are activated manually, and end as soon as the message has been sent once. If you do not want to execute your campaign right after its activation, you can specify a date and time at which the message should be sent in the **[!UICONTROL Campaign start]** section.
@@ -62,7 +66,7 @@ For example, if you schedule a campaign to send at 9 AM using profile timezone, 
 
 >[!AVAILABILITY]
 >
->Scheduling using profile time zones is available for these outbound channels only: Email, Push, SMS, WhatsApp, and LINE.
+>Scheduling using profile time zones is available for these outbound channels only: Email, Push, Mobile message, WhatsApp, and LINE.
 
 To enable profile timezone scheduling:
 
@@ -86,7 +90,7 @@ For IANA naming, the identifiers are case-sensitive and must match the official 
 
 ## Set an execution frequency
 
-For **Email**, **SMS**, and **Push notification** actions, you can define a frequency at which the campaign's message should be sent. To do this, use the **[!UICONTROL Action triggers]** options in the campaign creation screen to specify if the campaign should be executed daily, weekly, or monthly.
+For **Email**, **Mobile message**, and **Push notification** actions, you can define a frequency at which the campaign's message should be sent. To do this, use the **[!UICONTROL Action triggers]** options in the campaign creation screen to specify if the campaign should be executed daily, weekly, or monthly.
 
 ![](assets/campaign-frequency.png)
 
@@ -102,7 +106,7 @@ The **[!UICONTROL Campaign end]** section allows you to specify when a campaign 
 
 ## Set rate control
 
-[!DNL Journey Optimizer] allows you to enable rate control for outbound actions (Email, SMS, Push notifications).
+[!DNL Journey Optimizer] allows you to enable rate control for outbound actions (Email, Mobile messages, Push notifications).
 
 This feature is particularly useful for preventing overload on downstream systems, such as landing pages or customer care platforms. For example, you can set a rate limit of 165 messages per second to ensure steady delivery without overwhelming downstream systems.
 
@@ -126,3 +130,5 @@ To deliver your campaign message in batches over time instead of all at once, yo
 ## Next steps {#next}
 
 Once your campaign schedule is ready, you can review and activate the campaign. [Learn more](review-activate-campaign.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-campaign-schedule.md}}

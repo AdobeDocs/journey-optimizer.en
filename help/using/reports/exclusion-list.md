@@ -8,13 +8,15 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: a34ba1a8-87d5-4f9c-a181-2f49e74e8f09
-TQID: https://experienceleague.adobe.com/Fz8Ld7Ga9jq9VNQx1RBoZSH0JonnXhy-0fBv7-zmWsw
+TQID: 'https://experienceleague.adobe.com/Fz8Ld7Ga9jq9VNQx1RBoZSH0JonnXhy-0fBv7-zmWsw'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
 subfeature_v2:
   - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
     internal-label: Performance monitoring
@@ -60,6 +62,8 @@ This means that if a profile is excluded multiple times (for example, due to mul
 The total exceeds the targeted audience because duplicate exclusion events are included in the Exclusions count.
 
 For more details on the specific exclusion reasons, see the table below.
+
+The exclusion reason is stored in the `messageExclusion.reason` field of the message feedback events. For the fields of these events, see the [AJO schemas](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}. To query the exclusions of a send, see the example in [Exclusion reporting](../configuration/allow-list.md#reporting).
 
 ## Exclusion reasons list
 

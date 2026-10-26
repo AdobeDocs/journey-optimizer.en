@@ -16,12 +16,12 @@ For complete understanding, this information should be combined with the documen
 * Get the inlet URL from Adobe Experience Platform APIs
 * Copy the payload from the payload preview in the Event menu
 * Set up a POST API call to the Streaming Ingestion APIs inlet using the copied payload
-* Map the payload variables to the values that should populate them
+* Determine where to get all the variables present in the payload
 * Configure the request body type and the organization ID header for the call
 
 **Glossary:**
 
-* **Streaming Ingestion APIs**: The Adobe Experience Platform APIs to which events must be pushed so they reach Journey Optimizer *(product-specific)*
+* **Streaming Ingestion APIs**: The APIs to which the data system pushes events, using the payload copied from Journey Optimizer *(product-specific)*
 * **Inlet**: The Streaming Ingestion APIs URL to which the POST API call is sent *(product-specific)*
 * **Payload preview**: The view in the Event menu from which you copy the payload to use in the body of the API call *(product-specific)*
 * **x-gw-ims-org-id**: The header key used to pass your organization ID in the API call *(product-specific)*
@@ -35,9 +35,8 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Streaming Ingestion APIs — Acronym: n/a — variants: inlet, inlet URL
+* Canonical name: Additional steps to send events
 * Synonyms: "inlet" = "Streaming Ingestion APIs URL"
-* Do not confuse: "header" (section carrying values such as x-gw-ims-org-id) ≠ "body" (the data section carrying the payload)
 
 **FAQ:**
 
@@ -48,4 +47,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 42d383a1 -->
+<!-- ai-section-version: 1 | source-hash: bb6e7705 -->

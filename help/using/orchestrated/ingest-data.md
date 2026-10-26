@@ -80,7 +80,7 @@ The following Dources are supported for use with Orchestrated campaigns:
 
 ## Guidelines for relational Schema data hygiene {#cdc}
 
-For datasets enabled with **[!UICONTROL Change data capture]**, all data changes including deletions, are automatically mirrored from the source system into Adobe Experience Platform.
+For datasets enabled with **[!UICONTROL Change data capture]**, all data changes including deletions, are automatically mirrored from the source system into Adobe Experience Platform. You cannot enable **[!UICONTROL Change data capture]** on a dataset that already contains ingested data.
 
 Since Adobe Journey Optimizer Campaigns require all onboarded datasets to be enabled with **[!UICONTROL Change data capture]**, it is the customer's responsibility to manage deletions at the source. Any record deleted from the source system will automatically be removed from the corresponding dataset in Adobe Experience Platform.
 

@@ -86,9 +86,9 @@ To add a **Web** activity to a journey, follow these steps:
 
 1. Drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
 
-    >[!IMPORTANT]
+    >[!IMPORTANT] 
     >
-    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
+    >Legacy native channel activities (Email, Push, Mobile messages, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
 1. Select **[!UICONTROL Web]** as the action type.
 
@@ -127,6 +127,10 @@ To start building your web experience through a campaign, follow the steps below
     * **API-triggered - Marketing/Transactional**: execute the campaign using an API call. API-triggered campaigns are aimed at sending either marketing, or transactional messages, i.e. messages sent out following an action performed by an individual: password reset, cart purchase etc. [Learn how to trigger a campaign using APIs](../campaigns/api-triggered-campaigns.md)
 
 1. Complete the steps to create a web campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule).
+
+    >[!CAUTION]
+    >
+    >Custom upload (CSV) audiences are not supported for web experiences. [Learn more](../audience/target-audiences.md#guardrails)
 
 1. Select the **[!UICONTROL Web]** action.
 

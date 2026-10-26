@@ -6,6 +6,9 @@ description: Configure offers
 redpen-status: CREATED_||_2025-08-11_21-00-31
 badge: label="Legacy" type="Informative"
 exl-id: e03307f5-0024-463a-ad2b-78d49e6d158f
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Configure offers{#section-overview}
 

@@ -6,6 +6,9 @@ description: Decision management
 redpen-status: CREATED_||_2025-08-11_21-05-09
 badge: label="Legacy" type="Informative"
 exl-id: 5262df0e-201b-45bc-8234-e5acb7ff8af9
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Decision management{#section-overview}
 

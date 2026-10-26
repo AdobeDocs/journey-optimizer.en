@@ -106,9 +106,9 @@ When your extraction file is ready, complete the configuration of your [journey]
 
 1. To define your target audience, click the **[!UICONTROL Select audience]** button and choose from the available Adobe Experience Platform audiences. [Learn more](../audience/about-audiences.md).
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >For now, audience selection is restricted to 3 million profiles. This limitation can lifted upon request to your Adobe representative.
+   >Audience selection supports up to 100 million profiles.
 
 1. In the **[!UICONTROL Identity namespace]** field, select the appropriate namespace to identify individuals within the chosen audience. [Learn more](../event/about-creating.md#select-the-namespace).
 
@@ -175,6 +175,8 @@ The extraction file is required by direct mail providers to send mail to your cu
    1. Click the **[!UICONTROL Add]** button to create a new column.
 
    1. The **[!UICONTROL Formatting]** pane displays on the right-hand side, allowing you to set up the selected column. Specify a **[!UICONTROL Label]** for the column.
+
+      Each column must have a **[!UICONTROL Label]**.
    
    1. In the **[!UICONTROL Data]** field, select the profile attributes to display using the [personalization editor](../personalization/personalization-build-expressions.md).
 
@@ -194,6 +196,7 @@ You can now test your direct mail message and send it to your audience. [Learn h
 * [Configure direct mail channel](direct-mail-configuration.md)
 * [Test and send direct mail](test-send-direct-mail.md)
 * [Preview and test content](../content-management/preview-test.md)
+* [Content authoring errors](../content-management/content-authoring-errors.md)
 
 For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md). 
 

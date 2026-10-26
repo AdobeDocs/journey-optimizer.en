@@ -129,6 +129,8 @@ Your Campaign instance must be provisioned for this integration. The Transaction
 
     ![Action parameter mapping with expression editor for dynamic values](assets/accintegration-uc-10.png)
 
+1. Click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
+
 1. Test your journey.
 
     ![Complete journey flow with event trigger and Campaign action execution](assets/accintegration-uc-11.png)

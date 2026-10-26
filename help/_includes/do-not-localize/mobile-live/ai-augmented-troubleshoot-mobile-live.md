@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page provides a systematic approach to diagnose why Live activities fail to appear, update, or end even when the API returns HTTP 200, covering profile and token, campaign configuration, payload, and delivery issues for unitary and broadcast use cases.
+* **TL;DR:** This page provides a systematic approach to diagnose why Live activities fail to appear, update, or end even when the API returns HTTP 200, covering profile and token, campaign configuration, payload, and delivery issues for unitary and broadcast use cases on iOS and Android.
 
 **Intents:**
 
@@ -33,14 +33,22 @@ For complete understanding, this information should be combined with the documen
 * **`liveActivityPushNotificationDetails`**: The AEP profile attribute that stores a device's push-to-start token, `appId`, `platform`, and `attributeType` *(product-specific)*
 * **APS payload**: The iOS JSON structure sent under `context.requestPayload.aps`, containing the event, `content-state`, and control fields; `attributes` includes the iOS struct fields for start events *(product-specific)*
 * **Assurance**: A debugging tool limited to test devices connected during an active session; use dataset queries for production end-user diagnostics *(product-specific)*
+* **`topic_name`** (Android): The shared FCM topic through which subscribed devices receive broadcast events; the Android equivalent of iOS `input-push-channel`
+* **`notification_id`** (Android): Client-generated identifier for a Live activity instance; keep it unchanged across start, update, and end events to target the same instance
+* **`timestamp`** (Android): Message ordering key, expressed in epoch seconds
+* **`when`** (Android): Optional notification display time, expressed in epoch seconds; it does not control message ordering
+* **`dismiss_after`** (Android): Used only for end events; specifies how many seconds the completed Live activity remains visible before removal
 
 **Guardrails:**
 * Android audience membership does not subscribe a device to the FCM topic; verify topic subscription separately from audience evaluation.
 
 * Use API-triggered Transactional campaigns for unitary Live activities and API-triggered Marketing campaigns for broadcasts.
 * The **High Throughput** option must not be enabled, since it is incompatible with Live activity.
-* Assurance is limited to test devices connected during an active session.
-* Android uses standard Assurance, with no dedicated Live Activities plugin view; run the app on Android 16.1 (API level 36.1) or later.
+* Assurance sessions are for test and QA devices only; end-user production devices are not connected to Assurance.
+* Android: unitary Live activities use the same regular FCM push token to start, update, and end, and no separate activity tokens are required; broadcast events reach subscribed devices through the shared FCM topic identified by `topic_name`.
+* Android `timestamp` must strictly increase for every event with the same `notification_id` (or `topic_name` for broadcasts); updates are displayed only if their timestamp is newer than the last processed value, and older or equal timestamps are ignored.
+* Android `action_type` / `action_uri` are not read by the current Android SDK.
+* iOS requirements: a physical iOS device on iOS 16.1 or later; the Xcode Simulator supports local start only (remote push via APNs is not supported on Simulator); remote start from Assurance requires iOS 17.1 or later, a valid push-to-start token, and a valid channel configuration; Adobe Experience Platform Mobile SDK 5.11.0 or later.
 * Batch audiences may be up to 24 hours stale (batch evaluation, once daily); this audience-freshness risk is not applicable to unitary use cases.
 * The first time a Live activity starts on a device, iOS shows a one-time permission prompt; the user must tap "Allow" for update tokens to be generated and synced.
 * For iOS broadcasts, `input-push-channel` must exactly match `liveActivityData.channelID`; a mismatch causes delivery failures.
@@ -48,24 +56,25 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: API Triggered Campaign — Acronym: n/a — variants: API-triggered Transactional (unitary), API-triggered Marketing (broadcast)
+* Canonical name: API Triggered Campaign — Acronym: n/a — campaign types used for Live activities: API-triggered Transactional (unitary), API-triggered Marketing (broadcast)
 * Synonyms: "attributeType" = "attributes-type" (the same value; camelCase on the profile, hyphenated in APS JSON)
 * Do not confuse: `input-push-channel` (in the iOS APS payload) ≠ `liveActivityData.channelID` (in the iOS attributes); their values must match for broadcasts.
 * Do not confuse: "Push-to-start token" (starts an iOS Live activity, stored on the profile) ≠ "Update token" (updates or ends an iOS unitary instance, per instance)
 * Do not confuse: "Unitary" (API-triggered Transactional, individual profile) ≠ "Broadcast" (API-triggered Marketing, audience segment)
 * Do not confuse: execution statuses "`PENDING`" ≠ "`INPROGRESS`" ≠ "`COMPLETED`" ≠ "`FAILED`"
 * Do not confuse: `feedbackStatus` "`sent`" ≠ "`error`" ≠ "`exclude`" ≠ "`delay`"
+* Do not confuse: "`timestamp`" (iOS: the current Unix epoch time in seconds for every call; Android: the ordering key that must strictly increase per `notification_id` or `topic_name`) ≠ "`when`" (Android: optional notification display time that does not control ordering)
 * Do not confuse: `la_event` value "`remotestart`" (recorded in the dataset for initial delivery) ≠ "`start`" (the `event` field value in the payload)
 
 **FAQ:**
 
-* **Q: Why does the API return 200 OK but the Live activity does not appear?** — Delivery can still fail at the profile/token, campaign configuration, payload, or push notification service provider stage; work through Scenarios 1 to 3.
-* **Q: Can I use Assurance for production end-user devices?** — Assurance is limited to test devices connected during an active session. For production diagnostics, use the dataset queries.
-* **Q: Why do update and end calls fail after the Live activity started on iOS?** — The per-instance update token may not be synced; the user must have tapped "Allow" on the one-time permission prompt for update tokens to be generated (Scenario 4).
+* **Q: Why does the API return 200 OK but the Live activity does not appear?** — A successful response (200 OK) does not guarantee the Live activity appears; the delivery can fail at multiple points, from API request validation through device rendering, so work through Scenarios 1 to 3.
+* **Q: Can I use Assurance for production end-user devices?** — No; Assurance sessions are for test and QA devices only. For production diagnostics, use the dataset queries.
+* **Q: Why do update and end calls fail after the Live activity started?** — The per-instance update token may not be synced; the user must have tapped "Allow" on the one-time permission prompt for update tokens to be generated (Scenario 4).
 * **Q: How do I check execution status programmatically?** — Use the GET Message Execution API; for unitary executions the `executionId` is prefixed with `HUOC-`, and the `status` field returns `PENDING`, `INPROGRESS`, `COMPLETED`, or `FAILED`.
 * **Q: What does a `feedbackStatus` of `sent` mean on iOS?** — It confirms Journey Optimizer successfully handed the notification to APNs; it does not confirm that the Live activity was rendered on the device.
 * **Q: Why are some audience members not receiving a broadcast?** — The profile may not be in the audience, or a batch audience snapshot may be up to 24 hours stale; trigger on-demand evaluation or ensure a streaming update occurs (Scenario 7).
 
 +++
 
-<!-- ai-section-version: 2 | source-hash: 5642a723 -->
+<!-- ai-section-version: 1 | source-hash: b489cefe -->
