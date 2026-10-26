@@ -67,6 +67,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A caution has been added to the **Delegate a subdomain** page to inform users that a separate DNS zone or SOA record for the subdomain causes the delegation to fail. It explains how to remove the subdomain zone and configure NS records at the parent domain level instead. [Read more](../configuration/delegate-subdomain.md#submit-subdomain)
 
+* The **Create a decision item** page now explains that the `x-schema-id` header must contain the full URI of the **Personalized Offer Items - Experience Decisioning** schema of your tenant, not only the schema ID or a schema version number. [Read more](../experience-decisioning/api-reference/decisions-items/create.md)
+
 ## September 2026 {#september-2026}
 
 * A note has been added to clarify that some email providers, such as Gmail, do not share user-level spam complaint data, so recipients who mark a message as spam are not automatically added to the suppression list. [Read more](../configuration/manage-suppression-list.md#suppression-categories-and-reasons)
