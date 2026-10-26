@@ -42,6 +42,11 @@ topic_v2:
 >[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
+>id="ajo_inapp_reevaluate"
+>title="Re-evaluate before display"
+>abstract="Fetch latest campaign data from the server before showing this message to ensure content and targeting rules are up-to-date. When enabled, the SDK will verify the campaign is still active and check if targeting rules have been modified before displaying the message. This prevents users from seeing outdated content or messages from closed campaigns. Recommended for time-sensitive campaigns where content or audience targeting may change frequently."
+
+>[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_triggers"
 >title="Manage In-app Triggers"
 >abstract="Efficiently control your Triggers by selecting the specific events and criteria that will activate your messages. With the Rule builder, users can define precise conditions and values. When these conditions are met, they initiate a series of actions, including the delivery of in-app messages."
