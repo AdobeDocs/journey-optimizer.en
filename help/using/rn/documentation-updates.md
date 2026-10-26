@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
+* The **Use supplemental identifiers in journeys** page now clarifies that setting `expressActivation: true` in the API payload at audience creation applies to all external audiences created via API, not only CSV audiences. Federated Audience Composition audiences are the exception: the flag is set automatically. [Read more](../building-journeys/supplemental-identifier.md#external-audiences)
+
 * A new **Choose a consent level for opt-outs** page explains the difference between the **Channel** and **Identity** consent levels, with an example and guidance on which to choose. The **List unsubscribe** and **Manage email opt-out** pages now link to it. [Read more](../email/consent-level.md)
 * The **Frequency capping**, **Quiet hours**, and **Rule sets** pages now list custom channels among the channels supported by business rules. [Read more](../conflict-prioritization/channel-capping.md)
 * The **Personalize URLs in emails** page now explains that you must use triple curly braces (`{{{ ... }}}`) for the dynamic part of a personalized URL, so special characters are not escaped. [Read more](../email/url-personalization.md#use-braces)
