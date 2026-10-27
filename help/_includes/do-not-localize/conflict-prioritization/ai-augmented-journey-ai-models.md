@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which datasets can I select?** — Only datasets created from schemas associated with the [!UICONTROL Experience Event - Proposition Interactions] field group.
 * **Q: How do I use the AI model in a formula?** — Use the [!UICONTROL Select AI model] button, then in at least one [!UICONTROL Criterion] set [!UICONTROL AI model score] as the ranking method.
 
+**Personas:**
+
+* **marketer:** Can create an AI model in the Orchestration ranking section under the AI models tab, specifying an Optimization metric, datasets, and segments. Can reference the AI model in a ranking formula using AI model score, then assign the formula to a rule set applied to journeys. The page states that you can select up to 5 datasets and up to 50 audiences to train the AI model. Where: "Create an AI model".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Create a dataset where conversion events will be collected.
+* **Success check:** All journeys that use this rule set will be ranked with the formula referencing the selected AI model when the cap is applied.
+* **Previous:** Defining journey entry or concurrency caps using rule sets before applying AI model ranking: Work with rule sets (conflict-prioritization/rule-sets.md); Creating a dataset to collect conversion events before creating the AI model: Create a dataset to collect events (experience-decisioning/data-collection/create-dataset.md)
+* **Next:** Creating a ranking formula to reference the AI model after creating it: Journey arbitration ranking formulas (conflict-prioritization/journey-ranking-formulas.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: ad8a4fdc -->

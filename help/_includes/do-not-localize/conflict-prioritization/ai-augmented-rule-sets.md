@@ -52,6 +52,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Does deactivating a rule reset profile counts?** — No, deactivating a rule or rule set does not affect or reset any counts on individual profiles.
 * **Q: What is the Global Default Rule Set?** — A pre-created, active rule set whose global rules apply to all selected channels for both journeys and campaigns.
 
+**Personas:**
+
+* **marketer:** Can group frequency capping, quiet hours, and journey capping rules into channel or journey rule sets. Can create a rule set, select its domain, add rules, and activate the rule and the rule set to apply it to journeys and campaigns. Can use the pre-created Global Default Rule Set or create custom rule sets, and can deactivate or delete any rule set. The page states that up to 10 rule sets apply to the channel domain and 10 to the journey domain, for 20 total. Where: "Create and activate rule sets".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Access the Rules sets list, then select Create rule set.
+* **Success check:** The new rule set appears in the Administration > Business rules menu, sorted by last modification date.
+* **Previous:** Learn about the permissions needed to work with business rules: Permission levels (administration/high-low-permissions.md)
+* **Next:** Configure journey capping rule parameters for a journey rule set: Journey capping & arbitration (conflict-prioritization/journey-capping.md); Configure frequency capping rules by channel and communication type: Work with rule sets (conflict-prioritization/channel-capping.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: c8cbdd95 -->

@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens if I switch to the code editor?** — You express the formula in PQL syntax, and this prevents reverting back to the default builder view for that formula.
 * **Q: When is the formula applied?** — When the cap is applied; all journeys using the rule set are ranked with the selected formula.
 
+**Personas:**
+
+* **marketer:** Can create a ranking formula in Orchestration ranking > Ranking formulas, adding criteria based on journey attributes, profile attributes, or AI model scores. Can assign the formula to a rule set by setting Ranking method to Formula and selecting the Journey domain. The page states that formulas are assigned at the rule set level, not on individual journeys. Where: "Create a ranking formula".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Access the Orchestration ranking section, then select the Ranking formulas tab.
+* **Success check:** You can select the created formula from the list to view its details, and edit or delete it.
+* **Previous:** Learn about the journey attributes referenced when defining a criterion: Define your journey's properties (building-journeys/journey-properties.md); Set up the rule sets that define caps on journey entry or concurrency: Work with rule sets (conflict-prioritization/rule-sets.md)
+* **Next:** Create the journey capping rules to add to the rule set: Journey capping & arbitration (conflict-prioritization/journey-capping.md); Create or open the journey to assign the rule set to: Create your first journey (building-journeys/journey-gs.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 5960fa33 -->

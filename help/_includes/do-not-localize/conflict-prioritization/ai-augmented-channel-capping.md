@@ -58,6 +58,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Do frequency caps apply to proofs?** — Yes; if a test profile has reached the cap, the proof shows as finished but no email is delivered.
 * **Q: Where can I see profiles excluded by frequency rules?** — In the Customer Journey Analytics report and the Live report, where frequency rules are listed as a reason for exclusion.
 
+**Personas:**
+
+* **marketer:** Can create a channel rule set from the Rules sets list and add a capping rule with Add Rule. Can set the Capping count and Reset capping frequency as hourly, daily, weekly, or monthly, then select one or more channels. The page states that you can create up to 10 active local rule sets for each channel domain and for the journey domain. Where: "Create a channel capping rule".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Access the Rules sets list, then select Create rule set.
+* **Success check:** Your message is added to the rule set with the Draft status.
+* **Previous:** You want to select a custom channel in the capping rule: Get started with custom channels (custom-channel/get-started-custom-channel.md); You want to test frequency rules without affecting real profiles: Create test profiles (audience/creating-test-profiles.md)
+* **Next:** You want to see profiles excluded from delivery by frequency rules: Updated reporting experience (reports/report-gs-cja.md); You want to see frequency rules listed as a reason for exclusion: Live report (reports/live-report.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 28f590eb -->
