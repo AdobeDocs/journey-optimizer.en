@@ -47,6 +47,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can a schema enabled for Real-Time Customer Profile be disabled or deleted?** — No; once enabled, the schema cannot be disabled or deleted, although its datasets can be disabled or deleted separately.
 * **Q: How do relational schemas work?** — Create schemas manually or import via DDL, link schemas to define relationships between entities and people, and ingest data into your dataset from supported sources.
 
+**Personas:**
+
+* **developer:** Can model profiles and time-series interactions, such as selects, purchases, or logins, using a standard schema. Can combine one class with one or more field groups to add specific fields. Can create relational schemas manually or import them via DDL, then link schemas and ingest data from supported sources. Can send one message per entity, such as per booking or per subscription, with relational schemas. Where: "Standard & relational schemas".
+* **admin:** Can enable a schema for Real-Time Customer Profile to power segmentation and personalization. Can disable or delete datasets built on an enabled schema separately from the schema itself. The page states that enabling a schema for Real-Time Customer Profile is a permanent decision and the schema cannot be disabled or deleted afterward. Where: "Standard & relational schemas".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Create relational schemas manually or import them via DDL.
+* **Success check:** You can send one message per entity, such as per booking or per subscription.
+* **Previous:** Learn how to manage relational schemas and datasets for Orchestrated campaigns: Configuration steps (orchestrated/gs-schemas.md); Get started with data management in Journey Optimizer: Get started with data management in Journey Optimizer (data/gs-data.md)
+* **Next:** Create a schema, a dataset, and ingest data to add Test profiles in Journey Optimizer: Create test profiles (audience/creating-test-profiles.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 5a29d06a -->

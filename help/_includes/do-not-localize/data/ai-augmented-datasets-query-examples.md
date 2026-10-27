@@ -57,6 +57,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I separate test executions from non-test executions?** — Use the `isTestExecution` field; treat `NULL` or missing values as unknown rather than converting them to `false`.
 * **Q: How do I get marketer-defined metadata for messages in reporting?** — Use the Entity Dataset, which uses the `messageID` attribute to stitch datasets such as the Message Feedback Dataset and Experience Event Tracking Datasets; to sort emails sent by a journey by action, join the Message Feedback dataset with the Entity dataset using `_experience.decisioning.propositions.scopeDetails.correlationID` and the `_id` field in the Entity dataset.
 
+**Personas:**
+
+* **developer:** Can query the AJO Message Feedback Event Dataset table ajo_message_feedback_event_dataset using fields such as messageExecutionID, journeyVersionID, and feedbackStatus. Can filter results by feedbackStatus values such as sent and bounce, and by channel using channel._id. The page states that this dataset uses batch ingestion, so data may be delayed by up to 2 hours. Where: "Message feedback event dataset".
+* **admin:** Can enable Show system datasets in the Datasets workspace to view system-generated datasets, which are hidden by default. Can confirm that the exact table name shown in the Datasets workspace matches the table name used in a query. The page states that for datasets using batch ingestion, allow up to two hours for data to become available before contacting Adobe Support. Where: "If a query returns "Table not provisioned for dataset"".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Confirm which dataset matches the type of action you want to analyze in your journey.
+* **Success check:** The query returns counts of email interactions, such as opens and selects, for the given message.
+* **Previous:** Access datasets in the Datasets workspace, since system-generated datasets are hidden by default: Get Started with datasets (data/get-started-datasets.md)
+* **Next:** Find commonly used examples to query Journey Step Events: Examples of queries (reports/query-examples.md); Confirm that a custom action's external delivery succeeded, since a successful HTTP call only confirms the call completed: Troubleshoot your live journey execution (building-journeys/troubleshooting-execution.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 746bd4a0 -->

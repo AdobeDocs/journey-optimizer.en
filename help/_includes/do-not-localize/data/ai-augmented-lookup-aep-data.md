@@ -58,6 +58,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens if I delete a batch of data?** — Removing a batch completely removes all matching keys from the lookup service; for example, deleting Batch 1 (Sku1, Sku2, Sku3) removes those keys from the lookup store even though Batch 2 also contained them.
 * **Q: Should I toggle lookup on and off frequently?** — No; repeatedly turning datasets on and off can lead to unexpected indexing behavior, so leave the dataset enabled for as long as you plan to use it for lookups.
 
+**Personas:**
+
+* **developer:** Can call the API at https://platform.adobe.io/data/core/entity/lookup/dataSets/${DATASET_ID}/${ACTION} to enable or disable a dataset, using the DATASET_ID, ACCESS_TOKEN, API_KEY, IMS_ORG, and SANDBOX_NAME values. The developer project needs the Adobe Journey Optimizer and Adobe Experience Platform APIs added, plus manage datasets permission. The page states that the schema for the dataset must contain a primary identity that can act as the lookup key. Where: "API Method".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Use the toggle in the dataset management interface to enable the dataset for lookup.
+* **Success check:** The Monitoring menu's Journey Optimizer tab shows the status of ingestion into the lookup service.
+* **Previous:** Learning how to access and work with datasets before enabling one for lookup: Get Started with datasets (data/get-started-datasets.md)
+* **Next:** Using the enabled dataset's data with Journey Optimizer personalization: Use Adobe Experience Platform data for personalization (personalization/aep-data-perso.md); Using the enabled dataset's data with Journey Optimizer Decisioning: Use Adobe Experience Platform data for decisioning (experience-decisioning/aep-data-exd.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 9531b107 -->

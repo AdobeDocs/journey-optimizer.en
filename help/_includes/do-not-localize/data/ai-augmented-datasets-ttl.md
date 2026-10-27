@@ -58,6 +58,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which timestamp is used for enforcement?** — The event timestamp, not the ingestion date.
 * **Q: Can I delete Journey Optimizer system-generated datasets?** — No; they are protected and cannot be deleted through the standard Adobe Experience Platform UI; contact Adobe Engineering or Adobe Customer Care for permanent removal.
 
+**Personas:**
+
+* **developer:** Can find each dataset's Data Lake TTL and Profile Store TTL in the table, such as the AJO Email Tracking Experience Event Dataset. Can see which datasets require the Decisioning add-on, Message Export add-on, or Journey Optimizer Loyalty license in the Availability column. The page states that record-type datasets show n/a in both the Data Lake TTL and Profile Store TTL columns. Where: "Impacted datasets".
+* **admin:** Can track the 90-day Profile Store TTL and 13-month Data Lake TTL guardrails on system-generated datasets, active since February 2025. Can export datasets to Destinations such as Amazon S3, Azure Blob, or Google Cloud Storage to retain data beyond the TTL. The page states that TTL extensions are not currently supported and enforcement on existing sandboxes has been delayed by Adobe. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Set up automated queries to copy critical data to derived datasets before data is deleted.
+* **Success check:** The derived dataset is stored in the data lake without a TTL.
+* **Next:** Need to delete specific records or identities from a protected system dataset: Perform data lifecycle operations (privacy/data-hygiene.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d997e76f -->

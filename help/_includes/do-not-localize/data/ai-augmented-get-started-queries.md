@@ -39,6 +39,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What kinds of queries can I run?** — Interactive queries for development purposes, and non-interactive queries to populate datasets.
 * **Q: Which service powers the Query Editor?** — Adobe Experience Platform Query Service.
 
+**Personas:**
+
+* **marketer:** Can write, validate, and run queries on customer experience data within the Journey Optimizer user interface. Can run interactive queries for development purposes. Can run non-interactive queries to populate datasets. The page states that the Query Editor is provided by Adobe Experience Platform Query Service. Where: "Get Started with queries".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Write a query in the Query Editor within the Journey Optimizer user interface.
+* **Success check:** The query is validated and runs, and a non-interactive query populates a dataset.
+* **Next:** After running a non-interactive query to populate a dataset: Get Started with datasets (data/get-started-datasets.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: e687e17c -->
