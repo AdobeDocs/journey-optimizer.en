@@ -51,6 +51,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I control how often a message is shown?** — Use `personalizationStorageEnabled`: set to true to trigger with the frequency defined in your campaign, or false to trigger on every page load.
 * **Q: What does Enable personalization storage do?** — It lets the Web SDK track which experiences have been seen by the user across page loads.
 
+**Personas:**
+
+* **developer:** Can configure Web In-app Messaging directly from the Web SDK JavaScript library, using the `sendEvent` or `evaluateRulesets` commands. Can set `renderDecisions: true` with `personalization.surfaces` in `sendEvent`, or `personalization.decisionContext` in `evaluateRulesets`, to fetch personalization content. The page states that `personalizationStorageEnabled: true` triggers the in-app message with the campaign frequency, while `personalizationStorageEnabled: false` triggers it on every page load. Where: "Configure Web In-app Messaging using the Web SDK JavaScript library".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Check the Enable personalization storage option in the Personalization section of the Web SDK tag extension.
+* **Success check:** The configuration process is completed and your message is ready to be shown to your users.
+* **Previous:** Define the in-app message frequency in the campaign configuration before setting personalizationStorageEnabled: Configure the Web In-app channel (in-app/create-in-app-web.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 9b42a69e -->

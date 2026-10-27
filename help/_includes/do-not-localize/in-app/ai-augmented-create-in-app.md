@@ -51,6 +51,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What campaign types can send an In-app message?** — Scheduled - Marketing (executed immediately or on a specified date) and API-triggered - Marketing/Transactional (executed using an API call).
 * **Q: How do I add more than one action to my in-app message?** — Click the Add action button to add one or more inbound actions.
 
+**Personas:**
+
+* **marketer:** Can add an In-app message to a journey using the Action activity with the In-app action type selected. Can also add an In-app message to a Scheduled - Marketing campaign or an API-triggered - Marketing/Transactional campaign. Can edit triggers with Or and And conditions, add traits, and set the display frequency for the message. Where: "Create an In-app message".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Drag and drop an Action activity from the Actions section of the palette, then select In-app as the action type.
+* **Success check:** The In-app action is configured on the journey canvas, and a 3-days Wait activity is added automatically after it.
+* **Previous:** Creating your first journey before adding an In-app action to it: Create your first journey (building-journeys/journey-gs.md)
+* **Next:** Designing the content of the In-app message after creating the configuration: Design your In-app content (in-app/design-in-app.md); Testing and sending the In-app notification after it is created: Check and send your In-app notification (in-app/send-in-app.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 5b3100ff -->

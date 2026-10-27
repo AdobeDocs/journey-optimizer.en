@@ -48,6 +48,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: When should I use another channel instead?** — When the user is not in the app, for critical/time-sensitive alerts needing to reach users outside the app, for regulatory messages needing read confirmation, for account reactivation, or for high-volume transactional updates.
 * **Q: What is the risk of overusing In-app messages?** — Banner blindness, where users start ignoring messages that appear too often.
 
+**Personas:**
+
+* **marketer:** Can create In-app notifications in Journey Optimizer and configure the message layout, display, text, and button options. Can trigger messages based on in-app behavior or location, such as highlighting a feature after a user visits a related screen. Can tailor layout, text, and buttons to specific audiences for personalized onboarding flows. Where: "Use cases".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Configure the In-app channel with proper mobile app configurations.
+* **Success check:** You can access In-app reports for the channel.
+* **Next:** Set up in-app channel prerequisites and configuration: In-app channel prerequisites and configuration (in-app/inapp-configuration.md); Create an In-app notification: Create an In-app notification in Journey Optimizer (in-app/create-in-app.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 7053e275 -->
