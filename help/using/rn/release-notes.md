@@ -142,8 +142,12 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 2, 2026
 
-+++ Coming soon — **Information below is subject to change.**
+* **Suppression list override at Email action level** - Journey Optimizer now includes a per-action toggle that allows delivery to locally-suppressed addresses for a specific email action in a journey or campaign. This is designed for compliance scenarios where a communication must be demonstrably attempted, such as a required notification to an address that has previously bounced. This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
 
+  Availability date: October 28, 2026
+
+
++++ Coming soon — **Information below is subject to change.**
 
 <table>
 <thead>
@@ -160,8 +164,6 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 </tr>
 </tbody>
 </table>
-
-* **Suppression list override at Email action level** - Journey Optimizer now includes a per-action toggle that allows delivery to locally-suppressed addresses for a specific email action in a journey or campaign. This is designed for compliance scenarios where a communication must be demonstrably attempted, such as a required notification to an address that has previously bounced. This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
 
 * **Reporting webhooks available for custom channels** - You can now define a reporting webhook for a custom outbound channel and attach it to a channel configuration. Use it to enrich your Journey Optimizer reports with interaction events. <!-- Documentation link: TBD -->
 
