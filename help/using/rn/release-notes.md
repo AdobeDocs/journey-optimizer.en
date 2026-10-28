@@ -269,21 +269,6 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Journey creation from Coworker rail</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Journey creation with AI</strong> is now available directly from the Coworker right rail, replacing the previous AI Assistant experience with a re-branded, integrated entry point for generating journeys.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 * **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
 
 * [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view.
