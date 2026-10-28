@@ -181,6 +181,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <tr>
 <td>
 <p>A new "Stop action" activity in the journey canvas now allows you to remove a profile from up to five inbound activities or experiences directly from a journey. This decouples inbound disqualification from journey exit.</p>
+<p><img src="assets/do-not-localize/stop-action"></p>
 <p>For more information, refer to the <a href="../building-journeys/stop-action.md">detailed documentation</a>.</p>
 <p>Availability date: October 12, 2026</p>
 </td>
@@ -198,6 +199,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <tr>
 <td>
 <p>A new <strong>Validate</strong> button lets you run configuration checks, including message checks, when you're ready to test or publish, reducing repeated checks during editing and helping keep larger journey canvases responsive.</p>
+<p><img src="assets/do-not-localize/journey-validate.gif"></p>
 <p>For more information, refer to the <a href="../building-journeys/publish-journey.md#validate">detailed documentation</a>.</p>
 <p>Availability date: October 9, 2026</p>
 </td>
@@ -240,6 +242,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <td>
 <p>Five new alerts help you monitor journey message bounce and delivery error rates, receive notifications when journey <strong>Read Audience</strong> exports start and complete, and detect journey event delays due to queueing when the event throughput guardrail has been exceeded. Threshold-based alerts support configurable thresholds, and <strong>Read Audience</strong> export notifications support journey-level subscriptions.</p>
 <p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p><img src="assets/do-not-localize/journey-alerts.gif"></p>
 <!--
 <p>For more information, refer to the <a href="../reports/alerts.md#available-alerts">detailed documentation</a>.</p>
 <p>Availability date: October 29, 2026</p>
