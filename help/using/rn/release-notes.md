@@ -81,6 +81,23 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <table>
 <thead>
 <tr>
+<th><strong>Override email channel configuration settings</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Email header fields and delivery settings can now be overridden at the journey or campaign action level, without requiring a separate channel configuration. From name, From email prefix, Reply-To, recipient address, and list-unsubscribe values can each be set using profile attributes or contextual data.</p><p>This change allows each individual journey or campaign to carry its own sender identity, useful when the same channel configuration serves multiple programs, regions, or teams that each need a distinct From address or reply routing.</p>
+<p>For more information, refer to the <a href="../email/create-email.md#override-email-channel-configuration">detailed documentation</a>.</p>
+<p>Availability date: October 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Self-serve setup for High throughput email</strong><br/></th>
 </tr>
 </thead>
@@ -127,22 +144,6 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
 +++ Coming soon — **Information below is subject to change.**
 
-<table>
-<thead>
-<tr>
-<th><strong>Override email channel configuration settings</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Email header fields and delivery settings can now be overridden at the journey or campaign action level, without requiring a separate channel configuration. From name, From email prefix, Reply-To, recipient address, and list-unsubscribe values can each be set using profile attributes or contextual data.</p><p>This change allows each individual journey or campaign to carry its own sender identity, useful when the same channel configuration serves multiple programs, regions, or teams that each need a distinct From address or reply routing.</p>
-<!-- GIF placeholder: TBD -->
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>

@@ -90,6 +90,19 @@ In the **[!UICONTROL Business rules]** drop-down list, select a rule set to appl
 
 +++
 
++++**Override email channel configuration** (Email)
+
+Use this option when an API-triggered campaign needs email values that differ from the selected channel configuration, without creating another configuration. You can override only the fields needed for that action while keeping the rest of the configuration unchanged. [Learn how to override email channel configuration](../email/create-email.md#override-email-channel-configuration)
+
+For API-triggered campaigns, as the context is generated from the API payload at runtime, contextual attributes are not available in the personalization editor when defining the email action, so they must be entered manually. [Learn more on contextual data syntax](../campaigns/api-triggered-campaign-content.md#contextual)
+
+>[!IMPORTANT]
+>
+>The expression path must match the API payload structure exactly as no check is performed by [!DNL Journey Optimizer]. For example, if the payload contains `context.RM.name` and `context.RM.emailPrefix`, use the same dot notation in your expression.
+
+
++++
+
 +++**Track engagement** (Email, Mobile).
 
 Use the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or mobile deliveries. Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../reports/campaign-global-report-cja.md)
