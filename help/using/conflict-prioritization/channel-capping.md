@@ -105,7 +105,7 @@ To create a channel rule set, follow these steps :
 
    The counter automatically resets to 0 when a new time window begins. For a 2-day frequency cap, this reset occurs every two days at midnight UTC.
 
-1. Select the channel(s) you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL Mobile message]**, **[!UICONTROL Push notification]**, **[!UICONTROL Direct mail]** or **[!UICONTROL WhatsApp]**.
+1. Select the channel(s) you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL Mobile message]**, **[!UICONTROL Push notification]**, **[!UICONTROL Direct mail]**, **[!UICONTROL WhatsApp]**, or any [custom channel](../custom-channel/get-started-custom-channel.md) you have created.
 
    ![](assets/rule-sets-channels.png)
 

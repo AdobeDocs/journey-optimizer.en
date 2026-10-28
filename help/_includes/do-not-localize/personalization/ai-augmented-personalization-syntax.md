@@ -53,7 +53,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: When should I use `{{...}}` vs. `{%= ... %}`?** — Use `{{...}}` (Handlebars) to render attribute values, loop over arrays, and call block helpers. Use `{%= ... %}` (PQL) to call built-in functions like `upperCase()` and `formatDate()`, and to evaluate conditional expressions.
 * **Q: How do I output a value without HTML encoding?** — Use the triple-stash `{{{ }}}` instead of `{{...}}`. Single-brace Handlebars HTML-escapes output (e.g., `&` becomes `&amp;`); triple-stash bypasses escaping.
 * **Q: What is the correct equality operator in PQL?** — Use a single `=` for equality comparisons in PQL. Using `==` is a syntax error.
-* **Q: How do I reference a schema field whose name is a reserved keyword (e.g. `next`, `last`, `this`)?** — Wrap it in backticks: `{{profile.person.\`next\`.name}}`. This applies to both Handlebars paths and PQL expressions.
+* **Q: How do I reference a schema field whose name is a reserved keyword (e.g. `next`, `last`, `this`)?** — Wrap it in backticks: ``{{profile.person.`next`.name}}``. This applies to both Handlebars paths and PQL expressions.
 * **Q: Can I call PQL functions inside `{{...}}` Handlebars blocks?** — No. `{{...}}` resolves Handlebars variables and helpers only. A PQL function inside `{{...}}` causes a "could not find helper" error. Use `{%= functionName(...) %}` instead.
 
 +++

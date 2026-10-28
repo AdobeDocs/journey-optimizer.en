@@ -59,7 +59,7 @@ In [!DNL Journey Optimizer], you can create two types of reusable rules:
 
 >[!TIP]
 >
->You can also create, explain, simulate, and optimize rules conversationally using the **Rules & Ranking** skill in [Coworker for Decisioning](experience-decisioning-coworker-skills.md#rules-ranking).
+>You can also create, explain, simulate, and optimize rules conversationally using the **Decisioning Rule Workflow** skill in [Coworker for Decisioning](experience-decisioning-coworker-skills.md#rules-ranking).
 
 ### Decision rules {#decision-rules}
 

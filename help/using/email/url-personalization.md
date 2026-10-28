@@ -66,7 +66,7 @@ To personalize a URL, follow the steps below.
 
 Here are some examples of personalized URLs:
 
-* `https://www.adobe.com/users/{{profile.person.name.lastName}}` 
+* `https://www.adobe.com/users/{{{profile.person.name.lastName}}}`
 * `https://www.adobe.com/users?uid={{profile.person.name.firstName}}`
 * `https://www.adobe.com/usera?uid={{context.journey.technicalProperties.journeyUID}}`
 * `https://www.adobe.com/users?uid={{profile.person.crmid}}&token={{context.token}}`
@@ -76,6 +76,20 @@ Here are some examples of personalized URLs:
 >When editing a personalized URL in the personalization editor, helper functions and audiences membership are disabled for security reasons.
 >
 >Spaces are not supported in the personalization tokens used inside urls.
+
+### Use triple curly braces in personalized URLs {#use-braces}
+
+When inserting a URL that contains personalization, use three curly braces (`{{{ ... }}}`) for the dynamic portion of the URL. This prevents escaping from altering special characters (for example `/` and `+`) and helps avoid broken URLs, incorrect redirects, or tracking issues.
+
+Here is an example:
+
+```html
+<a href="https://example.com/path/{{{profile.person.customSlug}}}?ref={{{context.system.source.id}}}">View details</a>
+```
+
+>[!IMPORTANT]
+>
+>Using raw output (`{{{ ... }}}`) means the value is inserted as-is. Only use it with values you trust and that are intended to be URL-safe (for example, values you generate or validate upstream).
 
 For reliable rendering and tracking, follow the [best practices and guardrails](#best-practices) below.
 
@@ -164,20 +178,6 @@ Now when the email is sent out, this parameter is automatically appended to the 
 ## Best practices and guardrails {#best-practices}
 
 To keep links valid, clickable, and trackable, follow the best practices and guardrails below.
-
-### Braces for dynamic URLs {#use-braces}
-
-When inserting a URL that contains personalization, use three curly braces (`{{{ ... }}}`) for the dynamic portion of the URL. This prevents escaping from altering special characters (for example `/` and `+`) and helps avoid broken URLs, incorrect redirects, or tracking issues.
-
-Here is an example:
-
-```html
-<a href="https://example.com/path/{{{profile.person.customSlug}}}?ref={{{context.system.source.id}}}">View details</a>
-```
-
->[!IMPORTANT]
->
->Using raw output (`{{{ ... }}}`) means the value is inserted as-is. Only use it with values you trust and that are intended to be URL-safe (for example, values you generate or validate upstream).
 
 ### Correct URL tracking {#enable-url-tracking}
 
