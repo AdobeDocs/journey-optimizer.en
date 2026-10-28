@@ -62,7 +62,7 @@ The content creation process depends on the channel you selected. Learn detailed
 
 >[!IMPORTANT]
 >
->[High Throughput campaigns](../campaigns/api-triggered-high-throughput.md) do not rely on Adobe profiles: all personalization must be included in the API payload as context data, as detailed below. This mode is available only for the email channel and in the US region.
+>[High Throughput campaigns](../campaigns/api-triggered-high-throughput.md) do not rely on Adobe profiles: all personalization must be included in the API payload as context data, as detailed below. This mode is available only for the email channel, across all regions except Switzerland. Note that High Throughput channel configurations themselves do not support contextual or profile-based personalization. [Learn more](../campaigns/api-triggered-high-throughput.md#guardrails)
 
 ## Attach personalized PDF files {#attachments}
 
