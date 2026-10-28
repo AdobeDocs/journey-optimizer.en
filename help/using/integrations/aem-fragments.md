@@ -192,7 +192,7 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     ![](assets/aem_campaign_9.png){zoomable="yes"}
 
-    By default, `tokenSubstitution=true` resolves values from the token map. Set it to `false` to enable dynamic rendering, which resolves personalization directly in the field. This capability is Limited Availability. Contact your Adobe representative for access.
+    You can also use attribute paths such as `profile.person.name.firstName` directly in fragment fields. Learn more in [Use attribute paths in Content Fragments](#aem-attribute-paths).
 
 1. Click **[!UICONTROL Save]**. You can now test and check your message content as detailed in [this section](../content-management/preview.md).
 
@@ -202,8 +202,48 @@ Once you have performed your tests and validated the content, you can [send your
 
 Adobe Experience Manager allows you to identify the Journey Optimizer campaigns or journeys where a Content Fragment is being used. Learn more in [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references){target="_blank"}. 
 
-## Use AEM Content Fragments with Experience Decisioning {#aem-decisioning}
+### Use attribute paths in Content Fragments {#aem-attribute-paths}
 
+>[!AVAILABILITY]
+>
+>This capability is Limited Availability. Contact your Adobe representative for access.
+
+Content Fragment fields can contain attribute paths from the `profile`, `context`, and `item` namespaces, for example `{{profile.person.name.firstName}}`. These resolve automatically when the message is sent, with no token map needed, and you can mix them with flat tokens in the same field.
+
+Use the full attribute path as it appears in the schema. Helpers, expressions, conditional blocks, and PQL are not supported inside Content Fragments.
+
+To render profile attributes, add an **Expression fragment** to the same message as an inline fragment (`mode="inline"`). Declare each profile attribute used in the Content Fragment with the `let` syntax only. The variable name in `let` can be anything, but the Content Fragment must still use the full attribute path, for example `{{profile.person.name.firstName}}`, not the variable name. Attributes that are not declared render as empty. Context and decision item attributes do not need this fragment.
+
+
+>[!BEGINSHADEBOX]
+
+**Example**
+
+
+The `headline` field in the Content Fragment contains:
+
+```html
+Hi {{profile.person.name.firstName}}, use code {{promoCode}}!
+```
+
+The Expression fragment declares the profile attribute:
+
+```html
+{% let firstName = profile.person.name.firstName %}
+```
+
+The message contains both references:
+
+```html
+{{fragment id="ajo:<helperFragmentId>" mode="inline"}}
+{{fragment id="aem:…" promoCode="SAVE10"}}
+```
+
+The first name resolves from the profile, and `promoCode` comes from the token map.
+
+>[!ENDSHADEBOX]
+
+## Use AEM Content Fragments with Experience Decisioning {#aem-decisioning}
 
 >[!AVAILABILITY]
 >
