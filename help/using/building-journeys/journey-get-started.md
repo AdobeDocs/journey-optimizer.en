@@ -9,7 +9,7 @@ level: Beginner, Intermediate
 hide: true
 keywords: journey, orchestration, getting started, onboarding, capabilities
 exl-id: 96b1d619-986d-493d-a73b-d7c63b92cca8
-TQID: https://experienceleague.adobe.com/Ht6fS6uanOs-rXoT4bAnK6eGvm9kOmH-N5B-y8KU6Rc
+TQID: 'https://experienceleague.adobe.com/Ht6fS6uanOs-rXoT4bAnK6eGvm9kOmH-N5B-y8KU6Rc'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Journeys
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
     internal-label: Journey design
@@ -97,7 +99,7 @@ Leverage **contextual data** from events, information from [!DNL Adobe Experienc
 
 **Built-in actions**
 
-Use **built-in channel actions** to send messages designed in [!DNL Journey Optimizer] across email, push, SMS/RCS/MMS, and more.
+Use **built-in channel actions** to send messages designed in [!DNL Journey Optimizer] across email, push, mobile message, and more.
 
 [Send messages in journeys](journey-action.md)
 :::
@@ -137,7 +139,7 @@ Build a set of journey nodes once — such as an eligibility check or channel ro
 
 **Test & optimize**
 
-Test your journeys before publishing, monitor their performance, and optimize delivery with advanced features like send-time optimization.
+[Validate your journey configuration](publish-journey.md#validate), then test before publishing. Monitor performance and optimize delivery with advanced features like send-time optimization.
 
 [Test and publish journeys](testing-the-journey.md)
 :::
@@ -148,7 +150,7 @@ Test your journeys before publishing, monitor their performance, and optimize de
 
 From within the journey designer, marketers can send real-time triggered 1:1 messages through any channel when an event occurs. For example, when a customer subscribes to a service, it can [trigger a welcome email](message-to-subscribers-uc.md), encouraging them to log into the app for the first time and set their preferences. Actions like completing the purchase, opening the email, and logging into the app can be used to advance new customers through their journeys.
 
-The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journey-action.md) that support outbound messages, such as emails, push notifications, and SMS/RCS/MMS, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
+The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journey-action.md) that support outbound messages, such as emails, push notifications, and mobile message, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
 
 
 :::: landing-cards-container
@@ -276,7 +278,7 @@ Understand the journey canvas, palette, and how to design your customer journeys
 
 **Test & publish**
 
-Test your journeys thoroughly before publishing them to ensure they work as expected and deliver the right experience.
+[Validate your journey configuration](publish-journey.md#validate), resolve any errors, and test before publishing.
 
 [Testing guide](testing-the-journey.md)
 :::

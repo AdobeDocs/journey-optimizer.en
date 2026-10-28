@@ -20,7 +20,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Data Subjects**: individuals whose information is used; regulations such as GDPR require compliance with specific requirements before using their information, and Data Subjects should be able to modify their consent at any time
+* **Data Subjects**: term used on the page for those whose information is used; regulations such as GDPR state that you must comply with specific requirements before being able to use information from Data Subjects, and Data Subjects should be able to modify their consent at any time
 * **Privacy Service**: Adobe Experience Platform service used to manage customer requests to access and delete personal data *(product-specific)*
 * **Audit logs**: used to identify actions performed by users in the system, troubleshoot issues, and help comply with regulations and corporate data stewardship policies *(product-specific)*
 * **Consent policies**: Adobe Experience Platform consent policies applied to custom actions to respect the preferences of your customers *(product-specific)*
@@ -39,10 +39,10 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: Why does privacy need to be managed carefully in Journey Optimizer?** — Because Journey Optimizer collects and processes extremely large amounts of data, including personal information and sensitive data.
-* **Q: What does GDPR require regarding Data Subjects?** — Compliance with specific requirements before using their information, and allowing Data Subjects to modify their consent at any time.
+* **Q: What do regulations such as GDPR state regarding Data Subjects?** — That you must comply with specific requirements before being able to use information from Data Subjects. The page also states that Data Subjects should be able to modify their consent at any time.
 * **Q: What are governance policies used for?** — To prevent sensitive fields from being exported to third-party systems through custom actions.
 * **Q: Which service manages data access and deletion requests?** — The Adobe Experience Platform Privacy Service.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 104f0dfd -->
+<!-- ai-section-version: 1 | source-hash: d7d20db7 -->

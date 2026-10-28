@@ -15,13 +15,13 @@ For complete understanding, this information should be combined with the documen
 
 * Understand how long system-generated dataset data is retained in the profile store versus the data lake.
 * Identify which datasets are subject to TTL.
-* Plan for the enforcement on existing customer sandboxes starting October 1, 2026.
+* Understand that the enforcement on existing customer sandboxes, originally planned for October 1, 2026, has been delayed by Adobe.
 * Retain data beyond the TTL using dataset export through Destinations or Data Distiller derived datasets.
 * Understand the impact on segmentation, computed attributes, tracking, and Customer Journey Analytics.
 
 **Glossary:**
 
-* **Time-to-live (TTL)**: retention guardrail after which system-generated dataset data is dropped *(product-specific)*
+* **Time-to-live (TTL)**: retention guardrail applied to Journey Optimizer system-generated datasets *(product-specific)*
 * **Profile store**: store subject to the 90-day TTL for impacted datasets *(product-specific)*
 * **Data lake**: store subject to the 13-month TTL for impacted datasets *(product-specific)*
 * **Time-series dataset**: dataset type that is subject to TTL
@@ -30,15 +30,17 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Profile store TTL: 90 days for Journey Optimizer system-generated dataset data (hard limit; TTL extensions are not currently supported).
-* Data lake TTL: 13 months for Journey Optimizer system-generated dataset data (hard limit; TTL extensions are not currently supported).
-* AJO Message Export Dataset and AJO Message Event Metadata Dataset: 30 days data lake TTL (hard limit; both require the Message Export add-on).
-* TTL is enforced on new sandboxes and new organizations as of February 2025, and on existing customer sandboxes starting October 1, 2026 (hard enforcement date).
+* Profile store TTL: 90 days for Journey Optimizer system-generated dataset data (guardrail; TTL extensions are not currently supported). In the table, 90 days applies to the AJO Message Feedback Event Dataset, AJO Email Tracking Experience Event Dataset, AJO Push Tracking Experience Event Dataset, and AJO Channel Tracking Event Dataset; other datasets show `n/a`.
+* Data lake TTL: 13 months for Journey Optimizer system-generated dataset data (guardrail; TTL extensions are not currently supported). Some datasets show `n/a` in the table.
+* AJO Message Export Dataset and AJO Message Event Metadata Dataset: 30 days data lake TTL (both require the Message Export add-on).
+* The TTL guardrail is rolled out in new sandboxes and new organizations as of February 2025, and its rollout to existing customer sandboxes has been delayed by Adobe (originally planned for October 1, 2026).
+* The change applies to all sandbox types.
 * TTL applies only to time-series datasets; record-type datasets are `n/a` in both the Data Lake TTL and Profile Store TTL columns.
 * TTL enforcement uses the event timestamp, not the ingestion date.
 * Journey Optimizer system-generated datasets are protected and cannot be deleted through the standard Adobe Experience Platform UI.
-* Computed attributes: initial backfill calculation is limited to the last 90 days of data; subsequent look-back is a maximum of 6 months.
-* Segmentation and retargeting look-back is limited to 90 days on affected profile store data.
+* Computed attributes: initial backfill calculation is limited to the last 90 days of data; subsequent updates are based on incremental events, and once they reach the look-back period (max 6 months) the TTL essentially no longer affects the computed attribute.
+* Segmentation and retargeting look-back is limited to 90 days on affected dataset data, because segmentation depends on data in the profile store.
+* Tracking: effective max look-back period of impacted dataset data is reduced to 90 days; data from impacted datasets resides for 13 months in the data lake.
 
 **Terminology:**
 
@@ -51,11 +53,11 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: Which datasets are subject to TTL?** — Only time-series datasets; record-type datasets (such as entity and classification datasets) are not subject to TTL and are marked `n/a`.
 * **Q: Does the 90-day profile store TTL delete profiles?** — No; the system-generated dataset data in the profile is dropped after 90 days, not the profiles themselves.
-* **Q: Can I increase the TTL?** — TTL extensions are not currently supported; you can export data through Destinations, or, with a Data Distiller entitlement, create derived datasets stored without a TTL.
-* **Q: When does enforcement reach existing sandboxes?** — Starting October 1, 2026.
+* **Q: Can I increase the TTL?** — TTL extensions are not currently supported. For Journey Optimizer system dataset data in the data lake, you can export data through Destinations to retain data longer, or, with a Data Distiller entitlement, create derived datasets to store the data in the data lake without a TTL.
+* **Q: When does enforcement reach existing sandboxes?** — The rollout has been delayed by Adobe (originally planned for October 1, 2026). To initiate a TTL update outside of this rollout, see the Experience Platform TTL guide.
 * **Q: Which timestamp is used for enforcement?** — The event timestamp, not the ingestion date.
 * **Q: Can I delete Journey Optimizer system-generated datasets?** — No; they are protected and cannot be deleted through the standard Adobe Experience Platform UI; contact Adobe Engineering or Adobe Customer Care for permanent removal.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 36918b67 -->
+<!-- ai-section-version: 1 | source-hash: d997e76f -->

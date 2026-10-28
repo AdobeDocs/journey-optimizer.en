@@ -16,7 +16,7 @@ For complete understanding, this information should be combined with the documen
 * Create a journey event whose schema includes the `productListItems` array
 * Insert a customer's first name in uppercase using `{%= upperCase(profile.person.name.firstName) %}`
 * List cart items by iterating over `context.journey.events.event_ID.productListItems` with `{{#each}}`
-* Display a product-specific note conditionally using `{%#if context.journey.events.\`event_ID\`.productListItems.name = "product_name" %}`
+* Display a product-specific note conditionally using ``{%#if context.journey.events.`event_ID`.productListItems.name = "product_name" %}``
 * Test the journey in test mode using a test profile with event payload, then publish
 
 **Glossary:**

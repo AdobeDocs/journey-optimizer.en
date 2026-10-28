@@ -124,6 +124,13 @@ For example, if you are targeting an audience with enrichment attributes generat
 >
 >To avoid confusion, ensure that the attributes you use in condition expressions have been ingested with actual data before the profile enters the journey. You can verify attribute values in the [Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"} to confirm whether data exists for the fields used in your conditions.
 
+### Troubleshoot custom-upload enrichment attributes {#troubleshoot-custom-upload-enrichment-attributes}
+
+If a condition cannot access a custom-upload enrichment attribute, check its audience reference before assuming that the attribute was not ingested:
+
+* Verify that the Read Audience activity selects the same audience referenced by the condition expression.
+* The “Enriched audience not found” message is ambiguous and does not identify one root cause. [Learn more about troubleshooting custom-upload enrichment attributes](../audience/enrichment-attributes.md#faq-enrichment).
+
 Using the advanced expression editor, you can setup more advanced conditions manipulating collections or using data sources requiring the passing of parameters. [Learn more](../datasource/external-data-sources.md).
 
 ![Data Source condition configuration with expression editor](assets/journey50.png)

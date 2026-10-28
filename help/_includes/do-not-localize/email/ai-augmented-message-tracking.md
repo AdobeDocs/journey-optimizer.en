@@ -34,6 +34,7 @@ For complete understanding, this information should be combined with the documen
 * Both Email opens and Click on email options are enabled by default.
 * A unique urlID is generated only when both the URL and the label are unique; otherwise the same urlID is reused and you cannot tell which link was clicked — use a unique label for each similar URL (in the Email Designer or via the `data-label` HTML attribute).
 * Journey Optimizer complies with URI syntax (RFC 3986), which disables some special international characters in URLs; URL-encode unsupported characters (for example, use `%27` for an apostrophe) to avoid errors when sending a proof or email.
+* If a link in the HTML is malformed, tracking cannot be added to it; correct the link in the HTML and save again.
 * Marketing-type email messages must include an opt-out link; this is not required for transactional messages. The category (Marketing or Transactional) is defined in the channel configuration.
 * Mirror page links are auto-generated and cannot be edited; heavy runtime personalization can make mirror page URLs excessively large and cause HTTP errors (404, 422, 502).
 * In a proof sent to test profiles, the mirror page link is not active; it is only active in the final messages.
@@ -57,4 +58,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 1fcd5252 -->
+<!-- ai-section-version: 1 | source-hash: d1d0aad4 -->

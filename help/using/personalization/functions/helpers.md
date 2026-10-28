@@ -6,10 +6,20 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
     internal-label: Build expressions
-subfeature_v2: []
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Helpers {#gs-helpers}
 
@@ -290,6 +300,11 @@ The `valueAtPath` helper assigns a value from a data path to a template variable
 | `idx` | Optional 0-based index used to extract a specific element from an array or collection. |
 | `result` | The variable name that stores the extracted value. |
 
+**Limitations**
+
+* The `idx` value must identify an existing item in the array or collection. Index counting starts at 0, so the first item is at index 0. If the index is outside the available range, rendering throws an exception.
+* The `path` parameter must be a data path. PQL expressions are not supported.
+
 **Example**
 
 ```handlebars
@@ -299,7 +314,7 @@ The `valueAtPath` helper assigns a value from a data path to a template variable
 
 ## Url {#url}
 
-The `url` helper is used to track links, shorten URLs and insert [deep links](../../email/deeplinks.md) in your SMS message content.
+The `url` helper is used to track links, shorten URLs and insert [deep links](../../email/deeplinks.md) in your mobile message content.
 
 **Syntax**
 
@@ -462,4 +477,3 @@ You can apply the helper to one parameter, several, or all parameters in a link,
 * Revoked keys must not be used for new encryption. Follow your security policy for rotation and decommissioning.
 
 * The encryption process being ressource-intensive, using the `Encrypt` function may impact throughput at render time.
-

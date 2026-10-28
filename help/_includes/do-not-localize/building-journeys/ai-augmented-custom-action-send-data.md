@@ -15,7 +15,7 @@ For complete understanding, this information should be combined with the documen
 
 * Build an IP warming journey to gradually increase email send volume
 * Configure a Profile cap condition to limit the number of recipients per delivery
-* Add an Email action activity to the nominal journey path
+* Add an Action activity with the Email channel to the nominal journey path
 * Remove the profile cap condition once IP warming is complete
 
 **Glossary:**
@@ -28,19 +28,17 @@ For complete understanding, this information should be combined with the documen
 
 * A Profile cap condition must be set on the Condition activity to control delivery volume during IP warming.
 * Profiles exceeding the cap limit are routed to the alternate path.
-* The journey must be recreated or modified after IP warming is complete to remove the cap condition.
+* After your IP has warmed up, you can remove the cap condition.
 
 **Terminology:**
 
-* Canonical name: IP warming — Acronym: n/a — variants: IP warm-up, sender reputation warm-up
-* Synonyms: "Profile cap" = "recipient limit condition"
-* Do not confuse: "IP warming" ≠ "email authentication" (SPF/DKIM/DMARC setup is separate)
+* Canonical name: IP warming — Acronym: n/a
 
 **FAQ:**
 
-* **Q: Why do I need to warm up my IP?** — New IP addresses have no sending history, so mailbox providers may block or spam-folder messages until reputation is established.
+* **Q: Why do I need to warm up my IP?** — If you recently moved to another email service provider, IP address, or email domain or subdomain, you need to establish your reputation as a sender; otherwise, deliveries might be blocked or moved to recipients' spam folders.
 * **Q: What happens to profiles that exceed the profile cap?** — They take the alternate path defined in the Condition activity.
 * **Q: How do I increase the cap over time?** — Edit the Limit field in the Condition activity settings and gradually raise it up to your total subscriber count.
-* **Q: When can I remove the profile cap condition?** — Once your IP has sufficient sending history and deliverability metrics are stable, you can remove the condition from the journey.
+* **Q: When can I remove the profile cap condition?** — After your IP has warmed up, you can remove this condition.
 
 +++

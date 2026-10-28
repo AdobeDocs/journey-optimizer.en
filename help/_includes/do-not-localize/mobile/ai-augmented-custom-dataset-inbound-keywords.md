@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to store inbound SMS keywords in a profile-enabled custom dataset by creating an Adobe Experience Platform Experience Event schema and a dataset from it, then referencing that dataset in the Journey Optimizer SMS API credentials.
+* **TL;DR:** This page explains how to store inbound mobile message keywords in a profile-enabled custom dataset by creating an Adobe Experience Platform Experience Event schema and a dataset from it, then referencing that dataset in the Journey Optimizer SMS API credentials.
 
 **Intents:**
 
@@ -20,7 +20,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Custom dataset for inbound**: A profile-enabled dataset where inbound SMS keywords for a credential are recorded, selected through the Use custom dataset for inbound option in the SMS API credentials *(product-specific)*
+* **Custom dataset for inbound**: A profile-enabled dataset where inbound mobile message keywords for a credential are recorded, selected through the Use custom dataset for inbound option in the SMS API credentials *(product-specific)*
 * **Schema**: A structure that defines the validation rules applied to ingested data; here an Experience Event schema enabled for Profile *(product-specific)*
 * **Dataset**: The storage container for ingested data, associated with exactly one schema *(product-specific)*
 * **AJO Email Tracking Dataset**: The system dataset where inbound keywords are stored by default when no custom dataset is configured *(product-specific)*

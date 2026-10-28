@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Action**: A connection through which you deliver personalized, real-time experiences to customers, such as push notifications, email, SMS, or other digital engagement *(product-specific)*
+* **Action**: A connection through which you deliver personalized, real-time experiences to customers, such as push notifications, email, mobile messages, or other digital engagement *(product-specific)*
 * **Custom action**: A configured connection to a third-party system that sends messages or API calls, defined by technical users and made available to marketers *(product-specific)*
 * **Built-in message capability**: The messaging capability that comes with Journey Optimizer, distinct from custom actions *(product-specific)*
 

@@ -10,7 +10,7 @@ level: Beginner, Intermediate
 keywords: journey, activities, get started, events, action
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/8M5qgoXuziyVXMHPOwiM3xztCSNmglc2fBu-BaXn9mc
+TQID: 'https://experienceleague.adobe.com/8M5qgoXuziyVXMHPOwiM3xztCSNmglc2fBu-BaXn9mc'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
     internal-label: Action activities
@@ -149,7 +151,7 @@ When an error occurs in an action or a condition, the journey of an individual s
 
 ## Troubleshooting {#troubleshooting}
 
-Before testing and publishing your journey, verify that all the activities are properly configured. You cannot perform tests or publications if errors are still detected by the system.
+Before testing or publishing, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
 
 Learn how to troubleshoot errors in activities and in the journey [on this page](troubleshooting.md).
 

@@ -26,7 +26,7 @@ For complete understanding, this information should be combined with the documen
 * **Source connector (source)**: streams or batches data from external systems into Adobe Experience Platform *(product-specific)*
 * **Data source (Journey Optimizer)**: a UI configuration that declares which Adobe Experience Platform or external fields are exposed inside journeys and messages *(product-specific)*
 * **Identity**: an identifier that uniquely represents an individual customer, organized into namespaces (Email, ECID, CRMID)
-* **Real-Time Customer Profile**: the unified profile assembled by stitching profile fragments across channels *(product-specific)*
+* **Real-Time Customer Profile**: maintains a holistic view of each individual customer by combining data from multiple channels, stitching profile fragments together based on shared identity values *(product-specific)*
 * **Profile fragment**: a partial view of a customer based on a specific touchpoint *(product-specific)*
 * **Lookup dataset**: a runtime reference to an Adobe Experience Platform dataset without storing that data on the Real-Time Customer Profile *(product-specific)*
 
@@ -55,4 +55,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 466dff8e -->
+<!-- ai-section-version: 1 | source-hash: 1e17c925 -->

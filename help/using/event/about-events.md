@@ -9,7 +9,7 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: events, event, journey, definition, start
 exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
-TQID: https://experienceleague.adobe.com/xvLSBd-rwKKNqwQNDa4D8GfFzc-ND1FkC3EdstufkIY
+TQID: 'https://experienceleague.adobe.com/xvLSBd-rwKKNqwQNDa4D8GfFzc-ND1FkC3EdstufkIY'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Journey management
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
@@ -35,6 +37,8 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
@@ -73,6 +77,10 @@ Event configuration is **mandatory** and must be performed by a Data engineer.
 | Configure unitary and business events (**Administration > Events**) | Data Engineer or Admin |
 | Use events in a journey | Journey practitioner |
 | Configure audience qualification events (selected on the canvas) | Journey practitioner |
+
+>[!NOTE]
+>
+>Events are one of three building blocks of journey configuration, alongside Data Sources and Actions. For a complete overview and configuration checklist, see [Configure journeys: Data Sources, Events, and Actions](../configuration/about-data-sources-events-actions.md).
 
 You can configure three types of events: **Unitary events**, **Business events**, and **Audience qualification events**.
 

@@ -92,7 +92,7 @@ The navigation pane lets you select the source for personalization. Available so
 * **[!UICONTROL Target attributes]** : This folder is specific to Orchestrated campaigns. It contains attributes calculated directly within the campaign canvas. [Learn how to add personalization in Orchestrated campaigns](../orchestrated/add-personalization.md)
 * **[!UICONTROL Audiences]** : lists all the audiences created in Adobe Experience Platform Segmentation service. Learn more in the [Adobe Experience Platform Segmentation documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 * **[!UICONTROL Offer decisions]** : lists all the offers associated to a specific placement. Select the placement then insert the offers in your content. For a complete documentation on how to manage offers, refer to [this section](../offers/get-started/starting-offer-decisioning.md).
-* **[!UICONTROL Contextual attributes]** : when a channel action activity (Email, push, SMS) is used in a journey or campaign, contextual attributes related to events and properties are available for personalization. An example of personalization leveraging contextual attributes is presented in [this section](personalization-use-case.md). Additionally, custom action responses can be used for personalization. [Learn how to use custom action responses in native channels](../action/action-response.md#response-in-channels).
+* **[!UICONTROL Contextual attributes]** : when a channel action activity (Email, push, mobile) is used in a journey or campaign, contextual attributes related to events and properties are available for personalization. An example of personalization leveraging contextual attributes is presented in [this section](personalization-use-case.md). Additionally, custom action responses can be used for personalization. [Learn how to use custom action responses in native channels](../action/action-response.md#response-in-channels).
 
 >[!NOTE]
 >
@@ -174,7 +174,9 @@ Once your personalization expression is ready, you need to have it validated by 
 
 The validation of your expression is automatically executed when you click on the **Add** button to close the editor window. You can also use the **Validate** button to check your personalization syntax.
 
-![](assets/perso_validation1.png)
+When a PQL syntax validation error is detected, the **[!UICONTROL Fix with AI]** option appears in the bottom pane. Select it to open the expression generation tool in the right rail and get help fixing the error. Learn more about [editing, fixing, or explaining existing code](../content-management/generative-personalization-expressions.md#edit-existing).
+
+![](assets/fix-with-ai.png)
 
 Expand the section below to see common errors that may occur when validating personalization.
 

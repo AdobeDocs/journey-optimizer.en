@@ -5,6 +5,7 @@ title: Build your first rule
 description: Learn how to create rules for your Orchestrated campaigns
 exl-id: 5e956a6a-0b89-4d78-8f16-fe9fceb25674
 version: Campaign Orchestration
+mini-toc-levels: 1
 TQID: https://experienceleague.adobe.com/0uQ81kuezTaU4m83ZP6OiKFpM66ngzHqVKaGQqiFzNE
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
@@ -127,9 +128,11 @@ To add conditions in your query, follow these steps:
 
     +++
 
-### Custom conditions on linked tables (1-1 and 1-N links){#links}
+## Custom conditions on linked tables (1-1 and 1-N links){#links}
 
 Custom conditions allows you to query tables linked to the table currently used by your rule. This includes tables with a 1-1 cardinality link, or collection tables (1-N link).
+
+### 1-1 link
 
 For a **1-1 link**, navigate to the linked table, select the desired attribute and define the expected value.
 
@@ -153,33 +156,41 @@ Here is a query sample where a table link has been selected directly. Available 
 
 +++ 
 
-For a **1-N link**, you can define sub-conditions to refine your query, as shown in the example below.
+### 1-N link
 
-+++Query example
+For a **1-N link**, you can define conditions in two ways:
 
-Here, the query is targeting recipients who made purchases related to the Brewmsaster product, for more than 100$.
+* **Select the collection itself**, such as **[!UICONTROL Purchases]**. This creates an **[!UICONTROL exists such as]** condition where you can add sub-conditions.
 
-1. Select the **Purchases** table and confirm.
+    +++Query example
 
-1. Clic **[!UICONTROL Add condition]** to define the sub-conditions to apply to the selected table.
+    Here, the query is targeting recipients who made purchases related to the Brewmsaster product, for more than 100$.
 
-    ![Screenshot of the Purchase table](assets/rule-builder-1-n-purchase.png)
+    1. Select the **Purchases** table and confirm.
 
-1. Add sub-conditions to suit your needs.
+    1. Clic **[!UICONTROL Add condition]** to define the sub-conditions to apply to the selected table.
 
-    ![Screenshot of the Purchase table](assets/rule-builder-1-n-collection.png)
+        ![Screenshot of the Purchase table](assets/rule-builder-1-n-purchase.png)
 
-+++ 
+    1. Add sub-conditions to suit your needs.
 
-### Custom conditions with aggregate data {#aggregate}
+        ![Screenshot of the Purchase table](assets/rule-builder-1-n-collection.png)
 
-Custom conditions allow you to perform aggregate operations. To do this, you need to directly select an attribute from a collection table:
+    +++
 
-1. Navigate inside the desired collection table and select the attribute on which you want to perform an aggregate operation.
+* **Select an attribute from the collection** - Browse into the collection and select an attribute, such as **[!UICONTROL Price]**.
 
-1. In the properties pane, toggle on the **Aggregate data** option and select the desired aggregate function.
+    Journey Optimizer provides three options for defining the condition.
 
-    ![Screenshot of the Aggregate data option](assets/rule-builder-aggregate.png)
+    ![Screenshot showing the collection condition options](assets/rule-builder-collection.png)
+
+    * **Default**: The recommended option for most use cases. It automatically creates an `exists such as` condition for the collection. This is equivalent to selecting the collection directly with the method described above and produces the same result. For example, selecting the **[!UICONTROL Price]** attribute from **[!UICONTROL Purchases]** creates a **[!UICONTROL Purchases exists such as]** condition. You can then set the operator and value, such as **[!UICONTROL equal to]** `0`.
+
+    * **Aggregate**: Applies an aggregate function to the selected collection attribute. For example, select **[!UICONTROL Count]** to create a condition such as **[!UICONTROL Count(Price) equal to 0]**. You can use the additional condition to refine the records included in the aggregation.
+
+    * **Advanced**: Uses a direct join to the collection element. The selected attribute is evaluated directly, for example **[!UICONTROL Price (purchases/@price)]**. Use this option for a single condition on the collection element.
+
+    The **Default** option is selected by default. Use **Aggregate** when you need to count or aggregate collection records, or **Advanced** when you need a direct join to one collection attribute.
 
 ## Combine conditions using operators {#operators}
 

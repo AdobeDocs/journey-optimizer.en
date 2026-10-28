@@ -14,6 +14,7 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 
 * Personalize a URL with profile attributes in the Email Designer
+* Use triple curly braces so personalized URL values are not escaped
 * Personalize an entire URL or the base domain of a URL
 * Add accepted domains to the allowed list to enable complete or base URL personalization
 * Understand the click tracking limitation for dynamically generated URLs
@@ -35,6 +36,7 @@ For complete understanding, this information should be combined with the documen
 * When adding a domain, do not include https:// or a trailing slash (enter `www.example.com` or `example.com`), or the domain is rejected.
 * If you remove a domain already in use in a personalized URL, the safety of the link cannot be guaranteed; update any personalized URLs referencing it first.
 * Dynamically generated URLs (where the entire URL or base domain resolves from a profile attribute at send time) have a known limitation: click data may not appear in journey or campaign reports.
+* Use triple curly braces (`{{{ ... }}}`) for the dynamic portion of a personalized URL so special characters such as `/` and `+` are not escaped; raw output is inserted as-is, so use it only with trusted, URL-safe values.
 * The resolved URL must start with `http` or `https` for every recipient; if it does not, tracking is silently skipped for that link.
 
 **Terminology:**
@@ -51,6 +53,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which permissions manage the allowed domains list?** — Manage messages general settings and View messages general settings.
 * **Q: Why might click data be missing for a personalized link?** — For dynamically generated URLs, the tracking redirect is applied at design time before the final URL is known, so click data may not appear in journey or campaign reports; the resolved URL must also start with http/https or tracking is silently skipped.
 * **Q: How can I keep reliable click tracking with personalization?** — Use a fixed base URL and append personalized parameters only, or pre-generate a personalized URL per recipient, store it as a profile attribute, and reference it in your content.
+* **Q: Which syntax should I use for the dynamic part of a personalized URL?** — Use triple curly braces (`{{{ ... }}}`) so the value is not escaped and special characters keep the URL structure; only use it with trusted, URL-safe values.
 * **Q: How do I verify the final personalized URL?** — Send a proof and click the link in the received email; the URL should display the tracking parameter.
 
 +++

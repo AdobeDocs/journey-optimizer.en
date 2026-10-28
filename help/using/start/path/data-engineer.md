@@ -7,7 +7,7 @@ feature: Get Started
 role: Developer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
-TQID: https://experienceleague.adobe.com/BAnAycmwv9oD4On4LSMwm7bBRKOuw5Tbv5a-r3ND-Dw
+TQID: 'https://experienceleague.adobe.com/BAnAycmwv9oD4On4LSMwm7bBRKOuw5Tbv5a-r3ND-Dw'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -21,6 +21,8 @@ subfeature_v2:
     internal-label: Event configuration
   - id: af7571a6-3ddb-4c1c-abdf-4d4dde592140
     internal-label: Source connectors
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
@@ -94,7 +96,7 @@ Follow these steps to set up the data foundation for Journey Optimizer:
 
 1. **Configure computed attributes** (optional). Create derived attributes from profile data to simplify segmentation and personalization. Computed attributes automatically calculate complex metrics like "total purchases in last 90 days" or "average order value". Learn about [computed attributes](../../audience/computed-attributes.md).
 
-1. **Message export datasets** (optional). When message export is enabled at the channel configuration level, sent email and SMS content is automatically exported to a dedicated Experience Platform dataset for compliance, archiving, or downstream analysis. Learn about [message export](../../configuration/message-export.md).
+1. **Message export datasets** (optional). When message export is enabled at the channel configuration level, sent email and mobile content is automatically exported to a dedicated Experience Platform dataset for compliance, archiving, or downstream analysis. Learn about [message export](../../configuration/message-export.md).
 
 In addition, to be able to send messages in journeys, you must configure **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** and **[!UICONTROL Actions]**. Learn more [in this section](../../configuration/about-data-sources-events-actions.md).
 

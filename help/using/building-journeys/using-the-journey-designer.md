@@ -90,6 +90,8 @@ Depending on the journey's status, you can perform different actions on your jou
 
 ![Journey action buttons: Publish, Duplicate, Delete, Test mode, Manage access, Alerts](assets/journey41.png)
 
+For a **[!UICONTROL Draft]** journey, the **[!UICONTROL Validate]** button in the journey header runs configuration checks before testing, simulation, a dry run, publication, or an approval request. It replaces **[!UICONTROL Publish]** until the journey has a current, passed validation. Review errors and warnings in the Alerts panel, resolve any errors, and validate again before continuing. [Learn about journey validation](publish-journey.md#validate).
+
 ## New journey canvas experience {#canvas-capabilities}
 
 A **new user interface** is available for the journey canvas, built to scale with your most complex use cases:
@@ -122,6 +124,7 @@ The toolbar in the top right corner of the canvas provides quick access to essen
 
 | Toolbar icon | Description |
 |--- |--- |
+| Expand all | Expand all channel activities to show a thumbnail preview of their content directly on the canvas. Click any thumbnail to open a fullscreen preview. |
 | Download canvas image | Capture your current canvas view as an image and save it on your computer. |
 | Share feedback | Open a feedback form to let us know if you're missing something on the new canvas or have an idea to make it better. |
 | Multiple selection | Switch to selection mode to select multiple activities. |
@@ -129,6 +132,28 @@ The toolbar in the top right corner of the canvas provides quick access to essen
 | Fit to screen | Automatically adjust the zoom level to fit your entire journey in view. |
 | Zoom out | Decrease the zoom level. |
 | Zoom in | Increase the zoom level. |
+
+### Preview content in the canvas {#content-preview}
+
+Review what every channel activity will send without opening each one individually. Content preview renders each activity's content right on the canvas, so you can check an entire cross-channel journey at a glance instead of clicking into activities one by one.
+
+In the canvas toolbar, click the **[!UICONTROL Expand all]** (eye) icon. Every channel activity expands inline to show a thumbnail of its content.
+
+![Preview channel content directly in the journey canvas](assets/journey-canvas-content-preview.png)
+
+To see an activity more closely, click its thumbnail. The content opens in a centered preview where you can switch between treatments and variants when the activity uses personalization.
+
+![Preview of an email activity's content in a centered frame](assets/journey-canvas-content-preview-email.png)
+
+The preview adapts to each channel. For example, mobile messages display in a device mockup.
+
+![Preview of a mobile message activity's content in a centered frame](assets/journey-canvas-content-preview-message.png)
+
+Content preview is available in three contexts, each showing content the way it applies at that stage:
+
+* **When you design a journey** — Preview the content you authored for each activity as you build, so you can catch layout or content issues early, before you test.
+* **During a simulation** — Preview the content rendered for the selected test user, reflecting the personalization values and the path that user follows through the journey. [Learn how to run a simulation](simulate-journey.md).
+* **In test mode** — Preview the content for the journey you are testing. The content is visible, but it is not personalized for the test profile you target.
 
 ### Select multiple activities for bulk actions
 
@@ -243,7 +268,7 @@ The other activities allow you to add conditions to your journey to define sever
 
 ### Actions{#jo-actions}
 
-Actions are what you want to happen as result of some kind of trigger, like sending a message. It is the piece of journey that the customer experiences. This could be an email, SMS or Push message, or a third-party action, such as a Slack message.
+Actions are what you want to happen as result of some kind of trigger, like sending a message. It is the piece of journey that the customer experiences. This could be an email, mobile or Push message, or a third-party action, such as a Slack message.
 
 The channel action activities allows you to include a message designed in [!DNL Journey Optimizer]. [Learn more about the channel action activities](journey-action.md)
 

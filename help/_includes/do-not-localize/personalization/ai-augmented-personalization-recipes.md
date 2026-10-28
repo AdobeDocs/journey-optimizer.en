@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page provides 16 ready-to-use copy-paste personalization recipes covering dates, arrays, strings, conditional logic, and PQL edge cases for use in Journey Optimizer email, SMS, and push content.
+* **TL;DR:** This page provides 16 ready-to-use copy-paste personalization recipes covering dates, arrays, strings, conditional logic, and PQL edge cases for use in Journey Optimizer email, Mobile message, and push content.
 
 **Intents:**
 
@@ -50,7 +50,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: What is the difference between `{%= ... %}` and `{{...}}` in personalization?** — `{%= ... %}` is PQL expression syntax — it is evaluated and returns a computed value (number, string, boolean). `{{...}}` is Handlebars interpolation — it renders a variable or template expression. Both appear in personalization content but serve different purposes.
 * **Q: How do I use a PQL function result inside a Handlebars `{{#each}}` loop?** — Assign the PQL function result to a variable using `{% let variableName = pqlFunction(...) %}`, then use `{{#each variableName}}` to iterate over it.
-* **Q: Can `{{#each}}` be used in a journey condition activity?** — No. `{{#each}}` is available only in message personalization content (email, SMS, push). For array filtering in journey conditions, use collection management functions.
+* **Q: Can `{{#each}}` be used in a journey condition activity?** — No. `{{#each}}` is available only in message personalization content (email, Mobile message, push). For array filtering in journey conditions, use collection management functions.
 * **Q: How do I reference a field whose name contains a hyphen?** — Wrap the hyphenated key in backticks inside a PQL expression: ``{%= profile.events.`order-total` > 100 %}``. Backticks are not supported in plain Handlebars interpolation — use a `{% let %}` variable as an intermediate step if needed.
 * **Q: Why does `topN` need `{% let %}` before a `{{#each}}` loop?** — `topN` is a PQL function that returns a PQL list. Assigning it to a `{% let %}` variable makes the result available in the Handlebars context so it can be iterated with `{{#each}}`.
 

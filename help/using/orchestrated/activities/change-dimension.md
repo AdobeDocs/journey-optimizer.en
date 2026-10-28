@@ -67,10 +67,10 @@ Follow these steps to configure the **[!UICONTROL Change dimension]** activity:
 
 ## Example {#example}
 
-This use case focuses on sending an SMS to profiles who have created a wishlist within the past month.
+This use case focuses on sending a mobile message to profiles who have created a wishlist within the past month.
 
 Begin with a **[!UICONTROL Build audience]** activity, using the **[!UICONTROL Wishlist]** targeting dimension to identify all relevant wishlists.
 
-Then, add a **[!UICONTROL Change dimension]** activity to switch the targeting dimension from **[!UICONTROL Wishlist]** to **[!UICONTROL Recipient].** This step ensures the Orchestrated campaign targets the correct profiles linked to those wishlists, allowing the SMS to be sent to the intended profiles.
+Then, add a **[!UICONTROL Change dimension]** activity to switch the targeting dimension from **[!UICONTROL Wishlist]** to **[!UICONTROL Recipient].** This step ensures the Orchestrated campaign targets the correct profiles linked to those wishlists, allowing the mobile message to be sent to the intended profiles.
 
 ![](../assets/orchestrated-change-dimension-example.png)

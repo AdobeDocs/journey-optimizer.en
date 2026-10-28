@@ -29,6 +29,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails**
 
+* Journey Optimizer allows you to delegate up to 10 subdomains in total, combining email, landing page, and web channels; depending on your license contract you may be able to delegate up to 3000 subdomains.
 * The **[!UICONTROL Manage Landing Page Subdomains]** permission on the production sandbox is required to access and edit landing page subdomains.
 * Landing page subdomain configuration is common to all environments; any modification to a landing page subdomain also impacts the production sandboxes.
 * Only alphanumeric characters and hyphens are allowed in the prefix.

@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **Custom Upload**: Importing an audience into Adobe Experience Platform from a CSV file using the Audience Portal *(product-specific)*
-* **Audience Portal**: The Adobe Experience Platform area used to import the CSV audience *(product-specific)*
+* **Audience Portal**: The Adobe Experience Platform Audience Portal, which allows you to import an audience using a CSV file *(product-specific)*
 * **Incremental read**: A toggle setting that, for custom upload and other external audiences, is not functionally supported today *(product-specific)*
 
 **Guardrails:**
@@ -33,8 +33,7 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Custom Upload — Acronym: n/a — variants: CSV upload, custom upload audience
-* Synonyms: "Custom upload" = "CSV file import"
-* Do not confuse: "Incremental read" (toggle setting) ≠ "entire audience retrieval" (actual behavior on each recurrence for these audiences)
+* Synonyms: "Custom upload" = "CSV upload"
 
 **FAQ:**
 
@@ -44,4 +43,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 344a2ec7 -->
+<!-- ai-section-version: 1 | source-hash: 22efd8e5 -->

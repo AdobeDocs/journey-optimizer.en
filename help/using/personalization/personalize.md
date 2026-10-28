@@ -9,14 +9,25 @@ role: Developer
 level: Beginner
 keywords: expression, editor, start, personalization
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
     internal-label: Build expressions
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
 subfeature_v2:
   - id: a757b957-83f3-4a4d-9775-a93854f84f77
     internal-label: Conditional instruction
   - id: cb09dcb7-3367-4b63-b02c-8a1356eb876e
     internal-label: Main functions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Get started with personalization{#add-personalization}
 

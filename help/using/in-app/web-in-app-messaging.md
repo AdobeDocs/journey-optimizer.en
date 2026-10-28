@@ -6,6 +6,9 @@ topic: Content Management
 role: Developer
 level: Intermediate
 keywords: in-app, message, web sdk, configuration
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
@@ -16,6 +19,12 @@ subfeature_v2:
     internal-label: Mobile SDK
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
     internal-label: In App channel
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Configure Web In-app Messaging support in Web SDK
 
@@ -33,7 +42,7 @@ The Web In-app messaging functionality requires the latest version of the Web SD
 
 ### Configure a CSP for Web In-app Messaging {#csp}
 
-When you configure Web In-App Messaging, you must include the following directive in your CSP:
+When you configure Web In-app Messaging, you must include the following directive in your CSP:
 
 ```
 default-src  blob:;
@@ -41,7 +50,7 @@ default-src  blob:;
 
 For more information about configuring a CSP, refer to [Data Collection documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/use-cases/configuring-a-csp.html){target="_blank"}.
 
-## Configure Web In-App Messaging using the Web SDK tag extension {#tag-extension}
+## Configure Web In-app Messaging using the Web SDK tag extension {#tag-extension}
 
 Refer to the [Web SDK tag extension configuration page](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html){target="_blank"} to understand where you can find the settings described below.
 
@@ -58,7 +67,7 @@ Web In-app Messaging supports two types of triggers:
 
 Refer to the following sections to configure the Web SDK tag extension according to the triggers you want to use.
 
-### Configuration steps for the **[!UICONTROL Send data to Experience Platform]** trigger {#send-data-platform}
+### Configuration steps for the **[!UICONTROL Sent data to Platform]** trigger {#send-data-platform}
 
 1. Select the tag property which contains your Web SDK extension and [create a new rule](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/managing-resources/rules.html#create-a-rule){target="_blank"} with the following settings:
 
@@ -136,9 +145,9 @@ The configuration process is now completed and your message is ready to be shown
 
 The configuration process is now completed and your message is ready to be shown to your users.
 
-## Configure Web In-App Messaging using the Web SDK JavaScript library {#js-library}
+## Configure Web In-app Messaging using the Web SDK JavaScript library {#js-library}
 
-As an alternative to using the Web SDK tag extension, you can also configure Web In-App Messaging directly from the Web SDK JavaScript library.
+As an alternative to using the Web SDK tag extension, you can also configure Web In-app Messaging directly from the Web SDK JavaScript library.
 
 You can display web in-app messages from Adobe Journey Optimizer in two ways.
 

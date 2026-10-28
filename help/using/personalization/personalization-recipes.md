@@ -5,14 +5,25 @@ feature: Personalization
 topic: Personalization
 role: Developer
 level: Experienced
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
     internal-label: Build expressions
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
 subfeature_v2:
   - id: cb09dcb7-3367-4b63-b02c-8a1356eb876e
     internal-label: Main functions
   - id: ac5d9310-7772-40fb-9d78-864562e1bfd6
     internal-label: Operators
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Personalization recipes {#personalization-recipes}
 
@@ -22,7 +33,7 @@ subfeature_v2:
 
 >[!ENDSHADEBOX]
 
-This page provides ready-to-use personalization patterns for the most common use cases in Adobe Journey Optimizer. All examples use the personalization editor syntax and can be copied directly into email, SMS, or push content.
+This page provides ready-to-use personalization patterns for the most common use cases in Adobe Journey Optimizer. All examples use the personalization editor syntax and can be copied directly into email, mobile, or push content.
 
 For a complete reference of available functions, see [Helper functions](functions/helpers.md), [Date/time functions](functions/dates.md), [String functions](functions/string.md), and [Array functions](functions/arrays-list.md).
 
@@ -118,7 +129,7 @@ Our team will get back to you within 24 hours.
 
 ### Recipe 6 — List all items from a profile array {#recipe-list-items}
 
-Use `{{#each}}` to iterate over a profile array and render each item. This is available in the personalization editor (email, SMS, push) only:
+Use `{{#each}}` to iterate over a profile array and render each item. This is available in the personalization editor (email, mobile, push) only:
 
 ```handlebars
 {{#each profile.purchases.recentItems}}

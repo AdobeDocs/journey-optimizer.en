@@ -194,3 +194,5 @@ Refer to [Adobe Developer documentation](https://developer.adobe.com/journey-opt
 You can now start ingesting data into your schema using the source of your choice. 
 
 ➡️ [Learn how to ingest data](ingest-data.md)
+
+If a schema or dataset returns an error code, see [Relational schema and dataset errors](relational-schema-errors.md).

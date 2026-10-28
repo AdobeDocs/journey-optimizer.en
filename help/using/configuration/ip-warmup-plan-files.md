@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 hide: true
 exl-id: 27c94bb6-bae0-4b0e-ba8f-a92b9ed2e4d5
-TQID: https://experienceleague.adobe.com/BX4m0P6rnTNnbGjyH0eE01ZuIGMblVcygbhL4NVQl2g
+TQID: 'https://experienceleague.adobe.com/BX4m0P6rnTNnbGjyH0eE01ZuIGMblVcygbhL4NVQl2g'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -24,6 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration

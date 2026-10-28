@@ -28,6 +28,8 @@ Use **[!UICONTROL Simulation]** to validate your journey with **simulated users*
 
 For required permissions, see [Required permissions](simulate-journey-gs.md#required-permissions).
 
+Before entering **[!UICONTROL Simulation]**, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. Validation checks configuration and is separate from simulation. [Learn about journey validation](publish-journey.md#validate).
+
 For an overview by journey type, see [Get started with Journey simulation](simulate-journey-gs.md).
 
 Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
@@ -65,7 +67,7 @@ On any journey in **[!UICONTROL Simulation]**, **[!UICONTROL Quick simulation]**
 
 1. The Journey Agent generates a set of simulated users from the journey definition.
 
-    For journeys with an Email, SMS, or Push node, the Agent prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those values. Once done, click **[!UICONTROL Generate]**.
+    For journeys with an Email, Mobile message, or Push node, the Agent prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those values. Once done, click **[!UICONTROL Generate]**.
 
 1. When the run completes, click **[!UICONTROL View results]** to review paths, errors, and uncovered branches. See [View results](#viewing-results).
 
@@ -95,7 +97,7 @@ If your journey uses an external audience, for example a CSV or Federated Audien
         
     Adobe Journey Optimizer generates a set of simulated users from the journey definition. 
         
-    For journeys with an Email, Push, or SMS node, the AI prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those defined values. Once done, click [!UICONTROL Generate].
+    For journeys with an Email, Push, or Mobile message node, the AI prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those defined values. Once done, click [!UICONTROL Generate].
 
     Generated simulated users only show the attributes used in the current journey, for example in expressions or personalization.
 
@@ -122,6 +124,8 @@ If your journey uses an external audience, for example a CSV or Federated Audien
     1. Enter a **[!UICONTROL Display name]**, **[!UICONTROL Identity namespace]** and **[!UICONTROL Description]** to identify this simulated user. 
             
         ![Create Simulated Users form with display name, identity namespace, description, and Union schema attributes](assets/simulate-form.png)
+
+        A simulated user requires an **[!UICONTROL Identity namespace]** and an identity value, and this combination must be unique.
 
     1. Then, select the attributes from the Union schema that you want to populate for this user. Note that only the attributes used in the current journey, for example in expressions or personalization, are available here. 
     
@@ -182,6 +186,9 @@ If your journey uses an external audience, for example a CSV or Federated Audien
 1. The simulated users you created appear in the **[!UICONTROL Test users]** list. For each entry, select one of the following:
 
     * ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg): Update the simulated user's details.
+
+        If another operation modified the simulated user in the meantime, refresh and try again.
+
     * ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg): Run the simulation for this simulated user only.
         
         This option is not available for journeys starting with an Event, as the simulated user entrance is triggered by the event being sent. [Learn more](#firing-events)
@@ -211,7 +218,7 @@ If your journey uses an external audience, for example a CSV or Federated Audien
 
         ![Manage simulation menu open with Reset simulation and Close simulation options](assets/simulate-15.png)
 
-After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
+After testing the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]** and apply the required changes to the journey. Click **[!UICONTROL Validate]** again and resolve any configuration errors before rerunning **[!UICONTROL Simulation]**. When testing is complete and validation is current and passed, you can [publish your journey](publish-journey.md).
 
 ## Trigger your events {#firing-events}
 
@@ -263,6 +270,14 @@ Select **[!UICONTROL All]** to see results aggregated across every simulated use
 ![Results tab with simulation summary, test user filter, and path coverage on the journey canvas](assets/simulate-6-2.png)
 
 For each activity, the log can show whether the simulated user entered or exited the step, the timestamps and branch decisions for each step, and errors that occurred during the simulation.
+
+During a simulation, you can also preview the content of every channel activity directly on the canvas. Click the **[!UICONTROL Expand all]** (eye) icon, then click a thumbnail to open the preview. [Learn how to preview content in the canvas](using-the-journey-designer.md#content-preview).
+
+The preview reflects the **[!UICONTROL Test user]** you select: with **[!UICONTROL All]** selected, it shows non-personalized content; when you select a specific test user, each channel activity that user went through is previewed with that user's personalized data.
+
+In a simulation, previewed attribute values depend on when simulated user data was last fetched relative to the **[!UICONTROL Update Profile]** activity. If the data was fetched before the activity runs, previews show pre-update values throughout. If it was fetched after the activity runs (for example, after reloading the page), previews show post-update values throughout, including in email activities before the **[!UICONTROL Update Profile]** activity. A single preview does not show pre-update values before the activity and post-update values after it.
+
+![Personalized content preview for the selected test user during a simulation](assets/journey-canvas-content-preview.png)
 
 For **Wait** activities, the log includes two duration-related values:
 

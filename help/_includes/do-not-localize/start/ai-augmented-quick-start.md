@@ -39,7 +39,7 @@ For complete understanding, this information should be combined with the documen
 
 * Canonical name: Roles and responsibilities — Acronym: n/a — variants: role-based quick start, implementation roles
 * Synonyms: "Marketer" = "Business Practitioner"; "Data Engineer" = "Data Architect"
-* Do not confuse: "Decisioning" (used for push and SMS personalization) ≠ "Decision Management" (offers, eligibility rules, and components in a centralized library)
+* Do not confuse: "Decisioning" (used for push and Mobile message personalization) ≠ "Decision Management" (offers, eligibility rules, and components in a centralized library)
 
 **FAQ:**
 

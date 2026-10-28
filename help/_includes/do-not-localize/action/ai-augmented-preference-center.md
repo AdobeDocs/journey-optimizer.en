@@ -30,7 +30,7 @@ For complete understanding, this information should be combined with the documen
 
 * This capability is currently only available for organizations that have purchased the Adobe Healthcare Shield or Privacy and Security Shield add-on offerings.
 * Consent takes precedence over preferences: a customer who opted out from receiving any communications cannot be targeted even if a preferred channel and topic are indicated.
-* The supported channels are Email, Push, SMS and InApp.
+* The supported channels are Email, Push, Mobile messages and InApp.
 * Preference attributes must be present in the profile data, which is why they must be defined at the profile level.
 * The domain of the landing page being used must belong to the upper brand and not to a sub-brand, because the preferences collected are stored in the profile data which is at the upper-brand level.
 
@@ -42,7 +42,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Which channels are supported for retrieving consent?** — The supported channels are Email, Push, SMS and InApp.
+* **Q: Which channels are supported for retrieving consent?** — The supported channels are Email, Push, Mobile messages and InApp.
 * **Q: What takes precedence when consent and preferences conflict?** — Consent takes precedence over preferences; a customer who opted out from all communications cannot be targeted regardless of their preferred channel or topic.
 * **Q: How are preference attributes defined?** — Define them with the Boolean operator (true/false) at the profile level; they are captured in a Profile-enabled dataset schema and mapped to the unified customer profile.
 * **Q: How can I capture customer preferences?** — Create a web page using the Adobe Experience Platform Web SDK, or use a Journey Optimizer landing page that includes forms to capture preferences through profile data.

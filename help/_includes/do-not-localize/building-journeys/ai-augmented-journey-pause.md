@@ -53,3 +53,5 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I find out which profiles were discarded during a pause?** — Query the `journey_step_events` dataset in Adobe Experience Platform Query Service using the `PAUSED_JOURNEY_VERSION` or `JOURNEY_IN_PAUSED_STATE` event type filters with the journey version ID.
 
 +++
+
+<!-- ai-section-version: 1 | source-hash: 162ce76f -->

@@ -13,7 +13,7 @@ For complete understanding, this information should be combined with the documen
 
 **Intents:**
 
-* Enable Send-Time Optimization on an email or push action in a journey
+* Enable Send-Time Optimization on the Email or Push channel of an Action activity in a journey
 * Choose whether to optimize for opens or click-throughs on email messages
 * Set the maximum wait window (Send within next) for delayed delivery
 * Understand how the AI model predicts optimal send times using behavioral data
@@ -31,9 +31,8 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Send-Time Optimization must be enabled by Adobe for the organization; contact Adobe Customer Care or your Adobe representative to activate it.
-* Send-Time Optimization applies to Email and Push notification channels within Journeys, and to the Wait activity; it is not available for Campaigns or custom actions.
-* Send-Time Optimization has no visibility into quiet hours rules; a Send-Time Optimization Wait activity can select a time inside a quiet-hours window for a downstream channel action, which may then queue or discard the message depending on the quiet hours rule configuration.
-* The organization must have used Email or Push actions in Journey Optimizer for at least 30 days before Send-Time Optimization produces meaningful results.
+* Send-Time Optimization is available for the Email and Push channels (selected in an Action activity) within journeys, and for the Wait activity; it is not currently available for messages sent through campaigns or for other action types.
+* The organization should use the Email channel for a minimum of 30 days before using Send-Time Optimization within Email, and the Push channel for a minimum of 30 days before using it within Push; an organization that has already used the Email and/or Push channels for at least 30 days does not need to wait longer once the feature is enabled by Adobe.
 * Do not use Send-Time Optimization for urgent or time-sensitive operational messages (e.g., order confirmations, password resets, flight gate changes).
 * Maximum wait time range is 2–100 hours; recommended range is 6–24 hours for best results.
 * Model scores are stored in profile attributes at `_experience.intelligentServices.journeyAI.sendTimeOptimization` and are not human-readable.
@@ -41,16 +40,14 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Send-Time Optimization — Acronym: STO — variants: best send time, send time AI, intelligent send time
-* Synonyms: "Send-Time Optimization" = "optimal send time" = "AI send time"
+* Canonical name: Send-Time Optimization — Acronym: STO
 * Do not confuse: "Exploration send time" ≠ "Optimized send time" (exploration is random for model testing; optimized is model-predicted for engagement)
 
 **FAQ:**
 
-* **Q: Which channels support Send-Time Optimization?** — Email and Push notification channels within Journeys, and the Wait activity; Campaigns and custom actions are not supported.
-* **Q: Does Send-Time Optimization know about quiet hours?** — No. Quiet hours are only evaluated when a profile reaches a message action, so a Send-Time Optimization Wait activity can pick a time inside a quiet-hours window. Depending on the quiet hours rule, the message is then queued until quiet hours end, or discarded and the profile exits the journey. [Learn more](../../../using/building-journeys/wait-activity.md#sto-wait).
+* **Q: Which channels support Send-Time Optimization?** — The Email and Push channels (selected in an Action activity) within journeys, and the Wait activity; messages sent through campaigns and other action types are not currently supported.
 * **Q: Should I optimize for opens or clicks on email?** — Optimize for Clicks for most emails. Choose Opens when the message is informational and not intended to drive a specific action.
-* **Q: How long does the organization need to wait before enabling STO?** — At least 30 days of Email or Push usage in Journey Optimizer is needed to collect sufficient behavioral data. Results continue to improve for up to 16 weeks.
+* **Q: How long does the organization need to wait before enabling STO?** — The organization should use the Email channel (for Email) or the Push channel (for Push) for a minimum of 30 days to allow the collection of send, open, and click events. Results continue to improve for up to 16 weeks.
 * **Q: Can STO send push notifications at night?** — Yes, if a user's behavior suggests night-time engagement or if an exploration send time is selected. To avoid this, use a morning send time with a short maximum wait window.
 * **Q: What is the expected benefit of Send-Time Optimization?** — Approximately 2–10% improvement in email click rate or push open rate across all optimized messages, though benefits may not be observable on individual small-volume sends.
 

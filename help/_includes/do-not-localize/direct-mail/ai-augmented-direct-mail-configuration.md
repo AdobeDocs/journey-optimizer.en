@@ -26,6 +26,7 @@ For complete understanding, this information should be combined with the documen
 * **Direct mail configuration**: The channel configuration that defines the file formatting and references a file routing configuration *(product-specific)*
 * **Data Landing Zone**: A supported server type provisioned as one container per sandbox for all Adobe Experience Platform customers *(product-specific)*
 * **PGP/GPG encryption key**: The key pasted into the configuration to encrypt the exported file *(product-specific)*
+* **Frequency for journeys**: A file routing setting that specifies the frequency at which the file is sent to the server when the file routing configuration is used with journeys *(product-specific)*
 * **Marketing action**: A selection that associates consent policies with messages using the configuration *(product-specific)*
 
 **Guardrails:**
@@ -38,14 +39,14 @@ For complete understanding, this information should be combined with the documen
 * A file routing configuration cannot be selected in a configuration until it has the Active status; a Save as draft configuration is not selectable.
 * Direct mail files are generated only at export time and older exports are not stored indefinitely; configure a file routing option (SFTP or cloud storage) for longer backup.
 * Duplicate rows where all values in the row are the same are automatically removed from the file.
-* The file split threshold can be set to any value between 1 and 200,000 records per file, after which another file is created for the remaining records.
+* The Split file into multiple parts option sets a target file size from 500 MB to 10 GB at which the exported direct mail file is split into several parts; if the option is not selected, Journey Optimizer still automatically splits the file once it exceeds approximately 20 GB.
 
 **Terminology:**
 
-* Canonical name: Direct mail configuration — Acronym: n/a — variants: direct mail channel configuration, direct mail surface
+* Canonical name: Direct mail configuration — Acronym: n/a — variants: direct mail channel configuration
 * Synonyms: "file routing configuration" = "file routing config"
 * Do not confuse: "file routing configuration" (defines the export server) ≠ "direct mail configuration" (defines file formatting and references the file routing configuration)
-* Do not confuse: "Active" (usable status) ≠ "Save as draft" (not selectable in a configuration)
+* Do not confuse: "Active" (status the file routing configuration has after Submit, required to select it in a configuration) ≠ "Save as draft" (creates the configuration, but it cannot be selected until it is Active)
 
 **FAQ:**
 
@@ -53,9 +54,9 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which server types are supported?** — Amazon S3, SFTP, Azure, and Data Landing Zone.
 * **Q: What permission do I need to create file routing?** — The Manage file routing built-in permission.
 * **Q: How do I encrypt the exported file?** — Paste your encryption key into the PGP/GPG encryption key field.
-* **Q: Why can I not select my file routing configuration?** — It is likely saved as a draft; a file routing configuration must have the Active status to be selectable.
+* **Q: Why can I not select my file routing configuration?** — A file routing configuration created with Save as draft cannot be selected until it is Active.
 * **Q: Which file formats are available?** — CSV or Text delimited, and Text delimited lets you choose a tabulation, semicolon, pipe, or ampersand column separator.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 040d4c43 -->
+<!-- ai-section-version: 1 | source-hash: e68d84a1 -->

@@ -7,18 +7,30 @@ role: User
 level: Experienced
 exl-id: 008d42c7-a523-4857-b34e-0e8dd1dfa507
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/y5aC7N-3FKFf9RQLHV40YtOR4EwHi3EWil-QFVL2tEI
+TQID: 'https://experienceleague.adobe.com/y5aC7N-3FKFf9RQLHV40YtOR4EwHi3EWil-QFVL2tEI'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decisioning
+    internal-label: Decision capabilities
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
@@ -28,13 +40,6 @@ topic_v2:
     internal-label: Personalization
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-subfeature_v2:
-  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
-    internal-label: Decisioning API
-  - id: eb547372-2a95-4d13-b0fd-f720c9895880
-    internal-label: Edge Decisioning
-  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
-    internal-label: Get started
 ---
 # Get started with decision capabilities in [!DNL Journey Optimizer] {#gs-decision}
 
@@ -65,7 +70,7 @@ Our next-generation decision framework, designed to unify existing Journey Optim
 * Updated decision policy and selection strategy configuration: Allow reusability of decision components
 * Experimentation capabilities: Test decision logic against other content components to measure performance
 
-Decisioning is available to all customers for the **Code-based Experience**, **Email**, **Push notification**, and **SMS** channels. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+Decisioning is available to all customers for the **Code-based Experience**, **Web**, **Email**, **Push notification**, **Mobile**, **Custom channels**, and **Direct mail** channels. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 ➡️ [Get started with Decisioning](../experience-decisioning/gs-experience-decisioning.md)
 
@@ -79,6 +84,6 @@ Decisioning is available to all customers for the **Code-based Experience**, **E
 
 Our established feature in Journey Optimizer, Decision Management uses a central library of marketing offers and a decision engine that applies rules and constraints to real-time customer profiles, leveraging Adobe Experience Platform data to deliver the right offer at the right time.
 
-Decision Management supports the following channels: Email, In-App messaging, Push notifications, SMS, and Direct mail.
+Decision Management supports the following channels: Email, In-App messaging, Push notifications, Mobile messages, and Direct mail.
 
 ➡️ [Get started with Decision management](../offers/get-started/starting-offer-decisioning.md)

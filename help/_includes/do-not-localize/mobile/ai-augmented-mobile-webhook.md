@@ -46,7 +46,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: SMS Webhook — Acronym: n/a — variants: SMS webhooks, Callback URL
+* Canonical name: SMS Webhook — variants: SMS webhooks, Callback URL
 * Do not confuse: "Inbound" webhook (captures consent responses and user preferences) ≠ "Feedback" webhook (tracks delivery and engagement events)
 * Do not confuse: "Opt-In" (grants consent) ≠ "Double Opt-In" (two-step consent requiring confirmation with a second keyword)
 * Do not confuse: "Reply Message" (sent when an inbound message matches a configured keyword) ≠ "Default Reply Message" (sent when the response does not match any configured keyword) ≠ "Fuzzy Auto Response" (sent when a response is close but not an exact Opt-Out keyword)

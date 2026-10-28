@@ -23,7 +23,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **Journey Agent**: A capability in AI Assistant that creates journeys from natural language prompts *(product-specific)*
-* **Action activity**: The unified activity used for all channel actions in a journey, such as email, push, and SMS *(product-specific)*
+* **Action activity**: The unified activity used for all channel actions in a journey, such as email, push, and Mobile message *(product-specific)*
 * **Content decision activity**: A journey activity that integrates personalized offers directly into the journey flow *(product-specific)*
 * **Content card**: Persistent, non-intrusive content delivered within mobile apps and websites that remains visible until dismissed, unlike push notifications *(product-specific)*
 * **Wave sending**: Delivering messages in controlled batches (Limited Availability for journeys) *(product-specific)*

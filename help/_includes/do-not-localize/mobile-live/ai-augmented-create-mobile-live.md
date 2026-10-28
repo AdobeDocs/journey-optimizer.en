@@ -27,7 +27,7 @@ For complete understanding, this information should be combined with the documen
 * **Live activity**: The action chosen in the Actions section, tied to a selected or newly created configuration *(product-specific)*
 * **executionMetadata**: An optional field that attaches custom data to a profile, stored alongside the execution and retrievable from the Live activity feedback dataset *(product-specific)*
 * **Live activity feedback dataset**: The dataset from which stored `executionMetadata` values can be retrieved to match delivery results to your own records *(product-specific)*
-* **event**: The payload field whose values are `start`, `update`, or `end`
+* **event** (iOS) / **event_type** (Android): The payload field whose values are `start`, `update`, or `end`
 
 **Guardrails:**
 
@@ -36,7 +36,7 @@ For complete understanding, this information should be combined with the documen
 * `executionMetadata` accepts only string keys and string values; convert any non-string value to a string before sending.
 * `executionMetadata` does not support personalization expressions, so any `{{...}}` expression is treated as literal text rather than resolved.
 * Each profile can carry up to 50 key/value pairs in `executionMetadata` (hard limit), with a combined size limit of 2 KB for all keys and values (hard limit). Metadata exceeding this limit is discarded, but the Live activity is still delivered.
-* In the unitary payload example, most fields are mandatory; only `requestId`, `dismissal-date`, and `alert` are optional.
+* In the iOS unitary payload example, most fields are mandatory; only `requestId`, `dismissal-date`, and `alert` are optional.
 
 **Terminology:**
 
@@ -44,7 +44,7 @@ For complete understanding, this information should be combined with the documen
 * Synonyms: "Unitary use cases" = "individual campaigns (API-triggered Transactional)"
 * Synonyms: "Broadcast use cases" = "audience-based campaigns (API-triggered Marketing)"
 * Do not confuse: "API-triggered Marketing" (audience-based campaigns) ≠ "API-triggered Transactional" (individual campaigns)
-* Do not confuse: "start" ≠ "update" ≠ "end" (the values of the `event` field)
+* Do not confuse: "start" ≠ "update" ≠ "end" (the values of the `event` field in iOS payloads and the `event_type` field in Android payloads)
 * Do not confuse: "dismissal-date" (optional; auto-removes the activity when `event` is `end`) ≠ "timestamp" (current epoch time)
 
 **FAQ:**
@@ -57,4 +57,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 9f4fc886 -->
+<!-- ai-section-version: 1 | source-hash: aa556e07 -->

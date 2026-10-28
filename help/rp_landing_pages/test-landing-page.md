@@ -9,6 +9,25 @@ level: Beginner, Intermediate
 keywords: test, validate, approve, approval, quality-assurance, qa, test-profiles, personalization, rendering, spam-check, content-experiment, a/b-test, conflict-detection, seed-list, proofs, sample-data, approval-workflow, email-testing, validation-workflow
 redpen-status: CREATED_||_2025-08-11_20-30-59
 exl-id: a770412f-2f80-459d-8cce-32212154d154
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
+    internal-label: Overview
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Test, validate & approve{#section-overview}
 
@@ -232,6 +251,7 @@ The right testing approach depends on what you're building and what you need to 
 
 **For all journeys:**
 
+* Before simulation, test mode, or a dry run, click **[!UICONTROL Validate]** in the journey header. Resolve any errors in the Alerts panel and validate again before continuing. If you edit the journey, validate it again before testing, publishing, or requesting approval. [Learn about journey validation](../using/building-journeys/publish-journey.md#validate).
 * Use [Journey Simulation](../using/building-journeys/simulate-journey-gs.md) to quickly test a branch with temporary simulated users, no test profiles required
 * Use [test mode](../using/building-journeys/testing-the-journey.md) to manually walk through branch and message logic with real AEP test profiles (draft journeys only, requires namespace)
 * Use [dry run](../using/building-journeys/journey-dry-run.md) to check actual audience reach and branch logic at scale, right before publishing, without sending messages
@@ -295,7 +315,7 @@ Follow this 4-phase approach to validate your campaigns and journeys before laun
 |-------|-------------|-------------|
 | **1. Content validation** | Personalization, design, rendering | [Preview with test profiles](../using/content-management/preview-test.md), test [multiple variations](../using/test-approve/simulate-sample-input.md) with CSV/JSON, verify [rendering](../using/content-management/rendering.md) across devices |
 | **2. Technical checks** | Deliverability, links, conflicts | Run [spam score checks](../using/content-management/spam-report.md), validate links, check for [conflicts](../using/conflict-prioritization/conflicts.md) with other campaigns |
-| **3. Journey logic** (journeys only) | Entry conditions, flow, branching | Use [Journey Simulation](../using/building-journeys/simulate-journey-gs.md) for fast iteration, [test mode](../using/building-journeys/testing-the-journey.md) to walk through logic with real test profiles, and [dry run](../using/building-journeys/journey-dry-run.md) for a final check at scale — see [how to choose](../using/building-journeys/choose-validation-method.md) |
+| **3. Journey logic** (journeys only) | Entry conditions, flow, branching | First [validate configuration](../using/building-journeys/publish-journey.md#validate) and resolve any errors. Then use [Journey Simulation](../using/building-journeys/simulate-journey-gs.md) for fast iteration, [test mode](../using/building-journeys/testing-the-journey.md) to walk through logic with real test profiles, or [dry run](../using/building-journeys/journey-dry-run.md) for a final check at scale — see [how to choose](../using/building-journeys/choose-validation-method.md) |
 | **4. Pre-launch** | Settings, approvals, monitoring | Submit for [approval](../using/test-approve/gs-approval.md), verify schedules and audiences, enable [alerts](../using/reports/alerts.md) |
 
 **Pro tip:** Start with the [personalization playground](../using/personalization/personalize.md#playground) to test expressions before building content, and always check [conflict detection](../using/conflict-prioritization/conflicts.md) before launch to prevent over-messaging.

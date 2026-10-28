@@ -10,13 +10,15 @@ level: Intermediate
 keywords: artificial, AI, intelligent, journey, service
 exl-id: 20da09e1-0611-4d27-a589-30552011e06c
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/rTKcWHwfwleQtD68fcdeqYK2AMQHVaknKtsNDFsOldI
+TQID: 'https://experienceleague.adobe.com/rTKcWHwfwleQtD68fcdeqYK2AMQHVaknKtsNDFsOldI'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -30,7 +32,6 @@ topic_v2:
     internal-label: Customer experience
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-subfeature_v2: []
 ---
 # Integrate with intelligent services {#ai-overview}
 

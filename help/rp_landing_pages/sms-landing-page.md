@@ -5,6 +5,9 @@ title: SMS / MMS / RCS channel
 description: SMS / MMS / RCS channel
 redpen-status: CREATED_||_2025-08-11_20-38-50
 exl-id: 1e59db2e-087f-4ce8-9d9e-99ff872c0062
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # SMS / MMS / RCS channel{#section-overview}
 

@@ -30,7 +30,7 @@ For complete understanding, this information should be combined with the documen
 
 * Read audience journeys ("As soon as possible" or "Once" scheduler only — not for recurring, event-triggered, business-event, test, or dry-run journeys)
 * Action campaigns (outbound channel actions only)
-* Orchestrated campaigns (outbound channel activities only, configured per channel activity)
+* Orchestrated campaigns (outbound channel activities only, configured per channel activity; not for recurring or signal-triggered Orchestrated campaigns)
 
 **Common guardrails (all contexts):**
 
@@ -39,6 +39,10 @@ For complete understanding, this information should be combined with the documen
 * Wave start cannot be in the past
 * Percentage-based custom distribution must total 100%
 * Number-based custom distribution does not auto-validate total coverage
+
+**Campaign guardrails (Action campaigns and Orchestrated campaigns):**
+
+* Wave start cannot be before campaign start
 
 **Journey-specific guardrails:**
 
@@ -50,10 +54,13 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Does wave sending apply to inbound channels?** — No; outbound only (Email, SMS, Push, Direct mail).
+* **Q: Does wave sending apply to inbound channels?** — No; outbound only (Email, Mobile message, Push).
 * **Q: Can I assign different content to individual waves?** — No; same audience and content for all waves. Only size and timing can differ.
 * **Q: What is the minimum time between two waves?** — 30 minutes between the start of two consecutive waves.
 * **Q: What happens if wave sizes exceed or fall short of the audience?** — Excess: first wave sends to full audience, remaining waves do not execute. Shortfall: only profiled in defined waves receive the message; the rest are not retried.
 * **Q: Is the audience re-evaluated per wave?** — No; the audience is snapshotted at activation. Profile attributes (personalization, consent) are read at wave processing time.
 
 +++
+
+
+<!-- ai-section-version: 1 | source-hash: 76a187ca -->

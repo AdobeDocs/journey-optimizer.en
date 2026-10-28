@@ -5,7 +5,9 @@ feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
-badge: label="Limited Availability" type="Informative"
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
@@ -16,6 +18,14 @@ subfeature_v2:
     internal-label: Custom Channels
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 
 # Create a channel configuration {#create-channel-config}
@@ -61,6 +71,14 @@ To create a channel configuration for a custom channel, follow the steps below.
 -->
 
 1. Click **[!UICONTROL Submit]** to save and activate the channel configuration.
+
+<!--
+1. Optionnally, attach a reporting webhook so interaction events from your custom channel can enrich reporting.
+-->
+
+>[!IMPORTANT]
+>
+>In custom channel configurations, you cannot select a message type. Therefore, all messages sent through custom channels are treated as Marketing messages at send time. As a result, custom channels are not supported in Transactional campaigns (action or API-triggered).
 
 <!--
 >[!CAUTION]

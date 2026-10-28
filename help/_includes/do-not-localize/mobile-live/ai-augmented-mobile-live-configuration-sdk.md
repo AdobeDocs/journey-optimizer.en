@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **`LiveActivityAttributes`**: The protocol a struct conforms to, defining both the static data and the dynamic content state for a Live activity *(product-specific)*
-* **`LiveActivityData`**: A required property containing Adobe Experience Platform-specific data; `liveActivityID` for individual users, `channelID` for broadcast *(product-specific)*
+* **`LiveActivityData`**: The type of the required `liveActivityData` property, which contains Adobe Experience Platform-specific data; `liveActivityID` for individual users, `channelID` for broadcast *(product-specific)*
 * **`ContentState`**: Dynamic data that can be updated during the Live activity lifecycle; must conform to `Codable` and `Hashable`
 * **`LiveActivityOrigin`**: An enumeration specifying whether an activity was initiated locally or remotely via a push-to-start notification, supported in iOS 17.2 and later *(product-specific)*
 * **`Messaging.registerLiveActivity()`**: The call used after SDK initialization to register Live activity types *(product-specific)*
@@ -40,10 +40,9 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Adobe Experience Platform Mobile SDK — Acronym: AEP Mobile SDK — variants: Mobile SDK, messaging SDK
-* Synonyms: "push-to-start" = "remotely triggered start, supported in iOS 17.2 and later"
+* Canonical name: Adobe Experience Platform Mobile SDK — Acronym: AEP Mobile SDK — variants: Mobile SDK
 * Do not confuse: "`liveActivityID`" (individual users) ≠ "`channelID`" (broadcast)
-* Do not confuse: "start a Live activity locally" (initiated within the application code) ≠ "start remotely via push-to-start" (triggered remotely through Journey Optimizer)
+* Do not confuse: "start a Live activity locally" (initiated within the application code) ≠ "start remotely" (initiated remotely through Journey Optimizer or via a push-to-start notification, supported in iOS 17.2 and later)
 
 **FAQ:**
 
@@ -55,4 +54,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: fca7b04d -->
+<!-- ai-section-version: 1 | source-hash: e09eaf1f -->
