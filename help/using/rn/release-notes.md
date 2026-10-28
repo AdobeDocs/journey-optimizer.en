@@ -181,7 +181,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <tr>
 <td>
 <p>A new "Stop action" activity in the journey canvas now allows you to remove a profile from up to five inbound activities or experiences directly from a journey. This decouples inbound disqualification from journey exit.</p>
-<p><img src="assets/do-not-localize/stop-action"></p>
+<p><img src="assets/do-not-localize/stop-action.gif"></p>
 <p>For more information, refer to the <a href="../building-journeys/stop-action.md">detailed documentation</a>.</p>
 <p>Availability date: October 12, 2026</p>
 </td>
