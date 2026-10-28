@@ -304,6 +304,16 @@ The following improvements are coming to orchestrated campaigns in this release.
 
   Availability date: October 22, 2026
 
++++ Coming soon — **Information below is subject to change.**
+
+* **Decisioning item creation skill in Coworker** - Use natural language in Coworker to create offers (decision items) with AI assistance, so marketers can build and populate items faster without manually filling in each field. <!-- Documentation link: TBD -->
+
+* **Decisioning audit skill in Coworker** - Ask Coworker questions about your Decisioning objects in natural language. Check your inventory (for example, how many offers you have), explore how objects relate to each other, and run audit queries such as who last edited a given offer. <!-- Documentation link: TBD -->
+
+* **Decisioning migration assistance in Coworker** - Get AI-enabled assistance in Coworker when migrating from Offer Decisioning to Adobe Journey Optimizer Decisioning. <!-- Documentation link: TBD -->
+
++++
+
 ### Loyalty {#oct-26-loyalty}
 
 * **Performance settings in Loyalty configurations** - Use the **Performance settings** tab to select your loyalty profile and event datasets and configure your organization's priority **Key performance indicator** for loyalty insights. Choose Revenue, Engagement, Redemptions, or Conversions to determine which insights receive emphasis in your feed. [Learn more](../loyalty-challenges/loyalty-admin.md#performance-settings)
