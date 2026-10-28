@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2026 {#october-2026}
 
+* The **Use audiences enrichment attributes** page now clarifies that you can use enrichment attributes from external audiences created through the External Audience API, and that the audience ID you provide does not need to match the one assigned by Adobe Experience Platform. The page has also been reorganized with new **Considerations** and **Add enrichment attributes from audience composition to a Field Group** sections. [Read more](../audience/enrichment-attributes.md#considerations)
+
 * The **Use supplemental identifiers in journeys** page now clarifies that setting `expressActivation: true` in the API payload at audience creation applies to all external audiences created via API, not only CSV audiences. Federated Audience Composition audiences are the exception: the flag is set automatically. [Read more](../building-journeys/supplemental-identifier.md#external-audiences)
 
 * A new **Choose a consent level for opt-outs** page explains the difference between the **Channel** and **Identity** consent levels, with an example and guidance on which to choose. The **List unsubscribe** and **Manage email opt-out** pages now link to it. [Read more](../email/consent-level.md)
