@@ -50,6 +50,7 @@ When targeting an audience generated using composition workflows, custom (CSV fi
 
 * **Consent policies**: Consent policies do not support enrichment attributes. Therefore, any consent policy rules should be based only on attributes found in the profile.
 
+* **Enrichment attributes in the personalization editor**: The system requires a custom field group under a profile-enabled schema to generate the tenant namespace in the union schema. If it is missing, the enrichment attributes are not available in the personalization editor. To make them available for personalization, add a custom field group to any profile-enabled schema.
 * **External audiences created through the API**: You can use enrichment attributes from external audiences created through the [External Audience API](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/create-external-audience){target="_blank"}. You can provide your own audience ID when you create the audience. It does not need to match the ID that Adobe Experience Platform assigns to the audience.
 
 ## Use enrichment attributes {#use-enrichment-attributes}
