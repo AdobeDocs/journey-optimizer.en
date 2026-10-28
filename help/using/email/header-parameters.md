@@ -85,9 +85,8 @@ If needed, these header values can be overridden at the campaign or journey acti
 Learn how in the following sections:
 
 * [Configure the campaign action](../campaigns/campaign-action.md)
-* [Configure API-triggered action](../api-triggered/api-triggered-action.md)
-* [Configure journey action](../journeys/journey-action.md)
-* [Configure orchestrated campaign action](../orchestrated-campaigns/orchestrated-campaign-action.md)
+* [Configure API-triggered action](../campaigns/api-triggered-campaign-action.md)
+* [Configure journey action](../building-journeys/journey-action.md)
 
 ## Sender headers {#sender-header}
 
