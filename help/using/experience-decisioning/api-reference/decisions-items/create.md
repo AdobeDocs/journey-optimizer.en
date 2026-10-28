@@ -45,6 +45,7 @@ POST /{ENDPOINT_PATH}/offer-items
 | Parameter | Description | Example |
 | --------- | ----------- | ------- |
 | `{ENDPOINT_PATH}` | The endpoint path for persistence APIs. | `https://platform.adobe.io/data/core/dps` |
+| `{SCHEMA_ID}` | The full URI of your tenant's **Personalized Offer Items - Experience Decisioning** schema, sent in the `x-schema-id` header. | `https://ns.adobe.com/{TENANT}/schemas/{SCHEMA_ID}` |
 
 **Request**
 

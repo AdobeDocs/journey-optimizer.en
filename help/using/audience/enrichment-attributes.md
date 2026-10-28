@@ -44,11 +44,16 @@ topic_v2:
 
 When targeting an audience generated using composition workflows, custom (CSV file) audience, or Federated Audience Composition, you can use enrichment attributes from these audiences to build your journey and personalize your messages.
 
->[!NOTE]
->
->Audiences created through CSV file custom upload before October 1, 2024, are not eligible for personalization. To use attributes from these audiences and fully utilize this feature, please re-create and re-upload any external CSV audience imported before this date.
->
->Consent policies do not support enrichment attributes. Therefore, any consent policy rules should be based only on attributes found in the profile.
+## Considerations {#considerations}
+
+* **CSV audiences uploaded before October 1, 2024**: These audiences are not eligible for personalization. To use attributes from these audiences and fully utilize this feature, please re-create and re-upload any external CSV audience imported before this date.
+
+* **Consent policies**: Consent policies do not support enrichment attributes. Therefore, any consent policy rules should be based only on attributes found in the profile.
+
+* **Enrichment attributes in the personalization editor**: The system requires a custom field group under a profile-enabled schema to generate the tenant namespace in the union schema. If it is missing, the enrichment attributes are not available in the personalization editor. To make them available for personalization, add a custom field group to any profile-enabled schema.
+* **External audiences created through the API**: You can use enrichment attributes from external audiences created through the [External Audience API](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/create-external-audience){target="_blank"}. You can provide your own audience ID when you create the audience. It does not need to match the ID that Adobe Experience Platform assigns to the audience.
+
+## Use enrichment attributes {#use-enrichment-attributes}
 
 Here are the actions you can perform using audiences' enrichment attributes:
 
@@ -60,26 +65,21 @@ Here are the actions you can perform using audiences' enrichment attributes:
 
     ![](assets/audience-enrichment-attribute-perso.png){width="70%" zoomable="yes"}
 
->[!IMPORTANT]
->
->To use enrichment attributes from audiences created using composition workflows, ensure that they are added to a Field Group within the "ExperiencePlatform" Data Source.
->
->+++ Learn how to add enrichment attributes to a Field Group
->
->1. Navigate to "Administration" > "Configuration" > "Data Sources". 
->1. Select "Experience Platform" and create or edit a Field Group.
->1. In the schema selector, select the appropriate schema. The name of the schema will follow this format: 'Schema for audienceId:' + the ID of the audience. You can find the ID of the audience on the audience details screen in the audience inventory.
->1. Open the field selector, find the enrichment attributes you want to add, and select the check box next to them.
->1. Save your changes.
->1. Once enrichment attributes are added to a Field Group, you can use them in Journey Optimizer at the locations listed above.
->
->Detailed information on data sources is available in these sections:
->
->* [Work with the Adobe Experience Platform data source](../datasource/adobe-experience-platform-data-source.md)
->* [Configure a data source](../datasource/configure-data-sources.md)
->
->+++
+## Add enrichment attributes from audience composition to a Field Group {#field-group}
 
+To use enrichment attributes from audiences created using composition workflows, ensure that they are added to a Field Group within the "ExperiencePlatform" Data Source.
+
+1. Navigate to "Administration" > "Configuration" > "Data Sources". 
+1. Select "Experience Platform" and create or edit a Field Group.
+1. In the schema selector, select the appropriate schema. The name of the schema will follow this format: 'Schema for audienceId:' + the ID of the audience. You can find the ID of the audience on the audience details screen in the audience inventory.
+1. Open the field selector, find the enrichment attributes you want to add, and select the check box next to them.
+1. Save your changes.
+1. Once enrichment attributes are added to a Field Group, you can use them in Journey Optimizer at the locations listed above.
+
+Detailed information on data sources is available in these sections:
+
+* [Work with the Adobe Experience Platform data source](../datasource/adobe-experience-platform-data-source.md)
+* [Configure a data source](../datasource/configure-data-sources.md)
 
 ## Frequently asked questions {#faq-enrichment}
 
@@ -107,7 +107,7 @@ Enrichment attributes from audience composition can be leveraged in the followin
 
 +++ How do I enable enrichment attributes in Journeys?
 
-To use enrichment attributes from audiences created using composition workflows, ensure they are added to a Field Group within the "ExperiencePlatform" Data Source. Information on how to add enrichment attributes to a Field Group is available in [this section](#enrichment)
+To use enrichment attributes from audiences created using composition workflows, ensure they are added to a Field Group within the "ExperiencePlatform" Data Source. Information on how to add enrichment attributes to a Field Group is available in [this section](#field-group)
 
 +++
 
@@ -121,11 +121,13 @@ Currently, no. Even after wait or event nodes, enrichment attribute values remai
 
 Audience ingestion completion does not confirm that an enrichment attribute is available in journey authoring. The typical timing for audience availability does not specify when custom-upload enrichment attributes become available. [Learn about audience activation timing](target-audiences.md#activation).
 
+Also note that journey test mode does not support custom upload attribute enrichment, and preview and proof are not supported for custom upload or Federated Audience Composition audiences. [Learn about test mode limitations](../building-journeys/testing-the-journey.md#important_notes) and [audience guardrails](target-audiences.md#guardrails).
+
 Check that:
 * The audience exists, and your account has permission to access and use it.
 * The Read Audience activity selects the same audience that the condition expression references. If your setup uses a field group, confirm it references enrichment attributes from that same audience.
 
-The “Enriched audience not found” message is ambiguous and does not identify a single root cause. If it persists after these checks, contact Adobe support with the audience and journey details.
+The "Enriched audience not found" message is ambiguous and does not identify a single root cause. If it persists after these checks, contact Adobe support with the audience and journey details.
 
 +++
 

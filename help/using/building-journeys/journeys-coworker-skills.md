@@ -21,11 +21,11 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Explore Coworker capabilities in Adobe Journey Optimizer for creating journeys, generating channel content, analyzing performance and journey inventory hygiene, and simulating journey behavior.
+**On this page:** Explore Coworker capabilities in Adobe Journey Optimizer for creating journeys, generating channel content, analyzing performance and journey inventory hygiene, tracing profiles through a journey, and simulating journey behavior.
 
 >[!ENDSHADEBOX]
 
-Coworker brings natural-language tools into Adobe Journey Optimizer to help you create and configure journeys, generate channel-specific content, analyze performance, and simulate journey behavior. Use Journey Create to configure flows, Channel Content Create to generate and refine messages, Journey Analyze to investigate performance, operational issues, and inventory hygiene, and Journey Simulation to test journey logic.
+Coworker brings natural-language tools into Adobe Journey Optimizer to help you create and configure journeys, generate channel-specific content, analyze performance, trace profiles through a journey, and simulate journey behavior.
 
 Learn more:
 
@@ -149,7 +149,7 @@ Channel Content Create enables Journey Optimizer users to generate, edit, and ma
 
 ## Journey Analyze {#journey-analyze}
 
-Journey Skills will enable Journey Optimizer users to analyze and optimize journeys using a natural language interface. With Journey Skills, practitioners can quickly identify and resolve schedule and/or audience conflicts, detect points of user abandonment in a journey, scan for broken configurations and silent failures, and provide actionable recommendations to improve journey health. It empowers practitioners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
+Journey Skills enable Journey Optimizer users to analyze and optimize journeys using a natural language interface. With Journey Skills, practitioners can quickly identify and resolve schedule and/or audience conflicts, detect points of user abandonment in a journey, scan for broken configurations and silent failures, and provide actionable recommendations to improve journey health. It empowers practitioners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
 
 >[!AVAILABILITY]
 >
@@ -196,6 +196,60 @@ To maximize the effectiveness of Journey Analyze, follow these best practices:
 * **Define Clear Objectives**: Before analyzing journeys, establish clear goals (e.g., improving retention, increasing conversions).
 * **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 * **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
+
+## Journey Execution Timeline {#journey-execution-timeline}
+
+Journey Execution Timeline enables Journey Optimizer users to get the end-to-end timeline of a Read Audience (batch or scheduled export) journey batch, using a natural language interface. The skill shows how long a batch took, when the audience export, the journey execution, and the delivery started and ended, and the profile-level P95 and P99 for entry, exit, or execution time. Before answering, the skill validates the journey against the journey model. If the journey is not a Read Audience journey, the skill stops instead of approximating a result.
+
+### Key use cases
+
+<table style="table-layout: fixed; width: 100%; border-collapse: collapse; border: 1px solid #d9d9d9;">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<tr><th style="padding: 12px; border: 1px solid #d9d9d9; background-color: #f5f5f5; text-align: left; vertical-align: top;">Use Case</th><th style="padding: 12px; border: 1px solid #d9d9d9; background-color: #f5f5f5; text-align: left; vertical-align: top;">Sample Prompts</th></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Journey batch duration</strong><br>Find out how long a Read Audience journey batch took to execute, end to end.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"How long did the Read Audience journey [Journey Name] take to execute?"</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>End-to-end timeline by batch</strong><br>See when the audience export, the journey execution, and the delivery started and ended for each batch of a Read Audience journey.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Show me the audience export, journey execution, and delivery timelines for [Journey Name] by batch."</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Profile-level P95 and P99</strong><br>Get the P95 and P99 for how long profiles took to enter the journey, exit it, or complete execution.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"What is the P95 and P99 for how long profiles took to enter and exit [Journey Name]?"</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Slowest batch and delay cause</strong><br>Identify which batch took the longest and which stage (audience export, journey execution, or delivery) caused the delay.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Which batch of [Journey Name] took longest, and which stage caused the delay?"</td></tr>
+</table>
+
+### Limitations
+
+* Journey Execution Timeline supports **Read Audience journeys** only. For any other journey type, the skill stops and does not approximate a result.
+* Audience export latency is measured from the creation of the export job to the first profile entry. It does not cover the processing stages that occur after the export job is created.
+* Recipient-side or device-side notification receipt and display timing is not reliably available from standard Journey Optimizer datasets, so the skill reports that metric as unavailable instead of estimating it.
+* The skill is read-only and cannot change journey configuration.
+
+The following analyses are handled by the [Journey Analyze](#journey-analyze) skills:
+
+* **Journey Fallout Analysis**: per-node timing, per-node P95 and P99, and drop-off.
+* **Analyze Journey Anomalies**: volume and count anomalies.
+* **Journey Custom Action Error Analysis**: custom action errors and latency.
+* **Journey Audience Overlap Analysis** and **Journey Schedule Overlap Analysis**: audience and schedule conflicts.
+
+## Trace Journey Profile {#trace-journey-profile}
+
+Trace Journey Profile is a read-only skill that returns profile-level execution data for a published journey, based on journey step events. Use it to see how profiles moved through a journey, which profiles errored and why, or the path of a single profile from node to node.
+
+<table style="table-layout: fixed; width: 100%; border-collapse: collapse; border: 1px solid #d9d9d9;">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Node and branch counts</strong><br>See, for each node, how many profiles entered and how many stopped there. See how profiles split across the branches of a node, as counts and percentages.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Trace profiles through [Journey Name]."<br><br>"How many profiles reached each step of [Journey Name] this week?"<br><br>"How many profiles entered the 'Loyalty Tier Check' node in [Journey Name] and how did they split?"</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Errored-profile lookup</strong><br>Find which profiles errored in a journey over a given period (for example, the last 7 days), at which node, and why.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Which profiles errored in [Journey Name] in the last 7 days, at which node, and why?"</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Single-profile trace</strong><br>Follow a profile's node-by-node path through a journey, with timestamps, the attribute value evaluated at each condition node, and the exit point and reason.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Show me profile [ID or email]'s path through [Journey Name], including why it went down each branch."<br><br>"Trace this profile through the Welcome journey."</td></tr>
+</table>
+
+The errored-profile lookup and the single-profile trace return profile-level data.
+
+### Limitations
+
+* Trace Journey Profile works on published journeys only. It does not support journeys that were never published (draft-only) or B2B journeys.
+* It is read-only. It does not export lists or edit journeys.
+* For fallout analysis, volume anomalies, or custom action error trends, use [Journey Analyze](#journey-analyze).
 
 ## Journey Simulation {#journey-simulation}
 

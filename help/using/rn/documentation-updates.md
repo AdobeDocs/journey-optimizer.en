@@ -35,6 +35,14 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Activate High throughput mode for API-triggered campaigns** page has a new **Set up High throughput API-triggered email campaigns** section. It provides step-by-step guidance to create a dedicated IP pool and a High throughput email channel configuration in the UI. [Read more](../campaigns/api-triggered-high-throughput.md#setup-guidelines)
 
+* The **Use audiences enrichment attributes** page now clarifies that you can use enrichment attributes from external audiences created through the External Audience API, and that the audience ID you provide does not need to match the one assigned by Adobe Experience Platform. The page has also been reorganized with new **Considerations** and **Add enrichment attributes from audience composition to a Field Group** sections. [Read more](../audience/enrichment-attributes.md#considerations)
+
+* The **Use supplemental identifiers in journeys** page now clarifies that setting `expressActivation: true` in the API payload at audience creation applies to all external audiences created via API, not only CSV audiences. Federated Audience Composition audiences are the exception: the flag is set automatically. [Read more](../building-journeys/supplemental-identifier.md#external-audiences)
+
+* A new **Choose a consent level for opt-outs** page explains the difference between the **Channel** and **Identity** consent levels, with an example and guidance on which to choose. The **List unsubscribe** and **Manage email opt-out** pages now link to it. [Read more](../email/consent-level.md)
+* The **Frequency capping**, **Quiet hours**, and **Rule sets** pages now list custom channels among the channels supported by business rules. [Read more](../conflict-prioritization/channel-capping.md)
+* The **Personalize URLs in emails** page now explains that you must use triple curly braces (`{{{ ... }}}`) for the dynamic part of a personalized URL, so special characters are not escaped. [Read more](../email/url-personalization.md#use-braces)
+
 * A new **Troubleshooting overview** page and 14 error pages give the cause and the fix for each error code, grouped by feature area: Journeys, Campaigns, Content, and Configuration. Related feature pages now link to the matching error page. [Read more](../../rp_landing_pages/troubleshooting-overview-landing-page.md)
 
 * Notes have been added to clarify that custom upload (CSV) audiences are not supported as targeting audiences for inbound channel actions, including in-app messages and web or code-based experiences. Campaigns that use them with an inbound channel fail with an upstream error. [Read more](../audience/target-audiences.md#guardrails)
@@ -64,6 +72,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * The **Delegate a subdomain** page now clarifies that CAA or DNS validation record issues on any domain sharing a multi-SAN SSL certificate can block certificate provisioning, even when the new subdomain's DNS records are correct. Guidance has been added for checking DNS validation records and CAA configuration across all subdomains sharing the certificate. [Read more](../configuration/delegate-subdomain.md#subdomain-validation)
 
 * A caution has been added to the **Delegate a subdomain** page to inform users that a separate DNS zone or SOA record for the subdomain causes the delegation to fail. It explains how to remove the subdomain zone and configure NS records at the parent domain level instead. [Read more](../configuration/delegate-subdomain.md#submit-subdomain)
+
+* The **Create a decision item** page now explains that the `x-schema-id` header must contain the full URI of the **Personalized Offer Items - Experience Decisioning** schema of your tenant, not only the schema ID or a schema version number. [Read more](../experience-decisioning/api-reference/decisions-items/create.md)
 
 ## September 2026 {#september-2026}
 
