@@ -7,6 +7,7 @@ feature: Email, Privacy, Consent Management
 topic: Administration
 role: Admin
 level: Experienced
+hide: true
 keywords: open tracking, consent, email, pixel, privacy, channel configuration, opt-out
 ---
 
