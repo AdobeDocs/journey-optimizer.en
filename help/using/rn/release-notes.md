@@ -174,6 +174,25 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <table>
 <thead>
 <tr>
+<th><strong>New journey alerts (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Five new alerts help you monitor journey message bounce and delivery error rates, receive notifications when journey <strong>Read Audience</strong> exports start and complete, and detect journey event delays due to queueing when the event throughput guardrail has been exceeded. Threshold-based alerts support configurable thresholds, and <strong>Read Audience</strong> export notifications support journey-level subscriptions.</p>
+<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p><img src="assets/do-not-localize/journey-alerts.gif"></p>
+<p>For more information, refer to the <a href="../reports/alerts.md#available-alerts">detailed documentation</a>.</p>
+<p>Availability date: October 29, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Stop action journey activity</strong><br/></th>
 </tr>
 </thead>
@@ -229,28 +248,13 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 26, 2026
 
-+++ Coming soon — **Information below is subject to change.**
+* **New journey alerts (Limited Availability)** - Five new alerts help you monitor journey message bounce and delivery error rates, receive notifications when journey Read Audience exports start and complete, and detect journey event delays due to queueing when the event throughput guardrail has been exceeded. Threshold-based alerts support configurable thresholds, and Read Audience export notifications support journey-level subscriptions. [Learn more](../reports/alerts.md#available-alerts)
 
-<table>
-<thead>
-<tr>
-<th><strong>New journey alerts (Limited Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Five new alerts help you monitor journey message bounce and delivery error rates, receive notifications when journey <strong>Read Audience</strong> exports start and complete, and detect journey event delays due to queueing when the event throughput guardrail has been exceeded. Threshold-based alerts support configurable thresholds, and <strong>Read Audience</strong> export notifications support journey-level subscriptions.</p>
-<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
-<p><img src="assets/do-not-localize/journey-alerts.gif"></p>
-<!--
-<p>For more information, refer to the <a href="../reports/alerts.md#available-alerts">detailed documentation</a>.</p>
-<p>Availability date: October 29, 2026</p>
--->
-</td>
-</tr>
-</tbody>
-</table>
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
+
+  Availability date: October 29, 2026
+
++++ Coming soon — **Information below is subject to change.**
 
 <table>
 <thead>
