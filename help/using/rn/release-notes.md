@@ -287,6 +287,12 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
 The following improvements are coming to campaigns in this release.
 
+* [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns (Limited Availability)** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view. [Learn more](../start/calendar.md)
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+  Availability date: October 29, 2026
+
 +++ Coming soon — **Information below is subject to change.**
 
 * **Increased message activity limit for Orchestrated campaigns** - Orchestrated campaigns now support up to 25 message actions on a single canvas, up from the previous limit of 10. This allows complex cross-channel orchestrations, spanning email, push, SMS, and other channels, to be built and managed as a single campaign rather than split across multiple smaller ones.
@@ -294,12 +300,6 @@ The following improvements are coming to campaigns in this release.
   For enterprise teams running sophisticated multi-step programs, this reduces operational overhead and simplifies publication and rollback handling when managing large campaign launches. <!-- Documentation link: TBD -->
 
 * **Orchestrated campaigns skills in Coworker** - You can now find and inspect orchestrated campaigns conversationally from the Coworker chat interface. This release covers four read-only capabilities: listing and filtering campaigns by status, channel, tags, or name; pulling a specific campaign's details including its channel configuration and activity structure; visualizing a campaign's canvas as a graph of its activities and connections; and retrieving execution logs to surface errors for troubleshooting. This provides teams with live visibility into campaign data without requiring API access or navigation through the Journey Optimizer user interface. Creating, editing, or publishing campaigns via Coworker is not yet supported.
-
-* [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns (Limited Availability)** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view. [Learn more](../start/calendar.md)
-
-  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
-  Availability date: October 29, 2026
 
 +++
 
@@ -372,8 +372,6 @@ The following improvements are coming to campaigns in this release.
 
 ### Administration {#oct-26-administration}
 
-+++ Coming soon — **Information below is subject to change.**
-
 <table>
 <thead>
 <tr>
@@ -385,13 +383,9 @@ The following improvements are coming to campaigns in this release.
 <td>
 <p>Define your own business fields, such as line of business, product or cost center, in the schemas provided for Action campaigns, journeys and Orchestrated campaigns. Select up to 10 fields per entity type, then fill them in from the <strong>Metadata fields</strong> section of the properties of each journey or campaign. The values are recorded in dedicated datasets that you can use for reporting, exports and audience creation.</p>
 <p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
-<!--
 <p>For more information, refer to the <a href="../administration/custom-metadata.md">detailed documentation</a>.</p>
 <p>Availability date: October 29, 2026</p>
--->
 </td>
 </tr>
 </tbody>
 </table>
-
-+++
