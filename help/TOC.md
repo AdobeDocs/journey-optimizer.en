@@ -360,6 +360,7 @@ nudge: yes
       + [Get started with email configuration](using/email/get-started-email-config.md)
       + [Define email configuration settings](using/email/email-settings.md)
       + [Enable List unsubscribe](using/email/list-unsubscribe.md)
+      + [Honor email open tracking consent](using/email/open-tracking-consent.md)
       + [Header parameters](using/email/header-parameters.md)
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)

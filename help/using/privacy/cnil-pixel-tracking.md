@@ -89,11 +89,9 @@ Unclear whether unchecking "Email opens" fully removes the 1x1 tracking pixel fr
 
 ### Honor tracking consent per recipient {#honor-tracking-consent}
 
-To support compliance with open-tracking consent requirements, you can honor a recipient's tracking consent without excluding them from an otherwise eligible email send. Instead of disabling open tracking for an entire message, [!DNL Journey Optimizer] evaluates tracking consent for each recipient at send time.
+Instead of disabling open tracking for an entire message, you can have [!DNL Journey Optimizer] honor each recipient's open tracking consent at send time, without excluding them from an otherwise eligible email send.
 
-Tracking consent is stored in the Adobe Experience Platform profile. It is its own explicit choice, entirely separate from marketing opt-in. Consent is resolved at the individual identity level, which is tied to the delivery address and identity used for the send. If no identity-level preference exists, [!DNL Journey Optimizer] falls back to a profile-wide preference.
-
-To apply this, select **[!UICONTROL Disable open tracking]** in the email message settings. For recipients who have not consented, [!DNL Journey Optimizer] does not embed the open-tracking pixel in the delivered email HTML, so no open data is collected. Email delivery, content, and unsubscribe links are unaffected.
+[Learn how to honor email open tracking consent](../email/open-tracking-consent.md)
 
 ### Link-level tracking management {#link-tracking}
 
