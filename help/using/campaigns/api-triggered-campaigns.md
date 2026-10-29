@@ -52,6 +52,8 @@ API triggered campaigns allow either for marketing communications to reach out t
 
 To do this, you first need to create an API triggered campaign in Journey Optimizer, and then launch its execution through an API call using the [Interactive Message Execution REST API](https://developer.adobe.com/journey-optimizer-apis/references/messaging#tag/execution).
 
+To view API-triggered campaign schedules, use the unified **[!UICONTROL Calendar]** menu. [Learn how to use the Calendar](../start/calendar.md).
+
 ➡️ [Discover this feature in video](#video) 
 
 >[!NOTE]

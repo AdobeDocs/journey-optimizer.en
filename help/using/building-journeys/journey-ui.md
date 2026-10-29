@@ -19,14 +19,14 @@ subfeature_v2: []
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to browse, search, and filter your journeys using the journey dashboard, list, and calendar views in Adobe Journey Optimizer.
+**On this page:** Learn how to browse, search, and filter your journeys using the journey dashboard and list in Adobe Journey Optimizer.
 
 >[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_view"
->title="Journeys list and calendar views"
->abstract="In addition to the journeys list, [!DNL Journey Optimizer] provides a calendar view of your journeys, offering a clear visual representation of their schedules. These buttons switch between the list and calendar views at any time."
+>title="Browse journeys"
+>abstract="Use the Journeys workspace to browse, search, and filter journeys. Use the unified Calendar menu to view schedules across journeys and campaigns."
 
 ## Journey dashboard {#dashboard-jo}
 
@@ -55,55 +55,9 @@ The **[!UICONTROL Browse]** tab shows the list of existing journeys. You can sea
  
 In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas. Learn more about [journey version management](publish-journey.md#journey-versions).
 
-### Journeys calendar {#calendar}
+### Calendar
 
-In addition to the journeys list, [!DNL Journey Optimizer] provides a calendar view of your journeys, offering a clear visual representation of their schedules.
-
-How journeys are represented:
-
-* By default, the calendar grid shows all live and scheduled journeys for the selected week. Additional filter options can show completed, stopped and finished activations or activations.
-* Draft journeys and journeys in test mode are not displayed.
-* Journeys spanning multiple days appear at the top of the calendar grid.
-* If no start time is specified, the closest manual activation time is used to position it in the calendar.
-* Journeys are displayed as 1-hour timespans, but this does not reflect actual send or completion time.
-
-To navigate in your Journeys calendar:
-
-1. To access the calendar view, open the journeys list and click the ![Calendar icon to switch to calendar view](assets/do-not-localize/timeline-icon.svg) icon.
-
-1. Use the arrow buttons or the date selector above the calendar to move between weeks.
-
-    The calendar displays all journeys scheduled for the current week. 
-
-    ![calendar view showing live journeys](assets/timeline-journeys.png)
-
-1. Click the ![Settings icon to toggle multi-day journey display](assets/do-not-localize/Smock_Gears_18_N.png) icon to toggle the display of items that span multiple days or weeks.
-
-    ![calendar view showing live campaigns](assets/journey-calendar-1.png)
-
-1. Click the ![Add external calendar icon](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) icon to manage and add up to three external calendars.
-
-    ![calendar view showing external calendars](assets/journey-calendar-2.png)
-
-1. Drag and drop your CSV files containing event names, start dates, and end dates.
-
-    Uploaded events appear for all users in your organization and display on both Journey and Campaign calendars.
-
-    +++CSV format should be as follows:
-
-    | Column1 | Column2 | Column3 |
-    |-|-|-|
-    | Event name | Start date in mm/dd/yy format | End date in mm/dd/yy format |
-    
-    +++
-
-1. If needed, you can hide, unhide, or remove added external calendars.
-
-    ![calendar view showing external calendars](assets/journey-calendar-3.png)
-
-1. For more details on a journey, click its visual block to open and explore its details.
-
-    ![campaign list with the information pane opened](assets/journey-calendar-4.png)
+Journey schedules are shown in the unified **[!UICONTROL Calendar]** menu with campaign schedules. [Learn how to use the Calendar](../start/calendar.md).
 
 ### Folders view {#journeys-folders}
 

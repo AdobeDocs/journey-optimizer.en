@@ -254,6 +254,12 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 29, 2026
 
+* [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns (Limited Availability)** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view. [Learn more](../start/calendar.md)
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+  Availability date: October 29, 2026
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -275,22 +281,25 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
 * **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
 
-* [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view.
-
 +++
 
-### Orchestrated campaigns {#oct-26-orchestrated-campaigns}
+### Campaigns {#oct-26-orchestrated-campaigns}
 
-The following improvements are coming to orchestrated campaigns in this release.
+The following improvements are coming to campaigns in this release.
 
 +++ Coming soon — **Information below is subject to change.**
 
-* **Increased message activity limit for orchestrated campaigns** - Orchestrated campaigns now support up to 25 message actions on a single canvas, up from the previous limit of 10. This allows complex cross-channel orchestrations, spanning email, push, SMS, and other channels, to be built and managed as a single campaign rather than split across multiple smaller ones.
+* **Increased message activity limit for Orchestrated campaigns** - Orchestrated campaigns now support up to 25 message actions on a single canvas, up from the previous limit of 10. This allows complex cross-channel orchestrations, spanning email, push, SMS, and other channels, to be built and managed as a single campaign rather than split across multiple smaller ones.
 
   For enterprise teams running sophisticated multi-step programs, this reduces operational overhead and simplifies publication and rollback handling when managing large campaign launches. <!-- Documentation link: TBD -->
 
-
 * **Orchestrated campaigns skills in Coworker** - You can now find and inspect orchestrated campaigns conversationally from the Coworker chat interface. This release covers four read-only capabilities: listing and filtering campaigns by status, channel, tags, or name; pulling a specific campaign's details including its channel configuration and activity structure; visualizing a campaign's canvas as a graph of its activities and connections; and retrieving execution logs to surface errors for troubleshooting. This provides teams with live visibility into campaign data without requiring API access or navigation through the Journey Optimizer user interface. Creating, editing, or publishing campaigns via Coworker is not yet supported.
+
+* [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns (Limited Availability)** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view. [Learn more](../start/calendar.md)
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+  Availability date: October 29, 2026
 
 +++
 
