@@ -29,6 +29,7 @@ See also [Manage API credentials for custom channels](../custom-channel/custom-c
 
 | Error code | Message | How to fix |
 |---|---|---|
+| **CJMRT-000089-400** | The external API call {source} (ID {id}) failed with status code {statusCode}. Verify the API endpoint configuration, then retry. If the issue persists, contact Adobe Customer Care. | Check the endpoint configuration and the authentication of the custom channel, then select **[!UICONTROL Test connection]** again. If the error persists, contact Adobe Customer Care. [Learn more](../custom-channel/create-custom-channel.md#test-activate) |
 | **CJMRT-081517-403** | Authentication \"{authId}\" cannot be deactivated because it is associated with an active channel configuration. Update the channel configuration first and try again. | Update the channel configuration that uses the credentials, then deactivate them. [Learn more](../custom-channel/custom-channel-api-credentials.md) |
 | **CJMRT-081518-403** | The authentication cannot be activated because the associated channel \"{channelId}\" is not in an active state. Activate the channel first and try again. | Activate the custom channel first, then activate the credentials. [Learn more](../custom-channel/get-started-custom-channel.md) |
 | **CJMRT-081705-400** | A custom channel authentication with the name \"{name}\" already exists. Please use a unique name and try again. | Enter a unique name for the credentials. [Learn more](../custom-channel/custom-channel-api-credentials.md) |
