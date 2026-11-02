@@ -178,7 +178,7 @@ The following capabilities and improvements are coming to content management in 
 
 * **Per-member Loyalty challenge completion deadlines** - Loyalty challenges now support per-member completion deadlines: choose "Within a number of days after opt-in" under Completion requirements so each member's deadline is calculated from their own opt-in date rather than a fixed program-wide end date. If both a challenge end date and this opt-in window are set, each member's deadline is whichever comes first. [Learn more](../loyalty-challenges/create-challenges.md#schedule)
 
-  Availability date: Septemebr 30 , 2026
+  Availability date: September 30, 2026
 
 * **Challenges domain in the Content Card personalization editor** - The Content Card personalization editor now supports **Challenges** as a domain, letting you access challenge metadata when authoring content card personalization. This makes it easier to create tailored content for each stage of a challenge — Launch, In progress, and End — without custom code. [Learn more](../content-card/design-content-card.md#personalize-challenge-content)
 
@@ -435,7 +435,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <p>The Email Designer now includes built-in <strong>collaboration tools</strong> for commenting and resolution, so marketing teams can review, discuss, and finalize email content directly within Journey Optimizer instead of sharing drafts over external tools like chat, email threads, or spreadsheets. Invite collaborators and reviewers, add general or component-specific comments, and reply to, resolve, and manage comment threads — all without leaving the Email Designer.</p>
 <p><img src="assets/do-not-localize/email-collaboration-tools.gif"></p>
 <p>For more information, refer to the <a href="../email/email-collaboration.md">detailed documentation</a>.</p>
-<p>Availability date: September 25, 2024.</p>
+<p>Availability date: September 25, 2026.</p>
 </td>
 </tr>
 </tbody>
@@ -453,7 +453,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <p>The Email Designer now includes a built-in <strong>Table component</strong>, allowing you to structure content in rows and columns directly within your email. Drag and drop the component onto your canvas, customize the number of rows and columns, and style each cell independently to create clear, organized layouts without relying on custom HTML.</p>
 <p><img src="assets/do-not-localize/table-component.gif"></p>
 <p>For more information, refer to the <a href="../email/content-components.md#table">detailed documentation</a>.</p>
-<p>Availability date: September 24, 2024.</p>
+<p>Availability date: September 24, 2026.</p>
 </td>
 </tr>
 </tbody>
@@ -472,7 +472,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <p>When enabled, a default dark palette is generated automatically for every variant, and you can further customize it with a different palette or your own custom colors — independently from the light mode design, so changes made in one mode do not affect the other.</p>
 <p><img src="../email/assets/theme-dark-mode-support.gif"></p>
 <p>For more information, refer to the <a href="../email/apply-email-themes.md">detailed documentation</a>.</p>
-<p>Availability date: September 24, 2024.</p>
+<p>Availability date: September 24, 2026.</p>
 </td>
 </tr>
 </tbody>
