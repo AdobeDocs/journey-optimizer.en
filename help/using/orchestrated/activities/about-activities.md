@@ -105,3 +105,5 @@ Available flow control activities are:
 <!--* [Test](test.md): Enable transitions based on specified conditions.-->
 
 * **[!UICONTROL End]**: Marks the end of a branch on the canvas. You can optionally use it to send a signal to another Orchestrated campaign that starts on a signal. [Learn more](../trigger-orchestrated-campaign.md#signal-end)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-about-activities.md}}

@@ -55,3 +55,5 @@ To add or edit a global variable to an Orchestrated campaign, follow these steps
    ![Variables panel to add or edit variables](assets/variables-edit.png){zoomable="yes"}
 
 To learn how to use global variables in rules and **[!UICONTROL Test]** conditions once they are defined, see [Use variables in Orchestrated campaigns](variables-orchestrated-campaigns.md#use).
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-global-variables.md}}

@@ -63,3 +63,4 @@ Orchestrated campaign offers you actionable insights through its robust reportin
 <td><a href="../reports/campaign-global-report-cja-push.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a><a href="../reports/campaign-global-report-cja-push.md"><strong>Push report</strong></a></td><td><a href="../reports/campaign-global-report-cja-direct.md"><img alt="direct mail" src="../channels/assets/do-not-localize/direct-mail.jpg"></a><a href="../reports/campaign-global-report-cja-direct.md"><strong>Direct mail report</strong></a></td>
 </tr></table>
 
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-reporting-campaigns.md}}

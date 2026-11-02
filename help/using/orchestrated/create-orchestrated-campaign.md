@@ -179,3 +179,5 @@ In the following example, the activity is configured so that the Orchestrated ca
 ## Next steps {#next}
 
 Once your campaign settings and schedule are configured, you are ready to start orchestrating the differents tasks it will perform. [Learn how to orchestrate campaign activities](../orchestrated/orchestrate-activities.md)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-create-orchestrated-campaign.md}}

@@ -66,3 +66,5 @@ After a **[!UICONTROL Build audience]** activity selects the target population, 
 ![](../assets/workflow-fork.png)
 
 This pattern is useful for understanding how channel category settings affect delivery behavior, and for sending different message types to the same audience in a single campaign run.
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-fork.md}}

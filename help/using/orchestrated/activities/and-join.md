@@ -64,3 +64,5 @@ Follow these steps to configure the **[!UICONTROL AND-join]** activity:
 This example illustrates two coordinated campaign branches, each featuring an email delivery, one targeting gold members and the other silver. The **[!UICONTROL AND-join]** activates once both incoming transitions are triggered, and the SMS will be sent only after both email deliveries are completed, following a 7-day delay.
 
 ![](../assets/workflow-andjoin-example.png){zoomable="yes"}
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-and-join.md}}

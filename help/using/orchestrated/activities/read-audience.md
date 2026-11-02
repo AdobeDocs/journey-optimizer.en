@@ -101,3 +101,5 @@ Once an audience is created, it is available in read-only and can no longer be e
 In the example below, the **[!UICONTROL Read audience]** activity is used to retrieve a previously created and saved audience of profiles who subscribed to the newsletter. The audience is then enriched with the **Loyalty membership** attribute to enable targeting of users who are registered members of the loyalty program.
 
 ![](../assets/read-audience-5.png)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-read-audience.md}}
