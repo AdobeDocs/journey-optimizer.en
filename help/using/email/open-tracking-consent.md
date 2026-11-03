@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Honor email open tracking consent
-description: Learn how to apply recipient-level email open tracking preferences in Journey Optimizer by populating consent data in Experience Platform and enabling the Honour open tracking consent option.
+description: Learn how to apply recipient-level email open tracking preferences in Journey Optimizer by populating consent data in Experience Platform and enabling the Honor open tracking consent option.
 feature: Email, Privacy, Consent Management
 topic: Administration
 role: Admin
@@ -15,7 +15,7 @@ keywords: open tracking, consent, email, pixel, privacy, channel configuration, 
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to stop open tracking for individual recipients who opted out, while keeping it active for everyone else. You record the preference on the customer profile, then turn on **[!UICONTROL Honour open tracking consent]** in your email channel configurations.
+**On this page:** Learn how to stop open tracking for individual recipients who opted out, while keeping it active for everyone else. You record the preference on the customer profile, then turn on **[!UICONTROL Honor open tracking consent]** in your email channel configurations.
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ Previously, email open tracking could only be enabled or disabled for an entire 
 To configure email open tracking consent, complete the following steps:
 
 1. [Populate and maintain tracking preferences](#populate-preferences) on customer profiles in [!DNL Adobe Experience Platform] through your existing consent data ingestion process.
-1. [Enable **Honour open tracking consent**](#enable-option) in the email channel configurations that must apply those preferences.
+1. [Enable **Honor open tracking consent**](#enable-option) in the email channel configurations that must apply those preferences.
 
 To learn more about CNIL expectations for tracking pixels, see [CNIL guidance on email tracking pixels](../privacy/cnil-pixel-tracking.md).
 
@@ -62,7 +62,7 @@ Each `open` object contains the following properties:
 
 ### How preferences are applied {#how-applied}
 
-For a supported delivery with the [**[!UICONTROL Honour open tracking consent]** option enabled](#enable-option), [!DNL Journey Optimizer] checks the channel-level preference and the preference of the identity selected for delivery. An explicit lowercase `"n"` at either level prevents open tracking.
+For a supported delivery with the [**[!UICONTROL Honor open tracking consent]** option enabled](#enable-option), [!DNL Journey Optimizer] checks the channel-level preference and the preference of the identity selected for delivery. An explicit lowercase `"n"` at either level prevents open tracking.
 
 | Channel-level value | Selected identity value | Open tracking |
 |---|---|---|
@@ -95,7 +95,7 @@ For data model definitions, see [Consents and Preferences](https://experiencelea
 | Adobe provides | Your organization configures and maintains |
 |---|---|
 | Standard email open tracking field definitions in the XDM consent model | Source-to-XDM mappings and profile values for the tracking preferences |
-| The **[!UICONTROL Honour open tracking consent]** option in email channel configurations | Enablement on the configurations used by your journeys and campaigns |
+| The **[!UICONTROL Honor open tracking consent]** option in email channel configurations | Enablement on the configurations used by your journeys and campaigns |
 | Open tracking enforcement for supported, enabled delivery types | Accurate channel-level or identity-level preferences, including existing opt-outs and later changes |
 | Guidance on scope, and help validating behavior | Profile identities, ingestion, merge policy configuration, and end-to-end testing |
 
@@ -201,14 +201,14 @@ Learn more in the [Profile UI guide](https://experienceleague.adobe.com/en/docs/
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_open_tracking_consent"
->title="Honour open tracking consent"
+>title="Honor open tracking consent"
 >abstract="When enabled, open tracking is turned off for recipients who recorded an explicit opt-out at the channel level or for the email address selected for delivery. Delivery of the email is not affected."
 
 Once the profile data is validated, turn on the option in each email channel configuration that should apply it.
 
 Before enabling the option, note that:
 
-* **[!UICONTROL Honour open tracking consent]** option is off by default.
+* **[!UICONTROL Honor open tracking consent]** option is off by default.
 * It is not available for high-throughput transactional email configurations.
 * While the option is off, the tracking preferences have no effect on existing open tracking behavior.
 * Turning the option on never enables open tracking for a message that already has it disabled.
@@ -219,7 +219,7 @@ Before enabling the option, note that:
 
 1. Open the email channel configuration to update or create a new one if needed.
 
-1. From the **[!UICONTROL Open tracking]** section, enable **[!UICONTROL Honour open tracking consent]**.
+1. From the **[!UICONTROL Open tracking]** section, enable **[!UICONTROL Honor open tracking consent]**.
 
     ![](assets/email_tracking_2.png){zoomable="yes"}
 
@@ -247,5 +247,5 @@ Before enabling production configurations, make sure that:
 * existing opt-outs have been imported,
 * ongoing updates work,
 * merged profiles contain the expected values, and
-* the channel configuration has **[!UICONTROL Honour open tracking consent]** turned on, with a newly created campaign used for the first test.
+* the channel configuration has **[!UICONTROL Honor open tracking consent]** turned on, with a newly created campaign used for the first test.
 
