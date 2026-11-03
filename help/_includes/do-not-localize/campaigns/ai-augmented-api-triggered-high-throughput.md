@@ -33,7 +33,7 @@ For complete understanding, this information should be combined with the documen
 * Throughput: High throughput campaigns support up to 5000 transactions per second; standard API triggered campaigns support up to 500 transactions per second.
 * Channels: Email and push notifications for High throughput campaigns.
 * Personalization: all personalization must be included in the API payload as contextual data. Profile-based personalization is not supported, and validation errors occur if profile variables are used.
-* Channel configurations that use profile-based personalization cannot be used with High throughput campaigns. Only surfaces without profile personalization can be used.
+* Channel configurations that use profile-based personalization cannot be used with High throughput campaigns. Only channel configurations without profile personalization can be used.
 * High throughput campaigns use a different API endpoint than standard API triggered campaigns.
 * High throughput campaigns do not use Adobe Profiles. Messages are delivered whether or not a profile exists.
 * A campaign cannot be used for both profile-enabled and non-profile use cases. If you need both, create two separate campaigns, and make the calling system decide which one to trigger based on the context.
@@ -50,7 +50,7 @@ For complete understanding, this information should be combined with the documen
 * The organization must be licensed with the High Throughput transactional messaging add-on.
 * A new IP pool.
 * A new channel configuration.
-* A request to Adobe Customer Care to map the activated surface to the High throughput capability, with the channel configuration and IP Pool details and your organization ID.
+* A request to Adobe Customer Care to map the activated channel configuration to the High throughput capability, with the channel configuration and IP Pool details and your organization ID.
 
 **Applicability:**
 
@@ -70,7 +70,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can a High throughput campaign use profile attributes for personalization?** — No. Profile-based personalization is not supported, and validation errors occur if profile variables are used. Pass all personalization as contextual data in the API payload.
 * **Q: Can one campaign serve both profile-enabled and non-profile use cases?** — No. Create two separate campaigns, and make the calling system decide which one to trigger.
 * **Q: Is throughput shared between standard and High throughput campaigns?** — No. The throughput provisioned under the High Throughput add-on is exclusively reserved for High throughput campaigns.
-* **Q: How do I set up High throughput campaigns?** — Create a new IP pool, create a new channel configuration, then contact Adobe Customer Care to request that the activated surface be mapped to the High throughput capability.
+* **Q: How do I set up High throughput campaigns?** — Create a new IP pool, create a new channel configuration, then contact Adobe Customer Care to request that the activated channel configuration be mapped to the High throughput capability.
 
 **Related pages:**
 

@@ -179,7 +179,7 @@ The dedicated IP pool is now ready for use with High throughput channel configur
 
 1. In the **[!UICONTROL IP pool details]** section, select the High throughput IP pool you created. Only High throughput IP pools are listed.
 
-1. Sumbmit the channel configuration.
+1. Submit the channel configuration.
 
 Your High throughput email channel configuration is now ready for use in a High throughput API-triggered campaign.
 
