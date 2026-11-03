@@ -42,7 +42,7 @@ level_v2:
 
 >[!NOTE]
 >
->Allowed IPs cannot be managed for [anonymous landing pages](../landing-pages/lp-anonymous.md). This feature is currently not supported for these pages.
+>Allowed IPs cannot be managed for subdomains used for [anonymous landing pages](../landing-pages/lp-anonymous.md). This feature is currently not supported for these subdomains.
 
 Organizations with strict network security requirements — such as those in the financial sector — can mandate that all requests to links hosted by [!DNL Adobe Journey Optimizer] must flow through a customer-managed **Web Application Firewall** (WAF) before reaching the Adobe network. Any request that bypasses the firewall must be rejected.
 

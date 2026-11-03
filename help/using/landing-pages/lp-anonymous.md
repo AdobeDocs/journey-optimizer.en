@@ -22,7 +22,7 @@ keywords: landing, landing page, anonymous, public, form, data capture, cloudfla
 >
 >Anonymous landing pages are available in Limited Availability. Contact your Adobe representative to request access.
 
-Landing pages are usually displayed to a visitor who clicks a **personalized link**, for example from an email, so that the visitor's profile can be identified when the page loads. With anonymous landing pages, you can also publish a landing page on a **public URL** that anyone can open, without being identified. Visitors can then fill in a form on the page and submit data.
+Landing pages are usually displayed to a visitor who clicks a personalized link, for example from an email, so that the visitor's profile can be identified when the page loads. With anonymous landing pages, you can also publish a landing page on a **public URL** that anyone can open, without being identified. Visitors can then fill in a form on the page and submit data.
 
 You can share the public URL anywhere, such as in emails, SMS messages, or on your website, and use it for external marketing campaigns.
 
@@ -103,7 +103,7 @@ When visitors submit the form, the data is sent to the dataset defined in the fo
 
 * Form data can only be stored in **non-profile enabled** datasets. Anonymous landing pages cannot create or enrich profiles.
 * Reporting is not supported for anonymous landing pages.
-* [Managing allowed IPs](../configuration/waf-ip-allowlist.md) is not supported for anonymous landing pages.
+* [Managing allowed IPs](../configuration/waf-ip-allowlist.md) is not supported for subdomains used for anonymous landing pages.
 * As for other landing pages, anonymous landing pages cannot be [copied to another sandbox](../configuration/copy-objects-to-sandbox.md) using Sandbox tooling.
 * Because anonymous visitors are not identified, do not use personalization based on profile data in the content of an anonymous landing page.
 
