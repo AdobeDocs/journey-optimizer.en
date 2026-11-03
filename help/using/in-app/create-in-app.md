@@ -67,7 +67,7 @@ Note that In-app messages are not impacted by the user's choice to opt-in or opt
 
 To add an In-app message in a journey, follow these steps:
 
-1. Open your [journey](../building-journeys/journey-gs.md), then drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
+1. Open your journey then add an **[!UICONTROL Action]** activity. Learn more about the [Action activity](../building-journeys/journey-action.md).
 
     >[!IMPORTANT]
     >
@@ -260,7 +260,11 @@ To add an In-app message in a campaign, follow these steps:
 
     1. Click **[!UICONTROL Make group]** to group triggers together.
 
-1. Choose the frequency of your trigger when your In-app message is active. The following options are available:
+1. From the **[!UICONTROL Audience]** tab, click the **[!UICONTROL Select audience]** button to define the audience to target from the list of available Adobe Experience Platform audiences. [Learn more](../audience/about-audiences.md).
+
+    ![](assets/in_app_journey_2.png)
+
+1. From the **[!UICONTROL Schedule]** tab, choose the frequency of your trigger when your In-app message is active. The following options are available:
 
     * **[!UICONTROL Everytime]**: Always show the message when the events selected in the **[!UICONTROL Show message if]** section occur.
     * **[!UICONTROL Once]**: Only show this message the first time the events selected in the **[!UICONTROL Show message if]** section occur.
@@ -269,11 +273,7 @@ To add an In-app message in a campaign, follow these steps:
 
 1. If needed, choose which **[!UICONTROL Day of the week]** or **[!UICONTROL Time of day]** the In-app message will be displayed.
 
-1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
-
-    ![](assets/in-app-schedule.png)
-
-1. You can now start designing your content with the **[!UICONTROL Edit content]** button. [Learn more](design-in-app.md)
+1. Access the **[!UICONTROL Content]** tab to start designing your In-app message. [Learn more](design-in-app.md)
 
     ![](assets/in_app_create_4.png)
 
