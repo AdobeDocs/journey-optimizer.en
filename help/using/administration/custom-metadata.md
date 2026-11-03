@@ -20,7 +20,7 @@ keywords: custom metadata, journey, campaign, orchestrated campaign, schema, rep
 
 >[!AVAILABILITY]
 >
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+>This capability is available in Limited Availability. Submit this [request form](https://forms.cloud.microsoft/r/WWZGnxTaCV) or contact your Adobe representative to gain access.
 
 Custom metadata lets you create your own business fields and display them in the properties of your journeys, Action campaigns and Orchestrated campaigns. Use them to track information that goes beyond what [tags](../start/search-filter-categorize.md#tags) and descriptions can capture, such as line of business, promotional region, product line, cost center, or project ID.
 
