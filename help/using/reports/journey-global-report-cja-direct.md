@@ -8,15 +8,17 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6fae8beb-ca40-40a1-8939-c309fbf46c4f
-TQID: https://experienceleague.adobe.com/PJzFoRuT00YI5StKCspzxvklhZKh-53PLDvJjTRuGk4
+TQID: 'https://experienceleague.adobe.com/PJzFoRuT00YI5StKCspzxvklhZKh-53PLDvJjTRuGk4'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a9f73820-6899-47c2-a597-3fec28ab756a
-    internal-label: Reporting
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 subfeature_v2:
   - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
     internal-label: Performance monitoring
@@ -51,6 +53,10 @@ You can access your Direct mail journey report by clicking the **[!UICONTROL Vie
 ![](assets/report-access-jo.png)
 
 >[!ENDSHADEBOX]
+
+>[!NOTE]
+>
+>Direct mail channel-level metrics appear only after the scheduled file export, not immediately when profiles enter or exit the Direct mail action. Feedback events are generated after export, so the reporting delay depends on the [export frequency configured for journeys](../direct-mail/direct-mail-configuration.md#file-routing-configuration).
 
 ## Sending Statistics {#sending-statistics-directmail}
 

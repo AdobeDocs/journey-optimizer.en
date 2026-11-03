@@ -9,7 +9,7 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: data, source, configuration, field
 exl-id: 9b0dcffb-f543-4066-850c-67ec33f74a31
-TQID: https://experienceleague.adobe.com/08xTqpZZAtzgbnCOlRs-o6txtyn4c5gfs08fsojI-yM
+TQID: 'https://experienceleague.adobe.com/08xTqpZZAtzgbnCOlRs-o6txtyn4c5gfs08fsojI-yM'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,11 +20,15 @@ feature_v2:
     internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
 subfeature_v2:
   - id: dd51b532-b93f-4bcf-8dbf-0d007f593aca
     internal-label: Data source configuration
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: f43195fa-e773-486f-8a0f-4693554689fd
+    internal-label: Data sources
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -33,6 +37,8 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
@@ -98,3 +104,5 @@ To delete a field from a field group used in one or more journeys, follow these 
 1. Create new versions of each of these journeys. Edit all activities using "Field Group A" and select "Field Group B".
 1. Stop old versions of journeys that use "Field Group A". You should then have no journey using "Field Group A".
 1. Remove "Field Group A" as is it not used anymore.
+
+{{$include /help/_includes/do-not-localize/datasource/ai-augmented-configure-data-sources.md}}

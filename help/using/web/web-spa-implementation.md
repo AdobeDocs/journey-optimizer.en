@@ -5,6 +5,25 @@ feature: Web Channel
 topic: Content Management
 role: Developer
 level: Intermediate
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: d056adbe-402d-4f42-9746-f3d424e598b1
+    internal-label: Web SDK
+  - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
+    internal-label: Web channel
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Implement single-page applications (SPAs) {#web-spa-implementation}
 
@@ -175,3 +194,5 @@ class Products extends Component {
     }
 }
 ```
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-web-spa-implementation.md}}

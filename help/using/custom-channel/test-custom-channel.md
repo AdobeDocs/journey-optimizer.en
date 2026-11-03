@@ -5,6 +5,25 @@ feature: Channel Configuration
 topic: Content Management
 role: User
 level: Beginner
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
+  - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
+    internal-label: Custom Channels
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 
 # Test your custom channel {#test-custom-channel}
@@ -98,7 +117,7 @@ Learn more on testing journeys in test mode in [this section](../building-journe
 
 ### Simulate a journey {#simulate-journey}
 
-[!DNL Journey Optimizer]'s **Simulation** mode lets you validate your journey end-to-end using simulated users—temporary profile-like entities that do not persist in Adobe Experience Platform—without requiring pre-created test profiles.
+[!DNL Journey Optimizer]'s **Simulation** mode lets you validate your journey end-to-end using simulated users—temporary profile-like entities without requiring pre-created test profiles.
 
 For custom channels, simulation resolves personalization expressions and renders the payload preview for each simulated user, so you can verify that the correct content would be delivered before going live.
 
@@ -111,10 +130,6 @@ To simulate a journey using a custom channel:
 1. Configure any required entry events, then trigger the simulated users through the journey.
 
 1. When a simulated user reaches the custom channel action node, inspect the resolved payload in the preview panel to confirm that personalization tokens and payload structure are correct.
-
->[!NOTE]
->
->Simulation is available for both draft and live journeys, and uses temporary simulated users that do not count toward profile quotas or real endpoint calls.
 
 Learn more about journey simulation in [this section](../building-journeys/simulate-journey-gs.md).
 
@@ -130,3 +145,5 @@ Before activating your journey or campaign, confirm the following:
 * Error paths on the journey action activity (if configured) handle failure scenarios as expected.
 
 Once testing is complete, proceed to activate. [Learn how](create-custom-experience.md#activate)
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-test-custom-channel.md}}

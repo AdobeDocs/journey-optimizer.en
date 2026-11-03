@@ -9,7 +9,7 @@ role: User, Developer
 level: Experienced
 keywords: sandbox, journey, copy, environment
 exl-id: 356d56a5-9a90-4eba-9875-c7ba96967da9
-TQID: https://experienceleague.adobe.com/FfasSBtxSzc20knTVljqAJi4MVyoK9-RApQcTfDAa3Q
+TQID: 'https://experienceleague.adobe.com/FfasSBtxSzc20knTVljqAJi4MVyoK9-RApQcTfDAa3Q'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,26 +20,23 @@ feature_v2:
     internal-label: Configuration
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
-  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
-    internal-label: Fragments
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
   - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
     internal-label: Sandboxes
-  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
-    internal-label: Templates
-  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
-    internal-label: Business rules
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
@@ -89,6 +86,8 @@ Journey Optimizer allows the export of journeys, campaigns (Action, API-triggere
 * If an exported object contains profile personalization, make sure that the appropriate schema exists in the target sandbox to avoid any personalization issue.
 
 * Landing pages are not currently supported for migration between sandboxes. When you copy a journey to another sandbox, any references to landing pages in your journey or email content will still point to the original (source) sandbox landing page IDs. After the migration, you must manually update all landing page references in your journey and email content to use the correct landing page IDs from the target (destination) sandbox. See [Create and publish landing pages](../landing-pages/create-lp.md).
+
+* [Custom channels](../custom-channel/get-started-custom-channel.md) are not supported when copying objects between sandboxes. Custom channel configurations and the messages that use them cannot be added to a package or copied to another sandbox. You must recreate them manually in the target sandbox.
 
 +++ Journeys
 

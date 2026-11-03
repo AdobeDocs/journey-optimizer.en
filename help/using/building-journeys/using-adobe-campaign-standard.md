@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
     internal-label: Action configuration
@@ -44,22 +46,22 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use the built-in Adobe Campaign Standard email, push, and SMS action activities in your journeys by relying on Campaign Standard Transactional Messaging templates.
+**On this page:** Learn how to use the built-in Adobe Campaign Standard email, push, and mobile message action activities in your journeys by relying on Campaign Standard Transactional Messaging templates.
 
 >[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom_acs"
 >title="Custom actions"
->abstract="An integration is available if you have [!DNL Adobe Campaign] Standard. It allows you to send emails, push notifications and SMS using [!DNL Adobe Campaign] Transactional Messaging capabilities."
+>abstract="An integration is available if you have [!DNL Adobe Campaign] Standard. It allows you to send emails, push notifications and mobile messages using [!DNL Adobe Campaign] Transactional Messaging capabilities."
 
-If you have [!DNL Adobe Campaign] Standard, the following built-in action activities are available: **[!UICONTROL Email]**, **[!UICONTROL Push]** and **[!UICONTROL SMS]**. 
+If you have [!DNL Adobe Campaign] Standard, the following built-in action activities are available: **[!UICONTROL Email]**, **[!UICONTROL Push]** and **[!UICONTROL Mobile message]**. 
 
 >[!NOTE]
 >
 >For this, you need to configure the built-in action. Refer to [this page](../action/acs-action.md).
 
-For each of these channels, you select an [!DNL Adobe Campaign] Standard Transactional Messaging **template**. For the built-in email, SMS and push channels, we rely on Transactional Messaging to execute message sending. It means that if you want to use a certain message template in your journeys, you must publish it in [!DNL Adobe Campaign] Standard. Refer to [this page](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html) to learn how to use this feature.
+For each of these channels, you select an [!DNL Adobe Campaign] Standard Transactional Messaging **template**. For the built-in email, mobile messages and push channels, we rely on Transactional Messaging to execute message sending. It means that if you want to use a certain message template in your journeys, you must publish it in [!DNL Adobe Campaign] Standard. Refer to [this page](https://experienceleague.adobe.com/docs/campaign-standard/using/communication-channels/transactional-messaging/getting-started-with-transactional-msg.html) to learn how to use this feature.
 
 >[!NOTE]
 >
@@ -77,9 +79,9 @@ When you select a template, all the fields expected in the message payload are d
 
 ![Campaign Standard message template selection interface](assets/journey60.png)
 
-## Email and SMS {#section_asc_51g_nhb}
+## Email and Mobile message {#section_asc_51g_nhb}
 
-For **[!UICONTROL Email]** and **[!UICONTROL SMS]**, the parameters are identical.
+For **[!UICONTROL Email]** and **[!UICONTROL Mobile message]**, the parameters are identical.
 
 >[!NOTE]
 >
@@ -100,7 +102,7 @@ You can easily define where to retrieve the **[!UICONTROL Address]** or the **[!
 >
 >This category is only visible if you select an "event" transactional message. For "profile" messages, the **[!UICONTROL Address]** field is automatically retrieved from [!DNL Adobe Campaign] Standard by the system.
 
-These are the fields the system requires to know where to send the message. For an email template, it's the email address. For an SMS, it's the mobile phone number.
+These are the fields the system requires to know where to send the message. For an email template, it's the email address. For a mobile message, it is the mobile phone number.
 
 ![Message parameter configuration for Campaign Standard integration](assets/journey61.png)
 
@@ -108,7 +110,7 @@ These are the fields the system requires to know where to send the message. For 
 
 >[!NOTE]
 >
->You cannot pass a collection in personalization data. If the transactional email or SMS expects collections, it will not work. Also note that the personalization data has an expected format (example: string, decimal, etc.). You must be careful to respect these expected formats. 
+>You cannot pass a collection in personalization data. If the transactional email or mobile message expects collections, it will not work. Also note that the personalization data has an expected format (example: string, decimal, etc.). You must be careful to respect these expected formats. 
 
 These are the fields expected by the [!DNL Adobe Campaign] Standard message. These fields can be used to personalize the message, apply conditional formatting, or pick a specific message variant. 
 
@@ -146,50 +148,4 @@ You also need to define the **[!UICONTROL Registration Token]**. The expression 
 
 These are the fields expected by the transactional template used in your [!DNL Adobe Campaign] Standard message. These fields can be used to personalize your message, apply conditional formatting, or pick a specific message variant.
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page explains how to use the built-in Adobe Campaign Standard Email, SMS, and Push action activities in Journey Optimizer journeys via Campaign Transactional Messaging templates.
-
-**Intents:**
-
-* Configure Email, SMS, or Push action activities in a journey using Adobe Campaign Standard integration
-* Select and map a Campaign Standard transactional messaging template to journey fields
-* Map Address and Personalization Data fields from journey events or datasources to the message payload
-* Handle unsubscription for event-based and profile-based transactional email templates
-* Configure push notification target platform and registration token for Campaign Standard push actions
-
-**Glossary:**
-
-* **Transactional Messaging**: Adobe Campaign Standard capability for sending triggered, real-time messages (email, SMS, push) based on events *(product-specific)*
-* **rtEvent**: Real-time event transactional message template in Adobe Campaign Standard, used for event-based messaging *(product-specific)*
-* **Profile transactional template**: A Campaign Standard transactional message template that uses profile data for recipient resolution and unsubscription handling *(product-specific)*
-* **Registration Token**: Device-level identifier required to target a push notification to a specific mobile app installation *(product-specific)*
-
-**Guardrails:**
-
-* The built-in action must be configured before use; refer to the action configuration page.
-* Both the Campaign Standard transactional message and its associated event must be published for the template to be usable in Journey Optimizer.
-* Collections cannot be passed in Personalization Data fields.
-* For event-based (rtEvent) templates, unsubscription management must be handled manually with a condition before sending.
-* For profile-based push messages, the Target fields are retrieved automatically; the Target category is only visible for event messages.
-* Mobile app must be configured with Campaign Standard before the push activity can be used.
-
-**Terminology:**
-
-* Canonical name: Adobe Campaign Standard — Acronym: ACS — variants: Campaign Standard
-* Synonyms: "event transactional message" = "rtEvent"; "real-time transactional message" = "rtEvent"
-* Do not confuse: "profile transactional template" (unsubscription handled automatically) ≠ "event transactional template" (unsubscription must be handled manually)
-
-**FAQ:**
-
-* **Q: What channels are available through the Adobe Campaign Standard integration?** — Email, SMS, and Push notification channels are available as built-in action activities.
-* **Q: Does the transactional message need to be published in Campaign Standard before using it in Journey Optimizer?** — Yes, both the transactional message and its associated event must be published; an unpublished message will not be usable even if visible in the interface.
-* **Q: How is unsubscription handled for profile-based email templates?** — Unsubscription is automatically handled by Adobe Campaign Standard when using a profile transactional template; include an Unsubscription link content block in the template.
-* **Q: Can I pass a collection as personalization data?** — No, collections cannot be passed in Personalization Data; the transactional message must not expect collections.
-* **Q: Where do I map the recipient address for an event-based email?** — The Address category in the activity configuration pane is only visible for event transactional messages; for profile messages the address is retrieved automatically.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-using-adobe-campaign-standard.md}}

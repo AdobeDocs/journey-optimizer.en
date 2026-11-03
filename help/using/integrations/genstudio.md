@@ -9,14 +9,18 @@ badge: label="Limited availability" type="Informative"
 role: User
 level: Beginner, Intermediate
 exl-id: c22a44a8-e4e2-453a-9ca2-b80f7c0edc19
-TQID: https://experienceleague.adobe.com/yMcftppDHaPWoP51PuYrV9OrzZxyrUcRwgoOvnlcbho
+TQID: 'https://experienceleague.adobe.com/yMcftppDHaPWoP51PuYrV9OrzZxyrUcRwgoOvnlcbho'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
-subfeature_v2: []
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2:
+  - id: f659587f-8bf8-5d99-be43-652c46ebaa44
+    internal-label: Content Assistant
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -250,3 +254,5 @@ Yes, GenStudio is designed for collaboration. Multiple team members with appropr
 Discover the process of exporting an email template from Journey Optimizer to GenStudio for Performance Marketing, crafting brand-compliant emails using the template in GenStudio, and importing them seamlessly back into Journey Optimizer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3456038/?quality=12)
+
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-genstudio.md}}

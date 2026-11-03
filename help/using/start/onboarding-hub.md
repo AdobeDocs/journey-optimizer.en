@@ -9,6 +9,23 @@ role: User
 level: Beginner
 hide: true
 keywords: journey optimizer, onboarding, onboarding hub, use cases, videos, tutorials, get started, ramp up, first journey
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Journey Optimizer onboarding hub {#onboarding-hub}
 
@@ -30,6 +47,8 @@ New to [!DNL Adobe Journey Optimizer]? This hub gathers the resources that help 
 >Not sure which capability fits your goal? Start with the goal-first [Find the right Journey Optimizer capability for your goal](ajo-use-case-guide.md) guide, then come back here for step-by-step instructions.
 
 ## Start here: watch & learn {#start-here}
+
+Before you build anything, read [Five concepts to know before you build](understanding-ajo.md#five-concepts) (about five minutes). It covers profiles, audiences, campaigns versus journeys, channel configurations, and sandboxes.
 
 If you have ten minutes, begin with this orientation video. It walks through the interface and highlights the key capabilities by role.
 
@@ -154,5 +173,5 @@ For a full overview of how these roles work together, see [Roles and responsibil
 * [Find the right Journey Optimizer capability for your goal](ajo-use-case-guide.md) — Goal-first decision guide to every capability.
 * [Journey use cases library](../building-journeys/jo-use-cases.md) — Practical examples and implementation patterns.
 * [Key terminology](terminology.md) — Clarify the concepts behind each capability.
-* [AI & intelligent features](ai-features.md) — Explore AI Assistant, send-time optimization, and content generation.
+* [Work with AI](ai-features.md) — Explore AI Assistant, send-time optimization, and content generation.
 * [Get started with data management](../data/gs-data.md) — How data is ingested, unified, and activated.

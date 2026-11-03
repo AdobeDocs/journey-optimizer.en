@@ -8,22 +8,24 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e91face-c8f4-4e70-9123-9e36bae7e67e
-TQID: https://experienceleague.adobe.com/KrsJKfvAPAE5yW2Lgrc-MrMUtoxi336rsmQIglfs7Mc
+TQID: 'https://experienceleague.adobe.com/KrsJKfvAPAE5yW2Lgrc-MrMUtoxi336rsmQIglfs7Mc'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: d2971708-e780-44bb-9e2a-72f139796afd
+    internal-label: Customer
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
     internal-label: Overview
-  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
-    internal-label: Audience Qualification events
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences
-  - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
-    internal-label: Audience guardrails
+  - id: ef9a83ca-eefa-47cf-aa34-f1a34715583a
+    internal-label: Profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -129,3 +131,5 @@ Learn more in the Adobe Experience Platform documentation:
 * [Exploring the license usage dashboard](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html#exploring-the-license-usage-dashboard){target="_blank"}
 * [Available metrics](https://experienceleague.adobe.com/docs/experience-platform/dashboards/guides/license-usage.html#available-metrics){target="_blank"}
 * [Pseudonymous Profile data expiration](https://experienceleague.adobe.com/docs/experience-platform/profile/pseudonymous-profiles.html){target="_blank"}
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-license-usage.md}}

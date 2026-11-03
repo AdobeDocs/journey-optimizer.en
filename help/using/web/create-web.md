@@ -13,15 +13,17 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
-  - id: f29a52db-c90c-4345-902e-b586d1406d8d
-    internal-label: Content experiment
-  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
-    internal-label: Preview
   - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
     internal-label: Web channel
   - id: d056adbe-402d-4f42-9746-f3d424e598b1
     internal-label: Web SDK
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -84,9 +86,9 @@ To add a **Web** activity to a journey, follow these steps:
 
 1. Drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
 
-    >[!IMPORTANT]
+    >[!IMPORTANT] 
     >
-    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
+    >Legacy native channel activities (Email, Push, Mobile messages, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
 1. Select **[!UICONTROL Web]** as the action type.
 
@@ -125,6 +127,10 @@ To start building your web experience through a campaign, follow the steps below
     * **API-triggered - Marketing/Transactional**: execute the campaign using an API call. API-triggered campaigns are aimed at sending either marketing, or transactional messages, i.e. messages sent out following an action performed by an individual: password reset, cart purchase etc. [Learn how to trigger a campaign using APIs](../campaigns/api-triggered-campaigns.md)
 
 1. Complete the steps to create a web campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule).
+
+    >[!CAUTION]
+    >
+    >Custom upload (CSV) audiences are not supported for web experiences. [Learn more](../audience/target-audiences.md#guardrails)
 
 1. Select the **[!UICONTROL Web]** action.
 
@@ -313,3 +319,5 @@ When a web journey or campaign is live, you can stop it to prevent your audience
 The video below shows how to create a web campaign, configure its properties, review, and publish it.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418800/?quality=12&learn=on)
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-create-web.md}}

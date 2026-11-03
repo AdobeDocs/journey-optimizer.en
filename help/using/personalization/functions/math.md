@@ -6,10 +6,20 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: b9149ad6-2be7-4bdf-82eb-7ab52780cb4e
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
     internal-label: Build expressions
-subfeature_v2: []
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Math Functions {#math}
 

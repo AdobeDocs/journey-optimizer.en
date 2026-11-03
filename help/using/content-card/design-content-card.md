@@ -6,14 +6,29 @@ feature: Content Cards
 role: User
 level: Beginner
 exl-id: b83bdade-7275-4eef-9c49-fc1d157cee0d
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
     internal-label: In App channel
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
+  - id: bc543dba-f0db-4234-b5da-877a5c1664e2
+    internal-label: Content cards
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Design content cards content {#design-content-card}
 
@@ -56,6 +71,19 @@ From the **[!UICONTROL Content]** tab, you can customize your content cards by d
 To compose your message, enter your text in the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields.
 
 If you want to tailor your message further, use the **[!UICONTROL Personalization]** icon to add personalized elements. For detailed instructions on how to use the personalization features, refer to [this section](../personalization/personalize.md).
+
+### Personalize loyalty challenge content {#personalize-challenge-content}
+
+When designing a content card for a [loyalty challenge](../loyalty-challenges/create-challenges.md#configure-content-cards), you can use challenge metadata to personalize the card content.
+
+1. Open the personalization editor using the **[!UICONTROL Personalization]** icon.
+1. Select **[!UICONTROL Challenge Data]**, then click **[!UICONTROL Add loyalty challenge data]** to make the challenge fields available.
+
+   ![](assets/loyalty-personalization.png)
+
+1. Add the desired challenge fields to personalize your content.
+
+    ![](assets/loyalty-fields.png)
 
 ### Media {#add-media}
 
@@ -139,3 +167,5 @@ In the **[!UICONTROL Target URL]** field, enter the web URL or deep link that wi
 ![](assets/content-card-design-6.png)
 
 In the **[!UICONTROL Custom data]** section, click **[!UICONTROL Add Key/Value pair]** to include custom variables in the payload. These key/value pairs allow you to pass additional data, depending on your specific configuration. This allows you to add personalized or dynamic content, tracking information, or any other data relevant to your setup.
+
+{{$include /help/_includes/do-not-localize/content-card/ai-augmented-design-content-card.md}}

@@ -5,6 +5,9 @@ title: Implement an IP warmup plan
 description: Implement an IP warmup plan
 redpen-status: CREATED_||_2025-08-11_21-08-31
 exl-id: 6f34e9c9-05ae-4a9c-b099-9a7ddf68a412
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Implement an IP warmup plan{#section-overview}
 

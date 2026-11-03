@@ -6,13 +6,15 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 00d2fc73-3ac8-421c-982a-0f3ec7e3dacd
-TQID: https://experienceleague.adobe.com/AVN9LN-KzTpcMx-dexxN7i1i2nB4496dzSZ473a3NJE
+TQID: 'https://experienceleague.adobe.com/AVN9LN-KzTpcMx-dexxN7i1i2nB4496dzSZ473a3NJE'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
     internal-label: Web channel
@@ -21,6 +23,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
@@ -93,3 +98,5 @@ To author your web experiences with the non-visual editor, follow the steps belo
     ![](assets/web-campaign-modifications.png)
 
     You can also switch to the web designer if desired. All your modifications will be preserved.
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-web-non-visual-editor.md}}

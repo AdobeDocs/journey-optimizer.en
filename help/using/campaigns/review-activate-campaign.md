@@ -69,6 +69,10 @@ Once your Action campaign has been configured, you need to review its parameter 
 
 1. Once a campaign has been activated, you can check at any time its information by opening it. The summary allows you to get statistics about number of targeted profiles and delivered and failed actions.
 
-    You can also get additional statistics in dedicated reports by clicking the **[!UICONTROL Reports]** button. [Learn more](../reports/campaign-global-report-cja.md)
+    You can also get additional statistics in dedicated reports by clicking the **[!UICONTROL View report]** button. [Learn more](../reports/campaign-global-report-cja.md)
 
     ![](assets/create-campaign-summary.png)
+
+If activating or publishing a campaign returns an error code, see [Campaign errors](campaign-errors.md) and [Content authoring errors](../content-management/content-authoring-errors.md).
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-review-activate-campaign.md}}

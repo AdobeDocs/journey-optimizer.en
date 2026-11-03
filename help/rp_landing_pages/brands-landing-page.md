@@ -5,6 +5,9 @@ title: Brands
 description: Learn to create, manage, and personalize brand guidelines in Journey Optimizer to ensure consistent, on-brand content across all your campaigns.
 redpen-status: CREATED_||_2025-08-12_00-41-41
 exl-id: f1e3cb9d-83a8-48af-9121-4ebc56dce251
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Brands{#section-overview}
 

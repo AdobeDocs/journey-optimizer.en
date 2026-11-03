@@ -9,7 +9,7 @@ level: Intermediate
 keywords: publish, journey, live, validity, check
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/gIj6jGScvIDgAJxb3B4wiuqP6BKZS0tvCeqC6wRo5IQ
+TQID: 'https://experienceleague.adobe.com/gIj6jGScvIDgAJxb3B4wiuqP6BKZS0tvCeqC6wRo5IQ'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,10 +18,12 @@ feature_v2:
     internal-label: Guardrails and limitations
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: d2971708-e780-44bb-9e2a-72f139796afd
+    internal-label: Customer
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 subfeature_v2:
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences
@@ -120,7 +122,7 @@ When a journey is paused, profile management and activity execution depends on t
 | [Optimize](optimize.md)  | Same behavior as in a live journey |
 | [Content Decision](content-decision.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Channel Action](journey-action.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
-| [Custom Action](../action/action.md)   | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
+| [Custom Action](../action/action.md)   | Profiles are parked or discarded based on what the user has chosen when the journey has been paused. Requests already dispatched for execution are not cancelled. [Learn more](#journey-pause-guardrails) |
 | [Update Profile](update-profiles.md) & [Jump](jump.md) | Profiles are parked or discarded based on what the user has chosen when the journey has been paused  |
 | [External Data Source](../datasource/external-data-sources.md)  | Same behavior as in a live journey |
 | [Exit Criteria](journey-properties.md#exit-criteria)  | Same behavior as in a live journey |
@@ -220,6 +222,7 @@ Be aware that profile exclusions for profiles currently in the journey and for n
     If you resume journeys to bring the number of held profiles back under the limit, the journey resumes immediately — but it can take up to 30 minutes for the profile count to update. During that time, the system may still consider those profiles as paused.
 
 * For journeys that include [inbound activities](../channels/gs-channels.md#inbound-channels) (e.g., in-app, web, etc.), pausing the journey does not interrupt communications that have already been triggered. If a profile has qualified for an inbound activity before the pause, the corresponding message will still be delivered. To fully stop all inbound communications, you must stop the journey.
+* Pausing a journey does not cancel a Custom Action request that has already been dispatched for execution. Profiles that have not yet reached the next Action node are held or discarded there, according to the pause option selected. For example, a Custom Action request already sent to an external endpoint may still be processed and may trigger a push notification after the pause. To halt further journey processing, stop the journey. Stopping terminates profiles' progression through the journey; it should not be understood to recall requests already dispatched to an external endpoint.
 * Paused journeys are counted towards live journey quota
 * Profiles that had entered journey but were discarded during the pause would still be counted as engageable profiles
 * Paused journeys are considered in all business rules, in the same way as if they were live
@@ -263,7 +266,7 @@ When you resume this journey:
 
 ## Troubleshoot profile discards in paused journeys {#discards-troubleshoot}
 
-You can use the [[!DNL Adobe Experience Platform] Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to query step events, which can provide more information about profile discards, depending on when they happened.
+You can use the [[!DNL Adobe Experience Platform] Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to query step events, which can provide more information about profile discards, depending on when they happened. For the fields of the step events, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 * For discards happening before the profile enters the journey, use the following code:
 
@@ -305,53 +308,4 @@ You can use the [[!DNL Adobe Experience Platform] Query Service](https://experie
 
     1. If the journey was paused with the hold option selected but profiles were discarded due to exceeding the 10-million quota, those profiles will still be discarded when they reach the next action node.
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page explains how to pause and resume a live journey in Adobe Journey Optimizer, including profile hold or discard behavior during the pause, how to apply profile attribute exit criteria while paused, and how to troubleshoot profile discards using Query Service.
-
-**Intents:**
-* Pause a live journey to prevent new profile entries and hold or discard in-flight profiles at the next action node
-* Resume a paused journey manually or understand when it auto-resumes after the maximum pause period
-* Apply a profile attribute exit criteria to exclude specific profiles (e.g., by country) when a journey is paused
-* Bulk-pause or bulk-resume multiple live journeys from the journey inventory list
-* Troubleshoot profile discards in a paused journey using Adobe Experience Platform Query Service step event queries
-* View the audit trail of who paused or resumed a journey and when
-
-**Glossary:**
-* **Pause (journey)**: A state that temporarily suspends a live journey, preventing new entrances and halting profile progress at the next action node; no communications are sent while paused *(product-specific)*
-* **Hold mode**: A pause option that keeps in-flight profiles waiting at the next action node until the journey resumes *(product-specific)*
-* **Discard mode**: A pause option that exits in-flight profiles from the journey when they reach the next action node *(product-specific)*
-* **Profile Attribute-based exit criteria**: A filter applied to a paused journey that excludes profiles matching a defined expression at the next action node upon resume *(product-specific)*
-* **Bulk pause / Bulk resume**: The ability to pause or resume multiple live or paused journeys simultaneously from the journey inventory list *(product-specific)*
-
-**Guardrails:**
-* Only users with the **Publish journeys** permission can pause and resume journeys; stopping a paused journey requires **Manage journeys** (and **Campaigns > Publish Campaigns** if inline campaigns or messaging nodes are present)
-* Pause duration is configurable from 1 to 14 days; after that the journey auto-resumes
-* Profiles held during pause resume at up to 5,000 TPS; the journey remains in Resuming until all held profiles have resumed
-* Maximum of 10 million profiles can be held across all paused journeys in an organisation; excess profiles are automatically discarded
-* Only one Profile Attribute-based exit criteria can be set per journey
-* Profile Attribute-based exit criteria can only be created, updated, or deleted while the journey is paused
-* Paused journeys count towards the live journey quota
-* Journey global timeout (91 days) still applies during a pause
-* Inbound activity communications already triggered before the pause continue to be delivered; to stop them, the journey must be stopped entirely
-* Alerts for batch segment do not fire in paused journeys
-* Fresh entrances are always discarded when a journey is paused, regardless of Hold or Discard mode
-
-**Terminology:**
-* Canonical name: Pause a journey — Acronym: none — variants: journey pause, pause/resume
-* Synonyms: "Hold" = "park profiles"; "Discard" = "exit profiles"
-* Do not confuse: "Pause" ≠ "Stop" — Pause is temporary and allows resume; Stop immediately exits all profiles and cannot be undone to a live state
-* Do not confuse: "Pause" ≠ "Close to new entrances" — Close to new entrances lets existing profiles finish but does not suspend them; Pause suspends all in-flight profiles at the next action node
-
-**FAQ:**
-* **Q: What happens to profiles already in a journey when it is paused?** — Depending on the option chosen at pause time, profiles are either held (waiting at the next action node) or discarded (exited from the journey at the next action node).
-* **Q: How long can a journey remain paused?** — Between 1 and 14 days (chosen at pause time); after that it automatically resumes.
-* **Q: Can I exclude certain profiles while a journey is paused?** — Yes; apply a Profile Attribute-based exit criteria (one per journey) while the journey is paused to exclude matching profiles at the next action node upon resume.
-* **Q: Does pausing a journey stop in-app or web messages already triggered?** — No; inbound communications already triggered before the pause continue to be delivered. To stop all inbound communications, you must stop the journey entirely.
-* **Q: How do I find out which profiles were discarded during a pause?** — Query the `journey_step_events` dataset in Adobe Experience Platform Query Service using the `PAUSED_JOURNEY_VERSION` or `JOURNEY_IN_PAUSED_STATE` event type filters with the journey version ID.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-pause.md}}

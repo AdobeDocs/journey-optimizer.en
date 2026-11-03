@@ -10,7 +10,7 @@ level: Experienced
 keywords: subdomain, delegation, domain, DNS
 badge: label="Limited availability" type="Informative"
 exl-id: 34af1329-f0c8-4fcd-a284-f8f4214611d4
-TQID: https://experienceleague.adobe.com/NzVDDmULBe37NjMcby0RRpow1yNUc9bhTlZR9GTZhBY
+TQID: 'https://experienceleague.adobe.com/NzVDDmULBe37NjMcby0RRpow1yNUc9bhTlZR9GTZhBY'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -21,12 +21,19 @@ feature_v2:
     internal-label: Configuration
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
 subfeature_v2:
   - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
     internal-label: Subdomains
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -63,7 +70,7 @@ To set up a custom subdomain, follow the steps below.
 
 1. From the **[!UICONTROL Set up method]** section, select **[!UICONTROL Custom delegation]**.
 
-    ![](assets/subdomain-method-custom.png){width=90%}
+    ![Custom delegation option selected in the Set up method section](assets/subdomain-method-custom.png){width=90%}
 
 1. Specify the name of the subdomain to delegate.
 
@@ -86,7 +93,7 @@ To set up a custom subdomain, follow the steps below.
 
 1. If everything is configured properly, check the box "I confirm...".
 
-    ![](assets/subdomain-custom-submit.png){width="75%"}
+    ![Confirmation checkbox after generating DNS records in the hosting solution](assets/subdomain-custom-submit.png){width="75%"}
 
 ## Upload the SSL Certificate {#upload-ssl-certificate}
 
@@ -102,7 +109,7 @@ To set up a custom subdomain, follow the steps below.
 
 1. In the **[!UICONTROL SSL Certificate]** section, click **[!UICONTROL Generate CSR]**.
 
-    ![](assets/subdomain-custom-ssl-certificate.png){width="85%"}
+    ![Generate CSR button in the SSL Certificate section](assets/subdomain-custom-ssl-certificate.png){width="85%"}
 
     >[!NOTE]
     >
@@ -110,7 +117,7 @@ To set up a custom subdomain, follow the steps below.
     
 1. Fill the form that displays and generate the Certificate Signing Request (CSR).
 
-    ![](assets/subdomain-custom-generate-csr.png){width="70%"}
+    ![Form to generate the Certificate Signing Request](assets/subdomain-custom-generate-csr.png){width="70%"}
 
     >[!NOTE]
     >
@@ -118,20 +125,13 @@ To set up a custom subdomain, follow the steps below.
 
 1. Click **[!UICONTROL Download CSR]** and save the form to your local computer.
 
-1. Send it to the Certificate Authority (CA) to get your SSL certificate. Before submitting this CSR to your CA for signing, there are a few important points to consider:
+1. Send it to the Certificate Authority (CA) to get your SSL certificate.
 
-    * The downloaded CSR from step 3 is only for data.subdomain.com.
+    >[!NOTE]
+    >
+    >The downloaded CSR already includes both `data.subdomain.com` and `cdn.subdomain.com` as Subject Alternative Names (SANs) — no manual SAN additions are required before submitting to your CA. For instance, if you are delegating `example.adobe.com`, the CSR covers both `data.example.adobe.com` and `cdn.example.adobe.com`.
 
-    * However, the certificate should cover both data.subdomain.com and cdn.subdomain.com as Subject Alternative Names (SAN) entries within a single certificate. For instance, if you are delegating example.adobe.com, then data.subdomain.com corresponds to data.example.adobe.com, and cdn.subdomain.com corresponds to cdn.example.adobe.com.
-    
-    * Both Data (data.example.adobe.com) and CDN (cdn.example.adobe.com) subdomains need to be added as peer entries in the same certificate.
-
-    * Most CAs allow you to add additional SANs (such as the CDN subdomain) during the signing process
-
-        * Through the CA portal (recommended, if available), or
-        * By requesting it manually with their support team if the portal option is not available.
-
-    * Once signed, the CA will issue a single certificate covering both the Data domain and the CDN subdomain.
+    Once signed, the CA will issue a single certificate covering both the Data domain and the CDN subdomain.
 
 1. Once retrieved, click **[!UICONTROL Upload SSL certificate]** and upload the certificate to [!DNL Journey Optimizer] in .pem format with the complete certificate chain. Here is a sample of a .pem file format:
 
@@ -174,7 +174,7 @@ To set up a custom subdomain, follow the steps below.
 
 1. If everything is configured properly, check the box "I have completed...".
 
-    ![](assets/subdomain-custom-feedback-loop.png){width="85%"}
+    ![Confirmation checkbox after completing the Feedback Loop steps](assets/subdomain-custom-feedback-loop.png){width="85%"}
 
 ## Copy the SSL CDN URL validation record {#copy-ssl-cdn-url-record}
 

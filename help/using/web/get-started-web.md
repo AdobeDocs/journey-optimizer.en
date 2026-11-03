@@ -6,13 +6,17 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 8f06b8f0-f64d-42f7-9b10-7bb76f63d1c5
-TQID: https://experienceleague.adobe.com/7LxkDJdH0RqWKCVLLK2ISDDnNR5ZwGmgfpX7W251GBU
+TQID: 'https://experienceleague.adobe.com/7LxkDJdH0RqWKCVLLK2ISDDnNR5ZwGmgfpX7W251GBU'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
     internal-label: Web channel
@@ -48,7 +52,7 @@ Through an intuitive visual interface, use the web channel to modify your web pr
 
 ![](../rn/assets/do-not-localize/web-authoring.gif)
  
-If you are already using outbound channels for message delivery, such as email, SMS or push notifications, you can leverage the inbound web channel to offer a truly personalized experience that spans across all channels.
+If you are already using outbound channels for message delivery, such as email, mobile messages or push notifications, you can leverage the inbound web channel to offer a truly personalized experience that spans across all channels.
 
 Once you created a journey or campaign, select **Web** as your action and define basic settings. For more information on how to configure your journey/campaign, refer to this [page](create-web.md#create-web-experience).
 
@@ -103,6 +107,7 @@ Discover the detailed steps to create a web campaign in [this video](create-web.
 * **[Manage web modifications](manage-web-modifications.md)** - Learn how to organize, apply, and manage modifications across your web experiences.
 * **[Monitor web experiences](monitor-web-experiences.md)** - Track and analyze the performance of your web campaigns with detailed reporting.
 * **[Generate web content with AI](../content-management/generative-full-content.md)** - Leverage AI to create and optimize web content with text and images.
+* **[Use Decisioning in web experiences](../experience-decisioning/use-decision-policy.md)** - Personalize web experiences with decision policies to deliver the most relevant offers to each visitor.
 * **[Web campaign tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/web-channel/create-a-web-campaign){target="_blank"}** - Explore step-by-step video tutorials on web channel features and best practices.
 
 

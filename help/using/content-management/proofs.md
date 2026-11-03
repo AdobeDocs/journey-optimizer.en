@@ -5,10 +5,23 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: e742c04e-2987-4466-84af-bdaf4d714552
-feature_v2: []
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
     internal-label: Proofs
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Send proofs using test profiles data {#send-proofs}
 
@@ -31,7 +44,7 @@ For API-triggered and Action (scheduled) campaigns, you can also send proofs pro
 
 **Frequency capping rules** - All existing frequency capping rules apply to proofs. If you have set [frequency capping rules](../conflict-prioritization/channel-capping.md) (e.g., maximum sends per profile), these limits also apply when sending proofs. If a test profile has already reached the frequency cap limit, proofs will show as finished but no email will be delivered. For repeated testing, consider using unique test profiles or adjusting frequency caps for proofing scenarios as needed.
 
-**Mirror page** - In the proof sent, the link to the mirror page is not active. It is only activated in the final messages.
+**Mirror page** - The link to the mirror page in a proof is not active. Proofs let you review email rendering, content, personalization, and content variations, but not mirror page navigation, since the link only activates once the final message is sent. To confirm mirror page rendering before launch, send the final message to a small, controlled internal audience rather than to your live customer list. [Learn more about mirror pages](../email/message-tracking.md#mirror-page).
 
 **Assets** - Assets and images have specific accessibility rules:
 
@@ -68,3 +81,5 @@ To send email proofs using test profiles data, you must first select [test profi
     ![View proofs button to check delivery status](../email/assets/send-proof-view.png)
 
 It is recommended to send proofs after each modification to the message content.
+
+If sending a proof returns an error code, see [Proof and simulation errors](proof-simulation-errors.md).

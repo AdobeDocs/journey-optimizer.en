@@ -10,6 +10,10 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
+  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
+    internal-label: Campaign Orchestration
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
@@ -77,6 +81,9 @@ To configure you channel configuration:
 
           For example, if the secondary dimension represents a booking or subscription, the execution address, such as an email, can be taken from that level. This is useful in cases where profiles use a different contact detail when booking or subscribing to a service.
 
+          >[!NOTE]
+          >The schema used for the secondary dimension must have a primary key. Composite primary keys are not supported for secondary dimensions.
+
 1. From the **[!UICONTROL Delivery address]** field, click ![edit icon](assets/do-not-localize/edit.svg) to choose the specific field to use for your message delivery.
 
      ![](assets/target-dimension-4.png)
@@ -96,7 +103,7 @@ To do this, contextual attributes specific to orchestrated campaigns are availab
 * **`context.system.source.versionId`**: Orchestrated campaign version ID
 * **`context.system.source.actionId`**: Channel action node ID
 * **`context.system.source.actionName`**: Channel action node name
-* **`context.system.source.channel`**: Channel type (Email, SMS, Push)
+* **`context.system.source.channel`**: Channel type (Email, Mobile, Push)
 * **`context.system.IdentityNamespace`**: Identity namespace used
 
 For example:

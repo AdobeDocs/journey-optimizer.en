@@ -15,13 +15,13 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: cfdf3a89-7087-4a5c-a6d2-2f4eb64a3470
+    internal-label: User and role management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -118,7 +118,7 @@ A successful Journey Optimizer implementation typically follows this sequence, w
    The Administrator establishes the foundation by configuring sandboxes, setting up access controls, and preparing channel configurations. This must happen first to enable other teams to work.  
    * Configure development, staging, and production sandboxes  
    * Set up roles, permissions, and object-level access control (OLAC)  
-   * Configure channel configurations (email, SMS, push, web push, in-app, web, direct mail, content cards)
+   * Configure channel configurations (email, mobile messages, push, web push, in-app, web, direct mail, content cards)
    * Delegate subdomains and set up IP pools  
    * Configure suppression lists and consent policies
 
@@ -163,7 +163,7 @@ As a Marketer or Business Practitioner, you design customer journeys to deliver 
 * **Journey Orchestration**: Create real-time, one-to-one customer engagement where each person moves through at their own pace, triggered by behavior or events across channels. Use the unified Action activity for all channel actions, the Content decision activity to integrate offers into journeys, and Journey Agent to create journeys from natural language prompts
 * **Campaign Orchestration**: Design and automate complex, multi-step batch campaigns at scale using a visual canvas. Perfect for brand-initiated campaigns like seasonal promotions, product launches, and account-based communications. Leverage multi-entity segmentation to create precise audiences by connecting customer data with related entities (accounts, purchases, bookings). Use wave sending to deliver messages in controlled batches
 * **Modern Message Designer**: Design and personalize email and mobile messages with a drag-and-drop interface. Edit out-of-the-box templates to accelerate time to market
-* **Decision Management**: Create and manage offers, eligibility rules, and other components in a centralized library that can be embedded in emails and customer touchpoints. Use Decisioning for push and SMS personalization
+* **Decision Management**: Create and manage offers, eligibility rules, and other components in a centralized library that can be embedded in emails and customer touchpoints. Use Decisioning for push and mobile personalization
 * **Asset Management**: Access Adobe Experience Manager Assets Essentials fully embedded into Journey Optimizer for streamlined asset access and delivery
 * **Audience Definition**: Build on-demand audiences with instant refinement using relational queries, with pre-send visibility for accurate audience counts
 * **AI/ML Services**: Leverage send-time optimization and predictive engagement scores to target high-value customers and minimize churn risk
@@ -203,7 +203,7 @@ As an Administrator, you set up the Journey Optimizer environment to enable your
 * **Security & Governance**: Apply object-level access control (OLAC), configure consent policies, and implement data governance policies
 * **Deliverability**: Delegate subdomains, migrate subdomains to custom delegation when needed, create IP pools, and manage suppression lists and allowed lists
 * **Journey Configuration**: Set up journey elements and configurations for your teams
-* **Channel Configuration**: Configure web push notifications, direct mail, and message export (email/SMS) when required
+* **Channel Configuration**: Configure web push notifications, direct mail, and message export (email/mobile message) when required
 
 **Start with:** Configure sandboxes and user permissions, then set up your first channel configurations and message presets.
 
@@ -311,3 +311,5 @@ For more in-depth learning and updates, explore the following resources:
 | Data Engineer | [Get started for data engineers](path/data-engineer.md) |
 | Developer | [Get started for developers](path/developer.md) |
 | Marketer | [Get started for marketers](path/marketer.md) |
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-quick-start.md}}

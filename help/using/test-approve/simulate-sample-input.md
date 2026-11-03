@@ -8,13 +8,19 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 2744974b-62cc-4d25-acc3-edd4c53a9a58
-TQID: https://experienceleague.adobe.com/Y8qsGW8XqSVqag4yqRinnem9w2PYJyKIDIWvuGqAchU
+TQID: 'https://experienceleague.adobe.com/Y8qsGW8XqSVqag4yqRinnem9w2PYJyKIDIWvuGqAchU'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
 subfeature_v2:
   - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
     internal-label: Proofs
@@ -22,6 +28,8 @@ subfeature_v2:
     internal-label: Preview
   - id: bf7a266e-e483-42c6-b5bc-09ca6e49900c
     internal-label: Approval workflows
+  - id: b5cb2dff-e9ba-4e50-a3eb-6a50eef729b8
+    internal-label: Email rendering
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -74,7 +82,7 @@ Before starting testing your content using sample input data, consider the follo
 
 * **Channels** - Simulating content variations is available for:
 
-    * the Email, SMS and Push notification channels;
+    * the Email, Mobile messages and Push notification channels;
     * all inbound channels (Web, Code-based experience, In-app, Content cards);
     * Orchestrated campaigns.
 
@@ -129,7 +137,12 @@ To add a new variant, click the **[!UICONTROL Create sample]** button. A new bla
 You can upload a file with predefined variants and values to speed up the process.
 
 1. Click the **[!UICONTROL Upload data]** button to open the file upload screen.
-1. Select **[!UICONTROL Download sample]** to download a a CSV, JSON, or JSONLINES file template.
+1. Select **[!UICONTROL Download sample]** to download a CSV, JSON, or JSONLINES file template.
+
+    >[!NOTE]
+    >
+    >To upload multiple variants in a single file, you must use the JSONLINES (JSONL) format, with one variant per line. Other file formats do not support multiple variants.
+
 1. Open the template file and fill in your desired values for each profile attribute. The template includes a column for each profile attribute used in your content for personalization.
 
     Example JSON syntax:
@@ -219,3 +232,9 @@ Journey Optimizer allows you to send proofs to email addresses while impersonati
 1. To track the proof sending, click the **[!UICONTROL View proofs]** button in the simulate content screen.
 
 ![Sent proofs list](assets/simulate-custom-sent-proofs.png)
+
+>[!NOTE]
+>
+>The mirror page link is not active in proofs sent for variants. It only activates in the final message. [Learn more](../email/message-tracking.md#mirror-page).
+
+{{$include /help/_includes/do-not-localize/test-approve/ai-augmented-simulate-sample-input.md}}

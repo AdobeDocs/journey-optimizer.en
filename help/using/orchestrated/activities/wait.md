@@ -12,6 +12,8 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
+  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
+    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
@@ -53,6 +55,6 @@ Follow these steps to configure the **[!UICONTROL Wait]** activity:
 
 ## Example{#wait-example}
 
-The following example illustrates the **[!UICONTROL Wait]** activity in a typical use case.  An email with a promo code is sent to profiles celebrating their birthdays. After 2 days, an SMS is sent to the same group as a reminder that their birthday promo code is about to expire.
+The following example illustrates the **[!UICONTROL Wait]** activity in a typical use case.  An email with a promo code is sent to profiles celebrating their birthdays. After 2 days, a mobile message is sent to the same group as a reminder that their birthday promo code is about to expire.
 
 ![](../assets/wait-example.png)

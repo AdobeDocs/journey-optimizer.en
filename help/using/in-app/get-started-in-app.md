@@ -7,22 +7,24 @@ role: User
 level: Beginner
 keywords: in-app, message, creation, start
 exl-id: 51562843-7b50-4eb5-bf79-5ce03f7549cb
-TQID: https://experienceleague.adobe.com/b139LQsPe3HwKe1O5cyBx4Nj4jpW3GXCFIVIWTAIlbg
+TQID: 'https://experienceleague.adobe.com/b139LQsPe3HwKe1O5cyBx4Nj4jpW3GXCFIVIWTAIlbg'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
     internal-label: In App channel
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
-  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
-    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -106,9 +108,10 @@ In-app messages depend on an active session, so they are not suited to every sce
 * The message is a critical or time-sensitive issue that requires reaching users outside the app, such as an outage or security alert
 * The communication is regulatory or legal and requires a read confirmation that in-app messages cannot provide
 * The goal is account reactivation or a win-back campaign for inactive users who are unlikely to open the app
-* The message is a high-volume transactional update, such as an order confirmation, that is better suited to email or SMS
+* The message is a high-volume transactional update, such as an order confirmation, that is better suited to email or mobile message
 * Overuse could lead to banner blindness, where users start ignoring messages that appear too often
 * Users may be offline or without app connectivity when the message is meant to be delivered
+* You want to target a custom upload (CSV) audience, which is not supported for in-app messages. [Learn more](../audience/target-audiences.md#guardrails)
 
 
 
@@ -120,3 +123,4 @@ In-app messages depend on an active session, so they are not suited to every sce
 * **[In-app for web](create-in-app-web.md)** - Discover how to create and deliver in-app messages for web applications.
 * **[In-app channel tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/in-app-channel/in-app-messages-overview){target="_blank"}** - Explore step-by-step video tutorials on in-app messaging features and best practices.
 
+{{$include /help/_includes/do-not-localize/in-app/ai-augmented-get-started-in-app.md}}

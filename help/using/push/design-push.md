@@ -8,13 +8,17 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-TQID: https://experienceleague.adobe.com/YOE-hCnG978CvBHe2WeFekMjx4oBlsv4hBbSVaUjgWA
+TQID: 'https://experienceleague.adobe.com/YOE-hCnG978CvBHe2WeFekMjx4oBlsv4hBbSVaUjgWA'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: 66e1fd99-672d-5d64-aa58-eca107f0fbae
+    internal-label: Push
 subfeature_v2:
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
@@ -40,18 +44,21 @@ topic_v2:
 
 Once you have created a push notification, you can design its content for iOS, Android, and Web platforms. This page guides you through composing your message, configuring on-click behavior, adding media and buttons, and setting advanced options to create engaging push notifications that resonate with your audience.
 
-## Push Notification Layout {#push-layout}
+## Push notification layout (Android) {#push-layout}
 
->[!AVAILABILITY]
+>[!NOTE]
 >
->The **[!UICONTROL Push Notification Layout]** option is only available for Android.
+>The layout picker is only available for Android push notifications..
 
-![](assets/layout.png)
+![](assets/android-layout.png)
 
-Choose the layout of your push notification:
+For Android push notifications, use the **[!UICONTROL Push Notification Layout]** picker to choose how the notification is displayed:
 
-* **[!UICONTROL Standard]**: Displays a compact notification with an optional icon alongside the title and body text. This is the default layout.
-* **[!UICONTROL Expanded]**: Displays a larger notification that reveals additional body text when the recipient expands it.
+* **[!UICONTROL Standard]** (default): Displays a single-line body, with an optional image banner.
+  
+  This corresponds to the layout previously used for notifications, no change occurs unless the **[!UICONTROL Expanded]** layout is explicitly selected.
+
+* **[!UICONTROL Expanded]**: Displays a multi-line body that is never truncated, with an optional image displayed as a large icon. Use this layout for longer messages, such as detailed offer terms or event information.
 
 ## Title and Body {#push-title-body}
 
@@ -62,15 +69,15 @@ Choose the layout of your push notification:
 
 ![](assets/title-body.png)
 
-To compose your message, click the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields. Use the personalization editor to define content, personalize data and add dynamic content. Learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
+Click the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields to compose your message. Use the personalization editor to add personalized and dynamic content. Learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md).
 
-If you selected **[!UICONTROL Expanded layout]** for your Android push notification, enter a **[!UICONTROL Collapsed body]** text.
+With the [Expanded layout](#push-layout), a **[!UICONTROL Collapsed body]** field is also available for a shorter text shown while the notification is collapsed. If left empty, no body text displays in the collapsed state.
 
-You can also insert profile attributes inline directly in the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields by typing `{{`. An autocomplete dropdown opens at the cursor, select any attribute to insert it as a personalization token without opening the full editor. [Learn more about inline editing](../personalization/personalize.md#inline-personalization)
+You can also insert profile attributes inline by typing `{{` in the **[!UICONTROL Title]** or **[!UICONTROL Body]** field. An autocomplete dropdown opens at the cursor, select an attribute to insert it as a personalization token. [Learn more about inline editing](../personalization/personalize.md#inline-personalization)
 
-Use the device preview section to visualize how the push notification displays on iOS, Android, and Web.
+Use the device preview to see how the notification displays on iOS, Android, and Web.
 
-Accelerate your content creation with Generate Content and generate compelling push notification text with [Generate text with AI](../content-management/generative-text.md) or create complete push notifications with [Generate full content with AI](../content-management/generative-full-content.md).
+To speed up content creation, use Generate Content: [Generate text with AI](../content-management/generative-text.md) for copy, or [Generate full content with AI](../content-management/generative-full-content.md) for complete notifications.
 
 ## On click behavior {#on-click-behavior}
 
@@ -110,15 +117,11 @@ When a URL in any link or media field is too long to display, a tooltip icon is 
 
 >[!TAB Android]
 
-For Android, you can only add an image icon, and an image for expanded notifications. 
+* With **[!UICONTROL Standard]** layout, add your asset in the **[!UICONTROL Add media]** field by entering the media URL directly (you can include personalization tokens in the URL), or by selecting an asset from [Adobe Experience Manager Assets](../integrations/assets.md) or Generate Content to generate [engaging images](../content-management/generative-image.md) for push notifications. 
+  
+  Enable the **[!UICONTROL Large icon]** option to scale the image to fit the available space so the entire image remains visible.
 
-![](assets/push-config-add-media.png)
-
-You can add media using either of the following methods:
-
-* **[!UICONTROL Add media]** button: Select an asset from [Adobe Experience Manager Assets](../integrations/assets.md) or access Generate Content to generate [engaging images](../content-management/generative-image.md) for push notifications. 
-    
-* **[!UICONTROL Add media]** field: Enter the media URL directly. You can include personalization tokens in the URL.
+* With **[!UICONTROL Expanded]** layout, enter the URL of the large icon displayed to the side of the notification on Android, or select an asset from [Adobe Experience Manager Assets](../integrations/assets.md) or Generate Content to generate [engaging images](../content-management/generative-image.md) for push notifications.
 
 Enable the **[!UICONTROL Show entire image]** option to scale the image to fit the available space so the entire image remains visible.
 
@@ -250,3 +253,7 @@ You can configure **[!UICONTROL Advanced options]** for your push notification. 
 |**[!UICONTROL Notification priority]** (Android only) | Defines the push notification's importance from Low to Max. This determines how "intrusive" the push notification will be when it is delivered. For more on this, refer to the [Android developer documentation](https://developer.android.com/guide/topics/ui/notifiers/notifications#importance)|
 |**[!UICONTROL Delivery priority]** (Android only) | Sets up a high or normal priority for your push notifications. For more information on message priority, refer to the [Google developer documentation](https://firebase.google.com/docs/cloud-messaging/concept-options#setting-the-priority-of-a-message).|
 |**[!UICONTROL Time to live]** (Android only) | Set the number of seconds after which your message will expire. On Android, expiration is treated as a delivery window: Firebase Cloud Messaging (FCM) converts the expiration time into a time-to-live (TTL) value starting when the message is received, which means undelivered campaigns may be sent later than expected or even outside the desired timeframe. For more on this, refer the [Android developer documentation](https://firebase.google.com/docs/cloud-messaging/concept-options#ttl).|
+
+If your push content returns an error code, see [Content authoring errors](../content-management/content-authoring-errors.md).
+
+{{$include /help/_includes/do-not-localize/push/ai-augmented-design-push.md}}

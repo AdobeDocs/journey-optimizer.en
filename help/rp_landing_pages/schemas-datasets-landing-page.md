@@ -5,6 +5,9 @@ title: Manage relational Schemas and Datasets
 description: Manage relational Schemas and Datasets
 redpen-status: CREATED_||_2025-08-11_20-23-42
 exl-id: 17c64a34-d571-46d0-a144-d4b746118c96
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Manage relational schemas and datasets{#section-overview}
 

@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 9a1c148c-a6c3-406b-8f2e-1cf8b8239e75
-TQID: https://experienceleague.adobe.com/UnVcc0yZOYfzUlY6HB54YTb-CcCQ4GbGtBXGueCnjZ4
+TQID: 'https://experienceleague.adobe.com/UnVcc0yZOYfzUlY6HB54YTb-CcCQ4GbGtBXGueCnjZ4'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -15,12 +15,17 @@ feature_v2:
     internal-label: Communication channels
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
+  - id: 1210f62b-45d9-5d36-8d8d-0f9049ffa368
+    internal-label: Code-based Experiences
 subfeature_v2:
   - id: f88eedcc-cf3e-46b8-9e94-0293589325f3
     internal-label: Code based channel
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization

@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
-TQID: https://experienceleague.adobe.com/aZO-1xrS-34tIqadKDzZQBr-1x3W3tKgkQAM7q3FhLM
+TQID: 'https://experienceleague.adobe.com/aZO-1xrS-34tIqadKDzZQBr-1x3W3tKgkQAM7q3FhLM'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -17,11 +17,11 @@ feature_v2:
     internal-label: Data management activity
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
+  - id: 9bb0ff1a-29d5-5edf-a6a2-8ec9c30e28c8
+    internal-label: Privacy
 subfeature_v2:
   - id: a9cf78bf-e9e4-4836-85a5-b6b3cf93bf56
     internal-label: Consent management
-  - id: f365ec33-2b99-4b7f-b4ee-c743dd7f615f
-    internal-label: Data governance
   - id: c8d5f2ce-ba44-43e9-a2bf-94a3d7d85ec3
     internal-label: Data privacy requests
 role_v2:
@@ -54,7 +54,7 @@ Learn more about the applicable legislation in the [Experience Platform document
 
 When sending messages from journeys or campaigns, you must always ensure that customers can unsubscribe from future communications. Once unsubscribed, the profiles are automatically removed from the audience of future marketing messages. 
 
-While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails and SMS messages, push notifications do not require any action on your side, as recipients can unsubscribe through their devices themselves. For example, upon downloading or when using your app, they can select to stop notifications. Similarly, they can change the notification settings through the mobile operating system.
+While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails and mobile messages, push notifications do not require any action on your side, as recipients can unsubscribe through their devices themselves. For example, upon downloading or when using your app, they can select to stop notifications. Similarly, they can change the notification settings through the mobile operating system.
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ To verify a profile's push consent status in Adobe Experience Platform:
 >
 >For compliance use cases requiring explicit push consent tracking, use the **`consents.marketing.push.val`** attribute from the [Consents and Preferences field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. A value of `y` indicates explicit opt-in; `n` indicates explicit opt-out.
 
-Learn how to manage opt-out in Journey Optimizer email and SMS messages in these sections: 
+Learn how to manage opt-out in Journey Optimizer email and mobile messages in these sections: 
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
@@ -90,7 +90,7 @@ Learn how to manage opt-out in Journey Optimizer email and SMS messages in these
 <img alt="Infrequent" src="../assets/do-not-localize/privacy-sms-opt-out.jpeg" width="50%">
 </a>
 <div>
-<a href="../mobile/mobile-opt-out.md"><strong>SMS opt-out management</strong></a>
+<a href="../mobile/mobile-opt-out.md"><strong>Mobile opt-out management</strong></a>
 </div>
 <p></td>
 </tr></table>
@@ -218,3 +218,5 @@ You can now use this audience to filter out the profiles that have not given con
 >[!NOTE]
 >
 >If you create an audience that has not given consent for personalization and you then select this audience in a campaign, the personalization tools will remain available. It is up to your marketing users to understand that if they are working with an audience that should not receive personalization, they should not use personalization tools.
+
+{{$include /help/_includes/do-not-localize/privacy/ai-augmented-opt-out.md}}

@@ -9,7 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: email, design, stock, assets
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
-TQID: https://experienceleague.adobe.com/fyUHQD4jpIUI2KdyrGbgktEhNNc4OWYRJ8AkgZhrIoQ
+TQID: 'https://experienceleague.adobe.com/fyUHQD4jpIUI2KdyrGbgktEhNNc4OWYRJ8AkgZhrIoQ'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,15 +20,11 @@ feature_v2:
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
   - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
     internal-label: Email design
-  - id: f550d0f2-143d-4093-9463-467fbec95fcc
-    internal-label: Accessibility
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
 role_v2:
@@ -175,3 +171,5 @@ Learn how to create email content with the message editor.
 Learn how to configure content experiments to A/B test and explore email content best drives your business objectives.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419893)
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-get-started-email-design.md}}

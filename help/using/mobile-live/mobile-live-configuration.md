@@ -7,24 +7,28 @@ feature: Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: db85a563-9630-4d87-bf10-9f2515fe8a45
-TQID: https://experienceleague.adobe.com/LThNKcpBCCkin2G-y4n-tty4bcGLxMA4ObiodBrpBwY
+TQID: 'https://experienceleague.adobe.com/LThNKcpBCCkin2G-y4n-tty4bcGLxMA4ObiodBrpBwY'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
-    internal-label: Track and monitor
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
-    internal-label: Get started
-  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
-    internal-label: Mobile SDK
   - id: ed2fba79-65cb-4680-96d2-2ad5d851714d
     internal-label: Live activities
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -53,13 +57,17 @@ The mobile app push credential registration is required to authorize Adobe to se
 
 Step 1 is optional if your push credentials have already been configured, as these can be reused for the Live activity channel configuration. If no credentials are defined, you must create new push credentials for your app. Refer to the steps detailed below:
 
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 1. Access the **[!UICONTROL Channels]** > **[!UICONTROL Push settings]** > **[!UICONTROL Push credentials]** menu.
 
 1. Click **[!UICONTROL Create push credential]**.
 
     ![](assets/credential-1.png)
 
-1. From the **[!UICONTROL Platform]** drop-down, select the Operational system:
+1. From the **[!UICONTROL Platform]** drop-down, select iOS.
 
 1. Enter the mobile app **[!UICONTROL App ID]**.
 
@@ -77,7 +85,33 @@ Step 1 is optional if your push credentials have already been configured, as the
 
 1. Click **[!UICONTROL Submit]** to create your app configuration.
 
-## Step 2: create your live activity configuration {#config-live-activity}
+>[!TAB Android]
+
+1. Access the **[!UICONTROL Channels]** > **[!UICONTROL Push settings]** > **[!UICONTROL Push credentials]** menu.
+
+1. Click **[!UICONTROL Create push credential]**.
+
+    ![](assets/credential-1.png)
+
+1. From the **[!UICONTROL Platform]** drop-down, select Android.
+
+1. Enter the mobile app **[!UICONTROL App ID]**.
+
+    ![](assets/config-4.png)
+
+1. Enable the **[!UICONTROL Apply to all sandboxes]** option to make these Push credentials available across all sandboxes. If a specific sandbox has its own credentials for the same Platform and App ID pair, those sandbox-specific credentials will take precedence.
+
+1. Switched on the **[!UICONTROL Manually enter push Credentials]** button to add your credentials.
+
+    ![](assets/config-5.png)
+
+1. Drag and drop your .json private key file.
+
+1. Click **[!UICONTROL Submit]** to create your app configuration.
+
+>[!ENDTABS]
+
+## Step 2: Create your live activity configuration {#config-live-activity}
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]**. Click the **[!UICONTROL Create channel configuration]** button.
 
@@ -95,9 +129,9 @@ Step 1 is optional if your push credentials have already been configured, as the
 
 1. Select **[!UICONTROL Marketing action(s)]** to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. Learn more
 
-1. Choose iOS as your **[!UICONTROL Platform]**.
+1. Choose your **[!UICONTROL Platform]**.
 
-1. Select from the drop-down the same **[!UICONTROL App id]** as for your [push credential](#push-credentials-launch) configured above or choose an existing one.
+1. Select from the drop-down the same **[!UICONTROL App ID]** as for your [push credential](#push-credentials-launch) configured above or choose an existing one.
 
     ![](assets/config-3.png)
 
@@ -118,3 +152,5 @@ You can now start integration with Adobe Experience Platform Mobile SDK to enabl
 >[!TIP]
 >
 >If you encounter issues with Live activity configuration or delivery, see [Troubleshoot Live activities](troubleshoot-mobile-live.md) for debugging steps.
+
+{{$include /help/_includes/do-not-localize/mobile-live/ai-augmented-mobile-live-configuration.md}}

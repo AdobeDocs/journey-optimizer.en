@@ -10,6 +10,10 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
+  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
+    internal-label: Campaign Orchestration
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
@@ -100,6 +104,7 @@ Excel-based schema file uploads are supported. Download the [provided template](
     * A version identifier, such as a `lastmodified` field of type `datetime` or `number`.
     * For Change Data Capture (CDC) ingestion, a special column named `_change_request_type` of type `String`, which indicates the type of data change (e.g., insert, update, delete) and enables incremental processing.  
     * DDL file must not define more than 200 tables.
+    * A table cannot reference itself: self-referential relationships are not allowed in the DDL file.
 
 
     >[!IMPORTANT]
@@ -109,7 +114,7 @@ Excel-based schema file uploads are supported. Download the [provided template](
 
 1. Drag and drop your DDL file and click **[!UICONTROL Next]**.
 
-    Note that the maximum supported size for a DDL file is 10MB.
+    Note that the maximum supported size for a DDL file is 10MB. The file name must contain only letters, numbers, underscores (_), hyphens (-), or spaces, and include a single extension.
 
 1. Type-in your **[!UICONTROL Schema name]**.
 
@@ -212,3 +217,5 @@ Establish a relationship between the **loyalty transactions** schema and the **R
 Continue by creating a relationship between the **loyalty rewards** schema and the **Brands** schema to associate each reward entry with the appropriate brand.
 
 ![](assets/schema_3.png)
+
+If a schema or dataset returns an error code, see [Relational schema and dataset errors](relational-schema-errors.md).

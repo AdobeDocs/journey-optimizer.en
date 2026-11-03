@@ -9,7 +9,7 @@ role: Admin
 level: Intermediate
 keywords: IP, pools, deliverability
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
-TQID: https://experienceleague.adobe.com/mzP9buvUwW2h0QahDBXWxefokjZv-XziM-uFaPwg3Wg
+TQID: 'https://experienceleague.adobe.com/mzP9buvUwW2h0QahDBXWxefokjZv-XziM-uFaPwg3Wg'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,17 +20,15 @@ feature_v2:
     internal-label: Configuration
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
   - id: c343082f-e963-4f57-a96b-b64d27f8118e
     internal-label: IP warmup plans
-  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
-    internal-label: Business rules
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
-  - id: fae48155-b23f-40d2-a252-a25bce350b4d
-    internal-label: Email configuration
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -68,8 +66,6 @@ To create an IP warmup campaign, follow the steps below.
 
 1. Create a scheduled marketing [campaign](../campaigns/create-campaign.md) and select the [Email](../email/create-email.md#create-email) action.
 
-    <!--Select the Marketing category. The IP warmup plan activation option is only available for  marketing-type campaigns.-->
-
 1. Select the configuration that you created for IP warmup.
 
     ![](assets/ip-warmup-campaign-surface.png)
@@ -90,7 +86,9 @@ To create an IP warmup campaign, follow the steps below.
     >
     >Audiences allowed in an IP warmup campaign must be [segment-based](../audience/creating-a-segment-definition.md) and created using the [default merge policy](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview#default-merge-policy){target="_blank"}.
     >
-    >CSV upload audiences are not supported for IP warmup campaigns and will result in an error upon campaign activation.
+    >The following audience types are not supported in IP warmup campaigns and will result in an error upon campaign activation:
+    >* [CSV upload audiences](../audience/custom-upload.md)
+    >* [Data Distiller audiences](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller-audiences/overview){target="_blank"} (audiences built using SQL queries)
 
     For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 

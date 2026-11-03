@@ -9,8 +9,12 @@ role: User
 level: Intermediate
 keywords: targeting, rules, journey, path, optimization, personalization
 exl-id: b30ce5c9-a0e2-4601-97a3-5bec648368e4
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
 # Leverage path targeting {#targeting}
 
@@ -87,9 +91,9 @@ To set up targeting in a journey, follow the steps below.
 
 1. Click **[!UICONTROL Create]** to save your targeting rule settings.
 
-1. Back in the journey, drop specific actions to customize each path. For example, create an email with personalized offers for Gold Loyalty members, and an SMS reminder for all other members.
+1. Back in the journey, drop specific actions to customize each path. For example, create an email with personalized offers for Gold Loyalty members, and a mobile message reminder for all other members.
 
-    ![Journey paths with email for Gold members and SMS for others](assets/journey-targeting-paths.png)
+    ![Journey paths with email for Gold members and Mobile messages for others](assets/journey-targeting-paths.png)
 
 1. If you selected the **[!UICONTROL Enable fallback content]** option when defining the rule settings, define one or more actions for the fallback path that was automatically added.
 
@@ -99,11 +103,13 @@ To set up targeting in a journey, follow the steps below.
 
 1. Design appropriate content for each action corresponding to each group defined by your targeting rule settings.
 
-   In this example, design an email with special offers for Gold members, and an SMS reminder for the other members.<!--You can seamlessly navigate between the different contents for each action. ![Content design panel for targeting rule actions](assets/journey-targeting-design.png)-->
+   In this example, design an email with special offers for Gold members, and a Mobile message reminder for the other members.<!--You can seamlessly navigate between the different contents for each action. ![Content design panel for targeting rule actions](assets/journey-targeting-design.png)-->
 
-1. [Publish](publish-journey.md) your journey.
+1. Click **[!UICONTROL Validate]** in the journey header and resolve any errors before [testing the journey](choose-validation-method.md). [Learn about journey validation](publish-journey.md#validate).
 
-Once the journey is live, the path that is specified for each segment is processed so that Gold members enter the path with the email offers, while the other members enter the path with the SMS reminder.
+1. When testing is complete and validation is current and passed, [publish](publish-journey.md) your journey.
+
+Once the journey is live, the path that is specified for each segment is processed so that Gold members enter the path with the email offers, while the other members enter the path with the Mobile message reminder.
 
 Follow the success of your journey with the Journey report. [Learn more](../reports/journey-global-report-cja.md#targeting)
 
@@ -113,21 +119,21 @@ The following examples show how to use the **[!UICONTROL Optimize]** activity wi
 
 +++Segment-specific channels
 
-Gold status loyalty members can receive personalized offers via email, while all other members are directed to SMS reminders.
+Gold status loyalty members can receive personalized offers via email, while all other members are directed to Mobile message reminders.
 
 <!--➡️ Use the revenue per profile or conversion rate as the optimization metric.-->
 
-![Segment-specific channels targeting Gold members with email and others with SMS](assets/journey-optimize-targeting-uc-segment.png)
+![Segment-specific channels targeting Gold members with email and others with Mobile message](assets/journey-optimize-targeting-uc-segment.png)
 
 +++
 
 +++Behavior-based targeting
 
-Customers who opened an email but didn't click can be sent a push notification, while those who didn't open at all receive an SMS.
+Customers who opened an email but did not click can be sent a push notification, while those who did not open at all receive a Mobile message.
 
 <!--➡️ Use the click-through rate or downstream conversions as the optimization metric.-->
 
-![Behavior-based targeting for email engagement with push or SMS fallback](assets/journey-optimize-targeting-uc-behavior.png)
+![Behavior-based targeting for email engagement with push or mobile message fallback](assets/journey-optimize-targeting-uc-behavior.png)
 
 +++
 
@@ -141,43 +147,4 @@ Customers who have recently purchased can go into a short "Thank you + Cross-sel
 
 +++
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-- **TL;DR:** This page explains how to use path targeting in Adobe Journey Optimizer journeys to deterministically route specific audience segments into designated journey paths based on defined rules.
-
-**Intents:**
-- Configure deterministic path targeting using the Optimize activity with a Targeting rule method
-- Create new targeting rules or reuse existing rules from the Rules menu
-- Define a fallback path for profiles that do not qualify for any targeting rule
-- Personalize journey paths for distinct audience segments (e.g., loyalty tiers, behavior, purchase history)
-- Modify inline targeting rules without affecting the original rule definition
-
-**Glossary:**
-- **Optimize activity**: A journey canvas activity used to split profiles into different paths, either via experimentation (random) or targeting (deterministic) *(product-specific)*
-- **Targeting rule**: A deterministic qualification condition that decides which journey path a profile enters, based on profile or audience attributes *(product-specific)*
-- **Fallback path**: An alternate journey path for profiles that do not satisfy any of the defined targeting rules *(product-specific)*
-
-**Guardrails:**
-- Path targeting is currently in Limited Availability; contact your Adobe representative to request access.
-- Creating targeting rules from the dedicated Journey Optimizer Rules menu requires the Decisioning add-on or is available on demand (Limited Availability).
-- When a rule is selected from the Rules menu and copied into the journey, subsequent changes to the original rule do not affect the journey's copy.
-- Editing a rule inline does not modify the original rule it was sourced from.
-- If the fallback path option is not enabled, profiles that do not qualify for any targeting rule exit the journey entirely.
-
-**Terminology:**
-- Canonical name: Path Targeting — Acronym: none — variants: deterministic path routing, rule-based path split
-- Synonyms: "Targeting rule" = "qualification rule" = "path condition"
-- Do not confuse: "Targeting" ≠ "Experimentation" (targeting is deterministic; experimentation is random assignment)
-
-**FAQ:**
-- **Q: What is the difference between path targeting and path experimentation?** — Targeting is deterministic: profiles enter a path based on defined rules. Experimentation is random: profiles are assigned to paths by chance to compare performance.
-- **Q: What happens to profiles that do not qualify for any targeting rule?** — If the fallback path option is enabled, they enter the fallback path. If not enabled, they exit the journey entirely.
-- **Q: Can I reuse an existing rule from the Rules menu?** — Yes, but the rule formula is copied into the journey activity; subsequent changes to the original rule in the Rules menu will not affect the journey's copy.
-- **Q: Does editing a targeting rule inline change the original rule?** — No, editing inline only updates the rule within the journey activity and does not affect the source rule.
-- **Q: Who can access path targeting?** — It is currently in Limited Availability; contact your Adobe representative to request access.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-path-targeting.md}}

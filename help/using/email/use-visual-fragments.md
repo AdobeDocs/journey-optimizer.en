@@ -20,18 +20,12 @@ feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
   - id: b5cb2dff-e9ba-4e50-a3eb-6a50eef729b8
     internal-label: Email rendering
   - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
     internal-label: Fragments
-  - id: d08afb72-92f6-4856-88e3-11ec34313c2f
-    internal-label: Event configuration
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -62,7 +56,7 @@ To use a fragment into an email, follow the steps below.
 
 >[!NOTE]
 >
->You can add up to 30 fragments in a given delivery. Fragments can only be nested up to 1 level.
+>You can add up to 60 unique fragments per variant. In a multilingual message, you can add up to 120 distinct fragments across all variants. Fragments can only be nested up to 1 level.
 
 1. Open any email or template content using the [Email Designer](get-started-email-design.md).
 
@@ -130,6 +124,10 @@ When working with visual fragments that contain conditional content, follow thes
 * Check your email structure for nested fragments containing conditional content
 * Restructure by moving each fragment with conditional content into its own structure block at the email level
 * Save and verify that conditional content variants are properly restored
+
+>[!NOTE]
+>
+>If a fragment uses dynamic content and its default state is empty, the fragment may appear blank when added to an email in the Email Designer. This is expected behavior — the system uses the default variant as a fallback to ensure consistency. To preview the actual content, [simulate your email](../content-management/preview-test.md) using a profile that meets the conditions defined in the fragment's dynamic content rules.
 
 ## Use implicit variables {#implicit-variables-in-fragments}
 
@@ -207,3 +205,4 @@ Learn how to lock a fragment in [this section](../content-management/create-frag
 >
 >The fragment author can change the setting later for future usages by resetting its behavior to **[!UICONTROL Allow inheritance to be broken]** in the fragment settings.
 
+{{$include /help/_includes/do-not-localize/email/ai-augmented-use-visual-fragments.md}}

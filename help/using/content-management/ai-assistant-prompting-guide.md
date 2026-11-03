@@ -14,6 +14,8 @@ product_v2:
 feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -373,7 +375,7 @@ Once content is generated, use the **Refine** feature to iterate and enhance it 
 <td>"Nurture enterprise prospects by showcasing three customer success stories with detailed ROI metrics (IBM: 45% cost reduction, Accenture: 200% lead increase, Microsoft: 60% time savings), targeting IT directors at companies with 1000+ employees"</td>
 </tr>
 <tr>
-<td><strong>SMS</strong></td>
+<td><strong>Mobile message</strong></td>
 <td>"Alert VIP customers about 4-hour flash sale on premium electronics with 40% discount, limited to first 100 customers"</td>
 </tr>
 <tr>

@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: optimization, targeting, experimentation, A/B testing, campaigns, journeys, personalization
 exl-id: 0f563d61-7a9e-46bf-adfb-5a26e63505b9
-TQID: https://experienceleague.adobe.com/zJTy0y-AhGMaFPzA379m4D9RxyzUfzCLZkr1B1ffuZM
+TQID: 'https://experienceleague.adobe.com/zJTy0y-AhGMaFPzA379m4D9RxyzUfzCLZkr1B1ffuZM'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,15 +18,15 @@ feature_v2:
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: 31bc9329-ef7e-5c6b-a292-c7386a476887
+    internal-label: Experimentation
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: ea4139d9-3405-4b34-ad6e-c3ca120cc269
-    internal-label: Multilingual content
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
-  - id: f29a52db-c90c-4345-902e-b586d1406d8d
-    internal-label: Content experiment
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: f29a52db-c90c-4345-902e-b586d1406d8d
+    internal-label: Content experiment
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -147,6 +147,10 @@ Once your journey or campaign is live, profiles are evaluated against the criter
 Learn how to leverage content optimization in action or API triggered campaigns. You'll see how to target sub-audiences, create message variations by location, enable fallback content, and run multiple experiments within a single campaign. This tutorial also covers how to manage multi-channel campaigns while maintaining message consistency.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3470368?quality=12)
+
+Learn how to use action groups to combine email, push, and SMS, then optimize channel selection with manual priority, customer preferences, or AI engagement scores.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3505310/?learn=on)
 
 **Related topics**
 

@@ -10,21 +10,23 @@ level: Intermediate
 keywords: journey, first, start, quick-start, audience, event, action
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
 version: Journey Orchestration
-feature_v2: []
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
 subfeature_v2: []
 ---
 # Browse & filter your journeys {#browse-journeys}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to browse, search, and filter your journeys using the journey dashboard, list, and calendar views in Adobe Journey Optimizer.
+**On this page:** Learn how to browse, search, and filter your journeys using the journey dashboard and list in Adobe Journey Optimizer.
 
 >[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_view"
->title="Journeys list and calendar views"
->abstract="In addition to the journeys list, [!DNL Journey Optimizer] provides a calendar view of your journeys, offering a clear visual representation of their schedules. These buttons switch between the list and calendar views at any time."
+>title="Browse journeys"
+>abstract="Use the Journeys workspace to browse, search, and filter journeys. Use the unified Calendar menu to view schedules across journeys and campaigns."
 
 ## Journey dashboard {#dashboard-jo}
 
@@ -53,55 +55,9 @@ The **[!UICONTROL Browse]** tab shows the list of existing journeys. You can sea
  
 In the journey list, all journey versions are displayed with the version number. When you search for a journey, newest versions appear at the top of the list the first time the application opens. Then, you can define the sorting you want and the application will keep it as a user preference. The journey's version is also displayed at the top of the journey edition interface, above the canvas. Learn more about [journey version management](publish-journey.md#journey-versions).
 
-### Journeys calendar {#calendar}
+### Calendar
 
-In addition to the journeys list, [!DNL Journey Optimizer] provides a calendar view of your journeys, offering a clear visual representation of their schedules.
-
-How journeys are represented:
-
-* By default, the calendar grid shows all live and scheduled journeys for the selected week. Additional filter options can show completed, stopped and finished activations or activations.
-* Draft journeys and journeys in test mode are not displayed.
-* Journeys spanning multiple days appear at the top of the calendar grid.
-* If no start time is specified, the closest manual activation time is used to position it in the calendar.
-* Journeys are displayed as 1-hour timespans, but this does not reflect actual send or completion time.
-
-To navigate in your Journeys calendar:
-
-1. To access the calendar view, open the journeys list and click the ![Calendar icon to switch to calendar view](assets/do-not-localize/timeline-icon.svg) icon.
-
-1. Use the arrow buttons or the date selector above the calendar to move between weeks.
-
-    The calendar displays all journeys scheduled for the current week. 
-
-    ![calendar view showing live journeys](assets/timeline-journeys.png)
-
-1. Click the ![Settings icon to toggle multi-day journey display](assets/do-not-localize/Smock_Gears_18_N.png) icon to toggle the display of items that span multiple days or weeks.
-
-    ![calendar view showing live campaigns](assets/journey-calendar-1.png)
-
-1. Click the ![Add external calendar icon](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) icon to manage and add up to three external calendars.
-
-    ![calendar view showing external calendars](assets/journey-calendar-2.png)
-
-1. Drag and drop your CSV files containing event names, start dates, and end dates.
-
-    Uploaded events appear for all users in your organization and display on both Journey and Campaign calendars.
-
-    +++CSV format should be as follows:
-
-    | Column1 | Column2 | Column3 |
-    |-|-|-|
-    | Event name | Start date in mm/dd/yy format | End date in mm/dd/yy format |
-    
-    +++
-
-1. If needed, you can hide, unhide, or remove added external calendars.
-
-    ![calendar view showing external calendars](assets/journey-calendar-3.png)
-
-1. For more details on a journey, click its visual block to open and explore its details.
-
-    ![campaign list with the information pane opened](assets/journey-calendar-4.png)
+Journey schedules are shown in the unified **[!UICONTROL Calendar]** menu with campaign schedules. [Learn how to use the Calendar](../start/calendar.md).
 
 ### Folders view {#journeys-folders}
 
@@ -111,7 +67,7 @@ Open the journeys folder view with the **[!UICONTROL Show folders]** icon on the
 
 >[!AVAILABILITY]
 >
->Folders for journeys are in limited availability. For current release status, see the [Journey Optimizer release cycle](../rn/releases.md).
+>Folders for journeys and campaigns are in limited availability. For current release status, see the [Journey Optimizer release cycle](../rn/releases.md).
 
 ## Filter your journeys {#journey-filter}
 
@@ -156,6 +112,8 @@ The journey status depends on its lifecycle. It can be:
 * **Paused**: the live journey has been paused, using the **Pause** button. [Learn more](../building-journeys/journey-pause.md)
 * **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey. [Learn more](../building-journeys/end-journey.md#stop-journey)
 * **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally. [Learn more](../building-journeys/end-journey.md)
+
+Any configured [start and end dates](journey-properties.md#dates) are surfaced in the journey header, next to the status badge. This gives you an at-a-glance view of the journey schedule without opening the properties panel.
 
 >[!NOTE]
 >
@@ -206,54 +164,5 @@ The following operations are available:
 >
 >You can pause/resume up to 10 journeys per operation.
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page explains how to browse, filter, view (list and calendar), duplicate, and perform bulk operations on journeys from the Journey Optimizer dashboard.
-
-**Intents:**
-
-* Browse and search journeys from the Overview and Browse tabs
-* Filter journeys by status, type, version, tags, creation date, or publication date
-* Switch between list view and calendar view to visualize journey schedules
-* Add and manage external calendars by uploading CSV files
-* Duplicate an existing journey to reuse its settings
-* Apply bulk operations to multiple selected journeys from the bulk action bar: add to package, move to folder, edit tags, manage access, delete, pause, or resume
-
-**Glossary:**
-
-* **Journey dashboard**: The main journeys interface with an Overview tab showing key metrics and a Browse tab listing all journeys. *(product-specific)*
-* **Discard rate**: The ratio of profiles not eligible to enter the journey (e.g., due to incorrect namespace or reentrance rules) compared to total profiles who attempted entry over the last 24 hours. *(product-specific)*
-* **Journeys calendar view**: A visual weekly calendar representation of live and scheduled journeys, accessible by clicking the calendar icon in the journeys list. *(product-specific)*
-* **Bulk action bar**: The action bar that appears at the bottom of the journeys list once one or more journeys are selected, offering add to package, move to folder, edit tags, manage access, delete, pause, and resume. *(product-specific)*
-* **Bulk pause/resume**: The pause and resume operations available from the bulk action bar, limited to Live journeys (pause) or Paused journeys (resume), up to 10 per operation. *(product-specific)*
-
-**Guardrails:**
-
-* Dashboard metrics refresh every 30 minutes and only when new data is available; they cover the last 24 hours only
-* Draft journeys and journeys in test mode are not shown in the calendar view
-* Bulk pause/resume is limited to 10 journeys per operation
-* The Resume button is only active when Paused journeys are selected; the Pause button is only active when Live journeys are selected
-* The calendar displays journeys as 1-hour timespans regardless of actual send or completion time
-
-**Terminology:**
-
-* Canonical name: Journey dashboard — Acronym: none — variants: journeys list, journeys overview
-* Synonyms: "Browse tab" = "journeys list"
-* Do not confuse: "Discard rate" ≠ "Error rate" — Discard rate counts profiles ineligible to enter; Error rate counts profiles that entered but encountered a processing error
-* Note: Add to package, move to folder, edit tags, manage access, and delete are shared with the Campaigns, Fragments, and Templates lists; pause and resume are journey-specific
-
-**FAQ:**
-
-* **Q: Where can I see key journey performance metrics at a glance?** — On the Overview tab of the Journey dashboard, which shows profiles processed, live journeys, error rate, and discard rate for the last 24 hours.
-* **Q: How do I find journeys that use a specific event or action?** — Use the Activity filters and Data filters in the journey list to display journeys referencing a specific event, field group, or action.
-* **Q: Can I pause multiple journeys at once?** — Yes; select multiple Live journeys in the list and click the Pause button in the bottom bar. Up to 10 journeys can be paused per operation.
-* **Q: How do I add external events to the journey calendar?** — Click the calendar add icon, then drag and drop a CSV file with event name, start date, and end date columns; uploaded events are visible to all users in the organization.
-* **Q: Why does the calendar show a journey as 1 hour even though it runs longer?** — The calendar displays all journeys as 1-hour timespans for visual consistency; this does not reflect actual send or completion time.
-* **Q: What bulk operations can I perform on multiple journeys at once?** — Besides pause and resume, you can select multiple journeys and add them to a package, move them to a folder, edit their tags, manage their access, or delete them, using the bulk action bar at the bottom of the journeys list.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-ui.md}}
 

@@ -8,15 +8,17 @@ topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
-TQID: https://experienceleague.adobe.com/W7M7wDP69oM-fT5nbS2YqVIK9QhBgJhNGy-G0ontmQ4
+TQID: 'https://experienceleague.adobe.com/W7M7wDP69oM-fT5nbS2YqVIK9QhBgJhNGy-G0ontmQ4'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a9f73820-6899-47c2-a597-3fec28ab756a
-    internal-label: Reporting
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
 subfeature_v2:
   - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
     internal-label: Performance monitoring
@@ -24,6 +26,10 @@ subfeature_v2:
     internal-label: Deliverability
   - id: b5afe8bf-bda6-41b5-ba06-922638872d63
     internal-label: Metrics catalog
+  - id: f8438d07-70d4-4505-9b79-dd9fb0f1c59f
+    internal-label: Alerts
+  - id: 9bb4b199-a2fd-5580-9021-eafbab678ff5
+    internal-label: Monitoring
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -56,16 +62,33 @@ Adobe Journey Optimizer provides two types of alerts:
 
 * **In-canvas validation alerts**: When building journeys and campaigns, use the **Alerts** button in the canvas to identify and resolve configuration errors before publishing. Learn how to [troubleshoot your journeys](../building-journeys/troubleshooting.md) and review your campaigns: [Action campaigns](../campaigns/review-activate-campaign.md) | [API-triggered campaigns](../campaigns/review-activate-api-triggered-campaign.md) | [Orchestrated campaigns](../orchestrated/start-monitor-campaigns.md).
 
-* **System monitoring alerts** (detailed on this page): Receive proactive notifications when operational thresholds are exceeded or issues are detected in live journeys and channel configurations, and when important campaign lifecycle events occur (activation, delivery, stop, and related failures). System alerts monitor metrics such as error rates, profile discards, and email deliverability issues, in addition to those campaign events.
+* **System monitoring alerts** (detailed on this page): Receive proactive notifications when operational thresholds are exceeded or issues are detected in live journeys and channel configurations, and when important campaign lifecycle events occur (activation, delivery, stop, and related failures). System alerts monitor metrics such as error rates, profile discards, anomalous journey traffic, and email deliverability issues, in addition to those campaign events.
 
-**Key benefits of system alerts:**
+  **Key benefits of system alerts:**
 
-* Proactive issue detection before customer impact
-* Automated monitoring of journey performance and health
-* Early warning for email deliverability problems
-* Reduced time to identify and resolve operational issues
+  * Proactive issue detection before customer impact
+  * Automated monitoring of journey performance and health
+  * Early warning for email deliverability problems
+  * Reduced time to identify and resolve operational issues
 
-System alerts are available from the **[!UICONTROL Alerts]** menu under **[!UICONTROL Administration]**. Adobe Experience Platform provides several predefined alert rules that you can enable, including [!DNL Adobe Journey Optimizer]-specific alerts for journeys and channel configurations.
+## How system alerts work
+
+Alerts are sent via email and/or in-app notifications in the Journey Optimizer notification center (bell icon in the top-right corner). Configure your preferred delivery channels in your [Adobe Experience Cloud Preferences](../start/user-interface.md#in-product-uc).
+
+![](assets/alert-pulse.png)
+
+Journey Optimizer provides both one-time alerts (informational events like "journey published") and repeating alerts (monitoring thresholds). Repeating alerts continue evaluating and notifying until the condition is resolved.
+
+To prevent notification fatigue from fluctuating values, alerts automatically resolve after 1 hour even if the condition persists. This prevents continuous notifications when metrics hover around threshold values.
+
+Alert lifecycle:
+
+1. **Triggering**: The alert triggers when its specific condition is met (e.g., error rate exceeds 20%)
+2. **Notification**: All subscribed users receive notifications via their configured channels
+3. **Monitoring**: The alert continues to monitor the condition at regular intervals
+4. **Resolution**: When the condition is resolved, subscribers receive a "Resolved" notification
+
+System alerts can be managed from the **[!UICONTROL Alerts]** menu under **[!UICONTROL Administration]**. Adobe Experience Platform provides several predefined alert rules that you can enable, including [!DNL Adobe Journey Optimizer]-specific alerts for journeys and channel configurations.
 
 ## Prerequisites
 
@@ -76,7 +99,6 @@ Before working with alerts:
 * **Sandbox awareness**: Alert subscriptions are sandbox-specific. When you subscribe to alerts, they apply only to the current sandbox. When a sandbox is reset, all alert subscriptions are also reset.
 
 * **Notification preferences**: Configure how you receive alerts (email and/or in-app) in your [Adobe Experience Cloud Preferences](../start/user-interface.md#in-product-uc).
-
 
 ## Available alerts {#available-alerts}
 
@@ -95,6 +117,8 @@ Browse the tabs below to review journey, campaign, and channel configuration ale
 >[!TAB Journey alerts]
 
 All journey notifications available in the user interface are listed in this tab. Select an alert name to expand its full description and guidance.
+
+➡️ [Learn more about alert delivery](#subscribe-alerts) | [Learn how to manage alert subscriptions](#subscribe-alerts) | [Learn how to monitor and resolve journey issues](../building-journeys/troubleshooting-execution.md)
 
 >[!CAUTION]
 >
@@ -140,7 +164,7 @@ There are several reasons a profile could be discarded, which will inform the me
 
 +++ Custom action error rate exceeded
 
-This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can define a custom threshold.
+This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The default threshold is set to 1% but you can define a custom threshold.
 
 >[!NOTE]
 >
@@ -225,9 +249,105 @@ To troubleshoot capping issues:
 
 +++
 
->[!TAB Campaign alerts]
++++ Journey Anomaly Detected
+
+This alert warns you when a live journey's daily traffic deviates from its own historical baseline, or drops to zero unexpectedly. Three metrics are monitored independently for each journey: **[!UICONTROL Journey Entries]**, **[!UICONTROL Journey Exits]**, and **[!UICONTROL Event Sends]**. The check runs once daily, using a 30-day lookback per journey.
+
+**Baseline:** the expected value for each metric combines Customer Journey Analytics' forecast for that day with a 7-day rolling median of the journey's own actual values. If the forecast falls below 50% of the rolling median, the rolling median is used instead, to avoid under-predicting a journey that has been running steadily.
+
+The following reasons can trigger an alert:
+
+* **Zero anomaly**: fires immediately if a metric drops to 0 on a day where the journey has previously produced non-zero traffic. **Read Audience** journeys are exempted on the current day, since that day's run may not have completed yet.
+* **Deviation threshold**: fires when the actual value differs from the expected value by 35% or more, once the journey has shown 3 to 4 consecutive non-zero days of history, and only if the expected value is at least 100 (to avoid flagging small-number noise).
+* If **Journey Entries** is anomalous on a given day, related anomalies on **Exits** and **Event Sends** are suppressed for that same day and journey, so a single root cause does not raise multiple alerts.
+
+Note that this alert applies only to live journeys of type **unitary event**, **read-audience**, or **audience-qualification** (recurring **Read Audience** journeys only), and requires the organization or sandbox to be subscribed to alerting.
+
+➡️ [Inspect the journey live report to troubleshoot a **Journey Anomaly Detected** alert](../reports/journey-live-report.md)
+
+>[!IMPORTANT]
+>
+>This alert is currently available in production sandboxes only, and is not available in development or staging sandboxes.
+
++++
+
++++ Journey Message Bounce Rate Exceeded
+
+>[!AVAILABILITY]
+>
+>Available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
+
+This alert notifies you when a journey's message bounce rate exceeds the configured threshold.
+
+Only sandbox-level subscription is supported, covering all journeys in the sandbox. Individual journey subscription is not available.
+
+The default threshold is 5%, which you can override on the **[!UICONTROL Alerts]** screen. For more information, see [Define a custom alert threshold](#custom-threshold).
+
++++
+
++++ Journey Message Error Rate Exceeded
+
+>[!AVAILABILITY]
+>
+>Available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
+
+This alert notifies you when a journey's message delivery error rate exceeds the configured threshold.
+
+Only sandbox-level subscription is supported, covering all journeys in the sandbox. Individual journey subscription is not available.
+
+The default threshold is 1%, which you can override on the **[!UICONTROL Alerts]** screen. For more information, see [Define a custom alert threshold](#custom-threshold).
+
++++
+
++++ Read Audience Export Started
+
+>[!AVAILABILITY]
+>
+>Available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
+
+This alert notifies you when a journey begins processing its **Read Audience** export. It is an event notification: it has no threshold.
+
+You can subscribe at the journey level or at the sandbox level. Learn more in [Subscribe to alerts](#subscribe-alerts).
+
++++
+
++++ Read Audience Export Completed
+
+>[!AVAILABILITY]
+>
+>Available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
+
+This alert notifies you when a journey completes processing its **Read Audience** export. It is an event notification: it has no threshold.
+
+You can subscribe at the journey level or at the sandbox level. Learn more in [Subscribe to alerts](#subscribe-alerts).
+
+>[!NOTE]
+>
+>The completion of a **Read Audience** export does not mean that message sending or the journey has completed.
+
++++
+
++++ Journey Event Throughput Guardrail Exceeded
+
+>[!AVAILABILITY]
+>
+>Available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
+
+This alert notifies you when the organization-wide journey event throughput guardrail has been exceeded and the resulting event queueing time exceeds the configured threshold, measured in seconds.
+
+It is not tied to a single journey. When the event throughput guardrail is exceeded for the organization as a whole, all events for all journeys in all sandboxes are queued and processed at 5,000 events per second for as long as the throughput exceeds the limit. A single alert is sent when the queueing time exceeds the configured alert threshold.
+
+➡️ [Learn more about journey event throughput limits](../event/about-events.md#event-throughput)
+
+The default threshold is 600 seconds of queueing time, which you can override on the **[!UICONTROL Alerts]** screen. For more information, see [Define a custom alert threshold](#custom-threshold).
+
++++
+
+>[!TAB Action and API-triggered campaign alerts]
 
 System alerts notify you when important lifecycle or delivery events occur on **Action** and **API-triggered** campaigns. Select an alert name below to expand its description.
+
+➡️ [Learn more about alert delivery](#subscribe-alerts) | [Learn how to manage alert subscriptions](#subscribe-alerts) | [Learn how to monitor and resolve campaign issues](../campaigns/manage-campaigns.md)
 
 +++ Campaign Activated
 
@@ -305,9 +425,75 @@ Notifies you when **message delivery** for a campaign **fails**. Review campaign
 
 +++
 
+>[!TAB Orchestrated campaign alerts]
+
+System alerts notify you about important events in an Orchestrated campaign. Select an alert name below to expand its description.
+
+➡️ [Learn more about alert delivery](#subscribe-alerts) | [Learn how to manage alert subscriptions](#subscribe-alerts) | [Learn how to monitor and resolve Orchestrated campaign issues](../orchestrated/start-monitor-campaigns.md#logs-tasks)
+
++++ Orchestrated Campaign Error
+
+Notifies you when an Orchestrated campaign encounters an error during execution.
+
++++
+
++++ Orchestrated Campaign Activity Alert
+
+Notifies you when execution reaches an **[!UICONTROL Alert]** activity in an Orchestrated campaign. The notification uses the static title and message configured in the activity.
+
+The activity's position in the flow and the upstream orchestration logic determine when the alert fires. To send an alert only when a condition is met, place the Alert activity on the relevant branch of a **[!UICONTROL Test]** activity.
+
+[Learn how to configure the Alert activity](../orchestrated/activities/alert.md).
+
++++
+
++++ Orchestrated Campaign Delivery Started
+
+Notifies you when a delivery from an Orchestrated campaign starts.
+
++++
+
++++ Orchestrated Campaign Delivery Failed
+
+Notifies you when a delivery from an Orchestrated campaign fails.
+
++++
+
++++ Orchestrated Campaign Delivery Completed
+
+Notifies you when a delivery from an Orchestrated campaign completes successfully.
+
++++
+
++++ Orchestrated Campaign Start
+
+Notifies you each time an Orchestrated campaign run starts. For recurring Orchestrated campaigns, each recurrence triggers this alert. This alert is distinct from the publication alert: a scheduled Orchestrated campaign can be published without having started yet.
+
++++
+
++++ Orchestrated Campaign Stopped
+
+Notifies you when an Orchestrated campaign is stopped.
+
++++
+
++++ Orchestrated Campaign Publish
+
+Notifies you when an Orchestrated campaign is published.
+
++++
+
++++ Orchestrated Campaign Completed
+
+Notifies you when an Orchestrated campaign completes after all recurrences have finished.
+
++++
+
 >[!TAB Channel configuration alerts]
 
 Channel configuration monitoring alerts available in the user interface are listed in this tab. Select an alert name to expand remediation steps and notes.
+
+➡️ [Learn more about alert delivery](#subscribe-alerts) | [Learn how to manage alert subscriptions](#subscribe-alerts) | [Learn how to monitor and resolve channel configuration issues](../configuration/channel-surfaces.md)
 
 +++ AJO Domain DNS record missing
 
@@ -418,29 +604,6 @@ If this alert is triggered, follow the steps below to investigate and resolve th
 
 Alert subscriptions determine which users receive notifications when specific conditions are met (such as error rate thresholds being exceeded or configuration issues detected). Only subscribed users receive alert notifications for the selected alerts.
 
-### How alert notifications work
-
-**Alert lifecycle:**
-
-1. **Triggering**: The alert triggers when its specific condition is met (e.g., error rate exceeds 20%)
-2. **Notification**: All subscribed users receive notifications via their configured channels
-3. **Monitoring**: The alert continues to monitor the condition at regular intervals
-4. **Resolution**: When the condition is resolved, subscribers receive a "Resolved" notification
-
-**Notification delivery:**
-
-* **Delivery channels**: Alerts are sent via email and/or in-app notifications in the Journey Optimizer notification center (bell icon in the top-right corner). Configure your preferred delivery channels in your [Adobe Experience Cloud Preferences](../start/user-interface.md#in-product-uc).
-
-* **Alert types**: Journey Optimizer provides both one-time alerts (informational events like "journey published") and repeating alerts (monitoring thresholds). Repeating alerts continue evaluating and notifying until the condition is resolved.
-
-* **Auto-resolution**: To prevent notification fatigue from fluctuating values, alerts automatically resolve after 1 hour even if the condition persists. This prevents continuous notifications when metrics hover around threshold values.
-
-**Alternative subscription method:**
-
-For advanced integrations, you can subscribe via I/O Events to send alerts to external systems. See the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/subscribe.html){target="_blank"}.
-
-### Subscription methods
-
 You can subscribe to alerts in several ways:
 
 * **[Global (sandbox) subscription](#subscribe-alerts)**: Receive notifications for all matching journeys or campaigns in the **current sandbox**. Use this when you want broad coverage.
@@ -496,6 +659,8 @@ Journey-specific subscriptions allow you to monitor individual high-priority jou
    * [Journey Published](#available-alerts)
    * [Journey Finished](#available-alerts)
    * [Custom Action Capping Triggered](#available-alerts)
+   * [Read Audience Export Started](#available-alerts) (Limited Availability)
+   * [Read Audience Export Completed](#available-alerts) (Limited Availability)
 
 1. Click **[!UICONTROL Save]** to confirm your subscriptions.
 
@@ -505,7 +670,7 @@ Open the same dialog, deselect the alert(s), and click **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
->The [Read Audience Trigger Unsuccessful](#available-alerts) alert is only available through global subscription, not per-journey subscription.
+>The [Read Audience Trigger Unsuccessful](#available-alerts) alert is only available through sandbox-level subscription, not per-journey subscription. The same applies to the [Journey Message Bounce Rate Exceeded](#available-alerts) and [Journey Message Error Rate Exceeded](#available-alerts) alerts, which support sandbox-level subscription only, and to the [Journey Event Throughput Guardrail Exceeded](#available-alerts) alert, which applies to the organization as a whole.
 
 >[!TAB Campaign-specific subscription]
 
@@ -548,7 +713,14 @@ For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. Y
 
 ### Define a custom threshold {#custom-threshold}
 
-You can set thresholds for the [Journey alerts](#available-alerts). The threshold alerts above default to 20%. 
+You can set thresholds for the [Journey alerts](#available-alerts). Each alert has its own default threshold, and you can override all of them:
+
+* [Profile discard rate](#available-alerts): 20%
+* [Profile error rate](#available-alerts): 20%
+* [Custom action error rate](#available-alerts): 1%
+* [Journey Message Bounce Rate Exceeded](#available-alerts): 5%
+* [Journey Message Error Rate Exceeded](#available-alerts): 1%
+* [Journey Event Throughput Guardrail Exceeded](#available-alerts): 600 seconds. For this alert, the threshold is the event queueing time. 
 
 To change the threshold:
 

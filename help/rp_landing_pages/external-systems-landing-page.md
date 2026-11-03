@@ -5,6 +5,9 @@ title: Integrate your journeys with external systems
 description: Integrate your journeys with external systems
 redpen-status: CREATED_||_2025-08-11_21-16-41
 exl-id: f61a2c42-f082-4eef-b890-8224357f215f
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Integrate your journeys with external systems{#section-overview}
 

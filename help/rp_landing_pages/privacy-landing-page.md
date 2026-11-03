@@ -5,6 +5,9 @@ title: Privacy
 description: Privacy
 redpen-status: CREATED_||_2025-08-11_21-20-29
 exl-id: d6c8e958-de3b-4aec-8b3b-8b0b3daa0098
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Privacy{#section-overview}
 

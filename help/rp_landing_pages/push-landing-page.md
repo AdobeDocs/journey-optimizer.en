@@ -5,10 +5,13 @@ title: Push notification channel
 description: Push notification channel
 redpen-status: CREATED_||_2025-08-11_20-37-12
 exl-id: 8d82ef2f-91ee-4502-9a01-f66ccbd55fea
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Push notification channel{#section-overview}
 
-Push notifications in Adobe Journey Optimizer are a powerful way to engage your mobile app users by delivering timely, personalized messages directly to their devices - even when they’re not actively using your app. Whether you’re looking to re-engage dormant users, share updates, or drive specific actions, this channel lets you create impactful campaigns tailored to your audience. In this section, you’ll explore everything from setting up push notifications and designing compelling content to validating and sending your messages. Along the way, you’ll learn how to optimize for different platforms (iOS and Android), manage opt-ins, and leverage advanced features like silent notifications and rapid delivery modes for large-scale outreach. Let’s turn your app into a dynamic communication hub!
+Push notifications in Adobe Journey Optimizer are a powerful way to engage your mobile app users by delivering timely, personalized messages directly to their devices - even when they're not actively using your app. Whether you're looking to re-engage dormant users, share updates, or drive specific actions, this channel lets you create impactful campaigns tailored to your audience. In this section, you'll explore everything from setting up push notifications and designing compelling content to validating and sending your messages. Along the way, you'll learn how to optimize for different platforms (iOS and Android), manage opt-ins, and leverage advanced features like silent notifications and rapid delivery modes for large-scale outreach. Let's turn your app into a dynamic communication hub!
 
 >[!IMPORTANT]
 >
@@ -24,7 +27,7 @@ Push notifications can be created:
 
 >[!NOTE]
 >
->While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails and SMS messages, push notifications do not require any action on your side, as recipients can unsubscribe through their devices themselves. For example, upon downloading or when using your app, they can select to stop notifications. Similarly, they can change the notification settings through the mobile operating system.
+>While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails and mobile messages, push notifications do not require any action on your side, as recipients can unsubscribe through their devices themselves. For example, upon downloading or when using your app, they can select to stop notifications. Similarly, they can change the notification settings through the mobile operating system.
 
 
 ## Push notification channel

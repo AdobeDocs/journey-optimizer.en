@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: content, experiment, multiple, audience, treatment
 exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
-TQID: https://experienceleague.adobe.com/OL-eyOYlWXYV8Wg4gSHXocfPpqUuwgfw-L8fKrAeTzE
+TQID: 'https://experienceleague.adobe.com/OL-eyOYlWXYV8Wg4gSHXocfPpqUuwgfw-L8fKrAeTzE'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: 31bc9329-ef7e-5c6b-a292-c7386a476887
+    internal-label: Experimentation
 subfeature_v2:
   - id: f29a52db-c90c-4345-902e-b586d1406d8d
     internal-label: Content experiment
@@ -153,6 +155,8 @@ For you content experiment, you can choose between three types of experiment:
 
 1. You can then choose to allocate a precise percentage to each **[!UICONTROL Treatment]** or simply switch on the **[!UICONTROL Distribute evenly]** toggle bar.
 
+    With **[!UICONTROL Distribute evenly]** switched on, you cannot set treatment percentages. With it switched off, set a percentage for each treatment.
+
 1. Enable the auto-scale experiment to automatically roll out the winning variation of your experiment. [Learn more on how to scale the winner](#scale-winner)
 
     ![](assets/content_experiment_14.png)
@@ -269,7 +273,7 @@ After configuring your experimentation, you can follow the success of your deliv
 >The Scale the Winner feature is currently supported for the following channels:
 >
 >* Inbound Channels (e.g., Web, In-app message, Code-based experience) in any journey or campaign.
->* Outbound Channels (e.g., Email, Push notification, SMS) in API-triggered transactional campaigns.
+>* Outbound Channels (e.g., Email, Push notification, Mobile message) in API-triggered transactional campaigns.
 
 Scale the Winner enables you to automatically or manually roll out the winning variation of an experiment to your full audience. This feature ensures that, once a winner is determined, you can amplify its reach and effectiveness without constantly monitoring the experiment.
 
