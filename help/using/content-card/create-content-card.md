@@ -61,15 +61,15 @@ This page explains how to author a content card and define its content, either a
 
 To add a Content card to a journey, follow these steps:
 
-1. Open your [journey](../building-journeys/journey-gs.md), then drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
+1. Open your [journey](../building-journeys/journey-gs.md), then choose an **[!UICONTROL Action]** activity. Learn more about the [Action activity](../building-journeys/journey-action.md).
 
     >[!IMPORTANT]
     >
     >Legacy native channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
-1. Select **[!UICONTROL Card]** as the action type.
-
     ![](assets/content-card-jo-1.png)
+
+1. Select **[!UICONTROL Card]** as the action type.
 
     >[!NOTE]
     >
@@ -82,6 +82,8 @@ To add a Content card to a journey, follow these steps:
 1. You are directed to the **[!UICONTROL Actions]** tab. From there, select or create the content card configuration to use. [Learn more](content-card-configuration.md)
 
     ![](assets/content-card-jo-2.png)
+
+1. Select an [Inbox configuration](../inbox/inbox-configuration.md) that defines the inbox surface for this **Content card**.
 
 1. You can now start designing your content with the **[!UICONTROL Edit content]** button. [Learn more](design-content-card.md)
 
@@ -168,7 +170,7 @@ To start building your content cards through a campaign, follow the steps below.
 
 1. Select an [Inbox configuration](../inbox/inbox-configuration.md) that defines the inbox surface for this **Content card**.
 
-    ![](assets/content-card-create-2.png)
+    ![](assets/content-card-create-3.png)
 
 1. To test the content of your message, click **[!UICONTROL Create experiment]**. This allows you to test multiple variables of a delivery on sample populations to determine which treatment has the greatest impact on the targeted audience. [Learn more about content experiment](../content-management/content-experiment.md).
 
