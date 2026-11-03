@@ -181,7 +181,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <tr>
 <td>
 <p>Five new alerts help you monitor journey message bounce and delivery error rates, receive notifications when journey <strong>Read Audience</strong> exports start and complete, and detect journey event delays due to queueing when the event throughput guardrail has been exceeded. Threshold-based alerts support configurable thresholds, and <strong>Read Audience</strong> export notifications support journey-level subscriptions.</p>
-<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p><img src="assets/do-not-localize/journey-alerts.gif"></p>
 <p>For more information, refer to the <a href="../reports/alerts.md#available-alerts">detailed documentation</a>.</p>
 <p>Availability date: October 29, 2026</p>
@@ -247,12 +247,6 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 * **Journey Execution Timeline skill** - Coworker can now return the end-to-end timeline of a Read Audience (batch or scheduled export) journey batch. See how long a batch took, when the audience export, the journey execution, and the delivery started and ended, and the profile-level P95 and P99 for entry, exit, or execution time. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-execution-timeline)
 
   Availability date: October 26, 2026
-
-* **New journey alerts (Limited Availability)** - Five new alerts help you monitor journey message bounce and delivery error rates, receive notifications when journey Read Audience exports start and complete, and detect journey event delays due to queueing when the event throughput guardrail has been exceeded. Threshold-based alerts support configurable thresholds, and Read Audience export notifications support journey-level subscriptions. [Learn more](../reports/alerts.md#available-alerts)
-
-  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
-
-  Availability date: October 29, 2026
 
 * [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns (Limited Availability)** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view. [Learn more](../start/calendar.md)
 
