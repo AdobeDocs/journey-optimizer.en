@@ -98,13 +98,13 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <table>
 <thead>
 <tr>
-<th><strong>Self-serve setup for High throughput email</strong><br/></th>
+<th><strong>Self-serve setup for High throughput email and push</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>If you have purchased the High throughput transactional messaging add-on, you can now set up High throughput for API-triggered email campaigns yourself in the product UI. Create a dedicated High throughput IP pool, then create a High throughput email channel configuration that uses it, without requesting a manual setup for each resource. </p>
+<p>If you have purchased the High throughput transactional messaging add-on, you can now set up High throughput for API-triggered email and push campaigns yourself in the product UI. For email, create a dedicated High throughput IP pool, then create a High throughput email channel configuration that uses it. For push, create a push channel configuration with the High throughput toggle enabled; no dedicated IP pool is needed and push ID personalization is not available. You no longer need to request a manual setup for each resource. </p>
 <p>For more information, refer to the <a href="../campaigns/api-triggered-high-throughput.md">detailed documentation</a>.</p>
 <p>Availability date: October 28, 2026</p>
 </td>

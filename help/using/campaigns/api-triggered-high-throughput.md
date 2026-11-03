@@ -58,7 +58,7 @@ This page explains how High throughput campaigns differ from standard API-trigge
   * All personalization must be included in the API payload as **contextual data**. [Learn how to personalize content using contextual data](../campaigns/api-triggered-campaign-content.md#contextual) 
   * Profile-based personalization is **not** supported. If profile variables are used, validation errors will occur.  
 
-* **Personalization in High throughput channel configurations** - High throughput email channel configurations do **not** support contextual or profile-based personalization.
+* **Personalization in High throughput channel configurations** - High throughput channel configurations do **not** support contextual or profile-based personalization.
 
 * **Matching resources** - High throughput campaigns, channel configurations, and IP pools can only be used with each other. Standard and High throughput resources cannot be mixed.
 
@@ -120,7 +120,18 @@ In other words:
   * You can pass all personalization in the API payload.  
   * You want to use the Email or Push channel.
 
-## Prerequisite {#prerequisite}
+## Configure High throughput API-triggered campaigns {#configure-high-throughput}
+
+Once the [prerequisite](#prerequisite) is met, you can set up High throughput yourself in the product UI for both channels:
+
+* **Email**: create a dedicated High throughput IP pool, then a High throughput email channel configuration that uses it. [Learn more](#setup-guidelines)
+* **Push**: create a High throughput push channel configuration. [Learn more](#setup-push)
+
+>[!CAUTION]
+>
+>High throughput channel configurations (and, for email, IP pools) can only be used with High throughput API-triggered campaigns. Their type cannot be changed after creation: a standard resource cannot be converted to High throughput, and vice versa.
+
+### Prerequisite {#prerequisite}
 
 After purchasing the **High throughput transactional messaging** add-on, contact Adobe Customer Care or your Adobe representative so that the required backend activation <!--and one-time setup -->can be completed.
 
@@ -130,17 +141,7 @@ After purchasing the **High throughput transactional messaging** add-on, contact
 
 ## Set up High throughput API-triggered email campaigns {#setup-guidelines}
 
-To use High throughput email campaigns, follow the steps below.
-
->[!IMPORTANT]
->
->The IP pool and channel configurations designated for High throughput transactional messages must be used exclusively for that purpose, and not be used with standard transactional messaging using API-triggered campaigns or journeys.
-
-The flow described above applies to the email channel only.
-
->[!NOTE]
->
->Push channel setup remains a manual on-demand process. [Learn more](#setup-push)
+To configure High throughput email campaigns, follow the steps below.
 
 ### Create a dedicated IP pool {#create-ip-pool}
 
@@ -152,10 +153,6 @@ When you purchase the High throughput add-on, sending IPs are provisioned in a s
 * **IP warm-up** - To make sure the secondary region IPs are ready when needed, part of your High throughput traffic is routed through the secondary region on an ongoing basis. This keeps these IPs warm. Sending from IPs with no sending history could cause internet service providers (ISPs) to reject your emails.
 
 Create the IP pool as follows.
-
->[!NOTE]
->
->This IP pool is exclusively for High throughput traffic. You cannot use it in channel configurations that are not designated for High throughput API-triggered campaigns.
 
 1. Create an IP pool. [Learn how](../configuration/ip-pools.md)
 
@@ -183,22 +180,32 @@ The dedicated IP pool is now ready for use with High throughput channel configur
 
 Your High throughput email channel configuration is now ready for use in a High throughput API-triggered campaign.
 
->[!CAUTION]
+>[!NOTE]
 >
->The type of an IP pool or channel configuration cannot be changed after creation. A standard resource cannot be converted to High throughput, and a High throughput resource cannot be converted back to standard.
-
-When you create a High throughput API-triggered campaign, only High throughput channel configurations are available for selection.
+>When you create a High throughput API-triggered email campaign, only High throughput channel configurations are available for selection.
 
 ## Set up High throughput push campaigns {#setup-push}
 
-For push, setup remains a manual on-demand process.
+As with email, you can set up High throughput for push yourself, directly in the interface. To do so, follow the steps below.
 
-You must create a new push channel configuration and contact Adobe Customer Care to request the activated push channel configuration to be mapped to the High throughput capability.
+1. Create a **push** channel configuration. [Learn how](../push/push-configuration.md#message-preset)
 
-Provide the channel configuration details along with your organization ID.
+1. Enable the **[!UICONTROL Create as a High throughput configuration]** toggle.
+
+    ![High throughput push channel configuration](assets/high-throughput-push-config.png){width=80%}
+
+1. Select the platform(s) and corresponding App id(s) for your push configuration.
+
+    >[!NOTE]
+    >
+    >When the High throughput toggle is enabled, [push App id personalization](../push/push-configuration.md#app-id-personalization) is not available.
+
+1. Submit the channel configuration.
+
+Your High throughput push channel configuration is now ready for use in a High throughput API-triggered campaign.
 
 >[!NOTE]
 >
->The High throughput IP pool and channel configuration flow described above applies to the email channel only.
+>When you create a High throughput API-triggered push campaign, only High throughput channel configurations are available for selection.
 
 {{$include /help/_includes/do-not-localize/campaigns/ai-augmented-api-triggered-high-throughput.md}}

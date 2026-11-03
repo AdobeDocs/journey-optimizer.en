@@ -15,7 +15,7 @@ For complete understanding, this information should be combined with the documen
 
 * Decide between a standard API triggered campaign and a High throughput campaign
 * Know the guardrails and limitations of High throughput campaigns
-* Set up a channel configuration and an IP pool for High throughput campaigns
+* Set up High throughput campaigns: a dedicated IP pool and a channel configuration for email, a channel configuration for push
 * Know how to personalize a High throughput campaign (contextual data only)
 * Know which datasets store feedback and tracking data for High throughput campaigns
 
@@ -43,14 +43,17 @@ For complete understanding, this information should be combined with the documen
 * Web push: High Throughput web push campaigns run on shared infrastructure and do not benefit from the dedicated capacity reserved for High Throughput mobile push.
 * Push payload size: the maximum payload size is 5 KB (hard limit).
 * Denylist behavior for push: when a message hits a denylist, delivery feedback is retained but no profile-update feedback is produced, so denylist responses do not trigger profile updates or token invalidation in Adobe Experience Platform.
-* The IP pool and channel configurations designated for High throughput transactional messages must be used exclusively for that purpose, and not be used with standard transactional messaging using API triggered campaigns or journeys.
+* High throughput channel configurations (and, for email, IP pools) can only be used with High throughput API triggered campaigns, and not with standard transactional messaging using API triggered campaigns or journeys.
+* The type of a channel configuration or IP pool cannot be changed after creation: a standard resource cannot be converted to High throughput, and vice versa.
+* Push App id personalization is not available in High throughput push channel configurations.
+* When creating a High throughput API triggered campaign, only High throughput channel configurations are available for selection.
 
 **Prerequisites and permissions:**
 
 * The organization must be licensed with the High Throughput transactional messaging add-on.
-* A new IP pool.
-* A new channel configuration.
-* A request to Adobe Customer Care to map the activated channel configuration to the High throughput capability, with the channel configuration and IP Pool details and your organization ID.
+* A one-time backend activation after purchasing the add-on, requested through Adobe Customer Care or your Adobe representative (not needed for each channel configuration).
+* Email: a new dedicated High throughput IP pool, and a new email channel configuration with the **Create as a High throughput configuration** toggle enabled that uses this IP pool.
+* Push: a new push channel configuration with the **Create as a High throughput configuration** toggle enabled, with the platform(s) and App id(s) selected. No IP pool is needed.
 
 **Applicability:**
 
@@ -70,7 +73,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can a High throughput campaign use profile attributes for personalization?** — No. Profile-based personalization is not supported, and validation errors occur if profile variables are used. Pass all personalization as contextual data in the API payload.
 * **Q: Can one campaign serve both profile-enabled and non-profile use cases?** — No. Create two separate campaigns, and make the calling system decide which one to trigger.
 * **Q: Is throughput shared between standard and High throughput campaigns?** — No. The throughput provisioned under the High Throughput add-on is exclusively reserved for High throughput campaigns.
-* **Q: How do I set up High throughput campaigns?** — Create a new IP pool, create a new channel configuration, then contact Adobe Customer Care to request that the activated channel configuration be mapped to the High throughput capability.
+* **Q: How do I set up High throughput campaigns?** — Both email and push can be self-configured in the UI. For email, create a dedicated High throughput IP pool, then create a channel configuration with the **Create as a High throughput configuration** toggle enabled and select that IP pool. For push, create a push channel configuration with the toggle enabled and select the platform(s) and App id(s); no IP pool is needed. App id personalization is not available for High throughput push.
 
 **Related pages:**
 
@@ -80,6 +83,8 @@ For complete understanding, this information should be combined with the documen
 * Personalized PDF attachments: Learn more about personalized PDF attachments (email/pdf-attachments.md#personalized-attachments)
 * Create IP pools: Learn how to create IP pools (configuration/ip-pools.md)
 * Set up channel configurations: Learn how to set up channel configurations (configuration/channel-surfaces.md)
+* Set up push channel configurations: Learn how to create a push channel configuration (push/push-configuration.md#message-preset)
+* Push App id personalization: Learn about push App id personalization (push/push-configuration.md#app-id-personalization)
 
 +++
 
