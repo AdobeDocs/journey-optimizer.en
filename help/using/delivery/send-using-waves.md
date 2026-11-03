@@ -47,6 +47,7 @@ You define the number of waves, their size (as a percentage of the audience or a
 The following limitations apply to wave sending in any context:
 
 * Wave sending applies to **outbound** channels only (Email, Mobile message, Push).
+* **Direct mail is not currently supported** for wave sending. You cannot send direct mail messages in waves.
 * You must define at least **2 waves** and you can add up to **10 waves**.
 * The minimum interval between the start of two waves is **30 minutes**.
 * A wave start cannot be set in the past.
@@ -242,6 +243,12 @@ In summary: *who* is included is fixed upfront, but *the data used to personaliz
 +++ Does wave sending work with inbound channels?
 
 No. Wave sending applies to **outbound** channel actions only: Email, Mobile message, and Push notifications. Inbound channels (such as Web, In-app, or Code-based experiences) are not affected by wave sending configuration.
+
++++
+
++++ Does wave sending work with direct mail?
+
+No. Wave sending is not currently supported for the **Direct mail** channel. Direct mail messages cannot be sent in waves.
 
 +++
 

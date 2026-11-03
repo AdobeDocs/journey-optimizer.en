@@ -79,7 +79,7 @@ Set the targeting dimension, build your query, and choose how the activity decid
 
      ![](../assets/incremental-query-2.png)
 
-1. Under **[!UICONTROL Processed data]**, choose your **[!UICONTROL Path to the date field]**. The attribute must use the **Date Time** format. Each run returns only rows whose date is after the last execution.
+1. Under **[!UICONTROL Processed data]**, choose your **[!UICONTROL Path to the date field]**. A date field is required, and the attribute must use the **Date Time** format. Each run returns only rows whose date is after the last execution.
 
       ![Incremental query activity configuration in the Orchestrated campaign canvas](../assets/incremental-query-3.png)
 

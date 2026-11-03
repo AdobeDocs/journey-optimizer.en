@@ -136,7 +136,7 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
 
     1. In the **[!UICONTROL Supplemental identifier]** field, use the expression editor to select the supplemental identifier attribute.
 
-        For audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}, if your CSV audience contains multiple rows per profile ID, make sure Express Activation is enabled first — see [Supplemental identifiers with external audiences](#external-audiences).
+        For external audiences created via API (such as audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}), if your audience contains multiple rows per profile ID, make sure Express Activation is enabled first — see [Supplemental identifiers with external audiences](#external-audiences).
 
         >[!NOTE]
         >
@@ -211,7 +211,7 @@ Supplemental ID is supported for external audiences, including audiences [import
 
 * Use case 1: One row per unique profile + supplemental ID pair
 
-  This is the primary use case for CSV and Federated Audience Composition audiences. The audience contains multiple rows where each row represents a unique combination of a profile (e.g., a customer) and a supplemental ID (e.g., an account or order ID). Each row is treated as an independent activation record.
+  This is the primary use case for external audiences, including CSV and Federated Audience Composition audiences. The audience contains multiple rows where each row represents a unique combination of a profile (e.g., a customer) and a supplemental ID (e.g., an account or order ID). Each row is treated as an independent activation record.
 
   | profile_id | account_id *(Supplemental ID)* | other_attributes |
   | --- | --- | --- |
@@ -234,13 +234,13 @@ Supplemental ID is supported for external audiences, including audiences [import
 
 ### How to configure {#external-configuration}
 
-For CSV audiences using Use Case 1 (where the audience intentionally contains multiple rows for the same profile ID)you must enable Express Activation before configuring the journey. See the prerequisite below. For all other cases, configure the journey directly.
+For external audiences created via API that use Use Case 1 (where the audience intentionally contains multiple rows for the same profile ID), you must enable Express Activation before configuring the journey. See the prerequisite below. Federated Audience Composition audiences have Express Activation enabled automatically, so no manual step is needed. For all other cases, configure the journey directly.
 
-+++ Prerequisite: Enable Express Activation on CSV audiences via API
++++ Prerequisite: Enable Express Activation on external audiences via API
 
 >[!IMPORTANT]
 >
->This prerequisite applies only to CSV audiences where the audience intentionally contains multiple rows for the same profile ID (Use Case 1). Federated Audience Composition audiences have Express Activation enabled by default and do not require this step. The Audience Portal UI does not support setting `expressActivation` — you must use the External Audience API.
+>This prerequisite applies to all external audiences created via API (CSV or any other externally created audience) where the audience intentionally contains multiple rows for the same profile ID (Use Case 1). Federated Audience Composition audiences are always created with `expressActivation: true` automatically as part of the composition flow and do not require this step. The Audience Portal UI does not support setting `expressActivation` — you must use the External Audience API.
 
 You must enable `expressActivation` on the audience at creation time. This tells Journey Optimizer to activate every record independently, without deduplication by profile ID. This flag cannot be changed after the audience is created.
 
@@ -277,7 +277,7 @@ Request body (set `expressActivation: true`):
 
 >[!NOTE]
 >
->`expressActivation` defaults to `false`. It must be set at audience creation time and cannot be changed after creation. All Federated Audience Composition audiences have Express Activation enabled by default and do not require this flag.
+>`expressActivation` defaults to `false`. It must be set at audience creation time and cannot be changed after creation. Federated Audience Composition audiences have Express Activation enabled automatically and do not require this flag.
 
 See the [create external audience API documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/create-external-audience#create){target="_blank"} for the full reference.
 
@@ -286,13 +286,13 @@ See the [create external audience API documentation](https://experienceleague.ad
 To configure the journey:
 
 1. Open or create a journey with a **[!UICONTROL Read audience]** node.
-1. In the **[!UICONTROL Read audience]** node settings, select your CSV or Federated Audience Composition audience.
+1. In the **[!UICONTROL Read audience]** node settings, select your external audience (for example, a CSV or Federated Audience Composition audience).
 1. Toggle on the **[!UICONTROL Use supplemental identifier]** option, then in the **[!UICONTROL Supplemental identifier]** field, use the expression editor in **[!UICONTROL Advanced mode]** to choose the attribute you want to use as the secondary identifier (e.g., `account_id`, `order_number`).
 1. The selected attribute is treated as the supplemental ID for the journey — no identity registration is required.
 
 ### Deduplication behavior {#external-dedup}
 
-When an audience has Express Activation enabled (always true for Federated Audience Composition - must be set explicitly for CSV), Journey Optimizer handles deduplication based on how the journey is configured:
+When an audience has Express Activation enabled (set automatically for Federated Audience Composition; must be set explicitly in the API payload for other external audiences, such as CSV), Journey Optimizer handles deduplication based on how the journey is configured:
 
 | Scenario | Example audience rows | Behavior |
 | --- | --- | --- |

@@ -148,6 +148,10 @@ Learn how to leverage content optimization in action or API triggered campaigns.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3470368?quality=12)
 
+Learn how to use action groups to combine email, push, and SMS, then optimize channel selection with manual priority, customer preferences, or AI engagement scores.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3505310/?learn=on)
+
 **Related topics**
 
 * [Create a campaign](../campaigns/create-campaign.md)

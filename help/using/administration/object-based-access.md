@@ -64,6 +64,8 @@ To be able to [create labels](#create-labels), you must belong to a role with th
 
 To be able to [assign labels](#assign-labels), you must belong to a role with a **Manage** permission i.e., [!DNL Manage journeys], [!DNL Manage Campaigns], or [!DNL Manage decisions]. Without this permission, the **[!UICONTROL Manage access]** button is greyed out.
 
+In addition, to assign labels to journeys, your role must include either the **[!DNL Manage segments]** or the **[!DNL Manage schemas]** permission. 
+
 Learn more about permissions in [this section](../administration/permissions.md).
 
 ## Create labels {#create-labels}

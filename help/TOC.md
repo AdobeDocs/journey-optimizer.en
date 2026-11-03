@@ -12,7 +12,7 @@ nudge: yes
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new} 
   + [Release cycle](using/rn/releases.md) 
-  + [Pre-release notes](using/rn/e-release-notes.md)
+  + {hide-from-toc}[Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -38,6 +38,7 @@ nudge: yes
     + [Start from your goal](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
     + [Journeys vs campaigns](using/start/journeys-vs-campaigns.md)
+    + [Use the Calendar](using/start/calendar.md)
     + {hide-from-toc} [Journeys vs Campaigns - 2](using/start/journeys-vs-campaigns-v2.md)
     + {hide-from-toc} [Packages and capabilities](using/start/ajo-packages.md)
     + {hide-from-toc} [Feature availability](using/start/ajo-features-availability.md)
@@ -360,11 +361,13 @@ nudge: yes
       + [Get started with email configuration](using/email/get-started-email-config.md)
       + [Define email configuration settings](using/email/email-settings.md)
       + [Enable List unsubscribe](using/email/list-unsubscribe.md)
+      + {hide-from-toc}[Honor email open tracking consent](using/email/open-tracking-consent.md)
       + [Header parameters](using/email/header-parameters.md)
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
     + [Use and configure deeplinks](using/email/deeplinks.md)
     + [Manage email opt-out](using/email/email-opt-out.md)
+    + [Choose a consent level for opt-outs](using/email/consent-level.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
     + [Get started with In-app](using/in-app/get-started-in-app.md)

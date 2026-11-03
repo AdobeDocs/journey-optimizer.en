@@ -111,6 +111,8 @@ Review these notes before running tests in your journey.
 
 Use the **[!UICONTROL Test mode]** method when you want to test your journey with pre-existing test profiles that you have already created in Adobe Experience Platform.
 
+Note that **[!UICONTROL Simulation]** is available in production sandboxes only. In non-production sandboxes, use **[!UICONTROL Test mode]** to test your journey.
+
 1. [Validate the journey](publish-journey.md#validate) and resolve any errors before activating test mode.
 
 1. To activate the test mode, click the **[!UICONTROL Simulate]** button, and select **[!UICONTROL Test mode]**.

@@ -110,6 +110,8 @@ To set a personalized unsubscribe URL, insert a one-click opt-out link into the 
 
     * **[!UICONTROL Channel]**: The opt-out applies to future messages sent to the profile's target (i.e. email address) for the current channel. If several targets are associated with a profile, the opt-out applies to all targets (i.e. email addresses) in the profile for that channel.
     * **[!UICONTROL Identity]**: The opt-out applies to future messages sent to the specific target (i.e. email address) being used for the current message.
+    [Learn more about consent levels and how to choose one](consent-level.md)
+
     <!--* **[!UICONTROL Subscription]**: The opt-out applies to future messages associated with a specific subscription list. This option can only be selected if the current message is associated with a subscription list.-->
 
 1. Save your changes.

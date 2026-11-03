@@ -106,6 +106,11 @@ The List unsubscribe header offers two options, which are enabled by default unl
 
 You can select the **[!UICONTROL Consent level]** from the corresponding drop-down list. It can be specific to the channel or to the profile identity. Based on this setting, when a user unsubscribes using the list unsubscribe URL in the header of an email, the consent gets updated in [!DNL Adobe Journey Optimizer], either at the channel level or ID level.
 
+* **[!UICONTROL Channel]**: the opt-out applies to all email addresses on the profile.
+* **[!UICONTROL Identity]**: the opt-out applies only to the email address that received the message.
+
+[Learn more about consent levels and see an example](consent-level.md)
+
 ## Guardrails and recommendations {#list-unsubscribe-guardrails}
 
 The one-click list unsubscribe URL feature enables your recipients to easily opt out from your communications. However, as not all email clients support this link in the email header, Adobe recommends you also add a [one-click opt-out link](email-opt-out.md#one-click-opt-out) or an [unsubscribe link](email-opt-out.md#add-unsubscribe-link) into your email's body.

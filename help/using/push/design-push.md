@@ -94,9 +94,6 @@ Configure the action that occurs when recipients tap the body of your push notif
 * **[!UICONTROL Deeplink]**: Directs users to specific content within your app, such as a particular view, page section, or tab. Enter the deep link URL in the provided field.
 * **[!UICONTROL Web URL]**: Directs users to an external webpage. Enter the destination URL in the provided field.
 
-When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field — hover over it to see the complete URL.
-
-![](assets/push-link-tooltip.png)
 
 >[!NOTE]
 >
@@ -112,6 +109,10 @@ When a URL in any link or media field is too long to display, a tooltip icon is 
 
 Enhance your push notification by adding visual media. The available media types and implementation methods vary by operating system, as detailed in the tabs below.
 
+When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field, hover over it to see the complete URL.
+
+![](assets/push-link-tooltip.png)
+
 >[!BEGINTABS]
 
 >[!TAB Android]
@@ -122,7 +123,7 @@ Enhance your push notification by adding visual media. The available media types
 
 * With **[!UICONTROL Expanded]** layout, enter the URL of the large icon displayed to the side of the notification on Android, or select an asset from [Adobe Experience Manager Assets](../integrations/assets.md) or Generate Content to generate [engaging images](../content-management/generative-image.md) for push notifications.
 
-Once added, the media displays on the right of the notification body.
+Enable the **[!UICONTROL Show entire image]** option to scale the image to fit the available space so the entire image remains visible.
 
 >[!NOTE]
 >

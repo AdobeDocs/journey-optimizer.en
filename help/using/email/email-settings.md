@@ -84,6 +84,10 @@ In the **Email Type** section, select the type of message for the configuration:
 
 * Select **Transactional** for non-commercial email, such as order confirmation, password reset notifications, or delivery information for example. These emails can be sent to profiles who **unsubscribed** from marketing communications. These messages can only be sent in specific contexts.
 
+    >[!NOTE]
+    >
+    >If you purchased the **High throughput transactional messaging** add-on, you can enable the corresponding option to create a dedicated configuration that allows sending large volumes of transactional emails efficiently through API-triggered campaigns. [Learn more](../campaigns/api-triggered-high-throughput.md)
+
 When creating a message, you must choose a valid channel configuration matching the category you selected for your email.
 
 ## Subdomain {#subdomains}

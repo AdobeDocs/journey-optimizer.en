@@ -87,6 +87,12 @@ Unclear whether unchecking "Email opens" fully removes the 1x1 tracking pixel fr
 
 [Learn how to track your messages](../email/message-tracking.md)
 
+### Honor tracking consent per recipient {#honor-tracking-consent}
+
+Instead of disabling open tracking for an entire message, you can have [!DNL Journey Optimizer] honor each recipient's open tracking consent at send time, without excluding them from an otherwise eligible email send.
+
+[Learn how to honor email open tracking consent](../email/open-tracking-consent.md)
+
 ### Link-level tracking management {#link-tracking}
 
 Beyond the per-message open tracking toggle, Adobe Journey Optimizer's Email Designer provides granular control over which URLs are tracked. Using the **[!UICONTROL Links]** panel in the Email Designer, authors can view all tracked URLs in a message and set the tracking mode for each link individually.
