@@ -50,11 +50,11 @@ topic_v2:
 
 You can edit the In-app content to configure experience options:
 
-* In a **[!UICONTROL Campaign]**, from the **[!UICONTROL Action]** menu, click the **[!UICONTROL Edit content]** button to configure the message content.
+* In a **[!UICONTROL Campaign]**, from the **[!UICONTROL Action]** menu.
 
     ![](assets/edit-in-app-content.png)
 
-* In a **[!UICONTROL Journey]**, from the advanced menu of your In-app **[!UICONTROL Action]**, you can start designing your content with the **[!UICONTROL Edit content]** button.
+* In a **[!UICONTROL Journey]**, from the advanced menu of your In-app **[!UICONTROL Action]**, you can start designing your content with the **[!UICONTROL Configure action]** button.
     
     ![](assets/design_inapp_journey.png)
 
