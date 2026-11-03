@@ -14,9 +14,9 @@ version: Journey Orchestration
 # Use the Calendar {#calendar}
 
 >[!BEGINSHADEBOX]
->
->**On this page:** Learn how to use the unified Calendar to view schedules and manage calendar items across journeys and campaigns.
->
+
+**On this page:** Learn how to use the unified Calendar to view schedules and manage calendar items across journeys and campaigns.
+
 >[!ENDSHADEBOX]
 
 The **[!UICONTROL Calendar]** menu provides one view for scheduled activity across [!DNL Adobe Journey Optimizer]. It brings journeys and campaigns into the same calendar workspace.
