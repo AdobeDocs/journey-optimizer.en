@@ -23,7 +23,7 @@ The **[!UICONTROL Calendar]** menu provides one view for scheduled activity acro
 
 >[!AVAILABILITY]
 >
->The unified Calendar is available in Limited Availability for a set of organizations. To gain access, contact your Adobe representative.
+>The unified Calendar is available in Limited Availability for a set of organizations. To gain access, submit this [request form](https://forms.cloud.microsoft/r/J9EaF2iGd0) or contact your Adobe representative.
 
 ## Navigate the Calendar
 
