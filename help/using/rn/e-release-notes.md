@@ -21,6 +21,6 @@ feature_v2:
 
 Adobe Journey Optimizer publishes pre-release notes one week before each monthly release to give you an early look at the new capabilities and improvements planned for that release. After the release, all changes are consolidated in the [release notes](release-notes.md).
 
-> [!NOTE]
+>[!NOTE]
 >
 > The October '26 release is now available. See the [release notes](release-notes.md) for all October changes. The next release is scheduled for **November 17, 2026**. Pre-release notes for the November '26 release will be available on this page on **November 10, 2026**.
