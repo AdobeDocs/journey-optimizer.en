@@ -71,15 +71,19 @@ An anonymous landing page is created like any other landing page, with a few spe
 
 1. In the **[!UICONTROL Access settings]** section, define the landing page URL. The first part of the URL is the subdomain defined in your preset. Enter the unique end of the URL in the field next to it.
 
-1. Make sure the **[!UICONTROL Require identified users]** option is disabled. When this option is enabled, only identified profiles can access the page. When it is disabled, the page is accessible to anonymous visitors.
+    ![Access settings section showing the landing page URL field](assets/lp_anonymous-access-settings.png)
 
-    <!-- TBC (engineering): wording of this option's behavior is based on its name; confirm. -->
+1. Make sure the **[!UICONTROL Require identified users]** option is disabled. When this option is enabled, only identified profiles can access the page. When it is disabled, the page is accessible to anonymous visitors.
 
 1. Click **[!UICONTROL Open Designer]** to design the content of your page. [Learn more about the landing page designer](design-lp.md)
 
 1. Drag and drop a **[!UICONTROL Structure]** component into your content, then a **[!UICONTROL Form]** component into that structure.
 
-1. In the **[!UICONTROL Embed form]** section, select the published form that is linked to a non-profile enabled dataset. In the **[!UICONTROL Follow up type]** section, define what happens when visitors submit the form. [Learn more](lp-forms.md#leverage-form-in-lp)
+1. In the **[!UICONTROL Embed form]** section, select a published form that is linked to a non-profile enabled dataset.
+
+    ![Embed form section with a published form selected](assets/lp_anonymous-embed-form.png)
+
+1. In the **[!UICONTROL Follow up type]** section, define what happens when visitors submit the form. [Learn more](lp-forms.md#leverage-form-in-lp)
 
 1. Optionally, define a page expiry date, and the action that happens when the page expires. [Learn more](create-lp.md#configure-primary-page)
 
@@ -91,7 +95,9 @@ An anonymous landing page is created like any other landing page, with a few spe
 
 ## Share the landing page {#lp-anonymous-share}
 
-Once the landing page is published, anyone can access it from its URL. To check that it is public, open the URL in a private browsing window.
+Once the landing page is published, anyone can access it from its URL. To check that it is public, copy and paste the URL into a browser window.
+
+![Anonymous landing page URL](assets/lp_anonymous-share-url.png)
 
 Add the URL wherever you need it, such as in an email, an SMS message, or on your website. To track clicks from a message, [add tracking parameters](../email/message-tracking.md#insert-links) to the URL.
 
@@ -117,3 +123,5 @@ When visitors submit the form, the data is sent to the dataset defined in the fo
 * [Create and publish landing pages](create-lp.md)
 * [Use forms in your landing pages](lp-forms.md)
 * [Configure landing page subdomains](lp-subdomains.md)
+
+{{$include /help/_includes/do-not-localize/landing-pages/ai-augmented-lp-anonymous.md}}
