@@ -1,4 +1,4 @@
-s---
+---
 title: Create an In-app notification in Journey Optimizer
 description: Learn how to create an In-app message in Journey Optimizer
 feature: In App
