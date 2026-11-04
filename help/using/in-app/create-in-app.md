@@ -86,6 +86,10 @@ To add an In-app message in a journey, follow these steps:
 
 1. Click **[!UICONTROL Edit triggers]** to choose the event(s) and criteria that will trigger your message. Rule builders enable users to specify criteria and values that, when met, trigger a set of actions, such as sending an in-app message. [Learn more](design-in-app.md)
 
+    >[!NOTE]
+    >
+    >A **trigger** is the event that launches the check, such as the app opening or a button click (the "when"). A **trait** works as a filter: it is a condition that must be satisfied before the message displays, such as "the loyalty level of the user is Gold" (the "if"). Add traits with the **And** condition.
+
     1. Click the event drop-down to change your Trigger if needed.
         
         +++ See available Triggers
@@ -118,13 +122,7 @@ To add an In-app message in a journey, follow these steps:
         
         | Package | Traits | Definition |
         |---|---|---|
-        |Device info|Carrier name|Triggered when one of the Carrier name from the list is met.|
-        |Device info|Device name|Triggered when one of the Device name is met.|
-        |Device info|Locale|Triggered when one of the language from the list is met.|
-        |Device info|OS version|Triggered when one of the specified OS version is met.|
-        |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
-        |Device info|Run mode|Triggered if Run mode is either application or extension.|
-        |Application lifecycle|App ID| Triggered when the specified App ID is met.|
+        |Application lifecycle|App ID|Triggered when the specified App ID is met.|
         |Application lifecycle|Day of week|Triggered when the specified day of week is met.|
         |Application lifecycle|Day since first use|Triggered when the specified number of day since first use is met.|
         |Application lifecycle|Day since last use|Triggered when the specified number of day since last use is met.|
@@ -132,6 +130,13 @@ To add an In-app message in a journey, follow these steps:
         |Application lifecycle|Install date|Triggered when the specified Install date is met.|
         |Application lifecycle|Launches|Triggered when the specified number of Launches is met.|
         |Application lifecycle|Time of day|Triggered when the specified Time of day is met.|
+        |Custom|Custom trait|Triggered when the condition defined by a key-value pair is met. The key is the data element or XDM field to check, and the value is the criterion that the key must satisfy.|
+        |Device info|Carrier name|Triggered when one of the Carrier name from the list is met.|
+        |Device info|Device name|Triggered when one of the Device name is met.|
+        |Device info|Locale|Triggered when one of the language from the list is met.|
+        |Device info|OS version|Triggered when one of the specified OS version is met.|
+        |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
+        |Device info|Run mode|Triggered if Run mode is either application or extension.|
         |Places|Current POI|Triggered by the Places SDK when your customer enters the specified Point of Interest (POI).|
         |Places|Last entered POI|Triggered by the Places SDK depending on your customer last entered Point of Interest (POI).|
         |Places|Last exited POI|Triggered by the Places SDK depending on your customer last exited Point of Interest (POI).|
@@ -224,13 +229,7 @@ To add an In-app message in a campaign, follow these steps:
         
         | Package | Traits | Definition |
         |---|---|---|
-        |Device info|Carrier name|Triggered when one of the Carrier name from the list is met.|
-        |Device info|Device name|Triggered when one of the Device name is met.|
-        |Device info|Locale|Triggered when one of the language from the list is met.|
-        |Device info|OS version|Triggered when one of the specified OS version is met.|
-        |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
-        |Device info|Run mode|Triggered if Run mode is either application or extension.|
-        |Application lifecycle|App ID| Triggered when the specified App ID is met.|
+        |Application lifecycle|App ID|Triggered when the specified App ID is met.|
         |Application lifecycle|Day of week|Triggered when the specified day of week is met.|
         |Application lifecycle|Day since first use|Triggered when the specified number of day since first use is met.|
         |Application lifecycle|Day since last use|Triggered when the specified number of day since last use is met.|
@@ -238,6 +237,13 @@ To add an In-app message in a campaign, follow these steps:
         |Application lifecycle|Install date|Triggered when the specified Install date is met.|
         |Application lifecycle|Launches|Triggered when the specified number of Launches is met.|
         |Application lifecycle|Time of day|Triggered when the specified Time of day is met.|
+        |Custom|Custom trait|Triggered when the condition defined by a key-value pair is met. The key is the data element or XDM field to check, and the value is the criterion that the key must satisfy.|
+        |Device info|Carrier name|Triggered when one of the Carrier name from the list is met.|
+        |Device info|Device name|Triggered when one of the Device name is met.|
+        |Device info|Locale|Triggered when one of the language from the list is met.|
+        |Device info|OS version|Triggered when one of the specified OS version is met.|
+        |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
+        |Device info|Run mode|Triggered if Run mode is either application or extension.|
         |Places|Current POI|Triggered by the Places SDK when your customer enters the specified Point of Interest (POI).|
         |Places|Last entered POI|Triggered by the Places SDK depending on your customer last entered Point of Interest (POI).|
         |Places|Last exited POI|Triggered by the Places SDK depending on your customer last exited Point of Interest (POI).|

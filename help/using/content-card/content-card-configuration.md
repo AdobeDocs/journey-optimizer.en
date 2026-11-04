@@ -120,6 +120,10 @@ The tables below list some surface URI definition examples for various devices.
 
     * Enter or select your **[!UICONTROL App id]**, **[!UICONTROL Location or path inside the app]** and **[!UICONTROL Preview URL]**.
 
+    >[!IMPORTANT]
+    >
+    >The **[!UICONTROL Location or path inside the app]** value must match the location string your app passes to the Mobile SDK when it requests content cards (for example, in the `updatePropositionsForSurfaces` call). The SDK combines this string with your app bundle ID to build the surface URI, such as `mobileapp://com.vendor.bundle/#home_banner`. Journey Optimizer delivers the card only if both surface URIs match.
+
 1. Submit your changes.
 
 You can now select your configuration when creating your Content card experience.

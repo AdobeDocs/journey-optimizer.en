@@ -43,6 +43,8 @@ topic_v2:
 
 In-app messages are notifications that can be sent to users within your app, guiding them to specific points of interest. These notifications can be used for different purposes, such as promoting new features, presenting special offers, or facilitating user onboarding. By leveraging In-app messages, you can effectively engage with your audience and steer them towards important aspects of your application.
 
+In-app messages are temporary overlays, such as modals or banners, that display on top of the current screen when a trigger fires. They differ from [content cards](../content-card/get-started-content-card.md), which are persistent messages displayed inline in your app, for example in a feed or inbox, until the user dismisses them or your delivery rules hide them.
+
 Use Journey Optimizer to create In-app notifications, and configure experience options, including the message layout and display, text, and button options.   
 
 </br>
