@@ -299,6 +299,27 @@ The following improvements are coming to campaigns in this release.
 
 +++
 
+### Landing pages {#oct-26-landing-pages}
+
+<table>
+<thead>
+<tr>
+<th><strong>Anonymous landing pages (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now allows you to create public landing pages accessible to anyone, and from there capture data from anonymous visitors into Experience Platform non-profile enabled datasets. You can share the landing page URL anywhere, such as in emails, SMS messages or on your website.</p>
+<p>To reuse your existing Journey Optimizer branded subdomains for public landing pages, you need to migrate them to Cloudflare.</p>
+<p>This capability is available in Limited Availability. Contact your Adobe representative to request access.</p>
+<p>For more information, refer to the <a href="../landing-pages/lp-anonymous.md">detailed documentation</a>.</p>
+<p>Availability date: October 26, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Decisioning {#oct-26-decisioning}
 
 * **Decisioning rule generation skill in Coworker** - Use natural language in Coworker to generate, simulate, and optimize eligibility rules and ranking formulas for Adobe Journey Optimizer Decisioning. Marketers can create, validate, and test decisioning logic faster, enabling smarter personalization and more time spent optimizing outcomes without requiring PQL syntax expertise. [Learn more](../experience-decisioning/experience-decisioning-coworker-skills.md#rules-ranking)
@@ -338,31 +359,6 @@ The following improvements are coming to campaigns in this release.
   This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
 
 * **AEM Managed Services content fragments support in Decisioning** - AEM Managed Services content fragments are now supported in Decisioning when managing decision items.
-
-+++
-
-### Landing pages {#oct-26-landing-pages}
-
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Anonymous landing pages (Limited Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now allows you to create public landing pages accessible to anyone, and from there capture data from anonymous visitors into Experience Platform non-profile enabled datasets. You can share the landing page URL anywhere, such as in emails, SMS messages or on your website.</p>
-<p>To reuse your existing Journey Optimizer branded subdomains for public landing pages, you need to migrate them to Cloudflare.</p>
-<p>This capability is available in Limited Availability. Contact your Adobe representative to request access.</p>
-<!-- GIF placeholder: TBD -->
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
 
 +++
 
