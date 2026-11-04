@@ -137,6 +137,8 @@ Journey step event data is automatically stored in Adobe Experience Platform and
 
 Learn more about [accessing datasets](../data/datasets-query-examples.md).
 
+When you ingest query results into a custom schema, select only the fields that you need instead of using `SELECT *`. Learn more about the [INSERT INTO syntax](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/syntax){target="_blank"}.
+
 ### Key data points available {#key-data-points}
 
 Journey step events capture comprehensive information including:
