@@ -163,6 +163,8 @@ To add an In-app message in a journey, follow these steps:
         * **[!UICONTROL Until click through]**: Show this message when the events selected in the **[!UICONTROL Show message if]** section occur until an interact event is sent by the SDK with an action of "clicked".
         * **[!UICONTROL X number of times]**: Show this message X times. Enter the number of times in the **[!UICONTROL Times to display]** field.
 
+        Frequency settings also apply to test profiles after the journey is published.
+
 1. You can add one or more inbound actions to your in-app message by clicking the **[!UICONTROL Add action]** button. [Learn more](../building-journeys/journey-action.md#multi-action)
 
 1. Go back to the journey canvas. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
