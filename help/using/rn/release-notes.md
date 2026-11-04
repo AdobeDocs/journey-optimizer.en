@@ -108,7 +108,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <p>If you have purchased the High throughput transactional messaging add-on, you can now set up High throughput for API-triggered email and push campaigns yourself in the product UI through a dedicated channel configuration. You no longer need to request a manual setup for each resource. </p>
 <p><img src="assets/do-not-localize/high-throughput-config.gif"></p>
 <p>For more information, refer to the <a href="../campaigns/api-triggered-high-throughput.md">detailed documentation</a>.</p>
-<p>Availability date: October 28, 2026</p>
+<p>Availability date: October 26, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -315,7 +315,27 @@ The following improvements are coming to campaigns in this release.
 <p>This capability is available in Limited Availability. Contact your Adobe representative to request access.</p>
 <p><img src="assets/do-not-localize/anonymous-lp.gif"></p>
 <p>For more information, refer to the <a href="../landing-pages/lp-anonymous.md">detailed documentation</a>.</p>
-<p>Availability date: October 26, 2026</p>
+<p>Availability date: October 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Administration {#oct-26-administration}
+
+<table>
+<thead>
+<tr>
+<th><strong>Custom metadata for campaigns and journeys (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Define your own business fields, such as line of business, product or cost center, in the schemas provided for Action campaigns, journeys and Orchestrated campaigns. Select up to 10 fields per entity type, then fill them in from the <strong>Metadata fields</strong> section of the properties of each journey or campaign. The values are recorded in dedicated datasets that you can use for reporting, exports and audience creation.</p>
+<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p>For more information, refer to the <a href="../administration/custom-metadata.md">detailed documentation</a>.</p>
+<p>Availability date: October 29, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -363,22 +383,3 @@ The following improvements are coming to campaigns in this release.
 
 +++
 
-### Administration {#oct-26-administration}
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom metadata for campaigns and journeys (Limited Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Define your own business fields, such as line of business, product or cost center, in the schemas provided for Action campaigns, journeys and Orchestrated campaigns. Select up to 10 fields per entity type, then fill them in from the <strong>Metadata fields</strong> section of the properties of each journey or campaign. The values are recorded in dedicated datasets that you can use for reporting, exports and audience creation.</p>
-<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
-<p>For more information, refer to the <a href="../administration/custom-metadata.md">detailed documentation</a>.</p>
-<p>Availability date: October 29, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
