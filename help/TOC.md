@@ -969,6 +969,7 @@ nudge: yes
     + [Export Journey Optimizer datasets](using/data/export-datasets.md)
     + [Query examples](using/data/datasets-query-examples.md)
     + [Built-in schemas >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
+  + [Use custom metadata in campaigns and journeys](using/administration/custom-metadata.md)
   + [Use Adobe Experience Platform data](using/data/lookup-aep-data.md)
   + [Queries](using/data/get-started-queries.md)
   + Monitoring {#monitoring}
@@ -1051,7 +1052,6 @@ nudge: yes
   + Sandboxes management {#sandbox}
     + [Use and assign sandboxes](using/administration/sandboxes.md)
     + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
-  + {hide-from-toc} [Use custom metadata in campaigns and journeys](using/administration/custom-metadata.md)
   + [Configure the Sources connector](using/start/get-started-sources.md)
 + Access control {#access-control}
   + [Access control](/help/rp_landing_pages/access-control-landing-page.md)
