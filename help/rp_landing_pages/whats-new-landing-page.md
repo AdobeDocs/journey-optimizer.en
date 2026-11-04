@@ -6,6 +6,9 @@ description: What's new?
 redpen-status: CREATED_||_2025-08-11_20-03-09
 hide: true
 exl-id: 24460cae-3944-4ac4-9076-aca521cfddbd
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # What's new?{#section-overview}
 
@@ -26,9 +29,9 @@ The Adobe Express integration in Adobe Journey Optimizer allows you to easily ac
 [![learn more](../using/assets/do-not-localize/learn-more-button.svg)](../using/integrations/express.md)
 
 <!--
->[!TAB AI Assistant]
+>[!TAB Generate Content]
 
-Immerse yourself in a hands-on experience with our [AI Assistant](../help/using/content-management/gs-generative.md) live feature preview, designed to let you explore its features firsthand and fully understand its capabilities.
+Immerse yourself in a hands-on experience with our [Generate Content](../help/using/content-management/gs-generative.md) live feature preview, designed to let you explore its features firsthand and fully understand its capabilities.
 
 [![learn more](../using/assets/do-not-localize/try-it-button.svg)](https://experienceleague.adobe.com/en/apps/journey-optimizer/ai-assistant-content-accelerator){target="_blank"}
 -->

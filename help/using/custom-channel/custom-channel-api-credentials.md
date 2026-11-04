@@ -1,0 +1,76 @@
+---
+title: Manage API credentials for custom channels
+description: Learn how to manage API credentials for custom channels in Adobe Journey Optimizer.
+feature: Channel Configuration
+topic: Content Management
+role: Admin
+level: Experienced
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
+  - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
+    internal-label: Custom Channels
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+---
+
+# Manage API credentials {#api-credentials}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to view, manage, and create API credential sets for custom channels in Adobe Journey Optimizer, so you can authenticate requests to your endpoint across different brands or environments without duplicating the channel.
+
+>[!ENDSHADEBOX]
+
+When a custom channel is created with an authentication type other than **None**, an initial set of API credentials is automatically generated when the channel is activated.
+
+You can view, manage and edit credentials from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel builder]** > **[!UICONTROL API credentials]**.
+
+![API credentials](assets/custom_channel_api_credentials.png){width="90%"}
+
+Having multiple credentials for the same channel lets you attach different authentication values to different channel configurations - for example, for different brands or use cases - without duplicating the channel definition.
+
+To edit an existing set of credentials, click an item from the inventory list. All fields are editable.
+
+To create additional credentials for the same channel, follow the steps below.
+
+1. From the **[!UICONTROL API credentials]** list, click **[!UICONTROL Create API credentials]**.
+
+1. Provide a name and description.
+
+   ![Create API credentials](assets/custom_channel_create_api_credentials.png){width="80%"}
+
+1. Select the **[!UICONTROL Channel]** for which you are creating credentials.
+
+   >[!NOTE]
+   >
+   >Only activated custom channels with an authentication type other than **None** display in the drop-down list.
+
+1. Select the **[!UICONTROL Authentication type]** from the list.
+1. Fill in the authentication-specific fields:
+   * **[!UICONTROL API Key]** – Provide the key name, value, and location (query parameter or header).
+   * **[!UICONTROL Basic auth]** – Provide a username and password.
+   * **[!UICONTROL OAuth 2.0]** – Configure the payload for OAuth 2.0 authentication. [Learn more](custom-channel-oauth2.md)
+
+1. Click **[!UICONTROL Save]**.
+
+## Next steps {#next-steps}
+
+* [Delegate a subdomain](custom-channel-subdomains.md) (optional — required for link tracking)
+* [Create a channel configuration](custom-channel-configuration.md)
+
+If a custom channel returns an error code, see [Custom channel, inbound action, and reporting dataset errors](../configuration/channel-reporting-errors.md).
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-custom-channel-api-credentials.md}}

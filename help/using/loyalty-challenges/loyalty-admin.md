@@ -2,57 +2,37 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure loyalty challenges
-description: Learn how to configure reward providers, event definitions, product inventory, exclusions, and organization-level settings for Loyalty Challenges in Adobe [!DNL Journey Optimizer].
+description: Learn how to configure global and performance settings, reward providers, event mappings, product inventory, and exclusions for Loyalty Challenges.
 feature: Journeys
 topic: Content Management
 role: Admin
 level: Intermediate
-hide: true
-badge: label="Private beta" type="Informative"
-mini-toc-levels: 1
 exl-id: f8a3b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c
-feature_v2: []
-subfeature_v2: []
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Configure loyalty challenges {#loyalty-admin}
 
-<!-- Unpublished draft: Loyalty Admin UI documentation is not validated for Experience League. This page uses hide: true until review. -->
-
 >[!BEGINSHADEBOX]
 
-**Table of contents**
-
-[Get started with Loyalty Challenges](get-started.md)
-
-<table style="table-layout:fixed">
-<tr style="border: 0;">
-<td style="vertical-align:top;">
-
-**Create and manage challenges**
-
-* [Access & manage challenges and tasks](access-loyalty-challenges.md)
-* [Create challenges](create-challenges.md)
-* [Create tasks](create-tasks.md)
-* [Monitor loyalty challenge performance](loyalty-reporting.md)
-
-</td>
-<td style="vertical-align:top;">
-
-**Configure and integrate**
-
-* **Configure loyalty challenges** ◀︎ **You are here**
-* [Loyalty data and datasets](loyalty-data-and-datasets.md)
-* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
-
-</td>
-</tr>
-</table>
+**On this page:** Learn how administrators configure Loyalty Challenges, including global settings, performance settings, reward providers, event mappings, product inventory, and exclusions.
 
 >[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->This feature is currently in **private beta**. For full details about the release cycle and availability phases in [!DNL Journey Optimizer], see [release cycle](../rn/releases.md).
 
 ## Overview {#access-loyalty-admin}
 
@@ -62,11 +42,12 @@ Loyalty Challenges configuration connects [!DNL Journey Optimizer] to your exter
 >
 >Loyalty Challenges configuration requires administrator access to your [!DNL Journey Optimizer] instance, in addition to the permissions needed for Loyalty Challenges. Contact your Adobe administrator to gain access.
 
-To open the configuration interface, select the **[!UICONTROL Loyalty admin]** menu from the left navigation. The interface is organized into tabs:
+To open the configuration interface, select the **[!UICONTROL Loyalty configurations]** menu from the left navigation. The interface is organized into tabs:
 
 * **Global settings** — Select the Experience Platform identity namespace for your program. [Learn how to configure global settings](#global-settings)
-* **Reward providers** — Connect the APIs that fulfill rewards when customers make progress or complete challenges. [Learn how to configure reward providers](#reward-providers)
-* **Event definitions** — Map incoming experience events to activities used in **[!UICONTROL Custom event]** tasks. [Learn how to configure event definitions](#event-definitions)
+* **Performance settings** - Select the loyalty profile and event datasets and your priority KPI for loyalty insights. [Learn how to configure performance settings](#performance-settings)
+* **Reward providers** — Connect the APIs that fulfill rewards when customers make progress or complete challenges. [Learn how to configure reward providers](#reward-providers).
+* **Event mapping** — Map incoming experience events to activities used in **[!UICONTROL Custom event]** tasks. [Learn how to configure event mappings](#event-mappings).
 * **Product inventory** — Upload item-to-group mappings for use in task eligibility rules. [Learn how to configure product inventory](#product-inventory)
 * **Exclusions** — Upload organization-wide item and group exclusions for task configuration. [Learn how to configure exclusions](#exclusions)
 
@@ -77,11 +58,36 @@ To open the configuration interface, select the **[!UICONTROL Loyalty admin]** m
 >title="Global settings"
 >abstract="Global settings define organization-level configuration for Loyalty Challenges, including the identity namespace used to identify members across events and challenges."
 
-Open the **[!UICONTROL Global settings]** tab and select the Adobe Experience Platform [identity namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces) for Loyalty Challenges in the **[!UICONTROL Namespace]** drop-down. This namespace must match how member profiles are identified in your data.
+Open the **[!UICONTROL Global settings]** tab to configure global settings for Loyalty Challenges.
 
 ![](assets/admin-global-settings.png)
 
-➡️ [Learn how to work with identity namespaces](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"}
+* In the **[!UICONTROL Organization configuration]** section, select the Adobe Experience Platform [identity namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces) for Loyalty Challenges. This namespace must match how member profiles are identified in your data.
+
+   ➡️ [Learn how to work with identity namespaces](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"}
+
+## Performance settings {#performance-settings}
+
+Open the **[!UICONTROL Performance settings]** tab to select the datasets and priority metric used for loyalty performance insights.
+
+![](assets/admin-performance-settings.png)
+   
+1. In the **[!UICONTROL Performance configuration]** section, select the **[!UICONTROL Loyalty profile dataset]** containing your loyalty member profile data. The selected dataset's schema must include the **Loyalty details** field group.
+
+1. Select the **[!UICONTROL Loyalty event dataset]** containing your loyalty event data. The selected dataset's schema must include the **Loyalty event details** field group.
+
+   The profile dataset schema must include the **Loyalty details** and **identityMap** field groups, with identities supplied in **identityMap**. The event dataset schema must include the **Loyalty event details** and **Commerce details** field groups. Additional field groups can be included. For background on loyalty data and datasets, see [Loyalty data and datasets](loyalty-data-and-datasets.md).
+
+1. In **[!UICONTROL Key performance indicator]**, select your organization's priority metric for the Loyalty Insights dashboard. This setting determines which insights receive emphasis in your feed, allowing you to focus on the metric that matters most to your business.
+
+   Select one of the following KPI options:
+
+   * **[!UICONTROL Revenue]** — Prioritize insights related to monetary transactions and sales performance
+   * **[!UICONTROL Engagement]** — Prioritize insights related to member activity and participation
+   * **[!UICONTROL Redemptions]** — Prioritize insights related to reward redemption rates and activity
+   * **[!UICONTROL Conversions]** — Prioritize insights related to conversion metrics and goal completion
+
+For more information about loyalty insights and performance monitoring, see [Explore loyalty performance](loyalty-performance.md).
 
 ## Reward providers {#reward-providers}
 
@@ -107,6 +113,8 @@ Open the **[!UICONTROL Global settings]** tab and select the Adobe Experience Pl
 
 A **reward provider** tells [!DNL Journey Optimizer] where to send fulfillment calls when challenge progress is recorded or a challenge is completed. For example, an API that credits loyalty points or stars to a member account.
 
+Use this section for end-to-end provider setup (connection, proxy, auth token generator, and reward definition resources). For focused guidance on reward definition design and payload strategy, see [Reward Definition guide](reward-definition-guide.md).
+
 To create a reward provider, follow these steps:
 
 1. Open the **[!UICONTROL Reward providers]** tab and select **[!UICONTROL Create reward provider]**.
@@ -128,7 +136,9 @@ To create a reward provider, follow these steps:
    * Enter a **[!UICONTROL Name]** and **[!UICONTROL Description]**.
    * Specify whether the definition is **[!UICONTROL Enabled]**.
    * Toggle **[!UICONTROL Default]** to mark one definition as the default for this provider.
-   * Define the **payload** sent with fulfillment calls.
+   * Define how the rewards payload will be transformed to the fulfillment payload request, using the JSONata expression.
+
+   For more information, see [Reward definition guide](reward-definition-guide.md#writing-the-rewardjsonata-expression).
 
    ![](assets/admin-reward-definition.png)
 
@@ -178,47 +188,48 @@ To edit a reward provider, open the **[!UICONTROL Reward providers]** tab, selec
 >
 >**[!UICONTROL Bring your own data]** challenges fulfill rewards through your own data integration. Reward providers configured here do not apply to those challenges. [Learn how to create Bring your own data challenges](create-challenges.md#create-the-challenge)
 
-## Event definitions {#event-definitions}
+## Event mappings {#event-mappings}
 
 >[!CONTEXTUALHELP]
->id="ajo_loyalty_admin_event_definitions"
->title="Event definitions"
->abstract="Event definitions tell [!DNL Journey Optimizer] how to identify and interpret incoming event data from your external sources. Each definition maps a specific event type — such as a purchase or check-in — so the system can track customer progress toward challenge tasks."
+>id="ajo_loyalty_admin_event_mappings"
+>title="Event mappings"
+>abstract="Event mappings tell [!DNL Journey Optimizer] how to identify and interpret incoming event data from your external sources. Each mapping identifies a specific event type — such as a purchase or check-in — so the system can track customer progress toward challenge tasks."
 
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_admin_event_schema"
->title="Event schema and transformer"
->abstract="When your organization sends events in a custom JSON format, use **[!UICONTROL Schema]** to validate the payload and **[!UICONTROL Transformer]** (for example, a JSONata expression) to map fields into the format Loyalty Challenges expects."
+>title="Event schema and mapping"
+>abstract="Select the Experience Platform schema for the incoming event and use the mapping builder or a JSONata expression to map event fields into the format Loyalty Challenges expects."
 
 >[!CONTEXTUALHELP]
->id="ajo_loyalty_admin_event_identification"
->title="Event identification"
->abstract="Specify how [!DNL Journey Optimizer] recognizes the event in incoming payloads using an identifier path, identifier values, an XDM schema ID, or a combination of these fields."
+>id="ajo_loyalty_admin_event_details"
+>title="Event details"
+>abstract="In the Event details section, provide the event name and select the Experience Platform XDM schema used to identify incoming events."
 
-**[!UICONTROL Event definitions]** tell [!DNL Journey Optimizer] which incoming Adobe Experience Platform experience events to process. For example, a purchase or a hotel check-in. Marketers reference these definitions when they create **[!UICONTROL Custom event]** tasks in the task builder. Events that do not match any definition are ignored.
+**[!UICONTROL Event mapping]** tells [!DNL Journey Optimizer] how to process an incoming Adobe Experience Platform experience event. For example, a purchase or a hotel check-in. Marketers reference these mappings when they create **[!UICONTROL Custom event]** tasks in the task builder. Events that do not match any mapping are ignored.
 
-When your organization sends events in its own JSON format, **[!UICONTROL Schema]** and **[!UICONTROL Transformer]** help [!DNL Journey Optimizer] validate the payload, parse it, and decide whether to track the activity.
+Use this section for end-to-end event mapping setup. For focused guidance on transformer authoring, see [Event Transformer guide](event-transformer-guide.md).
 
-To create an event definition, follow these steps:
+To create an event mapping, follow these steps:
 
-1. Open the **[!UICONTROL Event definitions]** tab and create a new definition.
+1. Open the **[!UICONTROL Event mapping]** tab and select **[!UICONTROL Create event mapping]**.
+
+1. In **[!UICONTROL Event details]**, enter the required **[!UICONTROL Event name]** and select the desired **[!UICONTROL Experience event schema]**.
 
    ![](assets/admin-event-definition.png)
 
-1. Enter a **[!UICONTROL Name]** for the event (for example, `Coffee purchase`). Marketers see this name when configuring a **[!UICONTROL Custom event]** task.
+1. In the **[!UICONTROL Mapping]** section, click the **[!UICONTROL Select fields]** button. Search or filter the schema field tree, then select the incoming fields to map.
 
-1. Specify how [!DNL Journey Optimizer] recognizes the event in incoming payloads. Provide an **[!UICONTROL Identifier path]**, an **[!UICONTROL XDM schema ID]**, or both:
+   ![](assets/admin-mapping-fields.png)
 
-   * **[!UICONTROL Identifier path]** — Path to a field in the payload (for example, `data.memberId`). Use this when matching events by values in the payload.
-   * **[!UICONTROL Identifier values]** — Values at the identifier path that must be present for this definition to match.
-   * **[!UICONTROL XDM schema ID]** — ID of the Experience Platform XDM schema for this event type. Use this when events are captured against a known schema.
+1. In the mapping table, use the drop-downs in **[!UICONTROL Incoming data fields]** to connect each field to the corresponding **[!UICONTROL Loyalty event fields]**.
 
-1. If needed, paste strings into **[!UICONTROL Schema]** and **[!UICONTROL Transformer]**:
+   ![](assets/admin-mapping-map.png)
 
-   * **[!UICONTROL Schema]** — Validation string for the incoming payload.
-   * **[!UICONTROL Transformer]** — Transformation expression (for example, JSONata) that maps your payload into the format Loyalty Challenges expects.
+1. In **[!UICONTROL JSONata and output preview]**, review the generated JSONata expression in the code editor.
 
-1. Save the event definition. It appears in the **[!UICONTROL Event definitions]** list and is available when marketers create **[!UICONTROL Custom event]** tasks. [Learn how to create tasks](create-tasks.md#choose-activity)
+   To use a custom expression, edit the JSONata directly. To do so, select the **[!UICONTROL Reset to generated]** button to return to table-driven mapping. [Learn how to write JSONata expressions](event-transformer-guide.md#writing-the-transformer).
+
+1. Save the mapping. The event mapping appears in the **[!UICONTROL Event mappings]** list and is available when marketers create **[!UICONTROL Custom event]** tasks. [Learn how to create tasks](create-tasks.md#choose-activity)
 
 ## Product inventory {#product-inventory}
 
@@ -249,7 +260,7 @@ To upload a product inventory file, follow these steps:
 
    ![](assets/admin-inventory-imported.png)
 
-1. To see all items in a product group, select that group’s pill in the **[!UICONTROL Groups included in]** column on any row. The group details view lists every item in the group.
+1. To see all items in a product group, select that group's pill in the **[!UICONTROL Groups included in]** column on any row. The group details view lists every item in the group.
 
    ![](assets/admin-inventory-group.png)
 
@@ -282,11 +293,11 @@ To upload exclusions, follow these steps:
 
    ![](assets/admin-exclusions-upload.png)
 
-1. Review the imported data in the exclusions list. The list shows one row per item. The **[!UICONTROL Groups included in]** column shows every exclusion group for that item as a pill, or several pills when the item belongs to multiple groups.
+1. Review the imported data in the exclusions list. The list shows one row per item. The **[!UICONTROL Groups included in]** column s'ows every exclusion group for that item as a pill, or several pills when the item belongs to multiple groups.
 
 <!-- SCREENSHOT: Exclusions list after CSV upload -->
 
-1. To see all items in an exclusion group, select that group’s pill in the **[!UICONTROL Groups included in]** column on any row. The group details view lists every item in the group.
+1. To see all items in an exclusion group, select that group's pill in the **[!UICONTROL Groups included in]** column on any row. The group details view lists every item in the group.
 
 <!-- SCREENSHOT: Exclusion group details -->
 

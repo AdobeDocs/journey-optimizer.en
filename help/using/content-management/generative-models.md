@@ -7,10 +7,23 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 9ef6b02c-0a17-4b46-bcd3-8e922eef059a
-feature_v2: []
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
     internal-label: AI content generation
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Create and manage generative models {#generative-models}
 
@@ -25,7 +38,7 @@ Expand your AI image creation capabilities with built-in models, custom Firefly 
 Choose the right model for your needs:
 
 - **[!UICONTROL Adobe model]**, powered by Firefly Image Model 4, is provided out of the box and ready to use for immediate image generation without additional setup.
-- **[!UICONTROL Partner model]**, powered by Gemini 2.5 Flash, offers specialized capabilities for specific use cases. For a step-by-step workflow that uses **Gemini** with **text overlays** on images in AI Assistant, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
+- **[!UICONTROL Partner model]**, powered by Gemini 2.5 Flash, offers specialized capabilities for specific use cases. For a step-by-step workflow that uses **Gemini** with **text overlays** on images in Generate Content, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
 - **[!UICONTROL Custom models]** are brand-specific models trained on your own assets and added by your organization.
 
     Learn more on **[!UICONTROL Custom models]** in [Adobe Firefly documentation](https://helpx.adobe.com/firefly/web/work-with-enterprise-features/train-custom-models/custom-models-overview.html)

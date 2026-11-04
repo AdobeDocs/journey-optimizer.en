@@ -35,9 +35,70 @@ Use list functions when you need to:
 * Check if values exist within collections ([in](#in))
 * Limit the number of items returned from a list ([limit](#limit))
 * Get the size of a list ([listSize](#listSize)) or transform lists into different formats ([serializeList](#serializeList))
-* Perform set operations like finding common elements between lists ([intersect](#intersect))
+* Perform set operations like finding common elements between lists ([intersect](#intersect)), combining lists ([mergeLists](#mergeLists)), or subtracting one list from another ([differenceLists](#differenceLists))
 
 List functions provide powerful tools for working with complex data structures, enabling sophisticated data manipulation and conditional logic based on collection contents.
+
+## differenceLists {#differenceLists}
+
+Returns the items of the first list that are not present in the second list (set difference: `list 1 - list 2`). Null entries are skipped. The result always removes duplicate values and preserves the insertion order of the first list.
+
++++Syntax
+
+`differenceLists(<parameters>)`
+
++++
+
++++Parameters
+
+| Parameter | Type             | Description             |
+|-----------|------------------|------------------|
+| list 1 | listString, listInteger, listDecimal, listBoolean, listDuration, listDateTime, listDateTimeOnly, or listDateOnly | List to subtract from. |
+| list 2 | Same type as list 1. | List of items to remove from list 1. |
+
++++
+
++++Signatures and returned types
+
+`differenceLists(listString,listString)`: listString
+
+`differenceLists(listInteger,listInteger)`: listInteger
+
+`differenceLists(listDecimal,listDecimal)`: listDecimal
+
+`differenceLists(listBoolean,listBoolean)`: listBoolean
+
+`differenceLists(listDuration,listDuration)`: listDuration
+
+`differenceLists(listDateTime,listDateTime)`: listDateTime
+
+`differenceLists(listDateTimeOnly,listDateTimeOnly)`: listDateTimeOnly
+
+`differenceLists(listDateOnly,listDateOnly)`: listDateOnly
+
++++
+
++++Examples
+
+```json
+differenceLists(['a','b','c'], ['b'])
+```
+
+Returns `['a','c']`.
+
+```json
+differenceLists(['a','a','b'], [])
+```
+
+Returns `['a','b']`.
+
+```json
+differenceLists([], ['a'])
+```
+
+Returns `[]`.
+
++++
 
 ## distinct {#distinct}
 
@@ -618,6 +679,64 @@ Returns the number of objects in the given array of objects (listObject type).
 
 +++
 
+## mergeLists {#mergeLists}
+
+Combines two lists. When `deduplicate` is `true`, returns the union of the two lists with duplicate values removed. When `deduplicate` is `false`, returns the concatenation of the two lists (list 1's items followed by list 2's items), keeping duplicates. Null entries are skipped.
+
+**Note:** The `deduplicate` parameter must be a literal `true` or `false`, not a dynamic boolean expression.
+
++++Syntax
+
+`mergeLists(<parameters>)`
+
++++
+
++++Parameters
+
+| Parameter | Type             | Description             |
+|-----------|------------------|------------------|
+| list 1 | listString, listInteger, listDecimal, listBoolean, listDuration, listDateTime, listDateTimeOnly, or listDateOnly | First list. Its items are added first to the result. |
+| list 2 | Same type as list 1. | Second list. Its items are added after list 1's items. |
+| deduplicate | boolean literal | `true` returns the union of both lists with duplicates removed. `false` returns the concatenation of both lists, keeping duplicates. Must be a literal `true` or `false`. |
+
++++
+
++++Signatures and returned types
+
+`mergeLists(listString,listString,boolean)`: listString
+
+`mergeLists(listInteger,listInteger,boolean)`: listInteger
+
+`mergeLists(listDecimal,listDecimal,boolean)`: listDecimal
+
+`mergeLists(listBoolean,listBoolean,boolean)`: listBoolean
+
+`mergeLists(listDuration,listDuration,boolean)`: listDuration
+
+`mergeLists(listDateTime,listDateTime,boolean)`: listDateTime
+
+`mergeLists(listDateTimeOnly,listDateTimeOnly,boolean)`: listDateTimeOnly
+
+`mergeLists(listDateOnly,listDateOnly,boolean)`: listDateOnly
+
++++
+
++++Examples
+
+```json
+mergeLists(['a','b'], ['b','c'], true)
+```
+
+Returns `['a','b','c']`.
+
+```json
+mergeLists(['a','b'], ['b','c'], false)
+```
+
+Returns `['a','b','b','c']`.
+
++++
+
 ## serializeList {#serializeList}
 
 Converts a given list (any type except listObject) into a string.
@@ -744,49 +863,4 @@ Returns the listObject ordered by SKU attribute (ascending order)
 
 +++
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page documents all list functions available in AJO journey expressions, covering how to filter, sort, deduplicate, check membership, limit, serialize, and find intersections of lists and arrays.
-
-**Intents:**
-* Remove duplicate values from a list using `distinct` (ignoring nulls) or `distinctWithNull` (preserving nulls)
-* Filter a listObject to return only objects matching specific key values using `filter`
-* Retrieve an element at a specific index from a list using `getListItem`
-* Check whether a value exists in a list using `in`
-* Find common elements between two lists using `intersect`
-* Return the first or last N elements of a list using `limit`
-* Count the total number of elements in a list using `listSize`
-* Convert a list to a delimited string using `serializeList`
-* Sort a list in ascending or descending order using `sort`
-
-**Glossary:**
-* **listObject**: A list of complex objects that must be a field reference; cannot contain null objects *(product-specific)*
-* **keyAttributeName**: An optional string parameter used with `distinct`, `filter`, and `sort` to identify which object attribute to use for deduplication, filtering, or sorting *(product-specific)*
-* **intersect**: A set operation returning only the elements present in both input lists
-
-**Guardrails:**
-* `distinctWithNull` does not support the `<listObject>` parameter type
-* `filter` requires the listObject parameter to be a field reference, not an inline literal
-* `listSize` on a listObject requires the list to be a field reference; a listObject cannot contain null objects
-* `serializeList` does not support the `listObject` type
-
-**Terminology:**
-* Canonical name: List functions — Acronym: none — variants: collection functions, array functions
-* Synonyms: "listSize" = "count list elements"; "serializeList" = "join list to string"
-* Do not confuse: "distinct" (ignores nulls) ≠ "distinctWithNull" (preserves null as a distinct value)
-* Do not confuse: "limit" with third parameter `true` (returns first N items) ≠ "limit" with `false` (returns last N items)
-* Do not confuse: "intersect" (common elements between two lists) ≠ "filter" (elements matching specific key values)
-
-**FAQ:**
-* **Q: How do I get the first 3 items of a list?** — Use `limit(myList, 3)` or `limit(myList, 3, true)`; the default is to return the first items.
-* **Q: How do I get the last 3 items of a list?** — Use `limit(myList, 3, false)`.
-* **Q: What is the difference between `distinct` and `distinctWithNull`?** — `distinct` ignores null values and excludes them from the result; `distinctWithNull` treats null as a distinct value and includes one null entry if any nulls are present.
-* **Q: Can I filter a list of strings with `filter`?** — No, `filter` only works on `listObject`; for scalar lists use `in` or `distinct` for deduplication.
-* **Q: How do I check if a value is in a list?** — Use `in(value, myList)`, which returns true if the value is found in the list.
-* **Q: Can I sort a listObject by a specific attribute?** — Yes, use `sort(@event{...}, "attributeName", true)` where the second parameter is the attribute name and the third is the sort direction (true = ascending).
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-functions-list-functions.md}}

@@ -7,54 +7,38 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-badge: label="Private beta" type="Informative"
-mini-toc-levels: 1
 exl-id: c1e49173-69cc-4729-9f9a-afea2ccff3fa
-feature_v2: []
-subfeature_v2: []
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Create tasks {#create-tasks}
 
 >[!BEGINSHADEBOX]
 
-**Table of contents**
-
-[Get started with Loyalty Challenges](get-started.md)
-
-<table style="table-layout:fixed">
-<tr style="border: 0;">
-<td style="vertical-align:top;">
-
-**Create and manage challenges**
-
-* [Access & manage challenges and tasks](access-loyalty-challenges.md)
-* [Create challenges](create-challenges.md)
-* **Create tasks** ◀︎ **You are here**
-* [Monitor loyalty challenge performance](loyalty-reporting.md)
-
-</td>
-<td style="vertical-align:top;">
-
-**Configure and integrate**
-
-* [Configure loyalty challenges](loyalty-admin.md)
-* [Loyalty data and datasets](loyalty-data-and-datasets.md)
-* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
-
-</td>
-</tr>
-</table>
+**On this page:** Learn how to create reusable loyalty tasks, configure Purchase, Spend, and Custom event activities, and define task attributes, eligibility, and completion requirements.
 
 >[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 Tasks define the specific actions or milestones that customers must complete to earn rewards in a loyalty challenge. You can configure purchase and spend tasks, or **[!UICONTROL Custom event]** tasks that track Adobe Experience Platform experience events your organization already captures.
 
 Each task represents a measurable action that contributes toward challenge completion. Tasks are reusable components that can be created independently and then added to one or more challenges, or created directly within a challenge.
+
+➡️ [Watch how to create tasks](#video)
 
 ## Create a task {#create-task}
 
@@ -87,7 +71,7 @@ Select the type of activity that customers must perform to complete this task:
 
 * **[!UICONTROL Purchase]**: Customers must purchase one or more items to complete this task
 * **[!UICONTROL Spend]**: Customers must spend a specified amount to complete this task
-* **[!UICONTROL Custom event]**: Customers must perform an activity represented by an Adobe Experience Platform experience event. For example, a hotel check-in, mobile app action, or review submission. The underlying event must already be captured in Experience Platform and mapped through an event definition in the **[!UICONTROL Loyalty admin]** menu. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+* **[!UICONTROL Custom event]**: Customers must perform an activity represented by an Adobe Experience Platform experience event. For example, a hotel check-in, mobile app action, or review submission. The underlying event must already be captured in Experience Platform and mapped through an event mapping in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure event mappings](loyalty-admin.md#event-mappings)
 
 To select an activity, click the **+** icon and select the customer activity that best aligns with your outcome goals. Each activity type has specific configurable attributes to further define and shape the task requirements.
 ![](assets/task-create-activity.png)
@@ -123,7 +107,7 @@ Available attributes for **Spend** activities:
 
 Available attributes for **[!UICONTROL Custom event]** activities:
 
-* **[!UICONTROL Custom event values]**: Enter the values for the custom event that customers must complete. Use a comma to separate each value. These values must match event definitions configured in the **[!UICONTROL Loyalty admin]** menu. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+* **[!UICONTROL Custom event values]**: Enter the values for the custom event that customers must complete. Use a comma to separate each value. These values must match event mappings configured in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure event mappings](loyalty-admin.md#event-mappings)
 
 ![](assets/task-create-custom.png)
 
@@ -140,7 +124,7 @@ Available attributes for **[!UICONTROL Custom event]** activities:
 
 For **Purchase** and **Spend** activities, you can use the **[!UICONTROL Eligible items & exclusions]** section to define which items and groups are eligible and which are excluded. This allows you to target specific products, categories, or locations to align with your challenge goals.
 
-The items and groups available in the picker are defined by administrator users in the **[!UICONTROL Loyalty admin]** menu. Administrators upload the product inventory used for eligible items, and configure organization-wide exclusions that are automatically applied when marketers build tasks. [Learn how to configure product inventory](loyalty-admin.md#product-inventory) and [exclusions](loyalty-admin.md#exclusions)
+The items and groups available in the picker are defined by administrator users in the **[!UICONTROL Loyalty configurations]** menu. Administrators upload the product inventory used for eligible items, and configure organization-wide exclusions that are automatically applied when marketers build tasks. [Learn how to configure product inventory](loyalty-admin.md#product-inventory) and [exclusions](loyalty-admin.md#exclusions)
 
 **[!UICONTROL Custom event]** tasks do not use eligible items and exclusions; completion is driven by the **[!UICONTROL Custom event values]** you configure.
 
@@ -196,3 +180,10 @@ In the task **[!UICONTROL Properties]** pane, configure the basic task informati
 ![](assets/tasks-create-properties.png)
 
 After configuring all attributes and properties, select **[!UICONTROL Create]** to save the task. The task is saved to your Tasks inventory and, if created from within a challenge, is automatically added to that challenge.
+
+## How-to video {#video}
+
+Learn how to create and configure tasks with this step-by-step tutorial:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496442?quality=12)
+

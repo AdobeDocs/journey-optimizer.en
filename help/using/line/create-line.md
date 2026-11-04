@@ -88,18 +88,18 @@ You can now start designing the content of your LINE message from the **[!UICONT
 
 1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 
-1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track clicks on links in your SMS message.
+1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track clicks on links in your LINE message.
 
 1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
 
-1. From the **[!UICONTROL Action triggers]** menu, choose the **[!UICONTROL Frequency]** of your SMS message:
+1. From the **[!UICONTROL Action triggers]** menu, choose the **[!UICONTROL Frequency]** of your LINE message:
 
     * Once
     * Daily
     * Weekly
     * Month
     
-You can now start designing the content of your text message from the **[!UICONTROL Edit content]** button, as detailed below.
+You can now start designing the content of your LINE message from the **[!UICONTROL Edit content]** button, as detailed below.
 
 >[!ENDTABS]
 
@@ -119,16 +119,22 @@ These message types can be configured by editing the JSON content directly, allo
 
 To configure your LINE content, follow the steps below. 
 
-1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the text message content.
+1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the LINE message content.
 
 1. Click **[!UICONTROL Edit code]** to edit JSON content.
 
+    ![](assets/campaign-line-2.png)
+
 1. Use the personalization editor to define content, add personalization and dynamic content. You can use any attribute, such as the profile name or city for example. You can also define conditional rules. Browse to the following pages to learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
 
-1. Click **[!UICONTROL Save]** and check your message in the preview.
+1. Click **[!UICONTROL Save and close]** and check your message in the preview.
+
+    ![](assets/campaign-line-3.png)
 
 1. Use **[!UICONTROL Simulate content]** to preview your LINE message content and personalized content. [Learn more](send-line.md)
 
 Once you have performed your tests and validated the content, you can send your LINE message to your audience. These steps are detailed in [this page](send-line.md)
 
 Once sent, you can measure the impact of your LINE within the Campaign or Journey reports. For more on reporting, refer to [this section](../reports/campaign-global-report-cja.md).
+
+{{$include /help/_includes/do-not-localize/line/ai-augmented-create-line.md}}

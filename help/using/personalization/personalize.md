@@ -9,14 +9,25 @@ role: Developer
 level: Beginner
 keywords: expression, editor, start, personalization
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
     internal-label: Build expressions
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
 subfeature_v2:
   - id: a757b957-83f3-4a4d-9775-a93854f84f77
     internal-label: Conditional instruction
   - id: cb09dcb7-3367-4b63-b02c-8a1356eb876e
     internal-label: Main functions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Get started with personalization{#add-personalization}
 
@@ -59,13 +70,13 @@ This playground provides a simulated environment to write and test personalizati
 
 ➡️ [Access the personalization playground](https://experienceleague.adobe.com/en/apps/journey-optimizer/ajo-personalization){target="_blank"}
 
-## AI assistant for personalization expressions {#ai-personalization-expressions}
+## Generate content for personalization expressions {#ai-personalization-expressions}
 
-In the **[!UICONTROL Personalization Editor]** or from the Email Designer toolbar (**[!UICONTROL Add expression]**), **[!UICONTROL AI Assistant]** helps you generate new expressions from natural language, explain what existing code does, and fix issues in a selection, then apply the output when it matches your intent.
+In the **[!UICONTROL Personalization Editor]** or from the Email Designer toolbar (**[!UICONTROL Add expression]**), **[!UICONTROL Generate Content]** helps you generate new expressions from natural language, explain what existing code does, and fix issues in a selection, then apply the output when it matches your intent.
 
 ![](../content-management/assets/ai-perso-generate.png)
 
-➡️ [Learn how to work with AI Assistant for Personalization Expressions](../content-management/generative-personalization-expressions.md)
+➡️ [Learn how to work with Generate content for personalization expressions](../content-management/generative-personalization-expressions.md)
 
 ## Inline editing of profile attributes {#inline-personalization}
 
@@ -142,3 +153,5 @@ Learn how to leverage the personalization editor playground to write and test pe
 >[!VIDEO](https://video.tv.adobe.com/v/3457868?quality=12)
 
 Explore more video tutorials on personalization features and best practices in [Personalization tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/personalize-content/personalization-editor-overview){target="_blank"}
+
+{{$include /help/_includes/do-not-localize/personalization/ai-augmented-personalize.md}}

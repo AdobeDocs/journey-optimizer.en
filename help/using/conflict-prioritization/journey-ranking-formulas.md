@@ -7,12 +7,29 @@ level: Intermediate
 version: Journey Orchestration
 badge: label="Limited Availability" type="Informative"
 exl-id: b172e0e1-b78e-4d96-ab88-254507b55f48
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
     internal-label: Conflict & prioritization
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
     internal-label: Rules set configuration
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Use formulas to rank journeys {#journey-ranking-formulas}
 
@@ -59,14 +76,12 @@ To create a ranking formula for your journeys, follow the steps below.
 
     <!--
     Selecting a formula entity specifies which type of item—such as journeys or other entities—the ranking formula will apply to. This determines the context in which the formula operates, allowing you to define rules that influence how those items are ranked.
--->
+    -->
 
 1. Optionally, click **[!UICONTROL Select AI model]** to set the model that will be used as a reference to build your ranking formula. [Learn more](journey-ai-models.md)
 
 <!--
-    >[!NOTE]
-    >
-    >[Personalized optimization models](../experience-decisioning/ranking/personalized-optimization-model.md) using continuous metrics are not supported with the AI formula builder.
+    [Personalized optimization models](../experience-decisioning/ranking/personalized-optimization-model.md) using continuous metrics are not supported with the AI formula builder.
 
     Every time you refer to a model score when defining your formula below, the AI model that you selected will be used. [Learn more on AI models](../experience-decisioning/ranking/ai-models.md)
 -->
@@ -207,3 +222,5 @@ Reporting for journey arbitration helps you understand how rule sets and ranking
 
 Use these reports to validate that your formulas and caps are behaving as intended and to tune ranking logic over time.
 -->
+
+{{$include /help/_includes/do-not-localize/conflict-prioritization/ai-augmented-journey-ranking-formulas.md}}

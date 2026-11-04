@@ -8,15 +8,15 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 12168cdf-f517-49b5-958b-ba689ade6982
-TQID: https://experienceleague.adobe.com/kqoRWvDnqVFj78QExUMdYo4ZLsBvtts9370gHQXvt7M
+TQID: 'https://experienceleague.adobe.com/kqoRWvDnqVFj78QExUMdYo4ZLsBvtts9370gHQXvt7M'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a9f73820-6899-47c2-a597-3fec28ab756a
-    internal-label: Reporting
   - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
     internal-label: Track and monitor
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
 subfeature_v2:
   - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
     internal-label: Performance monitoring
@@ -38,7 +38,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Reference the definitions of the journey, email, SMS, landing page, and push notification metrics used across Adobe Journey Optimizer reports.
+**On this page:** Reference the definitions of the journey, email, mobile, landing page, and push notification metrics used across Adobe Journey Optimizer reports.
 
 >[!ENDSHADEBOX]
 
@@ -77,7 +77,7 @@ The tables below give you the list of metrics used in reports and their definiti
  </tbody> 
 </table>
 
-## Email and SMS dimensions and metrics {#email-and-sms-metrics}
+## Email and mobile dimensions and metrics {#email-and-sms-metrics}
 
 <table> 
  <thead> 

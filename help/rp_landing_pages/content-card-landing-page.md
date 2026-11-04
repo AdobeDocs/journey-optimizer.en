@@ -5,6 +5,9 @@ title: Content cards
 description: Content cards
 redpen-status: CREATED_||_2025-08-11_20-43-30
 exl-id: 4916bc53-a6d7-4d11-9a7f-3acf920c7a93
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Content cards{#section-overview}
 

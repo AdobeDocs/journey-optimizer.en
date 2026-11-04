@@ -51,20 +51,21 @@ To learn more about Dynamic Media in Adobe Experience Manager as a Cloud Service
 >
 >For Healthcare customer, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Extended Security for Healthcare add-on offerings.
 
+## Considerations
+
+* Ensure that Dynamic Media with OpenAPI is enabled in Adobe Experience Manager as a Cloud Service. [Learn more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis){target="_blank"}.
+
+* Dynamic media integration with Adobe Journey Optimizer is available for both Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} and [with OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview){target="_blank"}.
+
+* For Dynamic Media Scene7 assets, Journey Optimizer adds default modifiers (`bfc=off&fmt=png-alpha`) at the start of the URL. If your preset also sets `fmt` or `bfc`, it takes precedence, since Scene7 uses the last occurrence of a repeated parameter. To avoid unexpected results, remove `fmt`/`bfc` from the preset, or move it before the default modifiers in the URL.
+
+* By design, the asset selector returns a `/images`-based URL format. If you want to deliver an asset in its original formatm, for example, GIF or SVG, you need to manually update the URL to use the `/content` path instead. Learn more in [Dynamic Media best practices documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-best-practices#deliver-gif-images){target="_blank"}.
+
 
 ## Add and manage Dynamic media {#dynamic-media}
 
-
 Enhance and optimize your content for any screen or browser by inserting dynamic media from Adobe Experience Manager as a Cloud Service directly into your Journey Optimizer content.  You can then resize, crop, enhance, and make other adjustments as needed.
 
-
->[!IMPORTANT]
->
->Ensure that Dynamic Media with OpenAPI is enabled in Adobe Experience Manager as a Cloud Service. [Learn more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis){target="_blank"}.
-
-Dynamic media integration with Adobe Journey Optimizer is available for both Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} and [with OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview){target="_blank"}.
-
-For Dynamic Media Scene7 assets, Journey Optimizer adds default modifiers (`bfc=off&fmt=png-alpha`) at the start of the URL. If your preset also sets `fmt` or `bfc`, it takes precedence, since Scene7 uses the last occurrence of a repeated parameter. To avoid unexpected results, remove `fmt`/`bfc` from the preset, or move it before the default modifiers in the URL.
 
 <!--
 >[!AVAILABILITY]
@@ -162,23 +163,19 @@ Learn more about [Dynamic media template](https://experienceleague.adobe.com/en/
 >**Dynamic media template** is available exclusively in Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7). Since Scene7 mode is not accessible for Healthcare customers, content will not be rendered. For any exceptions, please contact Experience Manager support.
 
 
-### With image component {#image-component}
+### With the Image component {#image-component}
 
-You can insert your dynamic template directly into your content using the Image component:
+Customers who do not have an Adobe Dynamic Media license use the **[!UICONTROL Image]** component to add a dynamic media template to their content:
 
 1. Open your campaign or journey and access your content.
 
-1. Drag and drop an **Image component** into your layout. 
+1. Drag and drop an **[!UICONTROL Image]** component into your layout.
 
-    For more information on Image component, refer to [this page](../email/content-components.md).
+    For more information on content components, refer to [this page](../email/content-components.md).
 
-    ![](assets/dynamic-media-template-1.png)
+1. Browse through your AEM assets and select the Dynamic Media template you want to add to your content.
 
-1. Browse through your AEM assets and select the Dynamic media template you want to add to your content.
-
-    ![](assets/dynamic-media-template-2.png)
-
-1. In the **Image settings**, navigate to access the parameters of your dynamic media template.
+1. From the **[!UICONTROL Settings]** tab, navigate to the parameters of your dynamic media template.
 
     The available fields depend on the parameters added during the [template creation](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters){target="_blank"} in Adobe Experience Manager.
 
@@ -190,19 +187,84 @@ You can insert your dynamic template directly into your content using the Image 
 
     ![](assets/do-not-localize/dynamic_media_template.gif)
 
-1. Conditional content can be applied to the Dynamic Media component to generate different variants of the content. [Learn more](../personalization/dynamic-content.md)
+1. Conditional content can be applied to generate different variants of the content. [Learn more](../personalization/dynamic-content.md)
+
+1. Click **[!UICONTROL Save]**.
+
+Once you have performed your tests and validated the content, you can send your message to your audience.
+
+### With the Dynamic Media Template component {#dynamic-media-template-component}
+
+>[!AVAILABILITY]
+>
+>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+>
+>If your organization does not have access to this component, you can still add your dynamic media template using the **[!UICONTROL Image]** component, as described above.
+
+You can insert your dynamic template directly into your content using the **Dynamic Media Template** component. Follow the steps below:
+
+1. Open your campaign or journey and access your content.
+
+1. Drag and drop an **[!UICONTROL Dynamic Media Template]** into your layout. 
+
+    For more information on content components, refer to [this page](../email/content-components.md).
+
+    ![](assets/dynamic-media-template-1.png)
+
+1. Choose how you want to add your dynamic media template:
+
+    * **[!UICONTROL Browse]** — browse through your AEM assets and select the Dynamic Media Template or PSD file you want to add to your content.
+
+        ![](assets/dynamic-media-template-2.png){width="80%"}
+
+    * **[!UICONTROL Import PSD]** — drag and drop or select a Photoshop (PSD) file. Click **[!UICONTROL Next]** and choose a destination to store it.
+
+        ![](assets/dynamic-media-template-psd.png){width="80%"}
+
+        Adobe Journey Optimizer automatically <!--converts the file into a Dynamic Media Template and -->imports the file into the repository that you selected.
+
+1. Once your file is uploaded and rendered, select the **[!UICONTROL Edit in Dynamic Media Template Editor]** button that displays in the right panel.
+
+    ![](assets/dynamic-media-template-editor-button.png){width="90%"}
+
+
+    This opens the Dynamic Media Template Editor directly within Journey Optimizer, where you can update your template or PSD file without leaving the application.
+
+1. In the Dynamic Media Template Editor, go to the **[!UICONTROL Parameters]** tab, select **[!UICONTROL Include Param]** for each Dynamic Media Template's parameter you want to enable and click **[!UICONTROL Done]**.
+
+    ![](assets/dynamic-media-template-editor.png){width="70%"}
+
+    >[!NOTE]
+    >
+    >Learn more on the Dynamic Media Template WYSIWYG editor in the [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-templates){target="_blank"}.
+
+1. Once back in the Email Designer, the parameters you enabled are available in the **[!UICONTROL Settings]** tab.
+
+    ![](assets/dynamic-media-template-parameters.png){width="80%"}
+
+    The parameters you see here reflect how they were defined in the Dynamic Media Template in Adobe Experience Manager or in Photoshop.
+    
+    The available fields depend on the parameters added during the [template creation](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/creating-template-parameters#creating_template_parameters){target="_blank"} in Adobe Experience Manager.
+
+1. Fill in the different fields and use the personalization editor to add personalized content. You can use any attribute, such as the profile name, city, or other relevant details, to create a more customized experience.
+
+    Learn more about personalization on [this page](../personalization/personalize.md).
+
+    <!--![](assets/do-not-localize/dynamic_media_template.gif)-->
+
+1. Conditional content can be applied to the Dynamic Media Template to generate different variants of the content. [Learn more](../personalization/dynamic-content.md)
 
 1. Click **[!UICONTROL Save]**.
 
 Once you have performed your tests and validated the content, you can send your message to your audience. 
 
-### With HTML component {#html-component}
+### With Html component {#html-component}
 
-You can insert your dynamic template directly into your content using the HTML component:
+You can insert your dynamic template directly into your content using the Html component:
 
 1. Open your campaign or journey and access your content.
 
-1. Drag and drop an **HTML component** into your layout. 
+1. Drag and drop an **[!UICONTROL Html]** component into your layout. 
 
     ![](assets/dynamic-media-template-4.png)
 
@@ -222,6 +284,59 @@ You can insert your dynamic template directly into your content using the HTML c
 
 Once you have performed your tests and validated the content, you can send your message to your audience. 
 
+## Insert countdown timer {#countdown}
+
+Create urgency and maximize conversions with Dynamic Media countdown timers that update in real-time when recipients open your emails. This feature is ideal for flash sales, limited-time offers, and time-sensitive promotions.
+
+For example, as a marketer for a retail brand, you're running a 48-hour flash sale. By using the countdown timer in your promotional emails:
+
+* Recipients who open immediately see "47 hours remaining"
+* Recipients who open 24 hours later see "23 hours remaining"  
+* Recipients who open after the sale ends see "Time's up!"
+
+For more information on how to add countdown timers to your Dynamic Media template in Adobe Experience Manager, refer [to this document](assets/do-not-localize/countdown.pdf).
+
+
+1. In **[!DNL Adobe Experience Manager]**, create a Dynamic Media template and add a countdown timer component to it.
+
+    ![](assets/timer-1.png)
+
+1. In **[!DNL Journey Optimizer]**, create a new campaign or open an existing one, then access the Email Designer.
+
+1. Drag and drop an **HTML** or **Asset** component into your email content.
+
+1. Hover over the component and click **[!UICONTROL Show the source code]** (for HTML components) or **[!UICONTROL Browse]** (for Asset components).
+
+    ![](assets/timer-2.png)
+
+1. From the **[!UICONTROL Edit HTML]** menu, navigate to **[!UICONTROL Assets]** and click **[!UICONTROL Open asset selector]** to browse and select your published Dynamic Media template.
+
+    ![](assets/timer-3.png)
+
+1. Enable the pills experience by toggling Pills to On. This improves readability by hiding long attribute paths.
+
+    ![](assets/timer-6.png)
+
+1. In the **[!UICONTROL Custom attributes]** menu, configure any customizable URL parameters as needed for your template.
+
+    Click **[!UICONTROL Save]** when finished.
+
+    ![](assets/timer-4.png)
+
+1. Alternatively, you can also access the parameters of the Dynamic Media template by selecting the asset in the Email Designer, then accessing the **[!UICONTROL Settings]** menu.
+
+    Configure the following:
+
+    * **Banner text**: The text displayed with your timer
+    * **End time**: The date and time when the countdown expires. Enter the time in GMT (Greenwich Mean Time) only. The system does not accept other time zones.
+    * **Fallback text**: The message shown after the timer ends
+
+    ![](assets/timer-5.png)
+
+1. Click **[!UICONTROL Preview]** to view the timer with real-time countdown updates and verify your configuration.
+
+When recipients open the email, they see the accurate time remaining for your flash sale. If they reopen the email later, the countdown automatically updates to reflect the current time remaining. After the end date, the default message appears automatically.
+
 ## How-to video {#video}
 
 Learn how to integrate Adobe Experience Manager Dynamic Media with Adobe Journey Optimizer to enable real-time content updates and personalization.
@@ -230,3 +345,4 @@ This tutorial covers how to modify images directly within AJO, add text overlays
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
+{{$include /help/_includes/do-not-localize/integrations/ai-augmented-aem-dynamic.md}}

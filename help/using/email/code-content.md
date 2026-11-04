@@ -9,7 +9,7 @@ role: User
 level: Intermediate, Experienced
 keywords: code, HTML, editor
 exl-id: 5fb79300-08c6-4c06-a77c-d0420aafca31
-TQID: https://experienceleague.adobe.com/8CR92GEP0qQqj2h-JqzUdu9oq07Ahedcs1xh8rINvkY
+TQID: 'https://experienceleague.adobe.com/8CR92GEP0qQqj2h-JqzUdu9oq07Ahedcs1xh8rINvkY'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -31,6 +31,8 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
@@ -126,3 +128,5 @@ If you need to perform date calculations in your email content:
 * **Use computed attributes** - Create [computed attributes](../audience/computed-attributes.md) that perform complex date calculations, making the results available as profile attributes.
 
 See [Date and time functions](../personalization/functions/dates.md) for the full list of supported functions.
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-code-content.md}}

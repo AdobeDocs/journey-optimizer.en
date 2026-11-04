@@ -14,8 +14,8 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
@@ -126,7 +126,6 @@ Journey Optimizer is built natively on Adobe Experience Platform, sharing its da
 * [Design journeys and send messages](../building-journeys/journey-gs.md) — Build your first customer journey and configure channel actions.
 * [Live reports](../reports/live-report.md) — Monitor campaign and journey performance in real time.
 * [Introduction to Journey Optimizer tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction){target="_blank"} — A guided video walkthrough of core Journey Optimizer concepts.
-* [Journey Optimizer Security Overview](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF) — Security architecture, data protection, and compliance details.
 * [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} — Official licensing terms and edition feature breakdown.
 
 ## Where to go next {#where-next}

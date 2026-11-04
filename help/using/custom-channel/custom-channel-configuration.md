@@ -1,0 +1,97 @@
+---
+title: Create a channel configuration for a custom channel
+description: Learn how to create a channel configuration for a custom channel in Adobe Journey Optimizer.
+feature: Channel Configuration
+topic: Content Management
+role: Admin
+level: Experienced
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
+  - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
+    internal-label: Custom Channels
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+---
+
+# Create a channel configuration {#create-channel-config}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a channel configuration for a custom channel in Adobe Journey Optimizer, linking it to API credentials, an optional subdomain, and payload defaults, so marketers can select it when building campaigns and journeys.
+
+>[!ENDSHADEBOX]
+
+A channel configuration links your custom channel to a named, reusable preset that marketers select when building campaigns and journeys.
+
+To create a channel configuration for a custom channel, follow the steps below.
+
+1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel configurations]** and click **[!UICONTROL Create channel configuration]**. Learn more on [creating a channel configuration](../configuration/channel-surfaces.md).
+
+1. From the **[!UICONTROL Select channel]** drop-down list, select one of your activated custom channels.
+
+   <!--![Select channel](assets/custom_channel_select_channel.png){width="100%"}-->
+
+1. If the selected channel uses authentication (type is not **None**), the **[!UICONTROL API credentials]** field appears. Select the credentials to use for this configuration. [Learn more on API credentials](custom-channel-api-credentials.md)
+
+   ![Select API credentials](assets/custom_channel_config_api_credentials.png){width="100%"}
+
+1. If you have set up subdomains for custom channels in [!DNL Journey Optimizer], you can select a delegated subdomain to use for tracking links present in the payload for this configuration. [Learn how to delegate a subdomain](custom-channel-subdomains.md)
+
+1. If the selected channel has headers or query parameters [defined as variable](create-custom-channel.md#endpoint-configuration) for the endpoint URL, the **[!UICONTROL Dynamic parameters]** section appears.
+
+   Enter the value for each parameter. You can use the personalization editor to inject dynamic values (for example, a user identifier resolved from the profile). This allows you to customize the request for each recipient based on their profile data.
+
+   ![Dynamic parameters](assets/custom_channel_config_dynamic_parameters.png){width="70%"}
+
+1. If the custom channel has payload fields with the **[!UICONTROL Channel config]** checkbox enabled, those fields appear in the **[!UICONTROL Payload configuration]** section. [Learn more](create-custom-channel.md#payload-configuration)
+
+   ![Payload fields](assets/custom_channel_config_payload.png){width="70%"}
+
+   Configure a value for each field as appropriate for this configuration. This is useful for fields that may vary based on the context of the campaign or journey, such as sender information or message templates.
+   
+<!--
+1. For orchestrated campaigns, complete the **[!UICONTROL Execution details]** section to map profile dimensions and specify the execution address.
+
+   ![Execution details in orchestrated campaigns](assets/custom_channel_oc_execution_details.png){width="80%"}
+-->
+
+1. Click **[!UICONTROL Submit]** to save and activate the channel configuration.
+
+<!--
+1. Optionnally, attach a reporting webhook so interaction events from your custom channel can enrich reporting.
+-->
+
+>[!IMPORTANT]
+>
+>In custom channel configurations, you cannot select a message type. Therefore, all messages sent through custom channels are treated as Marketing messages at send time. As a result, custom channels are not supported in Transactional campaigns (action or API-triggered).
+
+<!--
+>[!CAUTION]
+>
+>If your organization uses approval policies, you may need to request approval before activating journeys or campaigns that use this channel configuration. [Learn more](../test-approve/gs-approval.md)
+-->
+
+## Next steps {#next-steps}
+
+Your custom channel is now fully configured. Marketers can start using it to build customer experiences:
+
+* [Create custom channel experiences](create-custom-experience.md)
+* [Test your custom channel](test-custom-channel.md)
+* [Monitor custom channels](monitor-custom-channel.md)
+
+{{$include /help/_includes/do-not-localize/custom-channel/ai-augmented-custom-channel-configuration.md}}

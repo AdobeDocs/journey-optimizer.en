@@ -5,22 +5,26 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: 92d1439e-5cac-4e7d-85f8-ebf432e9ef7c
-TQID: https://experienceleague.adobe.com/dKfstmm0ilHKUATU-sz7c04IZBu2O7Ju-srPPoKJVl4
+TQID: 'https://experienceleague.adobe.com/dKfstmm0ilHKUATU-sz7c04IZBu2O7Ju-srPPoKJVl4'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
-feature_v2: []
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: bf7a266e-e483-42c6-b5bc-09ca6e49900c
+    internal-label: Approval workflows
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-subfeature_v2:
-  - id: bf7a266e-e483-42c6-b5bc-09ca6e49900c
-    internal-label: Approval workflows
-  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
-    internal-label: Get started
 ---
 # Get started with journeys & campaigns approval {#send-proofs}
 
@@ -114,9 +118,9 @@ The request stays "In Review" until an approver acts on it. You can cancel the r
 
 +++
 
-+++Can I edit a campaign or journey while it is pending approval?
++++Can I edit a campaign or journey while it is In review?
 
-No. Once submitted for approval, the campaign or journey is in a locked "In Review" state. To make changes, the creator or an approver must cancel the request first. The item returns to "Draft" and can be edited before resubmitting.
+No. A campaign or journey is locked while it is In review; for a journey, this includes content configured in its **[!UICONTROL Action]** activity. To make changes, the user who submitted the approval request can cancel it, or an approver can request changes. Either action returns the item to Draft. Edit the campaign or journey, then submit it for approval again.
 
 +++
 
@@ -146,3 +150,5 @@ No. Requestors cannot manually select which user group receives or routes the ap
 * **[Request approval](request-approval.md)** - Understand how to submit content for approval and track approval status.
 * **[Review and approve requests](review-approve-request.md)** - Discover how to review, approve, or reject approval requests as an approver.
 * **[Simulate content variations](simulate-sample-input.md)** - Click **[!UICONTROL Simulate content]** to test content variations with sample input data, AI auto-generation, or simulated users. Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
+
+{{$include /help/_includes/do-not-localize/test-approve/ai-augmented-gs-approval.md}}

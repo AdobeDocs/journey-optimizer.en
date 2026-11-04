@@ -5,10 +5,23 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: c51e4089-7f51-437d-a5ed-de10bab46cf8
-feature_v2: []
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
+  - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
+    internal-label: Proofs
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Select test profiles {#select-test-profiles}
 
@@ -24,6 +37,8 @@ subfeature_v2:
 >abstract="Use test profiles to preview and test your content. If you have added personalized fields, you can check how they are displayed using test profile data."
 
 Test profiles are additional recipients who do not match the defined targeting criteria. [Learn how to create test profiles](../audience/creating-test-profiles.md)
+
+Before selecting test profiles, ensure the identity namespace you plan to use matches the namespace under which your test profiles are stored in Adobe Experience Platform (for example, **Email** or **Phone**). A mismatch prevents test profiles from being correctly resolved in the search field.
 
 Before using test profiles to test your content, you first need to select them. To do this, follow these steps:
 

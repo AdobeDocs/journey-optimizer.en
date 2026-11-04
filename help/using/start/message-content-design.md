@@ -10,18 +10,30 @@ level: Beginner, Intermediate
 hide: true
 keywords: content, design, email, push, sms, personalization, templates
 exl-id: a5700c92-1f6a-4c78-9c8e-81f8fd2fe8e3
-TQID: https://experienceleague.adobe.com/bpZArBcEF0xy-M10Ds1CIou3hr4lcK-9wWTD-eROkbA
+TQID: 'https://experienceleague.adobe.com/bpZArBcEF0xy-M10Ds1CIou3hr4lcK-9wWTD-eROkbA'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
+  - id: 6eb7d9ad-3477-58b3-957a-080ef7738a30
+    internal-label: SMS
+  - id: 66e1fd99-672d-5d64-aa58-eca107f0fbae
+    internal-label: Push
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
+    internal-label: In App channel
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -44,11 +56,11 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Explore the tools and best practices for designing personalized email, push, SMS, and in-app content so you can deliver on-brand messages that drive engagement.
+**On this page:** Explore the tools and best practices for designing personalized email, push, mobile messages, and in-app content so you can deliver on-brand messages that drive engagement.
 
 >[!ENDSHADEBOX]
 
-Designing message content in Adobe Journey Optimizer empowers you to create engaging, personalized communications across all channels. Whether you're crafting emails with rich visual layouts, building mobile-optimized push notifications, designing interactive in-app experiences, or sending SMS messages, this section provides comprehensive guidance on content creation best practices. Learn how to leverage templates and fragments for reusable content, apply personalization and dynamic content to tailor messages for each recipient, and ensure accessibility compliance. From understanding design principles to implementing advanced formatting options, you'll master the tools needed to deliver compelling, on-brand experiences that drive engagement and conversions.
+Designing message content in Adobe Journey Optimizer empowers you to create engaging, personalized communications across all channels. Whether you're crafting emails with rich visual layouts, building mobile-optimized push notifications, designing interactive in-app experiences, or sending mobile messages, this section provides comprehensive guidance on content creation best practices. Learn how to leverage templates and fragments for reusable content, apply personalization and dynamic content to tailor messages for each recipient, and ensure accessibility compliance. From understanding design principles to implementing advanced formatting options, you will master the tools needed to deliver compelling, on-brand experiences that drive engagement and conversions.
 
 ## Design message content
 
@@ -76,7 +88,7 @@ Create compelling push notifications for iOS and Android, configure title and bo
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
 
-Design SMS & MMS Messages
+Design Mobile Messages
 
 Compose personalized Mobile messages with SMS, enhance communications with multimedia content using MMS, and leverage dynamic content for targeted messaging.
 

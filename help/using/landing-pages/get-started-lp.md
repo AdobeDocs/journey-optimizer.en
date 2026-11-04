@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landing, landing page, start, get start
 exl-id: 0da96e32-52ad-4cc3-bac4-844b1f39ed16
-TQID: https://experienceleague.adobe.com/wr4XGNostKoN8jZ50VRAQPoGg9tsNhMOyJGEt1mASso
+TQID: 'https://experienceleague.adobe.com/wr4XGNostKoN8jZ50VRAQPoGg9tsNhMOyJGEt1mASso'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,10 @@ feature_v2:
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: af6bcde9-4f08-5a7a-9651-da0a28d11b0a
+    internal-label: Subscriptions
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: b19d9237-76be-466d-a869-aacf2d72205f
     internal-label: Landing pages
@@ -56,6 +60,7 @@ Use landing pages when you want to:
 * Let customers **opt in or opt out** of marketing communications or a specific service or newsletter from a link in an email or campaign—including subscription lists for targeted services. [Read more](lp-use-cases.md#subscription-to-a-service)
 * **Collect consent** before sending communications and send a **confirmation email** upon opt-in or opt-out. [Read more](lp-use-cases.md#send-confirmation-email)
 * **Capture or update profile data** using forms on **[!UICONTROL Data Capture]** landing pages—for progressive profiling, preferences, registrations, and similar scenarios. [Read more](#data-capture-lp)
+* Publish a **public landing page** that anonymous visitors can open from a shared URL and use to submit data to a non-profile enabled dataset (Limited Availability). [Read more](lp-anonymous.md)
 * Redirect users to a **dedicated web form** without building an external page outside of [!DNL Journey Optimizer]
 * Build **responsive landing pages** using [!DNL Journey Optimizer]'s content design capabilities
 
@@ -66,6 +71,8 @@ Use landing pages when you want to:
 >[!NOTE]
 >
 >Data capture through landing page forms is supported for **known profiles** (existing profiles identified in [!DNL Adobe Experience Platform]). The landing page should be opened from a **personalized link** (for example from an email campaign) so the profile identity can be resolved when the page loads.
+>
+>Data Capture landing pages can also be published on a public URL to capture data from anonymous visitors. In that case, the data is stored in a non-profile enabled dataset and does not enrich any profile. [Learn more](lp-anonymous.md)
 
 The following are example use cases:
 

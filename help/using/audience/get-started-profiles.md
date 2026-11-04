@@ -7,22 +7,24 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: be3936e4-8185-4031-9daf-95eea58077d0
-TQID: https://experienceleague.adobe.com/QpLGV-y5qbtmksC-99GU5PtaV-mUA-imew8JDj7-weA
+TQID: 'https://experienceleague.adobe.com/QpLGV-y5qbtmksC-99GU5PtaV-mUA-imew8JDj7-weA'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: d2971708-e780-44bb-9e2a-72f139796afd
+    internal-label: Customer
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
-    internal-label: Audience Qualification events
-  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
-    internal-label: Audiences
-  - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
-    internal-label: Audience guardrails
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
+    internal-label: Audiences
+  - id: ef9a83ca-eefa-47cf-aa34-f1a34715583a
+    internal-label: Profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -112,3 +114,5 @@ Learn how Adobe Experience Platform assembles and updates Real-Time Customer Pro
 >* [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
 >* [Default guardrails for Real-Time Customer Profile data and segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"}
 >* ​[Data Ingestion documentation](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home){target="_blank"}
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-get-started-profiles.md}}

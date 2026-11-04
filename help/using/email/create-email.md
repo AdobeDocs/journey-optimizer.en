@@ -21,18 +21,12 @@ feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
-    internal-label: Proofs
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
+  - id: fae48155-b23f-40d2-a252-a25bce350b4d
+    internal-label: Email configuration
   - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
     internal-label: Email design
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
-  - id: fae48155-b23f-40d2-a252-a25bce350b4d
-    internal-label: Email configuration
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -59,6 +53,8 @@ topic_v2:
 >id="ajo_message_email"
 >title="Email creation"
 >abstract="Define your email subject line, and open the Email Designer to create the content of the email."
+>additional-url="https://experienceleague.adobe.com/en/courses/ajo-ai-powered-on-brand-content-creation-for-marketers" text="Take the AI content course"
+
 
 ## Add an email action {#email-action}
 
@@ -78,7 +74,7 @@ To create an email in [!DNL Journey Optimizer], add an **[!UICONTROL Email]** ac
 
     >[!IMPORTANT]
     >
-    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
+    >Legacy native channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
 1. Select **[!UICONTROL Email]** as the action type.
 
@@ -126,6 +122,44 @@ From the **[!UICONTROL Action]** section, specify if you want to track how your 
 For more information on how to create, configure and activate a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
 >[!ENDTABS]
+
+### Override email channel configuration {#override-email-channel-configuration}
+
+When building your email campaign or journey, you can override specific values inherited from the selected channel configuration directly at the action level.
+
+This enables you to **change only specific fields** in your settings without creating a new channel configuration, allowing for targeted adjustments while maintaining the overall setup.
+
+For more precise control, you can also [personalize](../personalization/personalization-build-expressions.md) these override fields **using contextual data**, in addition to profile attributes and helper functions.
+
+>[!NOTE]
+>
+>As opposed to channel configuration which is defined at setup time, the email action runs in a journey or campaign execution context where contextual attributes are available.
+
+After selecting the email configuration, enable **[!UICONTROL Override email channel configuration]**.
+
+![Email action with Override email channel configuration toggle enabled](../campaigns/assets/create-campaign-action-override.png){width=80%}
+
+You can override:
+
+* Email header fields: **[!UICONTROL From name]**, **[!UICONTROL From email prefix]**, **[!UICONTROL Reply to name]**, and **[!UICONTROL Reply to email]**. Overriding these fields allows sender details to reflect information such as the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. [Learn more on header parameters](header-parameters.md)
+
+  ![Email header override fields including From and Reply-to parameters](../campaigns/assets/create-campaign-action-override-header.png){width=70%}
+
+  For example, a customer visits one of your stores, discusses selected items with a relationship manager, and shares their email address. A few days later, you can send a personalized follow-up email and override the sender name and email address so the message appears to come from that same relationship manager, creating a more consistent and relevant experience.
+
+* Execution address: **[!UICONTROL Delivery address]**. When several email addresses are available for a given profile, [!DNL Journey Optimizer] uses the execution field set in the [general settings](../configuration/primary-email-addresses.md) or in the [channel configuration](email-settings.md#execution-address) to determine which email address to use from the profile service in priority. In some cases, you may want to override the delivery address set globally and define a different value at the action level.
+
+  ![Execution address override field in the email action](../campaigns/assets/create-campaign-action-override-exec-address.png){width=70%}
+
+* List-unsubscribe values: **[!UICONTROL Mailto (unsubscribe)]** and **[!UICONTROL One-click unsubscribe URL]**. The one-click [List unsubscribe](list-unsubscribe.md) URL is an unsubscribe link or button displayed next to the email sender information and lets recipients instantly opt out of your mailing lists with a single click. Here you can replace the unsubscribe address and one-click unsubscribe URL set at the channel configuration level.
+
+  ![List unsubscribe override fields in the email action](../campaigns/assets/create-campaign-action-override-list.png){width=70%}
+
+The configured value displays under each override field. To keep the configured value for a setting, leave that field empty.
+
+>[!CAUTION]
+>
+>For API-triggered campaigns, as the context is generated from the API payload at runtime, contextual attributes are not available in the personalization editor when defining the email action, so they must be entered manually. The expression path must match the API payload structure exactly as no check is performed by [!DNL Journey Optimizer]. [Learn more on contextual data syntax](../campaigns/api-triggered-campaign-content.md#contextual)
 
 ## Define your email content {#define-email-content}
 
@@ -313,6 +347,10 @@ If you have enabled the [HTML size optimization](#optimize-html-size) option, yo
     
     Use this information to validate the optimized output and confirm the email stays within the recommended 100 KB threshold before publishing.
 
+    >[!NOTE]
+    >
+    >The sizes displayed in the **[!UICONTROL View proofs]** pop-up reflect the size of your HTML template, where Handlebars expressions are evaluated at their minimum possible value — not the size of the final delivered email. At delivery time, dynamic expressions such as `{{#each}}` loops are resolved against the recipient's profile data, which may significantly increase the actual email size.
+
 <!--
 ## Define your email content {#email-content}
 
@@ -338,3 +376,7 @@ Control the rendering of your email, and check personalization settings with tes
 
 You must also check alerts in the upper section of the editor.  Some of them are simple warnings, but others can prevent you from using the message. 
 -->
+
+If your email content returns an error code, see [Content authoring errors](../content-management/content-authoring-errors.md).
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-create-email.md}}

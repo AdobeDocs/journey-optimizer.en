@@ -5,18 +5,35 @@ title: Troubleshooting
 description: Troubleshooting
 redpen-status: CREATED_||_2025-08-11_20-20-50
 exl-id: bf26ca1f-e239-418e-8ce8-a891f3ba3416
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Track, monitor and troubleshoot {#section-overview}
 
 Effectively managing your customer journeys starts with comprehensive tracking, enabling proactive monitoring, insightful reporting, and efficient troubleshooting. Adobe Journey Optimizer provides a complete framework to capture customer interactions and system events, analyze performance metrics, and quickly resolve issues when they arise.
 
-**Track** customer interactions across all channels—emails, web, push, in-app, SMS, and more—capturing opens, clicks, conversions, and custom events that reveal how customers engage with your content.
+**Track** customer interactions across all channels—emails, web, push, in-app, mobile message, and more—capturing opens, clicks, conversions, and custom events that reveal how customers engage with your content.
 
 **Monitor** journey and campaign performance using real-time reports, system alerts, and deliverability metrics that help you identify trends, measure success, and catch potential issues early.
 
 **Troubleshoot** problems efficiently with detailed error codes, step-by-step execution logs, and targeted guidance for resolving journey failures, execution inconsistencies, or action-level problems.
 
 This page brings together essential resources to help you implement tracking, monitor journey health, access key reporting insights, and resolve issues efficiently across all stages of your customer journeys.
+
+## Find your issue
+
+Use the symptom that best matches your issue to go directly to the relevant troubleshooting guide:
+
+| If you are experiencing this issue | Start here |
+| --- | --- |
+| You cannot test or publish a journey | [Troubleshoot journey errors](../using/building-journeys/troubleshooting.md) |
+| Profiles do not enter or progress through a journey | [Troubleshoot journey execution](../using/building-journeys/troubleshooting-execution.md) |
+| An inbound experience is not displayed or continues after a profile exits | [Troubleshoot inbound actions](../using/building-journeys/troubleshooting-inbound.md) |
+| A custom action test or API call fails | [Troubleshoot custom actions](../using/action/troubleshoot-custom-action.md) |
+| You need to monitor live journeys and campaigns proactively | [Access and subscribe to system alerts](../using/reports/alerts.md) |
+| You have a Journey Optimizer error code | [View the error codes reference](../using/building-journeys/error-codes-reference.md) |
+| Emails are delivered but do not reach recipients' inboxes as expected | [Review deliverability guidance](../using/reports/deliverability.md) |
 
 ## Get started with tracking
 
@@ -65,7 +82,7 @@ Understand common error codes in Adobe Journey Optimizer and find quick resoluti
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
-Troubleshoot Errors Before Testing or Publishing Your Journey
+Troubleshoot Journey Errors
 
 Identify and resolve journey-wide errors, activity issues, and set fallback actions to ensure smooth testing and publishing.
 
@@ -75,7 +92,7 @@ Identify and resolve journey-wide errors, activity issues, and set fallback acti
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-Troubleshooting Live Journey Execution
+Troubleshoot Journey Execution
 
 Diagnose issues with event validation, profile entry, journey navigation, and message delivery during live execution.
 
@@ -85,7 +102,7 @@ Diagnose issues with event validation, profile entry, journey navigation, and me
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
-Troubleshoot Inbound Actions in Journeys
+Troubleshoot Inbound Actions
 
 Debug inbound action issues such as missing content or continued delivery after profile exit using detailed step-by-step guides.
 
@@ -95,11 +112,31 @@ Debug inbound action issues such as missing content or continued delivery after 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
-Troubleshooting Custom Actions
+Troubleshoot Custom Actions
 
 Validate and debug custom actions using the **Send test request** feature to ensure API calls and authentication settings are correct.
 
 [Validate custom actions](../using/action/troubleshoot-custom-action.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
+
+Troubleshoot Live Activities
+
+Diagnose why Live activities fail to appear, update, or end, covering profile token, campaign configuration, payload, and delivery issues for unitary and broadcast use cases.
+
+[Fix Live activity issues](../using/mobile-live/troubleshoot-mobile-live.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/file-alt.svg)
+
+Troubleshoot AEM Content Fragments
+
+Review key considerations and common issues when working with Adobe Experience Manager Content Fragments in Journey Optimizer, including fragment types, repository access, and personalization.
+
+[Resolve Content Fragment issues](../using/integrations/aem-fragments-limitations.md)
 :::
 
 :::
@@ -116,6 +153,22 @@ Learn what to include when contacting Adobe support—environment details, impac
 
 ## Additional resources
 
+### Journeys
+
 * [Journey FAQ](../using/building-journeys/journey-faq.md) - Comprehensive answers to common questions about journeys, covering journey types, execution, configuration, and troubleshooting best practices.
 
 * [Guardrails and limitations](../using/start/guardrails.md) - Learn about Journey Optimizer guardrails, product limitations, performance considerations, and supported browsers to ensure optimal usage.
+
+### Campaigns
+
+* [Troubleshoot campaign activation](../using/campaigns/trigger-campaigns.md#troubleshooting) - Resolve common issues encountered when reviewing and activating campaigns.
+
+### Channels and integrations
+
+* [Troubleshoot WhatsApp channel setup](../using/whatsapp/whatsapp-configuration.md#troubleshooting) - Diagnose and fix common configuration issues when setting up the WhatsApp channel.
+
+* [Integrations troubleshooting FAQ](../using/integrations/vendor-integration-faq.md#troubleshooting) - Find answers to common connection and test-connection failures for third-party integrations.
+
+### Configuration
+
+* [Troubleshoot custom subdomain delegation](../using/configuration/delegate-custom-subdomain.md#check-list) - Work through a checklist to resolve issues submitting a custom subdomain.

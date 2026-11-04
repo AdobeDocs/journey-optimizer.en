@@ -61,7 +61,7 @@ Learn how to access, organize, and manage your campaigns in Adobe Journey Optimi
 **Jump directly to what you need:**
 
 * **Create a new campaign** - [Choose your campaign type](get-started-with-campaigns.md#campaign-types) | [Create Action campaign](create-campaign.md) | [Create API-triggered campaign](api-triggered-campaigns.md) | [Create Orchestrated campaign](../orchestrated/gs-orchestrated-campaigns.md)
-* **Find existing campaigns** - [Search and filter](#access)
+* **Find existing campaigns** - [Search and filter](#access) | [Organize with folders](#folders)
 * **View campaign performance** - [Campaign reports](../reports/campaign-global-report-cja.md)
 * **Schedule campaigns** - [Use the calendar](#calendar)
 * **Manage conflicts** - [Conflict management guide](../conflict-prioritization/gs-conflict-prioritization.md)
@@ -70,7 +70,7 @@ Learn how to access, organize, and manage your campaigns in Adobe Journey Optimi
 
 ## Access and browse campaigns {#access}
 
-Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns by type: **Action** campaigns, **API-triggered** campaigns, and **Orchestrated** campaigns. Learn more about the [types of campaigns](get-started-with-campaigns.md#campaign-types). Available types depend on your license agreement and your permissions.
+Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns by type: **Action** campaigns, **API-triggered** campaigns, **Orchestrated** campaigns, and **Folders**. Learn more about the [types of campaigns](get-started-with-campaigns.md#campaign-types). Available types depend on your license agreement and your permissions.
 
 >[!BEGINTABS]
 
@@ -104,7 +104,15 @@ Each Orchestrated campaign in the list displays information such as the campaign
 
 In addition, a search bar and filters are available to facilitate easy searching within the list. For example, you can filter campaigns to display only those associated to a given channel or tag, or those created during a specific date range.
 
-You can also sort the list by clicking most column headers. In the folders view, sorting and filtering by **[!UICONTROL Priority]** and **[!UICONTROL Channel configuration]** columns is also supported.
+### Organize campaigns with folders {#folders}
+
+In the Campaigns inventory, click the **[!UICONTROL Show folders]** icon to open the folder view and organize your campaigns. [Learn how to work with folders](../start/search-filter-categorize.md#organize-folders) in *Search, filter, organize*.
+
+![](assets/folders-view-campaigns.png)
+
+>[!AVAILABILITY]
+>
+>Folders for journeys and campaigns are in limited availability. For current release status, see the [Journey Optimizer release cycle](../rn/releases.md).
 
 ## Campaign operations {#operations}
 
@@ -124,10 +132,7 @@ The ![image showing the More actions button](assets/do-not-localize/rule-builder
 
 **For Action and API triggered campaigns only:**
 
-<!--
-Per-campaign alert subscription is deferred (CJM-112845, CJM-112849). Campaign lifecycle alerts can currently be subscribed to at the sandbox level only. See ../reports/alerts.md#subscribe-alerts
 * **[!UICONTROL Subscribe to alerts]** - Choose which campaign lifecycle system alerts apply to this campaign only (in addition to any sandbox-wide alert subscriptions). [Learn more about system alerts →](../reports/alerts.md#subscribe-alerts)
--->
 * **[!UICONTROL Add to package]** - Add the campaign to a package in order to export it to another sandbox. [Learn how to export objects →](../configuration/copy-objects-to-sandbox.md)
 * **[!UICONTROL Open draft version]** - If a new version of the campaign has been created and has not been activated yet, you can access its draft version using this action.
 
@@ -153,7 +158,6 @@ Each campaign moves through a lifecycle that is reflected by its status in the i
 | **[!UICONTROL Completed]** | ✅ | ✅ | ✅ | Execution complete (auto-assigned 3 days after activation or at end date for recurring) | [View reports](../reports/campaign-global-report-cja.md), [archive](#archive-a-campaign), or [duplicate](#duplicate-a-campaign) |
 | **[!UICONTROL Failed]** | ✅ | ✅ | — | Execution failed | Check logs, fix issues, [duplicate to retry](#duplicate-a-campaign) |
 | **[!UICONTROL Archived]** | ✅ | ✅ | ✅ | Archived (auto-deleted after 30 days) | [Retrieve using filter](#access) if needed |
-| **[!UICONTROL Closed]** | — | — | ✅ | Recurring campaign closed, no new entries allowed (continues until all activities complete) | Wait for completion |
 | **[!UICONTROL Publishing]** | — | — | ✅ | Being published | Wait for publishing to complete |
 
 >[!NOTE]
@@ -170,62 +174,9 @@ When an error occurs within one of your campaigns, a warning icon appears alongs
 >
 >Assets/Images are accessible in delivered content for up to 2 years (730 days) since their first publication in any fragment/inline message. Re-publishing is required after this expiry period (any time after 730 days) to keep them accessible for another 2 years. Any re-publication done within 730 days of the first publication will not extend the expiry of assets/images to the next 730 days.
 
-## Campaigns calendar {#calendar}
+## Calendar
 
->[!CONTEXTUALHELP]
->id="ajo_campaigns_view"
->title="Campaigns list and calendar views"
->abstract="In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules. You can switch between the list and calendar views at any times using these buttons."
-
-In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules.
-
-### How the calendar works
-
-How campaigns are represented:
-
-* By default, the calendar grid shows all live and scheduled campaigns for the selected week. Additional filter options can show completed, stopped and finished activations or activations of a certain type or channel.
-* Draft campaigns are not displayed.
-* Campaigns spanning multiple days appear at the top of the calendar grid.
-* If no start time is specified, the closest manual activation time is used to position it in the calendar.
-* Campaigns are displayed as 1-hour timespans, but this does not reflect actual send or completion time.
-
-### Navigate the calendar
-
-1. Click the ![calendar](assets/do-not-localize/Smock_Calendar_18_N.svg) icon to access your Campaigns calendar.
-
-1. Use the arrow buttons or the date selector above the calendar to move between weeks.
-
-    The calendar displays all campaigns scheduled for the current week. 
-
-    ![calendar view showing live campaigns](assets/campaigns-timeline.png)
-
-1. Click the ![gear](assets/do-not-localize/Smock_Gears_18_N.png) icon to toggle the display of items that span multiple days or weeks.
-
-    ![calendar view showing live campaigns](assets/campaign-long-term.png)
-
-1. Click the ![add calendar](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) icon to manage and add up to three external calendars.
-
-    ![calendar view showing external calendars](assets/campaign-external-calendar.png)
-
-1. Drag and drop your CSV files containing event names, start dates, and end dates.
-
-    Uploaded events appear for all users in your organization and display on both Journey and Campaign calendars.
-
-    +++CSV format should be as follows:
-
-    | Column1 | Column2 | Column3 |
-    |-|-|-|
-    | Event name | Start date in mm/dd/yy format | End date in mm/dd/yy format |
-    
-    +++
-
-1. If needed, you can hide, unhide, or remove added external calendars.
-
-    ![calendar view showing external calendars](assets/campaign-manage-calendar.png)
-
-1. For more details on a campaign, click its visual block to open details on it. An information pane will open with various information on the campaign such as its type, access to the reports, or the tags that have been assigned.
-
-    ![campaign list with the information pane opened](assets/campaign-rail.png)
+Campaign schedules are shown in the unified **[!UICONTROL Calendar]** menu with journey schedules. [Learn how to use the Calendar](../start/calendar.md).
 
 ## Modify and stop recurring Action campaigns {#modify}
 
@@ -238,6 +189,10 @@ To modify and create a new version of a recurring Action campaign, follow these 
 1. A new version of the campaign is created. You can check the live version by clicking **[!UICONTROL Open live version]**.
 
     ![](assets/create-campaign-draft.png)
+
+    The draft version has its own version ID. The current live version remains available while you work on the draft; activating the draft replaces the live version.
+
+    For campaigns with a decision policy that includes a content experiment, a campaign version can contain a cloned decision policy and a separate experiment. Treatment assignments, including test and control group membership, may be re-segmented between versions, so do not assume assignments or results are continuous across versions. Account for the version boundary when interpreting experiment results.
 
     In the campaigns list, activated campaigns with a draft version in progress display with a specific icon in the **[!UICONTROL Status]** column. Click this icon to open the draft version of the campaign.
 
@@ -255,6 +210,14 @@ To modify and create a new version of a recurring Action campaign, follow these 
 * [Campaign content](campaign-content.md)
 * [Campaign audience](campaign-audience.md)
 * [Campaign schedule](campaign-schedule.md)
+
+### Edit a published message {#edit-published-message}
+
+When a campaign is activated, its messages are published and the campaign is **[!UICONTROL Live]**. For Action and API-triggered campaigns:
+
+* A published message cannot be updated directly. To change it, create a new version of the campaign, edit the draft version, then activate it. See [Modify an Action campaign](#modify-an-action-campaign).
+* A new version can only be created from a published (Live) message. A message that is still a draft is edited directly.
+* A published message cannot be set back to **[!UICONTROL Draft]**. Create a new version instead.
 
 ### Stop an Action campaign {#stop}
 
@@ -305,3 +268,5 @@ The campaign is created and added to the campaign list.
 * **Monitoring & optimization** - [Campaign reports (CJA)](../reports/campaign-global-report-cja.md) | [Set up alerts](../reports/alerts.md)
 
 * **Organization** - [Work with tags](../start/search-filter-categorize.md) | [Manage permissions](../administration/ootb-product-profiles.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-manage-campaigns.md}}

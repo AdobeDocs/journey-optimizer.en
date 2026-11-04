@@ -18,14 +18,12 @@ feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
-    internal-label: Fragments
   - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
     internal-label: Email design
+  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
+    internal-label: Fragments
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -158,7 +156,7 @@ New updates to the original locked fragment are automatically propagated to all 
 >
 >To publish a fragment, you must have the [Publish Fragment](../administration/ootb-product-profiles.md#content-library-manager) user permission.
 
-If your fragment is ready to go live, you can preview and publish it to make it available in your journeys and campaigns. To do so, follow the steps below.
+If your fragment is ready to go live, you can preview and publish it to make it available in your journeys and campaigns. To do so, follow the steps below. Before you publish a fragment, publish the fragments that it references.
 
 1. Go back to the fragment creation screen after designing its content, or open it from the list of fragments.
 

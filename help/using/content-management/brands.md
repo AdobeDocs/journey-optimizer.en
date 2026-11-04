@@ -35,7 +35,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to create, configure, publish, and manage brand guidelines, including setting a default brand, so AI Assistant can generate content aligned with your brand's identity in Adobe Journey Optimizer.
+**On this page:** Learn how to create, configure, publish, and manage brand guidelines, including setting a default brand, so Generate Content can create content aligned with your brand's identity in Adobe Journey Optimizer.
 
 >[!ENDSHADEBOX]
 
@@ -61,7 +61,7 @@ In [!DNL Journey Optimizer], you now have the option to manually input and organ
 
 >[!AVAILABILITY]
 >
->You must agree to the [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use the AI Assistant in Adobe Journey Optimizer. For more information, contact your Adobe representative.
+>You must agree to the [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use Generate Content in Adobe Journey Optimizer. For more information, contact your Adobe representative.
 
 
 ## Access brands {#generative-access}
@@ -76,7 +76,7 @@ To assign permissions for brands, follow these steps:
 
 1. Click **Edit** to modify the permissions.
 
-1. Add the **AI Assistant** resource, then select **Manage brand kit** or **[!UICONTROL Enable Ai assistant]** from the drop-down menu. 
+1. Add the **AI Assistant** resource, then select **Manage brand kit** or **[!UICONTROL Enable AI assistant]** from the drop-down menu. 
 
     Note that **[!UICONTROL Enable Ai assistant]** permission only provides read-only access to the **[!UICONTROL Brands]** menu.
 
@@ -127,7 +127,7 @@ To create and manage your brand guideline, you can either enter the details your
 
     ![](assets/brands-18.png)
 
-1. Once configured, click **[!UICONTROL Save]**, then **[!UICONTROL Publish]** to make your brand guideline available in AI Assistant.
+1. Once configured, click **[!UICONTROL Save]**, then **[!UICONTROL Publish]** to make your brand guideline available in Generate Content.
 
 1. To make modifications to your published brand, click **[!UICONTROL Edit brand]**. 
 
@@ -150,7 +150,7 @@ To create and manage your brand guideline, you can either enter the details your
 
     ![](assets/brands-6.png)
 
-Your brand guidelines are now accessible from the **[!UICONTROL Brand]** drop-down in AI Assistant menu, enabling it to generate content and assets aligned with your specifications. [Learn more about AI Assistant](gs-generative.md)
+Your brand guidelines are now accessible from the **[!UICONTROL Brand]** drop-down in the Generate Content menu, enabling it to generate content and assets aligned with your specifications. [Learn more about Generate Content](gs-generative.md)
 
 ![](assets/brands-7.png)
 

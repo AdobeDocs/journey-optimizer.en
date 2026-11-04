@@ -40,11 +40,13 @@ level_v2:
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_action"
 >title="Action campaigns"
->abstract="**Guided UI to create and send a campaign**<br/>Set one or multiple actions with a channel, choose an audience, set a content, define a schedule and you are ready to send<br/><br/>**Available channels**<br/>Email, SMS, Push notifications, In-app, Web, Code-based experiences"
+>abstract="**Guided UI to create and send a campaign**<br/>Set one or multiple actions with a channel, choose an audience, set a content, define a schedule and you are ready to send<br/><br/>**Available channels**<br/>Email, Mobile messages, Push notifications, In-app, Web, Code-based experiences"
 
 ## About Action campaigns {#about}
 
 Action campaigns (or Scheduled campaigns) allow for simple ad-hoc batch communications for marketing use cases like promotional offers, engagement campaigns, announcements, legal notices, or policy updates.
+
+To view Action campaign schedules, use the unified **[!UICONTROL Calendar]** menu. [Learn how to use the Calendar](../start/calendar.md).
 
 ➡️ [Discover this feature in video](#video) 
 
@@ -63,7 +65,7 @@ Before starting with campaigns, check the following prerequisites listed [in thi
 1. [Configure the campaign action](campaign-action.md)
 1. [Edit the Action campaign content](campaign-content.md)
 1. [Define the Action campaign audience](campaign-audience.md)
-1. [Schedule the Action campaign](campaign-schedule.md). Optionally, [send using waves](send-using-waves.md) to deliver the message in batches over time.
+1. [Schedule the Action campaign](campaign-schedule.md). Optionally, [send using waves](../delivery/send-using-waves.md) to deliver the message in batches over time.
 1. [Review & activate the Action campaign](review-activate-campaign.md)
 
 Learn more about the [complete campaign creation workflow with type-specific guides →](get-started-with-campaigns.md#workflow)
@@ -73,3 +75,5 @@ Learn more about the [complete campaign creation workflow with type-specific gui
 Learn how to create an Action campaign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346680?quality=12)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-create-campaign.md}}

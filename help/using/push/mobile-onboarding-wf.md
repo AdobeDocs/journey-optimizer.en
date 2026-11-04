@@ -9,13 +9,20 @@ role: Admin
 level: Intermediate
 badge: label="Beta" type="Informative"
 exl-id: 364ef926-3f92-4297-acbd-a283668106ac
-TQID: https://experienceleague.adobe.com/bqHcFNTpsuA6--8RiSjygD-8wsx4uwLeWqw9MBtby-4
+TQID: 'https://experienceleague.adobe.com/bqHcFNTpsuA6--8RiSjygD-8wsx4uwLeWqw9MBtby-4'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: 66e1fd99-672d-5d64-aa58-eca107f0fbae
+    internal-label: Push
+subfeature_v2:
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -29,9 +36,6 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-subfeature_v2:
-  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
-    internal-label: Mobile SDK
 ---
 # Mobile onboarding quick start workflow {#mobile-wf}
 
@@ -100,3 +104,5 @@ Automated setup is done. You can now visit your tag mobile property and configur
 * [Configure the push channel](push-configuration.md)
 * [Push notification report](../reports/journey-global-report-cja-push.md#track-link-url-push)
 * [Create a push notification](create-push.md)
+
+{{$include /help/_includes/do-not-localize/push/ai-augmented-mobile-onboarding-wf.md}}

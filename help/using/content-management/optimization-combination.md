@@ -22,7 +22,9 @@ topic_v2:
     internal-label: Experimentation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-feature_v2: []
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: f29a52db-c90c-4345-902e-b586d1406d8d
     internal-label: Content experiment

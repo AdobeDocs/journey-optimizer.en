@@ -7,12 +7,23 @@ feature: SMS
 topic: Content Management
 role: User
 level: Beginner
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: 6eb7d9ad-3477-58b3-957a-080ef7738a30
+    internal-label: SMS
 subfeature_v2:
   - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
     internal-label: SMS and MMS channel
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Design a Mobile message {#design-mobile}
 
@@ -34,8 +45,8 @@ Every RCS message requires a **[!UICONTROL Default fallback text]**: a plain-tex
 
 Keep the following in mind when writing fallback text:
 
-* **Keep it concise.** SMS messages are limited to 160 characters per segment; longer messages are split into multiple parts and may incur additional charges.
-* **Include key URLs.** If your RCS message links to a URL via action buttons, add a shortened URL to the fallback text so SMS profiles can still reach the destination.
+* **Keep it concise.** Mobile messages are limited to 160 characters per segment; longer messages are split into multiple parts and may incur additional charges.
+* **Include key URLs.** If your RCS message links to a URL via action buttons, add a shortened URL to the fallback text so Mobile profiles can still reach the destination.
 * **Avoid RCS-only references.** Do not mention visuals, carousels, or interactive features that are not available in plain SMS.
 * **Personalization is supported.** You can use personalization tokens in fallback text to keep the message feel consistent across both versions.
 
@@ -47,6 +58,8 @@ To define your RCS message content, follow the steps below.
 
     A plain text body with optional interactive buttons. Best for notifications, alerts, reminders, and conversational flows where visuals are not needed.
 
+    ![](assets/rcs_text.png)
+
     +++
 
     +++ Media
@@ -54,8 +67,11 @@ To define your RCS message content, follow the steps below.
     A standalone image or video with optional text and interactive buttons. Use it when a single visual (a product image, banner, or video clip) is the focal point of your message.
 
     1. From the Header menu, enter a **[!UICONTROL Media URL]** pointing to the image or video to display.
+        
+        ![](assets/rcs_media.png)
 
     1. If the media is a video file, optionally enter a **[!UICONTROL Thumbnail URL]**.
+
 
     +++
 
@@ -65,7 +81,10 @@ To define your RCS message content, follow the steps below.
 
     1. Enter a **[!UICONTROL Title]** and **[!UICONTROL Description]**.
 
+
     1. Enter a **[!UICONTROL Media URL]** pointing to the image or video to display.
+
+        ![](assets/rcs_card.png)
 
     1. If the media is a video file, optionally enter a **[!UICONTROL Thumbnail URL]**.
 
@@ -76,11 +95,18 @@ To define your RCS message content, follow the steps below.
     A horizontally scrollable series of rich cards in a single message, each with its own image, title, description, and buttons. Ideal for product catalogues or promotions. A minimum of 2 cards is required.
 
     1. Select a **[!UICONTROL Card width]** to control the display width of each card.
+
+        ![](assets/rcs_caroussel.png)
+   
     1. For each card, enter a **[!UICONTROL Title]** and **[!UICONTROL Description]**.
 
     1. Enter a **[!UICONTROL Media URL]** pointing to the image or video for that card.
 
+        ![](assets/rcs_caroussel_2.png)
+
     1. Optionally, select a **[!UICONTROL Media height]** and add suggested action buttons.
+
+    1. Click **[!UICONTROL Add card]**  to add a card to your carousel.
 
     +++
 
@@ -90,13 +116,17 @@ To define your RCS message content, follow the steps below.
 
     1. Enter the decimal **[!UICONTROL Latitude]** and **[!UICONTROL Longitude]** of the location.
 
-    1. Optionally, enter a **[!UICONTROL Location name]** to display as a label on the map pin.
+        ![](assets/rcs_location.png)
+
+    1. Optionally, enter a **[!UICONTROL Location name]** to display as a label on the map pin. 
 
     +++
 
-1. In the **[!UICONTROL Message text]** field, enter your message content. You can use personalization to tailor the text to each profile. Note that character limits vary by message type: 3,072 characters for Rich Media (Single) and 160 for Basic RCS.
+1. In the **[!UICONTROL Message text]** or **[!UICONTROL Description]** fields, enter your message content. You can use personalization to tailor the text to each profile. Note that character limits vary by message type: 3,072 characters for Rich Media (Single) and 160 for Basic RCS. 
 
 1. Use the **[!UICONTROL Personalization editor]** to define content, add personalization and dynamic content. You can use any attribute, such as the profile name or city for example. You can also define conditional rules.
+
+    ![](assets/rcs_perso.png)
 
 1. Optionally, add **[!UICONTROL Suggested actions]**, interactive buttons that let profiles act with a single tap. 
 
@@ -112,9 +142,13 @@ To define your RCS message content, follow the steps below.
 
     * **[!UICONTROL View location]**: opens the device's default maps application at a specified location. Provide the decimal **[!UICONTROL Latitude]** and **[!UICONTROL Longitude]** of the location to display.
 
+        ![](assets/rcs_actions.png)
+
 1. In the **[!UICONTROL Default fallback text]** field, enter the plain-text SMS version of your message. This is required and is delivered to profiles whose device or carrier does not support RCS.
 
 1. From the **[!UICONTROL Webview]** drop-down, choose the size of your **[!UICONTROL Webview]** when sending an **[!UICONTROL Open URL]** action.
+
+    ![](assets/rcs_webview.png)
 
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](send-mobile-message.md).
 
@@ -133,7 +167,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
     ![](assets/sms-content.png)
 
-1. Generate engaging Mobile messages tailored to your audience using [AI Assistant for text generation](../content-management/generative-text.md).
+1. Generate engaging Mobile messages tailored to your audience using [Generate text with AI](../content-management/generative-text.md).
 
 1. Use the personalization editor to define content, add personalization and dynamic content. You can use any attribute, such as the profile name or city for example. You can also define conditional rules. Browse to the following pages to learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
 
@@ -199,3 +233,6 @@ To create MMS content, follow these steps:
 
 Once you have performed your tests and validated the content, you can send your Mobile message to your audience. These steps are detailed on [this page](send-mobile-message.md)
 
+If your SMS, MMS or RCS content returns an error code, see [Content authoring errors](../content-management/content-authoring-errors.md).
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-design-mobile.md}}

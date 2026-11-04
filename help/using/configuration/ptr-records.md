@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: subdomain, PTR, records, DNS, domain, mail
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
-TQID: https://experienceleague.adobe.com/sdx-XnJMWY5UAkd9-O2Rayjoww3CfeCAgGQgarO2TlY
+TQID: 'https://experienceleague.adobe.com/sdx-XnJMWY5UAkd9-O2Rayjoww3CfeCAgGQgarO2TlY'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -27,9 +27,14 @@ subfeature_v2:
     internal-label: Subdomains
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration

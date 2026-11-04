@@ -8,6 +8,23 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: journey optimizer, use case, decision guide, which capability, get started, practitioner goals, tutorials
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Start from your goal {#ajo-use-case-guide}
 
@@ -27,7 +44,7 @@ Use this page as a quick router — scan for your goal and jump straight to the 
 
 Where an end-to-end tutorial isn't available for a specific scenario, the link takes you to the best current starting point to learn the capability and begin.
 
-AI is built into many of these capabilities — look for the **(AI)** tag in the tables below. The conversational [AI Assistant](ai-features.md#ai-assistant) can also answer product questions and surface operational insights about your journeys at any time. For the full set of intelligent features, see [AI & intelligent features](ai-features.md).
+AI is built into many of these capabilities — look for the **(AI)** tag in the tables below. The conversational [AI Assistant](ai-features.md#ai-assistant) can also answer product questions and surface operational insights about your journeys at any time. For the full set of intelligent features, see [Work with AI](ai-features.md).
 
 >[!TIP]
 >
@@ -39,7 +56,7 @@ For administrators and technical users who need to configure the environment bef
 
 | I want to... | Recommended capability | Start here |
 | --- | --- | --- |
-| Configure email, SMS, or push channels before sending | Channel configuration | [Get started with channel configuration](../configuration/get-started-configuration.md) |
+| Configure email, mobile, or push channels before sending | Channel configuration | [Get started with channel configuration](../configuration/get-started-configuration.md) |
 | Warm up a new IP address for email sending | IP warmup plan | [Get started with IP warmup](../configuration/ip-warmup-gs.md) |
 | Set up roles, permissions, and access control | Access control | [Get started with access control](../administration/permissions-overview.md) |
 | Work across multiple environments or regions | Sandboxes | [Work with sandboxes](../administration/sandboxes.md) |
@@ -77,7 +94,7 @@ For scenarios where you react to a customer action or event as it happens.
 
 >[!BEGINSHADEBOX]
 
-**Before you build:** you need (1) an [audience defined in Adobe Experience Platform](../audience/about-audiences.md) that identifies inactive profiles (e.g. no purchase or login in 60 days), (2) a decision on re-engagement channel (email, push, or SMS), and (3) a suppression rule or [frequency cap](../conflict-prioritization/channel-capping.md) to avoid contacting recently messaged profiles. Use a **Read Audience** journey entry — not an event — for this scenario.
+**Before you build:** you need (1) an [audience defined in Adobe Experience Platform](../audience/about-audiences.md) that identifies inactive profiles (e.g. no purchase or login in 60 days), (2) a decision on re-engagement channel (email, push, or mobile), and (3) a suppression rule or [frequency cap](../conflict-prioritization/channel-capping.md) to avoid contacting recently messaged profiles. Use a **Read Audience** journey entry — not an event — for this scenario.
 
 >[!ENDSHADEBOX]
 
@@ -236,6 +253,43 @@ Each starter flow below is a short, outcome-oriented set of steps: what you will
 
 ➡️ [Get started with offer decisioning](../offers/get-started/starting-offer-decisioning.md)
 
+## Use case playbooks {#playbooks}
+
+Use Case Playbooks are pre-built workflows that help you implement common marketing scenarios quickly. Each playbook includes ready-to-use journeys, messages, schemas, and segments.
+
+![Use Case Playbooks interface](assets/playbooks-filter.png)
+
++++**How playbooks work**
+
+1. **Browse** the playbook library to find use cases matching your goals
+2. **Enable** a playbook to automatically generate all required resources
+3. **Customize** the generated assets to match your brand and requirements
+4. **Deploy** to production or test in a development sandbox
+
++++
+
++++**Available Playbooks**
+
+Browse Journey Optimizer playbooks for common scenarios like:
+
+* Abandoned cart recovery
+* Welcome series for new customers
+* Post-purchase engagement
+* Birthday messages
+* Re-engagement campaigns
+
++++
+
++++**Prerequisites**
+
+* Sandbox with appropriate permissions
+* Channel configurations for email, push, and/or mobile messages
+* User permissions to create journeys and messages
+
++++
+
+[View all available playbooks](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/playbooks-list.html){target="_blank"} | [Learn more in Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html){target="_blank"}
+
 ## Example scenarios {#example-scenarios}
 
 These examples illustrate how Journey Optimizer's capabilities work together across different roles, industries, and channels.
@@ -292,7 +346,7 @@ When a service disruption occurs, Journey Optimizer automatically identifies the
 
 **Role:** Marketer | **Core capability:** [Content generation + experimentation](ai-features.md)
 
-A retail brand planning a product launch uses Journey Optimizer's AI Assistant to generate multiple subject line and body copy variations in minutes — guided by a natural language prompt and their uploaded brand guidelines. Built-in content experimentation automatically identifies the best-performing variant among an initial audience sample. The winning message is then deployed to the remaining recipients, maximizing engagement without additional copywriting effort.
+A retail brand planning a product launch uses Journey Optimizer's Generate Content to generate multiple subject line and body copy variations in minutes — guided by a natural language prompt and their uploaded brand guidelines. Built-in content experimentation automatically identifies the best-performing variant among an initial audience sample. The winning message is then deployed to the remaining recipients, maximizing engagement without additional copywriting effort.
 
 [Explore intelligent features](ai-features.md) | [Learn about content experimentation](../content-management/experiment-accelerator-gs.md)
 
@@ -322,7 +376,7 @@ Browse curated video content by topic. Each tab links to the relevant tutorials 
 
 >[!TAB Personalization & intelligence]
 
-* [AI Assistant for content generation](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/content-management/ai-assistant/ai-assistant-for-content-generation-overview){target="_blank"} — Generate copy, images, and variations.
+* [Generate Content](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/content-management/ai-assistant/ai-assistant-for-content-generation-overview){target="_blank"} — Generate copy, images, and variations.
 * [Use decisioning to personalize web offers](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"} — Tailor offers per customer.
 
 >[!TAB Reporting & optimization]

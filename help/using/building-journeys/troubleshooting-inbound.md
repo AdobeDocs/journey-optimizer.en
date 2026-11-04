@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Troubleshooting guide for inbound actions in journeys
-description: Learn how to debug and resolve issues related to inbound actions in journeys [!DNL Adobe Journey Optimizer]
+title: Troubleshoot inbound actions in journeys
+description: Learn how to debug and resolve issues related to inbound actions in journeys in [!DNL Adobe Journey Optimizer]
 feature: Journeys, Monitoring
 topic: Content Management
 role: User
@@ -88,13 +88,13 @@ In this scenario, a profile has entered the inbound action in the journey, but e
 
     The inbound action uses the **joai** namespace in the profile `segmentMembership` for activating the profile for the inbound step. Ensure it has been defined in Platform Identities for the sandbox. Learn more on [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home){target="_blank"}
 
-### Debugging Steps {#debugging-steps}
+### Debugging steps {#debugging-steps}
 
 The chart below shows the sequence of debugging steps you can follow:
 
 ![Troubleshooting workflow for inbound message not displaying: check journey, edge delivery, and profile](assets/troubleshoot-inbound-scenario-1-steps.png){width="70%" align="center"}
 
-### Step 1: check if the device/client is receiving the content from the edge network {#step-1}
+### Step 1: check if the device/client is receiving the content from the Edge Network {#step-1}
 
 Start by checking if the device/client is getting the expected content. 
 
@@ -118,17 +118,17 @@ Visit the page and inspect the networking tab, or check the Edge response payloa
 
 >[!TAB Code-based experience channel]
 
-Perform a curl request using [Adobe's API](https://developer.adobe.com/data-collection-apis/docs/api) and check the Edge response payload in the **[!UICONTROL Edge Delivery]** section of the [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"} session.
+Perform a curl request using [Adobe's API](https://developer.adobe.com/data-collection-apis/docs/api){target="_blank"} and check the Edge response payload in the **[!UICONTROL Edge Delivery]** section of the [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"} session.
 
 >[!ENDTABS]
 
-### Step 2: check if the edge network is returning the content {#step-2}
+### Step 2: check if the Edge Network is returning the content {#step-2}
 
 This step is to make sure the Edge Network is returning the expected inbound content to be rendered on the device/client.
 
 When a profile enters an inbound action in a journey, it is automatically qualified into a special audience segment (in the **joai** namespace) corresponding to the inbound journey action.
 
-When a client makes a request to the Edge Network for a given profile and surface, the profile qualifies to receive content for the inbound journey actions targeting that surface - only if the profile is currently a member of the corresponding **joai** segment.
+When a client makes a request to the Edge Network for a given profile and surface, the profile qualifies to receive content for the inbound journey actions targeting that surface - only if the profile is a member of the corresponding **joai** segment at the time of the request.
 
 To debug the Edge Network behavior, follow the steps below.
 
@@ -154,7 +154,7 @@ To debug the Edge Network behavior, follow the steps below.
 
 1. If the Edge Network delivery server does not view the profile as being in the relevant **joai** segment, go to the next step.<!--use the Platform Profile viewer UI to check if the expected **joai** segment is in a realized state in the Edge profile. Learn more in the [Experience Platform Profile UI documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide){target="_blank"}-->
 
-### Step 3: check if the 'joai' audience membership has propagated to the edge network {#step-3}
+### Step 3: check if the 'joai' audience membership has propagated to the Edge Network {#step-3}
 
 This step is to verify that the Edge profile was correctly updated when the profile entered the inbound journey action and the profile was qualified into the corresponding **joai** segment.
 
@@ -230,7 +230,7 @@ Include as much detail as you can from the debugging steps, such as:
 
 ## Scenario 2: The user is still receiving the inbound content {#scenario-2}
 
-This scenario is the reverse of [Scenario 1](#scenario-1): the profile has exited the journey, but the user is still receving the inbound content.
+This scenario is the reverse of [Scenario 1](#scenario-1): the profile has exited the journey, but the user is still receiving the inbound content.
 
 However, when a profile exits a journey, it should no longer qualify for the **joai** audience segments corresponding to the inbound actions in the journey.
 
@@ -239,55 +239,16 @@ Go through the same debugging steps as for [Scenario 1](#debugging-steps) to che
 <!--
 ## Reference Section {#reference-section}
 
-- [Assurance Setup Guide](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance)
+- [Assurance Setup Guide](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"}
 - [[!DNL Adobe Experience Platform] Documentation](https://experienceleague.adobe.com/docs/experience-platform/home.html)
-- [Streaming Ingestion APIs Troubleshooting](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html)
+- [Streaming Ingestion APIs Troubleshooting](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"}
 -->
 
-+++ AI Knowledge Reference
+## Related topics {#related}
 
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+* [Troubleshoot errors before testing or publishing your journey](troubleshooting.md)
+* [Troubleshoot your live journey execution](troubleshooting-execution.md)
+* [Error codes reference](error-codes-reference.md)
+* [Custom channel, inbound action, and reporting dataset errors](../configuration/channel-reporting-errors.md)
 
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page provides a step-by-step self-service debugging guide for two inbound action scenarios in Adobe Journey Optimizer journeys: a profile entering an inbound step but not receiving the content, and a profile continuing to receive content after exiting the journey.
-
-**Intents:**
-* Set up an Assurance session as a prerequisite before debugging inbound action issues
-* Verify whether the device or client is receiving inbound content from the Edge Network using Assurance
-* Check Edge Network qualified and unqualified activities to determine if a profile is eligible for an inbound journey action
-* Confirm that the joai audience segment membership has propagated from the Hub profile to the Edge profile
-* Diagnose delays in joai segment ingestion on the Hub profile after a profile enters an inbound action
-* Escalate to Adobe Customer Care with the correct diagnostic information when self-service steps do not resolve the issue
-
-**Glossary:**
-* **Inbound actions**: Journey activities that deliver personalized content to a user's device or browser, including In-app, web, and code-based experience channels *(product-specific)*
-* **joai namespace**: A special identity namespace used in profile `segmentMembership` to activate a profile for an inbound journey action step *(product-specific)*
-* **joai segment**: An automatically created audience segment in the joai namespace corresponding to a specific inbound journey action; the profile must be in a realized state in this segment to receive the content *(product-specific)*
-* **Journey Inbound dataset**: The AEP dataset used to store profile updates made when a profile enters an inbound journey action *(product-specific)*
-* **Hub profile**: The central profile store in Adobe Experience Platform used as the source of truth for profile attributes and segment membership
-* **Edge profile**: The projected copy of the Hub profile used by the Edge Network delivery server to evaluate content eligibility in real time
-* **Assurance**: An Adobe Experience Platform tool for real-time debugging of client-side SDK behavior and Edge Network responses
-
-**Guardrails:**
-* The Journey Inbound dataset must be enabled for profile ingestion in the current sandbox before inbound actions work correctly
-* The joai namespace must be defined in Platform Identities for the sandbox
-* Propagation of joai segment membership from Hub to Edge can take up to 15–30 minutes
-* Ingestion of joai segment membership into the Hub profile can take up to 15–30 minutes after the profile enters the inbound action
-* If content is still missing after 30–60 minutes, escalate to Adobe Customer Care with journey version ID, action ID, Assurance trace, and Edge and Hub profile JSON views
-
-**Terminology:**
-* Canonical name: joai namespace — Acronym: joai — variants: joai identity, joai segment namespace
-* Canonical name: Inbound actions — Acronym: none — variants: inbound channels, inbound content
-* Synonyms: "Hub profile" = "central profile" (AEP); "Edge profile" = "projected profile" (used by Edge Network)
-* Do not confuse: "Qualified Activities" ≠ "Unqualified Activities" in Edge Delivery view — qualified means the profile received content; unqualified means it did not, with an exclusion reason shown
-
-**FAQ:**
-* **Q: What are the two main inbound action failure scenarios covered by this guide?** — Scenario 1: a profile entered the inbound step but the user never sees the content. Scenario 2: a profile exited the journey but the user still receives the inbound content.
-* **Q: What tool do I use to debug inbound action delivery?** — Adobe Experience Platform Assurance. Set up an Assurance session first, then use the In-App Messaging and Edge Delivery views to inspect content delivery and Edge Network responses.
-* **Q: What is the joai segment and why does it matter?** — When a profile enters an inbound action, it is automatically qualified into a joai audience segment scoped to that specific action. The Edge Network only delivers the inbound content if the profile is in a realized state in that joai segment.
-* **Q: How long does it take for joai segment membership to appear on the Edge profile?** — Up to 15–30 minutes for propagation from Hub to Edge after the Hub profile is updated.
-* **Q: What should I do if the joai segment ID is in exited state on the Edge profile?** — The profile has left the joai segment, meaning it exited the inbound journey action. If this is unexpected, trace back through Hub profile ingestion and check if the profile correctly entered the inbound action step.
-* **Q: What information should I provide when escalating to Adobe Customer Care?** — The journey version ID, journey action ID, the step where unexpected behavior occurs, the full Assurance trace, and the JSON views of both the Edge and Hub profiles.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-troubleshooting-inbound.md}}

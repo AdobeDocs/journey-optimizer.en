@@ -5,6 +5,9 @@ title: Configure code-based channel
 description: Configure code-based channel
 redpen-status: CREATED_||_2025-08-11_20-41-39
 exl-id: e77acb57-66a5-49cc-b98b-84886d6736e3
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Configure code-based channel{#section-overview}
 

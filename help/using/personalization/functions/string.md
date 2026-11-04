@@ -6,20 +6,24 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
-TQID: https://experienceleague.adobe.com/idwoj9f3zFS64ifjzcSASPaUQTaNYtyS-HI6c3-7AI0
+TQID: 'https://experienceleague.adobe.com/idwoj9f3zFS64ifjzcSASPaUQTaNYtyS-HI6c3-7AI0'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
     internal-label: Build expressions
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-subfeature_v2: []
 ---
 # String Functions {#string}
 
@@ -63,21 +67,23 @@ The following function returns the ASCII value of o i.e 111.
 
 ## Concat {#concate}
 
-The `concat` function combines two strings into one.
+The `concat` function concatenates two or more strings and returns the resulting string.
 
 **Syntax**
 
 ```sql
-{%= concat(string,string) %}
+{%= concat(string1, string2, ...) %}
 ```
 
 **Example**
 
-The following function will combine profile city and country in a single string.
+The following function combines multiple strings into a single value.
 
 ```sql
-{%= concat(profile.homeAddress.city,profile.homeAddress.country) %}
+{%= concat("Hello", " ", "World") %}
 ```
+
+Returns "Hello World".
 
 ## Contains {#contains}
 
@@ -192,6 +198,28 @@ The `encode64` function is used to encode a string to preserve Personal Informat
 {%= encode64(string) %}
 ```
 
+## Decode 64{#decode64}
+
+The `decode64` function decodes a Base64-encoded string. If the input is not valid Base64, the original input string is returned unchanged.
+
+**Syntax**
+
+```sql
+{%= decode64(string) %}
+```
+
+| Argument | Description |
+| --------- | ----------- |
+| `string` | The Base64-encoded string to decode. |
+
+**Example**
+
+```sql
+{%= decode64("aGVsbG8=") %}
+```
+
+This expression returns `hello`.
+
 ## Ends with{#endsWith}
 
 The `endsWith` function is used to determine if a string ends with a specified substring.
@@ -264,6 +292,29 @@ The following query determines, without case sensitivity, if the person's name i
 {%= equalsIgnoreCase(profile.person.name,"John") %}
 
 ```
+
+## Equals any ignore case {#equals-any-ignore-case}
+
+The `equalsAnyIgnoreCase` function checks whether a string equals any of the provided comparison values, ignoring differences in letter case.
+
+**Syntax**
+
+```sql
+{%= equalsAnyIgnoreCase(string, string, ...) %}
+```
+
+| Argument | Description |
+| --------- | ----------- |
+| `string` | Source string to compare. |
+| `string, ...` | One to ten comparison strings. |
+
+**Example**
+
+```sql
+{%= equalsAnyIgnoreCase("Icon", "icon", "ambassador", "luminary") %}
+```
+
+Returns `true`.
 
 ## Extract Email Domain {#extractEmailDomain}
 
@@ -356,6 +407,48 @@ The `getUrlProtocol` function is used to retrieve the protocol of a URL.
 
 Returns "http"
 
+## Get url fragment {#get-url-fragment}
+
+The `getUrlFragment` function is used to retrieve the fragment part of a URL.
+
+**Syntax**
+
+```sql
+{%= getUrlFragment(string) %}: string
+```
+
+**Example**
+
+```sql
+{%= getUrlFragment("https://www.myurl.com/contact.html#faq") %}
+```
+
+Returns "faq"
+
+## Append query params {#append-query-params}
+
+The `appendQueryParams` function appends or replaces a query parameter in a URL, inserting the parameter before any fragment.
+
+**Syntax**
+
+```sql
+{%= appendQueryParams(url, key, value) %}
+```
+
+| Argument | Description |
+| --------- | ----------- |
+| `url` | URL to update. |
+| `key` | Query parameter key to append or replace. |
+| `value` | Query parameter value to set for the key. |
+
+**Example**
+
+```sql
+{%= appendQueryParams("https://example.com/page", "utm_source", "email") %}
+```
+
+Returns `https://example.com/page?utm_source=email`.
+
 ## Index Of {#index-of}
 
 The `indexOf` function is used to return the position (in the first argument) of the first occurrence of the second parameter. Returns -1 if there is no match.
@@ -414,6 +507,29 @@ The following function returns 'true' if the profile's mobile phone number is no
 ```sql
 {%= isNotEmpty(profile.mobilePhone.number) %}
 ```
+
+## Join {#join}
+
+The `join` function concatenates elements from an array into a single string using a separator.
+
+**Syntax**
+
+```sql
+{%= join(array, separator) %}
+```
+
+| Argument | Description |
+| --------- | ----------- |
+| `array` | Array to concatenate. |
+| `separator` | String inserted between each array element. |
+
+**Example**
+
+```sql
+{%= join(["red", "green", "blue"], ",") %}
+```
+
+Returns `red,green,blue`.
 
 ## Last Index Of {#last-index-of}
 

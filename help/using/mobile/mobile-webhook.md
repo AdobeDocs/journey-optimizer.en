@@ -7,14 +7,29 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: a0f3e385-934d-44d6-a487-6035161aef0e
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: 6eb7d9ad-3477-58b3-957a-080ef7738a30
+    internal-label: SMS
 subfeature_v2:
   - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
     internal-label: SMS and MMS channel
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Create Webhook {#webhook}
 
@@ -60,7 +75,9 @@ When setting up a webhook, you can define its purpose based on the type of data 
 >
 >Inbound keyword data is stored in the _AJO Email Tracking Dataset_ system dataset, unless a custom dataset is configured. A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured. [Learn more](../data/get-started-datasets.md#system-datasets)
 
-Depending on your provider, there will be different expectations on what needs to be set up to have a successful SMS implementation:
+{{$include /help/_includes/mobile-opt-out-keyword-override.md}}
+
+Depending on your provider, there will be different expectations on what needs to be set up to have a successful mobile implementation:
 
 * **Sinch and Sinch Conversational**: Create one webhook that handles both inbound and feedback events. No payload configuration is required.
 
@@ -93,6 +110,10 @@ For customers moving from API credentials to SMS webhooks, information about the
 ### For Sinch and Sinch Conversational {#create-webhook-sinch}
 
 For Sinch and Sinch Conversational, create a single webhook that handles both inbound and feedback events. No custom payload configuration is required.
+
+>[!IMPORTANT]
+>
+>A webhook receives no events until its **[!UICONTROL Webhook URL]** is registered with your SMS provider. Customers who purchased SMS directly through [!DNL Journey Optimizer] must file a Support ticket instead.
 
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL SMS Webhooks]** menu under **[!UICONTROL SMS settings]**, and click the **[!UICONTROL Create Webhook]** button.
 
@@ -259,7 +280,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
     +++ Custom
 
-    * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL Message Feedback tracking]** dataset for reporting and audience building.
+    * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL AJO Email Tracking]** Dataset for reporting and audience building.
 
     * Build an Audience (streaming or batch) that references this keyword for use in your journeys and campaigns.
 
@@ -422,11 +443,11 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
     ```json
     {
-    "clientReference": "{{client_reference}}",
+    "clientReference": "\{\{client_reference\}\}",
     "statuses": [
         {
-            "code": "{{failureCode}}",
-            "status": "{{feedbackStatus}}"
+            "code": "\{\{failureCode\}\}",
+            "status": "\{\{feedbackStatus\}\}"
         }
     ]
     }
@@ -451,3 +472,5 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 If your webhook uses API credentials attached to an existing channel configuration, the webhook takes effect immediately. Otherwise, create a new channel configuration.
 
 ➡️[Learn more on channel configuration](mobile-configuration-surface.md)
+
+{{$include /help/_includes/do-not-localize/mobile/ai-augmented-mobile-webhook.md}}

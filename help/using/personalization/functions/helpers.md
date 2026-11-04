@@ -6,10 +6,20 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
     internal-label: Build expressions
-subfeature_v2: []
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Helpers {#gs-helpers}
 
@@ -214,9 +224,97 @@ The following example lets you calculate the total sum of prices for products in
 {{sum}}
 ```
 
+## Abort {#abort}
+
+>[!AVAILABILITY]
+>
+>This feature is currently in Limited Availability.
+
+The `abort` helper stops message delivery when it is reached during rendering.
+
+Use a conditional block such as `{%#if%}` to control when the helper runs. When `abort` is executed, delivery is aborted.
+
+**Syntax**
+
+```handlebars
+{{abort code='code' description='description'}}
+```
+
+**Parameters**
+
+| Parameter | Description |
+| --- | --- |
+| `code` | Optional abort code included in the raised error. |
+| `description` | Optional human-readable reason for aborting. |
+
+**Example**
+
+```handlebars
+{%#if profile.person.email = ""%}
+  {{abort code='ERR_001' description='Missing email'}}
+{%/if%}
+Hello {{profile.person.name.firstName}}!
+```
+
+In this example, rendering proceeds when `email` is present. When the condition matches, delivery is aborted with the provided `code` and `description`.
+
+## Parse JSON {#parse-json}
+
+The `parseJson` helper parses a JSON string and stores the parsed object in a template variable so you can access fields directly in personalization expressions.
+
+**Syntax**
+
+```handlebars
+{{parseJson jsonStr=jsonStringPath result="variableName"}}
+```
+
+**Parameters**
+
+| Parameter | Description |
+| --- | --- |
+| `jsonStr` | The JSON string to parse. This can be a data reference or a literal JSON string. |
+| `result` | The variable name that stores the parsed object. |
+
+**Example**
+
+```handlebars
+{{parseJson jsonStr=targetResponse.options.content result="offerContent"}}
+{{offerContent.title}}
+```
+
+## Value at path {#value-at-path}
+
+The `valueAtPath` helper assigns a value from a data path to a template variable. You can optionally use an index to extract a specific element from arrays or collections.
+
+**Syntax**
+
+```handlebars
+{{valueAtPath path idx=indexPath result="value"}}
+```
+
+**Parameters**
+
+| Parameter | Description |
+| --- | --- |
+| `path` | The source path from which to extract the value (positional parameter). |
+| `idx` | Optional 0-based index used to extract a specific element from an array or collection. |
+| `result` | The variable name that stores the extracted value. |
+
+**Limitations**
+
+* The `idx` value must identify an existing item in the array or collection. Index counting starts at 0, so the first item is at index 0. If the index is outside the available range, rendering throws an exception.
+* The `path` parameter must be a data path. PQL expressions are not supported.
+
+**Example**
+
+```handlebars
+{{valueAtPath targetResponse.prefetch.mboxes idx=0 result="firstMbox"}}
+{{firstMbox.name}}
+```
+
 ## Url {#url}
 
-The `url` helper is used to track links, shorten URLs and insert [deep links](../../email/deeplinks.md) in your SMS message content.
+The `url` helper is used to track links, shorten URLs and insert [deep links](../../email/deeplinks.md) in your mobile message content.
 
 **Syntax**
 
@@ -306,9 +404,9 @@ Upon runtime, the metadata value is added to the existing **[!UICONTROL Message 
 
 **Limitations**
 
-There is an upper limit of 2kb on the key value pairs per action. If the 2Kb limit is exceeded, the message is still delivered, but any of the key value pairs can be truncated.
-
-Metadata is not captured for profiles excluded from the action. When a profile is excluded from receiving a message, no metadata entry is created for that profile in the dataset.
+* You can pass a maximum of 50 key-value pairs per action.
+* The total metadata payload is limited to 2 KB per action. If the 2 KB limit is exceeded, the message is still delivered, but any key-value pair can be truncated.
+* Metadata is not captured for profiles excluded from the action. When a profile is excluded from receiving a message, no metadata entry is created for that profile in the dataset.
 
 **Example**
 
@@ -379,4 +477,3 @@ You can apply the helper to one parameter, several, or all parameters in a link,
 * Revoked keys must not be used for new encryption. Follow your security policy for rotation and decommissioning.
 
 * The encryption process being ressource-intensive, using the `Encrypt` function may impact throughput at render time.
-

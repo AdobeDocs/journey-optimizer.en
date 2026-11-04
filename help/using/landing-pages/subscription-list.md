@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landing, landing page, list, subscription, service
 exl-id: 5e5419a0-5121-4aa7-a975-b1f08e2918c9
-TQID: https://experienceleague.adobe.com/NgCn1-WZaoBA73hleiFJGucgUSzfmEF43eEWZhGJnj0
+TQID: 'https://experienceleague.adobe.com/NgCn1-WZaoBA73hleiFJGucgUSzfmEF43eEWZhGJnj0'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: af6bcde9-4f08-5a7a-9651-da0a28d11b0a
+    internal-label: Subscriptions
 subfeature_v2:
   - id: b19d9237-76be-466d-a869-aacf2d72205f
     internal-label: Landing pages

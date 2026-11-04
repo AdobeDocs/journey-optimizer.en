@@ -138,14 +138,13 @@ Learn more about [Journey Optimizer + Adobe Intelligent Services](intelligent-se
 
 ## Adobe Campaign {#integration-ac}
 
-An integration is available if you have Adobe Campaign v7 or v8. Use this integration to send emails, push notifications and SMS using Adobe Campaign Transactional Messaging capabilities.
+An integration is available if you have Adobe Campaign v7 or v8. Use this integration to send emails, push notifications and mobile messages using Adobe Campaign Transactional Messaging capabilities. 
 
 Learn more about [Journey Optimizer + Campaign](../building-journeys/ajo-ac.md).
 
 You can also set up an integration with Adobe Campaign Standard to send messages in your journeys.
 
 Learn more about [Journey Optimizer + Campaign Standard](../building-journeys/using-adobe-campaign-standard.md).
-
 
 ## Adobe Workfront {#integration-workfront}
 

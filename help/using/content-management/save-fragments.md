@@ -50,6 +50,8 @@ When editing content in [!DNL Journey Optimizer], you can save all or part of yo
 >
 >[Contextual attributes](../personalization/personalization-build-expressions.md) are not supported in fragments.
 >
+>Content that contains a decision policy cannot be saved as a fragment. Remove the decision policy first.
+>
 >When tracking is enabled in a journey or a campaign, if links are present in a saved fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
 
 ## Save as visual fragment {#save-as-visual-fragment}

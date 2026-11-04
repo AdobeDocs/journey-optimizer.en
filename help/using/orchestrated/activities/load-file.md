@@ -11,6 +11,8 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
+  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
+    internal-label: Campaign Orchestration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
@@ -39,15 +41,6 @@ During file setup, you can define column mappings, data types, NULL handling, an
 >
 >The **Load file** activity is currently not available for use with **Healthcare Shield**.
 
-## Permissions {#permissions}
-
-To use the **[!UICONTROL Load file]** activity in an Orchestrated campaign, users must be assigned the correct permissions. Both permissions are available under **[!UICONTROL Adobe Experience Platform]** > **[!UICONTROL Adobe Journey Optimizer]** > **[!UICONTROL Orchestrated Campaigns]** in the permissions UI.
-
-* **[!UICONTROL View File in Orchestrated Campaigns]** — Grants read-only access. Users with this permission can preview results on an Orchestrated campaign that contains a **[!UICONTROL Load file]** activity, but cannot add the activity or upload a file.
-* **[!UICONTROL Manage File in Orchestrated Campaigns]** — Required to add a **[!UICONTROL Load file]** activity to the campaign canvas and upload files. Assign this permission to any user who needs to create or configure a **[!UICONTROL Load file]** activity.
-
-For instructions on assigning permissions, see [Manage users and roles](../../administration/permissions.md).
-
 ## Guardrails and limitations {#limitations}
 
 The following limitations apply to the Load file activity:
@@ -55,12 +48,17 @@ The following limitations apply to the Load file activity:
 * You can upload up to 50 MB per file.
 * Only flat-structure CSV and TXT files are supported.
 * Uploaded data is used when the campaign runs and is not stored as an Adobe Experience Platform dataset.
+* The **[!UICONTROL Load file]** activity is not meant to be used in a scheduled campaign, because uploaded files have a short data lifetime.
 
 For limits on channel and canvas activities, see [Guardrails and limitations](../guardrails.md#activities-limitations).
 
 ## Prerequisites {#prerequisites}
 
 Before you can add a **[!UICONTROL Load file]** activity to an Orchestrated campaign and connect it to a message activity, an administrator must complete the following one-time setup.
+
+To use the **[!UICONTROL Load file]** activity in an Orchestrated campaign, users must be assigned **[!UICONTROL Manage File in Orchestrated Campaigns]** permission.
+
+For instructions on assigning permissions, see [Manage users and roles](../../administration/permissions.md).
 
 ### Create a File-type target dimension {#file-target-dimension}
 

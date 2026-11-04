@@ -9,16 +9,18 @@ role: Admin, Developer, User
 level: Beginner
 keywords: journey optimizer, how it works, architecture, experience platform, functional areas
 exl-id: 9df179a0-a5f6-4dbd-a9db-a103731b1854
-TQID: https://experienceleague.adobe.com/E2ksPVFZBggv1RgEri7jx30G2oSanpmNs77vH9Yuq78
+TQID: 'https://experienceleague.adobe.com/E2ksPVFZBggv1RgEri7jx30G2oSanpmNs77vH9Yuq78'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
     internal-label: Overview
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -71,7 +73,7 @@ topic_v2:
 
 This page explains how Adobe Experience Platform and Journey Optimizer work together, covering the continuous data-to-experience cycle, key functional areas, architecture details, and integration points.
 
-Adobe Journey Optimizer and Adobe Experience Platform work together to enable data-driven personalization at scale. This page explains how these systems operate and how their key functional areas combine to deliver exceptional customer experiences. [Learn about key capabilities](get-started.md) | [Explore key terminology](terminology.md)
+Adobe Journey Optimizer and Adobe Experience Platform work together to enable data-driven personalization at scale. This page explains how these systems operate and how their key functional areas combine to deliver exceptional customer experiences. [Learn about key capabilities](get-started.md) | [Jump to the five core concepts](#five-concepts) | [Explore key terminology](terminology.md)
 
 ## How Journey Optimizer works {#how-it-works}
 
@@ -97,7 +99,7 @@ Adobe Journey Optimizer applies the data and insights from Adobe Experience Plat
 * **Customer Understanding** - Real-time Customer Profiles enable segmentation into audiences for targeted messaging. [Create audiences](../audience/about-audiences.md)
 * **Content & Offers** - A built-in visual designer, reusable templates, and a centralized asset library let teams author and personalize messages for any channel — without leaving the platform. Dynamic personalization adapts content based on customer attributes, behavior, and context. Real-time decisioning logic then selects the best offer for each individual. [Design content](../../rp_landing_pages/content-management-landing-page.md) | [Manage assets](../integrations/assets.md) | [Manage offers](../offers/get-started/starting-offer-decisioning.md)
 * **Journey & Campaign Management** - Automates sequences of interactions (journeys) or schedules one-time targeted messages (campaigns). [Build journeys](../building-journeys/journey-gs.md) | [Create campaigns](../campaigns/get-started-with-campaigns.md)
-* **Delivery (Connections)** - Delivers messages through channels like email, SMS, push notifications, and direct mail; exports data to external systems. [Configure channels](../configuration/get-started-configuration.md)
+* **Delivery (Connections)** - Delivers messages through channels like email, mobile messages, push notifications, and direct mail; exports data to external systems. [Configure channels](../configuration/get-started-configuration.md)
 * **Measurement & Analysis** - Tracks customer engagement and campaign performance with reports for continuous improvement. [View reports](../reports/campaign-global-report-cja.md)
 
 ### The continuous optimization cycle {#optimization-cycle}
@@ -105,6 +107,34 @@ Adobe Journey Optimizer applies the data and insights from Adobe Experience Plat
 This ecosystem operates as a continuous optimization cycle. Data drives customer understanding, which informs personalized content and decisions. These are orchestrated into journeys, delivered across channels, measured for effectiveness, and refined over time.
 
 ![Diagram illustrating the continuous optimization cycle in Journey Optimizer: data ingestion feeds customer profiles, which inform content and offer decisions, orchestrated into journeys, delivered across channels, measured for performance, and refined over time.](../assets/do-not-localize/get-started-flow.png)
+
+## Five concepts to know before you build {#five-concepts}
+
+Five ideas explain most of how [!DNL Journey Optimizer] behaves. Read these first, then follow the links when you need more detail.
+
+1. **Profiles and data.** Every customer has a **profile** that unifies what you know about them: attributes (name, preferences), events (purchases, app opens), and identities (email, device). This data lives in Adobe Experience Platform and powers targeting and personalization. [Get started with profiles](../audience/get-started-profiles.md)
+
+1. **Audiences.** An **audience** is a group of profiles that share traits or behavior. Audiences update as profiles change, so the right people are targeted when you send. [About audiences](../audience/about-audiences.md)
+
+1. **Campaigns and journeys.** Choose the approach that matches how you want customers to experience your message:
+
+    | Use a… | When… |
+    |---|---|
+    | **Campaign** | You send a scheduled or API-triggered message to an audience. |
+    | **Journey** | Customers move at their own pace through a multi-step, behavior-driven flow. |
+    | **Orchestrated campaign** | You run a complex batch workflow with multi-entity data. |
+
+    [Journeys vs campaigns](journeys-vs-campaigns.md) | [Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)
+
+1. **Channel configurations.** A **channel configuration** is the sending identity for a channel: for email, the subdomain and sender details; for push, the app credentials. Messages cannot be sent until an administrator sets one up. [Set up channel configurations](../configuration/channel-surfaces.md)
+
+1. **Sandboxes.** A **sandbox** is an isolated environment. Data, audiences, journeys, and settings do not carry across sandboxes. Build and test in a development sandbox, then send to customers from production. [Use and assign sandboxes](../administration/sandboxes.md)
+
+>[!TIP]
+>
+>Practice these concepts without touching production data. Use the free [Journey Optimizer tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/overview){target="_blank"} and a [training sandbox](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/configure-a-training-sandbox/introduction-and-prerequisites){target="_blank"}.
+
+Not sure who sets up what? See [Roles and responsibilities](quick-start.md).
 
 ## Key functional areas {#functional-areas}
 
@@ -141,3 +171,5 @@ For a deep dive into technical architecture — including integration patterns, 
 ## Privacy and security {#privacy-security}
 
 [!DNL Adobe CX Enterprise]'s privacy and security practices apply to Adobe Journey Optimizer. These measures ensure compliance with privacy regulations like GDPR, enabling you to deliver personalized experiences while maintaining customer trust. [Learn more about privacy in Journey Optimizer](../privacy/get-started-privacy.md)
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-understanding-ajo.md}}

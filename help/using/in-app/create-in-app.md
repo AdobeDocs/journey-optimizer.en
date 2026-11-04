@@ -14,6 +14,8 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
     internal-label: In App channel
@@ -40,6 +42,11 @@ topic_v2:
 >[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
+>id="ajo_inapp_reevaluate"
+>title="Re-evaluate before display"
+>abstract="Fetch latest campaign data from the server before showing this message to ensure content and targeting rules are up-to-date. When enabled, the SDK will verify the campaign is still active and check if targeting rules have been modified before displaying the message. This prevents users from seeing outdated content or messages from closed campaigns. Recommended for time-sensitive campaigns where content or audience targeting may change frequently."
+
+>[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_triggers"
 >title="Manage In-app Triggers"
 >abstract="Efficiently control your Triggers by selecting the specific events and criteria that will activate your messages. With the Rule builder, users can define precise conditions and values. When these conditions are met, they initiate a series of actions, including the delivery of in-app messages."
@@ -60,11 +67,11 @@ Note that In-app messages are not impacted by the user's choice to opt-in or opt
 
 To add an In-app message in a journey, follow these steps:
 
-1. Open your [journey](../building-journeys/journey-gs.md), then drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
+1. Open your journey then add an **[!UICONTROL Action]** activity. Learn more about the [Action activity](../building-journeys/journey-action.md).
 
     >[!IMPORTANT]
     >
-    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
+    >Legacy native channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
 1. Select **[!UICONTROL In-app]** as the action type.
 
@@ -96,13 +103,13 @@ To add an In-app message in a journey, follow these steps:
         
         | Package | Trigger | Definition |
         |---|---|---|
-        |Send data to Platform|Sent data to Platform|Triggered when the mobile app issues an edge experience event to send data to Adobe Experience Platform. Usually the API call [sendEvent](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) from the AEP Edge extension.|
+        |Platform|Sent data to Platform|Triggered when the mobile app issues an edge experience event to send data to Adobe Experience Platform. Usually the API call [sendEvent](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) from the AEP Edge extension.|
         |Core tracking|Track action| Triggered when the legacy functionality offered in mobile code API [trackAction](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) is called.|
         |Core tracking|Track state |Triggered when the legacy functionality offered in mobile code API [trackState](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) is called.|
         |Core tracking|Collect PII|Triggered when the legacy functionality offered in mobile code API [collectPII](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#collectpii) is called.|
         |Application lifecycle|Application launch|Triggered at every run, including crashes and installs. Also triggered on a resume from the background when the lifecycle session timeout has been exceeded.|
         |Application lifecycle|Application install|Triggered at the first run after installation or re-installation.|
-        |Application lifecycle|Application update|Triggered at the first run after an upgrade or when the version number changes.|
+        |Application lifecycle|Application upgrade|Triggered at the first run after an upgrade or when the version number changes.|
         |Application lifecycle|Application close|Triggered when the application is closed. |
         |Application lifecycle|Application crash|Triggered when the application is not backgrounded before being closed. The event is sent when the application is started after the crash. Adobe Mobile crash reporting does not implement a global uncaught exception handler.|
         |Places|Enter POI| Triggered by the Places SDK when your customer enters the Point of Interest (POI) that you configured.|
@@ -151,9 +158,10 @@ To add an In-app message in a journey, follow these steps:
 
     1. Choose the frequency of your trigger when your In-app message is active:
 
-        * **[!UICONTROL Show every time]**: Always show the message when the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur.
-        * **[!UICONTROL Show once]**: This message appears only once per user session and stays visible across all windows or activities until closed. To limit it to a certain screen or make it dismiss automatically, use custom logic with the messaging delegate.
-        * **[!UICONTROL Show until click through]**: Show this message when the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur until an interact event is sent by the SDK with an action of "clicked".
+        * **[!UICONTROL Everytime]**: Always show the message when the events selected in the **[!UICONTROL Show message if]** section occur.
+        * **[!UICONTROL Once]**: This message appears only once per user session and stays visible across all windows or activities until closed. To limit it to a certain screen or make it dismiss automatically, use custom logic with the messaging delegate.
+        * **[!UICONTROL Until click through]**: Show this message when the events selected in the **[!UICONTROL Show message if]** section occur until an interact event is sent by the SDK with an action of "clicked".
+        * **[!UICONTROL X number of times]**: Show this message X times. Enter the number of times in the **[!UICONTROL Times to display]** field.
 
 1. You can add one or more inbound actions to your in-app message by clicking the **[!UICONTROL Add action]** button. [Learn more](../building-journeys/journey-action.md#multi-action)
 
@@ -185,6 +193,10 @@ To add an In-app message in a campaign, follow these steps:
 
     ![](assets/in_app_create_2.png)
 
+    >[!CAUTION]
+    >
+    >Custom upload (CSV) audiences are not supported for in-app messages. [Learn more](../audience/target-audiences.md#guardrails)
+    
 1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected audience. [Learn more](../event/about-creating.md#select-the-namespace).
 
 1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL In-app message]** and select or create a new configuration.
@@ -203,13 +215,13 @@ To add an In-app message in a campaign, follow these steps:
         
         | Package | Trigger | Definition |
         |---|---|---|
-        |Send data to Platform|Sent data to Platform|Triggered when the mobile app issues an edge experience event to send data to Adobe Experience Platform. Usually the API call [sendEvent](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) from the AEP Edge extension.|
+        |Platform|Sent data to Platform|Triggered when the mobile app issues an edge experience event to send data to Adobe Experience Platform. Usually the API call [sendEvent](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) from the AEP Edge extension.|
         |Core tracking|Track action| Triggered when the legacy functionality offered in mobile code API [trackAction](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) is called.|
         |Core tracking|Track state |Triggered when the legacy functionality offered in mobile code API [trackState](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) is called.|
         |Core tracking|Collect PII|Triggered when the legacy functionality offered in mobile code API [collectPII](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#collectpii) is called.|
         |Application lifecycle|Application launch|Triggered at every run, including crashes and installs. Also triggered on a resume from the background when the lifecycle session timeout has been exceeded.|
         |Application lifecycle|Application install|Triggered at the first run after installation or re-installation.|
-        |Application lifecycle|Application update|Triggered at the first run after an upgrade or when the version number changes.|
+        |Application lifecycle|Application upgrade|Triggered at the first run after an upgrade or when the version number changes.|
         |Application lifecycle|Application close|Triggered when the application is closed. |
         |Application lifecycle|Application crash|Triggered when the application is not backgrounded before being closed. The event is sent when the application is started after the crash. Adobe Mobile crash reporting does not implement a global uncaught exception handler.|
         |Places|Enter POI| Triggered by the Places SDK when your customer enters the Point of Interest (POI) that you configured.|
@@ -254,20 +266,20 @@ To add an In-app message in a campaign, follow these steps:
 
     1. Click **[!UICONTROL Make group]** to group triggers together.
 
-1. Choose the frequency of your trigger when your In-app message is active. The following options are available:
+1. From the **[!UICONTROL Audience]** tab, click the **[!UICONTROL Select audience]** button to define the audience to target from the list of available Adobe Experience Platform audiences. [Learn more](../audience/about-audiences.md).
 
-    * **[!UICONTROL Everytime]**: Always show the message when the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur.
-    * **[!UICONTROL Once]**: Only show this message the first time the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur.
-    * **[!UICONTROL Until click through]**: Show this message when the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur until an interact event is sent by the SDK with an action of "clicked".
+    ![](assets/in_app_journey_2.png)
+
+1. From the **[!UICONTROL Schedule]** tab, choose the frequency of your trigger when your In-app message is active. The following options are available:
+
+    * **[!UICONTROL Everytime]**: Always show the message when the events selected in the **[!UICONTROL Show message if]** section occur.
+    * **[!UICONTROL Once]**: Only show this message the first time the events selected in the **[!UICONTROL Show message if]** section occur.
+    * **[!UICONTROL Until click through]**: Show this message when the events selected in the **[!UICONTROL Show message if]** section occur until an interact event is sent by the SDK with an action of "clicked".
     * **[!UICONTROL X number of times]**: Show this message X time.
 
 1. If needed, choose which **[!UICONTROL Day of the week]** or **[!UICONTROL Time of day]** the In-app message will be displayed.
 
-1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
-
-    ![](assets/in-app-schedule.png)
-
-1. You can now start designing your content with the **[!UICONTROL Edit content]** button. [Learn more](design-in-app.md)
+1. Access the **[!UICONTROL Content]** tab to start designing your In-app message. [Learn more](design-in-app.md)
 
     ![](assets/in_app_create_4.png)
 
@@ -307,3 +319,5 @@ For more information on how to create, configure and activate a campaign, refer 
 * [Test and send your In-app message](send-in-app.md)
 * [In-app report](../reports/campaign-global-report-cja-inapp.md)
 * [In-app configuration](inapp-configuration.md)
+
+{{$include /help/_includes/do-not-localize/in-app/ai-augmented-create-in-app.md}}

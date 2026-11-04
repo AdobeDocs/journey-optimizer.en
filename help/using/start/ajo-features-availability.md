@@ -9,6 +9,25 @@ role: Admin, User
 level: Beginner, Intermediate
 keywords: journey optimizer, feature availability, what's available, GA, limited availability, beta, lifecycle, release date, entitlement, base offer, campaigns, journeys
 hide: true
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 
 # Journey Optimizer feature availability {#ajo-features-availability}
@@ -92,7 +111,7 @@ Channel, content, and platform features marked **All base offers** are available
 | Action activity in journeys | GA | Journeys; Campaigns & Journeys | February 20, 2026 | Replaces deprecated native channel activities |
 | Content decision activity | GA | Journeys; Campaigns & Journeys | February 10, 2026 | Previously LA |
 | Quiet hours (time-based exclusions) | GA | Journeys; Campaigns & Journeys | January 29, 2026 | Previously LA |
-| AI Assistant for journey expressions | Beta | Journeys; Campaigns & Journeys | June 3, 2026 | Public Beta |
+| Generate content for journey expressions | Beta | Journeys; Campaigns & Journeys | June 3, 2026 | Public Beta |
 | Journey arbitration | LA | Journeys; Campaigns & Journeys | February 24, 2026 | Contact your Adobe representative |
 | Journey arbitration – AI models | LA | Journeys; Campaigns & Journeys | April 2026 | Contact your Adobe representative |
 | Dataset lookup support in journeys | LA | Journeys; Campaigns & Journeys | March 2026 | For customers entitled to dataset lookup |
@@ -125,7 +144,7 @@ Channel, content, and platform features marked **All base offers** are available
 | Integrations (third-party data sources) | GA | All base offers | May 4, 2026 | Previously Beta |
 | Restrict inheritance breaking in fragments | GA | All base offers | May 21, 2026 | Lock fragments against local edits |
 | Adobe Express integration | GA | All base offers | April 23, 2026 | Previously LA |
-| AI Assistant for personalization expressions | GA | All base offers | April 13, 2026 | In personalization editor and Email Designer |
+| Generate content for personalization expressions | GA | All base offers | April 13, 2026 | In personalization editor and Email Designer |
 | Convert images to email content templates | GA | All base offers | March 31, 2026 | Previously LA |
 | Landing page custom forms | GA | All base offers | March 26, 2026 | Previously LA (US and Australia) |
 | Integration of custom Firefly and third-party image models | GA | All base offers | March 2, 2026 | Adobe, Partner (Gemini), and custom models |
@@ -136,7 +155,7 @@ Channel, content, and platform features marked **All base offers** are available
 | Content fragments | GA | All base offers | Core capability | Reusable content blocks |
 | Content templates | GA | All base offers | Core capability | — |
 | Personalization editor | GA | All base offers | Core capability | Expression-based personalization |
-| AI Assistant for content generation | GA | All base offers | Core capability | Requires AI licensing terms |
+| Generate Content | GA | All base offers | Core capability | Requires AI licensing terms |
 
 >[!TAB Decisioning]
 
@@ -191,3 +210,5 @@ All Decisioning features require the **Decisioning** add-on. See [Packages and c
 - **Understand what's in your package** — [Packages and capabilities](ajo-packages.md)
 - **See everything that shipped** — [Release notes](../rn/release-notes.md) | [2026 release notes](../rn/release-notes-2026.md)
 - **Get started** — [Get started with Journey Optimizer](get-started.md)
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-ajo-features-availability.md}}

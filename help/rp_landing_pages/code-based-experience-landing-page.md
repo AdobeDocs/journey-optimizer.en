@@ -5,6 +5,9 @@ title: Code-based experience
 description: Code-based experience
 redpen-status: CREATED_||_2025-08-11_20-42-30
 exl-id: 55b07a0b-b09a-47e6-8b9f-e05e2dd7b47e
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Code-based experience{#section-overview}
 

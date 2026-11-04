@@ -9,8 +9,12 @@ role: User
 level: Intermediate
 keywords: experimentation, experiment, journey, path, optimization, A/B testing, multi-armed bandit, scale the winner
 exl-id: 7241ade3-577c-4bb3-b0c3-017133871ca5
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+subfeature_v2:
+  - id: d328f775-66ee-431a-bd26-490e1e80c48f
+    internal-label: Path experimentation
 ---
 # Use path experimentation {#experimentation}
 
@@ -34,7 +38,7 @@ Let's say you want to compare three paths:
 
 * one path with one email;
 * a second path with a **[!UICONTROL Wait]** node of two days and an email;
-* a third path with an email and then an SMS message.
+* a third path with an email and then a mobile message.
 
 1. From the **[!UICONTROL Orchestration]** section, drag and drop the **[!UICONTROL Optimize]** activity into the journey canvas.
 
@@ -80,13 +84,15 @@ Let's say you want to compare three paths:
 
     * Drag and drop a [Wait](wait-activity.md) activity of two days onto the first branch, followed by an [Email](../email/create-email.md) activity (**Treatment B**).
 
-    * Drag and drop an [Email](../email/create-email.md) activity onto the third branch, followed by an [SMS](../mobile/create-mobile-message.md) activity (**Treatment C**).
+    * Drag and drop an [Email](../email/create-email.md) activity onto the third branch, followed by a [Mobile message](../mobile/create-mobile-message.md) activity (**Treatment C**).
 
     ![Path experiment example with three treatment paths](assets/journey-optimize-experiment-ex.png){width=100%}
 
 1. Optionally, use the **[!UICONTROL Add an alternative path in case of a timeout or an error]** to define a fallback action. [Learn more](using-the-journey-designer.md#paths)
 
-1. [Publish](publish-journey.md) your journey.
+1. Click **[!UICONTROL Validate]** in the journey header and resolve any errors before [testing the journey](choose-validation-method.md). [Learn about journey validation](publish-journey.md#validate).
+
+1. When testing is complete and validation is current and passed, [publish](publish-journey.md) your journey.
 
 Once the journey is live, users are randomly assigned to go down different paths. [!DNL Journey Optimizer] tracks which path performs best and provides actionable insights.
 
@@ -106,11 +112,11 @@ The following examples show how to use the **[!UICONTROL Optimize]** activity wi
 
 +++Channel effectiveness
 
-Test whether sending the first message by email versus SMS drives higher conversions.
+Test whether sending the first message by email versus mobile message drives higher conversions.
 
 ➡️ Use the conversion rate as the success metric (for example: purchases, sign-ups).
 
-![Channel effectiveness experiment comparing email versus SMS](assets/journey-optimize-experiment-uc-channel.png)
+![Channel effectiveness experiment comparing email versus mobile message](assets/journey-optimize-experiment-uc-channel.png)
 
 +++
 
@@ -208,47 +214,4 @@ To manually scale the winner of your experiments:
 
 Note that scaling the treatment may take up to one hour. You will receive a notification once the manual scaling process is finished.
 
-+++ AI Knowledge Reference
-
-This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
-
-For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
-
-* **TL;DR:** This page explains how to configure and run path experimentation in Adobe Journey Optimizer journeys using A/B or Multi-armed bandit methods, and how to scale the winning treatment automatically or manually.
-
-**Intents:**
-* Set up an A/B or Multi-armed bandit path experiment in a journey
-* Define success metrics to evaluate experiment performance
-* Allocate traffic between treatment paths evenly or by custom percentage
-* Add a holdout group to exclude a portion of the audience from all treatments
-* Enable auto-scaling to automatically roll out the winning treatment
-* Manually scale the winning treatment after reviewing experiment results
-
-**Glossary:**
-* **Optimize activity**: A journey canvas activity used to split profiles into different paths for experimentation or targeting *(product-specific)*
-* **Treatment**: A single path variant in a path experiment (e.g., Treatment A, Treatment B) *(product-specific)*
-* **Success metric**: The KPI used to evaluate which treatment performs best in an experiment *(product-specific)*
-* **Multi-armed bandit**: An experiment type where traffic split is adjusted automatically every 7 days based on primary metric performance *(product-specific)*
-* **Scale the Winner**: A feature that rolls out the winning treatment to the full remaining audience, either automatically or manually *(product-specific)*
-* **Holdout group**: A segment of the audience excluded from all experiment treatments, used as a control group *(product-specific)*
-
-**Guardrails:**
-* Scale the Winner is only available for unitary journeys (event-triggered and Audience Qualification); it is not available for Read Audience journeys.
-* Auto-scale time must be scheduled before the experiment's end date, or the journey will not publish.
-* Once auto-scaling has occurred, manual scaling is no longer available.
-* Manual scaling the winner before the scheduled auto-scale time cancels the auto-scale.
-* Scaling the treatment may take up to one hour.
-
-**Terminology:**
-* Canonical name: Path Experimentation — Acronym: none — variants: journey experimentation, A/B path test
-* Synonyms: "Optimize activity" = "experiment activity" = "path split activity"
-* Do not confuse: "A/B experiment" ≠ "Multi-armed bandit" (A/B has fixed traffic split; Multi-armed bandit adjusts weights dynamically every 7 days)
-
-**FAQ:**
-* **Q: What is the difference between A/B experiment and Multi-armed bandit?** — A/B experiment uses a fixed traffic split defined at the start, while Multi-armed bandit automatically adjusts traffic weights every 7 days based on the primary metric performance.
-* **Q: Can I use Scale the Winner in a Read Audience journey?** — No; Scale the Winner is only available for unitary (event-triggered and Audience Qualification) journeys.
-* **Q: What happens if no winner is found by the auto-scale time?** — You can configure a fallback: either continue the experiment until its scheduled end, or scale an alternative treatment after a specified time.
-* **Q: How is traffic distributed if I do not configure treatment percentages manually?** — You can enable the Distribute evenly toggle to split traffic equally across all treatments.
-* **Q: Can I edit a path experiment after the journey is published?** — The journey enters read-only mode after publishing; to make changes, create a new version of the journey.
-
-+++
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-path-experimentation.md}}

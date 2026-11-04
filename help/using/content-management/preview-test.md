@@ -5,10 +5,23 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 736fc861-17f2-47b7-8635-9afd261ea3a8
-feature_v2: []
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
+  - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
+    internal-label: Proofs
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Preview & test your content {#preview-test}
 
@@ -70,9 +83,15 @@ For API-triggered and Action (scheduled) campaigns, you can also send proofs pro
 
     To send proofs, you must have **Approve and publish** permissions for the specific resource (campaign or journey) associated with the email. In addition, to send proofs in a journey, the **Publish journey** permission is also required. [Learn more about permissions](../administration/ootb-permissions.md).
 
+    Sending a proof from a standalone content template currently also requires the **[!DNL Manage Messages Preview and Test]** permission. [Learn more on permissions](../administration/ootb-permissions.md)
+
 * **Personalization with context data** - When previewing a message or sending proofs, only profile personalization data is displayed. Personalization based on context data, such as event information, can only be tested in the context of a journey. Learn how in [this use case](../personalization/personalization-use-case.md).
 
 * **Preview content with multiple conditional variants** - When simulating or rendering proofs for emails containing multiple conditional variants, Journey Optimizer may require more processing time. If you experience timeouts or error messages, consider reducing the total number of variants or simplifying conditional rules. Learn more about conditional content on [this page](../personalization/dynamic-content.md).
+
+* **Mirror page limitation** - Mirror page links are not active in proofs, including proofs sent from test profiles or from content variations tested with sample input data. Proofs let you validate content, rendering, and personalization, but not the mirror page link, which only activates in final messages. [Learn more](../email/message-tracking.md#mirror-page).
+
+If a preview or test returns an error code, see [Proof and simulation errors](proof-simulation-errors.md).
 
 ## How-to video {#video-preview}
 

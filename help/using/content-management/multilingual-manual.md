@@ -73,7 +73,7 @@ In this section, you can set your different locales for managing your multilingu
 
 1. Type-in the name of your **[!UICONTROL Language settings]** and choose **[!UICONTROL Manual Translation]**.
    
-1. Select the **[!UICONTROL Locales]** associated to this settings. You can add a maximum of 50 locales.
+1. Select the **[!UICONTROL Locales]** associated to this settings. You can add a maximum of 50 locales. A language setting needs at least two locales.
 
     If a **[!UICONTROL Locale]** is missing, you can manually create it beforehand from the **[!UICONTROL Translation]** menu or by API. Refer to [Create a new Locale](multilingual-locale.md).
 
@@ -100,7 +100,7 @@ In this section, you can set your different locales for managing your multilingu
 
     >[!IMPORTANT]
     >
-    >Contextual data is available exclusively for Web, In-App, Code-based Experience and Content cards channels. If used for Email, SMS, Push notification or Direct mail channels, without additional attributes, the campaign or journey will be sent in the language of the first option on the list.
+    >Contextual data is available exclusively for Web, In-App, Code-based Experience and Content cards channels. If used for Email, Mobile message, Push notification or Direct mail channels, without additional attributes, the campaign or journey will be sent in the language of the first option on the list.
 
     ![](assets/multilingual-settings-6.png)
 
@@ -112,7 +112,7 @@ In this section, you can set your different locales for managing your multilingu
     >
     >These prerequisites are required for the In-app and Content cards channels only.
 
-    1. In Adobe Experience Platform Data Collection, access the **[!UICONTROL Rules]** menu and create a new rule. Detailed information on how to create rules is available in [!DNL Adobe Experience Platform] [Data Collection documentation](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
+    1. In Adobe Experience Platform Data Collection, access the **[!UICONTROL Rules]** menu and create a new rule. Detailed information on how to create rules is available in [!DNL Adobe Experience Platform] [Data Collection documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules){target="_blank"}
 
     2. In the rule's **[!UICONTROL IF]** section, add an event configured as below:
 
@@ -149,6 +149,14 @@ In this section, you can set your different locales for managing your multilingu
 
     +++
 
+1. Once you have created a condition for a locale, you can reuse it for other locales instead of rebuilding it from scratch. Click **[!UICONTROL Copy to...]** then select one or more target locales to apply the condition to.
+
+    ![](assets/multilingual-settings-7.png)
+
+    >[!NOTE]
+    >
+    >Copying a condition overwrites any existing condition on the selected target locales.
+
 1. Drag and drop the locales to reorder them and manage their priority in the list.
 
 1. To delete a locale, click the bin icon.
@@ -158,6 +166,10 @@ In this section, you can set your different locales for managing your multilingu
 1. Click **[!UICONTROL Submit]** to create your **[!UICONTROL Language settings]**.
 
 Note that after setting up your language preferences, you will no longer have the option to edit them.
+
+To add a locale or change the conditions of an active **[!UICONTROL Language settings]**, access ![](assets/do-not-localize/Smock_More_18_N.svg) and select **[!UICONTROL Duplicate]**. This creates a copy of the existing setting that you can then edit.
+
+![](assets/multilingual-settings-8.png)
 
 <!--
 1. Access the **[!UICONTROL channel configurations]** menu and create a new channel configuration or select an existing one.
@@ -172,53 +184,67 @@ Note that after setting up your language preferences, you will no longer have th
 
 After setting up your multilingual content, you are ready to craft your campaign or journey and customize the content for each of your selected locales.
 
-1. Begin by creating and configuring your Email, SMS or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journey-action.md) according to your requirements.
+1. Create and configure an email, mobile message, or push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journey-action.md).
 
     >[!IMPORTANT]
     >
     >We recommend including only one translation project per journey.
 
 1. Create or import your original content and personalize it as needed.
-
-1. Once your content is created, click **[!UICONTROL Save]** and head back to the campaign configuration screen.
+    
+    When the content is ready, click **[!UICONTROL Save]** and return to the campaign configuration screen.
 
     ![](assets/multilingual-campaign-2.png)
 
-1. Click **[!UICONTROL Add languages]** and select your previously created **[!UICONTROL Language settings]**. [Learn more](#language-settings)
+1. From the **[!UICONTROL Actions]** menu, select **[!UICONTROL Add languages]**.
+
+    ![](assets/multilingual-campaign-9.png)
+
+1. Select the **[!UICONTROL Language settings]** you created previously. [Learn more](#language-settings)
 
     ![](assets/multilingual-campaign-3.png)
 
-1. Choose the desired locale from the drop-down menu to apply to the existing authored content.
+1. From the drop-down menu, select the locale to associate with your existing content.
 
-1. Access the advanced settings of the **[!UICONTROL Locales]** menu and select **[!UICONTROL Copy to all locales]**.
+1. In the **[!UICONTROL Content]** menu, open the advanced settings of the **[!UICONTROL Locales]** menu and select **[!UICONTROL Copy to all locales]**.
+
+    >[!NOTE]
+    >
+    >This operation processes the full email payload and is subject to the same [message content size guardrail](../start/guardrails.md#message-content-size) as journey publication: a maximum of 2 MB, with a recommended size below 1 MB. For larger content, copy to fewer locales at a time.
 
     ![](assets/multilingual-campaign-4.png)
 
-1. Now that your content is duplicated throughout your selected **[!UICONTROL Locales]**, access each locale and click **[!UICONTROL Edit email body]** to translate your content.
+1. After the content is copied to the selected **[!UICONTROL Locales]**, open each locale and click **[!UICONTROL Edit email body]** to translate the content.
 
     ![](assets/multilingual-campaign-5.png)
 
-1. You can choose to disable or enable locales with the **[!UICONTROL More action]** menu of your selected Locale.
+1. To disable a locale, open its **[!UICONTROL More action]** menu.
 
     ![](assets/multilingual-campaign-6.png)
 
-1. To deactivate your Multilingual configuration, click **[!UICONTROL Add languages]** and select the language you wish to keep as local language.
+    >[!NOTE]
+    >
+    >To re-enable a disabled locale, select **[!UICONTROL Copy primary to all]**. This action copies content from the enabled primary variant to all locales, including disabled locales. Once the locale is re-enabled, translate the copied content as required.
+
+1. To deactivate the multilingual configuration, select **[!UICONTROL Add languages]** from the **[!UICONTROL Actions]** menu, then select the language to retain for your content.
 
     ![](assets/multilingual-campaign-7.png)
 
 1. Click **[!UICONTROL Review to activate]** to display a summary of the campaign.
 
-    The summary allows you to modify your campaign if necessary, and to check if any parameter is incorrect or missing.
+    Review the summary for missing or incorrect settings and update the campaign as needed.
 
-1. Browse through your multilingual content to see the rendering in each language.
+1. Preview the multilingual content to verify how it renders in each language.
 
     ![](assets/multilingual-campaign-8.png)
 
-You can now activate your campaign or journey. Once sent, you can measure the impact of your multilingual journey or campaign within reports.
+Your campaign or journey is now ready to activate. After messages are sent, use reports to measure the performance of your multilingual content.
 
 >[!IMPORTANT]
 >
 > If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your multilingual campaign or journey. [Learn more](../test-approve/gs-approval.md)
+
+If multilingual content returns an error code, see [Multilingual content errors](multilingual-errors.md).
 
 <!--
 # Create a multilingual journey {#create-multilingual-journey}

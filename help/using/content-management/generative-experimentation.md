@@ -1,14 +1,14 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Content experiment with AI Assistant in Journey Optimizer
-description: Content experiment with AI Assistant in Journey Optimizer
+title: Content experiment with AI in Journey Optimizer
+description: Content experiment with AI in Journey Optimizer
 feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 exl-id: c47af613-0529-4922-bd0d-5ef4cc619305
-TQID: https://experienceleague.adobe.com/YrQS5ldhaFXfS3J7tScdZQrXy-K4sS8h5e6dLkMD8rI
+TQID: 'https://experienceleague.adobe.com/YrQS5ldhaFXfS3J7tScdZQrXy-K4sS8h5e6dLkMD8rI'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -26,6 +26,8 @@ subfeature_v2:
     internal-label: Publish
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
     internal-label: AI content generation
+  - id: f659587f-8bf8-5d99-be43-652c46ebaa44
+    internal-label: Content Assistant
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -40,11 +42,11 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
     internal-label: Experimentation
 ---
-# Content experiment with AI Assistant{#generative-experimentation}
+# Content experiment with AI{#generative-experimentation}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use AI Assistant in Adobe Journey Optimizer to generate content variations and turn them into experiment treatments that measure performance across your target audience.
+**On this page:** Learn how to use AI in Adobe Journey Optimizer to generate content variations and turn them into experiment treatments that measure performance across your target audience.
 
 >[!ENDSHADEBOX]
 
@@ -53,11 +55,11 @@ topic_v2:
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 ></br>
 >
->You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
+>You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use Generate Content in Journey Optimizer. For more information, contact your Adobe representative.
 
-Once you've crafted and personalized your messages, elevate your content with AI Assistant in Adobe Journey Optimizer, which includes the Content Experiment feature. This tool allows you to define multiple delivery treatments, varying content, to measure performance for your target audience.
+Once you've crafted and personalized your messages, elevate your content with Generate Content in Adobe Journey Optimizer, which includes the Content Experiment feature. This tool allows you to define multiple delivery treatments, varying content, to measure performance for your target audience.
 
-1. Create your campaign and use AI Assistant to generate your variants. 
+1. Create your campaign and use AI to generate your variants. 
 
     In this example, we generated a subscription confirmation email with a promo code.
 

@@ -5,6 +5,9 @@ title: AI models
 description: AI models
 redpen-status: CREATED_||_2025-08-11_20-55-44
 exl-id: 71f24028-0a4c-4945-ad74-d52472f59c1f
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # AI models{#section-overview}
 

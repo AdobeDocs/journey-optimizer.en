@@ -7,13 +7,21 @@ role: User
 level: Intermediate
 exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/yfeFpaNi0rYVeyXdzaZ7SfoZnu-BkyivCMDzED7dpsM
+TQID: 'https://experienceleague.adobe.com/yfeFpaNi0rYVeyXdzaZ7SfoZnu-BkyivCMDzED7dpsM'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
     internal-label: Decision capabilities
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 subfeature_v2:
   - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
     internal-label: Decisioning API
@@ -48,6 +56,10 @@ In [!DNL Journey Optimizer], you can create two types of reusable rules:
 
 * [Decision rules](#decision-rules)
 * [Targeting rules](#targeting-rules)
+
+>[!TIP]
+>
+>You can also create, explain, simulate, and optimize rules conversationally using the **Decisioning Rule Workflow** skill in [Coworker for Decisioning](experience-decisioning-coworker-skills.md#rules-ranking).
 
 ### Decision rules {#decision-rules}
 
@@ -106,14 +118,23 @@ To create a rule, follow these steps:
 
 1. Navigate to **[!UICONTROL Decisioning]** > **[!UICONTROL Strategy setup]** > **[!UICONTROL Rules]**, then click the **[!UICONTROL Create rule]** button.
 
-1. Select the rule entity to specify which type of object the rule is being created for.
+1. In the **[!UICONTROL Create rule]** dialog, choose one of the following tabs:
+
+    * **[!UICONTROL Create from scratch]** to continue in the rule creation flow.
+    * **[!UICONTROL Create with AI]** to use AI-assisted authoring. Describe the rule you want to create then and confirm. You are redirected to the rule builder and AI Assistant generates a rule suggestion in the right pane. For more information on how to generate a rule using AI, refer to [Build a rule with AI](#build-rule-with-ai) section.
+
+        >[!NOTE]
+        >
+        >This capability is available to organizations with access to Adobe AI capabilities.
+
+1. If you chose **[!UICONTROL Create from scratch]**, select the rule entity to specify which type of object the rule is being created for.
 
     ![](assets/rules-select-entity.png){width=90%}
 
     * **[!UICONTROL Decision item]** - The rule can be applied on a [decision item](#decision-rules) in the context of Decisioning;
     * **[!UICONTROL Targeting]** - The rule can be used when building [targeting](#targeting-rules) rules, either as part of [content optimization](../building-journeys/path-targeting.md) in a campaign or a journey, either in the [Optimize journey activity](../building-journeys/path-targeting.md).
 
-1. If you create a **[!UICONTROL Decision item]** rule, you can select **[!UICONTROL Enable dataset lookup]** to use data from Adobe Experience Platform to enrich your decision logic with external data. This is especially useful for attributes that frequently change, such as product availability, or real-time pricing. [Learn how to use Adobe Experience Platform data for decisioning](../experience-decisioning/aep-data-exd.md)
+    If you create a **[!UICONTROL Decision item]** rule, you can select **[!UICONTROL Enable dataset lookup]** to use data from Adobe Experience Platform to enrich your decision logic with external data. This is especially useful for attributes that frequently change, such as product availability, or real-time pricing. [Learn how to use Adobe Experience Platform data for decisioning](../experience-decisioning/aep-data-exd.md)
 
 1. The rule creation screen opens. Name your rule and provide a description.
 
@@ -150,13 +171,96 @@ To create a rule, follow these steps:
 >
 >[Learn more about Eligibility rules Guardrails & limitations](decisioning-guardrails.md#eligibility-rules)
 
+## Build a rule with AI {#build-rule-with-ai}
+
+>[!NOTE]
+>
+>This capability is available to organizations with access to Adobe AI capabilities. It is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+>
+>At this time, AI-assisted rule generation does not support Journey context data-based expression generation.
+
+You can start AI-assisted rule authoring from two places:
+
+* From the Create rule dialog, in the **[!UICONTROL Create with AI]** tab:
+
+    ![](assets/rule-ai-create.png){width=85%}
+
+* From the rule builder, using the **[!UICONTROL AI Assistant]** button.
+
+    ![](assets/rule-ai-generate.png){width=85%}
+
+In the AI Assistant pane, describe the rule you want to build in plain language. The AI Assistant generates a rule suggestion, that you can apply to the builder, or discard.
+
+![](assets/rule-ai-generate-prompt.png)
+
+>[!CAUTION]
+>
+>When you click **[!UICONTROL Apply to builder]**, the AI-generated rule replaces any existing rule logic currently built in the builder canvas.
+
+## Simulate your rule {#simulate-rules}
+
+Before using a rule in your decisioning strategy or campaign, you can test it with sample or generated data to validate the rule logic and ensure it behaves as expected.
+
+### Access the simulation workspace
+
+1. Open an existing rule or [create a new one](#create) then click the **[!UICONTROL Simulate rule]** button.
+
+    ![](assets/rule-simulate-button.png)
+
+1. The simulation screen opens with several sections:
+
+    ![](assets/rule-simulate-new.png)
+
+    * **Test Variants**: Where you generate or create manual test variants
+    * **Rule expression**: Displays the rule definition for reference
+    * **Simulation result**: Shows whether the Profile will be eligible by this Rule or not
+
+### Add test variants
+
+1. Add test variants with the attributes required by your rule using one of the following methods:
+    * To create a manual sample, select the **[!UICONTROL Create sample]** button.
+    * To generate test variants using AI, click the **[!UICONTROL Generate]** button.
+
+    >[!NOTE]
+    >
+    >AI-based test variant generation is available to organizations with access to Adobe AI capabilities.
+
+The Test variants section is automatically populated with the created or generated samples. Each variant includes  attributes used in your rule. You can edit the field values directly to simulate different scenarios.
+
+### Populate variants with Adobe Experience Platform test profiles
+
+Once you have created or generated a variant, you can use attributes from an [Adobe Experience Platform test profile](../audience/creating-test-profiles.md) to populate its attributes.
+
+1. Select **[!UICONTROL Edit]** on a variant then click the **[!UICONTROL Select AEP profile]** button.
+
+    ![](assets/rule-simulate-aep.png)
+
+1. Select an identity namespace, enter the corresponding identity value.
+
+    The **Recents** area lists profiles that you have successfully applied. Recent profiles are stored in the browser per organization and sandbox, are ordered with the newest first, and are limited to 10 entries.
+
+    ![](assets/ranking-formula-simulate-aep-recents.png)
+
+1. Click the **[!UICONTROL Select profile]** button. The test profile's attributes are added to the selected variant.
+
+### View the simulation results
+
+To view the rule evaluation results, select a test variant from the list. The Simulation result area shows whether the Profile will be eligible by this Rule or not.
+
+In the example below, the first test variant shows a **[!UICONTROL Pass]** simulation result, while the second test variant shows a **[!UICONTROL Failed]** result.
+
+| Pass example | Failed example |
+| --- | --- |
+| ![](assets/rule-simulate-pass.png) | ![](assets/rule-simulate-fail.png) |
+| The variant data satisfies all rule conditions, so the profile qualifies for the rule. | One or more conditions are not met, so the profile does not qualify for the rule. |
+
 ## AI-powered rule optimization {#optimize}
 
 [!DNL Journey Optimizer] can automatically analyze rules and suggest simplifications that preserve the original logic. Only rules whose PQL expression is larger than **2 KB** (UTF-8 encoded) are eligible, smaller expressions are not analyzed. When a simplification is found, a red **[!UICONTROL Optimize]** indicator appears next to the rule in the inventory.
 
 >[!NOTE]
 >
->AI-powered rule optimization relies on the same generative AI capabilities as **AI Assistant**, and uses the same access controls. Users must be granted the **[!UICONTROL Generate Content]** permission on the **[!UICONTROL AI Assistant]** resource. For details, refer to [Access AI Assistant](../content-management/gs-generative.md#generative-access).
+>AI-powered rule optimization relies on the same generative AI capabilities as **Generate Content**, and uses the same access controls. Users must be granted the **[!UICONTROL Generate Content]** permission on the **[!UICONTROL AI Assistant]** resource. For details, refer to [Access Generate Content](../content-management/gs-generative.md#generative-access).
 
 ![](assets/decision-rules-ai.png)
 

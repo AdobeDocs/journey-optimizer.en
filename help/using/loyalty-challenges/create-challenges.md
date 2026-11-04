@@ -7,54 +7,51 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-badge: label="Private beta" type="Informative"
-mini-toc-levels: 1
 exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
+    internal-label: Loyalty challenges
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
+
 # Create challenges {#create-challenges}
 
 >[!BEGINSHADEBOX]
 
-**Table of contents**
-
-[Get started with Loyalty Challenges](get-started.md)
-
-<table style="table-layout:fixed">
-<tr style="border: 0;">
-<td style="vertical-align:top;">
-
-**Create and manage challenges**
-
-* [Access & manage challenges and tasks](access-loyalty-challenges.md)
-* **Create challenges** ◀︎ **You are here**
-* [Create tasks](create-tasks.md)
-* [Monitor loyalty challenge performance](loyalty-reporting.md)
-
-</td>
-<td style="vertical-align:top;">
-
-**Configure and integrate**
-
-* [Configure loyalty challenges](loyalty-admin.md)
-* [Loyalty data and datasets](loyalty-data-and-datasets.md)
-* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
-
-</td>
-</tr>
-</table>
+**On this page:** Learn how to create, configure, publish, and launch loyalty challenges, including their settings, structure, content, messaging, tasks, and rewards.
 
 >[!ENDSHADEBOX]
 
->[!AVAILABILITY]
->
->This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+This page covers the complete process of creating and publishing a loyalty challenge in Adobe Journey Optimizer.
 
-This page covers the complete process of creating a loyalty challenge, from selecting the challenge type and configuring settings, structure, content, and messaging to generating and publishing the journey that delivers the challenge to your customers.
+Creating a challenge involves the following steps:
+
+1. **[Create the challenge](#create-the-challenge)** — Select a challenge type and open the challenge editor.
+1. **[Configure settings](#settings)** — Define the challenge name, audience, schedule, opt-in rules, and repeat limits.
+1. **[Configure structure](#structure)** — Add tasks and rewards (not applicable for Bring your own data challenges).
+1. **[Configure content](#configure-content-cards)** *(optional)* — Define how the challenge appears to members using a content card or code-based experience.
+1. **[Configure messaging](#configure-messaging)** *(optional)* — Set up channel messages for the Launch, In-progress, and End stages.
+1. **[Publish the challenge](#launch)** — Make the challenge available for journey generation.
+1. **[Generate and publish the journey](#launch)** — Trigger the auto-generated journey that delivers the challenge to customers.
+
+➡️ [Watch how to create challenges](#video)
 
 ## Create the challenge {#create-the-challenge}
 
-1. Navigate to **[!UICONTROL Loyalty Challenges (Beta)]** in Journey Optimizer.
+1. Navigate to **[!UICONTROL Loyalty Challenges]** in Journey Optimizer.
 
 1. Select the **[!UICONTROL Challenges]** tab and select **[!UICONTROL Create Challenge]**.
 
@@ -78,6 +75,8 @@ This page covers the complete process of creating a loyalty challenge, from sele
       >The **[!UICONTROL Bring your own data]** challenge type is currently available to a restricted set of organizations and will be made available more broadly in a future release.
 
    After selecting a challenge type, the challenge editor opens with these tabs: **[!UICONTROL Settings]**, **[!UICONTROL Structure]**, **[!UICONTROL Content]**, and **[!UICONTROL Messaging]**. Start with **[!UICONTROL Settings]** to define challenge details, audience, schedule, and rules. Then configure **[!UICONTROL Structure]** (tasks and rewards) for all types except **[!UICONTROL Bring your own data]**.
+
+   Your changes are saved automatically a couple of seconds after you stop editing. Challenge start and end dates are optional while you work on a draft, but they are required to publish the challenge.
 
 ## Configure challenge settings {#settings}
 
@@ -118,47 +117,77 @@ Define who can participate in your loyalty challenge.
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_schedule"
 >title="Challenge schedule"
->abstract="Set when the challenge is live using start and end date and time and a time zone. In the task completion window, choose when customers can complete tasks during the challenge period."
+>abstract="Set the challenge start, end, and time zone. Enable Advanced scheduling to configure enrollment, progress tracking, and completion requirements. If a challenge end date and a deadline based on opt-in are both set, the earlier deadline applies."
 
-Configure when your challenge runs:
+Configure when your challenge runs in the **[!UICONTROL Schedule]** section:
 
-1. In the **[!UICONTROL Schedule]** section, set:
+   ![Challenge date settings](assets/challenge-schedule-dates.png)
 
-   * **[!UICONTROL Start date and time]**: When the challenge becomes available to customers.
-   * **[!UICONTROL End date and time]**: When the challenge expires and no longer accepts new completions.
-   * **[!UICONTROL Time zone]**: The time zone used for the challenge schedule.
+   * **[!UICONTROL Challenge start]**: The date and time when the challenge starts.
+   * **[!UICONTROL Challenge end]**: The date and time when the challenge ends. Select **[!UICONTROL No end date]** to run the challenge without a fixed end date, for example when each member's completion deadline is based on their opt-in date.
+   * **[!UICONTROL Time zone]**: The time zone used for the challenge schedule. The challenge start and end times use this time zone for all loyalty members.
 
-   ![](assets/challenge-create-schedule.png)
+Enable **[!UICONTROL Advanced scheduling]** to configure enrollment, progress tracking, and completion requirements separately from the challenge dates.
 
-1. Under **[!UICONTROL Task completion window]**, choose when customers can complete tasks:
+1.  **[!UICONTROL Enrollment]**:
 
-   * **[!UICONTROL Any time during challenge]**: Customers can complete tasks at any time between the challenge start and end dates.
-   * **[!UICONTROL During specific hours of the day]**: Restrict task completion to specific daily hours by setting **[!UICONTROL Start Time]** and **[!UICONTROL End Time]**.
+   ![Enrollment settings](assets/challenge-schedule-enrollment.png)
+
+   * **[!UICONTROL Opt-in opens]**: Choose when members can start opting in:
+
+      * **[!UICONTROL When the challenge starts]**: Open enrollment at the challenge start. This is the default.
+      * **[!UICONTROL On a specific date]**: Set a date in **[!UICONTROL Opt-in opens on]**.
+
+   * **[!UICONTROL Opt-in closes]**: Choose when enrollment ends:
+
+      * **[!UICONTROL When the challenge ends]**: Close enrollment at the challenge end. This is the default.
+      * **[!UICONTROL On a specific date]**: Set a date in **[!UICONTROL Opt-in closes on]**.
+
+1. Configure **[!UICONTROL Progress tracking]**:
+
+   ![Progress tracking settings](assets/challenge-schedule-progress.png)
+
+   * **[!UICONTROL Progress starts counting]**: Choose when task completions begin counting toward challenge progress:
+
+      * **[!UICONTROL As soon as a member opts in]**: Start counting progress when each member joins.
+      * **[!UICONTROL When the challenge starts]**: Start counting progress at the challenge start, allowing members to enroll before earning opens.
+
+1. Configure **[!UICONTROL Completion requirements]**:
+
+   ![Completion requirements](assets/challenge-schedule-completion.png)
+
+   * **[!UICONTROL Tasks count towards progress]**: Choose the task-counting hours:
+
+      * **[!UICONTROL Any time during challenge]**: Count tasks at any time during the challenge, once progress tracking begins.
+      * **[!UICONTROL During specific hours of the day]**: Restrict task progress to a daily window. Set **[!UICONTROL Start time]** and **[!UICONTROL End time]**. These hours use the point of sale (POS) or the customer's local time zone.
+
+   * **[!UICONTROL Members must finish]**: Choose the completion deadline:
+
+      * **[!UICONTROL By the challenge end date]**: Members must complete the challenge by the configured challenge end date.
+      * **[!UICONTROL Within a number of days after opt-in]**: Each member has a personal completion deadline calculated from their opt-in date. Enter the number of days in **[!UICONTROL Days after opt-in]**. For example, with a value of 10, a member who opts in on October 1 has a deadline of October 11, while a member who opts in on October 5 has a deadline of October 15.
+
+      If you also set a **[!UICONTROL Challenge end]** date, each member's deadline is whichever comes first: the challenge end date or their opt-in date plus the configured number of days. For example, if the challenge ends on October 12, the member who opts in on October 5 must complete it by October 12, not October 15. With **[!UICONTROL No end date]**, the completion deadline is determined by each member's opt-in date plus the configured number of days.
 
 ### Rules {#rules}
 
-Configure how members opt in, when task progress counts toward the challenge, and how many times the challenge can be completed.
+Configure how members opt in and how many times the challenge can be completed.
 
 ![](assets/challenge-create-rules.png)
 
 * **[!UICONTROL Opt-in trigger]**:
 
-  * **[!UICONTROL Opt-in method]**: Choose whether customers join the challenge manually or through an event trigger.
-  * **[!UICONTROL Event]**: For event-based opt-in, select the event that triggers opt-in. Administrators can click the ![gear](assets/do-not-localize/settings-icon.svg) button to create an event definition. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
-
-* **[!UICONTROL Start tracking progress]**:
-
-   * **[!UICONTROL Task progress tracking starts]**: Choose when task completions count toward challenge progress. For example, select **[!UICONTROL When challenge starts (after opt-in)]** so progress begins after the member opts in and the challenge is active.
-
-      You can decouple when a challenge is visible to members from when progress is tracked. For example, a challenge card can appear and accept opt-ins before task completions start counting toward progress on a later date.
-
-   * **[!UICONTROL Start]**: When you choose a custom start option, set the date and time when progress tracking begins.
+   * **[!UICONTROL Opt-in method]**: Choose whether customers join the challenge manually or through an event trigger.
+   * **[!UICONTROL Event]**: For event-based opt-in, select the event that triggers opt-in. Administrators can click the ![gear](assets/do-not-localize/settings-icon.svg) button to create an event mapping. [Learn how to configure event mappings](loyalty-admin.md#event-mappings)
 
 * **[!UICONTROL Repeat limits]**:
 
    * **[!UICONTROL Challenge can be completed]**: Choose whether the challenge can be completed once or multiple times. For example, **[!UICONTROL Once]** or a defined number of completions.
 
    * **[!UICONTROL Number of times it can be completed]**: When repeat is enabled, specify how many times a member can complete the challenge.
+
+* **[!UICONTROL Completion requirements]**:
+
+   * **[!UICONTROL Complete in a single transaction]** *(Standard challenges only)*: When enabled, customers must complete all tasks within a single transaction. When disabled, tasks can be completed across separate transactions.
 
 ### Custom metadata {#custom-metadata}
 
@@ -200,13 +229,12 @@ To add tasks to your challenge, follow these steps:
 
    +++Streak challenges
 
-   In the **[!UICONTROL Streak type]** drop-down, choose between:
+   In the **[!UICONTROL Task completion requirements]** drop-down, choose between:
 
-      * **Consecutive**: Customers must complete the task on consecutive days without breaks. *Example: Purchase on Monday, Tuesday, Wednesday—missing a day breaks the streak.*
+      * **[!UICONTROL Customer completes 1 task multiple times]** - *Customers must complete the same task on consecutive days without breaks. Example: Purchase on Monday, Tuesday, Wednesday—missing a day breaks the streak.*
+      * **[!UICONTROL Customer completes all tasks together multiple times]** - *Customers must complete all the selected tasks together on consecutive days without breaks.*
 
-      * **Non-consecutive**: Customers can complete the task with gaps between completions. *Example: Complete 7 purchases over 30 days, with breaks allowed.*
-
-   In the **[!UICONTROL Streak length]** field, specify how many times the task must be completed. *Example: Set to 7 for a "7-day purchase streak."*
+   In the **[!UICONTROL Streak length]** field, specify the number of consecutive days the requirement must be met. *Example: Set to 7 days for a "7-day purchase streak."*
 
    +++
 
@@ -218,10 +246,6 @@ To add tasks to your challenge, follow these steps:
    * **[!UICONTROL Customer completes a specific number of tasks]** - *Customers must complete a defined number of tasks in the exact order you define. Missing or skipping a task breaks the sequence. Specify the required number of tasks to complete*
 
    +++
-
-1. By default, standard and sequential challenges allow customers to complete tasks across multiple transactions. To require all tasks to be completed in a single transaction, open the task options menu and toggle on the single-transaction option.
-
-   ![](assets/challenge-create-single-transaction.png)
 
 After adding tasks to your challenge, configure the rewards customers will earn for completing them.
 
@@ -244,7 +268,7 @@ To configure when and how rewards are delivered:
    * **[!UICONTROL Deliver rewards at task completion milestones as challenge progress is made]**: Award rewards incrementally as customers complete individual tasks (only available for challenges requiring more than one task)  
      *Example: Award 10 points after task 1, 20 points after task 2, and 50 points after task 3*
 
-1. Select your reward provider. This is your loyalty solution that manages customer points and rewards. Reward providers are created in the **[!UICONTROL Loyalty admin]** menu before you author challenges. [Learn how to configure reward providers](loyalty-admin.md#reward-providers)
+1. Select your reward provider. This is your loyalty solution that manages customer points and rewards. Reward providers are created in the **[!UICONTROL Loyalty configurations]** menu before you author challenges. [Learn how to configure reward providers](loyalty-admin.md#reward-providers)
 
    ![](assets/challenge-create-reward-type.png)
 
@@ -272,78 +296,148 @@ To configure when and how rewards are delivered:
 
    +++
 
-After configuring the challenge structure with tasks and rewards, design the content cards to display the challenge to customers.
+After configuring the challenge structure with tasks and rewards, you can optionally configure how the challenge is represented to customers. If you do not need challenge content, skip this step and proceed directly to [Configure messaging](#configure-messaging).
 
-## Configure content cards {#configure-content-cards}
+## Configure challenge content (optional) {#configure-content-cards}
 
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_content"
 >title="Content"
->abstract="Configure the content card that represents your challenge on customer devices and shows challenge information, progress, and rewards. Enter a name for the card, select a channel configuration so delivery uses the right technical settings (for example headers, subdomain, or mobile apps), then select Edit content to design and personalize the card experience."
+>abstract="Configure how your challenge is represented in locations where loyalty members access challenges and track their progress. Use Add action to choose Content card to display a card-style experience, or Code-based experience to deliver content through your own custom implementation."
 
-Content cards visually represent your challenge on customer devices, displaying challenge information, progress, and rewards. [Learn more about content cards](../content-card/create-content-card.md).
+The **[!UICONTROL Content]** tab controls how the challenge is represented in locations where loyalty members access challenges and track their progress.
 
-To configure content cards for your challenge:
+To configure challenge content:
 
-1. Navigate to the **[!UICONTROL Content]** tab and enter a **[!UICONTROL Name]** for the content card.
+1. Navigate to the **[!UICONTROL Content]** tab and click **[!UICONTROL Add action]**.
 
-1. Select the **[!UICONTROL Channel configuration]**. Channel configurations contain all the technical parameters for sending messages, such as header parameters, subdomain, mobile apps, etc. [Learn more about channel configurations](../configuration/channel-surfaces.md).
+1. Choose the action type:
 
-1. Select **[!UICONTROL Edit content]** to design your content card. [Learn how to design and personalize content cards](../content-card/design-content-card.md).
+   * **[!UICONTROL Content card]**: Displays the challenge as a card-style experience on customer devices. Select a **[!UICONTROL Channel configuration]** and click **[!UICONTROL Edit content]** to design and personalize the card. [Learn more about content cards](../content-card/create-content-card.md).
+
+      You can use challenge metadata to personalize the card content. [Learn more about personalizing challenge content](../content-card/design-content-card.md#personalize-challenge-content).
+
+   * **[!UICONTROL Code-based experience]**: Delivers challenge content through your own custom implementation using Journey Optimizer's code-based channel. Select a **[!UICONTROL Channel configuration]** and click **[!UICONTROL Edit content]** to define the content. [Learn more about code-based experiences](../code-based/create-code-based.md).
 
    ![](assets/challenge-create-content.png)
 
-After configuring the content card, set up messaging to engage customers throughout the challenge lifecycle.
+   You can add multiple actions to represent the challenge across different surfaces.
+
+➡️ [Watch how to build a challenge content card](#video)
+
+After configuring the content, set up messaging to engage customers throughout the challenge lifecycle.
 
 ### Configure messaging {#configure-messaging}
 
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_messaging"
 >title="Messaging"
->abstract="Messaging helps engagement across the challenge lifecycle. On the Messaging tab, add messages for each stage: Launch (when the challenge starts), In-progress (reminders and progress updates), and Completion (celebrate success and confirm rewards). For each stage, add a message, choose the channel, select a channel configuration, then select Edit to design the message content."
+>abstract="Messaging helps engagement across the challenge lifecycle. On the Messaging tab, add messages for each stage: Launch (announce the challenge and invite participants to join), In-progress (keep participants engaged and completing tasks), and End (celebrate completion and notify participants of their rewards). For each stage, click the add message button, choose a channel, select a channel configuration, then select Edit to design the message content."
 
 Set up multi-channel messages to engage customers at key stages of the challenge lifecycle. Messaging is optional but recommended to maximize customer engagement.
 
-1. Navigate to the **[!UICONTROL Messaging]** tab and configure messages for each lifecycle stage:
+Navigate to the **[!UICONTROL Messaging]** tab and configure messages for each lifecycle stage:
 
-   * **Launch** message: Notify customers when the challenge starts
-   * **In-progress** message: Keep customers engaged with reminders and progress updates
-   * **Completion** message: Celebrate success and confirm reward allocation
+* **[!UICONTROL Launch]**: Announce the challenge and invite participants to join.
+* **[!UICONTROL In-progress]**: Keep participants engaged and completing tasks.
+* **[!UICONTROL End]**: Celebrate completion and notify participants of their rewards.
 
-1. For each stage, click the add message button to create a message for that stage.
+For each stage, click the add message button (**[!UICONTROL Add launch message]**, **[!UICONTROL Add in-progress message]**, or **[!UICONTROL Add ended challenge message]**) and choose a channel.
 
-1. Choose your desired channel: **[!UICONTROL In-app]**, **[!UICONTROL Email]**, or **[!UICONTROL Push notification]** and select the associated channel configuration.
+Select the associated **[!UICONTROL Channel configuration]** and click **[!UICONTROL Edit]** to design your message content.
 
-1. Select the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and choose **[!UICONTROL Edit]** to design your message content.
+![](assets/challenge-create-messaging.png)
 
-   ![](assets/challenge-create-messaging.png)
+| Channel | Description |
+|---|---|
+| **[!UICONTROL In-app]** | Display a message inside your mobile or web app. [About in-app messages](../in-app/get-started-in-app.md) · [Design an in-app message](../in-app/design-in-app.md) |
+| **[!UICONTROL Email]** | Send an email notification. [About email](../email/get-started-email.md) · [Design email content](../email/get-started-email-design.md) |
+| **[!UICONTROL Push notification]** | Send a push notification to mobile devices. [About push notifications](../push/get-started-push.md) · [Design a push notification](../push/design-push.md) |
+| **[!UICONTROL Content card]** | Deliver a persistent card-style message in your app or web surface. [About content cards](../content-card/get-started-content-card.md) · [Design a content card](../content-card/design-content-card.md) |
+| **[!UICONTROL Code-based experience]** | Deliver content through a custom implementation using AJO's code-based channel. [About code-based experiences](../code-based/get-started-code-based.md) · [Create a code-based experience](../code-based/create-code-based.md) |
+| **[!UICONTROL Custom action]** | Trigger an external system or custom endpoint. [About custom actions](../action/about-custom-action-configuration.md) |
 
-Learn how to create messages for specific channels in these sections: [In-app messages](../in-app/get-started-in-app.md) - [Email messages](../email/get-started-email.md) - [Push notifications](../push/get-started-push.md)
+➡️ [Watch how to set up lifecycle messaging for a challenge](#video)
 
 Your challenge is now fully configured with its settings, structure, content, and messaging. To launch it, you must publish the challenge and its associated journey.
 
 ## Launching the challenge {#launch}
 
-Launching a challenge requires **three steps**: (1) publish the challenge, (2) generate the journey, (3) publish the journey. All three must be completed for the challenge to be delivered to customers.
+You have two options for launching your challenge:
 
-1. Review your challenge configuration to ensure all required fields are completed.
+* **[!UICONTROL Publish Challenge]** (available in the **[!UICONTROL ...]** menu) — Use this option to publish the challenge without generating a journey. This allows you to test, preview, and simulate the challenge experience before delivery. Customers will not receive the challenge until you generate and publish a journey.
 
-1. Click the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and select **[!UICONTROL Publish]**.
+* **[!UICONTROL Generate Journey]** — Use this option to automatically publish the challenge and create the journey that will orchestrate your challenge delivery to customers.
+
+➡️ [Watch how to publish a challenge and generate a journey](#video)
+
+### Publish the challenge {#publish-challenge}
+
+1. Review your challenge configuration. Your changes are saved automatically.
+
+1. Click the ![](assets/do-not-localize/Smock_More_18_N.svg) icon next to the **[!UICONTROL Generate Journey]** button and select **[!UICONTROL Publish]**.
 
    ![](assets/challenge-create-publish.png)
 
-1. Select **[!UICONTROL Generate Journey]** to create the journey that will orchestrate your challenge delivery.
+   You are redirected to the challenges inventory. The challenge now appears with a **[!UICONTROL Published]** status.
+
+   When you are ready to deliver the challenge to customers, you can generate the associated journey. For more information, see [Generate the journey](#generate-journey).
+
+   >[!NOTE]
+   >
+   >If a required field is missing when you publish the challenge or generate the journey, an inline notification lists what is missing. The tabs that contain missing information display a red dot, and the missing fields are highlighted in an error state. Complete these fields, then publish or generate the journey again.
+
+### Generate the journey {#generate-journey}
+
+1. Review your challenge configuration. Your changes are saved automatically.
+
+1. Select **[!UICONTROL Generate Journey]** to automatically publish the challenge and create the journey that will orchestrate your challenge delivery.
 
    ![](assets/challenge-create-generate-journey.png)
 
-1. Journey Optimizer automatically creates a journey in "Draft" status. The journey appears in your journey inventory with the name format *"Journey: [Challenge Name]"*. [Learn more about the journey inventory](../building-journeys/journey-ui.md).
+   A confirmation message appears. Click **[!UICONTROL Open Journey]** to navigate directly to the generated journey, or **[!UICONTROL Acknowledge]** to dismiss it and access the journey later.
+
+   >[!IMPORTANT]
+   >
+   >Any changes to the challenge must be made in the Loyalty Challenge editor and will require you to generate a new journey. Any work done directly on the existing challenge journey will be lost if you make changes to the challenge.
+   >
+   >No journey is generated for challenges configured with **[!UICONTROL No end date]**, since journeys cannot run longer than 90 days. The challenge itself still runs correctly and members can still opt in and complete tasks.
+
+1. Open the generated journey and publish it. The journey appears in **Draft** status with the name format *"Journey: [Challenge Name]"* and can be accessed from:
+
+   * The confirmation message at the previous step — click **[!UICONTROL Open Journey]**.
+   * The **challenges inventory** — use the **[!UICONTROL Journey]** column link next to the challenge.
+   * The **journeys inventory** — find the journey by name.
+
+   Once published, the journey starts automatically on your specified challenge start date. [Learn how to publish a journey](../building-journeys/publish-journey.md).
 
    ![](assets/challenge-create-journey.png)
 
-1. Open the journey and publish it. The journey will start automatically on your specified challenge start date and deliver content and messages according to your configuration. [Learn how to publish a journey](../building-journeys/publish-journey.md).
+1. Once your challenge is live, monitor program KPIs, challenge results, and task-level metrics in [Loyalty performance](loyalty-performance.md). You can also monitor message delivery in the [journey report](../reports/journey-global-report-cja.md).
 
-1. Once your challenge is live, monitor program KPIs, challenge results, and task-level metrics in the [loyalty challenge reports](loyalty-reporting.md). You can also monitor message delivery in the [journey report](../reports/journey-global-report-cja.md).
+## How-to videos {#video}
 
->[!NOTE]
->
->The auto-generated journey can be customized to add additional logic or messaging. However, changes made directly to the journey do not sync back to the challenge configuration. If you edit the challenge later, any journey customizations will be lost when the journey is regenerated.
+Learn how to create and configure loyalty challenges with these step-by-step video tutorials:
+
+**Set up a loyalty challenge** - Create and configure a new loyalty challenge
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496471?quality=12)
+
+**Configure rewards** - Set up reward delivery and fulfillment
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496481?quality=12)
+
+➡️ Watch how to build a challenge content card
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496529?quality=12)
+
+➡️ Watch how to set up lifecycle messaging for a challenge
+
+>[!VIDEO](https://video.tv.adobe.com/v/3497455?quality=12)
+
+➡️ Watch how to publish a challenge and generate a journey
+
+>[!VIDEO](https://video.tv.adobe.com/v/3498577?quality=12)
+
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-create-challenges.md}}
+
