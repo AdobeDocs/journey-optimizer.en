@@ -22,7 +22,7 @@ keywords: landing, landing page, anonymous, public, form, data capture, cloudfla
 >
 >Anonymous landing pages are available in Limited Availability. Contact your Adobe representative to request access.
 
-Landing pages are usually displayed to a visitor who clicks a personalized link, for example from an email, so that the visitor's profile can be identified when the page loads. With anonymous landing pages, you can also publish a landing page on a **public URL** that anyone can open, without being identified. Visitors can then fill in a form on the page and submit data.
+Landing pages are usually displayed to a visitor who clicks a personalized link, for example from an email, so that the visitor's profile can be identified when the page loads. With anonymous landing pages, you can also publish a landing page on a **public URL** that anyone can open. Visitors can then fill in a form on the page and submit data.
 
 You can share the public URL anywhere, such as in emails, SMS messages, or on your website, and use it for external marketing campaigns.
 
@@ -48,6 +48,8 @@ Before creating an anonymous landing page, make sure that:
 * The subdomain you want to use for your landing pages has been [migrated to Cloudflare](lp-subdomains.md#lp-migrate-cloudflare). This applies when you reuse a landing page subdomain that you already configured.
 * A [landing page preset](lp-presets.md#lp-create-preset) exists for that subdomain.
 * A [form preset](lp-forms.md#create-form-preset) linked to a **non-profile enabled** dataset exists, and a [form](lp-forms.md#create-form) has been created and published from that preset.
+
+<!-- TBC (PM/engineering): PM feedback: the form must include all the mandatory fields of the dataset, otherwise publishing the form fails. PM to confirm with engineering before documenting. -->
 
 <!-- TBC (engineering): what happens for a new subdomain (not an existing one)? Is the Cloudflare migration still required? PRD lists custom domain hosting as a non-goal for v1. -->
 
