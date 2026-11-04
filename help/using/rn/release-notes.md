@@ -313,6 +313,7 @@ The following improvements are coming to campaigns in this release.
 <p>Journey Optimizer now allows you to create public landing pages accessible to anyone, and from there capture data from anonymous visitors into Experience Platform non-profile enabled datasets. You can share the landing page URL anywhere, such as in emails, SMS messages or on your website.</p>
 <p>To reuse your existing Journey Optimizer branded subdomains for public landing pages, you need to migrate them to Cloudflare.</p>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to request access.</p>
+<p><img src="assets/do-not-localize/anonymous-lp.gif"></p>
 <p>For more information, refer to the <a href="../landing-pages/lp-anonymous.md">detailed documentation</a>.</p>
 <p>Availability date: October 26, 2026</p>
 </td>
