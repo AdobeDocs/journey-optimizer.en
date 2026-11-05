@@ -137,6 +137,22 @@ To create an AI model, follow the steps below:
     >
     >You can select up to 50 audiences.
 
+1. If you are creating a **[!UICONTROL Personalized optimization]** AI model, you can also select profile and context attributes to use as features to train the AI model, in addition to or instead of audiences. [Learn more about feature types](personalized-optimization-model.md#how)
+
+    >[!AVAILABILITY]
+    >
+    >Profile features and context features are currently available as a Limited Availability release. Contact your Adobe representative to gain access.
+    >
+    >During Limited Availability, only add profile and context features when creating a new AI model. Do not edit an existing AI model to add these features.
+
+    * In the **[!UICONTROL Profile features]** section, click **[!UICONTROL Manage profile features]** and select up to 50 attributes from your profile schema, such as loyalty tier or churn propensity score. Your selection displays in the right pane. Click **[!UICONTROL Save]**.
+
+        If applicable, data governance (DULE) policies are automatically applied to the selected profile features.
+
+    * In the **[!UICONTROL Context features]** section, click **[!UICONTROL Manage context features]** to define the context attributes sent with the decision request, such as device type, language, or country code. Automatic features (always included) and recommended features (can be removed) are pre-selected. You can add up to 20 additional context features. Click **[!UICONTROL Save]**.
+
+        Context features are only available for decisioning policies used in inbound channels. Context values must be sent in the decision request, using the Web SDK or Mobile SDK and your datastream configuration.
+
 1. Save and activate the AI model. Once your model is live, you can [monitor its training status and performance](ai-model-observability.md).
 
 <!--
