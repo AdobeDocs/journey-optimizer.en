@@ -129,6 +129,18 @@ For complete understanding, this information should be combined with the documen
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
 * Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
+**Personas:**
+
+* **marketer:** Can find the cause and the fix for CJMDMS errors returned when creating relational schemas and enabling datasets for Orchestrated campaigns. Can identify the error family from the code, such as files and formats, primary key, relationships, identity, or permissions. The page states that an error code uses the prefix CJMDMS, followed by an error number and an HTTP status. Where: "Troubleshooting".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots.
+* **Success check:** The message states the orchestrated campaign extension is already enabled on the dataset, so you can continue by ingesting data into it.
+* **Previous:** Creating relational schemas using a DDL file or Excel template: Configuration steps (orchestrated/file-upload-schema.md); Creating relational schemas manually: Configuration steps (orchestrated/manual-schema.md)
+* **Next:** After the orchestrated campaign extension is enabled on the dataset: Configuration steps (orchestrated/ingest-data.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 6a204a60 -->

@@ -42,6 +42,18 @@ For complete understanding, this information should be combined with the documen
 * **Can the title or message contain dynamic tokens?** No. Both fields use static plain text, and dynamic tokens are not supported.
 * **How can an alert depend on an audience condition?** Place it on the relevant Test branch. The Test activity evaluates the condition, not the Alert activity.
 
+**Personas:**
+
+* **marketer:** Can add an Alert activity to the Orchestrated campaign canvas and connect it to a transition to notify subscribers when execution reaches that point. Can configure a Label, a required Title, and a required Message for the alert. The page states that the title and message are static plain text and do not support dynamic tokens. Where: "Configure the Alert activity".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Add an Alert activity to your Orchestrated campaign canvas.
+* **Success check:** Subscribers are notified when campaign execution reaches the activity on the canvas.
+* **Previous:** Building an audience query before testing the population count: Use the Build audience activity (orchestrated/activities/build-audience.md); Placing a conditional alert on a Test activity branch: Use the Test activity in your Orchestrated campaigns (orchestrated/activities/test.md)
+* **Next:** Subscribing to alert notifications in Journey Optimizer: Access and subscribe to system alerts (reports/alerts.md)
+
 +++
 
 <!-- ai-section-version: 4 | source-hash: 98730c60 -->
