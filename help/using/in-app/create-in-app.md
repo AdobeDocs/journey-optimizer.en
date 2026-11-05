@@ -89,6 +89,8 @@ To add an In-app message in a journey, follow these steps:
 
     ![](assets/in_app_journey_2.png)
 
+1. Enable the **[!UICONTROL Re-evaluate before display]** option to fetch the latest campaign data from the server before the message is shown. The SDK verifies that the campaign is still active and that its targeting rules have not changed, so users do not see outdated content or messages from closed campaigns. This is recommended for time-sensitive campaigns.
+
 1. Select the **[!UICONTROL Edit content]** button and create your content as desired. [Learn more](design-in-app.md)
 
 1. Click **[!UICONTROL Edit triggers]** to choose the event(s) and criteria that will trigger your message. Rule builders enable users to specify criteria and values that, when met, trigger a set of actions, such as sending an in-app message. [Learn more](design-in-app.md)
@@ -206,6 +208,8 @@ To add an In-app message in a campaign, follow these steps:
     Learn more about In-app configuration on [this page](inapp-configuration.md).
 
     ![](assets/in_app_create_1.png)
+
+1. Enable the **[!UICONTROL Re-evaluate before display]** option to fetch the latest campaign data from the server before the message is shown. The SDK verifies that the campaign is still active and that its targeting rules have not changed, so users do not see outdated content or messages from closed campaigns. This is recommended for time-sensitive campaigns.
 
 1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 
