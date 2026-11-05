@@ -204,3 +204,4 @@ For authentication and required headers, see the [authentication tutorial](https
 
 Want to see Loyalty Challenges in action first? Check out the [interactive demo](loyalty-challenges-demo.md).
 
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-get-started.md}}

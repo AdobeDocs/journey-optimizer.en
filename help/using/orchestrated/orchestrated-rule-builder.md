@@ -55,3 +55,5 @@ The rule builder provides a central canvas where you build your query and a prop
 ## Work with predefined filters
 
 Predefined filters let you reuse saved queries in the rule builder, including versions with parameters. For a full walkthrough of saving, applying, and managing predefined filters, see [Work with predefined filters](predefined-filters.md).
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-orchestrated-rule-builder.md}}

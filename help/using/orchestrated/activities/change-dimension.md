@@ -74,3 +74,5 @@ Begin with a **[!UICONTROL Build audience]** activity, using the **[!UICONTROL W
 Then, add a **[!UICONTROL Change dimension]** activity to switch the targeting dimension from **[!UICONTROL Wishlist]** to **[!UICONTROL Recipient].** This step ensures the Orchestrated campaign targets the correct profiles linked to those wishlists, allowing the mobile message to be sent to the intended profiles.
 
 ![](../assets/orchestrated-change-dimension-example.png)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-change-dimension.md}}

@@ -113,3 +113,5 @@ www.YourLandingURL.com?utm_source=AJO&utm_campaign={{context.system.source.id}}&
 ```
 
 Learn more about URL tracking parameters in [this section](../email/url-tracking.md).
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-channel-config.md}}

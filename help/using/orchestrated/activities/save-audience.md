@@ -90,3 +90,5 @@ The content of the saved audience is then available in the detail view of the au
 The following example demonstrates how to create a simple audience using targeting. A query identifies all recipients who booked a trip in the last 30 days by filtering this population within your Orchestrated campaign. By choosing **Recipients - CRMID** as the **Targeting dimension**, the audience targets each individual booking event rather than just the recipient as a whole. The **[!UICONTROL Save audience]** activity then captures these profiles to create a reusable audience of recent purchasers.
 
 ![](../assets/save-audience-3.png)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-save-audience.md}}

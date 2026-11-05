@@ -164,3 +164,5 @@ Now that you have an understanding of what orchestrated campaigns are, it's time
 * **[Engage customers by browsing activity](engage-customers-uc.md)** - Re-engage profiles who browsed but did not purchase, using a multi-step orchestrated campaign.
 * **[Notify users about product availability](product-availability-uc.md)** - Alert customers when a product they showed interest in is back in stock.
 * **[Send wishlist item updates](wishlist-uc.md)** - Trigger personalized messages when wishlist items go on sale or become available.
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-gs-orchestrated-campaigns.md}}

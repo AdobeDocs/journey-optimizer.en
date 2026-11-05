@@ -253,3 +253,5 @@ When your rule is ready, click the **[!UICONTROL Confirm]** button in the to sav
 >[!IMPORTANT]
 >
 >Selecting a predefined filter from the Rule properties pane replaces the rule that has been built in the canvas with the selected filter.
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-build-query.md}}
