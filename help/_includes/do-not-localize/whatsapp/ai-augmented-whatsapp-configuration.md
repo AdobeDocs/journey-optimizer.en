@@ -62,6 +62,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What can I do about an HTTP 500 error during API credential setup?** — Verify that the `cjm_whatsapp` entitlement is provisioned, validate the API Token and Business Account ID fields, test your credentials directly with the Meta API, enable advanced logs, and contact your Adobe representative if the error persists.
 * **Q: Why should I not add a '+' before the sender phone number?** — It can prevent the opt-out flow from working correctly.
 
+**Personas:**
+
+* **admin:** Can create WhatsApp API credentials, a Webhook, and a channel configuration to connect a WhatsApp Business account. The page states that these steps must be performed by an Adobe Journey Optimizer System Administrator. Where: "Get started with WhatsApp configuration".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Create your WhatsApp API credentials.
+* **Success check:** The channel configuration gets the Active status and is ready to be used to deliver messages.
+* **Previous:** Confirm the System Administrator role before performing the WhatsApp configuration steps: Journey Optimizer Get Started for System Admin (start/path/administrator.md)
+* **Next:** Select Marketing action(s) to associate consent policies with the WhatsApp channel configuration: Work with consent policies (action/consent.md); Learn about possible failure reasons if the channel configuration checks are not successful: Set up channel configurations (configuration/channel-surfaces.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 338f89f0 -->
