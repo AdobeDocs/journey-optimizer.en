@@ -236,7 +236,7 @@ Before enabling the option, note that:
 You can turn on **[!UICONTROL Honor open tracking consent]** at any time. You do not need to edit the email activities in your journeys and campaigns. What you need to do for messages that already exist depends on the message type.
 
 | Message type | What to do |
-|---|---|
+| --- | --- |
 | **Transactional messages** (journeys or campaigns that use a transactional channel configuration) | Republish them once after you turn on the option. Until they are republished, the open tracking consent is not honored for them. |
 | **Marketing campaigns: scheduled** | No action needed. The setting applies to the next scheduled send. |
 | **Marketing campaigns: send already in progress** | The setting does not apply to that send, which finishes with the previous setting. If you need the new setting, stop the send and start a new one. |
