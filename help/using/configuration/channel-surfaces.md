@@ -129,7 +129,7 @@ To create a channel configuration, follow these steps:
     >You cannot proceed with email configuration creation while the selected IP pool is under [edition](ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status), and has never been associated with the selected subdomain. [Learn more](#subdomains-and-ip-pools)
     >
     >Save the configuration as draft and wait until the IP pool has the **[!UICONTROL Success]** status to resume configuration creation.
-    
+
 1. Once the channel configuration has been created, it displays in the list with the **[!UICONTROL Processing]** status.
 
     During this step, several checks will be performed to verify that it has been configured properly. <!--The processing time is around **48h-72h**, and can take up to **7-10 business days**.-->

@@ -275,11 +275,11 @@ The tables below give you the list of metrics used in reports and their definiti
     </tr>
     <tr> 
       <td>Displays</td> 
-      <td>Number of times an Mobile message was displayed or opened.</td> 
+      <td>In the Tracked Link URLs panel, number of times a tracked link was displayed to a profile, broken down by Link URL.</td> 
     </tr>
     <tr> 
       <td>Unique Displays</td> 
-      <td>Number of unique recipients who opened the Mobile message, excluding multiple interactions from the same user.</td> 
+      <td>In the Tracked Link URLs panel, number of unique profiles to whom a tracked link was displayed, excluding multiple displays to the same profile, broken down by Link URL.</td> 
     </tr>
     <tr> 
       <td>People</td> 

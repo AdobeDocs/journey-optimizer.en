@@ -111,6 +111,10 @@ For customers moving from API credentials to SMS webhooks, information about the
 
 For Sinch and Sinch Conversational, create a single webhook that handles both inbound and feedback events. No custom payload configuration is required.
 
+>[!IMPORTANT]
+>
+>A webhook receives no events until its **[!UICONTROL Webhook URL]** is registered with your SMS provider. Customers who purchased SMS directly through [!DNL Journey Optimizer] must file a Support ticket instead.
+
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL SMS Webhooks]** menu under **[!UICONTROL SMS settings]**, and click the **[!UICONTROL Create Webhook]** button.
 
     ![](assets/webhook-1.png)

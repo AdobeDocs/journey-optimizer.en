@@ -164,7 +164,7 @@ There are several reasons a profile could be discarded, which will inform the me
 
 +++ Custom action error rate exceeded
 
-This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can define a custom threshold.
+This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The default threshold is set to 1% but you can define a custom threshold.
 
 >[!NOTE]
 >
@@ -268,6 +268,78 @@ Note that this alert applies only to live journeys of type **unitary event**, **
 >[!IMPORTANT]
 >
 >This alert is currently available in production sandboxes only, and is not available in development or staging sandboxes.
+
++++
+
++++ Journey Message Bounce Rate Exceeded
+
+>[!AVAILABILITY]
+>
+>Available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
+
+This alert notifies you when a journey's message bounce rate exceeds the configured threshold.
+
+Only sandbox-level subscription is supported, covering all journeys in the sandbox. Individual journey subscription is not available.
+
+The default threshold is 5%, which you can override on the **[!UICONTROL Alerts]** screen. For more information, see [Define a custom alert threshold](#custom-threshold).
+
++++
+
++++ Journey Message Error Rate Exceeded
+
+>[!AVAILABILITY]
+>
+>Available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
+
+This alert notifies you when a journey's message delivery error rate exceeds the configured threshold.
+
+Only sandbox-level subscription is supported, covering all journeys in the sandbox. Individual journey subscription is not available.
+
+The default threshold is 1%, which you can override on the **[!UICONTROL Alerts]** screen. For more information, see [Define a custom alert threshold](#custom-threshold).
+
++++
+
++++ Read Audience Export Started
+
+>[!AVAILABILITY]
+>
+>Available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
+
+This alert notifies you when a journey begins processing its **Read Audience** export. It is an event notification: it has no threshold.
+
+You can subscribe at the journey level or at the sandbox level. Learn more in [Subscribe to alerts](#subscribe-alerts).
+
++++
+
++++ Read Audience Export Completed
+
+>[!AVAILABILITY]
+>
+>Available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
+
+This alert notifies you when a journey completes processing its **Read Audience** export. It is an event notification: it has no threshold.
+
+You can subscribe at the journey level or at the sandbox level. Learn more in [Subscribe to alerts](#subscribe-alerts).
+
+>[!NOTE]
+>
+>The completion of a **Read Audience** export does not mean that message sending or the journey has completed.
+
++++
+
++++ Journey Event Throughput Guardrail Exceeded
+
+>[!AVAILABILITY]
+>
+>Available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
+
+This alert notifies you when the organization-wide journey event throughput guardrail has been exceeded and the resulting event queueing time exceeds the configured threshold, measured in seconds.
+
+It is not tied to a single journey. When the event throughput guardrail is exceeded for the organization as a whole, all events for all journeys in all sandboxes are queued and processed at 5,000 events per second for as long as the throughput exceeds the limit. A single alert is sent when the queueing time exceeds the configured alert threshold.
+
+➡️ [Learn more about journey event throughput limits](../event/about-events.md#event-throughput)
+
+The default threshold is 600 seconds of queueing time, which you can override on the **[!UICONTROL Alerts]** screen. For more information, see [Define a custom alert threshold](#custom-threshold).
 
 +++
 
@@ -587,6 +659,8 @@ Journey-specific subscriptions allow you to monitor individual high-priority jou
    * [Journey Published](#available-alerts)
    * [Journey Finished](#available-alerts)
    * [Custom Action Capping Triggered](#available-alerts)
+   * [Read Audience Export Started](#available-alerts) (Limited Availability)
+   * [Read Audience Export Completed](#available-alerts) (Limited Availability)
 
 1. Click **[!UICONTROL Save]** to confirm your subscriptions.
 
@@ -596,7 +670,7 @@ Open the same dialog, deselect the alert(s), and click **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
->The [Read Audience Trigger Unsuccessful](#available-alerts) alert is only available through global subscription, not per-journey subscription.
+>The [Read Audience Trigger Unsuccessful](#available-alerts) alert is only available through sandbox-level subscription, not per-journey subscription. The same applies to the [Journey Message Bounce Rate Exceeded](#available-alerts) and [Journey Message Error Rate Exceeded](#available-alerts) alerts, which support sandbox-level subscription only, and to the [Journey Event Throughput Guardrail Exceeded](#available-alerts) alert, which applies to the organization as a whole.
 
 >[!TAB Campaign-specific subscription]
 
@@ -639,7 +713,14 @@ For Journey alerts, use the **[!UICONTROL More actions]** button to edit them. Y
 
 ### Define a custom threshold {#custom-threshold}
 
-You can set thresholds for the [Journey alerts](#available-alerts). The threshold alerts above default to 20%. 
+You can set thresholds for the [Journey alerts](#available-alerts). Each alert has its own default threshold, and you can override all of them:
+
+* [Profile discard rate](#available-alerts): 20%
+* [Profile error rate](#available-alerts): 20%
+* [Custom action error rate](#available-alerts): 1%
+* [Journey Message Bounce Rate Exceeded](#available-alerts): 5%
+* [Journey Message Error Rate Exceeded](#available-alerts): 1%
+* [Journey Event Throughput Guardrail Exceeded](#available-alerts): 600 seconds. For this alert, the threshold is the event queueing time. 
 
 To change the threshold:
 
