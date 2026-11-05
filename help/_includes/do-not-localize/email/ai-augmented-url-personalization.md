@@ -56,6 +56,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which syntax should I use for the dynamic part of a personalized URL?** — Use triple curly braces (`{{{ ... }}}`) so the value is not escaped and special characters keep the URL structure; only use it with trusted, URL-safe values.
 * **Q: How do I verify the final personalized URL?** — Send a proof and click the link in the received email; the URL should display the tracking parameter.
 
+**Personas:**
+
+* **marketer:** Can personalize a URL in the Email Designer by inserting a link, selecting the personalization icon, and adding profile attributes. Can use triple curly braces for the dynamic portion of a personalized URL to prevent escaping of special characters. The page states that personalization is only available for External link, Unsubscription link, and Opt-Out link types. Where: "Personalize a URL".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** Select an element in the content and insert a link using the contextual toolbar in the Email Designer.
+* **Success check:** After sending a proof and selecting the link in the received email, the URL displays the tracking parameter.
+* **Previous:** Insert a link in the Email Designer before adding personalization: Track your messages (email/message-tracking.md); Configure URL tracking at the channel level, which applies to all URLs in the message: Configure URL tracking (email/url-tracking.md)
+* **Next:** Use the personalization editor to select the profile attribute for the URL or tracking parameter: Add personalization (personalization/personalization-build-expressions.md); Send a proof to verify the final personalized URL displays the tracking parameter: Send email proofs (content-management/proofs.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 81ee0261 -->

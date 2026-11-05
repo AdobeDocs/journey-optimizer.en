@@ -54,6 +54,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why did my email configuration fail on submission?** — The MX record is likely not configured for the subdomain of the Reply to email address; contact your administrator or use an address with a valid MX record.
 * **Q: How do I forward emails received for the delegated subdomain?** — Contact Adobe Customer Care to set up a forward process, providing the forward email address, sandbox name, and configuration name or subdomain; setup can take 3 to 4 days.
 
+**Personas:**
+
+* **admin:** Can configure the From name, From email prefix, Reply to name, Reply to email, and Error email prefix in a channel configuration. Can set the Sender name and Sender email fields when the transmitting entity differs from the From author. The page states that From email prefix and Error email prefix must begin with a letter and contain only alphanumeric characters, underscore, dot, or hyphen. Where: "Header parameters".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Enter the sender names and email addresses for a new email channel configuration in the Header parameters section.
+* **Success check:** If you enter contact as the From email prefix with subdomain marketing.luma.com delegated, the sender email becomes contact@marketing.luma.com.
+* **Previous:** Setting up a new email channel configuration: Configure email settings (email/email-settings.md); Delegating a subdomain for sending email: Subdomain delegation in [!DNL Journey Optimizer] (configuration/about-subdomain-delegation.md)
+* **Next:** Personalizing header parameter fields: Personalize email configuration settings (email/surface-personalization.md); Editing an existing email channel configuration: Set up channel configurations (configuration/channel-surfaces.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 76351813 -->

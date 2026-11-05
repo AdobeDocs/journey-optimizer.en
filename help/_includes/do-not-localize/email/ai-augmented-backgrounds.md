@@ -52,6 +52,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is the difference between "Full Width" and "Full Width - Top" / "Full Width - Bottom"?** — "Full Width" scales the image proportionally to the container's width and centers it vertically. The "Top" and "Bottom" variants anchor it to that edge instead, cropping the opposite side rather than centering.
 * **Q: What is the difference between "Full Height" and "Full Height - Left" / "Full Height - Right"?** — "Full Height" scales the image proportionally to the container's height and centers it horizontally. The "Left" and "Right" variants anchor it to that side instead, cropping the opposite side rather than centering.
 
+**Personas:**
+
+* **marketer:** Can set a Background color for the whole email by selecting Body in the Navigation tree and using the Styles tab. Can set a Viewport color to apply the same background color across all structure components. Can set a background color for a single structure or for a specific column. Can set a Background image for a structure or column component and choose an Image placement option. The page states that background image is not supported by all email clients. Where: "Set a background color".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Select Body in the Navigation tree and set a Background color in the Styles tab.
+* **Success check:** The background color applies to the whole email.
+* **Next:** You cannot directly override the background color set by a theme for a given component: Enhanced Email Authoring Experience (email/apply-email-themes.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: fd466bfc -->

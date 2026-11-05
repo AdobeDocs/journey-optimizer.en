@@ -51,6 +51,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: My custom CSS is not applied — what should I check?** — Verify the CSS is valid, that it is in the `global-custom` style tag, that `data-disabled` is not set to `true`, and that it is not overridden by other rules including an applied theme; consider adding `!important`.
 * **Q: Can I add custom CSS to a template with locked content?** — No; the button becomes View custom CSS and any existing custom CSS is read-only.
 
+**Personas:**
+
+* **marketer:** Can add custom CSS to email content in the Email Designer by selecting Body and selecting Add Custom CSS. Can enter CSS in the text area and save it so it is applied to the content. The page states that the CSS styles section is only available when content is already present in the editor. Where: "Define custom CSS".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Ensure there is some content defined in the Email Designer by adding at least one component.
+* **Success check:** Your custom CSS is correctly applied to your content after you save it in the text area.
+* **Previous:** Designing emails in the Email Designer before adding custom CSS: Design emails (email/get-started-email-design.md); Adding at least one content component before the CSS styles section becomes available: Use Email Designer content components (email/content-components.md)
+* **Next:** Using a template with locked content where custom CSS cannot be added: Lock content in email templates (content-management/content-locking.md); Troubleshooting custom CSS overridden by an applied email theme: Enhanced Email Authoring Experience (email/apply-email-themes.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d4b155f9 -->

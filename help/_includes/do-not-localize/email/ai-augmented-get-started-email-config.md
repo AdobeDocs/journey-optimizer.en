@@ -47,6 +47,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where do I set the technical parameters for sending emails?** — In each email channel configuration, where you select the subdomain and the IP pools and set up advanced parameters such as BCC, URL tracking, and unsubscribe links.
 * **Q: What are execution fields for?** — To determine which recipient email address to use in priority when several addresses are available in Adobe Experience Platform.
 
+**Personas:**
+
+* **admin:** Can delegate subdomains to Adobe, create IP pools, and create channel configurations for the Email channel. Can configure technical parameters such as the From email prefix, Error email prefix, Sender name, and Sender email, and set execution fields and retry days. The page states that retries are performed for a configured number of days before sending email addresses to the suppression list. Where: "Intents".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Delegate to Adobe the subdomains you use to send emails with Journey Optimizer.
+* **Success check:** You can select the delegated subdomain when configuring the email channel.
+* **Next:** To delegate your sending subdomains to Adobe first: Subdomain delegation in [!DNL Journey Optimizer] (configuration/about-subdomain-delegation.md); To group the IP addresses provisioned with your instance into pools: Create IP pools (configuration/ip-pools.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: ab8ff377 -->

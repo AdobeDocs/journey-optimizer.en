@@ -56,6 +56,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens to consent data with the Customer managed option?** — Adobe stores no unsubscribe or consent data; there is no automatic synchronization, and you must initiate any transfer of consent data back into [!DNL Journey Optimizer].
 * **Q: Can I tell List unsubscribe clicks apart from other unsubscribe actions?** — Not by a built-in tag; [!DNL Journey Optimizer] does not append a specific tag, so you must implement custom tagging externally or use an external landing page for tracking.
 
+**Personas:**
+
+* **admin:** Can enable the Enable List-Unsubscribe option so the email header includes a Mailto (unsubscribe) address, a One-click unsubscribe URL, or both. Can select the Consent level as Channel or Identity to set whether consent updates at channel level or identity level. The page states that disabling the Enable List-Unsubscribe option removes the one-click unsubscribe URL from the email header. Where: "Enable List unsubscribe".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select a subdomain in the email channel configuration to display the Enable List-Unsubscribe option.
+* **Success check:** The page states that recipients see a one-click unsubscribe URL in the email header, as shown in the Gmail example.
+* **Previous:** Select a subdomain in the email channel configuration: Configure email settings (email/email-settings.md)
+* **Next:** Select a Consent level for opt-outs after configuring the List-Unsubscribe header: Choose a consent level for opt-outs (email/consent-level.md); Add a one-click opt-out link into the email body as recommended by the guardrails: Email opt-out management (email/email-opt-out.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 8baef234 -->

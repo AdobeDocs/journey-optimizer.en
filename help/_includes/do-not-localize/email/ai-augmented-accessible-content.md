@@ -54,6 +54,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I make layout tables accessible to screen readers?** — Add `role="presentation"` (or `role="none"`) to layout tables so assistive technologies skip their structure and focus on the content.
 * **Q: Which attributes help screen readers interpret content?** — The `lang` (language) and `dir` (text direction) attributes in the content body.
 
+**Personas:**
+
+* **marketer:** Can test content accessibility using preview, Email rendering, proofs, and content quality validation in Journey Optimizer. Can use Email rendering to simulate designs across Apple Mail, Gmail, and Outlook, and send proofs before sending to the real audience. The page states that these testing capabilities are not specifically designed to check full accessibility, providing only a first level of verification. Where: "Test your content".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Leverage the Styles tab of the Text component to ensure your text is readable.
+* **Success check:** You can switch to live view to check how your content renders on various device sizes.
+* **Previous:** Building email or landing page content from scratch: Design content from scratch in Journey Optimizer (email/content-from-scratch.md)
+* **Next:** Applying dark mode best practices to the accessible content: Switch to dark mode (email/dark-mode.md); Testing email rendering across email clients: Test email rendering (content-management/rendering.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 77fd68e9 -->
