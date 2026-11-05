@@ -43,6 +43,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Is data encrypted even if you do not use CMK?** — Yes, both Adobe Experience Platform and Customer Managed Keys encrypt data in transit and at rest, and data remains protected regardless of whether CMK is used.
 * **Q: What are the two parts of the setup?** — One part in Adobe Experience Platform and one part in Customer Journey Analytics.
 
+**Personas:**
+
+* **developer:** Can set up Customer Managed Keys by completing the two-part process that uses Adobe Experience Platform and Customer Journey Analytics technology. Can apply these keys to encrypt Journey Optimizer data so it stays protected in transit and at rest. The page states that the Customer Journey Analytics portion of the setup is necessary even without purchasing Customer Journey Analytics, because certain components are used in the background. Where: "Set up & manage customer managed keys".
+* **marketer:** Can rely on Journey Optimizer data being encrypted in transit and at rest. The page states that data remains protected regardless of whether Customer Managed Keys are used. Where: "Guardrails".
+* **admin:** Can complete the two-part setup process, following the steps in the Adobe Experience Platform documentation and the Customer Journey Analytics documentation. The page states that completing the Customer Journey Analytics portion is necessary even without purchasing Customer Journey Analytics, because certain components are used in the background. Where: "Set up & manage customer managed keys".
+* **decision-maker:** Can determine whether Customer Managed Keys apply to the organization, since the functionality is currently available only to organizations that purchased the Healthcare Shield or Privacy & Security Shield add-on offering. The page states that data remains encrypted in transit and at rest whether or not Customer Managed Keys are used. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Follow the steps outlined in the Customer Managed Keys in Adobe Experience Platform documentation.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 2e5d86d3 -->
