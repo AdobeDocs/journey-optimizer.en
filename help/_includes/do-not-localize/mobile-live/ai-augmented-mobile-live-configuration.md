@@ -53,6 +53,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: When is the configuration usable?** — Once the checks are successful and the channel configuration reaches the **[!UICONTROL Active]** status.
 * **Q: What does Apply to all sandboxes do?** — It makes the push credentials available across all sandboxes; sandbox-specific credentials for the same Platform and App ID pair take precedence.
 
+**Personas:**
+
+* **admin:** Can add app push credentials for iOS or Android, then create a Live activity channel configuration under Administration, Channels, General settings. Can select Marketing action(s) to associate consent policies, choose the Platform, and select the same App ID as the push credential. The page states that configuration names must begin with a letter and contain only alpha-numeric characters, underscore, dot, or hyphen. Where: "Get started with Live activity configuration".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** In the left rail, browse to Administration, Channels, General settings, Channel configurations, then select Create channel configuration.
+* **Success check:** The channel configuration shows the Active status in the list, ready to deliver messages.
+* **Next:** After configuring the Live activity channel, integrate with the Adobe Experience Platform Mobile SDK: Configure the Live activities channel (mobile-live/mobile-live-configuration-sdk.md); If you encounter issues with Live activity configuration or delivery: Troubleshoot Live activities (mobile-live/troubleshoot-mobile-live.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: e577cd70 -->
