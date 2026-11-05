@@ -74,6 +74,19 @@ For complete understanding, this information should be combined with the documen
 * Troubleshooting event reception in journey execution: Troubleshoot your live journey execution (building-journeys/troubleshooting-execution.md)
 * Journey permissions: Permission levels (administration/high-low-permissions.md)
 
+**Personas:**
+
+* **developer:** Can send real test API calls to validate a custom action configuration, providing a JSON payload when the method is POST and no payload when the method is GET. Can enter authentication details for each test request when the custom action includes authentication. The page states that Adobe Journey Optimizer raises an error for an incorrect JSON structure, but not for a data type mismatch, such as an integer parameter used where a string is expected. Where: "How to use the Send test request feature".
+* **admin:** Can use the Send test request capability to validate custom action configurations by making real API calls directly from Adobe Journey Optimizer. Can access this capability only after a custom action is pre-configured with a URL, headers, and authentication settings. The page states that the Manage journeys events, data sources and actions permission is required, and that the View journeys events permission alone is not sufficient. Where: "Prerequisites".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Navigate to the Actions configuration screen and select a custom action.
+* **Success check:** The response from the API, including headers and status codes, is displayed in the interface.
+* **Previous:** Configuring the custom action with a URL, headers, and authentication settings before testing it: Configure a custom action (action/about-custom-action-configuration.md); Obtaining the permission required to use the Send test request capability: Permission levels (administration/high-low-permissions.md)
+* **Next:** Using the validated custom action in a journey: Use custom actions (building-journeys/using-custom-actions.md)
+
 +++
 
 <!-- ai-section-version: 2 | source-hash: 0b5cc032 -->
