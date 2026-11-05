@@ -96,8 +96,8 @@ For complete understanding, this information should be combined with the documen
 * **Level:** Intermediate
 * **First minimal step:** Enable the Adobe Experience Platform Edge and Adobe Journey Optimizer option in your Adobe Experience Platform Data Collection datastream.
 * **Success check:** Journey Optimizer inbound events are correctly handled by the Adobe Experience Platform Edge.
-* **Previous:** Need the correct permissions on Journey Optimizer campaigns before configuring the In-app channel: Get started with campaigns (campaigns/get-started-with-campaigns.md)
-* **Next:** Ready to create, configure, and send a first In-app message: Create an In-app notification in Journey Optimizer (in-app/create-in-app.md); Need to add datasets for reporting on the In-app channel: Configure Journey Optimizer reporting for experimentation (reports/reporting-configuration.md)
+* **Previous:** For the correct permissions on Journey Optimizer campaigns before configuring the In-app channel: Get started with campaigns (campaigns/get-started-with-campaigns.md)
+* **Next:** Ready to create, configure, and send a first In-app message: Create an In-app notification in Journey Optimizer (in-app/create-in-app.md); To add datasets for reporting on the In-app channel: Configure Journey Optimizer reporting for experimentation (reports/reporting-configuration.md)
 
 +++
 
