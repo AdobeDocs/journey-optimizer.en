@@ -56,6 +56,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I reuse a stopped web journey or campaign?** — No, once stopped you cannot edit or activate it again; you can only duplicate it and activate the duplicate.
 * **Q: What happens if two live journeys/campaigns affect the same page?** — All changes are applied, and if multiple journeys or campaigns update the same element(s), the highest priority journey/campaign takes precedence.
 
+**Personas:**
+
+* **marketer:** Can add a Web action to a journey or create a web campaign, then select or create a web configuration. Can edit content using the web designer or the non-visual editor, and preview it with Simulate content. Can select Publish to make a journey live or Activate to make a campaign live, and select Stop to end it. Where: "Create web experiences".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Create a journey.
+* **Success check:** The journey takes the Live status and becomes read-only, and each recipient can see the modifications added to the website.
+* **Previous:** Creating a web experience for the first time: Web channel prerequisites (web/web-prerequisites.md); Creating a journey before adding a Web action: Create your first journey (building-journeys/journey-gs.md)
+* **Next:** Monitoring the live web journey or campaign: Monitor your web experiences (web/monitor-web-experiences.md); Requesting approval before activating a campaign subject to an approval policy: Get started with journeys & campaigns approval (test-approve/gs-approval.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 494c17a0 -->

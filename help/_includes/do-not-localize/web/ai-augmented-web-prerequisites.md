@@ -59,6 +59,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why is web data missing from my reports?** — The dataset used in your web datastream must be included in your reporting configuration, and the required field groups must be present.
 * **Q: Do web campaigns affect my Engageable Profiles count?** — Yes, they target new profiles not previously engaged on other channels, increasing the Engageable Profiles count with possible cost implications if your contractual number is exceeded.
 
+**Personas:**
+
+* **admin:** Can configure the web channel using a client-side implementation with Web SDK version 2.16 or above, or using hybrid mode. Can install the Visual Editing Helper browser extension so the web designer works correctly in Google Chrome or Microsoft Edge. The page states that server-side only implementation is not currently supported for the Web channel. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Install the Adobe Experience Cloud Visual Editing Helper browser extension on Google Chrome or Microsoft Edge.
+* **Success check:** The Visual Editing Helper browser extension is correctly enabled in your browser's toolbar.
+* **Next:** You have a server-side only implementation for your web pages: Get started with code-based experiences (code-based/get-started-code-based.md); You are targeting pseudonymous profiles (unauthenticated visitors) with your web pages: Journey Optimizer guardrails and limitations (start/guardrails.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 69d3f246 -->

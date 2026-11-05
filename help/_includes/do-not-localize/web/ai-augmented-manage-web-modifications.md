@@ -54,6 +54,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is the difference between Set Content and Set Attribute?** — Set Content specifies the content placed into the element identified by the CSS Element Selector; Set Attribute associates an attribute name and value with the CSS selector, updating it if it already exists.
 * **Q: Can I undo changes?** — Yes, use the Undo/Redo button on the top right; click and hold to switch between Undo and Redo, then click to apply.
 
+**Personas:**
+
+* **marketer:** Can review, delete, and undo modifications applied to a web page from the Modifications pane. Can add a CSS Selector or Page head modification directly from the pane, using the Set Content or Set Attribute action. The page states that adding div tags or other elements to the head section might cause remaining head elements to pop into the body. Where: "Add modifications from the dedicated pane".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Select the Modifications icon to display the corresponding pane on the left.
+* **Success check:** You can review each of the changes you made to the page in the pane.
+* **Next:** Authoring a single-page application and applying modifications to other views: Author single-page applications (web/web-spa.md); Using the Advanced editing options for a Page head modification: Add personalization (personalization/personalization-build-expressions.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 44fbd25e -->
