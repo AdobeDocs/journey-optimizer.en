@@ -57,6 +57,16 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
 >[!ENDSHADEBOX]
 
+## November '26 updates {#nov-26-release-notes}
+
+### Integrations {#nov-26-integrations}
+
+* **Dynamic token substitution for Experience Manager fragments** - Use attribute paths such as `{{profile.person.name.firstName}}` directly in Experience Manager Content Fragments, with no token map needed. This works only for fragments added directly to a message, not for fragments served through Experience Decisioning. [Learn more](../integrations/aem-fragments.md#aem-attribute-paths)
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
+
+  Availability date: November 5, 2026
+
 ## October '26  release notes {#oct-26-release-notes}
 
 >[!BEGINSHADEBOX]
@@ -375,10 +385,6 @@ The following improvements are coming to campaigns in this release.
 ### Integrations {#oct-26-integrations}
 
 +++ Coming soon — **Information below is subject to change.**
-
-* **Dynamic token substitution for Experience Manager fragments** - Experience Manager Content Fragment references now support a **tokenSubstitution** attribute. When set to `false`, personalization inside the fragment's fields resolves directly, without a token map in the reference. It defaults to `true`, which keeps the existing behavior.
-
-  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
 
 * **AEM Managed Services content fragments support in Decisioning** - AEM Managed Services content fragments are now supported in Decisioning when managing decision items.
 
