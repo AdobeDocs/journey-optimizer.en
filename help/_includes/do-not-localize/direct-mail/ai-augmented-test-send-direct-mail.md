@@ -51,6 +51,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I ensure one file per day?** — Consider a 24-hour routing frequency (guarantees one file per day, but introduces delivery latency) or Wait Until Time of Day (can align profiles into the same export window, but results depend on journey timing); a 4-hour routing frequency provides the lowest latency but may generate multiple files per day.
 * **Q: How is a profile opted out of postal mail?** — When `consents.marketing.postalMail.val` is `n`, the profile is excluded; change it back to `y` to enable it again.
 
+**Personas:**
+
+* **marketer:** Can select Review to activate to validate and activate the direct mail campaign or journey. Can complete the configuration of the journey or campaign to send the direct mail message. The page states that errors prevent publishing until resolved, while warnings refer to recommendations and best practices. Where: "Validate & activate the direct mail campaign".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select Simulate content to preview the extraction file.
+* **Success check:** The simulate screen shows how the extraction file renders with sample data or a test profile.
+* **Previous:** Before testing, create the direct mail message and configure the extraction file: Create a direct mail message (direct-mail/create-direct-mail.md); Before testing, complete direct mail channel configuration: Direct mail configuration (direct-mail/direct-mail-configuration.md)
+* **Next:** After sending, measure the impact of the direct mail campaign: Campaign report (reports/campaign-global-report-cja-direct.md); After sending, measure the impact of the direct mail journey: Journey report (reports/journey-global-report-cja-direct.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 9e7dd687 -->
