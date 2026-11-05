@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Create anonymous landing pages
+title: Create public landing pages
 description: Learn how to create public landing pages that anonymous visitors can access and use to submit data in Journey Optimizer
 badge: label="Limited Availability" type="Informative"
 feature: Landing Pages
@@ -10,7 +10,7 @@ role: User
 level: Intermediate
 keywords: landing, landing page, anonymous, public, form, data capture, cloudflare
 ---
-# Create anonymous landing pages {#lp-anonymous}
+# Create public landing pages {#lp-anonymous}
 
 >[!BEGINSHADEBOX]
 
@@ -20,15 +20,15 @@ keywords: landing, landing page, anonymous, public, form, data capture, cloudfla
 
 >[!AVAILABILITY]
 >
->Anonymous landing pages are available in Limited Availability. Contact your Adobe representative to request access.
+>Public landing pages are available in Limited Availability. Contact your Adobe representative to request access.
 
-Landing pages are usually displayed to a visitor who clicks a personalized link, for example from an email, so that the visitor's profile can be identified when the page loads. With anonymous landing pages, you can also publish a landing page on a **public URL** that anyone can open. Visitors can then fill in a form on the page and submit data.
+Landing pages are usually displayed to a visitor who clicks a personalized link, for example from an email, so that the visitor's profile can be identified when the page loads. With public landing pages, you can also publish a landing page on a **public URL** that anyone can open. Visitors can then fill in a form on the page and submit data.
 
 You can share the public URL anywhere, such as in emails, SMS messages, or on your website, and use it for external marketing campaigns.
 
 ## Key characteristics {#lp-anonymous-characteristics}
 
-|  | Data Capture landing pages for known profiles | Anonymous landing pages (Data Capture) |
+|  | Landing pages for known profiles | Public landing pages |
 | --- | --- | --- |
 | **Access** | Visitors typically open the page from a personalized link. | Anyone with the URL can open the page. |
 | **Form data** | Written to a profile-enabled or non-profile-enabled dataset, for known profiles. | Written to a **non-profile enabled** dataset only. |
@@ -39,11 +39,11 @@ You can share the public URL anywhere, such as in emails, SMS messages, or on yo
 
 >[!NOTE]
 >
->Data submitted through an anonymous landing page is stored in a dataset, not in a profile. It is up to you to decide how to use this data outside of [!DNL Journey Optimizer].
+>Data submitted through a public landing page is stored in a dataset, not in a profile. It is up to you to decide how to use this data outside of [!DNL Journey Optimizer].
 
 ## Before you start {#lp-anonymous-prerequisites}
 
-Before creating an anonymous landing page, make sure that:
+Before creating a public landing page, make sure that:
 
 * The subdomain you want to use for your landing pages has been [migrated to Cloudflare](lp-subdomains.md#lp-migrate-cloudflare). This applies when you reuse a landing page subdomain that you already configured.
 * A [landing page preset](lp-presets.md#lp-create-preset) exists for that subdomain.
@@ -53,9 +53,9 @@ Before creating an anonymous landing page, make sure that:
 
 <!-- TBC (engineering): what happens for a new subdomain (not an existing one)? Is the Cloudflare migration still required? PRD lists custom domain hosting as a non-goal for v1. -->
 
-## Create an anonymous landing page {#lp-anonymous-create}
+## Create a public landing page {#lp-anonymous-create}
 
-An anonymous landing page is created like any other landing page, with a few specific settings: the page must be accessible to anonymous visitors, and the form it contains must store data in a non-profile enabled dataset. To create one, follow the steps below.
+A public landing page is created like any other landing page, with a few specific settings: the page must be accessible to anonymous visitors, and the form it contains must store data in a non-profile enabled dataset. To create one, follow the steps below.
 
 1. Browse to **[!UICONTROL Content Management]** > **[!UICONTROL Landing pages]** from the left menu, then click **[!UICONTROL Create landing page]**.
 
@@ -99,21 +99,21 @@ An anonymous landing page is created like any other landing page, with a few spe
 
 Once the landing page is published, anyone can access it from its URL. To check that it is public, copy and paste the URL into a browser window.
 
-![Anonymous landing page URL](assets/lp_anonymous-share-url.png)
+![Public landing page URL](assets/lp_anonymous-share-url.png)
 
 Add the URL wherever you need it, such as in an email, an SMS message, or on your website. To track clicks from a message, [add tracking parameters](../email/message-tracking.md#insert-links) to the URL.
 
-<!-- TBC (PM): confirm that UTM/tracking parameters can be appended for anonymous landing pages (PRD section 7.3) and whether any anonymous visit tracking is available. -->
+<!-- TBC (PM): confirm that UTM/tracking parameters can be appended for public landing pages (PRD section 7.3) and whether any anonymous visit tracking is available. -->
 
 When visitors submit the form, the data is sent to the dataset defined in the form preset. Allow up to 15 minutes for the data to be processed and available for use.
 
 ## Guardrails and limitations {#lp-anonymous-limitations}
 
-* Form data can only be stored in **non-profile enabled** datasets. Anonymous landing pages cannot create or enrich profiles.
-* Reporting is not supported for anonymous landing pages.
-* [Managing allowed IPs](../configuration/waf-ip-allowlist.md) is not supported for subdomains used for anonymous landing pages.
-* As for other landing pages, anonymous landing pages cannot be [copied to another sandbox](../configuration/copy-objects-to-sandbox.md) using Sandbox tooling.
-* Because anonymous visitors are not identified, do not use personalization based on profile data in the content of an anonymous landing page.
+* Form data can only be stored in **non-profile enabled** datasets. Public landing pages cannot create or enrich profiles.
+* Reporting is not supported for public landing pages.
+* [Managing allowed IPs](../configuration/waf-ip-allowlist.md) is not supported for subdomains used for public landing pages.
+* As for other landing pages, public landing pages cannot be [copied to another sandbox](../configuration/copy-objects-to-sandbox.md) using Sandbox tooling.
+* Because anonymous visitors are not identified, do not use personalization based on profile data in the content of a public landing page.
 
     <!-- TBC (engineering): the architecture draft states that pages containing personalization attributes are classified as personalized and are never cached by the CDN. Confirm what happens if profile attributes are used in an anonymous page. -->
 

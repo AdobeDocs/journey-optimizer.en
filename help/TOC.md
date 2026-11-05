@@ -533,7 +533,7 @@ nudge: yes
   + Landing pages {#landing-pages}
     + [Get started with landing pages](using/landing-pages/get-started-lp.md)
     + [Create a landing page](using/landing-pages/create-lp.md)
-    + [Create anonymous landing pages](using/landing-pages/lp-anonymous.md)
+    + [Create public landing pages](using/landing-pages/lp-anonymous.md)
     + [Manage your landing pages](using/landing-pages/manage-lp.md)
     + Design content {#landing-pages-design}
       + [Design content](/help/rp_landing_pages/landing-pages-design-landing-page.md)

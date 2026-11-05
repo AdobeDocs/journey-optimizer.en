@@ -104,9 +104,9 @@ To create a form preset, follow the steps below.
     >
     >Currently only **Profile-enabled** and **Non-Profile-enabled** [!DNL Adobe Experience Platform] datasets are available for selection. One dataset can be selected at a time. System datasets cannot be used for saving form data. [Learn more on datasets](../data/get-started-datasets.md)
 
-1. To use forms in [anonymous landing pages](lp-anonymous.md), select a **Non-Profile-enabled** dataset. Anonymous landing pages cannot store data in profile-enabled datasets.
+1. To use forms in [public landing pages](lp-anonymous.md), select a **Non-Profile-enabled** dataset. Public landing pages cannot store data in profile-enabled datasets.
 
-    <!-- TBC (engineering): confirm whether the UI blocks profile-enabled datasets for anonymous landing pages or only the page/form validation does, and at which step (preset, form or landing page). -->
+    <!-- TBC (engineering): confirm whether the UI blocks profile-enabled datasets for public landing pages or only the page/form validation does, and at which step (preset, form or landing page). -->
 
 1. Click **[!UICONTROL Publish]**. Your preset is now ready to be used in a form.
 
@@ -144,7 +144,7 @@ To create a form, follow the steps below.
 
     >[!NOTE]
     >
-    >If you plan to use the form in an [anonymous landing page](lp-anonymous.md), select a preset linked to a **Non-Profile-enabled** dataset.
+    >If you plan to use the form in an [public landing page](lp-anonymous.md), select a preset linked to a **Non-Profile-enabled** dataset.
 
 1. Click **[!UICONTROL Create]**. The form designer opens, which enables you to add structures and content [components](../email/content-components.md#add-content-components) to build your content. You can use [Text](../email/content-components.md#text) and **[!UICONTROL Field]** components.
 
@@ -188,7 +188,7 @@ To map the collected data with a Profile, select a profile identity field. The i
 
 >[!NOTE]
 >
->This does not apply to forms used in [anonymous landing pages](lp-anonymous.md): submissions are stored in a non-profile enabled dataset and are not mapped to a profile.
+>This does not apply to forms used in [public landing pages](lp-anonymous.md): submissions are stored in a non-profile enabled dataset and are not mapped to a profile.
 
 <!-- TBC (engineering): confirm that no identity field is required for forms linked to a non-profile enabled dataset, and whether the PII/restricted field guardrails from the PRD apply. -->
     
@@ -322,7 +322,7 @@ You can now embed this form into a landing page in order to capture data corresp
 
 >[!NOTE]
 >
->To use a form in an [anonymous landing page](lp-anonymous.md), the form must be created from a preset linked to a **non-profile enabled** dataset.
+>To use a form in an [public landing page](lp-anonymous.md), the form must be created from a preset linked to a **non-profile enabled** dataset.
 
 Once your landing page is [published](create-lp.md#publish-landing-page) and used in a journey, when users fills in the form, the information entered is ingested into the selected dataset. Allow up to 15 minutes for the data to be processed and available for use.
 
