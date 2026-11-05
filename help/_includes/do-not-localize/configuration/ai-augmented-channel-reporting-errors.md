@@ -69,6 +69,17 @@ For complete understanding, this information should be combined with the documen
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
 * Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
+**Personas:**
+
+* **admin:** Can fix CJMRT, CJMIAS, and CJMRPS errors when managing custom channel credentials, publishing inbound actions, and adding reporting datasets. The page states that Journey Optimizer supports a maximum of 500 active inbound actions across live campaigns and journeys. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select or create a dataset that includes the Experience Event - Proposition Interactions field group, plus Application Details, Commerce Details, or Web Details.
+* **Success check:** Open the list of datasets in Administration, Configurations, Reporting, Manage to confirm the dataset has been added.
+* **Previous:** Before adding datasets to the reporting configuration: Configure Journey Optimizer reporting for experimentation (reports/reporting-configuration.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 715accb2 -->
