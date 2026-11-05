@@ -176,8 +176,6 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 28, 2026
 
-+++ 
-
 ### Journeys {#oct-26-journeys}
 
 <table>
