@@ -55,6 +55,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I use an Adobe Target JSON mbox response?** — Fetch it with externalDataLookup, extract the mbox with valueAtPath, then parse options.content with parseJson before accessing nested fields.
 * **Q: How do I render an Adobe Target HTML mbox response?** — Fetch and extract the mbox, then render content directly with triple braces; skip parseJson.
 
+**Personas:**
+
+* **marketer:** Can apply configured integrations to personalize Text or HTML content using Add personalization. Can chain one integration's response into another, mapping first-call output to second-call input in Pills mode or through a Let variable. Can use Adobe Target Recommendations by fetching the response with externalDataLookup, extracting the mbox with valueAtPath, and parsing content with parseJson. Where: "Apply integration personalization to your content".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Access your campaign content and select Add personalization from your Text or HTML Components.
+* **Success check:** The page states that your integration personalization is applied, giving each recipient a tailored, relevant experience based on configured attributes.
+* **Previous:** Confirming an integration is configured and activated before using it in content: Enable External Integrations (integrations/integrations.md); Adding personalization from Text or HTML Components: Use Email Designer content components (email/content-components.md)
+* **Next:** Reviewing the Adobe Target Recommendations sample for Target Delivery API configuration steps: Vendor Integration (integrations/vendor-integration.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 39ffe68f -->
