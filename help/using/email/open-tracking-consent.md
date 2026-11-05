@@ -231,6 +231,18 @@ Before enabling the option, note that:
     >
     >For the safest rollout, enable the option first, then create and publish a new campaign that uses the updated configuration. Validate the behavior with controlled test profiles before sending to production audiences.
 
+## Apply the option to existing messages {#existing-messages}
+
+You can turn on **[!UICONTROL Honor open tracking consent]** at any time. You do not need to edit the email activities in your journeys and campaigns. What you need to do for messages that already exist depends on the message type.
+
+| Message type | What to do |
+|---|---|
+| **Transactional messages** (journeys or campaigns that use a transactional channel configuration) | Republish them once after you turn on the option. Until they are republished, the open tracking consent is not honored for them. |
+| **Marketing campaigns: scheduled** | No action needed. The setting applies to the next scheduled send. |
+| **Marketing campaigns: send already in progress** | The setting does not apply to that send, which finishes with the previous setting. If you need the new setting, stop the send and start a new one. |
+| **Marketing journeys: event-based** | No action needed. The setting applies to emails sent after the change, usually within a few minutes. |
+| **Marketing journeys: read audience** | A run already in progress does not pick up the change and finishes with the previous setting. For future runs, republish the journey after you turn on the option. |
+
 ## Validate before going live {#validate}
 
 After you [verify the merged profile data](#verify-profile), use controlled test profiles to validate the send behavior for each case:
