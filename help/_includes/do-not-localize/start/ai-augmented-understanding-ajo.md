@@ -47,6 +47,20 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can Journey Optimizer be used on its own?** — Yes, it can operate as a standalone application or interoperate with other Adobe Experience Platform-native applications.
 * **Q: What core services does Journey Optimizer share with Adobe Experience Platform?** — Real-Time Customer Profile, Identity Graph, data governance, and query services.
 
+**Personas:**
+
+* **admin:** Can manage users, configure sandboxes, set up channels, and handle privacy requests. The page states that Administration and Privacy controls ensure compliance throughout the continuous cycle. Where: "Key functional areas".
+* **developer:** Can structure customer data into schemas and datasets within the Data Platform. Can import data from CRM platforms, websites, mobile apps, and cloud storage using pre-built connectors. Can merge data from multiple sources, such as email interactions, in-store purchases, and web behavior, into unified profiles. Where: "Adobe Experience Platform: the foundation".
+* **marketer:** Can author and personalize messages for any channel using a built-in visual designer, reusable templates, and a centralized asset library. Can automate sequences of interactions as journeys or schedule one-time targeted messages as campaigns. The page states that real-time decisioning logic selects the best offer for each individual. Where: "Adobe Journey Optimizer: the orchestration engine".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Use the free Journey Optimizer tutorials and a training sandbox to practice the five concepts.
+* **Success check:** You can practice the five concepts without touching production data.
+* **Previous:** You want to learn about Journey Optimizer's key capabilities first: Journey Optimizer (start/get-started.md); You need definitions of the key terms used on this page: Key terminology (start/terminology.md)
+* **Next:** You are not sure who sets up what in Journey Optimizer: Roles and responsibilities | Adobe Journey Optimizer (start/quick-start.md); You need implementation considerations before you build: Journey Optimizer guardrails and limitations (start/guardrails.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 81d3cc51 -->

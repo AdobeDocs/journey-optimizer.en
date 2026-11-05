@@ -51,6 +51,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Who can delete or organize tags?** — Administrators can delete tags and organize them by categories using the Tags menu under ADMINISTRATION.
 * **Q: Are tags kept when I duplicate an object or create a new version?** — Yes. If you duplicate or create a new version of an object, tags are preserved.
 
+**Personas:**
+
+* **marketer:** Can select multiple items in the Campaigns, Fragments, Journeys, and Templates lists to apply bulk actions. Can choose operations including Add to package, Move to folder, Edit tags, Manage access, Archive, or Delete, plus bulk Pause and Resume for journeys. The page states that Archive is available for Fragments and Templates, and Delete is available for Campaigns and Journeys. Where: "Bulk actions".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Enter a keyword in the unified search bar to display top results.
+* **Success check:** Top results display, and pressing Enter accesses all results filtered by business object.
+* **Next:** Export selected items to another sandbox: Copy Journey Optimizer objects between sandboxes (configuration/copy-objects-to-sandbox.md); Apply access labels to selected items: Object level access control (administration/object-based-access.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: f8e69ac4 -->

@@ -54,6 +54,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Does Send-Time Optimization track engagement?** — No; it is not a tracking feature. It optimizes send times for Email and Push actions and the Wait activity in journeys (not campaigns), and must be enabled by Adobe.
 * **Q: Can I control how tracking data is used across my organization?** — Yes; apply data governance labels to tracked data and create policies that restrict its usage, and Journey Optimizer automatically enforces these policies and blocks publication when they are violated.
 
+**Personas:**
+
+* **marketer:** Can track customer interactions across email, web, push, in-app, mobile messages, code-based experiences, content cards, and landing pages. Can configure success metrics, analyze journey step events, monitor custom actions, and track optimization, targeting, and decisioning performance. The page states that web tracking requires selecting elements to track when authoring the web page. Where: "Track customer interactions by channel".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Check the live report to see near-real-time delivery and engagement data for the last 24 hours.
+* **Success check:** You can observe near-real-time delivery and engagement data for the last 24 hours.
+* **Next:** Track custom KPIs aligned with your business objectives: Publish the journey (building-journeys/success-metrics.md); Access live and historical reports for your journeys and campaigns: Get started with reporting capabilities in [!DNL Adobe Journey Optimizer] (reports/gs-reports.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 6a7b4a7e -->

@@ -51,6 +51,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I know which authentication method to choose?** — Choose API Key to send a single credential with each request, or choose OAuth 2.0 to use a token-based protocol better suited to enterprise and third-party APIs; OAuth 2.0 also requires Client ID, Client Secret, and Token URL.
 * **Q: How can I track the status of imported items?** — The workspace overview shows KPIs for Total emails or Total journeys, In Progress, Migrated, and Failed, and you can combine Status, Created, and Updated filters to narrow the list.
 
+**Personas:**
+
+* **marketer:** Can import email content by uploading HTML files or browsing from a connection to the source platform. Can add a Subject line and map each personalization placeholder to a profile attribute, then select Migrate. The page states that email content HTML files must be in .html or .htm format and no larger than 10 MB. Where: "Import Email content".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** In the workspace, select Manage connections.
+* **Success check:** Once the connection is set up, the advanced menu becomes available to delete it or mark it as default for future imports.
+* **Previous:** For the required roles and permissions before using the migration workspace: Manage users and roles (administration/permissions.md)
+* **Next:** To learn more about content templates after migrating email content: Use content templates (content-management/use-content-templates.md); To learn more about creating journeys after migrating journeys: Create your first journey (building-journeys/journey-gs.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: ba41d81d -->

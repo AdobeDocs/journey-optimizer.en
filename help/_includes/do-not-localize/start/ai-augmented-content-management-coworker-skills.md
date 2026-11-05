@@ -43,6 +43,17 @@ For complete understanding, this information should be combined with the documen
 * **Can a fragment be cloned under a new name?** Yes, cloning an existing fragment under a new name is a supported capability.
 * **What should I do before asking Coworker to publish a fragment?** Review the fragment's content after creating or updating it, before asking Coworker to publish it.
 
+**Personas:**
+
+* **marketer:** Can create a new content template or fragment for a channel, and fully replace the content of an existing template using natural language prompts. Can update, clone, and publish fragments, and update one channel variant on a campaign or journey action node's inline message. The page states that update operations replace content in full, so the complete HTML body or variant content must be provided. Where: "Content Management tools".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Provide the template, fragment, landing page, or campaign/journey ID when asking to get, update, clone, or publish a specific asset.
+* **Success check:** The fragment's content can be reviewed after creating or updating it, before asking Coworker to publish it.
+* **Previous:** overview of Coworker skills across Journeys, Loyalty, Content Management, and Decisioning in Journey Optimizer: Work with AI (start/ai-features.md)
+
 +++
 
 <!-- ai-section-version: 3 | source-hash: d4390534 -->

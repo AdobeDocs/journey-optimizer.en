@@ -66,6 +66,18 @@ For complete understanding, this information should be combined with the documen
 * **Does Quick Simulation replace manual simulation?** No. It provides a fast, automated sanity check; use the manual simulation experience for granular control over simulated users and scenarios.
 * **Does Journey Create support cross-journey orchestration?** No. Journey Create does not support cross-journey orchestration.
 
+**Personas:**
+
+* **marketer:** Can build and configure marketing journeys from natural language prompts, including event-triggered, audience-targeted, and conditional journey flows, using Journey Create. Can create a journey from an uploaded reference image through Journey Create. The page states that Journey Create does not support cross-journey orchestration, A/B testing configuration, or custom action field mapping. Where: "Journey Create".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Describe your journey goals, target audience, and desired actions in a prompt to Journey Create.
+* **Success check:** The prompt is translated into a structured journey configuration in Journey Optimizer.
+* **Previous:** For an overview of Coworker skills across Journeys, Loyalty, Content Management, and Decisioning in Journey Optimizer: Work with AI (start/ai-features.md)
+* **Next:** For granular control over simulated users and scenarios beyond Quick Simulation: Simulate your journey (building-journeys/simulate-journey-gs.md)
+
 +++
 
 <!-- ai-section-version: 6 | source-hash: 695594e5 -->
