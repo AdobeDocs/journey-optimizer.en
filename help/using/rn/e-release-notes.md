@@ -51,7 +51,9 @@ The following capabilities and improvements are coming to journeys in this relea
 </tbody>
 </table>
 
-* **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity. <!-- Documentation link: TBD -->
+<!-- HELD: scope to confirm (CJM-165835 covers Dry-Run journeys only; no DOCAC task).
+* **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
+-->
 
 ### Decisioning {#nov-26-decisioning}
 
