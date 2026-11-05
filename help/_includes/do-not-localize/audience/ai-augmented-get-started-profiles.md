@@ -48,6 +48,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where do I monitor the Engageable Profiles count?** — From Administration > License Usage.
 * **Q: Why is my Profiles dashboard not visible?** — If your organization has no active Profile datasets or merge policies yet, the dashboard is not shown and the Overview tab displays links to Adobe Experience Platform documentation.
 
+**Personas:**
+
+* **marketer:** Can monitor the organization's Engageable Profiles count from Administration, License Usage. The page states that the count reflects unique profiles engaged over a 12-month rolling window. The page states that the count is counted once per sandbox even when a profile enters multiple journeys or campaigns. Where: "Engageable Profiles and license usage".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Navigate to the Customer, Profiles menu in the left navigation pane to access profiles.
+* **Success check:** The Profiles dashboard shows a complete view of each individual customer built from combined data fragments.
+* **Previous:** Set up data ingestion so profiles are automatically created or updated in Adobe Experience Platform: Get started with data management in Journey Optimizer (data/gs-data.md)
+* **Next:** Learn more about the License Usage dashboard after monitoring the Engageable Profiles count: License usage dashboard (audience/license-usage.md); Review inbound channel guardrails for setting a Time-To-Live to manage the Engageable Profiles count: Journey Optimizer guardrails and limitations (start/guardrails.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 7ab96294 -->

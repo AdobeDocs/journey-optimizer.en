@@ -49,6 +49,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How often are audiences refreshed?** — It depends on the evaluation type: streaming updates in real time, batch refreshes every 24 hours, and edge is evaluated instantaneously on the edge.
 * **Q: Does using an audience affect my license metric?** — Yes; profiles engaged through an audience activation count toward the Engageable Profiles metric, each counted once per sandbox over a rolling 12-month window.
 
+**Personas:**
+
+* **marketer:** Can create audiences using segment definitions, custom upload, audience composition, or Federated Audience Composition. Can build segment definitions with Streaming Segmentation, Batch Segmentation, or Edge Segmentation as the evaluation type. The page states that batch segmentation audiences refresh every 24 hours, so newly qualified members may not appear until the next snapshot. Where: "Audiences types".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select Customer, then Audiences, to browse available audiences.
+* **Success check:** The dashboard visually shows overlaps between audiences and highlights trends such as audience size changes over time.
+* **Next:** Create a new audience definition using Adobe Experience Platform Segmentation Service: Build segment definitions (audience/creating-a-segment-definition.md); Select audiences when building journeys or creating campaigns: About Adobe Experience Platform audiences (audience/target-audiences.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: bbdd91cc -->

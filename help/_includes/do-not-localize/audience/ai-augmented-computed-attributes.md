@@ -41,6 +41,17 @@ For complete understanding, this information should be combined with the documen
 - **Q: Where can I use computed attributes in Journey Optimizer?** — In Condition activities (journey splitting), audience creation, and the personalization editor.
 - **Q: What is a lookback period?** — The time window used to scope the aggregation rule, e.g. "sum of purchases in the last 3 weeks."
 
+**Personas:**
+
+* **marketer:** Can use computed attributes to personalize message content, create new audiences, and split a journey's path with a Condition activity. Can display the most recently viewed item for each profile in an email. The page states that computed attributes must be added to the Adobe Experience Platform data source before they can be used in Journey Optimizer. Where: "Use computed attributes in Journey Optimizer".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Browse to the Computed attributes tab in the Profiles menu located on the left hand-side.
+* **Success check:** Computed attributes are now available for use in Journey Optimizer.
+* **Next:** Add computed attributes to the Adobe Experience Platform data source before using them in Journey Optimizer: Adobe Experience Platform data source (datasource/adobe-experience-platform-data-source.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 5c9a5633 -->
