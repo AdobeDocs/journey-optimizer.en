@@ -257,6 +257,8 @@ The first name resolves from the profile, and `promoCode` comes from the token m
 
 AEM Content Fragments can also be used as offer item attributes in **Experience Decisioning**. By mapping Content Fragment fields to decision item attributes, you can use Journey Optimizer decisioning models, formulas, and ranking criteria to optimize which fragment is served to each profile.
 
+Attribute paths written directly inside Experience Manager fragments, such as `{{profile.person.name.firstName}}`, are not supported for fragments served through Experience Decisioning. Learn more in [Use attribute paths in Content Fragments](#aem-attribute-paths).
+
 >[!NOTE]
 >
 >AEM Content Fragments in Decisioning are available to customers integrating Adobe Experience Manager **as a Cloud Service** or **Managed Services** with Adobe Journey Optimizer. [Learn more](aem-fragments-gs.md)
