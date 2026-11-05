@@ -24,7 +24,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Public landing page:** a Data Capture landing page published on a public URL that anyone can open, without being identified. Visitors can fill in a form on the page and submit data.
 * **Data Capture landing page:** the only type of landing page that lets you embed a specific form, and therefore the type used for public landing pages.
-* **Non-profile enabled dataset:** the only type of dataset in which data submitted through a public landing page can be stored.
+* **Non-profile enabled dataset:** the type of dataset that is strongly recommended to store data submitted through a public landing page. With a profile-enabled dataset, many lead profiles might be created unnecessarily and existing profiles might be corrupted.
 * **Require identified users** *(product-specific)*: the option that restricts access to identified profiles when enabled. It must be disabled for the page to be accessible to anonymous visitors.
 * **Cloudflare migration:** the migration of a landing page subdomain to Cloudflare, required to use public landing pages when you reuse a landing page subdomain that you already configured.
 * **Landing page preset:** the configuration object, linked to a subdomain, from which a landing page is created.
@@ -33,8 +33,8 @@ For complete understanding, this information should be combined with the documen
 **Guardrails**
 
 * Public landing pages are available in Limited Availability; contact your Adobe representative to request access.
-* The landing page subdomain must be migrated to Cloudflare, a landing page preset must exist for that subdomain, and a form linked to a non-profile enabled dataset must be created and published from a form preset.
-* Form data can only be stored in non-profile enabled datasets; public landing pages cannot create or enrich profiles.
+* The landing page subdomain must be migrated to Cloudflare, a landing page preset must exist for that subdomain, and a form, preferably linked to a non-profile enabled dataset, must be created and published from a form preset.
+* Form data should be stored in non-profile enabled datasets; public landing pages are not meant to create or enrich profiles, which can happen with a profile-enabled dataset.
 * Reporting is not supported for public landing pages.
 * Managing allowed IPs is not supported for subdomains used for public landing pages.
 * Public landing pages cannot be copied to another sandbox using Sandbox tooling.
@@ -51,7 +51,7 @@ For complete understanding, this information should be combined with the documen
 * **Who can open a public landing page?** Anyone with the URL.
 * **Which type of landing page must I select?** Data Capture, as only Data Capture landing pages let you embed a specific form.
 * **Where is the data submitted by visitors stored?** In the non-profile enabled dataset defined in the form preset, not in a profile.
-* **Do submissions create or enrich profiles?** No.
+* **Do submissions create or enrich profiles?** Not with a non-profile enabled dataset, which is strongly recommended. With a profile-enabled dataset, lead profiles might be created unnecessarily and existing profiles might be corrupted.
 * **Which option must be disabled so that anonymous visitors can access the page?** The **[!UICONTROL Require identified users]** option.
 * **Do I need to migrate my landing page subdomain to Cloudflare?** Yes, when you reuse a landing page subdomain that you already configured.
 * **Can I use allowed IPs with a public landing page?** No, managing allowed IPs is not supported for subdomains used for public landing pages.

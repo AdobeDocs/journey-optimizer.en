@@ -72,7 +72,11 @@ Use landing pages when you want to:
 >
 >Data capture through landing page forms is supported for **known profiles** (existing profiles identified in [!DNL Adobe Experience Platform]). The landing page should be opened from a **personalized link** (for example from an email campaign) so the profile identity can be resolved when the page loads.
 >
->Data Capture landing pages can also be published on a public URL to capture data from anonymous visitors. In that case, the data is stored in a non-profile enabled dataset and does not enrich any profile. [Learn more](lp-anonymous.md)
+>Data Capture landing pages can also be published on a public URL to capture data from anonymous visitors. In that case, use a non-profile enabled dataset (strongly recommended), so that the data does not create or enrich any profile. [Learn more](lp-anonymous.md)
+
+>[!IMPORTANT]
+>
+>The forms you embed in Data Capture landing pages must include the fields that are required by the schema of the dataset, so that the submitted data can be ingested. Do not override the mandatory fields in the form configuration: this leads to ingestion failure.
 
 The following are example use cases:
 

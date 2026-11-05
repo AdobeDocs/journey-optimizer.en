@@ -10,7 +10,7 @@ role: User
 level: Intermediate
 keywords: landing, landing page, anonymous, public, form, data capture, cloudflare
 ---
-# Create public landing pages {#lp-anonymous}
+# Use public landing pages {#lp-anonymous}
 
 >[!BEGINSHADEBOX]
 
@@ -31,31 +31,41 @@ You can share the public URL anywhere, such as in emails, SMS messages, or on yo
 |  | Landing pages for known profiles | Public landing pages |
 | --- | --- | --- |
 | **Access** | Visitors typically open the page from a personalized link. | Anyone with the URL can open the page. |
-| **Form data** | Written to a profile-enabled or non-profile-enabled dataset, for known profiles. | Written to a **non-profile enabled** dataset only. |
-| **Profile creation** | Not applicable. Submissions enrich existing profiles. | Submissions do not create or enrich profiles. |
+| **Form data** | Data is written to a profile-enabled or non-profile enabled dataset. | Adobe strongly recommends writing to a **non-profile enabled** dataset. |
+| **Profile** | Submissions enrich existing profiles. | With a non-profile enabled dataset, submissions do not create or enrich profiles. |
 | **Subdomain** | Subdomain delegated to Adobe. | Subdomain [migrated to Cloudflare](lp-subdomains.md#lp-migrate-cloudflare). |
-
-<!-- TBC (PM): confirm the form-data row of the known-profiles column against lp-forms.md before publishing. -->
 
 >[!NOTE]
 >
->Data submitted through a public landing page is stored in a dataset, not in a profile. It is up to you to decide how to use this data outside of [!DNL Journey Optimizer].
+>Data submitted through a public landing page is stored in a dataset. With a non-profile enabled dataset, it isn't added to any profile. It is up to you to decide how to use this data outside of [!DNL Journey Optimizer].
 
 ## Before you start {#lp-anonymous-prerequisites}
 
 Before creating a public landing page, make sure that:
 
 * The subdomain you want to use for your landing pages has been [migrated to Cloudflare](lp-subdomains.md#lp-migrate-cloudflare). This applies when you reuse a landing page subdomain that you already configured.
-* A [landing page preset](lp-presets.md#lp-create-preset) exists for that subdomain.
-* A [form preset](lp-forms.md#create-form-preset) linked to a **non-profile enabled** dataset exists, and a [form](lp-forms.md#create-form) has been created and published from that preset.
-
-<!-- TBC (PM/engineering): PM feedback: the form must include all the mandatory fields of the dataset, otherwise publishing the form fails. PM to confirm with engineering before documenting. -->
 
 <!-- TBC (engineering): what happens for a new subdomain (not an existing one)? Is the Cloudflare migration still required? PRD lists custom domain hosting as a non-goal for v1. -->
 
+* A [landing page preset](lp-presets.md#lp-create-preset) exists for that subdomain.
+
+* A [form preset](lp-forms.md#create-form-preset) linked to a dataset exists.
+
+    >[!IMPORTANT]
+    >
+    >Adobe strongly recommends using a **non-profile enabled** dataset for public landing pages.
+    >
+    >With a profile-enabled dataset, many lead profiles might be created unnecessarily and existing profiles might be corrupted.
+
+* A [form](lp-forms.md#create-form) has been created and published from that preset.
+
+    >[!CAUTION]
+    >
+    >The form must include the fields required by the dataset schema. Do not override these mandatory fields in the form configuration, as this causes ingestion to fail.
+
 ## Create a public landing page {#lp-anonymous-create}
 
-A public landing page is created like any other landing page, with a few specific settings: the page must be accessible to anonymous visitors, and the form it contains must store data in a non-profile enabled dataset. To create one, follow the steps below.
+A public landing page is created like any other landing page, with a few specific settings: the page must be accessible to anonymous visitors, and the form it contains should store data in a non-profile enabled dataset. To create one, follow the steps below.
 
 1. Browse to **[!UICONTROL Content Management]** > **[!UICONTROL Landing pages]** from the left menu, then click **[!UICONTROL Create landing page]**.
 
@@ -81,15 +91,17 @@ A public landing page is created like any other landing page, with a few specifi
 
 1. Drag and drop a **[!UICONTROL Structure]** component into your content, then a **[!UICONTROL Form]** component into that structure.
 
-1. In the **[!UICONTROL Embed form]** section, select a published form that is linked to a non-profile enabled dataset.
+1. In the **[!UICONTROL Embed form]** section, select a published form, preferably linked to a **non-profile enabled dataset**.
+
+    >[!NOTE]
+    >
+    >Adobe does not recommend using a form linked to a profile-enabled dataset as it may create unnecessary profiles and corrupt data.
 
     ![Embed form section with a published form selected](assets/lp_anonymous-embed-form.png)
 
 1. In the **[!UICONTROL Follow up type]** section, define what happens when visitors submit the form. [Learn more](lp-forms.md#leverage-form-in-lp)
 
 1. Optionally, define a page expiry date, and the action that happens when the page expires. [Learn more](create-lp.md#configure-primary-page)
-
-    <!-- TBC (engineering): the PRD describes expired pages as publicly reachable with limited functionality (error page, submit button disabled). Confirm the behavior for anonymous pages before documenting. -->
 
 1. Click **[!UICONTROL Save]**, then use **[!UICONTROL Preview & test]** to test your page. [Learn how](create-lp.md#test-landing-page)
 
@@ -109,7 +121,7 @@ When visitors submit the form, the data is sent to the dataset defined in the fo
 
 ## Guardrails and limitations {#lp-anonymous-limitations}
 
-* Form data can only be stored in **non-profile enabled** datasets. Public landing pages cannot create or enrich profiles.
+* Store form data in **non-profile enabled** datasets. Public landing pages are not meant to create or enrich profiles, which can happen with a profile-enabled dataset, and lead to unintended profile creation and data corruption.
 * Reporting is not supported for public landing pages.
 * [Managing allowed IPs](../configuration/waf-ip-allowlist.md) is not supported for subdomains used for public landing pages.
 * As for other landing pages, public landing pages cannot be [copied to another sandbox](../configuration/copy-objects-to-sandbox.md) using Sandbox tooling.
