@@ -75,6 +75,18 @@ For complete understanding, this information should be combined with the documen
 * In-app triggers: Learn how to create an In-app message (in-app/create-in-app.md)
 * Next step, content: Edit the Action campaign content (campaigns/campaign-content.md)
 
+**Personas:**
+
+* **marketer:** Can select an inbound action, such as Code-based experience, In-app message, Content Card, or Web. Can use the Add action button to add up to 10 inbound actions in one campaign. The page states that once the campaign is live, all actions are activated simultaneously. Where: "Add multiple inbound actions".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select an inbound action, such as Code-based experience, In-app message, Content Card, or Web, from the Actions section.
+* **Success check:** Once the campaign is live, all actions are activated simultaneously.
+* **Previous:** A channel configuration must be defined by a System Administrator before it can be selected: Set up channel configurations (configuration/channel-surfaces.md); For details on supported channels before choosing one for the action: Get started with communication channels in [!DNL Adobe Journey Optimizer] (channels/gs-channels.md)
+* **Next:** The campaign action is ready: Edit the Action campaign content (campaigns/campaign-content.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 28547d42 -->

@@ -60,6 +60,18 @@ For complete understanding, this information should be combined with the documen
 * Reports for the campaign: Campaign report (reports/campaign-global-report-cja.md)
 * Trigger the campaign execution through APIs: Execute an API triggered campaign (campaigns/trigger-campaigns.md)
 
+**Personas:**
+
+* **developer:** Can select Review to activate to display a summary of the campaign and check for incorrect or missing parameters. Can review each decision policy's structure and copy technical details from the campaign summary. Can select Activate, then check statistics on targeted profiles and delivered and failed actions, or select Reports for more. The page states that you cannot activate the campaign while the summary contains errors. Where: "Review & activate the API triggered campaign".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select Review to activate to display a summary of the campaign.
+* **Success check:** The campaign status becomes Live, or Scheduled if you entered a start date.
+* **Previous:** If the campaign is subject to an approval policy, approval is required before sending the campaign: Get started with journeys & campaigns approval (test-approve/gs-approval.md); When a campaign uses decision policies in its content: Get started with decisions policies (experience-decisioning/create-decision.md)
+* **Next:** Once the API triggered campaign is ready, trigger its execution using APIs: Review and activate a campaign (campaigns/trigger-campaigns.md); To get additional statistics in dedicated reports: Campaign report (reports/campaign-global-report-cja.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 99712f6f -->

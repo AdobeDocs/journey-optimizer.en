@@ -81,6 +81,17 @@ For complete understanding, this information should be combined with the documen
 * Create IP pools: Learn how to create IP pools (configuration/ip-pools.md)
 * Set up channel configurations: Learn how to set up channel configurations (configuration/channel-surfaces.md)
 
+**Personas:**
+
+* **developer:** Can pass all personalization for High throughput campaigns as contextual data in the API payload. Can call a different API endpoint than the one used for standard API triggered campaigns. Can use the AJO Message Feedback Event Dataset - Non Profile and the AJO Email Tracking Experience Event Dataset - Non Profile for feedback and tracking. The page states that profile variables cause validation errors, and push payload size is limited to 5 KB. Where: "Guardrails & limitations".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Create a new IP pool.
+* **Success check:** The page states a Health check API is available for the High Throughput Campaign.
+* **Next:** Learn how to personalize content using contextual data: Edit the API triggered campaign content (campaigns/api-triggered-campaign-content.md); Learn how to set up channel configurations: Set up channel configurations (configuration/channel-surfaces.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 4cda4ed0 | related: campaigns/api-triggered-campaign-content.md -->

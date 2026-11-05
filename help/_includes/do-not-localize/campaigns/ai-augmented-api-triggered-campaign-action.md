@@ -70,6 +70,18 @@ For complete understanding, this information should be combined with the documen
 * Enabling Rapid delivery mode for push notifications: on this page (push/create-push.md#rapid-delivery)
 * Next step, designing the content: Learn more (campaigns/api-triggered-campaign-content.md)
 
+**Personas:**
+
+* **developer:** Can add an action to an API triggered campaign and select its communication channel in the Actions tab. Can select a channel configuration that contains technical parameters such as header parameters, subdomain, and mobile apps. The page states that High Throughput API triggered campaigns currently support the email channel only. Where: "Configure the API triggered campaign action".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Navigate to the Actions tab, select Add action, and select the communication channel.
+* **Success check:** Tracking results are accessible from the campaign report once the campaign has been executed.
+* **Previous:** A channel configuration must be defined before you can select it for the action: Set up channel configurations (configuration/channel-surfaces.md)
+* **Next:** Once your campaign configuration and content are ready, design its content: Edit the API triggered campaign content (campaigns/api-triggered-campaign-content.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 48b9be61 -->

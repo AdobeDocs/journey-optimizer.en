@@ -67,6 +67,18 @@ For complete understanding, this information should be combined with the documen
 * Waves: Learn how to send using waves (delivery/send-using-waves.md)
 * Next step, activation: Review and activate an Action campaign (campaigns/review-activate-campaign.md)
 
+**Personas:**
+
+* **marketer:** Can set a campaign start date and time in Campaign start, and enable Use profile timezone to send messages at each recipient's local time. Can set a daily, weekly, or monthly execution frequency for Email, Mobile message, and Push notification actions, and set an end date in Campaign end. Can enable Throttle delivery and set a Delivery rate per second, and send the campaign message in batches using waves. The page states that the Delivery rate ranges from 1 to 2000 per second when Throttle delivery is enabled. Where: "Schedule the Action campaign".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Use the Schedule tab to define the campaign schedule.
+* **Success check:** The campaign status changes to Completed once all timezones have been processed.
+* **Previous:** For email actions associated with an IP warmup plan: Create IP warmup campaigns (configuration/ip-warmup-campaign.md)
+* **Next:** Once your campaign schedule is ready: Review and activate an Action campaign (campaigns/review-activate-campaign.md); To deliver the campaign message in batches over time: Send using waves (delivery/send-using-waves.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: c2d3e159 -->
