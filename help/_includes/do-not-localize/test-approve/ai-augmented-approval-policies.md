@@ -47,6 +47,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: What criteria can target an approval policy?** — Campaign/Journey names, Tags, Channel types, Campaign types, and Requestors.
 * **Q: How do I stop users from approving their own work?** — Enable the **[!UICONTROL Block self-approval]** option when creating the policy.
 
+**Personas:**
+
+* **marketer:** Can create an approval policy from Administration, then Permissions, then Policies, scoping it to Journeys or Campaigns. Can enable Block self-approval to prevent Journey or Campaign creators from approving their own objects. Can define conditions under If using Category, Matching Rule, and Options, then set who validates under Then, send approval request to by choosing a User Group or an individual User. The page states that once activated, a policy cannot be edited, and must be deactivated first to modify conditions. Where: "Create approval policies".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** From the Administration menu in Journey Optimizer, access Permissions then Policies.
+* **Success check:** You can now activate your approval policy to apply it.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: c9b3d0da -->
