@@ -44,7 +44,7 @@ topic_v2:
 
 >[!NOTE]
 >
->Reporting is not supported for [anonymous landing pages](../landing-pages/lp-anonymous.md).
+>Reporting is not supported for [public landing pages](../landing-pages/lp-anonymous.md).
 
 >[!CONTEXTUALHELP]
 >id="ajo_landing_page_live_report"

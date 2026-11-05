@@ -315,7 +315,7 @@ The following improvements are coming to campaigns in this release.
 <table>
 <thead>
 <tr>
-<th><strong>Anonymous landing pages (Limited Availability)</strong><br/></th>
+<th><strong>Public landing pages (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
