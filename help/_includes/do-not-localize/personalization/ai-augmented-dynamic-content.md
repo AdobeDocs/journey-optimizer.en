@@ -48,7 +48,7 @@ For complete understanding, this information should be combined with the documen
 
 **Personas:**
 
-* **developer:** Can add dynamic content into any field where personalization can be added, including subject line, links, push notifications content, or text-type offers' representations. Can add content between the {%if%} and {%/if%} tags in an expression to display content when a conditional rule is met. The page states that you can add as many rules as needed to create several variants of an expression. Where: "Add dynamic content into expressions".
+* **developer:** Can add dynamic content into any field where personalization can be added, including subject line, links, push notifications content, or text-type offers' representations. Can add content between the `{%if%}` and `{%/if%}` tags in an expression to display content when a conditional rule is met. The page states that you can add as many rules as needed to create several variants of an expression. Where: "Add dynamic content into expressions".
 
 **Onboarding:**
 

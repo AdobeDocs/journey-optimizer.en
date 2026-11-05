@@ -58,12 +58,12 @@ For complete understanding, this information should be combined with the documen
 
 **Personas:**
 
-* **developer:** Can reference profile, audience, and offer attributes through the Profile, Audience, and Offers namespaces, using paths such as offers.image.[Placement Id].[Activity Id].deliveryUrl. Can call PQL functions such as upperCase(), formatDate(), and dateDiff() with the {%= ... %} syntax to query and transform these fields. The page states that offer references are validated against the Offers Schema. Where: "Available namespaces".
+* **developer:** Can reference profile, audience, and offer attributes through the Profile, Audience, and Offers namespaces, using paths such as offers.image.[Placement Id].[Activity Id].deliveryUrl. Can call PQL functions such as upperCase(), formatDate(), and dateDiff() with the `{%= ... %}` syntax to query and transform these fields. The page states that offer references are validated against the Offers Schema. Where: "Available namespaces".
 
 **Onboarding:**
 
 * **Level:** Intermediate
-* **First minimal step:** Wrap reserved keyword fields in backticks, for example {{profile.person.`next`.name}}.
+* **First minimal step:** Wrap reserved keyword fields in backticks, for example ``{{profile.person.`next`.name}}``.
 * **Success check:** The personalization editor does not fail validation with an error.
 * **Next:** To find ready-to-use expressions for common scenarios: Personalization recipes (personalization/personalization-recipes.md); If an expression returns an error code: Personalization errors (personalization/personalization-errors.md)
 

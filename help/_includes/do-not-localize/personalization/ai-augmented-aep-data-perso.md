@@ -50,7 +50,7 @@ For complete understanding, this information should be combined with the documen
 
 **Personas:**
 
-* **developer:** Can add the datasetLookup helper function to the code pane in the personalization editor to retrieve fields from an Adobe Experience Platform record dataset. Can configure the function with a datasetId, an id value used as the join key, a result alias, and a required flag. Can reference retrieved field values in content using the syntax {{result.fieldId}}, matching the full field path defined in the schema. The page states that it is recommended to keep the number of fields retrieved under 50 to avoid impacting throughput. Where: "Use Adobe Experience Platform data for personalization".
+* **developer:** Can add the datasetLookup helper function to the code pane in the personalization editor to retrieve fields from an Adobe Experience Platform record dataset. Can configure the function with a datasetId, an id value used as the join key, a result alias, and a required flag. Can reference retrieved field values in content using the syntax `{{result.fieldId}}`, matching the full field path defined in the schema. The page states that it is recommended to keep the number of fields retrieved under 50 to avoid impacting throughput. Where: "Use Adobe Experience Platform data for personalization".
 
 **Onboarding:**
 

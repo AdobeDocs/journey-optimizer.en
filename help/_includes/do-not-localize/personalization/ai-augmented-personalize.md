@@ -56,7 +56,7 @@ For complete understanding, this information should be combined with the documen
 **Onboarding:**
 
 * **Level:** Beginner
-* **First minimal step:** Type {{ in any text field.
+* **First minimal step:** Type `{{` in any text field.
 * **Success check:** An inline autocomplete dropdown opens at the cursor position.
 * **Next:** When you want to personalize content using behavioral events summarized into profile attributes: Work with computed attributes (audience/computed-attributes.md); When you want to enable Adobe Experience Platform datasets for lookup personalization: Use Adobe Experience Platform data for personalization (personalization/aep-data-perso.md)
 

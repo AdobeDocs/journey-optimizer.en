@@ -63,7 +63,7 @@ For complete understanding, this information should be combined with the documen
 **Onboarding:**
 
 * **Level:** Intermediate
-* **First minimal step:** Replace arrayPath with the path to your array data in the {{#each}} helper.
+* **First minimal step:** Replace arrayPath with the path to your array data in the `{{#each}}` helper.
 * **Success check:** The message preview shows the iteration displaying correctly.
 * **Previous:** Learning message personalization fundamentals before iterating over data: Personalize content in Journey Optimizer (personalization/personalize.md)
 * **Next:** Testing your iteration in a journey: Test your journey (building-journeys/testing-the-journey.md); Passing array values to custom action parameters using the advanced expression editor: Work with the advanced expression editor (building-journeys/expression/expressionadvanced.md)
