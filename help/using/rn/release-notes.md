@@ -140,14 +140,6 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 </tbody>
 </table>
 
-* **Channel Builder skill in Coworker to create a new custom channel** - This skill helps administrators create custom channels faster by guiding users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD -->
-
-  Availability date: October 2, 2026
-
-* **Suppression list override at Email action level** - Journey Optimizer now includes a per-action toggle that allows delivery to locally-suppressed addresses for a specific email action in a journey or campaign. This is designed for compliance scenarios where a communication must be demonstrably attempted, such as a required notification to an address that has previously bounced. This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
-
-  Availability date: October 28, 2026
-
 <table>
 <thead>
 <tr>
@@ -165,6 +157,14 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 </tr>
 </tbody>
 </table>
+
+* **Channel Builder skill in Coworker to create a new custom channel** - This skill helps administrators create custom channels faster by guiding users through the required setup steps, such as channel configuration, authentication, throttling, and payload definition, making it easier to launch new messaging integrations with less manual effort. <!-- Documentation link: TBD -->
+
+  Availability date: October 2, 2026
+
+* **Suppression list override at Email action level** - Journey Optimizer now includes a per-action toggle that allows delivery to locally-suppressed addresses for a specific email action in a journey or campaign. This is designed for compliance scenarios where a communication must be demonstrably attempted, such as a required notification to an address that has previously bounced. This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
+
+  Availability date: October 28, 2026
 
 +++ Coming soon — **Information below is subject to change.**
 
