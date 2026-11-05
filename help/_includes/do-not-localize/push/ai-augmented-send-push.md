@@ -50,6 +50,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: What if my selected configuration was deleted?** — The "configuration doesn't exist" error appears; select another configuration in the message Properties.
 * **Q: Do I need approval to send?** — If your campaign is subject to an approval policy, you must request approval before sending the push notification.
 
+**Personas:**
+
+* **marketer:** Can preview push notification content using Simulate content, or select Simulate content (AEP profiles) to preview with test profiles for iOS, Android, or Web. Can check alerts in the editor and resolve errors, such as an empty push version, a deleted configuration, or a payload exceeding 4KB. The page states that errors prevent testing or activating the journey until resolved, while warnings refer to recommendations and best practices. Where: "Check & send your push notification".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select Simulate content to preview push notification content with sample input data or AI auto-generation.
+* **Success check:** No errors remain in the upper section of the editor, so the journey or campaign is no longer prevented from being tested or activated.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: a49e5ec3 -->
