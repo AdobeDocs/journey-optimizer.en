@@ -53,6 +53,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: What does "Core capability" mean in the Available since column?** — It marks long-standing foundational features that have been generally available since before 2026.
 * **Q: What are the three base offers?** — Journey Optimizer – Campaigns (batch, audience-based), Journey Optimizer – Journeys (real-time, event-driven), and Journey Optimizer – Campaigns & Journeys (both).
 
+**Personas:**
+
+* **admin:** Can confirm administration and data features such as sandboxes, permissions and access control, URL parameter encryption, and certificate-based custom authentication in custom actions. The page states that sandboxes support up to 5, with additional available. Where: "Features by capability area".
+* **marketer:** Can build and launch messages across channels such as email, SMS, push, direct mail, and the new Mobile Message channel for SMS, MMS, and RCS. Can create journeys using Journey Fragments, Journey Simulation, and the Journey Agent for natural-language journey creation. The page states that Generate content for journey expressions is in Beta. Where: "Features by capability area".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Check the feature's status in the table to see if it is GA, LA, or Beta.
+* **Success check:** The feature appears in your environment once it is enabled, consistent with its listed status.
+* **Previous:** Get started with Journey Optimizer: Journey Optimizer (start/get-started.md)
+* **Next:** Confirm whether a feature is included in your license: Adobe Journey Optimizer packages and capabilities (start/ajo-packages.md); See everything that shipped: Release notes (rn/release-notes.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 98846e98 -->

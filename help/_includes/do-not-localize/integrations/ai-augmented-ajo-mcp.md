@@ -51,6 +51,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Do I need developer access?** — No; the MCP server is designed for both marketing and technical personas.
 * **Q: Can I use it with sandboxes?** — Yes; the MCP server respects your sandbox configuration and you can query sandbox-specific data.
 
+**Personas:**
+
+* **marketer:** Can query campaigns, journeys, and offers using plain-language prompts instead of navigating product screens. Can ask about campaign statuses and channel configuration details, such as sender domains, unsubscribe settings, and IP pools. The page states that all tools are read-only, so write operations are not supported in the current Beta release. Where: "Key capabilities".
+* **developer:** Can fetch full details for a specific campaign by ID, including audience targeting, schedule, channel, and content settings. Can fetch full details for a specific journey by ID, including its branching, conditions, and actions. The page states that all tools are read-only, so write operations are not supported in the current Beta release. Where: "Available tools".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Go to Connectors and select Adobe Journey Optimizer.
+* **Success check:** You can ask about campaign statuses and channel configurations in plain language and get answers instantly.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d1e40580 -->

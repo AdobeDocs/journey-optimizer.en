@@ -46,6 +46,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I test a push during onboarding?** — Yes, during the Validate step you can send a test push notification, leveraging Adobe Experience Platform Assurance.
 * **Q: What does the Set up step create?** — Data Collection and Journey Optimizer assets such as Mobile Properties, Mobile Extensions, the Journey Optimizer Extension, Rules, and Data Elements.
 
+**Personas:**
+
+* **admin:** Can set up the workflow by entering the mobile app name and providing iOS and Android App ID and authentication keys or key file. The page states that Beta Terms & Conditions must be accepted before proceeding. Where: "Set up".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Select the Start Collecting Mobile Data card on the Data Collection home page.
+* **Success check:** Automated setup is done, and you can start sending push notifications with Journey Optimizer.
+* **Next:** Configure the push channel: Push notification configuration (push/push-configuration.md); Create a push notification: Configure a push notification (push/create-push.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 0ed1ded5 -->

@@ -48,6 +48,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens if I do not declare an identity field?** — An identity map can be used instead, but this is not recommended.
 * **Q: Can I create expressions using experience event attributes in journey conditions?** — Starting July 8, 2025, new customer organizations cannot create such expressions, and starting April 1, 2026, organizations that have not accessed experience events via journey expressions in the last 90 days will no longer have access to this capability; accessing context from the starting event is not impacted.
 
+**Personas:**
+
+* **developer:** Can build an XDM schema of the ExperienceEvent class, including the Orchestration eventID field group for system-generated events. Can declare an identity field to identify individual profiles in the event. The page states that an identity map can be used if no identity is specified, but this is not recommended. Where: "Guardrails".
+* **admin:** Can mark the schema and dataset for profile so the event data is available for profile. Can create a dataset to record event instances for future reference and analysis. The page states that organizations not accessing experience events via journey expressions for 90 days lose access, starting April 1, 2026. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** Define an XDM schema and create a dataset to record event instances on Adobe Experience Platform.
+* **Next:** For alternatives after losing access to experience event attribute expressions in journey conditions: Experience events lookup in journeys (building-journeys/exp-event-lookup.md); For the event data available for profile: Use Adobe Experience Platform data (data/lookup-aep-data.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d34bf86c -->

@@ -61,6 +61,17 @@ For complete understanding, this information should be combined with the documen
 * Access labels: Learn more about Object Level Access Control (administration/object-based-access.md)
 * Next step, configuring the action: Learn more (campaigns/api-triggered-campaign-action.md)
 
+**Personas:**
+
+* **developer:** Can create an API triggered campaign and choose between API triggered - Marketing and API triggered - Transactional types. Can enable High Throughput mode for transactional campaigns, supporting up to 5000 transactions per second. The page states that access labels limit campaign access and only labels with permission can be selected. Where: "FAQ".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Browse to the Campaigns menu and select the API triggered tab.
+* **Success check:** The campaign configuration and content are ready for its action to be configured.
+* **Next:** Once your campaign configuration and content are ready: Configure the API triggered campaign action (campaigns/api-triggered-campaign-action.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 95cb2ca2 -->

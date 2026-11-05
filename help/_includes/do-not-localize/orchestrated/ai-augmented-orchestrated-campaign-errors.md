@@ -102,6 +102,18 @@ For complete understanding, this information should be combined with the documen
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
 * Contacting Adobe Support: contact Adobe Support (start/user-interface.md)
 
+**Personas:**
+
+* **marketer:** Can find the cause and the fix for errors returned when building, testing, scheduling, publishing, or triggering an Orchestrated campaign, grouped by feature. The campaign logs and the alerts on the canvas show the error code and message to locate the activity concerned. The page states that you note the error code, message, request ID, and campaign, journey, or activity, then contact the administrator or Adobe Support. Where: "FAQ".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Open the campaign logs to find the activity concerned by the error.
+* **Success check:** The campaign logs and the alerts on the canvas show the error code and the message.
+* **Previous:** Adding activities to the canvas before testing the campaign: Create Orchestrated campaigns with Adobe Journey Optimizer (orchestrated/orchestrate-activities.md); Scheduling the campaign before it runs: Create and schedule Orchestrated campaigns with Journey Optimizer (orchestrated/create-orchestrated-campaign.md)
+* **Next:** Monitoring the campaign after fixing the error: Start and monitor Orchestrated campaigns with Adobe Journey Optimizer (orchestrated/start-monitor-campaigns.md); Checking the activity limits and other guardrails: Orchestrated campaigns guardrails and limitations (orchestrated/guardrails.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 4696863a -->

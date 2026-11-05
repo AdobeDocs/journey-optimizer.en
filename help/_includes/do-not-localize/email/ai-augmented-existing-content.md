@@ -45,6 +45,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Are there requirements for references inside a .zip folder?** — Yes. References must be relative and fit with the tree structure of the .zip folder.
 * **Q: Can I import image designs that are not HTML?** — Yes. Use the image to HTML converter to automatically convert JPEG or PNG designs into editable HTML email templates using AI.
 
+**Personas:**
+
+* **marketer:** Can import an HTML file with an incorporated style sheet, or a .zip folder with an HTML file, style sheet, and images. Can personalize text, add links, and include assets in Compatibility mode, then access the HTML converter tab and select Convert for content components. The page states that using a table tag as the first layer in an HTML file can cause style loss, including background and width settings. Where: "Import your email content".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** From the Email Designer home page, select Import HTML.
+* **Success check:** The imported content appears in Compatibility mode once uploaded.
+* **Previous:** You have image designs (JPEG or PNG) instead of HTML files: Convert images to email content templates (content-management/image-to-html.md)
+* **Next:** You want to personalize your imported file with Email Designer functionalities: Design content from scratch in Journey Optimizer (email/content-from-scratch.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 5d137866 -->

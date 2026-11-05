@@ -57,6 +57,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does my BCC email configuration fail?** — The BCC address must use a subdomain with a valid MX record configuration; if the MX record is not configured, the email configuration processing fails.
 * **Q: When do updated configuration settings take effect?** — For batch journeys, at the next recurrence or new execution; for transactional messages, immediately for the next communication (up to a five-minute delay).
 
+**Personas:**
+
+* **admin:** Can define email settings including email type, subdomain, IP pool, list unsubscribe, header parameters, BCC email, seed list, retry parameters, URL tracking, and execution address. The page states that the default retry period is 84 hours, with a minimum of 6 hours for marketing and 10 minutes for transactional. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Set up the subdomains you will use for sending emails before creating an email configuration.
+* **Success check:** The updated email configuration settings are automatically picked up in the journey(s) or campaign(s) where the configuration is used.
+* **Previous:** Before creating an email channel configuration, you must first have created at least one IP pool: Create IP pools (configuration/ip-pools.md); Set up the subdomains you will use for sending emails before creating an email configuration: Subdomain delegation in [!DNL Journey Optimizer] (configuration/about-subdomain-delegation.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 2ddfab47 -->

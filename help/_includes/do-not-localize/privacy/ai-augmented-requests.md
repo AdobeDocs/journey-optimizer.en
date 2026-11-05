@@ -53,6 +53,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which values does the page list for the `regulation` field?** — `gdpr`, `ccpa`, `pdpa`, `lgpd_bra`, or `nzpa_nzl`.
 * **Q: Does a privacy request to Adobe Journey Optimizer remove data from all systems?** — No, for delete and access requests, you need to call these individual systems to make sure the requests are handled by each of them.
 
+**Personas:**
+
+* **marketer:** Can submit individual requests to access and delete consumer data from Adobe Journey Optimizer through the Requests menu. Can submit delete requests to the three upstream services Profile, AEP Data Lake, and Identity, in addition to the Adobe Journey Optimizer request. The page states that if these upstream services are not specified, the Adobe Journey Optimizer request remains in the processing state. Where: "Manage individual data privacy requests that you can send to Adobe Journey Optimizer".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Create and manage privacy requests from the Requests menu.
+* **Success check:** The Adobe Journey Optimizer request no longer remains in the processing state once delete requests for the upstream services are created.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: e6914232 -->

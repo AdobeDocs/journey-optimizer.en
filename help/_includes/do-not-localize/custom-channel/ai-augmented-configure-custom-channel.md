@@ -47,6 +47,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What can marketers do after a custom channel is configured?** — They can immediately select it in campaigns and journeys, just like any native Journey Optimizer channel.
 * **Q: Why create multiple credential sets?** — To reuse the same channel definition across different brands or environments without duplicating the channel.
 
+**Personas:**
+
+* **admin:** Can configure a custom channel once per channel through four steps: create the channel, manage API credentials, optionally delegate a subdomain, and create a channel configuration. Can define the endpoint URL, headers, throttling policy, authentication type, and message payload structure in the Channel Builder. Can create multiple channel configurations for the same channel, for example one per brand or region. The page states that custom channels are not available in transactional campaign types. Where: "Configuration steps".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Create the custom channel by defining the endpoint URL, headers, throttling policy, authentication type, and message payload structure in the Channel Builder.
+* **Success check:** Marketers can immediately select the custom channel in campaigns and journeys, just like any native Journey Optimizer channel.
+* **Next:** Define the endpoint URL, headers, throttling policy, authentication type, and message payload structure: Create a custom channel (custom-channel/create-custom-channel.md); Create and manage the sets of credentials used to authenticate requests to your endpoint: Manage API credentials for custom channels (custom-channel/custom-channel-api-credentials.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 3a213bc3 -->

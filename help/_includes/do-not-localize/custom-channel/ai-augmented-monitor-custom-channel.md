@@ -52,6 +52,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How does the report time granularity change with the time range?** — A 7-day report shows one data point per day, a 1-day range shows KPIs per hour, and a 1-hour range shows KPIs per minute.
 * **Q: How do I troubleshoot unresolved personalization tokens?** — Verify the XDM attribute path is correct and add a default value fallback, for example `{{profile.person.name.firstName | default("Valued Customer")}}`.
 
+**Personas:**
+
+* **marketer:** Can monitor custom channel delivery performance through campaign and journey reports and the custom channels monitoring dashboard. Can view metrics such as successful calls, 4xx/5xx errors, timeout calls, and pre-call failures, and drill down to campaigns and journeys. The page states that pre-call failures occur in Journey Optimizer's own infrastructure layer, not in the external system. Where: "Monitor delivery performance".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Access the custom channels monitoring dashboard from Administration, Channels, Channel Builder, Custom channels monitoring.
+* **Success check:** You can spot integration issues, latency, and throttling limits in the dashboard.
+* **Previous:** Create and activate a custom channel before monitoring its delivery performance: Create a custom channel (custom-channel/create-custom-channel.md)
+* **Next:** Learn more about live reports for custom channel delivery data: Live report (reports/live-report.md); Get details on reporting functionalities referenced for custom channel monitoring: Reporting (reports/report-cja-manage.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 6cb7181f -->

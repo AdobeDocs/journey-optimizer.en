@@ -55,6 +55,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Is the Simulations API supported for Orchestrated campaigns?** — No; it is available for API-triggered and Action (scheduled) campaigns, and you use the preview and proof workflow in the Orchestrated campaigns user interface instead.
 * **Q: How do I test my implementation before it goes live?** — Use test mode with test profiles obtained from your Data Engineer, and use Adobe Experience Platform Assurance to inspect SDK events and troubleshoot.
 
+**Personas:**
+
+* **developer:** Can build RESTful API endpoints that accept JSON payloads and authenticate requests using OAuth, API key, or JWT. Can define an optional error response payload for richer fallback logic in timeout or error branches. The page states that Journey Optimizer applies a 5000 calls/second limit for custom action endpoints. Where: "Develop custom action endpoints".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Install and configure the Mobile SDK by following the Adobe Experience Platform Mobile SDK documentation.
+* **Success check:** SDK events are visible and can be inspected in Adobe Experience Platform Assurance, confirming data collection is working.
+* **Previous:** Environment access must be granted by the Administrator before implementation starts: Journey Optimizer Get Started for System Admin (start/path/administrator.md); XDM schemas and event definitions must come from the Data Engineer before implementing mobile and web integrations: Journey Optimizer Get Started for Data Engineer (start/path/data-engineer.md)
+* **Next:** Marketers design the journeys and content that use the implementations the developer builds: Journey Optimizer Get started for Marketers (start/path/marketer.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 31eccb8f -->

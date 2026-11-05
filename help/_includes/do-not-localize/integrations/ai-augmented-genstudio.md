@@ -50,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens to experiences created without a Journey Optimizer template?** — They are imported into compatibility mode rather than directly into the Email Designer with full editing.
 * **Q: How does GenStudio maintain brand consistency?** — It uses AI-powered brand checks and applies your uploaded brand standards to all content variations created in the platform.
 
+**Personas:**
+
+* **marketer:** Can export a Journey Optimizer email template using Export HTML from the More button and import GenStudio experiences using Import HTML. Can filter experiences by products, personas, brands, or colors, then select one and select Use. The page states that this capability is available for the email channel only. Where: "Use the GenStudio integration".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Access the content of your email in a journey or campaign in Journey Optimizer.
+* **Success check:** The selected content displays in the Email Designer.
+* **Previous:** Access the content of your email in a journey or campaign before exporting it to GenStudio: Design emails (email/get-started-email-design.md); Add an email to a campaign before importing GenStudio experiences: Create an email (email/create-email.md)
+* **Next:** Create an experiment with the imported GenStudio email variations: Create a Content Experiment (content-management/content-experiment.md); Activate the campaign after saving your changes: Review and activate an Action campaign (campaigns/review-activate-campaign.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 73d12992 -->

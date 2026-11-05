@@ -51,6 +51,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What must the Provider Payload include for Basic or Bearer authentication?** — The authOption parameter in the JSON payload, plus references to the template variables {{fromNumber}}, {{toNumber}}, and {{message}}.
 * **Q: How do I test the credential?** — Click Verify SMS connection, fill in the Number and Message fields structured to align with the provider's payload format, then click Verify connection to send a sample message to a designated device.
 
+**Personas:**
+
+* **admin:** Can create an API credential with SMS vendor set to Custom, and complete fields such as Provider AppId, Provider Name, Provider URL, and Channel Type. Can select an Auth Type, API key, MAC authentication, OAuth authentication, or JWT authentication, and enable mTLS support. The page states that up to 10 custom header parameters can be added. Where: "Create your API credential".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Navigate to Administration, then Channels, select API Credentials under SMS settings, and select Create new API credentials.
+* **Success check:** The page states that selecting Verify SMS connection and Verify connection sends a sample message to a designated device to confirm the credentials work.
+* **Next:** Set up the inbound settings for the Webhook for SMS messages: Configure your SMS Webhook (mobile/mobile-webhook.md); Create your Channel configuration: Configure the SMS configuration (mobile/mobile-configuration-surface.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: a421ccaf -->

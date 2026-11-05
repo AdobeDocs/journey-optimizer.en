@@ -48,6 +48,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I change an object after submitting it?** — Cancel the request with **[!UICONTROL Cancel request]** to return it to the draft stage, make the edits, then resubmit with the **[!UICONTROL Request approval]** button.
 * **Q: How am I notified when an approver requests changes?** — Through an email and a Journey Optimizer alert accessible when clicking the bell icon, in the **[!UICONTROL Requests]** tab.
 
+**Personas:**
+
+* **marketer:** Can select Request Approval to submit a campaign or journey for review, or select Activate or Publish when no approval policy is active. Can select Cancel request while the campaign or journey is In review to return it to draft, then edit and resubmit it. The page states that journeys must be validated and errors in the Alerts panel resolved before requesting approval. Where: "Send approval request".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select Request Approval after creating your campaign or journey.
+* **Success check:** The campaign or journey is sent for review, or is automatically approved and either activated or published if no policy applies.
+* **Previous:** Validate the journey before requesting approval: Publish the journey (building-journeys/publish-journey.md)
+* **Next:** Review and approve the request: Review & approve a request (test-approve/review-approve-request.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 997f4e3a -->

@@ -44,6 +44,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can contextual attributes be used before placing the message inside a journey?** — No. Contextual attributes are available in the personalization editor only after the message is placed inside a journey that includes the relevant event.
 * **Q: How do I test the email with cart data?** — Turn on the **Test** toggle in the journey, click **Trigger an event**, and enter the input values in the Event configuration window, then click **Send**. The email is sent to the test profile's address.
 
+**Personas:**
+
+* **developer:** Can create an event whose schema includes the productListItems array and define its fields as payload fields. Can access cart data through context.journey.events.event_ID.productListItems, using the name, quantity, and priceTotal fields. The page states that contextual attributes are available only after the journey context has been passed to the message. Where: "Step 4: Insert the list of items from the cart".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Create an event whose schema includes the productListItems array.
+* **Success check:** The email contains the note about the Juno Jacket because this product is in the cart.
+* **Previous:** Configure a unitary event before personalizing the email: Work with journey events (event/about-events.md); Create the body of an email before inserting personalization tokens: Design content from scratch in Journey Optimizer (email/content-from-scratch.md)
+* **Next:** Iterate over contextual data from other sources beyond productListItems: Iterate over contextual data (personalization/iterate-contextual-data.md); See another personalization use case with profile information and context: Personalization use case&colon; order status notification (personalization/personalization-use-case.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 801d75d6 -->

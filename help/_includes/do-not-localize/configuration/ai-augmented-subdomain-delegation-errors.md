@@ -85,6 +85,18 @@ For complete understanding, this information should be combined with the documen
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
 * Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
+**Personas:**
+
+* **admin:** Can delegate a subdomain, create DNS records, set up web or landing page subdomains, create channel configurations, and manage seed lists. Can use the error code, message, and fix steps to resolve each CJMRT error. The page states that only one delegation can run at a time, and an IP pool update can take up to 3 hours. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Add the name server records displayed in the DNS record section at your DNS provider.
+* **Success check:** The subdomain or IP pool shows the Success status in the list.
+* **Previous:** Get started with subdomain delegation before delegating a subdomain: Subdomain delegation in [!DNL Journey Optimizer] (configuration/about-subdomain-delegation.md); Delegate a subdomain and validate it before these errors occur: Delegate a subdomain (configuration/delegate-subdomain.md)
+* **Next:** Set up a DMARC record after delegating the subdomain: DMARC record (configuration/dmarc-record.md); Set up channel configurations after delegating the subdomain: Set up channel configurations (configuration/channel-surfaces.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 6c097309 -->

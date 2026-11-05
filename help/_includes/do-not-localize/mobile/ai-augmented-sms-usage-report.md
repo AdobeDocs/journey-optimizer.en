@@ -50,6 +50,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What does a generated report contain?** — A Usage summary with total MO and MT messages for the selected dates broken down by short code, and a Daily SMS volume section showing SMS volume by day broken down by short code.
 * **Q: How do I export the report?** — Click Download CSV to download a CSV file for the report you are viewing.
 
+**Personas:**
+
+* **admin:** Can configure an SMS usage report by entering a report name, selecting Sinch MMS API credentials, and setting a start and end date. Can create a Sinch MMS API credential with SMS vendor set to Sinch MMS, used only to retrieve usage data from Sinch. The page states that usage data is available only for the last 90 days. Where: "Configure and view SMS usage reports".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Go to Administration, then Channels, then SMS Settings, select API Credentials, and select Create new API credentials.
+* **Success check:** The credential is now available for configuring SMS usage reports.
+* **Previous:** For the Manage SMS settings permission before generating SMS usage reports: Permission levels (administration/high-low-permissions.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 474f3720 -->

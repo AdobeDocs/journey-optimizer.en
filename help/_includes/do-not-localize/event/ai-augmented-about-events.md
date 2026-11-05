@@ -56,6 +56,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is the throughput limit for events?** — 5,000 events per second per organization, across all sandboxes, for unitary events and for Read Audience based journey events.
 * **Q: My journey is not triggering — what should I check?** — Verify the event schema has Real-Time Customer Profile enabled, confirm events are streamed, check that rule-based conditions match the incoming payload, and confirm the journey is in Live status with the profile meeting any entry conditions.
 
+**Personas:**
+
+* **developer:** Can configure a rule-based unitary event using any field in the event payload. Can configure a system-generated event, whose eventID field is generated automatically when the event is created. The page states that only streamed events can trigger journeys, and batch-ingested or Query Service events cannot. Where: "Event ID type".
+* **admin:** Can configure unitary and business events in Administration > Events; audience qualification events are not configured there. Can edit an event used in a Draft, Live, or Closed journey by changing only the name, the description, or by adding payload fields. The page states that profile reentrance is blocked for 5 minutes after a unitary journey triggers. Where: "Key constraints".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** Design and create the XDM schema with Real-Time Customer Profile enabled.
+* **Success check:** The profile enters the journey in real time when the event fires.
+* **Previous:** Before configuring events, check the event requirements and limitations in the guardrails: Journey Optimizer guardrails and limitations (start/guardrails.md); Before configuring events, review the overview of Data Sources, Events, and Actions: Configure journeys – Data Sources, Events, and Actions (configuration/about-data-sources-events-actions.md)
+* **Next:** After designing the XDM schema, configure a unitary event: Configure a unitary event (event/about-creating.md); After designing the XDM schema, configure a business event: Configure a business event (event/about-creating-business.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: da4aafd6 -->

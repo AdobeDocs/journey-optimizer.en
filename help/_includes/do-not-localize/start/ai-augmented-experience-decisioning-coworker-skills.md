@@ -55,6 +55,17 @@ For complete understanding, this information should be combined with the documen
 * **How many test profiles can Decisioning Rule Workflow simulate against at once?** Up to 3, manually entered or AI-generated, including edge cases.
 * **Does Decisioning Rule Workflow change a rule's logic when optimizing it?** No, PQL optimization only makes the syntax more concise to fit size limits; it preserves the original logic and outcome.
 
+**Personas:**
+
+* **marketer:** Can create an eligibility rule or ranking formula from a plain-language description, without writing PQL syntax. Can simulate the rule or formula against up to three test profiles, including AI-generated edge cases, to see pass-fail results or ranking scores. The page states that Rules & Ranking does not create or edit selection strategies or decision policies. Where: "Rules & Ranking".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Describe the target audience or condition in plain language to create a new eligibility rule.
+* **Success check:** Coworker generates the PQL rule from the plain-language description.
+* **Previous:** Learn about Coworker skills across Journey Optimizer before using the Decisioning-specific skills: Work with AI (start/ai-features.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 4c7c194d -->

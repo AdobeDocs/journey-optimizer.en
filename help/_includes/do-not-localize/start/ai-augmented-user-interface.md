@@ -46,6 +46,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why do I not see certain menu items or capabilities?** — Available components and capabilities depend on your permissions and licensing package; available menu items depend on your permissions and license.
 * **Q: Which languages does the interface support?** — English, French, German, Italian, Spanish, Portuguese (Brazilian), Japanese, Korean, Traditional Chinese, and Simplified Chinese. You can optionally select a second language as fallback.
 
+**Personas:**
+
+* **marketer:** Can create one-time or scheduled messages with Campaigns and build multi-step, cross-channel experiences with Journeys. Can also create content templates, fragments, and landing pages under Content Management, and manage personalized offers in Decision Management. The page states that available left navigation menu items depend on your permissions and license. Where: "Left navigation".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Sign in to Adobe CX Enterprise with your Adobe ID, then select Journey Optimizer.
+* **Success check:** The home page displays recently accessed campaigns and AI Recommendations.
+* **Next:** Choose your learning path by role: Roles and responsibilities | Adobe Journey Optimizer (start/quick-start.md); Understand how Journey Optimizer works: Understanding Journey Optimizer (start/understanding-ajo.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 05157978 -->

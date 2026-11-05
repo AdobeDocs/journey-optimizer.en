@@ -58,6 +58,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How can I preview my WhatsApp message?** — Use Simulate content to preview the message content, shortened URLs, and personalized content.
 * **Q: Which button interactions are tracked in reporting?** — Interactions on Quick reply, Call to action – URL, and Call to action – phone are tracked; Copy code buttons are not supported and are not tracked.
 
+**Personas:**
+
+* **marketer:** Can add a WhatsApp activity from the Actions section of the journey palette, or create a campaign using the WhatsApp channel. Can select or create a configuration for the message, choose a Template category (Marketing, Utility, or Authentication), and select a previously approved WhatsApp template. Can add media URLs in the Image URL field, add personalization with the personalization editor, and use Simulate content to preview the message. The page states that a WhatsApp template must first be approved by Meta before you can select it in Journey Optimizer. Where: "Define your WhatsApp content".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Drag and drop a WhatsApp activity from the Actions section of the palette.
+* **Success check:** You can preview your WhatsApp message content, shortened URLs, and personalized content with Simulate content.
+* **Previous:** Configuring the WhatsApp channel configuration used in the action: Configure the WhatsApp channel (whatsapp/whatsapp-configuration.md); Configuring a journey while adding the WhatsApp activity: Create your first journey (building-journeys/journey-gs.md)
+* **Next:** Testing and sending the WhatsApp message after creating its content: Check and test your WhatsApp messages (whatsapp/send-whatsapp.md); Monitoring WhatsApp message performance through reporting: Campaign report (reports/campaign-global-report-cja.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: a9b0fb9b -->

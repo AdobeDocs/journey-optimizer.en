@@ -51,6 +51,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can a marketing action be applied to Campaign v7/v8 or Campaign Standard actions?** — No, those journey actions are not supported when applying a marketing action to custom actions.
 * **Q: How is a policy violation detected?** — An error prevents publishing and is visible from the Alerts button; selecting it shows details and a data lineage diagram.
 
+**Personas:**
+
+* **developer:** Can configure a custom action with a Channel field and a Required marketing action field prefilled from the selected channel. Can add an Additional marketing action when adding the custom action to a journey, besides the required marketing action. The page states that both the required marketing action and the additional marketing action apply. Where: "Apply marketing action to custom actions".
+* **admin:** Can create a data governance policy by selecting Create policy, then Data governance policy, and linking a label and a marketing action. Can create labels under Policies, and marketing actions for each channel, before linking them in a policy. The page states that labels can only be applied to profile attribute fields. Where: "Create a data governance policy".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select Policies under Privacy in the left menu.
+* **Success check:** An error is displayed that prevents publishing when the system identifies a restricted field.
+* **Next:** Complete the channel configuration after selecting a marketing action: Set up channel configurations (configuration/channel-surfaces.md); Configure the other steps of a custom action after setting the Required marketing action field: Configure a custom action (action/about-custom-action-configuration.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: dcc19649 -->

@@ -72,6 +72,18 @@ For complete understanding, this information should be combined with the documen
 * Creating Feedback Webhooks: Learn how to create Feedback Webhooks (configuration/feedback-webhooks.md)
 * Next step, scheduling: Learn more (campaigns/api-triggered-campaign-schedule.md)
 
+**Personas:**
+
+* **developer:** Can define recipients for a Transactional API triggered campaign directly in the API call. The page states that a single API call supports up to 20 unique recipients, each with a unique user ID, and duplicate user IDs are not permitted. Where: "Select the audience".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Use the Audience tab to define the campaign audience.
+* **Success check:** Delivery status events are sent to the configured webhook.
+* **Previous:** Selecting an Adobe Experience Platform audience for a Marketing API triggered campaign: About Adobe Experience Platform audiences (audience/about-audiences.md)
+* **Next:** Scheduling the API triggered campaign after audience configuration is complete: Schedule an API triggered campaign (campaigns/api-triggered-campaign-schedule.md); Enabling webhooks to receive delivery status events for a Transactional API triggered campaign: Create feedback webhooks for API triggered campaigns in Journey Optimizer (configuration/feedback-webhooks.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: c5fbfe38 -->

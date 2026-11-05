@@ -48,6 +48,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where is the push token stored?** — Against the user's profile as record data, while push interactions are tracked as time-series events data.
 * **Q: Where are delivery successes and errors reported?** — Feedback from messaging services is logged for reporting in Journey Live and Customer Journey Analytics reports.
 
+**Personas:**
+
+* **admin:** Can set up Adobe Experience Platform Data Collection services for SDK integration. This includes creating a datastream, a client-side mobile property with extensions, and registering the mobile app bundle identifier and app credentials. The page states that push notifications are sent to all associated devices when a profile contains multiple ECIDs with valid tokens. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Register your branded mobile app with Apple's APNs and Google FCM push messaging services.
+* **Success check:** Messaging services generate a push token used to target the specific device.
+* **Previous:** Rapidly configure the Mobile SDK to collect and validate mobile event data: Mobile onboarding quick start workflow (push/mobile-onboarding-wf.md)
+* **Next:** Configure the push channel in Journey Optimizer: Push notification configuration (push/push-configuration.md); Create a push notification: Configure a push notification (push/create-push.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 9e9b301e -->

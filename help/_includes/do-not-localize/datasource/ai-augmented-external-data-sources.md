@@ -66,6 +66,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: Do I need to upload a certificate for certificate-based custom authentication?** - For the default RS256 option, Adobe manages the certificate and private key; you register Adobe's leaf certificate in your Identity Provider, retrieved from the mTLS Public Certificate API. HMAC signing requires no Adobe certificate registration.
 * **Q: Are nested JSON objects allowed when configuring custom authentication for a custom action?** — Yes, nested JSON objects such as sub-objects within `bodyParams` are supported.
 
+**Personas:**
+
+* **developer:** Can configure field groups with Method, Dynamic Values, Response Payload, and Sent Payload fields for each API parameter set. Can pass parameters in a GET call through Dynamic Values, or match them in a POST call body using the param syntax. The page states that the Sent Payload field is only available when you select the POST method. Where: "Create and configure an external data source".
+* **admin:** Can create an external data source with a name limited to alphanumeric characters and underscores, maximum 30 characters. Can select No authentication, Basic, Custom, or API key authentication modes, and set the cache duration for custom authentication tokens. The page states that Adobe addresses that are not publicly available and IP addresses are not allowed, and HTTPS is strongly recommended. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** From the list of data sources, select Create Data Source to create a new external data source.
+* **Success check:** Once your changes are saved, the data source is configured and ready to be used in your journeys.
+* **Previous:** Comparing all data access options before choosing an external data source: Get started with data sources (datasource/about-data-sources.md); Checking guardrails for external systems before configuring a connection: Integrate Journey Optimizer with external systems (configuration/external-systems.md)
+* **Next:** Using custom actions instead of data sources now that responses are supported: Custom action enhancements (action/action-response.md); Learning more about expressions for Dynamic Values parameters defined in journeys: Work with the advanced expression editor (building-journeys/expression/expressionadvanced.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 6eabf054 -->

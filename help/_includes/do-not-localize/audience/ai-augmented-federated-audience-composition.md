@@ -56,6 +56,16 @@ For complete understanding, this information should be combined with the documen
 * A quick-service restaurant group enriches the profiles of customers that recently placed orders online with each customer's preferred restaurant location, and sends them offers that can be used at those preferred locations.
 * Federated audiences are best for enterprise data warehouse integration, audience composition using external data sources, and scenarios requiring data to remain in external systems.
 
+**Personas:**
+
+* **marketer:** Can query a data warehouse for data or profile attributes to use in composing audiences, leaving sensitive data in the warehouse. Can enrich Adobe Experience Platform audiences with enterprise data warehouse and trusted partner data for deeper personalization. Can compose audiences from both profile-based and non-profile data. The page states that using Federated Audience Composition audiences requires the Federated Audience Composition add-on. Where: "Federated Audience Composition".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Query your enterprise data warehouse for data or profile attributes to compose an audience using Federated Audience Composition.
+* **Success check:** Customer profiles are enriched with warehouse data, such as each customer's preferred restaurant location, for use in offers.
+
 +++
 
 <!-- ai-section-version: 2 | source-hash: 557cbac8 | related: audience/target-audiences.md, building-journeys/journey-faq.md, building-journeys/read-audience.md, audience/enrichment-attributes.md -->

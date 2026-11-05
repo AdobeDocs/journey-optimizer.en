@@ -87,6 +87,18 @@ For complete understanding, this information should be combined with the documen
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
 * Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
+**Personas:**
+
+* **marketer:** Can fix proof and preview errors by sending proofs to ten or fewer recipients and selecting only profiles flagged as test profiles. Can fix simulated user errors by providing an identity namespace and identity value, and correcting attributes to match the profile schema. The page states that a maximum number of simulated users applies, shown in the message of error AJOTDS-000037-400. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Identify the error prefix, the error number, and the HTTP status in the error message.
+* **Success check:** The proof, preview, or simulated user action completes without returning an error.
+* **Previous:** Sending a proof using test profile data: Send email proofs (content-management/proofs.md); Creating simulated users to run a journey simulation: Simulate your journey (building-journeys/simulate-journey.md)
+* **Next:** Finding the other error code prefixes: Error codes reference (building-journeys/error-codes-reference.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 2cb078c8 -->

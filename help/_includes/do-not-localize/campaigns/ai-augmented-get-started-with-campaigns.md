@@ -104,6 +104,18 @@ For complete understanding, this information should be combined with the documen
 * Quiet hours: Configure quiet hours (conflict-prioritization/quiet-hours.md)
 * Optimization with targeting rules and content experiments: Optimize campaigns (content-management/gs-message-optimization.md)
 
+**Personas:**
+
+* **marketer:** Can create campaigns in Adobe Journey Optimizer to deliver content to a specific audience across multiple channels. Can choose between Orchestrated campaigns, Action campaigns, and API triggered campaigns, then follow the workflow: plan, configure properties, design content, review, activate, and monitor. The page states that every profile engaged by a campaign counts toward the organization's Engageable Profiles license metric. Where: "Your campaign creation workflow".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Plan your campaign by defining the goal, audience, campaign type, channels, and execution timing.
+* **Success check:** View campaign reports and analytics to monitor delivery rates and engagement metrics.
+* **Previous:** For audiences available in Adobe Experience Platform before creating campaigns: About Adobe Experience Platform audiences (audience/about-audiences.md); For channel configurations created before creating campaigns: Set up channel configurations (configuration/channel-surfaces.md)
+* **Next:** Ready to start building your first campaign: Create an Action campaign (campaigns/create-campaign.md); Choosing Orchestrated campaigns for complex workflows: Get started with Orchestrated campaigns (orchestrated/gs-orchestrated-campaigns.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 2e2f590e -->

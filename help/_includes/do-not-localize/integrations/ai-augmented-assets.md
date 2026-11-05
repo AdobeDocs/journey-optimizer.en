@@ -52,6 +52,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I fix broken images caused by asset expiration?** — Republish the affected assets in Experience Manager, update content references (create a draft or clone of the content fragment, re-add or re-select the asset, publish), and proactively review and republish assets used in active campaigns.
 * **Q: Can I switch between repositories?** — Yes; select the Account icon in the upper right and click Select Repository.
 
+**Personas:**
+
+* **marketer:** Can access Assets Essentials or Assets as a Cloud Service from the Assets section in the left menu, and upload assets to a folder. Can insert assets into email content using the Asset picker, switch repositories with Select Repository, and edit assets using the Edit mode icon. The page states that updates in Assets as a Cloud Service do not automatically propagate to live email campaigns. Where: "Upload and insert assets".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** From the Journey Optimizer home page, select the Assets tab under the Content management menu to access Assets Essentials or Assets as a Cloud Service.
+* **Success check:** The asset you dragged from the Asset picker appears in your email content in the Email Designer.
+* **Previous:** Design an email and access assets and folders directly from the Email Designer: Design emails (email/get-started-email-design.md)
+* **Next:** Customize an inserted asset using the Settings and Styles tabs in the Email Designer: Use Email Designer content components (email/content-components.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 2cf1f993 -->

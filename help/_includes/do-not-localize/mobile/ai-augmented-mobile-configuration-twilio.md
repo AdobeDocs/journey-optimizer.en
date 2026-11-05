@@ -46,6 +46,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where do I find my Twilio Account SID and Auth Token?** — In the Account Info pane of your Twilio Console Dashboard page.
 * **Q: How do I test my SMS API credentials?** — Click Verify SMS connection, fill in the Number and Message fields, and click Verify connection to send a sample message to a designated device.
 
+**Personas:**
+
+* **admin:** Can create Twilio API credentials for SMS, MMS, and RCS by entering the SMS vendor, name, Account SID, Auth Token, Message SID, and Inbound Number. Can select Use custom dataset for inbound to route inbound SMS to a pre-created dataset chosen from a dropdown. The page states that the dataset schema must be XDM ExperienceEvent and that the schema and dataset must be enabled for Profile. Where: "Configure API credential for SMS/RCS/MMS".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Browse to Administration > Channels > SMS Settings, select API Credentials, and select Create new API credentials.
+* **Success check:** Select Verify SMS connection, fill in the Number and Message fields, and select Verify connection to send a sample message to a designated device.
+* **Next:** Create a webhook: Configure your SMS Webhook (mobile/mobile-webhook.md); Create a channel configuration for SMS and MMS messages: Configure the SMS configuration (mobile/mobile-configuration-surface.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: ba3ea2cd -->

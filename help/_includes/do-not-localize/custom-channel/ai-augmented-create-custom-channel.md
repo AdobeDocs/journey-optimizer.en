@@ -60,6 +60,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: What payload format is supported?** — The endpoint must accept the payload format your channel defines (JSON). You define the payload by pasting a sample JSON payload, importing a JSON payload file, or importing a JSON schema file.
 * **Q: What happens when I archive an active channel?** — It is removed from all selection drop-downs, while existing journeys and campaigns that already use it continue to function normally.
 
+**Personas:**
+
+* **admin:** Can access the Channel Builder from Administration, Channels, Custom channels, and view the inventory of custom channels by status, creator, and name. Can filter custom channels by Draft, Active, or Archived status, and archive a channel to remove it from selection drop-downs. The page states that the View custom channels and Manage custom channels permissions are required to access the Channel Builder. Where: "Access and manage custom channels".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select Create custom channel to open the channel creation form.
+* **Success check:** The external system's logs confirm that the request was received with the expected authentication and payload.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: eb0c0de9 -->

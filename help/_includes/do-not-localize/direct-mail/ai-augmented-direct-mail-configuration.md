@@ -57,6 +57,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why can I not select my file routing configuration?** — A file routing configuration created with Save as draft cannot be selected until it is Active.
 * **Q: Which file formats are available?** — CSV or Text delimited, and Text delimited lets you choose a tabulation, semicolon, pipe, or ampersand column separator.
 
+**Personas:**
+
+* **marketer:** Can create a direct mail configuration that defines the file format and references the file routing configuration. Can select the file format, CSV or Text delimited, and the column separator for Text delimited. Can select Marketing action to associate consent policies with messages using the configuration. The page states that duplicate rows where all values in the row are the same are automatically removed from the file. Where: "Create a direct mail configuration".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Access the Administration, Channels, Direct mail settings, File routing menu, then select Create file routing config.
+* **Success check:** The file routing configuration is created with the Active status.
+* **Previous:** Learn the basics of direct mail before configuring the channel: Get started with direct mail (direct-mail/get-started-direct-mail.md)
+* **Next:** Create a direct mail message after configuring the direct mail channel: Create a direct mail message (direct-mail/create-direct-mail.md); Check and send a direct mail message after creating it: Check & send a direct mail message (direct-mail/test-send-direct-mail.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: e68d84a1 -->

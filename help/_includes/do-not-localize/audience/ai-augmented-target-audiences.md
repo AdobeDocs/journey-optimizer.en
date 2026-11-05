@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I use a composition or custom upload audience in an Audience Qualification activity?** — No; due to their batch nature only audiences created using segment definitions can be leveraged in that activity.
 * **Q: How do I target a non-supported audience such as a Customer Journey Analytics audience?** — Wrap it in a new segment definition in the Audience portal, then wait for the segmentation evaluation to complete before using it.
 
+**Personas:**
+
+* **marketer:** Can select any audience generated using segment definitions, custom upload, composition workflows or Federated Audience Composition for campaigns and journeys. Can use a Read audience activity, an Optimize activity, or an Audience Qualification event activity to target these audiences in a journey. The page states that custom upload (CSV) audiences are not supported as targeting audiences for inbound channel actions. Where: "Guardrails & limitations".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Verify that the audience and its enrichment attributes are available before using them in a journey.
+* **Success check:** Audiences are ready for use in Journey Optimizer after ingestion completes, typically within one hour.
+* **Previous:** Learn about audience types and enrichment attributes before targeting them in Journey Optimizer: About Adobe Experience Platform audiences (audience/about-audiences.md)
+* **Next:** Define the audience of a campaign using a selected audience: Create an Action campaign (campaigns/create-campaign.md); Configure a Read audience activity to make audience members enter a journey: Use an audience in a journey (building-journeys/read-audience.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 6635dce9 -->

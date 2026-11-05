@@ -89,6 +89,18 @@ For complete understanding, this information should be combined with the documen
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
 * Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
+**Personas:**
+
+* **marketer:** Can find the cause and the fix for an error or a warning when configuring, scheduling, or activating a campaign. Can tell an error from a warning by checking whether the HTTP status of the code is 200. The page states that a campaign cannot be activated until it is approved. Where: "FAQ".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Find the error code and HTTP status returned when you configure, schedule, or activate the campaign.
+* **Success check:** The error table shows the message and the fix for that error code.
+* **Previous:** Define the audience of the Action campaign: Define the Action campaign audience (campaigns/campaign-audience.md); Configure the campaign action: Configure the campaign action (campaigns/campaign-action.md)
+* **Next:** Review and activate the Action campaign: Review and activate an Action campaign (campaigns/review-activate-campaign.md); Access and manage campaigns: Access & manage campaigns (campaigns/manage-campaigns.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: f3b72432 -->

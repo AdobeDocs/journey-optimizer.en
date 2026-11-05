@@ -77,6 +77,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What are the requirements for AI ranking models?** — They differ by model type; Auto-optimization and Personalized optimization have distinct minimum interaction-data thresholds described in Requirements.
 * **Q: How do I get access to these features?** — Most AI features are included with Journey Optimizer; some capabilities such as Send-Time Optimization or AI Agents may require enablement by Adobe, so contact your Adobe representative.
 
+**Personas:**
+
+* **marketer:** Can generate subject lines, body text, images, and complete message variations using Generate Content. The page states that Generate Content is available for email, push notifications, mobile messages, and web experiences. Where: "AI-Powered content generation".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select the AI Assistant icon in the top bar to open the assistant panel on the right side of your screen.
+* **Success check:** The panel opens on the right side of your screen.
+* **Next:** To generate content for the email channel: Get started with email (email/get-started-email.md); To learn more about AI content generation: Get started with Generate Content in Journey Optimizer (content-management/gs-generative.md)
+
 +++
 
 <!-- ai-section-version: 15 | source-hash: 49f451d2 -->

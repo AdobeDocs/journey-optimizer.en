@@ -54,6 +54,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Does a change to a Mobile message subdomain affect other sandboxes?** — Yes. Mobile message subdomain configuration is shared between all environments, so any modification also impacts other production sandbox.
 * **Q: What does the Failed status mean?** — The subdomain is marked as Failed if you fail to create the validation record on your hosting solution.
 
+**Personas:**
+
+* **admin:** Can select Use delegated subdomain or Add your own domain to set up a Mobile message subdomain for SMS, RCS, and MMS messages. Can enter a prefix using only alpha-numeric characters and hyphens, since cdn and data prefixes are reserved for internal use. The page states that access and editing require the Manage SMS Subdomains permission on the production sandbox, and that this configuration is shared between all environments. Where: "Get started with SMS subdomains".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Browse to the Administration > Channels menu, select SMS settings > SMS subdomains, then select Set up subdomain.
+* **Success check:** Once the checks are successful, the subdomain gets the Success status and is ready to be used to create SMS channel configurations.
+* **Previous:** Learn more about delegating subdomains to Adobe before setting up a Mobile message subdomain: Delegate a subdomain (configuration/delegate-subdomain.md); Confirm you have the Manage SMS Subdomains permission on the production sandbox: Permission levels (administration/high-low-permissions.md)
+* **Next:** Select the configured subdomain when creating an SMS configuration: Configure the SMS channel (mobile/mobile-configuration.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 08d982b2 -->

@@ -40,6 +40,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: What attributes can I add?** — Any attribute and value that is CSS-compliant, added with the + button.
 * **Q: What happens to child elements?** — If they have no specific styling attributes defined, they inherit the styling of the parent element.
 
+**Personas:**
+
+* **marketer:** Can select an element in the Email Designer and open the Styles Inline settings under the Advanced drop-down of the Styles tab. Can modify the values of existing attributes or add new ones with the plus button. Can add any attribute and value that is CSS-compliant. The page states that child elements without specific styling attributes inherit the styling of the parent element. Where: "Add inline styling attributes".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Select an element in your content.
+* **Success check:** The styling is then applied to the selected element.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 40fd5a80 -->

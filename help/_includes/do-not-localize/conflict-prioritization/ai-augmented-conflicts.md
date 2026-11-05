@@ -50,6 +50,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How can I reduce identified conflicts?** — Adjust start/end dates, refine audience targeting, implement frequency caps, reduce the number of active journeys, or set priorities on inbound actions.
 * **Q: Do campaigns conflict with journeys?** — Campaigns can conflict with segment-triggered journeys that start with a Read audience activity, and live or scheduled campaigns can conflict with one another due to audience overlap.
 
+**Personas:**
+
+* **marketer:** Can select View Potential Conflicts in the journey or campaign properties to open the Potential conflicts window. Can check overlap by timeline, audience, channel, capping rule set, and channel configuration, and filter the list using the filter icon in the inventory view. Can resolve conflicts by adjusting start/end dates, refining audience targeting, adding frequency caps, reducing active journeys, or setting priorities on inbound actions. Where: "View identified conflicts for a given journey or campaign".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select the View Potential Conflicts button in the journey or campaign properties.
+* **Success check:** The Potential conflicts window opens and shows all elements overlapping the current journey or campaign.
+* **Next:** Refine the search for potential overlaps by filtering the list of campaigns and journeys: Search, filter, organize (start/search-filter-categorize.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: c6579151 -->

@@ -44,6 +44,15 @@ For complete understanding, this information should be combined with the documen
 * **Q: Do content cards require push notification consent?** — No; they are delivered in-app or on-site, independent of push notification consent, which lets you reach users who have disabled push notifications.
 * **Q: When should I choose a different channel instead of a content card?** — For time-sensitive alerts, inactive users, sensitive content, or messages that need an urgent call to action.
 
+**Personas:**
+
+* **marketer:** Can use content cards to deliver personalized, persistent, non-intrusive content directly within mobile apps and websites. Can reach users without push notification consent, and add visually rich messaging with call-to-action buttons. The page states that content cards are not suited to time-sensitive alerts, inactive users, sensitive content, or messages needing an urgent call to action. Where: "Use cases".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Review the use cases table and the when-not-to-use list to decide whether content cards fit your scenario.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 9f96b664 -->

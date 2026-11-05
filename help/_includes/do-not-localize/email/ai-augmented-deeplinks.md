@@ -52,6 +52,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I test end-to-end?** — Send a proof (create a proof with a deep link) and click it on iOS and Android devices, for both installed and not-installed scenarios, validating on real devices.
 * **Q: Should I use a custom URL scheme like `appname://path`?** — You can, but the recommended approach is a universal link or app link (`https://`) matching the HTTPS-based setup on this page.
 
+**Personas:**
+
+* **marketer:** Can insert a deep link in the Email Designer by selecting an element, selecting Insert link, and choosing Deeplink to enter the deep link URL. The page states that deep links will not work unless the configuration and the mobile app implementation steps are completed. Where: "Authoring deep links".
+* **developer:** Can resolve the tracked mclick URL by performing a GET request and reading the Location header to get the final URL. Can route users to the destination screen based on that final URL, as shown in the SceneDelegate and DeepLinkActivity code. The page states that you must not open the mclick URL in a browser, since that defeats the purpose of deep linking. Where: "Mobile app implementation".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Delegate the subdomain where deep linking is enabled in Journey Optimizer.
+* **Success check:** Recipients are taken directly to the intended in-app content when they select the deep link.
+* **Previous:** Enable link tracking for the email message before inserting a deep link in the Email Designer: Track your messages (email/message-tracking.md); Learn the Url helper function syntax before authoring a deep link in Mobile message content: Helpers (personalization/functions/helpers.md)
+* **Next:** Learn how to delegate the subdomain where deep linking is enabled: Delegate a subdomain (configuration/delegate-subdomain.md); Use deep link tracking in a content experiment run on the message: Create a Content Experiment (content-management/content-experiment.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 826ad9b9 -->

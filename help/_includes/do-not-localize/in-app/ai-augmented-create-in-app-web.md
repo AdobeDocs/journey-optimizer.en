@@ -51,6 +51,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What traits can I add with the And condition?** — XDM event type and XDM value.
 * **Q: How do I start designing the message content?** — Use the Edit content button after configuring the campaign.
 
+**Personas:**
+
+* **marketer:** Can enter the Title and Description, select the audience, and choose the Identity namespace to identify individuals. Can select Create experiment to configure a content experiment, edit triggers with Sent data to Platform or Manual trigger, and set the trigger frequency. The page states that Custom upload (CSV) audiences are not supported for in-app messages. Where: "Define your Web In-app message campaign".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Install the Web SDK tag extension to support Web In-app Messaging.
+* **Success check:** You can find the settings previously configured as App configuration in the Action menu.
+* **Previous:** Setting up the Web In-app channel before creating a campaign: In-app channel prerequisites and configuration (in-app/inapp-configuration.md)
+* **Next:** Testing and sending the In-app notification after creating it: Check and send your In-app notification (in-app/send-in-app.md); Viewing the campaign report after sending the In-app message: Campaign report (reports/campaign-global-report-cja-inapp.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: fd20639f -->

@@ -46,6 +46,18 @@ For complete understanding, this information should be combined with the documen
 * Audience composition: audience composition (audience/get-started-audience-orchestration.md)
 * Next step, schedule: Schedule the Action campaign (campaigns/campaign-schedule.md)
 
+**Personas:**
+
+* **marketer:** Can select the audience of a Marketing campaign using the Select audience button, which lists available Adobe Experience Platform audiences. Can choose the identity type in the Identity type field, using an existing type or creating one with the Identity Service. The page states that only one identity type is allowed per campaign. Where: "Define the Action campaign audience".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select Select audience to display the list of available Adobe Experience Platform audiences.
+* **Success check:** The audience of the Action campaign is ready, so you can schedule the campaign.
+* **Previous:** Learning about Adobe Experience Platform audiences before selecting one for the campaign: About Adobe Experience Platform audiences (audience/about-audiences.md); Using audiences and attributes from audience composition: Get started with audience composition (audience/get-started-audience-orchestration.md)
+* **Next:** Scheduling the Action campaign once the audience is ready: Schedule the Action campaign (campaigns/campaign-schedule.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 4a6653b0 -->

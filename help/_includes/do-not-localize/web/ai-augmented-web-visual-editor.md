@@ -51,6 +51,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Do device-size changes apply only to that device?** — No; as long as the selectors are the same, changes apply to all sizes and devices. Journey Optimizer does not currently support device size-specific page changes.
 * **Q: When should I use [!UICONTROL Browse] mode?** — When dealing with pages behind authentication or not available at a certain URL from the start, and to navigate through all the views of a website when authoring single-page applications.
 
+**Personas:**
+
+* **marketer:** Can open the web designer from the Edit content screen by selecting Edit web page. Can select elements on the canvas, add components such as Divider, HTML, Image, Heading, Paragraph, and Link, and add personalization using the personalization editor. The page states that the Adobe Experience Platform Web SDK must be included into your web page. Where: "Start authoring your web experience".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select Edit web page from the Edit content screen to open the web designer.
+* **Success check:** The right panel changes dynamically according to the selected element.
+* **Previous:** Before authoring a web experience, follow the prerequisites to access and author web pages: Web channel prerequisites (web/web-prerequisites.md)
+* **Next:** Once you edited your web content, you can manage your modifications: Manage web modifications (web/manage-web-modifications.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 77a05b9e -->

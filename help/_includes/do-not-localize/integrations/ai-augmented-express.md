@@ -46,6 +46,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I use this integration with health data?** — No; data leaves Journey Optimizer, so it must not be used with PHI or other health data.
 * **Q: Where does my edited image go after saving?** — In the Upload Image window you click Next, select a folder to store the modified asset, then click Import.
 
+**Personas:**
+
+* **marketer:** Can open the Adobe Express menu from Image settings in the Email Designer and select Edit in Adobe Express. Can resize images by aspect ratio, remove backgrounds, crop visuals, and convert assets to JPEG or PNG. The page states that this integration causes data to leave Journey Optimizer and must not be used with PHI or other health data. Where: "Using Adobe Express without an Enterprise License".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Access your Image settings from the Email Designer and select Edit in Adobe Express.
+* **Success check:** Your image is now ready to be used in your content.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 9403fd2a -->

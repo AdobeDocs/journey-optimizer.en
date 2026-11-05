@@ -64,6 +64,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I review invalid links?** — Click the red invalid-links count on the variant card to open the **[!UICONTROL URL validation failed]** dialog and review each **[!UICONTROL URL]** and its **[!UICONTROL Reason]**. Use **[!UICONTROL Copy]** to copy the validation details.
 * **Q: How do I go back to the old layout?** — Click **[!UICONTROL Old experience]** in the bottom action bar.
 
+**Personas:**
+
+* **marketer:** Can create content variants manually, by uploading a CSV, JSON, or JSONL file, by AI generation, or by selecting simulated users. Can duplicate, name, or remove a variant, copy its attributes, and view configuration details from its card. The page states that up to 30 variants can be added manually or via file upload. Where: "Create and manage variants".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Select Simulate content from your content to open the content simulation screen.
+* **Success check:** The preview grid is shown immediately when variants are already available.
+* **Previous:** Creating simulated users to use as variants: Simulate your journey (building-journeys/simulate-journey.md)
+* **Next:** Checking the deliverability score of email content: Use email spam report (content-management/spam-report.md); Sending a proof of one or more variants to email recipients: Send email proofs (content-management/proofs.md)
+
 +++
 
 <!-- ai-section-version: 2 | source-hash: 622e0e51 -->

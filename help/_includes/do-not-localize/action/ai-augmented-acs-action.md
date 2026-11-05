@@ -48,6 +48,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which tracking reactions are available per channel?** — Push can react to clicked, sent, or failed; SMS to sent or failed; email to clicked, sent, opened, or failed.
 * **Q: Can a journey use both the native channels of the Action activity and Campaign Standard actions?** — No, a journey cannot use both.
 
+**Personas:**
+
+* **developer:** Can design journeys using the Email, Push, and Mobile message actions available in the Action category once Adobe Campaign Standard is configured. Can use a Reactions event to react to tracking data from a Campaign Standard message sent in the same journey. Where: "Configure the action".
+* **admin:** Can configure the built-in AdobeCampaignStandard action, which must be set up for each sandbox. The page states that a capping rule of 4,000 calls per 5 minutes is automatically defined for these actions. A Campaign Standard action cannot be used with an Audience qualification or Read audience activity. Where: "Guardrails and limitations".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Select Configurations in the ADMINISTRATION menu section.
+* **Success check:** Three actions, Email, Push, and Mobile message, are available in the Action category when designing a journey.
+* **Previous:** A journey cannot use both built-in channel actions and Campaign Standard actions: Use the Action activity (building-journeys/journey-action.md)
+* **Next:** After configuring the action, learn how to use the Email, Push, and Mobile message actions in a journey: Adobe Campaign Standard actions (building-journeys/using-adobe-campaign-standard.md); To react to tracking data from a Campaign Standard message sent in the same journey: Reactions events (building-journeys/reaction-events.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: aa9b70f2 -->
