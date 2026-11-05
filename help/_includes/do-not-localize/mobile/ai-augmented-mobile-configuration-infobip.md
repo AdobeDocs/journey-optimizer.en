@@ -49,6 +49,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can existing Infobip SMS credentials be used for RCS?** — No; existing Infobip SMS credentials are not compatible because RCS requires a distinct payload format.
 * **Q: What does Fuzzy Opt-out do?** — It identifies SMS messages that indicate a user wants to unsubscribe even when the message does not exactly match a defined opt-out keyword, helping campaigns remain compliant.
 
+**Personas:**
+
+* **admin:** Can configure Infobip as the SMS vendor and set credential fields such as API base URL, API key, Principal Entity ID, and Content Template ID. Can set the Validity Period, Callback Data, and Inbound Number fields, and can enable Fuzzy Opt-out with a custom Fuzzy Auto Reply. Can select Use custom dataset for inbound to route inbound SMS for a credential to a pre-created dataset. The page states that the default validity period is set to 48 hours. Where: "Configure API credentials for SMS".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Select Create new API credentials in the API Credentials menu.
+* **Success check:** Selecting Verify connection sends a sample message to a designated device to test the SMS API credentials.
+* **Next:** Create your SMS webhook: Configure your SMS Webhook (mobile/mobile-webhook.md); Create a channel configuration for SMS and MMS messages: Configure the SMS configuration (mobile/mobile-configuration-surface.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 698c0ea1 -->

@@ -54,6 +54,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What does the SMS Execution Field do?** — It selects the phone number to use in priority among profile attributes; updating it overrides the default sandbox-level number for the journeys and campaigns using this configuration.
 * **Q: What do the Processing and Active statuses mean?** — After you submit, the configuration displays with the Processing status; once the checks are successful it gets the Active status and is ready to deliver messages.
 
+**Personas:**
+
+* **admin:** Can create a Mobile message channel configuration by selecting the SMS Type, Mobile configuration, Sender number, Opt-out number, Subdomain, and SMS Execution Field. The page states that configuration names must begin with a letter and contain only alpha-numeric characters, underscore, dot, or hyphen. Where: "Create a Mobile message configuration".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Browse to Administration > Channels, select General settings > Channel configurations, then select Create channel configuration.
+* **Success check:** Once the checks are successful, the channel configuration gets the Active status and is ready to deliver messages.
+* **Previous:** Configure a subdomain before selecting one in the SMS configuration: Configure subdomains for Mobile message (mobile/mobile-subdomains.md)
+* **Next:** Checks are not successful after submitting the configuration: Set up channel configurations (configuration/channel-surfaces.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 32fb415b -->
