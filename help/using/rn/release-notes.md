@@ -67,6 +67,25 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
   Availability date: November 5, 2026
 
+### Decisioning {#nov-26-decisioning}
+
+<table>
+<thead>
+<tr>
+<th><strong>Profile and context features for Personalized optimization models (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now enrich Personalized optimization AI models with profile and context features, in addition to or instead of audiences. When creating an AI model, select up to 50 profile attributes from your profile schema, such as loyalty tier or churn propensity score, and up to 20 context attributes sent with the decision request, such as device type, language or page URL. Models use these signals to score decision items in real time and deliver more relevant offers. Context features are only available for decisioning policies used in inbound channels.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>Availability date: November 3, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## October '26  release notes {#oct-26-release-notes}
 
 >[!BEGINSHADEBOX]
