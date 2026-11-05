@@ -48,6 +48,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Do I need engineering effort to set up a custom channel?** — No, administrators configure the channel through the Channel Builder UI; no custom code or engineering effort is required.
 * **Q: What are typical use cases for custom channels?** — Unsupported messaging platforms such as WeChat or Kakao Talk, custom delivery providers, legacy messaging gateways that expose an HTTP endpoint, and industry-specific channels such as healthcare or banking notifications.
 
+**Personas:**
+
+* **marketer:** Can add a custom channel to a journey or campaign and select a channel configuration. Can author the message payload using Journey Optimizer's personalization editor. The page states that custom channels support POST as the only HTTP method. Where: "How it works".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Add the custom channel to a journey or campaign and select a channel configuration.
+* **Success check:** Administrators and marketers can monitor the custom channel's performance and reliability through Journey Optimizer's reporting and monitoring dashboards.
+* **Previous:** Having used custom actions in Journey Optimizer journeys before and deciding whether to use a custom channel instead: Get started with actions (action/action.md); An administrator creates a custom channel and a linked channel configuration before a marketer adds it to a journey or campaign: Create a channel configuration for a custom channel (custom-channel/custom-channel-configuration.md)
+* **Next:** After the custom channel is configured, create a custom channel experience in a journey or campaign: Create custom channel experiences (custom-channel/create-custom-experience.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 3c3d40f2 -->

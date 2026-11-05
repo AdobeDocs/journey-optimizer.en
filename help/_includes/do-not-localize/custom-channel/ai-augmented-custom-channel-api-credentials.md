@@ -43,6 +43,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which channels appear when I create credentials?** — Only activated custom channels with an authentication type other than None.
 * **Q: Are credentials created automatically?** — Yes, an initial set is generated automatically when a channel using authentication is activated.
 
+**Personas:**
+
+* **admin:** Can view and edit API credential sets for a custom channel from Administration > Channels > Channel builder > API credentials. Can create additional credentials by selecting the channel, the authentication type, and filling in fields for API Key, Basic auth, or OAuth 2.0. The page states that only activated custom channels with an authentication type other than None appear in the Channel drop-down list. Where: "Manage API credentials".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Activate a custom channel configured with an authentication type other than None.
+* **Success check:** An initial set of API credentials is automatically generated for the channel.
+* **Next:** Delegate a subdomain for link tracking: Configure subdomains for custom channels (custom-channel/custom-channel-subdomains.md); Create a channel configuration: Create a channel configuration for a custom channel (custom-channel/custom-channel-configuration.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 69230800 -->
