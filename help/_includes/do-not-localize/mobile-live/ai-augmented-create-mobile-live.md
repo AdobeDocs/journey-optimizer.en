@@ -55,6 +55,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is `executionMetadata` for?** — Attaching your own custom data, such as an order ID, loyalty tier, or region code, to a profile; it is stored alongside the execution and retrievable from the Live activity feedback dataset. It is only available for API-triggered Transactional campaigns.
 * **Q: What are the `executionMetadata` limits?** — Up to 50 key/value pairs per profile with a combined 2 KB size limit; only string keys and values are accepted, and personalization expressions are not resolved. Metadata exceeding the limit is discarded, but the Live activity is still delivered.
 
+**Personas:**
+
+* **marketer:** Can create an API-triggered campaign in Journey Optimizer to start, update, and end Live activities for individual users or audiences. Select API-triggered Marketing for audience-based campaigns or API-triggered Transactional for individual campaigns, then choose Live activity in the Actions section. The page states that High Throughput should not be enabled for API-triggered Transactional campaigns. Where: "Create a Live activity".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Access the Campaigns menu, then select Create campaign.
+* **Success check:** You can track the impact of your Live activity with built-in reports.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: aa556e07 -->

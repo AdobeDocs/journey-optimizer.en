@@ -52,6 +52,15 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I pass additional data with the content card?** — In the Custom data section, click **Add Key/Value pair** to include custom variables in the payload.
 * **Q: How do I personalize loyalty challenge content with challenge metadata?** — In the personalization editor, **[!UICONTROL Challenge Data]** provides **[!UICONTROL Add loyalty challenge data]** to make challenge fields available for personalizing the content.
 
+**Personas:**
+
+* **marketer:** Can enter text in the Title and Body fields, and personalize the content using the Personalization icon. Can add media by URL or from the Assets library, and add buttons with a Title, Interact event, and Target field. Can choose a Dismiss button style of None, Simple, or Circle, and enter a Target URL for On Click behavior. Where: "Content tab".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Choose one of the three image layout options from the Content card layout section.
+
 +++
 
 <!-- ai-section-version: 4 | source-hash: 2f1ad411 -->

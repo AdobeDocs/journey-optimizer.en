@@ -45,6 +45,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I point a credential to the custom dataset?** — In the SMS API credentials, enable the Use custom dataset for inbound option and select the dataset you created.
 * **Q: What happens after the credentials are saved?** — Journey Optimizer validates the inbound keyword dataset; outbound and inbound messaging behavior is unchanged and inbound keywords for that credential are recorded in the selected custom dataset.
 
+**Personas:**
+
+* **admin:** Can create an Experience Event schema enabled for Profile with the field groups Adobe CJM ExperienceEvent - Message interaction details, Adobe CJM ExperienceEvent - Message Execution Details, and Adobe CJM ExperienceEvent - Message Profile Details. Can create a dataset from that schema, enable it for Profile, and select a Data retention policy. Can enable the Use custom dataset for inbound option in the SMS API credentials and select that dataset. The page states that if no custom dataset is configured, inbound keywords are stored in the system AJO Email Tracking Dataset. Where: "Configure API credentials".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Create an Experience Event schema enabled for Profile and add the required field groups.
+* **Success check:** Inbound keywords for that credential are recorded in the selected custom dataset after the credentials are saved.
+* **Previous:** Configure channel credentials for your SMS provider before selecting the custom inbound dataset: Configure the SMS channel (mobile/mobile-configuration.md); Understand where inbound keywords are stored when no custom dataset is configured: Get Started with datasets (data/get-started-datasets.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: aa7dfc23 -->

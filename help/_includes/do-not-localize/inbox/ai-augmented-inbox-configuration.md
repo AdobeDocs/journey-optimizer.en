@@ -49,6 +49,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I set where the inbox appears on the web?** — Enter or select the Page URL and define the in-page placement in Location on page.
 * **Q: How do I set where the inbox appears on iOS or Android?** — Enter the App id and specify the screen, route, or container in Location or path inside the app.
 
+**Personas:**
+
+* **admin:** Can create an Inbox channel configuration in Channel configurations and assign custom or core data usage labels through Manage access. Can associate consent policies to messages by selecting marketing action(s) for the configuration. Can set the Page URL and Location on page for Web, or App id and Location or path inside the app for iOS and Android. Where: "Configure Inbox".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Access the Channels, General settings, Channel configurations menu, then select Create channel configuration.
+* **Success check:** You can now select your configuration when creating your Inbox experience.
+* **Next:** create your Inbox experience using this configuration: Create Inbox (inbox/inbox-create.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 136c8f6a -->

@@ -51,6 +51,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What statuses can a composition have?** — Draft (in progress, not published) and Published (resulting audiences saved and available for use).
 * **Q: Can I use audience composition with Healthcare Shield or Privacy and Security Shield?** — No, use of audiences and attributes from audience composition is currently unavailable with Healthcare Shield or Privacy and Security Shield.
 
+**Personas:**
+
+* **marketer:** Can create a composition workflow by selecting Create Audience then Compose Audience from the Audiences menu. Can add activities such as Split, Exclude, Enrich, and Rank between the Audience and Save activities to build new audiences. The page states that up to 50 compositions can be published in a given sandbox. Where: "Create a composition workflow".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Access the Audiences menu and select Create Audience.
+* **Success check:** The composition's status shows Published, and the resulting audiences are saved into Adobe Experience Platform, ready to be targeted in Journey Optimizer.
+* **Next:** After publishing a composition, target the resulting audiences in Journey Optimizer campaigns and journeys: About Adobe Experience Platform audiences (audience/about-audiences.md); If an audience composition returns an error code: Audience composition errors (audience/audience-composition-errors.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 686fa503 -->

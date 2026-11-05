@@ -464,3 +464,5 @@ To develop and test an expression before publishing, use the [JSONata Exerciser]
 ➡️ Watch how to set up a loyalty reward provider
 
 >[!VIDEO](https://video.tv.adobe.com/v/3497346?quality=12)
+
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-reward-definition-guide.md}}

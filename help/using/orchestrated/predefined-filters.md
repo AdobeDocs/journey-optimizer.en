@@ -104,3 +104,5 @@ To edit or delete predefined filters, follow these steps:
 1. Select the ![ellipsis button](assets/do-not-localize/rule-builder-icon-more.svg) button next to a filter and choose the desired action.
 
 ![](assets/predefined-filters-edit.png)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-predefined-filters.md}}

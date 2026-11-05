@@ -57,4 +57,15 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where can Journey Optimizer add the token to delivery requests?** - Set `locationConfig.location` to `header` or `queryParam` and `locationConfig.key` to the header or query parameter name.
 * **Q: Does Journey Optimizer retrieve a token for every delivery request?** - When caching is enabled, it reuses the token for the configured cache duration.
 
+**Personas:**
+
+* **admin:** Can configure OAuth 2.0 authentication settings within the limits the page defines, such as an endpoint URI of up to 2048 characters and a timeout between 300 and 60000 milliseconds. The page states that cache ttlInSeconds must be between 300 and 3600 seconds when caching is enabled. Where: "Limits and validation rules".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select OAuth 2.0 as the authentication type while creating a custom channel.
+* **Previous:** Select OAuth 2.0 as the authentication type while creating a custom channel: Create a custom channel (custom-channel/create-custom-channel.md)
+* **Next:** Test the connection and activate your custom channel: Create a custom channel (custom-channel/create-custom-channel.md); Manage API credentials for your custom channel: Manage API credentials for custom channels (custom-channel/custom-channel-api-credentials.md)
+
 +++

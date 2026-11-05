@@ -50,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which proposition event channels are available?** — CBE, in-app, and content cards.
 * **Q: Which proposition event types are available?** — Dismissed, suppressed, displayed, triggered, interacted, and sent.
 
+**Personas:**
+
+* **developer:** Can review the AJO Inbound Latency graph to measure the time required to process inbound requests in milliseconds. Can use the latency distribution, including percentiles such as P50 and P90, to identify higher-latency requests. The page states that AJO Inbound Throughput measures the rate at which inbound records reach the Edge service, in records per second over time. Where: "AJO Inbound Latency".
+* **admin:** Can open Data Management > Monitoring > Edge, then select AJO throughput from the drop-down menu. Can use the AJO Gateway Throughput graph to monitor the overall volume of inbound requests handled by the gateway. The page states that the Monitoring workspace includes the Dashboard, Batch end-to-end, Streaming end-to-end, and Edge tabs. Where: "Monitor Journey Optimizer data in Edge".
+* **marketer:** Can review the AJO Inbound Proposition Events Throughput by Channel graph to compare proposition event activity across CBE, in-app, and content cards. Can use the AJO Inbound Proposition Events Throughput graph to review tracking signals generated when a user interacts with, views, or triggers a personalized offer. The page states that proposition event types include dismissed, suppressed, displayed, triggered, interacted, and sent. Where: "AJO Inbound Proposition Events Throughput by Channel".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Select AJO throughput from the drop-down menu in Data Management > Monitoring > Edge.
+* **Success check:** The AJO Gateway Throughput graph shows the total number of records processed by the Journey Optimizer gateway per second over time.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 5f5db9a4 -->

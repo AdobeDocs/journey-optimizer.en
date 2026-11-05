@@ -53,6 +53,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can a business event be combined with unitary events?** — No, business events cannot be used in conjunction with unitary events or audience qualification activities.
 * **Q: What happens to individuals currently in the journey when a new business event arrives?** — Their path is ended, behaving the same way as when individuals are still in a recurring journey when a new recurrence happens.
 
+**Personas:**
+
+* **developer:** Can select the fields in the XDM schema that the event expects to receive, including the required _id and timestamp fields. Can preview the payload to validate the payload definition before sharing it with the person responsible for sending events. The page states that the payload of a business event is limited to a maximum of 64 KB of uncompressed, minified JSON. Where: "Define the payload fields".
+* **admin:** Can create a business event in the Configurations section under Events, then select Manage and Create Event to define its name and description. Can select the Business type and activate the option in the Execution section of the journey properties to allow multiple business event executions. The page states that the event name allows only alphanumeric characters and underscores, with a maximum length of 30 characters. Where: "Get started with business events".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** In the ADMINISTRATION menu section, select Configurations, then select Manage in the Events section.
+* **Success check:** The event is now configured and ready to be dropped into a journey.
+* **Previous:** Learn more about business events in general before configuring one: Work with journey events (event/about-events.md)
+* **Next:** Configure additional steps to send events to the journey after creating the event: Additional steps to send events to a journey (event/additional-steps-to-send-events-to-journey.md); Test the business event by passing event parameters and a single test profile: Test your journey (building-journeys/testing-the-journey.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 4d89d738 -->

@@ -69,6 +69,18 @@ For complete understanding, this information should be combined with the documen
 * Previewing and testing content: Learn how to preview and test content (content-management/preview-test.md)
 * Next step, defining the audience: Learn more (campaigns/api-triggered-campaign-audience.md)
 
+**Personas:**
+
+* **developer:** Can personalize message content with contextual data passed in the API payload. Can reference this data in the message using the context syntax, naming the variable from the API payload. The page states that contextual attributes cannot exceed 200kb and are always considered of type string. Where: "Personalize content using contextual data".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Navigate to the Content tab or select the Edit content button.
+* **Success check:** You can preview the message content using Simulate content.
+* **Previous:** High Throughput campaigns do not rely on Adobe profiles and are available only for email in the US region: Activate High throughput mode for API triggered campaigns (campaigns/api-triggered-high-throughput.md)
+* **Next:** Content is defined and ready to preview and test: Preview and test your content (content-management/preview-test.md); Campaign configuration and content are ready: Define the API triggered campaign audience (campaigns/api-triggered-campaign-audience.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 45115869 -->

@@ -43,5 +43,17 @@ For complete understanding, this information should be combined with the documen
 - **Q: What permission is needed to publish orchestrated campaigns?** — Publish orchestrated campaigns (under Orchestrated campaigns); this permission is also required to trigger an Orchestrated campaign using a signal.
 - **Q: What does the Simulate Journeys permission cover?** — Read, create, and edit of Simulation in Journeys.
 
+**Personas:**
+
+* **admin:** Can assign the Manage Allowed IPs or View Allowed IPs permission to control access to the Allowed list IPs feature. Can assign the Manage sandboxes, Reset sandboxes, Share sandboxes, or Export sandboxes permission for sandbox administration. The page states that high-level permissions encompass low-level permissions. Where: "Built-in permissions".
+* **marketer:** Can use the Manage journeys permission to create, edit, stop, and delete journeys in Journey Optimizer. Can use the Publish journeys permission to publish, start test mode, start dry run, pause, and resume journeys. Can use the Manage messages permission to create, edit, and delete messages. Where: "Built-in permissions".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Review the built-in permissions available for each capability.
+* **Success check:** You can assign roles the precise rights your users need to work in Journey Optimizer.
+* **Next:** For more detail on how high-level permissions relate to low-level permissions: Permission levels (administration/high-low-permissions.md); To manage the Allowed list IPs feature referenced by the Manage Allowed IPs permission: Manage allowed IPs (configuration/waf-ip-allowlist.md)
+
 +++
 <!-- ai-accordion-version: 1 | source-hash: e69cffd6 -->

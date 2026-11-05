@@ -56,6 +56,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does an image in my Content Fragment not render?** — The image URL may be a relative path; use absolute URLs (`https://...`), since relative paths from Adobe Experience Manager are not supported.
 * **Q: Can I proof a specific historical version of a fragment?** — No; proofs always reflect the most recently published version and you cannot lock a historical version for proofing.
 
+**Personas:**
+
+* **marketer:** Can insert Simple, nested, or variation Content Fragments in Journey Optimizer, and the Main variation is used when none is selected. Can personalize fragments using profile attributes, contextual attributes, static strings, and pre-declared variables. The page states that derived or computed attributes are not supported. Where: "Key considerations".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Choose the variation when you insert the fragment in Journey Optimizer.
+* **Success check:** After a successful update, changes are typically available within about 5 minutes for unitary journeys and in the next batch for batch use cases.
+* **Previous:** Journey Optimizer integrates with the Adobe Experience Manager Author and Publish tiers: AEM Content Fragments (integrations/aem-fragments-gs.md)
+* **Next:** Check the Adobe Experience Manager repository configuration and credentials: Configure AEM Repository Settings (integrations/aem-admin-settings.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 0a6ef1bf -->

@@ -57,6 +57,18 @@ For complete understanding, this information should be combined with the documen
 * Step 6, review and activation: Review & activate the Action campaign (campaigns/review-activate-campaign.md)
 * Complete campaign creation workflow with type-specific guides: Get started with campaigns (campaigns/get-started-with-campaigns.md#workflow)
 
+**Personas:**
+
+* **marketer:** Can create Action campaigns for ad-hoc batch communications such as promotional offers, engagement campaigns, announcements, legal notices, or policy updates. Can follow six steps in order: define the campaign properties, configure the campaign action, edit the content, define the audience, schedule the campaign, then review and activate it. Can optionally send using waves during scheduling to deliver the message in batches over time. The page states that available channels vary based on licensing model and add-ons. Where: "Key steps for Action campaigns creation".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Define the Action campaign properties.
+* **Success check:** The campaign reaches the final listed step, review and activate the Action campaign.
+* **Previous:** Before creating a campaign, check the prerequisites: Get started with campaigns (campaigns/get-started-with-campaigns.md)
+* **Next:** After defining the campaign properties, configure the campaign action: Configure the campaign action (campaigns/campaign-action.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 130ddd40 -->

@@ -53,6 +53,20 @@ For complete understanding, this information should be combined with the documen
 * **Q: What are the three campaign types?** — Action campaigns (scheduled batch sends), API-triggered campaigns (real-time, event-driven messaging via API), and Orchestrated campaigns (complex, multi-step workflows with a visual canvas).
 * **Q: Are real-time customer profiles, sandboxes, and schemas defined here?** — No. Those are Adobe Experience Platform concepts; refer to the Adobe Experience Platform glossary for their definitions.
 
+**Personas:**
+
+* **admin:** Can configure channel settings, including sender details, subdomain, IP pool, and message type. Can manage sandboxes, where data, audiences, journeys, campaigns, and settings exist independently. The page states that sending to suppressed addresses is blocked to protect deliverability and sender reputation. Where: "Data & configuration terms".
+* **developer:** Can trigger API-triggered campaigns through an external API call for real-time, event-driven messaging such as order confirmations or password resets. Can personalize these campaigns using profile attributes plus API payload context. The page states that API-triggered campaigns are activated through an external API call. Where: "Campaign types".
+* **marketer:** Can build journeys made of connected steps that guide customers through experiences over time. Can create Action campaigns, API-triggered campaigns, or Orchestrated campaigns to deliver content across one or more channels. The page states that campaigns execute actions simultaneously to a specific audience, unlike journeys. Where: "Journey & campaign terms".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Start with the five core concepts.
+* **Success check:** You can quickly identify which capability fits your needs using the disambiguation tables below.
+* **Previous:** See how journeys, campaigns, profiles, and channels fit together in the product architecture: Understanding Journey Optimizer (start/understanding-ajo.md)
+* **Next:** Compare Decisioning and Decision Management side by side and choose the right approach for your implementation: Get started with [!DNL Journey Optimizer] decision capabilities (experience-decisioning/gs-decision.md); Learn how to build event-triggered, sequential customer experiences step by step: Get started with journeys (building-journeys/journey.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 5c3a6b72 -->

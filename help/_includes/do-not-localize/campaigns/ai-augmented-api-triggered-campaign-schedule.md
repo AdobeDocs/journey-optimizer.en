@@ -61,6 +61,17 @@ For complete understanding, this information should be combined with the documen
 
 * Next step, review and activation: Learn more (campaigns/review-activate-api-triggered-campaign.md)
 
+**Personas:**
+
+* **developer:** Can enable Throttle delivery in Delivery settings and set a Delivery rate per second for Email, Mobile messages, and Push notifications. Can apply rate control to prevent overload on downstream systems such as landing pages or customer care platforms. The page states that the delivery rate supports 1 to 2000 messages per second, with a 12 hour maximum execution timeframe for the campaign audience. Where: "Set rate control".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Enable the Throttle delivery option in the Delivery settings section and specify the desired Delivery rate per second.
+* **Success check:** You can see the count of these excluded profiles in the campaign report.
+* **Next:** When your campaign configuration and content are ready: Review & activate the API triggered campaign (campaigns/review-activate-api-triggered-campaign.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d0f88a1a -->

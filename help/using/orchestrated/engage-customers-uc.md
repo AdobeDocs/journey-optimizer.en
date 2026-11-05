@@ -149,3 +149,5 @@ For customers at low and medium risk of churn, set up a multi-step campaign aime
 1. Create the message content for each channel including profile attributes, such as the recipient's name, along with enrichment data like Wishlist items, to personalize each message.
 
     ![](assets/uc-interest-13.png){zoomable="yes"}
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-engage-customers-uc.md}}

@@ -123,3 +123,5 @@ When you reach the end of a branch, you can add an **[!UICONTROL End]** activity
 After you add channel activities to the canvas, [learn how to add personalization](add-personalization.md) in email, mobile, and other messages.
 
 When the canvas is ready, execute the Orchestrated campaign and track the progress of its tasks. [Learn how to start an Orchestrated campaign and monitor its execution](start-monitor-campaigns.md)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-orchestrate-activities.md}}

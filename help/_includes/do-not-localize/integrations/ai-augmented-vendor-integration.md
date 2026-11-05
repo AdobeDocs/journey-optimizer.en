@@ -47,6 +47,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Must I use only the listed vendors?** — No; you can use any external platform that exposes a compatible API.
 * **Q: Which HTTP method do the samples use?** — Typically GET, unless noted otherwise; some delivery calls, such as Adobe Target Recommendations, use POST with a JSON body.
 
+**Personas:**
+
+* **marketer:** Can create an integration in Journey Optimizer by selecting Create Integration, then enter an integration name without spaces. Can prefer single-resource or single-product retrieval over broad list, bulk, or pagination endpoints, and map only the attributes required for personalization. The page states that secrets or API keys must not be embedded in message content and should be rotated per your policies. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Go to Configurations, then Manage, and select Create Integration.
+* **Success check:** Fields from the sample JSON response are detected and available to map for personalization.
+* **Previous:** Enable the Integrations feature before creating a vendor integration: Enable External Integrations (integrations/integrations.md)
+* **Next:** Add the activated integration in content authoring and use its data in message templates: Using External Integrations (integrations/integrations-personalization.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d00ab410 -->

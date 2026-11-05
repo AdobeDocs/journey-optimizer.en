@@ -31,6 +31,10 @@ level_v2:
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## November 2026 {#november-2026}
+
+* The **Coworker for journeys** and **Coworker for Loyalty** pages now include how-to videos that show Coworker creating a journey from a natural language prompt or an image, creating, simulating, and analyzing a cross-channel journey, comparing journey versions, simulating a journey, and creating a loyalty challenge. [Read more](../building-journeys/journeys-coworker-skills.md#journey-create-videos)
+
 ## October 2026 {#october-2026}
 
 * The **Activate High throughput mode for API-triggered campaigns** page has a new **Configure High throughput API-triggered campaigns** section. It provides step-by-step guidance to set up High throughput yourself in the UI, with no request to Adobe Customer Care: create a dedicated IP pool and a High throughput email channel configuration for email, or a High throughput push channel configuration for push. [Read more](../campaigns/api-triggered-high-throughput.md#configure-high-throughput)

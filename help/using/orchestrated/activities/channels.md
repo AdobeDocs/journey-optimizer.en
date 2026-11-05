@@ -358,3 +358,4 @@ Email recipients are defined upstream of the activity in the same workflow, via 
 
 <!--The message preparation is triggered according to the workflow execution parameters. From the message dashboard, you can select whether to request or not a manual confirmation to send the message (required by default). You can start the workflow manually or place a scheduler activity in the workflow to automate execution.-->
 
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-channels.md}}

@@ -49,6 +49,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I query WhatsApp interaction data?** — Use the `ajo_email_tracking_experience_event_dataset` table in Query Service.
 * **Q: What can I do with the captured interaction fields?** — Build audiences, run queries, and analyze WhatsApp engagement.
 
+**Personas:**
+
+* **marketer:** Can preview WhatsApp message content using Simulate content or Simulate content (AEP profiles), then check warnings and errors before testing, activating, or publishing. Can complete the journey or campaign configuration to send the message, and analyze interaction data captured under the whatsAppChannelContext field group. The page states that errors prevent testing, activating, or publishing until resolved. Where: "Send your WhatsApp messages".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select Simulate content to preview your WhatsApp message content.
+* **Success check:** You can check warnings and errors in the upper section of the editor.
+* **Previous:** Learn how to simulate content variations before previewing your message: Simulate content variations (test-approve/simulate-sample-input.md); Learn more about previewing and testing content: Preview and test your content (content-management/preview-test.md)
+* **Next:** Request approval before sending if your campaign is subject to an approval policy: Get started with journeys & campaigns approval (test-approve/gs-approval.md); Complete the journey configuration to send the message: Publish the journey (building-journeys/publish-journey.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: ddf62cd4 -->

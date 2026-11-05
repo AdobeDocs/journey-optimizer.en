@@ -130,3 +130,5 @@ In the following example, the **[!UICONTROL Split]** activity is used to segment
 * **Complement transition**: captures any remaining profiles who do not meet the criteria for either subset.
 
 ![](../assets/orchestrated-split-3.png)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-split.md}}

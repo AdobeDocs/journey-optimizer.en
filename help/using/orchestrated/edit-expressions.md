@@ -795,3 +795,5 @@ The string functions are used to manipulate a set of strings.
   </tr> 
  </tbody> 
 </table>
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-edit-expressions.md}}

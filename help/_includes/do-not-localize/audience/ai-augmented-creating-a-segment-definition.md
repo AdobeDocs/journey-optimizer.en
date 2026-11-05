@@ -53,6 +53,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How long does backfilling take?** — Backfilling the audience from prior data can take up to 24 hours after the audience is first defined.
 * **Q: How many audiences can I evaluate on demand at once?** — You can evaluate up to 20 audiences at a time with flexible audience evaluation, and ineligible audiences are automatically excluded.
 
+**Personas:**
+
+* **marketer:** Can create a segment definition by selecting Create audience and then Build rule from the Audiences menu. Can drag attributes and events into the workspace, then choose a streaming, batch, or edge evaluation method for the audience. Can run flexible audience evaluation on up to 20 audiences at a time before targeting them in journeys or campaigns. The page states that backfilling the audience from prior data can take up to 24 hours after the audience is first defined. Where: "Create a segment definition".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** From the Audiences menu, select Create audience, then select Build rule.
+* **Success check:** The audience displays in the list of Adobe Experience Platform audiences after it is saved.
+* **Next:** After creating and saving the audience, before using it in journeys: About Adobe Experience Platform audiences (audience/about-audiences.md); When responding to a message sent earlier in the same journey instead of rebuilding the logic as an audience: Reactions events (building-journeys/reaction-events.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 9453f4a3 -->

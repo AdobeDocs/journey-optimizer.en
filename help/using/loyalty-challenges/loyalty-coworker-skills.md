@@ -56,6 +56,8 @@ Loyalty skills empower loyalty administrators and analysts to create, manage, an
 
 Loyalty Challenge Management enables Journey Optimizer users to create and manage loyalty challenges in Coworker using natural language prompts. For comprehensive documentation on creating, configuring, and managing loyalty challenges, including detailed setup instructions, refer to the [Loyalty Challenges guide](get-started.md).
 
+➡️ [Discover this feature in video](#loyalty-challenge-management-videos)
+
 ### Key use cases
 
 | Use Case | Description | Skills | Sample Prompts |
@@ -83,6 +85,12 @@ The following functionalities are currently not supported:
 
 * Challenge deletion
 * Full content authoring automation for challenge messaging in all cases
+
+### How-to videos {#loyalty-challenge-management-videos}
+
+Learn how Coworker creates, manages, and optimizes loyalty challenges in this video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496528?quality=12)
 
 ## Loyalty Insights Skill {#loyalty-data-insight}
 

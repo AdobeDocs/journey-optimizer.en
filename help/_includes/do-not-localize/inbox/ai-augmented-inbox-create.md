@@ -47,6 +47,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How are individuals identified?** — In the Identity namespace field, choose the namespace used to identify the individuals from the selected segment.
 * **Q: What can I do after creating this Inbox?** — You can choose this Inbox when creating your Content card campaign.
 
+**Personas:**
+
+* **marketer:** Can create a campaign that uses the Inbox action to deliver messages to an inbox. Can select or create an Inbox configuration, design the message in the content designer, and select an audience and an identity namespace. The page states that the campaign must be reviewed and activated to send messages to the inbox. Where: "Create an Inbox".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Create a campaign.
+* **Success check:** You can now choose this Inbox when creating your Content card campaign.
+* **Previous:** Complete the Inbox configuration before creating an inbox: Inbox configuration (inbox/inbox-configuration.md); Create a campaign before adding the Inbox action: Create an Action campaign (campaigns/create-campaign.md)
+* **Next:** Design the message using the content designer: Design Inbox (inbox/inbox-design.md); Choose this Inbox when creating a Content card campaign: Create content cards (content-card/create-content-card.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 03fa0a5d -->

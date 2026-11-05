@@ -219,3 +219,5 @@ Continue by creating a relationship between the **loyalty rewards** schema and t
 ![](assets/schema_3.png)
 
 If a schema or dataset returns an error code, see [Relational schema and dataset errors](relational-schema-errors.md).
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-file-upload-schema.md}}

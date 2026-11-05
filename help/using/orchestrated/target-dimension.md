@@ -81,3 +81,5 @@ Start by setting up campaign orchestration by mapping a relational schema to the
      ![](assets/target-dimension-5.png)
 
 After configuring the **[!UICONTROL Target Dimension]**, proceed to create and set up your **[!UICONTROL Channel Configuration]** and define the corresponding **[!UICONTROL Execution Details]**.
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-target-dimension.md}}

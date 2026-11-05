@@ -49,6 +49,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How does inline attribute editing work?** — Type `{{` in any text field in the Email Designer or Push channel editor to open an autocomplete dropdown at the cursor position. Start typing to filter profile attributes, then select one to insert it as a personalization token. Only profile attributes are available inline.
 * **Q: What can Generate Content do in the personalization editor?** — It can generate new personalization expressions from natural language descriptions, explain what existing code does, and fix issues in a selected expression — then apply the output when it matches your intent.
 
+**Personas:**
+
+* **developer:** Can enable datasets for lookup personalization through an API call before using them in Journey Optimizer. Can build expressions with profile fields such as profile.person.name.firstName from the XDM Individual Profile schema. The page states that the XDM Individual Profile schema is the only schema usable for personalization in Journey Optimizer. Where: "Data used for personalization".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Type `{{` in any text field.
+* **Success check:** An inline autocomplete dropdown opens at the cursor position.
+* **Next:** When you want to personalize content using behavioral events summarized into profile attributes: Work with computed attributes (audience/computed-attributes.md); When you want to enable Adobe Experience Platform datasets for lookup personalization: Use Adobe Experience Platform data for personalization (personalization/aep-data-perso.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 96d1ccb2 -->

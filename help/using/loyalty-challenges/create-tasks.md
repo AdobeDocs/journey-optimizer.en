@@ -187,3 +187,4 @@ Learn how to create and configure tasks with this step-by-step tutorial:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496442?quality=12)
 
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-create-tasks.md}}

@@ -51,6 +51,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What time zone does the countdown timer End time use?** — GMT (Greenwich Mean Time) only; the system does not accept other time zones.
 * **Q: How do I deliver an asset in its original format such as GIF or SVG?** — The asset selector returns a `/images`-based URL, so you must manually update the URL to use the `/content` path instead.
 
+**Personas:**
+
+* **marketer:** Can insert an Adobe Experience Manager dynamic media asset using the asset selector and adjust parameters such as height, width, rotate, and flip. Can personalize the text overlay with different text per treatment, and add a dynamic media template through the Image, Dynamic Media Template, or Html component. The page states that the Layer parameter is required to update the text overlay, and the countdown End time must be entered in GMT. Where: "Add and manage Dynamic media".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Drag and drop an HTML component into your content and select Show the source code.
+* **Success check:** Your content includes the dynamic media, and updates made in Experience Manager automatically appear in Journey Optimizer.
+* **Next:** Use the personalization editor to add personalized content to template fields: Personalize content in Journey Optimizer (personalization/personalize.md); Apply conditional content to generate different variants of the dynamic media template: Create dynamic content (personalization/dynamic-content.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 1b680601 -->

@@ -50,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How are the Channel settings set up?** — Reach out to your Adobe representative to set up your Channel settings.
 * **Q: Can the Channel settings be configured through the API?** — Yes, the page describes an API (POST to the channel-settings endpoint) that sets up Channel settings storing the authorization and configuration details needed to connect to the LINE Messaging API.
 
+**Personas:**
+
+* **admin:** Can create a LINE channel configuration from Channel configurations by entering a name, an optional description, and selecting the LINE channel. Can assign usage labels through Manage access, select Marketing actions for consent policies, choose message type, map LINE user ID, and enter the Sender Name. The page states that configuration names must begin with a letter (A-Z) and can only contain alphanumeric characters, underscore, dot, and hyphen. Where: "Configure LINE channel in Journey Optimizer".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Access the Channels > General settings > Channel configurations menu, then select Create channel configuration.
+* **Success check:** You can now select your configuration when creating your LINE message.
+* **Previous:** Capturing and stitching the LINE user ID to a unified profile before mapping it in the configuration: Get Started with Identities in Journey Optimizer (audience/get-started-identity.md)
+* **Next:** Assigning custom or core data usage labels to the configuration through Manage access: Object level access control (administration/object-based-access.md); Associating consent policies to the messages using the configuration through Marketing actions: Work with consent policies (action/consent.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 82426502 -->

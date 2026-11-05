@@ -43,6 +43,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: If I change an offer decision used in a journey message, do updates apply automatically?** — When you update an offer, fallback offer, offer collection, or offer decision referenced in a message, updates are automatically reflected; however, if the offer decision is used in a journey's message, you must unpublish and republish the journey.
 * **Q: How do I preview offers per profile?** — Use Simulate content to add test profiles, then use the Preview tab and select a test profile to see the corresponding offer.
 
+**Personas:**
+
+* **marketer:** Can add an Offer decision content component to an email, then select a placement and matching decision to display personalized offers. The page states that only decisions compatible with the selected placement display in the list. Where: "Insert a decision in an email".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Create your email, then open the Email Designer to configure its content.
+* **Success check:** The offer corresponding to the selected test profile is displayed in the Preview tab.
+* **Previous:** Before starting, you must define an offer decision: Create decisions (offers/offer-activities/create-offer-activities.md); Learn how to use content components to add the Offer decision content component: Use Email Designer content components (email/content-components.md)
+* **Next:** To test content variations with sample input data or AI auto-generation instead of test profiles: Simulate content variations (test-approve/simulate-sample-input.md); Learn more about Adobe Experience Platform identity namespaces used in the Identity namespace field: Get Started with Identities in Journey Optimizer (audience/get-started-identity.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 53b79ca6 -->

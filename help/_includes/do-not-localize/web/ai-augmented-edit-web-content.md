@@ -52,6 +52,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: When should I use Browse mode?** — When you need to reach pages behind authentication or not available at a starting URL, or to navigate through all views when authoring single-page applications.
 * **Q: Do device-size edits apply only to that device?** — No; as long as the selectors are the same, changes apply to all sizes and devices, and device size-specific page changes are not supported.
 
+**Personas:**
+
+* **marketer:** Can open the web designer from the Action tab of the campaign or the web experience activity and select Edit content to start authoring a page. Can select elements on the canvas and use the contextual menu and right panel to edit, duplicate, delete, or hide them. The page states that the web page must include the Adobe Experience Platform Web SDK. Where: "Work with the web designer".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** From the Action tab of the campaign or the web experience activity in the journey, select Edit content.
+* **Success check:** The web designer displays.
+* **Previous:** Before editing content, add a web experience to a journey or a campaign: Create web experiences (web/create-web.md); Before authoring web pages in the interface, complete the web channel prerequisites: Web channel prerequisites (web/web-prerequisites.md)
+* **Next:** After editing content, view and manage the modifications added to the web experience: Manage web modifications (web/manage-web-modifications.md); After editing content, monitor the web experience: Monitor your web experiences (web/monitor-web-experiences.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 920b1eca -->

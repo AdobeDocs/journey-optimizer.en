@@ -154,6 +154,17 @@ Note the error code, the message, the request ID, and the campaign, journey, or 
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
 * Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
+**Personas:**
+
+* **marketer:** Can find the cause and the fix for the error and warning codes when validating or publishing email, push, SMS, in-app, or direct mail content. Can use the error code, the message, and the fix in the page's tables to correct the issue before saving or publishing again. The page states that codes with the status 200 are warnings and do not block saving or publishing. Where: "Content authoring errors".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Find the error code, number, and HTTP status in the message, then locate it in the page's tables.
+* **Success check:** The row for that code shows the fix, and after applying it the content saves or publishes without the error reappearing.
+* **Next:** When the error has a different prefix than CJMMAS or CJMRT: Error codes reference (building-journeys/error-codes-reference.md); When an in-app message exceeds the size limit: Journey Optimizer guardrails and limitations (start/guardrails.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 1a8fc167 -->

@@ -45,6 +45,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: What should you do before large-scale deletions?** — Validate and export any required delivery or reporting data.
 * **Q: How can you reconcile data after data hygiene?** — Coordinate with Adobe support to access archived logs, or use Message Feedback Event Dataset queries for recent data.
 
+**Personas:**
+
+* **marketer:** Can configure and schedule data lifecycle operations using the Data Lifecycle menu to keep records accurate, used as intended, and deleted per organizational policies. Can delete identities or datasets as part of data hygiene operations. The page states that data lifecycle capabilities are only available for organizations that have purchased the Healthcare Shield and Privacy and Security Shield add-on offerings. Where: "Perform data lifecycle operations".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Configure and schedule data lifecycle operations using the Data Lifecycle menu.
+* **Success check:** Your records are properly maintained.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 99c250da -->

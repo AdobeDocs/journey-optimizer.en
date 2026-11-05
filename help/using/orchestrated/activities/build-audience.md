@@ -69,3 +69,5 @@ Here is an example of an Orchestrated campaign with two **[!UICONTROL Build audi
 In the example below, the **[!UICONTROL Build audience]** activity uses the rule builder to filter profiles by their subscription plan. A condition is set on the `plan` attribute to include only profiles where `plan = "basic"`, narrowing the audience to basic-tier subscribers before passing them to the next activity.
 
 ![](../assets/build-audience-plan.png){width="50%"}
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-build-audience.md}}

@@ -53,6 +53,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: What schemas are available for a System Generated event?** — Only schemas that have the eventID type field; for Rule Based events, you can select any Experience Event schema available in your sandbox.
 * **Q: How do I preview the payload for a system-generated event?** — Save the event and re-open it first to generate an event ID, then use the View Payload icon to check the preview.
 
+**Personas:**
+
+* **developer:** Can define the schema and payload fields an event expects to receive for use in the journey. Can define the profile identifier, the field or combination of fields that identifies the person associated to the event. The page states that the same key, for example CRMID=3224, cannot be at two different places in the same journey. Where: "Define the profile identifier".
+* **admin:** Can create a unitary event, name it, and choose the Rule Based or System Generated Event ID type. Can add an identity type to leverage information stored in the Real-time Customer Profile Service. The page states that the event name allows only alphanumeric characters and underscores, with a maximum length of 30 characters. Where: "Configure a unitary event".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** Select Create Event to create a new event.
+* **Success check:** The event is now configured and ready to be dropped into a journey.
+* **Previous:** Understand what a unitary event is before configuring one: Work with journey events (event/about-events.md)
+* **Next:** After saving the event, complete the additional steps to send events to a journey: Additional steps to send events to a journey (event/additional-steps-to-send-events-to-journey.md); Use the configured key to perform queries on Adobe Experience Platform in journey activities: Get started with journey activities (building-journeys/about-journey-activities.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 3c8e5ec1 -->

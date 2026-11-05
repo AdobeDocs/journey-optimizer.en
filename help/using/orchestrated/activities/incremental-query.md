@@ -101,3 +101,4 @@ The following example sends a welcome email to profiles who have just become gol
 
 ![Incremental query activity configuration in the Orchestrated campaign canvas](../assets/incremental-query-example.png)
 
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-incremental-query.md}}

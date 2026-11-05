@@ -43,6 +43,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: When should I not use push?** — When opt-in rates are low, the message needs long-form content, the content is sensitive and should not appear on a lock screen, or most users are on desktop.
 * **Q: How do I check a profile's push consent status?** — In the AEP profile viewer, via Check push opt-out status.
 
+**Personas:**
+
+* **marketer:** Can create a push notification in a Journey by adding a Push activity, or in a Campaign by selecting Push notification as the action. Can define push notification settings for iOS, Android, and Web platforms using dedicated tabs. The page states that push notifications do not require opt-out management, since recipients unsubscribe through their devices or mobile OS and browser settings. Where: "FAQ".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Use the Actions: Push right pane to create the content for the push notifications.
+* **Previous:** configuring the Push channel for the first time: Push Notification flow in Adobe Journey Optimizer (push/push-gs.md); creating a journey to add a Push activity: Create your first journey (building-journeys/journey-gs.md)
+* **Next:** checking a profile's push consent status: Manage opt-out (privacy/opt-out.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: dbe9001f -->

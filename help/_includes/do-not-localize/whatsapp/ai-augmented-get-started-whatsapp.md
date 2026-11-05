@@ -50,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I use a third-party BSP with this integration?** — No, the native integration does not allow integration with third-party Business Service Providers.
 * **Q: When should I not use WhatsApp?** — When your audience does not use it, recipients have not opted in, the message is urgent and needs guaranteed delivery, the content is lengthy or complex, or real-time conversational support is not feasible.
 
+**Personas:**
+
+* **marketer:** Can send marketing template messages through the WhatsApp channel. Delivery to United States phone numbers, with a +1 dialing code and US area code, has been suspended since April 2025. The page states that automated or predefined response messages are not yet supported for the WhatsApp channel. Where: "Limitations".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Add a WhatsApp activity to a journey and define basic settings.
+* **Success check:** You can browse to the Actions: WhatsApp right pane to create the WhatsApp message content.
+* **Previous:** To create a journey before adding a WhatsApp activity: Create your first journey (building-journeys/journey-gs.md)
+* **Next:** Add WhatsApp as the action in a campaign: Configure the campaign action (campaigns/campaign-action.md); Trigger WhatsApp messages through an API-triggered campaign: Work with API triggered campaigns (campaigns/api-triggered-campaigns.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 16423cf6 -->

@@ -51,6 +51,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which predefined attributes are available?** — Message profile id, Offer id, Source action id, Source action name, Source id, Source name, and Source version id.
 * **Q: Where can I capture these parameters?** — In web analytics tools such as Adobe Analytics or Google Analytics, and in performance reports.
 
+**Personas:**
+
+* **admin:** Can define URL tracking parameters at the email channel configuration level, adding up to 10 parameters with Add new parameter. Can enter Name and Value fields, with each Value field holding up to 5 KB of characters. The page states that activating URL tracking parameters is optional and that the order of appended parameters is random and cannot be controlled. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select Add new parameter to define a URL tracking parameter for your email channel configuration.
+* **Success check:** The preview automatically updates to show the resulting tracking URL each time you add, edit, or remove a parameter.
+* **Previous:** to create the email channel configuration where URL tracking parameters are defined: Configure email settings (email/email-settings.md)
+* **Next:** to personalize a Value field with contextual attributes using the personalization editor: Add personalization (personalization/personalization-build-expressions.md); to add dynamic personalized tracking parameters to links in the email content: Personalize email configuration settings (email/surface-personalization.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 02132b8a -->

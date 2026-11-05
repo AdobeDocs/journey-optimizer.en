@@ -48,6 +48,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can a Campaign action be used with an audience qualification event?** — No, you cannot use a Campaign action with an audience qualification event.
 * **Q: How do I update a Campaign action when the Real-Time endpoint changes?** — Edit the action, update the URL field with the new RT endpoint, adjust the Payload if needed, click Test to validate the connection, then Save.
 
+**Personas:**
+
+* **developer:** Can build the JSON payload for each Campaign transactional message, using the channel, eventType, email, and ctx fields. The page states that ctx is the payload object holding variables based on the personalization in the message. Where: "Prerequisites".
+* **admin:** Can configure one action in Journey Optimizer for each Adobe Campaign template to use. The page states that the system caps messages sent over to 4,000 per 5 minutes, based on the current Campaign SLA. Where: "Guardrails and limitations".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Create a new action in Journey Optimizer for the Campaign transactional message.
+* **Success check:** The test returns a successful response, confirming the connection to the new endpoint.
+* **Previous:** Learn how to create a custom action before creating a Campaign action: Get started with actions (action/action.md)
+* **Next:** Use the Campaign action activity available in the journey designer palette: Adobe Campaign v7/v8 actions (building-journeys/using-adobe-campaign-v7-v8.md); See an end-to-end use case for sending a message using Campaign v7/v8: Send a message using Campaign v7/v8 (building-journeys/ajo-ac.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 6a049c54 -->

@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Does Rapid delivery mode send messages in test mode?** — No, in test mode messages are not sent via the Rapid delivery mode.
 * **Q: How can I preview my push content?** — Use test profiles or sample input data uploaded from a CSV / JSON file or added manually.
 
+**Personas:**
+
+* **marketer:** Can add a Push action to a journey or select Push notification in a campaign's Actions section, then select or create a push configuration. Can apply capping rules using the Business rules drop-down, use Send time optimization, and preview content with test profiles or sample CSV / JSON data. The page states that Rapid delivery mode requires audiences under 30M profiles, no personalization, and allows up to 5 simultaneous campaigns. Where: "Create the push notification in a journey or campaign".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Open your journey then drag and drop an Action activity from the Actions section of the palette.
+* **Success check:** Once your message content has been defined, you can preview its content using test profiles or sample input data.
+* **Previous:** create your first journey before adding a push action: Create your first journey (building-journeys/journey-gs.md); get started with campaigns before creating a push notification campaign: Get started with campaigns (campaigns/get-started-with-campaigns.md)
+* **Next:** design push notification content after configuring the action: Design a push notification (push/design-push.md); preview push content using test profiles or sample data: Check and send your push notification (push/send-push.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 5cfde834 -->

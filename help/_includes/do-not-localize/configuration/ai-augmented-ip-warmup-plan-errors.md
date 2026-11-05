@@ -120,6 +120,18 @@ For complete understanding, this information should be combined with the documen
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
 * Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
+**Personas:**
+
+* **admin:** Can configure an IP warmup plan with a unique name, an active channel configuration that has the email channel and is of the marketing type. Can set a run send time at least 12 hours from the current time and a retry period within the range shown in the message. The page states that a domain must belong to only one domain group of the plan. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Save the plan as an Excel file in .xls or .xlsx format, then upload it again.
+* **Success check:** The plan uploads without returning the file format error.
+* **Previous:** Getting started with IP warmup plans before you prepare the plan file: Get started with IP warmup plans (configuration/ip-warmup-gs.md); Preparing the plan file and the Warmup Plan and Custom Domain Group sheets before you upload it: Create an IP warmup plan (configuration/ip-warmup-plan.md)
+* **Next:** Selecting the channel configuration and the campaign for the IP warmup plan: Create IP warmup campaigns (configuration/ip-warmup-campaign.md); Defining the phases and activating the runs of the plan: Run the IP warmup plan (configuration/ip-warmup-execution.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: de6ae2e3 -->

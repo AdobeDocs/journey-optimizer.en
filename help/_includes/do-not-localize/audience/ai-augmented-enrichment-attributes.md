@@ -46,6 +46,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Are enrichment attribute values updated after a journey starts?** — Currently no; even after wait or event nodes, values remain the same as when the journey started.
 * **Q: Are older CSV custom upload audiences eligible?** — Audiences created through CSV custom upload before October 1, 2024, are not eligible for personalization and must be re-created and re-uploaded.
 
+**Personas:**
+
+* **marketer:** Can create multiple paths in a journey by using a Read audience activity and an Optimize activity with the targeted audience's enrichment attributes. Can personalize messages in journeys and campaigns by adding enrichment attributes from the targeted audience in the personalization editor. The page states that audiences created through CSV file custom upload before October 1, 2024, are not eligible for personalization. Where: "Use audiences enrichment attributes".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Target the audience using a Read audience activity, then create rules in an Optimize activity based on the audience's enrichment attributes.
+* **Success check:** Once enrichment attributes are added to a Field Group, you can use them in Journey Optimizer at the locations listed above.
+* **Previous:** Learn about audience activation timing and guardrails: About Adobe Experience Platform audiences (audience/target-audiences.md); Configure a data source to add enrichment attributes to a Field Group: Configure a data source (datasource/configure-data-sources.md)
+* **Next:** Target the audience using a Read audience activity: Use an audience in a journey (building-journeys/read-audience.md); Personalize messages using the personalization editor: Add personalization (personalization/personalization-build-expressions.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 4942b12e -->

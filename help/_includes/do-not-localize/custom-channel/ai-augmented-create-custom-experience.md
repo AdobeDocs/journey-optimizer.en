@@ -55,6 +55,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I activate the experience?** — From a journey, click Publish; from a campaign, click Review to activate and then Activate.
 * **Q: Can I run A/B tests on custom channel messages in a campaign?** — Yes, in the Optimization section of the campaign, click Create experiment.
 
+**Personas:**
+
+* **marketer:** Can add a custom channel action to a journey through the Action activity, or select a custom channel in a Scheduled or API-triggered campaign. Can select the channel configuration, then select Edit content to author and personalize the JSON payload in the payload editor. Can select Publish to activate the journey, or select Review to activate and then Activate for a campaign. The page states that only JSON payloads are supported, and non-JSON content can be wrapped in a JSON object. Where: "Add a custom action through a journey or a campaign".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Create a journey, then drag an Action activity from the Actions section of the palette and select a custom channel in the Action drop-down.
+* **Success check:** The journey goes live and starts calling your external endpoint for qualifying profiles, or the campaign takes the Live status, or the Scheduled status if a future start date was defined.
+* **Previous:** Configure a custom channel before creating a custom channel experience: Configure a custom channel – overview (custom-channel/configure-custom-channel.md); Create a journey before adding a custom channel action: Create your first journey (building-journeys/journey-gs.md)
+* **Next:** Preview and test your custom channel payload before activating: Test your custom channel (custom-channel/test-custom-channel.md); Request approval before activation if the campaign or journey is subject to an approval policy: Get started with journeys & campaigns approval (test-approve/gs-approval.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 2867b4aa -->

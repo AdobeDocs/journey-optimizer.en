@@ -45,6 +45,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What does Managed Service integration support?** — Author and Publish tiers on AEM Long Term Support (LTS) SP2; real-time updates are not available in this release.
 * **Q: What statuses can a fragment have on the Author tier?** — New, Draft, Published, Modified, or Unpublished; these statuses apply only on the Author tier.
 
+**Personas:**
+
+* **marketer:** Can use AEM Content Fragments in journeys and campaigns by integrating Adobe Experience Manager as a Cloud Service or Adobe Experience Manager Managed Service with Adobe Journey Optimizer. The page states that Journey Optimizer surfaces only Published or Modified Content Fragments and always uses the latest published version. Where: "Content Fragment lifecycle".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Configure Adobe Experience Manager repository access to add your Managed Services repository.
+* **Success check:** Only Published or Modified Content Fragments appear in Journey Optimizer, using the latest published version.
+* **Next:** Configure Adobe Experience Manager repository access to add your Managed Services repository: Configure AEM Repository Settings (integrations/aem-admin-settings.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 5ad3b83f -->

@@ -50,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I track clicks on an element?** — Yes, select any element of your website and enable click tracking from the second icon on the left rail, using Add Component to select an action to track.
 * **Q: Will my modifications be kept if I switch to the web designer?** — Yes, all your modifications will be preserved.
 
+**Personas:**
+
+* **marketer:** Can edit web content using the non-visual editor instead of the web designer, by unselecting the Visual editor option on the Edit content screen. Can add a CSS Selector or Page head modification, then manage it in the Modifications pane, viewing its Info or deleting it. Can select an element on the website and enable click tracking from the left rail to monitor web experiences. Where: "FAQ".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Unselect the Visual editor option on the Edit content screen in the journey or campaign.
+* **Success check:** The non-visual editor displays and you can add your first modification using the left pane.
+* **Previous:** Cannot install the Adobe Experience Cloud Visual Helper required for the web designer: Web channel prerequisites (web/web-prerequisites.md); To compare with the visual web designer editor: Edit content using the web designer (web/web-visual-editor.md)
+* **Next:** To manage CSS Selector or Page head modifications in the Modifications pane: Manage web modifications (web/manage-web-modifications.md); To monitor click tracking on web experiences: Monitor your web experiences (web/monitor-web-experiences.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d9cbddb1 -->

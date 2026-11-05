@@ -52,6 +52,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: On which channels is priority score available in campaigns?** — Web, in-app, and code-based inbound channels only.
 * **Q: Why might a profile enter two capped journeys?** — The profile counter can take up to 10 minutes to update, so a profile entering two journeys within a short window may not be recognized as having reached the cap.
 
+**Personas:**
+
+* **marketer:** Can identify potential overlaps in journeys and campaigns with the conflict detection tool, monitoring timelines, audience overlap, and channel configurations. Can assign priority scores to journeys and campaigns to decide which communication takes precedence when a customer qualifies for multiple messages. Can group rules into rule sets for journey capping and arbitration, frequency capping by channel and communication type, and quiet hours. The page states that priority score is available for the web, in-app, and code-based inbound channels only in campaigns. Where: "Conflict management & prioritization tools".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Use conflict detection to spot overlaps in journeys and campaigns.
+* **Success check:** You can identify potential overlaps in journeys and campaigns across timelines, audience overlap, and channel configurations.
+* **Next:** Identify potential conflicts between overlapping campaigns and journeys: Identify potential conflicts in journeys & campaigns (conflict-prioritization/conflicts.md); Assign priority scores to control which communication takes precedence: Assign priority scores to journeys & campaigns (conflict-prioritization/priority-scores.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 4712e1cb -->

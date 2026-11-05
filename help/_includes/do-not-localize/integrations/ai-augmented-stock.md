@@ -47,6 +47,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I replace an existing image with a similar Stock photo?** — Yes; select the image and click Find similar Stock photos, which works for licensed/unlicensed Stock images and images from the Assets folder.
 * **Q: How do I license and use an image?** — Select it, click the License Adobe Stock image icon, purchase on the Adobe Stock website, then select Import stock image to bring the licensed image into your assets.
 
+**Personas:**
+
+* **marketer:** Can insert images from Adobe Stock into email content using the Find Adobe Stock photos option in the Content components section of the Email Designer. Can find similar Stock photos that match the content, color, and composition of an existing image. Can license an unlicensed image through the License Adobe Stock image icon, then select Import stock image to add the licensed image to assets. The page states that these options require access to an AEM Assets Essentials Product Profile. Where: "Insert an image from [!DNL Adobe Stock]".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** From the Content components section of the Email Designer, drag and drop an Image.
+* **Success check:** The Find Adobe Stock photos button appears on the left side of the Email Designer.
+* **Next:** Customize image settings and styles after inserting or replacing an image: Use Email Designer content components (email/content-components.md); Select a folder to store the licensed image: Use Assets in Journey Optimizer (integrations/assets.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 7b827553 -->

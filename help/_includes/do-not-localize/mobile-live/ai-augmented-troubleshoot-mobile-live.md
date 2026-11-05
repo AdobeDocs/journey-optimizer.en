@@ -75,6 +75,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What does a `feedbackStatus` of `sent` mean on iOS?** — It confirms Journey Optimizer successfully handed the notification to APNs; it does not confirm that the Live activity was rendered on the device.
 * **Q: Why are some audience members not receiving a broadcast?** — The profile may not be in the audience, or a batch audience snapshot may be up to 24 hours stale; trigger on-demand evaluation or ensure a streaming update occurs (Scenario 7).
 
+**Personas:**
+
+* **marketer:** Can open the Reports button on a Live activity Campaign and select View all time report to check Sending Statistics metrics. Can review the Live activity lifecycle section for Remote starts, Updates, Ends, and Totals count figures. The page states that if Send errors are greater than 0, check the Error Reasons table. Where: "Check campaign reports".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Navigate to Customer, then Profiles, in Journey Optimizer to search for a profile using the namespace and identity value from the API request.
+* **Success check:** The profile is found, and you can continue with the token checks for your platform.
+* **Previous:** Creating the Live activity message before triggering it: Create a Live activity message (mobile-live/create-mobile-live.md)
+* **Next:** Learning more about Live activity campaign reporting metrics: Campaign Live activity report (reports/campaign-global-report-cja-activity.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: b489cefe -->

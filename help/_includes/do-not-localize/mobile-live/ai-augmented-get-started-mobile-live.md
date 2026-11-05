@@ -45,6 +45,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: When should I use API-triggered Marketing versus API-triggered Transactional?** — Marketing for broadcast, audience-based use cases such as sports scores or flight status; Transactional for individual 1:1 use cases such as order tracking or booking confirmations.
 * **Q: What are the quick start steps?** — Create a mobile configuration, integrate the Adobe Experience Platform Mobile SDK, create a Live activity through an API-triggered campaign, then track the impact with built-in reports.
 
+**Personas:**
+
+* **marketer:** Can start, update, and end Live activities programmatically through API-triggered campaigns in Adobe Journey Optimizer. Can select API-triggered Marketing for broadcast use cases, such as sports scores and flight status updates. Can select API-triggered Transactional for individual use cases, such as order tracking and booking confirmations. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Set up your environment by creating a mobile configuration.
+* **Success check:** You can start measuring the impact of your Live activity with built-in reports.
+* **Next:** Integrate with the Adobe Experience Platform Mobile SDK to enable real-time, dynamic updates on the Lock Screen and Dynamic Island: Configure the Live activities channel (mobile-live/mobile-live-configuration-sdk.md); Use API-triggered campaigns in Journey Optimizer to start your Live activity: Create a Live activity message (mobile-live/create-mobile-live.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: c6be65ca -->

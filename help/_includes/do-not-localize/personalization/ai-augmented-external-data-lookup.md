@@ -57,6 +57,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I debug issues with externalDataLookup?** — Use Adobe Experience Platform Assurance. Start an Assurance session, initiate a Journey Optimizer call from your web or mobile implementation, and use the Edge Delivery view to inspect the customActions block for timeout or error details.
 * **Q: Can I use authentication in the Action configuration with externalDataLookup?** — Authentication options in the Action configuration are not currently supported. For API key-based or other plaintext authorization, specify the credentials as header fields in the Action configuration.
 
+**Personas:**
+
+* **developer:** Can pass payload variable parameters to the externalDataLookup helper using the data types String, Integer, Decimal, Boolean, listString, listInt, listInteger and listDecimal. Can specify API key-based or plaintext authorization keys as header fields in the Action configuration. The page states that Journey Optimizer does not validate references to JSON attributes from the response used in expressions. Where: "Guardrails and Limitations".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Create an Action to configure the endpoint for the lookup.
+* **Success check:** The Action ID appears and can be copied after the Action is created.
+* **Previous:** Configure an Action before using the externalDataLookup helper: Configure a custom action (action/about-custom-action-configuration.md)
+* **Next:** Learn more about the maximum number of lookups allowed in an inbound message request: Journey Optimizer guardrails and limitations (start/guardrails.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: a3ce801a -->

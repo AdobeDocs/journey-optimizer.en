@@ -46,6 +46,18 @@ For complete understanding, this information should be combined with the documen
 * **Which channels does Channel Operation cover?** Standard Journey Optimizer channel configurations (presets) and credentials, such as email, SMS, push, direct mail, in-app, and web, plus related resources like push credentials, email subdomains, SMS and WhatsApp credentials, file routings, LINE channel settings, and the Live Activity registry. For custom outbound channels, use Channel Builder.
 * **Where can I learn about custom channels?** See Get started with custom channels.
 
+**Personas:**
+
+* **admin:** Can create, test, update, list, fetch, and delete custom outbound channels using Channel Builder, configuring channel configuration, authentication, throttling, and payload definition. Can also view, list, search, and inspect standard channel configurations and credentials using Channel Operation. The page states that Channel Operation is read-only and does not create, update, or delete channel configurations. Where: "Channel Builder".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Use Channel Builder to create and test a new custom channel.
+* **Success check:** You can test your new custom channel before using it in a campaign or journey.
+* **Previous:** Learn about Coworker skills across Journey Optimizer before focusing on channels: Work with AI (start/ai-features.md)
+* **Next:** Use the same read-only channel configuration tools through the Journey Optimizer MCP server: Work with MCP clients (Beta) (integrations/ajo-mcp.md); Learn more about custom channels after using Channel Builder: Get started with custom channels (custom-channel/get-started-custom-channel.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 00000000 -->

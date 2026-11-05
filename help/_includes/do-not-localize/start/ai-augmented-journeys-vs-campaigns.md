@@ -44,5 +44,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: When should I use an API-triggered campaign vs. a Unitary event journey?** — Use an API-triggered campaign when an external system needs to trigger a single message immediately with payload data; use a Unitary event journey when multi-step orchestration is needed after the API-sent event.
 * **Q: Can I combine Journeys and campaigns in the same marketing strategy?** — Yes. Use Journeys for behavioral real-time engagement, Action campaigns for scheduled broadcasts or inbound activations, API-triggered campaigns for transactional messages, and Orchestrated campaigns for complex batch workflows.
 
+**Personas:**
+
+* **marketer:** Can choose between Journeys, Action campaigns, and API-triggered campaigns based on execution style, data needs, and use case. Can use the decision tree to match real-time, scheduled, or API-triggered needs to the right approach. The page states that complex batch workflows with multi-entity data require Orchestrated campaigns instead. Where: "Decision guide".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Follow this decision tree to choose the right approach.
+* **Success check:** The validation table confirms whether your need matches the recommended approach.
+* **Next:** Ready to start building a Journey: Get started with journeys (building-journeys/journey.md); Ready to start building a Campaign: Get started with campaigns (campaigns/get-started-with-campaigns.md)
+
 +++
 <!-- ai-accordion-version: 1 | source-hash: 873097f5 -->

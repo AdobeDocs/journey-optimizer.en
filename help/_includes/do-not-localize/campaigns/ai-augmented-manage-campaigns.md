@@ -96,6 +96,18 @@ For complete understanding, this information should be combined with the documen
 * Journey Optimizer release status: Journey Optimizer release cycle (rn/releases.md)
 * Conflict management: Conflict management guide (conflict-prioritization/gs-conflict-prioritization.md)
 
+**Personas:**
+
+* **marketer:** Can access Action, API-triggered and Orchestrated campaigns from the Campaigns menu, and view, edit tags, duplicate, delete, or archive them using the More actions button. Can subscribe to alerts, add a campaign to a package, or open its draft version for Action and API-triggered campaigns. The page states that Delete is available for Draft campaigns only, and Archive applies to all campaigns except Draft campaigns. Where: "Campaign operations".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select the Action tab to access the list of Action campaigns.
+* **Success check:** The list shows all campaigns with the Draft, Scheduled, and Live statuses.
+* **Previous:** Choosing a campaign type before creating one: Get started with campaigns (campaigns/get-started-with-campaigns.md); Creating an Action campaign: Create an Action campaign (campaigns/create-campaign.md)
+* **Next:** Activating a Draft campaign: Review and activate an Action campaign (campaigns/review-activate-campaign.md); Viewing campaign performance reports: Campaign report (reports/campaign-global-report-cja.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 25b537a1 -->

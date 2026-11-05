@@ -46,6 +46,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens when I request changes?** — The creator is notified through an email and a Journey Optimizer alert, the campaign returns to the "Draft" status, and the creator can resubmit once changes are integrated.
 * **Q: I am not receiving approval emails — what should I check?** — Update your subscription preferences in your [!DNL CX Enterprise] profile.
 
+**Personas:**
+
+* **marketer:** Can review a submitted journey or campaign and approve it by selecting Approve, then Approve and activate to make it live. Can select Request changes and provide a message to send it back to the creator, which returns the campaign to Draft status. The page states that reviewing a campaign is a read-only step and cannot perform any action on it. Where: "Review & approve a request".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Open the journey or campaign from the email or alert, and check its settings such as audience, content, or settings.
+* **Success check:** The journey or campaign becomes live after you select Approve and activate.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 48e22024 -->

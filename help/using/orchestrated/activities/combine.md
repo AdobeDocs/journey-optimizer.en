@@ -141,3 +141,4 @@ The following **[!UICONTROL Exclusion]** example shows two queries configured to
 
 ![](../assets/orchestrated-exclusion-example.png)
 
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-combine.md}}

@@ -81,6 +81,17 @@ For complete understanding, this information should be combined with the documen
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md#getting-support)
 * Contacting Adobe Support: Support ticket guidelines (start/user-interface.md#support-ticket-guidelines)
 
+**Personas:**
+
+* **marketer:** Can find the cause and the fix for CJMRT errors returned when building, enriching, publishing, or managing an audience composition. Can identify the error number and HTTP status that follow the CJMRT prefix to locate the fix. The page states that the limit is 50 active compositions, and compositions created with federated audience composition are not counted. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Find the cause and the fix for the errors that Adobe Journey Optimizer returns when you build, enrich, publish, or manage an audience composition.
+* **Previous:** Creating the composition workflow before encountering a composition error: Get started with audience composition (audience/get-started-audience-orchestration.md); Leveraging enrichment attributes before configuring an enrichment in the composition: About Adobe Experience Platform audiences (audience/enrichment-attributes.md)
+* **Next:** Checking the permissions and sandbox assigned to your role after a permission error: Built-in Roles (administration/ootb-permissions.md); Checking the publication limit after reaching the 50 active compositions limit: Journey Optimizer guardrails and limitations (start/guardrails.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 7699f3c5 -->

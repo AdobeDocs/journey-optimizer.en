@@ -163,3 +163,4 @@ If a user cannot access Loyalty Challenges or a related feature, check the follo
 
 If access issues persist after permissions are updated, contact your Adobe representative.
 
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-loyalty-permissions.md}}

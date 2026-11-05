@@ -83,3 +83,5 @@ Follow these steps to configure the **[!UICONTROL Deduplication]** activity:
 In the following example, a **[!UICONTROL Deduplication]** activity is used to remove duplicate records from the target audience before sending a delivery. The audience is first filtered to include only profiles with a non-empty Email field. Then, the **[!UICONTROL Deduplication]** activity uses the Email address to identify and exclude duplicates.
 
 ![](../assets/deduplication-3.png)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-deduplication.md}}
