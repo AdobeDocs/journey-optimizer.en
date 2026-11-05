@@ -56,6 +56,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I reference a schema field whose name is a reserved keyword (e.g. `next`, `last`, `this`)?** — Wrap it in backticks: ``{{profile.person.`next`.name}}``. This applies to both Handlebars paths and PQL expressions.
 * **Q: Can I call PQL functions inside `{{...}}` Handlebars blocks?** — No. `{{...}}` resolves Handlebars variables and helpers only. A PQL function inside `{{...}}` causes a "could not find helper" error. Use `{%= functionName(...) %}` instead.
 
+**Personas:**
+
+* **developer:** Can reference profile, audience, and offer attributes through the Profile, Audience, and Offers namespaces, using paths such as offers.image.[Placement Id].[Activity Id].deliveryUrl. Can call PQL functions such as upperCase(), formatDate(), and dateDiff() with the {%= ... %} syntax to query and transform these fields. The page states that offer references are validated against the Offers Schema. Where: "Available namespaces".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Wrap reserved keyword fields in backticks, for example {{profile.person.`next`.name}}.
+* **Success check:** The personalization editor does not fail validation with an error.
+* **Next:** To find ready-to-use expressions for common scenarios: Personalization recipes (personalization/personalization-recipes.md); If an expression returns an error code: Personalization errors (personalization/personalization-errors.md)
+
 +++
 
 <!-- ai-section-version: 2 | source-hash: e9bc7c9d -->

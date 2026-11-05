@@ -32,6 +32,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where do I find my favorited attributes?** — In the **Favorites** menu in the left pane of the personalization editor.
 * **Q: How do I remove an attribute from favorites?** — From the **Favorites** menu in the left pane, remove the item from favorites.
 
+**Personas:**
+
+* **developer:** Can select Add to favorites from the ellipse menu to add an attribute to the Favorites menu. Can use the Favorites menu in the left pane to quickly add the personalization object to the current expression. Can remove an attribute from the Favorites list when it is no longer needed. Where: "FAQ".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Select the ellipse menu and choose Add to favorites to add an attribute to the favorites menu.
+* **Success check:** The attribute appears in the Favorites menu in the left pane and can be added to the current expression.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 44d87d52 -->

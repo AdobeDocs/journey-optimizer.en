@@ -56,6 +56,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I display fallback content when an array is empty?** — Use the `{{else}}` clause within the `{{#each}}` block. Content inside `{{else}}` is rendered when the array has no items.
 * **Q: What do `@index`, `@first`, and `@last` mean inside a `{{#each}}` loop?** — These are special Handlebars variables available only within `{{#each}}` loops in message content: `@index` is the 0-based current iteration index, `@first` is true for the first iteration, and `@last` is true for the last iteration.
 
+**Personas:**
+
+* **developer:** Can pass array values to custom action parameters in journey expressions using functions like first, all, and serializeList. Can reference each array item with currentEventField, currentActionField, or currentDataPackField when filtering or mapping fields. The page states that journeys cannot execute a custom action node multiple times for each array item. Where: "Work with arrays in Journey expressions".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Replace arrayPath with the path to your array data in the {{#each}} helper.
+* **Success check:** The message preview shows the iteration displaying correctly.
+* **Previous:** Learning message personalization fundamentals before iterating over data: Personalize content in Journey Optimizer (personalization/personalize.md)
+* **Next:** Testing your iteration in a journey: Test your journey (building-journeys/testing-the-journey.md); Passing array values to custom action parameters using the advanced expression editor: Work with the advanced expression editor (building-journeys/expression/expressionadvanced.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: f85f9dea -->

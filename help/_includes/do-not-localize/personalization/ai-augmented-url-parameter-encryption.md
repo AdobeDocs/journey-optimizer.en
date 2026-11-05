@@ -50,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which channels support URL parameter encryption?** — Currently only the Email channel.
 * **Q: Can a revoked key be used for new encryption?** — No. Once a key is revoked, attempts to use it in the encryption helper should fail at render time. Do not use revoked keys for new content.
 
+**Personas:**
+
+* **admin:** Can create keys in the key registry from Administration, Configurations. A key must be 32 bytes and base64-encoded, and its name can contain only letters, numbers, and hyphens. The page states that you must have View Key Registry and Manage Key Registry permissions granted to access and manage keys. Where: "Create keys".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Go to Administration, Configurations, then select Manage to open the Key registry.
+* **Success check:** Marketers can use the URL parameter encryption helper in the personalization editor to encrypt values placed in URL query parameters.
+* **Previous:** Learn about the View Key Registry and Manage Key Registry permissions needed to access and manage keys: Permission levels (administration/high-low-permissions.md)
+* **Next:** Use the URL parameter encryption helper in the personalization editor to encrypt values in URL query parameters: Helpers (personalization/functions/helpers.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 84e7cc50 -->

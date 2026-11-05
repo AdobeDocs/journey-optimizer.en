@@ -88,6 +88,18 @@ For complete understanding, this information should be combined with the documen
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
 * Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
+**Personas:**
+
+* **marketer:** Can identify a personalization error from its code: the prefix CJMTL or CJMRT, the error number, and the HTTP status. Can fix errors on variables, paths, namespaces, helpers, syntax, content validation, and URL parameter encryption keys using the fix listed for each error code. The page states that an encryption key must be 32 bytes (256 bits) long and encoded in base64. Where: "Troubleshooting".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Generate a key of 32 bytes (256 bits), encode it in base64, and create it in the Key registry under Administration, Configurations, Manage.
+* **Success check:** The key exists and has the Active status in the Key registry of the current sandbox.
+* **Previous:** Build personalization expressions before troubleshooting errors: Add personalization (personalization/personalization-build-expressions.md)
+* **Next:** Create and manage encryption keys for URL parameters: Encrypt URL parameters (personalization/url-parameter-encryption.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 56df67dd -->

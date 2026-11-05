@@ -48,6 +48,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where do I find the dataset ID and field IDs needed for the syntax?** — Dataset IDs can be retrieved in the Adobe Experience Platform UI under Datasets. Field IDs are visible when previewing a dataset and browsing the record schema in the AEP UI.
 * **Q: How do I test content that uses `datasetLookup`?** — Use the **Simulate content** button to test with sample input data or AI auto-generation, or select **Simulate content (AEP profiles)** from the dropdown to preview with test profiles.
 
+**Personas:**
+
+* **developer:** Can add the datasetLookup helper function to the code pane in the personalization editor to retrieve fields from an Adobe Experience Platform record dataset. Can configure the function with a datasetId, an id value used as the join key, a result alias, and a required flag. Can reference retrieved field values in content using the syntax {{result.fieldId}}, matching the full field path defined in the schema. The page states that it is recommended to keep the number of fields retrieved under 50 to avoid impacting throughput. Where: "Use Adobe Experience Platform data for personalization".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Open the personalization editor, which is available in every context where you can define personalization such as messages.
+* **Success check:** You can select Simulate content to preview the personalized content with sample data or test profiles.
+* **Previous:** Enable datasets for lookup personalization before using them in datasetLookup: Use Adobe Experience Platform data (data/lookup-aep-data.md); Learn how to work with the personalization editor before adding the datasetLookup helper function: Add personalization (personalization/personalization-build-expressions.md)
+* **Next:** Preview and test content that uses the datasetLookup helper function: Preview and test your content (content-management/preview-test.md); Personalize content using the retrieved Adobe Experience Platform data: Personalize content in Journey Optimizer (personalization/personalize.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 89d99e47 -->
