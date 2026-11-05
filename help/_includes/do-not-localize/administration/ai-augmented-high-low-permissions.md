@@ -38,5 +38,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can a user configure journey events without the Manage journeys permission?** — Manage journeys events, data sources and actions is listed as its own high-level permission that allows users to configure event and data configurations; its low-level permissions include journeys_events.read, journeys_events.write, and journeys_events.delete.
 * **Q: What low-level permissions are included in View journeys report?** — journeys_report.read and messages_report.read, plus datasets.read, queries.read, queries.write, and queries.delete from Adobe Experience Platform.
 
+**Personas:**
+
+* **admin:** Can assign the Manage subdomains delegations permission to create, edit and delete subdomain delegations, including IP pool. Can assign the Manage key registry permission to view, create, rotate, and revoke keys in the key registry. The page states that Manage suppression allows adding and deleting entries to the suppression list. Where: "Channel configurations resource".
+* **developer:** Can access low-level permissions such as journeys.read, journeys.write, journeys.delete, and messages.read, which result from the Manage journeys high-level permission. Can access segments.read, profiles.read, datasets.read, and schemas.read, which are Adobe Experience Platform specific low-level permissions included in Manage journeys. The page states that View journeys report includes queries.read, queries.write, and queries.delete. Where: "Journey resource".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Grant roles the specific high-level permissions needed for each resource, such as Manage journeys or Publish journeys.
+* **Next:** For the detailed list of high-level permissions and the default roles that include them: Built-in Roles (administration/ootb-permissions.md)
+
 +++
 <!-- ai-accordion-version: 1 | source-hash: e0430508 -->

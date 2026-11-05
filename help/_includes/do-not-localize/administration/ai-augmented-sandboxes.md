@@ -42,5 +42,17 @@ For complete understanding, this information should be combined with the documen
 - **Q: How are sandboxes made available to users?** — Sandboxes are assigned through roles in the Permissions product.
 - **Q: What naming convention must shared folders follow?** — The shared folder must have the same name as the sandbox it is associated with (e.g., if the sandbox is called "development," the shared folder must also be called "development").
 
+**Personas:**
+
+* **admin:** Can assign sandboxes to out-of-the-box or custom roles from the Roles tab in Permissions. Can select a sandbox from the Sandboxes resource drop-down and select Save, or select the X icon to remove sandbox access. The page states that sandbox management can only be carried out by a Product or System administrator. Where: "Assign sandboxes".
+* **developer:** Can switch between sandboxes using the sandbox switcher at the top-right of the screen, next to the organization's name. Can select the currently active sandbox and select another sandbox from the drop-down list. The page states that sandboxes partition the instance into separate, isolated workspaces for development, testing, or production. Where: "Use sandboxes".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** From the Roles tab in Permissions, select a Role.
+* **Previous:** Manage users and roles before assigning sandboxes to them: Manage users and roles (administration/permissions.md)
+* **Next:** Copy journeys and templates between sandboxes after assigning them: Copy Journey Optimizer objects between sandboxes (configuration/copy-objects-to-sandbox.md)
+
 +++
 <!-- ai-accordion-version: 1 | source-hash: 7c2ba399 -->

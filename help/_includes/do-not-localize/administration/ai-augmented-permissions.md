@@ -42,5 +42,17 @@ For complete understanding, this information should be combined with the documen
 - **Q: Where do I go in the product to manage roles?** — In the Permissions product, navigate to the Roles tab.
 - **Q: After a role is assigned, does the user receive a notification?** — The page states that the user receives an email redirecting them to your instance.
 
+**Personas:**
+
+* **admin:** Can assign, edit, and create roles in the Permissions product. Can add or delete permissions on a built-in or custom role, and assign sandboxes and permissions when creating a new role. The page states that only Product or System administrators can carry out these steps. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Navigate to the Roles tab in the Permissions product and select the desired role.
+* **Success check:** The user receives an email redirecting them to your instance.
+* **Previous:** Choosing which built-in role to assign before completing the assignment: Journey Optimizer built-in Roles (administration/ootb-product-profiles.md)
+* **Next:** Assigning sandboxes to a newly created role: Use and assign sandboxes (administration/sandboxes.md)
+
 +++
 <!-- ai-accordion-version: 1 | source-hash: 783bd0b0 -->
