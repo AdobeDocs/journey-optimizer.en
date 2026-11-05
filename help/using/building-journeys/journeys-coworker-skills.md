@@ -35,6 +35,8 @@ Learn more:
 
 ## Journey tools {#journey-tools}
 
+➡️ [Discover these tools in video](#journey-tools-videos)
+
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse; border: 1px solid #d9d9d9;">
 <colgroup>
 <col style="width: 40%;">
@@ -44,9 +46,17 @@ Learn more:
 <tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Compare journey versions</strong><br>Compare any two journey versions in Coworker Chat. Review a structured diff of added, removed, modified, and moved nodes with field-level details. Identify changed connections, journey-level property changes, and roll-up counts without opening Journey Optimizer. For more details on how to manage journey versions, see <a href="publish-journey.md#journey-versions">Journey versions</a>.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"What changed between version 1.0 and 2.0 of the 'Welcome Series' journey?"<br><br>"Has the wait duration of my wait activity changed between the last two journey versions?"</td></tr>
 </table>
 
+### How-to videos {#journey-tools-videos}
+
+Learn how to use Coworker to compare two versions of a journey and review the changes to activities, branches, and journey properties in this video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3507163?quality=12)
+
 ## Journey Create {#journey-create}
 
 Journey Create enables Journey Optimizer users to build and configure marketing journeys using a natural language interface. With Journey Create, practitioners can quickly create journeys by describing their requirements in conversational prompts. The skill walks users through the different options for creating a journey, allowing marketers to focus on strategy rather than technical configuration.
+
+➡️ [Discover this feature in video](#journey-create-videos)
 
 >[!AVAILABILITY]
 >
@@ -115,6 +125,20 @@ The following functionalities are currently not supported:
 * **Prepare Audiences**: Ensure your target audiences are already created and properly segmented.
 * **Plan Message Content**: Have your messaging strategy defined before journey creation.
 * **Consider Customer Experience**: Design journey flows that respect customer preferences and avoid over-communication.
+
+### How-to videos {#journey-create-videos}
+
+Learn how Coworker turns a plain-language description into a fully drafted journey in this video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496867?quality=12)
+
+Learn how Coworker turns a flowchart image into a ready-to-edit journey in this video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3504865?quality=12)
+
+Learn how Coworker builds a cross-channel journey from a prompt, creates email and SMS content, simulates its branching paths, and analyzes diagnostics in this video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3504706?quality=12)
 
 ## Channel Content Create {#channel-content-create}
 
@@ -255,6 +279,8 @@ The errored-profile lookup and the single-profile trace return profile-level dat
 
 Journey Simulation skill brings AI-driven Quick Simulation into the chat interface, letting users validate a journey's logic conversationally. Through Coworker, users can generate simulated test data, run and manage a simulation, and review the results.
 
+➡️ [Discover this feature in video](#journey-simulation-videos)
+
 ### Key use cases
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse; border: 1px solid #d9d9d9;">
@@ -278,5 +304,10 @@ As part of this Quick Simulation experience, users cannot:
 * Create, browse, update, or delete persistent simulated users through chat.
 * Target a specific path or custom test case.
 
+### How-to videos {#journey-simulation-videos}
+
+Learn how to simulate a journey in Coworker with automatically generated test profiles and events in this video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3507004?quality=12)
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-journeys-coworker-skills.md}}
