@@ -69,7 +69,7 @@ Refer to the following sections to configure the Web SDK tag extension according
 
 ### Configuration steps for the **[!UICONTROL Sent data to Platform]** trigger {#send-data-platform}
 
-1. Select the tag property which contains your Web SDK extension and [create a new rule](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/managing-resources/rules.html#create-a-rule){target="_blank"} with the following settings:
+1. Select the tag property which contains your Web SDK extension and [create a new rule](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules){target="_blank"} with the following settings:
 
     * **[!UICONTROL Extension]**: [!UICONTROL Core]
     * **[!UICONTROL Event Type]**: [!UICONTROL Library Loaded (Page Top)]
@@ -90,6 +90,10 @@ Refer to the following sections to configure the Web SDK tag extension according
 1. On the right side of the screen, in the **[!UICONTROL Personalization]** section, enable the **[!UICONTROL Render visual personalization decisions]** option.
 
     ![Image showing the personalization configuration screen.](assets/render-visual-personalization.png)
+
+    >[!NOTE]
+    >
+    >If a login event is used as the trigger for the In-app message, you must select the **[!UICONTROL Enabled - explicitly request the page scope and default surface]** option, even if you are not using a single-page application (SPA).
 
 1. On the right side of the screen, in the **[!UICONTROL Decision context]** section, define the **[!UICONTROL Key]**/**[!UICONTROL Value]** pairs which you used in your campaign configuration, to qualify for the in-app message.
 

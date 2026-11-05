@@ -12,7 +12,7 @@ nudge: yes
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new} 
   + [Release cycle](using/rn/releases.md) 
-  + [Pre-release notes](using/rn/e-release-notes.md)
+  + {hide-from-toc}[Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -38,6 +38,7 @@ nudge: yes
     + [Start from your goal](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
     + [Journeys vs campaigns](using/start/journeys-vs-campaigns.md)
+    + [Use the Calendar](using/start/calendar.md)
     + {hide-from-toc} [Journeys vs Campaigns - 2](using/start/journeys-vs-campaigns-v2.md)
     + {hide-from-toc} [Packages and capabilities](using/start/ajo-packages.md)
     + {hide-from-toc} [Feature availability](using/start/ajo-features-availability.md)
@@ -360,6 +361,7 @@ nudge: yes
       + [Get started with email configuration](using/email/get-started-email-config.md)
       + [Define email configuration settings](using/email/email-settings.md)
       + [Enable List unsubscribe](using/email/list-unsubscribe.md)
+      + {hide-from-toc}[Honor email open tracking consent](using/email/open-tracking-consent.md)
       + [Header parameters](using/email/header-parameters.md)
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
@@ -531,6 +533,7 @@ nudge: yes
   + Landing pages {#landing-pages}
     + [Get started with landing pages](using/landing-pages/get-started-lp.md)
     + [Create a landing page](using/landing-pages/create-lp.md)
+    + [Create anonymous landing pages](using/landing-pages/lp-anonymous.md)
     + [Manage your landing pages](using/landing-pages/manage-lp.md)
     + Design content {#landing-pages-design}
       + [Design content](/help/rp_landing_pages/landing-pages-design-landing-page.md)
@@ -1048,7 +1051,7 @@ nudge: yes
   + Sandboxes management {#sandbox}
     + [Use and assign sandboxes](using/administration/sandboxes.md)
     + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
-  + {hide-from-toc} [Use custom metadata in campaigns and journeys](using/administration/custom-metadata.md)
+  + [Use custom metadata in campaigns and journeys](using/administration/custom-metadata.md)
   + [Configure the Sources connector](using/start/get-started-sources.md)
 + Access control {#access-control}
   + [Access control](/help/rp_landing_pages/access-control-landing-page.md)

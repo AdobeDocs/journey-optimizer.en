@@ -112,6 +112,8 @@ Once you configured and designed the [primary page](#configure-primary-page), an
 >[!CAUTION]
 >
 >You cannot access your landing page by simply copy-pasting the defined URL into a web browser, even if published. Instead you can test it using the preview function such as described in [this section](#test-landing-page).
+>
+>This does not apply to [anonymous landing pages](lp-anonymous.md), which are publicly accessible once published.
 
 ## Configure the primary page {#configure-primary-page}
 
@@ -147,6 +149,8 @@ To define the primary page settings, follow the steps below. The primary page ne
     >The landing page URL must be unique.
     >
     >You cannot access your landing page by simply copy-pasting this URL into a web browser, even if published. Instead you can test it using the preview function such as described in [this section](#test-landing-page).
+    >
+    >This does not apply to [anonymous landing pages](lp-anonymous.md), which are publicly accessible once published.
 
     ![](assets/lp_access-url.png)
 
@@ -313,6 +317,8 @@ It is now live and ready to be used in a [!DNL Journey Optimizer] message that w
 >[!NOTE]
 >
 >You cannot access your landing page by simply copy-pasting into a web browser the URL defined when [creating the page](#create-landing-page), even if published. Instead you can test it using the preview function such as described in [this section](#test-landing-page).
+>
+>This does not apply to [anonymous landing pages](lp-anonymous.md), which are publicly accessible once published.
 
 You can monitor your landing page impacts through specific reports. [Learn more](../reports/lp-report-live.md)
 

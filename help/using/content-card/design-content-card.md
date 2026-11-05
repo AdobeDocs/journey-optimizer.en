@@ -91,7 +91,7 @@ When designing a content card for a [loyalty challenge](../loyalty-challenges/cr
 
 The **[!UICONTROL Media]** field lets you enhance your content cards by adding media, which can make your presentation more engaging for end users.
 
-To include media, either type in the URL of the media you want to use or click the **[!UICONTROL Select Assets]** icon to choose from assets stored in your Assets library. [Learn more about asset management](../integrations/assets.md).
+To include media, either type in the URL of the media you want to use or click the **[!UICONTROL Open Assets picker]** icon to choose from assets stored in your Assets library. [Learn more about asset management](../integrations/assets.md).
 
 +++More options with advanced formatting
 

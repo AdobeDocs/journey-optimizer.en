@@ -149,7 +149,8 @@ To add a built-in channel action to your journey using the **[!UICONTROL Action]
       <a href="../email/create-email.md">
       <img alt="Lead" src="../assets/do-not-localize/email.jpg">
       </a>
-      <div><a href="../email/create-email.md"><strong>Create emails</strong>
+      <div><a href="../email/create-email.md"><strong>Create emails</strong></a>
+
       </div>
       <p>
       </td>
@@ -246,7 +247,15 @@ Leveraging channel rule sets allows you to set frequency capping by communicatio
 
 +++
 
-+++**Track engagement** (Email, Mobile message).
++++**Override email channel configuration** (Email)
+
+Use this option when a journey action needs email values that differ from the selected channel configuration, without creating another configuration. You can override only the fields needed for that action while keeping the rest of the configuration unchanged.
+
+[Learn how to override email channel configuration](../email/create-email.md#override-email-channel-configuration)
+
++++
+
++++**Track engagement** (Email, Mobile).
 
 Use the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or Mobile deliveries.
 

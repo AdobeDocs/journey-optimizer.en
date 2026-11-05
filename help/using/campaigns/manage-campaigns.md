@@ -174,62 +174,9 @@ When an error occurs within one of your campaigns, a warning icon appears alongs
 >
 >Assets/Images are accessible in delivered content for up to 2 years (730 days) since their first publication in any fragment/inline message. Re-publishing is required after this expiry period (any time after 730 days) to keep them accessible for another 2 years. Any re-publication done within 730 days of the first publication will not extend the expiry of assets/images to the next 730 days.
 
-## Campaigns calendar {#calendar}
+## Calendar
 
->[!CONTEXTUALHELP]
->id="ajo_campaigns_view"
->title="Campaigns list and calendar views"
->abstract="In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules. You can switch between the list and calendar views at any times using these buttons."
-
-In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules.
-
-### How the calendar works
-
-How campaigns are represented:
-
-* By default, the calendar grid shows all live and scheduled campaigns for the selected week. Additional filter options can show completed, stopped and finished activations or activations of a certain type or channel.
-* Draft campaigns are not displayed.
-* Campaigns spanning multiple days appear at the top of the calendar grid.
-* If no start time is specified, the closest manual activation time is used to position it in the calendar.
-* Campaigns are displayed as 1-hour timespans, but this does not reflect actual send or completion time.
-
-### Navigate the calendar
-
-1. Click the ![calendar](assets/do-not-localize/Smock_Calendar_18_N.svg) icon to access your Campaigns calendar.
-
-1. Use the arrow buttons or the date selector above the calendar to move between weeks.
-
-    The calendar displays all campaigns scheduled for the current week. 
-
-    ![calendar view showing live campaigns](assets/campaigns-timeline.png)
-
-1. Click the ![gear](assets/do-not-localize/Smock_Gears_18_N.png) icon to toggle the display of items that span multiple days or weeks.
-
-    ![calendar view showing live campaigns](assets/campaign-long-term.png)
-
-1. Click the ![add calendar](assets/do-not-localize/Smock_CalendarAdd_18_N.svg) icon to manage and add up to three external calendars.
-
-    ![calendar view showing external calendars](assets/campaign-external-calendar.png)
-
-1. Drag and drop your CSV files containing event names, start dates, and end dates.
-
-    Uploaded events appear for all users in your organization and display on both Journey and Campaign calendars.
-
-    +++CSV format should be as follows:
-
-    | Column1 | Column2 | Column3 |
-    |-|-|-|
-    | Event name | Start date in mm/dd/yy format | End date in mm/dd/yy format |
-    
-    +++
-
-1. If needed, you can hide, unhide, or remove added external calendars.
-
-    ![calendar view showing external calendars](assets/campaign-manage-calendar.png)
-
-1. For more details on a campaign, click its visual block to open details on it. An information pane will open with various information on the campaign such as its type, access to the reports, or the tags that have been assigned.
-
-    ![campaign list with the information pane opened](assets/campaign-rail.png)
+Campaign schedules are shown in the unified **[!UICONTROL Calendar]** menu with journey schedules. [Learn how to use the Calendar](../start/calendar.md).
 
 ## Modify and stop recurring Action campaigns {#modify}
 

@@ -67,7 +67,7 @@ Note that In-app messages are not impacted by the user's choice to opt-in or opt
 
 To add an In-app message in a journey, follow these steps:
 
-1. Open your [journey](../building-journeys/journey-gs.md), then drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
+1. Open your journey then add an **[!UICONTROL Action]** activity. Learn more about the [Action activity](../building-journeys/journey-action.md).
 
     >[!IMPORTANT]
     >
@@ -92,6 +92,10 @@ To add an In-app message in a journey, follow these steps:
 1. Select the **[!UICONTROL Edit content]** button and create your content as desired. [Learn more](design-in-app.md)
 
 1. Click **[!UICONTROL Edit triggers]** to choose the event(s) and criteria that will trigger your message. Rule builders enable users to specify criteria and values that, when met, trigger a set of actions, such as sending an in-app message. [Learn more](design-in-app.md)
+
+    >[!NOTE]
+    >
+    >A **trigger** is the event that launches the check, such as the app opening or a button click (the "when"). A **trait** works as a filter: it is a condition that must be satisfied before the message displays, such as "the loyalty level of the user is Gold" (the "if"). Add traits with the **And** condition.
 
     1. Click the event drop-down to change your Trigger if needed.
         
@@ -125,13 +129,7 @@ To add an In-app message in a journey, follow these steps:
         
         | Package | Traits | Definition |
         |---|---|---|
-        |Device info|Carrier name|Triggered when one of the Carrier name from the list is met.|
-        |Device info|Device name|Triggered when one of the Device name is met.|
-        |Device info|Locale|Triggered when one of the language from the list is met.|
-        |Device info|OS version|Triggered when one of the specified OS version is met.|
-        |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
-        |Device info|Run mode|Triggered if Run mode is either application or extension.|
-        |Application lifecycle|App ID| Triggered when the specified App ID is met.|
+        |Application lifecycle|App ID|Triggered when the specified App ID is met.|
         |Application lifecycle|Day of week|Triggered when the specified day of week is met.|
         |Application lifecycle|Day since first use|Triggered when the specified number of day since first use is met.|
         |Application lifecycle|Day since last use|Triggered when the specified number of day since last use is met.|
@@ -139,6 +137,13 @@ To add an In-app message in a journey, follow these steps:
         |Application lifecycle|Install date|Triggered when the specified Install date is met.|
         |Application lifecycle|Launches|Triggered when the specified number of Launches is met.|
         |Application lifecycle|Time of day|Triggered when the specified Time of day is met.|
+        |Custom|Custom trait|Triggered when the condition defined by a key-value pair is met. The key is the data element or XDM field to check, and the value is the criterion that the key must satisfy.|
+        |Device info|Carrier name|Triggered when one of the Carrier name from the list is met.|
+        |Device info|Device name|Triggered when one of the Device name is met.|
+        |Device info|Locale|Triggered when one of the language from the list is met.|
+        |Device info|OS version|Triggered when one of the specified OS version is met.|
+        |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
+        |Device info|Run mode|Triggered if Run mode is either application or extension.|
         |Places|Current POI|Triggered by the Places SDK when your customer enters the specified Point of Interest (POI).|
         |Places|Last entered POI|Triggered by the Places SDK depending on your customer last entered Point of Interest (POI).|
         |Places|Last exited POI|Triggered by the Places SDK depending on your customer last exited Point of Interest (POI).|
@@ -157,6 +162,8 @@ To add an In-app message in a journey, follow these steps:
         * **[!UICONTROL Once]**: This message appears only once per user session and stays visible across all windows or activities until closed. To limit it to a certain screen or make it dismiss automatically, use custom logic with the messaging delegate.
         * **[!UICONTROL Until click through]**: Show this message when the events selected in the **[!UICONTROL Show message if]** section occur until an interact event is sent by the SDK with an action of "clicked".
         * **[!UICONTROL X number of times]**: Show this message X times. Enter the number of times in the **[!UICONTROL Times to display]** field.
+
+        Frequency settings also apply to test profiles after the journey is published.
 
 1. You can add one or more inbound actions to your in-app message by clicking the **[!UICONTROL Add action]** button. [Learn more](../building-journeys/journey-action.md#multi-action)
 
@@ -236,13 +243,7 @@ To add an In-app message in a campaign, follow these steps:
         
         | Package | Traits | Definition |
         |---|---|---|
-        |Device info|Carrier name|Triggered when one of the Carrier name from the list is met.|
-        |Device info|Device name|Triggered when one of the Device name is met.|
-        |Device info|Locale|Triggered when one of the language from the list is met.|
-        |Device info|OS version|Triggered when one of the specified OS version is met.|
-        |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
-        |Device info|Run mode|Triggered if Run mode is either application or extension.|
-        |Application lifecycle|App ID| Triggered when the specified App ID is met.|
+        |Application lifecycle|App ID|Triggered when the specified App ID is met.|
         |Application lifecycle|Day of week|Triggered when the specified day of week is met.|
         |Application lifecycle|Day since first use|Triggered when the specified number of day since first use is met.|
         |Application lifecycle|Day since last use|Triggered when the specified number of day since last use is met.|
@@ -250,6 +251,13 @@ To add an In-app message in a campaign, follow these steps:
         |Application lifecycle|Install date|Triggered when the specified Install date is met.|
         |Application lifecycle|Launches|Triggered when the specified number of Launches is met.|
         |Application lifecycle|Time of day|Triggered when the specified Time of day is met.|
+        |Custom|Custom trait|Triggered when the condition defined by a key-value pair is met. The key is the data element or XDM field to check, and the value is the criterion that the key must satisfy.|
+        |Device info|Carrier name|Triggered when one of the Carrier name from the list is met.|
+        |Device info|Device name|Triggered when one of the Device name is met.|
+        |Device info|Locale|Triggered when one of the language from the list is met.|
+        |Device info|OS version|Triggered when one of the specified OS version is met.|
+        |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
+        |Device info|Run mode|Triggered if Run mode is either application or extension.|
         |Places|Current POI|Triggered by the Places SDK when your customer enters the specified Point of Interest (POI).|
         |Places|Last entered POI|Triggered by the Places SDK depending on your customer last entered Point of Interest (POI).|
         |Places|Last exited POI|Triggered by the Places SDK depending on your customer last exited Point of Interest (POI).|
@@ -260,7 +268,11 @@ To add an In-app message in a campaign, follow these steps:
 
     1. Click **[!UICONTROL Make group]** to group triggers together.
 
-1. Choose the frequency of your trigger when your In-app message is active. The following options are available:
+1. From the **[!UICONTROL Audience]** tab, click the **[!UICONTROL Select audience]** button to define the audience to target from the list of available Adobe Experience Platform audiences. [Learn more](../audience/about-audiences.md).
+
+    ![](assets/in_app_journey_2.png)
+
+1. From the **[!UICONTROL Schedule]** tab, choose the frequency of your trigger when your In-app message is active. The following options are available:
 
     * **[!UICONTROL Everytime]**: Always show the message when the events selected in the **[!UICONTROL Show message if]** section occur.
     * **[!UICONTROL Once]**: Only show this message the first time the events selected in the **[!UICONTROL Show message if]** section occur.
@@ -269,11 +281,7 @@ To add an In-app message in a campaign, follow these steps:
 
 1. If needed, choose which **[!UICONTROL Day of the week]** or **[!UICONTROL Time of day]** the In-app message will be displayed.
 
-1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
-
-    ![](assets/in-app-schedule.png)
-
-1. You can now start designing your content with the **[!UICONTROL Edit content]** button. [Learn more](design-in-app.md)
+1. Access the **[!UICONTROL Content]** tab to start designing your In-app message. [Learn more](design-in-app.md)
 
     ![](assets/in_app_create_4.png)
 

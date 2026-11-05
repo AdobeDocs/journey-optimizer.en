@@ -51,7 +51,7 @@ As part of this model:
 
 ## Release timing and cadence {#release-timing}
 
-[!DNL Adobe Journey Optimizer] typically follows a monthly release cadence, with deployments usually taking place during the last week of each month. Monthly release notes and related documentation are published on Tuesdays of the release week. Pre-release notes are published on Fridays before the release week.
+[!DNL Adobe Journey Optimizer] typically follows a monthly release cadence, with deployments usually taking place during the last week of each month. Monthly release notes and related documentation are published on Tuesdays of the release week. Pre-release notes are available one week before the release.
 
 >[!TIP]
 >

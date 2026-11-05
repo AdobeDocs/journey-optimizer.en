@@ -46,6 +46,8 @@ level_v2:
 
 Action campaigns (or Scheduled campaigns) allow for simple ad-hoc batch communications for marketing use cases like promotional offers, engagement campaigns, announcements, legal notices, or policy updates.
 
+To view Action campaign schedules, use the unified **[!UICONTROL Calendar]** menu. [Learn how to use the Calendar](../start/calendar.md).
+
 ➡️ [Discover this feature in video](#video) 
 
 

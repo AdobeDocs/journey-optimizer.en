@@ -50,6 +50,8 @@ Campaign Orchestration in [!DNL Adobe Journey Optimizer] powers sophisticated, b
 
 While cross-channel marketing is essential, Orchestrated campaigns make it seamless. With a visual, drag-and-drop interface, you can design and automate complex marketing workflows, from segmentation to message delivery, across multiple channels. Everything happens in one intuitive environment, built for speed, control, and efficiency.
 
+To view campaign schedules, use the unified **[!UICONTROL Calendar]** menu. [Learn how to use the Calendar](../start/calendar.md).
+
 ![](assets/canvas-example-diagram.png){zoomable="yes"}
 
 ➡️ [Discover Orchestrated campaigns in video](#video-oc) 
