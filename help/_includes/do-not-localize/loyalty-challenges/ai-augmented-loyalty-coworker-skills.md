@@ -45,6 +45,18 @@ For complete understanding, this information should be combined with the documen
 * **What happens after I select [!UICONTROL Create with AI]?** The opportunity is passed to the Loyalty Challenge Management skill. Continue the conversation to provide missing details and create or edit the challenge without leaving Coworker Chat. Then review the challenge details and journey in challenge authoring before publishing.
 * **What should I include when asking Loyalty Challenge Management to create a challenge?** A clear title, the qualifying audience, the required action and how much/how often, the time window and timezone, the reward, and the qualifying event.
 
+**Personas:**
+
+* **marketer:** Can create and manage loyalty challenges with Loyalty Challenge Management, and query points, tiers, redemptions, and revenue with Loyalty Insights Skill. Can request grounded, specific challenge opportunities with Loyalty Opportunities and select Create with AI to pass one to Loyalty Challenge Management. The page states that challenge deletion is currently not supported. Where: "Loyalty Challenge Management".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Give the challenge a clear, memorable title in quotes.
+* **Success check:** The challenge details and journey appear in challenge authoring for review before publishing.
+* **Previous:** Learn about Coworker skills across Journeys, Loyalty, Content Management, and Decisioning in Journey Optimizer: Work with AI (start/ai-features.md)
+* **Next:** Get comprehensive documentation on creating, configuring, and managing loyalty challenges: Get started with Loyalty Challenges (loyalty-challenges/get-started.md)
+
 +++
 
 <!-- ai-section-version: 3 | source-hash: d53c4586 -->

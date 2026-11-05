@@ -48,6 +48,17 @@ For complete understanding, this information should be combined with the documen
 * **What does the Trends tab show?** It displays loyalty insights and performance patterns. Select **[!UICONTROL Ask AI]** on a trend card to open Coworker in the right rail with a prefilled request to provide a concise summary of the selected insight.
 * **What happens when I select [!UICONTROL Create with AI]?** Coworker opens in the right rail, where you can use the Loyalty Challenge Management skill to create or edit a challenge based on the selected opportunity, provide missing details, and continue without leaving the reporting page. After creation, select the **Open in Loyalty Challenges** link in the chat to open the draft challenge and verify its dates, tasks, and other fields before publishing.
 
+**Personas:**
+
+* **marketer:** Can open Loyalty Challenges reporting, select Performance in the left navigation, and review the Opportunities tab for grounded challenge opportunities. Can select View details to preview an AI-drafted challenge, then select Create with AI to open Coworker and create or edit the challenge. The page states that after creation, select Open in Loyalty Challenges to verify the challenge dates, tasks, and other fields before publishing. Where: "Opportunities tab".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Go to Loyalty Challenges in Journey Optimizer and select Performance in the left navigation.
+* **Success check:** The Key metrics area shows four numbers at a glance, each with a percentage change compared to the previous period.
+* **Next:** Learn about the Coworker's Loyalty Challenge Management skill used to create or edit a challenge from an opportunity: Work with AI (start/ai-features.md)
+
 +++
 
 <!-- ai-section-version: 6 | source-hash: e1ee7e45 -->
