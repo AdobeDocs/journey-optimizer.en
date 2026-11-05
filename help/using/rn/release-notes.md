@@ -176,12 +176,6 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 28, 2026
 
-+++ Coming soon — **Information below is subject to change.**
-
-* **Reporting webhooks available for custom channels** - You can now define a reporting webhook for a custom outbound channel and attach it to a channel configuration. Use it to enrich your Journey Optimizer reports with interaction events. <!-- Documentation link: TBD -->
-
-+++ 
-
 ### Journeys {#oct-26-journeys}
 
 <table>

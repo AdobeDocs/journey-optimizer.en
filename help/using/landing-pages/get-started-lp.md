@@ -68,17 +68,13 @@ Use landing pages when you want to:
 
 **[!UICONTROL Data Capture]** landing pages let you embed published forms so visitors can submit attributes that are written to your [!DNL Adobe Experience Platform] dataset through the streaming connection configured in your form preset. [Learn how to create and embed forms in a landing page](lp-forms.md)
 
->[!NOTE]
->
->Data capture through landing page forms is supported for **known profiles** (existing profiles identified in [!DNL Adobe Experience Platform]). The landing page should be opened from a **personalized link** (for example from an email campaign) so the profile identity can be resolved when the page loads.
->
->Data Capture landing pages can also be published on a public URL to capture data from anonymous visitors. In that case, use a non-profile enabled dataset (strongly recommended), so that the data does not create or enrich any profile. [Learn more](lp-anonymous.md)
+You can use Data Capture landing pages in two ways:
 
->[!IMPORTANT]
->
->The forms you embed in Data Capture landing pages must include the fields that are required by the schema of the dataset, so that the submitted data can be ingested. Do not override the mandatory fields in the form configuration: this leads to ingestion failure.
+* **For known profiles:** data capture through landing page forms is supported for existing profiles identified in [!DNL Adobe Experience Platform]. The landing page should be opened from a **personalized link** (for example from an email campaign) so the profile identity can be resolved when the page loads.
 
-The following are example use cases:
+* **For anonymous visitors:** you can also publish a Data Capture landing page on a **public URL** to capture data from visitors who are not identified. In that case, Adobe strongly recommends using a non-profile enabled dataset, so that the data does not create or enrich any profile. [Learn more about public landing pages](lp-anonymous.md)
+
+The following are example use cases for known profiles:
 
 1. **Progressive profile enrichment** — Collect additional attributes from known customers—such as phone number, date of birth, or location—through a personalized landing page to enrich their existing [!DNL Experience Platform] profile for segmentation and personalization.
 
@@ -89,6 +85,14 @@ The following are example use cases:
 4. **Loyalty or program enrollment** — Let existing customers enroll in loyalty programs or membership tiers by submitting additional details through a landing page, enriching the profile for downstream targeting.
 
 5. **Competition or contest entry** — Let known customers enter competitions or sweepstakes via a landing page form; capture entry-specific details (answers, preferences, or declarations) and write them to the profile to support eligibility, winner selection, and follow-up journeys.
+
+The following are example use cases for [public landing pages](lp-anonymous.md), where the data is stored in a non-profile enabled dataset and does not create or enrich any profile:
+
+1. **Event or webinar sign-up** — Collect registrations from visitors who open a public link shared on your website, on social channels, or in a campaign.
+
+2. **Survey or feedback collection** — Gather answers or feedback from visitors who are not necessarily identified in [!DNL Experience Platform].
+
+3. **Open competition entry** — Let anyone with the link enter a competition or sweepstakes, and collect the entry details in a dataset.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
