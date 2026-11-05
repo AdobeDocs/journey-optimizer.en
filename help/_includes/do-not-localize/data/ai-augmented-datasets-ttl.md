@@ -68,7 +68,7 @@ For complete understanding, this information should be combined with the documen
 * **Level:** Experienced
 * **First minimal step:** Set up automated queries to copy critical data to derived datasets before data is deleted.
 * **Success check:** The derived dataset is stored in the data lake without a TTL.
-* **Next:** Need to delete specific records or identities from a protected system dataset: Perform data lifecycle operations (privacy/data-hygiene.md)
+* **Next:** To delete specific records or identities from a protected system dataset: Perform data lifecycle operations (privacy/data-hygiene.md)
 
 +++
 

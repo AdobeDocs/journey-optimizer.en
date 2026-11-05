@@ -55,7 +55,7 @@ For complete understanding, this information should be combined with the documen
 
 **Personas:**
 
-* **developer:** Can use Query Editor to verify that send, open, select, and bounce events are recorded in Journey Optimizer datasets. Can confirm that journey step events and states are captured correctly. The page states that Steps 1-4 of the data readiness checklist are completed in Adobe Experience Platform and Steps 5-6 are configured in Journey Optimizer. Where: "Data readiness checklist".
+* **developer:** Can use Query Editor to verify that send, open, click, and bounce events are recorded in Journey Optimizer datasets. Can confirm that journey step events and states are captured correctly. The page states that Steps 1-4 of the data readiness checklist are completed in Adobe Experience Platform and Steps 5-6 are configured in Journey Optimizer. Where: "Data readiness checklist".
 * **admin:** Can configure the built-in Adobe Experience Platform data source to expose Real-Time Customer Profile attributes inside journeys. Can also configure external data sources to call third-party APIs at journey runtime, such as a loyalty score or inventory level. The page states that configuring data sources is an administrative task that unlocks the data layer for journey authors and marketers. Where: "Data readiness checklist".
 * **marketer:** Can create a welcome journey that listens for a sign-up event, as shown in the page's example. Can personalize the welcome email using profile attributes such as [!DNL firstName] and [!DNL personalEmail.address]. The page states that Journey Optimizer writes send and open events to tracking datasets as the journey runs. Where: "Example: preparing data for a welcome journey".
 

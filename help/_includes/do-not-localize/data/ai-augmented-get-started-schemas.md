@@ -49,7 +49,7 @@ For complete understanding, this information should be combined with the documen
 
 **Personas:**
 
-* **developer:** Can model profiles and time-series interactions, such as selects, purchases, or logins, using a standard schema. Can combine one class with one or more field groups to add specific fields. Can create relational schemas manually or import them via DDL, then link schemas and ingest data from supported sources. Can send one message per entity, such as per booking or per subscription, with relational schemas. Where: "Standard & relational schemas".
+* **developer:** Can model profiles and time-series interactions, such as clicks, purchases, or logins, using a standard schema. Can combine one class with one or more field groups to add specific fields. Can create relational schemas manually or import them via DDL, then link schemas and ingest data from supported sources. Can send one message per entity, such as per booking or per subscription, with relational schemas. Where: "Standard & relational schemas".
 * **admin:** Can enable a schema for Real-Time Customer Profile to power segmentation and personalization. Can disable or delete datasets built on an enabled schema separately from the schema itself. The page states that enabling a schema for Real-Time Customer Profile is a permanent decision and the schema cannot be disabled or deleted afterward. Where: "Standard & relational schemas".
 
 **Onboarding:**

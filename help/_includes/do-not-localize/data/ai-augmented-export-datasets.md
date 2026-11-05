@@ -56,7 +56,7 @@ For complete understanding, this information should be combined with the documen
 * **Level:** Beginner
 * **First minimal step:** Set up your cloud storage destination by connecting to it from the destinations catalog.
 * **Success check:** The content of your dataset is deposited on your cloud storage location according to the schedule you configured.
-* **Next:** Need to join exported data for custom reporting using documented join keys: Dataset query examples (data/datasets-query-examples.md)
+* **Next:** To join exported data for custom reporting using documented join keys: Dataset query examples (data/datasets-query-examples.md)
 
 +++
 
