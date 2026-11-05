@@ -50,6 +50,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: When can I delete a field group?** — The Delete icon is only available if the field group is not used in any Live, Draft or Finished journey; refer to the Used in field to check if this is the case.
 * **Q: Can I use experience events in journey expressions or conditions with this data source?** — No, using experience events in journey expressions/conditions is not supported; consider alternative methods for that use case.
 
+**Personas:**
+
+* **developer:** Can select an XDM Individual Profile-based schema and choose the fields to retrieve for the Adobe Experience Platform data source. Can use this data source only if the journey starts with an event containing a key and a namespace. The page states that using experience events in journey expressions or conditions is not supported. Where: "Guardrails".
+* **admin:** Can edit the pre-configured ProfileFieldGroup, add new field groups, and remove field groups that are not used in any draft or live journey. The page states that the Delete icon for a field group is only available if the field group is not used in any Live, Draft or Finished journey. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** From the list of data sources, select the built-in Adobe Experience Platform data source.
+* **Success check:** The data source configuration pane opens on the right-hand side of the screen.
+* **Previous:** Before using this data source, your journey must start with an event containing a key and a namespace: Get started with journeys (building-journeys/journey.md)
+* **Next:** To define field groups in detail: Configure a data source (datasource/configure-data-sources.md); If your use case requires the use of experience events: Experience events lookup in journeys (building-journeys/exp-event-lookup.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 82fb72af -->
