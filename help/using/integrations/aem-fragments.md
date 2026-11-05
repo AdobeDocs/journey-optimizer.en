@@ -206,9 +206,15 @@ Adobe Experience Manager allows you to identify the Journey Optimizer campaigns 
 
 >[!AVAILABILITY]
 >
->This capability is Limited Availability. Contact your Adobe representative for access.
+>This capability is available for organizations where it has been enabled. Contact your Adobe representative to request access.
+
+>[!NOTE]
+>
+>This capability supports only Adobe Experience Manager fragments that you add directly to a message. Adobe Experience Manager fragments selected dynamically by decisioning at send time are not supported.
 
 Content Fragment fields can contain attribute paths from the `profile`, `context`, and `item` namespaces, for example `{{profile.person.name.firstName}}`. These resolve automatically when the message is sent, with no token map needed, and you can mix them with flat tokens in the same field.
+
+Attribute paths written directly inside Adobe Experience Manager fragments, such as `{{profile.person.name.firstName}}`, are resolved only for fragments added directly to a message. They are not supported for Adobe Experience Manager fragments fragments served through Experience Decisioning.
 
 Use the full attribute path as it appears in the schema. Helpers, expressions, conditional blocks, and PQL are not supported inside Content Fragments.
 
