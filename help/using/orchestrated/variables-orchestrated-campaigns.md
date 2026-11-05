@@ -67,3 +67,5 @@ Variables are available in the following places on the canvas:
   In the example below, the `channel` variable is used to route the flow to different transitions depending on its value.
 
   ![Test activity condition type drop-down listing the channel variable](assets/variables-test.png){zoomable="yes"}
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-variables-orchestrated-campaigns.md}}

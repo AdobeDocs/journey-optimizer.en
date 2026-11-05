@@ -12,12 +12,11 @@ For complete understanding, this information should be combined with the documen
 * **TL;DR:** This page explains what the errors returned when you create relational schemas (manually, from a DDL file, or from an Excel template) and enable datasets for Orchestrated campaigns mean, and how to fix each family of errors.
 
 **Intents:**
-* Know what to note and whom to contact when an error persists after the listed steps
-
 * Find the cause and the fix for a CJMDMS error returned during relational schema creation or dataset enablement
 * Identify which error family (files and formats, Excel template, primary key and version descriptor, relationships, identity, dataset enablement, names and permissions) an error belongs to
 * Check the file limits that apply to a DDL or Excel upload
 * Check what a relational schema needs before a dataset can be enabled for Orchestrated campaigns
+* Know what to note and whom to contact when an error persists after the listed steps
 
 **Glossary:**
 
@@ -33,7 +32,7 @@ For complete understanding, this information should be combined with the documen
 
 * A DDL file larger than 10 MB returns CJMDMS-100130-413. The fix is to reduce its size or split it into several files.
 * A file can define up to 200 tables (CJMDMS-100127-400). For CJMDMS-100240-400, the upload exceeds the schema limit shown in the message. In both cases, the fix is to reduce the number of tables or split the file into several uploads.
-* The DDL accepts only **[!UICONTROL CREATE TABLE]** statements.
+* The DDL accepts only **CREATE TABLE** statements.
 * The Excel template must be in .xlsx format.
 * A file name can contain only letters, numbers, underscores, hyphens, or spaces, and a single extension.
 * A field cannot be both the primary key and the version descriptor.
@@ -51,11 +50,11 @@ For complete understanding, this information should be combined with the documen
 * **Q: What do I do if the error persists after the listed steps?** — Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots. For a permission or access error, contact your administrator; otherwise contact Adobe Support with these details. For all the support options, see the Getting support section of the error codes reference.
 
 * **Q: How is an error code structured?** — The prefix **CJMDMS**, followed by an error number and an HTTP status, for example CJMDMS-100130-413.
-* **Q: Why is my DDL file rejected?** — Depending on the message: the file is larger than 10 MB (CJMDMS-100130-413), defines more than 200 tables (100127-400, 100240-400), has malformed content (100126-422), columns that are not properly defined (100186-400), or a table that is not properly defined (100187-400), contains syntax that is not supported (100189-400) or a statement other than **[!UICONTROL CREATE TABLE]** (100201-400), defines tables with the same name (100184-400), columns with the same name in a table (100185-400), or a column with a missing or invalid data type (100188-400), or has a relationship that refers to tables that are not defined in the DDL (100256-400). Each code has its own fix, listed under Troubleshooting.
+* **Q: Why is my DDL file rejected?** — Depending on the message: the file is larger than 10 MB (CJMDMS-100130-413), defines more than 200 tables (100127-400, 100240-400), has malformed content (100126-422), columns that are not properly defined (100186-400), or a table that is not properly defined (100187-400), contains syntax that is not supported (100189-400) or a statement other than **CREATE TABLE** (100201-400), defines tables with the same name (100184-400), columns with the same name in a table (100185-400), or a column with a missing or invalid data type (100188-400), or has a relationship that refers to tables that are not defined in the DDL (100256-400). Each code has its own fix, listed under Troubleshooting.
 * **Q: What does a schema need to be used for Orchestrated campaigns?** — A primary key, a version descriptor marked as required, and an identity field of type String mapped to a valid identity namespace.
-* **Q: Why can I not enable my dataset for Orchestrated campaigns?** — Common causes: the dataset is not a customer dataset (CJMDMS-100131-400: select or create a customer dataset, then enable it for Orchestrated campaigns from the **[!UICONTROL Datasets]** settings) or is enabled for Profile (100132-400: select or create a customer dataset that is not enabled for Profile, then enable it from the **[!UICONTROL Datasets]** settings), its schema is not supported (100134-400, 100227-400: create a relational schema with a primary key, a version descriptor, and an identity field, then create a new dataset on it), or the schema is already associated with a dataset enabled for Orchestrated campaigns (100139-400) or with datasets (100166-400): use an existing dataset, or create another schema. If the message says enablement is in progress (100133-400), wait a few minutes for the enablement to complete, then try again. If the extension is already enabled on the dataset (100169-400), continue by ingesting data into the dataset.
-* **Q: What should I do when I get a 403 error?** — Your user does not have the permission needed to access the resource (CJMDMS-100108-403), or the permission named in the message on a dataset (100138-403), on a schema (100178-403), or on datasets (100179-403). Check the permission against the permissions of your role, such as **[!DNL View schemas]**, **[!DNL View datasets]**, **[!DNL Manage schemas]**, or **[!DNL Manage datasets]**, and ask your administrator to add what is missing.
-* **Q: What does an Excel template error mean?** — The template is not complete or not consistent: a required sheet, structure, or header is missing (100229-400, 100230-400, 100232-400, 100233-400), or the table sheets and the schema summary do not match, a table sheet misses required fields, or a schema name is used twice (100234-400, 100235-400, 100236-400).
+* **Q: Why can I not enable my dataset for Orchestrated campaigns?** — Common causes: the dataset is not a customer dataset (CJMDMS-100131-400: select or create a customer dataset, then enable it for Orchestrated campaigns from the **Datasets** settings) or is enabled for Profile (100132-400: select or create a customer dataset that is not enabled for Profile, then enable it from the **Datasets** settings), its schema is not supported (100134-400, 100227-400: create a relational schema with a primary key, a version descriptor, and an identity field, then create a new dataset on it), or the schema is already associated with a dataset enabled for Orchestrated campaigns (100139-400) or with datasets (100166-400): use an existing dataset, or create another schema. If the message says enablement is in progress (100133-400), wait a few minutes for the enablement to complete, then try again. If the extension is already enabled on the dataset (100169-400), continue by ingesting data into the dataset.
+* **Q: What should I do when I get a 403 error?** — Your user does not have the permission needed to access the resource (CJMDMS-100108-403), or the permission named in the message on a dataset (100138-403), on a schema (100178-403), or on datasets (100179-403). Check the permission against the permissions of your role, such as **View schemas**, **View datasets**, **Manage schemas**, or **Manage datasets**, and ask your administrator to add what is missing.
+* **Q: What does an Excel template error mean?** — The template is not complete or not consistent: a required sheet, structure, or header is missing (100229-400, 100230-400, 100232-400, 100233-400), or the table sheets and the schema summary do not match, a table sheet misses required fields, or a schema name is used twice (100234-400, 100235-400, 100236-400). A cell that holds a formula or a cell reference instead of a literal text value is also rejected (100273-400), and so is a field label or a field description that is longer than the maximum length shown in the message (100274-400, 100275-400).
 
 **Troubleshooting:**
 
@@ -67,13 +66,13 @@ For complete understanding, this information should be combined with the documen
     * **CJMDMS-100240-400**: the upload exceeds the schema limit shown in the message. Reduce the number of tables, or split the file into several uploads.
     * **CJMDMS-100126-422**: the DDL content is malformed. Fix the syntax shown in the message, then upload the file again.
     * **CJMDMS-100186-400**: correct the column definitions shown in the message, making sure each column has a name and a data type, then upload the file again.
-    * **CJMDMS-100187-400**: check that each table in the DDL is a complete **[!UICONTROL CREATE TABLE]** statement with its columns and at least one primary key, then upload the file again.
-    * **CJMDMS-100189-400**: the DDL accepts only **[!UICONTROL CREATE TABLE]** statements, so remove the syntax shown in the message, then upload the file again.
-    * **CJMDMS-100201-400**: remove the statements other than **[!UICONTROL CREATE TABLE]**, then upload the file again.
+    * **CJMDMS-100187-400**: check that each table in the DDL is a complete **CREATE TABLE** statement with its columns and at least one primary key, then upload the file again.
+    * **CJMDMS-100189-400**: the DDL accepts only **CREATE TABLE** statements, so remove the syntax shown in the message, then upload the file again.
+    * **CJMDMS-100201-400**: remove the statements other than **CREATE TABLE**, then upload the file again.
     * **CJMDMS-100184-400**: remove the duplicate tables listed in the message, or give each table a unique name, then upload the file again.
     * **CJMDMS-100185-400**: remove the duplicate columns listed in the message, or give each column of the table a unique name, then upload the file again.
     * **CJMDMS-100188-400**: set a supported data type for the column named in the message.
-    * **CJMDMS-100256-400**: add a **[!UICONTROL CREATE TABLE]** statement for each missing table listed in the message.
+    * **CJMDMS-100256-400**: add a **CREATE TABLE** statement for each missing table listed in the message.
     * **CJMDMS-100258-400**: add the missing entities listed in the message to the sheet named in the message.
     * **CJMDMS-100265-400**: use only letters, numbers, underscores, hyphens, or spaces, and a single extension in the file name.
     * **CJMDMS-100269-400**: add one of the allowed extensions listed in the message to the file name.
@@ -85,11 +84,13 @@ For complete understanding, this information should be combined with the documen
     * **CJMDMS-100235-400**: rename the table sheet so it matches a schema name listed in the summary sheet, or correct the schema name in the summary sheet.
     * **CJMDMS-100236-400**: complete all the required columns of the sheet named in the message.
     * **CJMDMS-100234-400**: give each schema a unique name in the schema summary.
+    * **CJMDMS-100273-400**: formulas and cell references are not supported, and the import accepts only literal string cells. Replace the formula or cell reference in the cell named in the message with a literal text value, then upload the file again.
+    * **CJMDMS-100274-400**, **CJMDMS-100275-400**: the field label (100274-400) or the field description (100275-400) in the cell named in the message is longer than the maximum length shown in the message. Shorten it to that length, then upload the file again.
 * **Primary key and version descriptor**:
-    * **CJMDMS-100157-400**: open the schema from the **[!UICONTROL Data Management]** > **[!UICONTROL Schema]** menu, assign a **[!UICONTROL Primary Key]** to a field, and save. Then create the dataset again or upload the file again.
-    * **CJMDMS-100207-400**: open the schema from the **[!UICONTROL Data Management]** > **[!UICONTROL Schema]** menu, assign a **[!UICONTROL Primary Key]** to a field, and save. Then create the dataset again.
+    * **CJMDMS-100157-400**: open the schema from the **Data Management** > **Schema** menu, assign a **Primary Key** to a field, and save. Then create the dataset again or upload the file again.
+    * **CJMDMS-100207-400**: open the schema from the **Data Management** > **Schema** menu, assign a **Primary Key** to a field, and save. Then create the dataset again.
     * **CJMDMS-100244-400**: define a primary key column in the sheet named in the message, then upload the file again.
-    * **CJMDMS-100197-400**, **CJMDMS-100242-400**: open the schema, select one field (for example lastmodified) as the **[!UICONTROL Version Descriptor]**, and mark it as required.
+    * **CJMDMS-100197-400**, **CJMDMS-100242-400**: open the schema, select one field (for example lastmodified) as the **Version Descriptor**, and mark it as required.
     * **CJMDMS-100259-400**: set the version identifier on exactly one column of the sheet, then upload the file again.
     * **CJMDMS-100261-400**: mark the column named in the message as required in the sheet.
     * **CJMDMS-100181-400**: the primary key field is also used in the version descriptor. Use another field, for example a datetime column such as lastmodified.
@@ -112,10 +113,10 @@ For complete understanding, this information should be combined with the documen
 * **Names and permissions**:
     * **CJMDMS-100146-400**: a schema with this title already exists. Choose a different schema title.
     * **CJMDMS-100168-400**: the request contains several schemas with the same title. Give each schema a unique title.
-    * **CJMDMS-100108-403**: check that your role has the permission for the schema or dataset, such as **[!DNL View schemas]** or **[!DNL View datasets]** to read and **[!DNL Manage schemas]** or **[!DNL Manage datasets]** to change, and that it includes the current sandbox. Ask your administrator to add what is missing.
-    * **CJMDMS-100138-403**: check the permission named in the message against the permissions of your role on datasets, such as **[!DNL Manage datasets]** to change or **[!DNL View datasets]** to read, and ask your administrator to add it. If the dataset carries an access label, your role must also include it.
-    * **CJMDMS-100178-403**: check the permission named in the message against the permissions of your role on schemas, such as **[!DNL Manage schemas]** to change or **[!DNL View schemas]** to read, and ask your administrator to add it. If the schema contains fields with an access label, your role must also include that label.
-    * **CJMDMS-100179-403**: check the permission named in the message against the permissions of your role on datasets, such as **[!DNL Manage datasets]** to change or **[!DNL View datasets]** to read, and ask your administrator to add it.
+    * **CJMDMS-100108-403**: check that your role has the permission for the schema or dataset, such as **View schemas** or **View datasets** to read and **Manage schemas** or **Manage datasets** to change, and that it includes the current sandbox. Ask your administrator to add what is missing.
+    * **CJMDMS-100138-403**: check the permission named in the message against the permissions of your role on datasets, such as **Manage datasets** to change or **View datasets** to read, and ask your administrator to add it. If the dataset carries an access label, your role must also include it.
+    * **CJMDMS-100178-403**: check the permission named in the message against the permissions of your role on schemas, such as **Manage schemas** to change or **View schemas** to read, and ask your administrator to add it. If the schema contains fields with an access label, your role must also include that label.
+    * **CJMDMS-100179-403**: check the permission named in the message against the permissions of your role on datasets, such as **Manage datasets** to change or **View datasets** to read, and ask your administrator to add it.
 
 **Related pages:**
 
@@ -129,6 +130,18 @@ For complete understanding, this information should be combined with the documen
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
 * Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
+**Personas:**
+
+* **marketer:** Can find the cause and the fix for CJMDMS errors returned when creating relational schemas and enabling datasets for Orchestrated campaigns. Can identify the error family from the code, such as files and formats, primary key, relationships, identity, or permissions. The page states that an error code uses the prefix CJMDMS, followed by an error number and an HTTP status. Where: "Troubleshooting".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Note the error code, the message, the request ID, and the campaign, journey, or activity concerned, and keep the logs or screenshots.
+* **Success check:** The message states the orchestrated campaign extension is already enabled on the dataset, so you can continue by ingesting data into it.
+* **Previous:** Creating relational schemas using a DDL file or Excel template: Configuration steps (orchestrated/file-upload-schema.md); Creating relational schemas manually: Configuration steps (orchestrated/manual-schema.md)
+* **Next:** After the orchestrated campaign extension is enabled on the dataset: Configuration steps (orchestrated/ingest-data.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 6a204a60 -->
+<!-- ai-section-version: 1 | source-hash: dee63c82 -->

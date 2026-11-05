@@ -47,6 +47,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which policy applies when more than one could match?** — The policy activated most recently takes precedence, and its approver user groups are the ones notified and governing the request.
 * **Q: If a requestor belongs to multiple user groups, can they choose which group receives the request?** — No. The user groups specified in the applicable policy are notified automatically.
 
+**Personas:**
+
+* **marketer:** Can build a journey or campaign and submit it for approval, after which it enters an In Review state. Can cancel the approval request to return the campaign or journey to Draft for revisions. The page states that no edits can be made while the campaign or journey is In Review, unless the request is canceled. Where: "Approval process overview".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** In the Permissions product, go to the Roles tab and select the desired Role to assign approval permissions.
+* **Success check:** Users already assigned to the role have their permissions automatically updated.
+* **Previous:** Assign the Approve & publish Campaigns and Approve & publish Journeys permissions before setting up approval: Manage users and roles (administration/permissions.md)
+* **Next:** Create an approval policy that defines when journeys or campaigns require approval: Create & manage approval policies (test-approve/approval-policies.md); Submit a journey or campaign for approval: Request approval (test-approve/request-approval.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: fd36cc0c -->

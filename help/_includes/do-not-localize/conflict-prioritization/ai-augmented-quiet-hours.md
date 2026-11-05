@@ -60,6 +60,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How long can a message stay queued?** — If it remains queued for a profile for more than 7 days, it is discarded.
 * **Q: How long do rule updates take to apply?** — Up to 12 hours for channel actions that already use that rule.
 
+**Personas:**
+
+* **marketer:** Can create a quiet hours rule in a custom rule set, choosing Weekly or Custom date periods and a time zone. Can add up to 5 periods with Add more dates, and choose Queue message or Discard message to handle messages. The page states that quiet hours are not enforced for a profile with no time zone value. Where: "Create Quiet hours rules".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Navigate to Business rules to access the rule sets inventory.
+* **Success check:** The rule displays in the rule set, and you can select it to view its details in the properties pane.
+* **Previous:** Learn how to create rule sets before adding a quiet hours rule: Work with rule sets (conflict-prioritization/rule-sets.md); Review custom channels supported by quiet hours: Get started with custom channels (custom-channel/get-started-custom-channel.md)
+* **Next:** View profiles excluded by quiet hours in the Customer Journey Analytics report: Updated reporting experience (reports/report-gs-cja.md); Check the Live report for quiet hours listed as an exclusion reason: Live report (reports/live-report.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 88cb19d9 -->

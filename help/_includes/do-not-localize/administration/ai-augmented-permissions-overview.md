@@ -45,5 +45,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: Are sandboxes managed independently of roles?** — The page states that Sandboxes are assigned through roles in Permissions.
 * **Q: Where is access control for Journey Optimizer managed?** — Through Permissions in Adobe CX Enterprise; this functionality leverages roles and policies, which link users with permissions and sandboxes.
 
+**Personas:**
+
+* **admin:** Can configure access control for Journey Optimizer with system or product administrator privileges. The page states that system administrators have no restrictions. The minimum role that can grant or withdraw permissions is a product administrator. Where: "Guardrails".
+* **developer:** Can have access to specific objects controlled through attribute-based access control, using attributes that are metadata added to an object. The page states that an example is a label added to a schema field or segment. Where: "Get started with access control".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Learn more about the available built-in roles on this page.
+* **Next:** Learn more about the available built-in roles: Journey Optimizer built-in Roles (administration/ootb-product-profiles.md); Learn more about permission levels: Permission levels (administration/high-low-permissions.md)
+
 +++
 <!-- ai-accordion-version: 1 | source-hash: d4984095 | related: administration/object-based-access.md -->

@@ -46,5 +46,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can labels be applied to objects other than schema fields?** — Yes; the page states you can also add a Label to Schema, Datasets, and Audiences.
 * **Q: Is there an API for managing roles, policies, and products with ABAC?** — Yes; Roles, Policies, and Products can be accessed via the attribute-based access control API.
 
+**Personas:**
+
+* **admin:** Can create a new Role and grant it the Label C2 to access the restricted Nationality field. Can assign a Label to a schema field, dataset, or audience, and add a Label to built-in roles. The page states that a Policy must be created before managing permissions for a Role. Where: "Create a role and assign labels".
+* **decision-maker:** Can face restricted access to the Nationality field without the matching Label. The page states that a user without label C2 cannot view it, edit its expression in advanced mode, test the journey, or publish the journey. Where: "Access labeled objects in Adobe Journey Optimizer".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Create a new Role and assign it the corresponding Label for users to access and use the schema field.
+* **Success check:** The schema's field will now only be visible and usable by users who are part of a role set with the C2 label.
+
 +++
 <!-- ai-accordion-version: 1 | source-hash: 49ef3ad5 -->

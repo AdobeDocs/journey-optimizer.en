@@ -52,6 +52,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I target more than one page?** — Select Pages matching rule, define criteria for the Domain and Page fields, and enter a Default authoring and preview URL.
 * **Q: When would I use the Exclude operator?** — When one of the pages matching the defined rule should not be targeted.
 
+**Personas:**
+
+* **admin:** Can create a web channel configuration from Channels, General settings, Channel configurations by selecting Create channel configuration. Can assign custom or core data usage labels to the configuration through Manage access, and select Marketing actions to associate consent policies to messages. The page states that configuration names must begin with a letter (A-Z) and can only contain alphanumeric characters, underscore, dot, and hyphen. Where: "Create a web channel configuration".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Access the Channels, General settings, Channel configurations menu, then select Create channel configuration.
+* **Success check:** You can now select this configuration when using the Web channel in your campaigns or journeys.
+* **Next:** Assigning custom or core data usage labels to the configuration through Manage access: Object level access control (administration/object-based-access.md); Selecting Marketing actions to associate consent policies to messages using the configuration: Work with consent policies (action/consent.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 411246b0 -->

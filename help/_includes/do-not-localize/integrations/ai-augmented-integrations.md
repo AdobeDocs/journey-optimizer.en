@@ -58,6 +58,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What can I change on an active integration?** — Only Authentication details and Policy configuration; those updates apply to live journeys and campaigns.
 * **Q: What is a MessageValidityExclusion event?** — It is emitted when a queued message sits past its validity window (TTL) and the system discards it.
 
+**Personas:**
+
+* **marketer:** Can apply configured Standard and Browsing integrations to personalize Email, Mobile message, and Push content. Can select items instead of entering values manually when a Browsing integration is linked to a Standard integration. The page states that marketers may reference only exposed fields, and tokens for other paths fail validation in the editor. Where: "Step-by-step".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Make sure you have the Manage AJO integration configuration and View AJO integration configuration permissions before you start.
+* **Success check:** Users already assigned to this role have their permissions automatically updated.
+* **Previous:** Grant the Manage AJO integration configuration and View AJO integration configuration permissions: Manage users and roles (administration/permissions.md)
+* **Next:** Create a Standard integration, optionally linked to a Browsing integration: Create Standard integrations (integrations/integrations-create.md); Apply configured integrations to personalize Email, Mobile message, and Push content: Using External Integrations (integrations/integrations-personalization.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d880cd5e -->

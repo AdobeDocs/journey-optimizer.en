@@ -52,6 +52,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: When do I need Publish instance setup?** — When your publish instance is authenticated or you must use a custom publish domain; otherwise the default publish configuration can be used without changes.
 * **Q: How do I confirm the integration works?** — Pick a Content Fragment in the Content Advisor window and save; validation runs automatically and shows an error list if it fails.
 
+**Personas:**
+
+* **admin:** Can connect a sandbox to an Adobe Experience Manager repository from Administration, Channels, AEM Integration. Can choose Author only setup or Publish instance setup, and enter a custom domain or Service Credential JSON for authentication. The page states that AEM Integration saves repository settings per sandbox, and each sandbox keeps its own integrations. Where: "Configure repositories".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Access Administration, Channels, AEM Integration.
+* **Success check:** Validation runs automatically when you save with a test Content Fragment selected, and no error list appears.
+* **Next:** When the repository is configured: AEM Content Fragments (integrations/aem-fragments.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 7b3f420c -->

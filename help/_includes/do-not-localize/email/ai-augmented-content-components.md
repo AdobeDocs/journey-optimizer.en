@@ -51,6 +51,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I insert an image?** — Drag the Image component into a structure component, then Browse your assets, Import media to Adobe Experience Manager Assets, or Find Adobe Stock photos.
 * **Q: Can I keep the grid layout on mobile?** — Yes, use the Do not stack columns on mobile option.
 
+**Personas:**
+
+* **marketer:** Can drag and drop content components into structure components using the Content components panel in the Email Designer. Can adjust each component's attributes and styling with the Settings and Style tabs, and delete or duplicate components from the advanced menu. The page states that you can add several components into a single structure component and into each column of a structure component. Where: "Add content components".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Drag and drop the content components of your choice inside the relevant structure components.
+* **Success check:** The newly added component is selected, and the Settings and Style tabs become available in the right pane to adjust its attributes.
+* **Previous:** Define the layout of your email with structure components: Design content from scratch in Journey Optimizer (email/content-from-scratch.md)
+* **Next:** Add personalized offers into an email using the Offer decision component: Add personalized offers (email/add-offers-email.md); Personalize text content with profile data fields: Personalize content in Journey Optimizer (personalization/personalize.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: e51f1972 -->

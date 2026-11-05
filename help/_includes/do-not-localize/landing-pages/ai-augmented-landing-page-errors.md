@@ -108,6 +108,17 @@ For complete understanding, this information should be combined with the documen
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
 * Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
+**Personas:**
+
+* **marketer:** Can fix validation errors on the URL, the name, and the HTML content of the primary page or a subpage. Can give each page a unique URL, enter a page name, and add HTML content in the page designer. The page states that the HTML template size cannot exceed 1 MB, for the primary page or for a subpage. Where: "Page URL, name, and content".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Find the cause and the fix for the landing page error, grouped by feature, using its error code.
+* **Previous:** Getting started with landing pages: Get started with landing pages (landing-pages/get-started-lp.md); Creating and publishing a landing page: Create a landing page (landing-pages/create-lp.md)
+* **Next:** Managing a landing page after fixing an error: Manage landing page (landing-pages/manage-lp.md); Checking landing page guardrails and limitations: Journey Optimizer guardrails and limitations (start/guardrails.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: b3c020a7 -->

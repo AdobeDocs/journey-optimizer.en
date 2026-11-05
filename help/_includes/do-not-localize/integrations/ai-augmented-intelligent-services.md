@@ -38,4 +38,14 @@ For complete understanding, this information should be combined with the documen
 - **Q: Where are Customer AI scores stored?** — They are stored as profile attributes in Adobe Experience Platform's Real-time Customer Profile, making them accessible like any other profile attribute in Journey Optimizer.
 - **Q: How can I use Customer AI scores in a journey?** — Once available as profile attributes, the scores can be used in conditions for decisioning, in action configurations, or for building audience segments.
 
+**Personas:**
+
+* **marketer:** Can use Customer AI churn or conversion scores as profile attributes in conditions for decisioning, actions, or segment building. The page states that marketing analysts can set up predictions using business-level configurations without requiring data science expertise. Where: "FAQ".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Set up predictions tailored to your company's needs using business-level configurations.
+* **Success check:** Churn or conversion scores become available as profile attributes in Real-time Customer Profile.
+
 +++

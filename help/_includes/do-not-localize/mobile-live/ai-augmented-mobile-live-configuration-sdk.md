@@ -52,6 +52,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I register Live activity types?** — Use `Messaging.registerLiveActivity()` in your `AppDelegate` after SDK initialization; you can register multiple Live activity types.
 * **Q: Can I start a Live activity without Journey Optimizer?** — Yes, a Live activity can be initiated locally within the application code (optional), in addition to being started remotely through Journey Optimizer.
 
+**Personas:**
+
+* **admin:** Can confirm iOS 16.1 or later, Xcode 14.0 or later, Swift 5.7 or later, and AEP Mobile SDK Messaging 5.11.0 or later are installed. The page states that iOS 17.2 or later is required for push-to-start support and iOS 18 or later for broadcast channel support. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Import the AEPMessaging, AEPMessagingLiveActivity, and ActivityKit modules.
+* **Success check:** The app can display real-time Live activity updates on the Lock Screen and Dynamic Island.
+* **Next:** Experiencing issues with token registration, payload alignment, or Live activity delivery: Troubleshoot Live activities (mobile-live/troubleshoot-mobile-live.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: e09eaf1f -->

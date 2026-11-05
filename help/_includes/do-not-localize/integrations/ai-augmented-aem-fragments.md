@@ -59,6 +59,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I enable real-time personalization in a fragment?** — Declare all placeholders as parameters in the fragment helper tag and map them to profile attributes, contextual attributes, static strings, or predefined variables.
 * **Q: How do I use profile attributes inside a fragment field?** — Use the full attribute path, such as `profile.person.name.firstName`, in the field, and add an AJO helper fragment that declares the attribute with `let` syntax inline in the same message. Flat tokens still resolve from the token map on the reference.
 
+**Personas:**
+
+* **marketer:** Can add an AEM Content Fragment to a campaign or journey through the AEM Content Advisor, then choose fields and map placeholders to profile attributes, contextual attributes, static strings, or variables. Can enable the pills experience to hide long attribute paths and improve readability. The page states that placeholders used within a Content Fragment must be explicitly declared as parameters in the fragment helper tag to enable real-time personalization. Where: "Add Experience Manager Content fragments".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Assign a tag whose ID follows ajo-enabled:{AJO-OrgId}/{AJO-SandboxName} to your Content Fragment in Experience Manager.
+* **Success check:** The Content Fragment appears in the Content Fragment selector for your organization and sandbox.
+* **Next:** Create your campaign to add the tagged Content Fragment: Create an Action campaign (campaigns/create-campaign.md); Create your journey to add the tagged Content Fragment: Create your first journey (building-journeys/journey-gs.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 91e79eac -->

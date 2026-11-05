@@ -137,7 +137,12 @@ To add a new variant, click the **[!UICONTROL Create sample]** button. A new bla
 You can upload a file with predefined variants and values to speed up the process.
 
 1. Click the **[!UICONTROL Upload data]** button to open the file upload screen.
-1. Select **[!UICONTROL Download sample]** to download a a CSV, JSON, or JSONLINES file template.
+1. Select **[!UICONTROL Download sample]** to download a CSV, JSON, or JSONLINES file template.
+
+    >[!NOTE]
+    >
+    >To upload multiple variants in a single file, you must use the JSONLINES (JSONL) format, with one variant per line. Other file formats do not support multiple variants.
+
 1. Open the template file and fill in your desired values for each profile attribute. The template includes a column for each profile attribute used in your content for personalization.
 
     Example JSON syntax:

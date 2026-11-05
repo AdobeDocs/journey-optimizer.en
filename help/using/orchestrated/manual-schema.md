@@ -196,3 +196,5 @@ You can now start ingesting data into your schema using the source of your choic
 ➡️ [Learn how to ingest data](ingest-data.md)
 
 If a schema or dataset returns an error code, see [Relational schema and dataset errors](relational-schema-errors.md).
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-manual-schema.md}}

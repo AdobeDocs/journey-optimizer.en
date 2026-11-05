@@ -88,8 +88,9 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <tr>
 <td>
 <p>Email header fields and delivery settings can now be overridden at the journey or campaign action level, without requiring a separate channel configuration. From name, From email prefix, Reply-To, recipient address, and list-unsubscribe values can each be set using profile attributes or contextual data.</p><p>This change allows each individual journey or campaign to carry its own sender identity, useful when the same channel configuration serves multiple programs, regions, or teams that each need a distinct From address or reply routing.</p>
+<p><img src="assets/do-not-localize/override-email-config.gif"></p>
 <p>For more information, refer to the <a href="../email/create-email.md#override-email-channel-configuration">detailed documentation</a>.</p>
-<p>Availability date: October 28, 2026</p>
+<p>Availability date: October 26, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -98,15 +99,16 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <table>
 <thead>
 <tr>
-<th><strong>Self-serve setup for High throughput email</strong><br/></th>
+<th><strong>Self-serve setup for High throughput email and push</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>If you have purchased the High throughput transactional messaging add-on, you can now set up High throughput for API-triggered email campaigns yourself in the product UI. Create a dedicated High throughput IP pool, then create a High throughput email channel configuration that uses it, without requesting a manual setup for each resource. </p>
+<p>If you have purchased the High throughput transactional messaging add-on, you can now set up High throughput for API-triggered email and push campaigns yourself in the product UI through a dedicated channel configuration. You no longer need to request a manual setup for each resource. </p>
+<p><img src="assets/do-not-localize/high-throughput-config.gif"></p>
 <p>For more information, refer to the <a href="../campaigns/api-triggered-high-throughput.md">detailed documentation</a>.</p>
-<p>Availability date: October 28, 2026</p>
+<p>Availability date: October 26, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -146,9 +148,6 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 28, 2026
 
-
-+++ Coming soon — **Information below is subject to change.**
-
 <table>
 <thead>
 <tr>
@@ -158,18 +157,41 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <tbody>
 <tr>
 <td>
-<p>To support compliance with open-tracking consent requirements such as the CNIL guidance in France, you can now honor a recipient's tracking consent without excluding them from an otherwise eligible email send. Tracking consent is stored in the Adobe Experience Platform profile and evaluated for each recipient at send time. A new <strong>Disable open tracking</strong> option in the email settings removes the Journey Optimizer open-tracking pixel for recipients who have not consented. Email delivery, content, and unsubscribe links are unaffected.</p>
-<!-- Documentation link: TBD -->
+<p>To support compliance with open-tracking consent requirements such as the CNIL guidance in France, you can now honor a recipient's tracking consent without excluding them from an otherwise eligible email send. Tracking consent is stored in the Adobe Experience Platform profile and evaluated for each recipient at send time.</p>
+<p>A new <strong>Disable open tracking</strong> option in the email settings removes the Journey Optimizer open-tracking pixel for recipients who have not consented. Email delivery, content, and unsubscribe links are unaffected.</p>
+<p>For more information, refer to the <a href="..//email/open-tracking-consent.md">detailed documentation</a>.</p>
+<p>Availability date: October 29, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
+
++++ Coming soon — **Information below is subject to change.**
 
 * **Reporting webhooks available for custom channels** - You can now define a reporting webhook for a custom outbound channel and attach it to a channel configuration. Use it to enrich your Journey Optimizer reports with interaction events. <!-- Documentation link: TBD -->
 
 +++ 
 
 ### Journeys {#oct-26-journeys}
+
+<table>
+<thead>
+<tr>
+<th><strong>New journey alerts (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Five new alerts help you monitor journey message bounce and delivery error rates, receive notifications when journey <strong>Read Audience</strong> exports start and complete, and detect journey event delays due to queueing when the event throughput guardrail has been exceeded. Threshold-based alerts support configurable thresholds, and <strong>Read Audience</strong> export notifications support journey-level subscriptions.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p><img src="assets/do-not-localize/journey-alerts.gif"></p>
+<p>For more information, refer to the <a href="../reports/alerts.md#available-alerts">detailed documentation</a>.</p>
+<p>Availability date: October 29, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -229,28 +251,13 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 26, 2026
 
-+++ Coming soon — **Information below is subject to change.**
+* [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns (Limited Availability)** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view. [Learn more](../start/calendar.md)
 
-<table>
-<thead>
-<tr>
-<th><strong>New journey alerts (Limited Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Five new alerts help you monitor journey message bounce and delivery error rates, receive notifications when journey <strong>Read Audience</strong> exports start and complete, and detect journey event delays due to queueing when the event throughput guardrail has been exceeded. Threshold-based alerts support configurable thresholds, and <strong>Read Audience</strong> export notifications support journey-level subscriptions.</p>
-<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
-<p><img src="assets/do-not-localize/journey-alerts.gif"></p>
-<!--
-<p>For more information, refer to the <a href="../reports/alerts.md#available-alerts">detailed documentation</a>.</p>
-<p>Availability date: October 29, 2026</p>
--->
-</td>
-</tr>
-</tbody>
-</table>
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+  Availability date: October 29, 2026
+
++++ Coming soon — **Information below is subject to change.**
 
 <table>
 <thead>
@@ -269,41 +276,71 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 </tbody>
 </table>
 
+* **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
+
++++
+
+### Campaigns {#oct-26-orchestrated-campaigns}
+
+The following improvements are coming to campaigns in this release.
+
+* [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns (Limited Availability)** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view. [Learn more](../start/calendar.md)
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+  Availability date: October 29, 2026
+
++++ Coming soon — **Information below is subject to change.**
+
+* **Increased message activity limit for Orchestrated campaigns** - Orchestrated campaigns now support up to 25 message actions on a single canvas, up from the previous limit of 10. This allows complex cross-channel orchestrations, spanning email, push, SMS, and other channels, to be built and managed as a single campaign rather than split across multiple smaller ones.
+
+  For enterprise teams running sophisticated multi-step programs, this reduces operational overhead and simplifies publication and rollback handling when managing large campaign launches. <!-- Documentation link: TBD -->
+
+* **Orchestrated campaigns skills in Coworker** - You can now find and inspect orchestrated campaigns conversationally from the Coworker chat interface. This release covers four read-only capabilities: listing and filtering campaigns by status, channel, tags, or name; pulling a specific campaign's details including its channel configuration and activity structure; visualizing a campaign's canvas as a graph of its activities and connections; and retrieving execution logs to surface errors for troubleshooting. This provides teams with live visibility into campaign data without requiring API access or navigation through the Journey Optimizer user interface. Creating, editing, or publishing campaigns via Coworker is not yet supported.
+
++++
+
+### Landing pages {#oct-26-landing-pages}
+
 <table>
 <thead>
 <tr>
-<th><strong>Journey creation from Coworker rail</strong><br/></th>
+<th><strong>Anonymous landing pages (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p><strong>Journey creation with AI</strong> is now available directly from the Coworker right rail, replacing the previous AI Assistant experience with a re-branded, integrated entry point for generating journeys.</p>
+<p>Journey Optimizer now allows you to create public landing pages accessible to anyone, and from there capture data from anonymous visitors into Experience Platform non-profile enabled datasets. You can share the landing page URL anywhere, such as in emails, SMS messages or on your website.</p>
+<p>To reuse your existing Journey Optimizer branded subdomains for public landing pages, you need to migrate them to Cloudflare.</p>
+<p>This capability is available in Limited Availability. Contact your Adobe representative to request access.</p>
+<p><img src="assets/do-not-localize/anonymous-lp.gif"></p>
+<p>For more information, refer to the <a href="../landing-pages/lp-anonymous.md">detailed documentation</a>.</p>
+<p>Availability date: October 28, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-* **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
+### Administration {#oct-26-administration}
 
-* [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view.
-
-+++
-
-### Orchestrated campaigns {#oct-26-orchestrated-campaigns}
-
-The following improvements are coming to orchestrated campaigns in this release.
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **Increased message activity limit for orchestrated campaigns** - Orchestrated campaigns now support up to 25 message actions on a single canvas, up from the previous limit of 10. This allows complex cross-channel orchestrations, spanning email, push, SMS, and other channels, to be built and managed as a single campaign rather than split across multiple smaller ones.
-
-  For enterprise teams running sophisticated multi-step programs, this reduces operational overhead and simplifies publication and rollback handling when managing large campaign launches. <!-- Documentation link: TBD -->
-
-
-* **Orchestrated campaigns skills in Coworker** - You can now find and inspect orchestrated campaigns conversationally from the Coworker chat interface. This release covers four read-only capabilities: listing and filtering campaigns by status, channel, tags, or name; pulling a specific campaign's details including its channel configuration and activity structure; visualizing a campaign's canvas as a graph of its activities and connections; and retrieving execution logs to surface errors for troubleshooting. This provides teams with live visibility into campaign data without requiring API access or navigation through the Journey Optimizer user interface. Creating, editing, or publishing campaigns via Coworker is not yet supported.
-
-+++
+<table>
+<thead>
+<tr>
+<th><strong>Custom metadata for campaigns and journeys (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Define your own business fields, such as line of business, product or cost center, in the schemas provided for Action campaigns, journeys and Orchestrated campaigns. Select up to 10 fields per entity type, then fill them in from the <strong>Metadata fields</strong> section of the properties of each journey or campaign. The values are recorded in dedicated datasets that you can use for reporting, exports and audience creation.</p>
+<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p>For more information, refer to the <a href="../administration/custom-metadata.md">detailed documentation</a>.</p>
+<p>Availability date: October 29, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Decisioning {#oct-26-decisioning}
 
@@ -347,53 +384,3 @@ The following improvements are coming to orchestrated campaigns in this release.
 
 +++
 
-### Landing pages {#oct-26-landing-pages}
-
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Anonymous landing pages (Limited Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now allows you to create public landing pages accessible to anyone, and from there capture data from anonymous visitors into Experience Platform non-profile enabled datasets. You can share the landing page URL anywhere, such as in emails, SMS messages or on your website.</p>
-<p>To reuse your existing Journey Optimizer branded subdomains for public landing pages, you need to migrate them to Cloudflare.</p>
-<p>This capability is available in Limited Availability. Contact your Adobe representative to request access.</p>
-<!-- GIF placeholder: TBD -->
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
-
-+++
-
-### Administration {#oct-26-administration}
-
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom metadata for campaigns and journeys (Limited Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Define your own business fields, such as line of business, product or cost center, in the schemas provided for Action campaigns, journeys and Orchestrated campaigns. Select up to 10 fields per entity type, then fill them in from the <strong>Metadata fields</strong> section of the properties of each journey or campaign. The values are recorded in dedicated datasets that you can use for reporting, exports and audience creation.</p>
-<p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
-<!--
-<p>For more information, refer to the <a href="../administration/custom-metadata.md">detailed documentation</a>.</p>
-<p>Availability date: October 29, 2026</p>
--->
-</td>
-</tr>
-</tbody>
-</table>
-
-+++

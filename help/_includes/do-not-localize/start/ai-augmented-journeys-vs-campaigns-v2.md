@@ -44,5 +44,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: When should I use an API-triggered campaign vs. a Unitary event journey?** — Use an API-triggered campaign when an external system needs to trigger a single message immediately with payload data; use a Unitary event journey when multi-step orchestration is needed after the API-sent event.
 * **Q: Can I combine Journeys and campaigns in the same marketing strategy?** — Yes. Use Journeys for behavioral real-time engagement, Action campaigns for scheduled broadcasts or inbound activations, API-triggered campaigns for transactional messages, and Orchestrated campaigns for complex batch workflows.
 
+**Personas:**
+
+* **marketer:** Can choose between Journeys, Action campaigns, and API-triggered campaigns to reach customers in Adobe Journey Optimizer. Can use wait activities, conditional branching, frequency capping, and test mode to build a Journey, or configure an Action campaign with inbound channel actions. The page states that up to 10 inbound channel actions are allowed per Action campaign. Where: "How each approach works".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Decide whether each customer needs to move at their own pace or receive a message on a schedule.
+* **Success check:** The use case examples table shows your scenario mapped to a recommended approach.
+* **Next:** Ready to build a multi-step, real-time journey: Get started with journeys (building-journeys/journey.md); Ready to build a scheduled or API-triggered campaign: Get started with campaigns (campaigns/get-started-with-campaigns.md)
+
 +++
 <!-- ai-accordion-version: 1 | source-hash: 873097f5 -->

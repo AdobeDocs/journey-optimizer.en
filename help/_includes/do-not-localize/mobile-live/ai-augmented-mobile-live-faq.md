@@ -70,6 +70,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can a single campaign target both iOS and Android?** — No; a Live Update channel configuration targets a single platform, so you create one campaign for iOS and one for Android.
 * **Q: What format should epoch timestamps use?** — Unix epoch time in seconds, not milliseconds.
 
+**Personas:**
+
+* **marketer:** Can select unitary to target and personalize a Live activity for one recipient, or broadcast to send identical content to every channel subscriber. Can create multiple campaigns with different content structures to A/B test which performs better. The page states that broadcast update and end events do not provide per-recipient reporting, only campaign-level metrics. Where: "Marketer Questions".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Create a widget extension in your Xcode project and implement the ActivityConfiguration.
+* **Success check:** You can track delivery rates, failures, and engagement metrics in your campaign analytics.
+* **Next:** For detailed steps to build the widget extension and ActivityConfiguration for Live activities: Configure the Live activities channel (mobile-live/mobile-live-configuration-sdk.md); To track delivery rates, failures, and engagement metrics for a Live activity campaign: Campaign Live activity report (reports/campaign-global-report-cja-activity.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: b24807ba -->

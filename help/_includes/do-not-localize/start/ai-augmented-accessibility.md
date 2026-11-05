@@ -49,6 +49,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I discard changes in a configuration pane using the keyboard?** — Press Esc to discard changes and close the configuration pane.
 * **Q: Where can I find guidance for accessible email and landing page content?** — In the accessible content section referenced from this page.
 
+**Personas:**
+
+* **marketer:** Can navigate Journey Optimizer using keyboard shortcuts such as Tab, Shift + Tab, Arrow, Enter or Spacebar, and Esc. Can use canvas-specific shortcuts to add, select, delete, zoom, and move activities on the journey canvas in draft status. The page states that accessibility features are inherited from Adobe Experience Platform: keyboard accessibility, color contrast, and validation of required fields. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Use Tab to move between user interface elements, sections, and menu groups.
+* **Success check:** Focus moves to the next user interface element, section, or menu group.
+* **Next:** Design accessible content for emails and landing pages: Design accessible content (email/accessible-content.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: bbb90268 -->

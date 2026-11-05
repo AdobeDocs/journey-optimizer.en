@@ -52,6 +52,17 @@ For complete understanding, this information should be combined with the documen
 * Previewing and testing content: Learn how to preview and test content (content-management/preview-test.md)
 * Next step, audience: Define the Action campaign audience (campaigns/campaign-audience.md)
 
+**Personas:**
+
+* **marketer:** Can open the content of an Action campaign from the Content tab or the Edit content button. Can use Simulate content to test content variations with sample input data or AI auto-generation. Can select Simulate content (AEP profiles) from the dropdown to preview with test profiles. Where: "Test and check your content".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Navigate to the Content tab or select the Edit content button to configure the message content.
+* **Success check:** The content is defined, and Simulate content is available to preview and test it.
+* **Next:** Learn how to preview and test content: Preview and test your content (content-management/preview-test.md); Once the content of the Action campaign is ready: Define the Action campaign audience (campaigns/campaign-audience.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 2e14c15f -->

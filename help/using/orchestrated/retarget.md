@@ -176,3 +176,5 @@ You have now configured a Tracking-based retargeting rule to target recipients b
 
 
 ![](assets/retarget_10.png){zoomable="yes"}
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-retarget.md}}

@@ -47,6 +47,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: On which channels is priority score available?** — The web, in-app, and code-based inbound channels only.
 * **Q: How does an action get its priority?** — By default it inherits the journey priority via [!UICONTROL Use journey priority]; unselect that option to set a separate value from 0-100.
 
+**Personas:**
+
+* **marketer:** Can enter a priority score from 0-100 in the Priority score field in journey or campaign properties, where higher means higher priority. Can also set a separate priority for an inbound channel action in the Priority field, after unselecting Use journey priority. The page states that if two journeys or campaigns have the same priority score, the system does not have a tie-breaking mechanism. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Enter a numeric value from 0-100 in the Priority score field located in the journey or campaign properties.
+* **Success check:** You can give a campaign a score of 100, as the page states this makes sure its content is shown.
+* **Next:** Assign a priority score to an inbound channel action within the Action activity: Use the Action activity (building-journeys/journey-action.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 60a45a6b -->

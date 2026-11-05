@@ -60,6 +60,7 @@ Use landing pages when you want to:
 * Let customers **opt in or opt out** of marketing communications or a specific service or newsletter from a link in an email or campaign—including subscription lists for targeted services. [Read more](lp-use-cases.md#subscription-to-a-service)
 * **Collect consent** before sending communications and send a **confirmation email** upon opt-in or opt-out. [Read more](lp-use-cases.md#send-confirmation-email)
 * **Capture or update profile data** using forms on **[!UICONTROL Data Capture]** landing pages—for progressive profiling, preferences, registrations, and similar scenarios. [Read more](#data-capture-lp)
+* Publish a **public landing page** that anonymous visitors can open from a shared URL and use to submit data to a non-profile enabled dataset (Limited Availability). [Read more](lp-anonymous.md)
 * Redirect users to a **dedicated web form** without building an external page outside of [!DNL Journey Optimizer]
 * Build **responsive landing pages** using [!DNL Journey Optimizer]'s content design capabilities
 
@@ -70,6 +71,8 @@ Use landing pages when you want to:
 >[!NOTE]
 >
 >Data capture through landing page forms is supported for **known profiles** (existing profiles identified in [!DNL Adobe Experience Platform]). The landing page should be opened from a **personalized link** (for example from an email campaign) so the profile identity can be resolved when the page loads.
+>
+>Data Capture landing pages can also be published on a public URL to capture data from anonymous visitors. In that case, the data is stored in a non-profile enabled dataset and does not enrich any profile. [Learn more](lp-anonymous.md)
 
 The following are example use cases:
 

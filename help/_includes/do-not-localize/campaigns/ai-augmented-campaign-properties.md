@@ -53,6 +53,17 @@ For complete understanding, this information should be combined with the documen
 * Access labels: Learn more about Object Level Access Control (administration/object-based-access.md)
 * Next step, action: Configure the campaign action (campaigns/campaign-action.md)
 
+**Personas:**
+
+* **marketer:** Can create an Action campaign of type Scheduled - Marketing and enter a name and description in the Properties tab. Can assign Adobe Experience Platform Unified Tags, fill in metadata fields, and limit access using access labels in Manage access. The page states that metadata fields marked with an asterisk are required. Where: "Define the Action campaign properties".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Browse to the Campaigns menu and select the Action tab.
+* **Success check:** The Action campaign is created and configured.
+* **Next:** configuring the campaign's action after the Action campaign is created and configured: Configure the campaign action (campaigns/campaign-action.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: e1411ab5 -->

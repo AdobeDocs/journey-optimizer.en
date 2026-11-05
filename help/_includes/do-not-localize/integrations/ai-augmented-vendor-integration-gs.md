@@ -48,6 +48,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What endpoint shape should I prefer?** — Stable, single-resource retrieval over broad list or pagination endpoints.
 * **Q: Is the list of vendors exhaustive?** — No; it is illustrative, and other platforms may be used where they satisfy product requirements.
 
+**Personas:**
+
+* **marketer:** Can call external systems over HTTP when the system exposes an API endpoint compatible with Integrations. Can map fields from JSON or HTML responses, request only needed attributes, and prefer single-resource retrieval over broad list or pagination endpoints. The page states that write-back, batch exports, and responses in any other format are not supported. Where: "Operational guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Prefer stable, single-resource retrieval, for example one entry, product, or member, over broad list or pagination endpoints.
+* **Success check:** The integration retrieves one entry, product, or member through a single-resource endpoint.
+* **Previous:** For the complete Integrations workflow before configuring a vendor: Enable External Integrations (integrations/integrations.md)
+* **Next:** For the specific vendor configuration pattern for a category: Vendor Integration (integrations/vendor-integration.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d3c58ff0 -->

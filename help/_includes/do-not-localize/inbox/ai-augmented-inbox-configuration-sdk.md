@@ -56,6 +56,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I keep campaign reporting accurate?** — Use the `collectEvent` function provided by the `subscribeRulesetItems` callback to report interactions (display, interact, dismiss, delete) back to AJO.
 * **Q: How do I run the sample?** — Run `npm install` and `npm start`, open `https://localhost`, and update `datastreamId`, `orgId`, and the `SURFACE` constant in `src/app/page.js` for your AJO environment.
 
+**Personas:**
+
+* **developer:** Can configure the Web SDK with the datastreamId and orgId, and call subscribeRulesetItems with the SURFACE and schema constants to receive propositions. Can read fields such as proposition.scopeDetails.activity.id, content.title, and content.body, and call sendEvent with renderDecisions and personalization.surfaces to fetch propositions. The page states that cards with additional delivery rules do not appear on sendEvent alone, so you must call evaluateRulesets with a matching decisionContext. Where: "Implement the Web SDK".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Configure a datastream configured with Adobe Experience Platform as a service, with Journey Optimizer enabled and an event dataset selected.
+* **Success check:** The subscribeRulesetItems callback runs again with any newly qualified cards included alongside the existing ones.
+* **Previous:** Configure a Content Cards channel on the same surface: Content cards configuration (content-card/content-card-configuration.md); Configure an Inbox channel on the same surface: Inbox configuration (inbox/inbox-configuration.md)
+* **Next:** Create a Content Card campaign that uses the Content Cards channel: Create content cards (content-card/create-content-card.md); Create an Inbox campaign that uses the Inbox channel: Create Inbox (inbox/inbox-create.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d66e93e5 -->

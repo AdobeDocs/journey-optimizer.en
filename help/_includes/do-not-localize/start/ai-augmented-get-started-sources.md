@@ -44,6 +44,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What do I need before I configure a source?** — Appropriate permissions to manage sources in Adobe Experience Platform, source system credentials, and an understanding of your data fields and how they map to profiles.
 * **Q: What values does the `_change_request_type` field accept for Orchestrated campaign Change Data Capture sources?** — Lowercase `u` for upsert or `d` for delete; uppercase `U` and `D` are not supported.
 
+**Personas:**
+
+* **marketer:** Can use sources to import customer data from CRM systems, purchase data, loyalty program data, and behavioral data to personalize journeys. The page states that for file-based Change Data Capture sources used with Orchestrated campaigns, the _change_request_type field is required with lowercase u or d values. Where: "What you can do with sources".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Set up authentication to your external data system.
+* **Success check:** Sources run automatically in the background and keep customer data fresh and ready for use in journeys.
+* **Previous:** Learn about access control and permissions before configuring sources: Manage users and roles (administration/permissions.md)
+* **Next:** Use imported data in journeys: Create your first journey (building-journeys/journey-gs.md); Understand how sources fit into the full data setup for Journey Optimizer: Get started with data management in Journey Optimizer (data/gs-data.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 4f1d4bfa -->

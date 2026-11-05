@@ -666,3 +666,4 @@ For DCCS events, the transformer receives only the `xdmEntity` body — not the 
 +++
 
 
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-event-transformer-guide.md}}

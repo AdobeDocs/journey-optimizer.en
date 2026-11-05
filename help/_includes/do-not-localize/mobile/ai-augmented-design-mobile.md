@@ -57,6 +57,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is required before I can shorten URLs?** — You must first configure a subdomain that is then linked to your configuration.
 * **Q: How much text can an MMS contain?** — MMS allows for up to 1600 characters of text.
 
+**Personas:**
+
+* **marketer:** Can define SMS content with the personalization editor, add tracked URLs and deep links with the Url helper function, and enable MMS to add media. Can define RCS content by choosing a content type such as Text, Media, Card, Carousel, or Location, add Suggested actions, and set Default fallback text. The page states that a campaign cannot be activated without a Default fallback text. Where: "Design a Mobile message".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Add a Mobile message action in a journey or a campaign.
+* **Success check:** After selecting Save, you can check your message content and rendering in the preview.
+* **Previous:** Before shortening URLs in your message, you need a configured subdomain: Configure subdomains for Mobile message (mobile/mobile-subdomains.md); Before adding deep links to your message, you need to complete deep link configuration: Use and configure deep links in email and SMS messages (email/deeplinks.md)
+* **Next:** After saving your message content, you can test and check it before sending: Check and test your Mobile messages (mobile/send-mobile-message.md); If your SMS, MMS, or RCS content returns an error code: Content authoring errors (content-management/content-authoring-errors.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 827953bf -->

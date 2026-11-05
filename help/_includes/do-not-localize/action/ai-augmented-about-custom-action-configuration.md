@@ -66,6 +66,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why is a custom action call routed to a different service?** — When an endpoint has a response time greater than 0.75 seconds, its calls are routed through a dedicated slow custom action service instead of the default service.
 * **Q: How do I enable HMAC signing for a custom action?** - Set the optional `alg` field to `HS256`, `HS384`, or `HS512` in the custom authorization payload and add your OAuth `client_secret` to `body.bodyParams`. This is a payload field, not a separate UI control; no Adobe certificate registration is required.
 
+**Personas:**
+
+* **developer:** Can define the request, response, and error response payload parameters as constant or variable fields, selecting a parameter type such as string or integer. Can enable the Allow NULL values option to keep Null values in the external call, and mark a parameter as optional for journey practitioners. The page states that field names in the payload cannot contain a dot character or start with a dollar character. Where: "Define the payload parameters".
+* **admin:** Can configure a throttling or capping limit for a custom action's endpoint, but cannot set it below 200 TPS. Can override the default 300,000 calls per minute limit by defining a greater capping or throttling limit through the Capping or Throttling APIs. The page states that a capping limit of 300,000 calls over one minute is defined for all custom actions, applied per host and per sandbox. Where: "Best practices".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select Create Action in the Actions section of the Configurations area to create a new custom action.
+* **Success check:** The custom action is configured and ready to be used in your journeys.
+* **Previous:** Learn what a custom action is before configuring one: Get started with actions (action/action.md)
+* **Next:** Use the configured custom action in a journey: Use custom actions (building-journeys/using-custom-actions.md); Troubleshoot the custom action if it does not work as expected: Troubleshoot your custom actions (action/troubleshoot-custom-action.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 6a18f80f -->

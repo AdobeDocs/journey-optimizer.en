@@ -47,6 +47,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: When does Average queue time apply?** — It only applies to throttled endpoints, where Journey Optimizer queues up calls when the throughput limit is reached.
 * **Q: Can I report on custom action performance outside this page?** — Yes, you can use Adobe Experience Platform Query Service to build queries on custom action performance metrics.
 
+**Personas:**
+
+* **marketer:** Can select the Monitoring icon from the Actions homepage to open the Custom action reporting page. Can review KPIs such as Successful calls, 4xx/5xx errors, Timeouts, Capped calls, Average RPS, Average latency, and Average successful latency. The page states that Average queue time only applies to throttled endpoints, where Journey Optimizer queues up calls once the throughput limit is reached. Where: "KPIs".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Select the Monitoring icon from the Actions homepage to open the Custom action reporting page.
+* **Success check:** The Custom action reporting page displays KPIs including Successful calls, 4xx/5xx errors, Timeouts, and Capped calls.
+* **Previous:** Understanding how All-time reports function across Journey Optimizer dashboards: Reporting (reports/report-cja-manage.md)
+* **Next:** Building queries on custom action performance metrics with Adobe Experience Platform Query Service: Examples of queries (reports/query-examples.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 8751205f -->

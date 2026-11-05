@@ -66,6 +66,18 @@ For complete understanding, this information should be combined with the documen
 * Stopping a campaign: Learn how to stop a campaign (campaigns/manage-campaigns.md)
 * Reports: Campaign report (reports/campaign-global-report-cja.md)
 
+**Personas:**
+
+* **marketer:** Can select Review to activate to display the campaign summary, check for incorrect or missing parameters, and select Activate to launch the campaign. Can review decision policy structure, copy technical details from the summary, check targeted profiles and delivered and failed actions, and select View report. The page states that errors in the summary must be resolved before activation. Where: "Review and activate the Action campaign".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** In the campaign configuration screen, select Review to activate to display a summary of the campaign.
+* **Success check:** The campaign status becomes Live, or Scheduled if a start date was entered, and the message is sent immediately or on the specified date.
+* **Previous:** If the campaign is subject to an approval policy, approval is required before it can be sent: Get started with journeys & campaigns approval (test-approve/gs-approval.md); When the campaign uses decision policies in its content: Get started with decisions policies (experience-decisioning/create-decision.md)
+* **Next:** To change a campaign that keeps the Live status because no end date was specified, stop it manually: Access & manage campaigns (campaigns/manage-campaigns.md); To get additional statistics after activation, open the campaign report: Campaign report (reports/campaign-global-report-cja.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: a9b398c3 -->

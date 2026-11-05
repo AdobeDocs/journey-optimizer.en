@@ -302,3 +302,5 @@ To upload exclusions, follow these steps:
 <!-- SCREENSHOT: Exclusion group details -->
 
 1. Open **[!UICONTROL Upload history]** to view previous CSV uploads.
+
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-loyalty-admin.md}}

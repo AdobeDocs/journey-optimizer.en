@@ -113,3 +113,5 @@ Follow these steps to configure the **[!UICONTROL Reconciliation]** activity:
 This example uses the **[!UICONTROL Reconciliation]** activity in Adobe Journey Optimizer to ensure that emails are sent only to recognized customers. The data flows in through a **[!UICONTROL Build audience]** activity that targets users with previous orders. The **[!UICONTROL Reconciliation]** activity then matches this incoming data to existing profiles in the database using the email field.
 
 ![](../assets/workflow-reconciliation-sample-1.0.png)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-reconciliation.md}}

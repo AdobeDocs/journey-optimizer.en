@@ -108,6 +108,17 @@ For complete understanding, this information should be combined with the documen
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
 * Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
+**Personas:**
+
+* **marketer:** Can find the cause and the fix for errors returned when publishing or referencing fragments in content. Can also find fixes for errors from Adobe Experience Manager content fragments and assets. The page states that content can use up to 60 unique fragments per variant, and 120 across the variants of a message. Where: "References and limits".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Identify the error code's prefix, error number, and HTTP status.
+* **Previous:** You are getting started with fragments and need the prerequisites for permissions: Get started with fragments (content-management/fragments.md); You are creating and publishing a fragment: Create a fragment (content-management/create-fragments.md)
+* **Next:** A permission or access error occurs when managing, simulating, or publishing a fragment: Built-in Roles (administration/ootb-permissions.md); The error persists after you follow the steps and you need to contact Adobe Support: Navigate the interface (start/user-interface.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 07f11dd9 -->

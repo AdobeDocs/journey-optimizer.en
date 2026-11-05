@@ -52,6 +52,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which schemas and datasets are used?** — CJM Push Profile Schema/Dataset (Register Push Token) and CJM Push Tracking Experience Event Schema/Dataset (track interactions and provide reporting data).
 * **Q: Where can I find the testing workflow for web push?** — Refer to the mobile app push notification configuration documentation, which provides a testing workflow applicable to both mobile and web push channels.
 
+**Personas:**
+
+* **admin:** Can assign Property rights, including Approve, Develop, Manage Environments, Manage Extensions, and Publish, to a product profile for push configuration. Can assign Company rights, Manage App Configurations and Manage Properties, then add users to the product profile. The page states that push configuration must be performed by an expert user. Where: "Set up permissions".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Access the Admin Console.
+* **Success check:** Subscriptions are properly registered and notifications are delivered correctly to your users' browsers.
+* **Previous:** Understand the Push Notifications data flow before configuring web push: Push Notification flow in Adobe Journey Optimizer (push/push-gs.md); Use the Mobile onboarding quick start workflow to rapidly configure the Mobile SDK: Mobile onboarding quick start workflow (push/mobile-onboarding-wf.md)
+* **Next:** Learn more about Object Level Access Control to manage access for the channel configuration: Object level access control (administration/object-based-access.md); Refer to the testing workflow applicable to both mobile and web push channels: Push notification configuration (push/push-configuration.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 3fc3f0b3 -->

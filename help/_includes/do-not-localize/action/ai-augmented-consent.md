@@ -53,6 +53,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: What does the Refresh policies button do?** — It updates and checks the list of policies taken into consideration for the custom action; this is for information purpose only while building a journey.
 * **Q: How do I avoid applying a consent policy to a transactional message?** — Select None in the Required marketing action field so that no consent policy is applied.
 
+**Personas:**
+
+* **developer:** Can select a Channel field when configuring a custom action, which prefills the Required marketing action field with the default marketing action for that channel. Can select Email targeting as the Required marketing action, for example when the custom action sends emails. Can select None in the Required marketing action field for a transactional message such as a password reset. Where: "Leverage consent policies when configuring a custom action".
+* **admin:** Can create an email channel configuration in Journey Optimizer and select the Email Targeting marketing action in the configuration details. All consent policies associated with that marketing action are then automatically leveraged for communications using that configuration. The page states that consent policies are only available for organizations that have purchased the Adobe Healthcare Shield or Privacy and Security Shield add-on offerings. Where: "Leverage consent policies through channel configurations".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Create a consent policy in Adobe Experience Platform with an associated marketing action.
+* **Success check:** Profiles who have not consented to receive email communications are excluded.
+* **Previous:** Creating an email channel configuration before selecting a marketing action for it: Set up channel configurations (configuration/channel-surfaces.md)
+* **Next:** Creating an email using a channel configuration that has a marketing action applied: Create an email (email/create-email.md); Configuring the other steps of a custom action after setting its consent management fields: Configure a custom action (action/about-custom-action-configuration.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 4b11443e -->

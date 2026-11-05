@@ -43,6 +43,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What are the prerequisites for this use case?** — An order event must be configured with order number, status, and item name fields, and a decision must exist in decision management.
 * **Q: How do I test the push notification in this use case?** — Click the Test button in the journey, then click "Trigger an event" and enter the event values in the Event configuration window. Test mode only works with test profiles; the profile identifier must correspond to an existing test profile.
 
+**Personas:**
+
+* **developer:** Can configure an order event with the order number, status, and item name fields. Can insert these fields, journey properties such as the journey ID, and offer decision variables into the push notification title and body. The page states that contextual attributes are only available if a journey has passed contextual data to the message. Where: "Step 3 - Add personalization on contextual data".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Configure an order event that includes the order number, status, and item name.
+* **Success check:** The push notification is sent and displayed on the test profile's mobile phone.
+* **Previous:** Configure an order event including the order number, status, and item name: Work with journey events (event/about-events.md); Create a decision: Create decisions (offers/offer-activities/create-offer-activities.md)
+* **Next:** Configure and design your push notification message: Configure a push notification (push/create-push.md); Learn more about journey properties such as the journey ID or errors encountered: Journey properties (building-journeys/expression/journey-properties.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: ae5284c7 -->

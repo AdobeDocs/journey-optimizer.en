@@ -44,6 +44,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does my fragment have extra padding on mobile but not desktop?** — Leftover styling can remain when fragments are unlocked or inheritance is broken; use the Navigation tree or breadcrumb to select parent structures/columns and remove or readjust the padding.
 * **Q: How should I handle images and dividers for Gmail on Android?** — Use column padding rather than large fixed margins and a smaller image width, since Gmail on Android often renders oversized images and margins incorrectly.
 
+**Personas:**
+
+* **marketer:** Can select a column in a structure component using the Navigation tree and adjust its alignment to Top, Middle or Bottom in the Styles tab. Can set padding for all sides, select Different padding for each side, and use breadcrumb navigation to remove residual fragment padding affecting mobile rendering. The page states that accumulated styling from repeatedly inserting and removing fragments is expected behavior. Where: "Adjust vertical alignment & padding".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Select the structure component directly in the email or using the Navigation tree available in the left-hand menu.
+* **Success check:** The editable parameters for that column are displayed in the Styles tab.
+* **Previous:** Working with fragments in the Email Designer: Get started with fragments (content-management/fragments.md); Breaking inheritance on a fragment: Use visual fragments (email/use-visual-fragments.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: b3a152e8 -->

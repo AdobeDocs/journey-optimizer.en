@@ -63,7 +63,7 @@ To set up your Web In-app channel, follow the steps below:
 
     ![](assets/in_app_web_surface_1.png)
 
-1. Choose or create your app configuration. [Learn more](inapp-configuration.md#channel-prerequisites)
+1. Choose or create your Web In-app configuration. [Learn more](inapp-configuration.md#channel-prerequisites)
 
 ## Define your Web In-app message campaign {#configure-inapp}
 
@@ -71,7 +71,7 @@ To set up your Web In-app channel, follow the steps below:
 
 1. To assign custom or core data usage labels to the In-app message, select **[!UICONTROL Manage access]**. [Learn more](../administration/object-based-access.md).
 
-1. Click the **[!UICONTROL Select audience]** button to define the audience to target from the list of available Adobe Experience Platform audiences. [Learn more](../audience/about-audiences.md).
+1. From the **[!UICONTROL Audience]** tab, click the **[!UICONTROL Select audience]** button to define the audience to target from the list of available Adobe Experience Platform audiences. [Learn more](../audience/about-audiences.md).
 
     ![](assets/in_app_web_surface_5.png)
 
@@ -128,11 +128,11 @@ To set up your Web In-app channel, follow the steps below:
 
 1. If needed, choose which **[!UICONTROL Day of the week]** or **[!UICONTROL Time of day]** the In-app message will be displayed.
 
-1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
+1. From the **[!UICONTROL Schedule]** tab, Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
 
     ![](assets/in_app_web_surface_6.png)
 
-1. You can now start designing your content with the **[!UICONTROL Edit content]** button. [Learn more](design-in-app.md)
+1. Access the **[!UICONTROL Content]** tab to start designing your Web In-app message. [Learn more](design-in-app.md)
 
     ![](assets/in_app_web_surface_7.png)
 

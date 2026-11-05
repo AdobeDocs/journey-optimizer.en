@@ -87,6 +87,18 @@ For complete understanding, this information should be combined with the documen
 * To add datasets for reporting: Configure Journey Optimizer reporting for experimentation (reports/reporting-configuration.md)
 * To view In-app reporting: In-app report (reports/campaign-global-report-cja-inapp.md)
 
+**Personas:**
+
+* **admin:** Can make sure correct permissions on Journey Optimizer campaigns are set, even when using In-app messages only in journeys. Can enable [!DNL Journey Optimizer] in the Adobe Experience Platform Data Collection datastream, and check the default merge policy in Adobe Experience Platform. Can create an In-app message channel configuration under Channels > General settings > Channel configurations. The page states that when targeting pseudonymous profiles, consider a Time-To-Live (TTL) for automatic profile deletion to manage profile count and costs. Where: "Configuration steps".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Enable the Adobe Experience Platform Edge and Adobe Journey Optimizer option in your Adobe Experience Platform Data Collection datastream.
+* **Success check:** Journey Optimizer inbound events are correctly handled by the Adobe Experience Platform Edge.
+* **Previous:** For the correct permissions on Journey Optimizer campaigns before configuring the In-app channel: Get started with campaigns (campaigns/get-started-with-campaigns.md)
+* **Next:** Ready to create, configure, and send a first In-app message: Create an In-app notification in Journey Optimizer (in-app/create-in-app.md); To add datasets for reporting on the In-app channel: Configure Journey Optimizer reporting for experimentation (reports/reporting-configuration.md)
+
 +++
 
 <!-- ai-section-version: 2 | source-hash: f8aa46e4 -->

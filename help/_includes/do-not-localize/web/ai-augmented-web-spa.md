@@ -45,6 +45,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I apply a modification to other views?** — In the [!UICONTROL Modifications] pane, select the modification, click [!UICONTROL More actions], choose [!UICONTROL Apply to more views], select the target views, and click [!UICONTROL Apply].
 * **Q: What is the prerequisite for authoring SPAs?** — A one-time developer setup to define the views in the Adobe Experience Platform Web SDK implementation.
 
+**Personas:**
+
+* **marketer:** Can select a modification in the Modifications pane, select More actions, select Apply to more views, select the target views, and select Apply. Can swap to Browse mode afterward to check the modifications are applied on the desired pages. The page states that views not discovered using Browse mode cannot be selected for applying modifications. Where: "Apply modifications to other views".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Create a web journey or campaign and access the web designer.
+* **Success check:** The view name displayed on top changes when you go through another page.
+* **Previous:** Define views in the Adobe Experience Platform Web SDK implementation before authoring: Single-page application implementation (web/web-spa-implementation.md); Create a web journey or campaign to access the web designer: Create web experiences (web/create-web.md)
+* **Next:** Learn more about the web designer and Browse mode: Edit content using the web designer (web/web-visual-editor.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 946707f6 -->

@@ -98,6 +98,16 @@ For complete understanding, this information should be combined with the documen
 * Support options when an error persists: Getting support (building-journeys/error-codes-reference.md)
 * Contacting Adobe Support: Support ticket guidelines (start/user-interface.md)
 
+**Personas:**
+
+* **marketer:** Can find the cause and fix for errors in language settings, translation projects, translation jobs, and multilingual messages. The page states that a language setting can have up to 50 locales, and error CJMRT-080906-400 is returned when this limit is reached. Where: "Multilingual content errors".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Note the error code, the message, the request ID, and the campaign, journey, or activity concerned.
+* **Previous:** Creating or editing a language setting: Create multilingual content with manual translation (content-management/multilingual-manual.md); Creating a translation project for automated translation: Create multilingual content with automated translation (content-management/multilingual-automated.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 4d091cd1 -->

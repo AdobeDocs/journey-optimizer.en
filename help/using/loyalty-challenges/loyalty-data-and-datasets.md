@@ -89,3 +89,4 @@ Journey Optimizer applies TTL guardrails to many system-generated datasets. Loya
 >
 >Organization-level loyalty configuration can include archive and retention settings (for example, archive duration) managed through the Loyalty metadata service. Coordinate with your Adobe administrator if you need to adjust retention for your organization.
 
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-loyalty-data-and-datasets.md}}

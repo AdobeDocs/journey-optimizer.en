@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does my email look different in Gmail or Outlook on a phone browser?** — This is a known limitation of Gmail Web and Outlook Web via a mobile browser; use simple table-based layouts with fully inlined CSS and avoid relying on media queries or `<style>` blocks for critical layout.
 * **Q: How do I export my content?** — Click Export HTML to save a zip file containing your HTML and assets to your computer.
 
+**Personas:**
+
+* **marketer:** Can design email content from scratch, code or paste raw HTML, import existing HTML, convert image designs to HTML, or select an existing template. Can verify content with automated content checks catching unsupported tags, empty divs, and size limit violations. The page states that recommended template widths are between 600px and 800px. Where: "Key steps to create email content".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Create an email in a journey or a campaign.
+* **Success check:** Export HTML saves a zip file with your HTML and assets to your computer.
+* **Previous:** Create an email before designing its content: Create an email (email/create-email.md)
+* **Next:** Design your email from scratch using the Email Designer interface: Design content from scratch in Journey Optimizer (email/content-from-scratch.md); Verify your email content with automated content checks before sending: Content checks in the Email Designer (email/content-check.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 09292cd0 -->

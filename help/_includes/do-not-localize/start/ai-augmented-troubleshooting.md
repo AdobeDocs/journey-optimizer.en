@@ -67,6 +67,18 @@ For complete understanding, this information should be combined with the documen
 * Troubleshooting custom actions: Troubleshoot custom actions (action/troubleshoot-custom-action.md)
 * What to include in support tickets: Learn what to include in support tickets, in Navigate the interface (start/user-interface.md)
 
+**Personas:**
+
+* **marketer:** Can resolve audience count discrepancies in the Read Audience feature by checking and correcting namespace configurations. Can adjust priorities after reviewing relevant documentation to ensure smoother operations. The page states that incorrect namespace configurations can lead to profiles being excluded from journeys. Where: "Profiles and Audience management".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Open the profile in the Experience Platform UI and inspect the consent fields under Privacy > Consents.
+* **Success check:** The campaign report shows the profile under the Excluded count with the reason Opted out.
+* **Previous:** Learning what to include in a support ticket before contacting Adobe support: Navigate the interface (start/user-interface.md)
+* **Next:** Configuring SMS opt-out handling after verifying a profile's opt-out status: Opt-out management for Mobile messages (mobile/mobile-opt-out.md)
+
 +++
 
 <!-- ai-section-version: 2 | source-hash: 8c5176da -->

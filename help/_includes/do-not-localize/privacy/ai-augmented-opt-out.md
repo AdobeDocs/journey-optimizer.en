@@ -57,6 +57,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Is consent for data modeling supported?** — No, consent for having profile data used in data modeling is not supported yet in Journey Optimizer.
 * **Q: How do you manually enforce personalization consent in campaigns?** — Use the segment rule builder, or add a split activity to a composition workflow, to create an audience that filters out profiles that have not given consent to personalization. The page also states that you can include consent policy definitions as part of the audience creation so the selected audience has already filtered out profiles that do not match the consent criteria.
 
+**Personas:**
+
+* **marketer:** Can create an Adobe Experience Platform audience using a profile attribute such as Personalize Content = Yes (opt-in) for personalization consent. Can add a decision scope with an eligibility constraint, create a fallback offer, and assign it to the decision. The page states that decision scopes used in Journey Optimizer authored channels satisfy this requirement from the journey or campaign they belong to. Where: "In decision management".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Create an Adobe Experience Platform audience using a profile attribute such as Personalize Content = Yes (opt-in) to target users who have consented to personalization.
+* **Success check:** Profiles that consented for personalization receive the best offer from the decision scope, while profiles that did not consent receive the non-personalized fallback offer.
+* **Previous:** Using the decisioning API to request offers: Deliver offers (offers/api-reference/offer-delivery-api/decisioning-api.md); Using the edge decisioning API to request offers: Deliver offers using the Edge Decisioning API (offers/api-reference/offer-delivery-api/edge-decisioning-api.md)
+* **Next:** Creating an Adobe Experience Platform audience for personalization consent: About Adobe Experience Platform audiences (audience/about-audiences.md); Creating a fallback offer without personalized content: Create fallback offers (offers/offer-library/creating-fallback-offers.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 95212c78 -->

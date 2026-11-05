@@ -64,6 +64,17 @@ For complete understanding, this information should be combined with the documen
 * API call examples: page linked as "this page", messaging samples of the Journey Optimizer APIs documentation (https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples)
 * Azure Cosmos DB CMK errors: Azure Cosmos DB CMK troubleshooting guide (https://learn.microsoft.com/en-us/azure/cosmos-db/cmk-troubleshooting-guide#azure-active-directory-token-acquisition-error)
 
+**Personas:**
+
+* **marketer:** Can open an activated campaign and copy the generated cURL request, since it is available once the campaign is live. Can use this request to build the payload and trigger the campaign through the Interactive Message Execution REST API. The page states that the call has a timeout of 60 sec, with internal retries in place to guarantee delivery. Where: "Trigger the campaign".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Open the campaign, then copy-paste the payload request from the cURL request section.
+* **Success check:** The cURL request section becomes available once the campaign is live.
+* **Next:** The endpoints in the cURL section differ for a High throughput campaign: Activate High throughput mode for API triggered campaigns (campaigns/api-triggered-high-throughput.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 47d6b8d9 -->

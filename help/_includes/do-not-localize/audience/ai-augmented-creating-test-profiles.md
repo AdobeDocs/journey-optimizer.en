@@ -51,6 +51,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I mark a profile as a test profile?** — Set the `testProfile` field to `true` when creating (or updating) the profile.
 * **Q: What should I check before running the in-product use case?** — That the CSV contains test profiles only and that it runs against the correct sandbox, since test profiles may override existing profiles.
 
+**Personas:**
+
+* **marketer:** Can use the in-product use case from the Journey Optimizer home page to create test profiles for testing journeys before publishing. Select an identity namespace, then upload a CSV file listing Person Id, Email Address, First Name, Last Name, City, Country, and Gender. The page states that test profiles may override existing profiles, so the CSV must contain test profiles only and run against the correct sandbox. Where: "In-product use case".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Select Schemas in the DATA MANAGEMENT menu section, then select Create schema.
+* **Success check:** The dataset preview shows that the test profiles have been correctly added.
+* **Previous:** Understand identity namespaces before selecting one for the test profiles use case: Get Started with Identities in Journey Optimizer (audience/get-started-identity.md); Learn the two ways to simulate content before creating test profiles: Simulate content variations (test-approve/simulate-sample-input.md)
+* **Next:** Use the created test profiles to test a journey in test mode: Test your journey (building-journeys/testing-the-journey.md); Use test profiles to preview and test content: Preview and test your content (content-management/preview-test.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d3614b19 -->

@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I target multiple pages with one configuration?** — Use a Pages matching rule as the App configuration and define Domain and Page criteria instead of a single Page URL.
 * **Q: What naming rules apply to a channel configuration?** — Names must begin with a letter (A-Z) and can only contain alpha-numeric characters plus underscore, dot, and hyphen.
 
+**Personas:**
+
+* **marketer:** Can create an In-app web configuration from Channels > General settings > Channel configurations by selecting Create channel configuration. Can select Marketing actions to associate consent policies, then select In-app messaging from the Select channel drop-down and define an App configuration using a Page URL or a Pages matching rule. The page states that configuration names must begin with a letter (A-Z) and can only contain alpha-numeric characters, underscore, dot, and hyphen characters. Where: "Create an In-app web configuration".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Install the Adobe Experience Platform Web SDK tag extension in your Tag properties and enable the Personalization Storage option.
+* **Success check:** You can now create a web In-app inside a campaign.
+* **Previous:** Assign custom or core data usage labels to the configuration using Manage access: Object level access control (administration/object-based-access.md); Associate consent policies with the marketing action to respect customer preferences: Work with consent policies (action/consent.md)
+* **Next:** Create a web In-app inside a campaign using this configuration: Configure the Web In-app channel (in-app/create-in-app-web.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 90d65258 -->

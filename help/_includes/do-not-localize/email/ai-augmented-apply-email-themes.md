@@ -58,6 +58,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens to my content when I switch themes?** — The email content remains unchanged, but the styles update to reflect the new theme; overridden (unlocked) styling elements are not changed by the new theme.
 * **Q: Why might web fonts not render?** — Gmail and Yahoo! do not load external web fonts and fall back to system fonts; only Roboto and Google Sans are supported by Gmail, so define fallback fonts.
 
+**Personas:**
+
+* **marketer:** Can apply a default or custom theme to an email content or content template using the Themes button on the right rail. Can switch between color variants for a theme, apply a specific variant to one structure component, and unlock a component's style to override elements. The page states that choosing Manual Styling mode means you cannot apply themes unless you reset your design. Where: "Apply themes to an email content".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Create a new content template.
+* **Success check:** The new theme is displayed in the My themes tab.
+* **Previous:** Creating a content template before defining a theme: Create content templates (content-management/create-content-templates.md); Importing email content as HTML that must be converted before applying themes: Import your email content (email/existing-content.md)
+* **Next:** Exporting a theme to share it across sandboxes: Copy Journey Optimizer objects between sandboxes (configuration/copy-objects-to-sandbox.md); Enabling dark mode for a theme's color variants: Switch to dark mode (email/dark-mode.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: dad6c53c -->

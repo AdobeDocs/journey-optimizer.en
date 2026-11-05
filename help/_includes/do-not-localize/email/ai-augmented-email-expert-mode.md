@@ -50,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Are my edits lost when I switch views?** — No. Your edits are preserved when you switch between views.
 * **Q: Is the advanced HTML editor the same as [!UICONTROL Code your own] mode?** — No. The advanced HTML editor lets you toggle between HTML view and Desktop view at any time, whereas [!UICONTROL Code your own] mode keeps you in code-only editing with no way back to the visual editor.
 
+**Personas:**
+
+* **marketer:** Can view and edit the raw HTML source of email content in the Email Designer, for a journey, campaign, or template. Can insert advanced expressions, such as conditions, directly in the source, and select the HTML button in the top-right corner to open the editor. The page states that you cannot save or simulate content in advanced HTML view, so switch to Desktop view to save your changes. Where: "Switch to advanced HTML view".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select the HTML button in the top-right corner of the screen.
+* **Success check:** Your edits are preserved when you switch views.
+* **Previous:** Design an email for a journey or campaign in the Email Designer: Design content from scratch in Journey Optimizer (email/content-from-scratch.md); Create or edit an email from a journey or campaign: Create an email (email/create-email.md)
+* **Next:** Learn about Code your own mode, which does not allow switching back to the visual editor: Code your own email content (email/code-content.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: ea5d1d24 -->

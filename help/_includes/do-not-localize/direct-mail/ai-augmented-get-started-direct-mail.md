@@ -44,6 +44,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where can direct mail messages be created?** — In journeys and campaigns; they are not available for use in API-triggered campaigns.
 * **Q: Who performs the actual mailing?** — Your chosen third-party direct mail provider, to which the file is made accessible, handles the actual mailing process.
 
+**Personas:**
+
+* **marketer:** Can configure file routing and a direct mail channel configuration before creating direct mail messages. Can create direct mail messages in journeys and campaigns using audiences and profile data, such as postal addresses, from Adobe Experience Platform. The page states that direct mail messages are not available for use in API-triggered campaigns. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Configure file routing and a direct mail channel configuration before creating direct mail messages.
+* **Success check:** The extraction file containing targeted profiles and selected data, such as postal addresses, is sent to the server of your choice.
+* **Previous:** For file routing and a direct mail channel configuration before creating direct mail messages: Direct mail configuration (direct-mail/direct-mail-configuration.md)
+* **Next:** Ready to create direct mail deliveries and configure extraction files for offline channels: Create a direct mail message (direct-mail/create-direct-mail.md); Ready to test, validate, and publish direct mail deliveries: Check & send a direct mail message (direct-mail/test-send-direct-mail.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: b9a90cfd -->

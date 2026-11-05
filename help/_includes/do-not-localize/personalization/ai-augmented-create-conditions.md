@@ -50,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I modify a conditional rule that is already saved to the library?** — Conditional rules saved to the library cannot be directly modified. You can open a saved rule, make the desired changes, and save it to the library.
 * **Q: Are there restrictions on naming conditional content variants?** — Yes. Variant names must contain only alphanumeric characters (A–Z, a–z, 0–9). Special characters such as `<`, `>`, `=`, `{`, `}` can cause the template editor to break or hide components.
 
+**Personas:**
+
+* **developer:** Can combine profile attributes, audience membership, and contextual journey fields to build a conditional rule in the personalization editor. Can select attributes from the Profile tab, which contains Audiences and XDM Individual profiles, from the Contextual tab, and from the Audiences tab. The page states that conditional rules that leverage journeys contextual attributes cannot be saved to the library. Where: "Create a conditional rule".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Access the Conditions menu from the personalization editor or the Email Designer, then select Create new.
+* **Success check:** The conditional rule is saved to the library and can be used to create dynamic content in messages.
+* **Previous:** For the Manage Library Items permission to save or delete conditional rules: Journey Optimizer built-in Roles (administration/ootb-product-profiles.md); Access the personalization editor to open the Conditions menu: Add personalization (personalization/personalization-build-expressions.md)
+* **Next:** Add the conditional rule to a message to create dynamic content: Create dynamic content (personalization/dynamic-content.md); Use Target tab attributes from the Orchestrated campaigns worktable in the conditional rule: Add personalization in Orchestrated campaigns (orchestrated/add-personalization.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: f375658d -->

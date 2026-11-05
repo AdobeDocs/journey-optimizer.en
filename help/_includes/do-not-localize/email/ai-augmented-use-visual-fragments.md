@@ -58,6 +58,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens when I break inheritance?** — The fragment content is copied into the current design, it becomes a standalone element no longer linked to the original fragment, and changes are no longer synchronized.
 * **Q: Why can I not break the inheritance of a fragment?** — It may be a locked fragment, whose unlock icon is greyed out; the author can later reset its behavior to Allow inheritance to be broken.
 
+**Personas:**
+
+* **marketer:** Can insert a visual fragment into an email by selecting the Fragments icon in the Email Designer and dragging it into the content. Can customize editable fields of a fragment after adding it, and break inheritance from the original fragment to edit it as a standalone component. The page states that up to 60 unique fragments can be added per variant, and up to 120 distinct fragments across all variants of a multilingual message. Where: "Use a fragment".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Open any email or template content using the Email Designer.
+* **Success check:** The fragment can be moved around in your content like any other component.
+* **Previous:** Learn how to create and manage fragments: Get started with fragments (content-management/fragments.md); Open any email or template content using the Email Designer: Design emails (email/get-started-email-design.md)
+* **Next:** Learn how to make a fragment customizable: Customizable fragments (content-management/customizable-fragments.md); Tracking reports show the URL instead of the button label when both are made editable: Track your messages (email/message-tracking.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: b1ea87f5 -->

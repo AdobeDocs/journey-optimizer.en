@@ -49,6 +49,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What permission is required to edit Mobile message subdomains?** — The Manage SMS Subdomains permission on the production sandbox.
 * **Q: How can I reconcile SMS volume with vendor billing?** — If you purchase SMS through Adobe Journey Optimizer, you can view SMS usage metrics to reconcile MO and MT volume with vendor billing.
 
+**Personas:**
+
+* **admin:** Can integrate a Mobile messaging provider such as Sinch, Twilio, or Infobip with Journey Optimizer, or configure a custom provider. Can create an account with a provider to obtain the API Token and Service ID needed for the connection. The page states that you must have the Manage SMS Subdomains permission on the production sandbox to access and edit SMS subdomains. Where: "Prerequisites".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Integrate the provider settings with Journey Optimizer.
+* **Previous:** Confirm you are an Adobe Journey Optimizer System Administrator, since these steps must be performed by one: Journey Optimizer Get Started for System Admin (start/path/administrator.md); Check you have the Manage SMS Subdomains permission on the production sandbox: Permission levels (administration/high-low-permissions.md)
+* **Next:** Create Webhook after integrating the provider settings: Configure your SMS Webhook (mobile/mobile-webhook.md); Create a Mobile configuration after creating the webhook: Configure the SMS configuration (mobile/mobile-configuration-surface.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: c0ff29d1 -->

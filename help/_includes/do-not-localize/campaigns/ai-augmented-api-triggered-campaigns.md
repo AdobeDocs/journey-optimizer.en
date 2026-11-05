@@ -62,6 +62,18 @@ For complete understanding, this information should be combined with the documen
 * Complete campaign creation workflow with type-specific guides: complete campaign creation workflow with type-specific guides (campaigns/get-started-with-campaigns.md#workflow)
 * Supported channels: Channels in journeys & campaigns (channels/gs-channels.md#channels)
 
+**Personas:**
+
+* **developer:** Can launch an API triggered campaign execution through a call to the Interactive Message Execution REST API. Can personalize the message using profile attributes and real-time context data carried in the trigger, which is a REST API payload. The page states that available channels vary based on your licensing model and add-ons. Where: "About API triggered campaigns".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Define the campaign properties.
+* **Success check:** The campaign sends the message, for example a password reset, to the individual.
+* **Previous:** Check prerequisites before starting with campaigns: Get started with campaigns (campaigns/get-started-with-campaigns.md)
+* **Next:** Configure the campaign action after defining the campaign properties: Configure the API triggered campaign action (campaigns/api-triggered-campaign-action.md); Trigger the campaign execution after reviewing and activating it: Review and activate a campaign (campaigns/trigger-campaigns.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: ecb05f59 -->

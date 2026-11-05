@@ -69,6 +69,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What are the size limits for email content when publishing journeys?** — The processed message content must not exceed 2 MB after backend processing or the operation fails; keep authored content ideally under 1 MB to leave a 300 to 400 KB buffer.
 * **Q: How many Read Audience instances can run concurrently?** — Each organization can run up to five Read Audience instances concurrently across all sandboxes and journeys, with a sandbox throughput maximum of 20,000 profiles per second shared across all Read Audience activities.
 
+**Personas:**
+
+* **marketer:** Can create journeys with up to 50 activities in the journey canvas. Can publish up to 200 live, closed, paused, and dry run journeys in production sandboxes, or 100 in development sandboxes. The page states that the 50-activity limit cannot be increased. Where: "General journey guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Review the system, journey, audience, channel, and content limits of Adobe Journey Optimizer.
+* **Success check:** The number of activities in a journey is displayed on the upper left section of the journey canvas.
+* **Next:** Splitting a journey that is near the 50-activity limit: Jumping from one journey to another (building-journeys/jump.md); Configuring business events that trigger journeys: Configure a business event (event/about-creating-business.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: b1879f86 -->

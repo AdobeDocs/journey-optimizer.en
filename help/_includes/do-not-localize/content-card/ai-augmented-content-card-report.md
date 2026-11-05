@@ -48,6 +48,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which table identifies the most popular link labels?** — The Tracked labels table, which highlights the link labels that generate the highest visitor traffic.
 * **Q: What does the People metric count?** — The number of user profiles who qualify as target profiles for your content cards.
 
+**Personas:**
+
+* **marketer:** Can open the content cards report from a campaign by selecting Reports. Can interpret Displays, Unique displays, Clicks, and Unique Clicks in the Display & click trend and Tracking data tables. Can review People and Click through rate (CTR), then identify the highest-traffic link labels and URLs in Tracked labels and Tracked link URLs tables. Where: "Tracking data".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Access the content cards report directly from your campaign by selecting Reports.
+* **Success check:** The Display & click trend graphs show the message reach and the unique profiles engaging with it.
+* **Previous:** Create a content card before reviewing its report: Create content cards (content-card/create-content-card.md); Design a content card before reviewing its report: Design content cards (content-card/design-content-card.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: e10cc78b -->

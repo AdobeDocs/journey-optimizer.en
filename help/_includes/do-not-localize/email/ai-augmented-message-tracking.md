@@ -56,6 +56,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which tracking types can I set for a URL?** — Tracked, Opt out, Mirror page, or Never.
 * **Q: Where is open and click reporting available?** — In the Live report and the Customer Journey Analytics report.
 
+**Personas:**
+
+* **marketer:** Can select External link, Landing page, One click Opt-out, External Opt-in/Subscription, External Opt-out/Unsubscription, Mirror page, or Deeplink to insert links into email content. Can enter a URL or select a landing page, then personalize the link and set its settings and styles. The page states that marketing-type email messages must include an opt-out link, which is not required for transactional messages. Where: "Insert links".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Select an element and select Insert link from the contextual toolbar.
+* **Success check:** The Settings and Styles panes on the right become available to modify the link.
+* **Previous:** Creating a landing page to link to from your email content: Create a landing page (landing-pages/create-lp.md); Creating a fragment whose links will also be tracked in your email: Get started with fragments (content-management/fragments.md)
+* **Next:** Viewing reporting on email opens and clicks in the Live report: Live report (reports/live-report.md); Viewing reporting on email opens and clicks in the Customer Journey Analytics report: Updated reporting experience (reports/report-gs-cja.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d1d0aad4 -->

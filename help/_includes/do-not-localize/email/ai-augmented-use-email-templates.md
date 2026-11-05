@@ -47,6 +47,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I apply a template once selected?** — Click Use this template on the top right of the screen, then edit the content in the Email Designer.
 * **Q: How can saved templates be sorted?** — By name, Last modified, and Last created.
 
+**Personas:**
+
+* **marketer:** Can start building email content from 20 out-of-the-box sample templates or from a saved template in the Select design template section. Can sort saved templates by name, last modified, and last created, then select one and select Use this template. The page states that the Journey Optimizer interface offers 20 out-of-the-box email templates. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Access the Email Designer from the email Edit content screen.
+* **Success check:** You can edit your content as desired using the Email Designer after selecting Use this template.
+* **Previous:** Access the Email Designer before selecting a sample or saved template: Design emails (email/get-started-email-design.md)
+* **Next:** Learn more about creating content templates from scratch: Get started with content templates (content-management/content-templates.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 0f4a6a86 -->

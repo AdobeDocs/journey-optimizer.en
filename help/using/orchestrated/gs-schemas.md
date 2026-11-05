@@ -98,3 +98,4 @@ To ingest data and create relational schema, follow these steps:
 
     Bring data into Adobe Experience Platform from supported sources such as SFTP, cloud storage, or databases.
 
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-gs-schemas.md}}

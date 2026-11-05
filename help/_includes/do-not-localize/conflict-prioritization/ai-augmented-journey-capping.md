@@ -49,6 +49,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why can suppression be delayed after activation?** — If a journey is activated immediately, it can take up to 10 minutes for the system to begin suppressing customers.
 * **Q: How do I find why a profile did not enter a journey?** — Check the [!UICONTROL Journey Exclusions] table in the journey report, or query the discard sub-reason (CAP_REACHED or LOWER_PRIORITY).
 
+**Personas:**
+
+* **marketer:** Can create a Journey Entry Cap or Journey Concurrency Cap rule and set the Capping field to the maximum number of journeys. Can use Prioritization look ahead to arbitrate entries, then apply the rule set to a journey via the Capping rules drop-down. The page states that if a journey is activated immediately, it can take up to 10 minutes for the system to begin suppressing customers. Where: "Create a journey capping rule".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Navigate to the Business rules menu to access the rule sets inventory.
+* **Success check:** Check the journey report's Journey Exclusions table to see if the rule set has led to any exclusion from the journey.
+* **Next:** Activate the rule set after adding the capping rule: Work with rule sets (conflict-prioritization/rule-sets.md); Check the journey report for rule set exclusions: Journey report (reports/journey-global-report-cja.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 3c40eca0 -->

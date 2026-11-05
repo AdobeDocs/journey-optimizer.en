@@ -49,6 +49,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How does a Browsing integration let marketers select a Standard integration parameter value?** Link the Browsing integration to the parameter on the Standard integration so marketers can select values through the Browsing selector instead of entering them manually.
 * **Q: What value is inserted after an entity is selected and the selection is confirmed?** The corresponding **[!UICONTROL Reference path]** value is automatically inserted into the integration parameter.
 
+**Personas:**
+
+* **marketer:** Can search, browse, and select items from an external API during authoring, instead of entering values manually. Can select Add personalization, open integrations, select an integration, then search, browse, and select an entity to confirm. The page states that the corresponding Reference path value is then automatically inserted into the integration parameter. Where: "Select items during authoring".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Access your campaign content and select Add personalization from your Text or HTML Components.
+* **Success check:** The corresponding Reference path value is then automatically inserted into the integration parameter.
+* **Previous:** Link a Browsing integration to a parameter on a Standard integration: Create Standard integrations (integrations/integrations-create.md)
+* **Next:** Learn more about the Text or HTML components used for personalization: Use Email Designer content components (email/content-components.md); Troubleshoot issues with Browsing or Standard integrations: Frequently asked questions about Integrations (integrations/vendor-integration-faq.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 76fdf9e9 -->

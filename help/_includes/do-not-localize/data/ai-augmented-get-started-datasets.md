@@ -51,6 +51,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I create a dataset?** — From an existing schema or by mapping a CSV file to an XDM schema.
 * **Q: Why is the Preview dataset link deactivated?** — The dataset is empty; preview shows the most recent successful batch.
 
+**Personas:**
+
+* **developer:** Can query fields and identifiers across Journey Optimizer system datasets, including the Reporting - Message Feedback Event Dataset and Reporting - Email Tracking Experience Event Dataset. Can consult the Adobe Journey Optimizer Schema Reference for field-level definitions and paths, and the Dataset query examples page for SQL reporting examples. The page states that the Message Feedback Event Dataset uses batch ingestion, with data latency up to 2 hours. Where: "[!DNL Journey Optimizer] system datasets".
+* **admin:** Can enable a dataset to contribute to Real-Time Customer Profile, enabling segmentation, personalization, and journey conditions. Can disable or delete a dataset for Profile independently of its schema. The page states that schema enablement for Profile is permanent and cannot be disabled or deleted once enabled. Where: "Enable datasets for Profile".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select Datasets in the left-navigation to open the Datasets dashboard.
+* **Success check:** The Datasets dashboard displays the list of available datasets, including name, schema, and status of the most recent ingestion run.
+* **Previous:** Learning data management basics before datasets: Get started with data management in Journey Optimizer (data/gs-data.md)
+* **Next:** Enabling a dataset for Profile: Get Started with Profiles in Journey Optimizer (audience/get-started-profiles.md); Creating a dataset and ingesting data to add test profiles: Create test profiles (audience/creating-test-profiles.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: fe6571f5 -->

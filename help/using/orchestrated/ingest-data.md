@@ -148,3 +148,4 @@ This example demonstrates how to configure a data flow that ingests structured d
 
     ![](assets/S3_config_5.png)
 
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-ingest-data.md}}

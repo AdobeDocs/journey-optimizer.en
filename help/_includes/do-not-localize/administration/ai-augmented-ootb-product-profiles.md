@@ -45,5 +45,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which role provides access only to content templates?** — Content Library Manager.
 * **Q: Which built-in roles include the Enable AI Assistant permission?** — Orchestrated Campaign Administrator, Orchestrated Campaign Approver, Orchestrated Campaign Manager, and Orchestrated Campaign Viewer.
 
+**Personas:**
+
+* **admin:** Can assign a built-in role, such as Journey Administrator or Decisioning manager, to grant a user a ready-made level of access. The page states that Journey Administrator includes permissions to manage merge policies, manage profiles, manage segments, and grant access to sandboxes. Where: "Journey Administrator".
+* **marketer:** Can create and edit journeys with the Journey Manager role, or campaigns with the Campaign Manager role. The page states that Journey Manager and Campaign Manager will not be able to publish them. Where: "Journey Manager".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Explore the built-in roles and the permissions each one includes.
+* **Next:** Building a custom role from individual permissions: Built-in Roles (administration/ootb-permissions.md)
+
 +++
 <!-- ai-accordion-version: 1 | source-hash: b07363a6 -->
