@@ -47,6 +47,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens to the data once the source connector is enabled?** — Whenever the data comes in, it is transformed into an Experience event and sent into Adobe Experience Platform.
 * **Q: What if I use Adobe Customer Journey Analytics instead?** — The note on this page directs you to a different page instead.
 
+**Personas:**
+
+* **developer:** Can select the Payload fields and define the Event ID condition when configuring an event based on Adobe Analytics or Web SDK data. Can choose a field from the payload fields, or define a formula, as the Profile Identifier. Where: "Create a journey with an event using Adobe Analytics or Web SDK data".
+* **admin:** Can contact Adobe Customer Care to enable an Adobe Analytics data source for journeys, using the Organization ID and the Data source ID. The page states that this step is only required for Adobe Analytics data sources. Where: "Activate this configuration".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** Browse to the Sources menu.
+* **Success check:** Whenever the data comes in, it is transformed into an Experience event and sent into Adobe Experience Platform.
+* **Previous:** Learn about event types and the Event ID type before configuring the event: Work with journey events (event/about-events.md); Learn how to define the payload fields before configuring the event: Configure a unitary event (event/about-creating.md)
+* **Next:** Open or create a journey to add the configured event: Create your first journey (building-journeys/journey-gs.md); Test and publish the journey: Publish the journey (building-journeys/publish-journey.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: b87a699b -->

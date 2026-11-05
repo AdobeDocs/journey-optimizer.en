@@ -45,6 +45,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I pass the organization ID?** — In the header, using the key x-gw-ims-org-id with the value in the form XXX@AdobeOrg.
 * **Q: What kind of API call is used to send events?** — A POST API call to the Streaming Ingestion APIs URL, called an inlet.
 
+**Personas:**
+
+* **developer:** Can set up a POST API call to the Streaming Ingestion APIs inlet URL, using the payload copied from the Event menu payload preview. Can replace payload variables, such as the address field, with values like the recipient's email. The page states that the organization ID is passed in the header using the key x-gw-ims-org-id. Where: "Additional steps to send events".
+* **admin:** Can configure the data system that pushes events to the Streaming Ingestion APIs, using the payload copied from the Event menu payload preview. The page states that event requirements and limitations for streaming, Query Service, and batch ingestion appear in the Journey guardrails page. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** Get the inlet URL from Adobe Experience Platform APIs.
+* **Previous:** Configure the event's payload fields: Configure a unitary event (event/about-creating.md)
+* **Next:** Check event requirements and limitations for streaming, Query Service, and batch ingestion: Journey Optimizer guardrails and limitations (start/guardrails.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: bb6e7705 -->
