@@ -61,7 +61,7 @@ Before creating a public landing page, make sure that:
 
     >[!CAUTION]
     >
-    >The form must include the fields required by the dataset schema. Do not override these mandatory fields in the form configuration, as this causes ingestion to fail.
+    >The form must include all required root-level fields of the dataset schema so that ingestion succeeds in Adobe Experience Platform. Do not override these mandatory fields in the form configuration, as this causes ingestion to fail.
 
 ## Create a public landing page {#lp-anonymous-create}
 
