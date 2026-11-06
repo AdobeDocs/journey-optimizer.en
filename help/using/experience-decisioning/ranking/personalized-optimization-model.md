@@ -100,6 +100,10 @@ The model has two phases:
 
 The model supports optimization of continuous variables (such as revenue and customer lifetime value) in addition to binary variables (such as clicks and conversions). Predicted values for a binary metric such as clicks will always be between 0 and 1. Predicted values for a continuous metric such as order value will always be a number greater than or equal to zero. Ranking scores are normalized to ensure consistent behavior across both metric types when used in formulas or comparisons.
 
+### Pass context at decision time {#pass-context}
+
+If your model uses context features, the decision request must carry the values for those features. Send them with the Web SDK or Mobile SDK, as configured in your datastream. At decision time, the model uses the context values together with the profile's attributes and audience memberships to score the eligible offers in real time. [Learn how to set up context data](../context-data.md)
+
 ## Illustrative example {#illustrative-example}
 
 ### Binary response (conversion) {#binary-response}

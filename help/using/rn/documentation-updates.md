@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Create AI models** and **Personalized optimization model** pages now describe the prerequisites for using profile and context features, how to use the AI model in a selection strategy and decision policy, and how to pass context values in the decision request. [Read more](../experience-decisioning/ranking/create-ai-models.md#use-ai-model)
+
 * The **Frequency capping** and **Conflict management & prioritization** pages now state that capping works for all identity namespaces and is applied independently per namespace. The restriction to the highest priority namespace has been removed. [Read more](../conflict-prioritization/channel-capping.md)
 
 * The **Honor email open tracking consent** page has a new **Apply the option to existing messages** section. It explains what to do for existing messages after you turn on **Honor open tracking consent**: republish transactional messages, and how the setting applies to scheduled and in-progress campaigns and to event-based and read-audience journeys. [Read more](../email/open-tracking-consent.md#existing-messages)
