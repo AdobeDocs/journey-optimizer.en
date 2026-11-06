@@ -84,14 +84,6 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 </tbody>
 </table>
 
-### Integrations {#nov-26-integrations}
-
-* **Dynamic token substitution for Experience Manager fragments** - Use attribute paths such as `{{profile.person.name.firstName}}` directly in Experience Manager Content Fragments, with no token map needed. This works only for fragments added directly to a message, not for fragments served through Experience Decisioning. [Learn more](../integrations/aem-fragments.md#aem-attribute-paths)
-
-  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
-
-  Availability date: November 5, 2026
-
 ### Decisioning {#nov-26-decisioning}
 
 <table>
@@ -110,6 +102,14 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 </tr>
 </tbody>
 </table>
+
+### Integrations {#nov-26-integrations}
+
+* **Dynamic token substitution for Experience Manager fragments** - Use attribute paths such as `{{profile.person.name.firstName}}` directly in Experience Manager Content Fragments, with no token map needed. This works only for fragments added directly to a message, not for fragments served through Experience Decisioning. [Learn more](../integrations/aem-fragments.md#aem-attribute-paths)
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
+
+  Availability date: November 5, 2026
 
 ## October '26  release notes {#oct-26-release-notes}
 
