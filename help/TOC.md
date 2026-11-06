@@ -189,6 +189,7 @@ nudge: yes
     + [Get started with Orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
     + [Guardrails and limitations](using/orchestrated/guardrails.md)
     + [FAQ](using/orchestrated/orchestrated-campaigns-faq.md)
+    + [Coworker for Orchestrated campaigns](using/orchestrated/orchestrated-campaigns-coworker-skills.md)
     + Data configuration {#data-configuration}
       + [Data configuration](/help/rp_landing_pages/data-configuration-landing-page.md)
       + Manage relational Schemas and Datasets {#schemas-datasets}

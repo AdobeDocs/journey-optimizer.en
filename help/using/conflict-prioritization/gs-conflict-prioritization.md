@@ -88,7 +88,7 @@ Rule sets allow you to **group together multiple rules** and apply them to the j
 
 * **Profile counter update latency** - It can take up to 10 minutes after a customer has entered a journey for the profile counter value to be updated. If a profile enters two journeys within a short window, the second journey may not correctly recognize that the frequency cap has already been reached, potentially allowing the profile to enter both journeys.
 
-* **Namespace priority for journey entry capping** - Entry capping is only supported if the namespace selected in the journey is the highest priority namespace defined in the sandbox. If namespace priority hasn't been explicitly configured, the default highest priority is email.
+* **Namespaces and capping** - Capping is supported for all identity namespaces, regardless of the namespace priority defined in the sandbox. Capping is applied independently per namespace: counters for one namespace are tracked separately and do not affect capping for any other namespace.
 
 * **Simultaneous activations in audience qualification journeys** - When multiple audience qualification journeys are activated by the same audience qualification event, counts for entry capping will not be accurate. If counts are below the cap, the journey will continue to arbitrate, but it will not be able to get the most up-to-date counts with simultaneous activations.
 
