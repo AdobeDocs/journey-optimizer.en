@@ -320,8 +320,6 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 </tbody>
 </table>
 
-* **Reduced step events for wait and event activities** - Step events are no longer generated for **wait** activities and **event** activities when the profile was not actually processed at that activity.
-
 +++
 
 ### Campaigns {#oct-26-orchestrated-campaigns}
