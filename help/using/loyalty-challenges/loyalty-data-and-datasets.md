@@ -65,7 +65,7 @@ For standard loyalty attributes on the profile (points, tier, program, status, a
 
 ➡️ [Loyalty Details schema field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/loyalty-details){target="_blank"}
 
-➡️ [AJO schema dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=en){target="_blank"}
+➡️ [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}
 
 ### Experience events {#experience-events}
 
@@ -89,3 +89,4 @@ Journey Optimizer applies TTL guardrails to many system-generated datasets. Loya
 >
 >Organization-level loyalty configuration can include archive and retention settings (for example, archive duration) managed through the Loyalty metadata service. Coordinate with your Adobe administrator if you need to adjust retention for your organization.
 
+{{$include /help/_includes/do-not-localize/loyalty-challenges/ai-augmented-loyalty-data-and-datasets.md}}

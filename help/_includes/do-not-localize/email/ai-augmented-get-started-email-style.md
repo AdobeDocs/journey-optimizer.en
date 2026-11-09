@@ -43,6 +43,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What can I style on a text component?** — Background color and Font color, Text parameters (font family, size, height, alignment), the Indentation setting, and Border, Margin, and Padding.
 * **Q: Why can I only change a few style settings?** — Because you are using a default content template or applied a theme, which limits adjustments to those that match the selected theme.
 
+**Personas:**
+
+* **marketer:** Can adjust style settings such as Background color, Font color, Border, Margin, and Padding for the email body, a structure component, or a content component. Can update Text parameters like font family, size, height, and alignment, and manage spacing before the first character using the Indentation setting. The page states that using a default content template or applying a theme limits you to a few style settings matching the theme. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Select any element in your email and select the Styles tab.
+* **Success check:** All the styling options for the selected element are displayed in the right pane.
+* **Previous:** Using a default content template: Work with email templates (email/use-email-templates.md); Applying a theme to your email: Enhanced Email Authoring Experience (email/apply-email-themes.md)
+* **Next:** Personalizing your email background: Personalize your email background (email/backgrounds.md); Managing vertical alignment and padding: Adjust vertical alignment and padding in Journey Optimizer (email/alignment-and-padding.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: b840c3af -->

@@ -50,11 +50,11 @@ topic_v2:
 
 You can edit the In-app content to configure experience options:
 
-* In a **[!UICONTROL Campaign]**, from the **[!UICONTROL Action]** menu, click the **[!UICONTROL Edit content]** button to configure the message content.
+* In a **[!UICONTROL Campaign]**, from the **[!UICONTROL Action]** menu.
 
     ![](assets/edit-in-app-content.png)
 
-* In a **[!UICONTROL Journey]**, from the advanced menu of your In-app **[!UICONTROL Action]**, you can start designing your content with the **[!UICONTROL Edit content]** button.
+* In a **[!UICONTROL Journey]**, from the advanced menu of your In-app **[!UICONTROL Action]**, you can start designing your content with the **[!UICONTROL Configure action]** button.
     
     ![](assets/design_inapp_journey.png)
 
@@ -305,5 +305,7 @@ For more information, refer to the [Developer documentation](https://developer.a
 The video below shows how to author and test your In-app messages.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410471?quality=12&learn=on)
+
+If your in-app content returns an error code, see [Content authoring errors](../content-management/content-authoring-errors.md).
 
 {{$include /help/_includes/do-not-localize/in-app/ai-augmented-design-in-app.md}}

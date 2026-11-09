@@ -146,6 +146,18 @@ To assign custom data usage labels to the journey, click the **[!UICONTROL Manag
 
 [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
+## Custom metadata {#custom-metadata}
+
+>[!AVAILABILITY]
+>
+>This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+
+If custom metadata fields have been defined and selected for journeys, they are displayed in the **[!UICONTROL Metadata fields]** section of the journey properties.
+
+Fill them in to track specific business information such as line of business, product or cost center.
+
+Fields marked with an asterisk are required. [Learn more on custom metadata](../administration/custom-metadata.md)
+
 ## Journey payload size {#journey-payload-size}
 
 >[!CONTEXTUALHELP]

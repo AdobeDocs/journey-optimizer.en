@@ -402,6 +402,8 @@ Note that if this option is disabled, once the translation is finished by your p
 
     ![](assets/translation_review_9.png)
 
+If multilingual content returns an error code, see [Multilingual content errors](multilingual-errors.md).
+
 <!--
 # Create a multilingual journey {#create-multilingual-journey}
 

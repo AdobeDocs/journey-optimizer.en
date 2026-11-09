@@ -49,6 +49,10 @@ Detailed information on how to import audiences is available in Adobe Experience
 >
 >For custom upload audiences (CSV upload) and other external audiences, **[!UICONTROL Incremental read]** is not functionally supported today. On each recurrence, the **entire audience** is retrieved, regardless of the Incremental read toggle setting.
 
+>[!CAUTION]
+>
+>Custom upload audiences (CSV upload) cannot be used to target inbound channel actions, including in-app messages and web or code-based experiences. [Learn more about audience guardrails](target-audiences.md#guardrails)
+
 Learn how to upload audiences in CSV format in video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421714?quality=12)

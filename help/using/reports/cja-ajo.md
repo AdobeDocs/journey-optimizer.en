@@ -68,6 +68,8 @@ Before using [!DNL Customer Journey Analytics] for your journeys, you must first
     * [Message Feedback/Tracking datasets](../data/datasets-query-examples.md#message-feedback-event-dataset): allows you to view delivery information about your messages sent through [!DNL Journey Optimizer]. Note that the Message Feedback Event Dataset uses batch ingestion — expect a data latency of up to 2 hours in your CJA reports.
     * [Entity and Journey datasets](../data/datasets-query-examples.md#entity-dataset): allows you to search Friendly names and use them in your reporting. 
 
+    For the fields of these datasets, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
+
 1. [Create a data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html){target="_blank"} to configure the dimensions and metrics you want to use for your report.
 
     You can create Journey Optimizer specific metrics to better reflect your journeys' data. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/integrations/ajo.html#configure-the-data-view-to-accommodate-journey-optimizer-dimensions-and-metrics){target="_blank"}

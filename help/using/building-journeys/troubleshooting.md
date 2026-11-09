@@ -40,11 +40,11 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-Use this page to find and fix configuration errors before testing or publishing. First, click **[!UICONTROL Validate]** in the journey header and review the Alerts panel. Resolve any errors and validate again before continuing to [test mode](testing-the-journey.md) or publication. [Learn about journey validation](publish-journey.md#validate).
+Find and fix configuration errors before testing or publishing. First, click **[!UICONTROL Validate]** in the journey header and review the Alerts panel. Resolve any errors and validate again before continuing to [test mode](testing-the-journey.md) or publication. [Learn about journey validation](publish-journey.md#validate).
 
-Learn how to troubleshoot journey events, check if profiles entered your journey, how they navigate through it, and if messages are sent [on this page](troubleshooting-execution.md). If no profiles enter your event-based journey despite events being ingested, ensure the [event condition data types match the event schema](troubleshooting-execution.md#verify-event-identity-and-rule-data-types).
+Learn how to troubleshoot journey events, check if profiles entered your journey, how they navigate through it, and if messages are sent in [Troubleshoot your live journey execution](troubleshooting-execution.md). If no profiles enter your event-based journey despite events being ingested, ensure the [event condition data types match the event schema](troubleshooting-execution.md#verify-event-identity-and-rule-data-types).
 
-If you are using inbound actions, learn how to troubleshoot them [on this page](troubleshooting-inbound.md).
+If you are using inbound actions, learn how to troubleshoot them in [Troubleshoot inbound actions in journeys](troubleshooting-inbound.md).
 
 ## Errors in activities {#activity-errors}
 
@@ -79,5 +79,12 @@ Errors and warnings that are global to the journey appear first in the list. Err
 You can define a fallback action in case of an error for the following journey activities: **[!UICONTROL Optimize]** and **[!UICONTROL Action]**.
 
 When an error occurs in an action or a condition, the journey of an individual stops. The only way to make it continue is to solve the issue. To avoid interrupting the journey, you can also check the option **[!UICONTROL Add an alternative path in case of a timeout or an error]** in the activity's properties. Learn more in [this section](../building-journeys/using-the-journey-designer.md#paths).
+
+## Related topics {#related}
+
+* [Troubleshoot your live journey execution](troubleshooting-execution.md)
+* [Troubleshoot inbound actions in journeys](troubleshooting-inbound.md)
+* [Validate your journey](publish-journey.md#validate)
+* [Error codes reference](error-codes-reference.md)
 
 {{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-troubleshooting.md}}

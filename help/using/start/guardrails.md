@@ -347,7 +347,7 @@ This section covers guardrails for audience management, profile handling, and en
 
 ### Audience and profile guardrails {#audience}
 
-* You can publish up to **10 audience compositions** in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
+* You can publish up to **50 audience compositions** in a given sandbox. Compositions created with [Federated audience composition](../audience/federated-audience-composition.md) are not counted. If you have reached this threshold, you need to delete a composition to free up space and publish a new one. See also the [Experience Platform guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"}.
 
     Learn more about audience compositions on [this page](../audience/get-started-audience-orchestration.md).
 
@@ -414,6 +414,8 @@ The following guardrails apply to the [Mobile channel](../mobile/get-started-mob
 
 * Journey Optimizer supports a maximum of **500 active inbound actions** at any moment in time. These inbound actions are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
 
+* An inbound message request supports a maximum of **10 lookups** of any kind, including [external data](../personalization/external-data-lookup.md) and dataset lookups. If a request exceeds this limit, the entire request fails with an **HTTP 422** error, with no partial response. To stay within the limit, consolidate your lookups: for example, call an endpoint once and reuse the result instead of calling it several times for different attributes.
+
 #### Profile management with inbound channels {#profile-management-inbound}
 
 [!DNL Journey Optimizer] inbound channels can target pseudonymous profiles, meaning profiles that are not authenticated or not known yet because they have not been engaged before on other channels. This is the case for example when targeting all visitors or audiences based on temporary IDs like ECID.
@@ -449,7 +451,7 @@ The recommended size limits for content types are as follows:
 | Message | 1200 KB |
 | Landing page | 1000 KB |
 
-A warning is surfaced when a content variant exceeds its recommended size threshold. This applies to all content types and channels, and does not block saving or publishing.
+A warning is surfaced when a content variant exceeds its recommended size threshold. This applies to all content types and channels, and does not block saving or publishing. The exception is a landing page HTML template larger than 1 MB, which is rejected during validation. Reduce the size of the template.
 
 ### Generate Content guardrails {#ai-assistant-g}
 
@@ -479,6 +481,7 @@ The following guardrails apply to the [fragments](../content-management/fragment
   * **Across variants**: up to 120 unique fragments across all variants of a single message. A warning is shown when usage reaches 90 (75% of the limit); publishing is blocked at 120.
 
 * To use a fragment in a journey or campaign, it must be in the **Live** status.
+* A fragment cannot reference itself.
 * [Contextual attributes](../personalization/personalization-build-expressions.md) are not supported within fragments.
 * Visual fragments are not cross-compatible between the Use Themes and Manual Styling modes. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Use Themes mode. [Learn more on themes](../email/apply-email-themes.md)
 * When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)

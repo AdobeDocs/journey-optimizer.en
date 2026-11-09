@@ -50,6 +50,8 @@ Campaign Orchestration in [!DNL Adobe Journey Optimizer] powers sophisticated, b
 
 While cross-channel marketing is essential, Orchestrated campaigns make it seamless. With a visual, drag-and-drop interface, you can design and automate complex marketing workflows, from segmentation to message delivery, across multiple channels. Everything happens in one intuitive environment, built for speed, control, and efficiency.
 
+To view campaign schedules, use the unified **[!UICONTROL Calendar]** menu. [Learn how to use the Calendar](../start/calendar.md).
+
 ![](assets/canvas-example-diagram.png){zoomable="yes"}
 
 ➡️ [Discover Orchestrated campaigns in video](#video-oc) 
@@ -162,3 +164,5 @@ Now that you have an understanding of what orchestrated campaigns are, it's time
 * **[Engage customers by browsing activity](engage-customers-uc.md)** - Re-engage profiles who browsed but did not purchase, using a multi-step orchestrated campaign.
 * **[Notify users about product availability](product-availability-uc.md)** - Alert customers when a product they showed interest in is back in stock.
 * **[Send wishlist item updates](wishlist-uc.md)** - Trigger personalized messages when wishlist items go on sale or become available.
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-gs-orchestrated-campaigns.md}}

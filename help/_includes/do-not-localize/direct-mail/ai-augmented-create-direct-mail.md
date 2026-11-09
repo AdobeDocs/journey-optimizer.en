@@ -34,6 +34,7 @@ For complete understanding, this information should be combined with the documen
 * Before creating a direct mail message, a file routing configuration and a direct mail message configuration must already exist.
 * In a campaign, audience selection supports up to 100 million profiles.
 * You can add up to 50 columns to the extraction file.
+* Each column in the extraction file must have a Label.
 * Direct Mail supports the Holdout functionality but does not currently support Treatments.
 * Journey direct mail extraction files are generated according to the file routing frequency; profiles are included in the next export after they reach the Direct mail node. With a frequency shorter than 24 hours, profiles can arrive in different export windows and produce multiple files during a day; a 24-hour routing frequency produces one file per day.
 * Campaign direct mail extraction files are generated when the campaign starts; for recurring campaigns, a file is generated for each campaign execution.
@@ -53,6 +54,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I preview the extraction file?** — Use Simulate content once the content of the extraction file has been defined.
 * **Q: Can I use decision policies in the extraction file?** — Yes; select a column in Data Fields, open the personalization editor, create or insert a decision policy, and use decision item attributes as column data.
 
+**Personas:**
+
+* **marketer:** Can add a Direct mail activity from the Actions palette in a journey, or select Direct mail in a Scheduled - Marketing campaign. Can configure the extraction file: set the Filename, add header or footer Notes, and add decision policies through the personalization editor. The page states that you can add up to 50 columns to the extraction file, and decision item attributes can be used as column data. Where: "Configure the extraction file".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Drag and drop a Direct mail activity from the Actions section of the palette.
+* **Success check:** The extraction file content appears in the Simulate content preview.
+* **Previous:** Configure a file routing configuration and a direct mail message configuration before creating a direct mail message: Direct mail configuration (direct-mail/direct-mail-configuration.md); Get an overview of direct mail before creating a message: Get started with direct mail (direct-mail/get-started-direct-mail.md)
+* **Next:** Test and send the direct mail message after configuring the extraction file: Check & send a direct mail message (direct-mail/test-send-direct-mail.md); Preview and test the extraction file content: Preview and test your content (content-management/preview-test.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 2d122b4e -->
+<!-- ai-section-version: 1 | source-hash: 0011c85d -->

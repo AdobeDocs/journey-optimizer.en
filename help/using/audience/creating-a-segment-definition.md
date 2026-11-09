@@ -115,13 +115,7 @@ Streaming segmentation is an ongoing data selection process that updates your au
 
 >[!IMPORTANT]
 >
->As of November 1st, 2024, streaming segmentation no longer supports the use of **send** and **open** events from Journey Optimizer tracking and feedback datasets.
->
->* This change applies to all customer sandboxes and organizations.
->* Only send and open events are affected: Clicks and other tracking events remain available for streaming segmentation.
->* This change applies only to streaming segmentation. Send and open events can still be used in batch segments, but if included in a streaming segment, they are evaluated in a batch manner. Additionally, exclusion events and bounce/delay events resulting from send events are also impacted by this change.
->* Tracking data collection is not affected. Send and open events will continue to be collected as usual.
->* Reaction events in journeys are unaffected by this change.
+>**Evaluation method and event-data capability are separate concepts.** A segment can be configured as streaming while a particular event type is processed in a batch manner. As of **November 1, 2024**, Journey Optimizer send and open events from tracking and feedback datasets are not supported for true streaming segmentation in any customer sandbox or organization. These events can still be used in batch segments, but when included in a streaming segment, they are evaluated in a batch manner and cannot provide deterministic same-day exclusion through streaming qualification. Click and other tracking events can be used in streaming segmentation when the segment definition meets [Adobe Experience Platform's streaming segmentation eligibility criteria](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation#rulesets){target="_blank"}. Tracking collection itself is not stopped. Related exclusion, bounce, and delay events resulting from send events are also affected. For suppression use cases, use native frequency capping or other business rules where available. For a response to a supported message sent earlier in the same journey, use a [Reaction event](../building-journeys/reaction-events.md) rather than rebuilding the logic as an audience.
 
 +++
 
@@ -168,6 +162,22 @@ With flexible audience evaluation, you can:
 1. Use the evaluated audience in Adobe Journey Optimizer campaigns or journeys for precise targeting.
 
 You can evaluate up to 20 audiences at a time, and ineligible audiences are automatically excluded. For more details, see the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#flexible-audience-evaluation). 
+
+On-demand Flexible Audience Evaluation is queued with other segmentation work and can take up to **four hours**. The audience is not immediately available when the request is submitted. After the segment job completes, the corresponding export job runs automatically. Monitor the evaluation status and verify the resulting audience state before depending on it in a journey or campaign.
+
+### Batch evaluation and audience freshness {#batch-evaluation-and-audience-freshness}
+
+Plan batch audience use as a sequence:
+
+1. Source data is ingested.
+1. Batch segmentation evaluates the segment definition.
+1. An audience snapshot is created.
+1. Profile snapshot or export data propagates to the consuming service.
+1. The journey or campaign executes.
+
+Batch audiences are snapshots, not continuously recalculated lists. Data received after evaluation is not reflected until a later evaluation, and a journey or scheduled campaign can use an older snapshot while evaluation or export propagation is still in progress. Do not treat a 45- to 60-minute buffer as a universal guarantee. For batch audiences, allow approximately two hours after segmentation completes for the audience to become ready for use. Actual timing varies by sandbox, audience size, ingestion volume, export processing, and system load. For Read Audience journeys configured with daily recurrence, use **[!UICONTROL Trigger after batch audience evaluation]** instead of relying on a fixed buffer. This option is available only for daily recurrence. Confirm the actual segmentation and export durations in each sandbox.
+
+The [Schedules API](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/schedules){target="_blank"} exposes the batch segmentation schedule for a sandbox. Use the schedule configuration endpoints documented there to review or update the `batch_segmentation` schedule, then verify a subsequent evaluation and snapshot before relying on the new time for a production journey or campaign. Schedule changes are sandbox-specific.
 
 ## How-to video{#video-segment}
 

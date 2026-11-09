@@ -57,6 +57,14 @@ Benefits of tag categories over naming conventions:
 
 For a recommended setup workflow, see [Set up tag categories for journey management](#tags-setup) below.
 
+## Tags vs. custom metadata {#tags-vs-metadata}
+
+>[!AVAILABILITY]
+>
+>This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+
+Tags help you classify and find journeys in the inventory. To track business information for reporting, such as cost center or product line, use [custom metadata](../administration/custom-metadata.md) instead: its values are recorded in datasets that you can export or use to build audiences.
+
 ## Add tags to a journey
 
 The **Tags** field, in the journey properties, allows you to define tags for your journey. You can either select an existing tag, or create a new one. Start typing the name of the desired tag and select it from the list. If it is not available, click **Create** to create a new one and add it to your journey. You can define as many tags as needed.

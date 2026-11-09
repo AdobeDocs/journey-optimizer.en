@@ -48,6 +48,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens if I change the original HTML after optimizing?** — You need to re-optimize the generated version so it is consistent with the new content.
 * **Q: Does this guarantee how an inbox assistant will present my email?** — No; behaviors depend on the inbox provider and model version, and answers or summaries from external AI clients can be wrong, incomplete, or mixed with web results.
 
+**Personas:**
+
+* **marketer:** Can select the Optimize for AI Inbox button in the Email Designer to generate a dedicated version of the email for AI-assisted inbox experiences. Can select the Enable edit toggle to edit the generated version manually, then select Optimize Email to confirm, or select Re-optimize or Remove optimization. The page states that changes to the original HTML content require re-optimizing the generated version to stay consistent. Where: "Optimize for AI inbox experiences".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Open your email in the Email Designer.
+* **Success check:** You are redirected to the HTML view and your email is now successfully optimized for AI inboxes.
+* **Previous:** Opening your email in the Email Designer before optimizing it: Design content from scratch in Journey Optimizer (email/content-from-scratch.md)
+* **Next:** Learning more about email design in Journey Optimizer: Design emails (email/get-started-email-design.md); Learning about Adobe generative features more broadly: Get started with Generate Content in Journey Optimizer (content-management/gs-generative.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 22861f3f -->

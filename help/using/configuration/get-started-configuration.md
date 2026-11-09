@@ -120,6 +120,7 @@ To be able to send messages, you need to go through the configuration steps list
 
 ## Additional resources
 
+* **[Configure journeys: Data Sources, Events, and Actions](about-data-sources-events-actions.md)** — Set up the technical building blocks required for journey orchestration: data sources, events, and custom actions.
 * **[Subdomain delegation](delegate-subdomain.md)** - Understand how to delegate subdomains to Adobe for email deliverability and branding.
 * **[Monitoring & troubleshooting](../../rp_landing_pages/troubleshoot-journey-landing-page.md)** - Diagnose and resolve issues quickly, including troubleshooting custom subdomain delegation.
 * **[Configuration tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/configuration/channel-configuration/configure-channels){target="_blank"}** - Explore step-by-step video tutorials on channel configuration and best practices.

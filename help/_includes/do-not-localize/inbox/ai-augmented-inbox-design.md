@@ -51,6 +51,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I add custom data to the payload?** — In the Data section, click Add meta to add custom key/value pairs.
 * **Q: How do I check the dark theme?** — Open the dark mode preview to confirm your dark theme colors and images.
 
+**Personas:**
+
+* **marketer:** Can set the container title and select a List or Carousel inbox layout, then specify the inbox capacity. Can configure unread settings with an icon image URL, background colors, and placement. Can configure the empty state with message text and light or dark image URLs, and add custom key/value pairs with Add meta. The page states that capacity is the maximum number of content cards the inbox is configured to hold. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Open the Content tab of the Inbox campaign you created.
+* **Success check:** After activation, you can use the inbox with Content cards.
+* **Previous:** Creating the inbox campaign before configuring its design: Create Inbox (inbox/inbox-create.md)
+* **Next:** Using the activated inbox with content cards: Create content cards (content-card/create-content-card.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: fc6ec6d1 -->

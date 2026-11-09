@@ -43,5 +43,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What permission is needed to assign a label to a journey?** — A role with a Manage permission, i.e., Manage journeys, Manage Campaigns, or Manage decisions; without this permission, the Manage access button is greyed out.
 * **Q: If a user has the C1 label in their role, which objects can they access?** — Only C1-labeled or unlabeled objects.
 
+**Personas:**
+
+* **admin:** Can create labels when belonging to a role with the Manage usage labels permission. Can assign labels to objects such as Journey, Campaign, Template, Fragment, Landing page, Offer, Static offer collection, Offer decision, Channel configuration, and IP warmup plan. The page states that without a Manage permission such as Manage journeys, Manage Campaigns, or Manage decisions, the Manage access button is greyed out. Where: "Prerequisites".
+* **developer:** Can select custom or core data usage labels in the Manage access window to manage access to an object. The page states that a user with the C1 label only has access to C1-labeled or unlabeled objects. Where: "Assign labels".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select the Manage access button from an Adobe Journey Optimizer object, such as a newly created Campaign.
+* **Success check:** Your newly created Label is now available in the list.
+* **Previous:** Learn more about permissions needed to create or assign labels: Manage users and roles (administration/permissions.md)
+
 +++
 <!-- ai-accordion-version: 1 | source-hash: 5ae3809d -->

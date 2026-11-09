@@ -54,6 +54,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I reference a field whose name contains a hyphen?** — Wrap the hyphenated key in backticks inside a PQL expression: ``{%= profile.events.`order-total` > 100 %}``. Backticks are not supported in plain Handlebars interpolation — use a `{% let %}` variable as an intermediate step if needed.
 * **Q: Why does `topN` need `{% let %}` before a `{{#each}}` loop?** — `topN` is a PQL function that returns a PQL list. Assigning it to a `{% let %}` variable makes the result available in the Handlebars context so it can be iterated with `{{#each}}`.
 
+**Personas:**
+
+* **developer:** Can copy ready-to-use personalization recipes for dates, arrays, strings, conditional logic, and PQL edge cases into email, mobile, and push content. Can use functions such as formatDate, dateDiff, topN, and stringToNumber, and wrap hyphenated attribute keys like order-total in backticks inside PQL expressions. The page states that backticks are only supported inside PQL expressions and not in plain Handlebars interpolation. Where: "Personalization recipes".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Use formatDate with getCurrentZonedDateTime() to render today's date in any format.
+* **Success check:** The output renders as a readable date, for example April 11, 2026.
+* **Previous:** Review personalization syntax best practices before copying recipes: Personalization syntax (personalization/personalization-syntax.md)
+* **Next:** Route profiles differently by day of week in a journey: Condition activity (building-journeys/condition-activity.md); Filter arrays in journey conditions instead of content: Collection management functions (building-journeys/expression/collection-management-functions.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 20c7ee0f -->

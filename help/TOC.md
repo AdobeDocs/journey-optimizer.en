@@ -12,7 +12,7 @@ nudge: yes
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new} 
   + [Release cycle](using/rn/releases.md) 
-  + {hide-from-toc} [Pre-release notes](using/rn/e-release-notes.md)
+  + {hide-from-toc}[Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -38,6 +38,7 @@ nudge: yes
     + [Start from your goal](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
     + [Journeys vs campaigns](using/start/journeys-vs-campaigns.md)
+    + [Use the Calendar](using/start/calendar.md)
     + {hide-from-toc} [Journeys vs Campaigns - 2](using/start/journeys-vs-campaigns-v2.md)
     + {hide-from-toc} [Packages and capabilities](using/start/ajo-packages.md)
     + {hide-from-toc} [Feature availability](using/start/ajo-features-availability.md)
@@ -188,6 +189,7 @@ nudge: yes
     + [Get started with Orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
     + [Guardrails and limitations](using/orchestrated/guardrails.md)
     + [FAQ](using/orchestrated/orchestrated-campaigns-faq.md)
+    + [Coworker for Orchestrated campaigns](using/orchestrated/orchestrated-campaigns-coworker-skills.md)
     + Data configuration {#data-configuration}
       + [Data configuration](/help/rp_landing_pages/data-configuration-landing-page.md)
       + Manage relational Schemas and Datasets {#schemas-datasets}
@@ -195,7 +197,6 @@ nudge: yes
         + [Get started with schemas and datasets](using/orchestrated/gs-schemas.md)
         + [Manual schema](using/orchestrated/manual-schema.md)
         + [File upload schema](using/orchestrated/file-upload-schema.md)
-        + {hide-from-toc} [Relational schema and dataset errors](using/orchestrated/relational-schema-errors.md)
         + [Ingest data](using/orchestrated/ingest-data.md)
       + [Create a Targeting dimension](using/orchestrated/target-dimension.md)
       + [Configure a Channel configuration](using/orchestrated/channel-config.md)
@@ -206,7 +207,6 @@ nudge: yes
       + [Orchestrate activities](using/orchestrated/orchestrate-activities.md)
       + [Add personalization](using/orchestrated/add-personalization.md)
       + [Start and monitor the campaign](using/orchestrated/start-monitor-campaigns.md)
-      + {hide-from-toc} [Orchestrated campaign errors](using/orchestrated/orchestrated-campaign-errors.md)
       + [Reporting](using/orchestrated/reporting-campaigns.md)
     + Query the database {#query-database}
       + [Query the database](/help/rp_landing_pages/query-database-landing-page.md)
@@ -256,7 +256,7 @@ nudge: yes
   + Journey arbitration {#journey-arbitration}
     + [Use formulas to rank journeys](using/conflict-prioritization/journey-ranking-formulas.md)
     + [Use AI models to rank journeys](using/conflict-prioritization/journey-ai-models.md)
-+ Delivery settings {#delivery-settings}
++ Execution settings {#delivery-settings}
   + [Send using waves](using/delivery/send-using-waves.md)
   + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
   + [Channel optimization](using/building-journeys/channel-optimization.md)
@@ -281,25 +281,42 @@ nudge: yes
     + [Request approval](using/test-approve/request-approval.md)
     + [Approve a request](using/test-approve/review-approve-request.md)
 + Monitor & troubleshoot {#monitor}
-  + [Get started with monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
+  + [Track, monitor and troubleshoot](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
   + [Tracking in Journey Optimizer](using/start/get-started-tracking.md)
   + Email deliverability {#deliverability}
     + [Get started with deliverability](using/reports/deliverability.md)
     + [Understand the suppression list](using/reports/suppression-list.md)
     + [New DMARC requirement](using/configuration/dmarc-record-update.md)
-  + Monitor alerts & error codes {#monitor-alerts-errors}
-    + [System alerts](using/reports/alerts.md)
-    + [Error codes reference](using/building-journeys/error-codes-reference.md)
+  + [System alerts](using/reports/alerts.md)
   + Troubleshooting {#troubleshooting}
-    + [Troubleshooting FAQ](using/start/troubleshooting.md)
+    + [Troubleshooting overview](/help/rp_landing_pages/troubleshooting-overview-landing-page.md)
+    + [Error codes reference](using/building-journeys/error-codes-reference.md)
     + Journeys troubleshooting {#troubleshoot-journey}
       + [Troubleshoot journey errors](using/building-journeys/troubleshooting.md)
-      + {hide-from-toc} [Journey validation errors](using/building-journeys/journey-validation-errors.md)
+      + [Journey validation errors](using/building-journeys/journey-validation-errors.md)
       + [Troubleshoot journey execution](using/building-journeys/troubleshooting-execution.md)
       + [Troubleshoot inbound actions](using/building-journeys/troubleshooting-inbound.md)
       + [Troubleshoot custom actions](using/action/troubleshoot-custom-action.md)
+    + Campaigns troubleshooting {#troubleshoot-campaigns}
+      + [Campaign errors](using/campaigns/campaign-errors.md)
+      + [Orchestrated campaign errors](using/orchestrated/orchestrated-campaign-errors.md)
+      + [Relational schema and dataset errors](using/orchestrated/relational-schema-errors.md)
+      + [Audience composition errors](using/audience/audience-composition-errors.md)
+    + Content troubleshooting {#troubleshoot-content}
+      + [Content authoring errors](using/content-management/content-authoring-errors.md)
+      + [Fragments and AEM content errors](using/content-management/fragments-errors.md)
+      + [Multilingual content errors](using/content-management/multilingual-errors.md)
+      + [Landing page errors](using/landing-pages/landing-page-errors.md)
+      + [Proof and simulation errors](using/content-management/proof-simulation-errors.md)
+      + [Personalization errors](using/personalization/personalization-errors.md)
+    + Configuration troubleshooting {#troubleshoot-configuration}
+      + [Subdomain delegation and DNS errors](using/configuration/subdomain-delegation-errors.md)
+      + [IP warmup plan errors](using/configuration/ip-warmup-plan-errors.md)
+      + [Custom channel, inbound action, and reporting dataset errors](using/configuration/channel-reporting-errors.md)
+    + [Troubleshooting FAQ](using/start/troubleshooting.md)
 + Communication channels {#channels}
   + [Get started with communication channels](using/channels/gs-channels.md)
+  + [Coworker for channels](using/channels/channels-coworker-skills.md)
   + {hide-from-toc} [Destinations channel](using/destinations/destinations.md)
   + Email channel {#email}
     + [Email channel](/help/rp_landing_pages/email-landing-page.md)
@@ -345,11 +362,13 @@ nudge: yes
       + [Get started with email configuration](using/email/get-started-email-config.md)
       + [Define email configuration settings](using/email/email-settings.md)
       + [Enable List unsubscribe](using/email/list-unsubscribe.md)
+      + [Honor email open tracking consent](using/email/open-tracking-consent.md)
       + [Header parameters](using/email/header-parameters.md)
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
     + [Use and configure deeplinks](using/email/deeplinks.md)
     + [Manage email opt-out](using/email/email-opt-out.md)
+    + [Choose a consent level for opt-outs](using/email/consent-level.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
     + [Get started with In-app](using/in-app/get-started-in-app.md)
@@ -515,6 +534,7 @@ nudge: yes
   + Landing pages {#landing-pages}
     + [Get started with landing pages](using/landing-pages/get-started-lp.md)
     + [Create a landing page](using/landing-pages/create-lp.md)
+    + [Use public landing pages](using/landing-pages/lp-anonymous.md)
     + [Manage your landing pages](using/landing-pages/manage-lp.md)
     + Design content {#landing-pages-design}
       + [Design content](/help/rp_landing_pages/landing-pages-design-landing-page.md)
@@ -950,6 +970,7 @@ nudge: yes
     + [Export Journey Optimizer datasets](using/data/export-datasets.md)
     + [Query examples](using/data/datasets-query-examples.md)
     + [Built-in schemas >](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
+  + [Use custom metadata in campaigns and journeys](using/administration/custom-metadata.md)
   + [Use Adobe Experience Platform data](using/data/lookup-aep-data.md)
   + [Queries](using/data/get-started-queries.md)
   + Monitoring {#monitoring}

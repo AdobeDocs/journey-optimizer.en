@@ -211,8 +211,12 @@ For information about available alerts and how to subscribe, see [Access and sub
 
 You can also create your own alert by adding an **[!UICONTROL Alert]** activity to the campaign canvas. The alert fires when campaign execution reaches the activity. [Learn how to configure the Alert activity](activities/alert.md).
 
+If an Orchestrated campaign returns an error code, see [Orchestrated campaign errors](orchestrated-campaign-errors.md).
+
 ## Next steps {#next}
 
 After starting the Orchestrated campaign canvas, you can use Journey Optimizer reporting capabilities to get insights such as understanding audience behavior, and measuring the performance of each step in your customer journey. [Learn more on Orchestrated campaigns reporting](../orchestrated/reporting-campaigns.md)
 
 Have questions about Orchestrated campaigns? Check the [Orchestrated campaigns FAQ](orchestrated-campaigns-faq.md) for answers to the most common questions from practitioners.
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-start-monitor-campaigns.md}}

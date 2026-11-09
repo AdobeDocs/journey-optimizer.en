@@ -78,6 +78,10 @@ Event configuration is **mandatory** and must be performed by a Data engineer.
 | Use events in a journey | Journey practitioner |
 | Configure audience qualification events (selected on the canvas) | Journey practitioner |
 
+>[!NOTE]
+>
+>Events are one of three building blocks of journey configuration, alongside Data Sources and Actions. For a complete overview and configuration checklist, see [Configure journeys: Data Sources, Events, and Actions](../configuration/about-data-sources-events-actions.md).
+
 You can configure three types of events: **Unitary events**, **Business events**, and **Audience qualification events**.
 
 ➡️ [Discover this feature in video](#video)

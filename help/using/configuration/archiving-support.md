@@ -137,7 +137,7 @@ To do this, follow the steps below.
 
 ## BCC reporting data {#bcc-reporting}
 
-Reporting as such on BCC is not available in the journey and message reports. However, information is stored on a system dataset called **[!UICONTROL AJO Secondary Recipient Feedback Event Dataset]**. You can run queries against this dataset to find useful information for debugging purpose for example.
+Reporting as such on BCC is not available in the journey and message reports. However, information is stored on a system dataset called **[!UICONTROL AJO Secondary Recipient Feedback Event Dataset]**. You can run queries against this dataset to find useful information for debugging purpose for example. For the fields of this dataset, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"} (currently listed there as AJO Email BCC Feedback Event Schema).
 
 To access this dataset through the user interface, select **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Learn more about how to access datasets in [this section](../data/get-started-datasets.md#access-datasets).
 

@@ -57,6 +57,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I remove a web subdomain?** — To undelegate it, reach out to your Adobe representative; a Failed subdomain can be deleted from the More actions menu to clean up the list.
 * **Q: Are subdomain modifications isolated to one environment?** — No, web subdomain configuration is common to all environments and any modification also impacts the production sandboxes.
 
+**Personas:**
+
+* **admin:** Can access web subdomains from the Administration, Channels menu, under Web settings, Web subdomains, and filter by delegating user or delegation status. Can select Set up subdomain to use a delegated subdomain or add a new domain, and set the default subdomain. The page states that editing subdomains requires the Manage Web Subdomains permission on the production sandbox, and any modification also affects production sandboxes. Where: "Access and manage web subdomains".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Browse to the Administration, Channels menu, then select Web settings, Web subdomains.
+* **Success check:** All the subdomains set up with the current sandbox are displayed.
+* **Previous:** Add content from the Adobe Experience Manager Assets library to a web experience: Use Assets in Journey Optimizer (integrations/assets.md); Delegate a subdomain to Adobe: Delegate a subdomain (configuration/delegate-subdomain.md)
+* **Next:** The web subdomain gets the Success status and is ready to be used: Set up channel configurations (configuration/channel-surfaces.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 09f9bb9a -->

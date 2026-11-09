@@ -43,6 +43,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: What are governance policies used for?** — To prevent sensitive fields from being exported to third-party systems through custom actions.
 * **Q: Which service manages data access and deletion requests?** — The Adobe Experience Platform Privacy Service.
 
+**Personas:**
+
+* **marketer:** Can use Privacy Service to manage customer requests to access and delete personal data. Can use Audit logs to identify actions performed by users in the system. Can track customers' consent for communication and manage their preferences and subscriptions. Can apply consent policies to custom actions to respect customer preferences. Can apply governance policies to prevent sensitive fields from being exported to third-party systems through custom actions. The page states that Data Subjects should be able to modify their consent at any time. Where: "Get started with privacy".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Use Adobe Experience Platform Privacy Service to manage customer requests to access and delete personal data.
+* **Next:** Manage customer requests to access and delete personal data: Privacy requests (privacy/requests.md); Identify actions performed by users in the system: Audit actions on Journey Optimizer resources (privacy/audit-logs.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d7d20db7 -->

@@ -49,6 +49,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I track a non-clickable element?** — Yes, any item, clickable or not, can be selected for click tracking.
 * **Q: How do I remove click tracking from an element?** — Select the corresponding delete icon.
 
+**Personas:**
+
+* **marketer:** Can check the Web tab of the Journey report and Campaign report to compare impressions, click rate and engagements once live. Can select any element, choose Click track element, and add a label to track clicks in the web reports. The page states that any item, clickable or not, can be selected for click tracking. Where: "Use click tracking".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Select an element in your page and choose Click track element from the contextual menu.
+* **Success check:** The corresponding tracked action automatically displays in the Click track pane on the left.
+* **Next:** Your web experience is live and you want to check the Web tab of the Journey report: Journey report (reports/journey-global-report-cja-web.md); Your campaign is live and you want to check the number of clicks for each element: Campaign live report (reports/campaign-live-report.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: cd87fbf2 -->

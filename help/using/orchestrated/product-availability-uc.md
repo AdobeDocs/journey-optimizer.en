@@ -83,3 +83,5 @@ Design a back-in-stock notification to inform customers when items from their Wi
 1. Once your campaign is tested and ready, click **[!UICONTROL Publish]** to make it live.
 
 With this orchestrated campaign, customer receives a separate email for each of their wishlist items. Each message is sent to the specific email address associated with that wishlist, with personalized content drawn from the details of that particular wishlist item.
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-product-availability-uc.md}}

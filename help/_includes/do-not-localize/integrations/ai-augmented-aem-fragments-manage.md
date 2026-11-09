@@ -49,6 +49,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why is the Sync control disabled for a Fragment?** — Because the Fragment already matches the published version in Experience Manager.
 * **Q: How can I see where a Fragment is used?** — Use Explore references to view the journeys, campaigns, orchestrated campaigns, and templates that reference the Fragment.
 
+**Personas:**
+
+* **marketer:** Can access AEM Content Fragments from the Content Management menu, Fragments option, then the AEM Fragments tab. Can review a Fragment's status, use Explore references, Open in AEM, and Sync, and review Name, Description, Variation, Repo Id, AEM Fragment Id, Tags, and JSON preview in Details. The page states that Sync is disabled if the Fragment already matches the published version in Experience Manager. Where: "Access AEM Content Fragments".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** From the Content Management menu, select Fragments.
+* **Success check:** The AEM Fragments tab shows Content Fragments available from Adobe Experience Manager.
+* **Next:** Learn more about working with Adobe Experience Manager Content Fragments: AEM Content Fragments (integrations/aem-fragments.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: b512d728 -->

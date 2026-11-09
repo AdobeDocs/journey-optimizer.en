@@ -70,6 +70,10 @@ The data source configuration allows you to define a connection to a system to r
 
 ➡️ [Discover this feature in video](#video)
 
+>[!NOTE]
+>
+>Data Sources are one of three building blocks of journey configuration, alongside Events and Actions. For a complete overview and configuration checklist, see [Configure journeys: Data Sources, Events, and Actions](../configuration/about-data-sources-events-actions.md).
+
 This configuration is not required if your journeys only leverage local data coming from an event payload. For example, if your journey is composed of an event followed by a channel action activity that only uses data from the event, there is no need to configure a data source.
 
 There are two types of data sources:

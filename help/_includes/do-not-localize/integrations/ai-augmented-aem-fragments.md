@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to tag, add, and personalize Adobe Experience Manager Content Fragments in Journey Optimizer campaigns and journeys, how to work with variations, and how to use Content Fragments as offer item attributes in Experience Decisioning.
+* **TL;DR:** This page explains how to tag, add, and personalize Adobe Experience Manager Content Fragments in Journey Optimizer campaigns and journeys, how to use token substitution or dynamic rendering for personalization, how to work with variations, and how to use Content Fragments as offer item attributes in Experience Decisioning.
 
 **Intents:**
 
@@ -17,6 +17,7 @@ For complete understanding, this information should be combined with the documen
 * Create and assign the Journey Optimizer tag in Experience Manager so a Content Fragment appears in the selector
 * Add and personalize an AEM Content Fragment in a campaign or journey using the AEM Content Advisor
 * Declare placeholders as parameters and map them to profile attributes, contextual attributes, static strings, or variables
+* Use attribute paths from the `profile`, `context`, and `item` namespaces inside fragment fields, resolved without a token map
 * Use AEM Content Fragments as offer item attributes in Experience Decisioning
 * Choose and work with Content Fragment variations
 
@@ -27,6 +28,7 @@ For complete understanding, this information should be combined with the documen
 * **Variations**: One or more permutations of Main that authors create for specific channels or scenarios, living inside the fragment rather than as separate assets *(product-specific)*
 * **Pills experience**: An option that improves readability by hiding long attribute paths *(product-specific)*
 * **ajo-enabled tag**: Tag with the ID format `ajo-enabled:{OrgId}/{SandboxName}` that a Content Fragment must carry to appear in Journey Optimizer for your organization and sandbox *(product-specific)*
+* **AJO helper fragment**: Expression fragment added inline to a message that declares, with `let` syntax only, every profile attribute used in an AEM Content Fragment so the attributes render *(product-specific)*
 
 **Guardrails:**
 
@@ -36,6 +38,8 @@ For complete understanding, this information should be combined with the documen
 * For Healthcare customers, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Extended Security for Healthcare add-on offerings.
 * Relative image URLs from Experience Manager are not supported; use absolute URLs.
 * All placeholders used within a Content Fragment must be explicitly declared by the user as parameters in the fragment helper tag.
+* Flat tokens resolve from the token map on the fragment reference; attribute paths from the `profile`, `context`, and `item` namespaces resolve automatically. Helpers, expressions, conditional blocks, and PQL are not supported inside fragments.
+* Profile attributes used in a Content Fragment render only if an AJO helper fragment that declares them with `let` syntax is added inline to the same message; undeclared profile attributes render as empty.
 * In Experience Decisioning, only Content Fragments in a published state are available, they must be tagged with `ajo-enabled:{OrgId}/{SandboxName}`, and you can add up to five AEM Content Fragments to a single decision item.
 * Using AEM Content Fragments in Experience Decisioning is available for channels with Decisioning support.
 
@@ -53,7 +57,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: How many AEM Content Fragments can I add to a single decision item?** — Up to five, and only Content Fragments in a published state are available.
 * **Q: What happens when I republish a fragment used in active campaigns or journeys?** — Republishing it in Experience Manager updates every referenced variation in active campaigns or journeys automatically.
 * **Q: How do I enable real-time personalization in a fragment?** — Declare all placeholders as parameters in the fragment helper tag and map them to profile attributes, contextual attributes, static strings, or predefined variables.
+* **Q: How do I use profile attributes inside a fragment field?** — Use the full attribute path, such as `profile.person.name.firstName`, in the field, and add an AJO helper fragment that declares the attribute with `let` syntax inline in the same message. Flat tokens still resolve from the token map on the reference.
+
+**Personas:**
+
+* **marketer:** Can add an AEM Content Fragment to a campaign or journey through the AEM Content Advisor, then choose fields and map placeholders to profile attributes, contextual attributes, static strings, or variables. Can enable the pills experience to hide long attribute paths and improve readability. The page states that placeholders used within a Content Fragment must be explicitly declared as parameters in the fragment helper tag to enable real-time personalization. Where: "Add Experience Manager Content fragments".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Assign a tag whose ID follows ajo-enabled:{AJO-OrgId}/{AJO-SandboxName} to your Content Fragment in Experience Manager.
+* **Success check:** The Content Fragment appears in the Content Fragment selector for your organization and sandbox.
+* **Next:** Create your campaign to add the tagged Content Fragment: Create an Action campaign (campaigns/create-campaign.md); Create your journey to add the tagged Content Fragment: Create your first journey (building-journeys/journey-gs.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 9e522485 -->
+<!-- ai-section-version: 1 | source-hash: 91e79eac -->

@@ -55,6 +55,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I test my SMS API credentials?** — Click Verify SMS connection, fill in the Number and Message fields, and click Verify connection to send a sample message to a designated device.
 * **Q: What does the API rate limit setting do for RCS?** — It caps the maximum number of API calls per second; use your provider's recommended value to avoid throttling, or leave it at 0 for unlimited requests.
 
+**Personas:**
+
+* **admin:** Can configure Sinch API credentials for SMS, including Service ID, API Token, Inbound Number, and Override URL fields. Can select Use custom dataset for inbound to route inbound SMS to a dataset, or select Verify SMS connection to test credentials. The page states that the custom dataset schema must be XDM ExperienceEvent and enabled for Profile. Where: "Configure API credentials for SMS".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Browse to Administration, Channels, SMS Settings in the left rail, select API Credentials, then select Create new API credentials.
+* **Success check:** You can verify success by using Verify SMS connection to send a sample message to a designated device.
+* **Next:** After creating and configuring your API credential: Configure your SMS Webhook (mobile/mobile-webhook.md); After creating and configuring your API credential: Configure the SMS configuration (mobile/mobile-configuration-surface.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 39fc9e29 -->

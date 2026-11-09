@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Explore loyalty performance
-description: Learn how to use Loyalty performance dashboards to track challenge performance, opportunities, trends, and recommendations in Adobe Journey Optimizer.
+description: Learn how to use Loyalty performance dashboards to track challenge performance, opportunities, and trends in Adobe Journey Optimizer.
 feature: Journeys
 topic: Content Management
 role: User
@@ -30,7 +30,7 @@ level_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use Loyalty Challenges Reports, Opportunities, and Trends to monitor member activity, challenge performance, reward outcomes, revenue, and program recommendations.
+**On this page:** Learn how to use Loyalty Challenges Reports, Opportunities, and Trends to monitor member activity, challenge performance, reward outcomes, and revenue.
 
 >[!ENDSHADEBOX]
 
@@ -43,7 +43,7 @@ To open the reporting dashboards, go to **[!UICONTROL Loyalty Challenges]** in J
 The reporting interface has three tabs:
 
 * **[Reports](#reports-view)**: Numbers and charts for your challenges.
-* **[Opportunities](#opportunities-view)**: Surfaces grounded, specific challenge recommendations based on loyalty program trends and performance data. View a draft challenge recommendation to solve the issue raised by the opportunity, and create the challenge automatically using Coworker.
+* **[Opportunities](#opportunities-view)**: Surfaces grounded, specific challenge opportunities based on loyalty program trends and performance data. View a draft challenge to solve the issue raised by the opportunity, and create the challenge automatically using Coworker.
 * **[Trends](#trends-view)**: Insight cards with an **[!UICONTROL Ask AI]** button that opens Coworker with a request for a concise summary.
 
 ## Reports view {#reports-view}
@@ -76,7 +76,7 @@ Below the key metrics, the **Challenges** section gives you two views of challen
 
 ## Opportunities tab {#opportunities-view}
 
-The **[!UICONTROL Opportunities]** tab surfaces grounded, specific challenge recommendations based on loyalty program trends and performance data. Recommendations can focus on increasing member spend, winning back inactive members, improving underperforming challenges, focusing on products or categories, or addressing points expiry.
+The **[!UICONTROL Opportunities]** tab surfaces grounded, specific challenge opportunities based on loyalty program trends and performance data. Opportunities can focus on increasing member spend, winning back inactive members, improving underperforming challenges, focusing on products or categories, or addressing points expiry.
 
 Opportunities are surfaced only when the analysis identifies a statistically significant trend and a solution that can address it.
 
@@ -95,7 +95,7 @@ Opportunity cards include a category tag that identifies which part of your prog
 
 From the **Opportunities** tab, you can take the following actions on each card:
 
-* **Review the opportunity details** - Select **[!UICONTROL View details]** to open a dialog that previews the AI-drafted challenge, including its summary, tasks, rewards, and the rationale for the recommendation.
+* **Review the opportunity details** - Select **[!UICONTROL View details]** to open a dialog that previews the AI-drafted challenge, including its summary, tasks, rewards, and the rationale for the opportunity.
 
   ![](assets/reporting-opportunity-details.png)
 
@@ -107,7 +107,7 @@ From the **Opportunities** tab, you can take the following actions on each card:
 
 ## Trends tab {#trends-view}
 
-The **[!UICONTROL Trends]** tab displays loyalty insights and performance patterns that ground the recommendations in the **[!UICONTROL Opportunities]** tab.
+The **[!UICONTROL Trends]** tab displays loyalty insights and performance patterns that ground the opportunities in the **[!UICONTROL Opportunities]** tab.
 
 To explore a trend with AI, select **[!UICONTROL Ask AI]** on a trend card. This opens Coworker in the right rail with a prefilled request to provide a concise summary of the selected insight. You can then ask follow-up questions or explore its implications.
 

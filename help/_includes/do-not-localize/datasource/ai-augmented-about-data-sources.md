@@ -47,6 +47,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which data access strategy should I choose?** — Option 1 accesses external data via custom actions without persisting in the Data Lake, Option 2 ingests into a dataset not enabled for Profile, and Option 3 uses a profile-enabled dataset; choose based on persistence, profile enrichment, and reusability needs.
 * **Q: Are schema relationships supported for data sources?** — No, schema relationships are not supported for data sources.
 
+**Personas:**
+
+* **developer:** Can access external data via custom actions when the external system is accessible through an API endpoint that returns the needed attributes. Can ingest data into a dataset when records contain an identity field usable to access profiles already stored in Experience Platform. Where: "Choose your data access strategy".
+* **admin:** Can skip data source configuration when journeys only use local data from an event payload. The page states that schema relationships are not supported for data sources. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** Consider which data access strategy best fits your use case before configuring a data source.
+* **Success check:** The data source retrieves additional information used for conditions, personalization, custom wait, or time zone definition in the journey.
+* **Previous:** New to data management in Journey Optimizer: Get started with data management in Journey Optimizer (data/gs-data.md)
+* **Next:** Ready to configure a data source: Configure a data source (datasource/configure-data-sources.md); For a complete overview and configuration checklist for journeys: Configure journeys – Data Sources, Events, and Actions (configuration/about-data-sources-events-actions.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 93dfd2dc -->

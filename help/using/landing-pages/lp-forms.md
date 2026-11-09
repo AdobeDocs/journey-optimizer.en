@@ -104,6 +104,12 @@ To create a form preset, follow the steps below.
     >
     >Currently only **Profile-enabled** and **Non-Profile-enabled** [!DNL Adobe Experience Platform] datasets are available for selection. One dataset can be selected at a time. System datasets cannot be used for saving form data. [Learn more on datasets](../data/get-started-datasets.md)
 
+    To use forms in [public landing pages](lp-anonymous.md), Adobe recommends selecting a **Non-Profile-enabled** dataset.
+
+    >[!CAUTION]
+    >
+    >Avoid profile-enabled datasets with public landing pages. They can create a large number of unnecessary lead profiles and corrupt existing ones.
+
 1. Click **[!UICONTROL Publish]**. Your preset is now ready to be used in a form.
 
 ## Access and manage forms {#access-forms}
@@ -137,6 +143,10 @@ To create a form, follow the steps below.
     ![](assets/lp_create-form.png)
 
 1. Select a **[!UICONTROL Preset]** that contains the connection to be used and a predefined dataset for your form. [Learn how to create a form preset](#create-form-preset)
+
+    >[!NOTE]
+    >
+    >If you plan to use the form in a [public landing page](lp-anonymous.md), it is strongly recommended to select a preset linked to a **Non-Profile-enabled** dataset.
 
 1. Click **[!UICONTROL Create]**. The form designer opens, which enables you to add structures and content [components](../email/content-components.md#add-content-components) to build your content. You can use [Text](../email/content-components.md#text) and **[!UICONTROL Field]** components.
 
@@ -177,6 +187,10 @@ For example, you can set the Email and Person ID. When users fill in these field
 ![](assets/lp_create-form-field-attributes.png){width=55%}
 
 To map the collected data with a Profile, select a profile identity field. The identity fields are marked as **[!UICONTROL Required]** in the attribute list - you can filter on them.
+
+>[!NOTE]
+>
+>This does not apply to forms used in [public landing pages](lp-anonymous.md) with a non-profile enabled dataset (recommended): submissions are not mapped to a profile.
     
 ![](assets/lp_create-form-required-attributes.png){width=65%}
 
@@ -187,6 +201,12 @@ With this option, you can just define a free field without mapping it to a field
 ![](assets/lp_create-form-custom-field.png){width=85%}
 
 >[!ENDTABS]
+
+>[!IMPORTANT]
+>
+>Whether the form is used to capture data from an existing profile or in a public landing page, it must include all required root-level fields of the dataset schema, so that the submitted data can be successfully ingested in Adobe Experience Platform. Do not override the mandatory fields in the form configuration: this leads to ingestion failure.
+
+<!-- TBC (engineering): confirm that no identity field is required for forms linked to a non-profile enabled dataset, and whether the PII/restricted field guardrails from the PRD apply. -->
 
 ### Configure and design a field {#configure-fields}
 
@@ -271,6 +291,10 @@ Once a form is published, you can still edit it. Follow the steps below.
 ## Leverage the form in a landing page {#leverage-form-in-lp}
 
 You can now embed this form into a landing page in order to capture data corresponding to the attributes you defined in the form, and save it into the selected dataset. Follow the steps below.
+
+>[!NOTE]
+>
+>To use a form in a [public landing page](lp-anonymous.md), it is strongly recommended to create the form from a preset linked to a **non-profile enabled** dataset.
 
 1. Create a landing page. [Learn how](create-lp.md#create-landing-page)
 

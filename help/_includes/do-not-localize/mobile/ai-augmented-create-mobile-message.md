@@ -49,6 +49,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Are the legacy native SMS journey activities still usable?** — They are deprecated as of the March 2026 release, but existing journeys using them continue to work without changes and no migration is required.
 * **Q: How do I track clicks on links in a Mobile message campaign?** — In the Actions tracking section, specify that you want to track clicks on links in your Mobile message.
 
+**Personas:**
+
+* **marketer:** Can add a Mobile message action to a journey by dragging an Action activity and selecting Mobile message as the action type. Can also add a Mobile message to a campaign from the Action tab and select or create a Mobile message configuration. The page states that all SMS/RCS/MMS marketing messages must contain a way for recipients to easily unsubscribe. Where: "Add a Mobile message".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Drag and drop an Action activity from the Actions section of the palette into your journey.
+* **Success check:** You can check the rendering, personalization attributes, and all other settings before sending.
+* **Previous:** To create a journey before adding a Mobile message action: Create your first journey (building-journeys/journey-gs.md); To configure the Mobile message channel before selecting a configuration: Configure the SMS channel (mobile/mobile-configuration.md)
+* **Next:** To design the content of the Mobile message after creating the action: Create an SMS/RCS/MMS message (mobile/design-mobile.md); To preview, test, and send the Mobile message after editing content: Check and test your Mobile messages (mobile/send-mobile-message.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 79834fa8 -->

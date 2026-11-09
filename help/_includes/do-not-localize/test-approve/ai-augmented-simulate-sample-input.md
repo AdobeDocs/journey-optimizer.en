@@ -57,6 +57,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How many recipients can receive a proof?** — Up to 10 proof recipients.
 * **Q: What data types can I enter for variants?** — Number (integer and decimal), string, boolean, and date; any other data type shows an error.
 
+**Personas:**
+
+* **marketer:** Can select Simulate content to open the content variations experience and create variants manually with Create sample or by uploading a file with Upload data. Can also auto-generate variants with Generate, select variants from simulated users, and send proofs to up to 10 recipients with Send Proof. The page states that manual or file-based variants are limited to 30, while AI auto-generation creates up to a maximum of 40 variants. Where: "Create content variants".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Select Simulate content to create variations for your content.
+* **Success check:** The preview pane updates to show how your content renders with the entered values.
+* **Previous:** To create simulated users before selecting them as variants in the content variations experience: Simulate your journey (building-journeys/simulate-journey.md)
+* **Next:** Explore the redesigned simulation experience with a side-by-side variant grid: Simulate content variations (test-approve/simulate-content-variations.md); Check mirror page activation after sending the final message, since it is not active in proofs: Track your messages (email/message-tracking.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 49334644 -->

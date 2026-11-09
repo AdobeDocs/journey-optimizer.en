@@ -51,6 +51,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is the difference between the suppression list and the allowed list?** — The suppression list excludes addresses from deliveries to protect sending reputation, while the allowed list restricts sending to only the specified addresses or domains from a sandbox.
 * **Q: What additional capabilities can I enable as the organization grows?** — Consent policies, data governance policies, IP warmup plans, and quiet hours.
 
+**Personas:**
+
+* **admin:** Can create sandboxes, set permissions for roles, and apply object-level access control to control which users access journeys, campaigns, and channel configurations. The page states that you are provisioned a production sandbox and allocated a number of IPs depending on your contract when you first access Journey Optimizer. Where: "Set up access and permissions".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Create sandboxes to partition your instances into separate, isolated virtual environments.
+* **Success check:** You can confirm that all team members can access their required features.
+* **Next:** Data engineers depend on the Administrator completing environment setup before they can begin: Journey Optimizer Get Started for Data Engineer (start/path/data-engineer.md); Developers depend on the Administrator completing environment setup before they can begin: Get Started for Developers (start/path/developer.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d3c8c8d7 -->

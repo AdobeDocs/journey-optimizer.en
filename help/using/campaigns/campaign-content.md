@@ -91,3 +91,5 @@ To browse back to the campaign creation screen, click the left arrow.
 ## Next steps {#next}
 
 Once the content of your Action campaign is ready, you can define the campaign audience. [Learn more](campaign-audience.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-campaign-content.md}}

@@ -46,6 +46,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens if the campaign is subject to an approval policy?** — Request approval before sending the message.
 * **Q: What is required to send the LINE message?** — When the message is ready, complete the journey configuration then activate the journey, or complete the campaign configuration then publish the campaign.
 
+**Personas:**
+
+* **marketer:** Can select Simulate content to preview the LINE message with sample input data, AI auto-generation, or test profiles under Simulate content (AEP profiles). Can review warnings and errors shown in the message editor, request approval when the campaign requires it, and complete the journey or campaign configuration to activate the journey or publish the campaign. The page states that errors must be resolved before testing, activating the journey, or publishing the campaign. Where: "Preview your LINE message".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select Simulate content to preview your LINE message before sending it.
+* **Success check:** Review each variation and verify that the message content and personalized values are displayed as expected.
+* **Previous:** Configure the LINE channel before sending a message: Configure the LINE channel (line/line-configuration.md); Create a LINE message and define its content before previewing it: Create a LINE message (line/create-line.md)
+* **Next:** Request approval before sending when the campaign requires it: Get started with journeys & campaigns approval (test-approve/gs-approval.md); Get detailed information about previewing and testing content: Preview and test your content (content-management/preview-test.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: f95fa7c4 -->

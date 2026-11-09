@@ -42,14 +42,14 @@ For complete understanding, this information should be combined with the documen
 * Profile reentrance into unitary journeys is temporally blocked by default for 5 minutes.
 * Custom actions capping: 300,000 calls over one minute per host and per sandbox for endpoints with response times under 0.75 seconds (default cap, sliding window — raisable via the Capping or Throttling APIs); a separate 150,000 calls per 30 seconds applies to endpoints over 0.75 seconds; any targeted endpoint must support at least 200 TPS and throttling cannot go below 200 TPS.
 * A sandbox can include a maximum of 300 Audience Qualification activities across all live, closed, paused, test mode, and dry run journeys (hard limit; publishing is blocked when reached). This limit also applies to Audience Qualification activities used as exit criteria. Audience Qualification activities used as the first activity in closed journeys are excluded from this limit.
-* You can publish up to 10 audience compositions in a given sandbox.
+* You can publish up to 50 audience compositions in a given sandbox; compositions created with Federated audience composition are not counted.
 * Read Audience: each organization can run up to five Read Audience instances concurrently across all sandboxes and journeys; sandbox throughput is a maximum of 20,000 profiles per second shared across all Read Audience activities (individual activities configurable from 500 to 20,000 profiles per second); jobs not processed within 12 hours are cleaned up and will not execute; for supplemental IDs the reading rate is limited to a maximum of 500 profiles per second.
 * In-app message content size is limited to 2 MB (hard limit).
 * Email message content for journey publication must not exceed 2 MB after backend processing (hard limit; the operation fails); keep authored content well below 2 MB, ideally under 1 MB, to allow a 300 to 400 KB buffer (recommended).
 * Inbound: peak volume of 5,000 inbound requests per second across all inbound channels, and a maximum of 500 active inbound actions at any moment in time (hard limit).
 * Transactional messages: peak volume of 500 transactional messages per second in campaigns.
-* Content authoring recommended size limits: Template 1200 KB, Fragment 700 KB, Message 1200 KB, Landing page 1000 KB (recommended); a warning is surfaced when a variant exceeds its threshold but it does not block saving or publishing.
-* Fragments cannot exceed 700 KB (hard limit); up to 60 unique fragments per content variant (warning at 45, publishing blocked at 60) and up to 120 across all variants of a single message (warning at 90, publishing blocked at 120); a fragment must be in Live status to be used.
+* Content authoring recommended size limits: Template 1200 KB, Fragment 700 KB, Message 1200 KB, Landing page 1000 KB (recommended); a warning is surfaced when a variant exceeds its threshold but it does not block saving or publishing; a landing page HTML template larger than 1 MB is rejected during validation.
+* Fragments cannot exceed 700 KB (hard limit); up to 60 unique fragments per content variant (warning at 45, publishing blocked at 60) and up to 120 across all variants of a single message (warning at 90, publishing blocked at 120); a fragment must be in Live status to be used; a fragment cannot reference itself.
 * For pseudonymous inbound profiles, Adobe recommends setting a Time-To-Live of 14 days to match the current Edge profile TTL (recommended).
 
 **Terminology:**
@@ -69,6 +69,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What are the size limits for email content when publishing journeys?** — The processed message content must not exceed 2 MB after backend processing or the operation fails; keep authored content ideally under 1 MB to leave a 300 to 400 KB buffer.
 * **Q: How many Read Audience instances can run concurrently?** — Each organization can run up to five Read Audience instances concurrently across all sandboxes and journeys, with a sandbox throughput maximum of 20,000 profiles per second shared across all Read Audience activities.
 
+**Personas:**
+
+* **marketer:** Can create journeys with up to 50 activities in the journey canvas. Can publish up to 200 live, closed, paused, and dry run journeys in production sandboxes, or 100 in development sandboxes. The page states that the 50-activity limit cannot be increased. Where: "General journey guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Review the system, journey, audience, channel, and content limits of Adobe Journey Optimizer.
+* **Success check:** The number of activities in a journey is displayed on the upper left section of the journey canvas.
+* **Next:** Splitting a journey that is near the 50-activity limit: Jumping from one journey to another (building-journeys/jump.md); Configuring business events that trigger journeys: Configure a business event (event/about-creating-business.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 9751576c -->
+<!-- ai-section-version: 1 | source-hash: b1879f86 -->

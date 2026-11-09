@@ -50,7 +50,7 @@ topic_v2:
 
 Possible reasons for a delivery failure are multiple. The table below details all the errors that could happen upon sending email deliveries with [!DNL Journey Optimizer], together with their description and error type.
 
-These errors can be found in the [AJO Message Feedback Event Dataset](../data/datasets-query-examples.md#message-feedback-event-dataset) which contains the message delivery logs, including information on all message delivery from [!DNL Journey Optimizer], and feedback records from the email ISPs on bounces.
+These errors can be found in the [AJO Message Feedback Event Dataset](../data/datasets-query-examples.md#message-feedback-event-dataset) which contains the message delivery logs, including information on all message delivery from [!DNL Journey Optimizer], and feedback records from the email ISPs on bounces. For the fields that describe a failure (category, code, and reason), see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 | Error label | Error type | Technical value | Description |
 | --- | --- | --- | --- |

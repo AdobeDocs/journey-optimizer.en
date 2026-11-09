@@ -73,7 +73,7 @@ In this section, you can set your different locales for managing your multilingu
 
 1. Type-in the name of your **[!UICONTROL Language settings]** and choose **[!UICONTROL Manual Translation]**.
    
-1. Select the **[!UICONTROL Locales]** associated to this settings. You can add a maximum of 50 locales.
+1. Select the **[!UICONTROL Locales]** associated to this settings. You can add a maximum of 50 locales. A language setting needs at least two locales.
 
     If a **[!UICONTROL Locale]** is missing, you can manually create it beforehand from the **[!UICONTROL Translation]** menu or by API. Refer to [Create a new Locale](multilingual-locale.md).
 
@@ -243,6 +243,8 @@ Your campaign or journey is now ready to activate. After messages are sent, use 
 >[!IMPORTANT]
 >
 > If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your multilingual campaign or journey. [Learn more](../test-approve/gs-approval.md)
+
+If multilingual content returns an error code, see [Multilingual content errors](multilingual-errors.md).
 
 <!--
 # Create a multilingual journey {#create-multilingual-journey}

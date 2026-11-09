@@ -9,3 +9,9 @@ usage-agents.log
 .cursor-agents
 .cursor-agents
 usage-agents.log
+.cursor-agents
+.cursor-agents
+
+# Claude and Cursor tooling lives in the internal CursorAgents repo (this repo is mirrored publicly)
+.claude/
+.cursor/

@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to use Loyalty Challenges reporting to monitor challenge performance, review grounded challenge recommendations and trends, and create or edit a challenge from an opportunity with Coworker.
+* **TL;DR:** This page explains how to use Loyalty Challenges reporting to monitor challenge performance, review grounded challenge opportunities and trends, and create or edit a challenge from an opportunity with Coworker.
 
 **Intents**
 
@@ -23,14 +23,14 @@ For complete understanding, this information should be combined with the documen
 **Glossary**
 
 * **Reports** *(product-specific)*: The reporting view with numbers, charts, key metrics, challenge engagement, and challenge reports.
-* **Opportunities** *(product-specific)*: A tab with grounded, specific challenge recommendations based on loyalty program trends and performance data.
+* **Opportunities** *(product-specific)*: A tab with grounded, specific challenge opportunities based on loyalty program trends and performance data.
 * **Trends** *(product-specific)*: A tab that displays loyalty insights and performance patterns.
-* **Challenge recommendations** *(product-specific)*: Grounded, specific challenge ideas based on loyalty program trends and performance data.
+* **Loyalty Opportunities** *(product-specific)*: Grounded, specific challenge ideas based on loyalty program trends and performance data.
 
 **Guardrails**
 
 * Reporting data comes from Adobe Customer Journey Analytics.
-* The **[!UICONTROL Trends]** tab displays loyalty insights and performance patterns that ground the recommendations in the **[!UICONTROL Opportunities]** tab.
+* The **[!UICONTROL Trends]** tab displays loyalty insights and performance patterns that ground the opportunities in the **[!UICONTROL Opportunities]** tab.
 * Opportunities are surfaced only when the analysis identifies a statistically significant trend and a solution that can address it.
 * After a challenge is created with Coworker, verify the challenge dates, tasks, and other fields in Loyalty Challenges before publishing.
 
@@ -43,10 +43,21 @@ For complete understanding, this information should be combined with the documen
 
 * **Where do I open Loyalty Challenges reporting?** Go to **[!UICONTROL Loyalty Challenges]** in Journey Optimizer and select **[!UICONTROL Performance]** in the left navigation.
 * **What does the Reports tab show?** It shows numbers and charts, including key metrics, challenge engagement, and challenge reports.
-* **What does the Opportunities tab show?** It shows grounded, specific challenge recommendations based on loyalty program trends and performance data.
+* **What does the Opportunities tab show?** It shows grounded, specific challenge opportunities based on loyalty program trends and performance data.
 * **When are opportunities surfaced?** Opportunities are surfaced only when the analysis identifies a statistically significant trend and a solution that can address it.
 * **What does the Trends tab show?** It displays loyalty insights and performance patterns. Select **[!UICONTROL Ask AI]** on a trend card to open Coworker in the right rail with a prefilled request to provide a concise summary of the selected insight.
 * **What happens when I select [!UICONTROL Create with AI]?** Coworker opens in the right rail, where you can use the Loyalty Challenge Management skill to create or edit a challenge based on the selected opportunity, provide missing details, and continue without leaving the reporting page. After creation, select the **Open in Loyalty Challenges** link in the chat to open the draft challenge and verify its dates, tasks, and other fields before publishing.
+
+**Personas:**
+
+* **marketer:** Can open Loyalty Challenges reporting, select Performance in the left navigation, and review the Opportunities tab for grounded challenge opportunities. Can select View details to preview an AI-drafted challenge, then select Create with AI to open Coworker and create or edit the challenge. The page states that after creation, select Open in Loyalty Challenges to verify the challenge dates, tasks, and other fields before publishing. Where: "Opportunities tab".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Go to Loyalty Challenges in Journey Optimizer and select Performance in the left navigation.
+* **Success check:** The Key metrics area shows four numbers at a glance, each with a percentage change compared to the previous period.
+* **Next:** Learn about the Coworker's Loyalty Challenge Management skill used to create or edit a challenge from an opportunity: Work with AI (start/ai-features.md)
 
 +++
 

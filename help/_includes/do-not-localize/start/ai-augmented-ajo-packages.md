@@ -58,6 +58,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Is Decisioning included by default?** — No; it is a distinct advanced-capability add-on that is not included in any base offer by default, so contact your Adobe representative to add it.
 * **Q: Are Select, Prime, and Ultimate still the current packaging model?** — No; the current model is modular, built around base offers and add-ons, while Select, Prime, and Ultimate are legacy packaging.
 
+**Personas:**
+
+* **admin:** Can identify which base offer applies: Campaigns, Journeys, or Campaigns & Journeys. Can confirm the Total Data Volume entitlement, 15 KB per addressable profile for Campaigns, or 75 KB for Journeys and Campaigns & Journeys. The page states that storage entitlement differs by package when selecting or confirming your package. Where: "Step 1 — Identify your base offer".
+* **marketer:** Can select a channel add-on, Outbound Delivery, Mobile, Web, or All Channels, to engage email, push, direct mail, in-app messaging, content cards, web, or code-based surfaces. Can build Orchestrated campaigns using email, mobile messages, push notifications, and direct mail only. The page states that web, in-app, code-based, and content card channels are not supported in orchestrated campaign workflows. Where: "Frequently asked questions".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Start with the base offer that matches your primary use case, then add the channels and advanced capabilities you need.
+* **Success check:** You can confirm which base offer you have and what it does.
+* **Next:** Set up your environment and learn the core concepts: Journey Optimizer (start/get-started.md); Follow the structured onboarding path for your project: Journey Optimizer onboarding hub (start/onboarding-hub.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: e4639b30 -->

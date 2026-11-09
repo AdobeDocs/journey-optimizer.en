@@ -29,7 +29,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 * Configuration validation must pass before activating test mode. Publication requires successful tests and current, passed validation; changes after validation require **[!UICONTROL Validate]** again and resolution of errors before continuing.
-* Only one Read Audience activity is allowed per journey, and it must be the first activity.
+* Only one Read Audience activity is allowed per journey, and it must be the first activity, or come right after a business event (where it is added automatically).
 * Only one audience can be selected per Read Audience activity.
 * Up to five concurrent Read Audience runs per organization.
 * Maximum reading rate is 20,000 profiles per second per sandbox (hard limit; sum of all concurrent Read Audience activities).
@@ -56,4 +56,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 8d2a404e -->
+<!-- ai-section-version: 1 | source-hash: a7a3af90 -->

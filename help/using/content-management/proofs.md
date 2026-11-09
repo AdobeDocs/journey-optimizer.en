@@ -81,3 +81,5 @@ To send email proofs using test profiles data, you must first select [test profi
     ![View proofs button to check delivery status](../email/assets/send-proof-view.png)
 
 It is recommended to send proofs after each modification to the message content.
+
+If sending a proof returns an error code, see [Proof and simulation errors](proof-simulation-errors.md).

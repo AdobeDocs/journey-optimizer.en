@@ -48,6 +48,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How can the LINE message be previewed before sending?** — Use Simulate content to preview the LINE message content and its personalized content.
 * **Q: Where can the impact of a sent LINE message be measured?** — Within the Campaign or Journey reports.
 
+**Personas:**
+
+* **marketer:** Can add a LINE activity to a journey from the Actions section of the palette, or add a LINE action to a campaign. Can choose or create a LINE configuration, then define content as text, stickers, images, videos, locations, templates, or Flex Messages by editing the JSON content. Can add personalization and dynamic content in the personalization editor, and preview the message with Simulate content. The page states that the configuration field is pre-filled, by default, with the last configuration used for that channel by the user. Where: "Define your LINE content".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Open your journey, then drag and drop a LINE activity from the Actions section of the palette.
+* **Success check:** The message appears in the preview after you select Save, and Simulate content shows the personalized content.
+* **Previous:** Creating your journey before adding a LINE action: Create your first journey (building-journeys/journey-gs.md); Selecting the audience to target before configuring the LINE action in a campaign: About Adobe Experience Platform audiences (audience/about-audiences.md)
+* **Next:** Previewing, validating and sending your LINE message: Preview, validate, and send your LINE message (line/send-line.md); Measuring the impact of your sent LINE message in reports: Campaign report (reports/campaign-global-report-cja.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 0c2aaaed -->

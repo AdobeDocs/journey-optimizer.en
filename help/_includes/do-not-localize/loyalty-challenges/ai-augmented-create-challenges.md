@@ -49,6 +49,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens when I change a challenge?** - Changes must be made in the Loyalty Challenge editor and require a new journey. Work done directly on the existing challenge journey is lost if the challenge is changed.
 * **Q: Can a challenge without an end date generate a journey?** - No journey is generated for challenges configured with **[!UICONTROL No end date]**. Members can still opt in and complete tasks.
 
+**Personas:**
+
+* **marketer:** Can create a loyalty challenge by selecting a challenge type, then configure settings, structure with tasks and rewards, content, and messaging. Can publish the challenge and generate the associated journey to deliver it to customers. The page states that challenge start and end dates are optional while working on a draft, but required to publish the challenge. Where: "Create challenges".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Navigate to Loyalty Challenges in Journey Optimizer.
+* **Success check:** The challenge now appears with a Published status.
+* **Previous:** Creating reward providers before authoring challenges: Configure loyalty challenges (loyalty-challenges/loyalty-admin.md)
+* **Next:** Monitoring challenge results and task-level metrics once the challenge is live: Explore loyalty performance (loyalty-challenges/loyalty-performance.md); Monitoring message delivery after publishing the journey: Journey report (reports/journey-global-report-cja.md)
+
 +++
 
 <!-- ai-section-version: 3 | source-hash: dc33e876 -->

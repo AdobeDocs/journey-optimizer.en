@@ -137,6 +137,8 @@ Journey step event data is automatically stored in Adobe Experience Platform and
 
 Learn more about [accessing datasets](../data/datasets-query-examples.md).
 
+When you ingest query results into a custom schema, select only the fields that you need instead of using `SELECT *`. Learn more about the [INSERT INTO syntax](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/syntax){target="_blank"}.
+
 ### Key data points available {#key-data-points}
 
 Journey step events capture comprehensive information including:
@@ -264,7 +266,7 @@ Learn how to [configure Customer Journey Analytics](report-gs-cja.md) for Journe
 ### Documentation links {#documentation-links}
 
 - **[Journey step sharing overview](sharing-overview.md)**: Understanding how journey data flows to Adobe Experience Platform
-- **[Built-in schemas dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}**: Complete XDM schema reference
+- **[Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}**: Complete XDM schema reference
 - **[Journey Optimizer reporting](report-gs-cja.md)**: Overview of reporting capabilities in Journey Optimizer
 
 ### Integration guides {#integration-guides}

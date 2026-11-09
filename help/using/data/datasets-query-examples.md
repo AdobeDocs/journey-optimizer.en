@@ -65,7 +65,7 @@ In this page, you will find the list of Adobe Journey Optimizer datasets and rel
 * [Secondary recipient feedback event dataset (BCC)](#bcc-feedback-event-dataset)
 * [Entity Dataset](#entity-dataset)
 
-To view the complete list of fields and attributes for each schema, consult the [Journey Optimizer schema dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
+To view the complete list of fields and attributes for each schema, consult the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 See also several commonly used [examples to query Journey Step Events](../reports/query-examples.md). 
 

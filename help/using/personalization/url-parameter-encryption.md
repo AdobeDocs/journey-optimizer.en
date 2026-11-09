@@ -78,6 +78,8 @@ Before being able to use the URL parameter encryption helper, you need to create
 
     ![Create key button in Key registry section](assets/encryption-create-key.png){width="80%"}
 
+    A key must be 32 bytes (256 bits) and base64-encoded. A key name can contain only letters, numbers, and hyphens.
+
 1. Assign them a clear label or identifier your teams can reference in the personalization editor.
 
     ![Key details in Key registry section](assets/encryption-key-details.png){width="80%"}

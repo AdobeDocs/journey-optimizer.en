@@ -48,6 +48,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: How can I capture customer preferences?** — Create a web page using the Adobe Experience Platform Web SDK, or use a Journey Optimizer landing page that includes forms to capture preferences through profile data.
 * **Q: Why must the landing page domain belong to the upper brand?** — Because the preferences collected are stored in the profile data, which is at the upper-brand level.
 
+**Personas:**
+
+* **developer:** Can define preference attributes with the Boolean operator at the profile level, such as Newsletter_Email, Offers_Push, and New Product Launches. Can capture these attributes in the schema of a Profile-enabled dataset and map them to the unified customer profile. The page states that preference attributes must be present in the profile data to use consent policies. Where: "Record and honor preferences".
+* **admin:** Can create a custom policy in Adobe Experience Platform from the Privacy, Policies menu, selecting the Consent policy type. Can configure a condition, such as Marketing action equals Email, then Newsletter_Email does not exist false. The page states that consent policies are only available for organizations that purchased the Healthcare Shield or Privacy and Security Shield add-on. Where: "Record and honor preferences".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Define preference attributes with the Boolean operator at the profile level.
+* **Success check:** You can see the corresponding profile attributes updated, true for opted-in and false for opted-out.
+* **Previous:** Learn about Profile-enabled datasets before defining preference attributes: Get Started with datasets (data/get-started-datasets.md); Understand the unified customer profile before mapping preference attributes: Get Started with Profiles in Journey Optimizer (audience/get-started-profiles.md)
+* **Next:** Create a landing page to capture customer preferences: Create a landing page (landing-pages/create-lp.md); Add forms to the landing page to capture preferences through profile data: Create and use forms for your landing pages (landing-pages/lp-forms.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 5a8562ef -->

@@ -21,11 +21,11 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Explore Adobe CX Enterprise Coworker capabilities in Adobe Journey Optimizer for creating journeys, generating channel content, analyzing performance, and simulating journey behavior.
+**On this page:** Explore Coworker capabilities in Adobe Journey Optimizer for creating journeys, generating channel content, analyzing performance and journey inventory hygiene, tracing profiles through a journey, and simulating journey behavior.
 
 >[!ENDSHADEBOX]
 
-Coworker brings natural-language tools into Adobe Journey Optimizer to help you create and configure journeys, generate channel-specific content, analyze performance, and simulate journey behavior. Use Journey Create to configure flows, Channel Content Create to generate and refine messages, Journey Analyze to investigate performance and operational issues, and Journey Simulation to test journey logic.
+Coworker brings natural-language tools into Adobe Journey Optimizer to help you create and configure journeys, generate channel-specific content, analyze performance, trace profiles through a journey, and simulate journey behavior.
 
 Learn more:
 
@@ -34,6 +34,8 @@ Learn more:
 * [Coworker Chat UI guide](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/chat/ui-guide){target="_blank"} — how to access and navigate Coworker Chat.
 
 ## Journey tools {#journey-tools}
+
+➡️ [Discover these tools in video](#journey-tools-videos)
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse; border: 1px solid #d9d9d9;">
 <colgroup>
@@ -44,9 +46,17 @@ Learn more:
 <tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Compare journey versions</strong><br>Compare any two journey versions in Coworker Chat. Review a structured diff of added, removed, modified, and moved nodes with field-level details. Identify changed connections, journey-level property changes, and roll-up counts without opening Journey Optimizer. For more details on how to manage journey versions, see <a href="publish-journey.md#journey-versions">Journey versions</a>.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"What changed between version 1.0 and 2.0 of the 'Welcome Series' journey?"<br><br>"Has the wait duration of my wait activity changed between the last two journey versions?"</td></tr>
 </table>
 
+### How-to videos {#journey-tools-videos}
+
+Learn how to use Coworker to compare two versions of a journey and review the changes to activities, branches, and journey properties in this video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3507163?quality=12)
+
 ## Journey Create {#journey-create}
 
 Journey Create enables Journey Optimizer users to build and configure marketing journeys using a natural language interface. With Journey Create, practitioners can quickly create journeys by describing their requirements in conversational prompts. The skill walks users through the different options for creating a journey, allowing marketers to focus on strategy rather than technical configuration.
+
+➡️ [Discover this feature in video](#journey-create-videos)
 
 >[!AVAILABILITY]
 >
@@ -116,6 +126,20 @@ The following functionalities are currently not supported:
 * **Plan Message Content**: Have your messaging strategy defined before journey creation.
 * **Consider Customer Experience**: Design journey flows that respect customer preferences and avoid over-communication.
 
+### How-to videos {#journey-create-videos}
+
+Learn how Coworker turns a plain-language description into a fully drafted journey in this video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496867?quality=12)
+
+Learn how Coworker turns a flowchart image into a ready-to-edit journey in this video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3504865?quality=12)
+
+Learn how Coworker builds a cross-channel journey from a prompt, creates email and SMS content, simulates its branching paths, and analyzes diagnostics in this video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3504706?quality=12)
+
 ## Channel Content Create {#channel-content-create}
 
 >[!AVAILABILITY]
@@ -149,7 +173,7 @@ Channel Content Create enables Journey Optimizer users to generate, edit, and ma
 
 ## Journey Analyze {#journey-analyze}
 
-Journey Skills will enable Journey Optimizer users to analyze and optimize journeys using a natural language interface. With Journey Skills, practitioners can quickly identify and resolve schedule and/or audience conflicts, detect points of user abandonment in a journey and provide insights or recommendations. It empowers practitioners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
+Journey Skills enable Journey Optimizer users to analyze and optimize journeys using a natural language interface. With Journey Skills, practitioners can quickly identify and resolve schedule and/or audience conflicts, detect points of user abandonment in a journey, scan for broken configurations and silent failures, and provide actionable recommendations to improve journey health. It empowers practitioners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
 
 >[!AVAILABILITY]
 >
@@ -180,6 +204,7 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
 <tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Journey Custom Action Error Analysis</strong><br>Identify when custom actions are failing or error rates spike within a journey. Diagnose root causes before failures cascade into broader journey disruption. Use specific remediation steps to restore custom action reliability quickly.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Why are custom actions failing in journey [Journey Name]?"<br><br>"What is the error rate for custom action [Custom Action Name] in journey [Journey Name]?"<br><br>"Show me the root cause of custom action failures in journey [Journey Name]."<br><br>"Are there any custom action errors affecting journey [Journey Name] right now?"</td></tr>
 <tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Analyze Journey Anomalies</strong><br>Detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts compared to historical baselines, including when the question is phrased around the number of profiles entering, exiting, or completing the journey. Confirm whether a flagged change is a genuine anomaly using a deterministic statistical check, rather than relying on the raw anomaly flag alone. Run bounded, read-only diagnostics against journey-execution data to identify a likely root cause, surfacing what each check looked for and found alongside the recommendation. Investigate anomaly alerts that reference a specific journey version and timestamp.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Why did entries drop for my Welcome journey yesterday?"<br><br>"Did exits spike for the Cart Abandonment journey this week?"<br><br>"Sends look low for the Renewal Reminder journey today — what happened?"<br><br>"Why was there a sudden drop in the number of profiles entering my Member Anniversary Thank You journey in the last 30 days?"<br><br>"Fewer profiles than usual are completing my Renewal Reminder journey this month — why?"<br><br>"An anomaly alert was triggered for journey [Journey Version ID] at [timestamp] — investigate."</td></tr>
 <tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Business Performance Analysis</strong><br>Analyze journey performance and identify concrete optimization opportunities for underperforming journeys. Surface trends, bottlenecks, and likely drivers behind lower results so you can improve engagement and conversion. Get actionable recommendations to adjust journey design, targeting, or messaging strategy based on business performance insights.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Analyze the performance of journey [Journey Name] and recommend optimizations."<br><br>"Why is journey [Journey Name] underperforming compared with last month?"<br><br>"What should I change to improve the performance of journey [Journey Name]?"<br><br>"Which parts of journey [Journey Name] are likely limiting conversion or engagement?"</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Journey Hygiene Analysis</strong><br>Identify journeys with missing or generic names. Find stale draft journeys that are more than 30 days old, have never been published, and have not been modified. Identify stale live journeys that are more than 90 days old. Find oversized journeys that contain 50 or more nodes. Identify long-existing closed journeys that are more than 90 days old. Find similar action and event names. Get recommendations to clean up and stabilize your journey inventory.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Audit my journeys configuration."<br><br>"Show me stale draft journeys."<br><br>"Run a hygiene check on journey ABC."<br><br>"Can you audit my journeys for configuration problems?"<br><br>"Run a hygiene check on my custom actions and events."</td></tr>
 </table>
 
 ### Prompting best practices
@@ -196,9 +221,65 @@ To maximize the effectiveness of Journey Analyze, follow these best practices:
 * **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 * **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
 
+## Journey Execution Timeline {#journey-execution-timeline}
+
+Journey Execution Timeline enables Journey Optimizer users to get the end-to-end timeline of a Read Audience (batch or scheduled export) journey batch, using a natural language interface. The skill shows how long a batch took, when the audience export, the journey execution, and the delivery started and ended, and the profile-level P95 and P99 for entry, exit, or execution time. Before answering, the skill validates the journey against the journey model. If the journey is not a Read Audience journey, the skill stops instead of approximating a result.
+
+### Key use cases
+
+<table style="table-layout: fixed; width: 100%; border-collapse: collapse; border: 1px solid #d9d9d9;">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<tr><th style="padding: 12px; border: 1px solid #d9d9d9; background-color: #f5f5f5; text-align: left; vertical-align: top;">Use Case</th><th style="padding: 12px; border: 1px solid #d9d9d9; background-color: #f5f5f5; text-align: left; vertical-align: top;">Sample Prompts</th></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Journey batch duration</strong><br>Find out how long a Read Audience journey batch took to execute, end to end.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"How long did the Read Audience journey [Journey Name] take to execute?"</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>End-to-end timeline by batch</strong><br>See when the audience export, the journey execution, and the delivery started and ended for each batch of a Read Audience journey.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Show me the audience export, journey execution, and delivery timelines for [Journey Name] by batch."</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Profile-level P95 and P99</strong><br>Get the P95 and P99 for how long profiles took to enter the journey, exit it, or complete execution.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"What is the P95 and P99 for how long profiles took to enter and exit [Journey Name]?"</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Slowest batch and delay cause</strong><br>Identify which batch took the longest and which stage (audience export, journey execution, or delivery) caused the delay.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Which batch of [Journey Name] took longest, and which stage caused the delay?"</td></tr>
+</table>
+
+### Limitations
+
+* Journey Execution Timeline supports **Read Audience journeys** only. For any other journey type, the skill stops and does not approximate a result.
+* Audience export latency is measured from the creation of the export job to the first profile entry. It does not cover the processing stages that occur after the export job is created.
+* Recipient-side or device-side notification receipt and display timing is not reliably available from standard Journey Optimizer datasets, so the skill reports that metric as unavailable instead of estimating it.
+* The skill is read-only and cannot change journey configuration.
+
+The following analyses are handled by the [Journey Analyze](#journey-analyze) skills:
+
+* **Journey Fallout Analysis**: per-node timing, per-node P95 and P99, and drop-off.
+* **Analyze Journey Anomalies**: volume and count anomalies.
+* **Journey Custom Action Error Analysis**: custom action errors and latency.
+* **Journey Audience Overlap Analysis** and **Journey Schedule Overlap Analysis**: audience and schedule conflicts.
+
+## Trace Journey Profile {#trace-journey-profile}
+
+Trace Journey Profile is a read-only skill that returns profile-level execution data for a published journey, based on journey step events. Use it to see how profiles moved through a journey, which profiles errored and why, or the path of a single profile from node to node.
+
+<table style="table-layout: fixed; width: 100%; border-collapse: collapse; border: 1px solid #d9d9d9;">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Node and branch counts</strong><br>See, for each node, how many profiles entered and how many stopped there. See how profiles split across the branches of a node, as counts and percentages.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Trace profiles through [Journey Name]."<br><br>"How many profiles reached each step of [Journey Name] this week?"<br><br>"How many profiles entered the 'Loyalty Tier Check' node in [Journey Name] and how did they split?"</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Errored-profile lookup</strong><br>Find which profiles errored in a journey over a given period (for example, the last 7 days), at which node, and why.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Which profiles errored in [Journey Name] in the last 7 days, at which node, and why?"</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Single-profile trace</strong><br>Follow a profile's node-by-node path through a journey, with timestamps, the attribute value evaluated at each condition node, and the exit point and reason.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Show me profile [ID or email]'s path through [Journey Name], including why it went down each branch."<br><br>"Trace this profile through the Welcome journey."</td></tr>
+</table>
+
+The errored-profile lookup and the single-profile trace return profile-level data.
+
+### Limitations
+
+* Trace Journey Profile works on published journeys only. It does not support journeys that were never published (draft-only) or B2B journeys.
+* It is read-only. It does not export lists or edit journeys.
+* For fallout analysis, volume anomalies, or custom action error trends, use [Journey Analyze](#journey-analyze).
+
 ## Journey Simulation {#journey-simulation}
 
 Journey Simulation skill brings AI-driven Quick Simulation into the chat interface, letting users validate a journey's logic conversationally. Through Coworker, users can generate simulated test data, run and manage a simulation, and review the results.
+
+➡️ [Discover this feature in video](#journey-simulation-videos)
 
 ### Key use cases
 
@@ -223,5 +304,10 @@ As part of this Quick Simulation experience, users cannot:
 * Create, browse, update, or delete persistent simulated users through chat.
 * Target a specific path or custom test case.
 
+### How-to videos {#journey-simulation-videos}
+
+Learn how to simulate a journey in Coworker with automatically generated test profiles and events in this video.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3507004?quality=12)
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-journeys-coworker-skills.md}}

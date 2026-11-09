@@ -48,6 +48,7 @@ The following limitations apply to the Load file activity:
 * You can upload up to 50 MB per file.
 * Only flat-structure CSV and TXT files are supported.
 * Uploaded data is used when the campaign runs and is not stored as an Adobe Experience Platform dataset.
+* The **[!UICONTROL Load file]** activity is not meant to be used in a scheduled campaign, because uploaded files have a short data lifetime.
 
 For limits on channel and canvas activities, see [Guardrails and limitations](../guardrails.md#activities-limitations).
 
@@ -230,3 +231,5 @@ Specify the file to load at campaign execution and how each row is matched to ex
 1. Optionally, enable **[!UICONTROL Delete file after import]** to remove the uploaded file from the server after the campaign runs.
 
 After **[!UICONTROL Load file]** resolves the audience, connect the outbound transition to downstream activities. [Learn how to orchestrate campaign activities](../orchestrate-activities.md)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-load-file.md}}

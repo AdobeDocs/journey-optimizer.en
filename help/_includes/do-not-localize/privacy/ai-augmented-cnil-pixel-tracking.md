@@ -62,6 +62,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which email addresses are on the suppression list?** — Email addresses resulting in hard bounces, soft bounces, or spam complaints.
 * **Q: What happens when a recipient opts out?** — The consent attribute (`consents.marketing.email.val`) is updated to `n`, the profile is immediately excluded from future marketing email sends, and the opt-out information is stored in the AEP Consent Service Dataset.
 
+**Personas:**
+
+* **marketer:** Can disable open tracking for a specific email by unchecking the Email opens option when creating a message. Can insert a one-click opt-out link in the email content, scoped at the channel level or the identity level. The page states that the Email opens and Click on email options are enabled by default. Where: "Adobe Journey Optimizer functionality related to email tracking".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Uncheck the Email opens option when creating your message to disable open tracking for that email.
+* **Success check:** Open tracking data is not collected for that delivery, and reporting reflects clicks and other engagement signals only.
+* **Next:** Track open and click data after configuring email tracking options: Track your messages (email/message-tracking.md); Add a one-click unsubscribe URL and mailto address to the email header: Configure List unsubscribe (email/list-unsubscribe.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 153dc32e -->
+<!-- ai-section-version: 1 | source-hash: ab3e640f -->

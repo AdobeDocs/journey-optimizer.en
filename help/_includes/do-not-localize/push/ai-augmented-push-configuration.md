@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What does the Apply to all sandboxes option do?** — It makes the push credentials available across all sandboxes; sandbox-specific credentials for the same Platform and App ID pair take precedence.
 * **Q: How do I test the push setup?** — Create an XDM Experience Event schema, set up a Rule Based event, build a journey with the event and an Action activity with the Push channel selected, then use the Test toggle to trigger an event and send the notification.
 
+**Personas:**
+
+* **admin:** Can assign Property rights (Approve, Develop, Manage Environments, Manage Extensions, Publish) to a product profile in the Admin Console. Can also assign Company rights (Manage App Configurations, Manage Properties) and add users to that product profile. The page states that push configuration must be performed by an expert user. Where: "Set up permissions".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Access the Admin Console to assign Property and Company rights for push configuration.
+* **Success check:** Your event is triggered and you receive your push notification on your mobile app.
+* **Previous:** Understand the Push Notifications data flow before configuring the channel: Push Notification flow in Adobe Journey Optimizer (push/push-gs.md); Use the Mobile onboarding quick start workflow to rapidly configure the Mobile SDK instead: Mobile onboarding quick start workflow (push/mobile-onboarding-wf.md)
+* **Next:** Create push notifications using the channel configuration you just created: Configure a push notification (push/create-push.md); Edit the journey's properties when building a journey to test the push notification: Define your journey's properties (building-journeys/journey-properties.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: de791ae7 -->
+<!-- ai-section-version: 1 | source-hash: 0071f879 -->

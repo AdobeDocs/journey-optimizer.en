@@ -45,9 +45,9 @@ topic_v2:
 
 Leveraging channel rule sets allows you to set frequency capping by communication type to prevent overloading customers with similar messages. For example, you can create a rule set to limit the number of **promotional communications** sent to your customers and another rule set to limit the number of **newsletters** sent to them. Depending on the type of campaign that you are creating, you can then choose to apply either the promotional communication or the newsletters rule set.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->To ensure channel level capping works correctly, make sure you choose the highest priority namespace while authoring a campaign or journey. Learn more about namespace priority in the [Platform Identity Service guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}
+>Channel capping works for all identity namespaces selected while authoring a campaign or journey. Capping is applied independently per namespace: profile counters are tracked separately for each namespace, so capping on one namespace does not affect capping on any other namespace.
 
 ## Create a channel capping rule
 
@@ -95,9 +95,7 @@ To create a channel rule set, follow these steps :
 
    >[!IMPORTANT]
    >
-   >* To ensure accuracy, make sure you choose the highest priority namespace while authoring a campaign or journey. Learn more about namespace priority in the [Platform Identity Service guide](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/namespace-priority){target="_blank"}<br/>
-   >
-   >* The profile counter value updates once the communication is delivered. Please be cognizant of this when you are sending large volumes of communications as the throughput could result in the recipient getting the email minutes or even hours after the initiation of the communication (in the case that you are sending millions of communications simultaneously). This matters in the case that a recipient receives two communications close together. We suggest spacing communications apart by at least two hours where possible to give sufficient time for the recipient to receive the communication and the counter value to update accordingly.
+   >The profile counter value updates once the communication is delivered. Please be cognizant of this when you are sending large volumes of communications as the throughput could result in the recipient getting the email minutes or even hours after the initiation of the communication (in the case that you are sending millions of communications simultaneously). This matters in the case that a recipient receives two communications close together. We suggest spacing communications apart by at least two hours where possible to give sufficient time for the recipient to receive the communication and the counter value to update accordingly.
 
 1. The **[!UICONTROL Every]** field allows you to repeat the frequency capping rules over multiple hours, days, weeks, or months, depending on the specified duration. Example: apply the frequency capping rule for 2 weeks.
 
@@ -105,7 +103,7 @@ To create a channel rule set, follow these steps :
 
    The counter automatically resets to 0 when a new time window begins. For a 2-day frequency cap, this reset occurs every two days at midnight UTC.
 
-1. Select the channel(s) you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL Mobile message]**, **[!UICONTROL Push notification]**, **[!UICONTROL Direct mail]** or **[!UICONTROL WhatsApp]**.
+1. Select the channel(s) you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL Mobile message]**, **[!UICONTROL Push notification]**, **[!UICONTROL Direct mail]**, **[!UICONTROL WhatsApp]**, or any [custom channel](../custom-channel/get-started-custom-channel.md) you have created.
 
    ![](assets/rule-sets-channels.png)
 

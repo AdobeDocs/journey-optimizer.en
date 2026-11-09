@@ -155,7 +155,7 @@ Let's say you want to target your customers through journeys and campaigns based
 
 1. Once you created the consent policy, leverage it in [!DNL Journey Optimizer] using [channel configurations](consent.md#surface-marketing-actions) or [journey custom actions](consent.md#journey-custom-actions).
 
-1. Now you can use these channel configurations or custom actions in your journeys and campaigns to make sure your <!--targeted--> customers' preferences are honoured.
+1. Now you can use these channel configurations or custom actions in your journeys and campaigns to make sure your <!--targeted--> customers' preferences are honored.
 
 <!--
 Consent policies are comprised of two logical components:

@@ -145,6 +145,8 @@ To insert links into your email content, follow the steps below:
     >
     >When tracked links or appended URL tracking parameters are used, leaving unsupported characters unencoded may lead to incorrect downstream URL handling after redirect. Encode any unsupported characters to help preserve the full destination URL.
 
+    If a link in the HTML is malformed, tracking cannot be added to it. Correct the link in the HTML and save again.
+
 1. You can personalize your links. [Learn more](url-personalization.md)
 
 1. Save your changes.

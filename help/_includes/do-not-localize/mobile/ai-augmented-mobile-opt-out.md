@@ -55,6 +55,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why is opt-out not working before any message was sent?** — Two-way mobile messaging requires that at least one one-way mobile message was sent first to establish the phone number to profile mapping.
 * **Q: How do recipients opt out of messages sent from an Alphanumeric Sender ID?** — Because these sender IDs cannot receive inbound messages, you must provide other instructions, such as writing to Support, calling a Support phone line, or texting another phone number or code.
 
+**Personas:**
+
+* **marketer:** Can define custom opt-out keywords in the Opt-Out Keywords field of the SMS API credentials. Can include default keywords such as STOP, QUIT, CANCEL, END, and UNSUBSCRIBE to keep them functional. The page states that only Sinch and Infobip support Native keywords when used with Journey Optimizer. Where: "Native inbound keywords".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Include the default keywords explicitly along with your custom keywords in the Opt-Out Keywords field of your SMS configuration.
+* **Success check:** Profiles opt-out statuses are updated in real time in Adobe Journey Optimizer.
+* **Previous:** Learn more about privacy and opt-out management: Manage opt-out (privacy/opt-out.md)
+* **Next:** Learn where inbound responses are stored, in the AJO Email Tracking Dataset system dataset: Get Started with datasets (data/get-started-datasets.md); Send SMS via a custom channel when using a provider other than Sinch or Twilio: Use custom actions (building-journeys/using-custom-actions.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: f9d48e67 -->

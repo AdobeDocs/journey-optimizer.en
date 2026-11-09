@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Troubleshoot your custom actions
-description: Learn how to troubleshoot a custom action
+description: Learn how to send test API calls to validate and troubleshoot a custom action before you use it in a live journey
 feature: Journeys, Actions, Custom Actions, Monitoring
 topic: Administration
 role: Developer, Admin
@@ -63,7 +63,7 @@ As an administrator, use the **[!UICONTROL Send test request]** capability to va
 
 ![](assets/send-test-request.png){width="70%"}
 
-Use this capability streamlines the testing and validation process, ensuring that custom actions function correctly in live journeys.
+This capability streamlines the testing and validation process, ensuring that custom actions function correctly in live journeys.
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ When a custom action in one journey triggers an event that is intended to start 
 
 To avoid discard events when chaining journeys via custom actions, validate the event payload against the second journey's event rule and confirm the target journey is live or in test and within its active date window.
 
-## Additional resources
+## Related topics {#related}
 
 Browse the sections below to learn more about configuring and using your custom actions:
 

@@ -94,6 +94,10 @@ The suppression categories are as follows:
 
     When the error is the result of a spam complaint, it also falls into the **Hard** category. The email address of the recipient who issued the complaint is immediately sent to the suppression list.
 
+    >[!NOTE]
+    >
+    >Not all email providers share user-level spam complaint (feedback loop) data. In particular, **Gmail** does not, unlike Yahoo Mail or Microsoft Outlook. Gmail recipients who mark a message as spam are therefore **not** automatically added to the suppression list. To monitor Gmail deliverability, use open and click rate trends and [Google Postmaster Tools](https://postmaster.google.com/){target="_blank"}.
+
 * **Soft**: A soft bounce is a temporary email bounce that occurred for a valid email address. The email address is added to the suppression list after several retries. Soft errors send an address to the suppression list once the error counter reaches the limit threshold. [Learn more about retries](retries.md)
 
 * **Manual**: Manual errors have been added manually to the suppression list. [Learn more](#add-addresses-and-domains)

@@ -49,6 +49,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens as I approach 100 live journeys in a sandbox, and how do I go beyond it?** — An orange overlay and warning sign appear in the interface as a soft advisory (not a hard cap); if you need more, create a ticket for customer care.
 * **Q: How can I lower the number of activities in a journey?** — Move repeated conditions (such as consent checks and suppressions) into segment definition or audience composition, and consider moving single-action Read audience journeys to campaigns.
 
+**Personas:**
+
+* **marketer:** Can build journeys within the guardrail of 50 activities per journey canvas. Can filter the Journey inventory by Status Live and Type Read audience to find journeys to stop. The page states that nearing 100 live journeys in a sandbox triggers an orange overlay and warning sign in the interface. Where: "Scale with Journey guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Go to the Overview tab under Journeys to see how many journeys were active within the last 24 hours.
+* **Success check:** You can check the number of profiles entering and exiting the journey in the Overview tab.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 3136399d -->

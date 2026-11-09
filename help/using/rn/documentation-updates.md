@@ -31,7 +31,43 @@ level_v2:
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## November 2026 {#november-2026}
+
+* The **Use Adobe Experience Platform data** page now clarifies that you can enable a dataset for lookup either in the dataset management interface or with an API call. [Read more](../data/lookup-aep-data.md#enable)
+
+* The **Use supplemental identifiers in journeys** page now explains what happens when an external audience is created without `expressActivation: true`: Journey Optimizer deduplicates records by profile ID, so only one row per profile is admitted. [Read more](../building-journeys/supplemental-identifier.md#external-audiences)
+
+* The **Create AI models** and **Personalized optimization model** pages now describe the prerequisites for using profile and context features, how to use the AI model in a selection strategy and decision policy, and how to pass context values in the decision request. [Read more](../experience-decisioning/ranking/create-ai-models.md#use-ai-model)
+
+* The **Frequency capping** and **Conflict management & prioritization** pages now state that capping works for all identity namespaces and is applied independently per namespace. The restriction to the highest priority namespace has been removed. [Read more](../conflict-prioritization/channel-capping.md)
+
+* The **Honor email open tracking consent** page has a new **Apply the option to existing messages** section. It explains what to do for existing messages after you turn on **Honor open tracking consent**: republish transactional messages, and how the setting applies to scheduled and in-progress campaigns and to event-based and read-audience journeys. [Read more](../email/open-tracking-consent.md#existing-messages)
+
+* The **Coworker for journeys** and **Coworker for Loyalty** pages now include how-to videos that show Coworker creating a journey from a natural language prompt or an image, creating, simulating, and analyzing a cross-channel journey, comparing journey versions, simulating a journey, and creating a loyalty challenge. [Read more](../building-journeys/journeys-coworker-skills.md#journey-create-videos)
+
+* The **Incremental query** activity page has a new **Check the last execution date** section. It explains that the **Last execution date** field is displayed under **Processed data** once the activity has run, and shows the cutoff date used by the next run. This field is read-only. [Read more](../orchestrated/activities/incremental-query.md#incremental-query-last-execution)
+
 ## October 2026 {#october-2026}
+
+* The **Activate High throughput mode for API-triggered campaigns** page has a new **Configure High throughput API-triggered campaigns** section. It provides step-by-step guidance to set up High throughput yourself in the UI, with no request to Adobe Customer Care: create a dedicated IP pool and a High throughput email channel configuration for email, or a High throughput push channel configuration for push. [Read more](../campaigns/api-triggered-high-throughput.md#configure-high-throughput)
+
+* The **Use audiences enrichment attributes** page now clarifies that you can use enrichment attributes from external audiences created through the External Audience API, and that the audience ID you provide does not need to match the one assigned by Adobe Experience Platform. The page has also been reorganized with new **Considerations** and **Add enrichment attributes from audience composition to a Field Group** sections. [Read more](../audience/enrichment-attributes.md#considerations)
+
+* The **Use supplemental identifiers in journeys** page now clarifies that setting `expressActivation: true` in the API payload at audience creation applies to all external audiences created via API, not only CSV audiences. Federated Audience Composition audiences are the exception: the flag is set automatically. [Read more](../building-journeys/supplemental-identifier.md#external-audiences)
+
+* A new **Choose a consent level for opt-outs** page explains the difference between the **Channel** and **Identity** consent levels, with an example and guidance on which to choose. The **List unsubscribe** and **Manage email opt-out** pages now link to it. [Read more](../email/consent-level.md)
+* The **Frequency capping**, **Quiet hours**, and **Rule sets** pages now list custom channels among the channels supported by business rules. [Read more](../conflict-prioritization/channel-capping.md)
+* The **Personalize URLs in emails** page now explains that you must use triple curly braces (`{{{ ... }}}`) for the dynamic part of a personalized URL, so special characters are not escaped. [Read more](../email/url-personalization.md#use-braces)
+
+* A new **Troubleshooting overview** page and 14 error pages give the cause and the fix for each error code, grouped by feature area: Journeys, Campaigns, Content, and Configuration. Related feature pages now link to the matching error page. [Read more](../../rp_landing_pages/troubleshooting-overview-landing-page.md)
+
+* Notes have been added to clarify that custom upload (CSV) audiences are not supported as targeting audiences for inbound channel actions, including in-app messages and web or code-based experiences. Campaigns that use them with an inbound channel fail with an upstream error. [Read more](../audience/target-audiences.md#guardrails)
+
+* The **Use visual fragments** page has been updated to reflect the current fragment limits: you can add up to 60 unique fragments per variant, and up to 120 distinct fragments across all variants of a multilingual message. [Read more](../email/use-visual-fragments.md)
+
+* The **Batch delivery** page now clarifies that batch decisioning uses profile snapshot data, which does not include experience events (xEvents). Offers that depend on xEvent data may not qualify, and the fallback offer may be returned. Use profile attributes or audiences instead. [Read more](../offers/batch-delivery.md)
+
+* The **Guardrails and limitations** page now documents the maximum of 10 lookups per inbound message request, including external data and dataset lookups. It explains that exceeding the limit fails the entire request with an HTTP 422 error and provides guidance to consolidate or reduce lookups. [Read more](../start/guardrails.md#inbound-guardrails)
 
 * The **Datasets Time-to-live (TTL) guardrails** and **Guardrails and limitations** pages now state that the TTL rollout to existing customer sandboxes has been delayed by Adobe (originally planned for October 1, 2026). The TTL page also links to the Experience Platform TTL guide for initiating a TTL update outside of this rollout. [Read more](../data/datasets-ttl.md)
 
@@ -53,7 +89,11 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A caution has been added to the **Delegate a subdomain** page to inform users that a separate DNS zone or SOA record for the subdomain causes the delegation to fail. It explains how to remove the subdomain zone and configure NS records at the parent domain level instead. [Read more](../configuration/delegate-subdomain.md#submit-subdomain)
 
+* The **Create a decision item** page now explains that the `x-schema-id` header must contain the full URI of the **Personalized Offer Items - Experience Decisioning** schema of your tenant, not only the schema ID or a schema version number. [Read more](../experience-decisioning/api-reference/decisions-items/create.md)
+
 ## September 2026 {#september-2026}
+
+* A note has been added to clarify that some email providers, such as Gmail, do not share user-level spam complaint data, so recipients who mark a message as spam are not automatically added to the suppression list. [Read more](../configuration/manage-suppression-list.md#suppression-categories-and-reasons)
 
 * The **Create a direct mail message** page now clarifies extraction-file generation in the **Journey** and **Campaign** tabs: journey files follow the routing frequency and can result in multiple files per day, while campaign files are generated when each campaign execution starts. The page also explains how to ensure one file per day for journeys. [Read more](../direct-mail/create-direct-mail.md#create-dm-campaign)
 

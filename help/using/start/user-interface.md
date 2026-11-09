@@ -385,12 +385,4 @@ CX Enterprise Coworker is the in-product conversational experience. On the Journ
 >title="Set as default"
 >abstract="Enable this option to use a common webhook URL for processing provider feedback and inbound messages received from the provider."
 
-<!--DOCAC-15953 Add contextual help entry for custom metadata-->
-
-
->[!CONTEXTUALHELP]
->id="ajo_custom_metadata_configuration"
->title="About custom metadata"
->abstract="Add up to 10 schema fields per entity type to capture custom metadata on your journeys, campaigns and orchestrated campaigns."
-
 {{$include /help/_includes/do-not-localize/start/ai-augmented-user-interface.md}}

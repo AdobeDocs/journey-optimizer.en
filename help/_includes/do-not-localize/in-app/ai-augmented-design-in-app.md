@@ -53,6 +53,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I unlock extra formatting options?** — Switch on the Advanced formatting mode.
 * **Q: What is the Data tab used for?** — To define Key and Value pairs that include custom variables in the payload.
 
+**Personas:**
+
+* **marketer:** Can open the In-app content editor from a Campaign or Journey using the Edit content button, then choose a Message Layout. Can configure the Close button, add Media, enter Header and Body content, and add Buttons with an Interact event and Target. The page states that the Banner layout allows only a Header and a Body to be added. Where: "Content tab".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select the Edit content button to configure the message content.
+* **Success check:** You can review and activate the message; notifications are then sent according to the campaign schedule.
+* **Next:** After the message content is created, defined and personalized: Check and send your In-app notification (in-app/send-in-app.md); If your in-app content returns an error code: Content authoring errors (content-management/content-authoring-errors.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: b4b6c889 -->
+<!-- ai-section-version: 1 | source-hash: 56f44d9e -->

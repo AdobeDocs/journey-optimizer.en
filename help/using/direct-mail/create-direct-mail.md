@@ -175,6 +175,8 @@ The extraction file is required by direct mail providers to send mail to your cu
    1. Click the **[!UICONTROL Add]** button to create a new column.
 
    1. The **[!UICONTROL Formatting]** pane displays on the right-hand side, allowing you to set up the selected column. Specify a **[!UICONTROL Label]** for the column.
+
+      Each column must have a **[!UICONTROL Label]**.
    
    1. In the **[!UICONTROL Data]** field, select the profile attributes to display using the [personalization editor](../personalization/personalization-build-expressions.md).
 
@@ -194,6 +196,7 @@ You can now test your direct mail message and send it to your audience. [Learn h
 * [Configure direct mail channel](direct-mail-configuration.md)
 * [Test and send direct mail](test-send-direct-mail.md)
 * [Preview and test content](../content-management/preview-test.md)
+* [Content authoring errors](../content-management/content-authoring-errors.md)
 
 For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md). 
 

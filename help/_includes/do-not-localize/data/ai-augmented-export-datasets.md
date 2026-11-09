@@ -47,6 +47,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where do I start a dataset export?** — From the Destinations menu, Catalog tab; select Export datasets on the destination card and choose the connection.
 * **Q: How do I join exported data for reporting?** — Use `scopeDetails.correlationID` to join to the AJO Entity Dataset, and `exdRequestID` to tie a single decision request to analytics events.
 
+**Personas:**
+
+* **marketer:** Can export Journey Optimizer datasets to cloud storage destinations by selecting the Export datasets button, choosing a connection, and scheduling the export. The page states that datasets can be exported to 6 cloud storage destinations, accessible from the Destinations menu in the Catalog tab. Where: "Key steps to export datasets".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Set up your cloud storage destination by connecting to it from the destinations catalog.
+* **Success check:** The content of your dataset is deposited on your cloud storage location according to the schedule you configured.
+* **Next:** To join exported data for custom reporting using documented join keys: Dataset query examples (data/datasets-query-examples.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 85cacdb9 -->
+<!-- ai-section-version: 1 | source-hash: 3fdde4b0 -->

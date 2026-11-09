@@ -59,7 +59,7 @@ Before running any query on this page, ensure the following:
 * **Access to Adobe Experience Platform Query Service** — You must have access to [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"} in your Adobe Experience Platform sandbox.
 * **Dataset available** — Queries target the `journey_step_events` dataset. Verify the dataset exists and contains data in your sandbox via **Experience Platform > Datasets**.
 * **Correct journey version ID** — Most queries require a `journeyVersionID`. Find it in Journey Optimizer under **Journeys > [your journey] > Properties**, or use `journeyVersionName` to locate it in the dataset first.
-* **Schema field values** — Make sure that the fields used in your queries have associated values in the corresponding schema. Empty fields return no results without errors.
+* **Schema field values** — Make sure that the fields used in your queries have associated values in the corresponding schema. Empty fields return no results without errors. For the fields of the journey step events, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 >[!TIP]
 >

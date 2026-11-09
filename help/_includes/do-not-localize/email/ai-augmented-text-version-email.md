@@ -49,6 +49,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: When should I use custom plain text instead of auto-sync?** — For complex HTML layouts, visual-heavy content, a different messaging structure, accessibility requirements, legacy email clients, or specific ASCII formatting.
 * **Q: How do I test my plain text version?** — Toggle to Plain text view in the Email Designer, and send test emails to text-only clients.
 
+**Personas:**
+
+* **marketer:** Can select the Plain text icon, then use the Sync with HTML toggle to disable synchronization and confirm with the check mark. Can then edit the custom plain text version as desired. The page states that changes made in Plain text view are not reflected in HTML view once synchronization is disabled. Where: "Use a custom text version".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Select the Plain text icon from your email content.
+* **Success check:** The Plain text version displays, including personalization fields, synchronized with the HTML version.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: c9dccb84 -->

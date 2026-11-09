@@ -124,3 +124,5 @@ This orchestrated campaign focuses on re-engaging visitors by reminding them of 
 After the campaign has run, we can explore our reports, which gives us a robust set of data and KPIs about how our campaign is performing.
 
 ➡️ [Learn more on reporting](../reports/campaign-global-report-cja.md)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-wishlist-uc.md}}

@@ -46,6 +46,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Does every view change trigger a server call?** — No; the first `sendEvent()` call fetches and caches all views to be rendered, and subsequent calls with views passed in are served from the cache without a server call.
 * **Q: What enables marketers to discover views in the web editor?** — Implementing `sendEvent()` with `renderDecisions` set to `true` and the corresponding XDM view allows marketers to discover the views inside the Journey Optimizer web editor.
 
+**Personas:**
+
+* **developer:** Can install the Adobe Experience Platform Web SDK and check the web channel prerequisites. Can determine all XDM views in the single-page application and implement the sendEvent() function with renderDecisions set to true, passing the view in xdm.web.webPageDetails.viewName. The page states that a view name cannot be empty. Where: "Implementing XDM views".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Install the Adobe Experience Platform Web SDK and check the web channel prerequisites.
+* **Success check:** Marketers can discover the XDM views inside the Journey Optimizer web editor and apply content modifications to them.
+* **Previous:** Check the web channel prerequisites before implementing XDM views: Web channel prerequisites (web/web-prerequisites.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 1a47a92c -->

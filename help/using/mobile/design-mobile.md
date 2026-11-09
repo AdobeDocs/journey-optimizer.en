@@ -233,4 +233,6 @@ To create MMS content, follow these steps:
 
 Once you have performed your tests and validated the content, you can send your Mobile message to your audience. These steps are detailed on [this page](send-mobile-message.md)
 
+If your SMS, MMS or RCS content returns an error code, see [Content authoring errors](../content-management/content-authoring-errors.md).
+
 {{$include /help/_includes/do-not-localize/mobile/ai-augmented-design-mobile.md}}

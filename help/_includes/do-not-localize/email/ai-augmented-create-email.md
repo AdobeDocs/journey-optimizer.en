@@ -54,6 +54,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How does Optimize HTML size behave for multilingual emails?** — It is tracked at the email level, not per locale: enabling it on one locale applies it to all locales at publish time, and to disable it you must uncheck it on every locale.
 * **Q: How can I preview or test my email before sending?** — Use Simulate content (sample input data or AI auto-generation), or Simulate content (AEP profiles) to preview with test profiles, send proofs, and check rendering; you can also validate content quality.
 
+**Personas:**
+
+* **marketer:** Can add an Email action to a journey or create a campaign with the Email channel, then define the subject line and body using the Email Designer. Can enable decisioning to add a decision policy, apply capping rules with a rule set, and use Send time optimization. The page states that the subject line is mandatory and must not include line breaks. Where: "Define your email content".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Add an Email action to a journey or create a campaign with the Email channel.
+* **Success check:** No alert button is displayed, which means no alert has been detected.
+* **Previous:** Learn more about the Action activity: Use the Action activity (building-journeys/journey-action.md); Create a campaign: Create an Action campaign (campaigns/create-campaign.md)
+* **Next:** Learn more about designing the email body in the Email Designer: Design emails (email/get-started-email-design.md); Learn more about previewing and testing your content: Preview and test your content (content-management/preview-test.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 2b6a4f1b -->
+<!-- ai-section-version: 1 | source-hash: e1c8fd39 -->

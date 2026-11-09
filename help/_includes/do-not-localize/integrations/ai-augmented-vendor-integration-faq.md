@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Do Integrations replace Experience Platform Sources?** — No; Integrations drive personalization fields from APIs, while Sources handle data ingestion such as batch ingestion and profile enrichment.
 * **Q: Why do marketers not see my integration in the picker?** — Integrations must be activated after a successful test; only active integrations appear.
 
+**Personas:**
+
+* **marketer:** Can use Add personalization on a Text or HTML component to open Integrations, select an active integration, and map attributes. Can use Pills mode in the personalization editor to map values to variables, such as header or query parameters or path variables in the URL. The page states that administrators can limit which fields are available to marketers during authoring. Where: "Configuration".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Go to Configurations in the left menu, open Manage from the Integrations card, then select Create Integration.
+* **Success check:** The test connection succeeds and the integration can be activated.
+* **Previous:** Learn what Integrations do before using them: Enable External Integrations (integrations/integrations.md)
+* **Next:** See vendor integration examples and procedures: Vendor Integration (integrations/vendor-integration.md); Use Integrations within reusable Fragments: AEM Content Fragments (integrations/aem-fragments-gs.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 4494376d -->

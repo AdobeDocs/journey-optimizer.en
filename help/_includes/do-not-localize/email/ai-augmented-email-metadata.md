@@ -44,6 +44,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What does the document language setting do?** — It specifies the language that screen readers use to convert text and images into speech or braille, corresponding to the `lang` attribute in the `<html>` element.
 * **Q: Can I personalize the metadata fields?** — Yes. Click the personalization icon next to each field to customize content from profile attributes, audiences, contextual attributes, and more.
 
+**Personas:**
+
+* **marketer:** Can define a preheader, document title, and document language in the Body settings of the Email Designer. Can select the personalization icon next to each field to customize content from profile attributes, audiences, contextual attributes, and more. The page states that preheaders are not supported by all email clients. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Add at least a Structure component to start designing your email.
+* **Success check:** Selecting Save confirms your changes.
+* **Previous:** When you need to learn about the Email Designer before setting metadata: Design emails (email/get-started-email-design.md); When you need to design email content before adding metadata: Design content from scratch in Journey Optimizer (email/content-from-scratch.md)
+* **Next:** When you want to personalize the preheader, document title, or document language fields: Add personalization (personalization/personalization-build-expressions.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: b8f4ca22 -->

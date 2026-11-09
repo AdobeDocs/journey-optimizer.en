@@ -50,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which channels can I select?** — Only your activated custom channels.
 * **Q: How do I save a channel configuration?** — Click Submit to save and activate it.
 
+**Personas:**
+
+* **admin:** Can create a channel configuration for an activated custom channel, selecting API credentials and an optional delegated subdomain. Can enter values for dynamic parameters and for payload fields with the Channel config checkbox enabled. The page states that custom channels are not supported in Transactional campaigns because no message type can be selected. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Go to Administration, Channels, Channel configurations, and select Create channel configuration.
+* **Success check:** The custom channel is fully configured, and marketers can start using it to build customer experiences.
+* **Previous:** Activate a custom channel before selecting it in the channel configuration: Create a custom channel (custom-channel/create-custom-channel.md); Set up API credentials before selecting them for this configuration: Manage API credentials for custom channels (custom-channel/custom-channel-api-credentials.md)
+* **Next:** Build customer experiences using the activated channel configuration: Create custom channel experiences (custom-channel/create-custom-experience.md); Test the custom channel after configuring it: Test your custom channel (custom-channel/test-custom-channel.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: a0aac28d -->

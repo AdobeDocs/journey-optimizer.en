@@ -46,6 +46,8 @@ level_v2:
 
 Action campaigns (or Scheduled campaigns) allow for simple ad-hoc batch communications for marketing use cases like promotional offers, engagement campaigns, announcements, legal notices, or policy updates.
 
+To view Action campaign schedules, use the unified **[!UICONTROL Calendar]** menu. [Learn how to use the Calendar](../start/calendar.md).
+
 ➡️ [Discover this feature in video](#video) 
 
 
@@ -73,3 +75,5 @@ Learn more about the [complete campaign creation workflow with type-specific gui
 Learn how to create an Action campaign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346680?quality=12)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-create-campaign.md}}

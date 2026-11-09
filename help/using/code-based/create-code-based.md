@@ -106,6 +106,10 @@ To start building your **code-based experience** through a campaign, follow the 
 
 1. Complete the steps to create a campaign, such as the campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule). For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
+    >[!CAUTION]
+    >
+    >Custom upload (CSV) audiences are not supported for code-based experiences. [Learn more](../audience/target-audiences.md#guardrails)
+
 1. Select the **[!UICONTROL Code-based experience]** action.
 
 1. Select or create the code-based experience configuration to use. [Learn more](code-based-configuration.md)

@@ -46,6 +46,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I reference AEM Assets images in Code your own?** — No; store images referenced in your HTML code in a public location.
 * **Q: How can I perform date calculations in email content?** — Pre-calculate date fields in your data pipeline or profile attributes, use date manipulation functions with profile date values, or use computed attributes.
 
+**Personas:**
+
+* **marketer:** Can write or paste raw HTML in the Code your own mode to build email content in the Email Designer. Can use the left pane of the code editor to add personalization, preview the message design and personalization with test profiles, and save the code before finalizing the message. The page states that once Code your own is chosen, you stay in the code editor and cannot switch to the visual editor. Where: "Use the code editor".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** Select Code your own from the Email Designer home page.
+* **Success check:** The message design and personalization display correctly when you preview the code using test profiles.
+* **Previous:** Starting an email design before switching to the code editor: Design emails (email/get-started-email-design.md)
+* **Next:** Adding personalization in the left pane of the code editor: Personalize content in Journey Optimizer (personalization/personalize.md); Previewing the message design and personalization with test profiles: Preview and test your content (content-management/preview-test.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 1711a6a4 -->

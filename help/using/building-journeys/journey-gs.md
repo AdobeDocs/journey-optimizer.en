@@ -64,6 +64,11 @@ topic_v2:
 >title="Journeys"
 >abstract="Customer journeys deliver personalized, contextual experiences. Journey Optimizer allows you to build real-time orchestration use cases with contextual data stored in events or data sources. The **Overview** tab displays a dashboard with key metrics related to your journeys. The **Browse** tab displays the list of existing journeys."
 
+>[!CONTEXTUALHELP]
+>id="ajo_conversation_create"
+>title="Conversation"
+>abstract="Conversations let you engage customers in two-way, real-time dialogue. With Conversations, you can build use cases where each customer reply drives the next step, using contextual data from events, data sources, and the conversation itselfs. The **Overview** tab displays a dashboard with key metrics related to your journeys. The **Browse** tab displays the list of existing journeys."
+
 [!DNL Adobe Journey Optimizer] includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. The journey user interface is detailed on [this page](journey-ui.md).
 
 ![sample of journey canvas](assets/journey38.png)

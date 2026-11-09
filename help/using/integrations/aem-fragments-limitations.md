@@ -43,8 +43,8 @@ Keep the following in mind when using Content Fragments from [!DNL Adobe Experie
     * There is no automatic language resolution or fallback between variations.
 
 * **Repository access**
-    * [!DNL Journey Optimizer] integrates with the [!DNL Adobe Experience Manager] **Publish** tier only (Sites, Content Fragments). Content Fragments are available through a public, unauthenticated endpoint.
-    * Author repositories may appear in the repository selector, but only fragments published to **Publish** can be used in [!DNL Journey Optimizer].
+    * [!DNL Journey Optimizer] integrates with the [!DNL Adobe Experience Manager] **Author** and **Publish** tiers (Sites, Content Fragments). [Learn more](aem-fragments-gs.md#aem-fragments)
+    * Only fragments in **[!UICONTROL Published]** or **[!UICONTROL Modified]** status can be used in [!DNL Journey Optimizer].
 
 * **Content Fragment status**
     * Fragments can show **[!UICONTROL Published]** or **[!UICONTROL Modified]** status; [!DNL Journey Optimizer] always uses the **latest published version**.
@@ -71,8 +71,12 @@ If you encounter issues when working with Adobe Experience Manager Content Fragm
 
 | Issue | Cause | Resolution |
 |-|-|-|
-| **Tag not found** or **Content Fragment not visible in selector** | Adobe Experience Manager tag syntax does not match required format `ajo-enabled:{OrgId}/{SandboxName}` | Validate that the tag ID uses the correct **Organization ID** and **Sandbox Name**. Ensure there are no spaces or incorrect separators. Republish the Content Fragment after correcting the tag. |
+| **Tag not found** or **Content Fragment not visible in selector** (AJOCBS-1103) | Adobe Experience Manager tag syntax does not match required format `ajo-enabled:{OrgId}/{SandboxName}` | Validate that the tag ID uses the correct **Organization ID** and **Sandbox Name**. Ensure there are no spaces or incorrect separators. Republish the Content Fragment after correcting the tag. |
 | **Content Fragment not appearing in list** | Content Fragment is in draft state or not published | Only approved and published Content Fragments are displayed in the Journey Optimizer selector. Publish the Content Fragment in Adobe Experience Manager and ensure it has the published status. |
+| **Unauthorized error** when fetching a fragment (AJOCBS-1101, CJMMAS-8101) | The connection to Adobe Experience Manager is rejected: the token is wrong, expired, or invalid | Check the Adobe Experience Manager repository configuration and credentials. [Learn more](aem-admin-settings.md) |
+| **Forbidden error** when fetching a fragment (AJOCBS-1102, CJMMAS-8102) | You do not have permission on the fragment or its repository | Ask your administrator for access to the fragment and its repository. |
+| **Timeout or bad request** when fetching a fragment (AJOCBS-1105, AJOCBS-1108) | The request to Adobe Experience Manager timed out or was rejected | Check that the fragment is published, then try again. |
+| **Fragment failed to publish** or **publication did not complete in time** (CJMMAS-1161, CJMMAS-1162, CJMMAS-1175) | The publication of a fragment used in the campaign or journey failed or took too long | Republish the fragment in Adobe Experience Manager, wait for the synchronization, then try again. |
 | **Variable undefined error** | Personalization placeholder not declared in fragment helper tag | Add all required parameters in the fragment helper tag. Each placeholder used in the Content Fragment must be explicitly declared with its mapping. |
 | **Proof displays unexpected content** | Proof uses the latest published version from Adobe Experience Manager | Proofs always reflect the most recent publication of the Content Fragment in Adobe Experience Manager. If you made recent changes in Adobe Experience Manager, republish the fragment and refresh your proof. |
 | **Access denied (CPES) error** | User role not authorized to access certain attributes | Contact your system administrator to verify that your role has the appropriate permissions for the profile or contextual attributes used in personalization. |

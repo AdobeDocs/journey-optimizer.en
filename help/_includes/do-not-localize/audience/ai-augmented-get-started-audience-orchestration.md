@@ -28,11 +28,12 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* You can publish up to 10 compositions in a given sandbox (hard limit); if you reach this threshold you must delete a composition to free up space before publishing a new one.
+* You can publish up to 50 compositions in a given sandbox (hard limit); compositions created with Federated audience composition are not counted; if you reach this threshold you must delete a composition to free up space before publishing a new one.
 * Audiences from audience composition are executed daily, so you may need to wait up to 24 hours before using them in Journey Optimizer.
 * Enriched attributes in audience composition audiences are as fresh as the last composition run, which can be up to 24 hours in the past.
 * The use of audiences and attributes from audience composition is currently unavailable with Healthcare Shield or Privacy and Security Shield.
 * Enrichment attributes are not yet integrated with the policy enforcement service, so data usage labels applied to enrichment attributes are not enforced in Journey Optimizer campaigns or journeys.
+* With the Enrich activity, the enrichment dataset must be 1 GB or smaller, and its schema must define a primary identity.
 * Audience composition is not integrated with the sandbox reset capability; you must delete compositions manually before a sandbox reset so associated audience data is cleaned up.
 * If any error occurs during publishing, alerts display with information on how to resolve the issue.
 
@@ -45,11 +46,22 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: How do I create a new audience with audience composition?** — Access the Audiences menu, select Create Audience then Compose Audience, add activities between the Audience and Save activities, then Publish.
-* **Q: How many compositions can I publish in a sandbox?** — Up to 10 in a given sandbox; if you reach the threshold you must delete one to publish another.
+* **Q: How many compositions can I publish in a sandbox?** — Up to 50 in a given sandbox (compositions created with Federated audience composition are not counted); if you reach the threshold you must delete one to publish another.
 * **Q: How soon can I use an audience from a composition?** — Audiences from audience composition are executed daily, so it may take up to 24 hours.
 * **Q: What statuses can a composition have?** — Draft (in progress, not published) and Published (resulting audiences saved and available for use).
 * **Q: Can I use audience composition with Healthcare Shield or Privacy and Security Shield?** — No, use of audiences and attributes from audience composition is currently unavailable with Healthcare Shield or Privacy and Security Shield.
 
+**Personas:**
+
+* **marketer:** Can create a composition workflow by selecting Create Audience then Compose Audience from the Audiences menu. Can add activities such as Split, Exclude, Enrich, and Rank between the Audience and Save activities to build new audiences. The page states that up to 50 compositions can be published in a given sandbox. Where: "Create a composition workflow".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Access the Audiences menu and select Create Audience.
+* **Success check:** The composition's status shows Published, and the resulting audiences are saved into Adobe Experience Platform, ready to be targeted in Journey Optimizer.
+* **Next:** After publishing a composition, target the resulting audiences in Journey Optimizer campaigns and journeys: About Adobe Experience Platform audiences (audience/about-audiences.md); If an audience composition returns an error code: Audience composition errors (audience/audience-composition-errors.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: ae73c1c2 -->
+<!-- ai-section-version: 1 | source-hash: 686fa503 -->

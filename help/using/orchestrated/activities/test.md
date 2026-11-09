@@ -75,3 +75,5 @@ In this example, different transitions are activated based on the number of prof
 * Default (no condition matched): when the count is 10,000 or fewer, the population is directed to a "do not contact" transition.
 
 ![](../assets/workflow-test-example.png)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-test.md}}
