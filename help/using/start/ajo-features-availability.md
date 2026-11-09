@@ -114,7 +114,7 @@ Channel, content, and platform features marked **All base offers** are available
 | Generate content for journey expressions | Beta | Journeys; Campaigns & Journeys | June 3, 2026 | Public Beta |
 | Journey arbitration | LA | Journeys; Campaigns & Journeys | February 24, 2026 | Contact your Adobe representative |
 | Journey arbitration – AI models | LA | Journeys; Campaigns & Journeys | April 2026 | Contact your Adobe representative |
-| Dataset lookup support in journeys | LA | Journeys; Campaigns & Journeys | March 2026 | For customers entitled to dataset lookup |
+| Dataset lookup support in journeys | LA | Journeys; Campaigns & Journeys | March 2026 | Available to all customers without a request |
 | Wave sending of outbound messages (journeys) | LA | Journeys; Campaigns & Journeys | March 16, 2026 | GA in campaigns; LA in journeys |
 | Automated (event-triggered) journeys | GA | Journeys; Campaigns & Journeys | Core capability | Real-time, 1:1 orchestration |
 | Real-time event triggers | GA | Journeys; Campaigns & Journeys | Core capability | — |

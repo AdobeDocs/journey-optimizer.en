@@ -50,7 +50,7 @@ Dynamic fragment IDs can come from three sources:
 
 >[!NOTE]
 >
->Using the `datasetLookup` helper function within expression fragments is currently available for a limited set of customers. To gain access, contact your Adobe representative.
+>This feature is currently available to all customers as a limited availability release.
 
 ## Prerequisites {#prerequisites}
 
@@ -107,7 +107,7 @@ In this example, the dataset contains rows keyed by a style value (such as `styl
 
 >[!NOTE]
 >
->Using the `datasetLookup` helper function within expression fragments is currently available for a limited set of customers. To gain access, contact your Adobe representative. For more on dataset lookups in personalization, see [Use Adobe Experience Platform data](../data/lookup-aep-data.md).
+>This feature is currently available to all customers as a limited availability release. For more on dataset lookups in personalization, see [Use Adobe Experience Platform data](../data/lookup-aep-data.md).
 
 ### Resolve from context data {#resolve-from-context}
 
