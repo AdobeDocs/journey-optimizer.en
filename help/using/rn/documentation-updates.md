@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Use supplemental identifiers in journeys** page now explains what happens when an external audience is created without `expressActivation: true`: Journey Optimizer deduplicates records by profile ID, so only one row per profile is admitted. [Read more](../building-journeys/supplemental-identifier.md#external-audiences)
+
 * The **Create AI models** and **Personalized optimization model** pages now describe the prerequisites for using profile and context features, how to use the AI model in a selection strategy and decision policy, and how to pass context values in the decision request. [Read more](../experience-decisioning/ranking/create-ai-models.md#use-ai-model)
 
 * The **Frequency capping** and **Conflict management & prioritization** pages now state that capping works for all identity namespaces and is applied independently per namespace. The restriction to the highest priority namespace has been removed. [Read more](../conflict-prioritization/channel-capping.md)

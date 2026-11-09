@@ -244,6 +244,8 @@ For external audiences created via API that use Use Case 1 (where the audience i
 
 You must enable `expressActivation` on the audience at creation time. This tells Journey Optimizer to activate every record independently, without deduplication by profile ID. This flag cannot be changed after the audience is created.
 
+If the audience is created without `expressActivation: true`, Journey Optimizer deduplicates records by profile ID. Only one row per profile is admitted, and the other rows, with their supplemental IDs, are not activated.
+
 Use the following API call when creating the audience:
 
 Endpoint:
