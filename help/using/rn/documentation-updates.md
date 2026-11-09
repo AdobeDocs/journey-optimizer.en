@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Incremental query** activity page now clarifies that each run returns only records whose date field value is later than the previous execution, regardless of when the records were ingested. [Read more](../orchestrated/activities/incremental-query.md)
+
 * The **Use Adobe Experience Platform data** page now clarifies that you can enable a dataset for lookup either in the dataset management interface or with an API call. [Read more](../data/lookup-aep-data.md#enable)
 
 * The **Use supplemental identifiers in journeys** page now explains what happens when an external audience is created without `expressActivation: true`: Journey Optimizer deduplicates records by profile ID, so only one row per profile is admitted. [Read more](../building-journeys/supplemental-identifier.md#external-audiences)
