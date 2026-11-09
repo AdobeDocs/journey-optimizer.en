@@ -92,6 +92,12 @@ Set the targeting dimension, build your query, and choose how the activity decid
 
 -->
 
+## Check the last execution date {#incremental-query-last-execution}
+
+Once the activity has run, the **[!UICONTROL Last execution date]** field is displayed under **[!UICONTROL Processed data]**, below the **[!UICONTROL Path to the date field]**. It shows the date and time of the previous execution of the activity. This is the cutoff date used by the next run. This field is read-only.
+
+![Last execution date displayed under Processed data](../assets/incremental-query-last-execution.png)
+
 ## Example {#incremental-query-example}
 
 The following example sends a welcome email to profiles who have just become gold members. The campaign can be scheduled to run weekly, every Monday. Each run targets only profiles that qualified for gold membership since the previous run, so each recipient receives the welcome email once.
@@ -100,5 +106,6 @@ The following example sends a welcome email to profiles who have just become gol
 * **[!UICONTROL Email delivery]**: Sends the welcome email to the profiles output by the query.
 
 ![Incremental query activity configuration in the Orchestrated campaign canvas](../assets/incremental-query-example.png)
+
 
 {{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-incremental-query.md}}

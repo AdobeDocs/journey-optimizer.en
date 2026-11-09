@@ -24,6 +24,7 @@ For complete understanding, this information should be combined with the documen
 * **Incremental query**: a Targeting activity that runs a database query each time the Orchestrated campaign runs and outputs only new records, excluding anyone already returned in a prior run *(product-specific)*
 * **Processed data**: the configuration area where you choose how the activity excludes records from earlier runs, for example by using a date field *(product-specific)*
 * **Path to the date field**: the attribute, in Date Time format, used under Processed data so each run returns only rows whose date is after the last execution *(product-specific)*
+* **Last execution date**: the field displayed under Processed data, below the Path to the date field, once the activity has run; it shows the date and time of the previous execution and is the cutoff date used by the next run; the field is read-only *(product-specific)*
 * **Targeting dimension**: the audience type selected for the activity, for example recipients or subscribers *(product-specific)*
 
 **Guardrails:**
