@@ -173,6 +173,7 @@ The following guardrails apply to journey fragments:
 * Only **connected nodes** can be saved together as a fragment.
 * A fragment **cannot contain a [Jump](jump.md) activity**.
 * A fragment can contain a **maximum of 20 nodes**.
+* In a fragment, a **[!UICONTROL Wait]** activity cannot immediately follow a **[!UICONTROL Business event]** activity. Insert another activity between them.
 * A sandbox can have a **maximum of 200 active fragments**.
 
 **Fragment usage**
@@ -201,7 +202,7 @@ A standard entry pattern — such as a [Read Audience](read-audience.md) node fo
 
 **Preferred channel**
 
-A fragment can evaluate a profile's preferred communication channel — email, push, or SMS — and route the profile accordingly. This logic can be reused across any journey involving outbound messaging, ensuring consistent channel preference management. The fragment can include the [Optimize](optimize.md) activity and all three channel branches.
+A fragment can evaluate a profile's preferred communication channel — email, push, or Mobile message — and route the profile accordingly. This logic can be reused across any journey involving outbound messaging, ensuring consistent channel preference management. The fragment can include the [Optimize](optimize.md) activity and all three channel branches.
 
 ![Preferred channel fragment example](assets/journey-fragments-uc-preferred-channel.png)
 

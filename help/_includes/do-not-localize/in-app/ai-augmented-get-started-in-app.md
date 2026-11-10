@@ -28,17 +28,17 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * In-app messages depend on an active session, so they are not suited to every scenario.
-* Do not use In-app messages when the user is not actively using the app, since the message will never be displayed.
-* Do not use In-app messages for critical or time-sensitive issues that require reaching users outside the app, such as an outage or security alert.
-* Do not use In-app messages for regulatory or legal communications that require a read confirmation, which in-app messages cannot provide.
-* In-app messages are not suited to account reactivation or win-back campaigns for inactive users unlikely to open the app, nor to high-volume transactional updates better suited to email or SMS.
-* Overuse could lead to banner blindness, and users may be offline or without app connectivity when the message is meant to be delivered.
+* Consider another channel when the user is not actively using the app, since the message will never be displayed.
+* Consider another channel for critical or time-sensitive issues that require reaching users outside the app, such as an outage or security alert.
+* Consider another channel for regulatory or legal communications that require a read confirmation, which in-app messages cannot provide.
+* Consider another channel for account reactivation or win-back campaigns for inactive users who are unlikely to open the app, and for high-volume transactional updates, such as an order confirmation, that are better suited to email or mobile message.
+* Consider another channel when overuse could lead to banner blindness, or when users may be offline or without app connectivity when the message is meant to be delivered.
 
 **Terminology:**
 
 * Canonical name: In-app message — Acronym: n/a — variants: In-app notification, In-app messaging channel
 * Synonyms: "In-app message" = "In-app notification"
-* Do not confuse: "In-app messages" (delivered within the app during an active session) ≠ "push notifications" (an external channel dependent on push tokens)
+* Do not confuse: "In-app messages" (delivered within the app during an active session) ≠ "push notifications" (In-app messages have no dependency on push tokens or external delivery services, and are independent of opt-in status for other channels)
 
 **FAQ:**
 
@@ -48,6 +48,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: When should I use another channel instead?** — When the user is not in the app, for critical/time-sensitive alerts needing to reach users outside the app, for regulatory messages needing read confirmation, for account reactivation, or for high-volume transactional updates.
 * **Q: What is the risk of overusing In-app messages?** — Banner blindness, where users start ignoring messages that appear too often.
 
+**Personas:**
+
+* **marketer:** Can create In-app notifications in Journey Optimizer and configure the message layout, display, text, and button options. Can trigger messages based on in-app behavior or location, such as highlighting a feature after a user visits a related screen. Can tailor layout, text, and buttons to specific audiences for personalized onboarding flows. Where: "Use cases".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Configure the In-app channel with proper mobile app configurations.
+* **Success check:** You can access In-app reports for the channel.
+* **Next:** Set up in-app channel prerequisites and configuration: In-app channel prerequisites and configuration (in-app/inapp-configuration.md); Create an In-app notification: Create an In-app notification in Journey Optimizer (in-app/create-in-app.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: ce3cf3cc -->
+<!-- ai-section-version: 1 | source-hash: 7053e275 -->

@@ -8,14 +8,31 @@ topic: Content Management
 role: User
 level: Intermediate, Experienced
 keywords: url, link, personalization, tracking, encode, curly braces
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 subfeature_v2:
   - id: c41e8697-e629-4c38-96b3-564faaa17acf
     internal-label: Dynamic content
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+  - id: 9bb4b199-a2fd-5580-9021-eafbab678ff5
+    internal-label: Monitoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Personalize URLs in emails {#url-personalization}
 
@@ -49,7 +66,7 @@ To personalize a URL, follow the steps below.
 
 Here are some examples of personalized URLs:
 
-* `https://www.adobe.com/users/{{profile.person.name.lastName}}` 
+* `https://www.adobe.com/users/{{{profile.person.name.lastName}}}`
 * `https://www.adobe.com/users?uid={{profile.person.name.firstName}}`
 * `https://www.adobe.com/usera?uid={{context.journey.technicalProperties.journeyUID}}`
 * `https://www.adobe.com/users?uid={{profile.person.crmid}}&token={{context.token}}`
@@ -59,6 +76,20 @@ Here are some examples of personalized URLs:
 >When editing a personalized URL in the personalization editor, helper functions and audiences membership are disabled for security reasons.
 >
 >Spaces are not supported in the personalization tokens used inside urls.
+
+### Use triple curly braces in personalized URLs {#use-braces}
+
+When inserting a URL that contains personalization, use three curly braces (`{{{ ... }}}`) for the dynamic portion of the URL. This prevents escaping from altering special characters (for example `/` and `+`) and helps avoid broken URLs, incorrect redirects, or tracking issues.
+
+Here is an example:
+
+```html
+<a href="https://example.com/path/{{{profile.person.customSlug}}}?ref={{{context.system.source.id}}}">View details</a>
+```
+
+>[!IMPORTANT]
+>
+>Using raw output (`{{{ ... }}}`) means the value is inserted as-is. Only use it with values you trust and that are intended to be URL-safe (for example, values you generate or validate upstream).
 
 For reliable rendering and tracking, follow the [best practices and guardrails](#best-practices) below.
 
@@ -147,20 +178,6 @@ Now when the email is sent out, this parameter is automatically appended to the 
 ## Best practices and guardrails {#best-practices}
 
 To keep links valid, clickable, and trackable, follow the best practices and guardrails below.
-
-### Braces for dynamic URLs {#use-braces}
-
-When inserting a URL that contains personalization, use three curly braces (`{{{ ... }}}`) for the dynamic portion of the URL. This prevents escaping from altering special characters (for example `/` and `+`) and helps avoid broken URLs, incorrect redirects, or tracking issues.
-
-Here is an example:
-
-```html
-<a href="https://example.com/path/{{{profile.person.customSlug}}}?ref={{{context.system.source.id}}}">View details</a>
-```
-
->[!IMPORTANT]
->
->Using raw output (`{{{ ... }}}`) means the value is inserted as-is. Only use it with values you trust and that are intended to be URL-safe (for example, values you generate or validate upstream).
 
 ### Correct URL tracking {#enable-url-tracking}
 

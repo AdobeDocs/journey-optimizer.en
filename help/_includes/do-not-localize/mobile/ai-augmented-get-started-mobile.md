@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Mobile messages — Acronym: n/a — variants: mobile messaging, SMS/MMS/RCS messages
+* Canonical name: Mobile messages — variants: mobile messaging, SMS
 * Synonyms: "mobile message" = "SMS/MMS/RCS message"
 * Do not confuse: "native RCS authoring" (requires Sinch RCS) ≠ "RCS via custom provider integration" (used by Twilio, Infobip, and other providers)
 
@@ -51,6 +51,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why purchase SMS alongside RCS?** — SMS volume and a short code enable SMS fallback, the recommended path, because profiles whose device or carrier does not support RCS will not receive the message at all if SMS is not configured.
 * **Q: Is RCS available everywhere?** — No; RCS is not universally supported across all carriers and regions, so regional availability and carrier support should be researched when planning RCS campaigns.
 * **Q: What are the character limits for an RCS message?** — Rich Media (Single) message types support up to 3,072 characters, and Basic RCS message types are limited to 160 characters.
+
+**Personas:**
+
+* **marketer:** Can create SMS, MMS, and RCS messages in a journey or in a campaign using the Mobile message action. Can personalize and preview content in a single editor before sending. The page states that SMS messages are limited to 160 characters and MMS messages support up to 1,600 characters of text. Where: "Get started with Mobile messages".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Configure the Mobile message channel before creating mobile messages.
+* **Success check:** Content can be validated with test profiles and sample data before sending.
+* **Next:** Create a journey to add a Mobile message action: Create your first journey (building-journeys/journey-gs.md); Create an SMS, MMS, or RCS message: Create a Mobile message (mobile/create-mobile-message.md)
 
 +++
 

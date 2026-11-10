@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **`LiveActivityAttributes`**: The protocol a struct conforms to, defining both the static data and the dynamic content state for a Live activity *(product-specific)*
-* **`LiveActivityData`**: A required property containing Adobe Experience Platform-specific data; `liveActivityID` for individual users, `channelID` for broadcast *(product-specific)*
+* **`LiveActivityData`**: The type of the required `liveActivityData` property, which contains Adobe Experience Platform-specific data; `liveActivityID` for individual users, `channelID` for broadcast *(product-specific)*
 * **`ContentState`**: Dynamic data that can be updated during the Live activity lifecycle; must conform to `Codable` and `Hashable`
 * **`LiveActivityOrigin`**: An enumeration specifying whether an activity was initiated locally or remotely via a push-to-start notification, supported in iOS 17.2 and later *(product-specific)*
 * **`Messaging.registerLiveActivity()`**: The call used after SDK initialization to register Live activity types *(product-specific)*
@@ -40,10 +40,9 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Adobe Experience Platform Mobile SDK — Acronym: AEP Mobile SDK — variants: Mobile SDK, messaging SDK
-* Synonyms: "push-to-start" = "remotely triggered start, supported in iOS 17.2 and later"
+* Canonical name: Adobe Experience Platform Mobile SDK — Acronym: AEP Mobile SDK — variants: Mobile SDK
 * Do not confuse: "`liveActivityID`" (individual users) ≠ "`channelID`" (broadcast)
-* Do not confuse: "start a Live activity locally" (initiated within the application code) ≠ "start remotely via push-to-start" (triggered remotely through Journey Optimizer)
+* Do not confuse: "start a Live activity locally" (initiated within the application code) ≠ "start remotely" (initiated remotely through Journey Optimizer or via a push-to-start notification, supported in iOS 17.2 and later)
 
 **FAQ:**
 
@@ -53,6 +52,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I register Live activity types?** — Use `Messaging.registerLiveActivity()` in your `AppDelegate` after SDK initialization; you can register multiple Live activity types.
 * **Q: Can I start a Live activity without Journey Optimizer?** — Yes, a Live activity can be initiated locally within the application code (optional), in addition to being started remotely through Journey Optimizer.
 
+**Personas:**
+
+* **admin:** Can confirm iOS 16.1 or later, Xcode 14.0 or later, Swift 5.7 or later, and AEP Mobile SDK Messaging 5.11.0 or later are installed. The page states that iOS 17.2 or later is required for push-to-start support and iOS 18 or later for broadcast channel support. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Import the AEPMessaging, AEPMessagingLiveActivity, and ActivityKit modules.
+* **Success check:** The app can display real-time Live activity updates on the Lock Screen and Dynamic Island.
+* **Next:** Experiencing issues with token registration, payload alignment, or Live activity delivery: Troubleshoot Live activities (mobile-live/troubleshoot-mobile-live.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: fca7b04d -->
+<!-- ai-section-version: 1 | source-hash: e09eaf1f -->

@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **Custom Upload**: Importing an audience into Adobe Experience Platform from a CSV file using the Audience Portal *(product-specific)*
-* **Audience Portal**: The Adobe Experience Platform area used to import the CSV audience *(product-specific)*
+* **Audience Portal**: The Adobe Experience Platform Audience Portal, which allows you to import an audience using a CSV file *(product-specific)*
 * **Incremental read**: A toggle setting that, for custom upload and other external audiences, is not functionally supported today *(product-specific)*
 
 **Guardrails:**
@@ -33,8 +33,7 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Custom Upload — Acronym: n/a — variants: CSV upload, custom upload audience
-* Synonyms: "Custom upload" = "CSV file import"
-* Do not confuse: "Incremental read" (toggle setting) ≠ "entire audience retrieval" (actual behavior on each recurrence for these audiences)
+* Synonyms: "Custom upload" = "CSV upload"
 
 **FAQ:**
 
@@ -42,6 +41,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens if a CSV identity value is not in the profile?** — A new profile is created with that identity value.
 * **Q: Is Incremental read supported for custom upload audiences?** — No; it is not functionally supported today, and the entire audience is retrieved on each recurrence regardless of the toggle setting.
 
+**Personas:**
+
+* **marketer:** Can import an audience from a CSV file using the Adobe Experience Platform Audience Portal. During the custom upload process, specify the CSV attribute to use as the identity and the profile identity it maps to. The page states that custom upload audiences cannot be used to target inbound channel actions, including in-app messages and web or code-based experiences. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Specify the CSV attribute to use as the identity and the profile identity it maps to.
+* **Success check:** A new profile is created when the CSV file contains an identity value not found in the profile.
+* **Next:** Learn more about audience guardrails: About Adobe Experience Platform audiences (audience/target-audiences.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 344a2ec7 -->
+<!-- ai-section-version: 1 | source-hash: 22efd8e5 -->

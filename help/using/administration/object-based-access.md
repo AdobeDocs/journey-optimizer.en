@@ -9,10 +9,25 @@ role: Admin, Developer
 level: Experienced
 keywords: object, level, access, control, labels, olac, authorization
 exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
     internal-label: Access control
-subfeature_v2: []
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
+  - id: d712382d-29ef-487a-93a7-cbebdd2ef24a
+    internal-label: Access management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Object level access control {#object-level-access}
 
@@ -48,6 +63,8 @@ The Object level access control (OLAC) capability allows you to define authoriza
 To be able to [create labels](#create-labels), you must belong to a role with the **[!UICONTROL Manage usage labels]** permission.
 
 To be able to [assign labels](#assign-labels), you must belong to a role with a **Manage** permission i.e., [!DNL Manage journeys], [!DNL Manage Campaigns], or [!DNL Manage decisions]. Without this permission, the **[!UICONTROL Manage access]** button is greyed out.
+
+In addition, to assign labels to journeys, your role must include either the **[!DNL Manage segments]** or the **[!DNL Manage schemas]** permission. 
 
 Learn more about permissions in [this section](../administration/permissions.md).
 

@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: settings, email, configuration, sender header, SMTP
 exl-id: e1556c25-9c79-4362-a5a9-0a46425fa8d9
-TQID: https://experienceleague.adobe.com/SKYkdRHCsbMq6sD1phQHt0TCqy2kLUb26dT-BZHSWEA
+TQID: 'https://experienceleague.adobe.com/SKYkdRHCsbMq6sD1phQHt0TCqy2kLUb26dT-BZHSWEA'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -23,9 +23,14 @@ subfeature_v2:
     internal-label: Subdomains
   - id: fae48155-b23f-40d2-a252-a25bce350b4d
     internal-label: Email configuration
+  - id: 38b66663-ea7b-5c28-aa45-6a882ffbe560
+    internal-label: Surface
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
@@ -74,6 +79,14 @@ When configuring a new [email channel configuration](email-settings.md), in the 
 >[!NOTE]
 >
 >For **[!UICONTROL From email prefix]** and **[!UICONTROL Error email prefix]**, values must begin with a letter (A-Z) and can only contain alphanumeric characters. You can also use underscore `_`, dot `.`, and hyphen `-` characters.
+
+If needed, these header values can be overridden at the campaign or journey action level, without creating a new channel configuration.
+
+Learn how in the following sections:
+
+* [Configure the campaign action](../campaigns/campaign-action.md)
+* [Configure API-triggered action](../campaigns/api-triggered-campaign-action.md)
+* [Configure journey action](../building-journeys/journey-action.md)
 
 ## Sender headers {#sender-header}
 

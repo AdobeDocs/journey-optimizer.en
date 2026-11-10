@@ -36,7 +36,7 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: field group — Acronym: n/a — variants: field groups
-* Do not confuse: "add fields to the built-in data source" ≠ "create a new external data source"
+* Do not confuse: "add field groups to the built-in data source" ≠ "create a new external data source"
 
 **FAQ:**
 
@@ -44,8 +44,21 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why should I select only the fields I need in a field group?** — When a field is used in a journey, the system retrieves all fields defined for that field group, so selecting only the fields you need reduces request latency and increases performance.
 * **Q: Why is my field group not showing in the expression editor?** — If a field group has no field, it is not displayed in the expression editor.
 * **Q: Can I modify fields already used by a draft or live journey?** — No, if a field group is used in one or more draft or live journeys you can incrementally add new fields but cannot deselect, remove, or modify fields already selected.
-* **Q: How do I remove a field from a field group used in journeys?** — Duplicate the field group, remove the unwanted fields in the duplicate, update each journey to use the duplicate, stop the old journey versions, and then remove the original field group once it is no longer used.
+* **Q: How do I remove a field from a field group used in journeys?** — Duplicate the field group, remove the unwanted fields in the duplicate, create new versions of each journey that uses the original and select the duplicate in the activities using it, stop the old versions of those journeys, and then remove the original field group once it is no longer used.
+
+**Personas:**
+
+* **developer:** Can define one or more field groups for a data source, selecting fields such as telephone number, email, first name and address. Can use this field data to create journey conditions, for example sending a push notification only if the mobile application is installed. The page states that selecting only the fields needed for journeys reduces request latency and increases performance. Where: "Define field groups".
+* **admin:** Can configure a data source by selecting Configurations in the Administration menu section, then selecting Manage in the Data Sources section. Can add field groups to the built-in data source or create a new external data source, then select Save. The page states that the data source configuration is always performed by a technical user. Where: "Configure a data source".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** In the Administration menu section, select Configurations, then select Manage in the Data Sources section.
+* **Success check:** The data source is now configured and ready to be used in your journeys.
+* **Previous:** Learn about the Journey Optimizer interface: Navigate the interface (start/user-interface.md)
+* **Next:** Add field groups to the built-in data source: Adobe Experience Platform data source (datasource/adobe-experience-platform-data-source.md); Create a new external data source: External data sources (datasource/external-data-sources.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: b9f7ff69 -->
+<!-- ai-section-version: 1 | source-hash: 120b84fb -->

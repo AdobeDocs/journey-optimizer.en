@@ -52,6 +52,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What permission do I need to manage content templates?** — The Manage Library Items permission included in the Content Library Manager product profile.
 * **Q: In what mode can I edit an imported template?** — Only in compatibility mode.
 
+**Personas:**
+
+* **marketer:** Can edit content and personalize an imported Experience Manager template, but only in compatibility mode. Can simulate content using sample input data, AI auto-generation, or AEP profiles before sending the message. The page states that personalized elements are automatically replaced with data from the selected test profile. Where: "Use and personalize an Adobe Experience Manager template".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** From your Adobe Experience Manager homepage, select Outbound Marketing.
+* **Success check:** The user interface shows the message Template XX sent successfully to AJO.
+* **Previous:** Learn about the Manage Library Items permission required to create content templates: Journey Optimizer built-in Roles (administration/ootb-product-profiles.md); Learn personalization syntax before adding it to the Experience Manager template: Personalization syntax (personalization/personalization-syntax.md)
+* **Next:** Complete the configuration of your journey and activate it to send the message: Create your first journey (building-journeys/journey-gs.md); Complete the configuration of your campaign and activate it to send the message: Create an Action campaign (campaigns/create-campaign.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: e329639f -->

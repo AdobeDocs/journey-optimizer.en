@@ -103,7 +103,7 @@ To do this, contextual attributes specific to orchestrated campaigns are availab
 * **`context.system.source.versionId`**: Orchestrated campaign version ID
 * **`context.system.source.actionId`**: Channel action node ID
 * **`context.system.source.actionName`**: Channel action node name
-* **`context.system.source.channel`**: Channel type (Email, SMS, Push)
+* **`context.system.source.channel`**: Channel type (Email, Mobile, Push)
 * **`context.system.IdentityNamespace`**: Identity namespace used
 
 For example:
@@ -113,3 +113,5 @@ www.YourLandingURL.com?utm_source=AJO&utm_campaign={{context.system.source.id}}&
 ```
 
 Learn more about URL tracking parameters in [this section](../email/url-tracking.md).
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-channel-config.md}}

@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Audit logs**: records that capture actions performed by users in the system on services and capabilities such as journeys, messages, and landing pages, stored with metadata and accessible in Adobe Experience Platform *(product-specific)*
+* **Audit logs**: records that capture actions performed by users in the system on services and capabilities such as journeys, messages, and landing pages, recorded with metadata and accessible in Adobe Experience Platform *(product-specific)*
 * **[!DNL View User Activity Log]**: the permission that must be granted to view and export audit logs *(product-specific)*
 * **[!UICONTROL Download log]**: the button used to download the CSV file *(product-specific)*
 * **Decision management audit logs**: audit logs related to decision management, which are only visible from the downloaded CSV file *(product-specific)*
@@ -35,7 +35,6 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Audit logs
-* Do not confuse: "Audit logs" (record of user actions on resources) ≠ "[!UICONTROL Download log]" (the button used to download decision management audit logs as a CSV file)
 
 **FAQ:**
 
@@ -44,6 +43,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do you access audit logs related to decision management?** — They are only visible from the CSV file downloaded using the [!UICONTROL Download log] button.
 * **Q: Which resource actions are captured?** — Actions such as Create, Delete, Update, Activate, Stop, and Publish on resources including campaigns, journeys, landing pages, and others listed in the event types table.
 
+**Personas:**
+
+* **marketer:** Can review audit logs that record actions such as Create, Delete, Update, Activate, Stop, and Publish on resources including journeys, AJO campaigns, and landing pages. The page states that the View User Activity Log permission must be granted to view and export audit logs. Where: "About audit logs".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Review the audit logs that record user actions on Journey Optimizer resources.
+* **Success check:** Each action is recorded with metadata in audit logs, accessible in Adobe Experience Platform.
+* **Previous:** Grant the View User Activity Log permission before viewing and exporting audit logs: Journey Optimizer built-in Roles (administration/ootb-product-profiles.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 22dbff2e -->
+<!-- ai-section-version: 1 | source-hash: 49c10ea3 -->

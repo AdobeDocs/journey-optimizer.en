@@ -39,7 +39,7 @@ For complete understanding, this information should be combined with the documen
 
 * Canonical name: Roles and responsibilities — Acronym: n/a — variants: role-based quick start, implementation roles
 * Synonyms: "Marketer" = "Business Practitioner"; "Data Engineer" = "Data Architect"
-* Do not confuse: "Decisioning" (used for push and SMS personalization) ≠ "Decision Management" (offers, eligibility rules, and components in a centralized library)
+* Do not confuse: "Decisioning" (used for push and Mobile message personalization) ≠ "Decision Management" (offers, eligibility rules, and components in a centralized library)
 
 **FAQ:**
 
@@ -48,6 +48,20 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can one person hold more than one role?** — Yes. A single individual can perform multiple roles or all roles, depending on your organization's structure.
 * **Q: Do all activities have to happen strictly in sequence?** — No. Some activities can occur in parallel, such as Developers working on app integrations while Data Engineers configure schemas.
 * **Q: What should teams align on before configuring Journey Optimizer?** — Define your use cases first, involve all teams that touch the customer experience, establish a shared customer identifier, verify data privacy compliance, plan for testing before go-live, and prepare your brand content and asset library.
+
+**Personas:**
+
+* **admin:** Can create and manage sandboxes to partition data and journeys for development, testing, and production. Can set up user groups and permissions and apply object-level access control (OLAC). Can configure delivery channels, message presets, subdomains, IP pools, suppression lists, and allowed lists. The page states the Administrator sets up the environment first, because this must happen before other teams can work. Where: "For Administrators".
+* **developer:** Can integrate the Adobe Experience Platform Mobile SDK for iOS and Android and implement the Web SDK for web experiences and web push notifications. Can configure push notification credentials and certificates and send events from applications to trigger journeys. Can build API endpoints that Journey Optimizer calls through custom actions and test implementations with Adobe Experience Platform Assurance. Where: "For Developers".
+* **marketer:** Can design customer journeys with Journey Orchestration and automate multi-step batch campaigns with Campaign Orchestration. Can create and personalize messages in Modern Message Designer and manage offers and eligibility rules through Decision Management. Can build audiences using segmentation, CSV upload, or audience composition, and use Journey Agent to create journeys from natural language prompts. Where: "For Marketers".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Configure sandboxes, set up access controls, and prepare channel configurations as the Administrator.
+* **Success check:** Other teams can begin working, because the page states environment setup must happen first to enable them.
+* **Previous:** New to Journey Optimizer: Journey Optimizer (start/get-started.md)
+* **Next:** Ready to start as the Administrator who sets up the environment first: Journey Optimizer Get Started for System Admin (start/path/administrator.md); Ready to create the data foundation after the Administrator sets up the environment: Journey Optimizer Get Started for Data Engineer (start/path/data-engineer.md)
 
 +++
 

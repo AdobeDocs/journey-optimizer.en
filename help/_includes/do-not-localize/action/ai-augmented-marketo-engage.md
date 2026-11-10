@@ -49,6 +49,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I pass values dynamically in the payload?** — For each field, change Constant to Variable.
 * **Q: How do I use the action in a journey?** — For each configured action a Marketo Engage action activity is available in the journey designer palette; drag it onto the canvas and, in the Request parameters section, select the dynamic values configured in the payload.
 
+**Personas:**
+
+* **developer:** Can compose Request and Response payloads for Person and Custom Object data using fields such as munchkinID, email, firstName, lastName, productName, productQty, and priceTotal. Can select dynamic values for Request parameters on the journey canvas. The page states that to pass values dynamically, each field must be changed from Constant to Variable. Where: "Payload syntax".
+* **admin:** Can select Configurations in the ADMINISTRATION menu section and create a custom action by selecting Adobe Marketo Engage as Action type. Can enter the Name and Description, then edit the Request and Response payloads for the action. The page states that the Marketo Engage instance must be IMS-enabled, must be in the same organization as the Adobe Experience Platform/Journey Optimizer instance, and the customer must be provisioned with MktoSync: Ingestion Service access. Where: "Configure the action".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Select Configurations in the ADMINISTRATION menu section.
+* **Success check:** You can now use your custom action on your journey canvas.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: ffa604d5 -->

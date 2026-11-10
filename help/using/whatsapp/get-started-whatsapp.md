@@ -8,13 +8,15 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 22df2bfa-4d86-464e-ad83-3aa457e3a747
-TQID: https://experienceleague.adobe.com/uHzRC9X6rB9EXH4gIFiRxFaeNcrTD0-40RrxZkN4XFg
+TQID: 'https://experienceleague.adobe.com/uHzRC9X6rB9EXH4gIFiRxFaeNcrTD0-40RrxZkN4XFg'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: b8df23d2-98a2-4406-86cc-2babe8728d36
     internal-label: WhatsApp channel
@@ -62,7 +64,7 @@ WhatsApp depends on audience adoption and explicit consent, so it is not suited 
 
 * Your audience does not use WhatsApp, since adoption varies widely by region and demographic
 * Recipients have not given explicit opt-in, which is required by Meta's messaging policies
-* The message is urgent and needs guaranteed delivery, which SMS or push handles better given WhatsApp's delivery and template review constraints
+* The message is urgent and needs guaranteed delivery, which mobile messages or push handles better given WhatsApp's delivery and template review constraints
 * The content is lengthy or complex and better suited to email, which offers more space and richer formatting
 * Real-time conversational support is not feasible on your side, since two-way WhatsApp threads set an expectation of a timely reply
 

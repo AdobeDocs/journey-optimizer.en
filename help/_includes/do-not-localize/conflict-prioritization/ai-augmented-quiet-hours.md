@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to create quiet hours rules—time-based exclusions for Email, SMS, Push, and WhatsApp—inside custom channel-domain rule sets, and how to apply them to journey and campaign actions.
+* **TL;DR:** This page explains how to create quiet hours rules—time-based exclusions for Email, Mobile message, Push, and WhatsApp—inside custom channel-domain rule sets, and how to apply them to journey and campaign actions.
 
 **Intents:**
 
@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Quiet hours**: Time-based exclusions for Email, SMS, Push, and WhatsApp that ensure no messages are sent during specific periods *(product-specific)*
+* **Quiet hours**: Time-based exclusions for Email, Mobile message, Push, and WhatsApp that ensure no messages are sent during specific periods *(product-specific)*
 * **[!UICONTROL Queue message]**: Handling option where messages are sent at the completion of the quiet hours period unless in Paused state *(product-specific)*
 * **[!UICONTROL Discard message]**: Handling option where messages are never sent *(product-specific)*
 * **[!UICONTROL Use recipients local time zone]**: Option that applies each profile's own time zone field instead of one standard time zone *(product-specific)*
@@ -30,13 +30,13 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Supported channels: Email, SMS, Push, and WhatsApp.
+* Supported channels: Email, Mobile message, Push, and WhatsApp.
 * Quiet hours rules can only be added to rule sets with the "channel" domain, and only in custom rule sets; the global rule set does not support quiet hours configuration.
 * The [!UICONTROL Category] field is currently read-only and defaults to [!UICONTROL Marketing].
 * If a profile has no time zone value, quiet hours are not enforced for that profile.
 * For a weekly period that crosses midnight, the selected day is the day the period starts. A Monday 9:00 PM–9:00 AM period covers Monday 9:00 PM through Tuesday 9:00 AM, not Monday 12:00 AM–9:00 AM.
 * Review weekly periods together for continuous coverage. A Saturday and Sunday all-day period combined with Monday–Friday 9:00 PM–9:00 AM periods leaves Monday 12:00 AM–9:00 AM uncovered; include Sunday in the 9:00 PM–9:00 AM period to cover through Monday 9:00 AM.
-* You can add up to 5 separate periods with the [!UICONTROL Add more dates] button (hard limit).
+* You can add up to 5 separate periods with the [!UICONTROL Add more dates] button.
 * Updates to a quiet hours rule may take up to 12 hours to be applied to channel actions that already use that rule.
 * In cases of high-volume communications, the system may take additional time to begin enforcing quiet hour suppressions.
 * If a message remains in a queued state for a profile for more than 7 days, the message is discarded.
@@ -44,14 +44,14 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: quiet hours — Acronym: not stated on this page — variants: Quiet hours rule, quiet hours rule set
-* Synonyms: none stated on this page
+* Canonical name: quiet hours — variants: quiet hours rule
+* Synonyms: none
 * Do not confuse: "[!UICONTROL Queue message]" (sent after the quiet period unless Paused) ≠ "[!UICONTROL Discard message]" (never sent)
 * Do not confuse: standard "[!UICONTROL Time zone]" (one time zone for all recipients) ≠ "[!UICONTROL Use recipients local time zone]" (each profile's own time zone)
 
 **FAQ:**
 
-* **Q: Which channels support quiet hours?** — Email, SMS, Push, and WhatsApp.
+* **Q: Which channels support quiet hours?** — Email, Mobile message, Push, and WhatsApp.
 * **Q: Can I set quiet hours in the global rule set?** — No, quiet hours can only be defined in custom rule sets with the "channel" domain.
 * **Q: What happens to a message that hits quiet hours?** — With [!UICONTROL Queue message] it is sent when the quiet period ends unless it is Paused; with [!UICONTROL Discard message] it is never sent.
 * **Q: What if a profile has no time zone value?** — Quiet hours are not enforced for that profile.
@@ -60,6 +60,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How long can a message stay queued?** — If it remains queued for a profile for more than 7 days, it is discarded.
 * **Q: How long do rule updates take to apply?** — Up to 12 hours for channel actions that already use that rule.
 
+**Personas:**
+
+* **marketer:** Can create a quiet hours rule in a custom rule set, choosing Weekly or Custom date periods and a time zone. Can add up to 5 periods with Add more dates, and choose Queue message or Discard message to handle messages. The page states that quiet hours are not enforced for a profile with no time zone value. Where: "Create Quiet hours rules".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Navigate to Business rules to access the rule sets inventory.
+* **Success check:** The rule displays in the rule set, and you can select it to view its details in the properties pane.
+* **Previous:** Learn how to create rule sets before adding a quiet hours rule: Work with rule sets (conflict-prioritization/rule-sets.md); Review custom channels supported by quiet hours: Get started with custom channels (custom-channel/get-started-custom-channel.md)
+* **Next:** View profiles excluded by quiet hours in the Customer Journey Analytics report: Updated reporting experience (reports/report-gs-cja.md); Check the Live report for quiet hours listed as an exclusion reason: Live report (reports/live-report.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 2aee6cf1 -->
+<!-- ai-section-version: 1 | source-hash: 88cb19d9 -->

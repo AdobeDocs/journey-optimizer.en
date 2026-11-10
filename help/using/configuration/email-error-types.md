@@ -10,7 +10,7 @@ level: Experienced
 keywords: retries, bounce, soft, ignored, hard, optimizer, error
 hide: true
 exl-id: a8908b11-2288-4d53-897c-3f99cb5ceab4
-TQID: https://experienceleague.adobe.com/gWFOruEudtymSOc0spAiYYWlRVFyZW8TdRO453lQ4yI
+TQID: 'https://experienceleague.adobe.com/gWFOruEudtymSOc0spAiYYWlRVFyZW8TdRO453lQ4yI'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -21,15 +21,24 @@ feature_v2:
     internal-label: Configuration
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-    internal-label: Admin
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-    internal-label: Administration
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
 subfeature_v2:
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Email error types {#email-error-types}
 
@@ -41,7 +50,7 @@ subfeature_v2:
 
 Possible reasons for a delivery failure are multiple. The table below details all the errors that could happen upon sending email deliveries with [!DNL Journey Optimizer], together with their description and error type.
 
-These errors can be found in the [AJO Message Feedback Event Dataset](../data/datasets-query-examples.md#message-feedback-event-dataset) which contains the message delivery logs, including information on all message delivery from [!DNL Journey Optimizer], and feedback records from the email ISPs on bounces.
+These errors can be found in the [AJO Message Feedback Event Dataset](../data/datasets-query-examples.md#message-feedback-event-dataset) which contains the message delivery logs, including information on all message delivery from [!DNL Journey Optimizer], and feedback records from the email ISPs on bounces. For the fields that describe a failure (category, code, and reason), see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 | Error label | Error type | Technical value | Description |
 | --- | --- | --- | --- |

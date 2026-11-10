@@ -49,7 +49,20 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why does an existing custom action not expose the jo_status_code field?** — Only newly created custom actions include it out-of-the-box; update the existing action, for example by updating the description and saving, to add it.
 * **Q: When is an action call considered in error?** — When the returned http code is greater than 2xx or an error occurs, after which the journey flows to the dedicated timeout or error branch.
 * **Q: Where can the returned payload be inspected?** — Through test mode logs, in the actionsHistory section that displays the payload returned by the external endpoint.
-* **Q: Can response payload fields be used in native channels?** — Yes, response payload fields from custom actions can be used in native channels (email, push, SMS) for message personalization.
+* **Q: Can response payload fields be used in native channels?** — Yes, response payload fields from custom actions can be used in native channels (email, push, mobile messages) for message personalization.
+
+**Personas:**
+
+* **developer:** Can leverage API call response payload fields in conditions, other actions, and message personalization. Can reference action response fields using the expression syntax, for example @action{ActionLoyalty.status}. Can use currentActionField to access the current item while manipulating a collection in a custom action response. Where: "Expression syntax".
+* **admin:** Can configure the custom action by pasting an example payload into the Response field to capture fields returned by the call. Can enable an error response payload by selecting Define a failure response payload in the custom action configuration. The page states that only newly created custom actions include the jo_status_code field out-of-the-box. Where: "Configure the custom action".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Paste an example of the payload returned by the call.
+* **Success check:** Each time the API is called, the system retrieves all the fields included in the payload example.
+* **Previous:** Before configuring the response payload, create the custom action: Configure a custom action (action/about-custom-action-configuration.md)
+* **Next:** To iterate over arrays and nested data from the response in messages: Iterate over contextual data (personalization/iterate-contextual-data.md)
 
 +++
 

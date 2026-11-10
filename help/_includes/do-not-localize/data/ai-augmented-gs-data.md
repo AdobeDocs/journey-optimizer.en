@@ -26,7 +26,7 @@ For complete understanding, this information should be combined with the documen
 * **Source connector (source)**: streams or batches data from external systems into Adobe Experience Platform *(product-specific)*
 * **Data source (Journey Optimizer)**: a UI configuration that declares which Adobe Experience Platform or external fields are exposed inside journeys and messages *(product-specific)*
 * **Identity**: an identifier that uniquely represents an individual customer, organized into namespaces (Email, ECID, CRMID)
-* **Real-Time Customer Profile**: the unified profile assembled by stitching profile fragments across channels *(product-specific)*
+* **Real-Time Customer Profile**: maintains a holistic view of each individual customer by combining data from multiple channels, stitching profile fragments together based on shared identity values *(product-specific)*
 * **Profile fragment**: a partial view of a customer based on a specific touchpoint *(product-specific)*
 * **Lookup dataset**: a runtime reference to an Adobe Experience Platform dataset without storing that data on the Real-Time Customer Profile *(product-specific)*
 
@@ -53,6 +53,20 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where are the checklist steps performed?** — Steps 1–4 in Adobe Experience Platform; Steps 5–6 in Journey Optimizer.
 * **Q: When should I use a lookup dataset?** — For frequently changing reference or transactional data needed at message time that does not belong on the Real-Time Customer Profile.
 
+**Personas:**
+
+* **developer:** Can use Query Editor to verify that send, open, click, and bounce events are recorded in Journey Optimizer datasets. Can confirm that journey step events and states are captured correctly. The page states that Steps 1-4 of the data readiness checklist are completed in Adobe Experience Platform and Steps 5-6 are configured in Journey Optimizer. Where: "Data readiness checklist".
+* **admin:** Can configure the built-in Adobe Experience Platform data source to expose Real-Time Customer Profile attributes inside journeys. Can also configure external data sources to call third-party APIs at journey runtime, such as a loyalty score or inventory level. The page states that configuring data sources is an administrative task that unlocks the data layer for journey authors and marketers. Where: "Data readiness checklist".
+* **marketer:** Can create a welcome journey that listens for a sign-up event, as shown in the page's example. Can personalize the welcome email using profile attributes such as [!DNL firstName] and [!DNL personalEmail.address]. The page states that Journey Optimizer writes send and open events to tracking datasets as the journey runs. Where: "Example: preparing data for a welcome journey".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Choose a primary identity for your customers, such as ECID, email, or CRMID, and configure the corresponding namespaces in Adobe Experience Platform Identity Service.
+* **Success check:** Validate that profiles are correctly stitched into the identity graph.
+* **Previous:** Before defining an identity strategy for Journey Optimizer: Get Started with Identities in Journey Optimizer (audience/get-started-identity.md); Before understanding how Real-Time Customer Profile combines data from multiple channels: Get Started with Profiles in Journey Optimizer (audience/get-started-profiles.md)
+* **Next:** After completing the data readiness checklist, building a journey: Create your first journey (building-journeys/journey-gs.md); After exposing profile fields through a data source, personalizing a message: Personalize content in Journey Optimizer (personalization/personalize.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 466dff8e -->
+<!-- ai-section-version: 1 | source-hash: 1e17c925 -->

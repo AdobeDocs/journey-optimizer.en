@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: c1f16edd-efdf-41c2-a0ad-5f55009008f5
-TQID: https://experienceleague.adobe.com/S-3ZtTNfgZGEFChfjaXPihxGWpdkWacrWF9AWc-AyZY
+TQID: 'https://experienceleague.adobe.com/S-3ZtTNfgZGEFChfjaXPihxGWpdkWacrWF9AWc-AyZY'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -17,11 +17,17 @@ feature_v2:
     internal-label: Communication channels
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
+  - id: 66e1fd99-672d-5d64-aa58-eca107f0fbae
+    internal-label: Push
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
+    internal-label: Overview
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -60,7 +66,7 @@ Use the dedicated tabs to define the push notification settings for **iOS**, **A
 
 >[!NOTE]
 >
->While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails and SMS messages, push notifications do not require any action on your side, as recipients can unsubscribe through their devices themselves. For example, upon downloading or when using your app, they can select to stop notifications. Similarly, they can change the notification settings through the mobile operating system or web browser settings. To verify a profile's push consent status in the AEP profile viewer, see [Check push opt-out status](../privacy/opt-out.md#push-opt-out-status).
+>While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails and mobile messages, push notifications do not require any action on your side, as recipients can unsubscribe through their devices themselves. For example, upon downloading or when using your app, they can select to stop notifications. Similarly, they can change the notification settings through the mobile operating system or web browser settings. To verify a profile's push consent status in the AEP profile viewer, see [Check push opt-out status](../privacy/opt-out.md#push-opt-out-status).
 
 </br>
 
@@ -109,7 +115,7 @@ Push notifications work best when you need to reach users quickly and directly o
 | --- | --- | --- |
 | Time-sensitive updates | Delivered instantly, even when users are not actively using your app | Flight delay alerts, order status changes, breaking news |
 | Re-engagement | Prompts users to return to your app after a period of inactivity | Cart abandonment reminders, win-back campaigns |
-| Cost reduction vs. SMS | No per-message carrier fees, unlike SMS | High-volume promotional or transactional notifications |
+| Cost reduction vs. mobile message | No per-message carrier fees, unlike mobile message | High-volume promotional or transactional notifications |
 | Rich, interactive content | Supports images, action buttons, and deep links | Product promotions with tap-to-buy buttons, rich media previews |
 | Device-native capabilities | Leverages OS-level features not available to other channels | Vibration alerts, app icon badges, geofenced location triggers |
 | High opt-in likelihood | Users are prompted to opt in as early as app install or first launch | Onboarding flows, day-one engagement campaigns |

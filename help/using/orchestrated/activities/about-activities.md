@@ -44,7 +44,7 @@ Orchestrated campaign activities are grouped into several categories. Depending 
 
 ## Guardrails and limitations {#activity-guardrails}
 
-* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities at publication (Email, SMS, Push, or Direct mail). Targeting, Data Management, and flow control activities do not count toward this limit.
+* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities at publication (Email, Mobile message, Push, or Direct mail). Targeting, Data Management, and flow control activities do not count toward this limit.
 
 * **Canvas activities limit** - The number of activities on the canvas is limited to 500. For maintainability and performance, keep workflows under 100 activities in practice.
 
@@ -105,3 +105,5 @@ Available flow control activities are:
 <!--* [Test](test.md): Enable transitions based on specified conditions.-->
 
 * **[!UICONTROL End]**: Marks the end of a branch on the canvas. You can optionally use it to send a signal to another Orchestrated campaign that starts on a signal. [Learn more](../trigger-orchestrated-campaign.md#signal-end)
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-about-activities.md}}

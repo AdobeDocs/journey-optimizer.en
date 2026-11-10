@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: settings, email, configuration
 exl-id: 13536962-7541-4eb6-9ccb-4f97e167734a
-TQID: https://experienceleague.adobe.com/09Be2OEwtY2-wAMaWDUZtwZCVBqzXPsPgvNZuc1UO2M
+TQID: 'https://experienceleague.adobe.com/09Be2OEwtY2-wAMaWDUZtwZCVBqzXPsPgvNZuc1UO2M'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Configuration
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
@@ -25,9 +27,14 @@ subfeature_v2:
     internal-label: Email configuration
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
@@ -76,6 +83,10 @@ In the **Email Type** section, select the type of message for the configuration:
 * Select **Marketing** for promotional email, such as weekly promotions for a retail store. These messages require user consent.
 
 * Select **Transactional** for non-commercial email, such as order confirmation, password reset notifications, or delivery information for example. These emails can be sent to profiles who **unsubscribed** from marketing communications. These messages can only be sent in specific contexts.
+
+    >[!NOTE]
+    >
+    >If you purchased the **High throughput transactional messaging** add-on, you can enable the corresponding option to create a dedicated configuration that allows sending large volumes of transactional emails efficiently through API-triggered campaigns. [Learn more](../campaigns/api-triggered-high-throughput.md)
 
 When creating a message, you must choose a valid channel configuration matching the category you selected for your email.
 

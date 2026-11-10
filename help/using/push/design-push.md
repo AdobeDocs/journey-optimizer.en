@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
-TQID: https://experienceleague.adobe.com/YOE-hCnG978CvBHe2WeFekMjx4oBlsv4hBbSVaUjgWA
+TQID: 'https://experienceleague.adobe.com/YOE-hCnG978CvBHe2WeFekMjx4oBlsv4hBbSVaUjgWA'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -17,6 +17,8 @@ feature_v2:
     internal-label: Communication channels
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
+  - id: 66e1fd99-672d-5d64-aa58-eca107f0fbae
+    internal-label: Push
 subfeature_v2:
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
@@ -92,9 +94,6 @@ Configure the action that occurs when recipients tap the body of your push notif
 * **[!UICONTROL Deeplink]**: Directs users to specific content within your app, such as a particular view, page section, or tab. Enter the deep link URL in the provided field.
 * **[!UICONTROL Web URL]**: Directs users to an external webpage. Enter the destination URL in the provided field.
 
-When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field — hover over it to see the complete URL.
-
-![](assets/push-link-tooltip.png)
 
 >[!NOTE]
 >
@@ -110,6 +109,10 @@ When a URL in any link or media field is too long to display, a tooltip icon is 
 
 Enhance your push notification by adding visual media. The available media types and implementation methods vary by operating system, as detailed in the tabs below.
 
+When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field, hover over it to see the complete URL.
+
+![](assets/push-link-tooltip.png)
+
 >[!BEGINTABS]
 
 >[!TAB Android]
@@ -120,7 +123,7 @@ Enhance your push notification by adding visual media. The available media types
 
 * With **[!UICONTROL Expanded]** layout, enter the URL of the large icon displayed to the side of the notification on Android, or select an asset from [Adobe Experience Manager Assets](../integrations/assets.md) or Generate Content to generate [engaging images](../content-management/generative-image.md) for push notifications.
 
-Once added, the media displays on the right of the notification body.
+Enable the **[!UICONTROL Show entire image]** option to scale the image to fit the available space so the entire image remains visible.
 
 >[!NOTE]
 >
@@ -250,5 +253,7 @@ You can configure **[!UICONTROL Advanced options]** for your push notification. 
 |**[!UICONTROL Notification priority]** (Android only) | Defines the push notification's importance from Low to Max. This determines how "intrusive" the push notification will be when it is delivered. For more on this, refer to the [Android developer documentation](https://developer.android.com/guide/topics/ui/notifiers/notifications#importance)|
 |**[!UICONTROL Delivery priority]** (Android only) | Sets up a high or normal priority for your push notifications. For more information on message priority, refer to the [Google developer documentation](https://firebase.google.com/docs/cloud-messaging/concept-options#setting-the-priority-of-a-message).|
 |**[!UICONTROL Time to live]** (Android only) | Set the number of seconds after which your message will expire. On Android, expiration is treated as a delivery window: Firebase Cloud Messaging (FCM) converts the expiration time into a time-to-live (TTL) value starting when the message is received, which means undelivered campaigns may be sent later than expected or even outside the desired timeframe. For more on this, refer the [Android developer documentation](https://firebase.google.com/docs/cloud-messaging/concept-options#ttl).|
+
+If your push content returns an error code, see [Content authoring errors](../content-management/content-authoring-errors.md).
 
 {{$include /help/_includes/do-not-localize/push/ai-augmented-design-push.md}}

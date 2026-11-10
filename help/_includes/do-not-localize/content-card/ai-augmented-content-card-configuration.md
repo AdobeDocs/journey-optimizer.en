@@ -52,6 +52,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I target web pages with the configuration?** — Specify a Page URL to apply changes to a single page exclusively, or create a Pages matching rule to target multiple URLs that match the specified rule.
 * **Q: Where do I create a content card configuration?** — Access Channels > General settings > Channel configurations, click Create channel configuration, select the Content card channel, then configure and submit.
 
+**Personas:**
+
+* **admin:** Can create a content card channel configuration from Channel configurations and select Manage access to assign data usage labels. Can select Marketing action(s) to associate consent policies, and specify a Page URL, a Pages matching rule, or an App id for targeting. The page states that configuration names must begin with a letter (A-Z) and can only contain alpha-numeric characters, plus underscore, dot, and hyphen. Where: "Create a content card configuration".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Access the Channels > General settings > Channel configurations menu, then select Create channel configuration.
+* **Success check:** You can now select your configuration when creating your Content card experience.
+* **Next:** Assigning custom or core data usage labels to the configuration: Object level access control (administration/object-based-access.md); Creating a Pages matching rule to target multiple URLs on Web: Web channel configuration (web/web-configuration.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 91dd5e06 -->

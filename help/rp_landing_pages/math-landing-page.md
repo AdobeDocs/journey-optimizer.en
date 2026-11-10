@@ -6,6 +6,9 @@ description: Math
 redpen-status: CREATED_||_2025-08-11_20-16-12
 hide: true
 exl-id: 2df9c6ea-be94-475f-9997-16f10db22f03
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Math{#section-overview}
 

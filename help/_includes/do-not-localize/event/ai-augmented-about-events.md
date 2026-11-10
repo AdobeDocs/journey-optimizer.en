@@ -26,16 +26,16 @@ For complete understanding, this information should be combined with the documen
 * **Business event**: An event not linked to a specific profile, always rule-based, that automatically adds a Read Audience activity and broadcasts to many profiles *(product-specific)*
 * **Audience qualification event**: An event triggered when a profile enters or exits an audience, selected directly on the journey canvas rather than in Administration *(product-specific)*
 * **Read Audience activity**: The activity automatically added after a business event to define which profiles receive the journey *(product-specific)*
-* **Rule-based event**: A unitary or business event that does not generate an eventID and instead defines a rule used to identify relevant events *(product-specific)*
+* **Rule-based event**: A type of unitary event (business events are always rule-based) that does not generate an eventID and instead defines a rule used to identify relevant events *(product-specific)*
 * **System-generated event**: A unitary event that requires an eventID, automatically generated when the event is created *(product-specific)*
 
 **Guardrails:**
 
 * Event configuration is mandatory and must be performed by a Data engineer; prerequisites are the Journey Optimizer Administrator or Data Engineer role, an XDM schema with Real-Time Customer Profile enabled, an active streaming endpoint, and access to the correct sandbox.
 * Throughput is limited to 5,000 events per second per organization, across all sandboxes, for unitary events and for Read Audience based journey events (hard limit); when a limit is reached, new events are queued and processed at 5,000 per second until the queue is drained.
-* A capping rule limits rule-based events to 5,000 qualified events per second for a given Organization, corresponding to Journey Optimizer SLAs.
+* A capping rule limits the number of qualified events that a journey can process to 5,000 per second for a given Organization for rule-based events, corresponding to Journey Optimizer SLAs.
 * Throughput limits apply to all events used in active journeys, which includes Live, Dry run, Closed, and Paused journeys.
-* Profile reentrance is blocked by default for 5 minutes after a unitary journey triggers.
+* Unitary journeys include a reentrance guardrail: profile reentrance is blocked by default for 5 minutes after the journey triggers.
 * A journey can contain only one business event, which must be the first step; business events cannot be used in the same journey as unitary events or audience qualification activities.
 * Only streamed events can trigger journeys; events ingested in batch, inserted via Query Service, or from internal Journey Optimizer datasets cannot, and a Read Audience activity should be used instead.
 * Unitary events require an XDM ExperienceEvent schema with a person-based primary identity and Real-Time Customer Profile enabled; business events require a time-series schema with a non-person primary identity and populated `_id` and `timestamp` fields, with an audience export delay of 15 minutes to up to one hour.
@@ -43,9 +43,9 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Journey event — Acronym: n/a — variants: event, journey trigger event
+* Canonical name: Work with journey events
 * Do not confuse: "Unitary event" (linked to a specific person) ≠ "Business event" (external occurrence not tied to one person) ≠ "Audience qualification event" (triggered when a profile enters or exits an audience)
-* Do not confuse: "Rule-based" (defines a rule, no eventID generated) ≠ "System-generated" (requires an automatically generated eventID)
+* Do not confuse: "Rule-based" (unitary event type that does not generate an eventID and defines a rule) ≠ "System-generated" (unitary event type that requires an eventID, automatically generated when creating the event)
 
 **FAQ:**
 
@@ -56,6 +56,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is the throughput limit for events?** — 5,000 events per second per organization, across all sandboxes, for unitary events and for Read Audience based journey events.
 * **Q: My journey is not triggering — what should I check?** — Verify the event schema has Real-Time Customer Profile enabled, confirm events are streamed, check that rule-based conditions match the incoming payload, and confirm the journey is in Live status with the profile meeting any entry conditions.
 
+**Personas:**
+
+* **developer:** Can configure a rule-based unitary event using any field in the event payload. Can configure a system-generated event, whose eventID field is generated automatically when the event is created. The page states that only streamed events can trigger journeys, and batch-ingested or Query Service events cannot. Where: "Event ID type".
+* **admin:** Can configure unitary and business events in Administration > Events; audience qualification events are not configured there. Can edit an event used in a Draft, Live, or Closed journey by changing only the name, the description, or by adding payload fields. The page states that profile reentrance is blocked for 5 minutes after a unitary journey triggers. Where: "Key constraints".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** Design and create the XDM schema with Real-Time Customer Profile enabled.
+* **Success check:** The profile enters the journey in real time when the event fires.
+* **Previous:** Before configuring events, check the event requirements and limitations in the guardrails: Journey Optimizer guardrails and limitations (start/guardrails.md); Before configuring events, review the overview of Data Sources, Events, and Actions: Configure journeys – Data Sources, Events, and Actions (configuration/about-data-sources-events-actions.md)
+* **Next:** After designing the XDM schema, configure a unitary event: Configure a unitary event (event/about-creating.md); After designing the XDM schema, configure a business event: Configure a business event (event/about-creating-business.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 7d9ddd04 -->
+<!-- ai-section-version: 1 | source-hash: da4aafd6 -->

@@ -25,14 +25,14 @@ For complete understanding, this information should be combined with the documen
 * **Unitary event**: An event linked to a specific profile that can be rule-based or system-generated *(product-specific)*
 * **Identity type**: The type of key used to identify the person associated to the event, previously known as namespace; only people-based identity types can be selected *(product-specific)*
 * **Profile identifier**: The field, or combination of fields, from the event payload that allows the system to identify the person associated to the event *(product-specific)*
-* **eventID**: The field required for system-generated events, automatically generated when creating the event; the system pushing the event should pass the one available in the payload preview *(product-specific)*
+* **eventID**: For system-generated events, the field automatically added to the list of selected fields so that Journey Optimizer can identify the event; the system pushing the event should not generate an ID and should use the one available in the payload preview *(product-specific)*
 * **Orchestration field group**: The field group that must be added to the XDM schema for system-generated events so the schema contains all information required to work with Journey Optimizer *(product-specific)*
 * **Advanced expression editor**: The editor you can switch to for creating more complex keys, such as a concatenation of two event fields *(product-specific)*
 
 **Guardrails:**
 
 * The event name allows only alphanumeric characters and underscores, with a maximum length of 30 characters (hard limit).
-* When you select the System Generated type, only schemas that have the eventID type field are available; when you select the Rule Based type, all Experience Event schemas are available.
+* When you select the System Generated type, only schemas that have the eventID type field are available; when you select the Rule Based type, you can select any Experience Event schema available in your sandbox.
 * Adding an identity type is optional but recommended, and only a people-based identity type can be selected.
 * Only one identity type is allowed per journey, so events used in the same journey must use the same identity type.
 * The same key, for example CRMID=3224, cannot be at two different places in the same journey.
@@ -40,19 +40,32 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Unitary event — Acronym: n/a — variants: unitary event configuration
+* Canonical name: Configure a unitary event
 * Synonyms: "Identity type" = "namespace"
-* Do not confuse: "Rule Based" (defines a condition and does not generate an eventID) ≠ "System Generated" (requires an eventID automatically generated when creating the event)
+* Do not confuse: "Rule Based" (uses an Event ID condition, and you can select any Experience Event schema available in your sandbox) ≠ "System Generated" (only schemas that have the eventID type field are available; the eventID field is automatically added to the selected fields)
 * Do not confuse: "Event ID condition" (rule used to identify events that trigger the journey) ≠ "Profile identifier" (key used to identify the person associated to the event)
 
 **FAQ:**
 
-* **Q: What are the two Event ID types for a unitary event?** — Rule Based, which defines a condition and does not generate an eventID, and System Generated, which requires an eventID automatically generated when creating the event.
+* **Q: What are the two Event ID types for a unitary event?** — Rule Based, which uses an Event ID condition, and System Generated, for which the eventID field is automatically added to the list of selected fields.
 * **Q: Is defining an identity type required?** — It is optional but recommended, as it allows you to leverage information stored in the Real-time Customer Profile Service; only a people-based identity type can be selected.
-* **Q: Why can two profiles not sit at the same place in a journey with the same key?** — A person cannot be at two different places in the same journey, so the system does not allow the same key to be at different places in the same journey.
-* **Q: What schemas are available for a System Generated event?** — Only schemas that have the eventID type field; for Rule Based events, all Experience Event schemas are available.
+* **Q: Why does the system not allow the same key at different places in the same journey?** — A person cannot be at two different places in the same journey, so the system does not allow the same key to be at different places in the same journey.
+* **Q: What schemas are available for a System Generated event?** — Only schemas that have the eventID type field; for Rule Based events, you can select any Experience Event schema available in your sandbox.
 * **Q: How do I preview the payload for a system-generated event?** — Save the event and re-open it first to generate an event ID, then use the View Payload icon to check the preview.
+
+**Personas:**
+
+* **developer:** Can define the schema and payload fields an event expects to receive for use in the journey. Can define the profile identifier, the field or combination of fields that identifies the person associated to the event. The page states that the same key, for example CRMID=3224, cannot be at two different places in the same journey. Where: "Define the profile identifier".
+* **admin:** Can create a unitary event, name it, and choose the Rule Based or System Generated Event ID type. Can add an identity type to leverage information stored in the Real-time Customer Profile Service. The page states that the event name allows only alphanumeric characters and underscores, with a maximum length of 30 characters. Where: "Configure a unitary event".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** Select Create Event to create a new event.
+* **Success check:** The event is now configured and ready to be dropped into a journey.
+* **Previous:** Understand what a unitary event is before configuring one: Work with journey events (event/about-events.md)
+* **Next:** After saving the event, complete the additional steps to send events to a journey: Additional steps to send events to a journey (event/additional-steps-to-send-events-to-journey.md); Use the configured key to perform queries on Adobe Experience Platform in journey activities: Get started with journey activities (building-journeys/about-journey-activities.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: bf9f8d81 -->
+<!-- ai-section-version: 1 | source-hash: 3c8e5ec1 -->

@@ -46,7 +46,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: SMS Webhook — Acronym: n/a — variants: SMS webhooks, Callback URL
+* Canonical name: SMS Webhook — variants: SMS webhooks, Callback URL
 * Do not confuse: "Inbound" webhook (captures consent responses and user preferences) ≠ "Feedback" webhook (tracks delivery and engagement events)
 * Do not confuse: "Opt-In" (grants consent) ≠ "Double Opt-In" (two-step consent requiring confirmation with a second keyword)
 * Do not confuse: "Reply Message" (sent when an inbound message matches a configured keyword) ≠ "Default Reply Message" (sent when the response does not match any configured keyword) ≠ "Fuzzy Auto Response" (sent when a response is close but not an exact Opt-Out keyword)
@@ -59,6 +59,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which fields must a custom inbound payload include?** — InboundMessage, ProfileNumber, RequestID, OriginTimestamp, and InboundNumber.
 * **Q: When does a webhook take effect?** — If it uses API credentials attached to an existing channel configuration, it takes effect immediately; otherwise you must create a new channel configuration.
 * **Q: Why are incoming messages not captured for a profile?** — A profile must have at least one message sent from Journey Optimizer before incoming messages are captured.
+
+**Personas:**
+
+* **admin:** Can configure a webhook as Inbound or Feedback to capture opt-in and opt-out consent or delivery and engagement events. Can create one webhook for Sinch and Sinch Conversational, or two separate webhooks for Infobip and custom providers. The page states that the only webhook format supported is JSON, and form-data for webhooks is not supported. Where: "Provider support".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Navigate to Administration, then Channels, select the SMS Webhooks menu under SMS settings, and select Create Webhook.
+* **Success check:** The webhook takes effect immediately if it uses API credentials attached to an existing channel configuration.
+* **Previous:** Configured API credentials for Sinch before creating the webhook: Configure Sinch provider (mobile/mobile-configuration-sinch.md); Configured API credentials for Infobip before creating the webhook: Configure Infobip provider (mobile/mobile-configuration-infobip.md)
+* **Next:** The webhook does not use API credentials attached to an existing channel configuration: Configure the SMS configuration (mobile/mobile-configuration-surface.md)
 
 +++
 

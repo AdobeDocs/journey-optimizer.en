@@ -55,6 +55,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How can I personalize which content is shown?** — Use Decisioning, which selects the best content using Priority Scores, Formulas, or AI Models.
 * **Q: What is the difference between iOS and Android expiration?** — On iOS, Push expiration is a hard stop (undelivered after expiry); on Android, Time to live is a delivery window converted by FCM, so messages may be sent later than expected.
 
+**Personas:**
+
+* **marketer:** Can compose the push notification Title and Body, and configure on-click behavior as Open app, Deeplink, or Web URL. Can add media, buttons, custom data, and advanced options, and personalize content with Decisioning using Priority Scores, Formulas, or AI Models. The page states that Android supports up to three buttons, and Web push does not support Silent Notification. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select the Title and Body fields to compose your message.
+* **Success check:** Use the device preview to see how the notification displays on iOS, Android, and Web.
+* **Previous:** Create a push notification before designing its content: Push Notification flow in Adobe Journey Optimizer (push/push-gs.md); Configure the app in channel configuration for the Open app on-click behavior: Set up channel configurations (configuration/channel-surfaces.md)
+* **Next:** Create and use decision policies to personalize push content with Decisioning: Get started with decisions policies (experience-decisioning/create-decision.md); If your push content returns an error code: Content authoring errors (content-management/content-authoring-errors.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 7f203b9e -->
+<!-- ai-section-version: 1 | source-hash: 4625b7e3 -->

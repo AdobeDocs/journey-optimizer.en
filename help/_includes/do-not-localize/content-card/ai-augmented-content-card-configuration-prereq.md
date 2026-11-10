@@ -52,6 +52,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: How can I troubleshoot mobile content card delivery?** — Use the Edge Delivery view within Adobe Experience Platform Assurance to inspect requests, verify edge calls, and examine profile data.
 * **Q: What should I consider when targeting unauthenticated visitors?** — Consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs.
 
+**Personas:**
+
+* **admin:** Can create a datastream, enable the Edge Segmentation and Adobe Journey Optimizer options, and create a content card configuration in Journey Optimizer. Can enable Active-On-Edge Merge Policy under Customer, Profiles, Merge Policies, and add the Journey Inbound dataset for a custom Dataset preference merge policy. The page states that a Time-To-Live can be set for pseudonymous profiles to manage the engageable profile count and associated costs. Where: "Content cards prerequisites".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Create a datastream and enable the Edge Segmentation and Adobe Journey Optimizer options.
+* **Next:** add datasets for content experiment reporting: Configure Journey Optimizer reporting for experimentation (reports/reporting-configuration.md); manage engageable profile count with a TTL for pseudonymous profiles: Journey Optimizer guardrails and limitations (start/guardrails.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 8dabeb24 -->

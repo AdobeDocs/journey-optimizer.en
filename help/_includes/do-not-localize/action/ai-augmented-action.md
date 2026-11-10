@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Action**: A connection through which you deliver personalized, real-time experiences to customers, such as push notifications, email, SMS, or other digital engagement *(product-specific)*
+* **Action**: A connection through which you deliver personalized, real-time experiences to customers, such as push notifications, email, mobile messages, or other digital engagement *(product-specific)*
 * **Custom action**: A configured connection to a third-party system that sends messages or API calls, defined by technical users and made available to marketers *(product-specific)*
 * **Built-in message capability**: The messaging capability that comes with Journey Optimizer, distinct from custom actions *(product-specific)*
 
@@ -44,6 +44,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I connect Adobe Campaign v7 or v8?** — An integration is available upon request; refer to the Adobe Campaign v7/v8 integration page.
 * **Q: Where do custom actions appear after configuration?** — In the left palette of your journey, in the Action category.
 * **Q: Where is the action list found?** — Select Configurations in the ADMINISTRATION menu section, then click Manage in the Actions section.
+
+**Personas:**
+
+* **developer:** Can configure a custom action to connect third-party systems such as Epsilon, Facebook, Adobe Developer, or Firebase for sending messages or API calls. The page states that an action can use any service or provider through a REST API with a JSON-formatted payload. Where: "Get started with custom actions".
+* **admin:** Can access the action list by selecting Configurations in the ADMINISTRATION menu section. Can select Manage in the Actions section to display the list of actions. The page states that the configuration of custom actions must be performed by a technical user. Where: "Get started with custom actions".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select Configurations in the ADMINISTRATION menu section, then select Manage in the Actions section.
+* **Success check:** The list of actions is displayed.
+* **Previous:** For a complete overview and configuration checklist for Data Sources, Events, and Actions before configuring custom actions: Configure journeys – Data Sources, Events, and Actions (configuration/about-data-sources-events-actions.md)
+* **Next:** Using Adobe Campaign v7 or v8 for messaging: Integrate with Adobe Campaign v7/v8 (action/acc-action.md); Using a third-party system such as Epsilon, Facebook, Adobe Developer, or Firebase to send messages: Configure a custom action (action/about-custom-action-configuration.md)
 
 +++
 

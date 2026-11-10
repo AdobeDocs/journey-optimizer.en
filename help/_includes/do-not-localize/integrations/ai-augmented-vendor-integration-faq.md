@@ -29,7 +29,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Outbound channels are supported (for example email, SMS, and push).
+* Outbound channels are supported (for example email, Mobile message, and push).
 * For API call responses, JSON and HTML are supported for field mapping; raw binary image output and formats that are not JSON are not available.
 * Retrieval APIs that target specific content are supported; Listing APIs (broad list or pagination patterns) are not supported.
 * To configure Integrations, users need the Manage AJO integration configuration and View AJO integration configuration permissions.
@@ -46,12 +46,24 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Which channels support Integrations?** — Outbound channels (for example email, SMS, and push).
+* **Q: Which channels support Integrations?** — Outbound channels (for example email, Mobile message, and push).
 * **Q: Which API response formats are supported?** — JSON and HTML; raw binary image output and non-JSON formats are not available.
 * **Q: Which API patterns can I connect to?** — Retrieval APIs that target specific content; Listing (broad list or pagination) APIs are not supported.
 * **Q: Can I use Integrations in reusable fragments?** — Yes, the feature is supported in Fragments.
 * **Q: Do Integrations replace Experience Platform Sources?** — No; Integrations drive personalization fields from APIs, while Sources handle data ingestion such as batch ingestion and profile enrichment.
 * **Q: Why do marketers not see my integration in the picker?** — Integrations must be activated after a successful test; only active integrations appear.
+
+**Personas:**
+
+* **marketer:** Can use Add personalization on a Text or HTML component to open Integrations, select an active integration, and map attributes. Can use Pills mode in the personalization editor to map values to variables, such as header or query parameters or path variables in the URL. The page states that administrators can limit which fields are available to marketers during authoring. Where: "Configuration".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Go to Configurations in the left menu, open Manage from the Integrations card, then select Create Integration.
+* **Success check:** The test connection succeeds and the integration can be activated.
+* **Previous:** Learn what Integrations do before using them: Enable External Integrations (integrations/integrations.md)
+* **Next:** See vendor integration examples and procedures: Vendor Integration (integrations/vendor-integration.md); Use Integrations within reusable Fragments: AEM Content Fragments (integrations/aem-fragments-gs.md)
 
 +++
 

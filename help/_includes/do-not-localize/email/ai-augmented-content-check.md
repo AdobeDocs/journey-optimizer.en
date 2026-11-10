@@ -52,6 +52,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is a Stale check label?** — It appears when you make edits without saving, indicating a result (such as CSS size, calculated from serialized content) may no longer be accurate; save to refresh.
 * **Q: What are the three severity levels?** — Error (Red), Warning (Orange), and Info (Blue).
 
+**Personas:**
+
+* **marketer:** Can select the Issues icon in the right rail to open the Content check pane and view all detected issues, marked as Error, Warning, or Info. Can select Show details for more context on an issue, and select Show fix to apply a one-click fix where available, or save the email to refresh a stale check result. The page states that an Error is a critical issue causing delivery or rendering failures, to resolve before sending. Where: "Access content checks".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Select the Issues icon in the right rail to open the Content check pane.
+* **Success check:** The pane displays No issues detected and the corresponding icon is green.
+* **Next:** Learn how the Optimize HTML size option reduces the final payload at send time: Create an email (email/create-email.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: f94d298d -->

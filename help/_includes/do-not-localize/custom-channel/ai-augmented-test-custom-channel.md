@@ -39,10 +39,10 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Simulate content — Acronym: n/a — variants: content simulation with test profiles
+* Canonical name: Simulate content — Acronym: n/a
 * Synonyms: "Test mode" = journey test mode; "Simulation" = journey simulation
 * Do not confuse: "Simulate content" (resolves personalization expressions against test profiles to inspect the payload) ≠ "Send proof" (calls your external endpoint with the personalized payload for test recipients) ≠ "Simulation" (validates the journey end to end using simulated users without pre-created test profiles)
-* Do not confuse: "Test profiles" (used by Simulate content and Send proof) ≠ "Simulated users" (temporary profile-like entities used by Simulation)
+* Do not confuse: "Test profiles" (selected in Simulate content) ≠ "Simulated users" (temporary profile-like entities used by Simulation)
 
 **FAQ:**
 
@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I end a journey test?** — Click Stop test when done.
 * **Q: What should I confirm before activating?** — The connection test succeeded, simulated payloads show expected values, no unresolved personalization tokens remain, all required payload fields are populated, a proof was sent and received correctly, and any configured error paths handle failure scenarios.
 
+**Personas:**
+
+* **marketer:** Can simulate content against test profiles in the Simulate content feature to inspect the resolved payload before any real message is sent. Can send a proof to test recipients, including profiles uploaded as a CSV file that are not defined as test profiles in Journey Optimizer. The page states that proof results are displayed using the same validation patterns as email proofing, surfacing required fields, type mismatches, and schema validation errors. Where: "Preview and test your custom channel experience".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Use the Test button in the Channel Builder to send a test request to your endpoint while the custom channel is in Draft status.
+* **Success check:** Your external system's logs confirm that the test request was received with the expected headers and payload structure.
+* **Previous:** Creating the custom channel that needs to be tested: Create a custom channel (custom-channel/create-custom-channel.md); Creating test profiles to use when simulating content: Create test profiles (audience/creating-test-profiles.md)
+* **Next:** Activating the custom channel experience once testing is complete: Create custom channel experiences (custom-channel/create-custom-experience.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: d700d9c3 -->
+<!-- ai-section-version: 1 | source-hash: f5a7f1e0 -->

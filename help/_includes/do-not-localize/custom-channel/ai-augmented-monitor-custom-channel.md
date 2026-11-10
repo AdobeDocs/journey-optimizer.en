@@ -38,8 +38,8 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Custom channels monitoring dashboard — Acronym: n/a — variants: custom channel monitoring dashboard, Custom channel metrics
-* Synonyms: "Attempted deliveries" = total number of messages sent to the external endpoint
+* Canonical name: Custom channels monitoring dashboard — Acronym: n/a — variants: custom channel monitoring dashboard
+* Report metric "Attempted deliveries": total number of messages sent to the external endpoint
 * Do not confuse: "Successful deliveries" (report metric: messages for which the endpoint returned an HTTP 2xx response) ≠ "Successful calls" (monitoring metric: total HTTP calls that returned a valid response without error)
 * Do not confuse: "4xx/5xx errors" (failed calls due to client-side or server-side errors) ≠ "Timeout calls" (calls that exceeded the maximum response time) ≠ "Pre-call failures" (sends that failed before the HTTP call was made)
 
@@ -50,8 +50,20 @@ For complete understanding, this information should be combined with the documen
 * **Q: What are pre-call failures?** — Custom channel sends that failed before the HTTP call was ever made to the external endpoint; they occur in Journey Optimizer's own infrastructure layer and include authentication failures, request generation errors, and HTTP parse errors.
 * **Q: My calls return HTTP 429 errors. What should I do?** — The external endpoint is throttling requests from Journey Optimizer; review your endpoint's rate limits and reduce the throttling setting in the Channel Builder policy configuration.
 * **Q: How does the report time granularity change with the time range?** — A 7-day report shows one data point per day, a 1-day range shows KPIs per hour, and a 1-hour range shows KPIs per minute.
-* **Q: How do I troubleshoot unresolved personalization tokens?** — Verify the XDM attribute path is correct and add a default value fallback, for example `{{profile.person.name.firstName \| default("Valued Customer")}}`.
+* **Q: How do I troubleshoot unresolved personalization tokens?** — Verify the XDM attribute path is correct and add a default value fallback, for example `{{profile.person.name.firstName | default("Valued Customer")}}`.
+
+**Personas:**
+
+* **marketer:** Can monitor custom channel delivery performance through campaign and journey reports and the custom channels monitoring dashboard. Can view metrics such as successful calls, 4xx/5xx errors, timeout calls, and pre-call failures, and drill down to campaigns and journeys. The page states that pre-call failures occur in Journey Optimizer's own infrastructure layer, not in the external system. Where: "Monitor delivery performance".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Access the custom channels monitoring dashboard from Administration, Channels, Channel Builder, Custom channels monitoring.
+* **Success check:** You can spot integration issues, latency, and throttling limits in the dashboard.
+* **Previous:** Create and activate a custom channel before monitoring its delivery performance: Create a custom channel (custom-channel/create-custom-channel.md)
+* **Next:** Learn more about live reports for custom channel delivery data: Live report (reports/live-report.md); Get details on reporting functionalities referenced for custom channel monitoring: Reporting (reports/report-cja-manage.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: e6dd6dee -->
+<!-- ai-section-version: 1 | source-hash: 6cb7181f -->

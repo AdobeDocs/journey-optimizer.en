@@ -10,10 +10,22 @@ role: Developer
 level: Intermediate
 keywords: expression, editor
 exl-id: 2fc10fdd-ca9e-46f0-94ed-2d7ea4de5baf
-TQID: https://experienceleague.adobe.com/DRnUwE5hO6ysGY9D9NeqgAHESjd8HHsCpiHDeqHLiJo
+TQID: 'https://experienceleague.adobe.com/DRnUwE5hO6ysGY9D9NeqgAHESjd8HHsCpiHDeqHLiJo'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+  - id: e27fbada-1278-56f5-ac8f-e77b392cb15b
+    internal-label: Personalization
+  - id: 736fce34-6237-51e6-acd3-371abb174feb
+    internal-label: Rules
+subfeature_v2:
+  - id: cb09dcb7-3367-4b63-b02c-8a1356eb876e
+    internal-label: Main functions
+  - id: f0577040-fadd-46a1-b0ae-9c7f828bb2da
+    internal-label: Collection management functions
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
@@ -23,14 +35,6 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-feature_v2:
-  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
-    internal-label: Build expressions
-subfeature_v2:
-  - id: cb09dcb7-3367-4b63-b02c-8a1356eb876e
-    internal-label: Main functions
-  - id: f0577040-fadd-46a1-b0ae-9c7f828bb2da
-    internal-label: Collection management functions
 ---
 # Use Adobe Experience Platform data for personalization {#aep-data}
 
@@ -43,8 +47,6 @@ subfeature_v2:
 >[!AVAILABILITY]
 >
 >This feature is currently available to all customers as a limited availability release.
->
->For now, the "datasetLookup" helper function can be used within expression fragments for a limited set of customers. To gain access, contact your Adobe representative.
 
 Journey Optimizer allows you to leverage data from Adobe Experience Platform record datasets in the personalization editor to [personalize your content](../personalization/personalize.md). Before starting, datasets needed for lookup personalization must first be enabled for lookup. Detailed information is available in this section: [Use Adobe Experience Platform data](../data/lookup-aep-data.md).
 

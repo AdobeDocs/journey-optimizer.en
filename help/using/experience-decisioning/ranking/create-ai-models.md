@@ -9,15 +9,24 @@ role: User
 level: Intermediate
 exl-id: 532392d6-3637-4381-984d-f5b630f6d32d
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/Mmplq31zfIn3ieSWbe4Kc3EeJoMJ45vjI51t8GsgGgs
+TQID: 'https://experienceleague.adobe.com/Mmplq31zfIn3ieSWbe4Kc3EeJoMJ45vjI51t8GsgGgs'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decisioning
+    internal-label: Decision capabilities
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
+  - id: 69102627-e6ba-56f5-ae85-9cc5357f529e
+    internal-label: Offers
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
+  - id: 687cafea-8a14-5656-a74f-20be1c58b419
+    internal-label: Ranking
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -31,11 +40,6 @@ topic_v2:
     internal-label: Artificial intelligence
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-subfeature_v2:
-  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
-    internal-label: Decisioning API
-  - id: eb547372-2a95-4d13-b0fd-f720c9895880
-    internal-label: Edge Decisioning
 ---
 # Build AI models {#create-ai-models}
 
@@ -63,6 +67,10 @@ To access the list of AI models, go to **[!UICONTROL Decisioning]** > **[!UICONT
 >abstract="[!DNL Journey Optimizer] rank offers based on the **conversion rate** (Conversion rate = Total number of conversion events / Total number of impression events). The conversion rate is calculated using two types of metrics: **Impression events** (offers that are displayed) and **Conversion events** (offers that result in clicks via email or web). These events are automatically captured using the Web SDK or the Mobile SDK that has been provided."
 
 To create an AI model, follow the steps below:
+
+>[!NOTE]
+>
+>If you plan to use profile or context features in a **[!UICONTROL Personalized optimization]** model, make sure the data is available before you start. Profile attributes must exist in your organization's profile schema. Context data is sent by the Web SDK or Mobile SDK and defined in your datastream configuration. [Learn how to set up context data](../context-data.md)
 
 1. Create a dataset where conversion events will be collected. [Learn how](../data-collection/create-dataset.md)
 
@@ -133,19 +141,41 @@ To create an AI model, follow the steps below:
     >
     >You can select up to 50 audiences.
 
+1. If you are creating a **[!UICONTROL Personalized optimization]** AI model, you can also select profile and context attributes to use as features to train the AI model, in addition to or instead of audiences. [Learn more about feature types](personalized-optimization-model.md#how)
+
+    ![](../assets/ai-model-profile-context-attributes.png){width=100%}
+
+    >[!AVAILABILITY]
+    >
+    >Profile features and context features are currently available as a Limited Availability release. Contact your Adobe representative to gain access.
+
+    +++ Selecting profile and context features
+
+    >[!CAUTION]
+    >
+    >During Limited Availability, only add profile and context features when creating a new AI model. Do not edit an existing AI model to add these features.
+
+    * In the **[!UICONTROL Profile features]** section, click **[!UICONTROL Manage profile features]** and select up to 50 attributes from your profile schema, such as loyalty tier or churn propensity score. Your selection displays in the right pane. Click **[!UICONTROL Save]**.
+
+      If applicable, data governance (DULE) policies are automatically applied to the selected profile features.
+
+    * In the **[!UICONTROL Context features]** section, click **[!UICONTROL Manage context features]** to define the context attributes sent with the decision request, such as device type, language, or country code. Automatic features (always included) and recommended features (can be removed) are pre-selected. You can add up to 20 additional context features. Click **[!UICONTROL Save]**.
+
+      Context features are only available for decisioning policies used in inbound channels. Context values must be sent in the decision request, using the Web SDK or Mobile SDK and your datastream configuration.
+
+    +++
+
 1. Save and activate the AI model. Once your model is live, you can [monitor its training status and performance](ai-model-observability.md).
-
-<!--
-At this point, you must have:
-
-* created the AI model,
-* defined which type of event you want to capture - offer displayed (impression) and/or offer clicked (conversion),
-* and in which dataset you want to collect the event data.
--->
 
 Now each time an offer is displayed and/or clicked, you want the corresponding event to be automatically captured by the **[!UICONTROL Experience Event - Proposition Interactions]** field group using the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html#what-is-adobe-experience-platform-web-sdk%3F){target="_blank"} or Mobile SDK.
 
 To be able to send in event types (offer displayed or offer clicked), you must set the correct value for each event type in an experience event that is sent into Adobe Experience Platform. [Learn how](../data-collection/schema-requirement.md)
+
+## Use the AI model {#use-ai-model}
+
+Once the AI model is active, use it as the ranking method of a [selection strategy](../selection-strategies.md#ai-ranking), then add that strategy to a [decision policy](../create-decision-policy.md). Selection strategies and decision policies are built the same way whether they use an auto-optimization or a personalized optimization model.
+
+If your model uses context features, the decision request must also carry the context values. [Learn more](personalized-optimization-model.md#pass-context)
 
 <!--
 ## How-to video {#video}

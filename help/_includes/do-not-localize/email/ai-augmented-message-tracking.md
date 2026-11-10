@@ -34,6 +34,7 @@ For complete understanding, this information should be combined with the documen
 * Both Email opens and Click on email options are enabled by default.
 * A unique urlID is generated only when both the URL and the label are unique; otherwise the same urlID is reused and you cannot tell which link was clicked — use a unique label for each similar URL (in the Email Designer or via the `data-label` HTML attribute).
 * Journey Optimizer complies with URI syntax (RFC 3986), which disables some special international characters in URLs; URL-encode unsupported characters (for example, use `%27` for an apostrophe) to avoid errors when sending a proof or email.
+* If a link in the HTML is malformed, tracking cannot be added to it; correct the link in the HTML and save again.
 * Marketing-type email messages must include an opt-out link; this is not required for transactional messages. The category (Marketing or Transactional) is defined in the channel configuration.
 * Mirror page links are auto-generated and cannot be edited; heavy runtime personalization can make mirror page URLs excessively large and cause HTTP errors (404, 422, 502).
 * In a proof sent to test profiles, the mirror page link is not active; it is only active in the final messages.
@@ -55,6 +56,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which tracking types can I set for a URL?** — Tracked, Opt out, Mirror page, or Never.
 * **Q: Where is open and click reporting available?** — In the Live report and the Customer Journey Analytics report.
 
+**Personas:**
+
+* **marketer:** Can select External link, Landing page, One click Opt-out, External Opt-in/Subscription, External Opt-out/Unsubscription, Mirror page, or Deeplink to insert links into email content. Can enter a URL or select a landing page, then personalize the link and set its settings and styles. The page states that marketing-type email messages must include an opt-out link, which is not required for transactional messages. Where: "Insert links".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Select an element and select Insert link from the contextual toolbar.
+* **Success check:** The Settings and Styles panes on the right become available to modify the link.
+* **Previous:** Creating a landing page to link to from your email content: Create a landing page (landing-pages/create-lp.md); Creating a fragment whose links will also be tracked in your email: Get started with fragments (content-management/fragments.md)
+* **Next:** Viewing reporting on email opens and clicks in the Live report: Live report (reports/live-report.md); Viewing reporting on email opens and clicks in the Customer Journey Analytics report: Updated reporting experience (reports/report-gs-cja.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 1fcd5252 -->
+<!-- ai-section-version: 1 | source-hash: d1d0aad4 -->

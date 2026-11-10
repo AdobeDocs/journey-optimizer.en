@@ -53,6 +53,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What does the Pills option do?** — It renders long attribute paths as compact, clickable tokens for better readability in the editor. Available only for profile attributes, contextual attributes, and dynamic media.
 * **Q: Why do I see only some attributes in the attributes pane?** — By default, the pane shows only populated attributes. Select the settings icon above the search field and toggle off "Show only populated attributes" to display all schema attributes.
 
+**Personas:**
+
+* **developer:** Can select personalization sources including profile attributes, target attributes, audiences, offer decisions and contextual attributes to build expressions. Profile attributes list all references from the profile schema, and offer decisions list offers associated to a specific placement. The page states that contextual attributes are available only when a channel action is used in a journey or campaign. Where: "Personalization sources".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Locate an attribute in the left navigation pane and select the + button to add it into the expression.
+* **Success check:** The attribute is added into the expression in the central workspace.
+* **Next:** For ready-to-use expressions for common use cases: Personalization recipes (personalization/personalization-recipes.md); Fixing, editing or explaining an existing personalization expression: Generate content for personalization expressions (content-management/generative-personalization-expressions.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 54973b31 -->

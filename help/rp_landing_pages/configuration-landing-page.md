@@ -5,10 +5,13 @@ title: Channel configuration
 description: Channel configuration
 redpen-status: CREATED_||_2025-08-11_21-10-00
 exl-id: 4cd5f097-1c17-4cc5-90c4-bc540dc6acf4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Channel configuration{#section-overview}
 
-Channel configuration in Adobe Journey Optimizer empowers you to manage how messages are delivered across various channels like email, SMS, push notifications, and web ensuring tailored and effective communication.
+Channel configuration in Adobe Journey Optimizer empowers you to manage how messages are delivered across various channels like email, mobile messages, push notifications, and web ensuring tailored and effective communication.
 
 Whether you're setting up technical parameters, configuring subdomains, or optimizing email deliverability with IP warmup plans, each step is designed to enhance message performance and compliance.
 

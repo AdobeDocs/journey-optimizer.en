@@ -8,12 +8,25 @@ topic: Content Management
 role: User, Developer
 level: Intermediate, Experienced
 keywords: dynamic, fragment, expression, personalization, runtime
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
 subfeature_v2:
   - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
     internal-label: Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 ---
 # Use dynamic fragments {#dynamic-fragments}
 
@@ -37,7 +50,7 @@ Dynamic fragment IDs can come from three sources:
 
 >[!NOTE]
 >
->Using the `datasetLookup` helper function within expression fragments is currently available for a limited set of customers. To gain access, contact your Adobe representative.
+>This feature is currently available to all customers as a limited availability release.
 
 ## Prerequisites {#prerequisites}
 
@@ -94,7 +107,7 @@ In this example, the dataset contains rows keyed by a style value (such as `styl
 
 >[!NOTE]
 >
->Using the `datasetLookup` helper function within expression fragments is currently available for a limited set of customers. To gain access, contact your Adobe representative. For more on dataset lookups in personalization, see [Use Adobe Experience Platform data](../data/lookup-aep-data.md).
+>This feature is currently available to all customers as a limited availability release. For more on dataset lookups in personalization, see [Use Adobe Experience Platform data](../data/lookup-aep-data.md).
 
 ### Resolve from context data {#resolve-from-context}
 

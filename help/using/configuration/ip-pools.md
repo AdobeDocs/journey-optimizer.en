@@ -9,7 +9,7 @@ role: Admin
 level: Experienced
 keywords: IP, pools, group, subdomais, deliverability
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
-TQID: https://experienceleague.adobe.com/z-91TIrSp9KXlFcJRG9wmTRNRA2RU-AaEoMtaLcmNWM
+TQID: 'https://experienceleague.adobe.com/z-91TIrSp9KXlFcJRG9wmTRNRA2RU-AaEoMtaLcmNWM'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -27,9 +27,14 @@ subfeature_v2:
     internal-label: Subdomains
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
@@ -82,19 +87,31 @@ To create an IP pool, follow these steps:
 
     ![](assets/ip-pool-config.png)
 
-When selecting IPs, you can see from the list the PTR records associated with the IPs. This allows you to verify the branding information for each IP when creating an IP pool, and to select IPs with the same branding information for example. [Learn more about PTR records](ptr-records.md)
+    When selecting IPs, you can see from the list the PTR records associated with the IPs. This allows you to verify the branding information for each IP when creating an IP pool, and to select IPs with the same branding information for example. [Learn more about PTR records](ptr-records.md)
 
-![](assets/ip-pool-ptr-record.png)
+    ![](assets/ip-pool-ptr-record.png)
 
->[!NOTE]
->
->If no PTR record is configured for an IP, you cannot select that IP. Reach out to your Adobe representative for configuring the PTR record of that IP.<!--Now this only happens when first subdomain delegated to Adobe is with CNAME method.-->
+    >[!NOTE]
+    >
+    >If no PTR record is configured for an IP, you cannot select that IP. Reach out to your Adobe representative for configuring the PTR record of that IP.<!--Now this only happens when first subdomain delegated to Adobe is with CNAME method.-->
+
+1. If your organization has purchased the [High throughput transactional messaging](../campaigns/api-triggered-high-throughput.md) add-on, select the **[!UICONTROL Enable high-throughput]** option.
+
+    ![](assets/ip-pool-high-throughput.png)
+
+    This creates a dedicated high throughput IP pool which can only be used with [High throughput channel configurations](../campaigns/api-triggered-high-throughput.md#setup-guidelines).
+    
+    >[!IMPORTANT]
+    >
+    >The type of an IP pool cannot be changed after creation: a standard IP pool cannot be converted to High throughput, and a High throughput IP pool cannot be converted back to standard.
 
 After an IP pool has been created, PTR information is visible when hovering over the IP addresses displayed below the IP pool drop-down list.
 
 ![](assets/ip-pool-ptr-record-tooltip.png)
-  
-The IP pool is now created and displays in the list. You can select it to access its properties and display the associated channel configuration (i.e. message preset). For more on how to associate a channel configuration with an IP pool, refer to [this section](channel-surfaces.md).
+
+The IP pool is now created and displays in the list. You can select it to access its properties and display the associated channel configuration (i.e. message preset).
+
+To learn how to associate a channel configuration with an IP pool, refer to [this section](channel-surfaces.md).
 
 ## Edit an IP pool {#edit-ip-pool}
 

@@ -35,7 +35,6 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: In-app notification — Acronym: n/a — variants: In-app message, In-App notification
-* Synonyms: "Preview with test profiles" = "Simulate content (AEP profiles)"
 * Do not confuse: "Preview on device" (preview on a specific physical device) ≠ "Simulate content" (test content variations with sample input data or AI auto-generation) ≠ "Simulate content (AEP profiles)" (preview with test profiles)
 * Do not confuse: "Review to activate" (display the message summary) ≠ "Activate" (activate the campaign to send the notification)
 
@@ -45,8 +44,20 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is the difference between the two simulation options?** — Simulate content tests content variations with sample input data or AI auto-generation, while Simulate content (AEP profiles) previews with test profiles by adding a test profile.
 * **Q: What does Review to activate show?** — A summary of your message that lets you modify the campaign and check whether any parameter is incorrect or missing.
 * **Q: When is the In-App notification sent after activation?** — Immediately, or on the specified date.
-* **Q: Do I always activate directly?** — If your campaign is subject to an approval policy, you must request approval before you can send.
+* **Q: What if my campaign is subject to an approval policy?** — You must request approval before you can send the In-App notification.
+
+**Personas:**
+
+* **marketer:** Can use Review to activate to display a summary of the In-app message, modify the campaign, and check for incorrect or missing parameters. Can select Activate to activate the campaign, which sends the In-app notification immediately or on the specified date. Can measure the impact of In-app messages within the Campaign or Journey reports. The page states that a campaign subject to an approval policy requires approval before the In-App notification can be sent. Where: "Review and activate your In-app notification".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Use the Review to activate button to display a summary of your message.
+* **Success check:** The campaign is activated, and the In-app notification is sent immediately or on the specified date.
+* **Previous:** Campaign subject to an approval policy: Get started with journeys & campaigns approval (test-approve/gs-approval.md)
+* **Next:** Measuring the impact of the In-app message: Campaign report (reports/campaign-global-report-cja-inapp.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 50694f78 -->
+<!-- ai-section-version: 1 | source-hash: 6b168ba8 -->

@@ -9,13 +9,15 @@ role: Developer
 level: Experienced
 keywords: campaigns, API-triggered, REST, optimizer, messages
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
-TQID: https://experienceleague.adobe.com/DNNZWQjgdcranVpuJV9WCKW8RRENVJ6iZnIt1k-Easc
+TQID: 'https://experienceleague.adobe.com/DNNZWQjgdcranVpuJV9WCKW8RRENVJ6iZnIt1k-Easc'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
   - id: a653cc2e-bc85-4353-a306-399e5b247978
     internal-label: Journey Optimizer campaigns
+  - id: 629f438c-ea49-5ade-aa39-c2a256ff3036
+    internal-label: API
 subfeature_v2:
   - id: f7479fa1-474b-479d-8c98-f6cee5865a38
     internal-label: API triggered campaigns
@@ -24,6 +26,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
@@ -39,13 +44,15 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_api_triggered"
 >title="API triggered campaigns"
->abstract="**Transactional API triggered campaigns**<br/>Trigger real-time messages through API calls<br/><br/>**Marketing messages**<br/>Promotional content (requires opt-in, subject to business rules)<br/><br/>**Transactional messages**<br/>Service-related content (confirmation, alerts, not subject to marketing consent)<br/><br/>**Available channels**<br/>Email, SMS, Push notifications, and custom channels (Marketing campaigns only)"
+>abstract="**Transactional API triggered campaigns**<br/>Trigger real-time messages through API calls<br/><br/>**Marketing messages**<br/>Promotional content (requires opt-in, subject to business rules)<br/><br/>**Transactional messages**<br/>Service-related content (confirmation, alerts, not subject to marketing consent)<br/><br/>**Available channels**<br/>Email, Mobile messages, Push notifications, and custom channels (Marketing campaigns only)"
 
 ## About API triggered campaigns {#about}
 
 API triggered campaigns allow either for marketing communications to reach out to an audience at the right time, or for transactional/operational messages to an individual like a password reset, where the need may involve personalization not just using profile attributes but also real-time context data in the trigger, which is a REST API payload.
 
 To do this, you first need to create an API triggered campaign in Journey Optimizer, and then launch its execution through an API call using the [Interactive Message Execution REST API](https://developer.adobe.com/journey-optimizer-apis/references/messaging#tag/execution).
+
+To view API-triggered campaign schedules, use the unified **[!UICONTROL Calendar]** menu. [Learn how to use the Calendar](../start/calendar.md).
 
 ➡️ [Discover this feature in video](#video) 
 
@@ -74,3 +81,5 @@ Learn more about the [complete campaign creation workflow with type-specific gui
 Learn how to create a campaign and trigger it from an external system based on user interactions, using the Interactive Message Execution REST API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425358?quality=12)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-api-triggered-campaigns.md}}

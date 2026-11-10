@@ -49,7 +49,7 @@ To set up your Web In-app channel, follow the steps below:
 
 * Install the Web SDK tag extension to support Web In-app Messaging. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html){target="_blank"}
 
-* Customize your triggers. Web In-app Messaging supports two types of triggers: Sent data to platform and Manual triggers. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-in-app-messaging.html){target="_blank"}
+* Customize your triggers. Web In-app Messaging supports two types of triggers: Sent data to Platform and Manual triggers. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-in-app-messaging.html){target="_blank"}
 
 * Create your Web In-app configuration. [Learn more](inapp-configuration.md)
 
@@ -63,7 +63,7 @@ To set up your Web In-app channel, follow the steps below:
 
     ![](assets/in_app_web_surface_1.png)
 
-1. Choose or create your app configuration. [Learn more](inapp-configuration.md#channel-prerequisites)
+1. Choose or create your Web In-app configuration. [Learn more](inapp-configuration.md#channel-prerequisites)
 
 ## Define your Web In-app message campaign {#configure-inapp}
 
@@ -71,10 +71,14 @@ To set up your Web In-app channel, follow the steps below:
 
 1. To assign custom or core data usage labels to the In-app message, select **[!UICONTROL Manage access]**. [Learn more](../administration/object-based-access.md).
 
-1. Click the **[!UICONTROL Select audience]** button to define the audience to target from the list of available Adobe Experience Platform audiences. [Learn more](../audience/about-audiences.md).
+1. From the **[!UICONTROL Audience]** tab, click the **[!UICONTROL Select audience]** button to define the audience to target from the list of available Adobe Experience Platform audiences. [Learn more](../audience/about-audiences.md).
 
     ![](assets/in_app_web_surface_5.png)
 
+    >[!CAUTION]
+    >
+    >Custom upload (CSV) audiences are not supported for in-app messages. [Learn more](../audience/target-audiences.md#guardrails)
+    
 1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected audience. [Learn more](../event/about-creating.md#select-the-namespace).
 
 1. In the **[!UICONTROL Action]** menu, you can find the settings previously configured as **[!UICONTROL App configuration]**. You can make changes here if necessary or update your rule by clicking **[!UICONTROL Edit Rule]**.
@@ -117,18 +121,18 @@ To set up your Web In-app channel, follow the steps below:
 
 1. Choose the frequency of your trigger when your In-app message is active. The following options are available:
 
-    * **[!UICONTROL Everytime]**: Always show the message when the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur.
-    * **[!UICONTROL Once]**: Only show this message the first time the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur.
-    * **[!UICONTROL Until click through]**: Show this message when the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur until an interact event is sent by the SDK with an action of "clicked".
+    * **[!UICONTROL Everytime]**: Always show the message when the events selected in the **[!UICONTROL Show message if]** section occur.
+    * **[!UICONTROL Once]**: Only show this message the first time the events selected in the **[!UICONTROL Show message if]** section occur.
+    * **[!UICONTROL Until click through]**: Show this message when the events selected in the **[!UICONTROL Show message if]** section occur until an interact event is sent by the SDK with an action of "clicked".
     * **[!UICONTROL X number of times]**: Show this message X time.
 
 1. If needed, choose which **[!UICONTROL Day of the week]** or **[!UICONTROL Time of day]** the In-app message will be displayed.
 
-1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
+1. From the **[!UICONTROL Schedule]** tab, Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
 
     ![](assets/in_app_web_surface_6.png)
 
-1. You can now start designing your content with the **[!UICONTROL Edit content]** button. [Learn more](design-in-app.md)
+1. Access the **[!UICONTROL Content]** tab to start designing your Web In-app message. [Learn more](design-in-app.md)
 
     ![](assets/in_app_web_surface_7.png)
 

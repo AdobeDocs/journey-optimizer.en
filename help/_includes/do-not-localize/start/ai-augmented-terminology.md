@@ -25,8 +25,8 @@ For complete understanding, this information should be combined with the documen
 * **Campaign**: A coordinated marketing action delivering content to a specific audience across one or more channels; unlike journeys, campaigns execute actions simultaneously *(product-specific)*
 * **Engageable Profiles**: The unique customer profiles engaged through journeys, campaigns, or decisioning activities over a rolling 12-month window; this is the key license metric, and each profile is counted once per sandbox *(product-specific)*
 * **Test Profile**: Fictitious profiles used for testing and previewing messages before sending to real customers *(product-specific)*
-* **Decisioning**: The current-generation decision framework, recommended for new implementations, available for Code-based Experience, Push, SMS, and Email *(product-specific)*
-* **Decision Management**: The legacy offer decisioning feature, still supported for existing implementations, supporting Email, In-App, Push, SMS, and Direct mail *(product-specific)*
+* **Decisioning**: The current-generation decision framework, recommended for new implementations, available for Code-based Experience, Push, Mobile message, and Email *(product-specific)*
+* **Decision Management**: The legacy offer decisioning feature, still supported for existing implementations, supporting Email, In-App, Push, Mobile message, and Direct mail *(product-specific)*
 * **Rule set**: A named group of business rules applied to journeys and campaigns, combining frequency capping, journey entry limits, and quiet hours into a single reusable policy *(product-specific)*
 
 **Guardrails:**
@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 
 * Canonical name: Decisioning — Acronym: n/a — variants: current-generation decision framework
 * Synonyms: "Action campaigns" = "Scheduled campaigns"
-* Do not confuse: "Decisioning" (current, recommended; Code-based Experience, Push, SMS, Email) ≠ "Decision Management" (legacy; Email, In-App, Push, SMS, Direct mail)
+* Do not confuse: "Decisioning" (current, recommended; Code-based Experience, Push, Mobile message, Email) ≠ "Decision Management" (legacy; Email, In-App, Push, Mobile message, Direct mail)
 * Do not confuse: "Frequency capping" (a profile receives too many messages over time) ≠ "Journey arbitration" (a profile qualifies for multiple journeys simultaneously)
 * Do not confuse: "Content Cards" (persistent cards embedded in the app UI) ≠ "In-App messages" (transient overlays, banners, or modals)
 * Do not confuse: "Action campaigns" (scheduled batch sends) ≠ "API-triggered campaigns" (real-time, event-driven) ≠ "Orchestrated campaigns" (complex, multi-step workflows with a visual canvas)
@@ -52,6 +52,20 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is the key license metric for Journey Optimizer?** — Engageable Profiles, the unique profiles engaged over a rolling 12-month window, counted once per sandbox.
 * **Q: What are the three campaign types?** — Action campaigns (scheduled batch sends), API-triggered campaigns (real-time, event-driven messaging via API), and Orchestrated campaigns (complex, multi-step workflows with a visual canvas).
 * **Q: Are real-time customer profiles, sandboxes, and schemas defined here?** — No. Those are Adobe Experience Platform concepts; refer to the Adobe Experience Platform glossary for their definitions.
+
+**Personas:**
+
+* **admin:** Can configure channel settings, including sender details, subdomain, IP pool, and message type. Can manage sandboxes, where data, audiences, journeys, campaigns, and settings exist independently. The page states that sending to suppressed addresses is blocked to protect deliverability and sender reputation. Where: "Data & configuration terms".
+* **developer:** Can trigger API-triggered campaigns through an external API call for real-time, event-driven messaging such as order confirmations or password resets. Can personalize these campaigns using profile attributes plus API payload context. The page states that API-triggered campaigns are activated through an external API call. Where: "Campaign types".
+* **marketer:** Can build journeys made of connected steps that guide customers through experiences over time. Can create Action campaigns, API-triggered campaigns, or Orchestrated campaigns to deliver content across one or more channels. The page states that campaigns execute actions simultaneously to a specific audience, unlike journeys. Where: "Journey & campaign terms".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Start with the five core concepts.
+* **Success check:** You can quickly identify which capability fits your needs using the disambiguation tables below.
+* **Previous:** See how journeys, campaigns, profiles, and channels fit together in the product architecture: Understanding Journey Optimizer (start/understanding-ajo.md)
+* **Next:** Compare Decisioning and Decision Management side by side and choose the right approach for your implementation: Get started with [!DNL Journey Optimizer] decision capabilities (experience-decisioning/gs-decision.md); Learn how to build event-triggered, sequential customer experiences step by step: Get started with journeys (building-journeys/journey.md)
 
 +++
 

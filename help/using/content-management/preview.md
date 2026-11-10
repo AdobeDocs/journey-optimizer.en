@@ -5,12 +5,23 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 6477270c-0309-411a-8254-c7ffc4419492
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
 subfeature_v2:
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
+  - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
+    internal-label: Proofs
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Preview your content using test profiles {#preview}
 
@@ -41,6 +52,10 @@ Once [test profiles](test-profiles.md) have been selected, you can preview your 
 1. In the message preview, personalized elements are replaced by the selected test profile data. For example, for this message, both email content and email subject are personalized:
 
     ![](../email/assets/preview-test-profile.png)
+
+    >[!NOTE]
+    >
+    >If some navigation buttons are not visible in the preview pane, collapse the test profile selection pane to free up space and display them all.
 
 1. Select other test profiles to preview your email for each variant of your message.
 

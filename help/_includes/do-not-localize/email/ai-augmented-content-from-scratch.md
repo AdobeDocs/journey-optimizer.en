@@ -50,6 +50,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I check rendering before saving?** — Use either simulation method to check rendering, choosing the desktop or mobile view.
 * **Q: Where do I manage tracked links?** — In the Links tab from the left pane, where you can modify Tracking Type or Label and add Tags.
 
+**Personas:**
+
+* **marketer:** Can select Design from scratch on the Designer home page, add Structure components, and use Modules for ready-to-use content blocks. Can define columns with the n:n column component, add content components, personalization fields, and conditional content. Can review tracked links in the Links tab, switch to the code editor, and preview rendering before saving. The page states that each column size cannot be under 10% of the total width of the structure component. Where: "Design content from scratch with the Email Designer".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Select the Design from scratch option from the Designer home page.
+* **Success check:** You can use either simulation method to check rendering in the desktop or mobile view.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: d3d88371 -->

@@ -36,7 +36,7 @@ topic_v2:
 ---
 # Adobe Journey Optimizer Help{#section-overview}
 
-Adobe Journey Optimizer empowers teams to design and deliver seamless, personalized customer experiences across channels like email, SMS, and more. By combining advanced tools for campaign orchestration, data management, and decision-making, it helps you create journeys that adapt to customer needs in real time. This documentation offers a roadmap for mastering the platform, from exploring its latest features and integrations to learning how to manage audiences, configure journeys, and analyze performance. Whether you're a marketer, data analyst, or campaign manager, you'll find step-by-step guides, best practices, and resources tailored to help you achieve your goals with confidence.
+Adobe Journey Optimizer empowers teams to design and deliver seamless, personalized customer experiences across channels like email, mobile message, and more. By combining advanced tools for campaign orchestration, data management, and decision-making, it helps you create journeys that adapt to customer needs in real time. This documentation offers a roadmap for mastering the platform, from exploring its latest features and integrations to learning how to manage audiences, configure journeys, and analyze performance. Whether you're a marketer, data analyst, or campaign manager, you'll find step-by-step guides, best practices, and resources tailored to help you achieve your goals with confidence.
 
 ## Adobe Journey Optimizer Help
 
@@ -88,7 +88,7 @@ Learn how to prioritize and manage communication conflicts across campaigns and 
 ## Additional Resources
 
 - **[Testing, Validation, and Approval](test-landing-page.md)** - Test and approve your content, journeys, and campaigns to ensure quality and accuracy before deployment.
-- **[Communication Channels](../using/channels/gs-channels.md)** - Configure and manage email, SMS, push notifications, and other channels for personalized customer interactions.
+- **[Communication Channels](../using/channels/gs-channels.md)** - Configure and manage email, mobile messages, push notifications, and other channels for personalized customer interactions.
 - **[Audiences, Profiles, and Identities](audiences-profiles-identities-landing-page.md)** - Manage audiences, profiles, and identities to enable effective targeting and personalization.
 - **[Comprehensive Reporting](reporting-landing-page.md)** - Analyze and optimize journeys, campaigns, and channels with advanced reporting features.
 - **[Decision Capabilities](decisioning-landing-page.md)** - Leverage decisioning tools to create and manage personalized offers and optimize marketing workflows.

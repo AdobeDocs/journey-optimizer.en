@@ -32,7 +32,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* This integration feature is restricted to outbound channels (Email, SMS, and Push) and supports pulling JSON or HTML.
+* This integration feature is restricted to outbound channels (Email, Mobile message, and Push) and supports pulling JSON or HTML.
 * Users need the **Manage AJO integration configuration** and **View AJO integration configuration** permissions.
 * The **Name** field cannot contain spaces.
 * With throttling enabled, supported rates are 50 to 5000 TPS; limits apply to the integration, not each API endpoint.
@@ -51,12 +51,24 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Which channels and formats does this feature support?** — It is restricted to outbound channels (Email, SMS, and Push) and supports pulling JSON or HTML.
+* **Q: Which channels and formats does this feature support?** — It is restricted to outbound channels (Email, Mobile message, and Push) and supports pulling JSON or HTML.
 * **Q: What permissions are required?** — The Manage AJO integration configuration and View AJO integration configuration permissions.
 * **Q: What throttling rates are supported?** — With throttling enabled, 50 to 5000 TPS, applied to the integration rather than each API endpoint.
 * **Q: What happens if a send-time response is too large?** — Responses over 4 MB by default are treated as an integration error, and retries are not attempted when the failure is caused by response size.
 * **Q: What can I change on an active integration?** — Only Authentication details and Policy configuration; those updates apply to live journeys and campaigns.
 * **Q: What is a MessageValidityExclusion event?** — It is emitted when a queued message sits past its validity window (TTL) and the system discards it.
+
+**Personas:**
+
+* **marketer:** Can apply configured Standard and Browsing integrations to personalize Email, Mobile message, and Push content. Can select items instead of entering values manually when a Browsing integration is linked to a Standard integration. The page states that marketers may reference only exposed fields, and tokens for other paths fail validation in the editor. Where: "Step-by-step".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Make sure you have the Manage AJO integration configuration and View AJO integration configuration permissions before you start.
+* **Success check:** Users already assigned to this role have their permissions automatically updated.
+* **Previous:** Grant the Manage AJO integration configuration and View AJO integration configuration permissions: Manage users and roles (administration/permissions.md)
+* **Next:** Create a Standard integration, optionally linked to a Browsing integration: Create Standard integrations (integrations/integrations-create.md); Apply configured integrations to personalize Email, Mobile message, and Push content: Using External Integrations (integrations/integrations-personalization.md)
 
 +++
 

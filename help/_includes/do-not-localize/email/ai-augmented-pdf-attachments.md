@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where must personalized PDF files be stored?** — In the attachment-specific Data Landing Zone container (retrieved with `type=ajoemailattachments`) and referenced in the API payload; it is the only supported storage location, and files are automatically deleted after seven days.
 * **Q: Is the PDF attachment kept when I save the email as a content template?** — No, it is not retained; you must reattach the file on any new email created from the template.
 
+**Personas:**
+
+* **marketer:** Can attach a static PDF file to an email in a journey or campaign by selecting Add asset in the Attachment section. Can also attach a personalized PDF file for each recipient through an API-triggered campaign. The page states that only one file can be selected at a time and the maximum allowed file size for each attachment is 5 MB. Where: "Attach a PDF file to an email".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Create an email in a journey or a campaign.
+* **Success check:** The name and size of the selected file display in the Attachment section.
+* **Previous:** Creating an email in a journey or campaign: Create an email (email/create-email.md); Setting up an API-triggered campaign: Work with API triggered campaigns (campaigns/api-triggered-campaigns.md)
+* **Next:** Personalizing the API-triggered campaign content for each recipient: Edit the API triggered campaign content (campaigns/api-triggered-campaign-content.md); Using High Throughput mode for API-triggered campaigns: Activate High throughput mode for API triggered campaigns (campaigns/api-triggered-high-throughput.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: a5a74b99 -->

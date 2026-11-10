@@ -33,9 +33,9 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Advanced formatting options are available only when the Advanced formatting mode is switched on.
+* Additional options (for example Color of the Close button, Max height and Max width of media, Customize UI takeover, Customize size, Customize position, Message round corner) are available when the Advanced formatting mode is switched on.
 * The Banner layout supports only a Header and a Body.
-* Custom messages require a pre-configured HTML message, entered via Compose (raw HTML) or brought in via Import (HTML or .zip file).
+* The Custom message mode lets you import and edit a pre-configured HTML message: Compose to enter or paste raw HTML, Import to import the HTML or .zip file containing your HTML content.
 * The UI takeover option is enabled by default.
 
 **Terminology:**
@@ -43,7 +43,6 @@ For complete understanding, this information should be combined with the documen
 * Canonical name: Web In-app content — Acronym: n/a — variants: Web In-app message content, In-app message content
 * Synonyms: "Advanced formatting" = "Advanced formatting mode"
 * Do not confuse: "Content tab" (define content, Close button style, media, and buttons) ≠ "Settings tab" (define message layout, background, UI takeover, and preview)
-* Do not confuse: "Header" and "Body" (message text fields) ≠ "Close button" (dismiss control with its own style options)
 
 **FAQ:**
 
@@ -54,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I get additional styling options?** — Switch on the Advanced formatting mode to access options such as fonts, sizes, colors, alignment, sizing, and position.
 * **Q: What does UI takeover do?** — Enabled by default, it darkens the background behind your In-app message to emphasize the focus on your content.
 
+**Personas:**
+
+* **marketer:** Can select Edit content from the Action menu to open the message content editor. Can set the Close button style, add media, enter Header and Body text, and add buttons in the Content tab. Can switch on Advanced formatting to access extra styling options such as font, size, color, and alignment. The page states that the Banner layout only supports a Header and a Body. Where: "Content tab".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select the Edit content button from the Action menu of your Campaign.
+* **Success check:** Your In-app message content is defined and personalized, and you can review and activate it.
+* **Previous:** Create your Web In-app message campaign: Configure the Web In-app channel (in-app/create-in-app-web.md)
+* **Next:** Review and activate your In-app message once content is defined and personalized: Check and send your In-app notification (in-app/send-in-app.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 255ba980 -->
+<!-- ai-section-version: 1 | source-hash: 373346f2 -->

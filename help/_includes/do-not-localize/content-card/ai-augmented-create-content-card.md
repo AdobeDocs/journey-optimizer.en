@@ -36,7 +36,7 @@ For complete understanding, this information should be combined with the documen
 * Because Card is an inbound experience activity, it comes with a Wait activity that is added automatically after the Card action (3 days by default).
 * Disqualification rules require Web SDK version 2.28.0 or later.
 * By default, the close button hides the card; to add more functionality, you must manually define dismissal or disqualification rules.
-* Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release; existing journeys using these activities continue to work without any changes and no migration is required.
+* Legacy native channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release; existing journeys using these activities continue to work without any changes and no migration is required.
 
 **Terminology:**
 
@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Are the legacy native content card journey activities still usable?** — They are deprecated as of the March 2026 release, but existing journeys using them continue to work without any changes and no migration is required.
 * **Q: What happens when a user selects the close button?** — By default, the close button hides the card; you can manually define dismissal or disqualification rules to add more functionality.
 * **Q: How do I test multiple variations of my content card in a campaign?** — Select **Create experiment** to test multiple variables of a delivery on sample populations.
+
+**Personas:**
+
+* **marketer:** Can add a content card to a journey by selecting Card as the action type in an Action activity, or add a content card to a campaign by selecting the Content card action. Can select or create a content card configuration, enable additional delivery rules with Edit rules, and run a content experiment to test multiple variables of a delivery. The page states that Card is an inbound experience activity, so a Wait activity is added automatically after the action, 3 days by default. Where: "Intents".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Open your journey, then drag and drop an Action activity from the Actions section of the palette, and select Card as the action type.
+* **Success check:** A Wait activity is automatically inserted after the Card action in the journey canvas.
+* **Previous:** Creating the journey where the content card action will be added: Create your first journey (building-journeys/journey-gs.md); Creating the campaign where the content card action will be added: Create an Action campaign (campaigns/create-campaign.md)
+* **Next:** Designing the content card content after configuring the action: Design content cards (content-card/design-content-card.md); Testing multiple variables of the delivery with Create experiment: Create a Content Experiment (content-management/content-experiment.md)
 
 +++
 

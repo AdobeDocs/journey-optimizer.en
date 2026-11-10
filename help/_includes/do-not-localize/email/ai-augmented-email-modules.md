@@ -48,6 +48,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I add content components inside a module?** — Yes. Switch to the Components tab in the left pane and drag and drop a component into the module; it inherits the module's styling by default.
 * **Q: Do modules follow my email theme?** — Yes. When email themes are applied, theme styles are inherited automatically by modules.
 
+**Personas:**
+
+* **marketer:** Can access modules from the Modules tab in the left pane of the Email Designer and drag and drop a variant onto the email canvas. Can customize the module inline, adjust it in the Settings and Styles tabs, and add content components from the Components tab. The page states that theme styles are inherited automatically by modules when email themes are applied. Where: "Access and insert modules".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Open your email in the Email Designer, then select the Modules tab in the left pane.
+* **Success check:** The module is inserted with its default content, and you can select any element on the canvas to edit it inline.
+* **Previous:** Open your email in the Email Designer before adding modules: Design emails (email/get-started-email-design.md)
+* **Next:** Save a customized module as a visual fragment to reuse it across other emails and messages: Use visual fragments (email/use-visual-fragments.md); Learn how to save content as a fragment: Save content as fragment (content-management/save-fragments.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: c8b0d67e -->

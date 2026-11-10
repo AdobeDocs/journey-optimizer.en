@@ -119,20 +119,14 @@ Once an outbound action is selected in the **[!UICONTROL Actions]** tab, continu
 
     ![Manual ranking channel optimization reorder](assets/journey-channel-optimization-manual-reorder.png){width="90%"}
 
-1. [Save and publish](publish-journey.md) your journey, or [review and activate](../campaigns/review-activate-campaign.md) your campaign.
+1. For a journey, click **[!UICONTROL Validate]** in the journey header and resolve any errors before [testing](choose-validation-method.md). When testing is complete and validation is current and passed, [publish the journey](publish-journey.md). [Learn about journey validation](publish-journey.md#validate). For a campaign, [review and activate](../campaigns/review-activate-campaign.md) it.
 
 ## Set the channel optimization method {#optimization-modes}
 
 >[!CONTEXTUALHELP]
 >id="ajo_channel_optimization_method"
 >title="Define how channel selection works"
->abstract="Choose how Journey Optimizer selects the best channel for each customer: **Manual priority** — channels are tried in the order you define; Availability is determined by applying subscription preferences and marketing consent rules associated with the selected channel configurations, and all business rules (e.g. channel frequency capping) associated with the campaign or journey. **Customer profile attribute** — the channel matching the customer's declared preference in their profile is selected first. If no preference is found, manual priority is applied. **AI optimized** — a machine learning model scores each channel based on the customer's historical engagement, and the highest-scoring available channel is selected."
-
-<!--
-Previous content for contextual help: "The customer's first available channel, based on the selected prioritization method, is used for this action. Availability is determined by the customer's subscription preferences and marketing consent rules for the selected channel configurations, as well as any business rules — such as frequency capping — configured for the campaign or journey." TBC which to keep.
-
-Additional content for contextual help: For **Manual priority** and **Customer profile attribute** modes, Journey Optimizer falls back through your configured channel order when the top-ranked channel cannot be used. For **AI optimized**, it falls back to a random available channel."
--->
+>abstract="Choose how the best channel is selected for each customer: **Manual priority** — channels are tried in the order you define, based on consent, subscription preferences, and business rules. **Customer profile attribute** — the channel declared in the customer's profile is tried first, then manual priority applies. **AI optimized** — a machine learning model scores channels on past engagement and selects the highest-scoring available one."
 
 Channel optimization supports three modes, each using a different method to select the best channel for each customer at send time.
 
@@ -188,3 +182,5 @@ Learn how Adobe Journey Optimizer's channel optimization feature helps you reach
 * [Send-Time optimization](send-time-optimization.md)
 * [Content optimization](../content-management/gs-message-optimization.md)
 -->
+
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-channel-optimization.md}}

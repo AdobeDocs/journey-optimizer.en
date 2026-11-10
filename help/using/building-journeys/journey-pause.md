@@ -9,7 +9,7 @@ level: Intermediate
 keywords: publish, journey, live, validity, check
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/gIj6jGScvIDgAJxb3B4wiuqP6BKZS0tvCeqC6wRo5IQ
+TQID: 'https://experienceleague.adobe.com/gIj6jGScvIDgAJxb3B4wiuqP6BKZS0tvCeqC6wRo5IQ'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,6 +20,10 @@ feature_v2:
     internal-label: Activities
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: d2971708-e780-44bb-9e2a-72f139796afd
+    internal-label: Customer
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
 subfeature_v2:
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences
@@ -118,7 +122,7 @@ When a journey is paused, profile management and activity execution depends on t
 | [Optimize](optimize.md)  | Same behavior as in a live journey |
 | [Content Decision](content-decision.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Channel Action](journey-action.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
-| [Custom Action](../action/action.md)   | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
+| [Custom Action](../action/action.md)   | Profiles are parked or discarded based on what the user has chosen when the journey has been paused. Requests already dispatched for execution are not cancelled. [Learn more](#journey-pause-guardrails) |
 | [Update Profile](update-profiles.md) & [Jump](jump.md) | Profiles are parked or discarded based on what the user has chosen when the journey has been paused  |
 | [External Data Source](../datasource/external-data-sources.md)  | Same behavior as in a live journey |
 | [Exit Criteria](journey-properties.md#exit-criteria)  | Same behavior as in a live journey |
@@ -218,6 +222,7 @@ Be aware that profile exclusions for profiles currently in the journey and for n
     If you resume journeys to bring the number of held profiles back under the limit, the journey resumes immediately — but it can take up to 30 minutes for the profile count to update. During that time, the system may still consider those profiles as paused.
 
 * For journeys that include [inbound activities](../channels/gs-channels.md#inbound-channels) (e.g., in-app, web, etc.), pausing the journey does not interrupt communications that have already been triggered. If a profile has qualified for an inbound activity before the pause, the corresponding message will still be delivered. To fully stop all inbound communications, you must stop the journey.
+* Pausing a journey does not cancel a Custom Action request that has already been dispatched for execution. Profiles that have not yet reached the next Action node are held or discarded there, according to the pause option selected. For example, a Custom Action request already sent to an external endpoint may still be processed and may trigger a push notification after the pause. To halt further journey processing, stop the journey. Stopping terminates profiles' progression through the journey; it should not be understood to recall requests already dispatched to an external endpoint.
 * Paused journeys are counted towards live journey quota
 * Profiles that had entered journey but were discarded during the pause would still be counted as engageable profiles
 * Paused journeys are considered in all business rules, in the same way as if they were live
@@ -261,7 +266,7 @@ When you resume this journey:
 
 ## Troubleshoot profile discards in paused journeys {#discards-troubleshoot}
 
-You can use the [[!DNL Adobe Experience Platform] Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to query step events, which can provide more information about profile discards, depending on when they happened.
+You can use the [[!DNL Adobe Experience Platform] Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to query step events, which can provide more information about profile discards, depending on when they happened. For the fields of the step events, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 * For discards happening before the profile enters the journey, use the following code:
 

@@ -46,6 +46,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How are Journey Optimizer web propositions rendered?** — They are processed similar to `__view__` decision scope propositions and, when `renderDecisions` is `true`, are automatically rendered by the Web SDK.
 * **Q: How do I debug the implementation?** — Use Web SDK debugging and [!DNL Adobe Experience Platform Assurance], checking for events with the `AJO:` prefix.
 
+**Personas:**
+
+* **developer:** Can set the renderDecisions option to true in the sendEvent command so delivered propositions render automatically. Can specify additional surfaces in the personalization.surfaces option, for example web://my.site.com/about.html. The page states that event surfaces are included in the query.personalization.surfaces request field. Where: "Enabling [!DNL Adobe Journey Optimizer]".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Add the renderDecisions option to your events and set it to true.
+* **Success check:** Journey Optimizer debug traces appear in Assurance for events with the AJO: prefix.
+* **Previous:** Complete prerequisites before enabling Journey Optimizer in the Web SDK: Web channel prerequisites (web/web-prerequisites.md); Create and activate a Journey Optimizer Web Channel campaign: Get started with web channel (web/get-started-web.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 0897546d -->

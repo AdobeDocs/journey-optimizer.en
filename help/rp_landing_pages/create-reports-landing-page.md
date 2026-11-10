@@ -6,6 +6,9 @@ description: Learn to create Decision Management reports using event datasets an
 redpen-status: CREATED_||_2025-08-11_21-02-56
 badge: label="Legacy" type="Informative"
 exl-id: 96be492d-5003-4954-94cb-467ec5a725bd
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Create decision management reports{#section-overview}
 

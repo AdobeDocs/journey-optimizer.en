@@ -35,6 +35,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: What profile data structure is required for this use case?** — A profile with a `plans` array, where each plan object contains a `prescriptions` array. Each prescription object must have `prescription_id`, `name`, and `state` fields.
 * **Q: How are plans and prescriptions iterated in the template?** — The outer `{{#each profile.plans as |plan|}}` loop iterates over each health plan. Inside it, `{{#each plan.prescriptions as |prescription|}}` iterates over each plan's prescriptions, and a conditional block filters to only "ready" or "recall" states.
 
+**Personas:**
+
+* **developer:** Can build profile data with a plans array where each plan contains a prescriptions array with prescription_id, name, and state fields. Can use a nested each loop inside another each loop, combined with a conditional block, to filter prescriptions by state in the template. The page states that only prescriptions with state ready or recall are included, while prescriptions with state picked up are excluded. Where: "FAQ".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select each tab to view the syntax for implementing this use case.
+* **Success check:** The rendered email lists only prescriptions with state ready or recall, grouped under each health plan name.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 4b68d597 -->

@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Mobile message channel configuration — Acronym: n/a — variants: channel configuration
+* Canonical name: Mobile message channel configuration — variants: SMS configuration, channel configuration
 * Do not confuse: "Marketing" (promotional; requires user consent) ≠ "Transactional" (non-commercial messages)
 * Do not confuse: "Processing" (status while checks run) ≠ "Active" (status once checks are successful; ready to deliver messages)
 * Do not confuse: "Mobile configuration" (provider API credentials association) ≠ "channel configuration" (the Mobile message configuration created on this page)
@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why is no subdomain available to select?** — You must have previously configured at least one SMS/RCS/MMS subdomain before a subdomain can be selected.
 * **Q: What does the SMS Execution Field do?** — It selects the phone number to use in priority among profile attributes; updating it overrides the default sandbox-level number for the journeys and campaigns using this configuration.
 * **Q: What do the Processing and Active statuses mean?** — After you submit, the configuration displays with the Processing status; once the checks are successful it gets the Active status and is ready to deliver messages.
+
+**Personas:**
+
+* **admin:** Can create a Mobile message channel configuration by selecting the SMS Type, Mobile configuration, Sender number, Opt-out number, Subdomain, and SMS Execution Field. The page states that configuration names must begin with a letter and contain only alpha-numeric characters, underscore, dot, or hyphen. Where: "Create a Mobile message configuration".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Browse to Administration > Channels, select General settings > Channel configurations, then select Create channel configuration.
+* **Success check:** Once the checks are successful, the channel configuration gets the Active status and is ready to deliver messages.
+* **Previous:** Configure a subdomain before selecting one in the SMS configuration: Configure subdomains for Mobile message (mobile/mobile-subdomains.md)
+* **Next:** Checks are not successful after submitting the configuration: Set up channel configurations (configuration/channel-surfaces.md)
 
 +++
 

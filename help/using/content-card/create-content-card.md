@@ -6,16 +6,29 @@ feature: Content Cards
 role: User
 level: Beginner
 exl-id: a26bb3bd-d593-466b-9852-94e194d6d2b7
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
   - id: a984631b-2bae-4860-9b15-69c41a799dcb
     internal-label: APIs and SDKs
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
     internal-label: In App channel
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
+  - id: bc543dba-f0db-4234-b5da-877a5c1664e2
+    internal-label: Content cards
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Create content cards {#create-content-card}
 
@@ -48,15 +61,15 @@ This page explains how to author a content card and define its content, either a
 
 To add a Content card to a journey, follow these steps:
 
-1. Open your [journey](../building-journeys/journey-gs.md), then drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
+1. Open your [journey](../building-journeys/journey-gs.md), then choose an **[!UICONTROL Action]** activity. Learn more about the [Action activity](../building-journeys/journey-action.md).
 
     >[!IMPORTANT]
     >
-    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
-
-1. Select **[!UICONTROL Card]** as the action type.
+    >Legacy native channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
     ![](assets/content-card-jo-1.png)
+
+1. Select **[!UICONTROL Card]** as the action type.
 
     >[!NOTE]
     >
@@ -69,6 +82,8 @@ To add a Content card to a journey, follow these steps:
 1. You are directed to the **[!UICONTROL Actions]** tab. From there, select or create the content card configuration to use. [Learn more](content-card-configuration.md)
 
     ![](assets/content-card-jo-2.png)
+
+1. Select an [Inbox configuration](../inbox/inbox-configuration.md) that defines the inbox surface for this **Content card**.
 
 1. You can now start designing your content with the **[!UICONTROL Edit content]** button. [Learn more](design-content-card.md)
 
@@ -155,7 +170,7 @@ To start building your content cards through a campaign, follow the steps below.
 
 1. Select an [Inbox configuration](../inbox/inbox-configuration.md) that defines the inbox surface for this **Content card**.
 
-    ![](assets/content-card-create-2.png)
+    ![](assets/content-card-create-3.png)
 
 1. To test the content of your message, click **[!UICONTROL Create experiment]**. This allows you to test multiple variables of a delivery on sample populations to determine which treatment has the greatest impact on the targeted audience. [Learn more about content experiment](../content-management/content-experiment.md).
 

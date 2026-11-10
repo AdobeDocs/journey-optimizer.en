@@ -23,7 +23,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **Journey Agent**: A capability in AI Assistant that creates journeys from natural language prompts *(product-specific)*
-* **Action activity**: The unified activity used for all channel actions in a journey, such as email, push, and SMS *(product-specific)*
+* **Action activity**: The unified activity used for all channel actions in a journey, such as email, push, and Mobile message *(product-specific)*
 * **Content decision activity**: A journey activity that integrates personalized offers directly into the journey flow *(product-specific)*
 * **Content card**: Persistent, non-intrusive content delivered within mobile apps and websites that remains visible until dismissed, unlike push notifications *(product-specific)*
 * **Wave sending**: Delivering messages in controlled batches (Limited Availability for journeys) *(product-specific)*
@@ -51,6 +51,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I validate journey logic before activating?** — Test in draft mode and validate journey logic with dry run before activating.
 * **Q: What triggers a journey?** — Events, which are customer actions, or audiences, which are batch sends.
 * **Q: When should I use an orchestrated campaign instead of a journey?** — Use orchestrated campaigns for complex, multi-step batch campaigns at scale where all profiles progress together in batch mode, and journeys for real-time, one-to-one experiences.
+
+**Personas:**
+
+* **marketer:** Can create audiences through segment definitions, CSV uploads, or audience composition. Can design content, add offers and decisioning, test and validate, build journeys, and launch orchestrated campaigns. The page states that this persona can start working only once the System Administrator and the Data Engineer have granted access and prepared the environment. Where: "Get started with the essentials".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Build audiences through segment definitions, CSV file uploads, or audience composition.
+* **Previous:** Confirm environment setup and access before building journeys: Journey Optimizer Get Started for System Admin (start/path/administrator.md); Set up audiences, data, and relational schemas before building journeys: Journey Optimizer Get Started for Data Engineer (start/path/data-engineer.md)
+* **Next:** Create a simple welcome journey or single-message campaign to learn the platform: Create your first journey (building-journeys/journey-gs.md); Use AI to ask questions and accelerate content creation: Work with AI (start/ai-features.md)
 
 +++
 

@@ -35,6 +35,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Where can conditional rules be used to create dynamic content?** — In the Email Designer (to create component variants) and in the personalization editor (to wrap expression blocks with conditions). Both entry points are covered in linked pages.
 * **Q: Can conditional rules be reused across journeys and campaigns?** — Yes. Conditional rules can be stored for further reuse across journeys and campaigns.
 
+**Personas:**
+
+* **developer:** Can build conditional rules from profile attributes, contextual events, and audiences using the visual rule builder in the personalization editor. Can store conditional rules for further reuse across journeys and campaigns. Can leverage conditional rules in the Email Designer and the personalization editor to create dynamic content that adapts to targeted profiles. Where: "FAQ".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Learn how to work with conditional rules.
+* **Success check:** Messages adapt to the profiles targeted in your messages.
+* **Next:** Learn how to work with conditional rules: Create conditions (personalization/create-conditions.md); Learn how to create dynamic content: Create dynamic content (personalization/dynamic-content.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 0f90f9b5 -->

@@ -9,11 +9,12 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to monitor inbound data health in Journey Optimizer with the Edge monitoring graphs in Data Management.
+* **TL;DR:** This page explains how to monitor inbound data health in Journey Optimizer with the graphs available at Data Management > Monitoring > Edge.
 
 **Intents:**
 
-* Access the Edge monitoring graphs from Data Management > Monitoring > Edge
+* Access the graphs from Data Management > Monitoring > Edge, then select AJO throughput from the drop-down menu
+* Review the total number of records processed by the Journey Optimizer gateway per second over time (AJO Gateway Throughput)
 * Review overall inbound throughput in records per second over time
 * Review inbound throughput broken down by location
 * Analyze inbound request latency in milliseconds by distribution values such as P50 and P90
@@ -21,12 +22,14 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Edge monitoring graphs**: Graphs in Data Management > Monitoring > Edge that show inbound throughput, inbound latency, and proposition event throughput *(product-specific)*
+* **Edge graphs**: The Journey Optimizer-specific graphs available in Data Management > Monitoring > Edge, which cover gateway throughput, inbound throughput, inbound latency, and proposition event throughput *(product-specific)*
 * **Inbound throughput**: Overall inbound throughput measured in records per second over time *(product-specific)*
 * **Proposition events**: Tracking signals generated when a user interacts with, views, or triggers personalized offers *(product-specific)*
 
 **Guardrails:**
 
+* The Monitoring workspace includes the tabs Dashboard, Batch end-to-end, Streaming end-to-end, and Edge; the Journey Optimizer-specific graphs are documented for the Edge tab.
+* AJO Gateway Throughput is the total number of records processed by the Journey Optimizer gateway per second over time; AJO Inbound Throughput is the rate at which inbound records reach the Edge service, in records per second over time.
 * Inbound latency is measured in milliseconds.
 * The latency graph shows a distribution of values, including P50 and P90.
 * Proposition event channel values are CBE, in-app, and content cards.
@@ -34,7 +37,8 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Edge monitoring graphs — variants: AJO graphs
+* Canonical name: Edge (the tab in the Monitoring workspace that contains the Journey Optimizer-specific graphs)
+* Do not confuse: AJO Gateway Throughput (records processed by the gateway per second) ≠ AJO Inbound Throughput (inbound records reaching the Edge service per second)
 * Do not confuse: inbound throughput (records per second) ≠ inbound latency (milliseconds)
 * Do not confuse: proposition event channel (CBE, in-app, or content cards) ≠ proposition event type (dismissed, suppressed, displayed, triggered, interacted, or sent)
 
@@ -46,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which proposition event channels are available?** — CBE, in-app, and content cards.
 * **Q: Which proposition event types are available?** — Dismissed, suppressed, displayed, triggered, interacted, and sent.
 
+**Personas:**
+
+* **developer:** Can review the AJO Inbound Latency graph to measure the time required to process inbound requests in milliseconds. Can use the latency distribution, including percentiles such as P50 and P90, to identify higher-latency requests. The page states that AJO Inbound Throughput measures the rate at which inbound records reach the Edge service, in records per second over time. Where: "AJO Inbound Latency".
+* **admin:** Can open Data Management > Monitoring > Edge, then select AJO throughput from the drop-down menu. Can use the AJO Gateway Throughput graph to monitor the overall volume of inbound requests handled by the gateway. The page states that the Monitoring workspace includes the Dashboard, Batch end-to-end, Streaming end-to-end, and Edge tabs. Where: "Monitor Journey Optimizer data in Edge".
+* **marketer:** Can review the AJO Inbound Proposition Events Throughput by Channel graph to compare proposition event activity across CBE, in-app, and content cards. Can use the AJO Inbound Proposition Events Throughput graph to review tracking signals generated when a user interacts with, views, or triggers a personalized offer. The page states that proposition event types include dismissed, suppressed, displayed, triggered, interacted, and sent. Where: "AJO Inbound Proposition Events Throughput by Channel".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Select AJO throughput from the drop-down menu in Data Management > Monitoring > Edge.
+* **Success check:** The AJO Gateway Throughput graph shows the total number of records processed by the Journey Optimizer gateway per second over time.
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: a5cf3193 -->
+<!-- ai-section-version: 1 | source-hash: 5f5db9a4 -->

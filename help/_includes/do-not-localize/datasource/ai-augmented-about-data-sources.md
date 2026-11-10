@@ -28,7 +28,6 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* The data source configuration is always performed by a technical user.
 * A data source configuration is not required if your journeys only leverage local data coming from an event payload.
 * Schema relationships are not supported for data sources.
 * Because responses are now supported, you should use custom actions instead of data sources for external data source use-cases.
@@ -45,10 +44,22 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: When is a data source configuration required?** — It is not required if your journeys only use local data coming from an event payload; it is needed when you want to retrieve additional information for conditions, personalization, custom wait, or time zone.
 * **Q: What are the two types of data sources?** — The pre-configured Adobe Experience Platform data source (built-in) and external data sources that you create.
-* **Q: How many external data sources can I create?** — You can create as many external data sources as you need.
 * **Q: Which data access strategy should I choose?** — Option 1 accesses external data via custom actions without persisting in the Data Lake, Option 2 ingests into a dataset not enabled for Profile, and Option 3 uses a profile-enabled dataset; choose based on persistence, profile enrichment, and reusability needs.
 * **Q: Are schema relationships supported for data sources?** — No, schema relationships are not supported for data sources.
 
+**Personas:**
+
+* **developer:** Can access external data via custom actions when the external system is accessible through an API endpoint that returns the needed attributes. Can ingest data into a dataset when records contain an identity field usable to access profiles already stored in Experience Platform. Where: "Choose your data access strategy".
+* **admin:** Can skip data source configuration when journeys only use local data from an event payload. The page states that schema relationships are not supported for data sources. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Intermediate, Experienced
+* **First minimal step:** Consider which data access strategy best fits your use case before configuring a data source.
+* **Success check:** The data source retrieves additional information used for conditions, personalization, custom wait, or time zone definition in the journey.
+* **Previous:** New to data management in Journey Optimizer: Get started with data management in Journey Optimizer (data/gs-data.md)
+* **Next:** Ready to configure a data source: Configure a data source (datasource/configure-data-sources.md); For a complete overview and configuration checklist for journeys: Configure journeys – Data Sources, Events, and Actions (configuration/about-data-sources-events-actions.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 1d9c2ff0 -->
+<!-- ai-section-version: 1 | source-hash: 93dfd2dc -->

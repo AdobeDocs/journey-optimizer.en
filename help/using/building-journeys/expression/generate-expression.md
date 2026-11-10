@@ -90,6 +90,12 @@ Describe the audience membership check you want to make in plain language. For e
 
 * *"check to see if profile is in the Gold Loyalty audience"*
 
+## How-to video {#video}
+
+Watch how AI turns plain-English prompts into journey conditions, without writing expression language. The video uses loyalty membership and dormant-user checks to create more relevant customer paths.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3504894/?learn=ons)
+
 ## Related resources {#related}
 
 * [Work with the advanced expression editor](expressionadvanced.md) — Overview of the expression editor interface and supported syntax.

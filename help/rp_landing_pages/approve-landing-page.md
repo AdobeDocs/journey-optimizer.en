@@ -5,6 +5,9 @@ title: Approve journeys & campaigns
 description: Approve journeys & campaigns
 redpen-status: CREATED_||_2025-08-11_20-30-36
 exl-id: 88c48ccd-c3b7-4235-933b-7a08f5a8f346
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Approve journeys & campaigns{#section-overview}
 

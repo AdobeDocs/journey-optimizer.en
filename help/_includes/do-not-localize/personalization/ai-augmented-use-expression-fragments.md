@@ -36,7 +36,7 @@ For complete understanding, this information should be combined with the documen
 * Fragments can only be nested up to 1 level.
 * A journey or campaign cannot be activated or published if it contains a fragment with Draft status; draft fragments must be approved before publication.
 * Expression fragments cannot receive loop-scoped variables (the current `{{#each}}` iteration item) as parameters — this is a known limitation. Use global variables or inline logic as a workaround.
-* If a fragment containing multiple line breaks is used in SMS or push content, line breaks are preserved; test the content before sending.
+* If a fragment containing multiple line breaks is used in Mobile message or push content, line breaks are preserved; test the content before sending.
 
 **Terminology:**
 
@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens if I use a Draft fragment in a journey or campaign?** — You can add a Draft fragment to content, but you cannot activate or publish the journey or campaign until the fragment is approved and its status changes to Live.
 * **Q: Can an expression fragment receive the current loop item (e.g., `product` in `{{#each}}`) as a parameter?** — No. Expression fragments cannot receive loop-scoped variables as parameters. Use global variables declared outside the loop (which the fragment can access), or include the personalization logic directly within the loop instead of using a fragment.
 * **Q: What is breaking inheritance and when should I use it?** — Breaking inheritance means using "Paste fragment" from the contextual menu to copy the fragment's content directly into the editor. The pasted content becomes a standalone element that no longer synchronizes with the original fragment — use this when you need to customize the content beyond what editable fields allow, knowing future changes to the original fragment will not propagate to this copy.
+
+**Personas:**
+
+* **developer:** Can declare input variables outside an expression fragment and reference them inside the fragment. Can also declare output variables inside a fragment and reference them in the surrounding campaign or journey content. The page states that expression fragments cannot receive loop-scoped variables, such as the current each iteration item, as parameters. Where: "Use implicit variables".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Open the personalization editor and select the Fragments button on the left pane.
+* **Success check:** The list displays all the expression fragments that have been created or saved as fragments on the current sandbox.
+* **Previous:** Learn what fragments are before using them in the personalization editor: Get started with fragments (content-management/fragments.md); Create an expression fragment before inserting it in content: Create a fragment (content-management/create-fragments.md)
+* **Next:** Customize editable fields in a fragment by overriding their default values: Customizable fragments (content-management/customizable-fragments.md); Resolve a fragment ID dynamically at runtime based on profile attributes, dataset lookups, or context data: Use dynamic fragments (content-management/dynamic-fragments.md)
 
 +++
 

@@ -54,6 +54,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I check a personalized configuration for errors?** — Preview the content using Simulate content, or Simulate content then Simulate content (AEP profiles) with a test profile; view details on the read-only Delivery settings screen.
 * **Q: Why might a subdomain not resolve for a test profile?** — The profile has no value for the attribute used in the conditions (for example Country), or its value is not associated with any subdomain in the configuration; in that case the email is not sent to that test profile.
 
+**Personas:**
+
+* **admin:** Can set up dynamic subdomains in an email channel configuration, adding up to 50 dynamic subdomains. Can personalize header parameters and sender headers, except the Error email prefix field. The page states that you cannot add new profile attributes to header parameters when editing a configuration, and must create a new channel configuration instead. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Set up the subdomains you want to use for sending emails according to your use case.
+* **Success check:** Recipients receive messages using the selected subdomain, with URLs such as mirror page, tracking URL, and unsubscribe link populated based on that subdomain.
+* **Previous:** Setting up subdomains before creating an email configuration with dynamic subdomains: Subdomain delegation in [!DNL Journey Optimizer] (configuration/about-subdomain-delegation.md); Creating a channel configuration before personalizing its settings: Set up channel configurations (configuration/channel-surfaces.md)
+* **Next:** Defining other email settings and submitting the configuration after adding personalization: Configure email settings (email/email-settings.md); Checking a personalized configuration for errors by simulating content: Simulate content variations (test-approve/simulate-sample-input.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 7d5f8680 -->

@@ -24,7 +24,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Inbox action**: The campaign action, selected in the Action tab, that delivers messages to the inbox *(product-specific)*
 * **Scheduled - Marketing campaign**: A campaign executed immediately or on a specified date, aimed at sending marketing messages, configured and executed from the user interface *(product-specific)*
-* **API-triggered - Marketing/Transactional campaign**: A campaign executed using an API call, aimed at sending marketing or transactional messages sent out following an action performed by an individual (for example password reset or cart purchase) *(product-specific)*
+* **API-triggered - Marketing/Transactional campaign**: A campaign executed using an API call, aimed at sending either marketing or transactional messages; transactional messages are messages sent out following an action performed by an individual (for example password reset or cart purchase) *(product-specific)*
 * **Identity namespace**: The namespace chosen to identify the individuals from the selected segment *(product-specific)*
 
 **Guardrails:**
@@ -35,7 +35,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Inbox action — Acronym: n/a — variants: Inbox campaign, message inbox
+* Canonical name: Inbox action — Acronym: n/a — related terms: message inbox, Inbox configuration
 * Do not confuse: "Scheduled - Marketing" (executed immediately or on a specified date from the UI, marketing messages) ≠ "API-triggered - Marketing/Transactional" (executed using an API call, marketing or transactional messages)
 * Do not confuse: "Audience" (the selected Adobe Experience Platform audience) ≠ "Identity namespace" (the namespace used to identify individuals from the segment)
 
@@ -47,6 +47,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How are individuals identified?** — In the Identity namespace field, choose the namespace used to identify the individuals from the selected segment.
 * **Q: What can I do after creating this Inbox?** — You can choose this Inbox when creating your Content card campaign.
 
+**Personas:**
+
+* **marketer:** Can create a campaign that uses the Inbox action to deliver messages to an inbox. Can select or create an Inbox configuration, design the message in the content designer, and select an audience and an identity namespace. The page states that the campaign must be reviewed and activated to send messages to the inbox. Where: "Create an Inbox".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Create a campaign.
+* **Success check:** You can now choose this Inbox when creating your Content card campaign.
+* **Previous:** Complete the Inbox configuration before creating an inbox: Inbox configuration (inbox/inbox-configuration.md); Create a campaign before adding the Inbox action: Create an Action campaign (campaigns/create-campaign.md)
+* **Next:** Design the message using the content designer: Design Inbox (inbox/inbox-design.md); Choose this Inbox when creating a Content card campaign: Create content cards (content-card/create-content-card.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 5ff3e533 -->
+<!-- ai-section-version: 1 | source-hash: 03fa0a5d -->

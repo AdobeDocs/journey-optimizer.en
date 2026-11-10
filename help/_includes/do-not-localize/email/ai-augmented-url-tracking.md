@@ -23,7 +23,7 @@ For complete understanding, this information should be combined with the documen
 
 * **URL tracking parameters**: Parameters defined at the email channel configuration level that are appended to the end of the URLs in your email content, to be captured in web analytics tools and performance reports *(product-specific)*
 * **Message profile id**: Message-oriented attribute uniquely identifying each message sent to each targeted profile in a delivery *(product-specific)*
-* **Source action id / Source action name**: The ID / name of the Email action added to the journey or campaign *(product-specific)*
+* **Source action id / Source action name**: The ID / name of the Action activity with the Email channel added to the journey, or of the email in the campaign *(product-specific)*
 * **Source id / Source name / Source version id**: The ID / name / version ID of the journey or campaign the email was sent with *(product-specific)*
 * **Offer id**: The ID of the offer used in the email *(product-specific)*
 
@@ -38,8 +38,8 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: URL tracking — Acronym: n/a — variants: URL tracking parameters
-* Synonyms: "Source action id" = "ID of the Email action"; "Source id" = "ID of the journey or campaign"
-* Do not confuse: "Source action id / name" (the Email action) ≠ "Source id / name" (the journey or campaign)
+* Synonyms: "Source action id" = "ID of the Action activity with the Email channel"; "Source id" = "ID of the journey or campaign"
+* Do not confuse: "Source action id / name" (the Action activity with the Email channel) ≠ "Source id / name" (the journey or campaign)
 * Do not confuse: configuration-level "URL tracking parameters" (applied to all content URLs) ≠ dynamic personalized tracking parameters added to individual links in content
 
 **FAQ:**
@@ -50,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is the character limit for a Value field?** — Up to 5 KB.
 * **Q: Which predefined attributes are available?** — Message profile id, Offer id, Source action id, Source action name, Source id, Source name, and Source version id.
 * **Q: Where can I capture these parameters?** — In web analytics tools such as Adobe Analytics or Google Analytics, and in performance reports.
+
+**Personas:**
+
+* **admin:** Can define URL tracking parameters at the email channel configuration level, adding up to 10 parameters with Add new parameter. Can enter Name and Value fields, with each Value field holding up to 5 KB of characters. The page states that activating URL tracking parameters is optional and that the order of appended parameters is random and cannot be controlled. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select Add new parameter to define a URL tracking parameter for your email channel configuration.
+* **Success check:** The preview automatically updates to show the resulting tracking URL each time you add, edit, or remove a parameter.
+* **Previous:** to create the email channel configuration where URL tracking parameters are defined: Configure email settings (email/email-settings.md)
+* **Next:** to personalize a Value field with contextual attributes using the personalization editor: Add personalization (personalization/personalization-build-expressions.md); to add dynamic personalized tracking parameters to links in the email content: Personalize email configuration settings (email/surface-personalization.md)
 
 +++
 

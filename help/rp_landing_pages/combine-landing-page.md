@@ -5,6 +5,9 @@ title: Cross-solution use cases
 description: Cross-solution use cases
 redpen-status: CREATED_||_2025-08-12_00-41-19
 exl-id: df3c6e57-9f76-4ce4-ad0d-c1e3c16daa8f
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Cross-solution use cases{#section-overview}
 

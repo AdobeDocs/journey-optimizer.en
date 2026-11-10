@@ -9,7 +9,7 @@ role: Admin, Developer, User
 level: Beginner
 keywords: journey optimizer, how it works, architecture, experience platform, functional areas
 exl-id: 9df179a0-a5f6-4dbd-a9db-a103731b1854
-TQID: https://experienceleague.adobe.com/E2ksPVFZBggv1RgEri7jx30G2oSanpmNs77vH9Yuq78
+TQID: 'https://experienceleague.adobe.com/E2ksPVFZBggv1RgEri7jx30G2oSanpmNs77vH9Yuq78'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -19,6 +19,8 @@ feature_v2:
 subfeature_v2:
   - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
     internal-label: Overview
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -71,7 +73,7 @@ topic_v2:
 
 This page explains how Adobe Experience Platform and Journey Optimizer work together, covering the continuous data-to-experience cycle, key functional areas, architecture details, and integration points.
 
-Adobe Journey Optimizer and Adobe Experience Platform work together to enable data-driven personalization at scale. This page explains how these systems operate and how their key functional areas combine to deliver exceptional customer experiences. [Learn about key capabilities](get-started.md) | [Explore key terminology](terminology.md)
+Adobe Journey Optimizer and Adobe Experience Platform work together to enable data-driven personalization at scale. This page explains how these systems operate and how their key functional areas combine to deliver exceptional customer experiences. [Learn about key capabilities](get-started.md) | [Jump to the five core concepts](#five-concepts) | [Explore key terminology](terminology.md)
 
 ## How Journey Optimizer works {#how-it-works}
 
@@ -87,17 +89,17 @@ Adobe Experience Platform serves as the backbone, enabling brands to centralize 
 
 * **Data Platform** - Central hub for collecting, managing, and structuring customer data to ensure consistency across systems. [Learn about schemas and datasets](../data/get-started-schemas.md)
 * **Data Ingestion (Sources)** - Import data from CRM platforms, websites, mobile apps, and cloud storage using pre-built connectors. [Explore data sources](get-started-sources.md)
-* **Real-time Customer Profile** - Creates unified profiles by merging data from multiple sources (email interactions, in-store purchases, web behavior). [Learn about profiles](../audience/get-started-profiles.md)
+* **Real-Time Customer Profile** - Creates unified profiles by merging data from multiple sources (email interactions, in-store purchases, web behavior). [Learn about profiles](../audience/get-started-profiles.md)
 * **Governance Layer** - Governs data access, privacy compliance, and security while adhering to regulations. [View privacy documentation](../privacy/get-started-privacy.md)
 
 ### Adobe Journey Optimizer: the orchestration engine {#ajo-orchestration}
 
 Adobe Journey Optimizer applies the data and insights from Adobe Experience Platform to deliver intelligent, personalized customer experiences:
 
-* **Customer Understanding** - Real-time Customer Profiles enable segmentation into audiences for targeted messaging. [Create audiences](../audience/about-audiences.md)
+* **Customer Understanding** - Real-Time Customer Profiles enable segmentation into audiences for targeted messaging. [Create audiences](../audience/about-audiences.md)
 * **Content & Offers** - A built-in visual designer, reusable templates, and a centralized asset library let teams author and personalize messages for any channel — without leaving the platform. Dynamic personalization adapts content based on customer attributes, behavior, and context. Real-time decisioning logic then selects the best offer for each individual. [Design content](../../rp_landing_pages/content-management-landing-page.md) | [Manage assets](../integrations/assets.md) | [Manage offers](../offers/get-started/starting-offer-decisioning.md)
-* **Journey & Campaign Management** - Automates sequences of interactions (journeys) or schedules one-time targeted messages (campaigns). [Build journeys](../building-journeys/journey-gs.md) | [Create campaigns](../campaigns/get-started-with-campaigns.md)
-* **Delivery (Connections)** - Delivers messages through channels like email, SMS, push notifications, and direct mail; exports data to external systems. [Configure channels](../configuration/get-started-configuration.md)
+* **Journey & Campaign Management** - Automates real-time, multi-step sequences of interactions (journeys) or sends a scheduled or API-triggered message to an audience (campaigns). Orchestrated campaigns, a third campaign type, run multi-step, multi-channel batch workflows on relational data. [Build journeys](../building-journeys/journey-gs.md) | [Create campaigns](../campaigns/get-started-with-campaigns.md)
+* **Delivery (Connections)** - Delivers messages through channels like email, mobile messages, push notifications, and direct mail, and exports data to external systems. These channel and external-system connections are configured in the [Connections](#functional-areas) functional area. [Configure channels](../configuration/get-started-configuration.md)
 * **Measurement & Analysis** - Tracks customer engagement and campaign performance with reports for continuous improvement. [View reports](../reports/campaign-global-report-cja.md)
 
 ### The continuous optimization cycle {#optimization-cycle}
@@ -106,9 +108,41 @@ This ecosystem operates as a continuous optimization cycle. Data drives customer
 
 ![Diagram illustrating the continuous optimization cycle in Journey Optimizer: data ingestion feeds customer profiles, which inform content and offer decisions, orchestrated into journeys, delivered across channels, measured for performance, and refined over time.](../assets/do-not-localize/get-started-flow.png)
 
+## Five concepts to know before you build {#five-concepts}
+
+Five ideas explain most of how [!DNL Journey Optimizer] behaves. Read these first, then follow the links when you need more detail.
+
+1. **Profiles and data.** Every customer has a **profile** that unifies what you know about them: attributes (name, preferences), events (purchases, app opens), and identities (email, device). This data lives in Adobe Experience Platform and powers targeting and personalization. [Get started with profiles](../audience/get-started-profiles.md)
+
+1. **Audiences.** An **audience** is a group of profiles that share traits or behavior. Audiences update as profiles change, so the right people are targeted when you send. [About audiences](../audience/about-audiences.md)
+
+1. **Campaigns and journeys.** Choose the approach that matches how you want customers to experience your message:
+
+    | Use a… | When… |
+    |---|---|
+    | **Campaign** | You send a scheduled or API-triggered message to an audience. |
+    | **Journey** | Customers move at their own pace through a real-time, multi-step, behavior-driven flow. |
+    | **Orchestrated campaign** | You run a complex batch workflow with multi-entity data. |
+
+    An **Orchestrated campaign** is a multi-step batch campaign that you design, automate, and deliver across channels from one visual canvas, for example a product launch or a seasonal promotion. It personalizes content, channel, and timing using profile attributes and business context from relational, multi-entity data (such as purchases, bookings, or locations), and it builds audiences with exact counts before you send marketing or transactional messages.
+
+    [Journeys vs campaigns](journeys-vs-campaigns.md) | [Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)
+
+1. **Channel configurations.** A **channel configuration** is the sending identity for a channel: for email, the subdomain and sender details; for push, the app credentials. Messages cannot be sent until an administrator sets one up. [Set up channel configurations](../configuration/channel-surfaces.md)
+
+1. **Sandboxes.** A **sandbox** is an isolated environment. Data, audiences, journeys, and settings do not carry across sandboxes. Sandboxes come in two types: a **development sandbox** is for building and testing with non-production profiles, and a **production sandbox** is where you send to your real customers. Build and test in a development sandbox, then send to customers from production. An administrator creates a sandbox in Adobe Experience Platform by selecting **[!UICONTROL Create sandbox]** and choosing the **[!UICONTROL Development]** or **[!UICONTROL Production]** type. Add the new sandbox to a role in Permissions before anyone can use it. [Create a sandbox](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/ui/user-guide){target="_blank"} | [Use and assign sandboxes](../administration/sandboxes.md)
+
+>[!TIP]
+>
+>Practice these concepts without touching production data. Use the free [Journey Optimizer tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/overview){target="_blank"} and a [training sandbox](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/configure-a-training-sandbox/introduction-and-prerequisites){target="_blank"}, a development sandbox you configure with sample data for the tutorials.
+
+Not sure who sets up what? See [Roles and responsibilities](quick-start.md).
+
 ## Key functional areas {#functional-areas}
 
-Journey Optimizer includes seven key functional areas that work together seamlessly:
+Journey Optimizer includes seven key functional areas that work together seamlessly.
+
+The [orchestration engine stages](#ajo-orchestration) map to these areas as follows: Customer Understanding is Customer Management, Content & Offers is Content Management and Decision Management, Journey & Campaign Management is Journey Management, and Delivery (Connections) is Connections. Measurement & Analysis is covered by [reports](../reports/campaign-global-report-cja.md) rather than a separate functional area.
 
 | Functional Area | Purpose | Key Activities |
 |-----------------|---------|----------------|
@@ -116,8 +150,8 @@ Journey Optimizer includes seven key functional areas that work together seamles
 | **Customer Management** | Understand who your customers are | Build unified profiles, resolve identities, create audiences. [Learn more](../audience/get-started-profiles.md) |
 | **Content Management** | Create personalized messages | Design emails, manage assets, build templates and fragments, personalize content. [Learn more](../../rp_landing_pages/content-management-landing-page.md) |
 | **Decision Management** | Select the best offer in real time | Manage offer library, define rules, apply constraints, establish ranking logic. [Learn more](../offers/get-started/starting-offer-decisioning.md) |
-| **Journey Management** | Design automated customer experiences | Create journeys with visual designer, set triggers, add conditions and wait steps. [Learn more](../building-journeys/journey-gs.md) |
-| **Connections** | Connect data sources and channels | Configure source connectors, set up channels, connect to external platforms. [Learn more](../configuration/get-started-configuration.md) |
+| **Journey Management** | Design automated customer experiences | Create journeys with visual designer, set triggers, add conditions and wait steps. Send campaigns to audiences. [Learn more](../building-journeys/journey-gs.md) |
+| **Connections** | Connect data sources, channels, and external systems | Configure source connectors, set up channels, connect to external platforms. [Learn more](../configuration/get-started-configuration.md) |
 | **Administration & Privacy** | Control setup and compliance | Manage users, configure sandboxes, set up channels, handle privacy requests. [Learn more](../administration/permissions.md) |
 
 ### How these areas work together {#working-together}
@@ -125,7 +159,7 @@ Journey Optimizer includes seven key functional areas that work together seamles
 These functional areas operate in a continuous cycle:
 
 1. **Data Ingestion** - Data flows into Adobe Experience Platform, structured by Data Management
-2. **Customer Understanding** - Real-time Customer Profiles unify data; Customer Management creates audiences  
+2. **Customer Understanding** - Real-Time Customer Profiles unify data; Customer Management creates audiences  
 3. **Content & Offer Strategy** - Content Management creates messages; Decision Management defines offer logic
 4. **Orchestration** - Journey Management maps interactions across channels using customer data, content, and decisions
 5. **Delivery** - Connections facilitate message delivery via channels or share data with external systems

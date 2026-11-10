@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How can I confirm a recipient has been opted out?** — In Experience Platform, browse to the profile and check the Attributes tab: the choice value has changed to no.
 * **Q: What is the expected event sequence for a landing-page opt-out?** — In order: Click, Visit, Submit, Unsubscribe, Consent update. If any step is missing or occurs out of order, it may indicate an issue with the opt-out implementation.
 
+**Personas:**
+
+* **marketer:** Can enable the List-Unsubscribe option at the channel configuration level to add a one-click unsubscribe URL to the email header. Can insert a one-click opt-out link into the email body and select whether the opt-out applies at the channel or identity level. The page states that all marketing messages must include an opt-out link, which is not required for transactional messages. Where: "One-step opt-out".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Access your email content and insert a link.
+* **Success check:** In the profile's Attributes tab, the value for choice has changed to no.
+* **Previous:** Learn more about privacy and opt-out management: Manage opt-out (privacy/opt-out.md); Create a landing page in Journey Optimizer to manage unsubscriptions before setting up two-step opt-out: Landing page use cases (landing-pages/lp-use-cases.md)
+* **Next:** Manage the List-Unsubscribe option at the channel configuration level: Configure List unsubscribe (email/list-unsubscribe.md); Choose a consent level for the opt-out, at the channel or identity level: Choose a consent level for opt-outs (email/consent-level.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: ada7bf93 -->

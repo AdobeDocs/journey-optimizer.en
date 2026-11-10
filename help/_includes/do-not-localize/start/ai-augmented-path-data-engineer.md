@@ -33,7 +33,7 @@ For complete understanding, this information should be combined with the documen
 
 * Test profiles are required when using test mode in a journey and to preview and test messages before sending.
 * For standard journeys and campaigns, use XDM schemas; for Orchestrated campaigns, create relational schemas to enable multi-entity segmentation.
-* Message export datasets apply only when message export is enabled at the channel configuration level, after which sent email and SMS content is automatically exported to a dedicated Experience Platform dataset.
+* Message export datasets apply only when message export is enabled at the channel configuration level, after which sent email and Mobile message content is automatically exported to a dedicated Experience Platform dataset.
 * You can start working once the System Administrator has granted you access and prepared your environment.
 * To send messages in journeys, you must configure Data Sources, Events, and Actions.
 
@@ -51,6 +51,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What do I need to configure so messages can be sent in journeys?** — Data Sources, Events, and Actions.
 * **Q: Where do incoming events come from and how is their data structured?** — Events come from Streaming Ingestion APIs for authenticated and unauthenticated events, and the incoming data is normalized following the Adobe Experience Data Model (XDM).
 * **Q: How can I monitor and troubleshoot running journeys?** — Query journey step events in the Data Lake using SQL to analyze entry and exit patterns, error rates and discard reasons, and journey instance states and bottlenecks.
+
+**Personas:**
+
+* **developer:** Can create identity namespaces, configure supplemental identifiers such as order IDs or booking IDs, and create XDM schemas or relational schemas for Orchestrated campaigns. Can create datasets with fields and columns, and configure source connectors to ingest data from external sources. The page states that events come from Streaming Ingestion APIs, and incoming event data is normalized following the Adobe Experience Data Model. Where: "Essential data configuration steps".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Create identity namespaces.
+* **Success check:** The result is an identity graph that links consumers across devices and channels.
+* **Previous:** Before starting data foundation work, complete Administrator setup: Journey Optimizer Get Started for System Admin (start/path/administrator.md); New to data in Journey Optimizer, understand schemas, datasets, and identities before configuration: Get started with data management in Journey Optimizer (data/gs-data.md)
+* **Next:** After completing data foundation work, continue to the Developer role next in the implementation order: Get Started for Developers (start/path/developer.md); To get started with data analysis and troubleshooting once journeys are running, explore query examples: Examples of queries (reports/query-examples.md)
 
 +++
 

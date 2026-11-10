@@ -49,6 +49,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: What does the Info panel show for a Content Fragment?** — Fragment variations, properties, and Referenced By details, which link to the Adobe Experience Manager entities where the fragment is used.
 * **Q: Why do I see different Dynamic Media buttons for different assets?** — The buttons depend on the repository configuration and whether the asset is published (Scene7) and/or approved (OpenAPI).
 
+**Personas:**
+
+* **marketer:** Can search for assets and Content Fragments using AI-powered semantic search, including multi-lingual queries, directly within Journey Optimizer authoring workflows. Can open Content Advisor from the Personalization Editor by selecting Assets or AEM Content Fragment, then selecting Open AEM Content Advisor. The page states that Dynamic Media button availability depends on repository configuration, such as Scene7 or OpenAPI. Where: "Available capabilities".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Create a campaign in Adobe Journey Optimizer and add a channel action, for example Email.
+* **Success check:** The asset or content fragment you selected is inserted into your content.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 887d1fb9 -->

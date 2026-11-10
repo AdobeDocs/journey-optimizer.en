@@ -14,7 +14,7 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 
 * Understand how the WhatsApp channel works in Journey Optimizer via Meta's Cloud API
-* Decide whether to add a WhatsApp activity to a journey or select WhatsApp as a campaign action
+* Decide how to add WhatsApp to journeys and campaigns
 * Evaluate WhatsApp use cases and situations when not to use the channel
 * Identify the prerequisites needed to integrate WhatsApp with Journey Optimizer
 * Understand the limitations that apply to the WhatsApp channel
@@ -24,7 +24,7 @@ For complete understanding, this information should be combined with the documen
 * **WhatsApp channel**: The Journey Optimizer channel that sends WhatsApp messages directly through Meta's Cloud API *(product-specific)*
 * **Cloud API**: Meta's API through which Journey Optimizer sends WhatsApp messages *(product-specific)*
 * **WhatsApp Flow template**: A template type that builds guided, multi-step interactions within the chat, such as surveys and lead capture forms *(product-specific)*
-* **WhatsApp Business Account**: A Meta business account with a verified sender name and phone number, required to integrate WhatsApp *(product-specific)*
+* **WhatsApp Business Account**: A WhatsApp Business Account with a verified sender name and phone number, listed as a prerequisite to integrate WhatsApp *(product-specific)*
 
 **Guardrails:**
 
@@ -38,10 +38,8 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: WhatsApp channel — Acronym: n/a — variants: WhatsApp, WhatsApp activity, WhatsApp action
-* Synonyms: "WhatsApp activity" (in a Journey) = "WhatsApp action" (in a Campaign)
-* Do not confuse: "Journey" (add a WhatsApp activity) ≠ "Campaign" (select WhatsApp as an action)
-* Do not confuse: "BSP" (Business Service Provider) ≠ "Cloud API" (Meta's native integration used by Journey Optimizer)
+* Canonical name: WhatsApp channel — Acronym: n/a — variants: WhatsApp
+* Do not confuse: "BSP" (third-party Business Service Provider, not allowed by the native integration) ≠ "Cloud API" (Meta's API used for the native integration)
 
 **FAQ:**
 
@@ -52,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I use a third-party BSP with this integration?** — No, the native integration does not allow integration with third-party Business Service Providers.
 * **Q: When should I not use WhatsApp?** — When your audience does not use it, recipients have not opted in, the message is urgent and needs guaranteed delivery, the content is lengthy or complex, or real-time conversational support is not feasible.
 
+**Personas:**
+
+* **marketer:** Can send marketing template messages through the WhatsApp channel. Delivery to United States phone numbers, with a +1 dialing code and US area code, has been suspended since April 2025. The page states that automated or predefined response messages are not yet supported for the WhatsApp channel. Where: "Limitations".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Add a WhatsApp activity to a journey and define basic settings.
+* **Success check:** You can browse to the Actions: WhatsApp right pane to create the WhatsApp message content.
+* **Previous:** To create a journey before adding a WhatsApp activity: Create your first journey (building-journeys/journey-gs.md)
+* **Next:** Add WhatsApp as the action in a campaign: Configure the campaign action (campaigns/campaign-action.md); Trigger WhatsApp messages through an API-triggered campaign: Work with API triggered campaigns (campaigns/api-triggered-campaigns.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 49f32f6b -->
+<!-- ai-section-version: 1 | source-hash: 16423cf6 -->

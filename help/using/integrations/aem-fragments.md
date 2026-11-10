@@ -192,6 +192,8 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     ![](assets/aem_campaign_9.png){zoomable="yes"}
 
+    You can also use attribute paths such as `profile.person.name.firstName` directly in fragment fields. Learn more in [Use attribute paths in Content Fragments](#aem-attribute-paths).
+
 1. Click **[!UICONTROL Save]**. You can now test and check your message content as detailed in [this section](../content-management/preview.md).
 
     Note that the Content Fragment you selected stays active for this message. When you open the Personalization Editor in another field or content block, you can keep working with the same fragment from the **[!UICONTROL AEM Content Fragment]** section and add more fields without reopening **[!UICONTROL Open AEM Content Advisor]**.
@@ -200,14 +202,62 @@ Once you have performed your tests and validated the content, you can [send your
 
 Adobe Experience Manager allows you to identify the Journey Optimizer campaigns or journeys where a Content Fragment is being used. Learn more in [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references){target="_blank"}. 
 
-## Use AEM Content Fragments with Experience Decisioning {#aem-decisioning}
+### Use attribute paths in Content Fragments {#aem-attribute-paths}
 
+>[!AVAILABILITY]
+>
+>This capability is available for organizations where it has been enabled. Contact your Adobe representative to request access.
+
+>[!NOTE]
+>
+>This capability supports only Adobe Experience Manager fragments that you add directly to a message. Adobe Experience Manager fragments selected dynamically by decisioning at send time are not supported.
+
+Content Fragment fields can contain attribute paths from the `profile`, `context`, and `item` namespaces, for example `{{profile.person.name.firstName}}`. These resolve automatically when the message is sent, with no token map needed, and you can mix them with flat tokens in the same field.
+
+Attribute paths written directly inside Adobe Experience Manager fragments, such as `{{profile.person.name.firstName}}`, are resolved only for fragments added directly to a message. They are not supported for Adobe Experience Manager fragments fragments served through Experience Decisioning.
+
+Use the full attribute path as it appears in the schema. Helpers, expressions, conditional blocks, and PQL are not supported inside Content Fragments.
+
+To render profile attributes, add an **Expression fragment** to the same message as an inline fragment (`mode="inline"`). Declare each profile attribute used in the Content Fragment with the `let` syntax only. The variable name in `let` can be anything, but the Content Fragment must still use the full attribute path, for example `{{profile.person.name.firstName}}`, not the variable name. Attributes that are not declared render as empty. Context and decision item attributes do not need this fragment.
+
+
+>[!BEGINSHADEBOX]
+
+**Example**
+
+
+The `headline` field in the Content Fragment contains:
+
+```html
+Hi {{profile.person.name.firstName}}, use code {{promoCode}}!
+```
+
+The Expression fragment declares the profile attribute:
+
+```html
+{% let firstName = profile.person.name.firstName %}
+```
+
+The message contains both references:
+
+```html
+{{fragment id="ajo:<helperFragmentId>" mode="inline"}}
+{{fragment id="aem:…" promoCode="SAVE10"}}
+```
+
+The first name resolves from the profile, and `promoCode` comes from the token map.
+
+>[!ENDSHADEBOX]
+
+## Use AEM Content Fragments with Experience Decisioning {#aem-decisioning}
 
 >[!AVAILABILITY]
 >
 >This feature is available for channels with Decisioning support.
 
 AEM Content Fragments can also be used as offer item attributes in **Experience Decisioning**. By mapping Content Fragment fields to decision item attributes, you can use Journey Optimizer decisioning models, formulas, and ranking criteria to optimize which fragment is served to each profile.
+
+Attribute paths written directly inside Experience Manager fragments, such as `{{profile.person.name.firstName}}`, are not supported for fragments served through Experience Decisioning. Learn more in [Use attribute paths in Content Fragments](#aem-attribute-paths).
 
 >[!NOTE]
 >

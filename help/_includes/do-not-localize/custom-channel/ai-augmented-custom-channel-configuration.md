@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how an administrator creates a channel configuration that links a custom channel to a named, reusable preset, including API credentials, an optional subdomain, dynamic parameters, and payload defaults, so that marketers can select it when building campaigns and journeys.
+* **TL;DR:** This page explains how to create a channel configuration that links a custom channel to a named, reusable preset, including API credentials, an optional subdomain, dynamic parameters, and payload defaults, so that marketers can select it when building campaigns and journeys.
 
 **Intents:**
 
@@ -32,13 +32,14 @@ For complete understanding, this information should be combined with the documen
 * The API credentials field appears only if the selected channel uses an authentication type other than None.
 * The Dynamic parameters section appears only if the channel has headers or query parameters defined as variable.
 * The Payload configuration section appears only for payload fields that have the Channel config checkbox enabled.
+* In custom channel configurations, you cannot select a message type, so all messages sent through custom channels are treated as Marketing messages at send time; custom channels are not supported in Transactional campaigns (action or API-triggered).
+* Selecting a delegated subdomain is possible only if you have set up subdomains for custom channels in Journey Optimizer.
 * Clicking Submit saves and activates the channel configuration.
 
 **Terminology:**
 
 * Canonical name: channel configuration — Acronym: n/a — variants: custom channel configuration, named preset
-* Synonyms: "Dynamic parameters" = "variable headers or query parameters"
-* Do not confuse: "channel configuration" (the reusable preset) ≠ "custom channel" (the underlying channel definition)
+* Do not confuse: "channel configuration" (the reusable preset) ≠ "custom channel" (the activated custom channel selected from the Select channel drop-down)
 * Do not confuse: "Dynamic parameters" (values for variable headers or query parameters) ≠ "Payload configuration" (values for payload fields enabled for the channel config)
 
 **FAQ:**
@@ -49,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which channels can I select?** — Only your activated custom channels.
 * **Q: How do I save a channel configuration?** — Click Submit to save and activate it.
 
+**Personas:**
+
+* **admin:** Can create a channel configuration for an activated custom channel, selecting API credentials and an optional delegated subdomain. Can enter values for dynamic parameters and for payload fields with the Channel config checkbox enabled. The page states that custom channels are not supported in Transactional campaigns because no message type can be selected. Where: "Guardrails".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Go to Administration, Channels, Channel configurations, and select Create channel configuration.
+* **Success check:** The custom channel is fully configured, and marketers can start using it to build customer experiences.
+* **Previous:** Activate a custom channel before selecting it in the channel configuration: Create a custom channel (custom-channel/create-custom-channel.md); Set up API credentials before selecting them for this configuration: Manage API credentials for custom channels (custom-channel/custom-channel-api-credentials.md)
+* **Next:** Build customer experiences using the activated channel configuration: Create custom channel experiences (custom-channel/create-custom-experience.md); Test the custom channel after configuring it: Test your custom channel (custom-channel/test-custom-channel.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: fcf9940a -->
+<!-- ai-section-version: 1 | source-hash: a0aac28d -->

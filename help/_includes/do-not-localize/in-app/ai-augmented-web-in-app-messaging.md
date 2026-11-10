@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to configure Web In-app Messaging support in the Web SDK, either through the Web SDK tag extension or directly with the Web SDK JavaScript library, using either automatic (Send data to Experience Platform) or manual triggers.
+* **TL;DR:** This page explains how to configure Web In-app Messaging support in the Web SDK, either through the Web SDK tag extension or directly with the Web SDK JavaScript library, with two types of triggers: sending data to Experience Platform and manually triggering the messages.
 
 **Intents:**
 
@@ -23,8 +23,8 @@ For complete understanding, this information should be combined with the documen
 
 * **Web In-app message**: A notification sent to users within your web application to guide them to specific points of interest, such as promoting features, presenting offers, or facilitating onboarding *(product-specific)*
 * **Enable personalization storage**: A Web SDK tag extension option that allows the Web SDK to track which experiences have been seen by the user across page loads *(product-specific)*
-* **Send data to Experience Platform trigger**: A trigger type configured with a Send event action that automatically fetches personalization content *(product-specific)*
-* **Manual trigger**: A trigger type configured with an Evaluate rulesets action to show messages after a specific user action *(product-specific)*
+* **Send data to Experience Platform trigger**: A trigger type configured with a rule using the Library Loaded (Page Top) event and a Send event action *(product-specific)*
+* **Manual trigger**: A trigger type configured with a rule using the Click event on a specific element identified by a CSS selector and an Evaluate rulesets action *(product-specific)*
 * **Render visual personalization decisions**: A Personalization option enabled on the action so visual personalization decisions are rendered *(product-specific)*
 * **Decision context**: A section where you define the Key/Value pairs used in your campaign configuration to qualify for the in-app message *(product-specific)*
 * **`personalizationStorageEnabled`**: A Web SDK configuration option controlling whether in-app messages appear with the frequency defined in your campaign or on every page load *(product-specific)*
@@ -40,7 +40,6 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Web In-app Messaging — Acronym: n/a — variants: Web In-app messaging, Web In-app message
-* Synonyms: "Send data to Experience Platform trigger" = "automatic trigger (Method 1)"
 * Do not confuse: "Web SDK tag extension" (configuration via tag rules and actions) ≠ "Web SDK JavaScript library" (configuration via `sendEvent`/`evaluateRulesets` commands)
 * Do not confuse: "`sendEvent`" (Method 1: automatically fetch personalization content on page load) ≠ "`evaluateRulesets`" (Method 2: manually fetch based on user action)
 
@@ -52,6 +51,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I control how often a message is shown?** — Use `personalizationStorageEnabled`: set to true to trigger with the frequency defined in your campaign, or false to trigger on every page load.
 * **Q: What does Enable personalization storage do?** — It lets the Web SDK track which experiences have been seen by the user across page loads.
 
+**Personas:**
+
+* **developer:** Can configure Web In-app Messaging directly from the Web SDK JavaScript library, using the `sendEvent` or `evaluateRulesets` commands. Can set `renderDecisions: true` with `personalization.surfaces` in `sendEvent`, or `personalization.decisionContext` in `evaluateRulesets`, to fetch personalization content. The page states that `personalizationStorageEnabled: true` triggers the in-app message with the campaign frequency, while `personalizationStorageEnabled: false` triggers it on every page load. Where: "Configure Web In-app Messaging using the Web SDK JavaScript library".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Check the Enable personalization storage option in the Personalization section of the Web SDK tag extension.
+* **Success check:** The configuration process is completed and your message is ready to be shown to your users.
+* **Previous:** Define the in-app message frequency in the campaign configuration before setting personalizationStorageEnabled: Configure the Web In-app channel (in-app/create-in-app-web.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: f842b010 -->
+<!-- ai-section-version: 1 | source-hash: 9b42a69e -->

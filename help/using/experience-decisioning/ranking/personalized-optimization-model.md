@@ -8,13 +8,30 @@ role: User
 level: Experienced
 exl-id: 1c7bcffe-5a25-444f-8a95-057b7a07f252
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/ytq-DaCojPLwO0ReHyA6oYnAzepr02rthWrZwU-lehY
+TQID: 'https://experienceleague.adobe.com/ytq-DaCojPLwO0ReHyA6oYnAzepr02rthWrZwU-lehY'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
+feature_v2:
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: 69102627-e6ba-56f5-ae85-9cc5357f529e
+    internal-label: Offers
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
+  - id: 687cafea-8a14-5656-a74f-20be1c58b419
+    internal-label: Ranking
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
@@ -22,16 +39,6 @@ topic_v2:
     internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-feature_v2:
-  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
-    internal-label: Decisioning
-  - id: a984631b-2bae-4860-9b15-69c41a799dcb
-    internal-label: APIs and SDKs
-subfeature_v2:
-  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
-    internal-label: Decisioning API
-  - id: eb547372-2a95-4d13-b0fd-f720c9895880
-    internal-label: Edge Decisioning
 ---
 # Personalized optimization model {#personalized-optimization-model}
 
@@ -51,7 +58,7 @@ Personalized optimization is well suited to decisioning scenarios where differen
 
 * **Next-best-offer selection**: choosing which of several competing offers or promotions to present to each customer in real time.
 * **Content personalization**: choosing which piece of content (e.g. banner, creative) or message for each customer across web, mobile, email, and other channels.
-* **Audience-aware personalization**: incorporating audience membership and contextual signals so that recommendations reflect who the customer is and the context of the interaction.
+* **Audience-aware personalization**: incorporating audience membership, profile attributes, and contextual signals so that recommendations reflect who the customer is and the context of the interaction.
 * **Revenue and value optimization**: optimizing toward continuous outcomes such as revenue or customer lifetime value, in addition to binary outcomes such as clicks and conversions.
 
 Key benefits:
@@ -65,7 +72,7 @@ Key benefits:
 
 To train a personalized optimization model, the dataset must have at least two offers with at least 250 display events (for example, impressions) and one success event (for example, click or conversion) within the last 30 days.
 
-Offers with fewer than 250 display events and/or no success events within the last 30 days will remain eligible for inclusion in the exploration traffic. They will also be eligible for inclusion in the personalization traffic but will be treated as equivalent to the worst scoring predicted offer in decisioning, until they meet the required minimum display/success events and the model gets re-trained.
+Offers with fewer than 250 display events and/or no success events within the last 30 days will remain eligible for inclusion in the exploration traffic and new offer booster traffic. They will also be eligible for inclusion in the personalization traffic but will be treated as equivalent to the worst scoring predicted offer in decisioning, until they meet the required minimum display/success events and the model gets re-trained.
 
 Until the first time a personalized optimization model is trained, offers within a selection strategy utilizing a personalized optimization model will be served at random.
 
@@ -73,13 +80,18 @@ Until the first time a personalized optimization model is trained, offers within
 
 The model learns complex feature interactions between offers, users' information and contextual information to recommend personalized offers to end users. Features are inputs into the model.
 
-There are 3 types of features:
+There are 4 types of features:
 
 | Feature types | How to add features to models |
 |--------------|----------------------------|
 | Decisioning objects (placementID, activityID, decisionScopeID)| Part of the decision management feedback Experience Events sent to AEP|
-| Audiences| 0-50 audiences can be added as features when creating the Ranking AI model|
-| Context data| Part of the decisioning feedback Experience Events sent to AEP. Available context data to add to schema: Commerce Details, Channel Details, Application Details, Web Details, Environment Details, Device Details, placeContext|
+| Audiences| 0-50 audiences can be added as features when creating or editing the Ranking AI model|
+| Profile features (Limited Availability)| 0-50 profile attributes from your profile dataset schema can be added as features when creating or editing the Ranking AI model. These features can be of numeric, string, Enum, and binary datatype. Datetime, array, and key-value pair datatypes are not available. If applicable, DULE policies apply to selected profile features automatically.|
+| Context features (Limited Availability)| Real-time context signals sent with the decision API request. Automatic context features (like channel ID) are always included. Pre-selected recommended context features (like device type, country code) can be removed, and 0-20 additional context features can be added when creating or editing the Ranking AI model. These features can be of numeric, string, Enum, and binary datatype. Datetime, array, and key-value pair datatypes are not available. Only available for inbound channels.|
+
+>[!AVAILABILITY]
+>
+>Profile features and context features are currently available as a Limited Availability release. Contact your Adobe representative to gain access.
 
 The model has two phases:
 
@@ -87,6 +99,10 @@ The model has two phases:
 * In the **online inference** phase, candidate offers are ranked based on real-time scores generated by the model. Unlike traditional collaborative filtering techniques, with which it is hard to include features for users and offers, personalized optimization is a deep learning based recommendation method, and is able to include and learn complex and nonlinear feature interaction patterns. 
 
 The model supports optimization of continuous variables (such as revenue and customer lifetime value) in addition to binary variables (such as clicks and conversions). Predicted values for a binary metric such as clicks will always be between 0 and 1. Predicted values for a continuous metric such as order value will always be a number greater than or equal to zero. Ranking scores are normalized to ensure consistent behavior across both metric types when used in formulas or comparisons.
+
+### Pass context at decision time {#pass-context}
+
+If your model uses context features, the decision request must carry the values for those features. Send them with the Web SDK or Mobile SDK, as configured in your datastream. At decision time, the model uses the context values together with the profile's attributes and audience memberships to score the eligible offers in real time. [Learn how to set up context data](../context-data.md)
 
 ## Illustrative example {#illustrative-example}
 
@@ -125,21 +141,21 @@ The ensemble is composed of four traffic arms:
 The uniform random arm assigns offers to customers at random from among the eligible offers. Because it does not favor any offer, it produces unbiased data about how customers respond across the full catalog — the raw material the personalized arms learn from. It is the only arm active before the first model is trained, and afterward it continues to hold a minimum exploration floor so the system keeps learning.
 
 * At initialization: 100% of traffic.
-* After the first successful training run: a minimum of 5–20% of traffic depending on the number of observed impression and conversion events per offer, up to a maximum of 85%.
+* After the first successful training run: a minimum of 10% of traffic, up to a maximum of 85% (depending on the number of observed impression and conversion events per offer).
 
 ### Neural network (personalized arm) {#neural-network}
 
 The neural network is a personalized arm that predicts the best offer for a given customer based on their attributes and audience memberships. It learns complex, nonlinear interactions among offers, customer features, and context, and is well suited to capturing subtle patterns across many features.
 
 * At initialization: 0% of traffic.
-* After the first successful training run: a minimum of 5% of traffic, up to a maximum of 85%.
+* After the first successful training run: a minimum of 5% of traffic, up to a maximum of 80%.
 
 ### Contextual bandit (personalized arm) {#contextual-bandit}
 
-The contextual bandit is a second personalized arm that also predicts the best offer for each customer based on their audience memberships, using a bandit approach that continually balances learning and performance as it serves. Running it alongside the neural network lets the ensemble draw on the strengths of two distinct personalized methods.
+The contextual bandit is a second personalized arm that also predicts the best offer for each customer based on their attributes, audience memberships, and context, using a bandit approach that continually balances learning and performance as it serves. Running it alongside the neural network lets the ensemble draw on the strengths of two distinct personalized methods.
 
 * At initialization: 0% of traffic.
-* After the first successful training run: a minimum of 5% of traffic, up to a maximum of 85%.
+* After the first successful training run: a minimum of 5% of traffic, up to a maximum of 80%.
 
 ### New offer booster (non-personalized arm) {#new-offer-booster}
 
@@ -152,11 +168,11 @@ The new offer booster is an overall-winner Thompson Sampling bandit (non-persona
 
 ### How traffic is allocated across the arms {#traffic-allocation}
 
-At initialization, no model has trained yet, so 100% of traffic goes to the uniform random baseline — the only arm with a learned distribution to sample from. After the first successful training run, each arm receives a minimum traffic floor (5%), and the supervisory bandit allocates the remaining traffic based on observed performance. As the model trains across successive rounds, traffic converges toward the highest-performing arms with a maximum possible allocation of 85% traffic.
+At initialization, no model has trained yet, so 100% of traffic goes to the uniform random baseline — the only arm with a learned distribution to sample from. After the first successful training run, each arm receives a minimum traffic floor (5%), and the supervisory bandit allocates the remaining traffic based on observed performance. As the model trains across successive rounds, traffic converges toward the highest-performing arms with a maximum possible allocation of 80% traffic.
 
 ![Traffic allocation across the four ensemble arms over successive training rounds](../assets/perso-ranking-traffic-allocation.png)
 
-*Figure 3: A possible traffic allocation trajectory across the four ensemble arms at initialization and across successive training rounds. At initialization, all traffic flows to the random baseline. After each training run, the supervisory Thompson Sampling bandit shifts allocation toward better-performing arms, while maintaining minimum 5% traffic. Actual allocation will vary based on observed arm performance.*
+*Figure 3: A possible traffic allocation trajectory across the four ensemble arms at initialization and across successive training rounds. At initialization, all traffic flows to the random baseline. After each training run, the supervisory Thompson Sampling bandit shifts allocation toward better-performing arms, while maintaining minimum traffic per arm. Actual allocation will vary based on observed arm performance.*
 
 ## Key model assumptions and limitations {#key}
 
@@ -169,12 +185,13 @@ For example, if a bank has two credit cards offers with the only difference bein
 
 ## Cold-start Problem {#cold-start}
 
-Cold-start problems occur when there isn't enough data to make recommendations. For personalized optimization, there are four types of cold-start problems.
+Cold-start problems occur when there isn't enough data to make recommendations. For personalized optimization, there are five types of cold-start cases.
 
 * **After creating a new AI model with no historical data**, offers will be randomly served for a period of time to collect the required data, which will then be used to train the first model.
 * **After the first AI model is released**, a portion of total traffic is allocated for uniform random exploration while the remainder is used for model recommendations. The traffic distribution across the exploration and exploitation bandit components is tuned automatically based on factors such as the number of offers and their performance thresholds.
 * **After new offers are added to the offer collection** selected in the strategy associated with the AI ranking model, those offers then become eligible candidates for exploration by both the uniform random and new offer booster model arms (within 60 minutes). During the next scheduled re-training run, the offer's estimated performance will be updated in the new offer booster model arm, and the offer will become eligible for inclusion in the personalized model arms if it met the impression and click threshold.
 * **After new profiles are added to the existing audience set** associated with the selection strategy associated with the AI ranking model, they inherit personalization attributes from the audience set itself. Hence, they will start receiving personalized offers based on those attributes from the get-go, without any cold-start problem.
+* **After new audience sets, profile features, and/or context features are added to the existing model**, the data associated with them starts to get collected and is used from the next scheduled re-training run.
 
 ## Re-training {#re-training}
 

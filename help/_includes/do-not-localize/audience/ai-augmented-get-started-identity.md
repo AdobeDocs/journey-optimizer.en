@@ -30,8 +30,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Identity Graph — Acronym: n/a — variants: identity graph
-* Synonyms: "fully qualified identity" = "identity namespace + identity value"
+* Canonical name: Identity Graph
 * Do not confuse: "identity namespace" (indicator of context) ≠ "identity value" (string representing an entity)
 
 **FAQ:**
@@ -40,6 +39,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is the Identity Graph?** — A map of relationships between a particular customer's different identities, showing how they interact with a brand across channels.
 * **Q: Who manages and updates customer identity graphs?** — Adobe Experience Platform Identity Service, in response to customer activity.
 
+**Personas:**
+
+* **marketer:** Can browse the various identifiers that make up customers in the database using the Identities menu. Can explore the Identity Graph, a map of relationships between a customer's different identities. The page states that all customer identity graphs are collectively managed and updated by Adobe Experience Platform Identity Service. Where: "Get Started with identities".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Browse the various identifiers that make up your customers in the Identities menu.
+* **Success check:** The Identity Graph shows a visual representation of how a customer interacts with a brand across different channels.
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: b9345d78 -->
+<!-- ai-section-version: 1 | source-hash: 2beb1677 -->

@@ -15,13 +15,13 @@ For complete understanding, this information should be combined with the documen
 
 * Create an AI model in the [!UICONTROL Orchestration ranking] > [!UICONTROL AI models] tab
 * Choose an [!UICONTROL Optimization metric] from the default Customer Journey Analytics data view
-* Select the datasets and segments used to train the model
+* Select the datasets where conversion and impression events are collected, and the segments used to train the model
 * Reference an AI model in a ranking formula using [!UICONTROL AI model score] as the ranking method
 * Assign the formula to a rule set and apply it to journeys so ranking applies when a cap is reached
 
 **Glossary:**
 
-* **AI model**: A trained model whose scores dynamically rank journeys, used in ranking formulas instead of static priority *(product-specific)*
+* **AI model**: A trained model whose scores dynamically rank journeys, used in ranking formulas instead of priority *(product-specific)*
 * **Ranking object**: The entity that the ranking formula applies to; by default set to [!UICONTROL Journey] *(product-specific)*
 * **Conversion rate**: Total number of conversion events / Total number of impression events; the basis on which [!DNL Journey Optimizer] ranks *(product-specific)*
 * **Impression events**: Items that are displayed *(product-specific)*
@@ -33,16 +33,16 @@ For complete understanding, this information should be combined with the documen
 * This feature is currently in Limited Availability; contact your Adobe representative to gain access.
 * AI models are only available to organizations that have purchased the **Decisioning** add-on offering.
 * Only datasets created from schemas associated with the [!UICONTROL Experience Event - Proposition Interactions] field group are displayed in the drop-down list.
-* You can select up to 5 datasets where the conversion and impression events are collected (hard limit).
-* You can select up to 50 audiences to train the AI model (hard limit).
+* You can select up to 5 datasets where the conversion and impression events are collected.
+* You can select up to 50 audiences to train the AI model.
 * Impression and conversion events are automatically captured using the Web SDK or the Mobile SDK.
 * Only one rule set can be applied to a journey at a time.
 
 **Terminology:**
 
-* Canonical name: AI model — Acronym: n/a — variants: journey arbitration AI models, AI model score
+* Canonical name: AI model — variants: AI models
 * Synonyms: none
-* Do not confuse: "AI model" (trained model producing scores) ≠ "ranking formula" (the expression that references priority, attributes, or AI model score) ≠ "journey priority" (a manual value)
+* Do not confuse: "AI model" (trained model whose scores can be used to rank journeys) ≠ "ranking formula" (the formula in which you select the AI model and set [!UICONTROL AI model score] as the ranking method in a criterion) ≠ "priority" (the value assigned to each journey that determines which journeys are selected; AI models in ranking formulas are used instead of it)
 * Do not confuse: "impression events" (items that are displayed) ≠ "conversion events" (items that result in clicks or conversions)
 
 **FAQ:**
@@ -53,6 +53,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which datasets can I select?** — Only datasets created from schemas associated with the [!UICONTROL Experience Event - Proposition Interactions] field group.
 * **Q: How do I use the AI model in a formula?** — Use the [!UICONTROL Select AI model] button, then in at least one [!UICONTROL Criterion] set [!UICONTROL AI model score] as the ranking method.
 
+**Personas:**
+
+* **marketer:** Can create an AI model in the Orchestration ranking section under the AI models tab, specifying an Optimization metric, datasets, and segments. Can reference the AI model in a ranking formula using AI model score, then assign the formula to a rule set applied to journeys. The page states that you can select up to 5 datasets and up to 50 audiences to train the AI model. Where: "Create an AI model".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Create a dataset where conversion events will be collected.
+* **Success check:** All journeys that use this rule set will be ranked with the formula referencing the selected AI model when the cap is applied.
+* **Previous:** Defining journey entry or concurrency caps using rule sets before applying AI model ranking: Work with rule sets (conflict-prioritization/rule-sets.md); Creating a dataset to collect conversion events before creating the AI model: Create a dataset to collect events (experience-decisioning/data-collection/create-dataset.md)
+* **Next:** Creating a ranking formula to reference the AI model after creating it: Journey arbitration ranking formulas (conflict-prioritization/journey-ranking-formulas.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 3924d398 -->
+<!-- ai-section-version: 1 | source-hash: ad8a4fdc -->

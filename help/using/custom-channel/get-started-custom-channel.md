@@ -5,14 +5,29 @@ feature: Channel Configuration
 topic: Content Management
 role: User
 level: Beginner
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
   - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
     internal-label: Custom Channels
+  - id: 3c5473a1-8c61-58ed-83fe-e928ccbe0743
+    internal-label: Channel Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 
 # Get started with custom channels {#get-started-custom-channel}
@@ -33,7 +48,7 @@ subfeature_v2:
 
 ## What problem does it solve? {#why-custom-channels}
 
-[!DNL Journey Optimizer] natively supports Email, SMS, Push notifications, WhatsApp, LINE, and other channels. However, many organizations use messaging platforms that are not natively integrated—such as WeChat, Kakao Talk, Messenger, or an external provider—and want to use them in [!DNL Journey Optimizer] for orchestration and campaign creation while still delivering with their own vendor.
+[!DNL Journey Optimizer] natively supports Email, Mobile message, Push notifications, WhatsApp, LINE, and other channels. However, many organizations use messaging platforms that are not natively integrated—such as WeChat, Kakao Talk, Messenger, or an external provider—and want to use them in [!DNL Journey Optimizer] for orchestration and campaign creation while still delivering with their own vendor.
 
 <!--TBC: Another use case is when organizations have a legacy messaging gateway that exposes an HTTP endpoint, and they want to use it in [!DNL Journey Optimizer] without having to build a custom integration.-->
 

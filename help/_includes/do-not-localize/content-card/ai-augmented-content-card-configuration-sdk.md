@@ -52,6 +52,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: How are additional content cards triggered?** — Content cards support custom triggers evaluated on the client side; the sample calls `evaluateRulesets` with a `decisionContext` when the Deposit Funds or Share on social media buttons are clicked.
 * **Q: What happens when a content card button is clicked?** — The `collectEvent` function tracks the interaction, and if the button is an anchor, the browser is directed to the `actionUrl` specified by the campaign.
 
+**Personas:**
+
+* **admin:** Can configure the Web SDK on the page using settings from the .env file, including edgeDomain, edgeConfigId, and orgId. Can enable personalizationStorageEnabled so previously qualified content cards continue to be displayed across user sessions. The page states that Web SDK version 2.28.0 or later is required to use disqualification rules with content cards. Where: "How it works".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Install mkcert on your computer to set up local SSL certificates for HTTPS.
+* **Success check:** The page displays its default state, and selecting Deposit Funds or Share on social media shows additional content cards.
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: cf6e51d8 -->

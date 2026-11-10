@@ -6,6 +6,9 @@ description: Create components
 badge: label="Legacy" type="Informative"
 redpen-status: CREATED_||_2025-08-11_20-58-59
 exl-id: 490fa22c-40b3-4c70-b31c-a971c941a232
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Create components{#section-overview}
 

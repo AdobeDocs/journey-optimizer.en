@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Custom channel**: A channel that sends messages to an external system, configured once by an administrator and then selectable by marketers like any native Journey Optimizer channel *(product-specific)*
+* **Custom channel**: A channel defined by an endpoint, authentication, and message payload structure, configured once by an administrator and then selectable by marketers like any native Journey Optimizer channel *(product-specific)*
 * **Channel Builder**: The interface where the channel endpoint, authentication, and payload are defined *(product-specific)*
 * **API credentials**: The sets of credentials used to authenticate requests sent to your endpoint *(product-specific)*
 * **Channel configuration**: A named preset that links the custom channel to a specific set of credentials, a subdomain, and optional payload defaults, which marketers select at authoring time *(product-specific)*
@@ -29,12 +29,13 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Configuring a custom channel is an administrator task that happens once per channel.
+* Custom channels are available in journeys, orchestrated campaigns and Marketing (action and API-triggered) campaigns. They are not available in transactional campaign types.
 * Delegating a subdomain is optional and required only if your message payload contains trackable links; without a delegated subdomain, link tracking is unavailable for this channel.
 * Before you begin, review the prerequisites and guardrails, including the required permissions and supported authentication methods.
 
 **Terminology:**
 
-* Canonical name: custom channel — Acronym: n/a — variants: custom channel configuration
+* Canonical name: custom channel — Acronym: n/a
 * Synonyms: "channel configuration" = "named preset"
 * Do not confuse: "custom channel" ≠ "channel configuration" (the channel configuration is a preset that links a custom channel to credentials, a subdomain, and payload defaults)
 
@@ -46,6 +47,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: What can marketers do after a custom channel is configured?** — They can immediately select it in campaigns and journeys, just like any native Journey Optimizer channel.
 * **Q: Why create multiple credential sets?** — To reuse the same channel definition across different brands or environments without duplicating the channel.
 
+**Personas:**
+
+* **admin:** Can configure a custom channel once per channel through four steps: create the channel, manage API credentials, optionally delegate a subdomain, and create a channel configuration. Can define the endpoint URL, headers, throttling policy, authentication type, and message payload structure in the Channel Builder. Can create multiple channel configurations for the same channel, for example one per brand or region. The page states that custom channels are not available in transactional campaign types. Where: "Configuration steps".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Create the custom channel by defining the endpoint URL, headers, throttling policy, authentication type, and message payload structure in the Channel Builder.
+* **Success check:** Marketers can immediately select the custom channel in campaigns and journeys, just like any native Journey Optimizer channel.
+* **Next:** Define the endpoint URL, headers, throttling policy, authentication type, and message payload structure: Create a custom channel (custom-channel/create-custom-channel.md); Create and manage the sets of credentials used to authenticate requests to your endpoint: Manage API credentials for custom channels (custom-channel/custom-channel-api-credentials.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: c521dbb2 -->
+<!-- ai-section-version: 1 | source-hash: 3a213bc3 -->

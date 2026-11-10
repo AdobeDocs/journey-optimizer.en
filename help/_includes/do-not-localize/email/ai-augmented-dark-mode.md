@@ -52,6 +52,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I check the closest rendering to the final result?** — Use Simulate content, then Simulate content (AEP profiles) and Render email with a Litmus account, or the Email rendering option.
 * **Q: What color scheme does the default preview use?** — Full color invert, applied to all elements except images and icons.
 
+**Personas:**
+
+* **marketer:** Can switch to Dark mode in the Email Designer and define custom dark mode settings for text, backgrounds, and button. Can select a different image for Dark mode only, use Switch to live view, and select Render email with Litmus to check rendering. The page states that the dark mode final rendering depends on each email client and results can vary. Where: "Define custom dark mode".
+
+**Onboarding:**
+
+* **Level:** Beginner, Intermediate
+* **First minimal step:** Switch the toggle to Dark mode on top right of the central canvas.
+* **Success check:** The default dark mode preview displays.
+* **Previous:** Selecting Design from scratch to start an email before switching to Dark mode: Design content from scratch in Journey Optimizer (email/content-from-scratch.md); Adding content components to the email before switching to Dark mode: Use Email Designer content components (email/content-components.md)
+* **Next:** Checking the final dark mode rendering for various email clients with Litmus: Test email rendering (content-management/rendering.md); Testing content variations with sample input data or AI auto-generation instead of Render email: Simulate content variations (test-approve/simulate-sample-input.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 99152c54 -->

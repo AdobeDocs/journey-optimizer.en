@@ -30,7 +30,7 @@ For complete understanding, this information should be combined with the documen
 
 * Read audience journeys ("As soon as possible" or "Once" scheduler only — not for recurring, event-triggered, business-event, test, or dry-run journeys)
 * Action campaigns (outbound channel actions only)
-* Orchestrated campaigns (outbound channel activities only, configured per channel activity)
+* Orchestrated campaigns (outbound channel activities only, configured per channel activity; not for recurring or signal-triggered Orchestrated campaigns)
 
 **Common guardrails (all contexts):**
 
@@ -39,6 +39,10 @@ For complete understanding, this information should be combined with the documen
 * Wave start cannot be in the past
 * Percentage-based custom distribution must total 100%
 * Number-based custom distribution does not auto-validate total coverage
+
+**Campaign guardrails (Action campaigns and Orchestrated campaigns):**
+
+* Wave start cannot be before campaign start
 
 **Journey-specific guardrails:**
 
@@ -50,10 +54,25 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Does wave sending apply to inbound channels?** — No; outbound only (Email, SMS, Push, Direct mail).
+* **Q: Does wave sending apply to inbound channels?** — No; outbound only (Email, Mobile message, Push).
 * **Q: Can I assign different content to individual waves?** — No; same audience and content for all waves. Only size and timing can differ.
 * **Q: What is the minimum time between two waves?** — 30 minutes between the start of two consecutive waves.
 * **Q: What happens if wave sizes exceed or fall short of the audience?** — Excess: first wave sends to full audience, remaining waves do not execute. Shortfall: only profiled in defined waves receive the message; the rest are not retried.
 * **Q: Is the audience re-evaluated per wave?** — No; the audience is snapshotted at activation. Profile attributes (personalization, consent) are read at wave processing time.
 
+**Personas:**
+
+* **marketer:** Can enable wave sending on a Read Audience activity, an Action campaign, or an Orchestrated campaign channel activity. Can set the number of waves and choose equal waves, custom distribution by percentage or number, or a custom schedule with specific start times. The page states that at least 2 waves are required and up to 10 waves can be added. Where: "Configure wave sending".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Select Deliver campaign actions in waves in the Schedule tab of your campaign.
+* **Success check:** The system schedules subsequent waves automatically, for example first wave at 9:00 AM, second at 11:00 AM, third at 1:00 PM, fourth at 3:00 PM.
+* **Previous:** Create an Action campaign before enabling wave sending in its Schedule tab: Create an Action campaign (campaigns/create-campaign.md); Configure an outbound action in the campaign's Actions tab so the wave sending option appears: Configure the campaign action (campaigns/campaign-action.md)
+* **Next:** Schedule the Action campaign's start date, end date, and frequency after configuring wave sending: Schedule the Action campaign (campaigns/campaign-schedule.md)
+
 +++
+
+
+<!-- ai-section-version: 1 | source-hash: 76a187ca -->

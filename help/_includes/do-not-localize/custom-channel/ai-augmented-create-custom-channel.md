@@ -45,7 +45,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: custom channel — Acronym: n/a — variants: custom channel definition
+* Canonical name: custom channel — Acronym: n/a
 * Synonyms: "set up a custom channel" = "create a custom channel" (both are used on this page for the same task)
 * Do not confuse: "Constant" (static value included in every request) ≠ "Variable" (default value that can be overridden in the channel configuration)
 * Do not confuse: "Enable throttling" (requests per second cap) ≠ "Enable retry" (retry count for failed requests)
@@ -57,9 +57,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: What statuses can a custom channel have?** — Draft, Active, or Archived.
 * **Q: Which fields remain editable after activation?** — Only name, description, icon, throttling, and retry configuration; endpoint URL, headers, query parameters, authentication, and payload structure are locked.
 * **Q: How do I validate the connection before activating?** — Use the Test connection button while the channel is in Draft status to send a test request to your endpoint, then check your external system's logs.
-* **Q: What payload format is supported?** — JSON; you can paste a sample JSON payload so that a schema is inferred (importing a JSON schema is coming soon).
+* **Q: What payload format is supported?** — The endpoint must accept the payload format your channel defines (JSON). You define the payload by pasting a sample JSON payload, importing a JSON payload file, or importing a JSON schema file.
 * **Q: What happens when I archive an active channel?** — It is removed from all selection drop-downs, while existing journeys and campaigns that already use it continue to function normally.
+
+**Personas:**
+
+* **admin:** Can access the Channel Builder from Administration, Channels, Custom channels, and view the inventory of custom channels by status, creator, and name. Can filter custom channels by Draft, Active, or Archived status, and archive a channel to remove it from selection drop-downs. The page states that the View custom channels and Manage custom channels permissions are required to access the Channel Builder. Where: "Access and manage custom channels".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select Create custom channel to open the channel creation form.
+* **Success check:** The external system's logs confirm that the request was received with the expected authentication and payload.
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 99f27e9a -->
+<!-- ai-section-version: 1 | source-hash: eb0c0de9 -->

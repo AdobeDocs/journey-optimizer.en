@@ -142,10 +142,12 @@ For customers at low and medium risk of churn, set up a multi-step campaign aime
 
     ![](assets/uc-interest-11.png){zoomable="yes"}
 
-1. Divide engagement evenly to send a follow-up through SMS or push notifications to encourage conversions.
+1. Divide engagement evenly to send a follow-up through mobile messages or push notifications to encourage conversions.
 
     ![](assets/uc-interest-12.png){zoomable="yes"}
 
 1. Create the message content for each channel including profile attributes, such as the recipient's name, along with enrichment data like Wishlist items, to personalize each message.
 
     ![](assets/uc-interest-13.png){zoomable="yes"}
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-engage-customers-uc.md}}

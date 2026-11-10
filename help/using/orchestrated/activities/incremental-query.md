@@ -8,14 +8,25 @@ topic: Building campaigns
 role: User
 level: Intermediate
 version: Campaign Orchestration
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
     internal-label: Campaign Orchestration
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 
 # Incremental query {#incremental-query}
@@ -41,13 +52,13 @@ subfeature_v2:
 >title="History in days"
 >abstract="This setting controls how long that list is retained. A value of 0 means indefinite retention, no records are removed."
 
-The **[!UICONTROL Incremental query]** activity is a **[!UICONTROL Targeting]** activity that runs a database query each time the Orchestrated campaign runs. The important part is that it only ever outputs **new** records. Anyone already picked up in a prior run is excluded, so you avoid re-targeting the same people or re-exporting the same rows.
+The **[!UICONTROL Incremental query]** activity is a **[!UICONTROL Targeting]** activity that runs a database query each time the Orchestrated campaign runs. The important part is that each run only outputs records whose date field value is later than the date of the previous execution. This way, you avoid re-targeting the same people or re-exporting the same rows.
 
-Use it when the campaign can run multiple times, or example, when you schedule the campaign, e.g. weekly or when it is triggered by an external signal or API. Each run targets only records that were not returned in a previous run, so you avoid duplicates.
+Use it when the campaign can run multiple times, or example, when you schedule the campaign, e.g. weekly or when it is triggered by an external signal or API. Each run targets only records dated after the previous execution, so you avoid duplicates.
 
 Typical uses:
 
-* **Messaging and audiences**: Pull only new sign-ups, new purchasers, or other "new since last run" segments into the next step (e.g. email, SMS).
+* **Messaging and audiences**: Pull only new sign-ups, new purchasers, or other "new since last run" segments into the next step (e.g. email, mobile message).
 * **Ongoing exports**: Send only new or updated rows to files for reporting or BI tools, without duplicating what you already exported.
 
 >[!IMPORTANT]
@@ -68,9 +79,13 @@ Set the targeting dimension, build your query, and choose how the activity decid
 
      ![](../assets/incremental-query-2.png)
 
-1. Under **[!UICONTROL Processed data]**, choose your **[!UICONTROL Path to the date field]**. The attribute must use the **Date Time** format. Each run returns only rows whose date is after the last execution.
+1. Under **[!UICONTROL Processed data]**, choose your **[!UICONTROL Path to the date field]**. A date field is required, and the attribute must use the **Date Time** format. Each run returns only rows whose date is after the last execution.
 
       ![Incremental query activity configuration in the Orchestrated campaign canvas](../assets/incremental-query-3.png)
+
+   >[!NOTE]
+   >
+   >Eligibility depends only on the value of the date field, not on when the record was ingested. A record ingested after the previous execution is not returned if its date field value is older than the date of that execution.
 
 <!--
    * **[!UICONTROL Exclude results of previous execution]**: The activity maintains a list of records returned in prior runs. Each run excludes those records and returns only new ones. **[!UICONTROL History in days]** controls the retention period for that list. 0 indicates indefinite retention, no records are removed.
@@ -81,6 +96,12 @@ Set the targeting dimension, build your query, and choose how the activity decid
 
 -->
 
+## Check the last execution date {#incremental-query-last-execution}
+
+Once the activity has run, the **[!UICONTROL Last execution date]** field is displayed under **[!UICONTROL Processed data]**, below the **[!UICONTROL Path to the date field]**. It shows the date and time of the previous execution of the activity. This is the cutoff date used by the next run. This field is read-only.
+
+![Last execution date displayed under Processed data](../assets/incremental-query-last-execution.png)
+
 ## Example {#incremental-query-example}
 
 The following example sends a welcome email to profiles who have just become gold members. The campaign can be scheduled to run weekly, every Monday. Each run targets only profiles that qualified for gold membership since the previous run, so each recipient receives the welcome email once.
@@ -90,3 +111,5 @@ The following example sends a welcome email to profiles who have just become gol
 
 ![Incremental query activity configuration in the Orchestrated campaign canvas](../assets/incremental-query-example.png)
 
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-activities-incremental-query.md}}

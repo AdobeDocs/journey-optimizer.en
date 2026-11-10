@@ -23,8 +23,8 @@ For complete understanding, this information should be combined with the documen
 
 * **Segment definition**: A new audience definition created with Adobe Experience Platform Segmentation Service using the Build rule method *(product-specific)*
 * **Build rule**: The audience creation method selected from Create audience that opens the segment definition screen *(product-specific)*
-* **Attributes**: Building block representing profile characteristics used to define an audience *(product-specific)*
-* **Events**: Building block representing profile actions used to define an audience *(product-specific)*
+* **Attributes**: One of the two basic building blocks of segment definitions, for example the city where profiles live or the birth year *(product-specific)*
+* **Events**: One of the two basic building blocks of segment definitions, for example a purchase made within the last 7 days *(product-specific)*
 * **Streaming segmentation**: Evaluation method where the audience profile list is kept up to date in real time as new data flows in *(product-specific)*
 * **Batch segmentation**: Evaluation method where the audience profile list is evaluated every 24 hours as a snapshot *(product-specific)*
 * **Edge segmentation**: Evaluation method that evaluates segments instantaneously on the edge for same-page and next-page personalization *(product-specific)*
@@ -42,10 +42,8 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Segment definition — Acronym: n/a — variants: audience definition, segment
-* Synonyms: "Build rule" = "Create a rule"
+* Canonical name: Segment definition — Acronym: n/a — variants: segment
 * Do not confuse: "Streaming segmentation" (real-time updates) ≠ "Batch segmentation" (evaluated every 24 hours) ≠ "Edge segmentation" (instantaneous on the edge)
-* Do not confuse: "Attributes" (profile characteristics) ≠ "Events" (profile actions)
 
 **FAQ:**
 
@@ -55,6 +53,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: How long does backfilling take?** — Backfilling the audience from prior data can take up to 24 hours after the audience is first defined.
 * **Q: How many audiences can I evaluate on demand at once?** — You can evaluate up to 20 audiences at a time with flexible audience evaluation, and ineligible audiences are automatically excluded.
 
+**Personas:**
+
+* **marketer:** Can create a segment definition by selecting Create audience and then Build rule from the Audiences menu. Can drag attributes and events into the workspace, then choose a streaming, batch, or edge evaluation method for the audience. Can run flexible audience evaluation on up to 20 audiences at a time before targeting them in journeys or campaigns. The page states that backfilling the audience from prior data can take up to 24 hours after the audience is first defined. Where: "Create a segment definition".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** From the Audiences menu, select Create audience, then select Build rule.
+* **Success check:** The audience displays in the list of Adobe Experience Platform audiences after it is saved.
+* **Next:** After creating and saving the audience, before using it in journeys: About Adobe Experience Platform audiences (audience/about-audiences.md); When responding to a message sent earlier in the same journey instead of rebuilding the logic as an audience: Reactions events (building-journeys/reaction-events.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 0b760cd3 -->
+<!-- ai-section-version: 1 | source-hash: 9453f4a3 -->

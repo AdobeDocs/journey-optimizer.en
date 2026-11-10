@@ -54,7 +54,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
     Navigate to the **[!UICONTROL Actions]** tab, click the **[!UICONTROL Add action]** button and select the communication channel. 
 
-    ![](assets/create-campaign-add-action.png)
+    ![Add action menu in the Actions tab showing available communication channels](assets/create-campaign-add-action.png)
 
     >[!NOTE]
     >
@@ -64,13 +64,13 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
     
     If you select an inbound channel (Code-based experience, In-app message, Content Card or Web action), you can add more inbound actions - for a total of up to 10 actions in a single campaign. [Learn how](#multi-action)
 
-    If you select multiple outbound channels (Email, Push, SMS), you can use channel optimization to automatically select the best channel for each customer at send time. [Learn how](../building-journeys/channel-optimization.md)
+    If you select multiple outbound channels (Email, Push, Mobile), you can use channel optimization to automatically select the best channel for each customer at send time. [Learn how](../building-journeys/channel-optimization.md)
 
 1. **Select a channel configuration**
 
     A configuration is defined by a [System Administrator](../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn how to set up channel configurations](../configuration/channel-surfaces.md)
     
-    ![](assets/create-campaign-action.png)
+    ![Action configuration panel with channel configuration selection](assets/create-campaign-action.png)
 
 1. **Leverage Optimization**
 
@@ -87,15 +87,23 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
 Additional settings are available depending on the selected communication channel. Expand the sections below for more information.
 
-+++**Apply capping rules** (Email, Direct mail, Push, SMS)
++++**Apply capping rules** (Email, Direct mail, Push, Mobile)
 
 In the **[!UICONTROL Business rules]** drop-down list, select a rule set to apply capping rules to your campaign. Leveraging channel rule sets allows you to set frequency capping by communication type to prevent overloading customers with similar messages. [Learn how to work with rule sets](../conflict-prioritization/rule-sets.md)
 
 +++
 
-+++**Track engagement** (Email, SMS).
++++**Override email channel configuration** (Email)
 
-Use the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or SMS deliveries. Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../reports/campaign-global-report-cja.md)
+Use this option when a campaign needs email values that differ from the selected channel configuration, without creating another configuration. You can override only the fields needed for that action while keeping the rest of the configuration unchanged.
+
+[Learn how to override email channel configuration](../email/create-email.md#override-email-channel-configuration)
+
++++
+
++++**Track engagement** (Email, Mobile).
+
+Use the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or mobile deliveries. Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../reports/campaign-global-report-cja.md)
 
 +++
 
@@ -136,7 +144,7 @@ To simplify the orchestration of your campaign, you can define several inbound a
 
 >[!NOTE]
 >
->This capability is only available for inbound channels. For outbound channels (Email, Push, SMS), use [channel optimization](../building-journeys/channel-optimization.md) to automatically select the best channel per customer.
+>This capability is only available for inbound channels. For outbound channels (Email, Push, Mobile message), use [channel optimization](../building-journeys/channel-optimization.md) to automatically select the best channel per customer.
 
 This capability enables you to deliver various Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, without the need to create multiple campaigns. It makes the deployment of your campaign easier and allows for smoother reporting, with all the data consolidated into one single campaign.
 
@@ -150,7 +158,7 @@ To define several inbound actions in a campaign, follow the steps below.
 
 1. Use the **[!UICONTROL Add action]** button to select another inbound action from the drop-down list.
 
-    ![](assets/create-campaign-multi-action.png){width="80%"}
+    ![Campaign Actions tab showing multiple inbound actions configured](assets/create-campaign-multi-action.png){width="80%"}
 
 1. Proceed similarly to add more actions. You can add up to 10 inbound actions in a campaign.
 
@@ -159,3 +167,5 @@ Once the campaign is [live](review-activate-campaign.md), all actions are activa
 ## Next steps {#next}
 
 Once your campaign action is ready, you can design its content. [Learn more](campaign-content.md)
+
+{{$include /help/_includes/do-not-localize/campaigns/ai-augmented-campaign-action.md}}

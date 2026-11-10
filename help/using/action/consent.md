@@ -9,7 +9,7 @@ role: Developer, Admin
 level: Experienced
 keywords: policies, governance, platform, healthcare shield, consent
 exl-id: 01ca4b3e-3778-4537-81e9-97ef92c9aa9e
-TQID: https://experienceleague.adobe.com/jEYKbk8AUhJooMOr0x-0TbLfmvGdnDD6mosJpTXU6i8
+TQID: 'https://experienceleague.adobe.com/jEYKbk8AUhJooMOr0x-0TbLfmvGdnDD6mosJpTXU6i8'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -20,14 +20,25 @@ feature_v2:
     internal-label: Administration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
+  - id: 2cb9b022-32b0-573b-a511-d091a4f355fb
+    internal-label: Actions
+  - id: 9bb0ff1a-29d5-5edf-a6a2-8ec9c30e28c8
+    internal-label: Privacy
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 subfeature_v2:
   - id: a9cf78bf-e9e4-4836-85a5-b6b3cf93bf56
     internal-label: Consent management
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing

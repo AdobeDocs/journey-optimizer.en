@@ -54,6 +54,18 @@ For complete understanding, this information should be combined with the documen
 * **What happens if I fail to create the validation record on my hosting solution?** The subdomain is marked as **[!UICONTROL Failed]**.
 * **How do I undelegate a landing page subdomain?** Unpublish the associated landing pages, optionally delete the CNAME DNS record without deleting an original email subdomain, then reach out to your Adobe representative.
 
+**Personas:**
+
+* **admin:** Can configure a new landing page subdomain by specifying the subdomain and generating a matching DNS record, or reuse one already delegated to Adobe. Can undelegate a landing page subdomain after unpublishing its associated landing pages and contacting the Adobe representative. The page states that Journey Optimizer allows delegating up to 10 subdomains by default, and up to 3000 depending on license contract. Where: "Configure a new subdomain".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Access the Administration > Channels menu, then select Landing page settings > Landing page subdomains.
+* **Success check:** The subdomain displays the Success status and is ready to be used to create landing page presets.
+* **Previous:** A subdomain is already delegated to Adobe: Delegate a subdomain (configuration/delegate-subdomain.md)
+* **Next:** Landing page subdomains are set up and ready to be used to create landing page presets: Define landing page presets (landing-pages/lp-presets.md); A landing page subdomain is delegated and inbound traffic should flow through a Web Application Firewall: Manage allowed IPs (configuration/waf-ip-allowlist.md)
+
 +++
 
 <!-- ai-section-version: 1 | source-hash: 84514bb0 -->

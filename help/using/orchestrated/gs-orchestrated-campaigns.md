@@ -6,7 +6,7 @@ description: Learn how to start with Orchestrated campaigns
 short-description: Discover orchestrated campaign key features and use cases.
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 version: Campaign Orchestration
-TQID: https://experienceleague.adobe.com/ePbw3PWwBuZl5A3bdBzM0gb4koCEH09WUX0P-g8z3VM
+TQID: 'https://experienceleague.adobe.com/ePbw3PWwBuZl5A3bdBzM0gb4koCEH09WUX0P-g8z3VM'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -17,6 +17,10 @@ feature_v2:
     internal-label: Activities
   - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
     internal-label: Campaign Orchestration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
@@ -45,6 +49,8 @@ Campaign Orchestration in [!DNL Adobe Journey Optimizer] powers sophisticated, b
 >To access Campaign Orchestration, your license must include either the **Journey Optimizer – Campaigns & Journeys** or the **Journey Optimizer - Campaigns** package. Contact your Adobe representative to confirm your license and update if needed.
 
 While cross-channel marketing is essential, Orchestrated campaigns make it seamless. With a visual, drag-and-drop interface, you can design and automate complex marketing workflows, from segmentation to message delivery, across multiple channels. Everything happens in one intuitive environment, built for speed, control, and efficiency.
+
+To view campaign schedules, use the unified **[!UICONTROL Calendar]** menu. [Learn how to use the Calendar](../start/calendar.md).
 
 ![](assets/canvas-example-diagram.png){zoomable="yes"}
 
@@ -158,3 +164,5 @@ Now that you have an understanding of what orchestrated campaigns are, it's time
 * **[Engage customers by browsing activity](engage-customers-uc.md)** - Re-engage profiles who browsed but did not purchase, using a multi-step orchestrated campaign.
 * **[Notify users about product availability](product-availability-uc.md)** - Alert customers when a product they showed interest in is back in stock.
 * **[Send wishlist item updates](wishlist-uc.md)** - Trigger personalized messages when wishlist items go on sale or become available.
+
+{{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-gs-orchestrated-campaigns.md}}

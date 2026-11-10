@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Custom channel subdomain — Acronym: n/a — variants: custom channel subdomain configuration
-* Synonyms: "Use delegated subdomain" = using a subdomain already delegated to Adobe; "Add your own domain" = configuring a new subdomain
+* Do not confuse: "Use delegated subdomain" (Configuration type for a subdomain already delegated to Adobe) ≠ "Add your own domain" (Configuration type for configuring a new subdomain)
 * Do not confuse: "Processing" (status shown after submission while checks run) ≠ "Success" (status once checks are successful and the subdomain is ready to use) ≠ "Failed" (status if you fail to create the validation record on your hosting solution)
 
 **FAQ:**
@@ -53,6 +53,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Does a change to a custom channel subdomain affect other sandboxes?** — Yes, custom channel subdomain configuration is shared between all environments, so any modification also impacts other production sandboxes.
 * **Q: What happens if the DNS validation record is not created?** — The subdomain is marked as Failed if you fail to create the validation record on your hosting solution.
 
+**Personas:**
+
+* **admin:** Can use a subdomain already delegated to Adobe, or configure another subdomain, to enable link tracking in custom channel messages. The page states that custom channel subdomain configuration is shared between all environments, so any modification also impacts other production sandboxes. Where: "Get started with custom channel subdomains".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Browse to Administration > Channels > Channel Builder > Subdomains, then select Create custom channel subdomain.
+* **Success check:** The subdomain gets the Success status once the checks are successful.
+* **Next:** After the subdomain status is Success and ready to use: Create a channel configuration for a custom channel (custom-channel/custom-channel-configuration.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: df29dbf8 -->
+<!-- ai-section-version: 1 | source-hash: c5a1bc33 -->

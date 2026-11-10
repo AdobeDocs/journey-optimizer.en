@@ -10,7 +10,7 @@ level: Intermediate
 keywords: journey, configuration, properties
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
 version: Journey Orchestration
-TQID: https://experienceleague.adobe.com/fDzEwuisEjAKvpIs9SKoz-9IIJXJQ-md9FlCbWQOJz8
+TQID: 'https://experienceleague.adobe.com/fDzEwuisEjAKvpIs9SKoz-9IIJXJQ-md9FlCbWQOJz8'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -21,6 +21,8 @@ feature_v2:
     internal-label: Journeys
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: ba62ad25-65cb-4ea9-b7aa-0fa87c4a9fa0
     internal-label: Journey properties
@@ -144,6 +146,18 @@ To assign custom data usage labels to the journey, click the **[!UICONTROL Manag
 
 [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
+## Custom metadata {#custom-metadata}
+
+>[!AVAILABILITY]
+>
+>This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+
+If custom metadata fields have been defined and selected for journeys, they are displayed in the **[!UICONTROL Metadata fields]** section of the journey properties.
+
+Fill them in to track specific business information such as line of business, product or cost center.
+
+Fields marked with an asterisk are required. [Learn more on custom metadata](../administration/custom-metadata.md)
+
 ## Journey payload size {#journey-payload-size}
 
 >[!CONTEXTUALHELP]
@@ -218,18 +232,18 @@ We recommend that you define a very short **[!UICONTROL Custom Action / Data Sou
 
 >[!NOTE]
 >
->**[!UICONTROL Custom Action / Data Source timeout]** is distinct from **[!UICONTROL Set event recovery timeout]** described below: the former controls how long a journey waits for a single action's response before taking a fallback path, while the latter controls how long the journey keeps retrying events after a service interruption.
+>**[!UICONTROL Custom Action / Data Source timeout]** is distinct from **[!UICONTROL Set internal error recovery timeout]** described below: the former controls how long a journey waits for a single action's response before taking a fallback path, while the latter controls the maximum time during which the journey may retry steps for profiles impacted by an internal service interruption.
 
-### Event recovery timeout {#event-recovery-timeout}
+### Internal error recovery timeout {#event-recovery-timeout}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_recovery_timeout"
 >title="Set internal error recovery timeout"
 >abstract="Controls how long the journey may retry steps impacted by a service interruption. By default, may retry for up to 72 hours. Turn on to limit retry for time-sensitive journeys."
 
-By default, journey events impacted by a service interruption are automatically replayed for up to **72 hours**, with no action needed on your part. This default applies to both new and existing journeys when the toggle is off.
+By default, journey events impacted by a service interruption may be retried for up to **72 hours**, with no action needed on your part. This default applies to both new and existing journeys when the toggle is off.
 
-For time-sensitive journeys, enable **[!UICONTROL Set event recovery timeout]** to control the replay window yourself instead of using the default 72-hour window. When this option is enabled, use the **[!UICONTROL Event recovery time limit (in hours)]** field to define how long Journey Optimizer retries impacted events, from 0 to 72 hours.
+For time-sensitive journeys, enable **[!UICONTROL Set internal error recovery timeout]** to control the replay window yourself instead of using the default 72-hour window and define how long Journey Optimizer retries impacted events, from 0 to 72 hours.
 
 ![](assets/journey-properties-event-recovery.png)
 

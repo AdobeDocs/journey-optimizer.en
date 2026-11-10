@@ -9,11 +9,11 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to author deep links in email and SMS content, configure them in Journey Optimizer, and handle the tracked links in iOS and Android apps so recipients land on the right in-app screen.
+* **TL;DR:** This page explains how to author deep links in email and Mobile message content, configure them in Journey Optimizer, and handle the tracked links in iOS and Android apps so recipients land on the right in-app screen.
 
 **Intents:**
 
-* Author a deep link in email (Email Designer or Personalization editor code) and in SMS (Url helper function)
+* Author a deep link in email (Email Designer or Personalization editor code) and in Mobile message (Url helper function)
 * Complete the Journey Optimizer configuration for universal links (iOS) and app links (Android)
 * Implement mobile app handling of tracked `mclick` links in iOS and Android
 * Follow recommended practices and troubleshoot deep links that do not open the app or the expected screen
@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Deep link**: A link that takes recipients from an email or SMS message directly to a specific screen or content in a mobile app *(product-specific)*
+* **Deep link**: A link that takes recipients from an email or mobile message directly to a specific screen or content in a mobile app *(product-specific)*
 * **Universal links (iOS) / App links (Android)**: HTTPS-based deep links the configuration on this page applies to *(product-specific)*
 * **AASA / assetLinks.json**: The association files hosted on your delegated subdomain for iOS (AASA) and Android (assetLinks.json) *(product-specific)*
 * **`/ee/v1/mclick/*`**: Tracked URLs that Adobe hosts and resolves for deep link clicks when link tracking is enabled *(product-specific)*
@@ -51,6 +51,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: Are UTM parameters available in the app?** — Yes; UTM parameters configured in Journey Optimizer are included in the final URL returned in the `Location` header.
 * **Q: How do I test end-to-end?** — Send a proof (create a proof with a deep link) and click it on iOS and Android devices, for both installed and not-installed scenarios, validating on real devices.
 * **Q: Should I use a custom URL scheme like `appname://path`?** — You can, but the recommended approach is a universal link or app link (`https://`) matching the HTTPS-based setup on this page.
+
+**Personas:**
+
+* **marketer:** Can insert a deep link in the Email Designer by selecting an element, selecting Insert link, and choosing Deeplink to enter the deep link URL. The page states that deep links will not work unless the configuration and the mobile app implementation steps are completed. Where: "Authoring deep links".
+* **developer:** Can resolve the tracked mclick URL by performing a GET request and reading the Location header to get the final URL. Can route users to the destination screen based on that final URL, as shown in the SceneDelegate and DeepLinkActivity code. The page states that you must not open the mclick URL in a browser, since that defeats the purpose of deep linking. Where: "Mobile app implementation".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Delegate the subdomain where deep linking is enabled in Journey Optimizer.
+* **Success check:** Recipients are taken directly to the intended in-app content when they select the deep link.
+* **Previous:** Enable link tracking for the email message before inserting a deep link in the Email Designer: Track your messages (email/message-tracking.md); Learn the Url helper function syntax before authoring a deep link in Mobile message content: Helpers (personalization/functions/helpers.md)
+* **Next:** Learn how to delegate the subdomain where deep linking is enabled: Delegate a subdomain (configuration/delegate-subdomain.md); Use deep link tracking in a content experiment run on the message: Create a Content Experiment (content-management/content-experiment.md)
 
 +++
 

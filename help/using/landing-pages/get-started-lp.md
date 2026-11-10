@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: landing, landing page, start, get start
 exl-id: 0da96e32-52ad-4cc3-bac4-844b1f39ed16
-TQID: https://experienceleague.adobe.com/wr4XGNostKoN8jZ50VRAQPoGg9tsNhMOyJGEt1mASso
+TQID: 'https://experienceleague.adobe.com/wr4XGNostKoN8jZ50VRAQPoGg9tsNhMOyJGEt1mASso'
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -18,6 +18,10 @@ feature_v2:
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: af6bcde9-4f08-5a7a-9651-da0a28d11b0a
+    internal-label: Subscriptions
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
   - id: b19d9237-76be-466d-a869-aacf2d72205f
     internal-label: Landing pages
@@ -47,8 +51,6 @@ A landing page is a standalone web page that a user is directed to after clickin
 
 [!DNL Journey Optimizer] allows you to create and design landing pages to direct your users to online forms where they can opt in or opt out from receiving your communications or a specific service such as a newsletter.
 
-➡️ [Learn more about configuring subscriptions and creating landing pages in this video](#video)
-
 ## When to use landing pages {#when-to-use}
 
 Use landing pages when you want to:
@@ -56,28 +58,31 @@ Use landing pages when you want to:
 * Let customers **opt in or opt out** of marketing communications or a specific service or newsletter from a link in an email or campaign—including subscription lists for targeted services. [Read more](lp-use-cases.md#subscription-to-a-service)
 * **Collect consent** before sending communications and send a **confirmation email** upon opt-in or opt-out. [Read more](lp-use-cases.md#send-confirmation-email)
 * **Capture or update profile data** using forms on **[!UICONTROL Data Capture]** landing pages—for progressive profiling, preferences, registrations, and similar scenarios. [Read more](#data-capture-lp)
+* Publish a **public landing page** that anonymous visitors can open from a shared URL and use to submit data to a non-profile enabled dataset (Limited Availability). [Read more](lp-anonymous.md)
 * Redirect users to a **dedicated web form** without building an external page outside of [!DNL Journey Optimizer]
 * Build **responsive landing pages** using [!DNL Journey Optimizer]'s content design capabilities
 
-### Data capture with landing pages {#data-capture-lp}
+## How it works {#how-it-works}
 
-**[!UICONTROL Data Capture]** landing pages let you embed published forms so visitors can submit attributes that are written to your [!DNL Adobe Experience Platform] dataset through the streaming connection configured in your form preset. [Learn how to create and embed forms in a landing page](lp-forms.md)
+### Before you start {#prerequisites}
 
->[!NOTE]
->
->Data capture through landing page forms is supported for **known profiles** (existing profiles identified in [!DNL Adobe Experience Platform]). The landing page should be opened from a **personalized link** (for example from an email campaign) so the profile identity can be resolved when the page loads.
+Before creating a landing page, complete these setup steps:
 
-The following are example use cases:
+1. **Configure a subdomain** — Set up a subdomain dedicated to hosting your landing pages. [Learn more](lp-subdomains.md)
+1. **Create a landing page preset** — A preset defines the subdomain and other settings applied to your landing pages. [Learn more](lp-presets.md#lp-create-preset)
+1. **Create a subscription list** (for subscription use cases) — Required if you want customers to subscribe to or unsubscribe from a specific service. [Learn more](subscription-list.md)
+1. **Create a form** (for data capture use cases) — Required when you want to embed a form on a **[!UICONTROL Data Capture]** landing page and send submissions to [!DNL Experience Platform]. [Learn more](lp-forms.md)
 
-1. **Progressive profile enrichment** — Collect additional attributes from known customers—such as phone number, date of birth, or location—through a personalized landing page to enrich their existing [!DNL Experience Platform] profile for segmentation and personalization.
+### Create the landing page {#create-lp}
 
-2. **Preference center update** — Allow known subscribers to manage their communication preferences (channel, topic interests) via a landing page, with changes typically reflected in their [!DNL Experience Platform] profile within about 15 minutes.
+Creating and deploying a landing page follows this sequence:
 
-3. **Event or webinar registration** — Capture event-specific data from known profiles on a registration page, update the profile with registration attributes, and trigger a confirmation journey.
+1. **Create and configure your landing page** — Select a preset, set up the primary page, and add any required subpages. [Learn more](create-lp.md#create-landing-page)
+1. **Design the page** — Build the page content and form using [!DNL Journey Optimizer]'s drag-and-drop editor. [Learn more](design-lp.md)
+1. **Test and publish your landing page** — Preview the page, test form behavior, then publish to make it live. [Learn more](create-lp.md#test-landing-page)
+1. **Link in a message or journey** — Add the landing page URL to an email, campaign, or journey action so customers can reach it. [Learn more](../email/message-tracking.md#insert-links)
 
-4. **Loyalty or program enrollment** — Let existing customers enroll in loyalty programs or membership tiers by submitting additional details through a landing page, enriching the profile for downstream targeting.
-
-5. **Competition or contest entry** — Let known customers enter competitions or sweepstakes via a landing page form; capture entry-specific details (answers, preferences, or declarations) and write them to the profile to support eligibility, winner selection, and follow-up journeys.
+➡️ [Learn more about configuring subscriptions and creating landing pages in this video](#video)
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
@@ -116,23 +121,33 @@ The following are example use cases:
 </td>
 </tr></table>
 
-## Before you start {#prerequisites}
+## Data capture with landing pages {#data-capture-lp}
 
-Before creating a landing page, complete these setup steps:
+**[!UICONTROL Data Capture]** landing pages let you embed published forms so visitors can submit attributes that are written to your [!DNL Adobe Experience Platform] dataset through the streaming connection configured in your form preset. [Learn how to create and embed forms in a landing page](lp-forms.md)
 
-1. **Configure a subdomain** — Set up a subdomain dedicated to hosting your landing pages. [Learn more](lp-subdomains.md)
-1. **Create a landing page preset** — A preset defines the subdomain and other settings applied to your landing pages. [Learn more](lp-presets.md#lp-create-preset)
-1. **Create a subscription list** (for subscription use cases) — Required if you want customers to subscribe to or unsubscribe from a specific service. [Learn more](subscription-list.md)
-1. **Create a form** (for data capture use cases) — Required when you want to embed a form on a **[!UICONTROL Data Capture]** landing page and send submissions to [!DNL Experience Platform]. [Learn more](lp-forms.md)
+You can use Data Capture landing pages in two ways:
 
-## How it works {#how-it-works}
+* **For known profiles:** data capture through landing page forms is supported for existing profiles identified in [!DNL Adobe Experience Platform]. The landing page should be opened from a **personalized link** (for example from an email campaign) so the profile identity can be resolved when the page loads.
 
-Creating and deploying a landing page follows this sequence:
+* **For anonymous visitors:** you can also publish a Data Capture landing page on a **public URL** to capture data from visitors who are not identified. In that case, Adobe strongly recommends using a non-profile enabled dataset, so that the data does not create or enrich any profile. [Learn more about public landing pages](lp-anonymous.md)
 
-1. **Create and configure your landing page** — Select a preset, set up the primary page, and add any required subpages. [Learn more](create-lp.md#create-landing-page)
-1. **Design the page** — Build the page content and form using [!DNL Journey Optimizer]'s drag-and-drop editor. [Learn more](design-lp.md)
-1. **Test and publish your landing page** — Preview the page, test form behavior, then publish to make it live. [Learn more](create-lp.md#test-landing-page)
-1. **Link in a message or journey** — Add the landing page URL to an email, campaign, or journey action so customers can reach it. [Learn more](../email/message-tracking.md#insert-links)
+### Use cases for known profiles {#data-capture-use-cases-known}
+
+| Use case | What it does |
+| --- | --- |
+| **Progressive profile enrichment** | Collect additional attributes from known customers, such as phone number, date of birth, or location, through a personalized landing page to enrich their existing [!DNL Experience Platform] profile for segmentation and personalization. |
+| **Preference center update** | Allow known subscribers to manage their communication preferences (channel, topic interests). Changes are typically reflected in their [!DNL Experience Platform] profile within about 15 minutes. |
+| **Event or webinar registration** | Capture event-specific data from known profiles on a registration page, update the profile with registration attributes, and trigger a confirmation journey. |
+| **Loyalty or program enrollment** | Let existing customers enroll in loyalty programs or membership tiers by submitting additional details, enriching the profile for downstream targeting. |
+| **Competition or contest entry** | Let known customers enter competitions or sweepstakes, and write entry-specific details (answers, preferences, or declarations) to the profile to support eligibility, winner selection, and follow-up journeys. |
+
+### Use cases for public landing pages {#data-capture-use-cases-public}
+
+| Use case | What it does |
+| --- | --- |
+| **Event or webinar sign-up** | Collect registrations from visitors who open a public link shared on your website, on social channels, or in a campaign. |
+| **Survey or feedback collection** | Gather answers or feedback from visitors who are not necessarily identified in [!DNL Experience Platform]. |
+| **Open competition entry** | Let anyone with the link enter a competition or sweepstakes, and collect the entry details in a dataset. |
 
 ## How-to video{#video}
 

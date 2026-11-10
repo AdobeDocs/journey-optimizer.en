@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: Check and send your Mobile message — Acronym: n/a — variants: preview and send SMS
+* Canonical name: Check and send your Mobile message — variants: preview and send SMS
 * Simulation modes (both present on this page): "Simulate content" (test content variations with sample input data or AI auto-generation) and "Simulate content (AEP profiles)" (preview with test profiles)
 * Do not confuse: "Warnings" (recommendations and best practices; do not block) ≠ "Errors" (prevent testing, activating, or publishing until resolved)
 * Do not confuse: "Validation" (calculates maximum possible length across all profile data) ≠ "Simulation" (shows actual output for one test profile)
@@ -52,6 +52,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: What are the SMS character limits?** — 160 characters per segment for GSM 7-bit, 70 for Unicode or emojis, and up to 1500 characters total.
 * **Q: What stops me from sending my message?** — Errors prevent you from testing or activating the journey, or publishing the campaign, until they are resolved; warnings do not block.
 * **Q: Does delivery reporting reflect the exact number of messages sent?** — Not necessarily, because SMS delivery reporting does not account for concatenated messages and dynamic personalization; contact your Adobe representative for detailed usage and billing information.
+
+**Personas:**
+
+* **marketer:** Can select Simulate content to test content variations or AI auto-generation, or select Simulate content (AEP profiles) to preview with test profiles. Can review warnings and errors in the upper section of the editor before testing, activating, or publishing. The page states that character limits are 160 characters per segment for GSM 7-bit, 70 for Unicode or emojis, and up to 1500 characters total. Where: "Validate your content".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select Simulate content to test content variations with sample input data or AI auto-generation.
+* **Success check:** A character count is displayed when accessing either simulation method, to assist in planning and managing your Mobile messages.
+* **Previous:** Simulate content variations with sample input data or AI auto-generation: Simulate content variations (test-approve/simulate-sample-input.md); Preview and test content in the Content Management section: Preview and test your content (content-management/preview-test.md)
+* **Next:** If your campaign is subject to an approval policy, request approval to send your Mobile messages: Get started with journeys & campaigns approval (test-approve/gs-approval.md); Complete the configuration of your journey to send your Mobile message: Create your first journey (building-journeys/journey-gs.md)
 
 +++
 

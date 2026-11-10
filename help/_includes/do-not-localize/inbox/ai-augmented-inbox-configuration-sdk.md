@@ -25,7 +25,7 @@ For complete understanding, this information should be combined with the documen
 * **Message inbox**: A persistent notification inbox driven by two AJO campaigns that target the same surface *(product-specific)*
 * **Content Card campaign**: The campaign that delivers individual notification items to the inbox *(product-specific)*
 * **Inbox campaign**: The campaign that delivers configuration such as the title, empty-state copy, and layout for the inbox shell *(product-specific)*
-* **Surface**: The Page URL and Location on page location that both channels target and that the Web SDK code queries for *(product-specific)*
+* **Surface**: The location that the Page URL and Location on page of both channels are set to, and that must match the surface you query for in your Web SDK code; the page does not define the term further *(product-specific)*
 * **`subscribeRulesetItems`**: Web SDK command that registers a callback that runs each time the propositions eligible for display change *(product-specific)*
 * **`sendEvent`**: Web SDK command that fetches propositions *(product-specific)*
 * **`collectEvent`**: Function provided by the `subscribeRulesetItems` callback used to report interactions (display, interact, dismiss, delete) back to AJO to keep campaign reporting accurate *(product-specific)*
@@ -56,6 +56,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I keep campaign reporting accurate?** — Use the `collectEvent` function provided by the `subscribeRulesetItems` callback to report interactions (display, interact, dismiss, delete) back to AJO.
 * **Q: How do I run the sample?** — Run `npm install` and `npm start`, open `https://localhost`, and update `datastreamId`, `orgId`, and the `SURFACE` constant in `src/app/page.js` for your AJO environment.
 
+**Personas:**
+
+* **developer:** Can configure the Web SDK with the datastreamId and orgId, and call subscribeRulesetItems with the SURFACE and schema constants to receive propositions. Can read fields such as proposition.scopeDetails.activity.id, content.title, and content.body, and call sendEvent with renderDecisions and personalization.surfaces to fetch propositions. The page states that cards with additional delivery rules do not appear on sendEvent alone, so you must call evaluateRulesets with a matching decisionContext. Where: "Implement the Web SDK".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Configure a datastream configured with Adobe Experience Platform as a service, with Journey Optimizer enabled and an event dataset selected.
+* **Success check:** The subscribeRulesetItems callback runs again with any newly qualified cards included alongside the existing ones.
+* **Previous:** Configure a Content Cards channel on the same surface: Content cards configuration (content-card/content-card-configuration.md); Configure an Inbox channel on the same surface: Inbox configuration (inbox/inbox-configuration.md)
+* **Next:** Create a Content Card campaign that uses the Content Cards channel: Create content cards (content-card/create-content-card.md); Create an Inbox campaign that uses the Inbox channel: Create Inbox (inbox/inbox-create.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 87182ea0 -->
+<!-- ai-section-version: 1 | source-hash: d66e93e5 -->

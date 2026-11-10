@@ -35,8 +35,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: License usage dashboard — Acronym: n/a — variants: license usage dashboard, License Usage
-* Synonyms: "Engageable Profiles count" = "number of unique profiles engaged over the rolling 12-month window"
+* Canonical name: License usage dashboard — menu: License Usage
 * Do not confuse: "Engageable Profiles" (unique profiles engaged through journeys, campaigns, or decisioning) ≠ "Addressable Audience" (the total audience the count is calculated from)
 
 **FAQ:**
@@ -47,6 +46,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can the Engageable Profiles count decrease?** — Only if certain profiles have no engagement for over 12 months, or when pseudonymous profiles are stitched to known ones.
 * **Q: Why are some metrics shown as N/A?** — Certain metrics such as compute hours and emails are not displayed for development sandboxes.
 
+**Personas:**
+
+* **marketer:** Can select Administration, then License Usage, to open the Overview tab displaying the license usage dashboard. Can check the number of Engageable Profiles, unique profiles engaged through journeys, campaigns, or decisioning over a rolling 12-month window. The page states that you must have the View License Usage Dashboard permission to view the dashboard. Where: "License usage dashboard".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Select Administration, then License Usage, to open the Overview tab.
+* **Success check:** The Overview tab displays the dashboard, showing the number of Engageable Profiles captured in the daily snapshot.
+* **Previous:** Learn how to navigate the Journey Optimizer user interface before accessing the dashboard: Navigate the interface (start/user-interface.md)
+* **Next:** Learn how Engageable Profiles are defined and calculated: Get Started with Profiles in Journey Optimizer (audience/get-started-profiles.md); Run Engageable Profiles queries to investigate a spike in the count: Examples of queries (reports/query-examples.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 2fcfdb20 -->
+<!-- ai-section-version: 1 | source-hash: 7e2df57c -->

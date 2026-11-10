@@ -9,10 +9,10 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to use the unified Action activity in the journey canvas to configure built-in channel actions (email, push, SMS, in-app, web, content card, code-based experience), build multi-inbound-action groups, and apply optimization or multilingual settings.
+* **TL;DR:** This page explains how to use the unified Action activity in the journey canvas to configure built-in channel actions (email, push, Mobile message, in-app, web, content card, code-based experience), build multi-inbound-action groups, and apply optimization or multilingual settings.
 
 **Intents:**
-* Add a built-in channel action (email, push, SMS, in-app, web, content card, code-based experience) to a journey using the Action activity
+* Add a built-in channel action (email, push, Mobile message, in-app, web, content card, code-based experience) to a journey using the Action activity
 * Configure a multi-action group to deliver multiple inbound actions simultaneously from a single journey node
 * Apply frequency capping rules to an outbound channel action to prevent message fatigue
 * Update message content in a live journey without republishing
@@ -27,7 +27,7 @@ For complete understanding, this information should be combined with the documen
 * **Priority score**: A value assigned to a journey action to determine which inbound experience takes precedence when multiple actions compete for the same channel configuration *(product-specific)*
 
 **Guardrails:**
-* Legacy individual channel activities (Email, Push, SMS, In-app, Web, Code-based experience, Content Card) are deprecated as of the March 2026 release; existing journeys continue to work without migration
+* Legacy individual channel activities (Email, Push, Mobile message, In-app, Web, Code-based experience, Content Card) are deprecated as of the March 2026 release; existing journeys continue to work without migration
 * Multi-action is only available for inbound channels; outbound channels such as Email are not supported in multi-action groups
 * A multi-action group supports a maximum of 10 inbound actions
 * In a live journey, personalization attributes (profile attributes and contextual data) cannot be changed; only message content can be updated
@@ -39,7 +39,7 @@ For complete understanding, this information should be combined with the documen
 * Do not confuse: "Action activity" ≠ "custom action" — the Action activity uses built-in native channels, while a custom action integrates with a third-party system via API
 
 **FAQ:**
-* **Q: What channels are available in the Action activity?** — Email, Push, SMS/RCS/MMS, In-app, Web, Code-based experience, and Content Card.
+* **Q: What channels are available in the Action activity?** — Email, Push, Mobile message (SMS/RCS/MMS), In-app, Web, Code-based experience, and Content Card.
 * **Q: Can I send to multiple inbound endpoints in the same journey node?** — Yes, using the Multi action type you can add up to 10 inbound actions (Code-based experience, In-app, Content Card, Web) in a single Action activity node.
 * **Q: What happens to journeys that use the deprecated legacy channel activities?** — They continue to work without any changes; no migration is required.
 * **Q: Can I change the email subject line of a live journey?** — You can update message content in a live journey, but you cannot change personalization attributes or contextual data used in that content.

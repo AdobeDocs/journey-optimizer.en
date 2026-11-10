@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Channel configuration**: The configuration created from Channels > General settings > Channel configurations that defines how Journey Optimizer connects to and sends messages through a channel *(product-specific)*
+* **Channel configuration**: The configuration created from Channels > General settings > Channel configurations for which you enter a name, a description (optional), and the channel to configure *(product-specific)*
 * **Marketing action**: The setting used to associate consent policies to the messages using this configuration, so that customer preferences are respected *(product-specific)*
 * **Channel settings**: The connection settings that store the authorization and configuration details for connecting to the LINE Messaging API *(product-specific)*
 * **LINE user ID**: The identifier used to link messages to individual users within your LINE channel *(product-specific)*
@@ -33,7 +33,7 @@ For complete understanding, this information should be combined with the documen
 * Marketing messages require user consent and should comply with LINE's policy regarding user opt-ins.
 * Transactional messages can be sent even to users who have unsubscribed from marketing communications but are strictly limited to specific transactional contexts.
 * The LINE user ID mapped here must already exist on your customers' Real-Time Customer Profile.
-* Channel settings must be set up by reaching out to your Adobe representative.
+* For the Channel settings field, reach out to your Adobe representative to set up your Channel settings.
 * The API uses headers including a user token from your technical account, the client ID from Adobe Developer Console, the IMS Organization ID, the sandbox name, and Content-Type application/json.
 
 **Terminology:**
@@ -48,8 +48,20 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is the difference between a Marketing and a Transactional configuration?** — Marketing is for promotional messages that require user consent, while Transactional is for non-commercial messages that can reach unsubscribed users but are strictly limited to specific transactional contexts.
 * **Q: Does the LINE user ID need to exist beforehand?** — Yes, the LINE user ID mapped in the configuration must already exist on your customers' Real-Time Customer Profile.
 * **Q: How are the Channel settings set up?** — Reach out to your Adobe representative to set up your Channel settings.
-* **Q: Can the configuration be created through the API?** — Yes, the Channel settings API stores the authorization and configuration details needed to connect to the LINE Messaging API.
+* **Q: Can the Channel settings be configured through the API?** — Yes, the page describes an API (POST to the channel-settings endpoint) that sets up Channel settings storing the authorization and configuration details needed to connect to the LINE Messaging API.
+
+**Personas:**
+
+* **admin:** Can create a LINE channel configuration from Channel configurations by entering a name, an optional description, and selecting the LINE channel. Can assign usage labels through Manage access, select Marketing actions for consent policies, choose message type, map LINE user ID, and enter the Sender Name. The page states that configuration names must begin with a letter (A-Z) and can only contain alphanumeric characters, underscore, dot, and hyphen. Where: "Configure LINE channel in Journey Optimizer".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Access the Channels > General settings > Channel configurations menu, then select Create channel configuration.
+* **Success check:** You can now select your configuration when creating your LINE message.
+* **Previous:** Capturing and stitching the LINE user ID to a unified profile before mapping it in the configuration: Get Started with Identities in Journey Optimizer (audience/get-started-identity.md)
+* **Next:** Assigning custom or core data usage labels to the configuration through Manage access: Object level access control (administration/object-based-access.md); Associating consent policies to the messages using the configuration through Marketing actions: Work with consent policies (action/consent.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 023dffb8 -->
+<!-- ai-section-version: 1 | source-hash: 82426502 -->

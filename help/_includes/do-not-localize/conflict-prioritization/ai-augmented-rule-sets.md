@@ -29,19 +29,19 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* You can create up to 10 rule sets for the channel domain and 10 rule sets for the journey domain, for a total of 20 rule sets (hard limit).
+* You can create up to 10 rule sets for the channel domain and 10 rule sets for the journey domain, for a total of 20 rule sets.
 * Working with business rules requires the [!UICONTROL View Frequency Rules] permission (view) and the [!UICONTROL Manage Frequency Rules] permission (create, edit, delete).
-* A rule starts with the [!UICONTROL Draft] status and does not impact any message until you activate it and its rule set.
+* When created, a rule has the [!UICONTROL Draft] status and is not yet impacting any message; to enable it, activate the rule. Activate the rule set to be able to apply it to your journeys and messages.
 * It can take up to 10 minutes for a rule or rule set to be fully activated; you do not need to modify messages or republish journeys for a rule to take effect.
 * Deactivating a rule or rule set sets its status to [!UICONTROL Inactive]; it does not apply to future message executions, does not affect messages currently in execution, and does not affect or reset any counts on individual profiles.
 
 **Terminology:**
 
-* Canonical name: rule set — Acronym: n/a — variants: rule sets, business rules
+* Canonical name: rule set — variants: rule sets
 * Synonyms: none
 * Do not confuse: "rule set" (a group of rules) ≠ "rule" (a single rule inside a rule set)
 * Do not confuse: "channel rule set" (frequency capping or quiet hours rules) ≠ "journey rule set" (entry and concurrency capping rules)
-* Do not confuse: "Global Default Rule Set" (pre-created global rules applying to all selected channels) ≠ custom rule sets (applied to specific journeys or campaigns)
+* Do not confuse: "Global Default Rule Set" (pre-created global rules applying to all selected channels) ≠ custom rule sets (rule sets you create and can apply to any journey or campaign to apply specific capping rules)
 
 **FAQ:**
 
@@ -52,6 +52,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Does deactivating a rule reset profile counts?** — No, deactivating a rule or rule set does not affect or reset any counts on individual profiles.
 * **Q: What is the Global Default Rule Set?** — A pre-created, active rule set whose global rules apply to all selected channels for both journeys and campaigns.
 
+**Personas:**
+
+* **marketer:** Can group frequency capping, quiet hours, and journey capping rules into channel or journey rule sets. Can create a rule set, select its domain, add rules, and activate the rule and the rule set to apply it to journeys and campaigns. Can use the pre-created Global Default Rule Set or create custom rule sets, and can deactivate or delete any rule set. The page states that up to 10 rule sets apply to the channel domain and 10 to the journey domain, for 20 total. Where: "Create and activate rule sets".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Access the Rules sets list, then select Create rule set.
+* **Success check:** The new rule set appears in the Administration > Business rules menu, sorted by last modification date.
+* **Previous:** Learn about the permissions needed to work with business rules: Permission levels (administration/high-low-permissions.md)
+* **Next:** Configure journey capping rule parameters for a journey rule set: Journey capping & arbitration (conflict-prioritization/journey-capping.md); Configure frequency capping rules by channel and communication type: Work with rule sets (conflict-prioritization/channel-capping.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: ad0b90c8 -->
+<!-- ai-section-version: 1 | source-hash: c8cbdd95 -->

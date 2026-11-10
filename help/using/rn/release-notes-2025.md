@@ -8,12 +8,22 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: aa8c74de-748b-4947-a972-14703f6ab4a7
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 feature_v2:
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
-subfeature_v2:
   - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
-    internal-label: Journey Optimizer release notes
+    internal-label: Release notes
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Release Notes 2025 {#release-notes-2025}
 
@@ -2208,3 +2218,58 @@ The improvements below come with the February update.
     ![](../email/assets/surface-list-unsubscribe-custom.png){width="80%"}
 
 * **Decisioning** (Availability date: Jan 28, 2025) - Decisioning now supports Object data types when editing the item catalog's schema. [Read more](../experience-decisioning/catalogs.md)
+
+
+## January '25 release notes {#25-01-rn}
+
+### New capabilities {#25-01-features}
+
+The new capabilities released in January are detailed below.
+
+<table>
+<thead>
+<tr>
+<th><strong>Customer Journey Analytics templates</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You now have the option to enhance your Journey Optimizer reports by leveraging Customer Journey Analytics templates. This new feature allows you to streamline your reporting process with pre-designed templates tailored to your analytics needs.
+</p>
+<p>For more information, refer to the <a href="../reports/report-cja-manage.md#cja-template">detailed documentation</a>.</p>
+<p>Availability date: starting Jan 15, 2025</p>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Flexible Audience Evaluation (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Flexible audience evaluation lets you run a segmentation job on demand for selected audiences, ensuring that you always have the most up-to-date audience data before targeting them into Journey Optimizer journeys and campaigns.</p>
+<img src="assets/do-not-localize/flexible-audience.gif">
+<p>For more information, refer to the <a href="../audience/creating-a-segment-definition.md#flexible">detailed documentation</a>.</p>
+<p> Flexible audience evaluation is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>Availability date: Jan 28, 2025</p>
+</tr>
+</tbody>
+</table>
+
+### January improvements {#25-01-improvements}
+
+The improvements released in January are listed below.
+
+**Decisioning**
+
+* Decisioning now supports Object data types when editing the item catalog's schema. [Read more](../experience-decisioning/catalogs.md)
+
+**Personalization**
+
+* New date/time helper functions are available for use in the personalization editor. [Read more](../personalization/functions/dates.md)
+

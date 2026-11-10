@@ -23,25 +23,24 @@ For complete understanding, this information should be combined with the documen
 
 * **Dataset**: a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows) *(product-specific)*
 * **Data Lake**: where all data ingested into Adobe Experience Platform is persisted as datasets
-* **System dataset (system-generated dataset)**: a dataset created automatically by Journey Optimizer for reporting, consent, message export, intelligent services, and inbound activity *(product-specific)*
-* **Show system datasets**: toggle in the Datasets workspace filter that reveals system datasets, which are hidden by default *(product-specific)*
+* **System dataset (system-generated dataset)**: a dataset used by Journey Optimizer; the page lists system datasets under Reporting, Consent, Message Export, Intelligent Services, and Inbound *(product-specific)*
+* **Show system datasets**: toggle in the Datasets workspace filter that reveals system-generated datasets; by default, only the datasets that you have ingested into are shown *(product-specific)*
 * **Enable for Profile**: enabling a dataset to contribute to Real-Time Customer Profile *(product-specific)*
 * **Data Governance**: dataset and field-level labels that categorize data according to applicable usage policies
 
 **Guardrails:**
 
 * System datasets must not be modified; any change is automatically reverted with every product update.
-* Enabling the schema underlying a dataset for Profile is permanent: once enabled, the schema cannot be disabled or deleted (hard constraint). Only the dataset itself can be disabled or deleted separately.
+* Enabling the schema underlying a dataset for Profile is permanent: once enabled, the schema cannot be disabled or deleted. Only the dataset itself can be disabled or deleted separately.
 * Disabling or deleting a Profile-enabled dataset removes the associated profile records and may disrupt segmentation and activation workflows.
 * As of November 1, 2024, streaming segmentation no longer supports send and open events from Journey Optimizer tracking and feedback datasets; use Business Rules for frequency capping or fatigue management instead.
 * As of February 2025, a time-to-live (TTL) guardrail is being rolled out to Journey Optimizer system-generated datasets.
 * The AJO Message Export Dataset retains records for 7 calendar days from ingestion and is available only to organizations that purchased the Message Export add-on.
-* The Message Feedback Event Dataset uses batch ingestion; expect a data latency of up to 2 hours (expected latency, batch ingestion).
+* The Message Feedback Event Dataset uses batch ingestion; expect a data latency of up to 2 hours.
 * When a dataset is empty, the Preview dataset link is deactivated.
 
 **Terminology:**
 
-* Do not confuse: "profile dataset" (Profile-enabled, contributing to Real-Time Customer Profile) ≠ "event dataset" (behavioral data for journeys and analysis) ≠ "system dataset" (auto-created for tracking, feedback, and journey step events)
 * Do not confuse: disabling or deleting a "dataset" (possible independently) ≠ disabling the underlying "schema" for Profile (permanent, cannot be reversed)
 
 **FAQ:**
@@ -52,6 +51,19 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I create a dataset?** — From an existing schema or by mapping a CSV file to an XDM schema.
 * **Q: Why is the Preview dataset link deactivated?** — The dataset is empty; preview shows the most recent successful batch.
 
+**Personas:**
+
+* **developer:** Can query fields and identifiers across Journey Optimizer system datasets, including the Reporting - Message Feedback Event Dataset and Reporting - Email Tracking Experience Event Dataset. Can consult the Adobe Journey Optimizer Schema Reference for field-level definitions and paths, and the Dataset query examples page for SQL reporting examples. The page states that the Message Feedback Event Dataset uses batch ingestion, with data latency up to 2 hours. Where: "[!DNL Journey Optimizer] system datasets".
+* **admin:** Can enable a dataset to contribute to Real-Time Customer Profile, enabling segmentation, personalization, and journey conditions. Can disable or delete a dataset for Profile independently of its schema. The page states that schema enablement for Profile is permanent and cannot be disabled or deleted once enabled. Where: "Enable datasets for Profile".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Select Datasets in the left-navigation to open the Datasets dashboard.
+* **Success check:** The Datasets dashboard displays the list of available datasets, including name, schema, and status of the most recent ingestion run.
+* **Previous:** Learning data management basics before datasets: Get started with data management in Journey Optimizer (data/gs-data.md)
+* **Next:** Enabling a dataset for Profile: Get Started with Profiles in Journey Optimizer (audience/get-started-profiles.md); Creating a dataset and ingesting data to add test profiles: Create test profiles (audience/creating-test-profiles.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: 156bba9b -->
+<!-- ai-section-version: 1 | source-hash: fe6571f5 -->

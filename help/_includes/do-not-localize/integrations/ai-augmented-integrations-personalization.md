@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how marketers apply configured external integrations to personalize email, SMS, and push content, chain one API call's response into another, and use Adobe Target Delivery API responses in message templates.
+* **TL;DR:** This page explains how marketers apply configured external integrations to personalize email, Mobile message, and push content, chain one API call's response into another, and use Adobe Target Delivery API responses in message templates.
 
 **Intents:**
 
@@ -54,6 +54,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I feed one integration's response into another?** — Yes; chain integrations so calls run in order in the same message, mapping first-call output to second-call input in Pills mode or through a Let variable.
 * **Q: How do I use an Adobe Target JSON mbox response?** — Fetch it with externalDataLookup, extract the mbox with valueAtPath, then parse options.content with parseJson before accessing nested fields.
 * **Q: How do I render an Adobe Target HTML mbox response?** — Fetch and extract the mbox, then render content directly with triple braces; skip parseJson.
+
+**Personas:**
+
+* **marketer:** Can apply configured integrations to personalize Text or HTML content using Add personalization. Can chain one integration's response into another, mapping first-call output to second-call input in Pills mode or through a Let variable. Can use Adobe Target Recommendations by fetching the response with externalDataLookup, extracting the mbox with valueAtPath, and parsing content with parseJson. Where: "Apply integration personalization to your content".
+
+**Onboarding:**
+
+* **Level:** Beginner
+* **First minimal step:** Access your campaign content and select Add personalization from your Text or HTML Components.
+* **Success check:** The page states that your integration personalization is applied, giving each recipient a tailored, relevant experience based on configured attributes.
+* **Previous:** Confirming an integration is configured and activated before using it in content: Enable External Integrations (integrations/integrations.md); Adding personalization from Text or HTML Components: Use Email Designer content components (email/content-components.md)
+* **Next:** Reviewing the Adobe Target Recommendations sample for Target Delivery API configuration steps: Vendor Integration (integrations/vendor-integration.md)
 
 +++
 

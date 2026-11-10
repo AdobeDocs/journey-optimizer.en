@@ -31,6 +31,7 @@ For complete understanding, this information should be combined with the documen
 
 * URL parameter encryption is currently only available for the Email channel.
 * Requires **View Key Registry** and **Manage Key Registry** permissions to access and manage keys.
+* A key must be 32 bytes (256 bits) and base64-encoded. A key name can contain only letters, numbers, and hyphens.
 * Decryption is the organization's responsibility. Journey Optimizer encrypts values at render time; the website, app, or API must decrypt parameters using the same cryptographic material and processes defined by the organization.
 * Only active keys should be used to encrypt new values in the personalization editor; revoked keys must not be used for new content.
 * Revoked keys remain visible in the registry for audit purposes; they may still be needed by the organization's systems to decrypt older payloads.
@@ -49,6 +50,18 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which channels support URL parameter encryption?** — Currently only the Email channel.
 * **Q: Can a revoked key be used for new encryption?** — No. Once a key is revoked, attempts to use it in the encryption helper should fail at render time. Do not use revoked keys for new content.
 
+**Personas:**
+
+* **admin:** Can create keys in the key registry from Administration, Configurations. A key must be 32 bytes and base64-encoded, and its name can contain only letters, numbers, and hyphens. The page states that you must have View Key Registry and Manage Key Registry permissions granted to access and manage keys. Where: "Create keys".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Go to Administration, Configurations, then select Manage to open the Key registry.
+* **Success check:** Marketers can use the URL parameter encryption helper in the personalization editor to encrypt values placed in URL query parameters.
+* **Previous:** Learn about the View Key Registry and Manage Key Registry permissions needed to access and manage keys: Permission levels (administration/high-low-permissions.md)
+* **Next:** Use the URL parameter encryption helper in the personalization editor to encrypt values in URL query parameters: Helpers (personalization/functions/helpers.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: c594ce24 -->
+<!-- ai-section-version: 1 | source-hash: 84e7cc50 -->

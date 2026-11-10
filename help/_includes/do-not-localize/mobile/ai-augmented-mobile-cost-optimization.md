@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: SMS cost optimization — Acronym: n/a — variants: SMS cost best practices
+* Canonical name: SMS cost optimization — variants: SMS cost best practices (SMS is a variant of Mobile message; this page covers the SMS message type)
 * Do not confuse: "Journey Optimizer reporting" (counts the full message as one send regardless of SMS parts) ≠ "Provider reporting" (reflects the actual number of SMS parts used for delivery)
 * Do not confuse: "x/1500 count" (technical payload limit) ≠ "160-character limit" (GSM 7-bit per-message billing limit)
 * Do not confuse: "GSM 7-bit encoding" (160 characters per SMS) ≠ "UCS-2 encoding" (70 characters per SMS) ≠ "UTF-8 encoding" (supported in the editor)
@@ -54,6 +54,16 @@ For complete understanding, this information should be combined with the documen
 * **Q: What triggers UCS-2 encoding and why does it matter?** — Non-GSM characters such as Chinese or Arabic text, trademark symbols, or hard returns from rich-formatting tools trigger UCS-2 encoding, which supports only 70 characters per SMS and can increase billing.
 * **Q: How can I check the character count before sending?** — Use plain-text applications or either simulation method in Simulate content; note that the displayed count does not include characters from dynamic personalization or certain special characters.
 * **Q: Why do the Journey Optimizer and provider reports differ?** — Journey Optimizer reporting counts the full message as one send regardless of SMS parts, while provider reporting reflects the actual number of SMS parts used for delivery.
+
+**Personas:**
+
+* **marketer:** Can use either simulation method in Simulate content to check the SMS character count before sending. The page states that the x/1500 count does not include characters generated through dynamic personalization or certain special characters. Where: "Check character count before sending".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Compose the final SMS message directly within Journey Optimizer or paste it from plain-text applications.
+* **Success check:** Journey Optimizer displays a character count, including spaces, during content simulation.
 
 +++
 

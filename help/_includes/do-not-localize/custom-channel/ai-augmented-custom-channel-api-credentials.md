@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how an administrator views, edits, and creates additional API credential sets for a custom channel so that requests to the endpoint can be authenticated across different brands or environments without duplicating the channel.
+* **TL;DR:** This page explains how to view, edits, and creates additional API credential sets for a custom channel so that requests to the endpoint can be authenticated across different brands or environments without duplicating the channel.
 
 **Intents:**
 
@@ -34,7 +34,7 @@ For complete understanding, this information should be combined with the documen
 
 * Canonical name: API credentials — Acronym: n/a — variants: API credential set, credentials
 * Synonyms: "credential set" = "set of API credentials"
-* Do not confuse: "API credentials" (authentication values authenticating requests to the endpoint) ≠ "channel configuration" (the preset to which a credential set is attached)
+* Do not confuse: "API credentials" (authentication values authenticating requests to the endpoint) ≠ "channel configuration" (the configuration to which different authentication values are attached)
 
 **FAQ:**
 
@@ -43,6 +43,17 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which channels appear when I create credentials?** — Only activated custom channels with an authentication type other than None.
 * **Q: Are credentials created automatically?** — Yes, an initial set is generated automatically when a channel using authentication is activated.
 
+**Personas:**
+
+* **admin:** Can view and edit API credential sets for a custom channel from Administration > Channels > Channel builder > API credentials. Can create additional credentials by selecting the channel, the authentication type, and filling in fields for API Key, Basic auth, or OAuth 2.0. The page states that only activated custom channels with an authentication type other than None appear in the Channel drop-down list. Where: "Manage API credentials".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Activate a custom channel configured with an authentication type other than None.
+* **Success check:** An initial set of API credentials is automatically generated for the channel.
+* **Next:** Delegate a subdomain for link tracking: Configure subdomains for custom channels (custom-channel/custom-channel-subdomains.md); Create a channel configuration: Create a channel configuration for a custom channel (custom-channel/custom-channel-configuration.md)
+
 +++
 
-<!-- ai-section-version: 1 | source-hash: d7d7af37 -->
+<!-- ai-section-version: 1 | source-hash: 69230800 -->

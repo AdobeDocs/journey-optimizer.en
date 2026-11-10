@@ -32,7 +32,7 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * The **[!UICONTROL Key metrics]** and **[!UICONTROL Trends]** sections are shown only to users with the **View Loyalty Insights** permission (`loyalty-insights.read`).
-* Editing a published challenge requires changing it to Draft state first. This cannot be undone, and customizations made directly to the auto-generated journey are lost.
+* Editing a published challenge requires reverting it to Draft state first. Reverting a published challenge to draft cannot be undone, and customizations made directly to the auto-generated journey are lost.
 * After editing a published challenge, save and publish the challenge again, then publish its associated journey.
 * A challenge can be deleted even when published. Consider the impact before deleting.
 * A task can be deleted even when used in one or more challenges. Consider the impact on challenges that reference it before deleting.
@@ -46,12 +46,23 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: How do I open a challenge's details?** - Select the challenge name in the **[!UICONTROL Challenges]** inventory.
-* **Q: What does the details page show?** - The header displays the challenge name, type, ID, and status. The Details area shows the challenge description, type, dates, targeted audience, connected journey and its status, task completion requirements, task names and descriptions, and reward details. Rewards displays **[!UICONTROL No reward amount set]** if no reward amount is configured.
+* **Q: What does the details page show?** - The header displays the challenge name, type, ID, and status. The Details area shows the challenge description, type, dates, targeted audience, connected journey and its status, task completion requirements, task names and descriptions, and reward details.
 * **Q: Which performance metrics can I review?** - Total revenue, enrollment, completion rate, and total completions, with trend sparklines and percentage changes. Select **[!UICONTROL View report]** to explore challenge performance in more detail.
 * **Q: Who can view Key metrics and Trends?** - Users with the **View Loyalty Insights** permission (`loyalty-insights.read`).
-* **Q: How do I edit a published challenge?** - Select **[!UICONTROL Edit challenge]** on the details page. A published challenge first needs to be changed to Draft state, which cannot be undone. Customizations made directly to the auto-generated journey are lost. After making changes, save and publish the challenge again, then publish the associated journey.
-* **Q: What is preserved when I duplicate a challenge?** - The copy retains all tasks, content, and messaging.
+* **Q: How do I edit a published challenge?** - Select **[!UICONTROL Edit challenge]** on the details page. A published challenge first needs to be reverted to Draft state, which cannot be undone. Customizations made directly to the auto-generated journey are lost. After making changes, save and publish the challenge again, then publish the associated journey.
+* **Q: What is preserved when I duplicate a challenge?** - A copy is created with all tasks, content, and messaging intact.
+
+**Personas:**
+
+* **marketer:** Can access Challenges and Tasks inventories, view a challenge's details page, and edit, duplicate, or delete challenges and tasks. The page states that reverting a published challenge to draft cannot be undone. Where: "Access & manage challenges and tasks".
+
+**Onboarding:**
+
+* **Level:** Intermediate
+* **First minimal step:** Navigate to Journey Optimizer and select Loyalty Challenge under the Journey management section.
+* **Success check:** The Challenges and Tasks inventories are displayed, providing a centralized location to view, manage, and organize challenges and tasks.
+* **Next:** Exploring challenge performance in more detail: Explore loyalty performance (loyalty-challenges/loyalty-performance.md); Understanding who can view the Key metrics and Trends sections: Loyalty Challenges permissions (loyalty-challenges/loyalty-permissions.md)
 
 +++
 
-<!-- ai-section-version: 2 | source-hash: 000feee0 -->
+<!-- ai-section-version: 2 | source-hash: 6b01b4aa -->

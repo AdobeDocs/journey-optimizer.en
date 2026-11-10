@@ -5,6 +5,9 @@ title: Technotes
 description: Learn about the statistical methodologies behind Journey Optimizer experimentation, including confidence sequences, lift calculations, and conversion rates.
 redpen-status: CREATED_||_2025-08-12_00-43-53
 exl-id: 853c6c96-2dab-495f-946a-1b03c50632a2
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
 ---
 # Technotes{#section-overview}
 

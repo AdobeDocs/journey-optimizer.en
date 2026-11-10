@@ -15,7 +15,7 @@ For complete understanding, this information should be combined with the documen
 
 * Understand what an XDM schema is and how it structures ingested Experience Platform data.
 * Distinguish standard schemas from relational schemas.
-* Choose a class (record or time-series) and field groups for a standard schema.
+* Identify the class (record or time-series) and the field groups that compose a standard schema.
 * Model relational entities for Orchestrated campaigns.
 * Understand the permanence of enabling a schema for Real-Time Customer Profile.
 
@@ -26,11 +26,11 @@ For complete understanding, this information should be combined with the documen
 * **Relational schema**: a flat, non-hierarchical schema that does not use classes or field groups, used for record data for relational entities and primarily in Orchestrated campaigns *(product-specific)*
 * **Class**: the schema component that defines data behavior (record or time-series) *(product-specific)*
 * **Field group**: the schema component that adds specific fields to a schema *(product-specific)*
-* **Real-Time Customer Profile**: the profile that standard schemas power for segmentation and personalization *(product-specific)*
+* **Real-Time Customer Profile**: powered by standard schemas in Journey Optimizer, for segmentation and personalization *(product-specific)*
 
 **Guardrails:**
 
-* Enabling a schema for Real-Time Customer Profile is permanent: once enabled, the schema cannot be disabled or deleted (hard constraint).
+* Enabling a schema for Real-Time Customer Profile is permanent: once enabled, the schema cannot be disabled or deleted.
 * Datasets built on an enabled schema can be disabled or deleted separately, but doing so removes the associated profile records and may affect segmentation and activation workflows.
 * Relational schemas are flat and do not use classes or field groups.
 
@@ -38,16 +38,28 @@ For complete understanding, this information should be combined with the documen
 
 * Do not confuse: "standard schema" (hierarchical, uses classes and field groups) ≠ "relational schema" (flat, no classes or field groups)
 * Do not confuse: "class" (defines record versus time-series behavior) ≠ "field group" (adds specific fields)
-* Do not confuse: "record" behavior ≠ "time-series" behavior
 
 **FAQ:**
 
 * **Q: What are the two types of schemas?** — Standard schemas (hierarchical) and relational schemas (flat, non-hierarchical).
-* **Q: What is the difference between a class and a field group?** — A class defines the base behavior (record or time-series); field groups add specific fields to the schema.
+* **Q: What is the difference between a class and a field group?** — A class defines the data behavior (record or time-series); field groups add specific fields to the schema.
 * **Q: When are relational schemas used?** — Primarily in Journey Optimizer Orchestrated campaigns, for relational entities such as bookings, products, or stores.
-* **Q: Can I undo enabling a schema for Profile?** — No; once enabled, the schema cannot be disabled or deleted, although its datasets can be disabled or deleted separately.
-* **Q: How do I create a relational schema?** — Create it manually or import via DDL, then link schemas to define relationships and ingest data from supported sources.
+* **Q: Can a schema enabled for Real-Time Customer Profile be disabled or deleted?** — No; once enabled, the schema cannot be disabled or deleted, although its datasets can be disabled or deleted separately.
+* **Q: How do relational schemas work?** — Create schemas manually or import via DDL, link schemas to define relationships between entities and people, and ingest data into your dataset from supported sources.
+
+**Personas:**
+
+* **developer:** Can model profiles and time-series interactions, such as clicks, purchases, or logins, using a standard schema. Can combine one class with one or more field groups to add specific fields. Can create relational schemas manually or import them via DDL, then link schemas and ingest data from supported sources. Can send one message per entity, such as per booking or per subscription, with relational schemas. Where: "Standard & relational schemas".
+* **admin:** Can enable a schema for Real-Time Customer Profile to power segmentation and personalization. Can disable or delete datasets built on an enabled schema separately from the schema itself. The page states that enabling a schema for Real-Time Customer Profile is a permanent decision and the schema cannot be disabled or deleted afterward. Where: "Standard & relational schemas".
+
+**Onboarding:**
+
+* **Level:** Experienced
+* **First minimal step:** Create relational schemas manually or import them via DDL.
+* **Success check:** You can send one message per entity, such as per booking or per subscription.
+* **Previous:** Learn how to manage relational schemas and datasets for Orchestrated campaigns: Configuration steps (orchestrated/gs-schemas.md); Get started with data management in Journey Optimizer: Get started with data management in Journey Optimizer (data/gs-data.md)
+* **Next:** Create a schema, a dataset, and ingest data to add Test profiles in Journey Optimizer: Create test profiles (audience/creating-test-profiles.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 95f5af83 -->
+<!-- ai-section-version: 1 | source-hash: 5a29d06a -->
