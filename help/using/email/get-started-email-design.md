@@ -71,10 +71,6 @@ Once you have created an email, you can start designing your email content.
 
     ![](assets/email_designer_edit_email_body.png)
 
-    >[!NOTE]
-    >
-    >Browser extensions that modify web pages, such as Grammarly or WalkMe, can inject HTML, CSS, or JavaScript into your content. This can cause duplicated or hidden elements in delivered emails. Use a browser profile without such extensions, or disable them for experience.adobe.com.
-
 1. On the Email Designer home page, choose how you want to design your email from the following options:
 
     * **Design your email from scratch** through the Email Designer's interface and leverage images from [Adobe Experience Manager Assets](../integrations/assets.md). Learn how to design your email content in [this section](content-from-scratch.md).
@@ -165,6 +161,10 @@ Outlook has a number of rendering quirks that can affect your email layout if no
 * Avoid rounded corners. CSS `border-radius` is not reliably supported in Outlook — square corners are the safe default.
 
 For dark mode design considerations, including how to use media queries and Outlook.com-specific image swap techniques, refer to [this page](dark-mode.md).
+
+### Browser extensions {#browser-extensions}
+
+Browser extensions that modify web pages, such as Grammarly or WalkMe, can inject HTML, CSS, or JavaScript into the Email Designer. That content can be saved with the email and appear in the delivered message as duplicated content, invisible elements, or unexpected spacing. Author emails in a browser profile without such extensions, or disable them for experience.adobe.com.
 
 ## How-to videos {#video}
 
