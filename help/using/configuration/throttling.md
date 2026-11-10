@@ -110,6 +110,8 @@ Example:
 >
 >The configuration will only be active after calling the **deploy** endpoint.
 
+Throttling applies only when the request URL matches the deployed `urlPattern`. Because wildcards are not allowed in the host part of the pattern (see `ERR_THROTTLING_CONFIG_105` below), a configuration is tied to its endpoint host. If a custom action endpoint changes host, verify that the active `urlPattern` still matches the new URL, then update and redeploy the configuration if needed. The standard limit remains one configuration per organization: if a migration requires both the previous and the new host to be covered at the same time, contact Adobe Customer Care.
+
 ## Errors
 
 When creating or updating a configuration, the process validates the given configuration and returns the validation status identified by its Unique ID, either:
