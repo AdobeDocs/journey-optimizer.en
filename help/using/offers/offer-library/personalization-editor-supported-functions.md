@@ -38,6 +38,12 @@ level_v2:
 ---
 # Supported functions in the personalization editor {#personalization-editor-supported-functions}
 
+>[!IMPORTANT]
+>
+>This page covers the supported personalization editor functions for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Get started with Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
+>
+>Not sure which capability you are using? [Compare Decision management and Decisioning](../../experience-decisioning/gs-decision.md).
+
 In Decision management, you use the **personalization editor** when you [add representations](add-representations.md) and personalize **offer content** (images, text, links in your offers).
 
 The Offer Decisioning backend supports only a **subset** of the functions available in the personalization editor when personalizing that content. This page lists every function you can safely use in the editor for offer content. Expand each section to see the supported operators, helpers, and functions.

@@ -46,7 +46,9 @@ topic_v2:
 
 >[!IMPORTANT]
 >
->This page covers simulations for the legacy **Decision Management** capability. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to [Get started with Decisioning](../../experience-decisioning/gs-experience-decisioning.md) instead.
+>This page covers simulations for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Get started with Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
+>
+>Not sure which capability you are using? [Compare Decision management and Decisioning](../../experience-decisioning/gs-decision.md).
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_simulation"

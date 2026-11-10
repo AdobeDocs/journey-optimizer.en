@@ -46,7 +46,7 @@ topic_v2:
 
 >[!IMPORTANT]
 >
->This page covers the legacy **Decision Management** APIs. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to the [Decisioning API developer guide](../../../../experience-decisioning/api-reference/getting-started.md) instead.
+>This page covers the legacy **Decision Management** APIs. If you are using the new **Decisioning** capability, refer to the [Decisioning API developer guide](../../../../experience-decisioning/api-reference/getting-started.md).
 >
 >Not sure which capability you are using? [Learn about Decisioning](../../../../experience-decisioning/gs-experience-decisioning.md).
 

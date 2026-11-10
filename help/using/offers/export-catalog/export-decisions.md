@@ -50,7 +50,7 @@ topic_v2:
 
 >[!IMPORTANT]
 >
->This page covers the decisions dataset for the legacy **Decision Management** capability. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to [Item catalog](../../experience-decisioning/catalogs.md) instead.
+>This page covers the decisions dataset for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Item catalog](../../experience-decisioning/catalogs.md).
 >
 >Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
