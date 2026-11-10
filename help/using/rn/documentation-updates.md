@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* All **Decision management** pages, including the API reference pages, now start with a banner that identifies them as covering the legacy capability and links to the equivalent **Decisioning** content. [Read more](../offers/get-started/starting-offer-decisioning.md)
+
 * The **Incremental query** activity page now clarifies that each run returns only records whose date field value is later than the previous execution, regardless of when the records were ingested. [Read more](../orchestrated/activities/incremental-query.md)
 
 * The **Use Adobe Experience Platform data** page now clarifies that you can enable a dataset for lookup either in the dataset management interface or with an API call. [Read more](../data/lookup-aep-data.md#enable)

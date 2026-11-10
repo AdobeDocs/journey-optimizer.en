@@ -39,9 +39,11 @@ level_v2:
 ---
 # Add constraints to an offer {#add-constraints}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers offer constraints for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Build rules](../../experience-decisioning/rules.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
 >[!CONTEXTUALHELP]
 >id="od_offer_constraints"

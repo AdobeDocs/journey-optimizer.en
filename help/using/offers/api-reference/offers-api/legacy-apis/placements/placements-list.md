@@ -41,9 +41,11 @@ level_v2:
 ---
 # List placements {#list-placements}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the legacy **Decision Management** APIs. If you are using the new **Decisioning** capability, refer to the [Decisioning API developer guide](../../../../../experience-decisioning/api-reference/getting-started.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../../../../experience-decisioning/gs-experience-decisioning.md).
 
 
 Placements are containers that are used to showcase your offers. A placement helps ensure that the right offer content shows up in the right location within your message. When you add content to an offer, you will be asked to select a placement in which that content can be shown.
