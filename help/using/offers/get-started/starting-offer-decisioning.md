@@ -156,4 +156,3 @@ The video below provides an introduction to Decision Management key capabilities
 The video below shows how to use Decision Management to define and manage your offers and leverage real-time customer data.
 
 >[!VIDEO](https://video.tv.adobe.com/v/326841?quality=12&learn=on)
-
