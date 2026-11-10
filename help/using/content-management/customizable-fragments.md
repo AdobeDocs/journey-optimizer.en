@@ -129,6 +129,10 @@ However, if you created fragments and defined editable fields before the rich-te
 
 Until the rich-text mode is unlocked, the legacy customizable visual fragments continue to support plain text only. Users cannot enter rich text into the editable fields of these fragments.
 
+>[!NOTE]
+>
+>Editable text in legacy text-only fragments can be cut off when the fragment is rendered. To avoid this, select **Enable** to upgrade the fields to rich-text mode, then save the fragment.
+
 >[!CAUTION]
 >
 >Enabling rich text may cause styling loss in journeys, campaigns, or templates already using the fragment. To work around this, either correct the styling in the affected contents (email or template), or create a new fragment with rich text enabled, then replace the old fragment with the new one in your contents.
