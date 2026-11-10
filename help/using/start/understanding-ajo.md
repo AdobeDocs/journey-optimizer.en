@@ -140,17 +140,9 @@ Not sure who sets up what? See [Roles and responsibilities](quick-start.md).
 
 ## Key functional areas {#functional-areas}
 
-Journey Optimizer includes seven key functional areas that work together seamlessly. These are the same capabilities that the [orchestration engine list](#ajo-orchestration) groups by stage of the cycle:
+Journey Optimizer includes seven key functional areas that work together seamlessly.
 
-| Orchestration engine stage | Functional area |
-|---|---|
-| Customer Understanding | Customer Management |
-| Content & Offers | Content Management and Decision Management |
-| Journey & Campaign Management | Journey Management |
-| Delivery (Connections) | Connections |
-| Measurement & Analysis | Not a separate functional area. Reports are covered in [View reports](../reports/campaign-global-report-cja.md). |
-| Data Platform and Data Ingestion (Adobe Experience Platform foundation) | Data Management |
-| Governance Layer (Adobe Experience Platform foundation) | Administration & Privacy |
+The [orchestration engine stages](#ajo-orchestration) map to these areas as follows: Customer Understanding is Customer Management, Content & Offers is Content Management and Decision Management, Journey & Campaign Management is Journey Management, and Delivery (Connections) is Connections. Measurement & Analysis is covered by [reports](../reports/campaign-global-report-cja.md) rather than a separate functional area.
 
 | Functional Area | Purpose | Key Activities |
 |-----------------|---------|----------------|
