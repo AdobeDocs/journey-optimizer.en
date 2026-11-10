@@ -162,6 +162,10 @@ Outlook has a number of rendering quirks that can affect your email layout if no
 
 For dark mode design considerations, including how to use media queries and Outlook.com-specific image swap techniques, refer to [this page](dark-mode.md).
 
+### Browser extensions {#browser-extensions}
+
+Browser extensions that modify web pages, such as Grammarly or WalkMe, can inject HTML, CSS, or JavaScript into the Email Designer. That content can be saved with the email and appear in the delivered message as duplicated content, invisible elements, or unexpected spacing. Author emails in a browser profile without such extensions, or disable them for experience.adobe.com.
+
 ## How-to videos {#video}
 
 Learn how to create email content with the message editor.
