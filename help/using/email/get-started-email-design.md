@@ -131,6 +131,13 @@ Refer to the table below for best practices for email design:
 
 Even well-structured emails can render differently depending on the client or environment where they are opened. The sections below document known limitations and client-specific behaviors to keep in mind when designing your emails.
 
+For guardrails specific to an Email Designer feature, refer to:
+
+* [Advanced HTML editor](email-expert-mode.md#guardrails)
+* [Dark mode](dark-mode.md#guardrails)
+* [Enhanced email authoring experience](apply-email-themes.md#themes-guardrails)
+* [Custom CSS with imported content](custom-css.md#guardrails-imported-content)
+
 ### Mobile web browser limitations {#mobile-web-limitations}
 
 Email rendering may differ when recipients open Gmail or Outlook **via a mobile web browser** (e.g., Chrome on a phone), rather than using a native mobile app or desktop client. This is a known limitation of mobile webmail environments and is not specific to Journey Optimizer.
