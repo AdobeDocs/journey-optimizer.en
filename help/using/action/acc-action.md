@@ -100,7 +100,7 @@ In Adobe Campaign, you must create and publish a transactional message and its a
 
 You can build your JSON payload corresponding to each message following the pattern below. You will then paste this payload when configuring the action in Journey Optimizer (see below).
 
-+++ Example
++++ Example - Email
 
 ```json
 {
@@ -113,11 +113,29 @@ You can build your JSON payload corresponding to each message following the patt
 }
 ```
 
-* **channel**: the channel defined for your Campaign transactional template
-* **eventType**: the internal name of your Campaign event
-* **ctx**: variable based on the personalization you have in your message
++++
+
++++ Example - SMS
+
+```json
+{
+    "channel": "sms",
+    "eventType": "Campaign transactional event internal name",
+    "mobilePhoneNumber": "Recipient phone number",
+    "ctx": {
+        "firstName": "First name"
+    }
+}
+```
 
 +++
+
+* **channel**: the channel defined for your Campaign transactional template, for example `email` or `sms`.
+* **eventType**: the internal name of your Campaign transactional event. This is the Campaign event name and is not the same as the journey entry event.
+* **Recipient field**: the recipient address expected by the channel. For email, use `email`. For SMS, the recipient number is read from `mobilePhoneNumber` (use this exact name, not `mobilePhone` or `phoneNumber`).
+* **ctx**: the personalization variables used in your message. The properties depend on the Campaign transactional message.
+
+An incomplete or incorrect payload, such as a missing or misspelled field, can return an HTTP 400 error.
 
 ## Configure the action {#configure-action}
 

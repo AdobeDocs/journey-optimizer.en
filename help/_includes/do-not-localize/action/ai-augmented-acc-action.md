@@ -23,7 +23,8 @@ For complete understanding, this information should be combined with the documen
 
 * **Campaign action**: The action available in the journey designer palette for each configured Adobe Campaign v7/v8 action *(product-specific)*
 * **Transactional Messaging**: The Adobe Campaign capability used to send emails, push notifications, and mobile messages triggered from Journey Optimizer *(product-specific)*
-* **eventType**: The internal name of the Adobe Campaign event referenced in the JSON payload *(product-specific)*
+* **eventType**: The internal name of the Adobe Campaign transactional event referenced in the JSON payload; it is the Campaign event name, not the journey entry event *(product-specific)*
+* **mobilePhoneNumber**: The payload field that carries the recipient phone number for the SMS channel; the exact field name, not mobilePhone or phoneNumber *(product-specific)*
 * **ctx**: The payload object holding variables based on the personalization present in the Campaign message *(product-specific)*
 
 **Guardrails:**
@@ -32,6 +33,7 @@ For complete understanding, this information should be combined with the documen
 * Because of that cap, Journey Optimizer should only be used in unitary use cases (individual events, not audiences).
 * You must configure one action on the canvas per template, meaning one action in Journey Optimizer for each Adobe Campaign template you wish to use.
 * There is no validation that the payload or Campaign message is correct.
+* An incomplete or incorrect payload, such as a missing or misspelled field, can return an HTTP 400 error.
 * You cannot use a Campaign action with an audience qualification event.
 * Adobe recommends using a dedicated Message Center hosted or Managed Services instance to avoid impacting other Campaign operations.
 
@@ -47,10 +49,11 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why should this integration be used only for unitary use cases?** — Because there is no throttling and messages are capped to 4,000 per 5 minutes, it suits individual events rather than audiences.
 * **Q: Can a Campaign action be used with an audience qualification event?** — No, you cannot use a Campaign action with an audience qualification event.
 * **Q: How do I update a Campaign action when the Real-Time endpoint changes?** — Edit the action, update the URL field with the new RT endpoint, adjust the Payload if needed, click Test to validate the connection, then Save.
+* **Q: What field carries the recipient phone number in an SMS payload?** — The mobilePhoneNumber field; use this exact name, not mobilePhone or phoneNumber. An incomplete or incorrect payload can return an HTTP 400 error.
 
 **Personas:**
 
-* **developer:** Can build the JSON payload for each Campaign transactional message, using the channel, eventType, email, and ctx fields. The page states that ctx is the payload object holding variables based on the personalization in the message. Where: "Prerequisites".
+* **developer:** Can build the JSON payload for each Campaign transactional message, using the channel, eventType, recipient address (email for email, mobilePhoneNumber for SMS), and ctx fields. The page states that ctx is the payload object holding variables based on the personalization in the message. Where: "Prerequisites".
 * **admin:** Can configure one action in Journey Optimizer for each Adobe Campaign template to use. The page states that the system caps messages sent over to 4,000 per 5 minutes, based on the current Campaign SLA. Where: "Guardrails and limitations".
 
 **Onboarding:**
@@ -63,4 +66,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 6a049c54 -->
+<!-- ai-section-version: 2 | source-hash: 6a049c54 -->
