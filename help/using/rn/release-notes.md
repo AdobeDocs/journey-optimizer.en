@@ -302,7 +302,8 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 26, 2026
 
-<!-- COMING SOON (hidden until next week)
+<!--
+COMING SOON (hidden until next week)
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -325,7 +326,8 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 +++
 -->
 
-<!-- COMING SOON (hidden until next week)
+<!--
+COMING SOON (hidden until next week)
 ### Campaigns {#oct-26-orchestrated-campaigns}
 
 The following improvements are coming to campaigns in this release.
@@ -396,7 +398,8 @@ The following improvements are coming to campaigns in this release.
 
   Availability date: October 22, 2026
 
-<!-- COMING SOON (hidden until next week)
+<!--
+COMING SOON (hidden until next week)
 +++ Coming soon — **Information below is subject to change.**
 
 * **Decisioning item creation skill in Coworker** - Use natural language in Coworker to create offers (decision items) with AI assistance, so marketers can build and populate items faster without manually filling in each field. 
@@ -422,7 +425,8 @@ The following improvements are coming to campaigns in this release.
 
   Availability date: October 1, 2026
 
-<!-- COMING SOON (hidden until next week)
+<!--
+COMING SOON (hidden until next week)
 ### Integrations {#oct-26-integrations}
 
 +++ Coming soon — **Information below is subject to change.**
