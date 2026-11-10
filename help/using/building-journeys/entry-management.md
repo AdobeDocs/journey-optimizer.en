@@ -124,6 +124,8 @@ Re-entrance settings are configured on the current journey version, but [!DNL Jo
 
 Publishing a new journey version does not move in-flight profiles to the new version. Profiles who already entered a previous version stay in that version until they exit the journey. If they become eligible again later, they enter the latest live version.
 
+When re-entrance is disabled, the 91-day restriction is tracked across all versions that share the same journey ID. Publishing a new version does not reset it: a profile cannot re-enter another version of that journey within 91 days of entering an earlier version. After the restriction expires, an eligible profile can enter the latest live version.
+
 **Example**
 
 To understand how cross-version blocking works, consider the following sequence:

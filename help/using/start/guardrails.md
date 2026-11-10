@@ -371,6 +371,8 @@ The following guardrails apply to the [email channel](../email/get-started-email
 
 * When designing email messages, the system checks for key settings and displays alerts for warnings (recommendations and best practices) and errors (blocking issues that prevent testing or activation). Learn more about email alerts and validation requirements in [this section](../email/create-email.md#check-email-alerts).
 
+* For Email Designer guardrails and limitations, such as mobile web browser, Outlook, and browser extension considerations, refer to [this section](../email/get-started-email-design.md#email-guardrails).
+
 #### Message content size for journey publication {#message-content-size}
 
 When publishing journeys that contain email messages, the total message content size must not exceed **2 MB** after backend processing. During publication, the system automatically processes message content by patching links, images, and applying transformations, which increases the payload size beyond the authored content size.
