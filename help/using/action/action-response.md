@@ -67,6 +67,26 @@ This capability was previously only available when using data sources. You can n
 * Custom actions should only be used with private or internal endpoints, and used with an appropriate capping or throttling limit. See [this page](../configuration/external-systems.md). 
 -->
 
+* The response payload must be a JSON object. A bare array as the whole response is not supported. Place the array inside a field, for example `body`:
+
+    ```
+    {
+    "body": [
+    "val1",
+    "val2"
+    ]
+    }
+    ```
+
+    The following is not supported, because the whole response is an array:
+
+    ```
+    [
+    "val1",
+    "val2"
+    ]
+    ```
+
 * Scalar arrays are supported in response payload:
 
     ```
