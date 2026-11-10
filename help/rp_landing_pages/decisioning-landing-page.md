@@ -43,7 +43,7 @@ Decision Management in Adobe Journey Optimizer
 
 Discover how to create, configure, and optimize personalized decisions and offers across multiple channels using Decision Management tools and workflows.
 
-[Learn more about Decision Management](offer-decisioning-landing-page.md)
+[Learn more about Decision Management](../using/offers/get-started/starting-offer-decisioning.md)
 :::
 
 ::::
