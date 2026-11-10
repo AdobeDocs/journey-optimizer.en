@@ -416,7 +416,7 @@ The following guardrails apply to the [Mobile channel](../mobile/get-started-mob
 
 * Journey Optimizer supports a maximum of **500 active inbound actions** at any moment in time. These inbound actions are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
 
-* An inbound message request supports a maximum of **10 lookups** of any kind, including [external data](../personalization/external-data-lookup.md) and dataset lookups. If a request exceeds this limit, the entire request can fail with an **HTTP 422** error, rather than returning a partial response. To stay within the limit, reduce the number of lookups where possible.
+* An inbound message request supports a maximum of **10 lookups** of any kind, including [external data](../personalization/external-data-lookup.md) and dataset lookups. Each lookup call counts, including repeated calls to the same endpoint and calls inside an `#each` loop (once per iteration). Exceeding the limit can fail the entire request with an **HTTP 422** error, rather than returning a partial response. To stay within the limit, perform a lookup once, before any loop, and reuse its result. Reading several attributes from that result does not add lookups.
 
 #### Profile management with inbound channels {#profile-management-inbound}
 
