@@ -23,14 +23,14 @@ For complete understanding, this information should be combined with the documen
 
 * **Test profile**: A profile flagged with `testProfile = true`, required for using test mode in a journey and for previewing and testing content *(product-specific)*
 * **Profile test details**: The field group that must be added to the schema; the `testProfile` flag is part of this field group *(product-specific)*
-* **Simulate content**: The action to test content variations with sample input data or AI auto-generation *(product-specific)*
+* **Simulate content**: The action to test content variations with sample input data or AI auto-generation; it does not require test profiles *(product-specific)*
 * **Simulate content (AEP profiles)**: The option selected from the Simulate content dropdown to preview content with test profiles *(product-specific)*
 * **In-product use case**: A use case available from the Journey Optimizer home page that facilitates the creation of test profiles used for testing journeys before publishing, from a predefined CSV format *(product-specific)*
 * **Identity namespace**: The namespace (for example Email or Phone) used to uniquely identify the test profiles *(product-specific)*
 
 **Guardrails:**
 
-* Test profiles are required when using test mode in a journey and to preview and test content.
+* Test profiles are required when using test mode in a journey and to preview content with Simulate content (AEP profiles); they are not required to simulate content with sample input data or AI auto-generation.
 * To create profiles you must first create a schema and a dataset; the schema must include the Profile test details field group.
 * The schema must have the correct identity descriptor applied to the primary identity field for the intended namespace; if it is missing or incorrectly configured, ingested profiles may not be flagged as test profiles (`testProfile = true`) even if ingestion completes successfully.
 * When creating a profile via CSV or API, the `testProfile` field must be set to `true`.
