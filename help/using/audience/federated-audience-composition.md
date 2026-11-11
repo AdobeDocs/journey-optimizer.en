@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Work with Federated Audience Composition audiences
-description: Learn what Federated Audience Composition (FAC) is, what a federated audience is, and how to use federated audiences in Adobe Journey Optimizer
+description: Learn what Federated Audience Composition is, what a federated audience is, and how to use federated audiences in Adobe Journey Optimizer
 feature: Audiences, Profiles
 topic: Content Management
 role: User
@@ -38,11 +38,11 @@ level_v2:
 
 While you can use the audience composition capabilities to create valuable, highly refined audiences for targeting, you can further enrich audiences for deeper personalization using data from your enterprise data warehouse and trusted partners.
 
-The Federated Audience Composition (FAC) capability available in Adobe [!DNL Journey Optimizer] can query a data warehouse for data or profile
+The Federated Audience Composition capability available in Adobe [!DNL Journey Optimizer] can query a data warehouse for data or profile
 attributes to use in composing audiences, leaving sensitive data in the warehouse and avoiding data duplication. This can include both profile-based data and non-profile data. For example, a quick-service restaurant group could enrich profiles of customers
 that recently placed orders online with each customer's preferred restaurant location, enabling the restaurant group to send customers offers that can be used at those preferred locations.
 
-An audience created using FAC is called a *federated audience*. After you run the composition, the federated audience is saved in Adobe Experience Platform as an external audience.
+An audience created using Federated Audience Composition is called a *federated audience*. After you run the composition, the federated audience is saved in Adobe Experience Platform as an external audience.
 
 * **Data integration** - Boost flexibility and efficiency with ability to query relevant pre-built audiences and datasets from your enterprise data warehouse and partners into a single environment to augment Adobe Experience Platform use cases.
 * **Enhanced marketing processes** - Unlock additional support for segmentation, targeting, and activation use cases with streamlined, adaptable workflows.
