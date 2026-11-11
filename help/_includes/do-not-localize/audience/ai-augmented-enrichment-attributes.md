@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: What are enrichment attributes?** — Additional attributes that are contextual and specific to an audience; they are not associated with the profile and are typically used for personalization.
-* **Q: Where can I use enrichment attributes within Journey Optimizer?** — Enrichment attributes from audience composition can be used in Condition activity (Journeys), Custom action attributes (Journeys), and Message personalization (Journeys and campaigns).
+* **Q: Where can I use enrichment attributes within Journey Optimizer?** — Enrichment attributes from audiences can be used in the Optimize activity with the Condition method (Journeys), Custom action attributes (Journeys), and Message personalization (Journeys and campaigns).
 * **Q: How do I enable enrichment attributes from composition workflows in journeys?** — Add them to a Field Group within the "ExperiencePlatform" Data Source.
 * **Q: Are enrichment attribute values updated after a journey starts?** — Currently no; even after wait or event nodes, values remain the same as when the journey started.
 * **Q: Are older CSV custom upload audiences eligible?** — Audiences created through CSV custom upload before October 1, 2024, are not eligible for personalization and must be re-created and re-uploaded.
