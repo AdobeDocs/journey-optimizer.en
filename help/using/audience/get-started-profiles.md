@@ -69,13 +69,13 @@ Leverage Real-time Customer Profile in [!DNL Adobe Journey Optimizer] to see a h
 
 ## Engageable Profiles and license usage {#engageable-profiles}
 
-An **Engageable Profile** is a record of information representing an individual that is stored in the Profile Service and has been engaged by journeys or campaigns. It is the key license metric for [!DNL Adobe Journey Optimizer].
+An **Engageable Profile** is a record of information representing an individual that is stored in the Profile Service that you have attempted to engage using Journey Optimizer capabilities over the past 12 months. It is the key license metric for [!DNL Adobe Journey Optimizer]. [Learn more in the Adobe Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
 
 Key characteristics:
 
 * **12-month rolling window**: The count reflects unique profiles you have attempted to engage over the past 12 months using Journey Optimizer's authoring, decisioning, delivery, experimentation, or orchestration capabilities.
 * **Counted once per sandbox**: A profile that enters multiple journeys or campaigns within a sandbox counts as a single Engageable Profile for that sandbox.
-* **Based on your Addressable Audience**: Engageable Profiles are calculated from your Addressable Audience. The count represents the audience engaged in the past 12 months using any of Journey Optimizer's capabilities, out of your total Addressable Audience.
+* **Based on your Addressable Audience**: Engageable Profiles are calculated from your Addressable Audience. The count represents the audience you attempted to engage in the past 12 months using any of Journey Optimizer's capabilities, out of your total Addressable Audience.
 * **Metric behavior**: The Engageable Profiles count:
     * Can increase when new profiles are engaged through journeys or campaigns
     * Cannot decrease unless there is no engagement with certain profiles for over 12 months
