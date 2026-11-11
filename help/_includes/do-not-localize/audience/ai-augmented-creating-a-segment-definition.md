@@ -21,7 +21,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Segment definition**: A new audience definition created with Adobe Experience Platform Segmentation Service using the Build rule method *(product-specific)*
+* **Segment definition**: A rule-based definition of an audience, created with Adobe Experience Platform Segmentation Service using the Build rule method *(product-specific)*
 * **Build rule**: The audience creation method selected from Create audience that opens the segment definition screen *(product-specific)*
 * **Attributes**: One of the two basic building blocks of segment definitions, for example the city where profiles live or the birth year *(product-specific)*
 * **Events**: One of the two basic building blocks of segment definitions, for example a purchase made within the last 7 days *(product-specific)*
@@ -38,7 +38,8 @@ For complete understanding, this information should be combined with the documen
 * Edge segmentation can currently evaluate only select query types.
 * Batch segmentation is evaluated every 24 hours; attempts to force an immediate update do not override the daily cycle.
 * After an audience is first defined, backfilling the audience from prior data can take up to 24 hours.
-* Flexible audience evaluation lets you evaluate up to 20 audiences at a time, and ineligible audiences are automatically excluded.
+* Flexible audience evaluation accepts up to 20 audiences per run; all the audiences must have the origin "Segmentation Service", use batch segmentation, and be people-based, and ineligible audiences are automatically excluded.
+* You can change the evaluation method of a segment definition after you save it, but you cannot switch back to streaming or edge once you change to batch.
 
 **Terminology:**
 
@@ -47,15 +48,15 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: How do I start creating a segment definition?** — From the Audiences menu, click Create audience and select Build rule.
+* **Q: How do I start creating a segment definition?** — From the Audiences menu, select Create audience and then Build rule.
 * **Q: Can I use the `frequencyMap` attribute in a segment definition?** — No; it is not supported and cannot be used as segmentation criteria. Consider frequency capping rules under business rules instead.
 * **Q: Can I still use send and open events in streaming segmentation?** — No; as of November 1st, 2024, streaming segmentation no longer supports send and open events from Journey Optimizer tracking and feedback datasets, though they remain usable in batch segments.
 * **Q: How long does backfilling take?** — Backfilling the audience from prior data can take up to 24 hours after the audience is first defined.
-* **Q: How many audiences can I evaluate on demand at once?** — You can evaluate up to 20 audiences at a time with flexible audience evaluation, and ineligible audiences are automatically excluded.
+* **Q: How many audiences can I evaluate on demand at once?** — Up to 20 audiences per flexible audience evaluation run, and they must have the origin "Segmentation Service", use batch segmentation, and be people-based; ineligible audiences are automatically excluded.
 
 **Personas:**
 
-* **marketer:** Can create a segment definition by selecting Create audience and then Build rule from the Audiences menu. Can drag attributes and events into the workspace, then choose a streaming, batch, or edge evaluation method for the audience. Can run flexible audience evaluation on up to 20 audiences at a time before targeting them in journeys or campaigns. The page states that backfilling the audience from prior data can take up to 24 hours after the audience is first defined. Where: "Create a segment definition".
+* **marketer:** Can create a segment definition by selecting Create audience and then Build rule from the Audiences menu. Can drag attributes and events into the workspace, then choose a streaming, batch, or edge evaluation method for the audience. Can run flexible audience evaluation on up to 20 audiences per run before targeting them in journeys or campaigns. The page states that backfilling the audience from prior data can take up to 24 hours after the audience is first defined. Where: "Create a segment definition".
 
 **Onboarding:**
 
