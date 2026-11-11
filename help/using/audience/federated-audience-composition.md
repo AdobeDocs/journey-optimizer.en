@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: About Adobe Experience Platform audiences
-description: Learn how to work with Adobe Experience Platform audiences
+title: Work with Federated Audience Composition audiences
+description: Learn what Federated Audience Composition is, what a federated audience is, and how to use federated audiences in Adobe Journey Optimizer
 feature: Audiences, Profiles
 topic: Content Management
 role: User
@@ -42,15 +42,27 @@ The Federated Audience Composition capability available in Adobe [!DNL Journey O
 attributes to use in composing audiences, leaving sensitive data in the warehouse and avoiding data duplication. This can include both profile-based data and non-profile data. For example, a quick-service restaurant group could enrich profiles of customers
 that recently placed orders online with each customer's preferred restaurant location, enabling the restaurant group to send customers offers that can be used at those preferred locations.
 
+An audience created using Federated Audience Composition is called a *federated audience*. After you run the composition, the federated audience is saved in Adobe Experience Platform as an external audience.
+
 * **Data integration** - Boost flexibility and efficiency with ability to query relevant pre-built audiences and datasets from your enterprise data warehouse and partners into a single environment to augment Adobe Experience Platform use cases.
 * **Enhanced marketing processes** - Unlock additional support for segmentation, targeting, and activation use cases with streamlined, adaptable workflows.
 * **Efficient data management** - Minimize data copy, govern sensitive
-data usage, and optimize IT investments to complement real-time cross-channel use cases on Adobe
+data usage, and optimize IT investments to complement real-time cross-channel use cases on Adobe Experience Platform.
 
-For more information, please read the guide on [Federated Audience Composition](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home){target="_blank"}.
+For more information, read the guide on [Federated Audience Composition](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home){target="_blank"}.
 
 Learn more about Federated Audience Composition in video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432261?quality=12)
+
+## Use federated audiences in journeys and campaigns {#use-in-journeys}
+
+You can select a federated audience in journeys and campaigns, like any other audience. Keep the following in mind:
+
+* Federated audiences require the Federated Audience Composition add-on. [Learn more about prerequisites](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}
+* In journeys, you can use a federated audience in [!UICONTROL Read audience] and [!UICONTROL Condition] activities, but not in [!UICONTROL Audience Qualification] activities. [Learn more](target-audiences.md#guardrails)
+* A federated audience is static. Its members stay the same until the next composition run.
+* The identity namespace of the audience must match the journey namespace.
+* Preview and proof are not supported, and incremental read is not functionally supported. [Learn more about incremental read](../building-journeys/read-audience.md)
 
 {{$include /help/_includes/do-not-localize/audience/ai-augmented-federated-audience-composition.md}}
