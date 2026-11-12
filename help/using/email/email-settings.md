@@ -179,6 +179,10 @@ To include email addresses suppressed due to spam complaint in your transactiona
 
 As a deliverability best practice, this option is disabled by default to ensure your customers who have opted out are not contacted. However, you may change this default option, which then permits you to send transactional messages to your customers.
 
+>[!NOTE]
+>
+>If you have a compliance requirement, a separate option at the email action level allows you to include all the addresses on your suppression list in a specific delivery, whatever the email type. This is not a recommended email practice, as it can damage your deliverability. This capability is available in Limited Availability. [Learn more](../configuration/manage-suppression-list.md#include-suppressed-addresses)
+
 Once this option is enabled, although a customer marked your marketing email as spam, such customer will be able to receive your transactional messages using the current configuration. Always make sure to manage opt-out preferences in accordance with deliverability best practices.
 
 ## Seed list {#seed-list}

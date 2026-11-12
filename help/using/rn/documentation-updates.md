@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Manage the suppression list** page now explains how to include the addresses on your suppression list in a specific email delivery for compliance scenarios (Limited Availability), while the Adobe global suppression list, consent, and opt-out are still honored. [Read more](../configuration/manage-suppression-list.md#include-suppressed-addresses)
+
 * All **Decision management** pages, including the API reference pages, now start with a banner that identifies them as covering the legacy capability and links to the equivalent **Decisioning** content. [Read more](../offers/get-started/starting-offer-decisioning.md)
 
 * The **Incremental query** activity page now clarifies that each run returns only records whose date field value is later than the previous execution, regardless of when the records were ingested. [Read more](../orchestrated/activities/incremental-query.md)

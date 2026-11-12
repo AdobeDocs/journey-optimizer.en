@@ -267,6 +267,51 @@ Once the affected email addresses are identified, filter the suppression list to
 
 You can then remove quarantined email addresses from the suppression list using the **[!UICONTROL Delete]** button.
 
+## Include suppressed addresses in an email delivery {#include-suppressed-addresses}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_include_suppression_list"
+>title="Include suppression list in email delivery"
+>abstract="When on, this email is also delivered to the addresses on your suppression list, including past hard bounces and spam complaints. Use this option only when you have a compliance requirement, as it can damage your deliverability. The Adobe global suppression list, consent, and opt-out choices are still honored."
+
+>[!AVAILABILITY]
+>
+>This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+
+By default, [!DNL Journey Optimizer] excludes from every email delivery the addresses that are on your suppression list and on the Adobe global suppression list.
+
+If you have a compliance requirement, for example when a communication must be demonstrably attempted to an address that previously bounced, you can include the addresses on your suppression list in a specific email delivery. This option is set at the email action level, in a campaign or in a journey.
+
+>[!CAUTION]
+>
+>Sending to suppressed addresses is not a recommended email practice. Use this option only when you have a compliance requirement.
+>
+>Inbox placement for the send may drop, and the sending reputation of the subdomain and its IPs can be damaged. Adobe recommends isolating this traffic on a dedicated subdomain or IP pool and monitoring deliverability closely.
+
+To include suppressed addresses in an email delivery, follow these steps:
+
+1. From the settings of the email action in your campaign or journey, go to the **[!UICONTROL Delivery]** section.
+
+1. Turn on the **[!UICONTROL Include suppression list in email delivery]** option.
+
+    ![Include suppression list in email delivery option in the Delivery section of an email action](assets/suppression-list-include-toggle.png){width="80%"}
+
+1. In the confirmation dialog, review the impacts and select **[!UICONTROL I agree]**. If you select **[!UICONTROL Cancel]**, the option remains turned off.
+
+    ![Confirmation dialog displayed when turning on the Include suppression list in email delivery option](assets/suppression-list-include-confirmation.png){width="80%"}
+
+When this option is on, the following rules apply to that email action only:
+
+* The email is delivered to all the addresses on your suppression list, whatever their suppression category (hard bounces, spam complaints, soft bounces, or manual entries).
+* The Adobe global suppression list is still honored: addresses on that list remain excluded.
+* Consent and opt-out choices are always honored: unsubscribed recipients do not receive the email.
+
+You can turn off the option at any time. No confirmation is required.
+
+>[!NOTE]
+>
+>This option is different from the **[!UICONTROL Send to suppressed email addresses]** option of the email channel configuration, which applies to transactional messages and to addresses suppressed due to spam complaint only. [Learn more](../email/email-settings.md#send-to-suppressed-email-addresses)
+
 ## Download the suppression list {#download-suppression-list}
 
 <!--
