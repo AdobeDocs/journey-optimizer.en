@@ -34,7 +34,7 @@ For complete understanding, this information should be combined with the documen
 * The supplemental ID attribute must not be marked as Primary identity in the schema
 * The namespace used for the supplemental ID must be a non-person identifier namespace
 * After applying the non-person identity namespace to a schema, a new event or field group must be created; existing entities cannot be refreshed
-* For Read audience journeys with supplemental IDs: the reading rate is limited to 500 profiles per second per journey instance; only Unified Profile Service audiences are supported; supplemental ID must be a profile field (not an event/context field)
+* For Read audience journeys with supplemental IDs: the reading rate is limited to 500 profiles per second per journey instance; Unified Profile Service, CSV import, and Federated Audience Composition audiences are supported; supplemental ID must be a profile field (not an event/context field)
 * Downstream events in the same journey must use the same supplemental ID and namespace
 * Supplemental ID is disabled for Read audience journeys that use a business event
 
@@ -46,6 +46,7 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 * **Q: What is a supplemental identifier used for?** — It allows a single profile to enter and execute a journey multiple times simultaneously, with each instance scoped to a different secondary record such as a booking, subscription, or policy ID.
 * **Q: Which journey types support supplemental identifiers?** — Event-triggered journeys and Read audience journeys. Audience qualification journeys do not support supplemental identifiers.
+* **Q: Can I use a supplemental ID with a Federated Audience Composition audience?** — Yes. Federated Audience Composition audiences are supported, and Express Activation is enabled automatically for them.
 * **Q: How many concurrent journey instances can a profile have with supplemental identifiers?** — A maximum of 10 concurrent journey instances per profile.
 * **Q: Can I use the supplemental ID attributes for message personalization?** — Yes. Reference them via the Contextual attributes menu in the expression editor or personalization editor.
 * **Q: Does the supplemental ID need to be marked as a Primary identity in the schema?** — No. It must be marked as an Identity but must not be set as the Primary identity.

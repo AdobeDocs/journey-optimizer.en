@@ -55,6 +55,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Use decision policies in messages** page now includes a how-to video that shows how to use Decisioning to personalize your web page within the web visual editor. [Watch the video](../experience-decisioning/use-decision-policy.md#video)
 
+* The **Use supplemental identifiers in journeys** page now consistently states that Read audience journeys with supplemental IDs support Unified Profile Service, CSV import, and Federated Audience Composition audiences. [Read more](../building-journeys/supplemental-identifier.md#external-audiences)
+
 ## October 2026 {#october-2026}
 
 * The **Activate High throughput mode for API-triggered campaigns** page has a new **Configure High throughput API-triggered campaigns** section. It provides step-by-step guidance to set up High throughput yourself in the UI, with no request to Adobe Customer Care: create a dedicated IP pool and a High throughput email channel configuration for email, or a High throughput push channel configuration for push. [Read more](../campaigns/api-triggered-high-throughput.md#configure-high-throughput)
