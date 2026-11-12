@@ -14,6 +14,7 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 
 * Test an Orchestrated campaign in Draft status before publishing.
+* Test a channel activity with Run test, without sending the message.
 * Publish a campaign and understand the internal publication-time execution sequence.
 * Revert a published campaign back to draft status using Back to draft.
 * Confirm message sending for non-recurring campaigns after publishing.
@@ -33,6 +34,8 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * When testing a campaign in Draft status, all activities in the canvas are executed except **Save audience** activities and channel activities; there is no functional impact on your data or audience.
+* In test mode, the workflow stops when it reaches a channel activity, so activities that follow a channel activity are not reached; test each channel activity with Run test. The logic that follows a message activity can only be validated by publishing the campaign and monitoring live execution.
+* The test does not include the message rendering step; profiles can be excluded at send time on a rendering error even when the content is valid, and these exclusions might not appear in the test report.
 * For triggered orchestrated campaigns, testing requires sending an API call signal to continue the test; the system waits for this call to start the campaign.
 * The **Publish** button is disabled (greyed out) if there are unresolved errors; all errors must be fixed before publishing.
 * On successful publishing, the campaign moves from Draft to Live status and becomes "Read only".
@@ -62,6 +65,8 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: What happens when I test an Orchestrated campaign in Draft status?** — All activities in the canvas are executed except Save audience activities and channel activities, with no functional impact on your data or audience.
+* **Q: Why does the workflow stop during a test?** — In test mode, the workflow stops when it reaches a channel activity and does not continue to the activities that follow it; use Run test on the channel activity to simulate its execution without sending the message.
+* **Q: Why does nothing happen after I click Run test?** — The button remains available even if the message content contains an error; check the Alerts / Warning icon in the canvas toolbar for a content-related error, fix it, and run the test again.
 * **Q: What must be true before I can publish a campaign?** — All errors must be fixed; if the Publish button is disabled, you must check the error messages in the logs.
 * **Q: Are messages sent immediately after publishing a non-recurring campaign?** — No, by default message delivery is paused until you explicitly confirm the send from the channel activity's properties pane.
 * **Q: When can I use Back to draft?** — For scheduled campaigns awaiting execution before the scheduled time is reached (unless recurring with at least one execution already completed), or for live campaigns paused due to an execution error with no completed executions yet.
@@ -98,7 +103,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Level:** Intermediate
 * **First minimal step:** Open the campaign and select Start to test it in Draft status.
-* **Success check:** Each activity in the campaign is executed sequentially until the end of the canvas is reached.
+* **Success check:** Each activity in the campaign is executed sequentially until the end of the canvas is reached or until the workflow reaches a channel activity, where it stops so that you can run a test of that activity.
 * **Previous:** Create and schedule the Orchestrated campaign before testing and publishing it: Create and schedule Orchestrated campaigns with Journey Optimizer (orchestrated/create-orchestrated-campaign.md)
 * **Next:** Get insights on audience behavior and measure step performance after starting the campaign: Reporting for Orchestrated campaigns with Adobe Journey Optimizer (orchestrated/reporting-campaigns.md); Find answers to common questions about Orchestrated campaigns: Orchestrated campaigns Frequently Asked Questions (orchestrated/orchestrated-campaigns-faq.md)
 
