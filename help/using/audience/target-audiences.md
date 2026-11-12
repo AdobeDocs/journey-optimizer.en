@@ -62,7 +62,7 @@ You can select in campaigns and journeys any audience generated using segment de
 
     * **Activated records & identity stitching:** Every record in the audience is activated, including any duplicates. During the next Unified Profile Service profile export, these records go through identity stitching. As a result, the number of activated records may differ from the number of profiles after identity stitching.
 
-* **Custom upload (CSV) audiences unsupported in inbound channels** - Custom upload (CSV) audiences are not supported as targeting audiences for [inbound channel](../channels/gs-channels.md#inbound-channels) actions. Campaigns that use a custom upload audience with an inbound channel fail with an upstream error. To target these channels, select an audience [created using a segment definition](creating-a-segment-definition.md).
+* **Custom upload (CSV) audiences unsupported in inbound channels** - [Custom upload (CSV) audiences](custom-upload.md) are not supported as targeting audiences for [inbound channel](../channels/gs-channels.md#inbound-channels) actions. Campaigns that use a custom upload audience with an inbound channel fail with an upstream error. To target these channels, select an audience [created using a segment definition](creating-a-segment-definition.md).
 
 ## Audiences activation delay {#activation}
 
