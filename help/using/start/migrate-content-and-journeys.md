@@ -222,28 +222,6 @@ Your journey is now available in [!DNL Journey Optimizer], where you can review 
 
 ➡️ [Learn more on Journey creation](../building-journeys/journey-gs.md)
 
-## Track migration {#track-migration-progress}
-
-The workspace overview helps you keep track of every email or journey you have imported and quickly find the ones still awaiting action. A set of KPIs at the top of the screen gives you an at-a-glance count of items in each status:
-
-* **Total**: The overall number of items imported into the workspace.
-* **In Progress**: Items that are still being reviewed or mapped before they can be migrated.
-* **Migrated**: Items that were successfully converted and are available in [!DNL Journey Optimizer].
-* **Failed**: Items that could not be migrated and need attention.
-
-![Workspace overview with KPIs for total, in progress, migrated, and failed items](assets/onboarding-hub-4.png)
-
-A set of filters lets you narrow down the list of imported content so you can focus on a specific subset instead of scrolling through every item. Combine one or more of the following filters to find what you are looking for:
-
-* **[!UICONTROL Action required]**: The item has unresolved action items and needs your input before it can be migrated.
-* **[!UICONTROL Processing]**: The item is currently being migrated.
-* **[!UICONTROL Migrated]**: The item was successfully migrated and is available in [!DNL Journey Optimizer].
-* **[!UICONTROL Failed]**: The migration could not complete and needs attention.
-
-![Filter options for status, created date, and updated date in the workspace](assets/onboarding-hub-5.png)
-
-{{$include /help/_includes/do-not-localize/start/ai-augmented-migrate-content-and-journeys.md}}
-
 ## Import transaction email campaign {#import-campaign-content}
 
 Import transactional email messages from your connected marketing platform to create API-triggered campaign drafts in [!DNL Journey Optimizer]. Each imported email is converted into a draft that you can review, complete, and migrate once it is ready.
@@ -274,6 +252,27 @@ Before you start, make sure your source platform is connected to the workspace. 
 
 1. When the email is ready, select **[!UICONTROL Migrate]**, then select **[!UICONTROL View campaign]** to open the new campaign.
 
-    ![Migrated email content with the View email button highlighted](assets/onboarding-hub-10.png)
-
 Your transactional email is now available in [!DNL Journey Optimizer] as an API-triggered campaign. Review the campaign, then publish it when you are ready to start sending.
+
+## Track migration {#track-migration-progress}
+
+The workspace overview helps you keep track of every email or journey you have imported and quickly find the ones still awaiting action. A set of KPIs at the top of the screen gives you an at-a-glance count of items in each status:
+
+* **Total**: The overall number of items imported into the workspace.
+* **In Progress**: Items that are still being reviewed or mapped before they can be migrated.
+* **Migrated**: Items that were successfully converted and are available in [!DNL Journey Optimizer].
+* **Failed**: Items that could not be migrated and need attention.
+
+![Workspace overview with KPIs for total, in progress, migrated, and failed items](assets/onboarding-hub-4.png)
+
+A set of filters lets you narrow down the list of imported content so you can focus on a specific subset instead of scrolling through every item. Combine one or more of the following filters to find what you are looking for:
+
+* **[!UICONTROL Action required]**: The item has unresolved action items and needs your input before it can be migrated.
+* **[!UICONTROL Processing]**: The item is currently being migrated.
+* **[!UICONTROL Migrated]**: The item was successfully migrated and is available in [!DNL Journey Optimizer].
+* **[!UICONTROL Failed]**: The migration could not complete and needs attention.
+
+![Filter options for status, created date, and updated date in the workspace](assets/onboarding-hub-5.png)
+
+{{$include /help/_includes/do-not-localize/start/ai-augmented-migrate-content-and-journeys.md}}
+
