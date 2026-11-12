@@ -221,7 +221,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
 * **Suppression list override at Email action level** - Journey Optimizer now includes a per-action toggle that allows delivery to locally-suppressed addresses for a specific email action in a journey or campaign. This is designed for compliance scenarios where a communication must be demonstrably attempted, such as a required notification to an address that has previously bounced. Sending to suppressed addresses is not a recommended email practice, as it can damage your deliverability. This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
 
-  For more information, refer to the [detailed documentation](../configuration/manage-suppression-list.md#include-suppressed-addresses).
+  For more information, refer to the [detailed documentation](../reports/suppression-list.md#include-suppressed-addresses).
 
   Availability date: October 28, 2026
 

@@ -263,7 +263,7 @@ If you have a compliance requirement, you can deliver this email to the addresse
 >
 >This is not a recommended email practice, as it can damage your deliverability.
 
-[Learn how to include suppressed addresses in an email delivery](../configuration/manage-suppression-list.md#include-suppressed-addresses)
+[Learn how to include suppressed addresses in an email delivery](../reports/suppression-list.md#include-suppressed-addresses)
 
 +++
 

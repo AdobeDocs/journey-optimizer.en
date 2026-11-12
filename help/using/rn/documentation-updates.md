@@ -33,7 +33,9 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
-* The **Manage the suppression list** page now explains how to include the addresses on your suppression list in a specific email delivery for compliance scenarios (Limited Availability), while the Adobe global suppression list, consent, and opt-out are still honored. [Read more](../configuration/manage-suppression-list.md#include-suppressed-addresses)
+* The suppression categories and failure reasons are now described in the **Suppression list** page of the deliverability section, together with hard bounces, soft bounces, and spam complaints. The **Manage the suppression list** page now focuses on accessing, editing, and downloading the suppression list. [Read more](../reports/suppression-list.md#suppression-categories-and-reasons)
+
+* The **Suppression list** page now explains how to include the addresses on your suppression list in a specific email delivery for compliance scenarios (Limited Availability), while the Adobe global suppression list, consent, and opt-out are still honored. [Read more](../reports/suppression-list.md#include-suppressed-addresses)
 
 * All **Decision management** pages, including the API reference pages, now start with a banner that identifies them as covering the legacy capability and links to the equivalent **Decisioning** content. [Read more](../offers/get-started/starting-offer-decisioning.md)
 
@@ -107,7 +109,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
-* A note has been added to clarify that some email providers, such as Gmail, do not share user-level spam complaint data, so recipients who mark a message as spam are not automatically added to the suppression list. [Read more](../configuration/manage-suppression-list.md#suppression-categories-and-reasons)
+* A note has been added to clarify that some email providers, such as Gmail, do not share user-level spam complaint data, so recipients who mark a message as spam are not automatically added to the suppression list. [Read more](../reports/suppression-list.md#spam-complaints)
 
 * The **Create a direct mail message** page now clarifies extraction-file generation in the **Journey** and **Campaign** tabs: journey files follow the routing frequency and can result in multiple files per day, while campaign files are generated when each campaign execution starts. The page also explains how to ensure one file per day for journeys. [Read more](../direct-mail/create-direct-mail.md#create-dm-campaign)
 

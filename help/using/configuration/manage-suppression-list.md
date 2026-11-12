@@ -53,15 +53,25 @@ topic_v2:
 
 With [!DNL Journey Optimizer], you can monitor all the email addresses that are automatically excluded from sending in a journey or a campaign, such as hard bounces, soft bounces, and spam complaints.
 
-Such email addresses are automatically collected into the Journey Optimizer **suppression list**. A suppression list consists of addresses and domains to exclude from your audiences. It gathers email addresses and domains that are suppressed across all mailings in a single client environment, meaning specific to an organization ID associated with a sandbox ID.
+These email addresses are automatically collected into the Journey Optimizer **suppression list**. A suppression list consists of addresses and domains to exclude from your audiences. It gathers email addresses and domains that are suppressed across all mailings in a single client environment, meaning specific to an organization ID associated with a sandbox ID.
 
 Learn more about the suppression list concept and usage in [this section](../reports/suppression-list.md).
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Adobe keeps an updated list of known bad addresses which have been proven to be detrimental to engagement and mailing reputation, and ensures emails are not delivered to them. This list is managed in a global suppression list which is common across all Adobe customers. The addresses and domain names contained in the global suppression list are hidden. Only the number of excluded recipients is indicated in the delivery reports.
+>Adobe keeps an updated list of known bad addresses which have been proven to be detrimental to engagement and mailing reputation, and ensures emails are not delivered to them. This list is managed in a global suppression list which is common across all Adobe customers.
+>
+>The addresses and domain names contained in the global suppression list are hidden. Only the number of excluded recipients is indicated in the delivery reports.
+
+You can also manually add or remove email addresses and domains from the suppression list to control which recipients are excluded from your sending. [Learn how](#add-addresses-and-domains)
 
 In addition, you can leverage the Journey Optimizer **Suppression REST API** to control your outgoing messages using suppression and allow lists. [Learn how to work with the Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression){target="_blank"}
+
+>[!NOTE]
+>
+>If you have a compliance requirement, you can include the addresses on your suppression list in a specific email delivery. [Learn more](../reports/suppression-list.md#include-suppressed-addresses)
+>
+>This capability is available in Limited Availability.
 
 ## Access the suppression list {#access-suppression-list}
 
@@ -83,47 +93,13 @@ You can filter on the **[!UICONTROL Suppression category]**, **[!UICONTROL Addre
 
 ![](assets/suppression-list-filtering-example.png)
 
-
-## Understand failure reasons {#suppression-categories-and-reasons}
-
-When a message fails to be delivered to an email address, [!DNL Journey Optimizer] determines why the delivery failed and associates it with a **[!UICONTROL Suppression category]**.
-
-The suppression categories are as follows:
-
-* **Hard**: A hard bounce indicates an invalid email address (i.e. an email address that does not exist). This involves a bounce message from the receiving email server that explicitly states that the address is invalid. The email address is immediately sent to the suppression list.
-
-    When the error is the result of a spam complaint, it also falls into the **Hard** category. The email address of the recipient who issued the complaint is immediately sent to the suppression list.
-
-    >[!NOTE]
-    >
-    >Not all email providers share user-level spam complaint (feedback loop) data. In particular, **Gmail** does not, unlike Yahoo Mail or Microsoft Outlook. Gmail recipients who mark a message as spam are therefore **not** automatically added to the suppression list. To monitor Gmail deliverability, use open and click rate trends and [Google Postmaster Tools](https://postmaster.google.com/){target="_blank"}.
-
-* **Soft**: A soft bounce is a temporary email bounce that occurred for a valid email address. The email address is added to the suppression list after several retries. Soft errors send an address to the suppression list once the error counter reaches the limit threshold. [Learn more about retries](retries.md)
-
-* **Manual**: Manual errors have been added manually to the suppression list. [Learn more](#add-addresses-and-domains)
-
 For each email address that is listed, you can also check the **[!UICONTROL Type]** (email or domain), **[!UICONTROL Reason]** for excluding it, who added it, and the date/time it was added to the suppression list.
 
-Possible reasons for a delivery failure are:
+Learn more about suppression categories and failure reasons in [this section](../reports/suppression-list.md#suppression-categories-and-reasons).
 
-| Reason | Description | Category |
-| --- | --- | --- |
-| **[!UICONTROL Invalid Recipient]** | The recipient's address is invalid or does not exist. | Hard |
-| **[!UICONTROL Soft Bounce]** | The message soft bounced for a reason other than the soft errors listed in this table, such as when sending over the allowed rate recommended by an ISP. | Soft |
-| **[!UICONTROL DNS Failure]** | The message bounced due to a DNS failure. | Soft |
-| **[!UICONTROL Mailbox Full]** | The message bounced due to the mailbox of the recipient being full and unable to accept more messages. | Soft |
-| **[!UICONTROL Relaying Denied]** | The message was blocked by the receiver because relaying is not allowed. | Soft |
-| **[!UICONTROL Challenge-Response]** | The message is a challenge-response probe. | Soft |
-| **[!UICONTROL Spam Complaint]** | The message was blocked because marked as a spam by the recipient. | Hard |
+## Suppression rules {#suppression-rules}
 
->[!NOTE]
->
->Unsubscribed users are not receiving emails from [!DNL Journey Optimizer], therefore their email addresses cannot be sent to the suppression list. Their choice is handled at the Experience Platform level. [Learn more about opting-out](../privacy/opt-out.md)
-
-
-### Suppression rules  {#suppression-rules}
-
-From the **[!UICONTROL Suppression list]** view, you can also edit the retry parameter associated to the suppression rules from the **[!UICONTROL Edit suppression rules]** button. Use this option to update the retry threshold for the current sandbox. [Learn more about retries](retries.md).
+From the **[!UICONTROL Suppression list]** view, you can also edit the retry parameter associated to the suppression rules from the **[!UICONTROL Edit suppression rules]** button. Use this option to update the retry threshold for the current sandbox. [Learn more about retries](retries.md)
 
 
 ## Add addresses and domains to the suppression list{#add-addresses-and-domains}
@@ -140,13 +116,16 @@ From the **[!UICONTROL Suppression list]** view, you can also edit the retry par
 
 When a message fails to be delivered to an email address, this address is automatically added to the suppression list based on the defined suppression rule or bounce count.
 
-However, you can also manually populate the [!DNL Journey Optimizer] suppression list to exclude specific email addresses and/or domains from your sending.
+You can also manually populate the [!DNL Journey Optimizer] suppression list to exclude specific email addresses and/or domains from your sending. This section explains how to add addresses and domains to the suppression list.
 
 >[!NOTE]
 >
 >It can take up to 60 minutes for [!DNL Journey Optimizer] to take into account the suppressed addresses in outgoing emails.
 
-You may add email addresses or domains [one at a time](#add-one-address-or-domain), or [in bulk mode](#upload-csv-file) through a CSV file upload.
+You may add email addresses or domains in two ways:
+
+* [one at a time](#add-one-address-or-domain);
+* [in bulk mode](#upload-csv-file) through a CSV file upload.
 
 ### Add one address or domain {#add-one-address-or-domain}
 
@@ -266,51 +245,6 @@ To retrieve those addresses, run a specific query with custom parameters, based 
 Once the affected email addresses are identified, filter the suppression list to display them. For example if an ISP outage happened from Nov 11, 2022 to Nov 13, 2022 on the **test.com** domain, filter the addresses added to the suppression list in that timeframe, as below:
 
 You can then remove quarantined email addresses from the suppression list using the **[!UICONTROL Delete]** button.
-
-## Include suppressed addresses in an email delivery {#include-suppressed-addresses}
-
->[!CONTEXTUALHELP]
->id="ajo_admin_include_suppression_list"
->title="Include suppression list in email delivery"
->abstract="When on, this email is also delivered to the addresses on your suppression list, including past hard bounces and spam complaints. Use this option only when you have a compliance requirement, as it can damage your deliverability. The Adobe global suppression list, consent, and opt-out choices are still honored."
-
->[!AVAILABILITY]
->
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
-
-By default, [!DNL Journey Optimizer] excludes from every email delivery the addresses that are on your suppression list and on the Adobe global suppression list.
-
-If you have a compliance requirement, for example when a communication must be demonstrably attempted to an address that previously bounced, you can include the addresses on your suppression list in a specific email delivery. This option is set at the email action level, in a campaign or in a journey.
-
->[!CAUTION]
->
->Sending to suppressed addresses is not a recommended email practice. Use this option only when you have a compliance requirement.
->
->Inbox placement for the send may drop, and the sending reputation of the subdomain and its IPs can be damaged. Adobe recommends isolating this traffic on a dedicated subdomain or IP pool and monitoring deliverability closely.
-
-To include suppressed addresses in an email delivery, follow these steps:
-
-1. From the settings of the email action in your campaign or journey, go to the **[!UICONTROL Delivery]** section.
-
-1. Turn on the **[!UICONTROL Include suppression list in email delivery]** option.
-
-    ![Include suppression list in email delivery option in the Delivery section of an email action](assets/suppression-list-include-toggle.png){width="80%"}
-
-1. In the confirmation dialog, review the impacts and select **[!UICONTROL I agree]**. If you select **[!UICONTROL Cancel]**, the option remains turned off.
-
-    ![Confirmation dialog displayed when turning on the Include suppression list in email delivery option](assets/suppression-list-include-confirmation.png){width="80%"}
-
-When this option is on, the following rules apply to that email action only:
-
-* The email is delivered to all the addresses on your suppression list, whatever their suppression category (hard bounces, spam complaints, soft bounces, or manual entries).
-* The Adobe global suppression list is still honored: addresses on that list remain excluded.
-* Consent and opt-out choices are always honored: unsubscribed recipients do not receive the email.
-
-You can turn off the option at any time. No confirmation is required.
-
->[!NOTE]
->
->This option is different from the **[!UICONTROL Send to suppressed email addresses]** option of the email channel configuration, which applies to transactional messages and to addresses suppressed due to spam complaint only. [Learn more](../email/email-settings.md#send-to-suppressed-email-addresses)
 
 ## Download the suppression list {#download-suppression-list}
 
