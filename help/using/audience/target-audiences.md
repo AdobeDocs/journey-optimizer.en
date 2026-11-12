@@ -52,15 +52,15 @@ You can select in campaigns and journeys any audience generated using segment de
 
 * **Healthcare Shield or Privacy and Security Shield** - The use of audiences and attributes from audience composition is currently unavailable with Healthcare Shield or Privacy and Security Shield. [Learn how to use audiences enrichment attributes in [!DNL Journey Optimizer]](../audience/about-audiences.md#enrichment)
 
-* **Custom upload & Federated Audience Composition** - For Custom upload and Federated Audience Composition audiences, please note the following guardrails:
+* **Custom upload & Federated Audience Composition** - For Custom upload and Federated Audience Composition audiences, note the following guardrails:
 
     * **Preview and proof support:** Currently, preview and proof are not supported for audiences created using CSV upload or Federated Audience Composition. Keep this in mind when planning your campaigns.
 
-    * **Targeting new profiles:** When a match is not found between a record and a Unified Profile Service profile, a new empty profile is created. This profile is linked to the enrichment attributes which are stored in the data lake. Because this new profile is empty, targeting fields typically used in [!DNL Journey Optimizer] (e.g., personalEmail.address, mobilePhone.number) are empty. Therefore, these fields cannot be used for targeting.
+    * **Targeting new profiles:** When a match is not found between a record and a profile in Real-time Customer Profile, a new empty profile is created. This profile is linked to the enrichment attributes which are stored in the data lake. Because this new profile is empty, targeting fields typically used in [!DNL Journey Optimizer] (e.g., personalEmail.address, mobilePhone.number) are empty. Therefore, these fields cannot be used for targeting.
 
         To solve this, you can specify the "execution field" (or "execution address" depending on the channel) in the channel configuration as 'identityMap'. This ensures that the attribute chosen as the identity at audience creation will be the one used for targeting in [!DNL Journey Optimizer].
 
-    * **Activated records & identity stitching:** Every record in the audience is activated, including any duplicates. During the next Unified Profile Service profile export, these records go through identity stitching. As a result, the number of activated records may differ from the number of profiles after identity stitching.
+    * **Activated records & identity stitching:** Every record in the audience is activated, including any duplicates. During the next Real-time Customer Profile export, these records go through identity stitching. As a result, the number of activated records may differ from the number of profiles after identity stitching.
 
 * **Custom upload (CSV) audiences unsupported in inbound channels** - [Custom upload (CSV) audiences](custom-upload.md) are not supported as targeting audiences for [inbound channel](../channels/gs-channels.md#inbound-channels) actions. Campaigns that use a custom upload audience with an inbound channel fail with an upstream error. To target these channels, select an audience [created using a segment definition](creating-a-segment-definition.md).
 
@@ -80,9 +80,9 @@ You can leverage audiences in **[!DNL Journey Optimizer]** in different ways:
 
 * Use a **Read audience** orchestration activity in a journey to make all individuals in the audience enter the journey and receive the messages included in your journey. Let's say you have a "silver customer" audience. With this activity, you can make all silver customers enter a journey. You can then send them a series of personalized messages. [Learn how to configure a Read audience activity](../building-journeys/read-audience.md#configuring-segment-trigger-activity). To segment, exclude, or merge branches after they enter, see [Audience targeting in journeys](../building-journeys/read-audience.md#audience-targeting-in-journeys).
 
-    After entry, use **Condition** activities to [segment by attributes or behavior, exclude part of the population, or merge branches](../building-journeys/read-audience.md#audience-targeting-in-journeys).
+    After entry, use **Optimize** activities (Condition method) to [segment by attributes or behavior, exclude part of the population, or merge branches](../building-journeys/read-audience.md#audience-targeting-in-journeys).
 
-    For journeys using audiences from audience composition or custom upload, profile attributes are as fresh as the last batch evaluation at journey entry. However, after a **Wait** activity, the journey refreshes profile attributes from the Unified Profile Service (UPS), fetching the latest available data, which means profile attributes may change during journey execution. [Learn more about profile refresh after a Wait activity](../building-journeys/wait-activity.md#profile-refresh)
+    For journeys using audiences from audience composition or custom upload, profile attributes are as fresh as the last batch evaluation at journey entry. However, after a **Wait** activity, the journey refreshes profile attributes from Real-time Customer Profile, fetching the latest available data, which means profile attributes may change during journey execution. [Learn more about profile refresh after a Wait activity](../building-journeys/wait-activity.md#profile-refresh)
 
 * Use the **Optimize** activity in a journey to build conditions based on audience membership. [Learn how to use audiences in conditions](../building-journeys/conditions.md#using-a-segment).
 
@@ -90,13 +90,13 @@ You can leverage audiences in **[!DNL Journey Optimizer]** in different ways:
 
     >[!NOTE]
     >
-    >Due to the batch nature of audiences created using composition workflows, custom upload or Federated Audience Composition, you cannot target these audiences in an "Audience Qualification" activity. Only audiences created using segment definitions can be leveraged in this activity.
+    >Due to the batch nature of audiences created using composition workflows, custom upload or Federated Audience Composition, you cannot target these audiences in an **Audience Qualification** activity. Only audiences created using segment definitions can be leveraged in this activity.
 
 ## Activation of non supported audience types in [!DNL Journey Optimizer]
 
-Only audiences generated using **segment definition**, **audience compositions**, **custom upload (CSV file)**, and **Federated audience composition** can be targeted directly in Journey Optimizer journeys and campaigns. [Learn more on available audience types](../audience/about-audiences.md#types)
+Only audiences generated using **segment definition**, **composition workflows**, **custom upload (CSV file)**, and **Federated Audience Composition** can be targeted directly in Journey Optimizer journeys and campaigns. [Learn more on available audience types](../audience/about-audiences.md#types)
 
-If you need to target profiles from a non supported audience, such as a Customer Journey Analytics audience, you need to wrap it in a new segment definition in the Audience portal. Detailed information on how to add audiences in a segment definition is available in the [Segment Builder documentation](https://experienceleagu;e.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#adding-audiences){target="_blank"}
+If you need to target profiles from a non supported audience, such as a Customer Journey Analytics audience, you need to wrap it in a new segment definition in the Audience portal. Detailed information on how to add audiences in a segment definition is available in the [Segment Builder documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#adding-audiences){target="_blank"}
 
 Once done, wait for the segmentation evaluation to complete to use it in your journeys and campaigns.
 

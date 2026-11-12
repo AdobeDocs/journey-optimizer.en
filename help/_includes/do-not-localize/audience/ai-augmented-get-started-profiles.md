@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **Real-time Customer Profile**: Capability that integrates customer attributes and events from online, offline, and pseudonymous sources into a single, unified profile *(product-specific)*
-* **Engageable Profile**: A record of information representing an individual, stored in the Profile Service and engaged by journeys or campaigns; the key license metric for Journey Optimizer *(product-specific)*
+* **Engageable Profile**: A record of information representing an individual, stored in the Profile Service that you have attempted to engage using Journey Optimizer capabilities over the past 12 months; the key license metric for Journey Optimizer *(product-specific)*
 * **Addressable Audience**: The total audience from which Engageable Profiles are calculated *(product-specific)*
 * **Data Ingestion**: Connecting to data sources to ingest behavioral, transactional, financial, and operational data in real-time or through batch uploads to keep profiles updated *(product-specific)*
 * **Merge policies**: The rules used to determine how data is prioritized and what data is combined to create the unified view *(product-specific)*
@@ -38,12 +38,12 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: Real-time Customer Profile
-* Do not confuse: "Real-time Customer Profile" (the unified customer data capability) ≠ "Engageable Profile" (a record stored in the Profile Service that has been engaged by journeys or campaigns; the key license metric)
+* Do not confuse: "Real-time Customer Profile" (the unified customer data capability) ≠ "Engageable Profile" (a record stored in the Profile Service that you have attempted to engage using Journey Optimizer capabilities over the past 12 months; the key license metric)
 
 **FAQ:**
 
 * **Q: Are profiles created inside Journey Optimizer?** — No, they are automatically created or updated in Adobe Experience Platform when data is ingested.
-* **Q: What is an Engageable Profile?** — A record representing an individual, stored in the Profile Service and engaged by journeys or campaigns; it is Journey Optimizer's key license metric.
+* **Q: What is an Engageable Profile?** — A record representing an individual, stored in the Profile Service that you have attempted to engage using Journey Optimizer capabilities over the past 12 months; it is Journey Optimizer's key license metric.
 * **Q: How is the Engageable Profiles count scoped over time and per sandbox?** — It reflects unique profiles engaged over a rolling 12-month window and counts a profile once per sandbox even if it enters multiple journeys or campaigns.
 * **Q: Where do I monitor the Engageable Profiles count?** — From Administration > License Usage.
 * **Q: Why is my Profiles dashboard not visible?** — If your organization has no active Profile datasets or merge policies yet, the dashboard is not shown and the Overview tab displays links to Adobe Experience Platform documentation.

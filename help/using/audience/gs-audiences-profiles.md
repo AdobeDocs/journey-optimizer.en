@@ -51,3 +51,5 @@ Adobe Journey Optimizer provides robust tools for creating, managing, and enrich
 Learn about unified customer profiles and audiences in Journey Optimizer in video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432671?quality=12)
+
+{{$include /help/_includes/do-not-localize/audience/ai-augmented-gs-audiences-profiles.md}}

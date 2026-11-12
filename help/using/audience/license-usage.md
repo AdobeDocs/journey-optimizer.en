@@ -50,7 +50,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-The [!DNL Adobe Journey Optimizer] [user interface](../start/user-interface.md) provides a dashboard that displays important information about your organization's license usage, as captured during a daily snapshot.
+The [!DNL Adobe Journey Optimizer] [user interface](../start/user-interface.md) provides a dashboard that displays important information about your organization's license usage, as captured during a daily snapshot. The dashboard is not updated in real time: changes appear after the next snapshot.
 
 To access this dashboard, go to **[!UICONTROL Administration]** > **[!UICONTROL License Usage]**. This opens the **[!UICONTROL Overview]** tab, which displays the dashboard.
 
@@ -74,7 +74,7 @@ If you observe a sudden spike in the Engageable Profiles count (for example, pro
 
 ### Understanding the increase
 
-The Engageable Profiles metric reflects the number of unique profiles engaged by journeys or campaigns over the past 12 months. A sudden increase may result from:
+The Engageable Profiles metric reflects the number of unique profiles engaged by journeys, campaigns, or decisioning over the past 12 months. A sudden increase may result from:
 
 * Large audiences being targeted by new journeys or campaigns
 * Changes in datasets enabled for Profile Service
@@ -86,7 +86,7 @@ To address this issue, follow these steps:
 
 1. **Understand profile counting logic:**
 
-    * Engageable Profiles are calculated based on unique profiles engaged by journeys or campaigns over the past 12 months.
+    * Engageable Profiles are calculated based on unique profiles engaged by journeys, campaigns, or decisioning over the past 12 months.
     * If a profile enters multiple journeys, it is counted as one Engageable Profile for that sandbox.
     * The metric cannot decrease unless there is no engagement with certain profiles for over 12 months or if pseudonymous profiles are stitched to known ones.
     * Engageable Profiles are calculated using a customer's Addressable Audience.
@@ -107,7 +107,7 @@ To address this issue, follow these steps:
 
     * Delete pseudonymous profiles if necessary. Note that this action affects both Journey Optimizer and Real-Time Customer Data Platform.
     * Learn more about [Pseudonymous Profile data expiration](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"} in Real-Time Customer Profile Guide.
-    * **Note:** Pseudonymous Profile data expiration cannot be configured through the Platform UI or APIs. You must contact support to enable this feature.
+    * **Note:** You can set Pseudonymous Profile data expiration from the **[!UICONTROL Settings]** of the Profile dashboard in Experience Platform. Profile deletion is permanent.
 
 5. **Monitor dataset changes:**
 
