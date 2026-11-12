@@ -37,6 +37,7 @@ For complete understanding, this information should be combined with the documen
 * For Read audience journeys with supplemental IDs: the reading rate is limited to 500 profiles per second per journey instance; Unified Profile Service, CSV import, and Federated Audience Composition audiences are supported; supplemental ID must be a profile field (not an event/context field)
 * Downstream events in the same journey must use the same supplemental ID and namespace
 * Supplemental ID is disabled for Read audience journeys that use a business event
+* Express Activation cannot be changed after the external audience is created
 
 **Terminology:**
 * Canonical name: Supplemental identifier — Acronym: none — variants: supplemental ID, secondary identifier
@@ -47,6 +48,8 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is a supplemental identifier used for?** — It allows a single profile to enter and execute a journey multiple times simultaneously, with each instance scoped to a different secondary record such as a booking, subscription, or policy ID.
 * **Q: Which journey types support supplemental identifiers?** — Event-triggered journeys and Read audience journeys. Audience qualification journeys do not support supplemental identifiers.
 * **Q: Can I use a supplemental ID with a Federated Audience Composition audience?** — Yes. Federated Audience Composition audiences are supported, and Express Activation is enabled automatically for them.
+* **Q: What is Express Activation and when do I need it for supplemental IDs?** — Express Activation (the `expressActivation` flag of the External Audience API) lets Journey Optimizer activate every record of an external audience independently, without deduplication by profile ID. You need it when the audience intentionally contains several rows for the same profile ID, each with a different supplemental ID. Federated Audience Composition audiences have it enabled automatically. For other external audiences, such as CSV, you must set `expressActivation: true` in the External Audience API payload at creation time. The Audience Portal UI does not support this flag.
+* **Q: What happens if an external audience is created without Express Activation?** — Journey Optimizer deduplicates records by profile ID. Only one row per profile is admitted, and the other rows, with their supplemental IDs, are not activated.
 * **Q: How many concurrent journey instances can a profile have with supplemental identifiers?** — A maximum of 10 concurrent journey instances per profile.
 * **Q: Can I use the supplemental ID attributes for message personalization?** — Yes. Reference them via the Contextual attributes menu in the expression editor or personalization editor.
 * **Q: Does the supplemental ID need to be marked as a Primary identity in the schema?** — No. It must be marked as an Identity but must not be set as the Primary identity.
