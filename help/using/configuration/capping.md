@@ -109,7 +109,7 @@ Example:
     "GET"
   ],
   "services": {
-    "dataSource": {
+    "action": {
       "rating": {
         "maxCallsCount": 500,
         "periodInMs": 1000
@@ -145,6 +145,8 @@ The potential errors are:
 * **ERR_ENDPOINTCONFIG_111**: capping config: can't create endpoint config: invalid payload
 * **ERR_ENDPOINTCONFIG_112**: capping config: can't create endpoint config: expecting a JSON payload
 * **ERR_AUTHORING_ENDPOINTCONFIG_1**: invalid service name `<!--<given value>-->`: must be 'dataSource' or 'action'
+* **ERR_AUTHORING_ENDPOINTCONFIG_2**: endpoint not whitelisted: please contact your administrator
+  * If you see this error when attempting to configure a capping rule for a custom action, be sure you are setting "action" (not "dataSource") as the service name in the create or update payload. See example above.
 
 The potential warning is:
 
