@@ -49,6 +49,10 @@ Keep the following in mind:
 * A sandbox can contain up to 50 audiences imported from CSV files. Federated Audience Composition audiences are not counted.
 * By default, an imported audience expires after 30 days, and the expiration is reset if you update the audience. You can set a custom expiration.
 
+>[!CAUTION]
+>
+>Custom upload audiences (CSV upload) cannot be used to target inbound channel actions, including in-app messages and web or code-based experiences. [Learn more about audience guardrails](target-audiences.md#guardrails)
+
 ![](assets/import-audience.png)
 
 Detailed information on how to import audiences is available in Adobe Experience Platform [Segmentation Service documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}.
@@ -56,10 +60,6 @@ Detailed information on how to import audiences is available in Adobe Experience
 >[!NOTE]
 >
 >For custom upload audiences (CSV upload) and other external audiences, **[!UICONTROL Incremental read]** is not functionally supported today. This option, available in the recurring options of the [!UICONTROL Read audience] activity, normally processes only the profiles that entered the audience since the last run. For these audiences, the **entire audience** is retrieved on each recurrence, regardless of the Incremental read toggle setting. [Learn more about Incremental read](../building-journeys/read-audience.md)
-
->[!CAUTION]
->
->Custom upload audiences (CSV upload) cannot be used to target inbound channel actions, including in-app messages and web or code-based experiences. [Learn more about audience guardrails](target-audiences.md#guardrails)
 
 Learn how to upload audiences in CSV format in video:
 
