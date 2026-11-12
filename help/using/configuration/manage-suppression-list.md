@@ -97,10 +97,7 @@ For each email address that is listed, you can also check the **[!UICONTROL Type
 
 Learn more about suppression categories and failure reasons in [this section](../reports/suppression-list.md#suppression-categories-and-reasons).
 
-## Suppression rules {#suppression-rules}
-
 From the **[!UICONTROL Suppression list]** view, you can also edit the retry parameter associated to the suppression rules from the **[!UICONTROL Edit suppression rules]** button. Use this option to update the retry threshold for the current sandbox. [Learn more about retries](retries.md)
-
 
 ## Add addresses and domains to the suppression list{#add-addresses-and-domains}
 
