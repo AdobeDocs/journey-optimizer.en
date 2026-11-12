@@ -93,7 +93,7 @@ To set up your Web In-app channel, follow the steps below:
         
         | Package | Trigger | Definition |
         |---|---|---|
-        | Platform | Sent data to Platform | Triggered when the mobile app issues an edge experience event to send data to Adobe Experience Platform. Usually the API call [sendEvent](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent){target="_blank"} from the AEP Edge extension.|
+        | Platform | Sent data to Platform | Triggered when the website issues an Experience Event to send data to Adobe Experience Platform. Usually the [sendEvent](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendevent/overview){target="_blank"} command from the Web SDK.|
         | Manual | Manual trigger | Two associated data elements: a key, which is a constant that defines the data set (e.g., gender, color, price), and a value, which is a variable that belongs to the set (e.g., male/female, green, 100). |
 
         +++
