@@ -167,7 +167,7 @@ To add an In-app message in a journey, follow these steps:
 
         Frequency settings also apply to test profiles after the journey is published.
 
-1. You can add one or more inbound actions to your in-app message by clicking the **[!UICONTROL Add action]** button. [Learn more](../building-journeys/journey-action.md#multi-action)
+1. You can add one or more inbound actions to your in-app message by clicking the **[!UICONTROL Add action]** button. [Learn more](../delivery/multiple-inbound-actions.md)
 
 1. Go back to the journey canvas. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
 

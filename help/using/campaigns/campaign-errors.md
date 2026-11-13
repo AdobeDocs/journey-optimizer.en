@@ -52,7 +52,7 @@ See also [Configure the campaign action](campaign-action.md).
 | **CJMCMP-2202-400** | The message has not been published | The message is not published. Publish the message, then activate the campaign. [Learn more](review-activate-campaign.md) |
 | **CJMCMP-2105-400** | The {channel} channel is not allowed for the provided campaign type | Select a channel that the campaign type supports. [Learn more](campaign-action.md) |
 | **CJMCMP-2115-400** | The {channel} channel bound is not allowed | Select a channel that the campaign type supports. [Learn more](campaign-action.md) |
-| **CJMCMP-2074-400** | Priority can only be in the range of 0-100. Priority is disabled for Transactional campaigns. | Enter a priority from 0 to 100. Do not set a priority for a transactional campaign. [Learn more](campaign-action.md#multi-action) |
+| **CJMCMP-2074-400** | Priority can only be in the range of 0-100. Priority is disabled for Transactional campaigns. | Enter a priority from 0 to 100. Do not set a priority for a transactional campaign. [Learn more](../delivery/multiple-inbound-actions.md) |
 
 ## Schedule and approval {#schedule}
 

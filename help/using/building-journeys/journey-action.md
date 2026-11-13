@@ -64,7 +64,7 @@ It consolidates all legacy native built-in channels — Email, Push, Mobile mess
 Use the **Action** activity to:
 
 * Configure any built-in channel action from a single, streamlined interface.
-* Combine several inbound experiences into one [multi-action group](#multi-action).
+* Combine several inbound experiences into one [multi-action group](../delivery/multiple-inbound-actions.md).
 * Add multiple outbound channels to a single action and use [channel optimization](channel-optimization.md) to automatically select the best channel per customer (Limited Availability).
 * Apply [optimization](../content-management/gs-message-optimization.md), [multilingual content](../content-management/multilingual-gs.md), and channel-specific settings to any action.
 
@@ -131,7 +131,7 @@ To add a built-in channel action to your journey using the **[!UICONTROL Action]
 
    ![Actions tab in Administration menu showing custom and Adobe actions](assets/journey-action-actions-tab.png)
 
-1. If you selected an inbound channel, you can add multiple actions. [Learn more](#multi-action)
+1. If you selected an inbound channel, you can add multiple actions. [Learn more](../delivery/multiple-inbound-actions.md)
 
 1. If you selected an outbound channel (Email, Push, Mobile message), you can add multiple channels and use channel optimization to automatically select the best channel per customer. [Learn more](channel-optimization.md)
 
@@ -322,45 +322,9 @@ For in-app messages, you can use the **[!UICONTROL Edit triggers]** button to ch
 >title="Add multiple inbound actions"
 >abstract="A single journey can include several inbound actions. This capability enables you to deliver multiple Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, each action containing a specific content."
 
-To simplify your journey orchestration, you can define several inbound actions inside a single journey action.
+You can define several inbound actions inside a single journey action, to deliver multiple Code-based experiences, In-app messages, Content Cards, or Web actions to different locations at the same time. To configure a multi-action group, select **[!UICONTROL Multi action]** as the action type.
 
->[!NOTE]
->
->This capacity is available for inbound channels. For outbound channels (Email, Push, Mobile message), use [channel optimization](channel-optimization.md) to add multiple channels and automatically select the best channel per customer.
-
-This capacity enables you to deliver various Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, without the need to create multiple journey actions. It makes the deployment of your journey easier and allows for smoother reporting, with all the data consolidated into one single journey.
-
-For example, you can send a code-based experience to multiple endpoints with slightly different contents. To do this, create multiple code-based actions within the same journey action, each with a different endpoint configuration.
-
-To define several inbound actions in a single journey action node, follow the steps below.
-
-1. Start your journey with an [Event](general-events.md) or a [Read Audience](read-audience.md) activity.
-
-1. From the **[!UICONTROL Actions]** section of the palette, drag and drop an **[!UICONTROL Action]** activity into the canvas.
-
-1. Select **[!UICONTROL Multi action]** as the action type.
-
-   ![Multi-action activity in journey palette under Orchestration](assets/journey-multi-action.png)
-
-1. Add a label if needed and select **[!UICONTROL Configure action]**.
-
-   ![Multi-action configuration pane with label and description fields](assets/journey-multi-action-configure.png){width="60%"}
-
-1. You are directed to the **[!UICONTROL Actions]** tab of the journey action configuration screen.
-
-   ![Multi-action configuration showing list of actions to execute](assets/journey-multi-action-configuration.png){width="70%"}
-
-1. Select an inbound action (**Code-based experience**, **In-app message**, **Content Card** or **Web**) from the **[!UICONTROL Actions]** section.
-
-1. Select the channel configuration and define a specific content for that action.
-
-1. Use the **[!UICONTROL Add action]** button to select another inbound action from the drop-down list.
-
-    ![Add action button to include additional actions in multi-action activity](assets/journey-multi-action-add.png){width="80%"}
-
-1. Proceed similarly to add more actions. You can add up to 10 inbound actions in a journey action group.
-
-Once the journey is [live](publish-journey.md), all actions are activated simultaneously.
+[Learn how to add multiple inbound actions](../delivery/multiple-inbound-actions.md)
 
 ## Update a live content {#update-live-content}
 

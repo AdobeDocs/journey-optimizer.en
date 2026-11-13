@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Add multiple inbound actions** content is now available on a single page in the **Execution settings** section, covering both journeys and action campaigns. The **Action** activity and **Configure the campaign action** pages now link to it. [Read more](../delivery/multiple-inbound-actions.md)
+
 * The suppression categories and failure reasons are now described in the **Suppression list** page of the deliverability section, together with hard bounces, soft bounces, and spam complaints. The **Manage the suppression list** page now focuses on accessing, editing, and downloading the suppression list. [Read more](../reports/suppression-list.md#suppression-categories-and-reasons)
 
 * The **Suppression list** page now explains how to include the addresses on your suppression list in a specific email delivery for compliance scenarios (Limited Availability), while the Adobe global suppression list, consent, and opt-out are still honored. [Read more](../reports/suppression-list.md#include-suppressed-addresses)

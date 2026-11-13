@@ -106,7 +106,7 @@ To add a **Web** activity to a journey, follow these steps:
 
     ![](assets/web-activity-configuration.png)
 
-1. You can add one or more inbound actions to your web experience by clicking the **[!UICONTROL Add action]** button. [Learn more](../building-journeys/journey-action.md#multi-action)
+1. You can add one or more inbound actions to your web experience by clicking the **[!UICONTROL Add action]** button. [Learn more](../delivery/multiple-inbound-actions.md)
 
 1. Go back to the journey canvas. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
 

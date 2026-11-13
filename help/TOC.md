@@ -260,6 +260,7 @@ nudge: yes
   + [Send using waves](using/delivery/send-using-waves.md)
   + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
   + [Channel optimization](using/building-journeys/channel-optimization.md)
+  + [Add multiple inbound actions](using/delivery/multiple-inbound-actions.md)
 + Test & approve {#test}
   + [Test, validate & approve](/help/rp_landing_pages/test-landing-page.md)
   + Preview & test content {#preview-test}
