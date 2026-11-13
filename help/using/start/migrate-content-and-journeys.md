@@ -222,6 +222,38 @@ Your journey is now available in [!DNL Journey Optimizer], where you can review 
 
 ➡️ [Learn more on Journey creation](../building-journeys/journey-gs.md)
 
+## Migrate transactional email campaign {#import-campaign-content}
+
+Import transactional email messages from your connected marketing platform to create API-triggered campaign drafts in [!DNL Journey Optimizer]. Each imported email is converted into a draft that you can review, complete, and migrate once it is ready.
+
+Before you start, make sure your source platform is connected to the workspace. Learn more in [Set up a connection](#set-up-a-connection).
+
+1. From the **[!UICONTROL Campaigns]** tab, select **[!UICONTROL Browse from connection]** to pick transactional emails directly from your connected marketing platform.
+
+    ![Campaigns tab of the migration workspace with the Browse from connection option](assets/migrate-campaign-1.png)
+
+1. Select one or more emails from the list, then select **[!UICONTROL Import]**. 
+
+    The imported emails appear in the workspace overview with the **[!UICONTROL Action required]** status until you complete the remaining steps.
+
+    ![List of transactional email messages to import, with one email selected and the Import button](assets/migrate-campaign-2.png)
+
+1. Open the imported email and select the **[!UICONTROL Configuration]** to apply to the email. Learn more about [configurations](../configuration/channel-surfaces.md).
+
+1. Select a template from the **[!UICONTROL Template]** list. Learn more about [Content template](../content-management/use-content-templates.md).
+
+    ![Imported campaign with the Template list highlighted in the Action items pane](assets/migrate-campaign-3.png)
+
+1. Review the tracking settings. You can track email opens, clicks on links and buttons, or both.
+
+1. Under **[!UICONTROL Audience]**, select the identity namespace to use. The namespace identifies the recipients of the email, for example an email address or a customer ID.
+
+    ![Tracking options and Identity namespace list in the Audience section of the Action items pane](assets/migrate-campaign-4.png)
+
+1. When the email is ready, select **[!UICONTROL Migrate]**, then select **[!UICONTROL View campaign]** to open the new campaign.
+
+Your transactional email is now available in [!DNL Journey Optimizer] as an API-triggered campaign. Review the campaign, then publish it when you are ready to start sending.
+
 ## Track migration {#track-migration-progress}
 
 The workspace overview helps you keep track of every email or journey you have imported and quickly find the ones still awaiting action. A set of KPIs at the top of the screen gives you an at-a-glance count of items in each status:
@@ -243,3 +275,4 @@ A set of filters lets you narrow down the list of imported content so you can fo
 ![Filter options for status, created date, and updated date in the workspace](assets/onboarding-hub-5.png)
 
 {{$include /help/_includes/do-not-localize/start/ai-augmented-migrate-content-and-journeys.md}}
+

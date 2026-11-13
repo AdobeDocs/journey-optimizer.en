@@ -84,6 +84,14 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 </tbody>
 </table>
 
+### Onboarding {#nov-26-onboarding}
+
+* **Migrate transactional email campaigns to Journey Optimizer** - The migration workspace now supports **Campaigns**. You can bring the transactional emails you built in your existing marketing platform into [!DNL Journey Optimizer] and convert them into API-triggered campaigns. [Learn more](../start/migrate-content-and-journeys.md#import-campaign-content)
+
+  Note that the migrating capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
+
+  Availability date: November 13, 2026
+
 ### Decisioning {#nov-26-decisioning}
 
 <table>
