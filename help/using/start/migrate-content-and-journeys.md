@@ -222,7 +222,7 @@ Your journey is now available in [!DNL Journey Optimizer], where you can review 
 
 ➡️ [Learn more on Journey creation](../building-journeys/journey-gs.md)
 
-## Import transaction email campaign {#import-campaign-content}
+## Migrate transactional email campaign {#import-campaign-content}
 
 Import transactional email messages from your connected marketing platform to create API-triggered campaign drafts in [!DNL Journey Optimizer]. Each imported email is converted into a draft that you can review, complete, and migrate once it is ready.
 
