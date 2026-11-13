@@ -33,6 +33,14 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The suppression categories and failure reasons are now described in the **Suppression list** page of the deliverability section, together with hard bounces, soft bounces, and spam complaints. The **Manage the suppression list** page now focuses on accessing, editing, and downloading the suppression list. [Read more](../reports/suppression-list.md#suppression-categories-and-reasons)
+
+* The **Suppression list** page now explains how to include the addresses on your suppression list in a specific email delivery for compliance scenarios (Limited Availability), while the Adobe global suppression list, consent, and opt-out are still honored. [Read more](../reports/suppression-list.md#include-suppressed-addresses)
+
+* All **Decision management** pages, including the API reference pages, now start with a banner that identifies them as covering the legacy capability and links to the equivalent **Decisioning** content. [Read more](../offers/get-started/starting-offer-decisioning.md)
+
+* The **Incremental query** activity page now clarifies that each run returns only records whose date field value is later than the previous execution, regardless of when the records were ingested. [Read more](../orchestrated/activities/incremental-query.md)
+
 * The **Use Adobe Experience Platform data** page now clarifies that you can enable a dataset for lookup either in the dataset management interface or with an API call. [Read more](../data/lookup-aep-data.md#enable)
 
 * The **Use supplemental identifiers in journeys** page now explains what happens when an external audience is created without `expressActivation: true`: Journey Optimizer deduplicates records by profile ID, so only one row per profile is admitted. [Read more](../building-journeys/supplemental-identifier.md#external-audiences)
@@ -46,6 +54,14 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * The **Coworker for journeys** and **Coworker for Loyalty** pages now include how-to videos that show Coworker creating a journey from a natural language prompt or an image, creating, simulating, and analyzing a cross-channel journey, comparing journey versions, simulating a journey, and creating a loyalty challenge. [Read more](../building-journeys/journeys-coworker-skills.md#journey-create-videos)
 
 * The **Incremental query** activity page has a new **Check the last execution date** section. It explains that the **Last execution date** field is displayed under **Processed data** once the activity has run, and shows the cutoff date used by the next run. This field is read-only. [Read more](../orchestrated/activities/incremental-query.md#incremental-query-last-execution)
+
+* The **Integrate with external systems** and **Throttling API** pages now explain what happens to events that stay in the throttling queue for more than 6 hours: they are dropped and reported with a `timedout` status in `actionExecutionError`, the same status used when a call exceeds the journey timeout duration. [Read more](../configuration/external-systems.md#timeout)
+
+* The **Use decision policies in messages** page now includes a how-to video that shows how to use Decisioning to personalize your web page within the web visual editor. [Watch the video](../experience-decisioning/use-decision-policy.md#video)
+
+* The **Use supplemental identifiers in journeys** page now consistently states that Read audience journeys with supplemental IDs support Unified Profile Service, CSV import, and Federated Audience Composition audiences. [Read more](../building-journeys/supplemental-identifier.md#external-audiences)
+
+* The **Start and monitor your Orchestrated campaigns** page now explains how to test a campaign flow and how to test a channel activity with **Run test**. The **Channel activities** page now describes the requirements for sending a proof. [Read more](../orchestrated/start-monitor-campaigns.md#test)
 
 ## October 2026 {#october-2026}
 
@@ -67,7 +83,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Batch delivery** page now clarifies that batch decisioning uses profile snapshot data, which does not include experience events (xEvents). Offers that depend on xEvent data may not qualify, and the fallback offer may be returned. Use profile attributes or audiences instead. [Read more](../offers/batch-delivery.md)
 
-* The **Guardrails and limitations** page now documents the maximum of 10 lookups per inbound message request, including external data and dataset lookups. It explains that exceeding the limit fails the entire request with an HTTP 422 error and provides guidance to consolidate or reduce lookups. [Read more](../start/guardrails.md#inbound-guardrails)
+* The **Guardrails and limitations** page now documents the maximum of 10 lookups per inbound message request, including external data and dataset lookups. It explains how lookups are counted, that exceeding the limit can fail the entire request with an HTTP 422 error, and how to reduce lookups. [Read more](../start/guardrails.md#inbound-guardrails)
 
 * The **Datasets Time-to-live (TTL) guardrails** and **Guardrails and limitations** pages now state that the TTL rollout to existing customer sandboxes has been delayed by Adobe (originally planned for October 1, 2026). The TTL page also links to the Experience Platform TTL guide for initiating a TTL update outside of this rollout. [Read more](../data/datasets-ttl.md)
 
@@ -93,7 +109,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
-* A note has been added to clarify that some email providers, such as Gmail, do not share user-level spam complaint data, so recipients who mark a message as spam are not automatically added to the suppression list. [Read more](../configuration/manage-suppression-list.md#suppression-categories-and-reasons)
+* A note has been added to clarify that some email providers, such as Gmail, do not share user-level spam complaint data, so recipients who mark a message as spam are not automatically added to the suppression list. [Read more](../reports/suppression-list.md#spam-complaints)
 
 * The **Create a direct mail message** page now clarifies extraction-file generation in the **Journey** and **Campaign** tabs: journey files follow the routing frequency and can result in multiple files per day, while campaign files are generated when each campaign execution starts. The page also explains how to ensure one file per day for journeys. [Read more](../direct-mail/create-direct-mail.md#create-dm-campaign)
 

@@ -62,13 +62,22 @@ Orchestrated campaigns move through a defined set of states. The key stages in t
 
 ## Test your campaign before publishing {#test}
 
-[!DNL Journey Optimizer] allows you to test Orchestrated campaigns before going live. When a campaign is created, it enters the **Draft** state by default. In this state, you can execute the campaign manually to test the flow. 
+[!DNL Journey Optimizer] allows you to test Orchestrated campaigns before going live. When a campaign is created, it enters the **Draft** state by default. Two complementary tests are available:
+
+| Test | Purpose | Action |
+|---|---|---|
+| **[Campaign flow test](#test-flow)** | Validate the sequence and configuration of activities in the campaign workflow. | Click **[!UICONTROL Start]** in the canvas action bar. |
+| **[Channel activity test](#run-test-channel)** | Simulate an individual channel activity without sending the message, and review its target population and exclusions. | Select the channel activity and click **[!UICONTROL Run test]**. |
+
+### Test the campaign flow {#test-flow}
+
+Use the campaign flow test to execute the workflow manually and validate how its activities are orchestrated.
 
 >[!IMPORTANT]
 >
->All activities in the canvas are executed except **[!UICONTROL Save audience]** activities and channel activities. There is no functional impact on your data or audience.
+>All activities in the canvas are executed except **[!UICONTROL Save audience]** activities and channel activities. Test each channel activity separately with **[!UICONTROL Run test]**. There is no functional impact on your data or audience.
 
-To test an Orchestrated campaign, open the campaign and select **[!UICONTROL Start]**. Each activity in the campaign is executed sequentially until the end of the canvas is reached.
+To test an Orchestrated campaign, open the campaign and select **[!UICONTROL Start]**. Activities are executed sequentially until the workflow reaches a channel activity, where it pauses so that you can run a dry run with **[!UICONTROL Run test]**. If there is no channel activity, execution continues to the end of the canvas.
 
 ![Start button in the campaign canvas toolbar](assets/campaign-start.png){zoomable="yes"}
 
@@ -87,17 +96,45 @@ The **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** icon in the canvas toolba
 
 You can also quickly identify failed activities using the [visual status indicators](#activities) displayed directly on each activity. For detailed troubleshooting, open the [campaign's logs](#logs-tasks), which provide in-depth information about the error and its context.
 
-If you have added channel activities in the canvas, you can preview and test the content of your messages. [Learn how to work with channel activities and simulate content](activities/channels.md#simulate-content-test-profiles).
+The campaign flow test has important execution constraints you should be aware of:
 
->[!TIP]
+* **Workflow pauses at channel activities** - The workflow pauses when it reaches a channel activity, such as Email, SMS, or Push. You can execute that activity separately with **[!UICONTROL Run test]**, but the workflow does not continue to subsequent activities after the channel activity is executed. This means that downstream activities, such as another channel, a condition, or an orchestration activity, cannot be reached during the campaign flow test.
+
+* **Impact on testing strategy** - The logic that follows a message activity, such as conditional branching or multi-channel workflows, cannot be validated in the campaign flow test. To test it, you must publish the campaign and monitor live execution.
+
+* **Expected difference from live execution** - In live execution, the workflow continues through all activities in sequence without pausing at channel activities. During test, these pauses allow you to verify message content and execution at each step, but come at the cost of incomplete workflow validation.
+
+### Test a channel activity {#run-test-channel}
+
+When the campaign flow test reaches a channel activity, use **[!UICONTROL Run test]** to execute that activity without sending the message. This simulates the send so that you can validate the target population and identify exclusions before publishing the campaign.
+
+To test the channel activity and review its results:
+
+1. Select the channel activity in the canvas, then click **[!UICONTROL Run test]**.
+
+    ![](assets/run-test.png)
+
+    >[!NOTE]
+    >
+    >The **[!UICONTROL Run test]** button can be available even when message content is invalid. Check the **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** icon in the canvas toolbar for content-related errors, such as missing content for one of the message versions. Fix the reported content issues, then run the test again.
+
+1. After the test has executed successfully, select the **[!UICONTROL View report]** button to open its live report.
+
+    The test report uses the same campaign statistics as live reporting, but no message is sent during the test. [Learn more on the Campaign live report](../reports/campaign-live-report.md#campaign-live). 
+
+>[!IMPORTANT]
 >
->Before clicking **[!UICONTROL Publish]**, confirm the following:
->* The campaign ran successfully in test mode with no errors in the [logs](#logs-tasks).
->* Message content has been previewed using **[!UICONTROL Simulate Content]**.
->* The [schedule is configured](create-orchestrated-campaign.md#schedule) if this is a scheduled campaign.
->* You have reviewed the [sending confirmation](#confirm-sending) behavior — for non-recurring campaigns, no messages are sent until you explicitly approve the send after publishing.
+>The channel activity dry run does not validate message rendering. A successful test does not guarantee that the message will render successfully when sent: profiles can be excluded at send time due to rendering errors, even when message content is valid and the target population is correctly qualified. This is separate from the invalid-content errors reported in the canvas toolbar.
+
+You can also preview and test the content of your messages using simulation with AEP test profiles and proof sending. Start the campaign in test mode and let the workflow reach the channel activity to access its test profiles; publication is not required. [Learn how to work with channel activities and simulate content](activities/channels.md#simulate-content-test-profiles).
 
 ## Publish the campaign {#publish}
+
+Before publishing the campaign, confirm the following:
+* The campaign ran successfully in test mode with no errors in the [logs](#logs-tasks).
+* Message content has been previewed using **[!UICONTROL Simulate Content]**.
+* The [schedule is configured](create-orchestrated-campaign.md#schedule) if this is a scheduled campaign.
+* You have reviewed the [sending confirmation](#confirm-sending) behavior — for non-recurring campaigns, no messages are sent until you explicitly approve the send after publishing.
 
 Once your campaign is tested and ready, click **[!UICONTROL Publish]** to make it live.
 

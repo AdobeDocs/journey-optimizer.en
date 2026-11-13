@@ -371,6 +371,8 @@ The following guardrails apply to the [email channel](../email/get-started-email
 
 * When designing email messages, the system checks for key settings and displays alerts for warnings (recommendations and best practices) and errors (blocking issues that prevent testing or activation). Learn more about email alerts and validation requirements in [this section](../email/create-email.md#check-email-alerts).
 
+* For Email Designer guardrails and limitations, such as mobile web browser, Outlook, and browser extension considerations, refer to [this section](../email/get-started-email-design.md#email-guardrails).
+
 #### Message content size for journey publication {#message-content-size}
 
 When publishing journeys that contain email messages, the total message content size must not exceed **2 MB** after backend processing. During publication, the system automatically processes message content by patching links, images, and applying transformations, which increases the payload size beyond the authored content size.
@@ -414,7 +416,7 @@ The following guardrails apply to the [Mobile channel](../mobile/get-started-mob
 
 * Journey Optimizer supports a maximum of **500 active inbound actions** at any moment in time. These inbound actions are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
 
-* An inbound message request supports a maximum of **10 lookups** of any kind, including [external data](../personalization/external-data-lookup.md) and dataset lookups. If a request exceeds this limit, the entire request fails with an **HTTP 422** error, with no partial response. To stay within the limit, consolidate your lookups: for example, call an endpoint once and reuse the result instead of calling it several times for different attributes.
+* An inbound message request supports a maximum of **10 lookups** of any kind, including [external data](../personalization/external-data-lookup.md) and dataset lookups. Each lookup call counts, including repeated calls to the same endpoint and calls inside an `#each` loop (once per iteration). Exceeding the limit can fail the entire request with an **HTTP 422** error, rather than returning a partial response. To stay within the limit, perform a lookup once, before any loop, and reuse its result. Reading several attributes from that result does not add lookups.
 
 #### Profile management with inbound channels {#profile-management-inbound}
 

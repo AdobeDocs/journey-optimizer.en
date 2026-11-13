@@ -41,9 +41,11 @@ level_v2:
 ---
 # Look up a decision rule {#lookup-decision-rule}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the legacy **Decision Management** APIs. If you are using the new **Decisioning** capability, refer to the [Decisioning API developer guide](../../../../../experience-decisioning/api-reference/getting-started.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../../../../experience-decisioning/gs-experience-decisioning.md).
 
 
 You can look up a specific decision rule by making a GET request to the [!DNL Offer Library] API that includes either the decision rule `@id` or the name of the decision rule in the request path.

@@ -12,7 +12,7 @@ nudge: yes
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new} 
   + [Release cycle](using/rn/releases.md) 
-  + {hide-from-toc}[Pre-release notes](using/rn/e-release-notes.md)
+  + [Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -801,9 +801,7 @@ nudge: yes
       + {hide-from-toc} [Create a dataset to collect events](using/experience-decisioning/data-collection/create-dataset.md)
       + [Configure events capture](using/experience-decisioning/data-collection/schema-requirement.md)
   + Decision management {#offer-decisioning}
-    + [Decision management](/help/rp_landing_pages/offer-decisioning-landing-page.md)
     + Get started with Decision management {#get-started-decision}
-      + [Get started with Decision management](/help/rp_landing_pages/get-started-decision-landing-page.md)
       + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
       + [Decision management guardrails & limitations](using/offers/decision-management-guardrails.md)
       + [User interface](using/offers/get-started/user-interface.md)
@@ -811,24 +809,19 @@ nudge: yes
       + [Leverage Custom upload audiences for decisioning](using/offers/custom-upload-decisioning.md)
       + [Use case: insert offers in an email](using/offers/offers-e2e.md)
     + Create components {#create-components}
-      + [Create components](/help/rp_landing_pages/create-components-landing-page.md)
       + [Create placements](using/offers/offer-library/creating-placements.md)
       + [Create decision rules](using/offers/offer-library/creating-decision-rules.md)
       + [Create collection qualifiers](using/offers/offer-library/creating-tags.md)
     + Create rankings {#rankings}
-      + [Create rankings](/help/rp_landing_pages/rankings-landing-page.md)
       + [Get started with rankings](using/offers/ranking/get-started-rankings.md)
       + [Ranking formulas](using/offers/ranking/create-ranking-formulas.md)
       + AI models {#ai-models}
-        + [AI models](/help/rp_landing_pages/ai-models-landing-page.md)
         + [About AI models](using/offers/ranking/ai-models.md)
         + [Auto-optimization model](using/offers/ranking/auto-optimization-model.md)
         + [Personalized optimization model](using/offers/ranking/personalized-optimization-model.md)
         + [Create AI models](using/offers/ranking/create-ranking-strategies.md)
     + Create & manage offers {#managing-offers-in-the-offer-library}
-      + [Create & manage offers](/help/rp_landing_pages/managing-offers-in-the-offer-library-landing-page.md)
       + Configure offers {#configure-offers}
-        + [Configure offers](/help/rp_landing_pages/configure-offers-landing-page.md)
         + [Create personalized offers](using/offers/offer-library/creating-personalized-offers.md)
         + [Add representations](using/offers/offer-library/add-representations.md)
         + [Supported functions in the personalization editor](using/offers/offer-library/personalization-editor-supported-functions.md)
@@ -836,27 +829,22 @@ nudge: yes
       + [Create fallback offers](using/offers/offer-library/creating-fallback-offers.md)
       + [Create collections](using/offers/offer-library/creating-collections.md)
     + Create & manage decisions {#create-manage-activities}
-      + [Create & manage decisions](/help/rp_landing_pages/create-manage-activities-landing-page.md)
       + [Create decisions](using/offers/offer-activities/create-offer-activities.md)
       + [Configure offers selection in decisions](using/offers/offer-activities/configure-offer-selection.md)
       + [Create simulations](using/offers/offer-activities/simulation.md)
     + [Use batch decisioning](using/offers/batch-delivery.md)
     + Collect event data {#collect-event-data}
-      + [Collect event data](/help/rp_landing_pages/collect-event-data-landing-page.md)
       + [Getting started with data collection](using/offers/data-collection/data-collection.md)
       + [Create a dataset to collect events](using/offers/data-collection/create-dataset.md)
       + [Configure events capture](using/offers/data-collection/schema-requirement.md)
     + Leverage context data {#context-data}
-      + [Leverage context data](/help/rp_landing_pages/context-data-landing-page.md)
       + [Get started with context data](using/offers/context-data.md)
       + [Context data & Edge Decisioning requests](using/offers/context-data-edge.md)
       + [Context data & Decisioning request](using/offers/context-data-decisioning.md)
     + Create Decision Management reports {#create-reports}
-      + [Create Decision Management reports](/help/rp_landing_pages/create-reports-landing-page.md)
       + [Work with Decision management events](using/offers/reports/get-started-events.md)
       + [Access events XDM fields](using/offers/reports/xdm-fields.md)
     + Export your offer catalog {#export-catalog}
-      + [Export your offer catalog](/help/rp_landing_pages/export-catalog-landing-page.md)
       + [Get started with offer catalog export](using/offers/export-catalog/get-started-export.md)
       + [Access the exported offer catalog](using/offers/export-catalog/access-dataset.md)
       + [Personalized offers dataset](using/offers/export-catalog/export-offers.md)
@@ -864,7 +852,6 @@ nudge: yes
       + [Placements dataset](using/offers/export-catalog/export-placements.md)
       + [Fallback dataset](using/offers/export-catalog/export-fallback.md)
     + API Reference {#api-reference}
-      + [API Reference](/help/rp_landing_pages/api-reference-landing-page.md)
       + [Getting started](using/offers/api-reference/getting-started.md)
       + Create & manage offers using APIs {#offers-api}
         + Placements {#dm-placements}
@@ -954,7 +941,6 @@ nudge: yes
             + [Update a decision](using/offers/api-reference/offers-api/legacy-apis/activities-api/update.md)
             + [Delete a decision](using/offers/api-reference/offers-api/legacy-apis/activities-api/delete.md)
       + Deliver offers using APIs {#offer-delivery-api}
-        + [Deliver offers using APIs](/help/rp_landing_pages/offer-delivery-api-landing-page.md)
         + [Get started with offer delivery APIs](using/offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
         + [Decisioning API](using/offers/api-reference/offer-delivery-api/decisioning-api.md)
         + [Edge Decisioning API](using/offers/api-reference/offer-delivery-api/edge-decisioning-api.md)

@@ -47,7 +47,7 @@ topic_v2:
 
 >[!NOTE]
 >
->Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change. 
+>Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. <!-- Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change. -->
 
 >[!BEGINSHADEBOX]
 
@@ -207,6 +207,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <p>To support compliance with open-tracking consent requirements such as the CNIL guidance in France, you can now honor a recipient's tracking consent without excluding them from an otherwise eligible email send. Tracking consent is stored in the Adobe Experience Platform profile and evaluated for each recipient at send time.</p>
 <p>A new <strong>Honor open tracking consent</strong> option in the email settings of the channel configuration removes the Journey Optimizer open-tracking pixel for recipients who have not consented. Email delivery, content, and unsubscribe links are unaffected.</p>
 <p>You can turn on the option at any time, without editing your existing journeys and campaigns. Note that some existing messages, such as transactional messages, need to be republished for the setting to apply.</p>
+<p><img src="assets/do-not-localize/honor-tracking-consent.gif"></p>
 <p>For more information, refer to the <a href="../email/open-tracking-consent.md#existing-messages">detailed documentation</a>.</p>
 <p>Availability date: October 29, 2026</p>
 </td>
@@ -218,7 +219,9 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 2, 2026
 
-* **Suppression list override at Email action level** - Journey Optimizer now includes a per-action toggle that allows delivery to locally-suppressed addresses for a specific email action in a journey or campaign. This is designed for compliance scenarios where a communication must be demonstrably attempted, such as a required notification to an address that has previously bounced. This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
+* **Suppression list override at Email action level** - Journey Optimizer now includes a per-action toggle that allows delivery to locally-suppressed addresses for a specific email action in a journey or campaign. This is designed for compliance scenarios where a communication must be demonstrably attempted, such as a required notification to an address that has previously bounced. Sending to suppressed addresses is not a recommended email practice, as it can damage your deliverability. This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
+
+  For more information, refer to the [detailed documentation](../reports/suppression-list.md#include-suppressed-addresses).
 
   Availability date: October 28, 2026
 
@@ -301,6 +304,8 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 26, 2026
 
+<!--
+COMING SOON (hidden until next week)
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -314,15 +319,17 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <td>
 <p>Spend less time investigating journey issues and get a head start on resolving them. When a <strong>Journey Custom Action failure</strong> or <strong>Journey Anomaly Detected</strong> alert fires, an <strong>AI Recommendations</strong> card on the Journey Optimizer home page highlights the issue. Select the card to review analysis and recommended next steps already prepared in Coworker, without having to request an investigation first. Continue the conversation to explore the findings and decide how to address the issue.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<!-- GIF placeholder: to be added -->
-<!-- Documentation link: TBD -->
+
 </td>
 </tr>
 </tbody>
 </table>
 
 +++
+-->
 
+<!--
+COMING SOON (hidden until next week)
 ### Campaigns {#oct-26-orchestrated-campaigns}
 
 The following improvements are coming to campaigns in this release.
@@ -331,9 +338,10 @@ The following improvements are coming to campaigns in this release.
 
 * **Increased message activity limit for Orchestrated campaigns** - Orchestrated campaigns now support up to 25 message actions on a single canvas, up from the previous limit of 10. This allows complex cross-channel orchestrations, spanning email, push, SMS, and other channels, to be built and managed as a single campaign rather than split across multiple smaller ones.
 
-  For enterprise teams running sophisticated multi-step programs, this reduces operational overhead and simplifies publication and rollback handling when managing large campaign launches. <!-- Documentation link: TBD -->
+  For enterprise teams running sophisticated multi-step programs, this reduces operational overhead and simplifies publication and rollback handling when managing large campaign launches. 
 
 +++
+-->
 
 ### User interface {#oct-26-user-interface}
 
@@ -378,6 +386,7 @@ The following improvements are coming to campaigns in this release.
 <td>
 <p>Define your own business fields, such as line of business, product or cost center, in the schemas provided for Action campaigns, journeys and Orchestrated campaigns. Select up to 10 fields per entity type, then fill them in from the <strong>Metadata fields</strong> section of the properties of each journey or campaign. The values are recorded in dedicated datasets that you can use for reporting, exports and audience creation.</p>
 <p>This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.</p>
+<p><img src="assets/do-not-localize/custom-metadata.gif"></p>
 <p>For more information, refer to the <a href="../administration/custom-metadata.md">detailed documentation</a>.</p>
 <p>Availability date: October 29, 2026</p>
 </td>
@@ -391,15 +400,18 @@ The following improvements are coming to campaigns in this release.
 
   Availability date: October 22, 2026
 
+<!--
+COMING SOON (hidden until next week)
 +++ Coming soon — **Information below is subject to change.**
 
-* **Decisioning item creation skill in Coworker** - Use natural language in Coworker to create offers (decision items) with AI assistance, so marketers can build and populate items faster without manually filling in each field. <!-- Documentation link: TBD -->
+* **Decisioning item creation skill in Coworker** - Use natural language in Coworker to create offers (decision items) with AI assistance, so marketers can build and populate items faster without manually filling in each field. 
 
-* **Decisioning audit skill in Coworker** - Ask Coworker questions about your Decisioning objects in natural language. Check your inventory (for example, how many offers you have), explore how objects relate to each other, and run audit queries such as who last edited a given offer. <!-- Documentation link: TBD -->
+* **Decisioning audit skill in Coworker** - Ask Coworker questions about your Decisioning objects in natural language. Check your inventory (for example, how many offers you have), explore how objects relate to each other, and run audit queries such as who last edited a given offer. 
 
-* **Decisioning migration assistance in Coworker** - Get AI-enabled assistance in Coworker when migrating from Offer Decisioning to Adobe Journey Optimizer Decisioning. <!-- Documentation link: TBD -->
+* **Decisioning migration assistance in Coworker** - Get AI-enabled assistance in Coworker when migrating from Offer Decisioning to Adobe Journey Optimizer Decisioning. 
 
 +++
+-->
 
 ### Loyalty {#oct-26-loyalty}
 
@@ -415,6 +427,8 @@ The following improvements are coming to campaigns in this release.
 
   Availability date: October 1, 2026
 
+<!--
+COMING SOON (hidden until next week)
 ### Integrations {#oct-26-integrations}
 
 +++ Coming soon — **Information below is subject to change.**
@@ -422,4 +436,4 @@ The following improvements are coming to campaigns in this release.
 * **AEM Managed Services content fragments support in Decisioning** - AEM Managed Services content fragments are now supported in Decisioning when managing decision items.
 
 +++
-
+-->

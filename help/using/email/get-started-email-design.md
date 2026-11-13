@@ -131,6 +131,13 @@ Refer to the table below for best practices for email design:
 
 Even well-structured emails can render differently depending on the client or environment where they are opened. The sections below document known limitations and client-specific behaviors to keep in mind when designing your emails.
 
+For guardrails specific to an Email Designer feature, refer to:
+
+* [Advanced HTML editor](email-expert-mode.md#guardrails)
+* [Dark mode](dark-mode.md#guardrails)
+* [Enhanced email authoring experience](apply-email-themes.md#themes-guardrails)
+* [Custom CSS with imported content](custom-css.md#guardrails-imported-content)
+
 ### Mobile web browser limitations {#mobile-web-limitations}
 
 Email rendering may differ when recipients open Gmail or Outlook **via a mobile web browser** (e.g., Chrome on a phone), rather than using a native mobile app or desktop client. This is a known limitation of mobile webmail environments and is not specific to Journey Optimizer.
@@ -161,6 +168,10 @@ Outlook has a number of rendering quirks that can affect your email layout if no
 * Avoid rounded corners. CSS `border-radius` is not reliably supported in Outlook — square corners are the safe default.
 
 For dark mode design considerations, including how to use media queries and Outlook.com-specific image swap techniques, refer to [this page](dark-mode.md).
+
+### Browser extensions {#browser-extensions}
+
+Browser extensions that modify web pages, such as Grammarly or WalkMe, can inject HTML, CSS, or JavaScript into the Email Designer. That content can be saved with the email and appear in the delivered message as duplicated content, invisible elements, or unexpected spacing. Author emails in a browser profile without such extensions, or disable them for experience.adobe.com.
 
 ## How-to videos {#video}
 

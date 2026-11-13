@@ -133,7 +133,7 @@ To create an AI model, follow the steps below:
     >
     >Only the datasets created from schemas associated with the **[!UICONTROL Experience Event - Proposition Interactions]** field group (previously known as mixin) are displayed in the drop-down list.
 
-1. If you are creating a **[!UICONTROL Personalized optimization]** AI model, select the segment(s) to use to train the AI model. 
+1. If you are creating a **[!UICONTROL Personalized optimization]** AI model, you can select the audience(s) to use to train the AI model.
 
     <!--➡️ [Discover this feature in video](#video)-->
 

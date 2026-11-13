@@ -33,7 +33,7 @@ For complete understanding, this information should be combined with the documen
 
 * Do not schedule an Orchestrated campaign to run more than every 15 minutes, as it may impede overall system performance and create blocks in the database (recommended).
 * The recurring delivery activity does not allow you to define a schedule; use a Scheduling option and set the execution frequency for recurring messages instead.
-* Custom metadata fields for Orchestrated campaigns are available in Limited Availability; contact your Adobe representative to gain access.
+* Custom metadata fields for Orchestrated campaigns are available in Limited Availability; submit the request form or contact your Adobe representative to gain access.
 * Fields marked with an asterisk in the Metadata fields section are required.
 * By default, Orchestrated campaigns start when activated manually and end once their associated activities have been executed, unless a schedule is defined.
 * For recurring campaigns, if the initial scheduled time has already passed, the campaign rolls over to the next available time slot according to its recurrence rules.

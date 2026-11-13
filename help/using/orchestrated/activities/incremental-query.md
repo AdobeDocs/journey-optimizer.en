@@ -52,9 +52,9 @@ level_v2:
 >title="History in days"
 >abstract="This setting controls how long that list is retained. A value of 0 means indefinite retention, no records are removed."
 
-The **[!UICONTROL Incremental query]** activity is a **[!UICONTROL Targeting]** activity that runs a database query each time the Orchestrated campaign runs. The important part is that it only ever outputs **new** records. Anyone already picked up in a prior run is excluded, so you avoid re-targeting the same people or re-exporting the same rows.
+The **[!UICONTROL Incremental query]** activity is a **[!UICONTROL Targeting]** activity that runs a database query each time the Orchestrated campaign runs. The important part is that each run only outputs records whose date field value is later than the date of the previous execution. This way, you avoid re-targeting the same people or re-exporting the same rows.
 
-Use it when the campaign can run multiple times, or example, when you schedule the campaign, e.g. weekly or when it is triggered by an external signal or API. Each run targets only records that were not returned in a previous run, so you avoid duplicates.
+Use it when the campaign can run multiple times, or example, when you schedule the campaign, e.g. weekly or when it is triggered by an external signal or API. Each run targets only records dated after the previous execution, so you avoid duplicates.
 
 Typical uses:
 
@@ -82,6 +82,10 @@ Set the targeting dimension, build your query, and choose how the activity decid
 1. Under **[!UICONTROL Processed data]**, choose your **[!UICONTROL Path to the date field]**. A date field is required, and the attribute must use the **Date Time** format. Each run returns only rows whose date is after the last execution.
 
       ![Incremental query activity configuration in the Orchestrated campaign canvas](../assets/incremental-query-3.png)
+
+   >[!NOTE]
+   >
+   >Eligibility depends only on the value of the date field, not on when the record was ingested. A record ingested after the previous execution is not returned if its date field value is older than the date of that execution.
 
 <!--
    * **[!UICONTROL Exclude results of previous execution]**: The activity maintains a list of records returned in prior runs. Each run excludes those records and returns only new ones. **[!UICONTROL History in days]** controls the retention period for that list. 0 indicates indefinite retention, no records are removed.

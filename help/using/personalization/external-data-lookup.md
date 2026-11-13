@@ -51,7 +51,7 @@ Once the Action has been defined, it can be used both:
 
 Please refer to Custom Actions in [!DNL Journey Optimizer] Inbound Channels Campaigns and Journeys#GuardrailsandGuidelines as well.
 
-* **Maximum number of lookups** - An inbound message request supports a maximum of 10 lookups of any kind, including external data lookups. Exceeding this limit fails the entire request. [Learn more](../start/guardrails.md#inbound-guardrails)
+* **Maximum number of lookups** - An inbound message request supports a maximum of 10 lookups of any kind, including external data lookups. Each call to the helper counts, including repeated calls to the same endpoint and calls inside an `#each` loop (once per iteration). Exceeding this limit can fail the entire request. To reduce lookups, call the endpoint once, outside any loop, and reuse the result. [Learn more](../start/guardrails.md#inbound-guardrails)
 * **Default timeout** - By default, [!DNL Journey Optimizer] uses a timeout of 300ms when calling an external endpoint. Contact your Adobe representative to increase this timeout for an endpoint.
 * **Response schema browsing & expression validation** - In the personalization editor, you cannot browse the schema of the endpoint response when inserting expressions. [!DNL Journey Optimizer] does not validate references to JSON attributes from the response used in expressions.
 * **Supported data types for parameters** - The supported datatypes for payload variable parameters to be substituted via externalDataLookup helper are `String`, `Integer`, `Decimal`, `Boolean`, `listString`, `listInt`, `listInteger`, `listDecimal`.

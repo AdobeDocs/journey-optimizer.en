@@ -75,11 +75,6 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 1. **Leverage Optimization**
 
     Use the **[!UICONTROL Optimization]** section to run content experiments, leverage targeting rules, or use advanced combinations of both experimentation and targeting. These different options and the steps to follow are detailed in [this section](../content-management/gs-message-optimization.md).
-<!--
-1. **Create a content experiment**
-
-    Use the **[!UICONTROL Content experiment]** section to define multiple delivery treatments in order to measure which one performs best for your target audience. Click the **[!UICONTROL Create experiment]** button then follow the steps detailed in this section: [Create a content experiment](../content-management/content-experiment.md).
--->
 
 1. **Add multilingual content**
 
@@ -98,6 +93,18 @@ In the **[!UICONTROL Business rules]** drop-down list, select a rule set to appl
 Use this option when a campaign needs email values that differ from the selected channel configuration, without creating another configuration. You can override only the fields needed for that action while keeping the rest of the configuration unchanged.
 
 [Learn how to override email channel configuration](../email/create-email.md#override-email-channel-configuration)
+
++++
+
++++**Include suppressed addresses** (Email)
+
+If you have a compliance requirement, you can deliver this email to the addresses on your suppression list with the **[!UICONTROL Include suppression list in email delivery]** option in the **[!UICONTROL Delivery]** section. The Adobe global suppression list, consent, and opt-out choices are still honored. This capability is available in Limited Availability.
+
+>[!CAUTION]
+>
+>This is not a recommended email practice, as it can damage your deliverability.
+
+[Learn how to include suppressed addresses in an email delivery](../reports/suppression-list.md#include-suppressed-addresses)
 
 +++
 

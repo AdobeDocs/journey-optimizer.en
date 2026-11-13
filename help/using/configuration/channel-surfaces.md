@@ -305,7 +305,7 @@ To deactivate a channel configuration, follow the steps below.
 
 >[!NOTE]
 >
->Deactivated channel configurations cannot be deleted to avoid any issue in journeys using these configurations to send messages.
+>Deactivated channel configurations cannot be deleted to avoid any issue in journeys using these configurations to send messages. Their names remain reserved, so you cannot reuse them for new channel configurations.
 
 You cannot directly edit a deactivated channel configuration. However, you can duplicate it and edit the copy to create a new version that you will use to create new messages. You can also activate it again, and wait until the update is successful to edit it.
 

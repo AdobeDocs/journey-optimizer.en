@@ -41,9 +41,11 @@ level_v2:
 ---
 # Personalized optimization model {#personalized-optimization-model}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more about Decisioning](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the personalized optimization model for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Personalized optimization model](../../experience-decisioning/ranking/personalized-optimization-model.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
 By leveraging the state-of-the-art technologies in supervised machine learning and deep learning, Personalized optimization allows a business user (marketer) to define business goals and utilize their customer data to train business-oriented models to serve personalized offers and maximize KPIs.
 

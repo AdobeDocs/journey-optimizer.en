@@ -58,7 +58,7 @@ When multiple items overlap, select the overlapping block to display a scrolling
 ### How campaigns display {#campaign-representation}
 
 * By default, the calendar grid shows all live and scheduled campaigns for the selected week. Use additional filters to show completed, stopped, and finished activations, or activations of a specific type or channel.
-* Draft campaigns are not displayed. Draft placeholders that you add directly to the Calendar can still appear.
+* Draft campaigns are displayed if you have set a start and end date. Draft placeholders that you add directly to the Calendar can also appear.
 * Campaigns spanning multiple days appear at the top of the calendar grid.
 * If no start time is specified, the closest manual activation time is used to position the campaign in the calendar.
 * Campaigns are displayed as 1-hour timespans. These timespans do not reflect actual send or completion times.

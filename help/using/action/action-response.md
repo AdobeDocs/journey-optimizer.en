@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Custom action enhancements
+title: Use API call responses in custom actions
 description: Learn more about latest enhancements on custom actions
 feature: Journeys, Actions, Custom Actions
 topic: Administration
@@ -49,11 +49,9 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Capture the response payload returned by a custom action's API call so you can orchestrate journeys, personalize messages, and handle errors based on data from the external system.
+**On this page:** Capture the JSON response returned by a custom action and use its fields to guide journey decisions, personalize messages, and handle errors.
 
 >[!ENDSHADEBOX]
-
-You can leverage API call responses in custom actions and orchestrate your journeys based on these responses.
 
 <!--
 You can now leverage API call responses in custom actions and orchestrate your journeys based on these responses.
@@ -61,30 +59,38 @@ You can now leverage API call responses in custom actions and orchestrate your j
 This capability was previously only available when using data sources. You can now use it with custom actions. 
 -->
 
-## Important notes{#custom-action-enhancements-notes}
+## Response payload requirements{#custom-action-enhancements-notes}
 
 <!--
 * Custom actions should only be used with private or internal endpoints, and used with an appropriate capping or throttling limit. See [this page](../configuration/external-systems.md). 
 -->
 
-* Scalar arrays are supported in response payload:
+* The complete response must be a JSON object. A bare array as the response is not supported.
 
-    ```
-    "dummyScalarArray": [
-    "val1",
-    "val2"
-    ]
-    ```
+* Arrays can be included inside an object. Scalar arrays are supported; heterogeneous arrays are not.
 
-* Heterogeneous arrays are not supported in response payload:
+Supported:
 
-    ```
-    "dummyRandomArray": [
-    20,
-    "aafw",
-    false
-    ]
-    ```
+```json
+{
+  "body": ["val1", "val2"],
+  "points": 1290
+}
+```
+
+Not supported (bare array):
+
+```json
+["val1", "val2"]
+```
+
+Not supported (heterogeneous array):
+
+```json
+{
+  "values": [20, "aafw", false]
+}
+```
 
 <!--
 ## Best practices{#custom-action-enhancements-best-practices}
@@ -127,46 +133,47 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
 ## Configure the custom action {#config-response}
 
-1. Create the custom action. Refer to [this page](../action/about-custom-action-configuration.md).
+To capture the response of a custom action, define a sample of the payload your endpoint returns.
+
+1. Create or open a custom action. See [Configure a custom action](../action/about-custom-action-configuration.md).
 
 1. Click inside the **Response** (success response) field. 
 
     ![](assets/action-response2.png){width="80%"}
 
-1. Paste an example of the payload returned by the call. Verify that the field types are correct (string, integer, etc.). Here is an example of response payload captured during the call. Our local endpoint sends the number of loyalty points and the status of a profile. 
+1. Paste an example of the successful response your endpoint returns. Verify that the sample's field types match the actual response. In this example, the local endpoint sends the number of loyalty points and the status of a profile.
 
-    ```
+    ```json
     {
-    "customerID" : "xY12hye",    
-    "status":"gold",
-    "points": 1290 }
+      "customerID": "xY12hye",
+      "status": "gold",
+      "points": 1290
+    }
     ```
 
     ![](assets/action-response4.png){width="80%"}
 
-    Each time the API is called, the system will retrieve all the fields included in the payload example.
+    The sample defines the fields that Journey Optimizer retrieves each time the action is called.
 
-1. (Optional) Enable an error response payload to capture the format returned when the call fails, then paste an example payload. To do this, select **Define a failure response payload** in the custom action configuration. Learn more about configuring the payload fields in [Configure a custom action](../action/about-custom-action-configuration.md).
+1. (Optional) To capture a failure payload, select **Define a failure response payload** and provide an example that matches the payload your endpoint returns when the call fails. For example:
 
-    ```
+    ```json
     {
-    "errorResponse" : "customer not found"
+      "message": "customer not found"
     }
     ```
 
-    The error response payload is only available if you enable it in the custom action configuration.
+    When configured, the failure payload fields are available under the `errorResponse` node. The shape of the sample should match the real failure response.
 
-1. Let's also add the customerID as a query parameter.
+1. Add any required request parameters. In this example, `customerID` is a query parameter.
 
     ![](assets/action-response9.png){width="80%"}
 
 1. Click **Save**.
 
-## Leverage the response in a journey {#response-in-journey}
+## Use the response in a journey {#response-in-journey}
 
-Simply add the custom action to a journey. You can then leverage the response payload fields in conditions, other actions and message personalization.
-
-If you have defined an error response payload, it is exposed under **Contextual attributes** > **Journey Orchestration** > **Actions** > `<action name>` > **errorResponse**. You can use it in the timeout and error branch to drive fallback logic and error handling.
+Add the custom action to a journey. You can then use the response fields in conditions, subsequent actions, and message personalization.
 
 For example, you can add a condition to check the number of loyalty points. When the person enters the restaurant, your local endpoint sends a call with the profile's loyalty information. You can send a push if the profile is a gold customer. And if an error is detected in the call, send a custom action to notify your system administrator.
 
@@ -174,110 +181,122 @@ For example, you can add a condition to check the number of loyalty points. When
 
 1. Add your event and the Loyalty custom action created earlier. 
 
-1. In the Loyalty custom action, map the customer ID query parameter with the profile ID. Check the option **Add an alternative path in case of a timeout or error**.
+1. In the Loyalty custom action, map the required input parameters, such as the customer ID query parameter with the profile ID. Select **Add an alternative path in case of a timeout or error** to handle those outcomes separately.
 
     ![](assets/action-response10.png)
 
-1. In the first branch, add a condition and use the advanced editor to leverage the action response fields, under the **Context** node.
+1. In the success path, add a condition and use the action response fields. In the advanced editor, the response fields are available under the **Context** node.
 
     ![](assets/action-response6.png)
 
-1. Then add your push, and personalize your message using the response fields. In our example, we personalize the content using the number of loyalty points and the customer status. The action response fields are available under **Contextual attributes** > **Journey Orchestration** > **Actions**.
+1. Add a push or another action, and personalize your message using the response fields. In this example, the content uses the number of loyalty points and the customer status. The response fields are available under **Contextual attributes** > **Journey Orchestration** > **Actions**.
 
     ![](assets/action-response8.png)
 
     >[!NOTE]
     >
-    >Each profile entering the custom action will trigger a call. Even if the response is always the same, Journey will still perform one call per profile.
+    >Each profile entering the custom action triggers a call, even if the endpoint returns the same response for every profile.
 
-1. In the timeout and error branch, add a condition and leverage the built-in **jo_status_code** field. In our example, we're using the 
-**http_400** error type. See [this section](#error-status).
+1. In the timeout and error path, add a condition and use the built-in **jo_status_code** field to branch on the call outcome. In this example, the condition checks for the **http_400** error type. See [Error status](#error-status).
 
     ```
     @action{ActionLoyalty.jo_status_code} == "http_400"
     ```
 
-    If an error response payload has been defined, you can also target its fields, for example:
+    If you configured a failure payload, you can also branch on one of its fields. For the example above:
 
     ```
-    @action{ActionLoyalty.errorResponse.errorResponse} == "customer not found"
+    @action{ActionLoyalty.errorResponse.message} == "customer not found"
     ```
 
     ![](assets/action-response7.png)
 
-1. Add a custom action that will be sent to your organization.
+1. Add a custom action that notifies your organization.
 
     ![](assets/action-response11.png)
 
 ## Test mode logs {#test-mode-logs}
 
-You can access, through test mode, status logs related to custom action responses. If you have defined custom actions with responses in your journey, you will see an **actionsHistory** section on those logs displaying the payload returned by the external endpoint (as a response from that custom action). When an error response payload is defined, it is included for failed calls. This can be very useful in terms of debugging.
+Use test mode to inspect the payload returned by the action in the **actionsHistory** section of the logs. For failed calls, the logs include the failure payload if one is configured. This is useful for debugging.
 
 ![](assets/action-response12.png)
 
 ## Error status {#error-status}
 
-The **jo_status_code** field is always available even when no response payload is defined.
+The **jo_status_code** field is available even when no response payload is defined. Possible values include:
 
-Here are the possible values for this field: 
+| Value | Meaning |
+|---|---|
+| `http_<code>` | HTTP status code returned by the API call, such as `http_200` or `http_400` |
+| `timedout` | The call timed out |
+| `capped` | The call was blocked by capping |
+| `internalError` | An internal error occurred |
 
-* http status code: http_`<HTTP API call returned code>`, for instance http_200 or http_400
-* timeout error: **timedout**
-* capping error: **capped**
-* internal error: **internalError**
+An action call is considered in error when the returned HTTP code is greater than 2xx or when another error occurs. In that case, the journey follows the configured timeout or error branch.
 
-An action call is considered in error when the returned http code is greater than 2xx or if an error occurs. The journey flows to the dedicated timeout or error branch in such cases.
+Only newly created custom actions include the **jo_status_code** field by default. To use it with an existing custom action, update and save the action. For example, you can update its description.
 
-If an error response payload has been configured for the custom action, its fields are exposed under the **errorResponse** node for failed calls. If no error response payload is configured, that node is not available.
-
->[!WARNING]
->
->Only newly created custom actions include the **jo_status_code** field out-of-the-box. If you want to use it with an existing custom action, you need to update the action. For example, you can update the description and save.
+If no failure response payload is configured, the `errorResponse` node is not available.
 
 ## Expression syntax {#exp-syntax}
 
-Here is the syntax:
+Reference a response field with:
 
 ```json
-#@action{myAction.myField} 
+@action{<action name>.<field path>}
 ```
 
-Here are a few examples:
+For example:
 
 ```json
- // action response field
- @action{<action name>.<path to the field>}
- @action{ActionLoyalty.status}
+@action{ActionLoyalty.status}
 ```
+
+To provide a default value:
 
 ```json
- // action response field
- @action{<action name>.<path to the field>, defaultValue: <default value expression>}
- @action{ActionLoyalty.points, defaultValue: 0}
- @action{ActionLoyalty.points, defaultValue: @event{myEvent.newPoints}}
+@action{<action name>.<field path>, defaultValue: <expression>}
 ```
 
-While manipulating collections in a custom action response, you can rely on `currentActionField` to access the current item:
+For example:
+
+```json
+@action{ActionLoyalty.points, defaultValue: 0}
+@action{ActionLoyalty.points, defaultValue: @event{myEvent.newPoints}}
+```
+
+For collections, use `currentActionField` to refer to the current item:
 
 ```json
 count(
-@action{MyAction.MyCollection.all(
-currentActionField.description == "abc"
-)}
+  @action{MyAction.MyCollection.all(
+    currentActionField.description == "abc"
+  )}
 )
 ```
 
-### Using custom action responses in native channels {#response-in-channels}
+See [Field references](../building-journeys/expression/field-references.md) and [Collection management functions](../building-journeys/expression/collection-management-functions.md).
 
-Response payload fields from custom actions can be used in native channels (email, push, Mobile messages) for message personalization. This includes the ability to iterate over arrays and nested data structures returned by external APIs.
+### Personalize native-channel messages {#response-in-channels}
 
-For detailed examples and syntax for iterating over custom action response data in messages, refer to [Iterate over contextual data with Handlebars](../personalization/iterate-contextual-data.md#custom-action-responses).
+Use custom action response fields in supported native-channel personalization (email, push, mobile messages). For arrays and nested data, see [Iterate over contextual data with Handlebars](../personalization/iterate-contextual-data.md#custom-action-responses).
+
+## Troubleshooting {#troubleshooting}
+
+| Symptom | Check |
+|---|---|
+| Response fields are unavailable | Confirm that the **Response** sample is valid JSON and reflects the endpoint's response structure and field types. |
+| The response cannot be used because it is an array | Return an object instead, placing the array inside a field. |
+| Some array values are unavailable | Confirm that the array is not heterogeneous. |
+| `jo_status_code` is missing on an existing action | Update and save the action. The field is included by default only on newly created actions. |
+| `errorResponse` is unavailable | Configure and save a failure response payload. |
+| The call follows the timeout or error branch | Inspect `jo_status_code` and, if configured, the failure payload in the test mode logs. |
 
 ## Additional resources
 
-For more information, refer to these pages:
-
-* [Field references](../building-journeys/expression/field-references.md).
+* [Configure a custom action](../action/about-custom-action-configuration.md)
+* [Iterate over contextual data with Handlebars](../personalization/iterate-contextual-data.md#custom-action-responses)
+* [Field references](../building-journeys/expression/field-references.md)
 * [Collection management functions](../building-journeys/expression/collection-management-functions.md)
 
 {{$include /help/_includes/do-not-localize/action/ai-augmented-action-response.md}}

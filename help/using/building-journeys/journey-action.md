@@ -255,6 +255,18 @@ Use this option when a journey action needs email values that differ from the se
 
 +++
 
++++**Include suppressed addresses** (Email)
+
+If you have a compliance requirement, you can deliver this email to the addresses on your suppression list with the **[!UICONTROL Include suppression list in email delivery]** option in the **[!UICONTROL Delivery]** section. The Adobe global suppression list, consent, and opt-out choices are still honored. This capability is available in Limited Availability.
+
+>[!CAUTION]
+>
+>This is not a recommended email practice, as it can damage your deliverability.
+
+[Learn how to include suppressed addresses in an email delivery](../reports/suppression-list.md#include-suppressed-addresses)
+
++++
+
 +++**Track engagement** (Email, Mobile).
 
 Use the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or Mobile deliveries.

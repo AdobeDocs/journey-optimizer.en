@@ -44,9 +44,11 @@ level_v2:
 ---
 # Access events XDM fields {#decisioningevents-xdm-schema}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers Decision Management event XDM fields for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Report on Decisioning](../../experience-decisioning/cja-reporting.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
 You can access the DecisioningEvents XDM schema directly from a dataset containing Decision Management events.
 

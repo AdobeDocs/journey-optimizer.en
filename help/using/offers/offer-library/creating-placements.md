@@ -42,9 +42,11 @@ topic_v2:
 ---
 # Create placements {#create-placements}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers placements for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Create email placements](../../experience-decisioning/placements.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_placement"

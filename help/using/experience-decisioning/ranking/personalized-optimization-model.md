@@ -70,7 +70,7 @@ Key benefits:
 
 ## Dataset requirements {#dataset}
 
-To train a personalized optimization model, the dataset must have at least two offers with at least 250 display events (for example, impressions) and one success event (for example, click or conversion) within the last 30 days.
+To train a personalized optimization model, the dataset must have at least two offers with at least 250 display events (for example, impressions) and one success event (for example, click or conversion) each within the last 30 days.
 
 Offers with fewer than 250 display events and/or no success events within the last 30 days will remain eligible for inclusion in the exploration traffic and new offer booster traffic. They will also be eligible for inclusion in the personalization traffic but will be treated as equivalent to the worst scoring predicted offer in decisioning, until they meet the required minimum display/success events and the model gets re-trained.
 

@@ -48,6 +48,12 @@ topic_v2:
 ---
 # Get started with decision management {#about-decision-management}
 
+>[!IMPORTANT]
+>
+>This page covers getting started with the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Get started with Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
+>
+>Not sure which capability you are using? [Compare Decision management and Decisioning](../../experience-decisioning/gs-decision.md).
+
 Use [!DNL Journey Optimizer] to deliver the best offer and experience to your customers across all touch points at the right time. Once designed, target your audiences with personalized offers.
 
 Decision management makes personalization easy with a central library of marketing offers and a decision engine that applies rules and constraints to rich, real-time profiles created by Adobe Experience Platform to help you send your customers the right offer at the right time.
@@ -150,5 +156,3 @@ The video below provides an introduction to Decision Management key capabilities
 The video below shows how to use Decision Management to define and manage your offers and leverage real-time customer data.
 
 >[!VIDEO](https://video.tv.adobe.com/v/326841?quality=12&learn=on)
-
-
