@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Quiet hours** page now has a **Best practices** section that helps you choose between a standard time zone and the recipient's local time zone, and between **Queue message** and **Discard message**, and that suggests combining quiet hours with frequency capping. It also states that there is no fallback to a default time zone when a profile has no time zone value. [Read more](../conflict-prioritization/quiet-hours.md#best-practices)
+
 * The **Add multiple inbound actions** content is now available on a single page in the **Execution settings** section, covering both journeys and action campaigns. The **Action** activity and **Configure the campaign action** pages now link to it. [Read more](../delivery/multiple-inbound-actions.md)
 
 * The suppression categories and failure reasons are now described in the **Suppression list** page of the deliverability section, together with hard bounces, soft bounces, and spam complaints. The **Manage the suppression list** page now focuses on accessing, editing, and downloading the suppression list. [Read more](../reports/suppression-list.md#suppression-categories-and-reasons)
