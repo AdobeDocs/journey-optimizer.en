@@ -352,6 +352,7 @@ The following improvements are coming to campaigns in this release.
 +++
 -->
 
+<!--
 ### User interface {#oct-26-user-interface}
 
 * [!BADGE Usability]{type=Positive} **Unified calendar for Campaigns, Journeys, and Orchestrated campaigns (Limited Availability)** - The calendar view for journeys and campaigns now moves out of separate inventories into a unified menu accessible from the left rail that shows all three in one combined view. [Learn more](../start/calendar.md)
@@ -359,6 +360,7 @@ The following improvements are coming to campaigns in this release.
   This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
   Availability date: October 29, 2026
+-->
 
 ### Landing pages {#oct-26-landing-pages}
 
