@@ -17,6 +17,7 @@ For complete understanding, this information should be combined with the documen
 * Deliver several inbound experiences from a single action campaign
 * Send a code-based experience to multiple endpoints with slightly different contents
 * Consolidate reporting for several inbound actions in one journey or campaign
+* Apply targeting rules, a content experiment, or both across the inbound actions of a journey action or campaign
 
 **Glossary:**
 
@@ -35,6 +36,9 @@ For complete understanding, this information should be combined with the documen
 * Maximum 10 inbound actions in a journey action group or in a campaign
 * Each action has its own channel configuration and its own content
 * All actions are activated simultaneously once the journey or campaign is live
+* The targeting rules and content experiment configured in a journey action or campaign apply to all its inbound actions, not to a single action
+* Customers are assigned to the same variant across all the inbound actions
+* The content must be defined for each variant of each action
 
 **FAQ:**
 
@@ -42,6 +46,8 @@ For complete understanding, this information should be combined with the documen
 * **Q: How many inbound actions can I add?** — Up to 10 in a journey action group or in a campaign.
 * **Q: When are the actions activated?** — All actions are activated simultaneously once the journey or campaign is live.
 * **Q: Which inbound actions can I combine?** — Code-based experience, In-app message, Content Card, and Web.
+* **Q: Do targeting rules and experiments apply to a single inbound action?** — No; the targeting rules and content experiment you configure apply to all the inbound actions of the campaign or of the journey Action activity. Customers are assigned to the same variant across those actions.
+* **Q: Do I need to define content for each variant of each inbound action?** — Yes; the targeting rules and content experiment apply to all the actions, but you must define the content for each variant of each action.
 * **Q: Do I need to create one journey action or campaign per endpoint?** — No; create multiple actions within the same journey action or campaign, each with a different configuration.
 
 **Personas:**

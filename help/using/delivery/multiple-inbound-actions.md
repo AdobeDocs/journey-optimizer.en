@@ -89,9 +89,16 @@ The following steps are the same in journeys and in action campaigns.
 
 Once the journey is [live](../building-journeys/publish-journey.md) or the campaign is [live](../campaigns/review-activate-campaign.md), all actions are activated simultaneously.
 
+## Use optimization with multiple inbound actions {#optimization}
+
+If a journey action or campaign contains multiple inbound actions, the [targeting rules](../content-management/optimization-targeting.md) and [content experiment](../content-management/optimization-experimentation.md) you configure apply to all of them. [Learn more about content optimization](../content-management/gs-message-optimization.md)
+
+Customers are assigned to the same variant across those actions, but you must define the content for each variant of each action.
+
 ## See also {#see-also}
 
-* [Use the Action activity](../building-journeys/journey-action.md) in a journey
+* [Use the Action activity in a journey](../building-journeys/journey-action.md)
 * [Configure the campaign action](../campaigns/campaign-action.md)
+* [Get started with content optimization](../content-management/gs-message-optimization.md)
 
 {{$include /help/_includes/do-not-localize/delivery/ai-augmented-multiple-inbound-actions.md}}
