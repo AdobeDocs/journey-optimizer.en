@@ -202,6 +202,14 @@ Events must be sent to [!DNL Journey Optimizer] as POST calls through [Adobe Exp
 
 Both authenticated and unauthenticated streaming modes are supported. Batch-ingested events and events from internal [!DNL Journey Optimizer] datasets (message feedback, email tracking, and similar) cannot be used to trigger journeys — use a **Read Audience** activity instead for those use cases.
 
+## Event duplication handling {#event-duplication}
+
+Event duplication can occur in various scenarios, such as, but not limited to:
+
+* Internal auto-scaling of infrastructure for executing journeys. Occasionally, data can be rebalanced due to cloud infrastructure volatility.
+* Due to duplication from Adobe Experience Platform, as described in [Event duplication](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/event-duplication){target="_blank"}.
+
+[!DNL Journey Optimizer] is designed to support "at-least-once" processing. Consequently, event duplication may occur in limited, rare situations.
 
 ## Event throughput limits {#event-throughput}
 

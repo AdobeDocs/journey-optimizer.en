@@ -35,6 +35,7 @@ For complete understanding, this information should be combined with the documen
 * Throughput is limited to 5,000 events per second per organization, across all sandboxes, for unitary events and for Read Audience based journey events (hard limit); when a limit is reached, new events are queued and processed at 5,000 per second until the queue is drained.
 * A capping rule limits the number of qualified events that a journey can process to 5,000 per second for a given Organization for rule-based events, corresponding to Journey Optimizer SLAs.
 * Throughput limits apply to all events used in active journeys, which includes Live, Dry run, Closed, and Paused journeys.
+* Journey Optimizer is designed to support "at-least-once" processing, so event duplication may occur in limited, rare situations, for example during infrastructure auto-scaling (rebalancing) or because of duplication from Adobe Experience Platform.
 * Unitary journeys include a reentrance guardrail: profile reentrance is blocked by default for 5 minutes after the journey triggers.
 * A journey can contain only one business event, which must be the first step; business events cannot be used in the same journey as unitary events or audience qualification activities.
 * Only streamed events can trigger journeys; events ingested in batch, inserted via Query Service, or from internal Journey Optimizer datasets cannot, and a Read Audience activity should be used instead.
@@ -54,6 +55,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Do I need to configure anything for audience qualification events?** — No, they are not configured in Administration > Events; the audience is selected directly on the journey canvas as the first step.
 * **Q: Can I use batch-ingested data to trigger a journey?** — No, only streamed events can trigger journeys; for batch data, build an audience and use a Read Audience activity instead.
 * **Q: What is the throughput limit for events?** — 5,000 events per second per organization, across all sandboxes, for unitary events and for Read Audience based journey events.
+* **Q: Can the same event be processed more than once?** — Yes, in limited, rare situations. Journey Optimizer supports "at-least-once" processing, and duplication can come from infrastructure auto-scaling (rebalancing) or from duplication in Adobe Experience Platform.
 * **Q: My journey is not triggering — what should I check?** — Verify the event schema has Real-Time Customer Profile enabled, confirm events are streamed, check that rule-based conditions match the incoming payload, and confirm the journey is in Live status with the profile meeting any entry conditions.
 
 **Personas:**

@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Work with journey events** page now has an **Event duplication handling** section. It explains that event duplication can occur, for example during infrastructure auto-scaling or because of duplication from Adobe Experience Platform, and that [!DNL Journey Optimizer] is designed to support "at-least-once" processing. [Read more](../event/about-events.md#event-duplication)
+
 * The **Quiet hours** page now has a **Best practices** section that helps you choose between a standard time zone and the recipient's local time zone, and between **Queue message** and **Discard message**, and that suggests combining quiet hours with frequency capping. It also states that there is no fallback to a default time zone when a profile has no time zone value. [Read more](../conflict-prioritization/quiet-hours.md#best-practices)
 
 * The **Add multiple inbound actions** content is now available on a single page in the **Execution settings** section, covering both journeys and action campaigns. The **Action** activity and **Configure the campaign action** pages now link to it. [Read more](../delivery/multiple-inbound-actions.md)
