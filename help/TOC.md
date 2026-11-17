@@ -38,7 +38,6 @@ nudge: yes
     + [Start from your goal](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
     + [Journeys vs campaigns](using/start/journeys-vs-campaigns.md)
-    + [Use the Calendar](using/start/calendar.md)
     + {hide-from-toc} [Journeys vs Campaigns - 2](using/start/journeys-vs-campaigns-v2.md)
     + {hide-from-toc} [Packages and capabilities](using/start/ajo-packages.md)
     + {hide-from-toc} [Feature availability](using/start/ajo-features-availability.md)
@@ -51,6 +50,7 @@ nudge: yes
   + Work efficiently {#work-efficiently}
     + [Navigate the interface](using/start/user-interface.md)
     + [Search, filter & organize](using/start/search-filter-categorize.md)
+    + [Use the Calendar](using/start/calendar.md)
     + [Accessibility](using/start/accessibility.md)
     + [Troubleshooting FAQ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/monitor/troubleshooting/troubleshooting)
 + Journeys {#orchestrate-journeys}
