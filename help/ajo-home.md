@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Adobe Journey Optimizer Documentation
-description: Adobe Journey Optimizer Documentation
+description: Find guides for building journeys and campaigns, configuring channels, managing audiences and data, personalizing messages, and reporting in Adobe Journey Optimizer.
 redpen-status: CREATED_||_2025-08-11_21-21-01
 exl-id: 3a1b6c61-82df-421c-98d8-2af4f2a5e0de
 product_v2:
@@ -11,19 +11,13 @@ product_v2:
 ---
 # Adobe Journey Optimizer Documentation{#section-overview}
 
-Adobe Journey Optimizer empowers teams to design and deliver seamless, personalized customer experiences across channels like email, mobile messages, and more. By combining advanced tools for campaign orchestration, data management, and decision-making, it helps you create journeys that adapt to customer needs in real time. This documentation offers a roadmap for mastering the platform- from exploring its latest features and integrations to learning how to manage audiences, configure journeys, and analyze performance. Whether you're a marketer, data analyst, or campaign manager, you'll find step-by-step guides, best practices, and resources tailored to help you achieve your goals with confidence.
+Adobe Journey Optimizer helps you design and deliver personalized, real-time customer experiences across channels such as email, push notifications, SMS, and in-app messages. Use this documentation to build journeys and campaigns, configure channels, manage audiences and data, and measure performance. If you are new to the product, start with [Get started](./rp_landing_pages/get-started-landing-page.md).
 
-## What's new? {#section-new}
+## What is new {#section-new}
 
-Get a glimpse of the newest enhancements in Journey Optimizer product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](using/rn/release-notes.md).
+Get a glimpse of the newest enhancements in Journey Optimizer product and documentation. For a comprehensive list of features, improvements, and fixes, see the [Release Notes](using/rn/release-notes.md).
 
 >[!BEGINTABS]
-
->[!TAB Latest updates]
-
-Discover the latest Journey Optimizer features and improvements in the Release Notes.
-
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
 >[!TAB Loyalty Challenges]
 
@@ -33,10 +27,9 @@ Discover how to create and manage **Loyalty Challenges** to engage and reward yo
 
 >[!TAB Journey Optimizer skills in CX Enterprise Coworker]
 
-We've added a new documentation page for **Journey Optimizer skills in Coworker**, including both **journey-focused** and **loyalty-focused** skills, with guidance and sample prompts.
+A new documentation page covers **Journey Optimizer skills in Coworker**, including both **journey-focused** and **loyalty-focused** skills, with guidance and sample prompts.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/start/ai-features.md#cx-coworker)
-
 
 >[!TAB Iterate over contextual data]
 
@@ -46,87 +39,179 @@ Learn how to use iteration syntax to display dynamic lists of data from various 
 
 >[!ENDTABS]
 
+## Explore by topic {#section-explore}
 
-## Start Exploring {#section-explore}
+### Get started and build {#build}
 
 ::::landing-cards-container
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
-
-Latest Release Notes
-
-Stay updated with the latest release notes, new features, and improvements in Adobe Journey Optimizer.
-
-[View Release Notes](using/rn/release-notes.md)
-:::
-
-:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
-Get Started
+Get started
 
 Learn the basics of Journey Optimizer, including its capabilities, architecture, and user interface.
 
-[Get Started](./rp_landing_pages/get-started-landing-page.md)
+[Get started](./rp_landing_pages/get-started-landing-page.md)
 :::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-Comprehensive Guide to Journeys
+Journeys
 
-Design, orchestrate, manage, and optimize personalized customer journeys with this in-depth guide.
+Design, orchestrate, manage, and optimize personalized customer journeys.
 
-[Explore Journeys](using/building-journeys/journey.md)
+[Explore journeys](./using/building-journeys/journey.md)
 :::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/bullhorn.svg)
 
-Understanding and Managing Campaigns
+Campaigns
 
-Detailed guidance on creating, managing, and optimizing various campaign types for effective targeting.
+Create, manage, and optimize campaigns to target your audiences.
 
-[Learn About Campaigns](using/campaigns/get-started-with-campaigns.md)
+[Learn about campaigns](./using/campaigns/get-started-with-campaigns.md)
 :::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/envelope.svg)
 
-Communication Channels
+Channels
 
-Configure and manage email, mobile messages, push notifications, and other channels for personalized customer interactions.
+Create content for email, mobile messages, push notifications, and other channels.
 
-[Explore Channels](./using/channels/gs-channels.md)
+[Explore channels](./using/channels/gs-channels.md)
+:::
+
+::::
+
+### Personalize and decide {#personalize}
+
+::::landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+
+Decisioning
+
+Create and manage personalized offers and decisions to optimize your communications.
+
+[Explore decisioning](./rp_landing_pages/decisioning-landing-page.md)
 :::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/scale-balanced.svg)
 
-Conflict Management and Prioritization
+Conflict management and prioritization
 
-Learn how to prioritize and manage communication conflicts across campaigns and journeys effectively.
+Prioritize and manage communication conflicts across campaigns and journeys.
 
-[Learn Conflict Management](./using/conflict-prioritization/gs-conflict-prioritization.md)
+[Learn about conflict management](./using/conflict-prioritization/gs-conflict-prioritization.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/vial.svg)
+
+Testing, validation, and approval
+
+Test and approve your content, journeys, and campaigns before deployment.
+
+[Explore testing and approval](./rp_landing_pages/test-landing-page.md)
 :::
 
 ::::
 
+### Audiences, data, and reporting {#data}
 
-## Additional Resources
+::::landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
 
-- **[Testing, Validation, and Approval](./rp_landing_pages/test-landing-page.md)** - Test and approve your content, journeys, and campaigns to ensure quality and accuracy before deployment.
-- **[Audiences, Profiles, and Identities](./rp_landing_pages/audiences-profiles-identities-landing-page.md)** - Manage audiences, profiles, and identities to enable effective targeting and personalization.
-- **[Comprehensive Reporting](./rp_landing_pages/reporting-landing-page.md)** - Analyze and optimize journeys, campaigns, and channels with advanced reporting features.
-- **[Decision Capabilities](./rp_landing_pages/decisioning-landing-page.md)** - Leverage decisioning tools to create and manage personalized offers and optimize marketing workflows.
-- **[Comprehensive Data Management](./rp_landing_pages/data-management-landing-page.md)** - Manage data effectively with tools for governance, schema usage, and querying capabilities.
-- **[Channel Configuration](./using/configuration/get-started-configuration.md)** - Set up and optimize communication channels for compliance and enhanced campaign performance.
-- **[Journey Configuration](./rp_landing_pages/configure-journeys-landing-page.md)** - Configure data sources, events, and actions to build seamless customer journeys.
-- **[Connect Systems and Environments](./rp_landing_pages/connect-systems-landing-page.md)** - Integrate Adobe Journey Optimizer with external systems, APIs, and Adobe solutions.
-- **[Managing Access Control](./rp_landing_pages/access-control-landing-page.md)** - Control user access, roles, and permissions to protect data and ensure governance.
-- **[Privacy, Consent, and Data Governance](./rp_landing_pages/privacy-landing-page.md)** - Manage data privacy, consent, and governance to comply with regulations and protect sensitive information.
+Audiences, profiles, and identities
 
-## Additional resources
+Manage audiences, profiles, and identities to enable targeting and personalization.
+
+[Explore audiences](./rp_landing_pages/audiences-profiles-identities-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
+
+Data management
+
+Work with governance, schemas, and querying capabilities.
+
+[Explore data management](./rp_landing_pages/data-management-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+
+Reporting
+
+Analyze and optimize journeys, campaigns, and channels.
+
+[Explore reporting](./rp_landing_pages/reporting-landing-page.md)
+:::
+
+::::
+
+### Configure, connect, and govern {#configure}
+
+::::landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+
+Channel configuration
+
+Set up communication channels for compliance and performance.
+
+[Configure channels](./using/configuration/get-started-configuration.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
+
+Journey configuration
+
+Configure data sources, events, and actions to build journeys.
+
+[Configure journeys](./rp_landing_pages/configure-journeys-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+
+Connect systems and environments
+
+Integrate Journey Optimizer with external systems, APIs, and Adobe solutions.
+
+[Connect systems](./rp_landing_pages/connect-systems-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+
+Access control
+
+Control user access, roles, and permissions.
+
+[Manage access](./rp_landing_pages/access-control-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
+
+Privacy, consent, and data governance
+
+Manage privacy, consent, and governance to comply with regulations.
+
+[Explore privacy and consent](./rp_landing_pages/privacy-landing-page.md)
+:::
+
+::::
+
+## More resources
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Adobe Journey Optimizer</strong><br/>
@@ -137,9 +222,3 @@ Learn how to prioritize and manage communication conflicts across campaigns and 
 <a href="https://experienceleague.adobe.com/docs/experience-platform/landing/home.html" target="_blank">Documentation</a> - <a href="https://www.adobe.com/experience-platform/documentation-and-developer-resources.html" target="_blank">Developers resources</a>
 </td>
 </tr></table>
-
-<!--
-table style="table-layout:auto"><tr style="border: 0;"><td><img src="using/assets/do-not-localize/newsletter.png"></td><td>
-<b>Stay informed and elevate your Adobe Journey Optimizer experience!</b><br/>Sign up for our quarterly newsletter. Gain exclusive access to the latest product updates, captivating stories, real-world use cases, valuable tips, and more – all delivered directly to your inbox every quarter. <a href="https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html">Sign up today!</a></td></tr></table
--->
-
