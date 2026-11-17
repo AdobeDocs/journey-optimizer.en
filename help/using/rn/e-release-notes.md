@@ -28,26 +28,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 **Release date**: November 17-18, 2026
 
-### Journeys {#nov-26-journeys}
-
-The following capabilities and improvements are coming to journeys in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>AI recommendation cards for journey alerts</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Spend less time investigating journey issues and get a head start on resolving them. When a <strong>Journey Custom Action failure</strong> or <strong>Journey Anomaly Detected</strong> alert fires, an <strong>AI Recommendations</strong> card on the Journey Optimizer home page highlights the issue. Select the card to review analysis and recommended next steps already prepared in Coworker, without having to request an investigation first. Continue the conversation to explore the findings and decide how to address the issue.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 ### Decisioning {#nov-26-decisioning}
 
 The following improvements are coming to Decisioning in this release.
