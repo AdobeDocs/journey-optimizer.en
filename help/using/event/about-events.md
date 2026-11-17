@@ -245,7 +245,7 @@ The following types of events are counted toward these quotas:
 
 To avoid breaking existing journeys, when you edit an event used in a **Draft**, **Live** or **Closed** journey, you can only change the name, the description or add payload fields. 
 
-Any event used in **Live**, **Draft** or **Closed** journeys cannot be deleted. To delete a used event, you must stop journeys using it, and/or remove it from the Draft journeys where it is used. You can check the **[!UICONTROL Used in]** field. It displays the number of journeys that use that particular event. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
+Any event used in **Live** or **Closed** journeys cannot be deleted. To delete a used event, you must stop journeys using it, and/or remove it from the Draft journeys where it is used. You can check the **[!UICONTROL Used in]** field. It displays the number of journeys that use that particular event. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
 
 ## Frequently asked questions {#faq}
 
