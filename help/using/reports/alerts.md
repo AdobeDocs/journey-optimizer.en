@@ -88,6 +88,8 @@ Alert lifecycle:
 3. **Monitoring**: The alert continues to monitor the condition at regular intervals
 4. **Resolution**: When the condition is resolved, subscribers receive a "Resolved" notification
 
+For the **Journey Anomaly Detected** and **Custom action error rate exceeded** alerts, [AI Recommendations](../start/user-interface.md#ai-recommendations) can also surface a card on the Journey Optimizer home page, with the analysis already prepared in Coworker (Limited Availability).
+
 System alerts can be managed from the **[!UICONTROL Alerts]** menu under **[!UICONTROL Administration]**. Adobe Experience Platform provides several predefined alert rules that you can enable, including [!DNL Adobe Journey Optimizer]-specific alerts for journeys and channel configurations.
 
 ## Prerequisites
