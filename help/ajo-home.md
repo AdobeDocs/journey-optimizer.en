@@ -55,6 +55,16 @@ Learn the basics of Journey Optimizer, including its capabilities, architecture,
 :::
 
 :::
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+
+Onboarding hub
+
+Follow step-by-step instructions, use cases, and videos to deliver your first customer experience.
+
+[Explore the onboarding hub](./using/start/onboarding-hub.md)
+:::
+
+:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Journeys
