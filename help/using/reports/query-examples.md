@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Examples of queries
-description: Examples of queries
+description: Learn how to query Journey Optimizer data in the Data Lake, with example queries for journeys, profiles, audiences, events, and message errors.
 feature: Reporting, Journeys
 topic: Content Management
 role: Developer, Admin
@@ -1139,7 +1139,7 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 
 ## Queries for engageable profiles {#engageable-profiles-queries}
 
-These queries help you monitor and analyze your Engageable Profiles count. An Engageable Profile is a unique profile that has been engaged through journeys or campaigns in the past 12 months. Learn more about [Engageable Profiles and license usage](../audience/license-usage.md#what-is-engageable-profile).
+These queries help you monitor and analyze your Engageable Profiles count. An Engageable Profile is a unique profile that has been engaged through journeys or campaigns in the past 12 months. Learn more about [Engageable Profiles and license usage](../audience/get-started-profiles.md#engageable-profiles).
 
 **Best practices for querying Engageable Profiles:**
 

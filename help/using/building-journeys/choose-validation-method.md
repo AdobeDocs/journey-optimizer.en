@@ -7,7 +7,6 @@ feature: Journeys, Get Started, Test Profiles
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-keywords: test, simulate, simulation, test mode, dry run, journey, validate, compare, choose, decision guide
 version: Journey Orchestration
 feature_v2:
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
