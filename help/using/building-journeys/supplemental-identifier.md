@@ -148,7 +148,7 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
 
 Use the expression editor and personalization editor to reference attributes of the supplemental identifier for personalization or conditional logic. Attributes are accessible from the **[!UICONTROL Contextual attributes]** menu.
 
-The supplemental ID value of the current journey instance is available as the `context.journey.technicalProperties.supplementalId` contextual attribute, and as `${supplementalId}` in conditions. It identifies which record the current journey instance was created for, so you can use it to personalize a message or to choose a path. The other attributes of that record, such as the booking country in the example below, are read separately from the data that contains it.
+The supplemental ID value of the current journey instance is available as the `context.journey.technicalProperties.supplementalId` contextual attribute, and as `${supplementalId}` in conditions. It identifies which record the current journey instance was created for, so you can use it to personalize a message or to choose a path. The other attributes of that record, such as the booking country in the example below, are read separately from the data that contains it. For more expression examples, see the examples below and [Use journey technical properties](../personalization/iterate-contextual-data.md#technical-properties).
 
 ![Personalization editor showing supplemental identifier fields for content](assets/supplemental-ID-perso.png)
 
@@ -335,7 +335,7 @@ These examples show how supplemental identifiers support multiple related record
 ### Account notifications
 
 * **Scenario**: A bank sends a message for each account a customer holds.
-* **Data model**: The profile has an `accounts` object array. Each object contains a string `accountId` and other account attributes. Select `accountId` as the supplemental identifier. An array of account ID strings is not supported.
+* **Data model**: The profile has an `accounts` object array. Each object contains a string `accountId` and other account attributes. Select `accountId` as the supplemental identifier. For the supported data types, see [Guardrails & limitations](#guardrails).
 * **Execution**:
   * Profile: "Maria".
   * Supplemental IDs: `"ACC-1001", "ACC-1002"`.
