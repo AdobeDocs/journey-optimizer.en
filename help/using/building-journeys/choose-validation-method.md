@@ -84,7 +84,7 @@ Key mechanics:
 >
 >Journey Test mode sends real messages to the actual inboxes of your test profiles, using the same delivery pipeline as production. It does not contact real customers, but it is not a "dry" simulation either — make sure your test profiles use addresses you control.
 
-**Pain point:** Creating and propagating new AEP test profiles takes time. [Journey Simulation](simulate-journey-gs.md) offers a fast alternative that requires no test profiles at all. It is useful not only while you wait for profiles to propagate, but any time creating a suitable test profile for your use case is impractical.
+**Pain point:** Test profiles are created in Adobe Experience Platform, and testing a branch requires a test profile whose data matches that branch. Creating and propagating new AEP test profiles takes time, especially for a journey with many branches. [Journey Simulation](simulate-journey-gs.md) offers a fast alternative that requires no test profiles at all. It is useful not only while you wait for profiles to propagate, but any time creating a suitable test profile for your use case is impractical.
 
 ➡️ [Test your journey](testing-the-journey.md)
 
