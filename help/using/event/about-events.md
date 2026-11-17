@@ -102,7 +102,7 @@ You can configure three types of events: **Unitary events**, **Business events**
 
 **Business** events are not linked to a specific profile. For example, it can be a news alert, a sports update, a flight change or cancelation, an inventory update, weather events, etc. While these events are not specific to a profile, they may be of interest to any number of profiles: individuals subscribed to particular news topics, passengers on a flight, shoppers interested in an out-of-stock product, etc. Business events are always rule-based. When you drop a business event in a journey, it automatically adds a **Read audience** activity right after. [Learn how to create a business event](../event/about-creating-business.md).
 
-**Schema requirement:** A time-series XDM schema with a non-person primary identity, and the `_id` and `timestamp` fields populated. Plan for an audience export delay of 15 minutes to up to one hour.
+**Schema requirement:** A time-series XDM schema with a non-person primary identity, and the `_id` and `timestamp` fields populated. Plan for the **Read Audience** activity to take up to one hour to process after the event is received.
 
 **Example:** An airline cancels a flight. A business event fires, [!DNL Journey Optimizer] reads the audience of affected passengers, and sends each a rebooking notification.
 
@@ -172,7 +172,7 @@ Each event type maps to a specific journey pattern:
 
 * **Choose a unitary event** when the trigger is tied to a specific individual — for example, a purchase, a form submission, or a loyalty milestone. Unitary events require a person-based primary identity in the schema and start the journey immediately for that profile. [Learn how to configure a unitary event](../event/about-creating.md).
 
-* **Choose a business event** when the trigger is a global occurrence — for example, a product restock, a price drop, or a flight cancellation — and you want to broadcast to a set of profiles related to that signal. Business events must be the first step in the journey and automatically target profiles via a **Read Audience** activity. They require a time-series schema with a non-people primary identity and the `_id` and `timestamp` fields. Plan for an audience export delay of 15 minutes to up to one hour. [Learn how to configure a business event](../event/about-creating-business.md).
+* **Choose a business event** when the trigger is a global occurrence — for example, a product restock, a price drop, or a flight cancellation — and you want to broadcast to a set of profiles related to that signal. Business events must be the first step in the journey and automatically target profiles via a **Read Audience** activity. They require a time-series schema with a non-people primary identity and the `_id` and `timestamp` fields. Plan for the **Read Audience** activity to take up to one hour to process after the event is received. [Learn how to configure a business event](../event/about-creating-business.md).
 
 * **Choose an audience qualification event** when the trigger is a profile entering or exiting an audience, and you need more complex segmentation logic than a single event can provide — for example, re-engaging lapsed customers who just met a spend threshold, or triggering an offboarding flow when a VIP member drops out of the loyalty tier. [Learn more on audience qualification events](../building-journeys/audience-qualification-events.md).
 
