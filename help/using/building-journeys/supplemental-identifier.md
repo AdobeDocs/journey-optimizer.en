@@ -332,7 +332,7 @@ These examples show how supplemental identifiers support multiple related record
   * Supplemental IDs: `"productID1234", "productID5678"`.
   * Journey executes separately for each product, with personalized upsell opportunities.
 
-### **Account notifications**
+### Account notifications
 
 * **Scenario**: A bank sends a message for each account a customer holds.
 * **Data model**: The profile has an `accounts` object array. Each object contains a string `accountId` and other account attributes. Select `accountId` as the supplemental identifier. An array of account ID strings is not supported.
