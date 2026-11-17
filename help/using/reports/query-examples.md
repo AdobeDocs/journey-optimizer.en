@@ -1145,7 +1145,7 @@ These queries help you monitor and analyze your Engageable Profiles count. An En
 
 * Ensure each non-aggregate field is included in the `GROUP BY` clause
 * Avoid referencing datasets that don't exist in your sandbox - confirm dataset names in the Platform UI
-* Use `distinct` when counting unique profiles to avoid duplicates across identity namespaces
+* Use `distinct` when counting unique profiles so that the same `profileID` is counted only once. It does not merge the identifiers of one person across identity namespaces.
 * When using `LIMIT`, place it at the end of the query after `ORDER BY` clauses
 
 +++Count unique profiles engaged by a specific journey
@@ -1278,6 +1278,8 @@ This single number represents the total count of unique identities that have bee
 >[!NOTE]
 >
 >This query counts distinct profile IDs in the journey step events dataset. The actual Engageable Profiles count shown in the [License Usage Dashboard](../audience/license-usage.md) may differ slightly, as it also includes profiles engaged through campaigns and other Journey Optimizer capabilities beyond journeys.
+>
+>This query counts distinct `profileID` values, which are the identities in the namespace that each journey uses. If the same person is engaged by journeys that use different namespaces (for example, ECID in one journey and a CRM ID in another), that person is counted once for each identifier. The result can therefore be higher than the number of distinct people.
 
 +++
 
