@@ -78,7 +78,7 @@ Business events can be "a product is back in stock", "the stock price of a compa
 * When testing a business event, you have to pass the event parameters and the identifier of the test profile that will enter the journey in test. Also, when testing a business event based journey, you can only trigger single profile entrance. See [this section](../building-journeys/testing-the-journey.md#test-business). In test mode, there is no "Code view" mode available.
 * What happens to individuals that are currently in the journey if a new business event arrives? It behaves the same way as when individuals are still in a recurring journey when a new recurrence happens. Their path is ended. As a result, marketers must pay attention to avoid building too long journeys if they expect frequent business events.
 * Business events cannot be used in conjunction with unitary events or audience qualification activities.
-* The payload of a business event is limited to a maximum of **64 KB of uncompressed, minified JSON**. This limit also applies to unitary events. Events exceeding this size are dropped and will not trigger the journey. [Learn more about guardrails and limitations](../start/guardrails.md#journeys-guardrails-journeys).
+* The payload of each business event is limited to a maximum of **64 KB of uncompressed, minified JSON**. This limit also applies to unitary events. An event whose payload exceeds this size is dropped and does not trigger the journey. [Learn more about guardrails and limitations](../start/guardrails.md#journeys-guardrails-journeys).
 
 ## Multiple business events {#multiple-business-events}
 
@@ -90,7 +90,7 @@ Business events follow reentrance rules in the same way as for unitary events. I
 
 **What are the guardrails to avoid over-loading materialized audiences?**
 
-In the case of on-shot business events, for a given journey, data pushed by the first event job is reused during a 1-hour time window. For scheduled journeys, there is no guardrail. Learn more about audiences in the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
+In the case of one-shot business events, for a given journey, data pushed by the first event job is reused during a 1-hour time window. A one-shot journey runs once, when the business event occurs. To allow it to run again, [activate the multiple executions option](#important-notes). A scheduled journey runs on a regular basis, and for these journeys there is no guardrail. Learn more about audiences in the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 
 ## Get started with business events {#gs-business-events}
 
@@ -118,7 +118,7 @@ Here are the first steps to configure a business event:
 
 1. The number of journeys that use this event is displayed in the **[!UICONTROL Used in]** field. You can click the **[!UICONTROL View journeys]** icon to display the list of journeys using this event.
 
-1. Define the schema and payload fields: this is where you select the event information (or payload) journeys expects to receive. You will use this information later in your journey. See [this section](../event/about-creating-business.md#define-the-payload-fields).
+1. Define the schema and payload fields: this is where you select the event information (or payload) journeys expects to receive. You will use this information later in your journey. See [Define the payload fields](#define-the-payload-fields).
 
    ![](assets/jo-event5-business.png)
 

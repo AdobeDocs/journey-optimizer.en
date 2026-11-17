@@ -60,7 +60,7 @@ topic_v2:
 
 Use events to trigger journeys individually, delivering real-time messages to each user as they enter the journey. In the event configuration, you configure the events expected in the journeys. You can use multiple events (in different steps of a journey) and several journeys can use the same event.
 
-Event configuration is **mandatory** and must be performed by a Data engineer.
+Event configuration is **mandatory** and must be performed by a Data Engineer or an Administrator.
 
 >[!IMPORTANT]
 >
@@ -86,8 +86,6 @@ You can configure three types of events: **Unitary events**, **Business events**
 
 ➡️ [Discover this feature in video](#video)
 
-➡️ [Discover this feature in video](#video)
-
 ## Unitary events {#unitary-events}
 
 **Unitary** events are linked to a person. They relate to the behavior of a person (for example, a person bought a product, visited a shop, exited a website, etc.) or something happening linked to a person (for example, a person reached 10,000 loyalty points). This is what [!DNL Journey Optimizer] will listen to in journeys to orchestrate the best next actions. Unitary events can be rule-based or system generated. [Learn how to create a unitary event](../event/about-creating.md).
@@ -98,7 +96,7 @@ You can configure three types of events: **Unitary events**, **Business events**
 
 >[!NOTE]
 >
->Unitary journeys include a reentrance guardrail: profile reentrance is blocked by default for 5 minutes after the journey triggers. For example, if an event triggers a journey at 12:01 for a profile and another arrives at 12:03, the journey does not restart for that profile.
+>Unitary journeys include a reentrance guardrail: by default, a profile cannot reenter the same journey for 5 minutes after it entered it. This default is the **[!UICONTROL Reentrance wait period]** of the journey, which you can change. For example, if an event triggers a journey at 12:01 for a profile and another arrives at 12:03, the journey does not restart for that profile. [Learn more about reentrance](../building-journeys/entry-management.md)
 
 ## Business events {#business-events}
 
@@ -146,7 +144,7 @@ For **unitary** events, there are two types of event ID:
 
    >[!CAUTION]
    >
-   >A capping rule is defined for rule-based events. It limits the number of qualified events that a journey can process to 5,000 per seconds for a given Organization. It corresponds to Journey Optimizer SLAs. Refer to your Journey Optimizer licensing.
+   >A capping rule is defined for rule-based events. It limits the number of qualified events that Journey Optimizer can process to 5,000 per second for a given organization. This is the same limit as the one described in [Event throughput limits](#event-throughput). Refer to your Journey Optimizer license for your entitlement.
 
 * **System-generated** events: these events require an eventID. This eventID field is automatically generated when creating the event. The system pushing the event should not generate an ID, it should pass the one available in the payload preview. 
 
@@ -189,7 +187,7 @@ Use this summary to plan your implementation before configuring events.
 | Constraint | Details |
 | --- | --- |
 | Throughput limit | 5,000 events per second per organization, across all sandboxes (unitary and Read Audience journeys) |
-| Reentrance block | Profile reentrance blocked for 5 minutes after a unitary journey triggers |
+| Reentrance block | By default, a profile cannot reenter the same unitary journey for 5 minutes (configurable with the reentrance wait period) |
 | Business events per journey | Maximum 1, must be the first step |
 | Mix business + unitary in one journey | Not supported |
 | Batch events | Cannot trigger journeys — use a **Read Audience** activity instead |
@@ -218,7 +216,7 @@ Adobe Journey Optimizer enforces separate throughput limits per event type, at a
 * **Unitary events**: 5,000 events per second
 * **Read Audience based journey events**: 5,000 events per second
 
-These limits apply to all events used in active journeys, which includes **Live**, **Dry run**, **Closed** and **Paused** journeys. When a limit is reached, new events get queued and processed at 5,000 per second until the queue is drained.
+These limits apply to all events used in active journeys, which includes **Live**, **Dry run**, **Closed** and **Paused** journeys. A dry run is a journey publication mode that runs your journey against real production data without contacting customers. [Learn more about Journey Dry run](../building-journeys/journey-dry-run.md). When a limit is reached, new events get queued and processed at 5,000 per second until the queue is drained.
 
 For more details on journey processing rates and how different journey types impact throughput, [learn more on journey processing rates](../building-journeys/entry-management.md#journey-processing-rate).
 

@@ -41,7 +41,7 @@ topic_v2:
 >
 >Starting July 8 2025, in new customer organizations, creating expressions using experience events is no longer supported in the expression editor used in journey conditions. As a result, experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) cannot be used for creating expressions.
 >
->Starting April 1, 2026, the use of experience event attributes in journey expressions will no longer be supported for organizations that have not used this capability in the last 90 days. Alternative approaches and best practices for creating expressions/logic with experience events are referenced below.
+>Starting April 1, 2026, the use of experience event attributes in journey expressions is no longer supported for organizations that had not used this capability in the last 90 days. Alternative approaches and best practices for creating expressions/logic with experience events are referenced below.
 >
 >Need more details? [Read out the FAQ](#faq-ee).
 
@@ -180,7 +180,7 @@ Only the lookup of experience events in the expression editor is impacted. The f
 
 +++Are my existing Adobe Organization impacted by this update?
 
-Starting July 8, 2025, new customer organizations cannot create expressions using experience event attributes. Starting April 1, 2026, organizations that have not accessed experience events via journey expressions in the last 90 days will no longer have access to this capability.
+Starting July 8, 2025, new customer organizations cannot create expressions using experience event attributes. Starting April 1, 2026, the use of experience event attributes in journey expressions is no longer supported for organizations that had not used this capability in the last 90 days.
 
 +++
 
