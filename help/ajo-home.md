@@ -84,6 +84,16 @@ Create content for email, mobile messages, push notifications, and other channel
 [Explore channels](./using/channels/gs-channels.md)
 :::
 
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/comment-dots.svg)
+
+Work with AI
+
+Learn how AI and machine learning enhance Journey Optimizer capabilities.
+
+[Explore AI features](./using/start/ai-features.md)
+:::
+
 ::::
 
 ### Personalize and decide {#personalize}
