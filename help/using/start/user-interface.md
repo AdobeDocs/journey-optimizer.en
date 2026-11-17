@@ -138,31 +138,27 @@ Keyboard shortcuts and accessibility features are available. [Learn more](access
 
 The home page provides:
 
-* **CX Enterprise Coworker** - Enter a business goal in the **"What would you like to accomplish today?"** prompt to start a conversation.
+* **CX Enterprise Coworker** - Start a conversation from the prompt, and review AI recommendations (Limited Availability) when a journey alert is triggered. [Learn more](#cx-enterprise-coworker)
 * **Recents** - Shortcuts to recently created events, journeys, campaigns, and other objects
 * **Resources** - Links to documentation, tutorials, and support
-* **AI Recommendations** (Limited Availability) - Proactive, AI-generated recommendations when a journey alert is triggered
 
-### AI Recommendations {#ai-recommendations}
+### Coworker and AI Recommendations {#cx-enterprise-coworker}
 
-The **[!UICONTROL AI Recommendations]** panel, on the right side of the home page, surfaces AI-generated recommendations when specific alerts are triggered.
+CX Enterprise Coworker is the in-product conversational experience. On the Journey Optimizer home page, enter a business goal in the **"What would you like to accomplish today?"** prompt to start a conversation. It provides instant help and operational insights. [Learn more about CX Enterprise Coworker](ai-features.md#cx-coworker).
+
+Coworker can also start working for you. The **[!UICONTROL AI Recommendations]** panel, on the right side of the home page, surfaces AI-generated recommendations when specific alerts are triggered. For now, AI recommendations support two alerts: **Journey Anomaly Detected** and **Custom action error rate exceeded**. [Learn more about these alerts](../reports/alerts.md#available-alerts).
+
+![](assets/ai-recommendations-home.png)
+
+By default, AI monitoring is disabled. To enable it, locate the **[!UICONTROL AI Recommendations]** panel on the home page, then select **[!UICONTROL Enable]**.
+
+Once enabled, select a recommendation card to open Coworker and review the analysis and recommended next steps already prepared, without having to request an investigation first. The analysis includes the detected issue, relevant findings, and recommended actions. Continue the conversation to explore the findings and decide how to address the issue.
+
+![](assets/ai-recommendations-coworker.png)
 
 >[!AVAILABILITY]
 >
 >AI Recommendations is available in Limited Availability for a set of organizations. Contact your Adobe representative to request access.
-
-For now, AI recommendations support two alerts: **Journey Anomaly Detected** and **Custom action error rate exceeded**. [Learn more about these alerts](../reports/alerts.md#available-alerts).
-
-![](assets/ai-recommendations-home.png)
-
->[!NOTE]
->
->By default, AI monitoring is disabled. To enable it, locate the **[!UICONTROL AI Recommendations]** panel on the home page, then select **[!UICONTROL Enable]**.
-
-Select a recommendation card to open Coworker and review the analysis and recommended next steps already prepared, without having to request an investigation first. The analysis includes the detected issue, relevant findings, and recommended actions. Continue the conversation to explore the findings and decide how to address the issue.
-
-![](assets/ai-recommendations-coworker.png)
-
 
 ## Left navigation {#left-nav}
 
@@ -236,10 +232,6 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 * **Sandboxes** - Manage environments and copy objects between sandboxes. [Work with sandboxes](../administration/sandboxes.md)
 * **Channels** - Configure channel settings and deliverability. [Set up channel configurations](../configuration/channel-surfaces.md) | [Get started with configuration](../configuration/get-started-configuration.md)
 * **Tags** - Organize and categorize content. [Work with unified tags](search-filter-categorize.md#tags)
-
-## CX Enterprise Coworker {#cx-enterprise-coworker}
-
-CX Enterprise Coworker is the in-product conversational experience. On the Journey Optimizer home page, enter a business goal in the **"What would you like to accomplish today?"** prompt to start a conversation. It provides instant help and operational insights. [Learn more about CX Enterprise Coworker](ai-features.md#cx-coworker).
 
 ## Related topics {#related-topics}
 

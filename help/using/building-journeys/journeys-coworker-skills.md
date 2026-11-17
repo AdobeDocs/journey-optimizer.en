@@ -209,7 +209,7 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
 
 ### Proactive analysis from journey alerts {#journey-analyze-alerts}
 
-The **Analyze Journey Anomalies** and **Journey Custom Action Error Analysis** skills can also run without a prompt. When the **Journey Anomaly Detected** or **Custom action error rate exceeded** alert is triggered, an **[!UICONTROL AI Recommendations]** card appears on the Journey Optimizer home page. Select the card to open Coworker and review the analysis and recommended next steps already prepared, then continue the conversation to explore the findings. [Learn more about AI Recommendations](../start/user-interface.md#ai-recommendations)
+The **Analyze Journey Anomalies** and **Journey Custom Action Error Analysis** skills can also run without a prompt. When the **Journey Anomaly Detected** or **Custom action error rate exceeded** alert is triggered, an **[!UICONTROL AI Recommendations]** card appears on the Journey Optimizer home page. Select the card to open Coworker and review the analysis and recommended next steps already prepared, then continue the conversation to explore the findings. [Learn more about AI Recommendations](../start/user-interface.md#cx-enterprise-coworker)
 
 >[!AVAILABILITY]
 >

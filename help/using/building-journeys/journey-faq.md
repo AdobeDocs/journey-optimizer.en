@@ -1005,7 +1005,7 @@ Learn more about [journey design](using-the-journey-designer.md) and [guardrails
 * Track [journey metrics](report-journey.md) regularly
 * Monitor API performance for [custom actions](using-custom-actions.md)
 * Review error rates and timeout occurrences using [troubleshooting tools](troubleshooting.md)
-* Subscribe to [journey alerts](../reports/alerts.md) critical journey failures, and enable [AI Recommendations](../start/user-interface.md#ai-recommendations) (Limited Availability) to get an AI analysis of the Journey Anomaly Detected and Custom action error rate exceeded alerts
+* Subscribe to [journey alerts](../reports/alerts.md) critical journey failures, and enable [AI Recommendations](../start/user-interface.md#cx-enterprise-coworker) (Limited Availability) to get an AI analysis of the Journey Anomaly Detected and Custom action error rate exceeded alerts
 
 **Optimization**:
 
