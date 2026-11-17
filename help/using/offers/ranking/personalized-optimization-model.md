@@ -91,7 +91,7 @@ There are 3 types of features:
 
 >[!IMPORTANT]
 >
->You are responsible for ensuring that data used to train Personalized optimization models — including profile, audience, and context features — is appropriate for your use case and complies with applicable laws and regulations. Sensitive or protected information, and attributes or audience memberships that proxy for it, may introduce or amplify bias in model outcomes.
+>You are responsible for ensuring that data used to train Personalized optimization models — including audience and context features — is appropriate for your use case and complies with applicable laws and regulations. Sensitive or protected information, and attributes or audience memberships that proxy for it, may introduce or amplify bias in model outcomes.
 
 The model has two phases:
 
