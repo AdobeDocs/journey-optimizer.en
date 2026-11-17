@@ -33,7 +33,7 @@ For complete understanding, this information should be combined with the documen
 
 * This integration only applies for rule-based events and customers who need to use Adobe Analytics or Web SDK data; customers using Adobe Customer Journey Analytics are directed to a separate page.
 * The activation step of contacting Adobe to enable the environment is only required for Adobe Analytics data sources.
-* In the page's example, the event uses the Unitary Type and the Rule based Event ID type, with the Analytics or WebSDK schema created before.
+* Analytics or Web SDK events only work with the Unitary Type; the page's example also uses the Rule based Event ID type, with the Analytics or WebSDK schema created before.
 * Data coming from Adobe Analytics or Web SDK must be enabled before it can be used in journeys.
 
 **Terminology:**
@@ -44,7 +44,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Which event configuration is used for Adobe Analytics or Web SDK data?** — In the page's example, a Unitary event with a Rule based Event ID type, using the Analytics or WebSDK schema.
+* **Q: Which event configuration is used for Adobe Analytics or Web SDK data?** — A Unitary event with a Rule based Event ID type, using the Analytics or WebSDK schema. Unitary is the only Type that works with Analytics or Web SDK events.
 * **Q: Is the step of contacting Adobe required for Web SDK data?** — The page states that contacting Adobe to enable the environment is only required for Adobe Analytics data sources.
 * **Q: Where do I enable an Adobe Analytics report suite?** — In the Sources menu, in the Adobe Analytics section, select Add data and choose the report suite to enable.
 * **Q: What happens to the data once the source connector is enabled?** — Whenever the data comes in, it is transformed into an Experience event and sent into Adobe Experience Platform.
@@ -65,4 +65,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 2 | source-hash: 14d8e26d -->
+<!-- ai-section-version: 3 | source-hash: c1e38c2e -->

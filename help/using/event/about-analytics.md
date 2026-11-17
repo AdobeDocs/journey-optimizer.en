@@ -141,7 +141,7 @@ In the example below, learn how to target users who added a product to their car
 1. Fill in the **[!UICONTROL Event]** parameters:
 
     * **[!UICONTROL Name]**: Personalize the name of your **[!UICONTROL Event]**.
-    * **[!UICONTROL Type]**: Choose the **[!UICONTROL Unitary]** Type. [Learn more](../event/about-events.md)
+    * **[!UICONTROL Type]**: Choose the **[!UICONTROL Unitary]** Type. Analytics or Web SDK events only work with this type. [Learn more](../event/about-events.md)
     * **[!UICONTROL Event ID type]**: Choose the **[!UICONTROL Rule based]** Event ID type. Analytics events only work with this type. [Learn more](../event/about-events.md#event-id-type)
     * **[!UICONTROL Schema]**: Select the Analytics or WebSDK schema [created before](#leverage-analytics-data).
     * **[!UICONTROL Fields]**: Select the Payload fields. [Learn more](../event/about-creating.md#define-the-payload-fields)

@@ -133,7 +133,7 @@ The payload definition allows you to choose the information the system expects t
 
 1. Select the fields that you expect to receive from the event. These are the fields which the business user will leverage in the journey. They must also include the key that will be used to identify the person associated to the event (see [this section](../event/about-creating.md#define-the-event-key)).
 
-1. When you are done selecting the needed fields, click **[!UICONTROL Save]** or press **[!UICONTROL Enter]**.
+1. When you are done selecting the needed fields, click **[!UICONTROL Ok]** or press **[!UICONTROL Enter]**.
 
     The number of selected fields appears in the **[!UICONTROL Fields]** field.
 

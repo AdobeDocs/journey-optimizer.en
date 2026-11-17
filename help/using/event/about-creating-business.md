@@ -74,7 +74,7 @@ Business events can be "a product is back in stock", "the stock price of a compa
 * When dropping a business event as the first step of a journey, the scheduler type of the journey will be "business event".
 * Only a read audience activity can be dropped after a business event. It is automatically added as the next step.
 * To allow multiple business event executions, activate the corresponding option in the **[!UICONTROL Execution]** section of the journey properties.
-* After a business event is triggered, there will be a delay to have the audience exported from 15 minutes to up to one hour.
+* After a business event is received, the **Read Audience** activity can take up to one hour to process.
 * When testing a business event, you have to pass the event parameters and the identifier of the test profile that will enter the journey in test. Also, when testing a business event based journey, you can only trigger single profile entrance. See [this section](../building-journeys/testing-the-journey.md#test-business). In test mode, there is no "Code view" mode available.
 * What happens to individuals that are currently in the journey if a new business event arrives? It behaves the same way as when individuals are still in a recurring journey when a new recurrence happens. Their path is ended. As a result, marketers must pay attention to avoid building too long journeys if they expect frequent business events.
 * Business events cannot be used in conjunction with unitary events or audience qualification activities.
@@ -158,7 +158,7 @@ The payload definition allows you to choose the information the system expects t
 
 1. Select the fields that you expect to receive from the event. These are the fields which the business user will leverage in the journey. 
 
-1. When you are done selecting the needed fields, click **[!UICONTROL Save]** or press **[!UICONTROL Enter]**.
+1. When you are done selecting the needed fields, click **[!UICONTROL Ok]** or press **[!UICONTROL Enter]**.
 
     The number of selected fields appears in **[!UICONTROL Fields]**.
 

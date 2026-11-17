@@ -35,7 +35,7 @@ For complete understanding, this information should be combined with the documen
 * The payload of a business event is limited to a maximum of 64 KB of uncompressed, minified JSON (hard limit — events exceeding this size are dropped and do not trigger the journey); this limit also applies to unitary events.
 * Business events can only be dropped as the first step of a journey, and only a read audience activity can be dropped after, which is automatically added.
 * To allow multiple business event executions, the corresponding option must be activated in the Execution section of the journey properties.
-* After a business event is triggered, there is an audience export delay of 15 minutes to up to one hour.
+* After a business event is received, the Read Audience activity can take up to one hour to process.
 * For one-shot journeys (one-shot business events), data pushed by the first event job is reused during a one-hour time window for a given journey; for scheduled journeys, there is no guardrail.
 * Business events cannot be used in conjunction with unitary events or audience qualification activities.
 * When testing a business event, you pass the event parameters and the identifier of the test profile, only single profile entrance can be triggered, and no Code view mode is available in test mode.
@@ -50,7 +50,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: What schema type does a business event require?** — Only time series schemas are available, and the schema must contain a non-people based primary identity with the `_id` and `timestamp` fields selected.
 * **Q: How large can a business event payload be?** — Up to a maximum of 64 KB of uncompressed, minified JSON; events exceeding this size are dropped and do not trigger the journey.
 * **Q: Where can a business event be placed in a journey?** — Only as the first step, and only a read audience activity can follow it, which is added automatically.
-* **Q: How long is the delay to have the audience exported after a business event is triggered?** — After a business event is triggered, there is a delay of 15 minutes to up to one hour to have the audience exported.
+* **Q: How long does it take to process the audience after a business event is received?** — After a business event is received, the Read Audience activity can take up to one hour to process.
 * **Q: Can a business event be combined with unitary events?** — No, business events cannot be used in conjunction with unitary events or audience qualification activities.
 * **Q: What happens when a business event is received while the journey is processing?** — Business events follow reentrance rules in the same way as unitary events: if the journey allows reentrance, the next business event is processed.
 * **Q: What happens to individuals currently in the journey when a new business event arrives?** — Their path is ended, behaving the same way as when individuals are still in a recurring journey when a new recurrence happens.
@@ -70,4 +70,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 2 | source-hash: 669e9ac8 -->
+<!-- ai-section-version: 3 | source-hash: 4e32f69d -->

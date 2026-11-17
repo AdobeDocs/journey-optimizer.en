@@ -41,8 +41,8 @@ For complete understanding, this information should be combined with the documen
 * Unitary journeys include a reentrance guardrail: by default, a profile cannot reenter the same journey for 5 minutes after it entered it. This default is the Reentrance wait period of the journey, which you can change.
 * A journey can contain only one business event, which must be the first step; business events cannot be used in the same journey as unitary events or audience qualification activities.
 * Only streamed events can trigger journeys; events ingested in batch, inserted via Query Service, or from internal Journey Optimizer datasets cannot, and a Read Audience activity should be used instead.
-* Unitary events require an XDM ExperienceEvent schema with a person-based primary identity and Real-Time Customer Profile enabled; business events require a time-series schema with a non-person primary identity and populated `_id` and `timestamp` fields, with an audience export delay of 15 minutes to up to one hour.
-* When editing an event used in a Draft, Live, or Closed journey, you can only change the name, the description, or add payload fields; events used in Live, Draft, or Closed journeys cannot be deleted.
+* Unitary events require an XDM ExperienceEvent schema with a person-based primary identity and Real-Time Customer Profile enabled; business events require a time-series schema with a non-person primary identity and populated `_id` and `timestamp` fields, and the Read Audience activity can take up to one hour to process after the event is received.
+* When editing an event used in a Draft, Live, or Closed journey, you can only change the name, the description, or add payload fields; events used in Live or Closed journeys cannot be deleted.
 
 **Terminology:**
 
@@ -75,4 +75,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 2 | source-hash: f264936c -->
+<!-- ai-section-version: 4 | source-hash: 9d3f3fe5 -->
