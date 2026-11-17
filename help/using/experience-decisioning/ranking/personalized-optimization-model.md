@@ -93,6 +93,10 @@ There are 4 types of features:
 >
 >Profile features and context features are currently available as a Limited Availability release. Contact your Adobe representative to gain access.
 
+>[!IMPORTANT]
+>
+>You are responsible for ensuring that data used to train Personalized optimization models — including profile, audience, and context features — is appropriate for your use case and complies with applicable laws and regulations. Sensitive or protected information, and attributes or audience memberships that proxy for it, may introduce or amplify bias in model outcomes.
+
 The model has two phases:
 
 * In the **offline model training** phase, a model is trained by learning and memorizing feature interactions in historical data. 

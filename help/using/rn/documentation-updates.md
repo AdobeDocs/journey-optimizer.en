@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Personalized optimization model** pages for Decisioning and Decision Management now include a note reminding you that you are responsible for ensuring that the data used to train the model is appropriate and compliant, and that sensitive information or proxies for it may introduce bias. [Read more](../experience-decisioning/ranking/personalized-optimization-model.md#how)
+
 * The **Work with journey events** page now has an **Event duplication handling** section. It explains that event duplication can occur, for example during infrastructure auto-scaling or because of duplication from Adobe Experience Platform, and that [!DNL Journey Optimizer] is designed to support "at-least-once" processing. [Read more](../event/about-events.md#event-duplication)
 
 * The **Quiet hours** page now has a **Best practices** section that helps you choose between a standard time zone and the recipient's local time zone, and between **Queue message** and **Discard message**, and that suggests combining quiet hours with frequency capping. It also states that there is no fallback to a default time zone when a profile has no time zone value. [Read more](../conflict-prioritization/quiet-hours.md#best-practices)

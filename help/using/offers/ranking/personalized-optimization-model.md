@@ -89,6 +89,10 @@ There are 3 types of features:
 | Audiences| 0-50 audiences can be added as features when creating the Ranking AI model|
 | Context data| Part of the decisioning feedback Experience Events sent to AEP. Available context data to add to schema: Commerce Details, Channel Details, Application Details, Web Details, Environment Details, Device Details, placeContext|
 
+>[!IMPORTANT]
+>
+>You are responsible for ensuring that data used to train Personalized optimization models — including profile, audience, and context features — is appropriate for your use case and complies with applicable laws and regulations. Sensitive or protected information, and attributes or audience memberships that proxy for it, may introduce or amplify bias in model outcomes.
+
 The model has two phases:
 
 * In the **offline model training** phase, a model is trained by learning and memorizing feature interactions in historical data. 
