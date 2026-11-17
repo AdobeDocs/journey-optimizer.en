@@ -47,9 +47,9 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-To configure events to be sent to **[!UICONTROL Streaming Ingestion APIs]** and to be used in [!DNL Journey Optimizer], you need to follow these steps:
+To configure events to be sent to Streaming Ingestion APIs and to be used in [!DNL Journey Optimizer], you need to follow these steps:
 
-1. Get the inlet URL from Adobe Experience Platform APIs. Learn more in [Streaming Ingestion APIs overview](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html){target="_blank"}.
+1. Get the inlet URL from Adobe Experience Platform APIs. The inlet is the URL of the streaming connection that receives your events in Experience Platform. Learn more in [Streaming Ingestion APIs overview](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html){target="_blank"}.
 1. Copy the payload from the payload preview in the **[!UICONTROL Event]** menu. Learn more on [this page](../event/about-creating.md#define-the-payload-fields).
 
 >[!IMPORTANT]
@@ -58,9 +58,9 @@ To configure events to be sent to **[!UICONTROL Streaming Ingestion APIs]** and 
 
 You then need to configure the data system that pushes events to Streaming Ingestion APIs using the payload you copied:
 
-1. Set up a POST API call to the Streaming Ingestion APIs URL (called an inlet).
+1. Set up a POST API call to the inlet URL you got in the previous procedure.
 1. Use the payload you copied from [!DNL Journey Optimizer] in the body ("data section") of the API call to Streaming Ingestion APIs. See below for an example
-1. Determine where to get all the variables present in the payload. Example: if the event is supposed to convey the address, the payload pasted will show "address": "string". "string" should be replaced by the variable that will automatically populate the right value, the email of the person to send a message to. Note that in the payload preview, in the **[!UICONTROL Header]** section, we autofill many values expected to facilitate your work.
+1. Determine where to get all the variables present in the payload. For example, if the event is supposed to convey the email address of the person to send a message to, the payload you pasted shows `"emailAddress": "string"`. Replace `"string"` with the variable that automatically populates the right value, such as the person's email address. In the payload preview, the **[!UICONTROL Header]** section is already autofilled with many of the expected values. Header here means the `header` object of the payload (`msgType`, `msgId`, `schemaRef` and so on), not an HTTP request header.
 1. Select "application/json" as a body type.
 1. Pass your organization ID in the header using the key "x-gw-ims-org-id". For the value, use your organization ID ("XXX@AdobeOrg").
 

@@ -22,7 +22,8 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **Streaming Ingestion APIs**: The APIs to which the data system pushes events, using the payload copied from Journey Optimizer *(product-specific)*
-* **Inlet**: The Streaming Ingestion APIs URL to which the POST API call is sent *(product-specific)*
+* **Inlet**: The URL of the streaming connection that receives your events in Experience Platform, to which the POST API call is sent *(product-specific)*
+* **Header (payload preview)**: The `header` object of the payload (`msgType`, `msgId`, `schemaRef` and so on), not an HTTP request header *(product-specific)*
 * **Payload preview**: The view in the Event menu from which you copy the payload to use in the body of the API call *(product-specific)*
 * **x-gw-ims-org-id**: The header key used to pass your organization ID in the API call *(product-specific)*
 
@@ -31,12 +32,13 @@ For complete understanding, this information should be combined with the documen
 * Set up a POST API call to the Streaming Ingestion APIs URL (the inlet) and place the copied payload in the body, the data section, of the call.
 * Select application/json as the body type.
 * Pass the organization ID in the header using the key x-gw-ims-org-id, with the organization ID value in the form XXX@AdobeOrg.
-* In the payload preview Header section, many expected values are autofilled to facilitate the work.
+* In the payload preview, the Header section is already autofilled with many of the expected values; Header means the `header` object of the payload, not an HTTP request header.
 
 **Terminology:**
 
 * Canonical name: Additional steps to send events
-* Synonyms: "inlet" = "Streaming Ingestion APIs URL"
+* Synonyms: "inlet" = "URL of the streaming connection that receives events"
+* Do not confuse: the payload "header" object ≠ an HTTP request header (the organization ID goes in the HTTP header x-gw-ims-org-id)
 
 **FAQ:**
 
@@ -59,4 +61,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: bb6e7705 -->
+<!-- ai-section-version: 2 | source-hash: 61bd1d63 -->

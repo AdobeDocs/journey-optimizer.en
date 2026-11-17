@@ -27,16 +27,18 @@ For complete understanding, this information should be combined with the documen
 * **Audience qualification event**: An event triggered when a profile enters or exits an audience, selected directly on the journey canvas rather than in Administration *(product-specific)*
 * **Read Audience activity**: The activity automatically added after a business event to define which profiles receive the journey *(product-specific)*
 * **Rule-based event**: A type of unitary event (business events are always rule-based) that does not generate an eventID and instead defines a rule used to identify relevant events *(product-specific)*
+* **Reentrance wait period**: The journey setting that sets how long a profile cannot reenter the same unitary journey after entering it; the default is 5 minutes and it can be changed *(product-specific)*
+* **Dry run**: A journey publication mode that runs the journey against real production data without contacting customers *(product-specific)*
 * **System-generated event**: A unitary event that requires an eventID, automatically generated when the event is created *(product-specific)*
 
 **Guardrails:**
 
-* Event configuration is mandatory and must be performed by a Data engineer; prerequisites are the Journey Optimizer Administrator or Data Engineer role, an XDM schema with Real-Time Customer Profile enabled, an active streaming endpoint, and access to the correct sandbox.
+* Event configuration is mandatory and must be performed by a Data Engineer or an Administrator; prerequisites are the Journey Optimizer Administrator or Data Engineer role, an XDM schema with Real-Time Customer Profile enabled, an active streaming endpoint, and access to the correct sandbox.
 * Throughput is limited to 5,000 events per second per organization, across all sandboxes, for unitary events and for Read Audience based journey events (hard limit); when a limit is reached, new events are queued and processed at 5,000 per second until the queue is drained.
-* A capping rule limits the number of qualified events that a journey can process to 5,000 per second for a given Organization for rule-based events, corresponding to Journey Optimizer SLAs.
+* A capping rule for rule-based events limits the number of qualified events that Journey Optimizer can process to 5,000 per second for a given organization; this is the same limit as the unitary event throughput limit described in the event throughput section.
 * Throughput limits apply to all events used in active journeys, which includes Live, Dry run, Closed, and Paused journeys.
 * Journey Optimizer is designed to support "at-least-once" processing, so event duplication may occur in limited, rare situations, for example during infrastructure auto-scaling (rebalancing) or because of duplication from Adobe Experience Platform.
-* Unitary journeys include a reentrance guardrail: profile reentrance is blocked by default for 5 minutes after the journey triggers.
+* Unitary journeys include a reentrance guardrail: by default, a profile cannot reenter the same journey for 5 minutes after it entered it. This default is the Reentrance wait period of the journey, which you can change.
 * A journey can contain only one business event, which must be the first step; business events cannot be used in the same journey as unitary events or audience qualification activities.
 * Only streamed events can trigger journeys; events ingested in batch, inserted via Query Service, or from internal Journey Optimizer datasets cannot, and a Read Audience activity should be used instead.
 * Unitary events require an XDM ExperienceEvent schema with a person-based primary identity and Real-Time Customer Profile enabled; business events require a time-series schema with a non-person primary identity and populated `_id` and `timestamp` fields, with an audience export delay of 15 minutes to up to one hour.
@@ -61,7 +63,7 @@ For complete understanding, this information should be combined with the documen
 **Personas:**
 
 * **developer:** Can configure a rule-based unitary event using any field in the event payload. Can configure a system-generated event, whose eventID field is generated automatically when the event is created. The page states that only streamed events can trigger journeys, and batch-ingested or Query Service events cannot. Where: "Event ID type".
-* **admin:** Can configure unitary and business events in Administration > Events; audience qualification events are not configured there. Can edit an event used in a Draft, Live, or Closed journey by changing only the name, the description, or by adding payload fields. The page states that profile reentrance is blocked for 5 minutes after a unitary journey triggers. Where: "Key constraints".
+* **admin:** (Data Engineer or Administrator) Can configure unitary and business events in Administration > Events; audience qualification events are not configured there. Can edit an event used in a Draft, Live, or Closed journey by changing only the name, the description, or by adding payload fields. The page states that by default a profile cannot reenter a unitary journey for 5 minutes, and that this reentrance wait period can be changed. Where: "Key constraints".
 
 **Onboarding:**
 
@@ -73,4 +75,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: da4aafd6 -->
+<!-- ai-section-version: 2 | source-hash: f264936c -->
