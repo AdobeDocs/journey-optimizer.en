@@ -30,7 +30,7 @@ For complete understanding, this information should be combined with the documen
 * Supplemental identifiers are supported only for event-triggered and Read audience journeys; not supported for Audience qualification journeys
 * A profile cannot have more than 10 concurrent journey instances
 * Each journey instance counts toward frequency capping even when created via supplemental identifiers
-* The supplemental identifier must be of type `string`; string arrays and maps are not supported
+* The supplemental identifier must be of type `string`; it can be a standalone string attribute, a string attribute within an object array, or an array of strings; maps are not supported
 * The supplemental ID attribute must not be marked as Primary identity in the schema
 * The namespace used for the supplemental ID must be a non-person identifier namespace
 * After applying the non-person identity namespace to a schema, a new event or field group must be created; existing entities cannot be refreshed

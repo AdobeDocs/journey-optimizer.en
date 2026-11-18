@@ -62,7 +62,7 @@ topic_v2:
 
 * **Concurrent instance limits**: Profiles cannot have more than 10 concurrent journey instances.
 
-* **Data type and schema structure**: The supplemental identifier must be of type `string`. It can be an independent string attribute or it can be a string attribute within an array of objects. The independent string attribute will result in a single journey instance, whereas the string attribute within an array of objects will result in a unique journey instance per iteration of the object array. String arrays and maps are not supported.
+* **Data type and schema structure**: The supplemental identifier must be of type `string`. It can be an independent string attribute, a string attribute within an array of objects, or an array of strings. The independent string attribute will result in a single journey instance, whereas the string attribute within an array of objects will result in a unique journey instance per iteration of the object array, and an array of strings will result in a unique journey instance per value. Maps are not supported.
 
 * **Journey reentrance**
 
