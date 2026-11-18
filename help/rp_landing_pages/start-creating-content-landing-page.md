@@ -15,13 +15,13 @@ Creating content in Adobe Journey Optimizer is all about flexibility and efficie
 
 ## Choose your creation method {#choose-method}
 
-| Method | Choose it to |
+| If you want to | Use |
 |---|---|
-| [Design content from scratch](../using/email/content-from-scratch.md) | Build a responsive email visually in the Email Designer by adding structure and content components. |
-| [Import your content](../using/email/existing-content.md) | Reuse existing HTML content, as an HTML file or a .zip folder, and edit it in the Email Designer. |
-| [Code your own content](../using/email/code-content.md) | Get full control over markup. HTML skills are required. |
-| [Use email templates](../using/email/use-email-templates.md) | Save time by starting from a sample or saved template and reusing content. |
-| [Apply email themes](../using/email/apply-email-themes.md) | Apply reusable, brand-consistent styling to your emails. This capability is in Limited Availability. |
+| Build a responsive email visually in the Email Designer by adding structure and content components. | [Design content from scratch](../using/email/content-from-scratch.md) |
+| Reuse existing HTML content, as an HTML file or a .zip folder, and edit it in the Email Designer. | [Import your content](../using/email/existing-content.md) |
+| Get full control over markup. HTML skills are required. | [Code your own content](../using/email/code-content.md) |
+| Save time by starting from a sample or saved template and reusing content. | [Use email templates](../using/email/use-email-templates.md) |
+| Apply reusable, brand-consistent styling to your emails. This capability is in Limited Availability. | [Apply email themes](../using/email/apply-email-themes.md) |
 
 ## Start creating content
 
