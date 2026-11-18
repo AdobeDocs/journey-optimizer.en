@@ -45,6 +45,8 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
+<!-- **When to use this approach:** When you need full control over markup and have HTML skills. You stay in the code editor and cannot switch to the visual editor. Compare all methods on the [Start creating content](../../rp_landing_pages/start-creating-content-landing-page.md#choose-method) page. -->
+
 **[!UICONTROL Code your own]** lets you write or paste raw HTML to build email content directly in the [!DNL Journey Optimizer] Email Designer. Use this mode when you need full control over markup or when importing existing HTML.
 
 You must have HTML skills, and once you choose this mode, you stay in the code editor—you cannot switch to the visual editor.

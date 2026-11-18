@@ -49,6 +49,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I go back to the visual designer after using the code editor?** — No, you cannot revert back to the visual designer for that email after switching to the code editor.
 * **Q: How do I check rendering before saving?** — Use either simulation method to check rendering, choosing the desktop or mobile view.
 * **Q: Where do I manage tracked links?** — In the Links tab from the left pane, where you can modify Tracking Type or Label and add Tags.
+<!-- * **Q: When should I design content from scratch?** — To build a responsive email visually in the Email Designer by adding structure and content components. -->
 
 **Personas:**
 
