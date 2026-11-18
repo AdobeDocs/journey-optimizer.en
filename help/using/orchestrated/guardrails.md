@@ -121,6 +121,6 @@ You will find below guardrails and limitations when using Orchestrated campaigns
 
 ## Channel limitations
 
-Only Mobile message, Push, Email and Direct mail channels are supported in Orchestrated campaigns.
+Only Mobile message, Push, Email, LINE, Custom channels and Direct mail channels are supported in Orchestrated campaigns.
 
 {{$include /help/_includes/do-not-localize/orchestrated/ai-augmented-guardrails.md}}
