@@ -45,6 +45,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I use `now()` in email content or the code editor?** — No; `now()` is not supported in the Email Builder's expression language, though it is available in journey conditions. Use `getCurrentZonedDateTime()` (recommended) or `currentTimeInMillis()`.
 * **Q: Can I reference AEM Assets images in Code your own?** — No; store images referenced in your HTML code in a public location.
 * **Q: How can I perform date calculations in email content?** — Pre-calculate date fields in your data pipeline or profile attributes, use date manipulation functions with profile date values, or use computed attributes.
+<!-- * **Q: When should I use Code your own?** — When you need full control over markup and have HTML skills. You stay in the code editor and cannot switch to the visual editor. -->
 
 **Personas:**
 

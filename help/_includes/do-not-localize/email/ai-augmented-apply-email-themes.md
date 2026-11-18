@@ -57,6 +57,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I convert an existing manually styled asset to use themes?** — Only email templates can be converted (via Generate theme from content); individual emails cannot, so save your content as a template first.
 * **Q: What happens to my content when I switch themes?** — The email content remains unchanged, but the styles update to reflect the new theme; overridden (unlocked) styling elements are not changed by the new theme.
 * **Q: Why might web fonts not render?** — Gmail and Yahoo! do not load external web fonts and fall back to system fonts; only Roboto and Google Sans are supported by Gmail, so define fallback fonts.
+<!-- * **Q: When should I use email themes?** — To apply reusable, brand-consistent styling to your emails and fragments. -->
 
 **Personas:**
 

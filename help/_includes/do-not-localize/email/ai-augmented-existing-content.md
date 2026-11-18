@@ -44,6 +44,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I use the Email Designer content components on imported content?** — Access the HTML converter tab and click Convert.
 * **Q: Are there requirements for references inside a .zip folder?** — Yes. References must be relative and fit with the tree structure of the .zip folder.
 * **Q: Can I import image designs that are not HTML?** — Yes. Use the image to HTML converter to automatically convert JPEG or PNG designs into editable HTML email templates using AI.
+<!-- * **Q: When should I import existing content?** — To reuse existing HTML content, as an HTML file or a .zip folder, and then edit and personalize it in the Email Designer. -->
 
 **Personas:**
 

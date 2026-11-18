@@ -46,6 +46,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which tab is selected by default on the Create your email screen?** — The Sample templates tab.
 * **Q: How do I apply a template once selected?** — Click Use this template on the top right of the screen, then edit the content in the Email Designer.
 * **Q: How can saved templates be sorted?** — By name, Last modified, and Last created.
+<!-- * **Q: When should I use email templates?** — To save time by starting from a sample or saved template and reusing content. -->
 
 **Personas:**
 

@@ -40,6 +40,8 @@ level_v2:
 
 >[!ENDSHADEBOX]
 
+<!-- **When to use this approach:** To save time by starting from a sample or saved template and reusing content. Compare all methods in [Choose your creation method](../../rp_landing_pages/start-creating-content-landing-page.md#choose-method). -->
+
 >[!CONTEXTUALHELP]
 >id="ajo_use_template"
 >title="Build content from a template"
