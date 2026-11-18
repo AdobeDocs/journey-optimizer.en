@@ -53,6 +53,8 @@ Once your campaign has been activated, you need to retrieve the generated sample
 
 * **One audience execution at a time** - Only one batch execution can run at a time for a campaign. If you trigger the campaign while a previous execution is still running, the API returns a 422 error. Check the status of the previous execution before you trigger the campaign again.
 
+* **Unique x-request-id** - As a best practice, generate a new `x-request-id` header value for every API call, for example a UUID. If you reuse a value, the system can treat the call as a duplicate of an earlier one and skip it, even when the calls target different campaigns.
+
 ## Trigger the campaign {#trigger}
 
 1. Open the campaign, then copy-paste the payload request from the **[!UICONTROL cURL request]** section. This payload includes all personalization (profile and context) variables used in the message. It is available once the campaign is live.
