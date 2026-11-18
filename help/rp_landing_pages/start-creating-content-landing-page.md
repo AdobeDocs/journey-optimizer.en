@@ -13,7 +13,6 @@ product_v2:
 
 Creating content in Adobe Journey Optimizer is all about flexibility and efficiency, empowering you to design personalized emails that connect with your audience. Whether you’re starting from scratch, importing existing HTML, coding your own content, using templates, or applying reusable themes, you’ll find the right approach to match your needs and skills. Each method offers unique tools and features - such as drag-and-drop editing, dynamic content, or modular design - to help you craft compelling messages. With this guide, you’ll explore how these options work together, allowing you to confidently build, customize, and streamline your email campaigns.
 
-<!--
 ## Choose your creation method {#choose-method}
 
 | Method | Choose it to |
@@ -23,7 +22,6 @@ Creating content in Adobe Journey Optimizer is all about flexibility and efficie
 | [Code your own content](../using/email/code-content.md) | Get full control over markup. HTML skills are required. |
 | [Use email templates](../using/email/use-email-templates.md) | Save time by starting from a sample or saved template and reusing content. |
 | [Apply email themes](../using/email/apply-email-themes.md) | Apply reusable, brand-consistent styling to your emails. This capability is in Limited Availability. |
--->
 
 ## Start creating content
 
