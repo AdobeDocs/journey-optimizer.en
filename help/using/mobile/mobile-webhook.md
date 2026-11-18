@@ -455,6 +455,10 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
     +++
 
+    >[!NOTE]
+    >
+    >Token names must be a single word. Names that contain dots, such as `\{\{message_delivery_report.message_id\}\}`, are not recognized, and the feedback event is not produced.
+
 1. Click **[!UICONTROL View payload editor]**, then copy and paste your JSON payload into the editor and save it.
 
     ![](assets/webhook-16.png)

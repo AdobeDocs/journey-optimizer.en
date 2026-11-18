@@ -42,6 +42,7 @@ For complete understanding, this information should be combined with the documen
 * The Custom keyword category configures a single custom keyword.
 * The custom inbound webhook payload requires the fields InboundMessage, ProfileNumber, RequestID, OriginTimestamp, and InboundNumber.
 * The custom feedback webhook payload requires the fields Client Reference, Code, and Status.
+* Token names in the custom feedback webhook payload must be a single word; names that contain dots, such as message_delivery_report.message_id, are not recognized and the feedback event is not produced.
 * If the webhook uses API credentials attached to an existing channel configuration, it takes effect immediately; otherwise you must create a new channel configuration.
 
 **Terminology:**
