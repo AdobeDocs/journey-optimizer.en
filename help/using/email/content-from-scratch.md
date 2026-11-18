@@ -47,7 +47,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-<!-- **When to use this approach:** To build a responsive email visually, by adding structure and content components in the Email Designer. Compare all methods in [Choose your creation method](../../rp_landing_pages/start-creating-content-landing-page.md#choose-method). -->
+<!-- **When to use this approach:** To build a responsive email visually, by adding structure and content components in the Email Designer. Compare all methods on the [Start creating content](../../rp_landing_pages/start-creating-content-landing-page.md#choose-method) page. -->
 
 >[!CONTEXTUALHELP]
 >id="ac_structure_components_email"

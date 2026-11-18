@@ -38,7 +38,7 @@ level_v2:
 
 >[!ENDSHADEBOX]
 
-<!-- **When to use this approach:** To reuse existing HTML content, as an HTML file or a .zip folder, and then edit and personalize it in the Email Designer. Compare all methods in [Choose your creation method](../../rp_landing_pages/start-creating-content-landing-page.md#choose-method). -->
+<!-- **When to use this approach:** To reuse existing HTML content, as an HTML file or a .zip folder, and then edit and personalize it in the Email Designer. Compare all methods on the [Start creating content](../../rp_landing_pages/start-creating-content-landing-page.md#choose-method) page. -->
 
 [!DNL Journey Optimizer] allows you to import existing HTML content to design your emails. This content can be:
 
