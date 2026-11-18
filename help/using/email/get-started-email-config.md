@@ -78,6 +78,8 @@ To be able to send emails through journeys and campaigns in [!DNL Journey Optimi
 
 1. Complete your email channel configuration by setting up other advanced parameters such as enabling BCC, defining URL tracking for analytics, or adding one-click unsubscribe links for user convenience. [Learn more](email-settings.md)
 
+    * **List-unsubscribe** adds an unsubscribe link to the email header so recipients can opt out in one click. It complements the opt-out link in the message content. [Learn more](list-unsubscribe.md) | Related: [Manage email opt-out](email-opt-out.md)
+
 1. Determine which **execution fields** to use in priority for your recipients when several addresses are available in Adobe Experience Platform. [Learn more](../configuration/primary-email-addresses.md)
 
     ![](../configuration/assets/primary-address-execution-fields.png)
