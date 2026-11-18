@@ -31,6 +31,7 @@ For complete understanding, this information should be combined with the documen
 * The call to the Interactive Message Execution REST API has a timeout of 60 sec. Internal retries are in place in case of unexpected timeouts to guarantee the delivery.
 * The endpoints in the cURL section differ between standard and High throughput campaigns.
 * Only one batch execution can run at a time for a campaign. If the campaign is triggered while a previous execution is still running, the API returns a 422 error.
+* As a best practice, use a new x-request-id header value for every API call. If a value is reused, the system can treat the call as a duplicate of an earlier one and skip it, even when the calls target different campaigns.
 
 **Prerequisites and permissions:**
 
@@ -51,6 +52,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: What does the cURL payload contain?** — All personalization (profile and context) variables used in the message.
 * **Q: Why do my API calls fail?** — If a specific start and/or end date was configured when creating the campaign, it is not executed outside these dates, and API calls fail.
 * **Q: Why does the API return a 422 error when I trigger my campaign?** — Only one batch execution can run at a time for a campaign. If a previous execution is still running, the API returns a 422 error. Check the status of the previous execution before you trigger the campaign again.
+* **Q: Why was my second API call not sent?** — If you reuse an x-request-id header value, the system can treat the call as a duplicate of an earlier one and skip it, even when the calls target different campaigns. Use a new x-request-id value for every API call.
 * **Q: Where are the endpoints for standard and High throughput campaigns listed?** — In the Interactive Message Execution API documentation.
 * **Q: Where can I find API call examples?** — On the messaging samples page of the Journey Optimizer APIs documentation.
 
