@@ -105,6 +105,14 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 </tbody>
 </table>
 
++++ Coming soon — **Information below is subject to change.**
+
+* **Increased message activity limit** - Orchestrated campaigns now support up to **25 message actions** on a single canvas, up from the previous limit of 10. This allows complex cross-channel orchestrations, spanning email, push, SMS, and other channels, to be built and managed as a single campaign rather than split across multiple smaller ones.
+
+  For enterprise teams running sophisticated multi-step programs, this reduces operational overhead and simplifies publication and rollback handling when managing large campaign launches.
+
++++
+
 ### Onboarding {#nov-26-onboarding}
 
 * **Migrate transactional email campaigns to Journey Optimizer** - The migration workspace now supports **Campaigns**. You can bring the transactional emails you built in your existing marketing platform into [!DNL Journey Optimizer] and convert them into API-triggered campaigns. [Learn more](../start/migrate-content-and-journeys.md#import-campaign-content)
@@ -133,6 +141,10 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 </tr>
 </tbody>
 </table>
+
+* **Decisioning item creation skill in Coworker** - You can now create decision items faster by describing what you need to Adobe CX Enterprise Coworker, which builds the item with you in chat.
+
+  <p>Availability date: November 2, 2026</p>
 
 ### Integrations {#nov-26-integrations}
 

@@ -34,10 +34,6 @@ The following improvements are coming to Decisioning in this release.
 
 * **Decisioning item creation skill in Coworker** - You can now create decision items faster by describing what you need to Adobe CX Enterprise Coworker, which builds the item with you in chat.
 
-* **Decisioning audit skill in Coworker** - You can now ask Adobe CX Enterprise Coworker about your Decisioning inventory, how Decisioning objects relate to each other, and who last edited an item, such as an offer.
-
-* **Decisioning migration assistance skill in Coworker** - Get help migrating from Offer Decisioning to Journey Optimizer Decisioning directly in Adobe CX Enterprise Coworker.
-
 ### Orchestrated campaigns {#nov-26-orchestrated-campaigns}
 
 The following improvements are coming to orchestrated campaigns in this release.
