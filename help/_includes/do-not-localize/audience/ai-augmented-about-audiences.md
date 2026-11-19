@@ -13,7 +13,7 @@ For complete understanding, this information should be combined with the documen
 
 **Intents:**
 
-* Browse and manage audiences from the Customer > Audiences menu and the Audience Portal
+* Browse and manage audiences in the Audience Portal, available from the Customer > Audiences menu
 * Understand the different audience types available (segment definitions, custom upload, audience composition, Federated Audience Composition)
 * Understand how segment-definition audiences are refreshed by evaluation type (streaming, batch, edge)
 * Target audiences when building journeys or creating campaigns
@@ -22,7 +22,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **Audience**: A collection of people who share similar behaviors and/or characteristics, configured and maintained on Adobe Experience Platform using the Segmentation Service and accessible in Journey Optimizer *(product-specific)*
-* **Audience Portal**: The place from which you can manage, find, and explore audiences with standardized labeling, governance controls, searchable folders, and tags *(product-specific)*
+* **Audience Portal**: The place, available from the Customer > Audiences menu, from which you can manage, find, and explore audiences with standardized labeling, governance controls, searchable folders, and tags *(product-specific)*
 * **Segment definition**: A method of generating an audience using Adobe Experience Platform Segmentation Service, refreshed at different times depending on its evaluation type *(product-specific)*
 * **Custom upload**: An audience type imported from a CSV file *(product-specific)*
 * **Audience composition**: A composition workflow that combines existing audiences on a visual canvas using actions such as rank, split, and join to create new audiences *(product-specific)*
@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 
 * Canonical name: Audience — Acronym: n/a — variants: audiences
 * Do not confuse: "Streaming segmentation" (updated in real time) ≠ "Batch segmentation" (refreshed every 24 hours) ≠ "Edge segmentation" (evaluated instantaneously on the edge)
-* Do not confuse: "Segment definition" (build a new audience definition with Segmentation Service) ≠ "Custom upload" (import an audience from a CSV file) ≠ "Audience composition" (combine existing audiences on a visual canvas)
+* Do not confuse: "Segment definition" (build a new segment definition with Segmentation Service) ≠ "Custom upload" (import an audience from a CSV file) ≠ "Audience composition" (combine existing audiences on a visual canvas)
 
 **FAQ:**
 
@@ -58,7 +58,7 @@ For complete understanding, this information should be combined with the documen
 * **Level:** Beginner
 * **First minimal step:** Select Customer, then Audiences, to browse available audiences.
 * **Success check:** The dashboard visually shows overlaps between audiences and highlights trends such as audience size changes over time.
-* **Next:** Create a new audience definition using Adobe Experience Platform Segmentation Service: Build segment definitions (audience/creating-a-segment-definition.md); Select audiences when building journeys or creating campaigns: About Adobe Experience Platform audiences (audience/target-audiences.md)
+* **Next:** Create a new segment definition using Adobe Experience Platform Segmentation Service: Build segment definitions (audience/creating-a-segment-definition.md); Select audiences when building journeys or creating campaigns: About Adobe Experience Platform audiences (audience/target-audiences.md)
 
 +++
 

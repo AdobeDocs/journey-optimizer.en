@@ -34,7 +34,7 @@ For complete understanding, this information should be combined with the documen
 * These tools are available for campaigns and for unitary, Audience Qualification, and Read audience journeys.
 * In campaigns, priority score is available for the web, in-app, and code-based inbound channels only.
 * It can take up to 10 minutes after a customer enters a journey for the profile counter value to update; a profile entering two journeys within a short window may enter both.
-* Entry capping is only supported if the namespace selected in the journey is the highest priority namespace defined in the sandbox; if namespace priority has not been explicitly configured, the default highest priority is email.
+* Capping works for all identity namespaces. Capping on one namespace is independent and does not affect capping on any other namespace.
 * When multiple audience qualification journeys are activated by the same audience qualification event, entry capping counts will not be accurate.
 
 **Terminology:**

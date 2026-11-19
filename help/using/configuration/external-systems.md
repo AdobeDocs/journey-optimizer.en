@@ -133,6 +133,10 @@ Let's take an example for a timeout of 5 seconds.
     * If one of the three retries is successful before the end of the 5 seconds, the call is performed, and there is no error.
     * If the end of the timeout duration is reached during the retries, the call is canceled and counted as a timeout error in reporting. 
 
+>[!NOTE]
+>
+>A call dropped after exceeding the 6-hour throttling queue limit is also reported with a `timedout` status in `actionExecutionError`, the same status used for calls that exceed the journey timeout duration described above.
+
 ## Frequently asked questions {#faq}
 
 You will find below Frequently Asked Questions about integrating Journey Optimizer with external systems.
@@ -185,5 +189,13 @@ With the IP proxy enabled and a throttling configuration defined on the targeted
 * between 4000 and 5000: 125 connections
 
 If no throttling configuration is defined on an endpoint, Journey Optimizer's engine is designed to scale up and it can get to a high number of connections (more than 2,000). In order to get limited number of connections, customers need to use a throttling configuration.
+
++++
+
++++ What happens to events that remain in the throttling queue for more than 6 hours?
+
+Events dropped after 6 hours are logged as a step event with an `actionExecutionError` status of `timedout`. This is the same status used when a custom action call exceeds the journey's timeout duration (see [Timeout and retries](#timeout)), so a `timedout` status can indicate either case: an individual call that ran past the timeout duration, or a call that was queued past the 6-hour throttling limit.
+
+Under sustained heavy backlog, an event can remain unread by the queue for around 24 hours, at which point the underlying queue infrastructure removes it directly, without generating a step event.
 
 +++

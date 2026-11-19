@@ -51,13 +51,13 @@ Each computed attribute is a profile attribute that you can leverage for segment
 
 >[!NOTE]
 >
->To access computed attributes, ensure you have the appropriate permissions (**View Computed attributes** and **Manage Computed attributes**).
+>To access computed attributes in Adobe Experience Platform, you need the **View Computed attributes** and **Manage Computed attributes** permissions. [Learn more about access control](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home){target="_blank"}
 
 ## Create computed attributes {#manage}
 
 To create computed attributes, browse to the **[!UICONTROL Computed attributes]** tab in the **[!UICONTROL Profiles]** menu located on the left hand-side.
 
-From this screen, you can construct computed attributes by building rules that combine event attributes, aggregate functions, alongside a specified lookback period. For example, you can calculate the sum of purchases made in the last three months, identify the most recent item viewed by a profile who hasn't made a purchase in the last week, or tally up the total reward points accumulated by each profile. 
+From this screen, you can construct computed attributes by building rules that combine event attributes, aggregate functions, alongside a specified lookback period, which is the length of time over which events are aggregated. For example, you can calculate the sum of purchases made in the last three months, identify the most recent item viewed by a profile who hasn't made a purchase in the last week, or tally up the total reward points accumulated by each profile. 
 
 ![](assets/computed-attributes.png)
 
@@ -73,9 +73,9 @@ The Adobe Experience Platform data source defines the connection to Adobe Real-t
 
 To add computed attributes to the data source, follow these steps:
 
-1. Browse to the **[!UICONTROL Configurations]** left menu, then click the **[!UICONTROL Data sources]** card.
+1. Browse to the **[!UICONTROL Configurations]** left menu, then select the **[!UICONTROL Data sources]** card.
 
-1. Select the **[!UICONTROL Experience Platform]** data source.
+1. Select the built-in **[!UICONTROL Adobe Experience Platform]** data source.
 
     ![](assets/computed-attributes-add.png)
     
@@ -93,9 +93,13 @@ Detailed information on adding field groups to the Adobe Experience Platform dat
 >
 >Before starting, ensure you have added your computed attributes to the Adobe Experience Platform data source. [Learn how in this section](#source).
 
-Computed attributes provide versatile capabilities within Journey Optimizer. Use them for various purposes, such as personalizing message content, creating new audiences, or splitting journeys based on a specific computed attribute. For example, split a journey's path based on a profile's total purchases in the last three weeks by adding a single computed attribute in a Condition activity. You can also personalize an email by displaying the most recently viewed item for each profile.
+Computed attributes provide versatile capabilities within Journey Optimizer. Use them for various purposes, such as personalizing message content, creating new audiences, or splitting journeys based on a specific computed attribute. For example, split a journey's path based on a profile's total purchases in the last three weeks by adding a single computed attribute in an Optimize activity (Condition method). You can also personalize an email by displaying the most recently viewed item for each profile.
 
-Since computed attributes are profile attribute fields created on your profile union schema, access them from the personalization editor within the **SystemComputedAttributes** field group. From there, add computed attributes into your expressions, treating them like any other profile attribute to perform the desired operations.
+>[!NOTE]
+>
+>Computed attributes cannot be used in audience compositions.
+
+Since computed attributes are profile attributes grouped under the **SystemComputedAttributes** field group of your profile union schema, access them from the personalization editor within that field group. From there, add computed attributes into your expressions, treating them like any other profile attribute to perform the desired operations.
 
 ![](assets/computed-attributes-ajo.png)
 

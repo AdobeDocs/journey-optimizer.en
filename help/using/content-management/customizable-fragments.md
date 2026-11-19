@@ -127,7 +127,7 @@ However, if you created fragments and defined editable fields before the rich-te
 
     To upgrade the fragment to rich-text mode, use the **Open fragment** button to access the fragment editor and click the **Enable** button and save the fragment.
 
-Until the rich-text mode is unlocked, the legacy customizable visual fragments continue to support plain text only. Users cannot enter rich text into the editable fields of these fragments.
+Until the rich-text mode is unlocked, the legacy customizable visual fragments continue to support plain text only. Users cannot enter rich text into the editable fields of these fragments. Editable text in these fragments can also be cut off when the fragment is rendered. To avoid this, enable rich-text mode.
 
 >[!CAUTION]
 >

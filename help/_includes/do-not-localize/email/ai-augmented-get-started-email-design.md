@@ -37,6 +37,7 @@ For complete understanding, this information should be combined with the documen
 * Alerts distinguish warnings (recommendations and best practices) from errors (blocking issues that prevent testing or activation).
 * Mobile web rendering differences occur only in Gmail Web and Outlook Web when accessed via a mobile browser; Gmail/Outlook native mobile apps and all desktop clients are not affected.
 * Outlook rendering: use even numbers for padding, font sizes, and widths; set table widths in pixels not percentages; set image widths using the `width` attribute; include Alt text on all images; apply borders to `<td>` not `<table>`; avoid `border-radius` (rounded corners).
+* Browser extensions that modify web pages (for example Grammarly or WalkMe) can inject markup into Email Designer content and cause duplicated or hidden elements in delivered emails; author in a browser profile without such extensions or disable them for experience.adobe.com.
 
 **Terminology:**
 

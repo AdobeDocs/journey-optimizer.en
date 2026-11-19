@@ -36,12 +36,6 @@ See also [Define the Action campaign audience](campaign-audience.md).
 | **CJMCMP-2061-400** | You do not have required permissions to perform this action. Contact your administrator to grant you access. | Check that your role includes the permission for this action, such as **[!DNL Manage campaigns]** to edit or **[!DNL Publish campaigns]** to publish, and the access labels set on the campaign, and ask your administrator to add what is missing. [Learn more](../administration/object-based-access.md) |
 | **CJMCMP-2060-200** | The selected audience has not been evaluated yet. The audience must be evaluated before a campaign can be activated | Warning. Wait until the audience is evaluated, then activate the campaign. [Learn more](campaign-audience.md) |
 | **CJMCMP-2075-400** | The use of audiences and attributes from Audience Composition is currently unavailable for use with Healthcare Shield or Privacy and Security Shield | Select an audience that does not come from audience composition. [Learn more](campaign-audience.md) |
-| **CJMCMP-2077-400** | The use of audiences and attributes from custom uploads (CSV files) and Federated Audience Composition is currently unavailable for use with Healthcare Shield | Select an audience that does not come from a CSV upload or federated audience composition. [Learn more](campaign-audience.md) |
-| **CJMCMP-2078-400** | The use of audiences and attributes from custom uploads (CSV files) and Federated Audience Composition is currently unavailable for use with Privacy and Security Shield | Select an audience that does not come from a CSV upload or federated audience composition. [Learn more](campaign-audience.md) |
-| **CJMCMP-2080-400** | The use of audiences and attributes from Federated Audience Composition is currently unavailable for use with Healthcare Shield | Select an audience that does not come from federated audience composition. [Learn more](campaign-audience.md) |
-| **CJMCMP-2081-400** | The use of audiences and attributes from Federated Audience Composition is currently unavailable for use with Privacy and Security Shield | Select an audience that does not come from federated audience composition. [Learn more](campaign-audience.md) |
-| **CJMCMP-2082-400** | The use of audiences and attributes from custom uploads (CSV files) is currently unavailable for use with Healthcare Shield | Select an audience that does not come from a CSV upload. [Learn more](campaign-audience.md) |
-| **CJMCMP-2083-400** | The use of audiences and attributes from custom uploads (CSV files) is currently unavailable for use with Privacy and Security Shield | Select an audience that does not come from a CSV upload. [Learn more](campaign-audience.md) |
 | **CJMCMP-2024-400** | A new profile is not allowed for the provisioned campaign | Turn off the **[!UICONTROL Create new profiles]** option and select an audience of existing profiles. [Learn more](api-triggered-campaign-audience.md) |
 
 ## Action and channel configuration {#action}
@@ -58,7 +52,7 @@ See also [Configure the campaign action](campaign-action.md).
 | **CJMCMP-2202-400** | The message has not been published | The message is not published. Publish the message, then activate the campaign. [Learn more](review-activate-campaign.md) |
 | **CJMCMP-2105-400** | The {channel} channel is not allowed for the provided campaign type | Select a channel that the campaign type supports. [Learn more](campaign-action.md) |
 | **CJMCMP-2115-400** | The {channel} channel bound is not allowed | Select a channel that the campaign type supports. [Learn more](campaign-action.md) |
-| **CJMCMP-2074-400** | Priority can only be in the range of 0-100. Priority is disabled for Transactional campaigns. | Enter a priority from 0 to 100. Do not set a priority for a transactional campaign. [Learn more](campaign-action.md#multi-action) |
+| **CJMCMP-2074-400** | Priority can only be in the range of 0-100. Priority is disabled for Transactional campaigns. | Enter a priority from 0 to 100. Do not set a priority for a transactional campaign. [Learn more](../delivery/multiple-inbound-actions.md) |
 
 ## Schedule and approval {#schedule}
 

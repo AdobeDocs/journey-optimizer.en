@@ -48,9 +48,11 @@ topic_v2:
 ---
 # Create AI models {#ai-rankings}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers AI models for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Create AI models](../../experience-decisioning/ranking/create-ai-models.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
 [!DNL Journey Optimizer] enables you to create **AI models** to rank offers based on your business goals.
 

@@ -29,8 +29,8 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Feature is in Limited Availability — not yet generally available to all customers.
-* The `datasetLookup` helper function within expression fragments is available to a limited set of customers only; contact your Adobe representative to gain access.
+* Feature is in Limited Availability and is available to all Journey Optimizer customers.
+* The `datasetLookup` helper function can be used within expression fragments.
 * Datasets must be explicitly enabled for lookup personalization before they can be used with `datasetLookup`.
 * Keep the number of fields retrieved per `datasetLookup` call under 50 to avoid impacting throughput (recommended limit — no hard limit is stated on the page).
 

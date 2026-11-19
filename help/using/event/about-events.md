@@ -60,7 +60,7 @@ topic_v2:
 
 Use events to trigger journeys individually, delivering real-time messages to each user as they enter the journey. In the event configuration, you configure the events expected in the journeys. You can use multiple events (in different steps of a journey) and several journeys can use the same event.
 
-Event configuration is **mandatory** and must be performed by a Data engineer.
+Event configuration is **mandatory** and must be performed by a Data Engineer or an Administrator.
 
 >[!IMPORTANT]
 >
@@ -86,8 +86,6 @@ You can configure three types of events: **Unitary events**, **Business events**
 
 ➡️ [Discover this feature in video](#video)
 
-➡️ [Discover this feature in video](#video)
-
 ## Unitary events {#unitary-events}
 
 **Unitary** events are linked to a person. They relate to the behavior of a person (for example, a person bought a product, visited a shop, exited a website, etc.) or something happening linked to a person (for example, a person reached 10,000 loyalty points). This is what [!DNL Journey Optimizer] will listen to in journeys to orchestrate the best next actions. Unitary events can be rule-based or system generated. [Learn how to create a unitary event](../event/about-creating.md).
@@ -98,13 +96,13 @@ You can configure three types of events: **Unitary events**, **Business events**
 
 >[!NOTE]
 >
->Unitary journeys include a reentrance guardrail: profile reentrance is blocked by default for 5 minutes after the journey triggers. For example, if an event triggers a journey at 12:01 for a profile and another arrives at 12:03, the journey does not restart for that profile.
+>Unitary journeys include a reentrance guardrail: by default, a profile cannot reenter the same journey for 5 minutes after it entered it. This default is the **[!UICONTROL Reentrance wait period]** of the journey, which you can change. For example, if an event triggers a journey at 12:01 for a profile and another arrives at 12:03, the journey does not restart for that profile. [Learn more about reentrance](../building-journeys/entry-management.md)
 
 ## Business events {#business-events}
 
 **Business** events are not linked to a specific profile. For example, it can be a news alert, a sports update, a flight change or cancelation, an inventory update, weather events, etc. While these events are not specific to a profile, they may be of interest to any number of profiles: individuals subscribed to particular news topics, passengers on a flight, shoppers interested in an out-of-stock product, etc. Business events are always rule-based. When you drop a business event in a journey, it automatically adds a **Read audience** activity right after. [Learn how to create a business event](../event/about-creating-business.md).
 
-**Schema requirement:** A time-series XDM schema with a non-person primary identity, and the `_id` and `timestamp` fields populated. Plan for an audience export delay of 15 minutes to up to one hour.
+**Schema requirement:** A time-series XDM schema with a non-person primary identity, and the `_id` and `timestamp` fields populated. Plan for the **Read Audience** activity to take up to one hour to process after the event is received.
 
 **Example:** An airline cancels a flight. A business event fires, [!DNL Journey Optimizer] reads the audience of affected passengers, and sends each a rebooking notification.
 
@@ -146,7 +144,7 @@ For **unitary** events, there are two types of event ID:
 
    >[!CAUTION]
    >
-   >A capping rule is defined for rule-based events. It limits the number of qualified events that a journey can process to 5,000 per seconds for a given Organization. It corresponds to Journey Optimizer SLAs. Refer to your Journey Optimizer licensing and [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
+   >A capping rule is defined for rule-based events. It limits the number of qualified events that Journey Optimizer can process to 5,000 per second for a given organization. This is the same limit as the one described in [Event throughput limits](#event-throughput). Refer to your Journey Optimizer license for your entitlement.
 
 * **System-generated** events: these events require an eventID. This eventID field is automatically generated when creating the event. The system pushing the event should not generate an ID, it should pass the one available in the payload preview. 
 
@@ -174,7 +172,7 @@ Each event type maps to a specific journey pattern:
 
 * **Choose a unitary event** when the trigger is tied to a specific individual — for example, a purchase, a form submission, or a loyalty milestone. Unitary events require a person-based primary identity in the schema and start the journey immediately for that profile. [Learn how to configure a unitary event](../event/about-creating.md).
 
-* **Choose a business event** when the trigger is a global occurrence — for example, a product restock, a price drop, or a flight cancellation — and you want to broadcast to a set of profiles related to that signal. Business events must be the first step in the journey and automatically target profiles via a **Read Audience** activity. They require a time-series schema with a non-people primary identity and the `_id` and `timestamp` fields. Plan for an audience export delay of 15 minutes to up to one hour. [Learn how to configure a business event](../event/about-creating-business.md).
+* **Choose a business event** when the trigger is a global occurrence — for example, a product restock, a price drop, or a flight cancellation — and you want to broadcast to a set of profiles related to that signal. Business events must be the first step in the journey and automatically target profiles via a **Read Audience** activity. They require a time-series schema with a non-people primary identity and the `_id` and `timestamp` fields. Plan for the **Read Audience** activity to take up to one hour to process after the event is received. [Learn how to configure a business event](../event/about-creating-business.md).
 
 * **Choose an audience qualification event** when the trigger is a profile entering or exiting an audience, and you need more complex segmentation logic than a single event can provide — for example, re-engaging lapsed customers who just met a spend threshold, or triggering an offboarding flow when a VIP member drops out of the loyalty tier. [Learn more on audience qualification events](../building-journeys/audience-qualification-events.md).
 
@@ -189,7 +187,7 @@ Use this summary to plan your implementation before configuring events.
 | Constraint | Details |
 | --- | --- |
 | Throughput limit | 5,000 events per second per organization, across all sandboxes (unitary and Read Audience journeys) |
-| Reentrance block | Profile reentrance blocked for 5 minutes after a unitary journey triggers |
+| Reentrance block | By default, a profile cannot reenter the same unitary journey for 5 minutes (configurable with the reentrance wait period) |
 | Business events per journey | Maximum 1, must be the first step |
 | Mix business + unitary in one journey | Not supported |
 | Batch events | Cannot trigger journeys — use a **Read Audience** activity instead |
@@ -202,6 +200,14 @@ Events must be sent to [!DNL Journey Optimizer] as POST calls through [Adobe Exp
 
 Both authenticated and unauthenticated streaming modes are supported. Batch-ingested events and events from internal [!DNL Journey Optimizer] datasets (message feedback, email tracking, and similar) cannot be used to trigger journeys — use a **Read Audience** activity instead for those use cases.
 
+## Event duplication handling {#event-duplication}
+
+Event duplication can occur in various scenarios, such as, but not limited to:
+
+* Internal auto-scaling of infrastructure for executing journeys. Occasionally, data can be rebalanced due to cloud infrastructure volatility.
+* Due to duplication from Adobe Experience Platform, as described in [Event duplication](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/event-duplication){target="_blank"}.
+
+[!DNL Journey Optimizer] is designed to support "at-least-once" processing. Consequently, event duplication may occur in limited, rare situations.
 
 ## Event throughput limits {#event-throughput}
 
@@ -210,7 +216,7 @@ Adobe Journey Optimizer enforces separate throughput limits per event type, at a
 * **Unitary events**: 5,000 events per second
 * **Read Audience based journey events**: 5,000 events per second
 
-These limits apply to all events used in active journeys, which includes **Live**, **Dry run**, **Closed** and **Paused** journeys. When a limit is reached, new events get queued and processed at 5,000 per second until the queue is drained.
+These limits apply to all events used in active journeys, which includes **Live**, **Dry run**, **Closed** and **Paused** journeys. A dry run is a journey publication mode that runs your journey against real production data without contacting customers. [Learn more about Journey Dry run](../building-journeys/journey-dry-run.md). When a limit is reached, new events get queued and processed at 5,000 per second until the queue is drained.
 
 For more details on journey processing rates and how different journey types impact throughput, [learn more on journey processing rates](../building-journeys/entry-management.md#journey-processing-rate).
 
@@ -239,7 +245,7 @@ The following types of events are counted toward these quotas:
 
 To avoid breaking existing journeys, when you edit an event used in a **Draft**, **Live** or **Closed** journey, you can only change the name, the description or add payload fields. 
 
-Any event used in **Live**, **Draft** or **Closed** journeys cannot be deleted. To delete a used event, you must stop journeys using it, and/or remove it from the Draft journeys where it is used. You can check the **[!UICONTROL Used in]** field. It displays the number of journeys that use that particular event. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
+Any event used in **Live** or **Closed** journeys cannot be deleted. To delete a used event, you must stop journeys using it, and/or remove it from the Draft journeys where it is used. You can check the **[!UICONTROL Used in]** field. It displays the number of journeys that use that particular event. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
 
 ## Frequently asked questions {#faq}
 

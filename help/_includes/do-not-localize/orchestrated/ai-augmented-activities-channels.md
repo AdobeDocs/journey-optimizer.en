@@ -18,6 +18,7 @@ For complete understanding, this information should be combined with the documen
 * Select a channel configuration and apply rule set capping rules, content experiments, and multilingual content to a channel activity.
 * Create and personalize the message content for a channel activity.
 * Simulate and test channel activity content before publishing.
+* Test a channel activity with Run test and send a proof to a test profile before publishing.
 * Confirm or disable confirmation for message sending, and set rate control for outbound channel activities.
 
 **Glossary:**
@@ -42,6 +43,8 @@ For complete understanding, this information should be combined with the documen
 * Transactional messages bypass business rules and do not require opt-in.
 * Simulating content with test profiles requires that execution has reached the channel activity in test: in test mode the workflow pauses at the channel activity, so a channel activity located after another channel activity is never reached, and Simulate Content cannot be used for those downstream channel activities.
 * Simulating content with test profiles requires a test profile that belongs to the audience targeted by that channel activity; otherwise selecting it does not render a preview of the content.
+* Sending a proof to a test profile requires that the profile has the testProfile attribute set to true, has an identity in the namespace configured as the target dimension of the channel activity, and is present in the input transition of the message activity.
+* Proof sending is available before and after publication; before publishing, as with Simulate content (AEP profiles), the campaign must first be started in test mode and the workflow must reach the channel activity to get access to the test profiles.
 * By default, for non-recurring Orchestrated campaigns, message delivery is paused until the send is explicitly confirmed.
 * Wave sending (splitting delivery into scheduled batches before confirming) applies only to outbound channel activities (Email, Mobile, Push, or Direct mail).
 * Rate control (Throttle delivery) minimum supported delivery rate, per channel activity: 1 per second (hard limit).
@@ -70,6 +73,8 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is the difference between Marketing and Transactional categories?** — Marketing requires opt-in and applies business rules; Transactional does not require opt-in and bypasses business rules.
 * **Q: What is the difference between Simulate content and Simulate content (AEP profiles)?** — Simulate content tests content variations with sample input data or AI auto-generation; Simulate content (AEP profiles) previews and tests content with test profiles.
 * **Q: Why can I not simulate content for some channel activities using test profiles?** — In test mode, the workflow pauses at the channel activity, so a channel activity located after another channel activity is never reached, and the selected test profile must belong to the audience targeted by that channel activity.
+* **Q: Why does nothing happen after I click Run test on a channel activity?** — The button remains available even if the message content contains an error; check the Alerts / Warning icon in the canvas toolbar for a content-related error, fix it, and run the test again.
+* **Q: Why can a test profile not receive a proof?** — The profile must have the testProfile attribute set to true, have an identity in the namespace configured as the target dimension of the channel activity, and be present in the input transition of the message activity.
 * **Q: What happens if message delivery cannot complete within the rate control timeframe?** — The maximum timeframe for a campaign audience to execute is 12 hours; if the delivery rate does not allow the full audience to be sent within that timeframe, the remaining profiles are excluded from the campaign and counted in the campaign report.
 
 **Examples:**

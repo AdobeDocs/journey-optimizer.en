@@ -40,7 +40,9 @@ level_v2:
 ---
 # Decision Management events key information {#events-key-information}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers Decision Management events for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Report on Decisioning](../../experience-decisioning/cja-reporting.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 

@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
+mini-toc-levels: 1
 TQID: https://experienceleague.adobe.com/RqIzgHdwFqBmYLPKbMkAvscFopYMF-lt2gY4Vl34GKA
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
@@ -76,6 +77,32 @@ The Journey Optimizer interface consists of four main areas:
 
 **Tip:** New users can start from the **Home** page to access recent items and helpful resources, or use the **Help** icon in the top bar for contextual guidance.
 
+## Home page {#home-page}
+
+The home page provides:
+
+* **CX Enterprise Coworker** - Start a conversation from the prompt, and review AI recommendations (Limited Availability) when a journey alert is triggered. [Learn more](#cx-enterprise-coworker)
+* **Recents** - Shortcuts to recently created events, journeys, campaigns, and other objects
+* **Resources** - Links to documentation, tutorials, and support
+
+### Coworker and AI Recommendations {#cx-enterprise-coworker}
+
+CX Enterprise Coworker is the in-product conversational experience. On the Journey Optimizer home page, enter a business goal in the **"What would you like to accomplish today?"** prompt to start a conversation. It provides instant help and operational insights. [Learn more about CX Enterprise Coworker](ai-features.md#cx-coworker).
+
+Coworker can also start working for you. The **[!UICONTROL AI Recommendations]** panel, on the right side of the home page, surfaces AI-generated recommendations when specific alerts are triggered. For now, AI recommendations support two alerts: **Journey Anomaly Detected** and **Custom action error rate exceeded**. [Learn more about these alerts](../reports/alerts.md#available-alerts).
+
+![](assets/ai-recommendations-home.png)
+
+By default, AI monitoring is disabled. To enable it, locate the **[!UICONTROL AI Recommendations]** panel on the home page, then select **[!UICONTROL Enable]**.
+
+Once enabled, select a recommendation card to open Coworker and review the analysis and recommended next steps already prepared, without having to request an investigation first. The analysis includes the detected issue, relevant findings, and recommended actions. Continue the conversation to explore the findings and decide how to address the issue.
+
+![](assets/ai-recommendations-coworker.png)
+
+>[!AVAILABILITY]
+>
+>AI Recommendations is available in Limited Availability for a set of organizations. Contact your Adobe representative to request access.
+
 ## Top bar features {#top-bar}
 
 ### Universal search {#universal-search}
@@ -133,14 +160,6 @@ To change your language:
 4. Click **Save**
 
 Keyboard shortcuts and accessibility features are available. [Learn more](accessibility.md)
-
-## Home page {#home-page}
-
-The home page provides:
-
-* **CX Enterprise Coworker** - Enter a business goal in the **"What would you like to accomplish today?"** prompt to start a conversation.
-* **Recents** - Shortcuts to recently created events, journeys, campaigns, and other objects
-* **Resources** - Links to documentation, tutorials, and support
 
 ## Left navigation {#left-nav}
 
@@ -214,10 +233,6 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 * **Sandboxes** - Manage environments and copy objects between sandboxes. [Work with sandboxes](../administration/sandboxes.md)
 * **Channels** - Configure channel settings and deliverability. [Set up channel configurations](../configuration/channel-surfaces.md) | [Get started with configuration](../configuration/get-started-configuration.md)
 * **Tags** - Organize and categorize content. [Work with unified tags](search-filter-categorize.md#tags)
-
-## CX Enterprise Coworker {#cx-enterprise-coworker}
-
-CX Enterprise Coworker is the in-product conversational experience. On the Journey Optimizer home page, enter a business goal in the **"What would you like to accomplish today?"** prompt to start a conversation. It provides instant help and operational insights. [Learn more about CX Enterprise Coworker](ai-features.md#cx-coworker).
 
 ## Related topics {#related-topics}
 

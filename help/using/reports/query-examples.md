@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Examples of queries
-description: Examples of queries
+description: Learn how to query Journey Optimizer data in the Data Lake, with example queries for journeys, profiles, audiences, events, and message errors.
 feature: Reporting, Journeys
 topic: Content Management
 role: Developer, Admin
@@ -1130,7 +1130,7 @@ _experience.journeyOrchestration.journey.versionID,
 _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode 
 FROM journey_step_events
 where
-_experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' AND _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode='reentranceNotAllowed'
+_experience.journeyOrchestration.serviceEvents.stateMachine.eventCode = 'discard' AND _experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'reentranceNotAllowed'
 ```
 
 Learn how to [troubleshoot discarded event types in journey_step_events](../reports/sharing-field-list.md#discarded-events).
@@ -1139,13 +1139,13 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 
 ## Queries for engageable profiles {#engageable-profiles-queries}
 
-These queries help you monitor and analyze your Engageable Profiles count. An Engageable Profile is a unique profile that has been engaged through journeys or campaigns in the past 12 months. Learn more about [Engageable Profiles and license usage](../audience/license-usage.md#what-is-engageable-profile).
+These queries help you monitor and analyze your Engageable Profiles count. An Engageable Profile is a unique profile that has been engaged through journeys or campaigns in the past 12 months. Learn more about [Engageable Profiles and license usage](../audience/get-started-profiles.md#engageable-profiles).
 
 **Best practices for querying Engageable Profiles:**
 
 * Ensure each non-aggregate field is included in the `GROUP BY` clause
 * Avoid referencing datasets that don't exist in your sandbox - confirm dataset names in the Platform UI
-* Use `distinct` when counting unique profiles to avoid duplicates across identity namespaces
+* Use `distinct` when counting unique profiles so that the same `profileID` is counted only once. It does not merge the identifiers of one person across identity namespaces.
 * When using `LIMIT`, place it at the end of the query after `ORDER BY` clauses
 
 +++Count unique profiles engaged by a specific journey
@@ -1278,6 +1278,8 @@ This single number represents the total count of unique identities that have bee
 >[!NOTE]
 >
 >This query counts distinct profile IDs in the journey step events dataset. The actual Engageable Profiles count shown in the [License Usage Dashboard](../audience/license-usage.md) may differ slightly, as it also includes profiles engaged through campaigns and other Journey Optimizer capabilities beyond journeys.
+>
+>This query counts distinct `profileID` values, which are the identities in the namespace that each journey uses. If the same person is engaged by journeys that use different namespaces (for example, ECID in one journey and a CRM ID in another), that person is counted once for each identifier. The result can therefore be higher than the number of distinct people.
 
 +++
 

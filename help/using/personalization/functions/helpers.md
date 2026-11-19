@@ -341,8 +341,6 @@ The `url` helper is used to track links, shorten URLs and insert [deep links](..
 >[!AVAILABILITY]
 >
 >This feature is currently available to all customers as a limited availability release.
->
->For now, the `datasetLookup` helper function can be used within expression fragments for a limited set of customers. To gain access, contact your Adobe representative.
 
 The `datasetLookup` helper retrieves data from Adobe Experience Platform record datasets during personalization so you can use field values that are not stored on the profile or in the event payload.
 

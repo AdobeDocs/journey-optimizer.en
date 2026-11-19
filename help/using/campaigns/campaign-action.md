@@ -62,7 +62,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
     >
     >Available channels vary based on your licensing model and add-ons.
     
-    If you select an inbound channel (Code-based experience, In-app message, Content Card or Web action), you can add more inbound actions - for a total of up to 10 actions in a single campaign. [Learn how](#multi-action)
+    If you select an inbound channel (Code-based experience, In-app message, Content Card or Web action), you can add more inbound actions - for a total of up to 10 actions in a single campaign. [Learn how](../delivery/multiple-inbound-actions.md)
 
     If you select multiple outbound channels (Email, Push, Mobile), you can use channel optimization to automatically select the best channel for each customer at send time. [Learn how](../building-journeys/channel-optimization.md)
 
@@ -75,11 +75,6 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 1. **Leverage Optimization**
 
     Use the **[!UICONTROL Optimization]** section to run content experiments, leverage targeting rules, or use advanced combinations of both experimentation and targeting. These different options and the steps to follow are detailed in [this section](../content-management/gs-message-optimization.md).
-<!--
-1. **Create a content experiment**
-
-    Use the **[!UICONTROL Content experiment]** section to define multiple delivery treatments in order to measure which one performs best for your target audience. Click the **[!UICONTROL Create experiment]** button then follow the steps detailed in this section: [Create a content experiment](../content-management/content-experiment.md).
--->
 
 1. **Add multilingual content**
 
@@ -98,6 +93,18 @@ In the **[!UICONTROL Business rules]** drop-down list, select a rule set to appl
 Use this option when a campaign needs email values that differ from the selected channel configuration, without creating another configuration. You can override only the fields needed for that action while keeping the rest of the configuration unchanged.
 
 [Learn how to override email channel configuration](../email/create-email.md#override-email-channel-configuration)
+
++++
+
++++**Include suppressed addresses** (Email)
+
+If you have a compliance requirement, you can deliver this email to the addresses on your suppression list with the **[!UICONTROL Include suppression list in email delivery]** option in the **[!UICONTROL Delivery]** section. The Adobe global suppression list, consent, and opt-out choices are still honored. This capability is available in Limited Availability.
+
+>[!CAUTION]
+>
+>This is not a recommended email practice, as it can damage your deliverability.
+
+[Learn how to include suppressed addresses in an email delivery](../reports/suppression-list.md#include-suppressed-addresses)
 
 +++
 
@@ -140,29 +147,9 @@ For in-app messages, you can use the **[!UICONTROL Edit triggers]** button to ch
 >title="Add multiple inbound actions"
 >abstract="You can select several inbound actions inside a single campaign. This capability enables you to deliver multiple Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, each action containing a specific content."
 
-To simplify the orchestration of your campaign, you can define several inbound actions inside a single campaign, each action containing a specific content.
+You can define several inbound actions inside a single campaign, to deliver multiple Code-based experiences, In-app messages, Content Cards, or Web actions to different locations at the same time, each action containing a specific content. You can add up to 10 inbound actions in a campaign.
 
->[!NOTE]
->
->This capability is only available for inbound channels. For outbound channels (Email, Push, Mobile message), use [channel optimization](../building-journeys/channel-optimization.md) to automatically select the best channel per customer.
-
-This capability enables you to deliver various Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, without the need to create multiple campaigns. It makes the deployment of your campaign easier and allows for smoother reporting, with all the data consolidated into one single campaign.
-
-For example, you can send a code-based experience to multiple endpoints with slightly different contents. To do this, create multiple code-based actions within the same campaign, each with a different endpoint configuration.
-
-To define several inbound actions in a campaign, follow the steps below.
-
-1. Select an inbound action (**Code-based experience**, **In-app message**, **Content Card** or **Web**) from the **[!UICONTROL Actions]** section.
-
-1. Select the channel configuration and define a specific content for that action.
-
-1. Use the **[!UICONTROL Add action]** button to select another inbound action from the drop-down list.
-
-    ![Campaign Actions tab showing multiple inbound actions configured](assets/create-campaign-multi-action.png){width="80%"}
-
-1. Proceed similarly to add more actions. You can add up to 10 inbound actions in a campaign.
-
-Once the campaign is [live](review-activate-campaign.md), all actions are activated simultaneously.
+[Learn how to add multiple inbound actions](../delivery/multiple-inbound-actions.md)
 
 ## Next steps {#next}
 

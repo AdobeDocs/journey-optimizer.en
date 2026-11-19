@@ -17,6 +17,7 @@ For complete understanding, this information should be combined with the documen
 * Define the exclusion period using [!UICONTROL Weekly] or [!UICONTROL Custom date] with a time zone
 * Review weekly periods together to identify gaps at midnight and at the start or end of the week
 * Choose how messages are handled during quiet hours ([!UICONTROL Queue message] or [!UICONTROL Discard message])
+* Choose between a standard time zone and [!UICONTROL Use recipients local time zone], and between [!UICONTROL Queue message] and [!UICONTROL Discard message], based on audience and message shelf life
 * Apply an activated quiet hours rule set to journey and campaign actions
 * View the number of profiles excluded by quiet hours in reporting
 
@@ -33,7 +34,7 @@ For complete understanding, this information should be combined with the documen
 * Supported channels: Email, Mobile message, Push, and WhatsApp.
 * Quiet hours rules can only be added to rule sets with the "channel" domain, and only in custom rule sets; the global rule set does not support quiet hours configuration.
 * The [!UICONTROL Category] field is currently read-only and defaults to [!UICONTROL Marketing].
-* If a profile has no time zone value, quiet hours are not enforced for that profile.
+* If a profile has no time zone value, quiet hours are not enforced for that profile, and there is no fallback to a default time zone.
 * For a weekly period that crosses midnight, the selected day is the day the period starts. A Monday 9:00 PM–9:00 AM period covers Monday 9:00 PM through Tuesday 9:00 AM, not Monday 12:00 AM–9:00 AM.
 * Review weekly periods together for continuous coverage. A Saturday and Sunday all-day period combined with Monday–Friday 9:00 PM–9:00 AM periods leaves Monday 12:00 AM–9:00 AM uncovered; include Sunday in the 9:00 PM–9:00 AM period to cover through Monday 9:00 AM.
 * You can add up to 5 separate periods with the [!UICONTROL Add more dates] button.
@@ -54,7 +55,10 @@ For complete understanding, this information should be combined with the documen
 * **Q: Which channels support quiet hours?** — Email, Mobile message, Push, and WhatsApp.
 * **Q: Can I set quiet hours in the global rule set?** — No, quiet hours can only be defined in custom rule sets with the "channel" domain.
 * **Q: What happens to a message that hits quiet hours?** — With [!UICONTROL Queue message] it is sent when the quiet period ends unless it is Paused; with [!UICONTROL Discard message] it is never sent.
-* **Q: What if a profile has no time zone value?** — Quiet hours are not enforced for that profile.
+* **Q: When should I use Queue message or Discard message?** — Use [!UICONTROL Queue message] for messages that stay relevant after the quiet period (for example loyalty updates), keeping in mind the 7-day queue limit. Use [!UICONTROL Discard message] for time-sensitive messages that lose their value during the quiet window (for example a flash sale that ends overnight).
+* **Q: When should I use a standard time zone or recipients' local time zone?** — Use a standard time zone when the audience is concentrated in a single region. Use [!UICONTROL Use recipients local time zone] when the audience spans several regions, and make sure profiles have a time zone value.
+* **Q: How can I avoid queued messages being released all at once?** — Combine quiet hours with frequency capping by channel.
+* **Q: What if a profile has no time zone value?** — Quiet hours are not enforced for that profile, and there is no fallback to a default time zone. This is the most common reason recipient-based quiet hours do not apply as expected.
 * **Q: Which day does a weekly period that crosses midnight apply to?** — The selected day is the day the period starts. A Monday 9:00 PM–9:00 AM period covers Monday evening through Tuesday morning.
 * **Q: How can I cover Monday through 9:00 AM?** — Include Sunday in the 9:00 PM–9:00 AM period; a Saturday and Sunday all-day period combined with Monday–Friday overnight periods leaves Monday 12:00 AM–9:00 AM uncovered.
 * **Q: How long can a message stay queued?** — If it remains queued for a profile for more than 7 days, it is discarded.

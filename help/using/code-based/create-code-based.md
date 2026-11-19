@@ -90,7 +90,7 @@ To add a **code-based experience** activity to a journey, follow these steps:
 
     You can also use an existing content template as a basis for your code content. Note that the templates available to choose are scoped to either HTML or JSON based on the channel configuration that has been chosen beforehand. [Learn how to use content templates](../content-management/use-content-templates.md)
 
-1. You can add one or more inbound actions to your code-based experience by clicking the **[!UICONTROL Add action]** button. [Learn more](../building-journeys/journey-action.md#multi-action)
+1. You can add one or more inbound actions to your code-based experience by clicking the **[!UICONTROL Add action]** button. [Learn more](../delivery/multiple-inbound-actions.md)
 
 1. Go back to the journey canvas. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
 

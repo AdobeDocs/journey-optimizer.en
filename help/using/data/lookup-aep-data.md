@@ -102,6 +102,8 @@ Before you begin, please review the following restrictions and guidelines:
 
 In order to leverage data from your dataset for personalization, you need to enable the dataset for lookup.
 
+You can enable a dataset for lookup either in the dataset management interface or with an API call.
+
 ### Prerequisites {#prerequisites-enable}
 
 The schema associated with your dataset that you wish to enable for lookup must be of record-type. The schema should NOT be of profile or event class. 
@@ -183,7 +185,7 @@ This process indicator helps in understanding when new batches of data are avail
 
 ## Next steps
 
-After a dataset has been enabled for lookup using an API call, you can use the data with [!DNL Journey Optimizer] personalization and Decisioning capabilities. For more information, refer to these sections:
+After a dataset has been enabled for lookup, either in the dataset management interface or using an API call, you can use the data with [!DNL Journey Optimizer] personalization and Decisioning capabilities. For more information, refer to these sections:
 
 * [Use Adobe Experience Platform data for personalization](../personalization/aep-data-perso.md)
 * [Use Adobe Experience Platform data for decisioning](../experience-decisioning/aep-data-exd.md)

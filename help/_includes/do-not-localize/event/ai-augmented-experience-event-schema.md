@@ -16,7 +16,7 @@ For complete understanding, this information should be combined with the documen
 * Understand that Journey Optimizer events are XDM Experience Events sent to Adobe Experience Platform via Streaming Ingestion
 * Build an XDM schema of the ExperienceEvent class for journey events
 * Add the Orchestration eventID field group for system-generated events
-* Declare an identity field to identify individual profiles in the event
+* Declare an identity field, for unitary events, to identify individual profiles in the event
 * Mark the schema and dataset for profile so the data is available for profile
 
 **Glossary:**
@@ -24,16 +24,19 @@ For complete understanding, this information should be combined with the documen
 * **XDM ExperienceEvent class**: The class the schema must belong to for use with Journey Optimizer events *(product-specific)*
 * **Orchestration eventID field group**: The field group that must be included for system-generated events, which Journey Optimizer uses to identify events used in journeys *(product-specific)*
 * **Identity map**: What can be used to identify individual profiles if no identity is specified, which is not recommended *(product-specific)*
+* **Dataset**: The storage container in Experience Platform that holds the records of your events *(product-specific)*
+* **Profile enablement**: Marking the schema and dataset for profile, so the event data is also stored in Real-Time Customer Profile, where journeys can use it *(product-specific)*
 * **Streaming Ingestion**: The mechanism by which XDM Experience Events are sent to Adobe Experience Platform *(product-specific)*
 
 **Guardrails:**
 
 * The schema must be of the XDM ExperienceEvent class.
 * For system-generated events, the schema must include the Orchestration eventID field group.
-* Declare an identity field for identifying individual profiles in the event; if no identity is specified, an identity map can be used, which is not recommended.
+* For unitary events, declare an identity field for identifying individual profiles in the event; if no identity is specified, an identity map can be used, which is not recommended.
+* Business events do not use a person identity; they require a non-person primary identity.
 * If you want the data to be available for profile, mark the schema and dataset for profile.
 * Starting July 8, 2025, new customer organizations cannot create expressions using experience event attributes in journey conditions.
-* Starting April 1, 2026, organizations that have not accessed experience events via journey expressions in the last 90 days will no longer have access to this capability; accessing context from the starting event of a journey is not impacted.
+* Starting April 1, 2026, the use of experience event attributes in journey expressions is no longer supported for organizations that had not used this capability in the last 90 days; accessing context from the starting event of a journey is not impacted.
 
 **Terminology:**
 
@@ -45,13 +48,13 @@ For complete understanding, this information should be combined with the documen
 * **Q: What class must the schema use?** — The schema must be of the XDM ExperienceEvent class.
 * **Q: What is required for system-generated events?** — The schema must include the Orchestration eventID field group, which Journey Optimizer uses to identify events used in journeys.
 * **Q: Is a dataset required for the events?** — Having a dataset is not strictly necessary, but sending events to a specific dataset lets you maintain users' event history for future reference and analysis.
-* **Q: What happens if I do not declare an identity field?** — An identity map can be used instead, but this is not recommended.
-* **Q: Can I create expressions using experience event attributes in journey conditions?** — Starting July 8, 2025, new customer organizations cannot create such expressions, and starting April 1, 2026, organizations that have not accessed experience events via journey expressions in the last 90 days will no longer have access to this capability; accessing context from the starting event is not impacted.
+* **Q: What happens if I do not declare an identity field on a unitary event?** — An identity map can be used instead, but this is not recommended.
+* **Q: Can I create expressions using experience event attributes in journey conditions?** — Starting July 8, 2025, new customer organizations cannot create such expressions, and starting April 1, 2026, the use of experience event attributes in journey expressions is no longer supported for organizations that had not used this capability in the last 90 days; accessing context from the starting event is not impacted.
 
 **Personas:**
 
-* **developer:** Can build an XDM schema of the ExperienceEvent class, including the Orchestration eventID field group for system-generated events. Can declare an identity field to identify individual profiles in the event. The page states that an identity map can be used if no identity is specified, but this is not recommended. Where: "Guardrails".
-* **admin:** Can mark the schema and dataset for profile so the event data is available for profile. Can create a dataset to record event instances for future reference and analysis. The page states that organizations not accessing experience events via journey expressions for 90 days lose access, starting April 1, 2026. Where: "Guardrails".
+* **developer:** Can build an XDM schema of the ExperienceEvent class, including the Orchestration eventID field group for system-generated events. Can declare an identity field, for unitary events, to identify individual profiles in the event. The page states that an identity map can be used if no identity is specified, but this is not recommended. Where: "Guardrails".
+* **admin:** Can mark the schema and dataset for profile so the event data is available for profile. Can create a dataset to record event instances for future reference and analysis. The page states that, starting April 1, 2026, the use of experience event attributes in journey expressions is no longer supported for organizations that had not used this capability in the last 90 days. Where: "Guardrails".
 
 **Onboarding:**
 
@@ -61,4 +64,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: d34bf86c -->
+<!-- ai-section-version: 2 | source-hash: 98edc853 -->

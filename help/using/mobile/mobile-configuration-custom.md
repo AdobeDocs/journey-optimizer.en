@@ -230,9 +230,13 @@ Once your API credential is created, complete the fields required for JWT authen
 
 * **[!UICONTROL Name]**​: Enter a name for your JWT authentication configuration.
 
-* **[!UICONTROL API Token]**​: Enter the API Token provided by your SMS provider.
+* **[!UICONTROL API Token]**​: Enter the secret key used to sign the JWT. Journey Optimizer uses it as an HS256 (HMAC-SHA256) shared secret, so it must be at least 32 bytes.
 
 * **[!UICONTROL JWT Payload]**​: Enter the JSON payload containing the claims required for JWT, such as the issuer, subject, audience, and expiration.
+
+>[!NOTE]
+>
+>JWT authentication supports only the HS256 signing algorithm. RS256 and PEM private keys are not supported for signing. The PEM format applies only to mTLS client certificates.
 
 ![](assets/sms-byop-jwt.png)
 

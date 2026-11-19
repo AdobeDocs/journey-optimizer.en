@@ -32,6 +32,7 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * A profile cannot be present multiple times in the same journey at the same time across all active versions.
+* When re-entrance is disabled, the 91-day restriction is tracked across all versions that share the same journey ID; publishing a new version does not reset it (this is distinct from the reentrance wait period maximum of 90 days).
 * Read audience journeys: maximum 20,000 TPS (sandbox-level quota; shared across all concurrent Read Audience journeys in the same sandbox)
 * Audience qualification and Unitary event journeys: maximum 5,000 TPS (org-level quota; shared with each other across all sandboxes in the org)
 * Business events count toward the 5,000 TPS org-level quota; the subsequent Read audience activity shares the 20,000 TPS sandbox-level quota
@@ -50,6 +51,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: Can a profile enter the same journey twice simultaneously?** — No, the system uses the profile identity as a key and prevents the same profile from being at different places in the same journey at the same time.
 * **Q: What is the default reentrance wait period?** — 5 minutes, configurable up to a maximum of 90 days in journey properties.
+* **Q: Does publishing a new journey version reset the 91-day re-entrance restriction?** — No; when re-entrance is disabled, the 91-day restriction is tracked across all versions sharing the same journey ID, so a profile cannot re-enter another version within 91 days of entering an earlier one.
 * **Q: How many profiles per second can a Read audience journey process?** — Up to 20,000 TPS at sandbox level, though this maximum may not be achievable if multiple journeys run simultaneously in the same sandbox.
 * **Q: What happens to throughput after a Wait activity with a fixed time?** — Multiple profiles may exit the wait simultaneously, potentially exceeding 20,000 TPS; relative-time Wait activities are recommended to avoid this.
 * **Q: Can a profile appear in a Business journey multiple times at the same time?** — Yes, but only in the context of different business events.

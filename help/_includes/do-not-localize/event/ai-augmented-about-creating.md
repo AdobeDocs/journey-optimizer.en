@@ -24,7 +24,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Unitary event**: An event linked to a specific profile that can be rule-based or system-generated *(product-specific)*
 * **Identity type**: The type of key used to identify the person associated to the event, previously known as namespace; only people-based identity types can be selected *(product-specific)*
-* **Profile identifier**: The field, or combination of fields, from the event payload that allows the system to identify the person associated to the event *(product-specific)*
+* **Profile identifier**: Also called the event key; the field, or combination of fields, from the event payload that allows the system to identify the person associated to the event, for example the Experience Cloud ID, a CRM ID, or an email address. To use data stored in Real-time Customer Profile, it must be defined as a profile identity there *(product-specific)*
 * **eventID**: For system-generated events, the field automatically added to the list of selected fields so that Journey Optimizer can identify the event; the system pushing the event should not generate an ID and should use the one available in the payload preview *(product-specific)*
 * **Orchestration field group**: The field group that must be added to the XDM schema for system-generated events so the schema contains all information required to work with Journey Optimizer *(product-specific)*
 * **Advanced expression editor**: The editor you can switch to for creating more complex keys, such as a concatenation of two event fields *(product-specific)*
@@ -33,22 +33,25 @@ For complete understanding, this information should be combined with the documen
 
 * The event name allows only alphanumeric characters and underscores, with a maximum length of 30 characters (hard limit).
 * When you select the System Generated type, only schemas that have the eventID type field are available; when you select the Rule Based type, you can select any Experience Event schema available in your sandbox.
-* Adding an identity type is optional but recommended, and only a people-based identity type can be selected.
+* The identity type is required to retrieve additional information from the Real-time Customer Profile Service, and optional otherwise.
+* The identity type is not needed if you only use data from a third-party system through a custom data source.
+* Only a people-based identity type can be selected; an identity type defined for a lookup table is not available.
 * Only one identity type is allowed per journey, so events used in the same journey must use the same identity type.
-* The same key, for example CRMID=3224, cannot be at two different places in the same journey.
+* If the schema has a primary identity, the Profile identifier and Identity type fields are pre-filled; if no identity is defined, _identityMap > id_ is used as the primary key and you select an identity type.
+* The same profile identifier, for example CRMID=3224, cannot be at two different places in the same journey.
 * For system-generated events, the payload preview requires saving and re-opening the event to generate an event ID.
 
 **Terminology:**
 
 * Canonical name: Configure a unitary event
-* Synonyms: "Identity type" = "namespace"
+* Synonyms: "Identity type" = "namespace"; "Profile identifier" = "event key"
 * Do not confuse: "Rule Based" (uses an Event ID condition, and you can select any Experience Event schema available in your sandbox) ≠ "System Generated" (only schemas that have the eventID type field are available; the eventID field is automatically added to the selected fields)
 * Do not confuse: "Event ID condition" (rule used to identify events that trigger the journey) ≠ "Profile identifier" (key used to identify the person associated to the event)
 
 **FAQ:**
 
 * **Q: What are the two Event ID types for a unitary event?** — Rule Based, which uses an Event ID condition, and System Generated, for which the eventID field is automatically added to the list of selected fields.
-* **Q: Is defining an identity type required?** — It is optional but recommended, as it allows you to leverage information stored in the Real-time Customer Profile Service; only a people-based identity type can be selected.
+* **Q: Is defining an identity type required?** — It is required if you want to leverage information stored in the Real-time Customer Profile Service, and optional otherwise. It is not needed if you only use data from a third-party system through a custom data source. Only a people-based identity type can be selected.
 * **Q: Why does the system not allow the same key at different places in the same journey?** — A person cannot be at two different places in the same journey, so the system does not allow the same key to be at different places in the same journey.
 * **Q: What schemas are available for a System Generated event?** — Only schemas that have the eventID type field; for Rule Based events, you can select any Experience Event schema available in your sandbox.
 * **Q: How do I preview the payload for a system-generated event?** — Save the event and re-open it first to generate an event ID, then use the View Payload icon to check the preview.
@@ -56,7 +59,7 @@ For complete understanding, this information should be combined with the documen
 **Personas:**
 
 * **developer:** Can define the schema and payload fields an event expects to receive for use in the journey. Can define the profile identifier, the field or combination of fields that identifies the person associated to the event. The page states that the same key, for example CRMID=3224, cannot be at two different places in the same journey. Where: "Define the profile identifier".
-* **admin:** Can create a unitary event, name it, and choose the Rule Based or System Generated Event ID type. Can add an identity type to leverage information stored in the Real-time Customer Profile Service. The page states that the event name allows only alphanumeric characters and underscores, with a maximum length of 30 characters. Where: "Configure a unitary event".
+* **admin:** Can create a unitary event, name it, and choose the Rule Based or System Generated Event ID type. Can add an identity type, required to leverage information stored in the Real-time Customer Profile Service. The page states that the event name allows only alphanumeric characters and underscores, with a maximum length of 30 characters. Where: "Configure a unitary event".
 
 **Onboarding:**
 
@@ -68,4 +71,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 3c8e5ec1 -->
+<!-- ai-section-version: 2 | source-hash: 9fe1e179 -->

@@ -26,7 +26,7 @@ For complete understanding, this information should be combined with the documen
 * **Rapid delivery mode**: Option turned on for a push campaign
 * **Holdout**, **treatment**, **allocation** (uniform or custom): Elements of a content experiment on a campaign
 * **Error families, one per section of the page:**
-* **Audience** (CJMCMP-2000, 2025, 2028, 2031, 2061, 2060, 2075, 2077, 2078, 2080, 2081, 2082, 2083, 2024): audience missing, audience that cannot be changed after activation, permission denied, audience not evaluated yet, audiences and attributes not available with Healthcare Shield or Privacy and Security Shield, new profile not allowed.
+* **Audience** (CJMCMP-2000, 2025, 2028, 2031, 2061, 2060, 2075, 2024): audience missing, audience that cannot be changed after activation, permission denied, audience not evaluated yet, audiences and attributes from audience composition not available with Healthcare Shield or Privacy and Security Shield, new profile not allowed.
 * **Action and channel configuration** (CJMCMP-2119, 2104, 2201, 2202, 2105, 2115, 2074): deprecated surface, missing or unpublished message, channel not allowed for the campaign type, priority range.
 * **Schedule and approval** (CJMCMP-2017, 2120, 2309, 2121, 2052 and CJMRT-150001, 150002): missing or invalid schedule, end time before start time, schedule mismatch, campaign not approved, draft version already created.
 * **Rapid delivery** (CJMCMP-2310, 2311, 2312, 2030, 2041): rapid delivery mode combined with an unsupported campaign or audience.
@@ -36,7 +36,7 @@ For complete understanding, this information should be combined with the documen
 
 * Codes with the status 200 are warnings.
 * The audience cannot be changed once the campaign is activated (CJMCMP-2025-400). For a recurring Action campaign, click **Modify campaign** to create a new version, or duplicate the campaign, then change the audience.
-* Audiences and attributes from audience composition, federated audience composition, or CSV uploads cannot be used with Healthcare Shield or Privacy and Security Shield (CJMCMP-2075, 2077, 2078, 2080, 2081, 2082, 2083).
+* Audiences and attributes from audience composition cannot be used with Healthcare Shield or Privacy and Security Shield (CJMCMP-2075).
 * Priority can only be in the range of 0-100 (hard limit), and is disabled for transactional campaigns (CJMCMP-2074-400).
 * Rapid delivery mode cannot be used with a recurring schedule, a headless campaign, or a campaign that has an experiment. It is limited to audiences of up to 30M profiles (hard limit), and does not accept audiences from audience composition.
 * An experiment can have only one holdout, and a campaign can have only one experiment.
@@ -54,7 +54,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: What do the parts of a campaign error code mean?** — Campaign errors use the prefix CJMCMP, followed by an error number and an HTTP status. Codes with the status 200 are warnings.
 * **Q: Why can I not activate the campaign because "The selected audience has not been evaluated yet."?** — CJMCMP-2060-200 is a warning: wait until the audience is evaluated, then activate the campaign.
 * **Q: Why can I not change the audience of the campaign?** — CJMCMP-2025-400: the audience cannot be changed once the campaign is activated. For a recurring Action campaign, click **Modify campaign** to create a new version, or duplicate the campaign, then change the audience.
-* **Q: Why is my audience refused with Healthcare Shield or Privacy and Security Shield?** — Audiences and attributes from audience composition, federated audience composition, or CSV uploads cannot be used with them. Select another audience.
+* **Q: Why is my audience refused with Healthcare Shield or Privacy and Security Shield?** — Audiences and attributes from audience composition cannot be used with them (CJMCMP-2075-400). Select an audience that does not come from audience composition.
 * **Q: Why does "The message has not been published" appear?** — CJMCMP-2202-400: publish the message, then activate the campaign.
 * **Q: Why does "The selected schedule is invalid and will never be fired." appear?** — CJMCMP-2120-400: set a start date in the future, and an end date after the start date.
 * **Q: Why does "The campaign is not approved" appear?** — CJMCMP-2121-400: request approval, wait for it, then activate the campaign.
@@ -91,7 +91,7 @@ For complete understanding, this information should be combined with the documen
 
 **Personas:**
 
-* **marketer:** Can find the cause and the fix for an error or a warning when configuring, scheduling, or activating a campaign. Can tell an error from a warning by checking whether the HTTP status of the code is 200. The page states that a campaign cannot be activated until it is approved. Where: "FAQ".
+* **marketer:** Can find the cause and the fix for an error or a warning when configuring, scheduling, or activating a campaign. Can tell an error from a warning by checking whether the HTTP status of the code is 200. The page states that, when the campaign is not approved, the user must request approval, wait for it, then activate the campaign (CJMCMP-2121-400). Where: "Schedule and approval".
 
 **Onboarding:**
 
@@ -103,4 +103,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: f3b72432 -->
+<!-- ai-section-version: 1 | source-hash: fa652e11 -->

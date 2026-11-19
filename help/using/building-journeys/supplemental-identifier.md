@@ -62,7 +62,7 @@ topic_v2:
 
 * **Concurrent instance limits**: Profiles cannot have more than 10 concurrent journey instances.
 
-* **Data type and schema structure**: The supplemental identifier must be of type `string`. It can be an independent string attribute or it can be a string attribute within an array of objects. The independent string attribute will result in a single journey instance, whereas the string attribute within an array of objects will result in a unique journey instance per iteration of the object array. String arrays and maps are not supported.
+* **Data type and schema structure**: The supplemental identifier must be of type `string`. It can be an independent string attribute, a string attribute within an array of objects, or an array of strings. The independent string attribute will result in a single journey instance, whereas the string attribute within an array of objects will result in a unique journey instance per iteration of the object array, and an array of strings will result in a unique journey instance per value. Maps are not supported.
 
 * **Journey reentrance**
 
@@ -147,6 +147,8 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
 ## Leverage supplemental ID attributes
 
 Use the expression editor and personalization editor to reference attributes of the supplemental identifier for personalization or conditional logic. Attributes are accessible from the **[!UICONTROL Contextual attributes]** menu.
+
+The supplemental ID value of the current journey instance is available as the `context.journey.technicalProperties.supplementalId` contextual attribute, and as `${supplementalId}` in conditions. It identifies which record the current journey instance was created for, so you can use it to personalize a message or to choose a path. The other attributes of that record, such as the booking country in the example below, are read separately from the data that contains it. For more expression examples, see the examples below and [Use journey technical properties](../personalization/iterate-contextual-data.md#technical-properties).
 
 ![Personalization editor showing supplemental identifier fields for content](assets/supplemental-ID-perso.png)
 
@@ -244,6 +246,8 @@ For external audiences created via API that use Use Case 1 (where the audience i
 
 You must enable `expressActivation` on the audience at creation time. This tells Journey Optimizer to activate every record independently, without deduplication by profile ID. This flag cannot be changed after the audience is created.
 
+If the audience is created without `expressActivation: true`, Journey Optimizer deduplicates records by profile ID. Only one row per profile is admitted, and the other rows, with their supplemental IDs, are not activated.
+
 Use the following API call when creating the audience:
 
 Endpoint:
@@ -327,6 +331,15 @@ These examples show how supplemental identifiers support multiple related record
   * Profile: "Alex".
   * Supplemental IDs: `"productID1234", "productID5678"`.
   * Journey executes separately for each product, with personalized upsell opportunities.
+
+### Account notifications
+
+* **Scenario**: A bank sends a message for each account a customer holds.
+* **Data model**: The profile has an `accounts` object array. Each object contains a string `accountId` and other account attributes. Select `accountId` as the supplemental identifier. For the supported data types, see [Guardrails & limitations](#guardrails).
+* **Execution**:
+  * Profile: "Maria".
+  * Supplemental IDs: `"ACC-1001", "ACC-1002"`.
+  * Journey executes separately for each account. In each instance, use the current account ID to personalize the message or to select a path in a condition.
 
 ## How-to video {#video}
 

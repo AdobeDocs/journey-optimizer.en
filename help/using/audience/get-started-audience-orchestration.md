@@ -136,7 +136,8 @@ This documentation provides detailed information on how to work with audience co
 
 Audience composition allows you to create **composition workflows**, where you can combine existing Adobe Experience Platform audiences into a visual canvas and leverage various activities (split, exclude...) to create new audiences.
 
-Once done, the **resulting audiences** are saved back into Adobe Experience Platform along with existing audiences and can be leveraged in Journey Optimizer campaigns and journeys to target customers. Learn how to target audiences in Journey Optimizer
+Once done, the **resulting audiences** are saved back into Adobe Experience Platform along with existing audiences and can be leveraged in Journey Optimizer campaigns and journeys to target customers. [Learn how to target audiences in Journey Optimizer](target-audiences.md).
+
 ![](assets/audiences-process.png)
 
 >[!IMPORTANT]

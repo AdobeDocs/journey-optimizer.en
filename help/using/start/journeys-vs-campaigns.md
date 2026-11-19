@@ -171,7 +171,7 @@ Each customer experiences their own journey timeline based on their actions.
 * Stateless execution - no context maintained
 * Simple scheduling or API triggering
 * Ideal for broadcast communications
-* Multi-surface inbound delivery — Add up to 10 inbound channel actions (Code-based experience, In-app, Content Card, Web) in a single campaign, using targeting rules to create message variants based on audience membership or profile attributes. [Learn more](../campaigns/campaign-action.md#multi-action)
+* Multi-surface inbound delivery — Add up to 10 inbound channel actions (Code-based experience, In-app, Content Card, Web) in a single campaign, using targeting rules to create message variants based on audience membership or profile attributes. [Learn more](../delivery/multiple-inbound-actions.md)
 
 **Example flow:**
 

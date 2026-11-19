@@ -41,9 +41,11 @@ level_v2:
 ---
 # Create collections {#create-collections}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers collections for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Collections](../../experience-decisioning/collections.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_decision_collection"

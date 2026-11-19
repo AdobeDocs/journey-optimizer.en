@@ -52,13 +52,13 @@ As such, an important prerequisite for setting up events for [!DNL Journey Optim
 
 >[!CAUTION]
 >
->Starting July 8, 2025, new customer organizations cannot create expressions using experience event attributes in journey conditions. Starting April 1, 2026, organizations that have not accessed experience events via journey expressions in the last 90 days will no longer have access to this capability. Alternative approaches and best practices are listed in [Experience event lookup in journeys](../building-journeys/exp-event-lookup.md).
+>Starting July 8, 2025, new customer organizations cannot create expressions using experience event attributes in journey conditions. Starting April 1, 2026, the use of experience event attributes in journey expressions is no longer supported for organizations that had not used this capability in the last 90 days. Alternative approaches and best practices are listed in [Experience event lookup in journeys](../building-journeys/exp-event-lookup.md).
 >
 >Accessing context from the starting event of a journey is not impacted.
 
 ## Schema requirements for [!DNL Journey Optimizer] Events  {#schema-requirements}
 
-The first step in setting up an event for [!DNL Journey Optimizer] is to ensure that you have an XDM schema defined to represent the event, and a dataset created to record instances of the event on Adobe Experience Platform. Having a dataset for your events is not strictly necessary, but sending the events to a specific dataset will allow you to maintain users' event history for future reference and analysis, so it is always a good idea. If you do not already have a suitable schema and dataset for your event, both of those tasks can be done in Adobe Experience Platform web interface. 
+The first step in setting up an event for [!DNL Journey Optimizer] is to ensure that you have an XDM schema defined to represent the event, and a dataset created to record instances of the event on Adobe Experience Platform. A dataset is the storage container in Experience Platform that holds the records of your events. Having a dataset for your events is not strictly necessary, but sending the events to a specific dataset will allow you to maintain users' event history for future reference and analysis, so it is always a good idea. If you do not already have a suitable schema and dataset for your event, both of those tasks can be done in Adobe Experience Platform web interface. 
 
 ![](assets/schema1.png)
 
@@ -72,11 +72,11 @@ Any XDM schema that will be used for [!DNL Journey Optimizer] events should meet
 
    ![](assets/schema3.png)
 
-* Declare an identity field for identifying individual profiles in the event. If no identity is specified, an identity map can be used. This is not recommended.
+* For unitary events, declare an identity field for identifying individual profiles in the event. If no identity is specified, an identity map can be used. This is not recommended. Business events do not use a person identity: they require a non-person primary identity. [Learn more](../event/about-creating-business.md#important-notes)
 
    ![](assets/schema4.png)
 
-* If you would like this data to be available for profile, mark the schema and dataset for profile. [Learn more](../data/lookup-aep-data.md)
+* If you would like this data to be available for profile, mark the schema and dataset for profile. This is called profile enablement: the event data is then also stored in Real-Time Customer Profile, where journeys can use it. [Learn more](../data/lookup-aep-data.md)
 
    ![](assets/schema5.png)
 

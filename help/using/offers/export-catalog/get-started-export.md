@@ -49,9 +49,11 @@ level_v2:
 ---
 # Get started with offer catalog export {#export-catalog}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the offer catalog export for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Item catalog](../../experience-decisioning/catalogs.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
 Journey Optimizer allows you to automatically export your offer catalog to Adobe Experience Platform.
 

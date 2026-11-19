@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: About Adobe Experience Platform audiences
-description: Learn how to work with Adobe Experience Platform audiences
+title: Import audiences from a CSV file
+description: Learn how to import an audience from a CSV file with custom upload and map its identity column to customer profiles
 feature: Audiences, Profiles
 topic: Content Management
 role: User
@@ -41,17 +41,25 @@ Adobe Experience Platform Audience Portal allows you to import an audience using
 
 During the custom upload process, specify the CSV attribute to use as the identity and the profile identity it maps to. This establishes a link between the audience data and the profile. If the CSV file contains an identity value not found in the profile, a new profile is created with that identity value.
 
+You select one column as the primary identity and specify its identity namespace. All the other columns become attributes of the audience, which you can use for personalization. They are not connected to the profile. [Learn how to use enrichment attributes](enrichment-attributes.md)
+
+Keep the following in mind:
+
+* The file must be in CSV format, have 26 columns or fewer, and be 1 GB or smaller. The column names in the first row cannot contain spaces or dashes.
+* A sandbox can contain up to 50 audiences imported from CSV files. Federated Audience Composition audiences are not counted.
+* By default, an imported audience expires after 30 days, and the expiration is reset if you update the audience. You can set a custom expiration.
+
+>[!CAUTION]
+>
+>Custom upload audiences (CSV upload) cannot be used to target inbound channel actions, including in-app messages and web or code-based experiences. [Learn more about audience guardrails](target-audiences.md#guardrails)
+
 ![](assets/import-audience.png)
 
 Detailed information on how to import audiences is available in Adobe Experience Platform [Segmentation Service documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience){target="_blank"}.
 
 >[!NOTE]
 >
->For custom upload audiences (CSV upload) and other external audiences, **[!UICONTROL Incremental read]** is not functionally supported today. On each recurrence, the **entire audience** is retrieved, regardless of the Incremental read toggle setting.
-
->[!CAUTION]
->
->Custom upload audiences (CSV upload) cannot be used to target inbound channel actions, including in-app messages and web or code-based experiences. [Learn more about audience guardrails](target-audiences.md#guardrails)
+>For custom upload audiences (CSV upload) and other external audiences, **[!UICONTROL Incremental read]** is not functionally supported today. This option, available in the recurring options of the [!UICONTROL Read audience] activity, normally processes only the profiles that entered the audience since the last run. For these audiences, the **entire audience** is retrieved on each recurrence, regardless of the Incremental read toggle setting. [Learn more about Incremental read](../building-journeys/read-audience.md)
 
 Learn how to upload audiences in CSV format in video:
 

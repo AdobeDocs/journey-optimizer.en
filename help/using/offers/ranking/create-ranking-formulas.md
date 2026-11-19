@@ -44,9 +44,11 @@ level_v2:
 ---
 # Ranking formulas {#create-ranking-formulas}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers ranking formulas for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Ranking formulas](../../experience-decisioning/ranking/ranking-formulas.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
 ## About ranking formulas {#about-ranking-formulas}
 

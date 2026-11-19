@@ -23,7 +23,7 @@ level_v2:
 ---
 # Get started with Adobe Journey Optimizer{#get-started}
 
-Whether you are new to Journey Optimizer or returning to explore a new capability, this page is your starting point. Choose the path that fits your role and goal.
+Whether you are new to Journey Optimizer or returning to explore a new capability, this page is your starting point. Choose the path that fits your role and goal. For a guided introduction with step-by-step instructions, use cases, and videos, see the [onboarding hub](../using/start/onboarding-hub.md).
 
 ## New to Journey Optimizer? {#essentials}
 
@@ -173,6 +173,22 @@ Content management
 Reporting
 
 [Monitor performance with live reports](../using/reports/live-report.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/users.svg)
+
+Audiences
+
+[Manage audiences, profiles, and identities](audiences-profiles-identities-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+
+Decisioning
+
+[Create and manage personalized offers](decisioning-landing-page.md)
 :::
 
 ::::

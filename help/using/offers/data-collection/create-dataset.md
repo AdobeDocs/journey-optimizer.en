@@ -51,9 +51,11 @@ topic_v2:
 ---
 # Create a dataset to collect events {#create-dataset}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers creating a dataset to collect events for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Create a dataset to collect events](../../experience-decisioning/data-collection/create-dataset.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
 To collect experience events, you first need to create a dataset where these events will be sent.
 

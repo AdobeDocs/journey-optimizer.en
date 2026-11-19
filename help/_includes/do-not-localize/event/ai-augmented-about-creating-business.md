@@ -24,7 +24,8 @@ For complete understanding, this information should be combined with the documen
 * **Business event**: An event that is, unlike unitary events, not linked to a specific profile and is always rule-based, used to trigger a journey for a set of profiles when a global occurrence happens *(product-specific)*
 * **Read audience activity**: The activity that is the only one allowed after a business event and is automatically added as the next step *(product-specific)*
 * **Event ID condition**: The condition, written in the simple expression editor, used by the system to identify the events that trigger the journey *(product-specific)*
-* **One-shot business event**: A term the page uses for business events in the context of audience reuse: for a given journey, data pushed by the first event job is reused during a 1-hour time window *(product-specific)*
+* **One-shot journey** (also called one-shot business event): A journey that runs once, when the business event occurs; to allow it to run again, activate the multiple executions option. For a given journey, data pushed by the first event job is reused during a 1-hour time window *(product-specific)*
+* **Scheduled journey**: A journey that runs on a regular basis; for these journeys there is no guardrail on audience reuse *(product-specific)*
 
 **Guardrails:**
 
@@ -34,8 +35,8 @@ For complete understanding, this information should be combined with the documen
 * The payload of a business event is limited to a maximum of 64 KB of uncompressed, minified JSON (hard limit — events exceeding this size are dropped and do not trigger the journey); this limit also applies to unitary events.
 * Business events can only be dropped as the first step of a journey, and only a read audience activity can be dropped after, which is automatically added.
 * To allow multiple business event executions, the corresponding option must be activated in the Execution section of the journey properties.
-* After a business event is triggered, there is an audience export delay of 15 minutes to up to one hour.
-* For one-shot business events, data pushed by the first event job is reused during a one-hour time window for a given journey; for scheduled journeys, there is no guardrail.
+* After a business event is received, the Read Audience activity can take up to one hour to process.
+* For one-shot journeys (one-shot business events), data pushed by the first event job is reused during a one-hour time window for a given journey; for scheduled journeys, there is no guardrail.
 * Business events cannot be used in conjunction with unitary events or audience qualification activities.
 * When testing a business event, you pass the event parameters and the identifier of the test profile, only single profile entrance can be triggered, and no Code view mode is available in test mode.
 
@@ -49,8 +50,9 @@ For complete understanding, this information should be combined with the documen
 * **Q: What schema type does a business event require?** — Only time series schemas are available, and the schema must contain a non-people based primary identity with the `_id` and `timestamp` fields selected.
 * **Q: How large can a business event payload be?** — Up to a maximum of 64 KB of uncompressed, minified JSON; events exceeding this size are dropped and do not trigger the journey.
 * **Q: Where can a business event be placed in a journey?** — Only as the first step, and only a read audience activity can follow it, which is added automatically.
-* **Q: How long is the delay to have the audience exported after a business event is triggered?** — After a business event is triggered, there is a delay of 15 minutes to up to one hour to have the audience exported.
+* **Q: How long does it take to process the audience after a business event is received?** — After a business event is received, the Read Audience activity can take up to one hour to process.
 * **Q: Can a business event be combined with unitary events?** — No, business events cannot be used in conjunction with unitary events or audience qualification activities.
+* **Q: What happens when a business event is received while the journey is processing?** — Business events follow reentrance rules in the same way as unitary events: if the journey allows reentrance, the next business event is processed.
 * **Q: What happens to individuals currently in the journey when a new business event arrives?** — Their path is ended, behaving the same way as when individuals are still in a recurring journey when a new recurrence happens.
 
 **Personas:**
@@ -68,4 +70,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 4d89d738 -->
+<!-- ai-section-version: 3 | source-hash: 4e32f69d -->

@@ -257,9 +257,29 @@ Once the content is created, you can preview and test it using either simulation
 
 When you simulate content with **test profiles** in an Orchestrated campaign, two important constraints apply:
 
-* **Execution must have reached the channel activity in test** - Run the campaign in test using the **[!UICONTROL Start]** button so the workflow reaches the channel activity you want to simulate. In test mode, the workflow pauses at the channel activity, so a channel activity that comes after another channel activity is never reached. You cannot use **[!UICONTROL Simulate Content]** for those downstream channel activities. See [Test your campaign before publishing](../start-monitor-campaigns.md#test).
+* **Execution must have reached the channel activity in test** - Run the campaign in test using the **[!UICONTROL Start]** button so the workflow reaches the channel activity you want to simulate. In test mode, the workflow pauses at the channel activity, so a channel activity that comes after another channel activity is never reached. You cannot use **[!UICONTROL Simulate Content]** for those downstream channel activities. See [Test the campaign flow](../start-monitor-campaigns.md#test-flow).
 
 * **The test profile must match the channel activity target** - Use a test profile that belongs to the audience targeted by that channel activity. If the profile is not in that audience, selecting it will not render a preview of your content. See [Select test profiles](../../content-management/test-profiles.md).
+
+### Test the channel activity {#run-test}
+
+Select the channel activity and click **[!UICONTROL Run test]** to simulate its execution without sending the message. Use it to check the target population, errors, and exclusion reasons before publishing the campaign.
+
+Results are available from **[!UICONTROL View report]**, in the **[!UICONTROL Campaign statistics]** section. [Learn how to run a channel activity test and review its report](../start-monitor-campaigns.md#run-test-channel).
+
+### Proof sending requirements
+
+When sending a proof message to test a channel activity in an Orchestrated campaign, the selected test profile must meet **all** of the following requirements:
+
+* **Test profile flag** - The profile must have the `testProfile` attribute set to `true` in Experience Platform.
+
+* **Matching namespace** - The profile must have an identity in the same namespace that is configured as the target dimension for the channel activity. For example, if the channel activity targets the "Email" namespace, the test profile must have an email identity.
+
+* **Input transition presence** - The profile must be present in the input transition of the message activity. This means the profile must have qualified for and reached the channel activity during campaign execution (for example, after starting the campaign in test mode). If a profile is excluded by upstream conditions or filters in the campaign, it cannot receive the proof.
+
+>[!NOTE]
+>
+>Proof sending is available before and after publication. Before publishing, start the campaign in test mode using **[!UICONTROL Start]** and let the workflow reach the channel activity, then select it to access its test profiles. This is also required for content simulation with AEP test profiles. The proof uses the same delivery pipeline as production messages, allowing you to check content rendering and personalization.
 
 ## Confirm message sending
 

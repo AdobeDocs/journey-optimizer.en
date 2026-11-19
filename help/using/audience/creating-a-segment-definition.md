@@ -51,7 +51,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_ao_create_rule"
 >title="Create a rule"
->abstract="The Build rule creation method allows you to create a new audience definition using Adobe Experience Platform Segmentation Service."
+>abstract="The Build rule creation method allows you to create a new segment definition using Adobe Experience Platform Segmentation Service."
 
 ## Create a segment definition {#create}
 
@@ -59,7 +59,7 @@ In this example, you build an audience to target all customers living in Atlanta
 
 ➡️ [Learn how to create audiences in this video](#video-segment)
 
-1. From the **[!UICONTROL Audiences]** menu, click the **[!UICONTROL Create audience]** button and select **[!UICONTROL Build rule]**.
+1. From the **[!UICONTROL Audiences]** menu, select **[!UICONTROL Create audience]**, then select **[!UICONTROL Build rule]**.
     
     ![](assets/create-segment.png)
 
@@ -99,7 +99,7 @@ In this example, you build an audience to target all customers living in Atlanta
 
     ![](assets/segment-estimate.png)
 
-1. Once the audience is ready, click **[!UICONTROL Save]**. It displays in the list of Adobe Experience Platform audiences. Note that a search bar is available to help you search a specific audience in the list. 
+1. Once the audience is ready, select **[!UICONTROL Save]**. It displays in the list of Adobe Experience Platform audiences. Note that a search bar is available to help you search a specific audience in the list. 
 
 The audience is now ready for use in your journeys. For more information, refer to [this section](../audience/about-audiences.md).
 
@@ -123,7 +123,7 @@ Streaming segmentation is an ongoing data selection process that updates your au
 
 The profiles list for the audience is evaluated every 24 hours.
 
-Batch segmentation processes all profile data at once through segment definitions, creating a snapshot of the audience that can be saved and exported for use. Unlike streaming segmentation, batch segmentation does not continuously update the audience list in real-time. New data that comes in after the batch process is not reflected in the audience until the next batch process. Attempts to force an immediate update do not override the daily cycle. For immediate incremental updates, consider using streaming or on-demand segmentation options.
+Batch segmentation processes all profile data at once through segment definitions, creating a snapshot of the audience that can be saved and exported for use. Unlike streaming segmentation, batch segmentation does not continuously update the audience list in real-time. New data that comes in after the batch process is not reflected in the audience until the next batch process. Attempts to force an immediate update do not override the daily cycle. For immediate incremental updates, consider using streaming or [flexible audience evaluation](#flexible).
 
 For more details, refer to the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#batch){target="_blank"}
 
@@ -135,33 +135,23 @@ Edge segmentation is the ability to evaluate segments in Adobe Experience Platfo
 
 +++
 
-If you know the evaluation method you want to use, select it using the drop-down list. You can also click the browse icon folder icon with a magnifying glass to see a list of the available segment definition evaluation methods. For more details, refer to the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#segment-properties){target="_blank"}.
+Select the evaluation method using the drop-down list. To see which methods the segment definition qualifies for, select the browse icon to open the **[!UICONTROL Evaluation method eligibility]** popover. You can change the evaluation method after you save the segment definition, but you cannot switch back to streaming or edge once you change to batch. For more details, refer to the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html#segment-properties){target="_blank"}.
 
 ![](assets/evaluation-methods.png)
-
-<!--
-The determination between batch segmentation and streaming segmentation is made by the system for each audience, based on the complexity and the cost of evaluating the segment definition rule. You can view the evaluation method for each audience in the **[!UICONTROL Evaluation method]** column of the audience list.
-    
-![](assets/evaluation-method.png)
-
->[!NOTE]
->
->If the **[!UICONTROL Evaluation method]** column does not display, you  need to add it using configuration button on the top right of the list.
--->
 
 After you have first defined an audience, profiles are added to the audience when they qualify. Backfilling the audience from prior data can take up to 24&nbsp;hours. After the audience has been backfilled, the audience is continuously kept up-to-date and is always ready for targeting.
 
 ## Flexible audience evaluation {#flexible}
 
-Adobe Experience Platform Audience Portal allows you to run a segmentation job on demand for selected audiences, ensuring that you always have the most up-to-date audience data before targeting them in Journey Optimizer journeys and campaigns.
+The Audience Portal allows you to run a segmentation job on demand for selected audiences, ensuring that you always have the most up-to-date audience data before targeting them in Journey Optimizer journeys and campaigns.
 
 With flexible audience evaluation, you can:
 
-1. Create a fresh new segment based on your latest data.
+1. Create a fresh new segment definition based on your latest data.
 1. Evaluate the audience in real time to ensure accuracy. To do so, choose the audiences you want to have evaluated and select "Evaluate audiences", provided they meet specific criteria (e.g., people-based, Segmentation Service origin).
 1. Use the evaluated audience in Adobe Journey Optimizer campaigns or journeys for precise targeting.
 
-You can evaluate up to 20 audiences at a time, and ineligible audiences are automatically excluded. For more details, see the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#flexible-audience-evaluation). 
+You can select up to 20 audiences per evaluation run. All the audiences must have the origin "Segmentation Service", use batch segmentation, and be people-based. Ineligible audiences are automatically excluded. For more details, see the [Adobe Experience Platform Segmentation Service documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#flexible-audience-evaluation). 
 
 On-demand Flexible Audience Evaluation is queued with other segmentation work and can take up to **four hours**. The audience is not immediately available when the request is submitted. After the segment job completes, the corresponding export job runs automatically. Monitor the evaluation status and verify the resulting audience state before depending on it in a journey or campaign.
 

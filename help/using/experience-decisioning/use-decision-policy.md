@@ -255,3 +255,9 @@ You can also access each decision policy's technical details and copy them to th
 To see how your decisions are performing, you can view out-of-the-box decisioning metrics in the campaign or journey report, or build custom Customer Journey Analytics dashboards to measure performance and gain insights into how your decision policies and offers are delivered and engaged with. [Learn more about Decisioning reporting](cja-reporting.md).
 
 ![](../reports/assets/cja-decisioning-item-performance.png)
+
+## How-to video {#video}
+
+Learn how to use Decisioning to personalize your web page within the web visual editor.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496300/?learn=on&enablevpops)

@@ -55,11 +55,17 @@ topic_v2:
 
 You can leverage all of the web behavioral event data which you are already capturing through Adobe Analytics or Web SDK, and streaming into Adobe Experience Platform, in order to trigger journeys and automate experiences for your customers.
 
+In this context:
+
+* A **report suite** is the Adobe Analytics container that holds the data you collect for a site or an app.
+* A **data source** is the Experience Platform source connection that brings the data of a report suite into Experience Platform.
+* An **Experience event** is a record of a customer action, such as adding an item to a cart, in the XDM format that journeys use as an event.
+
 For this to work with Adobe Analytics, you must:
 
 1. Activate the report suite you want to use. [Learn more](#leverage-analytics-data)
-1. Enable Journey Optimizer to use your Adobe Analytics data source. [Learn more](#activate-analytics-data)
-1. Add a specific event in your journey. [Learn more](#event-analytic)
+1. Contact Adobe to enable Journey Optimizer to use your Adobe Analytics data source. [Learn more](#activate-analytics-data)
+1. Add a specific event in your journey. [Learn more](#event-analytics)
 
 >[!NOTE]
 >
@@ -76,7 +82,7 @@ To do this, follow the steps below:
 
 1. Browse to the **[!UICONTROL Sources]** menu.
 
-1. In the Adobe Analytics section, select **[!UICONTROL Add data]**
+1. In the Adobe Analytics section, select **[!UICONTROL Add data]**.
 
     ![](assets/ajo-aa_1.png)
 
@@ -107,7 +113,7 @@ Once this configuration is done, contact Adobe to enable your Journey Optimizer 
     
     * Subject: Enable Adobe Analytics events for journeys
 
-    * Content: Please enable my environment to use AA events. 
+    * Content: Please enable my environment to use Adobe Analytics (AA) events. 
         
         * Organization ID: "XXX@AdobeOrg"
         
@@ -135,13 +141,13 @@ In the example below, learn how to target users who added a product to their car
 1. Fill in the **[!UICONTROL Event]** parameters:
 
     * **[!UICONTROL Name]**: Personalize the name of your **[!UICONTROL Event]**.
-    * **[!UICONTROL Type]**: Choose the **[!UICONTROL Unitary]** Type. [Learn more](../event/about-events.md)
-    * **[!UICONTROL Event ID type]**: Choose the **[!UICONTROL Rule based]** Event ID type. [Learn more](../event/about-events.md#event-id-type)
+    * **[!UICONTROL Type]**: Choose the **[!UICONTROL Unitary]** Type. Analytics or Web SDK events only work with this type. [Learn more](../event/about-events.md)
+    * **[!UICONTROL Event ID type]**: Choose the **[!UICONTROL Rule based]** Event ID type. Analytics events only work with this type. [Learn more](../event/about-events.md#event-id-type)
     * **[!UICONTROL Schema]**: Select the Analytics or WebSDK schema [created before](#leverage-analytics-data).
     * **[!UICONTROL Fields]**: Select the Payload fields. [Learn more](../event/about-creating.md#define-the-payload-fields)
     * **[!UICONTROL Event ID condition]**: Define the condition to identify the events that will trigger your journey. 
         
-        Here, the Event is triggered when customers add an item to their carts.
+        In this example, the event is triggered when customers add an item to their carts. Use the condition that matches your own use case.
     * **[!UICONTROL Profile Identifier]**: Choose a field from your payload fields, or define a formula, to identify the person associated to the event.
 
     ![](assets/ajo-aa_6.png)
@@ -158,17 +164,17 @@ Now that the event is ready, create a journey to use it.
 
 1. Add an event which will be triggered if an order is completed.
 
-1. From your **[!UICONTROL Event menu]**, select the **[!UICONTROL Define the event timeout]** and **[!UICONTROL Set a timeout path]** options.
+1. From your **[!UICONTROL Event menu]**, select the **[!UICONTROL Define the event timeout]** and **[!UICONTROL Set a timeout path]** options. Then, set the timeout duration: it is the time the journey waits for the order-completed event. If the event is not received within this duration, customers follow the timeout path.
 
     ![](assets/ajo-aa_9.png)
 
-1. From the timeout path, add an **[!UICONTROL Email]** action. This path will be used to send an email to customers who didn't complete an order to remind them that their carts are still available.
+1. From the timeout path, add an **[!UICONTROL Email]** action. This path is used to send an email to customers who did not complete an order to remind them that their carts are still available.
 
-1. Add a **[!UICONTROL Wait]** activity after your main path and set it to the needed duration.
+1. On the main path, which is followed when the order is completed, add a **[!UICONTROL Wait]** activity and set it to the needed duration. In this example, the wait is two days.
 
     ![](assets/ajo-aa_10.png)
 
-1. Then, add an **[!UICONTROL Email action]**. In this email, the customers will be prompted to give feedbacks on the placed order.
+1. Then, add an **[!UICONTROL Email]** action. In this email, the customers are prompted to give feedback on the placed order.
 
 You can now test and publish your journey. [Learn more](../building-journeys/publish-journey.md)
 

@@ -307,6 +307,7 @@ The following guardrails apply to the [Read Audience](../building-journeys/read-
 * The **Read Audience** activity can target only one audience per journey. If multiple audiences are required, merge them into a single audience first. [Learn how to combine audiences using composition workflows](../audience/get-started-audience-orchestration.md).
 * Each organization can run up to **five** **Read Audience** instances concurrently (scheduled or business-event triggered), across all sandboxes and journeys. Avoid having more than five journeys with **Read Audience** starting at the exact same time; spread them 5 to 10 minutes apart. Learn more about journey processing rates in [this section](../building-journeys/entry-management.md#journey-processing-rate).
 * Sandbox throughput: the system manages processing per sandbox with a maximum of **20,000 profiles per second** shared across all **Read Audience** activities. Individual activities can be configured from **500 to 20,000 profiles per second**. If sandbox limits are reached, jobs may be queued.
+* Organization throughput: in addition to the sandbox limit, the system applies a maximum of **40,000 profiles per second** across all sandboxes in your organization. If the organization limit is reached, jobs may be queued.
 * Job processing timeout: **Read Audience** jobs that cannot be processed within **12 hours** are automatically cleaned up and will not execute.
 * Retries are applied by default on audience-triggered journeys while retrieving the export job. If an error occurs during export job creation, retries will be made every 10 minutes, for a maximum of **1 hour**. After that, the journey is considered failed and can therefore be executed up to 1 hour after the scheduled time.
 * For journeys using supplemental IDs, the reading rate of the **Read Audience** activity for each journey instance is limited to a maximum of **500 profiles per second**.
@@ -371,6 +372,8 @@ The following guardrails apply to the [email channel](../email/get-started-email
 
 * When designing email messages, the system checks for key settings and displays alerts for warnings (recommendations and best practices) and errors (blocking issues that prevent testing or activation). Learn more about email alerts and validation requirements in [this section](../email/create-email.md#check-email-alerts).
 
+* For Email Designer guardrails and limitations, such as mobile web browser, Outlook, and browser extension considerations, refer to [this section](../email/get-started-email-design.md#email-guardrails).
+
 #### Message content size for journey publication {#message-content-size}
 
 When publishing journeys that contain email messages, the total message content size must not exceed **2 MB** after backend processing. During publication, the system automatically processes message content by patching links, images, and applying transformations, which increases the payload size beyond the authored content size.
@@ -414,7 +417,7 @@ The following guardrails apply to the [Mobile channel](../mobile/get-started-mob
 
 * Journey Optimizer supports a maximum of **500 active inbound actions** at any moment in time. These inbound actions are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
 
-* An inbound message request supports a maximum of **10 lookups** of any kind, including [external data](../personalization/external-data-lookup.md) and dataset lookups. If a request exceeds this limit, the entire request fails with an **HTTP 422** error, with no partial response. To stay within the limit, consolidate your lookups: for example, call an endpoint once and reuse the result instead of calling it several times for different attributes.
+* An inbound message request supports a maximum of **10 lookups** of any kind, including [external data](../personalization/external-data-lookup.md) and dataset lookups. Each lookup call counts, including repeated calls to the same endpoint and calls inside an `#each` loop (once per iteration). Exceeding the limit can fail the entire request with an **HTTP 422** error, rather than returning a partial response. To stay within the limit, perform a lookup once, before any loop, and reuse its result. Reading several attributes from that result does not add lookups.
 
 #### Profile management with inbound channels {#profile-management-inbound}
 

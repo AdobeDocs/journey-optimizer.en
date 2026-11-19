@@ -204,7 +204,7 @@ With this option, you can just define a free field without mapping it to a field
 
 >[!IMPORTANT]
 >
->Whether the form is used to capture data from an existing profile or in a public landing page, it must include the fields that are required by the schema of the dataset, so that the submitted data can be ingested. Do not override the mandatory fields in the form configuration: this leads to ingestion failure.
+>Whether the form is used to capture data from an existing profile or in a public landing page, it must include all required root-level fields of the dataset schema, so that the submitted data can be successfully ingested in Adobe Experience Platform. Do not override the mandatory fields in the form configuration: this leads to ingestion failure.
 
 <!-- TBC (engineering): confirm that no identity field is required for forms linked to a non-profile enabled dataset, and whether the PII/restricted field guardrails from the PRD apply. -->
 

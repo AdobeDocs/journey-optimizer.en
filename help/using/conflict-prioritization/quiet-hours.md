@@ -113,7 +113,7 @@ To set quiet hours, create a rule inside a custom rule set. [Learn how to create
 
       >[!IMPORTANT]
       >
-      >If a profile has no time zone value, quiet hours are not enforced for that profile.
+      >If a profile has no time zone value, quiet hours are not enforced for that profile, and there is no fallback to a default time zone. Missing time zone data on profiles is the most common reason recipient-based quiet hours do not apply as expected.
 
    1. Specify the time period at which quiet hours should apply.
 
@@ -154,6 +154,28 @@ The rule now displays in the rule set. You can select it to display its details 
 ![](assets/quiet-hours-preview.png)
 
 If your rule is ready, activate it and complete the configuration of your rule set. [Learn how to create and activate rule sets](../conflict-prioritization/rule-sets.md#Create)
+
+## Best practices {#best-practices}
+
+Use the following guidance to decide how to configure a quiet hours rule for a given set of journeys or campaigns.
+
+### Choose a time zone mode {#choose-time-zone}
+
+* Apply a **standard time zone** when your audience is concentrated in a single region and shares the same business hours. The same window then applies uniformly to every recipient.
+* Select **[!UICONTROL Use recipients local time zone]** when your audience spans several regions, so that a window such as 10:00 PM to 7:00 AM uses each recipient's local time rather than a single reference time. When you use this mode, make sure profiles include a time zone value, as quiet hours are not enforced for profiles that do not.
+
+### Choose a handling action {#choose-handling-action}
+
+The right handling action depends on whether a message still makes sense once the quiet window ends:
+
+* Use **[!UICONTROL Queue message]** for messages that stay relevant later, such as loyalty updates, reward summaries, or offers that are still valid the next morning. The message is held and delivered when the quiet hours period ends. A message that remains queued for a profile for more than 7 days is discarded.
+* Use **[!UICONTROL Discard message]** for time-sensitive messages that lose their value during the quiet window, such as a flash sale that ends overnight or an abandoned cart reminder that is no longer timely. The message is never sent. When the rule applies to a journey action, the profile also exits the journey.
+
+>[!TIP]
+>
+>Combine quiet hours with [frequency capping by channel](channel-capping.md) to prevent queued messages from clustering when a quiet window ends and several messages could otherwise be released at once.
+
+For end-to-end examples that apply this guidance to real journeys — a single-region healthcare provider using a fixed time zone with queueing, and a global e-commerce brand using recipient time zones with both queue and discard — see the community article [Quiet Hours in Adobe Journey Optimizer: Timing Is the Last Mile of Personalization](https://experienceleaguecommunities.adobe.com/adobe-journey-optimizer-15/quiet-hours-in-adobe-journey-optimizer-timing-is-the-last-mile-of-personalization-249785){target="_blank"}.
 
 ## Apply Quiet hours to journeys and campaigns {#apply}
 

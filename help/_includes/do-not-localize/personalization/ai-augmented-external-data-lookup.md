@@ -36,6 +36,7 @@ For complete understanding, this information should be combined with the documen
 * Supported data types for payload variable parameters: `String`, `Integer`, `Decimal`, `Boolean`, `listString`, `listInt`, `listInteger`, `listDecimal`.
 * Variable substitution within `externalDataLookup` helper parameters is not currently supported.
 * Dynamic URL paths are not currently supported.
+* An inbound message request supports a maximum of 10 lookups of any kind, including external data lookups; exceeding this limit can fail the entire request (see Journey Optimizer guardrails and limitations).
 * Authentication options in the Action configuration are not currently supported by `externalDataLookup`; use header fields for API key-based or plaintext authorization as a workaround.
 * Changes to an Action configuration are not reflected in live campaigns or journeys using that Action; copy or modify any live campaigns/journeys to apply the changes.
 * Multi-pass rendering is supported.

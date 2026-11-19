@@ -20,7 +20,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **License usage dashboard**: A dashboard displaying important information about your organization's license usage, captured during a daily snapshot *(product-specific)*
+* **License usage dashboard**: A dashboard displaying important information about your organization's license usage, captured during a daily snapshot and not updated in real time *(product-specific)*
 * **Engageable Profiles**: Unique profiles engaged through journeys, campaigns, or decisioning over a rolling 12-month window *(product-specific)*
 * **Addressable Audience**: The total audience used to calculate Engageable Profiles *(product-specific)*
 
@@ -30,7 +30,7 @@ For complete understanding, this information should be combined with the documen
 * Certain metrics (for example compute hours, emails) are not displayed for development sandboxes and are shown as `N/A` in the quota column.
 * Only non-null values are displayed; when metrics are zero or close to zero they are not populated.
 * The Engageable Profiles metric cannot decrease unless there is no engagement with certain profiles for over 12 months, or if pseudonymous profiles are stitched to known ones.
-* Pseudonymous Profile data expiration cannot be configured through the Platform UI or APIs; you must contact support to enable this feature.
+* You can set Pseudonymous Profile data expiration from the Settings of the Profile dashboard in Experience Platform; profile deletion is permanent.
 * Deleting pseudonymous profiles affects both Journey Optimizer and Real-Time Customer Data Platform.
 
 **Terminology:**

@@ -46,7 +46,7 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: How many custom header parameters can I add?** — Up to 10 custom header parameters.
-* **Q: Which authentication types are supported?** — API key, MAC authentication, OAuth authentication, and JWT authentication.
+* **Q: Which authentication types are supported?** — API key, MAC authentication, OAuth authentication, and JWT authentication. JWT authentication signs with HS256 only, using the API Token as the shared secret. RS256 and PEM private keys are not supported.
 * **Q: Which endpoint uses mTLS?** — mTLS applies only to the Mobile message provider (message sending) endpoint; the OAuth token endpoint must not use mTLS.
 * **Q: What must the Provider Payload include for Basic or Bearer authentication?** — The authOption parameter in the JSON payload, plus references to the template variables {{fromNumber}}, {{toNumber}}, and {{message}}.
 * **Q: How do I test the credential?** — Click Verify SMS connection, fill in the Number and Message fields structured to align with the provider's payload format, then click Verify connection to send a sample message to a designated device.

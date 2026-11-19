@@ -7,7 +7,6 @@ feature: Get Started
 topic: Content Management
 role: User
 level: Beginner
-hide: true
 keywords: journey optimizer, onboarding, onboarding hub, use cases, videos, tutorials, get started, ramp up, first journey
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79

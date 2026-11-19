@@ -54,7 +54,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Level:** Intermediate
 * **First minimal step:** Sign in to Adobe CX Enterprise with your Adobe ID, then select Journey Optimizer.
-* **Success check:** The home page displays recently accessed campaigns and AI Recommendations.
+* **Success check:** The home page displays recently accessed campaigns and, if you have access to AI Recommendations (Limited Availability), AI Recommendations.
 * **Next:** Choose your learning path by role: Roles and responsibilities | Adobe Journey Optimizer (start/quick-start.md); Understand how Journey Optimizer works: Understanding Journey Optimizer (start/understanding-ajo.md)
 
 +++

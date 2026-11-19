@@ -25,6 +25,7 @@ For complete understanding, this information should be combined with the documen
 * **Subdomain delegation**: Delegating to Adobe the subdomains used to send emails, which determine elements such as the web pages to be tracked and the mirror page URLs *(product-specific)*
 * **IP pool**: A grouping of the IP addresses provisioned with your instance *(product-specific)*
 * **Channel configuration**: The configuration where you select the Email channel and set the technical parameters required to deliver emails *(product-specific)*
+* **List-unsubscribe**: An email channel configuration option that adds an unsubscribe URL to the email header so recipients can opt out in one click; it complements the opt-out link in the message content *(product-specific)*
 * **Execution fields**: The fields that determine which recipient email address to use in priority when several addresses are available in Adobe Experience Platform *(product-specific)*
 
 **Guardrails:**

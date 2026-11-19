@@ -30,13 +30,13 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Preview and proof are not supported for audiences created using CSV custom upload or Federated Audience Composition.
-* For custom upload and Federated Audience Composition, when no match is found between a record and a Unified Profile Service profile a new empty profile is created; standard targeting fields (for example personalEmail.address, mobilePhone.number) are empty and cannot be used for targeting unless the execution field is set to 'identityMap'.
+* For custom upload and Federated Audience Composition, when no match is found between a record and a profile in Real-time Customer Profile a new empty profile is created; standard targeting fields (for example personalEmail.address, mobilePhone.number) are empty and cannot be used for targeting unless the execution field is set to 'identityMap'.
 * Every record in a custom upload or Federated Audience Composition audience is activated, including duplicates, so the number of activated records may differ from the number of profiles after identity stitching.
 * The use of audiences and attributes from audience composition is currently unavailable with Healthcare Shield or Privacy and Security Shield.
 * Audiences are ready for use after ingestion completes; this is typically within one hour, but timing can vary. This estimate describes audience availability only; it does not specify when enrichment attributes from custom-upload audiences become available in journey conditions or personalization, and it is not a guaranteed availability time. Audiences resulting from compositions should be available 24 hours after publishing.
 * For Read-audience journeys scheduled daily, if the segmentation job does not complete within the defined time window, the journey is skipped until its next occurrence.
 * You cannot target audiences created using composition workflows, custom upload, or Federated Audience Composition in an Audience Qualification activity; only audiences created using segment definitions can be used there.
-* Only audiences generated using segment definition, audience compositions, custom upload (CSV file), and Federated audience composition can be targeted directly in journeys and campaigns; a non-supported audience (such as a Customer Journey Analytics audience) must be wrapped in a new segment definition in the Audience portal.
+* Only audiences generated using segment definition, composition workflows, custom upload (CSV file), and Federated Audience Composition can be targeted directly in journeys and campaigns; a non-supported audience (such as a Customer Journey Analytics audience) must be wrapped in a new segment definition in the Audience portal.
 
 **Terminology:**
 

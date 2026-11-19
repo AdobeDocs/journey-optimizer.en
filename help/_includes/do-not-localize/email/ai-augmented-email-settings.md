@@ -37,7 +37,7 @@ For complete understanding, this information should be combined with the documen
 * You cannot proceed with configuration creation while the selected IP pool is under edition (Processing status) and has never been associated with the selected subdomain; save as draft and retry once the IP pool has the Success status.
 * For non-production environments, Adobe does not create out-of-the-box test subdomains nor grant access to a shared sending IP pool.
 * The BCC email address must use a subdomain that has a valid MX record configuration, otherwise the email configuration processing will fail.
-* Sending to suppressed email addresses is only available for the Transactional email type, is disabled by default, and applies only to addresses suppressed due to spam complaint.
+* The Send to suppressed email addresses option of the channel configuration is only available for the Transactional email type, is disabled by default, and applies only to addresses suppressed due to spam complaint. A separate email action-level option (Limited Availability) can include all the addresses on the suppression list in a specific delivery.
 * The seed list feature currently applies to the email channel only, and only one seed list can be selected at a time.
 * Email retry period must be an integer value within range: minimum 6 hours for marketing emails, minimum 10 minutes for transactional emails, and a maximum of 84 hours (5040 minutes) for both email types; the default retry time period is 84 hours (3.5 days).
 
@@ -52,7 +52,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: What is the difference between the Marketing and Transactional email types?** — Marketing is for promotional email and requires user consent; Transactional is for non-commercial email, can be sent to profiles who unsubscribed from marketing, and can only be sent in specific contexts.
 * **Q: What is the default email retry time period and can I change it?** — The default is 84 hours (3.5 days); you can adjust it within the allowed range (minimum 6 hours for marketing, minimum 10 minutes for transactional, maximum 84 hours / 5040 minutes for both).
-* **Q: Can I send emails to addresses on the suppression list?** — Only transactional messages, and only to addresses suppressed due to spam complaint, by enabling the Send to suppressed email addresses option, which is disabled by default.
+* **Q: Can I send emails to addresses on the suppression list?** — At the channel configuration level, only transactional messages, and only to addresses suppressed due to spam complaint, by enabling the Send to suppressed email addresses option, which is disabled by default. For compliance scenarios, the email action-level Include suppression list in email delivery option (Limited Availability) includes all the addresses on the suppression list; the Adobe global suppression list, consent, and opt-out are still honored.
 * **Q: How many seed lists can I select?** — Only one seed list can be selected at a time, and the feature currently applies to the email channel only.
 * **Q: Why does my BCC email configuration fail?** — The BCC address must use a subdomain with a valid MX record configuration; if the MX record is not configured, the email configuration processing fails.
 * **Q: When do updated configuration settings take effect?** — For batch journeys, at the next recurrence or new execution; for transactional messages, immediately for the next communication (up to a five-minute delay).

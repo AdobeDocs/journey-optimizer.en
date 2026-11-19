@@ -41,9 +41,11 @@ level_v2:
 ---
 # Update a fallback offer {#update-fallback-offer}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the legacy **Decision Management** APIs. If you are using the new **Decisioning** capability, refer to the [Decisioning API developer guide](../../../../../experience-decisioning/api-reference/getting-started.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../../../../experience-decisioning/gs-experience-decisioning.md).
 
 
 You can modify or update a fallback offer in your container by making a PATCH request to the [!DNL Offer Library] API.

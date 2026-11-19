@@ -21,16 +21,19 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Report suite**: The item you select from the list of available Adobe Analytics report suites to enable *(product-specific)*
+* **Report suite**: The Adobe Analytics container that holds the data you collect for a site or an app; you select it from the list of available report suites to enable *(product-specific)*
+* **Data source**: The Experience Platform source connection that brings the data of a report suite into Experience Platform *(product-specific)*
 * **Analytics source connector**: The connector enabled for a report suite that transforms incoming data into an Experience event and sends it into Adobe Experience Platform *(product-specific)*
 * **Data source ID**: The identifier of the data source you created, found in the Dataflows tab of the Sources menu, and shared with Adobe Customer Care to enable the environment *(product-specific)*
-* **Experience event**: The event form into which incoming Adobe Analytics or Web SDK data is transformed before being sent into Adobe Experience Platform *(product-specific)*
+* **Experience event**: A record of a customer action, such as adding an item to a cart, in the XDM format that journeys use as an event; incoming Adobe Analytics or Web SDK data is transformed into it before being sent into Adobe Experience Platform *(product-specific)*
+* **Profile identifier**: A field from the payload fields, or a formula, that identifies the person associated to the event *(product-specific)*
+* **Event timeout**: The time the journey waits for an event, such as order completed; if the event is not received within this duration, customers follow the timeout path *(product-specific)*
 
 **Guardrails:**
 
 * This integration only applies for rule-based events and customers who need to use Adobe Analytics or Web SDK data; customers using Adobe Customer Journey Analytics are directed to a separate page.
 * The activation step of contacting Adobe to enable the environment is only required for Adobe Analytics data sources.
-* In the page's example, the event uses the Unitary Type and the Rule based Event ID type, with the Analytics or WebSDK schema created before.
+* Analytics or Web SDK events only work with the Unitary Type; the page's example also uses the Rule based Event ID type, with the Analytics or WebSDK schema created before.
 * Data coming from Adobe Analytics or Web SDK must be enabled before it can be used in journeys.
 
 **Terminology:**
@@ -41,7 +44,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Which event configuration is used for Adobe Analytics or Web SDK data?** — In the page's example, a Unitary event with a Rule based Event ID type, using the Analytics or WebSDK schema.
+* **Q: Which event configuration is used for Adobe Analytics or Web SDK data?** — A Unitary event with a Rule based Event ID type, using the Analytics or WebSDK schema. Unitary is the only Type that works with Analytics or Web SDK events.
 * **Q: Is the step of contacting Adobe required for Web SDK data?** — The page states that contacting Adobe to enable the environment is only required for Adobe Analytics data sources.
 * **Q: Where do I enable an Adobe Analytics report suite?** — In the Sources menu, in the Adobe Analytics section, select Add data and choose the report suite to enable.
 * **Q: What happens to the data once the source connector is enabled?** — Whenever the data comes in, it is transformed into an Experience event and sent into Adobe Experience Platform.
@@ -62,4 +65,4 @@ For complete understanding, this information should be combined with the documen
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: b87a699b -->
+<!-- ai-section-version: 3 | source-hash: c1e38c2e -->

@@ -48,6 +48,8 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
+<!-- **When to use this approach:** To apply reusable, brand-consistent styling to your emails and fragments. Compare all methods on the [Start creating content](../../rp_landing_pages/start-creating-content-landing-page.md#choose-method) page. -->
+
 >[!CONTEXTUALHELP]
 >id="ajo_use_theme"
 >title="Apply a theme to your email"

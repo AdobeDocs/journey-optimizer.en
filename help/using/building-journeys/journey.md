@@ -462,6 +462,8 @@ Use these links to find guidance, troubleshooting, and resources.
 
 Set up **[journey alerts](../reports/alerts.md)** to receive real-time notifications when journeys encounter errors or unusual patterns.
 
+The **Journey Anomaly Detected** and **Custom action error rate exceeded** alerts can also trigger [AI Recommendations](../start/user-interface.md#cx-enterprise-coworker) cards on the home page. Select a card to open Coworker and review the analysis and recommended next steps already prepared (Limited Availability).
+
 ### Additional resources
 
 * **[Journey management hub](../../rp_landing_pages/manage-journey-landing-page.md)** - Tools for filtering, optimization, and profile management

@@ -41,7 +41,7 @@ For complete understanding, this information should be combined with the documen
 * The profile counter value updates once the communication is delivered; spacing communications at least two hours apart is recommended so the counter can update.
 * Frequency capping rules also apply when sending proofs; if a test profile has reached the cap, proofs show as finished but no email is delivered.
 * Once a profile's frequency cap is reached, there is no way to reset the counter until the next period; deactivating a rule lets capped profiles receive messages but does not remove or delete counter increments.
-* To ensure channel-level capping works correctly, choose the highest priority namespace while authoring a campaign or journey.
+* Channel-level capping works for all identity namespaces. Capping on one namespace is independent and does not affect capping on any other namespace.
 
 **Terminology:**
 

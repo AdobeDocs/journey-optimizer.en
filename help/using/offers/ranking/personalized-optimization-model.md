@@ -41,9 +41,11 @@ level_v2:
 ---
 # Personalized optimization model {#personalized-optimization-model}
 
->[!TIP]
+>[!IMPORTANT]
 >
->Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more about Decisioning](../../experience-decisioning/gs-experience-decisioning.md)
+>This page covers the personalized optimization model for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Personalized optimization model](../../experience-decisioning/ranking/personalized-optimization-model.md).
+>
+>Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
 By leveraging the state-of-the-art technologies in supervised machine learning and deep learning, Personalized optimization allows a business user (marketer) to define business goals and utilize their customer data to train business-oriented models to serve personalized offers and maximize KPIs.
 
@@ -86,6 +88,10 @@ There are 3 types of features:
 | Decisioning objects (placementID, activityID, decisionScopeID)| Part of the decision management feedback Experience Events sent to AEP|
 | Audiences| 0-50 audiences can be added as features when creating the Ranking AI model|
 | Context data| Part of the decisioning feedback Experience Events sent to AEP. Available context data to add to schema: Commerce Details, Channel Details, Application Details, Web Details, Environment Details, Device Details, placeContext|
+
+>[!IMPORTANT]
+>
+>You are responsible for ensuring that data used to train Personalized optimization models — including audience and context features — is appropriate for your use case and complies with applicable laws and regulations. Sensitive or protected information, and attributes or audience memberships that proxy for it, may introduce or amplify bias in model outcomes.
 
 The model has two phases:
 

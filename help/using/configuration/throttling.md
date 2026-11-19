@@ -50,7 +50,7 @@ This section provides global information on how to work with the API. A detailed
 
 * **One configuration per organization:** Only one configuration is currently allowed per organization. A configuration must be defined on a production sandbox (given through `x-sandbox-name` in the headers).  
 * **Organization-level application:** A configuration is applied at organization level.  
-* **API limit handling:** When the limit set in the API is reached, further events are queued for up to 6 hours. This value cannot be modified.  
+* **API limit handling:** When the limit set in the API is reached, further events are queued for up to 6 hours. This value cannot be modified. Events still queued after 6 hours are dropped and reported with an `actionExecutionError` status of `timedout`. Under sustained heavy backlog, an event can remain unread by the queue for around 24 hours, at which point the underlying queue infrastructure removes it directly, without generating a step event.  
 * **`maxHttpConnections` parameter:** The `maxHttpConnections` parameter is an optional parameter available in Capping API only allowing you to restrict the number of connections Journey Optimizer will open to the external system. [Learn how to work with the Capping API](../configuration/capping.md)
 
     If you want to restrict the number of connections but also throttle those external calls, you can configure two configurations, one throttling and one capping, on the same endpoint. Both configurations can co-exist for one endpoint. To set 'maxHttpConnections' for a throttled endpoint, use the Throttling API to set the throttling threshold and the Capping API to set the 'maxHttpConnections'. When calling the Capping API, you can set the capping threshold to something higher than the throttling threshold so the capping rule will effectively never come into play.
@@ -109,6 +109,8 @@ Example:
 >[!IMPORTANT]
 >
 >The configuration will only be active after calling the **deploy** endpoint.
+
+Throttling applies only when the request URL matches the deployed `urlPattern`. Because wildcards are not allowed in the host part of the pattern (see `ERR_THROTTLING_CONFIG_105` below), a configuration is tied to its endpoint host. If a custom action endpoint changes host, verify that the active `urlPattern` still matches the new URL, then update and redeploy the configuration if needed. The standard limit remains one configuration per organization: if a migration requires both the previous and the new host to be covered at the same time, contact Adobe Customer Care.
 
 ## Errors
 

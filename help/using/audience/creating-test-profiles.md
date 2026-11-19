@@ -46,7 +46,7 @@ Test profiles are required when using the [test mode](../building-journeys/testi
 
 >[!NOTE]
 >
->[!DNL Journey Optimizer] provides two ways to simulate content: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation; or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+>[!DNL Journey Optimizer] provides two ways to simulate content: select **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, which does not require test profiles; or select **[!UICONTROL Simulate content]**, then **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. Journey test mode also requires test profiles. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
 
 You can create test profiles by [uploading a CSV file](#create-test-profiles-csv) or using [API calls](#create-test-profiles-api). [!DNL Adobe Journey Optimizer] also provides a specific [in-product use case](#use-case-1) to facilitate test profile creation.
 
@@ -58,7 +58,7 @@ Creating a test profile is similar to creating regular profiles in [!DNL Adobe E
 
 ## Prerequisites {#test-profile-prerequisites}
 
-To create profiles, you first need to create a schema and a dataset in Adobe [!DNL Journey Optimizer].
+To create profiles, you first need to create a schema and a dataset.
 
 ### Create a schema {#create-schema}
 
@@ -99,7 +99,7 @@ For more information about schema creation, refer to the [XDM documentation](htt
 >If your test profiles are not flagged correctly after ingestion:
 >
 >1. Review the schema associated with your dataset.
->1. Confirm that the primary identity field has the correct identity descriptor for your namespace (see steps 6–7 above).
+>1. Confirm that the primary identity field has the correct identity descriptor for your namespace (see the steps that define the primary identity in [Create a schema](#create-schema)).
 >1. If the descriptor is missing, update the schema to add the identity descriptor and re-ingest your data.
 
 ### Create a dataset {#create-dataset}
@@ -194,7 +194,7 @@ Your journey will be composed of a **[!UICONTROL Read Audience]** and an **[!UIC
 In [!DNL Adobe Experience Platform], you can create profiles by uploading a csv file containing the different profile fields into your dataset. This is the easiest method.
 
 1. Create a simple csv file using a spreadsheet software.
-1. Add one column for each required field. Make sure you add the primary identity field (`personID` in our example above) and the `testProfile` field set to `true`.
+1. Add one column for each required field. Make sure you add the primary identity field (for example, `personID`) and the `testProfile` field set to `true`.
     ![CSV file with column headers including personID and testProfile](assets/test-profiles-11.png)
 1. Add one line per profile and fill in the values for each field.
     ![CSV file with sample test profile data](assets/test-profiles-12.png)

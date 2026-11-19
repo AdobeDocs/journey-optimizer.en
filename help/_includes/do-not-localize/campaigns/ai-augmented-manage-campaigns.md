@@ -40,7 +40,7 @@ For complete understanding, this information should be combined with the documen
 * Stopping a campaign does not stop an ongoing sending, but it stops a scheduled sending or the next occurrences if sending is already ongoing.
 * For Action and API-triggered campaigns, a published message cannot be updated directly. A new version can only be created from a published (**Live**) message; a message that is still a draft is edited directly. A published message cannot be set back to **Draft**; create a new version instead.
 * For a campaign with a decision policy that includes a content experiment, treatment assignments, including test and control group membership, may be re-segmented between versions. Do not assume assignments or results are continuous across versions.
-* The calendar shows live and scheduled campaigns for the selected week by default. Draft campaigns are not displayed. Campaigns are displayed as 1-hour timespans, but this does not reflect actual send or completion time. If no start time is specified, the closest manual activation time is used to position the campaign.
+* The calendar shows live and scheduled campaigns for the selected week by default. Draft campaigns are displayed if you have set a start and end date. Campaigns are displayed as 1-hour timespans, but this does not reflect actual send or completion time. If no start time is specified, the closest manual activation time is used to position the campaign.
 * Up to three external calendars can be added. Uploaded events appear for all users in your organization and display on both Journey and Campaign calendars. CSV format: event name, start date in mm/dd/yy format, end date in mm/dd/yy format.
 * Assets and images are accessible in delivered content for up to 2 years (730 days) since their first publication in any fragment or inline message. Re-publishing is required after this expiry period to keep them accessible for another 2 years. A re-publication done within 730 days of the first publication does not extend the expiry.
 * Folders for journeys and campaigns are in limited availability.
@@ -72,7 +72,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I stop a recurring campaign?** — Open it, then click the **Stop campaign** button.
 * **Q: Why can I not delete my campaign?** — **Delete** is available for **Draft** campaigns only.
 * **Q: Why can I not see my completed, stopped or archived campaigns?** — By default the list shows the **Draft**, **Scheduled**, and **Live** statuses. Clear the filter to display them. Archived campaigns can be retrieved using the dedicated filter in the list.
-* **Q: Can I see a draft campaign in the calendar?** — No. Draft campaigns are not displayed in the calendar.
+* **Q: Can I see a draft campaign in the calendar?** — Yes, if you have set a start and end date for the campaign.
 
 **Troubleshooting:**
 

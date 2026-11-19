@@ -244,7 +244,7 @@ Your custom CSS is added to the end of the `<head>` section as part of a `<style
 
 The custom CSS is not interpreted or validated by the Email Designer's **[!UICONTROL Settings]** pane. It is entirely independent and can only be modified through the **[!UICONTROL Add Custom CSS]** option.
 
-### Guardrails - Imported content
+### Guardrails - Imported content {#guardrails-imported-content}
 
 If you want to use custom CSS with content imported into the Email Designer, consider the following:
 

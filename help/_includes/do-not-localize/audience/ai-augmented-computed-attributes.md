@@ -28,6 +28,7 @@ For complete understanding, this information should be combined with the documen
 - Computed attributes must be **published** before they become available in other downstream services, including Journey Optimizer
 - Computed attributes must be explicitly added to the **Experience Platform data source** in Journey Optimizer before they can be used in journeys or personalization
 - Computed attributes are based on Profile-enabled Experience Event datasets ingested into Adobe Experience Platform
+- Computed attributes cannot be used in audience compositions
 
 **Terminology:**
 - Canonical name: Adobe Journey Optimizer — Acronym: AJO — variants: Journey Optimizer
@@ -38,12 +39,12 @@ For complete understanding, this information should be combined with the documen
 - **Q: What are computed attributes?** — Aggregated behavioral event data (e.g. total purchases, last viewed item) stored as profile attributes on Adobe Experience Platform and usable in Journey Optimizer.
 - **Q: Do I need special permissions?** — Yes: "View Computed attributes" and "Manage Computed attributes" are both required.
 - **Q: How do I make computed attributes available in Journey Optimizer?** — Add the `SystemComputedAttributes` field group to the Experience Platform data source under Configurations > Data sources.
-- **Q: Where can I use computed attributes in Journey Optimizer?** — In Condition activities (journey splitting), audience creation, and the personalization editor.
+- **Q: Where can I use computed attributes in Journey Optimizer?** — In Optimize activities with the Condition method (journey splitting), audience creation (not audience compositions), and the personalization editor.
 - **Q: What is a lookback period?** — The time window used to scope the aggregation rule, e.g. "sum of purchases in the last 3 weeks."
 
 **Personas:**
 
-* **marketer:** Can use computed attributes to personalize message content, create new audiences, and split a journey's path with a Condition activity. Can display the most recently viewed item for each profile in an email. The page states that computed attributes must be added to the Adobe Experience Platform data source before they can be used in Journey Optimizer. Where: "Use computed attributes in Journey Optimizer".
+* **marketer:** Can use computed attributes to personalize message content, create new audiences, and split a journey's path with an Optimize activity (Condition method). Can display the most recently viewed item for each profile in an email. The page states that computed attributes must be added to the Adobe Experience Platform data source before they can be used in Journey Optimizer. Where: "Use computed attributes in Journey Optimizer".
 
 **Onboarding:**
 

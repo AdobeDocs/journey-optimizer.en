@@ -30,6 +30,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
+* The response payload must be a JSON object; a bare top-level array as the whole response is not supported, so place the array inside a field (for example body).
 * Scalar arrays are supported in the response payload, but heterogeneous arrays are not supported.
 * Only newly created custom actions include the jo_status_code field out-of-the-box; to use it with an existing custom action you need to update the action, for example by updating the description and saving.
 * An action call is considered in error when the returned http code is greater than 2xx or if an error occurs, and the journey flows to the dedicated timeout or error branch.
@@ -45,6 +46,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
+* **Q: Can the whole custom action response be an array?** — No; the response payload must be a JSON object, so place the array inside a field (for example body). A bare top-level array as the whole response is not supported.
 * **Q: Which array types are supported in the response payload?** — Scalar arrays are supported; heterogeneous arrays are not supported.
 * **Q: Why does an existing custom action not expose the jo_status_code field?** — Only newly created custom actions include it out-of-the-box; update the existing action, for example by updating the description and saving, to add it.
 * **Q: When is an action call considered in error?** — When the returned http code is greater than 2xx or an error occurs, after which the journey flows to the dedicated timeout or error branch.

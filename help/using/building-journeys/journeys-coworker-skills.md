@@ -207,6 +207,14 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
 <tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Journey Hygiene Analysis</strong><br>Identify journeys with missing or generic names. Find stale draft journeys that are more than 30 days old, have never been published, and have not been modified. Identify stale live journeys that are more than 90 days old. Find oversized journeys that contain 50 or more nodes. Identify long-existing closed journeys that are more than 90 days old. Find similar action and event names. Get recommendations to clean up and stabilize your journey inventory.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Audit my journeys configuration."<br><br>"Show me stale draft journeys."<br><br>"Run a hygiene check on journey ABC."<br><br>"Can you audit my journeys for configuration problems?"<br><br>"Run a hygiene check on my custom actions and events."</td></tr>
 </table>
 
+### Proactive analysis from journey alerts {#journey-analyze-alerts}
+
+The **Analyze Journey Anomalies** and **Journey Custom Action Error Analysis** skills can also run without a prompt. When the **Journey Anomaly Detected** or **Custom action error rate exceeded** alert is triggered, an **[!UICONTROL AI Recommendations]** card appears on the Journey Optimizer home page. Select the card to open Coworker and review the analysis and recommended next steps already prepared, then continue the conversation to explore the findings. [Learn more about AI Recommendations](../start/user-interface.md#cx-enterprise-coworker)
+
+>[!AVAILABILITY]
+>
+>AI Recommendations is available in Limited Availability for a set of organizations. Contact your Adobe representative to request access.
+
 ### Prompting best practices
 
 To maximize the effectiveness of Journey Analyze, follow these best practices:
