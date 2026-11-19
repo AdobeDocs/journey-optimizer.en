@@ -9,7 +9,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page documents two CX Coworker skills for Decisioning in Adobe Journey Optimizer: Decisioning Explainer, which explains in natural language why a specific offer was or wasn't shown to a profile or segment; and Decisioning Rule Workflow, which creates, explains, simulates, and optimizes eligibility rules and ranking formulas in natural language, without requiring PQL syntax.
+* **TL;DR:** This page documents three CX Coworker skills for Decisioning in Adobe Journey Optimizer: Decisioning Explainer, which explains in natural language why a specific offer was or wasn't shown to a profile or segment; Decisioning Rule Workflow, which creates, explains, simulates, and optimizes eligibility rules and ranking formulas in natural language, without requiring PQL syntax; and Decisioning Offer Item Workflow, which creates and manages decision items from a description given in chat.
 
 **Intents**
 
@@ -21,13 +21,19 @@ For complete understanding, this information should be combined with the documen
 * Get a plain-English explanation of what an existing eligibility rule or ranking formula does.
 * Simulate an eligibility rule or ranking formula against test profiles.
 * Rewrite a rule or formula to fit within PQL size limits without changing its logic.
+* Find or list existing rules and ranking formulas.
+* Fix, validate, or delete a rule or formula.
+* Create an offer-item frequency capping expression from a plain-language description.
+* Create a decision item by describing it to Coworker in chat.
 
 **Glossary**
 
 * **Decisioning Explainer** *(product-specific)*: CX Coworker skill that explains, in natural language, why an offer was or wasn't shown to a profile or segment, by tracing eligibility, capping, ranking, and candidate pool evaluation.
-* **Decisioning Rule Workflow** *(product-specific)*: CX Coworker skill that creates, explains, simulates, and optimizes Decisioning eligibility rules and ranking formulas using natural language, without requiring the marketer to write or read PQL syntax directly.
+* **Decisioning Rule Workflow** *(product-specific)*: CX Coworker skill that creates, finds, explains, fixes, validates, simulates, optimizes, and deletes Decisioning eligibility rules, ranking formulas, and offer-item frequency capping expressions using natural language, without requiring the marketer to write or read PQL syntax directly.
 * **Eligibility rule**: a condition that includes or excludes an offer as a candidate for a given profile; Decisioning Explainer identifies which rule included or excluded each candidate offer, and Decisioning Rule Workflow can create, explain, simulate, or optimize the rule itself.
 * **Ranking formula**: the logic used to score and order eligible offers; Decisioning Rule Workflow can create, explain, simulate, or optimize a ranking formula, the same way it does for eligibility rules.
+* **Decisioning Offer Item Workflow** *(product-specific)*: CX Coworker skill that creates decision items (offers) from a natural-language description given in chat, so you don't have to fill in each field of the item creation form manually. It can also update, approve, unapprove, archive, or permanently delete decision items.
+* **Decision item**: an offer or other piece of content that Decisioning can select and present to a profile; Decisioning Offer Item Workflow builds the item with you in chat.
 * **Capping**: frequency or fatigue suppression logic that can prevent an otherwise-eligible offer from being shown; Decisioning Explainer can identify when capping suppressed an offer.
 * **Candidate pool (item collection)**: the set of offers a profile is evaluated against during a decisioning event; Decisioning Explainer reports which candidate pool was used.
 * **PQL (Profile Query Language)**: the expression syntax underlying Decisioning eligibility rules and ranking formulas; Decisioning Rule Workflow generates, explains, and optimizes PQL without the marketer needing to write or validate it manually.
@@ -37,7 +43,8 @@ For complete understanding, this information should be combined with the documen
 * Decisioning Explainer and Decisioning Rule Workflow are both available for all customers who have access to Coworker and Decisioning.
 * Decisioning Explainer is read-only: it explains decisions but does not modify rules, ranking formulas, or selection strategies.
 * Decisioning Rule Workflow simulation supports up to 3 test profiles at a time, manually entered or AI-generated.
-* Decisioning Rule Workflow is scoped to eligibility rules and ranking formulas; it does not create or edit selection strategies or decision policies.
+* Decisioning Rule Workflow is scoped to eligibility rules, ranking formulas, and offer-item frequency capping expressions; it does not create or edit selection strategies or decision policies.
+* Decisioning Offer Item Workflow is scoped to decision items; it does not author eligibility rules or manage catalogs, collections, or selection strategies.
 
 **Terminology**
 
@@ -54,10 +61,11 @@ For complete understanding, this information should be combined with the documen
 * **Can Decisioning Rule Workflow explain a rule someone else built?** Yes, it can explain any existing eligibility rule or ranking formula in plain English, including what it includes, excludes, and each condition's meaning.
 * **How many test profiles can Decisioning Rule Workflow simulate against at once?** Up to 3, manually entered or AI-generated, including edge cases.
 * **Does Decisioning Rule Workflow change a rule's logic when optimizing it?** No, PQL optimization only makes the syntax more concise to fit size limits; it preserves the original logic and outcome.
+* **Can I create a decision item from a description in Coworker?** Yes, describe the item you need to Coworker and Decisioning Offer Item Workflow builds it with you in chat.
 
 **Personas:**
 
-* **marketer:** Can create an eligibility rule or ranking formula from a plain-language description, without writing PQL syntax. Can simulate the rule or formula against up to three test profiles, including AI-generated edge cases, to see pass-fail results or ranking scores. The page states that Rules & Ranking does not create or edit selection strategies or decision policies. Where: "Rules & Ranking".
+* **marketer:** Can create an eligibility rule or ranking formula from a plain-language description, without writing PQL syntax. Can simulate the rule or formula against up to three test profiles, including AI-generated edge cases, to see pass-fail results or ranking scores. The page states that Decisioning Rule Workflow does not create or edit selection strategies or decision policies. Where: "Decisioning Rule Workflow".
 
 **Onboarding:**
 
