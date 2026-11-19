@@ -57,7 +57,7 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
 >[!ENDSHADEBOX]
 
-## November '26 updates {#nov-26-release-notes}
+## November '26 release notes {#nov-26-release-notes}
 
 ### Journeys {#nov-26-journeys}
 
@@ -119,7 +119,7 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 
   Note that the migrating capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
 
-  Availability date: November 13, 2026
+  Availability date: November 17, 2026
 
 ### Decisioning {#nov-26-decisioning}
 
@@ -142,7 +142,7 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 </tbody>
 </table>
 
-* **Decisioning item creation skill in Coworker** - You can now create decision items faster by describing what you need to Adobe CX Enterprise Coworker, which builds the item with you in chat.
+* **Decisioning item creation skill in Coworker** - You can now create decision items faster by describing what you need to Adobe CX Enterprise Coworker, which builds the item with you in chat. [Learn more](../experience-decisioning/experience-decisioning-coworker-skills.md#decisioning-offer-item-workflow)
 
   <p>Availability date: November 2, 2026</p>
 
