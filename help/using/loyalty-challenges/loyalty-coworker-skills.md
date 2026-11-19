@@ -60,14 +60,19 @@ Loyalty Challenge Management enables Journey Optimizer users to create and manag
 
 ### Key use cases
 
-| Use Case | Description | Skills | Sample Prompts |
-| --- | --- | --- | --- |
-| Multi-step onboarding challenge |  | Loyalty Challenge Management | Build a challenge called "New Account Kickstart" for newly enrolled customers that requires them to complete these steps in order: open a checking account, fund it with at least $500, and download the mobile app. When all steps are done, reward them with 5,000 bonus points. Run it from September 1 to October 31, Eastern timezone. |
-| Cumulative activity threshold challenge |  | Loyalty Challenge Management | Create a challenge called "Spend & Earn Summer" for cardholders where members earn a $50 statement credit once they spend $1,500 on their credit card during the third quarter. Start it July 1, Eastern timezone. |
-| Frequency streak challenge |  | Loyalty Challenge Management | Create a challenge called "Frequent Flyer Sprint" for elite tier members that requires 3 flights per month for two consecutive months. Reward completion with a tier-status extension and 10,000 bonus miles. Start the first of next month, Pacific timezone. |
-| Single qualifying action challenge |  | Loyalty Challenge Management | Set up a challenge named "Go Paperless" that rewards postpaid subscribers with 500 bonus points after they enroll in autopay and switch to paperless billing within 30 days. Begin on the first of next month, Central timezone. |
-| Engagement / consumption goal challenge |  | Loyalty Challenge Management | Create a challenge called "Explorer Badge" for members that requires them to complete 5 activities across at least 3 different categories during the month of August. Reward them with 1,000 points and an "Explorer" badge on completion. Start August 1, Mountain timezone. |
-| Daily action challenge |  | Loyalty Challenge Management | Help me create a challenge for matcha lovers that requires them to come into the store every day this week and buy a matcha drink. Their reward should be an extra 200 points if they complete the challenge. Call it "Mad about Matcha", use SKU matcha-001, start it Monday next week, Eastern timezone. |
+<table style="table-layout: fixed; width: 100%; border-collapse: collapse; border: 1px solid #d9d9d9;">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<tr><th style="padding: 12px; border: 1px solid #d9d9d9; background-color: #f5f5f5; text-align: left; vertical-align: top;">Use Case</th><th style="padding: 12px; border: 1px solid #d9d9d9; background-color: #f5f5f5; text-align: left; vertical-align: top;">Sample Prompts</th></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Multi-step onboarding challenge</strong><br>Create a challenge that rewards members for completing a series of steps in order, such as opening an account, funding it, and downloading the app.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">Build a challenge called "New Account Kickstart" for newly enrolled customers that requires them to complete these steps in order: open a checking account, fund it with at least $500, and download the mobile app. When all steps are done, reward them with 5,000 bonus points. Run it from September 1 to October 31, Eastern timezone.</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Cumulative activity threshold challenge</strong><br>Reward members once their total activity, such as spend, reaches a target within a set period.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">Create a challenge called "Spend &amp; Earn Summer" for cardholders where members earn a $50 statement credit once they spend $1,500 on their credit card during the third quarter. Start it July 1, Eastern timezone.</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Frequency streak challenge</strong><br>Reward members for repeating an action a set number of times over consecutive periods, such as three flights per month for two months in a row.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">Create a challenge called "Frequent Flyer Sprint" for elite tier members that requires 3 flights per month for two consecutive months. Reward completion with a tier-status extension and 10,000 bonus miles. Start the first of next month, Pacific timezone.</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Single qualifying action challenge</strong><br>Reward members for completing a specific action, such as enrolling in autopay, within a defined time window.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">Set up a challenge named "Go Paperless" that rewards postpaid subscribers with 500 bonus points after they enroll in autopay and switch to paperless billing within 30 days. Begin on the first of next month, Central timezone.</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Engagement / consumption goal challenge</strong><br>Reward members for reaching an engagement goal, such as completing a number of activities across several categories during a month.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">Create a challenge called "Explorer Badge" for members that requires them to complete 5 activities across at least 3 different categories during the month of August. Reward them with 1,000 points and an "Explorer" badge on completion. Start August 1, Mountain timezone.</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Daily action challenge</strong><br>Reward members for performing an action every day over a set period, such as buying a specific product each day for a week.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">Help me create a challenge for matcha lovers that requires them to come into the store every day this week and buy a matcha drink. Their reward should be an extra 200 points if they complete the challenge. Call it "Mad about Matcha", use SKU matcha-001, start it Monday next week, Eastern timezone.</td></tr>
+</table>
 
 
 ### Prompting best practices
@@ -92,42 +97,45 @@ Learn how Coworker creates, manages, and optimizes loyalty challenges in this vi
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496528?quality=12)
 
-## Loyalty Insights Skill {#loyalty-data-insight}
+## Loyalty Insights {#loyalty-data-insight}
 
-Loyalty Insights Skill enables Journey Optimizer users to analyze and query loyalty program performance data using natural language. This skill provides insights into loyalty points, member tiers, redemptions, and revenue metrics, allowing loyalty administrators and analysts to make data-driven decisions about their loyalty programs.
+Loyalty Insights enables Journey Optimizer users to analyze and query loyalty program performance data using natural language. This skill provides insights into loyalty points, member tiers, redemptions, and revenue metrics, allowing loyalty administrators and analysts to make data-driven decisions about their loyalty programs.
 
-Key use cases:
+### Key use cases
 
-| Use Case | Description | Skills | Sample Prompts |
-| --- | --- | --- | --- |
-| Loyalty points analysis | Analyze loyalty points granted, earned, and redeemed over specific periods. Compare loyalty point activities across different loyalty tiers and programs. Track loyalty points balance by member segment. | Loyalty Insights | How many loyalty points were granted during August 2026?<br><br>How many loyalty points were gained by members in each loyalty tier during August 2026?<br><br>Show me the total loyalty points redeemed by member loyalty status—not loyalty tier—during August 2026.<br><br>Show the total loyalty points balance broken down by loyalty tier during August 2026. |
-| Revenue and discount analysis | Analyze order revenue and loyalty discount trends by tier and program. Compare revenue generation across loyalty programs and time periods. Track discount impact on revenue and member engagement. | Loyalty Insights | What was the total order revenue for each loyalty tier during August 2026?<br><br>How much in loyalty discounts was applied to each loyalty tier during August 2026?<br><br>Show the total loyalty discounts broken down by loyalty program during August 2026.<br><br>What was the total order revenue generated by each loyalty program during August 2026? |
-| Program performance insights | Analyze daily, weekly, and monthly program performance metrics. Compare performance across product categories and discount strategies. Identify trends in member engagement and redemption patterns. | Loyalty Insights | Show the loyalty program's total revenue broken down by day during August 2026.<br><br>Show the total loyalty discounts broken down by product category during August 2026.<br><br>Show me the loyalty program performance report for Q3 2026. |
+<table style="table-layout: fixed; width: 100%; border-collapse: collapse; border: 1px solid #d9d9d9;">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<tr><th style="padding: 12px; border: 1px solid #d9d9d9; background-color: #f5f5f5; text-align: left; vertical-align: top;">Use Case</th><th style="padding: 12px; border: 1px solid #d9d9d9; background-color: #f5f5f5; text-align: left; vertical-align: top;">Sample Prompts</th></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Loyalty points analysis</strong><br>Analyze loyalty points granted, earned, and redeemed over specific periods. Compare loyalty point activities across different loyalty tiers and programs. Track loyalty points balance by member segment.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">How many loyalty points were granted during August 2026?<br><br>How many loyalty points were gained by members in each loyalty tier during August 2026?<br><br>Show me the total loyalty points redeemed by member loyalty status—not loyalty tier—during August 2026.<br><br>Show the total loyalty points balance broken down by loyalty tier during August 2026.</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Revenue and discount analysis</strong><br>Analyze order revenue and loyalty discount trends by tier and program. Compare revenue generation across loyalty programs and time periods. Track discount impact on revenue and member engagement.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">What was the total order revenue for each loyalty tier during August 2026?<br><br>How much in loyalty discounts was applied to each loyalty tier during August 2026?<br><br>Show the total loyalty discounts broken down by loyalty program during August 2026.<br><br>What was the total order revenue generated by each loyalty program during August 2026?</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Program performance insights</strong><br>Analyze daily, weekly, and monthly program performance metrics. Compare performance across product categories and discount strategies. Identify trends in member engagement and redemption patterns.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">Show the loyalty program's total revenue broken down by day during August 2026.<br><br>Show the total loyalty discounts broken down by product category during August 2026.<br><br>Show me the loyalty program performance report for Q3 2026.</td></tr>
+</table>
 
 
-## Loyalty Opportunities Skill {#loyalty-opportunities}
+## Loyalty Opportunities {#loyalty-opportunities}
 
-The Loyalty Opportunities skill enables marketers to request grounded, specific challenge opportunities through natural language conversations in CX Coworker. Opportunities use loyalty program trends and performance data and can focus on increasing member spend, winning back inactive members, improving underperforming challenges, focusing on products or categories, or addressing points expiry.
+Loyalty Opportunities enables marketers to request grounded, specific challenge opportunities through natural language conversations in CX Coworker. Opportunities use loyalty program trends and performance data and can focus on increasing member spend, winning back inactive members, improving underperforming challenges, focusing on products or categories, or addressing points expiry.
 
 Marketers can narrow opportunities to the goals they care about and pass an opportunity to the Loyalty Challenge Management skill to create or edit a live challenge without leaving the conversation.
 
 ### Key use cases
 
-1. **Request opportunities in natural language**
+<table style="table-layout: fixed; width: 100%; border-collapse: collapse; border: 1px solid #d9d9d9;">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<tr><th style="padding: 12px; border: 1px solid #d9d9d9; background-color: #f5f5f5; text-align: left; vertical-align: top;">Use Case</th><th style="padding: 12px; border: 1px solid #d9d9d9; background-color: #f5f5f5; text-align: left; vertical-align: top;">Sample Prompts</th></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Get recommended challenges</strong><br>Ask what you should do to improve your loyalty program, or request an overview of recommended challenges. Coworker surfaces grounded, specific challenge opportunities based on loyalty program trends and performance data.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">What should we do to grow our loyalty program?<br><br>Show me recommended challenges.</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Focus opportunities on a goal</strong><br>Narrow opportunities to a specific goal, such as increasing member spend, winning back inactive members, improving underperforming challenges, promoting products or categories, addressing points expiry, or onboarding new members. You can ask about product or category promotion without naming a specific product.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">Show me opportunities to increase member spend.<br><br>Which challenges could help win back inactive members?<br><br>Show me opportunities to address points expiry.<br><br>What challenges could promote a product category?</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Review an opportunity and its rationale</strong><br>Open the <strong>Opportunities</strong> tab and select <strong>View details</strong> to review the proposed challenge and its rationale.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">Why is this opportunity recommended?<br><br>Show me the rationale for this opportunity.</td></tr>
+<tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Implement an opportunity as a live challenge</strong><br>Select <strong>Create with AI</strong> to pass the opportunity to the Loyalty Challenge Management skill. Continue the conversation to provide missing details and create or edit the challenge without leaving Coworker Chat.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">Create a challenge from this opportunity.</td></tr>
+</table>
 
-   Ask for challenge opportunities in a Coworker conversation and receive grounded, specific ideas based on loyalty program trends and performance data.
-
-1. **Focus opportunities on a goal**
-
-   Narrow opportunities to a specific goal, such as increasing member spend, winning back inactive members, improving underperforming challenges, focusing on products or categories, or addressing points expiry.
-
-1. **Review an opportunity and its rationale**
-
-   Open the **[!UICONTROL Opportunities]** tab and select **[!UICONTROL View details]** to review the proposed challenge and its rationale.
-
-1. **Implement an opportunity as a live challenge**
-
-   Select **[!UICONTROL Create with AI]** to pass the opportunity to the Loyalty Challenge Management skill. Continue the conversation to provide missing details and create or edit the challenge without leaving Coworker Chat.
+<!-- TO CONFIRM (PM): the skill description in Coworker says it identifies stored challenge opportunities and does not generate new ones or create or edit challenges. Confirm this wording, and validate the sample prompts, which are drafted from that description. -->
 
 After the challenge is created or edited, review the challenge details and journey in challenge authoring before publishing.
 
