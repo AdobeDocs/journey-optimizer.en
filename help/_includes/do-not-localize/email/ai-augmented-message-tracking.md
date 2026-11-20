@@ -30,7 +30,7 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Links included in content expire 25 months after the message is sent, except links to a mirror page, which expire after 90 days; once that delay elapses the links are no longer available.
+* Links included in content expire 761 days (about 25 months) after they are registered, which happens when the journey or campaign is published or activated, not when the message is sent; the rule is the same for journeys and campaigns. Links to a mirror page are not affected and expire after 90 days. Expired links cannot be restored; republishing registers new links only for messages sent afterwards.
 * Both Email opens and Click on email options are enabled by default.
 * A unique urlID is generated only when both the URL and the label are unique; otherwise the same urlID is reused and you cannot tell which link was clicked — use a unique label for each similar URL (in the Email Designer or via the `data-label` HTML attribute).
 * Journey Optimizer complies with URI syntax (RFC 3986), which disables some special international characters in URLs; URL-encode unsupported characters (for example, use `%27` for an apostrophe) to avoid errors when sending a proof or email.
@@ -45,13 +45,13 @@ For complete understanding, this information should be combined with the documen
 * Canonical name: URL tracking identifier — Acronym: n/a — variants: urlID
 * Synonyms: "Email opens" = "opens metric"; "Click on email" = "clicks metric"
 * Do not confuse: "Tracked" (activates tracking on a URL) ≠ "Opt out" (treats URL as opt-out/unsubscription) ≠ "Mirror page" (treats URL as a mirror page URL) ≠ "Never" (never activates tracking of a URL)
-* Do not confuse: link retention "25 months" (content links) ≠ "90 days" (mirror page)
+* Do not confuse: link retention "761 days" (content links) ≠ "90 days" (mirror page)
 
 **FAQ:**
 
 * **Q: How do I enable tracking?** — At the email message level, check the Email opens and/or Click on email options when creating your message in a journey or campaign; both are enabled by default.
 * **Q: Why can I not tell which of two identical links was clicked?** — Links that share the same URL and the same effective label (including a blank label) reuse the same urlID; assign a unique label to each similar URL.
-* **Q: How long do links stay available?** — 25 months after the message is sent for content links, and 90 days for mirror page links.
+* **Q: How long do links stay available?** — 761 days (about 25 months) from registration for content links, which starts when the journey or campaign is published or activated, not when the message is sent; 90 days for mirror page links.
 * **Q: What is a mirror page?** — An online version of the email containing all personalization data, useful when recipients experience rendering issues, for accessibility, or for social sharing.
 * **Q: Which tracking types can I set for a URL?** — Tracked, Opt out, Mirror page, or Never.
 * **Q: Where is open and click reporting available?** — In the Live report and the Customer Journey Analytics report.

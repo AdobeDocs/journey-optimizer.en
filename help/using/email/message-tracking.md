@@ -61,7 +61,9 @@ Use [!DNL Journey Optimizer] to add links to your content and track the messages
 
 >[!NOTE]
 >
->When links are included in your content, they expire **25 months** after the message is sent, except links to a mirror page, which expire after **90 days**. Once that delay elapses, the links are no longer available.
+>When links are included in your content, they expire **761 days** (about 25 months) after they are registered. Links are registered when the journey or campaign is published or activated, not when the message is sent. This applies to both journeys and campaigns. Links to a mirror page are not affected by this rule and expire after **90 days**.
+>
+>Once a link expires, it cannot be restored. If a message is sent late in this period, its links stop working shortly after delivery. Republishing the journey or campaign registers new links for messages sent afterwards, but does not revive links in messages already delivered.
 
 ## Enable tracking {#enable-tracking}
 
@@ -159,7 +161,7 @@ To insert links into your email content, follow the steps below:
 >
 >Marketing-type email messages must include an [opt-out link](../privacy/opt-out.md#opt-out-decision-management), which is not required for transactional messages. The message category (**[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**) is defined in the [channel configuration](email-settings.md#email-type) when creating the message.
 
-Once the message is sent, the retention period for a link is **25 months**. After that delay, the link is no longer available.
+The retention period for a link starts when the journey or campaign is published, not when the message is sent. See the note at the top of this page.
 
 >[!CAUTION]
 >
