@@ -167,6 +167,14 @@ The retention period for a link starts when the journey or campaign is published
 >
 >When both the **label** and **URL** of a button are made editable in a [customizable fragment](../content-management/customizable-fragments.md), tracking reports show the URL instead of the button label.
 
+### Best practices for link expiration {#link-expiration-best-practices}
+
+Because the expiration delay starts at publication, follow these guidelines to keep your links working:
+
+* Publish or activate your journey or campaign close to the time you start sending. The longer you wait between publication and sending, the less time the links have left.
+* For long-running journeys and recurring campaigns, republish before the 761-day delay elapses so that messages sent afterwards contain newly registered links.
+* Do not rely on links in messages that were already delivered. Their links keep their original expiration date, even if you republish.
+
 ## Link to a mirror page {#mirror-page}
 
 The mirror page is an online version of your email. Adding a link to the mirror page is an email marketing good practice. Users can browse to the mirror page of an email, for example if they are experiencing rendering issues or broken images when trying to view it in their inbox. It is also recommended to provide an online version for accessibility reasons, or to encourage social sharing.
