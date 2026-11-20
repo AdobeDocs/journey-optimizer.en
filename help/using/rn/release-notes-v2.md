@@ -190,21 +190,21 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 2, 2026
 
-+++ Show me the value: Channel Builder skill in Coworker to create a new custom channel
+  +++ Show me the value
 
-**Why it helps:** Administrators can set up a custom channel by chatting with Coworker instead of filling each setup step by hand, so a new messaging integration is faster to launch.
+  **Why it helps:** Administrators can set up a custom channel by chatting with Coworker instead of filling each setup step by hand, so a new messaging integration is faster to launch.
 
-**How it works:** In Coworker chat, describe the messaging service, or provide a curl command or an API document link (OpenAPI/Swagger spec or API reference page). The skill guides you through channel configuration, authentication, throttling and payload definition, and asks which payload scenario to run when you test the connection. You can also list, fetch, update and delete custom channels.
+  **How it works:** In Coworker chat, describe the messaging service, or provide a curl command or an API document link (OpenAPI/Swagger spec or API reference page). The skill guides you through channel configuration, authentication, throttling and payload definition, and asks which payload scenario to run when you test the connection. You can also list, fetch, update and delete custom channels.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Create a custom channel from a guided setup, a curl command or an API reference link.
-* Test a new custom channel before using it in a campaign or journey.
-* List custom channels, fetch the details of one, update its settings or delete it.
+  * Create a custom channel from a guided setup, a curl command or an API reference link.
+  * Test a new custom channel before using it in a campaign or journey.
+  * List custom channels, fetch the details of one, update its settings or delete it.
 
-**Good to know:** Channel Builder is for custom outbound channels only and is designed for administrators. To inspect standard channel configurations such as email, SMS or push, use the read-only Channel Operation skill instead. The documentation still marks the required permissions and limitations as to be confirmed.
+  **Good to know:** Channel Builder is for custom outbound channels only and is designed for administrators. To inspect standard channel configurations such as email, SMS or push, use the read-only Channel Operation skill instead. The documentation still marks the required permissions and limitations as to be confirmed.
 
-+++
+  +++
 
 * **Suppression list override at Email action level** - Journey Optimizer now includes a per-action toggle that allows delivery to locally-suppressed addresses for a specific email action in a journey or campaign. This is designed for compliance scenarios where a communication must be demonstrably attempted, such as a required notification to an address that has previously bounced. Sending to suppressed addresses is not a recommended email practice, as it can damage your deliverability. This capability is available in Limited Availability for a set of customers. Contact your Adobe representative to request access.
 
@@ -212,22 +212,22 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 28, 2026
 
-+++ Show me the value: Suppression list override at Email action level
+  +++ Show me the value
 
-**Why it helps:** When a communication must be demonstrably attempted, you can reach a locally suppressed address for that one send, without changing the suppression list or any other delivery.
+  **Why it helps:** When a communication must be demonstrably attempted, you can reach a locally suppressed address for that one send, without changing the suppression list or any other delivery.
 
-**How it works:** In the settings of the email action of a campaign or journey, go to the Delivery section and turn on Include suppression list in email delivery, then confirm with I agree in the dialog. The option is off by default and applies to that email action only.
+  **How it works:** In the settings of the email action of a campaign or journey, go to the Delivery section and turn on Include suppression list in email delivery, then confirm with I agree in the dialog. The option is off by default and applies to that email action only.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Send a required notification to an address that previously bounced.
-* Include all addresses on your suppression list, whatever the category (hard bounces, spam complaints, soft bounces or manual entries), in one specific email delivery.
+  * Send a required notification to an address that previously bounced.
+  * Include all addresses on your suppression list, whatever the category (hard bounces, spam complaints, soft bounces or manual entries), in one specific email delivery.
 
-**Good to know:** Sending to suppressed addresses is not a recommended email practice and can damage inbox placement and the sending reputation of the subdomain and IPs; Adobe recommends isolating this traffic on a dedicated subdomain or IP pool. It applies to the local suppression list only: the Adobe global suppression list, consent and opt-out choices are still honored. This differs from the Send to suppressed email addresses option of the channel configuration. Contact your Adobe representative to request access.
+  **Good to know:** Sending to suppressed addresses is not a recommended email practice and can damage inbox placement and the sending reputation of the subdomain and IPs; Adobe recommends isolating this traffic on a dedicated subdomain or IP pool. It applies to the local suppression list only: the Adobe global suppression list, consent and opt-out choices are still honored. This differs from the Send to suppressed email addresses option of the channel configuration. Contact your Adobe representative to request access.
 
-**Status:** Limited Availability
+  **Status:** Limited Availability
 
-+++
+  +++
 
 ### Journeys {#oct-26-journeys}
 
@@ -346,102 +346,102 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 13, 2026
 
-+++ Show me the value: HMAC-signed JWT authentication for custom actions (Limited Availability)
+  +++ Show me the value
 
-**Why it helps:** Connect custom actions to identity providers that accept client_secret_jwt, without registering an Adobe certificate.
+  **Why it helps:** Connect custom actions to identity providers that accept client_secret_jwt, without registering an Adobe certificate.
 
-**How it works:** In the custom authorization payload of a custom action (Authentication section) or an external data source, keep subType certificateCredential, set the optional alg field to HS256, HS384 or HS512 and add your OAuth client_secret to body.bodyParams. Journey Optimizer uses the secret as the signing key and does not send it to the token endpoint. There is no separate UI control for the algorithm.
+  **How it works:** In the custom authorization payload of a custom action (Authentication section) or an external data source, keep subType certificateCredential, set the optional alg field to HS256, HS384 or HS512 and add your OAuth client_secret to body.bodyParams. Journey Optimizer uses the secret as the signing key and does not send it to the token endpoint. There is no separate UI control for the algorithm.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Authenticate custom actions with a JWT client assertion signed with your OAuth client secret instead of Adobe's RSA certificate.
-* Keep existing configurations unchanged: without alg, or with RS256, the RSA flow runs as before.
+  * Authenticate custom actions with a JWT client assertion signed with your OAuth client secret instead of Adobe's RSA certificate.
+  * Keep existing configurations unchanged: without alg, or with RS256, the RSA flow runs as before.
 
-**Good to know:** Limited Availability for a set of customers. Your identity provider must accept client_secret_jwt with the same secret and algorithm. The payload still needs aud, method POST, bodyType form and client_id in bodyParams. Minimum client_secret length in UTF-8 bytes: 32 for HS256, 48 for HS384, 64 for HS512. Any other alg value, including lowercase, is rejected when the authentication is tested or executed. The HMAC JWT expires 300 seconds after issue, against 600 for RS256.
+  **Good to know:** Limited Availability for a set of customers. Your identity provider must accept client_secret_jwt with the same secret and algorithm. The payload still needs aud, method POST, bodyType form and client_id in bodyParams. Minimum client_secret length in UTF-8 bytes: 32 for HS256, 48 for HS384, 64 for HS512. Any other alg value, including lowercase, is rejected when the authentication is tested or executed. The HMAC JWT expires 300 seconds after issue, against 600 for RS256.
 
-**Status:** Limited Availability
+  **Status:** Limited Availability
 
-+++
+  +++
 
 * **Business Performance Analysis skill** - Analyze journey performance and get concrete optimization recommendations in Adobe CX Enterprise Coworker chat. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
 
   Availability date: October 7, 2026
 
-+++ Show me the value: Business Performance Analysis skill
+  +++ Show me the value
 
-**Why it helps:** Understand why a journey underperforms and get concrete changes to try, tied to the journey goal, without building reports yourself.
+  **Why it helps:** Understand why a journey underperforms and get concrete changes to try, tied to the journey goal, without building reports yourself.
 
-**How it works:** Ask in Adobe CX Enterprise Coworker chat, for example how a journey is performing or what to change to improve it. The skill analyzes journey performance, explains areas of lower performance and recommends optimizations such as re-engagement waits, channel escalation, Send Time Optimization, A/B experiments, frequency capping or using the profile time zone.
+  **How it works:** Ask in Adobe CX Enterprise Coworker chat, for example how a journey is performing or what to change to improve it. The skill analyzes journey performance, explains areas of lower performance and recommends optimizations such as re-engagement waits, channel escalation, Send Time Optimization, A/B experiments, frequency capping or using the profile time zone.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Analyze the performance of a journey and get optimization recommendations.
-* Find out why a journey underperforms compared with a previous period.
-* Identify which parts of a journey are likely limiting conversion or engagement.
+  * Analyze the performance of a journey and get optimization recommendations.
+  * Find out why a journey underperforms compared with a previous period.
+  * Identify which parts of a journey are likely limiting conversion or engagement.
 
-**Good to know:** Read-only skill in Coworker. To use the Journey Analyze skills fully you need the View Journeys permission (plus View Segments for audience insights); Manage permissions are needed only to create items from Coworker.
+  **Good to know:** Read-only skill in Coworker. To use the Journey Analyze skills fully you need the View Journeys permission (plus View Segments for audience insights); Manage permissions are needed only to create items from Coworker.
 
-+++
+  +++
   
 * **Journey Hygiene Analysis skill** - Coworker scans journeys for configuration hygiene issues and suggests fixes in chat. The first release has 7 checks: missing or generic names, stale draft journeys, stale live journeys, oversized journeys, long-existing closed journeys, and similar action or event names. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
 
   Availability date: October 20, 2026
 
-+++ Show me the value: Journey Hygiene Analysis skill
+  +++ Show me the value
 
-**Why it helps:** Keep your journey inventory clean by finding configuration problems and decaying journeys without opening each journey.
+  **Why it helps:** Keep your journey inventory clean by finding configuration problems and decaying journeys without opening each journey.
 
-**How it works:** Ask in Coworker chat, for example to audit your journeys or run a hygiene check on one journey, custom actions or events. The skill checks metadata and configuration, not performance data, and suggests fixes. Documented thresholds: stale drafts are older than 30 days and never published, stale live and closed journeys are older than 90 days, oversized journeys have 50 or more nodes.
+  **How it works:** Ask in Coworker chat, for example to audit your journeys or run a hygiene check on one journey, custom actions or events. The skill checks metadata and configuration, not performance data, and suggests fixes. Documented thresholds: stale drafts are older than 30 days and never published, stale live and closed journeys are older than 90 days, oversized journeys have 50 or more nodes.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Find journeys with missing or generic names.
-* Find stale draft journeys, stale live journeys and long-existing closed journeys.
-* Find oversized journeys and similar action or event names, and get cleanup recommendations.
+  * Find journeys with missing or generic names.
+  * Find stale draft journeys, stale live journeys and long-existing closed journeys.
+  * Find oversized journeys and similar action or event names, and get cleanup recommendations.
 
-**Good to know:** Read-only skill in Coworker. To use the Journey Analyze skills fully you need the View Journeys permission (plus View Segments for audience insights); Manage permissions are needed only to create items from Coworker. The skill does not use performance data; use the Business Performance Analysis skill for that.
+  **Good to know:** Read-only skill in Coworker. To use the Journey Analyze skills fully you need the View Journeys permission (plus View Segments for audience insights); Manage permissions are needed only to create items from Coworker. The skill does not use performance data; use the Business Performance Analysis skill for that.
 
-+++
+  +++
 
 * **Trace Journey Profile skill** - CX Coworker can now return read-only, profile-level execution data for a published journey. Check how many profiles entered each node and how they split across branches, find which profiles errored and why, or follow a single profile's node-by-node path through the journey. [Learn more](../building-journeys/journeys-coworker-skills.md#trace-journey-profile)
 
   Availability date: October 22, 2026
 
-+++ Show me the value: Trace Journey Profile skill
+  +++ Show me the value
 
-**Why it helps:** Answer where profiles went, who errored and why in a published journey, from Coworker chat.
+  **Why it helps:** Answer where profiles went, who errored and why in a published journey, from Coworker chat.
 
-**How it works:** Ask in Coworker chat to trace profiles through a published journey. The skill returns read-only profile-level data based on journey step events, in three query types: node and branch counts, errored-profile lookup and single-profile trace.
+  **How it works:** Ask in Coworker chat to trace profiles through a published journey. The skill returns read-only profile-level data based on journey step events, in three query types: node and branch counts, errored-profile lookup and single-profile trace.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Check how many profiles entered each node and how they split across branches, as counts and percentages.
-* Find which profiles errored over a period, such as the last 7 days, at which node and why.
-* Follow a single profile node by node, with timestamps, the attribute value evaluated at each condition node, and the exit point and reason.
+  * Check how many profiles entered each node and how they split across branches, as counts and percentages.
+  * Find which profiles errored over a period, such as the last 7 days, at which node and why.
+  * Follow a single profile node by node, with timestamps, the attribute value evaluated at each condition node, and the exit point and reason.
 
-**Good to know:** Works on published journeys only; draft-only and B2B journeys are not supported. Read-only: it does not export lists or edit journeys. The errored-profile lookup and the single-profile trace return profile-level data. Read-only skill in Coworker. To use the Journey Analyze skills fully you need the View Journeys permission (plus View Segments for audience insights); Manage permissions are needed only to create items from Coworker.
+  **Good to know:** Works on published journeys only; draft-only and B2B journeys are not supported. Read-only: it does not export lists or edit journeys. The errored-profile lookup and the single-profile trace return profile-level data. Read-only skill in Coworker. To use the Journey Analyze skills fully you need the View Journeys permission (plus View Segments for audience insights); Manage permissions are needed only to create items from Coworker.
 
-+++
+  +++
 
 * **Journey Execution Timeline skill** - Coworker can now return the end-to-end timeline of a Read Audience (batch or scheduled export) journey batch. See how long a batch took, when the audience export, the journey execution, and the delivery started and ended, and the profile-level P95 and P99 for entry, exit, or execution time. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-execution-timeline)
 
   Availability date: October 26, 2026
 
-+++ Show me the value: Journey Execution Timeline skill
+  +++ Show me the value
 
-**Why it helps:** See where time went in a Read Audience journey batch, from audience export to delivery, and which stage caused a delay.
+  **Why it helps:** See where time went in a Read Audience journey batch, from audience export to delivery, and which stage caused a delay.
 
-**How it works:** Ask in Coworker chat about a Read Audience (batch or scheduled export) journey. The skill returns the batch duration, when the audience export, the journey execution and the delivery started and ended, and the profile-level P95 and P99 for entry, exit or execution time. It validates the journey first.
+  **How it works:** Ask in Coworker chat about a Read Audience (batch or scheduled export) journey. The skill returns the batch duration, when the audience export, the journey execution and the delivery started and ended, and the profile-level P95 and P99 for entry, exit or execution time. It validates the journey first.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Find out how long a Read Audience journey batch took, end to end.
-* See the audience export, journey execution and delivery timelines for each batch.
-* Identify the slowest batch and the stage that caused the delay.
+  * Find out how long a Read Audience journey batch took, end to end.
+  * See the audience export, journey execution and delivery timelines for each batch.
+  * Identify the slowest batch and the stage that caused the delay.
 
-**Good to know:** Read Audience journeys only; for any other type the skill stops instead of approximating. Audience export latency runs from creation of the export job to the first profile entry. Recipient or device notification timing is reported as unavailable. The skill is read-only. Read-only skill in Coworker. To use the Journey Analyze skills fully you need the View Journeys permission (plus View Segments for audience insights); Manage permissions are needed only to create items from Coworker.
+  **Good to know:** Read Audience journeys only; for any other type the skill stops instead of approximating. Audience export latency runs from creation of the export job to the first profile entry. Recipient or device notification timing is reported as unavailable. The skill is read-only. Read-only skill in Coworker. To use the Journey Analyze skills fully you need the View Journeys permission (plus View Segments for audience insights); Manage permissions are needed only to create items from Coworker.
 
-+++
+  +++
 
 <!--
 COMING SOON (hidden until next week)
@@ -578,22 +578,22 @@ The following improvements are coming to campaigns in this release.
 
   Availability date: October 22, 2026
 
-+++ Show me the value: Decisioning rule generation skill in Coworker
+  +++ Show me the value
 
-**Why it helps:** Marketers can build and test eligibility rules and ranking formulas by describing them in plain language, so they do not need PQL expertise to get decisioning logic ready.
+  **Why it helps:** Marketers can build and test eligibility rules and ranking formulas by describing them in plain language, so they do not need PQL expertise to get decisioning logic ready.
 
-**How it works:** In Coworker chat, the Decisioning Rule Workflow skill turns a plain-language requirement into PQL for a new rule or an edit to an existing one, explains rules and formulas in plain English, validates and fixes expressions, simulates them against up to three test profiles, and shortens PQL to meet size limits. It is available to customers with access to Coworker and Decisioning.
+  **How it works:** In Coworker chat, the Decisioning Rule Workflow skill turns a plain-language requirement into PQL for a new rule or an edit to an existing one, explains rules and formulas in plain English, validates and fixes expressions, simulates them against up to three test profiles, and shortens PQL to meet size limits. It is available to customers with access to Coworker and Decisioning.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Create an eligibility rule from a plain-language condition, for example loyalty members in tier 2 or above.
-* Simulate a rule or ranking formula against up to three profiles, including AI-generated edge cases, to see pass or fail results or ranked offers with scores.
-* Optimize a rule or formula that is hitting PQL size limits without changing its logic.
-* Explain in plain English what an existing rule or ranking formula includes, excludes and evaluates.
+  * Create an eligibility rule from a plain-language condition, for example loyalty members in tier 2 or above.
+  * Simulate a rule or ranking formula against up to three profiles, including AI-generated edge cases, to see pass or fail results or ranked offers with scores.
+  * Optimize a rule or formula that is hitting PQL size limits without changing its logic.
+  * Explain in plain English what an existing rule or ranking formula includes, excludes and evaluates.
 
-**Good to know:** The skill covers eligibility rules, ranking formulas and offer-item frequency capping expressions only; it does not create or edit selection strategies or decision policies. Review a generated or optimized rule and its simulation results before publishing it.
+  **Good to know:** The skill covers eligibility rules, ranking formulas and offer-item frequency capping expressions only; it does not create or edit selection strategies or decision policies. Review a generated or optimized rule and its simulation results before publishing it.
 
-+++
+  +++
 
 <!--
 COMING SOON (hidden until next week)
@@ -614,61 +614,61 @@ COMING SOON (hidden until next week)
 
   Availability date: October 1, 2026
 
-+++ Show me the value: Performance settings in Loyalty configurations
+  +++ Show me the value
 
-**Why it helps:** Loyalty insights can follow the metric your organization cares about most, and the datasets behind them are set in one place.
+  **Why it helps:** Loyalty insights can follow the metric your organization cares about most, and the datasets behind them are set in one place.
 
-**How it works:** Open Loyalty configurations from the left navigation, then the Performance settings tab. In the Performance configuration section, select the Loyalty profile dataset and the Loyalty event dataset, then select your priority Key performance indicator.
+  **How it works:** Open Loyalty configurations from the left navigation, then the Performance settings tab. In the Performance configuration section, select the Loyalty profile dataset and the Loyalty event dataset, then select your priority Key performance indicator.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Select the loyalty profile and event datasets used for loyalty performance insights.
-* Choose Revenue, Engagement, Redemptions, or Conversions as the priority metric for the Loyalty Insights dashboard.
-* Focus the insights feed on the metric that matters most to your business.
+  * Select the loyalty profile and event datasets used for loyalty performance insights.
+  * Choose Revenue, Engagement, Redemptions, or Conversions as the priority metric for the Loyalty Insights dashboard.
+  * Focus the insights feed on the metric that matters most to your business.
 
-**Good to know:** Loyalty configurations requires administrator access. The profile dataset schema must include the Loyalty details and identityMap field groups, and the event dataset schema must include the Loyalty event details and Commerce details field groups.
+  **Good to know:** Loyalty configurations requires administrator access. The profile dataset schema must include the Loyalty details and identityMap field groups, and the event dataset schema must include the Loyalty event details and Commerce details field groups.
 
-+++
+  +++
 
 * **Streak challenge configuration update** - The non-consecutive option has been removed when creating Streak challenges. Streak challenges now use the **Task completion requirements** drop-down to require either one task or all tasks together to be completed on consecutive days. [Learn more](../loyalty-challenges/create-challenges.md)
 
   Availability date: October 1, 2026
 
-+++ Show me the value: Streak challenge configuration update
+  +++ Show me the value
 
-**Why it helps:** Streak rules are simpler to set up because only consecutive-day streaks are offered.
+  **Why it helps:** Streak rules are simpler to set up because only consecutive-day streaks are offered.
 
-**How it works:** When you create a Streak challenge, use the Task completion requirements drop-down on the Structure step to choose between completing one task multiple times or all tasks together multiple times, on consecutive days. Streak length sets the number of consecutive days.
+  **How it works:** When you create a Streak challenge, use the Task completion requirements drop-down on the Structure step to choose between completing one task multiple times or all tasks together multiple times, on consecutive days. Streak length sets the number of consecutive days.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Require members to complete the same task on consecutive days without breaks.
-* Require members to complete all selected tasks together on consecutive days.
-* Set a streak length, for example 7 days for a 7-day purchase streak.
+  * Require members to complete the same task on consecutive days without breaks.
+  * Require members to complete all selected tasks together on consecutive days.
+  * Set a streak length, for example 7 days for a 7-day purchase streak.
 
-**Good to know:** The non-consecutive option has been removed from Streak challenges.
+  **Good to know:** The non-consecutive option has been removed from Streak challenges.
 
-+++
+  +++
 
 * **Autosave for challenge drafts** - Challenge edits in Loyalty are now saved automatically as you work, so you can publish a challenge or generate a journey without saving first. [Learn more](../loyalty-challenges/create-challenges.md)
 
   Availability date: October 1, 2026
 
-+++ Show me the value: Autosave for challenge drafts
+  +++ Show me the value
 
-**Why it helps:** You can build a challenge without worrying about losing edits and go straight to publishing.
+  **Why it helps:** You can build a challenge without worrying about losing edits and go straight to publishing.
 
-**How it works:** In the challenge editor (Settings, Structure, Content and Messaging tabs), changes are saved automatically a couple of seconds after you stop editing, and the manual Save changes button is removed. Publish challenge and Generate journey are no longer gated behind a manual save.
+  **How it works:** In the challenge editor (Settings, Structure, Content and Messaging tabs), changes are saved automatically a couple of seconds after you stop editing, and the manual Save changes button is removed. Publish challenge and Generate journey are no longer gated behind a manual save.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Edit a draft challenge across all tabs without saving manually.
-* Publish a challenge or generate a journey right after editing.
-* Leave start and end dates empty while drafting and add them before publishing.
+  * Edit a draft challenge across all tabs without saving manually.
+  * Publish a challenge or generate a journey right after editing.
+  * Leave start and end dates empty while drafting and add them before publishing.
 
-**Good to know:** Challenge start and end dates are optional while drafting but required to publish. If a required field is missing when you publish or generate a journey, an inline notification lists what is missing, the affected tabs show a red dot, and the fields are highlighted.
+  **Good to know:** Challenge start and end dates are optional while drafting but required to publish. If a required field is missing when you publish or generate a journey, an inline notification lists what is missing, the affected tabs show a red dot, and the fields are highlighted.
 
-+++
+  +++
 
 <!--
 COMING SOON (hidden until next week)
@@ -831,99 +831,99 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 29, 2026
 
-+++ Show me the value: Agentic Translation provider
+  +++ Show me the value
 
-**Why it helps:** You can use your own large language model for translation and steer it with locale-specific guidelines, so translations follow your wording rules.
+  **Why it helps:** You can use your own large language model for translation and steer it with locale-specific guidelines, so translations follow your wording rules.
 
-**How it works:** Go to Content Management > Translation > Providers > Add Provider and choose Agentic Translation. Select Azure OpenAI or Gemini (Vertex AI) under LLM configuration and enter its details, then select the supported locales. On the Guidelines tab, upload a PDF or a JSON guideline per locale (a sample guideline file can be downloaded).
+  **How it works:** Go to Content Management > Translation > Providers > Add Provider and choose Agentic Translation. Select Azure OpenAI or Gemini (Vertex AI) under LLM configuration and enter its details, then select the supported locales. On the Guidelines tab, upload a PDF or a JSON guideline per locale (a sample guideline file can be downloaded).
 
-**What you can do now:**
+  **What you can do now:**
 
-* Configure an Azure OpenAI or Gemini (Vertex AI) model as translation provider.
-* Upload a PDF or JSON guideline for each locale.
-* Update or delete an uploaded guideline from its menu.
+  * Configure an Azure OpenAI or Gemini (Vertex AI) model as translation provider.
+  * Upload a PDF or JSON guideline for each locale.
+  * Update or delete an uploaded guideline from its menu.
 
-**Good to know:** You need access to your own Azure OpenAI or Google Cloud service account credentials to configure the provider.
+  **Good to know:** You need access to your own Azure OpenAI or Google Cloud service account credentials to configure the provider.
 
-+++
+  +++
 
 * **Mandatory consent checkbox for landing pages** - You can now make a checkbox mandatory in the landing page form component, requiring visitors to select it (for example, to give consent) before they can submit the form. [Learn more](../landing-pages/lp-content.md#use-form-component)
 
   Availability date: September 4, 2026 
 
-+++ Show me the value: Mandatory consent checkbox for landing pages
+  +++ Show me the value
 
-**Why it helps:** You can make sure a visitor has agreed before the form is submitted, which is useful when the checkbox records consent.
+  **Why it helps:** You can make sure a visitor has agreed before the form is submitted, which is useful when the checkbox records consent.
 
-**How it works:** In the landing page designer, add a Form component and a checkbox set to opt in or opt out. Select Make form field mandatory so visitors must select the checkbox to submit. Text fields have the same option, and an error message displays if a mandatory field is empty.
+  **How it works:** In the landing page designer, add a Form component and a checkbox set to opt in or opt out. Select Make form field mandatory so visitors must select the checkbox to submit. Text fields have the same option, and an error message displays if a mandatory field is empty.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Require visitors to select an opt-in or opt-out checkbox before they can submit the form.
-* Require visitors to fill in a text field before they can submit.
+  * Require visitors to select an opt-in or opt-out checkbox before they can submit the form.
+  * Require visitors to fill in a text field before they can submit.
 
-**Good to know:** The option applies to opt-in and opt-out checkboxes and is selected by default. If a visitor does not select the checkbox, the form cannot be submitted.
+  **Good to know:** The option applies to opt-in and opt-out checkboxes and is selected by default. If a visitor does not select the checkbox, the form cannot be submitted.
 
-+++
+  +++
 
 * **Additional reserved keywords in personalization syntax** - The list of reserved keywords in Profile Query Language (PQL) has been expanded to include general keywords, time units, and boolean/logical operators. If your XDM schema contains a field name that matches one of these keywords, wrap it in backticks to reference it in a personalization expression. [Learn more](../personalization/personalization-syntax.md#reserved-keywords)
 
   Availability date: September 1, 2026
 
-+++ Show me the value: Additional reserved keywords in personalization syntax
+  +++ Show me the value
 
-**Why it helps:** An XDM field whose name matches a reserved keyword can make an expression fail validation. Knowing the longer list helps you check your schema and campaigns.
+  **Why it helps:** An XDM field whose name matches a reserved keyword can make an expression fail validation. Knowing the longer list helps you check your schema and campaigns.
 
-**How it works:** Reserved keywords are listed in the personalization syntax documentation, grouped as general keywords, time units, and boolean and logical operators. Wrap a matching field name in backticks, for example ``{{profile.person.`next`.name}}``. Backtick escaping works in both Handlebars paths and PQL expressions.
+  **How it works:** Reserved keywords are listed in the personalization syntax documentation, grouped as general keywords, time units, and boolean and logical operators. Wrap a matching field name in backticks, for example ``{{profile.person.`next`.name}}``. Backtick escaping works in both Handlebars paths and PQL expressions.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Wrap an XDM field name in backticks when it matches a reserved keyword.
-* Check your schema field names against the expanded reserved keyword list.
+  * Wrap an XDM field name in backticks when it matches a reserved keyword.
+  * Check your schema field names against the expanded reserved keyword list.
 
-**Good to know:** Without backticks, the Personalization Editor fails validation with an error. Keywords were released at the end of August, with September 1 as the availability date.
+  **Good to know:** Without backticks, the Personalization Editor fails validation with an error. Keywords were released at the end of August, with September 1 as the availability date.
 
-+++
+  +++
 
 * [!BADGE Usability]{type=Positive} **Usability improvements in the Content Simulation experience** - The new Content Simulation experience now lets you name and organize your variants for easy comparison, copy or delete variant details directly from each card, view full attribute paths and per-card channel configuration on demand, and upload your own CSV, JSON, or JSONL profiles from a more prominent upload button. [Learn more](../test-approve/simulate-content-variations.md)
 
   Availability date: September 25, 2026
 
-+++ Show me the value: Usability improvements in the Content Simulation experience
+  +++ Show me the value
 
-**Why it helps:** Testing several variants is quicker when each one has a name and its controls are on its own card, so you can compare and adjust variants without extra menus.
+  **Why it helps:** Testing several variants is quicker when each one has a name and its controls are on its own card, so you can compare and adjust variants without extra menus.
 
-**How it works:** From your content, click Simulate content. Each variant card lets you name, copy attributes, duplicate or remove the variant and view its channel configuration (email only). The bottom action bar has Upload for CSV, JSON or JSONL files, an attribute-path toggle for full attribute paths, and a variant list to render only selected variants.
+  **How it works:** From your content, click Simulate content. Each variant card lets you name, copy attributes, duplicate or remove the variant and view its channel configuration (email only). The bottom action bar has Upload for CSV, JSON or JSONL files, an attribute-path toggle for full attribute paths, and a variant list to render only selected variants.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Name variants to tell them apart at a glance, including names in uploaded files.
-* Duplicate a variant and edit its attributes for another test scenario.
-* Show full attribute paths to locate an attribute in the profile data.
-* Upload your own CSV, JSON or JSONL profiles with the Upload button.
+  * Name variants to tell them apart at a glance, including names in uploaded files.
+  * Duplicate a variant and edit its attributes for another test scenario.
+  * Show full attribute paths to locate an attribute in the profile data.
+  * Upload your own CSV, JSON or JSONL profiles with the Upload button.
 
-**Good to know:** You can add up to 30 variants manually or by file upload, and up to 40 with AI generation. Edits to simulated user variants are not saved back to the simulated user.
+  **Good to know:** You can add up to 30 variants manually or by file upload, and up to 40 with AI generation. Edits to simulated user variants are not saved back to the simulated user.
 
-+++
+  +++
 
 * [!BADGE Usability]{type=Positive} **Fix syntax with AI** - When validating an expression, if a syntax error is detected, the Personalization Editor provides a "Fix with AI" option to help resolve the issue directly from the editor. [Read more](../personalization/personalization-build-expressions.md#validation-mechanisms).
 
   Availability date: September 22, 2026
 
-+++ Show me the value: Fix syntax with AI
+  +++ Show me the value
 
-**Why it helps:** A syntax error in a personalization expression can be fixed with AI help right where it is detected, so you do not search for the cause by hand.
+  **Why it helps:** A syntax error in a personalization expression can be fixed with AI help right where it is detected, so you do not search for the cause by hand.
 
-**How it works:** In the Personalization Editor, validation runs when you click Add and with the Validate button. When a PQL syntax validation error is detected, the Fix with AI option appears in the bottom pane. Select it to open the expression generation tool in the right rail and get help fixing the error.
+  **How it works:** In the Personalization Editor, validation runs when you click Add and with the Validate button. When a PQL syntax validation error is detected, the Fix with AI option appears in the bottom pane. Select it to open the expression generation tool in the right rail and get help fixing the error.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Select Fix with AI when validation detects a PQL syntax error.
-* Review the proposed fix in the expression generation tool before applying it.
+  * Select Fix with AI when validation detects a PQL syntax error.
+  * Review the proposed fix in the expression generation tool before applying it.
 
-**Good to know:** The option appears for PQL syntax validation errors.
+  **Good to know:** The option appears for PQL syntax validation errors.
 
-+++
+  +++
 
 ### Loyalty {#sep-26-loyalty}
 
@@ -1001,98 +1001,98 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 30, 2026
 
-+++ Show me the value: Per-member Loyalty challenge completion deadlines
+  +++ Show me the value
 
-**Why it helps:** Each member gets their own completion window from the day they opt in, instead of one program-wide end date for everyone.
+  **Why it helps:** Each member gets their own completion window from the day they opt in, instead of one program-wide end date for everyone.
 
-**How it works:** In the challenge Settings tab, under Completion requirements, choose Within a number of days after opt-in and enter Days after opt-in. A member's deadline is their opt-in date plus that number of days.
+  **How it works:** In the challenge Settings tab, under Completion requirements, choose Within a number of days after opt-in and enter Days after opt-in. A member's deadline is their opt-in date plus that number of days.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Give every member the same number of days to finish, counted from their own opt-in date.
-* Set Challenge end to No end date when the deadline is fully driven by the opt-in window.
-* Combine the opt-in window with a challenge end date as a hard cut-off.
+  * Give every member the same number of days to finish, counted from their own opt-in date.
+  * Set Challenge end to No end date when the deadline is fully driven by the opt-in window.
+  * Combine the opt-in window with a challenge end date as a hard cut-off.
 
-**Good to know:** If both a challenge end date and the opt-in window are set, each member's deadline is whichever comes first. Completion requirements are available under Advanced scheduling.
+  **Good to know:** If both a challenge end date and the opt-in window are set, each member's deadline is whichever comes first. Completion requirements are available under Advanced scheduling.
 
-+++
+  +++
 
 * **Challenges domain in the Content Card personalization editor** - The Content Card personalization editor now supports **Challenges** as a domain, letting you access challenge metadata when authoring content card personalization. This makes it easier to create tailored content for each stage of a challenge — Launch, In progress, and End — without custom code. [Learn more](../content-card/design-content-card.md#personalize-challenge-content)
 
   Availability date: September 30, 2026
 
-+++ Show me the value: Challenges domain in the Content Card personalization editor
+  +++ Show me the value
 
-**Why it helps:** You can reuse challenge data in content cards for each stage of a challenge without custom code.
+  **Why it helps:** You can reuse challenge data in content cards for each stage of a challenge without custom code.
 
-**How it works:** In the Content Card personalization editor, open the Personalization icon, select Challenge Data, then select Add loyalty challenge data to make the challenge fields available, and add the fields you need.
+  **How it works:** In the Content Card personalization editor, open the Personalization icon, select Challenge Data, then select Add loyalty challenge data to make the challenge fields available, and add the fields you need.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Insert challenge metadata into content card personalization.
-* Create tailored content cards for the Launch, In progress and End stages of a challenge.
+  * Insert challenge metadata into content card personalization.
+  * Create tailored content cards for the Launch, In progress and End stages of a challenge.
 
-**Good to know:** Documented for content cards designed for a loyalty challenge.
+  **Good to know:** Documented for content cards designed for a loyalty challenge.
 
-+++
+  +++
 
 * **"Forever" Loyalty challenges** - Loyalty challenges can now run indefinitely. Set **Challenge end** to **No end date** when configuring the schedule, and the challenge never expires. [Learn more](../loyalty-challenges/create-challenges.md#schedule)
   
   Availability date: September 1, 2026
 
-+++ Show me the value: "Forever" Loyalty challenges
+  +++ Show me the value
 
-**Why it helps:** You can run a challenge that never expires instead of picking an arbitrary end date.
+  **Why it helps:** You can run a challenge that never expires instead of picking an arbitrary end date.
 
-**How it works:** In the challenge Settings tab, Schedule section, open the Challenge end field and select No end date. Challenges saved this way never expire, and the Challenges inventory shows a dash in the end-date column.
+  **How it works:** In the challenge Settings tab, Schedule section, open the Challenge end field and select No end date. Challenges saved this way never expire, and the Challenges inventory shows a dash in the end-date column.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Run a challenge indefinitely with no end date.
-* Combine No end date with an opt-in based completion deadline.
+  * Run a challenge indefinitely with no end date.
+  * Combine No end date with an opt-in based completion deadline.
 
-**Good to know:** No journey is generated for challenges configured with No end date, because journeys cannot run longer than 90 days. The challenge itself still runs and members can still opt in and complete tasks.
+  **Good to know:** No journey is generated for challenges configured with No end date, because journeys cannot run longer than 90 days. The challenge itself still runs and members can still opt in and complete tasks.
 
-+++
+  +++
 
 * **Loyalty available for Healthcare Shield and Privacy and Security Shield customers** - Journey Optimizer Loyalty is now available to Healthcare Shield and Privacy and Security Shield customers. [Learn more](../loyalty-challenges/get-started.md)
 
   Availability date: September 15, 2026
 
-+++ Show me the value: Loyalty available for Healthcare Shield and Privacy and Security Shield customers
+  +++ Show me the value
 
-**Why it helps:** Organizations on Healthcare Shield or Privacy and Security Shield no longer have a restriction on adopting Loyalty.
+  **Why it helps:** Organizations on Healthcare Shield or Privacy and Security Shield no longer have a restriction on adopting Loyalty.
 
-**How it works:** Journey Optimizer Loyalty can now be used under these Shield offerings, and the earlier availability warning has been removed from the Loyalty documentation.
+  **How it works:** Journey Optimizer Loyalty can now be used under these Shield offerings, and the earlier availability warning has been removed from the Loyalty documentation.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Use Journey Optimizer Loyalty if you are a Healthcare Shield or Privacy and Security Shield customer.
+  * Use Journey Optimizer Loyalty if you are a Healthcare Shield or Privacy and Security Shield customer.
 
-**Good to know:** Using Loyalty still requires a Loyalty role; for non-Prod sandboxes an administrator must create a custom role with the required Loyalty permissions.
+  **Good to know:** Using Loyalty still requires a Loyalty role; for non-Prod sandboxes an administrator must create a custom role with the required Loyalty permissions.
 
-+++
+  +++
 
 * **Loyalty challenge details page** - You can now review a challenge's configuration and performance from a dedicated details page. View its summary, targeted audience, connected journey, tasks, and rewards alongside key metrics for revenue, enrollment, completion rate, and total completions. Open the full report for more detailed performance insights or select **Edit challenge** to modify the challenge. [Learn more](../loyalty-challenges/access-loyalty-challenges.md#challenge-details)
 
   Availability date: September 30, 2026
 
-+++ Show me the value: Loyalty challenge details page
+  +++ Show me the value
 
-**Why it helps:** You can check what a challenge is configured to do and how it performs in one place, without opening the editor.
+  **Why it helps:** You can check what a challenge is configured to do and how it performs in one place, without opening the editor.
 
-**How it works:** In the Challenges inventory, select a challenge name to open its details page. It shows the Challenge summary, Tasks and Rewards, plus Key metrics (revenue, enrollment, completion rate, total completions). Select View report for the full report or Edit challenge to modify it.
+  **How it works:** In the Challenges inventory, select a challenge name to open its details page. It shows the Challenge summary, Tasks and Rewards, plus Key metrics (revenue, enrollment, completion rate, total completions). Select View report for the full report or Edit challenge to modify it.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Review the description, type, dates, targeted audience and connected journey status.
-* Check task completion requirements and each task's details.
-* Read key metrics with trend sparklines and percentage changes.
-* Open the full report or edit the challenge from the same page.
+  * Review the description, type, dates, targeted audience and connected journey status.
+  * Check task completion requirements and each task's details.
+  * Read key metrics with trend sparklines and percentage changes.
+  * Open the full report or edit the challenge from the same page.
 
-**Good to know:** The Key metrics and Trends sections are shown only to users with the View Loyalty Insights permission (loyalty-insights.read). Editing a published challenge requires reverting it to Draft first.
+  **Good to know:** The Key metrics and Trends sections are shown only to users with the View Loyalty Insights permission (loyalty-insights.read). Editing a published challenge requires reverting it to Draft first.
 
-+++
+  +++
 
 ### Journeys {#sep-26-journeys}
 
@@ -1259,38 +1259,38 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 28, 2026.
 
-+++ Show me the value: Supplemental ID support in Journey simulation
+  +++ Show me the value
 
-**Why it helps:** Test journeys that use a supplemental ID in simulation, so journeys with multiple re-entrance can be validated before going live.
+  **Why it helps:** Test journeys that use a supplemental ID in simulation, so journeys with multiple re-entrance can be validated before going live.
 
-**How it works:** In Journey simulation, a supplemental ID is now supported for read-audience and event-triggered journeys. The previous restriction that blocked simulation when multiple re-entrance was enabled has been removed from the documentation.
+  **How it works:** In Journey simulation, a supplemental ID is now supported for read-audience and event-triggered journeys. The previous restriction that blocked simulation when multiple re-entrance was enabled has been removed from the documentation.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Simulate complex user scenarios on a read-audience journey that uses a supplemental ID.
-* Simulate complex user scenarios on an event-triggered journey that uses a supplemental ID.
+  * Simulate complex user scenarios on a read-audience journey that uses a supplemental ID.
+  * Simulate complex user scenarios on an event-triggered journey that uses a supplemental ID.
 
-**Good to know:** With a supplemental ID on a Read audience journey, the limit of 100 per simulation run counts total journey runs instead of unique users. For example, re-running the same five simulated users 20 times reaches the limit. Stopping and restarting, or resetting, the simulation clears the count.
+  **Good to know:** With a supplemental ID on a Read audience journey, the limit of 100 per simulation run counts total journey runs instead of unique users. For example, re-running the same five simulated users 20 times reaches the limit. Stopping and restarting, or resetting, the simulation clears the count.
 
-+++
+  +++
 
 * **Support for Jump activities in Audience Qualification journeys** - You can now use Jump activities in journeys that start with an Audience Qualification node to jump to event-based journeys. This capability is being progressively rolled out to organizations. If you don't see this in your environment, it may be because you're still using batch audiences in Audience Qualifications. [Learn more](../building-journeys/jump.md)
 
   Availability date: September 22, 2026.
 
-+++ Show me the value: Support for Jump activities in Audience Qualification journeys
+  +++ Show me the value
 
-**Why it helps:** Connect journeys that start with an Audience Qualification to event-based start journeys, which was blocked before.
+  **Why it helps:** Connect journeys that start with an Audience Qualification to event-based start journeys, which was blocked before.
 
-**How it works:** In a journey that starts with an Audience Qualification event, add a Jump activity and select an event-based start journey as the target.
+  **How it works:** In a journey that starts with an Audience Qualification event, add a Jump activity and select an event-based start journey as the target.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Use a Jump activity in a journey that starts with an Audience Qualification node to jump to an event-based start journey.
+  * Use a Jump activity in a journey that starts with an Audience Qualification node to jump to an event-based start journey.
 
-**Good to know:** Jumping to a journey that starts with an Audience Qualification or Read Audience is still not supported. The capability is being progressively rolled out and is not enabled for an organization while batch audiences are still used in Audience Qualification nodes.
+  **Good to know:** Jumping to a journey that starts with an Audience Qualification or Read Audience is still not supported. The capability is being progressively rolled out and is not enabled for an organization while batch audiences are still used in Audience Qualification nodes.
 
-+++
+  +++
 
 * [!BADGE Deprecation]{type=Negative} **Batch audiences no longer supported in Audience Qualification and Exit Criteria** - Starting September 2026, new, draft, and duplicated journeys that use a batch audience in an Audience Qualification node or Exit Criteria cannot be published. Existing live journeys continue to run; if you stop, duplicate, or republish one, publication is blocked until you update its configuration. Use a streaming audience for Audience Qualification or Exit Criteria, or a Read Audience activity for batch-based journey entry. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
 
@@ -1298,20 +1298,20 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 18, 2026
 
-+++ Show me the value: Trigger after batch audience evaluation
+  +++ Show me the value
 
-**Why it helps:** Run a recurring batch journey on fresh audience data, and avoid waiting when no wait is needed.
+  **Why it helps:** Run a recurring batch journey on fresh audience data, and avoid waiting when no wait is needed.
 
-**How it works:** In the Read audience activity, on a recurring schedule, turn on Trigger after batch audience evaluation and set a wait window of 1 to 6 hours. If a batch segmentation is in progress, the journey waits for it. Otherwise it waits only when the latest snapshot is the same batch used by the previous run.
+  **How it works:** In the Read audience activity, on a recurring schedule, turn on Trigger after batch audience evaluation and set a wait window of 1 to 6 hours. If a batch segmentation is in progress, the journey waits for it. Otherwise it waits only when the latest snapshot is the same batch used by the previous run.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Configure a wait window of up to 6 hours for a fresh batch evaluation before the journey runs.
-* Let the journey wait for an evaluation in progress, or for a newer batch when the latest snapshot was already used.
+  * Configure a wait window of up to 6 hours for a fresh batch evaluation before the journey runs.
+  * Let the journey wait for an evaluation in progress, or for a newer batch when the latest snapshot was already used.
 
-**Good to know:** If no fresher audience is found by the end of the wait window, that occurrence is skipped. The documentation states that the option is available only for daily recurrence and does not control audience evaluation for Action campaigns.
+  **Good to know:** If no fresher audience is found by the end of the wait window, that occurrence is skipped. The documentation states that the option is available only for daily recurrence and does not control audience evaluation for Action campaigns.
 
-+++
+  +++
 
 * **Decisioning in Journey simulation** - Path Experimentation, as part of the **Optimize** activity, is now supported in Simulation. Routing is handled by Decisioning and is random and non-deterministic per simulated user.
 
@@ -1319,19 +1319,19 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 15, 2026
 
-+++ Show me the value: Decisioning in Journey simulation
+  +++ Show me the value
 
-**Why it helps:** Validate the Path Experimentation paths of an Optimize activity in simulation instead of testing them only in a live journey.
+  **Why it helps:** Validate the Path Experimentation paths of an Optimize activity in simulation instead of testing them only in a live journey.
 
-**How it works:** In Simulation, the Experiment method (Path Experimentation) of the Optimize activity is now supported. Routing is handled by Decisioning, for any split, even a 50/50 split or a 10 percent holdout.
+  **How it works:** In Simulation, the Experiment method (Path Experimentation) of the Optimize activity is now supported. Routing is handled by Decisioning, for any split, even a 50/50 split or a 10 percent holdout.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Simulate Path Experimentation as part of the Optimize activity.
+  * Simulate Path Experimentation as part of the Optimize activity.
 
-**Good to know:** Assignment is random and non-deterministic per simulated user. A small batch, for example 5 users in Quick simulation, is not guaranteed to cover every treatment. This differs from Percentage split, where AI creates one simulated user per branch.
+  **Good to know:** Assignment is random and non-deterministic per simulated user. A small batch, for example 5 users in Quick simulation, is not guaranteed to cover every treatment. This differs from Percentage split, where AI creates one simulated user per branch.
 
-+++
+  +++
 
 * **New Journey Anomaly Detected alert** - A new system alert now warns you when a live journey's daily traffic deviates from its own historical baseline, or drops to zero unexpectedly, across Journey Entries, Journey Exits, and Event Sends. This alert is currently available in production sandboxes only.
 
@@ -1339,21 +1339,21 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 15, 2026
 
-+++ Show me the value: New Journey Anomaly Detected alert
+  +++ Show me the value
 
-**Why it helps:** Be warned when a live journey's traffic drops or deviates unexpectedly, so you can act before customers are affected.
+  **Why it helps:** Be warned when a live journey's traffic drops or deviates unexpectedly, so you can act before customers are affected.
 
-**How it works:** This is a system alert listed with the journey alerts. Every day it compares each live journey's Journey Entries, Journey Exits and Event Sends with the journey's own historical baseline and raises an alert on a zero value or a deviation of 35 percent or more.
+  **How it works:** This is a system alert listed with the journey alerts. Every day it compares each live journey's Journey Entries, Journey Exits and Event Sends with the journey's own historical baseline and raises an alert on a zero value or a deviation of 35 percent or more.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Get warned when a live journey's daily traffic deviates from its own historical baseline.
-* Get warned when Journey Entries, Journey Exits or Event Sends drops to zero unexpectedly.
-* Troubleshoot an alert from the journey live report.
+  * Get warned when a live journey's daily traffic deviates from its own historical baseline.
+  * Get warned when Journey Entries, Journey Exits or Event Sends drops to zero unexpectedly.
+  * Troubleshoot an alert from the journey live report.
 
-**Good to know:** Currently available in production sandboxes only. It applies to live unitary event, read-audience (recurring only) and audience-qualification journeys, and requires the organization or sandbox to be subscribed to alerting. A deviation alert needs 3 to 4 consecutive non-zero days of history and an expected value of at least 100.
+  **Good to know:** Currently available in production sandboxes only. It applies to live unitary event, read-audience (recurring only) and audience-qualification journeys, and requires the organization or sandbox to be subscribed to alerting. A deviation alert needs 3 to 4 consecutive non-zero days of history and an expected value of at least 100.
 
-+++
+  +++
 
 * **Decisioning in Journey simulation** - You can now simulate journeys that rely on Decisioning, with the following newly supported:
 
@@ -1366,100 +1366,100 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 8, 2026
 
-+++ Show me the value: Decisioning in Journey simulation
+  +++ Show me the value
 
-**Why it helps:** Validate journeys that rely on Decisioning, including offers and decision policies, in simulation before they go live.
+  **Why it helps:** Validate journeys that rely on Decisioning, including offers and decision policies, in simulation before they go live.
 
-**How it works:** In Simulation, Content Decision nodes, the Targeting rule method of the Optimize activity and actions with content decisioned by Journey Optimizer are supported. Decision policies are supported for Offer eligibility and for ranking by rule, audience, priority, formula, and AI Model - Personalization.
+  **How it works:** In Simulation, Content Decision nodes, the Targeting rule method of the Optimize activity and actions with content decisioned by Journey Optimizer are supported. Decision policies are supported for Offer eligibility and for ranking by rule, audience, priority, formula, and AI Model - Personalization.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Simulate Content Decision nodes and the Targeting rule method of the Optimize activity.
-* Simulate actions with decisioned content, for example an email that uses a decision policy.
-* Simulate decision policies that use Offer eligibility and ranking by rule, audience, priority or formula.
+  * Simulate Content Decision nodes and the Targeting rule method of the Optimize activity.
+  * Simulate actions with decisioned content, for example an email that uses a decision policy.
+  * Simulate decision policies that use Offer eligibility and ranking by rule, audience, priority or formula.
 
-**Good to know:** When ranking by AI Model - Personalization, the returned offers may vary between simulation runs.
+  **Good to know:** When ranking by AI Model - Personalization, the returned offers may vary between simulation runs.
 
-+++
+  +++
 
 * **Analyze Journey Anomalies skill** - Coworker can now detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts against historical baselines using the **Analyze Journey Anomalies** skill. Once a real anomaly is confirmed, the skill runs read-only diagnostics to surface a likely root cause and recommendation. [Learn more](../building-journeys/journeys-coworker-skills.md#journey-analyze)
 
   Availability date: September 2, 2026
 
-+++ Show me the value: Analyze Journey Anomalies skill
+  +++ Show me the value
 
-**Why it helps:** Find out whether a change in journey traffic is a real anomaly and what likely caused it, without building the analysis yourself.
+  **Why it helps:** Find out whether a change in journey traffic is a real anomaly and what likely caused it, without building the analysis yourself.
 
-**How it works:** In Coworker Chat, ask about entries, exits or sends of a journey, for example why entries dropped yesterday. The skill confirms the anomaly with a deterministic statistical check, then runs bounded, read-only diagnostics and returns a likely root cause and a recommendation. When a Journey Anomaly Detected alert fires, an AI Recommendations card on the Journey Optimizer home page opens Coworker with the analysis prepared.
+  **How it works:** In Coworker Chat, ask about entries, exits or sends of a journey, for example why entries dropped yesterday. The skill confirms the anomaly with a deterministic statistical check, then runs bounded, read-only diagnostics and returns a likely root cause and a recommendation. When a Journey Anomaly Detected alert fires, an AI Recommendations card on the Journey Optimizer home page opens Coworker with the analysis prepared.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Detect unexpected spikes, drops or flatlines in a journey's entry, exit or message-send counts against historical baselines.
-* Get a likely root cause and a recommendation once a real anomaly is confirmed.
-* Investigate an anomaly alert that references a specific journey version and timestamp.
+  * Detect unexpected spikes, drops or flatlines in a journey's entry, exit or message-send counts against historical baselines.
+  * Get a likely root cause and a recommendation once a real anomaly is confirmed.
+  * Investigate an anomaly alert that references a specific journey version and timestamp.
 
-**Good to know:** The diagnostics are read-only. The AI Recommendations card is in Limited Availability for a set of organizations, and the Journey Analyze skills need permissions such as View Journeys and View Segments.
+  **Good to know:** The diagnostics are read-only. The AI Recommendations card is in Limited Availability for a set of organizations, and the Journey Analyze skills need permissions such as View Journeys and View Segments.
 
-+++
+  +++
 
 * **New dateDiff function in journey expression editor** - The journey expression editor now includes the `dateDiff` function, which calculates the difference between two dates in number of days. This function is useful for time-based logic such as creating deadlines, calculating customer lifecycle durations, or building countdown timers in journey conditions.  [Learn more](../building-journeys/functions/date-functions.md#dateDiff)
 
   Availability date: September 1, 2026
 
-+++ Show me the value: New dateDiff function in journey expression editor
+  +++ Show me the value
 
-**Why it helps:** Compute the gap between two dates directly in a journey expression instead of working it out outside the journey.
+  **Why it helps:** Compute the gap between two dates directly in a journey expression instead of working it out outside the journey.
 
-**How it works:** In the journey expression editor, use dateDiff(date1, date2). The parameters can be literal values, functions such as now(), or typed event, profile or custom action response fields.
+  **How it works:** In the journey expression editor, use dateDiff(date1, date2). The parameters can be literal values, functions such as now(), or typed event, profile or custom action response fields.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Create deadlines in journey conditions.
-* Calculate customer lifecycle durations.
-* Build countdown timers in journey conditions.
+  * Create deadlines in journey conditions.
+  * Calculate customer lifecycle durations.
+  * Build countdown timers in journey conditions.
 
-**Good to know:** Both parameters must use the same data type. According to the documentation, dateOnly parameters return days while dateTimeOnly and dateTime parameters return milliseconds. This function differs from dateDiff in the personalization editor.
+  **Good to know:** Both parameters must use the same data type. According to the documentation, dateOnly parameters return days while dateTimeOnly and dateTime parameters return milliseconds. This function differs from dateDiff in the personalization editor.
 
-+++
+  +++
 
 * **Dry run step-event suppression for custom reports** - As part of step-event optimization, Journey Optimizer now stops generating certain non-reportable step events during Journey Dry Runs. This only affects custom reports built on these dry-run step-event types. If you're impacted, re-trigger the dry run to regenerate data.
 
 * **Internal error recovery timeout in Journey Properties** - Journey Properties now includes a **Set internal error recovery timeout** setting: by default, impacted journey events may be retried for up to 72 hours after a service interruption with no action needed. You can turn this setting on to control the replay window (0–72 hours) for time-sensitive journeys. The existing **Timeout or error** field has also been renamed to **Custom Action / Data source timeout** to avoid confusion between the two settings. [Learn more](../building-journeys/journey-properties.md#event-recovery-timeout)
 
-+++ Show me the value: Internal error recovery timeout in Journey Properties
+  +++ Show me the value
 
-**Why it helps:** Control how long a time-sensitive journey retries events after a service interruption, so late replays do not reach customers when they are no longer relevant.
+  **Why it helps:** Control how long a time-sensitive journey retries events after a service interruption, so late replays do not reach customers when they are no longer relevant.
 
-**How it works:** In Journey Properties, turn on Set internal error recovery timeout and set the replay window from 0 to 72 hours. The default, with the toggle off, is up to 72 hours of retries with no action needed, for new and existing journeys.
+  **How it works:** In Journey Properties, turn on Set internal error recovery timeout and set the replay window from 0 to 72 hours. The default, with the toggle off, is up to 72 hours of retries with no action needed, for new and existing journeys.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Turn on Set internal error recovery timeout in Journey Properties.
-* Set a shorter replay window, from 0 to 72 hours, for time-sensitive journeys.
+  * Turn on Set internal error recovery timeout in Journey Properties.
+  * Set a shorter replay window, from 0 to 72 hours, for time-sensitive journeys.
 
-**Good to know:** Use a shorter window only when replaying delayed events would no longer be relevant. The Timeout or error field is now named Custom Action / Data Source timeout and is a separate setting: it controls how long a journey waits for a single action response before taking a fallback path.
+  **Good to know:** Use a shorter window only when replaying delayed events would no longer be relevant. The Timeout or error field is now named Custom Action / Data Source timeout and is a separate setting: it controls how long a journey waits for a single action response before taking a fallback path.
 
-+++
+  +++
 
 * [!BADGE Usability]{type=Positive} **Easier detach and join branches in the new journey canvas** - You can now detach a branch from the rest of your journey without deleting it, and join it back later at a different point, either by selecting an eligible activity directly on the canvas or by picking it from a list of disconnected or already-used branches. [Learn more](../building-journeys/using-the-journey-designer.md#join-and-detach-branches)
 
   Availability date: September 1, 2026
 
-+++ Show me the value: Easier detach and join branches in the new journey canvas
+  +++ Show me the value
 
-**Why it helps:** Rearrange a journey without deleting work: detach a branch, keep it on the canvas and reconnect it later elsewhere.
+  **Why it helps:** Rearrange a journey without deleting work: detach a branch, keep it on the canvas and reconnect it later elsewhere.
 
-**How it works:** On the new journey canvas, select an edge, or its plus icon, and choose Detach edge. The edge is capped with an End activity and the detached branch stays on the canvas. To rejoin, use the plus icon on an edge, open the Join section and pick a branch from the Disconnected or Branches list, or use Select from canvas.
+  **How it works:** On the new journey canvas, select an edge, or its plus icon, and choose Detach edge. The edge is capped with an End activity and the detached branch stays on the canvas. To rejoin, use the plus icon on an edge, open the Join section and pick a branch from the Disconnected or Branches list, or use Select from canvas.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Detach a branch from the rest of the journey without deleting it.
-* Join a detached branch back at a different point by selecting an eligible activity on the canvas.
-* Join a branch from a list of disconnected or already used branches, with a search field for large journeys.
+  * Detach a branch from the rest of the journey without deleting it.
+  * Join a detached branch back at a different point by selecting an eligible activity on the canvas.
+  * Join a branch from a list of disconnected or already used branches, with a search field for large journeys.
 
-**Good to know:** Detach edge only appears where detaching makes sense. For example, it is not available on an edge whose target is an End activity shared by more than one branch.
+  **Good to know:** Detach edge only appears where detaching makes sense. For example, it is not available on an edge whose target is an End activity shared by more than one branch.
 
-+++
+  +++
 
 ### Channels {#sep-26-channels}
 
@@ -1548,59 +1548,59 @@ The following capabilities and improvements are coming to channels in this relea
 
   Availability date: September 25, 2026
 
-+++ Show me the value: Increased subdomain delegation limit
+  +++ Show me the value
 
-**Why it helps:** Delegate far more subdomains when your license contract allows it, instead of stopping at the default cap.
+  **Why it helps:** Delegate far more subdomains when your license contract allows it, instead of stopping at the default cap.
 
-**How it works:** The Guardrails section of Delegate a subdomain states that Journey Optimizer allows a maximum of 10 subdomains by default, and up to 3000 depending on your license contract. To raise your limit, reach out to your Adobe representative.
+  **How it works:** The Guardrails section of Delegate a subdomain states that Journey Optimizer allows a maximum of 10 subdomains by default, and up to 3000 depending on your license contract. To raise your limit, reach out to your Adobe representative.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Request up to 3000 subdomains, up from 100, through your Adobe representative.
+  * Request up to 3000 subdomains, up from 100, through your Adobe representative.
 
-**Good to know:** The limit depends on your license contract and is shared by the email, landing page, and web channels. SMS and custom channels do not support CDN provisioning and are not subject to this limit.
+  **Good to know:** The limit depends on your license contract and is shared by the email, landing page, and web channels. SMS and custom channels do not support CDN provisioning and are not subject to this limit.
 
-**Status:** Limited Availability
+  **Status:** Limited Availability
 
-+++
+  +++
 
 * **Direct mail - Split large files automatically** - Direct Mail files can now be split into multiple parts automatically when they exceed roughly 20 GB, or manually by choosing a target file size in the file routing configuration. [Learn more](../direct-mail/direct-mail-configuration.md)
 
   Availability date: September 30, 2026
 
-+++ Show me the value: Direct mail - Split large files automatically
+  +++ Show me the value
 
-**Why it helps:** Keep very large Direct Mail exports manageable without splitting files yourself.
+  **Why it helps:** Keep very large Direct Mail exports manageable without splitting files yourself.
 
-**How it works:** In the file routing configuration of your Direct Mail setup, the Split file into multiple parts option lets you set a target file size from 500 MB to 10 GB. If you do not select it, Journey Optimizer still splits the file automatically once it exceeds approximately 20 GB.
+  **How it works:** In the file routing configuration of your Direct Mail setup, the Split file into multiple parts option lets you set a target file size from 500 MB to 10 GB. If you do not select it, Journey Optimizer still splits the file automatically once it exceeds approximately 20 GB.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Rely on automatic splitting of a Direct Mail file once it exceeds roughly 20 GB.
-* Choose a target file size in the file routing configuration to split files manually into several parts.
+  * Rely on automatic splitting of a Direct Mail file once it exceeds roughly 20 GB.
+  * Choose a target file size in the file routing configuration to split files manually into several parts.
 
-**Good to know:** By default, files are split only when they exceed about 20 GB. The optional JSON manifest file describing the parts was removed from this release and is not documented.
+  **Good to know:** By default, files are split only when they exceed about 20 GB. The optional JSON manifest file describing the parts was removed from this release and is not documented.
 
-+++
+  +++
 
 * **Direct mail - Increased audience limit** - The Direct Mail channel audience limit has been increased from 3 million to 100 million profiles, letting you target much larger audiences without hitting file-creation errors. [Learn more](../direct-mail/get-started-direct-mail.md)
 
   Availability date: September 30, 2026
 
-+++ Show me the value: Direct mail - Increased audience limit
+  +++ Show me the value
 
-**Why it helps:** Run Direct Mail campaigns on much larger audiences without the earlier error that prevented the file from being created.
+  **Why it helps:** Run Direct Mail campaigns on much larger audiences without the earlier error that prevented the file from being created.
 
-**How it works:** When you create a Direct Mail message, you select your audience from the available Adobe Experience Platform audiences. Audience selection now supports up to 100 million profiles, up from 3 million.
+  **How it works:** When you create a Direct Mail message, you select your audience from the available Adobe Experience Platform audiences. Audience selection now supports up to 100 million profiles, up from 3 million.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Target an audience of up to 100 million profiles in a Direct Mail message.
-* Avoid the file-creation failure that occurred above 3 million profiles.
+  * Target an audience of up to 100 million profiles in a Direct Mail message.
+  * Avoid the file-creation failure that occurred above 3 million profiles.
 
-**Good to know:** Large files are handled through the file split capability, which splits files above a certain size.
+  **Good to know:** Large files are handled through the file split capability, which splits files above a certain size.
 
-+++
+  +++
 
 ### Email Designer {#sep-26-email-designer}
 
@@ -1753,21 +1753,21 @@ The following capabilities and improvements are coming to the Email Designer in 
 
   Availability date: September 25, 2026
 
-+++ Show me the value: Auto save in the Email Designer
+  +++ Show me the value
 
-**Why it helps:** Avoid losing work while you design an email, since changes are saved without you clicking Save.
+  **Why it helps:** Avoid losing work while you design an email, since changes are saved without you clicking Save.
 
-**How it works:** In the Email Designer, your changes are saved automatically after about 10 seconds of inactivity. No setting is documented; access is granted by your Adobe representative.
+  **How it works:** In the Email Designer, your changes are saved automatically after about 10 seconds of inactivity. No setting is documented; access is granted by your Adobe representative.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Design an email without saving manually, relying on automatic saving after about 10 seconds of inactivity.
+  * Design an email without saving manually, relying on automatic saving after about 10 seconds of inactivity.
 
-**Good to know:** Only available for a set of organizations; contact your Adobe representative to gain access. You can still click Save when your content is ready.
+  **Good to know:** Only available for a set of organizations; contact your Adobe representative to gain access. You can still click Save when your content is ready.
 
-**Status:** Limited Availability
+  **Status:** Limited Availability
 
-+++
+  +++
 
 ### Orchestrated campaigns {#sep-26-orchestrated-campaigns}
 
@@ -1874,80 +1874,80 @@ The following capabilities and improvements are coming to the Email Designer in 
 
   Availability date: October 2, 2026
 
-+++ Show me the value: LINE channel for orchestrated campaigns
+  +++ Show me the value
 
-**Why it helps:** Campaigns that reach customers on LINE can be built and run in the same orchestrated campaign as the other channels, rather than in a separate tool.
+  **Why it helps:** Campaigns that reach customers on LINE can be built and run in the same orchestrated campaign as the other channels, rather than in a separate tool.
 
-**How it works:** Add a Line channel activity on the orchestrated campaign canvas, next to the Email, Mobile message, Push and Direct mail activities, and build the LINE content in it. LINE message creation is documented in the LINE section of the channel documentation.
+  **How it works:** Add a Line channel activity on the orchestrated campaign canvas, next to the Email, Mobile message, Push and Direct mail activities, and build the LINE content in it. LINE message creation is documented in the LINE section of the channel documentation.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Build and deliver LINE messages from the orchestrated campaign canvas: text, stickers, images, videos, location data and Flex Messages.
-* Combine the LINE activity with other channel activities in a cross-channel orchestrated campaign.
+  * Build and deliver LINE messages from the orchestrated campaign canvas: text, stickers, images, videos, location data and Flex Messages.
+  * Combine the LINE activity with other channel activities in a cross-channel orchestrated campaign.
 
-**Good to know:** Channel activities count toward the limit of 10 channel activities per orchestrated campaign.
+  **Good to know:** Channel activities count toward the limit of 10 channel activities per orchestrated campaign.
 
-+++
+  +++
 
 * **Campaign Orchestration monitoring** — A new user interface is now available for tracking the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation. It gives you direct visibility into the health of the data feeding your batch audiences. A new Campaign Orchestration tab in the Adobe Experience Platform's Monitoring dashboard surfaces the health of relational store dataflows (records ingested/updated/deleted/failed/skipped), with drill-down graphs and a per-dataflow/dataset breakdown including lineage. [Learn more](../data/monitor-data-ingestion.md#co)
 
   Availability date: September 28, 2026
 
-+++ Show me the value: Campaign Orchestration monitoring
+  +++ Show me the value
 
-**Why it helps:** When a batch audience is not what you expect, you can check whether the data behind it arrived, instead of guessing.
+  **Why it helps:** When a batch audience is not what you expect, you can check whether the data behind it arrived, instead of guessing.
 
-**How it works:** Open the Campaign Orchestration tab in the Monitoring dashboard. It shows summary cards for the Data Lake and Campaign Orchestration stages, ingestion metrics and trends, and dataflow- and dataset-level details of the data moving into the Relational Store used by orchestrated campaigns.
+  **How it works:** Open the Campaign Orchestration tab in the Monitoring dashboard. It shows summary cards for the Data Lake and Campaign Orchestration stages, ingestion metrics and trends, and dataflow- and dataset-level details of the data moving into the Relational Store used by orchestrated campaigns.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Track the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation.
-* Review records received, ingested, updated, deleted, skipped and failed per dataflow and dataset.
-* Compare the volume received with the volume processed at each stage, and open the details of a failing dataflow to find the affected source or dataset.
+  * Track the ingestion status and freshness of relational store data used by Orchestrated Campaign Segmentation.
+  * Review records received, ingested, updated, deleted, skipped and failed per dataflow and dataset.
+  * Compare the volume received with the volume processed at each stage, and open the details of a failing dataflow to find the affected source or dataset.
 
-**Good to know:** A difference between the Data Lake and Campaign Orchestration stages does not necessarily indicate a failure: review the updated, deleted, skipped and failed counts.
+  **Good to know:** A difference between the Data Lake and Campaign Orchestration stages does not necessarily indicate a failure: review the updated, deleted, skipped and failed counts.
 
-+++
+  +++
 
 * **Conditional content with relational data in orchestrated campaigns** - When building conditional content in the Email Designer for orchestrated campaigns, you can now build conditions directly on relational data — such as related records associated with a profile — not just standard profile attributes. [Learn more](../orchestrated/activities/channels.md#add-personalization)
 
   Availability date: September 22, 2026
 
-+++ Show me the value: Conditional content with relational data in orchestrated campaigns
+  +++ Show me the value
 
-**Why it helps:** One email can show different content depending on a customer's related records, such as their purchases, not only on profile fields.
+  **Why it helps:** One email can show different content depending on a customer's related records, such as their purchases, not only on profile fields.
 
-**How it works:** In the Email Designer of an orchestrated campaign channel activity, build conditional content on Target attributes from the campaign worktable. These include incoming audience or enrichment data from relational schemas.
+  **How it works:** In the Email Designer of an orchestrated campaign channel activity, build conditional content on Target attributes from the campaign worktable. These include incoming audience or enrichment data from relational schemas.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Build conditions in the Email Designer directly on relational data, such as related records associated with a profile.
-* Show different content depending on the target record.
+  * Build conditions in the Email Designer directly on relational data, such as related records associated with a profile.
+  * Show different content depending on the target record.
 
-**Good to know:** Conditions are specific to the current delivery and cannot be saved as reusable conditions.
+  **Good to know:** Conditions are specific to the current delivery and cannot be saved as reusable conditions.
 
-+++
+  +++
 
 * **Direct joins on collections in Orchestrated Campaigns** - When adding an attribute from a related collection, you can now choose between three join modes — a new default that warns you about potential performance impact from cartesian products, plus the existing Aggregate and Advanced modes — making it easier to understand the tradeoffs of your query before you build it. [Learn more](../orchestrated/build-query.md#links)
 
   Availability date: September 22, 2026
 
-+++ Show me the value: Direct joins on collections in Orchestrated Campaigns
+  +++ Show me the value
 
-**Why it helps:** You see the trade-offs of a collection condition before you build the query, which helps avoid queries that create high volumes or slow performance.
+  **Why it helps:** You see the trade-offs of a collection condition before you build the query, which helps avoid queries that create high volumes or slow performance.
 
-**How it works:** In the rule builder, when you select an attribute from a collection (1-N link) such as Price in Purchases, you choose between three options. Default creates an exists such as condition on the collection, Aggregate applies an aggregate function such as Count, and Advanced uses a direct join to the collection element.
+  **How it works:** In the rule builder, when you select an attribute from a collection (1-N link) such as Price in Purchases, you choose between three options. Default creates an exists such as condition on the collection, Aggregate applies an aggregate function such as Count, and Advanced uses a direct join to the collection element.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Use Default, the recommended option for most cases, to create an exists such as condition.
-* Use Aggregate when you need to count or aggregate collection records.
-* Use Advanced when you need a direct join to one collection attribute, for a single condition on the collection element.
-* Get a message about possible cartesian products and performance impact when a query can imply them.
+  * Use Default, the recommended option for most cases, to create an exists such as condition.
+  * Use Aggregate when you need to count or aggregate collection records.
+  * Use Advanced when you need a direct join to one collection attribute, for a single condition on the collection element.
+  * Get a message about possible cartesian products and performance impact when a query can imply them.
 
-**Good to know:** Advanced is the existing direct join behavior and is no longer the default.
+  **Good to know:** Advanced is the existing direct join behavior and is no longer the default.
 
-+++
+  +++
 
 ### Campaigns {#sep-26-campaigns}
 
@@ -1957,21 +1957,21 @@ The following improvement is coming to campaigns in this release.
 
   Availability date: September 30, 2026
 
-+++ Show me the value: Folders for Action Campaigns
+  +++ Show me the value
 
-**Why it helps:** Large campaign lists become easier to navigate because related campaigns can be grouped.
+  **Why it helps:** Large campaign lists become easier to navigate because related campaigns can be grouped.
 
-**How it works:** In the Campaigns inventory, select the Show folders icon to open the folder view. Create a folder with Create folder, rename, delete or move it from the More actions button, and move a campaign with Move to folder.
+  **How it works:** In the Campaigns inventory, select the Show folders icon to open the folder view. Create a folder with Create folder, rename, delete or move it from the More actions button, and move a campaign with Move to folder.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Organize Action Campaigns into folders.
-* Filter the inventory to one folder, or return to the full list with All campaigns.
-* Move a campaign into an existing or new folder from the inventory.
+  * Organize Action Campaigns into folders.
+  * Filter the inventory to one folder, or return to the full list with All campaigns.
+  * Move a campaign into an existing or new folder from the inventory.
 
-**Good to know:** Folders for campaigns are available for Action and API-triggered campaigns only, not for Orchestrated campaigns.
+  **Good to know:** Folders for campaigns are available for Action and API-triggered campaigns only, not for Orchestrated campaigns.
 
-+++
+  +++
 
 ### Decisioning {#sep-26-decisioning}
 
@@ -2084,39 +2084,39 @@ The following capabilities and improvements are coming to decisioning in this re
 
   Availability date: September 23, 2026
 
-+++ Show me the value: AEM Content Fragments in Decisioning available for Managed Services customers
+  +++ Show me the value
 
-**Why it helps:** Customers who run Adobe Experience Manager Managed Services can now map their Content Fragments to decision items, so they get the same fragment-driven decisioning as Cloud Service customers.
+  **Why it helps:** Customers who run Adobe Experience Manager Managed Services can now map their Content Fragments to decision items, so they get the same fragment-driven decisioning as Cloud Service customers.
 
-**How it works:** When you define the attributes of a decision item, you can map Adobe Experience Manager Content Fragment fields to the item attributes. Decisioning models, formulas and ranking criteria can then optimize which fragment is served to each profile. The feature is available for channels with Decisioning support.
+  **How it works:** When you define the attributes of a decision item, you can map Adobe Experience Manager Content Fragment fields to the item attributes. Decisioning models, formulas and ranking criteria can then optimize which fragment is served to each profile. The feature is available for channels with Decisioning support.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Map AEM Content Fragment fields to decision item attributes when you use Adobe Experience Manager Managed Services.
-* Use Journey Optimizer decisioning models, formulas and ranking criteria to optimize which fragment is served to each profile.
+  * Map AEM Content Fragment fields to decision item attributes when you use Adobe Experience Manager Managed Services.
+  * Use Journey Optimizer decisioning models, formulas and ranking criteria to optimize which fragment is served to each profile.
 
-**Good to know:** Attribute paths written directly inside Experience Manager fragments, such as `{{profile.person.name.firstName}}`, are not supported for fragments served through Experience Decisioning.
+  **Good to know:** Attribute paths written directly inside Experience Manager fragments, such as `{{profile.person.name.firstName}}`, are not supported for fragments served through Experience Decisioning.
 
-+++
+  +++
 
 * **Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation** - When simulating a Rule or Ranking Formula, you can now select an Adobe Experience Platform profile to automatically fill the attributes of a test-data variant, instead of entering them manually. [Learn more](../experience-decisioning/ranking/ranking-formulas.md#simulate-ranking-formula)
 
   Availability date: September 22, 2026
 
-+++ Show me the value: Support for Adobe Experience Platform profiles in Rule and Ranking formula simulation
+  +++ Show me the value
 
-**Why it helps:** Simulations run on real test-profile data instead of hand-typed values, which is faster and closer to what the decision will see.
+  **Why it helps:** Simulations run on real test-profile data instead of hand-typed values, which is faster and closer to what the decision will see.
 
-**How it works:** Open a rule or ranking formula, click Simulate, and add or generate a test variant. Select Edit on the variant, click Select AEP profile, choose an identity namespace, enter the identity value and click Select profile. The profile and audience attributes of the test profile fill the variant.
+  **How it works:** Open a rule or ranking formula, click Simulate, and add or generate a test variant. Select Edit on the variant, click Select AEP profile, choose an identity namespace, enter the identity value and click Select profile. The profile and audience attributes of the test profile fill the variant.
 
-**What you can do now:**
+  **What you can do now:**
 
-* Fill the attributes of a test-data variant from an Experience Platform test profile instead of entering them manually.
-* Reuse recently applied profiles from the Recents list without searching again.
+  * Fill the attributes of a test-data variant from an Experience Platform test profile instead of entering them manually.
+  * Reuse recently applied profiles from the Recents list without searching again.
 
-**Good to know:** Only test profiles can be selected. Only the Profile and Audience attribute groups of the variant are filled; other test data such as offer items is unchanged. The Recents list keeps the 10 most recent profiles, is stored in the browser per organization and sandbox, and is not shared across browsers or devices.
+  **Good to know:** Only test profiles can be selected. Only the Profile and Audience attribute groups of the variant are filled; other test data such as offer items is unchanged. The Recents list keeps the 10 most recent profiles, is stored in the browser per organization and sandbox, and is not shared across browsers or devices.
 
-+++
+  +++
 
 ### Onboarding {#sep-26-onboarding}
 
