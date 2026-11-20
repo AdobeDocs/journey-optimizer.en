@@ -61,9 +61,7 @@ Use [!DNL Journey Optimizer] to add links to your content and track the messages
 
 >[!NOTE]
 >
->When links are included in your content, they expire **761 days** (about 25 months) after they are registered. Links are registered when the journey or campaign is published or activated, not when the message is sent. This applies to both journeys and campaigns. Links to a mirror page are not affected by this rule and expire after **90 days**.
->
->Once a link expires, it cannot be restored. If a message is sent late in this period, its links stop working shortly after delivery. Republishing the journey or campaign registers new links for messages sent afterwards, but does not revive links in messages already delivered.
+>When links are included in your content, they expire **761 days** (about 25 months) after the journey or campaign is published or activated, not after the message is sent. Links to a mirror page expire after **90 days**. Once a link expires, it cannot be restored. [Learn more](#link-expiration-best-practices)
 
 ## Enable tracking {#enable-tracking}
 
