@@ -13,6 +13,7 @@ nudge: yes
 + What's new? {#whats-new} 
   + [Release cycle](using/rn/releases.md) 
   + {hide-from-toc}[Pre-release notes](using/rn/e-release-notes.md)
+  + {hide-from-toc}[Release notes v2 (review draft)](using/rn/release-notes-v2.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
