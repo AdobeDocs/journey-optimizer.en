@@ -874,7 +874,7 @@ The following capabilities and improvements are coming to content management in 
 
 **Why it helps:** An XDM field whose name matches a reserved keyword can make an expression fail validation. Knowing the longer list helps you check your schema and campaigns.
 
-**How it works:** Reserved keywords are listed in the personalization syntax documentation, grouped as general keywords, time units, and boolean and logical operators. Wrap a matching field name in backticks, for example {{profile.person.`next`.name}}. Backtick escaping works in both Handlebars paths and PQL expressions.
+**How it works:** Reserved keywords are listed in the personalization syntax documentation, grouped as general keywords, time units, and boolean and logical operators. Wrap a matching field name in backticks, for example ``{{profile.person.`next`.name}}``. Backtick escaping works in both Handlebars paths and PQL expressions.
 
 **What you can do now:**
 
@@ -2095,7 +2095,7 @@ The following capabilities and improvements are coming to decisioning in this re
 * Map AEM Content Fragment fields to decision item attributes when you use Adobe Experience Manager Managed Services.
 * Use Journey Optimizer decisioning models, formulas and ranking criteria to optimize which fragment is served to each profile.
 
-**Good to know:** Attribute paths written directly inside Experience Manager fragments, such as {{profile.person.name.firstName}}, are not supported for fragments served through Experience Decisioning.
+**Good to know:** Attribute paths written directly inside Experience Manager fragments, such as `{{profile.person.name.firstName}}`, are not supported for fragments served through Experience Decisioning.
 
 +++
 
