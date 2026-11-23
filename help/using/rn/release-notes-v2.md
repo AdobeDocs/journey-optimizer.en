@@ -2482,7 +2482,7 @@ The following capability and reminder apply to audiences in this release.
 <tr>
 <td>
 <p>You can now reference an audience's enrichment attributes as a data source in Decisioning eligibility rules. Enrichment attributes are additional, audience-specific data - such as the product or item IDs that qualified a profile for inclusion - defined through an Enrich activity in an audience composition. This lets your eligibility logic take into account exactly what triggered a customer's audience membership, without building and maintaining separate audiences for each product or item variation. Enrichment attributes were already available in journey conditions, custom actions, and message personalization; this release extends them to Decisioning.</p>
-<p>This capability is only available for a set of organizations (Limited Availability) and supports batch audience deliveries only. To gain access, contact your Adobe representative. </p>
+<p>This capability is only available for a set of organizations (Limited Availability) and currently supports batch audience deliveries only. To gain access, contact your Adobe representative. </p>
 <p>Availability date: September 23, 2026</p>
 
 +++ Why it matters
