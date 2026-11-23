@@ -89,7 +89,7 @@ This hidden page is a review copy of the September, October, and November 2026 r
 * Review a campaign's details, lifecycle history and execution history, including whether it failed.
 * Visualize a campaign's activity graph.
 
-**Good to know:** All three skills are read-only. Creating, editing or publishing campaigns through Coworker is not supported, and campaign analytics and performance reporting are not supported. The documentation still lists required permissions and availability as to be confirmed.
+**Good to know:** All three skills are read-only. Creating, editing or publishing campaigns through Coworker is not supported, and campaign analytics and performance reporting are not supported.
 
 +++
 
@@ -409,7 +409,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
   * Test a new custom channel before using it in a campaign or journey.
   * List custom channels, fetch the details of one, update its settings or delete it.
 
-  **Good to know:** Channel Builder is for custom outbound channels only and is designed for administrators. To inspect standard channel configurations such as email, SMS or push, use the read-only Channel Operation skill instead. The documentation still marks the required permissions and limitations as to be confirmed.
+  **Good to know:** Channel Builder is for custom outbound channels only and is designed for administrators. To inspect standard channel configurations such as email, SMS or push, use the read-only Channel Operation skill instead.
 
   +++
 
@@ -598,7 +598,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   **Why it helps:** Keep your journey inventory clean by finding configuration problems and decaying journeys without opening each journey.
 
-  **How it works:** Ask in Coworker chat, for example to audit your journeys or run a hygiene check on one journey, custom actions or events. The skill checks metadata and configuration, not performance data, and suggests fixes. Documented thresholds: stale drafts are older than 30 days and never published, stale live and closed journeys are older than 90 days, oversized journeys have 50 or more nodes.
+  **How it works:** Ask in Coworker chat, for example to audit your journeys or run a hygiene check on one journey, custom actions or events. The skill checks metadata and configuration, not performance data, and suggests fixes. Thresholds: stale drafts are older than 30 days and never published, stale live and closed journeys are older than 90 days, oversized journeys have 50 or more nodes.
 
   **What you can do now:**
 
@@ -1470,7 +1470,7 @@ The following capabilities and improvements are coming to content management in 
 
   **Why it helps:** Test journeys that use a supplemental ID in simulation, so journeys with multiple re-entrance can be validated before going live.
 
-  **How it works:** In Journey simulation, a supplemental ID is now supported for read-audience and event-triggered journeys. The previous restriction that blocked simulation when multiple re-entrance was enabled has been removed from the documentation.
+  **How it works:** In Journey simulation, a supplemental ID is now supported for read-audience and event-triggered journeys. The previous restriction that blocked simulation when multiple re-entrance was enabled no longer applies.
 
   **What you can do now:**
 
@@ -1516,7 +1516,7 @@ The following capabilities and improvements are coming to content management in 
   * Configure a wait window of up to 6 hours for a fresh batch evaluation before the journey runs.
   * Let the journey wait for an evaluation in progress, or for a newer batch when the latest snapshot was already used.
 
-  **Good to know:** If no fresher audience is found by the end of the wait window, that occurrence is skipped. The documentation states that the option is available only for daily recurrence and does not control audience evaluation for Action campaigns.
+  **Good to know:** If no fresher audience is found by the end of the wait window, that occurrence is skipped. The option is available only for daily recurrence and does not control audience evaluation for Action campaigns.
 
   +++
 
@@ -1558,7 +1558,7 @@ The following capabilities and improvements are coming to content management in 
   * Get warned when Journey Entries, Journey Exits or Event Sends drops to zero unexpectedly.
   * Troubleshoot an alert from the journey live report.
 
-  **Good to know:** Currently available in production sandboxes only. It applies to live unitary event, read-audience (recurring only) and audience-qualification journeys, and requires the organization or sandbox to be subscribed to alerting. A deviation alert needs 3 to 4 consecutive non-zero days of history and an expected value of at least 100.
+  **Good to know:** Available in production sandboxes only. It applies to live unitary event, read-audience (recurring only) and audience-qualification journeys, and requires the organization or sandbox to be subscribed to alerting. A deviation alert needs 3 to 4 consecutive non-zero days of history and an expected value of at least 100.
 
   +++
 
@@ -1625,7 +1625,7 @@ The following capabilities and improvements are coming to content management in 
   * Calculate customer lifecycle durations.
   * Build countdown timers in journey conditions.
 
-  **Good to know:** Both parameters must use the same data type. According to the documentation, dateOnly parameters return days while dateTimeOnly and dateTime parameters return milliseconds. This function differs from dateDiff in the personalization editor.
+  **Good to know:** Both parameters must use the same data type. dateOnly parameters return days while dateTimeOnly and dateTime parameters return milliseconds. This function differs from dateDiff in the personalization editor.
 
   +++
 
@@ -1786,7 +1786,7 @@ The following capabilities and improvements are coming to channels in this relea
   * Rely on automatic splitting of a Direct Mail file once it exceeds roughly 20 GB.
   * Choose a target file size in the file routing configuration to split files manually into several parts.
 
-  **Good to know:** By default, files are split only when they exceed about 20 GB. The optional JSON manifest file describing the parts was removed from this release and is not documented.
+  **Good to know:** By default, files are split only when they exceed about 20 GB. The optional JSON manifest file that described the parts is no longer available.
 
   +++
 
@@ -2034,7 +2034,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 * Subscribe to orchestrated campaign lifecycle alerts such as delivery started, delivery failed, delivery completed, campaign start, stopped, publish and completed.
 * Follow the link in an alert to the Canvas to check details in the logs.
 
-**Good to know:** Not every alert in the original plan shipped in September: the comments state that two alerts were at risk and one was postponed (documentation lists the alerts that are available).
+**Good to know:** Only the alerts listed in the documentation are available.
 
 +++
 
@@ -2068,7 +2068,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 * Place the Alert activity on a branch of a Test activity to alert only when a condition is met, for example when a query returns fewer profiles than expected.
 * Subscribe to the Orchestrated Campaign Activity Alert from the Alerts page.
 
-**Good to know:** The activity has no trigger or condition of its own. The title and message are static plain text and dynamic tokens are not supported. The 10,000 profile threshold in the documentation example is an example set in the Test activity, not a product limit.
+**Good to know:** The activity has no trigger or condition of its own. The title and message are static plain text and dynamic tokens are not supported. The 10,000 profile threshold shown in examples is set in the Test activity. It is not a product limit.
 
 +++
 
@@ -2496,7 +2496,7 @@ The following capability and reminder apply to audiences in this release.
 * Reference an audience's enrichment attributes as a data source in Decisioning eligibility rules.
 * Take into account the product or item IDs that qualified a profile for inclusion in an audience.
 
-**Good to know:** Available only for a set of organizations and currently supports batch audience deliveries only; contact your Adobe representative for access. Enrichment attributes must first be added to a Field Group in the ExperiencePlatform data source. They are not available in ranking formulas.
+**Good to know:** Available only for a set of organizations and supports batch audience deliveries only; contact your Adobe representative for access. Enrichment attributes must first be added to a Field Group in the ExperiencePlatform data source. They are not available in ranking formulas.
 
 **Status:** Limited Availability
 
