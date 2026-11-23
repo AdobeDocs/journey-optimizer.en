@@ -39,11 +39,83 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Find answers to common questions about Decisioning capabilities, including capping rules, ranking formulas, and AI model behavior, so you can configure and troubleshoot decisioning with confidence.
+**On this page:** Find answers to common questions about Decisioning capabilities, from getting started and the differences with Decision management to eligibility, capping rules, ranking formulas, and AI model behavior, so you can configure and troubleshoot decisioning with confidence.
 
 >[!ENDSHADEBOX]
 
 This page provides answers to frequently asked questions about Decisioning capabilities in Adobe Journey Optimizer.
+
+## Getting started {#getting-started}
+
++++**What is Decisioning?**
+
+Decisioning is the next-generation decisioning framework in Adobe Journey Optimizer. It simplifies personalization by offering a centralized catalog of marketing offers known as decision items, and a decision engine that leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
+
+Decision items are integrated into messages and experiences across Journey Optimizer channels: code-based experience, web, email, mobile messages, push notifications, custom channels, and direct mail.
+
+Learn more about [Decisioning](gs-experience-decisioning.md#about).
+
++++
+
++++**Where do I start?**
+
+1. Read [How Decisioning works](how-decisioning-works.md) to see how decision items, collections, rules, ranking methods, selection strategies, and decision policies fit together.
+
+1. Check the [prerequisites](gs-experience-decisioning.md#prerequisites). Decisioning is only available to users with access to a Decisioning related role, such as Decision managers.
+
+1. Follow the [key steps](gs-experience-decisioning.md#steps) to set up your decision items, collections, rules, ranking methods, selection strategies, and decision policy.
+
+If you prefer to learn by watching, see the [Decisioning tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/decision-capabilities/decisioning/introduction-to-decisioning){target="_blank"}. If an item does not appear as expected, go through the [troubleshooting checklist](decisioning-troubleshooting.md#troubleshooting).
+
++++
+
+## Key concepts {#key-concepts}
+
++++**What are the key concepts of Decisioning?**
+
+Decisioning works with a handful of objects that you configure in advance:
+
+* **Decision items**: Offers or pieces of content in the Offers catalog. Each item has its own start and end dates, priority, eligibility, and capping rules.
+* **Collections**: Groups of items based on attribute rules, for example all the items where the `Category` attribute is `Yoga`.
+* **Decision rules**: Reusable conditions that determine who qualifies.
+* **Ranking methods**: Set the order of the qualifying items: the item priority (default), a ranking formula, or an AI model.
+* **Selection strategies**: Reusable objects that combine a collection, an eligibility constraint, and a ranking method.
+* **Decision policies**: Put selection strategies in order, set how many items to return, and define optional fallback items. A decision policy is added to the content of a campaign or journey.
+* **Placements** (email only): Containers for the items displayed in an email.
+
+Learn more about [the building blocks of Decisioning](how-decisioning-works.md#building-blocks).
+
++++
+
+## Decision management and Decisioning {#decision-management}
+
++++**What is the difference between Decision management and Decisioning?**
+
+Decision management is the legacy decisioning framework in Adobe Journey Optimizer. Decisioning is the next-generation framework and feature set. It offers significant capabilities and benefits over Decision management, for example:
+
+* **Schema-based items**: You define the attributes of your decision items once, in the schema of the catalog, and every item inherits them.
+* **Reusable decision logic**: A selection strategy is a reusable object, and decision logic can be reused across placements and locations. In Decision management, decision logic is tied to a specific placement.
+* **Experimentation**: Decisioning introduces experimentation, so you can experiment on items, aspects of an item, and ranking methods.
+* **Integrated authoring**: You can insert Decisioning components directly in your message authoring workflows.
+
+The objects of the two frameworks do not always map one to one. For example, an offer becomes a decision item, and a decision maps to a selection strategy and a decision policy.
+
+Learn more about [Decisioning and Decision management terms](how-decisioning-works.md#compare) and the [benefits of migrating to Decisioning](migrate-to-decisioning.md). To move your Decision management objects, use the [migration tooling](decisioning-migration-api.md).
+
++++
+
+## Eligibility {#eligibility}
+
++++**What is the difference between an audience and a decision rule?**
+
+Both restrict who can receive an item, or who a selection strategy applies to, but they are evaluated differently:
+
+* **Audience**: A list of profiles that Adobe Experience Platform computes from profile attributes and experience events. The audience is not recomputed when a decision is made, so it might not be up to date.
+* **Decision rule**: A condition that runs against the individual profile every time a decision is made, so each profile gets the latest result. A rule can use profile attributes, audiences, and context data.
+
+Learn more about [audiences and decision rules](decisioning-troubleshooting.md#audiences-rules).
+
++++
 
 ## Capping rules {#capping-rules}
 
@@ -59,6 +131,18 @@ If you define two capping rules for an offer:
 The offer will stop being displayed to a user once they've seen it 5 times in a week, even if the total cap of 100 hasn't been reached yet. Similarly, once 100 total impressions are reached, the offer stops being displayed to all users.
 
 Learn more about [capping rules](items.md#capping).
+
++++
+
+## Strategy sequence {#strategy-sequence}
+
++++**Why is the item with the highest score not returned first?**
+
+Selection strategies are evaluated in the order of the strategy sequence. The first selection strategy or decision item in the sequence has the highest priority. Selection strategies that you combine in a group have the same priority, so their qualifying items are ranked together according to their scores. The items of a later group are placed after the items of the earlier groups, whatever their score.
+
+In the example on the concept page, Offer 6 has the highest score (60) but comes last, because it belongs to the group with the lower priority.
+
+Learn more about [what happens when a decision is requested](how-decisioning-works.md#decision-process).
 
 +++
 
@@ -143,7 +227,7 @@ AI models generate greater personalization benefits when offers appeal to distin
 
 >[!NOTE]
 >
->Offer differentiation does not guarantee balanced traffic distribution. Offers with objectively superior value propositions (for example, €100 discount versus €50 discount) will typically dominate across all customer segments regardless of personalization efforts.
+>Offer differentiation does not guarantee balanced traffic distribution. Offers with objectively superior value propositions (for example, &euro;100 discount versus &euro;50 discount) will typically dominate across all customer segments regardless of personalization efforts.
 
 **Best practice**: Design offers with meaningful differentiation that align with distinct customer segment preferences to maximize AI model effectiveness.
 
@@ -154,5 +238,24 @@ AI models generate greater personalization benefits when offers appeal to distin
 Traffic anomalies are incorporated into the model proportionally within the 30-day rolling window, which provides model stability during temporary traffic fluctuations. Short-term spikes or drops do not significantly disrupt model predictions or performance.
 
 A temporary traffic spike (for example, twice the daily traffic) has minimal effect on overall model performance because the anomalous traffic represents a small fraction of the 30-day dataset.
+
++++
+
+## Troubleshooting {#troubleshooting}
+
++++**Why was an item not shown to a profile?**
+
+Go through the [troubleshooting checklist](decisioning-troubleshooting.md#troubleshooting). It covers the dates and status of the item, the collection, the eligibility of the profile, capping rules, the order of the strategies and the number of items requested, fallback items, and recent changes.
+
+You can also ask the [Decisioning Explainer](experience-decisioning-coworker-skills.md#decisioning-explainer) why an offer was or was not shown to a profile or segment. It is available to customers who have access to Coworker and Decisioning.
+
++++
+
++++**How long do changes take to apply?**
+
+* Changes to a decision policy and to the objects it uses can take up to 15 minutes to propagate across all data regions, and up to 30 minutes for Canada. This includes adding an item to a collection, changing a rule or the content of an item, and updating a formula.
+* A capping counter can take up to 3 seconds to update. After you approve an item or create a capping rule, it can take up to 15 minutes before events are counted toward the cap.
+
+Learn more about [when changes take effect](decisioning-troubleshooting.md#timing).
 
 +++

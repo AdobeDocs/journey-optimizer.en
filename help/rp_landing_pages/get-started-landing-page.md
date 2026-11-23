@@ -188,7 +188,7 @@ Audiences
 
 Decisioning
 
-[Create and manage personalized offers](decisioning-landing-page.md)
+[Create and manage personalized offers](../using/experience-decisioning/gs-decision.md)
 :::
 
 ::::

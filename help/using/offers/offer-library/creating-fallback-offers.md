@@ -41,7 +41,7 @@ level_v2:
 
 >[!IMPORTANT]
 >
->This page covers fallback offers for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Create decisions policies](../../experience-decisioning/create-decision-policy.md).
+>This page covers fallback offers for the legacy **Decision Management** capability. If you are using the new **Decisioning** capability, refer to [Create decision policies](../../experience-decisioning/create-decision-policy.md).
 >
 >Not sure which capability you are using? [Learn about Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 

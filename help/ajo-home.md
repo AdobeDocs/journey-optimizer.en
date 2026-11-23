@@ -116,7 +116,7 @@ Decisioning
 
 Create and manage personalized offers and decisions to optimize your communications.
 
-[Explore decisioning](./rp_landing_pages/decisioning-landing-page.md)
+[Explore decisioning](./using/experience-decisioning/gs-decision.md)
 :::
 
 :::

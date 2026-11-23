@@ -276,7 +276,7 @@ The **[!UICONTROL Strategy sequence]** section allows you to select the decision
 
     >[!NOTE]
     >
-    >A decision policy supports up to 10 selection strategies and decision items combined. [Learn more about Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)
+    >A decision policy supports up to 10 selection strategies and decision items combined. [Learn more about Decisioning guardrails & limitations](decisioning-guardrails.md#decision-policy)
 
 1. When adding several decision items and/or strategies, they will be evaluated in a specific order. The first object that was added to the sequence will be evaluated first, and so on. To change the default sequence, drag and drop the objects and/or the groups to reorder them as wanted. Expand the section below for more details.
 

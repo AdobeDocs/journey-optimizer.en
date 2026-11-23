@@ -718,14 +718,14 @@ nudge: yes
       + [Identity fields](using/reports/sharing-identity-fields.md)
     + [Examples of queries](using/reports/query-examples.md)
 + Decision capabilities {#decisioning}
-  + [Decision capabilities](/help/rp_landing_pages/decisioning-landing-page.md)
   + [Get started with decision capabilities](using/experience-decisioning/gs-decision.md)
   + Decisioning {#experience-decisioning}
-    + [Decisioning](/help/rp_landing_pages/experience-decisioning-landing-page.md)
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
+    + [How Decisioning works](using/experience-decisioning/how-decisioning-works.md)
     + [Coworker for Decisioning](using/experience-decisioning/experience-decisioning-coworker-skills.md)
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
     + [Decisioning FAQ](using/experience-decisioning/decisioning-faq.md)
+    + [Troubleshoot Decisioning](using/experience-decisioning/decisioning-troubleshooting.md)
     + Migrate to Decisioning {#migrate-to-decisioning}
       + [Benefits of migrating to Decisioning](using/experience-decisioning/migrate-to-decisioning.md)
       + [Decisioning Migration API](using/experience-decisioning/decisioning-migration-api.md)

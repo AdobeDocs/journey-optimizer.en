@@ -91,7 +91,7 @@ Learn how to prioritize and manage communication conflicts across campaigns and 
 - **[Communication Channels](../using/channels/gs-channels.md)** - Configure and manage email, mobile messages, push notifications, and other channels for personalized customer interactions.
 - **[Audiences, Profiles, and Identities](audiences-profiles-identities-landing-page.md)** - Manage audiences, profiles, and identities to enable effective targeting and personalization.
 - **[Comprehensive Reporting](reporting-landing-page.md)** - Analyze and optimize journeys, campaigns, and channels with advanced reporting features.
-- **[Decision Capabilities](decisioning-landing-page.md)** - Leverage decisioning tools to create and manage personalized offers and optimize marketing workflows.
+- **[Decision Capabilities](../using/experience-decisioning/gs-decision.md)** - Leverage decisioning tools to create and manage personalized offers and optimize marketing workflows.
 - **[Comprehensive Data Management](data-management-landing-page.md)** - Manage data effectively with tools for governance, schema usage, and querying capabilities.
 - **[Channel Configuration](configuration-landing-page.md)** - Set up and optimize communication channels for compliance and enhanced campaign performance.
 - **[Journey Configuration](configure-journeys-landing-page.md)** - Configure data sources, events, and actions to build seamless customer journeys.

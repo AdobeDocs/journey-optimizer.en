@@ -50,6 +50,8 @@ topic_v2:
 >title="What is decisioning?"
 >abstract="Decisioning is a new tooling besides Decision management to pick the best items from decision engine and deliver to each individual. It requires additional setup in order to use it."
 
+Create your items. Define who qualifies and how items are ranked. Let the decision engine pick the best ones for each profile.
+
 ## What is Decisioning {#about}
 
 Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
@@ -58,37 +60,47 @@ These decision items are seamlessly integrated into messages and experiences acr
 
 >[!IMPORTANT]
 >
->Decision policies are available to all customers for the **[Code-based Experience](../code-based/get-started-code-based.md)**, **[Web](../web/get-started-web.md)**, **[Email](../email/get-started-email.md)**, **[Push notification](../push/get-started-push.md)**, **[Mobile message](../mobile/get-started-mobile.md)**, **[Custom channels](../custom-channel/get-started-custom-channel.md)**, and **[Direct mail](../direct-mail/get-started-direct-mail.md)** channels.
+>Decision policies are available to all customers for the [Code-based Experience](../code-based/get-started-code-based.md), [Web](../web/get-started-web.md), [Email](../email/get-started-email.md), [Push notification](../push/get-started-push.md), [Mobile message](../mobile/get-started-mobile.md), [Custom channels](../custom-channel/get-started-custom-channel.md), and [Direct mail](../direct-mail/get-started-direct-mail.md) channels.
 
 ➡️ [Discover this feature in video](#video)
 
 ➡️ An end-to-end use case showing how to create decisions and use them in content experiments with the code-based experience channel is presented in [this section](experience-decisioning-uc.md).
 
+### Decisioning process {#process}
+
+The chart below shows the five phases of setting up Decisioning, from defining your components to inserting a decision policy in your content. Check the prerequisites below, then follow the key steps to work through these phases.
+
+![Diagram of the Decisioning process in five phases: define components (decision item schema, rules, ranking formulas, AI models, and channel configuration); create and manage decision items and group them in collections; configure a selection strategy with a collection, eligibility rules, and ranking; add the selection strategy to a campaign or journey as part of a decision policy; and insert the decision policy in the content, using the decision item attributes.](assets/decisioning-process-adobe.png){zoomable="yes"}
+
+➡️ Feeling lost already? Go to [How Decisioning works](how-decisioning-works.md) to see how the pieces fit together.
+
+### Prerequisites {#prerequisites}
+
+Decisioning is only available to users with access to a Decisioning related **[!UICONTROL role]** such as Decision managers. If you cannot access Decisioning, your permissions must be extended.
+
++++Learn how to assign the Decision managers role
+
+1. To assign a role to a user in the [!DNL Permissions] product, navigate to the **[!UICONTROL Roles]** tab and select Decision managers.
+
+    ![Roles tab of the Permissions product, with the Decisioning Managers role in the list of roles.](assets/decision_permission_1.png)
+
+1. From the **[!UICONTROL Users]** tab, click **[!UICONTROL Add user]**.
+
+    ![Users tab of the Decisioning Managers role, with the Add Users button above the list of users.](assets/decision_permission_2.png)
+
+1. Type in your user's name or email address or select the user from the list and click **[!UICONTROL Save]**.
+
+    If the user was not previously created, refer to the [Add users documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
+
+    ![Add Users dialog with one user selected in the search results and the Save button at the top right.](assets/decision_permission_3.png)
+
+Your user should then receive an email redirecting to your instance.
+
++++
+
 ## Decisioning key steps {#steps}
 
 The main steps to work with Decisioning are as follows:
-
-1. **Assign proper permissions**. Decisioning is only available to users with access to a Decisioning related **[!UICONTROL role]** such as Decision managers. If you cannot access Decisioning, your permissions must be extended.
-
-    +++Learn how to assign the Decision managers role
-
-    1. To assign a role to a user in the [!DNL Permissions] product, navigate to the **[!UICONTROL Roles]** tab and select Decision managers.
-
-        ![](assets/decision_permission_1.png)
-
-    1. From the **[!UICONTROL Users]** tab, click **[!UICONTROL Add user]**.
-
-        ![](assets/decision_permission_2.png)
-
-    1. Type in your user's name or email address or select the user from the list and click **[!UICONTROL Save]**.
-
-        If the user was not previously created, refer to the [Add users documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users).
-
-        ![](assets/decision_permission_3.png)
-
-    Your user should then receive an email redirecting to your instance.
-
-    +++
 
 1. **Configure custom attributes**: Tailor the item catalog to your specific requirements by setting up custom attributes into the catalog's schema.
     
@@ -117,29 +129,82 @@ The main steps to work with Decisioning are as follows:
 1. **Create a decision policy and embed it into your journey or campaign** (code-based experience, email, mobile message, push, or custom channels): Decision policies combine multiple selection strategies to determine the eligible decision items to display to the intended audience. 
     
     ➡️ [Learn how to work with decision policies](create-decision.md)
-    ➡️ To successfully deliver the offer via the code-based experience channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md).
+
+<!--
+In summary, the key steps above come down to five main phases:
+
+![Diagram of the Decisioning process in five phases: define components (decision item schema, decision rules, ranking formulas or AI models, and channel configuration); create decision items and group them in collections; configure a selection strategy with a collection, eligibility, and ranking; add a decision policy to a campaign or journey, with the number of items, selection strategies or decision items, and optional fallback items; and insert the decision policy in the content, using the decision item attributes.](assets/decisioning-process-phases.png){zoomable="yes"}
+-->
 
 >[!NOTE]
 >
 >Profiles that receive a decision through a journey or campaign count toward your organization's **Engageable Profiles** license metric, along with profiles engaged through other Journey Optimizer capabilities. [Monitor your Engageable Profiles count](../audience/license-usage.md)
 
-## Decisioning process {#process}
+## Go further with Decisioning {#go-further}
 
-The chart below summarizes the end-to-end Decisioning process — from managing decision items and configuring selection strategies, to embedding decision policies into a code-based experience journey or campaign.
+When you are ready, explore these topics.
 
-![](assets/decisioning-process.png){zoomable="yes"}
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="decisioning-guardrails.md">
+<img alt="Guardrails and limitations" src="../assets/do-not-localize/privacy-governance.jpeg" style="aspect-ratio:3/2;object-fit:cover;width:100%">
+</a>
+<div>
+<a href="decisioning-guardrails.md">Guardrails and limitations</a>
+</div>
+</td>
+<td>
+<a href="decisioning-faq.md">
+<img alt="Frequently asked questions" src="../assets/do-not-localize/FAQ.png" style="aspect-ratio:3/2;object-fit:cover;width:100%">
+</a>
+<div>
+<a href="decisioning-faq.md">Frequently asked questions</a>
+</div>
+</td>
+<td>
+<a href="placements.md">
+<img alt="Email placements" src="../assets/do-not-localize/email-design.jpg" style="aspect-ratio:3/2;object-fit:cover;width:100%">
+</a>
+<div>
+<a href="placements.md">Email placements</a>
+</div>
+</td>
+</tr></table>
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="cja-reporting.md">
+<img alt="Reporting" src="../assets/do-not-localize/reporting.jpeg" style="aspect-ratio:3/2;object-fit:cover;width:100%">
+</a>
+<div>
+<a href="cja-reporting.md">Reporting</a>
+</div>
+</td>
+<td>
+<a href="decisioning-troubleshooting.md">
+<img alt="Troubleshooting" src="../assets/do-not-localize/troubleshooting.jpeg" style="aspect-ratio:3/2;object-fit:cover;width:100%">
+</a>
+<div>
+<a href="decisioning-troubleshooting.md">Troubleshooting</a>
+</div>
+</td>
+<td>
+<a href="api-reference/getting-started.md">
+<img alt="API reference" src="../assets/do-not-localize/ao-workflows.jpg" style="aspect-ratio:3/2;object-fit:cover;width:100%">
+</a>
+<div>
+<a href="api-reference/getting-started.md">API reference</a>
+</div>
+</td>
+</tr></table>
 
 ## Additional resources {#additional-resources}
 
-* **[Coworker for Decisioning](experience-decisioning-coworker-skills.md)** - Ask Coworker why an offer was or wasn't shown to a profile or segment (Decisioning Explainer), or create, explain, simulate, and optimize rules and ranking formulas conversationally (Decisioning Rule Workflow).
-* **[Create decision items](items.md)** - Learn how to create and manage decision items including offers, content variations, and experiences.
-* **[Configure decision catalogs](catalogs.md)** - Understand how to organize decision items into catalogs for better management.
-* **[Define selection strategies](selection-strategies.md)** - Discover how to create selection strategies with eligibility rules and ranking methods.
-* **[Create decision policies](create-decision-policy.md)** - Learn how to build decision policies combining strategies and constraints.
-* **[Ranking and AI models](ranking/ranking.md)** - Master ranking formulas and AI models for personalized decisioning.
-* **[Migrate from Decision management](migrate-to-decisioning.md)** - Understand the benefits of migrating to Decisioning and use migration tooling APIs.
-* **[Decisioning guardrails](decisioning-guardrails.md)** - Review important limitations and best practices for decisioning implementation.
-* **[Decisioning tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/decision-capabilities/decisioning/introduction-to-decisioning){target="_blank"}** - Explore step-by-step video tutorials on decisioning features and best practices.
+* [Coworker for Decisioning](experience-decisioning-coworker-skills.md) - Ask Coworker why an offer was or wasn't shown to a profile or segment (Decisioning Explainer), or create, explain, simulate, and optimize rules and ranking formulas conversationally (Decisioning Rule Workflow).
+* [Create decision policies](create-decision-policy.md) - Learn how to build decision policies combining strategies and constraints.
+* [Use Adobe Experience Platform data](../../rp_landing_pages/aep-data-landing-page.md) - Use context data and Adobe Experience Platform datasets to enrich decision rules and ranking formulas.
+* [Migrate from Decision management](migrate-to-decisioning.md) - Understand the benefits of migrating to Decisioning and use migration tooling APIs.
+* [Decisioning tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/decision-capabilities/decisioning/introduction-to-decisioning){target="_blank"} - Explore step-by-step video tutorials on decisioning features and best practices.
 
 ## How-to video {#video}
 

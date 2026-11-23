@@ -80,7 +80,7 @@ To configure the **[!UICONTROL Content decision]** activity, follow the steps be
 
    >[!NOTE]
    >
-   >Decisioning permissions are needed to author a decision policy. [Learn more](../experience-decisioning/gs-experience-decisioning.md#steps)
+   >Decisioning permissions are needed to author a decision policy. [Learn more](../experience-decisioning/gs-experience-decisioning.md#prerequisites)
 
 1. Select the number of items you want to be returned back. For example, if you select 2, the best 2 eligible offers will be presented. Click **[!UICONTROL Next]**.
 

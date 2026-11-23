@@ -33,7 +33,7 @@ Decisioning in Adobe Journey Optimizer
 
 Explore how to create, manage, and optimize personalized content delivery using Decisioning features, including decision rules, strategies, and AI-driven ranking methods.
 
-[Learn more about Decisioning](experience-decisioning-landing-page.md)
+[Learn more about Decisioning](../using/experience-decisioning/gs-experience-decisioning.md)
 :::
 
 :::

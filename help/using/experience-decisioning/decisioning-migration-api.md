@@ -70,7 +70,7 @@ Typical permissions include:
 
 >[!NOTE]
 >
->Learn how to assign Decisioning permissions in [this section](gs-experience-decisioning.md#steps). For the full list of permissions, refer to the [Built-in permissions](../administration/ootb-permissions.md#ootb-permissions) page.
+>Learn how to assign Decisioning permissions in [this section](gs-experience-decisioning.md#prerequisites). For the full list of permissions, refer to the [Built-in permissions](../administration/ootb-permissions.md#ootb-permissions) page.
 
 ### Prepare your target sandbox {#target-sandbox-preparation}
 

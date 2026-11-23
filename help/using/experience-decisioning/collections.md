@@ -83,4 +83,4 @@ To create a collection, follow these steps:
 
 >[!NOTE]
 >
->Each item collection can contain up to 500 offer items. [Learn more about Decisioning guardrails & limitations](gs-experience-decisioning.md#guardrails)
+>Each item collection can contain up to 500 offer items. [Learn more about Decisioning guardrails & limitations](decisioning-guardrails.md#item-collections)
