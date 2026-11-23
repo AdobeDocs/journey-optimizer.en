@@ -2,16 +2,223 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Release notes v2 (review draft)
-description: Journey Optimizer release notes for September and October 2026 with Show me the value accordions, for review
+description: Journey Optimizer release notes for September, October, and November 2026 with Why it matters accordions, for review
 feature: Release Notes
 hide: yes
 hidefromtoc: yes
 ---
 # Release notes v2 (review draft) {#release-notes-v2}
 
-This hidden page is a review copy of the September and October 2026 release notes. Each feature and improvement carries a **Show me the value** accordion for PM, PMM, and Eng lead review. It is not part of the published release notes.
+This hidden page is a review copy of the September, October, and November 2026 release notes. Each feature and improvement carries a **Why it matters** accordion for PM, PMM, and Eng lead review. It is not part of the published release notes.
 
-<!-- All Show me the value accordions on this page are drafts until PM, PMM, and the Eng lead confirm them. -->
+<!-- All Why it matters accordions on this page are drafts until PM, PMM, and the Eng lead confirm them. -->
+
+## November '26 release notes {#nov-26-release-notes}
+
+### Journeys {#nov-26-journeys}
+
+<table>
+<thead>
+<tr>
+<th><strong>AI recommendation cards for journey alerts</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Spend less time investigating journey issues and get a head start on resolving them. When a <strong>Journey Custom Action failure</strong> or <strong>Journey Anomaly Detected</strong> alert fires, an <strong>AI Recommendations</strong> card on the Journey Optimizer home page highlights the issue. Select the card to review analysis and recommended next steps already prepared in Coworker, without having to request an investigation first. Continue the conversation to explore the findings and decide how to address the issue.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p><img src="assets/do-not-localize/ai-recommendations.gif"></p>
+<p>For more information, refer to the <a href="../start/user-interface.md#cx-enterprise-coworker">detailed documentation</a>.</p>
+<p>Availability date: November 16, 2026</p>
+
++++ Why it matters
+
+**Why it helps:** Get a head start on journey issues, because the analysis and recommended next steps are already prepared in Coworker when an alert fires.
+
+**How it works:** On the Journey Optimizer home page, the AI Recommendations panel shows a card when a Journey Custom Action failure or Journey Anomaly Detected alert fires. Select the card to open Coworker with the analysis and recommended next steps already prepared, without requesting an investigation first. AI monitoring is disabled by default: select Enable in the AI Recommendations panel.
+
+**What you can do now:**
+
+* Spot a custom action failure or a journey anomaly from a card on the home page.
+* Review the prepared analysis and recommended next steps in Coworker without requesting an investigation.
+* Continue the conversation in Coworker to explore the findings and decide how to address the issue.
+
+**Good to know:** Limited Availability for a set of organizations; contact your Adobe representative for access. The feature surfaces recommendations only and does not resolve the issue automatically. AI monitoring must be enabled from the AI Recommendations panel.
+
+**Status:** Limited Availability
+
++++
+
+</td>
+</tr>
+</tbody>
+</table>
+
+### Campaigns {#nov-26-orchestrated-campaigns}
+
+<table>
+<thead>
+<tr>
+<th><strong>Orchestrated campaigns skills in Coworker</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now find and inspect orchestrated campaigns conversationally from the Coworker chat interface. This release covers three read-only skills:</p>
+<ul>
+<li><p><strong>Orchestrated Campaign List</strong>: list, filter, and count campaigns, for example by status or channel.</p></li>
+<li><p><strong>Orchestrated Campaign Get</strong>: retrieve a specific campaign's details, lifecycle history, and execution history, and visualize its activity graph.</p></li>
+<li><p><strong>Orchestrated Campaign Workflow Renderer</strong>: render a workflow graph as a visual diagram.</p></li>
+</ul>
+<p>This provides teams with live visibility into campaign data without requiring API access or navigation through the Journey Optimizer user interface. Creating, editing, or publishing campaigns via Coworker is not yet supported.</p>
+<p>For more information, refer to the <a href="../orchestrated/orchestrated-campaigns-coworker-skills.md">detailed documentation</a>.</p>
+<p>Availability date: November 3, 2026</p>
+
++++ Why it matters
+
+**Why it helps:** Find and inspect orchestrated campaigns by asking Coworker, without API access or navigating the Journey Optimizer interface.
+
+**How it works:** Ask in the Coworker chat. Orchestrated Campaign List lists, filters and counts campaigns, for example by status or channel. Orchestrated Campaign Get retrieves a named campaign's details, lifecycle history, execution history and activity graph. Orchestrated Campaign Workflow Renderer renders a workflow graph payload that is already in the conversation as a diagram.
+
+**What you can do now:**
+
+* List and filter orchestrated campaigns, for example the live ones or the ones created by a given user.
+* Count campaigns that match a criterion, such as how many use email.
+* Review a campaign's details, lifecycle history and execution history, including whether it failed.
+* Visualize a campaign's activity graph.
+
+**Good to know:** All three skills are read-only. Creating, editing or publishing campaigns through Coworker is not supported, and campaign analytics and performance reporting are not supported. The documentation still lists required permissions and availability as to be confirmed.
+
++++
+
+</td>
+</tr>
+</tbody>
+</table>
+
++++ Coming soon — **Information below is subject to change.**
+
+* **Increased message activity limit** - Orchestrated campaigns now support up to **25 message actions** on a single canvas, up from the previous limit of 10. This allows complex cross-channel orchestrations, spanning email, push, SMS, and other channels, to be built and managed as a single campaign rather than split across multiple smaller ones.
+
+  For enterprise teams running sophisticated multi-step programs, this reduces operational overhead and simplifies publication and rollback handling when managing large campaign launches.
+
++++
+
+### Onboarding {#nov-26-onboarding}
+
+* **Migrate transactional email campaigns to Journey Optimizer** - The migration workspace now supports **Campaigns**. You can bring the transactional emails you built in your existing marketing platform into [!DNL Journey Optimizer] and convert them into API-triggered campaigns. [Learn more](../start/migrate-content-and-journeys.md#import-campaign-content)
+
+  Note that the migrating capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
+
+  Availability date: November 17, 2026
+
+  +++ Why it matters
+
+  **Why it helps:** Bring the transactional emails you built in your existing marketing platform into Journey Optimizer as API-triggered campaign drafts, instead of rebuilding them.
+
+  **How it works:** In the migration workspace, open the Campaigns tab and select Browse from connection to pick transactional emails from your connected marketing platform, then select Import. Each imported email becomes a draft: choose a configuration, a template, the tracking settings (opens, clicks or both) and the identity namespace under Audience, then select Migrate and View campaign. You can access the workspace from the Journey Optimizer home page.
+
+  **What you can do now:**
+
+  * Import transactional emails from a connected marketing platform.
+  * Convert each imported email into an API-triggered campaign draft that you review, complete and publish when ready.
+  * Track imported items in the workspace overview, where they show the Action required status until you complete the remaining steps.
+
+  **Good to know:** Limited Availability for a set of organizations; contact your Adobe representative for access. A connection to the source platform must be set up first. Migrating needs these permissions: Manage Campaigns, Manage Journeys, Manage Message, Manage Segments, Manage Library items, View and Manage sandboxes and Manage AJO integration configuration. Publish the new campaign to start sending.
+
+  **Status:** Limited Availability
+
+  +++
+
+### Decisioning {#nov-26-decisioning}
+
+<table>
+<thead>
+<tr>
+<th><strong>Profile and context features for Personalized optimization models (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now enrich Personalized optimization AI models with profile and context features, in addition to or instead of audiences. When creating an AI model, select up to 50 profile attributes from your profile schema, such as loyalty tier or churn propensity score, and up to 20 context attributes sent with the decision request, such as device type, language or page URL. Models use these signals to score decision items in real time and deliver more relevant offers. Context features are only available for decisioning policies used in inbound channels.
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p><img src="assets/do-not-localize/perso-optmization-model-profile-context.gif"></p>
+<p>For more information, refer to the <a href="../experience-decisioning/ranking/create-ai-models.md#create-ranking-strategy">detailed documentation</a>.</p>
+<p>Availability date: November 3, 2026</p>
+
++++ Why it matters
+
+**Why it helps:** Help models pick the most relevant offer for each profile by letting them learn from profile attributes and request context, not only from audiences.
+
+**How it works:** When you create a Personalized optimization AI model, click Manage profile features and Manage context features and save your selection, in addition to or instead of audiences. Profile attributes must exist in your profile schema, and context values come from the Web SDK or Mobile SDK and your datastream configuration. Use the model in a selection strategy and decision policy as usual.
+
+**What you can do now:**
+
+* Select up to 50 profile attributes, such as loyalty tier or churn propensity score, as model features.
+* Select context attributes sent with the decision request, such as device type, language or country code, with up to 20 added on top of the pre-selected ones.
+* Train a model on profile and context features without selecting any audience.
+* Pass context values in the decision request so that the model scores decision items in real time.
+
+**Good to know:** Limited Availability: contact your Adobe representative to gain access. During Limited Availability, add the features only when you create a new AI model; do not edit an existing model to add them. Context features are only available for decisioning policies used in inbound channels. Datetime, array and key-value pair attributes are not available as features. If applicable, data governance (DULE) policies are applied automatically to selected profile features.
+
+**Status:** Limited Availability
+
++++
+
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Decisioning item creation skill in Coworker** - You can now create decision items faster by describing what you need to Adobe CX Enterprise Coworker, which builds the item with you in chat. [Learn more](../experience-decisioning/experience-decisioning-coworker-skills.md#decisioning-offer-item-workflow)
+
+  <p>Availability date: November 2, 2026</p>
+
+  +++ Why it matters
+
+  **Why it helps:** Create decision items faster by describing what you need in chat, instead of filling in every field of the item creation form.
+
+  **How it works:** Describe the offer or item you want to Adobe CX Enterprise Coworker, and it builds the item with you in chat. Coworker can help you define labels or tags, eligibility based on an audience or an existing rule, schedule, frequency capping, content fragments and custom attributes.
+
+  **What you can do now:**
+
+  * Create a decision item from a description, for example a summer sale offer or a loyalty upgrade.
+  * Set eligibility, schedule and frequency capping on an item, using named web or email placements or custom PQL conditions for capping.
+  * Update, approve, unapprove, archive or permanently delete decision items.
+  * Create or update several items at once from a CSV file or a list.
+
+  **Good to know:** The skill does not author eligibility rules or manage catalogs, collections or selection strategies; use the Decisioning Rule Workflow for rules and ranking formulas. Review the created item before you approve it, and be explicit before deleting because permanent deletion cannot be undone. The documentation still carries open TO CONFIRM comments for availability date, permissions, supported item types, CSV format and size limits, and whether items are created in Draft status.
+
+  +++
+
+### Integrations {#nov-26-integrations}
+
+* **Dynamic token substitution for Experience Manager fragments** - Use attribute paths such as `{{profile.person.name.firstName}}` directly in Experience Manager Content Fragments, with no token map needed. This works only for fragments added directly to a message, not for fragments served through Experience Decisioning. [Learn more](../integrations/aem-fragments.md#aem-attribute-paths)
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
+
+  Availability date: November 5, 2026
+
+  +++ Why it matters
+
+  **Why it helps:** Personalize the text inside Experience Manager Content Fragments with profile data without passing a value for each token in the fragment reference.
+
+  **How it works:** Write attribute paths such as `{{profile.person.name.firstName}}` directly in the fields of a Content Fragment. They resolve automatically when the message is sent, with no token map needed, and you can mix them with flat tokens in the same field. To render profile attributes, add an Expression fragment that declares each attribute with the `let` syntax to the same message as an inline fragment.
+
+  **What you can do now:**
+
+  * Use attribute paths from the `profile`, `context` and `item` namespaces inside Content Fragment fields.
+  * Mix attribute paths with flat tokens, whose values still come from the token map, in the same field.
+  * Reuse one Expression fragment across messages that use the same Content Fragments.
+
+  **Good to know:** Available for organizations where it has been enabled; contact your Adobe representative to request access. It works only for Experience Manager fragments added directly to a message, not for fragments served through Experience Decisioning. Use the full attribute path as it appears in the schema; helpers, expressions, conditional blocks and PQL are not supported inside Content Fragments. Profile attributes that the Expression fragment does not declare render as empty; context and decision item attributes do not need it.
+
+  **Status:** Limited Availability
+
+  +++
 
 ## October '26  release notes {#oct-26-release-notes}
 
@@ -48,7 +255,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <p>For more information, refer to the <a href="../email/create-email.md#override-email-channel-configuration">detailed documentation</a>.</p>
 <p>Availability date: October 26, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** One channel configuration can serve many programs, regions or teams, while each journey or campaign still shows its own sender identity and reply routing. You do not need to create and maintain an extra channel configuration for every variation.
 
@@ -84,7 +291,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <p>For more information, refer to the <a href="../campaigns/api-triggered-high-throughput.md">detailed documentation</a>.</p>
 <p>Availability date: October 26, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** You can create the High throughput resources yourself in the product, which removes the wait for a manual setup of each resource.
 
@@ -127,7 +334,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <p>For more information, refer to the <a href="../custom-channel/get-started-custom-channel.md">detailed documentation</a>.</p>
 <p>Availability date: October 2, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Organizations can keep a delivery provider that Journey Optimizer does not support natively and still orchestrate, personalize and report on it in the same place as native channels. Administrators set the channel up without engineering involvement.
 
@@ -165,7 +372,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <p>For more information, refer to the <a href="../email/open-tracking-consent.md#existing-messages">detailed documentation</a>.</p>
 <p>Availability date: October 29, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Recipients who have not consented to open tracking can still receive the email, so compliance with open-tracking consent requirements does not cost you reach.
 
@@ -190,7 +397,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 2, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Administrators can set up a custom channel by chatting with Coworker instead of filling each setup step by hand, so a new messaging integration is faster to launch.
 
@@ -212,7 +419,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 28, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** When a communication must be demonstrably attempted, you can reach a locally suppressed address for that one send, without changing the suppression list or any other delivery.
 
@@ -246,7 +453,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <p>For more information, refer to the <a href="../reports/alerts.md#available-alerts">detailed documentation</a>.</p>
 <p>Availability date: October 29, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Get told about delivery problems, Read Audience export progress and event queueing as they happen, instead of finding them later in reports.
 
@@ -284,7 +491,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <p>For more information, refer to the <a href="../building-journeys/stop-action.md">detailed documentation</a>.</p>
 <p>Availability date: October 12, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Stop showing an inbound experience to a profile once it is no longer relevant, while the profile keeps moving through the journey.
 
@@ -319,7 +526,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 <p>For more information, refer to the <a href="../building-journeys/publish-journey.md#validate">detailed documentation</a>.</p>
 <p>Availability date: October 9, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Message checks no longer run on every autosave, so the canvas stays responsive while you build, and you choose when to run the full checks.
 
@@ -346,7 +553,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 13, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Connect custom actions to identity providers that accept client_secret_jwt, without registering an Adobe certificate.
 
@@ -367,7 +574,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 7, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Understand why a journey underperforms and get concrete changes to try, tied to the journey goal, without building reports yourself.
 
@@ -387,7 +594,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 20, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Keep your journey inventory clean by finding configuration problems and decaying journeys without opening each journey.
 
@@ -407,7 +614,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 22, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Answer where profiles went, who errored and why in a published journey, from Coworker chat.
 
@@ -427,7 +634,7 @@ This release brings several new and improved [Coworker](../start/ai-features.md#
 
   Availability date: October 26, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** See where time went in a Read Audience journey batch, from audience export to delivery, and which stage caused a delay.
 
@@ -509,7 +716,7 @@ The following improvements are coming to campaigns in this release.
 <p>For more information, refer to the <a href="../landing-pages/lp-anonymous.md">detailed documentation</a>.</p>
 <p>Availability date: October 28, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Public landing pages let you collect data from visitors you do not know yet, from one URL that you can place in any channel. This extends landing pages beyond recipients who arrive from a personalized link.
 
@@ -549,7 +756,7 @@ The following improvements are coming to campaigns in this release.
 <p>For more information, refer to the <a href="../administration/custom-metadata.md">detailed documentation</a>.</p>
 <p>Availability date: October 29, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Record your own business context, such as line of business, product or cost center, on journeys and campaigns so you can report on it and build audiences from it.
 
@@ -578,7 +785,7 @@ The following improvements are coming to campaigns in this release.
 
   Availability date: October 22, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Marketers can build and test eligibility rules and ranking formulas by describing them in plain language, so they do not need PQL expertise to get decisioning logic ready.
 
@@ -614,7 +821,7 @@ COMING SOON (hidden until next week)
 
   Availability date: October 1, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Loyalty insights can follow the metric your organization cares about most, and the datasets behind them are set in one place.
 
@@ -634,7 +841,7 @@ COMING SOON (hidden until next week)
 
   Availability date: October 1, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Streak rules are simpler to set up because only consecutive-day streaks are offered.
 
@@ -654,7 +861,7 @@ COMING SOON (hidden until next week)
 
   Availability date: October 1, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** You can build a challenge without worrying about losing edits and go straight to publishing.
 
@@ -720,7 +927,7 @@ The following capabilities and improvements are coming to content management in 
 <p>For more information, refer to the <a href="../content-management/url-validation.md">detailed documentation</a>.</p>
 <p>Availability date: September 30, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Broken or insecure links in a message reach your audience unless you catch them first. Validation in Simulate content flags them while you are still editing.
 
@@ -769,7 +976,7 @@ The following capabilities and improvements are coming to content management in 
 <p>For more information, refer to the <a href="../content-management/content-management-coworker-skills.md#content-management#ce-channel-content">detailed documentation</a>.</p>
 <p>Availability date: September 24, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** One Coworker plugin covers the path from campaign strategy to production-ready copy, images and email HTML, so you do not switch between separate tools.
 
@@ -805,7 +1012,7 @@ The following capabilities and improvements are coming to content management in 
 <p>For more information, refer to the <a href="../content-management/content-management-coworker-skills.md#content-management">detailed documentation</a>.</p>
 <p>Availability date: September 3, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** You can find and update Journey Optimizer content by asking Coworker in plain language, without leaving the conversation to browse the interface.
 
@@ -831,7 +1038,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 29, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** You can use your own large language model for translation and steer it with locale-specific guidelines, so translations follow your wording rules.
 
@@ -851,7 +1058,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 4, 2026 
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** You can make sure a visitor has agreed before the form is submitted, which is useful when the checkbox records consent.
 
@@ -870,7 +1077,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 1, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** An XDM field whose name matches a reserved keyword can make an expression fail validation. Knowing the longer list helps you check your schema and campaigns.
 
@@ -889,7 +1096,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 25, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Testing several variants is quicker when each one has a name and its controls are on its own card, so you can compare and adjust variants without extra menus.
 
@@ -910,7 +1117,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 22, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** A syntax error in a personalization expression can be fixed with AI help right where it is detected, so you do not search for the cause by hand.
 
@@ -940,7 +1147,7 @@ The following capabilities and improvements are coming to content management in 
 <p>For more information, refer to the <a href="../loyalty-challenges/loyalty-admin.md#event-mappings">detailed documentation</a>.</p>
 <p>Availability date: September 22, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** You can map your schema fields to loyalty event fields without writing a JSONata expression from scratch.
 
@@ -975,7 +1182,7 @@ The following capabilities and improvements are coming to content management in 
 <p>For more information, refer to the <a href="../loyalty-challenges/loyalty-performance.md#opportunities-view">detailed documentation</a>.</p>
 <p>Availability date: September 30, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** You can see where your loyalty program is losing ground and turn the suggested fix into a challenge without starting from a blank page.
 
@@ -1001,7 +1208,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 30, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Each member gets their own completion window from the day they opt in, instead of one program-wide end date for everyone.
 
@@ -1021,7 +1228,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 30, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** You can reuse challenge data in content cards for each stage of a challenge without custom code.
 
@@ -1040,7 +1247,7 @@ The following capabilities and improvements are coming to content management in 
   
   Availability date: September 1, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** You can run a challenge that never expires instead of picking an arbitrary end date.
 
@@ -1059,7 +1266,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 15, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Organizations on Healthcare Shield or Privacy and Security Shield no longer have a restriction on adopting Loyalty.
 
@@ -1077,7 +1284,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 30, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** You can check what a challenge is configured to do and how it performs in one place, without opening the editor.
 
@@ -1127,7 +1334,7 @@ The following capabilities and improvements are coming to content management in 
 <p>For more information, refer to the <a href="../building-journeys/journeys-coworker-skills.md#journey-analyze">detailed documentation</a>.</p>
 <p>Availability date: September 24, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Reviewing what changed between two journey versions no longer means opening both and comparing them node by node, which makes change review, audit and pre-publish checks faster and less error-prone, especially on complex journeys.
 
@@ -1160,7 +1367,7 @@ The following capabilities and improvements are coming to content management in 
 <p>For more information, refer to the <a href="../building-journeys/journeys-coworker-skills.md#journey-simulation">detailed documentation</a>.</p>
 <p>Availability date: September 23, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Validate a journey's logic conversationally in Coworker instead of setting up a simulation by hand, and read the results in the same chat.
 
@@ -1195,7 +1402,7 @@ The following capabilities and improvements are coming to content management in 
 <p>For more information, refer to the <a href="../building-journeys/journey-properties.md#performance-management">detailed documentation</a>.</p>
 <p>Availability date: September 1, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Measure the incremental lift of a journey, meaning its actual impact, by keeping a share of the audience out of it and comparing outcomes.
 
@@ -1232,7 +1439,7 @@ The following capabilities and improvements are coming to content management in 
 <p>For more information, refer to the <a href="../building-journeys/expression/generate-expression.md">detailed documentation</a>.</p>
 <p>Availability date: September 1, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Build journey expressions by describing them in plain language instead of writing expression code by hand.
 
@@ -1259,7 +1466,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 28, 2026.
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Test journeys that use a supplemental ID in simulation, so journeys with multiple re-entrance can be validated before going live.
 
@@ -1278,7 +1485,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 22, 2026.
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Connect journeys that start with an Audience Qualification to event-based start journeys, which was blocked before.
 
@@ -1298,7 +1505,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 18, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Run a recurring batch journey on fresh audience data, and avoid waiting when no wait is needed.
 
@@ -1319,7 +1526,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 15, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Validate the Path Experimentation paths of an Optimize activity in simulation instead of testing them only in a live journey.
 
@@ -1339,7 +1546,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 15, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Be warned when a live journey's traffic drops or deviates unexpectedly, so you can act before customers are affected.
 
@@ -1366,7 +1573,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 8, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Validate journeys that rely on Decisioning, including offers and decision policies, in simulation before they go live.
 
@@ -1386,7 +1593,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 2, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Find out whether a change in journey traffic is a real anomaly and what likely caused it, without building the analysis yourself.
 
@@ -1406,7 +1613,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 1, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Compute the gap between two dates directly in a journey expression instead of working it out outside the journey.
 
@@ -1426,7 +1633,7 @@ The following capabilities and improvements are coming to content management in 
 
 * **Internal error recovery timeout in Journey Properties** - Journey Properties now includes a **Set internal error recovery timeout** setting: by default, impacted journey events may be retried for up to 72 hours after a service interruption with no action needed. You can turn this setting on to control the replay window (0–72 hours) for time-sensitive journeys. The existing **Timeout or error** field has also been renamed to **Custom Action / Data source timeout** to avoid confusion between the two settings. [Learn more](../building-journeys/journey-properties.md#event-recovery-timeout)
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Control how long a time-sensitive journey retries events after a service interruption, so late replays do not reach customers when they are no longer relevant.
 
@@ -1445,7 +1652,7 @@ The following capabilities and improvements are coming to content management in 
 
   Availability date: September 1, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Rearrange a journey without deleting work: detach a branch, keep it on the canvas and reconnect it later elsewhere.
 
@@ -1479,7 +1686,7 @@ The following capabilities and improvements are coming to channels in this relea
 <p>For more information, refer to the <a href="../mobile-live/create-mobile-live.md">detailed documentation</a>.</p>
 <p>Availability date: September 30, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Reach Android users with the same real-time progress updates already available on iOS, so one Live activity channel covers both platforms.
 
@@ -1522,7 +1729,7 @@ The following capabilities and improvements are coming to channels in this relea
 <p>For more information, refer to the <a href="../push/design-push.md">detailed documentation</a>.</p>
 <p>Availability date: September 1, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Show longer Android push messages in full and control how images are displayed, instead of a single fixed layout with truncated text and cropped images.
 
@@ -1548,7 +1755,7 @@ The following capabilities and improvements are coming to channels in this relea
 
   Availability date: September 25, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Delegate far more subdomains when your license contract allows it, instead of stopping at the default cap.
 
@@ -1568,7 +1775,7 @@ The following capabilities and improvements are coming to channels in this relea
 
   Availability date: September 30, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Keep very large Direct Mail exports manageable without splitting files yourself.
 
@@ -1587,7 +1794,7 @@ The following capabilities and improvements are coming to channels in this relea
 
   Availability date: September 30, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Run Direct Mail campaigns on much larger audiences without the earlier error that prevented the file from being created.
 
@@ -1622,7 +1829,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <p>For more information, refer to the <a href="../email/content-components.md#dynamic-media-template">detailed documentation</a>.</p>
 <p>Availability date: September 30, 2026.</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Build personalized Dynamic Media content from a Photoshop file or an existing template without leaving the Email Designer.
 
@@ -1659,7 +1866,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <p>For more information, refer to the <a href="../email/email-collaboration.md">detailed documentation</a>.</p>
 <p>Availability date: September 25, 2026.</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Keep reviews and feedback on an email in one place, in the tool where it is built, instead of scattered across chat, email threads, or spreadsheets.
 
@@ -1694,7 +1901,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <p>For more information, refer to the <a href="../email/content-components.md#table">detailed documentation</a>.</p>
 <p>Availability date: September 24, 2026.</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Lay out content in rows and columns with a ready-made component instead of writing custom HTML.
 
@@ -1728,7 +1935,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <p>For more information, refer to the <a href="../email/apply-email-themes.md">detailed documentation</a>.</p>
 <p>Availability date: September 24, 2026.</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Make themed emails look right for recipients who read in dark mode, with one theme covering both light and dark.
 
@@ -1753,7 +1960,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 
   Availability date: September 25, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Avoid losing work while you design an email, since changes are saved without you clicking Save.
 
@@ -1784,7 +1991,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaigns" target="_blank">API reference on Adobe Developer</a>.</p>
 <p>Availability date: September 28, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Orchestrated campaign data can be read by your own tools, so external systems and automation pipelines do not depend on the user interface to follow executions.
 
@@ -1815,7 +2022,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <p>For more information, refer to the <a href="../orchestrated/start-monitor-campaigns.md#alerting">detailed documentation</a>.</p>
 <p>Availability date: September 22, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Orchestrated campaign problems reach you as notifications, so you do not have to keep checking the monitoring view to find out that something went wrong.
 
@@ -1849,7 +2056,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 <p>For more information, refer to the <a href="../orchestrated/activities/alert.md">detailed documentation</a>.</p>
 <p>Availability date: September 30, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** You decide which situations are worth an alert by placing the activity exactly where they occur in the flow, instead of relying only on the predefined system alerts.
 
@@ -1874,7 +2081,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 
   Availability date: October 2, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Campaigns that reach customers on LINE can be built and run in the same orchestrated campaign as the other channels, rather than in a separate tool.
 
@@ -1893,7 +2100,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 
   Availability date: September 28, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** When a batch audience is not what you expect, you can check whether the data behind it arrived, instead of guessing.
 
@@ -1913,7 +2120,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 
   Availability date: September 22, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** One email can show different content depending on a customer's related records, such as their purchases, not only on profile fields.
 
@@ -1932,7 +2139,7 @@ The following capabilities and improvements are coming to the Email Designer in 
 
   Availability date: September 22, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** You see the trade-offs of a collection condition before you build the query, which helps avoid queries that create high volumes or slow performance.
 
@@ -1957,7 +2164,7 @@ The following improvement is coming to campaigns in this release.
 
   Availability date: September 30, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Large campaign lists become easier to navigate because related campaigns can be grouped.
 
@@ -1989,7 +2196,7 @@ The following capabilities and improvements are coming to decisioning in this re
 <p>For more information, refer to the <a href="../experience-decisioning/use-decision-policy.md">detailed documentation</a>.</p>
 <p>Availability date: September 22, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Web campaigns and journeys can now pick the most relevant offer for each visitor through decision policies, in the same editor used to build the web content.
 
@@ -2023,7 +2230,7 @@ The following capabilities and improvements are coming to decisioning in this re
 <p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md#decisioning-explainer">detailed documentation</a>.</p>
 <p>Availability date: September 16, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Marketers can get an answer to why an offer was or was not shown without reading rules or formulas, which builds confidence when configuring offer logic.
 
@@ -2058,7 +2265,7 @@ The following capabilities and improvements are coming to decisioning in this re
 <p>For more information, refer to the <a href="../experience-decisioning/experience-decisioning-coworker-skills.md#rules-ranking">detailed documentation</a>.</p>
 <p>Availability date: September 16, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Marketers can create, understand and test eligibility rules and ranking formulas before they go live, without reading or writing PQL.
 
@@ -2084,7 +2291,7 @@ The following capabilities and improvements are coming to decisioning in this re
 
   Availability date: September 23, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Customers who run Adobe Experience Manager Managed Services can now map their Content Fragments to decision items, so they get the same fragment-driven decisioning as Cloud Service customers.
 
@@ -2103,7 +2310,7 @@ The following capabilities and improvements are coming to decisioning in this re
 
   Availability date: September 22, 2026
 
-  +++ Show me the value
+  +++ Why it matters
 
   **Why it helps:** Simulations run on real test-profile data instead of hand-typed values, which is faster and closer to what the decision will see.
 
@@ -2138,7 +2345,7 @@ The following improvement is coming to onboarding in this release.
 <p>For more information, refer to the <a href="../start/onboarding-hub.md">detailed documentation</a>.</p>
 <p>Availability date: September 23, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** An email that depends on content blocks no longer arrives without them, because the blocks it uses are listed for you to migrate with it.
 
@@ -2204,7 +2411,7 @@ The following capability is coming to reporting in this release.
 <p>For more information, refer to the <a href="../data/monitoring.md">detailed documentation</a>.</p>
 <p>Availability date: September 24, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Inbound traffic, latency and proposition events can be checked in the product, so a change in volume or speed is visible without a separate tool.
 
@@ -2240,7 +2447,7 @@ The following capabilities are coming to integrations in this release.
 <p>For more information, refer to the <a href="../integrations/integrations-browsing.md">detailed documentation</a>.</p>
 <p>Availability date: September 30, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Marketers pick an item from a list returned by an external API instead of typing its identifier, which avoids manual entry of parameter values.
 
@@ -2278,7 +2485,7 @@ The following capability and reminder apply to audiences in this release.
 <p>This capability is only available for a set of organizations (Limited Availability) and currently supports batch audience deliveries only. To gain access, contact your Adobe representative. </p>
 <p>Availability date: September 23, 2026</p>
 
-+++ Show me the value
++++ Why it matters
 
 **Why it helps:** Eligibility can depend on exactly what put a customer in an audience, such as the product or item that qualified them, without one audience per product or item variation.
 
