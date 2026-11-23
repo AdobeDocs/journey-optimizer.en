@@ -98,8 +98,6 @@ Decisioning Rule Workflow gives marketers AI-powered assistance for creating, un
 <tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Delete a rule or formula</strong><br>Remove an eligibility rule or ranking formula you no longer need.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Delete this rule."</td></tr>
 </table>
 
-<!-- TO CONFIRM (PM/dev): the use cases for finding, fixing, validating, capping expressions, and deleting come from the skill description in Coworker. Confirm they are live, and validate the sample prompts for fixing and validating. -->
-
 ### Prompting best practices
 
 * **Provide the target condition explicitly**: When creating or modifying a rule, state the exact audience, attribute, or exclusion condition you want.
@@ -110,13 +108,9 @@ Decisioning Rule Workflow gives marketers AI-powered assistance for creating, un
 
 ## Decisioning Offer Item Workflow {#decisioning-offer-item-workflow}
 
-<!-- TO CONFIRM (PM): availability date, permissions, and any limitations. Add an AVAILABILITY block here once confirmed. -->
-
 Decisioning Offer Item Workflow lets you create [decision items](items.md) faster by describing what you need to Coworker in chat. Coworker builds the item with you, so you don't have to manually fill in each field of the decision item creation form.
 
 When you describe an item, Coworker can help you define the item's labels or tags, eligibility (based on an audience or an existing rule), schedule, frequency capping, content fragments, and custom attributes. For frequency capping, you can use named web or email placements, or custom PQL conditions. You can also use the skill to update, approve, unapprove, archive, or permanently delete decision items, and to create or update several items at once from a CSV file or a list. To learn more about these settings, see [Create your first decision item](items.md).
-
-<!-- TO CONFIRM (PM/dev): supported item types, CSV/list format and size limits, and whether Coworker creates items in Draft status. -->
 
 Decisioning Offer Item Workflow does not author eligibility rules or manage catalogs, collections, or selection strategies. To create or edit eligibility rules and ranking formulas, use [Decisioning Rule Workflow](#rules-ranking).
 
@@ -133,8 +127,6 @@ Decisioning Offer Item Workflow does not author eligibility rules or manage cata
 <tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Manage existing decision items</strong><br>Update an item, change its approval status, archive it, or permanently delete it.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Approve the Summer Sale item."<br><br>"Move the Summer Sale item back to Draft."<br><br>"Archive this offer."</td></tr>
 <tr><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;"><strong>Create or update several items at once</strong><br>Provide a CSV file or a list to create or update multiple decision items in one conversation.</td><td style="padding: 12px; border: 1px solid #d9d9d9; vertical-align: top;">"Create decision items from this CSV file."<br><br>"Update the end date of these five items to December 31."</td></tr>
 </table>
-
-<!-- TO CONFIRM (PM/dev): sample prompts above are drafted from the skill description and the decision item documentation; validate them against the skill's actual behavior in Coworker. -->
 
 ### Prompting best practices
 

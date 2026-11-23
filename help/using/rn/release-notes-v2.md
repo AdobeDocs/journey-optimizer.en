@@ -190,7 +190,7 @@ This hidden page is a review copy of the September, October, and November 2026 r
   * Update, approve, unapprove, archive or permanently delete decision items.
   * Create or update several items at once from a CSV file or a list.
 
-  **Good to know:** The skill does not author eligibility rules or manage catalogs, collections or selection strategies; use the Decisioning Rule Workflow for rules and ranking formulas. Review the created item before you approve it, and be explicit before deleting because permanent deletion cannot be undone. The documentation still carries open TO CONFIRM comments for availability date, permissions, supported item types, CSV format and size limits, and whether items are created in Draft status.
+  **Good to know:** The skill does not author eligibility rules or manage catalogs, collections or selection strategies; use the Decisioning Rule Workflow for rules and ranking formulas. Review the created item before you approve it, and be explicit before deleting because permanent deletion cannot be undone.
 
   +++
 
