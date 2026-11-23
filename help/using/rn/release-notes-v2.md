@@ -2,16 +2,223 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Release notes v2 (review draft)
-description: Journey Optimizer release notes for September and October 2026 with Show me the value accordions, for review
+description: Journey Optimizer release notes for September, October, and November 2026 with Show me the value accordions, for review
 feature: Release Notes
 hide: yes
 hidefromtoc: yes
 ---
 # Release notes v2 (review draft) {#release-notes-v2}
 
-This hidden page is a review copy of the September and October 2026 release notes. Each feature and improvement carries a **Show me the value** accordion for PM, PMM, and Eng lead review. It is not part of the published release notes.
+This hidden page is a review copy of the September, October, and November 2026 release notes. Each feature and improvement carries a **Show me the value** accordion for PM, PMM, and Eng lead review. It is not part of the published release notes.
 
 <!-- All Show me the value accordions on this page are drafts until PM, PMM, and the Eng lead confirm them. -->
+
+## November '26 release notes {#nov-26-release-notes}
+
+### Journeys {#nov-26-journeys}
+
+<table>
+<thead>
+<tr>
+<th><strong>AI recommendation cards for journey alerts</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Spend less time investigating journey issues and get a head start on resolving them. When a <strong>Journey Custom Action failure</strong> or <strong>Journey Anomaly Detected</strong> alert fires, an <strong>AI Recommendations</strong> card on the Journey Optimizer home page highlights the issue. Select the card to review analysis and recommended next steps already prepared in Coworker, without having to request an investigation first. Continue the conversation to explore the findings and decide how to address the issue.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p><img src="assets/do-not-localize/ai-recommendations.gif"></p>
+<p>For more information, refer to the <a href="../start/user-interface.md#cx-enterprise-coworker">detailed documentation</a>.</p>
+<p>Availability date: November 16, 2026</p>
+
++++ Show me the value
+
+**Why it helps:** Get a head start on journey issues, because the analysis and recommended next steps are already prepared in Coworker when an alert fires.
+
+**How it works:** On the Journey Optimizer home page, the AI Recommendations panel shows a card when a Journey Custom Action failure or Journey Anomaly Detected alert fires. Select the card to open Coworker with the analysis and recommended next steps already prepared, without requesting an investigation first. AI monitoring is disabled by default: select Enable in the AI Recommendations panel.
+
+**What you can do now:**
+
+* Spot a custom action failure or a journey anomaly from a card on the home page.
+* Review the prepared analysis and recommended next steps in Coworker without requesting an investigation.
+* Continue the conversation in Coworker to explore the findings and decide how to address the issue.
+
+**Good to know:** Limited Availability for a set of organizations; contact your Adobe representative for access. The feature surfaces recommendations only and does not resolve the issue automatically. AI monitoring must be enabled from the AI Recommendations panel.
+
+**Status:** Limited Availability
+
++++
+
+</td>
+</tr>
+</tbody>
+</table>
+
+### Campaigns {#nov-26-orchestrated-campaigns}
+
+<table>
+<thead>
+<tr>
+<th><strong>Orchestrated campaigns skills in Coworker</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now find and inspect orchestrated campaigns conversationally from the Coworker chat interface. This release covers three read-only skills:</p>
+<ul>
+<li><p><strong>Orchestrated Campaign List</strong>: list, filter, and count campaigns, for example by status or channel.</p></li>
+<li><p><strong>Orchestrated Campaign Get</strong>: retrieve a specific campaign's details, lifecycle history, and execution history, and visualize its activity graph.</p></li>
+<li><p><strong>Orchestrated Campaign Workflow Renderer</strong>: render a workflow graph as a visual diagram.</p></li>
+</ul>
+<p>This provides teams with live visibility into campaign data without requiring API access or navigation through the Journey Optimizer user interface. Creating, editing, or publishing campaigns via Coworker is not yet supported.</p>
+<p>For more information, refer to the <a href="../orchestrated/orchestrated-campaigns-coworker-skills.md">detailed documentation</a>.</p>
+<p>Availability date: November 3, 2026</p>
+
++++ Show me the value
+
+**Why it helps:** Find and inspect orchestrated campaigns by asking Coworker, without API access or navigating the Journey Optimizer interface.
+
+**How it works:** Ask in the Coworker chat. Orchestrated Campaign List lists, filters and counts campaigns, for example by status or channel. Orchestrated Campaign Get retrieves a named campaign's details, lifecycle history, execution history and activity graph. Orchestrated Campaign Workflow Renderer renders a workflow graph payload that is already in the conversation as a diagram.
+
+**What you can do now:**
+
+* List and filter orchestrated campaigns, for example the live ones or the ones created by a given user.
+* Count campaigns that match a criterion, such as how many use email.
+* Review a campaign's details, lifecycle history and execution history, including whether it failed.
+* Visualize a campaign's activity graph.
+
+**Good to know:** All three skills are read-only. Creating, editing or publishing campaigns through Coworker is not supported, and campaign analytics and performance reporting are not supported. The documentation still lists required permissions and availability as to be confirmed.
+
++++
+
+</td>
+</tr>
+</tbody>
+</table>
+
++++ Coming soon — **Information below is subject to change.**
+
+* **Increased message activity limit** - Orchestrated campaigns now support up to **25 message actions** on a single canvas, up from the previous limit of 10. This allows complex cross-channel orchestrations, spanning email, push, SMS, and other channels, to be built and managed as a single campaign rather than split across multiple smaller ones.
+
+  For enterprise teams running sophisticated multi-step programs, this reduces operational overhead and simplifies publication and rollback handling when managing large campaign launches.
+
++++
+
+### Onboarding {#nov-26-onboarding}
+
+* **Migrate transactional email campaigns to Journey Optimizer** - The migration workspace now supports **Campaigns**. You can bring the transactional emails you built in your existing marketing platform into [!DNL Journey Optimizer] and convert them into API-triggered campaigns. [Learn more](../start/migrate-content-and-journeys.md#import-campaign-content)
+
+  Note that the migrating capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
+
+  Availability date: November 17, 2026
+
+  +++ Show me the value
+
+  **Why it helps:** Bring the transactional emails you built in your existing marketing platform into Journey Optimizer as API-triggered campaign drafts, instead of rebuilding them.
+
+  **How it works:** In the migration workspace, open the Campaigns tab and select Browse from connection to pick transactional emails from your connected marketing platform, then select Import. Each imported email becomes a draft: choose a configuration, a template, the tracking settings (opens, clicks or both) and the identity namespace under Audience, then select Migrate and View campaign. You can access the workspace from the Journey Optimizer home page.
+
+  **What you can do now:**
+
+  * Import transactional emails from a connected marketing platform.
+  * Convert each imported email into an API-triggered campaign draft that you review, complete and publish when ready.
+  * Track imported items in the workspace overview, where they show the Action required status until you complete the remaining steps.
+
+  **Good to know:** Limited Availability for a set of organizations; contact your Adobe representative for access. A connection to the source platform must be set up first. Migrating needs these permissions: Manage Campaigns, Manage Journeys, Manage Message, Manage Segments, Manage Library items, View and Manage sandboxes and Manage AJO integration configuration. Publish the new campaign to start sending.
+
+  **Status:** Limited Availability
+
+  +++
+
+### Decisioning {#nov-26-decisioning}
+
+<table>
+<thead>
+<tr>
+<th><strong>Profile and context features for Personalized optimization models (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now enrich Personalized optimization AI models with profile and context features, in addition to or instead of audiences. When creating an AI model, select up to 50 profile attributes from your profile schema, such as loyalty tier or churn propensity score, and up to 20 context attributes sent with the decision request, such as device type, language or page URL. Models use these signals to score decision items in real time and deliver more relevant offers. Context features are only available for decisioning policies used in inbound channels.
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p><img src="assets/do-not-localize/perso-optmization-model-profile-context.gif"></p>
+<p>For more information, refer to the <a href="../experience-decisioning/ranking/create-ai-models.md#create-ranking-strategy">detailed documentation</a>.</p>
+<p>Availability date: November 3, 2026</p>
+
++++ Show me the value
+
+**Why it helps:** Help models pick the most relevant offer for each profile by letting them learn from profile attributes and request context, not only from audiences.
+
+**How it works:** When you create a Personalized optimization AI model, click Manage profile features and Manage context features and save your selection, in addition to or instead of audiences. Profile attributes must exist in your profile schema, and context values come from the Web SDK or Mobile SDK and your datastream configuration. Use the model in a selection strategy and decision policy as usual.
+
+**What you can do now:**
+
+* Select up to 50 profile attributes, such as loyalty tier or churn propensity score, as model features.
+* Select context attributes sent with the decision request, such as device type, language or country code, with up to 20 added on top of the pre-selected ones.
+* Train a model on profile and context features without selecting any audience.
+* Pass context values in the decision request so that the model scores decision items in real time.
+
+**Good to know:** Limited Availability: contact your Adobe representative to gain access. During Limited Availability, add the features only when you create a new AI model; do not edit an existing model to add them. Context features are only available for decisioning policies used in inbound channels. Datetime, array and key-value pair attributes are not available as features. If applicable, data governance (DULE) policies are applied automatically to selected profile features.
+
+**Status:** Limited Availability
+
++++
+
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Decisioning item creation skill in Coworker** - You can now create decision items faster by describing what you need to Adobe CX Enterprise Coworker, which builds the item with you in chat. [Learn more](../experience-decisioning/experience-decisioning-coworker-skills.md#decisioning-offer-item-workflow)
+
+  <p>Availability date: November 2, 2026</p>
+
+  +++ Show me the value
+
+  **Why it helps:** Create decision items faster by describing what you need in chat, instead of filling in every field of the item creation form.
+
+  **How it works:** Describe the offer or item you want to Adobe CX Enterprise Coworker, and it builds the item with you in chat. Coworker can help you define labels or tags, eligibility based on an audience or an existing rule, schedule, frequency capping, content fragments and custom attributes.
+
+  **What you can do now:**
+
+  * Create a decision item from a description, for example a summer sale offer or a loyalty upgrade.
+  * Set eligibility, schedule and frequency capping on an item, using named web or email placements or custom PQL conditions for capping.
+  * Update, approve, unapprove, archive or permanently delete decision items.
+  * Create or update several items at once from a CSV file or a list.
+
+  **Good to know:** The skill does not author eligibility rules or manage catalogs, collections or selection strategies; use the Decisioning Rule Workflow for rules and ranking formulas. Review the created item before you approve it, and be explicit before deleting because permanent deletion cannot be undone. The documentation still carries open TO CONFIRM comments for availability date, permissions, supported item types, CSV format and size limits, and whether items are created in Draft status.
+
+  +++
+
+### Integrations {#nov-26-integrations}
+
+* **Dynamic token substitution for Experience Manager fragments** - Use attribute paths such as `{{profile.person.name.firstName}}` directly in Experience Manager Content Fragments, with no token map needed. This works only for fragments added directly to a message, not for fragments served through Experience Decisioning. [Learn more](../integrations/aem-fragments.md#aem-attribute-paths)
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. 
+
+  Availability date: November 5, 2026
+
+  +++ Show me the value
+
+  **Why it helps:** Personalize the text inside Experience Manager Content Fragments with profile data without passing a value for each token in the fragment reference.
+
+  **How it works:** Write attribute paths such as `{{profile.person.name.firstName}}` directly in the fields of a Content Fragment. They resolve automatically when the message is sent, with no token map needed, and you can mix them with flat tokens in the same field. To render profile attributes, add an Expression fragment that declares each attribute with the `let` syntax to the same message as an inline fragment.
+
+  **What you can do now:**
+
+  * Use attribute paths from the `profile`, `context` and `item` namespaces inside Content Fragment fields.
+  * Mix attribute paths with flat tokens, whose values still come from the token map, in the same field.
+  * Reuse one Expression fragment across messages that use the same Content Fragments.
+
+  **Good to know:** Available for organizations where it has been enabled; contact your Adobe representative to request access. It works only for Experience Manager fragments added directly to a message, not for fragments served through Experience Decisioning. Use the full attribute path as it appears in the schema; helpers, expressions, conditional blocks and PQL are not supported inside Content Fragments. Profile attributes that the Expression fragment does not declare render as empty; context and decision item attributes do not need it.
+
+  **Status:** Limited Availability
+
+  +++
 
 ## October '26  release notes {#oct-26-release-notes}
 
