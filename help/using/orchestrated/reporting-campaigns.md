@@ -33,7 +33,7 @@ subfeature_v2:
 
 >[!CAUTION]
 >
->Avoid renaming an Orchestrated campaign after you publish it. The all time report filters on the current name, while earlier data stays under the original name, so the report can show no data for the period before the rename. To retrieve it, rename the campaign back or select the original name in the report filter. 
+>Currently, the report data is tied to the name of the Orchestrated campaign. If you rename a campaign after you publish it, the effect on the reports depends on when the name changes. For example, data recorded before the rename can remain under the original name, while data recorded afterward appears under the new name, so the all time report can display only part of the data. To avoid this, do not rename a published campaign.
 >
 >A fix will be introduced in a future release.
 
