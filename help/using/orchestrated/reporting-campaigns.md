@@ -31,6 +31,12 @@ subfeature_v2:
 
 >[!ENDSHADEBOX]
 
+>[!CAUTION]
+>
+>Avoid renaming an Orchestrated campaign after you publish it. The all time report filters on the current name, while earlier data stays under the original name, so the report can show no data for the period before the rename. To retrieve it, rename the campaign back or select the original name in the report filter. 
+>
+>A fix will be introduced in a future release.
+
 Orchestrated campaign offers you actionable insights through its robust reporting capabilities. These insights help you better understand audience behavior, measure the performance of each step in your customer journey, and make data-driven decisions to optimize future campaigns. With detailed metrics and visualizations, you can track engagement and fine-tune your targeting strategies for maximum impact.
 
 ![](assets/report-orchestrated.png)
@@ -54,6 +60,7 @@ Orchestrated campaign offers you actionable insights through its robust reportin
     </tr>
   </tbody>
 </table>
+
 
 ## Dive into Channel reports
 
