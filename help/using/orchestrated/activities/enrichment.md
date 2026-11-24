@@ -59,7 +59,14 @@ Follow these steps to configure the **Enrichment** activity:
     * [Collection link](#collection-link)
 
     ![](../assets/enrichment-1.png)
- 
+
+
+    >[!NOTE]
+    >
+    >You can enrich your audience with the [execution metadata](../../personalization/functions/helpers.md#execution-metadata) of previous messages. Use the map functions to retrieve the value of a key. [Learn more](../edit-expressions.md#map)
+    >
+    >This capability is in Limited Availability. Contact your Adobe representative to gain access.
+
 1. Click **[!UICONTROL Add link]** to create a link between the working table data and Adobe Journey Optimizer. [Learn more](#create-links)
 
     For example, if you load data from a file containing customer loyalty tier and last purchase date, you need to create a link to the profiles table to enrich recipient records with these attributes and use them for personalization or targeting.

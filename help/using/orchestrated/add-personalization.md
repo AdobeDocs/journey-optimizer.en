@@ -82,3 +82,19 @@ Hello number of Items: {%= count(target.enrichment.purchases.price) %} , Name of
 ```
 
 ➡️ [Learn how to configure collection enrichment on the canvas](activities/enrichment.md#collection-personalization)
+
+## Use execution metadata {#execution-metadata}
+
+>[!AVAILABILITY]
+>
+>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+You can personalize in your messages with the [execution metadata](../personalization/functions/helpers.md#execution-metadata) of previous messages.
+
+To do so, enrich your audience with an individual key of the map, with a function such as `MapGetString`, then use the resulting field. [Learn more on map functions](edit-expressions.md#map)
+
+You can use the enriched field anywhere in your personalization, including in conditional content.
+
+>[!NOTE]
+>
+>You cannot use the metadata map itself in personalization. Always enrich your audience with a field of the map first.

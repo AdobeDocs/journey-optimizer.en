@@ -401,6 +401,65 @@ The geomarketing functions are used to manipulate geographical values.
  </tbody> 
 </table>
 
+### Map {#map}
+
+The map functions are used to retrieve data from a map, a list of key-value pairs, such as the [execution metadata](../personalization/functions/helpers.md#execution-metadata) added to your messages. This allows you, for example, to [retarget recipients](retarget.md#feedback-metadata) based on the execution metadata of a previous message.
+
+<table> 
+ <tbody> 
+  <tr> 
+   <td> <strong>Name</strong><br /> </td> 
+   <td> <strong>Description</strong><br /> </td> 
+   <td> <strong>Syntax</strong><br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <strong>MapGetBool</strong><br /> </td> 
+   <td> Returns the map value for the given key coerced to a boolean, or false if the map is null, the key is absent, or its value is null or not a boolean. Use MapHasKey to tell an absent key from false.<br /><br /> <strong>Usage notes</strong><br /> The input argument must be a string expression. The function evaluates the string expression in the following way:
+    <ul>
+     <li> <code>true</code>, <code>t</code>, <code>yes</code>, <code>y</code>, <code>on</code>, <code>1</code> return TRUE.</li>
+     <li> <code>false</code>, <code>f</code>, <code>no</code>, <code>n</code>, <code>off</code>, <code>0</code> return FALSE.</li>
+     <li> All other strings return NULL.</li>
+    </ul>
+    The evaluations of the strings are case-insensitive.<br /> </td> 
+   <td> MapGetBool(&lt;Map&gt;, &lt;Key&gt;)<br /> </td>  
+  </tr> 
+  <tr> 
+   <td> <strong>MapGetLong</strong><br /> </td> 
+   <td> Returns the map value for the given key coerced to a long, or 0 if the map is null, the key is absent, or its value is null, not numeric or outside the long range (-2147483648 to 2147483647). Use MapHasKey to tell an absent key from 0.<br /> </td> 
+   <td> MapGetLong(&lt;Map&gt;, &lt;Key&gt;)<br /> </td>  
+  </tr> 
+  <tr> 
+   <td> <strong>MapGetString</strong><br /> </td> 
+   <td> Returns the map value for the given key as a string, or null if the map is null, the key is absent, or its value is null.<br /> </td> 
+   <td> MapGetString(&lt;Map&gt;, &lt;Key&gt;)<br /> </td>  
+  </tr> 
+  <tr> 
+   <td> <strong>MapHasKey</strong><br /> </td> 
+   <td> Returns true when the given key is present in the map, also when its value is null.<br /> </td> 
+   <td> MapHasKey(&lt;Map&gt;, &lt;Key&gt;)<br /> </td>  
+  </tr> 
+ </tbody> 
+</table>
+
+For example, to retrieve the value of the `campaign_type` key in the execution metadata of a Message Feedback event:
+
+```
+MapGetString(metadata, 'campaign_type')
+```
+
+#### Operators for map attributes {#map-operators}
+
+When you build a condition on an attribute that is a map, such as the **metadata** attribute of the **Message Feedback** link, enter the key, then select one of the following operators.
+
+| Operator | Description |
+|---|---|
+| **equal to** | The key exists and its value is equal to the value you enter. |
+| **not equal to** | The value of the key is not equal to the value you enter. |
+| **key exists** | The key exists, whatever its value. |
+| **key does not exist** | The key does not exist. |
+| **contains** | The value of the key contains the value you enter. |
+| **does not contain** | The value of the key does not contain the value you enter. |
+
 ### Numeric
 
 The numeric functions are used to convert text to numbers. 

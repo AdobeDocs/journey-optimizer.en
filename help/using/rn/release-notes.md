@@ -105,6 +105,12 @@ Each month, [!DNL Adobe Journey Optimizer] delivers usability improvements to ma
 </tbody>
 </table>
 
+* **Retarget recipients using execution metadata** - In orchestrated campaigns, you can now retarget recipients based on the execution metadata of a previous message. New map functions are also available to retrieve metadata values in your expressions. [Learn more](../orchestrated/retarget.md#feedback-metadata)
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+  Availability date: November 24, 2026
+
 +++ Coming soon — **Information below is subject to change.**
 
 * **Increased message activity limit** - Orchestrated campaigns now support up to **25 message actions** on a single canvas, up from the previous limit of 10. This allows complex cross-channel orchestrations, spanning email, push, SMS, and other channels, to be built and managed as a single campaign rather than split across multiple smaller ones.

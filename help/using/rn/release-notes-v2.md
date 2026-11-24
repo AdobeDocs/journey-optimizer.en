@@ -98,6 +98,30 @@ This hidden page is a review copy of the September, October, and November 2026 r
 </tbody>
 </table>
 
+* **Retarget recipients using execution metadata** - In orchestrated campaigns, you can now retarget recipients based on the execution metadata of a previous message. New map functions are also available to retrieve metadata values in your expressions. [Learn more](../orchestrated/retarget.md#feedback-metadata)
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+  Availability date: November 24, 2026
+
+  +++ Why it matters
+
+  **Why it helps:** Follow up with the right recipients based on custom information that you attached to a previous message, not only on its delivery status.
+
+  **How it works:** Add the **metadata** attribute of the **Message Feedback** link to a retargeting condition, enter the key as written in the `executionMetadata` helper, then select an operator. In expressions, use the map functions to retrieve a value.
+
+  **What you can do now:**
+
+  * Retarget recipients of a message that carries a given key, or a given value for that key.
+  * Combine metadata conditions with delivery status, campaign name, or campaign ID conditions.
+  * Use `MapGetString`, `MapGetLong`, `MapGetBool` and `MapHasKey` in expressions.
+
+  **Good to know:** The key is entered as free text, so it must match the helper exactly.
+
+  **Status:** Limited Availability
+
+  +++
+
 +++ Coming soon — **Information below is subject to change.**
 
 * **Increased message activity limit** - Orchestrated campaigns now support up to **25 message actions** on a single canvas, up from the previous limit of 10. This allows complex cross-channel orchestrations, spanning email, push, SMS, and other channels, to be built and managed as a single campaign rather than split across multiple smaller ones.

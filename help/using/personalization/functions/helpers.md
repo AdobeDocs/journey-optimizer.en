@@ -396,9 +396,7 @@ Upon runtime, the metadata value is added to the existing **[!UICONTROL Message 
 }
 ```
 
->[!NOTE]
->
->Learn more on datasets in [this section](../../data/get-started-datasets.md).
+Learn more on datasets in [this section](../../data/get-started-datasets.md).
 
 **Limitations**
 
@@ -420,6 +418,12 @@ In this example, assuming `profile.person.name.firstName` = "Alex", the resultin
   "value": "Alex"
 }
 ```
+
+>[!NOTE]
+>
+>In Orchestrated campaigns, you can also use execution metadata in queries and in personalization, for example to send a follow-up message to the recipients who received a message tagged with a given campaign ID. [Learn more](../../orchestrated/retarget.md#feedback-metadata)
+>
+>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 ## Encrypt {#url-parameter-encryption-helper}
 

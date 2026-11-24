@@ -99,6 +99,12 @@ Follow these steps to configure the **[!UICONTROL Split]** activity:
 
         ![](../assets/orchestrated-split-1.png)
 
+        >[!NOTE]
+        >
+        >You can filter a subset on the [execution metadata](../../personalization/functions/helpers.md#execution-metadata) of previous messages. [Learn more](../edit-expressions.md#map-operators)
+        >
+        >This capability is in Limited Availability. Contact your Adobe representative to gain access.
+
     1. In the **[!UICONTROL Segment code]** field, enter a code to identify the subset in logs. This code is stored alongside the profile data and can be used to track and measure the performance of each segment. If left empty, the subset label is used automatically.
 
     1. To limit the number of selected profiles, enable **[!UICONTROL Enable limit]** and specify a number or percentage.

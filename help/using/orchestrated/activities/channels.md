@@ -243,8 +243,13 @@ When creating conditional content for an email delivery, you can use **[!UICONTR
 
 ➡️ [Learn how to create conditional content in the Email Designer](../../personalization/dynamic-content.md#emails).
 
-
 ![](../assets/conditional-content-target.png)
+
+>[!NOTE]
+>
+>In conditional content, you can use the [execution metadata](../../personalization/functions/helpers.md#execution-metadata) of previous messages. To do so, select an individual key of the execution metadata map, not the map itself. For example, to show content only to recipients who received a given offer in a previous campaign, select the `offerCode` key and compare its value. [Learn more on map functions](../edit-expressions.md#map)
+>
+>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 ### Check and test your content {#simulate-content-test-profiles}
 

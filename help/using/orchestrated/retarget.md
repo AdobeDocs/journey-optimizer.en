@@ -35,7 +35,7 @@ Retargeting allows you to follow up with recipients based on how they responded 
 
 **[!UICONTROL Orchestrated campaign]** provides two main schemas for this:
 
-* **[!UICONTROL Message Feedback]**: captures delivery-related events, e.g. message sent, opened, bounced, etc.
+* **[!UICONTROL Message Feedback]**: captures delivery-related events, e.g. message sent, opened, bounced, etc. It also stores the execution metadata added to your messages, which you can [use to target recipients](#feedback-metadata) (Limited Availability).
 * **[!UICONTROL Email Tracking]**: captures user actions, e.g. clicks and opens.
 
 ![](assets/do-not-localize/retarget-schema.png){zoomable="yes"}
@@ -71,62 +71,83 @@ Using this data, you can define rules to identify recipients who received a prev
 
     ![](assets/retarget_1.png){zoomable="yes"}
 
-1. Choose the **[!UICONTROL Feedback Status]** attribute to target message delivery events.
+Once the **Message Feedback Exists such as** condition is created, add conditions linked to the **[!UICONTROL Message feedback]** attribute to define which messages to target. Choose among the following options, and combine them as needed.
 
-   +++ Detailed step-by-step
+### Target a delivery status {#feedback-status}
 
-   1. Add another condition linked to the **[!UICONTROL Message feedback]** attribute.
+Use the **[!UICONTROL Feedback Status]** attribute to target message delivery events.
 
-   1. Search for the **[!UICONTROL Feedback Status]** attribute and click **[!UICONTROL Confirm]**.
+1. Add another condition linked to the **[!UICONTROL Message feedback]** attribute.
 
-      ![](assets/retarget_3.png){zoomable="yes"}
+1. Search for the **[!UICONTROL Feedback Status]** attribute and click **[!UICONTROL Confirm]**.
 
-   1. In the **[!UICONTROL Custom condition]** menu, choose which delivery status to track in the **[!UICONTROL Value]** drop-down. 
+   ![](assets/retarget_3.png){zoomable="yes"}
 
-      ![](assets/retarget_4.png){zoomable="yes"}
+1. In the **[!UICONTROL Custom condition]** menu, choose which delivery status to track in the **[!UICONTROL Value]** drop-down. 
 
-   +++
+   ![](assets/retarget_4.png){zoomable="yes"}
 
-1. Choose the **[!UICONTROL Orchestrated Campaign Name]** attribute to target a specific Orchestrated campaign.
+### Target a specific Orchestrated campaign {#feedback-campaign-name}
 
-    +++ Detailed step-by-step
+Use the **[!UICONTROL Orchestrated Campaign Name]** attribute to target a specific Orchestrated campaign.
 
-   1. Add another condition linked to the **[!UICONTROL Message feedback]** attribute, search for **[!UICONTROL entity]**, and navigate to:
+1. Add another condition linked to the **[!UICONTROL Message feedback]** attribute, search for **[!UICONTROL entity]**, and navigate to:
 
-         `_experience > CustomerJourneyManagement > Entities > AJO Orchestrated Campaign entity`.
+   `_experience > CustomerJourneyManagement > Entities > AJO Orchestrated Campaign entity`.
 
-   1. Select **[!UICONTROL Orchestrated Campaign Name]**.
+1. Select **[!UICONTROL Orchestrated Campaign Name]**.
 
-      ![](assets/retarget_5.png){zoomable="yes"}
+   ![](assets/retarget_5.png){zoomable="yes"}
 
-   1. In the **[!UICONTROL Custom condition]** menu, specify the campaign name in the **[!UICONTROL Value]** field.
+1. In the **[!UICONTROL Custom condition]** menu, specify the campaign name in the **[!UICONTROL Value]** field.
 
-   +++
+### Target a specific message or activity {#feedback-action-name}
 
-1. Choose the **[!UICONTROL Orchestrated Campaign Action Name]** attribute to target a specific message or activity within an Orchestrated campaign.
+Use the **[!UICONTROL Orchestrated Campaign Action Name]** attribute to target a specific message or activity within an Orchestrated campaign.
 
-   +++ Detailed step-by-step
+1. Add another condition linked to the **[!UICONTROL Message feedback]** attribute, search for **[!UICONTROL entity]**, and navigate to:
 
-   1. Add another condition linked to the **[!UICONTROL Message feedback]** attribute, search for **[!UICONTROL entity]**, and navigate to:
+   `_experience > CustomerJourneyManagement > Entities > AJO Orchestrated Campaign entity`.
 
-      `_experience > CustomerJourneyManagement > Entities > AJO Orchestrated Campaign entity`.
+1. Select **[!UICONTROL Orchestrated Campaign Action Name]**.
 
-   1. Select **[!UICONTROL Orchestrated Campaign Action Name]**.
+   ![](assets/retarget_6.png){zoomable="yes"}
 
-      ![](assets/retarget_6.png){zoomable="yes"}
+1. In the **[!UICONTROL Custom condition]** menu, specify the campaign action name in the **[!UICONTROL Value]** field.
 
-   1. In the **[!UICONTROL Custom condition]** menu, specify the campaign action name in the **[!UICONTROL Value]** field.
+   Action names can be found by clicking the ![Information icon](assets/do-not-localize/info-icon.svg) next to the Label field of your activity.
 
-      Action names can be found by clicking the ![Information icon](assets/do-not-localize/info-icon.svg) next to the Label field of your activity.
-   
-   +++
+### Target a campaign ID {#feedback-campaign-id}
 
-1. Alternatively, you can also filter by the **[!UICONTROL Campaign ID]** (UUID), which can be found in your Campaign properties.
+You can also filter by the **[!UICONTROL Campaign ID]** (UUID), which can be found in your Campaign properties.
 
-You have now configured a Feedback-based retargeting rule to identify recipients based on the delivery status of a previous message such as sent, opened, bounced, or marked as spam. With this audience defined, you can either add a follow-up email or further refine your targeting by [configuring a Tracking-based retargeting rule](#tracking-based), which uses user interaction data.
+### Target execution metadata {#feedback-metadata}
+
+>[!AVAILABILITY]
+>
+>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+If your messages carry execution metadata, you can target them by the key-value pairs that you added with the [`executionMetadata` helper function](../personalization/functions/helpers.md#execution-metadata).
+
+1. Add another condition linked to the **[!UICONTROL Message feedback]** attribute and navigate to:
+
+   `Recipients > message_feedback > _experience > customerJourneyManagement > messageExecution > metadata`.
+
+   ![](assets/retarget_metadata.png){zoomable="yes"}
+
+1. Click **[!UICONTROL Confirm]**. This attribute is a map, a list of key-value pairs, so your condition is based on a key.
+
+1. In the **[!UICONTROL Custom condition]** menu, enter the metadata key, as it is written in the helper function, for example `campaign_type`.
+
+1. Select an operator, then enter the value to compare, if needed. [Learn more about the operators for map attributes](edit-expressions.md#map-operators)
+
+   ![](assets/retarget_metadata_condition.png){zoomable="yes"}
+
+### Next steps {#feedback-next-steps}
+
+You have now configured a Feedback-based retargeting rule to identify recipients based on the delivery status or the execution metadata of a previous message, such as sent, opened, bounced, or marked as spam. With this audience defined, you can either add a follow-up email or further refine your targeting by [configuring a Tracking-based retargeting rule](#tracking-based), which uses user interaction data.
 
 ![](assets/retarget_9.png){zoomable="yes"}
-
 
 ## Create a Tracking-based retargeting rule {#tracking-based}
 
