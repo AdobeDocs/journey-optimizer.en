@@ -31,6 +31,12 @@ subfeature_v2:
 
 >[!ENDSHADEBOX]
 
+>[!CAUTION]
+>
+>Currently, the report data is tied to the name of the Orchestrated campaign. If you rename a campaign after you publish it, the effect on the reports depends on when the name changes. For example, data recorded before the rename can remain under the original name, while data recorded afterward appears under the new name, so the all time report can display only part of the data. To avoid this, do not rename a published campaign.
+>
+>A fix will be introduced in a future release.
+
 Orchestrated campaign offers you actionable insights through its robust reporting capabilities. These insights help you better understand audience behavior, measure the performance of each step in your customer journey, and make data-driven decisions to optimize future campaigns. With detailed metrics and visualizations, you can track engagement and fine-tune your targeting strategies for maximum impact.
 
 ![](assets/report-orchestrated.png)
@@ -54,6 +60,7 @@ Orchestrated campaign offers you actionable insights through its robust reportin
     </tr>
   </tbody>
 </table>
+
 
 ## Dive into Channel reports
 
