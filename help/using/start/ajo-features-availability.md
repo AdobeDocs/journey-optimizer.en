@@ -40,7 +40,7 @@ level_v2:
 
 This page consolidates feature availability across [!DNL Adobe Journey Optimizer] so you can confirm what you can use during pre-implementation scoping. Features are grouped by capability area. Within each area, every feature lists its current lifecycle status, the base offer it applies to, the date it became available, and any notes about configuration or regional restrictions.
 
-Rows marked **Core capability** in the *Available since* column are long-standing, foundational features that have been generally available since before 2026. Dated rows reflect changes shipped in 2025 and 2026.
+Rows marked **Core capability** in the *Available since* column are long-standing, foundational features that have been generally available since before 2026. Dated rows reflect changes shipped in 2026.
 
 >[!IMPORTANT]
 >
@@ -163,6 +163,7 @@ All Decisioning features require the **Decisioning** add-on. See [Packages and c
 
 | Feature | Status | Applies to | Available since | Notes |
 |---------|--------|-----------|-----------------|-------|
+| Decisioning support in Custom channels | GA | All base offers | October 2, 2026 | Decision policies in the custom channel payload, through the Personalization Editor |
 | Decisioning support in Web channel | GA | All base offers | September 22, 2026 | Decision policies in the web visual editor |
 | Decisioning support in Direct Mail channel | GA | All base offers | June 3, 2026 | Supports batch decisioning |
 | Decisioning rules and ranking formula AI optimization | GA | All base offers | May 5, 2026 | AI-suggested simplifications |
@@ -171,6 +172,7 @@ All Decisioning features require the **Decisioning** add-on. See [Packages and c
 | Decisioning support in SMS channel | GA | All base offers | February 2, 2026 | — |
 | Decisioning support in Push channel | GA | All base offers | January 30, 2026 | — |
 | Adobe Experience Manager content fragments in Decisioning | LA | All base offers | May 20, 2026 | Contact your Adobe representative |
+| Decisioning support in Code-based experience channel | GA | All base offers | Core capability | — |
 | Offer decisioning (decision policies) | GA | All base offers | Core capability | Real-time best-offer selection |
 | AI-powered ranking | GA | All base offers | Core capability | Machine-learning offer optimization |
 
