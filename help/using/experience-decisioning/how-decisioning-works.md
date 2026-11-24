@@ -31,7 +31,7 @@ To set up Decisioning, use [Get started with Decisioning](gs-experience-decision
 
 >[!NOTE]
 >
->This page describes Decisioning. To compare it with the legacy Decision management framework, see [Decisioning and Decision management terms](#compare).
+>This page describes Decisioning. To compare it with the legacy Decision management framework, see [Coming from Decision management?](#compare)
 
 ## The building blocks {#building-blocks}
 
@@ -109,7 +109,7 @@ The final ranked list is Offer 5, Offer 3, Offer 4, Offer 2, Offer 1, and Offer 
 
 +++
 
-## Decisioning and Decision management terms {#compare}
+## Coming from Decision management? {#compare}
 
 Decision management is the legacy decisioning framework in [!DNL Journey Optimizer]. The objects of the two frameworks do not always map one to one. The table shows how the [migration tooling](decisioning-migration-api.md#entity-mapping) maps Decision management objects to Decisioning objects.
 

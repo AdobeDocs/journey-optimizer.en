@@ -37,7 +37,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Decisioning frequently asked questions** page now answers questions about getting started, key concepts, the differences between Decision management and Decisioning, audiences versus decision rules, the order of selection strategies, why an item was not shown, and how long changes take to apply. [Read more](../experience-decisioning/decisioning-faq.md)
 
-* A new **How Decisioning works** page explains how decision items, collections, rules, ranking methods, selection strategies, and decision policies fit together, and what happens each time a profile needs content. It also compares Decisioning and Decision management terms. [Read more](../experience-decisioning/how-decisioning-works.md)
+* A new **How Decisioning works** page explains how decision items, collections, rules, ranking methods, selection strategies, and decision policies fit together, and what happens each time a profile needs content. It also shows how Decision management objects map to Decisioning. [Read more](../experience-decisioning/how-decisioning-works.md)
 
 * A new **Troubleshoot Decisioning** page explains how eligibility, capping, ranking, and fallback items decide which decision items a profile receives, and lists the checks to run when an item was not shown. [Read more](../experience-decisioning/decisioning-troubleshooting.md)
 

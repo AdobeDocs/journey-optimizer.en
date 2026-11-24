@@ -100,7 +100,7 @@ Decision management is the legacy decisioning framework in Adobe Journey Optimiz
 
 The objects of the two frameworks do not always map one to one. For example, an offer becomes a decision item, and a decision maps to a selection strategy and a decision policy.
 
-Learn more about [Decisioning and Decision management terms](how-decisioning-works.md#compare) and the [benefits of migrating to Decisioning](migrate-to-decisioning.md). To move your Decision management objects, use the [migration tooling](decisioning-migration-api.md).
+Learn more about [how Decision management objects map to Decisioning](how-decisioning-works.md#compare) and the [benefits of migrating to Decisioning](migrate-to-decisioning.md). To move your Decision management objects, use the [migration tooling](decisioning-migration-api.md).
 
 +++
 
