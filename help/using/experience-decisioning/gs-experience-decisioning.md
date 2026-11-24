@@ -124,9 +124,9 @@ The main steps to work with Decisioning are as follows:
 
 1. **Create selection strategies**: Build selection strategies that leverage collections, decision rules, and ranking methods to identify the decision items suitable for displaying to profiles.
 
-    ➡️ [Learn how to create selection strategies in the user interface](selection-strategies.md) in the user interface (and in the [API documentation](api-reference/selection-strategies/create.md))
+    ➡️ [Learn how to create selection strategies](selection-strategies.md) in the user interface (and in the [API documentation](api-reference/selection-strategies/create.md))
 
-1. **Create a decision policy and embed it into your journey or campaign** (code-based experience, email, mobile message, push, or custom channels): Decision policies combine multiple selection strategies to determine the eligible decision items to display to the intended audience. 
+1. **Create a decision policy and embed it into your journey or campaign** (code-based experience, web, email, mobile message, push, custom channels, or direct mail): Decision policies combine multiple selection strategies to determine the eligible decision items to display to the intended audience. 
     
     ➡️ [Learn how to work with decision policies](create-decision.md)
 
@@ -211,3 +211,5 @@ When you are ready, explore these topics.
 Learn about Decisioning capabilities in Adobe Journey Optimizer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3451101?quality=12)
+
+{{$include /help/_includes/do-not-localize/experience-decisioning/ai-augmented-gs-experience-decisioning.md}}

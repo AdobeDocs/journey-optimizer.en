@@ -140,7 +140,7 @@ Learn more about [capping rules](items.md#capping).
 
 Selection strategies are evaluated in the order of the strategy sequence. The first selection strategy or decision item in the sequence has the highest priority. Selection strategies that you combine in a group have the same priority, so their qualifying items are ranked together according to their scores. The items of a later group are placed after the items of the earlier groups, whatever their score.
 
-In the example on the concept page, Offer 6 has the highest score (60) but comes last, because it belongs to the group with the lower priority.
+In the example on the How Decisioning works page, Offer 6 has the highest score (60) but comes last, because it belongs to the group with the lower priority.
 
 Learn more about [what happens when a decision is requested](how-decisioning-works.md#decision-process).
 
@@ -157,13 +157,13 @@ When configuring [AI models](ranking/ai-models.md), both datasets and audiences 
 
 Audiences do not restrict or expand the model's scope. Instead, they provide contextual attributes that improve the model's ability to make personalized predictions across different customer segments.
 
-Both components are required for effective [personalized optimization models](ranking/personalized-optimization-model.md) model performance.
+Both components are required for effective performance of [personalized optimization models](ranking/personalized-optimization-model.md).
 
 +++
 
 +++**How do changes to offer collections impact auto-optimization or personalized optimization models?**
 
-The auto-optimization model serves traffic to the next best available offer based on traffic data from the last 14 days, whether the personalized optimization model uses traffic data from the last 30 days.
+The auto-optimization model serves traffic to the next best available offer based on traffic data from the last 14 days, whereas the personalized optimization model uses traffic data from the last 30 days.
 
 When several offers are removed simultaneously and the remaining offers have minimal traffic data within the 14-day or 30-day window, the model may exhibit suboptimal behavior, including random distribution patterns or bias toward offers with higher conversion rates based on limited impression data.
 
@@ -259,3 +259,5 @@ You can also ask the [Decisioning Explainer](experience-decisioning-coworker-ski
 Learn more about [when changes take effect](decisioning-troubleshooting.md#timing).
 
 +++
+
+{{$include /help/_includes/do-not-localize/experience-decisioning/ai-augmented-decisioning-faq.md}}

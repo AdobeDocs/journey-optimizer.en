@@ -225,7 +225,7 @@ You can also access each decision policy's technical details and copy them to th
 
     * The strategies used in the decision policy
     * The number of items to return
-    * The collection, ranking method et eligibility rules used for each selection strategy
+    * The collection, ranking method and eligibility rules used for each selection strategy
     * The fallback offer used if no decision item is eligible
 
     ![](assets/campaign-decision-policy-details.png)
@@ -261,3 +261,5 @@ To see how your decisions are performing, you can view out-of-the-box decisionin
 Learn how to use Decisioning to personalize your web page within the web visual editor.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496300/?learn=on&enablevpops)
+
+{{$include /help/_includes/do-not-localize/experience-decisioning/ai-augmented-use-decision-policy.md}}

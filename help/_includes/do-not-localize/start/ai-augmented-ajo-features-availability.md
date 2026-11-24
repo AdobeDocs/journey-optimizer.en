@@ -9,63 +9,88 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page is a consolidated reference for which Journey Optimizer features are available, their lifecycle status (General Availability, Limited Availability, or Beta), which base offer they apply to, and when they shipped, grouped by capability area.
+* **TL;DR:** A consolidated reference of which Adobe Journey Optimizer features are available, grouped by capability area, with each feature's lifecycle status (General Availability, Limited Availability, or Beta), the base offer it applies to, and the date it became available.
 
 **Intents:**
 
-* Confirm whether a specific feature is available without digging through release notes
-* Understand what General Availability, Limited Availability, and Beta mean
-* See which base offer a feature applies to
-* Identify when a feature shipped, including long-standing core capabilities
-* Distinguish feature availability from license entitlement
+* Confirm what you can use during pre-implementation scoping.
+* Check the lifecycle status of a feature (General Availability, Limited Availability, or Beta).
+* Find which base offer a feature applies to.
+* Find the date a feature became available.
+* Find out why a capability you read about does not appear in your environment.
 
 **Glossary:**
 
-* **GA (General Availability)**: A feature released to all environments, available to any organization whose license includes the capability *(product-specific)*
-* **LA (Limited Availability)**: A feature released to a restricted set of organizations; contact your Adobe representative to request access *(product-specific)*
-* **Beta**: An early-access release for evaluation that may change before General Availability and may require opting in *(product-specific)*
-* **Base offer**: One of the three offers a feature applies to — Campaigns, Journeys, or Campaigns & Journeys *(product-specific)*
-* **Core capability**: A long-standing foundational feature that has been generally available since before 2026 *(product-specific)*
+* **General Availability (GA):** lifecycle status. Released to all environments. Available to any organization whose license includes the capability. Listed as GA: Journey Fragments (June 9, 2026).
+* **Limited Availability (LA):** lifecycle status. Released to a restricted set of organizations. Listed as LA: Journey arbitration (February 24, 2026).
+* **Beta:** lifecycle status. Early-access release for evaluation. May change before General Availability. May require opting in. Listed as Beta: Generate content for journey expressions (June 3, 2026).
+* **Base offer** *(product-specific)*: the page names three Adobe Journey Optimizer base offers. Journey Optimizer – Campaigns is batch, audience-based orchestration. Journey Optimizer – Journeys is real-time, event-driven orchestration. Journey Optimizer – Campaigns & Journeys is both.
+* **Applies to** (column): refers to the three base offers.
+* **All base offers** (value of Applies to): channel, content, and platform features marked this way are available regardless of base offer.
+* **Available since** (column): the date the feature became available. Values appear as a full date (for example May 20, 2026), as a month and year (for example April 2026), as a year (2025), or as Core capability.
+* **Core capability** (value of Available since): long-standing, foundational features that have been generally available since before 2026.
+* **Notes** (column): any notes about configuration or regional restrictions.
+* **Capability area:** features are grouped by capability area. The section Features by capability area has seven tabs: Channels, Journeys, Campaigns, Content & AI, Decisioning, AI agents, and Administration & data. Each tab holds a table with the columns Feature, Status, Applies to, Available since, and Notes.
 
 **Guardrails:**
 
-* Features in Limited Availability or Beta are not visible to everyone; they roll out to a restricted set of organizations first.
-* A feature being listed on this page does not mean it is enabled in your environment.
-* This page tracks feature lifecycle and availability, not entitlement; whether a feature is included in your license depends on your base offer and add-ons.
-* Channel, content, and platform features marked "All base offers" are available regardless of base offer, but most still require the relevant channel or advanced-capability add-on.
-* Sandboxes: up to 5 sandboxes, with additional available.
-* This list is compiled from the release notes and is not exhaustive.
+* A feature being listed on the page does not mean it is enabled in your environment.
+* The list is compiled from the 2026 release notes and the current release notes, reflects the latest known status of each feature, and is not exhaustive.
+* Sandboxes (GA, All base offers, Core capability): up to 5 sandboxes; additional available.
+
+**Prerequisites and permissions:**
+
+* All Decisioning features require the Decisioning add-on (Decisioning tab).
+* Most channel, content, and platform features marked All base offers still require the relevant channel or advanced-capability add-on. The Notes column names the add-on for some features: Email requires the Outbound Delivery add-on and In-app messaging requires the Mobile add-on.
+
+**Applicability:**
+
+* Wave sending of outbound messages (campaigns) applies to Campaigns; Campaigns & Journeys. Status GA, available since February 19, 2026.
+* Wave sending of outbound messages (journeys) applies to Journeys; Campaigns & Journeys. Status LA, available since March 16, 2026.
+* Direct mail channel in journeys applies to Journeys; Campaigns & Journeys (GA, January 29, 2026). Direct mail channel in orchestrated campaigns applies to Campaigns; Campaigns & Journeys (GA, January 28, 2026).
+* Orchestrated campaigns (multi-step workflows) apply to Campaigns; Campaigns & Journeys (GA, Core capability). The Notes column reads "email, SMS, push, direct mail only".
 
 **Terminology:**
 
-* Canonical name: General Availability — Acronym: GA — variants: n/a
-* Canonical name: Limited Availability — Acronym: LA — variants: n/a
-* Synonyms: "base offer" = "the offer a feature applies to"
-* Do not confuse: "GA" (released to all environments) ≠ "LA" (restricted set of organizations) ≠ "Beta" (early-access, may change before GA)
-* Do not confuse: "availability" (whether a capability has shipped and at what maturity) ≠ "entitlement" (whether it is included in your license)
-* Do not confuse: "Core capability" (generally available since before 2026) ≠ dated rows (changes shipped in 2026)
+* Canonical name: Adobe Journey Optimizer — Acronym: AJO
+* Canonical name: General Availability — Acronym: GA
+* Canonical name: Limited Availability — Acronym: LA
+* Canonical name: Mobile message. The Channels tab lists it as "New Mobile Message channel (SMS, MMS, RCS)" with the note "Unifies SMS/MMS/RCS; native RCS authoring (images, carousels)". SMS, MMS, and RCS are the names given in parentheses next to it.
+* Do not confuse:
+    * "General Availability (GA)" ≠ "Limited Availability (LA)": two different lifecycle statuses.
+    * "Availability" ≠ "entitlement": the page tracks feature lifecycle and availability (whether a capability has shipped and at what maturity), while whether a feature is included in your license depends on your base offer and add-ons.
 
 **FAQ:**
 
-* **Q: What do GA, LA, and Beta mean?** — GA is released to all environments; LA is released to a restricted set of organizations, so contact your Adobe representative; Beta is an early-access release for evaluation that may change before General Availability.
-* **Q: Why can I not see a feature in my environment?** — Features in Limited Availability or Beta roll out to a restricted set of organizations first; if the status is LA or Beta, contact your Adobe representative to request access.
-* **Q: Does this page tell me whether a feature is in my license?** — No; it tracks availability and lifecycle, not entitlement, which depends on your base offer and add-ons.
-* **Q: What does "Core capability" mean in the Available since column?** — It marks long-standing foundational features that have been generally available since before 2026.
-* **Q: What are the three base offers?** — Journey Optimizer – Campaigns (batch, audience-based), Journey Optimizer – Journeys (real-time, event-driven), and Journey Optimizer – Campaigns & Journeys (both).
+* **Why does a feature that is listed not appear in my environment?** Features in Limited Availability or Beta are not visible to everyone; they roll out to a restricted set of organizations first. If the status is LA or Beta, contact your Adobe representative to request access. A feature being listed on the page does not mean it is enabled in your environment.
+* **Is availability the same as being included in my license?** No. The page tracks feature lifecycle and availability (whether a capability has shipped and at what maturity). Whether a feature is included in your license depends on your base offer and add-ons.
+* **What does Core capability mean in the Available since column?** Long-standing, foundational features that have been generally available since before 2026.
+* **What does All base offers mean in the Applies to column?** Channel, content, and platform features marked All base offers are available regardless of base offer, but most still require the relevant channel or advanced-capability add-on.
+* **Where can I find the full history and the newest additions?** The list is not exhaustive. For the full history and the newest additions, always check the release notes.
+
+**Troubleshooting:**
+
+* A capability you read about does not appear in your environment. Cause given: features in Limited Availability or Beta are not visible to everyone, because they roll out to a restricted set of organizations first. What to do: check the status of the feature in the tables; if it is LA or Beta, contact your Adobe representative to request access.
+
+**Related pages:**
+
+* Understand what is in your package, and entitlement details: Packages and capabilities (start/ajo-packages.md)
+* See everything that shipped, and the full history and newest additions: Release notes (rn/release-notes.md)
+* See everything that shipped: 2026 release notes (rn/release-notes-2026.md)
+* Get started: Get started with Journey Optimizer (start/get-started.md)
 
 **Personas:**
 
-* **admin:** Can confirm administration and data features such as sandboxes, permissions and access control, URL parameter encryption, and certificate-based custom authentication in custom actions. The page states that sandboxes support up to 5, with additional available. Where: "Features by capability area".
-* **marketer:** Can build and launch messages across channels such as email, SMS, push, direct mail, and the new Mobile Message channel for SMS, MMS, and RCS. Can create journeys using Journey Fragments, Journey Simulation, and the Journey Agent for natural-language journey creation. The page states that Generate content for journey expressions is in Beta. Where: "Features by capability area".
+* **admin:** Can look up the lifecycle status (GA, LA, or Beta), the base offer, and the add-on named in the Notes column for some features. For example, Email requires the Outbound Delivery add-on, In-app messaging requires the Mobile add-on, and Web channel requires the Web add-on. All Decisioning features require the Decisioning add-on. Sandboxes are listed as GA for All base offers, Core capability, with the note "Up to 5 sandboxes; additional available". The page states that a feature being listed here does not mean it is enabled in your environment. Where: "Features by capability area".
+* **marketer:** Can look up the status, the base offer, and the Available since date of each feature. The features are grouped in the tabs Channels, Journeys, Campaigns, Content & AI, Decisioning, AI agents, and Administration & data. For example, Journey Fragments and Journey Simulation are listed as GA, available since June 9, 2026. Generate content for journey expressions is listed as Beta, available since June 3, 2026. The page states that features in Limited Availability or Beta are not visible to everyone. Where: "Features by capability area".
 
 **Onboarding:**
 
 * **Level:** Beginner, Intermediate
-* **First minimal step:** Check the feature's status in the table to see if it is GA, LA, or Beta.
-* **Success check:** The feature appears in your environment once it is enabled, consistent with its listed status.
-* **Previous:** Get started with Journey Optimizer: Journey Optimizer (start/get-started.md)
-* **Next:** Confirm whether a feature is included in your license: Adobe Journey Optimizer packages and capabilities (start/ajo-packages.md); See everything that shipped: Release notes (rn/release-notes.md)
+* **First minimal step:** Find the feature in the tab of its capability area and read its status, base offer, and Available since date.
+* **Success check:** The row of the feature lists its current lifecycle status, the base offer it applies to, the date it became available, and any notes.
+* **Next:** To check whether a feature is included in your license, which depends on your base offer and add-ons: Packages and capabilities (start/ajo-packages.md); To see the full history and the newest additions: Release notes (rn/release-notes.md)
 
 +++
 
-<!-- ai-section-version: 1 | source-hash: 98846e98 -->
+<!-- ai-section-version: 1 | source-hash: 495bb2d8 -->

@@ -200,3 +200,5 @@ Cold-start problems occur when there isn't enough data to make recommendations. 
 ## Re-training {#re-training}
 
 Models will be re-trained to learn latest feature interactions and mitigate model performance degradation weekly. To monitor training status and model performance, see [AI model monitoring](ai-model-observability.md).
+
+{{$include /help/_includes/do-not-localize/experience-decisioning/ai-augmented-ranking-personalized-optimization-model.md}}

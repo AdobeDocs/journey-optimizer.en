@@ -88,9 +88,9 @@ To create an email in [!DNL Journey Optimizer], add an **[!UICONTROL Email]** ac
 
     ![](assets/email-action-config.png)
 
-1. Additionnally:
+1. Additionally:
 
-    * You can apply capping rules to your email action by selecting a rule set in the **[!UICONTROL Business rules]** drop-down list. [Learn more](../conflict-prioritization/channel-capping.md)
+    * You can apply capping rules to your Action activity with the Email channel selected by selecting a rule set in the **[!UICONTROL Business rules]** drop-down list. [Learn more](../conflict-prioritization/channel-capping.md)
 
     * You can use the **[!DNL Send time optimization]** option to predict the best time to send the message to maximize engagement based on historical open and click rates. [Learn how](../building-journeys/send-time-optimization.md)
 
@@ -181,10 +181,6 @@ After adding the email action to your journey or campaign, you need to define th
    Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member. [Learn how to add a decision policy in an email](../experience-decisioning/create-decision.md#create-decision)
 
     ![](assets/../../experience-decisioning/assets/decision-policy-enable.png)
-
-    >[!AVAILABILITY]
-    >
-    >For now, decision policy creation in emails is available in Limited Availability. Contact your Adobe representative to gain access.
 
 1. In the **[!UICONTROL Header]** section, check the **[!UICONTROL From name]**, **[!UICONTROL From email]** and **[!UICONTROL BCC]** fields. They are configured in the email configuration that you selected. [Learn more](email-settings.md) <!--check if same for journey-->
 
@@ -317,7 +313,7 @@ When your email is ready, complete the configuration of your [journey](../buildi
 
 >[!NOTE]
 >
->To track the behavior of your recipients through email openings and/or interactions, make sure that the dedicated options in the **[!UICONTROL Tracking]** section are enabled in the journey's [email activity](../building-journeys/journey-action.md) or in the email [campaign](../campaigns/create-campaign.md).<!--to move?-->
+>To track the behavior of your recipients through email openings and/or interactions, make sure that the dedicated options in the **[!UICONTROL Tracking]** section are enabled in the journey's [Action activity with the Email channel selected](../building-journeys/journey-action.md) or in the email [campaign](../campaigns/create-campaign.md).<!--to move?-->
 
 ### Test HTML size optimization {#optimize-html-proof}
 

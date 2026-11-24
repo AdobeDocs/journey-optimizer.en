@@ -41,7 +41,7 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
 ---
-# Build AI models {#create-ai-models}
+# Create AI models {#create-ai-models}
 
 >[!BEGINSHADEBOX]
 
@@ -105,7 +105,7 @@ To create an AI model, follow the steps below:
     >
     >This capability is only available to [!DNL Customer Journey Analytics] customers with admin rights.
     >
-    >Before starting, make sure you have integrated Journey Optimizer with Customer Journey Analytics in order export Journey Optimizer datasets into your default data views. [Learn how to leverage [!DNL Journey Optmizer] data in [!DNL Customer Journey Analytics]](../../reports/cja-ajo.md)
+    >Before starting, make sure you have integrated Journey Optimizer with Customer Journey Analytics in order to export Journey Optimizer datasets into your default data views. [Learn how to leverage [!DNL Journey Optimizer] data in [!DNL Customer Journey Analytics]](../../reports/cja-ajo.md)
 
     **[!UICONTROL Personalized optimization]** models are a type of AI model that allow you to define business goals and utilizes customer data to train business-oriented models to serve personalized offers and maximize KPIs.
 
@@ -184,3 +184,5 @@ Learn how to create a personalized optimization model and how to apply it to a d
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419954?quality=12)
 -->
+
+{{$include /help/_includes/do-not-localize/experience-decisioning/ai-augmented-ranking-create-ai-models.md}}

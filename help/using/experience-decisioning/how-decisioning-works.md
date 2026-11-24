@@ -132,3 +132,5 @@ To learn about the benefits of Decisioning and the migration tooling, see [Benef
 * [Decisioning guardrails & limitations](decisioning-guardrails.md)
 * [Coworker for Decisioning](experience-decisioning-coworker-skills.md)
 * [Report on Decisioning](cja-reporting.md)
+
+{{$include /help/_includes/do-not-localize/experience-decisioning/ai-augmented-how-decisioning-works.md}}

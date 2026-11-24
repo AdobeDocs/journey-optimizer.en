@@ -119,3 +119,5 @@ To measure how your items perform, see [Report on Decisioning](cja-reporting.md)
 * [Decisioning guardrails & limitations](decisioning-guardrails.md)
 * [Coworker for Decisioning](experience-decisioning-coworker-skills.md)
 * [Report on Decisioning](cja-reporting.md)
+
+{{$include /help/_includes/do-not-localize/experience-decisioning/ai-augmented-decisioning-troubleshooting.md}}

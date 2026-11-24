@@ -90,7 +90,7 @@ For pairs of similar-sounding terms that are often confused — such as **Decisi
 
 | Term | Definition |
 |------|------------|
-| **Decisioning** | The current-generation decision framework in Journey Optimizer, recommended for new implementations. Offers schema-based item catalog management, flexible collection rules, reusable decision components, and experimentation capabilities. Available for Code-based Experience, Push, Mobile messages, and Email. [Learn more](../experience-decisioning/gs-experience-decisioning.md) |
+| **Decisioning** | The current-generation decision framework in Journey Optimizer, recommended for all new implementations. Offers schema-based item catalog management, flexible collection rules, reusable decision components, and experimentation capabilities. Available for Code-based Experience, Web, Email, Push, Mobile messages, Custom channels, and Direct mail. [Learn more](../experience-decisioning/gs-experience-decisioning.md) |
 | **Decision Management** | The legacy offer decisioning feature in Journey Optimizer. Uses a central library of marketing offers and a rules-based decision engine that applies constraints to real-time customer profiles. Still supported for existing implementations, but new implementations should use Decisioning instead. Supports Email, In-App, Push, Mobile messages, and Direct mail. [Learn more](../offers/get-started/starting-offer-decisioning.md) |
 | **Offer** | A marketing message, discount, or promotion that can be presented to customers. Offers include eligibility rules that determine which customers can receive them. [Learn more](../offers/offer-library/creating-personalized-offers.md) |
 | **Decision Policy** | A set of rules and strategies that determine which offer to show to which customer at what time, based on constraints like eligibility, priority, and capping rules. [Learn more](../experience-decisioning/create-decision.md) |
@@ -122,8 +122,8 @@ Both capabilities select and deliver offers, but they serve different stages of 
 |---|---|---|
 | **Status** | Current — recommended for all new implementations | **Legacy** — still supported, but no longer recommended for new implementations |
 | **Item catalog** | Schema-based, flexible metadata | Centralized offer library |
-| **Supported channels** | Code-based Experience, Push, Mobile messages, Email | Email, In-App, Push, Mobile messages, Direct mail |
-| **Key differentiator** | Reusable decision components, experimentation, broader channel roadmap | Proven constraints engine; migrate to Decisioning for new projects |
+| **Supported channels** | Code-based Experience, Web, Email, Push, Mobile messages, Custom channels, Direct mail | Email, In-App, Push, Mobile messages, Direct mail |
+| **Key differentiator** | Reusable decision components, experimentation, broader channel roadmap | Proven constraints engine; use Decisioning for new projects |
 | **Get started** | [Decisioning](../experience-decisioning/gs-experience-decisioning.md) | [Decision Management](../offers/get-started/starting-offer-decisioning.md) |
 
 If you are currently using Decision Management and want to switch, refer to the [migration guide](../experience-decisioning/migrate-to-decisioning.md).
