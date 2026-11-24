@@ -9,36 +9,33 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to schedule an API triggered campaign with start and end dates in the **Schedule** tab, and how to set rate control with the **Throttle delivery** option.
+* **TL;DR:** This page explains how to schedule an API triggered campaign with start and end dates in the **Schedule** tab, and states that the **Throttle delivery** option is not supported for API triggered campaigns.
 
 **Intents:**
 
 * Understand when an API triggered campaign starts and ends by default
 * Set a start date and time with **Campaign start**
 * Set an end date and time with **Campaign end**
-* Set a delivery rate per second with **Throttle delivery**
-* Understand which profiles are excluded when the delivery rate is too low
+* Understand that **Throttle delivery** is not supported for API triggered campaigns
+* Understand that the sending rate is limited by pacing API calls upstream
 
 **Glossary:**
 
 * **Campaign start**: Option to specify a date and time at which the message is sent
 * **Campaign end**: Option to specify when a campaign stops being executed
-* **Rate control**: Feature that limits the delivery rate of outbound actions, to prevent overload on downstream systems such as landing pages or customer care platforms
-* **Throttle delivery**: Option in the **Delivery settings** section that enables rate control
-* **Delivery rate**: The number of messages per second specified when **Throttle delivery** is enabled
+* **Throttle delivery**: Option in the **Delivery settings** section that sets a delivery rate per second. It is not supported for API triggered campaigns.
+* **Delivery rate**: The number of messages per second entered with **Throttle delivery**. For an API triggered campaign, the value is not applied.
 
 **Guardrails:**
 
 * By default, API triggered campaigns start once they are triggered, and end as soon as the message has been sent once.
 * Outside of the specified dates, the campaign is not executed.
-* Minimum delivery rate supported: 1 per second (hard limit).
-* Maximum delivery rate supported: 2000 per second when the **Throttle delivery** option is enabled (hard limit).
-* When a delivery rate is set, the maximum timeframe for which the campaign audience can execute is 12 hours (hard limit).
-* If the delivery rate does not allow all the audience to be sent the message in the 12 hour timeframe, the remaining profiles are excluded from the campaign. The count of these excluded profiles is visible in the campaign report.
+* **Throttle delivery** is not supported for API triggered campaigns, in standard or High throughput mode: a delivery rate entered in **Delivery settings** is not applied.
+* To limit the sending rate, pace the API calls upstream.
 
 **Applicability:**
 
-* Rate control: outbound actions (Email, Mobile messages, Push notifications)
+* Throttle delivery: not supported for API triggered campaigns (standard and High throughput modes).
 
 **Terminology:**
 
@@ -49,13 +46,8 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: When does an API triggered campaign start by default?** — Once it is triggered. It ends as soon as the message has been sent once.
 * **Q: How do I send the message at a specific time?** — Use the **Campaign start** option to specify a date and time.
-* **Q: How do I limit the delivery rate?** — Enable **Throttle delivery** in the **Delivery settings** section and specify the **Delivery rate** per second.
-* **Q: What is the supported range for the delivery rate?** — From 1 per second to 2000 per second.
-* **Q: What happens to profiles that cannot be reached in 12 hours?** — They are excluded from the campaign, and their count appears in the campaign report.
-
-**Examples:**
-
-* A rate limit of 165 messages per second ensures steady delivery without overwhelming downstream systems.
+* **Q: Can I limit the delivery rate of an API triggered campaign with Throttle delivery?** — No. The option is not supported for API triggered campaigns, in standard or High throughput mode. Pace the API calls upstream.
+* **Q: What happens if I enter a Delivery rate in an API triggered campaign?** — The value is not applied.
 
 **Related pages:**
 
@@ -63,13 +55,13 @@ For complete understanding, this information should be combined with the documen
 
 **Personas:**
 
-* **developer:** Can enable Throttle delivery in Delivery settings and set a Delivery rate per second for Email, Mobile messages, and Push notifications. Can apply rate control to prevent overload on downstream systems such as landing pages or customer care platforms. The page states that the delivery rate supports 1 to 2000 messages per second, with a 12 hour maximum execution timeframe for the campaign audience. Where: "Set rate control".
+* **developer:** Cannot use Throttle delivery to limit the delivery rate of an API triggered campaign, because the option is not supported. Paces the API calls upstream to limit the sending rate. Where: "Set rate control".
 
 **Onboarding:**
 
 * **Level:** Experienced
-* **First minimal step:** Enable the Throttle delivery option in the Delivery settings section and specify the desired Delivery rate per second.
-* **Success check:** You can see the count of these excluded profiles in the campaign report.
+* **First minimal step:** Set the Campaign start and Campaign end options in the Schedule tab, and pace the API calls upstream if you need to limit the sending rate.
+* **Success check:** The campaign runs within the dates you specified.
 * **Next:** When your campaign configuration and content are ready: Review & activate the API triggered campaign (campaigns/review-activate-api-triggered-campaign.md)
 
 +++

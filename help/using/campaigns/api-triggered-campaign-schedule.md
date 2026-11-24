@@ -36,7 +36,7 @@ level_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Set start and end dates and rate control in the Schedule tab so your API triggered campaign sends at the right time without overwhelming downstream systems.
+**On this page:** Set start and end dates in the Schedule tab so your API triggered campaign sends at the right time.
 
 >[!ENDSHADEBOX]
 
@@ -56,20 +56,9 @@ The **[!UICONTROL Campaign end]** option allows you to specify when a campaign s
 
 ## Set rate control
 
-[!DNL Journey Optimizer] allows you to enable rate control for outbound actions (Email, Mobile messages, Push notifications).
-
-This feature is particularly useful for preventing overload on downstream systems, such as landing pages or customer care platforms. For example, you can set a rate limit of 165 messages per second to ensure steady delivery without overwhelming downstream systems.
-
-To set rate control, enable the **[!UICONTROL Throttle delivery]** option in the **[!UICONTROL Delivery settings]** section and specify the desired **[!UICONTROL Delivery rate]** per second.
-
-* Minimum delivery rate supported: 1 per second.
-* Maximum delivery rate supported: 2000 per second when the "Throttle delivery" option is enabled.
-
-![](assets/throttling-rate-control.png)
-
 >[!IMPORTANT]
 >
->When setting a delivery rate, the maximum timeframe for which campaign audience can execute is 12 hours. If the delivery rate is set to a value which does not allow all the audience to be sent the message in the 12 hour timeframe, then the remaining profiles would be excluded from the campaign. You can see the count of these excluded profiles in the campaign report.
+>The **[!UICONTROL Throttle delivery]** option is not supported for API triggered campaigns, in standard or High throughput mode. A **[!UICONTROL Delivery rate]** entered in the **[!UICONTROL Delivery settings]** section is not applied. To limit the sending rate, pace your API calls upstream.
 
 ## Next steps {#next}
 

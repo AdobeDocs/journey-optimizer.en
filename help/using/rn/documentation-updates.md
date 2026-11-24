@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Schedule an API triggered campaign** page now states that the **Throttle delivery** option is not supported for API triggered campaigns, in standard or High throughput mode, and advises pacing your API calls upstream to limit the sending rate. [Read more](../campaigns/api-triggered-campaign-schedule.md#set-rate-control)
+
 * The **Get started with Decisioning** page now shows the Decisioning process chart before the steps, lists the permissions you need in a new **Prerequisites** section, and links to the new **How Decisioning works** page. A new **Go further with Decisioning** section links to guardrails, the FAQ, email placements, reporting, troubleshooting, and the API reference, and replaces the **Decisioning** landing page, which has been removed. [Read more](../experience-decisioning/gs-experience-decisioning.md)
 
 * The **Decisioning frequently asked questions** page now answers questions about getting started, key concepts, the differences between Decision management and Decisioning, audiences versus decision rules, the order of selection strategies, why an item was not shown, and how long changes take to apply. [Read more](../experience-decisioning/decisioning-faq.md)
