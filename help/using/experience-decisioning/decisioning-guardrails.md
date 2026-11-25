@@ -49,6 +49,11 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 | Code-based experience API request with decision policy not using Edge segmentation | 5000 |
 | Max number of Surface URIs per Edge decisioning request | 30 |
 
+When multiple decision requests arrive at the **exact same millisecond** with the same timestamp, the system may process them out of order or treat them as duplicates. This can result in fallback offers being returned instead of personalized ones. To avoid this:
+
+* **Remove the client-side timestamp** from the decision request and let the platform assign one, or ensure each request carries a unique, current timestamp.
+* **Introduce brief delays or deduplication logic** on the client side when concurrent requests from the same profile are expected within the same millisecond window.
+
 ## Decision items {#decision-items}
 
 | Guardrail | Limit |
