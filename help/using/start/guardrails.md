@@ -419,6 +419,8 @@ The following guardrails apply to the [Mobile channel](../mobile/get-started-mob
 
 * An inbound message request supports a maximum of **10 lookups** of any kind, including [external data](../personalization/external-data-lookup.md) and dataset lookups. Each lookup call counts, including repeated calls to the same endpoint and calls inside an `#each` loop (once per iteration). Exceeding the limit can fail the entire request with an **HTTP 422** error, rather than returning a partial response. To stay within the limit, perform a lookup once, before any loop, and reuse its result. Reading several attributes from that result does not add lookups.
 
+* The legacy Decision management capability is not available with the Web and code-based experience channels. Use [Decisioning](../experience-decisioning/gs-experience-decisioning.md) for these channels.
+
 #### Profile management with inbound channels {#profile-management-inbound}
 
 [!DNL Journey Optimizer] inbound channels can target pseudonymous profiles, meaning profiles that are not authenticated or not known yet because they have not been engaged before on other channels. This is the case for example when targeting all visitors or audiences based on temporary IDs like ECID.

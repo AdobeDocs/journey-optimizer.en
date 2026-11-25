@@ -46,6 +46,8 @@ level_v2:
 
 This page applies to users still working with the legacy Decision Management system. To ensure optimal use, keep the following guardrails and limitations in mind.
 
+Decision management is not available with the Web and code-based experience channels. To personalize content in these channels with decision policies, use [Decisioning](../experience-decisioning/gs-experience-decisioning.md).
+
 The complete list of [!DNL Journey Optimizer] guardrails & limitations is available in [this section](../start/guardrails.md).
 
 ## Decision requests

@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Guardrails and limitations** page and the **Decision management guardrails & limitations** page now state that Decision management is not available with the Web and code-based experience channels, and point to Decisioning for these channels. [Read more](../start/guardrails.md#inbound-guardrails)
+
 * The **Decisioning guardrails** page now explains that decision requests that arrive at the exact same millisecond can return fallback offers, and how to avoid it. [Read more](../experience-decisioning/decisioning-guardrails.md#decision-requests)
 
 * The **Get started with decision management** page now states that Decision management is not available in the Web channel and points to Decisioning for web personalization. [Read more](../offers/get-started/starting-offer-decisioning.md)
