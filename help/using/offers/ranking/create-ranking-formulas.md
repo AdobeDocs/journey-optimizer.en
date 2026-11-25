@@ -166,6 +166,18 @@ Given this, for a profile such as:
 }
 ```
 
+The offers would contain an attribute for *propensityType* which matches the category from the scores.
+
+Your ranking formula can then set the priority of each offer to equal the customer's *propensityScore* for that *propensityType*. If no score is found, use the static priority set on the offer.
+
+**Ranking formula:**
+
+```
+let score = (select _Individual_Scoring1 from _salesvelocity.individualScoring
+             where _Individual_Scoring1.core.category.equals(offer.characteristics.get("propensityType"), false)).head().core.propensityScore
+in if(score.isNotNull(), score, offer.rank.priority)
+```
+
 ### Boost offers based on context data {#context-data}
 
 [!DNL Journey Optimizer] allows you to boost certain offers based on the context data being passed in the call. For example, if the `contextData.weather=hot` is passed, the priority of all offers with `attribute=hot` must be boosted. Detailed information on how to pass context data using the **Edge Decisioning** and **Decisioning** APIs, refer to [this section](../context-data.md)

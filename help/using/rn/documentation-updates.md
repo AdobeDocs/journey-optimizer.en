@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Ranking formulas** pages for Decisioning and Decision management now include the PQL ranking formula for the example that boosts offers based on the customer's propensity to purchase the product being offered. [Read more](../experience-decisioning/ranking/ranking-formulas.md)
+
 * The **Guardrails and limitations** page and the **Decision management guardrails & limitations** page now state that Decision management is not available with the Web and code-based experience channels, and point to Decisioning for these channels. [Read more](../start/guardrails.md#inbound-guardrails)
 
 * The **Decisioning guardrails** page now explains that decision requests that arrive at the exact same millisecond can return fallback offers, and how to avoid it. [Read more](../experience-decisioning/decisioning-guardrails.md#decision-requests)

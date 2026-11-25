@@ -253,6 +253,18 @@ Given this, for a profile such as:
 }
 ```
 
+The decision items would contain a custom attribute, *propensityType*, that matches the category from the scores.
+
+Your ranking formula can then set the score of each decision item to equal the customer's *propensityScore* for that *propensityType*. If no score is found, use the static priority set on the decision item.
+
+**Ranking formula:**
+
+```
+let score = (select _Individual_Scoring1 from _salesvelocity.individualScoring
+             where _Individual_Scoring1.core.category.equals(offer.characteristics.get("propensityType"), false)).head().core.propensityScore
+in if(score.isNotNull(), score, offer.rank.priority)
+```
+
 +++
 
 +++Boost offers based on a profile's ZIP code and annual income
