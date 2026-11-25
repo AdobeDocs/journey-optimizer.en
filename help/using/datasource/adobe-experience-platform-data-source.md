@@ -56,9 +56,9 @@ topic_v2:
 
 Adobe Experience Platform data source defines the connection to Adobe Real-time Customer Profile. This data source is built-in and pre-configured, and cannot be deleted. This data source is designed to retrieve and use data from the Real-time Customer Profile Service (for example, check if the person who entered a journey is a female). For more information about Adobe Real-time Customer Profile, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}.
 
-To allow the connection to the Real-time Customer Profile Service, we must use a key to identify a person, and a namespace that contextualizes the key. As a result, you can only use this data source if your journeys start with an event containing a key and a namespace. [Learn more](../building-journeys/journey.md).
+To allow the connection to the Real-time Customer Profile Service, we must use a key to identify a person, and a [namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"} that contextualizes the key. As a result, you can only use this data source if your journeys start with an event containing a key and a namespace. [Learn more](../building-journeys/journey.md).
 
-You can edit the pre-configured field group named "ProfileFieldGroup", add new ones and remove the ones that are not used in any draft or live journeys. [Learn more](../datasource/configure-data-sources.md#define-field-groups).
+You can edit the pre-configured field group named "ProfileFieldGroup", add new ones and remove the ones that are not used in any live, draft, or finished journeys. [Learn more](../datasource/configure-data-sources.md#define-field-groups).
 
 >[!CAUTION]
 >

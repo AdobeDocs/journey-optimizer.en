@@ -16,7 +16,7 @@ For complete understanding, this information should be combined with the documen
 * Add field groups to the built-in Adobe Experience Platform data source
 * Select an XDM Individual Profile-based schema and choose the fields to retrieve
 * Edit the pre-configured ProfileFieldGroup or create new field groups
-* Remove field groups that are not used in any draft or live journeys
+* Remove field groups that are not used in any live, draft, or finished journeys
 * Understand the key and namespace requirement for using this data source
 
 **Glossary:**
@@ -33,7 +33,7 @@ For complete understanding, this information should be combined with the documen
 * Only XDM Individual Profile-based schemas are supported in the Journey Optimizer Data Source configuration.
 * Using experience events in journey expressions/conditions is not supported.
 * Schema creation is performed in Adobe Experience Platform, not in Adobe Journey Optimizer.
-* You can remove the field groups that are not used in any draft or live journeys.
+* You can remove the field groups that are not used in any live, draft, or finished journeys.
 * The Delete icon for a field group is only available if the field group is not used in any Live, Draft or Finished journey; check the Used in field.
 
 **Terminology:**
@@ -53,7 +53,7 @@ For complete understanding, this information should be combined with the documen
 **Personas:**
 
 * **developer:** Can select an XDM Individual Profile-based schema and choose the fields to retrieve for the Adobe Experience Platform data source. Can use this data source only if the journey starts with an event containing a key and a namespace. The page states that using experience events in journey expressions or conditions is not supported. Where: "Guardrails".
-* **admin:** Can edit the pre-configured ProfileFieldGroup, add new field groups, and remove field groups that are not used in any draft or live journey. The page states that the Delete icon for a field group is only available if the field group is not used in any Live, Draft or Finished journey. Where: "Guardrails".
+* **admin:** Can edit the pre-configured ProfileFieldGroup, add new field groups, and remove field groups that are not used in any live, draft, or finished journey. The page states that the Delete icon for a field group is only available if the field group is not used in any Live, Draft or Finished journey. Where: "Guardrails".
 
 **Onboarding:**
 

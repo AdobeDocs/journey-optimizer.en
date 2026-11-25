@@ -93,7 +93,7 @@ The number of journeys that use a field group is displayed in the **[!UICONTROL 
 
 You can add or remove fields from a field group that is not used in any draft or live journey.
 
-If the field group is used in one or more draft or live journeys, you can incrementally add new fields from the selected schema, but cannot deselect/remove/modify fields that have already been selected. Updates to a field group are not permitted if exiting fields of schema already in use by draft or live journeys are modified — for example, changing the data type of an field. This will avoid breaking journeys
+If the field group is used in one or more draft or live journeys, you can incrementally add new fields from the selected schema, but cannot deselect/remove/modify fields that have already been selected. Updates to a field group are not permitted if existing fields of schema already in use by draft or live journeys are modified — for example, changing the data type of an field. This will avoid breaking journeys
 
 To delete a field from a field group used in one or more journeys, follow these steps. Let's use an example of a field group named "Field Group A".
 
