@@ -163,6 +163,7 @@ Outlook has a number of rendering quirks that can affect your email layout if no
 * Use even numbers for padding, font sizes, and widths. Outlook converts pixels to points internally, which can introduce uneven spacing and unwanted white lines when odd numbers are used.
 * Set table widths in pixels, not percentages. Percentage-based widths can break the layout in Outlook. Apply width values directly in the style attribute of each table.
 * Always set image widths using the `width` attribute. Outlook ignores CSS `width` and `height` properties on images and falls back to the file's native dimensions if no HTML attribute is present.
+* Set the width of images with personalized URLs yourself, in the image properties. The Email Designer cannot measure an image that is resolved only at send time, so Outlook for Windows can display it much smaller than intended. To avoid repeating this step, save the image in a [visual fragment](use-visual-fragments.md).
 * Include Alt text on all images. This prevents display and security issues when images are blocked.
 * Apply borders to table cells, not to the table element itself. If a border is not rendering as expected, move it from the `<table>` to the `<td>`.
 * Avoid rounded corners. CSS `border-radius` is not reliably supported in Outlook — square corners are the safe default.
