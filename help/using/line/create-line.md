@@ -52,7 +52,9 @@ Browse the tabs below to learn how to add a LINE message in a campaign or a jour
 
 >[!TAB Add a LINE message to a Journey]
 
-1. Open your journey then drag and drop a **LINE** activity from the **Actions** section of the palette.
+1. Open your journey, then drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
+
+1. Select **[!UICONTROL LINE]** as the action type.
 
     ![](assets/jo-line-1.png)
 
@@ -92,12 +94,12 @@ You can now start designing the content of your LINE message from the **[!UICONT
 
 1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
 
-1. From the **[!UICONTROL Action triggers]** menu, choose the **[!UICONTROL Frequency]** of your LINE message:
+1. From the **[!UICONTROL Action triggers]** menu, choose the **[!UICONTROL Frequency]** of your LINE message. [Learn more](../campaigns/campaign-schedule.md)
 
     * Once
     * Daily
     * Weekly
-    * Month
+    * Monthly
     
 You can now start designing the content of your LINE message from the **[!UICONTROL Edit content]** button, as detailed below.
 

@@ -74,11 +74,11 @@ Journey Optimizer displays two types of alerts:
 * **Warnings** are recommendations or best-practice suggestions. They do not prevent you from testing or sending the message.
 * **Errors** identify issues that must be resolved before you can test or activate the journey, or publish the campaign.
 
-Resolve all errors before continuing. Address warnings when they indicate that the message may not provide the intended customer experience.
+Resolve all errors before continuing. Address warnings when they indicate that the message may not provide the intended customer experience. In a journey, select **[!UICONTROL Validate]** to display errors and warnings in the Alerts panel. [Learn more](../building-journeys/publish-journey.md#validate)
 
 ## Request approval when required {#line-approval}
 
-If your campaign is subject to an approval policy, request approval before sending the message.
+If your campaign is subject to an approval policy, request approval before sending the message. An admin user creates the approval policies. If no policy applies, you can activate the campaign without approval.
 
 See [Learn how to request approval](../test-approve/gs-approval.md).
 

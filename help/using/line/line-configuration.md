@@ -33,7 +33,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 ---
-# Configure LINE channel in Journey Optimizer {#line-configuration}
+# Configure the LINE channel {#line-configuration}
 
 >[!BEGINSHADEBOX]
 
@@ -99,7 +99,7 @@ POST https://platform.adobe.io/journey/imp/config/channel-settings
 |Authorization| User token from your technical account|
 |x-api-key| Client ID from Adobe Developer Console|
 |x-gw-ims-org-id| Your IMS Organization ID|
-|x-sandbox-name| Sandbox name, e.g., prod|
+|x-sandbox-name| Name of the sandbox where the API operations take place, for example `prod`|
 |Content-Type| Must be application/json|
 
 
