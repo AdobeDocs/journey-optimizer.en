@@ -221,6 +221,10 @@ For an overview of the Message Export feature, enablement steps, and supported u
   **Field:** `campaignActionID`  
   **Type:** string
 
+  >[!NOTE]
+  >
+  >The action ID is unique only within a campaign, so the same value can appear on different action nodes and in different journeys. To identify a campaign action, combine `campaignVersionID` and `campaignActionID`.
+
 * campaignID
 
   **Field:** `campaignID`  
