@@ -54,6 +54,10 @@ topic_v2:
 >
 >Not sure which capability you are using? [Compare Decision management and Decisioning](../../experience-decisioning/gs-decision.md).
 
+>[!NOTE]
+>
+>Decision management is not available in the Web channel. To personalize web content with decision policies, use Decisioning. [Learn how to use decision policies](../../experience-decisioning/use-decision-policy.md)
+
 Use [!DNL Journey Optimizer] to deliver the best offer and experience to your customers across all touch points at the right time. Once designed, target your audiences with personalized offers.
 
 Decision management makes personalization easy with a central library of marketing offers and a decision engine that applies rules and constraints to rich, real-time profiles created by Adobe Experience Platform to help you send your customers the right offer at the right time.
