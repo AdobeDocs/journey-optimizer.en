@@ -32,7 +32,7 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Use custom actions instead of data sources for external data source use cases now that responses are supported (recommended). Custom Actions without Data Lake persistence are the right choice when the data is only useful inside the journey and the external system is accessible via an API endpoint.
-* REST APIs using POST or GET and returning JSON are supported; API Key, basic, and custom authentication modes are supported.
+* REST APIs using POST or GET and returning JSON are supported; the supported authentication modes are no authentication, API key, basic, and custom.
 * The use of Adobe addresses that are not publicly available and the use of IP addresses is not allowed; HTTPS is strongly recommended for security reasons.
 * Data source name: only alphanumeric characters and underscores are allowed, maximum length 30 characters (hard limit).
 * Field group name: only alphanumeric characters and underscores are allowed, maximum length 30 characters (hard limit).
@@ -59,7 +59,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: What kinds of APIs are supported for external data sources?** — REST APIs using POST or GET and returning JSON, with API Key, basic, or custom authentication modes.
+* **Q: What kinds of APIs are supported for external data sources?** — REST APIs using POST or GET and returning JSON, with no authentication, API key, basic, or custom authentication modes.
 * **Q: What is the maximum length of a data source or field group name?** — 30 characters, using only alphanumeric characters and underscores.
 * **Q: How do I verify that my custom authentication payload is configured correctly?** — Use the [!UICONTROL Click to check the authentication] button; when the test is successful, the button turns green.
 * **Q: What is the default token cache duration and can I change it?** — The default cache duration is 1 hour, and you can adapt it by specifying another retention duration in the `cacheDuration` parameter of the custom authentication payload.

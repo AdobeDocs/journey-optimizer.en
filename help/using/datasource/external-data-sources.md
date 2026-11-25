@@ -68,7 +68,7 @@ External data sources allow you to define a connection to third-party systems, f
 >
 >* As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases. For more information on responses, see [custom action responses](../action/action-response.md). Custom Actions without Data Lake persistence are the right choice when the data is only useful inside the journey and the external system is accessible via an API endpoint. For a comparison of all data access options, see [Choose your data access strategy](../datasource/about-data-sources.md#data-access-strategy).
 
-REST APIs using POST or GET and returning JSON are supported. API Key, basic and custom authentication modes are supported.
+REST APIs using POST or GET and returning JSON are supported. The supported authentication modes are no authentication, API key, basic, and custom.
 
 Let's take the example of a weather API service that I want to use to customize my journey's behaviors according to real-time weather data.
 
@@ -363,7 +363,7 @@ Here is an example for the certificate credential authentication type, for Micro
   "type": "customAuthorization",
   "subType": "certificateCredential",
   "aud": "https://login.microsoftonline.com/{tenantId}/oauth2/v2.0/token",
-  "authorizationType": "Bearer",
+  "authorizationType": "bearer",
   "endpoint": "https://login.microsoftonline.com/{tenantId}/oauth2/v2.0/token",
   "method": "POST",
   "body": {

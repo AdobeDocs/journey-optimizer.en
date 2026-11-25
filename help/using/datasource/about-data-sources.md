@@ -61,7 +61,7 @@ topic_v2:
 >[!TIP]
 >New to data management in Journey Optimizer? Start with the [Get started with data management](../data/gs-data.md) overview to understand schemas, datasets, identities, and how data flows before configuring data sources.
 
-The data source configuration allows you to define a connection to a system to retrieve additional information that will be used in your journeys, for:
+The data source configuration is always performed by a technical user. It allows you to define a connection to a system to retrieve additional information that will be used in your journeys, for:
 
 * [condition definition](../building-journeys/conditions.md)
 * parameter and personalization data in [actions](../action/action.md)
@@ -112,7 +112,7 @@ Learn more about [custom actions](../action/action.md) and [custom action respon
 
 **Option 2 — Dataset in Data Lake, not enabled for Profile**
 
-Ingest data into a dataset to trigger and personalize journeys based on contextual event data, without contributing to the Real-Time Customer Profile. Best suited when:
+Ingest data into a dataset to trigger and personalize journeys based on contextual event data, without contributing to the Real-time Customer Profile. Best suited when:
 
 * Records contain an identity field usable to access profiles already stored in Experience Platform.
 * The data is not needed for audience creation or identity stitching outside of Journey Optimizer.
