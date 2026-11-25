@@ -511,6 +511,10 @@ This dataset gives you access to marketer defined metadata which allows you to g
 
 If you want to sort, in your reports, the emails sent by a specific journey according to the action that sent them. you can join the Message Feedback dataset with the Entity dataset. The fields to use are: `_experience.decisioning.propositions.scopeDetails.correlationID` and `_id field in entity dataset`.
 
+>[!NOTE]
+>
+>The `campaignActionID` value is unique only within a campaign. When you join or report on campaign actions, use `campaignVersionID` and `campaignActionID` together. See [AJO Message Export schema](../configuration/message-export-schema.md).
+
 The following query helps you get the associated message template for a given campaign:
 
 ```sql
