@@ -67,6 +67,10 @@ To create or edit email content using the code editor, follow these steps.
 
 1. Enter or paste your raw HTML code. 
 
+    >[!NOTE]
+    >
+    >Unlike when you design your email from scratch, the code editor does not offer a **[!UICONTROL Preheader]** field. To define a preheader, add the preheader text directly in your HTML code. [Learn more about email metadata](email-metadata.md)
+
 1. Use the left pane to leverage [!DNL Journey Optimizer] personalization capabilities. [Learn more](../personalization/personalize.md)
 
     ![](assets/code-editor.png)

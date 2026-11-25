@@ -73,6 +73,10 @@ To set up a landing page for event registration, you will create a subscription 
 
     ![](assets/lp_subscription-uc-lp-list.png)
 
+    >[!NOTE]
+    >
+    >Each subscription list can be used only once on a primary page: do not select the same list for another checkbox or for the additional update of the form button. [Learn more](lp-content.md#use-form-component)
+
 1. Create a 'thank you' page that will be displayed to your recipients once they submit the registration form. Learn how to configure landing subpages [here](create-lp.md#configure-subpages).
 
     ![](assets/lp_subscription-uc-thanks.png)

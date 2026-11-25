@@ -28,6 +28,7 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Preheaders are not supported by all email clients; when not supported, the preheader does not display.
+* The Preheader field is not available in Code your own mode; add the preheader text directly in the HTML code.
 * You must add at least a Structure component before you can start designing the email and configure these settings.
 * Metadata is configured from the Body settings, accessed via the Navigation tree or the top of the right pane, on the Settings tab.
 
@@ -41,6 +42,7 @@ For complete understanding, this information should be combined with the documen
 
 * **Q: What is a preheader?** — A short summary text that follows the subject line when viewing an email from your email client, typically one sentence long.
 * **Q: Why might a preheader not display?** — Preheaders are not supported by all email clients; when not supported, the preheader does not display.
+* **Q: Why is the Preheader field missing in Code your own mode?** — The Code your own mode does not offer a Preheader field; add the preheader text directly in your HTML code.
 * **Q: What does the document language setting do?** — It specifies the language that screen readers use to convert text and images into speech or braille, corresponding to the `lang` attribute in the `<html>` element.
 * **Q: Can I personalize the metadata fields?** — Yes. Click the personalization icon next to each field to customize content from profile attributes, audiences, contextual attributes, and more.
 

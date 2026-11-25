@@ -33,6 +33,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Define landing page-specific content**, **Landing page use cases**, **Create a subscription list**, and **Landing page errors** pages now highlight that each subscription list can be used only once on a primary page, including when a checkbox and the additional update of the form button point to the same list. [Read more](../landing-pages/lp-content.md#use-form-component)
+
+* The **Code your own email content** page and the **Add metadata to your email content** page now state that the **Preheader** field is not available in Code your own mode, and that you must add the preheader text directly in your HTML code. [Read more](../email/code-content.md)
+
 * The **Ranking formulas** pages for Decisioning and Decision management now include the PQL ranking formula for the example that boosts offers based on the customer's propensity to purchase the product being offered. [Read more](../experience-decisioning/ranking/ranking-formulas.md)
 
 * The **Guardrails and limitations** page and the **Decision management guardrails & limitations** page now state that Decision management is not available with the Web and code-based experience channels, and point to Decisioning for these channels. [Read more](../start/guardrails.md#inbound-guardrails)

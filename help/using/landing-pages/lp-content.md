@@ -173,6 +173,10 @@ To define specific content that will enable users to select and submit their cho
 
     ![](assets/lp_designer-form-additionnal-update.png)
 
+    >[!NOTE]
+    >
+    >Each subscription list can be used only once in the form. If a checkbox already updates a subscription list, select a different list for the additional update, or the page returns a duplicate subscription list error. [Learn more about landing page errors](landing-page-errors.md)
+
 1. Save your content and click the arrow next to the page name to go back to the [landing page properties](create-lp.md#configure-primary-page).
 
     ![](assets/lp_designer-form-save.png)

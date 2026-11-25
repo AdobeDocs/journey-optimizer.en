@@ -59,6 +59,7 @@ When designing your emails, for better readability and improved accessibility, y
     >[!NOTE]
     >
     >Preheaders are not supported by all email clients. When not supported, the preheader does not display.
+    >The **[!UICONTROL Preheader]** field is not available when you use the [Code your own](code-content.md) mode. In that mode, add the preheader text directly in your HTML code.
 
 * **[!UICONTROL Document title]**: This field, which corresponds to the `<title>` element, provides descriptive information about your email content, typically displayed as a tooltip on mouse hover. It can help users with disabilities by providing additional context, and can contribute to a better understanding of your content by search engines.
 

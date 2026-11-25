@@ -115,6 +115,9 @@ To create a subscription list, follow the steps below.
 
 Learn how to use your subscription list in [this use case](lp-use-cases.md#subscription-to-a-service).
 
+>[!NOTE]
+>
+>Each subscription list can be used only once on the primary page of a landing page. [Learn more](lp-content.md#use-form-component)
 
 ## Browse your subscription lists {#browse-subscription-lists}
 

@@ -32,6 +32,7 @@ For complete understanding, this information should be combined with the documen
 * The `now()` function is not supported in the Email Builder's expression language; while available in journey conditions, it cannot be used within email content or the code editor.
 * The personalization editor in the Email Designer has some function limitations compared to journey expressions.
 * Images from Adobe Experience Manager Assets cannot be referenced when using Code your own; store referenced images in a public location.
+* The code editor does not offer a Preheader field; add the preheader text directly in your HTML code.
 
 **Terminology:**
 
@@ -44,6 +45,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I switch from the code editor to the visual editor?** — No; once you choose Code your own, you stay in the code editor. (The separate advanced HTML editor does allow toggling between HTML and Desktop views.)
 * **Q: Can I use `now()` in email content or the code editor?** — No; `now()` is not supported in the Email Builder's expression language, though it is available in journey conditions. Use `getCurrentZonedDateTime()` (recommended) or `currentTimeInMillis()`.
 * **Q: Can I reference AEM Assets images in Code your own?** — No; store images referenced in your HTML code in a public location.
+* **Q: Why is there no Preheader field in Code your own mode?** — The code editor does not offer a Preheader field; add the preheader text directly in your HTML code.
 * **Q: How can I perform date calculations in email content?** — Pre-calculate date fields in your data pipeline or profile attributes, use date manipulation functions with profile date values, or use computed attributes.
 <!-- * **Q: When should I use Code your own?** — When you need full control over markup and have HTML skills. You stay in the code editor and cannot switch to the visual editor. -->
 
