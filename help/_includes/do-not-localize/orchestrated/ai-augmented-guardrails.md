@@ -49,7 +49,6 @@ For complete understanding, this information should be combined with the documen
 * Each table must have a defined primary key.
 * The `table_name` assigned during dataset creation is permanent.
 * Field groups are not supported in the current data modeling framework.
-* Support for composite primary keys with file-upload flows is not available at this time.
 * Only scalar attributes are supported in audience definitions; maps and arrays are not allowed.
 * Segmentation activities primarily rely on relational data; profile data can be included, but using large profile datasets may impact performance.
 * Limits are enforced on the number of profile attributes that can be used in both batch and streaming audiences, but the page does not state the figures.
