@@ -30,7 +30,7 @@ Short on time? Start with [In the spotlight](#spotlight) and [Good to know](#goo
 
 Feeling lost among the Decisioning terms? November brought a map, a troubleshooting guide, and a bigger FAQ. Start with the first page below, or jump straight to the one you need.
 
-![Diagram of the five questions behind every decision and the objects that answer them. Who qualifies, and how often? The profile and context data, audiences, decision rules, and capping rules. What can be shown? Decision items and collections. How are items chosen? Ranking methods, selection strategies, and the decision policy. Where is it delivered? Channel configurations, placements (email only), and the content of campaigns and journeys. Why: is it working? Decision events and reports.](../experience-decisioning/assets/decisioning-five-questions.png){width="80%" align="center" zoomable="yes"}
+![Diagram of the five questions behind every decision and the objects that answer them. Who qualifies, and how often? The profile and context data, audiences, decision rules, and capping rules. What can be shown? Decision items and collections. How are items chosen? Ranking methods, selection strategies, and the decision policy. Where is it delivered? Channel configurations, placements (email only), and the content of campaigns and journeys. Why: is it working? Decision events and reports.](../experience-decisioning/assets/decisioning-five-questions.png){width="90%" align="center" zoomable="yes"}
 
 | Page | What you get | Status |
 | --- | --- | --- |
@@ -126,8 +126,10 @@ Changes, limits, and pitfalls that can surprise you. Each row links to the secti
 
 | Topic | What to know | Go to the section |
 | --- | --- | --- |
+| **Special characters in personalized URLs**<br>*Oct 2026* | Use three curly braces (`{{{ ... }}}`) for the dynamic part of a personalized URL, so that escaping does not alter special characters such as `/` and `+`. Otherwise the URL can break, redirect to the wrong place, or cause tracking issues. Raw output is inserted as is, so use it only with values you know are URL-safe. | [Use triple curly braces in personalized URLs](../email/url-personalization.md#use-braces) |
 | **Frequency capping and identity namespaces**<br>*Nov 2026* | Channel capping works for all identity namespaces selected while you author a campaign or journey. Profile counters are tracked separately for each namespace, so capping on one namespace does not affect another. | [Frequency capping by channel and communication type](../conflict-prioritization/channel-capping.md) |
 | **Quiet hours and time zones**<br>*Nov 2026* | When you use the recipient's local time zone, make sure profiles include a time zone value: quiet hours are not enforced for profiles that do not. | [Choose a time zone mode](../conflict-prioritization/quiet-hours.md#choose-time-zone) |
+| **Decisioning changes take time to apply**<br>*Nov 2026* | Changes to a decision policy and to the objects it uses, such as adding an item to a collection or changing a rule, can take up to 15 minutes to propagate across all data regions, and up to 30 minutes for Canada. After you approve an item or create a capping rule, it can also take up to 15 minutes before events count toward the cap. Allow for this delay when you test a change. | [When do changes take effect?](../experience-decisioning/decisioning-troubleshooting.md#timing) |
 
 ## Numbers to remember {#numbers}
 
