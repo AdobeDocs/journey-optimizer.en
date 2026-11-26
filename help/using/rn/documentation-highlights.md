@@ -17,7 +17,7 @@ level: Beginner, Intermediate
 
 >[!ENDSHADEBOX]
 
-Short on time? Start with [In the spotlight](#spotlight) and [Good to know](#good-to-know).
+This page is for marketers, journey and campaign designers, and administrators of [!DNL Journey Optimizer]. Short on time? Start with [In the spotlight](#spotlight) and [Good to know](#good-to-know).
 
 >[!NOTE]
 >
@@ -118,18 +118,18 @@ Changes, limits, and pitfalls that can surprise you. Each row links to the secti
 
 | Topic | What to know | Go to the section |
 | --- | --- | --- |
-| **Time-to-live rollout delayed**<br>*Oct 2026* | The time-to-live (TTL) guardrail already applies to new sandboxes and new organizations. Adobe has delayed the rollout to existing customer sandboxes, originally planned for October 1, 2026, and notifies impacted customers before it enforces the TTL. | [Datasets Time-to-live (TTL) guardrails](../data/datasets-ttl.md) |
-| **Supplemental IDs and external audiences**<br>*Nov 2026* | When you create an external audience through the API and it has several rows for the same profile, set `expressActivation: true` at creation. The flag defaults to `false` and cannot be changed afterwards. Without it, only one row per profile is admitted and the other rows, with their supplemental IDs, are not activated. Federated Audience Composition sets it for you. | [Supplemental identifiers with external audiences](../building-journeys/supplemental-identifier.md#external-audiences) |
-| **Open tracking consent and existing messages**<br>*Nov 2026* | After you turn on **[!UICONTROL Honor open tracking consent]**, republish your transactional messages once, and republish read audience journeys to apply the setting to future runs. Scheduled marketing campaigns and event-based journeys need no action. | [Apply the option to existing messages](../email/open-tracking-consent.md#existing-messages) |
+| **Time-to-live rollout delayed**<br>*Change · Oct 2026* | The time-to-live (TTL) guardrail already applies to new sandboxes and new organizations. Adobe has delayed the rollout to existing customer sandboxes, originally planned for October 1, 2026, and notifies impacted customers before it enforces the TTL. | [Datasets Time-to-live (TTL) guardrails](../data/datasets-ttl.md) |
+| **Supplemental IDs and external audiences**<br>*Action · Nov 2026* | When you create an external audience through the API and it has several rows for the same profile, set `expressActivation: true` at creation. The flag defaults to `false` and cannot be changed afterwards. Without it, only one row per profile is admitted and the other rows, with their supplemental IDs, are not activated. Federated Audience Composition sets it for you. | [Supplemental identifiers with external audiences](../building-journeys/supplemental-identifier.md#external-audiences) |
+| **Open tracking consent and existing messages**<br>*Action · Nov 2026* | After you turn on **[!UICONTROL Honor open tracking consent]**, republish your transactional messages once, and republish read audience journeys to apply the setting to future runs. Scheduled marketing campaigns and event-based journeys need no action. | [Apply the option to existing messages](../email/open-tracking-consent.md#existing-messages) |
 
 ### Limits and pitfalls {#pitfalls}
 
 | Topic | What to know | Go to the section |
 | --- | --- | --- |
-| **Special characters in personalized URLs**<br>*Oct 2026* | Use three curly braces (`{{{ ... }}}`) for the dynamic part of a personalized URL, so that escaping does not alter special characters such as `/` and `+`. Otherwise the URL can break, redirect to the wrong place, or cause tracking issues. Raw output is inserted as is, so use it only with values you know are URL-safe. | [Use triple curly braces in personalized URLs](../email/url-personalization.md#use-braces) |
-| **Frequency capping and identity namespaces**<br>*Nov 2026* | Channel capping works for all identity namespaces selected while you author a campaign or journey. Profile counters are tracked separately for each namespace, so capping on one namespace does not affect another. | [Frequency capping by channel and communication type](../conflict-prioritization/channel-capping.md) |
-| **Quiet hours and time zones**<br>*Nov 2026* | When you use the recipient's local time zone, make sure profiles include a time zone value: quiet hours are not enforced for profiles that do not. | [Choose a time zone mode](../conflict-prioritization/quiet-hours.md#choose-time-zone) |
-| **Decisioning changes take time to apply**<br>*Nov 2026* | Changes to a decision policy and to the objects it uses, such as adding an item to a collection or changing a rule, can take up to 15 minutes to propagate across all data regions, and up to 30 minutes for Canada. After you approve an item or create a capping rule, it can also take up to 15 minutes before events count toward the cap. Allow for this delay when you test a change. | [When do changes take effect?](../experience-decisioning/decisioning-troubleshooting.md#timing) |
+| **Special characters in personalized URLs**<br>*Pitfall · Oct 2026* | Use three curly braces (`{{{ ... }}}`) for the dynamic part of a personalized URL, so that escaping does not alter special characters such as `/` and `+`. Otherwise the URL can break, redirect to the wrong place, or cause tracking issues. Raw output is inserted as is, so use it only with values you know are URL-safe. | [Use triple curly braces in personalized URLs](../email/url-personalization.md#use-braces) |
+| **Frequency capping and identity namespaces**<br>*Limit · Nov 2026* | Channel capping works for all identity namespaces selected while you author a campaign or journey. Profile counters are tracked separately for each namespace, so capping on one namespace does not affect another. | [Frequency capping by channel and communication type](../conflict-prioritization/channel-capping.md) |
+| **Quiet hours and time zones**<br>*Pitfall · Nov 2026* | When you use the recipient's local time zone, make sure profiles include a time zone value: quiet hours are not enforced for profiles that do not. | [Choose a time zone mode](../conflict-prioritization/quiet-hours.md#choose-time-zone) |
+| **Decisioning changes take time to apply**<br>*Limit · Nov 2026* | Changes to a decision policy and to the objects it uses, such as adding an item to a collection or changing a rule, can take up to 15 minutes to propagate across all data regions, and up to 30 minutes for Canada. After you approve an item or create a capping rule, it can also take up to 15 minutes before events count toward the cap. Allow for this delay when you test a change. | [When do changes take effect?](../experience-decisioning/decisioning-troubleshooting.md#timing) |
 
 ## Numbers to remember {#numbers}
 
