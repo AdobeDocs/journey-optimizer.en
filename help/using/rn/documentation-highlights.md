@@ -21,106 +21,94 @@ Short on time? Start with [In the spotlight](#spotlight) and [Good to know](#goo
 
 >[!NOTE]
 >
->This page highlights documentation changes only. For new product features, see the [Release notes](release-notes.md).
+>This page highlights documentation changes only, and picks the ones that are worth your time.
 >
->[Documentation updates](documentation-updates.md) lists every change, month by month. This page picks the ones that are worth your time.
+>* For new product features, see the [Release notes](release-notes.md).
+>* For a month-by-month list of every documentation change, see the [Documentation updates](documentation-updates.md).
 
 ## In the spotlight: Decisioning, end to end {#spotlight}
 
-Feeling lost among the Decisioning terms? November brought a map, a troubleshooting guide, and a bigger FAQ. Follow the numbered path below, or jump straight to the step you need.
+Feeling lost among the Decisioning terms? November brought a map, a troubleshooting guide, and a bigger FAQ. Start with the first page below, or jump straight to the one you need.
 
-![Diagram of the five questions behind every decision and the objects that answer them. Who qualifies, and how often? The profile and context data, audiences, decision rules, and capping rules. What can be shown? Decision items and collections. How are items chosen? Ranking methods, selection strategies, and the decision policy. Where is it delivered? Channel configurations, placements (email only), and the content of campaigns and journeys. Why: is it working? Decision events and reports.](../experience-decisioning/assets/decisioning-five-questions.png){zoomable="yes"}
+![Diagram of the five questions behind every decision and the objects that answer them. Who qualifies, and how often? The profile and context data, audiences, decision rules, and capping rules. What can be shown? Decision items and collections. How are items chosen? Ranking methods, selection strategies, and the decision policy. Where is it delivered? Channel configurations, placements (email only), and the content of campaigns and journeys. Why: is it working? Decision events and reports.](../experience-decisioning/assets/decisioning-five-questions.png){width="80%" align="center" zoomable="yes"}
 
 | Page | What you get | Status |
 | --- | --- | --- |
-| 1. [How Decisioning works](../experience-decisioning/how-decisioning-works.md) | The map: how decision items, collections, rules, ranking methods, selection strategies, and decision policies fit together, and what happens each time a profile needs content. | **New page** · Nov 2026 |
-| 2. [Get started with Decisioning](../experience-decisioning/gs-experience-decisioning.md#prerequisites) | The process chart now comes before the steps, a new **Prerequisites** section lists the permissions you need, and **Go further with Decisioning** replaces the Decisioning landing page. | **Reorganized** · Nov 2026 |
-| 3. [Create AI models](../experience-decisioning/ranking/create-ai-models.md#use-ai-model) | The prerequisites for profile and context features, how to use an AI model in a selection strategy and a decision policy, and how to pass context values in the decision request. | **Expanded** · Nov 2026 |
-| 4. [Troubleshoot Decisioning](../experience-decisioning/decisioning-troubleshooting.md#troubleshooting) | How eligibility, capping, ranking, and fallback items decide what a profile receives, and a checklist to find out why an item was or was not shown. | **New page** · Nov 2026 |
-| 5. [Decisioning frequently asked questions](../experience-decisioning/decisioning-faq.md) | Answers on getting started, key concepts, Decision management versus Decisioning, eligibility, capping rules, strategy order, ranking formulas, and troubleshooting. | **Expanded** · Nov 2026 |
-| 6. [Get started with decision management](../offers/get-started/starting-offer-decisioning.md) | Decision management pages now start with a banner that identifies them as the legacy capability and links to the Decisioning equivalent. To see how the objects map, read [Coming from Decision management?](../experience-decisioning/how-decisioning-works.md#compare) | **Updated** · Nov 2026 |
+| [How Decisioning works](../experience-decisioning/how-decisioning-works.md) | The map: how decision items, collections, rules, ranking methods, selection strategies, and decision policies fit together, and what happens each time a profile needs content. | **New page** · Nov 2026 |
+| [Get started with Decisioning](../experience-decisioning/gs-experience-decisioning.md#prerequisites) | The process chart now comes before the steps, a new **Prerequisites** section lists the permissions you need, and **Go further with Decisioning** replaces the Decisioning landing page. | **Reorganized** · Nov 2026 |
+| [Create AI models](../experience-decisioning/ranking/create-ai-models.md#use-ai-model) | The prerequisites for profile and context features, how to use an AI model in a selection strategy and a decision policy, and how to pass context values in the decision request. | **Expanded** · Nov 2026 |
+| [Troubleshoot Decisioning](../experience-decisioning/decisioning-troubleshooting.md#troubleshooting) | How eligibility, capping, ranking, and fallback items decide what a profile receives, and a checklist to find out why an item was or was not shown. | **New page** · Nov 2026 |
+| [Decisioning frequently asked questions](../experience-decisioning/decisioning-faq.md) | Answers on getting started, key concepts, Decision management versus Decisioning, eligibility, capping rules, strategy order, ranking formulas, and troubleshooting. | **Expanded** · Nov 2026 |
+| [Get started with decision management](../offers/get-started/starting-offer-decisioning.md) | Decision management pages now start with a banner that identifies them as the legacy capability and links to the Decisioning equivalent. To see how the objects map, read [Coming from Decision management?](../experience-decisioning/how-decisioning-works.md#compare) | **Updated** · Nov 2026 |
 
 ## New and notable {#new}
 
 New pages and sections that are worth a bookmark.
 
-:::: landing-cards-container
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="../../rp_landing_pages/troubleshooting-overview-landing-page.md">
+<img alt="Fix errors faster" src="../assets/do-not-localize/troubleshooting.jpeg" style="aspect-ratio:3/2;object-fit:cover;width:100%">
+</a>
+<div>
+<a href="../../rp_landing_pages/troubleshooting-overview-landing-page.md">Fix errors faster</a>
+</div>
+<p>A new troubleshooting overview and 14 error pages give the cause and the fix for each error code, grouped by family. <em>New section · Oct 2026</em></p>
+</td>
+<td>
+<a href="../configuration/archiving-overview.md">
+<img alt="Keep a copy of what you send" src="../assets/do-not-localize/privacy-audit.jpeg" style="aspect-ratio:3/2;object-fit:cover;width:100%">
+</a>
+<div>
+<a href="../configuration/archiving-overview.md">Keep a copy of what you send</a>
+</div>
+<p>Compare BCC email and Message Export to retain sent messages, and see why mirror pages and the Entity Dataset are not archiving options. <em>New section · Oct 2026</em></p>
+</td>
+<td>
+<a href="../campaigns/api-triggered-high-throughput.md#configure-high-throughput">
+<img alt="Set up High throughput yourself" src="../assets/do-not-localize/deliverability.jpeg" style="aspect-ratio:3/2;object-fit:cover;width:100%">
+</a>
+<div>
+<a href="../campaigns/api-triggered-high-throughput.md#configure-high-throughput">Set up High throughput yourself</a>
+</div>
+<p>Once your add-on is activated, set up High throughput in the UI: a dedicated IP pool and channel configuration for email, or a channel configuration for push. <em>New section · Oct 2026</em></p>
+</td>
+</tr></table>
 
-Fix errors faster
-
-A new troubleshooting overview and 14 error pages give the cause and the fix for each error code, grouped by family. *New section · Oct 2026*
-
-[Open the troubleshooting overview](../../rp_landing_pages/troubleshooting-overview-landing-page.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/file-alt.svg)
-
-Keep a copy of what you send
-
-Compare BCC email and Message Export to retain sent messages, and see why mirror pages and the Entity Dataset are not archiving options. *New section · Oct 2026*
-
-[Get started with message archiving](../configuration/archiving-overview.md)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
-
-Set up High throughput yourself
-
-Once your add-on is activated, set up High throughput in the UI: a dedicated IP pool and channel configuration for email, or a channel configuration for push. *New section · Oct 2026*
-
-[Configure High throughput](../campaigns/api-triggered-high-throughput.md#configure-high-throughput)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/clock.svg)
-
-Get quiet hours right
-
-Choose between a standard time zone and the recipient's local time zone, and between queuing and discarding messages, and pair quiet hours with frequency capping. *New section · Nov 2026*
-
-[Read the best practices](../conflict-prioritization/quiet-hours.md#best-practices)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
-
-Know why an address is suppressed
-
-Suppression categories and failure reasons now sit with hard bounces, soft bounces, and spam complaints, and a Limited Availability option lets you include suppressed addresses in a specific email delivery. *Reorganized · Nov 2026*
-
-[Explore the suppression list](../reports/suppression-list.md#suppression-categories-and-reasons)
-:::
-
-:::
-![icon](https://cdn.experienceleague.adobe.com/icons/vial.svg)
-
-Test orchestrated campaigns safely
-
-Run the campaign flow test to validate how your activities are orchestrated, then test each channel activity to review its target population and exclusions without sending the message. *New section · Nov 2026*
-
-[Test your campaign](../orchestrated/start-monitor-campaigns.md#test)
-:::
-::::
-
-Here is how two of them look in the product.
-
-**Set up High throughput.** With the add-on activated, create a dedicated IP pool, then turn on **[!UICONTROL Create as a High throughput configuration]** in a Transactional email channel configuration. [Create a High throughput email channel configuration](../campaigns/api-triggered-high-throughput.md#configuration-guidelines)
-
-![Email channel configuration with Transactional selected and the Create as a High throughput configuration option turned on.](../campaigns/assets/high-throughput-email-config.png){zoomable="yes"}
-
-**Test an orchestrated campaign.** Select **[!UICONTROL Start]** in the campaign canvas to run the flow test. At a channel activity, **[!UICONTROL Run test]** simulates it without sending the message. [Test the campaign flow](../orchestrated/start-monitor-campaigns.md#test-flow)
-
-![Orchestrated campaign canvas with the Start button highlighted in the toolbar and a flow of Fork, Build audience, and Union activities.](../orchestrated/assets/campaign-start.png){zoomable="yes"}
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="../conflict-prioritization/quiet-hours.md#best-practices">
+<img alt="Get quiet hours right" src="../assets/do-not-localize/start-campaign.jpeg" style="aspect-ratio:3/2;object-fit:cover;width:100%">
+</a>
+<div>
+<a href="../conflict-prioritization/quiet-hours.md#best-practices">Get quiet hours right</a>
+</div>
+<p>Best practices for choosing a time zone mode, queuing or discarding messages, and pairing quiet hours with frequency capping. <em>New section · Nov 2026</em></p>
+</td>
+<td>
+<a href="../reports/suppression-list.md#suppression-categories-and-reasons">
+<img alt="Know why an address is suppressed" src="../assets/do-not-localize/list.jpeg" style="aspect-ratio:3/2;object-fit:cover;width:100%">
+</a>
+<div>
+<a href="../reports/suppression-list.md#suppression-categories-and-reasons">Know why an address is suppressed</a>
+</div>
+<p>Suppression categories and failure reasons now sit with hard bounces, soft bounces, and spam complaints. <em>Reorganized · Nov 2026</em></p>
+</td>
+<td>
+<a href="../orchestrated/start-monitor-campaigns.md#test">
+<img alt="Test orchestrated campaigns safely" src="../assets/do-not-localize/start-journey.jpeg" style="aspect-ratio:3/2;object-fit:cover;width:100%">
+</a>
+<div>
+<a href="../orchestrated/start-monitor-campaigns.md#test">Test orchestrated campaigns safely</a>
+</div>
+<p>Run the campaign flow test, then test each channel activity to review its target population and exclusions without sending the message. <em>New section · Nov 2026</em></p>
+</td>
+</tr></table>
 
 Also new:
 
 * [Choose a consent level for opt-outs](../email/consent-level.md): decide whether an opt-out applies to every email address of a profile or only to the address that received the message. *New page · Oct 2026*
 * [Configure OAuth 2.0 authentication](../custom-channel/custom-channel-oauth2.md): set up the token request, credential paths, and token extraction for custom channels. *New page · Oct 2026*
-* [Add multiple inbound actions](../delivery/multiple-inbound-actions.md): one page in the **Execution settings** section, for journeys and action campaigns. *Reorganized · Nov 2026*
 
 ## Good to know {#good-to-know}
 
@@ -140,12 +128,6 @@ Changes, limits, and pitfalls that can surprise you. Each row links to the secti
 | --- | --- | --- |
 | **Frequency capping and identity namespaces**<br>*Nov 2026* | Channel capping works for all identity namespaces selected while you author a campaign or journey. Profile counters are tracked separately for each namespace, so capping on one namespace does not affect another. | [Frequency capping by channel and communication type](../conflict-prioritization/channel-capping.md) |
 | **Quiet hours and time zones**<br>*Nov 2026* | When you use the recipient's local time zone, make sure profiles include a time zone value: quiet hours are not enforced for profiles that do not. | [Choose a time zone mode](../conflict-prioritization/quiet-hours.md#choose-time-zone) |
-| **Custom upload audiences and inbound channels**<br>*Oct 2026* | Custom upload (CSV) audiences cannot target inbound channel actions such as in-app messages, web, and code-based experiences. Campaigns that use one fail with an upstream error. Select an audience created with a segment definition instead. | [Audience activation guardrails](../audience/target-audiences.md#guardrails) |
-| **Throttle delivery in API-triggered campaigns**<br>*Nov 2026* | The **[!UICONTROL Throttle delivery]** option is not supported, in standard or High throughput mode, and a **[!UICONTROL Delivery rate]** entered in **[!UICONTROL Delivery settings]** is not applied. Pace your API calls upstream to limit the sending rate. | [Set rate control](../campaigns/api-triggered-campaign-schedule.md#set-rate-control) |
-| **Decision requests in the same millisecond**<br>*Nov 2026* | Requests that arrive at the exact same millisecond with the same timestamp may be processed out of order or treated as duplicates, which can return fallback offers instead of personalized ones. Remove the client-side timestamp, or give each request a unique, current timestamp. | [Decision requests](../experience-decisioning/decisioning-guardrails.md#decision-requests) |
-| **Event duplication**<br>*Nov 2026* | Events can be duplicated, for example during infrastructure auto-scaling or because of duplication from Adobe Experience Platform. [!DNL Journey Optimizer] is designed for "at-least-once" processing, so duplicates can occur in limited, rare situations. | [Event duplication handling](../event/about-events.md#event-duplication) |
-| **Subscription lists on landing pages**<br>*Nov 2026* | Each subscription list can be used only once on a primary page. If a checkbox already updates a list, pick a different list for the additional update, or the page returns a duplicate subscription list error. | [Use the form component](../landing-pages/lp-content.md#use-form-component) |
-| **Preheader in Code your own**<br>*Nov 2026* | The code editor has no **[!UICONTROL Preheader]** field. Add the preheader text directly in your HTML code. | [Use the code editor](../email/code-content.md#use-code-editor) |
 
 ## Numbers to remember {#numbers}
 
