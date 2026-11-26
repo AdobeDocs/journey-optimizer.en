@@ -337,7 +337,7 @@ You can subscribe at the journey level or at the sandbox level. Learn more in [S
 
 This alert notifies you when the organization-wide journey event throughput guardrail has been exceeded and the resulting event queueing time exceeds the configured threshold, measured in seconds.
 
-It is not tied to a single journey. When the event throughput guardrail is exceeded for the organization as a whole, all events for all journeys in all sandboxes are queued and processed at 5,000 events per second for as long as the throughput exceeds the limit. A single alert is sent when the queueing time exceeds the configured alert threshold.
+It is not tied to a single journey. When the event throughput guardrail is exceeded for the organization as a whole, the events of the affected lane, for all journeys in all sandboxes, are queued and processed at 5,000 events per second for as long as the throughput exceeds the limit. A single alert is sent when the queueing time exceeds the configured alert threshold.
 
 ➡️ [Learn more about journey event throughput limits](../event/about-events.md#event-throughput)
 

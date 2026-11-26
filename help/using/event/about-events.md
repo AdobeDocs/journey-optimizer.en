@@ -186,7 +186,7 @@ Use this summary to plan your implementation before configuring events.
 
 | Constraint | Details |
 | --- | --- |
-| Throughput limit | 5,000 events per second per organization, across all sandboxes (unitary and Read Audience journeys) |
+| Throughput limit | 5,000 events per second for each of the three independent lanes (Profile & Organisational events, technical events for Unitary journeys, technical events for Read Audience based journeys), per organization, across all sandboxes. [Learn more](#event-throughput) |
 | Reentrance block | By default, a profile cannot reenter the same unitary journey for 5 minutes (configurable with the reentrance wait period) |
 | Business events per journey | Maximum 1, must be the first step |
 | Mix business + unitary in one journey | Not supported |
@@ -211,16 +211,21 @@ Event duplication can occur in various scenarios, such as, but not limited to:
 
 ## Event throughput limits {#event-throughput}
 
-Adobe Journey Optimizer enforces separate throughput limits per event type, at an organization level across all sandboxes:
+Adobe Journey Optimizer enforces throughput limits through three independent lanes. Each lane has its own quota of **5,000 events per second**, at an organization level across all sandboxes. The quota of a lane is not shared with the other lanes.
 
-* **Unitary events**: 5,000 events per second
-* **Read Audience based journey events**: 5,000 events per second
+| Lane | Events included | Limit |
+|---|---|---|
+| **[Profile & Organisational events](#profile-org-events)** | Events emitted by the organization or by profiles: external unitary events, audience qualification events, reaction events, business events, and analytics events. | 5,000 events per second |
+| **[Technical events for Unitary journeys](#technical-events)** | Technical events emitted by Unitary journeys: resume events, wait node completion events, and quiet hours based events. | 5,000 events per second |
+| **[Technical events for Read Audience based journeys](#technical-events)** | Technical events emitted by Read Audience based journeys: resume events, wait node completion events, and quiet hours based events. | 5,000 events per second |
 
-These limits apply to all events used in active journeys, which includes **Live**, **Dry run**, **Closed** and **Paused** journeys. A dry run is a journey publication mode that runs your journey against real production data without contacting customers. [Learn more about Journey Dry run](../building-journeys/journey-dry-run.md). When a limit is reached, new events get queued and processed at 5,000 per second until the queue is drained.
+These limits apply to all events used in active journeys, which includes **Live**, **Dry run**, **Closed** and **Paused** journeys. A dry run is a journey publication mode that runs your journey against real production data without contacting customers. [Learn more about Journey Dry run](../building-journeys/journey-dry-run.md). When the limit of a lane is reached, new events of that lane get queued and processed at 5,000 per second until the queue is drained.
 
 For more details on journey processing rates and how different journey types impact throughput, [learn more on journey processing rates](../building-journeys/entry-management.md#journey-processing-rate).
 
-The following types of events are counted toward these quotas:
+### Profile & Organisational events {#profile-org-events}
+
+The following types of events are counted toward the **Profile & Organisational events** quota:
 
 * **External Unitary Events**: Includes both rule-based and system-generated events. If the same raw event qualifies for multiple rule definitions, each matched rule counts as a separate event toward the quota.
 
@@ -232,13 +237,21 @@ The following types of events are counted toward these quotas:
 
 * **Analytics Events**: If the [integration with Adobe Analytics to trigger journeys](about-analytics.md) has been enabled, these events are also included.
 
+>[!NOTE]
+>
+>These events also count toward the **Profile & Organisational events** quota when they are used in journeys based on read audiences.
+
+### Technical events {#technical-events}
+
+Technical events are emitted by the journeys themselves. They are counted toward the quota of the lane that matches the journey type: **Technical events for Unitary journeys** or **Technical events for Read Audience based journeys**. This quota is not shared with the **Profile & Organisational events** quota.
+
+The following types of events are technical events:
+
 * **Resume Events**: Technical event triggered when a profile resumes from a paused journey. Learn more about [resuming paused journeys](../building-journeys/journey-pause.md#journey-resume-steps).
 
 * **Wait Node Completion Events**: When a profile exits a wait node, a technical event is generated to resume the journey.
 
->[!NOTE]
->
->Except for wait and resume events, all other event types also count toward the quota when used in journeys based on read audiences.
+* **Quiet Hours based events**: [Quiet hours](../conflict-prioritization/quiet-hours.md) let you define time-based exclusions for Email, Mobile message, Push, and WhatsApp channels. They ensure that no messages are sent during specific periods of time, helping you respect customer preferences and compliance requirements.
 
 ## Updating and deleting an event {#update-event}
 

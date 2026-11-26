@@ -76,7 +76,7 @@ How profiles enter journeys and their expected rate depends on the first activit
 
 * **Audience qualification** journeys (unitary scenario, where you want to trigger a journey when a profile qualifies or disqualifies for a streaming audience): the maximum is 5,000 TPS. Note that this is a shared limit with journeys starting with events and is also shared across journeys at an **organization level**.
 
-* **Unitary event** journeys (unitary scenario, where you want to trigger a journey when an event is emitted from a profile): same as above, both sharing the same 5,000 TPS limit. More information regarding journey event throughput is available in [this section](../event/about-events.md#event-thoughput).
+* **Unitary event** journeys (unitary scenario, where you want to trigger a journey when an event is emitted from a profile): same as above, both sharing the same 5,000 TPS limit. More information regarding journey event throughput is available in [this section](../event/about-events.md#event-throughput).
 
 * **Business event** journeys (a unitary-to-batch scenario because a business event is always followed by a Read audience): business events count toward the 5,000 TPS quota. The Read audience activity that follows has the same limit as journeys starting with a Read audience (20,000 TPS).
 
