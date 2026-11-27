@@ -95,6 +95,10 @@ In this example, you build an audience to target all customers living in Atlanta
 
         ![](assets/add-events.png)
 
+        >[!NOTE]
+        >
+        >When building segments for email opens in AJO, use `_experience.customerJourneyManagement.messageInteraction.interactionType = 'open'` from the AJO Email Tracking Experience Event Schema. The `directMarketing.emailOpened` event is not used by AJO's email tracking dataset. Learn more in [Email tracking Experience event dataset](../data/datasets-query-examples.md#email-tracking-experience-event-dataset).
+
 1. As you are adding and configuring new fields in the workspace, the **[!UICONTROL Audience Properties]** pane is automatically updated with information on the estimated profiles belonging to the audience.
 
     ![](assets/segment-estimate.png)

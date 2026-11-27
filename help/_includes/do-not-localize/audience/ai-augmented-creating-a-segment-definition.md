@@ -35,6 +35,7 @@ For complete understanding, this information should be combined with the documen
 * The `frequencyMap` attribute is not supported for use in segment definitions and cannot be used as part of audience segmentation criteria; for frequency-based targeting, consider frequency capping rules under business rules.
 * As of November 1st, 2024, streaming segmentation no longer supports the use of send and open events from Journey Optimizer tracking and feedback datasets; this applies to all customer sandboxes and organizations.
 * Send and open events can still be used in batch segments, but if included in a streaming segment they are evaluated in a batch manner; clicks and other tracking events remain available for streaming segmentation.
+* To build an audience on email opens, use `_experience.customerJourneyManagement.messageInteraction.interactionType = 'open'` from the AJO Email Tracking Experience Event Schema; the `directMarketing.emailOpened` event is not used by AJO's email tracking dataset.
 * Edge segmentation can currently evaluate only select query types.
 * Batch segmentation is evaluated every 24 hours; attempts to force an immediate update do not override the daily cycle.
 * After an audience is first defined, backfilling the audience from prior data can take up to 24 hours.
@@ -51,6 +52,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I start creating a segment definition?** — From the Audiences menu, select Create audience and then Build rule.
 * **Q: Can I use the `frequencyMap` attribute in a segment definition?** — No; it is not supported and cannot be used as segmentation criteria. Consider frequency capping rules under business rules instead.
 * **Q: Can I still use send and open events in streaming segmentation?** — No; as of November 1st, 2024, streaming segmentation no longer supports send and open events from Journey Optimizer tracking and feedback datasets, though they remain usable in batch segments.
+* **Q: Which field do I use to build an audience of people who opened an email?** — Use `_experience.customerJourneyManagement.messageInteraction.interactionType = 'open'` from the AJO Email Tracking Experience Event Schema, not the `directMarketing.emailOpened` event.
 * **Q: How long does backfilling take?** — Backfilling the audience from prior data can take up to 24 hours after the audience is first defined.
 * **Q: How many audiences can I evaluate on demand at once?** — Up to 20 audiences per flexible audience evaluation run, and they must have the origin "Segmentation Service", use batch segmentation, and be people-based; ineligible audiences are automatically excluded.
 
