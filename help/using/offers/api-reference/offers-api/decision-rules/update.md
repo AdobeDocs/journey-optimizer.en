@@ -52,6 +52,10 @@ You can modify or update decision rules by making a PATCH request to the [!DNL O
 
 For more information on JSON Patch, including available operations, see the official [JSON Patch documentation](https://jsonpatch.com/).
 
+>[!IMPORTANT]
+>
+>To change a decision rule, update only `condition.value` through the API, or make the change in the user interface. Editing the `segmentModel` through the API is not supported: it can leave the rule disabled and inaccessible in the user interface, because the user interface model no longer matches the rule logic. A rule updated through the API cannot be reliably reopened or edited in the user interface.
+
 ## Accept and Content-Type headers {#accept-and-content-type-headers}
 
 The following table shows the valid values which comprise the *Content-Type* field in the request header:

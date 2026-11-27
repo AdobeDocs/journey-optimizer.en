@@ -33,9 +33,15 @@ level_v2:
 ---
 # Update an eligibility rule {#update-eligibility-rule}
 
-You can modify or update a rule by making a PUT request to the Offer Library API.
+You can modify or update a rule by making a PATCH request to the Offer Library API.
 
-For more information on JSON PUT, including available operations, see the official [JSON PUT documentation](https://jsonpatch.com/).
+For more information on JSON Patch, including available operations, see the official [JSON Patch documentation](https://jsonpatch.com/).
+
+The `condition.value` parameter contains the formula that is evaluated when the rule is applied, which the **[!UICONTROL More info]** icon displays. The `segmentModel` parameter contains the model that the rule builder displays.
+
+>[!IMPORTANT]
+>
+>To change an eligibility rule, update only `condition.value` through the API, or make the change in the user interface. Editing the `segmentModel` through the API is not supported: it can leave the rule disabled and inaccessible in the user interface, because the user interface model no longer matches the rule logic. A rule updated through the API cannot be reliably reopened or edited in the user interface.
 
 **Accept and Content-Type headers**
 
@@ -48,7 +54,7 @@ The following table shows the valid values which comprise the Content-Type field
 **API format**
 
 ```http
-PUT /{ENDPOINT_PATH}/offer-rules/{ID}
+PATCH /{ENDPOINT_PATH}/offer-rules/{ID}
 ```
 
 | Parameter | Description | Example |

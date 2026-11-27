@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Update decision rules** and **Update an eligibility rule** pages now state that, to change a rule through the API, you must update only `condition.value` or make the change in the user interface. Editing the `segmentModel` through the API is not supported and can leave the rule disabled and inaccessible in the user interface. The **Update an eligibility rule** page also explains the `condition.value` and `segmentModel` parameters, and now correctly refers to a PATCH request. [Read more](../experience-decisioning/api-reference/eligibility-rules/update.md)
+
 * The **Define landing page-specific content**, **Landing page use cases**, **Create a subscription list**, and **Landing page errors** pages now highlight that each subscription list can be used only once on a primary page, including when a checkbox and the additional update of the form button point to the same list. [Read more](../landing-pages/lp-content.md#use-form-component)
 
 * The **Code your own email content** page and the **Add metadata to your email content** page now state that the **Preheader** field is not available in Code your own mode, and that you must add the preheader text directly in your HTML code. [Read more](../email/code-content.md)
