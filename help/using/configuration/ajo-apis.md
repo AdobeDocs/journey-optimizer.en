@@ -88,12 +88,12 @@ To walk through your first call, see [Make your first API call](first-api-call.m
 
 ## Troubleshoot API calls {#troubleshooting}
 
-For authentication and permission errors, see [Fix common errors](first-api-call.md#errors). For errors returned by a specific API, use the page that matches your task:
+For authentication and permission errors, see [Fix common errors](first-api-call.md#errors). For errors in a specific area, see:
 
-| If you work with | See |
-| ---------------- | --- |
+| Area | See |
+| ---- | --- |
 | API-triggered campaigns and Action campaigns | [Campaign errors](../campaigns/campaign-errors.md) |
-| Journeys and capping or throttling | [Error codes reference](../building-journeys/error-codes-reference.md) · [Troubleshoot custom actions](../action/troubleshoot-custom-action.md) |
+| Journeys and custom actions | [Error codes reference](../building-journeys/error-codes-reference.md) · [Troubleshoot custom actions](../action/troubleshoot-custom-action.md) |
 | Content templates and fragments | [Content authoring errors](../content-management/content-authoring-errors.md) · [Fragments and AEM content errors](../content-management/fragments-errors.md) |
 | Simulations and proofs | [Proof and simulation errors](../content-management/proof-simulation-errors.md) |
 | Orchestrated campaigns | [Orchestrated campaign errors](../orchestrated/orchestrated-campaign-errors.md) |

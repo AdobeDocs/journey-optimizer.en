@@ -60,15 +60,15 @@ For the detailed steps, see [Authentication](https://developer.adobe.com/journey
 
 ## Step 2: Get an access token {#token}
 
-Copy the scopes from the credential details of your project, then request a token:
+Request a token with the scopes shown for your credential in Adobe Developer Console:
 
 ```bash
 curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
-  -d 'grant_type=client_credentials&client_id={API_KEY}&client_secret={CLIENT_SECRET}&scope={SCOPES}'
+  -d 'grant_type=client_credentials&client_id={API_KEY}&client_secret={CLIENT_SECRET}&scope=openid,AdobeID,read_organizations,additional_info.projectedProductContext,session'
 ```
 
-Use the `access_token` value from the response as `{ACCESS_TOKEN}`. Tokens expire, so request a new one after a `401` error. [Learn more about access tokens](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-access-token){target="_blank"}
+Use the `access_token` value from the response as `{ACCESS_TOKEN}`. Tokens expire after 24 hours, so request a new one after a `401` error. [Learn more about generating an access token](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-access-token){target="_blank"}
 
 ## Step 3: Send a read-only request {#request}
 
@@ -100,7 +100,8 @@ A `200` response confirms that your credentials, permissions, and sandbox are se
 | Response | Cause and fix |
 | -------- | ------------- |
 | `401` | The access token is missing or expired. Request a new token. |
-| `403` | The product profile lacks the endpoint permission. Ask your administrator to check it on the target sandbox. |
+| Permission error | The product profile lacks the endpoint permission. Ask your administrator to check it on the target sandbox. |
+| `400` | The request has an invalid parameter, for example in `filter` or `pageSize`. Check the query string. |
 
 For other errors, see [Troubleshoot API calls](ajo-apis.md#troubleshooting).
 
