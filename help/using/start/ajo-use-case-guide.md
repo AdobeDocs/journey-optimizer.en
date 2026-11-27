@@ -376,7 +376,6 @@ Browse curated video content by topic. Each tab links to the relevant tutorials 
 >[!TAB Journeys & campaigns]
 
 * [Introduction to building a journey](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"} — Build your first event-triggered journey.
-* [Build journeys with Journey Agent](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-agent-overview){target="_blank"} — Create journeys from a natural-language prompt.
 
 >[!TAB Personalization & intelligence]
 
