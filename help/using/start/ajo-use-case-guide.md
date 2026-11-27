@@ -94,7 +94,7 @@ For scenarios where you react to a customer action or event as it happens.
 
 >[!BEGINSHADEBOX]
 
-**Before you build:** you need (1) an [audience defined in Adobe Experience Platform](../audience/about-audiences.md) that identifies inactive profiles (e.g. no purchase or login in 60 days), (2) a decision on re-engagement channel (email, push, or mobile), and (3) a suppression rule or [frequency cap](../conflict-prioritization/channel-capping.md) to avoid contacting recently messaged profiles. Use a **Read Audience** journey entry — not an event — for this scenario. [Coworker](../building-journeys/journeys-coworker-skills.md#journey-create) cannot set a recurring schedule, so configure the recurrence in the journey itself.
+**Before you build:** you need (1) an [audience defined in Adobe Experience Platform](../audience/about-audiences.md) that identifies inactive profiles (e.g. no purchase or login in 60 days), (2) a decision on re-engagement channel (email, push, or mobile), and (3) a suppression rule or [frequency cap](../conflict-prioritization/channel-capping.md) to avoid contacting recently messaged profiles. Use a **Read Audience** journey entry — not an event — for this scenario. If you create the journey with [Coworker](../building-journeys/journeys-coworker-skills.md#journey-create), set the recurring schedule in Journey Optimizer afterward, as Coworker does not support schedule recurrence.
 
 >[!ENDSHADEBOX]
 
@@ -102,7 +102,7 @@ For scenarios where you react to a customer action or event as it happens.
 | --- | --- | --- |
 | Test a journey with real data before activating it | Journey dry run | [Test your journey with dry run](../building-journeys/journey-dry-run.md) |
 | Pause a live journey to make edits without stopping in-flight profiles | Journey pause & resume | [Pause and resume a journey](../building-journeys/journey-pause.md) |
-| Build or optimize a journey from a natural-language prompt | Journey Agent **(AI)** | [AI agents](ai-features.md#ai-agents) · [Journey Agent tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-agent-overview){target="_blank"} |
+| Build or optimize a journey from a natural-language prompt | Coworker **(AI)** | [Coworker for journeys](../building-journeys/journeys-coworker-skills.md) · [Coworker skills for Journey Optimizer](ai-features.md#cx-coworker-skills) |
 
 ## Reach audiences at scale {#reach-at-scale}
 
@@ -376,7 +376,6 @@ Browse curated video content by topic. Each tab links to the relevant tutorials 
 >[!TAB Journeys & campaigns]
 
 * [Introduction to building a journey](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"} — Build your first event-triggered journey.
-* [Build journeys with Journey Agent](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-agent-overview){target="_blank"} — Create journeys from a natural-language prompt.
 
 >[!TAB Personalization & intelligence]
 
