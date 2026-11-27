@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Access & manage campaigns** page now states that a stopped one-time campaign can be resumed only once, within a limited time after it is stopped. [Read more](../campaigns/manage-campaigns.md#stop)
+
 * The **Get started with IP warmup plans** page now describes more accurately the community blog about scheduling IP warmup runs around the daily batch segmentation job. [Read more](../configuration/ip-warmup-gs.md#additional-resources)
 
 * The **Enrichment** activity page now states that, for an N cardinality collection link, each record in the primary set must have a unique join value; otherwise, the enriched data contains more records than expected. [Read more](../orchestrated/activities/enrichment.md#create-links)
