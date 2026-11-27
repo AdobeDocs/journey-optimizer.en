@@ -62,21 +62,30 @@ The detailed steps are in [Authentication](https://developer.adobe.com/journey-o
 
 ## Step 2: Get an access token {#token}
 
-Generate an access token from the project in Adobe Developer Console, or request one with your client ID and client secret. Access tokens expire, so generate a new token when a call returns a 401 error.
+Request an access token with your client ID and client secret. Copy the scopes from the credential details of your project in Adobe Developer Console.
+
+```bash
+curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -d 'grant_type=client_credentials&client_id={API_KEY}&client_secret={CLIENT_SECRET}&scope={SCOPES}'
+```
+
+The response contains the `access_token` value to use as `{ACCESS_TOKEN}` in the next step. Access tokens expire, so request a new token when a call returns a `401` error. You can also generate a token from the project in Adobe Developer Console.
 
 ## Step 3: Send a read-only request {#request}
 
-Start with a request that only reads data, such as listing journeys. Pick the endpoint in the [Journeys API reference](https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve){target="_blank"} and send it with these headers:
+Start with a request that only reads data, such as listing journeys. Copy the full URL of the list endpoint from the [Journeys API reference](https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve){target="_blank"} and send it with these headers:
 
-```http
-Authorization: Bearer {ACCESS_TOKEN}
-x-api-key: {API_KEY}
-x-gw-ims-org-id: {IMS_ORG}
-x-sandbox-name: {SANDBOX_NAME}
-Content-Type: application/json
+```bash
+curl -X GET '{ENDPOINT_URL}' \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {IMS_ORG}' \
+  -H 'x-sandbox-name: {SANDBOX_NAME}' \
+  -H 'Content-Type: application/json'
 ```
 
-Replace each placeholder with the values from the previous steps. You can also send the request from the interactive console on the API reference page, or use the [Postman collection for the Capping API](https://github.com/AdobeDocs/JourneyAPI/blob/master/postman-collections/Journeys_Capping-API_postman-collection.json){target="_blank"} as a starting point for your own collection.
+Replace each placeholder with the values from the previous steps. You can also send the request from the interactive console on the API reference page.
 
 A `200` response with a JSON body confirms that your credentials, permissions, and sandbox are set correctly.
 
@@ -88,7 +97,13 @@ A `200` response with a JSON body confirms that your credentials, permissions, a
 | `403` | The product profile does not include the permission the endpoint needs, or the integration is not linked to the profile | Ask your administrator to check the product profile permissions on the target sandbox |
 | `404` or an empty result | The path is wrong, or the sandbox does not contain the object | Check the endpoint path and the `x-sandbox-name` value |
 
+For errors returned by a specific API, see [Troubleshoot API calls](ajo-apis-v2.md#troubleshooting). For error code meanings, see the [Error codes reference](../building-journeys/error-codes-reference.md).
+
+## Step 4: Move to a real use case {#use-case}
+
+When the read-only call works, move to the call your integration needs. For example, to send an order confirmation from your own system, create an [API-triggered campaign](../campaigns/api-triggered-campaigns.md) and call the Interactive Message Execution API. See the [code samples](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples){target="_blank"} and the [Send transactional messages](../start/onboarding-hub.md#build-transactional) use case.
+
 ## Next steps {#next-steps}
 
-* [Work with Journey Optimizer APIs](ajo-apis.md): find the API for your task.
+* [Work with Journey Optimizer APIs](ajo-apis-v2.md): find the API for your task.
 * [Get started for developers](../start/path/developer.md): SDKs, events, and custom actions.
