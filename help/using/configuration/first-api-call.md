@@ -6,7 +6,6 @@ description: Create your credentials, get an access token, and send your first r
 feature: Integrations, Data Ingestion
 role: Developer
 level: Intermediate
-hide: true
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -97,7 +96,7 @@ A `200` response with a JSON body confirms that your credentials, permissions, a
 | `403` | The product profile does not include the permission the endpoint needs, or the integration is not linked to the profile | Ask your administrator to check the product profile permissions on the target sandbox |
 | `404` or an empty result | The path is wrong, or the sandbox does not contain the object | Check the endpoint path and the `x-sandbox-name` value |
 
-For errors returned by a specific API, see [Troubleshoot API calls](ajo-apis-v2.md#troubleshooting). For error code meanings, see the [Error codes reference](../building-journeys/error-codes-reference.md).
+For errors returned by a specific API, see [Troubleshoot API calls](ajo-apis.md#troubleshooting). For error code meanings, see the [Error codes reference](../building-journeys/error-codes-reference.md).
 
 ## Step 4: Move to a real use case {#use-case}
 
@@ -105,5 +104,5 @@ When the read-only call works, move to the call your integration needs. For exam
 
 ## Next steps {#next-steps}
 
-* [Work with Journey Optimizer APIs](ajo-apis-v2.md): find the API for your task.
+* [Work with Journey Optimizer APIs](ajo-apis.md): find the API for your task.
 * [Get started for developers](../start/path/developer.md): SDKs, events, and custom actions.

@@ -220,7 +220,7 @@ Not everything needs to happen through the Journey Optimizer UI. Sometimes you n
 
 1. **Find the API for your task**: Journey Optimizer APIs let you create, read, update, and delete various resources programmatically. Use [Work with Journey Optimizer APIs](../../configuration/ajo-apis.md#apis-by-task) to go from a task to the matching API reference and guide.
 
-1. **Authentication**: Follow [this tutorial](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"} to set up API authentication using Adobe Developer Console.
+1. **Authentication**: Follow [this tutorial](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"} to set up API authentication using Adobe Developer Console. Then [make your first API call](../../configuration/first-api-call.md) to confirm your setup.
 
 1. **Explore API references**: Browse the complete API documentation and try APIs directly in the [Adobe Journey Optimizer API reference](https://developer.adobe.com/journey-optimizer-apis){target="_blank"}.
 
