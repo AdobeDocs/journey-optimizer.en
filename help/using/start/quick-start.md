@@ -160,7 +160,7 @@ As a Marketer or Business Practitioner, you design customer journeys to deliver 
 
 **Key capabilities you'll use:**
 
-* **Journey Orchestration**: Create real-time, one-to-one customer engagement where each person moves through at their own pace, triggered by behavior or events across channels. Use the unified Action activity for all channel actions, the Content decision activity to integrate offers into journeys, and Journey Agent to create journeys from natural language prompts
+* **Journey Orchestration**: Create real-time, one-to-one customer engagement where each person moves through at their own pace, triggered by behavior or events across channels. Use the unified Action activity for all channel actions, the Content decision activity to integrate offers into journeys, and Coworker to create journeys from natural language prompts
 * **Campaign Orchestration**: Design and automate complex, multi-step batch campaigns at scale using a visual canvas. Perfect for brand-initiated campaigns like seasonal promotions, product launches, and account-based communications. Leverage multi-entity segmentation to create precise audiences by connecting customer data with related entities (accounts, purchases, bookings). Use wave sending to deliver messages in controlled batches
 * **Modern Message Designer**: Design and personalize email and mobile messages with a drag-and-drop interface. Edit out-of-the-box templates to accelerate time to market
 * **Decision Management**: Create and manage offers, eligibility rules, and other components in a centralized library that can be embedded in emails and customer touchpoints. Use Decisioning for push and mobile personalization
@@ -169,7 +169,7 @@ As a Marketer or Business Practitioner, you design customer journeys to deliver 
 * **AI/ML Services**: Leverage send-time optimization and predictive engagement scores to target high-value customers and minimize churn risk
 * **Delivery Control**: Use quiet hours (time-based exclusions) and conflict management to respect customer preferences and prevent over-communication
 
-**Start with:** Use case templates and wizards to easily create and deploy new customer journeys. Use Journey Agent to create journeys from natural language prompts.
+**Start with:** Use case templates and wizards to easily create and deploy new customer journeys. Use Coworker to create journeys from natural language prompts.
 
 [Get Started as a Marketer →](path/marketer.md)
 
