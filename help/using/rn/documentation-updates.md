@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Send using waves** page now includes concrete numbers in the call center and high-volume use cases. [Read more](../delivery/send-using-waves.md#use-cases)
+
 * The **Guardrails and limitations** page now states that Journey Optimizer evaluates a maximum of 20 live campaigns per surface for code-based experiences. [Read more](../start/guardrails.md#inbound-guardrails)
 
 * The **Access & manage campaigns** page now states that a stopped one-time campaign can be resumed only once, within a limited time after it is stopped. [Read more](../campaigns/manage-campaigns.md#stop)

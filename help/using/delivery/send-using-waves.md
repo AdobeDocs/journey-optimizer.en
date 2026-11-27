@@ -200,17 +200,13 @@ Select **[!UICONTROL Schedule each wave]** to define a specific start date and t
 
 Wave sending helps you control when and how many messages go out, which improves deliverability, protects sender reputation, and aligns sends with your operational capacity. Consider using waves in these scenarios:
 
-* **Call center or response management:** Limit how many messages go out per day or per hour so that downstream teams (for example, customer care) can handle responses at a manageable rate.
+* **Call center or response management:** Limit how many messages go out per day or per hour so that downstream teams (for example, customer care) can handle responses at a manageable rate. For example, if your call center handles 200 inbound calls per hour, send five waves of 1,000 mobile messages, one hour apart.
 
    ![Wave sending example: 20 messages per day configured to match call center response capacity](assets/journey-waves-ex-call-center.png){width="30%"}
 
-* **High volume and deliverability:** Avoid sending a very large audience in one shot. Spreading delivery over time helps maintain sender reputation and reduces the risk of being flagged as spam.
-
-   ![Wave sending example: delivery spread across multiple days to support sender reputation for a high-volume send](assets/journey-waves-ex-high-volume.png){width="30%"}
+* **High volume and deliverability:** Avoid sending a very large audience in one shot. Spreading delivery over time helps maintain sender reputation and reduces the risk of being flagged as spam. For example, split an audience of 2,000,000 profiles into four equal waves of 500,000 profiles, started two hours apart.
 
 * **IP warm-up:** When using a new platform or IP address, progressively increase volume (for example, 10% in the first wave, then 15%, 20%, and so on) to build sending reputation gradually.
-
-   ![Wave sending example: progressive volume increase across waves for IP warm-up, starting at 10% and growing each wave](assets/journey-waves-ex-ramp-up.png){width="30%"}
 
 ## Frequently asked questions {#faq}
 
