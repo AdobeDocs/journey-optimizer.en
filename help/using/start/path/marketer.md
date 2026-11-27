@@ -93,7 +93,7 @@ Follow these core steps to start building experiences:
    
    Learn how to [test and validate messages](../../content-management/preview-test.md).
 
-1. **Build customer journeys**. Create real-time, personalized experiences using the journey canvas. Use **Journey Agent** in AI Assistant to create journeys from natural language prompts. [Learn about Journey Agent](../ai-features.md#journey-agent)
+1. **Build customer journeys**. Create real-time, personalized experiences using the journey canvas. Use **Coworker** to create journeys from natural language prompts. [Learn about Coworker for journeys](../../building-journeys/journeys-coworker-skills.md)
 
     * Trigger journeys with **events** (customer actions) or **audiences** (batch sends)
     * Add **conditions** to create personalized paths based on customer data
