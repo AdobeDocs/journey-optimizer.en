@@ -87,7 +87,7 @@ For the detailed steps, the required headers, and the permissions per endpoint, 
 
 ## Troubleshoot API calls {#troubleshooting}
 
-For authentication and permission errors (`401` and `403`), check your credentials and product profile permissions in [Authentication](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"}. For errors returned by a specific API, use the page that matches your task:
+For authentication and permission errors, see [Fix common errors](first-api-call-v2.md#errors). For errors returned by a specific API, use the page that matches your task:
 
 | If you work with | See |
 | ---------------- | --- |

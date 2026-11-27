@@ -88,6 +88,8 @@ A `200` response with a JSON body confirms that your credentials, permissions, a
 | `403` | The product profile does not include the permission the endpoint needs, or the integration is not linked to the profile | Ask your administrator to check the product profile permissions on the target sandbox |
 | `404` or an empty result | The path is wrong, or the sandbox does not contain the object | Check the endpoint path and the `x-sandbox-name` value |
 
+For errors returned by a specific API, see [Troubleshoot API calls](ajo-apis-v2.md#troubleshooting).
+
 ## Next steps {#next-steps}
 
 * [Work with Journey Optimizer APIs](ajo-apis.md): find the API for your task.
