@@ -54,7 +54,7 @@ All Journey Optimizer APIs use OAuth Server-to-Server authentication. The JWT me
 
 1. Create a project in [Adobe Developer Console](https://developer.adobe.com/console){target="_blank"} and add the Journey Optimizer API to it.
 1. Ask your administrator to add the permissions required by each endpoint to the product profile linked to your integration.
-1. Send the access token, API key, and organization ID with each call.
+1. Send the access token, API key, organization ID, and sandbox name with each call. API calls run against one sandbox, so use a development sandbox while you test.
 
 For the detailed steps, the required headers, and the permissions per endpoint, see [Authentication](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"}.
 
