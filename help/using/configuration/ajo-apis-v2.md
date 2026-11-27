@@ -75,14 +75,30 @@ For the detailed steps, the required headers, and the permissions per endpoint, 
 | Exclude email addresses or domains from sending | [Suppression API](https://developer.adobe.com/journey-optimizer-apis/references/suppression){target="_blank"} | [Manage the suppression list](manage-suppression-list.md) |
 | Validate datasets, trigger, and monitor Orchestrated campaigns | [Dataset validation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset){target="_blank"} · [Orchestrated campaigns API](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaigns){target="_blank"} | [Get started with Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) · [Enable datasets](../orchestrated/manual-schema.md) |
 | Manage loyalty challenges and their state | [Loyalty challenges API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"} · [State API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges-state){target="_blank"} | [Loyalty challenges APIs](../loyalty-challenges/loyalty-challenges-api.md) |
-| Manage offers, placements, and decisions (Decision Management) | [Offer Library API](../offers/api-reference/getting-started.md) | [Decision Management API guide](../offers/api-reference/getting-started.md) |
 | Manage decision items, collections, strategies, and rules (Experience Decisioning) | [Decisioning API](../experience-decisioning/api-reference/getting-started.md) | [Get started with Experience Decisioning](../experience-decisioning/gs-experience-decisioning.md) |
-| Migrate Decision Management entities to Decisioning | [Decisioning migration API](../experience-decisioning/decisioning-migration-api.md) | [Decisioning migration API](../experience-decisioning/decisioning-migration-api.md) |
+| Manage offers, placements, and decisions (Decision Management, legacy) | [Offer Library API reference](../../rp_landing_pages/api-reference-landing-page.md) | [Decision Management API developer guide](../offers/api-reference/getting-started.md) |
+| Migrate Decision Management entities to Decisioning | [Decisioning migration API](../experience-decisioning/decisioning-migration-api.md) | [Benefits of migrating to Decisioning](../experience-decisioning/migrate-to-decisioning.md) |
 
 >[!NOTE]
 >
 >* The Simulations API is not supported for Orchestrated campaigns. Use the preview and proof workflow in the Orchestrated campaigns user interface instead.
+>* The Decision Management APIs are legacy. If you use the Decisioning capability, use the Experience Decisioning APIs instead.
 >* The Object Copy API is deprecated. To copy objects between sandboxes, use [sandbox tooling](copy-objects-to-sandbox.md).
+
+## Troubleshoot API calls {#troubleshooting}
+
+For authentication and permission errors (`401` and `403`), check your credentials and product profile permissions in [Authentication](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"}. For errors returned by a specific API, use the page that matches your task:
+
+| If you work with | See |
+| ---------------- | --- |
+| API-triggered campaigns and Action campaigns | [Campaign errors](../campaigns/campaign-errors.md) |
+| Journeys and capping or throttling | [Error codes reference](../building-journeys/error-codes-reference.md) · [Troubleshoot custom actions](../action/troubleshoot-custom-action.md) |
+| Content templates and fragments | [Content authoring errors](../content-management/content-authoring-errors.md) · [Fragments and AEM content errors](../content-management/fragments-errors.md) |
+| Simulations and proofs | [Proof and simulation errors](../content-management/proof-simulation-errors.md) |
+| Orchestrated campaigns | [Orchestrated campaign errors](../orchestrated/orchestrated-campaign-errors.md) |
+| Experience Decisioning | [Troubleshoot Decisioning](../experience-decisioning/decisioning-troubleshooting.md) |
+
+For other errors, start from the [Troubleshooting overview](../../rp_landing_pages/troubleshooting-overview-landing-page.md).
 
 ## Related topics {#related-topics}
 
