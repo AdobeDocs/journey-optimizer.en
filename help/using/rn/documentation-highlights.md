@@ -95,11 +95,11 @@ New pages and sections that are worth a bookmark.
 <p>Suppression categories and failure reasons now sit with hard bounces, soft bounces, and spam complaints. <em>Reorganized · Nov 2026</em></p>
 </td>
 <td>
-<a href="../orchestrated/start-monitor-campaigns.md#test">
+<a href="../orchestrated/start-monitor-campaigns.md#test-flow">
 <img alt="Test orchestrated campaigns safely" src="../assets/do-not-localize/start-journey.jpeg" style="aspect-ratio:3/2;object-fit:cover;width:100%">
 </a>
 <div>
-<a href="../orchestrated/start-monitor-campaigns.md#test">Test orchestrated campaigns safely</a>
+<a href="../orchestrated/start-monitor-campaigns.md#test-flow">Test orchestrated campaigns safely</a>
 </div>
 <p>Run the campaign flow test, then test each channel activity to review its target population and exclusions without sending the message. <em>New section · Nov 2026</em></p>
 </td>

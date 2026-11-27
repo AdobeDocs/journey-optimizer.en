@@ -154,7 +154,7 @@ Each campaign moves through a lifecycle that is reflected by its status in the i
 | **[!UICONTROL Scheduled]** | ✅ | ✅ | ✅ | Configured for specific start date | Wait for launch, [modify if needed](#modify), or [view in calendar](#calendar) |
 | **[!UICONTROL Live]** | ✅ | ✅ | ✅ | Activated and running | [Monitor performance](../reports/campaign-global-report-cja.md), [create new version](#modify) if needed. For Orchestrated campaigns: [revert to draft](../orchestrated/start-monitor-campaigns.md#back-to-draft) for scheduled campaigns not yet started or campaigns with execution errors before any messages are sent |
 | **[!UICONTROL In review]** | ✅ | ✅ | — | Submitted for approval | Wait for [approval](../test-approve/gs-approval.md) or modify |
-| **[!UICONTROL Stopped]** | ✅ | ✅ | ✅ | Manually stopped, cannot reactivate | [Duplicate to reuse](#duplicate-a-campaign) |
+| **[!UICONTROL Stopped]** | ✅ | ✅ | ✅ | Manually stopped, cannot reactivate (a one-time campaign can be [resumed once](#stop)) | [Duplicate to reuse](#duplicate-a-campaign) |
 | **[!UICONTROL Completed]** | ✅ | ✅ | ✅ | Execution complete (auto-assigned 3 days after activation or at end date for recurring) | [View reports](../reports/campaign-global-report-cja.md), [archive](#archive-a-campaign), or [duplicate](#duplicate-a-campaign) |
 | **[!UICONTROL Failed]** | ✅ | ✅ | — | Execution failed | Check logs, fix issues, [duplicate to retry](#duplicate-a-campaign) |
 | **[!UICONTROL Archived]** | ✅ | ✅ | ✅ | Archived (auto-deleted after 30 days) | [Retrieve using filter](#access) if needed |
@@ -228,6 +228,8 @@ To stop a recurring campaign, open it then click the **[!UICONTROL Stop campaign
 >[!IMPORTANT]
 >
 >Stopping a campaign will not stop an ongoing sending but it will stop a scheduled sending or the next occurrences if sending is already ongoing.
+
+A stopped one-time campaign can be resumed only once, within a limited time after it is stopped. If you stop it again after resuming it, you cannot resume it a second time.
 
 ## Archive a campaign {#archive-a-campaign}
 

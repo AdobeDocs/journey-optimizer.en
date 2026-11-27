@@ -60,14 +60,15 @@ For complete understanding, this information should be combined with the documen
 
 * Canonical name: Campaign status — variants: lifecycle status
 * Canonical name: Action campaigns — variants: Action campaigns tab (Action tab)
-* Do not confuse: **Stopped** (manually stopped, cannot reactivate) ≠ **Completed** (execution complete, auto-assigned 3 days after activation or at end date for recurring campaigns) ≠ **Archived** (auto-deleted after 30 days)
+* Do not confuse: **Stopped** (manually stopped, cannot reactivate; a one-time campaign can be resumed once) ≠ **Completed** (execution complete, auto-assigned 3 days after activation or at end date for recurring campaigns) ≠ **Archived** (auto-deleted after 30 days)
 * Do not confuse: **Scheduled** (configured for a specific start date) ≠ **Live** (activated and running) ≠ **Draft** (being edited, not activated)
 * Do not confuse: **In review** (submitted for approval) ≠ **Publishing** (being published, Orchestrated campaigns)
 
 **FAQ:**
 
-* **Q: What does each campaign status mean?** — **Draft**: being edited, not activated. **Scheduled**: configured for a specific start date. **Live**: activated and running. **In review**: submitted for approval. **Stopped**: manually stopped, cannot reactivate. **Completed**: execution complete, auto-assigned 3 days after activation or at the end date for recurring campaigns. **Failed**: execution failed. **Archived**: archived, auto-deleted after 30 days. **Publishing**: being published.
-* **Q: How do I reuse a stopped campaign?** — A stopped campaign cannot be reactivated. Duplicate it with **Duplicate**, enter the name of the campaign and confirm.
+* **Q: What does each campaign status mean?** — **Draft**: being edited, not activated. **Scheduled**: configured for a specific start date. **Live**: activated and running. **In review**: submitted for approval. **Stopped**: manually stopped, cannot reactivate (a one-time campaign can be resumed once). **Completed**: execution complete, auto-assigned 3 days after activation or at the end date for recurring campaigns. **Failed**: execution failed. **Archived**: archived, auto-deleted after 30 days. **Publishing**: being published.
+* **Q: How do I reuse a stopped campaign?** — A stopped campaign cannot be reactivated, except that a stopped one-time campaign can be resumed once. Otherwise, duplicate it with **Duplicate**, enter the name of the campaign and confirm.
+* **Q: Can I resume a stopped campaign more than once?** — No; a stopped one-time campaign can be resumed only once, within a limited time after it is stopped. If you stop it again after resuming it, you cannot resume it a second time.
 * **Q: How do I modify a recurring Action campaign?** — Open the campaign and click **Modify campaign**. A new version is created; check the live version with **Open live version**. Activate the new version when your changes are ready.
 * **Q: How do I stop a recurring campaign?** — Open it, then click the **Stop campaign** button.
 * **Q: Why can I not delete my campaign?** — **Delete** is available for **Draft** campaigns only.

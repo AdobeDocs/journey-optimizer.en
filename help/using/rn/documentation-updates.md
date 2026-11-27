@@ -33,6 +33,16 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Send using waves** page now includes concrete numbers in the call center and high-volume use cases. [Read more](../delivery/send-using-waves.md#use-cases)
+
+* The **Guardrails and limitations** page now states that Journey Optimizer evaluates a maximum of 20 live campaigns per surface for code-based experiences. [Read more](../start/guardrails.md#inbound-guardrails)
+
+* The **Access & manage campaigns** page now states that a stopped one-time campaign can be resumed only once, within a limited time after it is stopped. [Read more](../campaigns/manage-campaigns.md#stop)
+
+* The **Get started with IP warmup plans** page now describes more accurately the community blog about scheduling IP warmup runs around the daily batch segmentation job. [Read more](../configuration/ip-warmup-gs.md#additional-resources)
+
+* The **Enrichment** activity page now states that, for an N cardinality collection link, each record in the primary set must have a unique join value; otherwise, the enriched data contains more records than expected. [Read more](../orchestrated/activities/enrichment.md#create-links)
+
 * The **Build segment definitions** page now states that, to build a segment on email opens, you must use the `interactionType = 'open'` field of the AJO Email Tracking Experience Event Schema instead of the `directMarketing.emailOpened` event. [Read more](../audience/creating-a-segment-definition.md#create)
 
 * The **Update decision rules** and **Update an eligibility rule** pages now state that, to change a rule through the API, you must update only `condition.value` or make the change in the user interface. Editing the `segmentModel` through the API is not supported and can leave the rule disabled and inaccessible in the user interface. The **Update an eligibility rule** page also explains the `condition.value` and `segmentModel` parameters, and now correctly refers to a PATCH request. [Read more](../experience-decisioning/api-reference/eligibility-rules/update.md)

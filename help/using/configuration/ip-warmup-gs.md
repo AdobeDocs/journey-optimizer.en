@@ -99,7 +99,7 @@ Explore these helpful blog posts for more in-depth guidance on IP warmup:
 
 * [Adobe Journey Optimizer Deliverability Guide: From Zero Reputation to Inbox Hero](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/adobe-journey-optimizer-deliverability-guide-from-zero/ba-p/761950) - Comprehensive guide covering reputation fundamentals, warmup calendars, monitoring, and troubleshooting best practices.
 
-* [Understanding how to set up the IP warmup](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warmup-understanding-how-to-set-up-the-ip-warmup/ba-p/761949) - Learn the fundamentals of setting up IP warmup plans and best practices for a successful implementation.
+* [Understanding how to set up the IP warmup schedules](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/ajo-ip-warmup-understanding-how-to-set-up-the-ip-warmup/ba-p/761949) - Learn how to schedule the activation and send time of your runs around the daily batch segmentation job to avoid the "no qualified profiles" error.
 
 * [Advanced features in IP warm-up plans](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/advanced-features-in-ajo-ip-warm-up-plans-granular-controls-for/ba-p/761958) - Discover advanced capabilities and granular controls for optimizing your IP warmup strategy.
 

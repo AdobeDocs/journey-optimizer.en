@@ -42,6 +42,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: What two types of enrichment data can be selected in the Enrichment activity?** — A single enrichment attribute from the target dimension, or a collection link.
 * **Q: What are the three relation types available when creating a link?** — 1 cardinality simple link, 0 or 1 cardinality simple link, and N cardinality collection link.
 * **Q: What are the two ways to define join conditions between the primary set and the linked schema?** — Simple join (matching on a specific attribute pair) or Advanced join (using the rule builder).
+* **Q: Do the join values of an N cardinality collection link need to be unique?** — Yes; each record in the primary set must have a unique join value. If several records share the same value, they all receive the same linked records, and the enriched data contains more records than expected.
 * **Q: Where can I use enrichment attributes collected through a collection link in a message?** — Under Target attributes > Enrichment in the message editor.
 
 **Related pages:**

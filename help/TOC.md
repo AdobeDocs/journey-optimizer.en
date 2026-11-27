@@ -1030,6 +1030,7 @@ nudge: yes
   + [Integrate with other solutions](using/integrations/ajo-integrations.md)
   + [Work with Journey Optimizer APIs](using/configuration/ajo-apis.md)
   + {hide-from-toc} [Make your first API call - 2](using/configuration/first-api-call-v2.md)
+  + {hide-from-toc} [Work with Journey Optimizer APIs - 2](using/configuration/ajo-apis-v2.md)
   + Integrate your journeys with external systems {#external-systems}
     + [Integrate your journeys with external systems](/help/rp_landing_pages/external-systems-landing-page.md)
     + [Journey integration with external systems](using/configuration/external-systems.md)
