@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Get started with IP warmup plans** page now describes more accurately the community blog about scheduling IP warmup runs around the daily batch segmentation job. [Read more](../configuration/ip-warmup-gs.md#additional-resources)
+
 * The **Enrichment** activity page now states that, for an N cardinality collection link, each record in the primary set must have a unique join value; otherwise, the enriched data contains more records than expected. [Read more](../orchestrated/activities/enrichment.md#create-links)
 
 * The **Build segment definitions** page now states that, to build a segment on email opens, you must use the `interactionType = 'open'` field of the AJO Email Tracking Experience Event Schema instead of the `directMarketing.emailOpened` event. [Read more](../audience/creating-a-segment-definition.md#create)
