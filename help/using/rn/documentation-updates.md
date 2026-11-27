@@ -33,6 +33,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## November 2026 {#november-2026}
 
+* The **Use Journey Optimizer APIs** page now lists the Journey Optimizer APIs by task, with a link to each API reference and user guide, and links to the troubleshooting pages. [Read more](../configuration/ajo-apis.md)
+
+* A new **Make your first Journey Optimizer API call** page explains how to get credentials and an access token, and how to send a first request to the Journeys API. [Read more](../configuration/first-api-call.md)
+
 * The **Send using waves** page now includes concrete numbers in the call center and high-volume use cases. [Read more](../delivery/send-using-waves.md#use-cases)
 
 * The **Guardrails and limitations** page now states that Journey Optimizer evaluates a maximum of 20 live campaigns per surface for code-based experiences. [Read more](../start/guardrails.md#inbound-guardrails)
