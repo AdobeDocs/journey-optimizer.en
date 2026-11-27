@@ -106,6 +106,10 @@ To create a link:
     * **[!UICONTROL Simple join]**: Match records on a specific attribute pair. Click **[!UICONTROL Add join]**, then select the **[!UICONTROL Source]** and **[!UICONTROL Destination]** attributes to use as matching criteria.
     * **[!UICONTROL Advanced join]**: Build custom matching logic using the rule builder. Click **[!UICONTROL Create condition]** to get started.
 
+    >[!NOTE]
+    >
+    >For an **[!UICONTROL N cardinality collection link]**, each record in the primary set must have a unique join value. If several records share the same value, they all receive the same linked records, and the enriched data contains more records than expected.
+
 ## Examples {#example}
 
 ### Single enrichment attribute {#single-attribute}
