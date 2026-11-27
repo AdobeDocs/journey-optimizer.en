@@ -222,7 +222,7 @@ Implement technical integrations that connect Journey Optimizer to your applicat
 * Build API endpoints that Journey Optimizer calls via custom actions
 * Implement code-based experiences for web, mobile, and other surfaces
 * Test and debug implementations with Adobe Experience Platform Assurance
-* Work with Journey Optimizer APIs for programmatic access
+* [Work with Journey Optimizer APIs](../configuration/ajo-apis.md) for programmatic access
 
 **Start with:** Integrate the Mobile or Web SDK, then implement your first event to trigger a journey.
 
