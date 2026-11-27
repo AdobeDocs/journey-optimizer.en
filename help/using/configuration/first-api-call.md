@@ -73,10 +73,10 @@ The response contains the `access_token` value to use as `{ACCESS_TOKEN}` in the
 
 ## Step 3: Send a read-only request {#request}
 
-Start with a request that only reads data, such as listing journeys. Copy the full URL of the list endpoint from the [Journeys API reference](https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve){target="_blank"} and send it with these headers:
+Start with a request that only reads data. This example lists journeys with the [Journeys API](https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve){target="_blank"}. The `pageSize` parameter limits the number of results.
 
 ```bash
-curl -X GET '{ENDPOINT_URL}' \
+curl -X GET 'https://platform.adobe.io/ajo/journey?pageSize=5' \
   -H 'Authorization: Bearer {ACCESS_TOKEN}' \
   -H 'x-api-key: {API_KEY}' \
   -H 'x-gw-ims-org-id: {IMS_ORG}' \
@@ -84,7 +84,30 @@ curl -X GET '{ENDPOINT_URL}' \
   -H 'Content-Type: application/json'
 ```
 
-Replace each placeholder with the values from the previous steps. You can also send the request from the interactive console on the API reference page.
+Replace each placeholder with the values from the previous steps. You can also send the request from the interactive console on the API reference page, or use the [Journey public API Postman collection](https://github.com/AdobeDocs/journey-optimizer-apis/blob/main/static/Journey_public_API_postman_collection.json){target="_blank"}.
+
+The response is a paginated list. This abbreviated example shows the main properties:
+
+```json
+{
+  "results": [
+    {
+      "id": "{JOURNEY_ID}",
+      "name": "Welcome journey",
+      "version": "1",
+      "type": "unitary",
+      "status": "Draft",
+      "imsOrgId": "{IMS_ORG}",
+      "sandboxName": "{SANDBOX_NAME}"
+    }
+  ],
+  "page": 0,
+  "limit": 5,
+  "pages": 1
+}
+```
+
+The `page` value starts at 0. Add `page` to the request to retrieve the next set of results. Use `fields` to return only some properties.
 
 A `200` response with a JSON body confirms that your credentials, permissions, and sandbox are set correctly. To test your credentials without a Journey Optimizer endpoint, see [Test access credentials](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#test-credentials){target="_blank"}.
 
