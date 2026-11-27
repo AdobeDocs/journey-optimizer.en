@@ -7,7 +7,6 @@ feature: Integrations, Data Ingestion
 role: Developer
 level: Intermediate
 hide: true
-exl-id: fab64453-7fb4-4f4e-a02b-1d5a84f3165b
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
