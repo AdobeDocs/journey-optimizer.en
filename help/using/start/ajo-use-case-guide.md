@@ -94,7 +94,7 @@ For scenarios where you react to a customer action or event as it happens.
 
 >[!BEGINSHADEBOX]
 
-**Before you build:** you need (1) an [audience defined in Adobe Experience Platform](../audience/about-audiences.md) that identifies inactive profiles (e.g. no purchase or login in 60 days), (2) a decision on re-engagement channel (email, push, or mobile), and (3) a suppression rule or [frequency cap](../conflict-prioritization/channel-capping.md) to avoid contacting recently messaged profiles. Use a **Read Audience** journey entry — not an event — for this scenario. [Coworker](../building-journeys/journeys-coworker-skills.md#journey-create) cannot set a recurring schedule, so configure the recurrence in the journey itself.
+**Before you build:** you need (1) an [audience defined in Adobe Experience Platform](../audience/about-audiences.md) that identifies inactive profiles (e.g. no purchase or login in 60 days), (2) a decision on re-engagement channel (email, push, or mobile), and (3) a suppression rule or [frequency cap](../conflict-prioritization/channel-capping.md) to avoid contacting recently messaged profiles. Use a **Read Audience** journey entry — not an event — for this scenario. If you create the journey with [Coworker](../building-journeys/journeys-coworker-skills.md#journey-create), set the recurring schedule in Journey Optimizer afterward, as Coworker does not support schedule recurrence.
 
 >[!ENDSHADEBOX]
 
