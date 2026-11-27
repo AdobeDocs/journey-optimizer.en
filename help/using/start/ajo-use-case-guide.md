@@ -94,7 +94,7 @@ For scenarios where you react to a customer action or event as it happens.
 
 >[!BEGINSHADEBOX]
 
-**Before you build:** you need (1) an [audience defined in Adobe Experience Platform](../audience/about-audiences.md) that identifies inactive profiles (e.g. no purchase or login in 60 days), (2) a decision on re-engagement channel (email, push, or mobile), and (3) a suppression rule or [frequency cap](../conflict-prioritization/channel-capping.md) to avoid contacting recently messaged profiles. Use a **Read Audience** journey entry — not an event — for this scenario.
+**Before you build:** you need (1) an [audience defined in Adobe Experience Platform](../audience/about-audiences.md) that identifies inactive profiles (e.g. no purchase or login in 60 days), (2) a decision on re-engagement channel (email, push, or mobile), and (3) a suppression rule or [frequency cap](../conflict-prioritization/channel-capping.md) to avoid contacting recently messaged profiles. Use a **Read Audience** journey entry — not an event — for this scenario. [Coworker](../building-journeys/journeys-coworker-skills.md#journey-create) cannot set a recurring schedule, so configure the recurrence in the journey itself.
 
 >[!ENDSHADEBOX]
 
@@ -206,6 +206,8 @@ Each starter flow below is a short, outcome-oriented set of steps: what you will
 1. Add a welcome [email](../email/get-started-email.md), then a wait step and a follow-up [push notification](../push/get-started-push.md) for profiles that have not engaged.
 1. [Personalize the content](../personalization/personalize.md) with profile attributes such as first name and stated interests.
 
+You can also build this journey with [Coworker](../building-journeys/journeys-coworker-skills.md#journey-create) by describing it in natural language.
+
 ➡️ [Start with journeys](../building-journeys/journey-gs.md)
 
 ### Recover abandoned carts {#flow-cart}
@@ -217,6 +219,8 @@ Each starter flow below is a short, outcome-oriented set of steps: what you will
 1. [Build a journey](../building-journeys/journey-gs.md) triggered by the abandonment event.
 1. Send a personalized reminder email; if there is no click within 24 hours, branch to a [push](../push/get-started-push.md) follow-up.
 1. [Personalize](../personalization/personalize.md) with the abandoned items and loyalty status.
+
+You can also build this journey with [Coworker](../building-journeys/journeys-coworker-skills.md#journey-create) by describing it in natural language.
 
 ➡️ [Start with journeys](../building-journeys/journey-gs.md)
 
