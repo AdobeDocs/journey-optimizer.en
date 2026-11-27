@@ -95,7 +95,7 @@ Each one below is a short, outcome-oriented set of steps: what you will build, w
 
 1. Review how [API-triggered campaigns](../campaigns/api-triggered-campaigns.md) work and what payload they expect.
 2. Design the message template and [personalize](../personalization/personalize.md) it with the transaction details.
-3. Have your developer call the campaign endpoint from your order or fulfillment system.
+3. Have your developer call the campaign endpoint from your order or fulfillment system. To find the API, see [Work with Journey Optimizer APIs](../configuration/ajo-apis.md).
 
 ➡️ [Work with API-triggered campaigns](../campaigns/api-triggered-campaigns.md)
 
@@ -160,7 +160,7 @@ Onboarding spans several roles. Pick your role to see a focused starting path:
 
 * **Administrator** — Set up sandboxes, permissions, and channels. [Get started as an Administrator](path/administrator.md)
 * **Data Engineer** — Model schemas and ingest data. [Get started as a Data Engineer](path/data-engineer.md)
-* **Developer** — Integrate SDKs and trigger events. [Get started as a Developer](path/developer.md)
+* **Developer** — Integrate SDKs, trigger events, and call APIs. [Get started as a Developer](path/developer.md)
 * **Marketer** — Build journeys, content, and audiences. [Get started as a Marketer](path/marketer.md)
 
 For a full overview of how these roles work together, see [Roles and responsibilities](quick-start.md).
@@ -170,6 +170,7 @@ For a full overview of how these roles work together, see [Roles and responsibil
 * [Migrate content and journeys](migrate-content-and-journeys.md) — Import email content and journeys from another marketing platform.
 * [Find the right Journey Optimizer capability for your goal](ajo-use-case-guide.md) — Goal-first decision guide to every capability.
 * [Journey use cases library](../building-journeys/jo-use-cases.md) — Practical examples and implementation patterns.
+* [Work with Journey Optimizer APIs](../configuration/ajo-apis.md) — Find the right API by task, with its reference and guide.
 * [Key terminology](terminology.md) — Clarify the concepts behind each capability.
 * [Work with AI](ai-features.md) — Explore AI Assistant, send-time optimization, and content generation.
 * [Get started with data management](../data/gs-data.md) — How data is ingested, unified, and activated.

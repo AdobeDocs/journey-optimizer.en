@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Use Journey Optimizer APIs
-description: Journey Optimizer provide RESTful APIs that allow you to programmatically perform key operations in your applications. Learn how to access and use them.
+description: Find the Journey Optimizer REST APIs by task, learn how to authenticate, and jump to the API reference and the matching guide for each one.
 feature: Integrations, Data Ingestion
 role: Developer
 level: Intermediate
@@ -43,77 +43,68 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to access, authenticate, and use the Adobe Journey Optimizer RESTful APIs, including the Decision Management and Experience Decisioning APIs, to perform key operations programmatically.
+**On this page:** Find the Journey Optimizer REST API you need by task, set up authentication, and go to the API reference and the matching user guide.
 
 >[!ENDSHADEBOX]
 
-## Quick access {#quick-access}
+Journey Optimizer REST APIs let you automate operations that you would otherwise perform in the user interface, such as triggering a message from your own system or managing content and suppression lists programmatically. The complete reference, with request and response schemas and an interactive console, is on the [Journey Optimizer API portal](https://developer.adobe.com/journey-optimizer-apis){target="_blank"}.
 
-Browse the [complete API reference](https://developer.adobe.com/journey-optimizer-apis){target="_blank"} to access all Journey Optimizer APIs and test them directly. To get started, make sure to [set up authentication](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"} to gather the required credentials.
+## Before you start {#before-you-start}
 
-## Overview {#overview}
+All Journey Optimizer APIs use OAuth Server-to-Server authentication. The JWT method is deprecated.
 
-The Adobe Journey Optimizer API allows you to deliver personalized, connected, and timely customer experiences across any app, device, or channel and in turn, effectively managing the end-to-end customer journey. The customer journey is the entire process of a customer's interactions with a brand, from the first moment of contact until the customer leaves. It starts with the awareness phase, where the customer learns about the brand and starts engaging. The customer will then further interact with the brand, visit online and physical sites, make purchases, send messages, or post reviews.
+1. Create a project in [Adobe Developer Console](https://developer.adobe.com/console){target="_blank"} and add the Journey Optimizer API to it.
+1. Ask your administrator to add the permissions required by each endpoint to the product profile linked to your integration.
+1. Send the access token, API key, organization ID, and sandbox name with each call. API calls run against one sandbox, so use a development sandbox while you test.
 
-Adobe Journey Optimizer is built natively on Adobe Experience Platform and combines a unified, real-time customer profile, an API-first open framework, centralized offer decisioning, and artificial intelligence (AI) and machine learning (ML) for personalization and optimization. By integrating with the Journey Optimizer API, brands can intelligently determine the next best interaction with scale, speed, and flexibility across the entire customer journey.
+To walk through your first call, see [Make your first API call](first-api-call.md). For the detailed steps, the required headers, and the permissions per endpoint, see [Authentication](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"}.
 
-**Get started with Journey Optimizer APIs:**
+>[!NOTE]
+>
+>Not a developer? See [Get started for developers](../start/path/developer.md) for the full implementation path, including SDKs, events, and custom actions.
 
-* **[Browse the complete API reference](https://developer.adobe.com/journey-optimizer-apis){target="_blank"}** - Access all Journey Optimizer APIs and test them directly
-* **[Set up authentication](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"}** - Gather required credentials to start using the APIs
-* **[Decision Management APIs](../offers/api-reference/getting-started.md)** - Manage offers and decisions programmatically
-* **[Experience Decisioning APIs](../experience-decisioning/api-reference/getting-started.md)** - Deliver personalized decision items using code-based experiences
+## Find an API by task {#apis-by-task}
 
-## Authentication {#authentication}
+| I want to | API reference | Guide |
+| --------- | ------------- | ----- |
+| Trigger a transactional or marketing message from my system | [Interactive Message Execution API](https://developer.adobe.com/journey-optimizer-apis/references/messaging){target="_blank"} · [Code samples](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples){target="_blank"} | [Work with API-triggered campaigns](../campaigns/api-triggered-campaigns.md) · [High throughput mode](../campaigns/api-triggered-high-throughput.md) |
+| Retrieve and filter Action campaigns | [Campaigns API](https://developer.adobe.com/journey-optimizer-apis/references/campaigns-retrieve){target="_blank"} | [Get started with campaigns](../campaigns/get-started-with-campaigns.md) |
+| Preview campaigns and send proofs | [Simulations API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target="_blank"} | [Work with API-triggered campaigns](../campaigns/api-triggered-campaigns.md) |
+| List and retrieve journeys | [Journeys API](https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve){target="_blank"} | [Journeys](../building-journeys/journey.md) |
+| Protect external systems called by journeys | [Capping and throttling API](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling){target="_blank"} | [Capping](capping.md) · [Throttling](throttling.md) · [External systems](external-systems.md) |
+| Create and manage content templates and fragments | [Content API](https://developer.adobe.com/journey-optimizer-apis/references/content){target="_blank"} | [Content templates](../content-management/content-templates.md) · [Fragments](../content-management/fragments.md) |
+| Exclude email addresses or domains from sending | [Suppression API](https://developer.adobe.com/journey-optimizer-apis/references/suppression){target="_blank"} | [Manage the suppression list](manage-suppression-list.md) |
+| Validate datasets, trigger, and monitor Orchestrated campaigns | [Dataset validation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset){target="_blank"} · [Orchestrated campaigns API](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaigns){target="_blank"} | [Get started with Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) · [Enable datasets](../orchestrated/manual-schema.md) |
+| Manage loyalty challenges and their state | [Loyalty challenges API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"} · [State API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges-state){target="_blank"} | [Loyalty challenges APIs](../loyalty-challenges/loyalty-challenges-api.md) |
+| Manage decision items, collections, strategies, and rules (Experience Decisioning) | [Decisioning API](../experience-decisioning/api-reference/getting-started.md) | [Get started with Experience Decisioning](../experience-decisioning/gs-experience-decisioning.md) |
+| Manage offers, placements, and decisions (Decision Management, legacy) | [Offer Library API reference](../../rp_landing_pages/api-reference-landing-page.md) | [Decision Management API developer guide](../offers/api-reference/getting-started.md) |
+| Migrate Decision Management entities to Decisioning | [Decisioning migration API](../experience-decisioning/decisioning-migration-api.md) | [Benefits of migrating to Decisioning](../experience-decisioning/migrate-to-decisioning.md) |
 
-Before using Journey Optimizer APIs, you must set up authentication to access the API endpoints.
+>[!NOTE]
+>
+>* The Simulations API is not supported for Orchestrated campaigns. Use the preview and proof workflow in the Orchestrated campaigns user interface instead.
+>* The Decision Management APIs are legacy. If you use the Decisioning capability, use the Experience Decisioning APIs instead.
+>* The Object Copy API is deprecated. To copy objects between sandboxes, use [sandbox tooling](copy-objects-to-sandbox.md).
 
-Follow the [authentication guide](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"} to gather the required authentication credentials for all Journey Optimizer APIs.
+## Troubleshoot API calls {#troubleshooting}
 
-## API documentation {#api-documentation}
+For authentication and permission errors, see [Fix common errors](first-api-call.md#errors). For errors in a specific area, see:
 
-The complete Adobe Journey Optimizer API documentation includes detailed information about all available endpoints, request/response formats, and interactive testing capabilities.
+| Area | See |
+| ---- | --- |
+| API-triggered campaigns and Action campaigns | [Campaign errors](../campaigns/campaign-errors.md) |
+| Journeys and custom actions | [Error codes reference](../building-journeys/error-codes-reference.md) · [Troubleshoot custom actions](../action/troubleshoot-custom-action.md) |
+| Content templates and fragments | [Content authoring errors](../content-management/content-authoring-errors.md) · [Fragments and AEM content errors](../content-management/fragments-errors.md) |
+| Simulations and proofs | [Proof and simulation errors](../content-management/proof-simulation-errors.md) |
+| Orchestrated campaigns | [Orchestrated campaign errors](../orchestrated/orchestrated-campaign-errors.md) |
+| Experience Decisioning | [Troubleshoot Decisioning](../experience-decisioning/decisioning-troubleshooting.md) |
 
-Access the [Adobe Journey Optimizer API documentation](https://developer.adobe.com/journey-optimizer-apis){target="_blank"} and browse the **API references** menu to explore all available APIs.
-
-## Decision management apis {#decision-management-apis}
-
-Journey Optimizer provides dedicated APIs for Decision Management, allowing you to programmatically manage offers, decisions, and placements.
-
-Refer to the [Decision Management API developer guide](../offers/api-reference/getting-started.md) to get started with offer decisioning APIs.
-
-## Experience decisioning apis {#experience-decisioning-apis}
-
-Journey Optimizer also offers Experience Decisioning APIs for delivering personalized decision items through code-based experiences. Experience Decisioning provides a simplified approach to personalization with decision items, eligibility rules, and selection strategies.
-
-**Available API operations:**
-
-* **Decision items** - Create, read, update, and delete decision items
-* **Selection strategies** - Define how to select and rank decision items
-* **Eligibility rules** - Set conditions for item eligibility
-* **Item collections** - Organize decision items into collections
-* **Ranking formulas** - Configure custom ranking logic
-* **Placements** - Define where decision items can appear
-
-Learn more in the [Experience Decisioning API reference](../experience-decisioning/api-reference/getting-started.md) and explore how to [deliver offers using code-based experiences](../experience-decisioning/gs-experience-decisioning.md).
+For other errors, start from the [Troubleshooting overview](../../rp_landing_pages/troubleshooting-overview-landing-page.md).
 
 ## Related topics {#related-topics}
 
-**API documentation and guides**
-
-* [Adobe Journey Optimizer API Reference](https://developer.adobe.com/journey-optimizer-apis){target="_blank"}
-* [Authentication guide](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"}
-* [Decision Management API developer guide](../offers/api-reference/getting-started.md)
-* [Experience Decisioning API reference](../experience-decisioning/api-reference/getting-started.md)
-
-**Journey Optimizer integration**
-
 * [Integrations with other solutions](../integrations/ajo-integrations.md)
-* [Integrate with Adobe Analytics](../event/about-analytics.md)
-* [Integrate Adobe Campaign](../building-journeys/using-adobe-campaign-v7-v8.md)
-
-**Developer resources**
-
-* [Adobe Experience Platform APIs](https://developer.adobe.com/experience-platform-apis){target="_blank"}
-* [Adobe Developer Console](https://developer.adobe.com/console){target="_blank"}
 * [Custom actions in journeys](../action/about-custom-action-configuration.md)
+* [Manage custom channel API credentials](../custom-channel/custom-channel-api-credentials.md)
+* [Configure SMS webhooks](../mobile/mobile-webhook.md)
+* [Adobe Experience Platform APIs](https://developer.adobe.com/experience-platform-apis){target="_blank"}

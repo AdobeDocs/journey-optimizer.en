@@ -6,7 +6,6 @@ description: Create your credentials, get an access token, and send your first r
 feature: Integrations, Data Ingestion
 role: Developer
 level: Intermediate
-hide: true
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -62,22 +61,22 @@ The detailed steps are in [Authentication](https://developer.adobe.com/journey-o
 
 ## Step 2: Get an access token {#token}
 
-Request an access token with your client ID and client secret. Copy the scopes from the credential details of your project in Adobe Developer Console.
+Request an access token with your client ID and client secret. Use the scopes shown for your credential in Adobe Developer Console.
 
 ```bash
 curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
-  -d 'grant_type=client_credentials&client_id={API_KEY}&client_secret={CLIENT_SECRET}&scope={SCOPES}'
+  -d 'grant_type=client_credentials&client_id={API_KEY}&client_secret={CLIENT_SECRET}&scope=openid,AdobeID,read_organizations,additional_info.projectedProductContext,session'
 ```
 
-The response contains the `access_token` value to use as `{ACCESS_TOKEN}` in the next step. Access tokens expire, so request a new token when a call returns a `401` error. For scopes and other ways to generate a token, see [Generate an access token](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-access-token){target="_blank"}.
+The response contains the `access_token` value to use as `{ACCESS_TOKEN}` in the next step. Access tokens expire after 24 hours, so request a new token when a call returns a `401` error. To generate a token from the console instead, see [Generate an access token](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-access-token){target="_blank"}.
 
 ## Step 3: Send a read-only request {#request}
 
-Start with a request that only reads data, such as listing journeys. Copy the full URL of the list endpoint from the [Journeys API reference](https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve){target="_blank"} and send it with these headers:
+Start with a request that only reads data. This example lists journeys with the [Journeys API](https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve){target="_blank"}. The `pageSize` parameter limits the number of results.
 
 ```bash
-curl -X GET '{ENDPOINT_URL}' \
+curl -X GET 'https://platform.adobe.io/ajo/journey?pageSize=5' \
   -H 'Authorization: Bearer {ACCESS_TOKEN}' \
   -H 'x-api-key: {API_KEY}' \
   -H 'x-gw-ims-org-id: {IMS_ORG}' \
@@ -85,7 +84,30 @@ curl -X GET '{ENDPOINT_URL}' \
   -H 'Content-Type: application/json'
 ```
 
-Replace each placeholder with the values from the previous steps. You can also send the request from the interactive console on the API reference page.
+Replace each placeholder with the values from the previous steps. You can also send the request from the interactive console on the API reference page, or use the [Journey public API Postman collection](https://github.com/AdobeDocs/journey-optimizer-apis/blob/main/static/Journey_public_API_postman_collection.json){target="_blank"}.
+
+The response is a paginated list. This abbreviated example shows the main properties:
+
+```json
+{
+  "results": [
+    {
+      "id": "{JOURNEY_ID}",
+      "name": "Welcome journey",
+      "version": "1",
+      "type": "unitary",
+      "status": "Draft",
+      "imsOrgId": "{IMS_ORG}",
+      "sandboxName": "{SANDBOX_NAME}"
+    }
+  ],
+  "page": 0,
+  "limit": 5,
+  "pages": 1
+}
+```
+
+The `page` value starts at 0. Add `page` to the request to retrieve the next set of results. Use `fields` to return only some properties.
 
 A `200` response with a JSON body confirms that your credentials, permissions, and sandbox are set correctly. To test your credentials without a Journey Optimizer endpoint, see [Test access credentials](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#test-credentials){target="_blank"}.
 
@@ -94,10 +116,11 @@ A `200` response with a JSON body confirms that your credentials, permissions, a
 | Response | Likely cause | What to do |
 | -------- | ------------ | ---------- |
 | `401` | The access token is missing, malformed, or expired | Generate a new token and check the `Authorization` header |
-| `403` | The product profile does not include the permission the endpoint needs, or the integration is not linked to the profile | Ask your administrator to check the product profile permissions on the target sandbox |
-| `404` or an empty result | The path is wrong, or the sandbox does not contain the object | Check the endpoint path and the `x-sandbox-name` value |
+| Permission error | The product profile does not include the permission the endpoint needs, or the integration is not linked to the profile | Ask your administrator to check the product profile permissions on the target sandbox |
+| `400` | A query parameter is invalid, for example `filter` or `pageSize` | Check the query string against the [Journeys API reference](https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve){target="_blank"} |
+| Empty `results` | The sandbox has no journeys, or the filter matches none | Check the `x-sandbox-name` value and the `filter` parameter |
 
-For errors returned by a specific API, see [Troubleshoot API calls](ajo-apis-v2.md#troubleshooting). For error code meanings, see the [Error codes reference](../building-journeys/error-codes-reference.md).
+For errors returned by a specific API, see [Troubleshoot API calls](ajo-apis.md#troubleshooting). For error code meanings, see the [Error codes reference](../building-journeys/error-codes-reference.md).
 
 ## Step 4: Move to a real use case {#use-case}
 
@@ -105,5 +128,5 @@ When the read-only call works, move to the call your integration needs. For exam
 
 ## Next steps {#next-steps}
 
-* [Work with Journey Optimizer APIs](ajo-apis-v2.md): find the API for your task.
+* [Work with Journey Optimizer APIs](ajo-apis.md): find the API for your task.
 * [Get started for developers](../start/path/developer.md): SDKs, events, and custom actions.

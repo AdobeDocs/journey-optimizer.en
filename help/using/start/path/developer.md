@@ -218,9 +218,9 @@ When a journey reaches a custom action step, Journey Optimizer makes an outbound
 
 Not everything needs to happen through the Journey Optimizer UI. Sometimes you need to trigger a campaign from your own backend, suppress an email address after a privacy request, or sync content templates from an external CMS. Journey Optimizer's REST APIs give you programmatic access to the platform's core capabilities. All calls use OAuth Server-to-Server authentication — the older JWT method is deprecated.
 
-1. **Understand API capabilities**: Journey Optimizer APIs allow you to create, read, update, and delete various resources programmatically. Learn about [Journey Optimizer APIs](../../configuration/ajo-apis.md).
+1. **Find the API for your task**: Journey Optimizer APIs let you create, read, update, and delete various resources programmatically. Use [Work with Journey Optimizer APIs](../../configuration/ajo-apis.md#apis-by-task) to go from a task to the matching API reference and guide.
 
-1. **Authentication**: Follow [this tutorial](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"} to set up API authentication using Adobe Developer Console.
+1. **Authentication**: Follow [this tutorial](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"} to set up API authentication using Adobe Developer Console. Then [make your first API call](../../configuration/first-api-call.md) to confirm your setup.
 
 1. **Explore API references**: Browse the complete API documentation and try APIs directly in the [Adobe Journey Optimizer API reference](https://developer.adobe.com/journey-optimizer-apis){target="_blank"}.
 
@@ -310,21 +310,9 @@ When journeys call external systems via custom actions or data sources, the Capp
 
 ### More REST APIs {#more-rest-apis}
 
-Beyond messaging and capping, Journey Optimizer exposes REST endpoints for suppression management, content templating, campaign retrieval, proofing, and orchestrated campaign execution. Use these when you need to automate operations that would otherwise require manual steps in the UI — for example, bulk-suppressing addresses after a data pull, or syncing templates from an external content pipeline.
+Journey Optimizer also exposes REST endpoints for suppression management, content templates and fragments, campaign retrieval, proofing, journey retrieval, and Orchestrated campaign execution. Use them to automate operations that would otherwise require manual steps in the user interface.
 
-| What you need to do | API reference |
-| ------------------- | ------------- |
-| Programmatically exclude email addresses or domains from sending | [Suppression API](https://developer.adobe.com/journey-optimizer-apis/references/suppression){target="_blank"} · [Manage the suppression list](../../configuration/manage-suppression-list.md) |
-| Retrieve journey metadata for auditing or external sync | [Journeys API](https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve){target="_blank"} |
-| Create and manage content templates and fragments from an external pipeline | [Content API](https://developer.adobe.com/journey-optimizer-apis/references/content){target="_blank"} · [Templates](../../content-management/content-templates.md) · [Fragments](../../content-management/fragments.md) |
-| Retrieve and filter Action campaigns | [Campaigns API](https://developer.adobe.com/journey-optimizer-apis/references/campaigns-retrieve){target="_blank"} |
-| Preview campaigns and send proofs programmatically | [Simulations API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target="_blank"} |
-
->[!NOTE]
->
->The Simulations API is available for API-triggered and Action (scheduled) campaigns. It is **not supported for Orchestrated campaigns**: use the preview and proof workflow in the Orchestrated campaigns user interface for those instead.
-
-| Validate datasets and trigger Orchestrated campaign execution | [Dataset validation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset){target="_blank"} · [Trigger](https://developer.adobe.com/journey-optimizer-apis/references/oc-trigger){target="_blank"} · [Enable datasets](../../orchestrated/manual-schema.md) |
+Find the right API for your task, with its API reference and user guide, in [Work with Journey Optimizer APIs](../../configuration/ajo-apis.md#apis-by-task).
 
 ## Additional resources {#additional-resources}
 
