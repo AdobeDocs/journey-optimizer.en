@@ -102,7 +102,7 @@ For scenarios where you react to a customer action or event as it happens.
 | --- | --- | --- |
 | Test a journey with real data before activating it | Journey dry run | [Test your journey with dry run](../building-journeys/journey-dry-run.md) |
 | Pause a live journey to make edits without stopping in-flight profiles | Journey pause & resume | [Pause and resume a journey](../building-journeys/journey-pause.md) |
-| Build or optimize a journey from a natural-language prompt | Journey Agent **(AI)** | [AI agents](ai-features.md#ai-agents) · [Journey Agent tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-agent-overview){target="_blank"} |
+| Build or optimize a journey from a natural-language prompt | Coworker **(AI)** | [Coworker for journeys](../building-journeys/journeys-coworker-skills.md) · [Coworker skills for Journey Optimizer](ai-features.md#cx-coworker-skills) |
 
 ## Reach audiences at scale {#reach-at-scale}
 
