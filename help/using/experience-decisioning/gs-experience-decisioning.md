@@ -48,7 +48,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_email_enable_experience_decisioning"
 >title="What is decisioning?"
->abstract="Decisioning is a new tooling besides Decision management to pick the best items from decision engine and deliver to each individual. It requires additional setup in order to use it."
+>abstract="Decisioning, available alongside Decision management, picks the best items from the decision engine and delivers them to each individual. It requires additional setup in order to use it."
 
 Create your items. Define who qualifies and how items are ranked. Let the decision engine pick the best ones for each profile.
 
@@ -56,7 +56,7 @@ Create your items. Define who qualifies and how items are ranked. Let the decisi
 
 Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
 
-These decision items are seamlessly integrated into messages and experiences across [!DNL Adobe Journey Optimizer] channels: [code-based experience](../code-based/get-started-code-based.md), [web](../web/get-started-web.md), email, mobile messages, push notifications, [custom channels](../custom-channel/get-started-custom-channel.md), and [direct mail](batch-decisioning-direct-mail.md) for batch decisioning and personalized direct mail exports. Experience Decisioning support for direct mail is a new capability; previously, the Decisioning engine was not available for direct mail extraction files.
+These decision items are seamlessly integrated into messages and experiences across [!DNL Adobe Journey Optimizer] channels: [code-based experience](../code-based/get-started-code-based.md), [web](../web/get-started-web.md), email, mobile messages, push notifications, [custom channels](../custom-channel/get-started-custom-channel.md), and [direct mail](batch-decisioning-direct-mail.md) for batch decisioning and personalized direct mail exports.
 
 >[!IMPORTANT]
 >

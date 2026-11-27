@@ -42,7 +42,6 @@ For complete understanding, this information should be combined with the documen
 
 * Decision items are integrated into messages and experiences across Adobe Journey Optimizer channels: code-based experience, web, email, mobile messages, push notifications, custom channels, and direct mail for batch decisioning and personalized direct mail exports.
 * Decision policies are available to all customers for the Code-based Experience, Web, Email, Push notification, Mobile message, Custom channels, and Direct mail channels.
-* Experience Decisioning support for direct mail is a new capability. Previously, the Decisioning engine was not available for direct mail extraction files.
 
 **Terminology:**
 

@@ -38,7 +38,6 @@ For complete understanding, this information should be combined with the documen
 * Direct Mail supports the Holdout functionality but does not currently support Treatments.
 * Journey direct mail extraction files are generated according to the file routing frequency; profiles are included in the next export after they reach the Direct mail node. With a frequency shorter than 24 hours, profiles can arrive in different export windows and produce multiple files during a day; a 24-hour routing frequency produces one file per day.
 * Campaign direct mail extraction files are generated when the campaign starts; for recurring campaigns, a file is generated for each campaign execution.
-* Decision policies in direct mail are a new capability; previously, direct mail extraction files could not use the Decisioning engine.
 
 **Terminology:**
 
