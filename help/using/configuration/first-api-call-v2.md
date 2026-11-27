@@ -58,7 +58,7 @@ topic_v2:
 1. Ask your administrator to add the permissions that the endpoint needs to the product profile linked to your project. For example, the Journeys API requires **Journey Manage** and **Journey View** on the target sandbox.
 1. From the project, copy the API key (client ID) and note your organization ID.
 
-The detailed steps are in [Authentication](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"}.
+The detailed steps are in [Authentication](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"}. For a full walkthrough of the Developer Console project, OAuth Server-to-Server credentials, and product profiles, see [Authenticate and access Experience Platform APIs](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials){target="_blank"}.
 
 ## Step 2: Get an access token {#token}
 
@@ -70,7 +70,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
   -d 'grant_type=client_credentials&client_id={API_KEY}&client_secret={CLIENT_SECRET}&scope={SCOPES}'
 ```
 
-The response contains the `access_token` value to use as `{ACCESS_TOKEN}` in the next step. Access tokens expire, so request a new token when a call returns a `401` error. You can also generate a token from the project in Adobe Developer Console.
+The response contains the `access_token` value to use as `{ACCESS_TOKEN}` in the next step. Access tokens expire, so request a new token when a call returns a `401` error. For scopes and other ways to generate a token, see [Generate an access token](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-access-token){target="_blank"}.
 
 ## Step 3: Send a read-only request {#request}
 
@@ -87,7 +87,7 @@ curl -X GET '{ENDPOINT_URL}' \
 
 Replace each placeholder with the values from the previous steps. You can also send the request from the interactive console on the API reference page.
 
-A `200` response with a JSON body confirms that your credentials, permissions, and sandbox are set correctly.
+A `200` response with a JSON body confirms that your credentials, permissions, and sandbox are set correctly. To test your credentials without a Journey Optimizer endpoint, see [Test access credentials](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#test-credentials){target="_blank"}.
 
 ## Fix common errors {#errors}
 
